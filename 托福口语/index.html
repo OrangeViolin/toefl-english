@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>托福口语模拟训练系统</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:40px 22px 80px}
+  h1{font-size:28px;margin:0 0 4px}
+  .sub{color:var(--muted);margin-bottom:22px}
+  .notice{background:#fff6e8;border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:12px;padding:14px 16px;font-size:14px;margin-bottom:24px}
+  .notice b{color:var(--accent)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+  a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 2px 12px rgba(150,120,70,.06);transition:.15s}
+  a.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(150,120,70,.15);border-color:#d8c8a8}
+  .card .emoji{font-size:40px}
+  .card h2{font-size:20px;margin:12px 0 6px}
+  .card .en{color:var(--accent);font-weight:600;font-size:14px}
+  .card p{color:#5f574c;font-size:14px;margin:8px 0 0}
+  .steps{margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+  .steps h3{margin:0 0 10px;font-size:16px;color:var(--core)}
+  .steps ol{margin:0;padding-left:20px;font-size:14px;color:#4d463c}
+  .steps li{margin:4px 0}
+  footer{margin-top:30px;color:#a89a86;font-size:12px}
+  code{background:#efe8d8;padding:1px 6px;border-radius:5px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎙 托福口语模拟训练系统</h1>
+  <div class="sub">对标 2026 新版 iBT 口语 · 录音 → 语音转写 → 打分</div>
+
+  <div class="notice">
+    <b>怎么用：</b>点开一个题型 → 播放/出题 → 点「开始录音」对着麦克风说 → 「停止」→ 系统自动把你说的转成文字、算语速 →
+    点「复制答题报告」，把报告贴回和 cc 的对话，cc 给你分维度打分 + 改进建议。<br>
+    ⚠️ 请用 <b>Chrome / Edge</b> 打开（语音转写依赖 Web Speech API）；首次录音需允许麦克风权限。
+  </div>
+
+  <div class="cards">
+    <a class="card" href="./听力复述.html">
+      <div class="emoji">🔁</div>
+      <h2>听力复述</h2>
+      <div class="en">Listen and Repeat</div>
+      <p>听一句话（只放一遍）→ 逐字复述。考发音、重音、节奏、短时记忆。系统会做「转写 vs 原文」逐字比对，算复述准确率。</p>
+    </a>
+    <a class="card" href="./面试问答.html">
+      <div class="emoji">💬</div>
+      <h2>面试问答</h2>
+      <div class="en">Take an Interview</div>
+      <p>同一主题连问 4 个开放式问题，每题答 ~45 秒。考流利度、连贯展开、语法词汇。系统算语速、时长等流利度指标。</p>
+    </a>
+  </div>
+
+  <div class="steps">
+    <h3>📋 评分维度（对标 ETS SpeechRater）</h3>
+    <ol>
+      <li><b>流利度</b>：语速、停顿、重复、填充词（um/uh）</li>
+      <li><b>发音/韵律</b>：可懂度、重音、语调起伏</li>
+      <li><b>词汇</b>：多样性、准确性、复杂度</li>
+      <li><b>语法</b>：准确度、结构复杂度</li>
+      <li><b>连贯展开</b>：观点→理由→例子的结构</li>
+      <li><b>复述准确率</b>（仅跟读题）：逐字比对，换词/漏词/重排扣分</li>
+    </ol>
+  </div>
+
+  <footer>托福口语系统 · 数据内嵌于各页面 · 录音转写依赖 Chrome 的 Web Speech API</footer>
+</div>
+</body>
+</html>

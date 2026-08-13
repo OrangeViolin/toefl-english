@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>面试问答 · Take an Interview</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--bad:#c04a3a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:22px;margin:12px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 20px}
+  .topicbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .topic{font-size:13px;padding:6px 14px;border:1px solid var(--line);background:var(--card);border-radius:20px;cursor:pointer;color:#6b6154}
+  .topic.on{background:var(--core);color:#fff;border-color:var(--core)}
+  .stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .qhead{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);margin-bottom:12px}
+  .timer{font-size:15px;font-weight:700;color:var(--ink)}
+  .timer.warn{color:var(--bad)}
+  .question{font-family:Georgia,"Times New Roman",serif;font-size:22px;line-height:1.45;margin:8px 0 16px;min-height:60px}
+  .controls{display:flex;gap:10px;margin:14px 0}
+  .btn{border:none;border-radius:22px;padding:11px 22px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.rec{background:var(--accent);color:#fff}
+  .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
+  .btn.next{background:var(--core);color:#fff}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
+  .live{min-height:44px;padding:10px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:16px;color:#6b6154}
+  .live .f{color:var(--ink);font-family:Georgia,serif}
+  .live .i{color:#a89a86;font-style:italic}
+  .answer{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  .answer .metric{font-size:14px;color:#5f574c;margin-bottom:6px}
+  .answer .metric b{color:var(--ink)}
+  .report{margin-top:18px}
+  .report textarea{width:100%;height:200px;font-size:12.5px;font-family:ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:10px;padding:10px;background:#faf6ee}
+  .report .copy{background:var(--core);color:#fff;border:none;border-radius:20px;padding:8px 18px;font-size:13px;cursor:pointer;margin-top:8px}
+  .hint{color:var(--muted);font-size:12.5px;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./index.html">← 返回口语主页</a><span>面试问答 · Take an Interview</span></div>
+  <h1>💬 面试问答</h1>
+  <div class="en">Take an Interview · 连续 4 个开放式问题</div>
+  <div class="desc">同一日常主题连问 4 题，每题最多 45 秒、无准备。考<b>流利度、连贯展开、语法词汇、自然韵律</b>。系统自动倒计时、转写、算语速。</div>
+
+  <div class="topicbar" id="topicbar"></div>
+
+  <div class="stage">
+    <div class="qhead"><span id="qpos"></span><span class="timer" id="timer">⏱ 45s</span></div>
+    <div class="question" id="question">选择一个主题开始</div>
+    <div class="controls">
+      <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
+      <button class="btn next" id="nextBtn" onclick="next()" disabled>下一题 →</button>
+    </div>
+    <div class="live" id="live">录音转写会实时显示在这里…</div>
+    <div class="answer" id="answer" style="display:none"></div>
+    <div class="report" id="reportWrap" style="display:none">
+      <h4 style="margin:12px 0 6px;font-size:14px">📋 答题报告（复制给 cc 打分）</h4>
+      <textarea id="reportText" readonly></textarea><br>
+      <button class="copy" onclick="copyReport()">📋 复制答题报告</button>
+    </div>
+    <div class="hint">💡 建议每题说到接近 45 秒：观点 → 理由 → 具体例子，中间少用 um/uh。</div>
+  </div>
+</div>
+
+<script src="./speech-core.js"></script>
+<script>
+// ---------- 题目数据（对标 2026 新版 Take an Interview，每主题 4 个连续开放式问题）----------
+const TOPICS = [
+  { title:"放松方式 Relaxation", questions:[
+    "What's your favorite way to relax after a busy day?",
+    "How do you usually spend your weekends?",
+    "Do you prefer relaxing alone or with friends? Why?",
+    "Do you think people today have enough time to relax? Why or why not?" ]},
+  { title:"学习习惯 Study Habits", questions:[
+    "Do you prefer studying alone or with others? Why?",
+    "What is your favorite subject and why?",
+    "How do you usually prepare for a big exam?",
+    "What advice would you give to a student who struggles to focus?" ]},
+  { title:"科技与生活 Technology", questions:[
+    "How has technology changed the way you communicate with others?",
+    "Do you spend too much time on your phone? Why or why not?",
+    "What is one piece of technology you cannot live without?",
+    "Do you think social media has more benefits or drawbacks?" ]},
+  { title:"家乡 Hometown", questions:[
+    "What is your hometown like?",
+    "What do you like most about where you live?",
+    "How has your hometown changed over the years?",
+    "Would you prefer to live in a big city or a small town? Why?" ]},
+  { title:"旅行 Travel", questions:[
+    "What kind of places do you like to travel to?",
+    "What is the most memorable trip you have ever taken?",
+    "Do you prefer traveling alone or with others? Why?",
+    "Is it better to travel to a new place or revisit a favorite one? Why?" ]},
+];
+
+let topicIdx = -1, qIdx = 0;
+let answers = [];       // {q, transcript, duration, wpm, fillers}
+let recording = false, timerId = null, remain = 45;
+
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+function renderTopics(){
+  document.getElementById('topicbar').innerHTML = TOPICS.map((t,i)=>
+    '<span class="topic'+(i===topicIdx?' on':'')+'" onclick="chooseTopic('+i+')">'+esc(t.title)+'</span>').join('');
+}
+function chooseTopic(i){
+  topicIdx=i; qIdx=0; answers=[];
+  renderTopics();
+  document.getElementById('reportWrap').style.display='none';
+  showQuestion();
+}
+function showQuestion(){
+  document.getElementById('qpos').textContent='主题：'+TOPICS[topicIdx].title+' · 第 '+(qIdx+1)+'/4 题';
+  document.getElementById('question').textContent=TOPICS[topicIdx].questions[qIdx];
+  document.getElementById('live').innerHTML='录音转写会实时显示在这里…';
+  document.getElementById('answer').style.display='none';
+  document.getElementById('nextBtn').disabled=true;
+  resetTimer();
+}
+
+let result=null;
+async function toggleRec(){
+  if(recording){
+    recording=false; clearInterval(timerId);
+    document.getElementById('recBtn').textContent='🎙 开始录音';
+    document.getElementById('recBtn').classList.remove('recording');
+    result = await VocaSpeech.stop();
+    finishAnswer();
+  } else {
+    try{
+      await VocaSpeech.start((final, interim)=>{
+        document.getElementById('live').innerHTML =
+          '<span class="f">'+esc(final)+'</span> <span class="i">'+esc(interim)+'</span>';
+      });
+      recording=true; remain=45;
+      document.getElementById('recBtn').textContent='⏹ 停止录音';
+      document.getElementById('recBtn').classList.add('recording');
+      document.getElementById('live').innerHTML='🎙 录音中，请展开回答…';
+      document.getElementById('answer').style.display='none';
+      startTimer();
+    }catch(e){ alert(e.message); }
+  }
+}
+function startTimer(){
+  const el=document.getElementById('timer');
+  el.classList.remove('warn');
+  timerId=setInterval(()=>{
+    remain--;
+    el.textContent='⏱ '+remain+'s';
+    if(remain<=10) el.classList.add('warn');
+    if(remain<=0){ clearInterval(timerId); if(recording) toggleRec(); }
+  },1000);
+}
+function resetTimer(){
+  remain=45; const el=document.getElementById('timer');
+  el.textContent='⏱ 45s'; el.classList.remove('warn');
+}
+
+function finishAnswer(){
+  const q = TOPICS[topicIdx].questions[qIdx];
+  const txt = result.transcript || '';
+  const wpm = Math.round(tokenize(txt).length / Math.max(result.duration,0.1) * 60);
+  const fillers = (txt.match(/\b(um|uh|er|like|you know)\b/gi)||[]).length;
+  answers.push({ q, transcript:txt, duration:result.duration, wpm, fillers });
+
+  document.getElementById('answer').innerHTML =
+    '<div class="metric">📝 转写：<b>'+(esc(txt)||'<i style="color:#a89a86">(空/未识别)</i>')+'</b></div>'+
+    '<div class="metric">⏱ 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 填充词(um/uh) <b>'+fillers+'</b> 次</div>';
+  document.getElementById('answer').style.display='block';
+
+  if(qIdx<3){
+    document.getElementById('nextBtn').disabled=false;
+    document.getElementById('nextBtn').textContent='下一题 →';
+  } else {
+    document.getElementById('nextBtn').disabled=true;
+    buildReport();
+  }
+}
+function next(){
+  qIdx++;
+  showQuestion();
+}
+
+function tokenize(s){ return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean); }
+
+function buildReport(){
+  const t = TOPICS[topicIdx];
+  let rep = '【面试问答 · 主题：'+t.title+'】\n';
+  answers.forEach((a,i)=>{
+    rep += 'Q'+(i+1)+': '+a.q+'\n';
+    rep += '  答：'+(a.transcript||'(空/未识别)')+'\n';
+    rep += '  （时长 '+a.duration.toFixed(1)+'s · 语速 '+a.wpm+' wpm · 填充词 '+a.fillers+' 次）\n';
+  });
+  rep += '—— 请 cc 打分（流利度 + 连贯展开 + 语法词汇 + 发音韵律；发音/韵律请结合我后续反馈）';
+  document.getElementById('reportText').value = rep;
+  document.getElementById('reportWrap').style.display='block';
+}
+function copyReport(){
+  const t=document.getElementById('reportText');
+  t.select(); document.execCommand('copy');
+  alert('已复制答题报告，回到对话粘贴给 cc 即可打分');
+}
+
+// 初始化
+if(!VocaSpeech.supported){
+  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 当前浏览器不支持语音转写，请用 Chrome / Edge 打开此页面。</b>';
+  document.getElementById('recBtn').disabled=true;
+}
+renderTopics();
+</script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>听力复述 · Listen and Repeat</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--ok:#4a9a5e;--bad:#c04a3a;--warn:#d8903a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:22px;margin:12px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 20px}
+  .stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .qinfo{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:14px}
+  .lv{font-size:11px;padding:2px 10px;border-radius:10px;background:#e6f0ec;color:var(--core);font-weight:700}
+  .sentence{font-family:Georgia,"Times New Roman",serif;font-size:26px;line-height:1.4;margin:10px 0 6px;min-height:36px}
+  .sentence .miss{background:#ffe8e4;color:var(--bad);border-radius:4px;padding:0 2px}
+  .zh{color:var(--muted);font-size:14px;margin-bottom:16px}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+  .btn{border:none;border-radius:22px;padding:11px 22px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.play{background:#efe8d8;color:var(--ink)}
+  .btn.play:hover{background:#e5dccb}
+  .btn.rec{background:var(--accent);color:#fff}
+  .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
+  .btn.next{background:var(--core);color:#fff}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
+  .live{min-height:40px;padding:10px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:16px;color:#6b6154}
+  .live .f{color:var(--ink);font-family:Georgia,serif}
+  .live .i{color:#a89a86;font-style:italic}
+  .result{display:none;margin-top:16px;border-top:1px solid var(--line);padding-top:16px}
+  .score-row{display:flex;gap:18px;flex-wrap:wrap;align-items:baseline;margin-bottom:10px}
+  .score{font-size:34px;font-weight:800;color:var(--core)}
+  .metric{font-size:14px;color:#5f574c}
+  .metric b{color:var(--ink)}
+  .cmp h4{margin:12px 0 6px;font-size:13px;color:var(--muted)}
+  .cmp .line{font-family:Georgia,serif;font-size:19px;line-height:1.9}
+  .w-ok{color:var(--ok)}
+  .w-miss{color:var(--bad);background:#ffe8e4;border-radius:4px;padding:0 3px;text-decoration:line-through}
+  .w-extra{color:var(--warn);background:#fff3e0;border-radius:4px;padding:0 3px}
+  .report{margin-top:16px}
+  .report textarea{width:100%;height:150px;font-size:12.5px;font-family:ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:10px;padding:10px;background:#faf6ee}
+  .report .copy{background:var(--core);color:#fff;border:none;border-radius:20px;padding:8px 18px;font-size:13px;cursor:pointer;margin-top:8px}
+  .hint{color:var(--muted);font-size:12.5px;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./index.html">← 返回口语主页</a><span>听力复述 · Listen and Repeat</span></div>
+  <h1>🔁 听力复述</h1>
+  <div class="en">Listen and Repeat · 逐字复述</div>
+  <div class="desc">听一句话（考试只放一遍）→ 逐字复述。系统会把你说的转成文字，与原文做<b>逐字比对</b>，算出复述准确率。换词、漏词、重排都算错——这正是新版托福的扣分点。</div>
+
+  <div class="stage">
+    <div class="qinfo"><span id="qNo"></span><span class="lv" id="qLv"></span></div>
+    <div class="sentence" id="sentence">点击「🔊 播放原句」开始</div>
+    <div class="zh" id="zh"></div>
+
+    <div class="controls">
+      <button class="btn play" id="playBtn" onclick="play()">🔊 播放原句</button>
+      <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
+      <button class="btn next" id="nextBtn" onclick="next()">下一题 →</button>
+    </div>
+
+    <div class="live" id="live">录音转写会实时显示在这里…</div>
+
+    <div class="result" id="result">
+      <div class="score-row">
+        <span class="score" id="acc"></span>
+        <span class="metric" id="metrics"></span>
+      </div>
+      <div class="cmp">
+        <h4>📖 原文</h4>
+        <div class="line" id="refLine"></div>
+        <h4>🎙 我的复述（转写）</h4>
+        <div class="line" id="hypLine"></div>
+      </div>
+      <div class="report">
+        <h4>📋 答题报告（复制给 cc 打分）</h4>
+        <textarea id="reportText" readonly></textarea><br>
+        <button class="copy" onclick="copyReport()">📋 复制答题报告</button>
+      </div>
+    </div>
+
+    <div class="hint">💡 练习模式可重复播放；真实考试里原句<b>只放一遍</b>，建议先只听一遍就复述，逼出短时记忆。</div>
+  </div>
+</div>
+
+<script src="./speech-core.js"></script>
+<script>
+// ---------- 题目数据（对标 2026 新版 Listen and Repeat，难度递增，6–19 音节）----------
+const REPEAT = [
+  { en:"The library opens at eight.", zh:"图书馆八点开门。", lv:"简单" },
+  { en:"Please return your books on time.", zh:"请按时还书。", lv:"简单" },
+  { en:"The lecture starts in ten minutes.", zh:"讲座十分钟后开始。", lv:"简单" },
+  { en:"We have a variety of wildlife.", zh:"我们这里有很多种野生动物。", lv:"简单" },
+  { en:"Bears, wolves, and large cats are to the right.", zh:"熊、狼和大型猫科动物在右边。", lv:"简单" },
+  { en:"Most students prefer to study in the morning.", zh:"大多数学生喜欢在早上学习。", lv:"中等" },
+  { en:"The professor explained the theory very clearly.", zh:"教授把这个理论讲得非常清楚。", lv:"中等" },
+  { en:"You should register for classes before Friday.", zh:"你应该在周五之前注册课程。", lv:"中等" },
+  { en:"The museum is closed for renovation this month.", zh:"博物馆这个月因翻修闭馆。", lv:"中等" },
+  { en:"Healthy eating requires both planning and patience.", zh:"健康饮食需要规划，也需要耐心。", lv:"中等" },
+  { en:"Photosynthesis is the process by which plants convert sunlight into energy.", zh:"光合作用是植物把阳光转化为能量的过程。", lv:"困难" },
+  { en:"The Industrial Revolution dramatically changed the way people lived and worked.", zh:"工业革命极大地改变了人们生活和工作的方式。", lv:"困难" },
+  { en:"Despite the heavy rain, the outdoor ceremony continued as planned.", zh:"尽管下着大雨，户外仪式仍按计划进行。", lv:"困难" },
+  { en:"Researchers have found that regular exercise improves both physical and mental health.", zh:"研究人员发现，规律运动能同时改善身心健康。", lv:"困难" },
+];
+
+let idx = 0, result = null;
+
+function tokenize(s){ return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean); }
+
+// 词级 LCS 对齐
+function diffWords(ref, hyp){
+  const A = tokenize(ref), B = tokenize(hyp);
+  const n=A.length, m=B.length;
+  const dp = Array.from({length:n+1}, ()=>new Array(m+1).fill(0));
+  for(let i=n-1;i>=0;i--) for(let j=m-1;j>=0;j--)
+    dp[i][j] = (A[i]===B[j]) ? dp[i+1][j+1]+1 : Math.max(dp[i+1][j], dp[i][j+1]);
+  const mA=new Array(n).fill(false), mB=new Array(m).fill(false);
+  let i=0,j=0;
+  while(i<n && j<m){
+    if(A[i]===B[j]){ mA[i]=true; mB[j]=true; i++; j++; }
+    else if(dp[i+1][j] >= dp[i][j+1]) i++;
+    else j++;
+  }
+  return { A, B, mA, mB, match: mA.filter(x=>x).length };
+}
+
+function play(){
+  const q = REPEAT[idx];
+  VocaSpeech.say(q.en);
+}
+
+let recording=false;
+async function toggleRec(){
+  if(recording){ // 停止
+    recording=false;
+    document.getElementById('recBtn').textContent='🎙 开始录音';
+    document.getElementById('recBtn').classList.remove('recording');
+    document.getElementById('playBtn').disabled=false;
+    result = await VocaSpeech.stop();
+    renderResult();
+  } else { // 开始
+    try{
+      await VocaSpeech.start((final, interim)=>{
+        document.getElementById('live').innerHTML =
+          '<span class="f">'+esc(final)+'</span> <span class="i">'+esc(interim)+'</span>';
+      });
+      recording=true;
+      document.getElementById('recBtn').textContent='⏹ 停止录音';
+      document.getElementById('recBtn').classList.add('recording');
+      document.getElementById('playBtn').disabled=true;
+      document.getElementById('live').innerHTML='🎙 录音中，请复述刚刚听到的句子…';
+      document.getElementById('result').style.display='none';
+    }catch(e){ alert(e.message); }
+  }
+}
+
+function renderResult(){
+  const q = REPEAT[idx];
+  const ref = q.en, hyp = result.transcript || '';
+  const d = diffWords(ref, hyp);
+  const acc = Math.round(d.match / Math.max(d.A.length,1) * 100);
+  const wpm = Math.round(d.B.length / Math.max(result.duration,0.1) * 60);
+
+  document.getElementById('acc').textContent = acc + '%';
+  document.getElementById('metrics').innerHTML =
+    '复述准确率 · 原文 <b>'+d.A.length+'</b> 词 · 命中 <b>'+d.match+'</b> 词 · 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm';
+
+  // 原文渲染（漏/错标红）
+  document.getElementById('refLine').innerHTML = d.A.map((w,i)=>
+    d.mA[i] ? '<span class="w-ok">'+esc(w)+'</span> ' : '<span class="w-miss">'+esc(w)+'</span> ').join('');
+  // 转写渲染（命中绿、多余橙）
+  document.getElementById('hypLine').innerHTML = d.B.map((w,i)=>
+    d.mB[i] ? '<span class="w-ok">'+esc(w)+'</span> ' : '<span class="w-extra">'+esc(w)+'</span> ').join('');
+
+  // 报告
+  const rep = '【听力复述 · 第 '+(idx+1)+' 题（'+q.lv+'）】\n'+
+    '原文：'+ref+'\n'+
+    '我的复述：'+(hyp||'(空/未识别)')+'\n'+
+    '复述准确率：'+acc+'%（命中 '+d.match+'/'+d.A.length+' 词）\n'+
+    '时长：'+result.duration.toFixed(1)+'s · 语速：'+wpm+' wpm\n'+
+    '—— 请 cc 打分（复述准确性 + 流利度；发音/韵律请结合我后续反馈）';
+  document.getElementById('reportText').value = rep;
+  document.getElementById('result').style.display='block';
+}
+
+function copyReport(){
+  const t=document.getElementById('reportText');
+  t.select(); document.execCommand('copy');
+  alert('已复制答题报告，回到对话粘贴给 cc 即可打分');
+}
+
+function next(){
+  idx = (idx+1) % REPEAT.length;
+  document.getElementById('qNo').textContent='第 '+(idx+1)+' / '+REPEAT.length+' 题';
+  document.getElementById('qLv').textContent=REPEAT[idx].lv;
+  document.getElementById('sentence').innerHTML='<span style="color:#c1662f">🔊</span> 点击「播放原句」开始';
+  document.getElementById('zh').textContent='';
+  document.getElementById('live').innerHTML='录音转写会实时显示在这里…';
+  document.getElementById('result').style.display='none';
+}
+
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+// 初始化
+if(!VocaSpeech.supported){
+  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 当前浏览器不支持语音转写，请用 Chrome / Edge 打开此页面。</b>';
+  document.getElementById('recBtn').disabled=true;
+}
+document.getElementById('qNo').textContent='第 1 / '+REPEAT.length+' 题';
+document.getElementById('qLv').textContent=REPEAT[0].lv;
+</script>
+</body>
+</html>
