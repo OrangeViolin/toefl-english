@@ -53,7 +53,10 @@
     return new Promise(async (resolve, reject) => {
       try {
         stopTts();
-        mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        // 复用已授权的麦克风：只在第一次（或 stream 已被关闭）时才请求权限，之后不再弹权限框
+        if (!mediaStream || mediaStream.getTracks().every(t => t.readyState === 'ended')) {
+          mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        }
       } catch (e) {
         reject(new Error('无法访问麦克风：' + e.message + '（请用 Chrome 打开，并允许麦克风权限）'));
         return;
@@ -113,12 +116,19 @@
       }
       // 等 400ms 让 SpeechRecognition 把最后的 interim 结果 flush 成 final，再收尾
       setTimeout(() => {
-        if (mediaStream) { mediaStream.getTracks().forEach(t => t.stop()); mediaStream = null; }
+        // 保留 mediaStream 以便下次录音直接复用（不再弹权限）；只重置 recorder
         recorder = null; chunks = [];
         resolve({ transcript: clean(finalText), blob, url, duration });
       }, 400);
     });
   }
 
-  window.VocaSpeech = { supported, say, stopTts, start, stop, pickVoice };
+  // 主动释放麦克风（页面关闭时调用，释放硬件占用）
+  function release() {
+    if (mediaStream) { mediaStream.getTracks().forEach(t => t.stop()); mediaStream = null; }
+    active = false;
+  }
+  if (typeof window !== 'undefined') window.addEventListener('beforeunload', release);
+
+  window.VocaSpeech = { supported, say, stopTts, start, stop, release, pickVoice };
 })();
