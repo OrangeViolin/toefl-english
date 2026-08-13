@@ -9,8 +9,8 @@ window.DOMAIN_health = {
       answer:{
         stance:"I really like jogging in the park near my home.",
         body:[
-          {r:"健康", en:"It keeps my body strong and my heart healthy.", ex:"For example, when I jog three times a week, I sleep better at night and I do not get tired easily during the day."},
-          {r:"乐趣", en:"It also makes me feel relaxed and happy.", ex:"For example, I listen to my favorite music while I run, and after a run I always feel fresh and full of energy."}
+          {r:"健康", en:"First, jogging keeps my body strong and my heart healthy.", ex:"For example, I jog three times a week, and after that I sleep better at night. I also do not get tired easily during the day, so I can study for a long time."},
+          {r:"乐趣", en:"Second, jogging makes me feel relaxed and happy.", ex:"For example, I listen to my favorite music while I run, and I look at the trees and flowers along the way. After each run, I always feel fresh and full of energy, so I look forward to it every time."}
         ],
         close:"So that is why jogging is my favorite kind of exercise."
       }
@@ -19,10 +19,10 @@ window.DOMAIN_health = {
       q:"Do you think it is important to eat healthy food? Why or why not?",
       reasons:["健康","经济"],
       answer:{
-        stance:"Yes, I think eating healthy food is very important.",
+        stance:"Yes, I think eating healthy food is very important, and I try to do it every day.",
         body:[
-          {r:"健康", en:"Healthy food keeps my body strong and stops me from getting sick.", ex:"For example, I eat vegetables and fruit every day, so I rarely catch a cold and I feel full of energy."},
-          {r:"经济", en:"It also helps me save money.", ex:"For example, I cook simple meals with rice and vegetables at home, so I spend much less than buying fast food every day."}
+          {r:"健康", en:"First, healthy food keeps my body strong and stops me from getting sick.", ex:"For example, I eat vegetables and fruit every day, so I rarely catch a cold and I always feel full of energy. I can also think clearly in class."},
+          {r:"经济", en:"Second, eating healthy food also helps me save money.", ex:"For example, I cook simple meals with rice and vegetables at home, so I spend much less than buying fast food every day. I can use the extra money to buy books or save it."}
         ],
         close:"So that is why I believe healthy eating matters a lot."
       }
@@ -33,8 +33,8 @@ window.DOMAIN_health = {
       answer:{
         stance:"Yes, I think keeping a regular sleep schedule is very important.",
         body:[
-          {r:"健康", en:"It keeps my body and my brain healthy.", ex:"For example, when I sleep at the same time every night, I wake up full of energy and I do not get sick easily."},
-          {r:"效率", en:"It also helps me use my time well during the day.", ex:"For example, when I get up early, I have time to review my English before class, and I finish my work faster."}
+          {r:"健康", en:"First, sleeping at the same time every day keeps my body and my brain healthy.", ex:"For example, when I go to bed at the same time every night, I wake up full of energy. I do not get sick easily, and my head feels clear all day."},
+          {r:"效率", en:"Second, a regular routine helps me use my time well during the day.", ex:"For example, when I get up early, I have time to review my English before class. Then I finish my homework faster, and I still have free time to relax."}
         ],
         close:"So that is why I believe a regular routine matters."
       }
@@ -45,8 +45,8 @@ window.DOMAIN_health = {
       answer:{
         stance:"I agree that mental health is just as important as physical health.",
         body:[
-          {r:"健康", en:"A healthy mind helps the whole body work well.", ex:"For example, when I feel calm and happy, I sleep better and I have more energy to do things."},
-          {r:"交流", en:"Good mental health also helps me get along with people.", ex:"For example, when I am in a good mood, I talk more with my family and friends, and we become closer."}
+          {r:"健康", en:"First, a healthy mind helps the whole body work well.", ex:"For example, when I feel calm and happy, I sleep better at night. I also have more energy to do my homework and to play sports."},
+          {r:"交流", en:"Second, good mental health helps me get along with people around me.", ex:"For example, when I am in a good mood, I talk more with my family and friends, so we become closer. When I am happy, I also smile more, and people like to be with me."}
         ],
         close:"So that is why I think we should take care of our mind as much as our body."
       }
@@ -57,8 +57,8 @@ window.DOMAIN_health = {
       answer:{
         stance:"When I feel stressed, I usually go for a walk with my best friend.",
         body:[
-          {r:"乐趣", en:"Walking outside makes me feel relaxed and happy.", ex:"For example, I look at the trees and the sky, and soon my worry goes away."},
-          {r:"交流", en:"Talking with my friend also helps me feel better.", ex:"For example, I tell her about my problems, and she listens and gives me advice, so I feel much lighter."}
+          {r:"乐趣", en:"First, walking outside makes me feel relaxed and happy, and it clears my head.", ex:"For example, I look at the trees and the sky, and I breathe in the fresh air. After just a short walk, my worry slowly goes away and I feel calm again."},
+          {r:"交流", en:"Second, talking with my friend also helps me feel better.", ex:"For example, I tell her about my problems, and she listens carefully and gives me advice. After we talk, I feel much lighter and I can smile again."}
         ],
         close:"So that is why walking with a friend is my favorite way to relax."
       }

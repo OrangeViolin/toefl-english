@@ -7,8 +7,8 @@ window.DOMAIN_leisure = {
       answer:{
         stance:"Yes, I really enjoy outdoor activities.",
         body:[
-          {r:"健康", en:"They are good for both my body and my mind.", ex:"For example, I go hiking every weekend, and it makes my legs stronger and clears my head."},
-          {r:"乐趣", en:"They are also a lot of fun, so they help me relax after a long week of study.", ex:"For example, I love to sit in the park, breathe the fresh air, and watch the clouds."}
+          {r:"健康", en:"They are good for both my body and my mind.", ex:"For example, I go hiking every weekend with my father. It makes my legs stronger and clears my head. After a long walk, I sleep much better at night, and I feel fresh the next morning."},
+          {r:"乐趣", en:"They are also a lot of fun, so they help me relax after a long week of study.", ex:"For example, I love to sit in the park, breathe the fresh air, and watch the clouds. Sometimes I fly a kite with my little brother, and we laugh the whole time."}
         ],
         close:"So outdoor activities make me healthy and happy, and that is why I love them."
       }
@@ -19,8 +19,8 @@ window.DOMAIN_leisure = {
       answer:{
         stance:"Yes, I love reading books.",
         body:[
-          {r:"乐趣", en:"Reading is a lot of fun for me.", ex:"For example, when I read a good story, I laugh and cry with the people in it, and I cannot wait to find out what happens next."},
-          {r:"经验", en:"Also, I can learn new things from books without leaving my home.", ex:"For example, I once read a travel book and learned how people live in other countries."}
+          {r:"乐趣", en:"Reading is a lot of fun for me.", ex:"For example, when I read a good story, I laugh and cry with the people in it. I cannot wait to find out what happens next. Last month I read a novel in just three days because I could not put it down."},
+          {r:"经验", en:"Also, I can learn new things from books without leaving my home.", ex:"For example, I once read a travel book and learned how people live in other countries. It was like visiting those places for free. Now I know a lot about food and festivals around the world."}
         ],
         close:"So reading makes my life more fun and teaches me many things."
       }
@@ -31,8 +31,8 @@ window.DOMAIN_leisure = {
       answer:{
         stance:"Yes, I really like traveling to new places.",
         body:[
-          {r:"经验", en:"Travel gives me new experiences and opens my eyes.", ex:"For example, last year I visited a mountain town, and I tried new food and saw buildings I had never seen before."},
-          {r:"交流", en:"Also, when I travel, I can meet new people and talk with them.", ex:"For example, I made a friend on a train, and we talked about our lives the whole trip."}
+          {r:"经验", en:"Travel gives me new experiences and really opens my eyes.", ex:"For example, last year I visited a mountain town. I tried new food and saw buildings I had never seen before. I also learned how people there live and work every day."},
+          {r:"交流", en:"Also, when I travel, I can meet new people and talk with them.", ex:"For example, I made a friend on a train, and we talked about our lives the whole trip. We shared snacks and took photos together. Even now, we still send messages to each other."}
         ],
         close:"So traveling helps me learn and meet people, and that is why I love it."
       }
@@ -43,8 +43,8 @@ window.DOMAIN_leisure = {
       answer:{
         stance:"I prefer to eat at home.",
         body:[
-          {r:"健康", en:"Home food is healthier for me.", ex:"For example, when I cook at home, I use fresh vegetables and less oil, so my meals are clean and good for my body."},
-          {r:"经济", en:"Eating at home also saves me money.", ex:"For example, one meal at a restaurant costs a lot, but with the same money I can buy food for a whole day at home."}
+          {r:"健康", en:"Home food is healthier for me.", ex:"For example, when I cook at home, I use fresh vegetables and less oil. So my meals are clean and good for my body. I also know exactly what is in my food, which makes me feel safe."},
+          {r:"经济", en:"Eating at home also saves me money.", ex:"For example, one meal at a restaurant costs a lot. But with the same money, I can buy food for a whole day at home. I can save the extra money for things I really want, like books or a new phone."}
         ],
         close:"So I choose home food because it is healthy and cheap."
       }
@@ -55,8 +55,8 @@ window.DOMAIN_leisure = {
       answer:{
         stance:"In my free time, I like to play badminton with my friends.",
         body:[
-          {r:"乐趣", en:"It is a lot of fun and makes me laugh.", ex:"For example, when we play, we always joke and cheer, and I forget all my worries."},
-          {r:"健康", en:"It is also good exercise for my body.", ex:"For example, after one hour of running around the court, I feel strong and full of energy."}
+          {r:"乐趣", en:"It is a lot of fun and makes me laugh.", ex:"For example, when we play, we always joke and cheer, and I forget all my worries. Sometimes we have a small match, and even when I lose, I still have a great time."},
+          {r:"健康", en:"It is also good exercise for my body.", ex:"For example, after one hour of running around the court, I feel strong and full of energy. I can focus better on my study after I play. And I hardly ever get sick now."}
         ],
         close:"So playing badminton is how I relax and stay healthy in my free time."
       }

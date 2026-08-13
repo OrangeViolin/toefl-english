@@ -7,8 +7,8 @@ window.DOMAIN_env = {
       answer:{
         stance:"Yes, I think eco-friendly travel is very important.",
         body:[
-          {r:"环保", en:"It is better for the environment.", ex:"For example, taking a train instead of a plane cuts pollution."},
-          {r:"经验", en:"It also gives me a more meaningful travel experience.", ex:"For example, I get to see nature up close and learn about local life."}
+          {r:"环保", en:"First, it is better for the environment. Traveling often makes a lot of pollution, but eco-friendly travel keeps it much lower.", ex:"For example, when I travel, I take the train instead of a plane. This one simple choice cuts a lot of pollution, and it makes me feel good about my trip."},
+          {r:"经验", en:"Second, it gives me a more meaningful travel experience. I want to truly see and feel a place, not just pass through it.", ex:"For example, last year I walked and rode a bike around a small town. I saw nature up close and talked with local people, and I learned far more than any car tour could teach me."}
         ],
         close:"So that's why I support eco-friendly travel."
       }
@@ -19,8 +19,8 @@ window.DOMAIN_env = {
       answer:{
         stance:"Yes, I think people should recycle a lot more.",
         body:[
-          {r:"环保", en:"Recycling helps keep the environment clean.", ex:"For example, when I sort paper and bottles, they are used again and make much less trash."},
-          {r:"经济", en:"It also saves money.", ex:"For example, I sell my old bottles and use that money to buy small things I need."}
+          {r:"环保", en:"First, recycling helps keep the environment clean. When we reuse things, we throw away far less.", ex:"For example, at home I sort my paper and bottles every day. They are used again, so my family makes much less trash than before."},
+          {r:"经济", en:"Second, recycling also saves money. Small things add up over time, and I notice it every month.", ex:"For example, I collect and sell my old bottles each month. I use that money to buy the small things I need, so I spend less from my own pocket and save a little more."}
         ],
         close:"So that's why I believe recycling is worth doing every day."
       }
@@ -31,8 +31,8 @@ window.DOMAIN_env = {
       answer:{
         stance:"Yes, I agree we should use much less plastic.",
         body:[
-          {r:"环保", en:"Using less plastic is better for the environment.", ex:"For example, I bring my own cloth bag to the store instead of taking plastic bags."},
-          {r:"健康", en:"It is also better for our health.", ex:"For example, I drink from a glass bottle now, because plastic can let bad things get into the water."}
+          {r:"环保", en:"First, using less plastic is better for the environment. Plastic lasts for a very long time and hurts nature.", ex:"For example, I always bring my own cloth bag to the store. I no longer take plastic bags, so I throw away far less plastic than before."},
+          {r:"健康", en:"Second, it is also better for our health. Plastic can let bad things get into our food and water over time.", ex:"For example, I now drink water from a glass bottle instead of a plastic one. I feel safer every day, and my water tastes cleaner too."}
         ],
         close:"So that's why I try to use less plastic every day."
       }
@@ -43,8 +43,8 @@ window.DOMAIN_env = {
       answer:{
         stance:"Yes, I prefer to buy eco-friendly products even if they cost more.",
         body:[
-          {r:"环保", en:"These products are better for the environment.", ex:"For example, I buy one water bottle I can use many times instead of buying new ones."},
-          {r:"耐用", en:"They also last much longer.", ex:"For example, my good shoes lasted two years, but a cheap pair broke after just two months."}
+          {r:"环保", en:"First, these products are better for the environment. They are made to be reused, not thrown away quickly.", ex:"For example, I bought one good water bottle that I use many times. I no longer need to buy new plastic bottles, so I make far less waste."},
+          {r:"耐用", en:"Second, they last much longer, so they save money in the end.", ex:"For example, my good shoes lasted two whole years. A cheap pair I bought before broke after just two months, so I had to buy a new one again and again."}
         ],
         close:"So that's why I think paying a little more is worth it."
       }
@@ -55,8 +55,8 @@ window.DOMAIN_env = {
       answer:{
         stance:"Yes, I think people should walk or ride bikes more often.",
         body:[
-          {r:"健康", en:"Walking and riding a bike are very good for our health.", ex:"For example, I ride my bike to school every day, and I feel strong and full of energy."},
-          {r:"环保", en:"They are also much better for the environment.", ex:"For example, a bike makes no pollution, so the air in my city stays clean and fresh."}
+          {r:"健康", en:"First, walking and riding a bike are very good for our health. Moving your body every day makes you stronger.", ex:"For example, I ride my bike to school every day. After doing this for a year, I feel strong and full of energy."},
+          {r:"环保", en:"Second, they are much better for the environment. Bikes and walking make no pollution at all.", ex:"For example, a bike makes no smoke, so the air in my city stays clean and fresh. If more people did this, our city would be a much nicer place to live."}
         ],
         close:"So that's why I hope more people leave their cars at home."
       }
