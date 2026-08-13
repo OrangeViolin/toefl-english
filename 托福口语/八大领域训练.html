@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>托福口语 · 八大领域训练</title>
+<style>
+  :root{
+    --bg:#f4efe6; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072; --line:#e8dfce;
+    --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4; --core:#2f8f83; --bad:#c04a3a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:26px 20px 90px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:24px;margin:12px 0 2px}
+  .sub{color:var(--muted);margin-bottom:18px;font-size:14px}
+
+  /* 万能理由库 */
+  .reasonbank{background:linear-gradient(135deg,#fff8ec,#fdf0dd);border:1px solid #f0d9b0;border-radius:16px;padding:16px 18px;margin-bottom:20px}
+  .reasonbank summary{font-weight:700;color:var(--accent);cursor:pointer;font-size:15px}
+  .reasonbank summary small{font-weight:400;color:var(--muted);margin-left:8px}
+  .rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:12px}
+  .rchip{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 11px;cursor:pointer;transition:.15s}
+  .rchip:hover{border-color:var(--accent2);transform:translateY(-1px)}
+  .rchip b{color:var(--accent);font-size:14px;display:block}
+  .rchip .en{font-size:11.5px;color:var(--core);font-weight:600}
+  .rchip .s{font-size:11.5px;color:#6b6154;margin-top:2px;line-height:1.4}
+
+  /* 领域导航 */
+  .domains{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-bottom:22px}
+  .domain{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 15px;cursor:pointer;transition:.15s;position:relative}
+  .domain:hover{border-color:var(--accent2);transform:translateY(-2px);box-shadow:0 6px 16px rgba(150,120,70,.10)}
+  .domain.on{border-color:var(--core);box-shadow:0 0 0 2px rgba(47,143,131,.15)}
+  .domain .ic{font-size:26px}
+  .domain h3{margin:6px 0 2px;font-size:16px}
+  .domain .d{font-size:12px;color:var(--muted);line-height:1.45}
+  .domain .n{position:absolute;top:12px;right:14px;font-size:11px;color:var(--core);background:#e6f0ec;border-radius:10px;padding:1px 8px;font-weight:700}
+
+  /* 答题舞台 */
+  .stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .qhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px}
+  .qpos{font-size:13px;color:var(--muted)}
+  .rtags{display:flex;gap:6px;flex-wrap:wrap}
+  .rtag{font-size:11px;padding:2px 9px;border-radius:9px;background:#e6f0ec;color:var(--core);font-weight:700}
+  .question{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.5;margin:4px 0 16px;min-height:52px}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+  .btn{border:none;border-radius:22px;padding:11px 20px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.play{background:#efe8d8;color:var(--ink)}
+  .btn.play:hover{background:#e5dccb}
+  .btn.rec{background:var(--accent);color:#fff}
+  .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
+  .btn.answer{background:var(--core);color:#fff}
+  .btn.answer:hover{background:#2a7d71}
+  .btn.next{background:var(--core);color:#fff}
+  .btn.next:disabled{opacity:.4;cursor:not-allowed}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
+  .live{min-height:42px;padding:10px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:14px;color:#6b6154;margin-bottom:6px}
+  .trans{min-height:42px;padding:10px 14px;background:#f0f6f3;border:1px dashed #cfe3db;border-radius:12px;font-size:14px;color:#33463f;display:none}
+
+  /* 参考答案 */
+  .ref{display:none;margin-top:14px;border-top:2px solid var(--core);padding-top:14px}
+  .ref .rlabel{font-size:13px;color:var(--core);font-weight:800;letter-spacing:.5px;margin-bottom:10px}
+  .ref .stance{background:#eef6f3;border-left:4px solid var(--core);padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;font-weight:600;margin-bottom:10px}
+  .ref .point{background:#faf7f0;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+  .ref .point .pt{font-size:12px;color:var(--accent);font-weight:800;margin-bottom:4px}
+  .ref .point .pt .rtag{display:inline-block;margin-left:6px}
+  .ref .point .en{font-family:Georgia,serif;font-size:15px;color:#2f2a24}
+  .ref .point .ex{font-size:13.5px;color:#6b6154;margin-top:3px;font-style:italic}
+  .ref .close{font-size:14.5px;color:#5a4a2e;font-style:italic;padding:4px 14px}
+  .ref .refbtns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .btn.small{font-size:13px;padding:8px 15px}
+
+  .hint{color:var(--muted);font-size:12.5px;margin-top:14px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./index.html">← 返回口语主页</a><span>八大领域 · 万能理由训练</span></div>
+  <h1>🎯 托福口语 · 八大领域训练</h1>
+  <div class="sub">先背万能理由骨架 → 逐题练习 → 点「参考答案」对照背诵 → 重录一遍</div>
+
+  <details class="reasonbank" id="reasonbank">
+    <summary>🔑 12 个万能理由库（背下这些骨架句，能套绝大多数题）<small>点开查看</small></summary>
+    <div class="rgrid" id="rgrid"></div>
+  </details>
+
+  <div class="domains" id="domains"></div>
+
+  <div class="stage" id="stage" style="display:none">
+    <div class="qhead">
+      <span class="qpos" id="qPos"></span>
+      <span class="rtags" id="rtags"></span>
+    </div>
+    <div class="question" id="qText"></div>
+    <div class="controls">
+      <button class="btn play" id="readBtn" onclick="readQ()">🔊 读题</button>
+      <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始答题</button>
+      <button class="btn answer" id="answerBtn" onclick="toggleAnswer()">📖 参考答案</button>
+      <button class="btn next" id="nextBtn" onclick="next()" disabled>下一题 →</button>
+    </div>
+    <div class="live" id="live">点「🔊读题」听题，点「🎙开始答题」录音。</div>
+    <div class="trans" id="trans"></div>
+
+    <div class="ref" id="ref">
+      <div class="rlabel">📖 参考答案（背骨架：立场 → 理由 → 例子 → 收尾）</div>
+      <div class="stance" id="refStance"></div>
+      <div id="refBody"></div>
+      <div class="close" id="refClose"></div>
+      <div class="refbtns">
+        <button class="btn small answer" onclick="readAnswer()">🔊 朗读参考答案</button>
+        <button class="btn small play" onclick="toggleAnswer()">收起答案</button>
+      </div>
+    </div>
+
+    <div class="hint" id="hint"></div>
+  </div>
+</div>
+
+<script src="./speech-core.js"></script>
+<script src="./reasons.js"></script>
+<script src="./data/domain-public.js"></script>
+<script src="./data/domain-leisure.js"></script>
+<script src="./data/domain-tech.js"></script>
+<script src="./data/domain-work.js"></script>
+<script src="./data/domain-health.js"></script>
+<script src="./data/domain-env.js"></script>
+<script src="./data/domain-society.js"></script>
+<script src="./data/domain-personal.js"></script>
+<script>
+const DOMAINS = [
+  window.DOMAIN_public, window.DOMAIN_leisure, window.DOMAIN_tech, window.DOMAIN_work,
+  window.DOMAIN_health, window.DOMAIN_env, window.DOMAIN_society, window.DOMAIN_personal
+].filter(Boolean);
+
+let curDomain = null, qIdx = 0, recording = false, result = null;
+
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+// 万能理由库
+function renderReasons(){
+  document.getElementById('rgrid').innerHTML = window.REASONS.map(r=>
+    '<div class="rchip" onclick="sayReason('+window.REASONS.indexOf(r)+')">'+
+    '<b>'+esc(r.zh)+'</b><span class="en">'+esc(r.en)+'</span>'+
+    '<span class="s">"'+esc(r.s)+'"</span></div>').join('');
+}
+function sayReason(i){
+  const r = window.REASONS[i];
+  VocaSpeech.say(r.s);
+}
+
+// 领域导航
+function renderDomains(){
+  document.getElementById('domains').innerHTML = DOMAINS.map((d,i)=>
+    '<div class="domain'+(curDomain===d?' on':'')+'" onclick="chooseDomain('+i+')">'+
+    '<div class="n">'+d.questions.length+' 题</div><div class="ic">'+esc(d.icon)+'</div>'+
+    '<h3>'+esc(d.title)+'</h3><div class="d">'+esc(d.desc)+'</div></div>').join('');
+}
+function chooseDomain(i){
+  curDomain = DOMAINS[i]; qIdx = 0;
+  renderDomains();
+  document.getElementById('stage').style.display='block';
+  showQuestion(0);
+}
+function showQuestion(i){
+  qIdx = i;
+  const q = curDomain.questions[i];
+  document.getElementById('qPos').textContent = curDomain.title + ' · 第 '+(i+1)+' / '+curDomain.questions.length+' 题';
+  document.getElementById('rtags').innerHTML = (q.reasons||[]).map(r=>'<span class="rtag">'+esc(r)+'</span>').join('');
+  document.getElementById('qText').textContent = q.q;
+  document.getElementById('live').innerHTML='点「🔊读题」听题，点「🎙开始答题」录音，答完可看「参考答案」。';
+  document.getElementById('trans').style.display='none';
+  document.getElementById('trans').textContent='';
+  document.getElementById('nextBtn').disabled=true;
+  document.getElementById('answerBtn').textContent='📖 参考答案';
+  document.getElementById('ref').style.display='none';
+  document.getElementById('hint').innerHTML='💡 <b>答题公式</b>：立场 → 理由 → 例子 → 收尾。先自己答，再看参考答案对照，最后背一遍重录。';
+}
+
+async function readQ(){
+  document.getElementById('live').innerHTML='🔊 考官读题中…';
+  await VocaSpeech.say(curDomain.questions[qIdx].q);
+  document.getElementById('live').innerHTML='已读完，请点「🎙开始答题」作答。';
+}
+
+async function toggleRec(){
+  if(recording){
+    recording=false;
+    document.getElementById('recBtn').textContent='🎙 开始答题';
+    document.getElementById('recBtn').classList.remove('recording');
+    document.getElementById('live').innerHTML='⏳ 正在转写…';
+    result = await VocaSpeech.stop();
+    const txt = result.transcript||'(未识别)';
+    document.getElementById('trans').style.display='block';
+    document.getElementById('trans').innerHTML='📝 转写：<b>'+esc(txt)+'</b>'+(result.engine==='whisper'?' <span style="color:#2f8f83;font-size:12px">(whisper ✓)</span>':' <span style="color:#d8903a;font-size:12px">(浏览器降级)</span>');
+    document.getElementById('live').innerHTML='答完了！点「📖参考答案」对照，点「下一题」继续。';
+    document.getElementById('nextBtn').disabled=false;
+  } else {
+    try{
+      await VocaSpeech.start(()=>{});
+      recording=true;
+      document.getElementById('recBtn').textContent='⏹ 停止答题';
+      document.getElementById('recBtn').classList.add('recording');
+      document.getElementById('live').innerHTML='🎙 录音中，请用「立场→理由→例子→收尾」回答…';
+      document.getElementById('trans').style.display='none';
+    }catch(e){ alert(e.message); }
+  }
+}
+
+function toggleAnswer(){
+  const ref = document.getElementById('ref');
+  const show = ref.style.display==='none' || ref.style.display==='';
+  ref.style.display = show ? 'block' : 'none';
+  document.getElementById('answerBtn').textContent = show ? '🙈 收起答案' : '📖 参考答案';
+  if(show) renderAnswer();
+}
+function renderAnswer(){
+  const a = curDomain.questions[qIdx].answer;
+  document.getElementById('refStance').textContent = a.stance;
+  document.getElementById('refBody').innerHTML = a.body.map(p=>
+    '<div class="point"><div class="pt">💡 理由：'+esc(p.r)+' <span class="rtag">'+esc(p.r)+'</span></div>'+
+    '<div class="en">'+esc(p.en)+'</div>'+
+    (p.ex? '<div class="ex">'+esc(p.ex)+'</div>':'')+'</div>').join('');
+  document.getElementById('refClose').textContent = a.close;
+}
+function readAnswer(){
+  const a = curDomain.questions[qIdx].answer;
+  const full = [a.stance, ...a.body.map(p=>p.en+' '+(p.ex||'')), a.close].join(' ');
+  VocaSpeech.say(full);
+}
+
+function next(){
+  showQuestion((qIdx+1) % curDomain.questions.length);
+}
+
+// 初始化
+if(!VocaSpeech.supported){
+  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 请用 Chrome/Edge 打开（录音需要）</b>';
+}
+renderReasons();
+renderDomains();
+</script>
+</body>
+</html>
