@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自定义面试 · Take an Interview</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--bad:#c04a3a;--warn:#d8903a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:22px;margin:12px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 20px}
+  /* 选择列表 */
+  .ivlist{display:grid;gap:12px}
+  .iv{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;transition:.15s}
+  .iv:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .iv h3{margin:0 0 4px;font-size:17px}
+  .iv .sc{color:var(--core);font-size:13px;font-weight:600}
+  .iv .pre{color:var(--muted);font-size:13px;margin-top:6px}
+  /* 面试舞台 */
+  .stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .scenebox{background:#f4f0e5;border-radius:12px;padding:14px 16px;margin-bottom:16px;font-size:14px}
+  .scenebox .lbl{font-size:12px;color:var(--accent);font-weight:700}
+  .scenebox .intro{font-family:Georgia,serif;font-size:15px;color:#3a332b;margin-top:4px}
+  .qhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+  .qpos{font-size:13px;color:var(--muted)}
+  .mod{font-size:11px;padding:3px 10px;border-radius:10px;background:#e6f0ec;color:var(--core);font-weight:700}
+  .timer{font-size:16px;font-weight:800;color:var(--ink)}
+  .timer.warn{color:var(--bad)}
+  .question{font-family:Georgia,"Times New Roman",serif;font-size:21px;line-height:1.5;margin:6px 0 16px;min-height:56px}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+  .btn{border:none;border-radius:22px;padding:11px 22px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.play{background:#efe8d8;color:var(--ink)}
+  .btn.play:hover{background:#e5dccb}
+  .btn.rec{background:var(--accent);color:#fff}
+  .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
+  .btn.next{background:var(--core);color:#fff}
+  .btn.begin{background:var(--core);color:#fff;font-size:16px;padding:13px 28px}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
+  .live{min-height:44px;padding:10px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:15px;color:#6b6154}
+  .answer{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  .answer .metric{font-size:14px;color:#5f574c;margin-bottom:6px}
+  .answer .metric b{color:var(--ink)}
+  .report{margin-top:18px}
+  .report textarea{width:100%;height:230px;font-size:12.5px;font-family:ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:10px;padding:10px;background:#faf6ee}
+  .report .copy{background:var(--core);color:#fff;border:none;border-radius:20px;padding:8px 18px;font-size:13px;cursor:pointer;margin-top:8px}
+  .hint{color:var(--muted);font-size:12.5px;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./index.html">← 返回口语主页</a><span>自定义面试 · Take an Interview</span></div>
+  <h1>🎤 自定义面试（考官模式）</h1>
+  <div class="en">你给我题目 → 语音读题考你 → 录音答题 → 我打分</div>
+  <div class="desc">选择一个情景，系统会像考官一样：读开场白 → 逐题读题 → 每题 45 秒录音 → 全部答完生成报告，贴回对话我给详细打分。</div>
+
+  <div class="ivlist" id="ivList"></div>
+
+  <div class="stage" id="stage" style="display:none">
+    <div class="scenebox">
+      <div class="lbl">📋 情景 · <span id="scName"></span></div>
+      <div class="intro" id="scIntro"></div>
+    </div>
+    <div class="qhead"><span class="qpos" id="qPos"></span><span class="mod" id="qMod"></span></div>
+    <div class="question" id="qText">准备开始…</div>
+    <div class="qhead" style="margin:0"><span></span><span class="timer" id="timer">⏱ 45s</span></div>
+    <div class="controls">
+      <button class="btn begin" id="beginBtn" onclick="begin()">▶ 开始面试（读开场白+第1题）</button>
+      <button class="btn play" id="readBtn" onclick="readQuestion()" style="display:none">🔊 读题</button>
+      <button class="btn rec" id="recBtn" onclick="toggleRec()" style="display:none">🎙 开始答题</button>
+      <button class="btn next" id="nextBtn" onclick="next()" style="display:none" disabled>下一题 →</button>
+    </div>
+    <div class="live" id="live">选好情景后点「开始面试」。</div>
+    <div class="answer" id="answer" style="display:none"></div>
+    <div class="report" id="reportWrap" style="display:none">
+      <h4 style="margin:12px 0 6px;font-size:14px">📋 答题报告（复制给 cc 打分）</h4>
+      <textarea id="reportText" readonly></textarea><br>
+      <button class="copy" onclick="copyReport()">📋 复制答题报告</button>
+    </div>
+    <div class="hint">💡 每题尽量说到接近 45 秒：观点 → 理由 → 具体例子；少用 um/uh。</div>
+  </div>
+</div>
+
+<script src="./speech-core.js"></script>
+<script src="./interviews-data.js"></script>
+<script>
+let cur = null, qIdx = 0;
+let answers = [];
+let recording = false, timerId = null, remain = 45;
+
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function tokenize(s){ return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean); }
+function sleep(ms){ return new Promise(r=>setTimeout(r,ms)); }
+
+function renderList(){
+  document.getElementById('ivList').innerHTML = window.INTERVIEWS.map((iv,i)=>
+    '<div class="iv" onclick="choose('+i+')">'+
+    '<h3>'+esc(iv.title)+'</h3><div class="sc">'+esc(iv.scenario)+'</div>'+
+    '<div class="pre">"'+esc(iv.intro)+'"</div></div>').join('');
+}
+
+function choose(i){
+  cur = window.INTERVIEWS[i]; qIdx = 0; answers = [];
+  document.getElementById('ivList').style.display='none';
+  const st = document.getElementById('stage'); st.style.display='block';
+  document.getElementById('scName').textContent = cur.scenario;
+  document.getElementById('scIntro').textContent = cur.intro;
+  document.getElementById('qPos').textContent = '共 4 题 · 每题 45 秒';
+  document.getElementById('qMod').textContent = '准备';
+  document.getElementById('qText').textContent = '点「开始面试」后，系统会读开场白和第一题。';
+  document.getElementById('beginBtn').style.display='inline-block';
+  document.getElementById('readBtn').style.display='none';
+  document.getElementById('recBtn').style.display='none';
+  document.getElementById('nextBtn').style.display='none';
+  document.getElementById('live').innerHTML='点「开始面试」开始。';
+  document.getElementById('answer').style.display='none';
+  document.getElementById('reportWrap').style.display='none';
+}
+
+async function begin(){
+  document.getElementById('beginBtn').style.display='none';
+  document.getElementById('live').innerHTML='🔊 考官正在读开场白…';
+  await VocaSpeech.say(cur.intro);
+  await sleep(600);
+  showQuestion(0);
+  document.getElementById('live').innerHTML='🔊 考官在读第一题…';
+  await VocaSpeech.say(cur.questions[0].text);
+  await sleep(400);
+  startRec();
+}
+
+function showQuestion(i){
+  qIdx = i;
+  document.getElementById('qPos').textContent = '第 '+(i+1)+' / 4 题';
+  document.getElementById('qMod').textContent = cur.questions[i].module;
+  document.getElementById('qText').textContent = cur.questions[i].text;
+  document.getElementById('readBtn').style.display='inline-block';
+  document.getElementById('recBtn').style.display='inline-block';
+  document.getElementById('nextBtn').style.display='inline-block';
+  document.getElementById('nextBtn').disabled=true;
+  document.getElementById('answer').style.display='none';
+  document.getElementById('live').innerHTML='🔊 读题后点「开始答题」，或直接录音回答。';
+  resetTimer();
+}
+
+async function readQuestion(){
+  document.getElementById('live').innerHTML='🔊 考官在读题…';
+  await VocaSpeech.say(cur.questions[qIdx].text);
+  document.getElementById('live').innerHTML='已读完，请回答（点「开始答题」）。';
+}
+
+let result=null;
+async function toggleRec(){
+  if(recording){ stopRec(); }
+  else { await startRec(); }
+}
+async function startRec(){
+  if(recording) return;
+  try{
+    await VocaSpeech.start(()=>{});
+    recording=true; remain=45;
+    document.getElementById('recBtn').textContent='⏹ 停止答题';
+    document.getElementById('recBtn').classList.add('recording');
+    document.getElementById('live').innerHTML='🎙 录音中，请展开回答…';
+    document.getElementById('answer').style.display='none';
+    startTimer();
+  }catch(e){ alert(e.message); }
+}
+async function stopRec(){
+  recording=false; clearInterval(timerId);
+  document.getElementById('recBtn').textContent='🎙 开始答题';
+  document.getElementById('recBtn').classList.remove('recording');
+  document.getElementById('live').innerHTML='⏳ 正在转写你的回答…';
+  result = await VocaSpeech.stop();
+  finishAnswer();
+}
+function startTimer(){
+  const el=document.getElementById('timer');
+  el.classList.remove('warn');
+  timerId=setInterval(()=>{
+    remain--;
+    el.textContent='⏱ '+remain+'s';
+    if(remain<=10) el.classList.add('warn');
+    if(remain<=0){ clearInterval(timerId); if(recording) toggleRec(); }
+  },1000);
+}
+function resetTimer(){ remain=45; const el=document.getElementById('timer'); el.textContent='⏱ 45s'; el.classList.remove('warn'); }
+
+function finishAnswer(){
+  const txt = result.transcript || '';
+  const wpm = Math.round(tokenize(txt).length / Math.max(result.duration,0.1) * 60);
+  const fillers = (txt.match(/\b(um|uh|er|like|you know)\b/gi)||[]).length;
+  answers.push({ q:cur.questions[qIdx].text, module:cur.questions[qIdx].module, transcript:txt, duration:result.duration, wpm, fillers, engine:result.engine });
+
+  const eng = result.engine==='whisper' ? ' · 本地 whisper ✓' : ' · ⚠️ 浏览器降级';
+  document.getElementById('answer').innerHTML =
+    '<div class="metric">📝 转写：<b>'+(esc(txt)||'<i style="color:#a89a86">(空/未识别)</i>')+'</b></div>'+
+    '<div class="metric">⏱ 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 填充词 <b>'+fillers+'</b> 次'+eng+'</div>';
+  document.getElementById('answer').style.display='block';
+
+  if(qIdx<3){
+    document.getElementById('nextBtn').disabled=false;
+    document.getElementById('nextBtn').textContent='下一题 →';
+  } else {
+    document.getElementById('nextBtn').disabled=true;
+    buildReport();
+  }
+}
+
+async function next(){
+  const i = qIdx+1;
+  showQuestion(i);
+  document.getElementById('live').innerHTML='🔊 考官在读第 '+(i+1)+' 题…';
+  await VocaSpeech.say(cur.questions[i].text);
+  await sleep(400);
+  startRec();
+}
+
+function buildReport(){
+  let rep = '【自定义面试 · '+cur.title+'】\n情景：'+cur.intro+'\n';
+  answers.forEach((a,i)=>{
+    rep += '\nQ'+(i+1)+'（'+a.module+'）: '+a.q+'\n';
+    rep += '  答：'+(a.transcript||'(空/未识别)')+'\n';
+    rep += '  （时长 '+a.duration.toFixed(1)+'s · 语速 '+a.wpm+' wpm · 填充词 '+a.fillers+' 次 · 引擎 '+(a.engine==='whisper'?'whisper':'浏览器降级')+'）\n';
+  });
+  rep += '\n—— 请 cc 详细打分评测（流利度 / 连贯展开 / 语法 / 词汇 / 内容切题；发音韵律请结合我后续反馈）';
+  document.getElementById('reportText').value = rep;
+  document.getElementById('reportWrap').style.display='block';
+}
+function copyReport(){
+  const t=document.getElementById('reportText');
+  t.select(); document.execCommand('copy');
+  alert('已复制答题报告，回到对话粘贴给 cc 即可详细打分');
+}
+
+// 初始化
+if(!VocaSpeech.supported){
+  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 当前浏览器不支持录音，请用 Chrome / Edge 打开。</b>';
+}
+renderList();
+VocaSpeech.checkServer().then(ok=>{ if(!ok && VocaSpeech.supported){ /* 页面顶部已有提示入口 */ } });
+</script>
+</body>
+</html>
