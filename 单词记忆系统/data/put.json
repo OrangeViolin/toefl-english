@@ -1,0 +1,1280 @@
+{
+  "id": "put",
+  "combo": "oo·u·ou",
+  "title": "/ʊ/ 短音家族",
+  "sound": "/ʊ/",
+  "subtitle": "book ≠ boot：短促松弛的「乌」，三条拼写路径全收录",
+  "intro": "/ʊ/ 是英语里最容易被认错的元音——很多人看见 oo 就发 /uː/，其实 oo 分两派：book/good/foot 里是短促松弛的 /ʊ/（嘴唇微圆、下颚不过紧），而 too/food/moon 里才是拉长的 /uː/。辨别关键：听完之后嘴巴是不是还张着——/ʊ/ 发完即收，/uː/ 要绷住。u 写法里 put/full/push 同属 /ʊ/ 家族，但 but/fun/run 里的 u 却是 /ʌ/，须个案记忆。could/would/should 的 ou 一律读 /ʊ/，l 不发音，整个读起来像「库德/吴德/书德」。wolf 和 woman 是 o 读 /ʊ/ 的特例，来自古英语遗留。把这三条路径认清，/ʊ/ 家族的词再没有读错的理由。",
+  "subgroups": [
+    {
+      "key": "oo",
+      "tag": "oo → /ʊ/",
+      "label": "✅ oo = /ʊ/（短）",
+      "desc": "book/good/foot/cook/wood/hook/stood/wool；对比 too/food/moon/boot 的 /uː/ 长音。经验法则：oo 在 k 前（book/look/cook/hook）几乎都是 /ʊ/；在 t/d 前（food/mood/wood/good）需逐词记忆。"
+    },
+    {
+      "key": "u",
+      "tag": "u → /ʊ/",
+      "label": "u = /ʊ/",
+      "desc": "put/full/push/pull/bush/sugar/cushion/bull；注意同是 u 字母，but/fun/sun 读 /ʌ/，而这一组读 /ʊ/，属高频特例须逐词记忆。"
+    },
+    {
+      "key": "ou",
+      "tag": "ou → /ʊ/",
+      "label": "ou = /ʊ/",
+      "desc": "could/would/should；三词拼写含 l 但 l 完全不发音，读 /kʊd/、/wʊd/、/ʃʊd/。这是固定组合，背一次终生不误。"
+    },
+    {
+      "key": "other",
+      "tag": "o 特例",
+      "label": "其它 = /ʊ/",
+      "desc": "wolf /wʊlf/、woman /ˈwʊmən/；o 在古英语中本读圆唇短元音，现代英语保留了这两个特例，需单独记忆。"
+    }
+  ],
+  "words": [
+    {
+      "word": "book",
+      "hl": "oo",
+      "levels": ["托福"],
+      "ipa": "/bʊk/",
+      "subgroup": "oo",
+      "meaning": "n. 书；账本  v. 预订，预约",
+      "etymology": "古英语 bōc，日耳曼同根，与德语 Buch（书）同源。原指「山毛榉木制的书写板」，后泛指书籍。动词义「预订」源自「把名字写进账本」。",
+      "roots": [
+        {"part": "book（bōc）", "meaning": "书写板、书"}
+      ],
+      "phonetics": "b + oo /ʊ/ + k；oo 在 k 前读短音 /ʊ/ 是最稳定的规律，对比 boot /uː/——同样 oo，但 t 前长、k 前短（经验法则，非铁律）。",
+      "tip": "「by the book」= 按规章办事；「book a table」= 预订桌位。两义都极高频。",
+      "core": "记录与存取——把信息或名字「写入」某处固定下来，由此生出「书本」和「预订」两条路。",
+      "senses": [
+        {
+          "gloss": "n. 书，书本",
+          "logic": "把文字记录固定下来的实物载体，最基础的「写入之物」。",
+          "en": "He stayed up all night finishing the book he had borrowed from the library.",
+          "zh": "他通宵把从图书馆借来的书读完了。"
+        },
+        {
+          "gloss": "n. 账本，记录册",
+          "logic": "同样是「写入信息」，只是写的是数字和交易，引申为账本或花名册。",
+          "en": "The accountant discovered an error in the company's books.",
+          "zh": "会计师在公司账本里发现了一处错误。"
+        },
+        {
+          "gloss": "v. 预订，预约",
+          "logic": "「把名字写进账本」→ 把座位或时间锁定给你，由此成为动词「预订」。",
+          "en": "She booked a hotel room three weeks in advance.",
+          "zh": "她提前三周预订了酒店房间。"
+        }
+      ],
+      "derivatives": [
+        {"w": "booklet", "gloss": "小册子"},
+        {"w": "booking", "gloss": "预订（行为或记录）"},
+        {"w": "bookkeeper", "gloss": "记账员"},
+        {"w": "textbook", "gloss": "教科书"}
+      ],
+      "examples": [
+        {
+          "en": "She booked a hotel room three weeks in advance.",
+          "zh": "她提前三周预订了酒店房间。",
+          "source": "造句"
+        },
+        {
+          "en": "by the book",
+          "zh": "「按规章办事、一板一眼」——职场和法律语境高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "reserve", "ipa": "/rɪˈzɜːrv/", "gloss": "预留，预订", "note": "「预留、预订」，比 book 更正式，多用于书面或酒店场景；reserve a seat（预留座位）"},
+        {"w": "volume", "ipa": "/ˈvɒljuːm/", "gloss": "书册，卷", "note": "「书册」义，正式书面词，多指丛书中的一册；volume III of the series"},
+        {"w": "text", "ipa": "/tekst/", "gloss": "教材，课本", "note": "「教材/课本」义，教育场景常用；textbook（教科书）"}
+      ],
+      "antonyms": [
+        {"w": "cancel", "note": "取消（预订）"}
+      ],
+      "nuance": "book 作动词和 reserve 都表示预订，但 book 更口语，reserve 更正式，且 reserve 还有「保留权利」之义（reserve the right to）。作名词时 book 泛指书，volume 特指书册编号，text 专指学习用文本。"
+    },
+    {
+      "word": "good",
+      "hl": "oo",
+      "levels": ["托福"],
+      "ipa": "/ɡʊd/",
+      "subgroup": "oo",
+      "meaning": "adj. 好的；擅长的；有益的  n. 善；益处",
+      "etymology": "古英语 gōd，日耳曼同根，与德语 gut 同源。核心义「符合标准、有用的」，引申出道德义（the good）和感叹义（Good morning）。",
+      "roots": [
+        {"part": "good（gōd）", "meaning": "好、有用"}
+      ],
+      "phonetics": "g + oo /ʊ/ + d；oo 在 d 前须分辨：good /ʊ/ 短，mood/food /uː/ 长，无简单规则，逐词记忆。",
+      "core": "符合标准、令人满意——达到了某个预期刻度，由此衍生出「质量好」「道德善」「有益于」三个方向。",
+      "senses": [
+        {
+          "gloss": "adj. 好的，质量令人满意的",
+          "logic": "最基础义：事物达到了应有的标准，令人满意。",
+          "en": "This is a good knife — it stays sharp for months.",
+          "zh": "这是把好刀，锋利能保持好几个月。"
+        },
+        {
+          "gloss": "adj. 擅长的（be good at）",
+          "logic": "人在某件事上「达到标准」→ 说明他掌握得好，即「擅长」。",
+          "en": "She is exceptionally good at reading people's emotions.",
+          "zh": "她特别擅长读懂别人的情绪。"
+        },
+        {
+          "gloss": "adj. 有益的，对…有好处的（be good for）",
+          "logic": "对身体或目标「达到有利标准」→ 引申为「有益」。",
+          "en": "Regular exercise is good for your cardiovascular health.",
+          "zh": "定期锻炼对心血管健康有益。"
+        },
+        {
+          "gloss": "n. 善，道德上的好",
+          "logic": "「符合道德标准」的抽象化，成为名词「善」（the good）。",
+          "en": "He believed that people are capable of both good and evil.",
+          "zh": "他相信人兼具善与恶的能力。"
+        },
+        {
+          "gloss": "n. 益处，好处（do sb good）",
+          "logic": "某事对人「达到有益标准」，名词化后表示「益处」。",
+          "en": "A week's rest will do you a lot of good.",
+          "zh": "休息一周对你大有好处。"
+        }
+      ],
+      "derivatives": [
+        {"w": "goodness", "gloss": "善良，优良品质"},
+        {"w": "goods", "gloss": "货物，商品"},
+        {"w": "goodwill", "gloss": "善意；（商业）商誉"},
+        {"w": "good-natured", "gloss": "脾气好的，和善的"}
+      ],
+      "examples": [
+        {
+          "en": "Regular exercise is good for your cardiovascular health.",
+          "zh": "定期锻炼对心血管健康有益。",
+          "source": "造句"
+        },
+        {
+          "en": "for good",
+          "zh": "「永久地、从此以后」——高频副词短语：She left for good.（她永远离开了。）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "excellent", "ipa": "/ˈeksələnt/", "gloss": "优秀的，出色的", "note": "「优秀的」，比 good 程度更强，正式场合多用；excellent performance（出色表现）"},
+        {"w": "beneficial", "ipa": "/ˌbenɪˈfɪʃl/", "gloss": "有益的，有利的", "note": "「有益的」义，比 good for 更正式；beneficial effects（有益效果）"},
+        {"w": "virtuous", "ipa": "/ˈvɜːrtʃuəs/", "gloss": "有美德的，品行端正的", "note": "「有美德的」，专指道德义，比 good 更书面"}
+      ],
+      "antonyms": [
+        {"w": "bad", "note": "坏的"},
+        {"w": "harmful", "note": "有害的"}
+      ],
+      "nuance": "good 是最通用的正面评价词；excellent 是程度更强的客观评价（不适合谦虚场合）；beneficial 专指「对某方面有益」的功能性描述，不含道德评价。"
+    },
+    {
+      "word": "look",
+      "hl": "oo",
+      "levels": ["托福"],
+      "ipa": "/lʊk/",
+      "subgroup": "oo",
+      "meaning": "v. 看；显得；朝向  n. 外貌；一瞥",
+      "etymology": "古英语 lōcian「看、观察」，日耳曼同根。不同于 see（被动感知），look 强调主动注视的动作。",
+      "roots": [
+        {"part": "look（lōcian）", "meaning": "主动观看"}
+      ],
+      "phonetics": "l + oo /ʊ/ + k；与 book/cook/hook 同韵（-ook 韵脚一律 /ʊk/，极稳定）。",
+      "tip": "look vs see：look 是主动行为（I'm looking），see 是感知结果（I see it）。「Look at me!」是命令看，「I can see you」是感知到了。",
+      "core": "主动将目光投向某处——不是被动接收，而是有意识地调转方向去看，由此引申出「显得」（别人眼中的朝向）和「外观」（被看到的样子）。",
+      "senses": [
+        {
+          "gloss": "v. 看，注视（主动行为）",
+          "logic": "核心义：把目光有意识地对准目标。",
+          "en": "She looked out of the window and saw it was raining.",
+          "zh": "她往窗外看了一眼，发现在下雨。"
+        },
+        {
+          "gloss": "v. 显得，看起来（look + 形容词）",
+          "logic": "从「被别人看」的角度反推——你在别人眼中呈现出来的状态，即「显得」。",
+          "en": "You look tired — did you sleep at all last night?",
+          "zh": "你看起来很疲惫，昨晚根本没睡吗？"
+        },
+        {
+          "gloss": "v. 朝向，面向（look onto/over）",
+          "logic": "建筑或空间「将正面对准某方向」，借用目光投向的方向感。",
+          "en": "The hotel room looks onto the sea.",
+          "zh": "这间酒店客房面朝大海。"
+        },
+        {
+          "gloss": "n. 一瞥，一眼（have/take a look）",
+          "logic": "单次主动注视的动作名词化，即「瞥一眼」。",
+          "en": "Take a look at this report before the meeting.",
+          "zh": "开会前先看一眼这份报告。"
+        },
+        {
+          "gloss": "n. 外貌，外观（sb's looks）",
+          "logic": "「被看到的整体样子」→ 外貌，尤指容貌（常用复数 looks）。",
+          "en": "She was praised for her looks, but her talent was even more remarkable.",
+          "zh": "她的外貌备受称赞，但她的才华更令人惊叹。"
+        }
+      ],
+      "derivatives": [
+        {"w": "outlook", "gloss": "展望，前景；（从某处的）视野"},
+        {"w": "overlook", "gloss": "俯瞰；忽视，忽略"},
+        {"w": "onlooker", "gloss": "旁观者"},
+        {"w": "lookout", "gloss": "了望，警戒；（负责）瞭望的人"}
+      ],
+      "examples": [
+        {
+          "en": "She looked out of the window and saw it was raining.",
+          "zh": "她往窗外看了一眼，发现在下雨。",
+          "source": "造句"
+        },
+        {
+          "en": "look forward to",
+          "zh": "「期待」——后接名词或动名词（v-ing），托福写作高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "glance", "ipa": "/ɡlɑːns/", "gloss": "瞥一眼，匆匆一看", "note": "「瞥一眼」，比 look 更短暂随意；glance at the clock（瞥了一眼时钟）"},
+        {"w": "gaze", "ipa": "/ɡeɪz/", "gloss": "凝视，注视", "note": "「凝视」，比 look 更持久、更专注；gaze into the distance（凝视远方）"},
+        {"w": "examine", "ipa": "/ɪɡˈzæmɪn/", "gloss": "仔细检查，审视", "note": "「仔细查看」，带有检查目的，比 look 更正式"}
+      ],
+      "antonyms": [
+        {"w": "ignore", "note": "无视、不去看"},
+        {"w": "overlook", "note": "忽视"}
+      ],
+      "nuance": "look 是有意识地将目光对准目标，see 是感知的结果，watch 是持续盯着动态的事物（watch TV），gaze 是长时间专注凝视，glance 是迅速一瞥。"
+    },
+    {
+      "word": "foot",
+      "hl": "oo",
+      "levels": ["非托福"],
+      "ipa": "/fʊt/",
+      "subgroup": "oo",
+      "meaning": "n. 脚；英尺（30.48 cm）；（诗歌）音步  v. foot the bill（付账）",
+      "etymology": "古英语 fōt，日耳曼同根，与德语 Fuß 同源。英尺（foot）源自人脚的长度，是古代度量衡的身体锚点。",
+      "roots": [
+        {"part": "foot（fōt）", "meaning": "脚"}
+      ],
+      "phonetics": "f + oo /ʊ/ + t；注意 food /uː/ 和 foot /ʊ/——同是 oo+辅音但长短不同，是 /ʊ/ vs /uː/ 辨别的经典最小对。",
+      "tip": "foot the bill（付账）是固定习语，foot 在此用作动词，来自「在账单底部签字」。",
+      "core": "物体最底端的支撑点——脚是身体的基底，由此辐射出「单位长度（脚长）」「页脚/山脚」「承担（账单底部签名）」等义。",
+      "senses": [
+        {
+          "gloss": "n. 脚，足部",
+          "logic": "核心义：人或动物身体最底端的行走器官。",
+          "en": "He injured his foot during the game and had to sit out.",
+          "zh": "他在比赛中伤了脚，不得不坐场外。"
+        },
+        {
+          "gloss": "n. 英尺（长度单位，约 30.48 厘米）",
+          "logic": "古代用人脚长度作为测量标准，后固化为长度单位。",
+          "en": "The room is about twelve feet wide.",
+          "zh": "这个房间大约有十二英尺宽。"
+        },
+        {
+          "gloss": "n. 底部，底端（the foot of sth）",
+          "logic": "「最低端的支撑处」→ 页脚、山脚、楼梯最下一级，皆为「底端」。",
+          "en": "There was a note scrawled at the foot of the page.",
+          "zh": "页面底部潦草地写着一条注释。"
+        },
+        {
+          "gloss": "v. 承担（账单）（foot the bill）",
+          "logic": "历史上在账单底部签名表示认账付款，引申为动词「埋单、承担费用」。",
+          "en": "The company agreed to foot the bill for the entire conference.",
+          "zh": "公司同意承担整场会议的全部费用。"
+        }
+      ],
+      "derivatives": [
+        {"w": "footstep", "gloss": "脚步声；步骤，足迹"},
+        {"w": "footnote", "gloss": "脚注，注脚"},
+        {"w": "footprint", "gloss": "脚印；（碳）足迹"},
+        {"w": "footage", "gloss": "（以英尺计的）影像片段，画面"}
+      ],
+      "examples": [
+        {
+          "en": "He injured his foot during the game and had to sit out.",
+          "zh": "他在比赛中伤了脚，不得不坐场外。",
+          "source": "造句"
+        },
+        {
+          "en": "foot the bill",
+          "zh": "「付账、承担费用」——高频习语，常用于商务场合。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "base", "ipa": "/beɪs/", "gloss": "底部，底端；基础", "note": "「底部/底端」义，foot of the mountain（山脚）= base of the mountain"},
+        {"w": "pace", "ipa": "/peɪs/", "gloss": "步伐，步速", "note": "「步伐」，与 foot 相关；set the pace（定节奏）"}
+      ],
+      "antonyms": [
+        {"w": "head", "note": "头（顶端，与脚相对）"}
+      ],
+      "nuance": "foot of the page/mountain 表示「底端」，是 bottom 的文学替代；作度量单位时 foot（单数）和 feet（复数）严格区分，「six feet tall」而非「six foot」（口语中 six foot 也被接受）。"
+    },
+    {
+      "word": "cook",
+      "hl": "oo",
+      "levels": ["非托福"],
+      "ipa": "/kʊk/",
+      "subgroup": "oo",
+      "meaning": "v. 烹饪，做饭  n. 厨师",
+      "etymology": "拉丁语 coquus（厨师），经古英语 cōc 借入。与 cuisine（烹饪风格）共享拉丁词根 coquere（烹调）。",
+      "roots": [
+        {"part": "cook（coquus）", "meaning": "厨师、烹调"}
+      ],
+      "phonetics": "c + oo /ʊ/ + k；-ook 韵脚（book/look/hook）一律 /ʊk/，此处再次印证。",
+      "core": "用热或处理转化食材——加热是核心动作，由此引申出「捏造」（在信息上「加热」制造假象）的比喻义。",
+      "senses": [
+        {
+          "gloss": "v. 烹饪，做饭",
+          "logic": "核心义：用热力处理食材，将生食转化为熟食。",
+          "en": "She cooked a three-course meal for her guests.",
+          "zh": "她为客人做了一顿三道菜的晚餐。"
+        },
+        {
+          "gloss": "v. 捏造，伪造（cook up / cook the books）",
+          "logic": "「在原料上动手脚」→ 比喻篡改数据或捏造事实，是偶合性引申，语感上可理解但无历史直接联系。",
+          "en": "Investigators found that the accountant had been cooking the books for years.",
+          "zh": "调查人员发现那名会计多年来一直在做假账。"
+        },
+        {
+          "gloss": "n. 厨师，做饭的人",
+          "logic": "执行「烹饪」动作的人，动词直接名词化。",
+          "en": "My grandmother was the best cook in the family.",
+          "zh": "我祖母是家里厨艺最好的人。"
+        }
+      ],
+      "derivatives": [
+        {"w": "cooker", "gloss": "炊具，烹饪用具（如电饭锅）"},
+        {"w": "cookery", "gloss": "烹饪（技艺）"},
+        {"w": "cookbook", "gloss": "食谱书"},
+        {"w": "cooking", "gloss": "烹饪；（adj.）烹饪用的"}
+      ],
+      "examples": [
+        {
+          "en": "She cooked a three-course meal for her guests.",
+          "zh": "她为客人做了一顿三道菜的晚餐。",
+          "source": "造句"
+        },
+        {
+          "en": "cook up",
+          "zh": "「捏造、炮制」（比喻义）——cook up an excuse（编借口），高频口语搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "prepare", "ipa": "/prɪˈpeər/", "gloss": "准备，预备（餐食）", "note": "「准备（餐食）」，比 cook 更中性，可指冷食；prepare a meal"},
+        {"w": "chef", "ipa": "/ʃef/", "gloss": "主厨，专业厨师", "note": "名词义「主厨」，比 cook 级别更高，指专业厨师"}
+      ],
+      "antonyms": [],
+      "nuance": "cook 强调加热处理食材，prepare 泛指准备食物（不一定加热）。作名词时 chef 是专业主厨，cook 是泛称厨师或家庭做饭的人，无高低之分，但 chef 更正式。"
+    },
+    {
+      "word": "hook",
+      "hl": "oo",
+      "levels": ["托福"],
+      "ipa": "/hʊk/",
+      "subgroup": "oo",
+      "meaning": "n. 钩子；（文章的）开篇吸引点  v. 钩住；上瘾（hook sb）",
+      "etymology": "古英语 hōc「钩子」，日耳曼同根。比喻义「吸引住」来自钩子抓住东西不放的形象。",
+      "roots": [
+        {"part": "hook（hōc）", "meaning": "钩子"}
+      ],
+      "phonetics": "h + oo /ʊ/ + k；-ook 韵脚，与 book/look/cook 押韵。",
+      "tip": "写作中「hook」专指文章开头吸引读者的那句话或策略，托福独立写作常被提及。",
+      "core": "弯曲成弧、抓住不放——钩子的形状与功能：弯曲、扣住、难以脱离，由此衍生出「吸引住」「上瘾」「开篇吸引点」。",
+      "senses": [
+        {
+          "gloss": "n. 钩子，挂钩",
+          "logic": "核心义：弯曲的金属器具，用于挂东西或固定。",
+          "en": "She hung her coat on the hook by the door.",
+          "zh": "她把外套挂在门边的挂钩上。"
+        },
+        {
+          "gloss": "n. 吸引点，开篇钩子（写作术语）",
+          "logic": "像钩子一样「钩住读者注意力」，让人看了第一句就停不下来。",
+          "en": "The opening sentence of the essay was a powerful hook that drew readers in immediately.",
+          "zh": "文章开篇那句话是个有力的钩子，立刻把读者拉了进去。"
+        },
+        {
+          "gloss": "v. 钩住，挂上",
+          "logic": "用钩子把两物连接或固定，动词义直接来自名词。",
+          "en": "Hook the trailer to the back of the truck before you drive off.",
+          "zh": "开车前先把拖车钩到卡车后面。"
+        },
+        {
+          "gloss": "v. 使上瘾，使着迷（hook sb on sth）",
+          "logic": "「钩住某人」→ 被钩住就脱不开身，引申为「使迷上、上瘾」。",
+          "en": "The show hooked millions of viewers with its first episode.",
+          "zh": "这部剧第一集就让数百万观众欲罢不能。"
+        }
+      ],
+      "derivatives": [
+        {"w": "hooked", "gloss": "着迷的，上瘾的；钩形的"},
+        {"w": "hookup", "gloss": "连接；（俚）约炮"},
+        {"w": "unhook", "gloss": "解开（钩子），摘下"}
+      ],
+      "examples": [
+        {
+          "en": "The opening sentence of the essay was a powerful hook that drew readers in immediately.",
+          "zh": "文章开篇那句话是个有力的钩子，立刻把读者拉了进去。",
+          "source": "造句"
+        },
+        {
+          "en": "off the hook",
+          "zh": "「摆脱麻烦、脱身」——高频口语习语：You're off the hook.（你没事了。）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "lure", "ipa": "/lʊər/", "gloss": "引诱，诱惑", "note": "「诱惑、引诱」，比 hook 更主动，强调刻意诱导；lure customers（吸引顾客）"},
+        {"w": "catch", "ipa": "/kætʃ/", "gloss": "抓住（注意力）", "note": "「抓住（注意力）」，比 hook 更通用；catch sb's attention"}
+      ],
+      "antonyms": [
+        {"w": "release", "note": "释放、放开"}
+      ],
+      "nuance": "hook 强调「像钩子一样钩住不放」，暗含上瘾或难以脱身；lure 强调诱惑过程，多含负面色彩；catch sb's attention 只是引起注意，不含持续性。"
+    },
+    {
+      "word": "wood",
+      "hl": "oo",
+      "levels": ["非托福"],
+      "ipa": "/wʊd/",
+      "subgroup": "oo",
+      "meaning": "n. 木头，木材；（复数 woods）树林",
+      "etymology": "古英语 wudu「树木、森林」，日耳曼同根，与德语 Wald（森林）同根族。材料义和地点义（the woods）并存。",
+      "roots": [
+        {"part": "wood（wudu）", "meaning": "树木、木材"}
+      ],
+      "phonetics": "w + oo /ʊ/ + d；对比 would /wʊd/——同音词！wood（木头）和 would（情态动词）发音完全相同，靠语境区分。",
+      "tip": "wood（木头）= would（会）同音，是英语常见同音对。「I would if I could.」和「knock on wood」里的 wood 发音一样。",
+      "core": "树木及其形态——活着是树林，砍下来是木材，两义共享同一来源，均围绕「树」展开。",
+      "senses": [
+        {
+          "gloss": "n. 木头，木材（不可数）",
+          "logic": "树木被砍伐加工后的材料形态，是「树」的物质提取。",
+          "en": "The cabin was built entirely from local wood.",
+          "zh": "这座小屋完全用当地木材建造。"
+        },
+        {
+          "gloss": "n. 树林，小树丛（the woods，复数）",
+          "logic": "树木聚集生长的地方，直接从「树」的集合义延伸，比 forest 更小、更亲近。",
+          "en": "They took a walk through the woods behind the house.",
+          "zh": "他们在屋后的树林里散步。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wooden", "gloss": "木制的；（表情）呆板的"},
+        {"w": "woodland", "gloss": "林地，树林区域"},
+        {"w": "woodpecker", "gloss": "啄木鸟"},
+        {"w": "firewood", "gloss": "柴火，薪柴"}
+      ],
+      "examples": [
+        {
+          "en": "The cabin was built entirely from local wood.",
+          "zh": "这座小屋完全用当地木材建造。",
+          "source": "造句"
+        },
+        {
+          "en": "knock on wood",
+          "zh": "「敲木头（避免说出不祥之事后的迷信动作）」——北美英语高频文化用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "timber", "ipa": "/ˈtɪmbər/", "gloss": "（建筑用）木料，木材", "note": "「木料」，英式英语，特指建筑用木材；timber frame（木框架结构）"},
+        {"w": "lumber", "ipa": "/ˈlʌmbər/", "gloss": "（建筑用）木料（美式）", "note": "「木料」，美式英语，与 timber 同义；lumber yard（木材场）"},
+        {"w": "forest", "ipa": "/ˈfɒrɪst/", "gloss": "森林（大型，正式）", "note": "「森林」，比 woods 范围更大、更正式；tropical forest（热带雨林）"}
+      ],
+      "antonyms": [],
+      "nuance": "wood 作材料时，timber（英式）和 lumber（美式）是更正式的「建筑木料」；woods 指小型树林（相对亲近自然），forest 指大型森林（更正式或更荒野）。"
+    },
+    {
+      "word": "wool",
+      "hl": "oo",
+      "levels": ["非托福"],
+      "ipa": "/wʊl/",
+      "subgroup": "oo",
+      "meaning": "n. 羊毛；毛线",
+      "etymology": "古英语 wull，日耳曼同根，与德语 Wolle 同源。派生词：woolen（美式）/woollen（英式）「羊毛制的」。",
+      "roots": [
+        {"part": "wool（wull）", "meaning": "羊毛"}
+      ],
+      "phonetics": "w + oo /ʊ/ + l；-ool 韵脚（wool/pull 同韵），注意 pool/fool 的 /uː/ 和 wool/pull 的 /ʊ/ 构成最小对。",
+      "tip": "「pull the wool over sb's eyes」= 蒙骗某人——把羊毛遮住眼睛，看不清楚，比喻被骗。",
+      "core": "羊身上蓬松柔软的天然纤维——从动物身上取下、可纺成线的纤维，是最原始的纺织原料意象。",
+      "senses": [
+        {
+          "gloss": "n. 羊毛（原料，不可数）",
+          "logic": "核心义：从羊身上剪下的天然动物纤维，作为织物原料。",
+          "en": "The sweater is made of pure merino wool and feels incredibly soft.",
+          "zh": "这件毛衣由纯美利奴羊毛制成，手感极为柔软。"
+        },
+        {
+          "gloss": "n. 毛线，绒线（可数）",
+          "logic": "羊毛加工纺成线后的形态，口语中常直接用 wool 指毛线。",
+          "en": "She bought three balls of wool to knit a scarf.",
+          "zh": "她买了三团毛线，打算织一条围巾。"
+        }
+      ],
+      "derivatives": [
+        {"w": "woolen", "gloss": "羊毛制的（美式）"},
+        {"w": "woolly", "gloss": "毛茸茸的；（思维）模糊的"},
+        {"w": "fleece", "gloss": "整张羊毛皮；摇粒绒材料"}
+      ],
+      "examples": [
+        {
+          "en": "The sweater is made of pure merino wool and feels incredibly soft.",
+          "zh": "这件毛衣由纯美利奴羊毛制成，手感极为柔软。",
+          "source": "造句"
+        },
+        {
+          "en": "pull the wool over sb's eyes",
+          "zh": "「蒙骗某人」——高频习语，源自用羊毛遮眼的意象。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "fleece", "ipa": "/fliːs/", "gloss": "整张羊毛皮；绒毛", "note": "「羊毛（未剪下的整张）」，特指绵羊身上连片的毛，比 wool 更具体"},
+        {"w": "yarn", "ipa": "/jɑːrn/", "gloss": "毛线，纱线", "note": "「毛线、纱线」，强调纺成线后的形态，比 wool 更聚焦可用形态"}
+      ],
+      "antonyms": [],
+      "nuance": "wool 是最通用的「羊毛」，fleece 特指从绵羊身上剪下的整张毛皮，yarn 是加工成线后的形态。三者存在加工链上的区别：fleece → wool → yarn。"
+    },
+    {
+      "word": "put",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/pʊt/",
+      "subgroup": "u",
+      "meaning": "v. 放，放置；表达（put it in words）；使处于某状态",
+      "etymology": "中古英语 putten，来源有争议，可能源自古挪威语 pota「戳、推」。动词用法极灵活，构成大量短语动词：put off（推迟）、put up with（忍受）、put forward（提出）。",
+      "roots": [
+        {"part": "put（putten）", "meaning": "放置、推入"}
+      ],
+      "phonetics": "p + u /ʊ/ + t；u 读 /ʊ/ 是特例，对比 but/cut/hut 里 u 读 /ʌ/——同字母两个音，记住 put/full/push/pull 是 /ʊ/ 家族。",
+      "tip": "「put it this way」= 换个说法；「put sb on the spot」= 让某人当场难堪。两个高频口语习语。",
+      "core": "把某物移入一个位置或状态——核心是「定向放置」，东西或人被置于一个新的处所或处境，由此衍生出「表达（把想法放进语言）」和「使处于某状态」。",
+      "senses": [
+        {
+          "gloss": "v. 放，放置（物理位置）",
+          "logic": "核心义：将某物移动并安置在一个具体位置上。",
+          "en": "She put her keys on the table and collapsed onto the sofa.",
+          "zh": "她把钥匙放到桌上，瘫倒在沙发里。"
+        },
+        {
+          "gloss": "v. 使处于某种状态（put sb/sth in/into…）",
+          "logic": "「放入某个处境」→ 把人或事推入一种新的状态，如 put sb in danger（使某人陷入危险）。",
+          "en": "The announcement put everyone in an awkward position.",
+          "zh": "那则公告让所有人都陷入了尴尬处境。"
+        },
+        {
+          "gloss": "v. 表达，用语言表述（put sth in words）",
+          "logic": "「把想法放进语言」→ 引申为表达、措辞，如 put it simply（简单来说）。",
+          "en": "I'm not sure how to put this without sounding rude.",
+          "zh": "我不确定怎么说才不会显得粗鲁。"
+        },
+        {
+          "gloss": "v. 估算，定为（put sth at…）",
+          "logic": "「把数字放到某个位置」→ 将某件事的价值或数量定在某一数额，是偶合性引申，语感可理解。",
+          "en": "Experts put the damage at over ten million dollars.",
+          "zh": "专家估计损失超过一千万美元。"
+        }
+      ],
+      "derivatives": [
+        {"w": "output", "gloss": "产出，输出"},
+        {"w": "input", "gloss": "输入，投入"},
+        {"w": "putdown", "gloss": "贬低的话，讽刺挖苦"},
+        {"w": "put-upon", "gloss": "被利用的，受委屈的"}
+      ],
+      "examples": [
+        {
+          "en": "She put her keys on the table and collapsed onto the sofa.",
+          "zh": "她把钥匙放到桌上，瘫倒在沙发里。",
+          "source": "造句"
+        },
+        {
+          "en": "put off",
+          "zh": "「推迟、拖延」——put off a meeting（推迟会议），托福写作和口语均高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "place", "ipa": "/pleɪs/", "gloss": "放置（强调精确位置）", "note": "「放置」，比 put 更强调精确位置，语气也更正式；place an order（下订单）"},
+        {"w": "set", "ipa": "/set/", "gloss": "摆放，使处于", "note": "「摆放」，暗含「使处于特定状态」；set the table（摆餐桌）"},
+        {"w": "express", "ipa": "/ɪkˈspres/", "gloss": "表达，表述", "note": "「表达」义的近义词，put it in words = express it in words"}
+      ],
+      "antonyms": [
+        {"w": "remove", "note": "移走、取下"},
+        {"w": "take away", "note": "拿走"}
+      ],
+      "nuance": "put 是最口语的「放置」，place 更正式且强调精确位置，set 暗含「摆好备用」的含义。「put a plan into action」和「set a plan in motion」意思相近，后者更书面。"
+    },
+    {
+      "word": "full",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/fʊl/",
+      "subgroup": "u",
+      "meaning": "adj. 满的；完全的；（吃）饱的  adv. 完全地，直接地（full in the face）",
+      "etymology": "古英语 full，日耳曼同根，与德语 voll 同源。派生词：fulfill（实现）= full + fill（填满）；fully（完全地）。",
+      "roots": [
+        {"part": "full（full）", "meaning": "满、充实"}
+      ],
+      "phonetics": "f + u /ʊ/ + ll；-ull 韵脚（full/pull/bull）一律 /ʊl/，与 pool/fool /uːl/ 构成长短对。",
+      "core": "容器已被填至上限——没有多余空间了，由此辐射出「吃饱（胃满）」「完全地（程度满）」「完整（内容满）」等义。",
+      "senses": [
+        {
+          "gloss": "adj. 满的，装满的",
+          "logic": "核心义：容器中已无空余空间，达到上限。",
+          "en": "The auditorium was full to capacity for the graduation ceremony.",
+          "zh": "毕业典礼上，礼堂座无虚席。"
+        },
+        {
+          "gloss": "adj. 吃饱的",
+          "logic": "胃这个「容器」填满了食物，引申为「饱」。",
+          "en": "I can't eat another bite — I'm completely full.",
+          "zh": "我一口都吃不下了，已经完全饱了。"
+        },
+        {
+          "gloss": "adj. 完整的，完全的（full name / full price）",
+          "logic": "「没有缺失」→ 填满所有应有的内容，引申为「完整、全额」。",
+          "en": "Please write your full name at the top of the form.",
+          "zh": "请在表格顶部写上您的全名。"
+        },
+        {
+          "gloss": "adv. 完全地，正对着（full in the face）",
+          "logic": "「力度填满」→ 直接、正面地，多见于固定搭配，如 full in the face（正对着脸）。",
+          "en": "The sun shone full in her eyes as she stepped outside.",
+          "zh": "她走出门时，阳光正对着她的眼睛照来。"
+        }
+      ],
+      "derivatives": [
+        {"w": "fulfill", "gloss": "实现，履行（承诺、义务）"},
+        {"w": "fully", "gloss": "完全地，充分地"},
+        {"w": "fullness", "gloss": "充实感；饱胀感"},
+        {"w": "full-scale", "gloss": "全面的，大规模的"}
+      ],
+      "examples": [
+        {
+          "en": "The auditorium was full to capacity for the graduation ceremony.",
+          "zh": "毕业典礼上，礼堂座无虚席。",
+          "source": "造句"
+        },
+        {
+          "en": "in full",
+          "zh": "「全额地、完整地」——pay in full（全额付清），高频正式用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "complete", "ipa": "/kəmˈpliːt/", "gloss": "完整的，完全的", "note": "「完整的」，比 full 更强调没有缺失；a complete set（完整的一套）"},
+        {"w": "packed", "ipa": "/pækt/", "gloss": "爆满的，挤满的", "note": "「爆满的」，比 full 程度更强，强调塞得满满当当；packed train（挤满人的列车）"},
+        {"w": "saturated", "ipa": "/ˈsætʃəreɪtɪd/", "gloss": "饱和的（科学用语）", "note": "「饱和的」，正式科学用语，指吸收到极限；saturated solution（饱和溶液）"}
+      ],
+      "antonyms": [
+        {"w": "empty", "note": "空的"},
+        {"w": "partial", "note": "部分的"}
+      ],
+      "nuance": "full 最通用，packed 强调程度更深（已经挤不下了），saturated 是科学术语（不能再吸收了）。「full price」= 全价，「complete price」不自然——full 在价格场景是首选。"
+    },
+    {
+      "word": "push",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/pʊʃ/",
+      "subgroup": "u",
+      "meaning": "v. 推；施压；努力推进  n. 推力；大力推广",
+      "etymology": "中古法语 pousser，源自拉丁语 pulsare（反复击打），与 pulse（脉冲）、compel（强迫）同根。物理的「推」延伸为「施加压力推进」。",
+      "roots": [
+        {"part": "push（pulsare）", "meaning": "反复推压"}
+      ],
+      "phonetics": "p + u /ʊ/ + sh /ʃ/；u 在 sh 前读 /ʊ/，对比 bush/cushion 同属此规律。",
+      "core": "向前施加力量以使对象移动或改变——物理上是推，抽象上是施压、推动，共享「克服阻力、向前推进」的感觉。",
+      "senses": [
+        {
+          "gloss": "v. 推，推动（物理）",
+          "logic": "核心义：用手或身体向外施力，使对象移动。",
+          "en": "She pushed the heavy cart down the corridor.",
+          "zh": "她把沉重的推车推过走廊。"
+        },
+        {
+          "gloss": "v. 施压，催促（push sb to do sth）",
+          "logic": "「对人施加看不见的力」→ 向对方施加压力、逼迫或催促。",
+          "en": "His coach pushed him hard to improve his technique before the competition.",
+          "zh": "他的教练在比赛前拼命督促他提升技术。"
+        },
+        {
+          "gloss": "v. 努力推进，大力推动（push for sth）",
+          "logic": "「克服阻力向目标推进」→ 积极争取或推动某件事，如 push for reform。",
+          "en": "The company is pushing hard to launch the product before the holiday season.",
+          "zh": "公司正努力在假日季前推出该产品。"
+        },
+        {
+          "gloss": "n. 推力；大力推广（a push）",
+          "logic": "动词名词化，指一次推的动作，或某项事业的大力推广活动。",
+          "en": "The charity launched a major push to raise awareness about homelessness.",
+          "zh": "该慈善机构发起了一场大力宣传无家可归问题的行动。"
+        }
+      ],
+      "derivatives": [
+        {"w": "pushy", "gloss": "咄咄逼人的，过于积极进取的"},
+        {"w": "pushover", "gloss": "容易对付的人；轻而易举的事"},
+        {"w": "push-up", "gloss": "俯卧撑"},
+        {"w": "pushback", "gloss": "反对，抵制"}
+      ],
+      "examples": [
+        {
+          "en": "The company is pushing hard to launch the product before the holiday season.",
+          "zh": "公司正努力在假日季前推出该产品。",
+          "source": "造句"
+        },
+        {
+          "en": "push for",
+          "zh": "「极力争取、推动」——push for reform（力推改革），政治和商业语境高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "press", "ipa": "/pres/", "gloss": "按压，施压", "note": "「按压、施压」，比 push 更强调持续施力；press a button（按按钮）"},
+        {"w": "drive", "ipa": "/draɪv/", "gloss": "驱动，推动（内驱力）", "note": "「驱动、推动」，抽象义比 push 更积极，强调内驱力；drive innovation（推动创新）"},
+        {"w": "promote", "ipa": "/prəˈmoʊt/", "gloss": "推广，促进", "note": "「推广」义，比 push 更正式；promote a product（推广产品）"}
+      ],
+      "antonyms": [
+        {"w": "pull", "note": "拉"},
+        {"w": "resist", "note": "抵抗"}
+      ],
+      "nuance": "push 和 press 物理上都是「推/按」，press 更强调垂直施力，push 更强调水平移动；抽象义上 push for 含有「克服阻力争取」的意味，promote 是中性正式的「推广」，drive 强调内在动力。"
+    },
+    {
+      "word": "bush",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/bʊʃ/",
+      "subgroup": "u",
+      "meaning": "n. 灌木丛；（澳大利亚/非洲的）荒野丛林",
+      "etymology": "中古荷兰语 busc「森林」，日耳曼词根，与德语 Busch 同源。澳大利亚英语中「the bush」特指远离城市的内陆荒野。",
+      "roots": [
+        {"part": "bush（busc）", "meaning": "灌木、小树丛"}
+      ],
+      "phonetics": "b + u /ʊ/ + sh；与 push/cushion 同韵，u 在 sh 前一律 /ʊ/。",
+      "tip": "「beat around the bush」= 拐弯抹角——围着灌木丛打，就是不直接说，高频口语习语。",
+      "core": "低矮茂密、难以穿越的植物丛——灌木的形态：矮、密、多枝，延伸出「荒野丛林」（大型灌木地），以及「拐弯抹角」（在灌木周围绕圈）的习语意象。",
+      "senses": [
+        {
+          "gloss": "n. 灌木，灌木丛",
+          "logic": "核心义：低矮、多枝、茂密的木本植物，比树矮、比草高。",
+          "en": "He hid behind a bush and watched the deer drink from the stream.",
+          "zh": "他躲在一丛灌木后面，看着那头鹿从溪边饮水。"
+        },
+        {
+          "gloss": "n. 荒野，内陆丛林（the bush）",
+          "logic": "灌木丛延伸为大面积的野生植被地带，特指澳大利亚或非洲的内陆荒野。",
+          "en": "They drove for hours through the Australian bush without seeing another car.",
+          "zh": "他们在澳大利亚内陆荒野里开了几个小时，没有遇到另一辆车。"
+        }
+      ],
+      "derivatives": [
+        {"w": "bushy", "gloss": "茂密的，丛生的（如眉毛）"},
+        {"w": "bushfire", "gloss": "（澳大利亚）灌木丛火灾，山火"},
+        {"w": "ambush", "gloss": "埋伏，伏击（源自「藏在灌木丛中」）"}
+      ],
+      "examples": [
+        {
+          "en": "He hid behind a bush and watched the deer drink from the stream.",
+          "zh": "他躲在一丛灌木后面，看着那头鹿从溪边饮水。",
+          "source": "造句"
+        },
+        {
+          "en": "beat around the bush",
+          "zh": "「拐弯抹角，不直说」——高频习语，常用于催促对方直奔主题。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "shrub", "ipa": "/ʃrʌb/", "gloss": "灌木（植物学术语）", "note": "「灌木」，植物学正式术语，比 bush 更精确；ornamental shrubs（观赏灌木）"},
+        {"w": "thicket", "ipa": "/ˈθɪkɪt/", "gloss": "灌木密丛，丛林", "note": "「丛林、密林」，比 bush 更强调密集难以穿越"}
+      ],
+      "antonyms": [],
+      "nuance": "bush 日常口语用词，shrub 是植物学术语（园艺师用 shrub），thicket 强调密不透风的灌木群。「bush」在澳大利亚英语中有特殊文化含义，指「内地荒野」，地位相当于美国西部的 frontier。"
+    },
+    {
+      "word": "pull",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/pʊl/",
+      "subgroup": "u",
+      "meaning": "v. 拉，拽；吸引；拉伤（肌肉）  n. 拉力；吸引力；影响力",
+      "etymology": "古英语 pullian，来源不明，可能来自日耳曼语。与 push（推）构成经典反义对，也构成 push-and-pull（推拉）这一分析框架。",
+      "roots": [
+        {"part": "pull（pullian）", "meaning": "拉、拽"}
+      ],
+      "phonetics": "p + u /ʊ/ + ll；-ull 韵脚与 full/bull 押韵。对比 pool /uːl/——same 拼法格式，一长一短。",
+      "core": "将对象向自身方向牵引——与 push 相反，是把东西拉近，引申出「吸引（把人拉向自己）」「影响力（看不见的拉力）」「拉伤（肌肉被过度拉伸）」。",
+      "senses": [
+        {
+          "gloss": "v. 拉，拽（物理）",
+          "logic": "核心义：用力将对象朝自身方向移动。",
+          "en": "She pulled the door open and stepped into the cold morning air.",
+          "zh": "她把门拉开，踏进清晨的冷空气里。"
+        },
+        {
+          "gloss": "v. 吸引（pull sb in）",
+          "logic": "「把人拉向自己」→ 抽象化为产生吸引力，令人不自觉靠近。",
+          "en": "The new exhibit pulled in thousands of visitors on its opening weekend.",
+          "zh": "新展览开放首个周末就吸引了数千名参观者。"
+        },
+        {
+          "gloss": "v. 拉伤（pull a muscle）",
+          "logic": "肌肉被「拉」得超出承受范围，造成撕裂损伤。",
+          "en": "He pulled a hamstring during the sprint and had to withdraw from the race.",
+          "zh": "他短跑时拉伤了腿筋，不得不退出比赛。"
+        },
+        {
+          "gloss": "n. 拉力；吸引力；影响力",
+          "logic": "动词名词化，既指物理拉力，也指无形的吸引或社会影响力（political pull = 政治关系）。",
+          "en": "The pull of family kept him from moving abroad.",
+          "zh": "家庭的牵挂让他无法出国定居。"
+        }
+      ],
+      "derivatives": [
+        {"w": "pullover", "gloss": "套头毛衣；靠边停车"},
+        {"w": "pull-out", "gloss": "撤出，退出"},
+        {"w": "pulley", "gloss": "滑轮（利用拉力的装置）"}
+      ],
+      "examples": [
+        {
+          "en": "She pulled the door open and stepped into the cold morning air.",
+          "zh": "她把门拉开，踏进清晨的冷空气里。",
+          "source": "造句"
+        },
+        {
+          "en": "pull off",
+          "zh": "「成功做到（困难的事）」——pull off a deal（谈成交易），高频口语搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "draw", "ipa": "/drɔː/", "gloss": "拉；吸引（书面）", "note": "「拉、吸引」，比 pull 更书面，draw a crowd（吸引人群）"},
+        {"w": "tug", "ipa": "/tʌɡ/", "gloss": "猛拉，急拽", "note": "「猛拉、拽」，比 pull 更用力，常指短促急拉；tug at sb's sleeve（猛拽某人袖子）"},
+        {"w": "attract", "ipa": "/əˈtrækt/", "gloss": "吸引（抽象）", "note": "「吸引」义，比 pull 更正式，专指吸引力；attract investment（吸引投资）"}
+      ],
+      "antonyms": [
+        {"w": "push", "note": "推"},
+        {"w": "repel", "note": "排斥"}
+      ],
+      "nuance": "pull 和 draw 都有「拉/吸引」义，draw 更正式（draw a conclusion、draw attention），pull 更口语；tug 是急促用力的短拉，pull 可持续；attract 是抽象的「产生吸引力」，无物理拉扯含义。"
+    },
+    {
+      "word": "sugar",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/ˈʃʊɡər/",
+      "subgroup": "u",
+      "meaning": "n. 糖，食糖  v. 加糖；掩盖（sugarcoat）",
+      "etymology": "阿拉伯语 sukkar，经古法语 sucre 借入英语。甘蔗从南亚传入中东再传入欧洲，「糖」这个词也沿着同一路线传播。",
+      "roots": [
+        {"part": "sugar（sukkar）", "meaning": "糖"}
+      ],
+      "phonetics": "su- 里 s 读 /ʃ/（而非 /s/）+ u /ʊ/ + gar；sugar 是英语里 su 读 /ʃ/ 的罕见特例，须单独记忆（对比 sun/suit/super 里 s 读 /s/）。",
+      "tip": "「sugarcoat」= 粉饰、美化（把药裹上糖衣），比喻说坏事时刻意说得好听。",
+      "core": "甜蜜的表面覆盖物——糖让食物变甜，由此衍生出「粉饰、掩盖苦涩现实」的比喻义（sugarcoat）。",
+      "senses": [
+        {
+          "gloss": "n. 糖，食糖",
+          "logic": "核心义：从甘蔗或甜菜提炼的甜味晶体物质。",
+          "en": "The doctor advised her to reduce her sugar intake significantly.",
+          "zh": "医生建议她大幅减少糖分摄入。"
+        },
+        {
+          "gloss": "v. 加糖，使变甜",
+          "logic": "在食物上覆盖糖，使其口感变甜，动词直接来自名词。",
+          "en": "He sugared his coffee and took a long sip.",
+          "zh": "他往咖啡里加了糖，慢慢喝了一口。"
+        },
+        {
+          "gloss": "v. 粉饰，掩盖（sugarcoat）",
+          "logic": "「给苦药裹上糖衣，让难以接受的东西更易入口」→ 美化坏消息。",
+          "en": "Don't sugarcoat the results — we need to know exactly how bad it is.",
+          "zh": "别粉饰结果，我们需要知道实际情况有多糟。"
+        }
+      ],
+      "derivatives": [
+        {"w": "sugary", "gloss": "含糖量高的；过分甜腻的（比喻）"},
+        {"w": "sugarcoat", "gloss": "给…裹糖衣；粉饰，美化"},
+        {"w": "sugarcane", "gloss": "甘蔗"}
+      ],
+      "examples": [
+        {
+          "en": "The doctor advised her to reduce her sugar intake significantly.",
+          "zh": "医生建议她大幅减少糖分摄入。",
+          "source": "造句"
+        },
+        {
+          "en": "sugarcoat",
+          "zh": "「粉饰、美化坏消息」——Don't sugarcoat it.（别遮遮掩掩，直说。）高频口语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sweetener", "ipa": "/ˈswiːtnər/", "gloss": "甜味剂（含天然糖和代糖）", "note": "「甜味剂」，包含人工糖（如阿斯巴甜）和天然糖，比 sugar 范围更广"},
+        {"w": "glucose", "ipa": "/ˈɡluːkoʊs/", "gloss": "葡萄糖（化学术语）", "note": "「葡萄糖」，化学术语，是 sugar 的一种具体形式"}
+      ],
+      "antonyms": [
+        {"w": "bitter", "note": "苦（味觉反义）"}
+      ],
+      "nuance": "sugar 是日常通用词，sweetener 泛指所有增甜物质（包括代糖），glucose 是化学分类。「sugar the pill」（让苦药变甜）和「sugarcoat」同义，都指「掩盖不好的现实」。"
+    },
+    {
+      "word": "cushion",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/ˈkʊʃən/",
+      "subgroup": "u",
+      "meaning": "n. 垫子；缓冲（物/量）  v. 缓冲，减轻冲击",
+      "etymology": "古法语 coissin，源自拉丁语 coxa（臀部、大腿）——「放在臀部下面的东西」→ 垫子。动词义「缓冲」是直接从「软垫吸收冲击力」引申而来。",
+      "roots": [
+        {"part": "cushion（coxa）", "meaning": "臀部→软垫"}
+      ],
+      "phonetics": "c + u /ʊ/ + sh /ʃ/ + ion /ən/；重音在首音节 CU-。与 push/bush 同韵（u+sh = /ʊʃ/）。",
+      "core": "柔软的吸震体——垫子的功能是「吸收冲击、减少直接碰撞」，由此衍生出「缓冲（金融/情感/政策）」的抽象义。",
+      "senses": [
+        {
+          "gloss": "n. 垫子，靠垫",
+          "logic": "核心义：柔软的填充物，放在身体下方或背后起支撑和保护作用。",
+          "en": "She arranged the cushions on the sofa and sat down.",
+          "zh": "她把靠垫摆好，然后坐下来。"
+        },
+        {
+          "gloss": "n. 缓冲（物/量）",
+          "logic": "「柔软吸震」→ 抽象化为任何能减少冲击的储备或间隔，如 financial cushion（财务缓冲）。",
+          "en": "The emergency fund acts as a financial cushion against unexpected expenses.",
+          "zh": "应急基金充当抵御意外支出的财务缓冲。"
+        },
+        {
+          "gloss": "v. 缓冲，减轻（冲击/打击）",
+          "logic": "「像软垫一样吸收冲击力」→ 动词化，表示减轻负面影响，如 cushion the blow。",
+          "en": "The government introduced subsidies to cushion the impact of rising energy prices.",
+          "zh": "政府推出补贴措施，以缓解能源价格上涨的冲击。"
+        }
+      ],
+      "derivatives": [
+        {"w": "cushiony", "gloss": "柔软舒适的，像垫子一样的"},
+        {"w": "over-cushioned", "gloss": "过度保护的，过于舒适而缺乏挑战的（非正式）"}
+      ],
+      "examples": [
+        {
+          "en": "The emergency fund acts as a financial cushion against unexpected expenses.",
+          "zh": "应急基金充当抵御意外支出的财务缓冲。",
+          "source": "造句"
+        },
+        {
+          "en": "cushion the blow",
+          "zh": "「缓和打击、减轻冲击」——高频比喻用法，常见于经济和政策语境。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "buffer", "ipa": "/ˈbʌfər/", "gloss": "缓冲（区）", "note": "「缓冲」，比 cushion 更抽象，多用于技术或金融；buffer zone（缓冲区）"},
+        {"w": "pad", "ipa": "/pæd/", "gloss": "衬垫，护垫", "note": "「垫子、填充物」，比 cushion 更薄，多指保护性衬垫；knee pad（护膝）"},
+        {"w": "pillow", "ipa": "/ˈpɪloʊ/", "gloss": "枕头", "note": "「枕头」，比 cushion 更专指睡觉用，形状更特定"}
+      ],
+      "antonyms": [
+        {"w": "intensify", "note": "加剧（与缓冲相对）"}
+      ],
+      "nuance": "cushion 和 buffer 都有「缓冲」义，cushion 更形象（柔软吸震），buffer 更抽象（两方之间的隔离带）；pad 强调保护性薄垫，pillow 专指睡眠用具。「cushion the blow」是固定搭配，不宜替换成 buffer。"
+    },
+    {
+      "word": "could",
+      "hl": "ou",
+      "levels": ["托福"],
+      "ipa": "/kʊd/",
+      "subgroup": "ou",
+      "meaning": "modal 能够（过去式）；表示可能性；礼貌请求",
+      "etymology": "古英语 cuðe，是 can（能）的过去式，l 是 16 世纪为与 would/should 对齐而加入的拼写，实际从不发音。",
+      "roots": [
+        {"part": "could（cuðe）", "meaning": "能（过去式）"}
+      ],
+      "phonetics": "c + ou /ʊ/ + ld（l 不发音）；三兄弟 could/would/should 拼写含 l 但 l 全部静默，只读 /kʊd/、/wʊd/、/ʃʊd/。",
+      "tip": "could 的礼貌程度高于 can：「Could you help me?」比「Can you help me?」更客气，托福口语常考。",
+      "core": "能力或可能性的「软版本」——can 的过去式，语气比 can 更不确定、更委婉，既用于陈述过去的能力，也用于礼貌请求和假设可能。",
+      "senses": [
+        {
+          "gloss": "modal 能（过去能力）",
+          "logic": "can（现在能）的过去式，陈述过去某段时间具备的能力。",
+          "en": "When she was young, she could speak three languages fluently.",
+          "zh": "她年轻时能流利地说三门语言。"
+        },
+        {
+          "gloss": "modal 可能（推测）",
+          "logic": "「能力」的不确定版——某事在理论上「有可能」成立。",
+          "en": "The package could arrive any day now.",
+          "zh": "包裹随时可能到达。"
+        },
+        {
+          "gloss": "modal 能否（礼貌请求）",
+          "logic": "过去式拉开距离，语气变得委婉，用于礼貌地提出请求。",
+          "en": "Could you pass me the salt, please?",
+          "zh": "请把盐递给我好吗？"
+        },
+        {
+          "gloss": "modal 本可以（虚拟语气，could have done）",
+          "logic": "「本来有能力做但没做」→ 虚拟语气，表示与过去事实相反的推测或遗憾。",
+          "en": "She said she could finish the report by noon if needed.",
+          "zh": "她说如果需要的话，能在中午前完成报告。"
+        }
+      ],
+      "derivatives": [
+        {"w": "couldn't", "gloss": "could not 的缩写，不能，不可能"}
+      ],
+      "examples": [
+        {
+          "en": "She said she could finish the report by noon if needed.",
+          "zh": "她说如果需要的话，能在中午前完成报告。",
+          "source": "造句"
+        },
+        {
+          "en": "could not have done",
+          "zh": "「本不可能做到」——虚拟语气完成式，I could not have done it without your help.（没有你的帮助，我不可能做到。）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "was able to", "gloss": "曾经能够（强调实际做成）", "note": "「曾经能够」，强调某一特定场合做到了，比 could 更明确"},
+        {"w": "might", "ipa": "/maɪt/", "gloss": "可能（语气更弱）", "note": "「可能、或许」，表可能性时比 could 语气更弱、更不确定"}
+      ],
+      "antonyms": [
+        {"w": "could not", "note": "不能（否定）"}
+      ],
+      "nuance": "could 表示过去的能力（I could swim at age five）或礼貌请求（Could you...?）或假设可能（It could rain）；was able to 强调某次实际做成了（I was able to escape）——与 could 最关键区别在此。"
+    },
+    {
+      "word": "would",
+      "hl": "ou",
+      "levels": ["托福"],
+      "ipa": "/wʊd/",
+      "subgroup": "ou",
+      "meaning": "modal 将会（过去将来式）；表示意愿；礼貌请求；习惯性动作（过去）",
+      "etymology": "古英语 wolde，是 will（将）的过去式，l 是后来为与 could/should 对齐而添入拼写，实际不发音。",
+      "roots": [
+        {"part": "would（wolde）", "meaning": "将（过去式）"}
+      ],
+      "phonetics": "w + ou /ʊ/ + ld（l 不发音）；与 wood 同音——同音词对，靠语境区分。",
+      "core": "意志与意愿的「软版本」——will 的过去式，把「将要」和「愿意」都拉进了委婉、假设的语气，适用于过去将来、礼貌、虚拟、习惯等多场景。",
+      "senses": [
+        {
+          "gloss": "modal 将会（过去将来式）",
+          "logic": "will 的过去式，在间接引语或过去叙述中表示「那时将要」。",
+          "en": "She told him she would call back in an hour.",
+          "zh": "她告诉他她一小时后会回电话。"
+        },
+        {
+          "gloss": "modal 本会（虚拟语气）",
+          "logic": "「假设条件下将会」→ 与现实相反的假设，如 If I had time, I would go。",
+          "en": "If I had more time, I would learn to play the piano.",
+          "zh": "如果我有更多时间，我会学弹钢琴。"
+        },
+        {
+          "gloss": "modal 愿意（表意愿，would like）",
+          "logic": "「将」→「想要/愿意」，礼貌表达意愿，Would you like... 是最高频的礼貌句式。",
+          "en": "Would you like another cup of tea?",
+          "zh": "您还要再来一杯茶吗？"
+        },
+        {
+          "gloss": "modal 过去的习惯性动作",
+          "logic": "「那时总是会」→ 表示过去反复发生的习惯，与 used to 相近但不强调「现在已不再」。",
+          "en": "When I was a child, I would spend every Saturday at the library.",
+          "zh": "小时候，我每个星期六都会在图书馆度过。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wouldn't", "gloss": "would not 的缩写，不愿意；不会"}
+      ],
+      "examples": [
+        {
+          "en": "If I had more time, I would learn to play the piano.",
+          "zh": "如果我有更多时间，我会学弹钢琴。",
+          "source": "造句"
+        },
+        {
+          "en": "would rather",
+          "zh": "「宁愿，宁可」——I would rather stay home.（我宁可待在家里。）高频比较选择表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "used to", "gloss": "过去常常（强调现在已不再）", "note": "「过去习惯」义，would 和 used to 都可表过去惯常动作，但 used to 更强调「现在已不再」的对比"},
+        {"w": "will", "ipa": "/wɪl/", "gloss": "将会（现在式，语气更确定）", "note": "「将会」的现在式，would 是其过去式，语气更不确定、更委婉"}
+      ],
+      "antonyms": [
+        {"w": "would not / wouldn't", "note": "不愿意（表示意志上的拒绝）"}
+      ],
+      "nuance": "would 表过去将来（She said she would come）、虚拟语气（I would if I could）、礼貌（Would you like...?）、过去习惯（When I was young, I would walk to school）；used to 专用于过去习惯，且暗含「现在不再这样」的含义，would 无此暗示。"
+    },
+    {
+      "word": "should",
+      "hl": "ou",
+      "levels": ["托福"],
+      "ipa": "/ʃʊd/",
+      "subgroup": "ou",
+      "meaning": "modal 应该（义务/建议）；表可能性（推测）；虚拟语气",
+      "etymology": "古英语 sceolde，是 shall 的过去式，l 是为与 would/could 对齐而加入的拼写，实际不发音。",
+      "roots": [
+        {"part": "should（sceolde）", "meaning": "应当（过去式）"}
+      ],
+      "phonetics": "sh /ʃ/ + ou /ʊ/ + ld（l 不发音）；三兄弟收尾：should/could/would，l 永远沉默，全部读成 /ʃʊd/、/kʊd/、/wʊd/。",
+      "core": "义务与期望的「软版本」——shall 的过去式，表达「理应如此」的建议、义务或推测，语气比 must 更温和，比 can 更有约束感。",
+      "senses": [
+        {
+          "gloss": "modal 应该（建议或义务）",
+          "logic": "核心义：按道理、规范或常识「应当」去做，属于建议性义务。",
+          "en": "You should get enough sleep before the exam.",
+          "zh": "考试前你应该好好睡一觉。"
+        },
+        {
+          "gloss": "modal 应该会（推测，表期望）",
+          "logic": "「按照正常情况应该发生」→ 对未来的合理推测，如 It should be ready by now。",
+          "en": "The flight should land on time — there are no delays reported.",
+          "zh": "航班应该会准时落地，目前没有延误报告。"
+        },
+        {
+          "gloss": "modal 本应该（虚拟，should have done）",
+          "logic": "「过去本应做却没做」→ 虚拟语气完成式，表遗憾或批评。",
+          "en": "You should have told me earlier — I could have helped.",
+          "zh": "你早该告诉我的，我本可以帮忙的。"
+        },
+        {
+          "gloss": "modal 如果（条件从句中的虚拟）",
+          "logic": "正式英语中 if 条件句可用 should 替换，如 Should you need help，属历史偶合性用法，非引申。",
+          "en": "Should you have any questions, please contact us directly.",
+          "zh": "如有任何问题，请直接与我们联系。"
+        }
+      ],
+      "derivatives": [
+        {"w": "shouldn't", "gloss": "should not 的缩写，不应该"}
+      ],
+      "examples": [
+        {
+          "en": "You should get enough sleep before the exam.",
+          "zh": "考试前你应该好好睡一觉。",
+          "source": "造句"
+        },
+        {
+          "en": "should have done",
+          "zh": "「本应该做（却没做）」——虚拟语气完成式，常含遗憾；You should have told me earlier.（你早该告诉我的。）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "ought to", "gloss": "应该（语气略正式）", "note": "「应该」，与 should 几乎同义，语气略正式；You ought to apologize.（你应该道歉。）"},
+        {"w": "must", "ipa": "/mʌst/", "gloss": "必须（强制义务）", "note": "「必须」，比 should 更强制，是义务而非建议；You must stop at the red light.（你必须在红灯前停车。）"}
+      ],
+      "antonyms": [
+        {"w": "should not / shouldn't", "note": "不应该（否定建议）"}
+      ],
+      "nuance": "should 表建议（You should exercise more.）；ought to 同义但更书面；must 表必须遵守的义务（强制性更强）；had better 表警告（You had better leave now, or you'll miss the train. 有一丝威胁意味）。"
+    },
+    {
+      "word": "wolf",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/wʊlf/",
+      "subgroup": "other",
+      "meaning": "n. 狼  v. wolf down（狼吞虎咽地吃）",
+      "etymology": "古英语 wulf，日耳曼同根，与德语 Wolf、希腊语 lykos 同族。o 读 /ʊ/ 是古英语遗留的圆唇元音，现代拼写没有跟着变化。",
+      "roots": [
+        {"part": "wolf（wulf）", "meaning": "狼"}
+      ],
+      "phonetics": "w + o /ʊ/ + lf；o 在此读 /ʊ/ 而非 /ɒ/（如 dog）或 /oʊ/（如 go），是纯特例，woman 是唯一同类。注意 l 在 wolf 中发音（/wʊlf/），不像 could/would/should 里 l 静默。",
+      "tip": "「wolf down」= 狼吞虎咽，直接从「狼」的吃相来的比喻。「cry wolf」= 发假警报（出自《伊索寓言》「狼来了」）。",
+      "core": "凶猛、贪婪、快速的掠食者形象——狼是自然界的捕猎高手，「贪婪」和「迅猛」是其文化核心意象，衍生出「狼吞虎咽」「掠夺」等用法。",
+      "senses": [
+        {
+          "gloss": "n. 狼（动物）",
+          "logic": "核心义：大型犬科掠食动物。",
+          "en": "A lone wolf was spotted near the edge of the forest.",
+          "zh": "有人在林子边缘发现了一匹孤狼。"
+        },
+        {
+          "gloss": "v. 狼吞虎咽地吃（wolf down）",
+          "logic": "「像狼一样吃东西」——狼吃猎物又快又猛，直接用动物名作动词描述进食方式。",
+          "en": "He wolfed down his breakfast in three minutes and rushed to the station.",
+          "zh": "他三分钟内狼吞虎咽地吃完早饭，冲向车站。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wolfish", "gloss": "像狼一样的；贪婪的"},
+        {"w": "wolfhound", "gloss": "猎狼犬（爱尔兰猎狼犬等大型犬种）"},
+        {"w": "werewolf", "gloss": "狼人（民间传说中能变身为狼的人）"}
+      ],
+      "examples": [
+        {
+          "en": "He wolfed down his breakfast in three minutes and rushed to the station.",
+          "zh": "他三分钟内狼吞虎咽地吃完早饭，冲向车站。",
+          "source": "造句"
+        },
+        {
+          "en": "cry wolf",
+          "zh": "「发假警报、谎报险情」——源自伊索寓言「狼来了」，高频文化习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "predator", "ipa": "/ˈpredətər/", "gloss": "掠食者，捕食者", "note": "「掠食者」，wolf 所属的生态学范畴词；apex predator（顶级掠食者）"},
+        {"w": "devour", "ipa": "/dɪˈvaʊər/", "gloss": "贪婪地吃光，吞噬", "note": "「贪婪地吃光」，对应 wolf down 的动词义，比 wolf down 更正式"}
+      ],
+      "antonyms": [],
+      "nuance": "wolf 作动词时（wolf down food）是口语中描述快速进食最生动的表达，devour 更正式，gobble 更随意（gobble up）。「keep the wolf from the door」= 勉强维持生计，是另一个高频文化习语。"
+    },
+    {
+      "word": "woman",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈwʊmən/",
+      "subgroup": "other",
+      "meaning": "n. 女人，女性（复数 women /ˈwɪmɪn/）",
+      "etymology": "古英语 wīfman = wīf（女人/妻子）+ man（人）；o 读 /ʊ/ 是古英语 wif 的元音在合并时变化留下的痕迹。注意复数 women 里 o 已变成 /ɪ/，是英语里最著名的单复数音变之一。",
+      "roots": [
+        {"part": "wo- (wīf)", "meaning": "女性"},
+        {"part": "-man", "meaning": "人"}
+      ],
+      "phonetics": "w + o /ʊ/ + man /mən/；单数 woman /ˈwʊmən/，复数 women /ˈwɪmɪn/——拼写仅变 a→e，发音却从 /ʊ/ 变成 /ɪ/，必须分别记忆。",
+      "tip": "woman（单数）的 wo- 读 /wʊ/；women（复数）的 wo- 读 /wɪ/。这是托福听力辨音考点，读错会引起误解。",
+      "core": "成年女性这一人的类别——词义单一，无多义引申，是语言中最基础的性别-年龄分类词之一。",
+      "senses": [
+        {
+          "gloss": "n. 女人，成年女性",
+          "logic": "核心义：成年女性。来自「女性的人」（wīf + man），词义始终稳定，无重大引申。",
+          "en": "The study found that women are underrepresented in leadership roles across most industries.",
+          "zh": "研究发现，女性在大多数行业的领导职位中比例仍然偏低。"
+        }
+      ],
+      "derivatives": [
+        {"w": "womanhood", "gloss": "女性气质；成年女性的身份"},
+        {"w": "womanly", "gloss": "有女人味的，温柔端庄的"},
+        {"w": "womankind", "gloss": "女性（统称）"},
+        {"w": "sportswoman", "gloss": "女运动员"}
+      ],
+      "examples": [
+        {
+          "en": "The study found that women are underrepresented in leadership roles across most industries.",
+          "zh": "研究发现，女性在大多数行业的领导职位中比例仍然偏低。",
+          "source": "造句"
+        },
+        {
+          "en": "women's rights",
+          "zh": "「女性权利」——社会学和政治语境高频词组。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "female", "ipa": "/ˈfiːmeɪl/", "gloss": "女性（正式，可作形容词）", "note": "「女性」，更正式、更中性，可作形容词；female scientists（女科学家）"},
+        {"w": "lady", "ipa": "/ˈleɪdi/", "gloss": "女士，女子（礼貌称呼）", "note": "「女士、女子」，比 woman 更礼貌，但有时被视为过于正式或带有阶级色彩"}
+      ],
+      "antonyms": [
+        {"w": "man", "note": "男人"},
+        {"w": "male", "note": "男性"}
+      ],
+      "nuance": "woman 是中性通用词；female 更强调生理或分类属性，可作形容词（female athlete）；lady 更礼貌正式，但在非正式场合频繁使用 lady 可能显得疏远。复数 women 的发音 /ˈwɪmɪn/ 必须与单数 /ˈwʊmən/ 区分。"
+    }
+  ]
+}

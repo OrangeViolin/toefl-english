@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>垂直农业 · 阅读精读 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  /* 精读 · 文章 + 句法分析 */
+  .passage{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+    border-radius:14px;padding:18px 20px;margin:0 0 22px}
+  .passage h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
+  .passage .p-title{font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--ink);margin-bottom:10px}
+  .passage p{font-size:15px;line-height:1.9;margin:10px 0}
+  .passage .en{color:#3a332b;font-family:Georgia,"Times New Roman",serif}
+  .passage .zh{color:var(--muted);font-size:13.5px}
+  .passage .kw{cursor:pointer;color:var(--accent);font-weight:600;border-bottom:1px dotted var(--accent2)}
+  .readall{background:var(--accent);color:#fff;border:none;border-radius:20px;padding:4px 14px;font-size:13px;
+    cursor:pointer;margin-left:10px;vertical-align:middle;transition:.15s}
+  .readall:hover{background:var(--core)}
+  .sents{background:linear-gradient(135deg,#f3f8f6,#eef3f0);border:1px solid var(--line);
+    border-radius:14px;padding:18px 20px;margin:0 0 22px}
+  .sents h2{margin:0 0 6px;font-size:18px;color:var(--core)}
+  .sents .s-sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+  .sent{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+  .sent .s-en{font-family:Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.7;cursor:pointer;color:#3a332b}
+  .sent .s-en:hover{color:var(--accent)}
+  .sent .s-zh{color:var(--muted);font-size:13.5px;margin:6px 0 10px}
+  .sent .s-parts{display:flex;flex-wrap:wrap;gap:6px}
+  .spart{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:4px 9px;font-size:13px;line-height:1.4}
+  .spart .st{font-family:Georgia,serif;font-weight:600}
+  .spart .sr{font-size:11px;color:#fff;border-radius:5px;padding:0 5px;white-space:nowrap}
+  .spart .sn{font-size:12px;color:var(--muted)}
+  .snotes{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:13px;color:#5f574c}
+  .snotes b{color:var(--accent)}
+  /* 句子内括号标注 */
+  .s-flow{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:2.1;cursor:pointer;color:#3a332b;padding:2px 0}
+  .s-flow:hover{color:var(--accent)}
+  .brkbox{border-radius:4px;padding:1px 1px;transition:.15s}
+  .brk{font-weight:700;font-size:17px;padding:0 1px}
+  .say-mini{background:none;border:none;cursor:pointer;font-size:15px;padding:0 4px;vertical-align:middle}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div id="passage"></div>
+  <div id="sents"></div>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "vertical-farming", "combo": "vertical-farming", "title": "垂直农业 · 阅读精读", "sound": "", "subtitle": "The Rise of Vertical Farming", "intro": "托福阅读精读页：以《The Rise of Vertical Farming》（垂直农业的兴起）为精读原文，逐句拆解长难句的语法结构（主语/谓语/宾语/从句/状语），并把文章中的核心学术词汇抽出来做成完整拆解卡片。精读原文 + 句法分析 + 词汇卡片三层联动，把一篇托福文章彻底吃透。", "subgroups": [{"key": "verbs", "tag": "动词", "label": "⚡ 动词 Verbs", "desc": "文章中的核心动词，多为及物动词或可带多种宾语的高频学术词。掌握动词的搭配（collocation）是填词题和写作的关键。"}, {"key": "nouns", "tag": "名词", "label": "📦 名词 Nouns", "desc": "文章中的核心名词，承载概念。很多是学术名词，有清晰的词根词缀。"}, {"key": "modifiers", "tag": "形容词·副词", "label": "🎨 形容词·副词 Modifiers", "desc": "文章中的修饰词，决定了语义的精确程度。托福阅读填词题最爱考这些「程度词」和「限定词」。"}], "passage": {"title": "The Rise of Vertical Farming", "paragraphs": [{"en": "The concept of vertical farming presents a potential solution to the growing challenge of feeding urban populations sustainably. As cities expand and arable land diminishes, the idea of cultivating crops in vertically stacked layers within controlled indoor environments has gained significant attention.", "zh": "垂直农业的概念，为「可持续地养活城市人口」这一日益严峻的挑战提供了一个潜在的解决方案。随着城市扩张、可耕地减少，「在受控的室内环境中、以垂直堆叠的层架种植作物」这一构想获得了广泛关注。", "kws": ["vertical", "concept", "potential", "sustainable", "arable", "diminish", "cultivate"]}, {"en": "Unlike traditional agriculture, vertical farms use hydroponic or aeroponic systems, where plants receive nutrient-rich water or mist instead of soil. This method drastically reduces water usage by up to 95% and eliminates the need for pesticides, thereby preventing agricultural runoff, a major source of water pollution.", "zh": "与传统农业不同，垂直农场采用水培或气培系统——植物接收富含营养的水或雾气，而非土壤。这种方法可将用水量大幅降低多达 95%，并无需使用杀虫剂，从而避免了农业径流这一水污染的主要来源。", "kws": ["hydroponic", "nutrient", "drastically", "eliminate", "pesticide", "runoff"]}, {"en": "Proponents argue that by locating these farms within or near urban centers, the distance food travels from farm to consumer (known as \"food miles\") is substantially reduced. This reduction not only lowers transportation costs but also ensures fresher produce reaches city dwellers.", "zh": "支持者认为，将这些农场建在城市中心内部或附近，食品从农场到消费者的运输距离（即「食物里程」）就会大幅缩短。这一缩短不仅降低了运输成本，也确保了城市居民能吃到更新鲜的农产品。", "kws": ["proponent", "urban", "substantially", "transportation"]}]}, "sentences": [{"en": "The concept of vertical farming presents a potential solution to the growing challenge of feeding urban populations sustainably.", "zh": "垂直农业的概念，为「可持续地养活城市人口」这一日益严峻的挑战提供了一个潜在的解决方案。", "parts": [{"t": "The concept of vertical farming", "r": "主语", "n": "名词短语：中心词 concept，of vertical farming 作后置定语"}, {"t": "presents", "r": "谓语", "n": "及物动词，本义「呈现、提出」"}, {"t": "a potential solution", "r": "宾语", "n": "名词短语：potential 修饰 solution"}, {"t": "to the growing challenge", "r": "状语", "n": "介词短语，说明 solution 针对的对象"}, {"t": "of feeding urban populations", "r": "定语", "n": "介词短语，修饰 challenge"}, {"t": "sustainably", "r": "状语", "n": "副词，修饰 feeding"}], "note": "<b>主干<\/b>：The concept ... presents ... a solution ...。句子虽长，核心只有「主语+及物动词+宾语」三个成分，其余都是层层叠加的介词短语作定语。读长句先抓「谁 presents 什么」，再回头补修饰。", "flow": [{"t": "The concept ", "k": "core"}, {"open": "pp"}, {"t": "of vertical farming"}, {"close": "pp"}, {"t": " presents a potential solution ", "k": "core"}, {"open": "pp"}, {"t": "to the growing challenge "}, {"open": "pp"}, {"t": "of feeding urban populations"}, {"close": "pp"}, {"close": "pp"}, {"t": " sustainably.", "k": "core"}]}, {"en": "As cities expand and arable land diminishes, the idea of cultivating crops in vertically stacked layers within controlled indoor environments has gained significant attention.", "zh": "随着城市扩张、可耕地减少，「在受控室内环境中、以垂直堆叠层架种植作物」这一构想获得了广泛关注。", "parts": [{"t": "As cities expand and arable land diminishes", "r": "从句", "n": "As 引导的伴随/原因状语从句，内部是 and 连接的两个主谓结构"}, {"t": "the idea of cultivating crops", "r": "主语", "n": "中心词 idea，of cultivating crops 作后置定语"}, {"t": "in vertically stacked layers", "r": "状语", "n": "介词短语，修饰 cultivating（在哪里种）"}, {"t": "within controlled indoor environments", "r": "状语", "n": "介词短语，进一步限定种植环境"}, {"t": "has gained", "r": "谓语", "n": "现在完成时，强调「已经获得」"}, {"t": "significant attention", "r": "宾语", "n": "名词短语"}], "note": "<b>难点<\/b>：主语中心词 idea 被很长的 of + 动名词短语修饰（of cultivating crops in ... environments），导致「主语」从开头一直拖到 has gained 前才结束。找主干时先划掉 of ... 那一大段，主语立刻显形为 the idea。", "flow": [{"open": "cl"}, {"t": "As cities expand and arable land diminishes"}, {"close": "cl"}, {"t": ", the idea ", "k": "core"}, {"open": "pp"}, {"t": "of cultivating crops"}, {"close": "pp"}, {"t": " ", "k": "core"}, {"open": "pp"}, {"t": "in vertically stacked layers"}, {"close": "pp"}, {"t": " ", "k": "core"}, {"open": "pp"}, {"t": "within controlled indoor environments"}, {"close": "pp"}, {"t": " has gained significant attention.", "k": "core"}]}, {"en": "Unlike traditional agriculture, vertical farms use hydroponic or aeroponic systems, where plants receive nutrient-rich water or mist instead of soil.", "zh": "与传统农业不同，垂直农场采用水培或气培系统——植物接收的是富含营养的水或雾气，而非土壤。", "parts": [{"t": "Unlike traditional agriculture", "r": "状语", "n": "介词短语，表对比（与…不同）"}, {"t": "vertical farms", "r": "主语", "n": "名词短语"}, {"t": "use", "r": "谓语", "n": "及物动词"}, {"t": "hydroponic or aeroponic systems", "r": "宾语", "n": "or 连接的并列名词短语"}, {"t": "where plants receive ...", "r": "从句", "n": "where 引导非限制性定语从句，补充说明 systems 内部机制"}, {"t": "instead of soil", "r": "状语", "n": "介词短语，表替代（而非土壤）"}], "note": "<b>where 的用法<\/b>：这里的 where 不是「地点疑问词」，而是关系副词引导定语从句，修饰先行词 systems，相当于 in which（在这些系统中）。句中句：where 从句内部又有自己的主谓宾（plants receive water）。", "flow": [{"open": "pp"}, {"t": "Unlike traditional agriculture"}, {"close": "pp"}, {"t": ", vertical farms use hydroponic or aeroponic systems, ", "k": "core"}, {"open": "cl"}, {"t": "where plants receive nutrient-rich water or mist "}, {"open": "pp"}, {"t": "instead of soil"}, {"close": "pp"}, {"t": "."}, {"close": "cl"}]}, {"en": "This method drastically reduces water usage by up to 95% and eliminates the need for pesticides, thereby preventing agricultural runoff, a major source of water pollution.", "zh": "这种方法可将用水量大幅降低多达 95%，并无需使用杀虫剂，从而避免了农业径流这一水污染的主要来源。", "parts": [{"t": "This method", "r": "主语", "n": "名词短语，指代上一句的垂直农业系统"}, {"t": "drastically reduces", "r": "谓语", "n": "及物动词+程度副词修饰"}, {"t": "water usage", "r": "宾语", "n": "名词短语"}, {"t": "by up to 95%", "r": "状语", "n": "介词短语，表幅度"}, {"t": "and eliminates", "r": "谓语", "n": "and 连接的第二并列谓语"}, {"t": "the need for pesticides", "r": "宾语", "n": "名词短语，for pesticides 作后置定语"}, {"t": "thereby preventing agricultural runoff", "r": "状语", "n": "现在分词短语，表结果（因而避免…）"}, {"t": "a major source of water pollution", "r": "同位语", "n": "名词短语，补充说明 runoff 是什么"}], "note": "<b>双谓语<\/b>：and 连接 reduces ... 和 eliminates ... 两个并列谓语，共用一个主语 This method。<b>现在分词作结果状语<\/b>：thereby preventing ... 的逻辑主语仍是 This method，表示前面动作导致的结果。<b>同位语<\/b>：a major source ... 与 agricultural runoff 指同一事物，起解释作用。", "flow": [{"t": "This method drastically reduces water usage ", "k": "core"}, {"open": "pp"}, {"t": "by up to 95%"}, {"close": "pp"}, {"t": " and eliminates the need ", "k": "core"}, {"open": "pp"}, {"t": "for pesticides"}, {"close": "pp"}, {"t": ", ", "k": "core"}, {"open": "nf"}, {"t": "thereby preventing agricultural runoff"}, {"close": "nf"}, {"t": ", a major source ", "k": "core"}, {"open": "pp"}, {"t": "of water pollution"}, {"close": "pp"}, {"t": "."}]}, {"en": "Proponents argue that by locating these farms within or near urban centers, the distance food travels from farm to consumer (known as \"food miles\") is substantially reduced.", "zh": "支持者认为，将这些农场建在城市中心内部或附近，食品从农场到消费者的运输距离（即「食物里程」）就会大幅缩短。", "parts": [{"t": "Proponents", "r": "主语", "n": "名词，支持者/倡导者"}, {"t": "argue", "r": "谓语", "n": "及物动词，后接 that 宾语从句"}, {"t": "that ... is substantially reduced", "r": "宾语", "n": "that 引导的宾语从句，作 argue 的宾语"}, {"t": "by locating these farms within or near urban centers", "r": "状语", "n": "介词短语，位于从句内部，表方式/手段"}, {"t": "the distance food travels from farm to consumer", "r": "主语", "n": "从句主语，含省略关系词的定语从句 food travels ... 修饰 distance"}, {"t": "(known as \"food miles\")", "r": "插入语", "n": "过去分词短语作插入成分，补充说明该距离的俗称"}, {"t": "is substantially reduced", "r": "谓语", "n": "被动语态，be + 过去分词"}], "note": "<b>嵌套结构<\/b>：argue 后面整个 that 从句是宾语，从句内部又含：① by + 动名词作方式状语；② 主语 distance 后跟着一个省略了 that/which 的定语从句（food travels from farm to consumer）；③ 插入语 (known as ...) 用括号隔开。<b>读法<\/b>：先抓 argue that 之后的主干「the distance ... is reduced」，再补 by ... 和 (known as ...)。", "flow": [{"t": "Proponents argue ", "k": "core"}, {"open": "cl"}, {"t": "that "}, {"open": "pp"}, {"t": "by locating these farms within or near urban centers"}, {"close": "pp"}, {"t": ", the distance ", "k": "core"}, {"open": "cl"}, {"t": "food travels from farm to consumer"}, {"close": "cl"}, {"t": " (known as \"food miles\") ", "k": "core"}, {"t": "is substantially reduced.", "k": "core"}, {"close": "cl"}]}], "words": [{"word": "vertical", "levels": ["托福"], "ipa": "/ˈvɜːrtɪkl/", "subgroup": "modifiers", "meaning": "adj. 垂直的，纵向的", "etymology": "拉丁语 vertex 指「顶点、头顶」，源自动词 vertere（转）。想象龙卷风的漏斗尖直直指向天空——从那个顶点向下吊一条线，就是 vertical。同源词：vertex（顶点）、versus（对着）、reverse（反转）。", "roots": [{"part": "vert", "meaning": "转 (拉丁 vertere)"}, {"part": "-ical", "meaning": "形容词后缀"}], "phonetics": "重音在第一音节 /ˈvɜːr/，vɜː 是卷舌长元音（像「儿」拉长）。美音 r 要卷舌，英音不卷。易错：别把重音放到第二音节；结尾 -cal 读 /kəl/ 轻读。", "tip": "vertical = 从头顶（vertex）垂直往下吊的一根线。", "examples": [{"en": "The cliff face is almost vertical, rising straight up from the sea.", "zh": "这面悬崖近乎垂直，从海里笔直升起。", "source": "造句"}, {"en": "vertical integration", "zh": "垂直整合（产业链上下游整合）", "source": "高频搭配"}], "synonyms": [{"w": "upright", "ipa": "/ˈʌpraɪt/", "gloss": "直立的，竖直的", "note": "侧重「竖起来不歪倒」，人站直、物体立着"}, {"w": "perpendicular", "ipa": "/ˌpɜːrpənˈdɪkjələr/", "gloss": "垂直的，成直角的", "note": "几何术语，强调与某线/面成90度"}], "antonyms": [{"w": "horizontal", "note": "水平的，横向的"}], "nuance": "vertical 泛指「上下方向、纵向的」，不强调与地面严格成直角；perpendicular 是几何里严格的「成直角」。例：画一条垂直线用 vertical line 就行，说「某线垂直于地面」才用 perpendicular。", "core": "一根绳子从天花板吊下来，铅锤停稳后那条笔直向下的线，眼睛顺着它从上扫到下。", "senses": [{"gloss": "adj. 垂直的，纵向的", "logic": "从「顶点向下」的核心意象，引申为沿上下方向排布、不歪斜。", "en": "The tower's vertical walls seem to disappear into the clouds.", "zh": "高塔垂直的墙面仿佛没入云端。"}, {"gloss": "adj. 纵向的（组织/产业链）", "logic": "把「上下堆叠」的意象移植到层级结构，指上级对下级的层层关系。", "en": "The company adopted a vertical structure where decisions flow from top to bottom.", "zh": "这家公司采用了纵向结构，决策自上而下传递。"}], "derivatives": [{"w": "vertically", "gloss": "adv. 垂直地"}, {"w": "vertex", "gloss": "n. 顶点；头顶"}, {"w": "verticality", "gloss": "n. 垂直性"}]}, {"word": "concept", "levels": ["六级", "托福"], "ipa": "/ˈkɑːnsept/", "subgroup": "nouns", "meaning": "n. 概念，观念", "etymology": "拉丁语 concipere 意为「把东西抓进心里」→ conceptus「被怀上/被构思出来的东西」。con-（一起）+ capere（抓）。想象大脑伸出一只手，把零散的想法一把抓拢成一个念头。同源词：capture（捕获）、accept（接受=抓到手里）。", "roots": [{"part": "con-", "meaning": "一起"}, {"part": "cept", "meaning": "抓，取 (拉丁 capere)"}], "phonetics": "重音第一音节 /ˈkɑːn/，美音嘴巴张大（像「看」），英音 /kɒn/ 短促。第二音节 /sept/ 弱读。易错：不是 /kən-/，别读成「康cept」。", "tip": "concept = 大脑把零散想法「抓」成的一个念头。", "examples": [{"en": "The concept of time travel has fascinated people for centuries.", "zh": "时间旅行这个概念迷倒了人们好几个世纪。", "source": "造句"}, {"en": "a basic concept", "zh": "基本概念", "source": "高频搭配"}], "synonyms": [{"w": "notion", "ipa": "/ˈnoʊʃn/", "gloss": "概念，念头", "note": "更随意，常带模糊或主观的「想法」色彩"}, {"w": "idea", "ipa": "/aɪˈdiːə/", "gloss": "想法，主意", "note": "最普通，可指任何脑中浮现的东西"}, {"w": "conception", "ipa": "/kənˈsepʃn/", "gloss": "构想，理解", "note": "侧重「形成概念的过程或方式」"}], "antonyms": [{"w": "fact", "note": "事实（与抽象概念相对）"}], "nuance": "concept 是经过抽象、有理论高度的「概念」，比 idea 更正式更成体系；notion 常带「未必准确、个人化的印象」色彩。例：重力是一个 concept，而「我隐约觉得该早点走」是 notion。", "core": "脑子里一堆散落的拼图块，被一只手啪地拍拢成完整的一幅画。", "senses": [{"gloss": "n. 概念，观念", "logic": "核心是把零散感知「抓拢成一个整体」，成为头脑中可调用的抽象单位。", "en": "Students need to grasp the basic concepts before solving problems.", "zh": "学生在解题前需要掌握基本概念。"}], "derivatives": [{"w": "conceptual", "gloss": "adj. 概念上的"}, {"w": "conceive", "gloss": "v. 构想；怀孕"}, {"w": "conceptualize", "gloss": "v. 将…概念化"}]}, {"word": "potential", "levels": ["六级", "托福"], "ipa": "/pəˈtenʃl/", "subgroup": "modifiers", "meaning": "adj. 潜在的，可能的 n. 潜力，可能性", "etymology": "拉丁语 potentia「力量、能力」← potens「有能力的」（potere 的现在分词）。词根 potent「有力的」，同源 omnipotent（全能的）、potent（效力强的）。想象一粒种子埋在土里，还没发芽却已「藏着」长成大树的力量——这股藏而未发之力就是 potential。", "roots": [{"part": "potent", "meaning": "有力的 (拉丁 potens)"}, {"part": "-ial", "meaning": "形容词后缀，…的"}], "phonetics": "重音第二音节 /ˈten/。第一音节 /pə/ 弱读成「啪」，别读 /poʊ/。英音常把 /t/ 弱化，美音 /t/ 可发成闪音。易错：重音别放到第一音节。", "tip": "potential = 种子没发芽前，土里那团「还没使出来的力」。", "examples": [{"en": "She has the potential to become a great scientist.", "zh": "她有成为伟大科学家的潜力。", "source": "造句"}, {"en": "potential customer", "zh": "潜在客户", "source": "高频搭配"}], "synonyms": [{"w": "latent", "ipa": "/ˈleɪtnt/", "gloss": "潜在的，潜伏的", "note": "强调「已存在但尚未显现」，多修饰能力或疾病"}, {"w": "prospective", "ipa": "/prəˈspektɪv/", "gloss": "有望的，预期的", "note": "多指「未来可能成为…的人/事」，如 prospective buyer"}], "antonyms": [{"w": "actual", "note": "实际的，已经实现的"}, {"w": "realized", "note": "已实现的"}], "nuance": "potential 强调「有能力但还没发挥兑现」；latent 强调「存在却藏着、看不见」；prospective 强调「从未来眼光看可能成为的」。例：有潜力的人才 = a person with potential；潜在疾病 = a latent disease；潜在买家 = prospective buyers。", "core": "一粒还没破土的种子，捏在手里能感觉到它里面憋着一股要把壳顶开的力量。", "senses": [{"gloss": "adj. 潜在的，可能的", "logic": "从「藏着未发之力」引申，指现在还不明显、但将来可能显现的事物。", "en": "The drug has several potential side effects.", "zh": "这种药有几种潜在的副作用。"}, {"gloss": "n. 潜力，可能性", "logic": "把这股「未发之力」当成名词，指一个人或事物将来能达到的高度。", "en": "The market has enormous growth potential.", "zh": "这个市场有巨大的增长潜力。"}], "derivatives": [{"w": "potentially", "gloss": "adv. 潜在地"}, {"w": "potentiality", "gloss": "n. 潜在性，可能性"}, {"w": "potent", "gloss": "adj. 强效的，有力的"}]}, {"word": "sustainable", "levels": ["六级", "托福"], "ipa": "/səˈsteɪnəbl/", "subgroup": "modifiers", "meaning": "adj. 可持续的；能维持的", "etymology": "拉丁语 sustinere「从下面托住」← sus-（sub-，从下）+ tenere（拿住）。想象两只手从下面稳稳托着一个快倒下的盘子，让它一直不落地——这种「托得住、能一直撑下去」的状态就是 sustain，加 -able 变成「撑得住的」。同源词：maintain（保持）、tenacious（抓得牢）。", "roots": [{"part": "sus-", "meaning": "从下面 (sub- 变体)"}, {"part": "tain", "meaning": "拿住，托住 (拉丁 tenere)"}, {"part": "-able", "meaning": "能…的"}], "phonetics": "重音第二音节 /ˈsteɪn/，发「斯坦」。首尾 /ə/ 弱读。易错：别把 tain 读成「台因」，是 /teɪn/ 单音节；-able 弱读成 /əbl/。", "tip": "sustainable = 能一直「从下面托住」、不垮下去的。", "examples": [{"en": "We need to find a sustainable way to feed ten billion people.", "zh": "我们需要找到可持续地养活一百亿人口的方法。", "source": "造句"}, {"en": "sustainable development", "zh": "可持续发展", "source": "高频搭配"}], "synonyms": [{"w": "viable", "ipa": "/ˈvaɪəbl/", "gloss": "可行的，能存活的", "note": "强调「经济或操作上走得通、能长期成立」"}, {"w": "enduring", "ipa": "/ɪnˈdʊrɪŋ/", "gloss": "持久的，经久的", "note": "强调「经得住时间考验」，偏抽象"}], "antonyms": [{"w": "unsustainable", "note": "不可持续的"}, {"w": "depletable", "note": "可耗尽的"}], "nuance": "sustainable 的核心是「不耗尽资源、能一直维持下去」，尤其指环保意义上的持续；viable 更宽泛，指「这件事本身可行、能成立」。例：可持续农业 = sustainable agriculture；一个可行的商业计划 = a viable business plan。", "core": "两只手从下方托着一只沉甸甸的水盆，稳稳当当，水一滴都不晃出来，能一直托下去。", "senses": [{"gloss": "adj. 可持续的（环保）", "logic": "从「托得住不垮」引申为不把资源耗尽、能让后代继续用。", "en": "Solar power is a sustainable source of energy.", "zh": "太阳能是一种可持续的能源。"}, {"gloss": "adj. 能维持的", "logic": "回到字面义，指某种状态或速度能长期保持不中断。", "en": "This pace of growth is simply not sustainable.", "zh": "这种增长速度根本无法长期维持。"}], "derivatives": [{"w": "sustain", "gloss": "v. 维持，支撑；遭受"}, {"w": "sustainability", "gloss": "n. 可持续性"}, {"w": "sustainably", "gloss": "adv. 可持续地"}]}, {"word": "arable", "levels": ["托福"], "ipa": "/ˈærəbl/", "subgroup": "modifiers", "meaning": "adj. 可耕作的", "etymology": "拉丁语 arabilis「可耕的」← arare「犁地」。想象木犁翻起湿润的泥土，翻出的土能种庄稼——这种「能被犁开、能种」的地就是 arable。词根 ar- 来自 arare（犁），可联想希腊语 aroun（犁地）。", "roots": [{"part": "ar-", "meaning": "犁，耕 (拉丁 arare)"}, {"part": "-able", "meaning": "能…的"}], "phonetics": "重音第一音节 /ˈær/，发「爱儿」（美音卷舌）。第二音节 /əbl/ 弱读。易错：不是 /əˈreɪbl/，重音别后移；/ær/ 的 æ 要嘴巴张大。", "tip": "arable = 能被犁（arare）翻开、能种庄稼的地。", "examples": [{"en": "Only a small fraction of the country's land is arable.", "zh": "这个国家只有一小部分土地是可耕作的。", "source": "造句"}, {"en": "arable land", "zh": "可耕地", "source": "高频搭配"}], "synonyms": [{"w": "fertile", "ipa": "/ˈfɜːrtl/", "gloss": "肥沃的", "note": "强调土壤肥力好、产量高"}, {"w": "cultivable", "ipa": "/ˈkʌltɪvəbl/", "gloss": "可耕种的", "note": "与 arable 几乎同义，更书面"}], "antonyms": [{"w": "barren", "note": "贫瘠的，寸草不生的"}], "nuance": "arable 只指「能被犁开用于种庄稼」这个客观属性；fertile 更进一步，强调「肥、产量高」。一块地可以 arable（能种）但未必 fertile（不一定肥）。例：可耕地正在减少 = arable land is shrinking；肥沃的土壤 = fertile soil。", "core": "木犁头插进松软的黑土，翻起一道带着湿润光泽的土浪，土香扑鼻。", "senses": [{"gloss": "adj. 可耕作的", "logic": "核心是「能被犁开、能被种植」，从犁地动作引申为土地的属性。", "en": "Arable land makes up only about 10% of the world's surface.", "zh": "可耕地只占全球地表的大约10%。"}], "derivatives": [{"w": "arability", "gloss": "n. 可耕性"}]}, {"word": "diminish", "levels": ["托福"], "ipa": "/dɪˈmɪnɪʃ/", "subgroup": "verbs", "meaning": "v. 减少，降低；削弱", "etymology": "拉丁语 diminuere「切成小块」← de-（向下/分）+ minuere（变小，同 minor/minus）。想象一块大蛋糕被一刀一刀切下去，越切越小——这个「一点点变小」的过程就是 diminish。同源词：minor（较小的）、minus（减）、minute（分钟/微小的）。", "roots": [{"part": "di-", "meaning": "分离，向下 (de- 变体)"}, {"part": "min", "meaning": "小 (拉丁 minuere)"}, {"part": "-ish", "meaning": "动词后缀，使…"}], "phonetics": "重音第二音节 /ˈmɪn/，发「敏」。第一音节 /dɪ/ 短促。易错：别读成 /daɪˈmɪnɪʃ/，首音节是 /dɪ/ 不是 /daɪ/。", "tip": "diminish = 把东西「mini」化，越切越小。", "examples": [{"en": "His influence gradually diminished over the years.", "zh": "这些年他的影响力逐渐减弱了。", "source": "造句"}, {"en": "diminishing returns", "zh": "收益递减", "source": "高频搭配"}], "synonyms": [{"w": "decrease", "ipa": "/dɪˈkriːs/", "gloss": "减少，下降", "note": "最中性通用，只讲数量或程度往下"}, {"w": "dwindle", "ipa": "/ˈdwɪndl/", "gloss": "逐渐减少，萎缩", "note": "强调「一点点地、眼看着变少」，常带惋惜"}, {"w": "lessen", "ipa": "/ˈlesn/", "gloss": "减轻，变少", "note": "强调程度或强度的减弱"}], "antonyms": [{"w": "increase", "note": "增加"}, {"w": "amplify", "note": "放大，增强"}], "nuance": "diminish 强调「一点一点被削弱/变小」的过程感，且常指重要性、价值、声誉这类抽象东西被贬损；decrease 只陈述客观数量下降。例：他的权威在下降用 diminish（被削弱）；气温下降用 decrease。", "core": "一块糖泡进热水里，眼看着它的棱角一点点化掉、越缩越小，最后消失。", "senses": [{"gloss": "v. 减少，降低", "logic": "从「切小、变小」引申为数量、程度、规模往下走。", "en": "The pain will diminish as the medicine takes effect.", "zh": "药效上来后疼痛会减轻。"}, {"gloss": "v. 削弱，贬低", "logic": "把「变小」用在抽象层面，指让某人的重要性、价值显得更小。", "en": "Don't diminish the importance of her contribution.", "zh": "别贬低她所作贡献的重要性。"}], "derivatives": [{"w": "diminution", "gloss": "n. 减少，缩小"}, {"w": "diminutive", "gloss": "adj. 极小的；昵称的"}, {"w": "diminished", "gloss": "adj. 减少的，减弱的"}]}, {"word": "cultivate", "levels": ["六级", "托福"], "ipa": "/ˈkʌltɪveɪt/", "subgroup": "verbs", "meaning": "v. 栽培，耕种；培养；建立（关系）", "etymology": "拉丁语 cultus「被耕种/被照料的」← colere「耕、照料、敬奉」。想象农人弯腰锄草、松土、浇水，日复一日地伺候一块地——这种「反复照料使生长」就是 cultivate。同源词：culture（文化，本是「耕种心灵」）、agriculture（农业=田地+耕种）、cult（崇拜）。", "roots": [{"part": "cult", "meaning": "耕种，照料 (拉丁 colere)"}, {"part": "-ivate", "meaning": "动词后缀，使…"}], "phonetics": "重音第一音节 /ˈkʌl/，发「卡」。/tɪveɪt/ 清晰读出。易错：别把重音放第二音节；cult 的 /ʌ/ 短元音，别读成 /uː/。", "tip": "cultivate = 像农夫伺候地一样，反复照料让东西长出来。", "examples": [{"en": "They cultivate rice on terraced hillsides.", "zh": "他们在梯田山坡上种植水稻。", "source": "造句"}, {"en": "cultivate a habit", "zh": "培养习惯", "source": "高频搭配"}], "synonyms": [{"w": "nurture", "ipa": "/ˈnɜːrtʃər/", "gloss": "培育，滋养", "note": "侧重温柔地喂养照顾，对象多是人、感情或才能"}, {"w": "foster", "ipa": "/ˈfɔːstər/", "gloss": "培养，促进", "note": "侧重为成长提供环境，多修饰关系、氛围或能力"}, {"w": "till", "ipa": "/tɪl/", "gloss": "耕种，犁地", "note": "专指翻土整地的农活，更具体"}], "antonyms": [{"w": "neglect", "note": "忽视，荒废"}, {"w": "abandon", "note": "放弃，弃置"}], "nuance": "cultivate 兼有「种庄稼」和「培养（关系/习惯/能力）」两义，都含「持续用心照料」；nurture 更偏「喂养呵护」，foster 更偏「提供环境助其生长」。例：培养友谊 = cultivate a friendship；养育孩子 = nurture a child；促进理解 = foster understanding。", "core": "一双布满泥的手，小心地给一株幼苗培土，再舀一瓢水慢慢浇下，水渗进土里的声音。", "senses": [{"gloss": "v. 栽培，耕种", "logic": "核心是「反复照料使生长」，最本义用于农事。", "en": "Farmers have cultivated this valley for centuries.", "zh": "农民们在这个山谷耕作了好几个世纪。"}, {"gloss": "v. 培养（习惯/能力/关系）", "logic": "把「照料土地」的意象搬到抽象对象上，长期用心经营使其发展。", "en": "She worked hard to cultivate a wide network of contacts.", "zh": "她努力经营，建立了一张庞大的人脉网。"}], "derivatives": [{"w": "cultivation", "gloss": "n. 耕种；培养"}, {"w": "cultivated", "gloss": "adj. 有教养的；被耕种的"}, {"w": "cultivator", "gloss": "n. 耕种者；中耕机"}]}, {"word": "hydroponic", "levels": ["托福"], "ipa": "/ˌhaɪdrəˈpɑːnɪk/", "subgroup": "modifiers", "meaning": "adj. 水培的", "etymology": "希腊语 hydor「水」+ ponos「劳作」。想象一株植物的根悬在清水里、没有土，靠水里的养分「干活」养活自己——这种「靠水劳作」的种植法就是 hydroponic。同源词：hydrogen（氢，字面「生水的」）、hydrate（补水）、dehydrate（脱水）。", "roots": [{"part": "hydro-", "meaning": "水 (希腊 hydor)"}, {"part": "pon", "meaning": "劳作 (希腊 ponos)"}, {"part": "-ic", "meaning": "形容词后缀"}], "phonetics": "重音第三音节 /ˈpɑːn/，发「盼」。/haɪ/ 是「嗨」。易错：重音位置容易错，在 -pon- 上；/drə/ 弱读。", "tip": "hydroponic = 让水（hydro）替土壤「干活」（pon）养植物。", "examples": [{"en": "Lettuce grows well in hydroponic systems.", "zh": "生菜在水培系统里长得很好。", "source": "造句"}, {"en": "hydroponic farming", "zh": "水培农业", "source": "高频搭配"}], "synonyms": [{"w": "soilless", "ipa": "/ˈsɔɪlləs/", "gloss": "无土栽培的", "note": "从「不用土壤」角度描述同一技术"}, {"w": "aquatic", "ipa": "/əˈkwætɪk/", "gloss": "水生的，水中的", "note": "泛指生长或生活在水里，不一定是栽培"}], "antonyms": [{"w": "soil-based", "note": "基于土壤的"}], "nuance": "hydroponic 专指「水培」这门无土栽培技术；soilless 是更直白的「无土」统称，还可包括气培（aeroponic）；aquatic 只是「水生的」，不涉及人工栽培。", "core": "一株生菜的白色根须泡在透明的营养液里，水里冒着一串细小的气泡往上蹿。", "senses": [{"gloss": "adj. 水培的", "logic": "核心是「靠水而非土壤供给养分来种植」，从构词直接落到无土栽培技术。", "en": "Hydroponic vegetables can be grown year-round indoors.", "zh": "水培蔬菜可以全年在室内种植。"}], "derivatives": [{"w": "hydroponics", "gloss": "n. 水培法"}, {"w": "hydro", "gloss": "adj. 水力发电的；水的"}, {"w": "hydroponically", "gloss": "adv. 以水培方式"}]}, {"word": "nutrient", "levels": ["托福"], "ipa": "/ˈnuːtriənt/", "subgroup": "nouns", "meaning": "n. 营养物 adj. 营养的", "etymology": "拉丁语 nutrire「喂养、滋养」。想象母乳或土壤里的养分被吸进身体，喂饱每个细胞——这些「喂养用的东西」就是 nutrient。同源词：nutrition（营养）、nourish（滋养）、nurse（护士，本是「喂养者」）。", "roots": [{"part": "nutri", "meaning": "喂养，滋养 (拉丁 nutrire)"}, {"part": "-ent", "meaning": "名词/形容词后缀"}], "phonetics": "重音第一音节 /ˈnuː/，发「怒」（长音）。/triənt/ 连读。易错：别读成 /ˈnʌtriənt/，首元音是长 /uː/ 不是 /ʌ/。", "tip": "nutrient = 喂（nutri）给身体和植物的东西。", "examples": [{"en": "Plants absorb nutrients through their roots.", "zh": "植物通过根部吸收养分。", "source": "造句"}, {"en": "nutrient-rich water", "zh": "富含营养的水", "source": "高频搭配"}], "synonyms": [{"w": "nourishment", "ipa": "/ˈnɜːrɪʃmənt/", "gloss": "营养，滋养物", "note": "更抽象，常指食物提供的整体滋养"}, {"w": "sustenance", "ipa": "/ˈsʌstənəns/", "gloss": "维持生命的食物/养料", "note": "侧重「维持生存」的功能"}], "antonyms": [{"w": "toxin", "note": "毒素"}, {"w": "contaminant", "note": "污染物"}], "nuance": "nutrient 是具体的「营养成分」（如维生素、矿物质），可数、偏科学；nourishment 偏「营养补给」的整体概念，更文学；sustenance 强调「维持生命所需」的生存色彩。", "core": "一勺浓稠的肉汤喂进嘴里，热乎乎地顺着喉咙滑下去，全身细胞都被「喂饱」的感觉。", "senses": [{"gloss": "n. 营养物，养分", "logic": "核心是「喂养身体或植物的东西」，即被吸收来维持生长和健康的物质。", "en": "The soil lacks essential nutrients.", "zh": "这片土壤缺少必需的养分。"}, {"gloss": "adj. 营养的", "logic": "从名词转形容词，指「含养分的、起滋养作用的」。", "en": "The nutrient solution feeds the plants directly.", "zh": "营养液直接为植物供能。"}], "derivatives": [{"w": "nutrition", "gloss": "n. 营养"}, {"w": "nutritious", "gloss": "adj. 有营养的"}, {"w": "nutrient-dense", "gloss": "adj. 营养密集的"}]}, {"word": "drastically", "levels": ["托福"], "ipa": "/ˈdræstɪkli/", "subgroup": "modifiers", "meaning": "adv. 大幅地，剧烈地", "etymology": "希腊语 drastikos「有效的、猛烈的」← dran「做、行动」。想象一记重拳猛地砸下去、不留余地——这种「动作很猛、力度极大」就是 drastic，加 -ally 成副词。同源词：drama（戏剧，本是「做的事情」）。", "roots": [{"part": "drast", "meaning": "猛做，强力 (希腊 dran)"}, {"part": "-ically", "meaning": "副词后缀"}], "phonetics": "重音第一音节 /ˈdræs/，发「拽斯」。/tɪkli/ 连读快。易错：别把重音放第二音节；/æ/ 嘴巴张大。", "tip": "drastically = 像戏剧里那种「下猛药、大动作」式的改变。", "examples": [{"en": "The company's profits dropped drastically last year.", "zh": "去年这家公司的利润大幅下滑。", "source": "造句"}, {"en": "change drastically", "zh": "急剧变化", "source": "高频搭配"}], "synonyms": [{"w": "radically", "ipa": "/ˈrædɪkli/", "gloss": "根本地，彻底地", "note": "强调「连根拔起」式的根本改变"}, {"w": "dramatically", "ipa": "/drəˈmætɪkli/", "gloss": "剧烈地，引人注目地", "note": "强调变化幅度大、抓人眼球"}], "antonyms": [{"w": "slightly", "note": "轻微地"}, {"w": "gradually", "note": "逐渐地"}], "nuance": "drastically 强调「力度猛、幅度大、甚至带冲击性」；radically 强调「触及根本、彻底翻新」；dramatically 强调「变化剧烈且显而易见、像演戏一样抢眼」。例：价格大幅下降 = prices drop drastically；彻底改变思路 = change radically；戏剧性地好转 = improve dramatically。", "core": "一只大手猛地把方向盘打死，整辆车唰地急转弯，轮胎发出尖叫。", "senses": [{"gloss": "adv. 大幅地，剧烈地", "logic": "核心是「下猛力、动大手脚」，引申为程度或幅度上的急剧变化。", "en": "The new policy drastically reduced air pollution.", "zh": "新政策大幅减少了空气污染。"}], "derivatives": [{"w": "drastic", "gloss": "adj. 猛烈的，极端的"}, {"w": "drama", "gloss": "n. 戏剧；戏剧性事件"}]}, {"word": "eliminate", "levels": ["六级", "托福"], "ipa": "/ɪˈlɪmɪneɪt/", "subgroup": "verbs", "meaning": "v. 消除，排除；淘汰", "etymology": "拉丁语 eliminare「赶出门外」← e-/ex-（向外）+ limen（门槛）。想象把一只老鼠拎起来、扔过门槛丢到门外——「赶出门、彻底弄走」就是 eliminate。同源词：limit（界限，与 limen 同源）、preliminary（在门槛之前的=初步的）。", "roots": [{"part": "e-", "meaning": "向外 (ex- 变体)"}, {"part": "limin", "meaning": "门槛 (拉丁 limen)"}, {"part": "-ate", "meaning": "动词后缀"}], "phonetics": "重音第三音节 /ˈlɪm/，发「利姆」。首音节 /ɪ/ 短。易错：别读成 /iːˈlɪmɪneɪt/，首音是 /ɪ/ 不是长 /iː/。", "tip": "eliminate = 把东西「拎过门槛扔出去」，彻底清走。", "examples": [{"en": "This software eliminates the need for manual data entry.", "zh": "这款软件彻底免去了人工录入数据的需求。", "source": "造句"}, {"en": "eliminate poverty", "zh": "消除贫困", "source": "高频搭配"}], "synonyms": [{"w": "eradicate", "ipa": "/ɪˈrædɪkeɪt/", "gloss": "根除，消灭", "note": "强调连根拔起、彻底灭绝，多用于疾病或罪恶"}, {"w": "remove", "ipa": "/rɪˈmuːv/", "gloss": "移除，去掉", "note": "最中性，单纯把东西拿走或移开"}, {"w": "abolish", "ipa": "/əˈbɑːlɪʃ/", "gloss": "废除（制度/法律）", "note": "专用于正式废止制度、法律、习俗"}], "antonyms": [{"w": "introduce", "note": "引入"}, {"w": "retain", "note": "保留"}], "nuance": "eliminate 强调「彻底弄掉、使不复存在」，动作感强；remove 只讲「移开」，可能只是挪个地方；eradicate 语气最强，专指「根除」疾病或祸患；abolish 专用于废除制度法律。例：淘汰对手 = eliminate an opponent；废除奴隶制 = abolish slavery；根除疟疾 = eradicate malaria。", "core": "拎起一只老鼠的后颈，抬手一甩，把它嗖地扔过门槛，门外啪一声，屋里清静了。", "senses": [{"gloss": "v. 消除，排除", "logic": "从「扔出门外」引申为把某物彻底弄走、使它不再存在。", "en": "The goal is to eliminate errors completely.", "zh": "目标是要彻底消除错误。"}, {"gloss": "v. 淘汰", "logic": "在比赛中，把失败者「赶出局」，只剩下胜者。", "en": "Our team was eliminated in the first round.", "zh": "我们队在首轮就被淘汰了。"}], "derivatives": [{"w": "elimination", "gloss": "n. 消除；淘汰"}, {"w": "eliminator", "gloss": "n. 消除器；淘汰赛"}]}, {"word": "pesticide", "levels": ["托福"], "ipa": "/ˈpestɪsaɪd/", "subgroup": "nouns", "meaning": "n. 杀虫剂", "etymology": "拉丁语 pestis「瘟疫、害虫」+ -cide「杀」（拉丁 caedere 砍杀）。想象一块田被虫咬得千疮百孔，喷一层药把害虫「集体处决」——这种「杀虫的药」就是 pesticide。同源词：pest（害虫）、suicide（自杀=sui+杀）、homicide（杀人）、insecticide（杀虫剂）。", "roots": [{"part": "pest", "meaning": "害虫 (拉丁 pestis)"}, {"part": "-cide", "meaning": "杀 (拉丁 caedere)"}], "phonetics": "重音第一音节 /ˈpes/，发「拍丝」。/tɪsaɪd/ 连读。易错：别读成 /pɪˈstɪsaɪd/，重音在第一音节。", "tip": "pesticide = 专杀（-cide）害虫（pest）的药。", "examples": [{"en": "Organic farmers avoid using chemical pesticides.", "zh": "有机农户避免使用化学杀虫剂。", "source": "造句"}, {"en": "pesticide residue", "zh": "农药残留", "source": "高频搭配"}], "synonyms": [{"w": "insecticide", "ipa": "/ɪnˈsektɪsaɪd/", "gloss": "杀虫剂", "note": "专杀昆虫，是 pesticide 的一种"}, {"w": "herbicide", "ipa": "/ˈhɜːrbɪsaɪd/", "gloss": "除草剂", "note": "专杀杂草"}], "antonyms": [{"w": "fertilizer", "note": "肥料（促进生长而非杀灭）"}], "nuance": "pesticide 是统称，泛指「杀虫/除草/杀菌」的农药；insecticide 只针对昆虫；herbicide 只针对杂草。例：农药泛指 pesticide，杀蚊子的是 insecticide，杀杂草的是 herbicide。", "core": "喷壶哧地喷出一片雾，虫子在叶子上抽搐几下，掉到土里不动了。", "senses": [{"gloss": "n. 杀虫剂，农药", "logic": "核心是「杀灭害虫的药」，从 pest（害虫）+ cide（杀）直接落到农用化学品。", "en": "The overuse of pesticides has polluted many rivers.", "zh": "农药的过度使用污染了许多河流。"}], "derivatives": [{"w": "pest", "gloss": "n. 害虫；讨厌的人"}, {"w": "insecticide", "gloss": "n. 杀虫剂"}, {"w": "pestilence", "gloss": "n. 瘟疫"}]}, {"word": "runoff", "levels": ["托福"], "ipa": "/ˈrʌnɔːf/", "subgroup": "nouns", "meaning": "n. 径流，流失", "etymology": "古英语短语 run off「跑开、流走」。想象一场大雨浇在田里，混着化肥农药的泥水「跑」出田地、流进河里——这些「跑掉的脏水」就是 runoff。同源词：run（跑）、runway（跑道=让飞机跑的路）。", "roots": [{"part": "run", "meaning": "跑，流"}, {"part": "off", "meaning": "离开，脱离"}], "phonetics": "重音第一音节 /ˈrʌn/，发「软」。/ɔːf/ 发「奥夫」。易错：作名词时重音在前 /ˈrʌnɔːf/，作动词短语 run off 时两词都重读。", "tip": "runoff = 雨水把田里的脏东西「冲跑」、流进河里。", "examples": [{"en": "Agricultural runoff is a major source of river pollution.", "zh": "农业径流是河流污染的一个主要来源。", "source": "造句"}, {"en": "stormwater runoff", "zh": "雨水径流", "source": "高频搭配"}], "synonyms": [{"w": "drainage", "ipa": "/ˈdreɪnɪdʒ/", "gloss": "排水，排水系统", "note": "侧重「排走多余的水」这个机制或设施"}, {"w": "effluent", "ipa": "/ˈefluənt/", "gloss": "废水，污水", "note": "多指工厂或城市排出的废液"}], "antonyms": [{"w": "infiltration", "note": "渗透，下渗（水渗入地下而非流走）"}], "nuance": "runoff 专指「雨水/融水在地表汇流、把东西冲走」的现象，含污染含义；drainage 强调「排水」的动作或系统；effluent 指「排出的废液」本身。例：农业径流 = agricultural runoff；排水系统 = drainage system；工业废水 = industrial effluent。", "core": "一场大雨后，田边的小沟里流着黄褐色的泥水，把肥料的泡沫一路冲进河里。", "senses": [{"gloss": "n. 径流，流失", "logic": "核心是「水流跑走、顺带把地表物质冲走」，落到雨水裹挟污染物汇入水体的现象。", "en": "Heavy rain increased the runoff from the fields.", "zh": "大雨增加了田地的径流量。"}], "derivatives": [{"w": "runoff election", "gloss": "n. 决胜选举（票未过半时的第二轮投票）"}, {"w": "run off", "gloss": "v. 跑开，流走"}]}, {"word": "proponent", "levels": ["托福"], "ipa": "/prəˈpoʊnənt/", "subgroup": "nouns", "meaning": "n. 支持者，倡导者", "etymology": "拉丁语 proponere「放到前面」← pro-（向前）+ ponere（放置）。想象一个人把方案啪地拍在桌上、推到大家面前——这个「把主张摆到台前、为之站台」的人就是 proponent。同源词：propose（提议=把想法摆出来）、position（位置）、opponent（对手=摆在对面的人）。", "roots": [{"part": "pro-", "meaning": "向前，赞成"}, {"part": "pon", "meaning": "放置 (拉丁 ponere)"}, {"part": "-ent", "meaning": "名词后缀，…的人"}], "phonetics": "重音第二音节 /ˈpoʊ/，发「剖」。第一音节 /prə/ 弱读。易错：别读成 /ˈproʊpənənt/，重音在 -pon- 不在 pro-。", "tip": "proponent = 把主张「摆到台前」（pro-pon）替它站台的人。", "examples": [{"en": "She is a leading proponent of renewable energy.", "zh": "她是可再生能源的主要倡导者。", "source": "造句"}, {"en": "a strong proponent of reform", "zh": "改革的坚定支持者", "source": "高频搭配"}], "synonyms": [{"w": "advocate", "ipa": "/ˈædvəkeɪt/", "gloss": "倡导者，拥护者", "note": "强调公开为某事发声、鼓呼"}, {"w": "supporter", "ipa": "/səˈpɔːrtər/", "gloss": "支持者", "note": "最普通，泛指站在某一边的人"}, {"w": "champion", "ipa": "/ˈtʃæmpiən/", "gloss": "捍卫者，斗士", "note": "强调像战士一样奋力捍卫某事业"}], "antonyms": [{"w": "opponent", "note": "反对者，对手"}, {"w": "critic", "note": "批评者"}], "nuance": "proponent 强调「明确主张、提出论点的一方」，常与 opponent（反对者）对举，用于辩论语境；advocate 更强调「积极奔走呼吁」；supporter 最宽泛中性。例：提案的支持者 = proponents of the proposal；环保倡导者 = an environmental advocate；忠实支持者 = a loyal supporter。", "core": "一个人双手把方案啪地按在会议桌中央，身体前倾，眼睛扫过全场，替这个方案站台。", "senses": [{"gloss": "n. 支持者，倡导者", "logic": "核心是「把主张摆到台前的人」，引申为站出来赞成、主张某观点的一方。", "en": "Proponents say the new law will save lives.", "zh": "支持者称这部新法律能挽救生命。"}], "derivatives": [{"w": "propose", "gloss": "v. 提议；求婚"}, {"w": "proposal", "gloss": "n. 提议，方案"}, {"w": "proposition", "gloss": "n. 主张，命题"}]}, {"word": "urban", "levels": ["六级", "托福"], "ipa": "/ˈɜːrbən/", "subgroup": "modifiers", "meaning": "adj. 城市的", "etymology": "拉丁语 urbanus「属于城市的」← urbs「城市」。想象城墙围起一片灯火、街巷密布、人群熙攘的地方——这就是 urbs（城），urban 就是「城里的」。同源词：suburb（郊区=sub-城市边缘）、urbanite（城里人）。", "roots": [{"part": "urb", "meaning": "城市 (拉丁 urbs)"}, {"part": "-an", "meaning": "形容词后缀"}], "phonetics": "重音第一音节 /ˈɜːr/，发「儿」（卷舌）。/bən/ 弱读。易错：别读成 /juːrˈbæn/，首音节是 /ɜːr/ 卷舌音；与 suburban 的 -an 发音一致。", "tip": "urban = 城墙（urbs）里面的，城里的。", "examples": [{"en": "More people now live in urban areas than in rural ones.", "zh": "如今住在城市的人比住在农村的人更多。", "source": "造句"}, {"en": "urban population", "zh": "城市人口", "source": "高频搭配"}], "synonyms": [{"w": "metropolitan", "ipa": "/ˌmetrəˈpɑːlɪtən/", "gloss": "大都市的", "note": "特指大都会的，比 urban 范围更大更气派"}, {"w": "municipal", "ipa": "/mjuːˈnɪsɪpl/", "gloss": "市政的，市政府的", "note": "侧重城市的行政或管理层面"}], "antonyms": [{"w": "rural", "note": "农村的"}, {"w": "suburban", "note": "郊区的"}], "nuance": "urban 是「城市的」最通用说法，与 rural（农村）相对；metropolitan 特指「大都市」；municipal 偏「市政、行政」视角。例：城市生活 = urban life；大都市区 = metropolitan area；市政服务 = municipal services。", "core": "站在高架上看下去，密密麻麻的楼房挤成一片，路灯连成一条发光的河，车流在楼缝里穿行。", "senses": [{"gloss": "adj. 城市的", "logic": "核心是「城（urbs）里的」，指与城市相关的、属于城市的。", "en": "Urban living offers convenience but also stress.", "zh": "城市生活带来了便利，也带来了压力。"}], "derivatives": [{"w": "urbanization", "gloss": "n. 城市化"}, {"w": "urbanize", "gloss": "v. 使城市化"}, {"w": "suburb", "gloss": "n. 郊区"}, {"w": "urbanite", "gloss": "n. 城市居民"}]}, {"word": "substantially", "levels": ["托福"], "ipa": "/səbˈstænʃəli/", "subgroup": "modifiers", "meaning": "adv. 大幅地，实质性地", "etymology": "拉丁语 substantia「站在下面的东西、实体」← sub-（下面）+ stare（站立）。想象一栋房子下面那层厚实的地基——「站在下面、实实在在撑住一切的东西」就是 substance（实体/实质）。substantial 是「有实体的、分量足的」，加 -ly 成副词「实打实地、大幅地」。同源词：substance（物质）、stand（站）、constant（恒定）。", "roots": [{"part": "sub-", "meaning": "下面"}, {"part": "stant", "meaning": "站立 (拉丁 stare)"}, {"part": "-ial", "meaning": "形容词后缀"}, {"part": "-ly", "meaning": "副词后缀"}], "phonetics": "重音第二音节 /ˈstæn/，发「斯坦」。首音节 /səb/ 弱读。易错：别把重音放第一或第三音节；/ʃəl/ 的 sh 音要发准。", "tip": "substantially = 像地基一样「实打实、有分量地」改变。", "examples": [{"en": "The cost of living has risen substantially.", "zh": "生活成本已经大幅上升。", "source": "造句"}, {"en": "substantially different", "zh": "实质性不同", "source": "高频搭配"}], "synonyms": [{"w": "considerably", "ipa": "/kənˈsɪdərəbli/", "gloss": "相当大地", "note": "强调数量或程度上到可观的地步"}, {"w": "significantly", "ipa": "/sɪɡˈnɪfɪkəntli/", "gloss": "显著地，重大地", "note": "强调变化大到具有意义或影响"}], "antonyms": [{"w": "marginally", "note": "略微地，边际地"}, {"w": "negligibly", "note": "可忽略地"}], "nuance": "substantially 强调「幅度大、实打实、有实质分量」，且可表「大体上/实质上」；considerably 偏数量上「相当多」；significantly 强调变化「重要、有意义」。例：收入大幅增加 = income increased substantially；观点实质相同 = substantially the same。", "core": "一块厚厚的水泥地基，锤子砸上去砰地闷响，纹丝不动，实打实的分量。", "senses": [{"gloss": "adv. 大幅地，实质性地", "logic": "从「有实体、有分量」引申，指变化的幅度大、不是虚的。", "en": "The two designs are substantially the same.", "zh": "这两个设计实质上是一样的。"}, {"gloss": "adv. 大体上，基本上", "logic": "从「实体/本质」引申，指抓主要、看实质层面而言。", "en": "The plan is substantially complete.", "zh": "这个计划大体上已经完成。"}], "derivatives": [{"w": "substantial", "gloss": "adj. 大量的，实质的"}, {"w": "substance", "gloss": "n. 物质；实质"}, {"w": "substantiate", "gloss": "v. 证实，用事实支撑"}]}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- 精读：文章 + 句法分析
+let speaking=false;
+function sayPassage(btn){
+  if(speaking){ speechSynthesis.cancel(); speaking=false; if(btn) btn.textContent='🔊 朗读全文'; return; }
+  const P = G.passage; if(!P) return;
+  const texts = (P.paragraphs||[]).map(p=>p.en).filter(Boolean);
+  if(!texts.length) return;
+  if(!VOICE) pickVoice();
+  speaking=true; if(btn) btn.textContent='⏹ 停止朗读';
+  let last=null;
+  texts.forEach((t,i)=>{
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    if(i===texts.length-1) last=u;
+    speechSynthesis.speak(u);
+  });
+  if(last) last.onend=()=>{ speaking=false; if(btn) btn.textContent='🔊 朗读全文'; };
+}
+function renderPassage(){
+  const el = document.getElementById('passage');
+  const P = G.passage; if(!P){ el.style.display='none'; return; }
+  const paras = (P.paragraphs||[]).map(p=>{
+    let en = p.en||'';
+    // 高亮关键词（p.kws 或自动匹配词表词）
+    const kws = p.kws || [];
+    kws.forEach(k=>{ en = en.replace(new RegExp('('+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'), '<span class="kw" onclick="say(\'$1\')">$1</span>'); });
+    return `<p><div class="en">${en}</div>${p.zh?`<div class="zh">${p.zh}</div>`:''}</p>`;
+  }).join('');
+  el.innerHTML = `<div class="passage"><h2>📖 精读原文</h2>
+    <div class="p-title">${P.title||''} <button class="readall" onclick="sayPassage(this)">🔊 朗读全文</button></div>
+    ${paras}</div>`;
+}
+const ROLECOLOR = { '主语':'#2f8f83','谓语':'#c1662f','宾语':'#3a7bd5','状语':'#6a52a8','定语':'#b0603f','补语':'#c1662f','从句':'#8c8072','连词':'#8c8072','介词':'#8c8072','插入语':'#8c8072','同位语':'#b0603f' };
+function roleColor(r){ return ROLECOLOR[r] || '#6a52a8'; }
+function escAttr(s){ return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+// 句子内括号标注：介词短语 ( ) · 从句 [ ] · 非谓语 { }
+const BRK = {'pp':['(',')'], 'cl':['[',']'], 'nf':['{','}']};
+const BRKC = {'pp':'#6a52a8', 'cl':'#3a7bd5', 'nf':'#b0603f'};
+function renderFlow(s){
+  let html='';
+  (s.flow||[]).forEach(it=>{
+    if(it.open){ const k=it.open; html+=`<span class="brkbox" style="background:${BRKC[k]}16;border-bottom:2px solid ${BRKC[k]}66"><b class="brk" style="color:${BRKC[k]}">${BRK[k][0]}</b>`; }
+    else if(it.close){ const k=it.close; html+=`<b class="brk" style="color:${BRKC[k]}">${BRK[k][1]}</b></span>`; }
+    else { html+=escAttr(it.t); }
+  });
+  return html;
+}
+function renderSents(){
+  const el = document.getElementById('sents');
+  const S = G.sentences; if(!S || !S.length){ el.style.display='none'; return; }
+  const items = S.map((s,i)=>{
+    const flowHtml = (s.flow && s.flow.length) ? renderFlow(s) : escAttr(s.en);
+    const parts = (s.parts||[]).map(p=>{
+      const c = roleColor(p.r);
+      return `<span class="spart" style="background:${c}18;border:1px solid ${c}55">
+        <span class="st" style="color:${c}">${escAttr(p.t)}</span>
+        <span class="sr" style="background:${c}">${p.r}</span>
+        ${p.n?`<span class="sn">${p.n}</span>`:''}</span>`;
+    }).join('');
+    return `<div class="sent">
+      <div class="s-flow" data-en="${escAttr(s.en)}" onclick="say(this.dataset.en)" title="点句子朗读">${flowHtml} <button class="say-mini" data-en="${escAttr(s.en)}" onclick="event.stopPropagation();say(this.dataset.en)" title="朗读">🔊</button></div>
+      ${s.zh?`<div class="s-zh">${s.zh}</div>`:''}
+      <div class="s-parts">${parts}</div>
+      ${s.note?`<div class="snotes">${s.note}</div>`:''}</div>`;
+  }).join('');
+  el.innerHTML = `<div class="sents"><h2>🔍 长难句 · 句法分析</h2>
+    <div class="s-sub">点英文句可朗读 · 括号标注：<b style="color:#6a52a8">( ) 介词短语</b> · <b style="color:#3a7bd5">[ ] 从句</b> · <b style="color:#b0603f">{ } 非谓语动词</b> · 下方色块=成分功能</div>
+    ${items}</div>`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderPassage(); renderSents(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

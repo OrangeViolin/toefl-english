@@ -1,0 +1,2552 @@
+{
+  "id": "ch",
+  "combo": "ch·tch·ture",
+  "title": "/tʃ/ 塞擦音家族",
+  "sound": "/tʃ/",
+  "subtitle": "ch 是主力，tch 守短元音，-ture/-tu- 里的 t 也悄悄变塞擦",
+  "intro": "/tʃ/ 是英语里的塞擦音——气流先被舌面堵住，再猛地冲出，像拍一下桌子。它藏在三条拼写路径里：① 最常见的 ch（chair、church、cheap），出现在词首、词中、词尾，几乎没有负担；② 短元音后用 tch（watch、catch、kitchen），规律极稳——凡是 /ætʃ/、/ɪtʃ/、/ʊtʃ/ 之前的单元音，几乎都用 tch 而非 ch；③ -ture、-tion（少数）、-tu- 里的字母 t 也读 /tʃ/（nature、picture、question），这是英语口语连读同化的结果，书写上看不出来，但发音一贯稳定。把这三条路一次摸清，/tʃ/ 家族的词再没有读错或拼错的理由。",
+  "subgroups": [
+    {
+      "key": "ch",
+      "tag": "ch → /tʃ/",
+      "label": "✅ ch = /tʃ/",
+      "desc": "chair/church/teach/child"
+    },
+    {
+      "key": "tch",
+      "tag": "tch → /tʃ/（短元音后）",
+      "label": "tch = /tʃ/",
+      "desc": "watch/catch/match/kitchen"
+    },
+    {
+      "key": "ture",
+      "tag": "t → /tʃ/（-ture/-tu-）",
+      "label": "-ture = /tʃ/",
+      "desc": "nature/picture/future/question"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-atch (/ætʃ/)",
+      "words": [
+        "catch",
+        "match",
+        "scratch",
+        "attach",
+        "snatch"
+      ]
+    },
+    {
+      "label": "-itch / -itch (/ɪtʃ/)",
+      "words": [
+        "switch",
+        "stretch",
+        "kitchen",
+        "ditch",
+        "pitch"
+      ]
+    },
+    {
+      "label": "-each / -urch (/iːtʃ/ /ɜːrtʃ/)",
+      "words": [
+        "teach",
+        "reach",
+        "beach",
+        "church",
+        "search"
+      ]
+    },
+    {
+      "label": "-ture (/tʃər/)",
+      "words": [
+        "nature",
+        "culture",
+        "picture",
+        "future",
+        "creature"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "chair",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/tʃeər/",
+      "subgroup": "ch",
+      "meaning": "n. 椅子；（委员会）主席职位  v. 主持（会议）",
+      "etymology": "古法语 chaiere，源自拉丁语 cathedra「座位」（希腊语借词），与 cathedral（大教堂，主教的座位所在地）同根。",
+      "roots": [
+        {
+          "part": "chair（cathedra）",
+          "meaning": "座位"
+        }
+      ],
+      "phonetics": "ch /tʃ/ + air /eər/；/tʃ/ 是本页音位锚定词，先学它再往下走。",
+      "tip": "chair 作「主席」时，chairman 是传统说法，现代中性用 chair 或 chairperson。",
+      "examples": [
+        {
+          "en": "She pulled up a chair and sat down across from me.",
+          "zh": "她拉了把椅子，坐到我对面。",
+          "source": "造句"
+        },
+        {
+          "en": "He was elected chair of the committee.",
+          "zh": "他当选委员会主席。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "seat",
+          "ipa": "/siːt/",
+          "note": "泛指任何可坐的位置，比 chair 更宽泛；take a seat（请坐）",
+          "gloss": "座位，任何可坐的位置"
+        },
+        {
+          "w": "head",
+          "ipa": "/hed/",
+          "note": "「主席/负责人」义的口语替代，head of the committee（委员会主席）",
+          "gloss": "头；负责人，首长"
+        },
+        {
+          "w": "preside",
+          "ipa": "/prɪˈzaɪd/",
+          "note": "动词「主持」，比 chair（v.）更正式；preside over a meeting（主持会议）",
+          "gloss": "主持，掌管（正式）"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "chair 作动词「主持」比 preside 更口语、更现代；host 侧重「接待/做东」，chair 侧重「掌控议程和发言权」。",
+      "core": "四条腿撑起一个座位、让人「坐稳」的支撑感——物理的椅子、委员会的主席位、主持掌控，全都是「坐上去、稳住局面」这一根。",
+      "senses": [
+        {
+          "gloss": "n. 椅子（坐具）",
+          "logic": "最直接的本义：有腿有靠背、供人坐的家具",
+          "en": "She pulled up a chair and sat down across from me.",
+          "zh": "她拉了把椅子，坐到我对面。"
+        },
+        {
+          "gloss": "n. 主席职位（委员会/组织中的领导位置）",
+          "logic": "「坐上主位」：坐椅子的人拥有话语权和掌控权——从物理的座位升格到组织的位置",
+          "en": "He was elected chair of the committee.",
+          "zh": "他当选委员会主席。"
+        },
+        {
+          "gloss": "v. 主持（会议）",
+          "logic": "「坐上去掌控」：坐在主位上引导议程、掌握发言权",
+          "en": "She chaired the annual conference with confidence and humor.",
+          "zh": "她自信而幽默地主持了年度大会。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "chairman",
+          "gloss": "主席（传统说法，现倾向中性替代）"
+        },
+        {
+          "w": "armchair",
+          "gloss": "扶手椅；（比喻）纸上谈兵的，不参与实际行动的"
+        }
+      ]
+    },
+    {
+      "word": "church",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/tʃɜːrtʃ/",
+      "subgroup": "ch",
+      "meaning": "n. 教堂；（基督教）教会；礼拜仪式",
+      "etymology": "古英语 cirice，源自希腊语 kurikon（主之所）= kurios（主）+ -ikon（属于……的）。ch 在词首和词尾各出现一次，都读 /tʃ/。",
+      "roots": [
+        {
+          "part": "church（kurikon）",
+          "meaning": "主之所、上帝之屋"
+        }
+      ],
+      "phonetics": "ch /tʃ/ + ur /ɜːr/ + ch /tʃ/——词首词尾都是 /tʃ/，是展示本音位对称的最好例子。",
+      "examples": [
+        {
+          "en": "They got married in a small stone church in the countryside.",
+          "zh": "他们在乡间一座小石砌教堂结婚。",
+          "source": "造句"
+        },
+        {
+          "en": "go to church",
+          "zh": "「去做礼拜」——不加冠词，表示参加宗教仪式，区别于 go to the church（去那座教堂建筑）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "cathedral",
+          "ipa": "/kəˈθiːdrəl/",
+          "note": "大教堂，是主教的主座堂，规格高于普通 church",
+          "gloss": "大教堂，主教的主座堂"
+        },
+        {
+          "w": "chapel",
+          "ipa": "/ˈtʃæpəl/",
+          "note": "小礼拜堂，可附属于学校或医院，比 church 规模小",
+          "gloss": "小礼拜堂，比 church 规模小"
+        },
+        {
+          "w": "congregation",
+          "ipa": "/ˌkɒŋɡrɪˈɡeɪʃn/",
+          "note": "教会会众（集体），指人而非建筑",
+          "gloss": "教会会众（集体），指人而非建筑"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "church 最通用（建筑+机构+仪式三义）；cathedral 专指有主教宝座的大堂；chapel 是更小型、更私密的礼拜场所。",
+      "core": "一群人聚集在庄严空间里、共同仰望更高存在的归属感——石砌的教堂建筑、信仰者的社群、礼拜的仪式，全在「聚集敬拜」这一根。",
+      "senses": [
+        {
+          "gloss": "n. 教堂（建筑）",
+          "logic": "最直接的本义：基督教的礼拜建筑，通常有尖塔和十字架",
+          "en": "They got married in a small stone church in the countryside.",
+          "zh": "他们在乡间一座小石砌教堂结了婚。"
+        },
+        {
+          "gloss": "n. 教会（机构/社群）",
+          "logic": "「聚集的人群」：不只是建筑，更是由信徒组成的信仰共同体",
+          "en": "The church has played a vital role in the civil rights movement.",
+          "zh": "教会在民权运动中发挥了至关重要的作用。"
+        },
+        {
+          "gloss": "n. 礼拜仪式（活动）",
+          "logic": "「聚集做礼拜」的动作和过程——go to church 不加冠词即此义",
+          "en": "Church starts at ten o'clock on Sunday mornings.",
+          "zh": "主日礼拜上午十点开始。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "cathedral",
+          "gloss": "大教堂（主教座堂，规格高于普通教堂）"
+        },
+        {
+          "w": "chapel",
+          "gloss": "小礼拜堂（附属于学校/医院/监狱等）"
+        },
+        {
+          "w": "churchgoer",
+          "gloss": "定期去教堂做礼拜的人"
+        }
+      ]
+    },
+    {
+      "word": "cheap",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/tʃiːp/",
+      "subgroup": "ch",
+      "meaning": "adj. 便宜的；低劣的；小气的  adv. 便宜地",
+      "etymology": "古英语 cēap「交易、买卖」，与 bargain、cope（市场，已废）同根。英国地名 Cheapside（伦敦旧商业街）即「交易地」。",
+      "roots": [
+        {
+          "part": "cheap（cēap）",
+          "meaning": "交易、买卖"
+        }
+      ],
+      "phonetics": "ch /tʃ/ + ea /iː/ + p，与 teach、reach 押尾韵（-each/-eap 同音位）。",
+      "tip": "cheap 有「廉价感」的负面含义，强调物美价廉时用 affordable 或 inexpensive 更中性。",
+      "examples": [
+        {
+          "en": "The food was cheap but surprisingly good.",
+          "zh": "食物便宜，但出乎意料地好吃。",
+          "source": "造句"
+        },
+        {
+          "en": "Don't be so cheap — it's his birthday.",
+          "zh": "别那么小气，今天是他的生日。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "inexpensive",
+          "ipa": "/ˌɪnɪkˈspensɪv/",
+          "note": "「价格不贵」的中性词，无廉价感，比 cheap 更礼貌",
+          "gloss": "价格不贵的（中性，无廉价感）"
+        },
+        {
+          "w": "affordable",
+          "ipa": "/əˈfɔːrdəbl/",
+          "note": "「负担得起的」，强调性价比，带正面含义",
+          "gloss": "负担得起的（正面，强调性价比）"
+        },
+        {
+          "w": "economical",
+          "ipa": "/ˌiːkəˈnɒmɪkl/",
+          "note": "「节省的、经济实惠的」，侧重用最少的钱取得最大效益",
+          "gloss": "节省的，经济实惠的（侧重效率）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "expensive",
+          "note": "昂贵的",
+          "gloss": "昂贵的"
+        },
+        {
+          "w": "costly",
+          "note": "代价高的",
+          "gloss": "代价高的"
+        }
+      ],
+      "nuance": "cheap 含「不值钱/小气/低劣」的负面联想；inexpensive 仅说「价格低」不带贬义；affordable 强调「在能力范围内」，语气最正面；economical 强调节约效率而非单纯便宜。",
+      "core": "价格轻飘飘、东西不值钱的「廉价感」——便宜到让人觉得质量可疑，甚至让人觉得出钱的人「抠门」，核心是「低价值」。",
+      "senses": [
+        {
+          "gloss": "adj. 便宜的（价格低）",
+          "logic": "最直接的本义：花钱少，经济代价低",
+          "en": "The food was cheap but surprisingly delicious.",
+          "zh": "食物便宜，但出人意料地美味。"
+        },
+        {
+          "gloss": "adj. 低劣的（质量差）",
+          "logic": "「不值钱」自然引申为质量低下——便宜往往伴随劣质",
+          "en": "The furniture looked cheap and fell apart within weeks.",
+          "zh": "家具看起来廉价，几周就散架了。"
+        },
+        {
+          "gloss": "adj. 小气的，吝啬的（形容人）",
+          "logic": "「不肯多花钱」：把钱看得太重，不愿付出应有的代价",
+          "en": "Don't be so cheap — it's his birthday, buy him a proper gift.",
+          "zh": "别那么小气——是他生日，买个像样的礼物吧。"
+        },
+        {
+          "gloss": "adv. 便宜地",
+          "logic": "副词化：以低价方式行事",
+          "en": "You can travel surprisingly cheap if you book months ahead.",
+          "zh": "提前几个月订票，旅行花费低得出奇。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "cheapen",
+          "gloss": "使贬值，降低……的身价"
+        },
+        {
+          "w": "cheaply",
+          "gloss": "便宜地；廉价地（副词）"
+        },
+        {
+          "w": "cheapskate",
+          "gloss": "（口语）吝啬鬼，小气的人"
+        }
+      ]
+    },
+    {
+      "word": "child",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/tʃaɪld/",
+      "subgroup": "ch",
+      "meaning": "n. 儿童；子女；某一时代/地方的产物",
+      "etymology": "古英语 cild，复数 children（-ren 是古老复数后缀，类似 brethren）。child of the 60s（六十年代的孩子）是「时代产物」的隐喻义。",
+      "roots": [
+        {
+          "part": "child（cild）",
+          "meaning": "儿童"
+        }
+      ],
+      "phonetics": "ch /tʃ/ + ild /aɪld/，注意复数 children /ˈtʃɪldrən/ 元音变短。",
+      "examples": [
+        {
+          "en": "Every child deserves access to quality education.",
+          "zh": "每个孩子都应该能接受优质教育。",
+          "source": "造句"
+        },
+        {
+          "en": "child labor / child prodigy",
+          "zh": "「童工 / 神童」——两个高频搭配，语义截然相反。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "kid",
+          "ipa": "/kɪd/",
+          "note": "口语「孩子」，比 child 更随意，无正式场合感",
+          "gloss": "孩子（口语，比 child 随意）"
+        },
+        {
+          "w": "offspring",
+          "ipa": "/ˈɒfsprɪŋ/",
+          "note": "正式「后代」，可指人也指动物，比 child 更学术",
+          "gloss": "后代，子女（正式，可指人或动物）"
+        },
+        {
+          "w": "juvenile",
+          "ipa": "/ˈdʒuːvənaɪl/",
+          "note": "法律/正式语境「未成年人」，含法律属性",
+          "gloss": "未成年人（法律/正式语境）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "adult",
+          "note": "成人",
+          "gloss": "成人"
+        },
+        {
+          "w": "parent",
+          "note": "父母",
+          "gloss": "父母"
+        }
+      ],
+      "nuance": "child 最正式且情感中性，kid 口语温暖，offspring 冷静科学（常用于生物学），juvenile 带法律色彩（juvenile delinquent 青少年犯罪者）。",
+      "core": "小而柔软、依赖大人又充满可能性的「嫩芽」——需要保护的小人儿、父母的子女、时代养育出来的人，核心是「从某处生长出来的生命」。",
+      "senses": [
+        {
+          "gloss": "n. 儿童（年龄小的未成年人）",
+          "logic": "最直接的本义：处于发育阶段、尚未成年的小人",
+          "en": "Every child deserves access to quality education.",
+          "zh": "每个孩子都应该能接受优质教育。"
+        },
+        {
+          "gloss": "n. 子女（亲子关系）",
+          "logic": "「父母的孩子」：强调血缘或法律上的亲子关系，不限年龄",
+          "en": "She has three children, all now in their thirties.",
+          "zh": "她有三个孩子，现在都三十多岁了。"
+        },
+        {
+          "gloss": "n. 某时代/地方的产物（比喻义）",
+          "logic": "「被某环境养育出来的人」：时代/地点塑造了这个人的气质",
+          "en": "He was a child of the Great Depression, frugal to the bone.",
+          "zh": "他是大萧条时代的孩子，节俭到了骨子里。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "childhood",
+          "gloss": "童年，儿童时代"
+        },
+        {
+          "w": "childish",
+          "gloss": "幼稚的，孩子气的（带贬义）"
+        },
+        {
+          "w": "childlike",
+          "gloss": "天真的，孩子般纯真的（带褒义）"
+        },
+        {
+          "w": "childbearing",
+          "gloss": "生育，分娩"
+        }
+      ]
+    },
+    {
+      "word": "change",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/tʃeɪndʒ/",
+      "subgroup": "ch",
+      "meaning": "v. 改变；换（车/衣服）；兑换  n. 变化；零钱；换乘",
+      "etymology": "拉丁语 cambiare「交换」，法语借道进入英语。exchange（交换）= ex-(出) + change，含同一词根。",
+      "roots": [
+        {
+          "part": "change（cambiare）",
+          "meaning": "交换、替换"
+        }
+      ],
+      "phonetics": "ch /tʃ/ + ange /eɪndʒ/，与 range、strange 押韵（-ange 韵脚）。",
+      "examples": [
+        {
+          "en": "The weather can change very quickly in the mountains.",
+          "zh": "山里的天气变化很快。",
+          "source": "造句"
+        },
+        {
+          "en": "change trains at Grand Central",
+          "zh": "「在中央车站换乘」——交通义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "alter",
+          "ipa": "/ˈɔːltər/",
+          "note": "「改变（局部/小幅度）」，比 change 更精确，常指调整而非颠覆；alter a plan（调整计划）",
+          "gloss": "改变（小幅调整）"
+        },
+        {
+          "w": "transform",
+          "ipa": "/trænsˈfɔːrm/",
+          "note": "「彻底转变」，比 change 幅度更大；transform the economy（改造经济）",
+          "gloss": "彻底转变（幅度大于 change）"
+        },
+        {
+          "w": "shift",
+          "ipa": "/ʃɪft/",
+          "note": "「转移/转变」，强调方向或重心的移动；a shift in public opinion（公众舆论的转变）",
+          "gloss": "转移，转变（强调方向/重心的移动）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "maintain",
+          "note": "维持不变",
+          "gloss": "维持不变"
+        },
+        {
+          "w": "preserve",
+          "note": "保持、保存",
+          "gloss": "保持、保存"
+        }
+      ],
+      "nuance": "change 最通用，alter 是小幅调整，transform 是根本性转变，shift 强调方向或立场的移动。「change your mind」是「改变主意」，「alter your mind」几乎不用，「transform your thinking」是「彻底改变思维方式」。",
+      "core": "把A换成B、从一种状态切到另一种的「替换」感——改变状态、换乘交通工具、零钱（整换散）、兑换货币，全都是「以B替A」这一动作。",
+      "senses": [
+        {
+          "gloss": "v./n. 改变（状态/形式发生变化）",
+          "logic": "最核心义：从A变成B，不再是原来的样子",
+          "en": "The weather can change very quickly in the mountains.",
+          "zh": "山里的天气变化很快。"
+        },
+        {
+          "gloss": "v. 换（衣服/交通工具/频道）",
+          "logic": "「替换」：把当前使用的换成另一个",
+          "en": "You'll need to change trains at Grand Central.",
+          "zh": "你需要在中央车站换乘。"
+        },
+        {
+          "gloss": "n. 零钱（整钱找零）",
+          "logic": "「整换散」：大额换成小额后找回的差价——也是一种替换",
+          "en": "Here's your change — five dollars and sixty cents.",
+          "zh": "这是找您的零钱——五美元六十美分。"
+        },
+        {
+          "gloss": "v. 兑换（货币）",
+          "logic": "「一种货币换成另一种」",
+          "en": "Where can I change dollars into euros?",
+          "zh": "我在哪里可以把美元换成欧元？"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "exchange",
+          "gloss": "交换，交易；兑换（ex-出+change）"
+        },
+        {
+          "w": "changeless",
+          "gloss": "不变的，恒定的（书面）"
+        },
+        {
+          "w": "changeover",
+          "gloss": "（系统/制度的）转换，过渡"
+        }
+      ]
+    },
+    {
+      "word": "choose",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/tʃuːz/",
+      "subgroup": "ch",
+      "meaning": "v. 选择；决定（做某事）",
+      "etymology": "古英语 cēosan，日耳曼同根，与德语 kiesen（选择，已古化）同源。chose/chosen 是不规则变形。",
+      "roots": [
+        {
+          "part": "choose（cēosan）",
+          "meaning": "选择"
+        }
+      ],
+      "phonetics": "ch /tʃ/ + oose /uːz/；注意 choose/chose/chosen 三态元音轮换：/uː/ → /oʊ/ → /oʊ/。",
+      "examples": [
+        {
+          "en": "You have to choose between comfort and adventure.",
+          "zh": "你必须在舒适和冒险之间做出选择。",
+          "source": "造句"
+        },
+        {
+          "en": "choose to stay silent",
+          "zh": "「选择保持沉默」——接不定式，表示主动决定。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "select",
+          "ipa": "/sɪˈlekt/",
+          "note": "「精挑细选」，比 choose 更正式，暗示从多个选项中仔细筛选；select candidates（筛选候选人）",
+          "gloss": "精选，筛选（比 choose 更正式，有标准地挑）"
+        },
+        {
+          "w": "opt",
+          "ipa": "/ɒpt/",
+          "note": "「选择（某方案）」，比 choose 更简洁，常见于 opt for/opt out；opt for the cheaper option（选较便宜的方案）",
+          "gloss": "选择（某方案），opt for/opt out 的简洁动词"
+        },
+        {
+          "w": "pick",
+          "ipa": "/pɪk/",
+          "note": "最口语的「挑选」，无正式感；pick a card（随手抽一张牌）",
+          "gloss": "挑选（最口语，可以是随手选）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "reject",
+          "note": "拒绝、不选",
+          "gloss": "拒绝、不选"
+        },
+        {
+          "w": "refuse",
+          "note": "拒绝接受",
+          "gloss": "拒绝接受"
+        }
+      ],
+      "nuance": "choose 最通用，含主动判断意志；select 更正式，暗示有标准地筛选（select the best candidate）；opt 偏向「选择某条路/方案」（opt for/opt out）；pick 最随意，可以是随机的。",
+      "core": "在多个选项面前「伸出手挑出一个」的决断感——比选更带主观判断，比挑更正式，核心是在可能性之间做出取舍。",
+      "senses": [
+        {
+          "gloss": "v. 选择，挑选（从多个中取其一）",
+          "logic": "最核心义：在多个可能中做出判断并选定",
+          "en": "You have to choose between comfort and adventure.",
+          "zh": "你必须在舒适和冒险之间做出选择。"
+        },
+        {
+          "gloss": "v. 决定，情愿（做某事，choose to do）",
+          "logic": "「选择做某事」：主观意愿的决定——不是被迫，是主动选",
+          "en": "She chose to stay silent despite the provocation.",
+          "zh": "尽管被激怒，她还是选择了保持沉默。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "choice",
+          "gloss": "选择（名词）；精选的（形容词）"
+        },
+        {
+          "w": "choosy",
+          "gloss": "挑剔的，难讨好的（口语）"
+        },
+        {
+          "w": "handpicked",
+          "gloss": "精心挑选的（hand+pick，与 choose 近义）"
+        }
+      ]
+    },
+    {
+      "word": "lunch",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/lʌntʃ/",
+      "subgroup": "ch",
+      "meaning": "n. 午餐  v. 吃午餐",
+      "etymology": "16世纪源自 luncheon，词源不确定，可能与西班牙语 lonja（薄肉片）或古英语 hlump（一块食物）有关。",
+      "roots": [
+        {
+          "part": "lunch",
+          "meaning": "午餐（词源存争议）"
+        }
+      ],
+      "phonetics": "l + un /ʌn/ + ch /tʃ/；词尾 -nch 是 /ntʃ/ 连缀，注意 n 和 /tʃ/ 连读不分开。",
+      "tip": "「no such thing as a free lunch」（天下没有免费的午餐）是高频经济学谚语。",
+      "examples": [
+        {
+          "en": "Let's grab lunch before the afternoon session.",
+          "zh": "下午场开始前我们去吃个午餐吧。",
+          "source": "造句"
+        },
+        {
+          "en": "working lunch / business lunch",
+          "zh": "「工作午餐 / 商务午餐」——职场高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "midday meal",
+          "note": "正式说法「午餐」，英式英语中较常见",
+          "gloss": "午餐（英式正式说法）"
+        },
+        {
+          "w": "luncheon",
+          "ipa": "/ˈlʌntʃən/",
+          "note": "「午宴」，比 lunch 更正式、更隆重，多用于商务或社交场合",
+          "gloss": "午宴（正式，多用于商务/社交场合）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "breakfast",
+          "note": "早餐",
+          "gloss": "早餐"
+        },
+        {
+          "w": "dinner",
+          "note": "晚餐（或正餐）",
+          "gloss": "晚餐（或正餐）"
+        }
+      ],
+      "nuance": "lunch 是日常中性词；luncheon 是正式午宴（political luncheon）；dinner 在英式英语中可指「正式的主餐」，不一定是晚上——语境决定。",
+      "core": "中午那段停下来吃饭的「间歇」感——一天中间的能量补给站，不是早餐的匆忙也不是晚餐的正式，就是中间那一顿。",
+      "senses": [
+        {
+          "gloss": "n. 午餐（正午前后的餐食）",
+          "logic": "最直接的本义：一天中间的那顿饭",
+          "en": "Let's grab lunch before the afternoon session.",
+          "zh": "下午场开始前我们去吃个午餐吧。"
+        },
+        {
+          "gloss": "v. 吃午餐（不及物，较正式）",
+          "logic": "名词动词化：进行午餐这个动作",
+          "en": "We lunched at a small Italian bistro near the office.",
+          "zh": "我们在办公室附近一家小意大利餐馆吃了午餐。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "luncheon",
+          "gloss": "午宴（比 lunch 更正式隆重）"
+        },
+        {
+          "w": "brunch",
+          "gloss": "早午餐（breakfast+lunch，周末常见）"
+        },
+        {
+          "w": "lunchbox",
+          "gloss": "午餐盒，便当盒"
+        }
+      ]
+    },
+    {
+      "word": "rich",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/rɪtʃ/",
+      "subgroup": "ch",
+      "meaning": "adj. 富裕的；丰富的；（食物）油腻浓郁的；（颜色/声音）深厚的",
+      "etymology": "古英语 rīce「强大的、有权的」，日耳曼同根，与德语 reich（帝国/富有）同源。原义「有权力」，后扩展为「有财富」。",
+      "roots": [
+        {
+          "part": "rich（rīce）",
+          "meaning": "有权的、强大的"
+        }
+      ],
+      "phonetics": "r + ich /ɪtʃ/，词尾 -ich 是 /ɪtʃ/；与 which、itch 押韵。注意 ch 在词尾读 /tʃ/ 而非 /k/。",
+      "examples": [
+        {
+          "en": "The soil here is rich in minerals.",
+          "zh": "这里的土壤富含矿物质。",
+          "source": "造句"
+        },
+        {
+          "en": "a rich chocolate cake",
+          "zh": "「浓郁的巧克力蛋糕」——食物义，指口感厚重、奶油脂肪含量高。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "wealthy",
+          "ipa": "/ˈwelθi/",
+          "note": "「富有的」，比 rich 更中性书面，常指持续性的财富",
+          "gloss": "富有的（持续性的财富，比 rich 中性）"
+        },
+        {
+          "w": "affluent",
+          "ipa": "/ˈæfluənt/",
+          "note": "正式「富裕的」，多描述群体或地区；affluent society（富裕社会）",
+          "gloss": "富裕的（正式，多描述群体/地区）"
+        },
+        {
+          "w": "abundant",
+          "ipa": "/əˈbʌndənt/",
+          "note": "「丰富的」义的近义词，比 rich 更书面；abundant resources（丰富的资源）",
+          "gloss": "丰富的（仅指数量多，不含财富义）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "poor",
+          "note": "贫穷的",
+          "gloss": "贫穷的"
+        },
+        {
+          "w": "scarce",
+          "note": "匮乏的（「丰富」义相对）",
+          "gloss": "匮乏的（「丰富」义相对）"
+        }
+      ],
+      "nuance": "rich 最通用，可描述人（富有）、土地（肥沃）、食物（浓郁）、色彩（深沉）；wealthy 专指持续财富；affluent 偏社会学视角；abundant 仅指「数量多」，不含财富义。",
+      "core": "满满当当、溢出容器的「丰裕」感——钱多到用不完、土地肥沃到随便种都长、食物浓郁到一口就满足、色彩深厚到有重量，核心是「多到往外溢」。",
+      "senses": [
+        {
+          "gloss": "adj. 富裕的，有钱的（人）",
+          "logic": "最直接的本义：拥有大量财富，物质资源充足",
+          "en": "The country grew rich from its vast oil reserves.",
+          "zh": "这个国家因丰富的石油储备而变得富裕。"
+        },
+        {
+          "gloss": "adj. 丰富的，富含……的（be rich in）",
+          "logic": "「多到溢出」扩展到非金钱：某物含量极高",
+          "en": "The soil here is rich in minerals and perfect for farming.",
+          "zh": "这里的土壤富含矿物质，非常适合耕作。"
+        },
+        {
+          "gloss": "adj. 油腻浓郁的（食物）",
+          "logic": "食物「内容」太多——奶油、黄油、糖分量十足，口感厚重",
+          "en": "The chocolate cake was so rich I could only finish half a slice.",
+          "zh": "巧克力蛋糕太浓郁了，我连一片都吃不完。"
+        },
+        {
+          "gloss": "adj. 深厚的，饱满的（颜色/声音/气味）",
+          "logic": "感官上的「满」：颜色深而不飘、声音浑厚有共鸣、气味浓烈持久",
+          "en": "Her voice was deep and rich, filling the entire concert hall.",
+          "zh": "她的嗓音深沉饱满，充满整个音乐厅。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "richness",
+          "gloss": "丰富，富饶，浓郁（名词）"
+        },
+        {
+          "w": "enrich",
+          "gloss": "使丰富，充实，使富裕（en-使动）"
+        },
+        {
+          "w": "riches",
+          "gloss": "财富，财宝（名词复数，文学用语）"
+        }
+      ]
+    },
+    {
+      "word": "beach",
+      "hl": "ch",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/biːtʃ/",
+      "subgroup": "ch",
+      "meaning": "n. 海滩，沙滩  v. 使（船）搁浅；（海豚等）搁浅",
+      "etymology": "16世纪英语，可能源自古英语 bæce「小溪」或古斯堪的纳维亚语。beach 作动词「使搁浅」是从名词转化：船被推上了沙滩。",
+      "roots": [
+        {
+          "part": "beach",
+          "meaning": "沙滩（词源存争议）"
+        }
+      ],
+      "phonetics": "b + ea /iː/ + ch /tʃ/，与 teach、reach 押韵（-each 韵脚）。",
+      "tip": "beached whale（搁浅的鲸）既是字面义，也是口语「累瘫在沙发上的人」的幽默比喻。",
+      "examples": [
+        {
+          "en": "Volunteers worked through the night to save the beached dolphins.",
+          "zh": "志愿者通宵工作，救助搁浅的海豚。",
+          "source": "造句"
+        },
+        {
+          "en": "on the beach / hit the beach",
+          "zh": "「在海滩上 / 去海滩」——日常和军事两种语境都高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "shore",
+          "ipa": "/ʃɔːr/",
+          "note": "「海岸线」，比 beach 更宽泛，可指沙滩也可指岩石海岸",
+          "gloss": "海岸线（比 beach 宽泛，可含岩石海岸）"
+        },
+        {
+          "w": "coast",
+          "ipa": "/koʊst/",
+          "note": "「海岸/沿海地区」，多指大范围地理概念，比 beach 更宏观",
+          "gloss": "海岸，沿海地区（大范围地理概念）"
+        },
+        {
+          "w": "strand",
+          "ipa": "/strænd/",
+          "note": "文学/诗歌中的「海滩」，比 beach 更古雅",
+          "gloss": "海滩（文学/诗歌用语，现代口语少用）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "inland",
+          "note": "内陆",
+          "gloss": "内陆"
+        },
+        {
+          "w": "open sea",
+          "note": "公海、远洋",
+          "gloss": "公海、远洋"
+        }
+      ],
+      "nuance": "beach 特指有沙（或砾石）、适合游泳的海滩；shore 是泛指的海陆交界线（rocky shore 岩石海岸）；coast 是地理大范围的沿海地带（the Pacific coast）；strand 是文学用词，现代口语几乎不用。",
+      "core": "陆地和海洋交界的那条「沙砾边缘」——人可以赤脚踩、浪花反复冲刷、船不小心就会搁浅的过渡地带，核心是「水陆之间的柔软边界」。",
+      "senses": [
+        {
+          "gloss": "n. 海滩，沙滩（水陆交界处）",
+          "logic": "最直接的本义：沙或砾石铺就的、水陆相接的区域",
+          "en": "We spent the entire afternoon lying on the beach.",
+          "zh": "我们在海滩上躺了一整个下午。"
+        },
+        {
+          "gloss": "v. 使（船）搁浅；使（鲸/海豚）冲上岸",
+          "logic": "「推到沙滩上」：船或海洋动物被水冲上沙滩、无法返回水中",
+          "en": "Rescuers worked through the night to save the beached whales.",
+          "zh": "救援人员通宵工作，救助搁浅的鲸鱼。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "beachfront",
+          "gloss": "海滨的，面朝海滩的（形容词/名词）"
+        },
+        {
+          "w": "beachcomber",
+          "gloss": "海滩拾荒者；海滨流浪者"
+        },
+        {
+          "w": "beachhead",
+          "gloss": "滩头阵地（军事）；立足点（比喻）"
+        }
+      ]
+    },
+    {
+      "word": "much",
+      "hl": "ch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/mʌtʃ/",
+      "subgroup": "ch",
+      "meaning": "det./pron. 大量的（不可数名词）  adv. 很，非常；大多",
+      "etymology": "中古英语 muche，源自古英语 mycel「大的」，日耳曼同根，与德语 manch（许多）远亲。",
+      "roots": [
+        {
+          "part": "much（mycel）",
+          "meaning": "大的、多的"
+        }
+      ],
+      "phonetics": "m + u /ʌ/ + ch /tʃ/，-uch 是 /ʌtʃ/；此处 ch 在短元音后，但历史上 much 并非由 tch 拼写——它是早期固化的拼写，不遵守现代 tch 规律。",
+      "tip": "much 修饰不可数名词（much water），many 修饰可数名词（many bottles）；两者都用于否定和疑问，肯定句口语改用 a lot of。",
+      "examples": [
+        {
+          "en": "There isn't much time left before the deadline.",
+          "zh": "截止日期前没剩多少时间了。",
+          "source": "造句"
+        },
+        {
+          "en": "as much as possible / too much",
+          "zh": "「尽可能多 / 太多」——两个高频副词短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "a great deal of",
+          "note": "书面「大量的（不可数）」，比 much 更正式；a great deal of effort（大量精力）",
+          "gloss": "大量的（不可数名词前，比 much 正式）"
+        },
+        {
+          "w": "plenty of",
+          "note": "口语「大量的」，比 much 语气轻松；plenty of time（充足的时间）",
+          "gloss": "充足的，大量的（口语，语气轻松）"
+        },
+        {
+          "w": "considerably",
+          "ipa": "/kənˈsɪdərəbli/",
+          "note": "副词「相当地/大幅度地」，比 much（副词）更正式书面；considerably better（好得多）",
+          "gloss": "相当地，大幅度地（副词，正式书面）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "little",
+          "note": "（不可数名词前）少量的",
+          "gloss": "（不可数名词前）少量的"
+        },
+        {
+          "w": "barely any",
+          "note": "几乎没有",
+          "gloss": "几乎没有"
+        }
+      ],
+      "nuance": "much 在肯定陈述句中显得过于正式（口语倾向 a lot of）；在否定（not much）和比较（much better）中是绝对高频的自然用法。",
+      "core": "数量大到让人「哇」一声的满溢感——不可数的「多」、程度上的「很」，核心是「量大到超出一般」。",
+      "senses": [
+        {
+          "gloss": "det./pron. 大量的，许多（修饰不可数名词）",
+          "logic": "最核心义：数量大，用于不可数的事物（水、时间、金钱等）",
+          "en": "There isn't much time left before the deadline.",
+          "zh": "截止日期前没剩多少时间了。"
+        },
+        {
+          "gloss": "adv. 很，非常（程度副词）",
+          "logic": "「量多」引申为「程度深」：不只是有一点，是很多很多",
+          "en": "I much prefer the original version of the song.",
+          "zh": "我非常偏爱这首歌的原始版本。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "muchness",
+          "gloss": "（口语）大量，许多（much of a muchness=差不多）"
+        },
+        {
+          "w": "overmuch",
+          "gloss": "过多的，过度的（书面/正式）"
+        }
+      ]
+    },
+    {
+      "word": "watch",
+      "hl": "tch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/wɒtʃ/",
+      "subgroup": "tch",
+      "meaning": "v. 观看；注视；当心  n. 手表；值班；监视",
+      "etymology": "古英语 wæccan「守夜、保持清醒」，与 wake（醒来）同根。手表（watch）最初是值夜的「守夜时钟」，后来变成随身携带的计时器。",
+      "roots": [
+        {
+          "part": "watch（wæccan）",
+          "meaning": "守夜、保持清醒"
+        }
+      ],
+      "phonetics": "w + a /ɒ/(英式短音) + tch /tʃ/；短元音 /ɒ/ 后用 tch，是 tch 规律的标准示范词。",
+      "examples": [
+        {
+          "en": "Watch your step on the icy pavement.",
+          "zh": "在结冰的路面上小心脚下。",
+          "source": "造句"
+        },
+        {
+          "en": "keep watch / on the watch for",
+          "zh": "「值班警戒 / 留心……」——名词义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "observe",
+          "ipa": "/əbˈzɜːrv/",
+          "note": "「观察」，比 watch 更正式，强调有目的的注意；observe an experiment（观察实验）",
+          "gloss": "观察（比 watch 更正式，有目的地注意）"
+        },
+        {
+          "w": "monitor",
+          "ipa": "/ˈmɒnɪtər/",
+          "note": "「监测/监控」，强调持续追踪变化；monitor vital signs（监测生命体征）",
+          "gloss": "监测，监控（持续追踪变化/数据）"
+        },
+        {
+          "w": "guard",
+          "ipa": "/ɡɑːrd/",
+          "note": "「看守」，强调防止危险或逃跑；guard the prisoner（看押囚犯）",
+          "gloss": "看守，保卫（防御性，防止危险或逃跑）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ignore",
+          "note": "忽视",
+          "gloss": "忽视"
+        },
+        {
+          "w": "neglect",
+          "note": "疏忽",
+          "gloss": "疏忽"
+        }
+      ],
+      "nuance": "watch 强调有意识地持续注视（watch a game），observe 更学术性，monitor 强调系统性追踪数据或状态，guard 侧重防御性看守。",
+      "core": "持续睁着眼、不放松地「盯着」的警觉感——看比赛（盯着场上）、守夜（盯着黑暗）、手表（替你盯着时间）、当心（盯着危险），核心是「盯住不放」。",
+      "senses": [
+        {
+          "gloss": "v. 观看，注视（持续性地看）",
+          "logic": "核心义：有意识地、持续地把视线放在某物上",
+          "en": "They sat on the porch and watched the sunset together.",
+          "zh": "他们坐在门廊上一起看日落。"
+        },
+        {
+          "gloss": "v. 当心，留心（watch out / watch your step）",
+          "logic": "「盯着危险看」：保持警觉以防不测",
+          "en": "Watch your step on the icy pavement.",
+          "zh": "在结冰的路面上小心脚下。"
+        },
+        {
+          "gloss": "n. 手表（戴在手腕上的计时器）",
+          "logic": "「替你盯着时间的工具」：最初是守夜人用的计时装置，后缩小为腕表",
+          "en": "He glanced at his watch and realized he was late.",
+          "zh": "他瞥了一眼手表，意识到自己迟到了。"
+        },
+        {
+          "gloss": "n. 值班，看守，监视",
+          "logic": "「盯守」的名词化：一段持续监视的时间或行为",
+          "en": "The soldiers kept watch through the night.",
+          "zh": "士兵们通宵值守。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "watchful",
+          "gloss": "警惕的，留心的（形容词）"
+        },
+        {
+          "w": "watchdog",
+          "gloss": "看门狗；监察机构（比喻）"
+        },
+        {
+          "w": "watchtower",
+          "gloss": "瞭望塔，岗楼"
+        }
+      ]
+    },
+    {
+      "word": "catch",
+      "hl": "tch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/kætʃ/",
+      "subgroup": "tch",
+      "meaning": "v. 抓住；赶上（交通工具）；感染（疾病）；理解  n. 捕获量；暗中的难点",
+      "etymology": "古法语 cachier「追逐」，拉丁语 captiare（捕捉）→ captare → capture 同根家族。catch 经法语借道，与 capture 是远亲。",
+      "roots": [
+        {
+          "part": "catch（captiare）",
+          "meaning": "追逐、捕捉"
+        }
+      ],
+      "phonetics": "c + a /æ/ + tch /tʃ/；短元音 /æ/ 后用 tch，规律完全符合。",
+      "tip": "「There's a catch」（有个陷阱/隐患）——名词义「暗中的难点」是商务谈判和日常对话的高频表达。",
+      "examples": [
+        {
+          "en": "She managed to catch the last train home.",
+          "zh": "她设法赶上了最后一班回家的火车。",
+          "source": "造句"
+        },
+        {
+          "en": "catch a cold / catch fire",
+          "zh": "「感冒 / 着火」——两个固化搭配，不能替换动词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "grab",
+          "ipa": "/ɡræb/",
+          "note": "「抓住」，比 catch 更强调突然用力，不含「追赶后得到」的含义",
+          "gloss": "抓住（突然用力，不含「追赶后得到」的含义）"
+        },
+        {
+          "w": "intercept",
+          "ipa": "/ˌɪntəˈsept/",
+          "note": "「拦截」，比 catch 更正式，多用于通信、球场或军事",
+          "gloss": "拦截（正式，多用于通信/球场/军事）"
+        },
+        {
+          "w": "contract",
+          "ipa": "/kənˈtrækt/",
+          "note": "「感染（疾病）」义的正式词，比 catch a disease 更书面",
+          "gloss": "感染（疾病），比 catch 更正式书面"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "miss",
+          "note": "错过（赶不上/接不到）",
+          "gloss": "错过（赶不上/接不到）"
+        },
+        {
+          "w": "release",
+          "note": "放开、放走",
+          "gloss": "放开、放走"
+        }
+      ],
+      "nuance": "catch 的核心义是「在运动中截取」——抓住飞来的球、赶上行驶的车、在疾病传播中中招。grab 是静止状态的突然抓取；intercept 是有意识地阻断传递路径。",
+      "core": "在运动中「截住」、不让目标跑掉的捕捉感——抓飞来的球、赶上即将开走的车、在半路感染病毒、心里「抓住」别人的话（听懂），核心是「在半道上截获」。",
+      "senses": [
+        {
+          "gloss": "v. 抓住，接住（运动中的物体）",
+          "logic": "最核心义：在物体移动的路径上截住它",
+          "en": "She threw the keys and he caught them with one hand.",
+          "zh": "她扔出钥匙，他单手接住了。"
+        },
+        {
+          "gloss": "v. 赶上（交通工具/机会）",
+          "logic": "「在开走前截住」：在交通工具出发前那一刻到达",
+          "en": "She managed to catch the last train home.",
+          "zh": "她设法赶上了最后一班回家的火车。"
+        },
+        {
+          "gloss": "v. 感染（疾病）",
+          "logic": "「被病毒在半路截住」：在传播路径上被感染——catch a cold 是固化搭配",
+          "en": "I caught a nasty cold from my coworker last week.",
+          "zh": "上周我被同事传染了重感冒。"
+        },
+        {
+          "gloss": "v. 听到，理解，领会（catch what sb said）",
+          "logic": "「耳朵截住声音→脑子截住意思」：在话语流过时抓住含义",
+          "en": "Sorry, I didn't catch your name — could you repeat it?",
+          "zh": "抱歉，我没听清你的名字——能再说一遍吗？"
+        },
+        {
+          "gloss": "n. 暗中的难点，陷阱（There's a catch）",
+          "logic": "「藏在暗处等着截住你的东西」：表面看起来好，但有隐藏条件",
+          "en": "The offer sounds too good — there must be a catch somewhere.",
+          "zh": "这个报价好得不真实——肯定有猫腻。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "catchy",
+          "gloss": "（曲调）易记的，上口的（「抓住耳朵的」）"
+        },
+        {
+          "w": "catchphrase",
+          "gloss": "口头禅，流行语（「被大家抓住反复说的句子」）"
+        },
+        {
+          "w": "catch-22",
+          "gloss": "进退两难的困境（源自小说《第二十二条军规》）"
+        }
+      ]
+    },
+    {
+      "word": "match",
+      "hl": "tch",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/mætʃ/",
+      "subgroup": "tch",
+      "meaning": "n. 比赛；火柴；匹配的人/物  v. 匹配；比得上；使相称",
+      "etymology": "古英语 mæcca「伴侣、同伴」，「和……配对」→ 比赛（对等的竞争）→ 火柴（配对的工具）。三义都源于「对等、配对」核心。",
+      "roots": [
+        {
+          "part": "match（mæcca）",
+          "meaning": "伴侣、对等物"
+        }
+      ],
+      "phonetics": "m + a /æ/ + tch /tʃ/；与 catch、scratch 同是短元音 /æ/ + tch 模式。",
+      "examples": [
+        {
+          "en": "The colors of your tie match your shirt perfectly.",
+          "zh": "你领带的颜色和衬衫完美搭配。",
+          "source": "造句"
+        },
+        {
+          "en": "no match for",
+          "zh": "「不是……的对手」——比较义高频短语：She's no match for him（她不是他的对手）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "suit",
+          "ipa": "/suːt/",
+          "note": "「适合、相称」，比 match 更侧重功能上的合适，而非视觉上的一致",
+          "gloss": "适合，相称（侧重功能合适，非视觉一致）"
+        },
+        {
+          "w": "correspond",
+          "ipa": "/ˌkɒrɪˈspɒnd/",
+          "note": "「对应、符合」，比 match 更正式，常用于数据和描述的吻合",
+          "gloss": "对应，符合（正式，多用于数据/描述）"
+        },
+        {
+          "w": "competition",
+          "ipa": "/ˌkɒmpəˈtɪʃn/",
+          "note": "「比赛/竞争」义的近义名词，比 match 更泛，可指长期竞争而非单场",
+          "gloss": "比赛，竞争（比 match 更泛，可指长期竞争）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "clash",
+          "note": "（颜色/风格）不协调；冲突",
+          "gloss": "（颜色/风格）不协调；冲突"
+        },
+        {
+          "w": "mismatch",
+          "note": "不匹配",
+          "gloss": "不匹配"
+        }
+      ],
+      "nuance": "match 强调「相互对应、看起来一致」（colors match）；suit 强调「适合某种需求/场合」（this suits you）；correspond 更正式，偏数据吻合（the figures correspond）。",
+      "core": "两个东西放在一起刚好「对得上」的配对感——比赛（对等的对手较量）、火柴（一根擦燃配一根擦火面）、颜色搭配（视觉上的协调），核心是「对等、相配」。",
+      "senses": [
+        {
+          "gloss": "n. 比赛，竞赛（体育）",
+          "logic": "「对等的双方较量」：两个实力相当的人或队伍对抗",
+          "en": "The tennis match lasted over four hours.",
+          "zh": "这场网球比赛持续了四个多小时。"
+        },
+        {
+          "gloss": "n. 火柴（引火工具）",
+          "logic": "「配对的工具」：一根火柴和擦火面配合才能生火（历史上词义偶合，但可理解为「配对使用」）",
+          "en": "He struck a match and lit the candle.",
+          "zh": "他划了一根火柴，点燃了蜡烛。"
+        },
+        {
+          "gloss": "n. 匹配的人/物，般配",
+          "logic": "「刚好对得上的那一个」：在特质上相互对应的两个个体",
+          "en": "They are a perfect match for each other.",
+          "zh": "他们俩简直是天作之合。"
+        },
+        {
+          "gloss": "v. 匹配，相配，使协调",
+          "logic": "「让两个东西对上」：使双方在视觉或功能上一致",
+          "en": "The colors of your tie match your shirt perfectly.",
+          "zh": "你领带的颜色和衬衫完美搭配。"
+        },
+        {
+          "gloss": "v. 比得上，媲美",
+          "logic": "「达到对方的水平」：能力和对方对等，不输",
+          "en": "No one can match her dedication to the cause.",
+          "zh": "没有人能比得上她对这项事业的投入。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "matchless",
+          "gloss": "无双的，无可匹敌的"
+        },
+        {
+          "w": "mismatch",
+          "gloss": "错配，不匹配（mis-错误+match）"
+        },
+        {
+          "w": "matchmaker",
+          "gloss": "媒人，牵线搭桥的人"
+        }
+      ]
+    },
+    {
+      "word": "switch",
+      "hl": "tch",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/swɪtʃ/",
+      "subgroup": "tch",
+      "meaning": "v. 转换；替换；（电路）接通/断开  n. 开关；转变",
+      "etymology": "16世纪低地德语或荷兰语 swits「细枝、软鞭」，最初指用树枝转换铁路轨道，后扩展为「切换」的通用词。",
+      "roots": [
+        {
+          "part": "switch",
+          "meaning": "细枝（转轨）→ 切换"
+        }
+      ],
+      "phonetics": "sw + i /ɪ/ + tch /tʃ/；短元音 /ɪ/ 后用 tch，符合规律。",
+      "tip": "switch off（关掉电源/注意力）和 switch on（打开）是最高频的搭配，IT 和日常通用。",
+      "examples": [
+        {
+          "en": "She switched careers from law to medicine at the age of thirty.",
+          "zh": "她三十岁时从法律转行到医学。",
+          "source": "造句"
+        },
+        {
+          "en": "switch off / switch on",
+          "zh": "「关掉 / 打开（设备或注意力）」——高频动词短语，既指物理开关也比喻注意力。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "shift",
+          "ipa": "/ʃɪft/",
+          "note": "「转变/转换」，比 switch 更强调方向或重心的移动；shift one's focus（转移注意力）",
+          "gloss": "转移，转变（强调方向/重心的移动）"
+        },
+        {
+          "w": "toggle",
+          "ipa": "/ˈtɒɡl/",
+          "note": "技术语境「切换（两种状态之间）」，比 switch 更专指来回翻转；toggle between apps（在应用之间切换）",
+          "gloss": "切换，来回翻转（技术用语，两种状态间切）"
+        },
+        {
+          "w": "exchange",
+          "ipa": "/ɪksˈtʃeɪndʒ/",
+          "note": "「交换」，强调双方都换，比 switch 更对等；exchange seats（互换座位）",
+          "gloss": "交换（双方互换，比 switch 更对等）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "stick with",
+          "note": "坚持、不换",
+          "gloss": "坚持、不换"
+        },
+        {
+          "w": "maintain",
+          "note": "维持",
+          "gloss": "维持"
+        }
+      ],
+      "nuance": "switch 强调「从 A 切换到 B」，是单向转变（switch from Android to iPhone）；toggle 是两种状态之间来回切换（toggle between modes）；exchange 是双方互换（exchange gifts）。",
+      "core": "啪一下从A跳到B的「切换」感——电灯开关、换工作、转移话题，全都是干脆利落的「从这到那」，没有中间状态，核心是「瞬切」。",
+      "senses": [
+        {
+          "gloss": "n. 开关，电闸",
+          "logic": "最直接的本义：控制电流通断的装置——按下即切换状态",
+          "en": "The light switch is next to the door.",
+          "zh": "电灯开关在门旁边。"
+        },
+        {
+          "gloss": "v. 转换，切换（从A到B）",
+          "logic": "「按下开关」的动作引申：在两个状态/事物之间迅速变换",
+          "en": "She switched careers from law to medicine at the age of thirty.",
+          "zh": "她三十岁时从法律转行到了医学。"
+        },
+        {
+          "gloss": "n. 转变，改变",
+          "logic": "切换的结果：政策、态度或方向的重大改变",
+          "en": "The sudden switch in policy caught everyone off guard.",
+          "zh": "政策的突然转变让所有人都措手不及。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "switchboard",
+          "gloss": "电话总机，交换台"
+        },
+        {
+          "w": "switcher",
+          "gloss": "切换器；频繁转换的人"
+        },
+        {
+          "w": "codeswitch",
+          "gloss": "语码转换（在不同语言/方言间切换）"
+        }
+      ]
+    },
+    {
+      "word": "stretch",
+      "hl": "tch",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/stretʃ/",
+      "subgroup": "tch",
+      "meaning": "v. 伸展；拉伸；延伸；（能力/资源）勉强够用  n. 一段（路程/时间）；伸展",
+      "etymology": "古英语 streccan「伸直」，日耳曼同根，与德语 strecken 同源。stretch one's legs（伸腿/散步）、stretch the truth（夸大事实）是高频引申义。",
+      "roots": [
+        {
+          "part": "stretch（streccan）",
+          "meaning": "伸直、延展"
+        }
+      ],
+      "phonetics": "str + e /e/ + tch /tʃ/；短元音 /e/ 后用 tch，规律一致。str- 连缀注意三辅音连读流畅。",
+      "examples": [
+        {
+          "en": "The road stretches for miles across the desert with no sign of life.",
+          "zh": "这条路穿越沙漠延伸数英里，毫无生机。",
+          "source": "造句"
+        },
+        {
+          "en": "stretch the budget / stretch the truth",
+          "zh": "「让预算勉强够用 / 夸大事实」——两个高频比喻义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "extend",
+          "ipa": "/ɪkˈstend/",
+          "note": "「延伸/延长」，比 stretch 更正式，多用于时间和空间范围；extend the deadline（延长截止日）",
+          "gloss": "延伸，延长（比 stretch 正式，多用于时间/空间）"
+        },
+        {
+          "w": "expand",
+          "ipa": "/ɪkˈspænd/",
+          "note": "「扩展」，强调面积或规模变大，比 stretch 更强调二维扩张",
+          "gloss": "扩展（强调面积/体积变大，二维扩张）"
+        },
+        {
+          "w": "strain",
+          "ipa": "/streɪn/",
+          "note": "「使紧张/拉伤」，stretch 的极端情形，含「超过负荷」的负面含义",
+          "gloss": "拉伤，使紧张（stretch 的极端/负面情形）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "compress",
+          "note": "压缩",
+          "gloss": "压缩"
+        },
+        {
+          "w": "shrink",
+          "note": "收缩",
+          "gloss": "收缩"
+        }
+      ],
+      "nuance": "stretch 强调线性拉长（stretch your arms）或使刚好够用（stretch the budget）；extend 是正式书面的延伸（extend a deadline）；expand 是面积的扩大；strain 是过度拉伸导致损伤。",
+      "core": "拉长、撑开到极限的「延展」感——伸懒腰是身体拉长、道路延伸到天边、预算勉强够用是资源撑到极限，核心是「往外拉到最长」。",
+      "senses": [
+        {
+          "gloss": "v./n. 伸展，拉伸（身体/弹性物）",
+          "logic": "最核心义：使某物沿一个方向变长、变宽",
+          "en": "She stood up to stretch her legs after the long flight.",
+          "zh": "长途飞行后她站起来伸展双腿。"
+        },
+        {
+          "gloss": "v. 延伸，绵延（空间/时间）",
+          "logic": "「拉长」扩展到空间和时间：道路、土地或时段「展开」很远",
+          "en": "The road stretches for miles across the empty desert.",
+          "zh": "这条路穿越空旷的沙漠延伸数英里。"
+        },
+        {
+          "gloss": "v. 使勉强够用，使超出正常限度（stretch the budget/rules）",
+          "logic": "「把资源拉到极限」：预算、能力、规则被用到边界，差一点就断",
+          "en": "We'll have to stretch the budget to cover the extra costs.",
+          "zh": "我们得把预算撑到极限才能覆盖额外开支。"
+        },
+        {
+          "gloss": "n. 一段（路程/时间）",
+          "logic": "「拉出来的一段」：被延展开的一截空间或时间",
+          "en": "The final stretch of the hike was the steepest.",
+          "zh": "徒步最后一段是最陡的。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "stretcher",
+          "gloss": "担架（把人「拉直」抬走的工具）"
+        },
+        {
+          "w": "stretchy",
+          "gloss": "有弹性的，可拉伸的（形容词）"
+        },
+        {
+          "w": "home stretch",
+          "gloss": "最后阶段，冲刺阶段（固定短语）"
+        }
+      ]
+    },
+    {
+      "word": "scratch",
+      "hl": "tch",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/skrætʃ/",
+      "subgroup": "tch",
+      "meaning": "v. 抓；划伤；潦草书写；退出比赛  n. 抓痕；划痕；起点线",
+      "etymology": "中古英语 scratten，日耳曼同根，可能源自 scrape（刮）和 scratch 的混合。from scratch（从头开始）源自赛跑中「起跑线划一道痕迹」。",
+      "roots": [
+        {
+          "part": "scratch",
+          "meaning": "抓划（词源复杂，音义融合）"
+        }
+      ],
+      "phonetics": "scr + a /æ/ + tch /tʃ/；/æ/ 后用 tch，scr- 是三辅音连缀，发音时 s-c-r 连成一气。",
+      "tip": "「start from scratch」（从零开始）和「up to scratch」（达到标准）是两个方向相反的固化表达。",
+      "examples": [
+        {
+          "en": "The cat scratched the back of his hand when he tried to pick it up.",
+          "zh": "他试图抱起猫时，猫抓了他的手背。",
+          "source": "造句"
+        },
+        {
+          "en": "start from scratch / up to scratch",
+          "zh": "「从零开始 / 达到标准（合格）」——两个固化习语，方向相反。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "scrape",
+          "ipa": "/skreɪp/",
+          "note": "「刮、擦」，比 scratch 更强调面接触的摩擦；scrape paint off a wall（刮掉墙上的漆）",
+          "gloss": "刮，擦（面接触的摩擦，非尖端划过）"
+        },
+        {
+          "w": "claw",
+          "ipa": "/klɔː/",
+          "note": "「用爪子抓」，比 scratch 更强调爪子的锐利；the cat clawed the furniture（猫用爪子抓家具）",
+          "gloss": "用爪子抓（强调猛力和锐利）"
+        },
+        {
+          "w": "mark",
+          "ipa": "/mɑːrk/",
+          "note": "「留下痕迹」，结果导向，比 scratch 更中性；mark the surface（在表面留痕）",
+          "gloss": "留下痕迹（结果导向，比 scratch 中性）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "smooth",
+          "note": "抚平、磨光",
+          "gloss": "抚平、磨光"
+        },
+        {
+          "w": "polish",
+          "note": "打磨（去除划痕）",
+          "gloss": "打磨（去除划痕）"
+        }
+      ],
+      "nuance": "scratch 是用尖端或指甲快速划过留下细线（a cat's scratch）；scrape 是用面（刀背/铲子）连续刮除；claw 强调动物爪子的猛力撕抓。「scratch the surface」是「只触及皮毛」的高频比喻。",
+      "core": "尖锐物体快速划过表面、留下一道细痕的「刮擦」感——猫抓人、指甲挠痒、潦草写字、从零开始（起跑线上划的那道痕），核心是「锐器划过，留痕」。",
+      "senses": [
+        {
+          "gloss": "v. 抓，挠（用指甲/爪子）",
+          "logic": "最核心义：用尖锐的东西快速划过表面",
+          "en": "The cat scratched his hand when he tried to pick it up.",
+          "zh": "他想抱起猫时，猫抓伤了他的手。"
+        },
+        {
+          "gloss": "v. 划伤，刮坏（表面留下痕迹）",
+          "logic": "「划过→留下伤痕」：不只是动作，还有可见的损伤结果",
+          "en": "Be careful not to scratch the new table with your keys.",
+          "zh": "小心别用钥匙划花了新桌子。"
+        },
+        {
+          "gloss": "v. 潦草书写（scratch out a note）",
+          "logic": "「笔尖划过纸面」：快速、不工整地写——像用爪子划的一样",
+          "en": "He scratched a quick note on a napkin before leaving.",
+          "zh": "他临走前在餐巾纸上潦草地写了个便条。"
+        },
+        {
+          "gloss": "n./adv. 从零开始（from scratch）",
+          "logic": "「起跑线上划的那道痕」：赛跑用 scratch 标记起点线→回到最开始的标记处→从零做起",
+          "en": "She built the entire business from scratch with no outside funding.",
+          "zh": "她没有任何外部资金，从零开始建起了整个生意。"
+        },
+        {
+          "gloss": "v. 退出（比赛），取消（scratch sb/sth from a list）",
+          "logic": "「把名字划掉」：从名单上「划除」→取消资格或退出",
+          "en": "The defending champion was scratched from the race due to injury.",
+          "zh": "卫冕冠军因伤退出了比赛。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "scratchy",
+          "gloss": "（声音/织物）沙沙的，扎人的"
+        },
+        {
+          "w": "scratchpad",
+          "gloss": "便签本，草稿本"
+        },
+        {
+          "w": "head-scratcher",
+          "gloss": "（口语）令人费解的事，难题"
+        }
+      ]
+    },
+    {
+      "word": "kitchen",
+      "hl": "tch",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈkɪtʃɪn/",
+      "subgroup": "tch",
+      "meaning": "n. 厨房",
+      "etymology": "古英语 cycene，源自拉丁语 coquina「烹调的地方」，与 cook（厨师/烹饪）同根。拉丁语 coquere（烹饪）→ cook，也派生出 cuisine（烹饪）、concoct（调制）。",
+      "roots": [
+        {
+          "part": "kitchen（coquina）",
+          "meaning": "烹调处"
+        }
+      ],
+      "phonetics": "k + i /ɪ/ + tch /tʃ/ + en /ɪn/；短元音 /ɪ/ 后用 tch，规律稳定。-en 是弱读结尾。",
+      "tip": "「If you can't stand the heat, get out of the kitchen」——肯尼迪名言，意指「不能承受压力就别进这个领域」。",
+      "examples": [
+        {
+          "en": "She spent the whole afternoon in the kitchen preparing the feast.",
+          "zh": "她在厨房里花了整个下午准备宴席。",
+          "source": "造句"
+        },
+        {
+          "en": "kitchen cabinet / kitchen sink drama",
+          "zh": "「非正式顾问团 / 写实生活剧」——两个固化用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "galley",
+          "ipa": "/ˈɡæli/",
+          "note": "船或飞机上的「小厨房」，特指狭长型",
+          "gloss": "（船/飞机上的）小厨房，狭长型厨房"
+        },
+        {
+          "w": "scullery",
+          "ipa": "/ˈskʌləri/",
+          "note": "英式「洗碗间/附属厨房」，多见于老式大宅，现代少用",
+          "gloss": "（英式老宅的）洗碗间，附属厨房"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "kitchen 是唯一通用词；galley 专指交通工具里的厨房；cuisine 是对烹饪风格的描述而非场所（French cuisine 法式料理）。",
+      "core": "热气腾腾、锅碗瓢盆叮当响的「做饭的地方」——家的心脏、食物从生变熟的发生地，核心是「烹调的容器」。",
+      "senses": [
+        {
+          "gloss": "n. 厨房（烹饪食物的房间）",
+          "logic": "最直接的本义——没有引申，就是做菜的地方。但这个词的情感密度高：厨房是家的中心。",
+          "en": "She spent the whole afternoon in the kitchen preparing the feast.",
+          "zh": "她花了整个下午在厨房里准备宴席。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "kitchenette",
+          "gloss": "小厨房（公寓/酒店客房内的简易厨房）"
+        },
+        {
+          "w": "kitchenware",
+          "gloss": "厨房用具（锅碗瓢盆等总称）"
+        },
+        {
+          "w": "cook",
+          "gloss": "厨师；烹饪（与 kitchen 同根，拉丁语 coquere）"
+        }
+      ]
+    },
+    {
+      "word": "nature",
+      "hl": "t",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈneɪtʃər/",
+      "subgroup": "ture",
+      "meaning": "n. 自然界；本质，天性；性质，种类",
+      "etymology": "拉丁语 natura = nasci（出生）的派生，「天生的样子」→ 本质→ 自然界。与 native（本地的）、innate（天生的）同根。-ture 里的 t 同化为 /tʃ/。",
+      "roots": [
+        {
+          "part": "nat- (nasci)",
+          "meaning": "出生、天生"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀（结果/状态）"
+        }
+      ],
+      "phonetics": "-ture = /tʃər/；nai- /neɪ/ + ture /tʃər/，/t/ 在 -ture 结构中同化成 /tʃ/，是本页 ture 组的锚定词。",
+      "examples": [
+        {
+          "en": "The documentary explores the relationship between human civilization and nature.",
+          "zh": "这部纪录片探索人类文明与自然界的关系。",
+          "source": "造句"
+        },
+        {
+          "en": "by nature / human nature",
+          "zh": "「天性上 / 人性」——两个高频固化搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "environment",
+          "ipa": "/ɪnˈvaɪrənmənt/",
+          "note": "「环境」，比 nature 更强调周边条件，包含人造环境；natural environment（自然环境）",
+          "gloss": "环境（比 nature 更广，包含人造环境）"
+        },
+        {
+          "w": "essence",
+          "ipa": "/ˈesns/",
+          "note": "「本质/精髓」义的近义词，比 nature（本质义）更抽象、更哲学",
+          "gloss": "本质，精髓（比 nature 更抽象哲学）"
+        },
+        {
+          "w": "character",
+          "ipa": "/ˈkærɪktər/",
+          "note": "「性格/特质」，与 nature（天性义）最近，但 character 更侧重后天形成的性格",
+          "gloss": "性格，特质（侧重后天形成，非天生）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "nurture",
+          "note": "后天培养（nature vs nurture 天性与教养的经典对立）",
+          "gloss": "后天培养（nature vs nurture 天性与教养的经典对立）"
+        },
+        {
+          "w": "artificial",
+          "note": "人工的（自然界义相对）",
+          "gloss": "人工的（自然界义相对）"
+        }
+      ],
+      "nuance": "nature 的「本质」义（the nature of the problem）与 essence 接近，但 nature 更口语；「character」指个性，nature 指天性（先天的倾向）——nature vs nurture 是心理学核心争论。",
+      "core": "事物「天生就是那个样子」的本然感——自然界（未被人手改动的样子）、天性（与生俱来的倾向）、本质（剥离表象后的样子），核心是「出生时就带着的那个底色」。",
+      "senses": [
+        {
+          "gloss": "n. 自然界，大自然（山川河流动植物）",
+          "logic": "「天生存在的世界」：未被人为改造的、本来就有的环境",
+          "en": "The documentary explores the relationship between civilization and nature.",
+          "zh": "这部纪录片探索人类文明与自然界的关系。"
+        },
+        {
+          "gloss": "n. 天性，本性（与生俱来的特质）",
+          "logic": "「人天生带着的东西」：出生时就有的倾向和气质——nature vs nurture 的经典对立即此义",
+          "en": "It's in her nature to help others, even at her own expense.",
+          "zh": "帮助别人是她的天性，哪怕自己吃亏。"
+        },
+        {
+          "gloss": "n. 本质，性质（事物本来的样子）",
+          "logic": "「剥离表象后看到的核心」：不是天生的，而是「从根本上说是什么」",
+          "en": "What exactly is the nature of your relationship with him?",
+          "zh": "你和他到底是什么关系？"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "natural",
+          "gloss": "自然的，天生的（形容词）"
+        },
+        {
+          "w": "naturally",
+          "gloss": "自然地，天然地（副词）"
+        },
+        {
+          "w": "native",
+          "gloss": "本地的，天生的（同根词 nat-出生）"
+        }
+      ]
+    },
+    {
+      "word": "picture",
+      "hl": "t",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈpɪktʃər/",
+      "subgroup": "ture",
+      "meaning": "n. 图片；照片；电影；情形  v. 想象；描述",
+      "etymology": "拉丁语 pictura = pingere（绘画）的名词形式，与 paint（绘画）、depict（描绘）同根。-ture 里的 t 同化为 /tʃ/。",
+      "roots": [
+        {
+          "part": "pict- (pingere)",
+          "meaning": "绘画、描绘"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "pic- /pɪk/ + ture /tʃər/；注意 -ture 整体读 /tʃər/，是 -ture 规律最直观的示范词之一。",
+      "tip": "「get the picture」（明白了）和「the big picture」（大局/全局）是口语高频表达。",
+      "examples": [
+        {
+          "en": "Can you picture yourself living in a foreign country for a year?",
+          "zh": "你能想象自己在异国生活一年是什么感觉吗？",
+          "source": "造句"
+        },
+        {
+          "en": "the big picture / get the picture",
+          "zh": "「大局观 / 明白了（搞清楚状况了）」——两个口语高频比喻。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "image",
+          "ipa": "/ˈɪmɪdʒ/",
+          "note": "「图像/形象」，比 picture 更抽象，可以是心理意象或品牌形象",
+          "gloss": "图像，形象（比 picture 抽象，可指心理意象/品牌形象）"
+        },
+        {
+          "w": "photograph",
+          "ipa": "/ˈfoʊtəɡrɑːf/",
+          "note": "「照片」，比 picture 更特指摄影产生的图像",
+          "gloss": "照片（专指摄影产物）"
+        },
+        {
+          "w": "depict",
+          "ipa": "/dɪˈpɪkt/",
+          "note": "动词「描绘/刻画」，与 picture（v.）同根，比 picture 更正式书面",
+          "gloss": "描绘，刻画（动词，同根词，正式书面）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "abstraction",
+          "note": "抽象（图像相对）",
+          "gloss": "抽象（图像相对）"
+        }
+      ],
+      "nuance": "picture 最通用（照片/图画/电影/想象），image 偏向技术性或象征性图像（brand image 品牌形象），photograph 专指照片，depict 专用于「用艺术/语言描绘」。",
+      "core": "把看到的或想到的东西「定下来变成画面」的呈现感——照片是凝固的瞬间、图画是手绘的呈现、电影是流动的画面、想象是脑海里的画面，核心是「把视觉定下来」。",
+      "senses": [
+        {
+          "gloss": "n. 图片，照片，图画（视觉呈现）",
+          "logic": "最直接的本义：二维的视觉呈现物，可以是画的也可以拍的",
+          "en": "She showed me a picture of her family on her phone.",
+          "zh": "她给我看了手机上一张家人的照片。"
+        },
+        {
+          "gloss": "n. 电影（英式，the pictures）",
+          "logic": "「一幅一幅快速切换的画面」→电影的早期叫法（motion picture 的缩略）",
+          "en": "Let's go to the pictures tonight — there's a new thriller out.",
+          "zh": "今晚上去看电影吧——新出了一部惊悚片。"
+        },
+        {
+          "gloss": "n. 情形，状况（the picture / the big picture）",
+          "logic": "「眼前呈现的全貌」：把局面当作一幅画来看——看清整体",
+          "en": "The report gives a clear picture of the company's financial health.",
+          "zh": "这份报告清晰呈现了公司的财务健康状况。"
+        },
+        {
+          "gloss": "v. 想象，在脑海中描绘",
+          "logic": "「在心里画画」：不借助纸笔，只在头脑里建构视觉画面",
+          "en": "Can you picture yourself living in a foreign country for a year?",
+          "zh": "你能想象自己在异国生活一年是什么感觉吗？"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "picturesque",
+          "gloss": "风景如画的，优美别致的"
+        },
+        {
+          "w": "pictorial",
+          "gloss": "图画的，用图片表示的（形容词）"
+        },
+        {
+          "w": "depict",
+          "gloss": "描绘，刻画（同根词，更正式书面）"
+        }
+      ]
+    },
+    {
+      "word": "culture",
+      "hl": "t",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈkʌltʃər/",
+      "subgroup": "ture",
+      "meaning": "n. 文化；教养；（生物）培养；文明",
+      "etymology": "拉丁语 cultura = colere（耕种、培育）的名词形式，与 agriculture（农业）、cultivate（培养）同根。「耕耘土地」→「耕耘心灵/社会」→ 文化。",
+      "roots": [
+        {
+          "part": "cult- (colere)",
+          "meaning": "耕种、培育"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "cul- /kʌl/ + ture /tʃər/；与 agriculture 的 -culture 后缀发音完全一致。",
+      "examples": [
+        {
+          "en": "Exposure to different cultures broadens your worldview.",
+          "zh": "接触不同文化能拓宽你的世界观。",
+          "source": "造句"
+        },
+        {
+          "en": "popular culture / corporate culture",
+          "zh": "「流行文化 / 企业文化」——两个学术和职场高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "civilization",
+          "ipa": "/ˌsɪvələˈzeɪʃn/",
+          "note": "「文明」，比 culture 更宏观，指发展到高度组织化阶段的文化",
+          "gloss": "文明（比 culture 更宏观，强调组织化程度）"
+        },
+        {
+          "w": "heritage",
+          "ipa": "/ˈherɪtɪdʒ/",
+          "note": "「文化遗产」，强调传承下来的部分；cultural heritage（文化遗产）",
+          "gloss": "文化遗产（强调传承下来的部分）"
+        },
+        {
+          "w": "tradition",
+          "ipa": "/trəˈdɪʃn/",
+          "note": "「传统」，文化的具体表现形式，比 culture 更具体",
+          "gloss": "传统（文化的具体表现形式，比 culture 具体）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ignorance",
+          "note": "无知（教养义相对）",
+          "gloss": "无知（教养义相对）"
+        },
+        {
+          "w": "barbarism",
+          "note": "野蛮（文明义相对）",
+          "gloss": "野蛮（文明义相对）"
+        }
+      ],
+      "nuance": "culture 最宽泛（价值观+行为+艺术的总和），civilization 强调组织化和技术进步，heritage 强调传承，tradition 是具体的习俗行为。",
+      "core": "一群人共同「耕耘」出来的生活方式的集合——从耕田种地到养育心灵到社会文明，核心是「培育」，是人的劳动和时间浇灌出来的东西。",
+      "senses": [
+        {
+          "gloss": "n. 文化，文明（社会的生活方式/价值观/艺术总和）",
+          "logic": "「耕耘社会」的隐喻：一群人长期共同培育出来的精神财富——价值观、习俗、艺术的总和",
+          "en": "Exposure to different cultures broadens your worldview.",
+          "zh": "接触不同文化可以拓宽你的世界观。"
+        },
+        {
+          "gloss": "n. 教养，修养（个人的文化素养）",
+          "logic": "「耕耘个人心灵」：一个人被教育、熏陶后的品味和修养",
+          "en": "A person of culture appreciates art, music, and literature.",
+          "zh": "一个有文化修养的人懂得欣赏艺术、音乐和文学。"
+        },
+        {
+          "gloss": "n. 培养（生物学，细菌/细胞等）",
+          "logic": "「耕耘微生物」——回归拉丁词根 colere（耕种）最字面的用法：在实验室里培育细胞或细菌",
+          "en": "The lab is growing a culture of bacteria for the experiment.",
+          "zh": "实验室正在培养一批细菌用于实验。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "cultural",
+          "gloss": "文化的，与文化相关的（形容词）"
+        },
+        {
+          "w": "cultivate",
+          "gloss": "培养，培育，耕作（同根动词）"
+        },
+        {
+          "w": "agriculture",
+          "gloss": "农业（agri-田地+culture，最字面的「耕地」）"
+        },
+        {
+          "w": "subculture",
+          "gloss": "亚文化（sub-在下+culture）"
+        }
+      ]
+    },
+    {
+      "word": "adventure",
+      "hl": "t",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ədˈventʃər/",
+      "subgroup": "ture",
+      "meaning": "n. 冒险（经历）；冒险精神  v. 冒险去（某地）",
+      "etymology": "拉丁语 adventura = ad-(到) + venire(来) = 「将要来临的事」→ 不可预知的经历 → 冒险。与 event（事件）、venture（风险投资）同根。",
+      "roots": [
+        {
+          "part": "ad-",
+          "meaning": "朝向"
+        },
+        {
+          "part": "vent- (venire)",
+          "meaning": "来，到来"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "重音在中间 ad-VEN-ture；-ture = /tʃər/，venture 和 adventure 词尾发音完全相同。",
+      "examples": [
+        {
+          "en": "The documentary follows three explorers on their adventure through the Amazon.",
+          "zh": "这部纪录片记录了三位探险家穿越亚马孙的冒险旅程。",
+          "source": "造句"
+        },
+        {
+          "en": "adventure tourism / sense of adventure",
+          "zh": "「冒险旅游 / 冒险精神」——高频名词搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "venture",
+          "ipa": "/ˈventʃər/",
+          "note": "「风险投资/冒险尝试」，比 adventure 更强调风险中的主动进取，常见于商业语境",
+          "gloss": "风险投资；冒险尝试（比 adventure 更偏商业/主动进取）"
+        },
+        {
+          "w": "expedition",
+          "ipa": "/ˌekspɪˈdɪʃn/",
+          "note": "「探险队/考察」，比 adventure 更正式，强调有组织有目标的探险",
+          "gloss": "探险队，考察（比 adventure 正式，有组织有目标）"
+        },
+        {
+          "w": "escapade",
+          "ipa": "/ˈeskəpeɪd/",
+          "note": "「冒险/恶作剧」，比 adventure 更带顽皮色彩，常指小型的刺激行为",
+          "gloss": "冒险，恶作剧（比 adventure 更顽皮，小型刺激）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "routine",
+          "note": "日常惯例（冒险义相对）",
+          "gloss": "日常惯例（冒险义相对）"
+        },
+        {
+          "w": "safety",
+          "note": "安全（冒险精神相对）",
+          "gloss": "安全（冒险精神相对）"
+        }
+      ],
+      "nuance": "adventure 强调「经历本身的刺激和不确定性」，expedition 强调「有组织有目标的探索」，venture 偏商业语境的「冒险尝试」，escapade 带轻松顽皮的色彩。",
+      "core": "不知道前方会发生什么的「未知之旅」的刺激感——心跳加速、风险相伴、但结果可能是奇迹，核心是「将要来临的事」带来的不确定和兴奋。",
+      "senses": [
+        {
+          "gloss": "n. 冒险（经历），历险",
+          "logic": "最直接的本义：带有风险和未知的刺激经历——词源「将要来临的事」本身就包含不确定性",
+          "en": "The documentary follows three explorers on their adventure through the Amazon.",
+          "zh": "这部纪录片记录了三位探险家穿越亚马孙的冒险旅程。"
+        },
+        {
+          "gloss": "n. 冒险精神",
+          "logic": "「乐于冒险的品质」：不是具体事件，而是一种人格特质",
+          "en": "A sense of adventure is essential for any entrepreneur.",
+          "zh": "冒险精神对任何创业者来说都是必不可少的。"
+        },
+        {
+          "gloss": "v. 冒险去（某处），敢于尝试",
+          "logic": "名词动词化：带着不确定和勇气进入未知领域",
+          "en": "Few tourists adventure into the northern reaches of the country.",
+          "zh": "很少有游客冒险进入这个国家的北部腹地。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "adventurous",
+          "gloss": "有冒险精神的，爱冒险的（形容词）"
+        },
+        {
+          "w": "adventurer",
+          "gloss": "冒险家，探险者"
+        },
+        {
+          "w": "venture",
+          "gloss": "风险投资；冒险尝试（同根词，更偏商业）"
+        }
+      ]
+    },
+    {
+      "word": "future",
+      "hl": "t",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈfjuːtʃər/",
+      "subgroup": "ture",
+      "meaning": "n. 未来；前途  adj. 将来的",
+      "etymology": "拉丁语 futurus = esse（是）的将来分词，「将要是的状态」→ 未来。与 be 动词的拉丁语形式同根；-ture 里的 t 读 /tʃ/。",
+      "roots": [
+        {
+          "part": "fut- (futurus/esse)",
+          "meaning": "将要存在"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "fu- /fjuː/ + ture /tʃər/；注意 fu- 的 /j/ 滑音不省略（区别于美式口语有时弱化）。",
+      "examples": [
+        {
+          "en": "In the near future, self-driving cars may become commonplace.",
+          "zh": "在不远的将来，自动驾驶汽车可能会变得普遍。",
+          "source": "造句"
+        },
+        {
+          "en": "in the future / for future reference",
+          "zh": "「将来 / 供以后参考」——两个高频介词短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "prospect",
+          "ipa": "/ˈprɒspekt/",
+          "note": "「前景/前途」，比 future 更强调预期的可能性；job prospects（就业前景）",
+          "gloss": "前景，前途（强调预期可能性，如 job prospects）"
+        },
+        {
+          "w": "outlook",
+          "ipa": "/ˈaʊtlʊk/",
+          "note": "「展望/看法」，比 future 更强调从当下向前看的视角；economic outlook（经济展望）",
+          "gloss": "展望，看法（从当下向前看的视角）"
+        },
+        {
+          "w": "destiny",
+          "ipa": "/ˈdestɪni/",
+          "note": "「命运」，比 future 更带宿命论色彩，常用于文学语境",
+          "gloss": "命运（带宿命论色彩，文学用语）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "past",
+          "note": "过去",
+          "gloss": "过去"
+        },
+        {
+          "w": "history",
+          "note": "历史",
+          "gloss": "历史"
+        }
+      ],
+      "nuance": "future 最通用（时间概念+个人前途），prospect 强调可能性和预期（job prospects），outlook 是从现在评估未来走向（positive outlook），destiny 带宿命和不可更改的色彩。",
+      "core": "还没有到来、但一定会来的「前方」的时间感——不是幻想，而是「将要存在」的确定性，是时间河流的下一段，核心是「在前面的那个状态」。",
+      "senses": [
+        {
+          "gloss": "n. 未来，将来（时间概念）",
+          "logic": "最直接的本义：还没有发生但将要到来的时间——源自拉丁语「将要存在」",
+          "en": "In the near future, self-driving cars may become commonplace.",
+          "zh": "在不远的将来，自动驾驶汽车可能会变得普遍。"
+        },
+        {
+          "gloss": "n. 前途，前景（个人的未来）",
+          "logic": "「我的前方」：时间概念投射到个人身上——一个人的发展前景",
+          "en": "She worries constantly about her future after graduation.",
+          "zh": "她总是担心毕业后的前途。"
+        },
+        {
+          "gloss": "adj. 将来的，未来的",
+          "logic": "形容词化：描述属于前方时间的事物",
+          "en": "Future generations will judge us by what we do today.",
+          "zh": "后代将以我们今日的所作所为来评判我们。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "futurism",
+          "gloss": "未来主义（艺术/文学流派）"
+        },
+        {
+          "w": "futuristic",
+          "gloss": "未来派的，超前的（形容词）"
+        },
+        {
+          "w": "futures",
+          "gloss": "期货（金融衍生品，对未来价格的赌注）"
+        }
+      ]
+    },
+    {
+      "word": "creature",
+      "hl": "t",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈkriːtʃər/",
+      "subgroup": "ture",
+      "meaning": "n. 生物，动物；（尤指奇特的）存在；受某人控制的人",
+      "etymology": "拉丁语 creatura = creare（创造）+ -tura，「被创造出来的东西」→ 生物。与 create（创造）、creative（有创意的）同根。",
+      "roots": [
+        {
+          "part": "creat- (creare)",
+          "meaning": "创造"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀（被创造的结果）"
+        }
+      ],
+      "phonetics": "crea- /kriː/ + ture /tʃər/；与 feature、teacher 词尾发音相似（-ture/-cher 都读 /tʃər/）。",
+      "tip": "「creature comforts」（生活基本舒适，如暖气、热水）是一个高频固化词组。",
+      "examples": [
+        {
+          "en": "Deep-sea creatures have evolved remarkable adaptations to survive without sunlight.",
+          "zh": "深海生物进化出了非凡的适应性，得以在没有阳光的环境中生存。",
+          "source": "造句"
+        },
+        {
+          "en": "creature of habit / creature comforts",
+          "zh": "「习惯的动物（一成不变的人） / 基本生活舒适」——两个固化搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "organism",
+          "ipa": "/ˈɔːrɡənɪzm/",
+          "note": "「生物体」，比 creature 更科学、更中性，可指微生物",
+          "gloss": "生物体（比 creature 更科学中性，可指微生物）"
+        },
+        {
+          "w": "being",
+          "ipa": "/ˈbiːɪŋ/",
+          "note": "「存在、生灵」，比 creature 更抽象，常用于哲学或科幻（alien being）",
+          "gloss": "存在，生灵（比 creature 更抽象，哲学/科幻语境）"
+        },
+        {
+          "w": "beast",
+          "ipa": "/biːst/",
+          "note": "「野兽」，比 creature 更强调凶猛或原始；a beast of burden（驮畜）",
+          "gloss": "野兽（比 creature 更强调凶猛/原始）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "creator",
+          "note": "创造者（与「被创造物」相对）",
+          "gloss": "创造者（与「被创造物」相对）"
+        }
+      ],
+      "nuance": "creature 最通用，可指动物或奇特存在（strange creature）；organism 是科学中性词（可指细菌）；being 是最抽象的「存在」（conscious being 有意识的存在）；beast 强调野性或体型粗大。",
+      "core": "被创造出来的、有生命的「存在物」——可以是动物、奇特生物、甚至被某人「造出来」的依附者，核心是「被造之物」，带着对创造者的从属感。",
+      "senses": [
+        {
+          "gloss": "n. 生物，动物（尤指活的生命体）",
+          "logic": "最直接的本义：任何被造出来的活物——从昆虫到人类都是 creature",
+          "en": "Deep-sea creatures have evolved remarkable adaptations to survive without sunlight.",
+          "zh": "深海生物进化出了非凡的适应性，得以在没有阳光的环境中生存。"
+        },
+        {
+          "gloss": "n. （尤指奇特的）存在，家伙",
+          "logic": "「奇怪的被造物」：带情感色彩地描述某个看起来怪异或特别的人/动物",
+          "en": "He was a strange creature — brilliant but utterly unpredictable.",
+          "zh": "他是个奇怪的存在——才华横溢但完全不可预测。"
+        },
+        {
+          "gloss": "n. 受某人控制的人，傀儡",
+          "logic": "「某人的造物」：一个人被另一个人的意志所塑造、控制的贬义用法",
+          "en": "The dictator surrounded himself with creatures who never questioned him.",
+          "zh": "独裁者身边全是些对他唯命是从的傀儡。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "create",
+          "gloss": "创造，创作（同根动词）"
+        },
+        {
+          "w": "creative",
+          "gloss": "有创造力的（形容词）"
+        },
+        {
+          "w": "creator",
+          "gloss": "创造者，创作者（与 creature「被造物」相对）"
+        }
+      ]
+    },
+    {
+      "word": "mixture",
+      "hl": "t",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈmɪkstʃər/",
+      "subgroup": "ture",
+      "meaning": "n. 混合物；混合；（感情）交织",
+      "etymology": "拉丁语 mixtura = miscere（混合）+ -tura，「混合的结果」。与 mix（混合）、miscellaneous（各种各样的）同根。",
+      "roots": [
+        {
+          "part": "mixt- (miscere)",
+          "meaning": "混合"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀（结果）"
+        }
+      ],
+      "phonetics": "mix- /mɪks/ + ture /tʃər/；注意 x /ks/ + t 在拼写上看着像两个音，但 -ture 整体读 /tʃər/，实际是 /mɪkstʃər/。",
+      "examples": [
+        {
+          "en": "The city is a fascinating mixture of ancient tradition and modern innovation.",
+          "zh": "这座城市是古老传统与现代创新令人着迷的混合体。",
+          "source": "造句"
+        },
+        {
+          "en": "a mixture of emotions / baking mixture",
+          "zh": "「复杂的情绪交织 / 烘焙混合料」——抽象义和具体义都高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "blend",
+          "ipa": "/blend/",
+          "note": "「混合/调和」，比 mixture 更强调均匀融合，常用于食物和风格；a blend of styles（风格的融合）",
+          "gloss": "混合，调和（比 mixture 更强调均匀融合）"
+        },
+        {
+          "w": "combination",
+          "ipa": "/ˌkɒmbɪˈneɪʃn/",
+          "note": "「组合」，比 mixture 更强调各部分保持各自特性的组合，比 mixture 更正式",
+          "gloss": "组合（比 mixture 更强调各部分保持独立特性的组合）"
+        },
+        {
+          "w": "compound",
+          "ipa": "/ˈkɒmpaʊnd/",
+          "note": "「化合物/复合物」，化学语境中比 mixture 更精确，指化学结合而非物理混合",
+          "gloss": "化合物，复合物（化学语境，化学结合非物理混合）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "pure substance",
+          "note": "纯物质（化学义相对）",
+          "gloss": "纯物质（化学义相对）"
+        },
+        {
+          "w": "separation",
+          "note": "分离",
+          "gloss": "分离"
+        }
+      ],
+      "nuance": "mixture 各成分可以分离（sand and water mixture），compound 是化学结合无法简单分开（water = H₂O）；blend 强调均匀融合（coffee blend）；combination 强调各部分的协同作用。",
+      "core": "多种东西搅在一起、各自存在又分不开的「混合」感——物理的混合液、情感的爱恨交加、风格的杂糅，核心是「在同一个空间里多种成分并存」。",
+      "senses": [
+        {
+          "gloss": "n. 混合物，混合体（物理/化学）",
+          "logic": "最直接的本义：多种物质物理混合的结果，各成分仍保持自身特性",
+          "en": "The concrete is a mixture of cement, sand, and gravel.",
+          "zh": "混凝土是水泥、沙子和碎石的混合物。"
+        },
+        {
+          "gloss": "n. 混合，交织（抽象，尤指情感/风格）",
+          "logic": "「搅在一起」的抽象化：多种情感、风格或元素在同一事物中共存",
+          "en": "The city is a fascinating mixture of ancient tradition and modern innovation.",
+          "zh": "这座城市是古老传统和现代创新的迷人混合体。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "mix",
+          "gloss": "混合，搅拌（基础动词）"
+        },
+        {
+          "w": "mixer",
+          "gloss": "搅拌机；社交场合（把陌生人「混」在一起）"
+        },
+        {
+          "w": "miscellaneous",
+          "gloss": "各种各样的，混杂的（同根词，形容词）"
+        }
+      ]
+    },
+    {
+      "word": "question",
+      "hl": "t",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈkwestʃən/",
+      "subgroup": "ture",
+      "meaning": "n. 问题；疑问；议题  v. 质疑；审问",
+      "etymology": "拉丁语 quaestio = quaerere（寻求、询问）的名词形式，与 quest（探索）、query（疑问）、inquire（询问）同根。-tion 里的 t 同化为 /tʃ/（-stion 组合特别常见此变化）。",
+      "roots": [
+        {
+          "part": "quest- (quaerere)",
+          "meaning": "寻求、询问"
+        },
+        {
+          "part": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "ques- /kwes/ + tion /tʃən/；-stion = /stʃən/，t 在 -ion 前同化为 /tʃ/，与 -ture 规律同源。注意 -ion 在此不读 /ʃən/ 而是 /tʃən/。",
+      "tip": "question 既可作名词（ask a question）也可作动词「质疑」（question his motives）——动词义更正式、更强烈。",
+      "examples": [
+        {
+          "en": "The report raises serious questions about the safety of the drug.",
+          "zh": "这份报告引发了对该药物安全性的严重质疑。",
+          "source": "造句"
+        },
+        {
+          "en": "out of the question / beyond question",
+          "zh": "「完全不可能 / 毫无疑问」——两个固化短语，含义相反需区分。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "query",
+          "ipa": "/ˈkwɪəri/",
+          "note": "「疑问/询问」，比 question 更正式书面，多用于技术或客服语境；submit a query（提交询问）",
+          "gloss": "疑问，询问（比 question 更正式/技术语境）"
+        },
+        {
+          "w": "inquiry",
+          "ipa": "/ɪnˈkwaɪəri/",
+          "note": "「调查/询问」，比 question 更正式，常指系统性的调查；a public inquiry（公开调查）",
+          "gloss": "调查，询问（比 question 更正式，系统性调查）"
+        },
+        {
+          "w": "issue",
+          "ipa": "/ˈɪʃuː/",
+          "note": "「议题/问题」义的近义词，比 question 更强调有争议性；a key issue（关键议题）",
+          "gloss": "议题，问题（比 question 更强调争议性）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "answer",
+          "note": "答案（问题相对）",
+          "gloss": "答案（问题相对）"
+        },
+        {
+          "w": "certainty",
+          "note": "确定性（疑问义相对）",
+          "gloss": "确定性（疑问义相对）"
+        }
+      ],
+      "nuance": "question 最通用（疑问+议题+质疑），query 更口语轻量（技术/客服询问），inquiry 是正式调查，issue 强调需要讨论和解决的议题（含争议性）。",
+      "core": "心里有一个「问号」需要解答的探求感——提出疑问、质疑某事的真实性、有待讨论的议题，核心是「寻求答案的那个缺口」。",
+      "senses": [
+        {
+          "gloss": "n. 问题，疑问（需要答案的句子）",
+          "logic": "最直接的本义：一个寻求信息或答案的语言行为",
+          "en": "The students were encouraged to ask questions throughout the lecture.",
+          "zh": "讲座全程鼓励学生随时提问。"
+        },
+        {
+          "gloss": "n. 议题，问题（需要讨论/解决的课题）",
+          "logic": "「不只一个问句而是一个领域的问题」：一个待讨论、待解决的事项",
+          "en": "The report raises serious questions about the safety of the drug.",
+          "zh": "这份报告引发了关于该药物安全性的严重质疑。"
+        },
+        {
+          "gloss": "v. 质疑，怀疑（对真实性提出疑问）",
+          "logic": "动词化：不只是问，而是挑战——「你说的是真的吗？」",
+          "en": "No one questioned his authority until the scandal broke.",
+          "zh": "在丑闻爆发前，没人质疑过他的权威。"
+        },
+        {
+          "gloss": "v. 审问，盘问（正式/法律语境）",
+          "logic": "「系统地发问」：警察对嫌疑人、律师对证人的正式询问",
+          "en": "The police questioned the suspect for six hours.",
+          "zh": "警方对嫌疑人进行了六个小时的审问。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "questionable",
+          "gloss": "可疑的，有问题的（形容词）"
+        },
+        {
+          "w": "questionnaire",
+          "gloss": "问卷，调查表"
+        },
+        {
+          "w": "unquestionable",
+          "gloss": "毫无疑问的，无可置疑的"
+        },
+        {
+          "w": "quest",
+          "gloss": "探索，追寻（同根词，quaerere=寻求）"
+        }
+      ]
+    }
+  ]
+}

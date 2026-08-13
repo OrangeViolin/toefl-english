@@ -1,0 +1,1355 @@
+{
+  "id": "n",
+  "combo": "n·nn·kn·gn",
+  "title": "/n/ 齿龈鼻音",
+  "sound": "/n/",
+  "subtitle": "舌尖抵上齿龈，气流从鼻腔穿出——无论几个字母，只有一个 /n/",
+  "intro": "/n/ 是英语中最高频的辅音之一，发音时舌尖抵住上齿龈，软腭下垂打开鼻腔通道，声带振动，气流从鼻腔穿出。最直白的是单字母 n（no、name、nation）和双字母 nn（dinner、announce、innocent）——双写只是强调前一元音为短音，发音仍是一个 /n/。藏得更深的是词首静音组合 kn 和 gn：kn 中的 k 在 17 世纪前还真实发音，knife 的先祖在古英语里读 /knɪf/；gn 则多来自拉丁语借词，g 在英语化过程中悄然沉默——知道这段历史，sign/design/campaign 的拼写就不再是谜。这四种路径都通向同一个 /n/，学透它们，这一类词的拼写和发音就再无困惑。",
+  "subgroups": [
+    {
+      "key": "n",
+      "tag": "n → /n/",
+      "label": "✅ n = /n/",
+      "desc": "最直接的路径：单字母 n 对应 /n/，几乎没有例外。词首（no/name/nice）、词中（nation/novel）、词尾（man/pen）通通稳定。注意 n 在 k 或 g 之前有时读 /ŋ/（think/ring），但那是 nk/ng 组合的规律，单独的 n 不受影响。"
+    },
+    {
+      "key": "nn",
+      "tag": "nn → /n/",
+      "label": "nn = /n/",
+      "desc": "双写 nn 发音和单写完全一样，作用是「锁短音」——前一元音必须短读。compare：dinner /ˈdɪnər/（短 i）vs diner /ˈdaɪnər/（长 i）；manor /ˈmænər/ vs manner /ˈmænər/（这对同音）。announce、innocent、annual 的 nn 也遵循同一规律。"
+    },
+    {
+      "key": "kngn",
+      "tag": "kn·gn → /n/（首字母静音）",
+      "label": "kn / gn = /n/",
+      "desc": "k 和 g 在这两组合里完全不发音，只剩 /n/。kn 仅出现在词首（knife/know/knock/knack），gn 出现在词首（gnaw/gnome）或词尾（sign/design/benign/sovereign/campaign）。词首 k 的沉默始于 17 世纪语音演变；词尾 gn 多来自拉丁语，g 在英语化时静音，但派生词里 g 有时复活（sign→signal /ˈsɪɡnəl/，resign→resignation /ˌrezɪɡˈneɪʃn/）——这是辨认拼写的线索。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ign 词尾 (/aɪn/)",
+      "words": ["sign", "design", "resign", "assign", "align", "benign", "malign"]
+    },
+    {
+      "label": "-ack / -ock 同韵",
+      "words": ["knack", "knock", "lock", "stock", "block"]
+    },
+    {
+      "label": "-ounce / -ounce (/aʊns/)",
+      "words": ["announce", "pronounce", "denounce", "renounce"]
+    }
+  ],
+  "words": [
+    {
+      "word": "notable",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈnoʊtəbl/",
+      "subgroup": "n",
+      "meaning": "adj. 值得注意的，显著的；知名的  n. 名人，要人",
+      "etymology": "拉丁语 notabilis = notare（标记、注意）+ -abilis（能……的）。「值得被标记的」→ 显著的。与 note（笔记）、notice（注意）、notify（通知）同根，核心都是「标记/记录」。",
+      "roots": [
+        {"part": "not- (notare)", "meaning": "标记、注意"},
+        {"part": "-able", "meaning": "能……的"}
+      ],
+      "phonetics": "重音在首音节 NO-ta-ble，n = /n/，注意词尾 -able 弱读 /əbl/。",
+      "tip": "notable = note（笔记值得记的事）+ -able → 值得记一笔 → 显著的。",
+      "core": "用笔在重要的事上画个圈——它突出到值得被单独记下来。",
+      "senses": [
+        {
+          "gloss": "adj. 显著的，值得注意的",
+          "logic": "notare 是「做标记」→ 能被人做标记的东西一定够醒目够突出 → 引申为「显著的」。",
+          "en": "The region has seen notable improvements in air quality over the past decade.",
+          "zh": "该地区过去十年空气质量有显著改善。"
+        },
+        {
+          "gloss": "n. 名人，要人",
+          "logic": "被标记→被大家记住名字→从众多人中「标出来」的人 → 名人。",
+          "en": "The conference was attended by local notables and business leaders.",
+          "zh": "会议出席者包括当地名流和商界领袖。"
+        }
+      ],
+      "derivatives": [
+        {"w": "note", "gloss": "n.笔记 v.注意，记下"},
+        {"w": "notice", "gloss": "v.注意到 n.通知，布告"},
+        {"w": "notify", "gloss": "v.通知，告知"},
+        {"w": "notation", "gloss": "n.标记法，记号系统"},
+        {"w": "noteworthy", "gloss": "adj.值得注意的，显著的"}
+      ],
+      "examples": [
+        {
+          "en": "The region has seen notable improvements in air quality over the past decade.",
+          "zh": "该地区过去十年空气质量有显著改善。",
+          "source": "造句"
+        },
+        {
+          "en": "with the notable exception of",
+          "zh": "「除了……这一显著例外」——学术写作让步结构高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "remarkable", "gloss": "显著的，非凡的", "ipa": "/rɪˈmɑːrkəbl/", "note": "「显著的、非凡的」，比 notable 更强调出乎意料；a remarkable achievement（非凡成就）"},
+        {"w": "significant", "gloss": "重要的，有意义的", "ipa": "/sɪɡˈnɪfɪkənt/", "note": "「重要的、有意义的」，比 notable 更强调分量和后果；significant impact（重大影响）"},
+        {"w": "prominent", "gloss": "突出的，知名的", "ipa": "/ˈprɒmɪnənt/", "note": "「突出的、知名的」，与 notable 作名词义时最近；a prominent scientist（知名科学家）"}
+      ],
+      "antonyms": [
+        {"w": "insignificant", "note": "微不足道的"},
+        {"w": "obscure", "note": "默默无闻的"}
+      ],
+      "nuance": "notable 强调「值得关注的程度」，可以是数量或质量上的显著；remarkable 强调「超出预期的惊人」；significant 强调「后果上的重要性」。「a notable increase」是显著增加（数量），「a significant increase」更强调这个增加带来的影响。"
+    },
+    {
+      "word": "notion",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈnoʊʃn/",
+      "subgroup": "n",
+      "meaning": "n. 概念，观念；想法；（模糊的）印象",
+      "etymology": "拉丁语 notio = noscere（知道、认识）的名词形式，「认识的结果」→ 概念。与 know（经由条顿语借道）、notice、cognition（认知）同根——都来自「知」这一核心。",
+      "roots": [
+        {"part": "not- (noscere)", "meaning": "知道、认识"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "phonetics": "NO-tion，重音在前，-tion = /ʃn/（不是 /tɪɒn/）。n 在词首清晰发 /n/。",
+      "core": "脑子里飘着一个模糊的形状，知道它在那儿，但还没完全看清。",
+      "senses": [
+        {
+          "gloss": "n. 概念，观念",
+          "logic": "noscere「知道」→ 知道的结果是一个「想法/概念」在脑子里成形 → 观念。",
+          "en": "The notion of universal basic income has gained traction in recent years.",
+          "zh": "全民基本收入的概念近年来受到了越来越多的关注。"
+        },
+        {
+          "gloss": "n.（模糊的）印象，想法",
+          "logic": "知道但不完全知道 → 心里有个影影绰绰的感觉 → 模糊印象。从「清晰的知」滑向「不太确定的知」。",
+          "en": "He had little notion of how much work was involved.",
+          "zh": "他完全不了解这需要多少工作量。"
+        }
+      ],
+      "derivatives": [
+        {"w": "cognition", "gloss": "n.认知，认识能力"},
+        {"w": "recognize", "gloss": "v.认出，识别"},
+        {"w": "cognitive", "gloss": "adj.认知的"},
+        {"w": "notorious", "gloss": "adj.臭名昭著的（大家都'知道'的负面人物）"}
+      ],
+      "examples": [
+        {
+          "en": "He had little notion of how much work was involved.",
+          "zh": "他完全不了解这需要多少工作量。",
+          "source": "造句"
+        },
+        {
+          "en": "challenge the notion that",
+          "zh": "「挑战……这一观念」——学术论证高频句型。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "concept", "gloss": "概念，观念", "ipa": "/ˈkɒnsept/", "note": "「概念」，比 notion 更系统、更清晰；the concept of democracy（民主概念）"},
+        {"w": "idea", "gloss": "想法，主意", "ipa": "/aɪˈdɪə/", "note": "最通用的「想法/观念」，比 notion 更口语，适用范围最广"},
+        {"w": "impression", "gloss": "印象，感觉", "ipa": "/ɪmˈpreʃn/", "note": "「印象、感觉」，比 notion 更模糊，强调主观感知；first impression（第一印象）"}
+      ],
+      "antonyms": [
+        {"w": "reality", "note": "现实（与观念相对）"},
+        {"w": "fact", "note": "事实"}
+      ],
+      "nuance": "notion 常指「尚未完全厘清的想法或印象」，带有模糊感（I have no notion of what he means）；concept 是经过系统化的明确概念；idea 最泛最口语。用 notion 常暗示质疑或讨论某个观念是否成立。"
+    },
+    {
+      "word": "nourish",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈnʌrɪʃ/",
+      "subgroup": "n",
+      "meaning": "v. 滋养，哺育；（感情、希望等）培育，助长",
+      "etymology": "古法语 norrir，源自拉丁语 nutrire「喂养、滋养」。与 nutrition（营养）、nurse（护士/哺育）、nutrient（营养素）同根——都在讲「提供生长所需」。",
+      "roots": [
+        {"part": "nour- (nutrire)", "meaning": "滋养、喂养"},
+        {"part": "-ish", "meaning": "动词后缀"}
+      ],
+      "phonetics": "NOU-rish，注意拼写是 ou 但发音是 /ʌ/（同 nurse/nurture），词首 n = /n/。",
+      "tip": "nourish → nutrition → nurse：同一个词根 nutri-，养育身体和灵魂的行为。",
+      "core": "把食物一口一口喂进去，看着对方慢慢长起来——身体在长，心也在长。",
+      "senses": [
+        {
+          "gloss": "v. 滋养，哺育（身体）",
+          "logic": "nutrire = 喂养 → 提供营养让生物体生长 → 物质层面的滋养。",
+          "en": "A balanced diet nourishes both the body and the mind.",
+          "zh": "均衡饮食能同时滋养身体和心灵。"
+        },
+        {
+          "gloss": "v. 培育，助长（感情、希望等抽象事物）",
+          "logic": "喂养身体 → 像喂食物一样「喂养」抽象事物 → 让感情/希望/关系也「长大」。这是从物质到精神的自然隐喻。",
+          "en": "She nourished the hope of one day returning to her hometown.",
+          "zh": "她一直怀着有朝一日回到家乡的希望。"
+        }
+      ],
+      "derivatives": [
+        {"w": "nutrition", "gloss": "n.营养，营养学"},
+        {"w": "nutrient", "gloss": "n.营养素，养分"},
+        {"w": "nurse", "gloss": "n.护士 v.护理，哺育"},
+        {"w": "nurture", "gloss": "v./n.培育，教养"},
+        {"w": "nutritious", "gloss": "adj.有营养的"}
+      ],
+      "examples": [
+        {
+          "en": "A balanced diet nourishes both the body and the mind.",
+          "zh": "均衡饮食能同时滋养身体和心灵。",
+          "source": "造句"
+        },
+        {
+          "en": "nourish a hope / nourish a relationship",
+          "zh": "「培育希望 / 滋养一段关系」——抽象义高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "nurture", "gloss": "培育，教养", "ipa": "/ˈnɜːrtʃər/", "note": "「培育」，与 nourish 同根，但更强调长期呵护和教育；nurture talent（培养才能）"},
+        {"w": "sustain", "gloss": "维持，支撑", "ipa": "/səˈsteɪn/", "note": "「维持、支撑」，强调维持生命或状态的持续性；sustain life（维持生命）"},
+        {"w": "feed", "gloss": "喂养，喂食", "ipa": "/fiːd/", "note": "最口语的「喂养」，仅指物质食物，没有抽象义"}
+      ],
+      "antonyms": [
+        {"w": "starve", "note": "使挨饿、剥夺营养"},
+        {"w": "deprive", "note": "剥夺（所需之物）"}
+      ],
+      "nuance": "nourish 强调「提供成长所需的养分」，可以是物质（food nourishes the body）也可以是精神（nourish a dream）；nurture 更强调长期的教育培养过程；sustain 侧重「维持不断绝」而非主动滋养。"
+    },
+    {
+      "word": "neutral",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈnjuːtrəl/",
+      "subgroup": "n",
+      "meaning": "adj. 中立的；中性的；（颜色）不鲜明的  n. 中立国；空挡",
+      "etymology": "拉丁语 neutralis = neuter（两者都不）+ -alis。neuter = ne-(不) + uter(两者之一)。「两者都不站」→ 中立。与 neither（两者都不）同源于印欧词根。",
+      "roots": [
+        {"part": "ne-", "meaning": "不、否定"},
+        {"part": "-utr- (uter)", "meaning": "两者之一"},
+        {"part": "-al", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "NEU-tral，英式 /ˈnjuːtrəl/，美式 /ˈnuːtrəl/（ny 简化）；词首 n = /n/。",
+      "core": "站在正中间那条线上，不往左也不往右——两边都跟我没关系。",
+      "senses": [
+        {
+          "gloss": "adj. 中立的，不偏袒的",
+          "logic": "ne-不 + uter两者之一 → 「哪一个都不是」→ 不选边不站队 → 中立立场。",
+          "en": "Switzerland has maintained a neutral position in international conflicts.",
+          "zh": "瑞士在国际冲突中一直保持中立立场。"
+        },
+        {
+          "gloss": "adj. 中性的，不鲜明的",
+          "logic": "不偏袒→不带有任何一方的色彩→没有强烈特征→中性/不鲜明。从政治延展到色彩、化学、语法等域。",
+          "en": "She decorated the room in neutral tones of beige and gray.",
+          "zh": "她用米色和灰色等中性色调装饰了房间。"
+        },
+        {
+          "gloss": "n. 空挡（汽车）",
+          "logic": "两边都不挂→不挂前进挡也不挂倒挡→空挡。机械域的具体化。",
+          "en": "Put the car in neutral before starting the engine.",
+          "zh": "发动引擎前先把车挂到空挡。"
+        }
+      ],
+      "derivatives": [
+        {"w": "neuter", "gloss": "adj.中性的（语法）v.阉割"},
+        {"w": "neither", "gloss": "pron./adj.两者都不"},
+        {"w": "neutrality", "gloss": "n.中立，中立地位"},
+        {"w": "neutralize", "gloss": "v.使中和，使失效"}
+      ],
+      "examples": [
+        {
+          "en": "Switzerland has maintained a neutral position in international conflicts.",
+          "zh": "瑞士在国际冲突中一直保持中立立场。",
+          "source": "造句"
+        },
+        {
+          "en": "a neutral tone / neutral ground",
+          "zh": "「中性色调 / 中立场所」——颜色和外交语境高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "impartial", "gloss": "公正的，不偏不倚的", "ipa": "/ɪmˈpɑːrʃl/", "note": "「公正无私的」，比 neutral 更强调主动不偏袒，常用于裁判或评估语境；an impartial judge（公正的法官）"},
+        {"w": "unbiased", "gloss": "无偏见的", "ipa": "/ʌnˈbaɪəst/", "note": "「无偏见的」，强调没有预设立场；unbiased reporting（无偏见报道）"},
+        {"w": "objective", "gloss": "客观的", "ipa": "/əbˈdʒektɪv/", "note": "「客观的」，强调基于事实而非情感；objective analysis（客观分析）"}
+      ],
+      "antonyms": [
+        {"w": "biased", "note": "有偏见的"},
+        {"w": "partisan", "note": "党派的、偏袒一方的"}
+      ],
+      "nuance": "neutral 强调「不介入任何一方」（可以是出于选择或性质）；impartial 强调「主动维持公正」（有判断但不偏袒）；objective 强调「以事实为准绳」。neutral country（中立国）是政治选择，objective reporter（客观记者）是职业标准。"
+    },
+    {
+      "word": "negotiate",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/nɪˈɡoʊʃieɪt/",
+      "subgroup": "n",
+      "meaning": "v. 谈判，协商；（成功）通过（障碍）",
+      "etymology": "拉丁语 negotiari = neg-(不) + otium(闲暇) = 「没有闲着」→ 做生意、谈判。与 negotium（事务）同根。otium（闲暇）的反义词是 negotium（事务），古罗马人用这个词对组来区分「工作」与「休闲」。",
+      "roots": [
+        {"part": "neg- (nec-)", "meaning": "不、否定"},
+        {"part": "-otium", "meaning": "闲暇，休息"}
+      ],
+      "phonetics": "重音在第二音节 ne-GO-tiate，词首 n = /n/；-tiate 读 /ʃieɪt/，不是 /tɪeɪt/。",
+      "tip": "negotiate 字面是「不得闲」（neg + otium）——谈判桌上没有闲人，每个人都在为利益工作。",
+      "core": "两个人对坐桌前，不得闲——你说你的我要我的，磨来磨去，直到磨出一个都能接受的点。",
+      "senses": [
+        {
+          "gloss": "v. 谈判，协商",
+          "logic": "neg-不 + otium闲暇 = 「不得闲，在忙事务」→ 古罗马人用来指做生意→你来我往谈条件→谈判。核心是双方来回博弈。",
+          "en": "The two governments agreed to negotiate a trade deal.",
+          "zh": "两国政府同意就贸易协议展开谈判。"
+        },
+        {
+          "gloss": "v.（成功）通过（障碍、弯道等）",
+          "logic": "谈判需要技巧→你得灵活应对各种情况→引申为「巧妙通过」障碍。就像一个谈判高手绕过对方条件，也像司机绕过急弯。",
+          "en": "She carefully negotiated the winding mountain road.",
+          "zh": "她小心地通过了蜿蜒的山路。"
+        }
+      ],
+      "derivatives": [
+        {"w": "negotiation", "gloss": "n.谈判，协商"},
+        {"w": "negotiator", "gloss": "n.谈判者，协商者"},
+        {"w": "negotiable", "gloss": "adj.可协商的，可通行的"}
+      ],
+      "examples": [
+        {
+          "en": "The two governments agreed to negotiate a trade deal.",
+          "zh": "两国政府同意就贸易协议展开谈判。",
+          "source": "造句"
+        },
+        {
+          "en": "negotiate a sharp bend / negotiate the terms",
+          "zh": "「安全通过急转弯 / 谈判条款」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "bargain", "gloss": "讨价还价，谈判", "ipa": "/ˈbɑːrɡɪn/", "note": "「讨价还价」，比 negotiate 更口语，强调争取有利条件；bargain for a better price（讨价还价）"},
+        {"w": "mediate", "gloss": "调解，斡旋", "ipa": "/ˈmiːdieɪt/", "note": "「调解」，强调第三方居间斡旋，比 negotiate 更被动；mediate a dispute（调解纠纷）"},
+        {"w": "arbitrate", "gloss": "仲裁，公断", "ipa": "/ˈɑːrbɪtreɪt/", "note": "「仲裁」，比 mediate 更正式，裁决具有约束力；arbitrate a case（仲裁案件）"}
+      ],
+      "antonyms": [
+        {"w": "dictate", "note": "强行规定，不经协商"},
+        {"w": "impose", "note": "单方面强加"}
+      ],
+      "nuance": "negotiate 是双方或多方坐下来平等协商寻求共识；bargain 更强调争利的过程，语气接近「砍价」；mediate 是第三方介入；arbitrate 是有约束力的裁决。「negotiate a peace deal」是双边努力，「arbitrate a dispute」是请外部权威裁判。"
+    },
+    {
+      "word": "navigate",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈnævɪɡeɪt/",
+      "subgroup": "n",
+      "meaning": "v. 导航，航行；（在复杂局面中）找到方向",
+      "etymology": "拉丁语 navigare = navis（船）+ agere（驾驶、行动）。「驾船而行」→ 导航。与 navy（海军）、naval（海军的）同根，核心是「船/海」。",
+      "roots": [
+        {"part": "navi- (navis)", "meaning": "船"},
+        {"part": "-gate (agere)", "meaning": "驾驶、推动"}
+      ],
+      "phonetics": "NAV-i-gate，重音在首音节，词首 n = /n/；-gate 末尾弱读 /ɡɪt/ 或 /ɡeɪt/（美式偏 /ɡeɪt/）。",
+      "core": "驾着船在茫茫海上——手里有舵，眼前有星，穿过风浪找到对的方向。",
+      "senses": [
+        {
+          "gloss": "v. 导航，航行（物理空间）",
+          "logic": "navis船 + agere驾驶 = 「驾船」→ 驾驶船/飞机/车沿着一定路线行进 → 导航。",
+          "en": "Ancient sailors navigated by the stars.",
+          "zh": "古代水手靠星星导航。"
+        },
+        {
+          "gloss": "v. 在复杂局面中找到方向（抽象）",
+          "logic": "驾船找路 → 比喻在抽象迷宫中找出口 → 面对复杂系统（官僚、法规、人际关系）也能找到正确的通过方式。航海是原始意象，人生是引申海域。",
+          "en": "She had to navigate complex regulations to get the permit approved.",
+          "zh": "她不得不在复杂的法规中找到路径，才让许可申请获批。"
+        }
+      ],
+      "derivatives": [
+        {"w": "navigation", "gloss": "n.导航，航行"},
+        {"w": "navigator", "gloss": "n.导航员，航海家"},
+        {"w": "navy", "gloss": "n.海军"},
+        {"w": "naval", "gloss": "adj.海军的"},
+        {"w": "navigable", "gloss": "adj.可航行的，可通航的"}
+      ],
+      "examples": [
+        {
+          "en": "She had to navigate complex regulations to get the permit approved.",
+          "zh": "她不得不在复杂的法规中找到路径，才让许可申请获批。",
+          "source": "造句"
+        },
+        {
+          "en": "navigate the job market / navigate choppy waters",
+          "zh": "「在求职市场找到方向 / 在动荡中驾驭」——抽象义高频隐喻。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "steer", "gloss": "掌舵，引导", "ipa": "/stɪər/", "note": "「掌舵、引导」，物理意义更强，也可抽象；steer a company through a crisis（带领公司渡过危机）"},
+        {"w": "maneuver", "gloss": "机动，巧妙操控", "ipa": "/məˈnuːvər/", "note": "「机动、巧妙应对」，强调技巧性的操控；maneuver through traffic（在车流中穿行）"},
+        {"w": "pilot", "gloss": "驾驶，引导", "ipa": "/ˈpaɪlət/", "note": "「驾驶（飞机/船）/ 引导」，与 navigate 最近，也可抽象；pilot a bill through Congress（引导法案在国会通过）"}
+      ],
+      "antonyms": [
+        {"w": "flounder", "note": "（在困境中）挣扎，不知所措"},
+        {"w": "get lost", "note": "迷失方向"}
+      ],
+      "nuance": "navigate 强调「找到正确路径穿越复杂环境」，可以是地理的也可以是抽象的（navigate politics）；steer 强调主动控制方向；maneuver 强调灵活机动；pilot 更强调全程引导到达目的地。"
+    },
+    {
+      "word": "narrative",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈnærətɪv/",
+      "subgroup": "n",
+      "meaning": "n. 叙述，故事；（主导性的）叙事框架  adj. 叙事的",
+      "etymology": "拉丁语 narrare「讲述」，与 gnarus（知道的、熟悉的）同根——「知道某事」→「把它讲出来」。gnarus 本身含 gn 词根（参见 gn 静音组合），是 kn/gn 同族词的证明。",
+      "roots": [
+        {"part": "narr- (narrare)", "meaning": "讲述"},
+        {"part": "-ative", "meaning": "名词/形容词后缀"}
+      ],
+      "phonetics": "NAR-ra-tive，三音节，重音在首，词首 n = /n/；注意中间 r 要清晰。",
+      "tip": "narrative 的词源 narrare 与 gnarus（知道的）同根——知道→讲述，n 的深层联系。",
+      "core": "把知道的事用一根线串起来，从头到尾讲给别人听——线怎么穿，故事就长什么样。",
+      "senses": [
+        {
+          "gloss": "n. 叙述，故事",
+          "logic": "narrare「讲述」→ gnarus「知道」→「把知道的说出来」→有结构地讲故事。核心是「讲」的动作和「故事」这个产物。",
+          "en": "The novel is told in a non-linear narrative that jumps between past and present.",
+          "zh": "这部小说采用非线性叙事，在过去和现在之间跳跃。"
+        },
+        {
+          "gloss": "n.（主导性的）叙事框架",
+          "logic": "讲故事→谁在讲、怎么讲决定了听众看到什么→「叙事」不仅是故事，更是定义现实的话语权。这个义从文学批评渗透到政治和媒体。",
+          "en": "The documentary challenges the dominant narrative about climate change.",
+          "zh": "这部纪录片质疑气候变化的主流叙事框架。"
+        }
+      ],
+      "derivatives": [
+        {"w": "narrate", "gloss": "v.叙述，讲述"},
+        {"w": "narrator", "gloss": "n.叙述者，旁白"},
+        {"w": "narration", "gloss": "n.叙述，解说"}
+      ],
+      "examples": [
+        {
+          "en": "The documentary challenges the dominant narrative about climate change.",
+          "zh": "这部纪录片质疑气候变化的主流叙事框架。",
+          "source": "造句"
+        },
+        {
+          "en": "a compelling narrative / control the narrative",
+          "zh": "「引人入胜的故事 / 掌控舆论框架」——文学和政治高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "account", "gloss": "描述，陈述", "ipa": "/əˈkaʊnt/", "note": "「描述、陈述」，比 narrative 更中性，不一定有故事结构；an eyewitness account（目击者陈述）"},
+        {"w": "story", "gloss": "故事", "ipa": "/ˈstɔːri/", "note": "最口语的「故事」，比 narrative 少了批判性分析的含义"},
+        {"w": "discourse", "gloss": "话语，论述", "ipa": "/ˈdɪskɔːrs/", "note": "「话语、论述」，比 narrative 更抽象学术，指社会层面的话语体系；dominant discourse（主流话语）"}
+      ],
+      "antonyms": [
+        {"w": "counter-narrative", "note": "反叙事、对立叙事框架"}
+      ],
+      "nuance": "narrative 现在不仅指「故事」，还指「人们对事件的解读框架」——谁在控制 narrative，谁就在定义公众对事件的理解。这个用法在新闻、政治、学术中极高频，是比 story 更有分析力的词。"
+    },
+    {
+      "word": "numerous",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈnjuːmərəs/",
+      "subgroup": "n",
+      "meaning": "adj. 众多的，许多的",
+      "etymology": "拉丁语 numerosus = numerus（数）+ -osus（充满的）。「充满数字/充满数量」→ 众多的。与 number（数字）、enumerate（列举）、innumerable（不可数的）同根。",
+      "roots": [
+        {"part": "numer- (numerus)", "meaning": "数、数量"},
+        {"part": "-ous", "meaning": "充满……的"}
+      ],
+      "phonetics": "NU-mer-ous，三音节，重音在首，词首 n = /n/；英式 /ˈnjuːmərəs/，美式 /ˈnuːmərəs/。",
+      "core": "放眼望去满眼都是——数都懒得数，因为太多了。",
+      "senses": [
+        {
+          "gloss": "adj. 众多的，许多的",
+          "logic": "numerus数 + -ous充满的 = 「充满数量的」→ 数量大到让人注意到 → 许多的。只有一个核心义，但使用域很广（人、物、事件、研究等）。",
+          "en": "Numerous studies have confirmed the link between stress and illness.",
+          "zh": "大量研究证实了压力与疾病之间的联系。"
+        }
+      ],
+      "derivatives": [
+        {"w": "number", "gloss": "n.数字，数量 v.编号"},
+        {"w": "numerical", "gloss": "adj.数字的，数值的"},
+        {"w": "enumerate", "gloss": "v.逐一列举，枚举"},
+        {"w": "innumerable", "gloss": "adj.无数的，数不清的"},
+        {"w": "numeral", "gloss": "n.数字符号 adj.数字的"}
+      ],
+      "examples": [
+        {
+          "en": "Numerous studies have confirmed the link between stress and illness.",
+          "zh": "大量研究证实了压力与疾病之间的联系。",
+          "source": "造句"
+        },
+        {
+          "en": "on numerous occasions",
+          "zh": "「在许多场合」——学术和正式文体高频替换「many times」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "many", "gloss": "许多的", "ipa": "/ˈmeni/", "note": "最口语的「许多」，无正式感；numerous 是其书面替换词"},
+        {"w": "countless", "gloss": "无数的", "ipa": "/ˈkaʊntləs/", "note": "「无数的、数不清的」，比 numerous 更强调数量多到难以计数；countless stars（无数繁星）"},
+        {"w": "abundant", "gloss": "丰富的，充裕的", "ipa": "/əˈbʌndənt/", "note": "「丰富的、充裕的」，比 numerous 更强调充足充裕，不一定指个体数量；abundant resources（丰富资源）"}
+      ],
+      "antonyms": [
+        {"w": "few", "note": "很少的"},
+        {"w": "scarce", "note": "稀少的，匮乏的"}
+      ],
+      "nuance": "numerous 是学术写作中替换 many 的首选词——正式、中性、不夸张。countless 暗示数量多到无法计数（有夸张成分），abundant 侧重「量大充裕」而非单纯「个数多」，因此「numerous participants」比「abundant participants」更自然。"
+    },
+    {
+      "word": "announce",
+      "hl": "nn",
+      "levels": ["托福"],
+      "ipa": "/əˈnaʊns/",
+      "subgroup": "nn",
+      "meaning": "v. 宣布，公告；（声音、信号）预示",
+      "etymology": "拉丁语 annuntiare = ad-(向) + nuntiare(报告、传递消息)。「向……传递消息」→ 宣布。与 pronounce（发音/宣判）、denounce（谴责）、renounce（放弃声称）同根——都含 -nounce（nuntius，信使）。",
+      "roots": [
+        {"part": "an- (ad-)", "meaning": "向、朝"},
+        {"part": "-nounce (nuntiare)", "meaning": "传递消息、报告"}
+      ],
+      "phonetics": "an-NOUNCE，重音在后，nn = /n/（双写锁住前面 a 的短音 /ə/）；-ounce = /aʊns/。",
+      "core": "站到高处，对着一群人把消息喊出来——从此刻起，所有人都知道了。",
+      "senses": [
+        {
+          "gloss": "v. 宣布，公告",
+          "logic": "ad-向 + nuntiare报信 = 「向众人报信」→ 正式公开地把信息传达出去 → 宣布。信使（nuntius）是词根灵魂——announce 就是扮演信使的角色。",
+          "en": "The company announced a major restructuring plan at the shareholders' meeting.",
+          "zh": "公司在股东大会上宣布了重大重组计划。"
+        },
+        {
+          "gloss": "v.（声音、信号）预示……的到来",
+          "logic": "宣布某事→宣布某事要来了→「宣告来临」→从人域拓展到物域：钟声announce新年，乌云announce暴雨。信使从人变成了信号。",
+          "en": "The first buds announce the arrival of spring.",
+          "zh": "第一颗嫩芽宣告春天的到来。"
+        }
+      ],
+      "derivatives": [
+        {"w": "announcement", "gloss": "n.公告，宣布"},
+        {"w": "announcer", "gloss": "n.播音员，宣告者"},
+        {"w": "pronounce", "gloss": "v.发音；宣判，宣告"},
+        {"w": "denounce", "gloss": "v.谴责，告发"},
+        {"w": "renounce", "gloss": "v.放弃，声明放弃（头衔/权利）"}
+      ],
+      "examples": [
+        {
+          "en": "The company announced a major restructuring plan at the shareholders' meeting.",
+          "zh": "公司在股东大会上宣布了重大重组计划。",
+          "source": "造句"
+        },
+        {
+          "en": "announce one's resignation / as announced",
+          "zh": "「宣布辞职 / 如已公布的那样」——正式场合高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "declare", "gloss": "宣告，声明", "ipa": "/dɪˈkleər/", "note": "「宣告」，比 announce 更正式，常用于重大决定或立场；declare independence（宣布独立）"},
+        {"w": "proclaim", "gloss": "宣称，公告天下", "ipa": "/prəˈkleɪm/", "note": "「宣称、公告天下」，比 announce 更庄重有力，带公开示众意味；proclaim victory（宣布胜利）"},
+        {"w": "disclose", "gloss": "披露，公开", "ipa": "/dɪsˈkloʊz/", "note": "「披露」，强调公开此前未知的信息，比 announce 更强调信息的机密性；disclose financial data（披露财务数据）"}
+      ],
+      "antonyms": [
+        {"w": "conceal", "note": "隐瞒，不公开"},
+        {"w": "withhold", "note": "扣押，不发布"}
+      ],
+      "nuance": "announce 强调公开发布信息（中性），declare 带有正式宣告的庄重感，proclaim 语气最强烈正式（常用于历史性时刻）。「announce a policy」是日常行政用语，「declare war」是严肃历史用语，「proclaim independence」是里程碑式宣告。"
+    },
+    {
+      "word": "innocent",
+      "hl": "nn",
+      "levels": ["托福"],
+      "ipa": "/ˈɪnəsnt/",
+      "subgroup": "nn",
+      "meaning": "adj. 无罪的；天真无邪的；（错误等）无心的  n. 无辜者",
+      "etymology": "拉丁语 innocens = in-(不) + nocere(伤害) = 「不伤害人的」→ 无害→无辜。与 noxious（有害的）、obnoxious（令人反感的）、nuisance（烦恼）同根，nocere 是「伤害」。",
+      "roots": [
+        {"part": "in-", "meaning": "不、否定"},
+        {"part": "-noc- (nocere)", "meaning": "伤害"},
+        {"part": "-ent", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "IN-no-cent，重音在首，nn = /n/；-cent 弱读 /snt/，注意不发 /e/（省略）。",
+      "tip": "innocent 字面「不伤害人」→ 无辜。反向记忆：nocere（伤害）也在 noxious（有毒有害）里。",
+      "core": "像一张还没被写过字的白纸——没害过人，也还没被世界弄脏。",
+      "senses": [
+        {
+          "gloss": "adj. 无罪的（法律）",
+          "logic": "in-不 + nocere伤害 = 「没做过伤害行为」→ 法律上没有犯罪 → 无罪。这是最字面的义。",
+          "en": "The court ruled that she was innocent of all charges.",
+          "zh": "法庭裁定她对所有指控均无罪。"
+        },
+        {
+          "gloss": "adj. 天真无邪的（性格）",
+          "logic": "没有伤害行为→也没被伤害过→保持天然的纯净状态→像孩子一样天真。从「法律清白」滑向「心灵纯洁」。不是两个不同义，而是一条光谱。",
+          "en": "She looked at him with innocent eyes, not understanding the joke.",
+          "zh": "她用天真无邪的眼神看着他，没听懂那个笑话。"
+        },
+        {
+          "gloss": "adj. 无心的，无恶意的（错误等）",
+          "logic": "不伤害人→不是故意的→没有恶意→无心的。从行为动机而非法律后果来判定。",
+          "en": "It was an innocent mistake — he never meant to hurt anyone.",
+          "zh": "那是个无心之过——他从没想过要伤害任何人。"
+        }
+      ],
+      "derivatives": [
+        {"w": "innocence", "gloss": "n.无辜，清白；天真"},
+        {"w": "innocuous", "gloss": "adj.无害的，无伤大雅的"},
+        {"w": "noxious", "gloss": "adj.有毒的，有害的"},
+        {"w": "nuisance", "gloss": "n.讨厌的人/事，滋扰"}
+      ],
+      "examples": [
+        {
+          "en": "The court ruled that she was innocent of all charges.",
+          "zh": "法庭裁定她对所有指控均无罪。",
+          "source": "造句"
+        },
+        {
+          "en": "an innocent mistake / an innocent bystander",
+          "zh": "「无心之过 / 无辜旁观者」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "guiltless", "gloss": "无罪的", "ipa": "/ˈɡɪltləs/", "note": "「无罪的」，与 innocent 法律义最近，但更口语；比 innocent 少了「天真」的含义"},
+        {"w": "naive", "gloss": "天真的，幼稚的", "ipa": "/naɪˈiːv/", "note": "「天真的」，与 innocent 的「天真无邪」义最近，但 naive 常含轻微贬义（过于轻信）"},
+        {"w": "blameless", "gloss": "无可指责的", "ipa": "/ˈbleɪmləs/", "note": "「无可指责的」，强调行为上没有过错，比 innocent 更着眼于「无过失」"}
+      ],
+      "antonyms": [
+        {"w": "guilty", "note": "有罪的"},
+        {"w": "culpable", "note": "应受责备的，有过错的"}
+      ],
+      "nuance": "innocent 兼有法律义（无罪）和性格义（天真无邪）；naive 专指「天真、容易被骗」（常含批评）；blameless 只说行为上无过错，不涉及法律或性格。「an innocent child」是「天真的孩子」（褒），「a naive adult」是「过于轻信的成年人」（微贬）。"
+    },
+    {
+      "word": "innate",
+      "hl": "nn",
+      "levels": ["托福"],
+      "ipa": "/ɪˈneɪt/",
+      "subgroup": "nn",
+      "meaning": "adj. 天生的，与生俱来的；固有的",
+      "etymology": "拉丁语 innatus = in-(进入/在…里) + natus（出生的，nasci 的过去分词）。「在出生里的」→ 天生的。与 nature（自然）、native（本地的）、prenatal（产前的）同根，nasci 是「出生」。",
+      "roots": [
+        {"part": "in-", "meaning": "在……里，进入"},
+        {"part": "-nate (natus)", "meaning": "出生的"}
+      ],
+      "phonetics": "in-NATE，重音在后，nn = /n/（双写，锁住前 i 短音 /ɪ/）；-nate = /neɪt/。",
+      "tip": "innate = in + nate（born）→ 生来就有的。同族：native、nature、prenatal。",
+      "core": "从娘胎里带出来的东西——不用学，不用练，生下来就在那儿。",
+      "senses": [
+        {
+          "gloss": "adj. 天生的，与生俱来的",
+          "logic": "in-在…里 + natus出生 = 「在出生里的」→ 出生时就带着的 → 先天具备的。字面义就是「生来就有的」。",
+          "en": "Children have an innate ability to acquire language without formal instruction.",
+          "zh": "儿童具有天生的语言习得能力，无需正式教学。"
+        },
+        {
+          "gloss": "adj. 固有的，内在的",
+          "logic": "出生时就有的→是事物本质的一部分→不是外部加上的→固有的。从「出生自带」引申为「本质属性」，在哲学和科学语境中常用于讨论天性vs后天。",
+          "en": "The design has an innate flaw that cannot be fixed with software updates.",
+          "zh": "这个设计有一个固有问题，无法通过软件更新修复。"
+        }
+      ],
+      "derivatives": [
+        {"w": "native", "gloss": "adj.本地的，土生土长的 n.本地人"},
+        {"w": "nation", "gloss": "n.国家，民族（出生之地）"},
+        {"w": "nature", "gloss": "n.自然，天性"},
+        {"w": "natal", "gloss": "adj.出生的，诞生的"},
+        {"w": "prenatal", "gloss": "adj.产前的，出生前的"}
+      ],
+      "examples": [
+        {
+          "en": "Children have an innate ability to acquire language without formal instruction.",
+          "zh": "儿童具有天生的语言习得能力，无需正式教学。",
+          "source": "造句"
+        },
+        {
+          "en": "innate curiosity / innate talent",
+          "zh": "「与生俱来的好奇心 / 天赋才能」——高频搭配，常用于科学和教育讨论。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "inherent", "gloss": "固有的，内在的", "ipa": "/ɪnˈhɪərənt/", "note": "「固有的、内在的」，比 innate 更强调「作为本质组成部分存在」，不一定涉及出生；inherent risks（内在风险）"},
+        {"w": "inborn", "gloss": "天生的", "ipa": "/ˈɪnbɔːrn/", "note": "「天生的」，与 innate 最接近，更口语；an inborn gift（天赋）"},
+        {"w": "natural", "gloss": "自然的，天生的", "ipa": "/ˈnætʃrəl/", "note": "「自然的、天然的」，比 innate 更泛，也指非人工的；a natural talent（自然才能）"}
+      ],
+      "antonyms": [
+        {"w": "acquired", "note": "后天习得的"},
+        {"w": "learned", "note": "学习得来的"}
+      ],
+      "nuance": "innate 特指「出生时就具备的」（天生论语境），inborn 是口语同义词；inherent 不一定涉及出生，而是「作为事物本质的一部分而存在」（the inherent difficulty of the task）。「nature vs nurture」辩论中，innate abilities 代表 nature 一方。"
+    },
+    {
+      "word": "annual",
+      "hl": "nn",
+      "levels": ["托福"],
+      "ipa": "/ˈænjuəl/",
+      "subgroup": "nn",
+      "meaning": "adj. 每年的，年度的  n. 年刊；一年生植物",
+      "etymology": "拉丁语 annualis = annus（年）+ -alis。与 anniversary（周年纪念）、perennial（多年生的/长期的）、millennium（千年）同根，annus 是「年」。",
+      "roots": [
+        {"part": "ann- (annus)", "meaning": "年"},
+        {"part": "-ual", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "AN-nu-al，重音在首，nn = /n/；-ual 发 /juəl/（英式）或 /uəl/（美式简化）。",
+      "core": "地球绕太阳转完一整圈——这个时间单位里，总有一些事会回到原点再来一次。",
+      "senses": [
+        {
+          "gloss": "adj. 每年的，一年一度的",
+          "logic": "annus年 + -al形容词 = 「属于年的」→ 以一年为周期发生一次 → 每年一次的。",
+          "en": "The company publishes an annual report detailing its financial performance.",
+          "zh": "公司发布年报详述其财务表现。"
+        },
+        {
+          "gloss": "n. 年刊，年鉴",
+          "logic": "每年一次的→每年出版一次的刊物→年刊。从形容词名词化，省掉了后面的 publication/book。",
+          "en": "She contributed an article to the department's annual.",
+          "zh": "她为系里的年刊撰文一篇。"
+        },
+        {
+          "gloss": "n. 一年生植物",
+          "logic": "以一年为周期的→生命周期就是一年的→活一季就死的植物。植物学域的名词化，与 perennial（多年生）对举。",
+          "en": "Marigolds are annuals that need to be replanted each spring.",
+          "zh": "万寿菊是一年生植物，每年春天需要重新播种。"
+        }
+      ],
+      "derivatives": [
+        {"w": "anniversary", "gloss": "n.周年纪念日"},
+        {"w": "annuity", "gloss": "n.年金（每年支付的固定金额）"},
+        {"w": "perennial", "gloss": "adj.多年生的；长期的，反复出现的"},
+        {"w": "millennium", "gloss": "n.一千年，千禧年"},
+        {"w": "biennial", "gloss": "adj.两年一次的"}
+      ],
+      "examples": [
+        {
+          "en": "The company publishes an annual report detailing its financial performance.",
+          "zh": "公司发布年报详述其财务表现。",
+          "source": "造句"
+        },
+        {
+          "en": "annual income / annual conference",
+          "zh": "「年收入 / 年度会议」——商务和学术高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "yearly", "gloss": "每年的", "ipa": "/ˈjɪərli/", "note": "最口语的「每年的」，与 annual 可互换但 annual 更正式书面"},
+        {"w": "perennial", "gloss": "多年生的，长期的", "ipa": "/pəˈreniəl/", "note": "「多年的、长期的」，同根词，但 perennial 指「持续多年反复出现」；a perennial problem（长期存在的问题）"},
+        {"w": "periodic", "gloss": "定期的，周期性的", "ipa": "/ˌpɪəriˈɒdɪk/", "note": "「定期的」，比 annual 更泛，指任意有规律的时间间隔，不限于一年"}
+      ],
+      "antonyms": [
+        {"w": "monthly", "note": "每月的"},
+        {"w": "daily", "note": "每日的"}
+      ],
+      "nuance": "annual 特指「以一年为周期」（annual salary 年薪），yearly 是其口语版；perennial 是同根兄弟词，但指「年年如此」的持续或反复（而非「一年发生一次」）。"
+    },
+    {
+      "word": "manner",
+      "hl": "nn",
+      "levels": ["托福"],
+      "ipa": "/ˈmænər/",
+      "subgroup": "nn",
+      "meaning": "n. 方式，方法；举止，态度；（复数）礼仪",
+      "etymology": "古法语 maniere，源自拉丁语 manuarius = manus（手）+ -arius。「手上的方式」→ 处理方式 → 举止。与 manual（手动的）、manufacture（制造）同根。",
+      "roots": [
+        {"part": "man- (manus)", "meaning": "手"},
+        {"part": "-ner (-arius)", "meaning": "方式、属于……的"}
+      ],
+      "phonetics": "MAN-ner，重音在首，nn = /n/（锁住短 a /æ/）；与 manor（庄园）同音，靠语境区分。",
+      "tip": "manor（庄园）和 manner（方式）同音！加 s 就不一样了：manners（礼仪），manors（庄园们）。",
+      "core": "一双手怎么做事的——怎么拿、怎么放、怎么对人，每个动作里都透露着一个人的样子。",
+      "senses": [
+        {
+          "gloss": "n. 方式，方法",
+          "logic": "manus手 + -arius方式 = 「手上的方式」→ 做事的风格和路径 → 方式方法。手是人与世界交互的器官，manner 就是「手的风格→做事的风格」。",
+          "en": "She addressed the audience in a calm and professional manner.",
+          "zh": "她以冷静专业的方式向听众致辞。"
+        },
+        {
+          "gloss": "n. 举止，态度",
+          "logic": "手上做事的方式→整个人呈现出来的样子→行为举止。从手的动作扩展到全身的表达，从「怎么做」到「怎么表现」。",
+          "en": "His quiet manner made people underestimate his intelligence.",
+          "zh": "他安静的举止让人们低估了他的才智。"
+        },
+        {
+          "gloss": "n. (pl.) 礼仪，规矩",
+          "logic": "举止→被社会认可的好举止→符合规范的礼貌行为→礼仪。从客观描述（某人举止如何）到价值判断（举止好不好）。",
+          "en": "It's bad manners to interrupt someone when they're speaking.",
+          "zh": "打断别人说话是不礼貌的。"
+        }
+      ],
+      "derivatives": [
+        {"w": "manual", "gloss": "adj.手工的，用手操作的 n.手册"},
+        {"w": "manufacture", "gloss": "v./n.制造（字面：用手做）"},
+        {"w": "manipulate", "gloss": "v.操纵，操控"},
+        {"w": "manuscript", "gloss": "n.手稿，原稿"},
+        {"w": "maneuver", "gloss": "v.巧妙操控 n.军事演习"}
+      ],
+      "examples": [
+        {
+          "en": "She addressed the audience in a calm and professional manner.",
+          "zh": "她以冷静专业的方式向听众致辞。",
+          "source": "造句"
+        },
+        {
+          "en": "in a … manner / good manners",
+          "zh": "「以……方式 / 良好礼仪」——两种义的高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "way", "gloss": "方式，方法", "ipa": "/weɪ/", "note": "最口语的「方式」，in a way = in a manner，但 manner 更正式书面"},
+        {"w": "style", "gloss": "风格，方式", "ipa": "/staɪl/", "note": "「风格」，比 manner 更强调个人特色；her speaking style（她的演讲风格）"},
+        {"w": "approach", "gloss": "方法，途径", "ipa": "/əˈproʊtʃ/", "note": "「方法/方式」，比 manner 更强调解决问题的策略；a new approach to teaching（新的教学方法）"}
+      ],
+      "antonyms": [
+        {"w": "rudeness", "note": "粗鲁（对 manners 礼仪义）"}
+      ],
+      "nuance": "in a … manner 是正式书面替换 in a … way；manner 强调「如何做的样子（举止风格）」，approach 强调「达到目的的策略」，style 强调「个人特有的形式感」。"
+    },
+    {
+      "word": "knack",
+      "hl": "kn",
+      "levels": ["托福"],
+      "ipa": "/næk/",
+      "subgroup": "kngn",
+      "meaning": "n. 诀窍，本领；天赋（for doing sth）",
+      "etymology": "中古英语 knak「小玩意儿、花招」，日耳曼语系，与德语 Knacks（裂缝声）同源。从「小技巧」演变为「做某事的天生本领」。kn 词首中 k 在 17 世纪前发音，knife 的先祖读 /knɪf/，knack 曾读 /knak/。",
+      "roots": [
+        {"part": "kn- (k 静音)", "meaning": "词首 k 不发音，历史遗留"},
+        {"part": "-ack", "meaning": "词根本体，读 /æk/"}
+      ],
+      "phonetics": "kn = /n/（k 完全静音），-ack = /æk/，整词 /næk/。发音等同于 nack，见到 kn 开头直接去掉 k 读音。",
+      "tip": "kn 开头的词：knife/know/knock/kneel/knack——k 全部静音，口诀：kn = n。",
+      "core": "一种说不清从哪来的巧劲儿——别人要琢磨半天的事，你上手就会。",
+      "senses": [
+        {
+          "gloss": "n. 诀窍，窍门",
+          "logic": "中古英语 knak「小技巧/花招」→ 做某事的巧妙方法 →「知道怎么做才对」的那种感觉。不是系统知识，而是一种手感。",
+          "en": "Once you get the knack of it, riding a bike is easy.",
+          "zh": "一旦掌握诀窍，骑自行车就很容易。"
+        },
+        {
+          "gloss": "n. 天赋，天生本领（for doing sth）",
+          "logic": "诀窍→不需要努力就掌握的诀窍→天生的才能。从「学会了就有的巧劲儿」滑向「根本不用学的巧劲儿」。",
+          "en": "She has a real knack for making people feel at ease.",
+          "zh": "她有真正的诀窍让别人感到轻松自在。"
+        }
+      ],
+      "derivatives": [
+        {"w": "talent", "gloss": "n.才能，天赋"},
+        {"w": "flair", "gloss": "n.天赋，风格感，才华"},
+        {"w": "gift", "gloss": "n.天赋，礼物"},
+        {"w": "skill", "gloss": "n.技能，技巧"}
+      ],
+      "examples": [
+        {
+          "en": "She has a real knack for making people feel at ease.",
+          "zh": "她有真正的诀窍让别人感到轻松自在。",
+          "source": "造句"
+        },
+        {
+          "en": "have a knack for / get the knack of",
+          "zh": "「有……的诀窍 / 掌握……的窍门」——固定搭配，for 接名词，of 接动名词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "talent", "gloss": "才能，天赋", "ipa": "/ˈtælənt/", "note": "「才能」，比 knack 更正式，强调天赋的高度；artistic talent（艺术才能）"},
+        {"w": "skill", "gloss": "技能，技巧", "ipa": "/skɪl/", "note": "「技能」，比 knack 更强调通过练习获得，可量化；technical skills（技术技能）"},
+        {"w": "flair", "gloss": "天赋，才华", "ipa": "/fleər/", "note": "「天赋，风格感」，带有法语优雅感，比 knack 更强调风格独特；a flair for languages（语言天赋）"}
+      ],
+      "antonyms": [
+        {"w": "ineptitude", "note": "笨拙，无能"},
+        {"w": "inability", "note": "无能力"}
+      ],
+      "nuance": "knack 指「某种说不清楚来源的本领或诀窍」，带有神奇轻松的含义（she just has the knack）；skill 是可习得可量化的；talent 是天生高水准的禀赋；flair 带法式优雅，侧重风格和品味。"
+    },
+    {
+      "word": "knife",
+      "hl": "kn",
+      "levels": ["托福"],
+      "ipa": "/naɪf/",
+      "subgroup": "kngn",
+      "meaning": "n. 刀，小刀  v. 用刀刺（人）",
+      "etymology": "古英语 cnīf，北日耳曼语借词（古诺尔斯语 knífr），曾读 /knɪːf/。中世纪英语时 k 逐渐沉默，到 17 世纪 k 完全脱落发音，保留拼写成为历史化石。复数 knives（f→v）同 life/lives 规律。",
+      "roots": [
+        {"part": "kn- (k 静音)", "meaning": "词首 k 在 17 世纪语音演变后静音"},
+        {"part": "-ife", "meaning": "词根本体，古日耳曼语「刀」"}
+      ],
+      "phonetics": "kn = /n/（k 静音），-ife = /aɪf/，整词 /naɪf/。注意复数 knives = /naɪvz/（f→v 且加 z）。",
+      "core": "一道窄窄的冷光——薄薄的金属刃，贴着皮肤就能划开一道线。",
+      "senses": [
+        {
+          "gloss": "n. 刀，小刀",
+          "logic": "古诺尔斯语 knífr「刀」→ 手持切割工具。最基础的实物义。",
+          "en": "She carefully sliced the bread with a sharp knife.",
+          "zh": "她用一把锋利的刀小心地切面包。"
+        },
+        {
+          "gloss": "v. 用刀刺（人）",
+          "logic": "名词「刀」→ 动词化：「用刀做……事」→ 用刀刺伤。英语里工具名词直接转动词的典型。",
+          "en": "He was knifed in a back alley during a fight.",
+          "zh": "他在一次打斗中在后巷被人用刀刺伤。"
+        }
+      ],
+      "derivatives": [
+        {"w": "blade", "gloss": "n.刀刃，刀片"},
+        {"w": "dagger", "gloss": "n.匕首，短剑"},
+        {"w": "scalpel", "gloss": "n.手术刀"},
+        {"w": "pocketknife", "gloss": "n.折叠小刀"}
+      ],
+      "examples": [
+        {
+          "en": "She carefully sliced the bread with a sharp knife.",
+          "zh": "她用一把锋利的刀小心地切面包。",
+          "source": "造句"
+        },
+        {
+          "en": "on a knife-edge / go under the knife",
+          "zh": "「千钧一发 / 接受手术」——两个高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "blade", "gloss": "刀刃，刀片", "ipa": "/bleɪd/", "note": "「刀刃、刀片」，指刀的刃部或泛指利器；blade 也可指草叶，是更广的词"},
+        {"w": "dagger", "gloss": "匕首", "ipa": "/ˈdæɡər/", "note": "「匕首」，专指短而尖的双刃刀，比 knife 更具侵略感"},
+        {"w": "scalpel", "gloss": "手术刀", "ipa": "/ˈskælpəl/", "note": "「手术刀」，医疗专用，比 knife 精密细小；go under the scalpel（接受手术）"}
+      ],
+      "antonyms": [],
+      "nuance": "knife 是通用词（餐刀/工具刀/武器刀），blade 强调刀刃这一部件（也指刀的整体），dagger 专指短尖匕首（文学/武器语境），scalpel 仅用于外科手术。"
+    },
+    {
+      "word": "knock",
+      "hl": "kn",
+      "levels": ["托福"],
+      "ipa": "/nɒk/",
+      "subgroup": "kngn",
+      "meaning": "v. 敲，击；碰撞；（口语）批评  n. 敲击声；碰撞；挫折",
+      "etymology": "古英语 cnocian「敲击」，拟声词起源——模仿敲门声。kn 词首中 k 历史上曾发音（cnoc-），17 世纪后静音。引申「碰撞」→「使遭受打击」→「批评」。",
+      "roots": [
+        {"part": "kn- (k 静音)", "meaning": "词首 k 静音，历史遗留"},
+        {"part": "-ock", "meaning": "拟声词本体，读 /ɒk/（英式）/ɑːk/（美式）"}
+      ],
+      "phonetics": "kn = /n/（k 静音），-ock = /ɒk/，整词 /nɒk/（英式）/nɑːk/（美式）。",
+      "core": "指关节叩在木门上的声音——叩、叩、叩，短促有力的一下。",
+      "senses": [
+        {
+          "gloss": "v./n. 敲，敲击",
+          "logic": "古英语 cnocian = 拟声词 → 模仿叩击发出的声音 → 敲击。最原始的义就是声音本身。",
+          "en": "Someone knocked on the door three times before entering.",
+          "zh": "有人敲了三下门才进来。"
+        },
+        {
+          "gloss": "v./n. 碰撞，撞击",
+          "logic": "敲→用力碰→两物相撞→碰撞。力度和场景从「有意敲」扩大到「无意撞」。",
+          "en": "He knocked his elbow against the doorframe.",
+          "zh": "他的胳膊肘撞到了门框上。"
+        },
+        {
+          "gloss": "v.（口语）批评，贬低",
+          "logic": "敲击→打→用言语打→批评打击。从物理打击隐喻为口头打击。这是口语义，正式场合不用。",
+          "en": "Don't knock it until you've tried it yourself.",
+          "zh": "自己没试过就别急着批评。"
+        }
+      ],
+      "derivatives": [
+        {"w": "knockoff", "gloss": "n.仿冒品，山寨货"},
+        {"w": "knockout", "gloss": "n.击倒（拳击）；绝色美人/惊艳之物"},
+        {"w": "knocker", "gloss": "n.门环，敲门锤"},
+        {"w": "knockdown", "gloss": "adj.可拆卸的；击倒的 n. knockdown price最低价"}
+      ],
+      "examples": [
+        {
+          "en": "Someone knocked on the door three times before entering.",
+          "zh": "有人敲了三下门才进来。",
+          "source": "造句"
+        },
+        {
+          "en": "knock down / knock out / a knock-on effect",
+          "zh": "「击倒 / 击晕 / 连锁反应」——三个高频短语动词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "tap", "gloss": "轻拍，轻敲", "ipa": "/tæp/", "note": "「轻拍、轻敲」，比 knock 力度轻，多用于轻轻触碰；tap on the shoulder（轻拍肩膀）"},
+        {"w": "bang", "gloss": "猛击，砰地撞击", "ipa": "/bæŋ/", "note": "「猛击、砰地撞」，比 knock 更响更用力；bang on the door（使劲砸门）"},
+        {"w": "criticize", "gloss": "批评", "ipa": "/ˈkrɪtɪsaɪz/", "note": "「批评」义的正式词，对应 knock 的口语贬义用法；don't knock it until you try it（别批评没试过的）"}
+      ],
+      "antonyms": [
+        {"w": "praise", "note": "称赞（对 knock 批评义）"}
+      ],
+      "nuance": "knock 基本义是「有力地敲击」，tap 是轻柔触碰，bang 是粗暴撞击。knock 作「批评」是口语用法（Don't knock it！），正式语境用 criticize。"
+    },
+    {
+      "word": "gnaw",
+      "hl": "gn",
+      "levels": ["托福"],
+      "ipa": "/nɔː/",
+      "subgroup": "kngn",
+      "meaning": "v. 啃，咬；（烦恼、恐惧等）侵蚀，折磨",
+      "etymology": "古英语 gnagan「啃咬」，日耳曼同根，与德语 nagen 同源。gn 词首在古英语时两个音都发（/ɡn-/），中世纪后 g 逐渐静音。引申「持续啃咬」→「内心持续折磨」。",
+      "roots": [
+        {"part": "gn- (g 静音)", "meaning": "词首 g 不发音，历史遗留"},
+        {"part": "-aw", "meaning": "词根本体，读 /ɔː/"}
+      ],
+      "phonetics": "gn = /n/（g 完全静音），-aw = /ɔː/，整词 /nɔː/。和 nor 押韵。注意拼写里的 g 完全是哑巴。",
+      "tip": "gnaw 和 jaw（下颌）押韵——用下巴啃东西，就是 gnaw。",
+      "core": "一口一口地啃，不是一大口吞掉，而是慢慢地、反复地、停不下来地磨——牙齿一直在动。",
+      "senses": [
+        {
+          "gloss": "v. 啃，咬（硬物）",
+          "logic": "古英语 gnagan「啃咬」→ 用牙齿反复刮磨硬物 → 咬硬东西的动作。特点是持续性和反复性，不是咬一口就完。",
+          "en": "The dog gnawed on the bone for hours.",
+          "zh": "那只狗啃了好几个小时的骨头。"
+        },
+        {
+          "gloss": "v.（烦恼、恐惧等）持续侵蚀，折磨内心",
+          "logic": "反复啃咬→像牙齿一点点磨掉骨头→一种情绪持续地一点一点消耗内心→折磨。这个隐喻非常有力：不是一下击倒，而是一口一口慢慢咬。",
+          "en": "Guilt gnawed at him for years after the accident.",
+          "zh": "事故发生后，内疚感多年来一直在折磨着他。"
+        }
+      ],
+      "derivatives": [
+        {"w": "gnawing", "gloss": "adj.折磨人的，持续不断的（痛/疑）"},
+        {"w": "chew", "gloss": "v.咀嚼"},
+        {"w": "nibble", "gloss": "v.小口啃，轻咬"},
+        {"w": "erode", "gloss": "v.侵蚀，腐蚀（抽象）"}
+      ],
+      "examples": [
+        {
+          "en": "The dog gnawed on the bone for hours.",
+          "zh": "那只狗啃了好几个小时的骨头。",
+          "source": "造句"
+        },
+        {
+          "en": "gnaw at sb's conscience / a gnawing doubt",
+          "zh": "「折磨某人的良知 / 挥之不去的疑虑」——抽象义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "chew", "gloss": "咀嚼", "ipa": "/tʃuː/", "note": "「咀嚼」，比 gnaw 更普通，不强调反复啃的动作；chew food（咀嚼食物）"},
+        {"w": "nibble", "gloss": "小口啃，轻咬", "ipa": "/ˈnɪbl/", "note": "「小口啃、轻咬」，比 gnaw 更轻柔细小；nibble at a cracker（小口啃饼干）"},
+        {"w": "erode", "gloss": "侵蚀，腐蚀", "ipa": "/ɪˈroʊd/", "note": "「侵蚀」，对应 gnaw 的抽象义，更正式；erode confidence（侵蚀信心）"}
+      ],
+      "antonyms": [
+        {"w": "soothe", "note": "抚慰（对抽象侵蚀义）"}
+      ],
+      "nuance": "gnaw 的核心是「持续性的啃咬/侵蚀」，物理上比 chew 更反复用力，比 nibble 更持久；抽象义上「gnaw at」是内心慢慢被某种情绪消磨（guilt gnaws at him），比 erode 更有动态感和痛感。"
+    },
+    {
+      "word": "benign",
+      "hl": "gn",
+      "levels": ["托福"],
+      "ipa": "/bɪˈnaɪn/",
+      "subgroup": "kngn",
+      "meaning": "adj.（肿瘤）良性的；温和无害的；和善的",
+      "etymology": "拉丁语 benignus = bene-(好) + gnus（出生，同 gnasci/nasci）= 「生来就好的」→ 天性善良的 → 温和无害的。词尾 -gn 来自拉丁语词根，g 在英语里静音。反义词 malign（恶意的）= male-(坏) + gnus。",
+      "roots": [
+        {"part": "bene-", "meaning": "好、善"},
+        {"part": "-gn (gnasci/nasci)", "meaning": "出生（g 静音）"}
+      ],
+      "phonetics": "be-NIGN，重音在后，词尾 -gn = /n/（g 静音）；整词 /bɪˈnaɪn/。",
+      "tip": "benign/malign 是完美对立词：bene-（好）vs male-（坏）+ 同一词尾 -gn。医学里良性/恶性肿瘤就是这对词。",
+      "core": "这个东西生来就带着善意——不会伤害你，你可以放心地把手伸过去。",
+      "senses": [
+        {
+          "gloss": "adj.（肿瘤）良性的",
+          "logic": "bene-好 + gnus出生 = 「生来就是好的」→ 不是恶性的增生，不会威胁生命 → 良性。医学最核心的义。",
+          "en": "The biopsy confirmed that the tumor was benign.",
+          "zh": "活检证实肿瘤是良性的。"
+        },
+        {
+          "gloss": "adj. 温和无害的，和善的",
+          "logic": "生来就好→天性善良→对人温和友善→不构成威胁。从医学扩展到对人的性格、环境、气候、政策的描述。核心判断始终是「这东西不会害你」。",
+          "en": "He gave her a benign smile and waved her through.",
+          "zh": "他给了她一个和善的微笑，挥手让她通过。"
+        }
+      ],
+      "derivatives": [
+        {"w": "malignant", "gloss": "adj.恶性的（肿瘤）；恶意的"},
+        {"w": "malign", "gloss": "v.诽谤，中伤 adj.恶意的"},
+        {"w": "benevolent", "gloss": "adj.仁慈的，慈善的"},
+        {"w": "beneficial", "gloss": "adj.有益的，有利的"}
+      ],
+      "examples": [
+        {
+          "en": "The biopsy confirmed that the tumor was benign.",
+          "zh": "活检证实肿瘤是良性的。",
+          "source": "造句"
+        },
+        {
+          "en": "a benign climate / a benign neglect",
+          "zh": "「温和的气候 / 善意的忽略（有意不干涉的政策）」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "harmless", "gloss": "无害的", "ipa": "/ˈhɑːrmləs/", "note": "「无害的」，最口语，比 benign 更泛；a harmless joke（无害的玩笑）"},
+        {"w": "gentle", "gloss": "温和的，温柔的", "ipa": "/ˈdʒentl/", "note": "「温和的」，比 benign 更侧重性格温柔，无医学义"},
+        {"w": "favorable", "gloss": "有利的，良好的", "ipa": "/ˈfeɪvərəbl/", "note": "「有利的」，对应 benign 的「温和/有利」义；favorable conditions（有利条件）"}
+      ],
+      "antonyms": [
+        {"w": "malignant", "note": "恶性的（医学）；恶意的"},
+        {"w": "malign", "note": "恶意的；诽谤（动词）"}
+      ],
+      "nuance": "benign 最重要的场景是医学（benign tumor 良性肿瘤），对应 malignant/malign；作「温和」义时比 gentle 更正式，常用于环境、气候、政策；「benign neglect」是政治学术语，指故意不干涉以让局势自然发展。"
+    },
+    {
+      "word": "resign",
+      "hl": "gn",
+      "levels": ["托福"],
+      "ipa": "/rɪˈzaɪn/",
+      "subgroup": "kngn",
+      "meaning": "v. 辞职；放弃（权利）；（resign oneself to）听从，接受",
+      "etymology": "拉丁语 resignare = re-(撤回) + signare(签名/盖印) = 「撤回签名」→ 放弃职位。词尾 -sign/-gn 中 g 静音，但派生词 resignation /ˌrezɪɡˈneɪʃn/ 中 g 复活——这是 gn 词族的重要规律。",
+      "roots": [
+        {"part": "re-", "meaning": "撤回、反向"},
+        {"part": "-sign (signare)", "meaning": "签名、标记（g 在词尾静音）"}
+      ],
+      "phonetics": "re-SIGN，重音在后，词尾 -gn = /n/（g 静音）；但 res-ig-NA-tion 中 g 复活发 /ɡ/——派生词要单独记音。",
+      "tip": "resign（辞职）→ resignation（辞职信）：gn 词尾 g 静音，但加后缀后 g 会复活，读 /ɡ/！sign→signal 也是同一规律。",
+      "core": "签过名的手，现在把名字划掉——我不干了，这个位子还给你。",
+      "senses": [
+        {
+          "gloss": "v. 辞职，放弃职位",
+          "logic": "re-撤回 + signare签名 = 「撤回自己的签名」→ 把自己签过的契约/任命撤销 → 辞职。最核心的画面：入职时签了名，离职时撤回它。",
+          "en": "The CEO resigned over the financial scandal.",
+          "zh": "CEO 因财务丑闻辞职。"
+        },
+        {
+          "gloss": "v. 放弃（权利、主张）",
+          "logic": "辞职→放弃职位→放弃任何被正式赋予的东西→放弃权利。从职位拓展到所有可以「交出去」的东西。",
+          "en": "He resigned all claims to the estate.",
+          "zh": "他放弃了对该遗产的所有主张。"
+        },
+        {
+          "gloss": "v. resign oneself to 听从，接受（命运/不可改变的事）",
+          "logic": "放弃权利→放弃抵抗→不再挣扎→认了，接受现实。这是 resign 最微妙的义：不是放弃职位，而是放弃挣扎。resignation 的双关——辞职信 / 认命——就来源于此。",
+          "en": "She resigned herself to the fact that the exam would be extremely difficult.",
+          "zh": "她接受了现实——这场考试会非常难。"
+        }
+      ],
+      "derivatives": [
+        {"w": "resignation", "gloss": "n.辞职（信）；顺从，认命"},
+        {"w": "resigned", "gloss": "adj.顺从的，逆来顺受的（认了的）"},
+        {"w": "sign", "gloss": "v.签名 n.标记，迹象"},
+        {"w": "signal", "gloss": "n.信号 v.示意"},
+        {"w": "signature", "gloss": "n.签名，署名"}
+      ],
+      "examples": [
+        {
+          "en": "The CEO resigned over the financial scandal.",
+          "zh": "CEO 因财务丑闻辞职。",
+          "source": "造句"
+        },
+        {
+          "en": "resign oneself to / submit a resignation",
+          "zh": "「听天由命 / 提交辞呈」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "quit", "gloss": "辞职，退出", "ipa": "/kwɪt/", "note": "「辞职/退出」，最口语，比 resign 随意；quit a job（辞职）"},
+        {"w": "step down", "gloss": "卸任，下台", "ipa": "/step daʊn/", "note": "「卸任，下台」，比 resign 更委婉，常用于高级职位；step down as chairman（卸任主席）"},
+        {"w": "abdicate", "gloss": "退位，放弃（责任）", "ipa": "/ˈæbdɪkeɪt/", "note": "「退位；放弃（责任）」，专用于君主退位或严重的责任推卸；abdicate the throne（退位）"}
+      ],
+      "antonyms": [
+        {"w": "take office", "note": "就职"},
+        {"w": "assume power", "note": "掌权"}
+      ],
+      "nuance": "resign 是正式书面词，适用于所有层级的辞职；quit 最口语，带有主动舍弃感；step down 更委婉，常用于政治人物；abdicate 专指君主退位，也可比喻放弃责任（abdicate responsibility）。"
+    },
+    {
+      "word": "assign",
+      "hl": "gn",
+      "levels": ["托福"],
+      "ipa": "/əˈsaɪn/",
+      "subgroup": "kngn",
+      "meaning": "v. 分配，指派；（任务/工作）布置；转让（财产）",
+      "etymology": "拉丁语 assignare = ad-(向) + signare(签名/标记) = 「向某人签名/标记」→ 指定给某人。同 sign（标记）、signal、resign（撤回签名）同根。assignment（作业/任务）是其名词派生，gn 之后 g 复活读 /ɡ/：as-sign-MENT /əˈsaɪnmənt/（此处 g 仍静音）。",
+      "roots": [
+        {"part": "as- (ad-)", "meaning": "向、朝"},
+        {"part": "-sign (signare)", "meaning": "签名、标记（g 在词尾静音）"}
+      ],
+      "phonetics": "as-SIGN，重音在后，词尾 -gn = /n/（g 静音）；assignment 中 gn 也静音 /əˈsaɪnmənt/。",
+      "core": "拿笔在一个东西上写下某人的名字——这个归你了，你去搞定它。",
+      "senses": [
+        {
+          "gloss": "v. 分配，分派（任务、工作）",
+          "logic": "ad-向 + signare标记 = 「在东西上做标记，然后指向某人」→ 把任务/工作指定给特定的人 → 分配。核心是「打上归属标记」。",
+          "en": "Each student was assigned a topic for the final presentation.",
+          "zh": "每位学生被分配了一个期末展示题目。"
+        },
+        {
+          "gloss": "v. 指派，委派（人到岗位）",
+          "logic": "把任务标记给某人→把人也标记到某位置→派遣/任命。从分配东西到分配人。",
+          "en": "She was assigned to the company's London office.",
+          "zh": "她被派驻到公司的伦敦办事处。"
+        },
+        {
+          "gloss": "v. 转让（财产、权利）",
+          "logic": "标记给某人→在法律文件上签名过户→正式转让。法律域的专业义，「签名」的动作在此最字面。",
+          "en": "He assigned the patent rights to the university.",
+          "zh": "他将专利权转让给了大学。"
+        }
+      ],
+      "derivatives": [
+        {"w": "assignment", "gloss": "n.作业，任务；分配"},
+        {"w": "assignee", "gloss": "n.受让人，受托人"},
+        {"w": "assignor", "gloss": "n.转让人，让与人"},
+        {"w": "designate", "gloss": "v.指定，标出，任命"},
+        {"w": "sign", "gloss": "v.签名 n.标记，符号"}
+      ],
+      "examples": [
+        {
+          "en": "Each student was assigned a topic for the final presentation.",
+          "zh": "每位学生被分配了一个期末展示题目。",
+          "source": "造句"
+        },
+        {
+          "en": "assign a task / be assigned to a post",
+          "zh": "「分配任务 / 被派驻某职位」——主动和被动的高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "allocate", "gloss": "分配（资源/资金）", "ipa": "/ˈæləkeɪt/", "note": "「分配（资源/资金）」，比 assign 更强调按比例分配资源；allocate a budget（分配预算）"},
+        {"w": "delegate", "gloss": "委派，授权", "ipa": "/ˈdelɪɡeɪt/", "note": "「委派、授权」，比 assign 更强调把权力或职责向下交托；delegate authority（授权）"},
+        {"w": "designate", "gloss": "指定，任命", "ipa": "/ˈdezɪɡneɪt/", "note": "「指定、任命」，比 assign 更正式，强调官方指定；designate sb as spokesperson（指定某人为发言人）"}
+      ],
+      "antonyms": [
+        {"w": "withdraw", "note": "撤回（任务/分配）"},
+        {"w": "revoke", "note": "取消、撤销"}
+      ],
+      "nuance": "assign 是最通用的「指派/分配」，可用于任务、角色、财产；allocate 专指资源的按比例分配（钱、时间、空间）；delegate 强调授权向下转让，带有信任含义；designate 是正式的官方指定，多用于职位或区域。"
+    },
+    {
+      "word": "campaign",
+      "hl": "gn",
+      "levels": ["托福"],
+      "ipa": "/kæmˈpeɪn/",
+      "subgroup": "kngn",
+      "meaning": "n. 运动，行动；竞选活动；军事行动  v. 参加运动；开展活动",
+      "etymology": "法语 campagne「乡野、战场」，源自拉丁语 campus（平地、广场）。「在广阔平原上展开的军事行动」→ 战役 → 有组织的社会运动。词尾 -gn 来自法语，g 在英语化后静音（读 /n/）。",
+      "roots": [
+        {"part": "camp- (campus)", "meaning": "平地、战场"},
+        {"part": "-aign (法语词尾)", "meaning": "g 静音，读 /eɪn/"}
+      ],
+      "phonetics": "cam-PAIGN，重音在后，词尾 -gn = /n/（g 静音）；-paign = /peɪn/。",
+      "core": "在广阔的平原上拉开阵势——有计划、有目标、有期限的一场仗，打完了就收兵。",
+      "senses": [
+        {
+          "gloss": "n. 军事行动，战役",
+          "logic": "campus平地 + campagne乡野/战场 = 「在开阔地上展开的军事行动」→ 战役。这是最原始的义。",
+          "en": "The general planned a spring campaign to retake the occupied territory.",
+          "zh": "将军策划了一场春季战役以夺回被占领土。"
+        },
+        {
+          "gloss": "n. 竞选活动",
+          "logic": "军事战役→争夺权力的战斗→选举中争夺选票的有组织行动→竞选活动。从战场到投票站，斗争的本质不变。",
+          "en": "The presidential campaign lasted nearly two years.",
+          "zh": "总统竞选活动持续了近两年。"
+        },
+        {
+          "gloss": "n./v. 运动，有组织的行动（社会/商业等）",
+          "logic": "战役→有组织有目标的持续行动→不限于军事和选举→任何有策略的推广/宣传/社会行动。比如广告战役(ad campaign)、环保运动。",
+          "en": "The environmental group launched a campaign to reduce plastic waste.",
+          "zh": "环保团体发起了一场减少塑料垃圾的运动。"
+        }
+      ],
+      "derivatives": [
+        {"w": "campus", "gloss": "n.校园（字面：平地/广场）"},
+        {"w": "champion", "gloss": "n.冠军，拥护者（原指战场上的勇士）"},
+        {"w": "campaigner", "gloss": "n.活动家，运动参与者"},
+        {"w": "encampment", "gloss": "n.营地，扎营"}
+      ],
+      "examples": [
+        {
+          "en": "The environmental group launched a campaign to reduce plastic waste.",
+          "zh": "环保团体发起了一场减少塑料垃圾的运动。",
+          "source": "造句"
+        },
+        {
+          "en": "election campaign / advertising campaign",
+          "zh": "「选举活动 / 广告战役」——政治和商业高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "drive", "gloss": "运动，推进活动", "ipa": "/draɪv/", "note": "「运动、推进活动」，比 campaign 更口语；a fundraising drive（募捐活动）"},
+        {"w": "initiative", "gloss": "倡议，主动行动", "ipa": "/ɪˈnɪʃətɪv/", "note": "「主动行动、倡议」，比 campaign 更强调开创性；a government initiative（政府倡议）"},
+        {"w": "crusade", "gloss": "圣战式运动", "ipa": "/kruːˈseɪd/", "note": "「圣战式运动」，比 campaign 更充满激情甚至狂热；a crusade for human rights（为人权而战）"}
+      ],
+      "antonyms": [
+        {"w": "inaction", "note": "不作为"},
+        {"w": "opposition", "note": "反对活动（语境反义）"}
+      ],
+      "nuance": "campaign 强调「有组织、有目标的持续行动」，可以是政治（election campaign）、商业（marketing campaign）或社会（awareness campaign）；drive 更口语，强调推动力；crusade 带强烈情感色彩，暗示为正义不惜代价的斗争。"
+    },
+    {
+      "word": "sovereign",
+      "hl": "gn",
+      "levels": ["托福"],
+      "ipa": "/ˈsɒvrɪn/",
+      "subgroup": "kngn",
+      "meaning": "n. 君主，元首  adj. 最高权力的；独立自主的",
+      "etymology": "古法语 souverain，源自拉丁语 superanus = super-(上方) + -anus（属于……的）= 「在最高位的」→ 君主。词尾 -gn 是法语拼写遗留，g 在英语中静音（同 campaign、champagne）。注意：ign 在此处读 /ɪn/，不是通常的 /aɪn/（区别于 sign/resign）。",
+      "roots": [
+        {"part": "sover- (super-)", "meaning": "上方、最高"},
+        {"part": "-eign (法语词尾)", "meaning": "g 静音，读 /rɪn/"}
+      ],
+      "phonetics": "SOV-er-eign，重音在首，三音节，词尾 -reign = /rɪn/（不是 /raɪn/！）；整词 /ˈsɒvrɪn/。",
+      "tip": "sovereign 的 -eign 读 /rɪn/ 不是 /raɪn/——不同于 sign/reign（国王统治，/reɪn/，注意 reign 也有 gn）。sovereign 是独立词，需单独记音。",
+      "core": "站在金字塔的最顶端——头顶上再没有别人，谁也管不了我。",
+      "senses": [
+        {
+          "gloss": "n. 君主，元首，最高统治者",
+          "logic": "super-上方 + -anus属于…的 = 「属于最高位置的」→ 站在权力金字塔顶端的那个人 → 君主。最字面的义。",
+          "en": "The sovereign addressed the nation on the anniversary of independence.",
+          "zh": "君主在独立周年纪念日向全国发表讲话。"
+        },
+        {
+          "gloss": "adj. 拥有最高权力的，独立自主的（国家/政府）",
+          "logic": "君主→拥有不受外部干涉的最高权力→主权独立。从个人扩展到国家——sovereign state 就是说这个国家自己就是自己的「君主」，不对任何外部势力低头。",
+          "en": "The treaty confirmed the country's status as a sovereign nation.",
+          "zh": "条约确认了该国作为主权国家的地位。"
+        }
+      ],
+      "derivatives": [
+        {"w": "sovereignty", "gloss": "n.主权，最高统治权"},
+        {"w": "reign", "gloss": "n./v.统治，在位（注意发音/reɪn/, gn静音但元音不同）"},
+        {"w": "superior", "gloss": "adj.上级的，更好的（同词根super-）"},
+        {"w": "supreme", "gloss": "adj.最高的，至高无上的"}
+      ],
+      "examples": [
+        {
+          "en": "The treaty confirmed the country's status as a sovereign nation.",
+          "zh": "条约确认了该国作为主权国家的地位。",
+          "source": "造句"
+        },
+        {
+          "en": "sovereign power / sovereign debt",
+          "zh": "「最高权力 / 国家债务」——政治和金融高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "monarch", "gloss": "君主，国王/女王", "ipa": "/ˈmɒnək/", "note": "「君主」义的近义词，专指世袭的国王/女王，比 sovereign 更具体"},
+        {"w": "ruler", "gloss": "统治者", "ipa": "/ˈruːlər/", "note": "「统治者」，比 sovereign 更泛，可指任何有权力的人"},
+        {"w": "autonomous", "gloss": "自治的，自主的", "ipa": "/ɔːˈtɒnəməs/", "note": "「自治的、自主的」，对应 sovereign 的「独立自主」义；an autonomous region（自治区）"}
+      ],
+      "antonyms": [
+        {"w": "subject", "note": "臣民（对君主义）"},
+        {"w": "dependent", "note": "依附的，附属的（对主权义）"}
+      ],
+      "nuance": "sovereign 作名词时是「君主」的书面正式词，monarch 特指世袭制君主，ruler 最泛；作形容词时 sovereign 强调「拥有最高不受外部干涉的权力」（sovereign state 主权国家），autonomous 强调「有自治权但可能隶属于更大实体」（autonomous region 自治区但非独立国）。"
+    }
+  ]
+}

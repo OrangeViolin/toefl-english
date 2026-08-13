@@ -1,0 +1,4472 @@
+{
+  "id": "toefl-reading",
+  "combo": "toefl-reading",
+  "title": "托福阅读填词 · 四大主题高频词汇",
+  "sound": "",
+  "subtitle": "自然科学 · 艺术 · 社会科学 · 现代科技——阅读填词题高频学术词汇全覆盖",
+  "intro": "托福阅读的「填词题」（Vocabulary Questions）考查你在上下文语境中理解学术词汇的能力。这类题目不要求你认识单词的所有意思，但要求你知道它在当前语境中的精确含义。本页按照托福阅读四大高频主题——自然科学、艺术、社会科学、现代科技——整理了 48 个核心学术词汇，每个词都配有核心意象串解（一词多义的推理脉络）、语境例句、同义/衍生词。集中火力攻克这些词，阅读填词题的命中率会大幅提升。",
+  "subgroups": [
+    {
+      "key": "natural-science",
+      "tag": "自然科学",
+      "label": "🌿 Natural Science 自然科学",
+      "desc": "生物、生态、地质、气候、遗传——托福阅读最常见的自然科学类文章主题。掌握这些词，自然科学类文章的理解障碍将大幅降低。"
+    },
+    {
+      "key": "art",
+      "tag": "艺术",
+      "label": "🎨 Art 艺术",
+      "desc": "文艺复兴、绘画、雕塑、音乐、建筑——托福阅读中艺术史类文章的核心词汇。很多词兼有「创作」和「感知」两层意思。"
+    },
+    {
+      "key": "social-science",
+      "tag": "社会科学",
+      "label": "👥 Social Science 社会科学",
+      "desc": "心理、社会、政治、经济、人类学——描述人类行为、社会结构和文化现象的高频学术词汇。大量 -ology（学科）和 -ism（主义/制度）词缀可批量掌握。"
+    },
+    {
+      "key": "modern-tech",
+      "tag": "现代科技",
+      "label": "💻 Modern Technology 现代科技",
+      "desc": "计算机、工程、数据、生物技术——托福阅读中科技类文章的核心词汇。注意精确区分科技义和日常义，这是填词题最爱考的陷阱。"
+    }
+  ],
+  "words": [
+    {
+      "word": "ecology",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/iˈkɑːlədʒi/",
+      "subgroup": "natural-science",
+      "etymology": "希腊语 oikos（家）+ logos（学问）。德国生物学家 Haeckel 于 1866 年造词：把大自然看作一个「家」，研究这个家里所有成员之间的关系。画面感：推开一扇巨大的门，里面的居民有树、有鸟、有虫、有水——每个人都有自己的位置。",
+      "roots": [
+        {
+          "part": "eco-",
+          "meaning": "家、居住环境（希腊语 oikos）"
+        },
+        {
+          "part": "-logy",
+          "meaning": "学科、学问（希腊语 logos）"
+        }
+      ],
+      "phonetics": "重音在第二音节 /ˈkɑː/。eco- 读 /i/ 不是 /e/。常见错误：把 eco- 读成 /ˈekoʊ/（像 echo），正确是 /iˈkɑː/。",
+      "tip": "eco = 家，logy = 学问。——「研究地球这个大家」就是生态学。",
+      "examples": [
+        {
+          "en": "The oil spill caused devastating damage to the local ecology.",
+          "zh": "石油泄漏对当地生态环境造成了毁灭性破坏。",
+          "source": "造句"
+        },
+        {
+          "en": "ecological balance",
+          "zh": "生态平衡",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "environment",
+          "ipa": "/ɪnˈvaɪrənmənt/",
+          "gloss": "n. 自然环境",
+          "note": "比 ecology 更泛，不强调生物间关系，仅指周围客观条件"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "pollution",
+          "note": "n. 污染——生态的破坏面"
+        }
+      ],
+      "nuance": "ecology 强调生物与环境之间的相互关系网，是一套动态系统；environment 只是「周围条件」的客观描述。对比：protect the environment（保护环境=减少污染），study the ecology（研究生态=分析食物链、能量流）。",
+      "core": "一个巨大的、活着的家，每一只虫、每一棵树都有自己的房间和角色，彼此串门、互相依存。",
+      "senses": [
+        {
+          "gloss": "n. 生态（生物与环境的关系系统）",
+          "logic": "从「家」的意象延伸——家的本质不是房子，而是住在里面的人之间的关系。生态就是一个地区所有生物之间、生物与环境之间的「家庭关系网」。",
+          "en": "The introduction of a non-native species can disrupt the entire ecology of a lake.",
+          "zh": "引入外来物种可能破坏整个湖泊的生态。"
+        },
+        {
+          "gloss": "n. 生态学（学科）",
+          "logic": "研究这个「家」（eco）的学问（-logy）——这正是 ecology 的词源本义。",
+          "en": "She decided to major in ecology after a field trip to the Amazon.",
+          "zh": "去亚马逊实地考察后，她决定主修生态学。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "ecological",
+          "gloss": "a. 生态的；生态学的"
+        },
+        {
+          "w": "ecologist",
+          "gloss": "n. 生态学家"
+        },
+        {
+          "w": "ecosystem",
+          "gloss": "n. 生态系统"
+        }
+      ]
+    },
+    {
+      "word": "species",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈspiːsiːz/",
+      "subgroup": "natural-science",
+      "etymology": "拉丁语 species（种类、外观、形式），源自 PIE 词根 *spek-（看、观察）。核心画面：你看到一群长得一样的生物，就把它们归成一类——「看上去一类的」就是 species。",
+      "roots": [
+        {
+          "part": "spec-",
+          "meaning": "看、外观（拉丁语 specere，看）"
+        }
+      ],
+      "phonetics": "单复数同形都是 species。结尾 /siːz/，注意 /s/ 是清音。常见错误：读成 /ˈspiːʃiːz/（把 s 读成 sh）。",
+      "tip": "spec = 看 → 「看上去长一样的」就是一个物种。",
+      "examples": [
+        {
+          "en": "There are over 8 million species of animals on Earth.",
+          "zh": "地球上有超过 800 万种动物。",
+          "source": "造句"
+        },
+        {
+          "en": "endangered species",
+          "zh": "濒危物种",
+          "source": "高频搭配"
+        },
+        {
+          "en": "On the Origin of Species (Darwin, 1859)",
+          "zh": "《物种起源》（达尔文，1859）",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "genus",
+          "ipa": "/ˈdʒiːnəs/",
+          "gloss": "n. 属（生物分类，比物种高一级）",
+          "note": "生物分类学专业词汇，多个相似物种组成一个属"
+        },
+        {
+          "w": "breed",
+          "ipa": "/briːd/",
+          "gloss": "n. 品种（人工培育的变种）",
+          "note": "多用于家养动物/植物的人工品种，非野生自然物种"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "individual",
+          "note": "n. 个体——物种是一群，个体是一个"
+        }
+      ],
+      "nuance": "species 是生物学最基础的分类单位，强调「可以自然交配并产生可育后代」的群体。breed 是人工培育的亚种（狗有金毛、哈士奇等品种）。genus 是 species 的上一级分类（狮子+老虎+豹都属于豹属 Panthera）。托福阅读中几乎只考生物学本义。",
+      "core": "大自然画了一幅画，把画里每一类长得像、能互相生孩子的生物圈成一个圈——一个圈就是一个物种。",
+      "senses": [
+        {
+          "gloss": "n.（生物学）物种",
+          "logic": "核心意象：一种特定的「外观/形式」（spec-=看）。你看到一群长得很像、能互相繁殖的生物体——这就是一个物种。",
+          "en": "The giant panda is an endangered species native to China.",
+          "zh": "大熊猫是中国特有的濒危物种。"
+        },
+        {
+          "gloss": "n. 种类，类型",
+          "logic": "从「外观/形式」延伸到任何有共同特征的类别——不限于生物。",
+          "en": "A totally new species of crime has emerged in the digital age.",
+          "zh": "数字时代出现了一种全新的犯罪类型。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "speciate",
+          "gloss": "v. 形成新物种"
+        },
+        {
+          "w": "speciation",
+          "gloss": "n. 物种形成"
+        },
+        {
+          "w": "specific",
+          "gloss": "a. 具体的、特定的——属于某一个 species 的→特定的"
+        },
+        {
+          "w": "specimen",
+          "gloss": "n. 标本、样本——某个 species 的代表个体"
+        }
+      ]
+    },
+    {
+      "word": "evolve",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/iˈvɑːlv/",
+      "subgroup": "natural-science",
+      "etymology": "拉丁语 evolvere = ex-（向外）+ volvere（卷、转）。字面意思是「把卷着的东西展开」。画面感：像展开一卷古老的羊皮纸——每展开一截就露出新的内容，但每一截都和上一截连着。",
+      "roots": [
+        {
+          "part": "e- (ex-)",
+          "meaning": "向外、出来"
+        },
+        {
+          "part": "-volve",
+          "meaning": "卷、转（拉丁语 volvere，卷、滚动）"
+        }
+      ],
+      "phonetics": "重音在第二音节 /vɑːlv/。注意 /v/ 和 /w/ 的区别——不要说成「e-wolve」。英音 /iˈvɒlv/，美音 /iˈvɑːlv/。",
+      "tip": "e-(出来) + volve(卷) = 卷轴展开 → 事物慢慢展开自己 → 进化。",
+      "examples": [
+        {
+          "en": "Birds evolved from a group of small dinosaurs.",
+          "zh": "鸟类是从一群小型恐龙进化而来的。",
+          "source": "造句"
+        },
+        {
+          "en": "evolve over time",
+          "zh": "随时间演变",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "develop",
+          "ipa": "/dɪˈveləp/",
+          "gloss": "v. 发展、发育",
+          "note": "比 evolve 更泛，可用于任何渐进变化，不限于进化论语境"
+        },
+        {
+          "w": "adapt",
+          "ipa": "/əˈdæpt/",
+          "gloss": "v. 适应",
+          "note": "强调「为了适应环境而改变」，evolve 不一定有明确适应目标"
+        },
+        {
+          "w": "transform",
+          "ipa": "/trænsˈfɔːrm/",
+          "gloss": "v. 彻底改变",
+          "note": "强调剧变，不一定是渐进的"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "stagnate",
+          "note": "v. 停滞"
+        },
+        {
+          "w": "devolve",
+          "note": "v. 退化、权力下放——同词根家族，但方向相反"
+        }
+      ],
+      "nuance": "evolve 的核心是「卷轴慢慢展开」——一个渐进的、有内在逻辑的展开过程。develop 更通用，不强调内在逻辑；adapt 强调外部驱动（为了适应环境而变）；transform 强调突变。托福阅读中 evolve 通常是「进化」（生物义），但也常考「逐步发展」（抽象义）。",
+      "core": "一卷古老的羊皮纸被人慢慢展开——每展开一截就露出新的内容，但你回头看，每一截都和上一截连着。",
+      "senses": [
+        {
+          "gloss": "v.（生物）进化",
+          "logic": "从「卷轴展开」的意象延伸——物种的变化不是随机的跳跃，而是像一个故事一样在漫长时间里一截一截展开，每一步都和前面连着。",
+          "en": "Whales evolved from land-dwelling mammals over millions of years.",
+          "zh": "鲸鱼在数百万年间从陆生哺乳动物进化而来。"
+        },
+        {
+          "gloss": "v. 逐步发展、演变",
+          "logic": "卷轴也可以是非生物的——一个想法、一套制度、一个人的性格，都可以像卷轴一样慢慢展开。",
+          "en": "The company's business model has evolved significantly since its founding.",
+          "zh": "这家公司自成立以来，商业模式发生了显著的演变。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "evolution",
+          "gloss": "n. 进化、演变"
+        },
+        {
+          "w": "evolutionary",
+          "gloss": "a. 进化的、演变的"
+        },
+        {
+          "w": "revolve",
+          "gloss": "v. 旋转——re-(回)+volve(转)=转回去→旋转"
+        },
+        {
+          "w": "involve",
+          "gloss": "v. 涉及——in-(进入)+volve(卷)=卷进去→卷入、涉及"
+        },
+        {
+          "w": "volume",
+          "gloss": "n. 卷、册、音量——一卷书 / 声音的卷度"
+        }
+      ]
+    },
+    {
+      "word": "organism",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈɔːrɡənɪzəm/",
+      "subgroup": "natural-science",
+      "etymology": "源自希腊语 organon（工具、器具）→ 拉丁语 organum → organ（器官）+ -ism（体系）。画面感：一个生命体就是一台由多个功能部件（器官）组成的活的机器——每个零件各司其职，组合在一起就「活了」。",
+      "roots": [
+        {
+          "part": "organ",
+          "meaning": "器官、功能部件（希腊语 organon，工具）"
+        },
+        {
+          "part": "-ism",
+          "meaning": "名词后缀，表「体系、状态、特征」"
+        }
+      ],
+      "phonetics": "重音在第一音节 /ˈɔːr/。注意结尾 /ɪzəm/ 不要吞音——很多人懒读成 /ɪzm/。",
+      "tip": "organ(器官) + ism(体系) = 「由器官组成的活体体系」就是生物。",
+      "examples": [
+        {
+          "en": "A single-celled organism can perform all the functions necessary for life.",
+          "zh": "一个单细胞生物就能完成生命所需的所有功能。",
+          "source": "造句"
+        },
+        {
+          "en": "genetically modified organism (GMO)",
+          "zh": "转基因生物",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "creature",
+          "ipa": "/ˈkriːtʃər/",
+          "gloss": "n. 生物、动物",
+          "note": "偏重「受造物」，带文学色彩，不如 organism 科学中性"
+        },
+        {
+          "w": "life form",
+          "ipa": "/ˈlaɪf fɔːrm/",
+          "gloss": "n. 生命形式",
+          "note": "更广泛的科学用语，包括潜在的外星生命等"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "inanimate object",
+          "note": "n. 无生命物体"
+        }
+      ],
+      "nuance": "organism 强调「由器官/部件组成的、能自主运转的活系统」。这是它和 creature、animal 的根本区别。一个细菌是 organism（尽管没有器官），因为它是一个完整的、自我维持的活系统。托福阅读中常出现在生物、生态类文章。",
+      "core": "一个微型自给自足的工厂——每个零件有自己的活，但离了整体就活不了，组合在一起就成一台「活着」的机器。",
+      "senses": [
+        {
+          "gloss": "n. 生物，有机体",
+          "logic": "organ(器官)+ism(体系)=由功能部件组织起来的活体系。任何能自我维持生命的完整个体。",
+          "en": "The organism was so small that it could only be seen under a microscope.",
+          "zh": "这种生物体太小了，只能在显微镜下看到。"
+        },
+        {
+          "gloss": "n. 有机体系（比喻义）",
+          "logic": "从「活的系统」延伸到人类社会/组织——像一个活的生物体一样，各部分相互依存。",
+          "en": "He viewed the city as a living organism, with streets as its arteries.",
+          "zh": "他把城市看作一个活的有机体，街道就是它的动脉。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "organ",
+          "gloss": "n. 器官、风琴"
+        },
+        {
+          "w": "organic",
+          "gloss": "a. 有机的、器官的"
+        },
+        {
+          "w": "organize",
+          "gloss": "v. 组织——使各部分像一个有机体一样协调运转"
+        },
+        {
+          "w": "organization",
+          "gloss": "n. 组织、机构"
+        }
+      ]
+    },
+    {
+      "word": "ecosystem",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈiːkoʊsɪstəm/",
+      "subgroup": "natural-science",
+      "etymology": "英国生态学家 Arthur Tansley 于 1935 年造词：eco-（希腊语 oikos，家）+ system（希腊语 systema，组合在一起）。画面感：把大自然看成一个完整的家庭运转系统——阳光是收入，植物是厨师，动物是食客，微生物是清洁工。",
+      "roots": [
+        {
+          "part": "eco-",
+          "meaning": "家、环境（希腊语 oikos）"
+        },
+        {
+          "part": "system",
+          "meaning": "系统（希腊语 systema，组合体）"
+        }
+      ],
+      "phonetics": "重音在第一音节 /ˈiː/。eco 读 /ˈiːkoʊ/。注意：和 ecology 的 eco- 发音不同（ecology 中 eco- 读 /iˈkɑː/），很多人搞混。",
+      "tip": "eco(家) + system(系统) = 「家里的运转系统」——阳光进、植物长、动物吃、微生物分解，一个闭环。",
+      "examples": [
+        {
+          "en": "Coral reefs are among the most diverse ecosystems on the planet.",
+          "zh": "珊瑚礁是地球上最多样化的生态系统之一。",
+          "source": "造句"
+        },
+        {
+          "en": "disrupt the ecosystem",
+          "zh": "破坏生态系统",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "biome",
+          "ipa": "/ˈbaɪoʊm/",
+          "gloss": "n. 生物群落区",
+          "note": "比 ecosystem 更大尺度的生态单位，按气候和植被类型划分"
+        },
+        {
+          "w": "habitat",
+          "ipa": "/ˈhæbɪtæt/",
+          "gloss": "n. 栖息地",
+          "note": "强调生物「住的地方」，不一定是完整的能量循环系统"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "ecosystem 和 habitat 是托福阅读常考的区分。ecosystem 强调「能量和物质的循环系统」（阳光→植物→动物→微生物→土壤），是一个动态的过程网。habitat 只是「某个物种居住的物理环境」（森林、沙漠、水）。一个 ecosystem 包含多个 habitat。",
+      "core": "一个看不见的流水线——太阳把能量倒进来，植物接住，动物吃植物，微生物打扫残渣，一切都循环往复、环环相扣。",
+      "senses": [
+        {
+          "gloss": "n. 生态系统",
+          "logic": "从「家(eco)+系统(system)」的意象——不是静止的家，而是一个有能量输入、物质循环、废物处理的自运转体系。",
+          "en": "The reintroduction of wolves restored the natural balance of the Yellowstone ecosystem.",
+          "zh": "重新引入狼群恢复了黄石生态系统的自然平衡。"
+        },
+        {
+          "gloss": "n.（比喻义）生态圈、生态体系",
+          "logic": "从自然生态系统延伸至商业/技术/社会领域——一个相互依存、有输入输出的网络。",
+          "en": "Apple created a closed ecosystem of hardware, software, and services.",
+          "zh": "苹果公司打造了一个硬件、软件和服务的封闭生态体系。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "ecology",
+          "gloss": "n. 生态学——研究生态系统运作的学科"
+        },
+        {
+          "w": "ecological",
+          "gloss": "a. 生态的"
+        }
+      ]
+    },
+    {
+      "word": "fossil",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈfɑːsl/",
+      "subgroup": "natural-science",
+      "etymology": "拉丁语 fossilis（挖出来的），源自 fodere（挖）。最早泛指任何从地里挖出来的东西，后来专门用来指「挖出来的石化生物遗骸」。画面感：一个人拿着铲子在地上挖，挖出一块石头，石头里嵌着一片远古的叶子。",
+      "roots": [
+        {
+          "part": "foss-",
+          "meaning": "挖、掘（拉丁语 fodere）"
+        }
+      ],
+      "phonetics": "/ˈfɑːsl/ —— ss 读 /s/（清音），不是 /z/。o 美音读 /ɑː/（像 father 里的 a），英音读 /ɒ/。结尾 il 不要加元音。",
+      "tip": "foss = 挖 → 从地里挖出来的石化物 → 化石。同源词：fossorial（掘土的）。",
+      "examples": [
+        {
+          "en": "The fossil of a Tyrannosaurus rex was discovered in Montana.",
+          "zh": "在蒙大拿州发现了一具霸王龙化石。",
+          "source": "造句"
+        },
+        {
+          "en": "fossil fuel",
+          "zh": "化石燃料（煤、石油、天然气）",
+          "source": "高频搭配"
+        },
+        {
+          "en": "living fossil",
+          "zh": "活化石（如银杏、鲎）",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "relic",
+          "ipa": "/ˈrelɪk/",
+          "gloss": "n. 遗迹、遗物",
+          "note": "不一定是石化的，可以是任何古老保存下来的东西，偏人文"
+        },
+        {
+          "w": "remains",
+          "ipa": "/rɪˈmeɪnz/",
+          "gloss": "n. 遗骸、残留物",
+          "note": "更宽泛，不一定是石化的，也不一定是古代的"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "living being",
+          "note": "n. 活着的生物——化石是死的、石化的"
+        }
+      ],
+      "nuance": "fossil 有两个截然不同的方向：(1) 名词「从地里挖出来的石化生物遗骸」；(2) 形容词「陈腐的、僵化的」——因为化石是死掉的、石化的、不再变化的，所以用来形容僵化不变的人或观念（fossil ideas 陈腐观念）。托福阅读中几乎只考第 1 义。",
+      "core": "一块被时间冻住的骨头或叶子——它曾经是活的，但现在变成了石头，静静地躺在地下，等着有人挖出来读它的故事。",
+      "senses": [
+        {
+          "gloss": "n. 化石",
+          "logic": "从「挖(foss-)出来的东西」→ 特指从地下发掘出的石化生物遗骸。",
+          "en": "Paleontologists carefully extracted the fossil from the rock layer.",
+          "zh": "古生物学家小心翼翼地从岩层中取出化石。"
+        },
+        {
+          "gloss": "a. 陈腐的、僵化的（比喻义）",
+          "logic": "化石 = 死了的、石化的、不再变化的 → 用来形容僵化过时、拒绝变化的人或观念。历史偶合，非同一感觉引申。",
+          "en": "His fossil views on education have no place in modern schools.",
+          "zh": "他那僵化过时的教育观念在现代学校中没有立足之地。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "fossilize",
+          "gloss": "v. 使变成化石；使僵化"
+        },
+        {
+          "w": "fossilization",
+          "gloss": "n. 石化作用"
+        },
+        {
+          "w": "fossiliferous",
+          "gloss": "a. 含化石的"
+        }
+      ]
+    },
+    {
+      "word": "erosion",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ɪˈroʊʒn/",
+      "subgroup": "natural-science",
+      "etymology": "拉丁语 erosionem，源自 erodere = e-（离开，去掉）+ rodere（啃、咬）。字面意思是「啃掉」。画面感：风和水像一只看不见的大老鼠，趴在岩石上，用小牙一口一口地啃，啃下来的碎屑被卷走。",
+      "roots": [
+        {
+          "part": "e- (ex-)",
+          "meaning": "离开、去掉"
+        },
+        {
+          "part": "ros- (rod-)",
+          "meaning": "啃、咬（拉丁语 rodere，啃咬）"
+        }
+      ],
+      "phonetics": "/ɪˈroʊʒn/ —— 注意中间的 /ʒn/（像「日嗯」连读），不要读成 /ʃn/。重音在第二音节。",
+      "tip": "e-(掉) + ros(咬) = 「咬掉」→ 水把土地「咬掉」→ 侵蚀。同源词：rodent（啮齿动物——喜欢啃的动物）。",
+      "examples": [
+        {
+          "en": "Deforestation has accelerated soil erosion in the region.",
+          "zh": "森林砍伐加速了该地区的水土流失。",
+          "source": "造句"
+        },
+        {
+          "en": "coastal erosion",
+          "zh": "海岸侵蚀",
+          "source": "高频搭配"
+        },
+        {
+          "en": "the erosion of trust",
+          "zh": "信任的逐渐丧失",
+          "source": "抽象搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "corrosion",
+          "ipa": "/kəˈroʊʒn/",
+          "gloss": "n. 腐蚀（化学）",
+          "note": "erosion 是物理性（风/水带走），corrosion 是化学性（酸/锈溶解）"
+        },
+        {
+          "w": "weathering",
+          "ipa": "/ˈweðərɪŋ/",
+          "gloss": "n. 风化",
+          "note": "偏岩石在原地分解，erosion 偏被外力搬运带走"
+        },
+        {
+          "w": "deterioration",
+          "ipa": "/dɪˌtɪriəˈreɪʃn/",
+          "gloss": "n. 恶化、退化",
+          "note": "更广泛，不限于地质语境"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "deposition",
+          "note": "n. 沉积——侵蚀的反面，物质被搬运后沉积下来"
+        },
+        {
+          "w": "accretion",
+          "note": "n. 堆积、增长——物质逐渐增加，而非被带走"
+        }
+      ],
+      "nuance": "erosion vs corrosion 是托福阅读常见混淆点。erosion = 风吹水冲把东西带走（物理过程）；corrosion = 化学物质让东西腐烂生锈（化学过程）。抽象义中，erosion 强调「一点一点被磨掉」（erosion of confidence 信心的逐渐丧失），而 deterioration 只是指「变坏」，不强调「磨/啃」的画面感。",
+      "core": "一只看不见的大老鼠趴在山坡上，用它的小牙一口一口地啃土，啃完就卷走——风是这只老鼠，水也是这只老鼠。",
+      "senses": [
+        {
+          "gloss": "n. 侵蚀、腐蚀（地质）",
+          "logic": "e-(掉)+rodere(啃)→风和水像老鼠一样把岩石和土壤一口一口地啃掉，然后带走。",
+          "en": "The Grand Canyon was formed by millions of years of water erosion.",
+          "zh": "大峡谷是由数百万年的水流侵蚀形成的。"
+        },
+        {
+          "gloss": "n. 削弱、逐渐丧失（抽象义）",
+          "logic": "从「物理啃掉」延伸到「抽象事物被一点一点蚕食」——同样是一口一口慢慢消失的感觉。",
+          "en": "Years of low pay led to a gradual erosion of morale among the staff.",
+          "zh": "多年低薪导致员工士气的逐渐消磨。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "erode",
+          "gloss": "v. 侵蚀、腐蚀；逐渐削弱"
+        },
+        {
+          "w": "erosive",
+          "gloss": "a. 侵蚀性的"
+        },
+        {
+          "w": "rodent",
+          "gloss": "n. 啮齿动物——啃东西的动物，同词根 rod-"
+        }
+      ]
+    },
+    {
+      "word": "sediment",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈsedɪmənt/",
+      "subgroup": "natural-science",
+      "etymology": "拉丁语 sedimentum，源自 sedere（坐、沉淀）。字面意思是「坐下来的东西」。画面感：搅浑一杯泥水，然后看着细小的颗粒一颗一颗地慢慢沉下去，水变清了，它们安静地「坐」在杯底。",
+      "roots": [
+        {
+          "part": "sed- (sid-)",
+          "meaning": "坐、沉淀（拉丁语 sedere，坐）"
+        }
+      ],
+      "phonetics": "重音在第一音节 /ˈsed/。注意 /-ɪmənt/ 的发音，不要读成 /-ment/。",
+      "tip": "sed = sit(坐) → 「坐下去的东西」→ 悬浮颗粒坐下来 → 沉积物。同源词：sedentary（久坐的）、president（坐在前面的人=总统）。",
+      "examples": [
+        {
+          "en": "The river carries tons of sediment downstream each year.",
+          "zh": "这条河每年向下游携带数吨沉积物。",
+          "source": "造句"
+        },
+        {
+          "en": "sedimentary rock",
+          "zh": "沉积岩",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "deposit",
+          "ipa": "/dɪˈpɑːzɪt/",
+          "gloss": "n. 沉积物、矿床",
+          "note": "地质学中与 sediment 高度重叠，但 deposit 也可指矿产、银行存款等"
+        },
+        {
+          "w": "silt",
+          "ipa": "/sɪlt/",
+          "gloss": "n. 泥沙、淤泥",
+          "note": "特指细颗粒的、被水搬运的沉积物"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "suspension",
+          "note": "n. 悬浮——颗粒还没「坐下来」，飘在水中"
+        }
+      ],
+      "nuance": "sediment 的核心是「sit = 坐」——东西飘够了，坐下来、沉下来。它强调从悬浮到沉淀的过程结果。silt 只是描述「细泥」这种物质本身，不强调「沉」的动作。deposit 更中性，泛指任何沉淀或堆积物。托福阅读中 sediment 常出现在地质/环境类文章。",
+      "core": "搅了一杯泥水，然后看着那些微小的颗粒一颗一颗慢慢地「坐下来」——水变清了，它们安静地躺在杯底。",
+      "senses": [
+        {
+          "gloss": "n. 沉淀物、沉积物",
+          "logic": "sed-(坐)→悬浮在水中的小颗粒「坐下来」了，沉到底部。这是典型的「以前在漂、现在落定了」的东西。",
+          "en": "Analyzing lake sediment can reveal climate changes over thousands of years.",
+          "zh": "分析湖泊沉积物可以揭示数千年的气候变迁。"
+        },
+        {
+          "gloss": "n. 沉渣、沉淀（日常义）",
+          "logic": "同样的「沉下去的东西」——液体底部不想要的渣滓。",
+          "en": "There was a dark sediment at the bottom of the wine bottle.",
+          "zh": "酒瓶底部有深色的沉淀物。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "sedimentary",
+          "gloss": "a. 沉积的——sedimentary rock 沉积岩"
+        },
+        {
+          "w": "sedimentation",
+          "gloss": "n. 沉积过程"
+        },
+        {
+          "w": "sedentary",
+          "gloss": "a. 久坐的——sed-(坐)+entary→一直坐着的"
+        },
+        {
+          "w": "reside",
+          "gloss": "v. 居住——re-(反复)+side(坐)→反复坐下来的地方→居住"
+        }
+      ]
+    },
+    {
+      "word": "habitat",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈhæbɪtæt/",
+      "subgroup": "natural-science",
+      "etymology": "拉丁语 habitat（它居住），源自 habitare（居住），最终来自 habere（持有、拥有）。画面感：一只北极熊推开自家冰洞的门——这片冰天雪地就是它的天然住所，所有本能都适配这里。",
+      "roots": [
+        {
+          "part": "habit-",
+          "meaning": "居住、持有（拉丁语 habitare，居住；来自 habere，持有）"
+        }
+      ],
+      "phonetics": "重音在第一音节 /ˈhæb/。注意结尾 /-ɪtæt/ 两个短 i，不要模糊吞掉。",
+      "tip": "habit = 居住 → 「动物住的地方」→ 栖息地。同源词：inhabit（居住）、inhabitant（居民）。",
+      "examples": [
+        {
+          "en": "The destruction of natural habitats is the leading cause of species extinction.",
+          "zh": "自然栖息地的破坏是物种灭绝的主要原因。",
+          "source": "造句"
+        },
+        {
+          "en": "natural habitat",
+          "zh": "自然栖息地",
+          "source": "高频搭配"
+        },
+        {
+          "en": "in one's natural habitat",
+          "zh": "在某人如鱼得水的环境中（幽默用法）",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "environment",
+          "ipa": "/ɪnˈvaɪrənmənt/",
+          "gloss": "n. 环境",
+          "note": "最通用，不限于生物居住地"
+        },
+        {
+          "w": "niche",
+          "ipa": "/niːʃ/",
+          "gloss": "n. 生态位、壁龛",
+          "note": "不是物理空间，而是物种在生态系统中扮演的角色和功能位置"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "habitat vs environment vs ecosystem（托福阅读常考三角区分）：habitat = 某个物种住的地方（物理空间），environment = 周边的所有条件（含非生物因素），ecosystem = 一个完整的能量和物质循环系统。大熊猫的 habitat 是竹林，它的 environment 包括竹林+气候+海拔等，整个 ecosystem 还包括竹子、别的动物、土壤微生物等。",
+      "core": "北极熊推开自家冰洞的门——这片冰天雪地就是它的「家」，它的每一种本能都只适配这里的一草一冰。",
+      "senses": [
+        {
+          "gloss": "n.（动植物的）栖息地、生境",
+          "logic": "habit-(居住)→生物住的「家」。不是人造的房子，而是大自然提供给它的、所有条件刚好适合它生存的那片地方。",
+          "en": "Polar bears rely on sea ice as their primary habitat for hunting seals.",
+          "zh": "北极熊依赖海冰作为捕猎海豹的主要栖息地。"
+        },
+        {
+          "gloss": "n.（比喻义）某人习惯出没的场所",
+          "logic": "从动物的「天然居住地」延伸到人的「天然活动场所」——某个人最喜欢待、感觉最自在的地方。带幽默感。",
+          "en": "You can usually find her at the library — that's her natural habitat.",
+          "zh": "你通常可以在图书馆找到她——那是她的天然栖息地。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "inhabit",
+          "gloss": "v. 居住于、栖息于——in-(里面)+habit(住)=住在里面"
+        },
+        {
+          "w": "inhabitant",
+          "gloss": "n. 居民——住在里面的人"
+        },
+        {
+          "w": "habitation",
+          "gloss": "n. 居住、住所——人类的住所"
+        },
+        {
+          "w": "cohabit",
+          "gloss": "v. 同居——co-(一起)+habit(住)=一起住"
+        }
+      ]
+    },
+    {
+      "word": "geology",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dʒiˈɑːlədʒi/",
+      "subgroup": "natural-science",
+      "etymology": "18 世纪造词，希腊语 ge-（地球）+ logos（学问）。字面意思「研究地球的学问」。画面感：把地球切开，看里面一层一层的岩石像千层饼，每一层都夹着几亿年的故事——从上到下就是地球的「自传」。",
+      "roots": [
+        {
+          "part": "geo-",
+          "meaning": "地球、土地（希腊语 ge）"
+        },
+        {
+          "part": "-logy",
+          "meaning": "学科、学问（希腊语 logos）"
+        }
+      ],
+      "phonetics": "/dʒiˈɑːlədʒi/ —— geo- 读 /dʒi/，不是 /dʒiːoʊ/。重音在第二音节 /ˈɑː/。",
+      "tip": "geo(地球) + logy(学问) = 「研究地球的学问」→ 地质学。同源词：geography（描述地球表面→地理学）、geometry（测量土地→几何学）。",
+      "examples": [
+        {
+          "en": "The geology of this region makes it prone to earthquakes.",
+          "zh": "该地区的地质状况使其容易发生地震。",
+          "source": "造句"
+        },
+        {
+          "en": "planetary geology",
+          "zh": "行星地质学（如火星地质学）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "geoscience",
+          "ipa": "/ˈdʒiːoʊˌsaɪəns/",
+          "gloss": "n. 地球科学",
+          "note": "更广义，涵盖地质学、气象学、海洋学等所有地球相关科学"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "astronomy",
+          "note": "n. 天文学——研究天体，不研究地球"
+        }
+      ],
+      "nuance": "geology vs geography（托福阅读常混淆）：geology 研究地球内部——岩石、矿物、构造、地震、火山，是「地球的材料和骨架」。geography 研究地球表面——山川、河流、气候、人口分布，是「地球的外貌和表面特征」。记忆方法：geo-logy = 地球的内在逻辑（岩石构造）；geo-graphy = 地球的外在描绘（绘制表面）。",
+      "core": "把地球切开看——一层一层的岩石像千层饼，每一层都夹着几亿年的故事，从上到下就是地球的「自传」。",
+      "senses": [
+        {
+          "gloss": "n. 地质学",
+          "logic": "geo-(地球)+logy(学问)→研究地球的物质组成、内部构造、演化历史的学科。",
+          "en": "She earned her PhD in geology with a focus on volcanic activity.",
+          "zh": "她获得了地质学博士学位，研究方向是火山活动。"
+        },
+        {
+          "gloss": "n. 地质概况、地质特征",
+          "logic": "从一个地区的「地质学研究结果」延伸为该地区的地质构成本身。",
+          "en": "The unique geology of Yellowstone includes geysers, hot springs, and volcanic rocks.",
+          "zh": "黄石公园独特的地质特征包括间歇泉、温泉和火山岩。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "geological",
+          "gloss": "a. 地质的、地质学的"
+        },
+        {
+          "w": "geologist",
+          "gloss": "n. 地质学家"
+        },
+        {
+          "w": "geography",
+          "gloss": "n. 地理学——geo+graphy→描绘地球表面"
+        },
+        {
+          "w": "geometry",
+          "gloss": "n. 几何学——geo+metry→测量土地"
+        }
+      ]
+    },
+    {
+      "word": "atmosphere",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈætməsfɪr/",
+      "subgroup": "natural-science",
+      "etymology": "17 世纪造词，希腊语 atmos（蒸汽、气体）+ sphaira（球体）。字面意思是「气体的球壳」。画面感：地球被一层看不见的气态外衣严严实实地包裹着——你抬头看到的蓝天、呼吸到的每一口空气，都是这件外衣的一部分。",
+      "roots": [
+        {
+          "part": "atmo-",
+          "meaning": "蒸汽、气体（希腊语 atmos）"
+        },
+        {
+          "part": "sphere",
+          "meaning": "球体（希腊语 sphaira）"
+        }
+      ],
+      "phonetics": "重音在第一音节 /ˈæt/。注意 /-məs-/ 中间的 /s/ 不要吞掉。常见错误：把重音错放在第二音节。",
+      "tip": "atmo(气) + sphere(球) = 「一个气体的球壳」→ 大气层 → 引申为「笼罩着一个地方的气氛」。",
+      "examples": [
+        {
+          "en": "The spacecraft burned up upon re-entering Earth's atmosphere.",
+          "zh": "航天器在重新进入地球大气层时烧毁了。",
+          "source": "造句"
+        },
+        {
+          "en": "create a welcoming atmosphere",
+          "zh": "营造一种温馨的氛围",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "air",
+          "ipa": "/er/",
+          "gloss": "n. 空气",
+          "note": "比 atmosphere 更具体，指呼吸的混合气体；atmosphere 指整个大气层"
+        },
+        {
+          "w": "ambiance",
+          "ipa": "/ˈæmbiəns/",
+          "gloss": "n. 氛围、情调",
+          "note": "仅用于气氛/氛围义，不指大气层；偏艺术、浪漫语境"
+        },
+        {
+          "w": "mood",
+          "ipa": "/muːd/",
+          "gloss": "n. 情绪、氛围",
+          "note": "偏人的心理感受层面；atmosphere 偏环境给人的整体感觉"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "vacuum",
+          "note": "n. 真空——没有气体，atmosphere 是充满气体的"
+        }
+      ],
+      "nuance": "atmosphere 的两层意思有一个精妙的共同点：都是「包裹着你的东西」。大气层包裹着地球，气氛包裹着房间里的人。ambiance 偏艺术设计和装饰营造的情调（餐厅的灯光音乐），atmosphere 更广泛，包括人与人之间的感受（会议的紧张气氛）。mood 强调主观感受，atmosphere 强调客观环境散发的「气场」。",
+      "core": "你走进一个房间，什么话都还没说，但空气里好像已经泡着某种东西——可能是甜甜的约会味，也可能是紧张的冷战味——这就是这个房间的「气层」。",
+      "senses": [
+        {
+          "gloss": "n. 大气、大气层",
+          "logic": "atmo-(气)+sphere(球)=包裹着地球的那层气态球壳。你抬头看到的蓝天、呼吸到的空气——都是这层球壳的一部分。",
+          "en": "The atmosphere is made up of 78% nitrogen and 21% oxygen.",
+          "zh": "大气层由 78% 的氮气和 21% 的氧气组成。"
+        },
+        {
+          "gloss": "n. 气氛、氛围",
+          "logic": "从「包裹地球的气层」延伸到「包裹一个空间/场景的情绪气层」。你走进去能「呼吸」到的情绪——紧张、温馨、压抑。",
+          "en": "The restaurant had a cozy, intimate atmosphere perfect for a first date.",
+          "zh": "这家餐厅有一种温馨亲密的氛围，非常适合第一次约会。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "atmospheric",
+          "gloss": "a. 大气的；有氛围的"
+        },
+        {
+          "w": "atmospheric pressure",
+          "gloss": "n. 大气压"
+        },
+        {
+          "w": "sphere",
+          "gloss": "n. 球体、领域——同根词"
+        },
+        {
+          "w": "stratosphere",
+          "gloss": "n. 平流层——strato-(层)+sphere(球)"
+        }
+      ]
+    },
+    {
+      "word": "genetics",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dʒəˈnetɪks/",
+      "subgroup": "natural-science",
+      "etymology": "英国生物学家 William Bateson 于 1905 年造词：希腊语 genesis（起源、出生）+ -ics（学科后缀）。源自希腊语 genos（种族、种类、后代）。字面意思「研究起源/遗传的科学」。画面感：一本写满了密码的家传食谱，从太奶奶到你妈妈再到你，每一页都决定你的一切天生特征。",
+      "roots": [
+        {
+          "part": "gen-",
+          "meaning": "出生、起源、种族（希腊语 genos）"
+        },
+        {
+          "part": "-etics (-ics)",
+          "meaning": "学科（希腊语 -ika）"
+        }
+      ],
+      "phonetics": "/dʒəˈnetɪks/ —— 重音在第二音节 /net/。开头 gen- 读 /dʒə/，不是 /ɡe/。常见错误：把 gen- 读成「根」。",
+      "tip": "gen = 出生/起源 → 研究「特征怎么从上一代传给下一代」的学科。同源词：gene（基因）、generate（产生）、generation（一代人）。",
+      "examples": [
+        {
+          "en": "Advances in genetics have revolutionized our understanding of inherited diseases.",
+          "zh": "遗传学的进步彻底改变了我们对遗传疾病的理解。",
+          "source": "造句"
+        },
+        {
+          "en": "molecular genetics",
+          "zh": "分子遗传学",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "genomics",
+          "ipa": "/dʒəˈnoʊmɪks/",
+          "gloss": "n. 基因组学",
+          "note": "genetics 的子领域，专研究整个基因组的结构和功能"
+        },
+        {
+          "w": "heredity",
+          "ipa": "/həˈredəti/",
+          "gloss": "n. 遗传（现象/过程）",
+          "note": "不是学科名，而是「遗传」这个现象本身"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "acquired traits",
+          "note": "n. 后天获得性状——genetics 研究的是先天遗传的特征"
+        }
+      ],
+      "nuance": "genetics 是「研究基因和遗传的学科」（学科名），而 genetic (adj.) 是「基因的、遗传的」（描述性）。genetics 和 heredity 的区别：genetics 是研究遗传机制的科学（how），heredity 是遗传这个现象本身（what）。托福阅读中 genetics 常出现在讨论生物技术、疾病遗传、物种进化的文章中。",
+      "core": "一本写满了密码的家传食谱——从你太奶奶到你妈妈再到你，每一页都写得密密的，决定你的眼睛颜色、你的身高、你对某些味道的敏感度。",
+      "senses": [
+        {
+          "gloss": "n. 遗传学",
+          "logic": "gen-(出生/起源)+etics(学科)→研究生物特征如何从上一代传到下一代的学科。",
+          "en": "She is studying the genetics of antibiotic resistance in bacteria.",
+          "zh": "她正在研究细菌抗生素耐药性的遗传学机制。"
+        },
+        {
+          "gloss": "n. 遗传特征、基因组成",
+          "logic": "日常用语中「the genetics of...」可指某个生物的遗传构成——从学科名延伸到学科研究的对象本身。",
+          "en": "The genetics of this particular plant make it highly resistant to drought.",
+          "zh": "这种植物的遗传特征使其高度抗旱。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "gene",
+          "gloss": "n. 基因"
+        },
+        {
+          "w": "genetic",
+          "gloss": "a. 基因的、遗传的"
+        },
+        {
+          "w": "genome",
+          "gloss": "n. 基因组"
+        },
+        {
+          "w": "generate",
+          "gloss": "v. 产生、生成——同词根 gen-(出生/产生)"
+        },
+        {
+          "w": "generation",
+          "gloss": "n. 一代人、产生"
+        }
+      ]
+    },
+    {
+      "word": "renaissance",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈrenəsɑːns/",
+      "subgroup": "art",
+      "meaning": "n. [the R-] 文艺复兴，文艺复兴时期；复兴，再生",
+      "etymology": "法语 renaissance = re- (再次) + naissance (出生)，源自拉丁语 nasci (出生)。Renaissance 字面意思是「重生」——指14-17世纪欧洲对古典希腊罗马文化的重新发现与辉煌复兴。同源词：nascent (初生的)、native (天生的)、nation (民族——出生在同一片土地上的人)。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "再次，重新"
+        },
+        {
+          "part": "naiss",
+          "meaning": "出生 (from L nasci)"
+        },
+        {
+          "part": "-ance",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "重音在第一音节 REnaissance。中间 s 念 /s/ 或 /z/ 均可，标准为 /z/。法语借词，不要念成中文味的「瑞内桑斯」。",
+      "tip": "Re(再次)+naissance(出生) = 再一次出生 = 复兴",
+      "examples": [
+        {
+          "en": "The Renaissance began in Florence in the 14th century.",
+          "zh": "文艺复兴于14世纪在佛罗伦萨开始。",
+          "source": "造句"
+        },
+        {
+          "en": "a renaissance of interest in traditional crafts",
+          "zh": "对传统手工艺兴趣的复兴",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "revival",
+          "ipa": "/rɪˈvaɪvəl/",
+          "gloss": "复兴，复活",
+          "note": "renaissance 侧重文化/艺术的辉煌复兴；revival 更通用，可指任何事物的恢复"
+        },
+        {
+          "w": "rebirth",
+          "ipa": "/ˈriːbɜːrθ/",
+          "gloss": "重生，新生",
+          "note": "直译renaissance，更口语化"
+        },
+        {
+          "w": "resurgence",
+          "ipa": "/rɪˈsɜːrdʒəns/",
+          "gloss": "再起，复苏",
+          "note": "强调突然的、强有力的回归"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "decline",
+          "note": "衰落"
+        },
+        {
+          "w": "decay",
+          "note": "腐朽，衰败"
+        }
+      ],
+      "nuance": "renaissance 特指文化/思想层面的「再次繁荣」，强调创造性和辉煌；revival 仅指「重新出现/恢复」，不隐含辉煌色彩。比如可以说 a revival of interest in vinyl records，但说 a renaissance of vinyl records 暗示一种文化层面的潮流回归。",
+      "core": "黑暗中一盏灯重新点亮——不是小火苗，是整座城市的天际线重新亮起来，金色光芒从佛罗伦萨向整个欧洲漫延。",
+      "senses": [
+        {
+          "gloss": "n. 文艺复兴（常大写R-）",
+          "logic": "核心意象 = 文明光辉的重新点亮 → 特指14-17世纪欧洲的文艺复兴运动",
+          "en": "Leonardo da Vinci was a towering figure of the Renaissance.",
+          "zh": "达芬奇是文艺复兴时期的巨匠。"
+        },
+        {
+          "gloss": "n. 复兴，复活",
+          "logic": "小写的 renaissance → 任何领域从沉睡中苏醒的「再度辉煌」",
+          "en": "The city is experiencing a cultural renaissance.",
+          "zh": "这座城市正在经历一场文化复兴。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "nascent",
+          "gloss": "a. 初生的，萌芽的"
+        },
+        {
+          "w": "renascent",
+          "gloss": "a. 再生的，复兴的"
+        },
+        {
+          "w": "native",
+          "gloss": "a. 本地的，天生的"
+        }
+      ]
+    },
+    {
+      "word": "aesthetic",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/esˈθetɪk/",
+      "subgroup": "art",
+      "meaning": "a. 审美的，美学的；美的，艺术的",
+      "etymology": "希腊语 aisthetikos = 关于感官感知的，源自 aisthanesthai (去感知、去感受)。最初泛指一切感官感知，18世纪德国哲学家鲍姆加登将其缩窄为「美的哲学」。同源词：anesthesia (an- = 没有 + aisthesis = 感觉 = 麻醉：失去感觉)。",
+      "roots": [
+        {
+          "part": "aesthet",
+          "meaning": "感觉，感知 (from Gk aisthetikos)"
+        },
+        {
+          "part": "-ic",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "英式 /esˈθetɪk/ 美式 /esˈθetɪk/。开头 aes 不念 /ei/，念 /es/（像 esthetic）。不是「阿斯赛提克」。",
+      "tip": "anesthesia 麻醉 = 没有感觉；aesthetic = 有感（觉）→ 美感",
+      "examples": [
+        {
+          "en": "The design has a minimalist aesthetic.",
+          "zh": "这个设计有一种极简美学。",
+          "source": "造句"
+        },
+        {
+          "en": "aesthetic judgment",
+          "zh": "审美判断",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "artistic",
+          "ipa": "/ɑːrˈtɪstɪk/",
+          "gloss": "艺术的，有艺术性的",
+          "note": "aesthetic 侧重「美的感知/品味」，artistic 侧重「艺术创作/技巧」"
+        },
+        {
+          "w": "tasteful",
+          "ipa": "/ˈteɪstfəl/",
+          "gloss": "有品味的，雅致的",
+          "note": "tasteful 指符合主流审美标准；aesthetic 更中性，可指任何审美体系"
+        },
+        {
+          "w": "sensuous",
+          "ipa": "/ˈsenʃuəs/",
+          "gloss": "感官上的，愉悦感官的",
+          "note": "sensuous 侧重身体感官的愉悦，aesthetic 侧重「美的感知力」"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "unaesthetic",
+          "note": "不美的，无审美价值的"
+        },
+        {
+          "w": "tasteless",
+          "note": "无品味的"
+        }
+      ],
+      "nuance": "aesthetic 核心落在「感知美的方式」（一种哲学视角）；beautiful 只是「好看」。一套 aesthetic 体系不一定符合大众审美——比如有人追求「破碎感 aesthetic」。例：Her Instagram has a very specific dark academia aesthetic. (她ins有一种很鲜明的暗黑学院风审美。)",
+      "core": "黄昏时分的展厅，你站定一幅画前——不是在看画的技法，而是在感受它怎么「击中」你的眼睛，那种说不清但确定存在的感官对话。",
+      "senses": [
+        {
+          "gloss": "a. 审美的，美学的",
+          "logic": "核心意象 = 感官对外界美的接收 → 关于美的感受与判断",
+          "en": "She approaches design from an aesthetic rather than a practical perspective.",
+          "zh": "她从审美而非实用的角度来对待设计。"
+        },
+        {
+          "gloss": "n. 审美观，美学风格",
+          "logic": "感知美的特定方式 → 形成一套可辨识的审美体系",
+          "en": "The film has a distinct 1980s aesthetic.",
+          "zh": "这部电影有一种鲜明的80年代美学风格。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "aesthetics",
+          "gloss": "n. 美学（学科）"
+        },
+        {
+          "w": "anesthesia",
+          "gloss": "n. 麻醉（失去感觉）"
+        },
+        {
+          "w": "aesthete",
+          "gloss": "n. 审美家，唯美主义者"
+        }
+      ]
+    },
+    {
+      "word": "depict",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dɪˈpɪkt/",
+      "subgroup": "art",
+      "meaning": "vt. 描写，描述，描绘",
+      "etymology": "拉丁语 depictus，是 depingere (de- = 完全地 + pingere = 画) 的过去分词。字面意思是「彻底画出来」。同源词：picture (图画)、paint (颜料/画画)、pigment (色素)。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "完全，向下"
+        },
+        {
+          "part": "pict",
+          "meaning": "画，描绘 (from L pingere)"
+        }
+      ],
+      "phonetics": "/dɪˈpɪkt/ 重音在第二音节。pict 中的 p 念 /p/，不是 /b/。结尾 t 轻而清晰。",
+      "tip": "de(彻底)+pict(画) = 画得彻底 = 描绘清楚",
+      "examples": [
+        {
+          "en": "The mural depicts scenes from local history.",
+          "zh": "这幅壁画描绘了当地历史的场景。",
+          "source": "造句"
+        },
+        {
+          "en": "depict ... as ...",
+          "zh": "把...描绘成...",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "portray",
+          "ipa": "/pɔːrˈtreɪ/",
+          "gloss": "描绘，刻画",
+          "note": "portray 强调「再现真实面貌」，可用于人和场景；depict 更广泛，可用于抽象事物"
+        },
+        {
+          "w": "illustrate",
+          "ipa": "/ˈɪləstreɪt/",
+          "gloss": "说明，图解",
+          "note": "illustrate 侧重「用例子或图像使清晰」，depict 侧重「用语言或画笔呈现画面」"
+        },
+        {
+          "w": "represent",
+          "ipa": "/ˌreprɪˈzent/",
+          "gloss": "表现，代表",
+          "note": "represent 更抽象/符号化；depict 更具体/画面化"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "obscure",
+          "note": "使模糊，掩盖"
+        },
+        {
+          "w": "misrepresent",
+          "note": "歪曲，错误呈现"
+        }
+      ],
+      "nuance": "depict 的底子是「画笔」——哪怕用文字描绘，也带有「让你在脑子里看见画面」的效果。portray 更侧重「再现真实」（如 portray a character）；depict 偏「呈现一个视觉场景」。例：The novel depicts 19th-century London vividly. (小说生动描绘了19世纪的伦敦——你在脑子里看见了。)",
+      "core": "一支笔在纸上走，不是写字，而是让一个场景从白纸上「长」出来——你看着文字/画面，脑子里自动浮现那个世界。",
+      "senses": [
+        {
+          "gloss": "vt. 描绘，描画",
+          "logic": "核心意象 = 用画笔/语言「画出」画面 → 呈现视觉形象",
+          "en": "The cave paintings depict hunting scenes.",
+          "zh": "洞穴壁画描绘了狩猎场景。"
+        },
+        {
+          "gloss": "vt. 描述，描写",
+          "logic": "从画笔延伸到文字 → 用语言「画」出一个画面感强的叙述",
+          "en": "The article depicts the harsh reality of war.",
+          "zh": "这篇文章描述了战争的残酷现实。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "depiction",
+          "gloss": "n. 描绘，描写"
+        },
+        {
+          "w": "pictorial",
+          "gloss": "a. 图画的，用图表示的"
+        },
+        {
+          "w": "picture",
+          "gloss": "n. 图画，画面"
+        },
+        {
+          "w": "pigment",
+          "gloss": "n. 颜料，色素"
+        }
+      ]
+    },
+    {
+      "word": "portrait",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈpɔːrtrət/",
+      "subgroup": "art",
+      "meaning": "n. 肖像，画像；描写，描绘",
+      "etymology": "拉丁语 protrahere = pro- (向前) + trahere (拉、拖)。古法语 portraire = 画、描绘。字面意思是「把（面貌）拉出来」——把一个人的样子从画布里拽出来。同源词：tractor (拖拉机)、extract (抽出)、trait (特征——拉出的一条线)。",
+      "roots": [
+        {
+          "part": "por-",
+          "meaning": "向前 (from L pro-)"
+        },
+        {
+          "part": "trait",
+          "meaning": "拉，画 (from L trahere)"
+        }
+      ],
+      "phonetics": "/ˈpɔːrtrət/，美式也可 /ˈpɔːrtrɪt/。结尾 t 发音很轻但不要丢。不是「破锤特」。",
+      "tip": "por(向前)+trait(拉出的线条) = 把人物「拉出来」到画面上 = 肖像",
+      "examples": [
+        {
+          "en": "She sat for a portrait by a famous painter.",
+          "zh": "她坐着让一位著名画家给她画肖像。",
+          "source": "造句"
+        },
+        {
+          "en": "portrait of an artist",
+          "zh": "一位艺术家的肖像",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "likeness",
+          "ipa": "/ˈlaɪknəs/",
+          "gloss": "肖像，画像",
+          "note": "偏 old-fashioned，强调「相似度」"
+        },
+        {
+          "w": "depiction",
+          "ipa": "/dɪˈpɪkʃən/",
+          "gloss": "描绘",
+          "note": "depiction 泛指一切描绘；portrait 特指「人物画像/文字描绘」"
+        },
+        {
+          "w": "profile",
+          "ipa": "/ˈproʊfaɪl/",
+          "gloss": "人物简介，侧影",
+          "note": "profile 是简短的文字概览；portrait 可以是视觉或深度文字"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "caricature",
+          "note": "漫画（夸张丑化）"
+        },
+        {
+          "w": "landscape",
+          "note": "风景画（非人物）"
+        }
+      ],
+      "nuance": "portrait 的核心是「人的面貌」——画的是脸，写的也是人。区别于 landscape（风景）、still life（静物）、abstract（抽象）。口语中 paint/draw a portrait 既可能是画，也可能是「用文字刻画」。",
+      "core": "画框里只有一个人——或坐或站，脸在正中间。你盯着那双眼睛看的时候，觉得他在透过画布回看你。",
+      "senses": [
+        {
+          "gloss": "n. 肖像，画像",
+          "logic": "核心意象 = 把一个人的面容「拉」到画面上 → 人物画像",
+          "en": "The gallery has a collection of Renaissance portraits.",
+          "zh": "这个画廊收藏了一批文艺复兴时期的肖像画。"
+        },
+        {
+          "gloss": "n. 描写，描绘（文字）",
+          "logic": "从画笔延伸到文字 → 用语言「画」出的人物形象",
+          "en": "The book paints a vivid portrait of rural life.",
+          "zh": "这本书生动地描绘了乡村生活。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "portraiture",
+          "gloss": "n. 肖像画技法/艺术"
+        },
+        {
+          "w": "portray",
+          "gloss": "v. 描绘，刻画"
+        },
+        {
+          "w": "portraitist",
+          "gloss": "n. 肖像画家"
+        },
+        {
+          "w": "trait",
+          "gloss": "n. 特征，特点（拉出来的一条线）"
+        }
+      ]
+    },
+    {
+      "word": "sculpture",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈskʌlptʃər/",
+      "subgroup": "art",
+      "meaning": "n. 雕像，雕塑品；雕刻术",
+      "etymology": "拉丁语 sculpere = 雕刻、从石头中切出。原始印欧语根 *(s)kel- = 切割。同源词：scalpel (手术刀)、sculpt (雕刻)、scallop (扇贝——边缘像切割过的)。",
+      "roots": [
+        {
+          "part": "sculpt",
+          "meaning": "雕刻 (from L sculpere)"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀，表结果/行为"
+        }
+      ],
+      "phonetics": "/ˈskʌlptʃər/。注意 lp 连在一起念，t 后紧跟 ʃ（ch 音）。中国人容易念成「斯卡普扯」。",
+      "tip": "sculpt(雕刻)+ure(结果/东西) = 雕刻出来的东西 = 雕塑",
+      "examples": [
+        {
+          "en": "Michelangelo's sculpture of David is a masterpiece.",
+          "zh": "米开朗基罗的大卫雕塑是一件杰作。",
+          "source": "造句"
+        },
+        {
+          "en": "a marble sculpture",
+          "zh": "大理石雕塑",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "statue",
+          "ipa": "/ˈstætʃuː/",
+          "gloss": "雕像，塑像",
+          "note": "statue 通常是完整人物/动物形象的雕塑；sculpture 范围更广，含抽象雕塑"
+        },
+        {
+          "w": "carving",
+          "ipa": "/ˈkɑːrvɪŋ/",
+          "gloss": "雕刻品",
+          "note": "carving 强调「从硬材料上切掉」的过程/结果，尤指木雕石雕"
+        },
+        {
+          "w": "bust",
+          "ipa": "/bʌst/",
+          "gloss": "半身像",
+          "note": "bust 特指头部和肩部的雕像"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "painting",
+          "note": "绘画（平面，非立体）"
+        },
+        {
+          "w": "flatwork",
+          "note": "平面作品"
+        }
+      ],
+      "nuance": "sculpture 是三维的——你绕着它走能看见不同角度。painting 是二维的，挂墙上正面看。statue 通常是人/动物具象雕塑；sculpture 含抽象装置。在托福阅读中，sculpture 常作为「三维造型艺术」的总称出现。",
+      "core": "一块大理石，凿子一刀一刀下去，碎屑飞溅——把石头里「藏着的人」挖出来，不是加上去，是减去多余的部分。",
+      "senses": [
+        {
+          "gloss": "n. 雕塑，雕像",
+          "logic": "核心意象 = 从材料中「挖/削/凿」出立体造型 → 三维艺术品",
+          "en": "The sculpture stands in the center of the plaza.",
+          "zh": "雕塑矗立在广场中央。"
+        },
+        {
+          "gloss": "n. 雕刻术，雕塑艺术",
+          "logic": "从具体作品扩展到创作行为/技艺",
+          "en": "She studied sculpture at art school.",
+          "zh": "她在艺术学院学习雕塑。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "sculpt",
+          "gloss": "v. 雕刻，雕塑"
+        },
+        {
+          "w": "sculptor",
+          "gloss": "n. 雕塑家"
+        },
+        {
+          "w": "sculptural",
+          "gloss": "a. 雕塑的"
+        },
+        {
+          "w": "scalpel",
+          "gloss": "n. 手术刀（同源：切割工具）"
+        }
+      ]
+    },
+    {
+      "word": "abstract",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈæbstrækt/",
+      "subgroup": "art",
+      "meaning": "a. 抽象的；抽象派的 n. 摘要；抽象概念",
+      "etymology": "拉丁语 abstractus = abs- (离开) + tractus (被拉出)，是 abstrahere 的过去分词。字面意思是「从具体现实中拉走」。同源词：tractor (拖拉机)、extract (拔出、提取)、contract (收缩——拉到一起)、retract (缩回)。",
+      "roots": [
+        {
+          "part": "abs-",
+          "meaning": "离开，脱离"
+        },
+        {
+          "part": "tract",
+          "meaning": "拉，抽 (from L trahere)"
+        }
+      ],
+      "phonetics": "形容词重音在前 /ˈæbstrækt/；动词重音在后 /æbˈstrækt/。注意 str 的发音，舌头从 /s/ 滑到 /tr/，中间不要加元音。",
+      "tip": "abs(离开)+tract(抽拉) = 把具体形象抽走 = 剩下的就是抽象",
+      "examples": [
+        {
+          "en": "Abstract art doesn't try to represent reality.",
+          "zh": "抽象艺术不试图再现现实。",
+          "source": "造句"
+        },
+        {
+          "en": "abstract concept",
+          "zh": "抽象概念",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "conceptual",
+          "ipa": "/kənˈseptʃuəl/",
+          "gloss": "概念的，观念的",
+          "note": "conceptual 侧重思想层面；abstract 侧重「脱离具体形态」"
+        },
+        {
+          "w": "theoretical",
+          "ipa": "/ˌθiːəˈretɪkəl/",
+          "gloss": "理论的，理论上的",
+          "note": "theoretical 侧重「存在于理论中非实践」；abstract 侧重「无具体形态」"
+        },
+        {
+          "w": "nonrepresentational",
+          "ipa": "/nɑnˌreprɪzenˈteɪʃənəl/",
+          "gloss": "非具象的",
+          "note": "仅用于艺术语境"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "concrete",
+          "note": "具体的"
+        },
+        {
+          "w": "figurative",
+          "note": "具象的（艺术）"
+        },
+        {
+          "w": "representational",
+          "note": "具象的，再现性的"
+        }
+      ],
+      "nuance": "abstract 强调「把具体细节抽掉，留下本质/概念」。concrete 是它的反义词，表示「看得见摸得着的」。在艺术语境中，abstract art 不画可辨认的物体；figurative art 画你认得出的东西。",
+      "core": "你把一张照片放到 Photoshop 里，把真实感一层一层抽掉——先去掉光影，再去掉纹理，再去掉轮廓，最后只剩几块色块在跳舞。",
+      "senses": [
+        {
+          "gloss": "a. 抽象的（概念/理论）",
+          "logic": "核心意象 = 从具体中「抽出」→ 脱离实物，仅存概念框架",
+          "en": "Freedom is an abstract concept.",
+          "zh": "自由是一个抽象概念。"
+        },
+        {
+          "gloss": "a. 抽象派的（艺术）",
+          "logic": "艺术语境中的抽离 → 不画可辨认的物体形象",
+          "en": "Kandinsky is known for his abstract paintings.",
+          "zh": "康定斯基以他的抽象画闻名。"
+        },
+        {
+          "gloss": "n. 摘要，概括",
+          "logic": "从长文/报告中「抽出」核心要点 → 精华浓缩",
+          "en": "Read the abstract before the full paper.",
+          "zh": "在阅读全文之前先读摘要。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "abstraction",
+          "gloss": "n. 抽象，抽象概念"
+        },
+        {
+          "w": "abstractly",
+          "gloss": "adv. 抽象地"
+        },
+        {
+          "w": "extract",
+          "gloss": "v./n. 提取，摘录（拉出来）"
+        },
+        {
+          "w": "tractor",
+          "gloss": "n. 拖拉机（拉东西的车）"
+        }
+      ]
+    },
+    {
+      "word": "gallery",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈɡæləri/",
+      "subgroup": "art",
+      "meaning": "n. 画廊，美术馆",
+      "etymology": "中世纪拉丁语 galeria = 带顶的步道或门廊。古意大利语 galleria = 长柱廊或走廊。最初是建筑特征（连接空间的走道），后来走廊墙壁上开始悬挂艺术品，演变为「展示艺术的空间」。法语 galerie 影响了英语拼写。",
+      "roots": [
+        {
+          "part": "galler(y)",
+          "meaning": "走廊，长廊 (from ML galeria)"
+        }
+      ],
+      "phonetics": "/ˈɡæləri/ 两个音节，重音在前。ll 念 /l/，只有两个音节不是三个。不要念成「盖乐瑞」。",
+      "tip": "原本是长长的走廊（gallery）→ 走廊两边挂满画 → 画廊",
+      "examples": [
+        {
+          "en": "We visited the National Gallery last weekend.",
+          "zh": "我们上周末参观了国家美术馆。",
+          "source": "造句"
+        },
+        {
+          "en": "art gallery",
+          "zh": "美术馆，画廊",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "museum",
+          "ipa": "/mjuːˈziːəm/",
+          "gloss": "博物馆",
+          "note": "museum 展出范围更广（历史/科学/艺术）；gallery 特指视觉艺术展览空间"
+        },
+        {
+          "w": "exhibition hall",
+          "ipa": "/ˌeksɪˈbɪʃən hɔːl/",
+          "gloss": "展览厅",
+          "note": "更通用，不限艺术"
+        },
+        {
+          "w": "salon",
+          "ipa": "/səˈlɑːn/",
+          "gloss": "沙龙；画廊（旧用法）",
+          "note": "历史上为小型私人展览空间"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "studio",
+          "note": "工作室（创作地，非展示地）"
+        },
+        {
+          "w": "warehouse",
+          "note": "仓库（储存非展示）"
+        }
+      ],
+      "nuance": "gallery 的核心是「展示」——艺术品挂出来给人看的空间。museum 是「收藏+研究」机构，gallery 可能只是展示和销售。commercial gallery = 商业画廊（卖画），public gallery = 公共美术馆（非营利）。",
+      "core": "一条长长的白色走廊，两边墙上挂满了画——你从一幅走到另一幅，脚步声在木地板上轻轻回响，空气里有油画和旧木头的气味。",
+      "senses": [
+        {
+          "gloss": "n. 画廊，美术馆",
+          "logic": "核心意象 = 挂满艺术品的走廊 → 视觉艺术展示空间",
+          "en": "Her work is on display at a gallery in SoHo.",
+          "zh": "她的作品在 SoHo 的一家画廊展出。"
+        },
+        {
+          "gloss": "n. 廊台，楼座（剧场）",
+          "logic": "从建筑「长廊」→ 剧院上层突出的看台（形似长廊）",
+          "en": "We sat in the gallery and had a great view of the stage.",
+          "zh": "我们坐在楼座，舞台视野很好。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "gallerist",
+          "gloss": "n. 画廊经营者"
+        },
+        {
+          "w": "galleried",
+          "gloss": "a. 有长廊的"
+        }
+      ]
+    },
+    {
+      "word": "motif",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/moʊˈtiːf/",
+      "subgroup": "art",
+      "meaning": "n. 主题，主旨；（装饰）图形",
+      "etymology": "法语 motif = 动机、主题，源自古法语 motif = 移动的，来自拉丁语 motivus = 推动的，源自 motus（movere 的过去分词 = 移动）。字面意思是「那个推动作品前进的东西」。同源词：motive (动机)、motor (马达)、emotion (情感)、motion (运动)。",
+      "roots": [
+        {
+          "part": "mot",
+          "meaning": "动 (from L movere)"
+        },
+        {
+          "part": "-if",
+          "meaning": "法语形容词/名词后缀"
+        }
+      ],
+      "phonetics": "/moʊˈtiːf/ 重音在第二个音节。法语借词，末尾 f 念 /f/——不是不发音！对比 motive 中的 mot。",
+      "tip": "mot(=move 移动)+if → 推动作品向前发展的「驱动力」= 主题动机",
+      "examples": [
+        {
+          "en": "The rose is a recurring motif in her paintings.",
+          "zh": "玫瑰是她画作中反复出现的主题图形。",
+          "source": "造句"
+        },
+        {
+          "en": "a central motif",
+          "zh": "核心主题",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "theme",
+          "ipa": "/θiːm/",
+          "gloss": "主题",
+          "note": "theme 是抽象的思想主旨；motif 是反复出现的具体元素/符号"
+        },
+        {
+          "w": "pattern",
+          "ipa": "/ˈpætərn/",
+          "gloss": "图案，模式",
+          "note": "pattern 侧重重复的规律性；motif 侧重重复中的「意义承载」"
+        },
+        {
+          "w": "leitmotif",
+          "ipa": "/ˈlaɪtmoʊˌtiːf/",
+          "gloss": "（音乐/文学）主导主题",
+          "note": "leitmotif 特指音乐/文学中代表特定人物/思想的重复主题"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "one-off",
+          "note": "一次性出现（非重复主题）"
+        }
+      ],
+      "nuance": "motif 和 theme 的区别：theme 是「关于什么」的抽象表述（如「爱的主题」）；motif 是承载这个主题的「具体符号」（如「反复出现的红玫瑰」）。motif = theme 的视觉/符号化身。同一个 theme 可以有多个 motif。",
+      "core": "一首曲子开头那几个音，每隔一段时间就回来——变个调、换个乐器、但 DNA 不变。你一听就知道「哦，还是它」。这就是 motif：一个作品的心跳。",
+      "senses": [
+        {
+          "gloss": "n. 主题，主旨（文艺作品）",
+          "logic": "核心意象 = 驱动作品的「核心脉冲」→ 反复出现的主题元素",
+          "en": "The motif of transformation runs through the entire novel.",
+          "zh": "转变这一主题贯穿整部小说。"
+        },
+        {
+          "gloss": "n. 装饰图形，图案",
+          "logic": "从文艺主题延伸到视觉 → 重复出现的装饰性/符号性图形元素",
+          "en": "The wallpaper has a floral motif.",
+          "zh": "墙纸上有一个花卉图案。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "motive",
+          "gloss": "n. 动机，动因"
+        },
+        {
+          "w": "motivate",
+          "gloss": "v. 激励，驱使"
+        },
+        {
+          "w": "leitmotif",
+          "gloss": "n. 主导主题（音乐/文学）"
+        },
+        {
+          "w": "emotion",
+          "gloss": "n. 情感（由内向外「动」）"
+        }
+      ]
+    },
+    {
+      "word": "canvas",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈkænvəs/",
+      "subgroup": "art",
+      "meaning": "n. 画布；油画；帆布",
+      "etymology": "源自拉丁语 cannabis (麻)，经古法语 canevas = 麻布。画布最初由大麻纤维织成。词义从「材料」转移到「画在上面的艺术品」。同源词：cannabis (大麻，同一词根)。注意：canvas 与 canvass (拉票) 发音相同但意义无关——canvass 来自「在帆布上讨论」的旧用法。",
+      "roots": [
+        {
+          "part": "can(n)av",
+          "meaning": "麻 (from L cannabis)"
+        },
+        {
+          "part": "-as",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "/ˈkænvəs/ 两个音节。第二个音节念 /vəs/，不是 /væs/。不要和 canvass (拉票) 混淆，虽然发音相同。",
+      "tip": "cannabis → 画布 → 画布上涂满颜料就成了油画 → canvas = 画布/油画",
+      "examples": [
+        {
+          "en": "The artist stretched a fresh canvas onto the frame.",
+          "zh": "画家把一块新画布绷到画框上。",
+          "source": "造句"
+        },
+        {
+          "en": "a blank canvas",
+          "zh": "一张空白画布（比喻全新开始）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "cloth",
+          "ipa": "/klɔːθ/",
+          "gloss": "布，织物",
+          "note": "cloth 是通用布料；canvas 特指画布/帆布这种粗厚织物"
+        },
+        {
+          "w": "fabric",
+          "ipa": "/ˈfæbrɪk/",
+          "gloss": "织物，布料",
+          "note": "fabric 是最广义的纺织材料；canvas 是其中一种"
+        },
+        {
+          "w": "painting",
+          "ipa": "/ˈpeɪntɪŋ/",
+          "gloss": "画作",
+          "note": "painting 是「画作」的通用词；canvas 引申指「油画作品」（以材料代成品）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "digital canvas",
+          "note": "数字画布（非实体）"
+        }
+      ],
+      "nuance": "canvas 有两个方向：一是物理的「画布/帆布」（粗麻布材质），二是引申的「油画作品」（以材料代作品，类似 read Shakespeare 代「读莎翁作品」）。a blank canvas 是高频比喻——一切未开始的可能。",
+      "core": "手指摸上去——粗粝的纹理，亚麻纤维的质感，绷紧在木框上微微反弹。上面什么都没画的时候，有一种「一切还没发生」的紧张和期待。",
+      "senses": [
+        {
+          "gloss": "n. 画布",
+          "logic": "核心意象 = 绷在木框上的粗麻织物 → 绘画的承载面",
+          "en": "He primed the canvas before starting to paint.",
+          "zh": "他在开始画画之前给画布上了底漆。"
+        },
+        {
+          "gloss": "n. 油画（作品）",
+          "logic": "以材料代成品 → 画在画布上的画就是 canvas",
+          "en": "The museum acquired a rare canvas by Monet.",
+          "zh": "博物馆获得了一幅莫奈的罕见油画。"
+        },
+        {
+          "gloss": "n. 帆布",
+          "logic": "同一材质 → 不用于绘画的粗厚麻布，用于帐篷/船帆等",
+          "en": "They packed the tent canvas into the car.",
+          "zh": "他们把帐篷帆布装进了车里。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "canvass",
+          "gloss": "v. 拉票，游说（同音异义词）"
+        },
+        {
+          "w": "cannabis",
+          "gloss": "n. 大麻（同源）"
+        },
+        {
+          "w": "canvas-like",
+          "gloss": "a. 如画布般的"
+        }
+      ]
+    },
+    {
+      "word": "fresco",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈfreskoʊ/",
+      "subgroup": "art",
+      "meaning": "n. 湿壁画；湿壁画技法",
+      "etymology": "意大利语 fresco = 新鲜的、凉爽的，源自日耳曼语 friskaz (新鲜的)。这种技法叫 fresco 是因为你在新鲜潮湿的灰泥上作画——颜料与湿灰泥发生化学反应，干了以后颜色就「长进」了墙里，永不褪色。同源词：fresh (新鲜的)、refresh (刷新)、afresh (重新)。",
+      "roots": [
+        {
+          "part": "fresc",
+          "meaning": "新鲜的 (from Italian fresco ↔ Germanic friskaz)"
+        },
+        {
+          "part": "-o",
+          "meaning": "意大利语名词后缀"
+        }
+      ],
+      "phonetics": "/ˈfreskoʊ/ 意大利借词。念 /fres/ + /koʊ/，不要念成 fur-es-co。末尾 o 是 /əʊ/ 或 /oʊ/。",
+      "tip": "fresco = fresh 新鲜的 → 湿壁画是在新鲜湿灰泥上画的 → 壁画干了画就「长在了」墙上",
+      "examples": [
+        {
+          "en": "Michelangelo painted the Sistine Chapel ceiling in fresco.",
+          "zh": "米开朗基罗用湿壁画技法绘制了西斯廷教堂的天顶。",
+          "source": "造句"
+        },
+        {
+          "en": "a fresco cycle",
+          "zh": "一组连环湿壁画",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "mural",
+          "ipa": "/ˈmjʊrəl/",
+          "gloss": "壁画（泛指墙面绘画）",
+          "note": "mural 是画在墙上的画的总称；fresco 特指湿壁画技法（mural 的技术子集）"
+        },
+        {
+          "w": "wall painting",
+          "ipa": "/wɔːl ˈpeɪntɪŋ/",
+          "gloss": "墙面绘画",
+          "note": "最直白的说法"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "secco",
+          "note": "（壁画）干壁画（在干灰泥上画，非 fresco）"
+        },
+        {
+          "w": "easel painting",
+          "note": "架上画（非墙面）"
+        }
+      ],
+      "nuance": "fresco 特指一种技法——颜料涂在湿灰泥（plaster）上，干燥后颜料与墙面化学结合，永不褪色。mural 是画在墙上的任何画（包含 fresco、丙烯、喷漆等）。fresco 是 mural 的一个子类。托福阅读中提到 fresco 通常涉及文艺复兴意大利。",
+      "core": "湿的石灰墙面，颜料涂上去的时候迅速渗进去——不是浮在表面，而是「长进」了墙里。干了以后画就是墙，墙就是画，永远不会掉色。",
+      "senses": [
+        {
+          "gloss": "n. 湿壁画",
+          "logic": "核心意象 = 颜料渗入湿灰泥、干了成为墙体一部分 → 湿壁画技法作品",
+          "en": "The frescoes of Pompeii were preserved by volcanic ash.",
+          "zh": "庞贝的湿壁画被火山灰保存了下来。"
+        },
+        {
+          "gloss": "n. 湿壁画技法",
+          "logic": "从成品扩展到技法本身",
+          "en": "She studied fresco technique during her year in Florence.",
+          "zh": "她在佛罗伦萨那年学习了湿壁画技法。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "frescoist",
+          "gloss": "n. 湿壁画家"
+        },
+        {
+          "w": "fresh",
+          "gloss": "a. 新鲜的（同源）"
+        },
+        {
+          "w": "alfresco",
+          "gloss": "a./adv. 在户外（字面：在新鲜空气中）"
+        },
+        {
+          "w": "frescoed",
+          "gloss": "a. 饰有湿壁画的"
+        }
+      ]
+    },
+    {
+      "word": "improvise",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈɪmprəvaɪz/",
+      "subgroup": "art",
+      "meaning": "v. 即兴创作；临时准备",
+      "etymology": "拉丁语 improvisus = 未预见的，来自 in- (不) + provisus (被预见的)，provisus 是 providere (预见、准备) 的过去分词。字面意思是「没有提前看到」→ 没有准备就上了。同源词：provide (提供——提前看到)、provision (预备)、video (视频——看)。",
+      "roots": [
+        {
+          "part": "im-",
+          "meaning": "不，无 (from L in-)"
+        },
+        {
+          "part": "pro-",
+          "meaning": "预先，向前"
+        },
+        {
+          "part": "vis",
+          "meaning": "看 (from L videre)"
+        },
+        {
+          "part": "-ise",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "/ˈɪmprəvaɪz/ 重音在第一音节。第二个音节 pro 念 /prə/，不是 /pro/。末尾 ise 念 /aɪz/，不是 /ɪs/。",
+      "tip": "im(不)+pro(提前)+vis(看到) = 没有提前看到 = 即兴发挥",
+      "examples": [
+        {
+          "en": "The jazz musician improvised a stunning solo.",
+          "zh": "那位爵士乐手即兴演奏了一段令人惊艳的独奏。",
+          "source": "造句"
+        },
+        {
+          "en": "improvise a solution",
+          "zh": "临时想出一个解决方案",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "extemporize",
+          "ipa": "/ɪkˈstempəraɪz/",
+          "gloss": "即席发言/演奏",
+          "note": "extemporize 更正式，尤指「脱稿演讲」；improvise 更通用"
+        },
+        {
+          "w": "ad-lib",
+          "ipa": "/ˌæd ˈlɪb/",
+          "gloss": "即兴发挥（口语）",
+          "note": "ad-lib 更口语化，尤指「即兴台词/插话」"
+        },
+        {
+          "w": "wing it",
+          "ipa": "/wɪŋ ɪt/",
+          "gloss": "临场对付（口语）",
+          "note": "wing it 是 improvise 的口语版，指没准备就上"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "prepare",
+          "note": "准备"
+        },
+        {
+          "w": "rehearse",
+          "note": "排练"
+        },
+        {
+          "w": "script",
+          "note": "按剧本/稿子来"
+        }
+      ],
+      "nuance": "improvise 的核心是「没准备、现场来」，但不等于「瞎搞」——好即兴建立在深厚基本功之上。jazz improvisation = 爵士即兴（在固定和弦框架内自由创作旋律），不是乱吹。口语句子 we'll just improvise = 「到时候再说/临场发挥」。",
+      "core": "你在台上，灯光打下来，台下的脸模糊成一片——脑子里什么都没准备，但身体已经动了。手指触到琴键的那一刻，旋律自己流出来。不是「想出来」的，是「放出来」的。",
+      "senses": [
+        {
+          "gloss": "v. 即兴创作/演奏",
+          "logic": "核心意象 = 没有预先安排 → 在现场「即时生成」音乐/台词/表演",
+          "en": "He improvised a melody on the piano.",
+          "zh": "他在钢琴上即兴弹了一段旋律。"
+        },
+        {
+          "gloss": "v. 临时拼凑，将就",
+          "logic": "从艺术扩展到生活 → 没有合适的条件/工具，临时想办法对付",
+          "en": "We didn't have a proper stand so we improvised with a stack of books.",
+          "zh": "我们没有合适的架子，就用一摞书临时凑合了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "improvisation",
+          "gloss": "n. 即兴创作/演奏"
+        },
+        {
+          "w": "improvised",
+          "gloss": "a. 临时制作的，即兴的"
+        },
+        {
+          "w": "provide",
+          "gloss": "v. 提供（pre+vis = 提前看到→准备）"
+        },
+        {
+          "w": "improvident",
+          "gloss": "a. 无远见的，不节约的（不提前看）"
+        }
+      ]
+    },
+    {
+      "word": "artistic",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ɑːrˈtɪstɪk/",
+      "subgroup": "art",
+      "meaning": "a. 艺术（家）的；富有艺术性的；有艺术天赋的",
+      "etymology": "由 artist + -ic 构成。artist 源自拉丁语 ars/artis = 艺术、技艺、技巧。最初 ars 指任何人造技能（包括木工、铁匠等），文艺复兴后才缩窄为「创造性视觉艺术」。同源词：art (艺术)、artisan (工匠)、artificial (人造的)、artifact (人工制品——用手艺做出的东西)。",
+      "roots": [
+        {"part": "art", "meaning": "艺术，技艺 (from L ars)"},
+        {"part": "-ist", "meaning": "从事...的人"},
+        {"part": "-ic", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "英式 /ɑːˈtɪstɪk/ 美式 /ɑːrˈtɪstɪk/。重音在第二个音节。三个音节都要念出来——不要省掉中间那个 /tɪs/。",
+      "tip": "art+ist(人)+ic(adj) = 有艺术家那种感觉的 = 艺术的/有艺术天赋的",
+      "examples": [
+        {"en": "She has an artistic eye for composition.", "zh": "她对构图有艺术眼光。", "source": "造句"},
+        {"en": "artistic expression", "zh": "艺术表达", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "creative", "ipa": "/kriˈeɪtɪv/", "gloss": "有创造力的", "note": "creative 强调创造新东西的能力；artistic 强调「艺术感的、有美感的」"},
+        {"w": "aesthetic", "ipa": "/esˈθetɪk/", "gloss": "审美的，有美感的", "note": "aesthetic 侧重「感知美的能力/品味」；artistic 侧重「艺术创作/表现的能力」"},
+        {"w": "imaginative", "ipa": "/ɪˈmædʒɪnətɪv/", "gloss": "富于想象力的", "note": "imaginative 偏「想法新奇」；artistic 偏「形式/表现上的艺术感」"}
+      ],
+      "antonyms": [
+        {"w": "inartistic", "note": "非艺术的，无艺术性的"},
+        {"w": "utilitarian", "note": "功利的（重实用非美感）"}
+      ],
+      "nuance": "artistic 和 aesthetic 的微妙区别：artistic 说的是「这个人的能力/倾向是艺术型的」（跟科学家/商人对比）；aesthetic 说的是「这个东西有审美体系」。一个数学家可能追求 aesthetic elegance，但他不一定 artistic。",
+      "core": "你看一个人拿起笔，不是按套路的——他看这个世界的角度不一样：别人看到杯子，他看到光和影的切口。他不是在「做」艺术，他就是那样看东西的。",
+      "senses": [
+        {
+          "gloss": "a. 艺术的，艺术家的",
+          "logic": "核心意象 = 艺术家视角 → 属于/关于艺术和艺术家的",
+          "en": "The artistic community welcomed the new policy.",
+          "zh": "艺术界对新政策表示欢迎。"
+        },
+        {
+          "gloss": "a. 有艺术天赋的，有艺术感的",
+          "logic": "从「属于艺术家」→「具有艺术家那种特质的」——审美敏感、表现力强",
+          "en": "Even as a child, she was highly artistic.",
+          "zh": "她从小就有很强的艺术天赋。"
+        },
+        {
+          "gloss": "a. 富有艺术性的",
+          "logic": "从人扩展到物 → 设计/制作/呈现方式有美感追求",
+          "en": "The film is an artistic triumph.",
+          "zh": "这部电影在艺术上取得了巨大成功。"
+        }
+      ],
+      "derivatives": [
+        {"w": "artistry", "gloss": "n. 艺术技巧，艺术性"},
+        {"w": "artistically", "gloss": "adv. 在艺术上"},
+        {"w": "artisan", "gloss": "n. 工匠，手艺人（同源：ars = 技艺）"}
+      ]
+    },
+    {
+      "word": "democracy",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/dɪˈmɑːkrəsi/",
+      "subgroup": "social-science",
+      "meaning": "n. 民主政体，民主制度；民主国家；民主精神",
+      "etymology": "源自希腊语 dēmokratia，dēmos '人民' + kratos '权力、统治'。古希腊雅典人在广场上聚集，每人都有一票，这个画面就是 democracy 最初的模样。同源词：demographic（人口统计的）共享 demo- '人民' 词根。",
+      "roots": [
+        {
+          "part": "demo-",
+          "meaning": "人民、民众"
+        },
+        {
+          "part": "-cracy",
+          "meaning": "统治、权力"
+        }
+      ],
+      "phonetics": "重音在第二音节 /mɑː/；注意 dem- 读 /dɪˈm/ 不是 /ˈdem/；易错：不要读成 /ˈdeməkræsi/，重音位置是关键。",
+      "tip": "demo(人民)+cracy(统治)=人民统治——记住 demo 跟 '民众示威' 的 demo 是同一个根。",
+      "examples": [
+        {
+          "en": "Democracy requires an informed and engaged citizenry.",
+          "zh": "民主需要知情且积极参与的公民。",
+          "source": "造句"
+        },
+        {
+          "en": "representative democracy",
+          "zh": "代议制民主",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Athens is often celebrated as the birthplace of democracy around 500 BCE.",
+          "zh": "雅典常被誉为民主的发源地，约在公元前500年。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "republic",
+          "ipa": "/rɪˈpʌblɪk/",
+          "gloss": "共和国",
+          "note": "强调代议制和法治的政体形式，与 democracy 有重叠但不等同——democracy 侧重谁掌权，republic 侧重权力如何运行。"
+        },
+        {
+          "w": "self-government",
+          "ipa": "/ˌself ˈɡʌvərnmənt/",
+          "gloss": "自治",
+          "note": "强调人民自己管理自己，比 democracy 更直白，缺少制度层面的含义。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "autocracy",
+          "note": "专制，一人统治"
+        },
+        {
+          "w": "dictatorship",
+          "note": "独裁"
+        },
+        {
+          "w": "oligarchy",
+          "note": "寡头政治，少数人统治"
+        }
+      ],
+      "nuance": "democracy 强调'人民掌权'的制度原则；republic 强调'代议制+法治'的政体形式。美国既是 democracy 也是 republic，但侧重点不同：'Democracy is about who holds power; republic is about how power is exercised.'",
+      "core": "广场上人群举手表决，每一只手都算一票——热气腾腾的、吵吵嚷嚷的集体意志，阳光晒在每个人的后颈上。",
+      "senses": [
+        {
+          "gloss": "n. 民主政体，民主制度",
+          "logic": "核心意象'人民集体掌权'→ 固化为具体的政治制度形态。",
+          "en": "Sweden has been a stable parliamentary democracy for over a century.",
+          "zh": "瑞典一个多世纪以来一直是稳定的议会制民主国家。"
+        },
+        {
+          "gloss": "n. 民主国家",
+          "logic": "从制度引申为施行该制度的国家实体——把'人民掌权的地方'具象化为一个国家。",
+          "en": "Established democracies around the world held elections this year amid rising polarization.",
+          "zh": "世界各地的老牌民主国家今年在日益加剧的两极分化中举行了选举。"
+        },
+        {
+          "gloss": "n. 民主精神，平等参与",
+          "logic": "从政治制度引申为一种平等参与的价值观和氛围——'像在广场上每人都有发言权'的感觉延伸到任何组织。",
+          "en": "There is a refreshing democracy in the way this professor runs her seminar — every student's voice matters.",
+          "zh": "这位教授主持研讨课的方式有一种令人耳目一新的民主精神——每个学生的声音都被看重。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "democrat",
+          "gloss": "民主党人；民主主义者"
+        },
+        {
+          "w": "democratic",
+          "gloss": "民主的；民主制度的"
+        },
+        {
+          "w": "democratize",
+          "gloss": "使民主化"
+        },
+        {
+          "w": "demographic",
+          "gloss": "人口统计的（共享 demo- 词根）"
+        }
+      ]
+    },
+    {
+      "word": "anthropology",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˌænθrəˈpɑːlədʒi/",
+      "subgroup": "social-science",
+      "meaning": "n. 人类学",
+      "etymology": "源自新拉丁语 anthropologia，由希腊语 anthrōpos '人类' + -logia '学科' 构成。19世纪作为一门现代学科正式确立，试图回答'人类到底是什么'这个终极问题。同源词：philanthropy（慈善，字面义'爱人类'）共享 anthrōpos 词根。",
+      "roots": [
+        {
+          "part": "anthropo-",
+          "meaning": "人类"
+        },
+        {
+          "part": "-logy",
+          "meaning": "学科、研究"
+        }
+      ],
+      "phonetics": "重音在第三音节 /pɑːl/；/æn/ 开头不是 /eɪn/；th 是清辅音 /θ/（舌尖轻触上齿，送气）；很多人把 /ˌænθrə-/ 读成 /ˌænθroʊ-/，注意第二个元音是弱读 /ə/。",
+      "tip": "anthropo(人类)+logy(学)=研究人类的学科——anthropo 跟 anthropoid(类人猿)共享前缀。",
+      "examples": [
+        {
+          "en": "She turned to anthropology to understand why rituals differ so dramatically across cultures.",
+          "zh": "她转向人类学来理解为什么不同文化之间的仪式差异如此之大。",
+          "source": "造句"
+        },
+        {
+          "en": "cultural anthropology",
+          "zh": "文化人类学",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Franz Boas, the father of American anthropology, insisted that cultures must be understood on their own terms.",
+          "zh": "美国人类学之父弗朗茨·博厄斯坚持认为，文化必须以自身标准来理解。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "ethnology",
+          "ipa": "/eθˈnɑːlədʒi/",
+          "gloss": "民族学",
+          "note": "侧重特定民族的文化比较研究，是人类学的一个分支；anthropology 范围更广，还包含体质人类学和考古学。"
+        },
+        {
+          "w": "ethnography",
+          "ipa": "/eθˈnɑːɡrəfi/",
+          "gloss": "民族志",
+          "note": "侧重田野调查和深度描述的方法论，是人类学家做研究的方式而非学科本身。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "zoology",
+          "note": "动物学（研究动物而非人类）"
+        }
+      ],
+      "nuance": "anthropology 范围最广，研究人类的一切——从远古骨骼到当代社交媒体，涵盖体质、文化、语言、考古四大分支。ethnology 和 ethnography 都是 anthropology 的子集：ethnology 做比较，ethnography 做描述。",
+      "core": "考古学家蹲在土坑里，用小刷子轻轻扫去一块头骨上的尘土——阳光晒在后颈，几百年前的秘密就在刷尖下慢慢露出来。",
+      "senses": [
+        {
+          "gloss": "n. 人类学",
+          "logic": "核心意象'俯身贴近大地、聆听人类祖先心跳'→ 固化为全面研究人类的学科名称。",
+          "en": "Her groundbreaking research in medical anthropology revealed how cultural beliefs shape health outcomes.",
+          "zh": "她在医学人类学领域的开创性研究揭示了文化信念如何塑造健康结果。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "anthropologist",
+          "gloss": "人类学家"
+        },
+        {
+          "w": "anthropological",
+          "gloss": "人类学的"
+        },
+        {
+          "w": "anthropoid",
+          "gloss": "类人猿；似人的"
+        },
+        {
+          "w": "philanthropy",
+          "gloss": "慈善，博爱（爱人类）"
+        }
+      ]
+    },
+    {
+      "word": "sociology",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˌsoʊsiˈɑːlədʒi/",
+      "subgroup": "social-science",
+      "meaning": "n. 社会学",
+      "etymology": "由法国哲学家奥古斯特·孔德（Auguste Comte）在1830年代创造，混合了拉丁语 socius '同伴、盟友' 和希腊语 -logia '学科'。孔德想建立一门像物理学一样精确的'社会物理学'，最终命名为 sociologie。同源词：social、society、associate 都来自 socius '同伴'。",
+      "roots": [
+        {
+          "part": "socio-",
+          "meaning": "社会、同伴"
+        },
+        {
+          "part": "-logy",
+          "meaning": "学科、研究"
+        }
+      ],
+      "phonetics": "重音在第三音节 /ɑːl/；soci- 读 /ˈsoʊsi/，不是 /ˈsoʊʃi/（ci 不腭化为 sh）；第一个 o 读长音 /oʊ/。",
+      "tip": "socio(社会)+logy(学)=研究社会的学科——socio 同 social，社会学就是'社会之学'。",
+      "examples": [
+        {
+          "en": "Sociology trains you to see the general in the particular — how personal troubles reflect public issues.",
+          "zh": "社会学训练你在个别中看到一般——个人困扰如何反映了公共问题。",
+          "source": "造句"
+        },
+        {
+          "en": "rural sociology",
+          "zh": "农村社会学",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Émile Durkheim's 1897 study of suicide is a foundational text in sociology, showing how even the most personal act is shaped by social forces.",
+          "zh": "涂尔干1897年对自杀的研究是社会学奠基之作，展示了即使是最个人的行为也受到社会力量的塑造。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "social science",
+          "ipa": "/ˈsoʊʃəl ˈsaɪəns/",
+          "gloss": "社会科学",
+          "note": "上位词，sociology 是社会科学的一种，经济学、政治学、心理学等也属于 social science。"
+        },
+        {
+          "w": "demography",
+          "ipa": "/dɪˈmɑːɡrəfi/",
+          "gloss": "人口学",
+          "note": "侧重人口统计数据的量化分析，是与社会学相邻但独立的分支。"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "sociology 侧重社会结构、制度、群体行为的系统研究，关注'社会如何运作'。anthropology 传统上关注'远方的小型社会'，sociology 关注'身边的大型现代社会'——但这个边界在当代已经模糊。",
+      "core": "站在天桥上往下看晚高峰的车流——每个人都有自己要去的地方，但所有车加在一起却形成了不约而同的潮汐方向。",
+      "senses": [
+        {
+          "gloss": "n. 社会学",
+          "logic": "核心意象'从高处观察社会群体行为的俯瞰视角'→ 固化为学科名称。",
+          "en": "He double-majored in sociology and economics to understand both the social and material dimensions of inequality.",
+          "zh": "他双主修社会学和经济学，以理解不平等的社会维度和物质维度。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "sociologist",
+          "gloss": "社会学家"
+        },
+        {
+          "w": "sociological",
+          "gloss": "社会学的"
+        },
+        {
+          "w": "socioeconomic",
+          "gloss": "社会经济的"
+        }
+      ]
+    },
+    {
+      "word": "psychology",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/saɪˈkɑːlədʒi/",
+      "subgroup": "social-science",
+      "meaning": "n. 心理学；心理，心理特征",
+      "etymology": "源自新拉丁语 psychologia，由希腊语 psychē '灵魂、心灵、呼吸' + -logia '学科' 构成。psychē 的本义是'呼吸、生命之气'，古希腊人认为灵魂就是那口气。同源词：psyche（心灵）、psychic（通灵的）、psychiatry（精神病学）都共享这个词根。",
+      "roots": [
+        {
+          "part": "psycho-",
+          "meaning": "心灵、精神"
+        },
+        {
+          "part": "-logy",
+          "meaning": "学科、研究"
+        }
+      ],
+      "phonetics": "绝对重点：p 不发音！/saɪˈkɑːlədʒi/，很多人错读成 /psaɪ-/ 或 /pɪsaɪ-/。重音在第二音节 /kɑː/。英式：/saɪˈkɒlədʒi/。",
+      "tip": "psycho(心灵)+logy(学)=研究心灵的学科——p不发音！就像psychic(通灵的)也吞掉p。",
+      "examples": [
+        {
+          "en": "Cognitive psychology has revealed how biases creep into even our most rational decisions.",
+          "zh": "认知心理学揭示了偏见如何渗透到我们即使是最理性的决定中。",
+          "source": "造句"
+        },
+        {
+          "en": "clinical psychology",
+          "zh": "临床心理学",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Freud's psychoanalysis, while controversial today, fundamentally reshaped how the 20th century understood the human mind.",
+          "zh": "弗洛伊德的精神分析虽然今天争议很大，但从根本上重塑了20世纪对人类心灵的理解。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "psychiatry",
+          "ipa": "/saɪˈkaɪətri/",
+          "gloss": "精神病学",
+          "note": "医学分支，执业者是医生（可以开药）；psychology 是科学学科，心理学家通常不能开药。"
+        },
+        {
+          "w": "psychotherapy",
+          "ipa": "/ˌsaɪkoʊˈθerəpi/",
+          "gloss": "心理治疗",
+          "note": "谈话治疗的具体实践，心理学家和精神科医生都可以提供。"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "psychology 是研究心理过程和行为的科学学科（学术/科研层面）；psychiatry 是医学分支，处理精神疾病的诊断和药物治疗；psychotherapy 是治疗实践。关键区别：psychiatrist 是医生可以开药，psychologist 是科学家通常做评估和谈话治疗。",
+      "core": "一个人坐在漆黑的电影院里，银幕上的光映在脸上——外面在演别人的故事，里面翻涌着自己的情绪，这道光怎么穿过瞳孔变成心跳的，就是心理学。",
+      "senses": [
+        {
+          "gloss": "n. 心理学",
+          "logic": "核心意象'研究心灵运作规律的学科'→ 从'心灵之学'固化为现代科学学科。",
+          "en": "She earned her PhD in developmental psychology from Stanford.",
+          "zh": "她在斯坦福大学获得了发展心理学博士学位。"
+        },
+        {
+          "gloss": "n. 心理，心理特征",
+          "logic": "从学科名称引申为具体个体的心理状态和特征——'一个群体的心灵运作方式'→ 群体心理。",
+          "en": "The psychology of social media users reveals a deep craving for validation.",
+          "zh": "社交媒体用户的心理揭示了一种对认可的深层渴望。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "psychologist",
+          "gloss": "心理学家"
+        },
+        {
+          "w": "psychological",
+          "gloss": "心理的；心理学的"
+        },
+        {
+          "w": "psyche",
+          "gloss": "灵魂；心智"
+        },
+        {
+          "w": "psychiatry",
+          "gloss": "精神病学"
+        }
+      ]
+    },
+    {
+      "word": "hypothesis",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/haɪˈpɑːθəsɪs/",
+      "subgroup": "social-science",
+      "meaning": "n. 假设，假说；前提",
+      "etymology": "源自希腊语 hypothesis，字面义为 'a placing under'（放在下面的东西），由 hypo- '在下面' + thesis '放置、命题' 构成。古希腊哲学家用它指论证的'地基'——一个暂时放在下面支撑推理的命题，等验证完了才提上来。复数 hypotheses /haɪˈpɑːθəsiːz/。同源词：thesis（论文、论点）、synthesis（综合，放在一起）、parenthesis（括号，放在旁边插入）。",
+      "roots": [
+        {
+          "part": "hypo-",
+          "meaning": "在下面、低于"
+        },
+        {
+          "part": "thesis",
+          "meaning": "放置、命题"
+        }
+      ],
+      "phonetics": "重音在第二音节 /pɑːθ/；复数形式读音变化：/haɪˈpɑːθəsiːz/，最后一个音节从 /sɪs/ 变成 /siːz/。注意 thesis 部分是 /θəsɪs/（清辅音 th），不要读成 /təsɪs/。",
+      "tip": "hypo(下面)+thesis(放置)=放在下面的基础→先当假设垫着，验证了才提上来当结论。",
+      "examples": [
+        {
+          "en": "A good hypothesis is falsifiable — you must be able to prove it wrong for it to be scientifically meaningful.",
+          "zh": "一个好的假设必须是可证伪的——你必须能够证明它错了，它才有科学意义。",
+          "source": "造句"
+        },
+        {
+          "en": "null hypothesis",
+          "zh": "零假设，虚无假设（统计学核心概念）",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Galileo's hypothesis that all objects fall at the same rate regardless of mass was a direct challenge to Aristotelian physics.",
+          "zh": "伽利略关于所有物体不论质量都以相同速率下落的假设，是对亚里士多德物理学的直接挑战。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "theory",
+          "ipa": "/ˈθɪri/",
+          "gloss": "理论",
+          "note": "theory 是被大量证据反复验证后确立的解释体系（如进化论）；hypothesis 是待验证的单条猜想。'evolution is just a theory' 是常见谬误——在科学语境中 theory 比 hypothesis 更高层级。"
+        },
+        {
+          "w": "assumption",
+          "ipa": "/əˈsʌmpʃən/",
+          "gloss": "假定，假设",
+          "note": "assumption 往往不被检验就被接受为真；hypothesis 的核心特征是要求被检验。"
+        },
+        {
+          "w": "conjecture",
+          "ipa": "/kənˈdʒektʃər/",
+          "gloss": "推测，猜想",
+          "note": "更随意，不要求严格的验证框架，多用于数学猜想或日常猜测。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "fact",
+          "note": "事实"
+        },
+        {
+          "w": "certainty",
+          "note": "确定性"
+        },
+        {
+          "w": "conclusion",
+          "note": "结论（假设的终点）"
+        }
+      ],
+      "nuance": "hypothesis vs theory 是托福阅读学术词汇题的高频考点。hypothesis = '我猜可能是这样，做个实验看看'；theory = '经过反复验证，证据充分支持的解释体系'。日常英语常混用，但学术英语严格区分。可以说 'Einstein's theory of relativity'，不能说 'Einstein's hypothesis of relativity'。",
+      "core": "搭积木时先在桌面上铺一张薄纸垫底——纸上画着草图，积木搭好之后纸被抽走也没关系，因为它只是让搭建开始的那一下支撑。",
+      "senses": [
+        {
+          "gloss": "n. 假设，假说",
+          "logic": "核心意象'放在底下作为推理起点的临时命题'→ 从'垫在下面的地基'引申为科学推理的出发点。",
+          "en": "The researchers tested the hypothesis that sleep deprivation impairs decision-making.",
+          "zh": "研究人员检验了睡眠剥夺会损害决策能力的假设。"
+        },
+        {
+          "gloss": "n. 前提",
+          "logic": "从科学假设引申为一般论证的逻辑前提——任何论证体系'下面垫着的东西'。",
+          "en": "Her entire argument rests on the hypothesis that human nature is fundamentally cooperative.",
+          "zh": "她的整个论证建立在一个前提之上：人性本质上是合作的。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "hypothesize",
+          "gloss": "假设，假定（动词）"
+        },
+        {
+          "w": "hypothetical",
+          "gloss": "假设的，假定的"
+        },
+        {
+          "w": "thesis",
+          "gloss": "论文；论点"
+        }
+      ]
+    },
+    {
+      "word": "hierarchy",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈhaɪərɑːrki/",
+      "subgroup": "social-science",
+      "meaning": "n. 统治集团；等级制度；阶层",
+      "etymology": "源自希腊语 hierarkhia '大祭司的统治'，由 hieros '神圣的' + arkhein '领导、统治' 构成。最早用于描述天使的九个等级（从炽天使到守护天使），后来从中世纪教会等级体系扩展到世俗的权力层级。这个从天堂到人间的迁移赋予了 hierarchy 一种'不可撼动的秩序感'。同源词：monarchy（君主制）、anarchy（无政府状态）都共享 -archy '统治' 词根。",
+      "roots": [
+        {
+          "part": "hier-",
+          "meaning": "神圣的"
+        },
+        {
+          "part": "-archy",
+          "meaning": "统治、等级"
+        }
+      ],
+      "phonetics": "重音在第一音节 /haɪ/；hier- 读 /ˈhaɪər/，两个音节，r 要发出来，不要吞掉；整体音节数：四音节 /haɪ-ə-rɑːr-ki/，很多人省成三音节。",
+      "tip": "hier(神圣的)+archy(统治)=原来指天使的等级→后来泛指一切从高到低的等级秩序。",
+      "examples": [
+        {
+          "en": "Rigid hierarchies often stifle the flow of honest feedback from the bottom up.",
+          "zh": "僵化的等级制度往往扼杀了自下而上的诚实反馈。",
+          "source": "造句"
+        },
+        {
+          "en": "social hierarchy",
+          "zh": "社会等级，社会阶层",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Maslow's hierarchy of needs ranks human motivations from physiological survival to self-actualization.",
+          "zh": "马斯洛需求层次理论将人类动机从生理生存到自我实现进行了排序。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "pecking order",
+          "ipa": "/ˈpekɪŋ ˌɔːrdər/",
+          "gloss": "啄序，等级次序",
+          "note": "源自鸡群中通过啄斗确立的进食优先次序，更口语化、非正式，强调自然形成的而非制度规定的等级。"
+        },
+        {
+          "w": "stratification",
+          "ipa": "/ˌstrætɪfɪˈkeɪʃən/",
+          "gloss": "分层，阶层化",
+          "note": "社会学常用，强调层与层之间的清晰分界线，描述性更强，中性不带价值判断。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "equality",
+          "note": "平等"
+        },
+        {
+          "w": "egalitarianism",
+          "note": "平等主义"
+        }
+      ],
+      "nuance": "hierarchy 强调自上而下的权力阶梯（有统治意味，含着'上面管下面'）；stratification 强调社会分层的客观现象（更中性，描述'有上层有下层'的事实但不强调谁统治谁）；pecking order 强调非正式、自然形成的排序（来自动物行为学，自带一种'弱肉强食'的画面感）。",
+      "core": "一座金字塔，塔尖上站一个人，风把他的衣服吹得猎猎作响——越往下台阶越多，上面的人看不见最底层的脸。",
+      "senses": [
+        {
+          "gloss": "n. 等级制度",
+          "logic": "核心意象'层层叠叠的金字塔权力结构'→ 从天使等级引申为任何上下分明的制度安排。",
+          "en": "The military operates on a strict hierarchy where orders flow downward without question.",
+          "zh": "军队按照严格的等级制度运作，命令自上而下不容置疑。"
+        },
+        {
+          "gloss": "n. 统治集团",
+          "logic": "从等级制度引申为处于金字塔顶端的那些人——'等级制度'→'处在制度顶端的人'。",
+          "en": "The party hierarchy resisted calls for reform from the grassroots members.",
+          "zh": "党内统治集团抵制了来自基层党员的改革呼声。"
+        },
+        {
+          "gloss": "n. 层级，阶层",
+          "logic": "泛指任何分层结构——从社会延伸到知识、需求等抽象层级。",
+          "en": "There seems to be an unspoken hierarchy among the students based on how early they arrived at the school.",
+          "zh": "学生们之间似乎有一种心照不宣的层级，基于他们来这所学校的时间早晚。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "hierarchical",
+          "gloss": "等级制度的，分层的"
+        },
+        {
+          "w": "hierarch",
+          "gloss": "大主教；高层人物"
+        },
+        {
+          "w": "monarchy",
+          "gloss": "君主制（mono-单一 + archy统治）"
+        }
+      ]
+    },
+    {
+      "word": "ideology",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˌaɪdiˈɑːlədʒi/",
+      "subgroup": "social-science",
+      "meaning": "n. 思想体系；意识形态",
+      "etymology": "由法国哲学家德斯蒂·德·特拉西（Destutt de Tracy）在1796年创造，字面义为 'science of ideas'（观念的科学），源自希腊语 idea '形状、模式' + -logia '学科'。他本想建立一门中性的'观念学'。但后来马克思用 ideology 指'虚假意识'——统治阶级用来掩盖剥削本质的观念工具，赋予了这个词负面的政治色彩。今天两种含义并存：中性'思想体系'和贬义'意识形态洗脑'。同源词：idea、ideal、idealism。",
+      "roots": [
+        {
+          "part": "ideo-",
+          "meaning": "观念、理念"
+        },
+        {
+          "part": "-logy",
+          "meaning": "学说、体系"
+        }
+      ],
+      "phonetics": "重音在第三音节 /ɑːl/；ideo- 读 /ˌaɪdiˈɑː-/，第一个音节是 /aɪ/（'爱'），不是 /ɪ/；注意 ideo- 的 e 不发音，整个前缀读三个音节 /aɪ-di-ɑː/。",
+      "tip": "ideo(观念)+logy(体系)=观念体系→一套你戴着看世界的'有色眼镜'。",
+      "examples": [
+        {
+          "en": "Consumerism as an ideology equates personal happiness with the accumulation of material goods.",
+          "zh": "消费主义作为一种意识形态，将个人幸福等同于物质财富的积累。",
+          "source": "造句"
+        },
+        {
+          "en": "dominant ideology",
+          "zh": "主流意识形态",
+          "source": "高频搭配"
+        },
+        {
+          "en": "The Cold War was not just a military standoff but a battle between two irreconcilable ideologies — capitalism and communism.",
+          "zh": "冷战不仅是军事对峙，更是两种不可调和的意识形态——资本主义与共产主义——之间的较量。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "doctrine",
+          "ipa": "/ˈdɑːktrɪn/",
+          "gloss": "教义，学说",
+          "note": "强调一套明文规定的、不可挑战的原则体系，有较强的教条色彩；ideology 可以更松散和隐含。"
+        },
+        {
+          "w": "worldview",
+          "ipa": "/ˈwɜːrldvjuː/",
+          "gloss": "世界观",
+          "note": "更个人化、更宽泛的看世界方式，不一定形成体系；ideology 通常有政治/社会指向。"
+        },
+        {
+          "w": "creed",
+          "ipa": "/kriːd/",
+          "gloss": "信条，教义",
+          "note": "强调信仰和承诺的维度，多用于宗教语境或个人宣言。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "pragmatism",
+          "note": "实用主义（重实际效果，不以理念为准绳）"
+        }
+      ],
+      "nuance": "ideology 的核心是'成体系的观念滤镜'——它不仅是'你有什么看法'，更是'你透过什么框架看世界'。和 worldview 的区别：你有一个 worldview，但你活在一个 ideology 里面。Marx 用 ideology 指统治阶级灌输的虚假意识，这个批判义至今残留在学术讨论中。",
+      "core": "一副永远摘不下来的变色眼镜——戴上之后世界自动分成了'我们'和'他们'，每一件事的颜色都被提前调好了，你甚至不知道自己戴着它。",
+      "senses": [
+        {
+          "gloss": "n. 思想体系；意识形态",
+          "logic": "核心意象'一整套过滤现实的观念滤镜'→ 从'观念之学'演变为系统的政治/社会信念体系。",
+          "en": "The party's ideology blends free-market economics with traditional social values.",
+          "zh": "该党的意识形态将自由市场经济学与传统文化价值观融合在一起。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "ideological",
+          "gloss": "意识形态的"
+        },
+        {
+          "w": "ideologue",
+          "gloss": "意识形态倡导者；空想理论家"
+        },
+        {
+          "w": "idea",
+          "gloss": "观念，想法（同源词根）"
+        }
+      ]
+    },
+    {
+      "word": "ethnic",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈeθnɪk/",
+      "subgroup": "social-science",
+      "meaning": "a. 种族的；民族的",
+      "etymology": "源自希腊语 ethnos '一群生活在一起的人、民族、部落、族群'。在圣经希腊语中，ethnos 也被用来指'外邦人、非犹太人'（即'异教徒'，英语 heathen 也与此同源）。19世纪随着民族主义兴起，ethnic 从'异教徒的'转向了中性的'族群的、民族的'。同源词：ethnicity（族群性）、ethnology（民族学）都来自 ethnos。",
+      "roots": [
+        {
+          "part": "ethn-",
+          "meaning": "民族、族群、部落"
+        },
+        {
+          "part": "-ic",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "/ˈeθnɪk/，重音在第一音节；eth- 读 /eθ/（清辅音 th，送气），不是 /ez/ 也不是 /ed/；注意只有一个音节的重读，不要拉长。",
+      "tip": "ethn(族群)+ic(形容词)=关于族群的→种族的、民族的——'ethnic food'就是'那个族群吃的食物'。",
+      "examples": [
+        {
+          "en": "The neighborhood is a vibrant mosaic of ethnic restaurants, from Ethiopian to Vietnamese.",
+          "zh": "这个街区是一个生机勃勃的民族餐厅马赛克，从埃塞俄比亚菜到越南菜应有尽有。",
+          "source": "造句"
+        },
+        {
+          "en": "ethnic minority",
+          "zh": "少数民族",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Singapore is often cited as a model multi-ethnic society, with Chinese, Malay, Indian, and Eurasian communities coexisting.",
+          "zh": "新加坡常被引为多元民族社会的典范，华人、马来人、印度人和欧亚裔社区共存。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "racial",
+          "ipa": "/ˈreɪʃəl/",
+          "gloss": "种族的",
+          "note": "侧重生物学意义上的身体特征（肤色、发质等）；ethnic 侧重文化意义上的群体认同（语言、宗教、习俗）。一个人可以和你同 race 但不同 ethnicity。"
+        },
+        {
+          "w": "cultural",
+          "ipa": "/ˈkʌltʃərəl/",
+          "gloss": "文化的",
+          "note": "范围更广，不止于族群维度，可以指企业文化、流行文化等；ethnic 一定与族群归属相关。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "universal",
+          "note": "普遍的，不分族群的"
+        },
+        {
+          "w": "mainstream",
+          "note": "主流的（常与 ethnic minority 对立）"
+        }
+      ],
+      "nuance": "ethnic vs racial 是托福阅读中的关键区分：racial 侧重生理特征（肤色、面部特征），ethnic 侧重文化认同（语言、饮食、节日）。在学术写作中，race 和 ethnicity 是不同维度的变量。说自己 ethnic 为 Chinese 而 racial 为 Asian 是完全合理的社会科学表达。",
+      "core": "一个菜市场里同时飘着孜然、鱼露和九层塔的味道，三种语言在讨价还价——ethnic 就是这群人和那群人之间'不同得刚刚好'的斑斓。",
+      "senses": [
+        {
+          "gloss": "a. 种族的；民族的",
+          "logic": "核心意象'一个族群区别于另一个族群的独特文化标识'→ 从'属于某个 ethnos'引申为族群特征。",
+          "en": "The city's annual ethnic festival showcases traditional dances and cuisines from over thirty communities.",
+          "zh": "这座城市一年一度的民族节展示了来自三十多个社区的传统舞蹈和美食。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "ethnicity",
+          "gloss": "种族身份；族群性"
+        },
+        {
+          "w": "ethnocentric",
+          "gloss": "种族中心主义的"
+        },
+        {
+          "w": "multiethnic",
+          "gloss": "多民族的"
+        },
+        {
+          "w": "ethnology",
+          "gloss": "民族学"
+        }
+      ]
+    },
+    {
+      "word": "cognition",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/kɑːɡˈnɪʃn/",
+      "subgroup": "social-science",
+      "meaning": "n. 感知，认知，认识",
+      "etymology": "源自拉丁语 cognitionem '认识、了解、知识'，由 co- '一起' + gnoscere '知道'（过去分词 cognitus）构成。字面义是'把信息聚集在一起知道'——大脑把零散的感官输入拼成一个完整的'我知道了'。同源词：recognize（认出，再+知道=再次知道）、incognito（隐姓埋名的，不+知道=不被知道）、ignore（忽视，不+知道）、diagnose（诊断，穿过+知道）。gnoscere 这棵词根树庞大而优美。",
+      "roots": [
+        {
+          "part": "co-",
+          "meaning": "一起、共同"
+        },
+        {
+          "part": "gnos-",
+          "meaning": "知道、认识"
+        }
+      ],
+      "phonetics": "/kɑːɡˈnɪʃn/，重音在第二音节 /nɪʃ/。g 轻微发音或几乎不发音——很多人把 /kɑːɡˈnɪʃn/ 读成 /kɒɡ-/，注意第一个元音是 /ɑː/（美式）不是 /ɒ/（英式）。-tion 读 /ʃn/，t 不单独发音。",
+      "tip": "co(一起)+gnos(知道)=把信息聚在一起'知道'→认知——recognize(认出)就是re(再)+cognize(知道)→再次知道了=认出来了。",
+      "examples": [
+        {
+          "en": "Aging affects different domains of cognition — memory often declines while vocabulary may remain intact.",
+          "zh": "衰老影响认知的不同领域——记忆力往往下降，而词汇量可能保持不变。",
+          "source": "造句"
+        },
+        {
+          "en": "cognitive bias",
+          "zh": "认知偏差",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Piaget's stages of cognitive development map how children's cognition transforms from concrete to abstract thinking.",
+          "zh": "皮亚杰的认知发展阶段描绘了儿童认知如何从具象思维转变为抽象思维。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "perception",
+          "ipa": "/pərˈsepʃən/",
+          "gloss": "感知，知觉",
+          "note": "侧重感官输入的第一步加工（看到、听到）；cognition 范围大得多，包括记忆、推理、决策等所有高级心理过程。"
+        },
+        {
+          "w": "understanding",
+          "ipa": "/ˌʌndərˈstændɪŋ/",
+          "gloss": "理解",
+          "note": "更日常、更模糊；cognition 是严格的学术术语，指整套信息加工机制。"
+        },
+        {
+          "w": "intellect",
+          "ipa": "/ˈɪntəlekt/",
+          "gloss": "智力，思维能力",
+          "note": "强调能力的高低（聪明不聪明）；cognition 强调过程的机制（怎么想的），不涉及好坏评判。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ignorance",
+          "note": "无知（不知道的状态）"
+        },
+        {
+          "w": "incomprehension",
+          "note": "不理解，无法领会"
+        }
+      ],
+      "nuance": "cognition 是心理学的核心术语，指所有心理加工过程的总和——感知、注意、记忆、语言、推理、决策。perception 只是 cognition 的第一步（感觉输入的处理）；understanding 是 cognition 的一种结果。把 cognition 想象成一台计算机的全部运算流程，perception 只是数据输入端口。",
+      "core": "黑暗中一束光照在桌上的拼图——你拿起一块，指尖转一转，找到对的位置，啪嗒一声嵌进去，那一瞬间脑子里亮了一下。",
+      "senses": [
+        {
+          "gloss": "n. 认知，认识",
+          "logic": "核心意象'大脑把零散信息拼合为完整认识的全部加工过程'→ 从'共同知道'引申为全套心理加工机制。",
+          "en": "The study used fMRI to examine how bilingualism shapes cognition across the lifespan.",
+          "zh": "这项研究使用功能性磁共振成像来考察双语能力如何在整个生命周期中塑造认知。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "cognitive",
+          "gloss": "认知的"
+        },
+        {
+          "w": "recognize",
+          "gloss": "认出，识别"
+        },
+        {
+          "w": "metacognition",
+          "gloss": "元认知（对自己认知过程的认知）"
+        },
+        {
+          "w": "incognito",
+          "gloss": "隐姓埋名的，化名的"
+        }
+      ]
+    },
+    {
+      "word": "colonial",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/kəˈloʊniəl/",
+      "subgroup": "social-science",
+      "meaning": "a. 殖民的；殖民国家的",
+      "etymology": "源自拉丁语 colonia '定居地、被耕种的土地、庄园'，来自 colonus '农民、佃农、在新土地上定居的人'，最终来自 colere '耕种、培育'。罗马帝国的 colonia 是派到征服地上定居的退伍军人社区——既是农场，也是军事据点。从'耕种土地'到'占领土地'，colony 的语义变迁本身就是一部帝国史。同源词：culture（文化，也来自 colere '培育'）、agriculture（农业，田地+培育）、cultivate（耕种、培养）。",
+      "roots": [
+        {
+          "part": "colon-",
+          "meaning": "耕种、定居"
+        },
+        {
+          "part": "-ial",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "/kəˈloʊniəl/，重音在第二音节 /loʊ/；co- 弱读为 /kə/ 而不是 /koʊ/；注意不要读成 /kəˈloʊnəl/（那是 colonel 上校，一个完全不同且拼读不一致的词）。",
+      "tip": "colon(定居地→殖民地)+ial(形容词)=殖民的——colere'耕种'也是culture的词源：殖民者'耕种'新大陆，也'培养'了自己的文化。",
+      "examples": [
+        {
+          "en": "The colonial legacy continues to shape economic inequalities between the Global North and South.",
+          "zh": "殖民遗产至今仍在塑造全球北方与南方之间的经济不平等。",
+          "source": "造句"
+        },
+        {
+          "en": "colonial rule",
+          "zh": "殖民统治",
+          "source": "高频搭配"
+        },
+        {
+          "en": "India's struggle for independence from British colonial rule, led by Gandhi's nonviolent movement, became a model for decolonization worldwide.",
+          "zh": "印度在甘地非暴力运动领导下争取从英国殖民统治中独立的斗争，成为全世界去殖民化的典范。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "imperial",
+          "ipa": "/ɪmˈpɪriəl/",
+          "gloss": "帝国的",
+          "note": "泛指帝国的扩张和统治，范围比 colonial 更广——日本在朝鲜的统治可称为 imperial，但通常不叫 colonial（因为是邻近征服而非远程定居型殖民地）。"
+        },
+        {
+          "w": "settler",
+          "ipa": "/ˈsetlər/",
+          "gloss": "定居者（的）",
+          "note": "更中性，描述的是'去新地方定居'这一行为，不一定包含政治统治和征服的含义。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "postcolonial",
+          "note": "后殖民的"
+        },
+        {
+          "w": "indigenous",
+          "note": "土著的，本土的"
+        },
+        {
+          "w": "sovereign",
+          "note": "主权的，独立的"
+        }
+      ],
+      "nuance": "colonial 特指'殖民地'这一统治形式：母国向海外派遣定居者、建立政治控制、经济剥削和文化同化。imperial 泛指帝国扩张，不含'定居'要素。Britain had an empire, but only parts of it were colonies（有些是 protectorate 保护国或 mandate 托管地）。",
+      "core": "一艘大船靠岸，穿深色西装的人走下舷梯，脚下的木头在炎热的海风里嘎吱作响——他在一片他从未见过的植物气味中，竖起了一面他从小就认识的旗帜。",
+      "senses": [
+        {
+          "gloss": "a. 殖民的；殖民国家的",
+          "logic": "核心意象'远道而来的宗主国对异域土地的政治、经济和文化控制'→ 从'耕种定居'引申为殖民统治的全部内涵。",
+          "en": "The museum's exhibition critically examines the violence embedded in colonial expansion.",
+          "zh": "博物馆的展览批判性地审视了殖民扩张中蕴含的暴力。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "colony",
+          "gloss": "殖民地"
+        },
+        {
+          "w": "colonialism",
+          "gloss": "殖民主义"
+        },
+        {
+          "w": "colonize",
+          "gloss": "殖民；开拓殖民地"
+        },
+        {
+          "w": "colonist",
+          "gloss": "殖民者"
+        }
+      ]
+    },
+    {
+      "word": "immigrant",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈɪmɪɡrənt/",
+      "subgroup": "social-science",
+      "meaning": "n.（外来）移民；侨民 a.（从国外）移来的",
+      "etymology": "源自拉丁语 immigrantem '移入'，由 in- '进入' + migrare '移动、改变居住地' 构成。migrare 是一只候鸟扇动翅膀的意象——季节到了就飞，这是生物的本能。immigrant 就是'飞进来的那只鸟'。同源词：emigrant（移出者，ex- 出去 + migrare）、migrant（流动者，不指明方向）、migrate（迁移，动词）。这一组词的区别全靠前缀：im-（进）vs e-（出）。",
+      "roots": [
+        {
+          "part": "im-",
+          "meaning": "进入"
+        },
+        {
+          "part": "migr-",
+          "meaning": "移动、迁移"
+        },
+        {
+          "part": "-ant",
+          "meaning": "做…的人"
+        }
+      ],
+      "phonetics": "/ˈɪmɪɡrənt/，重音在第一音节；im- /ˈɪm/（短元音），不是 /aɪm/；两个 m 之间没有 n——很多人因为不习惯 /ɪmɪɡ/ 这个音序列而插入鼻音读成 /ˈɪmɪnɡrənt/。",
+      "tip": "im(进入)+migr(移动)+ant(人)=移'进来'的人——记方向：exit→emigrant出，in→immigrant进。",
+      "examples": [
+        {
+          "en": "Immigrants have founded nearly half of the Fortune 500 companies in the United States.",
+          "zh": "美国财富500强公司中有近一半是由移民创立的。",
+          "source": "造句"
+        },
+        {
+          "en": "undocumented immigrant",
+          "zh": "无证移民（学术语境替代illegal immigrant的中性说法）",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Ellis Island processed over 12 million immigrants entering the United States between 1892 and 1954.",
+          "zh": "埃利斯岛在1892年至1954年间处理了超过1200万进入美国的移民。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "emigrant",
+          "ipa": "/ˈemɪɡrənt/",
+          "gloss": "移出者，出境移民",
+          "note": "同一个动作的两个视角：从中国去美国的人，对中国是 emigrant（移出者），对美国是 immigrant（移入者）。"
+        },
+        {
+          "w": "migrant",
+          "ipa": "/ˈmaɪɡrənt/",
+          "gloss": "移民，流动工人",
+          "note": "不指明迁移方向，常指季节性或有期限的流动（migrant worker 农民工/流动工人）。"
+        },
+        {
+          "w": "refugee",
+          "ipa": "/ˌrefjuˈdʒiː/",
+          "gloss": "难民",
+          "note": "因迫害、战争或灾难被迫离开家园的人，受国际法保护；immigrant 可能是自愿选择迁移。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "native",
+          "note": "本地人，原住民"
+        },
+        {
+          "w": "emigrant",
+          "note": "移出者（方向相反）"
+        }
+      ],
+      "nuance": "immigrant vs emigrant 是同一趟旅程的两端：你从上海出发去纽约，在上海你是 emigrant（出境移民），在纽约你是 immigrant（入境移民）。migrant 不指定方向，可进可出也可以是内部流动。refugee 有法律定义——必须有'对迫害的充分恐惧'。",
+      "core": "一个人提着行李箱站在海关通道前，前面的标语是他不认识的语言，背后的故乡缩成手机里一张正在加载的照片——踏出这一步，一辈子被切成了之前和之后两半。",
+      "senses": [
+        {
+          "gloss": "n.（外来）移民；侨民",
+          "logic": "核心意象'从一个国家移入另一个国家定居的人'→ 从'移进来的人'引申为移民身份。",
+          "en": "As a first-generation immigrant, she navigated between her parents' traditions and her new country's expectations daily.",
+          "zh": "作为第一代移民，她每天都在父母的传统和新国家的期望之间穿行。"
+        },
+        {
+          "gloss": "a.（从国外）移来的",
+          "logic": "从名词用法自然引申为形容词——'移民的'→ 修饰与移民相关的任何事物。",
+          "en": "The immigrant neighborhood pulsed with languages from a dozen different countries.",
+          "zh": "这个移民社区里跳动着十几个不同国家的语言。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "immigrate",
+          "gloss": "移入，移民（动词）"
+        },
+        {
+          "w": "immigration",
+          "gloss": "移民；入境；移民局"
+        },
+        {
+          "w": "migrate",
+          "gloss": "迁移，迁徙（不指明方向）"
+        },
+        {
+          "w": "emigrant",
+          "gloss": "移出者，出境移民"
+        }
+      ]
+    },
+    {
+      "word": "urbanization",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˌɜːrbənaɪˈzeɪʃn/",
+      "subgroup": "social-science",
+      "meaning": "n. 都市化",
+      "etymology": "由 urban（源自拉丁语 urbanus '属于城市的'，来自 urbs '城市'）+ -ization（名词化后缀，表示'…化的过程'）构成。古罗马人称自己的首都为 Urbs——大写的'那座城'，因为在他们眼中全世界只有一座真正的城市。当罗马人说 urbanus，他们不只是在说'城市的'，而是在说'文明的、优雅的、有教养的'（与 rusticus '乡下的、粗野的'对立）。urbanization 承载着这种从 urbs 到 metropolis 的文明向心力。同源词：urban（城市的）、suburb（郊区，sub-下面+urbs）、urbane（温文尔雅的，带城市人的精致感）。",
+      "roots": [
+        {
+          "part": "urban-",
+          "meaning": "城市的"
+        },
+        {
+          "part": "-ization",
+          "meaning": "…化的过程"
+        }
+      ],
+      "phonetics": "/ˌɜːrbənaɪˈzeɪʃn/，重音在倒数第三音节 /zeɪ/；ur- 英式读 /ɜː/（类似'呃'拉长），美式读 /ɜːr/（带 r 化）；注意第二个音节 -ban- 弱读为 /bən/，不是 /bæn/；-ization 读 /aɪˈzeɪʃn/ 四个音节缩成接近三个。",
+      "tip": "urban(城市的)+ization(化)=城市化——urban同源suburb(郊区)、urbane(温文尔雅的)，都来自拉丁语urbs'那座城'(罗马)。",
+      "examples": [
+        {
+          "en": "Unchecked urbanization without adequate infrastructure has led to the proliferation of slums across the developing world.",
+          "zh": "缺乏足够基础设施的无序城市化导致了发展中世界贫民窟的激增。",
+          "source": "造句"
+        },
+        {
+          "en": "rapid urbanization",
+          "zh": "快速城市化",
+          "source": "高频搭配"
+        },
+        {
+          "en": "China's urbanization rate surged from roughly 18% in 1978 to over 65% by 2024 — the largest migration in human history.",
+          "zh": "中国的城市化率从1978年约18%飙升至2024年超过65%——这是人类历史上最大规模的人口迁移。",
+          "source": "文化锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "urban development",
+          "ipa": "/ˈɜːrbən dɪˈveləpmənt/",
+          "gloss": "城市发展",
+          "note": "侧重规划和建设层面的积极发展，比 urbanization 更正面；urbanization 是中性描述宏观趋势。"
+        },
+        {
+          "w": "urban sprawl",
+          "ipa": "/ˈɜːrbən sprɔːl/",
+          "gloss": "城市蔓延，无序扩张",
+          "note": "特指低密度、缺乏规划、依赖汽车的城市郊区无限扩张，带强烈负面批判色彩。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ruralization",
+          "note": "乡村化（人口从城市回流农村）"
+        },
+        {
+          "w": "suburbanization",
+          "note": "郊区化（城市人口向郊区扩散而非向市中心集中）"
+        },
+        {
+          "w": "deurbanization",
+          "note": "逆城市化"
+        }
+      ],
+      "nuance": "urbanization 描述人口从农村向城市迁移、城市面积扩大的宏观历史过程，是一个中性的社会学术语。urban sprawl 是 urbanization 的一种特定负面形态——像摊大饼一样无规划地向郊区低密度蔓延。urban development 则侧重'建设'和'改善'，规划者会说 urban development，批评者会说 urban sprawl。",
+      "core": "站在一片正在被推平的稻田边——左边是收割后的秸秆在午后的阳光里静默，右边打桩机的轰鸣震得脚底发麻，地平线上吊塔像钢铁森林一样一夜间长了出来，空气里全是水泥粉尘混着新翻的泥土味。",
+      "senses": [
+        {
+          "gloss": "n. 都市化，城市化",
+          "logic": "核心意象'农村土地被城市吞噬、人口涌入城市的历史过程'→ 从'城市+化'引申为城市化这一宏大的社会转型。",
+          "en": "The rapid urbanization of the 19th century transformed Europe from a continent of farmers into one of factory workers.",
+          "zh": "19世纪的快速城市化将欧洲从一个农民的大陆转变为工厂工人的大陆。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "urbanize",
+          "gloss": "使城市化"
+        },
+        {
+          "w": "urban",
+          "gloss": "城市的"
+        },
+        {
+          "w": "urbanized",
+          "gloss": "已城市化的"
+        },
+        {
+          "w": "suburb",
+          "gloss": "郊区（sub-下面+urbs城市）"
+        }
+      ]
+    },
+    {
+      "word": "database",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈdeɪtəbeɪs/",
+      "subgroup": "modern-tech",
+      "meaning": "n. 数据库",
+      "etymology": "20世纪60年代计算机术语，由data（数据）+ base（基地）合成。想象一个军营基地，每个帐篷里按编号整理存放着不同的情报档案，检索员一查编号就能调取。",
+      "roots": [
+        {
+          "part": "data",
+          "meaning": "数据，资料"
+        },
+        {
+          "part": "base",
+          "meaning": "基地，基础"
+        }
+      ],
+      "phonetics": "/ˈdeɪtəbeɪs/ 重音在首音节。注意data英美发音差异（英/deɪ/、美/dæ/），但database常见读/deɪ/。三个音节清晰：day-tuh-base。",
+      "tip": "data的base——数据的大本营，所有信息集中存放的地方。",
+      "examples": [
+        {
+          "en": "All user information is stored in a cloud-based database.",
+          "zh": "所有用户信息存储在一个云端数据库中。",
+          "source": "造句"
+        },
+        {
+          "en": "relational database management system (RDBMS)",
+          "zh": "关系型数据库管理系统",
+          "source": "TPO高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "repository",
+          "ipa": "/rɪˈpɑːzətɔːri/",
+          "gloss": "存储库；仓库",
+          "note": "repository泛指任何存储处（物理档案室或数字仓库），database特指结构化的电子数据库。"
+        },
+        {
+          "w": "data warehouse",
+          "ipa": "/ˈdeɪtə ˈwerhaʊs/",
+          "gloss": "数据仓库",
+          "note": "数据仓库规模更大，面向分析而非日常事务操作。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "scattered data",
+          "note": "分散数据"
+        }
+      ],
+      "nuance": "database强调结构化、可检索的电子数据集，核心是可查询（query）。repository更广义，可以是非结构化存储或物理实体。TPO阅读填词题常考：文中提到'store and retrieve information'时选database而非storage。",
+      "core": "一间巨大的电子档案室，所有资料按编号规整排列在泛着冷光的金属架上，敲一下键盘，机械臂就能精准抽出你需要的任何一格——无声、精确、永不遗忘。",
+      "senses": [
+        {
+          "gloss": "n. 数据库",
+          "logic": "data(数据)+base(基地)→存放数据的基地→集中存储和管理结构化信息的电子系统→数据库",
+          "en": "The research team built a genetic database of over 10,000 marine species.",
+          "zh": "研究团队建立了一个包含超过一万个海洋物种的基因数据库。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "dataset",
+          "gloss": "数据集"
+        },
+        {
+          "w": "metadata",
+          "gloss": "元数据（关于数据的数据）"
+        },
+        {
+          "w": "data-driven",
+          "gloss": "数据驱动的"
+        }
+      ]
+    },
+    {
+      "word": "virtual",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈvɜːrʧuəl/",
+      "subgroup": "modern-tech",
+      "meaning": "a.（通过计算机软件）模拟的，虚拟的；实际上的",
+      "etymology": "源自拉丁语virtus（美德、力量、效能）。中世纪经院哲学用virtualis表示'有效果但非物理形式的'，即'实质上等同的'。1960年代计算机时代，这个词从哲学名词变成了科技热词——VR（Virtual Reality）中的virtual就是这个'非物理但效果等同'的意思。",
+      "roots": [
+        {
+          "part": "virtu-",
+          "meaning": "力量，效能（拉丁语virtus）"
+        },
+        {
+          "part": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "/ˈvɜːrʧuəl/ 重音在首音节。注意中间的tʃ音（像中文'吃'的前半），不要读成/t/或/ʃ/。两个音节，不要加音节读成vir-tu-al（三个音节的读法只出现在极少数英式口音中）。",
+      "tip": "VR = Virtual Reality（虚拟现实），效果完全真实但没有物质实体。",
+      "examples": [
+        {
+          "en": "Students can conduct virtual experiments without stepping into a physical lab.",
+          "zh": "学生无需走进实体实验室就能进行虚拟实验。",
+          "source": "造句"
+        },
+        {
+          "en": "virtual reality (VR)",
+          "zh": "虚拟现实",
+          "source": "文化锚点"
+        },
+        {
+          "en": "virtual community / virtual meeting",
+          "zh": "虚拟社区 / 虚拟会议",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "simulated",
+          "ipa": "/ˈsɪmjuleɪtɪd/",
+          "gloss": "模拟的",
+          "note": "simulated强调'用模型替代真实来运行'，virtual强调'效果等同真实但形式不同'。"
+        },
+        {
+          "w": "digital",
+          "ipa": "/ˈdɪdʒɪtl/",
+          "gloss": "数字的",
+          "note": "digital指技术形式（0/1信号），virtual更强调体验层面的'非物理但等同'。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "physical",
+          "note": "实体的，物理的"
+        },
+        {
+          "w": "actual",
+          "note": "实际的，真实的"
+        },
+        {
+          "w": "tangible",
+          "note": "有形的，可触摸的"
+        }
+      ],
+      "nuance": "virtual强调'本质上等同但形式不同'：virtual meeting和线下会议效果等同。simulated强调'用模型复制'：simulated flight你知道是假的（模拟器）。virtual作'几乎'义（virtual guarantee = 几乎算保证）来自：名义上不是但效果上等同于→实际上。这是填词题最爱考的陷阱：别把'virtual reality'和'a virtual certainty'中的virtual当成两个完全无关的词。",
+      "core": "一道光影构成的长会议桌浮在半空中，你能看到每个人的表情、听到声音、感受到讨论的热度，伸手却只穿过光——它不在物理世界存在，但你的大脑已经把它当成了真实的。",
+      "senses": [
+        {
+          "gloss": "a.（计算机）虚拟的，模拟的",
+          "logic": "从'有效果但不具实体'的哲学义→计算机时代：用软件模拟出看起来/用起来真实但非物理存在的→虚拟的",
+          "en": "The museum launched a virtual tour of its ancient Egyptian collection.",
+          "zh": "博物馆推出了古埃及藏品的虚拟导览。"
+        },
+        {
+          "gloss": "a. 实际上的，几乎的",
+          "logic": "从'效果等同'延伸→虽然名义上不完全如此，但实质效果等同于→实际上，几乎等同于",
+          "en": "The monopoly position gave the company a virtual stranglehold on the market.",
+          "zh": "垄断地位让这家公司实际上扼住了市场的咽喉。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "virtually",
+          "gloss": "几乎；实际上；虚拟地"
+        },
+        {
+          "w": "virtue",
+          "gloss": "美德；优点；功效"
+        },
+        {
+          "w": "virtualization",
+          "gloss": "虚拟化（技术）"
+        }
+      ]
+    },
+    {
+      "word": "infrastructure",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈɪnfrəˌstrʌktʃər/",
+      "subgroup": "modern-tech",
+      "meaning": "n. 基础设施，基础结构",
+      "etymology": "源自法语infrastructure（19世纪末），由infra-（在……下面）+ structure（结构）组成。最早是军事工程术语，指铁路、桥梁、堡垒等军用设施的地基和下层支撑结构。二战后广泛用于民用领域，公路网、电网、光缆网，再到今天的云计算infrastructure，都是城市/系统底下那张看不见的骨架。",
+      "roots": [
+        {
+          "part": "infra-",
+          "meaning": "在下，在下层"
+        },
+        {
+          "part": "struct",
+          "meaning": "建造，搭起"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "/ˈɪnfrəˌstrʌktʃər/ 四个音节，主重音在首音节IN，次重音在STRUC。infra中的a弱读为/ə/（不是/ɑː/）。重音放错（比如读成in-FRUC-ture）是常见错误。",
+      "tip": "infra（下面）+ structure（结构）= 地表以下支撑整个城市的那张隐形骨架。没有它，上面的高楼一秒都站不住。",
+      "examples": [
+        {
+          "en": "The government plans to invest heavily in transportation infrastructure over the next decade.",
+          "zh": "政府计划在未来十年大力投资交通基础设施。",
+          "source": "造句"
+        },
+        {
+          "en": "IT infrastructure / cloud infrastructure",
+          "zh": "IT基础设施 / 云基础设施",
+          "source": "高频搭配"
+        },
+        {
+          "en": "critical infrastructure",
+          "zh": "关键基础设施（如电网、供水、通信）",
+          "source": "TPO高频"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "framework",
+          "ipa": "/ˈfreɪmwɜːrk/",
+          "gloss": "框架，结构体系",
+          "note": "framework更抽象，指组织性的框架（如legal framework法律框架）；infrastructure强调实体的/技术的底层支撑系统。"
+        },
+        {
+          "w": "foundation",
+          "ipa": "/faʊnˈdeɪʃn/",
+          "gloss": "地基，基础",
+          "note": "foundation是'一层地基'，infrastructure是一整套'网络化支撑系统'（交通网+电网+通信网都算）。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "superstructure",
+          "note": "上层建筑（建在基础设施之上的东西）"
+        },
+        {
+          "w": "surface-level",
+          "note": "表层的，非底层的"
+        }
+      ],
+      "nuance": "infrastructure是复数概念——单条公路不是infrastructure，但整座城市的公路网加上管网和电网才是。TPO城市发展/经济类文章高频词，常讨论'aging infrastructure'（老化基础设施）和'invest in infrastructure'（基础设施投资）。",
+      "core": "你站在繁华的城市路面之上，脚下三米深处，水管、电缆、光缆、地铁隧道像血管和神经一样交织成一张沉默的巨网——你一辈子都看不见它，但城市离了它一秒都活不了。",
+      "senses": [
+        {
+          "gloss": "n. 基础设施，基础结构",
+          "logic": "infra(在下)+struct(建造)+ure(名词)→建在底下的支撑结构→基础设施",
+          "en": "Aging infrastructure poses serious risks to public safety in many cities.",
+          "zh": "老化的基础设施对许多城市的公共安全构成严重风险。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "structural",
+          "gloss": "结构的；结构上的"
+        },
+        {
+          "w": "construct",
+          "gloss": "建造；构想（v.）；构想（n.）"
+        },
+        {
+          "w": "obstruct",
+          "gloss": "阻碍，阻挡（ob-=against）"
+        }
+      ]
+    },
+    {
+      "word": "interface",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈɪntərfeɪs/",
+      "subgroup": "modern-tech",
+      "meaning": "n. 界面，分界面；接口",
+      "etymology": "1880年代首次出现，由inter-（之间、互相）+ face（面）构成。最初是物理学术语，描述两种物质接触的界面（如油水界面）。1960年代计算机科学借用为'人机交互界面'，后来UI（User Interface）成为数字时代最常用的概念之一。同时，这个词也进入了管理学和交叉学科语境——描述不同领域/系统'对话'的那个中间地带。",
+      "roots": [
+        {
+          "part": "inter-",
+          "meaning": "在……之间，互相"
+        },
+        {
+          "part": "face",
+          "meaning": "面，表面"
+        }
+      ],
+      "phonetics": "/ˈɪntərfeɪs/ 重音在第一音节IN。注意inter在美音中读/ˈɪntər/（t轻读），不是/ɪnˈtɜːr/。face读/feɪs/，不要吞掉/f/。三个音节：IN-ter-face。",
+      "tip": "inter（之间）+ face（面）= 两个世界相触的那个'面'。你指尖碰到的手机屏幕，就是你和数字世界之间的interface。",
+      "examples": [
+        {
+          "en": "The new app has a clean, intuitive user interface that even beginners can navigate easily.",
+          "zh": "新应用有一个干净直观的用户界面，连新手都能轻松操作。",
+          "source": "造句"
+        },
+        {
+          "en": "user interface (UI)",
+          "zh": "用户界面",
+          "source": "文化锚点"
+        },
+        {
+          "en": "the interface between science and policy",
+          "zh": "科学与政策的交汇面/接口",
+          "source": "TPO学术搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "boundary",
+          "ipa": "/ˈbaʊndəri/",
+          "gloss": "边界，分界线",
+          "note": "boundary强调分隔（线这边是你那边是我）；interface强调连接和交互（这个面让两边对话）。"
+        },
+        {
+          "w": "intermediary",
+          "ipa": "/ˌɪntərˈmiːdieri/",
+          "gloss": "中介，中间人",
+          "note": "intermediary是人/机构穿针引线，interface是技术性的系统接触面。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "barrier",
+          "note": "障碍，壁垒（阻断而非连接）"
+        },
+        {
+          "w": "isolation",
+          "note": "隔离（无接触）"
+        }
+      ],
+      "nuance": "interface的核心功能是连接+交互：它是'两个系统之间可以对话的那个面'。boundary的核心功能是分隔。TPO阅读中interface经常出现在跨学科语境：'at the interface of biology and engineering'（在生物学和工程学的交叉地带）。",
+      "core": "手机屏幕的那层玻璃——它自己不产生任何内容，但你所有对数字世界的触摸、滑动、点击都穿过它。它是两个世界之间那层薄如蝉翼的膜，一边是你的手指，另一边是亿万行代码。",
+      "senses": [
+        {
+          "gloss": "n. 界面；接口；分界面",
+          "logic": "inter(互相)+face(面)→两个系统互相接触的面→界面/接口",
+          "en": "The interface between the two software modules must be clearly documented.",
+          "zh": "两个软件模块之间的接口必须有清晰的文档说明。"
+        },
+        {
+          "gloss": "v.（使通过接口）连接，交互",
+          "logic": "从名词'接触面'动词化→在接触面上进行连接和交互→连接，交互",
+          "en": "The new payment system interfaces seamlessly with major banks.",
+          "zh": "新的支付系统与各大银行无缝连接。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "interact",
+          "gloss": "互动，交互"
+        },
+        {
+          "w": "interpersonal",
+          "gloss": "人际的"
+        },
+        {
+          "w": "interdisciplinary",
+          "gloss": "跨学科的"
+        }
+      ]
+    },
+    {
+      "word": "prototype",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈproʊtətaɪp/",
+      "subgroup": "modern-tech",
+      "meaning": "n. 原型，雏形",
+      "etymology": "源自希腊语prōtotypon，由prōto-（最初的、第一的）+ typos（模型、印迹、类型）组成。16世纪通过法语prototype进入英语，指'最早的铸模或原始模型'。工程和设计中，prototype是'第一个可以拿来测试的实物版本'——通常粗糙但证明了核心理念可行。",
+      "roots": [
+        {
+          "part": "proto-",
+          "meaning": "最初的，原始的"
+        },
+        {
+          "part": "type",
+          "meaning": "类型，模型"
+        }
+      ],
+      "phonetics": "/ˈproʊtətaɪp/ 重音在首音节PRO。注意proto-读/ˈproʊtə/（PRO-tuh）而非/proˈtɒ/。type中的y读/aɪ/（长音i），不要读成短/i/。",
+      "tip": "proto（最初）+ type（模型）= 最早做出来的那个'样'。汽车公司的概念车、App的第一个可点击版本，都是prototype。",
+      "examples": [
+        {
+          "en": "The engineering team built and tested three prototypes before finalizing the design.",
+          "zh": "工程团队在敲定设计之前制作并测试了三个原型。",
+          "source": "造句"
+        },
+        {
+          "en": "working prototype",
+          "zh": "可运作的原型机",
+          "source": "TPO高频"
+        },
+        {
+          "en": "rapid prototyping",
+          "zh": "快速原型开发",
+          "source": "行业锚点（3D打印/软件开发）"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "model",
+          "ipa": "/ˈmɑːdl/",
+          "gloss": "模型",
+          "note": "model泛指任何比例/概念上的模型（建筑模型、数学模型），prototype特指'第一个可测试的实物版本'。"
+        },
+        {
+          "w": "archetype",
+          "ipa": "/ˈɑːrkitaɪp/",
+          "gloss": "原型，典范",
+          "note": "archetype是文学/心理学中的'原始模型'（如英雄archetype），更抽象；prototype是工程/设计中的实物或早期版本。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "finished product",
+          "note": "成品"
+        },
+        {
+          "w": "mass production model",
+          "note": "量产版"
+        }
+      ],
+      "nuance": "prototype的核心是'最早可验证的版本'——外观可能粗糙，但核心功能必须能跑。model更偏展示/概念，不一定是可运作的。archetype是抽象的类型原型（如'母亲archetype'），不是实物。",
+      "core": "一个用粗糙木板和胶带搭起来的飞行器，螺旋桨能嗡嗡地转、机翼在风中颤抖，所有人围过来看——它不好看、不能坐人，但当它第一次离地三秒钟的时候，所有人都知道：能飞的，只是还没有磨光滑而已。",
+      "senses": [
+        {
+          "gloss": "n. 原型，雏形，最初版本",
+          "logic": "proto(最初)+type(模型)→最早做出来的那个样版本→原型，雏形",
+          "en": "The prototype of the folding bicycle weighed less than seven kilograms.",
+          "zh": "这款折叠自行车的原型重量不到七公斤。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "prototypical",
+          "gloss": "原型的；典型的"
+        },
+        {
+          "w": "protocol",
+          "gloss": "协议；礼仪规范（proto+col→'第一张胶水纸'→最初的规定）"
+        },
+        {
+          "w": "proton",
+          "gloss": "质子"
+        }
+      ]
+    },
+    {
+      "word": "synthesize",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈsɪnθəsaɪz/",
+      "subgroup": "modern-tech",
+      "meaning": "vt. 合成；综合",
+      "etymology": "源自希腊语synthesis，由syn-（一起、共同）+ tithenai（放、放置）组成。17世纪以名词synthesis进入英语，19世纪衍生出动词synthesize。化学中最先使用——把简单物质'放到一起'产生复杂物质。后来被音乐（合成器）、学术写作（综合文献）、哲学（正反合）等领域广泛借用。",
+      "roots": [
+        {
+          "part": "syn-",
+          "meaning": "一起，共同"
+        },
+        {
+          "part": "thes",
+          "meaning": "放置，安排"
+        },
+        {
+          "part": "-ize",
+          "meaning": "动词后缀（使……化）"
+        }
+      ],
+      "phonetics": "/ˈsɪnθəsaɪz/ 重音在第一音节SYN。注意syn-读/sɪn/而不是/saɪn/。th在词中保持/θ/音（舌尖轻咬）。三个音节：SIN-thuh-size。",
+      "tip": "syn（一起）+ thes（放）+ ize = 把不同的东西放到一起，化学反应般产生全新的东西。不是'拼凑'，是'合成出新物质'。同源词：photosynthesis（光合作用）= photo(光)+synthesis(合成)。",
+      "examples": [
+        {
+          "en": "A good literature review does not just summarize papers — it synthesizes them into a new argument.",
+          "zh": "好的文献综述不只是罗列论文——它把论文综合成一个新的论点。",
+          "source": "造句"
+        },
+        {
+          "en": "synthesize a new compound",
+          "zh": "合成一种新化合物",
+          "source": "TPO化学类高频"
+        },
+        {
+          "en": "synthesize information from multiple sources",
+          "zh": "综合多个来源的信息",
+          "source": "学术写作高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "integrate",
+          "ipa": "/ˈɪntɪɡreɪt/",
+          "gloss": "整合，使融入",
+          "note": "integrate强调把分散部分融合成一个整体（如integrate into society融入社会）；synthesize强调从不同元素中创造出新东西。"
+        },
+        {
+          "w": "combine",
+          "ipa": "/kəmˈbaɪn/",
+          "gloss": "结合，合并",
+          "note": "combine是物理层面的放在一起（mix），synthesize是化学反应式的新造——产生的东西不等于原材料的简单相加。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "analyze",
+          "note": "分析（拆开看各部分，与synthesize方向相反）"
+        },
+        {
+          "w": "decompose",
+          "note": "分解"
+        }
+      ],
+      "nuance": "synthesize vs analyze是一对经典对立：analyze = 把整体拆成部分来看；synthesize = 把部分合成新的整体。学术写作中的synthesize是高分关键词——它意味着你不仅读了文献，还能从不同文献中提炼、重组、形成新观点，而非简单罗列。",
+      "core": "一个化学家站在实验台前，左手一瓶深蓝液体，右手一罐白色粉末，同时倒进烧瓶——烧瓶里不是蓝白相间，而是冒出紫烟，生成了全新的深紫色晶体。它既不是蓝也不是白，是两种原料在一起后诞生的第三种东西。",
+      "senses": [
+        {
+          "gloss": "v. 合成（化合物）",
+          "logic": "syn(一起)+thes(放置)+ize→把化学物质放到一起产生新物质→（化学）合成",
+          "en": "Researchers successfully synthesized a new polymer that degrades in seawater within weeks.",
+          "zh": "研究人员成功合成了一种能在海水中几周内降解的新型聚合物。"
+        },
+        {
+          "gloss": "v. 综合，融合（信息/观点）",
+          "logic": "从化学'合成'隐喻延伸到信息处理→把不同来源的信息放在一起形成新的理解→综合",
+          "en": "A skilled historian can synthesize scattered archival records into a compelling narrative.",
+          "zh": "一个有技巧的历史学家能把零散的档案记录综合成一个引人入胜的叙事。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "synthesis",
+          "gloss": "综合；合成（名词）"
+        },
+        {
+          "w": "synthetic",
+          "gloss": "合成的；人造的"
+        },
+        {
+          "w": "photosynthesis",
+          "gloss": "光合作用"
+        }
+      ]
+    },
+    {
+      "word": "simulate",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈsɪmjuleɪt/",
+      "subgroup": "modern-tech",
+      "meaning": "vt. 模仿，模拟；假装，伪装",
+      "etymology": "源自拉丁语simulare（模仿、假装），词根simil-意为'相似的'。16世纪进入英语时带有明显的贬义——'冒充、假装'。现代科技语境（20世纪中叶以后）洗掉了这个贬义，simulate变成中性的'用模型/计算机复制一个过程'。飞行模拟器（flight simulator）是最经典的例子。",
+      "roots": [
+        {
+          "part": "simul-",
+          "meaning": "相似的，一样的"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "/ˈsɪmjuleɪt/ 重音在首音节SIM。注意u读/ju/（像'you'），不是/ʌ/。-ate结尾读/eɪt/（不是/ət/，英式/ət/只在形容词中出现）。同源词similar的发音可辅助记忆。",
+      "tip": "simul（相似）+ ate（使）= 使看起来和真的一样。和similar（相似的）是同源词——simul就是'similar'的词根！",
+      "examples": [
+        {
+          "en": "Pilots spend hundreds of hours training in flight simulators before ever touching a real cockpit.",
+          "zh": "飞行员在摸到真实驾驶舱之前，要在飞行模拟器中训练数百小时。",
+          "source": "造句"
+        },
+        {
+          "en": "computer simulation",
+          "zh": "计算机模拟",
+          "source": "高频搭配"
+        },
+        {
+          "en": "simulate extreme weather conditions",
+          "zh": "模拟极端天气条件",
+          "source": "TPO自然科学类高频"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "imitate",
+          "ipa": "/ˈɪmɪteɪt/",
+          "gloss": "模仿，仿效",
+          "note": "imitate偏向'照着样子做/学'（模仿口音/笔迹）；simulate偏向'用模型/系统复制过程/行为'（规模更大更系统）。"
+        },
+        {
+          "w": "replicate",
+          "ipa": "/ˈreplɪkeɪt/",
+          "gloss": "复制，重做",
+          "note": "replicate强调精确再现结果；simulate强调再现过程而非精确复制每一个细节。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "execute genuinely",
+          "note": "真实执行（非模拟）"
+        }
+      ],
+      "nuance": "simulate侧重'用模型再现过程'——目的是训练（simulate emergency）或预测（simulate climate change）。imitate侧重'模仿外观或行为'，不一定有系统性模型。填词题常考：提到computer model/math model的语境下，动词一定是simulate而非imitate。",
+      "core": "你坐在一个会震动的铁椅子里，眼前环绕屏幕上跑道在飞速后退，仪表盘上所有指针都在跳。身体告诉你飞机在爬升，耳朵里是引擎的轰鸣，窗外是云——但你其实哪儿都没去，椅子原地不动，只是所有的感官都相信了。",
+      "senses": [
+        {
+          "gloss": "v. 模拟，模仿（过程/系统）",
+          "logic": "simul(相似)+ate(使)→用模型/计算机等手段使某个系统的运行被再现→模拟",
+          "en": "Climate scientists use supercomputers to simulate how ocean currents affect global temperatures.",
+          "zh": "气候科学家使用超级计算机来模拟洋流如何影响全球温度。"
+        },
+        {
+          "gloss": "v. 假装，伪装（情感/状态）",
+          "logic": "从'模仿过程'延伸到人的情感表现→做出看似真实但并非真实感受的表情/态度→假装",
+          "en": "He simulated enthusiasm during the client meeting, though he was exhausted.",
+          "zh": "他在客户会议上假装热情，尽管已经筋疲力尽。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "simulation",
+          "gloss": "模拟；仿真（名词）"
+        },
+        {
+          "w": "simulator",
+          "gloss": "模拟器（如flight simulator飞行模拟器）"
+        },
+        {
+          "w": "similar",
+          "gloss": "相似的（同词根simul-）"
+        },
+        {
+          "w": "simultaneous",
+          "gloss": "同时发生的（simul+taneous→'同一时间的'）"
+        }
+      ]
+    },
+    {
+      "word": "satellite",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˈsætəlaɪt/",
+      "subgroup": "modern-tech",
+      "meaning": "n. 卫星；人造卫星",
+      "etymology": "源自拉丁语satelles（随从、侍卫、保镖——总是跟在主人身边的那个人）。16世纪天文学家用它来比喻围绕行星运行的天然天体：月亮就像地球的随从一样忠实地绕着转。1957年苏联发射Sputnik，satellite从此又添了一个新意思——人造卫星。后来这个'围绕者'的意象还被政治学借用：satellite state = 卫星国（依附于大国的附庸国）。",
+      "roots": [
+        {
+          "part": "satellit-",
+          "meaning": "随从，侍卫（拉丁语satelles）"
+        },
+        {
+          "part": "-e",
+          "meaning": "名词后缀（通过法语借入）"
+        }
+      ],
+      "phonetics": "/ˈsætəlaɪt/ 重音在首音节SAT。注意它有三个音节SAT-uh-lite，不要漏掉中间的/ə/读成两个音节。末尾的e不发音。-lite读/laɪt/像light（光）。",
+      "tip": "satell（随从，忠实地跟随）+ ite = 像贴身侍卫一样，永远在轨道上绕着主人转的'天空随从'。月亮就是地球的natural satellite。",
+      "examples": [
+        {
+          "en": "The weather satellite transmits atmospheric data back to Earth every fifteen minutes.",
+          "zh": "气象卫星每十五分钟向地球传回大气数据。",
+          "source": "造句"
+        },
+        {
+          "en": "satellite imagery / satellite navigation",
+          "zh": "卫星图像 / 卫星导航",
+          "source": "TPO科技类高频"
+        },
+        {
+          "en": "communications satellite",
+          "zh": "通信卫星",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "spacecraft",
+          "ipa": "/ˈspeɪskræft/",
+          "gloss": "航天器，宇宙飞船",
+          "note": "spacecraft泛指所有太空飞行器（包括载人飞船），satellite特指在轨道上'绕圈'运行的卫星（大多无人）。"
+        },
+        {
+          "w": "moon",
+          "ipa": "/muːn/",
+          "gloss": "卫星（天然）",
+          "note": "moon特指天然卫星。地球的moon就是the Moon。satellite可以指天然，也可以指人造。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ground station",
+          "note": "地面站（卫星的对立面——地上接收器而非天上发射器）"
+        }
+      ],
+      "nuance": "satellite的核心意象是'围绕者'——永远在轨道上。天文学中天然卫星是satellite；科技中人造卫星也是satellite；政治学中satellite state = 围着大国转的卫星国/附庸国；商业中satellite office = 围绕总部的卫星办事处。同一个核心意象，在不同语境下衍生出不同含义。",
+      "core": "一个银色的金属盒子在漆黑得发蓝的太空中，沿着一根隐形的轨道默默地兜圈子——六十年来一圈又一圈，不曾停、不曾问为什么、不曾偏离一厘米。它的存在意义就是永远围着那颗蓝色星球转，把从太空中看到的一切传回地面。",
+      "senses": [
+        {
+          "gloss": "n. 卫星（天体）",
+          "logic": "从拉丁语'随从/侍卫'→天文学借用→围绕行星运行的天体→卫星",
+          "en": "Jupiter has more than 95 known satellites, including the volcanic moon Io.",
+          "zh": "木星有超过95颗已知卫星，包括火山活跃的木卫一。"
+        },
+        {
+          "gloss": "n. 人造卫星",
+          "logic": "从天然卫星引申→人类发射到地球轨道上的人造物体→人造卫星",
+          "en": "The GPS system relies on a constellation of at least 24 operational satellites.",
+          "zh": "GPS系统依赖至少24颗运行中卫星组成的星座网络。"
+        },
+        {
+          "gloss": "n. 卫星国 / 卫星组织（附属体）",
+          "logic": "从'围绕中心运行'的意象→政治/商业中附属于大主体的组织→卫星国/附属机构",
+          "en": "The tech giant opened satellite offices in three major Asian cities.",
+          "zh": "这家科技巨头在亚洲三个主要城市设立了卫星办事处。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "satellite dish",
+          "gloss": "卫星天线（俗称'锅'）"
+        },
+        {
+          "w": "satellite navigation (sat-nav)",
+          "gloss": "卫星导航"
+        },
+        {
+          "w": "satellite TV",
+          "gloss": "卫星电视"
+        }
+      ]
+    },
+    {
+      "word": "genetic",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/dʒəˈnetɪk/",
+      "subgroup": "modern-tech",
+      "meaning": "a. 基因的，遗传（学）的",
+      "etymology": "源自希腊语genesis（起源、诞生、创世），词根gen-意为'产生、出生'。1831年达尔文同时代的科学家用genetic描述'与起源有关的'。1905年遗传学家Bateson正式将其限定为'与遗传有关的'。gene（基因）这个词反而更晚——1909年才从德语Gen进入英语。所以genetic比gene这个词还要早出现！",
+      "roots": [
+        {
+          "part": "gen-",
+          "meaning": "产生，出生，起源"
+        },
+        {
+          "part": "-etic",
+          "meaning": "形容词后缀（与……有关的）"
+        }
+      ],
+      "phonetics": "/dʒəˈnetɪk/ 重音在第二音节NET。注意g在e前读/dʒ/（软g，像'这'的声母），不是/g/（硬g）。这和gene、genius、general中的g一样都是软g。三音节：juh-NET-ik。",
+      "tip": "gen（产生→基因决定生命特征的产生）+ etic = 与基因/遗传有关的。gen-词根家族庞大：gene(基因)、generate(产生)、generation(代)、genesis(起源)、genius(天赋=天生才能)。",
+      "examples": [
+        {
+          "en": "The disease has a strong genetic component, though environmental factors also play a role.",
+          "zh": "这种疾病有很强的遗传因素，不过环境因素也起作用。",
+          "source": "造句"
+        },
+        {
+          "en": "genetic engineering / genetic modification",
+          "zh": "基因工程 / 基因改造",
+          "source": "文化锚点"
+        },
+        {
+          "en": "genetic diversity",
+          "zh": "遗传多样性",
+          "source": "TPO生物类高频"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "hereditary",
+          "ipa": "/həˈredɪteri/",
+          "gloss": "遗传的，世袭的",
+          "note": "hereditary强调'从祖先/父母传下来'（家系视角），genetic强调'基因/DNA分子层面的机制'（分子生物学视角）。"
+        },
+        {
+          "w": "inherited",
+          "ipa": "/ɪnˈherɪtɪd/",
+          "gloss": "继承的，遗传的",
+          "note": "inherited更口语化、泛指（inherited wealth继承的财富 / inherited trait遗传的特征）；genetic是科学术语，严格指基因层面。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "acquired",
+          "note": "后天获得的（非先天遗传的）"
+        },
+        {
+          "w": "environmental",
+          "note": "环境的（非基因决定的）"
+        }
+      ],
+      "nuance": "genetic是分子层面的'与基因有关的'；hereditary是家族层面的'祖传的'。一种病可以既是genetic又是hereditary（基因病且家族遗传），但genetic mutation（基因突变）可能不是hereditary——它是你这个个体新发生的，不会传给后代（除非是生殖细胞突变）。TPO生物学文章常讨论'genetic vs environmental factors'（基因vs环境因素之争）。",
+      "core": "一个螺旋上升的双股楼梯，每一级台阶的扶手上都刻着一种颜色——你的眼睛是深棕还是浅蓝、头发是直是卷、甚至身体会不会在闻到某种花香时打喷嚏，都是这条楼梯深处某级台阶上的刻字。",
+      "senses": [
+        {
+          "gloss": "a. 基因的，遗传（学）的",
+          "logic": "gen(产生→决定生命特征生成的根本机制)+etic(形容词)→与基因/遗传相关的→基因的，遗传学的",
+          "en": "Genetic research over the past two decades has transformed medicine.",
+          "zh": "过去二十年的基因研究彻底改变了医学。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "gene",
+          "gloss": "基因"
+        },
+        {
+          "w": "genetics",
+          "gloss": "遗传学"
+        },
+        {
+          "w": "genome",
+          "gloss": "基因组"
+        },
+        {
+          "w": "genesis",
+          "gloss": "起源，创始（创世记）"
+        }
+      ]
+    },
+    {
+      "word": "innovate",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈɪnəveɪt/",
+      "subgroup": "modern-tech",
+      "meaning": "v. 革新，创新",
+      "etymology": "源自拉丁语innovare（更新、改变），由in-（进入，使）+ novare（使变新）组成，novus = new（新的）。16世纪英语借入，最初意思是'引入新东西、带来改变'。在工业革命和现代科技文化中，innovate变成了一个几乎神圣的词——它不再是简单地'搞点新花样'，而是'在已有基础上做出有价值的新突破'。注意：innovate不是invent（发明）——发明是无中生有，创新是推陈出新。",
+      "roots": [
+        {
+          "part": "in-",
+          "meaning": "进入，使……（加强意义）"
+        },
+        {
+          "part": "nov",
+          "meaning": "新的"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "/ˈɪnəveɪt/ 重音在首音节IN。注意第二个音节o读/ə/（弱读，像'呃'），不是/oʊ/。-ate尾读/eɪt/（清晰长音）。三个音节：IN-uh-vate。",
+      "tip": "in（使）+ nov（新）+ ate = 使变新→创新。nov和novel（小说 / 新颖的）同源——novel就是'讲别人没讲过的新故事'！同根词：novice（新手=刚来的新人）。",
+      "examples": [
+        {
+          "en": "Companies that fail to innovate risk being overtaken by more agile competitors.",
+          "zh": "不创新的公司有被更敏捷的竞争对手赶超的风险。",
+          "source": "造句"
+        },
+        {
+          "en": "the drive / ability to innovate",
+          "zh": "创新的驱动力 / 创新能力",
+          "source": "TPO商业类高频"
+        },
+        {
+          "en": "innovate on traditional methods",
+          "zh": "在传统方法基础上进行创新",
+          "source": "学术搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "revolutionize",
+          "ipa": "/ˌrevəˈluːʃənaɪz/",
+          "gloss": "彻底改变，革命化",
+          "note": "revolutionize是颠覆性的、推倒重来的变革；innovate是在现有基础上改良出新，不一定要推翻一切。"
+        },
+        {
+          "w": "invent",
+          "ipa": "/ɪnˈvent/",
+          "gloss": "发明，创造",
+          "note": "invent强调从无到有创造全新的东西（爱迪生invented灯泡），innovate强调对已有的东西做有价值的更新（苹果每代iPhone都是innovate而非invent）。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "stagnate",
+          "note": "停滞不前"
+        },
+        {
+          "w": "imitate",
+          "note": "模仿，因循守旧"
+        }
+      ],
+      "nuance": "innovate不等于invent。invent是从0到1（发明了世界上第一台电话）；innovate是从1到N或从N到N+1（把电话从座机innovate成智能手机）。TPO经济/商业类文章高频词，常出现在讨论企业竞争力、技术进步的语境中。",
+      "core": "一个老工匠对着用了十年的扳手皱起眉头，他没有扔掉它——而是沿着把手的外弧，多开了一道更贴合指关节的凹槽。还是那把扳手，但用起来顺手了十倍。",
+      "senses": [
+        {
+          "gloss": "v. 革新，创新，改革",
+          "logic": "in(使)+nov(新)+ate(动词)→引入新思想/方法使现有事物更新→创新，革新",
+          "en": "The company has continued to innovate in renewable energy storage technology.",
+          "zh": "这家公司在可再生能源存储技术领域持续创新。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "innovation",
+          "gloss": "创新；革新（名词）"
+        },
+        {
+          "w": "innovative",
+          "gloss": "创新的；革新的（形容词）"
+        },
+        {
+          "w": "innovator",
+          "gloss": "创新者，革新者"
+        },
+        {
+          "w": "novel",
+          "gloss": "新颖的（adj.）；小说（n.）"
+        }
+      ]
+    },
+    {
+      "word": "automatic",
+      "levels": [
+        "六级",
+        "托福"
+      ],
+      "ipa": "/ˌɔːtəˈmætɪk/",
+      "subgroup": "modern-tech",
+      "meaning": "a. 自动的；无意识的；必然的",
+      "etymology": "源自希腊语automatos（自我行动的、自动的），由auto-（自己）+ matos（思考、意愿、行动）组成——一个会'自己动'的东西！17世纪进入英语后用来描述'像有自己意志一样运作'的机械设备。工业革命让这个词普及（自动机器），20世纪心理学又给它加了一层意思：不经思考的条件反射（automatic response = 本能反应）。",
+      "roots": [
+        {
+          "part": "auto-",
+          "meaning": "自己，自动"
+        },
+        {
+          "part": "mat",
+          "meaning": "思考，意愿，行动（希腊语matos）"
+        },
+        {
+          "part": "-ic",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "/ˌɔːtəˈmætɪk/ 重音在第三音节MAT。这是四个音节的词：aw-tuh-MAT-ik。注意au读/ɔː/（嘴巴张圆的'哦'音），不是/aʊ/（'奥'）。auto-在词中间时拼读为/ɔːtə/。",
+      "tip": "auto（自己）+ mat（动）+ ic = 自己就会动的 → 自动的。记住automobile（汽车）= auto(自己)+mobile(移动)=自己会跑的车！同族：automation（自动化）、autonomous（自主的）。",
+      "examples": [
+        {
+          "en": "The greenhouse uses an automatic irrigation system that waters plants based on soil moisture.",
+          "zh": "温室使用自动灌溉系统，根据土壤湿度给植物浇水。",
+          "source": "造句"
+        },
+        {
+          "en": "automatic transmission",
+          "zh": "自动变速器（自动挡汽车）",
+          "source": "文化锚点"
+        },
+        {
+          "en": "automatic response / automatic behavior",
+          "zh": "自动反应 / 自动化行为（不经思考的本能反应）",
+          "source": "TPO心理学类高频"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "spontaneous",
+          "ipa": "/spɑːnˈteɪniəs/",
+          "gloss": "自发的，自然而然的",
+          "note": "spontaneous强调'没有外部触发、从内部自然发生'（如spontaneous applause自发的掌声）；automatic强调'被预设机制触发、不经思考就执行'。"
+        },
+        {
+          "w": "mechanical",
+          "ipa": "/məˈkænɪkl/",
+          "gloss": "机械的；不假思索的",
+          "note": "mechanical强调'像机器一样重复、生硬、无情感'（贬义）；automatic强调'触发即自动执行'（中性）。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "manual",
+          "note": "手动的，人工的"
+        },
+        {
+          "w": "deliberate",
+          "note": "刻意的，深思熟虑的"
+        },
+        {
+          "w": "voluntary",
+          "note": "自愿的，有意识的"
+        }
+      ],
+      "nuance": "automatic的核心是'触发即执行、中间没有决策环节'。你走到商场门口，门自己开了——这是automatic（传感器触发→电机执行）。呼吸也是automatic。TPO阅读常考两个语境：工程类（自动机器）和心理学类（自动行为/无意识反应）。第三个义项'automatic promotion（必然晋升）'是引申：'触发条件满足后必然自动发生→必然的'。",
+      "core": "你走进商场大门，双手还插在口袋里，两扇玻璃门就自己向两边无声滑开了——就像它们一直在等你，你的到来本身触发了开门。没有人在背后按按钮，没有一个保安在盯着监控。一切流畅、无声、必然。",
+      "senses": [
+        {
+          "gloss": "a. 自动的（机器/系统）",
+          "logic": "auto(自己)+mat(行动)+ic→自己就能运行不需人工干预→自动的",
+          "en": "The factory installed automatic assembly lines to triple its production capacity.",
+          "zh": "工厂安装了自动装配线，将产能提升了三倍。"
+        },
+        {
+          "gloss": "a. 无意识的，不假思索的（行为/反应）",
+          "logic": "从'机器自动运行'隐喻到人的行为→不经大脑有意识思考就自动做出的→无意识的，本能的",
+          "en": "For experienced drivers, checking the rearview mirror becomes almost automatic.",
+          "zh": "对有经验的司机来说，看后视镜几乎成了一种自动反应。"
+        },
+        {
+          "gloss": "a. 必然的（结果）",
+          "logic": "从'触发后必然自动发生'引申→在某些语境下表示'条件满足后必然随之而来的'→必然的",
+          "en": "A college degree is no longer an automatic ticket to a well-paying job.",
+          "zh": "大学学位不再是一张通往高薪工作的必然门票。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "automatically",
+          "gloss": "自动地；必然地"
+        },
+        {
+          "w": "automation",
+          "gloss": "自动化（名词）"
+        },
+        {
+          "w": "automated",
+          "gloss": "自动化的（已被自动化改造的）"
+        },
+        {
+          "w": "autonomous",
+          "gloss": "自主的，自治的"
+        }
+      ]
+    },
+    {
+      "word": "digitize",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈdɪdʒɪtaɪz/",
+      "subgroup": "modern-tech",
+      "meaning": "vt. 数字化",
+      "etymology": "digit（数字；手指）+ -ize（使……化）。digit源自拉丁语digitus（手指），因为人类最早的计数工具就是十根手指——扳着指头数数。当计算机时代来临（1950年代），人们需要描述'把模拟信息转化为0和1组成的数字信息'这个新动作，就在digit后面加了-ize造出了digitize。所以这个单词的底层画面非常原始：用手指头数数→数字→数字化。",
+      "roots": [
+        {
+          "part": "digit",
+          "meaning": "数字（原义：手指）"
+        },
+        {
+          "part": "-ize",
+          "meaning": "动词后缀，使……化"
+        }
+      ],
+      "phonetics": "/ˈdɪdʒɪtaɪz/ 重音在首音节DIG。注意第一个i读/ɪ/（短音，像'的'的韵母），第二个i也读/ɪ/（不是/iː/），-ize读/aɪz/。三个音节：DIJ-it-eyes。不要读成/ˈdɪɡɪtaɪz/（g不读硬音）。",
+      "tip": "digit（用手指头数数→数字）+ ize（化）= 变成数字形式。digital camera（数码相机）= 把光线变成数字信号的相机。",
+      "examples": [
+        {
+          "en": "The library has launched a project to digitize its entire collection of rare medieval manuscripts.",
+          "zh": "图书馆启动了一个项目，将其全部珍稀中世纪手稿数字化。",
+          "source": "造句"
+        },
+        {
+          "en": "digitize archival records",
+          "zh": "将档案记录数字化",
+          "source": "TPO高频"
+        },
+        {
+          "en": "digital transformation",
+          "zh": "数字化转型（digitize的宏观版本）",
+          "source": "行业锚点"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "convert (to digital)",
+          "ipa": "/kənˈvɜːrt/",
+          "gloss": "转换，转化为数字格式",
+          "note": "convert泛指任何形式转换（convert to PDF/convert currency），digitize特指'转为离散的数字数据'。"
+        },
+        {
+          "w": "encode",
+          "ipa": "/ɪnˈkoʊd/",
+          "gloss": "编码",
+          "note": "encode强调'把信息表示为代码'（如encode a message），digitize强调'将连续的模拟信号采样和量化为离散的数字值'。"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "analog (format)",
+          "note": "模拟的（非数字化格式）"
+        }
+      ],
+      "nuance": "digitize的核心动作是'采样+量化'——把连续的模拟世界切成一格一格的数字。纸质书扫描变成PDF是digitize；把收音机的模拟信号变成MP3也是digitize。encode是把信息编成某种'代码'（比如把字母A编码为ASCII码65），不一定要涉及模拟→数字的转换。",
+      "core": "一本发黄的老相册被小心翼翼翻开，一道冷色的扫描光从第一页缓缓滑到最后一页——照片上奶奶年轻时的笑容、折角的痕迹、甚至纸张被岁月沁出的霉斑，都变成了屏幕上由0和1组成的精确像素阵列。从此它永远不会再褪色了。",
+      "senses": [
+        {
+          "gloss": "v. 使数字化",
+          "logic": "digit(数字，本义手指→计数→数字)+ize(使……化)→把模拟/物理信息转换为0和1组成的数字形式→数字化",
+          "en": "Museums worldwide are racing to digitize their collections before fragile artifacts deteriorate further.",
+          "zh": "世界各地的博物馆正竞相在脆弱文物进一步损坏之前将其藏品数字化。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "digital",
+          "gloss": "数字的；数码的"
+        },
+        {
+          "w": "digitization",
+          "gloss": "数字化（过程/名词）"
+        },
+        {
+          "w": "digit",
+          "gloss": "数字（0-9）；手指"
+        }
+      ]
+    }
+  ]
+}

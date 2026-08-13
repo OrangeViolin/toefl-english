@@ -1,0 +1,1350 @@
+{
+  "id": "f",
+  "combo": "f·ff·ph·gh",
+  "title": "/f/ 的四种拼写",
+  "sound": "/f/",
+  "subtitle": "同一个清唇齿音，藏在四套外衣里——f 是常规，ph 是希腊血统，ff 是加固，gh 是词尾变形",
+  "intro": "/f/ 是清唇齿摩擦音：上齿轻触下唇，送气摩擦，不振动声带。它有四种拼写方式：f 和 ff 是最常规的本土写法（fan、offer），ff 出现在短元音之后或词缀边界；ph 几乎全来自希腊语借词，phone/photo/philosophy 都走这条路，认出「希腊血统」就能举一反三；gh 读 /f/ 是词尾特例（laugh、enough、tough），词中的 gh 通常不发音（night）或读 /g/（ghost），词尾才可能读 /f/。把四条路对号入座，/f/ 家族再无盲区。",
+  "subgroups": [
+    {
+      "key": "f",
+      "tag": "f → /f/",
+      "label": "✅ f = /f/",
+      "desc": "最基础的拼写，见到单个 f 直接读 /f/，无例外。fan / fish / friend / family / fresh / famous 都在此列。注意 of 是唯一特例——读 /əv/ 而非 /f/，需单独记忆。"
+    },
+    {
+      "key": "ff",
+      "tag": "ff → /f/",
+      "label": "ff = /f/",
+      "desc": "双写 f 发音与单 f 完全相同，区别只在拼写：ff 几乎总跟在短元音后（off、cliff、stuff），或出现在词根与后缀的边界（of·fer、ef·fort、dif·fi·cult）。记住：ff = 加固版 f，发音不变。"
+    },
+    {
+      "key": "ph",
+      "tag": "ph → /f/（希腊源）",
+      "label": "ph = /f/",
+      "desc": "希腊语借词的专属标志。希腊字母 φ（phi）进入拉丁文时写成 ph，音值保留 /f/。见到 ph 先想「希腊血统」：phone（声音）、photo（光）、graph（写/画）、phil-（爱）都是高频词根，认一个带一串。"
+    },
+    {
+      "key": "gh",
+      "tag": "gh → /f/（词尾）",
+      "label": "gh = /f/",
+      "desc": "gh 读 /f/ 是词尾特例，仅出现在 -ugh、-augh 结尾：laugh / cough / rough / tough / enough。词中的 gh 往往不发音（night / light）或读 /g/（ghost / ghetto），只有词尾才可能变 /f/。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-uff / -uff (/ʌf/)",
+      "words": ["tough", "rough", "enough", "stuff", "bluff"]
+    },
+    {
+      "label": "-aph / -afe (/æf/)",
+      "words": ["graph", "paragraph", "photograph"]
+    },
+    {
+      "label": "-one / -ose（ph-词根 /f/）",
+      "words": ["phone", "phrase", "physics", "philosophy"]
+    }
+  ],
+  "words": [
+    {
+      "word": "fan",
+      "hl": "f",
+      "levels": ["基础"],
+      "ipa": "/fæn/",
+      "subgroup": "f",
+      "meaning": "n. 风扇；（体育/文艺）粉丝，狂热者  v. 扇动；煽动（情绪）",
+      "etymology": "「粉丝」义源自 fanatic（狂热者），19世纪美国棒球语境缩写为 fan。「风扇」来自拉丁语 vannus（簸箕），用风力分离谷物——形状相同。两个义项同形不同源。",
+      "roots": [
+        {"part": "fan（fanatic）", "meaning": "狂热者→粉丝（体育/娱乐缩写）"},
+        {"part": "fan（vannus）", "meaning": "风扇，簸箕（拉丁语）"}
+      ],
+      "phonetics": "f + æ + n，单音节，/f/ 是唇齿音，上齿轻触下唇送气；与 man / can / ban 同韵。",
+      "tip": "fan 是 fanatic 的缩写——所谓粉丝，本质都是温和版的「狂热分子」。",
+      "core": "「散开/铺张」感——风扇把风散出去，粉丝把热情铺开给偶像，扇动则把能量向外传播。注意：「粉丝」义实为 fanatic 缩写，与「风扇」义历史上无直接语义关联，属同形偶合。",
+      "senses": [
+        {
+          "gloss": "n. 风扇，用于散热或送风的器械",
+          "logic": "扇形叶片旋转，将空气向四周散开",
+          "en": "The ceiling fan hummed softly in the summer heat.",
+          "zh": "夏日炎炎，吊扇低低地转着。"
+        },
+        {
+          "gloss": "n. 粉丝，对某人或某事物的狂热追随者",
+          "logic": "来自 fanatic 缩写；热情「散播」给偶像（历史偶合，非同源引申）",
+          "en": "Thousands of fans waited outside the stadium for hours.",
+          "zh": "数千名粉丝在体育场外等了好几个小时。"
+        },
+        {
+          "gloss": "v. 扇动，用手或物件拨动空气；煽动（情绪或局势）",
+          "logic": "「散开」动作的动词化，情绪也可被「扇」向外扩散",
+          "en": "His remarks only fanned the tension in the room.",
+          "zh": "他的话只是进一步煽动了室内的紧张气氛。"
+        }
+      ],
+      "derivatives": [
+        {"w": "fanatic", "gloss": "n./adj. 狂热者；极端热情的"},
+        {"w": "fanatical", "gloss": "adj. 狂热的，偏执的"},
+        {"w": "fandom", "gloss": "n. 粉丝群体；粉圈文化"}
+      ],
+      "examples": [
+        {
+          "en": "She has been a fan of jazz since she was twelve.",
+          "zh": "她从十二岁起就是爵士乐迷。",
+          "source": "造句"
+        },
+        {
+          "en": "fan the flames",
+          "zh": "「火上浇油、煽风点火」——比喻煽动情绪或局势，高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "enthusiast", "ipa": "/ɪnˈθjuːziæst/", "gloss": "爱好者，对某领域有系统热情的人", "note": "更正式的「爱好者」，比 fan 多了系统研究的含义；a music enthusiast（音乐爱好者）"},
+        {"w": "supporter", "ipa": "/səˈpɔːrtər/", "gloss": "支持者，在立场上拥护某人或某事", "note": "「支持者」，侧重立场上的支持，比 fan 更中性，也用于政治场合"}
+      ],
+      "antonyms": [
+        {"w": "critic", "note": "批评者，反对者"}
+      ],
+      "nuance": "fan 最口语，暗含强烈情感投入（体育/娱乐语境）；enthusiast 更正式，侧重兴趣的深度；supporter 侧重立场支持，情感色彩更弱。「I'm a big fan」是日常万能句，「I'm an enthusiast」显得更书面。"
+    },
+    {
+      "word": "fresh",
+      "hl": "f",
+      "levels": ["基础"],
+      "ipa": "/freʃ/",
+      "subgroup": "f",
+      "meaning": "adj. 新鲜的；清新的；（思路）崭新的；精力充沛的  adv. 刚刚（fresh from）",
+      "etymology": "古英语 fersc「新鲜（水）」，后受古法语 freis 影响，日耳曼同根，与德语 frisch 同源。核心义「未腐败的、刚得到的」。refresh（恢复活力）是其加强版。",
+      "roots": [
+        {"part": "fresh（fersc）", "meaning": "新鲜、未腐坏"}
+      ],
+      "phonetics": "fr- 连缀辅音 + esh /eʃ/；注意 fr 要连读流畅，/f/ 轻送气后紧跟 /r/。",
+      "core": "「未被时间触碰」感——食物未腐、空气未污、想法未用、人未被消耗，都是这种刚得到、还没变质的状态。",
+      "senses": [
+        {
+          "gloss": "adj. 新鲜的（食物、空气），未变质或未受污染的",
+          "logic": "核心感：时间还没到达，尚未腐坏",
+          "en": "The market sells fresh vegetables every morning.",
+          "zh": "市场每天早上都卖新鲜蔬菜。"
+        },
+        {
+          "gloss": "adj. 崭新的、有活力的（思路、观点）",
+          "logic": "「未被用过」→ 没有磨损的新意",
+          "en": "A fresh perspective can solve problems that experience alone cannot.",
+          "zh": "全新视角能解决单靠经验无法破解的问题。"
+        },
+        {
+          "gloss": "adj. 精力充沛的，状态良好的",
+          "logic": "「未被消耗」→ 体力和精神还在满格",
+          "en": "She arrived at the office fresh after a good night's sleep.",
+          "zh": "睡了个好觉后，她精神抖擞地来到办公室。"
+        },
+        {
+          "gloss": "adv. 刚刚（fresh from/out of），强调近期离开某状态",
+          "logic": "「刚被时间触碰」→ 才离开那个状态没多久",
+          "en": "fresh out of college",
+          "zh": "「刚从大学毕业」——fresh from/out of 表示「刚离开某处」，强调新鲜感。"
+        }
+      ],
+      "derivatives": [
+        {"w": "refresh", "gloss": "v. 恢复活力；刷新（页面）"},
+        {"w": "freshness", "gloss": "n. 新鲜感；活力"},
+        {"w": "freshen", "gloss": "v. 使变新鲜；（风）变强"}
+      ],
+      "examples": [
+        {
+          "en": "A fresh perspective can solve problems that experience alone cannot.",
+          "zh": "全新视角能解决单靠经验无法破解的问题。",
+          "source": "造句"
+        },
+        {
+          "en": "fresh out of college",
+          "zh": "「刚从大学毕业」——fresh from/out of 表示「刚离开某处」，强调新鲜感。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "new", "ipa": "/njuː/", "gloss": "新的，指存在时间短或刚获得", "note": "最通用的「新」，无「新鲜感」含义；new idea（新想法）比 fresh idea 更中性"},
+        {"w": "novel", "ipa": "/ˈnɒvl/", "gloss": "新颖的，前所未有的", "note": "「新颖的」，强调前所未有，比 fresh 更正式；a novel approach（新颖的方法）"},
+        {"w": "invigorating", "ipa": "/ɪnˈvɪɡəreɪtɪŋ/", "gloss": "令人振奋的，使人充满活力的", "note": "「令人振奋的」，侧重带来活力，是 fresh（清新）的强化版"}
+      ],
+      "antonyms": [
+        {"w": "stale", "note": "不新鲜的；陈腐的"},
+        {"w": "exhausted", "note": "精疲力竭的（相对「充沛」义）"}
+      ],
+      "nuance": "fresh 兼指物理新鲜（fresh food）和抽象的「有活力、有新意」（fresh ideas），是褒义词；novel 只用于抽象的「前所未有」，语气更强；new 最中性，可指新旧之别但不含褒义的「活力感」。"
+    },
+    {
+      "word": "famous",
+      "hl": "f",
+      "levels": ["基础"],
+      "ipa": "/ˈfeɪməs/",
+      "subgroup": "f",
+      "meaning": "adj. 著名的，出名的；（for）以……闻名",
+      "etymology": "拉丁语 famosus = fama（名声、传言） + -osus（充满…的）。fama 与 fate（命运）同根，原义「众人口耳相传的事」→ 名声。fame（名声）、infamous（臭名昭著的）是同族词。",
+      "roots": [
+        {"part": "fam- (fama)", "meaning": "名声、传言"},
+        {"part": "-ous", "meaning": "形容词后缀：充满…的"}
+      ],
+      "phonetics": "重音在首音节 FA-mous，/feɪ/ + məs；注意 a 读双元音 /eɪ/ 而非 /æ/。",
+      "tip": "famous（正面出名）vs infamous（臭名昭著）——都含 fama，一正一反。in- 在此是「坏名声」而非「没有名声」。",
+      "core": "「被众口传颂」感——名声就是别人嘴里的话，famous 指那些话是正向的、广泛的。单义词，核心感即全部。",
+      "senses": [
+        {
+          "gloss": "adj. 著名的，因正面事迹或才能而被广泛知晓",
+          "logic": "fama（传言）+ -osus（充满）= 充满了人们的口耳相传",
+          "en": "Paris is famous for its art museums and cuisine.",
+          "zh": "巴黎以其艺术博物馆和美食闻名。"
+        }
+      ],
+      "derivatives": [
+        {"w": "fame", "gloss": "n. 名声，名望"},
+        {"w": "infamous", "gloss": "adj. 臭名昭著的，以坏事出名"},
+        {"w": "famously", "gloss": "adv. 出了名地；（用于强调）众所周知地"}
+      ],
+      "examples": [
+        {
+          "en": "Paris is famous for its art museums and cuisine.",
+          "zh": "巴黎以其艺术博物馆和美食闻名。",
+          "source": "造句"
+        },
+        {
+          "en": "famously difficult",
+          "zh": "「出了名地困难」——副词 famously 用于强调，高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "renowned", "ipa": "/rɪˈnaʊnd/", "gloss": "享誉的，因真实成就而受到广泛赞誉", "note": "正式「享誉的」，比 famous 更书面，多用于正式赞扬；a renowned scientist（著名科学家）"},
+        {"w": "celebrated", "ipa": "/ˈselɪbreɪtɪd/", "gloss": "受到称颂的，广受赞誉的", "note": "「受到称颂的」，带有广受赞誉的含义，比 famous 更隆重"},
+        {"w": "well-known", "ipa": "/welˈnoʊn/", "gloss": "广为人知的，不含褒贬的中性表达", "note": "「广为人知的」，最中性，无褒贬；well-known fact（众所周知的事实）"}
+      ],
+      "antonyms": [
+        {"w": "unknown", "note": "无名的"},
+        {"w": "obscure", "note": "默默无闻的"}
+      ],
+      "nuance": "famous 是最通用的「著名」；renowned 更书面，暗含因真实成就而出名；celebrated 带有「众人为之喝彩」的热情；well-known 最中性，不含褒义；infamous 是「以坏事出名」，是 famous 的反义近义词。"
+    },
+    {
+      "word": "fantastic",
+      "hl": "f",
+      "levels": ["托福"],
+      "ipa": "/fænˈtæstɪk/",
+      "subgroup": "f",
+      "meaning": "adj. 极好的，出色的（口语）；荒诞的，奇异的；巨大的",
+      "etymology": "希腊语 phantastikos「能想象的」，源自 phantazein（使可见）→ 「幻象般的」→ 「荒诞不实的」；20世纪口语中语义弱化为「极好的」，与 fantastic 本义几乎相反。fantasy（幻想）是同族词。",
+      "roots": [
+        {"part": "fant- (phantazein)", "meaning": "幻象、显现（希腊语）"},
+        {"part": "-astic", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "fan- /fæn/ + TAS- /tæs/ + tic /tɪk/，重音中间音节；注意 f 是词首，第一个 /f/ 位置标准，整词三音节。",
+      "tip": "fantastic 的本义是「像幻象一样（荒诞的）」，口语里变成了「好得像幻象一样」——语义正反颠转，和 terrible（口语：棒极了）是同一演变路径。",
+      "core": "「幻象感」——现实里不该有的东西出现了；本义指荒诞奇异，口语中因「好得不像真的」而语义翻转成极好。注意：两义并存，靠语境判断。",
+      "senses": [
+        {
+          "gloss": "adj. 荒诞的，奇异的，不合逻辑的（原义，书面/文学语境）",
+          "logic": "幻象般 → 超出真实世界的边界 → 荒诞奇特",
+          "en": "The novel describes a fantastic world where time flows backwards.",
+          "zh": "这部小说描绘了一个时间倒流的荒诞世界。"
+        },
+        {
+          "gloss": "adj. 极好的，出色的（口语最常见义，语义漂移）",
+          "logic": "「好得像幻象一样不真实」→ 口语夸赞的强化词（属语义演变，非逻辑引申）",
+          "en": "The team did a fantastic job under incredibly tight deadlines.",
+          "zh": "团队在极为紧张的截止日期下完成了出色的工作。"
+        },
+        {
+          "gloss": "adj. 巨大的，极其的（强调数量或程度）",
+          "logic": "幻象般的规模 → 大得难以置信",
+          "en": "The project required a fantastic amount of resources.",
+          "zh": "这个项目耗费了惊人数量的资源。"
+        }
+      ],
+      "derivatives": [
+        {"w": "fantasy", "gloss": "n. 幻想，幻想故事；想象力"},
+        {"w": "fantastically", "gloss": "adv. 极好地；荒诞地"},
+        {"w": "fantasize", "gloss": "v. 幻想，做白日梦"}
+      ],
+      "examples": [
+        {
+          "en": "The team did a fantastic job under incredibly tight deadlines.",
+          "zh": "团队在极为紧张的截止日期下完成了出色的工作。",
+          "source": "造句"
+        },
+        {
+          "en": "a fantastic voyage / at a fantastic speed",
+          "zh": "「奇幻旅程 / 以惊人速度」——两种义：「荒诞」义用于故事，「极大」义用于强调。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "extraordinary", "ipa": "/ɪkˈstrɔːrdəneri/", "gloss": "非凡的，超出寻常的", "note": "「非凡的」，比 fantastic 更正式，强调超出寻常；extraordinary achievement（非凡成就）"},
+        {"w": "remarkable", "ipa": "/rɪˈmɑːrkəbl/", "gloss": "引人注目的，值得关注的", "note": "「引人注目的」，比 fantastic 中性，强调值得关注；remarkable progress（显著进展）"},
+        {"w": "bizarre", "ipa": "/bɪˈzɑːr/", "gloss": "荒诞奇异的，令人费解的", "note": "「荒诞奇异的」，对应 fantastic 的本义（非口语夸赞义）；a bizarre incident（离奇事件）"}
+      ],
+      "antonyms": [
+        {"w": "terrible", "note": "糟糕的（口语义相对）"},
+        {"w": "mundane", "note": "平凡的，日常的（「奇幻」义相对）"}
+      ],
+      "nuance": "fantastic 口语中是万能夸赞词，与 great / wonderful 互换；正式写作中应换成 extraordinary / remarkable。本义「荒诞幻象的」保留在 fantastic voyage（奇幻旅程）等固定用法中，阅读时需靠语境判断是哪个义项。"
+    },
+    {
+      "word": "effort",
+      "hl": "ff",
+      "levels": ["托福"],
+      "ipa": "/ˈefərt/",
+      "subgroup": "ff",
+      "meaning": "n. 努力，费力；（具体的）尝试，举措",
+      "etymology": "古法语 esfort = es-(向外) + fort(强壮) = 「向外使劲」→ 努力。fort 与 force（力）、fortify（强化）同根。effortless（毫不费力的）是其反义派生词。",
+      "roots": [
+        {"part": "ef- (ex-)", "meaning": "向外"},
+        {"part": "-fort (fortis)", "meaning": "强壮、力量"}
+      ],
+      "phonetics": "重音在首音节 EF-fort；ef- 中 ff 读单 /f/，-ort 弱读 /ərt/。词根边界处双 f：ef-fort。",
+      "core": "「向外使力」感——把内在的力气往外推出去。可数时指一次具体的「使力动作」（an effort），不可数时指投入的总量（much effort）。",
+      "senses": [
+        {
+          "gloss": "n. （不可数）努力，投入的精力或意志",
+          "logic": "力量向外输出的总量",
+          "en": "Success requires sustained effort over a long period.",
+          "zh": "成功需要长期持续的努力。"
+        },
+        {
+          "gloss": "n. （可数）一次具体的尝试或举措",
+          "logic": "一次向外使力的动作 → 一个具体的行动",
+          "en": "Despite great effort, the team failed to meet the deadline.",
+          "zh": "尽管付出了巨大努力，团队还是未能赶上截止日期。"
+        }
+      ],
+      "derivatives": [
+        {"w": "effortless", "gloss": "adj. 毫不费力的，轻松自如的"},
+        {"w": "effortlessly", "gloss": "adv. 毫不费力地"},
+        {"w": "effortful", "gloss": "adj. 需要费力的，刻意付出的（较正式）"}
+      ],
+      "examples": [
+        {
+          "en": "Despite great effort, the team failed to meet the deadline.",
+          "zh": "尽管付出了巨大努力，团队还是未能赶上截止日期。",
+          "source": "造句"
+        },
+        {
+          "en": "make an effort / put effort into",
+          "zh": "「付出努力」——高频固定搭配；in an effort to do sth（为了做某事而努力）也极常见。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "attempt", "ipa": "/əˈtempt/", "gloss": "尝试，着重于动作本身而非投入的精力", "note": "「尝试」，比 effort 更强调动作本身而非投入；make an attempt（作尝试）"},
+        {"w": "endeavor", "ipa": "/ɪnˈdevər/", "gloss": "持续努力，带有追求宏大目标的含义", "note": "正式「努力、事业」，比 effort 更正式，带有持续追求之意；human endeavor（人类努力）"},
+        {"w": "exertion", "ipa": "/ɪɡˈzɜːrʃn/", "gloss": "用力，尤指身体层面的体力消耗", "note": "「用力、劳力」，更强调身体层面的耗力；physical exertion（体力消耗）"}
+      ],
+      "antonyms": [
+        {"w": "laziness", "note": "懈怠，懒惰"},
+        {"w": "effortlessness", "note": "毫不费力"}
+      ],
+      "nuance": "effort 是可数也可不可数的「努力」（an effort / much effort），attempt 强调「试一试」的动作，endeavor 带有更宏大持续的追求意味，exertion 侧重身体或精神的消耗程度。「make an effort」是鼓励语，「make an attempt」更中性。"
+    },
+    {
+      "word": "difficult",
+      "hl": "ff",
+      "levels": ["基础"],
+      "ipa": "/ˈdɪfɪkəlt/",
+      "subgroup": "ff",
+      "meaning": "adj. 困难的；（人）难相处的",
+      "etymology": "拉丁语 difficilis = dis-(否定) + facilis(容易做的)。facilis 源自 facere（做），与 fact（事实）、factory（工厂）、facility（设施/便利）同根——「可做」→「容易」，加 dis- 反转变「困难」。",
+      "roots": [
+        {"part": "dif- (dis-)", "meaning": "否定、相反"},
+        {"part": "-fic- (facere)", "meaning": "做"},
+        {"part": "-ult", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "三音节 DIF-fi-cult，重音在首；dif- 中 ff 读单 /f/，是词根边界双写（dis + facilis 融合）。",
+      "core": "「做不了」感——facilis 是容易做的，difficult 加了否定前缀，变成「做不动」。可以描述任务难度，也可描述人难以对付。",
+      "senses": [
+        {
+          "gloss": "adj. 困难的，需要大量精力或技巧才能完成的",
+          "logic": "「做不了」→ 任务层面的阻力",
+          "en": "It is difficult to overestimate the importance of sleep.",
+          "zh": "睡眠的重要性怎么强调都不为过。"
+        },
+        {
+          "gloss": "adj. （人）难相处的，让人头疼的",
+          "logic": "「做不了」→ 与这个人互动时同样「做不动」",
+          "en": "He was known as a difficult person to please.",
+          "zh": "他出了名地难以取悦。"
+        }
+      ],
+      "derivatives": [
+        {"w": "difficulty", "gloss": "n. 困难，难度；（具体的）困境"},
+        {"w": "difficulties", "gloss": "n. 复数，指具体的多个问题或障碍"},
+        {"w": "facilitate", "gloss": "v. 促进，使容易（同根 facilis 的正向派生）"}
+      ],
+      "examples": [
+        {
+          "en": "It is difficult to overestimate the importance of sleep.",
+          "zh": "睡眠的重要性怎么强调都不为过。",
+          "source": "造句"
+        },
+        {
+          "en": "a difficult person to please",
+          "zh": "「难以取悦的人」——形容人性格方面的「难相处」，常见用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "challenging", "ipa": "/ˈtʃælɪndʒɪŋ/", "gloss": "有挑战性的，暗含值得努力应对的积极意味", "note": "「有挑战性的」，比 difficult 带更多积极色彩，暗含成长机会；a challenging task（富有挑战的任务）"},
+        {"w": "demanding", "ipa": "/dɪˈmɑːndɪŋ/", "gloss": "要求高的，对人精力或能力消耗大的", "note": "「要求高的、费心力的」，强调对人的高要求；a demanding job（高压工作）"},
+        {"w": "arduous", "ipa": "/ˈɑːrdjuəs/", "gloss": "艰难的，尤指需要大量体力或精力的（书面语）", "note": "正式「艰难的」，比 difficult 更强调体力或精力的消耗；an arduous journey（艰苦旅途）"}
+      ],
+      "antonyms": [
+        {"w": "easy", "note": "容易的"},
+        {"w": "simple", "note": "简单的"}
+      ],
+      "nuance": "difficult 最通用；challenging 带褒义（暗示值得做）；demanding 强调耗费资源（时间/精力）；arduous 语气最重，多描述体力上的艰辛。「a difficult exam」是「难的考试」，「a challenging exam」隐含「但值得应对」的态度差异。"
+    },
+    {
+      "word": "offer",
+      "hl": "ff",
+      "levels": ["托福"],
+      "ipa": "/ˈɔːfər/",
+      "subgroup": "ff",
+      "meaning": "v. 提供；出价；表示愿意  n. 提议；报价；特价优惠",
+      "etymology": "拉丁语 offerre = ob-(向) + ferre(带来、拿) = 「把东西带向对方」→ 提供。ferre 是英语最高产的词根之一：transfer（转移）、prefer（更喜欢）、refer（参考）、suffer（承受）——都含「带、拿」。",
+      "roots": [
+        {"part": "of- (ob-)", "meaning": "向、朝"},
+        {"part": "-fer (ferre)", "meaning": "带来、拿"}
+      ],
+      "phonetics": "OF-fer，重音在首；of- 中 ff 读单 /f/，-fer 弱读 /fər/。注意 o 读 /ɔː/ 而非 /ɒ/。",
+      "core": "「主动伸手把东西递出去」感——动作方向是向对方，包含主动性和示意姿态；报价、提供帮助、提出方案都是同一个「递」的动作。",
+      "senses": [
+        {
+          "gloss": "v. 提供，主动把某物或某机会递给对方",
+          "logic": "「向对方拿（带）」→ 把东西主动放到对方面前",
+          "en": "The company offered her a position as head of marketing.",
+          "zh": "公司向她提供了营销总监职位。"
+        },
+        {
+          "gloss": "v. 出价，表示愿意以某价格购买或承担",
+          "logic": "把「钱或条件」递出去 → 报价",
+          "en": "He offered two hundred dollars for the old camera.",
+          "zh": "他出价两百美元购买那台旧相机。"
+        },
+        {
+          "gloss": "n. 提议，报价，特价优惠",
+          "logic": "「递出去的东西」名词化 → 提出的方案或价格",
+          "en": "They made us an offer we couldn't refuse.",
+          "zh": "他们开出了一个我们无法拒绝的条件。"
+        }
+      ],
+      "derivatives": [
+        {"w": "offering", "gloss": "n. 提供物；奉献品；（宗教）供品"},
+        {"w": "offeror", "gloss": "n. 要约人，提出报价的一方（法律术语）"},
+        {"w": "counter-offer", "gloss": "n. 还价，反要约"}
+      ],
+      "examples": [
+        {
+          "en": "The company offered her a position as head of marketing.",
+          "zh": "公司向她提供了营销总监职位。",
+          "source": "造句"
+        },
+        {
+          "en": "on offer / make an offer",
+          "zh": "「特价出售 / 开出报价」——商业和谈判高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "provide", "ipa": "/prəˈvaɪd/", "gloss": "提供，中性地给予，不含主动示意的姿态", "note": "「提供」，比 offer 更中性，不含「主动示意」的姿态；provide support（提供支持）"},
+        {"w": "propose", "ipa": "/prəˈpoʊz/", "gloss": "提议，着重于提出方案供对方考虑", "note": "「提议」，比 offer 更强调方案本身；propose a solution（提议解决方案）"},
+        {"w": "bid", "ipa": "/bɪd/", "gloss": "出价，竞标，带有竞争色彩", "note": "「出价」义的近义词，比 offer 更具竞争色彩；bid for a contract（竞标合同）"}
+      ],
+      "antonyms": [
+        {"w": "refuse", "note": "拒绝"},
+        {"w": "withdraw", "note": "撤回（报价）"}
+      ],
+      "nuance": "offer 强调主动把某物「伸向」对方，含主动善意；provide 只是中性地「提供」（无主动姿态感）；propose 侧重提出方案供对方考虑；bid 含竞争意味，多用于价格谈判。「offer help」是主动表示愿意帮，「provide help」是实际提供了帮助。"
+    },
+    {
+      "word": "stuff",
+      "hl": "ff",
+      "levels": ["托福"],
+      "ipa": "/stʌf/",
+      "subgroup": "ff",
+      "meaning": "n. 东西，物品（口语泛称）；材料；本质  v. 填满，塞满",
+      "etymology": "古法语 estoffe「材料、织物」，源自日耳曼语「填充物」。名词义「材料/东西」保留至今；动词义「塞满」来自填充动作本身。",
+      "roots": [
+        {"part": "stuff（estoffe）", "meaning": "材料、填充物"}
+      ],
+      "phonetics": "st- + uff /ʌf/，词尾 ff 在短元音 /ʌ/ 后双写，发音同单 f。与 tough、rough 末尾同韵。",
+      "tip": "stuff 是口语万能词，正式写作里换成 material / substance / matter。「the hard stuff」指「难啃的内容」，「good stuff」是俚语夸赞。",
+      "core": "「填充物」感——原义是塞进某个空间的材料，引申为泛指一切「填充生活/工作/话语的东西」；动词则是「把东西塞进去」的动作。",
+      "senses": [
+        {
+          "gloss": "n. （口语）东西，泛指一切物品、材料、内容",
+          "logic": "填充物 → 口语万能词，泛指所有「那些玩意儿」",
+          "en": "She packed all her stuff into two suitcases.",
+          "zh": "她把所有东西塞进两个行李箱。"
+        },
+        {
+          "gloss": "n. 材料，某种东西的本质成分（the stuff of）",
+          "logic": "「构成某物的填充材料」→ 本质、原料",
+          "en": "Courage is the stuff of legends.",
+          "zh": "勇气是铸就传奇的材料。"
+        },
+        {
+          "gloss": "v. 填满，用力塞入",
+          "logic": "填充动作本身的动词化",
+          "en": "He stuffed the envelope with cash and handed it over.",
+          "zh": "他把信封塞满钞票后递了过去。"
+        }
+      ],
+      "derivatives": [
+        {"w": "stuffing", "gloss": "n. 填充物；（烹饪）馅料"},
+        {"w": "stuffy", "gloss": "adj. 空气不流通的；（人）古板、死板的"},
+        {"w": "overstuffed", "gloss": "adj. 塞得过满的；（沙发）厚实填充的"}
+      ],
+      "examples": [
+        {
+          "en": "She packed all her stuff into two suitcases.",
+          "zh": "她把所有东西塞进两个行李箱。",
+          "source": "造句"
+        },
+        {
+          "en": "stuff of legends / the right stuff",
+          "zh": "「传奇素材 / 有真本事」——stuff 的文化固定搭配，后者来自 Tom Wolfe 名著《The Right Stuff》。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "material", "ipa": "/məˈtɪəriəl/", "gloss": "材料，物质（正式书面语）", "note": "正式「材料、物质」，比 stuff 书面，用于学术和专业语境"},
+        {"w": "substance", "ipa": "/ˈsʌbstəns/", "gloss": "物质；实质，核心内容", "note": "「物质、实质」，比 stuff 更正式，也指「核心内容」；substance abuse（药物滥用）"},
+        {"w": "belongings", "ipa": "/bɪˈlɒŋɪŋz/", "gloss": "个人物品，随身携带的所有物", "note": "「随身物品」，比 stuff 更具体，指个人所有物；personal belongings（个人物品）"}
+      ],
+      "antonyms": [],
+      "nuance": "stuff 是口语中的万能词，涵盖物品、材料、内容（知识/工作）等几乎所有语境，正式写作应替换为 material / substance / matter；belongings 专指个人所有物；substance 侧重「核心实质」或化学意义上的物质。"
+    },
+    {
+      "word": "suffer",
+      "hl": "ff",
+      "levels": ["托福"],
+      "ipa": "/ˈsʌfər/",
+      "subgroup": "ff",
+      "meaning": "v. 遭受（痛苦/损失）；受苦；（质量）下降",
+      "etymology": "拉丁语 sufferre = sub-(在下) + ferre(承受、拿) = 「在下面承受」→ 忍受、受苦。与 offer（ob+ferre 向前拿）、transfer（trans+ferre 转移）同根——都含 ferre（拿/带）。",
+      "roots": [
+        {"part": "suf- (sub-)", "meaning": "在下面"},
+        {"part": "-fer (ferre)", "meaning": "承受、拿"}
+      ],
+      "phonetics": "重音首音节 SUF-fer；suf- 中 ff 是词根边界双写（sub-ferre 融合），读单 /f/，-fer 弱读 /fər/。",
+      "core": "「在重量下撑着」感——sub（在下）+ ferre（承受）= 被压在下面扛着。主语是被动的承受方，无论是痛苦、损失还是品质的下滑，都是被「压下去」的状态。",
+      "senses": [
+        {
+          "gloss": "v. 遭受（痛苦、伤害），承受负面影响",
+          "logic": "被压在下面 → 承受痛苦或伤害",
+          "en": "She suffered a serious injury during the competition.",
+          "zh": "她在比赛中遭受了严重受伤。"
+        },
+        {
+          "gloss": "v. 患有（疾病或持续性问题），suffer from",
+          "logic": "持续被某种状况「压着」→ 患有、长期承受",
+          "en": "He has suffered from insomnia for years.",
+          "zh": "他多年来一直饱受失眠困扰。"
+        },
+        {
+          "gloss": "v. （质量、表现）下降，受到损害",
+          "logic": "被负面力量压下去 → 水准下滑",
+          "en": "The local economy suffered greatly after the factory closed.",
+          "zh": "工厂关闭后，当地经济大受冲击。"
+        }
+      ],
+      "derivatives": [
+        {"w": "suffering", "gloss": "n. 痛苦，苦难（可数或不可数）"},
+        {"w": "sufferer", "gloss": "n. 患者，受苦者（常接 from）"},
+        {"w": "insufferable", "gloss": "adj. 难以忍受的，让人无法承受的"}
+      ],
+      "examples": [
+        {
+          "en": "The local economy suffered greatly after the factory closed.",
+          "zh": "工厂关闭后，当地经济大受冲击。",
+          "source": "造句"
+        },
+        {
+          "en": "suffer from / suffer a setback",
+          "zh": "「患有……（疾病）/ 遭受挫折」——suffer from 接疾病/缺陷，suffer + 名词接具体损失，两种搭配都高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "endure", "ipa": "/ɪnˈdjʊər/", "gloss": "忍耐，主动坚持撑过困境", "note": "「忍耐」，比 suffer 更强调主动坚持；endure hardship（忍受艰辛）"},
+        {"w": "undergo", "ipa": "/ˌʌndəˈɡoʊ/", "gloss": "经历（某过程），中性描述，不含痛苦色彩", "note": "「经历（过程）」，比 suffer 更中性，不含痛苦含义；undergo surgery（接受手术）"},
+        {"w": "sustain", "ipa": "/səˈsteɪn/", "gloss": "遭受（正式用语，多见于报告），承受损失或伤害", "note": "「遭受（正式用法）」，多用于官方报告；sustain injuries（受伤）"}
+      ],
+      "antonyms": [
+        {"w": "flourish", "note": "繁荣，蓬勃"},
+        {"w": "thrive", "note": "兴旺，茁壮成长"}
+      ],
+      "nuance": "suffer 强调被动承受痛苦（情绪/身体/损失）；endure 侧重主动忍耐并坚持下去；undergo 最中性，仅描述经历过程（无痛苦含义）；sustain 是正式书面用法（法律/报告语境），多用 sustain injuries/losses。"
+    },
+    {
+      "word": "cliff",
+      "hl": "ff",
+      "levels": ["托福"],
+      "ipa": "/klɪf/",
+      "subgroup": "ff",
+      "meaning": "n. 悬崖，峭壁",
+      "etymology": "古英语 clif，日耳曼同根，与德语 Klippe（礁石）同源。cliffhanger（悬念）字面是「悬崖上挂着的人」，引申为「悬而未决的情节」。",
+      "roots": [
+        {"part": "cliff（clif）", "meaning": "悬崖，峭壁"}
+      ],
+      "phonetics": "cl- 连缀 + iff /ɪf/，短元音 /ɪ/ 后双写 ff。与 stiff（僵硬）、sniff（嗅）押韵。",
+      "tip": "「cliffhanger」——字面：悬崖上挂着的人；引申：结局悬念。看完一集剧还没结论，就是 cliffhanger ending。",
+      "core": "「垂直断裂」感——岩石被削掉一面，形成直上直下的断壁；字面义单一，文化延伸丰富（cliffhanger、on the edge）。",
+      "senses": [
+        {
+          "gloss": "n. 悬崖，峭壁，垂直陡峭的岩石断面",
+          "logic": "单义词，核心即全部",
+          "en": "The path wound dangerously close to the edge of the cliff.",
+          "zh": "小路险险地蜿蜒于悬崖边缘。"
+        }
+      ],
+      "derivatives": [
+        {"w": "cliffhanger", "gloss": "n. 悬念式结局；让人揪心的紧张局面"},
+        {"w": "clifftop", "gloss": "n. 悬崖顶部，峭壁顶端"}
+      ],
+      "examples": [
+        {
+          "en": "The path wound dangerously close to the edge of the cliff.",
+          "zh": "小路险险地蜿蜒于悬崖边缘。",
+          "source": "造句"
+        },
+        {
+          "en": "a cliffhanger ending",
+          "zh": "「悬念式结局」——影视和小说的高频术语，来自 cliff 的延伸义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "precipice", "ipa": "/ˈpresɪpɪs/", "gloss": "峭壁；（比喻）危险的边缘（书面正式）", "note": "正式「峭壁、险境」，比 cliff 更书面，也比喻危险处境；on the precipice of disaster（身处灾难边缘）"},
+        {"w": "bluff", "ipa": "/blʌf/", "gloss": "（河岸或海岸的）土质陡崖，较 cliff 更平缓", "note": "「陡崖（河岸）」，比 cliff 多指土质、较平缓的高岸，也指虚张声势"}
+      ],
+      "antonyms": [
+        {"w": "valley", "note": "山谷，低地"}
+      ],
+      "nuance": "cliff 最通用，指任何陡峭的岩石峭壁；precipice 更正式，常用于比喻危险的边缘（on the precipice of war）；bluff 特指河岸或海岸的土质陡崖，比 cliff 更地形具体。"
+    },
+    {
+      "word": "phone",
+      "hl": "ph",
+      "levels": ["基础"],
+      "ipa": "/foʊn/",
+      "subgroup": "ph",
+      "meaning": "n. 电话，手机  v. 打电话给",
+      "etymology": "希腊语 phōnē「声音、语言」，telephone 的缩写（tele- 远 + phone 声音 = 远距离传声）。phone 这个词根衍生出一族：microphone（麦克风）、saxophone（萨克斯）、symphony（交响乐）、phonetics（音标学）——都和「声音」有关。",
+      "roots": [
+        {"part": "phone（phōnē）", "meaning": "声音"}
+      ],
+      "phonetics": "ph = /f/，加 /oʊn/；这是最高频的 ph 词，用来锚定「ph = /f/」规律。",
+      "tip": "认识 phone（声音）这个词根，microphone / saxophone / symphony / phonetics 全部打通。",
+      "core": "「声音传递」感——phone 即声音，无论是设备名词还是动词，本质都是「把声音送出去」。",
+      "senses": [
+        {
+          "gloss": "n. 电话机，手机，传递声音的通讯设备",
+          "logic": "声音 → 传声的工具 → 电话",
+          "en": "She turned off her phone during the meeting.",
+          "zh": "她在会议期间关掉了手机。"
+        },
+        {
+          "gloss": "v. 打电话给某人",
+          "logic": "用「声音设备」联系 → 打电话这个动作",
+          "en": "I'll phone you when I arrive at the station.",
+          "zh": "我到站后给你打电话。"
+        }
+      ],
+      "derivatives": [
+        {"w": "telephone", "gloss": "n./v. 电话（正式全称）；打电话"},
+        {"w": "microphone", "gloss": "n. 麦克风，扩音用的收声设备"},
+        {"w": "phonetics", "gloss": "n. 语音学，研究语音的学科"}
+      ],
+      "examples": [
+        {
+          "en": "She turned off her phone during the meeting.",
+          "zh": "她在会议期间关掉了手机。",
+          "source": "造句"
+        },
+        {
+          "en": "phone in sick / phone it in",
+          "zh": "「打电话请病假 / 敷衍了事」——两个口语用法，后者指「态度应付，不认真」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "call", "ipa": "/kɔːl/", "gloss": "打电话（最通用的口语动词），也指通话本身", "note": "动词义「打电话」最口语的表达，与 phone 完全可互换；give sb a call（给某人打电话）"},
+        {"w": "ring", "ipa": "/rɪŋ/", "gloss": "（英式）打电话，比 phone/call 更口语", "note": "英式英语「打电话」，比 phone/call 更口语；I'll ring you later（我等会儿给你打）"}
+      ],
+      "antonyms": [],
+      "nuance": "phone / call / ring 作动词均指「打电话」；call 在美式英语最通用；ring 偏英式；phone 介于两者之间。作名词时 phone 包括固话和手机，cell phone / mobile 特指手机。"
+    },
+    {
+      "word": "graph",
+      "hl": "ph",
+      "levels": ["托福"],
+      "ipa": "/ɡræf/",
+      "subgroup": "ph",
+      "meaning": "n. 图表（折线图/曲线图）  v. 用图表表示",
+      "etymology": "希腊语 graphein「写、画」，这是英语最高产的词根之一：photograph（摄影）、paragraph（段落）、biography（传记）、autograph（亲笔签名）、geography（地理）、graphic（图形的）——核心都是「写/画/记录」。",
+      "roots": [
+        {"part": "graph（graphein）", "meaning": "写、画、记录"}
+      ],
+      "phonetics": "gr- + aph /æf/；-aph 结尾是希腊词根 graph 的独立形式，ph 读 /f/。与 paragraph 末尾押韵。",
+      "tip": "graph 词根是记忆利器：geo+graph+y（地球+写=地理），bio+graph+y（生命+写=传记），photo+graph（光+写=照相）。",
+      "core": "「用线条记录」感——graph 即「写/画」，图表是用线条把数据写出来；单词本身也常作词根，把各种「记录」义传递出去。",
+      "senses": [
+        {
+          "gloss": "n. 图表，尤指数学或统计意义上的坐标图、折线图",
+          "logic": "用线条「画」出数值变化",
+          "en": "The graph shows a sharp rise in unemployment after 2008.",
+          "zh": "图表显示2008年后失业率急剧上升。"
+        },
+        {
+          "gloss": "v. 用图表表示，把数据绘制成图",
+          "logic": "「画」这个动作的动词化",
+          "en": "Students were asked to graph the results of their experiment.",
+          "zh": "学生被要求将实验结果绘制成图表。"
+        }
+      ],
+      "derivatives": [
+        {"w": "graphic", "gloss": "adj. 图形的，图像的；（描述）生动逼真的  n. 图像，图形"},
+        {"w": "graphite", "gloss": "n. 石墨（用于书写的碳元素矿物）"},
+        {"w": "paragraph", "gloss": "n. 段落（para- 旁边 + graph 写 = 旁注符号→段落）"}
+      ],
+      "examples": [
+        {
+          "en": "The graph shows a sharp rise in unemployment after 2008.",
+          "zh": "图表显示2008年后失业率急剧上升。",
+          "source": "造句"
+        },
+        {
+          "en": "bar graph / line graph",
+          "zh": "「条形图 / 折线图」——学术写作和数据分析高频词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "chart", "ipa": "/tʃɑːrt/", "gloss": "图表（最通用），涵盖饼图、地图、各类可视化", "note": "「图表」最通用的词，比 graph 更泛，包括饼图、地图；a pie chart（饼图）"},
+        {"w": "diagram", "ipa": "/ˈdaɪəɡræm/", "gloss": "示意图，着重展示结构、关系或流程", "note": "「示意图」，强调结构和关系，比 graph 更侧重说明；a flow diagram（流程图）"}
+      ],
+      "antonyms": [],
+      "nuance": "graph 特指数学/统计意义上的坐标图或曲线图，侧重数值变化的可视化；chart 更宽泛，涵盖所有类型图表；diagram 侧重展示结构、关系和流程，而非数值趋势。"
+    },
+    {
+      "word": "phrase",
+      "hl": "ph",
+      "levels": ["托福"],
+      "ipa": "/freɪz/",
+      "subgroup": "ph",
+      "meaning": "n. 短语，词组；（音乐）乐句  v. 措辞，表达",
+      "etymology": "希腊语 phrasis「表达方式」，源自 phrazein（解释、说明）。paraphrase（改述）= para-（旁边）+ phrase（表达），即「换一种说法」。",
+      "roots": [
+        {"part": "phrase（phrasis）", "meaning": "表达方式"}
+      ],
+      "phonetics": "ph = /f/，加 -rase /reɪz/；注意 phr- 三字母组合：/fr/ 连缀辅音，ph 先读 /f/ 再接 r。",
+      "core": "「打包表达」感——phrase 是把几个词打包在一起形成一个完整表意单元；动词义则是选择用什么方式来打包（措辞）。",
+      "senses": [
+        {
+          "gloss": "n. 短语，词组（语法：不含谓语动词的表意单元）",
+          "logic": "打包在一起的词 → 语法单位",
+          "en": "\"Break a leg\" is a well-known phrase used in the theatre world.",
+          "zh": "「Break a leg」是戏剧界广为人知的祝好运短语。"
+        },
+        {
+          "gloss": "n. （音乐）乐句，旋律中的一个完整片段",
+          "logic": "「打包」的音符单元，构成完整的音乐表达",
+          "en": "The pianist played the opening phrase with great delicacy.",
+          "zh": "钢琴家以极细腻的触感演奏了开场乐句。"
+        },
+        {
+          "gloss": "v. 措辞，用特定方式表达某个意思",
+          "logic": "选择如何「打包」你要说的内容 → 措辞",
+          "en": "She phrased her criticism so carefully that it barely stung.",
+          "zh": "她措辞如此谨慎，批评几乎没有让人难受。"
+        }
+      ],
+      "derivatives": [
+        {"w": "paraphrase", "gloss": "v./n. 改述，用不同说法表达同一意思"},
+        {"w": "phrasing", "gloss": "n. 措辞方式；（音乐）乐句处理"},
+        {"w": "rephrase", "gloss": "v. 重新措辞，换个说法"}
+      ],
+      "examples": [
+        {
+          "en": "\"Break a leg\" is a well-known phrase used in the theatre world.",
+          "zh": "「Break a leg」是戏剧界广为人知的祝好运短语。",
+          "source": "造句"
+        },
+        {
+          "en": "coin a phrase / in other words / to phrase it differently",
+          "zh": "「创造一个短语 / 换句话说 / 换种说法」——高频写作和口语表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "expression", "ipa": "/ɪkˈspreʃn/", "gloss": "表达方式，可指单词到整段话的任何表达", "note": "「表达方式」，比 phrase 更宽泛，可指一个词也可指整段话；a common expression（常见表达）"},
+        {"w": "idiom", "ipa": "/ˈɪdiəm/", "gloss": "习语，字面意义与实际含义不同的固定短语", "note": "「习语」，特指含义不能从字面推断的固定短语；a Chinese idiom（成语）"},
+        {"w": "clause", "ipa": "/klɔːz/", "gloss": "从句，含谓语动词的语法单位（比 phrase 大一级）", "note": "「从句」，语法术语，比 phrase 多了谓语动词；an adverbial clause（状语从句）"}
+      ],
+      "antonyms": [],
+      "nuance": "phrase 是语法术语指「不含谓语的词组」（名词短语/介词短语），也泛指固定表达；idiom 特指意义不可字面推导的习语；expression 最泛，可以是一个词到一个句子的任何表达方式。"
+    },
+    {
+      "word": "physics",
+      "hl": "ph",
+      "levels": ["基础"],
+      "ipa": "/ˈfɪzɪks/",
+      "subgroup": "ph",
+      "meaning": "n. 物理学",
+      "etymology": "希腊语 physis「自然、本性」（源自 phyein「生长」）→ 「研究自然规律的学科」。physician（内科医生）与它同根——古希腊医学建立在「自然哲学」上。physical（身体的/物理的）是形容词形式。",
+      "roots": [
+        {"part": "phys- (physis)", "meaning": "自然、本性"},
+        {"part": "-ics", "meaning": "学科后缀"}
+      ],
+      "phonetics": "phys- 中 ph = /f/，-ics 读 /ɪks/；整体 FI-ziks，重音首音节，注意 ph 后是 y 但读 /ɪ/。",
+      "tip": "physics / physician / physical 都来自 physis（自然）：物理学是「研究自然」，医生是「顺应自然本性」治病，physical 是「属于自然/身体的」。",
+      "core": "「自然本性」感——physis 原指万物生长的本性，物理学就是研究这种本性的规律；单义学科名词，核心感即全部。",
+      "senses": [
+        {
+          "gloss": "n. 物理学，研究物质、能量及其相互作用规律的自然科学",
+          "logic": "physis（自然本性）+ -ics（学科）= 研究自然规律的学问",
+          "en": "Quantum physics challenges our intuitive understanding of reality.",
+          "zh": "量子物理挑战了我们对现实的直觉认知。"
+        }
+      ],
+      "derivatives": [
+        {"w": "physical", "gloss": "adj. 身体的；物理的，物质世界的"},
+        {"w": "physician", "gloss": "n. 内科医生（古希腊医学源于自然哲学）"},
+        {"w": "physicist", "gloss": "n. 物理学家"}
+      ],
+      "examples": [
+        {
+          "en": "Quantum physics challenges our intuitive understanding of reality.",
+          "zh": "量子物理挑战了我们对现实的直觉认知。",
+          "source": "造句"
+        },
+        {
+          "en": "the laws of physics",
+          "zh": "「物理定律」——学术写作和科普最高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "natural science", "gloss": "自然科学（物理学的上位概念，含化学、生物等）", "note": "「自然科学」，physics 的上位概念，包含化学、生物等"},
+        {"w": "mechanics", "ipa": "/mɪˈkænɪks/", "gloss": "力学，物理学的核心分支之一", "note": "「力学」，物理学的一个分支，有时口语里代指物理基础概念"}
+      ],
+      "antonyms": [],
+      "nuance": "physics 特指物理学这门学科（不可数名词，加 s 是学科名词的惯例，如 mathematics / economics）；physical 作形容词是「身体的」或「物理的」，两义靠语境区分（physical exercise 体育锻炼 / physical laws 物理定律）。"
+    },
+    {
+      "word": "photograph",
+      "hl": "ph",
+      "levels": ["托福"],
+      "ipa": "/ˈfoʊtəɡræf/",
+      "subgroup": "ph",
+      "meaning": "n. 照片  v. 拍照",
+      "etymology": "希腊语 phōs（光）+ graphein（写）= 「用光书写」→ 照片，1839年摄影术发明时造的新词。photo（光）词根衍生出：photosynthesis（光合作用）、photon（光子）、photogenic（上镜的）。",
+      "roots": [
+        {"part": "photo- (phōs)", "meaning": "光"},
+        {"part": "-graph (graphein)", "meaning": "写、记录"}
+      ],
+      "phonetics": "两处 ph：PHO-to-GRAPH，首音节重读；photo- 中 ph = /f/，-graph 中 ph = /f/，都是希腊词根。",
+      "tip": "photograph 含两个 ph，都读 /f/——是检验「ph = /f/ 规律」最好的例子。日常缩写为 photo。",
+      "core": "「用光刻写」感——摄影术发明之初，就是用光在感光板上「写」下影像；photograph 完整保留了这一诗意原义。",
+      "senses": [
+        {
+          "gloss": "n. 照片，用摄影方式记录的影像",
+          "logic": "光在感光介质上「写」下的图像",
+          "en": "She photographs landscapes for a nature magazine.",
+          "zh": "她为一家自然杂志拍摄风景照片。"
+        },
+        {
+          "gloss": "v. 拍照，用相机记录影像",
+          "logic": "「用光书写」这个动作的动词化",
+          "en": "The event was photographed by a dozen journalists.",
+          "zh": "这一活动被十几名记者拍摄记录。"
+        }
+      ],
+      "derivatives": [
+        {"w": "photographer", "gloss": "n. 摄影师"},
+        {"w": "photography", "gloss": "n. 摄影（艺术或技术）"},
+        {"w": "photogenic", "gloss": "adj. 上镜的，适合拍照的（photo 光 + genic 产生）"}
+      ],
+      "examples": [
+        {
+          "en": "She photographs landscapes for a nature magazine.",
+          "zh": "她为一家自然杂志拍摄风景照片。",
+          "source": "造句"
+        },
+        {
+          "en": "take a photograph / aerial photograph",
+          "zh": "「拍一张照片 / 航拍照片」——高频搭配，学术语境偏用 photograph 而非 photo。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "photo", "ipa": "/ˈfoʊtoʊ/", "gloss": "照片（photograph 的口语缩写，日常完全互换）", "note": "photograph 的口语缩写，日常完全可互换；take a photo"},
+        {"w": "image", "ipa": "/ˈɪmɪdʒ/", "gloss": "图像（最宽泛），包含数字图像、绘画及心理意象", "note": "「图像」，比 photograph 更宽泛，可指数字图像、绘画或心理意象"},
+        {"w": "snapshot", "ipa": "/ˈsnæpʃɒt/", "gloss": "快照，随手拍的非正式照片；也比喻某时刻的简短概览", "note": "「随手拍的快照」，强调非正式、即兴；take a snapshot of the scene"}
+      ],
+      "antonyms": [],
+      "nuance": "photograph 是正式书面词，学术文章和新闻通常用它；photo 是口语缩写；image 更宽泛，包含所有视觉表现形式；snapshot 特指随意拍摄的快照，也比喻「某一时刻的快速概述」（a snapshot of the economy）。"
+    },
+    {
+      "word": "philosophy",
+      "hl": "ph",
+      "levels": ["托福"],
+      "ipa": "/fəˈlɒsəfi/",
+      "subgroup": "ph",
+      "meaning": "n. 哲学；人生哲学，处世之道",
+      "etymology": "希腊语 philosophia = philos（爱）+ sophia（智慧）= 「爱智慧」。phil- 词根衍生出：Philadelphia（brotherly love，兄弟之爱）、philanthropist（慈善家，爱人类的人）、philharmonic（爱音乐的，即爱乐乐团）。",
+      "roots": [
+        {"part": "philo- (philos)", "meaning": "爱"},
+        {"part": "-sophy (sophia)", "meaning": "智慧"}
+      ],
+      "phonetics": "含两处 ph：PHI-los-o-phy，四音节，首音节重读；phi- 中 ph = /f/，-phy 词尾中 ph = /f/。",
+      "tip": "phil-（爱）词根是记忆利器：philosophy（爱智慧）、Philadelphia（爱兄弟）、philanthropist（爱人类→慈善家）。",
+      "core": "「热爱追问」感——哲学不是答案的集合，而是一种持续追问的姿态；引申到日常语境，指个人对某事形成的一套稳定看法（my philosophy）。",
+      "senses": [
+        {
+          "gloss": "n. 哲学，系统性探究存在、知识、价值等根本问题的学科",
+          "logic": "爱智慧 → 系统追问智慧的学科",
+          "en": "She studied philosophy at university, focusing on ethics.",
+          "zh": "她在大学研究哲学，专注于伦理学。"
+        },
+        {
+          "gloss": "n. 人生哲学，处世之道，个人或组织的核心信念",
+          "logic": "「爱智慧」的姿态延伸到日常 → 自己形成的一套看法",
+          "en": "Her management philosophy is simple: trust people and give them space to grow.",
+          "zh": "她的管理哲学很简单：信任员工，给他们成长空间。"
+        }
+      ],
+      "derivatives": [
+        {"w": "philosopher", "gloss": "n. 哲学家"},
+        {"w": "philosophical", "gloss": "adj. 哲学的；淡然的，泰然处之的"},
+        {"w": "philosophize", "gloss": "v. 进行哲学思考；（贬义）高谈阔论"}
+      ],
+      "examples": [
+        {
+          "en": "Her management philosophy is simple: trust people and give them space to grow.",
+          "zh": "她的管理哲学很简单：信任员工，给他们成长空间。",
+          "source": "造句"
+        },
+        {
+          "en": "a philosophy of life / Eastern philosophy",
+          "zh": "「人生哲学 / 东方哲学」——高频搭配，philosophy 既是学科也是个人处世原则。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "doctrine", "ipa": "/ˈdɒktrɪn/", "gloss": "教义，主义，权威机构制定的系统性信条", "note": "「教义、主义」，比 philosophy 更具体，指系统化的信仰或政策；political doctrine（政治主义）"},
+        {"w": "ideology", "ipa": "/ˌaɪdiˈɒlədʒi/", "gloss": "意识形态，集体共享的政治或社会信仰体系", "note": "「意识形态」，比 philosophy 更强调集体信仰体系，常用于政治语境"},
+        {"w": "outlook", "ipa": "/ˈaʊtlʊk/", "gloss": "世界观，对生活或某事物的总体看法（口语）", "note": "「观点、世界观」，比 philosophy 更口语，指个人对生活的看法"}
+      ],
+      "antonyms": [],
+      "nuance": "philosophy 可指系统学科（academic philosophy）或个人处世态度（my philosophy is…）；ideology 是集体的、有政治色彩的信仰体系；doctrine 是权威组织的教义（religious doctrine）；outlook 最口语，指日常的人生态度。"
+    },
+    {
+      "word": "elephant",
+      "hl": "ph",
+      "levels": ["基础"],
+      "ipa": "/ˈelɪfənt/",
+      "subgroup": "ph",
+      "meaning": "n. 大象",
+      "etymology": "希腊语 elephas（象牙、大象），可能源自埃及语或闪米特语 elu（象牙）。-phant 中的 ph 是希腊语拼写惯例，读 /f/。「白象」（white elephant）是著名英语习语。",
+      "roots": [
+        {"part": "ele-", "meaning": "象（源自埃及语）"},
+        {"part": "-phant (phanein)", "meaning": "显现（希腊语，此处是拼写遗留，读 /f/）"}
+      ],
+      "phonetics": "EL-e-phant，三音节，重音首音节；-ph- 在词中间，读 /f/，是 ph = /f/ 在非词首位置的典型例子。",
+      "tip": "「elephant in the room」——「房间里的大象」，指人人都知道但没人敢说的棘手问题，高频惯用语。",
+      "core": "「庞大而无法忽视」感——大象是陆地最大动物，本义单一，但其习语价值来自这种「明显到无法回避」的存在感（elephant in the room / white elephant）。",
+      "senses": [
+        {
+          "gloss": "n. 大象，陆地最大的哺乳动物",
+          "logic": "单义词，核心即全部",
+          "en": "Elephants are known for their exceptional memory and strong social bonds.",
+          "zh": "大象以超强记忆力和紧密社会纽带著称。"
+        }
+      ],
+      "derivatives": [
+        {"w": "elephantine", "gloss": "adj. 如大象般庞大笨重的（书面语，带贬义）"},
+        {"w": "elephant seal", "gloss": "n. 象海豹（因鼻子像象鼻得名）"}
+      ],
+      "examples": [
+        {
+          "en": "Elephants are known for their exceptional memory and strong social bonds.",
+          "zh": "大象以超强记忆力和紧密社会纽带著称。",
+          "source": "造句"
+        },
+        {
+          "en": "the elephant in the room / a white elephant",
+          "zh": "「房间里的大象（众所周知却无人提的问题）/ 华而不实的累赘」——两个高频文化习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "nuance": "elephant 无近义词，但其习语价值极高：elephant in the room（集体回避的问题）和 white elephant（耗资巨大却无用的事物，如白象工程）是托福阅读和写作的高频文化词。"
+    },
+    {
+      "word": "nephew",
+      "hl": "ph",
+      "levels": ["基础"],
+      "ipa": "/ˈnefjuː/",
+      "subgroup": "ph",
+      "meaning": "n. 侄子；外甥",
+      "etymology": "古法语 neveu，源自拉丁语 nepos「孙子、外甥」，与希腊语 nephos 同根。进入英语后拼写受希腊词风影响加了 ph，但词源与「希腊声音词根」无关——这是 ph = /f/ 的非典型案例，历史拼写固化的结果。",
+      "roots": [
+        {"part": "neph- (nepos)", "meaning": "孙子、外甥（拉丁语）"},
+        {"part": "-ew", "meaning": "古英语名词化后缀"}
+      ],
+      "phonetics": "NEP-hew，两音节，重音首音节；-ph- 在词中间读 /f/，-ew 读 /juː/。注意：这里 ph 并非「希腊声音词根」，是拼写演变的历史遗留。",
+      "tip": "nephew 是 ph = /f/ 的「异类」——词源是拉丁语 nepos，不是希腊语，但中古英语拼写借用了 ph，音值固化为 /f/。niece（外甥女）是它的反义配对词。",
+      "core": "「下一代男性亲属」感——兄弟或姐妹的儿子。单义词；英语不区分父系母系，需上下文补充说明。",
+      "senses": [
+        {
+          "gloss": "n. 侄子或外甥（兄弟/姐妹的儿子，不区分父系母系）",
+          "logic": "单义词，核心即全部",
+          "en": "Her nephew is studying architecture at university.",
+          "zh": "她的侄子正在大学学习建筑学。"
+        }
+      ],
+      "derivatives": [
+        {"w": "nepotism", "gloss": "n. 裙带关系，任人唯亲（源自 nepos，本指教皇偏袒「外甥」）"},
+        {"w": "niece", "gloss": "n. 侄女，外甥女（nephew 的性别对应词）"}
+      ],
+      "examples": [
+        {
+          "en": "Her nephew is studying architecture at university.",
+          "zh": "她的侄子正在大学学习建筑学。",
+          "source": "造句"
+        },
+        {
+          "en": "nephew / niece",
+          "zh": "「侄子/外甥 / 侄女/外甥女」——英语不区分父系母系，nephew 涵盖兄弟和姐妹的儿子。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [],
+      "antonyms": [
+        {"w": "niece", "note": "侄女，外甥女"}
+      ],
+      "nuance": "英语 nephew 不分「侄子」（兄弟之子）和「外甥」（姐妹之子），需靠上下文或补充说明（nephew on my father's side）区分。这与中文的精细亲属称谓体系形成对比。"
+    },
+    {
+      "word": "laugh",
+      "hl": "gh",
+      "levels": ["基础"],
+      "ipa": "/læf/",
+      "subgroup": "gh",
+      "meaning": "v. 笑，发笑  n. 笑声；笑料",
+      "etymology": "古英语 hlæhhan，日耳曼同根，与德语 lachen 同源。-gh 在中古英语时期读 /x/（类似 loch 中的喉音），后来弱化并在 laugh 中变成 /f/。这是 gh → /f/ 最典型的历史案例。",
+      "roots": [
+        {"part": "laugh（hlæhhan）", "meaning": "笑（古英语）"}
+      ],
+      "phonetics": "l + augh /æf/；-augh 在此读 /æf/，gh 读 /f/。词尾 gh 的 /f/ 读音是历史遗留——中古英语的喉音 /x/ 弱化后分化：部分变 /f/，部分完全消失（如 night 中的 gh）。",
+      "tip": "laugh / cough / tough / rough / enough——背这个 ugh/augh 发 /f/ 的小家族，不要逐个死记。",
+      "core": "「情绪喷出」感——笑是内心愉悦或讽刺到无法压制，从声带和嘴里喷出来；既可以是开心的释放，也可以是嘲讽的输出。",
+      "senses": [
+        {
+          "gloss": "v. 笑，因幽默、愉悦或讽刺而发出笑声",
+          "logic": "情绪喷出 → 笑这个声音动作",
+          "en": "She laughed at his joke but secretly found it offensive.",
+          "zh": "她笑了笑他的笑话，但内心觉得冒犯。"
+        },
+        {
+          "gloss": "v. 嘲笑（laugh at），以轻蔑态度对待",
+          "logic": "把情绪「喷向」某人 → 带讽刺意味地笑",
+          "en": "They laughed at her idea without even considering it.",
+          "zh": "他们嘲笑她的想法，甚至根本没有考虑过。"
+        },
+        {
+          "gloss": "n. 笑声；笑料，有趣的事或人",
+          "logic": "笑这个动作的名词化",
+          "en": "The comedian got a big laugh with that line.",
+          "zh": "喜剧演员凭那句话引发了哄堂大笑。"
+        }
+      ],
+      "derivatives": [
+        {"w": "laughter", "gloss": "n. 笑声，笑（不可数，指笑的行为或声音）"},
+        {"w": "laughable", "gloss": "adj. 可笑的，荒谬的（通常带贬义）"},
+        {"w": "laughingstock", "gloss": "n. 笑柄，被众人嘲笑的对象"}
+      ],
+      "examples": [
+        {
+          "en": "She laughed at his joke but secretly found it offensive.",
+          "zh": "她笑了笑他的笑话，但内心觉得冒犯。",
+          "source": "造句"
+        },
+        {
+          "en": "laugh it off / have the last laugh",
+          "zh": "「一笑置之 / 笑到最后（才是赢家）」——两个经典习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "chuckle", "ipa": "/ˈtʃʌkl/", "gloss": "轻笑，内心愉悦的低声咯咯笑", "note": "「轻笑、咯咯笑」，比 laugh 轻柔，表示内心愉悦的低声笑"},
+        {"w": "giggle", "ipa": "/ˈɡɪɡl/", "gloss": "咯咯笑，高频短促的笑，带孩子气或紧张感", "note": "「咯咯笑」，比 laugh 更高频、稍带孩子气，常用于女性或尴尬场合"},
+        {"w": "cheer", "ipa": "/tʃɪər/", "gloss": "欢呼，外向的情绪释放（比 laugh 更强调鼓励或庆祝）", "note": "「欢呼」，比 laugh 更外向，强调情绪的释放和鼓励"}
+      ],
+      "antonyms": [
+        {"w": "cry", "note": "哭泣"},
+        {"w": "weep", "note": "哭泣（较正式）"}
+      ],
+      "nuance": "laugh 是最通用的「笑」，从轻声到大笑都可用；chuckle 是愉快的低声轻笑（独自看书时笑出来）；giggle 是高频的咯咯笑（紧张或开心）；roar with laughter（捧腹大笑）是 laugh 的强化搭配。"
+    },
+    {
+      "word": "cough",
+      "hl": "gh",
+      "levels": ["基础"],
+      "ipa": "/kɒf/",
+      "subgroup": "gh",
+      "meaning": "v. 咳嗽  n. 咳嗽；（发动机）发出爆鸣声",
+      "etymology": "中古英语 coughen，拟声词起源，模仿咳嗽声。-gh 读 /f/ 是历史音变遗留——曾经的喉音 /x/ 弱化后变 /f/。",
+      "roots": [
+        {"part": "cough（拟声）", "meaning": "模拟咳嗽声的词"}
+      ],
+      "phonetics": "c + ough /ɒf/；-ough 在此读 /ɒf/，gh 读 /f/。注意 ough 有多种读法：through(/uː/)、though(/oʊ/)、thought(/ɔː/)、cough(/ɒf/)、rough(/ʌf/)——必须逐词记忆。",
+      "tip": "cough 的 ough 读 /ɒf/，与 off 押韵——「咳了一声 off」帮助记音。",
+      "core": "「气道被迫清空」感——气流强行冲过堵塞或刺激点，声音是拟声词直接来的；引申到「被迫吐出（信息/金钱）」也循同一逻辑。",
+      "senses": [
+        {
+          "gloss": "v./n. 咳嗽，气道受刺激后强制呼气的反射动作",
+          "logic": "拟声核心，气被迫排出",
+          "en": "She coughed throughout the meeting, clearly unwell.",
+          "zh": "她在整个会议中不停咳嗽，明显身体不适。"
+        },
+        {
+          "gloss": "v. cough up，不情愿地交出（钱、信息）（口语引申）",
+          "logic": "「气道被迫清空」→ 被迫把东西「咳出来」→ 勉强交出",
+          "en": "The landlord finally coughed up the security deposit.",
+          "zh": "房东终于乖乖交出了押金。"
+        }
+      ],
+      "derivatives": [
+        {"w": "coughing", "gloss": "n./adj. 咳嗽（持续动作或状态）"},
+        {"w": "whooping cough", "gloss": "n. 百日咳（医学术语）"}
+      ],
+      "examples": [
+        {
+          "en": "She coughed throughout the meeting, clearly unwell.",
+          "zh": "她在整个会议中不停咳嗽，明显身体不适。",
+          "source": "造句"
+        },
+        {
+          "en": "cough up / cough it up",
+          "zh": "「咳出（痰）/ 乖乖掏钱或说出来」——口语里 cough up 表示「不情愿地交出（钱或信息）」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "hack", "ipa": "/hæk/", "gloss": "干咳，持续干哑的重咳", "note": "「干咳」，比 cough 更强调持续干哑的咳嗽；a hacking cough（剧烈干咳）"},
+        {"w": "clear one's throat", "gloss": "清嗓子，轻声刻意发声（比 cough 更温和，通常是主动行为）", "note": "「清嗓子」，比 cough 更轻，通常是故意发声引起注意或为说话做准备"}
+      ],
+      "antonyms": [],
+      "nuance": "cough 是中性通用词，可轻可重；hack 特指干哑持续的重咳；clear one's throat 是轻声的刻意清嗓。「cough up」在口语里有「勉强交出」的引申义，是高频短语动词。"
+    },
+    {
+      "word": "tough",
+      "hl": "gh",
+      "levels": ["托福"],
+      "ipa": "/tʌf/",
+      "subgroup": "gh",
+      "meaning": "adj. 坚韧的；强硬的；棘手的，困难的；（肉等）老韧的  n. 恶棍（口语）",
+      "etymology": "古英语 tōh「有粘性的、有韧性的」，日耳曼同根。「韧性」→ 延伸出「（人）强硬」和「（情况）棘手」。rough（粗糙的）在词形上与它相近但词源不同。",
+      "roots": [
+        {"part": "tough（tōh）", "meaning": "有韧性的"}
+      ],
+      "phonetics": "t + ough /ʌf/；-ough 在此读 /ʌf/，与 rough / enough 同一读法。注意区分 tough /tʌf/ vs though /ðoʊ/ vs through /θruː/。",
+      "core": "「有韧性、不易断」感——物质层面是肉不好嚼、绳子拉不断；引申到人是坚韧强硬；引申到情况是「硬啃才能过去」的棘手。",
+      "senses": [
+        {
+          "gloss": "adj. 坚韧的，（人）意志强硬、不怕困难",
+          "logic": "韧性 → 不会轻易被折断或压垮",
+          "en": "She is tough enough to handle any crisis.",
+          "zh": "她足够坚韧，能应对任何危机。"
+        },
+        {
+          "gloss": "adj. 棘手的，困难的（情况）",
+          "logic": "「硬」的事情 → 硬啃才能过去 → 棘手",
+          "en": "It was a tough decision, but she knew it was the right one.",
+          "zh": "这是一个艰难的决定，但她知道这是正确的。"
+        },
+        {
+          "gloss": "adj. 老韧的（肉食质地），嚼不动的",
+          "logic": "物质层面的原始韧性感，未引申",
+          "en": "The steak was tough and difficult to chew.",
+          "zh": "那块牛排又老又难嚼。"
+        },
+        {
+          "gloss": "adj. 强硬的，态度或立场上毫不退让的",
+          "logic": "韧性延伸到态度层面 → 不弯不折",
+          "en": "The government took a tough stance on immigration.",
+          "zh": "政府在移民问题上采取了强硬立场。"
+        }
+      ],
+      "derivatives": [
+        {"w": "toughness", "gloss": "n. 坚韧；强硬；困难程度"},
+        {"w": "toughen", "gloss": "v. 使坚韧；（法规）加严"},
+        {"w": "tough-minded", "gloss": "adj. 意志坚定的，不感情用事的"}
+      ],
+      "examples": [
+        {
+          "en": "It was a tough decision, but she knew it was the right one.",
+          "zh": "这是一个艰难的决定，但她知道这是正确的。",
+          "source": "造句"
+        },
+        {
+          "en": "tough it out / tough love",
+          "zh": "「咬牙坚持 / 严厉之爱（为对方好而做出的严格管教）」——高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "resilient", "ipa": "/rɪˈzɪliənt/", "gloss": "有韧性的，能从逆境中恢复的", "note": "「有韧性的」，比 tough 更正式，侧重从逆境中恢复；a resilient economy（有弹性的经济）"},
+        {"w": "demanding", "ipa": "/dɪˈmɑːndɪŋ/", "gloss": "要求高的，消耗大的（对应「棘手」义）", "note": "「棘手/要求高的」义，强调高要求消耗大；a demanding task（费心的任务）"},
+        {"w": "stubborn", "ipa": "/ˈstʌbərn/", "gloss": "固执的，顽固的（比 tough 带负面色彩）", "note": "「固执的」，比 tough 更含负面色彩（冥顽不灵）；stubborn refusal（固执拒绝）"}
+      ],
+      "antonyms": [
+        {"w": "fragile", "note": "脆弱的（相对「坚韧」义）"},
+        {"w": "easy", "note": "容易的（相对「棘手」义）"}
+      ],
+      "nuance": "tough 兼有「坚韧（正面）」和「棘手（中性）」两义；resilient 侧重恢复力，更积极；demanding 侧重要求高而消耗大；stubborn 带负面，强调固执而非坚韧。「a tough person」是正面的强韧，「a stubborn person」是负面的顽固。"
+    },
+    {
+      "word": "rough",
+      "hl": "gh",
+      "levels": ["托福"],
+      "ipa": "/rʌf/",
+      "subgroup": "gh",
+      "meaning": "adj. 粗糙的；崎岖的；粗暴的；（情况）艰难的  n. 草稿（rough draft）  adv. 粗略地",
+      "etymology": "古英语 rūh「毛糙的、有粗毛的」，日耳曼同根，与德语 rauh 同源。「表面不光滑」→ 「（行为）粗鲁」→「（情况）艰难」，三层引申一脉相承。",
+      "roots": [
+        {"part": "rough（rūh）", "meaning": "毛糙的、粗糙的"}
+      ],
+      "phonetics": "r + ough /ʌf/；-ough 读 /ʌf/，与 tough / enough 同韵家族。注意 rough /rʌf/ vs rogue /roʊɡ/（无关联）。",
+      "tip": "rough draft（草稿）是写作高频搭配——「粗糙版」= 初稿，rough = 还没打磨过。",
+      "core": "「表面不平整」感——物理上是有毛刺摸起来不舒服，行为上是不打磨就冲出去，情况上是道路不平坦、难以通行。从质地到行为到处境，一以贯之。",
+      "senses": [
+        {
+          "gloss": "adj. 粗糙的，表面不光滑有毛刺的",
+          "logic": "原义，物理质地层面",
+          "en": "The rough stone surface scratched her hands.",
+          "zh": "粗糙的石面划破了她的手。"
+        },
+        {
+          "gloss": "adj. 崎岖的，（地形或海面）不平坦难以通行的",
+          "logic": "地面「粗糙」= 起伏不平 → 难走",
+          "en": "The ship struggled through rough seas during the storm.",
+          "zh": "暴风雨中，船在汹涌的海面上艰难行进。"
+        },
+        {
+          "gloss": "adj. 粗暴的，（行为或言语）未经打磨的",
+          "logic": "行为「粗糙」= 没有磨过 → 粗鲁",
+          "en": "His rough manner put people off at first.",
+          "zh": "他粗鲁的举止起初让人望而却步。"
+        },
+        {
+          "gloss": "adj./adv. 粗略的，大概的，未经精确处理的",
+          "logic": "「未打磨」→ 还在毛坯阶段 → 粗估",
+          "en": "rough draft / rough estimate / rough around the edges",
+          "zh": "「草稿 / 粗略估计 / 有些粗糙但有潜力」——三个高频「粗」义搭配。"
+        }
+      ],
+      "derivatives": [
+        {"w": "roughness", "gloss": "n. 粗糙；粗暴；艰难"},
+        {"w": "roughly", "gloss": "adv. 粗糙地；大约，粗略地"},
+        {"w": "roughen", "gloss": "v. 使变粗糙；使变艰难"}
+      ],
+      "examples": [
+        {
+          "en": "The ship struggled through rough seas during the storm.",
+          "zh": "暴风雨中，船在汹涌的海面上艰难行进。",
+          "source": "造句"
+        },
+        {
+          "en": "rough draft / rough estimate / rough around the edges",
+          "zh": "「草稿 / 粗略估计 / 有些粗糙但有潜力」——三个高频「粗」义搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "coarse", "ipa": "/kɔːrs/", "gloss": "粗糙（侧重材料质地），也指语言粗俗", "note": "「粗糙（质地）」，比 rough 更侧重材料质感；coarse fabric（粗布）、coarse language（粗话）"},
+        {"w": "rugged", "ipa": "/ˈrʌɡɪd/", "gloss": "崎岖的（地形），也形容外形粗犷有力", "note": "「崎岖（地形）」，比 rough 更强调地形或外形上的不平整；rugged terrain（崎岖地形）"},
+        {"w": "harsh", "ipa": "/hɑːrʃ/", "gloss": "严酷的，对人有强烈刺激或严苛性的", "note": "「严酷的」，比 rough 更强调对人的刺激性或严苛性；harsh criticism（严厉批评）"}
+      ],
+      "antonyms": [
+        {"w": "smooth", "note": "光滑的，顺畅的"},
+        {"w": "gentle", "note": "温和的"}
+      ],
+      "nuance": "rough 最通用，覆盖物理粗糙、情绪粗暴、情况艰难；coarse 侧重材料质地（coarse sand 粗沙）；rugged 侧重地形凹凸不平；harsh 侧重令人不适的严苛（harsh weather / harsh words）。「rough day」是「糟糕的一天」，「harsh day」则不常说。"
+    },
+    {
+      "word": "enough",
+      "hl": "gh",
+      "levels": ["基础"],
+      "ipa": "/ɪˈnʌf/",
+      "subgroup": "gh",
+      "meaning": "det./pron. 足够（的）  adv. 足够地  interj. 够了！（表示忍耐到了极限）",
+      "etymology": "古英语 genōg「充足的」，日耳曼同根，与德语 genug 同源。「充足」→ 感叹词「够了！」——从量的描述变成情绪的表达。",
+      "roots": [
+        {"part": "enough（genōg）", "meaning": "充足的（古英语）"}
+      ],
+      "phonetics": "e- /ɪ/ + nough /nʌf/；-ough 读 /ʌf/，是词尾 gh = /f/ 家族成员；重音在后 e-NOUGH。",
+      "tip": "「Enough is enough.」——「够了就是够了」，固定句式，表达忍耐到极限的强烈语气，高频口语和演讲用语。",
+      "core": "「刚好满格」感——不多也不少，刚好达到所需的量；感叹词义「够了！」是情绪满格溢出——忍耐到了边界。",
+      "senses": [
+        {
+          "gloss": "det./pron. 足够的，达到所需数量或程度",
+          "logic": "「满格」→ 已达到需要的量",
+          "en": "There is enough evidence to support the hypothesis.",
+          "zh": "有足够的证据支持这一假设。"
+        },
+        {
+          "gloss": "adv. 足够地，达到某种程度",
+          "logic": "「满格」修饰动词或形容词",
+          "en": "She was experienced enough to handle the situation alone.",
+          "zh": "她经验足够丰富，能独立处理这个局面。"
+        },
+        {
+          "gloss": "interj. 够了！表示忍耐到了极限，不能再多",
+          "logic": "容忍的量「满格」→ 情绪溢出 → 表达强烈停止",
+          "en": "Enough! I don't want to hear another word about it.",
+          "zh": "够了！我不想再听到关于这件事的任何话。"
+        }
+      ],
+      "derivatives": [
+        {"w": "sufficiently", "gloss": "adv. 充分地（enough 的书面近义副词）"},
+        {"w": "fair enough", "gloss": "固定短语，表示「好吧，有道理」（口语认可）"},
+        {"w": "sure enough", "gloss": "固定短语，表示「果然，果不其然」"}
+      ],
+      "examples": [
+        {
+          "en": "There is enough evidence to support the hypothesis.",
+          "zh": "有足够的证据支持这一假设。",
+          "source": "造句"
+        },
+        {
+          "en": "Enough is enough. / fair enough / sure enough",
+          "zh": "「够了就是够了 / 好吧，有道理 / 果然如此」——三个高频固定用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sufficient", "ipa": "/səˈfɪʃnt/", "gloss": "充足的（enough 的正式书面对应词）", "note": "正式书面语「充足的」，与 enough 完全对应；sufficient evidence（充足证据）"},
+        {"w": "adequate", "ipa": "/ˈædɪkwət/", "gloss": "足够的，但仅仅够用，隐含「勉强达标」", "note": "「足够的，但仅仅够用」，比 enough 更中性甚至略含「勉强」；an adequate salary（过得去的薪资）"},
+        {"w": "ample", "ipa": "/ˈæmpl/", "gloss": "充裕的，绰绰有余的，明显超过所需", "note": "「充裕的、绰绰有余的」，比 enough 更有余量；ample time（充裕的时间）"}
+      ],
+      "antonyms": [
+        {"w": "insufficient", "note": "不足的"},
+        {"w": "lacking", "note": "欠缺的"}
+      ],
+      "nuance": "enough 最通用，是「刚好够」的中性描述；sufficient 是其正式书面版（学术写作首选）；adequate 暗含「仅仅达到标准，不多不少」，有时带轻微不满足的语气；ample 明确表示「绰绰有余、超过所需」，是三者中最充裕的。"
+    }
+  ]
+}

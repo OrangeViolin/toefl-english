@@ -1,0 +1,1401 @@
+{
+  "id": "k",
+  "combo": "c·k·ck·ch",
+  "title": "/k/ 的四种拼写",
+  "sound": "/k/",
+  "subtitle": "同一个爆破音，藏在四套外衣里——认清规律，再不读错",
+  "intro": "/k/ 是清辅音爆破音，舌根抵住软腭、气流爆出。难点不在发音，在拼写：英语用四套字母来写这一个音。规律是：c 最通用，出现在 a/o/u 和辅音前（cat/cold/cream）；k 专门用来护住 e/i 前的 /k/（因为 c 在 e/i 前会变成 /s/，所以换 k）；ck 出现在短元音正后方，是「短元音锁定符」（back/duck）；ch 读 /k/ 是希腊语借词的印记，一眼认出来：school/chemistry/stomach。把这四条路刻进脑子，看到辅音 /k/ 的词就能反推拼写，事半功倍。",
+  "subgroups": [
+    {
+      "key": "c",
+      "tag": "c → /k/",
+      "label": "✅ c = /k/",
+      "desc": "c 在 a/o/u 前或辅音前读 /k/：cat/cup/cold/cream/clean/class。记住反面：c 在 e/i/y 前读 /s/（cent/city/cycle），所以要守住 /k/ 就要换 k 或 ck。"
+    },
+    {
+      "key": "k",
+      "tag": "k → /k/",
+      "label": "k = /k/",
+      "desc": "k 出现在 e/i 前（key/kind/keep/kindle）或词尾（milk/task/risk）。词尾的 k 多出现在借自北欧语或日耳曼语的词里。"
+    },
+    {
+      "key": "ck",
+      "tag": "ck → /k/",
+      "label": "ck = /k/",
+      "desc": "ck 固定跟在短元音后——这是英语「短元音锁定」机制：back/duck/clock/stick/black/rocket。见到短元音 + /k/ 尾音，优先写 ck。"
+    },
+    {
+      "key": "ch",
+      "tag": "ch → /k/（希腊源）",
+      "label": "ch = /k/",
+      "desc": "ch 读 /k/ 是希腊语借词的标志：school（skholē）/chemistry（khēmeia）/stomach（stomakhos）/echo（ēkhō）/technical（tekhnē）。见到学术、科学、身体器官词里的 ch，优先考虑 /k/。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ack / -ck 短元音韵脚",
+      "words": ["back", "black", "stick", "duck", "clock", "rocket"]
+    },
+    {
+      "label": "-ind / -eel 词尾 k 系",
+      "words": ["kind", "keep", "kindle", "kingdom", "risk", "task", "milk"]
+    }
+  ],
+  "words": [
+    {
+      "word": "catalog",
+      "hl": "c",
+      "levels": ["托福"],
+      "ipa": "/ˈkætəlɔːɡ/",
+      "subgroup": "c",
+      "meaning": "n. 目录；产品手册  v. 将……编入目录",
+      "etymology": "希腊语 katalogos = kata-（按照）+ legein（列出）= 「按顺序列清单」。古希腊人用它指征兵名册，现代扩展为任何分类清单或商品目录。",
+      "roots": [
+        {"part": "kata-", "meaning": "按照、向下"},
+        {"part": "-log (legein)", "meaning": "列举、说"}
+      ],
+      "phonetics": "cat- /kæt/ + a + log /lɔːɡ/，c 在 a 前读 /k/，词尾 g 清晰发音；美式拼法省略 -ue（catalogue 为英式）。",
+      "tip": "同根词：catalogue（英式）、monologue（独白）、dialogue（对话）——log 家族都在「讲/列」。",
+      "examples": [
+        {
+          "en": "The museum released a digital catalog of its entire collection.",
+          "zh": "博物馆发布了馆藏全部藏品的数字目录。",
+          "source": "造句"
+        },
+        {
+          "en": "catalog of errors",
+          "zh": "「一连串错误」——比喻用法，强调错误数量之多。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "inventory", "ipa": "/ˈɪnvəntɔːri/", "gloss": "存货清单、库存目录", "note": "「存货清单/库存目录」，比 catalog 更侧重数量盘点，常用于仓储和财务"},
+        {"w": "index", "ipa": "/ˈɪndeks/", "gloss": "索引、检索表", "note": "「索引」，强调按字母或主题排序检索，比 catalog 更精简"},
+        {"w": "directory", "ipa": "/dəˈrektəri/", "gloss": "名录、通讯录", "note": "「名录、通讯录」，强调可供查找的地址/联系信息列表"}
+      ],
+      "antonyms": [],
+      "nuance": "catalog 强调分类展示（商品/藏品），inventory 强调数量清点（库存），index 是导航工具（书的最后几页），directory 是通讯或路径查找工具。",
+      "core": "「按顺序列出」的清单感——把杂乱的东西排成可查的序列",
+      "senses": [
+        {
+          "gloss": "目录；分类清单（n.）",
+          "logic": "把事物「按顺序列出」，形成可检索的清单",
+          "en": "The library's online catalog lists over two million titles.",
+          "zh": "图书馆的在线目录收录了逾两百万个书目。"
+        },
+        {
+          "gloss": "产品手册（n.）",
+          "logic": "商家把商品「逐一列出」供顾客浏览",
+          "en": "She flipped through the furniture catalog looking for a sofa.",
+          "zh": "她翻着家具手册寻找一款沙发。"
+        },
+        {
+          "gloss": "将……编入目录（v.）",
+          "logic": "动作义：把某物「纳入清单」",
+          "en": "Volunteers spent months cataloging the donated books.",
+          "zh": "志愿者花了数月时间为捐赠图书编目。"
+        }
+      ],
+      "derivatives": [
+        {"w": "catalogue", "gloss": "目录（英式拼法，同 catalog）"},
+        {"w": "cataloger", "gloss": "编目员"},
+        {"w": "cataloging", "gloss": "编目（动名词/进行时）"}
+      ]
+    },
+    {
+      "word": "catalyst",
+      "hl": "c",
+      "levels": ["托福"],
+      "ipa": "/ˈkætəlɪst/",
+      "subgroup": "c",
+      "meaning": "n. 催化剂；促使变化的人或事物",
+      "etymology": "希腊语 katalysis = kata-（向下）+ lyein（松开、分解）= 「使之分解」。化学上指不消耗自身却促进反应的物质；引申为任何触发变化的推手。",
+      "roots": [
+        {"part": "kata-", "meaning": "向下、完全"},
+        {"part": "-lyst (lyein)", "meaning": "分解、松开"}
+      ],
+      "phonetics": "cat- /kæt/ + a + lyst /lɪst/，c 在 a 前读 /k/；重音在首音节。注意别误读成 ca-TAL-yst。",
+      "tip": "同根：analyze（分析，an+lyze）、electrolysis（电解）、paralyze（麻痹）——lys 家族都在「分解/松开」。",
+      "examples": [
+        {
+          "en": "The discovery of penicillin acted as a catalyst for modern medicine.",
+          "zh": "青霉素的发现成为现代医学的催化剂。",
+          "source": "造句"
+        },
+        {
+          "en": "serve as a catalyst for change",
+          "zh": "「充当变革的催化剂」——社论和学术写作高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "trigger", "ipa": "/ˈtrɪɡər/", "gloss": "触发因素、扳机", "note": "「触发因素」，比 catalyst 更强调单次启动，不含「加速过程」义"},
+        {"w": "stimulus", "ipa": "/ˈstɪmjələs/", "gloss": "刺激物、激发因素", "note": "「刺激物」，比 catalyst 更广，指任何引起反应的因素，偏生物/心理语境"},
+        {"w": "impetus", "ipa": "/ˈɪmpɪtəs/", "gloss": "推动力、初始动力", "note": "「动力、推动力」，强调提供初始推力，比 catalyst 更侧重「推动」而非「加速」"}
+      ],
+      "antonyms": [
+        {"w": "inhibitor", "note": "抑制剂；阻碍因素"}
+      ],
+      "nuance": "catalyst 隐含「自身不变但促进他变」的精妙——是变化的推手，不是变化本身；trigger 只是扣动扳机的那一刻，不含持续加速义；stimulus 泛指一切引起反应的输入。",
+      "core": "「自身不耗损却让反应加速」的助推感——存在即改变他人，无需介入过程",
+      "senses": [
+        {
+          "gloss": "催化剂（化学，n.）",
+          "logic": "字面义：不消耗自身却加快化学反应的物质",
+          "en": "Platinum acts as a catalyst in the conversion of exhaust gases.",
+          "zh": "铂在废气转化中充当催化剂。"
+        },
+        {
+          "gloss": "变化推手、促发因素（比喻，n.）",
+          "logic": "从化学引申：某人或某事的存在让局面发生质变",
+          "en": "Her resignation served as a catalyst for a complete overhaul of the department.",
+          "zh": "她的辞职成了整个部门彻底重组的导火索。"
+        }
+      ],
+      "derivatives": [
+        {"w": "catalyze", "gloss": "催化；促进（变化）"},
+        {"w": "catalysis", "gloss": "催化作用（化学名词）"},
+        {"w": "catalytic", "gloss": "催化的；起推动作用的"}
+      ]
+    },
+    {
+      "word": "catastrophe",
+      "hl": "c",
+      "levels": ["托福"],
+      "ipa": "/kəˈtæstrəfi/",
+      "subgroup": "c",
+      "meaning": "n. 灾难；惨败；大祸",
+      "etymology": "希腊语 katastrophē = kata-（向下）+ strephein（翻转）= 「向下翻转」。古希腊戏剧术语，指悲剧结尾的命运逆转——后扩展为任何惨烈结果。",
+      "roots": [
+        {"part": "kata-", "meaning": "向下"},
+        {"part": "-stroph (strephein)", "meaning": "翻转"}
+      ],
+      "phonetics": "ca- /kə/（弱读）+ tas + tro + phe，重音在第二音节 -TAS-；词尾 -e 不发音，-phe = /fi/。",
+      "examples": [
+        {
+          "en": "The earthquake was a catastrophe that left thousands homeless.",
+          "zh": "这场地震是一场灾难，使数千人无家可归。",
+          "source": "造句"
+        },
+        {
+          "en": "ecological catastrophe",
+          "zh": "「生态灾难」——环境议题写作高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "disaster", "ipa": "/dɪˈzɑːstər/", "gloss": "灾难、祸事", "note": "最通用的「灾难」，比 catastrophe 程度可轻可重，口语也常用"},
+        {"w": "calamity", "ipa": "/kəˈlæmɪti/", "gloss": "重大不幸、天降横祸", "note": "「重大不幸」，比 catastrophe 更文学化，带有「命运的打击」意味"},
+        {"w": "tragedy", "ipa": "/ˈtrædʒɪdi/", "gloss": "悲剧、惨事", "note": "「悲剧」，强调情感层面的惨痛，catastrophe 更强调实际规模和破坏"}
+      ],
+      "antonyms": [
+        {"w": "triumph", "note": "巨大胜利"},
+        {"w": "blessing", "note": "幸事、福祉"}
+      ],
+      "nuance": "catastrophe 比 disaster 更强调「彻底毁灭性」的规模，语气最重；calamity 偏文学，强调苦难与哀愁；tragedy 偏情感层面的不可挽回。日常口语可用 disaster，正式文章或强调极端后果时用 catastrophe。",
+      "core": "「命运向下翻转」的倾覆感——由高点骤然坠入毁灭，无可挽回",
+      "senses": [
+        {
+          "gloss": "自然或人为灾难（n.）",
+          "logic": "字面：命运翻转→现实层面的毁灭性事件",
+          "en": "The nuclear meltdown was the worst environmental catastrophe of the decade.",
+          "zh": "核熔毁是这十年最严重的环境灾难。"
+        },
+        {
+          "gloss": "惨败、彻底失败（n.，口语稍夸张）",
+          "logic": "比喻：某事从期望翻转为完全相反的结局",
+          "en": "The product launch turned into a catastrophe when the servers crashed on day one.",
+          "zh": "产品发布首日服务器崩溃，演变成一场彻底的惨败。"
+        }
+      ],
+      "derivatives": [
+        {"w": "catastrophic", "gloss": "灾难性的、毁灭性的"},
+        {"w": "catastrophically", "gloss": "灾难性地"},
+        {"w": "catastrophize", "gloss": "（心理学）灾难化思维，将事情想象为最坏结果"}
+      ]
+    },
+    {
+      "word": "category",
+      "hl": "c",
+      "levels": ["托福"],
+      "ipa": "/ˈkætəɡɔːri/",
+      "subgroup": "c",
+      "meaning": "n. 类别，种类；范畴",
+      "etymology": "希腊语 katēgoria = kata-（向下）+ agoreuein（在广场上发言）= 「公开宣称某物属于何类」。亚里士多德用它指事物的基本分类框架，现代保留「归类」义。",
+      "roots": [
+        {"part": "kata-", "meaning": "向下、关于"},
+        {"part": "-gor (agoreuein)", "meaning": "公开陈述"}
+      ],
+      "phonetics": "cat- /kæt/ + e + go + ry，c 在 a 前读 /k/；重音首音节，词尾 -ry 弱读 /ri/。",
+      "tip": "categorize（分类）、categorical（绝对的、明确的）是同族词，背一个带一串。",
+      "examples": [
+        {
+          "en": "The research divides participants into three categories based on age.",
+          "zh": "该研究按年龄将参与者分为三类。",
+          "source": "造句"
+        },
+        {
+          "en": "fall into a category",
+          "zh": "「归属于某一类别」——学术写作高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "class", "ipa": "/klæs/", "gloss": "类、等级", "note": "「类、等级」，比 category 更口语，也更强调等级划分（class system）"},
+        {"w": "type", "ipa": "/taɪp/", "gloss": "类型", "note": "「类型」，最口语，比 category 更随意，不带哲学框架"},
+        {"w": "classification", "ipa": "/ˌklæsɪfɪˈkeɪʃn/", "gloss": "分类体系、归类结果", "note": "「分类（体系）」，是 category 的系统性版本，强调整个分类框架而非单个类别"}
+      ],
+      "antonyms": [],
+      "nuance": "category 在学术和正式写作中最精确，暗含「明确界定边界的归类」；type 最口语灵活；class 带等级含义；classification 是整套体系，不指单个类别。",
+      "core": "「公开宣告某物归属何处」的划界感——把世界切割成边界清晰的格子",
+      "senses": [
+        {
+          "gloss": "类别、种类（n.）",
+          "logic": "亚里士多德的「归类宣告」：把某物划入某个明确的框格",
+          "en": "Expenses are grouped into three categories: fixed, variable, and discretionary.",
+          "zh": "支出分为三类：固定支出、可变支出和自由支出。"
+        },
+        {
+          "gloss": "范畴（哲学/学术，n.）",
+          "logic": "更抽象：思维或存在的基本划分框架",
+          "en": "Kant argued that space and time are categories of the human mind.",
+          "zh": "康德认为空间和时间是人类心智的范畴。"
+        }
+      ],
+      "derivatives": [
+        {"w": "categorize", "gloss": "将……分类、归类"},
+        {"w": "categorical", "gloss": "明确的、绝对的（categorical denial 断然否认）"},
+        {"w": "categorically", "gloss": "断然地、绝对地"}
+      ]
+    },
+    {
+      "word": "classic",
+      "hl": "c",
+      "levels": ["托福"],
+      "ipa": "/ˈklæsɪk/",
+      "subgroup": "c",
+      "meaning": "adj. 经典的；典型的  n. 经典作品；[pl.] 古典文学",
+      "etymology": "拉丁语 classicus「头等的、属于最高等级的」，源自 classis（等级、舰队）。罗马人把公民按财产分六级，classicus 是一级——后来延伸为「一流的、值得效仿的」。",
+      "roots": [
+        {"part": "class (classis)", "meaning": "等级"},
+        {"part": "-ic", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "cl- 连缀 /kl/ + ass /æs/ + ic，c 在辅音 l 前读 /k/；与 classical 区别：classic 形容「经典的单件」，classical 形容「古典风格/时期」。",
+      "tip": "classic rock（经典摇滚）vs classical music（古典音乐）——classic 是「永不过时的精品」，classical 是「特定古典风格/时代」。",
+      "examples": [
+        {
+          "en": "The Great Gatsby is considered a classic of American literature.",
+          "zh": "《了不起的盖茨比》被认为是美国文学经典。",
+          "source": "造句"
+        },
+        {
+          "en": "a classic example of",
+          "zh": "「……的典型案例」——学术写作和新闻评论高频句式。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "definitive", "ipa": "/dɪˈfɪnɪtɪv/", "gloss": "权威的、最终的版本", "note": "「权威的、最终的」，比 classic 更强调「不可超越的标准版本」；the definitive biography（权威传记）"},
+        {"w": "timeless", "ipa": "/ˈtaɪmləs/", "gloss": "永恒的、不受时代限制的", "note": "「永恒的」，强调不受时代限制，比 classic 更侧重时间维度"},
+        {"w": "canonical", "ipa": "/kəˈnɒnɪkl/", "gloss": "正典的、权威认可的", "note": "「正典的、权威认可的」，学术语境用，比 classic 更正式，含「被权威机构列入」义"}
+      ],
+      "antonyms": [
+        {"w": "obscure", "note": "默默无闻的、鲜为人知的"},
+        {"w": "forgettable", "note": "容易被遗忘的"}
+      ],
+      "nuance": "classic 可以是主观的（everyone agrees this is great），definitive 强调客观上的最终权威版本，timeless 强调超越时间，canonical 强调被学术共同体正式认可。",
+      "core": "「头等水准」的卓越感——经过时间检验、被公认为最高标准的",
+      "senses": [
+        {
+          "gloss": "经典作品（n.）",
+          "logic": "头等之物被时间沉淀后留存下来，成为参照标准",
+          "en": "Pride and Prejudice remains a beloved classic two centuries after it was written.",
+          "zh": "《傲慢与偏见》在写就两个世纪后仍是人们钟爱的经典。"
+        },
+        {
+          "gloss": "经典的、永不过时的（adj.）",
+          "logic": "描述某物具有「头等」品质且不随时代褪色",
+          "en": "She wore a classic black dress that never goes out of style.",
+          "zh": "她穿了一件永不过时的经典黑裙。"
+        },
+        {
+          "gloss": "典型的（adj.，指某种模式的完美代表）",
+          "logic": "「头等代表」延伸为「最典型的例子」",
+          "en": "That was a classic case of miscommunication.",
+          "zh": "那是一个沟通不畅的典型案例。"
+        },
+        {
+          "gloss": "古典文学（n. 复数 the classics）",
+          "logic": "罗马「头等」教育内容→古希腊罗马文学",
+          "en": "He studied the classics at Oxford.",
+          "zh": "他在牛津攻读古典文学。"
+        }
+      ],
+      "derivatives": [
+        {"w": "classical", "gloss": "古典的（特指古典时期风格或古典音乐）"},
+        {"w": "classically", "gloss": "按古典风格地；典型地"},
+        {"w": "classicism", "gloss": "古典主义（艺术流派）"}
+      ]
+    },
+    {
+      "word": "characteristic",
+      "hl": "ch",
+      "levels": ["托福"],
+      "ipa": "/ˌkærəktəˈrɪstɪk/",
+      "subgroup": "ch",
+      "meaning": "n. 特征，特性  adj. 典型的，特有的",
+      "etymology": "希腊语 kharaktēristikos，源自 kharaktēr（刻印的标记、工具）= kharax（尖桩）。古希腊人用尖桩在蜡板上刻字，kharaktēr 就是「刻出来的印记」→ 特征、性格。character（性格、人物）是同根词。",
+      "roots": [
+        {"part": "charact- (kharax)", "meaning": "刻印、标记"},
+        {"part": "-istic", "meaning": "与……有关的"}
+      ],
+      "phonetics": "ch 在此读 /k/（希腊源）；重音在倒数第三音节 -RIS-；全词 /ˌkærəktəˈrɪstɪk/，注意首音节 char- /kær/ 非 /tʃær/。",
+      "tip": "character、characterize、characteristic 一家三口——「刻在身上的印记」就是性格，也是特征。",
+      "examples": [
+        {
+          "en": "Adaptability is a key characteristic of successful entrepreneurs.",
+          "zh": "适应力是成功企业家的关键特征。",
+          "source": "造句"
+        },
+        {
+          "en": "characteristic of",
+          "zh": "「……所特有的」——adj. 用法高频句式：It is characteristic of her to arrive early.（她一贯早到。）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "trait", "ipa": "/treɪt/", "gloss": "（人的）性格特质", "note": "「（人的）性格特质」，比 characteristic 更侧重个人性格，不用于无生命事物"},
+        {"w": "feature", "ipa": "/ˈfiːtʃər/", "gloss": "特点、特色", "note": "「特点」，最通用，无论事物还是人都可用，比 characteristic 更口语"},
+        {"w": "attribute", "ipa": "/ˈætrɪbjuːt/", "gloss": "属性、归属性质", "note": "「属性」，比 characteristic 更抽象，强调是某物本质上「归属」的性质"}
+      ],
+      "antonyms": [
+        {"w": "anomaly", "note": "异常、例外（偏离特征）"}
+      ],
+      "nuance": "characteristic 最正式，暗含「定义性的特征」；trait 专用于人的性格；feature 最泛用且口语；attribute 强调逻辑上归属于某物的性质，常用于规格或哲学讨论。",
+      "core": "「刻在身上的印记」感——标识某物身份的决定性标记，去掉它就不再是它",
+      "senses": [
+        {
+          "gloss": "特征、特性（n.）",
+          "logic": "刻印的标记→某物与生俱来的辨识印记",
+          "en": "One characteristic of the species is its unusually long lifespan.",
+          "zh": "该物种的一个特征是其异常长的寿命。"
+        },
+        {
+          "gloss": "典型的、特有的（adj.）",
+          "logic": "带有「那个印记」的→只属于它的、有代表性的",
+          "en": "He responded with characteristic humor when the press asked about the setback.",
+          "zh": "当媒体问及挫折时，他以一贯的幽默作答。"
+        }
+      ],
+      "derivatives": [
+        {"w": "character", "gloss": "性格；人物；文字符号"},
+        {"w": "characterize", "gloss": "以……为特征；描述……的特点"},
+        {"w": "characteristically", "gloss": "典型地；一如既往地"}
+      ]
+    },
+    {
+      "word": "keep",
+      "hl": "k",
+      "levels": ["基础"],
+      "ipa": "/kiːp/",
+      "subgroup": "k",
+      "meaning": "v. 保持；保留；遵守；继续做  n. 生计；城堡主楼",
+      "etymology": "古英语 cēpan「照管、看守」，日耳曼同源。核心义「握住不放」——物理上保留、状态上维持、时间上持续。keep up/keep on/keep off 等短语系派生枝干。",
+      "roots": [
+        {"part": "keep（cēpan）", "meaning": "照管、持有"}
+      ],
+      "phonetics": "k 在 ee/e 前用 k 而非 c（因为 c+e 会变 /s/）；k + ee /iː/ + p，与 deep/sleep 押韵。",
+      "tip": "keep 的动词变位：keep-kept-kept，不规则；keep doing sth（持续做）vs keep to do sth（记得去做）——两用法分清楚。",
+      "examples": [
+        {
+          "en": "Keep the receipt in case you need to return the item.",
+          "zh": "保留收据，以防你需要退货。",
+          "source": "造句"
+        },
+        {
+          "en": "keep in touch / keep a promise",
+          "zh": "「保持联系 / 遵守承诺」——两大高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "maintain", "ipa": "/meɪnˈteɪn/", "gloss": "维持（状态）", "note": "「维持（状态）」，比 keep 更正式，强调主动付出努力；maintain standards（维持标准）"},
+        {"w": "retain", "ipa": "/rɪˈteɪn/", "gloss": "保留（所有权/记忆）", "note": "「保留（所有权/记忆）」，比 keep 更正式，多用于抽象；retain information（记住信息）"},
+        {"w": "preserve", "ipa": "/prɪˈzɜːrv/", "gloss": "保护、保存（防变质）", "note": "「保护、保存」，比 keep 更强调防止变质或消失；preserve tradition（保留传统）"}
+      ],
+      "antonyms": [
+        {"w": "discard", "note": "丢弃、放弃"},
+        {"w": "release", "note": "释放、放出"}
+      ],
+      "nuance": "keep 是最口语通用的「保持/保留」，maintain 强调持续付出维护，retain 多用于所有权和记忆，preserve 强调保护免遭损坏或消失。「keep silence」是日常说法，「maintain silence」更正式书面。",
+      "core": "「握住不放」的持守感——无论是物件、状态还是行为，都维持着不让它脱手或改变",
+      "senses": [
+        {
+          "gloss": "保留、保存（v.，物理）",
+          "logic": "握住不放→不扔掉、不放走",
+          "en": "Keep this key; you may need it later.",
+          "zh": "留好这把钥匙，之后可能用得上。"
+        },
+        {
+          "gloss": "保持（某状态，v.）",
+          "logic": "握住不放→使状态不改变",
+          "en": "Keep the door closed to conserve heat.",
+          "zh": "把门关上保温。"
+        },
+        {
+          "gloss": "遵守（承诺/约定，v.）",
+          "logic": "握住不放→不违背已承诺的事",
+          "en": "She has always kept her word.",
+          "zh": "她一向说到做到。"
+        },
+        {
+          "gloss": "持续做（v.，keep doing）",
+          "logic": "动作上「握住不放」→不停止正在做的事",
+          "en": "He kept walking even after the rain started.",
+          "zh": "即使开始下雨，他也继续往前走。"
+        },
+        {
+          "gloss": "生计；城堡主楼（n.）",
+          "logic": "「维持生活所需」→生计；城堡中守卫者据守的核心塔楼（历史偶合，同形异源不强串）",
+          "en": "He earned his keep by doing odd jobs around the farm.",
+          "zh": "他靠在农场打零工维持生计。"
+        }
+      ],
+      "derivatives": [
+        {"w": "keeper", "gloss": "看守人；守门员；饲养员"},
+        {"w": "upkeep", "gloss": "维护（费用）；保养"},
+        {"w": "keepsake", "gloss": "纪念品（keep + sake，为了留存的东西）"}
+      ]
+    },
+    {
+      "word": "kind",
+      "hl": "k",
+      "levels": ["基础"],
+      "ipa": "/kaɪnd/",
+      "subgroup": "k",
+      "meaning": "adj. 友善的，体贴的  n. 种类，类型",
+      "etymology": "古英语 gecynde「天然的、本性的」，源自 cyn（家族、种类）。「同族人」→「待人亲近」→ 友善；名词义「种类」直接来自「同族」。与 kin（亲属）、king（族长→国王）同根。",
+      "roots": [
+        {"part": "kind（cyn）", "meaning": "家族、本性"}
+      ],
+      "phonetics": "k 在 i 前用 k（c+i 会变 /s/）；k + ind /aɪnd/，与 find/mind 押韵。",
+      "tip": "kind 的名词义（a kind of）在托福阅读中频繁出现，kind of 在口语中弱化为「有点」（It's kind of strange.）——两义都要吃透。",
+      "examples": [
+        {
+          "en": "It was very kind of you to help me move.",
+          "zh": "你帮我搬家真是太好心了。",
+          "source": "造句"
+        },
+        {
+          "en": "a kind of / all kinds of",
+          "zh": "「一种……/ 各种各样的……」——名词义高频句式。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "considerate", "ipa": "/kənˈsɪdərɪt/", "gloss": "体贴的（主动照顾他人感受）", "note": "「体贴的」，比 kind 更强调主动思考他人感受；considerate of sb（某人真体贴）"},
+        {"w": "generous", "ipa": "/ˈdʒenərəs/", "gloss": "慷慨的（给予上大方）", "note": "「慷慨的」，比 kind 更强调给予，财物或时间上的大方"},
+        {"w": "type", "ipa": "/taɪp/", "gloss": "种类、类型（名词义近义）", "note": "名词义近义词，「种类/类型」，比 kind 更口语"}
+      ],
+      "antonyms": [
+        {"w": "cruel", "note": "残忍的"},
+        {"w": "unkind", "note": "不友善的"}
+      ],
+      "nuance": "kind 强调发自内心的善意（kinder than expected），considerate 更强调有意识地照顾他人感受，generous 侧重给予上的慷慨。名词义中 kind 和 type 可互换，kind 更口语（what kind of）。",
+      "core": "「同族亲近」的天然感——对同类（人类大家族）发自本性的善意，同时也是「同族人的归类」",
+      "senses": [
+        {
+          "gloss": "友善的、体贴的（adj.）",
+          "logic": "「同族人」天然亲近→善待他人",
+          "en": "She was kind enough to wait while I found my keys.",
+          "zh": "她好心地等我找到钥匙。"
+        },
+        {
+          "gloss": "种类、类型（n.）",
+          "logic": "直接来自「同族」义：同一类的人或物",
+          "en": "What kind of music do you usually listen to?",
+          "zh": "你平时听什么类型的音乐？"
+        }
+      ],
+      "derivatives": [
+        {"w": "kindly", "gloss": "友善地；请（语气词，kindly refrain 请勿）"},
+        {"w": "kindness", "gloss": "善意、友善"},
+        {"w": "unkind", "gloss": "不友善的、冷漠的"}
+      ]
+    },
+    {
+      "word": "kindle",
+      "hl": "k",
+      "levels": ["托福"],
+      "ipa": "/ˈkɪndl/",
+      "subgroup": "k",
+      "meaning": "v. 点燃；激发（热情、兴趣等）",
+      "etymology": "古诺尔斯语 kynda「点火」，日耳曼同源。字面义是生火点燃，引申为「在心中点燃」某种情感——激发热情、唤起好奇、点燃希望。亚马逊阅读器 Kindle 取此义：「点燃对阅读的热情」。",
+      "roots": [
+        {"part": "kindle（kynda）", "meaning": "点火、激发"}
+      ],
+      "phonetics": "k 在 i 前；kin- /kɪn/ + dle /dl/，注意 -dle 结尾发 /dl/（如 handle/bundle）。",
+      "tip": "kindle vs ignite：kindle 比 ignite 更文学化，多用于情感和精神；ignite 更物理，也可用于情感但更强烈（ignite a revolution）。",
+      "examples": [
+        {
+          "en": "Her speech kindled a sense of hope in the audience.",
+          "zh": "她的演讲在观众心中点燃了一种希望。",
+          "source": "造句"
+        },
+        {
+          "en": "kindle curiosity / kindle enthusiasm",
+          "zh": "「激发好奇心 / 燃起热情」——学术和演讲高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "ignite", "ipa": "/ɪɡˈnaɪt/", "gloss": "点燃、引发（更强烈）", "note": "「点燃、引发」，比 kindle 更强烈，也更口语；ignite a debate（引发争论）"},
+        {"w": "inspire", "ipa": "/ɪnˈspaɪər/", "gloss": "激励、激发灵感", "note": "「激励、激发灵感」，比 kindle 更侧重正向的精神激励"},
+        {"w": "arouse", "ipa": "/əˈraʊz/", "gloss": "唤起（情感/兴趣）", "note": "「唤起（情感/兴趣）」，比 kindle 更广，可指任何情绪的激活；arouse suspicion（引起怀疑）"}
+      ],
+      "antonyms": [
+        {"w": "extinguish", "note": "熄灭；扑灭（情感）"},
+        {"w": "dampen", "note": "压制、浇灭（热情）"}
+      ],
+      "nuance": "kindle 意象优美，暗含「从无到有地点燃」，多用于正面情感（hope/curiosity）；ignite 更强烈，可正可负（ignite passion or conflict）；inspire 专用于正向精神激励，有「神授灵感」的古典意味。",
+      "core": "「从无到有地生起火」的点燃感——在黑暗或冰冷中创造出第一簇光和热",
+      "senses": [
+        {
+          "gloss": "点燃（物理，v.）",
+          "logic": "字面：使材料着火燃烧",
+          "en": "He kindled the campfire with dry leaves and a match.",
+          "zh": "他用干叶子和一根火柴点燃了篝火。"
+        },
+        {
+          "gloss": "激发、唤起（情感/兴趣，v.）",
+          "logic": "「在心中生起火」→在某人内心引燃热情或情感",
+          "en": "The documentary kindled her interest in marine biology.",
+          "zh": "这部纪录片激发了她对海洋生物学的兴趣。"
+        }
+      ],
+      "derivatives": [
+        {"w": "rekindled", "gloss": "重新点燃（rekindled love 重燃的爱）"},
+        {"w": "kindling", "gloss": "引火材料（木屑、细枝等）"}
+      ]
+    },
+    {
+      "word": "kingdom",
+      "hl": "k",
+      "levels": ["托福"],
+      "ipa": "/ˈkɪŋdəm/",
+      "subgroup": "k",
+      "meaning": "n. 王国；领域；（生物分类）界",
+      "etymology": "古英语 cyningdōm = cyning（国王）+ dōm（管辖权）。king 源自 cyn（家族）——「家族的领头人」→ 国王；kingdom 是「国王的管辖范围」。生物学中五大「界」（动物界、植物界等）沿用此词。",
+      "roots": [
+        {"part": "king（cyning）", "meaning": "国王"},
+        {"part": "-dom", "meaning": "领域、管辖范围"}
+      ],
+      "phonetics": "k 在 i 前；king /kɪŋ/ + dom /dəm/（弱读）；-dom 后缀同 freedom/wisdom/boredom。",
+      "tip": "生物分类记忆口诀：King Philip Came Over For Good Soup（Kingdom→Phylum→Class→Order→Family→Genus→Species）。",
+      "examples": [
+        {
+          "en": "The animal kingdom includes millions of species from insects to whales.",
+          "zh": "动物界包含从昆虫到鲸鱼的数百万物种。",
+          "source": "造句"
+        },
+        {
+          "en": "the kingdom of the mind",
+          "zh": "「精神领域/思维王国」——文学或演讲中比喻某人专属的领域。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "realm", "ipa": "/relm/", "gloss": "领域；王国（文学色彩）", "note": "「领域；王国」，比 kingdom 更文学、更抽象；the realm of science（科学领域）"},
+        {"w": "domain", "ipa": "/doʊˈmeɪn/", "gloss": "领域；管辖范围（学术中性）", "note": "「领域；管辖范围」，比 kingdom 更中性，学术写作常用；within the domain of biology"},
+        {"w": "empire", "ipa": "/ˈempaɪər/", "gloss": "帝国（规模更大）", "note": "「帝国」，比 kingdom 规模更大，由一个中心统治多个区域"}
+      ],
+      "antonyms": [],
+      "nuance": "kingdom 在生物学中是专有术语（不可替换），在比喻义中与 realm/domain 接近但更庄严；realm 偏文学浪漫感，domain 更中性学术，empire 强调规模与扩张。",
+      "core": "「族长统治的疆域」感——明确边界内由一个权威管辖的整体秩序",
+      "senses": [
+        {
+          "gloss": "王国（n.，政治）",
+          "logic": "族长→国王→其统治的土地和人民",
+          "en": "The kingdom stretched from the mountains to the sea.",
+          "zh": "王国版图从山脉延伸至大海。"
+        },
+        {
+          "gloss": "领域、王国（n.，比喻）",
+          "logic": "一个权威管辖的范围→比喻某人专属或擅长的领域",
+          "en": "In the kitchen, she ruled her kingdom without compromise.",
+          "zh": "在厨房里，她毫不妥协地统治着自己的王国。"
+        },
+        {
+          "gloss": "（生物分类）界（n.，学术专用）",
+          "logic": "「最高级别的归类管辖范围」→生物分类最高层级（历史借用，沿用至今）",
+          "en": "Fungi were reclassified from the plant kingdom into their own kingdom.",
+          "zh": "真菌从植物界被重新划分为独立的界。"
+        }
+      ],
+      "derivatives": [
+        {"w": "king", "gloss": "国王"},
+        {"w": "queendom", "gloss": "女王国（罕用，近年女权语境偶见）"},
+        {"w": "kingly", "gloss": "王者般的、庄严的"}
+      ]
+    },
+    {
+      "word": "risk",
+      "hl": "k",
+      "levels": ["托福"],
+      "ipa": "/rɪsk/",
+      "subgroup": "k",
+      "meaning": "n. 风险，危险  v. 冒……的风险",
+      "etymology": "意大利语 riscare「在礁石间航行」，源自 rischio（礁石，危险之处）。地中海贸易商用来描述海上航行的不确定性——风险本义是「在险地前行」。",
+      "roots": [
+        {"part": "risk（rischio）", "meaning": "礁石、险境"}
+      ],
+      "phonetics": "r + isk /ɪsk/，词尾 sk 连读；k 在词尾自然出现，源自意大利语保留了词尾 /k/。",
+      "examples": [
+        {
+          "en": "Investing always carries a certain degree of risk.",
+          "zh": "投资总是伴随一定程度的风险。",
+          "source": "造句"
+        },
+        {
+          "en": "at the risk of / risk one's life",
+          "zh": "「冒着……的危险 / 拼命」——介词短语和动词用法两大高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "hazard", "ipa": "/ˈhæzərd/", "gloss": "危险（源）、客观威胁", "note": "「危险（源）」，比 risk 更强调客观存在的威胁物；fire hazard（火灾隐患）"},
+        {"w": "danger", "ipa": "/ˈdeɪndʒər/", "gloss": "危险（即时威胁）", "note": "「危险」，比 risk 更强调即时威胁，口语频率更高"},
+        {"w": "peril", "ipa": "/ˈperəl/", "gloss": "险境（极端危险，文学）", "note": "「险境」，比 risk 更正式、更文学，强调处境极端危险；at great peril（冒着极大危险）"}
+      ],
+      "antonyms": [
+        {"w": "safety", "note": "安全"},
+        {"w": "certainty", "note": "确定性"}
+      ],
+      "nuance": "risk 是中性词，可指可接受的商业风险（calculated risk）；hazard 更强调有害的具体威胁（health hazard）；danger 最口语，强调迫近的威胁；peril 最文学，多见于书面。「at risk」（处于危险中）和「at stake」（岌岌可危）是高频近义句式。",
+      "core": "「在礁石间航行」的不确定感——明知前路有潜在损失，仍选择前行",
+      "senses": [
+        {
+          "gloss": "风险、危险（n.）",
+          "logic": "礁石→可能造成损失的不确定因素",
+          "en": "There is always a risk of failure when starting a business.",
+          "zh": "创业始终存在失败的风险。"
+        },
+        {
+          "gloss": "冒……的风险（v.）",
+          "logic": "动作义：明知有礁石仍驶入→主动承担潜在损失",
+          "en": "She risked her savings to open the restaurant.",
+          "zh": "她拿积蓄冒险开了这家餐厅。"
+        }
+      ],
+      "derivatives": [
+        {"w": "risky", "gloss": "有风险的、冒险的"},
+        {"w": "riskier", "gloss": "更有风险的（比较级）"},
+        {"w": "risk-averse", "gloss": "厌恶风险的（金融/商业常用）"}
+      ]
+    },
+    {
+      "word": "task",
+      "hl": "k",
+      "levels": ["托福"],
+      "ipa": "/tæsk/",
+      "subgroup": "k",
+      "meaning": "n. 任务，工作  v. 委派任务给；使劳累",
+      "etymology": "古北法语 tasque，源自中古拉丁语 tasca（税款、应缴之物）。核心义「被分配必须完成的事」——从「交税」到「完成任务」的语义迁移。",
+      "roots": [
+        {"part": "task（tasca）", "meaning": "规定的工作量、税"}
+      ],
+      "phonetics": "t + ask /æsk/ 整体发音；词尾 sk 连读，k 在词尾保留。美式重音轻，英式 /tɑːsk/ 长元音。",
+      "tip": "task force（特遣队/专案组）是商业和军事高频词组，task sb with sth（委派某人负责某事）是动词用法。",
+      "examples": [
+        {
+          "en": "She was tasked with redesigning the company's website.",
+          "zh": "她被委派负责重新设计公司网站。",
+          "source": "造句"
+        },
+        {
+          "en": "take on a task / accomplish a task",
+          "zh": "「承担任务 / 完成任务」——两大高频动宾搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "assignment", "ipa": "/əˈsaɪnmənt/", "gloss": "（分配的）任务、作业", "note": "「（分配的）任务、作业」，比 task 更强调由他人指派；a school assignment（作业）"},
+        {"w": "mission", "ipa": "/ˈmɪʃn/", "gloss": "使命、（宏大）任务", "note": "「使命、任务」，比 task 更宏大，带有目的感和意义；accomplish a mission（完成使命）"},
+        {"w": "chore", "ipa": "/tʃɔːr/", "gloss": "杂务、繁琐的日常工作", "note": "「（日常）杂务」，比 task 更带「无聊/繁琐」的负面色彩；household chores（家务活）"}
+      ],
+      "antonyms": [
+        {"w": "leisure", "note": "闲暇，无事可做"}
+      ],
+      "nuance": "task 最中性，指具体的、有边界的工作项；assignment 强调「被指派」；mission 强调有意义的大目标；chore 带抱怨意味，指不得不做的琐碎事。「complete a task」是最正式的表达，「do a chore」最口语随意。",
+      "core": "「被分配必须完成」的规定感——不是自愿选择，而是有边界、有截止的指定工作量",
+      "senses": [
+        {
+          "gloss": "任务、工作（n.）",
+          "logic": "税款→必须完成的规定工作量→任何有边界的工作项",
+          "en": "Breaking the project into smaller tasks made it more manageable.",
+          "zh": "把项目拆成更小的任务，让它更容易推进。"
+        },
+        {
+          "gloss": "委派任务给（v.）",
+          "logic": "动作义：给某人分配规定工作",
+          "en": "The manager tasked each team member with a specific deliverable.",
+          "zh": "经理给每位团队成员分配了具体的交付物。"
+        }
+      ],
+      "derivatives": [
+        {"w": "task force", "gloss": "特遣队；专案小组"},
+        {"w": "multitask", "gloss": "同时处理多项任务"},
+        {"w": "tasker", "gloss": "任务委派者（较罕用）"}
+      ]
+    },
+    {
+      "word": "stick",
+      "hl": "ck",
+      "levels": ["托福"],
+      "ipa": "/stɪk/",
+      "subgroup": "ck",
+      "meaning": "v. 粘住；插入；坚持；卡住  n. 棍，棒",
+      "etymology": "古英语 stician「插、刺」，日耳曼同根，与德语 stechen（刺）同源。「刺入后固定」→ 「粘住」；「坚持不动」→ stick to（坚持）。",
+      "roots": [
+        {"part": "stick（stician）", "meaning": "插入、固定"}
+      ],
+      "phonetics": "st- + ick /ɪk/；ick = 短元音 /ɪ/ + ck，是「短元音 + ck」的典型案例。",
+      "tip": "stick to（坚持）、stick out（突出、显眼）、stick with（与……在一起/坚持用）三个短语托福必备。",
+      "examples": [
+        {
+          "en": "She decided to stick to her original plan despite the pressure.",
+          "zh": "尽管有压力，她还是决定坚持原计划。",
+          "source": "造句"
+        },
+        {
+          "en": "stick out like a sore thumb",
+          "zh": "「格格不入、显眼刺眼」——形容与周围环境极不搭调的高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "adhere", "ipa": "/ədˈhɪər/", "gloss": "粘附；坚守（正式）", "note": "「粘附、坚持」，比 stick 更正式；adhere to principles（坚守原则）"},
+        {"w": "cling", "ipa": "/klɪŋ/", "gloss": "紧附、依附（带情感色彩）", "note": "「紧附、依附」，比 stick 更强调情感上的依附或难以分离；cling to hope（紧抓希望不放）"},
+        {"w": "persist", "ipa": "/pəˈsɪst/", "gloss": "坚持（在困难中）", "note": "「坚持（做某事）」，比 stick to 更正式，多用于学术写作；persist in one's efforts"}
+      ],
+      "antonyms": [
+        {"w": "detach", "note": "分离、取下"},
+        {"w": "abandon", "note": "放弃"}
+      ],
+      "nuance": "stick（to）是口语中最自然的「坚持」，adhere（to）是其正式版本，persist 强调在困难中坚持不懈，cling 暗含一种脆弱的依附感（不肯放手）。粘合义中 stick 最口语，adhere 最书面。",
+      "core": "「刺入后固定不动」的附着感——物理上插入并锁定，引申为不肯脱离、不肯改变",
+      "senses": [
+        {
+          "gloss": "棍、棒（n.）",
+          "logic": "最原始义：可用来插入或敲击的细长物",
+          "en": "The child drew shapes in the mud with a stick.",
+          "zh": "孩子用一根棍子在泥地里画图案。"
+        },
+        {
+          "gloss": "粘住（v.）",
+          "logic": "刺入后固定→表面贴合、不分离",
+          "en": "The label won't stick to the wet bottle.",
+          "zh": "标签粘不住湿瓶子。"
+        },
+        {
+          "gloss": "插入、戳（v.）",
+          "logic": "字面刺入动作",
+          "en": "She stuck a pin into the map to mark the location.",
+          "zh": "她把一枚大头针插进地图，标记那个位置。"
+        },
+        {
+          "gloss": "坚持（v.，stick to）",
+          "logic": "固定不动→不放弃、不改变既定方向",
+          "en": "Stick to the budget no matter how tempting the discounts look.",
+          "zh": "不管折扣多诱人，都要坚守预算。"
+        },
+        {
+          "gloss": "卡住（v.）",
+          "logic": "固定到无法动弹→卡住、受阻",
+          "en": "The drawer is stuck and won't open.",
+          "zh": "抽屉卡住了，打不开。"
+        }
+      ],
+      "derivatives": [
+        {"w": "sticky", "gloss": "粘的；棘手的（a sticky situation 棘手的处境）"},
+        {"w": "sticker", "gloss": "贴纸；粘贴标签"},
+        {"w": "unstick", "gloss": "解除粘连；使脱困"}
+      ]
+    },
+    {
+      "word": "back",
+      "hl": "ck",
+      "levels": ["基础"],
+      "ipa": "/bæk/",
+      "subgroup": "ck",
+      "meaning": "n. 背部；后面  adj. 后面的  adv. 向后；回去  v. 支持；倒退",
+      "etymology": "古英语 bæc「背、后方」，日耳曼同源。核心义是空间上的「后方」，引申为时间上的「之前」（back in time）和支持义（stand behind someone → back someone up）。",
+      "roots": [
+        {"part": "back（bæc）", "meaning": "背、后方"}
+      ],
+      "phonetics": "b + ack /æk/；短元音 /æ/ 后跟 ck，是「短元音 + ck」的基准锚定词。",
+      "tip": "back 的动词义「支持」（back a candidate）和 give back（归还）、step back（后退）、cut back（削减）构成高频短语族。",
+      "examples": [
+        {
+          "en": "The committee backed the proposal with a unanimous vote.",
+          "zh": "委员会以全票通过支持该提案。",
+          "source": "造句"
+        },
+        {
+          "en": "set back / cut back / fall back on",
+          "zh": "「推迟 / 削减 / 退而求其次」——三大托福高频短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "support", "ipa": "/səˈpɔːrt/", "gloss": "支持（正式书面）", "note": "「支持」义的正式版，比 back 更书面；support a policy（支持政策）"},
+        {"w": "endorse", "ipa": "/ɪnˈdɔːrs/", "gloss": "背书、官方认可", "note": "「背书、认可」，比 back 更正式，含权威认证意味；endorse a product（为产品背书）"},
+        {"w": "rear", "ipa": "/rɪər/", "gloss": "后方（名词，正式）", "note": "名词「后方」义的近义词，比 back 更正式；the rear of the building（建筑物后方）"}
+      ],
+      "antonyms": [
+        {"w": "front", "note": "前面、正面"},
+        {"w": "oppose", "note": "反对"}
+      ],
+      "nuance": "back（v.）是口语中支持某人/某事最自然的说法，support 更正式中性，endorse 带有官方认可的权威感，oppose 是 back 在「支持义」上的反义词。",
+      "core": "「身后方向」的后置感——空间的背面/后方，引申为时间上的从前、关系上的背后支持",
+      "senses": [
+        {
+          "gloss": "背部；后面（n.）",
+          "logic": "字面：身体或物体的后侧",
+          "en": "She carried the baby on her back.",
+          "zh": "她把孩子背在背上。"
+        },
+        {
+          "gloss": "向后；回去（adv.）",
+          "logic": "后方方向→朝后移动，或回到原处",
+          "en": "Step back and take a look at the big picture.",
+          "zh": "退一步，看看整体格局。"
+        },
+        {
+          "gloss": "（时间上）之前、往昔（adv.）",
+          "logic": "时间轴上的「后方」就是过去",
+          "en": "Back in the 1980s, mobile phones barely existed.",
+          "zh": "在上世纪八十年代，移动电话几乎不存在。"
+        },
+        {
+          "gloss": "支持（v.）",
+          "logic": "「站在某人背后」→给予支持",
+          "en": "Three major investors backed the startup from day one.",
+          "zh": "三位主要投资者从第一天就支持这家初创企业。"
+        },
+        {
+          "gloss": "倒退、向后移动（v.）",
+          "logic": "朝后方向移动",
+          "en": "He backed the car out of the narrow garage.",
+          "zh": "他把车从狭窄的车库倒了出来。"
+        }
+      ],
+      "derivatives": [
+        {"w": "backtrack", "gloss": "原路返回；撤回（言论）"},
+        {"w": "setback", "gloss": "挫折、阻碍"},
+        {"w": "backbone", "gloss": "脊梁骨；骨气、核心支柱"}
+      ]
+    },
+    {
+      "word": "black",
+      "hl": "ck",
+      "levels": ["基础"],
+      "ipa": "/blæk/",
+      "subgroup": "ck",
+      "meaning": "adj. 黑色的；黑暗的；(咖啡)不加奶的  n. 黑色；黑人  v. 使变黑",
+      "etymology": "古英语 blæc「黑色、暗淡」，日耳曼同根。black 的原始含义是「焦黑、被烧过」——炭的颜色。与之形成对比，blanc（白，法语）同根 blank（空白）表示「无色」。",
+      "roots": [
+        {"part": "black（blæc）", "meaning": "焦黑、暗"}
+      ],
+      "phonetics": "bl- 连缀 /bl/ + ack /æk/；bl 是辅音丛，注意 l 不省略。与 back 的区别仅在辅音丛。",
+      "tip": "black market（黑市）、black hole（黑洞）、blackout（断电/失忆）、black sheep（害群之马）——black 的比喻用法极高频。",
+      "examples": [
+        {
+          "en": "The city suffered a complete blackout after the storm.",
+          "zh": "暴风雨过后，整个城市陷入全面停电。",
+          "source": "造句"
+        },
+        {
+          "en": "black and white / in black and white",
+          "zh": "「黑白分明 / 白纸黑字」——两种高频比喻用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "dark", "ipa": "/dɑːrk/", "gloss": "黑暗的、深色的（广义）", "note": "「黑暗的、深色的」，比 black 范围更广，可指任何深色或缺乏光线"},
+        {"w": "ebony", "ipa": "/ˈebəni/", "gloss": "乌黑（文学用词）", "note": "「乌黑」，文学用词，形容深邃纯正的黑，常形容头发或皮肤"},
+        {"w": "obsidian", "ipa": "/əbˈsɪdiən/", "gloss": "黑曜石般的纯黑（极正式文学）", "note": "「黑曜石般的黑」，极正式的文学描述，指深亮的纯黑"}
+      ],
+      "antonyms": [
+        {"w": "white", "note": "白色"},
+        {"w": "bright", "note": "明亮的"}
+      ],
+      "nuance": "black 是颜色词，在比喻用法中多带负面含义（黑市/停电/不吉利）；dark 比 black 更通用，也可形容情绪（dark mood）；ebony/obsidian 是文学用词，不用于一般描述。",
+      "core": "「焦黑、被烧尽」的暗无感——光线的彻底缺失，引申为隐秘、负面或权力之外的边缘地带",
+      "senses": [
+        {
+          "gloss": "黑色的（adj.，颜色）",
+          "logic": "字面：焦炭的颜色，光线全无",
+          "en": "She wore a black coat against the snow.",
+          "zh": "她在雪中穿着一件黑色大衣。"
+        },
+        {
+          "gloss": "（咖啡）不加奶的（adj.）",
+          "logic": "没有白色（奶/奶油）加入→纯黑",
+          "en": "He drinks his coffee black, no sugar.",
+          "zh": "他喝黑咖啡，不加糖。"
+        },
+        {
+          "gloss": "黑暗的、阴暗的（adj.，比喻）",
+          "logic": "光的缺失→希望/光明的缺失",
+          "en": "The future looked black after the factory closed.",
+          "zh": "工厂关闭后，前途一片黯淡。"
+        },
+        {
+          "gloss": "黑色；黑人（n.）",
+          "logic": "颜色名词化",
+          "en": "The design uses black and gold as its core palette.",
+          "zh": "这个设计以黑金为核心色调。"
+        }
+      ],
+      "derivatives": [
+        {"w": "blackout", "gloss": "停电；（信息）封锁；（记忆）断片"},
+        {"w": "blacklist", "gloss": "黑名单（列入→拒绝往来）"},
+        {"w": "blackmail", "gloss": "勒索（以揭露隐私威胁索取利益）"}
+      ]
+    },
+    {
+      "word": "clock",
+      "hl": "ck",
+      "levels": ["基础"],
+      "ipa": "/klɒk/",
+      "subgroup": "ck",
+      "meaning": "n. 时钟  v. 计时；达到（某速度）",
+      "etymology": "中古拉丁语 clocca「钟」，由敲打声命名——钟的本质是周期性发声。clock in/out（打卡上下班）来自最初用机器记录工人工时。",
+      "roots": [
+        {"part": "clock（clocca）", "meaning": "钟（以声命名）"}
+      ],
+      "phonetics": "cl- /kl/ + ock /ɒk/（英式）或 /ɑːk/（美式）；短元音后 ck 固定搭配。",
+      "tip": "clock in/out（打卡）、around the clock（全天候）、clockwise/counterclockwise（顺/逆时针）是职场和学术高频词。",
+      "examples": [
+        {
+          "en": "The runner clocked 9.8 seconds in the 100-meter sprint.",
+          "zh": "这名跑者在百米冲刺中跑出了9.8秒的成绩。",
+          "source": "造句"
+        },
+        {
+          "en": "work around the clock",
+          "zh": "「日夜不停地工作」——强调24小时连续工作的高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "timepiece", "ipa": "/ˈtaɪmpiːs/", "gloss": "计时器（通称，含手表和时钟）", "note": "「计时器」，正式通称，包含手表和时钟；比 clock 更广义"},
+        {"w": "timer", "ipa": "/ˈtaɪmər/", "gloss": "倒计时器", "note": "「计时器」，强调倒数计时功能，比 clock 更具体"},
+        {"w": "chronicle", "ipa": "/ˈkrɒnɪkl/", "gloss": "编年记录（动词义比喻近义）", "note": "比喻义「记录」——clock 作动词「记录」时与 chronicle（编年记录）有重叠"}
+      ],
+      "antonyms": [],
+      "nuance": "clock 作名词时是最通用的「时钟」，watch 是「手表」（戴在手腕），timer 是倒计时装置；clock 作动词（clocked a speed）是运动报道和技术测试的口语说法，比 measure/record 更生动。",
+      "core": "「周期性敲响」的计量感——以固定节律标记时间流逝，引申为测量速度或记录时长",
+      "senses": [
+        {
+          "gloss": "时钟（n.）",
+          "logic": "字面：周期性发声来标记时间的装置",
+          "en": "The clock on the wall showed half past three.",
+          "zh": "墙上的时钟显示三点半。"
+        },
+        {
+          "gloss": "计时、测速（v.）",
+          "logic": "时钟的功能→用钟来测量某事花了多久或达到多快",
+          "en": "The pitch was clocked at 98 miles per hour.",
+          "zh": "这一投的球速被测定为每小时98英里。"
+        },
+        {
+          "gloss": "打卡记录工时（v.，clock in/out）",
+          "logic": "用钟记录到达和离开时间",
+          "en": "Employees must clock in before 9 a.m.",
+          "zh": "员工必须在上午九点前打卡。"
+        }
+      ],
+      "derivatives": [
+        {"w": "clockwise", "gloss": "顺时针方向"},
+        {"w": "clockwork", "gloss": "钟表机构；像钟表一样精准（like clockwork）"},
+        {"w": "o'clock", "gloss": "……点钟（of the clock 的缩写）"}
+      ]
+    },
+    {
+      "word": "rocket",
+      "hl": "ck",
+      "levels": ["基础"],
+      "ipa": "/ˈrɒkɪt/",
+      "subgroup": "ck",
+      "meaning": "n. 火箭；芝麻叶（蔬菜）  v. 急速上升；猛增",
+      "etymology": "意大利语 rocchetto「纺锤形小物」，指纺线时的梭子形状——火箭的形状就像纺锤。动词义「猛增」是现代比喻：价格/名声像火箭一样蹿升。",
+      "roots": [
+        {"part": "rocket（rocchetto）", "meaning": "纺锤形小物"}
+      ],
+      "phonetics": "rock- /rɒk/（短元音 /ɒ/ + ck）+ et /ɪt/（弱读后缀），重音首音节。",
+      "tip": "「rocket science」（火箭科学）常用于否定句：It's not rocket science.（这又不是什么高深的事。）——口语高频表达。",
+      "examples": [
+        {
+          "en": "House prices in the city have rocketed over the past five years.",
+          "zh": "过去五年，该城市的房价急速飙升。",
+          "source": "造句"
+        },
+        {
+          "en": "rocket to fame / rocket to the top",
+          "zh": "「一夜成名 / 迅速登顶」——比喻义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "skyrocket", "ipa": "/ˈskaɪˌrɒkɪt/", "gloss": "急剧飙升（幅度极大）", "note": "「急剧飙升」，与 rocket（v.）同义，但更强调幅度极大；prices skyrocketed（价格暴涨）"},
+        {"w": "surge", "ipa": "/sɜːrdʒ/", "gloss": "激增、涌现（正式书面）", "note": "「激增、涌现」，比 rocket 更书面，适合正式报道；demand surged after the announcement"},
+        {"w": "soar", "ipa": "/sɔːr/", "gloss": "翱翔、飙升（优雅感）", "note": "「翱翔、飙升」，比 rocket 更文雅，多用于股价、情绪、鸟类飞翔"}
+      ],
+      "antonyms": [
+        {"w": "plummet", "note": "骤降，急速下跌"},
+        {"w": "plunge", "note": "猛跌、急降"}
+      ],
+      "nuance": "rocket/skyrocket 最强调速度快和幅度大（用于极端暴涨）；surge 更书面、更稳重，适合正式新闻；soar 带一种优雅感，也可形容积极的非数字类上升（spirits soared）。",
+      "core": "「纺锤形物体笔直蹿出」的急速感——造型决定命运：又尖又细必然直冲，引申为极速垂直上升",
+      "senses": [
+        {
+          "gloss": "火箭（n.）",
+          "logic": "字面：纺锤形推进器，燃料爆发推动垂直飞升",
+          "en": "The rocket launched successfully and entered orbit within minutes.",
+          "zh": "火箭成功发射，数分钟内进入轨道。"
+        },
+        {
+          "gloss": "急速上升、猛增（v.）",
+          "logic": "像火箭一样快速垂直上升→价格/人气/排名极速飙高",
+          "en": "Demand for electric vehicles has rocketed since the subsidy was introduced.",
+          "zh": "补贴出台后，电动车需求急剧攀升。"
+        },
+        {
+          "gloss": "芝麻叶（蔬菜，n.，英式）",
+          "logic": "形状略似纺锤的窄长叶片（历史偶合，同形异源，不强行串记）",
+          "en": "Add a handful of rocket to the salad for a peppery bite.",
+          "zh": "在沙拉里加一把芝麻叶，带来辛辣口感。"
+        }
+      ],
+      "derivatives": [
+        {"w": "skyrocket", "gloss": "急剧飙升（也作动词）"},
+        {"w": "rocket science", "gloss": "火箭科学（it's not rocket science = 这不是什么难事）"},
+        {"w": "rocketry", "gloss": "火箭技术（学）"}
+      ]
+    },
+    {
+      "word": "school",
+      "hl": "ch",
+      "levels": ["基础"],
+      "ipa": "/skuːl/",
+      "subgroup": "ch",
+      "meaning": "n. 学校；（大学的）学院；派别，流派  v. 训练，培训",
+      "etymology": "希腊语 skholē「闲暇、停歇」——古希腊人认为哲学和学习需要从劳动中脱身，利用闲暇时光思考。skholē → 拉丁语 schola → 英语 school。「有闲暇思考的地方」→ 学校。",
+      "roots": [
+        {"part": "school（skholē）", "meaning": "闲暇、求知之所"}
+      ],
+      "phonetics": "sch = /sk/（希腊借词标志）+ ool /uːl/；注意 sch 不读 /ʃ/（不同于 schematic），而读 /sk/。",
+      "tip": "school 作动词「训练」属高级用法：school oneself in（苦练……）、well-schooled in（受过良好训练的）。",
+      "examples": [
+        {
+          "en": "She had schooled herself to remain calm under pressure.",
+          "zh": "她训练自己在压力下保持冷静。",
+          "source": "造句"
+        },
+        {
+          "en": "school of thought",
+          "zh": "「思想流派」——学术写作极高频表达，指一派学术观点。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "institution", "ipa": "/ˌɪnstɪˈtjuːʃn/", "gloss": "机构（教育或学术，广义）", "note": "「机构」，比 school 更正式广义，可指任何教育或学术机构"},
+        {"w": "academy", "ipa": "/əˈkædəmi/", "gloss": "学院、学会（专业权威）", "note": "「学院、学会」，比 school 更正式，也指专业技能培训机构；military academy（军事学院）"},
+        {"w": "train", "ipa": "/treɪn/", "gloss": "训练（动词义口语近义）", "note": "动词义「训练」的近义词，比 school（v.）更口语通用"}
+      ],
+      "antonyms": [],
+      "nuance": "school 作「流派」义（school of thought/painting）是托福阅读高频用法；academy 强调专业权威；institution 最广义。school（v.）偏书面，强调通过严格练习形成某种能力或习惯，比 teach 更强调内化。",
+      "core": "「有闲暇思考之地」的求知感——从「闲暇」到「专门思考和学习的场所」，再到「聚集一群同思想的人」",
+      "senses": [
+        {
+          "gloss": "学校（n.）",
+          "logic": "「闲暇思考之地」制度化→专门传授知识的机构",
+          "en": "She walked her son to school every morning.",
+          "zh": "她每天早上送儿子上学。"
+        },
+        {
+          "gloss": "（大学的）学院（n.）",
+          "logic": "更小的专业求知单元",
+          "en": "He was accepted into the school of medicine.",
+          "zh": "他被医学院录取。"
+        },
+        {
+          "gloss": "流派、学派（n.）",
+          "logic": "「一群在同一思想环境里的人」→共享某种理论或风格的群体",
+          "en": "The Chicago school of economics favored free-market policies.",
+          "zh": "芝加哥经济学派支持自由市场政策。"
+        },
+        {
+          "gloss": "训练、培育（v.）",
+          "logic": "学校的功能→通过系统练习塑造能力或习惯",
+          "en": "Years of debate had schooled him in the art of persuasion.",
+          "zh": "多年的辩论训练使他精通说服之道。"
+        }
+      ],
+      "derivatives": [
+        {"w": "schooling", "gloss": "学校教育；训练"},
+        {"w": "preschool", "gloss": "学前教育（机构）"},
+        {"w": "scholar", "gloss": "学者（同源，skholē→拉丁 scholaris）"}
+      ]
+    },
+    {
+      "word": "echo",
+      "hl": "ch",
+      "levels": ["基础"],
+      "ipa": "/ˈekoʊ/",
+      "subgroup": "ch",
+      "meaning": "n. 回声；回应；重复  v. 发出回声；重复（观点）",
+      "etymology": "希腊神话 Ēkhō（厄科），是被赫拉惩罚只能重复他人最后几个字的山林女神。她爱上那耳喀索斯（Narcissus），心碎后只剩声音留在山间。echo 这个词由此而来，字面带着「被迫重复」的悲剧意象。",
+      "roots": [
+        {"part": "echo（Ēkhō）", "meaning": "希腊神话回声女神"}
+      ],
+      "phonetics": "ech = /ek/（ch 读 /k/，希腊借词）+ o /oʊ/；两音节，重音首音节。",
+      "tip": "echo chamber（回音壁/信息茧房）是媒体和社会学高频词——只能听到和自己相同声音的封闭环境。",
+      "examples": [
+        {
+          "en": "His words echoed the concerns raised by scientists last year.",
+          "zh": "他的话呼应了科学家去年提出的担忧。",
+          "source": "造句"
+        },
+        {
+          "en": "echo chamber",
+          "zh": "「信息茧房」——只接触与自身立场相同信息的媒体/社会现象，托福社会学阅读高频词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "reverberate", "ipa": "/rɪˈvɜːrbəreɪt/", "gloss": "回响、持续扩散（正式）", "note": "「回响、产生回声」，比 echo 更正式，多用于声音和影响的持续扩散；his words reverberated through history"},
+        {"w": "resonate", "ipa": "/ˈrezəneɪt/", "gloss": "产生共鸣（情感同频）", "note": "「产生共鸣」，比 echo 更强调情感上的同频；the speech resonated with the audience"},
+        {"w": "repeat", "ipa": "/rɪˈpiːt/", "gloss": "重复（中性通用）", "note": "「重复」义的通用词，比 echo 更中性，无声学意象"}
+      ],
+      "antonyms": [
+        {"w": "originate", "note": "原创、发出（而非重复）"}
+      ],
+      "nuance": "echo 强调「被动地重复」（声音被反射/观点被援引），resonate 强调「主动引发共鸣」（听众受到触动），reverberate 强调「持续扩散的影响」——echo 最简洁，reverberate 最正式，resonate 最有情感温度。",
+      "core": "「声音被迫重复」的镜像感——无法创新，只能反射已有之物",
+      "senses": [
+        {
+          "gloss": "回声（n.，物理）",
+          "logic": "字面：声波遇到障碍物反射回来的声音",
+          "en": "Her voice produced a clear echo in the stone hallway.",
+          "zh": "她的声音在石头走廊里产生了清晰的回响。"
+        },
+        {
+          "gloss": "发出回声（v.，物理）",
+          "logic": "空间对声音的重复反射",
+          "en": "The canyon echoed with the sound of rushing water.",
+          "zh": "峡谷中回荡着湍流的声响。"
+        },
+        {
+          "gloss": "呼应、重复（观点/情感，v.）",
+          "logic": "「被迫重复」的镜像感→引述或援引他人之言/之情",
+          "en": "Many economists echoed the president's call for fiscal restraint.",
+          "zh": "许多经济学家呼应了总统关于财政克制的呼吁。"
+        },
+        {
+          "gloss": "（事件/风格上的）回响、历史重演（n.）",
+          "logic": "某一时代的印记被后世「反射」出来",
+          "en": "The new law carries echoes of the wartime restrictions from the 1940s.",
+          "zh": "这部新法律隐约呼应了二十世纪四十年代战时的管制措施。"
+        }
+      ],
+      "derivatives": [
+        {"w": "echoic", "gloss": "回声的；拟声的（语言学术语）"},
+        {"w": "echo chamber", "gloss": "信息茧房；回音壁"},
+        {"w": "echolocation", "gloss": "回声定位（蝙蝠/海豚导航机制）"}
+      ]
+    },
+    {
+      "word": "mechanic",
+      "hl": "ch",
+      "levels": ["托福"],
+      "ipa": "/məˈkænɪk/",
+      "subgroup": "ch",
+      "meaning": "n. 技工，机修工  adj. 机械的（较少用，多用 mechanical）",
+      "etymology": "希腊语 mēkhanikos「擅长机械的」，源自 mēkhanē（机关、装置）。mēkhan- 词根覆盖 mechanic（技工）、mechanism（机制）、mechanical（机械的）整个家族。ch 读 /k/ 是希腊借词的标志。",
+      "roots": [
+        {"part": "mechan- (mēkhanē)", "meaning": "机械、装置"},
+        {"part": "-ic", "meaning": "与……相关的人或事"}
+      ],
+      "phonetics": "me- /mə/（弱读）+ chan /kæn/（ch = /k/，希腊源）+ ic /ɪk/；重音第二音节 -CHAN-。",
+      "tip": "mechanic（人）vs mechanism（机制）vs mechanical（形容词）——ch 在这一家族里始终读 /k/。",
+      "examples": [
+        {
+          "en": "The mechanic diagnosed the engine problem in under ten minutes.",
+          "zh": "技师在不到十分钟内诊断出了发动机故障。",
+          "source": "造句"
+        },
+        {
+          "en": "the mechanics of",
+          "zh": "「……的运作机制/技巧」——mechanics 复数形式常用于抽象；the mechanics of negotiation（谈判技巧）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "technician", "ipa": "/tekˈnɪʃn/", "gloss": "技术员（范围更广，不限机械）", "note": "「技术员」，比 mechanic 更广，不限于机械，可指实验室或IT技术人员"},
+        {"w": "engineer", "ipa": "/ˌendʒɪˈnɪər/", "gloss": "工程师（设计层面，层次更高）", "note": "「工程师」，比 mechanic 层级更高，强调设计和规划能力，不仅限于维修"},
+        {"w": "repairman", "ipa": "/rɪˈpeərmæn/", "gloss": "修理工（口语，不限机械）", "note": "「修理工」，比 mechanic 更口语，不特指机械，可以是家电维修等"}
+      ],
+      "antonyms": [],
+      "nuance": "mechanic 特指机械（尤其是汽车）的维修专业人员；technician 范围更广（医学/IT/实验室）；engineer 强调设计层面，学历和技术层次更高；repairman 最口语，可指任何维修工。",
+      "core": "「擅长操控装置」的实践感——用手和技术驾驭机器，使之正常运转",
+      "senses": [
+        {
+          "gloss": "技工、机修工（n.）",
+          "logic": "字面：擅长操控机械的人",
+          "en": "The mechanic replaced the brake pads in less than an hour.",
+          "zh": "技工不到一小时就换好了刹车片。"
+        },
+        {
+          "gloss": "运作机制、技巧（n. 复数 mechanics）",
+          "logic": "「机械的运转方式」引申为任何系统的运作原理",
+          "en": "Understanding the mechanics of compound interest is essential for investors.",
+          "zh": "理解复利的运作机制对投资者至关重要。"
+        }
+      ],
+      "derivatives": [
+        {"w": "mechanical", "gloss": "机械的；机械式的（缺乏感情）"},
+        {"w": "mechanism", "gloss": "机制；机械装置"},
+        {"w": "mechanics", "gloss": "力学（物理学科）；运作机制（复数）"}
+      ]
+    },
+    {
+      "word": "technical",
+      "hl": "ch",
+      "levels": ["托福"],
+      "ipa": "/ˈteknɪkl/",
+      "subgroup": "ch",
+      "meaning": "adj. 技术的；专业的；（法律/规则）严格意义上的",
+      "etymology": "希腊语 tekhnikos「与技艺相关的」，源自 tekhnē（技艺、工艺）。古希腊人用 tekhnē 指一切需要专门技能的活动，与 logos（理论）相对——tekhnē 是实践，logos 是理论。",
+      "roots": [
+        {"part": "techn- (tekhnē)", "meaning": "技艺、工艺"},
+        {"part": "-ical", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "tech = /tek/（ch = /k/）+ ni + cal，重音首音节 TECH-；注意 ch 读 /k/ 不读 /tʃ/。",
+      "tip": "technical difficulty（技术故障）、technical term（专业术语）、technically speaking（严格来说）——三个高频句式一起记。",
+      "examples": [
+        {
+          "en": "The report uses highly technical language that may be difficult for non-specialists.",
+          "zh": "报告使用了大量专业术语，非专业人士可能难以理解。",
+          "source": "造句"
+        },
+        {
+          "en": "technically speaking / a technical term",
+          "zh": "「严格来说 / 专业术语」——学术写作和演讲两大高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "specialized", "ipa": "/ˈspeʃəlaɪzd/", "gloss": "专门化的（特定领域）", "note": "「专门化的」，比 technical 更强调针对特定领域，不含工程/技术色彩"},
+        {"w": "technological", "ipa": "/ˌteknəˈlɒdʒɪkl/", "gloss": "科技的（现代技术应用）", "note": "「技术的」，特指现代科技应用，比 technical 更侧重科技产品和系统"},
+        {"w": "professional", "ipa": "/prəˈfeʃənl/", "gloss": "专业的（职业规范）", "note": "「专业的」，比 technical 更强调职业规范，不限于工程技术"}
+      ],
+      "antonyms": [
+        {"w": "non-technical", "note": "非技术的、通俗的"},
+        {"w": "general", "note": "通用的、普通的"}
+      ],
+      "nuance": "technical 指需要专门技能或知识（technical skills），technological 特指现代科技相关（technological innovation），specialized 强调针对特定细分领域（specialized knowledge）。「technical」还有「严格意义上」的特殊用法：technically, he was right（严格来说他是对的）。",
+      "core": "「需要专门技艺才能驾驭」的门槛感——外行看不懂、只有掌握该技艺的人才能理解或操作",
+      "senses": [
+        {
+          "gloss": "技术的、工程相关的（adj.）",
+          "logic": "字面：属于某种专门技艺领域的",
+          "en": "The project ran into several technical problems during the testing phase.",
+          "zh": "项目在测试阶段遭遇了数个技术问题。"
+        },
+        {
+          "gloss": "专业的、术语性的（adj.）",
+          "logic": "「专门技艺」的语言→只有内行才懂的专业表达",
+          "en": "The manual is too technical for the average user to follow.",
+          "zh": "这本手册对普通用户来说太专业，难以理解。"
+        },
+        {
+          "gloss": "严格意义上的（adj.，法律/规则语境）",
+          "logic": "「按照精确规则」→依照法律或条款的字面定义",
+          "en": "Technically, the contract expired at midnight, so no party is bound by it.",
+          "zh": "严格来说，合同在午夜到期，因此各方均不再受其约束。"
+        }
+      ],
+      "derivatives": [
+        {"w": "technically", "gloss": "从技术上讲；严格来说"},
+        {"w": "technicality", "gloss": "技术细节；（法律上的）程序瑕疵"},
+        {"w": "technique", "gloss": "技巧、手法（同源 tekhnē）"}
+      ]
+    },
+    {
+      "word": "stomach",
+      "hl": "ch",
+      "levels": ["基础"],
+      "ipa": "/ˈstʌmək/",
+      "subgroup": "ch",
+      "meaning": "n. 胃；腹部；忍受力  v. 忍受，容忍",
+      "etymology": "希腊语 stomakhos「食道、胃」，源自 stoma（口）——stomach 字面是「有口的器官」。ch 在此读 /k/，是希腊借词最清晰的特征之一。",
+      "roots": [
+        {"part": "stom- (stoma)", "meaning": "口、开口"},
+        {"part": "-ach (akhos)", "meaning": "管道、通道"}
+      ],
+      "phonetics": "stom- /stʌm/ + ach /ək/（ch = /k/，希腊源，词尾弱读）；注意 ch 绝不读 /tʃ/。",
+      "tip": "stomach（v.）表示「忍受」时多用于否定：I can't stomach his arrogance.（我无法忍受他的傲慢。）——口语中比 tolerate 更生动。",
+      "examples": [
+        {
+          "en": "She couldn't stomach the idea of going back to that job.",
+          "zh": "她无法忍受回到那份工作的想法。",
+          "source": "造句"
+        },
+        {
+          "en": "have the stomach for",
+          "zh": "「有胆量做……」——stomach 用于意志力的比喻；He doesn't have the stomach for confrontation.（他没有勇气正面冲突。）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "tolerate", "ipa": "/ˈtɒləreɪt/", "gloss": "容忍（正式书面）", "note": "「容忍」，动词义最正式，比 stomach 更书面；tolerate criticism（接受批评）"},
+        {"w": "endure", "ipa": "/ɪnˈdjʊər/", "gloss": "忍受（长时间痛苦）", "note": "「忍受（困难/痛苦）」，比 stomach 更强调长时间承受，多用于苦难"},
+        {"w": "bear", "ipa": "/beər/", "gloss": "忍受（口语通用）", "note": "「忍受」，口语最通用；I can't bear it any longer.（我再也受不了了。）"}
+      ],
+      "antonyms": [
+        {"w": "enjoy", "note": "享受"},
+        {"w": "relish", "note": "津津有味地享受"}
+      ],
+      "nuance": "stomach（v.）最强调「勉强消化/难以接受」，常与否定连用，带强烈的厌恶感；tolerate 比较中性，强调忍而不发；endure 强调时间长且痛苦；bear 最口语，可用于任何忍受场景。",
+      "core": "「有口的消化器官」的接纳感——胃负责接收并处理食物，引申为内心接受（或无法接受）某事的能力",
+      "senses": [
+        {
+          "gloss": "胃；腹部（n.，身体部位）",
+          "logic": "字面：消化食物的「有口器官」",
+          "en": "She felt a knot in her stomach before the interview.",
+          "zh": "面试前她感到胃里一阵紧缩。"
+        },
+        {
+          "gloss": "忍受力；胆量（n.，比喻）",
+          "logic": "胃能消化→内心能「消化」某种经历→忍受、承受能力",
+          "en": "Not everyone has the stomach for high-pressure trading environments.",
+          "zh": "不是每个人都能承受高压交易环境。"
+        },
+        {
+          "gloss": "忍受、容忍（v.）",
+          "logic": "「让胃把它消化掉」→（勉强）接受、不排斥",
+          "en": "I simply can't stomach dishonesty in a business partner.",
+          "zh": "我实在无法忍受商业伙伴的不诚实。"
+        }
+      ],
+      "derivatives": [
+        {"w": "stomachache", "gloss": "胃痛、腹痛"},
+        {"w": "stomachic", "gloss": "健胃的（医学用词）"},
+        {"w": "stoma", "gloss": "（植物）气孔；（医学）造口（同源词根）"}
+      ]
+    }
+  ]
+}

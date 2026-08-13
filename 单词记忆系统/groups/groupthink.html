@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>群体思维 · 阅读精读 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  /* 精读 · 文章 + 句法分析 */
+  .passage{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+    border-radius:14px;padding:18px 20px;margin:0 0 22px}
+  .passage h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
+  .passage .p-title{font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--ink);margin-bottom:10px}
+  .passage p{font-size:15px;line-height:1.9;margin:10px 0}
+  .passage .en{color:#3a332b;font-family:Georgia,"Times New Roman",serif}
+  .passage .zh{color:var(--muted);font-size:13.5px}
+  .passage .kw{cursor:pointer;color:var(--accent);font-weight:600;border-bottom:1px dotted var(--accent2)}
+  .readall{background:var(--accent);color:#fff;border:none;border-radius:20px;padding:4px 14px;font-size:13px;
+    cursor:pointer;margin-left:10px;vertical-align:middle;transition:.15s}
+  .readall:hover{background:var(--core)}
+  .sents{background:linear-gradient(135deg,#f3f8f6,#eef3f0);border:1px solid var(--line);
+    border-radius:14px;padding:18px 20px;margin:0 0 22px}
+  .sents h2{margin:0 0 6px;font-size:18px;color:var(--core)}
+  .sents .s-sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+  .sent{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+  .sent .s-en{font-family:Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.7;cursor:pointer;color:#3a332b}
+  .sent .s-en:hover{color:var(--accent)}
+  .sent .s-zh{color:var(--muted);font-size:13.5px;margin:6px 0 10px}
+  .sent .s-parts{display:flex;flex-wrap:wrap;gap:6px}
+  .spart{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:4px 9px;font-size:13px;line-height:1.4}
+  .spart .st{font-family:Georgia,serif;font-weight:600}
+  .spart .sr{font-size:11px;color:#fff;border-radius:5px;padding:0 5px;white-space:nowrap}
+  .spart .sn{font-size:12px;color:var(--muted)}
+  .snotes{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:13px;color:#5f574c}
+  .snotes b{color:var(--accent)}
+  /* 句子内括号标注 */
+  .s-flow{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:2.1;cursor:pointer;color:#3a332b;padding:2px 0}
+  .s-flow:hover{color:var(--accent)}
+  .brkbox{border-radius:4px;padding:1px 1px;transition:.15s}
+  .brk{font-weight:700;font-size:17px;padding:0 1px}
+  .say-mini{background:none;border:none;cursor:pointer;font-size:15px;padding:0 4px;vertical-align:middle}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div id="passage"></div>
+  <div id="sents"></div>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "groupthink", "combo": "groupthink", "title": "群体思维 · 阅读精读", "sound": "", "subtitle": "The Concept of Groupthink", "intro": "托福阅读精读页：以《The Concept of Groupthink》（群体思维的概念）为精读原文，逐句拆解长难句的语法结构，并把文中的核心学术词汇（心理学、社会学高频词）抽出来做成完整拆解卡片。精读原文 + 句法分析 + 词汇卡片三层联动。", "subgroups": [{"key": "verbs", "tag": "动词", "label": "⚡ 动词 Verbs", "desc": "文章中的核心动词，多为描述「群体如何做决策」的高频学术词。"}, {"key": "nouns", "tag": "名词", "label": "📦 名词 Nouns", "desc": "文章中的核心名词，承载心理/社会学概念。"}, {"key": "modifiers", "tag": "形容词·副词", "label": "🎨 形容词·副词 Modifiers", "desc": "修饰词，决定语义的精确程度，填词题常考。"}], "passage": {"title": "The Concept of Groupthink", "paragraphs": [{"en": "Groupthink is a psychological phenomenon that occurs within a group of people where the desire for harmony or conformity results in an irrational or dysfunctional decision-making outcome.", "zh": "群体思维是一种心理现象，它发生在一群人内部——当群体追求和谐或一致时，反而会导致非理性或功能失调的决策结果。", "kws": ["phenomenon", "harmony", "conformity", "irrational", "dysfunctional"]}, {"en": "Coined by social psychologist Irving Janis, the term describes situations in which group members avoid promoting viewpoints outside the collective comfort zone.", "zh": "这一术语由社会心理学家欧文·贾尼斯创造，用以描述这样的情境：群体成员避免提出超出集体「舒适区」之外的观点。", "kws": ["coined", "describes", "viewpoints"]}, {"en": "To preserve group unity, dissent is suppressed, and alternative solutions are not adequately considered.", "zh": "为了维护群体团结，异议被压制，替代方案也得不到充分考量。", "kws": ["preserve", "unity", "dissent", "suppressed", "alternative", "adequately"]}, {"en": "This often leads to groups failing to critically evaluate their assumptions, overlooking potential risks, and consequently making flawed decisions.", "zh": "这常常导致群体未能批判性地评估自身假设、忽视潜在风险，并最终做出有缺陷的决策。", "kws": ["evaluate", "assumptions", "overlooking", "potential", "flawed"]}, {"en": "Historical examples of policy fiascos are often analyzed through the lens of groupthink.", "zh": "历史上政策惨败的案例，常被通过「群体思维」的视角来分析。", "kws": ["fiascos", "lens"]}]}, "sentences": [{"en": "Groupthink is a psychological phenomenon that occurs within a group of people where the desire for harmony or conformity results in an irrational or dysfunctional decision-making outcome.", "zh": "群体思维是一种心理现象，它发生在一群人内部——当群体追求和谐或一致时，反而会导致非理性或功能失调的决策结果。", "parts": [{"t": "Groupthink", "r": "主语", "n": "专有名词"}, {"t": "is", "r": "谓语", "n": "系动词 be"}, {"t": "a psychological phenomenon", "r": "宾语", "n": "表语（名词短语）"}, {"t": "that occurs within a group of people", "r": "从句", "n": "that 引导的定语从句，修饰 phenomenon"}, {"t": "where the desire ... results in ... outcome", "r": "从句", "n": "where 引导的定语从句，进一步说明 group 内部的情况"}], "note": "<b>双重定语从句<\/b>：phenomenon 后面连着两个定语从句——that occurs ... 和 where ...。that 从句说明「它在哪里发生」，where 从句说明「群体内部发生了什么结果」。读主干：Groupthink is a phenomenon，其余都是修饰。", "flow": [{"t": "Groupthink is a psychological phenomenon ", "k": "core"}, {"open": "cl"}, {"t": "that occurs "}, {"open": "pp"}, {"t": "within a group of people "}, {"close": "pp"}, {"close": "cl"}, {"open": "cl"}, {"t": "where the desire "}, {"open": "pp"}, {"t": "for harmony or conformity"}, {"close": "pp"}, {"t": " results ", "k": "core"}, {"open": "pp"}, {"t": "in an irrational or dysfunctional decision-making outcome."}, {"close": "pp"}, {"close": "cl"}]}, {"en": "Coined by social psychologist Irving Janis, the term describes situations in which group members avoid promoting viewpoints outside the collective comfort zone.", "zh": "这一术语由社会心理学家欧文·贾尼斯创造，用以描述这样的情境：群体成员避免提出超出集体「舒适区」之外的观点。", "parts": [{"t": "Coined by social psychologist Irving Janis", "r": "状语", "n": "过去分词短语作状语，逻辑主语是 the term"}, {"t": "the term", "r": "主语", "n": "名词短语"}, {"t": "describes", "r": "谓语", "n": "及物动词"}, {"t": "situations", "r": "宾语", "n": "名词"}, {"t": "in which group members avoid promoting viewpoints ...", "r": "从句", "n": "介词+which 引导的定语从句，修饰 situations"}], "note": "<b>过去分词作状语<\/b>：Coined by ... 开头不是谓语，是修饰 the term 的非谓语结构，等于 The term was coined by ...。读法：先抓主干 the term describes situations，再理解 in which ... 从句说明这些 situations 是什么样。", "flow": [{"open": "nf"}, {"t": "Coined by social psychologist Irving Janis"}, {"close": "nf"}, {"t": ", the term describes situations ", "k": "core"}, {"open": "cl"}, {"t": "in which group members avoid promoting viewpoints "}, {"open": "pp"}, {"t": "outside the collective comfort zone."}, {"close": "pp"}, {"close": "cl"}]}, {"en": "To preserve group unity, dissent is suppressed, and alternative solutions are not adequately considered.", "zh": "为了维护群体团结，异议被压制，替代方案也得不到充分考量。", "parts": [{"t": "To preserve group unity", "r": "状语", "n": "不定式作目的状语（为了…）"}, {"t": "dissent is suppressed", "r": "主句1", "n": "被动语态：异议被压制"}, {"t": "and alternative solutions are not adequately considered", "r": "主句2", "n": "and 连接的并列句，同样是被动语态"}], "note": "<b>不定式作目的状语<\/b>：To preserve ... = In order to preserve ...（为了维护）。后面 and 连接两个并列的被动句。读法：目的 + 结果1 + 结果2，逻辑链清晰。", "flow": [{"open": "nf"}, {"t": "To preserve group unity"}, {"close": "nf"}, {"t": ", dissent is suppressed, and alternative solutions are not adequately considered.", "k": "core"}]}, {"en": "This often leads to groups failing to critically evaluate their assumptions, overlooking potential risks, and consequently making flawed decisions.", "zh": "这常常导致群体未能批判性地评估自身假设、忽视潜在风险，并最终做出有缺陷的决策。", "parts": [{"t": "This", "r": "主语", "n": "指代上一句的情况"}, {"t": "often leads to", "r": "谓语", "n": "lead to + 动名词"}, {"t": "groups failing to critically evaluate their assumptions", "r": "宾语", "n": "动名词复合结构（groups + failing）"}, {"t": "overlooking potential risks", "r": "状语", "n": "现在分词短语，与 failing 并列"}, {"t": "and consequently making flawed decisions", "r": "状语", "n": "现在分词短语，第三个并列成分"}], "note": "<b>三个并列的非谓语<\/b>：failing ... , overlooking ... , making ... 三个动名词/现在分词短语并列，共同作 lead to 的宾语补足语，描述「群体最终做了什么」。读法：leads to [1] + [2] + [3]，三者并列。", "flow": [{"t": "This often leads to groups ", "k": "core"}, {"open": "nf"}, {"t": "failing to critically evaluate their assumptions"}, {"close": "nf"}, {"t": ", ", "k": "core"}, {"open": "nf"}, {"t": "overlooking potential risks"}, {"close": "nf"}, {"t": ", and consequently ", "k": "core"}, {"open": "nf"}, {"t": "making flawed decisions"}, {"close": "nf"}, {"t": ".", "k": "core"}]}, {"en": "Historical examples of policy fiascos are often analyzed through the lens of groupthink.", "zh": "历史上政策惨败的案例，常被通过「群体思维」的视角来分析。", "parts": [{"t": "Historical examples", "r": "主语", "n": "名词短语"}, {"t": "of policy fiascos", "r": "定语", "n": "介词短语，修饰 examples"}, {"t": "are often analyzed", "r": "谓语", "n": "被动语态"}, {"t": "through the lens of groupthink", "r": "状语", "n": "介词短语，表方式（通过…视角）"}], "note": "<b>through the lens of ...<\/b> 是学术写作高频比喻：把「群体思维」比作一副透镜，透过它来分析案例。被动语态 are analyzed 强调「案例被分析」。", "flow": [{"t": "Historical examples ", "k": "core"}, {"open": "pp"}, {"t": "of policy fiascos"}, {"close": "pp"}, {"t": " are often analyzed ", "k": "core"}, {"open": "pp"}, {"t": "through the lens of groupthink"}, {"close": "pp"}, {"t": ".", "k": "core"}]}], "words": [{"word": "phenomenon", "levels": ["六级", "托福"], "ipa": "/fəˈnɑːmɪnən/", "subgroup": "nouns", "meaning": "n. 现象；非凡的人/事物", "etymology": "来自希腊语 phainomenon「显现出来的东西」，词根 phain- 表示「显现、让看见」。古希腊人抬头观察星空，把看得见的天文奇观统称 phainomena。同源词：phantom（幻影）、fantasy（幻想）、diaphanous（透明的）。", "roots": [{"part": "phain-/phen", "meaning": "显现、让看见"}, {"part": "-omenon", "meaning": "名词后缀，被显现之物"}], "phonetics": "重音在第二音节 /fəˈnɑːmɪnən/，开头 phen- 弱读为 /fə/ 不读 /fen/。复数 phenomena /fəˈnɑːmɪnə/，别把单复数混用。", "tip": "「显现出来的东西」= 现象。看见 phantom 幻影，你就懂 phen- 是「显现」。", "examples": [{"en": "A rainbow is a natural phenomenon caused by light refraction.", "zh": "彩虹是由光的折射引起的一种自然现象。", "source": "造句"}, {"en": "a widespread social phenomenon", "zh": "一个广泛的社会现象", "source": "高频搭配"}], "synonyms": [{"w": "occurrence", "ipa": "/əˈkɜːrəns/", "gloss": "发生的事，事件", "note": "泛指「发生」，不强调现象的规律性"}, {"w": "event", "ipa": "/ɪˈvent/", "gloss": "事件", "note": "单次具体事件，phenomenon 强调可观察的普遍现象"}], "antonyms": [{"w": "noumenon", "note": "本体（哲学上与现象相对的自在之物）"}], "nuance": "phenomenon 强调「可被观察到的、有规律的外在表现」；event/occurrence 只是「一次发生的事情」。可以说 a rare phenomenon（罕见现象），却无法用 a rare event 表达同样的「规律性」意味。", "core": "一幅你抬头望天、亲眼看见流星划过夜空的画面——那是「显现」在你眼前、可以被观察和记录下来的东西。", "senses": [{"gloss": "n. 现象", "logic": "核心是「显现之物」，从「看得见的表象」引申为任何可观察、可研究的事实或事件。", "en": "Climate change is a global phenomenon that affects every country.", "zh": "气候变化是一种影响每个国家的全球性现象。"}, {"gloss": "n. 非凡的人/事物", "logic": "由「引人注目的显现」引申——特别突出、让人眼前一亮的人或事。", "en": "The young pianist was hailed as a phenomenon.", "zh": "这位年轻的钢琴家被誉为奇才。"}], "derivatives": [{"w": "phenomenal", "gloss": "adj. 非凡的，惊人的"}, {"w": "phenomenology", "gloss": "n. 现象学"}]}, {"word": "conformity", "levels": ["托福"], "ipa": "/kənˈfɔːrməti/", "subgroup": "nouns", "meaning": "n. 遵从，一致；符合", "etymology": "来自拉丁语 conformare「使成形、使一致」，con-「共同」+ form「形状」。最早指「把东西压进同一个模子」，后引申为「思想行为跟随大众」。同源词：conform（遵从）、form（形状）、formulate（制定）。", "roots": [{"part": "con-", "meaning": "共同、一起"}, {"part": "form", "meaning": "形状、模式"}, {"part": "-ity", "meaning": "名词后缀，表性质"}], "phonetics": "重音在第二音节 /kənˈfɔːrməti/，form 读 /fɔːrm/，-ity 读 /əti/ 弱读。别和 confirm /kənˈfɜːrm/（确认）混淆。", "tip": "con-「一起」+ form「形状」= 大家都被捏成同一个形状，就是「从众」。", "examples": [{"en": "The pressure for conformity in the workplace can stifle creativity.", "zh": "职场中对一致性的压力会扼杀创造力。", "source": "造句"}, {"en": "conformity to social norms", "zh": "对社会规范的遵从", "source": "高频搭配"}], "synonyms": [{"w": "compliance", "ipa": "/kəmˈplaɪəns/", "gloss": "顺从，服从", "note": "强调「照做」的行为，偏被动服从规则"}, {"w": "uniformity", "ipa": "/ˌjuːnɪˈfɔːrməti/", "gloss": "一致性，千篇一律", "note": "强调「外表都一样」，不涉及主动跟随心理"}], "antonyms": [{"w": "nonconformity", "note": "不从众，不墨守成规"}, {"w": "individuality", "note": "个性，独特性"}], "nuance": "conformity 偏「心理上的从众、跟随集体」，有主动趋同意味；compliance 偏「被要求后照做」的服从；uniformity 只是「结果上长一样」，没有心理动机。", "core": "一群人站成一排，身体不由自主地都往同一个方向微微倾斜、像被同一个模子压出来的画面——不敢站直，只想和大家一个样。", "senses": [{"gloss": "n. 遵从，一致", "logic": "核心是「压进同一个模子」，从「形状一致」引申为「思想行为上跟随大众、保持一致」。", "en": "Conformity is strongest when the group is unanimous.", "zh": "当群体意见一致时，从众心理最强。"}, {"gloss": "n. 符合", "logic": "同一逻辑用在物上——「与某个标准、规范形状吻合」即「符合」。", "en": "The product is in conformity with safety standards.", "zh": "该产品符合安全标准。"}], "derivatives": [{"w": "conform", "gloss": "v. 遵从，符合"}, {"w": "conformist", "gloss": "n. 墨守成规者"}]}, {"word": "irrational", "levels": ["托福"], "ipa": "/ɪˈræʃənl/", "subgroup": "modifiers", "meaning": "adj. 不理性的，无理性的", "etymology": "拉丁语 irrationalis「没有理性的」，ir-（in- 的变体，表否定）+ rational（有理性的）。rational 又来自 ratio「计算、比例、理性」。同源词：rational（理性的）、ratio（比例）、ration（定量配给）。", "roots": [{"part": "ir-", "meaning": "否定前缀（in- 在 r 前变体）"}, {"part": "ration", "meaning": "理性、计算"}, {"part": "-al", "meaning": "形容词后缀"}], "phonetics": "/ɪˈræʃənl/，重音在第二音节，注意 ration 里 ti 读 /ʃ/ 不读 /t/。ir- 读短音 /ɪ/。", "tip": "ir-「不」+ rational「理性」= 不讲理、算不清账。", "examples": [{"en": "Her fear of flying is completely irrational.", "zh": "她对飞行的恐惧完全不理性。", "source": "造句"}, {"en": "an irrational decision", "zh": "一个非理性的决定", "source": "高频搭配"}], "synonyms": [{"w": "unreasonable", "ipa": "/ʌnˈriːznəbl/", "gloss": "不合理的，不讲道理的", "note": "强调「不合道理」、令人难以接受"}, {"w": "illogical", "ipa": "/ɪˈlɑːdʒɪkl/", "gloss": "不合逻辑的", "note": "强调「推理链条断裂」"}], "antonyms": [{"w": "rational", "note": "理性的"}], "nuance": "irrational 强调「缺乏理性、凭情绪冲动」；illogical 强调「逻辑上说不通」；unreasonable 强调「不讲道理、过分」。一个人可以 logical 却仍 irrational（推理严谨却基于错误前提）。", "core": "一个人明明怕得要死，却非要半夜点着蜡烛数硬币、认定这样就能挡住坏运气的画面——情绪盖过了算得清的账。", "senses": [{"gloss": "adj. 不理性的，无理性的", "logic": "核心是「算不清账」，由「理性=计算」引申为「行为不按理性计算、受情绪驱动」。", "en": "Selling all your stocks during a panic is an irrational move.", "zh": "恐慌时抛售所有股票是一种不理性的行为。"}], "derivatives": [{"w": "rational", "gloss": "adj. 理性的"}, {"w": "rationality", "gloss": "n. 理性"}, {"w": "irrationally", "gloss": "adv. 不理性地"}]}, {"word": "dysfunctional", "levels": ["托福"], "ipa": "/dɪsˈfʌŋkʃənl/", "subgroup": "modifiers", "meaning": "adj. 功能失调的", "etymology": "dis-「坏的、相反」+ functional（起作用的）。function 来自拉丁语 fungi「执行、履行职责」，原指「机器/器官正常运转」。20 世纪心理学术语，用于形容家庭/系统「运转失灵」。同源词：function（功能）、functional（功能的）、malfunction（故障）。", "roots": [{"part": "dys-", "meaning": "坏的、失调的"}, {"part": "function", "meaning": "功能、运转"}, {"part": "-al", "meaning": "形容词后缀"}], "phonetics": "/dɪsˈfʌŋkʃənl/，重音在第二音节 fʌŋk。注意 dys- 读 /dɪs/，function 的 c 读 /k/ 不是 /s/。", "tip": "dys-「坏」+ function「功能」= 功能坏掉了、转不起来。dys- 家族：dystopia（反乌托邦）、dyslexia（阅读障碍）。", "examples": [{"en": "He grew up in a dysfunctional family.", "zh": "他在一个功能失调的家庭里长大。", "source": "造句"}, {"en": "a dysfunctional system", "zh": "一个运转失灵的系统", "source": "高频搭配"}], "synonyms": [{"w": "malfunctioning", "ipa": "/ˌmælˈfʌŋkʃənɪŋ/", "gloss": "发生故障的", "note": "偏指机器、设备「出故障」，不用于人、家庭"}, {"w": "broken", "ipa": "/ˈbroʊkən/", "gloss": "损坏的", "note": "强调「坏掉、无法使用」，口语化"}], "antonyms": [{"w": "functional", "note": "正常运转的"}], "nuance": "dysfunctional 强调「还在转、但运转不良、起不到应有作用」；broken 是「彻底坏了、不能用了」。一个家庭可以 dysfunctional（成员关系扭曲但仍维持），却不说 broken family 表达同一学术含义。", "core": "一台机器零件都在、通着电、嗡嗡响，但齿轮互相咬合不到一起、空转冒烟的画面——没彻底停，可已经干不了正事。", "senses": [{"gloss": "adj. 功能失调的", "logic": "核心是「运转失灵」，由「机器空转」引申为「系统、组织、关系表面存在但无法正常发挥功能」。", "en": "The committee became dysfunctional because no one could make a decision.", "zh": "这个委员会变得功能失调，因为没人能做出决定。"}], "derivatives": [{"w": "dysfunction", "gloss": "n. 功能失调"}, {"w": "functional", "gloss": "adj. 功能的，起作用的"}, {"w": "malfunction", "gloss": "v./n. 故障，失灵"}]}, {"word": "harmony", "levels": ["六级", "托福"], "ipa": "/ˈhɑːrməni/", "subgroup": "nouns", "meaning": "n. 和谐，融洽；一致", "etymology": "希腊语 harmonia「接合、配合」，本义是「把木料接合成器、把弦调到一起」。古希腊神话里 Harmonia 是和谐女神（战神 Ares 与爱神 Aphrodite 之女）。后指音乐「和声」再到「人际融洽」。同源词：harmonic（和声的）、harmonica（口琴）、harmonious（和谐的）。", "roots": [{"part": "harmon", "meaning": "接合、配合"}, {"part": "-y", "meaning": "名词后缀"}], "phonetics": "/ˈhɑːrməni/，重音在首音节，ar 读 /ɑːr/。注意开头的 h 要发音，别省掉读成 armony。", "tip": "想象几根弦被调到一起、同时拨动发出悦耳和声——harmony 就是「合到一起很好听」。", "examples": [{"en": "The team works in perfect harmony.", "zh": "这个团队配合得十分融洽。", "source": "造句"}, {"en": "in harmony with nature", "zh": "与自然和谐相处", "source": "高频搭配"}], "synonyms": [{"w": "accord", "ipa": "/əˈkɔːrd/", "gloss": "一致，融洽", "note": "偏正式，强调意见「合得来」"}, {"w": "concord", "ipa": "/ˈkɑːŋkɔːrd/", "gloss": "和谐，和睦", "note": "文学、正式语体，强调彼此没有冲突"}], "antonyms": [{"w": "discord", "note": "不和，冲突"}, {"w": "conflict", "note": "冲突"}], "nuance": "harmony 强调「差异并存却配合得当」的积极融洽；accord 偏「意见达成一致」；concord 更正式、偏「没有摩擦」。核心区别：harmony 有「多声部共存」的音乐意象，不是简单「同意」。", "core": "几根音高不同的弦被调准，同时一拨，声音不打架、融成一段悦耳的和声——不同，却合得很好听。", "senses": [{"gloss": "n. 和谐，融洽", "logic": "核心是「不同声音合在一起好听」，由音乐和声引申为「人与人、物与物配合得当、相安无事」。", "en": "They lived in harmony with their neighbors.", "zh": "他们与邻居相处融洽。"}, {"gloss": "n. 一致", "logic": "由「和声协调」引申为「意见、观点协调一致、不冲突」。", "en": "Their ideas were in harmony with the overall plan.", "zh": "他们的想法与整体计划一致。"}], "derivatives": [{"w": "harmonious", "gloss": "adj. 和谐的，融洽的"}, {"w": "harmonize", "gloss": "v. 使和谐，协调"}, {"w": "harmonic", "gloss": "adj. 和声的"}]}, {"word": "coin", "levels": ["托福"], "ipa": "/kɔɪn/", "subgroup": "verbs", "meaning": "v. 创造（新词）；杜撰 n. 硬币", "etymology": "名词 coin 来自拉丁语 cuneus「楔子」，因古罗马铸币用楔形模具冲压金属而得名（cuneiform 楔形文字同源）。动词义「创造新词」是 16 世纪起的隐喻延伸：像铸币一样把新词「铸造」出来。同源词：cuneiform（楔形的）、coiner（造词者）。", "roots": [{"part": "coin", "meaning": "楔子→铸币→铸造（新词）"}], "phonetics": "/kɔɪn/，单音节，oi 读 /ɔɪ/（和 boy、toy 一样）。别读成 /kəʊn/（那是 cone 圆锥）。", "tip": "铸币厂「铛」地一声把金属压成硬币，脑子「铛」地一下造出个新词——都是「铸造」。", "examples": [{"en": "The scientist coined the term 'black hole'.", "zh": "这位科学家创造了「黑洞」一词。", "source": "造句"}, {"en": "coin a phrase", "zh": "造一个新说法", "source": "高频搭配"}], "synonyms": [{"w": "invent", "ipa": "/ɪnˈvent/", "gloss": "发明，创造", "note": "泛指「发明」，可指物或方法"}, {"w": "mint", "ipa": "/mɪnt/", "gloss": "铸造（硬币）", "note": "本义「铸币」，引申为「制造出新词」，较少用"}], "antonyms": [{"w": "borrow", "note": "借用（不新造）"}], "nuance": "coin 作动词专指「创造新词、新说法」，对象是语言；invent 对象是实物或方法。coin a word 是固定搭配，不能用 invent a word 表达「创造词」的正式学术语气。", "core": "铸币机「铛」地一声，把一块软软的金属压成一个带字的新硬币——新词也是这样，被脑子「压」出来、从此流通。", "senses": [{"gloss": "n. 硬币", "logic": "本义：楔形模具冲压出的金属钱币。", "en": "He tossed a coin to decide who would go first.", "zh": "他抛硬币决定谁先走。"}, {"gloss": "v. 创造（新词），杜撰", "logic": "隐喻延伸：像铸币一样「铸造」出从未有过的新词、新说法，让它进入语言流通。", "en": "Irving Janis coined the term 'groupthink'.", "zh": "欧文·贾尼斯创造了「群体思维」一词。"}], "derivatives": [{"w": "coinage", "gloss": "n. 造词，新造的词"}, {"w": "coiner", "gloss": "n. 造词者"}]}, {"word": "preserve", "levels": ["六级", "托福"], "ipa": "/prɪˈzɜːrv/", "subgroup": "verbs", "meaning": "v. 保持，维护；保护；保存；腌渍", "etymology": "拉丁语 praeservare「提前守护」，pre-/prae-「提前」+ servare「看守、保存」。servare 是「serv- 守护」大家族：observe（观察）、reserve（保留）、conserve（保护）。同源词：reserve（储备）、observe（观察）、servant（仆人）。", "roots": [{"part": "pre-", "meaning": "提前、预先"}, {"part": "serv", "meaning": "看守、保存"}], "phonetics": "/prɪˈzɜːrv/，重音在第二音节，注意 pre- 弱读为 /prɪ/ 而非 /priː/。-serve 读 /zɜːrv/，s 浊化为 /z/。", "tip": "pre-「提前」+ serv「看守」= 提前看护好，别让它坏掉。", "examples": [{"en": "The organization works to preserve historic buildings.", "zh": "该组织致力于保护历史建筑。", "source": "造句"}, {"en": "preserve peace", "zh": "维护和平", "source": "高频搭配"}], "synonyms": [{"w": "conserve", "ipa": "/kənˈsɜːrv/", "gloss": "保护，节约", "note": "强调「省着用、不浪费」，用于资源"}, {"w": "maintain", "ipa": "/meɪnˈteɪn/", "gloss": "维持，保养", "note": "强调「保持现状、持续维护"}, {"w": "protect", "ipa": "/prəˈtekt/", "gloss": "保护", "note": "强调「挡开伤害」"}], "antonyms": [{"w": "destroy", "note": "破坏"}, {"w": "neglect", "note": "忽视，不照管"}], "nuance": "preserve 强调「保持原样、不让变质/损坏」；conserve 强调「省着用、防止耗尽」；protect 强调「挡住外部威胁」。preserve food（防腐保鲜）vs conserve energy（节约能源）。", "core": "一罐蜜饯，玻璃瓶里泡着完好的水果，被密封起来、挡着空气和细菌，好多年后还是当初的模样。", "senses": [{"gloss": "v. 保持，维护", "logic": "核心是「提前守护、不让变样」，由「保存食物」引申为「让状态、局面维持原样」。", "en": "The treaty helped preserve peace between the two nations.", "zh": "该条约有助于维护两国间的和平。"}, {"gloss": "v. 保护，保存", "logic": "同一守护动作，对象换成「易损之物」——老建筑、文物、生态。", "en": "The museum preserves ancient manuscripts.", "zh": "博物馆保存着古代手稿。"}, {"gloss": "v. 腌渍", "logic": "最具体的一层：用盐、糖、醋「封存」食物防止腐败。", "en": "She preserves peaches in sugar syrup every summer.", "zh": "她每年夏天都用糖水腌渍桃子。"}], "derivatives": [{"w": "preservation", "gloss": "n. 保存，保护"}, {"w": "preservative", "gloss": "n. 防腐剂"}, {"w": "preserver", "gloss": "n. 保护者"}]}, {"word": "unity", "levels": ["六级", "托福"], "ipa": "/ˈjuːnəti/", "subgroup": "nouns", "meaning": "n. 团结，统一；整体", "etymology": "拉丁语 unitas「单一性」，来自 unus「一」。un- 这个「一」的词根贯穿：one、unit、union、universe（转成一体）、unique（独一无二）。同源词：unit（单元）、unite（联合）、unify（统一）。", "roots": [{"part": "un-", "meaning": "一"}, {"part": "-ity", "meaning": "名词后缀，表性质"}], "phonetics": "/ˈjuːnəti/，重音在首音节，u 读 /juː/（像 you）。注意别读成 /ˈʌnəti/。", "tip": "un-「一」+ -ity = 合成一个整体。把很多个「一」变成一个「一」，就是团结。", "examples": [{"en": "The party needs unity to win the election.", "zh": "该党需要团结才能赢得选举。", "source": "造句"}, {"en": "national unity", "zh": "民族团结", "source": "高频搭配"}], "synonyms": [{"w": "solidarity", "ipa": "/ˌsɑːlɪˈdærəti/", "gloss": "团结，休戚与共", "note": "强调「基于共同利益、立场的团结」"}, {"w": "cohesion", "ipa": "/koʊˈhiːʒn/", "gloss": "凝聚力，内聚", "note": "强调「成员之间的粘合力、不易散」"}], "antonyms": [{"w": "division", "note": "分裂"}, {"w": "discord", "note": "不和"}], "nuance": "unity 强调「合而为一的整体状态」；solidarity 强调「出于共同立场而彼此支持」；cohesion 强调「内部粘得紧、不会散」。a sense of unity（整体感）vs solidarity with workers（与工人站在一起）。", "core": "很多零散的小块，被拼成一个严丝合缝的整块——你分不清原来的缝隙在哪，只看到一个「一」。", "senses": [{"gloss": "n. 团结，统一", "logic": "核心是「合而为一」，由「多个合成一个」引申为「人、组织齐心、不分裂」。", "en": "The crisis brought a new sense of unity to the country.", "zh": "这场危机给国家带来了新的团结感。"}, {"gloss": "n. 整体", "logic": "由「合一的状态」引申为「完整不可分割的整体」，多用于艺术、设计等抽象语境。", "en": "The design has a pleasing unity.", "zh": "这个设计具有悦目的整体感。"}], "derivatives": [{"w": "unite", "gloss": "v. 联合，团结"}, {"w": "unify", "gloss": "v. 统一"}, {"w": "united", "gloss": "adj. 联合的"}]}, {"word": "dissent", "levels": ["托福"], "ipa": "/dɪˈsent/", "subgroup": "nouns", "meaning": "n. 异议 v. 不同意，持异议", "etymology": "拉丁语 dissentire「感觉不同」，dis-「分开、不同」+ sentire「感觉、认为」。sentire 家族巨大：sentiment（情感）、consent（同意=同感）、resent（怨恨=反感）、sentence（判断）。同源词：consent（同意）、assent（赞成）、sentiment（情绪）。", "roots": [{"part": "dis-", "meaning": "分开、不同"}, {"part": "sent", "meaning": "感觉、认为"}], "phonetics": "/dɪˈsent/，重音在第二音节。注意与 descent（/dɪˈsent/ 下降）完全同音，要靠拼写区分：dissent 是 dis+sent，descent 是 de+scent。", "tip": "dis-「不同」+ sent「感觉」= 感觉和别人不一样，就是「持异议」。", "examples": [{"en": "There was little dissent within the committee.", "zh": "委员会内部几乎没有异议。", "source": "造句"}, {"en": "dissent from the majority view", "zh": "对多数意见持异议", "source": "高频搭配"}], "synonyms": [{"w": "disagreement", "ipa": "/ˌdɪsəˈɡriːmənt/", "gloss": "分歧，不同意", "note": "中性，泛指「意见不同」"}, {"w": "objection", "ipa": "/əbˈdʒekʃn/", "gloss": "反对，异议", "note": "强调「正式提出反对理由」"}], "antonyms": [{"w": "consent", "note": "同意"}, {"w": "assent", "note": "赞成"}], "nuance": "dissent 强调「从内部发出的、对主流/权威意见的背离」，有坚持己见的意味；disagreement 是中性「意见不合」；objection 偏「正式反对某提案」。司法上的 dissenting opinion 就是「反对意见书」。", "core": "满屋人都在点头，只有一个人站起来、身体微微朝反方向倾，说出那句「我不同意」——声音不大，但方向和大伙儿相反。", "senses": [{"gloss": "n. 异议", "logic": "核心是「感觉不同」，由「内心感受相异」引申为「公开表达与多数、权威相反的意见」。", "en": "Voices of dissent were quickly silenced.", "zh": "异议的声音很快被压制下去。"}, {"gloss": "v. 不同意，持异议", "logic": "名词义的动作化——「说出与主流不同的判断」。", "en": "Two judges dissented from the ruling.", "zh": "两位法官对裁决持异议。"}], "derivatives": [{"w": "dissenter", "gloss": "n. 持异议者"}, {"w": "dissenting", "gloss": "adj. 持异议的"}, {"w": "dissension", "gloss": "n. 意见分歧"}]}, {"word": "suppress", "levels": ["六级", "托福"], "ipa": "/səˈpres/", "subgroup": "verbs", "meaning": "v. 压制，抑制；隐瞒", "etymology": "拉丁语 suppressus「压下去」，sup-（sub- 变体，「向下」）+ press「压」。press 家族：press（按压）、compress（压缩）、depress（压低/使沮丧）、express（挤出来→表达）。同源词：repress（压抑）、oppress（压迫）、impress（压印→留下印象）。", "roots": [{"part": "sup-", "meaning": "向下（sub- 变体）"}, {"part": "press", "meaning": "压"}], "phonetics": "/səˈpres/，重音在第二音节，sup- 弱读为 /sə/。注意双写 ss 只发一个 /s/ 音。", "tip": "sup-「向下」+ press「压」= 往死里往下按，不让它冒头。", "examples": [{"en": "The government tried to suppress the news.", "zh": "政府试图压制这条新闻。", "source": "造句"}, {"en": "suppress a smile", "zh": "忍住笑", "source": "高频搭配"}], "synonyms": [{"w": "repress", "ipa": "/rɪˈpres/", "gloss": "压抑，抑制", "note": "偏心理，指「把情绪、欲望压回潜意识」"}, {"w": "oppress", "ipa": "/əˈpres/", "gloss": "压迫", "note": "偏政治，指「统治者用权力压人」"}, {"w": "stifle", "ipa": "/ˈstaɪfl/", "gloss": "扼杀，压制", "note": "形象化，像「捂住口鼻」一样压制"}], "antonyms": [{"w": "release", "note": "释放"}, {"w": "encourage", "note": "鼓励"}], "nuance": "suppress 强调「压住不让显现/传播」（信息、言论、笑声）；repress 偏「心理上把冲动压回内心」；oppress 强调「有权力者对弱势者的长期压迫」。suppress evidence（隐瞒证据）vs repress feelings（压抑情感）。", "core": "一只大手用力按住一个正在往上顶的盖子，盖子下面有东西拼命想冒出来，却被死死摁回去——外面看起来风平浪静。", "senses": [{"gloss": "v. 压制，抑制", "logic": "核心是「向下压住」，由「物理下压」引申为「把言论、异议、情绪按下去，不让冒头」。", "en": "The dictator suppressed all opposition.", "zh": "独裁者压制了一切反对力量。"}, {"gloss": "v. 隐瞒", "logic": "由「压住不让冒头」引申为「把信息、证据按住、不让人知道」。", "en": "The company suppressed the results of the safety test.", "zh": "公司隐瞒了安全测试的结果。"}], "derivatives": [{"w": "suppression", "gloss": "n. 压制，抑制"}, {"w": "suppressive", "gloss": "adj. 压制的"}, {"w": "suppressor", "gloss": "n. 抑制者，抑制器"}]}, {"word": "alternative", "levels": ["六级", "托福"], "ipa": "/ɔːlˈtɜːrnətɪv/", "subgroup": "nouns", "meaning": "n. 替代方案 adj. 替代的，备选的", "etymology": "拉丁语 alternus「交替的、轮流的」，来自 alter「另一个、两者中的另一个」。alter 家族：alter（改变）、alternate（交替）、alter ego（另一个自我）、adulterate（掺假）。同源词：alternate（交替）、alter（改变）、alteration（变更）。", "roots": [{"part": "alter", "meaning": "另一个"}, {"part": "-native", "meaning": "形容词后缀（-n- + -ative）"}], "phonetics": "/ɔːlˈtɜːrnətɪv/，重音在第二音节 tɜːr。注意 al- 读 /ɔːl/ 不是 /æl/，美音里 r 要卷舌。", "tip": "alter「另一个」= 当这条路走不通，还有「另一个」选项。", "examples": [{"en": "We need an alternative to the current plan.", "zh": "我们需要一个能替代当前方案的备选方案。", "source": "造句"}, {"en": "alternative energy", "zh": "替代能源", "source": "高频搭配"}], "synonyms": [{"w": "option", "ipa": "/ˈɑːpʃn/", "gloss": "选项", "note": "泛指「可选项」，不强调「取代」"}, {"w": "substitute", "ipa": "/ˈsʌbstɪtuːt/", "gloss": "替代品", "note": "强调「临时顶替原物」"}], "antonyms": [{"w": "conventional", "note": "传统的，常规的"}], "nuance": "alternative 强调「与现有方案并列、可二选一的另一个」；option 只是「可选项」；substitute 强调「取代、顶替原物」。alternative energy（替代能源，与化石能源并列）vs substitute teacher（代课老师，临时顶替）。", "core": "眼前一条路被堵死，你转头一看，旁边还有一条同样能到的小路——另一个选择，就静静躺在那里。", "senses": [{"gloss": "n. 替代方案，备选", "logic": "核心是「另一个」，由「两个中另一个」引申为「可取代现有方案的另一个选择」。", "en": "The committee rejected the proposal but offered no alternative.", "zh": "委员会否决了提案，却没有提出替代方案。"}, {"gloss": "adj. 替代的，备选的", "logic": "名词义的形容词化——「可作为另一个选择的」。", "en": "We need to find an alternative source of income.", "zh": "我们需要找到一个替代的收入来源。"}], "derivatives": [{"w": "alternate", "gloss": "v./adj. 交替；轮流的"}, {"w": "alternatively", "gloss": "adv. 或者，替代地"}, {"w": "alter", "gloss": "v. 改变"}]}, {"word": "adequately", "levels": ["六级", "托福"], "ipa": "/ˈædɪkwətli/", "subgroup": "modifiers", "meaning": "adv. 充分地，足够地", "etymology": "拉丁语 adaequare「使相等」，ad-「向」+ aequare「使相等」，来自 aequus「相等、公平」。aequus 家族：equal（相等的）、equator（赤道，把地球平分的线）、equity（公平）、equilibrium（平衡）。同源词：adequate（足够的）、equal（相等）、equation（等式）。", "roots": [{"part": "ad-", "meaning": "向、达到"}, {"part": "equ", "meaning": "相等"}, {"part": "-ate", "meaning": "动词后缀"}, {"part": "-ly", "meaning": "副词后缀"}], "phonetics": "/ˈædɪkwətli/，重音在首音节，-ate 在 adequate 里弱读为 /ɪkwət/，别读成 /eɪt/。四个音节：ad-i-quate-ly。", "tip": "ad-「达到」+ equ「相等」= 达到「刚好够得上」的程度，不多不少。", "examples": [{"en": "The risks were not adequately assessed.", "zh": "这些风险没有得到充分评估。", "source": "造句"}, {"en": "adequately prepared", "zh": "准备充分", "source": "高频搭配"}], "synonyms": [{"w": "sufficiently", "ipa": "/səˈfɪʃəntli/", "gloss": "足够地", "note": "强调「数量、程度够了」"}, {"w": "properly", "ipa": "/ˈprɑːpərli/", "gloss": "恰当地，适当地", "note": "强调「做得对、做得好」"}], "antonyms": [{"w": "inadequately", "note": "不充分地"}, {"w": "insufficiently", "note": "不足地"}], "nuance": "adequately 强调「够用、达标、不多不少」；sufficiently 更偏「数量上足够」；properly 强调「方式正确」。adequately prepared（准备得够用）vs properly prepared（准备得对路）。", "core": "往杯子里倒水，水面刚好涨到刻度线，不溢出来也不差一口——够用了，心里踏实。", "senses": [{"gloss": "adv. 充分地，足够地", "logic": "核心是「达到相等的线」，由「水满到刻度」引申为「达到要求的标准、刚好够用」。", "en": "The problem has not been adequately addressed.", "zh": "这个问题尚未得到充分解决。"}], "derivatives": [{"w": "adequate", "gloss": "adj. 足够的，适当的"}, {"w": "adequacy", "gloss": "n. 充分，适当"}]}, {"word": "evaluate", "levels": ["六级", "托福"], "ipa": "/ɪˈvæljueɪt/", "subgroup": "verbs", "meaning": "v. 评估，评价", "etymology": "拉丁语 ex-「出来」+ valere「有力量、有价值」。valere 家族：value（价值）、valid（有效的、有力的）、valor（勇猛）、valiant（英勇）。evaluate 就是「把价值『挤出来』、称出分量」。同源词：value（价值）、valid（有效的）、valiant（英勇）。", "roots": [{"part": "e-", "meaning": "出来（ex- 变体）"}, {"part": "valu", "meaning": "价值、力量"}, {"part": "-ate", "meaning": "动词后缀"}], "phonetics": "/ɪˈvæljueɪt/，重音在第二音节，注意 -ate 这里读 /eɪt/（与 adequate 里弱读不同，因为重音位置不同）。valu- 读 /vælju/。", "tip": "e-「出来」+ valu「价值」= 把某样东西的价值「掂量出来」。", "examples": [{"en": "We need to evaluate the costs and benefits.", "zh": "我们需要评估成本和收益。", "source": "造句"}, {"en": "critically evaluate", "zh": "批判性地评估", "source": "高频搭配"}], "synonyms": [{"w": "assess", "ipa": "/əˈses/", "gloss": "评估，评定", "note": "强调「估算、判定」，常用于风险、损失、能力"}, {"w": "appraise", "ipa": "/əˈpreɪz/", "gloss": "估价，鉴定", "note": "强调「给出货币价值」，偏专业"}], "antonyms": [{"w": "ignore", "note": "忽视"}], "nuance": "evaluate 强调「系统衡量好坏/价值，给出判断」；assess 偏「估算数量/程度」（assess the damage 估损）；appraise 偏「专业估价」。evaluate an argument（评判论证）vs assess the risk（评估风险）。", "core": "把一件东西放在手上掂一掂，又放上天平，眼睛盯着指针，看它到底值多少、有几斤几两。", "senses": [{"gloss": "v. 评估，评价", "logic": "核心是「把价值掂量出来」，由「称量价值」引申为「系统地判断好坏、优劣、价值」。", "en": "Teachers evaluate students' progress every semester.", "zh": "老师每学期评估学生的进步。"}], "derivatives": [{"w": "evaluation", "gloss": "n. 评估，评价"}, {"w": "evaluative", "gloss": "adj. 评价的"}, {"w": "evaluator", "gloss": "n. 评估者"}]}, {"word": "overlook", "levels": ["六级", "托福"], "ipa": "/ˌoʊvərˈlʊk/", "subgroup": "verbs", "meaning": "v. 忽视；俯瞰；宽容", "etymology": "over-「在上方」+ look「看」。字面「从上面看过去」。两个含义由此分化：①「从上俯瞰」是字面义；②「从上面看漏了、没看见」引申为「忽视」；③「从上往下看时选择不计较」引申为「宽容」。同源词：look（看）、overlooked（被忽视的）、oversee（监督=从上面盯着）。", "roots": [{"part": "over-", "meaning": "在上方，越过"}, {"part": "look", "meaning": "看"}], "phonetics": "/ˌoʊvərˈlʊk/，重音在第三音节 look 上（名词 overlook「观景台」/ˈoʊvərlʊk/ 重音不同）。o 读 /oʊ/，look 读 /lʊk/（短 u）。", "tip": "over「从上面」+ look「看」= 视线从上方扫过去，太宽了，底下的细节就「漏看」了。", "examples": [{"en": "It is easy to overlook the risks when everyone agrees.", "zh": "当所有人意见一致时，风险很容易被忽视。", "source": "造句"}, {"en": "overlook a detail", "zh": "忽略一个细节", "source": "高频搭配"}], "synonyms": [{"w": "neglect", "ipa": "/nɪˈɡlekt/", "gloss": "忽视，疏于照顾", "note": "强调「该做却没做、没尽责」"}, {"w": "disregard", "ipa": "/ˌdɪsrɪˈɡɑːrd/", "gloss": "漠视，不理会", "note": "强调「故意不理会」"}], "antonyms": [{"w": "notice", "note": "注意到"}, {"w": "scrutinize", "note": "仔细审视"}], "nuance": "overlook 强调「无意漏看、没注意到」（非故意）；neglect 强调「该管却没管、失职」；disregard 强调「明知却故意不管」。overlook a typo（漏看一个错字）vs neglect one's duty（玩忽职守）。", "core": "你站在高处往下扫一眼，视野开阔，反而把脚边一个不起眼的小东西看漏了——看得太「广」，就漏了「细」。", "senses": [{"gloss": "v. 忽视，忽略", "logic": "核心是「从上面看」，视线从上扫过太宽，容易漏掉底下的小细节，引申为「没注意到」。", "en": "The committee overlooked a key piece of evidence.", "zh": "委员会忽略了一项关键证据。"}, {"gloss": "v. 俯瞰", "logic": "字面义：从高处往下看，视线覆盖整片区域。", "en": "Our hotel room overlooks the harbor.", "zh": "我们的酒店房间俯瞰着海港。"}, {"gloss": "v. 宽容，不计较", "logic": "由「从上面看」引申——居高临下地「看过去」选择不追究小错。", "en": "I'll overlook your mistake this time.", "zh": "这次我原谅你的错误。"}], "derivatives": [{"w": "overlooked", "gloss": "adj. 被忽视的"}, {"w": "oversee", "gloss": "v. 监督"}, {"w": "oversight", "gloss": "n. 疏忽；监督"}]}, {"word": "flawed", "levels": ["托福"], "ipa": "/flɔːd/", "subgroup": "modifiers", "meaning": "adj. 有缺陷的", "etymology": "flaw 来自古诺尔斯语 flaga「薄片、石板」，本指「石头、木头上的裂纹」，后泛指「任何缺陷、瑕疵」。flawed 是过去分词形容词「有裂纹的→有缺陷的」。同源词：flaw（缺陷）、flawless（无瑕的）。", "roots": [{"part": "flaw", "meaning": "裂纹、缺陷"}, {"part": "-ed", "meaning": "形容词后缀，具有…的"}], "phonetics": "/flɔːd/，单音节，fl 连读，aw 读 /ɔː/，词尾 -ed 读 /d/（浊音，因前面是元音）。别读成 /flɔːɪd/ 两个音节。", "tip": "flaw「裂纹」= 一块好玉上的一道裂，flawed 就是「带裂的」，看着完整其实有毛病。", "examples": [{"en": "The study was based on flawed data.", "zh": "这项研究基于有缺陷的数据。", "source": "造句"}, {"en": "a flawed argument", "zh": "一个有漏洞的论证", "source": "高频搭配"}], "synonyms": [{"w": "defective", "ipa": "/dɪˈfektɪv/", "gloss": "有缺陷的，有故障的", "note": "强调「功能不良」，多指产品、机器"}, {"w": "faulty", "ipa": "/ˈfɔːlti/", "gloss": "有毛病的，错误的", "note": "强调「不能正常工作或推理有错」"}], "antonyms": [{"w": "flawless", "note": "无瑕的"}, {"w": "sound", "note": "健全的，可靠的"}], "nuance": "flawed 强调「内在有瑕疵，但仍可用、表面看不出」；defective 强调「坏了、功能不达标」；faulty 偏「会出错、不可靠」。a flawed argument（有漏洞但看似成立）vs a defective product（有故障的产品）。", "core": "一块温润的玉，光一照，里面藏着一道细细的裂纹——不仔细看看不出来，可它已经不算完好了。", "senses": [{"gloss": "adj. 有缺陷的", "logic": "核心是「藏着一道裂纹」，由「玉有内裂」引申为「论证、计划、决策表面完整却藏着致命毛病」。", "en": "The decision was based on flawed assumptions.", "zh": "这个决定基于有缺陷的假设。"}], "derivatives": [{"w": "flaw", "gloss": "n. 缺陷，瑕疵"}, {"w": "flawless", "gloss": "adj. 无瑕疵的"}]}, {"word": "fiasco", "levels": ["托福"], "ipa": "/fiˈæskoʊ/", "subgroup": "nouns", "meaning": "n. 惨败，彻底的失败", "etymology": "意大利语 fiasco「长颈瓶、酒瓶」，词源是拉丁语 flasco（同 flask 长颈瓶）。来源说法：威尼斯玻璃匠做坏了瓶子，就贬为「普通酒瓶」；后意大利戏剧圈用 far fiasco「演出砸锅」比喻彻底失败，19 世纪传入英语。同源词：flask（长颈瓶）。", "roots": [{"part": "fiasco", "meaning": "长颈瓶→砸锅的演出→彻底失败"}], "phonetics": "/fiˈæskoʊ/，重音在第二音节，fia- 读 /fiˈæ/（两个元音都要发出来），sco 读 /skoʊ/。复数 fiascos 或 fiascoes 均可。", "tip": "想象一个瓶子「啪」地摔碎在地、酒洒一地——演出砸锅、事情全搞砸，就是 fiasco。", "examples": [{"en": "The product launch was a complete fiasco.", "zh": "那次产品发布完全是一场惨败。", "source": "造句"}, {"en": "a total fiasco", "zh": "一场彻底的失败", "source": "高频搭配"}], "synonyms": [{"w": "disaster", "ipa": "/dɪˈzæstər/", "gloss": "灾难", "note": "强调「造成严重后果的祸事」，程度更重"}, {"w": "debacle", "ipa": "/dɪˈbɑːkl/", "gloss": "惨败，溃败", "note": "强调「混乱的、丢脸的失败」"}], "antonyms": [{"w": "success", "note": "成功"}, {"w": "triumph", "note": "胜利"}], "nuance": "fiasco 强调「丢人现眼的、彻底搞砸的失败」，带荒诞、滑稽色彩；disaster 强调「重大灾难后果」；debacle 强调「混乱溃败」。a policy fiasco（政策惨败）vs a natural disaster（自然灾害）。", "core": "一个酒瓶「啪」地摔在地上，酒和玻璃渣溅得到处都是，全场人愣住——场面难看、收不了场，彻底砸了。", "senses": [{"gloss": "n. 惨败，彻底的失败", "logic": "核心是「瓶子摔碎、场面难看」，由「砸锅的演出」引申为「任何丢脸且收不了场的彻底失败」。", "en": "The peace talks ended in a fiasco.", "zh": "和平谈判以惨败告终。"}], "derivatives": [{"w": "flask", "gloss": "n. 长颈瓶，烧瓶"}]}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- 精读：文章 + 句法分析
+let speaking=false;
+function sayPassage(btn){
+  if(speaking){ speechSynthesis.cancel(); speaking=false; if(btn) btn.textContent='🔊 朗读全文'; return; }
+  const P = G.passage; if(!P) return;
+  const texts = (P.paragraphs||[]).map(p=>p.en).filter(Boolean);
+  if(!texts.length) return;
+  if(!VOICE) pickVoice();
+  speaking=true; if(btn) btn.textContent='⏹ 停止朗读';
+  let last=null;
+  texts.forEach((t,i)=>{
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    if(i===texts.length-1) last=u;
+    speechSynthesis.speak(u);
+  });
+  if(last) last.onend=()=>{ speaking=false; if(btn) btn.textContent='🔊 朗读全文'; };
+}
+function renderPassage(){
+  const el = document.getElementById('passage');
+  const P = G.passage; if(!P){ el.style.display='none'; return; }
+  const paras = (P.paragraphs||[]).map(p=>{
+    let en = p.en||'';
+    // 高亮关键词（p.kws 或自动匹配词表词）
+    const kws = p.kws || [];
+    kws.forEach(k=>{ en = en.replace(new RegExp('('+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'), '<span class="kw" onclick="say(\'$1\')">$1</span>'); });
+    return `<p><div class="en">${en}</div>${p.zh?`<div class="zh">${p.zh}</div>`:''}</p>`;
+  }).join('');
+  el.innerHTML = `<div class="passage"><h2>📖 精读原文</h2>
+    <div class="p-title">${P.title||''} <button class="readall" onclick="sayPassage(this)">🔊 朗读全文</button></div>
+    ${paras}</div>`;
+}
+const ROLECOLOR = { '主语':'#2f8f83','谓语':'#c1662f','宾语':'#3a7bd5','状语':'#6a52a8','定语':'#b0603f','补语':'#c1662f','从句':'#8c8072','连词':'#8c8072','介词':'#8c8072','插入语':'#8c8072','同位语':'#b0603f' };
+function roleColor(r){ return ROLECOLOR[r] || '#6a52a8'; }
+function escAttr(s){ return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+// 句子内括号标注：介词短语 ( ) · 从句 [ ] · 非谓语 { }
+const BRK = {'pp':['(',')'], 'cl':['[',']'], 'nf':['{','}']};
+const BRKC = {'pp':'#6a52a8', 'cl':'#3a7bd5', 'nf':'#b0603f'};
+function renderFlow(s){
+  let html='';
+  (s.flow||[]).forEach(it=>{
+    if(it.open){ const k=it.open; html+=`<span class="brkbox" style="background:${BRKC[k]}16;border-bottom:2px solid ${BRKC[k]}66"><b class="brk" style="color:${BRKC[k]}">${BRK[k][0]}</b>`; }
+    else if(it.close){ const k=it.close; html+=`<b class="brk" style="color:${BRKC[k]}">${BRK[k][1]}</b></span>`; }
+    else { html+=escAttr(it.t); }
+  });
+  return html;
+}
+function renderSents(){
+  const el = document.getElementById('sents');
+  const S = G.sentences; if(!S || !S.length){ el.style.display='none'; return; }
+  const items = S.map((s,i)=>{
+    const flowHtml = (s.flow && s.flow.length) ? renderFlow(s) : escAttr(s.en);
+    const parts = (s.parts||[]).map(p=>{
+      const c = roleColor(p.r);
+      return `<span class="spart" style="background:${c}18;border:1px solid ${c}55">
+        <span class="st" style="color:${c}">${escAttr(p.t)}</span>
+        <span class="sr" style="background:${c}">${p.r}</span>
+        ${p.n?`<span class="sn">${p.n}</span>`:''}</span>`;
+    }).join('');
+    return `<div class="sent">
+      <div class="s-flow" data-en="${escAttr(s.en)}" onclick="say(this.dataset.en)" title="点句子朗读">${flowHtml} <button class="say-mini" data-en="${escAttr(s.en)}" onclick="event.stopPropagation();say(this.dataset.en)" title="朗读">🔊</button></div>
+      ${s.zh?`<div class="s-zh">${s.zh}</div>`:''}
+      <div class="s-parts">${parts}</div>
+      ${s.note?`<div class="snotes">${s.note}</div>`:''}</div>`;
+  }).join('');
+  el.innerHTML = `<div class="sents"><h2>🔍 长难句 · 句法分析</h2>
+    <div class="s-sub">点英文句可朗读 · 括号标注：<b style="color:#6a52a8">( ) 介词短语</b> · <b style="color:#3a7bd5">[ ] 从句</b> · <b style="color:#b0603f">{ } 非谓语动词</b> · 下方色块=成分功能</div>
+    ${items}</div>`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderPassage(); renderSents(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

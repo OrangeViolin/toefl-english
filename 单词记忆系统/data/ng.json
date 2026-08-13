@@ -1,0 +1,1375 @@
+{
+  "id": "ng",
+  "combo": "ng·nk",
+  "title": "/ŋ/ 舌根鼻音",
+  "sound": "/ŋ/",
+  "subtitle": "舌根堵住气流，鼻腔出声——sing 结尾绝对不读出 g",
+  "intro": "/ŋ/ 是英语里藏得最深的音：发音部位在最后方，舌根顶住软腭，气流从鼻腔出去，嘴里没有任何爆破。它有三种出现方式：① ng 结尾（sing、long）直接读 /ŋ/，g 完全哑掉；② nk 组合（think、bank）读 /ŋk/，k 跟在后面作为爆破收尾；③ n 在 g 前面（finger、angry）受同化变成 /ŋg/——规律藏在字母组合里，看准拼写就能判断。最常见错误：把 sing 末尾加出一个 /g/ 音，或把 think 里的 n 读成标准 /n/。",
+  "subgroups": [
+    {
+      "key": "ng",
+      "tag": "ng → /ŋ/",
+      "label": "✅ ng = /ŋ/",
+      "desc": "ng 在词尾或音节尾，g 完全哑掉，只留舌根鼻音 /ŋ/。用力发「嗯」时舌头往后抵住软腭，那个位置就是 /ŋ/。sing、long、ring、strong 都走这一路；ng 在词中间接元音（finger、single）则走第三组规律。"
+    },
+    {
+      "key": "nk",
+      "tag": "n(k) → /ŋk/",
+      "label": "nk = /ŋk/",
+      "desc": "字母 n 在 k 前，发音自动同化为 /ŋ/，再跟一个 /k/ 爆破——合起来是 /ŋk/。think = /θɪŋk/，bank = /bæŋk/。nc 在词中也可触发同化：uncle = /ˈʌŋkl/，concrete = /ˈkɒŋkriːt/。关键是：/ŋk/ 里的 k 是真实发出的，不同于 ng 结尾那个哑掉的 g。"
+    },
+    {
+      "key": "ng2",
+      "tag": "n(g) → /ŋg/",
+      "label": "n+g = /ŋg/",
+      "desc": "ng 夹在元音中间（字母组合 nge/ngi/ngu + 元音），n 同化为 /ŋ/，g 保持 /g/ 爆破——读 /ŋg/。finger = /ˈfɪŋɡər/，angry = /ˈæŋɡri/，single = /ˈsɪŋɡl/。判断口诀：ng 后面还有元音就读 /ŋg/，ng 在词尾或后面不接元音就读 /ŋ/。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ing 韵脚",
+      "words": ["sing", "ring", "string", "spring", "cling", "swing"]
+    },
+    {
+      "label": "-ong/-ang 韵脚",
+      "words": ["long", "strong", "gang", "clang"]
+    },
+    {
+      "label": "-ink/-ank 韵脚",
+      "words": ["think", "shrink", "drink", "bank", "frank", "plank"]
+    }
+  ],
+  "words": [
+    {
+      "word": "sing",
+      "hl": "ng",
+      "levels": ["六级"],
+      "ipa": "/sɪŋ/",
+      "subgroup": "ng",
+      "meaning": "v. 唱歌；（鸟）鸣叫；嗡嗡作响",
+      "etymology": "古英语 singan「唱歌」，日耳曼同根，与德语 singen 同源。singer（歌手）、song（歌曲）都是同族词。",
+      "roots": [
+        {"part": "sing（singan）", "meaning": "唱歌"}
+      ],
+      "phonetics": "s + i /ɪ/ + ng /ŋ/——ng 在词尾，g 完全哑掉。发音收尾：舌根顶上软腭，气从鼻腔出，嘴里不爆破。说「辛——」，收尾停在舌根位置，不要多出 /g/。",
+      "tip": "sing 是 /ŋ/ 的锚定词，从这里建立肌肉记忆，再推到所有 -ing 结尾的词。",
+      "core": "声音从喉咙里往外流，连绵不断，像一条线被拉出去的感觉",
+      "senses": [
+        {
+          "gloss": "唱歌",
+          "logic": "声音连绵不断是唱歌最基本的形态——旋律就是一条声线",
+          "en": "She sang a lullaby until the child fell asleep.",
+          "zh": "她唱摇篮曲直到孩子睡着。"
+        },
+        {
+          "gloss": "（鸟）鸣叫",
+          "logic": "鸟叫声也是连绵的声线——婉转不绝",
+          "en": "The birds were singing at dawn.",
+          "zh": "黎明时鸟儿在歌唱。"
+        },
+        {
+          "gloss": "嗡嗡作响",
+          "logic": "持续的嗡嗡声是连绵声线在器物上的体现",
+          "en": "The kettle sang on the stove.",
+          "zh": "水壶在炉子上嗡嗡作响。"
+        }
+      ],
+      "derivatives": [
+        {"w": "singer", "gloss": "歌手"},
+        {"w": "song", "gloss": "歌曲"},
+        {"w": "sang", "gloss": "sing 的过去式"},
+        {"w": "sung", "gloss": "sing 的过去分词"}
+      ],
+      "examples": [
+        {
+          "en": "She sang a lullaby until the child fell asleep.",
+          "zh": "她唱摇篮曲直到孩子睡着。",
+          "source": "造句"
+        },
+        {
+          "en": "sing someone's praises",
+          "zh": "「对某人大加赞扬」——高频习语，字面是「唱颂歌」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "chant", "ipa": "/tʃænt/", "gloss": "反复吟唱（宗教或集会口号）", "note": "反复吟唱，节奏单调，多用于宗教仪式或集会口号；chant a slogan（高喊口号）"},
+        {"w": "hum", "ipa": "/hʌm/", "gloss": "闭口哼唱", "note": "闭口哼唱，不发歌词，比 sing 更随意、更私人"},
+        {"w": "croon", "ipa": "/kruːn/", "gloss": "轻柔低吟", "note": "轻柔低吟，带感情的慢速哼唱，多用于爱情歌曲"}
+      ],
+      "antonyms": [
+        {"w": "silence", "note": "沉默（名词），与唱歌相对"}
+      ],
+      "nuance": "sing 最通用；chant 强调重复节奏（宗教或集会）；hum 是闭嘴哼，不需要歌词；croon 带温柔情感，常是低沉慵懒的演唱风格。"
+    },
+    {
+      "word": "long",
+      "hl": "ng",
+      "levels": ["六级"],
+      "ipa": "/lɔːŋ/",
+      "subgroup": "ng",
+      "meaning": "adj. 长的；长时间的  adv. 长时间地  v. 渴望（long for）",
+      "etymology": "古英语 lang「长的」，日耳曼同根。作动词「渴望」是从「向往远处」引申而来，与 length（长度）、prolong（延长）同族。",
+      "roots": [
+        {"part": "long（lang）", "meaning": "长"}
+      ],
+      "phonetics": "l + o /ɔː/ + ng /ŋ/，词尾完全收于舌根，与 song、strong、wrong 押韵。美式英语 /lɔːŋ/ 偶尔弱化为 /lɑːŋ/。",
+      "core": "一条路往前看不到尽头，或者一根线被拉到极限、绷着松不开的感觉",
+      "senses": [
+        {
+          "gloss": "长的（空间）",
+          "logic": "看不到尽头就是'长'的直接空间体验",
+          "en": "She walked down the long corridor.",
+          "zh": "她走过长长的走廊。"
+        },
+        {
+          "gloss": "长时间的",
+          "logic": "空间的长映射到时间——延续很久",
+          "en": "She had long been waiting for an opportunity to travel abroad.",
+          "zh": "她渴望出国旅行已经很久了。"
+        },
+        {
+          "gloss": "渴望（long for）",
+          "logic": "心向往远方——空间的'长'映射到心理上对远处/未来的深切向往，像一根线从心里伸向看不见的远方",
+          "en": "She longed for home.",
+          "zh": "她思念家乡。"
+        }
+      ],
+      "derivatives": [
+        {"w": "length", "gloss": "长度"},
+        {"w": "lengthy", "gloss": "冗长的"},
+        {"w": "prolong", "gloss": "延长"},
+        {"w": "longing", "gloss": "渴望（n.）"}
+      ],
+      "examples": [
+        {
+          "en": "She had long been waiting for an opportunity to travel abroad.",
+          "zh": "她渴望出国旅行已经很久了。",
+          "source": "造句"
+        },
+        {
+          "en": "long for home",
+          "zh": "「思念家乡」——v. 用法，long for = 深切渴望。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "lengthy", "ipa": "/ˈleŋθi/", "gloss": "冗长的", "note": "「冗长的」，多用于文章、讲话、过程；带轻微负面含义，暗示过于漫长"},
+        {"w": "yearn", "ipa": "/jɜːrn/", "gloss": "渴望（文学用词）", "note": "「渴望」义，比 long for 更文学化，情感更强烈；yearn for freedom（渴望自由）"},
+        {"w": "extended", "ipa": "/ɪkˈstendɪd/", "gloss": "延长的", "note": "「延长的」，强调刻意拉长的时间或距离，比 long 更正式"}
+      ],
+      "antonyms": [
+        {"w": "short", "note": "短的"},
+        {"w": "brief", "note": "短暂的"}
+      ],
+      "nuance": "long 是中性描述；lengthy 暗含「太长了」的不耐烦；long for 和 yearn for 都是渴望，yearn 情感更强烈、更文学，long for 更日常。"
+    },
+    {
+      "word": "string",
+      "hl": "ng",
+      "levels": ["托福"],
+      "ipa": "/strɪŋ/",
+      "subgroup": "ng",
+      "meaning": "n. 细绳；一串；（乐器）弦；字符串  v. 串起；悬挂",
+      "etymology": "古英语 streng「绳、弦」，日耳曼同根，与德语 Strang 同源。核心义是「拉紧成线的东西」，引申到「一串连续的事物」（a string of events）和计算机「字符串」。",
+      "roots": [
+        {"part": "string（streng）", "meaning": "绳、弦"}
+      ],
+      "phonetics": "str- 三辅音连缀 + i /ɪ/ + ng /ŋ/。str- 要连读流畅，重点收尾在 /ŋ/，不读出 /g/。",
+      "tip": "a string of 是「一连串……」的高频搭配（a string of failures / victories），在托福写作里可替代重复的 a series of。",
+      "core": "一根细长的东西，绷紧了有弹性会弹，松了可以缠绕打结——就是一种'线'的感觉",
+      "senses": [
+        {
+          "gloss": "细绳／线",
+          "logic": "'线'本身就是 string 的本体",
+          "en": "She tied the package with a string.",
+          "zh": "她用一根细绳捆好包裹。"
+        },
+        {
+          "gloss": "一串（连续事物）",
+          "logic": "线可以把珠子串起来——引申为一连串连续发生的事",
+          "en": "The investigation uncovered a string of financial irregularities.",
+          "zh": "调查揭露了一连串的财务违规行为。"
+        },
+        {
+          "gloss": "（乐器）弦",
+          "logic": "绷紧的线就是琴弦——弹拨发出声音",
+          "en": "He plucked the strings of his guitar.",
+          "zh": "他拨动吉他的琴弦。"
+        },
+        {
+          "gloss": "字符串（计算机）",
+          "logic": "字符像珠子一样排成一条线——计算机术语",
+          "en": "The program searches for a specific string of text.",
+          "zh": "程序搜索一段特定的字符串。"
+        },
+        {
+          "gloss": "串起／悬挂（v.）",
+          "logic": "动词化——用线把东西串起来",
+          "en": "She strung the lights across the garden.",
+          "zh": "她把灯串在花园里。"
+        }
+      ],
+      "derivatives": [
+        {"w": "stringent", "gloss": "严格的（像绷紧的线不放松）"},
+        {"w": "stringy", "gloss": "多筋的／细长的"},
+        {"w": "strung", "gloss": "string 的过去式／分词"}
+      ],
+      "examples": [
+        {
+          "en": "The investigation uncovered a string of financial irregularities.",
+          "zh": "调查揭露了一连串的财务违规行为。",
+          "source": "造句"
+        },
+        {
+          "en": "no strings attached",
+          "zh": "「无附加条件」——习语，字面是「没有绳子拴着你」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "cord", "ipa": "/kɔːrd/", "gloss": "粗绳", "note": "比 string 粗，比 rope 细的绳子；electrical cord（电线）"},
+        {"w": "series", "ipa": "/ˈsɪəriːz/", "gloss": "一系列", "note": "「一系列」，比 a string of 更正式，常用于有序的事件或出版物"},
+        {"w": "thread", "ipa": "/θred/", "gloss": "细线", "note": "「线、细丝」，比 string 更细，也可指「话题线索」（a thread of thought）"}
+      ],
+      "antonyms": [],
+      "nuance": "string 强调「细而有弹性、可拉伸」的线或连续性；cord 更粗实；thread 更纤细，也更常用于比喻（thread of conversation）。a string of 比 a series of 更口语，含有「接二连三」的语气。"
+    },
+    {
+      "word": "spring",
+      "hl": "ng",
+      "levels": ["托福"],
+      "ipa": "/sprɪŋ/",
+      "subgroup": "ng",
+      "meaning": "n. 春天；弹簧；泉水；跳跃  v. 跳起；突然出现；（陷阱等）弹发",
+      "etymology": "古英语 spring「跳跃、起源」，日耳曼同根，核心义是「向上弹跳」。春天「让万物弹出地面」；弹簧「能弹回」；泉水「从地下弹涌而出」——三义共享一个「弹出」的本义。",
+      "roots": [
+        {"part": "spring（springan）", "meaning": "跳跃、弹出"}
+      ],
+      "phonetics": "spr- 三辅音连缀 + i /ɪ/ + ng /ŋ/，词尾舌根鼻音收尾，不读 /g/。与 ring、sing、string 押韵。",
+      "tip": "spring up（突然涌现）在托福阅读中高频出现，描述新事物的快速出现；spring from（源自）是学术写作常用搭配。",
+      "core": "被压下去的力突然释放，猛地弹起来——那股向上的、不可抑制的冲劲",
+      "senses": [
+        {
+          "gloss": "跳跃／弹起",
+          "logic": "核心就是'弹'——力被压缩后突然释放",
+          "en": "The cat sprang onto the table.",
+          "zh": "猫猛地跳上桌子。"
+        },
+        {
+          "gloss": "春天",
+          "logic": "万物像被压了一个冬天后猛地弹出地面——生命的弹起",
+          "en": "Flowers bloom in spring.",
+          "zh": "花在春天开放。"
+        },
+        {
+          "gloss": "弹簧",
+          "logic": "物理实现——被压后会弹回来的装置",
+          "en": "The mattress has broken springs.",
+          "zh": "床垫的弹簧坏了。"
+        },
+        {
+          "gloss": "泉水",
+          "logic": "水从地下猛地涌出来——弹涌而出",
+          "en": "They drank from a mountain spring.",
+          "zh": "他们喝了山泉水。"
+        },
+        {
+          "gloss": "突然出现／涌现",
+          "logic": "像弹簧弹出一样突然出现",
+          "en": "New tech startups spring up in Silicon Valley every month.",
+          "zh": "每个月都有新的科技初创公司在硅谷涌现。"
+        }
+      ],
+      "derivatives": [
+        {"w": "springy", "gloss": "有弹性的"},
+        {"w": "sprang", "gloss": "spring 的过去式"},
+        {"w": "sprung", "gloss": "spring 的过去分词"},
+        {"w": "offspring", "gloss": "后代（弹出来的分支）"}
+      ],
+      "examples": [
+        {
+          "en": "New tech startups spring up in Silicon Valley every month.",
+          "zh": "每个月都有新的科技初创公司在硅谷涌现。",
+          "source": "造句"
+        },
+        {
+          "en": "spring from humble beginnings",
+          "zh": "「从卑微出身起步」——spring from = 起源于，托福阅读高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "leap", "ipa": "/liːp/", "gloss": "跳跃", "note": "「跳跃」义，比 spring 更强调高度或距离，leap of faith（信仰之跃）"},
+        {"w": "emerge", "ipa": "/ɪˈmɜːrdʒ/", "gloss": "涌现", "note": "「涌现」义，比 spring up 更正式；emerge from（从……中出现）"},
+        {"w": "originate", "ipa": "/əˈrɪdʒɪneɪt/", "gloss": "起源", "note": "「起源」义，比 spring from 更正式，originate in（起源于……）"}
+      ],
+      "antonyms": [
+        {"w": "autumn", "note": "秋天（季节义相对）"},
+        {"w": "fall", "note": "跌落（弹起义相对）"}
+      ],
+      "nuance": "spring up 强调速度和突然性（新事物冒出），emerge 更强调从隐藏状态出现，originate 强调起源点而非过程。spring from 和 originate in 可互换，但前者更口语。"
+    },
+    {
+      "word": "swing",
+      "hl": "ng",
+      "levels": ["托福"],
+      "ipa": "/swɪŋ/",
+      "subgroup": "ng",
+      "meaning": "v. 摆动；（情绪/意见）转变；挥动  n. 摇摆；秋千；（风格的）摇摆乐",
+      "etymology": "古英语 swingan「鞭打、摆动」，日耳曼同根。本义是「来回甩动」，引申到政治、情绪、音乐上的「摇摆」。",
+      "roots": [
+        {"part": "swing（swingan）", "meaning": "摆动、甩动"}
+      ],
+      "phonetics": "sw + i /ɪ/ + ng /ŋ/，词尾舌根鼻音，不读 /g/。与 ring、sing、spring 押韵。",
+      "core": "挂在一个点上，从这边荡到那边——一种自由、有节奏的来回晃的感觉",
+      "senses": [
+        {
+          "gloss": "摆动／摇摆",
+          "logic": "挂在某点上左右／前后荡——最直接的物理动作",
+          "en": "The pendulum swung back and forth.",
+          "zh": "钟摆来回摆动。"
+        },
+        {
+          "gloss": "（情绪／意见）转变",
+          "logic": "物理的摆荡映射到立场／情绪在两端之间大幅移动",
+          "en": "Public opinion swung sharply after the scandal broke.",
+          "zh": "丑闻曝光后，公众舆论急剧转向。"
+        },
+        {
+          "gloss": "挥动（手臂／球杆）",
+          "logic": "手臂以肩为轴心做弧线运动——身体部位的摆动",
+          "en": "He swung the bat and hit a home run.",
+          "zh": "他挥棒击出全垒打。"
+        },
+        {
+          "gloss": "秋千",
+          "logic": "名词化——专门用来荡的装置",
+          "en": "The children played on the swings.",
+          "zh": "孩子们在秋千上玩耍。"
+        },
+        {
+          "gloss": "摇摆乐",
+          "logic": "节奏让人想跟着摇摆身体的爵士乐分支",
+          "en": "They danced to the swing band.",
+          "zh": "他们随着摇摆乐队跳舞。"
+        }
+      ],
+      "derivatives": [
+        {"w": "swung", "gloss": "swing 的过去式／分词"},
+        {"w": "swinging", "gloss": "摇摆的／活跃的"},
+        {"w": "swinger", "gloss": "活跃社交的人（俚语）"}
+      ],
+      "examples": [
+        {
+          "en": "Public opinion swung sharply after the scandal broke.",
+          "zh": "丑闻曝光后，公众舆论急剧转向。",
+          "source": "造句"
+        },
+        {
+          "en": "in full swing",
+          "zh": "「进入高潮、全速运转」——高频习语，指活动到达最活跃状态。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sway", "ipa": "/sweɪ/", "gloss": "摇摆／影响", "note": "「摇摆、影响」，比 swing 更柔和缓慢；sway public opinion（影响舆论）"},
+        {"w": "fluctuate", "ipa": "/ˈflʌktʃueɪt/", "gloss": "波动", "note": "「波动」，多用于数字、价格、情绪，比 swing 更正式"},
+        {"w": "pivot", "ipa": "/ˈpɪvət/", "gloss": "绕轴转向", "note": "「绕轴转向」，强调方向性的关键转变，比 swing 更有目的性"}
+      ],
+      "antonyms": [
+        {"w": "stay fixed", "note": "保持不动"},
+        {"w": "stabilize", "note": "稳定下来"}
+      ],
+      "nuance": "swing 强调幅度大、方向明显的来回变化；sway 更慢更柔和，也可指影响人；fluctuate 专用于数量波动；pivot 是战略性的方向转变（公司转型 pivot）。"
+    },
+    {
+      "word": "cling",
+      "hl": "ng",
+      "levels": ["托福"],
+      "ipa": "/klɪŋ/",
+      "subgroup": "ng",
+      "meaning": "v. 紧抓；依附；坚持（旧观念/习惯）；（气味）久久不散",
+      "etymology": "古英语 clingan「收缩、紧握」，日耳曼同根，核心义是「紧贴不放」——无论是物理抓住还是心理执着。",
+      "roots": [
+        {"part": "cling（clingan）", "meaning": "紧握、依附"}
+      ],
+      "phonetics": "cl + i /ɪ/ + ng /ŋ/，词尾完全收于舌根。不规则动词：cling–clung–clung（与 sing–sang–sung 不同路线，需单记）。",
+      "tip": "cling to 在托福写作中是「坚守……（旧观念、传统）」的高频搭配，cling to the past（执着于过去）是雅思写作常用句。",
+      "core": "像湿衣服贴在皮肤上——死死粘着、怎么甩都甩不掉的那种紧贴不放感",
+      "senses": [
+        {
+          "gloss": "紧抓／紧贴（物理）",
+          "logic": "湿衣服贴皮肤感的直接体现——身体上的紧贴不放",
+          "en": "The child clung to his mother's hand.",
+          "zh": "孩子紧紧抓着他妈妈的手。"
+        },
+        {
+          "gloss": "执着坚守（旧观念／习惯）",
+          "logic": "心理上'抓'着不放——不愿松手的东西从物理变成了观念",
+          "en": "Many people cling to traditional values even as society changes.",
+          "zh": "即便社会在变，许多人仍执着地坚守传统价值观。"
+        },
+        {
+          "gloss": "（气味）久久不散",
+          "logic": "气味像湿衣服一样贴在东西上，甩不掉",
+          "en": "The smell of smoke clung to her clothes all day.",
+          "zh": "烟味整天萦绕在她的衣服上。"
+        }
+      ],
+      "derivatives": [
+        {"w": "clung", "gloss": "cling 的过去式／分词"},
+        {"w": "clingy", "gloss": "黏人的／紧贴的"},
+        {"w": "clingfilm", "gloss": "保鲜膜（英式）"}
+      ],
+      "examples": [
+        {
+          "en": "Many people cling to traditional values even as society changes.",
+          "zh": "即便社会在变，许多人仍执着地坚守传统价值观。",
+          "source": "造句"
+        },
+        {
+          "en": "The smell of smoke clung to her clothes all day.",
+          "zh": "烟味整天萦绕在她的衣服上。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "adhere", "ipa": "/ədˈhɪər/", "gloss": "黏附／遵守", "note": "「黏附」，比 cling 更正式，也指「遵守」；adhere to rules（遵守规则）"},
+        {"w": "grip", "ipa": "/ɡrɪp/", "gloss": "紧握", "note": "「紧握」，强调力度，比 cling 更主动；grip the handle（紧握把手）"},
+        {"w": "persist", "ipa": "/pərˈsɪst/", "gloss": "坚持／持续", "note": "「坚持/持续」，多用于习惯、问题；persist in old habits（坚持旧习惯）"}
+      ],
+      "antonyms": [
+        {"w": "release", "note": "松开、释放"},
+        {"w": "abandon", "note": "放弃（旧观念）"}
+      ],
+      "nuance": "cling to 带有执着、甚至有点固执的意味（不愿放手）；adhere to 更正式中性（遵守规则）；grip 强调物理握力；persist 强调时间上持续。"
+    },
+    {
+      "word": "sting",
+      "hl": "ng",
+      "levels": ["托福"],
+      "ipa": "/stɪŋ/",
+      "subgroup": "ng",
+      "meaning": "v. 刺痛；（言语）使受伤；（昆虫）蜇  n. 蜇伤；刺痛；（诈骗）钓鱼行动",
+      "etymology": "古英语 stingan「刺、蜇」，日耳曼同根。不规则动词：sting–stung–stung。核心义「尖锐的刺入感」，引申到言辞刺痛和比喻义。",
+      "roots": [
+        {"part": "sting（stingan）", "meaning": "刺、蜇"}
+      ],
+      "phonetics": "st + i /ɪ/ + ng /ŋ/，不规则变形 stung = /stʌŋ/（元音变 /ʌ/，但词尾仍是 /ŋ/）。",
+      "tip": "sting operation（钓鱼执法/卧底行动）是新闻英语高频词汇，the sting of criticism（批评的刺痛）是学术写作常见比喻。",
+      "core": "像针尖突然扎进皮肤——短暂、尖锐、让人一缩的那一下刺痛感",
+      "senses": [
+        {
+          "gloss": "刺痛／蜇伤（物理）",
+          "logic": "针扎感的最直接体现——昆虫蜇、植物刺入",
+          "en": "A bee sting can be painful.",
+          "zh": "蜜蜂蜇伤会很痛。"
+        },
+        {
+          "gloss": "（言语）刺痛／使受伤",
+          "logic": "物理刺痛映射为心理——话语像针一样扎人",
+          "en": "His harsh words stung her more than any physical blow.",
+          "zh": "他刻薄的话语比任何身体打击更令她感到刺痛。"
+        },
+        {
+          "gloss": "钓鱼执法／卧底行动",
+          "logic": "历史偶合，非同一感觉引申——警方设陷阱像蜜蜂蜇人，与'针扎感'无关",
+          "en": "The police ran a sting operation to catch the dealers.",
+          "zh": "警方进行了一次卧底行动抓捕毒贩。"
+        }
+      ],
+      "derivatives": [
+        {"w": "stung", "gloss": "sting 的过去式／分词"},
+        {"w": "stinger", "gloss": "蜇针／刺"}
+      ],
+      "examples": [
+        {
+          "en": "His harsh words stung her more than any physical blow.",
+          "zh": "他刻薄的话语比任何身体打击更令她感到刺痛。",
+          "source": "造句"
+        },
+        {
+          "en": "take the sting out of",
+          "zh": "「减轻……的刺痛/危害」——固定搭配，指降低某事的伤害性。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "pierce", "ipa": "/pɪərs/", "gloss": "刺穿", "note": "「刺穿」，强调穿透，比 sting 更指物理刺入；pierce the skin（刺穿皮肤）"},
+        {"w": "hurt", "ipa": "/hɜːrt/", "gloss": "使受伤／刺痛", "note": "「使受伤/刺痛」，最口语通用，可互换但没有 sting 的「尖锐」感"},
+        {"w": "wound", "ipa": "/wuːnd/", "gloss": "使受伤（书面）", "note": "「使受伤」，比 sting 更正式，多用于情感上的深度伤害；wound someone's pride（伤害某人的自尊）"}
+      ],
+      "antonyms": [
+        {"w": "soothe", "note": "安抚、缓和"},
+        {"w": "comfort", "note": "抚慰"}
+      ],
+      "nuance": "sting 暗含短暂而尖锐的刺痛感（身体或情绪），hurt 最通用，wound 暗含更深的情感伤害且更书面，pierce 强调贯穿动作本身。"
+    },
+    {
+      "word": "gang",
+      "hl": "ng",
+      "levels": ["托福"],
+      "ipa": "/ɡæŋ/",
+      "subgroup": "ng",
+      "meaning": "n. 帮派；一伙；（工人/囚犯的）队伍  v. gang up on = 合伙对付",
+      "etymology": "古英语 gang「行走、一队人马」，日耳曼同根，本义是「一起走的人」。现代含义特指「有组织的犯罪团伙」，也可中性指「一帮朋友」（informal）。",
+      "roots": [
+        {"part": "gang（gangan）", "meaning": "行走、成群结队"}
+      ],
+      "phonetics": "g + a /æ/ + ng /ŋ/，词尾舌根鼻音，与 bang、hang、sang 押韵。注意 a 在 /ŋ/ 前读 /æ/，不是 /ɑː/。",
+      "core": "一群人走在一起，步伐一致，黑压压地向你靠近——有组织、有压迫感的群体感",
+      "senses": [
+        {
+          "gloss": "帮派／团伙",
+          "logic": "一群人走在一起→有组织的（通常犯罪）群体",
+          "en": "The city launched a crackdown on gang-related violence.",
+          "zh": "该市发起了针对帮派暴力的打压行动。"
+        },
+        {
+          "gloss": "一伙／一群（朋友，非正式）",
+          "logic": "帮派义弱化→口语中性指一群（常指年轻人）伙伴",
+          "en": "The whole gang went to the beach.",
+          "zh": "一大伙人去了海滩。"
+        },
+        {
+          "gloss": "（工人／囚犯的）队伍",
+          "logic": "一群人一起干活→劳动队伍",
+          "en": "A gang of workers repaired the road.",
+          "zh": "一队工人修了路。"
+        },
+        {
+          "gloss": "合伙对付（gang up on）",
+          "logic": "一群人围起来对付一个人——群体优势的动词化",
+          "en": "They all ganged up on him.",
+          "zh": "他们合伙对付他。"
+        }
+      ],
+      "derivatives": [
+        {"w": "gangster", "gloss": "黑帮分子"},
+        {"w": "gangland", "gloss": "黑帮地盘"},
+        {"w": "gangway", "gloss": "通道（船员走的过道）"}
+      ],
+      "examples": [
+        {
+          "en": "The city launched a crackdown on gang-related violence.",
+          "zh": "该市发起了针对帮派暴力的打压行动。",
+          "source": "造句"
+        },
+        {
+          "en": "gang up on",
+          "zh": "「合伙对付（某人）」——高频短语动词，口语和新闻英语常见。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "mob", "ipa": "/mɒb/", "gloss": "暴徒／乌合之众", "note": "「暴徒」，比 gang 更强调群体的无序和暴力性；a flash mob（快闪）是中性引申"},
+        {"w": "crew", "ipa": "/kruː/", "gloss": "团队／伙伴", "note": "「团队/伙伴」，比 gang 更口语中性，也可指帮派；film crew（摄制组）"},
+        {"w": "faction", "ipa": "/ˈfækʃn/", "gloss": "派系", "note": "「派系」，比 gang 更正式，多用于政治或组织内部的小团体"}
+      ],
+      "antonyms": [
+        {"w": "individual", "note": "个人（群体义相对）"}
+      ],
+      "nuance": "gang 通常带负面含义（帮派），但口语中可中性指「一群朋友」；mob 更强调乌合之众的暴力性；crew 最中性，广泛用于各种团队；faction 专指有共同利益的政治派别。"
+    },
+    {
+      "word": "mingle",
+      "hl": "ng",
+      "levels": ["托福"],
+      "ipa": "/ˈmɪŋɡl/",
+      "subgroup": "ng2",
+      "meaning": "v. （使）混合；（在社交场合）与人交往、应酬",
+      "etymology": "古英语 mengan「混合」，日耳曼同根，与德语 mengen 同源。核心义是「让不同的东西混在一起」，引申到社交「与各种人交流」。",
+      "roots": [
+        {"part": "ming- (mengan)", "meaning": "混合"},
+        {"part": "-le", "meaning": "反复动作后缀"}
+      ],
+      "phonetics": "m + i /ɪ/ + ng /ŋ/ + g /ɡ/ + l + e。注意：mingle 的 ng 夹在元音中间（i-ng-le），读 /ŋg/ 而非 /ŋ/——g 要发出来！对比 sing（词尾 /ŋ/）vs min-gle（词中 /ŋg/）。",
+      "tip": "社交场合的「mingle」是托福听力对话高频词，描述鸡尾酒会、学术会议上的人际互动。",
+      "core": "不同的液体倒进一个杯子，各自还在但边界变得模糊——'混而不融'的感觉",
+      "senses": [
+        {
+          "gloss": "（使）混合",
+          "logic": "不同东西倒在一起但各自可辨——'混而不融'，保持独立性",
+          "en": "A sense of sadness mingled with relief.",
+          "zh": "悲伤与如释重负交织的感觉。"
+        },
+        {
+          "gloss": "社交应酬／走动交流",
+          "logic": "人像液体一样在房间里流动混合——各人身份还在，但互相接触交流",
+          "en": "The conference gave students a chance to mingle with industry professionals.",
+          "zh": "此次会议给了学生们与业界专业人士交流的机会。"
+        }
+      ],
+      "derivatives": [
+        {"w": "commingle", "gloss": "混合（com- 一起 + mingle）"},
+        {"w": "intermingle", "gloss": "互相混合（inter- 相互 + mingle）"}
+      ],
+      "examples": [
+        {
+          "en": "The conference gave students a chance to mingle with industry professionals.",
+          "zh": "此次会议给了学生们与业界专业人士交流的机会。",
+          "source": "造句"
+        },
+        {
+          "en": "a sense of sadness mingled with relief",
+          "zh": "「悲伤与如释重负交织的感觉」——情绪混合的文学用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "blend", "ipa": "/blend/", "gloss": "混合／融合", "note": "「混合」，比 mingle 更彻底，混合后难以分辨各成分；blend colors（调和颜色）"},
+        {"w": "socialize", "ipa": "/ˈsoʊʃəlaɪz/", "gloss": "社交", "note": "「社交」义近义词，比 mingle 更正式，强调建立社交关系的过程"},
+        {"w": "mix", "ipa": "/mɪks/", "gloss": "混合／交际", "note": "「混合/交际」，最口语，mix with people（与人打交道）"}
+      ],
+      "antonyms": [
+        {"w": "separate", "note": "分开"},
+        {"w": "isolate", "note": "孤立、隔绝"}
+      ],
+      "nuance": "mingle 暗含保持各自独立性的「混在一起」（人还是个体），blend 是彻底融合（分不清来源）；社交义上 mingle 比 socialize 更口语，强调在场合里走动交流的动态过程。"
+    },
+    {
+      "word": "single",
+      "hl": "ng",
+      "levels": ["六级"],
+      "ipa": "/ˈsɪŋɡl/",
+      "subgroup": "ng2",
+      "meaning": "adj. 单一的；单身的；单程的  n. 单曲；单人间  v. single out = 单独挑出",
+      "etymology": "拉丁语 singulus「单个」，与 singular（单数的/独特的）同根。核心义始终是「只有一个」：一张单曲、一个人、一张单程票。",
+      "roots": [
+        {"part": "singl- (singulus)", "meaning": "单个"}
+      ],
+      "phonetics": "s + i /ɪ/ + ng /ŋ/ + g /ɡ/ + le。ng 在元音间：/ŋg/，g 发出来！/ˈsɪŋɡl/，对比 sing /sɪŋ/——single 多一个 /ɡ/。",
+      "tip": "single out（挑选出来）在托福阅读里常见，意为「将……单独挑出/指名」；not a single one = 一个都没有，强调语气比 none 更强。",
+      "core": "一个人站在空地正中央，环顾四周，看不到第二个影子——绝对的'唯一'感",
+      "senses": [
+        {
+          "gloss": "单一的／唯一的",
+          "logic": "只有一个、没有第二个——绝对纯粹的唯一",
+          "en": "Not a single word was spoken.",
+          "zh": "一个字都没有说。"
+        },
+        {
+          "gloss": "单身的",
+          "logic": "只有一个人——没有伴侣",
+          "en": "She's been single for two years.",
+          "zh": "她单身两年了。"
+        },
+        {
+          "gloss": "单程的",
+          "logic": "只有去的路没有返回——单向",
+          "en": "A single ticket to London.",
+          "zh": "一张去伦敦的单程票。"
+        },
+        {
+          "gloss": "单曲",
+          "logic": "单独的一首歌，不是整张专辑",
+          "en": "The band released a new single.",
+          "zh": "乐队发行了一首新单曲。"
+        },
+        {
+          "gloss": "单独挑出（single out）",
+          "logic": "从一群人里把唯一一个挑出来——动词化",
+          "en": "The report singled out three factors as critical.",
+          "zh": "报告单独指出了三个至关重要的因素。"
+        }
+      ],
+      "derivatives": [
+        {"w": "singular", "gloss": "单数的／独特的"},
+        {"w": "singularity", "gloss": "奇点／独特性"},
+        {"w": "singly", "gloss": "一个一个地（adv.）"}
+      ],
+      "examples": [
+        {
+          "en": "The report singled out three factors as critical to the project's failure.",
+          "zh": "报告单独指出了三个对项目失败至关重要的因素。",
+          "source": "造句"
+        },
+        {
+          "en": "not a single word",
+          "zh": "「一个字都没有」——强调语气，比 no words 更绝对。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sole", "ipa": "/soʊl/", "gloss": "唯一的（排他）", "note": "「唯一的」，比 single 更强调排他性；the sole survivor（唯一幸存者）"},
+        {"w": "individual", "ipa": "/ˌɪndɪˈvɪdʒuəl/", "gloss": "单独的／个人的", "note": "「单独的/个人的」，强调独立性，比 single 更正式"},
+        {"w": "unmarried", "ipa": "/ʌnˈmærid/", "gloss": "未婚的", "note": "「未婚」，是 single（单身）义的正式说法，多用于官方文件"}
+      ],
+      "antonyms": [
+        {"w": "multiple", "note": "多个的"},
+        {"w": "married", "note": "已婚的（单身义）"}
+      ],
+      "nuance": "single 是中性「单个」；sole 更强调「除此之外别无他物」（更排他）；individual 强调独立个体性，多用于对比「集体」；unmarried 仅用于婚姻状态，比 single 更正式。"
+    },
+    {
+      "word": "angry",
+      "hl": "n",
+      "levels": ["六级"],
+      "ipa": "/ˈæŋɡri/",
+      "subgroup": "ng2",
+      "meaning": "adj. 愤怒的；（伤口）红肿发炎的",
+      "etymology": "古诺斯语 angr「悲伤、痛苦」，词根 ang- 核心义是「压迫、收紧」——愤怒是一种被压缩的情绪。与 anguish（极度痛苦）、anger（愤怒，名词）同根。",
+      "roots": [
+        {"part": "ang- (angr)", "meaning": "压迫、痛苦"},
+        {"part": "-ry", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "æ + n /ŋ/ + gr + i。注意：字母是 n+g，但 n 在 g 前同化为 /ŋ/，g 保留 /ɡ/，合读 /ŋɡr/——这是第三组规律的典型例子。不要读成 /ˈænɡri/（ /n/ + /g/），要读 /ˈæŋɡri/（/ŋ/ + /g/）。",
+      "core": "胸口有一团气被死死压住，憋着、胀着，想炸但还没炸——那种被压缩的热感",
+      "senses": [
+        {
+          "gloss": "愤怒的",
+          "logic": "被压缩的情绪一旦释放就是爆发——愤怒就是这股被压住的、发热的能量",
+          "en": "She was angry not because she failed, but because no one warned her.",
+          "zh": "她愤怒的原因不是失败本身，而是没有人事先警告她。"
+        },
+        {
+          "gloss": "（伤口）红肿发炎的",
+          "logic": "历史偶合，非同一感觉引申——伤口红肿像愤怒的脸红胀，但不是从'压迫'引申来的",
+          "en": "An angry red wound on his arm.",
+          "zh": "他手臂上一个红肿的伤口。"
+        }
+      ],
+      "derivatives": [
+        {"w": "anger", "gloss": "愤怒（n.）"},
+        {"w": "angrily", "gloss": "愤怒地（adv.）"},
+        {"w": "anguish", "gloss": "极度痛苦（同根词）"}
+      ],
+      "examples": [
+        {
+          "en": "She was angry not because she failed, but because no one warned her.",
+          "zh": "她愤怒的原因不是失败本身，而是没有人事先警告她。",
+          "source": "造句"
+        },
+        {
+          "en": "an angry red wound",
+          "zh": "「红肿的伤口」——angry 的身体义，描述发炎状态。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "furious", "ipa": "/ˈfjʊəriəs/", "gloss": "狂怒的", "note": "「狂怒的」，比 angry 程度强得多，几乎失控；furious at the injustice（对不公愤恨填膺）"},
+        {"w": "irritated", "ipa": "/ˈɪrɪteɪtɪd/", "gloss": "恼怒的（轻度）", "note": "「恼怒的」，程度比 angry 轻，是一种烦躁的不满；irritated by the noise（被噪音惹烦）"},
+        {"w": "indignant", "ipa": "/ɪnˈdɪɡnənt/", "gloss": "义愤的", "note": "「义愤填膺的」，因为感到不公正而愤怒，比 angry 更正式，带道德色彩"}
+      ],
+      "antonyms": [
+        {"w": "calm", "note": "平静的"},
+        {"w": "pleased", "note": "满意的、高兴的"}
+      ],
+      "nuance": "angry 是基准词；irritated 是「被轻微惹烦」（程度最轻）；angry 是「明显愤怒」；furious 是「快要失控」（程度最强）；indignant 特指因感到不公正而产生的有原则的愤怒。"
+    },
+    {
+      "word": "finger",
+      "hl": "n",
+      "levels": ["六级"],
+      "ipa": "/ˈfɪŋɡər/",
+      "subgroup": "ng2",
+      "meaning": "n. 手指（通常指食指到小指）  v. 用手指触摸；指认（嫌疑人）",
+      "etymology": "古英语 finger，日耳曼同根，与德语 Finger 同源。核心义始终是「手上的指头」，引申到「指认某人」（finger the suspect）。",
+      "roots": [
+        {"part": "finger（古英语）", "meaning": "手指"}
+      ],
+      "phonetics": "f + i /ɪ/ + n + g + er。字母 ng 夹在元音间：n 同化为 /ŋ/，g 保留 /ɡ/——/ˈfɪŋɡər/。这是最常被错读的词：不要读成 /ˈfɪnɡər/（保持普通 /n/），也不要读成 /ˈfɪŋər/（吞掉 /g/）。",
+      "tip": "finger 五指区分：thumb（拇指）、index finger（食指）、middle finger（中指）、ring finger（无名指）、little/pinky finger（小指）。",
+      "core": "五根细长的东西从手掌心伸出，每一根都能独立弯曲、指、捏——灵活而精准的工具感",
+      "senses": [
+        {
+          "gloss": "手指",
+          "logic": "身体的这五根灵活分支就是本体",
+          "en": "She pointed a finger at the map.",
+          "zh": "她用手指指着地图。"
+        },
+        {
+          "gloss": "用手指触摸",
+          "logic": "名词动词化——用手指去触碰／摆弄",
+          "en": "He fingered the fabric to feel its texture.",
+          "zh": "他用手摸那块布料感受质地。"
+        },
+        {
+          "gloss": "指认（嫌疑人）",
+          "logic": "用手指指向某人→在警方语境里引申为指认出罪犯",
+          "en": "The witness fingered him as the robber.",
+          "zh": "目击者指认他就是劫匪。"
+        }
+      ],
+      "derivatives": [
+        {"w": "fingertip", "gloss": "指尖"},
+        {"w": "fingernail", "gloss": "指甲"},
+        {"w": "fingerprint", "gloss": "指纹"},
+        {"w": "fingering", "gloss": "（音乐）指法"}
+      ],
+      "examples": [
+        {
+          "en": "She pointed an accusing finger at the company's management.",
+          "zh": "她用指责的手指指向公司管理层。",
+          "source": "造句"
+        },
+        {
+          "en": "put one's finger on",
+          "zh": "「说出……的准确原因」——高频习语，比 identify 更形象。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "digit", "ipa": "/ˈdɪdʒɪt/", "gloss": "手指／脚趾（解剖学术语）", "note": "「手指/脚趾」的正式医学/解剖学术语，也是「数字」（digital 的词根）"},
+        {"w": "point", "ipa": "/pɔɪnt/", "gloss": "指向", "note": "「指向」义，finger 作动词时的近义；point at the suspect（指向嫌疑人）"}
+      ],
+      "antonyms": [],
+      "nuance": "finger 是日常词，digit 是科学/技术术语（数字设备 digital device 都从 digit 来）。finger 作动词「指认」时带有正式/法律语境色彩。"
+    },
+    {
+      "word": "think",
+      "hl": "n",
+      "levels": ["六级"],
+      "ipa": "/θɪŋk/",
+      "subgroup": "nk",
+      "meaning": "v. 思考；认为；设想  n. 思考（a good think）",
+      "etymology": "古英语 þencan「考虑、估计」，日耳曼同根，与德语 denken 同源。核心义是「在脑子里运算」，区别于 feel（用感觉）。",
+      "roots": [
+        {"part": "think（þencan）", "meaning": "思考"}
+      ],
+      "phonetics": "th /θ/ + i /ɪ/ + nk /ŋk/——n 在 k 前同化为 /ŋ/，读出 /ŋk/ 的 k 爆破。/θɪŋk/，不是 /θɪnk/。这是 nk 规律最高频的词，从这里建立 /ŋk/ 肌肉记忆。",
+      "tip": "think 的不规则变形：think–thought–thought（元音彻底变，past tense /θɔːt/）。",
+      "core": "脑袋里像有一个齿轮在转动，把进来的信息碾碎、翻面、重新组合——那种'运筹'的感觉",
+      "senses": [
+        {
+          "gloss": "思考／想",
+          "logic": "齿轮转动的过程就是思考本身——信息在脑子里被加工",
+          "en": "I think we need to reconsider the entire approach.",
+          "zh": "我认为我们需要重新考虑整体方案。"
+        },
+        {
+          "gloss": "认为／觉得",
+          "logic": "思考的输出结果——'想过之后得出的判断'",
+          "en": "She thinks it's a good idea.",
+          "zh": "她认为这是个好主意。"
+        },
+        {
+          "gloss": "设想／想象",
+          "logic": "在脑子里搭建还没发生的事——思维的一种前瞻延伸",
+          "en": "Think of a world without war.",
+          "zh": "想象一个没有战争的世界。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thought", "gloss": "思想／think 的过去式／分词"},
+        {"w": "thinker", "gloss": "思想家"},
+        {"w": "thinking", "gloss": "思考（n.）"},
+        {"w": "thinkable", "gloss": "可想象的"},
+        {"w": "unthinkable", "gloss": "不可想象的"}
+      ],
+      "examples": [
+        {
+          "en": "I think we need to reconsider the entire approach.",
+          "zh": "我认为我们需要重新考虑整体方案。",
+          "source": "造句"
+        },
+        {
+          "en": "think outside the box",
+          "zh": "「跳出框框思考」——高频职场习语，表示创新性思维。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "consider", "ipa": "/kənˈsɪdər/", "gloss": "考虑", "note": "「考虑」，比 think 更正式，强调权衡利弊；consider all options（考虑所有选项）"},
+        {"w": "believe", "ipa": "/bɪˈliːv/", "gloss": "认为／相信", "note": "「认为/相信」，比 think 确信度更高；I believe it's right（我相信它是对的）"},
+        {"w": "ponder", "ipa": "/ˈpɒndər/", "gloss": "深思熟虑", "note": "「深思熟虑」，比 think 更强调长时间仔细琢磨；ponder a decision（反复权衡一个决定）"}
+      ],
+      "antonyms": [
+        {"w": "feel", "note": "用直觉/情感而非思考判断"}
+      ],
+      "nuance": "think 最通用，覆盖认知和判断；consider 更强调权衡过程；believe 有主观确信感；ponder 是「反复咀嚼、慢慢想」。I think 比 I believe 不确定性更高，I ponder 不用于陈述观点，而用于描述思考过程。"
+    },
+    {
+      "word": "thank",
+      "hl": "n",
+      "levels": ["六级"],
+      "ipa": "/θæŋk/",
+      "subgroup": "nk",
+      "meaning": "v. 感谢  n. thanks = 谢意；谢谢（感叹词）",
+      "etymology": "古英语 þancian「感谢」，日耳曼同根，与德语 danken 同源。think 和 thank 是同一个词根 þencan 的分支——「想到（对方的好）→ 表达感谢」。两词在古英语里几乎一致，后来分化。",
+      "roots": [
+        {"part": "thank（þancian）", "meaning": "感谢、想到别人的恩惠"}
+      ],
+      "phonetics": "th /θ/ + a /æ/ + nk /ŋk/，n 在 k 前读 /ŋ/，k 发出来，收尾是轻爆破。/θæŋk/ vs think /θɪŋk/——唯一区别是元音 /æ/ vs /ɪ/。",
+      "tip": "think 和 thank 在词根上同源（古英语 þanc = 思想/感谢），「感恩」这个行为本就是「想到别人的好」——两词是绝佳的同根记忆对。",
+      "core": "心里暖暖的，一股感激从胸口升上来，想对着那个人说出来——'被给予后想回应'的感觉",
+      "senses": [
+        {
+          "gloss": "感谢（v.）",
+          "logic": "被给予后的温暖回应——想到对方的好，说出口",
+          "en": "I'd like to thank everyone who supported this project.",
+          "zh": "我想感谢所有支持这个项目的人。"
+        },
+        {
+          "gloss": "谢意／谢谢（n.）",
+          "logic": "感谢行为的名词化",
+          "en": "A big thanks to the volunteers.",
+          "zh": "非常感谢志愿者们。"
+        },
+        {
+          "gloss": "多亏了（thanks to）",
+          "logic": "半固定搭配——'因为有了……的帮助／原因'，可正可反讽",
+          "en": "Thanks to his help, we finished early.",
+          "zh": "多亏了他的帮助，我们提前完成了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thankful", "gloss": "感激的"},
+        {"w": "thankless", "gloss": "吃力不讨好的（没人感谢的）"},
+        {"w": "thanksgiving", "gloss": "感恩节／感恩"},
+        {"w": "thankfully", "gloss": "庆幸地"}
+      ],
+      "examples": [
+        {
+          "en": "I'd like to thank everyone who supported this project.",
+          "zh": "我想感谢所有支持这个项目的人。",
+          "source": "造句"
+        },
+        {
+          "en": "thanks to",
+          "zh": "「多亏了……」——可表正面（thanks to your help）或反讽（thanks to his mistake）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "appreciate", "ipa": "/əˈpriːʃieɪt/", "gloss": "感激／欣赏", "note": "「感激/欣赏」，比 thank 更强调内心的认可价值，正式语境；I appreciate your help"},
+        {"w": "acknowledge", "ipa": "/əkˈnɒlɪdʒ/", "gloss": "致谢／承认", "note": "「致谢/承认」，公开表达感谢，比 thank 更正式；acknowledge someone's contribution（致谢某人的贡献）"},
+        {"w": "express gratitude", "gloss": "表达感谢", "note": "「表达感谢」——正式书面替换，比 thank 更完整"}
+      ],
+      "antonyms": [
+        {"w": "blame", "note": "责怪"},
+        {"w": "criticize", "note": "批评"}
+      ],
+      "nuance": "thank 是最口语直接的感谢动词；appreciate 更内化（感受到价值）；acknowledge 是公开的正式致谢（多出现在演讲或论文致谢部分）。「Thanks to」作为连接词时已半固定，不等于 thank。"
+    },
+    {
+      "word": "shrink",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ʃrɪŋk/",
+      "subgroup": "nk",
+      "meaning": "v. 收缩；减少；退缩（shrink from = 逃避）  n. 心理医生（俚语）",
+      "etymology": "古英语 scrincan「萎缩、收缩」，日耳曼同根。不规则动词：shrink–shrank–shrunk（《小鬼当家》Honey, I Shrunk the Kids 里的 shrunk 是过去分词）。",
+      "roots": [
+        {"part": "shrink（scrincan）", "meaning": "萎缩、收缩"}
+      ],
+      "phonetics": "shr- + i /ɪ/ + nk /ŋk/。shr- 三辅音连缀（sh /ʃ/ + r）；nk = /ŋk/，k 爆破收尾。不规则变形要记：shrank（过去式）/ shrunk（过去分词）。",
+      "tip": "shrink from 在托福写作里是「回避/不敢面对」的学术搭配；shrink 作俚语「心理医生」来自「head shrinker（给脑袋缩水的人）」，是20世纪口语。",
+      "core": "一个东西像被抽了气一样，从大变小、从鼓变瘪——那种'往回缩'的感觉",
+      "senses": [
+        {
+          "gloss": "收缩／缩小",
+          "logic": "物理上从大变小的过程——体积、数量、规模的缩减",
+          "en": "The economy shrank by 3% in the second quarter due to supply chain disruptions.",
+          "zh": "由于供应链中断，经济在第二季度萎缩了3%。"
+        },
+        {
+          "gloss": "退缩／回避（shrink from）",
+          "logic": "物理收缩映射到心理——人往后缩 = 不敢面对",
+          "en": "He shrank from the responsibility.",
+          "zh": "他逃避了责任。"
+        },
+        {
+          "gloss": "心理医生（俚语）",
+          "logic": "历史偶合，非同一感觉引申——来自 head-shrinker（给脑袋缩水的人），调侃心理咨询师",
+          "en": "She's been seeing a shrink for anxiety.",
+          "zh": "她因焦虑在看心理医生。"
+        }
+      ],
+      "derivatives": [
+        {"w": "shrank", "gloss": "shrink 的过去式"},
+        {"w": "shrunk", "gloss": "shrink 的过去分词"},
+        {"w": "shrinkage", "gloss": "缩水／损耗"},
+        {"w": "shrinkable", "gloss": "可收缩的"}
+      ],
+      "examples": [
+        {
+          "en": "The economy shrank by 3% in the second quarter due to supply chain disruptions.",
+          "zh": "由于供应链中断，经济在第二季度萎缩了3%。",
+          "source": "造句"
+        },
+        {
+          "en": "shrink from responsibility",
+          "zh": "「逃避责任」——shrink from = 不敢面对/回避，托福写作常用。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "contract", "ipa": "/kənˈtrækt/", "gloss": "收缩", "note": "「收缩」，比 shrink 更正式，用于物理或经济收缩；the market contracted（市场收缩）"},
+        {"w": "diminish", "ipa": "/dɪˈmɪnɪʃ/", "gloss": "减小／减弱", "note": "「减小/减弱」，比 shrink 更正式，强调逐渐减少；diminishing returns（收益递减）"},
+        {"w": "recoil", "ipa": "/rɪˈkɔɪl/", "gloss": "退缩／反冲", "note": "「退缩/反冲」，比 shrink from 更强调本能性的畏缩反应；recoil in horror（惊骇退缩）"}
+      ],
+      "antonyms": [
+        {"w": "expand", "note": "扩张、增大"},
+        {"w": "grow", "note": "增长"}
+      ],
+      "nuance": "shrink 最通用（物理、经济、心理皆可）；contract 更正式（经济合同语境）；diminish 强调「逐渐减小」的过程；recoil 专指本能性的退缩。shrink from（逃避）和 recoil from（本能退缩）有细微差异：前者更主动的回避，后者更本能的厌恶反应。"
+    },
+    {
+      "word": "distinct",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/dɪˈstɪŋkt/",
+      "subgroup": "nk",
+      "meaning": "adj. 明显的；截然不同的；清晰可辨的",
+      "etymology": "拉丁语 distinctus = dis-(分开) + stinguere(刺、标记) = 「分别标记出来」。与 extinguish（熄灭，「把标记抹去」）、instinct（本能）同根——都含 stinguere（刺/标记）。",
+      "roots": [
+        {"part": "dis-", "meaning": "分开、区别"},
+        {"part": "-stinct (stinguere)", "meaning": "刺、标记"}
+      ],
+      "phonetics": "di + s + t + i /ɪ/ + n /ŋ/ + ct /kt/。注意：nct 结尾 = /ŋkt/，n 在 k 前同化为 /ŋ/，k 和 t 都发出来。/dɪˈstɪŋkt/，不是 /dɪˈstɪnkt/。",
+      "tip": "distinct vs distinctive：distinct = 明显不同（a distinct advantage），distinctive = 有鲜明特色/可识别性（a distinctive style）——前者强调差异，后者强调独特标志性。",
+      "core": "两个东西放在一起，一眼就看出它们不是同一个——那种边界清晰的'可区分感'",
+      "senses": [
+        {
+          "gloss": "截然不同的",
+          "logic": "两个东西被'刺开标记'→各自独立可辨，不是同一个",
+          "en": "There is a distinct difference between correlation and causation.",
+          "zh": "相关性与因果关系之间存在明显差异。"
+        },
+        {
+          "gloss": "清晰可辨的／明显的",
+          "logic": "标记出来的东西轮廓鲜明→一眼就能看清、不会混淆",
+          "en": "A distinct smell of coffee filled the room.",
+          "zh": "房间里弥漫着明显的咖啡味。"
+        },
+        {
+          "gloss": "确切的／明确的（强调程度）",
+          "logic": "清晰到无法忽视→不是模糊可能，而是确定的存在",
+          "en": "There is a distinct possibility he is lying.",
+          "zh": "他有相当大的可能在撒谎。"
+        }
+      ],
+      "derivatives": [
+        {"w": "distinction", "gloss": "区别／差别"},
+        {"w": "distinctive", "gloss": "有特色的／独特的"},
+        {"w": "distinctly", "gloss": "明显地／清楚地"},
+        {"w": "indistinct", "gloss": "模糊的／不清晰的"}
+      ],
+      "examples": [
+        {
+          "en": "There is a distinct difference between correlation and causation.",
+          "zh": "相关性与因果关系之间存在明显差异。",
+          "source": "造句"
+        },
+        {
+          "en": "a distinct possibility",
+          "zh": "「相当大的可能性」——distinct = 明显的，是表达「可能性不低」的正式说法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "clear", "ipa": "/klɪər/", "gloss": "清晰的", "note": "「清晰的」，最口语，比 distinct 更泛；a clear difference（明显的差异）"},
+        {"w": "marked", "ipa": "/mɑːrkt/", "gloss": "显著的", "note": "「显著的」，比 distinct 更强调「幅度大、无法忽视」；a marked improvement（显著改善）"},
+        {"w": "evident", "ipa": "/ˈevɪdənt/", "gloss": "显而易见的", "note": "「显而易见的」，比 distinct 更强调「任何人都能看出来」；evident concern（显而易见的担忧）"}
+      ],
+      "antonyms": [
+        {"w": "vague", "note": "模糊的"},
+        {"w": "indistinct", "note": "不清晰的，难以辨认的"}
+      ],
+      "nuance": "distinct 强调「可以清楚区分/不混淆」；marked 强调「程度显著、量上差别大」；evident 强调「对所有观察者都明显」；clear 最口语，不分场合。学术写作中 distinct 和 marked 比 clear 更正式。"
+    },
+    {
+      "word": "instinct",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈɪnstɪŋkt/",
+      "subgroup": "nk",
+      "meaning": "n. 本能；天生的冲动；（对某事的）直觉",
+      "etymology": "拉丁语 instinctus = in-(向内) + stinguere(刺、激发) = 「从内部刺激驱动」。与 distinct、extinct 同根——stinguere 这把「刺」一根打出三个词：标记（distinct）、熄灭（extinct）、内驱（instinct）。",
+      "roots": [
+        {"part": "in-", "meaning": "向内"},
+        {"part": "-stinct (stinguere)", "meaning": "刺、激发"}
+      ],
+      "phonetics": "in + s + t + i /ɪ/ + nct /ŋkt/，重音在前 IN-stinct。词尾 -nct 读 /ŋkt/：n 同化为 /ŋ/，k 和 t 都发出来——是 nk 规律 + 额外 t 的组合。",
+      "tip": "instinct 和 distinct、extinct 是「词根同源三兄弟」：in-stinct（刺进去=本能）/ di-stinct（刺开=区分）/ ex-tinct（刺灭=绝灭）。背一个带三个。",
+      "core": "不需要经过大脑想，身体自己就知道该做什么——那种'被一只无形的手从里面推着走'的感觉",
+      "senses": [
+        {
+          "gloss": "本能／天性",
+          "logic": "从内部被激发驱动——天生就会的、不需要学习的反应",
+          "en": "Her instinct told her something was wrong before she saw any evidence.",
+          "zh": "在看到任何证据之前，她的直觉已经告诉她有什么不对劲。"
+        },
+        {
+          "gloss": "直觉",
+          "logic": "本能弱化→不需要推理的直接判断，是内在感觉而非理性分析",
+          "en": "Trust your instincts.",
+          "zh": "相信你的直觉。"
+        }
+      ],
+      "derivatives": [
+        {"w": "instinctive", "gloss": "本能的／直觉的"},
+        {"w": "instinctively", "gloss": "本能地（adv.）"},
+        {"w": "instinctual", "gloss": "本能的（偏学术，同 instinctive）"}
+      ],
+      "examples": [
+        {
+          "en": "Her instinct told her something was wrong before she saw any evidence.",
+          "zh": "在看到任何证据之前，她的直觉已经告诉她有什么不对劲。",
+          "source": "造句"
+        },
+        {
+          "en": "survival instinct",
+          "zh": "「求生本能」——托福生物和心理类阅读高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "intuition", "ipa": "/ˌɪntjuˈɪʃn/", "gloss": "直觉", "note": "「直觉」，比 instinct 更侧重认知上的无意识判断，instinct 偏生物性驱动；female intuition（女性直觉）"},
+        {"w": "impulse", "ipa": "/ˈɪmpʌls/", "gloss": "冲动", "note": "「冲动」，比 instinct 更强调突发性和短暂性；act on impulse（冲动行事）"},
+        {"w": "reflex", "ipa": "/ˈriːfleks/", "gloss": "反射动作", "note": "「反射动作」，比 instinct 更生理性，是自动的神经反应；a reflex action（反射动作）"}
+      ],
+      "antonyms": [
+        {"w": "reason", "note": "理性思考（与本能相对）"},
+        {"w": "deliberation", "note": "深思熟虑"}
+      ],
+      "nuance": "instinct 是深层生物性驱动（动物的求生本能）；intuition 是无意识的认知判断（直觉感知）；impulse 是短暂的冲动（一时的欲望）；reflex 是自动的神经反应（无法控制）。人类行为中 instinct 和 intuition 常混用，但严格区分时 instinct 更原始、更生物性。"
+    },
+    {
+      "word": "extinct",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ɪkˈstɪŋkt/",
+      "subgroup": "nk",
+      "meaning": "adj. 灭绝的；（火山）已死的；（制度/职位）废止的",
+      "etymology": "拉丁语 extinctus = ex-(出、去除) + stinguere(刺灭、熄灭) = 「把火焰刺灭」→ 消亡。与 distinguish（「用光拉开」→ 区分）、instinct 同根。extinction（灭绝）是其名词形式，托福生物类文章超高频。",
+      "roots": [
+        {"part": "ex-", "meaning": "向外、去除"},
+        {"part": "-stinct (stinguere)", "meaning": "刺灭、熄灭"}
+      ],
+      "phonetics": "ex + t + i /ɪ/ + nct /ŋkt/，重音在后 ex-TINCT。-nct = /ŋkt/：n 在 k 前同化为 /ŋ/，再跟 k 和 t 的双爆破。/ɪkˈstɪŋkt/。",
+      "core": "火苗被掐灭后升起的一缕烟，热量没了，光没了，什么都没有留下——彻底沉寂的消亡感",
+      "senses": [
+        {
+          "gloss": "灭绝的（物种）",
+          "logic": "火焰被刺灭→物种种群被彻底消灭干净，一个不剩",
+          "en": "The dodo became extinct in the late 17th century due to human hunting and habitat destruction.",
+          "zh": "渡渡鸟因人类捕猎和栖息地破坏，于17世纪末灭绝。"
+        },
+        {
+          "gloss": "已死的（火山）",
+          "logic": "火山的活力像火一样被熄灭——不再喷发",
+          "en": "The volcano is extinct.",
+          "zh": "这座火山是死火山。"
+        },
+        {
+          "gloss": "废止的（制度／职位）",
+          "logic": "制度或职位像火焰一样被扑灭——不再存在",
+          "en": "The position became extinct after the reorganization.",
+          "zh": "该职位在重组后被废止。"
+        }
+      ],
+      "derivatives": [
+        {"w": "extinction", "gloss": "灭绝（n.）"},
+        {"w": "extinguish", "gloss": "熄灭／扑灭（v.）"},
+        {"w": "extinguisher", "gloss": "灭火器"}
+      ],
+      "examples": [
+        {
+          "en": "The dodo became extinct in the late 17th century due to human hunting and habitat destruction.",
+          "zh": "渡渡鸟因人类捕猎和栖息地破坏，于17世纪末灭绝。",
+          "source": "造句"
+        },
+        {
+          "en": "on the brink of extinction",
+          "zh": "「濒临灭绝」——托福生物和环境类文章最高频的搭配之一。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "vanished", "ipa": "/ˈvænɪʃt/", "gloss": "消失的", "note": "「消失的」，比 extinct 更口语，不带科学分类色彩；vanished civilizations（消亡的文明）"},
+        {"w": "obsolete", "ipa": "/ˌɒbsəˈliːt/", "gloss": "过时废弃的", "note": "「过时废弃的」，用于技术、制度、词语——人类造物的消亡，不用于生物"},
+        {"w": "defunct", "ipa": "/dɪˈfʌŋkt/", "gloss": "已停止运作的", "note": "「已停止运作的」，用于组织、机构、系统；a defunct company（倒闭的公司）"}
+      ],
+      "antonyms": [
+        {"w": "extant", "note": "现存的（学术反义词，尤用于物种和文献）"},
+        {"w": "thriving", "note": "繁盛的"}
+      ],
+      "nuance": "extinct 是生物学专用词，特指物种永久消亡（无可逆转）；obsolete 是技术/语言领域的「废弃」；defunct 是组织/机构的「停运」；vanished 最口语，不带技术分类色彩。在托福生物文章里，extinct 和 extant（现存）是一对高频对立词。"
+    },
+    {
+      "word": "blanket",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/ˈblæŋkɪt/",
+      "subgroup": "nk",
+      "meaning": "n. 毯子；（覆盖一切的）一层  adj. 全面的、一刀切的（blanket ban）  v. 覆盖",
+      "etymology": "中古英语 blankete，来自 Thomas Blanket（14世纪布里斯托尔商人），据说他推广了这种织物。词义从名词「毯子」→ 动词「用毯子覆盖」→ 形容词「覆盖一切的/全面的」。",
+      "roots": [
+        {"part": "blank-", "meaning": "空白的（早期含义，毯子是单色布）"},
+        {"part": "-et", "meaning": "小词后缀"}
+      ],
+      "phonetics": "bl + a /æ/ + nk /ŋk/ + et，n 在 k 前同化为 /ŋ/，k 发出来。重音在前 BLAN-ket，-ket 弱读 /kɪt/。",
+      "tip": "blanket ban / blanket policy（全面禁令/一刀切政策）是托福阅读和写作的高频搭配，描述不加区分的整体措施——是「毯子一样盖住所有人」的比喻。",
+      "core": "一张大毯子从头盖到脚，把底下所有东西都罩住——不分彼此、一律覆盖的感觉",
+      "senses": [
+        {
+          "gloss": "毯子",
+          "logic": "覆盖身体的织物——本体，最早的含义",
+          "en": "She pulled the blanket over herself.",
+          "zh": "她把毯子拉过来盖住自己。"
+        },
+        {
+          "gloss": "（覆盖一切的）一层",
+          "logic": "毯子盖住一切→像毯子一样覆盖的层",
+          "en": "A blanket of snow covered the entire valley.",
+          "zh": "一层白雪覆盖了整个山谷。"
+        },
+        {
+          "gloss": "全面的／一刀切的（adj.）",
+          "logic": "像毯子盖住所有人一样→不加区分、一律对待",
+          "en": "The government imposed a blanket ban on all public gatherings.",
+          "zh": "政府对所有公共集会实施了全面禁令。"
+        },
+        {
+          "gloss": "覆盖（v.）",
+          "logic": "名词动词化→用毯子盖住",
+          "en": "Snow blanketed the landscape.",
+          "zh": "大雪覆盖了大地。"
+        }
+      ],
+      "derivatives": [
+        {"w": "blanketing", "gloss": "覆盖（n.）"},
+        {"w": "blanketed", "gloss": "被覆盖的（adj.）"}
+      ],
+      "examples": [
+        {
+          "en": "The government imposed a blanket ban on all public gatherings.",
+          "zh": "政府对所有公共集会实施了全面禁令。",
+          "source": "造句"
+        },
+        {
+          "en": "A blanket of snow covered the entire valley.",
+          "zh": "一层白雪覆盖了整个山谷。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "comprehensive", "ipa": "/ˌkɒmprɪˈhensɪv/", "gloss": "全面的", "note": "「全面的」，比 blanket 更正式，强调「覆盖所有方面」，不带「一刀切」的负面含义"},
+        {"w": "sweeping", "ipa": "/ˈswiːpɪŋ/", "gloss": "大范围的／笼统的", "note": "「大范围的/笼统的」，与 blanket 很接近，sweeping changes（大刀阔斧的变革），可带正面或批评意味"},
+        {"w": "across-the-board", "gloss": "全面的／一律的", "note": "「全面的/一律的」，口语化，与 blanket 在「不加区分」这一含义上最接近"}
+      ],
+      "antonyms": [
+        {"w": "selective", "note": "有选择性的"},
+        {"w": "targeted", "note": "针对特定目标的"}
+      ],
+      "nuance": "blanket（作形容词）强调「不加区分、不考虑个别情况」，通常带有一定批评色彩（a blanket ban 暗示可能太简单粗暴）；comprehensive 是褒义，强调全面覆盖；sweeping 强调影响范围大，可褒可贬。"
+    },
+    {
+      "word": "plank",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/plæŋk/",
+      "subgroup": "nk",
+      "meaning": "n. 厚木板；（政党/计划的）核心政策条款  v. 用木板铺设",
+      "etymology": "古法语 planke「厚板」，来自拉丁语 planca。从「建筑用厚木板」引申到「支撑整体的核心结构」，因此政党竞选纲领里的核心条款叫 plank（「政策支柱」）。",
+      "roots": [
+        {"part": "plank（planca）", "meaning": "厚板"}
+      ],
+      "phonetics": "pl + a /æ/ + nk /ŋk/，n 在 k 前同化为 /ŋ/，k 发出来，末尾干净收爆破。单音节，与 bank、rank、frank、blank 押韵。",
+      "tip": "「walk the plank」（走跳板、被迫离职）是高频习语，来自海盗强迫俘虏从船舷木板走入大海的历史；a key plank of the policy = 政策的核心支柱，是托福阅读政治/社会类文章的用语。",
+      "core": "一块厚实的木板，平放着可以踩，竖起来可以撑——结实、可靠、不会断的支撑感",
+      "senses": [
+        {
+          "gloss": "厚木板",
+          "logic": "结实厚实的木板——本体",
+          "en": "They laid planks to cross the mud.",
+          "zh": "他们铺了厚木板过泥地。"
+        },
+        {
+          "gloss": "核心政策条款",
+          "logic": "政治纲领像房子一样由木板搭建→每一块政策板就是一根支撑结构的支柱",
+          "en": "Universal healthcare is a central plank of the party's election platform.",
+          "zh": "全民医疗保健是该党选举纲领的核心政策条款。"
+        },
+        {
+          "gloss": "用木板铺设（v.）",
+          "logic": "名词动词化——铺木板",
+          "en": "They planked the deck.",
+          "zh": "他们用木板铺了甲板。"
+        }
+      ],
+      "derivatives": [
+        {"w": "planking", "gloss": "铺板／平板支撑（健身）"},
+        {"w": "planked", "gloss": "铺了木板的（adj.）"}
+      ],
+      "examples": [
+        {
+          "en": "Universal healthcare is a central plank of the party's election platform.",
+          "zh": "全民医疗保健是该党选举纲领的核心政策条款。",
+          "source": "造句"
+        },
+        {
+          "en": "walk the plank",
+          "zh": "「走跳板——被迫下台/离职」——来自海盗传说的高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "board", "ipa": "/bɔːrd/", "gloss": "木板", "note": "「木板」义近义词，比 plank 更通用，plank 特指厚板；board and plank 有时并列出现"},
+        {"w": "pillar", "ipa": "/ˈpɪlər/", "gloss": "支柱／核心", "note": "「支柱/核心」义近义词，比 plank 更常用于抽象义；a pillar of the community（社区支柱）"},
+        {"w": "cornerstone", "ipa": "/ˈkɔːrnərˌstoʊn/", "gloss": "基石", "note": "「基石」，比 plank 更强调「整体之基础」；the cornerstone of democracy（民主的基石）"}
+      ],
+      "antonyms": [],
+      "nuance": "plank 作「政策条款」时强调「是整体纲领的一块板——可数、可独立」；pillar 强调「支撑整体」；cornerstone 强调「整个大厦从这里开始」，是更根本性的基础。"
+    },
+    {
+      "word": "frank",
+      "hl": "n",
+      "levels": ["托福"],
+      "ipa": "/fræŋk/",
+      "subgroup": "nk",
+      "meaning": "adj. 坦诚的，直言不讳的  v. 在邮件上盖免费邮戳（历史用法）  n. Frank = 法兰克人",
+      "etymology": "来自 Frank（法兰克人），日耳曼民族，在高卢统治阶级，拥有自由发言权。「法兰克人的直接」→ 坦诚直率。同根延伸：franchise（特许经营，原指「给予自由/特权」）、France（法国）都来自 Franks。",
+      "roots": [
+        {"part": "frank（Frankish）", "meaning": "法兰克人→自由直率"}
+      ],
+      "phonetics": "fr + a /æ/ + nk /ŋk/，n 在 k 前同化为 /ŋ/，k 发出来。/fræŋk/，与 blank、plank、rank、bank 押韵。",
+      "tip": "to be frank（坦白说）是托福写作和口语常用插入语，比 honestly 更正式；frankly speaking = to be frank，两种用法都高频。",
+      "core": "心里想什么嘴里说什么，像一面没有窗帘的窗户——看进去就是心里，没有隔层的感觉",
+      "senses": [
+        {
+          "gloss": "坦诚的／直言不讳的",
+          "logic": "像法兰克人的自由直率→心里话直接说出口，不绕弯子",
+          "en": "To be frank, I don't think the current plan will work.",
+          "zh": "坦白说，我认为当前的计划行不通。"
+        },
+        {
+          "gloss": "法兰克人（n. Frank）",
+          "logic": "原始义——日耳曼部族，曾统治高卢，拥有自由发言的特权",
+          "en": "The Franks ruled Gaul after the fall of Rome.",
+          "zh": "法兰克人在罗马陷落后统治了高卢。"
+        }
+      ],
+      "derivatives": [
+        {"w": "frankly", "gloss": "坦白地（adv.）"},
+        {"w": "frankness", "gloss": "坦率（n.）"},
+        {"w": "franchise", "gloss": "特许经营权（同根——给予自由／特权）"}
+      ],
+      "examples": [
+        {
+          "en": "To be frank, I don't think the current plan will work.",
+          "zh": "坦白说，我认为当前的计划行不通。",
+          "source": "造句"
+        },
+        {
+          "en": "a frank discussion",
+          "zh": "「一次坦诚的讨论」——frank 描述对话时，暗含「说了平时不便说的话」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "candid", "ipa": "/ˈkændɪd/", "gloss": "坦率的（书面）", "note": "「坦率的」，比 frank 更正式书面，且更强调「无隐藏，如实表达」；a candid assessment（坦率的评估）"},
+        {"w": "direct", "ipa": "/dɪˈrekt/", "gloss": "直接的", "note": "「直接的」，比 frank 更中性，不带「说实话」的含义，只强调表达方式直接"},
+        {"w": "blunt", "ipa": "/blʌnt/", "gloss": "直率但生硬的", "note": "「直率但有些生硬」，比 frank 语气更强，有时带负面含义（太直接以至于失礼）"}
+      ],
+      "antonyms": [
+        {"w": "evasive", "note": "回避的、含糊其辞的"},
+        {"w": "diplomatic", "note": "外交辞令式的（策略性迂回）"}
+      ],
+      "nuance": "frank 和 candid 最接近，都指「如实说」，candid 更书面正式；blunt 是「frank 过了头」——太直接到近乎无礼；direct 只说表达方式，不含「说实话」的含义。「frankly speaking」比「bluntly speaking」少了一分刺耳。"
+    }
+  ]
+}

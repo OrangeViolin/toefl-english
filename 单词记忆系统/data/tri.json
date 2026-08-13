@@ -1,0 +1,1439 @@
+{
+  "id": "tri",
+  "combo": "三合元音",
+  "title": "三合元音 Triphthongs",
+  "sound": "/aɪə/ 等",
+  "subtitle": "双元音再加一个 schwa——一口气滑三段，英语里最长的元音",
+  "intro": "三合元音（triphthong）= 双元音 + /ə/，一口气连续滑过三个发音位置。英式英语中最典型的五组：/aɪə/（fire）、/aʊə/（hour）、/eɪə/（player）、/ɔɪə/（loyal）、/əʊə/（lower）。口语中常被压缩成两段（fire→/faɪə/甚至/fɑː/），但朗读、托福口语和正式场合仍保留完整三段滑行。记住每组的核心拼写，其余自然延伸。",
+  "subgroups": [
+    {
+      "key": "aiə",
+      "tag": "aɪə (fire)",
+      "label": "✅ /aɪə/",
+      "desc": "i_e / ire / ia 结构：舌头从低中位 /a/ 上滑到高前 /ɪ/ 再弱化收 /ə/。fire、hire、tired、desire……口语快读时常压成 /aɪ/（两段），但慢读或强调时保留第三段 schwa。"
+    },
+    {
+      "key": "auə",
+      "tag": "aʊə (hour)",
+      "label": "/aʊə/",
+      "desc": "our / ower 结构：嘴从大开 /a/ 收圆到 /ʊ/ 再弱化成 /ə/。hour、flower、power、shower……注意 our 在不同词中读法不一（your=/jɔːr/，pour=/pɔːr/ 不是三合元音），只有含义指「某物产生的」才读 /aʊə/。"
+    },
+    {
+      "key": "eiə",
+      "tag": "eɪə (player)",
+      "label": "/eɪə/",
+      "desc": "ayer / ayor 结构：从 /e/ 滑到 /ɪ/ 再弱化 /ə/。play→player，pray→prayer，mayor……实际口语中 /eɪə/ 极易被说成 /eə/（两段），注意别把 player 说成 /pleɪr/ 完全丢掉元音层次。"
+    },
+    {
+      "key": "oiə",
+      "tag": "ɔɪə (loyal)",
+      "label": "/ɔɪə/",
+      "desc": "oyal / oyer / oia 结构：从圆唇 /ɔ/ 滑到 /ɪ/ 再弱化 /ə/。loyal、royal、employer、destroyer……这组三合元音在日常口语中保留度最高，因为 /ɔɪ/ 本身就有强收音，后接 /ə/ 自然不会被省略。"
+    },
+    {
+      "key": "ouə",
+      "tag": "əʊə (lower)",
+      "label": "/əʊə/",
+      "desc": "ower（比较级）/ oa+r 结构：从 /ə/ 到 /ʊ/ 再弱化 /ə/。lower、slower、grower……特别注意 flower(/aʊə/)≠lower(/əʊə/)——flower 是「花」，lower 是「low 的比较级」，两词字形相似而三合元音完全不同。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ire (/aɪə/)",
+      "words": ["fire", "hire", "wire", "entire", "admire", "desire", "inspire"]
+    },
+    {
+      "label": "-our/-ower (/aʊə/)",
+      "words": ["hour", "flower", "power", "tower", "shower", "sour"]
+    },
+    {
+      "label": "-ayer (/eɪə/)",
+      "words": ["player", "layer", "prayer", "mayor"]
+    },
+    {
+      "label": "-oyal/-oyer (/ɔɪə/)",
+      "words": ["loyal", "royal", "employer", "destroyer"]
+    },
+    {
+      "label": "-ower 比较级 (/əʊə/)",
+      "words": ["lower", "slower", "grower", "mower"]
+    }
+  ],
+  "words": [
+    {
+      "word": "fire",
+      "hl": "ire",
+      "levels": ["托福"],
+      "ipa": "/faɪə/",
+      "subgroup": "aiə",
+      "meaning": "n. 火；火灾；炮火  v. 开枪；解雇；激发（热情）",
+      "etymology": "古英语 fȳr，日耳曼同根，与德语 Feuer 同源。核心是「燃烧产生的光与热」，引申出「炮火」（fire weapons）和「解雇」（fire sb = 把人「炒」走）。",
+      "roots": [
+        {"part": "fire（fȳr）", "meaning": "火、燃烧"}
+      ],
+      "phonetics": "f + /aɪə/：嘴从大开 /a/ 上滑到 /ɪ/ 再弱化收 /ə/，三段连贯。口语常压成 /faɪ/，朗读保留完整三合元音。",
+      "tip": "「fire sb」=解雇某人；「fire up」=激发热情——两个义都高频，别只记「火」。",
+      "core": "强烈燃烧感——热量从内部迸发，所以能点燃他人（激发）、逼人离开（解雇）、也能伤人（炮火）。",
+      "senses": [
+        {
+          "gloss": "n. 火；火焰",
+          "logic": "核心义：燃烧本身",
+          "en": "The campfire burned low as the night grew cold.",
+          "zh": "夜渐寒，营火渐渐低了下去。"
+        },
+        {
+          "gloss": "n. 炮火；枪击",
+          "logic": "火焰的破坏力延伸到武器——开枪即「释放火力」",
+          "en": "The soldiers came under heavy fire from the hillside.",
+          "zh": "士兵们遭到山腰方向猛烈的炮火袭击。"
+        },
+        {
+          "gloss": "v. 解雇",
+          "logic": "把人「炒」走——俚语将解雇比作把人从炉灶上「炒掉」；历史上此义源于口语习惯，与「火」非字面同源，属约定俗成",
+          "en": "She was fired after the company restructured its sales division.",
+          "zh": "公司重组销售部门后，她被解雇了。"
+        },
+        {
+          "gloss": "v. 激发；点燃（热情）",
+          "logic": "火焰点燃他物——激发情绪就像给人「点火」",
+          "en": "The coach's speech fired the players with determination.",
+          "zh": "教练的讲话激发了球员们的斗志。"
+        },
+        {
+          "gloss": "v. 开枪；发射",
+          "logic": "早期火器靠火药引燃，「扣下扳机=点火」",
+          "en": "The officer ordered troops to fire only when fired upon.",
+          "zh": "军官命令部队只有在遭到射击时才能还击。"
+        }
+      ],
+      "derivatives": [
+        {"w": "fiery", "gloss": "adj. 火一般的；暴烈的"},
+        {"w": "firearm", "gloss": "n. 枪械（字面「火的武器」）"},
+        {"w": "firing", "gloss": "n./adj. 解雇；射击；烧制（陶器）"}
+      ],
+      "examples": [
+        {
+          "en": "The manager fired three employees after the audit revealed fraud.",
+          "zh": "审计发现欺诈行为后，经理解雇了三名员工。",
+          "source": "造句"
+        },
+        {
+          "en": "under fire",
+          "zh": "「受到炮击/受到猛烈批评」——军事义和比喻义都极高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "dismiss", "ipa": "/dɪsˈmɪs/", "gloss": "v. 解雇；驳回", "note": "「解雇」义更正式书面，比 fire 语气冷静；dismiss an employee（解雇员工）"},
+        {"w": "blaze", "ipa": "/bleɪz/", "gloss": "n. 大火；v. 熊熊燃烧", "note": "「大火」义，比 fire 更强调火势猛烈；a blazing inferno（熊熊大火）"},
+        {"w": "ignite", "ipa": "/ɪɡˈnaɪt/", "gloss": "v. 点燃；激发", "note": "「点燃/激发」义，比 fire 更正式，也用于抽象（ignite passion）"}
+      ],
+      "antonyms": [
+        {"w": "hire", "note": "雇用（与「解雇」义相对）"},
+        {"w": "extinguish", "note": "扑灭（与「火」义相对）"}
+      ],
+      "nuance": "fire（解雇）是最口语的说法，dismiss 书面正式，lay off 特指因裁员而非过错被解雇——三词都是「让人走人」但原因和语气不同。"
+    },
+    {
+      "word": "hire",
+      "hl": "ire",
+      "levels": ["托福"],
+      "ipa": "/haɪə/",
+      "subgroup": "aiə",
+      "meaning": "v. 雇用；租用  n. 雇用；租金",
+      "etymology": "古英语 hȳrian「雇用、出租」，日耳曼同根。英式英语「hire a car」=租车；美式英语「hire sb」=雇人，两义都保留着「支付报酬以换取使用权」的核心。",
+      "roots": [
+        {"part": "hire（hȳrian）", "meaning": "雇用、出租"}
+      ],
+      "phonetics": "h + /aɪə/，与 fire、desire 押韵，同属 -ire 三合元音族。",
+      "core": "付费换取使用权——无论是人的劳动力还是物品的使用，核心都是「钱换时间/服务」。",
+      "senses": [
+        {
+          "gloss": "v. 雇用（人）",
+          "logic": "核心义：付报酬换取劳动力使用权",
+          "en": "The company hired ten new engineers for the AI project.",
+          "zh": "公司为AI项目招聘了十名新工程师。"
+        },
+        {
+          "gloss": "v. 租用（物）",
+          "logic": "同一核心：付费换取物品临时使用权（英式英语主流义）",
+          "en": "We hired a car for the week and drove along the coast.",
+          "zh": "我们租了一辆车，沿着海岸开了一周。"
+        },
+        {
+          "gloss": "n. 租金；雇佣费",
+          "logic": "动作名词化：付出去的那笔费用",
+          "en": "The hire of the venue included tables, chairs, and basic equipment.",
+          "zh": "场地租金包含了桌椅和基本设备。"
+        }
+      ],
+      "derivatives": [
+        {"w": "hire-out", "gloss": "v. 出租（自己或物品）"},
+        {"w": "for-hire", "gloss": "adj. 出租中；待雇用"}
+      ],
+      "examples": [
+        {
+          "en": "The startup plans to hire twenty engineers by the end of the quarter.",
+          "zh": "这家初创公司计划在本季度末前招聘二十名工程师。",
+          "source": "造句"
+        },
+        {
+          "en": "for hire",
+          "zh": "「出租中/待雇用」——出租车和招工广告高频用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "employ", "ipa": "/ɪmˈplɔɪ/", "gloss": "v. 雇用；使用", "note": "「雇用」更正式，强调持续雇佣关系；employ a staff of fifty（雇有五十人）"},
+        {"w": "recruit", "ipa": "/rɪˈkruːt/", "gloss": "v. 招募；n. 新兵", "note": "「招募」，强调主动寻找并引进人才的过程，比 hire 更侧重招募阶段"},
+        {"w": "rent", "ipa": "/rent/", "gloss": "v./n. 租用；租金", "note": "「租用」义的近义词，美式英语更常用 rent a car，英式用 hire a car"}
+      ],
+      "antonyms": [
+        {"w": "fire", "note": "解雇"},
+        {"w": "dismiss", "note": "解雇、辞退"}
+      ],
+      "nuance": "hire 是完成「招人」这个动作，recruit 强调整个寻找和吸引的过程，employ 强调持续雇佣状态。「We hired him last month」是入职事件，「We employ 200 people」是当前状态。"
+    },
+    {
+      "word": "entire",
+      "hl": "ire",
+      "levels": ["托福"],
+      "ipa": "/ɪnˈtaɪə/",
+      "subgroup": "aiə",
+      "meaning": "adj. 整个的，全部的；完整的",
+      "etymology": "拉丁语 integer「完整的、未触碰的」→ 古法语 entier → entire。词根 integ- 还生出 integrity（完整性/正直）、integrate（整合）——都在讲「不缺任何部分」。",
+      "roots": [
+        {"part": "en-", "meaning": "强化前缀"},
+        {"part": "-tire (integer)", "meaning": "完整、未触碰"}
+      ],
+      "phonetics": "重音在后 en-TIRE /taɪə/，-tire 是完整的三合元音滑行。注意 entire 的重音和 entire 拼写中的 -ire 结尾。",
+      "core": "未被触碰、未被分割——完整无缺的整体感，无一例外地全部。",
+      "senses": [
+        {
+          "gloss": "adj. 整个的；全部的（无例外）",
+          "logic": "核心义：没有任何部分被切除或遗漏",
+          "en": "The entire budget was spent before the project was halfway done.",
+          "zh": "项目做到一半，全部预算就已用完。"
+        }
+      ],
+      "derivatives": [
+        {"w": "entirely", "gloss": "adv. 完全地；整个地"},
+        {"w": "entirety", "gloss": "n. 整体；全部（in its entirety=完整地）"},
+        {"w": "integrity", "gloss": "n. 诚信；完整性（同词根 integer）"}
+      ],
+      "examples": [
+        {
+          "en": "She spent the entire afternoon revising her thesis.",
+          "zh": "她花了整个下午修改论文。",
+          "source": "造句"
+        },
+        {
+          "en": "the entire picture",
+          "zh": "「整体情况」——比喻义，指「全貌」的高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "whole", "ipa": "/hoʊl/", "gloss": "adj. 整个的；n. 整体", "note": "「整个」，比 entire 更口语；the whole day（一整天）；whole 可作名词（as a whole），entire 不行"},
+        {"w": "complete", "ipa": "/kəmˈpliːt/", "gloss": "adj. 完整的；完全的", "note": "「完整的」，强调一件不缺；a complete set（完整一套）"},
+        {"w": "total", "ipa": "/ˈtoʊtl/", "gloss": "adj. 总计的；n. 总数", "note": "「总计」，多用于数量加总；total cost（总费用）"}
+      ],
+      "antonyms": [
+        {"w": "partial", "note": "部分的"},
+        {"w": "incomplete", "note": "不完整的"}
+      ],
+      "nuance": "entire 和 whole 几乎可互换，但 entire 语气稍强，更强调「无一例外地全部」；total 偏数量加总；complete 强调「没有缺漏」。"
+    },
+    {
+      "word": "desire",
+      "hl": "ire",
+      "levels": ["托福"],
+      "ipa": "/dɪˈzaɪə/",
+      "subgroup": "aiə",
+      "meaning": "n. 渴望，欲望；愿望  v. 渴望，想要",
+      "etymology": "拉丁语 desiderare = de-(离开) + sidus(星星) = 「思念星星」→ 渴望。古罗马人用「望星星」比喻对远方事物的深切盼望。与 consider（仔细看星星→思考）同根。",
+      "roots": [
+        {"part": "de-", "meaning": "离开、向下"},
+        {"part": "-sire (sidus)", "meaning": "星星"}
+      ],
+      "phonetics": "重音在后 de-SIRE /zaɪə/，-sire 是三合元音完整版。注意 s 读 /z/（浊化）。",
+      "core": "向往不在眼前的东西——渴望感源于距离（望着遥远的星），可以是物质、情感或成就。",
+      "senses": [
+        {
+          "gloss": "n. 渴望；欲望",
+          "logic": "核心义：向往远处之物的强烈内心驱动",
+          "en": "A deep desire for recognition pushed her to work harder than anyone else.",
+          "zh": "对认可的强烈渴望驱使她比任何人都更努力地工作。"
+        },
+        {
+          "gloss": "n. 性欲；情欲",
+          "logic": "渴望感延伸到身体层面——对他人的强烈吸引",
+          "en": "The novel explores desire and obsession in a crumbling marriage.",
+          "zh": "这部小说探讨一段破裂婚姻中的情欲与执念。"
+        },
+        {
+          "gloss": "v. 渴望；想要（正式用法）",
+          "logic": "动词化：内心的向往化为主动追求",
+          "en": "The committee desires a full report before making any decision.",
+          "zh": "委员会希望在做任何决定之前获得完整的报告。"
+        }
+      ],
+      "derivatives": [
+        {"w": "desirable", "gloss": "adj. 令人向往的；合意的"},
+        {"w": "undesirable", "gloss": "adj. 不受欢迎的；有害的"},
+        {"w": "desirability", "gloss": "n. 吸引力；可取性"}
+      ],
+      "examples": [
+        {
+          "en": "Her desire to travel the world led her to save every spare dollar.",
+          "zh": "她对环球旅行的渴望促使她存下每一分零钱。",
+          "source": "造句"
+        },
+        {
+          "en": "leave much to be desired",
+          "zh": "「远未达到满意/差强人意」——固定句式，托福写作高频批评用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "craving", "ipa": "/ˈkreɪvɪŋ/", "gloss": "n. 强烈渴望（尤指生理性）", "note": "「强烈渴望（尤指生理性）」，比 desire 更本能、更难压制；a craving for sugar（对糖的强烈渴望）"},
+        {"w": "longing", "ipa": "/ˈlɒŋɪŋ/", "gloss": "n. 渴望；思念（带伤感）", "note": "「渴望（往往对遥远或失去的事物）」，比 desire 更带悲伤色彩；a longing for home（思乡之情）"},
+        {"w": "aspiration", "ipa": "/ˌæspəˈreɪʃn/", "gloss": "n. 抱负；志向；渴望成就", "note": "「抱负、志向」，比 desire 更正面、更指向未来成就；career aspirations（职业抱负）"}
+      ],
+      "antonyms": [
+        {"w": "aversion", "note": "厌恶、反感"},
+        {"w": "indifference", "note": "漠然、无欲"}
+      ],
+      "nuance": "desire 是最通用的渴望，包含理性与感性；craving 更本能、难控制（多指食物、感官）；longing 带怀念色彩，常指已失去的；aspiration 指向理想和成就，是正面上进的渴望。"
+    },
+    {
+      "word": "inspire",
+      "hl": "ire",
+      "levels": ["托福"],
+      "ipa": "/ɪnˈspaɪə/",
+      "subgroup": "aiə",
+      "meaning": "v. 激励，鼓舞；给……以灵感；引发（感情）",
+      "etymology": "拉丁语 inspirare = in-(进入) + spirare(呼吸) = 「把气息吹进去」→ 赋予灵感。与 spirit（精神）、expire（呼气死去）、conspire（共同呼吸→密谋）同根——呼吸即生命力。",
+      "roots": [
+        {"part": "in-", "meaning": "向内、进入"},
+        {"part": "-spire (spirare)", "meaning": "呼吸"}
+      ],
+      "phonetics": "重音在后 in-SPIRE /spaɪə/，-spire 三合元音，sp- 连缀辅音要连读流畅。",
+      "core": "把生命气息吹入他人——像神话中神给泥人吹气赋予生命，激励别人从内部燃起力量。",
+      "senses": [
+        {
+          "gloss": "v. 激励；鼓舞（人行动）",
+          "logic": "核心义：把能量「吹进」他人，使其振奋",
+          "en": "Her resilience inspired the whole team to push through the crisis.",
+          "zh": "她的韧性激励了整个团队度过危机。"
+        },
+        {
+          "gloss": "v. 给……以灵感；触发创作",
+          "logic": "创作灵感也是被「吹入」的——缪斯女神向诗人呼气",
+          "en": "The trip to Japan inspired her to write a novel about solitude.",
+          "zh": "这次日本之行激发了她写一部关于孤独的小说。"
+        },
+        {
+          "gloss": "v. 引发（某种感情或反应）",
+          "logic": "气息的力量延伸到引发情绪——「breathe life into」某种感受",
+          "en": "His calm manner inspired confidence in everyone around him.",
+          "zh": "他沉稳的举止让周围所有人都感到安心。"
+        }
+      ],
+      "derivatives": [
+        {"w": "inspiration", "gloss": "n. 灵感；鼓舞"},
+        {"w": "inspiring", "gloss": "adj. 令人鼓舞的；激励人心的"},
+        {"w": "inspirational", "gloss": "adj. 具有启发性的（多形容演讲/人物）"}
+      ],
+      "examples": [
+        {
+          "en": "Her resilience inspired the whole team to push through the crisis.",
+          "zh": "她的韧性激励了整个团队度过危机。",
+          "source": "造句"
+        },
+        {
+          "en": "be inspired by",
+          "zh": "「从……中得到灵感/被……激励」——被动式高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "motivate", "ipa": "/ˈmoʊtɪveɪt/", "gloss": "v. 激励；驱动（去行动）", "note": "「激励（行动）」，比 inspire 更侧重推动去做某事，更强调实际驱动力；motivate employees（激励员工）"},
+        {"w": "stimulate", "ipa": "/ˈstɪmjuleɪt/", "gloss": "v. 刺激；促进（智识或生理）", "note": "「刺激、促进」，比 inspire 更中性，常用于智识或生理刺激；stimulate creativity（激发创造力）"},
+        {"w": "encourage", "ipa": "/ɪnˈkɜːrɪdʒ/", "gloss": "v. 鼓励；给予信心", "note": "「鼓励」，比 inspire 更日常、更个人化，侧重给人信心；encourage sb to try（鼓励某人尝试）"}
+      ],
+      "antonyms": [
+        {"w": "discourage", "note": "使气馁"},
+        {"w": "demoralize", "note": "打击士气"}
+      ],
+      "nuance": "inspire 偏向「点燃内在火花」，带精神层面的提升；motivate 偏向「给出外部驱动力让人行动」；encourage 最温和，只是「给信心」。「inspire a generation」的语气比「motivate a generation」更崇高。"
+    },
+    {
+      "word": "admire",
+      "hl": "ire",
+      "levels": ["托福"],
+      "ipa": "/ədˈmaɪə/",
+      "subgroup": "aiə",
+      "meaning": "v. 钦佩，仰慕；欣赏",
+      "etymology": "拉丁语 admirari = ad-(朝向) + mirari(惊奇) = 「对……感到惊奇」→ 欣赏、钦佩。与 miracle（奇迹）、marvel（惊叹）同根——惊奇是钦佩的起点。",
+      "roots": [
+        {"part": "ad-", "meaning": "朝向、对着"},
+        {"part": "-mire (mirari)", "meaning": "惊奇、惊叹"}
+      ],
+      "phonetics": "重音在后 ad-MIRE /maɪə/，-mire 完整三合元音。注意不要把 admire 的重音放在第一音节。",
+      "core": "朝向某物感到惊奇——看到超出期待的美或品格，内心自然升起敬叹。",
+      "senses": [
+        {
+          "gloss": "v. 钦佩；仰慕（品格或成就）",
+          "logic": "核心义：对他人品格或成就感到由衷的惊叹与尊重",
+          "en": "I have always admired her ability to stay calm under pressure.",
+          "zh": "我一直很钦佩她在压力下保持冷静的能力。"
+        },
+        {
+          "gloss": "v. 欣赏（美景、艺术等）",
+          "logic": "同样的惊奇感朝向美的事物——欣赏时停下脚步，带着惊叹凝视",
+          "en": "They stood on the cliff admiring the view for a long time.",
+          "zh": "他们站在悬崖上，久久欣赏着眼前的风景。"
+        }
+      ],
+      "derivatives": [
+        {"w": "admiration", "gloss": "n. 钦佩；赞赏"},
+        {"w": "admirable", "gloss": "adj. 令人钦佩的；值得赞赏的"},
+        {"w": "admirer", "gloss": "n. 仰慕者；爱慕者"}
+      ],
+      "examples": [
+        {
+          "en": "I have always admired her ability to stay calm under pressure.",
+          "zh": "我一直很钦佩她在压力下保持冷静的能力。",
+          "source": "造句"
+        },
+        {
+          "en": "admire the view",
+          "zh": "「欣赏风景」——欣赏义的日常高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "respect", "ipa": "/rɪˈspekt/", "gloss": "v./n. 尊重；敬重", "note": "「尊重」，比 admire 更理性，不一定带欣赏的情感色彩；respect sb's decision（尊重某人决定）"},
+        {"w": "revere", "ipa": "/rɪˈvɪə/", "gloss": "v. 崇敬；敬畏", "note": "「崇敬」，比 admire 程度更深，带近乎敬畏的崇拜；revere a national hero（崇敬民族英雄）"},
+        {"w": "appreciate", "ipa": "/əˈpriːʃieɪt/", "gloss": "v. 欣赏；感激；认识到价值", "note": "「欣赏、感激」，比 admire 更强调认识到价值；appreciate great art（欣赏伟大艺术）"}
+      ],
+      "antonyms": [
+        {"w": "despise", "note": "鄙视、蔑视"},
+        {"w": "condemn", "note": "谴责"}
+      ],
+      "nuance": "admire 兼含「欣赏美」和「钦佩品格」两义；revere 更强调崇敬和敬畏，常用于历史人物或神圣之物；appreciate 更注重认识到其价值。「I admire his courage」是情感共鸣，「I respect his decision」是理性认可。"
+    },
+    {
+      "word": "retire",
+      "hl": "ire",
+      "levels": ["托福"],
+      "ipa": "/rɪˈtaɪə/",
+      "subgroup": "aiə",
+      "meaning": "v. 退休；退役；撤退；就寝（文学用语）",
+      "etymology": "法语 retirer = re-(回) + tirer(拉) = 「把自己拉回去」→ 退出、退休。与 tire（使疲劳）不同根，但语感上恰好暗合「累了→休息」。",
+      "roots": [
+        {"part": "re-", "meaning": "回、退"},
+        {"part": "-tire (tirer)", "meaning": "拉、拔"}
+      ],
+      "phonetics": "重音在后 re-TIRE /taɪə/，-tire 三合元音。retire 和 tire 同尾，注意前缀 re- 只是轻读音节。",
+      "core": "把自己从场域中「拉回去」——无论是从职场、战场还是社交场合，都是主动撤离到后方。",
+      "senses": [
+        {
+          "gloss": "v. 退休（从职业生涯）",
+          "logic": "核心义：到达终点后把自己从工作场域中拉离",
+          "en": "She plans to retire at sixty and move to the countryside.",
+          "zh": "她计划六十岁退休，搬到乡下生活。"
+        },
+        {
+          "gloss": "v. 撤退；退出（比赛/角色）",
+          "logic": "同一动作用于竞技或军事——主动离开对抗场域",
+          "en": "The injured athlete retired from the race after the first lap.",
+          "zh": "受伤的运动员在第一圈后就退出了比赛。"
+        },
+        {
+          "gloss": "v. 就寝；去休息（文学正式用语）",
+          "logic": "把自己「拉回」私人空间——退出公共场合去卧室",
+          "en": "The guests retired to the drawing room after dinner.",
+          "zh": "晚餐后，客人们退入客厅（休息）。"
+        }
+      ],
+      "derivatives": [
+        {"w": "retirement", "gloss": "n. 退休；退休生活"},
+        {"w": "retired", "gloss": "adj. 已退休的"},
+        {"w": "retiree", "gloss": "n. 退休人员"}
+      ],
+      "examples": [
+        {
+          "en": "She plans to retire at sixty and move to the countryside.",
+          "zh": "她计划六十岁退休，搬到乡下生活。",
+          "source": "造句"
+        },
+        {
+          "en": "retire from the race",
+          "zh": "「退出比赛」——体育和竞争场合的高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "withdraw", "ipa": "/wɪðˈdrɔː/", "gloss": "v. 撤退；撤回；提款", "note": "「撤退/退出」义的近义词，比 retire 更通用，军事和金融场合都常见；withdraw troops（撤军）"},
+        {"w": "resign", "ipa": "/rɪˈzaɪn/", "gloss": "v. 辞职；放弃（职位）", "note": "「辞职」，指主动放弃职位，不一定是到年龄；resign from the post（辞去职务）"},
+        {"w": "retreat", "ipa": "/rɪˈtriːt/", "gloss": "v./n. 撤退；退避", "note": "「撤退」义，比 retire 更强调从对抗或困境中后退；retreat from battle（从战场撤退）"}
+      ],
+      "antonyms": [
+        {"w": "join", "note": "加入（职场/军队）"},
+        {"w": "advance", "note": "前进（与撤退义相对）"}
+      ],
+      "nuance": "retire 特指到了年龄自然退出职业生涯；resign 是主动辞职（可在任何年龄）；withdraw 更广泛，指从任何情况中撤出。retire 还有「去睡觉」的文学/正式用法（retire to one's room）。"
+    },
+    {
+      "word": "hour",
+      "hl": "our",
+      "levels": ["托福"],
+      "ipa": "/aʊə/",
+      "subgroup": "auə",
+      "meaning": "n. 小时；时刻；时期",
+      "etymology": "古法语 hore，拉丁语 hora，源自希腊语 hōra「时段、季节」。中世纪用来划分一天的祈祷时段。h 不发音是法语遗留（an hour = 不用 a）。",
+      "roots": [
+        {"part": "hour（hora）", "meaning": "时段"}
+      ],
+      "phonetics": "h 完全不发音！发音就是纯三合元音 /aʊə/。这是英语最著名的哑辅音例子之一——an hour，而非 a hour。",
+      "tip": "hour 里的 h 不发音，所以用 an hour（不是 a hour）——托福写作常见扣分点。",
+      "core": "被划定的一段时间——从计时单位延伸到「某个特定的重要时刻/时期」。",
+      "senses": [
+        {
+          "gloss": "n. 小时（60分钟的时间单位）",
+          "logic": "核心义：精确的时间刻度",
+          "en": "The surgery lasted nearly four hours.",
+          "zh": "手术历时将近四个小时。"
+        },
+        {
+          "gloss": "n. 时刻；特定的重要时机",
+          "logic": "时间单位引申为「命运赋予的关键时刻」",
+          "en": "This is the country's finest hour — we must not retreat.",
+          "zh": "这是国家最辉煌的时刻——我们绝不能退缩。"
+        },
+        {
+          "gloss": "n. 时期；阶段（复数）",
+          "logic": "多个小时组成一段时期——office hours（办公时间）",
+          "en": "The library is open during regular hours on weekdays.",
+          "zh": "图书馆工作日在正常开放时间内开放。"
+        }
+      ],
+      "derivatives": [
+        {"w": "hourly", "gloss": "adj./adv. 每小时的（地）"},
+        {"w": "half-hour", "gloss": "n. 三十分钟"}
+      ],
+      "examples": [
+        {
+          "en": "The flight from Shanghai to Tokyo takes about two and a half hours.",
+          "zh": "从上海飞东京大约需要两个半小时。",
+          "source": "造句"
+        },
+        {
+          "en": "at the eleventh hour",
+          "zh": "「千钧一发之际」——最后关头才出手的高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "period", "ipa": "/ˈpɪəriəd/", "gloss": "n. 时段；时期；（学校）课时", "note": "「时段」，比 hour 更泛，可指任意长度的时间；a period of crisis（危机时期）"},
+        {"w": "moment", "ipa": "/ˈmoʊmənt/", "gloss": "n. 时刻；瞬间；重要关头", "note": "「时刻」，比 hour 短暂，强调特定瞬间；a crucial moment（关键时刻）"}
+      ],
+      "antonyms": [],
+      "nuance": "hour 是精确的60分钟时间单位；period 是长短不定的「时段」；moment 是「瞬间或特定时刻」。「in her finest hour」是比喻用法，指「最辉煌的时刻」。"
+    },
+    {
+      "word": "power",
+      "hl": "ower",
+      "levels": ["托福"],
+      "ipa": "/paʊə/",
+      "subgroup": "auə",
+      "meaning": "n. 力量；权力；电力；（数学）次方  v. 为……提供动力",
+      "etymology": "古法语 pouoir「能够」，拉丁语 potere（能力），与 possible（可能）、potent（有力的）同根。「能做某事的能力」→ 力量 → 权力 → 电力。",
+      "roots": [
+        {"part": "pow- (potere)", "meaning": "能够、有力"},
+        {"part": "-er", "meaning": "名词/动词后缀"}
+      ],
+      "phonetics": "p + /aʊə/：-ower 是三合元音 /aʊə/，注意与 lower（/əʊə/）区分——power 的「o」是大开嘴 /aʊ/，lower 的「o」是圆唇 /əʊ/。",
+      "core": "能够做到的底层能量——从个人体力到政治权威到电流，所有「power」都是某种可转化、可施加的能量储备。",
+      "senses": [
+        {
+          "gloss": "n. 力量；能力（做成某事的基础）",
+          "logic": "核心义：能够产生效果的能量",
+          "en": "The power of persuasion is more effective than the power of coercion.",
+          "zh": "说服的力量比强制的力量更有效。"
+        },
+        {
+          "gloss": "n. 权力；政治控制力",
+          "logic": "能量集中在政治场域——能够支配他人的力量",
+          "en": "The party came to power after a landslide election victory.",
+          "zh": "该党在选举中大获全胜后上台执政。"
+        },
+        {
+          "gloss": "n. 电力；动力能源",
+          "logic": "能量的物理形式——驱动机器和电网的力量",
+          "en": "Solar power now supplies twenty percent of the region's electricity.",
+          "zh": "太阳能现在供应该地区20%的电力。"
+        },
+        {
+          "gloss": "n. （数学）次方；幂",
+          "logic": "数学中「力量」的比喻——数字自乘的「放大能量」",
+          "en": "Two to the power of ten equals 1024.",
+          "zh": "2的10次方等于1024。"
+        },
+        {
+          "gloss": "v. 为……提供动力；驱动",
+          "logic": "能量变为动词——把能源输送给某物使其运转",
+          "en": "The dam powers the entire city with hydroelectric energy.",
+          "zh": "这座水坝用水力发电为整个城市供电。"
+        }
+      ],
+      "derivatives": [
+        {"w": "powerful", "gloss": "adj. 强大的；有力的"},
+        {"w": "powerless", "gloss": "adj. 无力的；无能为力的"},
+        {"w": "empower", "gloss": "v. 赋权；授权；使有能力"}
+      ],
+      "examples": [
+        {
+          "en": "Solar power now supplies twenty percent of the region's electricity.",
+          "zh": "太阳能现在供应该地区20%的电力。",
+          "source": "造句"
+        },
+        {
+          "en": "in power / come to power",
+          "zh": "「执政中 / 上台执政」——政治语境高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "authority", "ipa": "/əˈθɔːrəti/", "gloss": "n. 权威；（合法）权力；当局", "note": "「权力/权威」，比 power 更强调合法授权的权力；have authority over sb（对某人有管辖权）"},
+        {"w": "strength", "ipa": "/streŋθ/", "gloss": "n. 力量；强项；实力", "note": "「力量」义的近义词，比 power 更指身体或意志力；physical strength（体力）"},
+        {"w": "energy", "ipa": "/ˈenədʒi/", "gloss": "n. 能量；精力；能源", "note": "「能量/电力」义的近义词，比 power 更偏物理或生理意义；renewable energy（可再生能源）"}
+      ],
+      "antonyms": [
+        {"w": "weakness", "note": "软弱、无力"},
+        {"w": "powerlessness", "note": "无权无力"}
+      ],
+      "nuance": "power 是最宽泛的「力量/权力/能源」，authority 强调合法授权的权力，strength 更侧重身体或意志，energy 指可转化做功的能量。「power over others」有支配意味，「authority over others」有合法管辖意味。"
+    },
+    {
+      "word": "flower",
+      "hl": "ower",
+      "levels": ["托福"],
+      "ipa": "/flaʊə/",
+      "subgroup": "auə",
+      "meaning": "n. 花；精华，最优秀的部分  v. 开花；蓬勃发展",
+      "etymology": "拉丁语 flos/floris「花」，古法语 flor → flower。与 flourish（繁荣）、flour（面粉，原意「花，最精华」）同根——面粉是小麦的「精华」。",
+      "roots": [
+        {"part": "flow- (flos)", "meaning": "花、精华"}
+      ],
+      "phonetics": "fl + /aʊə/：注意 flower（花，/flaʊə/）和 lower（更低，/fləʊə/）拼写相似，发音完全不同！flower 嘴大开，lower 嘴圆唇。",
+      "tip": "flower vs flour 同音（/flaʊə/）！面粉 flour 是从「花/精华」引申的。",
+      "core": "盛放的精华——植物生命力在花期的最高表达，引申为任何事物最美好、最旺盛的状态。",
+      "senses": [
+        {
+          "gloss": "n. 花；花朵",
+          "logic": "核心义：植物生命周期中精华绽放的部分",
+          "en": "The valley is famous for its wildflowers that bloom every spring.",
+          "zh": "这片山谷以每年春天盛开的野花而闻名。"
+        },
+        {
+          "gloss": "n. 精华；最优秀的部分（比喻）",
+          "logic": "花是植物最美的部分，延伸到「某群体/时期的精华」",
+          "en": "The flower of the nation's youth was lost in that terrible war.",
+          "zh": "那场可怕的战争中，国家最优秀的年轻一代就此凋零。"
+        },
+        {
+          "gloss": "v. 开花；（比喻）蓬勃发展",
+          "logic": "从名词动词化——事物进入最旺盛的绽放阶段",
+          "en": "Her talent really flowered after she moved to the city.",
+          "zh": "搬到城市后，她的才华才真正得到了绽放。"
+        }
+      ],
+      "derivatives": [
+        {"w": "flowery", "gloss": "adj. 多花的；（文风）华丽繁复的"},
+        {"w": "wildflower", "gloss": "n. 野花"},
+        {"w": "flowering", "gloss": "adj. 开花的；n. 繁荣发展（时期）"}
+      ],
+      "examples": [
+        {
+          "en": "The valley is famous for its wildflowers that bloom every spring.",
+          "zh": "这片山谷以每年春天盛开的野花而闻名。",
+          "source": "造句"
+        },
+        {
+          "en": "the flower of youth",
+          "zh": "「青春年华、风华正茂」——「精华」义的文学高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "blossom", "ipa": "/ˈblɒsəm/", "gloss": "n. 花（尤指果树）；v. 开花；成长", "note": "「花朵（尤指果树花）/盛开」，比 flower 更有生机感，也作动词；cherry blossoms（樱花）"},
+        {"w": "bloom", "ipa": "/bluːm/", "gloss": "n./v. 花；盛开；最旺盛的状态", "note": "「开花/盛放」，与 blossom 近义，但 bloom 更强调盛开的状态；in full bloom（盛开中）"},
+        {"w": "flourish", "ipa": "/ˈflʌrɪʃ/", "gloss": "v. 蓬勃发展；繁荣；挥舞", "note": "「蓬勃发展」义的近义词，与 flower 同根；a flourishing business（蓬勃发展的生意）"}
+      ],
+      "antonyms": [
+        {"w": "wither", "note": "凋谢"},
+        {"w": "fade", "note": "枯萎、褪色"}
+      ],
+      "nuance": "flower 最通用；blossom 特指花期（多指果树，也可比喻人的成长）；bloom 侧重开放的状态和颜色；flourish 作动词比 flower「开花」义更常见于抽象成功语境。"
+    },
+    {
+      "word": "shower",
+      "hl": "ower",
+      "levels": ["托福"],
+      "ipa": "/ʃaʊə/",
+      "subgroup": "auə",
+      "meaning": "n. 淋浴；阵雨；（赠品/事物的）一阵  v. 淋浴；洒落，纷纷给予",
+      "etymology": "古英语 scūr「阵雨」，日耳曼同根，与德语 Schauer 同源。从「短暂阵雨」→ 「淋浴」→ 「一阵大量的事物」（shower of praise 赞美如雨）。",
+      "roots": [
+        {"part": "shower（scūr）", "meaning": "阵雨、洒落"}
+      ],
+      "phonetics": "sh /ʃ/ + /aʊə/：-ower 三合元音，重音在首音节。注意这是 /aʊə/ 不是 /əʊə/——shower 里的 o 大开口。",
+      "core": "短促而密集的洒落感——无论是雨、水流还是礼物，都是从上方集中倾注下来的一阵。",
+      "senses": [
+        {
+          "gloss": "n. 阵雨（短暂降雨）",
+          "logic": "核心义：短暂集中的降水",
+          "en": "A brief shower cleared the air and left the streets gleaming.",
+          "zh": "一阵短暂的阵雨净化了空气，街道在雨后闪亮。"
+        },
+        {
+          "gloss": "n./v. 淋浴；冲澡",
+          "logic": "阵雨→人工模拟阵雨的装置——从天然延伸到人工",
+          "en": "She takes a cold shower every morning to wake herself up.",
+          "zh": "她每天早上洗冷水澡让自己清醒。"
+        },
+        {
+          "gloss": "n. 一阵（大量的事物同时涌来）",
+          "logic": "密集洒落感用于抽象——赞美、礼物「如雨」般倾来",
+          "en": "The announcement was met with a shower of complaints from residents.",
+          "zh": "这项公告遭到了居民们一阵密集的投诉。"
+        },
+        {
+          "gloss": "v. 大量给予；纷纷赠送",
+          "logic": "动词化：像阵雨一样把某物「洒」给对方",
+          "en": "Fans showered the retiring athlete with flowers and gifts.",
+          "zh": "球迷们向这位即将退役的运动员献上鲜花和礼物。"
+        }
+      ],
+      "derivatives": [
+        {"w": "showery", "gloss": "adj. 多阵雨的（showery weather）"},
+        {"w": "baby shower", "gloss": "n. 为准妈妈举办的迎婴派对（送礼如「阵雨」）"}
+      ],
+      "examples": [
+        {
+          "en": "She takes a cold shower every morning to wake herself up.",
+          "zh": "她每天早上洗冷水澡让自己清醒。",
+          "source": "造句"
+        },
+        {
+          "en": "shower sb with praise / gifts",
+          "zh": "「对某人大加赞赏 / 慷慨赠礼」——动词义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "drizzle", "ipa": "/ˈdrɪzl/", "gloss": "n./v. 毛毛雨；细雨飘落", "note": "「毛毛雨」，比 shower 更轻柔持续，shower 是短促阵雨"},
+        {"w": "downpour", "ipa": "/ˈdaʊnpɔːr/", "gloss": "n. 倾盆大雨；暴雨", "note": "「倾盆大雨」，比 shower 猛烈得多；a sudden downpour（突降暴雨）"},
+        {"w": "lavish", "ipa": "/ˈlævɪʃ/", "gloss": "v. 慷慨赐予；adj. 奢华的", "note": "「慷慨赐予」义，shower sb with = lavish sth on sb，但 lavish 更强调奢侈浪费"}
+      ],
+      "antonyms": [
+        {"w": "drought", "note": "干旱（与降雨义相对）"}
+      ],
+      "nuance": "shower 指时间短的阵雨；drizzle 是细密的毛毛雨；downpour 是突如其来的大雨。作动词「shower with」表示慷慨地大量给予，比 lavish 更口语，强调数量多而非金贵。"
+    },
+    {
+      "word": "sour",
+      "hl": "our",
+      "levels": ["托福"],
+      "ipa": "/saʊə/",
+      "subgroup": "auə",
+      "meaning": "adj. 酸的；变质的；乖戾的  v.（使）变酸；（使）恶化",
+      "etymology": "古英语 sūr「酸」，日耳曼同根，与德语 sauer（酸、烦躁）同源。从味觉「酸」延伸到表情「乖戾」再到关系「变质恶化」——三义一线贯穿。",
+      "roots": [
+        {"part": "sour（sūr）", "meaning": "酸、变质"}
+      ],
+      "phonetics": "s + /aʊə/：sour 的 our 读 /aʊə/（三合元音），区别于 your /jɔːr/、four /fɔːr/（这些是 /ɔːr/，不是三合元音）。",
+      "core": "令人不快的刺激感——从味觉的「酸」到食物变质再到人的情绪与关系变坏，都是同一种「超出舒适的刺激」。",
+      "senses": [
+        {
+          "gloss": "adj. 酸的（味觉）",
+          "logic": "核心义：令舌头收缩的刺激性酸味",
+          "en": "The unripe berries were far too sour to eat.",
+          "zh": "未成熟的浆果太酸了，根本没法吃。"
+        },
+        {
+          "gloss": "adj. 变质的；馊掉的",
+          "logic": "食物过酸=发酵变质——「酸味」是腐败的信号",
+          "en": "The milk turned sour after sitting out of the fridge for hours.",
+          "zh": "牛奶在冰箱外放了几个小时后变酸了。"
+        },
+        {
+          "gloss": "adj. 乖戾的；不快的（性格/表情）",
+          "logic": "「酸」感延伸到人的神态——皱眉像尝到酸味，心情令人不适",
+          "en": "He gave a sour look when he heard the news.",
+          "zh": "听到这个消息，他露出了一副不悦的表情。"
+        },
+        {
+          "gloss": "v. （使）变糟；（使）关系恶化",
+          "logic": "变质感用于抽象——原本好的事物慢慢「酸掉」",
+          "en": "The dispute over money quickly soured their friendship.",
+          "zh": "这场关于钱的争执迅速让他们的友情蒙上了阴影。"
+        }
+      ],
+      "derivatives": [
+        {"w": "sourly", "gloss": "adv. 乖戾地；不快地"},
+        {"w": "sourness", "gloss": "n. 酸味；乖戾"},
+        {"w": "sourdough", "gloss": "n. 酸面团（酵母面包原料）"}
+      ],
+      "examples": [
+        {
+          "en": "The milk turned sour after sitting out of the fridge for hours.",
+          "zh": "牛奶在冰箱外放了几个小时后变酸了。",
+          "source": "造句"
+        },
+        {
+          "en": "go sour / turn sour",
+          "zh": "「（关系/计划）变糟、恶化」——比喻义的高频固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "bitter", "ipa": "/ˈbɪtə/", "gloss": "adj. 苦的；充满怨恨的", "note": "「苦的/充满怨恨的」，味觉上 sour 是酸、bitter 是苦；情感上 bitter 比 sour 更强烈、更持久"},
+        {"w": "acrid", "ipa": "/ˈækrɪd/", "gloss": "adj. 刺鼻的；腐蚀性的（气味/烟）", "note": "「刺激性酸味/腐蚀性」，比 sour 更强烈且多形容气味；acrid smoke（刺鼻的烟）"},
+        {"w": "tart", "ipa": "/tɑːt/", "gloss": "adj. 微酸的（令人开胃）；尖刻的", "note": "「酸（常指令人愉快的微酸）」，比 sour 更温和，常形容水果；a tart apple（酸苹果）"}
+      ],
+      "antonyms": [
+        {"w": "sweet", "note": "甜的"},
+        {"w": "mellow", "note": "醇和的、温柔的"}
+      ],
+      "nuance": "sour 是酸味中最通用的词；tart 是令人开胃的微酸；acrid 是刺鼻刺眼的强酸；bitter 是苦。情感上，sour grapes（酸葡萄心理）是固定习语，bitter 更表示长期的怨恨和失落。"
+    },
+    {
+      "word": "player",
+      "hl": "ayer",
+      "levels": ["托福"],
+      "ipa": "/pleɪə/",
+      "subgroup": "eiə",
+      "meaning": "n. 参与者；运动员；演奏者；（某领域的）重要角色",
+      "etymology": "play（古英语 plegan「快速运动、游戏」）+ -er（施动者后缀）。从「游戏者」扩展到「音乐演奏者」和「（行业里的）参与者」。",
+      "roots": [
+        {"part": "play（plegan）", "meaning": "游戏、演奏"},
+        {"part": "-er", "meaning": "施动者后缀"}
+      ],
+      "phonetics": "pl + /eɪə/：-ayer 是 /eɪ/（双元音）+ /ə/ 组成三合元音。注意 player 不要说成 /pleɪr/ 丢掉中间的元音层次。",
+      "core": "主动参与某个场域的人——无论场域是游戏、音乐、竞技还是商业，「player」都是在其中投入并产生影响的行动者。",
+      "senses": [
+        {
+          "gloss": "n. 运动员；（游戏）玩家",
+          "logic": "核心义：在竞技或游戏场域中的参与者",
+          "en": "The coach praised the players for their teamwork.",
+          "zh": "教练表扬了球员们的团队协作。"
+        },
+        {
+          "gloss": "n. 演奏者；演奏家",
+          "logic": "「游戏」义延伸到音乐演奏——play the piano → piano player",
+          "en": "She is a gifted violin player who performs internationally.",
+          "zh": "她是一位才华横溢的小提琴演奏家，在国际上演出。"
+        },
+        {
+          "gloss": "n. 重要参与者；（商业/政治）行为体",
+          "logic": "「场域参与者」在商业语境中强化——market player=市场的局中人",
+          "en": "China is now a major player in the global electric vehicle market.",
+          "zh": "中国现在是全球电动汽车市场的重要参与者。"
+        }
+      ],
+      "derivatives": [
+        {"w": "gameplay", "gloss": "n. 游戏玩法；游戏体验"},
+        {"w": "team player", "gloss": "n. 有团队合作精神的人（固定搭配）"}
+      ],
+      "examples": [
+        {
+          "en": "China is now a major player in the global electric vehicle market.",
+          "zh": "中国现在是全球电动汽车市场的重要参与者。",
+          "source": "造句"
+        },
+        {
+          "en": "a key player / a team player",
+          "zh": "「关键人物 / 团队合作者」——职场和体育的双重高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "participant", "ipa": "/pɑːˈtɪsɪpənt/", "gloss": "n. 参与者（正式中性）", "note": "「参与者」，比 player 更正式，不含竞技或娱乐色彩；participant in a study（研究参与者）"},
+        {"w": "performer", "ipa": "/pəˈfɔːmə/", "gloss": "n. 表演者；演奏者", "note": "「表演者/演奏者」义的近义词，强调表演行为；a skilled performer（技艺高超的表演者）"},
+        {"w": "actor", "ipa": "/ˈæktə/", "gloss": "n. 演员；行为体（分析框架）", "note": "「参与者」的比喻用法，尤其在政治经济分析中：key actors in the conflict（冲突中的关键行为体）"}
+      ],
+      "antonyms": [
+        {"w": "spectator", "note": "旁观者、观众"},
+        {"w": "bystander", "note": "局外人"}
+      ],
+      "nuance": "player 在当代英语中大量用于商业和政治语境（a major player），participant 更学术中性，actor 用于分析框架时（尤其国际关系）比 player 更正式。"
+    },
+    {
+      "word": "layer",
+      "hl": "ayer",
+      "levels": ["托福"],
+      "ipa": "/leɪə/",
+      "subgroup": "eiə",
+      "meaning": "n. 层，层次；阶层  v. 分层叠放；层层覆盖",
+      "etymology": "lay（古英语 lecgan「放置」）+ -er。「被放置的东西」→ 层。与 lay（放置）、lie（躺）同根族——都关于水平放置。",
+      "roots": [
+        {"part": "lay（lecgan）", "meaning": "放置"},
+        {"part": "-er", "meaning": "施动者/结果名词"}
+      ],
+      "phonetics": "l + /eɪə/：-ayer 三合元音，与 player、prayer 押韵。注意 layer 只有两音节。",
+      "core": "平铺叠放的单元——任何被水平放置在另一物之上的事物，无论是地质、食物、衣物还是抽象概念。",
+      "senses": [
+        {
+          "gloss": "n. 层；层次（物理上的）",
+          "logic": "核心义：叠放结构中的一个水平单元",
+          "en": "The researchers found several distinct geological layers in the rock face.",
+          "zh": "研究人员在岩壁中发现了几个清晰的地质层。"
+        },
+        {
+          "gloss": "n. 层次；深度（抽象的）",
+          "logic": "物理「层」延伸到概念——「a layer of meaning」（一层含义）",
+          "en": "The novel has multiple layers of meaning that reward close reading.",
+          "zh": "这部小说有多层含义，值得细细品味。"
+        },
+        {
+          "gloss": "v. 分层叠放；层层覆盖",
+          "logic": "名词动词化：把事物一层一层叠上去的动作",
+          "en": "She layered three sweaters to keep warm in the cold.",
+          "zh": "她叠穿了三件毛衣来御寒。"
+        }
+      ],
+      "derivatives": [
+        {"w": "layered", "gloss": "adj. 分层的；多层次的（layered approach）"},
+        {"w": "underlayer", "gloss": "n. 下层；底层"},
+        {"w": "multilayered", "gloss": "adj. 多层的；多维度的"}
+      ],
+      "examples": [
+        {
+          "en": "The researchers found several distinct geological layers in the rock face.",
+          "zh": "研究人员在岩壁中发现了几个清晰的地质层。",
+          "source": "造句"
+        },
+        {
+          "en": "layer by layer / in layers",
+          "zh": "「一层一层地 / 分层」——科学和烹饪的双重高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "stratum", "ipa": "/ˈstreɪtəm/", "gloss": "n. （地质/社会）层（正式学术词）", "note": "「（地质/社会）层」的正式学术词，复数 strata；social strata（社会阶层）"},
+        {"w": "tier", "ipa": "/tɪə/", "gloss": "n. 等级；排列的层次", "note": "「等级/层次」，强调从低到高的等级排列；a three-tier system（三级制度）"},
+        {"w": "coat", "ipa": "/koʊt/", "gloss": "n. 涂层；外衣；v. 涂覆", "note": "「涂层」义，特指涂料或物质覆盖的一层；a coat of paint（一层油漆）"}
+      ],
+      "antonyms": [],
+      "nuance": "layer 最通用，可用于地质、食物、衣物、抽象概念；stratum 是地质和社会科学的正式术语（复数 strata）；tier 强调等级高低排列；coat 专指薄薄的涂覆层。"
+    },
+    {
+      "word": "mayor",
+      "hl": "ayor",
+      "levels": ["托福"],
+      "ipa": "/meɪə/",
+      "subgroup": "eiə",
+      "meaning": "n. 市长；镇长",
+      "etymology": "拉丁语 maior「更大的」，法语 maire。与 major（主要的）、majority（多数）同根——市长是「最重要的人」。英式英语 mayor 读两音节 /meɪə/（含三合元音），美式常压成 /mer/（一音节）。",
+      "roots": [
+        {"part": "mayor（maior）", "meaning": "更大的、最重要的"}
+      ],
+      "phonetics": "m + /eɪə/：英式 /meɪə/ 保留三合元音，美式 /mer/ 压缩成一音节。托福口语按英式读出三段更标准。",
+      "tip": "mayor 和 major 同根——市长就是「最大」的那个人。mayor of London（伦敦市长）vs major decision（重大决定）。",
+      "core": "一城之中「最大」的那个人——义项单一，但词根 maior 贯穿了「大→重要→最高行政长官」的清晰路径。",
+      "senses": [
+        {
+          "gloss": "n. 市长；镇长（城市最高行政长官）",
+          "logic": "核心义也是唯一义：城市行政体系中最高级别的人",
+          "en": "The mayor announced a new plan to reduce traffic congestion in the city centre.",
+          "zh": "市长宣布了一项新计划，以缓解市中心的交通拥堵。"
+        }
+      ],
+      "derivatives": [
+        {"w": "mayoralty", "gloss": "n. 市长职位；市长任期"},
+        {"w": "mayoral", "gloss": "adj. 市长的（mayoral election 市长选举）"}
+      ],
+      "examples": [
+        {
+          "en": "The mayor announced a new plan to reduce traffic congestion in the city centre.",
+          "zh": "市长宣布了一项新计划，以缓解市中心的交通拥堵。",
+          "source": "造句"
+        },
+        {
+          "en": "run for mayor",
+          "zh": "「竞选市长」——选举语境高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "governor", "ipa": "/ˈɡʌvənə/", "gloss": "n. 州长；省长；总督", "note": "「州长/省长」，比 mayor 行政级别更高，管理州而非市"},
+        {"w": "official", "ipa": "/əˈfɪʃl/", "gloss": "n. 官员；adj. 官方的", "note": "「官员」，比 mayor 更泛，可指任何级别的政府官员"}
+      ],
+      "antonyms": [],
+      "nuance": "mayor 专指市/镇的最高行政长官；governor 管辖州；official 是泛称，任何官员都可以是 official，但只有城市最高长官才是 mayor。"
+    },
+    {
+      "word": "prayer",
+      "hl": "ayer",
+      "levels": ["托福"],
+      "ipa": "/preɪə/",
+      "subgroup": "eiə",
+      "meaning": "n. 祈祷；祷文；强烈愿望",
+      "etymology": "拉丁语 precari「恳求」，古法语 preiere → prayer。与 precarious（充满恳求→岌岌可危）同根。「向更高力量恳求」→ 祈祷。",
+      "roots": [
+        {"part": "pray (precari)", "meaning": "恳求、祈祷"},
+        {"part": "-er", "meaning": "动作结果名词后缀"}
+      ],
+      "phonetics": "pr + /eɪə/：-ayer 三合元音。注意 prayer（祈祷）和 pray（祈祷动词）不同——prayer 是名词，含三合元音。",
+      "core": "向更高力量发出的恳切请求——无论是宗教祈祷还是绝望中的强烈愿望，都是把自己的渴望托付给超出自己掌控的力量。",
+      "senses": [
+        {
+          "gloss": "n. 祈祷；祷告（宗教行为）",
+          "logic": "核心义：向神明恳求的仪式性行为",
+          "en": "Morning prayer is a daily ritual in many cultures around the world.",
+          "zh": "晨祷是世界上许多文化的日常仪式。"
+        },
+        {
+          "gloss": "n. 祷文；祷词（具体的祈祷内容）",
+          "logic": "行为名词化为内容——说出口的那些话",
+          "en": "The priest led the congregation in a prayer for peace.",
+          "zh": "神父带领会众为和平祈祷。"
+        },
+        {
+          "gloss": "n. 强烈愿望；唯一的希望（口语比喻）",
+          "logic": "宗教义延伸：「not have a prayer」=连祈祷都没用=毫无希望",
+          "en": "With three minutes left and two goals down, they didn't have a prayer.",
+          "zh": "还剩三分钟，落后两球，他们毫无希望了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "prayerful", "gloss": "adj. 虔诚的；充满祈求的"},
+        {"w": "prayerbook", "gloss": "n. 祈祷书；礼拜手册"}
+      ],
+      "examples": [
+        {
+          "en": "Morning prayer is a daily ritual in many cultures around the world.",
+          "zh": "晨祷是世界上许多文化的日常仪式。",
+          "source": "造句"
+        },
+        {
+          "en": "not have a prayer",
+          "zh": "「毫无机会、没有一点希望」——口语否定式固定用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "petition", "ipa": "/pəˈtɪʃn/", "gloss": "n. 请愿书；v. 请愿；恳求", "note": "「请愿/恳求」，比 prayer 更正式、更世俗，向人类权威或政府提出"},
+        {"w": "plea", "ipa": "/pliː/", "gloss": "n. 恳求；申辩；辩护", "note": "「恳求」，比 prayer 更带情感紧迫性，不限于宗教场合；a plea for mercy（恳求宽恕）"},
+        {"w": "supplication", "ipa": "/ˌsʌplɪˈkeɪʃn/", "gloss": "n. 哀求；祈求（卑微恳求）", "note": "「哀求、祈求」，比 prayer 更卑微、更绝望，书面正式词"}
+      ],
+      "antonyms": [
+        {"w": "curse", "note": "诅咒"},
+        {"w": "blasphemy", "note": "亵渎"}
+      ],
+      "nuance": "prayer 专属宗教语境的「祈祷」，也可比喻「强烈愿望」；plea 是紧迫的世俗恳求；petition 是正式书面请愿；supplication 带有低姿态哀求的意味，多见于文学和宗教文本。"
+    },
+    {
+      "word": "loyal",
+      "hl": "oyal",
+      "levels": ["托福"],
+      "ipa": "/lɔɪəl/",
+      "subgroup": "oiə",
+      "meaning": "adj. 忠诚的，忠实的；（品牌/组织）有归属感的",
+      "etymology": "拉丁语 legalis「合法的」，法语 loyal。「遵守法律/誓言」→ 忠诚。与 legal（合法）、legitimate（合理合法）同根——忠诚在词源上就是「守法守约」。",
+      "roots": [
+        {"part": "loy- (legalis)", "meaning": "合法的、遵守誓约的"},
+        {"part": "-al", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "l + /ɔɪəl/：-oyal 是 /ɔɪ/（双元音）+ /ə/ + l，这组三合元音在日常语速中保留完整，因为 /ɔɪ/ 本身收音明显。",
+      "core": "守住誓言和约定——「忠诚」在词源上就是「合法守约」，即使处境艰难也不背叛。",
+      "senses": [
+        {
+          "gloss": "adj. 忠诚的；忠实的（对人或组织）",
+          "logic": "核心义：持续遵守对某人或某组织的承诺，不动摇",
+          "en": "He remained loyal to his principles even when it cost him his career.",
+          "zh": "即使付出职业代价，他仍坚守自己的原则。"
+        },
+        {
+          "gloss": "adj. 有归属感的；忠实（消费者）",
+          "logic": "商业语境延伸——对品牌「守约」，不随便转换",
+          "en": "Building a loyal customer base takes years of consistent service.",
+          "zh": "建立忠实的客户群需要多年如一的服务。"
+        }
+      ],
+      "derivatives": [
+        {"w": "loyalty", "gloss": "n. 忠诚；忠实（loyalty program 会员积分计划）"},
+        {"w": "disloyal", "gloss": "adj. 不忠的；背叛的"},
+        {"w": "loyalist", "gloss": "n. 效忠者；保皇党（历史政治用词）"}
+      ],
+      "examples": [
+        {
+          "en": "He remained loyal to his principles even when it cost him his career.",
+          "zh": "即使付出职业代价，他仍坚守自己的原则。",
+          "source": "造句"
+        },
+        {
+          "en": "loyal customer / loyal supporter",
+          "zh": "「忠实顾客 / 忠实支持者」——商业和政治最高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "faithful", "ipa": "/ˈfeɪθfl/", "gloss": "adj. 忠贞的；如实的；笃信的", "note": "「忠贞的」，比 loyal 更强调信义和誓言，多用于宗教、婚姻、友谊；faithful to one's promise（信守承诺）"},
+        {"w": "devoted", "ipa": "/dɪˈvoʊtɪd/", "gloss": "adj. 忠心耿耿的；全心投入的", "note": "「忠心耿耿的、全心投入的」，比 loyal 更带感情色彩；a devoted follower（忠实追随者）"},
+        {"w": "steadfast", "ipa": "/ˈstedfɑːst/", "gloss": "adj. 坚定不移的；不动摇的", "note": "「坚定不移的」，比 loyal 更强调在压力下不动摇；steadfast support（坚定支持）"}
+      ],
+      "antonyms": [
+        {"w": "disloyal", "note": "不忠的"},
+        {"w": "treacherous", "note": "背叛的"}
+      ],
+      "nuance": "loyal 最通用，适用于人、品牌、组织；faithful 更强调信守誓言（宗教义或婚姻义）；devoted 带温情投入感；steadfast 强调在考验中的坚定。「a loyal customer」是商业用语，「a faithful companion」更文学情感。"
+    },
+    {
+      "word": "royal",
+      "hl": "oyal",
+      "levels": ["托福"],
+      "ipa": "/rɔɪəl/",
+      "subgroup": "oiə",
+      "meaning": "adj. 皇家的，王室的；盛大的，堂皇的  n. 王室成员（口语）",
+      "etymology": "拉丁语 regalis「国王的」，法语 roial → royal。与 regal（帝王的）、reign（统治）、regent（摄政王）同根——都围绕「国王」这一核心。",
+      "roots": [
+        {"part": "roy- (regalis)", "meaning": "国王的"},
+        {"part": "-al", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "r + /ɔɪəl/：-oyal 三合元音，与 loyal 押韵，这组最容易整体记忆。",
+      "tip": "loyal 和 royal 押韵，字形只差首字母——「对皇室（royal）忠诚（loyal）」是一组好记忆对。",
+      "core": "属于国王的——从具体的王室身份延伸到「堂皇、高规格」的气派，因为王室代表最高标准。",
+      "senses": [
+        {
+          "gloss": "adj. 皇家的；王室的（身份/机构）",
+          "logic": "核心义：属于或由国王/王室拥有的",
+          "en": "The Royal Family attended the state ceremony in full regalia.",
+          "zh": "王室成员身着盛装出席了国家典礼。"
+        },
+        {
+          "gloss": "adj. 盛大的；高规格的（比喻）",
+          "logic": "王室=最高规格，引申为任何超出寻常的盛大待遇",
+          "en": "The village gave the returning champion a royal welcome.",
+          "zh": "村民们为凯旋而归的冠军举行了盛大的欢迎仪式。"
+        },
+        {
+          "gloss": "n. 王室成员（口语）",
+          "logic": "形容词名词化：「a royal」=「a member of the royal family」",
+          "en": "The tabloids were full of stories about the royals.",
+          "zh": "小报上充斥着关于王室成员的报道。"
+        }
+      ],
+      "derivatives": [
+        {"w": "royalty", "gloss": "n. 王室；版税（「给创作者的皇家礼遇」）"},
+        {"w": "royalist", "gloss": "n. 保皇党人；adj. 保皇的"},
+        {"w": "royally", "gloss": "adv. 非常；彻底（口语夸张：royally messed up）"}
+      ],
+      "examples": [
+        {
+          "en": "The Royal Family attended the state ceremony in full regalia.",
+          "zh": "王室成员身着盛装出席了国家典礼。",
+          "source": "造句"
+        },
+        {
+          "en": "a royal welcome / royal treatment",
+          "zh": "「盛大欢迎 / 高规格待遇」——「堂皇」义的高频比喻用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "regal", "ipa": "/ˈriːɡl/", "gloss": "adj. 帝王气派的；威严的", "note": "「帝王气派的」，比 royal 更强调威严气质，不一定有血统；a regal bearing（帝王般的仪态）"},
+        {"w": "imperial", "ipa": "/ɪmˈpɪəriəl/", "gloss": "adj. 帝国的；皇帝的（级别高于 royal）", "note": "「帝国的/皇帝的」，比 royal 层级更高，指帝国而非王国；Imperial Palace（皇宫）"},
+        {"w": "majestic", "ipa": "/məˈdʒestɪk/", "gloss": "adj. 宏伟的；威严的（可用于自然景观）", "note": "「宏伟的、威严的」，比 royal 更强调视觉上的壮丽气势；a majestic mountain（巍峨的山脉）"}
+      ],
+      "antonyms": [
+        {"w": "common", "note": "平民的"},
+        {"w": "plebeian", "note": "平民的、低俗的"}
+      ],
+      "nuance": "royal 指王室血统或身份（Royal Family）；regal 强调气质和风度（不需要血统）；imperial 指帝国级别（高于 royal）；majestic 是纯粹描述宏伟壮观，可用于自然景观。"
+    },
+    {
+      "word": "employer",
+      "hl": "oyer",
+      "levels": ["托福"],
+      "ipa": "/ɪmˈplɔɪə/",
+      "subgroup": "oiə",
+      "meaning": "n. 雇主，用人单位",
+      "etymology": "employ（法语 employer，拉丁语 implicare「卷入、使用」）+ -er（施动者）= 「使他人卷入工作的人」→ 雇主。与 imply（暗示）、explicit（明确展开）同根。",
+      "roots": [
+        {"part": "em- (in-)", "meaning": "使、进入"},
+        {"part": "-ploy (plicare)", "meaning": "折叠、卷入、使用"},
+        {"part": "-er", "meaning": "施动者"}
+      ],
+      "phonetics": "重音在中 em-PLOY- /plɔɪ/，-er 弱读 /ə/：合起来 -oyer 就是 /ɔɪə/ 三合元音。employer 和 employee 是托福必考对比词对。",
+      "tip": "employer（雇主）vs employee（雇员）——er 结尾是「做事的人」，ee 结尾是「被动接受的人」。",
+      "core": "「把人卷入工作」的那一方——雇主是雇佣关系的主动发起者，掌握着雇用权和解雇权。",
+      "senses": [
+        {
+          "gloss": "n. 雇主；用人单位（雇佣关系中的主导方）",
+          "logic": "核心义也是唯一义：雇佣劳动者并支付报酬的个人或机构",
+          "en": "The employer is legally required to provide a safe working environment.",
+          "zh": "雇主在法律上有义务提供安全的工作环境。"
+        }
+      ],
+      "derivatives": [
+        {"w": "employee", "gloss": "n. 雇员；受雇者（对应词）"},
+        {"w": "employment", "gloss": "n. 雇用；就业；工作"},
+        {"w": "unemployed", "gloss": "adj. 失业的；未被雇用的"}
+      ],
+      "examples": [
+        {
+          "en": "The employer is legally required to provide a safe working environment.",
+          "zh": "雇主在法律上有义务提供安全的工作环境。",
+          "source": "造句"
+        },
+        {
+          "en": "potential employer / prospective employer",
+          "zh": "「潜在雇主」——求职场景的高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "company", "ipa": "/ˈkʌmpəni/", "gloss": "n. 公司；企业（作为雇主的组织体）", "note": "「公司/雇主」，比 employer 更具体，指组织实体；the company offers good benefits（公司提供好福利）"},
+        {"w": "manager", "ipa": "/ˈmænɪdʒə/", "gloss": "n. 经理；管理者（雇主的代理人）", "note": "「经理」，是雇主的代理人，直接管理员工的上级"},
+        {"w": "boss", "ipa": "/bɒs/", "gloss": "n. 老板；上司（口语）", "note": "「老板」，比 employer 更口语，可指任何上级；my boss gave me a raise（老板给我加薪）"}
+      ],
+      "antonyms": [
+        {"w": "employee", "note": "雇员"},
+        {"w": "worker", "note": "工人、受雇者"}
+      ],
+      "nuance": "employer 是法律/正式用语，指拥有雇佣权的一方（个人或机构）；boss 口语，指直接上级；company 指组织体，employer 更强调雇佣关系中的法律主体角色。"
+    },
+    {
+      "word": "destroyer",
+      "hl": "oyer",
+      "levels": ["托福"],
+      "ipa": "/dɪˈstrɔɪə/",
+      "subgroup": "oiə",
+      "meaning": "n. 破坏者；摧毁者；（军舰）驱逐舰",
+      "etymology": "destroy（拉丁语 destruere = de-(拆除) + struere(建造)）+ -er = 「拆掉建筑物的人」→ 破坏者。与 construct（建造）、structure（结构）同根——破坏是建设的镜像。",
+      "roots": [
+        {"part": "de-", "meaning": "拆除、向下"},
+        {"part": "-stroy (struere)", "meaning": "建造"},
+        {"part": "-er", "meaning": "施动者"}
+      ],
+      "phonetics": "重音在中 de-STROY- /strɔɪ/，-er 弱读 /ə/：-oyer = /ɔɪə/ 三合元音。与 employer 押韵。",
+      "core": "把已建好的东西拆掉的力量——「破坏」在词源上就是「反向建造」，所以与 construct、structure 同根。",
+      "senses": [
+        {
+          "gloss": "n. 破坏者；摧毁者（人或力量）",
+          "logic": "核心义：拆毁已有结构的施动者",
+          "en": "Wildfires are the destroyers of ecosystems that took centuries to develop.",
+          "zh": "野火是这些历经数百年才形成的生态系统的摧毁者。"
+        },
+        {
+          "gloss": "n. 驱逐舰（军事舰种）",
+          "logic": "军事专有义：专门「摧毁」敌方目标的快速战舰（历史偶合命名，非字面引申）",
+          "en": "The navy deployed two destroyers to patrol the disputed waters.",
+          "zh": "海军派遣两艘驱逐舰在争议海域巡逻。"
+        }
+      ],
+      "derivatives": [
+        {"w": "destruction", "gloss": "n. 破坏；毁灭"},
+        {"w": "destructive", "gloss": "adj. 破坏性的；毁灭性的"},
+        {"w": "indestructible", "gloss": "adj. 坚不可摧的；无法破坏的"}
+      ],
+      "examples": [
+        {
+          "en": "Wildfires are the destroyers of ecosystems that took centuries to develop.",
+          "zh": "野火是这些历经数百年才形成的生态系统的摧毁者。",
+          "source": "造句"
+        },
+        {
+          "en": "USS Destroyer / guided-missile destroyer",
+          "zh": "「美国驱逐舰 / 导弹驱逐舰」——军事术语义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "demolisher", "ipa": "/dɪˈmɒlɪʃə/", "gloss": "n. 拆毁者（针对建筑的具体拆除）", "note": "「拆毁者」，比 destroyer 更具体，多指对建筑物的拆除"},
+        {"w": "wrecker", "ipa": "/ˈrekə/", "gloss": "n. 破坏者；拖车（口语）", "note": "「破坏者/拆毁者」，比 destroyer 更口语，也指拖车（wrecking vehicle）"},
+        {"w": "annihilator", "ipa": "/əˈnaɪəleɪtə/", "gloss": "n. 彻底消灭者（夸张/科幻语境）", "note": "「彻底消灭者」，比 destroyer 程度更深，强调完全消除，多见于科幻和夸张语境"}
+      ],
+      "antonyms": [
+        {"w": "creator", "note": "创造者"},
+        {"w": "builder", "note": "建造者"}
+      ],
+      "nuance": "destroyer 是通用的「破坏/摧毁者」，在军事上特指驱逐舰；demolisher 针对建筑拆除；wrecker 更口语且有「毁掉计划/关系」的引申义；annihilator 语气最极端，多用于夸张或虚构语境。"
+    },
+    {
+      "word": "lower",
+      "hl": "ower",
+      "levels": ["托福"],
+      "ipa": "/ləʊə/",
+      "subgroup": "ouə",
+      "meaning": "v. 降低；放低（声音/眼神/旗帜）  adj. 更低的，较低的",
+      "etymology": "low（古英语 lāh「低」）的比较级 lower，作动词义（降低）是从形容词「低」延伸来的。与 below（在低处）、fellow（躺在地上的人→同伴）有远亲关系。",
+      "roots": [
+        {"part": "low（lāh）", "meaning": "低"},
+        {"part": "-er", "meaning": "比较级后缀 / 动词化"}
+      ],
+      "phonetics": "l + /əʊə/：lower 的 o 是圆唇 /əʊ/，与 flower（/flaʊə/）完全不同！flower 大开口，lower 嘴圆。这是三合元音中最重要的辨音对。",
+      "tip": "flower（花）/flaʊə/ vs lower（更低）/ləʊə/——字形差一个 fl，发音差一个元音类型，别混。",
+      "core": "「低」的延伸——让位置、数值、姿态向下移动；无论是物理上降低还是比较级「更低」，都是同一个方向感。",
+      "senses": [
+        {
+          "gloss": "adj. 更低的；较低的（比较级）",
+          "logic": "核心义：low 的比较级，位置或程度在下方",
+          "en": "The lower floors of the building were flooded after the heavy rain.",
+          "zh": "暴雨过后，大楼低层被淹了。"
+        },
+        {
+          "gloss": "v. 降低（数值/价格/标准）",
+          "logic": "形容词动词化：让某物的数值向「低」的方向移动",
+          "en": "The government plans to lower the income tax rate by two percentage points.",
+          "zh": "政府计划将所得税税率降低两个百分点。"
+        },
+        {
+          "gloss": "v. 放低（声音、姿态、眼神）",
+          "logic": "同一「向下」方向感用于非量化场景——放低声音是让声音「降落」",
+          "en": "She lowered her voice when she realized others could hear the conversation.",
+          "zh": "她意识到别人能听到谈话内容后，压低了声音。"
+        }
+      ],
+      "derivatives": [
+        {"w": "lowest", "gloss": "adj. 最低的（最高级）"},
+        {"w": "lowering", "gloss": "adj. 阴沉的（天空）；n. 降低的动作"},
+        {"w": "low-key", "gloss": "adj. 低调的；不张扬的"}
+      ],
+      "examples": [
+        {
+          "en": "The government plans to lower the income tax rate by two percentage points.",
+          "zh": "政府计划将所得税税率降低两个百分点。",
+          "source": "造句"
+        },
+        {
+          "en": "lower one's guard / lower one's voice",
+          "zh": "「降低警惕 / 压低声音」——高频动词短语搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "reduce", "ipa": "/rɪˈdjuːs/", "gloss": "v. 减少；降低；简化", "note": "「减少/降低」，比 lower 更正式宽泛；reduce costs（降低成本）"},
+        {"w": "decrease", "ipa": "/dɪˈkriːs/", "gloss": "v./n. 减少；降低（可及物或不及物）", "note": "「减少」，可及物或不及物；decrease in price（价格下降）"},
+        {"w": "diminish", "ipa": "/dɪˈmɪnɪʃ/", "gloss": "v. 削减；逐渐减弱（至微不足道）", "note": "「削减/减弱」，强调逐渐减少，带「变得微不足道」的含义；diminish in importance（重要性降低）"}
+      ],
+      "antonyms": [
+        {"w": "raise", "note": "提高"},
+        {"w": "elevate", "note": "抬高、提升"}
+      ],
+      "nuance": "lower 兼有「降低（具体数值）」和「放低（姿态/声音）」义；reduce 更宽泛，可以是任何形式的减少；diminish 强调逐渐减弱到几乎可以忽略。「lower the price」= 把价格调低，「reduce the price」= 减少价格幅度，两者常通用。"
+    },
+    {
+      "word": "slower",
+      "hl": "ower",
+      "levels": ["托福"],
+      "ipa": "/sləʊə/",
+      "subgroup": "ouə",
+      "meaning": "adj. 更慢的（slow 的比较级）  adv. 更慢地",
+      "etymology": "slow（古英语 slāw「迟钝」）的比较级。slow 原义「迟缓、迟钝」，同根词 sloth（懒惰/树懒）——树懒是「慢的动物」。",
+      "roots": [
+        {"part": "slow（slāw）", "meaning": "迟缓"},
+        {"part": "-er", "meaning": "比较级后缀"}
+      ],
+      "phonetics": "sl + /əʊə/：-ower 比较级读 /əʊə/，三合元音。slow→slower，low→lower，grow→grower，这批-ow词比较级全部都是 /əʊə/ 三合元音。",
+      "core": "比参照点更迟缓——「更慢」是对速度的比较性评价，单义词，无多义引申。",
+      "senses": [
+        {
+          "gloss": "adj./adv. 更慢的（地）（slow 的比较级）",
+          "logic": "唯一义：在速度或节奏上低于另一参照物",
+          "en": "Economic recovery is much slower than analysts had predicted.",
+          "zh": "经济复苏比分析师预测的慢得多。"
+        }
+      ],
+      "derivatives": [
+        {"w": "slowest", "gloss": "adj. 最慢的（最高级）"},
+        {"w": "slow down", "gloss": "v. 减速；（使）放缓（高频短语）"},
+        {"w": "slowpoke", "gloss": "n. 慢吞吞的人（口语）"}
+      ],
+      "examples": [
+        {
+          "en": "Economic recovery is much slower than analysts had predicted.",
+          "zh": "经济复苏比分析师预测的慢得多。",
+          "source": "造句"
+        },
+        {
+          "en": "at a slower pace",
+          "zh": "「以更慢的速度」——经济和学习语境常见节奏描述。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "more gradual", "gloss": "adj. 更循序渐进的（强调平稳变化）", "note": "「更循序渐进的」，比 slower 强调变化的平稳性而非单纯速度"},
+        {"w": "more leisurely", "ipa": "/ˈleʒəli/", "gloss": "adj. 更从容的；更悠闲的（带正面色彩）", "note": "「更从容的、不慌不忙的」，比 slower 带有享受慢节奏的正面色彩"},
+        {"w": "more deliberate", "ipa": "/dɪˈlɪbərət/", "gloss": "adj. 更刻意放慢的；更深思熟虑的", "note": "「更深思熟虑的、更刻意放慢的」，暗含有意识控制节奏"}
+      ],
+      "antonyms": [
+        {"w": "faster", "note": "更快的"},
+        {"w": "quicker", "note": "更快的（更口语）"}
+      ],
+      "nuance": "slower 是中性描述速度比较；gradual 强调渐进性；deliberate 暗含有意为之；leisurely 是正面的「悠闲」。「a slower response」是中性描述，「a more deliberate response」暗示「刻意放慢给对方施压」。"
+    },
+    {
+      "word": "grower",
+      "hl": "ower",
+      "levels": ["托福"],
+      "ipa": "/ɡrəʊə/",
+      "subgroup": "ouə",
+      "meaning": "n. 种植者，栽培者；（增长型的）企业或人",
+      "etymology": "grow（古英语 grōwan「生长」）+ -er = 「使事物生长的人」→ 种植者。grow 同族词：growth（增长）、ingrown（向内生长）。",
+      "roots": [
+        {"part": "grow（grōwan）", "meaning": "生长"},
+        {"part": "-er", "meaning": "施动者"}
+      ],
+      "phonetics": "gr + /əʊə/：-ower 读 /əʊə/，与 lower、slower、mower 押韵——这一批全是 -ow 词的比较级或施动者名词，统一读 /əʊə/。",
+      "tip": "「a slow grower」=「增长缓慢的（公司/植物）」——商业和园艺双义，托福阅读中两者都会出现。",
+      "core": "使生长的人或事物——从字面的「种植者」到比喻的「增长型主体」，核心都是「生长」这一动态过程。",
+      "senses": [
+        {
+          "gloss": "n. 种植者；栽培者（农业）",
+          "logic": "核心义：让植物生长的人",
+          "en": "Small-scale growers in the region struggle to compete with industrial farms.",
+          "zh": "该地区的小规模种植者难以与工业化农场竞争。"
+        },
+        {
+          "gloss": "n. 增长型主体；（商业/投资）成长股或成长型企业",
+          "logic": "「生长」隐喻延伸到商业——fast grower=高速增长的公司",
+          "en": "Analysts classified the startup as a fast grower with strong potential.",
+          "zh": "分析师将这家初创公司列为具有强劲潜力的高速增长企业。"
+        }
+      ],
+      "derivatives": [
+        {"w": "growth", "gloss": "n. 增长；生长；肿瘤"},
+        {"w": "grown-up", "gloss": "n./adj. 成年人；成熟的"},
+        {"w": "outgrow", "gloss": "v. 超越；长大后不再适合（某物）"}
+      ],
+      "examples": [
+        {
+          "en": "Small-scale growers in the region struggle to compete with industrial farms.",
+          "zh": "该地区的小规模种植者难以与工业化农场竞争。",
+          "source": "造句"
+        },
+        {
+          "en": "a fast grower / a slow grower",
+          "zh": "「增长迅速/缓慢的（企业）」——商业分析的高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "cultivator", "ipa": "/ˈkʌltɪveɪtə/", "gloss": "n. 耕种者；栽培者（强调技艺）", "note": "「耕种者」，比 grower 更正式，强调耕作和培育过程；cultivator of fine wine（精品葡萄酒种植者）"},
+        {"w": "farmer", "ipa": "/ˈfɑːmə/", "gloss": "n. 农民；农场主（通用）", "note": "「农民」，比 grower 更口语和通用，grower 特指种植某种具体作物的人"},
+        {"w": "producer", "ipa": "/prəˈdjuːsə/", "gloss": "n. 生产者；制片人（最宽泛）", "note": "「生产者」，比 grower 更宽泛，覆盖农业和工业；agricultural producer（农业生产者）"}
+      ],
+      "antonyms": [
+        {"w": "consumer", "note": "消费者"},
+        {"w": "buyer", "note": "购买者（相对于生产者）"}
+      ],
+      "nuance": "grower 特指「种植某种作物的人」（grower of organic vegetables），也用于商业「增长型主体」；farmer 是更通用的「农民」；cultivator 强调培育技艺；producer 最宽泛，包括任何生产者。"
+    }
+  ]
+}

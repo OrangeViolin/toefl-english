@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>/ð/ 浊咬舌音 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "this", "combo": "th", "title": "/ð/ 浊咬舌音", "sound": "/ð/（浊）", "subtitle": "同一个 th，声带一振就从 /θ/ 变成 /ð/——虚词全部读浊，实词中间也多读浊", "intro": "/ð/ 和 /θ/ 共用同一个拼写 th，区别只在声带是否振动：发 /θ/ 时声带静止（think、three），发 /ð/ 时声带振动，喉咙能感到嗡嗡感（the、this）。规律很稳定：the / this / that / they / them / then / there / though / thus 等虚词几乎全读 /ð/；实词里 th 夹在元音之间（mother、weather、together）也多读 /ð/；以 -the/-the 结尾的动词（breathe、bathe）同样读浊。记住这条分类，遇到 th 先判断虚词还是实词，就能猜对九成。", "subgroups": [{"key": "function", "tag": "虚词 th-", "label": "✅ 虚词里的 th- 读浊 /ð/", "desc": "the / this / that / these / those / they / them / then / there / than / though / thus 等高频虚词，th 几乎无一例外读浊 /ð/。发音技巧：舌尖轻抵上齿背，声带同时振动，气流穿过——和 /θ/ 的嘴型完全一样，只多一步「开嗓」。"}, {"key": "content", "tag": "实词中的 th", "label": "实词里 th 读浊 /ð/", "desc": "mother / father / brother / other / another / weather / together / bathe / breathe / smooth / clothes / although / rather / northern 等实词，th 夹在元音之间或处于词尾 -the 时读浊 /ð/。规律：th 在两个元音之间（mo-ther、wea-ther）→ 浊；词尾 -the（breathe、bathe）→ 浊；单独词尾 -th（bath、cloth）→ 清 /θ/。"}], "words": [{"word": "the", "hl": "th", "levels": ["基础"], "ipa": "/ðə/ 或 /ði/", "subgroup": "function", "meaning": "art. 定冠词，指特定的人或物", "etymology": "古英语 þe，是 þæt（that）的弱化形式，日耳曼同根。英语中使用频率第一的词，约占所有书面词语的 6%。", "roots": [{"part": "the（þe）", "meaning": "定冠词"}], "phonetics": "在辅音前弱读 /ðə/（the book），在元音前读 /ði/（the apple）；强调时读 /ðiː/（THE point，就是这个！）。th 是英语中最典型的浊咬舌音——声带振动可在喉咙处感到嗡嗡感。", "tip": "区分 /ð/ 和 /θ/ 最快方法：手放喉咙，the 发 /ð/ 时有振动，think 发 /θ/ 时没有。", "core": "「我们都知道说的是哪个」——the 是「共识感」，说话者和听者心里指向同一个东西。", "senses": [{"gloss": "定指：指双方都明确知道的那个特定事物", "logic": "共识感的核心义：说出来大家都知道指哪个", "en": "Close the door, please.", "zh": "（说话时双方都知道哪扇门）请把门关上。"}, {"gloss": "唯一性：世界上只有一个的事物", "logic": "唯一等于天然共识，不需要指明", "en": "The sun rises in the east.", "zh": "太阳从东方升起。"}, {"gloss": "强调：THE，就是这个、最重要的那个", "logic": "共识感拉满→强调独一无二，重读 /ðiː/", "en": "This is THE book to read on the topic.", "zh": "这是这个话题上（最值得读的）那本书。"}], "derivatives": [], "examples": [{"en": "The Earth revolves around the Sun.", "zh": "地球绕太阳运转。", "source": "造句"}, {"en": "hit the nail on the head", "zh": "「说到点子上」——高频习语，强调准确命中核心。", "source": "高频搭配"}], "synonyms": [{"w": "this", "ipa": "/ðɪs/", "gloss": "近指限定词，指眼前或当下的那个", "note": "指示词，指近处特定事物；比 the 多了「就是这个（不是那个）」的强调"}, {"w": "that", "ipa": "/ðæt/", "gloss": "远指限定词，指较远或刚提过的那个", "note": "指较远处的事物；the 无方向感，that 有「远离」的空间信号"}], "antonyms": [{"w": "a/an", "note": "不定冠词，泛指，与 the 的定指相对"}], "nuance": "the 是定指（双方都知道指哪个），a/an 是泛指（第一次提到）。the sun / the moon 因天体唯一而用 the；a star 是泛指任意一颗星。语用错误往往出在第一次提到时误用 the。"}, {"word": "this", "hl": "th", "levels": ["基础"], "ipa": "/ðɪs/", "subgroup": "function", "meaning": "det./pron. 这，这个；（引入或强调）就是……", "etymology": "古英语 þis，是 þæt（that）的近指形式，日耳曼同根。this/that 的对立贯穿英语空间指示系统：近→this，远→that。", "roots": [{"part": "this（þis）", "meaning": "这（近指）"}], "phonetics": "th + is：/ðɪs/。th 读浊 /ð/，s 结尾清音。注意与 θɪs 的区别——声带是否振动是唯一分野。", "tip": "This is it. 是英语最常见的「就是这个！」强调句式，this 重读时发 /ðɪs/ 而非弱化。", "core": "「就在这里、就是现在」——this 是「近感」，把注意力拉到说话者当下所处的位置或时刻。", "senses": [{"gloss": "空间近指：指眼前、触手可及的事物", "logic": "近感的本义，物理距离近", "en": "Take this umbrella — it's about to rain.", "zh": "拿着这把伞，快下雨了。"}, {"gloss": "时间近指：指当下正在发生或刚提到的事", "logic": "「近」从空间延伸到时间，当下的事也是「近的」", "en": "This is the moment we've been training for.", "zh": "这就是我们一直训练要迎接的时刻。"}, {"gloss": "程度副词：到这个程度（this big / this far）", "logic": "「近感」具体化为「就这么多/这么大」", "en": "I didn't know it would go this far.", "zh": "我没想到事情会走到这一步。"}], "derivatives": [], "examples": [{"en": "This is exactly what I was looking for.", "zh": "这正是我在找的东西。", "source": "造句"}, {"en": "this far / this much", "zh": "「到这一步 / 这么多」——副词义高频用法。", "source": "高频搭配"}], "synonyms": [{"w": "the", "ipa": "/ðə/", "gloss": "定冠词，指双方已知的特定事物", "note": "定冠词，泛指已知事物；this 多了「近处、当下」的方向感"}, {"w": "here", "ipa": "/hɪər/", "gloss": "副词，指说话者所在的位置", "note": "副词「这里」，与 this 同为近指，但指地点而非事物"}], "antonyms": [{"w": "that", "note": "那个（远指）"}, {"w": "those", "note": "那些（远指复数）"}], "nuance": "this 指空间或话题上「近的、当前的」；that 指「远的、刚提过的」。「This is interesting」（我正在说的事）vs「That was interesting」（刚才的事）——时间距离也用 this/that 表达。"}, {"word": "that", "hl": "th", "levels": ["基础"], "ipa": "/ðæt/", "subgroup": "function", "meaning": "det./pron. 那，那个  conj. 引导从句  adv. 那么（that big）", "etymology": "古英语 þæt，是最古老的日耳曼指示词之一，与德语 das 同根。that 承担了指示、连词、关系代词三重功能，是英语中语法角色最多的词之一。", "roots": [{"part": "that（þæt）", "meaning": "那（远指）"}], "phonetics": "th + at：/ðæt/。作连词和关系代词时常弱化为 /ðət/（I know that she came）；作指示代词强调时保持 /ðæt/。", "tip": "作关系代词时 that 可省略（the book (that) I read），which 不可省略——这是英语笔试高频考点。", "core": "「拉开距离，与此区分」——that 是「远感」，把某物从说话者身边推出去，无论是空间距离、时间距离还是逻辑上的隔开。", "senses": [{"gloss": "远指代词／限定词：指较远处或刚提过的那个", "logic": "远感本义，与 this（近）相对", "en": "That building across the street is the city hall.", "zh": "街对面那栋楼是市政厅。"}, {"gloss": "连词：引导名词从句（that + 句子）", "logic": "把一整句话「推出去」作为宾语或补语，起隔开主从的作用", "en": "She knows that hard work pays off.", "zh": "她知道努力是有回报的。"}, {"gloss": "关系代词：which/who 的口语替代，引导限定性定语从句", "logic": "用来「圈定」所修饰的名词范围，逻辑上仍是隔开与区分", "en": "The only thing that matters is whether you tried.", "zh": "唯一重要的事是你有没有尝试。"}, {"gloss": "程度副词：那么（that big / that good）", "logic": "远感延伸为「达到那种程度」，常带轻微感叹", "en": "I didn't think the problem was that serious.", "zh": "我没想到问题那么严重。"}], "derivatives": [], "examples": [{"en": "I believe that practice makes perfect.", "zh": "我相信熟能生巧。", "source": "造句"}, {"en": "at that point / that said", "zh": "「在那时 / 话虽如此」——转折和时间的高频用法。", "source": "高频搭配"}], "synonyms": [{"w": "which", "ipa": "/wɪtʃ/", "gloss": "关系代词，用于非限定性从句修饰物", "note": "关系代词，可替换 that 修饰物，但只用于非限定性从句（加逗号），比 that 更正式"}, {"w": "so", "ipa": "/soʊ/", "gloss": "连词，表结果或目的", "note": "连词义近义，so that（以便）常整体替换 that 的目的从句"}], "antonyms": [{"w": "this", "note": "这个（近指）"}, {"w": "these", "note": "这些（近指复数）"}], "nuance": "关系代词中 that 引导限定性从句（The car that I bought is red，缺少它句意不完整），which 引导非限定性从句（The car, which I bought last year, is red，补充说明）。美式英语偏用 that，英式英语更多用 which。"}, {"word": "they", "hl": "th", "levels": ["基础"], "ipa": "/ðeɪ/", "subgroup": "function", "meaning": "pron. 他们，她们，它们；（泛指）人们；（单数中性代词）他/她", "etymology": "古诺斯语 þeir，由维京人带入英语，取代了古英语的 hīe。这是英语中少数几个斯堪的纳维亚语来源的核心虚词之一。", "roots": [{"part": "they（þeir）", "meaning": "他们（古诺斯语借词）"}], "phonetics": "th + ey：/ðeɪ/，与 day、say 押韵。th 读浊 /ð/，ey 读 /eɪ/。注意弱读时仍保持 /ð/ 而非 /θ/。", "tip": "They 作单数中性代词（Someone left their bag → they left their bag）已被多数语法指南认可，托福写作中可用于避免 he/she 的尴尬。", "core": "「不是你我，是那些人」——they 是「第三方复数」感，把某个群体整体推到对话之外。", "senses": [{"gloss": "第三人称复数：指已知的一群人或事物", "logic": "核心义，指代说话双方之外的群体", "en": "They announced the results this morning.", "zh": "他们今早公布了结果。"}, {"gloss": "泛指：人们，普遍认为如此的那些人", "logic": "群体感扩大到无边界的「世人」", "en": "They say it takes twenty-one days to form a habit.", "zh": "据说养成一个习惯需要二十一天。"}, {"gloss": "单数中性：指性别不明或非二元性别的个人", "logic": "现代英语演变：避免 he/she 的性别指定，用复数形式指单人", "en": "If anyone calls, tell them I'm in a meeting.", "zh": "如果有人打电话，告诉他们我在开会。"}], "derivatives": [], "examples": [{"en": "They say practice makes perfect, and I believe it.", "zh": "人们说熟能生巧，我相信这句话。", "source": "造句"}, {"en": "they say / as they say", "zh": "「据说 / 正如人们常说的」——泛指说话者的高频结构。", "source": "高频搭配"}], "synonyms": [{"w": "people", "ipa": "/ˈpiːpl/", "gloss": "名词，泛指人类或某群体", "note": "泛指「人们」时可与 they 互换，但 people 更明确，they 更口语"}, {"w": "them", "ipa": "/ðem/", "gloss": "they 的宾格形式，在句中作宾语", "note": "they 的宾格形式，语法上是同一代词的两种形式"}], "antonyms": [{"w": "we", "note": "我们（第一人称复数）"}, {"w": "you", "note": "你们（第二人称）"}], "nuance": "they/them 越来越多被用于单数中性语境（A student should do their homework），这是当代英语的演变趋势；在正式学术写作中仍有人偏好「he or she」，但 they 单数用法已获主流词典认可。"}, {"word": "then", "hl": "th", "levels": ["基础"], "ipa": "/ðen/", "subgroup": "function", "meaning": "adv. 那时；然后；那么（逻辑推断）  adj. 当时的（the then president）", "etymology": "古英语 þonne / þenne「在那时、因此」，日耳曼同根，与德语 dann 同源。then 的逻辑推断义（If A, then B）是数学和逻辑写作的核心词。", "roots": [{"part": "then（þonne）", "meaning": "那时、因此"}], "phonetics": "th + en：/ðen/，与 when、ten 押韵。th 读浊 /ð/。常与 than 混淆：then 讲时间/逻辑（/ðen/），than 讲比较（/ðæn/）。", "tip": "then（时间/逻辑）vs than（比较）是高频错拼对。记法：tHEN 含 HEN——先有鸡（time sequence），tHAN 含 AN——比 AN 更好（比较）。", "core": "「接着就到了那里」——then 是「时间或逻辑上的下一站」，把思路从现在推到下一个节点。", "senses": [{"gloss": "时间：在那时，接着，然后（顺序）", "logic": "核心义：时间轴上的下一站", "en": "She finished her report, then went home.", "zh": "她写完报告，然后回家了。"}, {"gloss": "逻辑推断：那么，因此（If…then…）", "logic": "时间顺序延伸到逻辑顺序：前提之后自然得出结论", "en": "If the data is correct, then our hypothesis holds.", "zh": "如果数据是正确的，那么我们的假设成立。"}, {"gloss": "形容词：当时的（the then president）", "logic": "固定于「那个时间节点」，修饰名词", "en": "The then CEO made a decision that changed the company.", "zh": "当时的首席执行官做了一个改变公司的决定。"}], "derivatives": [], "examples": [{"en": "If you work hard, then success will follow.", "zh": "如果你努力工作，成功就会随之而来。", "source": "造句"}, {"en": "now and then / back then", "zh": "「时不时 / 在那个年代」——高频时间短语。", "source": "高频搭配"}], "synonyms": [{"w": "next", "ipa": "/nekst/", "gloss": "副词，紧接下来的步骤或时间", "note": "「然后」义的近义，表示紧接下一步，比 then 更强调顺序的紧密性"}, {"w": "therefore", "ipa": "/ˈðerfɔːr/", "gloss": "副词，表逻辑上的因此", "note": "「因此」义的正式近义，比 then 更书面，多用于学术论证"}], "antonyms": [{"w": "now", "note": "现在（与 then「那时」相对）"}], "nuance": "then 作「然后」时（First do A, then do B）与 next 可互换，但 next 更强调紧密的先后顺序，then 还可表示「那么」的逻辑推断（If it's true, then we're in trouble）——这个义项 next 无法替代。"}, {"word": "there", "hl": "th", "levels": ["基础"], "ipa": "/ðer/", "subgroup": "function", "meaning": "adv. 在那里；（there be）存在  int. 你瞧（there！）", "etymology": "古英语 þǣr「在那里」，日耳曼同根，与德语 da/dort 同源。there be 结构（There is a book）是英语「存在句」的核心框架。", "roots": [{"part": "there（þǣr）", "meaning": "在那里"}], "phonetics": "th + ere：/ðer/，与 where、here 押韵。th 读浊 /ð/。注意三个同音陷阱：there（在那里）/ their（他们的）/ they're（他们是）——拼写不同但均读 /ðer/。", "tip": "there/their/they're 三兄弟：there=地点（here/there/where 都讲位置），their=所有格（含 heir「继承人」），they're=they are 缩写。", "core": "「那边有个地方，或者说有这么个东西存在」——there 是「指向远处或点出存在」的感觉。", "senses": [{"gloss": "地点副词：在那里，到那里", "logic": "核心义，指向说话者以外的某个地点", "en": "She moved to Paris and has lived there ever since.", "zh": "她搬到了巴黎，从那以后一直住在那里。"}, {"gloss": "存在句引导词：there be，表示某处存在某物", "logic": "「那里有」虚化为「存在」，there 不指地点而是充当句子支架", "en": "There are three unread messages in your inbox.", "zh": "你的收件箱里有三条未读消息。"}, {"gloss": "感叹词：你瞧、好了（表满足或宽慰）", "logic": "「你看，就在那里了」→ 表达事已完成或应验", "en": "There, I told you it would work out.", "zh": "你瞧，我就说会好的吧。"}], "derivatives": [], "examples": [{"en": "There is no simple solution to this problem.", "zh": "这个问题没有简单的解决方案。", "source": "造句"}, {"en": "there and then / then and there", "zh": "「当场，立刻」——强调立即在现场的高频习语。", "source": "高频搭配"}], "synonyms": [{"w": "here", "ipa": "/hɪər/", "gloss": "副词，指说话者所在的位置（近处）", "note": "近处（与 there 远处相对），两者构成英语方位的基本对立"}, {"w": "over there", "ipa": "/ˌoʊvər ˈðer/", "gloss": "短语副词，强调更远的那一处", "note": "强调更远处，口语中用来精确指向"}], "antonyms": [{"w": "here", "note": "在这里（近处，与 there 远处相对）"}], "nuance": "there be 句型的主谓一致取决于后面的名词（There is a book / There are books），不是取决于 there 本身——这是语法考试常考点。口语中 there 常弱读为 /ðər/。"}, {"word": "than", "hl": "th", "levels": ["基础"], "ipa": "/ðæn/", "subgroup": "function", "meaning": "conj./prep. 比（用于比较）；除……之外（rather than）", "etymology": "古英语 þonne，与 then 同源，后来分化：then 专指时间/逻辑，than 专指比较。这种分化在中古英语时期逐渐稳定。", "roots": [{"part": "than（þonne）", "meaning": "比、比较"}], "phonetics": "th + an：/ðæn/，强调时 /ðæn/，句中弱读常缩为 /ðən/。th 读浊 /ð/。", "core": "「拉出来对比一下」——than 是「比较的刻度线」，把两个事物摆在同一把尺子上量高低。", "senses": [{"gloss": "比较连词：在形容词/副词比较级后引出对比对象", "logic": "核心义：竖起标尺，标出另一端", "en": "The results were better than we expected.", "zh": "结果比我们预期的好。"}, {"gloss": "rather than / other than：表「而不是」或「除了」", "logic": "比较刻度延伸为排除，「选A不选B」是一种比较的特例", "en": "She chose to stay rather than leave.", "zh": "她选择留下，而不是离开。"}], "derivatives": [], "examples": [{"en": "She runs faster than anyone else in the team.", "zh": "她跑得比队里任何人都快。", "source": "造句"}, {"en": "more than / rather than / no sooner than", "zh": "「超过 / 而不是 / 一……就……」——三大高频 than 搭配。", "source": "高频搭配"}], "synonyms": [{"w": "compared to", "ipa": "/kəmˈperd tuː/", "gloss": "介词短语，与……相比（更显式、正式）", "note": "「与……相比」，比 than 更正式、更显式，常用于书面对比"}, {"w": "versus", "ipa": "/ˈvɜːrsəs/", "gloss": "介词，对比两方（多用于并列或竞争语境）", "note": "「对比」，多用于并列数据或竞争语境（quality versus quantity）"}], "antonyms": [], "nuance": "than 后面跟主格还是宾格在英语中有争议：She is taller than I（正式）vs She is taller than me（口语）。正式写作偏好主格，日常口语用宾格。rather than 后接动名词或不定式也因语境而异。"}, {"word": "though", "hl": "th", "levels": ["基础"], "ipa": "/ðoʊ/", "subgroup": "function", "meaning": "conj. 尽管，虽然  adv. 不过，然而（放句尾）", "etymology": "古英语 þēah「尽管、然而」，日耳曼同根，与德语 doch 语义相近。although 是 all + though 的强化形式，语气更重。", "roots": [{"part": "though（þēah）", "meaning": "尽管、然而"}], "phonetics": "th + ough：/ðoʊ/，ough 在此读 /oʊ/（虽然 ough 有六种读音，此处最简单）。th 读浊 /ð/。", "tip": "though 放句尾（口语）= however：「I'm tired. I'll finish it, though.」——和「Though I'm tired, I'll finish it.」含义相同但语气更随意。", "core": "「这件事成立，但那件事也成立」——though 是「承认矛盾共存」的感觉，两件看似冲突的事都是真的。", "senses": [{"gloss": "让步连词：尽管、虽然（句首或句中）", "logic": "核心义：先承认对立，再说主要结论", "en": "Though the rain was heavy, they continued the match.", "zh": "尽管雨下得很大，比赛仍继续进行。"}, {"gloss": "句尾副词：不过、然而（口语 however）", "logic": "同样是承认矛盾，只是位置移到句尾，语气更随意", "en": "The food was cold. It tasted great, though.", "zh": "食物是凉的，不过味道很好。"}], "derivatives": [], "examples": [{"en": "Though the task was difficult, she completed it on time.", "zh": "尽管任务很艰难，她还是按时完成了。", "source": "造句"}, {"en": "even though / as though", "zh": "「即使 / 就好像」——两大强化搭配。", "source": "高频搭配"}], "synonyms": [{"w": "although", "ipa": "/ɔːlˈðoʊ/", "gloss": "连词，尽管（比 though 更正式，不可置句尾）", "note": "语气比 though 更正式，强调对比更强；不能放句尾"}, {"w": "however", "ipa": "/haʊˈevər/", "gloss": "副词，然而（正式，置句首或句中）", "note": "副词「然而」，比 though 放句尾更正式，只能放句首或句中（用逗号隔开）"}, {"w": "despite", "ipa": "/dɪˈspaɪt/", "gloss": "介词，尽管（后接名词或动名词）", "note": "介词「尽管」，后接名词/动名词，与 though（连词接句子）结构不同"}], "antonyms": [], "nuance": "though 和 although 可互换但 though 更口语，even though 语气最强（强调让步），as though 是「好像」的虚拟语气（He acts as though he knows everything）。"}, {"word": "thus", "hl": "th", "levels": ["基础"], "ipa": "/ðʌs/", "subgroup": "function", "meaning": "adv. 因此，从而；以这种方式（=in this way）", "etymology": "古英语 þus「以这种方式」，日耳曼同根。thus 是书面英语中「因此」的最简洁选项，一个音节。", "roots": [{"part": "thus（þus）", "meaning": "以这种方式、因此"}], "phonetics": "th + us：/ðʌs/，th 读浊 /ð/。注意 u 读 /ʌ/（cup 的元音），非 /uː/。", "tip": "thus 是学术写作首选的「因此」：一个音节，比 therefore 简洁，比 so 正式。thus far（到目前为止）是托福阅读常见句式。", "core": "「由此可见，以这种方式」——thus 是「从前文自然流出结论」的感觉，前提铺好，thus 一落，结论来了。", "senses": [{"gloss": "因果副词：因此，从而（表逻辑结论）", "logic": "核心义：前提充分，结论自然流出", "en": "The budget was cut; thus, several projects were cancelled.", "zh": "预算被削减，因此几个项目被取消了。"}, {"gloss": "方式副词：以这种方式，如此（= in this way）", "logic": "「by this means」，指向已描述的方法", "en": "He folded his hands thus and bowed.", "zh": "他如此合上双手，然后鞠了一躬。"}], "derivatives": [], "examples": [{"en": "The data was incomplete; thus, the conclusions may be unreliable.", "zh": "数据不完整，因此结论可能不可靠。", "source": "造句"}, {"en": "thus far", "zh": "「迄今为止」——学术文本高频副词短语。", "source": "高频搭配"}], "synonyms": [{"w": "therefore", "ipa": "/ˈðerfɔːr/", "gloss": "副词，因此（最通用的书面因果词）", "note": "「因此」，与 thus 最近义，但 therefore 更常见于口语化正式文本；注意它也含 /ð/"}, {"w": "hence", "ipa": "/hens/", "gloss": "副词，因此（古典学术风格）", "note": "「因此、从这里」，比 thus 更古典，多见于学术论文和逻辑推理"}, {"w": "consequently", "ipa": "/ˈkɒnsɪkwəntli/", "gloss": "副词，结果（强调因果链中的结果端）", "note": "「因此、结果」，比 thus 更显结果-原因的因果逻辑链，多用于正式论述"}], "antonyms": [], "nuance": "thus、therefore、hence 都表因果，差别在语域：thus 最简洁书面，therefore 最通用，hence 最古典学术，consequently 最强调「结果」而非「推断」。日常口语用 so 即可，四者皆书面词。"}, {"word": "either", "hl": "th", "levels": ["基础"], "ipa": "/ˈiːðər/ 或 /ˈaɪðər/", "subgroup": "function", "meaning": "det./pron. （两者中的）任一；（否定句末）也  conj. either…or… 或者……或者……", "etymology": "古英语 ǣġhwæþer = ā（总是）+ ge（and）+ hwæþer（哪一个），意为「两者中任意一个」。美式读 /ˈiːðər/，英式读 /ˈaɪðər/。", "roots": [{"part": "ei-（ǣ-）", "meaning": "总是、任何"}, {"part": "-ther（hwæþer）", "meaning": "哪一个"}], "phonetics": "ei + ther：th 读浊 /ð/，ei 美式读 /iː/（ˈiːðər），英式读 /aɪ/（ˈaɪðər）。这是英美发音差异最明显的词之一。", "tip": "either…or… 连接两个并列成分（either A or B），主谓一致就近原则：Either the students or the teacher is wrong（就近取 teacher，用 is）。", "core": "「两个选项摆在面前，任选其一」——either 是「二选一的开放」，肯定时是「哪个都行」，否定时翻转为「哪个也不行」。", "senses": [{"gloss": "限定／代词：两者中任意一个（肯定语境）", "logic": "核心义：两者都在候选范围内，任取其一", "en": "Either day works for me — you pick.", "zh": "哪天都行，你来定。"}, {"gloss": "连词 either…or…：或者A或者B", "logic": "「任选其一」结构化为并列选项", "en": "You can either call or send an email.", "zh": "你可以打电话，也可以发邮件。"}, {"gloss": "否定句副词：也不（not…either）", "logic": "「任一都行」在否定下反转为「两个都不」，置句尾", "en": "I don't enjoy horror films. I don't either.", "zh": "我不喜欢恐怖片。我也不喜欢。"}], "derivatives": [], "examples": [{"en": "Either option works for me.", "zh": "两个选项对我都行。", "source": "造句"}, {"en": "I don't like it either.", "zh": "「我也不喜欢」——否定句末的 either = 「也不」。", "source": "高频搭配"}], "synonyms": [{"w": "any", "ipa": "/ˈeni/", "gloss": "限定词，任意一个（三者以上）", "note": "「任何一个」，比 either 范围更广（三者以上）；either 只用于两者"}, {"w": "both", "ipa": "/boʊθ/", "gloss": "限定词，两者都（全取）", "note": "「两者都」，语义相反：either 是「任一个」，both 是「两个全」"}], "antonyms": [{"w": "neither", "note": "两者都不（either 的否定形式）"}], "nuance": "either 在肯定句是「两者之一」（pick either one），在否定句后置是「也不」（not…either = neither）。either…or… 和 neither…nor… 是语法上的平行结构——两个连词都含 /ð/，一起记忆。"}, {"word": "neither", "hl": "th", "levels": ["基础"], "ipa": "/ˈniːðər/ 或 /ˈnaɪðər/", "subgroup": "function", "meaning": "det./pron. 两者都不  conj. neither…nor… 既不……也不……  adv. 也不", "etymology": "古英语 nāhwæþer = ne（不）+ āhwæþer（两者任一）= 「两者都不」。与 either 完全平行的否定形式。", "roots": [{"part": "nei-（nā-）", "meaning": "不（否定前缀）"}, {"part": "-ther（hwæþer）", "meaning": "哪一个"}], "phonetics": "nei + ther：th 读浊 /ð/，nei 美式读 /niː/（ˈniːðər），英式读 /naɪ/（ˈnaɪðər）。与 either 的英美变体规律完全对称。", "core": "「两个选项，一个都不要」——neither 是「全盘否定两者」的感觉，either 的镜像翻转。", "senses": [{"gloss": "限定／代词：两者都不", "logic": "核心义：either（任一）+ ne（否定）= 两个都排除", "en": "Neither candidate impressed the voters.", "zh": "两位候选人都没给选民留下好印象。"}, {"gloss": "连词 neither…nor…：既不……也不……", "logic": "把「两者都不」结构化为并列否定", "en": "She neither confirmed nor denied the rumor.", "zh": "她既没有证实，也没有否认那个传言。"}, {"gloss": "副词：也不（同意否定陈述）", "logic": "「我这边同样是两者都不」，用于呼应对方的否定", "en": "He can't swim. Neither can I.", "zh": "他不会游泳。我也不会。"}], "derivatives": [], "examples": [{"en": "Neither plan is perfect, but we must choose one.", "zh": "两个计划都不完美，但我们必须选一个。", "source": "造句"}, {"en": "neither here nor there", "zh": "「无关紧要，不相干」——高频习语，强调某事与当前话题无关。", "source": "高频搭配"}], "synonyms": [{"w": "none", "ipa": "/nʌn/", "gloss": "代词，三者以上中一个都没有", "note": "「（三者以上中）一个都没有」；neither 专指两者，none 泛指三者以上"}, {"w": "nor", "ipa": "/nɔːr/", "gloss": "连词，也不（配合 neither 或其他否定使用）", "note": "neither…nor 中的配对连词，单独用于「也不」（I can't, nor can she）"}], "antonyms": [{"w": "both", "note": "两者都（肯定）"}, {"w": "either", "note": "两者之一（肯定）"}], "nuance": "neither…nor 后接主语时，谓语就近一致（Neither the teacher nor the students are ready，就近取 students 用复数）。「Me neither」是口语中最常见的同意否定句，正式写法是「Neither do I / Neither am I」。"}, {"word": "mother", "hl": "th", "levels": ["基础"], "ipa": "/ˈmʌðər/", "subgroup": "content", "meaning": "n. 母亲；发源地，起源  v. 母爱般照顾", "etymology": "古英语 mōdor，印欧同根，是人类语言中最稳定的词之一：拉丁语 mater、希腊语 mḗtēr、梵语 mātṛ——全球语言中「妈妈」都从口型最简单的 /m/ 开始。", "roots": [{"part": "mother（mōdor）", "meaning": "母亲（印欧核心词）"}], "phonetics": "mo + ther：th 夹在两个元音之间（o-ther）→ 读浊 /ð/。/ˈmʌðər/，重音首音节，-er 弱读 /ər/。对比：bath（词尾 th）→ 清 /θ/，bathe（词尾 -the 含元音）→ 浊 /ð/。", "core": "「给予来源与庇护的那个存在」——mother 是「起源与养育」的感觉，从人延伸到一切「给出东西的根源」。", "senses": [{"gloss": "名词：母亲，生母或养母", "logic": "核心义：给予生命和养育的人", "en": "Her mother taught her to read before she started school.", "zh": "她的母亲在她上学前就教她读书了。"}, {"gloss": "名词（比喻）：起源，根源，母体（mother of…）", "logic": "「给出东西的源头」延伸到一切领域，mother of invention（发明之母）", "en": "Necessity is the mother of invention.", "zh": "需要是发明之母。"}, {"gloss": "动词：母爱般照顾、过度呵护", "logic": "把「母亲养育」的动作转化为动词，有时带轻微负面含义（管太多）", "en": "Stop mothering me — I can handle it myself.", "zh": "别对我过度照顾了，我自己能搞定。"}], "derivatives": [{"word": "motherly", "pos": "adj.", "meaning": "母亲般的，慈爱的"}, {"word": "motherhood", "pos": "n.", "meaning": "母亲身份；母道"}, {"word": "motherland", "pos": "n.", "meaning": "祖国（母亲般的土地）"}], "examples": [{"en": "She became a mother at twenty-three and never looked back.", "zh": "她二十三岁成为母亲，此后从未回头。", "source": "造句"}, {"en": "mother tongue / mother nature", "zh": "「母语 / 大自然」——高频复合名词。", "source": "高频搭配"}], "synonyms": [{"w": "mom", "ipa": "/mɒm/", "gloss": "口语称呼，最亲密的叫法（美式）", "note": "美式口语，最亲密的称呼；mother 更正式，可用于第三人称或书面"}, {"w": "mum", "ipa": "/mʌm/", "gloss": "口语称呼，英式对应 mom", "note": "英式口语对应 mom，同样亲密但书面感更弱"}], "antonyms": [{"w": "father", "note": "父亲"}], "nuance": "mother 可用于比喻（the mother of all problems，问题之源），这种「起源」义在复合词中很活跃。mother tongue（母语）中的 mother 不能换成 mom，说明 mother 在正式复合词中的地位比 mom 高。"}, {"word": "father", "hl": "th", "levels": ["基础"], "ipa": "/ˈfɑːðər/", "subgroup": "content", "meaning": "n. 父亲；创始人，奠基人  v. 做……的父亲；创立", "etymology": "古英语 fæder，印欧同根：拉丁语 pater、希腊语 patḗr（→ patriarch 族长、paternal 父系的）。father 系列衍生词极多：fatherly（父亲般的）、fatherland（祖国）、godfather（教父）。", "roots": [{"part": "father（fæder）", "meaning": "父亲（印欧核心词）"}], "phonetics": "fa + ther：th 夹在两个元音之间 → 浊 /ð/。/ˈfɑːðər/，美式 /fɑː-/，英式 /fɑː-/ 相近。对比 feather（羽毛）/ˈfeðər/，同样 th 浊读。", "tip": "Founding Fathers（美国国父们）是专有名词，首字母大写，th 依然读浊 /ð/。", "core": "「立起秩序、开创基础的那个人」——father 是「奠基与权威」的感觉，从亲生父亲延伸到一切领域的「奠基者」。", "senses": [{"gloss": "名词：父亲，生父或养父", "logic": "核心义：提供支柱与来源的男性长辈", "en": "His father built the house with his own hands.", "zh": "他的父亲亲手建造了这栋房子。"}, {"gloss": "名词（比喻）：创始人，奠基人（father of…）", "logic": "「权威奠基」延伸为领域的开创者，带强烈尊崇", "en": "Hippocrates is often called the father of medicine.", "zh": "希波克拉底常被称为医学之父。"}, {"gloss": "动词：是……的父亲；（比喻）创立、开创", "logic": "把「奠基」的动作转化为动词", "en": "He fathered three children before retiring.", "zh": "他在退休前有了三个孩子。"}], "derivatives": [{"word": "fatherly", "pos": "adj.", "meaning": "父亲般的，慈祥的"}, {"word": "fatherland", "pos": "n.", "meaning": "祖国"}, {"word": "godfather", "pos": "n.", "meaning": "教父；（俚）老大"}], "examples": [{"en": "He is widely regarded as the father of modern linguistics.", "zh": "他被广泛认为是现代语言学之父。", "source": "造句"}, {"en": "like father, like son", "zh": "「有其父必有其子」——高频谚语。", "source": "高频搭配"}], "synonyms": [{"w": "founder", "ipa": "/ˈfaʊndər/", "gloss": "名词，创始人（中性、事实陈述）", "note": "「创始人」义，比 father 更中性正式；father of… 带有尊称色彩，founder 只说事实"}, {"w": "dad", "ipa": "/dæd/", "gloss": "口语称呼，比 father 亲密非正式", "note": "口语亲密称呼，比 father 非正式；同 mother/mom 的关系"}], "antonyms": [{"w": "mother", "note": "母亲"}], "nuance": "father 作「创始人」时（the father of democracy）带强烈尊崇意味，founder 更中性（the founder of the company）。Farther vs further：farther 用于物理距离，further 用于抽象延伸——两者都含 /ð/ 但与 father 无词源关系。"}, {"word": "brother", "hl": "th", "levels": ["基础"], "ipa": "/ˈbrʌðər/", "subgroup": "content", "meaning": "n. 兄弟；同伴，战友；（宗教）修士", "etymology": "古英语 brōþor，印欧同根：拉丁语 frater（→ fraternal 兄弟般的）、梵语 bhrātṛ。brotherhood（手足情谊）、fraternity（兄弟会）是同义词族。", "roots": [{"part": "brother（brōþor）", "meaning": "兄弟（印欧核心词）"}], "phonetics": "bro + ther：th 夹元音之间 → 浊 /ð/。/ˈbrʌðər/，br- 连缀辅音，-ther 弱读 /ðər/。与 mother、father 的 -ther 结尾完全平行，发音规律一致。", "core": "「并肩站在同一阵营里」——brother 是「平等的纽带」感，从血缘兄弟延伸到一切共同归属的伙伴关系。", "senses": [{"gloss": "名词：兄弟（同父母或同性别的兄弟）", "logic": "核心义：同一血缘或家庭的男性成员", "en": "He and his brother share a passion for music.", "zh": "他和他哥哥都对音乐充满热情。"}, {"gloss": "名词（比喻）：战友，同志，信仰/组织中的同伴", "logic": "「同一阵营的纽带」延伸到任何共同归属，不限血缘", "en": "We are brothers in this fight — no one gets left behind.", "zh": "我们在这场战斗中是兄弟，不会有人被抛下。"}], "derivatives": [{"word": "brotherhood", "pos": "n.", "meaning": "兄弟情谊；同仁团体"}, {"word": "brotherly", "pos": "adj.", "meaning": "兄弟般的，友爱的"}], "examples": [{"en": "He treated every member of the team like a brother.", "zh": "他把队里每个人都当兄弟对待。", "source": "造句"}, {"en": "Big Brother / brothers in arms", "zh": "「老大哥（权力监控象征）/ 战友」——两个高频文化用法。", "source": "高频搭配"}], "synonyms": [{"w": "sibling", "ipa": "/ˈsɪblɪŋ/", "gloss": "名词，兄弟姐妹（性别中性）", "note": "「兄弟姐妹」性别中性词，学术和法律语境常用；brother 指男性"}, {"w": "comrade", "ipa": "/ˈkɒmreɪd/", "gloss": "名词，同志、战友（强调共同目标）", "note": "「同志、战友」，强调共同目标或战斗，比 brother 更政治化"}], "antonyms": [{"w": "sister", "note": "姐妹（含 /st-/ 不含 /ð/）"}], "nuance": "Big Brother（《1984》中的「老大哥」）是政治监控的经典象征；brotherhood 和 fraternity 都指兄弟情谊，fraternity 更常指大学兄弟会（Greek fraternities），brotherhood 更抽象（the brotherhood of man）。"}, {"word": "other", "hl": "th", "levels": ["基础"], "ipa": "/ˈʌðər/", "subgroup": "content", "meaning": "det./pron. 另外的，其他的；（the other）另一个", "etymology": "古英语 ōþer「第二个、另一个」，日耳曼同根，与德语 ander 同源。other 在英语中承担了「非自身」的全部语义空间，是构词能力极强的词：otherwise、otherness、each other、one another。", "roots": [{"part": "other（ōþer）", "meaning": "另一个，第二个"}], "phonetics": "o + ther：th 夹元音之间 → 浊 /ð/。/ˈʌðər/，重读首音节，u 读 /ʌ/，-ther 弱读 /ðər/。", "tip": "each other（两者互相）vs one another（三者以上互相）——这是语法书上的区分，但现代英语实际使用中两者已经混用。", "core": "「不是这个，是别的」——other 是「区分与例外」的感觉，把世界分成「当前这个」和「其余一切」两块。", "senses": [{"gloss": "限定词／代词：另外的，其他的（泛指剩余）", "logic": "核心义：把当前所指之外的部分统称为「其他」", "en": "Some students passed; others needed more time.", "zh": "一些学生通过了；另一些需要更多时间。"}, {"gloss": "the other：特指（两者中的）另一个", "logic": "「另一个」加定冠词后指向确定的那一个，不再泛指", "en": "One hand holds the pen; the other rests on the desk.", "zh": "一只手握着笔，另一只手放在桌上。"}], "derivatives": [{"word": "otherwise", "pos": "adv./conj.", "meaning": "否则；以另一种方式"}, {"word": "otherness", "pos": "n.", "meaning": "异质性，他者性（哲学/文化语境）"}], "examples": [{"en": "Some students passed; others did not.", "zh": "一些学生通过了；另一些没有。", "source": "造句"}, {"en": "on the other hand / other than", "zh": "「另一方面 / 除了……之外」——两大高频连接短语。", "source": "高频搭配"}], "synonyms": [{"w": "another", "ipa": "/əˈnʌðər/", "gloss": "限定词，同类中随机的又一个（单数不定）", "note": "「另一个（不定）」，an + other 的合并；other 可作复数，another 只用于单数"}, {"w": "else", "ipa": "/els/", "gloss": "副词，其他的（多用于疑问和否定语境）", "note": "「其他的」，多用于疑问和否定（anything else / nobody else）；比 other 范围更泛"}], "antonyms": [{"w": "same", "note": "相同的，同一个"}, {"w": "this/these", "note": "这个/这些（非「另外」）"}], "nuance": "other 泛指「另外的」（other students），the other 特指「（两个中的）另一个」（the other hand）；another 相当于 an other，指同类中又一个不定的（another chance）。"}, {"word": "another", "hl": "th", "levels": ["基础"], "ipa": "/əˈnʌðər/", "subgroup": "content", "meaning": "det./pron. 再一个；另一个；又一", "etymology": "中古英语 an other 的合并，字面是「一个其他的」。another 冻结了「不定（an）+ 另外（other）」的双重含义，only works in singular。", "roots": [{"part": "an-", "meaning": "一（不定冠词弱化）"}, {"part": "-other（ōþer）", "meaning": "另一个"}], "phonetics": "an + other：/əˈnʌðər/，th 在两元音之间 → 浊 /ð/，与 other 的发音规律完全一致。重音在中间音节 -nʌ-。", "core": "「同类里再来一个，不特指哪个」——another 是「追加一份同样的」感觉，数量上的递增，不知道具体是哪一个。", "senses": [{"gloss": "限定词／代词：又一个，再一个（单数不定）", "logic": "核心义：在已有的基础上追加同类中的任意一个", "en": "Could I have another glass of water, please?", "zh": "我可以再要一杯水吗？"}], "derivatives": [], "examples": [{"en": "Could I have another cup of coffee, please?", "zh": "我可以再要一杯咖啡吗？", "source": "造句"}, {"en": "one after another / one another", "zh": "「一个接一个 / 互相」——高频数量和交互短语。", "source": "高频搭配"}], "synonyms": [{"w": "one more", "ipa": "/wʌn mɔːr/", "gloss": "短语，再一个（强调数量递增）", "note": "「再一个」，比 another 更强调数量的递增，口语中常与 another 互换"}, {"w": "a further", "ipa": "/ə ˈfɜːrðər/", "gloss": "正式书面语，额外的、又一个", "note": "正式书面语「又一个、额外的」，another 的正式替代；a further delay（又一次延误）"}], "antonyms": [], "nuance": "another + 单数可数名词（another book），other + 复数名词（other books），the other + 特指（the other book）。区别在于：another 是「同类中的随机另一个」，the other 是「那个特定的另一个」。"}, {"word": "weather", "hl": "th", "levels": ["基础"], "ipa": "/ˈweðər/", "subgroup": "content", "meaning": "n. 天气，气象  v. 经受（风吹日晒）；安然度过（困难）", "etymology": "古英语 weder「风、天气」，日耳曼同根，与德语 Wetter 同源。动词义「经受住考验」来自木材、岩石被风化侵蚀却依然存在的意象。", "roots": [{"part": "weather（weder）", "meaning": "天气、风"}], "phonetics": "wea + ther：th 夹两元音之间 → 浊 /ð/。/ˈweðər/，与 whether（是否）/ˈweðər/ 完全同音！辨别靠语境：weather 是天气，whether 是「是否」连词。", "tip": "weather / whether 是英语最著名的同音词对。记法：weather 含 eat（eat 在里面）——下雨天躲在家吃东西；whether = wh- 疑问词家族（when/where/why），「是否」有疑问。", "core": "「外部环境施加的力量，而你扛了下来」——weather 是「暴露与承受」的感觉，从实际天气延伸到一切外部考验。", "senses": [{"gloss": "名词：天气，短期大气状态", "logic": "核心义：外部自然环境的当下状态", "en": "The weather forecast says rain all week.", "zh": "天气预报说整周都有雨。"}, {"gloss": "动词：经受住，安然度过（困难、危机）", "logic": "木材、岩石经风化仍存在 → 人或组织经受外部冲击后仍挺立", "en": "The startup managed to weather three rounds of funding cuts.", "zh": "这家初创公司设法挺过了三轮削减资金。"}], "derivatives": [{"word": "weathered", "pos": "adj.", "meaning": "风化的；饱经风霜的"}, {"word": "weatherproof", "pos": "adj./v.", "meaning": "防风雨的；使防风雨"}], "examples": [{"en": "The company managed to weather the financial crisis and emerge stronger.", "zh": "公司挺过了金融危机，变得更加强大。", "source": "造句"}, {"en": "under the weather", "zh": "「身体不舒服」——高频口语习语，表示轻微不适。", "source": "高频搭配"}], "synonyms": [{"w": "climate", "ipa": "/ˈklaɪmɪt/", "gloss": "名词，气候（长期规律，非短期状态）", "note": "「气候」，指长期规律（climate change 气候变化），weather 是当下短期天气状态"}, {"w": "withstand", "ipa": "/wɪðˈstænd/", "gloss": "动词，经受住（更正式）", "note": "「经受住」义的近义词，比 weather（动词）更正式；withstand pressure（经受住压力）"}], "antonyms": [], "nuance": "weather（n.）是短期天气（today's weather），climate 是长期气候规律（tropical climate）；weather（v.）比 withstand 多一层「经受风化后的坚韧」意味，常用于比喻（weather a storm 共渡难关）。"}, {"word": "together", "hl": "th", "levels": ["基础"], "ipa": "/təˈɡeðər/", "subgroup": "content", "meaning": "adv. 一起，共同；同时；（adj.）自控的，镇定的", "etymology": "古英语 tōgædere = tō（向）+ gædere（聚集在一起），与 gather（聚集）同根。「向着聚集处」→ 一起。", "roots": [{"part": "to-（tō）", "meaning": "向"}, {"part": "-gether（gædere）", "meaning": "聚集，与 gather 同根"}], "phonetics": "to + ge + ther：th 夹两元音之间 → 浊 /ð/。/təˈɡeðər/，重音在中间 -ge-，首音节弱化 /tə/，尾音 -ther = /ðər/。", "core": "「分散的元素聚到一处」——together 是「聚合」感，从物理上的人在一起延伸到内心整合、节奏同步。", "senses": [{"gloss": "副词：一起，共同（人或事物聚合）", "logic": "核心义：多方朝同一方向聚集", "en": "They put the furniture together in one afternoon.", "zh": "他们一个下午就把家具拼装好了。"}, {"gloss": "副词：同时，一并", "logic": "「聚集」在时间维度上 → 多件事同时发生", "en": "Several problems emerged together and overwhelmed the team.", "zh": "几个问题同时冒出来，把团队压垮了。"}, {"gloss": "形容词（口语）：思路清晰的，沉着冷静的（get it together）", "logic": "内在分散的能量「聚合」起来 → 状态稳定自控", "en": "She seems really together despite everything going on.", "zh": "尽管事情很多，她看起来还是很从容。"}], "derivatives": [], "examples": [{"en": "Working together, we can achieve far more than any of us could alone.", "zh": "齐心协力，我们能取得远比任何人单打独斗更多的成就。", "source": "造句"}, {"en": "get it together / pull together", "zh": "「振作起来 / 团结一致」——高频激励口语。", "source": "高频搭配"}], "synonyms": [{"w": "jointly", "ipa": "/ˈdʒɔɪntli/", "gloss": "副词，联合地（正式，常指法律或合同层面）", "note": "正式「共同地、联合地」，比 together 更书面，强调法律或合同层面的共同"}, {"w": "collectively", "ipa": "/kəˈlektɪvli/", "gloss": "副词，集体地（强调整体行动）", "note": "「集体地」，强调以整体方式行动，比 together 更正式"}], "antonyms": [{"w": "separately", "note": "分开地，各自地"}, {"w": "apart", "note": "分离地"}], "nuance": "together 最口语通用（work together），jointly 强调法律或正式合作（jointly responsible），collectively 强调作为集体整体行动（collectively decide）。together 形容词义（She seems very together）表示「沉着冷静、思路清晰」，是美式口语。"}, {"word": "breathe", "hl": "th", "levels": ["基础"], "ipa": "/briːð/", "subgroup": "content", "meaning": "v. 呼吸；低声说；散发（气息）", "etymology": "古英语 brēoþan（旧形式），与 breath（n.）同根。关键区分：breath（/breθ/，名词，词尾 th 读清音 /θ/）vs breathe（/briːð/，动词，词尾 -the 读浊音 /ð/）——这对词完美展示了英语词尾 -the 浊化规律。", "roots": [{"part": "breath-（brēoþ）", "meaning": "呼吸"}, {"part": "-e（词尾）", "meaning": "使 th 浊化为 /ð/，同时把元音拉长（breə → briː）"}], "phonetics": "br + ea + the：词尾 -the 含隐性元音 → th 读浊 /ð/。对比：breath /breθ/（名词，词尾 th 读清 /θ/）vs breathe /briːð/（动词，词尾 -the 读浊 /ð/）。这组最能说明「词尾 -the = 浊化」规律。", "tip": "bath（n./θ/）→ bathe（v./ð/），breath（n./θ/）→ breathe（v./ð/），cloth（n./θ/）→ clothe（v./ð/）——词尾加 e，th 从清变浊，这是英语中稳定的构词规律。", "core": "「气息在体内外流动，生命在继续」——breathe 是「流动与存在」的感觉，从实际呼吸延伸到低声说出、散发气息乃至给事物注入生命。", "senses": [{"gloss": "基本义：呼吸（吸气+呼气的完整循环）", "logic": "核心义：气息在体内外流动，维持生命", "en": "She stepped outside to breathe some fresh air.", "zh": "她走到外面呼吸一些新鲜空气。"}, {"gloss": "低声说出，耳语（breathe a word）", "logic": "呼气时轻轻带出声音 → 极轻极小的发声，近乎秘密", "en": "Don't breathe a word of this to anyone.", "zh": "这件事不要对任何人透露一个字。"}, {"gloss": "散发、渗透（breathe confidence / breathe new life into）", "logic": "气息向外扩散 → 品质或感觉无形地弥漫出来", "en": "The renovation breathed new life into the old building.", "zh": "翻新让这栋老楼焕发了新生命。"}], "derivatives": [{"word": "breath", "pos": "n.", "meaning": "呼吸，一口气（/breθ/，词尾读清音 /θ/）"}, {"word": "breathless", "pos": "adj.", "meaning": "喘不过气的；令人屏息的"}, {"word": "breathtaking", "pos": "adj.", "meaning": "令人叹为观止的（字面：让你屏住呼吸）"}], "examples": [{"en": "Just breathe — everything will work out.", "zh": "深呼吸——一切都会好的。", "source": "造句"}, {"en": "breathe a sigh of relief / breathe new life into", "zh": "「如释重负地叹一口气 / 给……注入新活力」——高频隐喻搭配。", "source": "高频搭配"}], "synonyms": [{"w": "inhale", "ipa": "/ɪnˈheɪl/", "gloss": "动词，吸气（呼吸的上半段）", "note": "「吸气」，只指吸入方向；breathe 是完整呼吸循环，inhale 是一半"}, {"w": "exhale", "ipa": "/eksˈheɪl/", "gloss": "动词，呼气（呼吸的下半段）", "note": "「呼气」，只指呼出方向；inhale + exhale = breathe"}, {"w": "respire", "ipa": "/rɪˈspaɪər/", "gloss": "动词，呼吸（医学/生物学正式用语）", "note": "「呼吸」的正式/医学用语，比 breathe 更书面；respiration（呼吸作用）是生物学术语"}], "antonyms": [{"w": "hold one's breath", "note": "憋气"}], "nuance": "breathe 是最通用的「呼吸」；inhale/exhale 是方向性动作（吸/呼）；respire 是生物学或医学用语（cellular respiration 细胞呼吸）。「Don't breathe a word!」（别说出去！）是「泄露」的比喻义，与呼吸无关。"}, {"word": "smooth", "hl": "th", "levels": ["基础"], "ipa": "/smuːð/", "subgroup": "content", "meaning": "adj. 光滑的；平稳的；顺利的；圆滑的  v. 使光滑；使顺利  adv. 平稳地", "etymology": "古英语 smōþ「光滑的」，日耳曼同根。从物理「无摩擦」引申到「无阻碍的顺利」和「圆滑的（人）」。smoother（更顺利）、smoothly（顺利地）。", "roots": [{"part": "smooth（smōþ）", "meaning": "光滑、无摩擦"}], "phonetics": "sm + oo + th：词尾 th 在元音之后且后无辅音 → 浊 /ð/（同 with、bathe 的规律）。/smuːð/，oo = /uː/，词尾 /ð/ 有嗡嗡感。注意这是词尾 th 读浊的例外情况，非词尾 -the 结构，但因元音环境同样浊化。", "tip": "smooth operator（高情商圆滑的人）是 Sade 1984 年名曲标题，也是常见英语文化表达——记住曲名就记住了词义。", "core": "「没有阻力，没有颠簸，感觉往前滑」——smooth 是「无摩擦感」，从触觉的光滑延伸到过程的顺畅乃至人际的圆滑。", "senses": [{"gloss": "形容词：触感光滑，表面无凹凸", "logic": "核心义：物理上没有摩擦阻力", "en": "The stone had been worn smooth by centuries of water.", "zh": "这块石头被几个世纪的流水磨得光滑。"}, {"gloss": "形容词：过程平稳顺利，无阻碍", "logic": "「无摩擦」从触觉延伸到进程：没有阻力就顺", "en": "The merger went smooth — no major objections.", "zh": "合并进行得很顺利，没有重大异议。"}, {"gloss": "形容词（描述人）：圆滑的，会说话的（常含贬义）", "logic": "「无摩擦」的人际表现 → 处处不顿挫，有时暗示过于油滑", "en": "He's smooth — always knows exactly what to say.", "zh": "他很圆滑，总知道该说什么。"}, {"gloss": "动词：使光滑，抚平；（smooth over）掩盖、化解", "logic": "消除摩擦阻力的动作，可针对物理表面或矛盾冲突", "en": "She smoothed over the disagreement before the meeting started.", "zh": "她在会议开始前化解了那场分歧。"}], "derivatives": [{"word": "smoothly", "pos": "adv.", "meaning": "平稳地，顺利地"}, {"word": "smoothness", "pos": "n.", "meaning": "光滑；顺畅"}], "examples": [{"en": "The transition to the new system was surprisingly smooth.", "zh": "向新系统的过渡出人意料地顺利。", "source": "造句"}, {"en": "smooth out / smooth over", "zh": "「抚平（褶皱/问题）/ 掩盖（分歧）」——两个高频短语动词。", "source": "高频搭配"}], "synonyms": [{"w": "sleek", "ipa": "/sliːk/", "gloss": "形容词，光洁流线、有设计感", "note": "「光洁流线的」，比 smooth 多了「设计感和时髦感」；a sleek design（流线型设计）"}, {"w": "seamless", "ipa": "/ˈsiːmləs/", "gloss": "形容词，无缝的、无任何断点的", "note": "「无缝的、顺畅的」，比 smooth 更强调「没有任何接缝或停顿」；a seamless transition（无缝过渡）"}, {"w": "fluent", "ipa": "/ˈfluːənt/", "gloss": "形容词，流利的（专指语言表达）", "note": "「流利的」，smooth 在语言表达方面的近义词；fluent delivery（流利的表达）"}], "antonyms": [{"w": "rough", "note": "粗糙的；崎岖的"}, {"w": "bumpy", "note": "颠簸的；不顺利的"}], "nuance": "smooth 最通用，覆盖物理（smooth surface）和抽象（smooth operation）；sleek 带时尚科技感；seamless 强调「无断点连续」；fluent 专用于语言表达的流利。smooth 形容人时（a smooth talker）含「会说话但可能不真诚」的微贬义。"}, {"word": "although", "hl": "th", "levels": ["基础"], "ipa": "/ɔːlˈðoʊ/", "subgroup": "content", "meaning": "conj. 尽管，虽然（强调让步）", "etymology": "中古英语 al though = all + though，「all」在此是强化语气的副词（相当于「完全」），意为「完全尽管如此」。比 though 更强调让步的程度。", "roots": [{"part": "al-（all）", "meaning": "完全（强化语气副词）"}, {"part": "-though（þēah）", "meaning": "尽管（与 though 同根）"}], "phonetics": "al + though：though 部分 th 读浊 /ð/，ough 读 /oʊ/。/ɔːlˈðoʊ/，重音在后半 -though。整个词含 /ð/ 在中间——是 though 的加强版，发音规律完全继承 though。", "core": "「承认全部矛盾，仍然成立」——although 是「让步到底」的感觉，比 though 更郑重，把对立面完整承认后再说结论。", "senses": [{"gloss": "让步连词：尽管、虽然（语气比 though 更正式）", "logic": "核心义也是唯一义：承认对立面后导出主句结论；单义词", "en": "Although the evidence was thin, the argument was compelling.", "zh": "尽管证据不足，论点还是很有说服力。"}], "derivatives": [], "examples": [{"en": "Although the evidence was limited, the jury reached a verdict.", "zh": "尽管证据有限，陪审团还是做出了裁决。", "source": "造句"}, {"en": "although vs. though vs. even though", "zh": "三者都表让步：although 最正式，though 可放句尾，even though 强调「即使」最强烈。", "source": "高频搭配"}], "synonyms": [{"w": "though", "ipa": "/ðoʊ/", "gloss": "连词，尽管（更口语，可置句尾）", "note": "义同但 though 更灵活（可句尾），although 只能引导从句在前或主从交换位置"}, {"w": "even though", "ipa": "/ˌiːvən ðoʊ/", "gloss": "连词，即使（让步语气最强）", "note": "语气最强的让步，强调「即使在这种强烈反差下」；though 和 although 语气较弱"}, {"w": "while", "ipa": "/waɪl/", "gloss": "连词，尽管（偏平行对比，语气中性）", "note": "「尽管」义，多用于平行对比（while A is true, B is also true）；比 although 更中性"}], "antonyms": [], "nuance": "although 和 though 几乎可互换，although 语气更重不可放句尾，though 可放句尾（口语）；even though 强调让步最强；while 更偏「同时」或「平行对比」，让步义是引申义。三者都只接从句，不能接名词短语（要用 despite/in spite of）。"}, {"word": "rather", "hl": "th", "levels": ["基础"], "ipa": "/ˈrɑːðər/", "subgroup": "content", "meaning": "adv. 相当，颇（rather good）；宁可，宁愿（would rather）；更确切地说（or rather）", "etymology": "古英语 hraþor，是 hraþe（快速地）的比较级，意为「更快地、宁可」→ 偏向选择某个选项。现代英语 rather 承担了「程度副词 + 选择倾向 + 修正」三重功能。", "roots": [{"part": "rather（hraþor）", "meaning": "更快、宁可"}], "phonetics": "ra + ther：th 夹两元音之间 → 浊 /ð/。/ˈrɑːðər/，美式 /ˈræðər/，英式 /ˈrɑːðər/（长元音）。英美差异明显。", "tip": "「I'd rather not.」（我宁可不。）是英语中委婉拒绝的经典句式，语气比「No」软很多但同样坚定。", "core": "「稍微倾向这边，而不是那边」——rather 是「有倾向性的微调」感，从程度上的「偏多一些」到选择上的「宁可这个」，都是在两端之间偏移一格。", "senses": [{"gloss": "程度副词：相当，颇（比预期稍多）", "logic": "「偏向」在程度轴上体现：比中间多一点，常带轻微意外感", "en": "The exam was rather harder than I expected.", "zh": "考试比我预期的要难一些。"}, {"gloss": "选择倾向：宁可，宁愿（would rather…than）", "logic": "在两个选项间明显偏向一方，「快速」的本义演化为「更倾向于」", "en": "I'd rather work alone than in a noisy open office.", "zh": "我宁可独自工作，也不想在嘈杂的开放式办公室里。"}, {"gloss": "修正副词：或者更确切地说（or rather）", "logic": "把说法「偏移」到更准确的那一边", "en": "She's a teacher, or rather a mentor who happens to teach.", "zh": "她是一位老师，或者更确切地说，是一位恰好在教学的导师。"}], "derivatives": [], "examples": [{"en": "I would rather stay home than go to that party.", "zh": "我宁可待在家也不想去那个派对。", "source": "造句"}, {"en": "rather than / or rather", "zh": "「而不是 / 或者更确切地说」——两大高频连接用法。", "source": "高频搭配"}], "synonyms": [{"w": "fairly", "ipa": "/ˈferli/", "gloss": "副词，相当（程度中性，无意外感）", "note": "「相当」义的近义词，与 rather 程度相当，比 very 弱；fairly good（相当好）"}, {"w": "quite", "ipa": "/kwaɪt/", "gloss": "副词，相当（美式偏「完全」，英式偏「还行」）", "note": "「相当/完全」，美式中 quite 偏「完全」（quite wrong），英式中 quite 偏「相当」（quite good），与 rather 有重叠"}, {"w": "prefer", "ipa": "/prɪˈfɜːr/", "gloss": "动词，更喜欢，宁愿（would rather 的动词形式）", "note": "「宁愿」义的近义动词；would rather do = prefer to do（后接不定式）"}], "antonyms": [], "nuance": "rather 作程度副词时（rather difficult）比 fairly 稍带负面或意外感，rather 多暗示「比预期更……」；quite 在英式中常弱化（quite nice = 还不错），在美式中常强化（quite right = 完全正确）。would rather 后接动词原形（I'd rather go），prefer 后接 to do 或 doing——结构不同。"}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

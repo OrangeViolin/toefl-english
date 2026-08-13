@@ -1,0 +1,2331 @@
+{
+  "id": "w",
+  "combo": "w·wh·qu",
+  "title": "/w/ 近音",
+  "sound": "/w/",
+  "subtitle": "w、wh、qu、one——四种写法，一个起点，/w/ 滑音全收录",
+  "intro": "/w/ 是英语最流畅的滑音（glide），发音时嘴唇先拢圆、然后快速滑向后面的元音，绝不单独成音节。它藏在四种拼写里：最直接的是 w（we、win、water）；wh 在疑问词和少数词里也读 /w/（what、where、wheel——注意 who 例外，读 /huː/）；qu 几乎总是读 /kw/，q 后面的 u 从不单独读（quick、queen、question）；最特殊的是 one 和 once，字母 o 偷偷滑出一个 /w/，发 /wʌn/。摸清这四条路，/w/ 家族再无盲点。",
+  "subgroups": [
+    {
+      "key": "w",
+      "tag": "w → /w/",
+      "label": "✅ w = /w/",
+      "desc": "we/win/water/way"
+    },
+    {
+      "key": "wh",
+      "tag": "wh → /w/",
+      "label": "wh = /w/",
+      "desc": "what/when/where/why"
+    },
+    {
+      "key": "qu",
+      "tag": "qu → /kw/",
+      "label": "qu = /kw/",
+      "desc": "quick/queen/question"
+    },
+    {
+      "key": "other",
+      "tag": "o → /w/（特）",
+      "label": "其它 = /w/",
+      "desc": "one/once"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-way / -ware (/weɪ/ /weər/)",
+      "words": [
+        "way",
+        "say",
+        "play",
+        "wear",
+        "where",
+        "square"
+      ]
+    },
+    {
+      "label": "-ween / -een (/wiːn/)",
+      "words": [
+        "week",
+        "queen",
+        "equal",
+        "wheel",
+        "wield"
+      ]
+    },
+    {
+      "label": "-ond / -onder (/wʌnd/)",
+      "words": [
+        "wonder",
+        "wander",
+        "wander",
+        "squander"
+      ]
+    },
+    {
+      "label": "-ire / -ire (/kwaɪər/)",
+      "words": [
+        "require",
+        "acquire",
+        "inquire",
+        "desire"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "wonder",
+      "hl": "w",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈwʌndər/",
+      "subgroup": "w",
+      "meaning": "v. 想知道；感到惊奇  n. 惊奇；奇迹；奇观",
+      "etymology": "古英语 wundor「奇迹、神奇之事」，日耳曼同根，与德语 Wunder 同源。「令人惊叹之物」→ 好奇（想弄清奇怪的事）。",
+      "roots": [
+        {
+          "part": "wonder（wundor）",
+          "meaning": "奇迹、令人惊奇之物"
+        }
+      ],
+      "phonetics": "w /w/ + on /ʌ/ + der，重音在首音节；/w/ 嘴唇拢圆，立刻滑向 /ʌ/。",
+      "tip": "「I wonder if...」是最礼貌的间接疑问句式，比直接问更客气。no wonder = 「难怪」，高频口语。",
+      "examples": [
+        {
+          "en": "Scientists wonder whether the universe had a beginning.",
+          "zh": "科学家们想知道宇宙是否有一个起点。",
+          "source": "造句"
+        },
+        {
+          "en": "It's a wonder she survived the accident.",
+          "zh": "她能从事故中生还简直是奇迹。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "marvel",
+          "ipa": "/ˈmɑːrvəl/",
+          "note": "「感叹、奇迹」，比 wonder 更强调震惊和赞叹；marvel at the view（对景色叹为观止）",
+          "gloss": "n./v. 奇迹；惊叹"
+        },
+        {
+          "w": "ponder",
+          "ipa": "/ˈpɒndər/",
+          "note": "「沉思、反复考量」，比 wonder 更强调深思过程，而非好奇心",
+          "gloss": "v. 沉思；反复考量"
+        },
+        {
+          "w": "speculate",
+          "ipa": "/ˈspekjuleɪt/",
+          "note": "「推测」，比 wonder 更理性、更正式，含「基于证据猜测」",
+          "gloss": "v. 推测；猜测"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "know",
+          "note": "知道（消除疑惑）"
+        },
+        {
+          "w": "certainty",
+          "note": "确定（消除惊奇）"
+        }
+      ],
+      "nuance": "wonder 兼指「好奇想知道」和「感到惊奇」两义：「I wonder why」是前者，「filled with wonder」是后者。marvel 更强调赞叹的情绪反应，ponder 是不带惊奇的深思，speculate 是理性推测。",
+      "core": "看见前所未见的东西时，嘴巴微张、眼睛睁大，脑子一片空白、只想问「这是什么？」的惊奇感——一半是好奇想知道，一半是被震撼到说不出话。",
+      "senses": [
+        {
+          "gloss": "v. 想知道；对……感到好奇",
+          "logic": "core→好奇想知道——面对未知时脑子被吸引过去，非要弄明白不可的心理驱力。",
+          "en": "I wonder what life would be like on other planets.",
+          "zh": "我很好奇其他行星上的生命会是什么样子。"
+        },
+        {
+          "gloss": "v./n. 感到惊奇；奇迹；奇观",
+          "logic": "core→被震撼——未知的东西太大、太美、太超乎想象，让人不由自主地张大嘴巴。",
+          "en": "The Grand Canyon is one of the great wonders of the natural world.",
+          "zh": "大峡谷是自然界最令人惊叹的奇观之一。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "wonderful",
+          "gloss": "adj. 精彩的；令人惊叹的"
+        },
+        {
+          "w": "wondrous",
+          "gloss": "adj. 奇妙的；不可思议的（文学用语）"
+        },
+        {
+          "w": "wonderland",
+          "gloss": "n. 仙境；奇妙世界"
+        }
+      ]
+    },
+    {
+      "word": "way",
+      "hl": "w",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/weɪ/",
+      "subgroup": "w",
+      "meaning": "n. 路；方式；方向；距离  adv. 大大地（非正式）",
+      "etymology": "古英语 weg「道路、路径」，日耳曼同根，与德语 Weg（路）同源。从具体「道路」抽象为「方式方法」，是英语中最多义的基础词之一。",
+      "roots": [
+        {
+          "part": "way（weg）",
+          "meaning": "道路、路径"
+        }
+      ],
+      "phonetics": "w /w/ + ay /eɪ/，单音节，发音干净利落；与 say、play、day 押韵。",
+      "examples": [
+        {
+          "en": "Is there a better way to solve this problem?",
+          "zh": "有没有更好的方法解决这个问题？",
+          "source": "造句"
+        },
+        {
+          "en": "by the way / in a way",
+          "zh": "「顺便说一下 / 从某种意义上说」——两个高频插入语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "method",
+          "ipa": "/ˈmeθəd/",
+          "note": "「方法」，比 way 更正式，强调系统性的步骤和程序",
+          "gloss": "n. 方法（系统性步骤）"
+        },
+        {
+          "w": "approach",
+          "ipa": "/əˈproʊtʃ/",
+          "note": "「方式、方法」，比 way 更强调态度和角度；a new approach to learning（学习的新方法）",
+          "gloss": "n. 方式；方法（态度/角度）"
+        },
+        {
+          "w": "route",
+          "ipa": "/ruːt/",
+          "note": "「路线」，用于「路」义时，比 way 更具体，指有规划的路径",
+          "gloss": "n. 路线；路径"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "dead end",
+          "note": "死路、绝路"
+        }
+      ],
+      "nuance": "way 作「方法」义时最通用（There's a way to do it），method 强调系统化步骤，approach 侧重处理问题的角度和态度。「way」还有地道习语用法：no way（绝无可能）、by the way（顺便）、give way（让步）。",
+      "core": "脚下有一条延伸向远方的路，土路也好、大路也好，走上去就能到某个地方——可以是物理上的到达，也可以是做成某件事的路子。",
+      "senses": [
+        {
+          "gloss": "n. 路；路线；方向",
+          "logic": "core→物理路径——从一处到另一处的空间轨迹，最原始的具体义。",
+          "en": "Can you tell me the way to the station?",
+          "zh": "你能告诉我去车站的路怎么走吗？"
+        },
+        {
+          "gloss": "n. 方式；方法",
+          "logic": "core→抽象路径——把「走到目的地的那条路」抽象为「达成目标的办法」。",
+          "en": "There's more than one way to solve this equation.",
+          "zh": "解这个方程的方法不止一种。"
+        },
+        {
+          "gloss": "adv. 大大地；远远地（非正式）",
+          "logic": "core→程度上的远——在路上走了很远→程度上差了很多。",
+          "en": "This is way better than what I expected.",
+          "zh": "这比我预期的好太多了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "away",
+          "gloss": "adv. 离开；不在"
+        },
+        {
+          "w": "always",
+          "gloss": "adv. 总是（all + way + s = 全程都）"
+        },
+        {
+          "w": "highway",
+          "gloss": "n. 公路；高速公路"
+        },
+        {
+          "w": "subway",
+          "gloss": "n. 地铁（sub- 下 + way 路）"
+        },
+        {
+          "w": "doorway",
+          "gloss": "n. 门口"
+        }
+      ]
+    },
+    {
+      "word": "well",
+      "hl": "w",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/wel/",
+      "subgroup": "w",
+      "meaning": "adv. 好，令人满意地；充分地  adj. 健康的  n. 井  interj. 好；嗯（语气词）",
+      "etymology": "古英语 wel「好，满意地」，日耳曼同根，与德语 wohl 同源。「井」义（well = 水井）是另一个同形词，源自古英语 wella（泉源）。",
+      "roots": [
+        {
+          "part": "well（wel）",
+          "meaning": "好、恰当地"
+        }
+      ],
+      "phonetics": "w /w/ + ell /el/；注意 well 作副词时常弱读，作语气词时可以延长「Welll...」。",
+      "tip": "well 作语气词时用来争取思考时间（Well, I think...），是口语中最高频的填充词之一，但正式写作应避免。",
+      "examples": [
+        {
+          "en": "She speaks French extremely well after living in Paris for three years.",
+          "zh": "在巴黎生活三年后，她的法语说得极好。",
+          "source": "造句"
+        },
+        {
+          "en": "as well as / well-known",
+          "zh": "「以及 / 众所周知的」——两个高频合成用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "properly",
+          "ipa": "/ˈprɒpərli/",
+          "note": "「正确地、妥善地」，比 well 更强调规范合适，less colloquial",
+          "gloss": "adv. 正确地；妥善地"
+        },
+        {
+          "w": "thoroughly",
+          "ipa": "/ˈθʌrəli/",
+          "note": "「彻底地」，强调全面而非好坏；研究时常与 well 互换",
+          "gloss": "adv. 彻底地；全面地"
+        },
+        {
+          "w": "satisfactorily",
+          "ipa": "/ˌsætɪsˈfæktərɪli/",
+          "note": "「令人满意地」，是 well 的正式书面替代",
+          "gloss": "adv. 令人满意地"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "poorly",
+          "note": "差劲地"
+        },
+        {
+          "w": "badly",
+          "note": "糟糕地"
+        }
+      ],
+      "nuance": "well 作副词是最通用的「好地」，properly 强调「按规定/规范」，thoroughly 强调「彻底全面」，satisfactorily 最书面。「do well」= 表现好，「do properly」= 做法恰当，「do thoroughly」= 做得彻底。",
+      "core": "水从地底自然涌上来，不费力、不用泵，自己就咕嘟咕嘟冒——一切顺畅、充分、状态对的感觉。名词「井」是这个感觉的源头画面。",
+      "senses": [
+        {
+          "gloss": "adv. 好；令人满意地；充分地",
+          "logic": "core→顺畅地——像井水自然涌出一样，事情顺顺利利、结果令人满意。",
+          "en": "The team worked well together despite the tight deadline.",
+          "zh": "尽管截止日期很紧，团队合作得非常好。"
+        },
+        {
+          "gloss": "adj. 健康的；身体好的",
+          "logic": "core→状态好——身体像一口好井一样水源充足、运转正常。",
+          "en": "I don't feel well today — I think I'm coming down with something.",
+          "zh": "我今天感觉不太舒服——可能是要生病了。"
+        },
+        {
+          "gloss": "n. 井；水井；源泉",
+          "logic": "core→源头——从地面往下挖出的水源，是所有引申义的原始画面。",
+          "en": "The village relied on a single well for all its water.",
+          "zh": "整个村子全靠一口井取水。"
+        },
+        {
+          "gloss": "interj. 嗯；好吧；那么（语气填充词）",
+          "logic": "历史偶合——语气词 well 与「好/井」不同源，但说话人可能无意识觉得「好了，接下来……」，用于争取思考时间。",
+          "en": "Well, I'm not entirely convinced, but I'll give it a try.",
+          "zh": "嗯，我不是完全信服，但我试试看吧。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "welcome",
+          "gloss": "v./n. 欢迎（well + come = 来得好）"
+        },
+        {
+          "w": "welfare",
+          "gloss": "n. 福利；幸福（well + fare = 过得好）"
+        },
+        {
+          "w": "swell",
+          "gloss": "v./n. 膨胀；肿胀； swell = 向好的方向胀大"
+        },
+        {
+          "w": "well-being",
+          "gloss": "n. 健康；幸福；安康"
+        },
+        {
+          "w": "well-known",
+          "gloss": "adj. 众所周知的"
+        }
+      ]
+    },
+    {
+      "word": "want",
+      "hl": "w",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/wɒnt/",
+      "subgroup": "w",
+      "meaning": "v. 想要；需要；缺乏  n. 需求；贫乏",
+      "etymology": "古北欧语 vanta「缺少」，12世纪进入英语。从「缺少某物」→「渴望得到某物」。古英语「贫困」义保留在 for want of（因为缺乏）中。",
+      "roots": [
+        {
+          "part": "want（vanta）",
+          "meaning": "缺少、渴望"
+        }
+      ],
+      "phonetics": "w /w/ + ant /ɒnt/（英式）或 /ɑːnt/（美式）；注意美式发音 a 拉长。",
+      "examples": [
+        {
+          "en": "I want to understand, not just to memorize.",
+          "zh": "我想要理解，而不只是死记硬背。",
+          "source": "造句"
+        },
+        {
+          "en": "for want of a better word",
+          "zh": "「因为找不到更好的词」——正式书面语，表达措辞无奈。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "desire",
+          "ipa": "/dɪˈzaɪər/",
+          "note": "「渴望」，比 want 更强烈、更正式，多用于强烈的情感或愿望",
+          "gloss": "v./n. 渴望；欲望"
+        },
+        {
+          "w": "wish",
+          "ipa": "/wɪʃ/",
+          "note": "「希望」，比 want 更含期盼意味，常用于不太可能实现的愿望",
+          "gloss": "v./n. 希望；祝愿"
+        },
+        {
+          "w": "require",
+          "ipa": "/rɪˈkwaɪər/",
+          "note": "「需要」义的正式近义，强调客观必要性而非主观欲望",
+          "gloss": "v. 需要；要求"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "have",
+          "note": "已拥有"
+        },
+        {
+          "w": "reject",
+          "note": "拒绝（主动不要）"
+        }
+      ],
+      "nuance": "want 是最口语的「想要」，desire 更正式且情感更强烈，wish 带有「可能实现不了」的期盼，need 强调「没有不行」的必要性。「want to do」用于日常，「desire to do」用于正式写作。",
+      "core": "伸手去够一个够不着的东西，手指尖碰到了又没完全抓住，心里空落落的——既有「渴望得到」的主动，又有「现在还缺着」的匮乏感。",
+      "senses": [
+        {
+          "gloss": "v. 想要；渴望",
+          "logic": "core→主动渴望——伸手去够、心里想要，主观欲望驱动。",
+          "en": "She wants to become a surgeon, and she's willing to put in the years of training.",
+          "zh": "她想成为一名外科医生，而且愿意为此付出多年的训练。"
+        },
+        {
+          "gloss": "v./n. 缺乏；贫乏；需要",
+          "logic": "core→客观上缺——不是你想不想要，而是这个东西确实不在你手里，缺着的状态。want 的词源 vanta 原义就是「缺少」。",
+          "en": "The crops failed for want of rain.",
+          "zh": "因为缺雨，庄稼歉收了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "unwanted",
+          "gloss": "adj. 不被需要的；多余的"
+        },
+        {
+          "w": "wanton",
+          "gloss": "adj. 恣意的；无节制的（历史偶合，不同源）"
+        },
+        {
+          "w": "wanting",
+          "gloss": "adj. 欠缺的；不足的"
+        }
+      ]
+    },
+    {
+      "word": "wide",
+      "hl": "w",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/waɪd/",
+      "subgroup": "w",
+      "meaning": "adj. 宽的；范围广的；偏离目标的  adv. 大幅地；偏差地",
+      "etymology": "古英语 wīd「宽广」，日耳曼同根，与德语 weit 同源。width（宽度）、widen（加宽）是直接派生词。worldwide = world + wide，字面「世界之宽」→ 全球。",
+      "roots": [
+        {
+          "part": "wide（wīd）",
+          "meaning": "宽广、范围大"
+        }
+      ],
+      "phonetics": "w /w/ + ide /aɪd/，分裂式 i…e，词尾哑 e 把 i 拉长成 /aɪ/；与 side、guide、ride 押韵。",
+      "examples": [
+        {
+          "en": "The river is too wide to cross without a bridge.",
+          "zh": "这条河太宽，没有桥无法通过。",
+          "source": "造句"
+        },
+        {
+          "en": "wide-ranging / open wide",
+          "zh": "「涵盖广泛的 / 张大（嘴/眼）」——两个高频合成用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "broad",
+          "ipa": "/brɔːd/",
+          "note": "「宽阔的；广泛的」，与 wide 最接近，broad 更强调面积感（broad shoulders），wide 更强调两端距离",
+          "gloss": "adj. 宽阔的；广泛的"
+        },
+        {
+          "w": "extensive",
+          "ipa": "/ɪkˈstensɪv/",
+          "note": "「广泛的」，用于抽象范围，比 wide 更正式；extensive research（广泛的研究）",
+          "gloss": "adj. 广泛的；全面的"
+        },
+        {
+          "w": "vast",
+          "ipa": "/vɑːst/",
+          "note": "「广袤的；巨大的」，比 wide 语气更强，强调面积或数量的浩大",
+          "gloss": "adj. 广袤的；巨大的"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "narrow",
+          "note": "狭窄的"
+        },
+        {
+          "w": "limited",
+          "note": "有限的（范围义）"
+        }
+      ],
+      "nuance": "wide 和 broad 都表示「宽」，但 wide 强调两边距离（wide gap 宽缝隙），broad 强调面积（broad forehead 宽额头）。作「范围广」时可互换：wide/broad knowledge，但 extensive 更强调覆盖的全面性，vast 强调规模的压倒性。",
+      "core": "站在悬崖边张开双臂，左右两侧都望不到头——一种空间被撑开、没有边界阻拦的开阔感。",
+      "senses": [
+        {
+          "gloss": "adj. 宽的；宽阔的",
+          "logic": "core→两端距离大——物理上的横向跨度，与「窄」对立。",
+          "en": "The river was too wide to swim across.",
+          "zh": "这条河太宽了，游不过去。"
+        },
+        {
+          "gloss": "adj. 范围广的；广泛的",
+          "logic": "core→覆盖面大——空间上的开阔抽象为范围上的广。",
+          "en": "She has wide experience in international trade law.",
+          "zh": "她在国际贸易法方面有广泛的经验。"
+        },
+        {
+          "gloss": "adv. 张大地；充分地",
+          "logic": "core→程度充分地——门打得很「宽」→完全打开。",
+          "en": "Open your mouth wide so the dentist can take a look.",
+          "zh": "把嘴张大，让牙医检查一下。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "width",
+          "gloss": "n. 宽度"
+        },
+        {
+          "w": "widen",
+          "gloss": "v. 加宽；拓宽"
+        },
+        {
+          "w": "widespread",
+          "gloss": "adj. 广泛传播的；普遍的"
+        },
+        {
+          "w": "worldwide",
+          "gloss": "adj./adv. 全球范围的（地）"
+        },
+        {
+          "w": "nationwide",
+          "gloss": "adj./adv. 全国范围的（地）"
+        }
+      ]
+    },
+    {
+      "word": "wind",
+      "hl": "w",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/wɪnd/ 或 /waɪnd/",
+      "subgroup": "w",
+      "meaning": "n. /wɪnd/ 风；气息  v. /waɪnd/ 蜿蜒；缠绕；给（钟表）上弦",
+      "etymology": "古英语 wind（名词，风）和 windan（动词，缠绕）是两个不同词，碰巧同形。名词 wind 与德语 Wind 同源；动词 wind 源于「绕圈转动」，派生 wound（缠绕过去式）。",
+      "roots": [
+        {
+          "part": "wind（wind/windan）",
+          "meaning": "风 / 缠绕"
+        }
+      ],
+      "phonetics": "注意一词两读：名词 /wɪnd/（风）= w + i短音 + nd；动词 /waɪnd/（蜿蜒）= w + i长音（分裂式）+ nd。混淆是常见误区。",
+      "tip": "wind /wɪnd/ = 风（名词）；wind /waɪnd/ = 蜿蜒/上发条（动词）。「wind down」= 放松或收尾，「wind up」= 结束或陷入。",
+      "examples": [
+        {
+          "en": "A strong wind swept across the open field.",
+          "zh": "一阵强风横扫开阔的田野。",
+          "source": "造句"
+        },
+        {
+          "en": "The road winds through the mountains for fifty kilometers.",
+          "zh": "这条路蜿蜒穿过山区长达五十公里。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "breeze",
+          "ipa": "/briːz/",
+          "note": "「微风」，比 wind 轻柔，通常令人愉悦；a sea breeze（海风）",
+          "gloss": "n. 微风；和风"
+        },
+        {
+          "w": "gust",
+          "ipa": "/ɡʌst/",
+          "note": "「一阵狂风」，比 wind 更猛烈、短促；a gust of wind（一阵风）",
+          "gloss": "n. 一阵狂风"
+        },
+        {
+          "w": "coil",
+          "ipa": "/kɔɪl/",
+          "note": "「盘绕」，动词义的近义词，强调螺旋形缠绕；coil a rope（盘绕绳子）",
+          "gloss": "v. 盘绕；卷起"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "calm",
+          "note": "风平浪静（名词义反义）"
+        },
+        {
+          "w": "unwind",
+          "note": "展开；放松（动词义反义）"
+        }
+      ],
+      "nuance": "wind（名词）的程度梯度：breeze（微风）< wind（风）< gale（大风）< storm（暴风）< hurricane（飓风）。动词 wind /waɪnd/ 与 coil、twist 相近，但 wind 更强调围绕中心盘旋，coil 强调螺旋形状。",
+      "core": "两个不同的画面——名词 /wɪnd/：风吹过脸颊，头发被吹起来，空气在皮肤上流动的触感。动词 /waɪnd/：一条蛇在草地上弯弯绕绕前进，或者一条小路盘旋上山的轨迹感。两个词历史偶合，不是引申关系。",
+      "senses": [
+        {
+          "gloss": "n. /wɪnd/ 风；气流；气息",
+          "logic": "画面①——流动的空气，自然界可感知的力。",
+          "en": "A cold wind was blowing from the north.",
+          "zh": "一阵冷风从北边吹来。"
+        },
+        {
+          "gloss": "v. /waɪnd/ 蜿蜒；迂回前进",
+          "logic": "画面②→弯曲前进——像蛇或小路一样沿曲线走，不取直线。",
+          "en": "The path winds through the forest for several miles.",
+          "zh": "这条小路蜿蜒穿过森林，有好几英里长。"
+        },
+        {
+          "gloss": "v. /waɪnd/ 缠绕；给（钟表）上弦",
+          "logic": "画面②→绕圈——把线或发条一圈一圈绕起来。上弦就是用钥匙把钟的弹簧绕紧。",
+          "en": "She wound the scarf around her neck to keep warm.",
+          "zh": "她把围巾绕在脖子上保暖。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "windy",
+          "gloss": "adj. 多风的"
+        },
+        {
+          "w": "unwind",
+          "gloss": "v. 展开；放松（un- 反向 + wind 缠绕→解开）"
+        },
+        {
+          "w": "rewind",
+          "gloss": "v. 倒带；倒回（re- 重新 + wind 缠绕→往回绕）"
+        },
+        {
+          "w": "windmill",
+          "gloss": "n. 风车"
+        },
+        {
+          "w": "window",
+          "gloss": "n. 窗户（wind + eye 风眼，历史偶合演变）"
+        }
+      ]
+    },
+    {
+      "word": "wary",
+      "hl": "w",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈweəri/",
+      "subgroup": "w",
+      "meaning": "adj. 警惕的；谨慎的；有戒心的",
+      "etymology": "古英语 wær「警觉的、谨慎的」，与 aware（意识到）同根——ware = 警觉。beware（当心）= be + ware，是同族词。",
+      "roots": [
+        {
+          "part": "war- (wær)",
+          "meaning": "警觉、谨慎"
+        },
+        {
+          "part": "-y",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "w /w/ + ary /eəri/，重音在首音节；注意与 weary（疲倦的）区分：wary /weəri/，weary /wɪəri/。",
+      "tip": "wary of = 「对……保持警惕」；常见混淆：wary（谨慎的）≠ weary（疲倦的），一字之差含义天壤之别。",
+      "examples": [
+        {
+          "en": "Investors remain wary of making long-term commitments in such an uncertain market.",
+          "zh": "投资者在如此不确定的市场中仍然对长期承诺保持警惕。",
+          "source": "造句"
+        },
+        {
+          "en": "be wary of strangers / be wary of overpromising",
+          "zh": "「对陌生人保持警惕 / 谨防过度承诺」——高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "cautious",
+          "ipa": "/ˈkɔːʃəs/",
+          "note": "「谨慎的」，比 wary 更中性，强调行动上的小心，而非对他人的戒备",
+          "gloss": "adj. 谨慎的；小心的"
+        },
+        {
+          "w": "vigilant",
+          "ipa": "/ˈvɪdʒɪlənt/",
+          "note": "「警觉的」，比 wary 更主动，强调持续监视以防危险；stay vigilant",
+          "gloss": "adj. 警觉的；警戒的"
+        },
+        {
+          "w": "suspicious",
+          "ipa": "/səˈspɪʃəs/",
+          "note": "「怀疑的」，比 wary 更强烈，含有「认为有问题」的判断，而非单纯防备",
+          "gloss": "adj. 怀疑的；可疑的"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "trusting",
+          "note": "轻易信任的"
+        },
+        {
+          "w": "reckless",
+          "note": "鲁莽的，不谨慎的"
+        }
+      ],
+      "nuance": "wary 强调「因察觉到潜在威胁而保持距离」（wary of the deal），cautious 强调「行动上小心翼翼」（cautious driver），vigilant 强调「主动保持警惕状态」（remain vigilant），suspicious 已经含有「觉得有问题」的判断。",
+      "core": "走夜路时听到背后有脚步声——身体本能绷紧、放慢脚步、用余光往后瞥，每一步都踩得小心翼翼。不是害怕，是警觉。",
+      "senses": [
+        {
+          "gloss": "adj. 警惕的；谨慎的；有戒心的",
+          "logic": "core→警觉——察觉到潜在危险后本能保持距离、不轻易信任。只有这一个核心义，程度从中性到强烈。",
+          "en": "After the scandal, investors are wary of putting money into the sector.",
+          "zh": "丑闻之后，投资者对这个行业的投资变得十分谨慎。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "unaware",
+          "gloss": "adj. 未察觉的；不知道的（un- 否定 + aware 意识到）"
+        },
+        {
+          "w": "beware",
+          "gloss": "v. 当心；提防（be + ware 警觉→处于警觉状态）"
+        },
+        {
+          "w": "aware",
+          "gloss": "adj. 意识到；知道的"
+        },
+        {
+          "w": "awareness",
+          "gloss": "n. 意识；觉察"
+        },
+        {
+          "w": "warily",
+          "gloss": "adv. 警惕地；小心翼翼地"
+        }
+      ]
+    },
+    {
+      "word": "wear",
+      "hl": "w",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/weər/",
+      "subgroup": "w",
+      "meaning": "v. 穿戴；佩戴；磨损；（精力）逐渐消耗  n. 磨损；穿着（统称）",
+      "etymology": "古英语 werian「穿着、保护」，日耳曼同根，与哥特语 wasjan 同源。wear out（磨损殆尽）、wear down（逐渐消耗）是核心派生搭配。",
+      "roots": [
+        {
+          "part": "wear（werian）",
+          "meaning": "穿着、保护"
+        }
+      ],
+      "phonetics": "w /w/ + ear /eər/；注意 wear /weər/ 与 where /weər/ 发音完全相同——同音词，靠语境辨别。",
+      "tip": "wear /weər/ 和 where /weər/ 发音相同，是英语同音词经典对。另：wear 过去式 wore，过去分词 worn，不规则变化要记牢。",
+      "examples": [
+        {
+          "en": "She wore a calm expression despite the pressure.",
+          "zh": "尽管压力很大，她仍面带平静的表情。",
+          "source": "造句"
+        },
+        {
+          "en": "wear and tear / wear out",
+          "zh": "「正常磨损 / 磨损殆尽；精疲力竭」——两个高频固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "don",
+          "ipa": "/dɒn/",
+          "note": "正式文学「穿上」，比 wear 更强调穿戴的动作（put on），而非持续状态",
+          "gloss": "v. 穿上（正式/文学）"
+        },
+        {
+          "w": "sport",
+          "ipa": "/spɔːrt/",
+          "note": "口语「炫耀地穿戴/展示」，带有自豪展示的意味；sport a new hat（戴着新帽子炫耀）",
+          "gloss": "v. 炫耀地穿戴"
+        },
+        {
+          "w": "erode",
+          "ipa": "/ɪˈroʊd/",
+          "note": "「侵蚀、磨损」义的近义，比 wear 更强调化学或自然腐蚀；wind erodes rock（风蚀岩石）",
+          "gloss": "v. 侵蚀；磨损"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "remove",
+          "note": "脱下（衣物）"
+        },
+        {
+          "w": "restore",
+          "note": "修复（磨损义）"
+        }
+      ],
+      "nuance": "wear 表示「穿着某状态」（wearing a coat），put on 表示「穿上」（动作），don 是 put on 的正式/文学说法，sport 含炫耀之意。wear out 和 erode 都表示磨损，但 wear out 偏机械磨耗，erode 偏自然侵蚀或抽象消耗（erode confidence）。",
+      "core": "一件旧外套穿了很多年——袖口磨得发白、布料变薄，但特别贴身。既有「穿在身上」的覆盖感，又有「随时间慢慢损耗」的磨薄感。",
+      "senses": [
+        {
+          "gloss": "v. 穿；戴；佩戴",
+          "logic": "core→覆盖身体——把衣服、饰品披挂在身上并保持这个状态。注意是「穿着」的状态而非「穿上」的动作（后者是 put on）。",
+          "en": "She was wearing a blue dress and a silver necklace.",
+          "zh": "她穿着一条蓝色连衣裙，戴着一条银色项链。"
+        },
+        {
+          "gloss": "v./n. 磨损；损耗；消磨",
+          "logic": "core→被磨薄——长期使用后表面被磨掉，像外套袖口发白那样。也引申为精力被消磨。",
+          "en": "The constant friction wore a hole in the fabric.",
+          "zh": "持续的摩擦把布料磨出了一个洞。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "weary",
+          "gloss": "adj. 疲倦的；厌倦的（穿到累了→消耗到疲惫）"
+        },
+        {
+          "w": "underwear",
+          "gloss": "n. 内衣（under- 下 + wear 穿→穿在下面的）"
+        },
+        {
+          "w": "footwear",
+          "gloss": "n. 鞋类（统称）"
+        },
+        {
+          "w": "worn-out",
+          "gloss": "adj. 破烂的；筋疲力尽的"
+        },
+        {
+          "w": "sportswear",
+          "gloss": "n. 运动服装"
+        }
+      ]
+    },
+    {
+      "word": "what",
+      "hl": "wh",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/wɒt/",
+      "subgroup": "wh",
+      "meaning": "pron. 什么；多么  det. 什么；多么  excl. 什么！",
+      "etymology": "古英语 hwæt「什么」，原始日耳曼语疑问词，与德语 was、荷兰语 wat 同源。hw- 在中古英语后拼写颠倒为 wh-，但部分方言仍读 /hw-/。",
+      "roots": [
+        {
+          "part": "what（hwæt）",
+          "meaning": "什么"
+        }
+      ],
+      "phonetics": "wh 读 /w/（现代标准美式和英式均如此），美式部分地区读 /hw/（气音更重）；+ at /ɒt/ 或 /ʌt/（弱读）。",
+      "tip": "wh- 疑问词（what/when/where/why/which/who）中，who 是唯一不读 /w/ 而读 /h/ 的，需要单独记。",
+      "examples": [
+        {
+          "en": "What matters most is not the result but the process.",
+          "zh": "最重要的不是结果，而是过程。",
+          "source": "造句"
+        },
+        {
+          "en": "what if / so what",
+          "zh": "「如果……会怎样 / 那又怎样」——两个高频口语短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "which",
+          "ipa": "/wɪtʃ/",
+          "note": "「哪个」，在有限选项中选择，比 what 更具体；which do you prefer？（两个以上选项中选）",
+          "gloss": "pron./adj. 哪个；哪些"
+        },
+        {
+          "w": "whatever",
+          "ipa": "/wɒtˈevər/",
+          "note": "「无论什么」，是 what 的强调和泛化形式；whatever you say（你说什么都行）",
+          "gloss": "pron./det. 无论什么"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "what 用于开放性问题（What do you want?），which 用于有限选项（Which one do you prefer?）。what 还可用于感叹（What a surprise!）和让步从句（What he said surprised me）。",
+      "core": "面对一个完全未知的东西，脑子里只有一个大问号，嘴巴不自觉地张开，非要问出口不可——人类最原始的求知冲动。",
+      "senses": [
+        {
+          "gloss": "pron./det. 什么；什么东西/事",
+          "logic": "core→疑问——面对未知时的本能追问，开放式的，不限定选项。",
+          "en": "What does this symbol mean in the equation?",
+          "zh": "这个符号在方程里是什么意思？"
+        },
+        {
+          "gloss": "det./excl. 多么……！；真……！",
+          "logic": "core→感叹——未知的东西超出预期时，疑问变成惊叹。",
+          "en": "What a beautiful sunset!",
+          "zh": "多美的日落啊！"
+        },
+        {
+          "gloss": "pron. ……的东西/事（名词性从句引导词）",
+          "logic": "core→指代——把疑问词变成「那个……的东西」，把未知打包成一个名词。",
+          "en": "What she said made everyone reconsider their position.",
+          "zh": "她说的话让每个人都重新考虑了自己的立场。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "whatever",
+          "gloss": "pron./det. 无论什么；任何"
+        },
+        {
+          "w": "somewhat",
+          "gloss": "adv. 有点；稍微（some + what = 某种程度上）"
+        },
+        {
+          "w": "whatsoever",
+          "gloss": "adv. 任何；丝毫（用于否定强调）"
+        },
+        {
+          "w": "whatnot",
+          "gloss": "n. 等等；诸如此类的东西"
+        }
+      ]
+    },
+    {
+      "word": "whether",
+      "hl": "wh",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈweðər/",
+      "subgroup": "wh",
+      "meaning": "conj. 是否；不管（两种情况都成立）",
+      "etymology": "古英语 hwæþer「哪一个（两者之中）」，与 either 同根（都含「两者其中之一」的概念）。现代 whether 专指表达「二选一的不确定」。",
+      "roots": [
+        {
+          "part": "whether（hwæþer）",
+          "meaning": "两者其中之一"
+        }
+      ],
+      "phonetics": "wh /w/ + ether /eðər/；注意与 weather（天气）/ˈweðər/ 发音完全相同——同音词，靠拼写和语境区分。",
+      "tip": "whether /ˈweðər/ = 是否；weather /ˈweðər/ = 天气——拼写不同但发音相同，另一对高频同音词。whether or not 是强调固定搭配。",
+      "examples": [
+        {
+          "en": "I'm not sure whether the meeting has been postponed.",
+          "zh": "我不确定会议是否已经推迟了。",
+          "source": "造句"
+        },
+        {
+          "en": "whether or not / whether... or...",
+          "zh": "「不管是否 / 不管……还是……」——固定结构，表示两种情况都成立。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "if",
+          "ipa": "/ɪf/",
+          "note": "口语中常替代 whether，但 whether 更正式；whether/if he comes（他是否会来）。注意 whether 可接不定式（whether to go），if 不可",
+          "gloss": "conj. 是否（口语）"
+        },
+        {
+          "w": "regardless of",
+          "ipa": "/rɪˈɡɑːrdlɪs/",
+          "note": "对应「whether...or not」的强调义：regardless of the outcome（不论结果如何），比 whether...or not 更书面简洁",
+          "gloss": "prep./adv. 不论；不管"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "whether 和 if 都可引导宾语从句表「是否」，但 whether 更书面；whether to do（是否做）不可换成 if to do；作主语从句时只能用 whether（Whether she agrees is unclear），不能用 if。",
+      "core": "站在岔路口，左右两条路都通向未知——不知道哪条是对的，但知道只有这两条路可选。一种「二选一但还没答案」的悬而未决感。",
+      "senses": [
+        {
+          "gloss": "conj. 是否（引导间接疑问）",
+          "logic": "core→两可之间——在两种可能之间不确定，需要一个答案来消除悬而未决的状态。",
+          "en": "We need to determine whether the treatment is actually effective.",
+          "zh": "我们需要确定这种治疗方法是否真的有效。"
+        },
+        {
+          "gloss": "conj. 不管……（还是……）",
+          "logic": "core→两边都行——不管选哪条路，结果都一样成立。与 or 搭配：whether A or B，A 和 B 都成立。",
+          "en": "Whether you agree or not, the decision has been made.",
+          "zh": "不管你同意还是不同意，决定已经做出了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "weather",
+          "gloss": "n. 天气（同音异义 /ˈweðər/，不同源）"
+        },
+        {
+          "w": "whether or not",
+          "gloss": "固定搭配：不管是否；无论如何"
+        }
+      ]
+    },
+    {
+      "word": "wheel",
+      "hl": "wh",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/wiːl/",
+      "subgroup": "wh",
+      "meaning": "n. 轮子；方向盘；（the wheel）历史循环  v. 推（带轮子的东西）；（鸟）盘旋",
+      "etymology": "古英语 hwēol，印欧语根 *kwel-（转动），与 cycle（循环）、pole（轴极）同根。「转动的圆形物」→ 轮子；the wheel of fortune = 命运之轮。",
+      "roots": [
+        {
+          "part": "wheel（hwēol / *kwel-）",
+          "meaning": "转动的圆形物"
+        }
+      ],
+      "phonetics": "wh /w/ + eel /iːl/，与 feel、deal、appeal 押韵（-eel/-eal 韵脚）；注意 wh 在此读 /w/ 而非 /h/。",
+      "examples": [
+        {
+          "en": "She took the wheel and drove through the night.",
+          "zh": "她握住方向盘，一路驾车穿越黑夜。",
+          "source": "造句"
+        },
+        {
+          "en": "the wheel of history / reinvent the wheel",
+          "zh": "「历史车轮 / 重新发明轮子（做无用功）」——两个高频隐喻。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "disk",
+          "ipa": "/dɪsk/",
+          "note": "「圆盘」，比 wheel 更强调平面圆形，无「转动功能」含义",
+          "gloss": "n. 圆盘；碟片"
+        },
+        {
+          "w": "cycle",
+          "ipa": "/ˈsaɪkl/",
+          "note": "「循环」，与 wheel 同根，抽象「转动」义的近义；a cycle of events（事件循环）",
+          "gloss": "n. 循环；周期"
+        },
+        {
+          "w": "helm",
+          "ipa": "/helm/",
+          "note": "「舵；掌控权」，比 wheel 更正式，多指船舵或领导权；at the helm（执掌大权）",
+          "gloss": "n. 舵；领导权"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "wheel 作名词时，在交通工具语境特指「方向盘」（behind the wheel = 驾驶）；作文化隐喻时，the wheel of fortune、the wheel of history 强调周而复始的命运感，cycle 是更抽象的「循环」，helm 专用于领导和掌控语境。",
+      "core": "一个完美的圆在地上滚，越滚越快，把整个车都带着往前跑——人类最伟大的发明，把摩擦力变成前进力。核心就是「转动前进」。",
+      "senses": [
+        {
+          "gloss": "n. 轮子；车轮",
+          "logic": "core→物理圆轮——圆形的转动装置，最基本的具象义。",
+          "en": "One of the wheels on the shopping cart was stuck.",
+          "zh": "购物车的一个轮子卡住了。"
+        },
+        {
+          "gloss": "n. 方向盘；舵轮",
+          "logic": "core→控制方向的圆——轮子不仅用来前进，还用来决定方向。the wheel = 掌控权。",
+          "en": "He fell asleep at the wheel and caused a serious accident.",
+          "zh": "他在开车时睡着了，导致了一起严重事故。"
+        },
+        {
+          "gloss": "n. 循环；命运之轮（比喻）",
+          "logic": "core→周而复始——轮子转一圈回到原位，喻指历史的循环和命运的起伏。",
+          "en": "The wheel of history turns slowly, but it turns inexorably.",
+          "zh": "历史的车轮转得很慢，但它不可阻挡地转动着。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "wheelchair",
+          "gloss": "n. 轮椅"
+        },
+        {
+          "w": "steering wheel",
+          "gloss": "n. 方向盘"
+        },
+        {
+          "w": "cartwheel",
+          "gloss": "n./v. 侧手翻（身体像轮子一样转）"
+        },
+        {
+          "w": "freewheel",
+          "gloss": "v. 滑行；随心所欲"
+        }
+      ]
+    },
+    {
+      "word": "while",
+      "hl": "wh",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/waɪl/",
+      "subgroup": "wh",
+      "meaning": "conj. 当……时候；尽管；而（对比）  n. 一段时间",
+      "etymology": "古英语 hwīl「时间段」，日耳曼同根，与德语 Weile（片刻）同源。从「时间段」→「在此期间」，引申为让步连词「尽管」。",
+      "roots": [
+        {
+          "part": "while（hwīl）",
+          "meaning": "时间段"
+        }
+      ],
+      "phonetics": "wh /w/ + ile /aɪl/，分裂式 i…e，词尾哑 e 把 i 拉长成 /aɪ/；与 mile、style、file 押韵。",
+      "tip": "while 有三个截然不同的用法：时间（while she was cooking）、让步（while I agree, I have concerns）、对比（She reads while he watches TV）——三者语气完全不同。",
+      "examples": [
+        {
+          "en": "While the report has merit, several key assumptions are questionable.",
+          "zh": "尽管这份报告有其价值，但几个关键假设值得商榷。",
+          "source": "造句"
+        },
+        {
+          "en": "once in a while / worth one's while",
+          "zh": "「偶尔 / 值得某人花时间」——两个高频固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "although",
+          "ipa": "/ɔːlˈðoʊ/",
+          "note": "「尽管」义的近义词，比 while 更正式，专用于让步；although 不能用于时间义",
+          "gloss": "conj. 尽管；虽然"
+        },
+        {
+          "w": "whereas",
+          "ipa": "/weərˈæz/",
+          "note": "「而……」，用于对比两个事实，比 while 更正式且只用于对比义",
+          "gloss": "conj. 而；却（对比）"
+        },
+        {
+          "w": "during",
+          "ipa": "/ˈdjʊərɪŋ/",
+          "note": "「在……期间」，但 during 接名词（during the meeting），while 接从句（while we met）",
+          "gloss": "prep. 在……期间"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "while 时间义 = during the time that（同时发生）；while 让步义 ≈ although（语气上稍轻，常用于书面）；while 对比义 ≈ whereas（正式对比两个截然相反的事实）。whereas 只用于对比，不用于时间和让步。",
+      "core": "钟摆从左边晃到右边——一段完整的时间在流动，不快不慢。心里知道这段时间不是永恒的，但此刻它确实在持续。",
+      "senses": [
+        {
+          "gloss": "conj. 当……的时候；在……期间",
+          "logic": "core→同时发生——钟摆晃动的那段时间里，另一件事也在发生。",
+          "en": "I listened to music while I was working on the report.",
+          "zh": "我在写报告的时候听着音乐。"
+        },
+        {
+          "gloss": "conj. 尽管；虽然（让步）",
+          "logic": "core→对比反差——时间在流，但事情有另一面。A 成立的同时 B 也成立（B 与 A 有反差），→「虽然 A，但 B」。",
+          "en": "While the plan has its merits, we simply don't have the budget.",
+          "zh": "尽管这个计划有其优点，但我们根本没有预算。"
+        },
+        {
+          "gloss": "n. 一段时间；一会儿",
+          "logic": "core→时间段本身——把「钟摆晃过的那一段」抽出来作名词。",
+          "en": "It's been a while since we last spoke.",
+          "zh": "我们上次说话已经有好一阵子了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "meanwhile",
+          "gloss": "adv. 与此同时（mean + while = 在那段时间中间）"
+        },
+        {
+          "w": "worthwhile",
+          "gloss": "adj. 值得花时间的（worth + while = 值得花那段时间的）"
+        },
+        {
+          "w": "awhile",
+          "gloss": "adv. 暂时；片刻（a + while = 一会儿）"
+        },
+        {
+          "w": "erstwhile",
+          "gloss": "adj. 从前的；曾经的（erst 古英语「以前」+ while，文学用语）"
+        }
+      ]
+    },
+    {
+      "word": "why",
+      "hl": "wh",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/waɪ/",
+      "subgroup": "wh",
+      "meaning": "adv. 为什么；（引导从句）原因  n. 原因  interj. 哎（惊讶/不满）",
+      "etymology": "古英语 hwȳ「为何」，来自 hwā（谁）的工具格，原义「凭什么工具/方式」→「为什么」。印欧同源词遍布日耳曼语族。",
+      "roots": [
+        {
+          "part": "why（hwȳ）",
+          "meaning": "凭何、为何"
+        }
+      ],
+      "phonetics": "wh /w/ + y /aɪ/，单音节；美式部分地区读 /hwaɪ/（带气息），但 /waɪ/ 是主流。",
+      "tip": "why 可接不定式：「I don't know why to do this」错误，应用 why + 从句。「Why not + 动词原形」是口语提建议的高频句式：Why not try again?",
+      "examples": [
+        {
+          "en": "Understanding the why behind a decision is as important as the decision itself.",
+          "zh": "理解决策背后的原因与决策本身同样重要。",
+          "source": "造句"
+        },
+        {
+          "en": "why not / the reason why",
+          "zh": "「为何不 / ……的原因」——两个高频句型。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "reason",
+          "ipa": "/ˈriːzn/",
+          "note": "「原因」，why 的名词形式相当于 reason；the reason why = 字面冗余但口语中极常见",
+          "gloss": "n. 原因；理由"
+        },
+        {
+          "w": "wherefore",
+          "ipa": "/ˈweərfɔːr/",
+          "note": "古英语/文学「为何」，现代几乎只出现在「the whys and wherefores」（来龙去脉）",
+          "gloss": "adv. 为何（古/文学）"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "why 作名词时（the why）指「根本原因/动机」，在商业和哲学语境中越来越流行（Start With Why 的书名）。作感叹词时（Why, that's wonderful!）表示惊讶，是老派用法，多见于文学。",
+      "core": "小孩仰着头、眼睛亮晶晶地看着你，非要问出一个理由——不是刁难，是发自本能的好奇。人类所有追问的源头情绪。",
+      "senses": [
+        {
+          "gloss": "adv. 为什么；为何（疑问）",
+          "logic": "core→刨根问底——面对一个结果，想知道导致它的原因是什么。",
+          "en": "Why did the experiment fail when all the conditions seemed right?",
+          "zh": "为什么在所有条件看起来都对的情况下，实验还是失败了？"
+        },
+        {
+          "gloss": "n. 原因；理由；动机",
+          "logic": "core→追问的对象——把「为什么」这个追问本身名词化，变成「那个原因」。",
+          "en": "The book explores the whys behind human decision-making.",
+          "zh": "这本书探讨了人类决策背后的种种原因。"
+        },
+        {
+          "gloss": "interj. 哎呀；哎（表示惊讶/不满，老派用法）",
+          "logic": "历史偶合——感叹词 why 与疑问词 why 源头不同，中古英语时期从 wi（感叹）演变而来，碰巧和疑问 why 同形。",
+          "en": "Why, I had no idea you were in town!",
+          "zh": "哎呀，我完全不知道你在城里！"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "nowhere",
+          "gloss": "adv. 无处（no + where，与 why 不同根，历史偶合）"
+        },
+        {
+          "w": "whyever",
+          "gloss": "adv. 究竟为什么（强调，同 whatever）"
+        },
+        {
+          "w": "whys and wherefores",
+          "gloss": "习语：来龙去脉；前因后果"
+        }
+      ]
+    },
+    {
+      "word": "quick",
+      "hl": "qu",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/kwɪk/",
+      "subgroup": "qu",
+      "meaning": "adj. 快的；反应敏捷的  adv. 快地（口语）  n. 痛处；指甲下的嫩肉",
+      "etymology": "古英语 cwic「活着的、有生命的」，原义「活的」（与德语 quick「有活力的」同源）。「活着」→「有活力」→「反应快」。「cut to the quick」= 刺到最痛处（嫩肉）。",
+      "roots": [
+        {
+          "part": "quick（cwic）",
+          "meaning": "活着的、有活力的、快速的"
+        }
+      ],
+      "phonetics": "qu /kw/ + ick /ɪk/，qu 整体读 /kw/；注意 u 不单独发音，是 /w/ 滑音的一部分。",
+      "tip": "「cut to the quick」中 the quick 指「指甲下的嫩肉」，引申为「最痛的地方」。quick 还有「活人」的古义，「the quick and the dead」= 生者与死者（《使徒信经》用法）。",
+      "examples": [
+        {
+          "en": "She made a quick decision and avoided a potential crisis.",
+          "zh": "她迅速做出决定，避免了一场潜在的危机。",
+          "source": "造句"
+        },
+        {
+          "en": "a quick fix / quick-witted",
+          "zh": "「应急临时解决方案 / 反应机敏的」——两个高频合成搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "fast",
+          "ipa": "/fɑːst/",
+          "note": "「快速的」，与 quick 最接近，但 fast 更强调速度本身，quick 强调反应敏捷或所需时间短",
+          "gloss": "adj./adv. 快速的；快速地"
+        },
+        {
+          "w": "swift",
+          "ipa": "/swɪft/",
+          "note": "「迅疾的」，比 quick 更正式文学，常用于比喻；swift response（迅速回应）",
+          "gloss": "adj. 迅疾的；敏捷的"
+        },
+        {
+          "w": "prompt",
+          "ipa": "/prɒmpt/",
+          "note": "「及时的」，比 quick 更强调「在恰当时间行动」；prompt payment（及时付款）",
+          "gloss": "adj. 及时的；迅速的"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "slow",
+          "note": "慢的"
+        },
+        {
+          "w": "sluggish",
+          "note": "迟缓的"
+        }
+      ],
+      "nuance": "quick 强调「花费时间短、反应快」（a quick reply），fast 强调「运动速度高」（a fast car），swift 带文学色彩且含「流畅感」（swift movement），prompt 强调「恰当时机、不拖延」（prompt action）。",
+      "core": "松鼠听到声音，「嗖」一下窜上树——你还没反应过来它就不见了。不是速度快，是反应时间短到几乎没有延迟。核心是「反应迅捷」。",
+      "senses": [
+        {
+          "gloss": "adj. 快的；迅速的；短时间的",
+          "logic": "core→耗时短——从开始到结束，中间几乎没有空隙。",
+          "en": "Can I ask you a quick question before you leave?",
+          "zh": "你走之前我能快速问一个问题吗？"
+        },
+        {
+          "gloss": "adj. 敏捷的；反应快的；机敏的",
+          "logic": "core→脑子/身体反应快——松鼠窜上树不仅是动作快，更是反应快。",
+          "en": "She's very quick to spot inconsistencies in arguments.",
+          "zh": "她非常敏锐，能迅速发现论证中的矛盾。"
+        },
+        {
+          "gloss": "n. 指甲下的嫩肉；（感情）痛处",
+          "logic": "历史偶合——古英语 cwic 原义「活着的」，嫩肉是活肉（敏感），「快」是后起的引申。cut to the quick = 触及痛处。",
+          "en": "Her criticism cut him to the quick.",
+          "zh": "她的批评深深刺痛了他。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "quickly",
+          "gloss": "adv. 快速地"
+        },
+        {
+          "w": "quicken",
+          "gloss": "v. 加快；加速"
+        },
+        {
+          "w": "quick-witted",
+          "gloss": "adj. 反应机敏的；才思敏捷的"
+        },
+        {
+          "w": "quick-thinking",
+          "gloss": "adj. 思维敏捷的"
+        }
+      ]
+    },
+    {
+      "word": "quality",
+      "hl": "qu",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈkwɒləti/",
+      "subgroup": "qu",
+      "meaning": "n. 质量；品质；特性  adj. 高质量的",
+      "etymology": "拉丁语 qualitas = qualis（什么样的）+ -tas（名词后缀）。「什么样的特性」→「品质、质量」。与 qualify（使具备资格）、qualification（资质）同根。",
+      "roots": [
+        {
+          "part": "qu- (qualis)",
+          "meaning": "什么样的、何种性质的"
+        },
+        {
+          "part": "-ality (-itas)",
+          "meaning": "名词后缀，表抽象性质"
+        }
+      ],
+      "phonetics": "qu /kw/ + ality /ɒləti/，重音在首音节；qu 读 /kw/，-ality 弱读。",
+      "examples": [
+        {
+          "en": "The quality of the research depends on the methodology used.",
+          "zh": "研究的质量取决于所采用的方法论。",
+          "source": "造句"
+        },
+        {
+          "en": "quality of life / quality control",
+          "zh": "「生活质量 / 质量控制」——学术和商业双高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "standard",
+          "ipa": "/ˈstændərd/",
+          "note": "「标准；水平」，比 quality 更强调可衡量的尺度；meet the standard（达到标准）",
+          "gloss": "n. 标准；水平"
+        },
+        {
+          "w": "excellence",
+          "ipa": "/ˈeksələns/",
+          "note": "「卓越」，是 quality 的最高程度，特指超越一般水平的优质",
+          "gloss": "n. 卓越；优秀"
+        },
+        {
+          "w": "attribute",
+          "ipa": "/ˈætrɪbjuːt/",
+          "note": "「特性」义的近义词，比 quality 更中性，可指好坏任何特征；a defining attribute（决定性特征）",
+          "gloss": "n. 属性；特征"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "quantity",
+          "note": "数量（与质量对立）"
+        },
+        {
+          "w": "inferiority",
+          "note": "低劣"
+        }
+      ],
+      "nuance": "quality 兼指「好的品质」（high quality）和「特性」（a quality of resilience）。standard 是外部客观标准，excellence 是主观卓越评价，attribute 是中性描述某种特征。「quality vs quantity」（质量与数量）是英语中的经典对立。",
+      "core": "用手摸一块好布料——手感细腻密实，针脚整整齐齐，一看就知道不是便宜货。一种「用料扎实、经得起细看」的质感。",
+      "senses": [
+        {
+          "gloss": "n. 质量；品质；优劣程度",
+          "logic": "core→好坏的程度——布料好不好，上手一摸就知道。high/low quality 就是在衡量这个「质感」。",
+          "en": "The quality of the audio recording made it difficult to transcribe.",
+          "zh": "录音的质量太差，导致转写十分困难。"
+        },
+        {
+          "gloss": "n. 特性；属性；特质",
+          "logic": "core→区别于他物的特征——这块布摸起来「细腻」「密实」，这些都是它的属性，不涉及好坏评判。",
+          "en": "Patience is a quality that every teacher needs.",
+          "zh": "耐心是每个老师都需要的一种品质。"
+        },
+        {
+          "gloss": "adj. 高质量的；优质的",
+          "logic": "core→作定语直接表「质优」——quality time = 高质量的陪伴时间。",
+          "en": "We need to spend more quality time together as a family.",
+          "zh": "我们一家人需要多一些高质量的相处时间。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "qualify",
+          "gloss": "v. 使具备资格；限定"
+        },
+        {
+          "w": "qualification",
+          "gloss": "n. 资格；资质"
+        },
+        {
+          "w": "qualitative",
+          "gloss": "adj. 定性的；质的（vs quantitative 定量的）"
+        },
+        {
+          "w": "disqualify",
+          "gloss": "v. 取消资格（dis- 去除 + qualify）"
+        }
+      ]
+    },
+    {
+      "word": "question",
+      "hl": "qu",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/ˈkwestʃən/",
+      "subgroup": "qu",
+      "meaning": "n. 问题；疑问；议题  v. 质疑；询问",
+      "etymology": "拉丁语 quaestio = quaerere（寻求、询问）+ -tio（名词后缀）。与 quest（追寻）、query（质疑）、request（请求）、acquire（获得）同根——核心义都是「寻求」。",
+      "roots": [
+        {
+          "part": "qu- (quaerere)",
+          "meaning": "寻求、询问"
+        },
+        {
+          "part": "-estion (-tio)",
+          "meaning": "名词后缀，表动作结果"
+        }
+      ],
+      "phonetics": "qu /kw/ + estion /estʃən/，注意 -tion 在 -st 之后读 /tʃən/ 而非 /ʃən/（question /kwestʃən/，不读 /kwesʃən/）。",
+      "tip": "question 与 quest 同根：quest = 「追寻（答案）的旅程」，question = 「寻找答案的提问」。call into question = 「对……提出质疑」，高频书面短语。",
+      "examples": [
+        {
+          "en": "The findings call into question the validity of previous studies.",
+          "zh": "这些发现对以往研究的有效性提出了质疑。",
+          "source": "造句"
+        },
+        {
+          "en": "beyond question / out of the question",
+          "zh": "「毋庸置疑 / 根本不可能」——一对含义相反的固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "inquiry",
+          "ipa": "/ɪnˈkwaɪəri/",
+          "note": "「询问；调查」，比 question 更正式，多指系统性调查；a formal inquiry（正式调查）",
+          "gloss": "n. 询问；调查"
+        },
+        {
+          "w": "query",
+          "ipa": "/ˈkwɪəri/",
+          "note": "「疑问；质疑」，与 question 同根，但 query 多指对某一具体点的疑问",
+          "gloss": "n./v. 疑问；质疑"
+        },
+        {
+          "w": "issue",
+          "ipa": "/ˈɪʃuː/",
+          "note": "「议题；问题」，作「议题」义时与 question 最接近；raise an issue（提出议题）",
+          "gloss": "n. 议题；问题"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "answer",
+          "note": "回答"
+        },
+        {
+          "w": "certainty",
+          "note": "确定（消除疑问）"
+        }
+      ],
+      "nuance": "question 最通用，覆盖「提问、质疑、议题」三义；query 专指对具体细节的质疑，语气更技术性；inquiry 指系统性的调查询问；issue 作「问题」时更偏「有争议的议题」（political issue），而非「需要回答的问题」。",
+      "core": "举起手来，心里有一个空缺必须被填满——不是随便什么答案都行，非要找到一个能对得上的回答。像锁和钥匙：问题是锁孔，答案是钥匙。",
+      "senses": [
+        {
+          "gloss": "n. 问题；疑问（需要回答的）",
+          "logic": "core→需要填补的空缺——提出一个未知点，期待对方用信息来填上。",
+          "en": "Does anyone have any questions about the procedure?",
+          "zh": "关于这个流程，有人有任何问题吗？"
+        },
+        {
+          "gloss": "v. 质疑；对……提出疑问",
+          "logic": "core→把某事变成问题——不直接接受现有答案，而是把它当成有待验证的未知。",
+          "en": "Several researchers have questioned the validity of the original data.",
+          "zh": "多位研究者对原始数据的有效性提出了质疑。"
+        },
+        {
+          "gloss": "n. 议题；难题；事情",
+          "logic": "core→待解决的疑难——不仅是「需要回答」，更是「需要处理/解决的复杂局面」。",
+          "en": "Climate change is no longer a question of if, but of how fast.",
+          "zh": "气候变化已经不再是「是否」的问题，而是「有多快」的问题。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "questionnaire",
+          "gloss": "n. 问卷；调查表"
+        },
+        {
+          "w": "unquestionable",
+          "gloss": "adj. 毋庸置疑的；毫无疑问的"
+        },
+        {
+          "w": "quest",
+          "gloss": "n./v. 追寻；探索（与 question 同根 quaerere，追寻答案之旅）"
+        },
+        {
+          "w": "request",
+          "gloss": "n./v. 请求（re- 强调 + quest 寻求→恳切寻求）"
+        }
+      ]
+    },
+    {
+      "word": "require",
+      "hl": "qu",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/rɪˈkwaɪər/",
+      "subgroup": "qu",
+      "meaning": "v. 需要，要求（客观必要）；规定必须",
+      "etymology": "拉丁语 requirere = re-(重新、强调) + quaerere(寻求) = 「强烈寻求」→「需要、要求」。与 question、quest、acquire、inquiry 同根（都含「寻求」义）。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "强调前缀"
+        },
+        {
+          "part": "-quire (quaerere)",
+          "meaning": "寻求"
+        }
+      ],
+      "phonetics": "re- /rɪ/ + quire /kwaɪər/，重音在后；qu 读 /kw/，注意 -ire 读 /aɪər/（两个音节合一）。",
+      "examples": [
+        {
+          "en": "The project requires careful planning and sufficient resources.",
+          "zh": "这个项目需要周密的规划和充足的资源。",
+          "source": "造句"
+        },
+        {
+          "en": "required reading / as required",
+          "zh": "「必读材料 / 按要求」——学术和正式文本高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "need",
+          "ipa": "/niːd/",
+          "note": "「需要」，比 require 更口语，require 多用于正式规定；require approval（需批准）vs need help（需要帮助）",
+          "gloss": "v. 需要（口语）"
+        },
+        {
+          "w": "demand",
+          "ipa": "/dɪˈmɑːnd/",
+          "note": "「要求」，比 require 语气更强势，含主动强烈索取之意",
+          "gloss": "v./n. 要求；需求"
+        },
+        {
+          "w": "necessitate",
+          "ipa": "/nəˈsesɪteɪt/",
+          "note": "「使成为必要」，比 require 更正式，强调「某事导致必须如此」；the delay necessitated a change of plan",
+          "gloss": "v. 使成为必要"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "waive",
+          "note": "豁免、放弃（某项要求）"
+        },
+        {
+          "w": "optional",
+          "note": "可选的（非必须）"
+        }
+      ],
+      "nuance": "require 强调客观必要性或规定性（The law requires...），need 更主观口语（I need help），demand 含有强势主动索取（He demanded an apology），necessitate 最正式，多用于说明某事「导致」另一件事成为必要。",
+      "core": "一扇门必须用特定的钥匙才能打开——没有这把钥匙就进不去，不是你想不想，是客观上必须如此。一种「不以主观意志为转移」的强制性。",
+      "senses": [
+        {
+          "gloss": "v. 需要；必需（客观必要）",
+          "logic": "core→客观上缺不了——这扇门的结构决定了非这把钥匙不开，不是喜不喜欢的问题。",
+          "en": "The surgery requires several weeks of recovery time.",
+          "zh": "这个手术需要几周的恢复时间。"
+        },
+        {
+          "gloss": "v. 要求；规定（正式/官方必须）",
+          "logic": "core→外部强制——法律规定、制度要求你必须做，不做的后果很明确。",
+          "en": "The university requires all students to complete a thesis before graduation.",
+          "zh": "大学要求所有学生在毕业前完成一篇论文。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "requirement",
+          "gloss": "n. 要求；必要条件"
+        },
+        {
+          "w": "requisite",
+          "gloss": "adj./n. 必需的；必需品"
+        },
+        {
+          "w": "prerequisite",
+          "gloss": "n. 先决条件；前提（pre- 前 + requisite 必需→必须先具备的）"
+        },
+        {
+          "w": "requisition",
+          "gloss": "n./v. 正式请求；征用"
+        }
+      ]
+    },
+    {
+      "word": "quite",
+      "hl": "qu",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/kwaɪt/",
+      "subgroup": "qu",
+      "meaning": "adv. 相当，颇；完全，彻底（英式）；确实（表示同意）",
+      "etymology": "中古英语 quite「完全地、彻底地」，源自 quit（清偿、脱离），与 quit（放弃）、acquit（宣判无罪）同根。从「完全了结」→「完全、彻底」→「相当程度」。",
+      "roots": [
+        {
+          "part": "quite（quit）",
+          "meaning": "完全地、彻底地"
+        }
+      ],
+      "phonetics": "qu /kw/ + ite /aɪt/，分裂式 i…e，词尾哑 e 把 i 拉长成 /aɪ/；与 white、write、kite 押韵。",
+      "tip": "quite 是英美英语的著名陷阱：美式 quite good = 相当好（程度副词）；英式 quite good = 还好（降低程度）；英式 quite right = 完全正确（表认同，近 absolutely）。语境决定一切。",
+      "examples": [
+        {
+          "en": "The results were quite different from what we had expected.",
+          "zh": "结果与我们预期的相当不同。",
+          "source": "造句"
+        },
+        {
+          "en": "quite a few / not quite",
+          "zh": "「相当多 / 还不完全是」——两个高频搭配，注意 quite a few = 不少（非「很少」）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "rather",
+          "ipa": "/ˈrɑːðər/",
+          "note": "「相当」，与 quite 最接近，但 rather 多含「出乎意料地」的意味；rather surprising（出人意料地令人惊讶）",
+          "gloss": "adv. 相当；颇"
+        },
+        {
+          "w": "fairly",
+          "ipa": "/ˈfeərli/",
+          "note": "「还算，比较」，比 quite 程度稍弱，多表示「达到了一定程度但不算太高」",
+          "gloss": "adv. 还算；比较"
+        },
+        {
+          "w": "entirely",
+          "ipa": "/ɪnˈtaɪərli/",
+          "note": "「完全地」，对应 quite 的「彻底」义；entirely wrong（完全错了）= quite wrong（英式）",
+          "gloss": "adv. 完全地；彻底地"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "barely",
+          "note": "几乎不、勉强"
+        },
+        {
+          "w": "hardly",
+          "note": "几乎不"
+        }
+      ],
+      "nuance": "程度副词梯度（由弱到强）：fairly（还算）< rather/quite（相当）< very（很）< extremely（极其）。quite 在英式作「完全」时（quite wrong）程度比 very 更绝对。「not quite」= 「还差一点」，是常见的礼貌否定句式。",
+      "core": "一杯水倒了八分满，不算满溢，但绝对够喝了——不多不少，程度刚好令人满意的感觉。但英式英语里这个词也可以是一整杯——「完全」。两种程度在同一词里共存。",
+      "senses": [
+        {
+          "gloss": "adv. 相当；颇（美式主流义）",
+          "logic": "core→够多但不极致——八分满，到了一个值得注意但非极端的程度。",
+          "en": "The movie was quite good, though not a masterpiece.",
+          "zh": "这部电影相当不错，虽然算不上杰作。"
+        },
+        {
+          "gloss": "adv. 完全；彻底（英式义，及某些固定搭配）",
+          "logic": "core→满杯——不是八成，是十成。quite right = 完全正确（英式）；quite impossible = 完全不可能。",
+          "en": "I'm afraid that's quite impossible under the current regulations.",
+          "zh": "恐怕在现行规定下，这是完全不可能的。"
+        },
+        {
+          "gloss": "adv. 确实；正是（表示赞同）",
+          "logic": "core→确认——赞同对方时，quite 表示「你说得对，正是如此」。",
+          "en": "\"This approach seems risky.\" \"Quite.\"",
+          "zh": "「这个方法似乎有风险。」「确实。」"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "quit",
+          "gloss": "v. 退出；放弃；辞职（同词根 quit- = 清偿/摆脱，quite 源自「彻底摆脱」→「完全」）"
+        },
+        {
+          "w": "acquit",
+          "gloss": "v. 宣判无罪；赦免（ac- = ad- 朝向 + quit 清偿→免罪）"
+        },
+        {
+          "w": "requite",
+          "gloss": "v. 报答；回报（re- 回 + quite→回报，罕用/文学）"
+        }
+      ]
+    },
+    {
+      "word": "quote",
+      "hl": "qu",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/kwoʊt/",
+      "subgroup": "qu",
+      "meaning": "v. 引用；报价  n. 引语；引号；报价",
+      "etymology": "中世纪拉丁语 quotare「标注章节序号」，源自 quot（多少、哪章）= 「标出是哪一章哪一节」→「引用」。与 quota（配额）同根。",
+      "roots": [
+        {
+          "part": "qu- (quot)",
+          "meaning": "多少、哪个（用于标记）"
+        },
+        {
+          "part": "-ote",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "qu /kw/ + ote /oʊt/，分裂式 o…e，词尾哑 e 把 o 拉长成 /oʊ/；与 note、vote、wrote 押韵。",
+      "tip": "quote（v. 引用）的名词是 quotation（引语），口语中常简缩为 quote。「in quotes」= 「加引号」（表示是引用或反讽）。报价义：「Can you give me a quote?」",
+      "examples": [
+        {
+          "en": "The professor quoted extensively from primary sources throughout the lecture.",
+          "zh": "教授在整个讲座中大量引用了第一手文献。",
+          "source": "造句"
+        },
+        {
+          "en": "a famous quote / quote unquote",
+          "zh": "「著名名言 / 所谓的（用于口语表示加引号）」——两个高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "cite",
+          "ipa": "/saɪt/",
+          "note": "「引用（来源）」，比 quote 更学术正式，cite 强调标注出处，quote 强调摘录原文",
+          "gloss": "v. 引用（注明出处）"
+        },
+        {
+          "w": "reference",
+          "ipa": "/ˈrefərəns/",
+          "note": "「参考、引用」，比 quote 更广，包含提及和列举参考资料",
+          "gloss": "v./n. 参考；提到"
+        },
+        {
+          "w": "excerpt",
+          "ipa": "/ˈeksɜːrpt/",
+          "note": "「节选」，作名词指摘录的文字片段，比 quote 更强调截取了一部分",
+          "gloss": "n. 节选；摘录"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "paraphrase",
+          "note": "转述、用自己话说（非直接引用）"
+        }
+      ],
+      "nuance": "quote 强调「直接摘录原话」，cite 强调「标明出处」（可以不是原话），reference 是更广的「提及或参考」。学术写作中三者常并用：quote（引原文）+ cite（标来源）。「misquote」= 引用错误，是学术失范的重要术语。",
+      "core": "用食指指着书里的一行字，说「你看，这里原话就是这么写的」——把别人的话原封不动拿出来，不走样、不改词。核心是「原样复现」。",
+      "senses": [
+        {
+          "gloss": "v. 引用；引述（原文/原话）",
+          "logic": "core→原样复现——从出处中取出原话，保持原样呈现。",
+          "en": "She quoted a passage from Shakespeare to illustrate her point.",
+          "zh": "她引用了莎士比亚的一段话来阐明她的观点。"
+        },
+        {
+          "gloss": "v./n. 报价；开价",
+          "logic": "core→给出一个确定的数字——商家把一个价格「原样」拿出来给你看，像引文一样，是一个明确的陈述。",
+          "en": "They quoted us a price of $5,000 for the renovation.",
+          "zh": "他们给我们报的翻新价格是五千美元。"
+        },
+        {
+          "gloss": "n. 引语；引文；名言",
+          "logic": "core→被引出的那段文字本身——动词的名词化，从「引用」动作变为「被引的语句」。",
+          "en": "This is one of my favorite quotes from Einstein.",
+          "zh": "这是我最喜欢的爱因斯坦名言之一。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "quotation",
+          "gloss": "n. 引语；报价（quote 的正式名词形式）"
+        },
+        {
+          "w": "quota",
+          "gloss": "n. 配额；定额（同根 quot- = 多少/份额）"
+        },
+        {
+          "w": "quotient",
+          "gloss": "n. 商；商数（数学，同根 quot- = 多少→除法结果）"
+        },
+        {
+          "w": "misquote",
+          "gloss": "v./n. 错误引用"
+        }
+      ]
+    },
+    {
+      "word": "square",
+      "hl": "qu",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/skweər/",
+      "subgroup": "qu",
+      "meaning": "n. 正方形；广场；平方  v. 使成直角；（与……）相符；平方  adj. 正方形的；公平的",
+      "etymology": "古法语 esquarre「直角工具」，源自拉丁语 exquadrare = ex-(出) + quadrare(使成四方) = 「切成四方形」。与 quadrant（象限）、quadrangle（四边形）同根——都是「四」。",
+      "roots": [
+        {
+          "part": "s-",
+          "meaning": "（前缀，从法语 es- 简化）"
+        },
+        {
+          "part": "-quare (quadrare)",
+          "meaning": "使成四方形"
+        }
+      ],
+      "phonetics": "sq- /skw/ + are /eər/；注意 sq 是辅音群，s+qu=/skw/，三个辅音连在一起。",
+      "tip": "square deal = 「公平交易」（强调各方对等）。square meal = 「丰盛正餐」（「square」古义「完整、充分的」）。back to square one = 「从头再来」。",
+      "examples": [
+        {
+          "en": "Her explanation didn't quite square with the evidence we had gathered.",
+          "zh": "她的解释与我们收集到的证据并不完全吻合。",
+          "source": "造句"
+        },
+        {
+          "en": "back to square one / a square meal",
+          "zh": "「从头再来 / 丰盛正餐」——两个高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "plaza",
+          "ipa": "/ˈplɑːzə/",
+          "note": "「广场」义的近义词，多指城市商业或公共广场，比 square 更现代",
+          "gloss": "n. 广场（都市商业）"
+        },
+        {
+          "w": "align",
+          "ipa": "/əˈlaɪn/",
+          "note": "「对齐、符合」，对应 square 的「相符」义；align with the facts（与事实一致）",
+          "gloss": "v. 对齐；使一致"
+        },
+        {
+          "w": "quadrant",
+          "ipa": "/ˈkwɒdrənt/",
+          "note": "「象限；四分之一圆」，与 square 同根（quad- = 四），更专业术语",
+          "gloss": "n. 象限；四分之一圆"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "circle",
+          "note": "圆形（形状义）"
+        },
+        {
+          "w": "clash with",
+          "note": "与……矛盾（符合义反义）"
+        }
+      ],
+      "nuance": "square 作动词「相符」时（square with the facts），相当于 align with 或 match；当结果「不 square」时表示逻辑矛盾。作「公平」义（a square deal）比 fair 更强调双方对等、明码实价，是商业谈判语境的高频词。",
+      "core": "四条边一样长、四个角都是直角的方块——站得稳稳当当，不偏不斜，方方面正。核心是「四方端正」，由此长出「公平对等」和「相符合」的比喻义。",
+      "senses": [
+        {
+          "gloss": "n. 正方形；方形物",
+          "logic": "core→几何原形——四边等长、四角直角的平面图形。",
+          "en": "Draw a square with each side measuring five centimeters.",
+          "zh": "画一个每边五厘米的正方形。"
+        },
+        {
+          "gloss": "n. 广场（城市中的方形空地）",
+          "logic": "core→城市场地——城市中间留出的方形大空地，市民聚集的地方。",
+          "en": "There's a lively market in the town square every Saturday.",
+          "zh": "每周六，镇上的广场上都有一个热闹的集市。"
+        },
+        {
+          "gloss": "adj. 公平的；公正的；对等的",
+          "logic": "core→双方对等——像正方形的四条边一样，两边一致、不偏不倚、谁都不占便宜。square deal = 公平交易。",
+          "en": "I expect a square deal from any business partner.",
+          "zh": "我期望任何商业伙伴都能公平交易。"
+        },
+        {
+          "gloss": "v. （使）相符；（使）一致",
+          "logic": "core→对上号——把两件事像正方形对角线一样对齐，看它们是否严丝合缝。square with the facts = 与事实相符。",
+          "en": "His account of events doesn't square with the evidence.",
+          "zh": "他对事件的描述与证据不符。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "squarely",
+          "gloss": "adv. 正对着地；直截了当地"
+        },
+        {
+          "w": "foursquare",
+          "gloss": "adj./adv. 坚定不移的（地）；方方正正的（地）"
+        },
+        {
+          "w": "square root",
+          "gloss": "n. 平方根（数学）"
+        },
+        {
+          "w": "quadrant",
+          "gloss": "n. 象限；四分之一圆（同根 quad- = 四）"
+        }
+      ]
+    },
+    {
+      "word": "equal",
+      "hl": "qu",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈiːkwəl/",
+      "subgroup": "qu",
+      "meaning": "adj. 相等的；平等的  v. 等于；比得上  n. 同等者",
+      "etymology": "拉丁语 aequalis = aequus（平的、相等的）+ -alis（形容词后缀）。与 equator（赤道，「等分」地球）、equitable（公平的）、adequate（足够的）同根——都含「平、等」义。",
+      "roots": [
+        {
+          "part": "equ- (aequus)",
+          "meaning": "平、相等"
+        },
+        {
+          "part": "-al (-alis)",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "e /iː/ + qu /kw/ + al /əl/，重音在首音节；注意 e 读长音 /iː/，而非短音。",
+      "examples": [
+        {
+          "en": "No other composer in that era could equal his technical mastery.",
+          "zh": "那个时代没有作曲家能与他的技术造诣相媲美。",
+          "source": "造句"
+        },
+        {
+          "en": "all else being equal / equal opportunity",
+          "zh": "「其他条件相同的情况下 / 机会平等」——学术和政策语境双高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "equivalent",
+          "ipa": "/ɪˈkwɪvələnt/",
+          "note": "「等值的」，比 equal 更强调功能或价值上的相当，而非数量完全相同；an equivalent amount",
+          "gloss": "adj. 等值的；等价的"
+        },
+        {
+          "w": "identical",
+          "ipa": "/aɪˈdentɪkl/",
+          "note": "「完全相同的」，比 equal 更绝对，强调一模一样；identical twins（同卵双胞胎）",
+          "gloss": "adj. 完全相同的"
+        },
+        {
+          "w": "match",
+          "ipa": "/mætʃ/",
+          "note": "「相匹配、旗鼓相当」，比 equal 更动态，强调在比较中持平",
+          "gloss": "v./n. 匹配；相配"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "unequal",
+          "note": "不平等的"
+        },
+        {
+          "w": "superior",
+          "note": "更优越的"
+        }
+      ],
+      "nuance": "equal 强调「数量或权利上完全相同」，equivalent 强调「功能或价值相当但形式可能不同」（a dollar is not equivalent to a euro），identical 是最绝对的「一模一样」。equal opportunity（机会均等）是政策术语，equivalent experience（同等经验）是招聘术语。",
+      "core": "天平两端完全平衡——指针不偏不倚停在正中间，左边和右边一模一样重。一种「没有谁多谁少、没有谁高谁低」的绝对均等感。",
+      "senses": [
+        {
+          "gloss": "adj. 相等的；相同的（数量/程度）",
+          "logic": "core→天平两边——数量、大小、程度完全一样。",
+          "en": "Divide the cake into eight equal portions.",
+          "zh": "把蛋糕分成相等的八份。"
+        },
+        {
+          "gloss": "adj. 平等的（权利/地位）",
+          "logic": "core→地位对等——不是数量一样，而是价值、尊严、机会一样。天平两端坐着两个身份不同但重量相等的人。",
+          "en": "All citizens are equal before the law.",
+          "zh": "所有公民在法律面前一律平等。"
+        },
+        {
+          "gloss": "v. 等于；与……相当；比得上",
+          "logic": "core→达到同一水平——用某种能力或成就来匹配另一端的标准。",
+          "en": "No other athlete of her generation could equal her record.",
+          "zh": "她那一代没有其他运动员能比得上她的纪录。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "equality",
+          "gloss": "n. 平等；相等"
+        },
+        {
+          "w": "equation",
+          "gloss": "n. 等式；方程式"
+        },
+        {
+          "w": "equator",
+          "gloss": "n. 赤道（等分地球的线）"
+        },
+        {
+          "w": "equivalent",
+          "gloss": "adj./n. 等值的；等价物"
+        },
+        {
+          "w": "equitable",
+          "gloss": "adj. 公平的；公正的"
+        },
+        {
+          "w": "adequate",
+          "gloss": "adj. 足够的；适当的（ad- 朝向 + equ- 平等→达到同等水平）"
+        }
+      ]
+    },
+    {
+      "word": "one",
+      "hl": "o",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/wʌn/",
+      "subgroup": "other",
+      "meaning": "num. 一  pron. 一个；人（泛指）  det. 某一个",
+      "etymology": "古英语 ān「一个」，印欧语根 *oi-no-（一），与拉丁语 unus（一，uni- 前缀之源）、希腊语 oinos（一）同源。one 中的 /w/ 是中古英语语音演变的遗留，字母 o 偷偷发出滑音。",
+      "roots": [
+        {
+          "part": "one（ān）",
+          "meaning": "一个"
+        }
+      ],
+      "phonetics": "o 在此读 /w/ + ʌn——这是英语最特殊的读音之一：字母 o 发出 /w/ 滑音。once、one-off、only（古英语 ānlīc）都源自同一个 ān。",
+      "tip": "one 中的 o 读 /w/ 是历史遗留：中古英语时期，ān 前的软腭辅音演变，o 在 /n/ 前形成 /wʌn/。唯一性：one 是英语中唯一以 /w/ 开头但拼写 o 开头的数词。",
+      "examples": [
+        {
+          "en": "One must take responsibility for one's own choices.",
+          "zh": "人必须对自己的选择负责。",
+          "source": "造句"
+        },
+        {
+          "en": "one-on-one / once and for all",
+          "zh": "「一对一的 / 一劳永逸」——two high-frequency compounds。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "single",
+          "ipa": "/ˈsɪŋɡl/",
+          "note": "「单一的、单个的」，比 one 更强调「只有一个」的排他性；a single mistake（一个错误）",
+          "gloss": "adj. 单一的；单个的"
+        },
+        {
+          "w": "a person",
+          "ipa": "",
+          "note": "one 作泛指代词（One should be careful）可用 a person 替代，比 one 更口语自然",
+          "gloss": "n. 一个人"
+        },
+        {
+          "w": "unity",
+          "ipa": "/ˈjuːnɪti/",
+          "note": "「统一；一体」，是「one」概念的抽象名词，强调合一的状态",
+          "gloss": "n. 统一；一体"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "many",
+          "note": "许多"
+        },
+        {
+          "w": "zero",
+          "note": "零"
+        }
+      ],
+      "nuance": "one 作泛指代词（One never knows）是正式书面用法，美式英语中常用 you 替代（You never know）；英式更倾向保留 one。one 作「某一个」时（one day / one reason）强调不确定中的具体感，比 a/an 更有叙事代入感。",
+      "core": "伸出手，只竖起一根食指，孤零零地立在空气中——没有同伴，独一无二，但正因如此才格外确定。核心是「唯一性」和「单独存在感」。",
+      "senses": [
+        {
+          "gloss": "num./n. 一；一个",
+          "logic": "core→数量为一——宇宙中最基本的数字，一切计数的起点。",
+          "en": "There's only one cookie left in the jar.",
+          "zh": "罐子里只剩一块饼干了。"
+        },
+        {
+          "gloss": "pron. 一个人；任何人（泛指）",
+          "logic": "core→泛指个体——把单独的一个个体拿出来代表所有人。one = 「任何单独的一个人」。",
+          "en": "One should always be honest with oneself.",
+          "zh": "人应当始终对自己诚实。"
+        },
+        {
+          "gloss": "det. 某一个；唯一的",
+          "logic": "core→不确定中的确定——不知道具体是哪一个，但知道「就那一个」。one day = 某一天（不确定是哪天但知道一定是那天）。",
+          "en": "One day, I'll travel around the world.",
+          "zh": "总有一天，我会环游世界。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "only",
+          "gloss": "adj./adv. 唯一的；仅仅（one + -ly = 只有这一个）"
+        },
+        {
+          "w": "alone",
+          "gloss": "adj./adv. 独自的（all + one = 全都是一个）"
+        },
+        {
+          "w": "once",
+          "gloss": "adv./conj. 一次；曾经（one 的属格 ānes→wʌns）"
+        },
+        {
+          "w": "none",
+          "gloss": "pron. 没有一个（no + one）"
+        },
+        {
+          "w": "anyone",
+          "gloss": "pron. 任何人"
+        },
+        {
+          "w": "someone",
+          "gloss": "pron. 某人"
+        }
+      ]
+    },
+    {
+      "word": "once",
+      "hl": "o",
+      "levels": [
+        "非托福"
+      ],
+      "ipa": "/wʌns/",
+      "subgroup": "other",
+      "meaning": "adv. 一次；曾经；一旦  conj. 一旦……就……",
+      "etymology": "古英语 ānes「一次」，是 ān（一）的属格形式。与 one 同源，o 同样读 /w/。词尾 -ce 源自属格后缀，类似于 hence（从此）、since（自从）中的 -ce。",
+      "roots": [
+        {
+          "part": "once（ānes）",
+          "meaning": "一次，ān（一）的属格形"
+        }
+      ],
+      "phonetics": "o 读 /w/ + ʌns；与 one 完全同源，读音规律相同——o 在此特殊读 /w/ 滑音。once /wʌns/ 与 dunce（蠢材）押韵。",
+      "tip": "once 兼作副词（I've been there once）和连词（Once you start, you can't stop）。「at once」= 立刻、同时；「once in a while」= 偶尔；「once upon a time」= 从前（故事开头的固定套语）。",
+      "examples": [
+        {
+          "en": "Once the data is collected, the analysis can begin immediately.",
+          "zh": "一旦数据收集完毕，分析就可以立即开始。",
+          "source": "造句"
+        },
+        {
+          "en": "at once / once in a while / once and for all",
+          "zh": "「立刻；同时 / 偶尔 / 一劳永逸」——三个高频固定短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "formerly",
+          "ipa": "/ˈfɔːrməli/",
+          "note": "「曾经、以前」，比 once 更正式，强调与现在的对比；formerly known as（原名为）",
+          "gloss": "adv. 曾经；以前"
+        },
+        {
+          "w": "previously",
+          "ipa": "/ˈpriːviəsli/",
+          "note": "「此前、之前」，比 once 更强调时间上的先后；previously mentioned（此前提到的）",
+          "gloss": "adv. 此前；之前"
+        },
+        {
+          "w": "as soon as",
+          "note": "「一旦……就」，对应连词义的 once；as soon as 强调时间紧接，once 可更弱化",
+          "gloss": "conj. 一……就……"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "never",
+          "note": "从未"
+        },
+        {
+          "w": "repeatedly",
+          "note": "反复地"
+        }
+      ],
+      "nuance": "once 作「曾经」义时（a once-great empire），强调「现在不再如此」的历史落差；formerly/previously 是更中性的「以前」。once 作连词时（Once you understand it, it's easy），与 as soon as 相近，但 once 更强调「完成某事后，状态随之改变」，as soon as 更强调时间紧接性。",
+      "core": "翻老相册看到一张泛黄的照片——那个瞬间只发生过一次，之后岁月流转、物是人非，但照片里的那一刻永远是那一刻。一种「发生过一次就回不去」的不可逆感。",
+      "senses": [
+        {
+          "gloss": "adv. 一次；一回",
+          "logic": "core→发生次数=1——事件只发生了一次，不是反复的。",
+          "en": "I've only been to Paris once, but I'd love to go back.",
+          "zh": "我只去过一次巴黎，但很希望能再去。"
+        },
+        {
+          "gloss": "adv. 曾经；从前；一度",
+          "logic": "core→过往的某一次——把「一次」放在过去的时间轴上，强调「那时是那样，现在已不同」。",
+          "en": "This building was once the tallest in the city.",
+          "zh": "这座建筑曾经是全市最高的。"
+        },
+        {
+          "gloss": "conj. 一旦……就……",
+          "logic": "core→条件满足那一刻——某件事发生「一次」（完成的那一刻），后面的结果就随之启动。",
+          "en": "Once you understand the basic principle, everything else falls into place.",
+          "zh": "一旦你理解了基本原理，其他一切就都水到渠成了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "once-over",
+          "gloss": "n. 快速查看；粗略检查"
+        },
+        {
+          "w": "once-in-a-lifetime",
+          "gloss": "adj. 一生一次的；千载难逢的"
+        },
+        {
+          "w": "at once",
+          "gloss": "固定短语：立刻；同时"
+        }
+      ]
+    }
+  ]
+}

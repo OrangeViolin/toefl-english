@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>/h/ 清喉擦音 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "h", "combo": "h·wh", "title": "/h/ 清喉擦音", "sound": "/h/", "subtitle": "呼气摩擦声——大多数 h 直接发音，wh+o 读 /h/，少数 h 悄悄沉默", "intro": "/h/ 是英语最轻的辅音，发音只需气流轻冲声门，像轻叹一口气。三个规律一次摸清：①绝大多数 h 在词首或重读音节前直接读 /h/（hat、heart、history）；②wh 在 o 之前也读 /h/ 而非 /w/（who、whole、whom），原因是中古英语 hw- 倒序后 w 先被磁化脱落，只剩 h；③少数拉丁/法语借词 h 完全不发音，须单独记忆（hour、honest、heir）——这类词前置冠词用 an 而非 a，正是 silent h 的试金石。", "subgroups": [{"key": "h", "tag": "h → /h/", "label": "✅ h = /h/", "desc": "词首或重读音节前的 h 几乎都读 /h/：hat、house、happy、help……发音动作：嘴微张，气流摩擦声门，不振动声带。唯一陷阱：非重读音节的 h 可能弱化甚至脱落（'他 = he' 在快速口语中常读 /i/），但这是语流现象，拼写层面 h 始终存在。"}, {"key": "wh", "tag": "wh → /h/（o 前）", "label": "wh = /h/", "desc": "wh 接 o 时读 /h/（who、whole、whose、whom），接其他元音时通常读 /w/（what、when、where、which）。记忆钩：wh+o = /h/ + /uː/，「who」= /huː/。这是中古英语 hw-（hwā「谁」）倒序演变的残留——只有接 o 的几个高频词走了 /h/ 这条路。"}, {"key": "silent", "tag": "h 不发音（特）", "label": "🔇 h 不发音", "desc": "拉丁/法语借词中 h 有时完全沉默：hour /aʊər/、honest /ˈɒnɪst/、honour /ˈɒnər/、heir /er/。这类词的冠词用 an（an hour、an honest person、an heir），因为发音以元音开头。与 silent 页（kn/gn/wr 等）的少量重叠是可接受的——h 不发音是单独的规律陷阱，值得在音位页里专门标注。"}], "rhymeChains": [{"label": "-ome / -ome (/hoʊm/)", "words": ["home", "whole", "hormone"]}, {"label": "-air / -air (/her/)", "words": ["hair", "heir", "harmony"]}, {"label": "-ard / -arsh (/hɑːr/)", "words": ["hard", "harsh", "harbor", "harness"]}], "words": [{"word": "hat", "hl": "h", "levels": ["六级"], "ipa": "/hæt/", "subgroup": "h", "meaning": "n. 帽子（有帽檐的）；身份、职责", "etymology": "古英语 hætt，日耳曼同根，与北欧语 hattr（帽子）同源。比喻义「wear many hats（身兼数职）」由来：帽子代表职业角色，中世纪不同行业的人戴不同款式帽子。", "roots": [{"part": "hat（hætt）", "meaning": "帽子"}], "phonetics": "h /h/ + a /æ/ + t，h 在词首直接发轻擦音，æ 是美式短促「啊」，/hæt/ 一口气打出。", "tip": "「pass the hat」= 募捐，「at the drop of a hat」= 说做就做——两个帽子习语值得背。", "examples": [{"en": "She wore a wide-brimmed hat to protect herself from the sun.", "zh": "她戴着宽边帽遮阳。", "source": "造句"}, {"en": "He wears many hats — teacher, writer, and community organiser.", "zh": "他身兼多职——教师、作家、社区组织者。", "source": "高频搭配"}], "synonyms": [{"w": "cap", "ipa": "/kæp/", "note": "无帽檐或小帽檐的帽子（棒球帽/便帽），hat 通常有帽檐且更正式", "gloss": "便帽（无檐或小檐）"}, {"w": "bonnet", "ipa": "/ˈbɒnɪt/", "note": "英式，有帽带系于下颌的软帽，多见于女性或婴儿", "gloss": "软帽（有系带，女性/婴儿）"}], "antonyms": [], "nuance": "hat 比 cap 更正式，传统上 hat 有帽檐（fedora、top hat），cap 无帽檐或仅有帽舌（baseball cap）；日常口语中两者经常混用。", "core": "一块布或毡做成有檐的盖顶之物——戴在头上，既遮阳又标身份，帽子就是头顶上的角色牌。", "senses": [{"gloss": "n. 帽子（有帽檐的覆盖物）", "logic": "最直白的本义：头顶上的有檐覆盖物，遮阳或装饰", "en": "He tipped his hat as the lady walked past.", "zh": "那位女士走过时，他轻抬帽檐致意。"}, {"gloss": "n. 身份，职责（比喻多个角色）", "logic": "不同的帽子代表不同的职业角色（厨师帽、警帽、礼帽），戴上某顶帽子=进入某个身份", "en": "As a startup founder, she wears many hats — CEO, accountant, and customer support.", "zh": "作为创业公司创始人，她身兼多职——CEO、会计兼客服。"}], "derivatives": [{"w": "hatless", "gloss": "不戴帽子的"}, {"w": "hatter", "gloss": "制帽匠（as mad as a hatter 疯如帽匠）"}, {"w": "top hat", "gloss": "高顶礼帽（正式场合）"}]}, {"word": "house", "hl": "h", "levels": ["六级"], "ipa": "/haʊs/", "subgroup": "h", "meaning": "n. 住宅，房子；议院；家族，王朝  v. /haʊz/ 为……提供住所", "etymology": "古英语 hūs，日耳曼同根，与德语 Haus 同源。派生词：household（家庭）、housing（住房）。注意名词读 /haʊs/，动词读 /haʊz/（s→z 浊化）。", "roots": [{"part": "house（hūs）", "meaning": "庇护所、居所"}], "phonetics": "h /h/ + ou /aʊ/ + se（名词末 s 清音 /s/；动词末 s 浊化 /z/）。名词/动词靠语境+发音区分。", "examples": [{"en": "The museum houses over 50,000 artefacts from ancient civilisations.", "zh": "该博物馆收藏了五万余件古代文明文物（动词义：收容、存放）。", "source": "造句"}, {"en": "bring down the house", "zh": "「博得满堂喝彩」——剧场文化词，观众掌声震响，喻建筑都要塌。", "source": "高频搭配"}], "synonyms": [{"w": "home", "ipa": "/hoʊm/", "note": "home 侧重情感归属（where you belong），house 指物理建筑；「a house is not a home」是经典辨析", "gloss": "家（情感归属，非物理建筑）"}, {"w": "residence", "ipa": "/ˈrezɪdəns/", "note": "正式书面词，指居住场所，多见于法律或官方语境", "gloss": "住所（正式/法律用语）"}, {"w": "dwelling", "ipa": "/ˈdwelɪŋ/", "note": "正式/文学语，泛指任何居住处所，比 house 更抽象", "gloss": "居所（文学/正式，任何居住处）"}], "antonyms": [], "nuance": "house 是客观的物理建筑，home 是主观的情感归属。「I live in a house」描述事实，「This is my home」表达归属感。housing 作不可数名词指「住房（问题/政策）」。", "core": "四面墙加一个顶围出的封闭壳子——能装人、装物、装一个机构，壳子就是保护，壳子就是归属的物理边界。", "senses": [{"gloss": "n. 住宅，房子（物理建筑）", "logic": "最原初的「壳子」：四面墙加屋顶，人住在里面的物理结构", "en": "They bought a small house with a garden in the suburbs.", "zh": "他们在郊区买了一栋带花园的小房子。"}, {"gloss": "n. 议院（政治机构）", "logic": "政治家族的「壳子」——the House of Commons（下议院），议院就是一个机构待的建筑壳", "en": "The bill was passed by the House of Representatives.", "zh": "该法案由众议院通过。"}, {"gloss": "n. 家族，王朝（血缘集团）", "logic": "血缘的「壳子」——一个家族像一个房子，成员都在里面（the House of Windsor 温莎王朝）", "en": "The House of Medici ruled Florence for centuries.", "zh": "美第奇家族统治佛罗伦萨数个世纪。"}, {"gloss": "v. 为……提供住所；容纳，存放", "logic": "把东西或人放进一个「壳子」里保护/存放", "en": "The museum houses one of the finest collections of Asian art.", "zh": "该博物馆收藏了一批最精美的亚洲艺术藏品。"}], "derivatives": [{"w": "housing", "gloss": "住房（不可数，指住房问题/政策/供给）"}, {"w": "household", "gloss": "家庭，一家人（house+hold，撑着一个房子的人）"}, {"w": "housewife", "gloss": "家庭主妇"}]}, {"word": "hand", "hl": "h", "levels": ["六级"], "ipa": "/hænd/", "subgroup": "h", "meaning": "n. 手；指针；（纸牌）一手牌；工人  v. 递，传", "etymology": "古英语 hand，日耳曼同根，与德语 Hand 同源。手是最基本的工具，派生出大量复合词：handmade、handout、firsthand、shorthand。", "roots": [{"part": "hand（hand）", "meaning": "手"}], "phonetics": "h /h/ + an /æn/ + d，单音节，/hænd/ 干净利落。注意 nd 在词尾 d 有轻微不除阻现象。", "tip": "「at hand」= 即将发生；「on hand」= 在场准备好；「out of hand」= 失控——三个介词短语辨清。", "examples": [{"en": "Please hand in your assignments by Friday.", "zh": "请在周五前上交作业。", "source": "高频搭配"}, {"en": "The situation got out of hand before the police arrived.", "zh": "警察到来前局势已经失控。", "source": "造句"}], "synonyms": [{"w": "pass", "ipa": "/pæs/", "note": "「递」义的口语近义，hand sth to sb = pass sth to sb", "gloss": "传递（口语，比 hand 更泛）"}, {"w": "deliver", "ipa": "/dɪˈlɪvər/", "note": "「交付」，比 hand 更正式，含运输或正式移交含义", "gloss": "交付，递送（正式，含运输义）"}], "antonyms": [{"w": "take", "note": "拿走、接收（与递出相对）"}], "nuance": "hand 作动词强调「亲手递交」这一直接动作，pass 更口语也可指传递抽象事物（pass a law），deliver 含运送到目的地的完整过程。", "core": "身体末端那只能抓能握能指的五指工具——人最直接的操作界面，能传递东西、能指方向、能手把手教。", "senses": [{"gloss": "n. 手（身体部位）", "logic": "最物理的本义：手臂末端的五指抓握器官", "en": "She held the baby's tiny hand in hers.", "zh": "她握着宝宝的小手。"}, {"gloss": "n. 指针（钟表）", "logic": "钟表的「手」——像手指一样指向数字，告诉你时间", "en": "The hour hand pointed to three, the minute hand to twelve.", "zh": "时针指向三点，分针指向十二点。"}, {"gloss": "n. （纸牌）一手牌", "logic": "手里抓的一组牌→一手", "en": "She was dealt a terrible hand but still managed to win.", "zh": "她拿到一手烂牌，但居然还是赢了。"}, {"gloss": "n. 工人，人手", "logic": "靠手干活的人——farm hand（农场工人），手=劳动力", "en": "The farm needs extra hands during harvest season.", "zh": "收获季农场需要额外人手。"}, {"gloss": "v. 递，传，交", "logic": "用手把东西从自己传给另一个人——最直接的动作延伸", "en": "Could you hand me the salt, please?", "zh": "请把盐递给我好吗？"}], "derivatives": [{"w": "handy", "gloss": "手边的，便利的；手巧的"}, {"w": "handful", "gloss": "一把（的量）；难管的人/事"}, {"w": "handmade", "gloss": "手工制作的"}, {"w": "beforehand", "gloss": "事先，预先（提前到手）"}]}, {"word": "heart", "hl": "h", "levels": ["六级"], "ipa": "/hɑːrt/", "subgroup": "h", "meaning": "n. 心脏；内心，情感；勇气；核心", "etymology": "古英语 heorte，日耳曼同根，与德语 Herz 同源，印欧词根 *kerd-（心）——同一词根还生出拉丁语 cor（心脏），延伸出 courage（勇气，源自拉丁 cor）、core（核心）、cordial（热情的）。", "roots": [{"part": "heart（heorte）", "meaning": "心脏，核心情感"}], "phonetics": "h /h/ + ear /ɑːr/（美式）+ t，注意 ear 在此不读 /ɪər/ 而读 /ɑːr/（heart ≠ hear+t）。", "examples": [{"en": "She had the heart to keep going despite every setback.", "zh": "尽管屡遭挫折，她仍有勇气坚持下去。", "source": "造句"}, {"en": "at the heart of", "zh": "「位于……的核心」——学术写作高频句式。", "source": "高频搭配"}], "synonyms": [{"w": "core", "ipa": "/kɔːr/", "note": "「核心」义的近义词，与 heart 同出 *kerd- 词根；core 更书面、更物理，heart 更情感化", "gloss": "核心（更中性/技术化，同词根）"}, {"w": "courage", "ipa": "/ˈkɜːrɪdʒ/", "note": "「勇气」义的同源词，拉丁语 cor（心脏）演化而来；courage 是名词，heart 在「have the heart to」结构中也表勇气", "gloss": "勇气（拉丁词根，同源，更正式）"}], "antonyms": [{"w": "periphery", "note": "外围、边缘（核心义相对）"}, {"w": "cowardice", "note": "懦弱（勇气义相对）"}], "nuance": "heart 的「核心」义（the heart of the problem）和 core 几乎可互换，但 heart 带情感温度，core 更中性技术化；courage 是 heart 「勇气」义的拉丁亲戚，语域更正式。", "core": "胸腔正中那颗一刻不停跳动的生命泵——既是让你活着的器官，也是你爱、怕、勇敢的地方。", "senses": [{"gloss": "n. 心脏（器官）", "logic": "最物理的本义：胸腔里推动血液循环的肌肉泵", "en": "The doctor listened to his heart with a stethoscope.", "zh": "医生用听诊器听他的心跳。"}, {"gloss": "n. 内心，情感", "logic": "心脏自古被认为是情感的座位——爱、痛、喜悦都在「心里」", "en": "Her heart was full of gratitude for everyone who had helped her.", "zh": "她心里对每个帮助过她的人充满了感激。"}, {"gloss": "n. 勇气，胆量", "logic": "有心脏就是有胆量——失去勇气叫 lose heart，鼓起勇气叫 take heart", "en": "It takes heart to stand up for what you believe in.", "zh": "坚持自己所信需要勇气。"}, {"gloss": "n. 核心，中心", "logic": "心脏是身体中心→事物的心脏=最核心最关键的部分", "en": "We need to get to the heart of the issue.", "zh": "我们需要触及问题的核心。"}], "derivatives": [{"w": "hearty", "gloss": "热情的，尽情的；丰盛的（饭食）"}, {"w": "hearten", "gloss": "鼓舞，使振作"}, {"w": "heartless", "gloss": "无情的，冷酷的"}, {"w": "heartfelt", "gloss": "衷心的，发自内心的"}]}, {"word": "hair", "hl": "h", "levels": ["六级"], "ipa": "/her/", "subgroup": "h", "meaning": "n. 头发；（动物）体毛；一根毛发", "etymology": "古英语 hǣr，日耳曼同根，与德语 Haar 同源。单根说 a hair，整体说 hair（不可数）。「hairbreadth」（一根头发的宽度）= 极细微的差距，仍是活跃成语。", "roots": [{"part": "hair（hǣr）", "meaning": "毛发"}], "phonetics": "h /h/ + air /er/，发音与 heir /er/ 相同——同音词，靠语境区分。注意 air 在美式读 /er/ 而非 /eər/。", "tip": "hair（头发）与 heir（继承人）发音完全相同 /her/，是一对经典同音词。", "examples": [{"en": "She cut her hair short before the marathon to stay cool.", "zh": "她在马拉松赛前剪短头发保持凉爽。", "source": "造句"}, {"en": "split hairs", "zh": "「吹毛求疵」——在极细枝节上较真，高频批评性习语。", "source": "高频搭配"}], "synonyms": [{"w": "locks", "ipa": "/lɒks/", "note": "诗意/文学的「秀发」，复数形式，强调成束的头发", "gloss": "秀发（诗意/文学，成束头发）"}, {"w": "tresses", "ipa": "/ˈtresɪz/", "note": "长而垂落的头发，文学语，通常指女性长发", "gloss": "长发（文学，女性长垂发）"}], "antonyms": [], "nuance": "hair 是中性通用词，locks/tresses 是文学化表达，带优雅或浪漫色彩；日常谈论发型用 hair，诗歌和小说中常用 locks。", "core": "从头皮钻出来的一根根极细的丝——轻到几乎没有重量，但多了就成造型、少了就让人在意，hairbreadth = 一根头发丝的宽度 = 极细微差距。", "senses": [{"gloss": "n. 头发（集合）", "logic": "长在头上的细丝的集合体，整体为不可数", "en": "She decided to dye her hair dark brown for the winter.", "zh": "她决定冬天把头发染成深棕色。"}, {"gloss": "n. （动物）体毛", "logic": "动物的毛发覆盖——与人的头发同源，都是身体表面长出的细丝", "en": "The dog's hair was matted and tangled after the walk in the rain.", "zh": "雨中散步后，狗的毛缠结成一团。"}, {"gloss": "n. 一根毛发", "logic": "可数的单根细丝——a hair、two hairs，单根之细引申为「极细微」", "en": "There is not a hair of evidence to support that claim.", "zh": "没有丝毫证据支持那个说法。"}], "derivatives": [{"w": "hairy", "gloss": "多毛的；惊险的（口语）"}, {"w": "hairless", "gloss": "无毛的，秃的"}, {"w": "hairstyle", "gloss": "发型"}, {"w": "hairbreadth", "gloss": "极细微的差距（一根头发宽度）"}]}, {"word": "happy", "hl": "h", "levels": ["六级"], "ipa": "/ˈhæpi/", "subgroup": "h", "meaning": "adj. 快乐的；满足的；（表意愿）乐意的", "etymology": "中古英语 hap「运气」（源自古诺尔斯语 happ）→ happy 原义「有好运气的」。同根词：happen（发生=运气来了）、hapless（倒霉的=没运气的）、perhaps（也许=靠运气）。", "roots": [{"part": "hap", "meaning": "运气、机缘"}, {"part": "-py (-ig)", "meaning": "充满……的"}], "phonetics": "HAP-py，重音在首音节，h /h/ + æp + i（弱化成 /i/）。", "tip": "happy = hap（运气）+ py，原义「有好运气的」。happen、perhaps 都是同根词——都在讲「碰上运气」。", "examples": [{"en": "I'm happy to help — just let me know what you need.", "zh": "我很乐意帮忙——告诉我你需要什么。", "source": "造句"}, {"en": "a happy coincidence", "zh": "「凑巧的好事」——保留了 happy 原义「有好运气的」。", "source": "高频搭配"}], "synonyms": [{"w": "content", "ipa": "/kənˈtent/", "note": "「满足的」，比 happy 更低调，强调内心平静的满足，无需刺激", "gloss": "满足的（安静、不渴望更多）"}, {"w": "joyful", "ipa": "/ˈdʒɔɪfl/", "note": "「充满喜悦的」，比 happy 情绪更外显、更强烈", "gloss": "充满喜悦的（情绪更外显强烈）"}, {"w": "glad", "ipa": "/ɡlæd/", "note": "「高兴的」，比 happy 更口语，多用于具体原因（glad you came）", "gloss": "高兴的（口语，因具体事）"}], "antonyms": [{"w": "miserable", "note": "痛苦的"}, {"w": "unhappy", "note": "不快乐的"}], "nuance": "happy 最通用，可指短暂快乐也可描述整体状态；content 是深层安静的满足（没有渴望更多）；joyful 情绪外向、带动感；glad 多指因具体事情而高兴，后接 that/to 从句。", "core": "心里敞亮、嘴角自动上扬的状态——原义更妙：hap 是「运气」，happy = 有好运砸中了你，所以快乐其实是一种「碰上了」的感觉。", "senses": [{"gloss": "adj. 快乐的，高兴的", "logic": "运气来了→心里敞亮、情绪上扬的状态——最通用的快乐", "en": "The children looked happy playing in the garden.", "zh": "孩子们在花园里玩耍，看起来很快乐。"}, {"gloss": "adj. 满足的（对现状满意）", "logic": "有运气=不缺少什么→不渴望更多，安静的满足", "en": "I'm happy with the progress we've made so far.", "zh": "我对目前的进展很满意。"}, {"gloss": "adj. 乐意的（表意愿，愿意做）", "logic": "运气好=心里敞亮→自然愿意去做，happy to help（乐意帮忙）", "en": "I'd be happy to look after the kids while you're out.", "zh": "你出门时我很乐意帮忙照看孩子。"}], "derivatives": [{"w": "happiness", "gloss": "快乐，幸福（名词）"}, {"w": "happily", "gloss": "快乐地，幸福地；幸运地"}, {"w": "happen", "gloss": "发生（hap+en，运气来了→事情发生）"}, {"w": "perhaps", "gloss": "也许（per+hap+s，靠运气→不确定）"}]}, {"word": "help", "hl": "h", "levels": ["六级"], "ipa": "/help/", "subgroup": "h", "meaning": "v. 帮助；促进；（用 can't）避免  n. 帮助；助手", "etymology": "古英语 helpan，日耳曼同根，与德语 helfen 同源。「can't help doing」= 情不自禁，help 此处含「避免」义，是习语化用法。", "roots": [{"part": "help（helpan）", "meaning": "帮助、支援"}], "phonetics": "h /h/ + e /e/ + lp，词尾 lp 连缀，l 轻暗化后 /p/ 轻收。", "examples": [{"en": "Regular exercise helps reduce the risk of cardiovascular disease.", "zh": "定期运动有助于降低心血管疾病风险。", "source": "造句"}, {"en": "I can't help feeling nervous before exams.", "zh": "考试前我情不自禁地紧张。", "source": "高频搭配"}], "synonyms": [{"w": "assist", "ipa": "/əˈsɪst/", "note": "正式书面「协助」，比 help 更强调配合辅助；assist sb with sth（协助某人做某事）", "gloss": "协助（正式，强调配合辅助）"}, {"w": "aid", "ipa": "/eɪd/", "note": "正式书面「援助」，多用于人道主义或医疗语境；foreign aid（外国援助）", "gloss": "援助（正式，人道/医疗救助）"}, {"w": "facilitate", "ipa": "/fəˈsɪlɪteɪt/", "note": "「促进、使更容易」，不直接帮忙而是创造条件；facilitate communication（促进沟通）", "gloss": "促进（创造条件使过程顺畅）"}], "antonyms": [{"w": "hinder", "note": "阻碍（托福高频）"}, {"w": "obstruct", "note": "阻拦、妨碍"}], "nuance": "help 最口语，assist 更正式配合义，aid 多用于大规模援助（humanitarian aid），facilitate 强调「使过程更顺畅」而非直接做。「help do」和「help to do」均正确，美式口语偏省略 to。", "core": "伸出援手把人往上托一把——不是替代你做，而是在你的力量之外补一点推力，让那个缺口变小。", "senses": [{"gloss": "v. 帮助，援助", "logic": "最直白：伸出援手，让人/事变得更好、更容易", "en": "Could you help me move this table to the other side of the room?", "zh": "你能帮我把这张桌子搬到房间另一边吗？"}, {"gloss": "v. 促进，有助于", "logic": "帮一把→让某事更容易发生、进展更快", "en": "Drinking plenty of water helps improve concentration.", "zh": "多喝水有助于提高注意力。"}, {"gloss": "v. 避免，忍住（can't help doing）", "logic": "帮不了自己=控制不住自己→忍不住做某事（习语化）", "en": "I can't help laughing every time I see that video.", "zh": "每次看到那个视频我都忍不住笑。"}, {"gloss": "n. 帮助；帮手", "logic": "动词转名词：援助的行为或提供援助的人/物", "en": "Your advice was a great help — thank you.", "zh": "你的建议帮了大忙——谢谢。"}], "derivatives": [{"w": "helpful", "gloss": "有帮助的，有用的"}, {"w": "helpless", "gloss": "无助的，无依无靠的"}, {"w": "helper", "gloss": "帮手，助手"}, {"w": "helping", "gloss": "一份（食物）；帮助的（a helping hand）"}]}, {"word": "heritage", "hl": "h", "levels": ["托福"], "ipa": "/ˈherɪtɪdʒ/", "subgroup": "h", "meaning": "n. 遗产（文化/历史的）；传统；世袭财产", "etymology": "古法语 heritage = hériter（继承）+ -age，源自拉丁语 hereditare（继承）← heres（继承人）。与 heir（继承人）、inherit（继承）、hereditary（遗传的）同根——都围绕「传承下来的东西」。", "roots": [{"part": "herit- (heres)", "meaning": "继承人、遗产"}, {"part": "-age", "meaning": "状态/集合名词后缀"}], "phonetics": "HER-i-tage，重音首音节，h /h/ + er /er/ + i /ɪ/ + tage /tɪdʒ/。注意不是 /ˈherɪteɪdʒ/，结尾是 /tɪdʒ/。", "examples": [{"en": "The ancient temple is part of the country's cultural heritage.", "zh": "这座古庙是该国文化遗产的一部分。", "source": "造句"}, {"en": "UNESCO World Heritage Site", "zh": "「联合国教科文组织世界遗产地」——托福阅读高频语境词。", "source": "高频搭配"}], "synonyms": [{"w": "legacy", "ipa": "/ˈleɡəsi/", "note": "「遗留之物」，可指有形财产或无形影响；legacy 偏个人，heritage 偏集体文化", "gloss": "遗留之物（偏个人影响/遗产）"}, {"w": "tradition", "ipa": "/trəˈdɪʃn/", "note": "「传统」，强调代代相传的做法，比 heritage 更强调活态实践", "gloss": "传统（强调活态实践，代代做）"}, {"w": "inheritance", "ipa": "/ɪnˈherɪtəns/", "note": "「继承（物）」，偏法律和经济义，指直接继承的有形财产", "gloss": "继承物（偏法律/经济，有形财产）"}], "antonyms": [], "nuance": "heritage 强调集体共享的历史文化遗存（cultural/national heritage），legacy 可指个人留下的影响或遗产（her legacy to science），inheritance 最具体，指合法继承的财产或基因遗传。", "core": "从上一代人手里接过来、带着时间重量的东西——不是你自己挣的，是传下来的，有一根看不见的链条把你和过去连在一起。", "senses": [{"gloss": "n. 遗产（文化/历史，集体继承）", "logic": "前人留下来的文化、建筑、知识等集体财富，一代代接过来", "en": "Traditional tea ceremonies are an important part of Japan's cultural heritage.", "zh": "传统茶道是日本文化遗产的重要组成部分。"}, {"gloss": "n. 传统（代代相传的实践）", "logic": "遗产中活态的部分：不是死物，是还在被做的、一代代做的事", "en": "The festival is a heritage that has been kept alive for over 500 years.", "zh": "这个节庆是一项传承了500多年的传统。"}, {"gloss": "n. 世袭财产（法律意义上的继承物）", "logic": "最接近法律义：可以写在遗嘱里、传给下一代的有形或无形财产", "en": "She received a substantial heritage from her grandfather's estate.", "zh": "她从祖父的遗产中获得了一大笔继承。"}], "derivatives": [{"w": "inherit", "gloss": "继承（动词，从上一代接收）"}, {"w": "hereditary", "gloss": "遗传的；世袭的（形容词）"}, {"w": "heir", "gloss": "继承人（继承的人）"}, {"w": "heritage site", "gloss": "遗产地（UNESCO World Heritage Site）"}]}, {"word": "habitat", "hl": "h", "levels": ["托福"], "ipa": "/ˈhæbɪtæt/", "subgroup": "h", "meaning": "n. （动植物的）自然栖息地；（人的）惯常居住环境", "etymology": "拉丁语 habitat「它居住」，是 habitare（居住）的第三人称单数现在时——直接从动词形式借入！与 habit（习惯，habitare 的缩略）、inhabit（居住于）、inhabitable 同根。", "roots": [{"part": "habit- (habitare)", "meaning": "居住、栖息"}, {"part": "-at", "meaning": "拉丁语第三人称单数（它居住）"}], "phonetics": "HAB-i-tat，重音首音节，h /h/ + æb + ɪ + tæt，两个 /æ/ 都是清晰短元音。", "examples": [{"en": "Deforestation is destroying the natural habitat of many endangered species.", "zh": "森林砍伐正在毁坏许多濒危物种的自然栖息地。", "source": "造句"}, {"en": "habitat loss / habitat destruction", "zh": "「栖息地丧失 / 栖息地破坏」——生态环境类托福阅读核心词组。", "source": "高频搭配"}], "synonyms": [{"w": "environment", "ipa": "/ɪnˈvaɪrənmənt/", "note": "「环境」，比 habitat 更宽泛，可指自然或社会环境；habitat 专指生物栖居的自然环境", "gloss": "环境（更宽泛，可人文可自然）"}, {"w": "ecosystem", "ipa": "/ˈiːkoʊsɪstəm/", "note": "「生态系统」，比 habitat 更强调生物与环境的互动整体", "gloss": "生态系统（强调整体互动）"}, {"w": "niche", "ipa": "/nɪtʃ/", "note": "「生态位」，指物种在生态系统中的功能定位，比 habitat 更精确（生物学术语）", "gloss": "生态位（物种在系统中的功能定位，更精确）"}], "antonyms": [], "nuance": "habitat 是物种实际栖居的物理空间，niche 是物种在生态系统中的角色和资源位置（spatial habitat + functional role），ecosystem 是整个生态共同体。", "core": "一个物种自然而然地落脚、安家、一代代活下来的地方——不是随便找的，是进化选中了它、它也养活了物种，彼此嵌合。", "senses": [{"gloss": "n. （动植物的）自然栖息地", "logic": "最本义：物种在自然界中生存繁衍的地理空间——进化嵌合的结果", "en": "Pandas are losing their natural habitat due to deforestation.", "zh": "由于森林砍伐，大熊猫正在失去它们的自然栖息地。"}, {"gloss": "n. （人的）惯常居住环境", "logic": "把人比作动物：人也有一块习惯待着、感觉自在的地方", "en": "The café was his natural habitat — he spent every afternoon there writing.", "zh": "那家咖啡馆就是他的天然栖息地——每天下午他都在那里写作。"}], "derivatives": [{"w": "habit", "gloss": "习惯（habitare「居住」→反复做同一件事的地方→习惯）"}, {"w": "inhabit", "gloss": "居住于（in+habit，住进去）"}, {"w": "inhabitant", "gloss": "居民，栖息动物（住在某地的人/动物）"}, {"w": "cohabit", "gloss": "同居（co+habit，共同居住）"}]}, {"word": "harmony", "hl": "h", "levels": ["托福"], "ipa": "/ˈhɑːrməni/", "subgroup": "h", "meaning": "n. 和声；和谐，融洽；一致，协调", "etymology": "希腊语 harmonia「接合、和谐」← harmos「接头、关节」，与 arm（武器的接合部）同根。原指音乐中音符的完美衔接，后扩展到任何和谐状态。", "roots": [{"part": "harmon- (harmonia)", "meaning": "接合、和谐"}, {"part": "-y", "meaning": "抽象名词后缀"}], "phonetics": "HAR-mo-ny，重音首音节，h /h/ + ɑːr + mə + ni，最后两音节弱读。", "examples": [{"en": "The two cultures learned to coexist in harmony over generations.", "zh": "两种文化历经数代学会和谐共处。", "source": "造句"}, {"en": "in harmony with nature", "zh": "「与自然和谐相处」——环境类写作高频句式。", "source": "高频搭配"}], "synonyms": [{"w": "accord", "ipa": "/əˈkɔːrd/", "note": "「协调一致」，比 harmony 更正式，多用于国际关系和协议；in accord with（与……一致）", "gloss": "一致，协调（正式，多用于国际关系）"}, {"w": "balance", "ipa": "/ˈbæləns/", "note": "「平衡」，比 harmony 更强调各方势力/要素的等量均衡", "gloss": "平衡（强调各方等量均衡）"}, {"w": "concord", "ipa": "/ˈkɒŋkɔːrd/", "note": "正式文学语「和睦、协调」，多见于政治和国际关系语境", "gloss": "和睦，协调（正式文学语，政治语境）"}], "antonyms": [{"w": "discord", "note": "不和、冲突"}, {"w": "conflict", "note": "冲突、对立"}], "nuance": "harmony 来自音乐，暗示各不同元素配合出美妙整体（racial harmony 种族和谐）；accord 强调意见一致（in accord = in agreement）；balance 强调量的均等而非质的和谐。", "core": "不同元素像音符一样拼在一起，不打架反而更美——原义是木匠把榫头接合得严丝合缝，不松不紧，刚好咬住。", "senses": [{"gloss": "n. 和声（音乐）", "logic": "多个不同音高同时响起但不刺耳，像木匠把不同木头接合成一个整体", "en": "The choir sang in perfect harmony, each voice blending into one.", "zh": "合唱团唱出了完美的和声，每个声部融成一体。"}, {"gloss": "n. 和谐，融洽（人际关系/社会）", "logic": "不同的人/群体像音符一样不打架，和平共处", "en": "People of different faiths have lived in harmony here for centuries.", "zh": "不同信仰的人们在这里和谐共处了几个世纪。"}, {"gloss": "n. 一致，协调（观点/设计）", "logic": "各个要素之间步调一致、不冲突——不再只是和平，而是配合得很好", "en": "The architect achieved a rare harmony between modern design and the natural landscape.", "zh": "建筑师在现代设计与自然景观之间实现了难得的协调一致。"}], "derivatives": [{"w": "harmonious", "gloss": "和谐的，协调的（形容词）"}, {"w": "harmonize", "gloss": "使和谐，协调（动词）"}, {"w": "harmonic", "gloss": "和声的；谐波的（音乐/物理术语）"}, {"w": "disharmony", "gloss": "不和谐，失调"}]}, {"word": "harsh", "hl": "h", "levels": ["托福"], "ipa": "/hɑːrʃ/", "subgroup": "h", "meaning": "adj. 严酷的，苛刻的；（声音）刺耳的；（感官）令人不舒服的", "etymology": "中世纪英语 harsk，来自低地德语或斯堪的纳维亚语，原指粗糙的质感，后扩展到声音刺耳、气候恶劣、性格苛刻等各类令人难受的感知。", "roots": [{"part": "harsh（harsk）", "meaning": "粗糙、刺激、严酷"}], "phonetics": "h /h/ + ar /ɑːr/ + sh /ʃ/，单音节，重读饱满；注意 sh 收尾，不是 /s/。", "examples": [{"en": "The committee received harsh criticism for its handling of the crisis.", "zh": "委员会因处理危机不当而受到严厉批评。", "source": "造句"}, {"en": "harsh winter conditions / a harsh tone of voice", "zh": "「严酷的冬季 / 尖厉的语气」——两个感官域的高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "severe", "ipa": "/sɪˈvɪər/", "note": "「严厉的」，比 harsh 更书面正式，多用于惩罚和规定；a severe penalty（严厉惩罚）", "gloss": "严厉的（更书面，多用于惩罚规定）"}, {"w": "stern", "ipa": "/stɜːrn/", "note": "「严肃的、不苟言笑的」，多描述人的表情或态度，比 harsh 中性略轻", "gloss": "严肃的，不苟言笑的（偏态度表情）"}, {"w": "brutal", "ipa": "/ˈbruːtl/", "note": "「残酷无情的」，比 harsh 强度更大，含暴力或残忍意味", "gloss": "残酷无情的（强度最大，含暴力意味）"}], "antonyms": [{"w": "gentle", "note": "温柔的、轻和的"}, {"w": "mild", "note": "温和的"}], "nuance": "harsh 侧重令感官不舒适（刺耳声音、恶劣气候）或过于苛刻（harsh judgment），severe 更抽象，强调程度极大（severe storm、severe punishment），brutal 含残忍甚至残酷之意，程度最深。", "core": "像砂纸刮过皮肤一样的粗糙刺痛感——不是温柔地提醒，是直接让你不舒服：声音刺耳、气候酷烈、话说的太狠，全都是这种感觉。", "senses": [{"gloss": "adj. 严酷的，苛刻的（对待/规则）", "logic": "像砂纸一样不留情面——批评、惩罚、规则太狠", "en": "The judge handed down a harsh sentence for a first-time offender.", "zh": "法官对初犯者下了严厉的判决。"}, {"gloss": "adj. 刺耳的（声音）", "logic": "砂纸刮在耳朵上的感觉——声音不悦耳、尖锐粗糙", "en": "The harsh sound of the alarm jolted everyone awake.", "zh": "刺耳的警报声把所有人惊醒。"}, {"gloss": "adj. （感官上）令人不舒服的（气候/光线/化学品等）", "logic": "砂纸刮在任何感官上——气候太冷太热、光线太刺眼、化学品太刺激", "en": "The harsh winter winds made it impossible to stay outside for long.", "zh": "严酷的冬风让人无法在户外久留。"}], "derivatives": [{"w": "harshly", "gloss": "严厉地，刺耳地（副词）"}, {"w": "harshness", "gloss": "严酷，刺耳（名词）"}]}, {"word": "haven", "hl": "h", "levels": ["托福"], "ipa": "/ˈheɪvn/", "subgroup": "h", "meaning": "n. 避难所，庇护所；港湾", "etymology": "古英语 hæfen「港口」，与 harbor（港口）同根，也与 heaven（天堂）在字形上相近但词源不同。「港口」原是船只的安全庇护所，引申为任何安全处所。", "roots": [{"part": "haven（hæfen）", "meaning": "港口、安全庇护地"}], "phonetics": "HAY-ven，h /h/ + eɪ + vn（v + 弱化的 /ə/ + n）。", "tip": "haven（避难所）vs heaven（天堂）——字形相差一个 e，发音分别是 /ˈheɪvn/ 和 /ˈhevn/，是高频拼写陷阱。", "examples": [{"en": "The library became a haven for students during the heatwave.", "zh": "热浪期间，图书馆成了学生们的避暑庇护所。", "source": "造句"}, {"en": "a tax haven", "zh": "「避税天堂」——财经托福高频复合词。", "source": "高频搭配"}], "synonyms": [{"w": "refuge", "ipa": "/ˈrefjuːdʒ/", "note": "「避难所」，比 haven 更强调逃离危险，多用于政治难民语境", "gloss": "避难所（强调逃离危险，偏政治难民语境）"}, {"w": "sanctuary", "ipa": "/ˈsæŋktʃueri/", "note": "「圣所、避难地」，比 haven 更正式，可指动物保护区或宗教庇护所", "gloss": "圣所，避难地（正式，带神圣不可侵犯色彩）"}, {"w": "shelter", "ipa": "/ˈʃeltər/", "note": "「庇护、遮蔽处」，比 haven 更物理，可指实际的建筑遮蔽", "gloss": "遮蔽处（最物理，实际建筑遮蔽）"}], "antonyms": [{"w": "danger zone", "note": "危险地带"}, {"w": "threat", "note": "威胁"}], "nuance": "haven 强调安全感和庇护（a haven of peace），refuge 强调逃离威胁（seek refuge），sanctuary 带神圣不可侵犯的色彩（wildlife sanctuary），shelter 最具体，指物理的遮蔽结构。", "core": "风暴中船一开进去就安全了的那个港口——四周有天然的遮挡，风浪被挡在外面，你在里面可以喘口气。", "senses": [{"gloss": "n. 避难所，庇护所", "logic": "船的避风港→任何为人提供安全和保护的地方，逃离危险/压力", "en": "The small village was a haven for artists fleeing the chaos of the city.", "zh": "这个小村庄是逃离城市喧嚣的艺术家们的庇护所。"}, {"gloss": "n. 港湾（原义/地理义）", "logic": "最物理的本义：自然形成或人工建造的避风港口", "en": "The bay is a natural haven, sheltered from storms by surrounding cliffs.", "zh": "这个海湾是一个天然避风港，四周悬崖遮挡风暴。"}], "derivatives": [{"w": "safe haven", "gloss": "安全港，避风港（金融/法律/军事术语，高频）"}, {"w": "tax haven", "gloss": "避税天堂（低税或免税的司法管辖区）"}, {"w": "harbor", "gloss": "港口；庇护（同根词，古英语 haefen→harbor/haven 分叉）"}]}, {"word": "hinder", "hl": "h", "levels": ["托福"], "ipa": "/ˈhɪndər/", "subgroup": "h", "meaning": "v. 阻碍，妨碍（使进展变慢）", "etymology": "古英语 hindrian「阻止向后」，来自 hinder（后面的）。核心义是「把人推回去」——与进步方向相反。同族词：hindrance（障碍），hind（后面的）。", "roots": [{"part": "hind-", "meaning": "后方的、阻拦的"}, {"part": "-er", "meaning": "动词后缀"}], "phonetics": "HIN-der，重音首音节，h /h/ + ɪn + dər（弱读 /dər/）。", "examples": [{"en": "Poor infrastructure continues to hinder economic development in the region.", "zh": "基础设施落后持续阻碍该地区的经济发展。", "source": "造句"}, {"en": "hinder progress / hinder sb from doing", "zh": "「阻碍进展 / 妨碍某人做某事」——两种固定搭配。", "source": "高频搭配"}], "synonyms": [{"w": "obstruct", "ipa": "/əbˈstrʌkt/", "note": "「阻挡」，比 hinder 更强调物理性的完全封堵，有时含故意之意", "gloss": "阻挡（更强调物理性或故意封堵）"}, {"w": "impede", "ipa": "/ɪmˈpiːd/", "note": "「妨碍、阻碍」，与 hinder 语义最近，比 hinder 更正式，托福写作常见", "gloss": "妨碍，阻碍（与 hinder 最近义，更书面）"}, {"w": "hamper", "ipa": "/ˈhæmpər/", "note": "「束缚、妨碍」，强调使人行动受限、难以发挥，比 hinder 更强调羁绊感", "gloss": "束缚，妨碍（强调如绳索缠绕般的牵制感）"}], "antonyms": [{"w": "facilitate", "note": "促进、推动"}, {"w": "help", "note": "帮助"}], "nuance": "hinder 强调减慢速度或使进展受阻（hinder growth）；obstruct 更强调物理或刻意阻断（obstruct justice 妨碍司法）；impede 与 hinder 最接近但更书面；hamper 强调如绳索缠绕般的限制感（hampered by regulations）。", "core": "有一只看不见的手从后面拉住你的衣角，你不至于完全停下，但每一步都比原来费力——来自古英语 hinder「后面的」，就是把方向往后拽。", "senses": [{"gloss": "v. 阻碍，妨碍（使进展变慢）", "logic": "从后面拉住→让你每一步都变慢变费力，但没完全堵死", "en": "Language barriers can hinder effective communication between team members.", "zh": "语言障碍可能妨碍团队成员之间的有效沟通。"}], "derivatives": [{"w": "hindrance", "gloss": "障碍，妨碍物（名词）"}, {"w": "hind", "gloss": "后面的（形容词，hind legs 后腿）"}, {"w": "behind", "gloss": "在后面（be+hind）"}]}, {"word": "who", "hl": "wh", "levels": ["六级"], "ipa": "/huː/", "subgroup": "wh", "meaning": "pron. 谁（主格）；……的人（关系代词）", "etymology": "古英语 hwā「谁」，印欧词根 *kwo-（疑问词根）。中古英语 hw- 倒序变 wh-，又因接 o 时 w 脱落，只剩 /h/ 发音。同根：what、when、where、which——但那些 wh 接非 o 元音，读 /w/。", "roots": [{"part": "who（hwā）", "meaning": "谁，哪个人"}], "phonetics": "wh 接 o → /h/，整词读 /huː/。与 whom /huːm/、whose /huːz/ 同一规律，区别于 what /wɒt/（wh 接 a，读 /w/）。", "tip": "记忆口诀：wh+o 的大家族（who/whom/whose/whole）全读 /h/，其余 wh 词（what/when/where/which）读 /w/。", "examples": [{"en": "Who is responsible for the final decision?", "zh": "谁负责最终决定？", "source": "造句"}, {"en": "the man who invented the telephone", "zh": "「发明电话的人」——关系代词用法，指人用 who 而非 which。", "source": "高频搭配"}], "synonyms": [], "antonyms": [], "nuance": "主格用 who（who did it?），宾格用 whom（to whom?）——口语中 whom 已普遍被 who 替代，但书面正式场合仍需区分。", "core": "在人群中锁定那一个人的目光——你问「是谁？」时，是指向一个未知的身影；你说「那个……的人」时，是帮听者把视线聚焦到那个人身上。", "senses": [{"gloss": "pron. 谁（疑问代词，主格）", "logic": "眼睛扫过人群，锁定一个未知的脸孔——问他的身份", "en": "Who left the door unlocked last night?", "zh": "昨晚谁没锁门？"}, {"gloss": "pron. ……的人（关系代词，引导定语从句）", "logic": "不是问，而是限：帮你把范围收窄到「那个人」——the one who...", "en": "She is the kind of teacher who makes every student feel valued.", "zh": "她是那种让每个学生都感到被重视的老师。"}], "derivatives": [{"w": "whoever", "gloss": "无论谁，任何人"}, {"w": "whom", "gloss": "谁（宾格，口语中常被 who 替代）"}, {"w": "whose", "gloss": "谁的（所有格）"}]}, {"word": "whole", "hl": "wh", "levels": ["六级"], "ipa": "/hoʊl/", "subgroup": "wh", "meaning": "adj. 整体的，全部的  n. 整体，全部  adv. 完全地", "etymology": "古英语 hāl「完整、健康」，与 health（健康）、heal（治愈）、holy（神圣的，本义「完整纯粹的」）同根。「完整无损」是 whole 的核心义。", "roots": [{"part": "whole（hāl）", "meaning": "完整、未受损的"}], "phonetics": "wh 接 o → /h/；e 词尾不发音，ol = /oʊl/。整词 /hoʊl/。注意与 hole /hoʊl/ 同音——同音词！", "tip": "whole（完整）与 hole（洞）发音完全相同 /hoʊl/。whole = hāl（完整）；hole = 「缺少的地方」，意义恰好相反。", "examples": [{"en": "She spent the whole day studying for the exam without a break.", "zh": "她花了整整一天不间断地备考。", "source": "造句"}, {"en": "on the whole", "zh": "「总体而言、大体上」——学术写作中常用的转折过渡词。", "source": "高频搭配"}], "synonyms": [{"w": "entire", "ipa": "/ɪnˈtaɪər/", "note": "「全部的」，与 whole 最近义，但 entire 强调「每一部分」都包含，whole 强调完整无缺", "gloss": "全部的（强调无一例外，每一部分）"}, {"w": "complete", "ipa": "/kəmˈpliːt/", "note": "「完整的」，强调已填满（无欠缺），比 whole 稍偏书面", "gloss": "完整的（强调已填满，无欠缺）"}, {"w": "total", "ipa": "/ˈtoʊtl/", "note": "「总计的」，侧重数量的全部相加，比 whole 更偏数字化", "gloss": "总计的（侧重数量的全部相加，数字化）"}], "antonyms": [{"w": "partial", "note": "部分的"}, {"w": "incomplete", "note": "不完整的"}], "nuance": "whole 强调完整性（the whole picture 全貌），entire 强调无一例外（the entire team 所有成员），complete 强调无所欠缺（a complete set 完整套装），total 强调数量总和（total cost 总费用）。", "core": "一个东西完好无损、没有缺口、没有裂缝——像一个完整的蛋，没破也没少一块，所有的部分都在。", "senses": [{"gloss": "adj. 整体的，全部的", "logic": "没有被分割、没有缺损——每个部分都在原位", "en": "We spent the whole weekend renovating the kitchen.", "zh": "我们花了整个周末翻新厨房。"}, {"gloss": "n. 整体，全部", "logic": "所有部分合并在一起的完整事物——the whole is greater than the sum of its parts", "en": "The whole of the company was affected by the restructuring.", "zh": "整个公司都受到了重组的影响。"}, {"gloss": "adv. 完全地（口语）", "logic": "强调全部、无遗漏——a whole new level（一个全新的层次）", "en": "That's a whole different problem altogether.", "zh": "那完全是另一个问题了。"}], "derivatives": [{"w": "wholly", "gloss": "完全地，全部地（副词，注意拼写：whole+ly→wholly，去e）"}, {"w": "wholesome", "gloss": "有益健康的；健全的（whole+some，使人完整的）"}, {"w": "heal", "gloss": "治愈（同根词，古英语 hāl「完整」→ hal→heal，使恢复完整）"}, {"w": "health", "gloss": "健康（同根词，hāl→health，身体完整无损的状态）"}]}, {"word": "whose", "hl": "wh", "levels": ["六级"], "ipa": "/huːz/", "subgroup": "wh", "meaning": "pron. 谁的（疑问）；……的（关系代词，可指人或物）", "etymology": "古英语 hwæs（hwā 的属格形式），与 who 同源。wh+o 规律同样适用：/huːz/。关键语法点：whose 可以修饰人（the student whose paper won）也可修饰物（the building whose roof collapsed），这一点常被误解为只能修饰人。", "roots": [{"part": "whose（hwæs）", "meaning": "谁的（属格）"}], "phonetics": "wh 接 o → /h/；ose = /uːz/。整词 /huːz/，与 who's（= who is）发音完全相同。", "tip": "whose（谁的/所有格）与 who's（who is 缩写）是同音词，区别只在写法：whose 是所有格代词，who's 是缩略形式。", "examples": [{"en": "Whose idea was it to start the project in the first place?", "zh": "最初是谁提出这个项目的？", "source": "造句"}, {"en": "the author whose novels have sold millions worldwide", "zh": "「小说全球销量达数百万册的那位作家」——关系代词修饰人的高频句式。", "source": "高频搭配"}], "synonyms": [], "antonyms": [], "nuance": "whose 是 who/which 的所有格，可修饰人（whose dream）或物（the car whose engine failed）；of which 可替换后者但更正式（the car of which the engine failed）——学术写作两种均可。", "core": "在所有人和所有物之间拉一根归属的线——不是在问「是谁」，而是在问「属于谁」，或者「那个……属于他的人/它」。", "senses": [{"gloss": "pron. 谁的（疑问所有格）", "logic": "问归属关系：这个东西和哪个人连在一起？", "en": "Whose bag is this? It was left in the conference room.", "zh": "这是谁的包？被落在会议室了。"}, {"gloss": "pron. ……的（关系代词所有格，可指人或物）", "logic": "不是问归属，而是标明归属：那个……属于他的人/它", "en": "The author whose book changed my life is giving a talk tonight.", "zh": "那本改变了我人生的书的作者今晚要演讲。"}], "derivatives": [{"w": "who", "gloss": "谁（主格）"}, {"w": "whom", "gloss": "谁（宾格）"}, {"w": "whoever", "gloss": "无论谁的（whoever's）"}]}, {"word": "hour", "hl": "h", "levels": ["六级"], "ipa": "/aʊər/", "subgroup": "silent", "meaning": "n. 小时；（特定的）时刻；时段", "etymology": "古法语 hore，源自拉丁语 hora，来自希腊语 hōra「季节、时间」。h 在法语借词中不发音，这一特点随词进入英语并保留至今——正是 an hour（而非 a hour）的原因。", "roots": [{"part": "hour（hora）", "meaning": "时间、季节"}], "phonetics": "h 完全不发音，实际读音从 /aʊər/ 开始——以元音开头，所以冠词用 an（an hour）。这是 silent h 的最重要测试词。", "tip": "「an hour」是考察 silent h 的经典题——h 不发，词以 /aʊ/ 开头，故用 an。类推：an honest answer，an heir to the throne。", "examples": [{"en": "It takes about an hour to drive from here to the airport.", "zh": "从这里开车去机场大约需要一小时。", "source": "造句"}, {"en": "in one's finest hour", "zh": "「在某人最辉煌的时刻」——丘吉尔名句「This was their finest hour」的用法。", "source": "高频搭配"}], "synonyms": [{"w": "period", "ipa": "/ˈpɪəriəd/", "note": "「时段」义的泛化近义，比 hour 不限于 60 分钟", "gloss": "时段（泛化，不限60分钟）"}, {"w": "moment", "ipa": "/ˈmoʊmənt/", "note": "「时刻」，比 hour 短暂，偏指特定瞬间；his finest moment（他最精彩的时刻）", "gloss": "时刻（比 hour 短暂，偏特定瞬间）"}], "antonyms": [], "nuance": "hour 是精确的 60 分钟计时单位；moment 指极短瞬间；period 泛指任何长短的时段。「in his finest hour」是比喻义（最辉煌时刻），不必真是 60 分钟。", "core": "钟面上一根针走过的那一段弧——一个被切成等分的固定时间段，60分钟就是一个圆，圆里面可以发生很多事，也可以什么都不发生。", "senses": [{"gloss": "n. 小时（时间单位，60分钟）", "logic": "最精确的本义：钟表上划分出的60分钟等分单元", "en": "The meeting lasted two hours longer than scheduled.", "zh": "会议比原定时间多开了两个小时。"}, {"gloss": "n. （特定的）时刻，时分", "logic": "不再是一段长度，而是一个有特殊意义的时间点——the hour of decision（决断的时刻）", "en": "In the country's darkest hour, ordinary citizens became heroes.", "zh": "在国家最黑暗的时刻，普通公民成了英雄。"}, {"gloss": "n. 时段（不限60分钟，泛指一段以小时计的时间）", "logic": "从精确单位松弛为「一段以小时为单位的时间」——office hours（办公时间）", "en": "The museum's opening hours are from 10 a.m. to 6 p.m.", "zh": "博物馆开放时间为上午10点至下午6点。"}], "derivatives": [{"w": "hourly", "gloss": "每小时的；按小时计的（副词/形容词）"}, {"w": "hourglass", "gloss": "沙漏（计时器，沙子漏完一小时）"}]}, {"word": "honest", "hl": "h", "levels": ["六级"], "ipa": "/ˈɒnɪst/", "subgroup": "silent", "meaning": "adj. 诚实的，坦率的；正直的；（口语）确实的", "etymology": "拉丁语 honestus = honor（荣誉）+ -estus（充满……的）= 「充满荣誉的」。在罗马，诚实是维护荣誉的品质——故 honest 从「有荣誉的」变成「诚实的」。h 作为法语借词进入英语后保持不发音。", "roots": [{"part": "hon- (honor)", "meaning": "荣誉"}, {"part": "-est/-estus", "meaning": "充满……的（形容词后缀）"}], "phonetics": "h 不发音，读 /ˈɒnɪst/（美式 /ˈɑːnɪst/）。冠词用 an（an honest person）。注意：发音从 /ɒ/ 开始。", "examples": [{"en": "To be honest, I have no idea how to fix this.", "zh": "说实话，我完全不知道怎么解决这个问题。", "source": "造句"}, {"en": "an honest mistake", "zh": "「无心之过」——表示不是故意犯的错误，高频表达。", "source": "高频搭配"}], "synonyms": [{"w": "sincere", "ipa": "/sɪnˈsɪər/", "note": "「真诚的」，比 honest 更强调情感上的真实无伪，不含欺骗", "gloss": "真诚的（情感上真实无伪）"}, {"w": "candid", "ipa": "/ˈkændɪd/", "note": "「坦率的」，比 honest 更强调直白说出真相，有时甚至让人不舒服", "gloss": "坦率的（直白说出真相，不怕让人不舒服）"}, {"w": "straightforward", "ipa": "/ˌstreɪtˈfɔːrwərd/", "note": "「直接、坦诚」，强调简单直白，不绕弯子", "gloss": "直接的，坦诚的（简单直白不绕弯）"}], "antonyms": [{"w": "dishonest", "note": "不诚实的"}, {"w": "deceitful", "note": "欺骗性的"}], "nuance": "honest 侧重不说谎、不隐瞒（an honest answer）；sincere 侧重感情真挚（sincere apology 真诚的道歉）；candid 侧重直率到可能令人不适（a candid assessment 坦率评估）；forthright 比 candid 更主动、不请自来地直说。", "core": "嘴和心之间没有墙——你说出来的就是心里真实想的，像一面擦干净的镜子，照出来是什么就是什么，不粉饰、不扭曲。", "senses": [{"gloss": "adj. 诚实的，坦率的", "logic": "嘴和心之间没有距离——真实的镜子，不隐瞒不撒谎", "en": "Give me your honest opinion — I need to know what you really think.", "zh": "告诉我你真实的看法——我需要知道你真正的想法。"}, {"gloss": "adj. 正直的（人品）", "logic": "不说谎只是起点，honest 还意味着为人正派、不欺诈——honor（荣誉）的同根义", "en": "He built a reputation as an honest and fair-minded judge.", "zh": "他以正直公正的法官声誉著称。"}, {"gloss": "adv. 说实话（口语插入语，to be honest）", "logic": "口语中把 honest 当「说真的」用——给后面的话加一个真话的保证", "en": "To be honest, I didn't enjoy the film at all.", "zh": "说实话，我一点也不喜欢那部电影。"}], "derivatives": [{"w": "honesty", "gloss": "诚实，正直（名词）"}, {"w": "honestly", "gloss": "诚实地；说实在的（副词/口语插入语）"}, {"w": "dishonest", "gloss": "不诚实的（反义）"}, {"w": "honor", "gloss": "荣誉（同根词，honest 源自 honor——诚实是维护荣誉的品质）"}]}, {"word": "heir", "hl": "h", "levels": ["六级"], "ipa": "/er/", "subgroup": "silent", "meaning": "n. 继承人（财产、职位、特征等）", "etymology": "古法语 heir，源自拉丁语 heres（继承人）。与 heritage（遗产）、hereditary（遗传的）、inherit（继承）同根——核心义都是「从上一代接收」。h 在法语借词中不发音，进入英语后沿用。", "roots": [{"part": "heir（heres）", "meaning": "继承人"}], "phonetics": "h 完全不发音，读 /er/——与 air、hair、there 押韵。冠词用 an（an heir）。是 silent h 中发音最出人意料的词之一。", "tip": "heir /er/ 与 hair /her/ 发音完全相同，靠语境区分：heir = 继承王位的人，hair = 头上长的东西。两者都是 silent h 词系的好例子。", "examples": [{"en": "As the eldest child, she is the heir to her father's business empire.", "zh": "作为长女，她是父亲商业帝国的继承人。", "source": "造句"}, {"en": "heir apparent / heir to the throne", "zh": "「法定继承人 / 王位继承人」——正式法律和贵族语境高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "successor", "ipa": "/səkˈsesər/", "note": "「继任者」，比 heir 更通用，可指任何接班人，不限于财产继承", "gloss": "继任者（更通用，任何接班人，不限财产）"}, {"w": "inheritor", "ipa": "/ɪnˈherɪtər/", "note": "「继承者」，与 heir 意义最近，更强调主动继承的行为", "gloss": "继承者（与 heir 最近义，强调主动继承行为）"}, {"w": "descendant", "ipa": "/dɪˈsendənt/", "note": "「后代」，比 heir 更宽泛，不一定是继承人，仅指血脉延续", "gloss": "后代（仅指血脉延续，不一定是继承人）"}], "antonyms": [{"w": "predecessor", "note": "前任、前辈（继承关系的另一端）"}, {"w": "ancestor", "note": "祖先"}], "nuance": "heir 有法律含义，特指合法财产或头衔的继承者（heir to the throne）；successor 泛指接班人（political successor）；inheritor 强调继承这一行为本身；descendant 仅指血统后代，不一定是继承人。", "core": "一个链条上的下一个环——前人的手一松，你就接过来，不用挣、不用抢，只需「是那个人」，身份、财产、甚至性格特征就这样从上一代流到你身上。", "senses": [{"gloss": "n. 继承人（财产、职位、头衔）", "logic": "法律/贵族体系里排好队的人——前人离场，你按规则接替", "en": "As the only child, she became the sole heir to her parents' estate.", "zh": "作为独生女，她成了父母财产的唯一继承人。"}, {"gloss": "n. 传承人（特征、传统、遗产的非法律继承）", "logic": "不一定是写进遗嘱的，而是在精神或文化上「接过来」的那个人", "en": "The young poet is widely seen as the heir to the Romantic tradition.", "zh": "这位年轻诗人被广泛视为浪漫主义传统的传承人。"}], "derivatives": [{"w": "heiress", "gloss": "女继承人"}, {"w": "heirloom", "gloss": "传家宝（heir+loom「工具」，传下来的物件）"}, {"w": "heritage", "gloss": "遗产（家族词，heir→heritage）"}, {"w": "inherit", "gloss": "继承（动词，heir 是接收的人，inherit 是接收的动作）"}]}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

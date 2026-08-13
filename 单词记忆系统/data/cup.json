@@ -1,0 +1,1621 @@
+{
+  "id": "cup",
+  "combo": "u·o·ou",
+  "title": "/ʌ/ 短音家族",
+  "sound": "/ʌ/",
+  "subtitle": "一个音，三种写法——u 是正脸，o 是陷阱，ou 是伪装",
+  "intro": "/ʌ/ 是英语里最「坦率」的短元音：嘴半开、舌身放松、不圆唇，发出介于「啊」与「呃」之间的一声。拼写 u 时最可靠（cup、sun、run），但最大的陷阱藏在 o 里——son 写的是 o，读的是 /ʌ/；love、come、month、mother 全是同一路数。初学者看到 o 就条件反射读 /ɒ/ 或 /oʊ/，在这批词上频频踩坑。ou 组（country、young、enough）是第三条路，字母更长但音更短。摸清这三条拼写路径，/ʌ/ 家族再无死角。",
+  "subgroups": [
+    {
+      "key": "u",
+      "tag": "u → /ʌ/",
+      "label": "✅ u = /ʌ/",
+      "desc": "cup/sun/bus/run"
+    },
+    {
+      "key": "o",
+      "tag": "o → /ʌ/（陷阱）",
+      "label": "⚠️ o = /ʌ/",
+      "desc": "写 o 读 /ʌ/：son/love/come/month"
+    },
+    {
+      "key": "ou",
+      "tag": "ou → /ʌ/",
+      "label": "ou = /ʌ/",
+      "desc": "country/trouble/young/enough"
+    },
+    {
+      "key": "other",
+      "tag": "oo 特例",
+      "label": "其它 = /ʌ/",
+      "desc": "blood/flood"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-un / -un (/ʌn/)",
+      "words": ["sun", "run", "fun", "gun", "bun", "son"]
+    },
+    {
+      "label": "-ut / -ub / -ug (/ʌt/ /ʌb/ /ʌɡ/)",
+      "words": ["cut", "but", "club", "pub", "bug", "mug"]
+    },
+    {
+      "label": "-ove / -ome / -ome (/ʌv/ /ʌm/)",
+      "words": ["love", "above", "come", "some", "become"]
+    },
+    {
+      "label": "-ough / -ough (/ʌf/)",
+      "words": ["enough", "tough", "rough"]
+    }
+  ],
+  "words": [
+    {
+      "word": "cup",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/kʌp/",
+      "subgroup": "u",
+      "meaning": "n. 杯子；奖杯；（比赛的）杯赛",
+      "etymology": "古英语 cuppe，源自拉丁语 cuppa「桶、杯」。现代英语「World Cup（世界杯）」即奖杯义的延伸。",
+      "roots": [
+        {"part": "cup（cuppa）", "meaning": "杯、容器"}
+      ],
+      "phonetics": "k + u /ʌ/ + p，/ʌ/ 的首选锚定词，嘴半开不圆唇，音短促干脆。",
+      "tip": "「cup」是 /ʌ/ 音位的命名词：这一页叫「cup 页」，背 cup 就等于把 /ʌ/ 的发音定了锚。",
+      "core": "一个向上开口的小容器——能盛纳、能计量、能捧在手中。",
+      "senses": [
+        {
+          "gloss": "n. 杯子（有把手的茶杯/咖啡杯）",
+          "logic": "容器本义，直接沿用。",
+          "en": "She wrapped her hands around the warm cup of tea.",
+          "zh": "她双手捧着那杯热茶。"
+        },
+        {
+          "gloss": "n. 奖杯",
+          "logic": "奖杯形似杯，是胜利者可以「捧」在手中的容器，形态引申。",
+          "en": "The team lifted the cup after a dramatic penalty shootout.",
+          "zh": "球队在激烈的点球大战后举起了奖杯。"
+        },
+        {
+          "gloss": "n. 杯赛（以奖杯命名的锦标赛）",
+          "logic": "因奖杯得名，转喻整个赛事。",
+          "en": "They were knocked out of the cup in the second round.",
+          "zh": "他们在杯赛第二轮就遭到淘汰。"
+        }
+      ],
+      "derivatives": [
+        {"w": "cupboard", "gloss": "碗柜，橱柜"},
+        {"w": "cupful", "gloss": "一杯的量"},
+        {"w": "cupcake", "gloss": "纸杯蛋糕"}
+      ],
+      "examples": [
+        {
+          "en": "She wrapped her hands around the warm cup of tea.",
+          "zh": "她双手捧着那杯热茶。",
+          "source": "造句"
+        },
+        {
+          "en": "cup of coffee",
+          "zh": "「一杯咖啡」——英语点单最高频搭配之一。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "mug", "ipa": "/mʌɡ/", "gloss": "大号有把手的马克杯", "note": "大号无托、有把手的杯，比 cup 更随意；mug 本身也含 /ʌ/，是双重记忆"},
+        {"w": "glass", "ipa": "/ɡlɑːs/", "gloss": "玻璃杯", "note": "玻璃杯，无把手，材质决定词选择"},
+        {"w": "bowl", "ipa": "/boʊl/", "gloss": "碗，宽浅容器", "note": "碗，比 cup 更宽浅，用于汤或麦片"}
+      ],
+      "antonyms": [],
+      "nuance": "cup 专指有把手的瓷杯或茶杯（通常配碟）；mug 更大更随意，无碟；glass 强调材质是玻璃。「a cup of」是液体计量的高频结构，不可替换为 mug of 或 glass of（后者有时可）。"
+    },
+    {
+      "word": "sun",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/sʌn/",
+      "subgroup": "u",
+      "meaning": "n. 太阳；阳光  v. （使）晒太阳",
+      "etymology": "古英语 sunne，日耳曼同根，与德语 Sonne、荷兰语 zon 同源。solar（太阳的）来自拉丁语 sol，是同义异根。",
+      "roots": [
+        {"part": "sun（sunne）", "meaning": "太阳"}
+      ],
+      "phonetics": "s + u /ʌ/ + n，与 son /sʌn/ 完全同音——是经典同音词对，区分靠语境。",
+      "tip": "sun（太阳）和 son（儿子）发音一模一样，都是 /sʌn/，这是英语最著名的同音词对之一。",
+      "core": "天空中唯一的光热来源，万物的能量中心。",
+      "senses": [
+        {
+          "gloss": "n. 太阳（天体本身）",
+          "logic": "本义，指恒星本体。",
+          "en": "The sun sets earlier in winter.",
+          "zh": "冬天太阳落得更早。"
+        },
+        {
+          "gloss": "n. 阳光，日照",
+          "logic": "天体→它发出的光热，转喻为阳光本身。",
+          "en": "They sat in the sun reading their books.",
+          "zh": "他们坐在阳光下看书。"
+        },
+        {
+          "gloss": "v. 晒太阳",
+          "logic": "名词动用，让自己暴露在阳光中。",
+          "en": "The cat was sunning itself on the windowsill.",
+          "zh": "猫正趴在窗台上晒太阳。"
+        }
+      ],
+      "derivatives": [
+        {"w": "sunrise", "gloss": "日出"},
+        {"w": "sunset", "gloss": "日落"},
+        {"w": "sunburn", "gloss": "晒伤"},
+        {"w": "sunny", "gloss": "阳光充足的；开朗的"}
+      ],
+      "examples": [
+        {
+          "en": "The sun sets earlier in winter.",
+          "zh": "冬天太阳落得更早。",
+          "source": "造句"
+        },
+        {
+          "en": "under the sun",
+          "zh": "「世界上」——高频夸张搭配，如 everything under the sun（世上一切）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sunshine", "ipa": "/ˈsʌnʃaɪn/", "gloss": "阳光，温暖的光照", "note": "「阳光」，偏指光线与温暖感，比 sun 更诗意；sunshine policy（阳光政策）"},
+        {"w": "sunlight", "ipa": "/ˈsʌnlaɪt/", "gloss": "日光（物理意义上的光）", "note": "「日光」，强调光本身的物理属性，多见于科学描述"},
+        {"w": "star", "ipa": "/stɑːr/", "gloss": "恒星；明星", "note": "天文学意义上太阳是恒星（star），但日常不互换"}
+      ],
+      "antonyms": [
+        {"w": "moon", "note": "月亮（夜晚对应物）"},
+        {"w": "shade", "note": "阴影（阳光的对立面）"}
+      ],
+      "nuance": "sun 指天体本身（The sun rises）；sunshine 指阳光带来的温暖感受（enjoy the sunshine）；sunlight 更科学客观（sunlight refracts through a prism）。"
+    },
+    {
+      "word": "run",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/rʌn/",
+      "subgroup": "u",
+      "meaning": "v. 跑；运行；管理；（流水）流  n. 跑步；一段时间的运行",
+      "etymology": "古英语 rinnan/rynnan「流动、奔跑」，日耳曼同根。语义延伸：从物理跑步→机器运行→管理（run a business）→竞选（run for office）。",
+      "roots": [
+        {"part": "run（rinnan）", "meaning": "流动、奔跑"}
+      ],
+      "phonetics": "r + u /ʌ/ + n，与 sun、fun、gun 同韵（-un 韵脚）。",
+      "core": "持续向前推进的流动感——身体在动，系统在转，事情在进行。",
+      "senses": [
+        {
+          "gloss": "v. 跑步，奔跑",
+          "logic": "核心本义，身体快速移动向前。",
+          "en": "She runs five kilometres every morning before work.",
+          "zh": "她每天早上上班前跑五公里。"
+        },
+        {
+          "gloss": "v. 运行，运转（机器/程序）",
+          "logic": "机器「持续向前推进」与跑步同构，都是持续流动的过程。",
+          "en": "The software runs on both Windows and Mac.",
+          "zh": "这款软件在 Windows 和 Mac 上均可运行。"
+        },
+        {
+          "gloss": "v. 管理，经营",
+          "logic": "使一个组织「持续流动运转」，引申为掌管。",
+          "en": "He has run the family business for twenty years.",
+          "zh": "他经营这家家族企业已有二十年。"
+        },
+        {
+          "gloss": "v. 流淌（液体）",
+          "logic": "水的流动与跑步同是「向前推进」的动态，词义天然相通。",
+          "en": "She let the cold water run over her wrists.",
+          "zh": "她让冷水流过手腕。"
+        },
+        {
+          "gloss": "v. 竞选",
+          "logic": "「在政治赛道上跑」，比赛隐喻引申。",
+          "en": "She announced she would run for governor next year.",
+          "zh": "她宣布明年将竞选州长。"
+        },
+        {
+          "gloss": "n. 跑步；一段持续时期",
+          "logic": "动作名词化；也指某事「一直运转的一段时间」。",
+          "en": "The play had a long run on Broadway.",
+          "zh": "这部戏剧在百老汇上演了很长时间。"
+        }
+      ],
+      "derivatives": [
+        {"w": "runner", "gloss": "跑步者；参赛者"},
+        {"w": "running", "gloss": "跑步；连续的；运转中的"},
+        {"w": "runaway", "gloss": "失控的；逃跑者"},
+        {"w": "outrun", "gloss": "跑得比……快；超过"}
+      ],
+      "examples": [
+        {
+          "en": "She runs five kilometres every morning before work.",
+          "zh": "她每天早上上班前跑五公里。",
+          "source": "造句"
+        },
+        {
+          "en": "run out of",
+          "zh": "「用尽、耗尽」——托福阅读高频短语动词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sprint", "ipa": "/sprɪnt/", "gloss": "全速短跑", "note": "全速短跑，比 run 更强调速度和爆发力；sprint to the finish line"},
+        {"w": "operate", "ipa": "/ˈɒpəreɪt/", "gloss": "操作，运行（正式）", "note": "「运行/操作」义，比 run 更正式；operate a machine"},
+        {"w": "manage", "ipa": "/ˈmænɪdʒ/", "gloss": "管理，经营", "note": "「管理」义，与 run a company 同义，但更正式"}
+      ],
+      "antonyms": [
+        {"w": "walk", "note": "步行（运动义相对）"},
+        {"w": "stop", "note": "停止运行"}
+      ],
+      "nuance": "run 义域极宽：跑步（run a race）、运行（run software）、管理（run a shop）、竞选（run for president）、流动（water runs）。sprint 专指全速短跑，jog 指慢跑，manage/operate 分别对应管理和操作含义。"
+    },
+    {
+      "word": "cut",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/kʌt/",
+      "subgroup": "u",
+      "meaning": "v. 切，割；削减；（电影）剪辑  n. 切口；削减；（利润的）份额",
+      "etymology": "中古英语 cutten，来源不确定，可能来自古诺尔斯语 kuta「削」。cut 是核心词，派生出 shortcut（捷径）、haircut（理发）、budget cut（预算削减）。",
+      "roots": [
+        {"part": "cut", "meaning": "切、割"}
+      ],
+      "phonetics": "k + u /ʌ/ + t，与 but、hut、gut 同韵（-ut 韵脚）。",
+      "core": "用锐器将连续的东西断开——物理的切割，或抽象的减少/断绝。",
+      "senses": [
+        {
+          "gloss": "v. 切，割，剪",
+          "logic": "本义，用利器分离物体。",
+          "en": "He cut the bread into thick slices.",
+          "zh": "他把面包切成厚片。"
+        },
+        {
+          "gloss": "v. 削减，减少（预算/人员等）",
+          "logic": "把过多的部分「割掉」，引申为压缩数量。",
+          "en": "The government announced a significant cut in public spending.",
+          "zh": "政府宣布大幅削减公共支出。"
+        },
+        {
+          "gloss": "v. 剪辑（电影/视频）",
+          "logic": "剪辑就是字面意义上「剪掉」不要的片段，同一动作。",
+          "en": "The director cut the scene that felt too slow.",
+          "zh": "导演剪掉了那个节奏过慢的场景。"
+        },
+        {
+          "gloss": "n. 切口，伤口",
+          "logic": "切割动作留下的结果。",
+          "en": "She had a small cut on her finger from the knife.",
+          "zh": "她手指上被刀划了一道小口子。"
+        },
+        {
+          "gloss": "n. （利润的）份额",
+          "logic": "「切一刀分走一块」，把整体分割后各自所得的部分。",
+          "en": "Each agent takes a cut of the sale price.",
+          "zh": "每个代理人从售价中抽取一部分提成。"
+        }
+      ],
+      "derivatives": [
+        {"w": "shortcut", "gloss": "捷径；键盘快捷键"},
+        {"w": "haircut", "gloss": "理发；（价格/规模的）大幅削减"},
+        {"w": "cutting", "gloss": "尖刻的；剪裁；剪报"},
+        {"w": "cutback", "gloss": "削减，缩减"}
+      ],
+      "examples": [
+        {
+          "en": "The government announced a significant cut in public spending.",
+          "zh": "政府宣布大幅削减公共支出。",
+          "source": "造句"
+        },
+        {
+          "en": "cut corners",
+          "zh": "「偷工减料、走捷径（降低标准）」——高频批评用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "reduce", "ipa": "/rɪˈdjuːs/", "gloss": "削减，降低（正式）", "note": "「削减」义，比 cut 更正式且幅度可大可小；reduce costs（降低成本）"},
+        {"w": "slice", "ipa": "/slaɪs/", "gloss": "切片，切薄片", "note": "「切片」，强调切成薄片；slice bread（切面包片）"},
+        {"w": "trim", "ipa": "/trɪm/", "gloss": "修剪，小幅削减", "note": "「修剪、小幅削减」，比 cut 更精细；trim the budget（微调预算）"}
+      ],
+      "antonyms": [
+        {"w": "increase", "note": "增加（削减义相对）"},
+        {"w": "join", "note": "连接（切断义相对）"}
+      ],
+      "nuance": "cut 最通用（切割或削减）；reduce 是正式书面词，适合官方文件；trim 暗示小幅精细地削减；slice 强调切成片状，也可指「分一杯羹」（a slice of the market）。"
+    },
+    {
+      "word": "jump",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/dʒʌmp/",
+      "subgroup": "u",
+      "meaning": "v. 跳跃；猛增；抓住（机会）  n. 跳跃；（数量的）骤增",
+      "etymology": "中古英语 jumpen，拟声词起源，模仿跳跃落地的声音。jump the gun（抢跑）来自田径起跑枪。",
+      "roots": [
+        {"part": "jump（拟声）", "meaning": "跳跃"}
+      ],
+      "phonetics": "j /dʒ/ + u /ʌ/ + mp，/dʒ/ 是送气的浊辅音，不要读成 /j/（y 音）。",
+      "core": "脱离地面、突破当前位置的瞬间爆发——身体腾空，或数字/情绪的骤然跃升。",
+      "senses": [
+        {
+          "gloss": "v. 跳跃，跳起",
+          "logic": "本义，身体克服重力腾空。",
+          "en": "The child jumped off the wall into her father's arms.",
+          "zh": "孩子从墙上跳进父亲的怀里。"
+        },
+        {
+          "gloss": "v. 骤增，大幅上涨",
+          "logic": "数字像跳跃一样突然跃到更高位置。",
+          "en": "Sales jumped 40% in the third quarter.",
+          "zh": "第三季度销售额骤增40%。"
+        },
+        {
+          "gloss": "v. 猛地抓住（机会）",
+          "logic": "「一跃而上」抓住稍纵即逝的时机。",
+          "en": "She jumped at the chance to study abroad.",
+          "zh": "她一听到出国留学的机会，立刻抓住了。"
+        },
+        {
+          "gloss": "n. 跳跃；骤增",
+          "logic": "动作或变化的名词化。",
+          "en": "There was a sudden jump in temperature overnight.",
+          "zh": "气温一夜之间骤然攀升。"
+        }
+      ],
+      "derivatives": [
+        {"w": "jumper", "gloss": "跳跃者；套头毛衣（英式）"},
+        {"w": "jumpstart", "gloss": "用外接电源启动；快速推动"},
+        {"w": "overjump", "gloss": "跳过头，越过"}
+      ],
+      "examples": [
+        {
+          "en": "Sales jumped 40% in the third quarter.",
+          "zh": "第三季度销售额骤增40%。",
+          "source": "造句"
+        },
+        {
+          "en": "jump to conclusions",
+          "zh": "「仓促下结论」——高频批评用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "leap", "ipa": "/liːp/", "gloss": "大幅度一跃；飞跃", "note": "「一跃」，比 jump 更有气势，强调大幅度或突破；leap forward（大跃进）"},
+        {"w": "surge", "ipa": "/sɜːrdʒ/", "gloss": "骤增，涌升（数量）", "note": "「骤增」义的近义词，多用于数据；prices surged（价格飙升）"},
+        {"w": "spring", "ipa": "/sprɪŋ/", "gloss": "弹跳，纵身一跳", "note": "「弹跳、纵身一跳」，比 jump 更弹性、更突然；spring to one's feet（猛地站起）"}
+      ],
+      "antonyms": [
+        {"w": "fall", "note": "下落（跳跃义相对）"},
+        {"w": "drop", "note": "骤降（骤增义相对）"}
+      ],
+      "nuance": "jump 最口语通用；leap 强调跨越式的大幅度（a quantum leap）；spring 强调弹性蓄力后的突然一跳；surge 专用于数量或情绪的快速上涨，不描述物理跳跃。"
+    },
+    {
+      "word": "lunch",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/lʌntʃ/",
+      "subgroup": "u",
+      "meaning": "n. 午餐  v. 吃午餐",
+      "etymology": "16世纪英语 luncheon（午宴），词源不确，可能来自西班牙语 lonja「一片肉」。lunch 是缩略形式。",
+      "roots": [
+        {"part": "lunch（luncheon 缩略）", "meaning": "午餐"}
+      ],
+      "phonetics": "l + u /ʌ/ + nch /ntʃ/，-nch 是一个连缀尾音，与 bunch、munch、punch 押韵。",
+      "tip": "「There is no such thing as a free lunch.」（天下没有免费的午餐）——经济学名言，是 lunch 最著名的文化锚点。",
+      "core": "一天正中间的那顿饭——介于早餐和晚餐之间，兼具补充能量与社交功能。",
+      "senses": [
+        {
+          "gloss": "n. 午餐",
+          "logic": "本义，一天中间的一餐。",
+          "en": "We had a working lunch to discuss the project timeline.",
+          "zh": "我们边吃午餐边讨论项目时间表。"
+        },
+        {
+          "gloss": "v. 吃午餐（正式或书面）",
+          "logic": "名词动用，指进行午餐这一行为，多见于正式语境。",
+          "en": "The executives lunched together every Friday.",
+          "zh": "高管们每周五一起共进午餐。"
+        }
+      ],
+      "derivatives": [
+        {"w": "luncheon", "gloss": "正式午宴（比 lunch 更隆重）"},
+        {"w": "lunchtime", "gloss": "午餐时间"},
+        {"w": "lunchbox", "gloss": "午餐盒，饭盒"}
+      ],
+      "examples": [
+        {
+          "en": "We had a working lunch to discuss the project timeline.",
+          "zh": "我们边吃午餐边讨论项目时间表。",
+          "source": "造句"
+        },
+        {
+          "en": "business lunch / working lunch",
+          "zh": "「商务午餐 / 工作餐」——职场最高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "midday meal", "gloss": "午餐（描述性说法）", "note": "「午餐」的描述性说法，比 lunch 更正式书面"},
+        {"w": "luncheon", "ipa": "/ˈlʌntʃən/", "gloss": "正式午宴", "note": "lunch 的正式变体，多用于正式宴请场合"}
+      ],
+      "antonyms": [
+        {"w": "breakfast", "note": "早餐"},
+        {"w": "dinner", "note": "晚餐"}
+      ],
+      "nuance": "lunch 是最日常的午餐词；luncheon 是正式宴请场合用词；brunch（早午餐）是 breakfast + lunch 的混合，通常在上午10点至下午2点之间。"
+    },
+    {
+      "word": "subject",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/ˈsʌbdʒɪkt/",
+      "subgroup": "u",
+      "meaning": "n. 主题；科目；（语法）主语；实验对象  adj. 受……支配的  v. 使遭受",
+      "etymology": "拉丁语 subjectus = sub-(下) + jacere(投掷) = 「投到下面」→ 置于控制之下的人/事。与 project（向前投）、inject（注入）同根——都含「投掷」义。",
+      "roots": [
+        {"part": "sub-", "meaning": "在下面"},
+        {"part": "-ject (jacere)", "meaning": "投掷"}
+      ],
+      "phonetics": "名词/形容词重音在首音节 SUB- = /sʌb/；动词重音在后 sub-JECT，读 /səbˈdʒekt/，注意重音移位。",
+      "tip": "sub-JECT（动词）vs SUB-ject（名词）——重音位置不同义不同，与 project、object、conduct 同属此类。",
+      "core": "被「置于下方/从属位置」的人或事物——是讨论的对象，是学习的领域，是被控制/遭受的一方。",
+      "senses": [
+        {
+          "gloss": "n. 主题，话题",
+          "logic": "讨论中被「置于台面上」的核心事物。",
+          "en": "She changed the subject whenever anyone mentioned money.",
+          "zh": "只要有人提到钱，她就立刻转移话题。"
+        },
+        {
+          "gloss": "n. 学科，科目",
+          "logic": "一个知识领域，学生在其「下方」学习钻研。",
+          "en": "History was always her favourite subject at school.",
+          "zh": "历史一直是她在学校最喜欢的科目。"
+        },
+        {
+          "gloss": "n. （语法）主语",
+          "logic": "句子中执行动作的核心角色，处于核心「主导」位置（此义与词源「从属」略有偏离，历史偶合）。",
+          "en": "In the sentence 「The dog barked」, 「the dog」 is the subject.",
+          "zh": "在「那只狗叫了」这个句子里，「那只狗」是主语。"
+        },
+        {
+          "gloss": "n. 实验对象；研究对象",
+          "logic": "被置于实验控制之下的人或物，「从属」于研究者。",
+          "en": "The study subjects were randomly divided into two groups.",
+          "zh": "研究对象被随机分为两组。"
+        },
+        {
+          "gloss": "adj. 受……支配的；可能……的",
+          "logic": "「被置于……之下」，即处于某种条件或权威的控制中。",
+          "en": "All prices are subject to change without notice.",
+          "zh": "所有价格均可能随时变动，恕不另行通知。"
+        },
+        {
+          "gloss": "v. 使遭受，使承受",
+          "logic": "主动将某人「置于」某种（通常是负面的）处境之下。",
+          "en": "Workers were subjected to long hours and poor conditions.",
+          "zh": "工人们被迫忍受长时间工作和恶劣的工作条件。"
+        }
+      ],
+      "derivatives": [
+        {"w": "subjective", "gloss": "主观的"},
+        {"w": "subjectivity", "gloss": "主观性"},
+        {"w": "subjection", "gloss": "征服，从属状态"}
+      ],
+      "examples": [
+        {
+          "en": "The study subjects were randomly divided into two groups.",
+          "zh": "研究对象被随机分为两组。",
+          "source": "造句"
+        },
+        {
+          "en": "subject to change",
+          "zh": "「可能变动」——合同和通知的高频免责表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "topic", "ipa": "/ˈtɒpɪk/", "gloss": "话题，具体讨论的主题", "note": "「话题/主题」义最接近，比 subject 更口语；change the topic（换话题）"},
+        {"w": "theme", "ipa": "/θiːm/", "gloss": "主题，贯穿性核心思想", "note": "「主题」，比 subject 更文学，强调贯穿全文的核心思想"},
+        {"w": "discipline", "ipa": "/ˈdɪsɪplɪn/", "gloss": "学科，专业领域（正式）", "note": "「学科」义，比 subject 更正式，多用于学术分类"}
+      ],
+      "antonyms": [
+        {"w": "object", "note": "（语法）宾语；（哲学）客体"},
+        {"w": "ruler", "note": "统治者（subject 作「臣民」义时的对立面）"}
+      ],
+      "nuance": "subject（主题）比 topic 更宏观，topic 是某次讨论的具体话题，subject 是更大的领域；theme 是贯穿性的核心概念。subject to（受……支配/可能）是高频固定搭配，不可与 topic 替换。"
+    },
+    {
+      "word": "result",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/rɪˈzʌlt/",
+      "subgroup": "u",
+      "meaning": "n. 结果；成绩  v. 导致（result in）；由……引起（result from）",
+      "etymology": "拉丁语 resultare = re-(回) + saltare(跳) = 「跳回来」→ 产生反弹效果→ 结果。与 assault（猛攻）、somersault（翻筋斗）同根——都含「跳」的核心义。",
+      "roots": [
+        {"part": "re-", "meaning": "向回"},
+        {"part": "-sult (saltare)", "meaning": "跳、弹"}
+      ],
+      "phonetics": "重音在后 re-SULT，-sult = /zʌlt/，u 读 /ʌ/。",
+      "core": "从某个原因「弹跳回来」落地的东西——因果链末端的产物。",
+      "senses": [
+        {
+          "gloss": "n. 结果，成果",
+          "logic": "本义，某一过程或行动产生的最终产物。",
+          "en": "The experiment produced unexpected results.",
+          "zh": "实验产生了意想不到的结果。"
+        },
+        {
+          "gloss": "n. 成绩，比分",
+          "logic": "结果义的具体化，指考试或比赛的数值型结果。",
+          "en": "She was nervous waiting for her exam results.",
+          "zh": "她焦急地等待考试成绩。"
+        },
+        {
+          "gloss": "v. 导致（result in sth）",
+          "logic": "原因→结果的方向，原因在前，result in 指向结果。",
+          "en": "Poor planning resulted in a series of costly delays.",
+          "zh": "糟糕的计划导致了一系列代价高昂的延误。"
+        },
+        {
+          "gloss": "v. 源于，由……引起（result from sth）",
+          "logic": "结果←原因的方向，result from 指向来源，方向与 result in 相反。",
+          "en": "The injury resulted from a lack of proper training.",
+          "zh": "这次受伤源于缺乏适当的训练。"
+        }
+      ],
+      "derivatives": [
+        {"w": "resultant", "gloss": "由此产生的，合成的"},
+        {"w": "resulting", "gloss": "由此产生的（形容词用法）"}
+      ],
+      "examples": [
+        {
+          "en": "The experiment produced unexpected results.",
+          "zh": "实验产生了意想不到的结果。",
+          "source": "造句"
+        },
+        {
+          "en": "result in failure / result from poor planning",
+          "zh": "「导致失败 / 源于糟糕的计划」——两个介词方向相反，考试高频考点。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "outcome", "ipa": "/ˈaʊtkʌm/", "gloss": "最终结果，结局", "note": "「结果/结局」，比 result 更强调最终状态，常用于评估某一过程的整体结局"},
+        {"w": "consequence", "ipa": "/ˈkɒnsɪkwəns/", "gloss": "后果（常含负面含义）", "note": "「后果」，比 result 带更明显的因果链，且常含负面含义"},
+        {"w": "effect", "ipa": "/ɪˈfekt/", "gloss": "效果，影响", "note": "「效果/影响」，强调原因产生的影响，比 result 更强调因果关系"}
+      ],
+      "antonyms": [
+        {"w": "cause", "note": "原因（与结果相对）"}
+      ],
+      "nuance": "result 最中性（好坏均可）；consequence 暗含因果责任，常用于负面后果（face the consequences）；outcome 强调最终状态；effect 侧重「影响/效果」维度。「result in」是主动导致，「result from」是被动由……引起——方向相反，易混。"
+    },
+    {
+      "word": "sudden",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/ˈsʌdn/",
+      "subgroup": "u",
+      "meaning": "adj. 突然的，猝然的",
+      "etymology": "拉丁语 subitaneus = sub-(在下) + ire(走) = 「从下面突然跑出来」→ 出乎意料。suddenly 是副词，sudden death（突然死亡赛制）是体育高频词。",
+      "roots": [
+        {"part": "sub-", "meaning": "在下面、暗中"},
+        {"part": "-den (ire)", "meaning": "走、来"}
+      ],
+      "phonetics": "首音节重读 SUD- = /sʌd/，-den 轻读 /n/；注意 d 和 n 连读，中间的元音几乎消失。",
+      "core": "没有任何预警、从黑暗中冲出来的感觉——事情发生时没有过渡，令人措手不及。",
+      "senses": [
+        {
+          "gloss": "adj. 突然的，出乎意料的",
+          "logic": "唯一常用义，形容事件毫无征兆地发生。",
+          "en": "A sudden change in weather disrupted the outdoor event.",
+          "zh": "天气骤变打乱了户外活动的安排。"
+        }
+      ],
+      "derivatives": [
+        {"w": "suddenly", "gloss": "突然地，猛地"},
+        {"w": "suddenness", "gloss": "突然性，猝然"}
+      ],
+      "examples": [
+        {
+          "en": "A sudden change in weather disrupted the outdoor event.",
+          "zh": "天气骤变打乱了户外活动的安排。",
+          "source": "造句"
+        },
+        {
+          "en": "all of a sudden",
+          "zh": "「突然间」——口语最高频的「突然」表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "abrupt", "ipa": "/əˈbrʌpt/", "gloss": "突兀的，没有过渡的", "note": "「突然的、唐突的」，比 sudden 更强调没有缓冲或过渡，也可形容态度生硬"},
+        {"w": "unexpected", "ipa": "/ˌʌnɪkˈspektɪd/", "gloss": "出乎意料的", "note": "「出乎意料的」，强调不在预料之中，比 sudden 更强调主观预期落空"},
+        {"w": "swift", "ipa": "/swɪft/", "gloss": "迅速的，快速的", "note": "「迅速的」，强调速度快而非出乎意料"}
+      ],
+      "antonyms": [
+        {"w": "gradual", "note": "逐渐的"},
+        {"w": "expected", "note": "意料之中的"}
+      ],
+      "nuance": "sudden 强调「没有预兆，出其不意」；abrupt 多形容变化或行为的突然且生硬（an abrupt end、an abrupt manner）；unexpected 侧重「不在预期中」，时间未必快；swift 只说速度快，不含突然义。"
+    },
+    {
+      "word": "public",
+      "hl": "u",
+      "levels": ["托福"],
+      "ipa": "/ˈpʌblɪk/",
+      "subgroup": "u",
+      "meaning": "adj. 公共的；公开的；公众的  n. 公众，大众",
+      "etymology": "拉丁语 publicus，源自 populus（人民）的缩合——「属于全体人民的」。与 population（人口）、popular（受欢迎的）同根。",
+      "roots": [
+        {"part": "publ- (populus)", "meaning": "人民"},
+        {"part": "-ic", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "首音节重读 PUB- = /pʌb/，-lic 轻读 /lɪk/。pub（酒吧）就是 public house 的缩写，两者同音节。",
+      "tip": "pub（英国酒吧）= public house 的缩写——下次去酒吧，记得 public 的 /ʌ/ 怎么发。",
+      "core": "属于所有人、对所有人开放——与私人领域相对的公共空间或身份。",
+      "senses": [
+        {
+          "gloss": "adj. 公共的，公众的",
+          "logic": "本义，属于或服务于全体社会成员。",
+          "en": "The museum is open to the public free of charge on Sundays.",
+          "zh": "博物馆周日向公众免费开放。"
+        },
+        {
+          "gloss": "adj. 公开的，众所周知的",
+          "logic": "「对所有人开放」引申为「不加遮掩」。",
+          "en": "He made his resignation public through a press conference.",
+          "zh": "他通过新闻发布会公开了辞职消息。"
+        },
+        {
+          "gloss": "n. 公众，大众（the public）",
+          "logic": "形容词名词化，指全体社会成员构成的整体。",
+          "en": "The general public was not informed until much later.",
+          "zh": "普通大众直到很久之后才得到通知。"
+        }
+      ],
+      "derivatives": [
+        {"w": "publicly", "gloss": "公开地"},
+        {"w": "publicity", "gloss": "宣传，知名度；公众关注"},
+        {"w": "publicize", "gloss": "宣传，使公众知晓"},
+        {"w": "publication", "gloss": "出版物；发表，出版"}
+      ],
+      "examples": [
+        {
+          "en": "The museum is open to the public free of charge on Sundays.",
+          "zh": "博物馆周日向公众免费开放。",
+          "source": "造句"
+        },
+        {
+          "en": "public opinion / public sector",
+          "zh": "「公众舆论 / 公共部门」——社科托福高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "communal", "ipa": "/ˈkɒmjʊnl/", "gloss": "公用的，社区共享的", "note": "「公共共用的」，强调由特定社区共同使用；communal kitchen（公用厨房）"},
+        {"w": "general", "ipa": "/ˈdʒenərəl/", "gloss": "一般大众的，普遍的", "note": "「一般大众的」，比 public 更宽泛；general public（普通大众）是固定搭配"},
+        {"w": "open", "ipa": "/ˈoʊpən/", "gloss": "公开的，开放的", "note": "「公开的、开放的」，从可及性角度替代 public；open to the public（对外开放）"}
+      ],
+      "antonyms": [
+        {"w": "private", "note": "私人的；私密的"},
+        {"w": "confidential", "note": "机密的"}
+      ],
+      "nuance": "public 侧重「属于或面向全体社会」（public transport）；communal 侧重「某一群体共同使用」（communal areas）；private 是 public 最直接的对立面——private school vs public school 在英美还含义不同（英国 private school = 私立名校，美国 public school = 公立学校）。"
+    },
+    {
+      "word": "son",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/sʌn/",
+      "subgroup": "o",
+      "meaning": "n. 儿子",
+      "etymology": "古英语 sunu，日耳曼同根，与德语 Sohn、荷兰语 zoon 同源。senior（年长者）和 senile（老年的）虽语感相关，实为拉丁语另一词根。",
+      "roots": [
+        {"part": "son（sunu）", "meaning": "儿子"}
+      ],
+      "phonetics": "o 在这里读 /ʌ/ 而非 /ɒ/，与 sun（太阳）完全同音——最著名的 o→/ʌ/ 陷阱词之一。",
+      "tip": "son 和 sun 是最经典的 /ʌ/ 同音词对：写法不同，读音相同，都是 /sʌn/。遇到 o 写成却读 /ʌ/ 的词，son 就是旗舰案例。",
+      "core": "父母与下一代之间最直接的血缘纽带——男性后代。",
+      "senses": [
+        {
+          "gloss": "n. 儿子",
+          "logic": "唯一常用义，指男性子女。",
+          "en": "Her son just started university this September.",
+          "zh": "她儿子今年九月刚入读大学。"
+        }
+      ],
+      "derivatives": [
+        {"w": "grandson", "gloss": "孙子"},
+        {"w": "stepson", "gloss": "继子"}
+      ],
+      "examples": [
+        {
+          "en": "Her son just started university this September.",
+          "zh": "她儿子今年九月刚入读大学。",
+          "source": "造句"
+        },
+        {
+          "en": "son and heir",
+          "zh": "「儿子兼继承人」——正式或文学语境高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "boy", "ipa": "/bɔɪ/", "gloss": "男孩（泛指，不含亲子关系）", "note": "泛指男孩，比 son 更宽泛，不含亲子关系"},
+        {"w": "offspring", "ipa": "/ˈɒfsprɪŋ/", "gloss": "后代（性别中立，正式）", "note": "「后代」，生物学和法律语境，性别中性，比 son 更正式"}
+      ],
+      "antonyms": [
+        {"w": "daughter", "note": "女儿"}
+      ],
+      "nuance": "son 特指儿子（亲子关系）；boy 泛指男孩（无亲子含义）；offspring 是性别中立的「后代」，可指动植物。注意 sun（太阳）和 son（儿子）拼写不同但发音相同，写作时须谨慎。"
+    },
+    {
+      "word": "love",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/lʌv/",
+      "subgroup": "o",
+      "meaning": "n./v. 爱；热爱；喜欢",
+      "etymology": "古英语 lufu（名词）、lufian（动词），日耳曼同根，与德语 Liebe 同源。love 的 o 读 /ʌ/ 是中古英语音变遗留——当年这批词的 o 在圆唇辅音 /l/、/v/ 旁发生了非圆唇化。",
+      "roots": [
+        {"part": "love（lufu）", "meaning": "爱"}
+      ],
+      "phonetics": "l + o /ʌ/ + ve，o 在 /l/ 和 /v/ 之间非圆唇化读 /ʌ/，词尾 e 不发音（哑 e）。同组：above、glove、shove。",
+      "core": "一种向外涌动的深切依附感——可以指向人、物、活动，强度不一但都是真实的情感投入。",
+      "senses": [
+        {
+          "gloss": "n./v. 爱（对人的深厚感情）",
+          "logic": "本义，对他人深切的情感连结。",
+          "en": "She has loved him since they were teenagers.",
+          "zh": "她从他们还是少年时就爱上了他。"
+        },
+        {
+          "gloss": "n./v. 热爱，酷爱（对事物或活动）",
+          "logic": "情感对象扩展到事物，「深切依附感」作用于非人对象。",
+          "en": "She has a deep love for classical music.",
+          "zh": "她对古典音乐有深厚的热爱。"
+        },
+        {
+          "gloss": "n. 零分（网球术语）",
+          "logic": "历史偶合，来自法语 l'oeuf（鸡蛋，形似0），与「爱」的词源无关，请如实标注。",
+          "en": "The score was thirty-love in her favour.",
+          "zh": "比分是她领先三十比零。"
+        }
+      ],
+      "derivatives": [
+        {"w": "lovely", "gloss": "可爱的，令人愉快的"},
+        {"w": "beloved", "gloss": "深爱的，挚爱的人"},
+        {"w": "lovable", "gloss": "可爱的，讨人喜欢的"},
+        {"w": "lover", "gloss": "爱人；热爱者"}
+      ],
+      "examples": [
+        {
+          "en": "She has a deep love for classical music.",
+          "zh": "她对古典音乐有深厚的热爱。",
+          "source": "造句"
+        },
+        {
+          "en": "fall in love with",
+          "zh": "「爱上……」——英语最高频的情感动词短语之一。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "adore", "ipa": "/əˈdɔːr/", "gloss": "崇拜式地热爱，仰慕", "note": "「崇拜式地热爱」，比 love 更强烈，常带仰视感；adore an idol"},
+        {"w": "cherish", "ipa": "/ˈtʃerɪʃ/", "gloss": "珍爱，呵护（强调行动）", "note": "「珍爱、呵护」，比 love 更强调珍视和呵护的行动"},
+        {"w": "affection", "ipa": "/əˈfekʃn/", "gloss": "情感，温情（名词）", "note": "「情感、喜爱」（名词），比 love 温和，可指对人或事物的温情"}
+      ],
+      "antonyms": [
+        {"w": "hate", "note": "恨"},
+        {"w": "loathe", "note": "厌恶"}
+      ],
+      "nuance": "love 是最宽泛的「爱」；adore 更强烈，带崇拜意味（I adore this song）；cherish 强调珍视和保护（cherish memories）；like 是爱的弱化版，无强烈情感。"
+    },
+    {
+      "word": "come",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/kʌm/",
+      "subgroup": "o",
+      "meaning": "v. 来；到达；发生；（按顺序）排在",
+      "etymology": "古英语 cuman，日耳曼同根，与德语 kommen 同源。come 派生词极多：welcome（欢迎）、outcome（结果）、income（收入）、become（成为）。",
+      "roots": [
+        {"part": "come（cuman）", "meaning": "来、到达"}
+      ],
+      "phonetics": "k + o /ʌ/ + me，o 读 /ʌ/，词尾 e 不发音（哑 e），是高频 o→/ʌ/ 陷阱词。",
+      "tip": "come 的 o 读 /ʌ/ 不读 /oʊ/——come、some、become、welcome、income 都是这个规律。",
+      "core": "朝向说话者或某个目标点移动靠近——是 go 的方向反转。",
+      "senses": [
+        {
+          "gloss": "v. 来，朝……方向移动",
+          "logic": "本义，从他处向说话者/目标处移动。",
+          "en": "Come and sit with me for a while.",
+          "zh": "过来陪我坐一会儿。"
+        },
+        {
+          "gloss": "v. 到达，抵达",
+          "logic": "移动的终点到达，是「来」的完成态。",
+          "en": "The opportunity came when she least expected it.",
+          "zh": "机会在她最没想到的时候来了。"
+        },
+        {
+          "gloss": "v. 发生，出现",
+          "logic": "事物「向现实层面移动、显现」，引申为发生。",
+          "en": "How did it come to this?",
+          "zh": "事情怎么会变成这样？"
+        },
+        {
+          "gloss": "v. 按顺序排在（come first/last）",
+          "logic": "在某个序列中「到达」某个位置。",
+          "en": "Safety always comes first in this industry.",
+          "zh": "在这个行业，安全永远排在第一位。"
+        }
+      ],
+      "derivatives": [
+        {"w": "outcome", "gloss": "结果，结局"},
+        {"w": "income", "gloss": "收入，所得"},
+        {"w": "welcome", "gloss": "欢迎；受欢迎的"},
+        {"w": "become", "gloss": "成为，变成"}
+      ],
+      "examples": [
+        {
+          "en": "The opportunity came when she least expected it.",
+          "zh": "机会在她最没想到的时候来了。",
+          "source": "造句"
+        },
+        {
+          "en": "come to terms with",
+          "zh": "「接受、妥协」——高频口语表达，指接受难以改变的事实。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "arrive", "ipa": "/əˈraɪv/", "gloss": "到达，抵达（强调终点）", "note": "「到达」，比 come 更强调到达终点的动作，需说明地点"},
+        {"w": "approach", "ipa": "/əˈproʊtʃ/", "gloss": "接近，临近", "note": "「接近、临近」，强调靠近的过程；winter is approaching（冬天临近）"},
+        {"w": "occur", "ipa": "/əˈkɜːr/", "gloss": "发生（正式）", "note": "「发生」义，比 come（发生）更正式；an idea occurred to me（想法突然出现）"}
+      ],
+      "antonyms": [
+        {"w": "go", "note": "去"},
+        {"w": "leave", "note": "离开"}
+      ],
+      "nuance": "come 是最日常的「来」，指向说话者方向；go 是离开说话者方向——两者方向相反，不可混用。arrive 是到达终点的正式说法；come to（意识到/总计）是重要的延伸义。"
+    },
+    {
+      "word": "month",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/mʌnθ/",
+      "subgroup": "o",
+      "meaning": "n. 月（份）",
+      "etymology": "古英语 mōnath，源自 mōna（月亮）——月份是按月亮周期计算的。与 moon、Monday（月曜日）同根。",
+      "roots": [
+        {"part": "month（mōna）", "meaning": "月亮，月份"}
+      ],
+      "phonetics": "m + o /ʌ/ + nth，o 读 /ʌ/，词尾 -nth /nθ/ 需要齿间摩擦音，注意不要吞掉 /θ/。",
+      "core": "月亮完成一次盈亏周期的时间单位——自然节律的切片。",
+      "senses": [
+        {
+          "gloss": "n. 月，月份（时间单位）",
+          "logic": "唯一常用义，指日历中的一个月。",
+          "en": "The project is expected to last about six months.",
+          "zh": "该项目预计持续约六个月。"
+        }
+      ],
+      "derivatives": [
+        {"w": "monthly", "gloss": "每月的；月刊"},
+        {"w": "monthly payment", "gloss": "月供，月度付款"}
+      ],
+      "examples": [
+        {
+          "en": "The project is expected to last about six months.",
+          "zh": "该项目预计持续约六个月。",
+          "source": "造句"
+        },
+        {
+          "en": "month by month / month after month",
+          "zh": "「逐月；一个月接一个月」——描述趋势的高频时间副词结构。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "calendar month", "gloss": "日历月（完整的自然月）", "note": "「日历月」，强调按日历计算的完整月份"},
+        {"w": "period", "ipa": "/ˈpɪəriəd/", "gloss": "时期，时间段（泛指）", "note": "「时期」，泛指时间段，不指具体月份"}
+      ],
+      "antonyms": [
+        {"w": "year", "note": "年（更大时间单位）"},
+        {"w": "week", "note": "周（更小时间单位）"}
+      ],
+      "nuance": "month 指日历中的月份（January is the first month）；monthly 是形容词/副词（monthly payment 月供）；注意 mouth（嘴 /maʊθ/）和 month（月 /mʌnθ/）发音相似但不同，是常见混淆词对。"
+    },
+    {
+      "word": "mother",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈmʌðər/",
+      "subgroup": "o",
+      "meaning": "n. 母亲  v. 像母亲般照顾",
+      "etymology": "古英语 mōdor，印欧同根，与德语 Mutter、拉丁语 mater、希腊语 mētēr 同源——这是跨语言最古老的共有词之一。",
+      "roots": [
+        {"part": "mother（mōdor）", "meaning": "母亲"}
+      ],
+      "phonetics": "mo- /mʌ/ + ther /ðər/，o 读 /ʌ/，-ther 中 th 是浊齿间音 /ð/（同 the/this），与 father、brother、other 同韵。",
+      "core": "生命的起源与最初的庇护者——孕育、滋养、守护的来源。",
+      "senses": [
+        {
+          "gloss": "n. 母亲",
+          "logic": "本义，生育或养育子女的女性。",
+          "en": "She became a mother at thirty-two and found it completely changed her perspective.",
+          "zh": "她三十二岁当上母亲，发现这彻底改变了她的视角。"
+        },
+        {
+          "gloss": "v. 像母亲般照顾，过度保护",
+          "logic": "名词动用，带有「像老妈子一样管着」的含义，语气常偏负面。",
+          "en": "Stop mothering me — I'm old enough to make my own decisions.",
+          "zh": "别管我了，我已经够大了，可以自己做决定。"
+        }
+      ],
+      "derivatives": [
+        {"w": "motherhood", "gloss": "母亲身份，母性"},
+        {"w": "motherly", "gloss": "慈母般的"},
+        {"w": "motherland", "gloss": "祖国，母国"},
+        {"w": "godmother", "gloss": "教母"}
+      ],
+      "examples": [
+        {
+          "en": "She became a mother at thirty-two and found it completely changed her perspective.",
+          "zh": "她三十二岁当上母亲，发现这彻底改变了她的视角。",
+          "source": "造句"
+        },
+        {
+          "en": "mother tongue / mother country",
+          "zh": "「母语 / 祖国」——高频复合词，语言和地理双义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "mom/mum", "ipa": "/mɒm/ /mʌm/", "gloss": "妈妈（口语亲昵称呼）", "note": "口语亲昵称呼：美式 mom、英式 mum，都比 mother 更日常"},
+        {"w": "parent", "ipa": "/ˈpeərənt/", "gloss": "父母（性别中立，正式）", "note": "「父母」，性别中立，比 mother 更正式"}
+      ],
+      "antonyms": [
+        {"w": "father", "note": "父亲"},
+        {"w": "child", "note": "孩子（亲子关系另一端）"}
+      ],
+      "nuance": "mother、father、brother、other 这四个 -ther 词的 o 全读 /ʌ/，是一组高效批量记忆法。mother 作动词有「过度保护、像老妈子一样照顾」的含义（Stop mothering me!），语气偏负面。"
+    },
+    {
+      "word": "among",
+      "hl": "o",
+      "levels": ["托福"],
+      "ipa": "/əˈmʌŋ/",
+      "subgroup": "o",
+      "meaning": "prep. 在……中间；在……之中（三者或以上）",
+      "etymology": "古英语 onmang = on + gemang（人群、混合）。among 的核心义是「混在一群里」——多于两者时用 among，两者之间用 between。",
+      "roots": [
+        {"part": "a- (on)", "meaning": "在……上/中"},
+        {"part": "-mong（gemang）", "meaning": "人群、混合"}
+      ],
+      "phonetics": "首音节弱读 /ə/，重音在后 a-MONG，o 读 /ʌ/；词尾 -ng /ŋ/ 是鼻音，不要加 /g/。",
+      "tip": "among（三者以上）vs between（两者之间）——这是考试高频语法辨析。「among friends（在朋友圈里）」vs「between you and me（你我之间）」。",
+      "core": "置身于多个人或事物构成的群体之中——融合而非两两对立。",
+      "senses": [
+        {
+          "gloss": "prep. 在……之中（三者或以上）",
+          "logic": "唯一常用义，表示身处多个事物构成的群体内部。",
+          "en": "The disease spread quickly among the population.",
+          "zh": "疾病在人群中迅速蔓延。"
+        }
+      ],
+      "derivatives": [
+        {"w": "amongst", "gloss": "在……之中（among 的变体，较正式或英式）"}
+      ],
+      "examples": [
+        {
+          "en": "The disease spread quickly among the population.",
+          "zh": "疾病在人群中迅速蔓延。",
+          "source": "造句"
+        },
+        {
+          "en": "among other things",
+          "zh": "「其中之一；除此之外」——学术写作列举时的高频过渡短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "amid", "ipa": "/əˈmɪd/", "gloss": "在……当中（书面，常用于抽象语境）", "note": "「在……当中」，比 among 更书面、更正式，常用于抽象语境；amid confusion（在混乱中）"},
+        {"w": "within", "ipa": "/wɪˈðɪn/", "gloss": "在……范围之内", "note": "「在……范围内」，更强调界限之内；within the group（在团体内部）"},
+        {"w": "between", "ipa": "/bɪˈtwiːn/", "gloss": "在两者之间", "note": "两者之间，与 among 形成互补（两个用 between，三个以上用 among）"}
+      ],
+      "antonyms": [
+        {"w": "outside", "note": "在……外面"},
+        {"w": "apart from", "note": "除……之外"}
+      ],
+      "nuance": "among 用于三个及以上的群体内部（among students）；between 用于两者之间（between A and B），但也可用于三者彼此一对一关系（negotiations between three parties）；amid 更强调「处于混乱/困难的环境中」，语气更书面。"
+    },
+    {
+      "word": "wonder",
+      "hl": "o",
+      "levels": ["托福"],
+      "ipa": "/ˈwʌndər/",
+      "subgroup": "o",
+      "meaning": "v. 想知道；感到惊讶；怀疑  n. 奇迹；惊奇；惊叹",
+      "etymology": "古英语 wundor（名词）、wundrian（动词）「令人惊叹的事物」，日耳曼同根。wonderful（极好的）= wonder + ful，从「令人惊奇」褪化为「极好」。",
+      "roots": [
+        {"part": "wonder（wundor）", "meaning": "奇迹、惊奇"}
+      ],
+      "phonetics": "首音节重读 WON- = /wʌn/，-der 弱读 /dər/；o 读 /ʌ/，注意不要读成 /ɒ/（wander 「漫游」才读 /ɒ/）。",
+      "tip": "wonder（/ˈwʌndər/ 想知道/奇迹）vs wander（/ˈwɒndər/ 漫游）——一个字母之差，o 发音不同，意义天壤之别。",
+      "core": "面对未知或超乎寻常的事物时，内心升起的那种开阔感——可以是好奇，也可以是震撼。",
+      "senses": [
+        {
+          "gloss": "v. 想知道，感到好奇",
+          "logic": "面对未知而产生的「想弄清楚」的冲动。",
+          "en": "I wonder if she received my message.",
+          "zh": "我不知道她有没有收到我的消息。"
+        },
+        {
+          "gloss": "v. 感到惊奇，叹为观止",
+          "logic": "面对超乎预期的事物，心中升起震撼感。",
+          "en": "Scientists wonder how ancient civilisations built such precise structures.",
+          "zh": "科学家好奇古代文明如何建造出如此精确的结构。"
+        },
+        {
+          "gloss": "n. 奇迹，令人叹为观止的事物",
+          "logic": "那个引发内心开阔感的外部事物本身。",
+          "en": "The Great Wall is one of the wonders of the ancient world.",
+          "zh": "长城是古代世界奇迹之一。"
+        },
+        {
+          "gloss": "n. 惊奇，惊叹（情感状态）",
+          "logic": "内心那种开阔震撼的感受本身。",
+          "en": "The children stared at the magician in wonder.",
+          "zh": "孩子们惊叹地盯着魔术师。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wonderful", "gloss": "极好的，精彩的"},
+        {"w": "wonderfully", "gloss": "极好地，精彩地"},
+        {"w": "wonderland", "gloss": "奇境，仙境"},
+        {"w": "wondrous", "gloss": "奇妙的，令人叹为观止的（书面）"}
+      ],
+      "examples": [
+        {
+          "en": "Scientists wonder how ancient civilisations built such precise structures.",
+          "zh": "科学家好奇古代文明如何建造出如此精确的结构。",
+          "source": "造句"
+        },
+        {
+          "en": "no wonder / it's no wonder that",
+          "zh": "「难怪……」——口语和写作中表达「这完全可以理解」的高频句型。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "marvel", "ipa": "/ˈmɑːrvl/", "gloss": "奇迹；叹为观止地惊叹", "note": "「奇迹/惊叹」义的近义词，比 wonder 更强调叹为观止的震撼感；marvel at the view"},
+        {"w": "curiosity", "ipa": "/ˌkjʊəriˈɒsɪti/", "gloss": "好奇心（名词）", "note": "「好奇心」（名词），wonder 作「想知道」义时的近义名词"},
+        {"w": "miracle", "ipa": "/ˈmɪrəkl/", "gloss": "奇迹（超自然或极度罕见的）", "note": "「奇迹」，比 wonder 更强调超自然或极度罕见的事件"}
+      ],
+      "antonyms": [
+        {"w": "indifference", "note": "漠然，不感兴趣"},
+        {"w": "certainty", "note": "确定（与「想知道/怀疑」义相对）"}
+      ],
+      "nuance": "wonder 作动词有两义：「好奇/想知道」（I wonder if she's home）和「感到惊奇」（I wondered at his skill）。marvel 只有后一义，且语气更强。note：wonder 作名词（a wonder of the world 世界奇迹）比 miracle 更世俗，miracle 多含宗教或不可解释的意味。"
+    },
+    {
+      "word": "country",
+      "hl": "ou",
+      "levels": ["非托福"],
+      "ipa": "/ˈkʌntri/",
+      "subgroup": "ou",
+      "meaning": "n. 国家；农村，乡下  adj. 乡村的",
+      "etymology": "古法语 contrée，源自拉丁语 contrata（对面的地方）= contra（对面）+ -ata（地区）。中世纪指「面前展开的土地」→ 领土→ 国家。",
+      "roots": [
+        {"part": "contra-", "meaning": "对面、相对"},
+        {"part": "-try (contrata)", "meaning": "地区、土地"}
+      ],
+      "phonetics": "首音节重读 COUN- = /kʌn/，ou 读 /ʌ/；-try 弱读 /tri/。与 county（郡）、counter（柜台）是同族词。",
+      "core": "一片有边界的土地，可以是政治意义上的国家，也可以是城市之外的开阔乡野。",
+      "senses": [
+        {
+          "gloss": "n. 国家",
+          "logic": "「有边界的领土」引申为政治实体。",
+          "en": "More than fifty countries signed the agreement.",
+          "zh": "超过五十个国家签署了该协议。"
+        },
+        {
+          "gloss": "n. 农村，乡下",
+          "logic": "城市以外的「开阔土地」——与都市相对的田野地带，来自词源「面前展开的土地」的原始意象。",
+          "en": "She moved to the country to escape the noise of the city.",
+          "zh": "她搬到乡下，逃离城市的喧嚣。"
+        },
+        {
+          "gloss": "adj. 乡村的，乡土的",
+          "logic": "由名词「乡下」转为形容词。",
+          "en": "They spent a quiet country weekend hiking through the hills.",
+          "zh": "他们在乡间度过了一个宁静的周末，徒步穿越山丘。"
+        }
+      ],
+      "derivatives": [
+        {"w": "countryside", "gloss": "农村地区，乡间"},
+        {"w": "countrywide", "gloss": "全国范围的"},
+        {"w": "countryman", "gloss": "同胞；乡下人"}
+      ],
+      "examples": [
+        {
+          "en": "She moved to the country to escape the noise of the city.",
+          "zh": "她搬到乡下，逃离城市的喧嚣。",
+          "source": "造句"
+        },
+        {
+          "en": "country music / cross-country",
+          "zh": "「乡村音乐 / 越野（赛跑）」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "nation", "ipa": "/ˈneɪʃn/", "gloss": "国家，民族（强调政治与民族认同）", "note": "「国家/民族」，比 country 更强调政治与民族认同；nation-state（民族国家）"},
+        {"w": "state", "ipa": "/steɪt/", "gloss": "国家，州（强调政治机构）", "note": "「国家/州」，强调政治组织架构，比 country 更正式；welfare state（福利国家）"},
+        {"w": "countryside", "ipa": "/ˈkʌntrisaɪd/", "gloss": "农村地区，乡间", "note": "「农村地区」义，比 country 更精确地指乡间土地"}
+      ],
+      "antonyms": [
+        {"w": "city", "note": "城市（乡村义相对）"},
+        {"w": "abroad", "note": "国外（本国义相对）"}
+      ],
+      "nuance": "country 最日常，兼指国家和农村（两义）；nation 强调民族与政治共同体；state 侧重政治机构和主权；countryside 专指乡间土地，不含「国家」义。"
+    },
+    {
+      "word": "trouble",
+      "hl": "ou",
+      "levels": ["托福"],
+      "ipa": "/ˈtrʌbl/",
+      "subgroup": "ou",
+      "meaning": "n. 麻烦；困难；问题  v. 使烦恼；麻烦（某人做某事）",
+      "etymology": "古法语 truble，源自拉丁语 turbula（混乱、骚动），与 turbulent（动荡的）、disturb（打扰）同根——都含「搅动」的核心义。",
+      "roots": [
+        {"part": "trouble（turbula）", "meaning": "混乱、搅动"}
+      ],
+      "phonetics": "首音节重读 TROU- = /trʌ/，ou 读 /ʌ/；-ble 弱读 /bl/，b 和 l 连读不加元音。",
+      "core": "被搅动的浑水——一种让人不安、需要处理的混乱状态。",
+      "senses": [
+        {
+          "gloss": "n. 麻烦，困难，问题",
+          "logic": "本义，某种令人不安、需要解决的搅动状态。",
+          "en": "The company ran into serious financial trouble last year.",
+          "zh": "公司去年陷入严重的财务困境。"
+        },
+        {
+          "gloss": "v. 使烦恼，使不安",
+          "logic": "将「搅动」施加给某人，使其内心不平静。",
+          "en": "Something about his answer troubled her.",
+          "zh": "他的回答有什么地方让她感到不安。"
+        },
+        {
+          "gloss": "v. 麻烦（某人做某事，礼貌请求）",
+          "logic": "请求别人「费事」帮忙，即让对方承担一点搅动/不便。",
+          "en": "May I trouble you to pass the salt?",
+          "zh": "能麻烦你把盐递过来吗？"
+        }
+      ],
+      "derivatives": [
+        {"w": "troublesome", "gloss": "令人烦恼的，麻烦的"},
+        {"w": "troubled", "gloss": "困扰的；动荡的"},
+        {"w": "troublemaker", "gloss": "惹麻烦的人，捣乱者"}
+      ],
+      "examples": [
+        {
+          "en": "The company ran into serious financial trouble last year.",
+          "zh": "公司去年陷入严重的财务困境。",
+          "source": "造句"
+        },
+        {
+          "en": "go to the trouble of doing / take the trouble to do",
+          "zh": "「特地费力做某事」——表达对方体贴用心的高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "difficulty", "ipa": "/ˈdɪfɪkəlti/", "gloss": "困难，障碍（客观的）", "note": "「困难」，比 trouble 更正式，强调客观障碍；face difficulties（面对困难）"},
+        {"w": "problem", "ipa": "/ˈprɒbləm/", "gloss": "问题，需要解决的事项", "note": "「问题」，比 trouble 更中性，侧重需要解决的具体事项"},
+        {"w": "nuisance", "ipa": "/ˈnjuːsns/", "gloss": "令人烦恼的人或事，讨厌的东西", "note": "「令人烦恼的人/事」，比 trouble 更带轻蔑或无奈感"}
+      ],
+      "antonyms": [
+        {"w": "ease", "note": "轻松、简便"},
+        {"w": "solution", "note": "解决方案（与「问题」义相对）"}
+      ],
+      "nuance": "trouble 最口语（in trouble=有麻烦），problem 更中性正式（solve a problem），difficulty 强调客观难度（learning difficulty），nuisance 含「恼人」情感色彩。trouble 作动词（May I trouble you？）是客气请求的正式用法。"
+    },
+    {
+      "word": "young",
+      "hl": "ou",
+      "levels": ["非托福"],
+      "ipa": "/jʌŋ/",
+      "subgroup": "ou",
+      "meaning": "adj. 年轻的；幼小的  n. 幼崽（总称）",
+      "etymology": "古英语 geong，日耳曼同根，与德语 jung 同源。youth（青年）是同根派生词，youth culture（青年文化）是社会学高频词。",
+      "roots": [
+        {"part": "young（geong）", "meaning": "年轻的"}
+      ],
+      "phonetics": "y /j/ + ou /ʌ/ + ng /ŋ/，ou 读 /ʌ/，ng 是鼻腔共鸣音不加 /g/；注意 y 在此是辅音 /j/ 不是元音。",
+      "core": "处于生命早期、尚未发展成熟的状态——充满可能性但经验尚浅。",
+      "senses": [
+        {
+          "gloss": "adj. 年轻的，幼小的",
+          "logic": "本义，年龄处于生命的早期阶段。",
+          "en": "The programme is designed to support young entrepreneurs.",
+          "zh": "该项目旨在支持年轻创业者。"
+        },
+        {
+          "gloss": "n. 幼崽（动物的后代，总称）",
+          "logic": "「幼小的个体」名词化，特指动物未成熟的后代。",
+          "en": "The lioness protects her young fiercely.",
+          "zh": "母狮凶猛地保护着她的幼崽。"
+        }
+      ],
+      "derivatives": [
+        {"w": "youth", "gloss": "青年；青春期"},
+        {"w": "youngster", "gloss": "年轻人，小孩"},
+        {"w": "younger", "gloss": "更年轻的"}
+      ],
+      "examples": [
+        {
+          "en": "The programme is designed to support young entrepreneurs.",
+          "zh": "该项目旨在支持年轻创业者。",
+          "source": "造句"
+        },
+        {
+          "en": "young at heart",
+          "zh": "「心态年轻」——形容人虽年迈但保持年轻心态的高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "youthful", "ipa": "/ˈjuːθfl/", "gloss": "充满青春活力的", "note": "「充满青春活力的」，比 young 更强调充满活力的特质，可形容事物；a youthful spirit"},
+        {"w": "juvenile", "ipa": "/ˈdʒuːvənaɪl/", "gloss": "青少年的，未成年的（法律/正式）", "note": "「青少年的」，法律和正式语境，含法律责任年龄的含义；juvenile delinquent（少年犯）"},
+        {"w": "immature", "ipa": "/ˌɪməˈtjʊər/", "gloss": "不成熟的（偏负面）", "note": "「不成熟的」，比 young 带负面含义，强调心理或行为上的幼稚"}
+      ],
+      "antonyms": [
+        {"w": "old", "note": "年老的"},
+        {"w": "elderly", "note": "年迈的（更礼貌的说法）"}
+      ],
+      "nuance": "young 最中性（年轻、幼小）；youthful 带积极意味（充满活力）；juvenile 偏法律/正式（未成年人）；immature 偏贬义（不成熟）。作名词「幼崽」时，the young of this species（这个物种的幼崽）是生物学正式用法。"
+    },
+    {
+      "word": "enough",
+      "hl": "ou",
+      "levels": ["托福"],
+      "ipa": "/ɪˈnʌf/",
+      "subgroup": "ou",
+      "meaning": "adj./adv. 足够的/地  pron. 足够的量",
+      "etymology": "古英语 genōh，日耳曼同根，与德语 genug 同源。-ough 词尾在英语里发音极不规律：enough /nʌf/、though /ðoʊ/、through /θruː/、thought /θɔːt/——四个词四个音，enough 是其中最常见的 /ʌf/ 读法。",
+      "roots": [
+        {"part": "enough（genōh）", "meaning": "足够"}
+      ],
+      "phonetics": "重音在后 e-NOUGH，-ough = /ʌf/，g 不发音；tough、rough 同韵（-ough = /ʌf/）。",
+      "tip": "-ough 词尾四个不同发音：enough/tough/rough（/ʌf/）、though/although（/oʊ/）、thought/bought（/ɔːt/）、through（/uː/）——enough 是 /ʌf/ 这条路的旗舰词。",
+      "core": "刚好达到所需，不多不少——满足要求的临界点。",
+      "senses": [
+        {
+          "gloss": "adj. 足够的",
+          "logic": "本义，数量或程度达到所需标准。",
+          "en": "We don't have enough data to draw a conclusion.",
+          "zh": "我们没有足够的数据来得出结论。"
+        },
+        {
+          "gloss": "adv. 足够地（修饰形容词或副词）",
+          "logic": "副词用法，说明程度达到标准，通常置于被修饰词之后。",
+          "en": "She was brave enough to speak the truth in public.",
+          "zh": "她有足够的勇气当众说出真相。"
+        },
+        {
+          "gloss": "pron. 足够的量（代词）",
+          "logic": "代替「足够数量的某物」，作主语或宾语。",
+          "en": "I've had enough — please don't serve me any more.",
+          "zh": "我已经吃够了，请别再给我了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "not enough", "gloss": "不够，不足（常用否定结构）"}
+      ],
+      "examples": [
+        {
+          "en": "We don't have enough data to draw a conclusion.",
+          "zh": "我们没有足够的数据来得出结论。",
+          "source": "造句"
+        },
+        {
+          "en": "sure enough / fair enough",
+          "zh": "「果然不出所料 / 也有道理（勉强接受）」——两个口语高频固定短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sufficient", "ipa": "/səˈfɪʃnt/", "gloss": "足够的（正式书面）", "note": "「足够的」，比 enough 更正式书面；sufficient evidence（充分证据）"},
+        {"w": "adequate", "ipa": "/ˈædɪkwɪt/", "gloss": "勉强够用的，达到最低标准的", "note": "「够用的、勉强足够的」，比 enough 含「刚好达到最低标准」的意味"},
+        {"w": "ample", "ipa": "/ˈæmpl/", "gloss": "充裕的，绰绰有余的", "note": "「充裕的、绰绰有余的」，比 enough 程度更高；ample time（时间绰绰有余）"}
+      ],
+      "antonyms": [
+        {"w": "insufficient", "note": "不足的"},
+        {"w": "lacking", "note": "缺乏的"}
+      ],
+      "nuance": "enough 是口语通用词；sufficient 是正式等义词（sufficient condition 充分条件）；adequate 暗含「刚好够用但不多余」（adequate but not excellent）；ample 强调「绰绰有余」，是三者中程度最高的。"
+    },
+    {
+      "word": "tough",
+      "hl": "ou",
+      "levels": ["托福"],
+      "ipa": "/tʌf/",
+      "subgroup": "ou",
+      "meaning": "adj. 坚韧的；艰难的；强硬的；（肉）韧而难嚼的",
+      "etymology": "古英语 tōh「韧的、有黏性的」，日耳曼同根。从物理「韧性」引申为性格「坚韧」和处境「艰难」。",
+      "roots": [
+        {"part": "tough（tōh）", "meaning": "韧、坚硬"}
+      ],
+      "phonetics": "-ough = /ʌf/，与 enough、rough 同韵；单音节，发音短促有力。",
+      "core": "不易断裂、不易屈服的韧性——物质上难以切断，性格上难以压垮，处境上难以应对。",
+      "senses": [
+        {
+          "gloss": "adj. 坚韧的，不屈的（性格）",
+          "logic": "本义的物理韧性投射到人的性格——不易被打倒。",
+          "en": "You have to be tough to survive in this industry.",
+          "zh": "要在这个行业生存下来，你必须足够坚韧。"
+        },
+        {
+          "gloss": "adj. 艰难的，严峻的（处境）",
+          "logic": "「难以应对」的处境，就像韧性材料难以切断一样难以克服。",
+          "en": "It was a tough decision, but she chose to leave.",
+          "zh": "这是个艰难的决定，但她选择了离开。"
+        },
+        {
+          "gloss": "adj. 强硬的，严厉的（态度/政策）",
+          "logic": "对外「不易弯曲」，表现为强硬立场。",
+          "en": "The government took a tough stance on immigration.",
+          "zh": "政府在移民问题上采取了强硬立场。"
+        },
+        {
+          "gloss": "adj. 韧而难嚼的（肉类食物）",
+          "logic": "物理韧性的直接本义，形容食物质地坚韧。",
+          "en": "The steak was overcooked and tough.",
+          "zh": "牛排烤过头了，又老又硬。"
+        }
+      ],
+      "derivatives": [
+        {"w": "toughness", "gloss": "坚韧，韧性"},
+        {"w": "toughen", "gloss": "使变得坚韧，使强化"},
+        {"w": "tough-minded", "gloss": "意志坚定的，现实主义的"}
+      ],
+      "examples": [
+        {
+          "en": "It was a tough decision, but she chose to leave.",
+          "zh": "这是个艰难的决定，但她选择了离开。",
+          "source": "造句"
+        },
+        {
+          "en": "tough it out",
+          "zh": "「咬牙坚持到底」——高频口语短语，强调在艰难中不放弃。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "resilient", "ipa": "/rɪˈzɪliənt/", "gloss": "有韧性的，能从打击中恢复的", "note": "「有韧性的」，比 tough 更强调经历打击后的恢复力；resilient economy（有韧性的经济）"},
+        {"w": "difficult", "ipa": "/ˈdɪfɪkəlt/", "gloss": "困难的，艰难的", "note": "「艰难的」义，比 tough 更正式，不含韧性含义"},
+        {"w": "stern", "ipa": "/stɜːrn/", "gloss": "严厉的，严肃的（态度）", "note": "「严厉的」，比 tough 更强调态度严肃，不含「艰难」义"}
+      ],
+      "antonyms": [
+        {"w": "fragile", "note": "脆弱的"},
+        {"w": "easy", "note": "容易的"}
+      ],
+      "nuance": "tough 语义最丰富：性格坚韧（tough person）、处境艰难（tough time）、物质坚硬（tough leather）、食物难嚼（tough steak）；resilient 专指在打击后的恢复弹性，比 tough 更积极、更心理化；hard 和 difficult 指难度，不含韧性含义。"
+    },
+    {
+      "word": "double",
+      "hl": "ou",
+      "levels": ["托福"],
+      "ipa": "/ˈdʌbl/",
+      "subgroup": "ou",
+      "meaning": "adj. 双的，两倍的  v. 使加倍；（演员）兼演  n. 两倍；替身  adv. 成双地",
+      "etymology": "拉丁语 duplus = duo(二) + -plus(倍) = 「二倍的」。与 duo（二人组）、dual（双重的）、duplicate（复制）同根——都含「二」的核心义。",
+      "roots": [
+        {"part": "du- (duo)", "meaning": "二"},
+        {"part": "-ble (-plus)", "meaning": "倍"}
+      ],
+      "phonetics": "首音节重读 DOU- = /dʌ/，ou 读 /ʌ/；-ble 弱读 /bl/。与 trouble 同韵尾（-uble = /ʌbl/）。",
+      "core": "「二」这个数字的核心感觉——翻一倍，成双，或者一个变成两个。",
+      "senses": [
+        {
+          "gloss": "adj. 双的，两倍的",
+          "logic": "本义，数量或程度是原来的两倍。",
+          "en": "She booked a double room for the two of them.",
+          "zh": "她为他们两人预订了一间双人房。"
+        },
+        {
+          "gloss": "v. 使加倍，翻倍",
+          "logic": "使数量变成两倍。",
+          "en": "The company's profits doubled in just two years.",
+          "zh": "公司利润在两年内翻了一倍。"
+        },
+        {
+          "gloss": "v. 兼任，身兼两职（double as/for）",
+          "logic": "一个人「变成两个」——同时扮演两个角色。",
+          "en": "The conference room doubles as a storage space.",
+          "zh": "这间会议室同时也充当储藏室使用。"
+        },
+        {
+          "gloss": "n. 两倍；替身",
+          "logic": "「两倍的量」或「外形上的另一个自己」。",
+          "en": "She hired a stunt double for the dangerous scenes.",
+          "zh": "她为危险场景雇了一名特技替身。"
+        },
+        {
+          "gloss": "adv. 成双地，两个叠在一起地",
+          "logic": "副词，描述「两份叠合」的状态。",
+          "en": "He was bent double with laughter.",
+          "zh": "他笑得弯下了腰。"
+        }
+      ],
+      "derivatives": [
+        {"w": "doubtful", "gloss": "（注意：doubtful 来自 doubt，不是 double 的派生词）"},
+        {"w": "doubles", "gloss": "双打（网球/羽毛球）"},
+        {"w": "double-check", "gloss": "再次核对，复查"}
+      ],
+      "examples": [
+        {
+          "en": "The company's profits doubled in just two years.",
+          "zh": "公司利润在两年内翻了一倍。",
+          "source": "造句"
+        },
+        {
+          "en": "double-check / double standard",
+          "zh": "「再次核对 / 双重标准」——高频复合词，兼含谨慎与不公正两个语境。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "dual", "ipa": "/ˈdjuːəl/", "gloss": "双重的，两面的（正式）", "note": "「双重的」，形容词义，比 double 更正式，强调两种不同属性；dual nationality（双重国籍）"},
+        {"w": "twice", "ipa": "/twaɪs/", "gloss": "两倍，两次（副词）", "note": "「两倍/两次」，副词，与 double 数量义互换；twice as much = double the amount"},
+        {"w": "duplicate", "ipa": "/ˈdjuːplɪkeɪt/", "gloss": "完全复制，重复", "note": "「复制、重复」，强调完全复制一份；duplicate the file（复制文件）"}
+      ],
+      "antonyms": [
+        {"w": "halve", "note": "减半"},
+        {"w": "single", "note": "单一的"}
+      ],
+      "nuance": "double 最通用（两倍或双重）；dual 更正式，常用于性质上的两面（dual purpose 双重用途）；twice 是副词，只说「两倍/两次」；duplicate 强调完全复制。「double or nothing」（孤注一掷）是赌博习语。"
+    },
+    {
+      "word": "blood",
+      "hl": "oo",
+      "levels": ["非托福"],
+      "ipa": "/blʌd/",
+      "subgroup": "other",
+      "meaning": "n. 血液；血缘；激情  v. 使初次经历（正式）",
+      "etymology": "古英语 blōd，日耳曼同根，与德语 Blut 同源。blood 在英语中构成大量复合词：bloodstream（血流）、bloodshot（充血的）、cold-blooded（冷血的）。",
+      "roots": [
+        {"part": "blood（blōd）", "meaning": "血液"}
+      ],
+      "phonetics": "bl- + oo /ʌ/ + d，oo 在绝大多数词里读 /uː/（food/moon）或 /ʊ/（book/good），但 blood 和 flood 是仅有的两个 oo→/ʌ/ 的特例，必须单独记。",
+      "tip": "blood 和 flood 是英语里 oo 读 /ʌ/ 的仅有两个词——把这对「血洪」绑在一起记，不会再混。",
+      "core": "生命体内循环流动的红色液体——是生命力、血脉传承和情感激烈程度的象征。",
+      "senses": [
+        {
+          "gloss": "n. 血液",
+          "logic": "本义，生物体内循环的液体。",
+          "en": "Her blood pressure rose sharply during the argument.",
+          "zh": "争论期间她的血压骤然升高。"
+        },
+        {
+          "gloss": "n. 血缘，血统",
+          "logic": "「同一血液」引申为家族传承与亲属关系。",
+          "en": "They are bound by blood and will always support each other.",
+          "zh": "他们血脉相连，会永远相互支持。"
+        },
+        {
+          "gloss": "n. 激情，热血（blood boils/runs hot）",
+          "logic": "血液沸腾的生理感觉引申为强烈的情绪激动。",
+          "en": "His blood boiled every time he heard the injustice.",
+          "zh": "每次听到这种不公正，他都热血沸腾。"
+        },
+        {
+          "gloss": "v. 使初次经历（血的洗礼）",
+          "logic": "猎场上让新手第一次接触猎物的血，引申为「让某人初次体验真实考验」，多用于正式或文学语境。",
+          "en": "The young soldiers were blooded in their first real combat mission.",
+          "zh": "年轻士兵们在第一次真实战斗任务中经历了血火考验。"
+        }
+      ],
+      "derivatives": [
+        {"w": "bloody", "gloss": "血腥的；极其（英式口语加强词）"},
+        {"w": "bloodstream", "gloss": "血流，血液循环"},
+        {"w": "cold-blooded", "gloss": "冷血的；蓄意的"},
+        {"w": "bloodshed", "gloss": "流血事件，杀戮"}
+      ],
+      "examples": [
+        {
+          "en": "Her blood pressure rose sharply during the argument.",
+          "zh": "争论期间她的血压骤然升高。",
+          "source": "造句"
+        },
+        {
+          "en": "in cold blood",
+          "zh": "「蓄意地、冷血地」——出自 Truman Capote 的纪实名作《In Cold Blood》（冷血），指预谋犯罪。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "gore", "ipa": "/ɡɔːr/", "gloss": "（凝固的）血迹，血腥场面", "note": "「（凝固的）血迹」，比 blood 更残忍，多见于文学或恐怖语境；gory scene（血腥场面）"},
+        {"w": "lineage", "ipa": "/ˈlɪniɪdʒ/", "gloss": "血统，世系（正式）", "note": "「血统、世系」，血缘义的正式近义词；noble lineage（显赫血统）"}
+      ],
+      "antonyms": [],
+      "nuance": "blood 是中性基础词；gore 强调流出的、令人不适的血；lineage 专指血脉传承，不指物理血液。「blood is thicker than water」（血浓于水）是英语核心谚语，强调血亲关系高于一切。"
+    },
+    {
+      "word": "flood",
+      "hl": "oo",
+      "levels": ["托福"],
+      "ipa": "/flʌd/",
+      "subgroup": "other",
+      "meaning": "n. 洪水；大量涌入  v. 淹没；大量涌入",
+      "etymology": "古英语 flōd「流水、洪水」，日耳曼同根，与德语 Flut 同源。The Flood 特指圣经中的诺亚洪水（Noah's Ark），是英语文化的核心典故。",
+      "roots": [
+        {"part": "flood（flōd）", "meaning": "流水、洪水"}
+      ],
+      "phonetics": "fl- + oo /ʌ/ + d，oo 读 /ʌ/ 是特例，与 blood 构成英语仅有的 oo→/ʌ/ 两词对。",
+      "core": "水量远超容纳极限而漫溢——可以是真实的洪水，也可以是任何事物的大量涌入。",
+      "senses": [
+        {
+          "gloss": "n. 洪水，水灾",
+          "logic": "本义，水量超过河道/地面承载极限而泛滥。",
+          "en": "Heavy rains caused severe flooding in the low-lying areas.",
+          "zh": "强降雨导致低洼地区严重洪涝。"
+        },
+        {
+          "gloss": "n. 大量涌入（比喻）",
+          "logic": "「洪水式的大量」引申为任何事物的汹涌而来。",
+          "en": "The company received a flood of complaints after the announcement.",
+          "zh": "声明发出后，公司收到大量投诉。"
+        },
+        {
+          "gloss": "v. 淹没，使泛滥",
+          "logic": "水覆盖地面，超出正常边界。",
+          "en": "The river flooded the surrounding farmland.",
+          "zh": "河水淹没了周边的农田。"
+        },
+        {
+          "gloss": "v. 大量涌入，充斥",
+          "logic": "比喻义，像洪水一样大量涌入某个空间或领域。",
+          "en": "Cheap imports flooded the domestic market.",
+          "zh": "廉价进口商品充斥了国内市场。"
+        }
+      ],
+      "derivatives": [
+        {"w": "flooding", "gloss": "洪涝，泛滥"},
+        {"w": "floodgate", "gloss": "水闸；（open the floodgates）开闸放水（比喻无法阻挡）"},
+        {"w": "floodlight", "gloss": "泛光灯，强力投光灯"}
+      ],
+      "examples": [
+        {
+          "en": "Heavy rains caused severe flooding in the low-lying areas.",
+          "zh": "强降雨导致低洼地区严重洪涝。",
+          "source": "造句"
+        },
+        {
+          "en": "a flood of complaints / flood the market",
+          "zh": "「投诉如潮 / 充斥市场」——大量涌入义的高频比喻用法，托福写作常用。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "deluge", "ipa": "/ˈdeljuːdʒ/", "gloss": "暴雨；毁灭性洪流；铺天盖地的大量", "note": "「暴雨、洪流」，比 flood 更正式且量更大，常指毁灭性的大洪水或信息铺天盖地；a deluge of emails"},
+        {"w": "inundation", "ipa": "/ˌɪnʌnˈdeɪʃn/", "gloss": "淹没，泛滥（地理/工程学术词）", "note": "「淹没」，正式学术词，多用于地理或工程语境；coastal inundation（海岸淹没）"},
+        {"w": "surge", "ipa": "/sɜːrdʒ/", "gloss": "骤增，大量涌入（强调速度）", "note": "「涌入/骤增」，比 flood 更强调速度；a surge in demand（需求激增）"}
+      ],
+      "antonyms": [
+        {"w": "drought", "note": "干旱"},
+        {"w": "trickle", "note": "细流（流量极少）"}
+      ],
+      "nuance": "flood 最通用（洪水或大量涌入）；deluge 量更大更正式，含毁灭性含义；inundation 是地理/工程学术词；surge 更强调速度快而非量大。「flood of emotions」（情绪涌来）是文学常见比喻，deluge of requests（请求如洪水般涌来）语气更夸张。"
+    }
+  ]
+}

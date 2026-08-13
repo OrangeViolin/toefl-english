@@ -1,0 +1,1463 @@
+{
+  "id": "bird",
+  "combo": "er·ir·ur",
+  "title": "/ɜː/ 中央长音家族",
+  "sound": "/ɜː/ · /ɜːr/",
+  "subtitle": "四种写法，同一个音——er/ir/ur/ear 全部读 /ɜː/",
+  "intro": "/ɜː/ 是英语里最「中央」的长元音：嘴自然半开，舌头悬在口腔中部不碰任何地方，嘴唇不圆不扁，发一个拉长的「呃——」。美式英语加卷舌变 /ɜːr/，英式英语保持纯元音。它有四条拼写路：er（her、term）、ir（bird、first）、ur（turn、nurse）、ear（earth、learn）。规律稳定：只要见到这四种字母组合在重读音节，几乎都读 /ɜː/；唯一要防的是 ear 组——多数 ear 读 /ɪər/（hear、dear），只有少数读 /ɜː/（earth、learn、heard），这批要单独记。",
+  "subgroups": [
+    {
+      "key": "er",
+      "tag": "er → /ɜːr/",
+      "label": "✅ er = /ɜːr/",
+      "desc": "her/term/serve：er 在重读音节几乎稳定读 /ɜː(r)/。非重读音节弱化为 /ər/（teacher、number），注意区分。prefer 重音在后，per- 是重读音节，读足 /pɜːr/，别丢音。"
+    },
+    {
+      "key": "ir",
+      "tag": "ir → /ɜːr/",
+      "label": "ir = /ɜːr/",
+      "desc": "bird/girl/first：ir 在重读音节规律极稳定，和 er 读同一个音。confirm 里的 fir- 是重读音节，-con 弱读 /kən/，不要把 firm 读成 /fɪrm/。"
+    },
+    {
+      "key": "ur",
+      "tag": "ur → /ɜːr/",
+      "label": "ur = /ɜːr/",
+      "desc": "turn/burn/nurse：ur 组和 er/ir 完全同音，三者可以互换拼写的历史原因是古英语方言差异。disturb 的重音在后，-turb 是足量 /tɜːrb/，不要弱读。"
+    },
+    {
+      "key": "ear",
+      "tag": "ear → /ɜːr/（特）",
+      "label": "ear = /ɜːr/",
+      "desc": "earth/learn/heard：ear 大多数读 /ɪər/（hear、near、fear），只有 earth/earn/learn/heard/early/search 等读 /ɜː/。记忆钩：这批 ear 词含义都比较「落地」（土地、学习、听到），不像 hear/dear 那样「悬在空中」。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-urn / -urn (/ɜːrn/)",
+      "words": ["turn", "burn", "learn", "earn", "return"]
+    },
+    {
+      "label": "-irst / -irt (/ɜːrt/)",
+      "words": ["first", "shirt", "dirt", "hurt", "birth"]
+    },
+    {
+      "label": "-erve / -urve (/ɜːrv/)",
+      "words": ["serve", "nerve", "curve", "disturb"]
+    }
+  ],
+  "words": [
+    {
+      "word": "her",
+      "hl": "er",
+      "levels": ["六级"],
+      "ipa": "/hɜːr/",
+      "subgroup": "er",
+      "meaning": "pron. 她（宾格）；她的（所有格）",
+      "etymology": "古英语 hire，阴性代词的斜格形式（宾格+所有格合一），日耳曼语系同根词广泛存在。her 既作宾格（I love her）也作所有格（her book），是英语代词格变化的残余化石。",
+      "roots": [
+        {"part": "her（hire）", "meaning": "阴性代词斜格"}
+      ],
+      "phonetics": "h + er /ɜːr/：英式不卷舌 /hɜː/，美式卷舌 /hɜːr/。her 是学 /ɜːr/ 最短的锚定词，读音位教学必从此开始。非重读时弱化为 /ər/（pass her quickly）。",
+      "tip": "her 是 /ɜːr/ 音位的最短锚定词——记住这一个，其余同组词的元音就有了基准。",
+      "core": "「她」这个人的整体存在感——宾格时是被指向的对象，所有格时是归属的标记，两者都在说「她」的位置。",
+      "senses": [
+        {
+          "gloss": "pron. 她（宾格，作动词或介词的宾语）",
+          "logic": "核心「她的存在」→ 被他人动作指向的对象",
+          "en": "I called her three times but she never picked up.",
+          "zh": "我打了她三次电话，但她从来没接。"
+        },
+        {
+          "gloss": "pron. 她的（所有格，修饰名词）",
+          "logic": "核心「她的存在」→ 归属于她的事物",
+          "en": "Her voice was calm, but her hands were shaking.",
+          "zh": "她的声音很平静，但她的手在颤抖。"
+        }
+      ],
+      "derivatives": [
+        {"w": "herself", "gloss": "她自己（反身代词）"},
+        {"w": "hers", "gloss": "她的（独立所有格，后不接名词）"},
+        {"w": "she", "gloss": "她（主格）"}
+      ],
+      "examples": [
+        {
+          "en": "I gave her the keys and she left without a word.",
+          "zh": "我把钥匙给了她，她一言不发地离开了。",
+          "source": "造句"
+        },
+        {
+          "en": "her own terms",
+          "zh": "「按她自己的条件」——强调自主的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "she", "ipa": "/ʃiː/", "gloss": "她（主格）", "note": "主格形式，her 作宾语和定语，she 作主语；两者互补，不替换"},
+        {"w": "herself", "ipa": "/hɜːrˈself/", "gloss": "她自己（反身代词）", "note": "反身代词，强调「她亲自」或用于反身动作；she hurt herself（她伤了自己）"}
+      ],
+      "antonyms": [
+        {"w": "him", "note": "他（男性宾格）"}
+      ],
+      "nuance": "her 一词身兼宾格和所有格，是英语中罕见的格合并现象：I love her（宾格）vs her bag（所有格）。hers（独立所有格）则用于 that bag is hers，无需跟名词。"
+    },
+    {
+      "word": "term",
+      "hl": "er",
+      "levels": ["六级", "托福"],
+      "ipa": "/tɜːrm/",
+      "subgroup": "er",
+      "meaning": "n. 术语；学期；任期；条款（复数 terms）  v. 将……称为",
+      "etymology": "拉丁语 terminus「边界、终点」，经法语进入英语。「有界定的一段时间」→ 学期/任期；「有界定的词」→ 术语；「有界定的条件」→ 条款。terminate（终止）、terminal（终端）同根。",
+      "roots": [
+        {"part": "term（terminus）", "meaning": "边界、终点、限定范围"}
+      ],
+      "phonetics": "t + er /ɜːr/ + m，单音节，重读足量；在 terminal、determine 里 ter- 仍读 /tɜːr/，帮助辨认词根。",
+      "tip": "term 的核心是「划定边界」：时间有边界→学期/任期，语义有边界→术语，协议有边界→条款。",
+      "core": "划定边界的感觉——任何被清晰界定、框起来的事物，无论是时间段、专业词汇还是协议条件，都是 term 的领地。",
+      "senses": [
+        {
+          "gloss": "n. 术语（某领域专用词汇）",
+          "logic": "「划定边界」→ 语义边界清晰、只属于某一领域的词",
+          "en": "The doctor used medical terms I didn't understand.",
+          "zh": "医生用了些我听不懂的医学术语。"
+        },
+        {
+          "gloss": "n. 学期（学年中划定的时间段）",
+          "logic": "「划定边界」→ 时间上有明确起止的一段",
+          "en": "The exam is scheduled for the last week of term.",
+          "zh": "考试安排在学期最后一周。"
+        },
+        {
+          "gloss": "n. 任期（职位在时间上的界定）",
+          "logic": "「划定边界」→ 担任职务的时间范围",
+          "en": "The president is serving his second term in office.",
+          "zh": "总统正在履行他的第二届任期。"
+        },
+        {
+          "gloss": "n. 条款（协议中划定权责的条件，常用复数 terms）",
+          "logic": "「划定边界」→ 协议里每一条边界和约定",
+          "en": "Read the terms carefully before signing the contract.",
+          "zh": "签合同前请仔细阅读条款。"
+        },
+        {
+          "gloss": "v. 将……称为、把……叫做",
+          "logic": "「划定边界」→ 用一个词给某事物贴上清晰的标签",
+          "en": "What she did can only be termed a miracle.",
+          "zh": "她所做的事只能称之为奇迹。"
+        }
+      ],
+      "derivatives": [
+        {"w": "terminal", "gloss": "终端；末期的；终点站"},
+        {"w": "terminate", "gloss": "终止，结束"},
+        {"w": "terminology", "gloss": "术语体系，专业词汇"},
+        {"w": "determine", "gloss": "决定，确定（词根含「划定界限」义）"}
+      ],
+      "examples": [
+        {
+          "en": "The contract included strict terms about delivery deadlines.",
+          "zh": "合同包含关于交货期限的严格条款。",
+          "source": "造句"
+        },
+        {
+          "en": "in the long term / in terms of",
+          "zh": "「从长远来看 / 就……而言」——学术写作最高频的两个 term 搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "period", "ipa": "/ˈpɪəriəd/", "gloss": "时期，阶段", "note": "「时期」义的近义，比 term 更泛，无「固定边界」含义；a period of growth（成长期）"},
+        {"w": "terminology", "ipa": "/ˌtɜːrmɪˈnɒlədʒi/", "gloss": "术语体系，专业词汇集合", "note": "「术语体系」，term 是单个术语，terminology 是一套领域词汇系统"},
+        {"w": "clause", "ipa": "/klɔːz/", "gloss": "（合同或法律文件中的）条款", "note": "「条款」义的正式近义，多指合同或法律文件中的具体条文"}
+      ],
+      "antonyms": [
+        {"w": "whole", "note": "整体（相对于 term 的「限定范围」义）"}
+      ],
+      "nuance": "term 作「术语」时比 word 更强调专业领域的专门用法；作「条款」时（terms of agreement）和 clause 可互换，但 terms 常用复数指一整套条件；in terms of 是学术写作的万能介词短语，表示「就……维度而言」。"
+    },
+    {
+      "word": "serve",
+      "hl": "er",
+      "levels": ["六级"],
+      "ipa": "/sɜːrv/",
+      "subgroup": "er",
+      "meaning": "v. 服务；供应（食物）；满足（需求）；服役；（在法庭）送达  n. 发球",
+      "etymology": "拉丁语 servire「做奴隶、服侍」，与 servant（仆人）、service（服务）、reserve（保留，字面「再次服务备用」）同根。核心义：为他人而动。",
+      "roots": [
+        {"part": "serv- (servire)", "meaning": "服侍、为……服务"}
+      ],
+      "phonetics": "s + er /ɜːr/ + v，与 nerve、curve 押韵。注意 -ve 结尾哑 e，整词只有一个音节。",
+      "core": "为他人而动的感觉——身体或功能朝着另一方的需要运作，无论是端菜、当兵还是发球，都是「把自己的力量交出去」。",
+      "senses": [
+        {
+          "gloss": "v. 服务，为……服务",
+          "logic": "「为他人而动」的最直接体现",
+          "en": "This library serves thousands of students every year.",
+          "zh": "这座图书馆每年为数千名学生提供服务。"
+        },
+        {
+          "gloss": "v. 供应（食物或饮料）",
+          "logic": "「为他人而动」→ 把食物送到对方面前",
+          "en": "The restaurant serves traditional dishes from the region.",
+          "zh": "这家餐厅供应当地传统菜肴。"
+        },
+        {
+          "gloss": "v. 满足（需求、目的）",
+          "logic": "「为他人而动」→ 使某个需求得到回应",
+          "en": "This old building no longer serves any practical purpose.",
+          "zh": "这座老建筑已经不再满足任何实际用途。"
+        },
+        {
+          "gloss": "v. 服役，任职（为国家/机构效力）",
+          "logic": "「为他人而动」→ 把时间和力量交给更大的集体",
+          "en": "He served in the army for ten years.",
+          "zh": "他在军队服役了十年。"
+        },
+        {
+          "gloss": "v. （法律）送达（传票等文件）",
+          "logic": "「为他人而动」→ 将文件递交到当事人手中（历史偶合，与上述义无明显语义延伸关系）",
+          "en": "He was served with a court summons this morning.",
+          "zh": "他今天早上收到了法院传票。"
+        },
+        {
+          "gloss": "n. 发球（网球等运动中将球送给对方）",
+          "logic": "「为他人而动」→ 把球「交给」对方以启动比赛",
+          "en": "Her serve reached 190 kilometers per hour.",
+          "zh": "她的发球时速达到190公里。"
+        }
+      ],
+      "derivatives": [
+        {"w": "service", "gloss": "服务；军役；（宗教）礼拜"},
+        {"w": "servant", "gloss": "仆人，服务人员"},
+        {"w": "reserve", "gloss": "保留；预约；储备"},
+        {"w": "deserve", "gloss": "应得，值得"}
+      ],
+      "examples": [
+        {
+          "en": "The restaurant serves traditional dishes from the region.",
+          "zh": "这家餐厅供应当地传统菜肴。",
+          "source": "造句"
+        },
+        {
+          "en": "serve a purpose / serve time",
+          "zh": "「起到作用 / 服刑」——两个义域的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "provide", "ipa": "/prəˈvaɪd/", "gloss": "提供，供给", "note": "「提供」，比 serve 更中性，不含「服侍」含义；provide food（提供食物）"},
+        {"w": "cater", "ipa": "/ˈkeɪtər/", "gloss": "满足（需求）；提供餐饮服务", "note": "「满足需求/提供餐饮」，比 serve 更强调专门性，常见于餐饮和活动策划；cater to a need（满足需求）"},
+        {"w": "fulfill", "ipa": "/fʊlˈfɪl/", "gloss": "履行，满足（需求或职责）", "note": "「满足（需求/职责）」义的近义，强调完全达到；fulfill one's duty（履行职责）"}
+      ],
+      "antonyms": [
+        {"w": "neglect", "note": "忽视（服务义相对）"},
+        {"w": "demand", "note": "索取（与服务方向相反）"}
+      ],
+      "nuance": "serve 含有「为他人而动」的隐含方向，是最核心的服务词；provide 是中性的「提供」，无地位色彩；cater 暗示针对特定口味或需求量身定制，比 serve 更专业化。「serve a purpose」中 serve 不可替换为 provide，因为这是固定搭配。"
+    },
+    {
+      "word": "nerve",
+      "hl": "er",
+      "levels": ["六级"],
+      "ipa": "/nɜːrv/",
+      "subgroup": "er",
+      "meaning": "n. 神经；勇气，胆量（口语）；厚脸皮，厚颜  v. 鼓起勇气（nerve oneself）",
+      "etymology": "拉丁语 nervus「筋腱、神经」，与希腊语 neuron 同义，neural（神经的）、neurosis（神经症）由后者派生。勇气义来自「神经强韧」的隐喻——nerve = 经得住刺激。",
+      "roots": [
+        {"part": "nerv- (nervus)", "meaning": "筋腱、神经"}
+      ],
+      "phonetics": "n + er /ɜːr/ + v，与 serve、curve 押韵，一音节。nerves 作复数常指「紧张情绪」。",
+      "tip": "nerve 三义靠语境区分：生理（nerve cells 神经细胞）→心理（nerves 紧张）→口语（the nerve! 竟然这样！）。",
+      "core": "神经线的感觉——可以是传递感觉的纤维，可以是承受刺激的韧性（勇气），也可以是对刺激毫无反应的厚脸皮，全都从「神经」这条线延伸出来。",
+      "senses": [
+        {
+          "gloss": "n. 神经（生理，传导信号的纤维束）",
+          "logic": "词的本义：连接感受与反应的生物线路",
+          "en": "The dentist injected anesthetic near the nerve to block the pain.",
+          "zh": "牙医在神经附近注射了麻醉剂来阻断疼痛。"
+        },
+        {
+          "gloss": "n. 紧张情绪（复数 nerves，心理义）",
+          "logic": "「神经」→ 神经过度活跃→产生紧张感",
+          "en": "She was all nerves before walking onto the stage.",
+          "zh": "走上舞台前，她紧张极了。"
+        },
+        {
+          "gloss": "n. 胆量，勇气（口语，褒义）",
+          "logic": "「神经强韧」→ 经得住压力和刺激的韧性",
+          "en": "It takes real nerve to start a business from scratch.",
+          "zh": "白手起家真的需要很大的胆量。"
+        },
+        {
+          "gloss": "n. 厚脸皮，厚颜无耻（口语，贬义）",
+          "logic": "「神经强韧」→ 对批评和规范毫无感觉的「麻木」",
+          "en": "She had the nerve to ask for a raise on her first day.",
+          "zh": "她第一天上班就厚着脸皮要求加薪。"
+        },
+        {
+          "gloss": "v. 鼓起勇气（nerve oneself，使自己振作）",
+          "logic": "「强化神经」→ 给自己加固心理，准备面对难事",
+          "en": "He nerved himself to deliver the bad news.",
+          "zh": "他鼓起勇气，准备宣布这个坏消息。"
+        }
+      ],
+      "derivatives": [
+        {"w": "nervous", "gloss": "紧张的；神经质的；神经系统的"},
+        {"w": "neural", "gloss": "神经（系统）的（学术用词）"},
+        {"w": "unnerve", "gloss": "使紧张，使失去勇气"}
+      ],
+      "examples": [
+        {
+          "en": "She had the nerve to ask for a raise on her first day.",
+          "zh": "她第一天上班就厚着脸皮要求加薪。",
+          "source": "造句"
+        },
+        {
+          "en": "get on someone's nerves",
+          "zh": "「让某人心烦意乱」——惹怒、烦扰的高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "courage", "ipa": "/ˈkɜːrɪdʒ/", "gloss": "勇气，勇敢", "note": "「勇气」，比 nerve 更正式、更正面；nerve 口语色彩强，有时含「厚脸皮」的负面意味"},
+        {"w": "audacity", "ipa": "/ɔːˈdæsɪti/", "gloss": "大胆，有时含「鲁莽无礼」之意", "note": "「胆大妄为」，比 nerve 更书面，常带负面含义；the audacity to lie（厚颜撒谎）"},
+        {"w": "guts", "ipa": "/ɡʌts/", "gloss": "胆量，勇气（粗口语）", "note": "「胆量」的粗口语版，与 nerve 在口语中常互换；have the guts to（有胆量去做）"}
+      ],
+      "antonyms": [
+        {"w": "cowardice", "note": "懦弱"},
+        {"w": "timidity", "note": "胆怯"}
+      ],
+      "nuance": "nerve 强调「在压力或批评下仍敢行动」的胆量，但常带「厚脸皮」的负面含义（the nerve of him!）；courage 是正面的勇气，侧重面对危险；audacity 与 nerve 最接近，但更正式书面，几乎总带「冒失/鲁莽」的批评意味。"
+    },
+    {
+      "word": "prefer",
+      "hl": "er",
+      "levels": ["六级", "托福"],
+      "ipa": "/prɪˈfɜːr/",
+      "subgroup": "er",
+      "meaning": "v. 更喜欢，偏好（prefer A to B / prefer to do）",
+      "etymology": "拉丁语 praeferre = prae-(在……之前) + ferre(携带) = 「把……放在前面」→ 偏好某物。与 transfer（转移）、refer（提及）、offer（提供）同根，都含 ferre（携带/带来）。",
+      "roots": [
+        {"part": "pre- (prae-)", "meaning": "在……之前，优先"},
+        {"part": "-fer (ferre)", "meaning": "携带、带来"}
+      ],
+      "phonetics": "重音在后 pre-FER，-fer = /fɜːr/；注意双写辅音 preferred/preferring（重读闭音节+元音结尾要双写）。",
+      "tip": "prefer 不跟 than，只跟 to：prefer coffee to tea（不是 prefer coffee than tea）。",
+      "core": "「把某样东西端到前面来」的感觉——在多个选项中，有一个会被内心自然地推到最前，这就是偏好。",
+      "senses": [
+        {
+          "gloss": "v. 更喜欢，偏爱（比较两者或多者时，偏向其中一个）",
+          "logic": "「把……放在前面」→ 在比较中，把某个选项放到首位",
+          "en": "Most students prefer practical projects to theoretical lectures.",
+          "zh": "大多数学生更喜欢实践项目而非理论课程。"
+        }
+      ],
+      "derivatives": [
+        {"w": "preference", "gloss": "偏好，偏爱；优先权"},
+        {"w": "preferable", "gloss": "更可取的，更好的"},
+        {"w": "preferably", "gloss": "最好是，优先地"}
+      ],
+      "examples": [
+        {
+          "en": "Most students prefer practical projects to theoretical lectures.",
+          "zh": "大多数学生更喜欢实践项目而非理论课程。",
+          "source": "造句"
+        },
+        {
+          "en": "I would prefer not to",
+          "zh": "「我宁可不……」——梅尔维尔小说《书记员巴特比》中的经典句式，已成文化引用。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "favor", "ipa": "/ˈfeɪvər/", "gloss": "偏向，支持；喜爱", "note": "「倾向于、偏向」，比 prefer 更口语，也可作名词；favor one option over another（偏向某个选项）"},
+        {"w": "opt for", "ipa": "/ɒpt fɔːr/", "gloss": "选择，决定采用", "note": "「选择、倾向于」，比 prefer 更强调做出了行动性选择；opt for a simpler solution（选择更简单的方案）"},
+        {"w": "lean toward", "gloss": "倾向于（尚未最终决定）", "note": "「倾向于」，强调倾向但尚未最终决定，比 prefer 更摇摆"}
+      ],
+      "antonyms": [
+        {"w": "dislike", "note": "不喜欢"},
+        {"w": "avoid", "note": "回避"}
+      ],
+      "nuance": "prefer 是表达个人偏好的中性词，强调 A 优于 B 的比较关系（prefer A to B）；favor 更强调「对某一方表示支持」，有时带主观情感；opt for 强调已经做了选择并付诸行动，而非仅仅表态。"
+    },
+    {
+      "word": "person",
+      "hl": "er",
+      "levels": ["六级"],
+      "ipa": "/ˈpɜːrsn/",
+      "subgroup": "er",
+      "meaning": "n. 人；个人；（语法）人称",
+      "etymology": "拉丁语 persona「面具」，古罗马演员戴面具扮演角色。「面具→角色→身份→人」。personal（个人的）、personality（人格）、personnel（人员）都从此出发，per-son- 是这个家族的核心。",
+      "roots": [
+        {"part": "per-son (persona)", "meaning": "面具→人格→个人"}
+      ],
+      "phonetics": "重音在前 PER-son，per- = /pɜːr/，-son 弱读 /sn/（几乎省略 o）。与 personal、personnel 比较：三词读音细微差异在重音位置。",
+      "tip": "persona（公众形象）是 person 的拉丁原词，现在作心理学术语直接借回了英语。",
+      "core": "戴着面具登台的存在感——一个有身份、有角色、可被指认的独立个体。",
+      "senses": [
+        {
+          "gloss": "n. 人，个人（泛指任意一个人）",
+          "logic": "「有身份的独立存在」→ 任意一个可被指认的人",
+          "en": "She was the only person in the room who understood the problem.",
+          "zh": "她是房间里唯一理解这个问题的人。"
+        },
+        {
+          "gloss": "n. （语法）人称（第一/第二/第三人称）",
+          "logic": "「角色的位置」→ 语言中对话者的身份位置",
+          "en": "The verb changes form depending on the person and number.",
+          "zh": "动词会根据人称和数量变化形式。"
+        }
+      ],
+      "derivatives": [
+        {"w": "personal", "gloss": "个人的，私人的"},
+        {"w": "personality", "gloss": "人格，个性；名人"},
+        {"w": "personnel", "gloss": "人员，员工（集合名词）"},
+        {"w": "persona", "gloss": "公众形象；人格面具（心理学）"}
+      ],
+      "examples": [
+        {
+          "en": "She was the only person in the room who understood the problem.",
+          "zh": "她是房间里唯一理解这个问题的人。",
+          "source": "造句"
+        },
+        {
+          "en": "in person",
+          "zh": "「亲自、当面」——强调本人出席的高频短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "individual", "ipa": "/ˌɪndɪˈvɪdʒuəl/", "gloss": "个体，个人（强调独特性）", "note": "「个体」，比 person 更强调独特性和与群体的区分；each individual（每个个体）"},
+        {"w": "human being", "gloss": "人类（强调生物物种属性）", "note": "「人类」，比 person 更强调生物属性，多用于哲学或人权语境"},
+        {"w": "figure", "ipa": "/ˈfɪɡər/", "gloss": "人物（有影响力或知名度的人）", "note": "「人物」，强调在某一领域或历史中的角色；a public figure（公众人物）"}
+      ],
+      "antonyms": [
+        {"w": "group", "note": "群体（个体的对立）"}
+      ],
+      "nuance": "person 最普通，指任意一个人；individual 强调作为独立个体与他人的不同，带有尊重个体差异的含义；human being 从物种层面强调人性，常出现在「所有人都有……」的普世权利语境；figure 专指有影响力或知名度的人物。"
+    },
+    {
+      "word": "bird",
+      "hl": "ir",
+      "levels": ["六级"],
+      "ipa": "/bɜːrd/",
+      "subgroup": "ir",
+      "meaning": "n. 鸟；（英式口语）女孩；（口语）家伙",
+      "etymology": "古英语 bridd「幼鸟、雏鸟」，后来 r 和 i 发生「音位换位」（metathesis）：bridd → bird，类似 horse（古英语 hros）的音位翻转。ir = /ɜːr/ 是这组的音位锚定词。",
+      "roots": [
+        {"part": "bird（bridd）", "meaning": "幼鸟（后扩展为所有鸟）"}
+      ],
+      "phonetics": "b + ir /ɜːr/ + d，这是 ir → /ɜːr/ 规律最核心的锚定词，音位页就以它命名。英式 /bɜːd/，美式卷舌 /bɜːrd/。",
+      "tip": "bird 是 ir 组的教学锚定词，记住 bird = /bɜːrd/，girl/first/shirt 就全都对了。",
+      "core": "有羽毛、能飞的轻盈存在——从具体的羽翼生物延伸到任何令人想到「轻盈、自由或特立独行」的对象。",
+      "senses": [
+        {
+          "gloss": "n. 鸟，禽鸟（泛指所有鸟类）",
+          "logic": "词的核心本义",
+          "en": "A small bird landed on the windowsill and looked in.",
+          "zh": "一只小鸟落在窗台上，朝里张望。"
+        },
+        {
+          "gloss": "n. 女孩（英式口语，有时含轻视意味）",
+          "logic": "历史偶合，与「鸟」义无明显语义延伸关系，属英式俚语用法",
+          "en": "He went out with some bird he met at the pub.",
+          "zh": "他和在酒吧认识的某个女孩出去了。"
+        },
+        {
+          "gloss": "n. 家伙，人（口语，如 old bird 老家伙）",
+          "logic": "「独特的个体」→ 对某类人的戏谑称呼，历史偶合成分居多",
+          "en": "She's a tough old bird — nothing scares her.",
+          "zh": "她是个强硬的老家伙，什么都吓不倒她。"
+        }
+      ],
+      "derivatives": [
+        {"w": "birdie", "gloss": "小鸟；高尔夫低于标准杆一杆"},
+        {"w": "bluebird", "gloss": "蓝知更鸟（常象征幸福）"},
+        {"w": "bird-eye view", "gloss": "鸟瞰图，俯视角度"}
+      ],
+      "examples": [
+        {
+          "en": "The early bird catches the worm.",
+          "zh": "「早起的鸟儿有虫吃」——劝勉勤奋的古老谚语。",
+          "source": "谚语"
+        },
+        {
+          "en": "kill two birds with one stone",
+          "zh": "「一石二鸟」——同时解决两个问题的高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "fowl", "ipa": "/faʊl/", "gloss": "禽（正式或文学用语，常指可食用鸟类）", "note": "「禽」，正式或文学用语，常指可食用鸟类（chicken、duck 等）；wild fowl（野禽）"},
+        {"w": "avian", "ipa": "/ˈeɪviən/", "gloss": "鸟类的（形容词，学术用语）", "note": "形容词「鸟类的」，bird 的拉丁学名词根来源；avian flu（禽流感）"}
+      ],
+      "antonyms": [],
+      "nuance": "bird 是通用口语词，fowl 偏正式或书面，专指家禽或猎禽；avian 是学术形容词，单独作名词罕见。「birds and bees」在英语中是「性教育」的委婉说法。"
+    },
+    {
+      "word": "girl",
+      "hl": "ir",
+      "levels": ["六级"],
+      "ipa": "/ɡɜːrl/",
+      "subgroup": "ir",
+      "meaning": "n. 女孩；女儿；（口语）女性朋友",
+      "etymology": "中古英语 girle/gerle，早期指「年幼的孩子（不分性别）」，后来专指女性。词源尚有争议，可能与低地德语 göre（小孩）相关。",
+      "roots": [
+        {"part": "girl（girle）", "meaning": "年幼的孩子→女孩"}
+      ],
+      "phonetics": "g + ir /ɜːr/ + l，与 bird、first 同韵。注意 -rl 结尾的 l 轻微暗化。",
+      "core": "年幼或被亲昵看待的女性形象——词义随语境在「小女孩、女朋友、女性同伴」之间滑动，核心是「轻盈、亲近」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 女孩（年幼的女性）",
+          "logic": "词的本义：年幼的女性个体",
+          "en": "The girl ran across the field, laughing.",
+          "zh": "那个女孩笑着跑过田野。"
+        },
+        {
+          "gloss": "n. 女儿（口语，父母对女儿的称呼）",
+          "logic": "「小女孩」→ 亲子关系中对女儿的亲昵称呼",
+          "en": "My girl just started middle school this year.",
+          "zh": "我女儿今年刚上初中。"
+        },
+        {
+          "gloss": "n. 女性朋友，闺蜜（口语，成年女性之间）",
+          "logic": "「亲近的女性」→ 口语中扩展至成年女性同伴",
+          "en": "We're having a girls' night out this Friday.",
+          "zh": "我们这周五打算和闺蜜们出去玩。"
+        }
+      ],
+      "derivatives": [
+        {"w": "girlish", "gloss": "像女孩的，少女气的"},
+        {"w": "girlhood", "gloss": "少女时代，女孩时期"},
+        {"w": "girlfriend", "gloss": "女友；（女性之间的）闺蜜"}
+      ],
+      "examples": [
+        {
+          "en": "The girl ran across the field, laughing.",
+          "zh": "那个女孩笑着跑过田野。",
+          "source": "造句"
+        },
+        {
+          "en": "girl next door",
+          "zh": "「邻家女孩」——清纯、平易近人形象的高频文化词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "young woman", "gloss": "年轻女性（更正式、更尊重的称法）", "note": "更尊重的称呼，对成年女性用 girl 有时被视为贬低"},
+        {"w": "daughter", "ipa": "/ˈdɔːtər/", "gloss": "女儿（强调亲子关系）", "note": "「女儿」，强调亲子关系，不可随意替换 girl"}
+      ],
+      "antonyms": [
+        {"w": "boy", "note": "男孩"},
+        {"w": "man", "note": "男人"}
+      ],
+      "nuance": "girl 对年幼女性完全中性，但对成年女性用 girl 在英语语境中可能被视为不尊重（infantilizing），正式场合宜用 woman 或 young woman；口语中朋友之间（girls' night out）则是常规用法。"
+    },
+    {
+      "word": "first",
+      "hl": "ir",
+      "levels": ["六级"],
+      "ipa": "/fɜːrst/",
+      "subgroup": "ir",
+      "meaning": "adj./adv. 第一（的）；首先  n. 第一；最初",
+      "etymology": "古英语 fyrest「最前面的」，是 fore（前）的最高级，日耳曼同根。fore → former → foremost → first（音位演变压缩而来）。first = 在所有人前面。",
+      "roots": [
+        {"part": "first（fyrest）", "meaning": "fore（前）的最高级：最前面的"}
+      ],
+      "phonetics": "f + ir /ɜːr/ + st，结尾辅音簇 -rst 要干脆：/fɜːrst/，不要漏掉 t。",
+      "core": "「站在最前面」的感觉——无论是时间上最早，还是重要性排名第一，都是「所有事物前面的那一个」。",
+      "senses": [
+        {
+          "gloss": "adj./adv. 第一，最先（时间或顺序上）",
+          "logic": "「站在最前面」→ 时间或序列的起点",
+          "en": "She was the first woman to win that award.",
+          "zh": "她是第一位获得这个奖项的女性。"
+        },
+        {
+          "gloss": "adj. 首要的，最重要的",
+          "logic": "「站在最前面」→ 重要性排名第一",
+          "en": "Safety is always our first priority.",
+          "zh": "安全永远是我们的首要优先项。"
+        },
+        {
+          "gloss": "adv. 首先，先（表示动作顺序）",
+          "logic": "「站在最前面」→ 一系列动作中先做的那个",
+          "en": "First, read the instructions carefully before you begin.",
+          "zh": "开始之前，先仔细阅读说明。"
+        },
+        {
+          "gloss": "n. 第一（名次、历史上的首次）",
+          "logic": "「最前面的位置」本身被名词化",
+          "en": "Landing on the moon was a remarkable first for humanity.",
+          "zh": "登月是人类历史上一项非凡的第一次。"
+        }
+      ],
+      "derivatives": [
+        {"w": "firsthand", "gloss": "直接的，亲身的（first-hand experience 亲身经历）"},
+        {"w": "firstly", "gloss": "首先（列举时用）"},
+        {"w": "foremost", "gloss": "最重要的，最杰出的（与 first 同根）"}
+      ],
+      "examples": [
+        {
+          "en": "She was the first woman to win that award.",
+          "zh": "她是第一位获得这个奖项的女性。",
+          "source": "造句"
+        },
+        {
+          "en": "first and foremost",
+          "zh": "「首先、最重要的是」——强调优先级的高频短语，first 和 fore 语义呼应。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "primary", "ipa": "/ˈpraɪmeri/", "gloss": "首要的，主要的（重要性第一）", "note": "「首要的」，强调重要性排序第一，比 first 更抽象，不含时间序列"},
+        {"w": "initial", "ipa": "/ɪˈnɪʃl/", "gloss": "最初的，开始时的（时间上最先）", "note": "「最初的」，强调时间上最早，比 first 更正式；initial response（最初的反应）"},
+        {"w": "foremost", "ipa": "/ˈfɔːrmoʊst/", "gloss": "最重要的，最杰出的", "note": "「最重要的、最杰出的」，和 first 同词根，first and foremost 常连用"}
+      ],
+      "antonyms": [
+        {"w": "last", "note": "最后的"},
+        {"w": "final", "note": "最终的"}
+      ],
+      "nuance": "first 既表时间顺序（arrive first）也表重要性（first priority）；primary 只表重要性排序；initial 只表时间上的最先，不含「最重要」意味。「first impression」是「第一印象」，「primary concern」是「首要关切」，两者不可互换。"
+    },
+    {
+      "word": "shirt",
+      "hl": "ir",
+      "levels": ["六级"],
+      "ipa": "/ʃɜːrt/",
+      "subgroup": "ir",
+      "meaning": "n. 衬衫，上衣",
+      "etymology": "古英语 scyrte「短衣」，日耳曼同根，与 skirt（裙子）同一词源——两者都是「切短的布」，后来分化为上身与下身。shirt 和 skirt 是「双胞胎词」（doublets）。",
+      "roots": [
+        {"part": "shirt（scyrte）", "meaning": "短衣，与 skirt 同根"}
+      ],
+      "phonetics": "sh /ʃ/ + ir /ɜːr/ + t，与 dirt、first 押韵。注意 sh 是单一音素 /ʃ/，不要拆成 s+h。",
+      "tip": "shirt（衬衫）和 skirt（裙子）是同一个古英语词演化的双胞胎：shirt 上身、skirt 下身，读音一字之差（sh-/sk-）。",
+      "core": "贴身穿在上半身的基础布料——实用、贴近身体，是着装的第一层，由此延伸出各类场合的衬衫文化。",
+      "senses": [
+        {
+          "gloss": "n. 衬衫（上身穿的有领或无领上衣，涵盖正装衬衫和T恤等）",
+          "logic": "词的本义，单义词",
+          "en": "He ironed his shirt before the interview.",
+          "zh": "他在面试前熨好了衬衫。"
+        }
+      ],
+      "derivatives": [
+        {"w": "T-shirt", "gloss": "T恤衫（因形状似字母T得名）"},
+        {"w": "undershirt", "gloss": "内衣，汗衫"},
+        {"w": "shirtsleeve", "gloss": "衬衫袖子；in one's shirtsleeves 不穿外套"}
+      ],
+      "examples": [
+        {
+          "en": "He ironed his shirt before the interview.",
+          "zh": "他在面试前熨好了衬衫。",
+          "source": "造句"
+        },
+        {
+          "en": "lose one's shirt",
+          "zh": "「倾家荡产」——连衬衫都输掉了的高频口语比喻。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "blouse", "ipa": "/blaʊz/", "gloss": "（女式）衬衫，宽松上衣", "note": "「（女式）衬衫」，比 shirt 更宽松飘逸，通常特指女装上衣"},
+        {"w": "top", "ipa": "/tɒp/", "gloss": "上衣（最宽泛的口语通称）", "note": "「上衣」的口语通称，比 shirt 更泛，涵盖各种上身服装"}
+      ],
+      "antonyms": [],
+      "nuance": "shirt 通常指正式或半正式场合的有领上衣（T-shirt 除外）；blouse 特指女式较飘逸的上衣；top 是最宽泛的口语词，指任何上身服装。dress shirt（正装衬衫）、T-shirt、polo shirt 是常见的固定搭配。"
+    },
+    {
+      "word": "circle",
+      "hl": "ir",
+      "levels": ["六级"],
+      "ipa": "/ˈsɜːrkl/",
+      "subgroup": "ir",
+      "meaning": "n. 圆；圈子；循环  v. 绕圈；圈出",
+      "etymology": "拉丁语 circulus「小圆」，是 circus（圆形竞技场）的小称形式。与 circuit（回路，字面「绕圆一圈」）、circumference（周长）、circular（圆形的）同根——circ- = 圆/环。",
+      "roots": [
+        {"part": "circ- (circulus)", "meaning": "圆、环"},
+        {"part": "-le", "meaning": "名词/动词后缀"}
+      ],
+      "phonetics": "重音在前 CIR-cle，cir = /sɜːr/，-cle 弱读 /kl/。circle 里的 ir 读 /ɜːr/ 是规律，不要读成 /ɪr/。",
+      "tip": "circ- 家族：circle（圆）→ circuit（回路）→ circular（圆形的）→ circumference（周长）→ circus（圆形场地）。认识这个词根，看见 circ- 就想到「绕圆」。",
+      "core": "封闭曲线环绕中心的形状感——从几何的「圆」延伸到人际的「圈子」，再到时间的「循环」，都是「回到起点、无始无终」的意象。",
+      "senses": [
+        {
+          "gloss": "n. 圆，圆形（几何形状）",
+          "logic": "词的核心本义：封闭曲线",
+          "en": "Draw a circle with a radius of five centimeters.",
+          "zh": "画一个半径为五厘米的圆。"
+        },
+        {
+          "gloss": "n. 圈子（社交群体，有边界感的人际网络）",
+          "logic": "「封闭曲线」→ 有内外之分的人际边界",
+          "en": "She moves in very exclusive social circles.",
+          "zh": "她活跃在非常精英的社交圈子里。"
+        },
+        {
+          "gloss": "n. 循环（周期性回到原点的过程）",
+          "logic": "「回到起点」→ 周而复始的过程",
+          "en": "Breaking the circle of poverty requires long-term investment.",
+          "zh": "打破贫穷的循环需要长期投入。"
+        },
+        {
+          "gloss": "v. 绕圈飞行或运动（围着某物转）",
+          "logic": "「做圆形轨迹」→ 围绕某个中心转动",
+          "en": "The hawk circled lazily above the field.",
+          "zh": "那只鹰懒洋洋地在田野上空盘旋。"
+        },
+        {
+          "gloss": "v. 圈出，画圆圈标注",
+          "logic": "「用圆圈框住」→ 用圆圈标记某个内容",
+          "en": "Circle the correct answer on your test sheet.",
+          "zh": "在试卷上圈出正确答案。"
+        }
+      ],
+      "derivatives": [
+        {"w": "circular", "gloss": "圆形的；循环的；（名词）通知，传单"},
+        {"w": "circuit", "gloss": "回路，电路；赛道；巡回"},
+        {"w": "circumference", "gloss": "（圆的）周长，圆周"}
+      ],
+      "examples": [
+        {
+          "en": "The students sat in a circle and took turns speaking.",
+          "zh": "学生们围成一圈轮流发言。",
+          "source": "造句"
+        },
+        {
+          "en": "go around in circles",
+          "zh": "「原地打转、没有进展」——高频习语，比喻讨论或工作毫无推进。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "ring", "ipa": "/rɪŋ/", "gloss": "圆环，环形（强调空心的环）", "note": "「圆环」，比 circle 更强调空心的环形，常指实物；a ring of light（一圈光）"},
+        {"w": "cycle", "ipa": "/ˈsaɪkl/", "gloss": "循环，周期（时间维度）", "note": "「循环」义的近义，强调时间或过程的循环，circle 的「循环」义偏空间"},
+        {"w": "orbit", "ipa": "/ˈɔːrbɪt/", "gloss": "轨道，运行轨迹（天体或抽象）", "note": "「轨道」，circle 的近义，强调绕某天体的圆形路径；orbit the earth（绕地球运行）"}
+      ],
+      "antonyms": [
+        {"w": "line", "note": "直线（相对于圆形）"}
+      ],
+      "nuance": "circle 既可指形状（完整的圆）也可指社会群体（a circle of friends），还可作动词表示「绕圈飞行/圈出」；ring 偏实物的圆环，cycle 强调时间维度的循环，orbit 专用于天体或抽象权力轨道。"
+    },
+    {
+      "word": "confirm",
+      "hl": "ir",
+      "levels": ["六级", "托福"],
+      "ipa": "/kənˈfɜːrm/",
+      "subgroup": "ir",
+      "meaning": "v. 确认；证实；批准；使坚定（信念）",
+      "etymology": "拉丁语 confirmare = con-(完全) + firmare(使坚固) = 「彻底使坚固」→ 确认/证实。与 firm（坚定的）、affirm（肯定）、infirm（虚弱的，不坚固的）同根。firm 的本义是「坚固、稳固」。",
+      "roots": [
+        {"part": "con-", "meaning": "完全、彻底"},
+        {"part": "-firm (firmare)", "meaning": "使坚固、使稳固"}
+      ],
+      "phonetics": "重音在后 con-FIRM，-firm = /fɜːrm/；con- 弱读 /kən/。-fir- 里的 ir 读 /ɜːr/，不是 /ɪr/。",
+      "tip": "affirm（肯定）、confirm（确认）、infirm（虚弱）、firm（坚定）——firm 词根家族：从「坚固」出发，affirm 是正向加固，confirm 是彻底加固，infirm 是不坚固。",
+      "core": "「把松动的东西彻底固定住」的感觉——无论是核实一个事实、敲定一个预约，还是加固一个信念，都是让不确定的变得确定。",
+      "senses": [
+        {
+          "gloss": "v. 确认（敲定安排或信息，让不确定变确定）",
+          "logic": "「彻底固定」→ 把未确认的状态变成确认",
+          "en": "Please confirm your attendance by Friday.",
+          "zh": "请在周五前确认出席。"
+        },
+        {
+          "gloss": "v. 证实（通过证据让某事实更稳固）",
+          "logic": "「彻底固定」→ 用证据把某个说法「钉死」",
+          "en": "The lab results confirmed the doctor's diagnosis.",
+          "zh": "化验结果证实了医生的诊断。"
+        },
+        {
+          "gloss": "v. 批准，正式任命（让地位稳固）",
+          "logic": "「彻底固定」→ 正式批准使职位或决定稳固",
+          "en": "The Senate confirmed her nomination as secretary.",
+          "zh": "参议院批准了她作为部长的提名。"
+        },
+        {
+          "gloss": "v. 使坚定（某信念或决心）",
+          "logic": "「彻底固定」→ 让内心的想法更加稳固不动摇",
+          "en": "The trip confirmed his belief that travel broadens the mind.",
+          "zh": "这次旅行让他更加坚信旅行能开阔眼界。"
+        }
+      ],
+      "derivatives": [
+        {"w": "confirmation", "gloss": "确认；证实；（宗教）坚信礼"},
+        {"w": "confirmed", "gloss": "确认的；根深蒂固的（如 a confirmed bachelor 坚定的单身汉）"},
+        {"w": "reconfirm", "gloss": "再次确认"}
+      ],
+      "examples": [
+        {
+          "en": "Please confirm your attendance by Friday.",
+          "zh": "请在周五前确认出席。",
+          "source": "造句"
+        },
+        {
+          "en": "confirm a booking / confirm a theory",
+          "zh": "「确认预订 / 证实理论」——商务和学术中最高频的两个搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "verify", "ipa": "/ˈverɪfaɪ/", "gloss": "核实，验证（通过检查证明真实）", "note": "「核实、验证」，比 confirm 更强调通过检查来证明真实；verify a claim（核实声明）"},
+        {"w": "validate", "ipa": "/ˈvælɪdeɪt/", "gloss": "验证有效性，认可", "note": "「验证有效性」，比 confirm 更正式，多用于数据、文件、资格；validate a passport（验证护照有效性）"},
+        {"w": "affirm", "ipa": "/əˈfɜːrm/", "gloss": "肯定，声明（主动表态）", "note": "「肯定、声明」，比 confirm 更强调主动表态而非被动验证；affirm one's commitment（表明承诺）"}
+      ],
+      "antonyms": [
+        {"w": "deny", "note": "否认"},
+        {"w": "refute", "note": "反驳、驳斥"}
+      ],
+      "nuance": "confirm 是最通用的「确认」，兼覆盖预约确认和事实证实；verify 强调通过独立证据或程序来核实，比 confirm 更严格；validate 专注于合规性和有效性；affirm 更像是主动声明立场，而非被动证实。「confirm a fact」可替换为 verify，但「confirm a reservation」不能。"
+    },
+    {
+      "word": "turn",
+      "hl": "ur",
+      "levels": ["六级"],
+      "ipa": "/tɜːrn/",
+      "subgroup": "ur",
+      "meaning": "v. 转动；变成；使转向  n. 转弯；轮次；机会",
+      "etymology": "古英语 turnian，源自拉丁语 tornare「用车床旋转」，与 tour（旅行，原义「绕圈走」）、tournament（比武，原义「骑马转圈」）同根。核心义：围绕轴心旋转。",
+      "roots": [
+        {"part": "turn（tornare）", "meaning": "旋转、转动"}
+      ],
+      "phonetics": "t + ur /ɜːr/ + n，与 burn、learn、return、earn 押韵，构成 -urn 韵脚家族。",
+      "core": "围绕轴心旋转的感觉——从物理的转动，延伸到方向的改变，再到状态的转变，以及轮流时「转到你了」的轮次感。",
+      "senses": [
+        {
+          "gloss": "v. 转动，旋转（物理上绕轴运动）",
+          "logic": "词的核心本义",
+          "en": "Turn the key to the right to unlock the door.",
+          "zh": "将钥匙向右转来开锁。"
+        },
+        {
+          "gloss": "v. 转向，改变方向",
+          "logic": "「旋转」→ 整体方向发生角度变化",
+          "en": "Turn left at the traffic lights.",
+          "zh": "在红绿灯处向左转。"
+        },
+        {
+          "gloss": "v. 变成，转变为（turn + 形容词/名词）",
+          "logic": "「旋转到另一面」→ 状态从一面翻转到另一面",
+          "en": "The situation turned out better than anyone expected.",
+          "zh": "局势的发展比任何人预期的都要好。"
+        },
+        {
+          "gloss": "n. 转弯处，弯道",
+          "logic": "「旋转」→ 道路发生方向改变的地点",
+          "en": "There's a sharp turn just past the bridge.",
+          "zh": "过了桥之后有一个急转弯。"
+        },
+        {
+          "gloss": "n. 轮次，轮流（take turns，到某人了）",
+          "logic": "「转」→ 事物轮流「转」到下一个人",
+          "en": "It's your turn to wash the dishes tonight.",
+          "zh": "今晚轮到你洗碗了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "return", "gloss": "返回；回报；退货"},
+        {"w": "overturn", "gloss": "推翻；翻转"},
+        {"w": "turnover", "gloss": "营业额；人员流动率；翻转"},
+        {"w": "tournament", "gloss": "锦标赛（原义「骑马转圈比武」）"}
+      ],
+      "examples": [
+        {
+          "en": "The situation turned out better than anyone expected.",
+          "zh": "局势的发展比任何人预期的都要好。",
+          "source": "造句"
+        },
+        {
+          "en": "take turns / in turn",
+          "zh": "「轮流 / 依次」——排序和协作的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "rotate", "ipa": "/roʊˈteɪt/", "gloss": "旋转（强调围绕固定轴的圆周运动）", "note": "「旋转」，比 turn 更强调围绕固定轴的圆周运动，多用于机械；rotate 360 degrees"},
+        {"w": "shift", "ipa": "/ʃɪft/", "gloss": "转移，改变（强调位置或状态的横向移动）", "note": "「转移/变化」，turn 的近义词，更强调位置或状态的改变而非旋转；shift one's attention（转移注意力）"},
+        {"w": "spin", "ipa": "/spɪn/", "gloss": "快速旋转（强调速度和连续性）", "note": "「快速旋转」，比 turn 更强调速度和连续性；spin a coin（旋转硬币）"}
+      ],
+      "antonyms": [
+        {"w": "stay", "note": "保持不变（相对于转变义）"}
+      ],
+      "nuance": "turn 是最通用的「转动/转变」，可指物理旋转（turn the key）或状态变化（turn red）；rotate 专指机械性的固轴旋转；spin 强调快速旋转；shift 更强调位置或注意力的横向移动。「turn into」强调变化的结果，「become」比它更正式。"
+    },
+    {
+      "word": "nurse",
+      "hl": "ur",
+      "levels": ["六级"],
+      "ipa": "/nɜːrs/",
+      "subgroup": "ur",
+      "meaning": "n. 护士；保姆  v. 护理；哺乳；精心培育；（心中）抱着（怨恨等）",
+      "etymology": "拉丁语 nutrire「滋养、喂养」，经古法语 norrice 演变。与 nourish（滋养）、nutrition（营养）、nurture（培育）同根——都在讲「喂养→照料→培育」的连贯义链。",
+      "roots": [
+        {"part": "nurs- (nutrire)", "meaning": "滋养、喂养、照料"}
+      ],
+      "phonetics": "n + ur /ɜːr/ + s + e，词尾哑 e，发音 /nɜːrs/。与 curse、purse、verse 押韵。",
+      "tip": "nurse/nourish/nurture/nutrition 同根：nurse 是照料人，nourish 是滋养，nurture 是培育，nutrition 是营养——一个词根的「照料」家族。",
+      "core": "持续、耐心地喂养和照料的感觉——不是一次性给予，而是长期守在旁边提供滋养，由此延伸到心中「养着」某种情绪。",
+      "senses": [
+        {
+          "gloss": "n. 护士（医疗机构中照料病人的专业人员）",
+          "logic": "「喂养照料者」→ 专业从事照料工作的人",
+          "en": "The nurse checked his blood pressure every two hours.",
+          "zh": "护士每两小时给他量一次血压。"
+        },
+        {
+          "gloss": "n. 保姆，奶妈（旧义，照料婴幼儿的人）",
+          "logic": "「喂养照料者」→ 负责喂养和照看幼儿的人",
+          "en": "The children were left in the care of a nurse.",
+          "zh": "孩子们被交由保姆照看。"
+        },
+        {
+          "gloss": "v. 护理，悉心照料（病人或伤者）",
+          "logic": "「持续喂养照料」→ 对病人进行长期细心的护理",
+          "en": "She nursed her father back to health after his surgery.",
+          "zh": "她悉心照料父亲，使他在手术后康复。"
+        },
+        {
+          "gloss": "v. 哺乳（母乳喂养婴儿）",
+          "logic": "「喂养」的最直接生物义",
+          "en": "She nursed the baby for six months.",
+          "zh": "她母乳喂养婴儿六个月。"
+        },
+        {
+          "gloss": "v. 心中抱着（怨恨、希望等），默默养着某种情绪",
+          "logic": "「持续喂养」→ 在内心长期「喂大」某种感情或想法",
+          "en": "He nursed a grudge against her for years.",
+          "zh": "他对她怀恨在心多年。"
+        }
+      ],
+      "derivatives": [
+        {"w": "nursery", "gloss": "托儿所；苗圃；儿童房"},
+        {"w": "nursing", "gloss": "护理（职业）；哺乳"},
+        {"w": "nurture", "gloss": "培育，养育（同根，更强调长期促进成长）"}
+      ],
+      "examples": [
+        {
+          "en": "She nursed her father back to health after his surgery.",
+          "zh": "她悉心照料父亲，使他在手术后康复。",
+          "source": "造句"
+        },
+        {
+          "en": "nurse a grudge",
+          "zh": "「长期怀恨在心」——nurse 作「心中抱着」义的高频搭配，含义极负面。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "caregiver", "ipa": "/ˈkeərɡɪvər/", "gloss": "照料者，护理人员（通用称呼）", "note": "「照料者」，比 nurse 更通用，不特指医疗专业人员"},
+        {"w": "nourish", "ipa": "/ˈnɜːrɪʃ/", "gloss": "滋养，给予营养（偏抽象）", "note": "「滋养」，nurse 同根词，更强调提供营养和支持，偏抽象"},
+        {"w": "nurture", "ipa": "/ˈnɜːrtʃər/", "gloss": "培育，养育（强调长期促进成长）", "note": "「培育」，同根，强调长期照料和促进成长；nurture talent（培养人才）"}
+      ],
+      "antonyms": [
+        {"w": "neglect", "note": "忽视、放任不管"},
+        {"w": "abandon", "note": "遗弃"}
+      ],
+      "nuance": "nurse 强调对病人或婴儿的直接照料；nourish 更抽象，偏重「提供滋养」（nourish the soul）；nurture 强调长期的促进成长（nurture creativity）；三词共享词根，但语境和对象各有侧重。"
+    },
+    {
+      "word": "church",
+      "hl": "ur",
+      "levels": ["六级"],
+      "ipa": "/tʃɜːrtʃ/",
+      "subgroup": "ur",
+      "meaning": "n. 教堂；教会；礼拜仪式",
+      "etymology": "古英语 cirice，源自希腊语 kuriakon「属于上帝的（地方）」，kurion = 主、上帝。ku-ri-a-kon → cirice → church，是音位收缩的极端案例。",
+      "roots": [
+        {"part": "church（kuriakon）", "meaning": "属于上帝的地方"}
+      ],
+      "phonetics": "ch /tʃ/ + ur /ɜːr/ + ch /tʃ/：首尾都是 /tʃ/，中间是 /ɜːr/，是这个音位的高强度练习词——一词练两次 /tʃ/ 和一次 /ɜːr/。",
+      "tip": "church 首尾都是 /tʃ/，是发音上的「对称词」，有助于记忆 ur = /ɜːr/。",
+      "core": "「属于上帝的场所」的神圣感——由一个具体的建筑延伸到信仰的群体组织，再延伸到礼拜这件事本身。",
+      "senses": [
+        {
+          "gloss": "n. 教堂（基督教礼拜建筑）",
+          "logic": "词的本义：属于上帝的物理空间",
+          "en": "They were married in a small church on the hill.",
+          "zh": "他们在山上一座小教堂结婚。"
+        },
+        {
+          "gloss": "n. 教会（基督教组织或宗派，如 the Catholic Church）",
+          "logic": "「属于上帝的场所」→ 信众组成的群体组织",
+          "en": "The church has played a major role in local politics.",
+          "zh": "教会在当地政治中扮演了重要角色。"
+        },
+        {
+          "gloss": "n. 礼拜（宗教仪式，无冠词时指这件事本身）",
+          "logic": "「属于上帝的场所」→ 在那里发生的活动本身",
+          "en": "They go to church every Sunday morning.",
+          "zh": "他们每周日早上都去做礼拜。"
+        }
+      ],
+      "derivatives": [
+        {"w": "churchyard", "gloss": "教堂庭院；教堂附属墓地"},
+        {"w": "churchgoer", "gloss": "定期去做礼拜的人"},
+        {"w": "unchurch", "gloss": "开除教籍（罕见）"}
+      ],
+      "examples": [
+        {
+          "en": "They were married in a small church on the hill.",
+          "zh": "他们在山上一座小教堂结婚。",
+          "source": "造句"
+        },
+        {
+          "en": "go to church",
+          "zh": "「去做礼拜」——church 无冠词时指礼拜这件事，有冠词 the church 时指建筑物。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "chapel", "ipa": "/ˈtʃæpl/", "gloss": "礼拜堂（小型，常附属于其他机构）", "note": "「礼拜堂」，比 church 更小，多指附属于学校、医院、机场等的小礼拜堂"},
+        {"w": "cathedral", "ipa": "/kəˈθiːdrəl/", "gloss": "大教堂（主教座堂，规模最大）", "note": "「大教堂」，比 church 更大更正式，是主教的驻地所在教堂"},
+        {"w": "congregation", "ipa": "/ˌkɒŋɡrɪˈɡeɪʃn/", "gloss": "会众，教堂的信徒群体", "note": "「会众」，指教堂里的信众群体，是 church 的「成员」义延伸"}
+      ],
+      "antonyms": [
+        {"w": "state", "note": "世俗国家（separation of church and state 政教分离）"}
+      ],
+      "nuance": "church 指任何基督教礼拜场所（含建筑和信仰群体）；chapel 是较小的附属礼拜堂；cathedral 是主教座堂，规模最大、地位最高。「go to church」（无冠词）指参加礼拜，「go to the church」则指前往教堂建筑物。"
+    },
+    {
+      "word": "curve",
+      "hl": "ur",
+      "levels": ["六级", "托福"],
+      "ipa": "/kɜːrv/",
+      "subgroup": "ur",
+      "meaning": "n. 曲线；弯道；（统计）曲线图  v. 弯曲，成弧形",
+      "etymology": "拉丁语 curvus「弯曲的」，与 curl（卷曲）、curb（路缘，弯曲边界）同根。curvature（曲率）、curved（弯曲的）直接派生。",
+      "roots": [
+        {"part": "curv- (curvus)", "meaning": "弯曲"}
+      ],
+      "phonetics": "c /k/ + ur /ɜːr/ + ve，与 serve、nerve 押韵。词尾 -ve 不发音（哑 e）。",
+      "tip": "throw someone a curve（ball）=「给某人出难题」——棒球中的曲线球，已进入日常英语比喻。",
+      "core": "「不走直线」的弯曲感——从道路的弯道，到数学的曲线，到数据的趋势走势，都是「偏离直线的柔性路径」。",
+      "senses": [
+        {
+          "gloss": "n. 曲线，弧线（几何或物理形状）",
+          "logic": "词的本义：弯曲的线",
+          "en": "The designer used gentle curves instead of sharp angles.",
+          "zh": "设计师用柔和的曲线代替了锐角。"
+        },
+        {
+          "gloss": "n. 弯道（道路的弯曲处）",
+          "logic": "「弯曲」→ 道路不走直线的地方",
+          "en": "The road curves sharply to the left just past the tunnel.",
+          "zh": "隧道过后，道路急剧向左弯曲。"
+        },
+        {
+          "gloss": "n. 曲线图，统计趋势线",
+          "logic": "「弯曲的线」→ 表示数据走势的弯曲图形",
+          "en": "The infection rate is finally following a downward curve.",
+          "zh": "感染率终于开始呈下降曲线。"
+        },
+        {
+          "gloss": "v. 弯曲，呈弧形延伸",
+          "logic": "「弯曲」的动词用法",
+          "en": "The coastline curves gently toward the south.",
+          "zh": "海岸线缓缓向南弯曲延伸。"
+        }
+      ],
+      "derivatives": [
+        {"w": "curvature", "gloss": "曲率；弯曲程度（如脊柱曲率）"},
+        {"w": "curved", "gloss": "弯曲的，成弧形的"},
+        {"w": "curb", "gloss": "路缘石；抑制，约束（同根，原义「弯曲的边界」）"}
+      ],
+      "examples": [
+        {
+          "en": "The road curves sharply to the left just past the tunnel.",
+          "zh": "隧道过后，道路急剧向左弯曲。",
+          "source": "造句"
+        },
+        {
+          "en": "learning curve / bell curve",
+          "zh": "「学习曲线 / 正态分布曲线」——两个学术高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "bend", "ipa": "/bend/", "gloss": "弯道；弯曲（口语，强调折弯）", "note": "「弯道/弯曲」，比 curve 更口语，强调物理上的折弯；a bend in the road（路的弯道）"},
+        {"w": "arc", "ipa": "/ɑːrk/", "gloss": "弧，弧形（圆的一部分）", "note": "「弧」，比 curve 更精确，指圆的一部分或完美的弧形；the arc of a rainbow（彩虹的弧度）"},
+        {"w": "trajectory", "ipa": "/trəˈdʒektəri/", "gloss": "轨迹，运动路径（学术用语）", "note": "「轨迹」，强调运动的弧形路径，比 curve 更学术；the trajectory of a ball（球的飞行轨迹）"}
+      ],
+      "antonyms": [
+        {"w": "straight line", "note": "直线"},
+        {"w": "flat", "note": "平直的"}
+      ],
+      "nuance": "curve 是最通用的「曲线/弯曲」，可指几何形状、道路、数据图形；arc 强调精确的圆弧形；bend 偏口语，多指道路或管道的弯折；trajectory 专指运动物体在空中或数据发展的轨迹路径。"
+    },
+    {
+      "word": "disturb",
+      "hl": "ur",
+      "levels": ["六级", "托福"],
+      "ipa": "/dɪˈstɜːrb/",
+      "subgroup": "ur",
+      "meaning": "v. 打扰；使不安；扰乱（秩序）",
+      "etymology": "拉丁语 disturbare = dis-(分离/破坏) + turbare(使混乱) = 「彻底搅乱」。turbare 来自 turba（混乱的人群），与 turbulent（汹涌的）、perturb（使不安）同根——turb- = 搅动、乱。",
+      "roots": [
+        {"part": "dis-", "meaning": "破坏、打散"},
+        {"part": "-turb (turbare)", "meaning": "使混乱、搅动"}
+      ],
+      "phonetics": "重音在后 dis-TURB，-turb = /tɜːrb/；dis- 弱读 /dɪ/。turb 里的 ur 读 /ɜːr/，不要读 /ʊr/。",
+      "tip": "turb- 家族：disturb（打扰）、perturb（使不安）、turbulent（汹涌的）、turbine（涡轮）——都在讲「搅动/旋转的混乱」。",
+      "core": "「把平静的状态搅乱」的感觉——无论是打断别人的专注，还是让人心里产生不安，都是用外力把原本安定的东西搅动了。",
+      "senses": [
+        {
+          "gloss": "v. 打扰，妨碍（打断别人的工作或休息）",
+          "logic": "「搅乱」→ 用外部干扰打破别人的平静状态",
+          "en": "Please do not disturb — I'm in the middle of an important call.",
+          "zh": "请勿打扰——我正在打一个重要电话。"
+        },
+        {
+          "gloss": "v. 使不安，使忧虑（心理层面的搅乱）",
+          "logic": "「搅乱」→ 把内心的平静搅动，产生不安感",
+          "en": "The documentary was deeply disturbing to watch.",
+          "zh": "这部纪录片让人看了深感不安。"
+        },
+        {
+          "gloss": "v. 扰乱，破坏（秩序、安排或平衡）",
+          "logic": "「搅乱」→ 破坏原本有序的状态",
+          "en": "Heavy rain disturbed the flow of traffic.",
+          "zh": "大雨扰乱了交通秩序。"
+        }
+      ],
+      "derivatives": [
+        {"w": "disturbance", "gloss": "干扰；骚乱；（气象）扰动"},
+        {"w": "disturbing", "gloss": "令人不安的，令人忧虑的"},
+        {"w": "undisturbed", "gloss": "未被打扰的，安静的"}
+      ],
+      "examples": [
+        {
+          "en": "Please do not disturb — I'm in the middle of an important call.",
+          "zh": "请勿打扰——我正在打一个重要电话。",
+          "source": "造句"
+        },
+        {
+          "en": "disturbing news / deeply disturbing",
+          "zh": "「令人不安的消息 / 深感不安」——disturbing 是形容词高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "disrupt", "ipa": "/dɪsˈrʌpt/", "gloss": "打断，扰乱（系统或进程）", "note": "「打断、扰乱（系统/流程）」，比 disturb 更强调对秩序或进程的破坏；disrupt a meeting（打断会议进程）"},
+        {"w": "interrupt", "ipa": "/ˌɪntəˈrʌpt/", "gloss": "打断（正在进行的事或话语）", "note": "「打断（说话/活动）」，比 disturb 更具体，指打断正在进行的事；interrupt a conversation（打断谈话）"},
+        {"w": "unsettle", "ipa": "/ʌnˈsetl/", "gloss": "使不安，使动摇（心理层面）", "note": "「使不安/动摇」，比 disturb 更偏心理层面的不稳定感；unsettle one's beliefs（动摇信念）"}
+      ],
+      "antonyms": [
+        {"w": "calm", "note": "使平静"},
+        {"w": "settle", "note": "使安定"}
+      ],
+      "nuance": "disturb 兼覆盖物理干扰（请勿打扰）和心理不安（disturbing content）；disrupt 强调对进程或系统的破坏性中断，现多用于商业（disruptive innovation 颠覆式创新）；interrupt 专指时间上打断正在进行的事；unsettle 专注于心理层面的不稳定感。"
+    },
+    {
+      "word": "earth",
+      "hl": "ear",
+      "levels": ["六级"],
+      "ipa": "/ɜːrθ/",
+      "subgroup": "ear",
+      "meaning": "n. 地球；土地，泥土；（电）接地  v. 接地（电路）",
+      "etymology": "古英语 eorþe「大地、土地」，日耳曼同根，与德语 Erde（大地）同源。地球 Earth 大写时专指行星，小写时指土壤或地面。与 earthy（朴实的）、earthly（尘世的）直接派生。",
+      "roots": [
+        {"part": "earth（eorþe）", "meaning": "大地、土地"}
+      ],
+      "phonetics": "ear /ɜːr/ + th /θ/，注意 ear 在此读 /ɜːr/ 而非 /ɪər/（区别于 hear/near）；th 结尾是清辅音 /θ/，非浊音 /ð/。",
+      "tip": "earth 的 ear 读 /ɜːr/，不是 /ɪər/——用「泥土比空气更厚重」来记：hear/near 的 ear 轻盈（/ɪər/），earth/learn 的 ear 沉落（/ɜːr/）。",
+      "core": "「落地、沉实」的感觉——是脚踩的土、生活其上的星球、以及电流导向大地的通路，共享着「向下、踏实」的核心意象。",
+      "senses": [
+        {
+          "gloss": "n. 地球（行星，大写 Earth 时为专有名词）",
+          "logic": "「大地」→ 人类栖居的整个星球",
+          "en": "The Earth orbits the Sun once every 365 days.",
+          "zh": "地球每365天绕太阳公转一圈。"
+        },
+        {
+          "gloss": "n. 土地，泥土（可耕作或接触的地面物质）",
+          "logic": "词的古老本义：脚下的土",
+          "en": "The soil on this earth is rich enough to grow almost anything.",
+          "zh": "这片土地的土壤肥沃，几乎什么都能种。"
+        },
+        {
+          "gloss": "n. （电气）接地，地线（使电路连向大地）",
+          "logic": "「大地」→ 电流导向大地以安全泄放，历史偶合延伸",
+          "en": "Make sure the appliance is properly earthed before use.",
+          "zh": "使用前请确保设备已正确接地。"
+        },
+        {
+          "gloss": "v. 为（电路）接地",
+          "logic": "「连向大地」的动词化",
+          "en": "The electrician earthed the entire circuit.",
+          "zh": "电工给整个线路做了接地处理。"
+        }
+      ],
+      "derivatives": [
+        {"w": "earthly", "gloss": "尘世的，世俗的；（口语强调）究竟"},
+        {"w": "earthquake", "gloss": "地震"},
+        {"w": "earthy", "gloss": "泥土气息的；粗犷朴实的"},
+        {"w": "unearth", "gloss": "挖出；发掘，揭露"}
+      ],
+      "examples": [
+        {
+          "en": "The soil on this earth is rich enough to grow almost anything.",
+          "zh": "这片土地的土壤肥沃，几乎什么都能种。",
+          "source": "造句"
+        },
+        {
+          "en": "down to earth / on earth",
+          "zh": "「脚踏实地 / 究竟（强调语气）」——两个高频固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "soil", "ipa": "/sɔɪl/", "gloss": "土壤（农业或生态意义，专业用词）", "note": "「土壤」，比 earth 更专业，强调农业或生态意义上的土质；fertile soil（肥沃的土壤）"},
+        {"w": "ground", "ipa": "/ɡraʊnd/", "gloss": "地面（强调表面，不含星球义）", "note": "「地面」，比 earth 更强调表面，不含「星球」义；on the ground（在地面上）"},
+        {"w": "globe", "ipa": "/ɡloʊb/", "gloss": "地球（强调球形，常用于地理旅行语境）", "note": "「地球（球体）」，强调球形，常用于地理和旅行语境；around the globe（全球各地）"}
+      ],
+      "antonyms": [
+        {"w": "sky", "note": "天空（物理相对）"},
+        {"w": "heaven", "note": "天堂（哲学/宗教相对）"}
+      ],
+      "nuance": "earth 可指星球（Earth's atmosphere）、土壤（rich earth）或地面（come down to earth）；soil 专指农业土壤，不可指星球；ground 指地面表面，不含土质或星球义；globe 强调球形，多见于旅行和地理语境。"
+    },
+    {
+      "word": "learn",
+      "hl": "ear",
+      "levels": ["六级"],
+      "ipa": "/lɜːrn/",
+      "subgroup": "ear",
+      "meaning": "v. 学习；学会；得知",
+      "etymology": "古英语 leornian「学习、跟随轨迹」，日耳曼同根，与德语 lernen 同源。核心义「跟着走→学习」，与 last（持续）、list（倾听，古义）有语源联系。earn（挣得）与 learn 押韵，民间常联系「earn by learn」。",
+      "roots": [
+        {"part": "learn（leornian）", "meaning": "跟随轨迹，学习"}
+      ],
+      "phonetics": "l + ear /ɜːr/ + n，和 earn、burn、turn 押韵（-urn/-earn 家族）。注意 ear 在此读 /ɜːr/，不是 /ɪər/。",
+      "tip": "learn by doing（从实践中学）、earn by learn（学到才能赚到）——押韵帮助记忆。",
+      "core": "「跟着走、把路径印进自己脑子」的感觉——可以指学习的过程，可以指最终学会，也可以指得知某个消息，共享「把外部信息纳入自身」的意象。",
+      "senses": [
+        {
+          "gloss": "v. 学习（进行中的过程）",
+          "logic": "「跟随轨迹」→ 持续走在获取知识的路上",
+          "en": "She is learning to play the piano.",
+          "zh": "她正在学弹钢琴。"
+        },
+        {
+          "gloss": "v. 学会，掌握（达成的结果）",
+          "logic": "「跟随轨迹」→ 走完之后，技能或知识已内化",
+          "en": "You can only learn to speak a language by actually speaking it.",
+          "zh": "学语言只能靠真正开口去说才能学会。"
+        },
+        {
+          "gloss": "v. 得知，获悉（某消息）",
+          "logic": "「把外部信息纳入自身」→ 知道了本来不知道的事情",
+          "en": "We later learned that he had already left the country.",
+          "zh": "我们后来得知他已经离开了这个国家。"
+        }
+      ],
+      "derivatives": [
+        {"w": "learner", "gloss": "学习者，初学者"},
+        {"w": "learning", "gloss": "学习（过程）；学问，知识"},
+        {"w": "learned", "gloss": "博学的（形容词，重音在前 /ˈlɜːrnɪd/）；learn 的过去式（/lɜːrnd/）"}
+      ],
+      "examples": [
+        {
+          "en": "You can only learn to speak a language by actually speaking it.",
+          "zh": "学语言只能靠真正开口去说才能学会。",
+          "source": "造句"
+        },
+        {
+          "en": "learn the hard way",
+          "zh": "「从痛苦教训中学会」——经历挫折后才明白道理的高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "study", "ipa": "/ˈstʌdi/", "gloss": "学习，研究（强调主动投入时间精力的过程）", "note": "「学习/研究」，比 learn 更强调主动投入时间和精力的过程；study for an exam（备考）"},
+        {"w": "acquire", "ipa": "/əˈkwaɪər/", "gloss": "习得，获得（强调通过积累渐进获取）", "note": "「习得、获得」，比 learn 更正式，强调通过过程积累而得；acquire a skill（习得技能）"},
+        {"w": "grasp", "ipa": "/ɡrɑːsp/", "gloss": "掌握，理解（强调真正理解并能运用）", "note": "「掌握、理解」，强调真正理解并能运用，比 learn 更强调深度；grasp a concept（掌握一个概念）"}
+      ],
+      "antonyms": [
+        {"w": "forget", "note": "忘记"},
+        {"w": "ignore", "note": "忽视、不学"}
+      ],
+      "nuance": "learn 既可指过程（I am learning French）也可指结果（I learned how to do it）；study 只指过程，不含「学会」的结果；acquire 强调技能或知识的积累性获得；grasp 强调真正理解，而非只接触过。"
+    },
+    {
+      "word": "heard",
+      "hl": "ear",
+      "levels": ["六级"],
+      "ipa": "/hɜːrd/",
+      "subgroup": "ear",
+      "meaning": "v. 听到（hear 的过去式和过去分词）",
+      "etymology": "古英语 hēran 的过去式，与 heart（心脏）有古老的亲缘关系——远古日耳曼语中「听」和「心」共享语根，「用心听」的文化印迹留在语言里。heard 是 hear 的不规则过去式，元音从 /ɪər/ 变为 /ɜːr/。",
+      "roots": [
+        {"part": "hear（hēran）", "meaning": "听见，过去式变音为 heard"}
+      ],
+      "phonetics": "h + ear /ɜːr/ + d，注意和 hear /hɪər/ 的区别：现在式 hear 读 /ɪər/，过去式 heard 读 /ɜːr/——元音完全不同，是英语中重要的易混淆对。",
+      "tip": "hear /hɪər/ vs heard /hɜːrd/：现在式轻盈（/ɪər/），过去式沉落（/ɜːr/）——事情发生过之后，声音「落地」了。",
+      "core": "「声音已经抵达并落入记忆」的完成感——hear 是当下感知，heard 是已发生、已进入过去的听见，带着「已成事实」的沉实感。",
+      "senses": [
+        {
+          "gloss": "v. 听到（hear 的过去式，单纯表示过去感知到了声音）",
+          "logic": "词的本义的时态变化形式，无引申，唯一义项",
+          "en": "I heard what you said, and I disagree.",
+          "zh": "我听到你说的话了，但我不同意。"
+        }
+      ],
+      "derivatives": [
+        {"w": "hear", "gloss": "听到（现在式）"},
+        {"w": "overhear", "gloss": "无意中听到（别人的谈话）"},
+        {"w": "unheard", "gloss": "未被听到的；闻所未闻的（unheard-of）"}
+      ],
+      "examples": [
+        {
+          "en": "I heard what you said, and I disagree.",
+          "zh": "我听到你说的话了，但我不同意。",
+          "source": "造句"
+        },
+        {
+          "en": "I've heard that before",
+          "zh": "「这话我听过了」——表示对理由或借口不以为然的口语高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "listened", "ipa": "/ˈlɪsnd/", "gloss": "倾听（listen 的过去式，主动有意识地聆听）", "note": "listen（倾听）的过去式，比 heard 更强调主动、有意识地聆听；heard 是被动感知"},
+        {"w": "overheard", "ipa": "/ˌoʊvərˈhɜːrd/", "gloss": "无意中听到（别人的谈话）", "note": "「无意听到（别人的谈话）」，比 heard 多了「不是对我说的」这一语境"}
+      ],
+      "antonyms": [
+        {"w": "missed", "note": "没听到"},
+        {"w": "ignored", "note": "忽视（虽听到但不理会）"}
+      ],
+      "nuance": "hear 是被动感知声音（自然发生），listen 是主动聆听（有意为之）；heard 和 listened to 作为过去式保留这一差异：「I heard him but didn't listen」（我听到了声音，但没有用心听）是完整的逻辑区分。"
+    },
+    {
+      "word": "early",
+      "hl": "ear",
+      "levels": ["六级"],
+      "ipa": "/ˈɜːrli/",
+      "subgroup": "ear",
+      "meaning": "adj./adv. 早（的）；提前（的）；早期（的）",
+      "etymology": "古英语 ǣrlīce = ǣr（以前、早）+ -lice（-ly 前身）。ǣr 与 ere（在……之前，诗歌用语）同根。early bird（早起的鸟）这个固定表达验证了「早」是 early 的核心义。",
+      "roots": [
+        {"part": "ear- (ǣr)", "meaning": "以前、早"},
+        {"part": "-ly", "meaning": "副词/形容词后缀"}
+      ],
+      "phonetics": "重音在前 EAR-ly，ear = /ɜːr/，-ly 弱读 /li/。注意不要把 early 的 ear 读成 /ɪər/（像 nearly/nearly 那样）——early 的 ea 读 /ɜː/。",
+      "tip": "early/earn/earth/learn 构成 ear → /ɜːr/ 的最高频四词组，一起背效率翻倍。",
+      "core": "「在基准时间点之前」的感觉——比预期先到，比历史进程更靠前，比晚的对立面，共享「走在前面、时间上靠早」的意象。",
+      "senses": [
+        {
+          "gloss": "adv. 早，提早（时间上先于预期或约定）",
+          "logic": "词的核心义：在基准时间点之前",
+          "en": "She arrived early to secure a good seat.",
+          "zh": "她早早赶到，抢占了一个好位置。"
+        },
+        {
+          "gloss": "adj. 早的，提前的（时间节点意义）",
+          "logic": "「在基准点之前」修饰时间节点",
+          "en": "An early start will help us avoid the traffic.",
+          "zh": "早出发可以帮我们避开堵车。"
+        },
+        {
+          "gloss": "adj. 早期的，初期的（历史或发展阶段的靠前部分）",
+          "logic": "「在基准时间点之前」→ 某事物发展历程的前段",
+          "en": "The exhibit focuses on early Renaissance painting.",
+          "zh": "这次展览聚焦于文艺复兴早期的绘画。"
+        }
+      ],
+      "derivatives": [
+        {"w": "earlier", "gloss": "更早（比较级）"},
+        {"w": "earliest", "gloss": "最早（最高级）"},
+        {"w": "early-stage", "gloss": "早期阶段的（复合形容词，商业和医疗语境常见）"}
+      ],
+      "examples": [
+        {
+          "en": "She arrived early to secure a good seat.",
+          "zh": "她早早赶到，抢占了一个好位置。",
+          "source": "造句"
+        },
+        {
+          "en": "at an early stage / early adopter",
+          "zh": "「在早期阶段 / 早期用户」——产品和技术语境的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "ahead of time", "gloss": "提前，早于计划", "note": "「提前、早于预定」，比 early 更强调超前于计划；arrive ahead of time（提前到达）"},
+        {"w": "prompt", "ipa": "/prɒmpt/", "gloss": "及时的，不拖延的", "note": "「及时、准时」，比 early 更强调不拖延、按时行动；prompt payment（及时付款）"},
+        {"w": "initial", "ipa": "/ɪˈnɪʃl/", "gloss": "最初的，开始时的", "note": "「最初的」义的近义，比 early 更书面，用于「早期阶段」的 early 可替换；initial stage（初期阶段）"}
+      ],
+      "antonyms": [
+        {"w": "late", "note": "晚、迟到"},
+        {"w": "overdue", "note": "逾期、过时"}
+      ],
+      "nuance": "early 是最通用的「早」，同时形容时间节点（come early）和历史时期（early civilization）；prompt 强调守时、不拖延，多正面含义；initial 只形容「最初阶段」，不可形容「早到」这一行为。"
+    },
+    {
+      "word": "search",
+      "hl": "ear",
+      "levels": ["六级"],
+      "ipa": "/sɜːrtʃ/",
+      "subgroup": "ear",
+      "meaning": "v. 搜索；搜查；检索  n. 搜索；搜查",
+      "etymology": "古法语 cerchier「绕圈检查」，源自拉丁语 circare = circare(绕圈)，与 circle（圆）同根。「绕圈检查」→ 搜索——搜索的本质是「围绕目标画圆，不遗漏」。",
+      "roots": [
+        {"part": "search（circare）", "meaning": "绕圈检查、搜索"}
+      ],
+      "phonetics": "s + ear /ɜːr/ + ch /tʃ/，与 church 共享 ear + ch 的组合；注意 ea 读 /ɜːr/ 不是 /ɪər/。",
+      "tip": "search 和 circle 同根（circare = 绕圈）——搜索的本质是绕圈不遗漏，这个词源图像帮助理解「搜索」的全面性。",
+      "core": "「绕圈不遗漏地找」的感觉——系统性地覆盖一个范围以找到目标，无论是翻找房间、检索数据库还是寻求某种答案，都带着「不放过任何角落」的彻底感。",
+      "senses": [
+        {
+          "gloss": "v. 搜索，翻找（在某空间或范围内寻找）",
+          "logic": "「绕圈检查」→ 在物理空间中不遗漏地找",
+          "en": "Police searched the building for several hours.",
+          "zh": "警察搜查了这栋楼好几个小时。"
+        },
+        {
+          "gloss": "v. 检索，在数据中搜索",
+          "logic": "「绕圈检查」→ 在信息海洋中系统性地找",
+          "en": "She searched the internet for hours but couldn't find a reliable source.",
+          "zh": "她在网上搜索了好几个小时，却找不到可靠的来源。"
+        },
+        {
+          "gloss": "v. 搜查（人身或场所，多指执法行为）",
+          "logic": "「绕圈检查」→ 对人身或场所进行系统性检查",
+          "en": "Customs officers searched his luggage at the border.",
+          "zh": "海关人员在边境对他的行李进行了搜查。"
+        },
+        {
+          "gloss": "n. 搜索，搜查（动词义名词化）",
+          "logic": "行为本身被名词化",
+          "en": "The search for the missing hiker lasted three days.",
+          "zh": "对失踪登山者的搜寻持续了三天。"
+        }
+      ],
+      "derivatives": [
+        {"w": "research", "gloss": "研究，调查（re- 再次搜索→深入研究）"},
+        {"w": "searcher", "gloss": "搜索者，搜查者"},
+        {"w": "search engine", "gloss": "搜索引擎"}
+      ],
+      "examples": [
+        {
+          "en": "She searched the internet for hours but couldn't find a reliable source.",
+          "zh": "她在网上搜索了好几个小时，却找不到可靠的来源。",
+          "source": "造句"
+        },
+        {
+          "en": "in search of / search engine",
+          "zh": "「寻找……/ 搜索引擎」——两个最高频的 search 搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "seek", "ipa": "/siːk/", "gloss": "寻求，寻找（书面语，强调目的和渴望）", "note": "「寻求、寻找」，比 search 更书面，强调目的和渴望，不强调过程；seek help（寻求帮助）"},
+        {"w": "look for", "gloss": "找（最口语的表达，不含系统性搜索义）", "note": "「找」的口语说法，比 search 更随意；search 含「系统性/彻底地」搜索的含义"},
+        {"w": "investigate", "ipa": "/ɪnˈvestɪɡeɪt/", "gloss": "调查，查明（系统性探究目的和原因）", "note": "「调查」，比 search 更强调系统性探究目的和原因；investigate a crime（调查犯罪）"}
+      ],
+      "antonyms": [
+        {"w": "find", "note": "找到（搜索的结果）"},
+        {"w": "ignore", "note": "忽视、不寻找"}
+      ],
+      "nuance": "search 强调系统性地翻找（search a room）或在大量信息中检索（search the internet）；seek 更文学、更正式，侧重「渴望找到某物」的目的（seek truth）；look for 是最口语的「找」；investigate 超出「搜索」义，更强调弄清楚原因和事实。"
+    }
+  ]
+}

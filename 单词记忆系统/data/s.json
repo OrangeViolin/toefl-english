@@ -1,0 +1,2352 @@
+{
+  "id": "s",
+  "combo": "s·ss·c·sc",
+  "title": "/s/ 的多种拼写",
+  "sound": "/s/",
+  "subtitle": "同一个清摩擦音，四种写法，逻辑全摸清",
+  "intro": "/s/ 是英语最常见的清辅音，嘴角微收、气流贴齿摩擦，发一个尖锐的「丝」音。它有四种拼法：最直接的是字母 s（sun、sea），重叠成 ss 时仍读一个 /s/（class、miss）；c 在 e/i/y 前读 /s/（city、face、policy），在 a/o/u 及辅音前读 /k/（cat、cold）——这是英语中最重要的一条 c 的判读规律；sc 在 e/i/y 前，c 被 s 吸收，只发 /s/ 一个音（science、scene）。记住这四条，/s/ 家族再无陌生词。",
+  "subgroups": [
+    {
+      "key": "s",
+      "tag": "s → /s/",
+      "label": "✅ s = /s/",
+      "desc": "最直接的 /s/ 拼写，几乎无例外。词首（sun/sea/stop）、词中（system/study）、词尾（bus/this）均读 /s/。唯一注意：s 在元音之间有时浊化为 /z/（rose、music），本页只收清音 /s/ 的词。"
+    },
+    {
+      "key": "ss",
+      "tag": "ss → /s/",
+      "label": "ss = /s/",
+      "desc": "双写 ss 是单 s 的「加强固定版」——两个字母合读一个 /s/，前面的元音是短音（class /klæs/、miss /mɪs/）。双写的本质：在短元音后面，单 s 结尾会被读成 /z/，加第二个 s 来锁定清音并保持短元音。across/success 中的 ss 遵守同一规律。"
+    },
+    {
+      "key": "c",
+      "tag": "c → /s/（e/i/y 前）",
+      "label": "c = /s/",
+      "desc": "核心规律：c 在 e、i、y 前读 /s/（软 c），在 a/o/u 及辅音前读 /k/（硬 c）。city（c+i）、face（c+e）、policy（c+y）是软 c；cat（c+a）、cold（c+o）是硬 c。记忆口诀：e/i/y 软化 c，其余皆为 /k/。"
+    },
+    {
+      "key": "sc",
+      "tag": "sc → /s/",
+      "label": "sc = /s/",
+      "desc": "sc 在 e/i/y 前，c 完全被 s 吸收，整体只读 /s/ 一个音：science /s/、scene /s/、scent /s/。在 a/o/u 前，sc 读 /sk/（school /sk/、scout /sk/）。muscle 中的 sc 是拉丁语遗留，发音同样只读 /s/（或 /sl/ 在某些方言中，标准美音 /ˈmʌsl/ 的 sc 合读为 /s/）。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-iss / -ass 结尾",
+      "words": [
+        "miss",
+        "class",
+        "pass",
+        "across",
+        "press"
+      ]
+    },
+    {
+      "label": "-ence / -ience 结尾",
+      "words": [
+        "science",
+        "scene",
+        "cent",
+        "city"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "sun",
+      "hl": "s",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/sʌn/",
+      "subgroup": "s",
+      "meaning": "n. 太阳；阳光  v. （使）晒太阳",
+      "etymology": "古英语 sunne，日耳曼同根，与德语 Sonne、拉丁语 sol（solar 的词根）同源。「太阳」是最古老的词汇之一，跨语族保留了相似发音。",
+      "roots": [
+        {
+          "part": "sun（sunne）",
+          "meaning": "太阳"
+        }
+      ],
+      "phonetics": "s + un /ʌn/，词首 s 是 /s/ 的最干净示范。注意 sun 和 son（儿子）是完全同音词，靠语境区分。",
+      "tip": "sun / son 同音陷阱：「The son rose」是「儿子起床了」，「The sun rose」是「太阳升起了」。",
+      "examples": [
+        {
+          "en": "The sun sets earlier in winter, leaving long, cold evenings.",
+          "zh": "冬天太阳落得早，留下漫长寒冷的夜晚。",
+          "source": "造句"
+        },
+        {
+          "en": "under the sun",
+          "zh": "「世界上（的一切）」——高频习语，nothing new under the sun（太阳底下无新事）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "sunshine",
+          "ipa": "/ˈsʌnʃaɪn/",
+          "note": "强调「阳光、光照」而非天体本身，情感更温暖；sunshine policy（阳光政策）",
+          "gloss": "阳光，光照（非天体本身，侧重温暖感）"
+        },
+        {
+          "w": "solar",
+          "ipa": "/ˈsoʊlər/",
+          "note": "形容词「太阳的」，来自拉丁语 sol，用于科学语境；solar energy（太阳能）",
+          "gloss": "太阳的（形容词，科学语境）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "moon",
+          "note": "月亮"
+        },
+        {
+          "w": "shade",
+          "note": "阴影、背阴处"
+        }
+      ],
+      "nuance": "sun 指天体本身，sunshine 指照射下来的光和温暖感，solar 是科学用词专指「太阳的」。「I love the sun」是喜欢太阳，「I love sunshine」更侧重那种温暖感受。",
+      "core": "一团在天上燃烧的炽热火球，它的光芒暖暖地洒下来，照亮一切、给予生命热量——最原始的「光与热」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 太阳；阳光",
+          "logic": "天体的本义：那轮发光的恒星",
+          "en": "The sun rose slowly over the horizon, painting the sky in shades of gold.",
+          "zh": "太阳缓缓升过地平线，把天空染成金色。"
+        },
+        {
+          "gloss": "v. （使）晒太阳",
+          "logic": "把自己放到阳光下：让身体接受光与热",
+          "en": "She likes to sun herself on the balcony for half an hour every morning.",
+          "zh": "她喜欢每天早晨在阳台上晒半小时太阳。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "sunny",
+          "gloss": "阳光充足的；开朗的"
+        },
+        {
+          "w": "sunshine",
+          "gloss": "阳光；温暖明媚的感受"
+        },
+        {
+          "w": "solar",
+          "gloss": "太阳的（科学术语，来自拉丁语 sol）"
+        }
+      ]
+    },
+    {
+      "word": "sea",
+      "hl": "s",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/siː/",
+      "subgroup": "s",
+      "meaning": "n. 海，海洋；大量（的某物）",
+      "etymology": "古英语 sǣ，日耳曼同根，与德语 See（湖/海）同源。beyond the sea（海外）是古老的空间隐喻，sea 也衍生出 seafood、seashore、overseas 等复合词。",
+      "roots": [
+        {
+          "part": "sea（sǣ）",
+          "meaning": "海"
+        }
+      ],
+      "phonetics": "s + ea /iː/，与 see（动词）发音完全相同——同音词。sea 的 s 是词首清音 /s/ 示范，ea 读 /iː/（属于 ee 页规律）。",
+      "tip": "sea（海）和 see（看）同音，注意词性：sea 是名词，see 是动词。",
+      "examples": [
+        {
+          "en": "A sea of protesters filled the city square.",
+          "zh": "大批抗议者涌满了城市广场。",
+          "source": "造句"
+        },
+        {
+          "en": "at sea",
+          "zh": "「在海上；茫然不知所措」——习语双义，at sea about the problem（对这个问题一头雾水）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "ocean",
+          "ipa": "/ˈoʊʃn/",
+          "note": "更大范围，特指五大洋；sea 指较小的海或靠近陆地的水域，South China Sea（南海）",
+          "gloss": "大洋（比 sea 大，特指五大洋）"
+        },
+        {
+          "w": "waters",
+          "ipa": "/ˈwɔːtərz/",
+          "note": "复数泛指某片水域，多见于正式或法律语境；territorial waters（领海）",
+          "gloss": "水域（复数，正式/法律语境）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "land",
+          "note": "陆地"
+        },
+        {
+          "w": "shore",
+          "note": "海岸、岸边"
+        }
+      ],
+      "nuance": "sea 和 ocean 都指海洋，但 ocean 特指五大洋（Pacific Ocean），sea 指较小的海（South China Sea）或泛指大海；日常口语中两者常混用，正式地理语境需区分。",
+      "core": "一大片无边的深色水域，望不到头，咸味的风吹过来，波浪永远在涌动——一种「广阔、深邃、不可控」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 海，海洋",
+          "logic": "水体本义：与大洋相连的大面积咸水",
+          "en": "The sea was calm that morning, like a sheet of grey silk.",
+          "zh": "那天早晨海面平静得像一片灰色丝绸。"
+        },
+        {
+          "gloss": "n. 大量（的某物），浩瀚",
+          "logic": "「海一样的量」→ 数量大到像海一样望不到头",
+          "en": "He faced a sea of unfamiliar faces in the lecture hall.",
+          "zh": "他在报告厅里面对着一片陌生面孔的海洋。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "seafood",
+          "gloss": "海鲜"
+        },
+        {
+          "w": "seashore",
+          "gloss": "海岸，海边"
+        },
+        {
+          "w": "overseas",
+          "gloss": "海外的，在海外（adv./adj.）"
+        }
+      ]
+    },
+    {
+      "word": "sit",
+      "hl": "s",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/sɪt/",
+      "subgroup": "s",
+      "meaning": "v. 坐；（使）就座；（考试）参加；（委员会等）开会",
+      "etymology": "古英语 sittan，日耳曼同根，与德语 sitzen 同源。seat（座位）是其名词派生；sit for an exam（英式）= 参加考试。",
+      "roots": [
+        {
+          "part": "sit（sittan）",
+          "meaning": "坐"
+        }
+      ],
+      "phonetics": "s + it /ɪt/，词首清音 /s/，短元音 /ɪ/。注意 sit/set/sat/seat 四组近形词：sit（坐）、set（放置）、sat（sit 过去式）、seat（座位）。",
+      "tip": "sit-sat-sat：不规则变化。「sit down」口语，「be seated」正式（飞机/典礼用）。",
+      "examples": [
+        {
+          "en": "She sat quietly at her desk, reading the report.",
+          "zh": "她静静地坐在桌前阅读报告。",
+          "source": "造句"
+        },
+        {
+          "en": "sit on the fence",
+          "zh": "「骑墙观望、不表态」——高频政治和谈判习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "be seated",
+          "ipa": "/biː ˈsiːtɪd/",
+          "note": "正式用语，典礼/飞机广播常用；Please be seated（请就座）",
+          "gloss": "就座（正式用语，典礼/广播用）"
+        },
+        {
+          "w": "perch",
+          "ipa": "/pɜːrtʃ/",
+          "note": "「栖息、轻坐」，多指鸟类或人轻巧地坐在边缘上；perch on a stool（坐在凳子边上）",
+          "gloss": "轻坐，栖息（在不稳或边缘处轻巧地坐）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "stand",
+          "note": "站立"
+        },
+        {
+          "w": "rise",
+          "note": "站起来"
+        }
+      ],
+      "nuance": "sit 是最通用的「坐」，be seated 是礼貌正式的表达，perch 带有「轻盈/不稳定」的姿态感，多用于文学描写。",
+      "core": "身体往下沉，臀部落在平面上，全身的重量交给椅子或地面托住——一种「落定、安放、不再移动」的感觉。",
+      "senses": [
+        {
+          "gloss": "v. 坐；就座",
+          "logic": "身体动作本义：臀部着面，身体静止",
+          "en": "He sat on the park bench, watching the children play.",
+          "zh": "他坐在公园长椅上，看着孩子们玩耍。"
+        },
+        {
+          "gloss": "v. （考试）参加（英式用法）",
+          "logic": "「坐下来考」：考试时人必须坐下，用坐的动作代指参加考试",
+          "en": "She will sit the entrance exam next month.",
+          "zh": "她下个月将参加入学考试。"
+        },
+        {
+          "gloss": "v. （委员会等）开会，开庭",
+          "logic": "「坐下来开会」：议会/法庭成员坐下议事→开会",
+          "en": "The committee sits every Tuesday to review applications.",
+          "zh": "委员会每周二开会审议申请。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "seat",
+          "gloss": "座位；使就座（名词/动词）"
+        },
+        {
+          "w": "sitting",
+          "gloss": "会议期间；一坐（的时间）"
+        },
+        {
+          "w": "babysit",
+          "gloss": "临时照看小孩（坐着看孩子）"
+        }
+      ]
+    },
+    {
+      "word": "stop",
+      "hl": "s",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/stɒp/",
+      "subgroup": "s",
+      "meaning": "v. 停止；阻止；（使）停下  n. 停止；（公共交通的）停靠站",
+      "etymology": "古英语 stoppian「堵塞」，日耳曼同根，本义是用东西堵住孔洞→ 使流动停止 → 停止。与德语 stopfen（填塞）同源。",
+      "roots": [
+        {
+          "part": "stop（stoppian）",
+          "meaning": "堵塞、停止"
+        }
+      ],
+      "phonetics": "st- 连缀辅音 + op /ɒp/，注意 st 要连读干净，/t/ 不送气（因为 s 后的 /t/ 不送气）。",
+      "tip": "stop doing（停止正在做的）vs stop to do（停下来去做另一件事）：语义截然不同。",
+      "examples": [
+        {
+          "en": "The government tried to stop the spread of misinformation.",
+          "zh": "政府试图阻止错误信息的传播。",
+          "source": "造句"
+        },
+        {
+          "en": "stop short of",
+          "zh": "「差点做到但没做」——高频搭配，He stopped short of resigning（他差点辞职但没有）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "halt",
+          "ipa": "/hɔːlt/",
+          "note": "比 stop 更正式，多用于命令或军事语境；Halt!（立定！）halt the advance（阻止推进）",
+          "gloss": "停止（正式/命令式，像军队立定）"
+        },
+        {
+          "w": "cease",
+          "ipa": "/siːs/",
+          "note": "正式书面语「停止」，多用于协议、声明；cease fire（停火）",
+          "gloss": "停止（正式书面语，协议/声明用）"
+        },
+        {
+          "w": "prevent",
+          "ipa": "/prɪˈvent/",
+          "note": "「阻止（某事发生）」义的近义词，比 stop 更强调提前阻断；prevent crime（预防犯罪）",
+          "gloss": "阻止（提前阻断，预防性）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "start",
+          "note": "开始"
+        },
+        {
+          "w": "continue",
+          "note": "继续"
+        }
+      ],
+      "nuance": "stop 最口语通用，cease 是正式书面词（常见于法律、外交），halt 有命令式语气，prevent 强调预防性阻止（stop 可以事后阻止，prevent 必须事前）。",
+      "core": "一根流动的水管突然被堵住，水流猛地中断——一种「卡住、阻断、不再前进」的硬停止感。",
+      "senses": [
+        {
+          "gloss": "v. 停止；使停下",
+          "logic": "动作本义：让运动或流动中断",
+          "en": "The driver stopped the car just inches from the barrier.",
+          "zh": "司机把车停在距离护栏仅几英寸处。"
+        },
+        {
+          "gloss": "v. 阻止，阻拦",
+          "logic": "「让某事物停下」→ 主动阻断它继续发生",
+          "en": "Nothing could stop her from pursuing her dream of becoming a doctor.",
+          "zh": "没有什么能阻止她追求成为医生的梦想。"
+        },
+        {
+          "gloss": "n. 停靠站（公交/地铁站点）",
+          "logic": "「车辆停下的地方」：移动中的固定停顿点",
+          "en": "Get off at the next stop — it's closer to the museum.",
+          "zh": "在下一站下车——那里离博物馆更近。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "stoppage",
+          "gloss": "停工，中断（名词）"
+        },
+        {
+          "w": "nonstop",
+          "gloss": "不停的，直达的"
+        },
+        {
+          "w": "unstoppable",
+          "gloss": "无法阻挡的"
+        }
+      ]
+    },
+    {
+      "word": "study",
+      "hl": "s",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈstʌdi/",
+      "subgroup": "s",
+      "meaning": "v. 学习；研究；仔细观察  n. 学习；研究；书房",
+      "etymology": "拉丁语 studere「热切追求、用功」，与 studio（工作室）同根——都是「专注工作的空间」。英语借入后兼指「学习行为」和「书房」。",
+      "roots": [
+        {
+          "part": "study（studere）",
+          "meaning": "热切追求、用功"
+        }
+      ],
+      "phonetics": "st- + udy /ʌdi/，重音在首音节 STU-。词尾 -dy 是弱读 /di/，不可读成 /daɪ/。",
+      "examples": [
+        {
+          "en": "A new study suggests that sleep improves long-term memory consolidation.",
+          "zh": "一项新研究表明睡眠能改善长期记忆巩固。",
+          "source": "造句"
+        },
+        {
+          "en": "study abroad",
+          "zh": "「留学」——高频搭配，也是 TOEFL 高频话题场景。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "research",
+          "ipa": "/ˈriːsɜːrtʃ/",
+          "note": "「研究」，比 study 更系统化，多指学术或实验室研究；research a topic（研究一个课题）",
+          "gloss": "研究（系统化、学术性的调查研究）"
+        },
+        {
+          "w": "examine",
+          "ipa": "/ɪɡˈzæmɪn/",
+          "note": "「仔细检查/考察」，比 study 更强调观察细节；examine evidence（检查证据）",
+          "gloss": "检查，考察（侧重仔细观察细节）"
+        },
+        {
+          "w": "learn",
+          "ipa": "/lɜːrn/",
+          "note": "「学习」，比 study 更侧重结果（获得知识/技能），study 更侧重过程",
+          "gloss": "学习（侧重结果，掌握知识/技能）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ignore",
+          "note": "忽视"
+        },
+        {
+          "w": "neglect",
+          "note": "忽略、不学习"
+        }
+      ],
+      "nuance": "study 强调投入时间精力系统性学习的过程，learn 强调最终掌握了某种知识或技能的结果，research 是更正式的、有方法论支撑的调查研究，examine 侧重仔细查看分析。",
+      "core": "一个人伏在桌前，眼睛盯着书，大脑在咀嚼吸收信息——一种「热切、专注地把知识往里装」的感觉。",
+      "senses": [
+        {
+          "gloss": "v. 学习；用功",
+          "logic": "动作本义：系统性地投入时间获取知识",
+          "en": "He studied late into the night for the final exam.",
+          "zh": "他为了期末考试学习到深夜。"
+        },
+        {
+          "gloss": "v. 研究；仔细观察",
+          "logic": "「仔细看以了解」：不只是记忆，而是分析、探究",
+          "en": "The scientists studied the effects of sleep deprivation on memory.",
+          "zh": "科学家们研究了睡眠剥夺对记忆的影响。"
+        },
+        {
+          "gloss": "n. 研究（报告/结果）；书房",
+          "logic": "「学习的结果」→ 研究报告；「学习的地方」→ 书房",
+          "en": "A recent study links regular exercise with improved mental health.",
+          "zh": "最近一项研究将规律锻炼与改善心理健康联系起来。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "student",
+          "gloss": "学生"
+        },
+        {
+          "w": "studio",
+          "gloss": "工作室（专注工作的空间，同根词）"
+        },
+        {
+          "w": "studious",
+          "gloss": "勤奋好学的"
+        }
+      ]
+    },
+    {
+      "word": "speak",
+      "hl": "s",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/spiːk/",
+      "subgroup": "s",
+      "meaning": "v. 说话；讲（某种语言）；演讲；表达",
+      "etymology": "古英语 sprecan（后简化为 specan），日耳曼同根，与德语 sprechen 同源。speech（演讲）是其名词形式，speaker（扬声器/演讲者）是派生词。",
+      "roots": [
+        {
+          "part": "speak（sprecan）",
+          "meaning": "说话"
+        }
+      ],
+      "phonetics": "sp- + eak /iːk/，sp 是清辅音连缀，/p/ 在 s 后不送气。speak-spoke-spoken 是不规则动词。",
+      "tip": "speak to sb（直接说话给某人听）vs speak with sb（与某人交谈，双向）；美式英语常混用，英式英语有区分。",
+      "examples": [
+        {
+          "en": "She speaks three languages fluently, including Mandarin and French.",
+          "zh": "她能流利地说三种语言，包括普通话和法语。",
+          "source": "造句"
+        },
+        {
+          "en": "so to speak",
+          "zh": "「可以这么说、打个比方」——口语中插入的缓和用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "talk",
+          "ipa": "/tɔːk/",
+          "note": "最口语的「说话」，比 speak 更随意；talk to sb（和某人说话）强调双向对话",
+          "gloss": "说话（最口语化，双向对话感）"
+        },
+        {
+          "w": "address",
+          "ipa": "/əˈdres/",
+          "note": "「向……演讲/发表讲话」，比 speak 正式，多用于公开场合；address the audience（向观众致辞）",
+          "gloss": "向……演讲，致辞（正式公开场合）"
+        },
+        {
+          "w": "utter",
+          "ipa": "/ˈʌtər/",
+          "note": "「发出（声音/话语）」，比 speak 更强调声音的发出这一物理动作；without uttering a word（一言不发）",
+          "gloss": "发出（声音/话语），开口（聚焦发声动作本身）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "listen",
+          "note": "倾听"
+        },
+        {
+          "w": "be silent",
+          "note": "保持沉默"
+        }
+      ],
+      "nuance": "speak 是较正式的「说话」（speak at a conference），talk 是日常互动式交谈（talk with friends），address 专指对受众发表讲话，utter 聚焦于「开口发声」这一动作本身，即使只说一个字。",
+      "core": "气流从肺里推上来，声带振动，嘴唇舌头动起来，把脑子里的想法变成一串声音往外送——「把内心说出来」的感觉。",
+      "senses": [
+        {
+          "gloss": "v. 说话；讲话",
+          "logic": "动作本义：用语言发出声音，与人沟通",
+          "en": "He spoke so softly that the audience had to lean forward to hear.",
+          "zh": "他说话声音很轻，观众不得不前倾身子才能听到。"
+        },
+        {
+          "gloss": "v. 讲（某种语言）",
+          "logic": "「说话」的特定化：指掌握并使用某语言说话",
+          "en": "She speaks three languages fluently, including Mandarin and French.",
+          "zh": "她能流利地说三种语言，包括普通话和法语。"
+        },
+        {
+          "gloss": "v. 演讲，发言（公开场合）",
+          "logic": "「对众人说话」：正式的、面向受众的表达",
+          "en": "The professor was invited to speak at the international conference.",
+          "zh": "这位教授受邀在国际会议上发言。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "speech",
+          "gloss": "演讲；说话能力（名词）"
+        },
+        {
+          "w": "speaker",
+          "gloss": "说话者；演讲者；扬声器"
+        },
+        {
+          "w": "spoken",
+          "gloss": "口语的（形容词）；speak 过去分词"
+        }
+      ]
+    },
+    {
+      "word": "system",
+      "hl": "s",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈsɪstəm/",
+      "subgroup": "s",
+      "meaning": "n. 系统；体系；制度；方法；（人体）各系统",
+      "etymology": "希腊语 systēma = syn-（一起）+ histanai（使站立）= 「使各部分站在一起」。与 syntax（句法，词序的系统）、synthesis（综合）同根。",
+      "roots": [
+        {
+          "part": "sys- (syn-)",
+          "meaning": "一起、共同"
+        },
+        {
+          "part": "-tem (histanai)",
+          "meaning": "使站立、使成形"
+        }
+      ],
+      "phonetics": "SYS-tem，重音在首音节，-tem 弱读 /təm/。词首 s 是清音 /s/，y 在这里读短元音 /ɪ/。",
+      "examples": [
+        {
+          "en": "The immune system acts as the body's first line of defence against infection.",
+          "zh": "免疫系统是人体抵御感染的第一道防线。",
+          "source": "造句"
+        },
+        {
+          "en": "beat the system / the system is rigged",
+          "zh": "「钻体制空子 / 制度是不公平的」——社会批评高频语境。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "structure",
+          "ipa": "/ˈstrʌktʃər/",
+          "note": "「结构」，比 system 更强调物理或逻辑框架的形态；the structure of a sentence（句子结构）",
+          "gloss": "结构（侧重物理或逻辑框架的形态）"
+        },
+        {
+          "w": "framework",
+          "ipa": "/ˈfreɪmwɜːrk/",
+          "note": "「框架」，比 system 更抽象，多指用于分析或规划的概念性结构；a regulatory framework（监管框架）",
+          "gloss": "框架（更抽象，分析或规划用的概念结构）"
+        },
+        {
+          "w": "mechanism",
+          "ipa": "/ˈmekənɪzm/",
+          "note": "「机制」，强调各部分如何协同运作，比 system 更聚焦内部运作逻辑",
+          "gloss": "机制（侧重内部各部分的运作方式）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "chaos",
+          "note": "混乱，无序"
+        },
+        {
+          "w": "disorder",
+          "note": "无序，失调"
+        }
+      ],
+      "nuance": "system 强调「由相互关联的部分组成的整体」，framework 是更抽象的分析工具（用于思考的框架），structure 更偏向实体或逻辑的构型，mechanism 侧重内部运作方式。「a political system」是政治制度，「a political framework」是分析政治的概念框架。",
+      "core": "一堆零件被人摆在一起，每个零件站在自己该站的位置、做自己该做的事，合在一起运转起来——「各部分有序站在一起协同」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 系统；体系",
+          "logic": "本义：互相关联的组件按规则协同运作的整体",
+          "en": "The city's public transportation system handles over a million passengers daily.",
+          "zh": "该城市的公共交通系统每天运送超过一百万名乘客。"
+        },
+        {
+          "gloss": "n. 制度；体制（社会/政治）",
+          "logic": "「系统」在社会层面：规范人群生活的一套规则架构",
+          "en": "Many believe the current system favours the wealthy over the poor.",
+          "zh": "许多人认为现行体制偏向富人而非穷人。"
+        },
+        {
+          "gloss": "n. （人体）系统（如神经系统、免疫系统）",
+          "logic": "「系统」在生物学层面：体内有特定功能的器官组织网络",
+          "en": "The immune system acts as the body's first line of defence against infection.",
+          "zh": "免疫系统是人体抵御感染的第一道防线。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "systematic",
+          "gloss": "系统性的，有条理的"
+        },
+        {
+          "w": "ecosystem",
+          "gloss": "生态系统"
+        },
+        {
+          "w": "syntax",
+          "gloss": "句法（词序的系统，同根词 syn+taxis）"
+        }
+      ]
+    },
+    {
+      "word": "society",
+      "hl": "s",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/səˈsaɪəti/",
+      "subgroup": "s",
+      "meaning": "n. 社会；社团，协会；（有教养的）上流社会",
+      "etymology": "拉丁语 societas = socius（同伴）+ -itas（名词后缀）。socius 同根衍生出：social（社会的）、associate（联系）、sociology（社会学）。「同伴的集合」→ 社会。",
+      "roots": [
+        {
+          "part": "soci- (socius)",
+          "meaning": "同伴、伙伴"
+        },
+        {
+          "part": "-ety (-itas)",
+          "meaning": "性质、状态（名词后缀）"
+        }
+      ],
+      "phonetics": "so-CI-e-ty，重音在第二音节 /saɪ/，共四个音节。词首 s = /s/，-ci- 这里 c 不在 e/i/y 前所以 c 读 /s/ 是因为整体借自法语，不适用于软c规律——发音由词源决定。",
+      "examples": [
+        {
+          "en": "Modern society faces a growing gap between the rich and the poor.",
+          "zh": "现代社会面临日益扩大的贫富差距。",
+          "source": "造句"
+        },
+        {
+          "en": "civil society",
+          "zh": "「公民社会」——政治学和 TOEFL 高频术语，指独立于政府和企业的社会力量。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "community",
+          "ipa": "/kəˈmjuːnɪti/",
+          "note": "「社区、群体」，比 society 范围更小更具体，强调共同归属感；local community（本地社区）",
+          "gloss": "社区，群体（更小更具体，强调共同归属感）"
+        },
+        {
+          "w": "civilization",
+          "ipa": "/ˌsɪvɪlaɪˈzeɪʃn/",
+          "note": "「文明」，比 society 层次更高、时间跨度更长，强调文化积累",
+          "gloss": "文明（比 society 时间跨度更长，强调文化积累）"
+        },
+        {
+          "w": "culture",
+          "ipa": "/ˈkʌltʃər/",
+          "note": "「文化」，与 society 不同，culture 更侧重共同的价值观、习俗和艺术，society 更侧重人们的组织方式",
+          "gloss": "文化（侧重共同价值观、习俗和艺术）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "individual",
+          "note": "个体（与群体相对）"
+        },
+        {
+          "w": "isolation",
+          "note": "孤立，与世隔绝"
+        }
+      ],
+      "nuance": "society 指一个地域或历史时期内人与人之间的整体组织方式（modern society），community 是其中有共同身份感的小群体（immigrant community），civilization 强调文化和技术积累达到一定高度的社会阶段。",
+      "core": "一群互相认识或不认识的人，像伙伴一样共同生活在一个有规则的有形无形空间里——「人聚在一起互为同伴」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 社会",
+          "logic": "本义：同一地域/文明内人们整体的组织方式和关系网",
+          "en": "Modern society faces a growing gap between the rich and the poor.",
+          "zh": "现代社会面临日益扩大的贫富差距。"
+        },
+        {
+          "gloss": "n. 社团，协会",
+          "logic": "「一群为共同目标聚在一起的伙伴」→ 社团",
+          "en": "She joined the university's debating society to improve her public speaking.",
+          "zh": "她加入了大学的辩论社以提高公开演讲能力。"
+        },
+        {
+          "gloss": "n. 上流社会（the society）",
+          "logic": "「有身份的人组成的小圈子」：最窄义，专指精英社交圈",
+          "en": "She was introduced to high society at the charity gala.",
+          "zh": "她在慈善晚会上被介绍进了上流社交圈。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "social",
+          "gloss": "社会的；社交的"
+        },
+        {
+          "w": "sociology",
+          "gloss": "社会学"
+        },
+        {
+          "w": "associate",
+          "gloss": "联系；交往；同事（来自同一词根 socius）"
+        }
+      ]
+    },
+    {
+      "word": "class",
+      "hl": "ss",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/klæs/",
+      "subgroup": "ss",
+      "meaning": "n. 班级；课；阶级；等级；（俚）品位  adj. 一流的  v. 把……归类",
+      "etymology": "拉丁语 classis「编组、舰队」，罗马人用 classis 划分公民财产等级。借入英语后扩展：「等级」→ 社会阶级，「分组」→ 学校班级。",
+      "roots": [
+        {
+          "part": "class（classis）",
+          "meaning": "编组、等级"
+        }
+      ],
+      "phonetics": "cl- + ass /æs/，-ss 锁定短元音 /æ/（若单写 clas 词尾 s 可能浊化为 /z/）。与 mass、pass、grass 押韵。",
+      "examples": [
+        {
+          "en": "The gap between social classes has widened in many developed countries.",
+          "zh": "许多发达国家的社会阶级差距已经扩大。",
+          "source": "造句"
+        },
+        {
+          "en": "first-class / world-class",
+          "zh": "「头等/世界级」——复合形容词高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "category",
+          "ipa": "/ˈkætəɡɔːri/",
+          "note": "「类别」义的正式词，比 class 更书面，不含社会阶级义；category of risk（风险类别）",
+          "gloss": "类别（正式学术词，不含社会等级义）"
+        },
+        {
+          "w": "grade",
+          "ipa": "/ɡreɪd/",
+          "note": "「等级/年级」，比 class 更强调质量高低的排序；first-grade（一年级/一流）",
+          "gloss": "等级，年级（强调质量高低的排序）"
+        },
+        {
+          "w": "rank",
+          "ipa": "/ræŋk/",
+          "note": "「级别/排名」，强调相对位置；rank in society（社会地位）",
+          "gloss": "级别，排名（强调相对位置）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "mass",
+          "note": "大众（相对于阶级划分）"
+        }
+      ],
+      "nuance": "class 兼指「上课」和「阶级」两义——TOEFL 阅读中需靠语境判断；category 是学术分类词，不含社会等级含义；rank 强调排名的位置；grade 强调质量等级的判断。",
+      "core": "一群人或物被人为地分到同一个格子里——这个格子有标签、有边界，把「我们」和「他们」分开——一种「分组、分层」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 班级；课",
+          "logic": "「分组教学」：按年龄/水平把学生编入同一组→班级→引申为上的一节课",
+          "en": "The class fell silent when the teacher announced the surprise test.",
+          "zh": "当老师宣布突击测验时，全班安静了下来。"
+        },
+        {
+          "gloss": "n. 阶级；等级",
+          "logic": "「把人按高低分层」：社会经济地位的上下分格",
+          "en": "The gap between social classes has widened in many developed countries.",
+          "zh": "许多发达国家的社会阶级差距已经扩大。"
+        },
+        {
+          "gloss": "n. （质量）等级；品味（俚）",
+          "logic": "「按好坏分档」：高等级=好品质；「有 class」=有品位（属于上层等级的感觉）",
+          "en": "The restaurant has a touch of class that sets it apart from others.",
+          "zh": "这家餐厅有一种格调，让它与别家不同。"
+        },
+        {
+          "gloss": "v. 把……归类",
+          "logic": "「把人或物放进某个格子」：归类的动作",
+          "en": "The film was classed as unsuitable for children under twelve.",
+          "zh": "这部电影被归类为不适合12岁以下儿童观看。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "classify",
+          "gloss": "分类，归类（动词）"
+        },
+        {
+          "w": "classic",
+          "gloss": "经典的，一流的"
+        },
+        {
+          "w": "classroom",
+          "gloss": "教室"
+        }
+      ]
+    },
+    {
+      "word": "miss",
+      "hl": "ss",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/mɪs/",
+      "subgroup": "ss",
+      "meaning": "v. 错过；思念；未击中；避开  n. 小姐（称谓）",
+      "etymology": "古英语 missan「击不中、漏过」，日耳曼同根，本义「射箭没射中」→ 错过、未命中 → 察觉到缺席（因此思念）。",
+      "roots": [
+        {
+          "part": "miss（missan）",
+          "meaning": "击不中、错过"
+        }
+      ],
+      "phonetics": "m + iss /ɪs/，-ss 锁定短元音 /ɪ/。注意 miss 和 Ms.（女士称谓）不同：Miss 指未婚女士，Ms. 不分婚否。",
+      "tip": "miss doing sth（未能做到/思念做某事），不接不定式：「I miss seeing you」而不是「I miss to see you」。",
+      "examples": [
+        {
+          "en": "Don't miss this chance — it won't come again.",
+          "zh": "不要错过这个机会，它不会再来了。",
+          "source": "造句"
+        },
+        {
+          "en": "miss the point",
+          "zh": "「没抓住重点」——高频习语，常用于批评理解偏差。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "overlook",
+          "ipa": "/ˌoʊvərˈlʊk/",
+          "note": "「遗漏、忽视」，比 miss 更强调因粗心而没注意到；overlook a detail（忽略细节）",
+          "gloss": "遗漏，忽视（因粗心没注意到）"
+        },
+        {
+          "w": "yearn for",
+          "ipa": "/jɜːrn fɔːr/",
+          "note": "「渴望、思念」义的近义，比 miss 情感更强烈、更文学化；yearn for home（思念家乡）",
+          "gloss": "渴望，思念（比 miss 情感更强烈，文学化）"
+        },
+        {
+          "w": "skip",
+          "ipa": "/skɪp/",
+          "note": "「跳过」，多指有意为之；skip a class（逃课）vs miss a class（没赶上课）",
+          "gloss": "跳过（多指有意为之）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "catch",
+          "note": "赶上、抓住"
+        },
+        {
+          "w": "hit",
+          "note": "击中"
+        }
+      ],
+      "nuance": "miss 可以是无意错过（miss the bus）或情感上的思念（miss someone）；overlook 偏向无意忽略，skip 偏向有意跳过；miss 的思念义比 yearn 弱，但比 long for 更口语。",
+      "core": "伸出手去接一个飞过来的球，手指差一点碰到，球却从指尖擦过——一种「差了那么一点儿就碰不到的失落感」。",
+      "senses": [
+        {
+          "gloss": "v. 错过；未击中；未赶上",
+          "logic": "本义（最物理）：目标就在那里但没打到/没抓到/没赶上",
+          "en": "I missed the bus by seconds — it pulled away just as I reached the stop.",
+          "zh": "我差几秒钟错过了公交车——我刚到站它就开走了。"
+        },
+        {
+          "gloss": "v. 思念，想念",
+          "logic": "「察觉到某个重要的人不在场」→ 心里有一个空位，那个本该在的人不在",
+          "en": "She missed her family so much during her first year abroad.",
+          "zh": "出国第一年她非常想念家人。"
+        },
+        {
+          "gloss": "v. 避开，躲过（危险/坏事）",
+          "logic": "「没被击中=躲过了」→ 幸好没有碰上坏事",
+          "en": "They narrowly missed being caught in the storm.",
+          "zh": "他们险些被暴风雨困住。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "missing",
+          "gloss": "失踪的，缺失的"
+        },
+        {
+          "w": "dismiss",
+          "gloss": "解散；解雇；不予理会（dis-+miss，让走开）"
+        },
+        {
+          "w": "amiss",
+          "gloss": "不对劲的，出差错的（a-+miss，偏离目标）"
+        }
+      ]
+    },
+    {
+      "word": "across",
+      "hl": "ss",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/əˈkrɒs/",
+      "subgroup": "ss",
+      "meaning": "prep. 穿越；横跨；在……对面  adv. 横过；向对面",
+      "etymology": "中古英语 a-(在) + cross（十字，交叉）= 「从一侧到另一侧交叉而过」。across 的视觉意象：一条线切过另一条线。",
+      "roots": [
+        {
+          "part": "a-",
+          "meaning": "在……状态中"
+        },
+        {
+          "part": "cross",
+          "meaning": "交叉，横越"
+        }
+      ],
+      "phonetics": "a- /ə/ + cross /krɒs/，-ss 结尾清音 /s/。重音在后 a-CROSS。",
+      "examples": [
+        {
+          "en": "The new policy had significant implications across all sectors of the economy.",
+          "zh": "新政策对经济各部门都有重大影响。",
+          "source": "造句"
+        },
+        {
+          "en": "come across",
+          "zh": "「偶然碰到；给人……印象」——双义高频短语动词，I came across an interesting article（偶然看到），She comes across as confident（她给人自信的感觉）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "through",
+          "ipa": "/θruː/",
+          "note": "「穿过（内部）」，across 是「横跨表面」，through 是「穿过内部/全程」；across the river vs through the tunnel",
+          "gloss": "穿过（内部穿越，非表面横跨）"
+        },
+        {
+          "w": "throughout",
+          "ipa": "/θruːˈaʊt/",
+          "note": "「遍及……各处」，比 across 更强调无处不在；throughout the country（全国各地）",
+          "gloss": "遍及各处（强调无处不在，比 across 更强）"
+        },
+        {
+          "w": "over",
+          "ipa": "/ˈoʊvər/",
+          "note": "「越过（从上方）」，across 是水平横穿，over 是从上方跨越；walk across the bridge vs fly over the city",
+          "gloss": "越过（从上方跨越，across 是水平横穿）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "along",
+          "note": "沿着（平行方向，而非横穿）"
+        }
+      ],
+      "nuance": "across 强调「从一侧到另一侧横穿」（across the river），through 强调「从内部穿越」（through the forest），over 强调「从上方越过」（jump over the fence）。「across the board」是「全面地、一律地」的高频习语。",
+      "core": "一条线从这一侧画到那一侧，干净地切过整个表面，中间不停不弯——一种「横穿、从一端到另一端」的跨越感。",
+      "senses": [
+        {
+          "gloss": "prep. 穿越；横跨（从一侧到另一侧）",
+          "logic": "空间本义：在表面上从一端移到另一端，像画一条直线切过去",
+          "en": "A rainbow stretched across the sky after the rain.",
+          "zh": "雨后一道彩虹横跨天际。"
+        },
+        {
+          "gloss": "prep. 在……对面",
+          "logic": "「从这侧看过去」：视线横穿后落在对面的位置",
+          "en": "The pharmacy is just across the street from the hospital.",
+          "zh": "药店就在医院街对面。"
+        },
+        {
+          "gloss": "adv. 遍及……各处（抽象横跨）",
+          "logic": "「像线一样穿过所有部分」→ 覆盖整个范围",
+          "en": "The new policy had significant implications across all sectors of the economy.",
+          "zh": "新政策对经济各部门都有重大影响。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "cross",
+          "gloss": "交叉；穿过；十字形"
+        },
+        {
+          "w": "crossing",
+          "gloss": "十字路口；横穿点"
+        },
+        {
+          "w": "across-the-board",
+          "gloss": "全面的，一律的（固定短语）"
+        }
+      ]
+    },
+    {
+      "word": "success",
+      "hl": "ss",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/səkˈses/",
+      "subgroup": "ss",
+      "meaning": "n. 成功；成功的人/事物",
+      "etymology": "拉丁语 successus = sub-（在……之下）+ cedere（走、前进）= 「跟着走上来」→ 接替、成功。与 succeed（成功/继承）、successive（连续的）同根。",
+      "roots": [
+        {
+          "part": "suc- (sub-)",
+          "meaning": "在……之下、紧随"
+        },
+        {
+          "part": "-cess (cedere)",
+          "meaning": "走、前进"
+        }
+      ],
+      "phonetics": "suc- /sək/ + cess /ses/，-ss 双写锁定前面的短元音 /e/。重音在后 suc-CESS。",
+      "tip": "success → succeed（动词）→ successful（形容词）→ successfully（副词）：一词四变，都是托福高频。",
+      "examples": [
+        {
+          "en": "The success of the project depended on the team's ability to adapt quickly.",
+          "zh": "项目的成功取决于团队快速适应的能力。",
+          "source": "造句"
+        },
+        {
+          "en": "overnight success",
+          "zh": "「一夜成名」——常带反讽意味，暗指其实背后有多年积累。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "achievement",
+          "ipa": "/əˈtʃiːvmənt/",
+          "note": "「成就」，比 success 更强调具体的成果；a major achievement（重大成就）",
+          "gloss": "成就（侧重通过努力获得的具体成果）"
+        },
+        {
+          "w": "triumph",
+          "ipa": "/ˈtraɪʌmf/",
+          "note": "「胜利/辉煌成功」，比 success 更情感化，带有克服重大困难后的喜悦",
+          "gloss": "凯旋，辉煌胜利（克服重大困难后的喜悦）"
+        },
+        {
+          "w": "accomplishment",
+          "ipa": "/əˈkʌmplɪʃmənt/",
+          "note": "「完成的业绩」，比 success 更侧重已完成的具体事项",
+          "gloss": "完成的业绩（侧重已完成的具体事项）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "failure",
+          "note": "失败"
+        },
+        {
+          "w": "defeat",
+          "note": "失败、挫败"
+        }
+      ],
+      "nuance": "success 是最通用的「成功」，可指状态或结果；achievement 强调通过努力获得的具体成果；triumph 带有战胜困难后的激动情绪；accomplishment 侧重已完成的任务或技能。",
+      "core": "在山脚下仰望山顶，然后一步步「跟着往上走」，最终站在了顶上——一种「抵达、完成、站上去」的达成感。",
+      "senses": [
+        {
+          "gloss": "n. 成功；成就",
+          "logic": "本义「跟着走上来」→ 抵达目标位置→成功",
+          "en": "The success of the project depended on the team's ability to adapt quickly.",
+          "zh": "项目的成功取决于团队快速适应的能力。"
+        },
+        {
+          "gloss": "n. 成功的人/事物",
+          "logic": "「那个达到了顶峰的人/物」→ 成功的实例",
+          "en": "The restaurant became an overnight success after a famous food critic visited.",
+          "zh": "一位知名美食评论家光顾后，这家餐厅一夜之间成名。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "succeed",
+          "gloss": "成功；继承（动词）"
+        },
+        {
+          "w": "successful",
+          "gloss": "成功的（形容词）"
+        },
+        {
+          "w": "successive",
+          "gloss": "连续的，接连的（一个接一个走上来）"
+        }
+      ]
+    },
+    {
+      "word": "press",
+      "hl": "ss",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/pres/",
+      "subgroup": "ss",
+      "meaning": "v. 按压；施压；熨烫；坚持（要求）  n. 新闻界；印刷机；按压",
+      "etymology": "拉丁语 pressare（频繁按压）= premere（压）的反复式。与 pressure（压力）、express（挤出→表达）、compress（压缩）、impress（留下印记）同根——都有「压」的核心义。",
+      "roots": [
+        {
+          "part": "press（premere）",
+          "meaning": "压、按"
+        }
+      ],
+      "phonetics": "pr- + ess /es/，-ss 锁定短元音 /e/。重音在唯一音节。",
+      "examples": [
+        {
+          "en": "The government is under growing pressure from the press to release the documents.",
+          "zh": "政府面临来自新闻界越来越大的压力，要求公开文件。",
+          "source": "造句"
+        },
+        {
+          "en": "press conference",
+          "zh": "「新闻发布会」——高频固定搭配，TOEFL 听力高频场景。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "push",
+          "ipa": "/pʊʃ/",
+          "note": "「推/按」，最口语；press 更正式且含「施加持续压力」之意，push 更强调方向性",
+          "gloss": "推，按（最口语，侧重方向性而非持续压力）"
+        },
+        {
+          "w": "urge",
+          "ipa": "/ɜːrdʒ/",
+          "note": "「敦促、力劝」，press sb to do sth ≈ urge sb to do sth，urge 语气更强",
+          "gloss": "敦促，力劝（比 press 语气更强）"
+        },
+        {
+          "w": "media",
+          "ipa": "/ˈmiːdiə/",
+          "note": "「媒体」义，press 特指平面媒体/新闻界，media 更广，包括电视、网络等",
+          "gloss": "媒体（比 press 范围更广，包括电视网络等）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "release",
+          "note": "释放、松开"
+        },
+        {
+          "w": "pull",
+          "note": "拉（方向相反）"
+        }
+      ],
+      "nuance": "press 作动词时比 push 更强调「持续施加压力」（press for a decision 反复要求做决定），而非单次推动；press 作名词的「新闻界」义是 media 的子集（仅指印刷媒体）——现代用法已扩展到所有新闻媒体。",
+      "core": "手掌放在一块面团上，用力往下压，面团扁下去——一种「持续用力往下压、把东西压实压扁」的施力感。",
+      "senses": [
+        {
+          "gloss": "v. 按压；熨烫",
+          "logic": "物理本义：施加持续向下的力，使物体变平或移动",
+          "en": "Press the dough flat with the palm of your hand.",
+          "zh": "用手掌把面团按扁。"
+        },
+        {
+          "gloss": "v. 施压；坚持要求",
+          "logic": "「用力的压力」→ 对人施加心理/政治压力，逼对方行动",
+          "en": "The lawyer pressed the witness for a clear answer.",
+          "zh": "律师不断追问证人，要求给出明确回答。"
+        },
+        {
+          "gloss": "n. 新闻界，媒体（the press）",
+          "logic": "「印刷机」→ 印刷出版的行业→ 新闻界（印刷机是核心工具）",
+          "en": "The government is under growing pressure from the press to release the documents.",
+          "zh": "政府面临来自新闻界越来越大的压力，要求公开文件。"
+        },
+        {
+          "gloss": "n. 印刷机",
+          "logic": "物理工具本义：能够「压」纸使字印上去的机器",
+          "en": "The first printing press revolutionised the spread of knowledge in Europe.",
+          "zh": "第一台印刷机彻底改变了欧洲的知识传播。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "pressure",
+          "gloss": "压力（物理/心理）"
+        },
+        {
+          "w": "impress",
+          "gloss": "留下印象（= 把印记压进心里）"
+        },
+        {
+          "w": "express",
+          "gloss": "表达（= 把心里的话挤出来）"
+        }
+      ]
+    },
+    {
+      "word": "city",
+      "hl": "c",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈsɪti/",
+      "subgroup": "c",
+      "meaning": "n. 城市；（大）都市；（英国）有主教座堂的市镇",
+      "etymology": "拉丁语 civitas = civis（公民）+ -itas（名词后缀）= 「公民的集合体」。与 civil（公民的）、civilization（文明）、citizen（公民）同根。",
+      "roots": [
+        {
+          "part": "cit- (civis)",
+          "meaning": "公民"
+        },
+        {
+          "part": "-y (-itas)",
+          "meaning": "集合、状态"
+        }
+      ],
+      "phonetics": "c + ity：c 在 i 前读软音 /s/。CI-ty，重音在首音节，-ty 弱读 /ti/。这是软 c 规律的最典型例词之一。",
+      "tip": "软 c 口诀：c + e/i/y → /s/。city（c+i）、centre（c+e）、cycle（c+y）全部读 /s/。",
+      "examples": [
+        {
+          "en": "The city's infrastructure has been under strain due to rapid population growth.",
+          "zh": "由于人口快速增长，该城市的基础设施已承受巨大压力。",
+          "source": "造句"
+        },
+        {
+          "en": "inner city",
+          "zh": "「城市中心区（通常指贫困区）」——社会学高频术语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "metropolis",
+          "ipa": "/məˈtrɒpəlɪs/",
+          "note": "「大都市」，比 city 规模更大、地位更重要；a global metropolis（国际大都市）",
+          "gloss": "大都市（比 city 规模更大、地位更重要）"
+        },
+        {
+          "w": "municipality",
+          "ipa": "/mjuːˌnɪsɪˈpæləti/",
+          "note": "「市政当局/城镇」，正式行政词汇，强调政府架构",
+          "gloss": "市政当局，城镇（正式行政词汇）"
+        },
+        {
+          "w": "urban area",
+          "ipa": "/ˈɜːrbən ˈeəriə/",
+          "note": "「城市地区」，统计和规划用语，比 city 更中性",
+          "gloss": "城市地区（统计和规划用语，中性）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "countryside",
+          "note": "农村、乡下"
+        },
+        {
+          "w": "rural area",
+          "note": "农村地区"
+        }
+      ],
+      "nuance": "city 是日常通用词，metropolis 专指特大城市或地区中心城市，urban area 是地理规划术语，municipality 是行政管理术语。TOEFL 阅读中三者常互换，但正式报告倾向用 municipality 或 urban area。",
+      "core": "推开窗看到密密麻麻的楼房挤在一起，街上人来人往、车水马龙，到处是人造的建筑和道路——一种「很多人挤在一起生活」的密集聚居感。",
+      "senses": [
+        {
+          "gloss": "n. 城市，都市",
+          "logic": "本义「公民们的集合体」→ 大量人口集中居住的建成区",
+          "en": "The city's infrastructure has been under strain due to rapid population growth.",
+          "zh": "由于人口快速增长，该城市的基础设施已承受巨大压力。"
+        },
+        {
+          "gloss": "n. （英）有主教座堂的市镇",
+          "logic": "英国特有的定义：有主教座堂的定居点自动获得 city 称号（历史偶合，非同一感觉引申）",
+          "en": "Canterbury is a historic city with a magnificent cathedral.",
+          "zh": "坎特伯雷是一座历史悠久的城市，拥有一座宏伟的大教堂。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "citizen",
+          "gloss": "公民，市民"
+        },
+        {
+          "w": "civil",
+          "gloss": "公民的；文明的"
+        },
+        {
+          "w": "civilization",
+          "gloss": "文明"
+        }
+      ]
+    },
+    {
+      "word": "face",
+      "hl": "c",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/feɪs/",
+      "subgroup": "c",
+      "meaning": "n. 脸；表面；外观；面子  v. 面对；朝向；正视（困难）",
+      "etymology": "拉丁语 facies「脸、外形」，与 surface（表面）、facade（正面）同根。c 在词尾 e 之前读 /s/（face = fa + ce，ce → /s/）。",
+      "roots": [
+        {
+          "part": "face（facies）",
+          "meaning": "脸、外形、表面"
+        }
+      ],
+      "phonetics": "f + ace /eɪs/，-ce 结尾：c 在 e 前读 /s/（软 c 分裂式）。与 pace、space、place 押韵。",
+      "examples": [
+        {
+          "en": "The company must face the fact that its business model is no longer viable.",
+          "zh": "公司必须正视其商业模式已不再可行这一事实。",
+          "source": "造句"
+        },
+        {
+          "en": "lose face / save face",
+          "zh": "「丢面子 / 保全面子」——来自中文「面子」文化的借用，现为英语固定习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "confront",
+          "ipa": "/kənˈfrʌnt/",
+          "note": "「正面对抗/直面」，比 face 更强调主动对峙；confront the enemy（直面敌人）",
+          "gloss": "正面对抗，直面（比 face 更强调主动对峙）"
+        },
+        {
+          "w": "countenance",
+          "ipa": "/ˈkaʊntənəns/",
+          "note": "文学「面容、神情」，比 face 更雅；a sad countenance（悲伤的神情）",
+          "gloss": "面容，神情（文学用语，比 face 更雅）"
+        },
+        {
+          "w": "tackle",
+          "ipa": "/ˈtækl/",
+          "note": "「着手处理（困难）」，比 face 更强调积极采取行动去解决",
+          "gloss": "着手处理（比 face 更强调积极采取行动去解决）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "avoid",
+          "note": "回避"
+        },
+        {
+          "w": "turn away from",
+          "note": "背对、回避"
+        }
+      ],
+      "nuance": "face 是「面对」义最通用的词，强调接受现实、不回避；confront 带更强的对抗性，暗示直接对峙；tackle 进一步强调采取行动去处理，不仅是面对还要解决。「face the music」（面对惩罚/后果）是固定习语。",
+      "core": "你站在镜子前，看到镜子里那张脸的正面——眼睛鼻子嘴巴都在，避不了也藏不住——一种「正对着、直面、无处可藏」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 脸；面容",
+          "logic": "身体部位本义：头部正面的那一面",
+          "en": "Her face lit up with joy when she saw the surprise gift.",
+          "zh": "她一看到惊喜礼物，脸上就亮了起来。"
+        },
+        {
+          "gloss": "n. 表面；外观",
+          "logic": "「物体正对我们的一面」→ 任何物体的外表面→引申为事物的外表",
+          "en": "The face of the building was covered in ivy.",
+          "zh": "建筑物的正面爬满了常春藤。"
+        },
+        {
+          "gloss": "v. 面对；正视",
+          "logic": "「把脸转向……」→ 不回避，直接面对事物/困难",
+          "en": "The company must face the fact that its business model is no longer viable.",
+          "zh": "公司必须正视其商业模式已不再可行这一事实。"
+        },
+        {
+          "gloss": "n. 面子",
+          "logic": "「脸面」的社交隐喻：在他人眼中的形象和尊严",
+          "en": "He resigned to save face after the scandal broke.",
+          "zh": "丑闻曝光后他为了保全面子而辞职。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "surface",
+          "gloss": "表面（sur-上+face面）"
+        },
+        {
+          "w": "facial",
+          "gloss": "面部的"
+        },
+        {
+          "w": "facade",
+          "gloss": "建筑物正面；虚饰的外表"
+        }
+      ]
+    },
+    {
+      "word": "cent",
+      "hl": "c",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/sent/",
+      "subgroup": "c",
+      "meaning": "n. 分（货币单位，1美元=100分）；一点儿",
+      "etymology": "拉丁语 centum「一百」。1 cent = 1/100 dollar，「百分之一」。同根衍生：century（百年）、percent（百分之）、centimeter（厘米=百分之一米）、century。",
+      "roots": [
+        {
+          "part": "cent（centum）",
+          "meaning": "一百"
+        }
+      ],
+      "phonetics": "c + ent：c 在 e 前读 /s/（软 c）。cent /sent/ 与 sent（send 过去式）同音，也与 scent（气味）同音——三词同音，靠语境区分。",
+      "tip": "cent / sent / scent 三个同音词：cent（分钱）、sent（寄送的过去式）、scent（气味）——发音完全相同，都是 /sent/。",
+      "examples": [
+        {
+          "en": "Every cent of the budget was accounted for.",
+          "zh": "预算中的每一分钱都有记录。",
+          "source": "造句"
+        },
+        {
+          "en": "not worth a cent / put in your two cents",
+          "zh": "「一文不值 / 发表个人意见（两分钱之见）」——高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "penny",
+          "ipa": "/ˈpeni/",
+          "note": "美式口语中 penny = 1 cent，英式 penny 是英镑的百分之一；not a penny（一分不剩）",
+          "gloss": "便士；美语口语中=1 cent（俗称）"
+        },
+        {
+          "w": "percent",
+          "ipa": "/pəˈsent/",
+          "note": "「百分之……」，cent 词根在此清晰可见；per（每）+ cent（百）",
+          "gloss": "百分之……（cent 词根在此清晰可见）"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "cent 是货币单位，penny 是俗称（尤其在美语中），percent 是百分比词汇——三者都含「百」的词根 cent，串记有助于记住该词根家族：century、centimeter、centigrade（摄氏度）。",
+      "core": "一个大圆饼被切成一百等份，你手里捏着其中一薄片——微不足道的一丁点，但合在一起就构成了整体——一种「百分之一」的切分感。",
+      "senses": [
+        {
+          "gloss": "n. 分（货币单位，1/100 美元）",
+          "logic": "「百分之一」用在货币上：1 cent = 1/100 dollar",
+          "en": "Every cent of the budget was accounted for.",
+          "zh": "预算中的每一分钱都有记录。"
+        },
+        {
+          "gloss": "n. 一点儿（引申为极少量）",
+          "logic": "「一分的钱」→ 极少、微不足道的量",
+          "en": "His explanation didn't make a cent of sense to me.",
+          "zh": "他的解释对我来说毫无道理（连一分道理都没有）。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "century",
+          "gloss": "一百年，世纪"
+        },
+        {
+          "w": "percent",
+          "gloss": "百分之……（per+cent，每百）"
+        },
+        {
+          "w": "centimeter",
+          "gloss": "厘米（百分之一米）"
+        }
+      ]
+    },
+    {
+      "word": "circle",
+      "hl": "c",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈsɜːrkl/",
+      "subgroup": "c",
+      "meaning": "n. 圆；圈子；周期  v. 绕圈飞行；画圈；环绕",
+      "etymology": "拉丁语 circulus = circus（圆形竞技场）+ -ulus（小）= 「小圆形」。与 circus（马戏团，原为圆形竞技场）、circuit（环形线路）、circulate（循环）同根。",
+      "roots": [
+        {
+          "part": "circ- (circulus)",
+          "meaning": "圆、环绕"
+        },
+        {
+          "part": "-le",
+          "meaning": "小（名词后缀）"
+        }
+      ],
+      "phonetics": "c + ircle：c 在 i 前读 /s/（软 c）。CIR-cle，重音在首音节，-cle 弱读 /kl/（注意第二个 c 在辅音前读 /k/，不是软 c）。",
+      "examples": [
+        {
+          "en": "The eagles circled high above the valley, riding the thermal currents.",
+          "zh": "老鹰在山谷上方高高盘旋，借助热气流飞翔。",
+          "source": "造句"
+        },
+        {
+          "en": "a vicious circle",
+          "zh": "「恶性循环」——高频学术和日常双用固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "ring",
+          "ipa": "/rɪŋ/",
+          "note": "「环形」，比 circle 更强调实物圆环（婚戒、拳击台）；circle 更数学化",
+          "gloss": "环形（更强调实物圆环如戒指、拳击台）"
+        },
+        {
+          "w": "cycle",
+          "ipa": "/ˈsaɪkl/",
+          "note": "「循环/周期」义的近义，强调重复的时间周期；business cycle（经济周期）",
+          "gloss": "循环，周期（强调时间上的循环重复）"
+        },
+        {
+          "w": "orbit",
+          "ipa": "/ˈɔːrbɪt/",
+          "note": "「轨道/环绕」，比 circle 更精确，多用于天体运动；orbit the Earth（绕地球运行）",
+          "gloss": "轨道，环绕（多用于天体运动，更精确）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "straight line",
+          "note": "直线（形状的对立）"
+        },
+        {
+          "w": "scatter",
+          "note": "分散（与围绕相对）"
+        }
+      ],
+      "nuance": "circle 是几何学的圆形，也可作动词「盘旋/环绕」；ring 更强调实体圆环物；cycle 强调时间上的循环；orbit 特指天体或规律性运动的轨迹。「circle of friends」（朋友圈）和「vicious circle」（恶性循环）是两个必背习语。",
+      "core": "你拿圆规在纸上一旋，画出一个完美的闭合曲线——没有起点没有终点，所有点离中心一样远——一种「圆润、循环、环绕」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 圆；圆形",
+          "logic": "几何本义：平面上到中心距离相等的点的集合——完美的闭合曲线",
+          "en": "The children sat in a circle on the floor for story time.",
+          "zh": "孩子们在地板上围坐成一圈听故事。"
+        },
+        {
+          "gloss": "n. 圈子（社交圈/行业圈）",
+          "logic": "「围成一圈的人」→ 因共同兴趣或身份聚在一起的人群",
+          "en": "She moved in literary circles, surrounded by writers and poets.",
+          "zh": "她出没于文学圈子，身边都是作家和诗人。"
+        },
+        {
+          "gloss": "v. 环绕飞行；盘旋",
+          "logic": "「画圈的动作」：沿着圆形轨迹运动",
+          "en": "The eagles circled high above the valley, riding the thermal currents.",
+          "zh": "老鹰在山谷上方高高盘旋，借助热气流飞翔。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "circus",
+          "gloss": "马戏团（原为圆形竞技场）"
+        },
+        {
+          "w": "circuit",
+          "gloss": "环形线路；电路"
+        },
+        {
+          "w": "circulate",
+          "gloss": "循环；流传"
+        }
+      ]
+    },
+    {
+      "word": "policy",
+      "hl": "c",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈpɒləsi/",
+      "subgroup": "c",
+      "meaning": "n. 政策；方针；（保险）保单",
+      "etymology": "希腊语 politeia「公民事务、国家管理」，经拉丁语 politia 借入。与 politics（政治）、police（警察，维持公共秩序）、politician（政治家）同根。c 在 y 前读 /s/（软 c）。",
+      "roots": [
+        {
+          "part": "polic- (politeia)",
+          "meaning": "公民事务、治理"
+        },
+        {
+          "part": "-y",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "POL-i-cy，重音在首音节。-cy 结尾：c 在 y 前读 /s/（软 c）。三音节，-i- 是弱读 /ə/。",
+      "examples": [
+        {
+          "en": "The government introduced a new fiscal policy to stimulate economic growth.",
+          "zh": "政府推出新财政政策以刺激经济增长。",
+          "source": "造句"
+        },
+        {
+          "en": "foreign policy / monetary policy",
+          "zh": "「外交政策 / 货币政策」——TOEFL 阅读和听力高频固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "strategy",
+          "ipa": "/ˈstrætədʒi/",
+          "note": "「战略」，比 policy 更强调长期整体规划；policy 是具体的规定和方针，strategy 是宏观方向",
+          "gloss": "战略（比 policy 更强调长期整体规划）"
+        },
+        {
+          "w": "regulation",
+          "ipa": "/ˌreɡjuˈleɪʃn/",
+          "note": "「规定、法规」，比 policy 更具法律约束力；environmental regulations（环境法规）",
+          "gloss": "规定，法规（比 policy 更具法律约束力）"
+        },
+        {
+          "w": "guideline",
+          "ipa": "/ˈɡaɪdlaɪn/",
+          "note": "「指导方针」，比 policy 更宽松，是建议性而非强制性；follow the guidelines（遵循指导方针）",
+          "gloss": "指导方针（比 policy 更宽松，建议性而非强制性）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "improvisation",
+          "note": "随机应对、无方针"
+        }
+      ],
+      "nuance": "policy 是机构或政府制定的正式规定或方针（有一定约束力），strategy 是实现目标的总体谋划（不一定成文），regulation 是有法律效力的具体规则，guideline 是无强制力的建议。",
+      "core": "一群人坐下来，在白纸上写下一条条规矩——什么可以做、什么不能做、怎么做——然后这张纸被贴在墙上，所有人都得照着执行——一种「写在纸上的治理规则」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 政策；方针",
+          "logic": "本义「公民事务的处理方式」→ 政府/机构制定的正式行为准则",
+          "en": "The government introduced a new fiscal policy to stimulate economic growth.",
+          "zh": "政府推出新财政政策以刺激经济增长。"
+        },
+        {
+          "gloss": "n. （保险）保单",
+          "logic": "历史偶合，非同一感觉引申：insurance policy 中的 policy 来自另一词源（意大利语 polizza「凭证」），恰好拼写同形",
+          "en": "She took out a life insurance policy to protect her family.",
+          "zh": "她购买了一份人寿保险保单来保护家人。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "political",
+          "gloss": "政治的"
+        },
+        {
+          "w": "politics",
+          "gloss": "政治"
+        },
+        {
+          "w": "police",
+          "gloss": "警察（维持公共秩序，同根词）"
+        }
+      ]
+    },
+    {
+      "word": "decide",
+      "hl": "c",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/dɪˈsaɪd/",
+      "subgroup": "c",
+      "meaning": "v. 决定；判决；使下决心",
+      "etymology": "拉丁语 decidere = de-（彻底）+ caedere（切断）= 「把其余选项全切断」→ 下定决心。与 decision（决定）、incision（切口）、scissors（剪刀）同根——都有「切」的核心义。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "彻底、离开"
+        },
+        {
+          "part": "-cide (caedere)",
+          "meaning": "切断"
+        }
+      ],
+      "phonetics": "de- + cide：c 在 i 前读 /s/（软 c）。di-CIDE，重音在后，-cide /saɪd/ 与 side 押韵。",
+      "tip": "decide 词根「切断」：决定 = 切断其他选项。同根词：suicide（自我切断=自杀）、homicide（杀人）、coincide（同时切割=巧合）——有点黑暗但很难忘。",
+      "examples": [
+        {
+          "en": "The committee decided to postpone the vote until more data was available.",
+          "zh": "委员会决定推迟投票，等待更多数据。",
+          "source": "造句"
+        },
+        {
+          "en": "decide against / decide in favour of",
+          "zh": "「决定不做 / 决定支持」——决策类正式搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "determine",
+          "ipa": "/dɪˈtɜːrmɪn/",
+          "note": "「决定/确定」，比 decide 更正式，也含「查明（事实）」义；determine the cause（查明原因）",
+          "gloss": "决定，确定（更正式，含「查明事实」义）"
+        },
+        {
+          "w": "resolve",
+          "ipa": "/rɪˈzɒlv/",
+          "note": "「决心/解决」，比 decide 更强调意志的坚定；resolve to change（下定决心改变）",
+          "gloss": "决心，解决（比 decide 更强调意志的坚定）"
+        },
+        {
+          "w": "choose",
+          "ipa": "/tʃuːz/",
+          "note": "「选择」，比 decide 更强调在选项中做出选择的动作",
+          "gloss": "选择（比 decide 更强调在选项中挑一个的动作）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "hesitate",
+          "note": "犹豫"
+        },
+        {
+          "w": "waver",
+          "note": "摇摆不定"
+        }
+      ],
+      "nuance": "decide 强调「做出决定」这一过程，resolve 强调内心意志的坚定（resolve is stronger than decide），determine 兼有「决定」和「查明」两义，choose 更聚焦于从多个选项中挑选的行为。",
+      "core": "面前有好几条路，你举起一把无形的刀，一刀把所有其他路砍断，只剩下一条——一种「一刀切下去、斩断犹豫」的决断感。",
+      "senses": [
+        {
+          "gloss": "v. 决定；下决心",
+          "logic": "本义「切断其余选项」→ 从多个可能性中选定一个，不再纠结",
+          "en": "The committee decided to postpone the vote until more data was available.",
+          "zh": "委员会决定推迟投票，等待更多数据。"
+        },
+        {
+          "gloss": "v. 判决；裁定",
+          "logic": "「切断争议」：法庭在双方之间作最终决断",
+          "en": "The judge decided the case in favour of the plaintiff.",
+          "zh": "法官判决此案原告胜诉。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "decision",
+          "gloss": "决定（名词）"
+        },
+        {
+          "w": "decisive",
+          "gloss": "果断的；决定性的"
+        },
+        {
+          "w": "suicide",
+          "gloss": "自杀（sui-自己+cide切断→切断自己的生命）"
+        }
+      ]
+    },
+    {
+      "word": "science",
+      "hl": "sc",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈsaɪəns/",
+      "subgroup": "sc",
+      "meaning": "n. 科学；理科；自然科学；某一科学领域",
+      "etymology": "拉丁语 scientia = scire（知道）+ -entia（名词后缀）= 「知识的总体」。与 conscience（良心，共同知晓）、omniscient（全知的）、prescient（有先见之明的）同根。",
+      "roots": [
+        {
+          "part": "sci- (scire)",
+          "meaning": "知道"
+        },
+        {
+          "part": "-ence (-entia)",
+          "meaning": "性质、状态（名词后缀）"
+        }
+      ],
+      "phonetics": "sc + ience：sc 在 i 前，c 被 s 吸收，整体只读一个 /s/；science = /saɪəns/，sci- 读 /saɪ/（如 sky）。注意不读 /sk/。",
+      "examples": [
+        {
+          "en": "Science cannot answer every question about the nature of consciousness.",
+          "zh": "科学无法回答关于意识本质的所有问题。",
+          "source": "造句"
+        },
+        {
+          "en": "social science / computer science",
+          "zh": "「社会科学 / 计算机科学」——学科分类高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "discipline",
+          "ipa": "/ˈdɪsəplɪn/",
+          "note": "「学科/学门」，比 science 更广，可指任何系统化的知识领域",
+          "gloss": "学科，学门（比 science 更广，涵盖任何系统化知识领域）"
+        },
+        {
+          "w": "research",
+          "ipa": "/ˈriːsɜːrtʃ/",
+          "note": "「研究」，强调科学活动的过程，science 是知识体系，research 是获取它的方式",
+          "gloss": "研究（强调获取知识的过程和活动）"
+        },
+        {
+          "w": "knowledge",
+          "ipa": "/ˈnɒlɪdʒ/",
+          "note": "「知识」，science 是系统化的知识，knowledge 更广，包括经验性知识",
+          "gloss": "知识（最广，包括经验和科学知识）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "superstition",
+          "note": "迷信"
+        },
+        {
+          "w": "art",
+          "note": "艺术（在 science vs arts 语境中）"
+        }
+      ],
+      "nuance": "science 特指用系统方法（观察、实验、假设）获取的知识体系；research 是获取知识的活动；knowledge 是更广的认知总体；discipline 泛指任何学术领域（包括人文）。",
+      "core": "一个人拿着放大镜，凑近了看世界，把看到的东西分类、命名、解释——一种「想要知道、系统地知道」的求知感。",
+      "senses": [
+        {
+          "gloss": "n. 科学；自然科学",
+          "logic": "本义「知识的总体」→ 用观察、实验、推理获取的系统化知识",
+          "en": "Science cannot answer every question about the nature of consciousness.",
+          "zh": "科学无法回答关于意识本质的所有问题。"
+        },
+        {
+          "gloss": "n. 某一科学领域（如 social science）",
+          "logic": "「知识的一个分支」：特定学科的系统化知识体系",
+          "en": "Computer science has transformed almost every industry in the past two decades.",
+          "zh": "过去二十年里，计算机科学几乎改变了每一个行业。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "scientist",
+          "gloss": "科学家"
+        },
+        {
+          "w": "scientific",
+          "gloss": "科学的"
+        },
+        {
+          "w": "conscience",
+          "gloss": "良心（con-共同+science知道→共同知晓的是非感）"
+        }
+      ]
+    },
+    {
+      "word": "scene",
+      "hl": "sc",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/siːn/",
+      "subgroup": "sc",
+      "meaning": "n. 场景；（犯罪/事故）现场；（戏剧）场；景象；（公开的）大闹",
+      "etymology": "希腊语 skēnē「舞台背景、帐篷」，古希腊剧场的舞台背景布。借入英语后从「舞台」扩展到「视觉场景」和「事件发生地」。",
+      "roots": [
+        {
+          "part": "scene（skēnē）",
+          "meaning": "舞台背景、场景"
+        }
+      ],
+      "phonetics": "sc + ene：sc 在 e 前，c 被吸收，只读 /s/；-ene = /iːn/（分裂式元音）。scene 和 seen（see 的过去分词）完全同音。",
+      "tip": "scene / seen 同音：The scene I've never seen（我从未见过的场景）——一句话包含两个同音词。",
+      "examples": [
+        {
+          "en": "Police cordoned off the scene of the accident to preserve evidence.",
+          "zh": "警方封锁了事故现场以保存证据。",
+          "source": "造句"
+        },
+        {
+          "en": "make a scene",
+          "zh": "「大闹/丢人现眼」——在公共场合发脾气的高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "setting",
+          "ipa": "/ˈsetɪŋ/",
+          "note": "「背景/场合」，比 scene 更强调环境本身，scene 包含发生其中的事件",
+          "gloss": "背景，场合（比 scene 更强调环境本身）"
+        },
+        {
+          "w": "view",
+          "ipa": "/vjuː/",
+          "note": "「景色/观点」，scene 更有故事感和人的介入，view 更强调视觉景象",
+          "gloss": "景色，观点（更有视觉美感，缺乏故事感）"
+        },
+        {
+          "w": "episode",
+          "ipa": "/ˈepɪsoʊd/",
+          "note": "「（戏剧/电视的）一集；一段事件」，比 scene 更强调一个完整的事件段落",
+          "gloss": "（剧集的）一集；一段事件（比 scene 更强调完整段落）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "offstage",
+          "note": "台下、幕后（戏剧语境）"
+        }
+      ],
+      "nuance": "scene 在戏剧中指「场」（幕中更小的单位），在日常中指「视觉场景」或「事件发生地」，setting 更中性地指「环境背景」，episode 指一段完整经历，view 专注于视觉美感。",
+      "core": "你站在剧场里，幕布拉开，舞台上的光影、道具、演员构成一幅活的画面——一种「眼前展开的一幅有故事的视觉画面」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 场景；（戏剧的）一场",
+          "logic": "戏剧本义「舞台布景」→ 舞台上展开的一段剧情画面",
+          "en": "The opening scene of the film was shot in a single continuous take.",
+          "zh": "电影的开场场景是一个连续长镜头拍摄的。"
+        },
+        {
+          "gloss": "n. （事故/犯罪）现场",
+          "logic": "「发生事件的视觉画面所在的地方」：一件值得被看见的事发生的地点",
+          "en": "Police cordoned off the scene of the accident to preserve evidence.",
+          "zh": "警方封锁了事故现场以保存证据。"
+        },
+        {
+          "gloss": "n. 景象，场面",
+          "logic": "「眼前看到的整体画面」：自然或社会景观的整体印象",
+          "en": "The view from the mountaintop offered a breathtaking scene of the valley below.",
+          "zh": "从山顶望去，山谷的景色令人惊叹。"
+        },
+        {
+          "gloss": "n. （公开的）大闹，发脾气（make a scene）",
+          "logic": "「在公共场合制造一出『戏』」→ 引人注目的情绪爆发",
+          "en": "He made a scene in the restaurant when they refused to serve him.",
+          "zh": "当餐厅拒绝为他服务时，他在里面大吵大闹。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "scenery",
+          "gloss": "风景，景色（自然场景的总称）"
+        },
+        {
+          "w": "scenic",
+          "gloss": "风景优美的"
+        },
+        {
+          "w": "scenario",
+          "gloss": "情境，设想的情节"
+        }
+      ]
+    },
+    {
+      "word": "scent",
+      "hl": "sc",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/sent/",
+      "subgroup": "sc",
+      "meaning": "n. 气味；香味；（动物留下的）气迹；香水  v. 嗅出；使充满香气；察觉到（危险）",
+      "etymology": "古法语 sentir「感觉、闻」，源自拉丁语 sentire（感知）。与 sense（感知）、sensation（感觉）、sentient（有知觉的）同根。sc 中的 c 是历史拼写错误（17世纪错误类推），原本不该有 c。",
+      "roots": [
+        {
+          "part": "sc- (sentire)",
+          "meaning": "感知（sc 中 c 不发音，历史拼写遗留）"
+        },
+        {
+          "part": "-ent",
+          "meaning": "状态"
+        }
+      ],
+      "phonetics": "sc + ent：sc 整体读 /s/，c 完全不发音；-ent = /ent/。scent = /sent/，与 sent（寄出）和 cent（分钱）完全同音——三词都是 /sent/。",
+      "tip": "scent / sent / cent 三同音词各有故事：scent（香味，感官），sent（寄送，动作），cent（货币，计量）——发音 /sent/ 是锚点，拼写靠语境和语法。",
+      "examples": [
+        {
+          "en": "The dog followed the fox's scent across the muddy field.",
+          "zh": "猎犬追着狐狸的气迹穿过泥泞的田野。",
+          "source": "造句"
+        },
+        {
+          "en": "throw sb off the scent",
+          "zh": "「转移某人注意力、误导追踪者」——高频比喻用法，来自猎狐活动。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "fragrance",
+          "ipa": "/ˈfreɪɡrəns/",
+          "note": "「香味/香水」，比 scent 更具体地指令人愉悦的香气，多用于香水和花朵；floral fragrance（花香）",
+          "gloss": "香味，香水（专指令人愉悦的香气，多用花/香水）"
+        },
+        {
+          "w": "aroma",
+          "ipa": "/əˈroʊmə/",
+          "note": "「芳香」，比 scent 更强调食物或咖啡的香气；the aroma of coffee（咖啡香气）",
+          "gloss": "芳香（多指食物/咖啡的香气）"
+        },
+        {
+          "w": "odour",
+          "ipa": "/ˈoʊdər/",
+          "note": "「气味」（英式拼写），比 scent 更中性，可好可坏；body odour（体味）",
+          "gloss": "气味（英式拼写，中性，可好可坏）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "odourless",
+          "note": "无味的"
+        },
+        {
+          "w": "stench",
+          "note": "恶臭"
+        }
+      ],
+      "nuance": "scent 是最文雅的气味词，多指花、动物或人留下的气息，常用于猎猎追踪的比喻；fragrance 专指令人愉悦的香气；aroma 偏重食物和饮品的香气；odour 最中性（英式），stench 专指恶臭。",
+      "core": "闭上眼睛，空气中飘来一道看不见的气味线索——花香、咖啡香、雨后泥土味——鼻子捕捉到它，大脑立刻浮现出画面——一种「气味如线索般飘来让你感知到」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 气味，香味",
+          "logic": "感官本义：空气中能被嗅觉感知到的化学信号",
+          "en": "The scent of jasmine filled the evening air.",
+          "zh": "茉莉花的香气弥漫在夜空中。"
+        },
+        {
+          "gloss": "n. （动物留下的）气迹",
+          "logic": "「气味作为追踪线索」：动物走过后留下的一路气味，可被追踪",
+          "en": "The dog followed the fox's scent across the muddy field.",
+          "zh": "猎犬追着狐狸的气迹穿过泥泞的田野。"
+        },
+        {
+          "gloss": "n. 香水",
+          "logic": "「用来制造好闻气味的液体」：香水=装有气味的瓶子",
+          "en": "She dabbed a little scent behind her ears before heading out.",
+          "zh": "她出门前往耳后抹了一点香水。"
+        },
+        {
+          "gloss": "v. 嗅出；察觉到",
+          "logic": "「用鼻子追踪气味」→ 引申为「隐隐约约地感知到（危险/机会）」",
+          "en": "The journalist scented a major story behind the official statement.",
+          "zh": "这位记者嗅到了官方声明背后藏着一个大新闻。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "sense",
+          "gloss": "感觉，感知（同根词 sentire）"
+        },
+        {
+          "w": "sensation",
+          "gloss": "感觉，轰动（强烈感知）"
+        },
+        {
+          "w": "sentient",
+          "gloss": "有知觉的（同根词 sentire）"
+        }
+      ]
+    },
+    {
+      "word": "muscle",
+      "hl": "sc",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈmʌsl/",
+      "subgroup": "sc",
+      "meaning": "n. 肌肉；（政治/经济）实力  v. 强行推进；凭力量取胜",
+      "etymology": "拉丁语 musculus = mus（鼠）+ -culus（小）= 「小老鼠」——古罗马人看到肌肉运动时，觉得像皮肤下有小老鼠在动。同根：mussel（贻贝，形似肌肉）。sc 在 -cle 前不读 /sk/，而是 sc → /s/（词源拼写遗留）。",
+      "roots": [
+        {
+          "part": "musc- (musculus)",
+          "meaning": "小老鼠（比喻肌肉形状）"
+        },
+        {
+          "part": "-le",
+          "meaning": "小（名词后缀）"
+        }
+      ],
+      "phonetics": "musc + le：sc 在 l 前，整体读 /s/；-le 是辅音 + 哑 e，不单独发音。muscle = /ˈmʌsl/，只有两个音节。注意不读 /ˈmʌskl/。",
+      "tip": "muscle 里的 c 完全不发音——/ˈmʌsl/。与 mussel（贻贝）同音，两者都来自「小老鼠」的比喻。",
+      "examples": [
+        {
+          "en": "The government used its economic muscle to negotiate better trade terms.",
+          "zh": "政府动用经济实力谈判更有利的贸易条件。",
+          "source": "造句"
+        },
+        {
+          "en": "muscle memory",
+          "zh": "「肌肉记忆」——运动和神经科学高频术语，指反复练习后形成的自动化动作记忆。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "strength",
+          "ipa": "/streŋθ/",
+          "note": "「力量」，比 muscle 更抽象，muscle 专指肌肉组织或由此引申的实力",
+          "gloss": "力量（比 muscle 更抽象，muscle 专指肌肉组织）"
+        },
+        {
+          "w": "power",
+          "ipa": "/ˈpaʊər/",
+          "note": "「权力/力量」，比 muscle 更广，muscle 侧重身体或强制性的力量；soft power vs hard muscle",
+          "gloss": "权力，力量（比 muscle 更广，可指软实力）"
+        },
+        {
+          "w": "brawn",
+          "ipa": "/brɔːn/",
+          "note": "「体力/蛮力」，比 muscle 更文学化，专指身体力量；brawn vs brain（蛮力 vs 智力）",
+          "gloss": "体力，蛮力（文学化，常与 brain 对比）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "weakness",
+          "note": "软弱、无力"
+        },
+        {
+          "w": "passivity",
+          "note": "被动性"
+        }
+      ],
+      "nuance": "muscle 作名词指肌肉组织，引申为「强制性实力」（political muscle）；power 更广泛，可指软实力或制度权力；brawn 专指身体蛮力，常与 brain 对比；strength 是最通用的「力量/优势」。",
+      "core": "你弯起手臂，皮肤下鼓起一团有弹性的肉——它在动，像一只小老鼠在皮肤下面钻来钻去——一种「皮下小老鼠蠕动」的力感。",
+      "senses": [
+        {
+          "gloss": "n. 肌肉",
+          "logic": "解剖本义「小老鼠」：古罗马人觉得肌肉运动像小老鼠在皮下跑",
+          "en": "He had been training for months and his muscles were visibly defined.",
+          "zh": "他训练了数月，肌肉线条清晰可见。"
+        },
+        {
+          "gloss": "n. （政治/经济）实力，强制力",
+          "logic": "「肌肉的力量」→ 引申为用力量逼迫他人服从的能力",
+          "en": "The government used its economic muscle to negotiate better trade terms.",
+          "zh": "政府动用经济实力谈判更有利的贸易条件。"
+        },
+        {
+          "gloss": "v. 强行推进；凭力量取胜",
+          "logic": "「用肌肉的力量挤进去」→ 不靠规则，靠蛮力挤进",
+          "en": "He muscled his way through the crowd to get to the front.",
+          "zh": "他凭蛮力挤过人群来到前排。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "muscular",
+          "gloss": "肌肉发达的；肌肉的"
+        },
+        {
+          "w": "mussel",
+          "gloss": "贻贝（形似肌肉，同根同音词）"
+        }
+      ]
+    },
+    {
+      "word": "discipline",
+      "hl": "sc",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈdɪsəplɪn/",
+      "subgroup": "sc",
+      "meaning": "n. 纪律；自律；惩戒；学科  v. 训练；惩戒；约束",
+      "etymology": "拉丁语 disciplina = discipulus（弟子）= dis-（分开）+ capere（抓住、领会）= 「能被抓住要领的人」→ 门徒 → 需要学习和约束的内容 → 纪律/学科。与 disciple（信徒）同根。",
+      "roots": [
+        {
+          "part": "dis-",
+          "meaning": "分开、去除"
+        },
+        {
+          "part": "-cipline (capere)",
+          "meaning": "抓住、领会"
+        }
+      ],
+      "phonetics": "dis + c + ipline：sc 在 i 前，c 只读 /s/；DIS-ci-pline，重音在首音节，共三音节；-pline /plɪn/ 最后一个音节弱读。",
+      "tip": "discipline 和 disciple（门徒）同根：「门徒需要被管教」→ 纪律，「门徒学习的内容」→ 学科。两词放在一起记。",
+      "examples": [
+        {
+          "en": "Academic discipline requires consistent effort over months, not just intensive bursts.",
+          "zh": "学术自律需要数月如一日的持续努力，而非短暂的高强度冲刺。",
+          "source": "造句"
+        },
+        {
+          "en": "self-discipline / field/discipline",
+          "zh": "「自律 / 学科/领域」——一词双义，TOEFL 学术文章两义都常见。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "self-control",
+          "ipa": "/ˌself kənˈtroʊl/",
+          "note": "「自控力」，比 discipline 更口语，强调对自身行为的控制",
+          "gloss": "自控力（比 discipline 更口语，侧重对自身行为的控制）"
+        },
+        {
+          "w": "field",
+          "ipa": "/fiːld/",
+          "note": "「领域/学科」义的近义词，比 discipline 更口语；a field of study（研究领域）",
+          "gloss": "领域，学科（最口语化的替换词）"
+        },
+        {
+          "w": "training",
+          "ipa": "/ˈtreɪnɪŋ/",
+          "note": "「训练」，强调系统性培养纪律或技能的过程；military training（军事训练）",
+          "gloss": "训练（强调系统性培养纪律或技能的过程）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "chaos",
+          "note": "混乱、无纪律"
+        },
+        {
+          "w": "indulgence",
+          "note": "放纵"
+        }
+      ],
+      "nuance": "discipline 兼有「纪律/自律」（外部或内部约束）和「学科」两义——学术文章中出现 academic discipline 是「学术领域」而非「学术纪律」，需靠语境判断。self-control 最口语，training 强调培养过程，field 是「学科」义的常见替换词。",
+      "core": "一个学徒站在师傅面前，师傅手里拿着戒尺——你学到的不只是知识，还有每天早起、反复练习、不偷懒的规矩——一种「被训练、被约束才能学到真东西」的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 纪律；自律",
+          "logic": "「门徒被管教」→ 被要求遵守的规则→内心自己遵守规则的能力",
+          "en": "Academic discipline requires consistent effort over months, not just intensive bursts.",
+          "zh": "学术自律需要数月如一日的持续努力，而非短暂的高强度冲刺。"
+        },
+        {
+          "gloss": "n. 学科（如 academic discipline）",
+          "logic": "「门徒学习的内容」→ 系统化的知识分支",
+          "en": "Linguistics is the discipline that studies the structure and use of language.",
+          "zh": "语言学是研究语言结构和使用的学科。"
+        },
+        {
+          "gloss": "v. 惩戒；训练",
+          "logic": "「管教门徒的动作」→ 用惩罚或训练使其遵守规则",
+          "en": "The school disciplined the students who had cheated on the exam.",
+          "zh": "学校惩戒了在考试中作弊的学生。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "disciple",
+          "gloss": "门徒，信徒（同根词，被管教的人）"
+        },
+        {
+          "w": "disciplinary",
+          "gloss": "纪律的；学科的"
+        },
+        {
+          "w": "disciplined",
+          "gloss": "有纪律的，自律的（形容词）"
+        }
+      ]
+    }
+  ]
+}

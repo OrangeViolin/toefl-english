@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>/m/ 双唇鼻音 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "m", "combo": "m·mm·mb·mn", "title": "/m/ 双唇鼻音", "sound": "/m/", "subtitle": "四种拼写，同一个鼻腔共鸣——连 b 和 n 也会悄悄消失", "intro": "/m/ 是双唇紧闭、气流从鼻腔送出的鼻音，发音最稳定的辅音之一。它藏在四种拼写里：最常见的 m（man、moon）；双写 mm（summer、common）；词尾 -mb 中 b 静音只剩 /m/（climb、thumb）；词尾 -mn 中 n 静音只剩 /m/（autumn、column）。-mb 和 -mn 这两组与「不发音字母」页有交叉，但本页侧重点是：不管拼写多复杂，它们都读同一个 /m/。", "subgroups": [{"key": "m", "tag": "m → /m/", "label": "✅ m = /m/", "desc": "最基本的 /m/ 拼写，绝无例外——双唇合拢，鼻腔共鸣即是。见于词首、词中、词尾各处：man、moon、music、mother、mean、morning、member、remember。"}, {"key": "mm", "tag": "mm → /m/", "label": "mm = /m/", "desc": "双写 mm 出现在词根之间或前缀之后（com- + 辅音 m，或两音节相接），发音完全等于单写 m，只代表音节边界加强。summer、common、grammar、committee、commission、comment、communicate——口中只有一个 /m/，别读两次。"}, {"key": "mb", "tag": "mb → /m/（b 静音）", "label": "mb = /m/", "desc": "词尾 -mb 中 b 完全不发音，只留 /m/：climb /klaɪm/、thumb /θʌm/、lamb /læm/、comb /koʊm/、limb /lɪm/、succumb /səˈkʌm/。记忆钩：英语历史上 b 曾发音，后逐渐脱落，留下这些「化石拼写」。"}, {"key": "mn", "tag": "mn → /m/（n 静音）", "label": "mn = /m/", "desc": "词尾 -mn 中 n 不发音：autumn /ˈɔːtəm/、column /ˈkɑːləm/、hymn /hɪm/、solemn /ˈsɑːləm/、condemn /kənˈdem/。注意：加后缀时 n 复活——autumnal /ɔːˈtʌmnəl/、columnist /ˈkɑːləmnɪst/，这是辨别哑音的好方法。"}], "rhymeChains": [{"label": "-mb 静音家族", "words": ["climb", "thumb", "lamb", "comb", "limb", "succumb"]}, {"label": "-mn 静音家族", "words": ["autumn", "column", "hymn", "solemn", "condemn"]}, {"label": "-om / -um 韵脚", "words": ["common", "summon", "comment", "summary"]}], "words": [{"word": "mean", "hl": "m", "levels": ["六级"], "ipa": "/miːn/", "subgroup": "m", "meaning": "v. 意思是；意图；意味着  adj. 吝啬的；卑鄙的；（美）凶狠的  n. 均值，中间值", "etymology": "古英语 mǣnan「说出、意图」，与德语 meinen（认为）同根。数学义「均值」来自拉丁语 medianus（中间的），与 medium、median 同源。", "roots": [{"part": "mean（mǣnan）", "meaning": "意图、说出"}, {"part": "mean（medianus）", "meaning": "中间（数学义）"}], "phonetics": "m + ea /iː/ + n，单音节，ee 类长元音；与 lean、clean 押韵。", "tip": "一词多义陷阱：mean 在数学语境中是「均值」，在日常口语中是「意思是」，形容词义是「吝啬/卑鄙」——上下文三选一。", "examples": [{"en": "What do you mean by 'sustainable growth'?", "zh": "你说的「可持续增长」是什么意思？", "source": "造句"}, {"en": "by no means", "zh": "「绝对不；绝非」——高频否定强调搭配，比 not at all 更正式。", "source": "高频搭配"}], "synonyms": [{"w": "signify", "ipa": "/ˈsɪɡnɪfaɪ/", "note": "「象征、表示」，比 mean 更正式，多用于书面；a silence that signifies consent（表示同意的沉默）", "gloss": "象征、表示"}, {"w": "indicate", "ipa": "/ˈɪndɪkeɪt/", "note": "「表明、显示」，强调以证据指向某结论；the data indicates a trend（数据表明一种趋势）", "gloss": "表明、显示"}, {"w": "intend", "ipa": "/ɪnˈtend/", "note": "「意图」义的近义，强调主观目的；I meant to call you（我本打算打给你的）", "gloss": "意图"}], "antonyms": [{"w": "misrepresent", "note": "曲解、歪曲", "gloss": "曲解、歪曲"}], "nuance": "mean 最口语，可指字面义也可指言外之意；signify 更正式且常指象征性意义；indicate 多用于数据、迹象指向某结论，偏客观推断。", "core": "一根手指直直指向某处——你要说的、你瞄准的、数据最中间的那一点。形容词「吝啬/卑鄙」来自另一词根（gemǣne「普通的」→「低贱的」→「吝啬的」），历史偶合，非同一感觉引申。", "senses": [{"gloss": "意思是，表示…的意思", "logic": "手指指向→词句指向某个含义", "en": "What do you mean by that?", "zh": "你这话是什么意思？"}, {"gloss": "意图，打算", "logic": "手指瞄准→心里打算做某事", "en": "I meant to call you yesterday.", "zh": "我昨天本想打电话给你。"}, {"gloss": "意味着，预示着", "logic": "手指指向结果→某件事暗示另一件事的发生", "en": "This deal could mean the end of the company.", "zh": "这笔交易可能意味着公司的终结。"}, {"gloss": "均值，平均数", "logic": "手指指向正中间→数据的中心值，数理引申", "en": "The mean of 3, 5 and 7 is 5.", "zh": "3、5、7的均值是5。"}, {"gloss": "吝啬的，小气的", "logic": "历史偶合，非同一感觉引申", "en": "He's too mean to buy a round of drinks.", "zh": "他太抠了，从不请大家喝一轮。"}, {"gloss": "卑鄙的，刻薄的", "logic": "历史偶合，非同一感觉引申", "en": "That was a mean thing to say.", "zh": "说那种话太刻薄了。"}], "derivatives": [{"w": "meaning", "gloss": "意思，意义"}, {"w": "meaningful", "gloss": "有意义的"}, {"w": "means", "gloss": "方法，手段"}, {"w": "meantime", "gloss": "其间，同时"}]}, {"word": "morning", "hl": "m", "levels": ["六级"], "ipa": "/ˈmɔːrnɪŋ/", "subgroup": "m", "meaning": "n. 早晨，上午；（比喻）初期，黎明", "etymology": "古英语 morgen「黎明、早晨」，日耳曼同根，与德语 Morgen 同源。词根含「闪光、出现」之义——太阳升起的时刻。", "roots": [{"part": "morning（morgen）", "meaning": "黎明、初现之时"}], "phonetics": "MOR-ning，重音在首音节，or = /ɔːr/；-ning 弱读 /nɪŋ/。注意不要误读为 mourning（哀悼）——两词同音！", "tip": "morning vs mourning：发音完全相同（同音词），只靠拼写和语境区分。", "examples": [{"en": "She reviews her goals every morning before checking her phone.", "zh": "她每天早上在看手机之前先回顾一遍自己的目标。", "source": "造句"}, {"en": "in the morning of one's career", "zh": "「在事业的初期」——比喻义，指某事物的早期阶段。", "source": "高频搭配"}], "synonyms": [{"w": "dawn", "ipa": "/dɔːn/", "note": "「黎明」，特指日出前后极短的时段，比 morning 更诗意，也用作动词（day dawns）", "gloss": "黎明"}, {"w": "daybreak", "ipa": "/ˈdeɪbreɪk/", "note": "「破晓」，与 dawn 同义但更书面；at daybreak（破晓时分）", "gloss": "破晓"}], "antonyms": [{"w": "evening", "note": "傍晚", "gloss": "傍晚"}, {"w": "night", "note": "夜晚", "gloss": "夜晚"}], "nuance": "morning 指日出到正午的整段时间，dawn/daybreak 专指天刚亮的极短瞬间，更具画面感和文学色彩。", "core": "天边泛白的那一刻——黑暗退去、光涌进来，世界从沉睡中睁眼，一切刚刚开始。", "senses": [{"gloss": "早晨，上午", "logic": "天刚亮→日出到正午的时段", "en": "She reviews her goals every morning.", "zh": "她每天早上回顾一遍自己的目标。"}, {"gloss": "初期，黎明（比喻）", "logic": "一天刚开始→人生或事物的早期阶段", "en": "We are still in the morning of the digital age.", "zh": "我们仍处在数字时代的黎明。"}], "derivatives": [{"w": "mourning", "gloss": "哀悼（同音词，拼写不同）"}, {"w": "morn", "gloss": "早晨（诗歌用语）"}]}, {"word": "member", "hl": "m", "levels": ["六级"], "ipa": "/ˈmembər/", "subgroup": "m", "meaning": "n. 成员，会员；（身体的）肢体；（数学）项，元素", "etymology": "拉丁语 membrum「肢体、部分」，从「身体的一部分」引申为「组织的一部分」。membrane（膜）与之同根，都含「隔开、分开」的原始义。", "roots": [{"part": "member（membrum）", "meaning": "肢体、部分"}], "phonetics": "MEM-ber，两音节，重音在前；-ber 弱读 /bər/。", "examples": [{"en": "All members of the committee must attend the vote.", "zh": "委员会所有成员必须出席投票。", "source": "造句"}, {"en": "member state / founding member", "zh": "「成员国 / 创始成员」——国际关系高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "participant", "ipa": "/pɑːrˈtɪsɪpənt/", "note": "「参与者」，强调参与某活动或过程，比 member 更强调动态参与", "gloss": "参与者"}, {"w": "constituent", "ipa": "/kənˈstɪtʃuənt/", "note": "「组成成员」，多指选民或构成要素；constituent parts（组成部分）", "gloss": "组成成员"}], "antonyms": [{"w": "outsider", "note": "局外人", "gloss": "局外人"}, {"w": "non-member", "note": "非成员", "gloss": "非成员"}], "nuance": "member 强调隶属于某组织或整体，participant 强调参与某具体活动，constituent 强调构成某整体的单元（可指选民或成分）。", "core": "一个人身上的一只手、一条腿——属于身体、为身体工作的一块，少了它就不完整。", "senses": [{"gloss": "成员，会员", "logic": "身体的一部分→组织的一部分，属于某群体的人", "en": "All members must attend the annual meeting.", "zh": "所有成员必须出席年会。"}, {"gloss": "肢体（手臂或腿）", "logic": "本义——身体上伸出去的部分", "en": "The accident left him with an injured lower member.", "zh": "事故导致他一条下肢受伤。"}, {"gloss": "（数学）项，元素", "logic": "身体的一个部分→集合中的一个单元", "en": "Each member of the equation must be balanced.", "zh": "等式的每一项都必须平衡。"}], "derivatives": [{"w": "membership", "gloss": "会员资格，会籍"}, {"w": "membrane", "gloss": "薄膜，膜（同根：隔开的部分）"}, {"w": "dismember", "gloss": "肢解，分割"}]}, {"word": "remember", "hl": "m", "levels": ["六级"], "ipa": "/rɪˈmembər/", "subgroup": "m", "meaning": "v. 记得，记住；想起；纪念；代（某人）问候", "etymology": "古法语 remembrer，源自晚期拉丁语 rememorari = re-(再次) + memorare(提到，使记住)，词根 memor(有记忆的) 与 memory、memorial 同根。", "roots": [{"part": "re-", "meaning": "再次"}, {"part": "-member（memorare）", "meaning": "记住、提到"}], "phonetics": "re-MEM-ber，重音在第二音节 MEM；-ber 弱读 /bər/。注意 re- 在此弱读 /rɪ/。", "examples": [{"en": "Do you remember where you put your keys?", "zh": "你还记得你把钥匙放哪儿了吗？", "source": "造句"}, {"en": "Remember me to your family.", "zh": "「替我向你家人问好」——书面/正式用法，口语中少见但仍存在。", "source": "高频搭配"}], "synonyms": [{"w": "recall", "ipa": "/rɪˈkɔːl/", "note": "「回忆起」，比 remember 更强调从记忆中主动提取，有时带有努力才想起来的含义", "gloss": "回忆起"}, {"w": "recollect", "ipa": "/ˌrekəˈlekt/", "note": "「追忆」，比 recall 更正式，多用于书面，强调有意识地重构记忆", "gloss": "追忆"}], "antonyms": [{"w": "forget", "note": "忘记", "gloss": "忘记"}, {"w": "overlook", "note": "忽略", "gloss": "忽略"}], "nuance": "remember 是中性的「记得」（可以是一直记着，也可以是突然想起），recall 强调主动提取记忆的过程，recollect 最正式，多见于书面叙述。「I remember his face」是自然存储，「I recall his exact words」是刻意提取。", "core": "脑子里把一件已经过去的事重新拿出来，像翻开旧相册——画面再次浮现，记忆被重新带到心中。", "senses": [{"gloss": "记得，记住", "logic": "重新拿出来→信息还储存在脑子里", "en": "Do you remember where you parked the car?", "zh": "你记得车停在哪儿了吗？"}, {"gloss": "想起，回忆起", "logic": "重新拿出来→主动从记忆中提取", "en": "I suddenly remembered I had an appointment.", "zh": "我突然想起我有个约会。"}, {"gloss": "纪念，缅怀", "logic": "重新拿出来→让逝者或往事不被遗忘", "en": "We gather each year to remember those we lost.", "zh": "我们每年相聚，缅怀逝去的人。"}, {"gloss": "代（某人）问候", "logic": "重新拿出来→替某人把问候带给另一个人", "en": "Please remember me to your parents.", "zh": "请代我向你父母问好。"}], "derivatives": [{"w": "memory", "gloss": "记忆，回忆"}, {"w": "memorial", "gloss": "纪念碑，纪念仪式"}, {"w": "memorable", "gloss": "值得记住的，难忘的"}, {"w": "remembrance", "gloss": "纪念，回忆"}]}, {"word": "summer", "hl": "mm", "levels": ["六级"], "ipa": "/ˈsʌmər/", "subgroup": "mm", "meaning": "n. 夏天，夏季；（比喻）盛年，黄金时代  v. 在某处度夏", "etymology": "古英语 sumor，日耳曼同根，与德语 Sommer 同源。「盛年」义来自中世纪英语，夏天象征生命力最旺盛的阶段。", "roots": [{"part": "summer（sumor）", "meaning": "夏天"}], "phonetics": "SUM-mer，重音在前，mm 只发一个 /m/；第一音节 u = /ʌ/，第二音节弱读 /ər/。", "examples": [{"en": "She spent the summer interning at a research lab in Beijing.", "zh": "她在北京某研究所度过了那个夏天的实习时光。", "source": "造句"}, {"en": "an endless summer", "zh": "「漫长的夏天」——高频文化意象，指无忧无虑的黄金时期。", "source": "高频搭配"}], "synonyms": [{"w": "midsummer", "ipa": "/ˈmɪdˌsʌmər/", "note": "「仲夏」，特指夏至前后最热的时段，比 summer 更精确", "gloss": "仲夏"}, {"w": "peak season", "ipa": "/piːk ˈsiːzn/", "note": "「旺季」，功能近义，用于旅游、农业等语境，比 summer 更抽象", "gloss": "旺季"}], "antonyms": [{"w": "winter", "note": "冬天", "gloss": "冬天"}, {"w": "off-season", "note": "淡季", "gloss": "淡季"}], "nuance": "summer 是季节通用词，midsummer 专指盛夏顶峰（夏至附近），peak season 是旅游或农业语境的功能替代词。", "core": "太阳最烈、万物疯长的季节——热浪扑面，一切都在全力燃烧自己，生命浓度最高的一段时光。", "senses": [{"gloss": "夏天，夏季", "logic": "本义——一年中最热的季节", "en": "She spent the summer interning in Beijing.", "zh": "她在北京实习度过了那个夏天。"}, {"gloss": "盛年，黄金时代（比喻）", "logic": "夏天=生命力顶峰→人生或事物最旺盛的阶段", "en": "He was in the summer of his career when the accident happened.", "zh": "事故发生时他正处于事业的盛年。"}, {"gloss": "在某处度夏（动词）", "logic": "夏天→在某个地方过夏天", "en": "They summer in the south of France every year.", "zh": "他们每年在法国南部度夏。"}], "derivatives": [{"w": "summery", "gloss": "夏天的，像夏天一样的"}, {"w": "midsummer", "gloss": "仲夏，夏至前后"}, {"w": "summertime", "gloss": "夏季时光"}]}, {"word": "common", "hl": "mm", "levels": ["六级"], "ipa": "/ˈkɑːmən/", "subgroup": "mm", "meaning": "adj. 常见的，普通的；共同的，公共的  n. 公地（英式）", "etymology": "拉丁语 communis = com-(共同) + munis(服务，义务)。「共同承担义务的」→「公共的」→「普遍的」。与 community（社区）、communicate（交流）、immune（免疫，原义「不服义务的」）同根。", "roots": [{"part": "com-", "meaning": "共同"}, {"part": "-mon (munis)", "meaning": "服务、义务"}], "phonetics": "COM-mon，重音在前，mm 只发一个 /m/；-mon 弱读 /mən/。", "tip": "common ground（共同点）是谈判和辩论的超高频搭配，也是托福写作核心词。", "examples": [{"en": "It is common practice to review the contract before signing.", "zh": "在签字前审查合同是常见做法。", "source": "造句"}, {"en": "common ground / common sense", "zh": "「共同点 / 常识」——两个固定搭配，学术写作高频。", "source": "高频搭配"}], "synonyms": [{"w": "frequent", "ipa": "/ˈfriːkwənt/", "note": "「频繁的」，强调发生次数多，比 common 更侧重频率；a frequent occurrence（频繁发生的事）", "gloss": "频繁的"}, {"w": "widespread", "ipa": "/ˈwaɪdspred/", "note": "「广泛存在的」，比 common 更强调地理或范围上的普遍性", "gloss": "广泛存在的"}, {"w": "universal", "ipa": "/ˌjuːnɪˈvɜːrsl/", "note": "「普遍的」，比 common 程度更强，强调无例外地适用于所有情况", "gloss": "普遍的"}], "antonyms": [{"w": "rare", "note": "罕见的", "gloss": "罕见的"}, {"w": "unique", "note": "独特的，唯一的", "gloss": "独特的"}], "nuance": "common 强调「频繁出现、大家都知道」，frequent 侧重时间上的反复，widespread 侧重空间上的覆盖面，universal 强调无例外的全覆盖。", "core": "一张大桌子，所有人都坐在旁边——一起分担、一起享用，不是谁的，是大家的。", "senses": [{"gloss": "常见的，普通的", "logic": "大家一起→出现频率高的、不稀奇的", "en": "It's a common mistake among beginners.", "zh": "这是初学者常犯的错误。"}, {"gloss": "共同的，公共的", "logic": "大家一起→属于所有人的、共享的", "en": "We need to find common ground.", "zh": "我们需要找到共同点。"}, {"gloss": "公地（英式名词）", "logic": "大家一起→大家共用的草地/空地", "en": "The village common was used for fairs and markets.", "zh": "村里的公地被用来办集市。"}], "derivatives": [{"w": "commonly", "gloss": "通常，一般地"}, {"w": "commonplace", "gloss": " commonplace，司空见惯的事"}, {"w": "commonwealth", "gloss": "联邦，共和国"}, {"w": "uncommon", "gloss": "不寻常的"}]}, {"word": "grammar", "hl": "mm", "levels": ["六级"], "ipa": "/ˈɡræmər/", "subgroup": "mm", "meaning": "n. 语法；语法书；基本规则（比喻）", "etymology": "古法语 grammaire，源自希腊语 grammatikē（语言艺术）= gramma（字母、文字）。中世纪与魔法相关联（glamour 与 grammar 同根——文字的神秘力量）。", "roots": [{"part": "gram- (gramma)", "meaning": "字母、文字"}, {"part": "-mar", "meaning": "名词化后缀（法语路径）"}], "phonetics": "GRAM-mar，重音在前，mm 只发一个 /m/；词尾 -ar = /ər/，弱读。", "tip": "glamour 和 grammar 是同源词——中世纪抄写员的「文字魔法」演变为「迷人魅力」，词形分道扬镳。", "examples": [{"en": "Mastering grammar rules frees you to focus on ideas.", "zh": "掌握语法规则后，你才能把精力放在表达想法上。", "source": "造句"}, {"en": "grammar school", "zh": "「文法学校」（英国）——专注语言和经典学科的传统学校类型。", "source": "高频搭配"}], "synonyms": [{"w": "syntax", "ipa": "/ˈsɪntæks/", "note": "「句法」，专指词的排列规则，是 grammar 的子集，更技术化", "gloss": "句法"}, {"w": "linguistics", "ipa": "/lɪŋˈɡwɪstɪks/", "note": "「语言学」，比 grammar 范围更宽，包括语音、词汇、语义等多个维度", "gloss": "语言学"}], "antonyms": [], "nuance": "grammar 是日常口语和教学中的通用词（覆盖词法+句法），syntax 是语言学术语专指句法结构，linguistics 是整个学科的统称。", "core": "语言世界的骨架和交通规则——没有它，词就撞成一团，谁也到不了谁那里。文字有一套看不见的秩序。", "senses": [{"gloss": "语法，文法", "logic": "语言规则→词怎么排列、怎么变形才算对", "en": "Mastering grammar frees you to focus on ideas.", "zh": "掌握了语法，你才能把精力放在表达想法上。"}, {"gloss": "语法书", "logic": "语法→记录语法的书", "en": "She bought a French grammar before the trip.", "zh": "她在出发前买了一本法语语法书。"}, {"gloss": "基本规则（比喻）", "logic": "语法=规则→任何领域的基本规则", "en": "You need to learn the grammar of filmmaking.", "zh": "你得先学电影制作的基本法则。"}], "derivatives": [{"w": "grammatical", "gloss": "语法的，合乎语法的"}, {"w": "grammarian", "gloss": "语法学家"}, {"w": "glamour", "gloss": "魅力（同源词：文字魔法→迷人魅力）"}]}, {"word": "committee", "hl": "mm", "levels": ["托福"], "ipa": "/kəˈmɪti/", "subgroup": "mm", "meaning": "n. 委员会，审查小组", "etymology": "拉丁语 committere = com-(共同) + mittere(发送、委派) = 「共同委派」→ 委托，委员会。与 commit（承诺）、mission（使命）、submit（提交）同根——都含「发出、派遣」的核心义。", "roots": [{"part": "com-", "meaning": "共同"}, {"part": "-mit(tere)", "meaning": "发送、委派"}], "phonetics": "com-MIT-tee，重音在第二音节；mm 只读一个 /m/；词尾 -tee = /ti/。", "examples": [{"en": "The ethics committee reviewed the proposal and requested revisions.", "zh": "伦理委员会审查了提案并要求修改。", "source": "造句"}, {"en": "standing committee / select committee", "zh": "「常设委员会 / 特别委员会」——议会和组织管理高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "council", "ipa": "/ˈkaʊnsl/", "note": "「议会、理事会」，比 committee 更正式，通常有实权；city council（市议会）", "gloss": "议会、理事会"}, {"w": "panel", "ipa": "/ˈpænl/", "note": "「专家组、评审团」，比 committee 更非正式，常指临时组建的评审小组", "gloss": "专家组、评审团"}], "antonyms": [], "nuance": "committee 强调分工负责某项具体事务（调查、审查），council 通常是有正式权力的机构，panel 是专家小组，多为临时性质（评奖、评审）。", "core": "一群人被叫到一起，交给你一件事去处理——你们围桌而坐，代表别人做决定。", "senses": [{"gloss": "委员会，审查小组", "logic": "被委派的人→正式任命的审议/决策小组", "en": "The ethics committee reviewed the proposal.", "zh": "伦理委员会审查了提案。"}], "derivatives": [{"w": "commit", "gloss": "承诺；投入；犯罪（同根：交付出去）"}, {"w": "subcommittee", "gloss": "小组委员会，附属委员会"}, {"w": "committal", "gloss": "收监；托付"}]}, {"word": "commission", "hl": "mm", "levels": ["托福"], "ipa": "/kəˈmɪʃn/", "subgroup": "mm", "meaning": "n. 委任，授权；委员会；佣金，回扣；任务  v. 委托创作；任命；使（船只等）服役", "etymology": "拉丁语 commissio = com-(共同) + missio(发送) = 「共同差遣」→ 授权。与 mission（使命）、omit（略去）、missile（导弹）同根——都含「送出」的核心义。", "roots": [{"part": "com-", "meaning": "共同、加强"}, {"part": "-mission (missio)", "meaning": "发送、差遣"}], "phonetics": "com-MIS-sion，重音在第二音节；mm 只发一个 /m/；-sion = /ʃn/。", "tip": "commission 作动词「委托创作」在艺术和建筑语境很高频：commission a portrait（委托画一幅肖像）。", "examples": [{"en": "The architect was commissioned to design a new cultural centre.", "zh": "这位建筑师受委托设计一个新的文化中心。", "source": "造句"}, {"en": "on commission / out of commission", "zh": "「按佣金制 / 停止运转（坏了）」——两个高频短语，语义截然不同。", "source": "高频搭配"}], "synonyms": [{"w": "mandate", "ipa": "/ˈmændeɪt/", "note": "「授权、委任」，比 commission 更正式，多用于政治或法律；a mandate to govern（执政授权）", "gloss": "授权、委任"}, {"w": "fee", "ipa": "/fiː/", "note": "「佣金/费用」义的口语替代，比 commission（佣金）更通用", "gloss": "佣金/费用"}], "antonyms": [{"w": "decommission", "note": "撤销、使退役", "gloss": "撤销、使退役"}], "nuance": "commission 兼指「授权行为」和「由此产生的佣金/报酬」，mandate 专指正式授权（尤其政治），fee 是最口语的费用词。", "core": "把一件事交给一个人去做——你给他权力，他给你结果，中间可能有一笔酬劳。核心动作是「送出去、交出去」。", "senses": [{"gloss": "委托，委任（名词/动词）", "logic": "交出去→正式把任务/权力给某人", "en": "The artist was commissioned to paint a mural.", "zh": "那位艺术家受委托绘制一幅壁画。"}, {"gloss": "委员会", "logic": "交出去→被委任的一群人（与 committee 义近）", "en": "The commission published its findings yesterday.", "zh": "委员会昨天公布了调查结果。"}, {"gloss": "佣金，回扣", "logic": "交出去→委托交易的报酬，按成交额抽成", "en": "Sales reps earn a 10% commission on each deal.", "zh": "销售代表每笔交易拿10%的佣金。"}, {"gloss": "使（船只等）服役", "logic": "交出去→让船正式进入服役状态", "en": "The new warship was commissioned last month.", "zh": "新军舰上个月正式服役。"}], "derivatives": [{"w": "commissioner", "gloss": "专员，委员"}, {"w": "decommission", "gloss": "使退役，撤销"}, {"w": "non-commissioned", "gloss": "未受任命的，无委任状的"}]}, {"word": "communicate", "hl": "mm", "levels": ["托福"], "ipa": "/kəˈmjuːnɪkeɪt/", "subgroup": "mm", "meaning": "v. 交流，沟通；传达，传播；（疾病）传染", "etymology": "拉丁语 communicare = com-(共同) + munus(义务、共有物) = 「共同分享」→ 交流。与 community（社区）、common（共同的）、communion（圣餐，意为「共享」）同根。", "roots": [{"part": "com-", "meaning": "共同"}, {"part": "-municate (munus)", "meaning": "共有、分享"}], "phonetics": "com-MU-ni-cate，四音节，重音在第二音节 MU = /mjuː/；mm 只发一个 /m/。", "examples": [{"en": "Scientists must communicate their findings clearly to the public.", "zh": "科学家必须把研究成果清晰地传达给公众。", "source": "造句"}, {"en": "communicate effectively / communicate a sense of urgency", "zh": "「有效沟通 / 传递紧迫感」——两类高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "convey", "ipa": "/kənˈveɪ/", "note": "「传达」，比 communicate 更侧重单向传递某种信息或情感；convey a message（传递信息）", "gloss": "传达"}, {"w": "express", "ipa": "/ɪkˈspres/", "note": "「表达」，比 communicate 更强调自我输出，不一定有对话；express an opinion（表达意见）", "gloss": "表达"}, {"w": "transmit", "ipa": "/trænsˈmɪt/", "note": "「传输、传播」，比 communicate 更机械，多用于信号、疾病、数据；transmit a signal（发送信号）", "gloss": "传输、传播"}], "antonyms": [{"w": "conceal", "note": "隐瞒", "gloss": "隐瞒"}, {"w": "withhold", "note": "扣留信息", "gloss": "扣留信息"}], "nuance": "communicate 强调双向互动（交流），convey 是单向传递（传达），express 是自我输出（表达），transmit 最机械，用于物理或生物传播。", "core": "两个人之间打开一扇窗——我说的话流到你那里，你的想法流到我这里。共享一个空间、一个频道。", "senses": [{"gloss": "交流，沟通", "logic": "打开窗→双向传递信息", "en": "Good leaders communicate their vision clearly.", "zh": "好的领导者能清晰地传达愿景。"}, {"gloss": "传达，传播", "logic": "打开窗→单向传递信息/情感", "en": "The painting communicates a deep sense of loss.", "zh": "这幅画传达出一种深深的失落感。"}, {"gloss": "（疾病）传染", "logic": "打开窗→病菌从一个人传给另一个人（负面共享）", "en": "The virus can be communicated through saliva.", "zh": "这种病毒可通过唾液传播。"}], "derivatives": [{"w": "communication", "gloss": "交流，通信"}, {"w": "communicative", "gloss": "健谈的，乐于沟通的"}, {"w": "communion", "gloss": "交流，共享；圣餐"}, {"w": "telecommunication", "gloss": "电信，远程通信"}]}, {"word": "summary", "hl": "mm", "levels": ["托福"], "ipa": "/ˈsʌməri/", "subgroup": "mm", "meaning": "n. 摘要，概要  adj. 即刻的，未经正式程序的（法律）", "etymology": "拉丁语 summa「总和、最高点」= summus（最高的）的名词形式。「把最重要的内容加在一起」→ 摘要。与 sum（总和）、summit（顶峰）同根。", "roots": [{"part": "sum- (summus)", "meaning": "最高、总和"}, {"part": "-ary", "meaning": "名词/形容词后缀"}], "phonetics": "SUM-ma-ry，三音节，重音在前；mm 只发一个 /m/；-ry 弱读 /ri/。", "examples": [{"en": "Please provide a one-page summary of the research findings.", "zh": "请提供一页纸的研究成果摘要。", "source": "造句"}, {"en": "in summary", "zh": "「总结来说」——学术写作段落收尾的高频连接词，与 in conclusion、to sum up 同类。", "source": "高频搭配"}], "synonyms": [{"w": "abstract", "ipa": "/ˈæbstrækt/", "note": "「摘要」，专指学术论文开头的摘要（200字左右），比 summary 更正式且有固定格式", "gloss": "摘要"}, {"w": "synopsis", "ipa": "/ˈsɪnəpsɪs/", "note": "「概要」，比 summary 更文学，常用于书籍、剧本、电影的故事梗概", "gloss": "概要"}, {"w": "overview", "ipa": "/ˈoʊvərvjuː/", "note": "「概述」，比 summary 更宽泛，强调鸟瞰式的全局描述，不一定在结尾", "gloss": "概述"}], "antonyms": [{"w": "detail", "note": "细节（与概括相对）", "gloss": "与概括相对"}, {"w": "elaboration", "note": "详述", "gloss": "详述"}], "nuance": "summary 是最通用的摘要词（可在开头或结尾），abstract 特指学术论文开头的标准化摘要，synopsis 偏文学/影视梗概，overview 更侧重全局介绍（常在开头）。", "core": "从一堆东西里把最上面的、最重要的拣出来——只留精华，扔掉其余。总和的最顶点。", "senses": [{"gloss": "摘要，概要（名词）", "logic": "拣出最高点→把长篇内容压缩成最核心的几句话", "en": "Please provide a one-page summary of the report.", "zh": "请提供一页纸的报告摘要。"}, {"gloss": "即刻的，未经正式程序的（法律形容词）", "logic": "拣出最高点→跳过冗长程序、直接给结论", "en": "The judge issued a summary judgment.", "zh": "法官做出了即决判决（不经过完整庭审）。"}], "derivatives": [{"w": "summarize", "gloss": "总结，概括"}, {"w": "summarily", "gloss": "即刻地，草草地"}, {"w": "sum", "gloss": "总和，总数（同根）"}, {"w": "summit", "gloss": "顶峰，顶点（同根）"}]}, {"word": "summon", "hl": "mm", "levels": ["托福"], "ipa": "/ˈsʌmən/", "subgroup": "mm", "meaning": "v. 传唤（出庭）；召集（开会）；鼓起（勇气），振作（精神）", "etymology": "拉丁语 summonere = sub-(暗中) + monere(警告、提醒)。「暗中通知」→ 正式传唤。与 monitor（监控）、admonish（告诫）同根——都含「提醒、警示」义。", "roots": [{"part": "sum- (sub-)", "meaning": "暗中、在下"}, {"part": "-mon (monere)", "meaning": "警告、提醒"}], "phonetics": "SUM-mon，两音节，重音在前；mm 只发一个 /m/；-mon 弱读 /mən/。", "tip": "summon up courage/strength（鼓起勇气/力量）是托福写作和阅读高频抽象义——注意不是召唤人，而是内心调动。", "examples": [{"en": "She summoned all her courage and walked into the interview room.", "zh": "她鼓起所有的勇气走进了面试间。", "source": "造句"}, {"en": "be summoned to court", "zh": "「被传唤出庭」——法律语境高频被动式。", "source": "高频搭配"}], "synonyms": [{"w": "convene", "ipa": "/kənˈviːn/", "note": "「召集（会议）」，比 summon 更中性，无法律强制义；convene a meeting（召开会议）", "gloss": "召集（会议）"}, {"w": "muster", "ipa": "/ˈmʌstər/", "note": "「集合；鼓起」，与 summon 在「鼓起勇气」义上最接近；muster up the strength（振作精神）", "gloss": "集合；鼓起"}, {"w": "subpoena", "ipa": "/səˈpiːnə/", "note": "「传票、传唤」，法律专业术语，比 summon 更技术化，仅用于法庭语境", "gloss": "传票、传唤"}], "antonyms": [{"w": "dismiss", "note": "解散，打发走", "gloss": "解散"}, {"w": "excuse", "note": "免除（出席义务）", "gloss": "出席义务"}], "nuance": "summon 既可强制传唤（法律），也可召集开会，还可抽象指「调动内在力量」；convene 专用于召集会议，无强制含义；muster 最口语，主要用于「鼓起勇气/力量」这一抽象义。", "core": "一条无声的通知发出去——「过来」。不管是法庭传票、会议召集，还是从自己内心深处把勇气拽出来。", "senses": [{"gloss": "传唤（出庭）", "logic": "暗中通知→法律强制要求某人到场", "en": "He was summoned to appear in court.", "zh": "他被传唤出庭。"}, {"gloss": "召集（开会）", "logic": "暗中通知→通知一群人集合", "en": "The CEO summoned an emergency meeting.", "zh": "CEO召集了一次紧急会议。"}, {"gloss": "鼓起（勇气），振作（精神）", "logic": "从深处叫出来→把藏在心里的力量调动到表面", "en": "She summoned the courage to speak up.", "zh": "她鼓起勇气说出了口。"}], "derivatives": [{"w": "summons", "gloss": "传票，传唤令"}, {"w": "summoner", "gloss": "召唤者，传唤人"}]}, {"word": "climb", "hl": "mb", "levels": ["六级"], "ipa": "/klaɪm/", "subgroup": "mb", "meaning": "v. 攀爬，登上；（价格/温度）上升；（社会地位）上升  n. 攀爬；升高", "etymology": "古英语 climban，日耳曼同根，与德语 klimmen 同源。词尾 -mb 中 b 历史上曾发音，中古英语后期 b 静音化——现代拼写保留了「化石」。", "roots": [{"part": "climb（climban）", "meaning": "攀登"}], "phonetics": "cl + i /aɪ/ + mb → b 完全静音，实际音节收在 /m/：/klaɪm/。注意读法和写法的差距，b 是哑弹。", "tip": "记忆钩：climb 的 b 和 bomb、lamb、thumb 一样——词尾 -mb 的 b 全部静音，整组一起背。", "examples": [{"en": "Temperatures climbed to record highs during the heatwave.", "zh": "热浪期间气温攀升至历史最高值。", "source": "造句"}, {"en": "climb the corporate ladder", "zh": "「在职场阶梯上攀升」——职场晋升的高频隐喻。", "source": "高频搭配"}], "synonyms": [{"w": "ascend", "ipa": "/əˈsend/", "note": "「上升、攀登」，比 climb 更正式，强调从低处到高处的过程；ascend a mountain（登山）", "gloss": "上升、攀登"}, {"w": "scale", "ipa": "/skeɪl/", "note": "「攀登（高耸之物）」，比 climb 更强调克服难度；scale a cliff（攀悬崖）", "gloss": "攀登（高耸之物）"}, {"w": "rise", "ipa": "/raɪz/", "note": "「上升」义的近义，多用于抽象（价格、地位），比 climb 更口语", "gloss": "上升"}], "antonyms": [{"w": "descend", "note": "下降、下山", "gloss": "下降、下山"}, {"w": "fall", "note": "跌落，下降", "gloss": "跌落"}], "nuance": "climb 可指物理攀爬也可指抽象上升，ascend 更正式且多指平稳上升，scale 专指攀登高难度的垂直面（岩壁、墙），rise 最抽象，多用于数字或地位变化。", "core": "手脚并用地往上——每一步都在对抗地心引力，目标永远是更高处。可以是山、是楼梯、是排行榜。", "senses": [{"gloss": "攀爬，攀登（动词）", "logic": "往上→用身体克服高度，物理攀爬", "en": "We climbed to the top of the hill before sunrise.", "zh": "我们在日出前爬到了山顶。"}, {"gloss": "（价格/温度/数量）上升", "logic": "往上→数字曲线往高处走", "en": "Temperatures climbed to 40°C during the heatwave.", "zh": "热浪期间气温攀升至40度。"}, {"gloss": "（社会地位/职场）攀升", "logic": "往上→在层级结构中向上移动", "en": "She climbed the corporate ladder faster than anyone.", "zh": "她在职场阶梯上攀升得比谁都快。"}, {"gloss": "攀爬，升高（名词）", "logic": "往上→攀登的动作或过程", "en": "It's a steep climb to the summit.", "zh": "到山顶是一段陡峭的攀爬。"}], "derivatives": [{"w": "climber", "gloss": "攀登者；攀缘植物"}, {"w": "climbing", "gloss": "登山运动"}, {"w": "climbdown", "gloss": "让步，退让（比喻从高处下来）"}]}, {"word": "thumb", "hl": "mb", "levels": ["六级"], "ipa": "/θʌm/", "subgroup": "mb", "meaning": "n. 拇指  v. 用拇指翻动；（口语）搭便车", "etymology": "古英语 þūma，日耳曼同根，与德语 Daumen（拇指）同源。词尾 b 曾发音，后静音化。under one's thumb（受人控制）来自拇指按压的意象。", "roots": [{"part": "thumb（þūma）", "meaning": "拇指"}], "phonetics": "th /θ/ + u /ʌ/ + mb → b 静音，实发 /θʌm/。注意 th 是清齿擦音 /θ/，不是 /d/。", "tip": "「thumbs up / thumbs down」来自古罗马角斗场裁判手势——现今是最通用的赞同/反对肢体语言。", "examples": [{"en": "She thumbed through the dictionary looking for the word.", "zh": "她翻着词典查那个单词。", "source": "造句"}, {"en": "under someone's thumb / a rule of thumb", "zh": "「受人摆布 / 经验法则」——两个固定搭配，托福阅读常见。", "source": "高频搭配"}], "synonyms": [{"w": "pollex", "ipa": "/ˈpɒleks/", "note": "解剖学术语「拇指」，比 thumb 更正式，仅见于医学文献", "gloss": "拇指"}], "antonyms": [], "nuance": "thumb 是拇指的日常词，pollex 是解剖学专业术语。作动词 thumb through（翻阅）已固化为成语，不可替换。", "core": "手上最粗最短的那一根——它最有力量，能按住东西、翻动书页、竖起表示赞许或压下表示否定。", "senses": [{"gloss": "拇指（名词）", "logic": "本义——手的第一根手指", "en": "She cut her thumb while chopping vegetables.", "zh": "她切菜时割伤了拇指。"}, {"gloss": "用拇指翻动（动词）", "logic": "拇指的功能→用拇指快速翻阅", "en": "He thumbed through the magazine absentmindedly.", "zh": "他漫不经心地翻着杂志。"}, {"gloss": "搭便车（口语动词）", "logic": "拇指的动作→竖起拇指拦车", "en": "They thumbed a ride to the next town.", "zh": "他们搭便车到了下一个镇。"}], "derivatives": [{"w": "thumbnail", "gloss": "拇指甲；缩略图"}, {"w": "thumbs-up", "gloss": "竖起拇指（赞同）"}, {"w": "thumbs-down", "gloss": "拇指向下（反对）"}, {"w": "thumbprint", "gloss": "拇指指纹"}]}, {"word": "limb", "hl": "mb", "levels": ["托福"], "ipa": "/lɪm/", "subgroup": "mb", "meaning": "n. 肢体（手臂或腿）；树的主枝；（比喻）延伸部分", "etymology": "古英语 lim「肢体、树枝」，日耳曼同根。词尾 b 在历史上逐渐静音化。「树肢」和「人肢」共用一词，反映古人对身体与自然的类比。", "roots": [{"part": "limb（lim）", "meaning": "肢体、树枝"}], "phonetics": "l + i /ɪ/ + mb → b 静音，实发 /lɪm/。与 him、dim 押韵（词尾都是 /ɪm/）。", "tip": "out on a limb（爬到细树枝上）= 孤立无援地冒险——高频比喻表达。", "examples": [{"en": "The injury left him unable to use his lower limbs for months.", "zh": "这次受伤使他数月内无法使用下肢。", "source": "造句"}, {"en": "go out on a limb", "zh": "「孤注一掷，冒险支持」——比喻爬到不稳的树枝上，形容做出没有后盾的冒险举动。", "source": "高频搭配"}], "synonyms": [{"w": "appendage", "ipa": "/əˈpendɪdʒ/", "note": "「附属肢体」，比 limb 更技术化，常用于生物学；a crustacean's appendages（甲壳类的附肢）", "gloss": "附属肢体"}, {"w": "extremity", "ipa": "/ɪkˈstremɪti/", "note": "「四肢末端」，正式医学词，特指手脚等末端；cold extremities（手脚冰凉）", "gloss": "四肢末端"}], "antonyms": [{"w": "torso", "note": "躯干（与肢体相对）", "gloss": "与肢体相对"}], "nuance": "limb 是日常通用词（指手臂、腿或树枝），appendage 是生物学广义附属结构，extremity 专指四肢末端（手、脚），三者语域和精确度递增。", "core": "从身体主干伸出去的一根——可以是手臂、可以是腿，也可以是大树上分出的一枝。从中心往外延伸的部分。", "senses": [{"gloss": "肢体（手臂或腿）", "logic": "从身体伸出→人的四肢", "en": "He lost the use of his lower limbs in the accident.", "zh": "他在事故中失去了下肢的功能。"}, {"gloss": "树的主枝", "logic": "从主干伸出→树木从树干分出的大枝", "en": "The storm tore a large limb from the oak tree.", "zh": "暴风雨从橡树上折断了一根大枝。"}, {"gloss": "延伸部分（比喻）", "logic": "从中心伸出→某系统/组织的外围分支", "en": "The charity is a limb of the larger foundation.", "zh": "这个慈善机构是那家大型基金会的一个分支。"}], "derivatives": [{"w": "limbless", "gloss": "无肢的"}, {"w": "limbo", "gloss": "不确定状态；林波舞（同源词：边缘地带）"}]}, {"word": "succumb", "hl": "mb", "levels": ["托福"], "ipa": "/səˈkʌm/", "subgroup": "mb", "meaning": "v. 屈服，屈从（to）；因……死亡（to disease/illness）", "etymology": "拉丁语 succumbere = sub-(在下) + cumbere(躺下) = 「倒下去」→ 屈服，不支而死。与 incumbent（在职的，压在……上的）、encumber（阻碍）同根。", "roots": [{"part": "suc- (sub-)", "meaning": "在下，往下"}, {"part": "-cumb (cumbere)", "meaning": "躺下"}], "phonetics": "suc-CUMB，重音在第二音节 CUMB；词尾 -mb → b 静音，实发 /kʌm/。", "tip": "succumb to temptation（屈服于诱惑）和 succumb to illness（不治而亡）是两个最常考的搭配——前者意志软化，后者生命消逝。", "examples": [{"en": "Many species have succumbed to habitat loss and climate change.", "zh": "许多物种已因栖息地丧失和气候变化而灭绝。", "source": "造句"}, {"en": "succumb to temptation / succumb to pressure", "zh": "「屈服于诱惑 / 屈服于压力」——抽象义高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "yield", "ipa": "/jiːld/", "note": "「屈服」，比 succumb 更中性，不一定是负面；yield to persuasion（被说服）", "gloss": "屈服"}, {"w": "surrender", "ipa": "/səˈrendər/", "note": "「投降、放弃」，比 succumb 更主动，含有主动放弃抵抗之意", "gloss": "投降、放弃"}, {"w": "capitulate", "ipa": "/kəˈpɪtʃuleɪt/", "note": "「屈服，停止抵抗」，正式词，多用于政治或军事；capitulate to demands（向要求妥协）", "gloss": "屈服，停止抵抗"}], "antonyms": [{"w": "resist", "note": "抵抗", "gloss": "抵抗"}, {"w": "withstand", "note": "经受住，顶住", "gloss": "经受住"}], "nuance": "succumb 暗含「被压垮」的被动感（尤其是疾病或强大诱惑），surrender 有「主动放弃」的意味，capitulate 专用于正式谈判或政治场合的让步。", "core": "站不住了，身体往下倒——被什么东西压倒了，不再抵抗。可以是被疾病夺走生命，也可以是被诱惑瓦解意志。", "senses": [{"gloss": "屈服，屈从（to）", "logic": "倒下→意志被压垮，不再抵抗诱惑/压力", "en": "She finally succumbed to temptation and ate the cake.", "zh": "她最终屈服于诱惑，吃掉了那块蛋糕。"}, {"gloss": "因……死亡（to disease/illness）", "logic": "倒下→身体被疾病打倒，生命终结", "en": "He succumbed to his injuries after three days.", "zh": "他在受伤三天后不治身亡。"}], "derivatives": [{"w": "succumbent", "gloss": "屈服的，被压倒的"}]}, {"word": "autumn", "hl": "mn", "levels": ["六级"], "ipa": "/ˈɔːtəm/", "subgroup": "mn", "meaning": "n. 秋天，秋季（英式）；（比喻）晚年，衰退期", "etymology": "拉丁语 autumnus，可能源自伊特鲁里亚语。词尾 -mn 中 n 静音——autumnal（秋天的）加后缀后 n 复活：/ɔːˈtʌmnəl/，这正好验证了 n 潜伏在拼写中。", "roots": [{"part": "autumn（autumnus）", "meaning": "秋天（拉丁语直接借入）"}], "phonetics": "AU-tumn，词尾 -mn → n 静音，实发 /ˈɔːtəm/。加 -al 后缀时：au-TUM-nal，n 复活 /ɔːˈtʌmnəl/。", "tip": "加后缀检验哑音法：autumnal 中 n 复活，证明 n 潜伏在 autumn 的拼写里。同理：solemn→solemn-ity（n 复活），column→column-ist（n 复活）。", "examples": [{"en": "The campus is most beautiful in autumn when the leaves turn red and gold.", "zh": "校园在秋天最美，树叶变为红色和金色。", "source": "造句"}, {"en": "the autumn of one's life", "zh": "「人生的秋天」——比喻晚年或事物的衰退期，文学常见意象。", "source": "高频搭配"}], "synonyms": [{"w": "fall", "ipa": "/fɔːl/", "note": "「秋天」的美式英语说法，与 autumn 语义完全相同，英式用 autumn，美式用 fall", "gloss": "秋天"}, {"w": "harvest season", "ipa": "/ˈhɑːrvɪst ˈsiːzn/", "note": "「收获季节」，功能近义，强调农业丰收属性", "gloss": "收获季节"}], "antonyms": [{"w": "spring", "note": "春天", "gloss": "春天"}, {"w": "youth", "note": "青春（比喻义相对）", "gloss": "比喻义相对"}], "nuance": "autumn（英式）= fall（美式），两者语义无差，仅地区差异。比喻义「人生的秋天」多指壮年之后、暮年之前的成熟阶段，未必是负面。", "core": "天开始变凉、叶子变红变黄——果实熟了可以摘了，但你也知道冬天要来了。成熟与衰减同时存在的季节。", "senses": [{"gloss": "秋天，秋季（英式）", "logic": "本义——夏季之后、冬季之前的季节", "en": "The campus is most beautiful in autumn.", "zh": "校园在秋天最美。"}, {"gloss": "晚年，衰退期（比喻）", "logic": "秋天=成熟后走向衰减→人生或事物的衰退阶段", "en": "He found peace in the autumn of his life.", "zh": "他在人生的秋天找到了平静。"}], "derivatives": [{"w": "autumnal", "gloss": "秋天的，秋季的（注意n复活读/mn/）"}]}, {"word": "column", "hl": "mn", "levels": ["托福"], "ipa": "/ˈkɑːləm/", "subgroup": "mn", "meaning": "n. 圆柱，支柱；纵队，一列；（报刊）专栏；（表格）列", "etymology": "拉丁语 columna「柱子」，与 culminate（达到顶点，来自 culmen「顶端」）同根。从建筑的竖直柱子引申为排版的竖直文字列，再到报刊固定「专栏」。", "roots": [{"part": "column（columna）", "meaning": "柱子，竖立物"}], "phonetics": "COL-umn，词尾 -mn → n 静音，实发 /ˈkɑːləm/。加后缀时 n 复活：columnist /ˈkɑːləmnɪst/。", "examples": [{"en": "The report's data was arranged in three columns for easy comparison.", "zh": "报告的数据被排成三列，便于比较。", "source": "造句"}, {"en": "a weekly column / a fifth column", "zh": "「每周专栏 / 第五纵队（内部奸细）」——后者是固定历史表达，源自西班牙内战。", "source": "高频搭配"}], "synonyms": [{"w": "pillar", "ipa": "/ˈpɪlər/", "note": "「柱子」义的近义，比 column 更口语，也常用于比喻（a pillar of the community 社会栋梁）", "gloss": "柱子"}, {"w": "section", "ipa": "/ˈsekʃn/", "note": "「专栏/版块」义的近义，比 column 更泛，不一定是竖排的固定版块", "gloss": "专栏/版块"}], "antonyms": [{"w": "row", "note": "行（横向，与列相对）", "gloss": "横向，与列相对"}], "nuance": "column 在表格中指竖排「列」，row 指横排「行」——这是数据分析和 Excel 中必须区分的一对词。建筑义的 column（圆柱）比 pillar（方柱或比喻柱）更强调圆形截面的经典样式。", "core": "一根竖着的东西——石柱撑起屋顶、文字竖着排成一列、报纸上一个固定的竖版块。都是从「竖直支撑物」这个原始画面长出来的。", "senses": [{"gloss": "圆柱，支柱", "logic": "竖直的东西→建筑中的圆形支柱", "en": "The temple is supported by massive stone columns.", "zh": "这座神殿由巨大的石柱支撑。"}, {"gloss": "纵队，一列（人或物）", "logic": "竖直→排成竖行的队列", "en": "A column of soldiers marched through the town.", "zh": "一列士兵穿过小镇。"}, {"gloss": "（报刊）专栏", "logic": "竖直→报纸上竖排的固定版块", "en": "She writes a weekly column for the local paper.", "zh": "她为当地报纸撰写每周专栏。"}, {"gloss": "（表格）列", "logic": "竖直→表格中纵向排列的数据", "en": "Enter the figures in the left-hand column.", "zh": "把数字填入左边那一列。"}], "derivatives": [{"w": "columnist", "gloss": "专栏作家（注意n复活读/mn/）"}, {"w": "columnar", "gloss": "柱状的，圆柱形的"}]}, {"word": "hymn", "hl": "mn", "levels": ["六级"], "ipa": "/hɪm/", "subgroup": "mn", "meaning": "n. 赞美诗，圣歌；（比喻）对某事物的颂歌  v. 唱赞美诗赞颂", "etymology": "希腊语 hymnos「颂歌」，拉丁语 hymnus 借入。词尾 n 静音（与 autumn、column 同规律）——hymnal（赞美诗集）加后缀后 n 重现。", "roots": [{"part": "hymn（hymnos）", "meaning": "颂歌，赞美之歌"}], "phonetics": "h + y /ɪ/ + mn → n 静音，实发 /hɪm/；与 him、slim 押韵。hymnal /ˈhɪmnəl/（赞美诗集）中 n 复活。", "tip": "hymn 与 him 发音完全相同——又一对同音词，仅靠语境区分。", "examples": [{"en": "The choir sang a traditional hymn at the opening ceremony.", "zh": "合唱团在开幕式上演唱了一首传统赞美诗。", "source": "造句"}, {"en": "a hymn to freedom", "zh": "「自由颂」——比喻义，指对某种价值观的热情颂扬，文学和演讲高频用法。", "source": "高频搭配"}], "synonyms": [{"w": "anthem", "ipa": "/ˈænθəm/", "note": "「国歌；圣歌」，比 hymn 更世俗化，可指国歌或非宗教的颂歌；national anthem（国歌）", "gloss": "国歌；圣歌"}, {"w": "psalm", "ipa": "/sɑːm/", "note": "「诗篇，圣歌」，特指《圣经》诗篇，比 hymn 更宗教化，p 静音", "gloss": "诗篇，圣歌"}], "antonyms": [{"w": "dirge", "note": "挽歌，哀歌", "gloss": "挽歌"}], "nuance": "hymn 是宗教赞美诗的通用词，psalm 专指《圣经》中的诗篇，anthem 已扩展到世俗场合（国歌、运动队队歌、某时代的标志性歌曲）。", "core": "一首向着高处唱的歌——声音往上走，赞美你相信的东西。宗教圣歌也好，对自由的颂扬也好，都是人把心声往天上送。", "senses": [{"gloss": "赞美诗，圣歌（名词）", "logic": "向高处唱→宗教场合中唱给神的歌", "en": "The congregation stood to sing a hymn.", "zh": "会众起立唱了一首赞美诗。"}, {"gloss": "颂歌，赞歌（比喻）", "logic": "向高处唱→对某事物充满热情的颂扬", "en": "The film is a hymn to the beauty of everyday life.", "zh": "这部电影是对日常生活之美的赞歌。"}, {"gloss": "唱赞美诗赞颂（动词）", "logic": "向高处唱→用圣歌赞美", "en": "They hymned their creator with joy.", "zh": "他们欢欣地唱诗赞美造物主。"}], "derivatives": [{"w": "hymnal", "gloss": "赞美诗集（注意n复活读/mn/）"}, {"w": "hymnody", "gloss": "赞美诗创作；赞美诗总称"}]}, {"word": "solemn", "hl": "mn", "levels": ["托福"], "ipa": "/ˈsɑːləm/", "subgroup": "mn", "meaning": "adj. 庄严的，严肃的；隆重的；（誓言）郑重的", "etymology": "拉丁语 sollemnis = sollus(整个的、全体的) + annus(年) = 「每年全体举行的（仪式）」→ 隆重的，庄严的。词尾 -mn → n 静音；solemnity（庄严）加后缀后 n 复活。", "roots": [{"part": "sol- (sollus)", "meaning": "整体、全部"}, {"part": "-emn (annus)", "meaning": "年，年度仪式"}], "phonetics": "SOL-emn，词尾 -mn → n 静音，实发 /ˈsɑːləm/；solemnity /səˈlemnɪti/ 中 n 复活。", "examples": [{"en": "He made a solemn promise never to betray his friends.", "zh": "他郑重承诺绝不背叛自己的朋友。", "source": "造句"}, {"en": "a solemn ceremony / a solemn vow", "zh": "「庄严的仪式 / 郑重的誓言」——高频搭配，多见于正式或宗教语境。", "source": "高频搭配"}], "synonyms": [{"w": "grave", "ipa": "/ɡreɪv/", "note": "「严肃的」，比 solemn 更强调问题的严重性，常含严峻含义；a grave mistake（严重错误）", "gloss": "严肃的"}, {"w": "earnest", "ipa": "/ˈɜːrnɪst/", "note": "「认真的、诚挚的」，比 solemn 更强调内心的真诚，少庄严感；in earnest（认真地）", "gloss": "认真的、诚挚的"}, {"w": "ceremonious", "ipa": "/ˌserɪˈmoʊniəs/", "note": "「仪式性的」，专指形式上的隆重，有时含过于繁文缛节之意，比 solemn 更强调外在形式", "gloss": "仪式性的"}], "antonyms": [{"w": "frivolous", "note": "轻浮的，不严肃的", "gloss": "轻浮的"}, {"w": "jovial", "note": "欢乐的，开朗的", "gloss": "欢乐的"}], "nuance": "solemn 侧重氛围上的庄严肃穆（宗教仪式、正式承诺），grave 更强调情况或表情的严峻（grave news），earnest 最侧重内心的真诚认真（no frivolity）。", "core": "走进一个所有人都压低声音的场合——空气很重，你不能笑，你知道这是认真的。每年一次的大仪式留下来的庄重感。", "senses": [{"gloss": "庄严的，严肃的", "logic": "压低声音→气氛庄重，不容轻浮", "en": "The judge spoke in a solemn tone.", "zh": "法官以庄严的语气说话。"}, {"gloss": "隆重的（仪式）", "logic": "压低声音→正式而盛大的场合", "en": "A solemn ceremony was held to mark the anniversary.", "zh": "举行了隆重的仪式来纪念周年。"}, {"gloss": "（誓言）郑重的", "logic": "压低声音→承诺时极其认真，不可反悔", "en": "He made a solemn promise to protect her.", "zh": "他郑重承诺会保护她。"}], "derivatives": [{"w": "solemnity", "gloss": "庄严，肃穆（注意n复活读/mn/）"}, {"w": "solemnly", "gloss": "庄严地，郑重地"}, {"w": "solemnize", "gloss": "举行（仪式），使庄严"}]}, {"word": "condemn", "hl": "mn", "levels": ["托福"], "ipa": "/kənˈdem/", "subgroup": "mn", "meaning": "v. 谴责，指责；判决（有罪）；宣告（建筑物等）不宜使用；使注定（陷入某种困境）", "etymology": "拉丁语 condemnare = com-(完全) + damnare(判处、定罪) = 「全面定罪」。damnare 来自 damnum（损失、罚款）。与 damn（诅咒）、damage（损害）同根。词尾 -mn → n 静音；condemnation（谴责）加后缀 n 复活。", "roots": [{"part": "con- (com-)", "meaning": "完全，加强"}, {"part": "-demn (damnare)", "meaning": "判处、定罪"}], "phonetics": "con-DEMN，重音在后，词尾 -mn → n 静音，实发 /kənˈdem/；condemnation /ˌkɑːndemˈneɪʃn/ 中 n 复活。", "examples": [{"en": "The international community condemned the attack as a violation of human rights.", "zh": "国际社会谴责这次袭击侵犯了人权。", "source": "造句"}, {"en": "condemned to a life of poverty / a condemned building", "zh": "「注定一辈子贫困 / 被判定不宜居住的楼」——两个高频搭配，一抽象一具体。", "source": "高频搭配"}], "synonyms": [{"w": "denounce", "ipa": "/dɪˈnaʊns/", "note": "「公开谴责」，比 condemn 更强调公开指责或告发；denounce a policy（公开批评一项政策）", "gloss": "公开谴责"}, {"w": "censure", "ipa": "/ˈsenʃər/", "note": "「正式谴责」，书面和政治语境，强调官方或正式机构的批评；censure a senator（对参议员提出谴责动议）", "gloss": "正式谴责"}, {"w": "criticize", "ipa": "/ˈkrɪtɪsaɪz/", "note": "「批评」，最口语化，程度最轻，不含定罪意味", "gloss": "批评"}], "antonyms": [{"w": "commend", "note": "表扬，称赞", "gloss": "表扬"}, {"w": "acquit", "note": "宣判无罪", "gloss": "宣判无罪"}], "nuance": "condemn 语气最强，有「定罪、判决」的终结感（condemn to death）；denounce 强调公开揭发批判；censure 是正式机构的官方谴责；criticize 最轻，仅指普通批评。", "core": "一锤定音——「你有罪」。没有商量余地，宣判完毕。全面彻底地否定，不留退路。", "senses": [{"gloss": "谴责，指责", "logic": "宣判有罪→从道德/舆论上严厉批评", "en": "World leaders condemned the attack in the strongest terms.", "zh": "世界各国领导人以最强烈的措辞谴责了这次袭击。"}, {"gloss": "判决（有罪）", "logic": "宣判有罪→法律上正式定罪", "en": "He was condemned to life in prison.", "zh": "他被判处终身监禁。"}, {"gloss": "宣告（建筑物等）不宜使用", "logic": "宣判有罪→官方判定为不安全，等于判了死刑", "en": "The old factory was condemned as a safety hazard.", "zh": "这座旧工厂因安全隐患被宣告不宜使用。"}, {"gloss": "使注定（陷入困境）", "logic": "宣判有罪→命运被锁定，无法逃脱某种悲惨结局", "en": "Without education, many are condemned to a life of poverty.", "zh": "没有教育，许多人注定一辈子贫困。"}], "derivatives": [{"w": "condemnation", "gloss": "谴责，定罪（注意n复活读/mn/）"}, {"w": "condemned", "gloss": "已被定罪的；已被宣告不宜使用的"}, {"w": "damn", "gloss": "诅咒，该死（同根：damnare定罪）"}]}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

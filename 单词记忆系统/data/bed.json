@@ -1,0 +1,1331 @@
+{
+  "id": "bed",
+  "combo": "e·ea",
+  "title": "/e/ 短音家族",
+  "sound": "/e/",
+  "subtitle": "最熟悉的元音，最危险的陷阱——ea 这里不读 /iː/",
+  "intro": "/e/ 是英语最基础的短元音，嘴半开、舌前抬，发一个干脆的「诶」。最放心的是字母 e 直接读 /e/（bed、red、pen），几乎没有例外。真正的陷阱是 ea：这个组合通常读 /iː/（sea、teach、reach），但有一批高频词在 ea 读 /e/——head、bread、health、weather……每一个都是托福高频词，每一个都会被 /iː/ 的惯性带偏。此外还有两个小特例组：a 在 any/many 读 /e/，ai 在 said/again 读 /e/。把这三条路摸清，/e/ 家族的陷阱再踩不进去。",
+  "subgroups": [
+    {
+      "key": "e",
+      "tag": "e",
+      "label": "✅ e = /e/",
+      "desc": "最常见：bed/red/pen/help/spend，见到 e 在闭音节直接读短「诶」，几乎零例外。"
+    },
+    {
+      "key": "ea",
+      "tag": "ea",
+      "label": "⚠️ ea = /e/（陷阱）",
+      "desc": "ea 通常读 /iː/（sea、teach），这批例外读 /e/：head/bread/health/weather/measure……全是高频词，必须逐个记忆。"
+    },
+    {
+      "key": "other",
+      "tag": "a·ai 特例",
+      "label": "其它 = /e/",
+      "desc": "any/many（a 读 /e/）、said/friend（ai/ie 读 /e/）——拼写完全骗人，靠高频曝光硬记。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ed (/ed/)",
+      "words": ["bed", "red", "dead", "head", "spread", "instead", "bread"]
+    },
+    {
+      "label": "-en / -end (/en/ /end/)",
+      "words": ["pen", "ten", "send", "spend", "friend"]
+    },
+    {
+      "label": "-elth / -ealth (/elθ/)",
+      "words": ["health", "wealth", "stealth"]
+    },
+    {
+      "label": "-eather / -easure (/eðər/ /eʒər/)",
+      "words": ["weather", "measure", "treasure", "feather", "leather"]
+    }
+  ],
+  "words": [
+    {
+      "word": "bed",
+      "hl": "e",
+      "levels": ["非托福"],
+      "ipa": "/bed/",
+      "subgroup": "e",
+      "meaning": "n. 床；（河、湖的）底部；苗圃  v. 安置入睡",
+      "etymology": "古英语 bedd，日耳曼同根，与德语 Bett 同源。核心义「躺下的地方」，引申出「河床、苗床」——都是「承载物的底部」。",
+      "roots": [
+        {"part": "bed（bedd）", "meaning": "床、躺卧处"}
+      ],
+      "phonetics": "b + e /e/ + d，/e/ 音位最短最干净的锚定词，学音位从这里开始。三音全部清晰，无弱化。",
+      "tip": "床是整个 /e/ 音位页的名称来源——bed 就是这个音的「形象大使」。",
+      "examples": [
+        {
+          "en": "He went to bed early but couldn't fall asleep.",
+          "zh": "他早早上床，却怎么也睡不着。",
+          "source": "造句"
+        },
+        {
+          "en": "go to bed / make the bed",
+          "zh": "「上床睡觉 / 整理床铺」——日常最高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "一个承托身体、让人得以「沉下去」休息的平面底部。",
+      "senses": [
+        {
+          "gloss": "n. 床，睡觉的地方",
+          "logic": "最原始义：一个让人躺下、沉入休息的水平面。",
+          "en": "She collapsed into bed the moment she got home.",
+          "zh": "她一到家就倒在床上。"
+        },
+        {
+          "gloss": "n. 河床、湖底、海床（承载水的底部）",
+          "logic": "同样的「底部承托」感：河流沉在其中的那层底面，与「床」共享「托住物体的最低平面」意象。",
+          "en": "The river bed was dry after months of drought.",
+          "zh": "数月干旱后河床已经裸露。"
+        },
+        {
+          "gloss": "n. 苗床、花坛（植物种植的土层基底）",
+          "logic": "植物被「安置」在其中生长的底层土面，与「床」的「承托、安放」感一致。",
+          "en": "She knelt by the flower bed and pulled out the weeds.",
+          "zh": "她跪在花坛边拔草。"
+        },
+        {
+          "gloss": "v. 安置入睡；嵌入固定（将某物置入底层）",
+          "logic": "将某物「放进底部固定」，无论是哄孩子入睡还是将管道埋入地基，动作逻辑相同。",
+          "en": "The pipes are bedded in concrete to prevent shifting.",
+          "zh": "管道被浇筑在混凝土中以防移位。"
+        }
+      ],
+      "derivatives": [
+        {"w": "bedroom", "gloss": "卧室"},
+        {"w": "bedding", "gloss": "床上用品；垫料"},
+        {"w": "embed", "gloss": "嵌入、埋入（em- 进入 + bed 底层）"},
+        {"w": "bedrock", "gloss": "基岩；（比喻）根基"}
+      ],
+      "synonyms": [
+        {"w": "bunk", "ipa": "/bʌŋk/", "note": "上下铺的床，多见于宿舍或船舱；bunk bed（双层床）", "gloss": "上下铺床铺"},
+        {"w": "cot", "ipa": "/kɒt/", "note": "折叠便携小床（美式指婴儿床），比 bed 更临时", "gloss": "临时小床；婴儿床"},
+        {"w": "berth", "ipa": "/bɜːrθ/", "note": "船舱或火车上的卧铺，语境特定", "gloss": "交通工具上的卧铺"}
+      ],
+      "antonyms": [],
+      "nuance": "bed 是通用词。go to bed 是「就寝」的固定表达，不可替换；「bed of a river」指「河床」，此时无近义词。"
+    },
+    {
+      "word": "red",
+      "hl": "e",
+      "levels": ["非托福"],
+      "ipa": "/red/",
+      "subgroup": "e",
+      "meaning": "adj. 红色的；（因惭愧/愤怒）涨红的  n. 红色；赤字",
+      "etymology": "古英语 rēad，日耳曼同根，与德语 rot 同源。「in the red」（赤字）源自账本用红墨水记亏损。",
+      "roots": [
+        {"part": "red（rēad）", "meaning": "红色"}
+      ],
+      "phonetics": "r + e /e/ + d，与 bed、dead、head 押韵，构成 -ed 韵脚族。",
+      "tip": "「in the red」赤字；「in the black」盈利——财务英语必知对比。",
+      "examples": [
+        {
+          "en": "Her face went red with embarrassment.",
+          "zh": "她尴尬得脸色通红。",
+          "source": "造句"
+        },
+        {
+          "en": "in the red",
+          "zh": "「处于亏损/赤字状态」——财务和商业的高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "血与火的颜色——强烈、显眼、唤起警觉或激情的视觉信号。",
+      "senses": [
+        {
+          "gloss": "adj. 红色的（颜色描述）",
+          "logic": "基础义：视觉上呈现血、火、玫瑰的那种颜色。",
+          "en": "She wore a red dress to the opening night.",
+          "zh": "她穿着一件红裙子出席了首映夜。"
+        },
+        {
+          "gloss": "adj. 涨红的（面部因情绪充血）",
+          "logic": "情绪激动时血液涌向脸部，与红色的「血」之本义直接相连。",
+          "en": "His face turned red with anger when he heard the news.",
+          "zh": "听到消息时他的脸气得通红。"
+        },
+        {
+          "gloss": "n. 赤字、亏损（「in the red」）",
+          "logic": "历史偶合：旧式账簿用红墨水标注亏损数字，与颜色本义无语义引申关系，属文化习惯。",
+          "en": "The company has been in the red for three consecutive quarters.",
+          "zh": "公司已连续三个季度处于亏损状态。"
+        }
+      ],
+      "derivatives": [
+        {"w": "reddish", "gloss": "略带红色的"},
+        {"w": "redden", "gloss": "变红；使变红"},
+        {"w": "redness", "gloss": "红肿；发红"}
+      ],
+      "synonyms": [
+        {"w": "crimson", "ipa": "/ˈkrɪmzn/", "note": "深红色，带紫调，比 red 更浓郁，多用于文学描写", "gloss": "深红色、绛红色"},
+        {"w": "scarlet", "ipa": "/ˈskɑːrlɪt/", "note": "鲜红色，比 red 更鲜艳亮丽，也有道德污点含义（scarlet letter）", "gloss": "鲜红色、猩红色"},
+        {"w": "ruby", "ipa": "/ˈruːbi/", "note": "宝石红，形容词时强调红色的珍贵或纯正", "gloss": "宝石红色"}
+      ],
+      "antonyms": [],
+      "nuance": "red 是通用基础词；crimson 偏深暗，scarlet 偏鲜艳，ruby 偏珍贵。固定习语（red flag、red tape）中只能用 red，无法替换。"
+    },
+    {
+      "word": "pen",
+      "hl": "e",
+      "levels": ["非托福"],
+      "ipa": "/pen/",
+      "subgroup": "e",
+      "meaning": "n. 钢笔，圆珠笔；（动物）围栏  v. 写作；关进围栏",
+      "etymology": "拉丁语 penna「羽毛」——古代用羽毛管蘸墨水书写，后演变为书写工具。「the pen is mightier than the sword」中的 pen 即「文字/笔杆」。",
+      "roots": [
+        {"part": "pen（penna）", "meaning": "羽毛→笔"}
+      ],
+      "phonetics": "p + e /e/ + n，与 ten、hen、when 押韵。鼻音 /n/ 收尾要完整。",
+      "examples": [
+        {
+          "en": "She picked up her pen and began to write.",
+          "zh": "她拿起笔开始写作。",
+          "source": "造句"
+        },
+        {
+          "en": "the pen is mightier than the sword",
+          "zh": "「文字比武力更有力量」——经典谚语，文章/写作语境必知。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "一个划定痕迹或边界的工具——无论是在纸上留字，还是圈住动物。",
+      "senses": [
+        {
+          "gloss": "n. 笔（书写工具）",
+          "logic": "核心义：在纸面上「划出痕迹」的工具，源自羽毛笔时代。",
+          "en": "He signed the contract with a fountain pen.",
+          "zh": "他用钢笔签署了合同。"
+        },
+        {
+          "gloss": "n. 围栏（关动物的圈地）",
+          "logic": "「划定边界、圈住空间」的意象——与笔「划线」共享「划定界限」的感觉，但两义在历史上来源不同（围栏 pen 源于古英语 penn，与笔的 pen 同形偶合，非同一词根，需如实标注）。",
+          "en": "The sheep were herded into the pen before nightfall.",
+          "zh": "羊群在天黑前被赶进了围栏。"
+        },
+        {
+          "gloss": "v. 写作、执笔（书面语）",
+          "logic": "从「笔」引申为「用笔写」的动作，文学语境中使用。",
+          "en": "She penned a heartfelt letter to her mentor.",
+          "zh": "她给导师写了一封情真意切的信。"
+        },
+        {
+          "gloss": "v. 关进围栏；困住",
+          "logic": "从「围栏（pen）」引申为「把……圈进去」的动作。",
+          "en": "The protesters were penned in by police barriers.",
+          "zh": "抗议者被警察护栏围困在内。"
+        }
+      ],
+      "derivatives": [
+        {"w": "penmanship", "gloss": "书法；笔迹"},
+        {"w": "pencil", "gloss": "铅笔（同源于拉丁 penicillus「小刷子」）"},
+        {"w": "penal", "gloss": "刑罚的（词源不同，勿混淆）"}
+      ],
+      "synonyms": [
+        {"w": "ballpoint", "ipa": "/ˈbɔːlpɔɪnt/", "note": "圆珠笔，pen 的具体细分", "gloss": "圆珠笔"},
+        {"w": "stylus", "ipa": "/ˈstaɪləs/", "note": "触控笔/古代刻写工具，比 pen 更古雅或更数字化", "gloss": "触控笔；刻写工具"},
+        {"w": "quill", "ipa": "/kwɪl/", "note": "羽毛笔，pen 的历史前身，多见于历史或文学语境", "gloss": "羽毛笔"}
+      ],
+      "antonyms": [],
+      "nuance": "pen 泛指写字笔，pencil 是铅笔（可擦），stylus 是数字触控笔。「pen a letter」作动词时是书面语「写一封信」，比 write 更文雅。"
+    },
+    {
+      "word": "ten",
+      "hl": "e",
+      "levels": ["托福"],
+      "ipa": "/ten/",
+      "subgroup": "e",
+      "meaning": "num. 十  n. 十（分）；十岁",
+      "etymology": "古英语 tīen，原始日耳曼语同根，与德语 zehn、拉丁语 decem（十）同源。decem 是许多词的词根：decade（十年）、December（原为第十个月）、decimal（十进制）。",
+      "roots": [
+        {"part": "ten（tīen / decem）", "meaning": "十"}
+      ],
+      "phonetics": "t + e /e/ + n，与 pen、hen、then 押韵。",
+      "tip": "十进制前缀：deci-（1/10）、deca-（10×）——都和 ten 同源。",
+      "examples": [
+        {
+          "en": "The meeting is scheduled for ten o'clock.",
+          "zh": "会议定在十点钟。",
+          "source": "造句"
+        },
+        {
+          "en": "a ten-year plan",
+          "zh": "「十年计划」——高频组合，与 decade（十年）互换。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "人类最自然的计数单位——十根手指对应的那个整数基准点。",
+      "senses": [
+        {
+          "gloss": "num./n. 数字十",
+          "logic": "本义即十进制的基本单位，源于人类十指计数。",
+          "en": "The jury consists of ten members.",
+          "zh": "陪审团由十名成员组成。"
+        }
+      ],
+      "derivatives": [
+        {"w": "tenth", "gloss": "第十；十分之一"},
+        {"w": "decade", "gloss": "十年"},
+        {"w": "decimal", "gloss": "十进制的；小数"}
+      ],
+      "synonyms": [
+        {"w": "decade", "ipa": "/ˈdekeɪd/", "note": "十年，ten years 的正式书面表达", "gloss": "十年"}
+      ],
+      "antonyms": [],
+      "nuance": "ten 本身无近义词，但在词根层面与 decimal、decade、December、dime 同源，掌握 ten 等于同时理解一串词。"
+    },
+    {
+      "word": "help",
+      "hl": "e",
+      "levels": ["托福"],
+      "ipa": "/help/",
+      "subgroup": "e",
+      "meaning": "v. 帮助；有益于；忍不住（can't help）  n. 帮助；有帮助的人/事",
+      "etymology": "古英语 helpan，日耳曼同根，与德语 helfen 同源。「can't help doing」（忍不住做）是英语特有引申，源自「无力阻止」。",
+      "roots": [
+        {"part": "help（helpan）", "meaning": "帮助"}
+      ],
+      "phonetics": "h + e /e/ + lp，注意辅音群 -lp 在词尾，l 轻微暗化。",
+      "examples": [
+        {
+          "en": "Could you help me carry these boxes upstairs?",
+          "zh": "你能帮我把这些箱子搬到楼上吗？",
+          "source": "造句"
+        },
+        {
+          "en": "can't help doing",
+          "zh": "「忍不住……」——高频口语句型，如 I can't help laughing（我忍不住笑了）。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "把力量给出去、减轻他人负担的那个动作——既可以主动给予，也可以被动地「挡不住」。",
+      "senses": [
+        {
+          "gloss": "v. 帮助、协助某人",
+          "logic": "核心义：将自己的力量、资源或技能输送给需要的人，减轻其负担。",
+          "en": "She helped her younger sister with the math homework.",
+          "zh": "她帮妹妹辅导数学作业。"
+        },
+        {
+          "gloss": "v. 有益于、有助于（事情）",
+          "logic": "「帮助」的对象从人扩展到抽象的事物或过程，使之更顺利推进。",
+          "en": "Regular sleep helps your memory consolidation.",
+          "zh": "规律睡眠有助于记忆巩固。"
+        },
+        {
+          "gloss": "v. 忍不住（can't help doing）",
+          "logic": "「无法阻止」的引申义——自己的力量挡不住某个冲动，与「帮助」的力量感反向运用。",
+          "en": "I can't help thinking there's something he isn't telling us.",
+          "zh": "我忍不住觉得他有什么事瞒着我们。"
+        },
+        {
+          "gloss": "n. 帮助；有帮助的人或事物",
+          "logic": "动作名词化，指「帮助」这一行为本身或提供帮助的人/工具。",
+          "en": "The manual is no help at all — it's written in jargon.",
+          "zh": "那本手册毫无帮助——全是行话。"
+        }
+      ],
+      "derivatives": [
+        {"w": "helpful", "gloss": "有帮助的、有益的"},
+        {"w": "helpless", "gloss": "无助的、束手无策的"},
+        {"w": "helper", "gloss": "帮手、助手"}
+      ],
+      "synonyms": [
+        {"w": "assist", "ipa": "/əˈsɪst/", "note": "正式版「协助」，比 help 更书面，多用于专业语境；assist in research（协助研究）", "gloss": "协助、辅助"},
+        {"w": "aid", "ipa": "/eɪd/", "note": "「援助」，比 help 更正式，多用于大规模的支援；humanitarian aid（人道主义援助）", "gloss": "援助、救助"},
+        {"w": "support", "ipa": "/səˈpɔːrt/", "note": "「支持」，比 help 更持续、更结构化；support a cause（支持一项事业）", "gloss": "支持、支撑"}
+      ],
+      "antonyms": [
+        {"w": "hinder", "note": "阻碍"},
+        {"w": "obstruct", "note": "妨碍、阻挠"}
+      ],
+      "nuance": "help 最口语通用；assist 暗含「从旁辅助」，地位略低于被帮助者；aid 多用于紧急或大规模援助；support 强调持续性的背后支撑而非一次性具体帮助。"
+    },
+    {
+      "word": "spend",
+      "hl": "e",
+      "levels": ["托福"],
+      "ipa": "/spend/",
+      "subgroup": "e",
+      "meaning": "v. 花费（金钱、时间）；度过（时光）",
+      "etymology": "拉丁语 expendere = ex-(出) + pendere(称重、支付)。「把资源称量后花出去」——与 expense（费用）、expenditure（支出）、pension（养老金，按期支付）同根。",
+      "roots": [
+        {"part": "ex-", "meaning": "向外"},
+        {"part": "-pend- (pendere)", "meaning": "称重、支付"}
+      ],
+      "phonetics": "sp- 连缀 + e /e/ + nd，注意 sp 要连读，-nd 收尾干脆。",
+      "examples": [
+        {
+          "en": "They spent three hours discussing the proposal.",
+          "zh": "他们花了三个小时讨论这份提案。",
+          "source": "造句"
+        },
+        {
+          "en": "spend time / money on",
+          "zh": "「在……上花时间/金钱」——最高频搭配结构。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "把有限的资源（金钱、时间、精力）从自己手中「称量后送出去」。",
+      "senses": [
+        {
+          "gloss": "v. 花费（金钱）",
+          "logic": "最直接义：把钱从自己账户「称量后支付出去」，与词根 pendere（称重/支付）直接对应。",
+          "en": "She spent over two thousand dollars on textbooks this semester.",
+          "zh": "这学期她在教材上花了两千多美元。"
+        },
+        {
+          "gloss": "v. 花费（时间）、度过（时光）",
+          "logic": "时间同样是有限资源，「把时间付出去」与花钱的逻辑完全平行。",
+          "en": "He spent his childhood in a small fishing village.",
+          "zh": "他在一个小渔村度过了童年。"
+        },
+        {
+          "gloss": "v. 耗尽、用完（精力或力量，常见于 spent 形容词用法）",
+          "logic": "资源全部「送出去」后，剩余归零——spent（形容词）意为「精疲力竭的」。",
+          "en": "By the end of the marathon, she was completely spent.",
+          "zh": "马拉松跑完，她已精疲力竭。"
+        }
+      ],
+      "derivatives": [
+        {"w": "expenditure", "gloss": "支出、花费（正式书面词）"},
+        {"w": "expense", "gloss": "费用、开销"},
+        {"w": "spendthrift", "gloss": "挥霍者、败家子"}
+      ],
+      "synonyms": [
+        {"w": "expend", "ipa": "/ɪkˈspend/", "note": "正式书面「耗费」，比 spend 更强调能量或精力的消耗；expend effort（花费精力）", "gloss": "耗费、消耗（书面语）"},
+        {"w": "invest", "ipa": "/ɪnˈvest/", "note": "「投资/投入」，比 spend 更强调预期回报；invest time in learning", "gloss": "投资、投入"},
+        {"w": "devote", "ipa": "/dɪˈvoʊt/", "note": "「投入（时间/精力）」，比 spend 更强调全情奉献；devote oneself to", "gloss": "投入、献身于"}
+      ],
+      "antonyms": [
+        {"w": "save", "note": "储蓄、节省"},
+        {"w": "conserve", "note": "节约、保存"}
+      ],
+      "nuance": "spend 是中性花费（时间或金钱）；invest 暗含「将有回报」；devote 带情感投入和奉献感；expend 更书面，多用于资源消耗的正式描述。"
+    },
+    {
+      "word": "guest",
+      "hl": "e",
+      "levels": ["非托福"],
+      "ipa": "/ɡest/",
+      "subgroup": "e",
+      "meaning": "n. 客人，宾客；特邀嘉宾  adj. 特邀的",
+      "etymology": "古诺尔斯语 gestr，日耳曼同根，与德语 Gast 同源。u 是拼写历史遗留，不发音。注意 guest 和 host（主人）互为语义对立，两词都源自同一个原始印欧词根 ghostis（陌生人/客人）。",
+      "roots": [
+        {"part": "guest（gestr）", "meaning": "客人"}
+      ],
+      "phonetics": "g + ue（不发音）+ s + t，u 是拼写残留；实际发音 /ɡest/，e 读 /e/，是典型的历史拼写陷阱。",
+      "tip": "guest 里的 u 不发音——拼写里藏着一个「哑字母」，发音只有 /ɡest/。",
+      "examples": [
+        {
+          "en": "We have three guests coming for dinner tonight.",
+          "zh": "今晚有三位客人来吃饭。",
+          "source": "造句"
+        },
+        {
+          "en": "guest speaker / guest star",
+          "zh": "「特邀演讲者 / 特邀明星」——形容词义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "受到邀请和款待、进入他人领地的那个「外来者」。",
+      "senses": [
+        {
+          "gloss": "n. 客人、宾客（受邀到他人家中或场合的人）",
+          "logic": "核心义：从外部被引入、被主人接待的人，带有「受邀、被款待」的礼待关系。",
+          "en": "The hotel can accommodate up to two hundred guests.",
+          "zh": "酒店最多可接待两百位宾客。"
+        },
+        {
+          "gloss": "n./adj. 特邀嘉宾、特邀的（非常规成员的临时参与者）",
+          "logic": "「外来者」的感觉延伸：不属于固定班底、被特别邀请来参与的人或角色。",
+          "en": "She appeared as a guest judge on the cooking competition.",
+          "zh": "她以特邀评委身份出现在烹饪比赛中。"
+        }
+      ],
+      "derivatives": [
+        {"w": "guesthouse", "gloss": "旅馆；招待所"},
+        {"w": "guest room", "gloss": "客房"},
+        {"w": "ghostly", "gloss": "鬼魅般的（与 guest 同一原始词根 ghostis，历史演变）"}
+      ],
+      "synonyms": [
+        {"w": "visitor", "ipa": "/ˈvɪzɪtər/", "note": "「访客」，比 guest 更泛，不一定受邀；visitor to a museum（博物馆参观者）", "gloss": "访客、来访者"},
+        {"w": "invitee", "ipa": "/ɪnˌvaɪˈtiː/", "note": "「被邀请者」，正式书面词，比 guest 更强调「受邀」这一事实", "gloss": "受邀者"},
+        {"w": "patron", "ipa": "/ˈpeɪtrən/", "note": "「顾客/赞助人」，商业语境中 guest 和 patron 可互换，但 patron 更正式", "gloss": "顾客；赞助人"}
+      ],
+      "antonyms": [
+        {"w": "host", "note": "主人（接待方）"}
+      ],
+      "nuance": "guest 暗含「被邀请、被款待」的礼待关系（guest of honor 贵宾）；visitor 更中性，泛指来访者（不一定受邀）；patron 在餐厅/酒店语境中指付费顾客。host 与 guest 是语义天然对立的一对。"
+    },
+    {
+      "word": "lesson",
+      "hl": "e",
+      "levels": ["托福"],
+      "ipa": "/ˈlesn/",
+      "subgroup": "e",
+      "meaning": "n. 课；教训；经验教训",
+      "etymology": "拉丁语 lectio「阅读、朗读」= legere(读、选择) 的名词形式。「朗读→讲解→课程」——与 lecture（讲座）、select（选择）、collect（收集）同根，都含「拣取、阅读」义。",
+      "roots": [
+        {"part": "less- (legere)", "meaning": "读、选择"},
+        {"part": "-on", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在前 LES-son，e 读 /e/；-son 弱读 /sn/，不拆开读。",
+      "examples": [
+        {
+          "en": "The accident taught him an important lesson about safety.",
+          "zh": "这次事故给他上了一堂关于安全的重要课。",
+          "source": "造句"
+        },
+        {
+          "en": "learn a lesson / draw a lesson from",
+          "zh": "「吸取教训 / 从中汲取经验」——高频搭配结构。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "一次「被读入/被讲解」的经历——不管是老师讲的还是现实打的，都是让人学到东西的单元。",
+      "senses": [
+        {
+          "gloss": "n. 一堂课（有固定内容和时段的教学单元）",
+          "logic": "核心义：源自「朗读/讲授」，一段被专门组织起来传授知识的时间。",
+          "en": "She has piano lessons every Tuesday afternoon.",
+          "zh": "她每周二下午上钢琴课。"
+        },
+        {
+          "gloss": "n. 教训、经验教训（现实经历传递的警示）",
+          "logic": "「被现实讲授」的引申——痛苦或成功的经历同样是一种「读入」，让人学到了东西。",
+          "en": "Losing the contract was a costly lesson in communication.",
+          "zh": "失去合同是一次代价惨重的沟通教训。"
+        }
+      ],
+      "derivatives": [
+        {"w": "lecture", "gloss": "讲座；（大学）授课（同根 legere）"},
+        {"w": "lessen", "gloss": "减少、减轻（同音但词源不同，勿混淆）"}
+      ],
+      "synonyms": [
+        {"w": "class", "ipa": "/klɑːs/", "note": "「课、课堂」义最口语，比 lesson 更强调集体上课的场合；a maths class", "gloss": "课堂；班级"},
+        {"w": "lecture", "ipa": "/ˈlektʃər/", "note": "「讲座」，比 lesson 更正式，多指大学或公开演讲，单向传授", "gloss": "讲座；大学课程"},
+        {"w": "moral", "ipa": "/ˈmɒrəl/", "note": "「教训（故事的寓意）」，比 lesson 更抽象，多用于故事或寓言结尾", "gloss": "道德寓意；教训"}
+      ],
+      "antonyms": [],
+      "nuance": "lesson 既指具体的「一堂课」（piano lesson），也指抽象的「教训/启示」（a hard lesson）；class 偏重课堂环境；lecture 强调单向讲授；moral 专指故事或经历传达的道德寓意。"
+    },
+    {
+      "word": "head",
+      "hl": "ea",
+      "levels": ["非托福"],
+      "ipa": "/hed/",
+      "subgroup": "ea",
+      "meaning": "n. 头；领导者；顶端  v. 带领；朝……方向走  adj. 主要的",
+      "etymology": "古英语 hēafod，日耳曼同根，与德语 Haupt 同源。「身体的最高点」引申为「组织的最高点」→ 领导者。achieve（实现）的词根 chef 和 head 在原始印欧语层面同源。",
+      "roots": [
+        {"part": "head（hēafod）", "meaning": "头、顶端、最高处"}
+      ],
+      "phonetics": "h + ea /e/ + d，注意 ea 读 /e/ 不读 /iː/——/iː/ 惯性最容易在这里犯错。",
+      "tip": "head/dead/bread/instead/spread——这一批 ea 词全读 /e/，「死去的面包摊在那里」可作联想钩。",
+      "examples": [
+        {
+          "en": "She heads the marketing department at a major tech firm.",
+          "zh": "她领导一家大型科技公司的市场部。",
+          "source": "造句"
+        },
+        {
+          "en": "head of state / head start",
+          "zh": "「国家元首 / 领先优势」——两个高频固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "一切事物「最高处」的那个点——身体的顶端，组织的顶端，方向的前端。",
+      "senses": [
+        {
+          "gloss": "n. 头（身体器官）",
+          "logic": "最原始义：位于身体最顶端、最高处的部位。",
+          "en": "She shook her head slowly and said nothing.",
+          "zh": "她缓缓摇了摇头，什么也没说。"
+        },
+        {
+          "gloss": "n. 领导者、负责人（组织的最高点）",
+          "logic": "「最高处」的空间感映射到层级结构：处于一个组织顶端的那个人。",
+          "en": "The head of the committee will make the final decision.",
+          "zh": "委员会主席将作出最终决定。"
+        },
+        {
+          "gloss": "n. 顶端、前端（物体的最高或最前位置）",
+          "logic": "同样的「最高/最前」意象，应用于具体物体而非人体。",
+          "en": "Write your name at the head of the page.",
+          "zh": "把名字写在页面顶部。"
+        },
+        {
+          "gloss": "v. 带领、主持（处于最高位置并引导方向）",
+          "logic": "从「头/顶端」引申为「处于前列并带动方向」的动词用法。",
+          "en": "He headed the research team for over a decade.",
+          "zh": "他带领这个研究团队超过十年。"
+        },
+        {
+          "gloss": "v. 朝（某方向）走去（向……的方向移动）",
+          "logic": "「把头转向」某方向，自然引申为「朝那个方向移动」。",
+          "en": "After dinner, they headed back to the hotel.",
+          "zh": "晚饭后他们朝酒店走回去。"
+        }
+      ],
+      "derivatives": [
+        {"w": "headline", "gloss": "头条新闻；标题"},
+        {"w": "headache", "gloss": "头痛；麻烦事"},
+        {"w": "ahead", "gloss": "在前面；提前"},
+        {"w": "behead", "gloss": "斩首（be- 去除 + head）"}
+      ],
+      "synonyms": [
+        {"w": "leader", "ipa": "/ˈliːdər/", "note": "「领导者」义的近义，比 head 更强调带领能力而非职位", "gloss": "领导者、带头人"},
+        {"w": "chief", "ipa": "/tʃiːf/", "note": "「首领」，与 head 同源，正式职位称谓，如 chief executive", "gloss": "首领；主要的"},
+        {"w": "top", "ipa": "/tɒp/", "note": "「顶端/顶层」义，比 head 更口语，the top of the list = the head of the list", "gloss": "顶部；顶级的"}
+      ],
+      "antonyms": [
+        {"w": "tail", "note": "尾部"},
+        {"w": "foot", "note": "底端"}
+      ],
+      "nuance": "head 同时有物理义（头）和职位义（负责人），chief 更偏职位称谓，leader 强调领导力而非头衔，top 是口语版的「最高层」。"
+    },
+    {
+      "word": "bread",
+      "hl": "ea",
+      "levels": ["非托福"],
+      "ipa": "/bred/",
+      "subgroup": "ea",
+      "meaning": "n. 面包；生计，谋生之道",
+      "etymology": "古英语 brēad，日耳曼同根，与德语 Brot 同源。「bread and butter」是「基本生计」——bread 早已是「谋生」的隐喻。",
+      "roots": [
+        {"part": "bread（brēad）", "meaning": "面包"}
+      ],
+      "phonetics": "br- 连缀 + ea /e/ + d，与 dead、head、spread 押韵，构成 -ead 韵脚族。",
+      "tip": "bread 和 read 的过去式 read 发音一样：都读 /red/——两个高频同音词。",
+      "examples": [
+        {
+          "en": "She baked a fresh loaf of bread every morning.",
+          "zh": "她每天早上都烤一条新鲜面包。",
+          "source": "造句"
+        },
+        {
+          "en": "bread and butter / bread-and-butter issue",
+          "zh": "「基本生计 / 民生问题」——高频政治和日常习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "人类最基础的主食——由此延伸为「维持生命所需的最低限度」。",
+      "senses": [
+        {
+          "gloss": "n. 面包（食物）",
+          "logic": "本义：经发酵烘焙的谷物食品，人类文明最古老的主食之一。",
+          "en": "He tore off a piece of bread and dipped it in the soup.",
+          "zh": "他撕下一块面包，蘸着汤吃。"
+        },
+        {
+          "gloss": "n. 生计、谋生之道（「bread and butter」「earn one's bread」）",
+          "logic": "面包作为最基本的食物，隐喻「维持生存所需的最低限度」——历史上面包就是穷人的主要食物，这一文化隐喻沉淀为固定用法。",
+          "en": "Teaching was her bread and butter while she worked on her novel.",
+          "zh": "在写小说的同时，教书是她的主要谋生手段。"
+        }
+      ],
+      "derivatives": [
+        {"w": "breadwinner", "gloss": "养家糊口的人"},
+        {"w": "breadcrumb", "gloss": "面包屑；（网页）导航路径"},
+        {"w": "cornbread", "gloss": "玉米面包"}
+      ],
+      "synonyms": [
+        {"w": "loaf", "ipa": "/loʊf/", "note": "「一条面包」，bread 的计量单位词，a loaf of bread", "gloss": "一条面包"},
+        {"w": "livelihood", "ipa": "/ˈlaɪvlihʊd/", "note": "「生计」义的正式近义词，比 bread（隐喻）更直接", "gloss": "生计、谋生手段"}
+      ],
+      "antonyms": [],
+      "nuance": "bread 作名词是不可数名词（some bread / a loaf of bread，不说 a bread）；作「生计」义时，「earn one's bread」比「earn one's livelihood」更文学化。"
+    },
+    {
+      "word": "dead",
+      "hl": "ea",
+      "levels": ["非托福"],
+      "ipa": "/ded/",
+      "subgroup": "ea",
+      "meaning": "adj. 死亡的；（语言/风俗）消亡的；完全的，绝对的  adv. 完全地",
+      "etymology": "古英语 dēad，日耳曼同根，与德语 tot 意同。「dead silence」「dead certain」中 dead 作副词强调「完全」，是程度强化词的特殊用法。",
+      "roots": [
+        {"part": "dead（dēad）", "meaning": "死的"}
+      ],
+      "phonetics": "d + ea /e/ + d，首尾同一辅音 /d/，注意 ea 读 /e/ 不读 /iː/。",
+      "examples": [
+        {
+          "en": "Latin is often described as a dead language, yet it lives on in medicine and law.",
+          "zh": "拉丁语常被描述为死语言，但它依然活在医学和法律中。",
+          "source": "造句"
+        },
+        {
+          "en": "dead silence / dead certain / deadline",
+          "zh": "「死寂 / 完全确定 / 截止日期」——dead 作强调副词的高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "一切生命、运动、变化彻底停止的终态——由此引申为「极致、绝对」的强调。",
+      "senses": [
+        {
+          "gloss": "adj. 死亡的（生命终止）",
+          "logic": "最原始义：生命活动完全停止的状态。",
+          "en": "The paramedics arrived too late — the patient was already dead.",
+          "zh": "急救人员到达时已经太晚，患者已经死亡。"
+        },
+        {
+          "gloss": "adj. 消亡的（语言、风俗等不再活跃的）",
+          "logic": "「生命停止」的感觉延伸到抽象事物：一种语言或习俗不再被使用、「活着」。",
+          "en": "Sanskrit is considered a dead language by most linguists.",
+          "zh": "大多数语言学家认为梵语是一门死语言。"
+        },
+        {
+          "gloss": "adj./adv. 完全的、绝对的；完全地（dead silence / dead right）",
+          "logic": "「彻底停止」推到极致，变成强调「完全、一点不差」——dead quiet 意为「连一丝声音都没有」，死一样的安静。",
+          "en": "She was dead right about the budget overrun.",
+          "zh": "她对预算超支的判断完全正确。"
+        }
+      ],
+      "derivatives": [
+        {"w": "deadline", "gloss": "截止日期（越过「死线」就完了）"},
+        {"w": "deadly", "gloss": "致命的；极度地"},
+        {"w": "deaden", "gloss": "减弱、使迟钝（声音、痛觉等）"}
+      ],
+      "synonyms": [
+        {"w": "deceased", "ipa": "/dɪˈsiːst/", "note": "正式书面「已故的」，多用于法律和讣告；the deceased（逝者）", "gloss": "已故的、逝世的（正式）"},
+        {"w": "extinct", "ipa": "/ɪkˈstɪŋkt/", "note": "「消亡的」义的近义词，多用于物种或语言；an extinct species", "gloss": "灭绝的；消亡的"},
+        {"w": "absolute", "ipa": "/ˈæbsəluːt/", "note": "「完全的」义的近义，dead = absolutely，dead right = absolutely right", "gloss": "绝对的、完全的"}
+      ],
+      "antonyms": [
+        {"w": "alive", "note": "活着的"},
+        {"w": "living", "note": "有生命的"}
+      ],
+      "nuance": "dead 是口语通用词；deceased 是法律或讣告中的正式委婉表达；extinct 专指物种或文化的灭绝（无个体存活）；dead 作副词时（dead tired、dead right）是强化语气，相当于 completely，这一用法在口语中极高频。"
+    },
+    {
+      "word": "ready",
+      "hl": "ea",
+      "levels": ["非托福"],
+      "ipa": "/ˈredi/",
+      "subgroup": "ea",
+      "meaning": "adj. 准备好的；乐意的；现成的  adv. 已经（ready-made）",
+      "etymology": "古英语 rǣde「备好的、快速的」，日耳曼同根。ready 的核心是「已处于可立即使用的状态」。「already」= al-(全部) + ready，「早已全部准备好」。",
+      "roots": [
+        {"part": "ready（rǣde）", "meaning": "准备好的、迅捷的"}
+      ],
+      "phonetics": "rea- /ˈre/ + dy /di/，ea 读 /e/；重音在首音节。注意不要读成 /riːdi/。",
+      "examples": [
+        {
+          "en": "Are you ready to give your presentation?",
+          "zh": "你准备好做演示了吗？",
+          "source": "造句"
+        },
+        {
+          "en": "ready-made / get ready for",
+          "zh": "「现成的 / 为……做准备」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "此刻已经到位、随时可以启动的状态——不需要再等、再准备。",
+      "senses": [
+        {
+          "gloss": "adj. 准备好的（可以立即行动）",
+          "logic": "核心义：一切条件已到位，处于「可立即使用/启动」的状态。",
+          "en": "The report is ready for your review.",
+          "zh": "报告已准备好，请您审阅。"
+        },
+        {
+          "gloss": "adj. 乐意的、愿意的（随时可以做某事）",
+          "logic": "从「状态到位」引申为「心理上也到位」——不仅能做，而且愿意做。",
+          "en": "She is always ready to help a colleague in need.",
+          "zh": "她总是乐于帮助有需要的同事。"
+        },
+        {
+          "gloss": "adj. 现成的（无需另行准备即可使用）",
+          "logic": "「已经到位」的状态，应用于产品或方案，意指「不用现做，拿来就能用」。",
+          "en": "They sell ready meals that can be heated in minutes.",
+          "zh": "他们出售几分钟内就能加热食用的即食餐。"
+        }
+      ],
+      "derivatives": [
+        {"w": "already", "gloss": "已经（al- 全部 + ready）"},
+        {"w": "readiness", "gloss": "准备就绪的状态；意愿"},
+        {"w": "ready-made", "gloss": "现成的、预制的"}
+      ],
+      "synonyms": [
+        {"w": "prepared", "ipa": "/prɪˈpeərd/", "note": "「准备充分的」，比 ready 更强调经过预先筹备的过程；well-prepared（准备充分）", "gloss": "有准备的、事先筹备好的"},
+        {"w": "set", "ipa": "/set/", "note": "口语「准备好了」，与 ready 几乎同义；「Ready, set, go!」", "gloss": "准备好了（口语）"},
+        {"w": "available", "ipa": "/əˈveɪləbl/", "note": "「可用的/现成的」，比 ready 更强调「可获取、可使用」的客观状态", "gloss": "可用的；有空的"}
+      ],
+      "antonyms": [
+        {"w": "unprepared", "note": "没有准备的"},
+        {"w": "reluctant", "note": "不情愿的"}
+      ],
+      "nuance": "ready 强调「此刻即可用/即可行动」；prepared 强调「经过充分筹备」；set 是口语版 ready；available 侧重「可获取」而非「已准备」——「I'm available」是「我有空」而非「我准备好了」。"
+    },
+    {
+      "word": "heavy",
+      "hl": "ea",
+      "levels": ["非托福"],
+      "ipa": "/ˈhevi/",
+      "subgroup": "ea",
+      "meaning": "adj. 重的；（雨、雪、交通）大量的；沉重的；繁重的",
+      "etymology": "古英语 hefig，日耳曼同根。core 义「有重量的」，引申出「（程度）很大、（负担）沉重」——heavy rain、heavy traffic、heavy workload 都是「大量/繁重」义。",
+      "roots": [
+        {"part": "heavy（hefig）", "meaning": "有重量的"}
+      ],
+      "phonetics": "h + ea /e/ + vy，ea 读 /e/；重音在首音节；-vy 弱读 /vi/。",
+      "examples": [
+        {
+          "en": "The project came with a heavy workload and tight deadlines.",
+          "zh": "这个项目工作量繁重，截止日期又紧。",
+          "source": "造句"
+        },
+        {
+          "en": "heavy traffic / heavy rainfall / heavy drinker",
+          "zh": "「交通拥堵 / 大雨 / 酗酒者」——heavy 修饰程度的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "让人感到向下压、难以举起或难以承受的那种「分量感」。",
+      "senses": [
+        {
+          "gloss": "adj. 重的（物理重量大）",
+          "logic": "最基础义：物体质量大，向下压的力强，难以搬动。",
+          "en": "The suitcase was so heavy she could barely lift it.",
+          "zh": "行李箱太重，她几乎抬不动。"
+        },
+        {
+          "gloss": "adj. 大量的、大的（雨、雪、交通等程度强）",
+          "logic": "「分量感」从物理重量扩展到数量和程度：大量的雨滴落下来，感觉也是「压下来的重」。",
+          "en": "Heavy snow blocked the mountain roads overnight.",
+          "zh": "一夜大雪封堵了山路。"
+        },
+        {
+          "gloss": "adj. 繁重的、沉重的（工作量、负担、责任）",
+          "logic": "压在人身上的「重量」投射到心理和工作层面：承担重大压力或大量任务，让人喘不过气。",
+          "en": "The doctor warned him about the heavy toll the stress was taking on his heart.",
+          "zh": "医生警告他，压力对他的心脏造成了沉重的损耗。"
+        }
+      ],
+      "derivatives": [
+        {"w": "heavily", "gloss": "沉重地；大量地"},
+        {"w": "heavyweight", "gloss": "重量级的；有影响力的人物"},
+        {"w": "overweight", "gloss": "超重的"}
+      ],
+      "synonyms": [
+        {"w": "weighty", "ipa": "/ˈweɪti/", "note": "「有分量的」，比 heavy 更书面，多用于抽象义；a weighty decision（重大决定）", "gloss": "有分量的；重大的"},
+        {"w": "burdensome", "ipa": "/ˈbɜːrdnsəm/", "note": "「繁重的、令人压抑的」，专指负担义，比 heavy 更正式", "gloss": "繁重的；令人难以承受的"},
+        {"w": "intense", "ipa": "/ɪnˈtens/", "note": "「强烈的」，修饰程度时与 heavy 接近；intense pressure = heavy pressure", "gloss": "强烈的；紧张的"}
+      ],
+      "antonyms": [
+        {"w": "light", "note": "轻的；少量的"},
+        {"w": "mild", "note": "轻微的"}
+      ],
+      "nuance": "heavy 是多义通用词（物理重量 + 程度大）；weighty 偏书面，强调重要性和严重性；burdensome 专指令人难以承受的负担；intense 强调强度而非重量——「heavy rain」可替换成「intense rain」，但「heavy box」不能用 intense。"
+    },
+    {
+      "word": "weather",
+      "hl": "ea",
+      "levels": ["非托福"],
+      "ipa": "/ˈweðər/",
+      "subgroup": "ea",
+      "meaning": "n. 天气  v. 经受住（困难）；（岩石等）风化",
+      "etymology": "古英语 weder，日耳曼同根，与德语 Wetter 同源。weather 作动词「经受住」是从「暴露在风吹雨打中仍坚持」引申而来。",
+      "roots": [
+        {"part": "weather（weder）", "meaning": "天气、风吹雨打"}
+      ],
+      "phonetics": "w + ea /e/ + ther /ðər/，ea 读 /e/；-ther 弱读，th 发浊音 /ð/。与 feather、leather、together 同韵。",
+      "tip": "weather（天气）vs whether（是否）——同音词，靠语法区分：weather 是名词/动词，whether 是连词。",
+      "examples": [
+        {
+          "en": "The company managed to weather the economic crisis without layoffs.",
+          "zh": "公司成功度过了经济危机，没有裁员。",
+          "source": "造句"
+        },
+        {
+          "en": "weather the storm / under the weather",
+          "zh": "「经受住风暴（比喻克服困难）/ 身体不适」——两个高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "大气的变幻状态——由此引申为「在风吹雨打中坚持并改变」。",
+      "senses": [
+        {
+          "gloss": "n. 天气（大气的短期状态）",
+          "logic": "核心义：某一时间、某一地点的大气条件，包括温度、降水、风力等。",
+          "en": "The weather forecast calls for thunderstorms this evening.",
+          "zh": "天气预报显示今晚将有雷暴。"
+        },
+        {
+          "gloss": "v. 经受住、熬过（困难或危机）",
+          "logic": "「被风吹雨打却站着不倒」的意象直接引申：经历了各种恶劣考验，最终还是挺过来了。",
+          "en": "The startup weathered a difficult first year and emerged stronger.",
+          "zh": "这家初创公司熬过了艰难的第一年，变得更强了。"
+        },
+        {
+          "gloss": "v. 风化（岩石、木材等被大气侵蚀）",
+          "logic": "同样是「被天气长期作用」，但这里的对象是物质，结果是被侵蚀改变——与「熬过去」的方向相反，属于被动的物理变化。",
+          "en": "The stone steps had weathered badly over the centuries.",
+          "zh": "石阶历经数百年风化，已严重损毁。"
+        }
+      ],
+      "derivatives": [
+        {"w": "weathered", "gloss": "风化的；饱经风霜的（外表）"},
+        {"w": "weatherproof", "gloss": "防风雨的；耐候的"},
+        {"w": "weathering", "gloss": "风化作用（地质学）"}
+      ],
+      "synonyms": [
+        {"w": "climate", "ipa": "/ˈklaɪmɪt/", "note": "「气候」，比 weather 更宏观、更长期；climate change（气候变化），weather 是每天短期的变化", "gloss": "气候（长期大气规律）"},
+        {"w": "endure", "ipa": "/ɪnˈdjʊər/", "note": "「承受」义的近义动词，比 weather（动词）更通用；endure hardship（忍受艰辛）", "gloss": "忍受、承受"},
+        {"w": "withstand", "ipa": "/wɪðˈstænd/", "note": "「经受住」义，比 weather 更强调抵抗力；withstand pressure（抵抗压力）", "gloss": "经受住、抵抗"}
+      ],
+      "antonyms": [],
+      "nuance": "weather（名词）是短期天气，climate 是长期气候模式——常混淆但有本质区别。weather（动词）≈ withstand，但 weather 带有「被动承受而熬过来」的意味，withstand 更主动，endure 强调时间上的坚持。"
+    },
+    {
+      "word": "health",
+      "hl": "ea",
+      "levels": ["托福"],
+      "ipa": "/helθ/",
+      "subgroup": "ea",
+      "meaning": "n. 健康；（经济/社会）健全状态",
+      "etymology": "古英语 hǣlþ，与 heal（治愈）、whole（完整）、holy（神圣）同根——原始印欧语 kailo-（完整无缺）的后裔。「健康」本义是「身体完整无缺」。",
+      "roots": [
+        {"part": "heal-（hǣlþ）", "meaning": "完整无缺、治愈"},
+        {"part": "-th", "meaning": "抽象名词后缀（同 growth、strength）"}
+      ],
+      "phonetics": "h + ea /e/ + lth，注意 ea 读 /e/；词尾辅音群 -lth /lθ/ 要完整发出，l 后紧跟齿间音 θ。",
+      "tip": "health/wealth/stealth 三词全部 -ealth = /elθ/，用「秘密积累财富保持健康」做联想。",
+      "examples": [
+        {
+          "en": "Regular exercise is essential for maintaining good health.",
+          "zh": "定期锻炼对保持良好健康至关重要。",
+          "source": "造句"
+        },
+        {
+          "en": "public health / health care / in good health",
+          "zh": "「公共卫生 / 医疗保健 / 身体健康」——三个高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "身体和系统「完整无损、没有缺失」的状态——零件都在、运转正常。",
+      "senses": [
+        {
+          "gloss": "n. 健康（身体无病的完好状态）",
+          "logic": "核心义：源自「完整无缺」——器官、机能都在位、没有损坏。",
+          "en": "Quitting smoking dramatically improved her health within months.",
+          "zh": "戒烟后短短几个月她的健康状况大幅改善。"
+        },
+        {
+          "gloss": "n. 健全状态（经济、组织等系统的良好运转）",
+          "logic": "「完整无损、正常运作」的感觉从人体映射到抽象系统：一个经济体或组织的「健康」同样意味着各部分都在正常运转。",
+          "en": "Analysts are worried about the long-term health of the banking sector.",
+          "zh": "分析人士对银行业的长期健康状况感到担忧。"
+        }
+      ],
+      "derivatives": [
+        {"w": "healthy", "gloss": "健康的；有益健康的"},
+        {"w": "unhealthy", "gloss": "不健康的；有害的"},
+        {"w": "heal", "gloss": "治愈、痊愈（同根）"}
+      ],
+      "synonyms": [
+        {"w": "well-being", "ipa": "/ˌwelˈbiːɪŋ/", "note": "「身心健康/福祉」，比 health 范围更宽，含心理和社会层面；mental well-being", "gloss": "身心健康；福祉"},
+        {"w": "fitness", "ipa": "/ˈfɪtnɪs/", "note": "「（体能）健康」，强调身体运动能力，比 health 更侧重体能状态", "gloss": "（体能）健康；健壮"},
+        {"w": "vitality", "ipa": "/vaɪˈtæləti/", "note": "「活力」，比 health 更强调充沛的生命能量感，多用于文学或广告", "gloss": "活力；生命力"}
+      ],
+      "antonyms": [
+        {"w": "illness", "note": "疾病"},
+        {"w": "disease", "note": "病症"}
+      ],
+      "nuance": "health 最通用，指身体无病的状态；well-being 更全面，涵盖精神、社会和身体；fitness 专指体能和运动能力；vitality 强调充沛活力而非单纯无病。"
+    },
+    {
+      "word": "wealth",
+      "hl": "ea",
+      "levels": ["托福"],
+      "ipa": "/welθ/",
+      "subgroup": "ea",
+      "meaning": "n. 财富；大量（of）",
+      "etymology": "中古英语 welthe，源自 well（好）+抽象名词后缀 -th，「处于良好状态」→ 财富。与 well、welfare（福利）同根。注意：wealth 和 health 都有 -ealth，且语义上「钱（wealth）= 对健康（health）的大量投资」可作联想。",
+      "roots": [
+        {"part": "weal-（well）", "meaning": "好、繁荣"},
+        {"part": "-th", "meaning": "抽象名词后缀"}
+      ],
+      "phonetics": "w + ea /e/ + lth，与 health、stealth 完全同韵 -ealth /elθ/。",
+      "examples": [
+        {
+          "en": "The country's wealth depends heavily on its oil exports.",
+          "zh": "该国的财富在很大程度上依赖石油出口。",
+          "source": "造句"
+        },
+        {
+          "en": "a wealth of information / wealth gap",
+          "zh": "「大量信息 / 贫富差距」——两个义域的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "「处于良好状态」的积累结果——物质上的丰盛，也泛指任何东西的「大量拥有」。",
+      "senses": [
+        {
+          "gloss": "n. 财富（大量积累的金钱或资产）",
+          "logic": "核心义：源自「好的状态」，财富是「好的状态」被物质化后的具体表现。",
+          "en": "He donated a large portion of his wealth to environmental charities.",
+          "zh": "他将大部分财富捐给了环保慈善机构。"
+        },
+        {
+          "gloss": "n. 大量（of）（某种东西的丰富储量）",
+          "logic": "「丰盛」的感觉从金钱延伸到任何事物的大量：a wealth of experience（丰富的经验）、a wealth of data（大量数据）。",
+          "en": "The archive holds a wealth of unpublished manuscripts.",
+          "zh": "档案馆藏有大量未发表的手稿。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wealthy", "gloss": "富有的"},
+        {"w": "commonwealth", "gloss": "共同财富；联邦（common + wealth）"},
+        {"w": "welfare", "gloss": "福利；安康（同根 well）"}
+      ],
+      "synonyms": [
+        {"w": "fortune", "ipa": "/ˈfɔːrtʃən/", "note": "「财富/命运」，比 wealth 更口语，也指一大笔钱；make a fortune（发财）", "gloss": "财富；运气；一大笔钱"},
+        {"w": "affluence", "ipa": "/ˈæfluəns/", "note": "「富裕」，正式书面词，多描述整体富裕状态；material affluence（物质富裕）", "gloss": "富裕、丰裕"},
+        {"w": "prosperity", "ipa": "/prɒˈsperəti/", "note": "「繁荣」，比 wealth 更强调经济和社会层面的欣欣向荣；economic prosperity", "gloss": "繁荣、昌盛"}
+      ],
+      "antonyms": [
+        {"w": "poverty", "note": "贫穷"},
+        {"w": "destitution", "note": "赤贫"}
+      ],
+      "nuance": "wealth 强调已积累的财富总量；fortune 偏口语，也可指「一大笔钱」；affluence 描述的是富裕的生活状态；prosperity 更宏观，指经济体或社会的繁荣。"
+    },
+    {
+      "word": "breath",
+      "hl": "ea",
+      "levels": ["托福"],
+      "ipa": "/breθ/",
+      "subgroup": "ea",
+      "meaning": "n. 呼吸；一口气；微风",
+      "etymology": "古英语 brǣþ「气味、蒸汽」，日耳曼同根。与 breathe（动词）区分：breath（名词）/breθ/ vs breathe（动词）/briːð/——名词无声 e，动词有声 e。",
+      "roots": [
+        {"part": "breath（brǣþ）", "meaning": "气息、蒸汽"}
+      ],
+      "phonetics": "br- + ea /e/ + th /θ/，注意 th 是清音 /θ/（而动词 breathe 的 th 是浊音 /ð/）；ea 读 /e/ 不读 /iː/。",
+      "tip": "breath（名词）= /breθ/，th 清音；breathe（动词）= /briːð/，th 浊音，ea 变 /iː/——一字之差，发音和词义全变。",
+      "examples": [
+        {
+          "en": "He took a deep breath before speaking to the audience.",
+          "zh": "他在向观众发言前深吸一口气。",
+          "source": "造句"
+        },
+        {
+          "en": "take a breath / catch one's breath / out of breath",
+          "zh": "「呼吸一下 / 喘过气来 / 气喘吁吁」——三个高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "气息进出身体的那个单次流动——生命存在的最基本信号，也是微弱流动的气流。",
+      "senses": [
+        {
+          "gloss": "n. 呼吸、一次呼吸（气息的一次进出）",
+          "logic": "核心义：身体吸入或呼出的那一口气，是生命存在的直接证据。",
+          "en": "Take a slow breath and try to calm down.",
+          "zh": "慢慢呼吸一口，试着冷静下来。"
+        },
+        {
+          "gloss": "n. 微风、一缕气息（空气的微弱流动）",
+          "logic": "「气息」的感觉延伸到环境中：一缕极轻微的空气流动，轻得像一次呼吸。",
+          "en": "Not a breath of wind stirred the leaves.",
+          "zh": "连一丝风都没有，树叶纹丝不动。"
+        }
+      ],
+      "derivatives": [
+        {"w": "breathe", "gloss": "呼吸（动词，注意发音不同）"},
+        {"w": "breathless", "gloss": "气喘吁吁的；令人窒息的"},
+        {"w": "breathtaking", "gloss": "令人叹为观止的（美到「让人屏住呼吸」）"}
+      ],
+      "synonyms": [
+        {"w": "respiration", "ipa": "/ˌrespɪˈreɪʃn/", "note": "医学正式词「呼吸（作用）」，比 breath 更学术；respiratory system（呼吸系统）", "gloss": "呼吸作用（医学正式词）"},
+        {"w": "gasp", "ipa": "/ɡɑːsp/", "note": "「喘息」，强调急促、困难的呼吸；gasp for breath（大口喘气）", "gloss": "喘息；急促呼吸"},
+        {"w": "puff", "ipa": "/pʌf/", "note": "「一口气/一阵风」，比 breath 更口语，也指吸烟的一口", "gloss": "一口气；一阵风；（烟）一口"}
+      ],
+      "antonyms": [],
+      "nuance": "breath 是名词通用词；breathe 是动词；respiration 是医学术语；gasp 强调困难或震惊时的急促呼吸；「a breath of fresh air」（一股清新空气）是高频文化比喻，形容令人耳目一新的事物。"
+    },
+    {
+      "word": "instead",
+      "hl": "ea",
+      "levels": ["托福"],
+      "ipa": "/ɪnˈsted/",
+      "subgroup": "ea",
+      "meaning": "adv. 代替；而不是（用于句首或句尾）",
+      "etymology": "in + stead，stead 古英语意为「地方、位置」（仍见于 homestead 农庄、steadfast 坚定）。「在原来的位置上放另一个」→ 代替。",
+      "roots": [
+        {"part": "in-", "meaning": "在……中"},
+        {"part": "-stead（stede）", "meaning": "地方、位置"}
+      ],
+      "phonetics": "in- + stead，stead = /sted/，ea 读 /e/；重音在后 in-STEAD。",
+      "examples": [
+        {
+          "en": "She didn't take the bus; instead, she walked to clear her head.",
+          "zh": "她没有乘公车，而是选择步行来理清思绪。",
+          "source": "造句"
+        },
+        {
+          "en": "instead of / use X instead of Y",
+          "zh": "「而不是……/ 用 X 代替 Y」——逻辑替换的高频句式。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "占据同一个位置但换了内容——「在那个位置上，放的是别的东西」。",
+      "senses": [
+        {
+          "gloss": "adv. 代替地、而是（整句替换）",
+          "logic": "核心义：某个预期的行动/选项被另一个取代，「在那个位置上」放的是不同的东西。",
+          "en": "He planned to drive, but instead he took the train.",
+          "zh": "他原本打算开车，但最终改乘了火车。"
+        }
+      ],
+      "derivatives": [
+        {"w": "homestead", "gloss": "农庄；定居地（home + stead）"},
+        {"w": "steadfast", "gloss": "坚定的、坚守的（stead + fast 牢固）"},
+        {"w": "stead", "gloss": "位置；代替（in his stead = in his place，正式书面）"}
+      ],
+      "synonyms": [
+        {"w": "alternatively", "ipa": "/ɔːlˈtɜːrnətɪvli/", "note": "「或者、另一方面」，比 instead 更书面，表示提供另一个选择", "gloss": "或者；另一方面（书面）"},
+        {"w": "rather", "ipa": "/ˈrɑːðər/", "note": "「而是/宁愿」，rather than 和 instead of 意近；I'd rather walk than drive", "gloss": "宁愿；而是"},
+        {"w": "in place of", "note": "「代替」，和 instead of 完全同义的正式短语", "gloss": "代替（正式短语）"}
+      ],
+      "antonyms": [],
+      "nuance": "instead（副词）用于整句替换（He didn't come; instead, he called）；instead of（介词短语）用于词语替换（instead of coffee, try tea）；rather than 更强调偏好或对比（prefer A rather than B）。"
+    },
+    {
+      "word": "measure",
+      "hl": "ea",
+      "levels": ["托福"],
+      "ipa": "/ˈmeʒər/",
+      "subgroup": "ea",
+      "meaning": "v. 测量；评估  n. 措施；度量；程度",
+      "etymology": "拉丁语 mensura = metiri(测量) 的名词形式。与 meter（米/计量）、dimension（维度）、immense（无边）同根——都含「衡量、尺度」义。",
+      "roots": [
+        {"part": "meas- (mensura/metiri)", "meaning": "测量、衡量"},
+        {"part": "-ure", "meaning": "名词后缀"}
+      ],
+      "phonetics": "mea- /me/ + sure /ʒər/，注意 ea 读 /e/，s 读 /ʒ/（不是 /ʃ/）。重音在首音节。",
+      "tip": "「beyond measure」（无法估量）和「take measures」（采取措施）是托福写作两大高频短语，一个是程度义，一个是行动义。",
+      "examples": [
+        {
+          "en": "The government took emergency measures to contain the spread of the disease.",
+          "zh": "政府采取紧急措施遏制疾病扩散。",
+          "source": "造句"
+        },
+        {
+          "en": "take measures / measure up to",
+          "zh": "「采取措施 / 达到（标准）」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "用标准去衡量某个对象，确定它的「量」——由此引申为采取「有尺度的」行动。",
+      "senses": [
+        {
+          "gloss": "v. 测量（用工具或标准确定大小、数量）",
+          "logic": "核心义：将某个对象与一个标准单位对照，得出它的精确量值。",
+          "en": "The technician measured the voltage at each point in the circuit.",
+          "zh": "技术人员测量了电路各点的电压。"
+        },
+        {
+          "gloss": "v. 评估、衡量（判断抽象事物的程度或价值）",
+          "logic": "「用标准比较」的动作从物理测量延伸到对抽象事物的判断，如评估效果、衡量影响。",
+          "en": "It's difficult to measure the long-term impact of early education.",
+          "zh": "早期教育的长期影响难以衡量。"
+        },
+        {
+          "gloss": "n. 措施、手段（有计划地采取的行动步骤）",
+          "logic": "「有尺度的行动」——不是随机反应，而是经过「衡量」后采取的、有针对性的步骤。",
+          "en": "The city introduced strict measures to reduce air pollution.",
+          "zh": "该市推出严格措施以减少空气污染。"
+        },
+        {
+          "gloss": "n. 程度、限度（beyond measure / in some measure）",
+          "logic": "「量」的概念抽象化：程度大到「超出可测量的范围」，或「在某种程度上」。",
+          "en": "Her generosity moved him beyond measure.",
+          "zh": "她的慷慨令他感动得无以言表。"
+        }
+      ],
+      "derivatives": [
+        {"w": "measurement", "gloss": "测量值；测量行为"},
+        {"w": "immense", "gloss": "巨大的（im- 否定 + mense 可测量 = 大到无法测量）"},
+        {"w": "dimension", "gloss": "维度；尺寸（同根 metiri）"}
+      ],
+      "synonyms": [
+        {"w": "assess", "ipa": "/əˈses/", "note": "「评估」义的近义动词，比 measure 更侧重定性判断；assess the damage（评估损失）", "gloss": "评估、评定"},
+        {"w": "gauge", "ipa": "/ɡeɪdʒ/", "note": "「测量/判断」，比 measure 更口语，常用于定性判断；gauge public opinion（判断民意）", "gloss": "测量；判断（口语）"},
+        {"w": "step", "ipa": "/step/", "note": "「措施/步骤」义的口语近义，比 measure 更简洁；take steps to reduce costs", "gloss": "步骤；措施（口语）"}
+      ],
+      "antonyms": [],
+      "nuance": "measure（动词）是精确测量；assess 是综合评估（不一定量化）；gauge 侧重直觉性判断；measure（名词）作「措施」时 = step/action，但 measure 更正式，多见于政策和法律语境。"
+    },
+    {
+      "word": "any",
+      "hl": "a",
+      "levels": ["托福"],
+      "ipa": "/ˈeni/",
+      "subgroup": "other",
+      "meaning": "det. 任何（一个）；一些（疑问/否定）  pron. 任何人/事",
+      "etymology": "古英语 ǣniġ = ān(一) + 后缀 -ig，本义「任何一个」。a 在此读 /e/ 是英语少数几个「a 读 /e/」的高频词之一（another 读 /ə/，any 读 /e/）。",
+      "roots": [
+        {"part": "an- (ān)", "meaning": "一"},
+        {"part": "-y（-ig）", "meaning": "「具有……性质的」后缀"}
+      ],
+      "phonetics": "a /e/ + ny /ni/，注意 a 在这里读 /e/ 而非 /æ/ 或 /ə/——是少数 a → /e/ 的词。",
+      "tip": "any 和 many 是英语中 a 读 /e/ 的最高频例子，连带记忆最高效。",
+      "examples": [
+        {
+          "en": "Do you have any questions before we proceed?",
+          "zh": "我们继续之前，你们有任何问题吗？",
+          "source": "造句"
+        },
+        {
+          "en": "any time / at any rate / if any",
+          "zh": "「随时 / 无论如何 / 如果有的话」——any 构成的高频固定短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "「一个也行，哪个都行」——不挑选、不限定，对所有可能开放。",
+      "senses": [
+        {
+          "gloss": "det. 任何（一个）（肯定句，强调无差别）",
+          "logic": "核心义：从「一个」（ān）演化为「哪一个都可以」，不做区分地接受所有选项。",
+          "en": "Any student who needs help can come to office hours.",
+          "zh": "任何需要帮助的学生都可以来答疑时间。"
+        },
+        {
+          "gloss": "det./pron. 一些、有没有（疑问句和否定句）",
+          "logic": "在疑问和否定语境中，「有没有哪怕一个」的意思——从「任何一个」收窄为「存不存在」的询问。",
+          "en": "Is there any milk left in the fridge?",
+          "zh": "冰箱里还有牛奶吗？"
+        }
+      ],
+      "derivatives": [
+        {"w": "anyone", "gloss": "任何人"},
+        {"w": "anything", "gloss": "任何事物"},
+        {"w": "anyway", "gloss": "无论如何；总之"}
+      ],
+      "synonyms": [
+        {"w": "some", "ipa": "/sʌm/", "note": "肯定句中的「一些」，any 用于疑问/否定句；can you spare any time vs I have some time", "gloss": "一些（肯定句用）"},
+        {"w": "whichever", "ipa": "/wɪtʃˈevər/", "note": "「无论哪个」义，比 any 更强调「无所谓哪个」的任意性", "gloss": "无论哪个"}
+      ],
+      "antonyms": [
+        {"w": "none", "note": "一个也没有"},
+        {"w": "no", "note": "没有（修饰名词）"}
+      ],
+      "nuance": "any 在肯定句中表「任何一个都行」（any day suits me），在疑问句中是「有没有」（any news?），在否定句中是「一个也没有」（not any = none）。some 只用于肯定句表「一些」；any 的范围覆盖疑问和否定语境，用法更灵活。"
+    },
+    {
+      "word": "said",
+      "hl": "ai",
+      "levels": ["托福"],
+      "ipa": "/sed/",
+      "subgroup": "other",
+      "meaning": "v. say 的过去式和过去分词  adj.（法律）前述的，上述的",
+      "etymology": "say（古英语 secgan）的不规则过去式。said 读 /sed/ 是英语少数 ai → /e/ 的词，与 paid /peɪd/、laid /leɪd/ 截然不同——其他 ai 动词变过去式保留 /eɪ/ 音，只有 said 变为 /e/，需要单独记忆。",
+      "roots": [
+        {"part": "say（secgan）", "meaning": "说"}
+      ],
+      "phonetics": "s + ai /e/ + d，ai 读 /e/ 是孤立例外——与 paid/laid/raid 的 ai 读 /eɪ/ 不同，需单独记。",
+      "tip": "「paid/laid → /eɪd/，said → /sed/」——said 是 ai 动词过去式里唯一变音的，记住这个孤例。",
+      "examples": [
+        {
+          "en": "He said nothing and walked out of the room.",
+          "zh": "他一言不发地走出了房间。",
+          "source": "造句"
+        },
+        {
+          "en": "as I said / that said / the said document",
+          "zh": "「如我所说 / 话虽如此 / 上述文件」——三个高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "「说」这个动作在过去时间点已经完成——话已出口，成为既定事实。",
+      "senses": [
+        {
+          "gloss": "v. say 的过去式（某人在过去某时刻说了某话）",
+          "logic": "核心义：「说」的动作已在过去发生并完成，是 say 的简单过去时。",
+          "en": "She said she would call back by noon, but never did.",
+          "zh": "她说会在中午前回电，但始终没有。"
+        },
+        {
+          "gloss": "adj. 前述的、上述的（法律文件中指已提及的人或物）",
+          "logic": "「已经被说过/提及的」——法律文本将「已被提到」的事物用 said 来指称，是书面语中的固定用法。",
+          "en": "The said contract shall be governed by English law.",
+          "zh": "上述合同应受英国法律管辖。"
+        }
+      ],
+      "derivatives": [
+        {"w": "say", "gloss": "说（原形）"},
+        {"w": "saying", "gloss": "谚语；所说之话"},
+        {"w": "unsaid", "gloss": "未说出口的"}
+      ],
+      "synonyms": [
+        {"w": "stated", "ipa": "/steɪtɪd/", "note": "「陈述过的」，比 said 更正式，多用于书面或法律语境；as stated above", "gloss": "陈述过的；如上所述"},
+        {"w": "mentioned", "ipa": "/ˈmenʃnd/", "note": "「提到的」，比 said 更口语，强调顺带提及；as mentioned earlier", "gloss": "提到的；所说的"},
+        {"w": "remarked", "ipa": "/rɪˈmɑːrkt/", "note": "「评论道」，比 said 更强调观察性的评价；she remarked that...", "gloss": "评论道；指出"}
+      ],
+      "antonyms": [],
+      "nuance": "said 最中性，是「说」的过去时标准词；stated 更正式，多用于书面声明；mentioned 是「顺带提及」；remarked 带有观察和评价的语气。「that said」（话虽如此）是英语写作中高频的转折连接词。"
+    },
+    {
+      "word": "friend",
+      "hl": "ie",
+      "levels": ["托福"],
+      "ipa": "/frend/",
+      "subgroup": "other",
+      "meaning": "n. 朋友；盟友；支持者",
+      "etymology": "古英语 frēond，原为「爱着的人」——与 free（自由）同根，原始义「因爱而自愿相伴」。ie 在此读 /e/ 是拼写历史遗留（古英语 frēond 的元音演变），与 believe 中 ie = /iː/ 完全不同，是另一个孤立例外。",
+      "roots": [
+        {"part": "friend（frēond）", "meaning": "爱着的人、自由相伴者"}
+      ],
+      "phonetics": "fr- + ie /e/ + nd，注意 ie 读 /e/ 而非 /iː/——是 ie = /e/ 的孤立例外，与 believe 中 ie = /iː/ 完全对立，需单独记。",
+      "tip": "friend 里的 ie 读 /e/，不要被 believe、achieve 的 ie = /iː/ 带偏。「i before e」口诀在这里完全无效。",
+      "examples": [
+        {
+          "en": "A good friend tells you the truth even when it's hard to hear.",
+          "zh": "真正的朋友会在你难以听进去的时候告诉你真相。",
+          "source": "造句"
+        },
+        {
+          "en": "make friends / a close friend / friend of the court",
+          "zh": "「交朋友 / 密友 / 法庭之友（提供意见的第三方）」——三个义域的搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "core": "因爱和自愿而相伴的那个人——不受利益或义务约束，纯粹因为想在一起。",
+      "senses": [
+        {
+          "gloss": "n. 朋友（亲密的自愿陪伴者）",
+          "logic": "核心义：源自「因爱而自愿相伴」，不是靠血缘或合同维系，而是彼此选择在一起的人。",
+          "en": "They have been close friends since their first year of university.",
+          "zh": "他们从大一起就是好朋友。"
+        },
+        {
+          "gloss": "n. 盟友、支持者（在某件事上站在你这边的人）",
+          "logic": "「站在你这边」的感觉延伸到利益或立场层面：不一定亲密，但在某个目标或情境下是你的支持者。",
+          "en": "The senator described the bill as a friend of working families.",
+          "zh": "这位参议员将该法案描述为工薪家庭的盟友。"
+        }
+      ],
+      "derivatives": [
+        {"w": "friendly", "gloss": "友好的；亲切的"},
+        {"w": "friendship", "gloss": "友谊、友情"},
+        {"w": "befriend", "gloss": "与……交朋友；帮助（陌生人）"}
+      ],
+      "synonyms": [
+        {"w": "companion", "ipa": "/kəmˈpænjən/", "note": "「同伴」，比 friend 更强调共同经历和陪伴；travel companion（旅伴）", "gloss": "同伴、伴侣"},
+        {"w": "ally", "ipa": "/ˈælaɪ/", "note": "「盟友」，比 friend 更侧重利益上的联盟关系；political allies（政治盟友）", "gloss": "盟友、同盟者"},
+        {"w": "acquaintance", "ipa": "/əˈkweɪntəns/", "note": "「熟人」，比 friend 程度浅，仅认识但不亲密；a business acquaintance", "gloss": "熟人、相识"}
+      ],
+      "antonyms": [
+        {"w": "enemy", "note": "敌人"},
+        {"w": "foe", "note": "对手，敌手（更正式）"}
+      ],
+      "nuance": "friend 是最强的亲密度；acquaintance 是仅认识的熟人；companion 强调陪伴的过程（不一定深交）；ally 强调利益一致的盟友关系（可以并不亲密）。"
+    }
+  ]
+}

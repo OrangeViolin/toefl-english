@@ -1,0 +1,2410 @@
+{
+  "id": "d",
+  "combo": "d·dd·ed",
+  "title": "/d/ 浊爆破音",
+  "sound": "/d/",
+  "subtitle": "清音 /t/ 的浊音兄弟——声带一振，爆破感全来",
+  "intro": "/d/ 是浊爆破音，舌尖抵住上齿龈，气流积聚后迅速释放，同时声带振动——这是它与清音 /t/ 唯一的区别。拼写路径有三条：d（最通用）、dd（短元音后的加倍，如 add/sudden）、-ed（过去式后缀，在浊辅音或元音后读 /d/，如 played/called）。-ed 的三种读法是英语学习者的经典陷阱：/t/（looked）、/d/（played）、/ɪd/（wanted）——记住只有 /t/ 或 /d/ 结尾的原形才读 /ɪd/，浊辅音/元音后一律读 /d/。",
+  "subgroups": [
+    {
+      "key": "d",
+      "tag": "d → /d/",
+      "label": "✅ d = /d/",
+      "desc": "最通用的拼写。do/day/desk/decide/develop/dark/dream/direct/domain/demand/devote/dominant——词首、词中、词尾均可出现，声带振动是唯一标志。"
+    },
+    {
+      "key": "dd",
+      "tag": "dd → /d/",
+      "label": "dd = /d/",
+      "desc": "短元音后加倍写 dd，发音仍是单个 /d/：add/odd/sudden/middle/hidden/address。与 ck(/k/)、ss(/s/)、tt(/t/) 同为「短元音锁定」机制。"
+    },
+    {
+      "key": "ed",
+      "tag": "-ed → /d/（浊辅音/元音后）",
+      "label": "-ed = /d/",
+      "desc": "过去式 -ed 三读规则：词根末尾是浊辅音（b/g/l/m/n/r/v/z等）或元音→ 读 /d/（played/called/moved/loved/arrived/varied）；词根末尾是清辅音（p/k/f/s等）→ 读 /t/（looked/stopped）；词根末尾是 /t/ 或 /d/ → 读 /ɪd/（wanted/needed）。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-d 词尾浊爆破",
+      "words": [
+        "add",
+        "odd",
+        "domain",
+        "demand",
+        "devote"
+      ]
+    },
+    {
+      "label": "-ed /d/ 结尾串",
+      "words": [
+        "played",
+        "called",
+        "moved",
+        "loved",
+        "arrived",
+        "varied"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "do",
+      "hl": "d",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/duː/",
+      "subgroup": "d",
+      "meaning": "v. 做，执行；（助动词）构成疑问/否定",
+      "etymology": "古英语 dōn「做、执行」，日耳曼同根，与德语 tun 同源。核心义「使某事发生」，引申为助动词用法（do you know?）和替代动词（I did so）。",
+      "roots": [
+        {
+          "part": "do（dōn）",
+          "meaning": "做、执行"
+        }
+      ],
+      "phonetics": "d + oo /uː/，/d/ 的标准锚定词——舌尖抵上齿龈，声带振动爆破，紧跟长元音 /uː/。",
+      "tip": "do/does/did/done 是不规则变位，do 同时是实义动词（do homework）和助动词（do you like it?），两用须分清。",
+      "core": "「让某事从无到有地发生」的行动感——do 是所有动作的起点：做一件事、问一个问题、代替一个动词，全都是「让行动发生」这一根。",
+      "senses": [
+        {
+          "gloss": "v. 做，执行",
+          "logic": "最直接的本义：让动作从无到有地发生",
+          "en": "She did all the work herself in one afternoon.",
+          "zh": "她一个下午独自做完了所有工作。"
+        },
+        {
+          "gloss": "aux. 构成疑问/否定（助动词）",
+          "logic": "实义动词「做」语法化后虚化为句法标记：帮助其他动词完成疑问和否定结构",
+          "en": "Do you happen to know where the station is?",
+          "zh": "你碰巧知道车站在哪吗？"
+        },
+        {
+          "gloss": "v. 替代前述动词（避免重复）",
+          "logic": "「做」的泛化：用 do 代替前文已出现的动词",
+          "en": "She runs faster than I do.",
+          "zh": "她跑得比我快。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "deed",
+          "gloss": "行为，事迹（所做之事的名词化）"
+        },
+        {
+          "w": "undo",
+          "gloss": "撤销，解开（反向操作）"
+        },
+        {
+          "w": "doing",
+          "gloss": "所作所为；正在做的事"
+        }
+      ],
+      "examples": [
+        {
+          "en": "What do you usually do on weekends?",
+          "zh": "你周末通常做什么？",
+          "source": "造句"
+        },
+        {
+          "en": "do or die",
+          "zh": "「背水一战」——高频习语，字面为「做或死」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "perform",
+          "ipa": "/pəˈfɔːrm/",
+          "note": "「执行/表演」，比 do 更正式，强调按规范完成；perform surgery（做手术）",
+          "gloss": "执行，表演"
+        },
+        {
+          "w": "carry out",
+          "ipa": "/ˌkæri ˈaʊt/",
+          "note": "「执行（计划/任务）」，比 do 更强调贯彻到底；carry out a plan（执行计划）",
+          "gloss": "执行，贯彻到底"
+        },
+        {
+          "w": "execute",
+          "ipa": "/ˈeksɪkjuːt/",
+          "note": "「执行（命令/程序）」，最正式，多用于计划、命令、代码；execute a strategy（执行策略）",
+          "gloss": "执行，实施"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "undo",
+          "note": "撤销、解开"
+        },
+        {
+          "w": "neglect",
+          "note": "忽视、不去做"
+        }
+      ],
+      "nuance": "do 是最通用的「做」，perform 强调按规范执行（有表演含义），carry out 强调贯彻始终，execute 最正式且含「将计划付诸实施」的完成感。「do a job」是口语，「execute a task」是正式书面语。"
+    },
+    {
+      "word": "day",
+      "hl": "d",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/deɪ/",
+      "subgroup": "d",
+      "meaning": "n. 天，白昼；时期，年代",
+      "etymology": "古英语 dæg，日耳曼同根，与德语 Tag 同源。除「一天」外，复数 days 表示「时代、时期」（in Shakespeare's days 在莎士比亚时代）。",
+      "roots": [
+        {
+          "part": "day（dæg）",
+          "meaning": "白昼、一天"
+        }
+      ],
+      "phonetics": "d + ay /eɪ/，/d/ 发音后直接连读双元音 /eɪ/，注意 a 读 /eɪ/ 不读 /æ/。",
+      "core": "「天亮着、看得见的那一段」的明亮感——太阳升起，世界清晰可见，与黑夜的幽暗形成对比；引申为一段有标志意义的时光。",
+      "senses": [
+        {
+          "gloss": "n. 天，白昼（24小时或白天）",
+          "logic": "本义：从日出到日落的明亮时段，或完整的一个日夜周期",
+          "en": "Each day brought new challenges and unexpected joys.",
+          "zh": "每一天都带来新的挑战和意外的喜悦。"
+        },
+        {
+          "gloss": "n. 时期，年代（days 复数）",
+          "logic": "把「白天」拉长为一个时代：某段特征鲜明的时光",
+          "en": "In those days, people communicated mostly by letter.",
+          "zh": "在那个年代，人们主要靠书信沟通。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "daily",
+          "gloss": "每日的，日常的"
+        },
+        {
+          "w": "daylight",
+          "gloss": "日光，白昼"
+        },
+        {
+          "w": "daytime",
+          "gloss": "白天时段"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The project was completed three days ahead of schedule.",
+          "zh": "项目提前三天完成。",
+          "source": "造句"
+        },
+        {
+          "en": "day by day",
+          "zh": "「日复一日，一天天地」——强调渐进过程的高频副词短语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "daytime",
+          "ipa": "/ˈdeɪtaɪm/",
+          "note": "「白天时段」，强调与夜晚相对的时间段，比 day 更具体",
+          "gloss": "白天时段"
+        },
+        {
+          "w": "era",
+          "ipa": "/ˈɪərə/",
+          "note": "「时代/年代」义的近义词，比 days（复数）更正式；a golden era（黄金时代）",
+          "gloss": "时代，纪元"
+        },
+        {
+          "w": "date",
+          "ipa": "/deɪt/",
+          "note": "「日期」，指具体的某天，比 day 更精确",
+          "gloss": "日期"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "night",
+          "note": "夜晚"
+        },
+        {
+          "w": "darkness",
+          "note": "黑暗"
+        }
+      ],
+      "nuance": "day 最通用，可指「一天」或「时代」；daytime 专指白昼时段（与 nighttime 对应）；era/age 指较长的历史时期（比 days 时间跨度大）；date 指日历上的具体一天（a date = 日期/约会）。"
+    },
+    {
+      "word": "desk",
+      "hl": "d",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/desk/",
+      "subgroup": "d",
+      "meaning": "n. 书桌；服务台；（报社/机构）部门",
+      "etymology": "中世纪拉丁语 desca，源自意大利语 desco「桌子」，与 disk（圆盘）、disc 同根——都来自希腊语 diskos（圆盘），书桌本义是「扁平的板」。",
+      "roots": [
+        {
+          "part": "desk（desca/diskos）",
+          "meaning": "平板、桌面"
+        }
+      ],
+      "phonetics": "d + e /e/ + sk，三音节紧凑：/d/ 爆破 + /e/ 短元音 + /sk/ 清辅音结尾。注意 sk 清晰发出，别吞掉。",
+      "tip": "desk 作「部门」义常见于新闻机构：sports desk（体育部）、news desk（新闻部）——这是职场英语高频义。",
+      "core": "「一块平整的板面，供人伏案书写工作」的依托感——书桌、服务台、新闻部门，都是「在这个平面上处理事务」的延伸。",
+      "senses": [
+        {
+          "gloss": "n. 书桌，工作台",
+          "logic": "最直接的本义：供书写/工作的扁平家具",
+          "en": "She spent hours at her desk finishing the report.",
+          "zh": "她在书桌前坐了好几个小时才完成报告。"
+        },
+        {
+          "gloss": "n. 服务台，柜台",
+          "logic": "「工作台面」的公共场所版：为来访者提供服务的接待台",
+          "en": "Please check in at the front desk upon arrival.",
+          "zh": "到达后请在前台办理入住。"
+        },
+        {
+          "gloss": "n. （报社/机构）部门",
+          "logic": "一张桌子代表一个工作单元 → 一个专门负责某类事务的部门",
+          "en": "The news desk worked through the night covering the election.",
+          "zh": "新闻部通宵工作报道选举。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "desktop",
+          "gloss": "桌面；台式电脑"
+        },
+        {
+          "w": "helpdesk",
+          "gloss": "技术支持台，帮助台"
+        },
+        {
+          "w": "deskbound",
+          "gloss": "伏案工作的，久坐办公室的"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She cleared her desk before leaving the office.",
+          "zh": "她离开办公室前清理了桌面。",
+          "source": "造句"
+        },
+        {
+          "en": "front desk / help desk",
+          "zh": "「前台 / 服务台」——酒店和IT支持高频词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "table",
+          "ipa": "/ˈteɪbl/",
+          "note": "「桌子」，比 desk 更通用，desk 特指书桌/工作台",
+          "gloss": "桌子（通用）"
+        },
+        {
+          "w": "workstation",
+          "ipa": "/ˈwɜːrksteɪʃn/",
+          "note": "「工作站」，现代办公/电脑专用，比 desk 更强调技术设备",
+          "gloss": "工作站，电脑工作台"
+        },
+        {
+          "w": "counter",
+          "ipa": "/ˈkaʊntər/",
+          "note": "「柜台」，在「服务台」义上与 desk 有重叠，但 counter 更强调交易隔断感",
+          "gloss": "柜台，服务台"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "desk 特指用于工作/学习的书桌（含抽屉），table 是通用桌子（餐桌/会议桌），workstation 指配备电脑的工作台，counter 是实体隔断式服务台（银行柜台）。"
+    },
+    {
+      "word": "decide",
+      "hl": "d",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/dɪˈsaɪd/",
+      "subgroup": "d",
+      "meaning": "v. 决定；裁决；使下定决心",
+      "etymology": "拉丁语 decidere = de-（切断）+ caedere（切割）= 「切断其他可能性」→ 做决定。与 homicide（杀人罪）、scissors（剪刀）同根——caedere 家族都在「切」。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "切断、去除"
+        },
+        {
+          "part": "-cide (caedere)",
+          "meaning": "切割"
+        }
+      ],
+      "phonetics": "de- /dɪ/ + CIDE /saɪd/，重音在后，-cide 读 /saɪd/ 不读 /sɪd/。",
+      "core": "「一刀切下去，把其他可能都砍掉，只留一个」的决断感——词根 caedere 就是「切」，决定就是在众多选择中切开一条路。",
+      "senses": [
+        {
+          "gloss": "v. 决定（做出选择）",
+          "logic": "核心义：「切掉」其他选项，留下唯一行动路径",
+          "en": "After weeks of debate, they finally decided on the blue design.",
+          "zh": "讨论了好几周后，他们最终决定了蓝色方案。"
+        },
+        {
+          "gloss": "v. 裁决（正式判定）",
+          "logic": "法官「切开」争议：做出有约束力的判定",
+          "en": "The court will decide the case next month.",
+          "zh": "法院将于下月对此案做出裁决。"
+        },
+        {
+          "gloss": "v. 使下定决心",
+          "logic": "「切掉」犹豫：某个因素让人不再摇摆",
+          "en": "That one conversation decided her future.",
+          "zh": "那一次谈话决定了她的未来。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "decision",
+          "gloss": "决定，决议（名词）"
+        },
+        {
+          "w": "decisive",
+          "gloss": "果断的；决定性的"
+        },
+        {
+          "w": "undecided",
+          "gloss": "未决定的，犹豫不决的"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She decided to study abroad after weighing all the options.",
+          "zh": "权衡了所有选择后，她决定出国留学。",
+          "source": "造句"
+        },
+        {
+          "en": "decide on / decide against",
+          "zh": "「决定选择…… / 决定不……」——介词搭配决定语义方向。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "determine",
+          "ipa": "/dɪˈtɜːrmɪn/",
+          "note": "「确定/决定」，比 decide 更正式，也可指「查明」；determine the cause（查明原因）",
+          "gloss": "确定，决定（正式）"
+        },
+        {
+          "w": "resolve",
+          "ipa": "/rɪˈzɒlv/",
+          "note": "「下定决心」，比 decide 更强调内心的坚定意志；resolve to change（下决心改变）",
+          "gloss": "下定决心（意志坚定）"
+        },
+        {
+          "w": "choose",
+          "ipa": "/tʃuːz/",
+          "note": "「选择」，比 decide 更口语，强调从若干选项中挑一；choose a career（选择职业）",
+          "gloss": "选择（口语）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "hesitate",
+          "note": "犹豫、迟疑"
+        },
+        {
+          "w": "waver",
+          "note": "摇摆、拿不定主意"
+        }
+      ],
+      "nuance": "decide 是最通用的「做决定」，determine 更正式且兼有「查明/确定」义，resolve 强调意志力和坚定性（常搭配 to do sth），choose 侧重在选项间的挑选动作。「I decided to go」= 做了决定，「I resolved to go」= 下定决心去。"
+    },
+    {
+      "word": "develop",
+      "hl": "d",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/dɪˈveləp/",
+      "subgroup": "d",
+      "meaning": "v. 发展；开发；研发；（胶卷）冲洗；形成（习惯/病症）",
+      "etymology": "法语 développer = dé-（解开）+ envelopper（包裹）= 「打开包裹」→ 展开、发展。与 envelope（信封）同根——信封是把东西「包起来」，develop 是「展开它」。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "解开、展开"
+        },
+        {
+          "part": "-velop (envelopper)",
+          "meaning": "包裹"
+        }
+      ],
+      "phonetics": "de- /dɪ/ + VEL /vel/ + op，重音在中间音节，词尾 -op 轻读 /əp/；注意不读 de-vel-OPE。",
+      "core": "「把裹着的东西一层层打开，让藏着的显露出来」的展开感——城市从小到大、习惯从无到有、胶片从潜像到显影，全都是「展开包裹」。",
+      "senses": [
+        {
+          "gloss": "v. 发展，壮大",
+          "logic": "从包裹中「展开」：潜力从小到大、从弱到强",
+          "en": "The startup developed from a two-person team into a global company.",
+          "zh": "这家创业公司从两人团队发展成了全球企业。"
+        },
+        {
+          "gloss": "v. 开发，研制（产品/技术）",
+          "logic": "把构想「展开」成可用的成品",
+          "en": "Engineers developed a new battery that lasts twice as long.",
+          "zh": "工程师们开发了一种续航翻倍的新型电池。"
+        },
+        {
+          "gloss": "v. 形成，养成（习惯/病症）",
+          "logic": "某种状态从潜伏「展开」成显性——正面或负面均可",
+          "en": "He developed a keen interest in astronomy during college.",
+          "zh": "他在大学期间培养起了对天文学的浓厚兴趣。"
+        },
+        {
+          "gloss": "v. 冲洗（胶片）",
+          "logic": "让胶片上的潜像「显现」出来——最字面的「展开」",
+          "en": "She took the film to be developed at a local shop.",
+          "zh": "她把胶卷拿去本地店铺冲洗。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "development",
+          "gloss": "发展，开发（名词）"
+        },
+        {
+          "w": "developer",
+          "gloss": "开发者；房地产开发商"
+        },
+        {
+          "w": "underdeveloped",
+          "gloss": "欠发达的；未充分冲洗的"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The company invested heavily to develop new software.",
+          "zh": "公司大量投入资金开发新软件。",
+          "source": "造句"
+        },
+        {
+          "en": "develop a habit / develop a disease",
+          "zh": "「形成习惯 / 患上疾病」——主动/被动双向搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "advance",
+          "ipa": "/ədˈvæns/",
+          "note": "「推进/促进发展」，比 develop 更强调向前的动力；advance technology（推动技术进步）",
+          "gloss": "推进，促进（向前）"
+        },
+        {
+          "w": "cultivate",
+          "ipa": "/ˈkʌltɪveɪt/",
+          "note": "「培养/培育」，比 develop 更强调长期用心的过程；cultivate a skill（培养技能）",
+          "gloss": "培养，耕耘（有意为之）"
+        },
+        {
+          "w": "evolve",
+          "ipa": "/ɪˈvɒlv/",
+          "note": "「演变/进化」，强调自然渐进过程，比 develop 少了主动开发的含义",
+          "gloss": "演变，进化（自然过程）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "stagnate",
+          "note": "停滞不前"
+        },
+        {
+          "w": "decline",
+          "note": "衰退、衰落"
+        }
+      ],
+      "nuance": "develop 是最通用的「发展」，既可主动开发（develop a product）又可自然生成（develop a habit）；cultivate 强调精心培育（多用于技能/关系）；evolve 强调自然演化无人为干预；advance 着重向前推进的方向性。"
+    },
+    {
+      "word": "dark",
+      "hl": "d",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/dɑːrk/",
+      "subgroup": "d",
+      "meaning": "adj. 黑暗的；深色的；阴郁的  n. 黑暗",
+      "etymology": "古英语 deorc，日耳曼同根。「无光」→ 「无知、隐秘」→ 「阴郁」，语义链清晰。dark matter（暗物质）、dark age（黑暗时代）都用此核心义。",
+      "roots": [
+        {
+          "part": "dark（deorc）",
+          "meaning": "黑暗、无光"
+        }
+      ],
+      "phonetics": "d + ar /ɑːr/ + k，美式卷舌 r 在元音后，/ɑːr/ 拉长；k 在词尾轻爆破或不送气。",
+      "core": "「光被抽走后的浑沌——看不见、摸不透、不知道前面有什么」的遮蔽感——物理的黑暗、颜色的深、情绪的阴郁，都是「光明缺席」的状态。",
+      "senses": [
+        {
+          "gloss": "adj. 黑暗的（无光）",
+          "logic": "最直接的本义：缺乏光线，看不见",
+          "en": "The cave was so dark they had to feel their way along the walls.",
+          "zh": "山洞黑得他们只能摸着墙壁走。"
+        },
+        {
+          "gloss": "adj. 深色的（颜色）",
+          "logic": "「缺光」延伸到颜色：接近黑色的深色调",
+          "en": "She wore a dark blue dress to the evening reception.",
+          "zh": "她穿了一条深蓝色连衣裙出席晚宴。"
+        },
+        {
+          "gloss": "adj. 阴郁的，悲观的（情绪/前景）",
+          "logic": "「黑暗」映射到心理：心情看不到亮光",
+          "en": "He was in a dark mood after hearing the news.",
+          "zh": "听到那个消息后他心情很低沉。"
+        },
+        {
+          "gloss": "n. 黑暗；不知情（in the dark）",
+          "logic": "名词化：「没有光」或「没有信息」的状态",
+          "en": "The details were kept in the dark for years.",
+          "zh": "那些细节被隐瞒了多年。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "darkness",
+          "gloss": "黑暗，阴暗（名词）"
+        },
+        {
+          "w": "darken",
+          "gloss": "使变暗；使阴郁"
+        },
+        {
+          "w": "darkly",
+          "gloss": "阴暗地；神秘莫测地"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The forest was so dark that she couldn't see her hand in front of her face.",
+          "zh": "森林黑得她连自己的手都看不见。",
+          "source": "造句"
+        },
+        {
+          "en": "in the dark / dark humor",
+          "zh": "「被蒙在鼓里 / 黑色幽默」——两种引申义的高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "gloomy",
+          "ipa": "/ˈɡluːmi/",
+          "note": "「阴郁的」，侧重情绪和气氛的压抑，比 dark 更偏心理；a gloomy forecast（悲观预测）",
+          "gloss": "阴郁的，幽暗的"
+        },
+        {
+          "w": "dim",
+          "ipa": "/dɪm/",
+          "note": "「昏暗的」，指光线不足但未全黑，比 dark 程度轻；a dim room（昏暗的房间）",
+          "gloss": "昏暗的（光线不足）"
+        },
+        {
+          "w": "obscure",
+          "ipa": "/əbˈskjʊər/",
+          "note": "「晦涩的/不知名的」，引申义多，强调不清晰或默默无闻；an obscure poet（无名诗人）",
+          "gloss": "晦涩的，不知名的"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "bright",
+          "note": "明亮的"
+        },
+        {
+          "w": "light",
+          "note": "有光的；浅色的"
+        }
+      ],
+      "nuance": "dark 最通用，可指物理黑暗（dark room）或抽象阴暗（dark thoughts）；dim 是「昏暗」（光线不足但未到全黑）；gloomy 偏情绪上的压抑感；obscure 的主要义是「不清晰/默默无闻」，与 dark 在「隐晦」义上有重叠。"
+    },
+    {
+      "word": "dream",
+      "hl": "dr",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/driːm/",
+      "subgroup": "d",
+      "meaning": "n. 梦；梦想  v. 做梦；梦想，渴望",
+      "etymology": "古英语 drēam 最初意为「欢乐、音乐」，中古英语才转为「睡梦」。睡梦中的快乐意象留住了这个词的温柔内核，引申为「美好愿望」。",
+      "roots": [
+        {
+          "part": "dream（drēam）",
+          "meaning": "欢乐→睡梦"
+        }
+      ],
+      "phonetics": "dr- 连缀辅音 + eam /iːm/，/d/ 和 /r/ 需连读流畅，别在中间停顿。与 cream、stream、team 押韵。",
+      "core": "「闭上眼后，另一个世界在脑海中自动播放」的浮现感——睡觉时的画面、醒着时的渴望，都是内心世界不受现实约束的展现。古英语原义「欢乐、音乐」，梦里保留了这层温柔底色。",
+      "senses": [
+        {
+          "gloss": "n. 梦，睡梦",
+          "logic": "本义：睡眠中脑海中自然浮现的画面和情节",
+          "en": "She had a vivid dream about flying over the ocean.",
+          "zh": "她做了一个飞越大海的逼真梦。"
+        },
+        {
+          "gloss": "n. 梦想，愿望",
+          "logic": "把「睡梦」的美好投射到现实：心中渴望实现的目标",
+          "en": "His dream of becoming a pilot finally came true.",
+          "zh": "他成为飞行员的梦想终于实现了。"
+        },
+        {
+          "gloss": "v. 做梦",
+          "logic": "动词化：在睡眠中经历梦境",
+          "en": "I dreamed of my childhood home again last night.",
+          "zh": "我昨晚又梦见了我童年的家。"
+        },
+        {
+          "gloss": "v. 梦想，渴望",
+          "logic": "动词化的「渴望」：心中反复浮现、想要实现的愿望",
+          "en": "She has always dreamed of traveling the world solo.",
+          "zh": "她一直梦想独自环游世界。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "dreamer",
+          "gloss": "梦想家；爱做梦的人"
+        },
+        {
+          "w": "dreamlike",
+          "gloss": "如梦似幻的"
+        },
+        {
+          "w": "daydream",
+          "gloss": "白日梦，走神"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She dreamed of becoming an astronaut from the age of five.",
+          "zh": "她从五岁起就梦想成为宇航员。",
+          "source": "造句"
+        },
+        {
+          "en": "dream job / pipe dream",
+          "zh": "「理想工作 / 白日梦（不切实际的幻想）」——搭配决定褒贬。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "aspire",
+          "ipa": "/əˈspaɪər/",
+          "note": "「渴望、有志于」，比 dream 更强调主动追求的意志；aspire to greatness（志存高远）",
+          "gloss": "渴望，有志于"
+        },
+        {
+          "w": "fantasy",
+          "ipa": "/ˈfæntəsi/",
+          "note": "「幻想」，比 dream 更带不切实际的色彩；pure fantasy（纯粹的幻想）",
+          "gloss": "幻想，白日梦"
+        },
+        {
+          "w": "vision",
+          "ipa": "/ˈvɪʒn/",
+          "note": "「愿景」，比 dream 更具体、更有规划感；a clear vision for the future（清晰的未来愿景）",
+          "gloss": "愿景，远见"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "reality",
+          "note": "现实"
+        },
+        {
+          "w": "nightmare",
+          "note": "噩梦"
+        }
+      ],
+      "nuance": "dream 兼指睡梦和愿望，最通用；aspire 强调有意识地向上追求（不含睡梦义）；fantasy 偏不切实际的想象；vision 是最务实的「愿景」，常见于领导力和商业语境。「dream big」是励志口号，「have a vision」是战略规划。"
+    },
+    {
+      "word": "direct",
+      "hl": "d",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/dɪˈrekt/",
+      "subgroup": "d",
+      "meaning": "adj. 直接的；坦率的  v. 指导；导演；指路  adv. 直接地",
+      "etymology": "拉丁语 directus = di-（分开）+ regere（引导）= 「拉直引导」→ 直接。与 region（地区）、rule（统治）同根——都在讲「引导/管理」。director（导演/董事）是直接派生词。",
+      "roots": [
+        {
+          "part": "di- (dis-)",
+          "meaning": "分开、拉开"
+        },
+        {
+          "part": "-rect (regere)",
+          "meaning": "引导、统治"
+        }
+      ],
+      "phonetics": "di- /dɪ/ + RECT /rekt/，重音在后，-rect 中的 ct 需清晰发出两个辅音：/k/ + /t/。",
+      "core": "「从一点到另一点，不绕路、不打弯」的直线感——路径直接、说话直白、管理指挥，都是「直直朝目标去」。词根 regere「引导、拉直」是这条线的源头。",
+      "senses": [
+        {
+          "gloss": "adj. 直接的（路径/联系/因果关系）",
+          "logic": "「拉直的线」：中间没有弯折或中介",
+          "en": "There is a direct train from the airport to the city center.",
+          "zh": "从机场有直达市中心的火车。"
+        },
+        {
+          "gloss": "adj. 坦率的（说话方式）",
+          "logic": "把「直线」用在沟通上：不绕弯子，话直说",
+          "en": "She gave a direct answer that left no room for doubt.",
+          "zh": "她给了一个直截了当的答复，没有留下任何疑问。"
+        },
+        {
+          "gloss": "v. 指导；导演；管理",
+          "logic": "「引导方向」：把团队/演员/项目朝目标引导",
+          "en": "He directed the project from concept to completion.",
+          "zh": "他从概念到完成全程指导了这个项目。"
+        },
+        {
+          "gloss": "v. 指路，指向",
+          "logic": "把方向「对准」某处：告知或调整朝向",
+          "en": "Could you direct me to the nearest subway station?",
+          "zh": "你能告诉我最近的地铁站怎么走吗？"
+        },
+        {
+          "gloss": "adv. 直接地（中途不经停）",
+          "logic": "副词化：不绕路、不中转地",
+          "en": "The package was sent direct to her office.",
+          "zh": "包裹直接寄到了她的办公室。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "direction",
+          "gloss": "方向；指导；导演"
+        },
+        {
+          "w": "director",
+          "gloss": "导演；董事；负责人"
+        },
+        {
+          "w": "indirect",
+          "gloss": "间接的，迂回的（in-反义前缀）"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She gave me a direct answer without any hesitation.",
+          "zh": "她毫不犹豫地给了我一个直接的答复。",
+          "source": "造句"
+        },
+        {
+          "en": "direct flight / under the direction of",
+          "zh": "「直航 / 在……的指导下」——高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "straightforward",
+          "ipa": "/ˌstreɪtˈfɔːrwərd/",
+          "note": "「直截了当的」，形容词义最接近，强调无迂回；a straightforward answer（直白的回答）",
+          "gloss": "直截了当的，坦率的"
+        },
+        {
+          "w": "guide",
+          "ipa": "/ɡaɪd/",
+          "note": "「引导/指导」义的近义动词，比 direct 更温和，无命令感；guide a team（引导团队）",
+          "gloss": "引导，带领（温和版）"
+        },
+        {
+          "w": "manage",
+          "ipa": "/ˈmænɪdʒ/",
+          "note": "「管理/执导」义的近义词，比 direct 更侧重日常运营；manage a project（管理项目）",
+          "gloss": "管理，经营"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "indirect",
+          "note": "间接的，迂回的"
+        },
+        {
+          "w": "vague",
+          "note": "含糊的，不明确的"
+        }
+      ],
+      "nuance": "direct 作形容词既可指「路径/联系的直接」（direct route），也可指「说话方式的坦率」（direct manner）；straightforward 专指「坦率不绕弯子」；guide 是最温和的「引导」，direct 有更强的权威感；manage 更侧重行政管理。"
+    },
+    {
+      "word": "demand",
+      "hl": "d",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dɪˈmænd/",
+      "subgroup": "d",
+      "meaning": "v. 要求；需要  n. 要求；需求（量）",
+      "etymology": "拉丁语 demandare = de-（完全）+ mandare（委托、命令）= 「彻底委以命令」→ 要求。与 mandate（授权）、command（命令）同根——都含「发布指令」的核心义。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "向下、加强"
+        },
+        {
+          "part": "-mand (mandare)",
+          "meaning": "命令、委托"
+        }
+      ],
+      "phonetics": "de- /dɪ/ + MAND /mænd/，重音在后，-mand 的 æ 是前元音，嘴角拉开发短音。",
+      "core": "「伸出手，语气硬，不给不行」的施压感——要求别人做某事、市场需要某商品、事情客观上需要某条件，都带着一股「必须被满足」的力道。",
+      "senses": [
+        {
+          "gloss": "v. 要求（强硬地）",
+          "logic": "核心义：带着权威或急迫感发出命令",
+          "en": "The protesters demanded immediate action from the government.",
+          "zh": "抗议者要求政府立即采取行动。"
+        },
+        {
+          "gloss": "v. 需要（客观条件上）",
+          "logic": "从「人要求」泛化到「事要求」：客观条件迫使",
+          "en": "This kind of work demands extreme patience.",
+          "zh": "这类工作需要极大的耐心。"
+        },
+        {
+          "gloss": "n. 要求；需求（量）",
+          "logic": "名词化：「要求」的内容或「需要」的数量",
+          "en": "The demand for electric vehicles has doubled in three years.",
+          "zh": "电动汽车的需求量在三年内翻了一番。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "demanding",
+          "gloss": "要求高的，苛求的"
+        },
+        {
+          "w": "on-demand",
+          "gloss": "按需的，随选的"
+        },
+        {
+          "w": "command",
+          "gloss": "命令，指挥（同根词 co-完全+mand）"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The workers demanded a 10% pay rise.",
+          "zh": "工人们要求加薪10%。",
+          "source": "造句"
+        },
+        {
+          "en": "supply and demand / in high demand",
+          "zh": "「供需关系 / 需求旺盛」——经济学核心词对。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "require",
+          "ipa": "/rɪˈkwaɪər/",
+          "note": "「需要/要求」，比 demand 更中性，无强制意味；require approval（需要审批）",
+          "gloss": "需要，要求（中性客观）"
+        },
+        {
+          "w": "insist",
+          "ipa": "/ɪnˈsɪst/",
+          "note": "「坚持/坚决要求」，强调持续施压；insist on quality（坚持质量）",
+          "gloss": "坚持，坚决要求"
+        },
+        {
+          "w": "claim",
+          "ipa": "/kleɪm/",
+          "note": "「主张/索取」，比 demand 更侧重正当权利的主张；claim compensation（索赔）",
+          "gloss": "主张，索取（正当权利）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "offer",
+          "note": "提供，主动给予"
+        },
+        {
+          "w": "supply",
+          "note": "供给，供应"
+        }
+      ],
+      "nuance": "demand 含有权威或强迫意味（不满足就有后果），require 是客观的必要条件，insist 强调意志力的坚持，claim 侧重主张权利。「demand an apology」比「require an apology」语气强烈得多。"
+    },
+    {
+      "word": "domain",
+      "hl": "d",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/doʊˈmeɪn/",
+      "subgroup": "d",
+      "meaning": "n. 领域，范畴；领土；（互联网）域名",
+      "etymology": "拉丁语 dominium「所有权、领地」，源自 dominus（主人）。与 domestic（家庭的）、dominant（统治的）、dominion（统治权）同根——都在讲「主人与领地」的关系。",
+      "roots": [
+        {
+          "part": "dom- (dominus)",
+          "meaning": "主人、领主"
+        },
+        {
+          "part": "-ain (-inium)",
+          "meaning": "领地、所有"
+        }
+      ],
+      "phonetics": "do- /doʊ/ + MAIN /meɪn/，重音在后；domain 和 dominate 词头相同但重音不同。",
+      "core": "「某个人/势力拥有并说了算的地盘」的领属感——知识领域、网络域名、国王领土，都是「属于某个主人的范围」。词根 dom-（主人）是这一切的源头。",
+      "senses": [
+        {
+          "gloss": "n. 领域，范畴（知识/活动）",
+          "logic": "「领地」的抽象版：某人的专长或管辖范围",
+          "en": "This discovery opened up a whole new domain of scientific inquiry.",
+          "zh": "这一发现开启了科学探索的一个全新领域。"
+        },
+        {
+          "gloss": "n. 领土，领地",
+          "logic": "最字面的「主人的地盘」：政治或法律管辖的土地",
+          "en": "The castle once served as the lord's domain.",
+          "zh": "这座城堡曾经是领主的领地。"
+        },
+        {
+          "gloss": "n. （互联网）域名",
+          "logic": "数字世界的「领地」：你在网上的专属地址",
+          "en": "The company secured the domain name before launching the product.",
+          "zh": "公司在产品发布前就注册好了域名。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "dominate",
+          "gloss": "统治，支配（同根动词）"
+        },
+        {
+          "w": "domestic",
+          "gloss": "家庭的；国内的（家是主人的领域）"
+        },
+        {
+          "w": "dominion",
+          "gloss": "统治权，领土（正式/法律用语）"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Artificial intelligence is transforming every domain of human activity.",
+          "zh": "人工智能正在改变人类活动的每个领域。",
+          "source": "造句"
+        },
+        {
+          "en": "public domain / domain name",
+          "zh": "「公共领域（版权已到期）/ 域名」——法律和互联网高频词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "field",
+          "ipa": "/fiːld/",
+          "note": "「领域/专业」，比 domain 更口语，多指学科或行业；field of study（研究领域）",
+          "gloss": "领域，专业（口语）"
+        },
+        {
+          "w": "realm",
+          "ipa": "/relm/",
+          "note": "「领域/王国」，比 domain 更文学化或更正式；the realm of possibility（可能性的范畴）",
+          "gloss": "领域，王国（文学化）"
+        },
+        {
+          "w": "sphere",
+          "ipa": "/sfɪər/",
+          "note": "「范围/圈子」，比 domain 更强调影响的覆盖面；sphere of influence（势力范围）",
+          "gloss": "范围，圈子（影响力覆盖）"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "domain 强调「隶属于某人/某机构的专属领地或领域」，realm 更文学化（可指现实王国），field 最口语（学科/行业），sphere 强调影响力覆盖的空间范围。public domain 是法律固定表达，指版权已进入公共所有的领域。"
+    },
+    {
+      "word": "devote",
+      "hl": "d",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dɪˈvoʊt/",
+      "subgroup": "d",
+      "meaning": "v. 把……奉献给；专注于；献身于",
+      "etymology": "拉丁语 devovere = de-（完全）+ vovere（发誓）= 「完全发誓献出」→ 奉献、致力。与 vote（投票，源自「庄严承诺」）、vow（誓言）同根。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "完全、彻底"
+        },
+        {
+          "part": "-vot- (vovere)",
+          "meaning": "发誓、承诺"
+        }
+      ],
+      "phonetics": "de- /dɪ/ + VOTE /voʊt/，重音在后，-ote 的 o 读 /oʊ/，词尾哑 e 拉长元音。",
+      "tip": "devote to + 名词/动名词：devote oneself to science（献身科学）；devoted adj. 「忠诚的、深情的」；devotion n. 「奉献、虔诚」——整个词族核心义一脉相承。",
+      "core": "「把自己全部投进去，像在神前发誓一样郑重」的献出感——献身科学、投入时间、专注一事，都是毫无保留地给出自己。词根 vovere「发誓」赋予它庄严感。",
+      "senses": [
+        {
+          "gloss": "v. 把……奉献给",
+          "logic": "核心义：郑重地将时间/精力/生命献给某对象",
+          "en": "She has devoted her entire career to public health.",
+          "zh": "她把整个职业生涯都奉献给了公共卫生事业。"
+        },
+        {
+          "gloss": "v. 专注于（devote oneself to）",
+          "logic": "把全部注意力「献出」给一件事",
+          "en": "He devoted himself to perfecting every single detail.",
+          "zh": "他全身心投入，力求完美每一个细节。"
+        },
+        {
+          "gloss": "v. 献身于",
+          "logic": "最高程度的投入：将生命的意义与某事业绑定",
+          "en": "She devoted her life to helping the underprivileged.",
+          "zh": "她献身于帮助弱势群体。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "devotion",
+          "gloss": "奉献，虔诚，热爱"
+        },
+        {
+          "w": "devoted",
+          "gloss": "忠诚的；深爱的"
+        },
+        {
+          "w": "devotee",
+          "gloss": "热爱者，狂热爱好者"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She devoted thirty years of her life to medical research.",
+          "zh": "她把人生三十年献给了医学研究。",
+          "source": "造句"
+        },
+        {
+          "en": "devote time/resources to",
+          "zh": "「把时间/资源投入到……」——学术和职场高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "dedicate",
+          "ipa": "/ˈdedɪkeɪt/",
+          "note": "「献给/奉献」，与 devote 最接近，但 dedicate 更常用于致敬他人（dedicate a book to）或正式场合",
+          "gloss": "献给，奉献（正式致意）"
+        },
+        {
+          "w": "commit",
+          "ipa": "/kəˈmɪt/",
+          "note": "「承诺投入」，比 devote 更强调立下约定；commit to a goal（承诺实现目标）",
+          "gloss": "承诺，投入（立下约定）"
+        },
+        {
+          "w": "consecrate",
+          "ipa": "/ˈkɒnsɪkreɪt/",
+          "note": "「神圣化地献出」，最正式，多用于宗教语境；consecrate one's life to God（将生命奉献给上帝）",
+          "gloss": "神圣奉献（宗教语境）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "neglect",
+          "note": "忽视、不管"
+        },
+        {
+          "w": "abandon",
+          "note": "放弃、抛弃"
+        }
+      ],
+      "nuance": "devote 和 dedicate 都是「奉献」，但 devote oneself to 强调长期投入精力（时间/生命）；dedicate 多用于书籍题词或正式致敬；commit 侧重作出承诺并坚守；consecrate 有宗教庄严感，日常少用。"
+    },
+    {
+      "word": "dominant",
+      "hl": "d",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈdɒmɪnənt/",
+      "subgroup": "d",
+      "meaning": "adj. 占主导地位的；支配性的；（基因）显性的",
+      "etymology": "拉丁语 dominans，是 dominare（统治）的现在分词，源自 dominus（主人）。与 domain（领地）、domestic（家庭的）同根——都从「主人」出发。显性基因「压过」隐性基因，正是「统治」的生物学版。",
+      "roots": [
+        {
+          "part": "dom- (dominus)",
+          "meaning": "主人、统治者"
+        },
+        {
+          "part": "-ant",
+          "meaning": "形容词后缀，表「正在……的」"
+        }
+      ],
+      "phonetics": "DOM /dɒm/ + i + nant /nənt/，重音在首音节，-nant 弱读 /nənt/。",
+      "core": "「站在高处，压过所有其他」的支配感——主导地位、支配力量、显性基因（压过隐性），都是「我最强、我说了算」。词根 dom-「主人」是这股力量的来源。",
+      "senses": [
+        {
+          "gloss": "adj. 占主导地位的（最有影响力）",
+          "logic": "核心义：在同类中处于第一、压倒性的位置",
+          "en": "The company holds a dominant position in the smartphone market.",
+          "zh": "这家公司在智能手机市场占据主导地位。"
+        },
+        {
+          "gloss": "adj. 支配性的（控制）",
+          "logic": "从「位置最高」到「主动控制」：掌握决定权",
+          "en": "She has a dominant personality that shapes every meeting.",
+          "zh": "她的支配性个性影响着每一次会议。"
+        },
+        {
+          "gloss": "adj. （基因）显性的",
+          "logic": "生物学版「压过」：显性基因的表达盖过隐性基因",
+          "en": "Brown eyes are determined by a dominant gene.",
+          "zh": "棕色眼睛由显性基因决定。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "dominate",
+          "gloss": "统治，支配（动词）"
+        },
+        {
+          "w": "dominance",
+          "gloss": "支配地位，优势（名词）"
+        },
+        {
+          "w": "predominant",
+          "gloss": "占主导的（pre-加强版）"
+        }
+      ],
+      "examples": [
+        {
+          "en": "English has become the dominant language of international business.",
+          "zh": "英语已成为国际商务的主导语言。",
+          "source": "造句"
+        },
+        {
+          "en": "dominant gene / dominant position",
+          "zh": "「显性基因 / 主导地位」——生物学和商业的核心词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "predominant",
+          "ipa": "/prɪˈdɒmɪnənt/",
+          "note": "「占主导的」，与 dominant 同根，但 predominant 更强调在数量或程度上超过其他；the predominant view（主流观点）",
+          "gloss": "占主导的（数量/程度上）"
+        },
+        {
+          "w": "prevailing",
+          "ipa": "/prɪˈveɪlɪŋ/",
+          "note": "「普遍存在的、占优势的」，比 dominant 更强调在特定时间/地点的主流状态；the prevailing wind（主风向）",
+          "gloss": "普遍存在的，盛行的"
+        },
+        {
+          "w": "supreme",
+          "ipa": "/suːˈpriːm/",
+          "note": "「至高无上的」，比 dominant 更强调没有对手；supreme authority（最高权威）",
+          "gloss": "至高无上的（无对手）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "subordinate",
+          "note": "从属的，次要的"
+        },
+        {
+          "w": "recessive",
+          "note": "（基因）隐性的"
+        }
+      ],
+      "nuance": "dominant 强调在竞争中压过他者处于支配地位（含对抗意味），predominant 强调在数量/程度上占多数（较中性），prevailing 强调在特定时刻/地点最普遍的，supreme 强调无可超越的最高地位。"
+    },
+    {
+      "word": "add",
+      "hl": "dd",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/æd/",
+      "subgroup": "dd",
+      "meaning": "v. 加，添加；补充说；相加",
+      "etymology": "拉丁语 addere = ad-（向）+ dare（给）= 「向某处给予」→ 添加。与 date（给定时间）、data（给出的信息）同根——dare 家族都在「给出」。",
+      "roots": [
+        {
+          "part": "ad-",
+          "meaning": "向、朝"
+        },
+        {
+          "part": "-d (dare)",
+          "meaning": "给予"
+        }
+      ],
+      "phonetics": "a /æ/ + dd /d/，短元音后的双写 dd 锁定短元音，发音是单个 /d/。注意 /æ/ 是前元音，嘴角拉开。",
+      "tip": "add、added、addition、additional、additive——词族共用「添加」核心义，记一个带一串。",
+      "core": "「往已有的东西上再放一点，让它变多变大」的叠加感——加盐、加话、加数字，都是在原有基础上「再给一点」。词根 dare「给」是源头。",
+      "senses": [
+        {
+          "gloss": "v. 加，添加（物理/抽象）",
+          "logic": "核心义：在已有基础上增加",
+          "en": "Add a little more sugar if the sauce tastes too sour.",
+          "zh": "如果酱汁太酸就再加一点糖。"
+        },
+        {
+          "gloss": "v. 补充说",
+          "logic": "在已经说的话后面「再加一句」",
+          "en": "\"And one more thing,\" she added before leaving, \"check the back door.\"",
+          "zh": "「还有一件事，」她临走前补充道，「检查一下后门。」"
+        },
+        {
+          "gloss": "v. 相加（数学）",
+          "logic": "数学上的叠加：把两个或以上的数合起来",
+          "en": "If you add 5 and 7, you get 12.",
+          "zh": "5加7等于12。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "addition",
+          "gloss": "增加；加法（名词）"
+        },
+        {
+          "w": "additional",
+          "gloss": "额外的，附加的"
+        },
+        {
+          "w": "additive",
+          "gloss": "添加剂"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She added a pinch of salt to the soup.",
+          "zh": "她在汤里加了一撮盐。",
+          "source": "造句"
+        },
+        {
+          "en": "add up to / add value",
+          "zh": "「加起来等于 / 增加价值」——数学义和商业义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "append",
+          "ipa": "/əˈpend/",
+          "note": "「附加（在末尾）」，比 add 更正式，强调附在已有内容后面；append a note（附加注释）",
+          "gloss": "附加（在末尾）"
+        },
+        {
+          "w": "incorporate",
+          "ipa": "/ɪnˈkɔːrpəreɪt/",
+          "note": "「纳入/融合」，比 add 更强调整合进整体；incorporate feedback（纳入反馈）",
+          "gloss": "纳入，融合（进整体）"
+        },
+        {
+          "w": "supplement",
+          "ipa": "/ˈsʌplɪment/",
+          "note": "「补充/增补」，比 add 更强调填补不足；supplement the diet（补充饮食营养）",
+          "gloss": "补充，增补（填补不足）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "subtract",
+          "note": "减去"
+        },
+        {
+          "w": "remove",
+          "note": "去除"
+        }
+      ],
+      "nuance": "add 最通用，指任何形式的添加；append 专指附在末尾（文件末的附注）；incorporate 强调融合进整体（加进去后成为一部分）；supplement 强调填补缺口（原来不足，现在补上）。"
+    },
+    {
+      "word": "address",
+      "hl": "dd",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/əˈdres/",
+      "subgroup": "dd",
+      "meaning": "n. 地址；演讲  v. 称呼；致辞；处理（问题）",
+      "etymology": "古法语 adrecier = ad-（向）+ directus（引导）= 「把引导对准某处」→ 地址/致辞/处理。与 direct（直接）、director（导演）同根。",
+      "roots": [
+        {
+          "part": "ad-",
+          "meaning": "向、朝"
+        },
+        {
+          "part": "-dress (directus)",
+          "meaning": "引导、对准"
+        }
+      ],
+      "phonetics": "a- /ə/ + DRESS /dres/，重音在后（动词/名词均如此）；dd 读单 /d/，短元音 /ə/ 弱读。",
+      "tip": "address 三义：①地址（住址/邮箱）②演讲（presidential address）③处理（address the issue）——第三义是托福最高频考点。",
+      "core": "「把某个东西对准目标送过去」的对准感——地址是把信对准收件人，演讲是把话对准听众，处理问题是把行动对准症结，全是一个「对」字。词根 directus「引导」赋予它方向性。",
+      "senses": [
+        {
+          "gloss": "n. 地址",
+          "logic": "把信件/包裹「对准」一个特定位置投送",
+          "en": "Please confirm your shipping address before we dispatch.",
+          "zh": "我们发货前请确认你的收货地址。"
+        },
+        {
+          "gloss": "n. 演讲",
+          "logic": "把话「对准」一群听众正式发表",
+          "en": "The president delivered a televised address to the nation.",
+          "zh": "总统向全国发表了电视演讲。"
+        },
+        {
+          "gloss": "v. 称呼",
+          "logic": "把称呼「对准」特定的人",
+          "en": "How should I address the ambassador?",
+          "zh": "我该怎么称呼这位大使？"
+        },
+        {
+          "gloss": "v. 处理（问题）【托福高频考点】",
+          "logic": "把行动「对准」问题：正面直视并着手解决",
+          "en": "The report fails to address the underlying causes of the crisis.",
+          "zh": "这份报告未能触及危机的根本原因。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "addressee",
+          "gloss": "收信人，收件人"
+        },
+        {
+          "w": "addressable",
+          "gloss": "可寻址的；可解决的"
+        },
+        {
+          "w": "readdress",
+          "gloss": "重新处理；改写地址"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The report fails to address the root cause of the problem.",
+          "zh": "这份报告未能触及问题的根本原因。",
+          "source": "造句"
+        },
+        {
+          "en": "address the audience / keynote address",
+          "zh": "「向听众致辞 / 主旨演讲」——演讲义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "tackle",
+          "ipa": "/ˈtækl/",
+          "note": "「应对/处理（问题）」义的口语近义词，比 address 更强调主动出击；tackle climate change（应对气候变化）",
+          "gloss": "应对，处理（主动出击）"
+        },
+        {
+          "w": "handle",
+          "ipa": "/ˈhændl/",
+          "note": "「处理/应对」，比 address 更口语，更强调实际操作；handle a crisis（处理危机）",
+          "gloss": "处理，应对（操作层面）"
+        },
+        {
+          "w": "speech",
+          "ipa": "/spiːtʃ/",
+          "note": "「演讲」义的近义词，比 address（名词）更口语；give a speech = deliver an address",
+          "gloss": "演讲（口语化）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ignore",
+          "note": "忽视（处理义的反义）"
+        },
+        {
+          "w": "avoid",
+          "note": "回避"
+        }
+      ],
+      "nuance": "address a problem 是最正式书面的「处理问题」，暗含「正面直视并应对」；tackle 更口语但强调主动出击；handle 最口语，侧重实际操作层面；face 是「面对」但不一定处理。三者都可替换，但语体正式程度递减：address > tackle > handle。"
+    },
+    {
+      "word": "sudden",
+      "hl": "dd",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈsʌdn/",
+      "subgroup": "dd",
+      "meaning": "adj. 突然的，意外的",
+      "etymology": "拉丁语 subitus「突然的」，经古法语 sodain 演变为 sudden。词根 sub-（在下）+ ire（走）= 「从下面突然走出来」→ 突然出现。",
+      "roots": [
+        {
+          "part": "sud- (subitus)",
+          "meaning": "突然（从下方出现）"
+        }
+      ],
+      "phonetics": "SUD /sʌd/ + den /n/，重音在首音节，dd 读单 /d/，-en 弱化为音节 /n/（不读 /ən/ 而是成音节辅音）。",
+      "tip": "「all of a sudden」= 「突然间」，比 suddenly 更口语，是高频习语；sudden death（突然死亡/加时赛决胜）是体育高频词。",
+      "core": "「毫无预兆地一下冒出来，让人心跳漏一拍」的突现感——词根 sub-（在下面）+ ire（走）= 从下面突然走出来，没有铺垫，没有缓冲。",
+      "senses": [
+        {
+          "gloss": "adj. 突然的，意外的",
+          "logic": "本义即核心义：在没有任何先兆的情况下发生，令人措手不及",
+          "en": "A sudden gust of wind sent papers flying everywhere.",
+          "zh": "一阵突如其来的大风把文件吹得到处都是。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "suddenly",
+          "gloss": "突然地（副词）"
+        },
+        {
+          "w": "suddenness",
+          "gloss": "突然性（名词）"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Her sudden departure left everyone confused.",
+          "zh": "她突然离开让所有人都感到困惑。",
+          "source": "造句"
+        },
+        {
+          "en": "all of a sudden",
+          "zh": "「突然之间」——高频口语习语，相当于 suddenly。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "abrupt",
+          "ipa": "/əˈbrʌpt/",
+          "note": "「突然的/生硬的」，比 sudden 更强调令人不适的唐突，也可形容说话方式；an abrupt end（突然的结束）",
+          "gloss": "突然的，唐突的（生硬感）"
+        },
+        {
+          "w": "unexpected",
+          "ipa": "/ˌʌnɪkˈspektɪd/",
+          "note": "「意外的」，强调事先没有预料，比 sudden 更侧重「出乎意料」的情绪",
+          "gloss": "意外的（强调出乎预料）"
+        },
+        {
+          "w": "instant",
+          "ipa": "/ˈɪnstənt/",
+          "note": "「即时的」，强调时间上的当下，比 sudden 更中性；instant reaction（即时反应）",
+          "gloss": "即时的（不涉及突然性）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "gradual",
+          "note": "逐渐的，缓慢的"
+        },
+        {
+          "w": "expected",
+          "note": "预期中的"
+        }
+      ],
+      "nuance": "sudden 强调「时间上的突然」（没有先兆），abrupt 多一层「令人不适的生硬感」（abrupt manner 说话生硬），unexpected 侧重「违反预期的意外」（结果出乎意料），instant 是「即刻发生」但不含突然或意外的含义。"
+    },
+    {
+      "word": "middle",
+      "hl": "dd",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈmɪdl/",
+      "subgroup": "dd",
+      "meaning": "n./adj. 中间（的）；中期；中等",
+      "etymology": "古英语 middel，日耳曼同根，与德语 Mitte（中心）同源。Middle Ages（中世纪）= 欧洲历史的「中间时期」（古代与现代之间）。",
+      "roots": [
+        {
+          "part": "midd- (middel)",
+          "meaning": "中间"
+        },
+        {
+          "part": "-le",
+          "meaning": "名词/形容词后缀"
+        }
+      ],
+      "phonetics": "MID /mɪd/ + dle /dl/，dd 读单 /d/，-dle 是成音节辅音组合 /dl/，末尾 e 不发音。注意不要加一个额外的元音。",
+      "core": "「不偏不倚，就在正当中」的居中感——空间的中点、时间的中间、程度的居中，都是「两端之间的那个位置」。不极端，不边缘。",
+      "senses": [
+        {
+          "gloss": "n./adj. 中间（的）",
+          "logic": "最核心义：空间或序列的中心位置",
+          "en": "There is a large oak tree in the middle of the garden.",
+          "zh": "花园正中央有一棵大橡树。"
+        },
+        {
+          "gloss": "n. 中期",
+          "logic": "把「中间」放在时间轴上：过程的中间阶段",
+          "en": "The project is in its middle phase, with about six months remaining.",
+          "zh": "项目处于中期阶段，还剩大约六个月。"
+        },
+        {
+          "gloss": "n./adj. 中等",
+          "logic": "「中间」延伸到等级/程度：不上不下、不前不后的中等状态",
+          "en": "The middle class has been shrinking in many developed countries.",
+          "zh": "在许多发达国家，中产阶级一直在萎缩。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "midst",
+          "gloss": "中间，当中（in the midst of）"
+        },
+        {
+          "w": "middling",
+          "gloss": "中等的，普通的"
+        },
+        {
+          "w": "middleman",
+          "gloss": "中间人，中间商"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She sat in the middle of the room, surrounded by boxes.",
+          "zh": "她坐在房间中央，四周都是箱子。",
+          "source": "造句"
+        },
+        {
+          "en": "middle class / Middle Ages / middle ground",
+          "zh": "「中产阶级 / 中世纪 / 中间立场」——三个核心搭配义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "center",
+          "ipa": "/ˈsentər/",
+          "note": "「中心点」，比 middle 更精确指几何意义上的中心；the center of a circle（圆心）",
+          "gloss": "中心点（几何精确）"
+        },
+        {
+          "w": "midpoint",
+          "ipa": "/ˈmɪdpɔɪnt/",
+          "note": "「中点」，最精确，强调数学或线性中间点；the midpoint of the semester（学期中点）",
+          "gloss": "中点（数学/时间线）"
+        },
+        {
+          "w": "intermediate",
+          "ipa": "/ˌɪntərˈmiːdiət/",
+          "note": "「中间阶段的」，形容词义，多用于程度/等级；intermediate level（中级水平）",
+          "gloss": "中间阶段的（程度/等级）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "edge",
+          "note": "边缘"
+        },
+        {
+          "w": "extreme",
+          "note": "两端、极端"
+        }
+      ],
+      "nuance": "middle 是最通用的「中间」，center 强调几何或结构上的中心点（比 middle 更精确），midpoint 是数学/时间线上的精确中间，intermediate 专指「程度居中」（中级）而非物理位置。「in the middle of the road」是字面，「middle-of-the-road」是比喻义（中庸、折中）。"
+    },
+    {
+      "word": "hidden",
+      "hl": "dd",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈhɪdn/",
+      "subgroup": "dd",
+      "meaning": "adj. 隐藏的，秘密的  v. hide 的过去分词",
+      "etymology": "古英语 hydan「藏匿」，日耳曼同根，是 hide 的过去分词形式。hidden agenda（隐性议程）、hidden gem（隐世珍宝）是高频搭配，均保留「藏在背后、不为人见」的核心义。",
+      "roots": [
+        {
+          "part": "hidd- (hydan)",
+          "meaning": "藏匿"
+        },
+        {
+          "part": "-en",
+          "meaning": "过去分词后缀"
+        }
+      ],
+      "phonetics": "HID /hɪd/ + den /n/，dd 读单 /d/，-en 成音节辅音 /n/；与 sudden、wooden、golden 同韵律。",
+      "tip": "hide → hid → hidden，不规则变位；「hidden costs」（隐性成本）是商业英语超高频词，托福阅读常见。",
+      "core": "「被藏起来，不在视线里，但你隐约感觉它在那里」的隐匿感——物理藏匿、信息遮蔽、议程不公开，都是「不被看见但存在」。",
+      "senses": [
+        {
+          "gloss": "adj. 隐藏的，秘密的",
+          "logic": "核心义：处于不被看见或不被知晓的状态",
+          "en": "The hidden door behind the bookshelf led to a secret room.",
+          "zh": "书架后面隐藏的门通向一间密室。"
+        },
+        {
+          "gloss": "v. hide 的过去分词（不规则）",
+          "logic": "「藏匿」动作的完成态：已经被藏好了",
+          "en": "She had hidden the documents where no one would find them.",
+          "zh": "她把文件藏在了没人能找到的地方。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "hide",
+          "gloss": "藏匿，隐藏（原形动词）"
+        },
+        {
+          "w": "hiding",
+          "gloss": "躲藏；藏匿处"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The document contained hidden fees that customers were never told about.",
+          "zh": "这份文件包含顾客从未被告知的隐性费用。",
+          "source": "造句"
+        },
+        {
+          "en": "hidden agenda / hidden gem",
+          "zh": "「隐性议程（不公开的真实目的）/ 隐世珍宝」——两种高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "concealed",
+          "ipa": "/kənˈsiːld/",
+          "note": "「隐藏的」，与 hidden 最近义，但 concealed 更强调「主动遮蔽」的行为；a concealed weapon（藏匿武器）",
+          "gloss": "隐藏的（刻意掩盖）"
+        },
+        {
+          "w": "covert",
+          "ipa": "/ˈkoʊvɜːrt/",
+          "note": "「秘密的、隐蔽的」，多用于间谍/军事语境，比 hidden 更正式；covert operations（秘密行动）",
+          "gloss": "秘密的，隐蔽的（军事/间谍）"
+        },
+        {
+          "w": "obscure",
+          "ipa": "/əbˈskjʊər/",
+          "note": "「晦涩的/不知名的」，比 hidden 更强调不清晰或不被关注；an obscure reference（晦涩的引用）",
+          "gloss": "晦涩的，不知名的（非刻意藏匿）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "visible",
+          "note": "可见的，明显的"
+        },
+        {
+          "w": "revealed",
+          "note": "被揭露的，公开的"
+        }
+      ],
+      "nuance": "hidden 最通用（既可指物理藏匿也可指信息隐藏），concealed 强调主动刻意掩盖（有人意图），covert 专用于秘密任务/行动（军事/政治语境），obscure 侧重「不清晰、不知名」而非「刻意藏匿」。"
+    },
+    {
+      "word": "odd",
+      "hl": "dd",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ɒd/",
+      "subgroup": "dd",
+      "meaning": "adj. 奇怪的；奇数的；偶尔的  n. 几率（odds）",
+      "etymology": "古北欧语 oddi「三角形的第三个点/奇数」，日耳曼同根。奇数是「不能被2整除的、剩下一个的」→ 引申为「与众不同的、奇怪的」。odds（复数）则指「几率」。",
+      "roots": [
+        {
+          "part": "odd（oddi）",
+          "meaning": "第三点、奇数"
+        }
+      ],
+      "phonetics": "o /ɒ/ + dd /d/，短元音后双写 dd，英式发音 /ɒ/ 是圆唇短元音；注意 odds（复数）= /ɒdz/。",
+      "tip": "odd 三义：①奇怪的（an odd feeling）②奇数的（odd numbers: 1, 3, 5…）③偶尔的（odd jobs 零工）——一词三用，语境判断。",
+      "core": "「配不上对、跟正常的不一样」的落单感——奇数是配不成对的数，奇怪是跟常规对不上的事，偶尔是不常来的那一次。odds（几率）也是从「不对称的差额」衍生出来的：赛中给弱者更多「差额」以提高公平性。",
+      "senses": [
+        {
+          "gloss": "adj. 奇怪的，反常的",
+          "logic": "「落单」引申为心理感受：跟常规不一样，让人觉得不对劲",
+          "en": "It struck me as odd that he never mentioned his family.",
+          "zh": "他从不提及家人，这让我觉得奇怪。"
+        },
+        {
+          "gloss": "adj. 奇数的（1,3,5…）",
+          "logic": "最原始的本义：不能被2整除、总有一个「落单」的数",
+          "en": "The houses on this side all have odd numbers.",
+          "zh": "这一侧的房子门牌全是奇数。"
+        },
+        {
+          "gloss": "adj. 偶尔的，零散的",
+          "logic": "不是规律的「配对」发生，而是零星、不固定的出现",
+          "en": "He makes a living doing odd jobs around the neighborhood.",
+          "zh": "他靠在邻里打零工谋生。"
+        },
+        {
+          "gloss": "n. 几率，可能性（odds 复数）",
+          "logic": "赌博中给弱者更多「差额」以使比赛公平 → 引申为「几率/胜算」",
+          "en": "Against all odds, she recovered and returned to the stage.",
+          "zh": "尽管希望渺茫，她还是康复并重返舞台。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "oddly",
+          "gloss": "奇怪地，古怪地"
+        },
+        {
+          "w": "oddity",
+          "gloss": "古怪的人/物；奇特之处"
+        },
+        {
+          "w": "odds",
+          "gloss": "几率，可能性；差距"
+        }
+      ],
+      "examples": [
+        {
+          "en": "It's odd that he didn't mention it at all.",
+          "zh": "他完全没提这件事，真是奇怪。",
+          "source": "造句"
+        },
+        {
+          "en": "beat the odds / the odds are against",
+          "zh": "「克服重重困难 / 形势不利」——odds 作「几率」的高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "strange",
+          "ipa": "/streɪndʒ/",
+          "note": "「奇怪的」，与 odd 最近义，比 odd 语气稍强，更强调「陌生感」；a strange noise（奇怪的声音）",
+          "gloss": "奇怪的（带陌生感）"
+        },
+        {
+          "w": "peculiar",
+          "ipa": "/pɪˈkjuːliər/",
+          "note": "「怪异的/独特的」，比 odd 更强调「与众不同、难以归类」；a peculiar smell（奇特的气味）",
+          "gloss": "怪异的，独特的"
+        },
+        {
+          "w": "bizarre",
+          "ipa": "/bɪˈzɑːr/",
+          "note": "「荒诞的、极其奇异的」，比 odd 程度更强，含不可思议感；a bizarre coincidence（离奇的巧合）",
+          "gloss": "荒诞的，极其奇异的"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "even",
+          "note": "偶数的（数学义）"
+        },
+        {
+          "w": "ordinary",
+          "note": "普通的，正常的"
+        }
+      ],
+      "nuance": "odd 是最轻描淡写的「奇怪」（轻微的不寻常感），strange 带更强的「陌生/不安」感，peculiar 强调「独特到难以归类」，bizarre 是最强烈的「匪夷所思」。「odd behavior」是轻微的怪，「bizarre behavior」是让人瞠目结舌的怪。"
+    },
+    {
+      "word": "played",
+      "hl": "ed",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/pleɪd/",
+      "subgroup": "ed",
+      "meaning": "v. play 的过去式/过去分词：玩；演奏；表演；播放",
+      "etymology": "古英语 plegan「参与娱乐」，-ed 是规则过去式后缀。play 词根末尾是浊辅音 /l/ 前的元音 /eɪ/，属于浊辅音/元音后，故 -ed 读 /d/。",
+      "roots": [
+        {
+          "part": "play（plegan）",
+          "meaning": "娱乐、参与"
+        },
+        {
+          "part": "-ed",
+          "meaning": "过去式后缀，浊辅音后读 /d/"
+        }
+      ],
+      "phonetics": "play /pleɪ/ + -ed /d/。规则：play 词尾是元音 /eɪ/ → -ed 读 /d/。对比：looked /lʊkt/（清辅音 k 后读 /t/）、wanted /ˈwɒntɪd/（/t/ 后读 /ɪd/）。",
+      "tip": "-ed 三读法口诀：词根末尾是 t/d → /ɪd/；清辅音（p/k/f/s/ch等）→ /t/；浊辅音/元音 → /d/。played/called/moved/loved 全属第三类。",
+      "core": "「投身于令人愉悦的活动」的参与感——play 的核心是「认真地玩」：演奏音乐、表演角色、参与游戏，全是全身心投入的积极活动。词尾 -ed 在元音 /eɪ/ 后读 /d/，是 -ed 三读法的典型例词。",
+      "senses": [
+        {
+          "gloss": "v. play 的过去式/过去分词：玩，参与（游戏/运动）",
+          "logic": "「投身活动」的过去式：曾经参与某项有规则的活动",
+          "en": "The children played in the park until the sun went down.",
+          "zh": "孩子们在公园里一直玩到太阳下山。"
+        },
+        {
+          "gloss": "v. play 的过去式/过去分词：演奏（乐器/乐曲）",
+          "logic": "把「玩」用在音乐上：操控乐器发出乐音",
+          "en": "The orchestra played Tchaikovsky's Fifth Symphony that evening.",
+          "zh": "那晚交响乐团演奏了柴可夫斯基第五交响曲。"
+        },
+        {
+          "gloss": "v. play 的过去式/过去分词：表演（角色）",
+          "logic": "「玩」的戏剧版：投入地扮演一个角色",
+          "en": "He played the villain with such conviction that audiences booed him.",
+          "zh": "他把反派演得太逼真，观众都对他喝倒彩。"
+        },
+        {
+          "gloss": "v. play 的过去式/过去分词：播放（录音/视频）",
+          "logic": "让媒体「动起来」：按下播放键，声音/画面开始运行",
+          "en": "The radio played the same song three times in one hour.",
+          "zh": "收音机一个小时内放了同一首歌三次。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "play",
+          "gloss": "玩；演奏；表演；播放（原形）"
+        },
+        {
+          "w": "player",
+          "gloss": "玩家；运动员；演奏者；播放器"
+        },
+        {
+          "w": "playful",
+          "gloss": "爱玩的，嬉闹的"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The orchestra played Beethoven's Fifth Symphony last night.",
+          "zh": "昨晚交响乐团演奏了贝多芬第五交响曲。",
+          "source": "造句"
+        },
+        {
+          "en": "played a role / played a trick",
+          "zh": "「扮演了角色 / 耍了个花招」——高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "performed",
+          "ipa": "/pəˈfɔːrmd/",
+          "note": "「表演了/演奏了」，比 played 更正式；-ed 结尾为浊辅音 /m/ 后，读 /d/",
+          "gloss": "表演了，演奏了（正式）"
+        },
+        {
+          "w": "acted",
+          "ipa": "/ˈæktɪd/",
+          "note": "「表演了」，-ed 在 /t/ 后读 /ɪd/，是三读法中第一类（/ɪd/）的典型例词",
+          "gloss": "表演了（戏剧）"
+        },
+        {
+          "w": "engaged",
+          "ipa": "/ɪnˈɡeɪdʒd/",
+          "note": "「参与了」，-ed 在 /dʒ/ 浊辅音后读 /d/，与 played 同规律",
+          "gloss": "参与了，投入了"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "-ed 读音辨析：played /d/、looked /t/、wanted /ɪd/——三个例词代表三条规律，背一个等于背一组。演奏义用 played 或 performed，acted 专指戏剧表演，engaged 强调参与和投入。"
+    },
+    {
+      "word": "called",
+      "hl": "ed",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/kɔːld/",
+      "subgroup": "ed",
+      "meaning": "v. call 的过去式/过去分词：打电话；称呼；叫喊；召集",
+      "etymology": "古北欧语 kalla「呼喊、叫」，-ed 为规则过去式后缀。call 词尾是浊辅音 /l/，故 -ed 读 /d/，整体发音 /kɔːld/（单音节）。",
+      "roots": [
+        {
+          "part": "call（kalla）",
+          "meaning": "呼喊、叫唤"
+        },
+        {
+          "part": "-ed",
+          "meaning": "过去式后缀，浊辅音 /l/ 后读 /d/"
+        }
+      ],
+      "phonetics": "call /kɔːl/ + -ed /d/ → called /kɔːld/，词尾 -lled 发音为单个 /ld/，是辅音连缀，不加元音。",
+      "core": "「发出声音让远处的人听见」的呼唤感——call 的核心是把声音送出去：打电话让远方听见、称呼是给人一个名字、召集是把人喊过来。词尾 -ed 在浊辅音 /l/ 后读 /d/。",
+      "senses": [
+        {
+          "gloss": "v. call 的过去式/过去分词：打电话",
+          "logic": "「把声音送出去」的现代日常版：通过电话联系",
+          "en": "She called her mother the moment she landed.",
+          "zh": "她一下飞机就给妈妈打了电话。"
+        },
+        {
+          "gloss": "v. call 的过去式/过去分词：称呼，叫作",
+          "logic": "「给人一个名字」：用某个名称来呼唤/指代对象",
+          "en": "They called the baby Sophia after her grandmother.",
+          "zh": "他们以祖母的名字给孩子取名索菲娅。"
+        },
+        {
+          "gloss": "v. call 的过去式/过去分词：叫喊，呼唤",
+          "logic": "最原始的本义：大声发出声音以引起注意",
+          "en": "She called for help but no one heard her.",
+          "zh": "她大声呼救但没人听见。"
+        },
+        {
+          "gloss": "v. call 的过去式/过去分词：召集（会议/人员）",
+          "logic": "「把人喊到一起」：发出信号让大家集合",
+          "en": "The board called an emergency meeting to discuss the crisis.",
+          "zh": "董事会召集了紧急会议讨论危机。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "call",
+          "gloss": "打电话；叫；称呼；召集（原形）"
+        },
+        {
+          "w": "caller",
+          "gloss": "打电话的人；来访者"
+        },
+        {
+          "w": "calling",
+          "gloss": "职业，使命（内心召唤你去做的事）"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She called me three times before I finally answered.",
+          "zh": "她打了三次电话我才接。",
+          "source": "造句"
+        },
+        {
+          "en": "called off / called for",
+          "zh": "「取消了 / 需要、要求」——短语动词的常见搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "phoned",
+          "ipa": "/foʊnd/",
+          "note": "「打了电话」，-ed 在浊辅音 /n/ 后读 /d/；专指电话联系",
+          "gloss": "打了电话"
+        },
+        {
+          "w": "named",
+          "ipa": "/neɪmd/",
+          "note": "「称为、命名」义的近义词；-ed 在浊辅音 /m/ 后读 /d/",
+          "gloss": "命名，称呼"
+        },
+        {
+          "w": "summoned",
+          "ipa": "/ˈsʌmənd/",
+          "note": "「传唤、召集」，比 called 更正式；-ed 在鼻音 /n/ 后读 /d/",
+          "gloss": "传唤，召集（正式）"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "called 在「打电话」义上最口语（called her = phoned her），summoned 是正式场合的「传唤」（summon to court），named 专指「命名/称呼」。注意 called off（取消）、called for（需要）是短语动词，含义与单独的 called 完全不同。"
+    },
+    {
+      "word": "moved",
+      "hl": "ed",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/muːvd/",
+      "subgroup": "ed",
+      "meaning": "v. move 的过去式/过去分词：移动；搬家；感动；提议",
+      "etymology": "拉丁语 movere「运动」，-ed 为规则过去式后缀。move 词尾是浊辅音 /v/（哑 e 去掉后），故 -ed 读 /d/，整体 /muːvd/ 单音节。",
+      "roots": [
+        {
+          "part": "move（movere）",
+          "meaning": "运动"
+        },
+        {
+          "part": "-d",
+          "meaning": "过去式后缀，浊辅音 /v/ 后读 /d/"
+        }
+      ],
+      "phonetics": "move /muːv/ + -d /d/ → moved /muːvd/，注意词尾 -vd 是辅音连缀，一口气发出：/v/ 紧跟 /d/，不插入元音。",
+      "tip": "move 的多义都进入 moved：physically moved（物理移动）、emotionally moved（情感上被感动）、moved a motion（会议提议）——三义用法共享一个过去式。",
+      "core": "「从一个位置换到另一个位置」的位移感——move 的核心是改变位置：物理移动、搬家、情感被触动（心被移动了）、会议提议（推动议程），都是「位置变化」的延伸。词尾 -ed 在浊辅音 /v/ 后读 /d/。",
+      "senses": [
+        {
+          "gloss": "v. move 的过去式/过去分词：移动（物理）",
+          "logic": "最直接的本义：改变物体或自身在空间中的位置",
+          "en": "They moved the heavy piano across the room together.",
+          "zh": "他们一起把那架沉重的钢琴移到了房间另一边。"
+        },
+        {
+          "gloss": "v. move 的过去式/过去分词：搬家",
+          "logic": "「移动」的住所版：从一个住处搬到另一个",
+          "en": "The family moved to a bigger apartment last spring.",
+          "zh": "这家人去年春天搬进了一套更大的公寓。"
+        },
+        {
+          "gloss": "v. move 的过去式/过去分词：感动",
+          "logic": "「心被移动了」：情感上被深深地触动，内心位置变了",
+          "en": "The documentary moved him so deeply he couldn't speak for minutes.",
+          "zh": "这部纪录片深深触动了他，他好几分钟说不出话。"
+        },
+        {
+          "gloss": "v. move 的过去式/过去分词：提议（正式会议）",
+          "logic": "「推动议程向前」：在正式会议上提出动议",
+          "en": "The committee member moved to adjourn the session.",
+          "zh": "委员会成员提议休会。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "move",
+          "gloss": "移动；感动；提议（原形）"
+        },
+        {
+          "w": "movement",
+          "gloss": "运动；移动；动向"
+        },
+        {
+          "w": "mover",
+          "gloss": "搬运工；推动者；发起人"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The speech moved everyone in the audience to tears.",
+          "zh": "这篇演讲令台下所有人泪流满面。",
+          "source": "造句"
+        },
+        {
+          "en": "moved in / moved on",
+          "zh": "「搬进来了 / 继续前进、走出过去」——短语动词的高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "touched",
+          "ipa": "/tʌtʃt/",
+          "note": "「感动了」义的近义词，-ed 在清辅音 /tʃ/ 后读 /t/；touched 专指情感上的触动",
+          "gloss": "感动了（情感触动）"
+        },
+        {
+          "w": "transferred",
+          "ipa": "/trænsˈfɜːrd/",
+          "note": "「转移了/调动了」，-ed 在浊辅音 /r/ 后读 /d/；强调正式的职位或物品转移",
+          "gloss": "转移了，调动了（正式）"
+        },
+        {
+          "w": "relocated",
+          "ipa": "/ˌriːloʊˈkeɪtɪd/",
+          "note": "「重新安置了/搬迁了」，-ed 在 /t/ 后读 /ɪd/；比 moved 更正式，多用于公司/人员搬迁",
+          "gloss": "搬迁了（正式，公司/人员）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "stayed",
+          "note": "留下了，待在原地"
+        }
+      ],
+      "nuance": "moved 既可指物理移动（moved the furniture 移动家具），也可指情感感动（deeply moved 深受感动）；touched 专指情感触动（slightly touched 有点感动）；relocated 是正式书面语，专指整体搬迁；transferred 强调正式的从一地/岗转到另一处。"
+    },
+    {
+      "word": "loved",
+      "hl": "ed",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/lʌvd/",
+      "subgroup": "ed",
+      "meaning": "v. love 的过去式/过去分词：爱；非常喜爱",
+      "etymology": "古英语 lufian「爱」，-ed 为规则过去式后缀。love 词尾是浊辅音 /v/（哑 e 去掉后），故 -ed 读 /d/，整体 /lʌvd/ 单音节。",
+      "roots": [
+        {
+          "part": "love（lufian）",
+          "meaning": "爱"
+        },
+        {
+          "part": "-d",
+          "meaning": "过去式后缀，浊辅音 /v/ 后读 /d/"
+        }
+      ],
+      "phonetics": "love /lʌv/ + -d /d/ → loved /lʌvd/，与 moved 同样是 -vd 辅音连缀结尾，发音时 /v/ 和 /d/ 紧连。",
+      "core": "「向某人/某物持续投放情感」的投入感——love 的核心是把心放在对象身上，不求回报的给予。词尾 -ed 在浊辅音 /v/ 后读 /d/，整体 /lʌvd/ 单音节，注意 o 读 /ʌ/ 这个发音陷阱。",
+      "senses": [
+        {
+          "gloss": "v. love 的过去式/过去分词：爱，深爱",
+          "logic": "「投放情感」的过去式：曾经或将一直怀有深厚感情",
+          "en": "She loved him with a depth she had never felt before.",
+          "zh": "她以前所未有的深度爱着他。"
+        },
+        {
+          "gloss": "v. love 的过去式/过去分词：非常喜爱（事物/体验）",
+          "logic": "「情感投放」到事物上：强烈的正向偏好",
+          "en": "He loved every minute of the concert.",
+          "zh": "他享受了音乐会每一分钟。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "love",
+          "gloss": "爱；热爱（原形）"
+        },
+        {
+          "w": "lover",
+          "gloss": "爱人；爱好者"
+        },
+        {
+          "w": "lovely",
+          "gloss": "可爱的，美好的"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She loved the city the moment she arrived.",
+          "zh": "她一到这座城市就爱上了它。",
+          "source": "造句"
+        },
+        {
+          "en": "loved ones / a much-loved tradition",
+          "zh": "「挚爱的人 / 深受喜爱的传统」——形容词性用法的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "adored",
+          "ipa": "/əˈdɔːrd/",
+          "note": "「深深爱慕了」，比 loved 程度更强，-ed 在浊辅音 /r/ 后读 /d/",
+          "gloss": "深深爱慕了（带崇拜感）"
+        },
+        {
+          "w": "cherished",
+          "ipa": "/ˈtʃerɪʃt/",
+          "note": "「珍爱的」，比 loved 更强调「珍惜保存」的心态，-ed 在清辅音 /ʃ/ 后读 /t/",
+          "gloss": "珍爱的（珍惜保护）"
+        },
+        {
+          "w": "treasured",
+          "ipa": "/ˈtreʒərd/",
+          "note": "「视若珍宝的」，强调其不可替代的价值，-ed 在浊辅音 /r/ 后读 /d/",
+          "gloss": "视若珍宝的（不可替代价值）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "hated",
+          "note": "/ˈheɪtɪd/，hate 词尾是 /t/，-ed 读 /ɪd/——三读法对比练习"
+        }
+      ],
+      "nuance": "loved 最通用，adored 程度最强（带崇拜感），cherished 强调珍惜（不想失去），treasured 强调视如珍宝（不可替代的价值）。注意 loved ones（loved 作形容词）比 people I love 更正式，常出现在悼词和正式文章中。"
+    },
+    {
+      "word": "arrived",
+      "hl": "ed",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/əˈraɪvd/",
+      "subgroup": "ed",
+      "meaning": "v. arrive 的过去式/过去分词：到达；（时间）来临；取得成功",
+      "etymology": "古法语 ariver = a-(到) + rive(河岸, 来自拉丁语 ripa) = 「靠岸」→ 到达。与 river（河流）、rival（竞争对手，来自同一河岸的人）同根。arrive at（到达某点）vs arrive in（到达某城市）是固定用法。",
+      "roots": [
+        {
+          "part": "ar- (ad-)",
+          "meaning": "向、朝"
+        },
+        {
+          "part": "-rive (ripa)",
+          "meaning": "河岸"
+        }
+      ],
+      "phonetics": "ar- /ə/ + RIVE /raɪv/ + -d /d/ → arrived /əˈraɪvd/，重音在 RAI- 上，词尾 -vd 辅音连缀。",
+      "core": "「经过一段路程/过程后，终于落到目的地」的抵达感——arrive 的核心是「靠岸」（词根 ripa = 河岸）：到达地点、时机来临、事业成功，都是「到了」。词尾 -ed 在浊辅音 /v/ 后读 /d/。",
+      "senses": [
+        {
+          "gloss": "v. arrive 的过去式/过去分词：到达（地点）",
+          "logic": "核心义：经过旅程后抵达终点",
+          "en": "When we finally arrived at the hotel, everyone was exhausted.",
+          "zh": "当我们终于到达酒店时，所有人都筋疲力尽了。"
+        },
+        {
+          "gloss": "v. arrive 的过去式/过去分词：（时间/事件）来临",
+          "logic": "把「到达」用在时间轴上：某个时刻终于来了",
+          "en": "The day of the exam arrived faster than she had expected.",
+          "zh": "考试的日子来得比她预想的更快。"
+        },
+        {
+          "gloss": "v. arrive 的过去式/过去分词：取得成功，成名",
+          "logic": "隐喻版「抵达」：经过努力后终于「到了」理想的位置",
+          "en": "After years of hard work, she felt she had finally arrived as an artist.",
+          "zh": "经过多年努力，她觉得自己终于作为一名艺术家成功了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "arrive",
+          "gloss": "到达；来临；成功（原形）"
+        },
+        {
+          "w": "arrival",
+          "gloss": "到达，抵达（名词）"
+        }
+      ],
+      "examples": [
+        {
+          "en": "By the time help arrived, it was already too late.",
+          "zh": "当救援赶到时，已经太晚了。",
+          "source": "造句"
+        },
+        {
+          "en": "arrived at a conclusion / arrived on the scene",
+          "zh": "「得出结论 / 出现在现场」——抽象义和字面义的搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "reached",
+          "ipa": "/riːtʃt/",
+          "note": "「到达了」，-ed 在清辅音 /tʃ/ 后读 /t/；reach 更强调克服距离的过程感",
+          "gloss": "到达了（克服距离/障碍）"
+        },
+        {
+          "w": "appeared",
+          "ipa": "/əˈpɪərd/",
+          "note": "「出现了」，-ed 在浊辅音 /r/ 后读 /d/；强调突然现身",
+          "gloss": "出现了（突然现身）"
+        },
+        {
+          "w": "emerged",
+          "ipa": "/ɪˈmɜːrdʒd/",
+          "note": "「浮现了/出现了」，-ed 在浊辅音 /dʒ/ 后读 /d/；强调从隐蔽到可见的过程",
+          "gloss": "浮现了，出现了（从隐蔽到可见）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "departed",
+          "note": "/dɪˈpɑːrtɪd/，depart 词尾是 /t/，-ed 读 /ɪd/——三读法对比"
+        }
+      ],
+      "nuance": "arrived 是最通用的「到达」（到达地点/时间/结论），reached 更强调克服距离/障碍才到达，appeared 侧重「突然现身」（不强调路途），emerged 强调从背后/隐蔽处逐渐显现。注意 departed /ɪd/ vs arrived /d/ 是三读法的鲜明对比。"
+    },
+    {
+      "word": "varied",
+      "hl": "ed",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈveərid/",
+      "subgroup": "ed",
+      "meaning": "v. vary 的过去式/过去分词：变化；各有不同  adj. 多样的，各种各样的",
+      "etymology": "拉丁语 variare「变化」，源自 varius（多样的）。与 variety（多样性）、variable（变量）、various（各种各样的）同根——vari- 家族全部指「变化/多样」。-ied 是 -y 结尾动词变过去式规则（y → ied），读 /d/，因为 /i/ 是元音。",
+      "roots": [
+        {
+          "part": "var- (varius)",
+          "meaning": "多样、变化"
+        },
+        {
+          "part": "-ied",
+          "meaning": "过去式后缀（-y → -ied），元音后读 /d/"
+        }
+      ],
+      "phonetics": "var- /veər/ + -ied /id/ → varied /ˈveərid/，注意 -y → -ied 是拼写规律（辅音 + y 变 ied）；/i/ 是元音，故 -ed 读 /d/。",
+      "tip": "vary→varied、study→studied、try→tried、apply→applied——这类 -y 变 -ied 的过去式，词尾 /i/ 都是元音，-ed 均读 /d/。",
+      "core": "「不是一个样，而是各有各的面貌」的差异感——vary 的核心是变化多样：回答各不同、饮食多样化、结果参差不齐，都是「不一样」。-y → -ied 过去式在元音 /i/ 后读 /d/。",
+      "senses": [
+        {
+          "gloss": "v. vary 的过去式/过去分词：变化，改变",
+          "logic": "核心义：从一个状态变为另一个，或在不同状态间摆动",
+          "en": "The temperature varied wildly throughout the day.",
+          "zh": "一天之中温度变化剧烈。"
+        },
+        {
+          "gloss": "v. vary 的过去式/过去分词：各有不同，彼此有差异",
+          "logic": "「变化」的分布版：多个对象之间呈现出差异",
+          "en": "The test scores varied significantly from school to school.",
+          "zh": "各学校的考试成绩差异显著。"
+        },
+        {
+          "gloss": "adj. 多样的，各种各样的（形容词用法）",
+          "logic": "过去分词形容词化：呈现出多种不同面貌的",
+          "en": "A varied diet provides the body with a broader range of nutrients.",
+          "zh": "多样化的饮食为身体提供更广泛的营养。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "vary",
+          "gloss": "变化，不同（原形）"
+        },
+        {
+          "w": "variety",
+          "gloss": "多样性；种类"
+        },
+        {
+          "w": "various",
+          "gloss": "各种各样的"
+        },
+        {
+          "w": "variable",
+          "gloss": "变量；可变的"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Responses to the survey varied widely depending on age and background.",
+          "zh": "问卷调查的回复因年龄和背景不同而差异显著。",
+          "source": "造句"
+        },
+        {
+          "en": "a varied diet / varied results",
+          "zh": "「多样化的饮食 / 不同的结果」——形容词义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "diverse",
+          "ipa": "/daɪˈvɜːrs/",
+          "note": "「多样的」，形容词义最接近 varied，但 diverse 更强调种类之间的差异性；a diverse team（多元团队）",
+          "gloss": "多样的（强调种类差异性）"
+        },
+        {
+          "w": "changed",
+          "ipa": "/tʃeɪndʒd/",
+          "note": "「改变了」，-ed 在浊辅音 /dʒ/ 后读 /d/；change 强调从一个状态到另一个状态",
+          "gloss": "改变了（状态转换）"
+        },
+        {
+          "w": "fluctuated",
+          "ipa": "/ˈflʌktʃueɪtɪd/",
+          "note": "「波动了」，-ed 在 /t/ 后读 /ɪd/；强调数字或状态的来回波动",
+          "gloss": "波动了（来回变动）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "uniform",
+          "note": "统一的，一致的"
+        },
+        {
+          "w": "consistent",
+          "note": "一贯的，稳定的"
+        }
+      ],
+      "nuance": "varied 强调结果/答案存在差异（个体间不同），diverse 强调种类的多元（群体本身多元化），fluctuated 强调数值的来回波动（不稳定），changed 只说明「发生了变化」不描述多样性。「a varied response」= 各不相同的回应，「a diverse group」= 成员来自不同背景的群体。"
+    }
+  ]
+}

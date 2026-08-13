@@ -1,0 +1,1410 @@
+{
+  "id": "hot",
+  "combo": "o·wa",
+  "title": "/ɒ/ 短音家族",
+  "sound": "/ɒ/ (美 /ɑː/)",
+  "subtitle": "o 最多见，w/qu 后的 a 也拐进来，短促圆唇，美音多并入长 /ɑː/",
+  "intro": "/ɒ/ 是英语里最圆唇、最短促的元音——嘴自然张开、双唇轻轻收圆，发一个短暂的「奥」，英式英语保留此音，美式英语多将其并入开放的 /ɑː/（如 hot 英式 /hɒt/、美式 /hɑːt/）。它藏在三条路里：最主力的是字母 o（hot、dog、box），日常遇见率极高；第二条是 w 或 qu 之后的字母 a 被这两个辅音「拐弯」读成 /ɒ/（want、watch、quality），这条规律是记忆盲区；第三条是 cough、sausage 这类拼写不规则的特例，数量少但高频。把这三条路一次摸清，/ɒ/ 家族就没有再发错的理由。",
+  "subgroups": [
+    {
+      "key": "o",
+      "tag": "o → /ɒ/",
+      "label": "✅ o = /ɒ/",
+      "desc": "hot/dog/box；美音多读 /ɑː/"
+    },
+    {
+      "key": "wa",
+      "tag": "w·qu 后的 a",
+      "label": "wa/qua = /ɒ/",
+      "desc": "w 或 qu 把 a 拐成 /ɒ/：want/watch/quality"
+    },
+    {
+      "key": "other",
+      "tag": "ou 特例",
+      "label": "其它 = /ɒ/",
+      "desc": "cough/sausage 等"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ot (/ɒt/)",
+      "words": ["hot", "lot", "dot", "spot", "forgot"]
+    },
+    {
+      "label": "-og (/ɒɡ/)",
+      "words": ["dog", "fog", "log", "blog"]
+    },
+    {
+      "label": "-ock (/ɒk/)",
+      "words": ["rock", "clock", "block", "stock", "knock"]
+    },
+    {
+      "label": "-op (/ɒp/)",
+      "words": ["stop", "shop", "drop", "crop", "prop"]
+    },
+    {
+      "label": "-ant / -atch (/ɒnt/ /ɒtʃ/)",
+      "words": ["want", "watch", "wash", "wander"]
+    }
+  ],
+  "words": [
+    {
+      "word": "hot",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/hɒt/",
+      "subgroup": "o",
+      "meaning": "adj. 热的；辣的；激烈的；最新的",
+      "etymology": "古英语 hāt「热」，日耳曼同根，与德语 heiß 同源。现代短元音因「大元音推移」后缩变短。",
+      "roots": [
+        {"part": "hot（hāt）", "meaning": "热"}
+      ],
+      "phonetics": "h + o /ɒ/ + t，是 /ɒ/ 的锚定词，从这个音出发记整个家族。美式 /hɑːt/。",
+      "tip": "「hot topic」（热门话题）、「hot take」（即时观点）——当代英语高频文化词。",
+      "core": "热量向外扩散、令人难以触碰的感觉——由此衍生出「温度高」「辛辣」「激烈」「新鲜出炉」等一切「烫手」义。",
+      "senses": [
+        {
+          "gloss": "adj. 温度高的，热的",
+          "logic": "核心感觉的直接体现：热量高到让人难以接触。",
+          "en": "The coffee is too hot to drink right now.",
+          "zh": "咖啡现在太烫了，还没法喝。"
+        },
+        {
+          "gloss": "adj. 辛辣的，刺激的",
+          "logic": "辣椒素在口腔触发的「灼热感」与高温体验相同，故沿用「热」字。",
+          "en": "She loves hot sauce on everything she eats.",
+          "zh": "她吃什么都喜欢加辣椒酱。"
+        },
+        {
+          "gloss": "adj. 激烈的，紧张的",
+          "logic": "争论或竞争「升温」到让人难以冷静，与热量难以承受同感。",
+          "en": "The debate got hot when they disagreed on funding.",
+          "zh": "当双方在资金问题上产生分歧时，辩论变得激烈起来。"
+        },
+        {
+          "gloss": "adj. 最新的，刚出炉的",
+          "logic": "「hot off the press」——新闻刚从印刷机出来还是「热的」，引申为「最新鲜」。",
+          "en": "Here's the hot news from this morning's briefing.",
+          "zh": "这是今早简报里的最新消息。"
+        }
+      ],
+      "derivatives": [
+        {"w": "heat", "gloss": "热量；加热（动词）"},
+        {"w": "hotly", "gloss": "激烈地；热切地"},
+        {"w": "hotbed", "gloss": "温床；滋生地"}
+      ],
+      "examples": [
+        {
+          "en": "The debate got hot when they disagreed on funding.",
+          "zh": "当双方在资金问题上产生分歧时，辩论变得激烈起来。",
+          "source": "造句"
+        },
+        {
+          "en": "hot off the press",
+          "zh": "「刚出炉，最新鲜」——形容刚发布的新闻或产品。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "scorching", "ipa": "/ˈskɔːtʃɪŋ/", "gloss": "灼热的", "note": "比 hot 程度更强，常指烈日或灼烫感；a scorching summer（酷热的夏天）"},
+        {"w": "heated", "ipa": "/ˈhiːtɪd/", "gloss": "激烈的（用于争论或情绪）", "note": "专用于争论或情绪；a heated argument（激烈争论）"},
+        {"w": "spicy", "ipa": "/ˈspaɪsi/", "gloss": "辛辣的", "note": "比 hot 更强调香料味道；spicy food（辛辣食物）"}
+      ],
+      "antonyms": [
+        {"w": "cold", "note": "冷的"},
+        {"w": "mild", "note": "温和的、不辣的"}
+      ],
+      "nuance": "hot 是最通用的「热」，可指温度、辣度、激烈程度；scorching 专指高温灼烫；heated 几乎只修饰争论或情绪；spicy 专指辛辣风味，不描述温度。"
+    },
+    {
+      "word": "lot",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/lɒt/",
+      "subgroup": "o",
+      "meaning": "n. 大量；命运；一块地；（拍卖）一件货  adv. 很多（a lot）",
+      "etymology": "古英语 hlot「签（抽签决定命运）」，由「抽到的份额」引申为「命运」，再延伸为「一批东西」。",
+      "roots": [
+        {"part": "lot（hlot）", "meaning": "签、份额"}
+      ],
+      "phonetics": "l + o /ɒ/ + t，与 hot、dot、spot 押韵。美式 /lɑːt/。",
+      "core": "「抽签分得的一份」——从这个「份额/配给」感觉出发，引申出数量（很多）、命运（上天分配的）、地块（划分的一片）等义。",
+      "senses": [
+        {
+          "gloss": "n./adv. 大量，很多",
+          "logic": "「份额」放大为「一大批」，口语最常用义。",
+          "en": "A lot of students struggled with the final exam.",
+          "zh": "许多学生在期末考试中遇到了困难。"
+        },
+        {
+          "gloss": "n. 命运，际遇",
+          "logic": "古代用抽签决定命运，「抽到的签」即「天命」，保留在书面语中。",
+          "en": "He accepted his lot in life with quiet dignity.",
+          "zh": "他以平静的尊严接受了自己的人生际遇。"
+        },
+        {
+          "gloss": "n. 一块土地，停车场",
+          "logic": "「划分出来的一份地」→地块，美式英语常指停车场（parking lot）。",
+          "en": "They bought a vacant lot to build a house.",
+          "zh": "他们买了一块空地准备建房子。"
+        },
+        {
+          "gloss": "n. （拍卖）一件拍品，一批货",
+          "logic": "拍卖中「这一次分配出去的」物品，是份额义的直接延伸。",
+          "en": "Lot 42 sold for three times the estimated price.",
+          "zh": "第42号拍品以预估价三倍的价格成交。"
+        }
+      ],
+      "derivatives": [
+        {"w": "allot", "gloss": "分配，划拨"},
+        {"w": "allotment", "gloss": "分配额；（英）小块菜地"},
+        {"w": "ballot", "gloss": "投票；选票（含「用签决定」古义）"}
+      ],
+      "examples": [
+        {
+          "en": "A lot of students struggled with the final exam.",
+          "zh": "许多学生在期末考试中遇到了困难。",
+          "source": "造句"
+        },
+        {
+          "en": "cast lots / draw lots",
+          "zh": "「抓阄、抽签」——保留了 lot 的古义「签」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "plenty", "ipa": "/ˈplenti/", "gloss": "大量，充足", "note": "比 a lot of 更强调足够；plenty of time（大量时间）"},
+        {"w": "fate", "ipa": "/feɪt/", "gloss": "命运", "note": "「命运」义的近义词，与 lot 古义相通；accept one's fate（接受命运）"},
+        {"w": "batch", "ipa": "/bætʃ/", "gloss": "一批（货物）", "note": "比 lot 更常用于生产和物流语境"}
+      ],
+      "antonyms": [
+        {"w": "little", "note": "少量（数量义相对）"}
+      ],
+      "nuance": "a lot of 和 plenty of 都表示大量，但 plenty of 强调「足够甚至有余」，a lot of 更中性；lot 作「命运」时（his lot in life 他的人生际遇）是偏书面的用法。"
+    },
+    {
+      "word": "job",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/dʒɒb/",
+      "subgroup": "o",
+      "meaning": "n. 工作，职位；任务；（俚）事情",
+      "etymology": "16世纪出现，来源不确定，可能源自 gob「一口、一块」，原指「一次性任务」，后扩展为固定职位。",
+      "roots": [
+        {"part": "job", "meaning": "一次性任务→工作"}
+      ],
+      "phonetics": "j /dʒ/ + o /ɒ/ + b，美式 /dʒɑːb/。注意 j 发 /dʒ/，与 job、jot 押韵。",
+      "tip": "「Good job!」是最高频的表扬用语；「job done」表示任务完成——两者都是日常口语核心。",
+      "core": "「一件要做完的事」——从单次任务感觉出发，扩展为持续的职位、要完成的目标，乃至口语中的「事情/活儿」。",
+      "senses": [
+        {
+          "gloss": "n. 工作，职位",
+          "logic": "反复承接任务→固定岗位，是最常用义。",
+          "en": "She landed a job at a tech startup right after graduation.",
+          "zh": "她毕业后立刻在一家科技创业公司找到了工作。"
+        },
+        {
+          "gloss": "n. 任务，活儿",
+          "logic": "保留原始「一次性要完成之事」的感觉。",
+          "en": "Landing that contract was no small job.",
+          "zh": "拿下那份合同可不是件小事。"
+        },
+        {
+          "gloss": "n. （口语）事情，状况",
+          "logic": "口语泛化，指任何「一件事」，如 a bad job（糟糕的情况）。",
+          "en": "It's a good job you brought an umbrella.",
+          "zh": "幸好你带了伞。（英式口语：「这是件好事」）"
+        }
+      ],
+      "derivatives": [
+        {"w": "jobless", "gloss": "失业的，无业的"},
+        {"w": "job-hop", "gloss": "频繁跳槽"},
+        {"w": "odd jobs", "gloss": "零活儿，杂务"}
+      ],
+      "examples": [
+        {
+          "en": "Landing that contract was no small job.",
+          "zh": "拿下那份合同可不是件小事。",
+          "source": "造句"
+        },
+        {
+          "en": "on the job",
+          "zh": "「在岗工作中」——高频副词短语，表示工作状态或在职学习。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "occupation", "ipa": "/ˌɒkjuˈpeɪʃn/", "gloss": "职业（正式书面）", "note": "正式书面词，比 job 更正式，填表格时用；occupation: engineer"},
+        {"w": "task", "ipa": "/tɑːsk/", "gloss": "任务，具体事项", "note": "强调具体要完成的事项，比 job 更短期具体"},
+        {"w": "career", "ipa": "/kəˈrɪər/", "gloss": "职业生涯", "note": "比 job 更宏观，指长期的职业发展方向"}
+      ],
+      "antonyms": [
+        {"w": "unemployment", "note": "失业（状态）"}
+      ],
+      "nuance": "job 最口语，指具体的一份工作；career 是长期职业轨迹；occupation 是正式书面写法；task 指具体的一项任务，范围比 job 小。"
+    },
+    {
+      "word": "stop",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/stɒp/",
+      "subgroup": "o",
+      "meaning": "v. 停止；阻止；停留  n. 停靠站；停顿",
+      "etymology": "古英语 stoppian「堵塞」，源自拉丁语 stuppa（麻絮）——「用麻絮堵住孔」→ 使停止流动 → 停止。",
+      "roots": [
+        {"part": "stop（stoppian）", "meaning": "堵塞、使停止"}
+      ],
+      "phonetics": "st- 辅音群 + o /ɒ/ + p，美式 /stɑːp/。与 shop、drop、crop 押韵。",
+      "core": "「堵住通道，使流动中断」——一切「停止」都源于这个物理上的封堵感：停下来、阻断进程、停留某处。",
+      "senses": [
+        {
+          "gloss": "v. 停止（正在进行的动作）",
+          "logic": "通道被堵，流动中断，动作也就结束。",
+          "en": "The machine stopped working in the middle of the shift.",
+          "zh": "机器在换班中途停止运转了。"
+        },
+        {
+          "gloss": "v. 阻止，阻拦",
+          "logic": "主动去「堵住」别人，使其无法继续。",
+          "en": "The government has to stop the spread of misinformation.",
+          "zh": "政府必须阻止错误信息的传播。"
+        },
+        {
+          "gloss": "v. 停留，暂住",
+          "logic": "人在行进中「堵住」自己，待在某处（英式用法）。",
+          "en": "Can you stop at the post office on your way home?",
+          "zh": "你回家路上能顺道去一下邮局吗？"
+        },
+        {
+          "gloss": "n. 停靠站；停顿",
+          "logic": "行程中「被堵住」的节点，即站台；演奏或说话中的「中断点」。",
+          "en": "This train makes five stops before reaching the city.",
+          "zh": "这趟火车进城前要停靠五站。"
+        }
+      ],
+      "derivatives": [
+        {"w": "stoppage", "gloss": "停工；中断"},
+        {"w": "nonstop", "gloss": "不停的；直达的"},
+        {"w": "stopover", "gloss": "中途停留（旅途中）"}
+      ],
+      "examples": [
+        {
+          "en": "The government has to stop the spread of misinformation.",
+          "zh": "政府必须阻止错误信息的传播。",
+          "source": "造句"
+        },
+        {
+          "en": "stop short of",
+          "zh": "「在……面前止步，差一点做」——高频习语，常用于描述限度。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "halt", "ipa": "/hɔːlt/", "gloss": "停止（尤指行进）", "note": "比 stop 更正式，多用于命令或军事语境；halt the advance（停止推进）"},
+        {"w": "cease", "ipa": "/siːs/", "gloss": "停止（活动，正式书面）", "note": "正式书面词；cease fire（停火）；cease to exist（不复存在）"},
+        {"w": "prevent", "ipa": "/prɪˈvent/", "gloss": "阻止，预防", "note": "比 stop 更强调预防；prevent accidents（防止事故）"}
+      ],
+      "antonyms": [
+        {"w": "start", "note": "开始"},
+        {"w": "continue", "note": "继续"}
+      ],
+      "nuance": "stop 最口语最通用；halt 更正式，有「命令停止前进」的含义；cease 是书面语，多用于正式文件（cease operations）；prevent 专指阻止事情发生，不用于「停止正在进行的动作」。"
+    },
+    {
+      "word": "shop",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ʃɒp/",
+      "subgroup": "o",
+      "meaning": "n. 商店；车间  v. 购物",
+      "etymology": "古法语 eschoppe「摊位」，最初指集市上的小摊，后指固定店铺。workshop（工作间）= work + shop。",
+      "roots": [
+        {"part": "shop（eschoppe）", "meaning": "摊位、店铺"}
+      ],
+      "phonetics": "sh /ʃ/ + o /ɒ/ + p，美式 /ʃɑːp/。注意 sh 发 /ʃ/，与 stop、drop 押韵。",
+      "core": "「摆货交易的场所」——由集市摊位引申出商店、专门操作的空间（车间），以及在其中进行的「购物」行为。",
+      "senses": [
+        {
+          "gloss": "n. 商店，店铺",
+          "logic": "摊位固定化、扩大化，成为有屋顶的商业场所。",
+          "en": "The corner shop closes at nine every night.",
+          "zh": "街角那家小店每晚九点关门。"
+        },
+        {
+          "gloss": "n. 车间，工作坊",
+          "logic": "「专门从事某种工作的地方」，如 machine shop（机械车间）、workshop。",
+          "en": "The body shop repaired the dent in two hours.",
+          "zh": "汽车修理车间两小时内修好了凹陷。"
+        },
+        {
+          "gloss": "v. 购物，逛店",
+          "logic": "去「商店」这个场所的动作名词化为动词。",
+          "en": "She shops online almost every day.",
+          "zh": "她几乎每天都网购。"
+        }
+      ],
+      "derivatives": [
+        {"w": "shopkeeper", "gloss": "店主，店老板"},
+        {"w": "workshop", "gloss": "研讨会；工作坊；车间"},
+        {"w": "shoplifting", "gloss": "入店行窃"}
+      ],
+      "examples": [
+        {
+          "en": "She shops online almost every day.",
+          "zh": "她几乎每天都网购。",
+          "source": "造句"
+        },
+        {
+          "en": "shop around",
+          "zh": "「货比三家」——比较价格或选项的高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "store", "ipa": "/stɔːr/", "gloss": "商店（美式常用）", "note": "美式英语更常用 store，英式更常用 shop；department store（百货公司）"},
+        {"w": "boutique", "ipa": "/buːˈtiːk/", "gloss": "精品店", "note": "法语借词，指专售高档或个性化商品的小店"},
+        {"w": "browse", "ipa": "/braʊz/", "gloss": "浏览，随意逛", "note": "与 shop 作动词时的意味相近，但更强调随意浏览"}
+      ],
+      "antonyms": [
+        {"w": "sell", "note": "出售（购买的对立面）"}
+      ],
+      "nuance": "shop 作名词时英式多用（a clothes shop），美式更常说 store；作动词时 shop 和 browse 都有「逛」的意思，但 browse 强调不购买的随意浏览，shop 暗示有购买意图。"
+    },
+    {
+      "word": "rock",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/rɒk/",
+      "subgroup": "o",
+      "meaning": "n. 岩石；摇滚乐；坚固的支柱  v. 摇晃；震撼",
+      "etymology": "古诺尔斯语 hrukka（名词「岩石」）和古英语 roccian（动词「摇动」）是两个不同词源在现代英语中合并为同一单词。",
+      "roots": [
+        {"part": "rock（hrukka）", "meaning": "岩石"},
+        {"part": "rock（roccian）", "meaning": "摇动"}
+      ],
+      "phonetics": "r + o /ɒ/ + ck /k/，美式 /rɑːk/。ck 结尾读单辅音 /k/，与 clock、block、knock 押韵。",
+      "tip": "「rock solid」（坚如磐石）和「rock the boat」（搅局、破坏稳定）是两个高频习语，义项相反。",
+      "core": "名词义「坚不可摧的岩石」与动词义「来回摇晃」是两个不同词源的历史偶合，无共同核心意象——此处如实标注，不硬串。",
+      "senses": [
+        {
+          "gloss": "n. 岩石，石头",
+          "logic": "古诺尔斯语 hrukka 的直接传承，指坚硬的地质体。",
+          "en": "The climbers anchored their ropes to the rock face.",
+          "zh": "攀岩者把绳子固定在岩壁上。"
+        },
+        {
+          "gloss": "n. 坚固的依靠，支柱",
+          "logic": "岩石的坚硬稳固感引申为「靠得住的人或物」。",
+          "en": "Her mother has been her rock through every crisis.",
+          "zh": "在每次危机中，她母亲都是她的精神支柱。"
+        },
+        {
+          "gloss": "n. 摇滚乐",
+          "logic": "20世纪中期「rock and roll」缩短，与「摇晃」动词同形，实为文化词汇的固化。",
+          "en": "He grew up listening to classic rock from the seventies.",
+          "zh": "他从小听的是七十年代的经典摇滚。"
+        },
+        {
+          "gloss": "v. 摇晃，轻摇",
+          "logic": "古英语 roccian「来回摇动」，如摇篮曲中摇晃婴儿。",
+          "en": "She rocked the baby gently until it fell asleep.",
+          "zh": "她轻轻摇晃婴儿，直到他睡着。"
+        },
+        {
+          "gloss": "v. 震撼，撼动",
+          "logic": "「强烈摇晃」→使某系统或机构剧烈动荡，多用于抽象语境。",
+          "en": "The scandal rocked the entire industry.",
+          "zh": "这桩丑闻震撼了整个行业。"
+        }
+      ],
+      "derivatives": [
+        {"w": "rocky", "gloss": "多石的；不稳定的"},
+        {"w": "bedrock", "gloss": "基岩；根基，基础"},
+        {"w": "rockslide", "gloss": "山体滑坡"}
+      ],
+      "examples": [
+        {
+          "en": "The scandal rocked the entire industry.",
+          "zh": "这桩丑闻震撼了整个行业。",
+          "source": "造句"
+        },
+        {
+          "en": "between a rock and a hard place",
+          "zh": "「进退两难，左右为难」——高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "stone", "ipa": "/stoʊn/", "gloss": "石头（单块）", "note": "比 rock 更小，rock 强调岩石整体，stone 常指单块石头或石材"},
+        {"w": "shake", "ipa": "/ʃeɪk/", "gloss": "摇晃，震动", "note": "比 rock 更口语；shake one's head（摇头）"},
+        {"w": "boulder", "ipa": "/ˈboʊldər/", "gloss": "大圆石", "note": "比 rock 更强调体积大且独立的岩石"}
+      ],
+      "antonyms": [
+        {"w": "steady", "note": "稳定（摇晃义的反义）"}
+      ],
+      "nuance": "rock 作名词时比 stone 更大、更整体（a rock face 岩壁 vs a stone wall 石墙）；作动词时 rock 比 shake 更有节奏感（rocking a baby 轻摇婴儿），shake 更突然和剧烈。"
+    },
+    {
+      "word": "clock",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/klɒk/",
+      "subgroup": "o",
+      "meaning": "n. 时钟  v. 计时；达到（某速度）",
+      "etymology": "中古荷兰语 clocke「钟、铃」，源自中世纪拉丁语 clocca（铃），最初指敲钟报时，后指计时装置。",
+      "roots": [
+        {"part": "clock（clocca）", "meaning": "铃、钟"}
+      ],
+      "phonetics": "cl + o /ɒ/ + ck /k/，美式 /klɑːk/。cl 连缀辅音要流畅，与 rock、block、knock 押韵。",
+      "core": "「敲击声规律重复来标记时间流逝」——由铃声报时引申出计时工具，再由「记录时间」引申出「测速/打卡」。",
+      "senses": [
+        {
+          "gloss": "n. 时钟",
+          "logic": "铃声固化成计时装置的直接传承。",
+          "en": "The clock on the wall showed half past ten.",
+          "zh": "墙上的钟显示十点半。"
+        },
+        {
+          "gloss": "v. 计时，记录时间",
+          "logic": "用钟来记录某人或某事花了多少时间。",
+          "en": "She clocked over 100 hours of overtime this month.",
+          "zh": "她这个月加班超过了一百小时。"
+        },
+        {
+          "gloss": "v. 达到（某速度或数值）",
+          "logic": "「钟表读数达到某数字」→ 行驶速度或数值「达到」某水平，现代口语扩展。",
+          "en": "The car clocked 240 kilometers per hour on the test track.",
+          "zh": "这辆车在测试跑道上达到了时速240公里。"
+        }
+      ],
+      "derivatives": [
+        {"w": "clockwise", "gloss": "顺时针方向"},
+        {"w": "clockwork", "gloss": "发条装置；像发条一样精准"},
+        {"w": "o'clock", "gloss": "……点钟（表示时刻）"}
+      ],
+      "examples": [
+        {
+          "en": "She clocked over 100 hours of overtime this month.",
+          "zh": "她这个月加班超过了一百小时。",
+          "source": "造句"
+        },
+        {
+          "en": "clock in / clock out",
+          "zh": "「打卡上班 / 打卡下班」——职场高频词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "timepiece", "ipa": "/ˈtaɪmpiːs/", "gloss": "计时器，钟表（泛称）", "note": "正式书面词，泛指任何计时装置，比 clock 更宽泛"},
+        {"w": "timer", "ipa": "/ˈtaɪmər/", "gloss": "计时器（倒计时用）", "note": "强调用于倒计时或测量时长，比 clock 功能更单一"},
+        {"w": "time", "ipa": "/taɪm/", "gloss": "为……计时（动词）", "note": "clock sb. = time sb.（给某人计时），这两个动词意思相同"}
+      ],
+      "antonyms": [],
+      "nuance": "clock 和 watch 都是「钟表」，clock 固定放置（挂钟、台钟），watch 戴在手腕上；clock 作动词「记录时间/速度」是近年口语用法（clock 200km/h 跑到时速200公里）。"
+    },
+    {
+      "word": "model",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈmɒdl/",
+      "subgroup": "o",
+      "meaning": "n. 模型；典范；模特；款式  v. 建模；担任模特  adj. 模范的",
+      "etymology": "拉丁语 modulus「小尺寸、标准」，是 modus（方式、尺度）的指小词。model 本义「小型复制品」→ 典范 → 时装模特。",
+      "roots": [
+        {"part": "mod- (modus)", "meaning": "方式、尺度"},
+        {"part": "-el（指小后缀）", "meaning": "小的"}
+      ],
+      "phonetics": "MOD-el，重音在前；o /ɒ/ + d + el 弱读 /dl/。美式 /ˈmɑːdl/。",
+      "core": "「按照标准缩小/简化的复制品」——从具体的「小比例模型」出发，引申出「可供效仿的典范」「展示服装的人（活的展示台）」「商品型号」。",
+      "senses": [
+        {
+          "gloss": "n. 模型，模拟物",
+          "logic": "核心义：按比例缩小或简化的复制品，用于研究或展示。",
+          "en": "Scientists built a computer model to predict climate change.",
+          "zh": "科学家们建立了一个计算机模型来预测气候变化。"
+        },
+        {
+          "gloss": "n. 典范，榜样",
+          "logic": "「值得复制的标准样本」→ 可供效仿的理想对象。",
+          "en": "She has long been a model of dedication and integrity.",
+          "zh": "她长期以来都是敬业与诚信的典范。"
+        },
+        {
+          "gloss": "n. 时装模特",
+          "logic": "「展示服装的活体展示台」——人充当服装的「展示模型」。",
+          "en": "The agency signed three new models for the spring campaign.",
+          "zh": "该机构为春季活动签约了三名新模特。"
+        },
+        {
+          "gloss": "n. 型号，款式",
+          "logic": "产品的「某一版本标准」，即该产品线的一个「样本」。",
+          "en": "Which model of laptop are you planning to buy?",
+          "zh": "你打算买哪款笔记本电脑？"
+        },
+        {
+          "gloss": "v. 建模；为……塑形",
+          "logic": "「制作模型」的动作，或「用泥土/材料塑造形状」。",
+          "en": "The students modeled the water cycle using a simple diagram.",
+          "zh": "学生们用简图对水循环进行了建模。"
+        }
+      ],
+      "derivatives": [
+        {"w": "modeling", "gloss": "建模；模特职业；塑形"},
+        {"w": "remodel", "gloss": "重新改造，翻新"},
+        {"w": "role model", "gloss": "榜样，效仿对象"}
+      ],
+      "examples": [
+        {
+          "en": "Scientists built a computer model to predict climate change.",
+          "zh": "科学家们建立了一个计算机模型来预测气候变化。",
+          "source": "造句"
+        },
+        {
+          "en": "a role model",
+          "zh": "「榜样、楷模」——固定搭配，托福阅读高频出现。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "prototype", "ipa": "/ˈproʊtətaɪp/", "gloss": "原型，第一个试验版本", "note": "比 model 更强调「第一个试验版本」；the prototype of a new car（新车原型）"},
+        {"w": "example", "ipa": "/ɪɡˈzɑːmpl/", "gloss": "典范，例子", "note": "比 model 更口语；serve as an example（作为榜样）"},
+        {"w": "template", "ipa": "/ˈtempleɪt/", "gloss": "模板，可复用格式", "note": "比 model 更强调可重复使用的格式或结构"}
+      ],
+      "antonyms": [
+        {"w": "anomaly", "note": "异常（典范义的反义）"}
+      ],
+      "nuance": "model 作「典范」时（a model student）强调值得效仿，role model 更口语化；prototype 是「第一个实体原型」；template 是「可复用的格式或框架」，三者各有侧重。"
+    },
+    {
+      "word": "common",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈkɒmən/",
+      "subgroup": "o",
+      "meaning": "adj. 常见的；共同的；普通的  n. 公共用地",
+      "etymology": "拉丁语 communis = com-(共同) + munis(服务义务) = 「共同承担义务的」→ 公共的、普通的。community（社区）、communicate（沟通）同根。",
+      "roots": [
+        {"part": "com-", "meaning": "共同、一起"},
+        {"part": "-mon (munis)", "meaning": "义务、服务"}
+      ],
+      "phonetics": "COM-mon，首音节重读；o /ɒ/ + m + mon 弱读 /mən/。美式 /ˈkɑːmən/。",
+      "core": "「大家共同拥有/共同经历的」——由「共同承担义务」出发，引申出「广泛存在的（常见）」「公共共有的」「不加区分都适用的（普通）」。",
+      "senses": [
+        {
+          "gloss": "adj. 常见的，普遍的",
+          "logic": "「很多人共同经历的」→ 到处都是，很常见。",
+          "en": "It is common knowledge that smoking causes cancer.",
+          "zh": "吸烟致癌是众所周知的事。"
+        },
+        {
+          "gloss": "adj. 共同的，共有的",
+          "logic": "核心义的直接体现：多人共同拥有或持有的。",
+          "en": "The two countries share a common border and common interests.",
+          "zh": "两国共享边界，也有共同利益。"
+        },
+        {
+          "gloss": "adj. 普通的，平凡的；（英式）粗俗的",
+          "logic": "「不属于哪个人、不加区分都有的」→ 无特色的、平常的；在英式英语中进一步贬化为「没有教养的」。",
+          "en": "He was a common soldier with no particular rank or distinction.",
+          "zh": "他只是个没有特殊头衔或地位的普通士兵。"
+        },
+        {
+          "gloss": "n. 公共用地，公地",
+          "logic": "「属于所有人共同使用的土地」，如英国村庄中央的 the common（公地）。",
+          "en": "The villagers grazed their cattle on the common.",
+          "zh": "村民们在公地上放牧牛群。"
+        }
+      ],
+      "derivatives": [
+        {"w": "commonly", "gloss": "通常，普遍地"},
+        {"w": "uncommon", "gloss": "不寻常的，罕见的"},
+        {"w": "commonplace", "gloss": "平淡无奇的；陈词滥调"}
+      ],
+      "examples": [
+        {
+          "en": "It is common knowledge that smoking causes cancer.",
+          "zh": "吸烟致癌是众所周知的事。",
+          "source": "造句"
+        },
+        {
+          "en": "common ground",
+          "zh": "「共同点、共识」——谈判与沟通高频词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "widespread", "ipa": "/ˈwaɪdspred/", "gloss": "广泛存在的", "note": "比 common 更强调地理或群体的广度；widespread support（广泛支持）"},
+        {"w": "shared", "ipa": "/ʃerd/", "gloss": "共享的，共有的", "note": "专指多人拥有同一事物；shared values（共同价值观）"},
+        {"w": "ordinary", "ipa": "/ˈɔːrdəneri/", "gloss": "普通的，平凡的", "note": "比 common 更强调缺乏特色；ordinary people（普通人）"}
+      ],
+      "antonyms": [
+        {"w": "rare", "note": "罕见的"},
+        {"w": "unique", "note": "独特的、唯一的"}
+      ],
+      "nuance": "common 既可以是「常见的」（a common cold 普通感冒），也可以是「共同的」（common interest 共同兴趣），还在英式英语中带「粗俗的」含义；ordinary 专强调「平凡无奇」，无「共同」义；widespread 专强调分布广。"
+    },
+    {
+      "word": "solid",
+      "hl": "o",
+      "levels": ["托福"],
+      "ipa": "/ˈsɒlɪd/",
+      "subgroup": "o",
+      "meaning": "adj. 固体的；坚实的；可靠的；纯色的  n. 固体",
+      "etymology": "拉丁语 solidus「完整的、结实的」，与 consolidate（巩固）、soldier（士兵，「密集站立者」）同根。",
+      "roots": [
+        {"part": "solid (solidus)", "meaning": "完整的、结实的"}
+      ],
+      "phonetics": "SOL-id，首音节重读；o /ɒ/ + l + id 弱读 /ɪd/。美式 /ˈsɑːlɪd/。",
+      "core": "「内部没有空隙、完全充实」——从物理上「实心不空」出发，引申出「可靠扎实（思想/论据）」「纯色（没有花纹）」「连续整段时间」。",
+      "senses": [
+        {
+          "gloss": "adj. 固体的，实心的",
+          "logic": "核心义：内部充满物质，没有空洞或液态间隙。",
+          "en": "The table is made of solid oak, not plywood.",
+          "zh": "这张桌子是实心橡木做的，不是胶合板。"
+        },
+        {
+          "gloss": "adj. 坚实的，稳固的",
+          "logic": "「实心」→ 结构上不会垮塌，引申为物理稳固。",
+          "en": "Make sure the ladder is on solid ground before climbing.",
+          "zh": "爬梯子前确认它立在坚实的地面上。"
+        },
+        {
+          "gloss": "adj. 可靠的，站得住脚的",
+          "logic": "「内部无空洞」→ 论据或人品上「没有漏洞」，值得信赖。",
+          "en": "The report provided solid evidence for the hypothesis.",
+          "zh": "这份报告为该假说提供了可靠的证据。"
+        },
+        {
+          "gloss": "adj. 纯色的，无花纹的",
+          "logic": "「完全充满同一种颜色，没有空白或图案」——solid color（纯色）。",
+          "en": "She wore a solid blue dress to the interview.",
+          "zh": "她穿了一件纯蓝色连衣裙去面试。"
+        },
+        {
+          "gloss": "n. 固体",
+          "logic": "名词化：物质三态中「实心」的那种状态。",
+          "en": "Water turns from a liquid to a solid when it freezes.",
+          "zh": "水结冰时从液态变为固态。"
+        }
+      ],
+      "derivatives": [
+        {"w": "solidify", "gloss": "使固化；使巩固"},
+        {"w": "solidarity", "gloss": "团结一致"},
+        {"w": "consolidate", "gloss": "巩固；合并"}
+      ],
+      "examples": [
+        {
+          "en": "The report provided solid evidence for the hypothesis.",
+          "zh": "这份报告为该假说提供了可靠的证据。",
+          "source": "造句"
+        },
+        {
+          "en": "solid gold / a solid argument",
+          "zh": "「纯金 / 站得住脚的论点」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "firm", "ipa": "/fɜːrm/", "gloss": "坚实的，坚定的", "note": "比 solid 更口语；firm ground（坚实的地面）；a firm decision（坚定的决定）"},
+        {"w": "robust", "ipa": "/roʊˈbʌst/", "gloss": "强健的，健全的", "note": "比 solid 更强调经得起压力；a robust economy（健全的经济）"},
+        {"w": "reliable", "ipa": "/rɪˈlaɪəbl/", "gloss": "可靠的，值得信赖的", "note": "专指人或系统值得信赖，比 solid 更侧重依赖性"}
+      ],
+      "antonyms": [
+        {"w": "liquid", "note": "液体（物态义相对）"},
+        {"w": "shaky", "note": "不稳固的、不确定的"}
+      ],
+      "nuance": "solid 最多义：物理上「固体的」，品质上「坚实可靠的」，色彩上「纯色的」；firm 更多指「坚定」的态度或意志；robust 强调能承受压力而不崩溃，常用于系统、经济；reliable 专指可以依赖的人或物。"
+    },
+    {
+      "word": "proper",
+      "hl": "o",
+      "levels": ["托福"],
+      "ipa": "/ˈprɒpər/",
+      "subgroup": "o",
+      "meaning": "adj. 适当的；正确的；（英口）真正的；规矩的",
+      "etymology": "拉丁语 proprius「自己的、特有的」，法语借入。「符合自身特性的」→「适当的」。property（财产、属性）、appropriate 同根。",
+      "roots": [
+        {"part": "propr- (proprius)", "meaning": "自己的、特有的"},
+        {"part": "-er（形容词化后缀）", "meaning": ""}
+      ],
+      "phonetics": "PROP-er，首音节重读；o /ɒ/ + p + er 弱读 /ər/。美式 /ˈprɑːpər/。",
+      "tip": "英式口语中「proper」作副词强调程度（a proper mess 真是一团糟），美式少见此用法。",
+      "core": "「符合某事物本来该有的属性」——从「属于自身的、特有的」出发，引申出「合乎规范的（适当）」「完全符合定义的（真正的）」「有教养的（规矩的）」。",
+      "senses": [
+        {
+          "gloss": "adj. 适当的，正确的，合乎规范的",
+          "logic": "「符合事物本该有的属性」→ 做法或行为符合规范标准。",
+          "en": "Make sure the equipment is stored in a proper manner.",
+          "zh": "确保设备以适当的方式存放。"
+        },
+        {
+          "gloss": "adj. 真正的，名副其实的",
+          "logic": "「完全符合某类别应有的属性」→ 不折不扣的、地道的（英式）。",
+          "en": "After weeks of camping, a proper bed felt like luxury.",
+          "zh": "露营数周后，躺上一张真正的床感觉像是奢侈享受。"
+        },
+        {
+          "gloss": "adj. 规矩的，得体的，有礼貌的",
+          "logic": "「符合社会规范应有的样子」→ 行为举止合乎礼仪。",
+          "en": "She was raised to always behave in a proper manner in public.",
+          "zh": "她从小被教育在公共场合要举止得体。"
+        }
+      ],
+      "derivatives": [
+        {"w": "properly", "gloss": "适当地；正确地"},
+        {"w": "improper", "gloss": "不适当的；不规矩的"},
+        {"w": "property", "gloss": "财产；属性；特性"}
+      ],
+      "examples": [
+        {
+          "en": "Make sure the equipment is stored in a proper manner.",
+          "zh": "确保设备以适当的方式存放。",
+          "source": "造句"
+        },
+        {
+          "en": "proper noun / proper conduct",
+          "zh": "「专有名词 / 规范行为」——学术和正式语境高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "appropriate", "ipa": "/əˈproʊpriət/", "gloss": "恰当的，合适的", "note": "与 proper 最近，但更强调符合具体情境；appropriate behavior（得体的行为）"},
+        {"w": "correct", "ipa": "/kəˈrekt/", "gloss": "正确的，准确的", "note": "比 proper 更强调准确无误；the correct answer（正确答案）"},
+        {"w": "suitable", "ipa": "/ˈsuːtəbl/", "gloss": "合适的，适合的", "note": "强调与特定需求或条件匹配；suitable candidates（合适的候选人）"}
+      ],
+      "antonyms": [
+        {"w": "improper", "note": "不适当的、不规矩的"},
+        {"w": "inappropriate", "note": "不恰当的"}
+      ],
+      "nuance": "proper 强调符合规范、礼仪或标准（proper behavior 合乎规矩的行为）；appropriate 更强调符合具体情境，适用性更广；correct 专指对错层面的「正确」；suitable 强调与目标或需求的匹配度。"
+    },
+    {
+      "word": "problem",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈprɒbləm/",
+      "subgroup": "o",
+      "meaning": "n. 问题；难题；麻烦",
+      "etymology": "希腊语 problēma = pro-(向前) + ballein(抛) = 「抛出来的东西」→ 摆在面前需要解决的难题。",
+      "roots": [
+        {"part": "pro-", "meaning": "向前、在前"},
+        {"part": "-blem (ballein)", "meaning": "抛、扔"}
+      ],
+      "phonetics": "PROB-lem，首音节重读；o /ɒ/ + b + lem 弱读 /ləm/。美式 /ˈprɑːbləm/。",
+      "core": "「被抛到面前、必须正视的东西」——希腊语原义就是「抛出来摆在你面前的难题」，一切引申义都在这个「绕不过去、必须处理」的感觉上。",
+      "senses": [
+        {
+          "gloss": "n. 问题，难题（需要解决）",
+          "logic": "核心义：被「抛」到面前、必须面对并解答的困难事项。",
+          "en": "Pollution remains a serious problem in many cities.",
+          "zh": "污染在许多城市仍然是个严峻问题。"
+        },
+        {
+          "gloss": "n. 麻烦，困扰",
+          "logic": "「摆在面前令人头疼的事」，口语中泛指任何带来困扰的情况。",
+          "en": "His attitude at work is becoming a real problem.",
+          "zh": "他在工作中的态度正在成为真正的麻烦。"
+        },
+        {
+          "gloss": "n. （数学/逻辑）题目，练习",
+          "logic": "「被提出来需要求解的东西」，在学术语境中指具体的解题练习。",
+          "en": "The exam had ten algebra problems in the first section.",
+          "zh": "考试第一部分有十道代数题。"
+        }
+      ],
+      "derivatives": [
+        {"w": "problematic", "gloss": "有问题的；成问题的"},
+        {"w": "problem-solving", "gloss": "解决问题（的能力）"},
+        {"w": "unproblematic", "gloss": "没有问题的，顺利的"}
+      ],
+      "examples": [
+        {
+          "en": "Pollution remains a serious problem in many cities.",
+          "zh": "污染在许多城市仍然是个严峻问题。",
+          "source": "造句"
+        },
+        {
+          "en": "No problem. / That's not my problem.",
+          "zh": "「没问题。/ 那不关我的事。」——高频口语应答。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "issue", "ipa": "/ˈɪʃuː/", "gloss": "问题，议题（中性）", "note": "比 problem 中性，不一定是麻烦，可以是待讨论的事项；address an issue（处理问题）"},
+        {"w": "challenge", "ipa": "/ˈtʃælɪndʒ/", "gloss": "挑战", "note": "把困难正向化，暗含可克服；face a challenge（面对挑战）"},
+        {"w": "obstacle", "ipa": "/ˈɒbstəkl/", "gloss": "障碍，阻碍", "note": "比 problem 更强调阻挡前进的物理或心理屏障"}
+      ],
+      "antonyms": [
+        {"w": "solution", "note": "解决方案"}
+      ],
+      "nuance": "problem 带有「令人头疼、亟待解决」的负面含义；issue 更中性，可以只是「待讨论事项」；challenge 是对困难的正向表达，暗含能够克服；obstacle 强调阻碍性，是挡在路上的东西。"
+    },
+    {
+      "word": "bottom",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈbɒtəm/",
+      "subgroup": "o",
+      "meaning": "n. 底部；最低点；臀部  adj. 最低的  v. 触底",
+      "etymology": "古英语 botm「基础、底部」，日耳曼同根，与德语 Boden（地板、土壤）同源。",
+      "roots": [
+        {"part": "bottom（botm）", "meaning": "基础、底部"}
+      ],
+      "phonetics": "BOT-tom，首音节重读；o /ɒ/ + tt（双写辅音）+ om 弱读 /əm/。美式 /ˈbɑːtəm/，/ɑː/ 更明显。",
+      "core": "「最低处、承载一切的基底」——从物理上的最低点出发，引申出「真相的根源（底部）」「价格/成绩的最低水平」「臀部（身体的最底端）」。",
+      "senses": [
+        {
+          "gloss": "n. 底部，底端",
+          "logic": "核心义：物体的最低面或最深处。",
+          "en": "The keys were sitting at the bottom of her bag.",
+          "zh": "钥匙沉在她包的最底部。"
+        },
+        {
+          "gloss": "n. 最低点，谷底（价格/程度）",
+          "logic": "「最低处」的抽象化：数值或状态的最低水平。",
+          "en": "Prices hit rock bottom during the financial crisis.",
+          "zh": "金融危机期间，价格跌至谷底。"
+        },
+        {
+          "gloss": "n. 真相的根源（get to the bottom of）",
+          "logic": "「挖到最底层」→ 查清事情的根本原因。",
+          "en": "We need to get to the bottom of these rumors.",
+          "zh": "我们需要查清这些谣言的根源。"
+        },
+        {
+          "gloss": "n. 臀部（口语）",
+          "logic": "身体「最底端」的部位，委婉口语用法。",
+          "en": "The child fell on his bottom and started crying.",
+          "zh": "孩子摔坐在地上，哭了起来。"
+        }
+      ],
+      "derivatives": [
+        {"w": "bottomless", "gloss": "无底的；无穷无尽的"},
+        {"w": "rock-bottom", "gloss": "最低点，谷底（价格或情绪）"},
+        {"w": "bottom line", "gloss": "底线；净利润；最终结论"}
+      ],
+      "examples": [
+        {
+          "en": "Prices hit rock bottom during the financial crisis.",
+          "zh": "金融危机期间，价格跌至谷底。",
+          "source": "造句"
+        },
+        {
+          "en": "get to the bottom of",
+          "zh": "「查明真相，弄清……的根源」——高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "base", "ipa": "/beɪs/", "gloss": "基部，底座", "note": "比 bottom 更正式，常指结构性的底部；the base of a mountain（山脚）"},
+        {"w": "foundation", "ipa": "/faʊnˈdeɪʃn/", "gloss": "基础，根基", "note": "比 bottom 更抽象，常指事物的根本依据；the foundation of a theory（理论基础）"},
+        {"w": "floor", "ipa": "/flɔːr/", "gloss": "下限，底线（商业语境）", "note": "作「下限」时（wage floor 最低工资）与 bottom 近义，但 floor 更常用于政策和商业语境"}
+      ],
+      "antonyms": [
+        {"w": "top", "note": "顶部、最高点"},
+        {"w": "peak", "note": "峰值、顶峰"}
+      ],
+      "nuance": "bottom 是最口语的「底部」，可指物理底部或最低状态（bottom out 触底反弹）；base 更正式，强调结构性底座；foundation 多指抽象的基础或根本；floor 作「下限」时（wage floor 最低工资）与 bottom 近义，但 floor 更常用于政策和商业语境。"
+    },
+    {
+      "word": "forgot",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/fəˈɡɒt/",
+      "subgroup": "o",
+      "meaning": "v. forget 的过去式：忘记了",
+      "etymology": "古英语 forgietan = for-(完全) + gietan(获得) = 「完全失去所得到的（记忆）」→ 遗忘。与 get 同根。",
+      "roots": [
+        {"part": "for-", "meaning": "完全、彻底（失去）"},
+        {"part": "-got (gietan)", "meaning": "获取"}
+      ],
+      "phonetics": "弱读前缀 fə- + GOT，重音在后；o /ɒ/ 是重读音节。美式 /fərˈɡɑːt/。",
+      "tip": "forget—forgot—forgotten，不规则变化需整体记忆；forgotten 是高频形容词（a forgotten town 被遗忘的小镇）。",
+      "core": "「曾经获得的记忆被彻底抹去」——for- 表「完全失去」，got（得到）的反转，核心感觉是「拥有过又完全失去」。",
+      "senses": [
+        {
+          "gloss": "v. 忘记（某事），想不起来",
+          "logic": "核心义：记忆从意识中消失，无法提取。",
+          "en": "She forgot to attach the file before sending the email.",
+          "zh": "她发邮件之前忘记附上文件了。"
+        },
+        {
+          "gloss": "v. 不再惦记，放下（forget it）",
+          "logic": "主动让记忆「消失」，即「算了，不要再想了」。",
+          "en": "Forget the argument we had—let's just move on.",
+          "zh": "别再想我们争过的那件事了——向前看吧。"
+        }
+      ],
+      "derivatives": [
+        {"w": "forget", "gloss": "忘记（原形）"},
+        {"w": "forgotten", "gloss": "被遗忘的（过去分词/形容词）"},
+        {"w": "forgetful", "gloss": "健忘的，容易忘事的"}
+      ],
+      "examples": [
+        {
+          "en": "She forgot to attach the file before sending the email.",
+          "zh": "她发邮件之前忘记附上文件了。",
+          "source": "造句"
+        },
+        {
+          "en": "Forget it. / Not to be forgotten.",
+          "zh": "「算了吧。/ 不可忽视的。」——高频口语与书面语用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "overlook", "ipa": "/ˌoʊvərˈlʊk/", "gloss": "忽视，漏掉", "note": "比 forget 更强调「没有注意到」，未必是记忆问题"},
+        {"w": "neglect", "ipa": "/nɪˈɡlekt/", "gloss": "忽略，疏忽", "note": "比 forget 更强调有意或无意地不去做；neglect one's duties（疏于职守）"},
+        {"w": "omit", "ipa": "/əˈmɪt/", "gloss": "遗漏，省略", "note": "多用于书面和清单语境，比 forget 更正式"}
+      ],
+      "antonyms": [
+        {"w": "remember", "note": "记得"},
+        {"w": "recall", "note": "回忆起"}
+      ],
+      "nuance": "forget 是记忆的丧失（完全想不起来），overlook 是注意的遗漏（扫视时跳过了），neglect 是行为上的疏忽（知道但没做），omit 是有意或无意的省略（写作时漏掉了某条）。"
+    },
+    {
+      "word": "want",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/wɒnt/",
+      "subgroup": "wa",
+      "meaning": "v. 想要；需要（口语）  n. 缺乏；需求",
+      "etymology": "古诺尔斯语 vanta「缺乏」，日耳曼同根。本义「匮乏、缺少」，后演变为「渴望拥有某物」。",
+      "roots": [
+        {"part": "want（vanta）", "meaning": "缺乏"}
+      ],
+      "phonetics": "w + a(→/ɒ/) + nt；w 把 a 拐成 /ɒ/，英式 /wɒnt/，美式 /wɑːnt/。w 之后的 a 几乎全部读 /ɒ/。",
+      "tip": "「want」古义是「缺乏」——「in want of food」（缺粮），这个义项至今保留在正式书面英语中。",
+      "core": "「因为缺少而渴望得到」——本义「匮乏」，缺少→产生渴望，两个义项是同一感觉的两面：空缺在那里，所以想填满它。",
+      "senses": [
+        {
+          "gloss": "v. 想要，渴望得到",
+          "logic": "「缺少某物」自然引发「希望拥有它」的欲望，是最常用义。",
+          "en": "All she wanted was a chance to prove herself.",
+          "zh": "她要的只是一个证明自己的机会。"
+        },
+        {
+          "gloss": "v. 需要（口语，表示某事需要被做）",
+          "logic": "「这里有欠缺，需要补上」→ 口语中表示「该做某事了」。",
+          "en": "The car wants a good wash after that road trip.",
+          "zh": "长途自驾之后这辆车需要好好洗一下了。"
+        },
+        {
+          "gloss": "n. 缺乏，匮乏",
+          "logic": "保留古义「缺少」，多见于正式书面语。",
+          "en": "The project failed for want of adequate funding.",
+          "zh": "该项目因资金不足而失败。"
+        },
+        {
+          "gloss": "n. 需求，欲求",
+          "logic": "「所缺之物」→ 「想要的东西」，引申为需求或欲望。",
+          "en": "The company aims to meet the wants and needs of modern consumers.",
+          "zh": "该公司致力于满足现代消费者的欲求与需要。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wanted", "gloss": "被通缉的；受欢迎的"},
+        {"w": "unwanted", "gloss": "不被需要的，多余的"},
+        {"w": "wanting", "gloss": "缺乏的，不足的（正式）"}
+      ],
+      "examples": [
+        {
+          "en": "All she wanted was a chance to prove herself.",
+          "zh": "她要的只是一个证明自己的机会。",
+          "source": "造句"
+        },
+        {
+          "en": "wanted poster / for want of",
+          "zh": "「通缉令 / 因缺乏……」——两种义域的高频固定用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "desire", "ipa": "/dɪˈzaɪər/", "gloss": "渴望，欲望", "note": "比 want 更正式、情感更强烈；desire success（渴望成功）"},
+        {"w": "wish", "ipa": "/wɪʃ/", "gloss": "希望，期望", "note": "比 want 更含蓄，多用于不确定或难以实现的愿望"},
+        {"w": "lack", "ipa": "/læk/", "gloss": "缺乏，缺少", "note": "与 want 的古义相同；lack confidence（缺乏信心）"}
+      ],
+      "antonyms": [
+        {"w": "have", "note": "拥有（缺乏义的反义）"},
+        {"w": "reject", "note": "拒绝（渴望义的反义）"}
+      ],
+      "nuance": "want 最口语最直接（I want coffee）；desire 更正式，含情感强度；wish 多用于不太可能实现的事（I wish I could fly）；lack 专指「缺乏某种必需品或品质」，不含渴望意味。"
+    },
+    {
+      "word": "watch",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/wɒtʃ/",
+      "subgroup": "wa",
+      "meaning": "v. 观看；注视；留意  n. 手表；守望",
+      "etymology": "古英语 wæccan「保持清醒、守卫」，本义「夜间值守」，守夜中需「注视」动向，引申为「观看」；后指守夜人随身携带的计时器→手表。",
+      "roots": [
+        {"part": "watch（wæccan）", "meaning": "守卫、保持清醒"}
+      ],
+      "phonetics": "w + a(→/ɒ/) + tch /tʃ/；w 把 a 拐成 /ɒ/，英式 /wɒtʃ/，美式 /wɑːtʃ/。",
+      "core": "「保持清醒、盯紧不放」——守夜值班的高度专注感，衍生出「紧盯着看」「时刻留意」，以及守夜人随身计时的「手表」。",
+      "senses": [
+        {
+          "gloss": "v. 观看，注视（聚精会神地）",
+          "logic": "守夜时必须「睁大眼睛盯着」，引申为任何专注的观看行为。",
+          "en": "She watched the sunset from the rooftop without saying a word.",
+          "zh": "她在楼顶无言地看着日落。"
+        },
+        {
+          "gloss": "v. 留意，小心（watch out/watch for）",
+          "logic": "守卫时「警觉地注意」危险，引申为对某事保持警惕。",
+          "en": "You should watch what you eat if you want to stay healthy.",
+          "zh": "如果你想保持健康，应该注意饮食。"
+        },
+        {
+          "gloss": "n. 手表",
+          "logic": "守夜人随身携带计时器来轮班，「守夜→携带的计时工具」，历史引申路径真实。",
+          "en": "He checked his watch and realized he was already late.",
+          "zh": "他看了看手表，才意识到已经迟到了。"
+        },
+        {
+          "gloss": "n. 守望，警戒（值班）",
+          "logic": "保留原义「值守、轮班警戒」，如 on watch（值班中）。",
+          "en": "The coast guard kept a close watch on the suspicious vessel.",
+          "zh": "海岸警卫队密切监视着那艘可疑船只。"
+        }
+      ],
+      "derivatives": [
+        {"w": "watchdog", "gloss": "看门狗；监督机构"},
+        {"w": "watchful", "gloss": "警觉的，留心的"},
+        {"w": "wristwatch", "gloss": "腕表，手表"}
+      ],
+      "examples": [
+        {
+          "en": "You should watch what you eat if you want to stay healthy.",
+          "zh": "如果你想保持健康，应该注意饮食。",
+          "source": "造句"
+        },
+        {
+          "en": "watch out / on the watch for",
+          "zh": "「小心、当心 / 留意……」——高频警示用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "observe", "ipa": "/əbˈzɜːrv/", "gloss": "观察，系统性地注视", "note": "比 watch 更有目的性和系统性；observe animal behavior（观察动物行为）"},
+        {"w": "monitor", "ipa": "/ˈmɒnɪtər/", "gloss": "监控，持续追踪", "note": "比 watch 更强调长期定期观察；monitor the patient's condition（监测病人状况）"},
+        {"w": "guard", "ipa": "/ɡɑːrd/", "gloss": "守卫，看护", "note": "与 watch 的本义「守望」相通；guard the entrance（守卫入口）"}
+      ],
+      "antonyms": [
+        {"w": "ignore", "note": "忽视、不看"},
+        {"w": "overlook", "note": "漏看、忽略"}
+      ],
+      "nuance": "watch 强调「目不转睛地注视变化」（watch a game 看比赛），see 是被动感知（I saw it happen），look at 是短暂注视，observe 是有目的的系统观察，monitor 是持续性监测。"
+    },
+    {
+      "word": "wash",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/wɒʃ/",
+      "subgroup": "wa",
+      "meaning": "v. 洗涤；冲刷  n. 洗涤；（海浪的）冲刷声",
+      "etymology": "古英语 wæscan「洗」，日耳曼同根，与德语 waschen 同源。",
+      "roots": [
+        {"part": "wash（wæscan）", "meaning": "洗"}
+      ],
+      "phonetics": "w + a(→/ɒ/) + sh /ʃ/；w 把 a 拐成 /ɒ/，英式 /wɒʃ/，美式 /wɑːʃ/。",
+      "core": "「用流动的水清除污物或带走物质」——洗涤的物理动作：水流过表面，带走不需要的东西。引申出「冲刷带走」（地质）、「洗脱责任」（比喻）。",
+      "senses": [
+        {
+          "gloss": "v. 洗，清洗",
+          "logic": "核心义：用水去除污垢或杂质。",
+          "en": "Wash your hands thoroughly before preparing any food.",
+          "zh": "准备食物前要彻底洗手。"
+        },
+        {
+          "gloss": "v. 冲刷，冲走",
+          "logic": "水流「洗去」土壤或物体，用于自然现象，如雨水冲刷地表。",
+          "en": "Heavy rain washed away the topsoil from the slopes.",
+          "zh": "大雨将山坡上的表层土壤冲走了。"
+        },
+        {
+          "gloss": "v. 冲上（海岸），被浪打到",
+          "logic": "海浪如同「洗刷」海岸，把物体从水里带到岸上。",
+          "en": "A wooden crate washed up on the beach after the storm.",
+          "zh": "风暴过后，一个木箱被冲上了海滩。"
+        },
+        {
+          "gloss": "n. 洗涤，清洗（一次）",
+          "logic": "动作名词化：「给……洗一次」。",
+          "en": "This shirt needs a wash before you wear it again.",
+          "zh": "这件衬衫再穿之前得洗一洗。"
+        }
+      ],
+      "derivatives": [
+        {"w": "washout", "gloss": "被冲毁；完全失败（口语）"},
+        {"w": "brainwash", "gloss": "洗脑"},
+        {"w": "whitewash", "gloss": "粉饰，掩盖；大比分获胜"}
+      ],
+      "examples": [
+        {
+          "en": "Heavy rain washed away the topsoil from the slopes.",
+          "zh": "大雨将山坡上的表层土壤冲走了。",
+          "source": "造句"
+        },
+        {
+          "en": "wash up / wash one's hands of",
+          "zh": "「洗碗（英式）/ 洗手不干、推卸责任」——高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "rinse", "ipa": "/rɪns/", "gloss": "漂洗，冲洗", "note": "比 wash 更强调用水冲去残留物；rinse the vegetables（冲洗蔬菜）"},
+        {"w": "clean", "ipa": "/kliːn/", "gloss": "清洁，清理", "note": "比 wash 更通用，不限于水；clean the windows（擦窗）"},
+        {"w": "erode", "ipa": "/ɪˈroʊd/", "gloss": "侵蚀，冲刷（地质）", "note": "比 wash away 更正式，多用于地理和学术语境"}
+      ],
+      "antonyms": [
+        {"w": "dirty", "note": "弄脏（动词义的反义）"},
+        {"w": "soil", "note": "污染、弄脏"}
+      ],
+      "nuance": "wash 是最通用的「洗」；rinse 特指用水冲去泡沫或残留物，通常是 wash 之后的步骤；clean 范围更广，不限于水洗；erode 是地质术语，指流水对土地的侵蚀，不用于日常洗涤。"
+    },
+    {
+      "word": "wander",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/ˈwɒndər/",
+      "subgroup": "wa",
+      "meaning": "v. 漫游；走神；偏离（主题）  n. 漫游",
+      "etymology": "古英语 wandrian「漫游、徘徊」，日耳曼同根，与德语 wandern（徒步旅行）同源。Wanderlust（旅行欲望）即源自此根。",
+      "roots": [
+        {"part": "wander（wandrian）", "meaning": "漫游、徘徊"}
+      ],
+      "phonetics": "WAN-der，首音节重读；w + a(→/ɒ/) + nder，英式 /ˈwɒndər/，美式 /ˈwɑːndər/。",
+      "tip": "wander（漫游）和 wonder（惊奇）发音相近，差异在首元音：wander /ɒ/，wonder /ʌ/，别混淆。",
+      "core": "「没有固定目的地，随意游走」——物理上在空间中漫无目的地移动，引申到思维（走神）和言语（跑题）上的「偏离轨道、随意漂移」。",
+      "senses": [
+        {
+          "gloss": "v. 漫游，闲逛（物理）",
+          "logic": "核心义：没有具体目标地在空间中行走。",
+          "en": "They spent the afternoon wandering through the old town.",
+          "zh": "他们花了一个下午在古城区漫步。"
+        },
+        {
+          "gloss": "v. 走神，思维飘散",
+          "logic": "思维如同身体一样「漫无目的地游走」，偏离应该集中的点。",
+          "en": "Her mind began to wander during the lengthy presentation.",
+          "zh": "在冗长的演示过程中，她开始走神了。"
+        },
+        {
+          "gloss": "v. 偏离（主题/正道）",
+          "logic": "「随意漫走」引申为言语或行为「偏离」了应该保持的轨道。",
+          "en": "The speaker kept wandering off topic and losing the audience.",
+          "zh": "演讲者不断跑题，让听众失去了兴趣。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wanderer", "gloss": "流浪者，漫游者"},
+        {"w": "wanderlust", "gloss": "旅行欲望，对远方的渴望"},
+        {"w": "meandering", "gloss": "蜿蜒的；漫无边际的（常形容河流或谈话）"}
+      ],
+      "examples": [
+        {
+          "en": "Her mind began to wander during the lengthy presentation.",
+          "zh": "在冗长的演示过程中，她开始走神了。",
+          "source": "造句"
+        },
+        {
+          "en": "wander off / wander off topic",
+          "zh": "「走散、偏离 / 跑题」——高频搭配，具体和抽象两义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "roam", "ipa": "/roʊm/", "gloss": "漫游（大范围，自由）", "note": "比 wander 更强调自由无目的地游荡，范围更大；roam the streets（在街上游荡）"},
+        {"w": "stray", "ipa": "/streɪ/", "gloss": "迷失，偏离（不该偏的）", "note": "比 wander 更强调不小心偏离了应该在的地方；stray from the path（偏离小路）"},
+        {"w": "drift", "ipa": "/drɪft/", "gloss": "漂移，随风漂流", "note": "比 wander 更被动，像被水流或风推动；drift off topic（不知不觉跑题）"}
+      ],
+      "antonyms": [
+        {"w": "focus", "note": "集中（走神义的反义）"},
+        {"w": "stay put", "note": "待在原地（漫游义的反义）"}
+      ],
+      "nuance": "wander 强调漫无目的但相对自由的游走；roam 范围更大，常用于野生动物或大面积区域；stray 暗含不该偏离却偏离了，带一点负面；drift 最被动，像顺流漂浮，常用于思维或对话的不知不觉跑偏。"
+    },
+    {
+      "word": "quality",
+      "hl": "a",
+      "levels": ["托福"],
+      "ipa": "/ˈkwɒlɪti/",
+      "subgroup": "wa",
+      "meaning": "n. 质量；品质；特性  adj. 优质的",
+      "etymology": "拉丁语 qualitas = qualis(什么样的) + -itas(名词后缀) = 「某种性质的状态」→ 品质。与 qualify（使具备资格）同根。",
+      "roots": [
+        {"part": "qual- (qualis)", "meaning": "什么样的、属性"},
+        {"part": "-ity", "meaning": "名词后缀，表示状态"}
+      ],
+      "phonetics": "QUAL-i-ty；qu /kw/ + a(→/ɒ/) + lity；qu 把 a 拐成 /ɒ/，英式 /ˈkwɒlɪti/，美式 /ˈkwɑːlɪti/。",
+      "core": "「某事物究竟是什么样子的」——拉丁语 qualis（什么样的）直接名词化，核心是对「性质/属性」的描述，既可以是好坏的评价，也可以是中性的「特征」。",
+      "senses": [
+        {
+          "gloss": "n. 质量，品质（好坏的评价）",
+          "logic": "「这个东西究竟是什么水平」→ 最常用义，含有好坏的评价维度。",
+          "en": "The quality of the research data directly affects the conclusions.",
+          "zh": "研究数据的质量直接影响结论。"
+        },
+        {
+          "gloss": "n. 特性，特质（中性，某类事物固有的）",
+          "logic": "「事物本来是什么样的」→ 该事物固有的某种属性，不含好坏判断。",
+          "en": "Patience is one of the most important qualities of a good teacher.",
+          "zh": "耐心是优秀教师最重要的特质之一。"
+        },
+        {
+          "gloss": "adj. 优质的，高品质的",
+          "logic": "「quality」作形容词时已暗含「好的」评价，是词义的正向固化。",
+          "en": "They only source quality ingredients from local farms.",
+          "zh": "他们只从当地农场采购优质食材。"
+        }
+      ],
+      "derivatives": [
+        {"w": "qualify", "gloss": "使具备资格；限定，修饰"},
+        {"w": "qualified", "gloss": "有资格的；有条件的"},
+        {"w": "high-quality", "gloss": "高质量的，高品质的"}
+      ],
+      "examples": [
+        {
+          "en": "The quality of the research data directly affects the conclusions.",
+          "zh": "研究数据的质量直接影响结论。",
+          "source": "造句"
+        },
+        {
+          "en": "quality control / quality of life",
+          "zh": "「质量控制 / 生活质量」——工业和社会科学高频词组。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "standard", "ipa": "/ˈstændərd/", "gloss": "标准，水准", "note": "比 quality 更强调参照基准；meet the standard（达到标准）"},
+        {"w": "excellence", "ipa": "/ˈeksələns/", "gloss": "卓越，优秀", "note": "比 quality 更强调高水准；strive for excellence（追求卓越）"},
+        {"w": "attribute", "ipa": "/ˈætrɪbjuːt/", "gloss": "特性，属性", "note": "与 quality 的「品质」义相近；positive attributes（积极的特质）"}
+      ],
+      "antonyms": [
+        {"w": "inferiority", "note": "劣质、低劣"},
+        {"w": "defect", "note": "缺陷（质量问题）"}
+      ],
+      "nuance": "quality 兼指「质量高低」（poor quality 劣质）和「特性」（leadership qualities 领导力特质）；standard 强调可量化的参照基准；excellence 专指高水准；attribute 更强调某类事物固有的特征，不含好坏评价。"
+    },
+    {
+      "word": "swan",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/swɒn/",
+      "subgroup": "wa",
+      "meaning": "n. 天鹅  v. （英口）大摇大摆地走",
+      "etymology": "古英语 swan，日耳曼同根，与德语 Schwan 同源。Swan Lake（《天鹅湖》）是柴可夫斯基 1876 年的芭蕾舞剧。",
+      "roots": [
+        {"part": "swan（swan）", "meaning": "天鹅"}
+      ],
+      "phonetics": "sw + a(→/ɒ/) + n；sw- 辅音群之后的 a 读 /ɒ/，英式 /swɒn/，美式 /swɑːn/。",
+      "tip": "「black swan」（黑天鹅）源自纳西姆·塔勒布 2007 年同名著作，指极罕见却影响巨大的事件，是当代风险管理核心词汇。",
+      "core": "「天鹅」本义是优雅滑行于水面的大型白鸟；动词义「大摇大摆走」（英式口语）是由天鹅傲慢优雅的姿态引申而来，带调侃意味；「black swan」是完全独立的文化词汇，与字面无关（历史偶合：人们曾以为天鹅只有白色）。",
+      "senses": [
+        {
+          "gloss": "n. 天鹅",
+          "logic": "核心义：大型白色水鸟，以优雅姿态著称。",
+          "en": "A pair of swans glided silently across the lake.",
+          "zh": "一对天鹅无声地滑过湖面。"
+        },
+        {
+          "gloss": "v. （英式口语）大摇大摆地走进来",
+          "logic": "天鹅在水面滑行时的傲慢悠然姿态，被借用为「不顾他人、自我感觉良好地走进某场合」，带讽刺意味。",
+          "en": "He swanned into the meeting half an hour late without any apology.",
+          "zh": "他大摇大摆地迟到半小时走进会议室，一声道歉都没有。"
+        }
+      ],
+      "derivatives": [
+        {"w": "swansong", "gloss": "绝唱，最后作品（天鹅临死前鸣叫的传说）"},
+        {"w": "black swan", "gloss": "黑天鹅事件（极罕见高冲击的意外）"}
+      ],
+      "examples": [
+        {
+          "en": "A pair of swans glided silently across the lake.",
+          "zh": "一对天鹅无声地滑过湖面。",
+          "source": "造句"
+        },
+        {
+          "en": "black swan event",
+          "zh": "「黑天鹅事件」——极罕见、高冲击力的意外事件，风险管理高频术语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "waterfowl", "ipa": "/ˈwɔːtərfaʊl/", "gloss": "水禽（天鹅所属的大类）", "note": "swan 属于 waterfowl 的一种，范围更宽"},
+        {"w": "glide", "ipa": "/ɡlaɪd/", "gloss": "滑行，平稳移动", "note": "与 swan 的优雅动态高度关联；swans glide on water（天鹅在水面滑行）"}
+      ],
+      "antonyms": [],
+      "nuance": "swan 作名词指天鹅，作动词（英式口语）指「大摇大摆地走进来」（swan into a room），带轻微讽刺意味；black swan 作文化词汇时专指超出预期的极端事件，与字面意思无关。"
+    },
+    {
+      "word": "cough",
+      "hl": "ough",
+      "levels": ["非托福"],
+      "ipa": "/kɒf/",
+      "subgroup": "other",
+      "meaning": "v. 咳嗽；（咳嗽般）吐出  n. 咳嗽；咳嗽声",
+      "etymology": "中古英语 coughen，拟声词起源，模仿咳嗽时喉咙发出的声音。",
+      "roots": [
+        {"part": "cough（拟声）", "meaning": "咳嗽声"}
+      ],
+      "phonetics": "ough 组合在此读 /ɒf/：c + ough(→/ɒf/)。英式 /kɒf/，美式 /kɑːf/。这是 ough 最不规则的读法之一，需单独记忆（对比 through /θruː/、though /ðoʊ/、thought /θɔːt/）。",
+      "tip": "ough 在英语中有 6 种以上读音，cough 的 /ɒf/ 是其中一个，可与 rough /rʌf/、though /ðoʊ/ 一起对比记忆。",
+      "core": "「喉咙强力排出空气的动作及其声音」——拟声词起源，声音即意义。引申出「不情愿地吐出/交出」的比喻义（cough up money）。",
+      "senses": [
+        {
+          "gloss": "v. 咳嗽",
+          "logic": "核心义：喉咙或肺部受刺激，强力呼气排出，拟声词直接对应。",
+          "en": "He coughed all night and could barely sleep.",
+          "zh": "他整夜咳嗽，几乎无法入睡。"
+        },
+        {
+          "gloss": "v. 咳出，吐出（血/痰等）",
+          "logic": "「咳嗽」动作将体内物质带出，cough up blood（咯血）。",
+          "en": "He coughed up blood and was rushed to hospital.",
+          "zh": "他咳出了血，随即被紧急送医。"
+        },
+        {
+          "gloss": "v. （口语）不情愿地掏钱/交出",
+          "logic": "「被迫从喉咙里挤出来」的比喻：像咳嗽一样费力且不情愿地交出。",
+          "en": "The company finally coughed up the money it owed.",
+          "zh": "公司最终不情愿地支付了欠款。"
+        },
+        {
+          "gloss": "n. 咳嗽（声）",
+          "logic": "动词名词化，指一次咳嗽的动作或长期咳嗽的症状。",
+          "en": "She has had a persistent cough for three weeks.",
+          "zh": "她持续咳嗽已经三周了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "cough drop", "gloss": "润喉糖，止咳糖"},
+        {"w": "cough syrup", "gloss": "止咳糖浆"},
+        {"w": "whooping cough", "gloss": "百日咳"}
+      ],
+      "examples": [
+        {
+          "en": "He coughed up blood and was rushed to hospital.",
+          "zh": "他咳出了血，随即被紧急送医。",
+          "source": "造句"
+        },
+        {
+          "en": "cough up（the money）",
+          "zh": "「（不情愿地）掏钱」——口语习语，cough up 还有「勉强交出」的俚语义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "hack", "ipa": "/hæk/", "gloss": "干咳，刺激性阵咳", "note": "比 cough 更强调短促、刺激性的阵咳；a hacking cough（干咳不止）"},
+        {"w": "wheeze", "ipa": "/wiːz/", "gloss": "喘息，哮鸣", "note": "带有气道受阻的声音，比 cough 更强调呼吸困难"},
+        {"w": "clear one's throat", "note": "清嗓（轻微的 cough，通常是为了开口说话前清理喉咙）", "gloss": "清嗓，清喉咙"}
+      ],
+      "antonyms": [],
+      "nuance": "cough 是最通用的咳嗽；hack 强调干咳的连续刺激感；wheeze 指带哨音的喘息，常见于哮喘患者；clear one's throat 是礼貌性轻咳，目的是准备开口说话，而非因病。"
+    }
+  ]
+}

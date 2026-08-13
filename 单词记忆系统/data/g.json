@@ -1,0 +1,1251 @@
+{
+  "id": "g",
+  "combo": "g·gg·gu·gh",
+  "title": "/g/ 硬音家族",
+  "sound": "/g/",
+  "subtitle": "四种拼写，一个爆破，从 go 到 ghost 全是同一个 /g/",
+  "intro": "/g/ 是软腭爆破音——舌根抵软腭，气流冲破形成爆破。关键规律：g 在 a/o/u 和辅音前读硬音 /g/（go、green、flag）；在 e/i/y 前多读 /dʒ/（gym、giant），这种情况本页不收。gu 里的 u 只是「保硬」的哑兵，真正发音的是 g（guest、guide、vague 词尾的 gue 整组不发音，只保住 /g/）。gh 在词首读硬 /g/（ghost、ghastly），词中或词尾的 gh 则几乎不发音（night、rough）——本页只收词首 gh 和意大利借词 spaghetti 的 gh。把这四条路一次摸清，/g/ 家族再没有读错的理由。",
+  "subgroups": [
+    {
+      "key": "g",
+      "tag": "g → /g/",
+      "label": "✅ g = /g/",
+      "desc": "a/o/u/辅音前读硬音，无例外：go、good、green、grow、great、flag。规律最稳定的一组——见 g 在这些位置直接读爆破音，无需判断。"
+    },
+    {
+      "key": "gg",
+      "tag": "gg → /g/",
+      "label": "gg = /g/",
+      "desc": "双 g 发单个 /g/，不拉长：trigger、sluggish、rugged。gg 前的元音往往是短元音（/ɪ/、/ʌ/、/æ/），双 g 是「短元音锁」的标志，发音时只爆破一次。"
+    },
+    {
+      "key": "gu",
+      "tag": "gu → /g/（u 不发音）",
+      "label": "gu = /g/",
+      "desc": "g 后跟 u 是为了在 e/i 前保住硬音：guest（否则会读成 /dʒ/）、guide、guilty。词尾 -gue 中整个 ue 不发音（vague = /veɪg/、league = /liːg/）——u 是无声的保镖。"
+    },
+    {
+      "key": "gh",
+      "tag": "gh → /g/（词首）",
+      "label": "gh = /g/",
+      "desc": "词首 gh 读 /g/：ghost、ghastly。这是古英语 /g/ 在书写上的保留痕迹。词中/词尾的 gh 则不发音（night）或读 /f/（rough），本组只收词首情况和意大利借词 spaghetti 中的 gh。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-og / -og（-og 结尾）",
+      "words": ["dog", "fog", "log", "jog", "clog"]
+    },
+    {
+      "label": "-ug / -ug（-ug 结尾）",
+      "words": ["bug", "slug", "drug", "shrug", "plug"]
+    },
+    {
+      "label": "-ague / -eague（词尾 gue 不发音）",
+      "words": ["vague", "league", "plague", "fatigue", "morgue"]
+    }
+  ],
+  "words": [
+    {
+      "word": "go",
+      "hl": "g",
+      "levels": ["基础"],
+      "ipa": "/ɡoʊ/",
+      "subgroup": "g",
+      "meaning": "v. 去，走；运转；变成（某状态）",
+      "etymology": "古英语 gān「行走」，日耳曼同根，与德语 gehen 同源。go 作系动词「变成」（go bad、go wrong）是高频但常被忽视的义项。",
+      "roots": [
+        {"part": "go（gān）", "meaning": "行走"}
+      ],
+      "phonetics": "g + o /oʊ/，开音节，/g/ 在元音 /o/ 前读硬音，是最简洁的 /g/ 锚定词。",
+      "tip": "「go + 形容词」表示「变得……」：go wrong（出错）、go viral（爆火）、go bankrupt（破产）——比 become 更口语。",
+      "core": "「离开当前状态，朝某个方向运动」——物理上是移动，抽象上是转变（go bad、go viral），两义共享「脱离原位、进入新状态」的感觉。",
+      "senses": [
+        {
+          "gloss": "移动，去（地点）",
+          "logic": "核心义：离开原处朝某方向运动",
+          "en": "She goes to the gym every morning before work.",
+          "zh": "她每天上班前都去健身房。"
+        },
+        {
+          "gloss": "变成某状态（go + adj）",
+          "logic": "脱离原状态进入新状态，常指负面变化：go bad（变质）、go wrong（出错）",
+          "en": "The milk went sour overnight.",
+          "zh": "牛奶一夜间就变酸了。"
+        },
+        {
+          "gloss": "运转，运行（机器/计划）",
+          "logic": "系统从静止「走动起来」——get things going（让事情运转）",
+          "en": "The engine won't go in cold weather.",
+          "zh": "发动机在寒冷天气里打不着火。"
+        },
+        {
+          "gloss": "消失，耗尽",
+          "logic": "东西「离开」了——all the food is gone（食物没了）",
+          "en": "Half the budget was gone by the end of the first week.",
+          "zh": "第一周结束时预算就花掉了一半。"
+        }
+      ],
+      "derivatives": [
+        {"w": "undergo", "gloss": "经历，承受（某过程）"},
+        {"w": "outgoing", "gloss": "外向的；离任的"},
+        {"w": "ongoing", "gloss": "持续进行中的"}
+      ],
+      "examples": [
+        {
+          "en": "The plan went wrong from the very beginning.",
+          "zh": "计划从一开始就出了问题。",
+          "source": "造句"
+        },
+        {
+          "en": "go viral",
+          "zh": "「病毒式传播、爆火」——互联网高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "proceed", "ipa": "/prəˈsiːd/", "gloss": "前进，继续（按计划推进）", "note": "正式「前进、继续」，比 go 更强调按计划推进；proceed with caution（谨慎前进）"},
+        {"w": "travel", "ipa": "/ˈtrævl/", "gloss": "旅行，（远距离）移动", "note": "特指较长距离的移动或旅行，比 go 更强调旅途过程"},
+        {"w": "become", "ipa": "/bɪˈkʌm/", "gloss": "变成（某状态）", "note": "「变成」义，比 go + adj 更正式；become angry vs go angry（后者口语）"}
+      ],
+      "antonyms": [
+        {"w": "stay", "note": "留下、停留"},
+        {"w": "come", "note": "来（方向相反）"}
+      ],
+      "nuance": "go 作「变成」时（go bad、go mad）暗含「朝不好的方向转变」的含义，几乎不用于正面变化（不说 go successful）；become 中性，正负均可。proceed 强调有序进行而非移动本身。"
+    },
+    {
+      "word": "green",
+      "hl": "gr",
+      "levels": ["基础"],
+      "ipa": "/ɡriːn/",
+      "subgroup": "g",
+      "meaning": "adj. 绿色的；环保的；（经验上）青涩的  n. 绿色；草地",
+      "etymology": "古英语 grēne，与 grow（生长）、grass（草）同根——三词共享「生长、绿色」的原始印欧词根 *ghre-。",
+      "roots": [
+        {"part": "green（grēne）", "meaning": "绿色、生长"}
+      ],
+      "phonetics": "gr- 连缀辅音 + ee /iː/ + n，/g/ 在辅音 r 前读硬音；连缀辅音要流畅滑入，不拆开读。",
+      "tip": "green 作「青涩、缺乏经验」义（a green recruit）来自植物「未成熟」→「未经历练」的隐喻。",
+      "core": "「生命力萌发、尚未成熟」——草木之绿是生长中的颜色，既代表活力（green energy），也代表未熟（green recruit）；两义共享「未到顶峰、仍在生长中」的感觉。",
+      "senses": [
+        {
+          "gloss": "绿色的（颜色）",
+          "logic": "核心义：植物生长的颜色",
+          "en": "The hills were green after weeks of rain.",
+          "zh": "连续数周降雨后山丘一片翠绿。"
+        },
+        {
+          "gloss": "环保的，可持续的",
+          "logic": "「绿色」与自然生态挂钩，引申为对环境友好",
+          "en": "The city launched a green initiative to cut carbon emissions by 40%.",
+          "zh": "该市启动了一项绿色计划，目标将碳排放削减40%。"
+        },
+        {
+          "gloss": "青涩的，缺乏经验的",
+          "logic": "未熟的果实是绿的——人「还没成熟」就是 green",
+          "en": "He was still green when he joined the team, but he learned fast.",
+          "zh": "刚加入团队时他还很青涩，但进步很快。"
+        }
+      ],
+      "derivatives": [
+        {"w": "greenhouse", "gloss": "温室；（greenhouse effect）温室效应"},
+        {"w": "greenery", "gloss": "绿色植物，草木"},
+        {"w": "greenback", "gloss": "美钞，美元（俚语）"}
+      ],
+      "examples": [
+        {
+          "en": "The company adopted a green energy policy to reduce its carbon footprint.",
+          "zh": "该公司采用绿色能源政策以减少碳排放。",
+          "source": "造句"
+        },
+        {
+          "en": "green with envy",
+          "zh": "「嫉妒得脸都绿了」——高频成语，表示极度嫉妒。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "eco-friendly", "ipa": "/ˌiːkoʊˈfrendli/", "gloss": "对生态无害的，环保的", "note": "「环保的」义，比 green 更具体，强调对生态无害"},
+        {"w": "inexperienced", "ipa": "/ˌɪnɪkˈspɪəriənst/", "gloss": "缺乏经验的，生疏的", "note": "「青涩义」的正式说法，比 green 更中性，无「幼稚」暗示"},
+        {"w": "lush", "ipa": "/lʌʃ/", "gloss": "草木茂盛的，郁郁葱葱的", "note": "「绿意盎然」，描述植被茂密，比 green 更强调丰盛鲜嫩"}
+      ],
+      "antonyms": [
+        {"w": "experienced", "note": "（「青涩」义）有经验的"},
+        {"w": "arid", "note": "（「绿色」义）干旱的、贫瘠的"}
+      ],
+      "nuance": "green 作「环保」时，eco-friendly 更正式精确；作「缺乏经验」时，naive 偏智识上的天真，green 偏实践上的生涩，inexperienced 最中性。"
+    },
+    {
+      "word": "great",
+      "hl": "gr",
+      "levels": ["基础"],
+      "ipa": "/ɡreɪt/",
+      "subgroup": "g",
+      "meaning": "adj. 巨大的；伟大的；极好的  adv. 非常好",
+      "etymology": "古英语 grēat「粗大、巨大」，原义指物理体积，演变为抽象的「卓越、伟大」。同根词 grout（砂浆，粗粒填充物）保留了「粗大」的原始义。",
+      "roots": [
+        {"part": "great（grēat）", "meaning": "粗大、巨大"}
+      ],
+      "phonetics": "gr- 连缀 + ea /eɪ/ + t，/g/ 在辅音 r 前读硬音。注意 ea 在此读 /eɪ/ 而非常见的 /iː/——是个例外，和 break、steak 同类。",
+      "tip": "ea 读 /eɪ/ 的词极少，great/break/steak 三词一起记，其余 ea 几乎全读 /iː/ 或 /e/。",
+      "core": "「体量超出寻常」——原义指物理上的粗大巨量，引申为规模（a great number）、品质（great work）、历史地位（Alexander the Great）三个维度；核心感觉是「远超平均」。",
+      "senses": [
+        {
+          "gloss": "巨大的，大量的",
+          "logic": "核心义：体量超出常规",
+          "en": "A great number of species have gone extinct in the last century.",
+          "zh": "上个世纪有大量物种灭绝。"
+        },
+        {
+          "gloss": "伟大的，卓越的（人/成就）",
+          "logic": "抽象「体量」：影响力、历史地位远超常人",
+          "en": "She is widely regarded as one of the great novelists of the twentieth century.",
+          "zh": "她被公认为二十世纪最伟大的小说家之一。"
+        },
+        {
+          "gloss": "极好的（口语赞美）",
+          "logic": "「品质远超平均」进一步口语化，成为通用赞美词",
+          "en": "That's a great idea — let's go with it.",
+          "zh": "这个主意太棒了，就这么定。"
+        }
+      ],
+      "derivatives": [
+        {"w": "greatly", "gloss": "大大地，非常（程度副词）"},
+        {"w": "greatness", "gloss": "伟大，卓越"},
+        {"w": "greater", "gloss": "更大的；大（都市）区的（如 Greater London）"}
+      ],
+      "examples": [
+        {
+          "en": "Alexander the Great unified much of the known world in the 4th century BC.",
+          "zh": "亚历山大大帝在公元前4世纪统一了大半个已知世界。",
+          "source": "造句"
+        },
+        {
+          "en": "The Great Wall of China",
+          "zh": "「中国长城」——固定文化表达，great 作「巨大、伟大」义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "magnificent", "ipa": "/mæɡˈnɪfɪsnt/", "gloss": "壮丽的，宏伟的", "note": "「壮丽的、宏伟的」，比 great 更强调视觉震撼，多用于景观建筑"},
+        {"w": "outstanding", "ipa": "/ˌaʊtˈstændɪŋ/", "gloss": "杰出的，卓越的", "note": "「杰出的」，比 great 更正式，强调在同类中脱颖而出"},
+        {"w": "tremendous", "ipa": "/trɪˈmendəs/", "gloss": "巨大的，了不起的（带惊叹感）", "note": "「巨大的、了不起的」，语气比 great 更强烈，带有惊叹感"}
+      ],
+      "antonyms": [
+        {"w": "trivial", "note": "微不足道的"},
+        {"w": "mediocre", "note": "平庸的"}
+      ],
+      "nuance": "great 是最通用的赞美词（great job、great idea），outstanding 强调「在同类中突出」，magnificent 侧重外观上的壮丽，tremendous 语气最强烈，带夸张感。「a great leader」是通用赞誉，「an outstanding leader」强调超越同侪。"
+    },
+    {
+      "word": "flag",
+      "hl": "g",
+      "levels": ["托福"],
+      "ipa": "/flæɡ/",
+      "subgroup": "g",
+      "meaning": "n. 旗帜；标记  v. 标记；（精力）衰减，减弱",
+      "etymology": "16世纪词，可能源自方言 flag「下垂」，与「旗帜随风飘垂」有关。动词「精力衰减」义保留了「下垂、松弛」的原始感。",
+      "roots": [
+        {"part": "flag", "meaning": "下垂；旗帜"}
+      ],
+      "phonetics": "fl- 连缀 + a /æ/ + g，/g/ 在词尾读清晰爆破，不弱化。注意词尾单 g 读 /g/，不读 /dʒ/。",
+      "tip": "flag 作动词「减弱」（My enthusiasm began to flag）是托福阅读中的陷阱义——看到 flag 不要只想到旗帜。",
+      "core": "「下垂感」——旗帜是悬垂之物，标记是「挑出来让人注意」的动作（竖起来），而精力「减弱」是往下垂。三义共享「下垂/悬挂」这一物理感觉，「标记」义略有反转（挑出来），但历史上 flag 有「插旗标记」的动作联想。",
+      "senses": [
+        {
+          "gloss": "旗帜，旗子",
+          "logic": "核心义：悬挂、飘垂之物",
+          "en": "The flags of all participating nations were raised at the opening ceremony.",
+          "zh": "开幕式上升起了所有参赛国的国旗。"
+        },
+        {
+          "gloss": "标记，标注（引起注意）",
+          "logic": "「插旗标出」——把某内容挑出来让人看见",
+          "en": "The algorithm automatically flags suspicious transactions for review.",
+          "zh": "算法自动将可疑交易标记出来供审核。"
+        },
+        {
+          "gloss": "（精力/热情）衰减，减弱",
+          "logic": "「下垂感」：精力垂下去，速度/热情往低处走",
+          "en": "After twelve hours on the road, their energy began to flag.",
+          "zh": "在路上跑了十二个小时后，他们的精力开始衰退。"
+        }
+      ],
+      "derivatives": [
+        {"w": "flagship", "gloss": "旗舰（主力产品/项目）"},
+        {"w": "flagpole", "gloss": "旗杆"},
+        {"w": "unflagging", "gloss": "不衰减的，持续旺盛的（精力）"}
+      ],
+      "examples": [
+        {
+          "en": "The researchers flagged several potential issues in their report.",
+          "zh": "研究人员在报告中标注了几个潜在问题。",
+          "source": "造句"
+        },
+        {
+          "en": "flag up a concern / flag a problem",
+          "zh": "「标出问题、引起注意」——学术和商务高频动词用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "banner", "ipa": "/ˈbænər/", "gloss": "横幅，旗帜（大型或象征性）", "note": "「旗帜」义的近义词，比 flag 更文学化，常指大型横幅或象征性旗帜"},
+        {"w": "mark", "ipa": "/mɑːrk/", "gloss": "标记，标注", "note": "「标记」义，比 flag 更通用，可指任何形式的标注"},
+        {"w": "wane", "ipa": "/weɪn/", "gloss": "（力量/热情）逐渐衰减", "note": "「减弱」义的近义词，比 flag 更正式，强调逐渐衰减；enthusiasm wanes（热情减退）"}
+      ],
+      "antonyms": [
+        {"w": "surge", "note": "（「减弱」义）激增、高涨"},
+        {"w": "ignore", "note": "（「标记」义）忽视"}
+      ],
+      "nuance": "flag 作「标记」时，mark 最通用，highlight 强调重点，flag 特指「引起注意、需要处理」的标注，常带一种提醒或警示的含义（flag a suspicious transaction）。"
+    },
+    {
+      "word": "grow",
+      "hl": "gr",
+      "levels": ["基础"],
+      "ipa": "/ɡroʊ/",
+      "subgroup": "g",
+      "meaning": "v. 生长；增长；变得（某状态）；种植",
+      "etymology": "古英语 grōwan，与 green（绿色）、grass（草）同属印欧词根 *ghre-（生长、绿色）。grow old（变老）、grow into（成长为）等搭配义由「变化过程」延伸而来。",
+      "roots": [
+        {"part": "grow（grōwan）", "meaning": "生长"}
+      ],
+      "phonetics": "gr- 连缀 + ow /oʊ/，/g/ 在辅音 r 前读硬音，与 green 同一连缀辅音结构。",
+      "core": "「有机增大」——生命体由内向外自然扩展的感觉；引申到规模（business grew）、状态变化（grow old）和种植（grow tomatoes），核心都是「从内部驱动，逐渐变大/变多/变成」。",
+      "senses": [
+        {
+          "gloss": "生长（生物）",
+          "logic": "核心义：生命体自然扩展",
+          "en": "Children grow fastest in their first two years of life.",
+          "zh": "儿童在生命最初两年内长得最快。"
+        },
+        {
+          "gloss": "增长，扩大（规模/数量）",
+          "logic": "抽象化的「有机增大」：业务、影响力自然扩展",
+          "en": "The platform grew to ten million users within eighteen months.",
+          "zh": "该平台在十八个月内用户数增长到一千万。"
+        },
+        {
+          "gloss": "逐渐变得（grow + adj）",
+          "logic": "进入新状态的过程——grow old/weary/impatient，强调缓慢的状态转变",
+          "en": "She grew increasingly confident as the project moved forward.",
+          "zh": "随着项目推进，她越来越自信了。"
+        },
+        {
+          "gloss": "种植，栽培",
+          "logic": "人为引导「生长」——grow crops/herbs",
+          "en": "They grow their own vegetables in the backyard.",
+          "zh": "他们在后院自己种蔬菜。"
+        }
+      ],
+      "derivatives": [
+        {"w": "growth", "gloss": "增长，生长；（医）肿瘤"},
+        {"w": "grown-up", "gloss": "成年人；成熟的"},
+        {"w": "outgrow", "gloss": "因成长而不再适合（衣服/旧习惯）"}
+      ],
+      "examples": [
+        {
+          "en": "The startup grew from five employees to over two hundred in three years.",
+          "zh": "这家初创公司三年内从五名员工增长到超过两百人。",
+          "source": "造句"
+        },
+        {
+          "en": "grow out of / grow into",
+          "zh": "「因长大而不再适合 / 成长为」——对立短语，一组记。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "expand", "ipa": "/ɪkˈspænd/", "gloss": "扩张，扩大（规模/范围）", "note": "「扩张」，强调规模或范围扩大，比 grow 更强调空间维度；expand operations（扩大业务）"},
+        {"w": "develop", "ipa": "/dɪˈveləp/", "gloss": "发展，演进（有序过程）", "note": "「发展」，比 grow 更强调有序演进的过程；develop skills（发展技能）"},
+        {"w": "flourish", "ipa": "/ˈflʌrɪʃ/", "gloss": "蓬勃发展，兴旺", "note": "「蓬勃发展」，比 grow 更带活力和繁盛感；flourish in a new environment（在新环境蓬勃生长）"}
+      ],
+      "antonyms": [
+        {"w": "shrink", "note": "缩小、减少"},
+        {"w": "decline", "note": "下降、衰退"}
+      ],
+      "nuance": "grow 强调自然有机的增长过程，expand 侧重空间或规模扩大，develop 强调有序发展和质量提升，flourish 带繁荣感，常用于描述事业、艺术或文化的兴旺状态。"
+    },
+    {
+      "word": "trigger",
+      "hl": "gg",
+      "levels": ["托福"],
+      "ipa": "/ˈtrɪɡər/",
+      "subgroup": "gg",
+      "meaning": "v. 引发，触发（反应/机制）  n. 扳机；诱因",
+      "etymology": "荷兰语 trekker「拉动者」，源自 trekken（拉）。枪械词汇「扳机」→ 「触发某事的机关」→ 动词「引发」。现代「情绪触发物」义（emotional trigger）是20世纪心理学扩展。",
+      "roots": [
+        {"part": "trig（trekken）", "meaning": "拉动"},
+        {"part": "-ger", "meaning": "动作执行者后缀"}
+      ],
+      "phonetics": "tr- 连缀 + i /ɪ/ + gg + er /ər/，gg 前的 /ɪ/ 是短元音，双 g 锁住短元音——重音在第一音节 TRIG-ger。",
+      "tip": "trigger 作动词时，常搭配抽象名词：trigger a reaction/response/debate——「扳动」某个机制使之启动。",
+      "core": "「一个小动作激活整个机制」——扣下扳机，子弹才飞出；一个事件（诱因）扣动，一连串反应才启动。核心感觉是「输入→瞬间激活→连锁输出」。",
+      "senses": [
+        {
+          "gloss": "扳机（枪械）",
+          "logic": "核心义：拉动即激活机制的零件",
+          "en": "He squeezed the trigger and the gun fired.",
+          "zh": "他扣下扳机，枪响了。"
+        },
+        {
+          "gloss": "引发，触发（事件/反应）",
+          "logic": "「扣下扳机」的抽象化：一个输入激活整个连锁反应",
+          "en": "The news triggered a wave of protests across the country.",
+          "zh": "这则新闻在全国引发了一波抗议浪潮。"
+        },
+        {
+          "gloss": "触发物，诱因（心理学）",
+          "logic": "让特定情绪/记忆「开枪」的刺激物——emotional trigger",
+          "en": "Loud noises can be a trigger for people with PTSD.",
+          "zh": "对创伤后应激障碍患者来说，巨大声响可能是情绪触发点。"
+        }
+      ],
+      "derivatives": [
+        {"w": "hair-trigger", "gloss": "极敏感的，一触即发的（脾气/机制）"},
+        {"w": "retrigger", "gloss": "重新触发（技术用语）"}
+      ],
+      "examples": [
+        {
+          "en": "The financial crisis triggered a wave of regulatory reforms.",
+          "zh": "金融危机引发了一波监管改革浪潮。",
+          "source": "造句"
+        },
+        {
+          "en": "trigger a reaction / pull the trigger",
+          "zh": "「引发反应 / 扣下扳机（做出决定）」——两种高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "provoke", "ipa": "/prəˈvoʊk/", "gloss": "激起，挑衅（刻意引起反应）", "note": "「激起、挑起」，比 trigger 更强调刻意激怒或挑衅；provoke a reaction（激起反应）"},
+        {"w": "spark", "ipa": "/spɑːrk/", "gloss": "点燃，激发（迅速引发）", "note": "「点燃、激发」，比 trigger 更强调迅速点燃，多用于积极变化；spark creativity（激发创意）"},
+        {"w": "initiate", "ipa": "/ɪˈnɪʃieɪt/", "gloss": "启动，开始（正式/中性）", "note": "「启动」，比 trigger 更正式，不含突然性；initiate a process（启动流程）"}
+      ],
+      "antonyms": [
+        {"w": "suppress", "note": "抑制、阻止（反应）"},
+        {"w": "defuse", "note": "化解（紧张局势）"}
+      ],
+      "nuance": "trigger 强调「一个输入激活了某个机制」，带有「导火索」的含义；provoke 更强调引发对立反应；spark 多用于正面激发；initiate 是最中性的「启动」，不含因果联动的感觉。"
+    },
+    {
+      "word": "sluggish",
+      "hl": "gg",
+      "levels": ["托福"],
+      "ipa": "/ˈslʌɡɪʃ/",
+      "subgroup": "gg",
+      "meaning": "adj. 行动迟缓的；（经济/市场）不活跃的；迟钝的",
+      "etymology": "slug（蛞蝓，俗称「鼻涕虫」）+ -ish。蛞蝓是自然界行动最慢的生物之一，直接用来比喻迟缓。经济学借用此词描述「低增速、低活力」的市场状态。",
+      "roots": [
+        {"part": "slug", "meaning": "蛞蝓；迟缓的东西"},
+        {"part": "-ish", "meaning": "像……的（形容词后缀）"}
+      ],
+      "phonetics": "sl- + u /ʌ/ + gg + ish /ɪʃ/，gg 前的 /ʌ/ 是短元音——双 g 锁短元音规律。重音 SLUG-gish。",
+      "tip": "记住 slug（蛞蝓）就记住了 sluggish——「像鼻涕虫一样慢」，经济语境中高频：sluggish growth（增长乏力）。",
+      "core": "「拖曳感」——蛞蝓贴地爬行，牵着一切往慢里走；无论是人的反应、身体代谢还是经济增长，sluggish 都传递「本应有速度却像被什么拖住」的阻力感。",
+      "senses": [
+        {
+          "gloss": "行动迟缓的，反应慢的（人/动物）",
+          "logic": "核心义：像蛞蝓一样缓慢移动",
+          "en": "The cold made him sluggish and hard to wake up.",
+          "zh": "寒冷让他行动迟缓，很难起床。"
+        },
+        {
+          "gloss": "（经济/市场）不活跃的，增长乏力的",
+          "logic": "「拖曳感」应用于宏观经济：本该流动的资金/活力被拖住",
+          "en": "Sluggish consumer spending weighed on the economy throughout the quarter.",
+          "zh": "整个季度，消费支出不振拖累了经济。"
+        },
+        {
+          "gloss": "（身体/系统）迟钝的，运作缓慢的",
+          "logic": "消化、代谢、软件响应等系统「拖曳」——sluggish metabolism/system",
+          "en": "A sluggish digestive system can be improved with regular exercise.",
+          "zh": "规律运动可以改善迟缓的消化系统。"
+        }
+      ],
+      "derivatives": [
+        {"w": "slug", "gloss": "蛞蝓；（俚）一拳；子弹"},
+        {"w": "sluggishly", "gloss": "迟缓地，萎靡地（副词）"}
+      ],
+      "examples": [
+        {
+          "en": "Economic growth remained sluggish throughout the first half of the year.",
+          "zh": "全年上半年经济增长持续乏力。",
+          "source": "造句"
+        },
+        {
+          "en": "sluggish response / sluggish metabolism",
+          "zh": "「反应迟钝 / 新陈代谢缓慢」——托福阅读常见搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "lethargic", "ipa": "/ləˈθɑːrdʒɪk/", "gloss": "极度倦怠的，昏沉无力的", "note": "「昏昏欲睡、极度无力」，比 sluggish 更强调身体虚弱的疲倦感，多用于人而非经济"},
+        {"w": "stagnant", "ipa": "/ˈstæɡnənt/", "gloss": "停滞的，一潭死水的", "note": "「停滞的」，比 sluggish 更强调「完全停止流动/增长」，常修饰经济、水体"},
+        {"w": "inert", "ipa": "/ɪˈnɜːrt/", "gloss": "惰性的，不活跃的（化学/抽象）", "note": "「惰性的、不活跃的」，化学借词，比 sluggish 更正式，强调缺乏反应性"}
+      ],
+      "antonyms": [
+        {"w": "dynamic", "note": "充满活力的"},
+        {"w": "brisk", "note": "（市场/活动）活跃的、生气勃勃的"}
+      ],
+      "nuance": "sluggish 暗含「本该有速度却拖沓」的对比感，常用于描述本该活跃的系统（经济、人体）；stagnant 更极端，暗示「完全停滞」；lethargic 专指人的身体或精神极度疲乏。"
+    },
+    {
+      "word": "rugged",
+      "hl": "gg",
+      "levels": ["托福"],
+      "ipa": "/ˈrʌɡɪd/",
+      "subgroup": "gg",
+      "meaning": "adj. 崎岖的，凹凸不平的；粗犷健壮的；耐用坚固的",
+      "etymology": "古斯堪的纳维亚语 rugga「颤动、粗糙」，与 rug（粗编毯子）同源。原义「表面粗糙」，引申为地形「崎岖」，进一步引申为人「粗犷有力」和设备「耐用坚固」。",
+      "roots": [
+        {"part": "rug（rugga）", "meaning": "粗糙的"}
+      ],
+      "phonetics": "r + u /ʌ/ + gg + ed /ɪd/，gg 前的 /ʌ/ 短元音——双 g 锁短元音。注意 -ed 在 /ɡ/ 后读 /ɪd/，不吞掉。重音 RUG-ged。",
+      "core": "「表面粗粝、不经打磨」——崎岖地形是粗粝的大地，粗犷男性是未经修饰的强壮，耐用设备是不怕磨损的坚韧；三义共享「粗糙不精细、却因此强悍」的感觉。",
+      "senses": [
+        {
+          "gloss": "崎岖的，凹凸不平的（地形）",
+          "logic": "核心义：表面粗糙、起伏不平",
+          "en": "The trail wound through rugged mountain terrain for two days.",
+          "zh": "小径在崎岖山地中蜿蜒了两天。"
+        },
+        {
+          "gloss": "粗犷的，健壮的（人的外表/性格）",
+          "logic": "「未打磨的粗粝」映射到人：不经雕琢却充满力量感",
+          "en": "He had the rugged good looks of someone who had spent years outdoors.",
+          "zh": "他有一种在户外生活多年后才有的粗犷帅气。"
+        },
+        {
+          "gloss": "耐用的，坚固的（设备/材质）",
+          "logic": "「不怕磨损的粗粝」——能在恶劣条件下运作",
+          "en": "The camera is rugged enough to survive drops and extreme temperatures.",
+          "zh": "这款相机足够坚固，能承受跌落和极端温度。"
+        }
+      ],
+      "derivatives": [
+        {"w": "ruggedness", "gloss": "崎岖；坚固耐用性；粗犷"},
+        {"w": "ruggedly", "gloss": "粗犷地；坚固地（副词）"}
+      ],
+      "examples": [
+        {
+          "en": "The hikers crossed rugged terrain for three days before reaching the valley.",
+          "zh": "徒步者在崎岖地形中穿行三天才抵达山谷。",
+          "source": "造句"
+        },
+        {
+          "en": "rugged individualism / rugged terrain",
+          "zh": "「强硬个人主义 / 崎岖地形」——政治和地理两种高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "rough", "ipa": "/rʌf/", "gloss": "粗糙的，崎岖的（通用）", "note": "「粗糙、崎岖」，比 rugged 更通用，可修饰表面、天气、人；rough terrain（崎岖地形）"},
+        {"w": "jagged", "ipa": "/ˈdʒæɡɪd/", "gloss": "锯齿状的，参差不齐的", "note": "「锯齿状、尖锐不平」，比 rugged 更强调锐角和危险感；jagged rocks（锋利的岩石）"},
+        {"w": "sturdy", "ipa": "/ˈstɜːrdi/", "gloss": "结实的，牢固的", "note": "「耐用坚固」义的近义词，比 rugged 更强调结构强度；a sturdy table（坚固的桌子）"}
+      ],
+      "antonyms": [
+        {"w": "smooth", "note": "平滑的"},
+        {"w": "flat", "note": "平坦的"}
+      ],
+      "nuance": "rugged 带有「刚硬之美」的感情色彩（rugged good looks 粗犷帅气），rough 更中性只描述表面状态，jagged 强调危险的锯齿感，sturdy 专注于结构坚固性而非外观粗糙感。"
+    },
+    {
+      "word": "dogged",
+      "hl": "gg",
+      "levels": ["托福"],
+      "ipa": "/ˈdɔːɡɪd/",
+      "subgroup": "gg",
+      "meaning": "adj. 顽强的，锲而不舍的",
+      "etymology": "dog（狗）+ -ed。狗咬住猎物绝不松口的习性 → 「像狗一样咬定不放」→ 顽强坚持。dogged determination（锲而不舍的决心）是经典搭配。",
+      "roots": [
+        {"part": "dog", "meaning": "狗"},
+        {"part": "-ed", "meaning": "具有……特质的（形容词后缀）"}
+      ],
+      "phonetics": "d + og /ɔːɡ/ + g + ed /ɪd/，注意两个 g 之间有音节切分：dog-ged，-ged 读 /ɡɪd/（-ed 前是 /ɡ/ 时读 /ɪd/）。重音 DOG-ged。",
+      "tip": "dogged 和 dog（狗）的联系是词源关键：狗咬着不松口 = 顽强不屈——记住图像就记住了词义和拼写。",
+      "core": "「咬定不放」——狗咬住猎物的本能：不因痛苦、阻力或时间长短而松口。单义词，专指顽强坚持，带有「旁人看来近乎固执」的执拗感。",
+      "senses": [
+        {
+          "gloss": "顽强的，锲而不舍的",
+          "logic": "唯一义：像狗咬住不放——面对阻力仍坚持到底",
+          "en": "Her dogged pursuit of justice took fifteen years and two appeals.",
+          "zh": "她锲而不舍地追求正义，历时十五年，经历两次上诉。"
+        }
+      ],
+      "derivatives": [
+        {"w": "doggedly", "gloss": "顽强地，锲而不舍地（副词）"},
+        {"w": "doggedness", "gloss": "顽强，坚韧不拔（名词）"}
+      ],
+      "examples": [
+        {
+          "en": "Her dogged refusal to give up eventually paid off.",
+          "zh": "她锲而不舍地拒绝放弃，最终得到了回报。",
+          "source": "造句"
+        },
+        {
+          "en": "dogged determination / dogged persistence",
+          "zh": "「顽强的决心 / 锲而不舍的坚持」——固定搭配，托福常出现在人物传记类阅读。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "tenacious", "ipa": "/təˈneɪʃəs/", "gloss": "坚韧的，不轻易放弃的", "note": "「坚韧的」，与 dogged 最接近，但 tenacious 更书面、更中性，不含「死咬」的形象感"},
+        {"w": "persistent", "ipa": "/pəˈsɪstənt/", "gloss": "坚持的，持续的（中性）", "note": "「持续的、坚持的」，比 dogged 更通用，可以是正面（persistent efforts）或中性（persistent cough）"},
+        {"w": "resolute", "ipa": "/ˈrezəluːt/", "gloss": "坚决的，果断的（主动意志）", "note": "「坚决的」，比 dogged 更强调主动的意志决断，而非被动的「不放手」"}
+      ],
+      "antonyms": [
+        {"w": "wavering", "note": "犹豫不决的"},
+        {"w": "irresolute", "note": "意志不坚定的"}
+      ],
+      "nuance": "dogged 带有「不顾一切、死撑到底」的顽强感，有时暗含旁人看来近乎固执的坚持；tenacious 更正面，强调韧性；persistent 最中性；resolute 强调内心坚定的决断力，而非咬住不放的耐力。"
+    },
+    {
+      "word": "aggravate",
+      "hl": "gg",
+      "levels": ["托福"],
+      "ipa": "/ˈæɡrəveɪt/",
+      "subgroup": "gg",
+      "meaning": "v. 加重，恶化（病情/问题）；激怒，使烦恼",
+      "etymology": "拉丁语 aggravare = ag-(加强) + gravare(使沉重) = 「把重量加上去」→ 使（问题）更严重。与 grave（严重的）、gravity（重力/严重性）同根。",
+      "roots": [
+        {"part": "ag- (ad-)", "meaning": "加强、朝向"},
+        {"part": "-grav- (gravis)", "meaning": "沉重、严重"},
+        {"part": "-ate", "meaning": "使……（动词后缀）"}
+      ],
+      "phonetics": "AG-gra-vate，重音在首音节，gg = /ɡ/，-vate 读 /veɪt/。词中 gg 前的 /æ/ 是短元音——双 g 锁短元音规律。",
+      "tip": "aggravate 和 gravity（重力/严重性）同根——gravity 衡量事物的「重量/严重程度」，aggravate 就是「把这个重量加重」。",
+      "core": "「加重负担」——往已有问题上再压一块石头。病情、矛盾、紧张局势变得更沉重；「激怒」义是让人情绪的重量增加到无法承受（注：「激怒」义在正式写作中曾受争议，但已普遍接受）。",
+      "senses": [
+        {
+          "gloss": "加重，恶化（病情/问题/情势）",
+          "logic": "核心义：把「重量/严重性」再往上叠加",
+          "en": "Cold weather can aggravate joint pain in older patients.",
+          "zh": "寒冷天气会加重老年患者的关节疼痛。"
+        },
+        {
+          "gloss": "激怒，使烦恼（口语/非正式）",
+          "logic": "情绪「重量」被加到无法承受——让人不堪其扰（注：此义在正式语境中仍被部分文体指南标为非标准，但口语已普遍接受）",
+          "en": "His constant interruptions aggravated everyone in the meeting.",
+          "zh": "他不断插话让会议室里的所有人都很烦躁。"
+        }
+      ],
+      "derivatives": [
+        {"w": "aggravation", "gloss": "加重；烦恼，令人恼火之事"},
+        {"w": "aggravated", "gloss": "（法律）加重情节的（如 aggravated assault 加重伤害罪）"}
+      ],
+      "examples": [
+        {
+          "en": "Smoking will only aggravate your lung condition.",
+          "zh": "吸烟只会加重你的肺部病情。",
+          "source": "造句"
+        },
+        {
+          "en": "aggravate an injury / aggravate the situation",
+          "zh": "「加重伤情 / 使情况恶化」——托福医学和社会类阅读高频动词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "worsen", "ipa": "/ˈwɜːrsn/", "gloss": "（使）恶化，变坏", "note": "「恶化」，比 aggravate 更口语，多用于自动恶化（the situation worsened）；aggravate 更强调外因导致加重"},
+        {"w": "exacerbate", "ipa": "/ɪɡˈzæsərbeɪt/", "gloss": "使加剧，使恶化（书面/学术）", "note": "「使加剧」，比 aggravate 更正式学术，多出现在托福学术文章；exacerbate tensions（加剧紧张）"},
+        {"w": "irritate", "ipa": "/ˈɪrɪteɪt/", "gloss": "激怒，使烦躁；刺激（皮肤/器官）", "note": "「激怒」义的近义词，比 aggravate（激怒义）更常用，强调持续的烦扰"}
+      ],
+      "antonyms": [
+        {"w": "alleviate", "note": "减轻（病情/问题）"},
+        {"w": "soothe", "note": "（「激怒」义）安抚"}
+      ],
+      "nuance": "aggravate 和 exacerbate 在「加重」义上几乎可互换，但 exacerbate 更学术，aggravate 更口语；aggravate 还有「激怒」义（它的原义只是「加重」，「激怒」义在正式写作中被部分语法学家视为非标准用法，但已普遍接受）。"
+    },
+    {
+      "word": "guarantee",
+      "hl": "gu",
+      "levels": ["托福"],
+      "ipa": "/ˌɡærənˈtiː/",
+      "subgroup": "gu",
+      "meaning": "v. 保证，担保  n. 保证；担保书；质保",
+      "etymology": "西班牙语 garantía，源自日耳曼语 warjan「保护」，与 warrant（授权书）、warranty（质保）同根。-u- 是法语拼写遗留，使 g 保持硬音 /ɡ/。",
+      "roots": [
+        {"part": "gu（warjan）", "meaning": "保护、担保"},
+        {"part": "-antee", "meaning": "法语借词后缀"}
+      ],
+      "phonetics": "guar- = /ɡær/，-an- = /ən/，-tee = /tiː/；重音在末音节 -TEE。gu 中 u 不发音，仅保住 g 的硬音；注意不读 /ɡwær/。",
+      "tip": "guarantee 拼写长，记忆诀：g-u-a-r-a-n-t-e-e，两个 e 结尾。与 warranty（商品质保）语义相近但用途不同：guarantee 更广泛（可保证任何事），warranty 专指商品售后服务。",
+      "core": "「以信用作屏障保护对方」——担保人站在结果与对方之间，承诺「出了问题我来扛」；无论是商品质保还是口头承诺，核心都是「拿自己的信用/资产为某事背书」。",
+      "senses": [
+        {
+          "gloss": "保证，承诺（某事会发生/某质量达标）",
+          "logic": "核心义：用信用做屏障——对方不用承担不确定性",
+          "en": "The manufacturer guarantees the battery for two years.",
+          "zh": "制造商为电池提供两年保证。"
+        },
+        {
+          "gloss": "确保，使成为必然",
+          "logic": "「屏障」强到结果几乎板上钉钉——guarantee success/results",
+          "en": "Early preparation does not guarantee success, but it greatly improves your chances.",
+          "zh": "提前准备不能确保成功，但能大幅提高胜算。"
+        },
+        {
+          "gloss": "担保书，保证书（名词）",
+          "logic": "书面化的「保护屏障」——under guarantee（在质保期内）",
+          "en": "Keep the receipt as proof of your guarantee.",
+          "zh": "保留收据作为质保凭证。"
+        }
+      ],
+      "derivatives": [
+        {"w": "guarantor", "gloss": "担保人，保证人"},
+        {"w": "warranty", "gloss": "（商品）质保，售后保证书"},
+        {"w": "warrant", "gloss": "授权令；有充分理由；担保（正式）"}
+      ],
+      "examples": [
+        {
+          "en": "Hard work does not guarantee success, but it certainly improves your odds.",
+          "zh": "努力不能保证成功，但肯定能提高你的胜算。",
+          "source": "造句"
+        },
+        {
+          "en": "under guarantee / money-back guarantee",
+          "zh": "「在质保期内 / 退款保证」——商业高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "assure", "ipa": "/əˈʃʊər/", "gloss": "向人保证（消除疑虑）", "note": "「向人保证」，比 guarantee 更侧重消除对方的疑虑；assure sb of sth（向某人保证某事）"},
+        {"w": "pledge", "ipa": "/pledʒ/", "gloss": "郑重承诺，誓言", "note": "「郑重承诺」，比 guarantee 更强调庄严的承诺义务；pledge support（承诺支持）"},
+        {"w": "warrant", "ipa": "/ˈwɔːrənt/", "gloss": "担保（合法性/质量）；有理由", "note": "「担保（合法性/质量）」，多用于法律和商品语境；warranty 是其名词形式，专指质保文件"}
+      ],
+      "antonyms": [
+        {"w": "disclaim", "note": "声明不承担（责任/保证）"}
+      ],
+      "nuance": "guarantee 是最通用的「保证」，可对事也可对人（I guarantee this will work / I guarantee you）；assure 强调安慰对方、消除疑虑，对象通常是人；pledge 带庄重的正式承诺感，常用于政治或道德义务；warrant 偏法律和商业语境，带有「有依据地担保」的含义。"
+    },
+    {
+      "word": "guideline",
+      "hl": "gu",
+      "levels": ["托福"],
+      "ipa": "/ˈɡaɪdlaɪn/",
+      "subgroup": "gu",
+      "meaning": "n. [常pl.] 指导方针，准则，行动纲领",
+      "etymology": "guide（引导）+ line（线）= 「引路的线」。guide 源自古法语 guider，日耳曼借词，-u- 使 g 保持硬音。",
+      "roots": [
+        {"part": "guide", "meaning": "引导"},
+        {"part": "-line", "meaning": "线；准则"}
+      ],
+      "phonetics": "GUIDE- = /ɡaɪd/，-line = /laɪn/；gu 中 u 不发音，/ɡ/ 保硬音。复合词重音在前：GUIDE-line。",
+      "core": "「可见的引路线」——在复杂地形里画一条可以跟随的线；guideline 是建议性的，不强制，像地图上的参考路线而非围栏；单义词，专指指导规范。",
+      "senses": [
+        {
+          "gloss": "指导方针，行动准则（常为复数，建议性非强制）",
+          "logic": "唯一义：「引路的线」——官方或权威给出的参考规范",
+          "en": "Doctors are expected to follow the clinical guidelines issued by the health ministry.",
+          "zh": "医生须遵照卫生部发布的临床指南行事。"
+        }
+      ],
+      "derivatives": [
+        {"w": "guide", "gloss": "引导；导游；指南"},
+        {"w": "guidance", "gloss": "指引，指导（更抽象，强调过程）"}
+      ],
+      "examples": [
+        {
+          "en": "The WHO issued new guidelines on the safe use of artificial sweeteners.",
+          "zh": "世界卫生组织发布了关于安全使用人工甜味剂的新指导方针。",
+          "source": "造句"
+        },
+        {
+          "en": "set / establish guidelines / follow guidelines",
+          "zh": "「制定准则 / 遵守准则」——政策和学术写作高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "principle", "ipa": "/ˈprɪnsɪpl/", "gloss": "原则，根本信条（抽象/基础）", "note": "「原则」，比 guideline 更基本、更抽象，指根本信条而非操作规范"},
+        {"w": "protocol", "ipa": "/ˈproʊtəkɒl/", "gloss": "规程，操作流程（具体/较强制）", "note": "「规程、流程」，比 guideline 更具体、更强制，多用于医疗、外交、IT领域"},
+        {"w": "directive", "ipa": "/dɪˈrektɪv/", "gloss": "指令（来自权威机构，有约束力）", "note": "「指令」，比 guideline 更有强制约束力，常来自权威机构（EU directive 欧盟指令）"}
+      ],
+      "antonyms": [
+        {"w": "prohibition", "note": "禁令（与「指导」方向相对）"}
+      ],
+      "nuance": "guideline 是建议性的行为规范（违反不一定受罚），protocol 是有操作步骤的流程规程（医疗/外交领域更强制），directive 是有权威来源的强制指令。「WHO guidelines」是建议，「hospital protocol」是必须执行的流程。"
+    },
+    {
+      "word": "guilty",
+      "hl": "gu",
+      "levels": ["托福"],
+      "ipa": "/ˈɡɪlti/",
+      "subgroup": "gu",
+      "meaning": "adj. 有罪的；内疚的",
+      "etymology": "古英语 gyltig，源自 gylt「罪行、债务」。法律义「有罪」和心理义「内疚」并存：前者是外部判定，后者是内心感受。",
+      "roots": [
+        {"part": "guilt（gylt）", "meaning": "罪行、内疚"},
+        {"part": "-y", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "gu- = /ɡɪ/，-ilty = /ɪlti/；u 不发音，保 g 硬音；注意 gu 在此 u 后不是长元音，整个音节 /ɡɪ/ 发短 /ɪ/。重音 GUIL-ty。",
+      "core": "「欠了一笔债」——古义 gylt 即「债务」；有罪是对社会/法律欠债，内疚是对他人或自己的道德欠账；两义共享「背负着一笔应当偿还的亏欠」的感觉。",
+      "senses": [
+        {
+          "gloss": "有罪的（法律判定）",
+          "logic": "核心义：对社会/法律欠下「债」——被判为犯罪事实成立",
+          "en": "The jury returned a guilty verdict after two days of deliberation.",
+          "zh": "陪审团经过两天审议后作出了有罪判决。"
+        },
+        {
+          "gloss": "内疚的，有愧疚感的（心理）",
+          "logic": "对他人欠下「道德债」——feel guilty about letting someone down",
+          "en": "She felt guilty about missing her friend's wedding.",
+          "zh": "没能参加朋友的婚礼让她深感内疚。"
+        }
+      ],
+      "derivatives": [
+        {"w": "guilt", "gloss": "罪行；内疚感（名词）"},
+        {"w": "guiltless", "gloss": "清白的，无罪的"},
+        {"w": "guilt-trip", "gloss": "让人产生罪恶感（俚语动词）"}
+      ],
+      "examples": [
+        {
+          "en": "The jury found the defendant guilty of fraud.",
+          "zh": "陪审团裁定被告欺诈罪名成立。",
+          "source": "造句"
+        },
+        {
+          "en": "feel guilty about / a guilty conscience",
+          "zh": "「对……感到内疚 / 良心不安」——心理义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "culpable", "ipa": "/ˈkʌlpəbl/", "gloss": "有过失的，应受责备的（法律/正式）", "note": "正式法律词，「有过失的、应受责备的」，比 guilty 更书面；culpable negligence（应受责备的疏忽）"},
+        {"w": "blameworthy", "ipa": "/ˈbleɪmwɜːrði/", "gloss": "值得谴责的（道德层面）", "note": "「应受责备的」，侧重道德层面，比 guilty 更强调值得被谴责的性质"},
+        {"w": "remorseful", "ipa": "/rɪˈmɔːrsfl/", "gloss": "悔恨的，后悔的（情感层面）", "note": "「悔恨的」，近「内疚义」，比 guilty 更强调情感上的悔恨，而非事实上的有罪"}
+      ],
+      "antonyms": [
+        {"w": "innocent", "note": "无罪的；无辜的"},
+        {"w": "guiltless", "note": "清白的"}
+      ],
+      "nuance": "guilty 是最通用词，兼有法律（guilty verdict）和心理（guilty feeling）义；culpable 专用于法律/正式语境，仅指责任层面；remorseful 专指内心情感层面的悔恨，强调已认识到错误并感到痛苦，不含外部判定。"
+    },
+    {
+      "word": "vague",
+      "hl": "gu",
+      "levels": ["托福"],
+      "ipa": "/veɪɡ/",
+      "subgroup": "gu",
+      "meaning": "adj. 模糊的，不明确的；（人）含糊其辞的",
+      "etymology": "拉丁语 vagus「漫游的、不固定的」，与 vagrant（流浪者）同根。「到处漫游」→「没有固定所指」→ 模糊不清。",
+      "roots": [
+        {"part": "vague（vagus）", "meaning": "漫游的、不固定的"}
+      ],
+      "phonetics": "v + a /eɪ/ + gue /ɡ/；词尾 -gue 中 ue 完全不发音，只保住 g 的硬音，整词读 /veɪɡ/。这是 gu「保硬」规律的典型词尾形式。",
+      "tip": "vague 词尾 -gue：u 和 e 都是哑音，只让 g 发 /g/——「沉默的两个字母只是 g 的保镖」。plague、league、fatigue 同样词尾。",
+      "core": "「漫游感」——像流浪者没有固定落脚点；意思在语言里到处漂，无法被抓住、无法锚定。单义词，但可修饰陈述（vague instructions）或人（he was vague about details）。",
+      "senses": [
+        {
+          "gloss": "模糊的，不清晰的（陈述/概念/记忆）",
+          "logic": "核心义：意思没有固定落点，抓不住",
+          "en": "The contract contained only vague language about delivery timelines.",
+          "zh": "合同中关于交货时间只有含糊的表述。"
+        },
+        {
+          "gloss": "（人）含糊其辞的，不明确说清的",
+          "logic": "故意或无意让意思「漫游」——不给出清晰答案",
+          "en": "When pressed for details, the spokesperson remained deliberately vague.",
+          "zh": "被追问细节时，发言人刻意保持含糊。"
+        }
+      ],
+      "derivatives": [
+        {"w": "vaguely", "gloss": "模糊地；隐约地（vaguely familiar 隐约熟悉）"},
+        {"w": "vagueness", "gloss": "模糊性，不清晰"},
+        {"w": "vagrant", "gloss": "流浪者（同词根 vagus，漫游的人）"}
+      ],
+      "examples": [
+        {
+          "en": "His explanation was so vague that nobody understood what he meant.",
+          "zh": "他的解释含糊至极，没人明白他在说什么。",
+          "source": "造句"
+        },
+        {
+          "en": "a vague memory / remain vague about",
+          "zh": "「模糊的记忆 / 对……含糊其词」——学术和日常两种高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "ambiguous", "ipa": "/æmˈbɪɡjuəs/", "gloss": "含混的，有歧义的（可有多种解读）", "note": "「含混的、有歧义的」，比 vague 更强调「可以有多种理解」，而 vague 强调「根本说不清楚」"},
+        {"w": "obscure", "ipa": "/əbˈskjʊər/", "gloss": "晦涩的，难以理解的", "note": "「晦涩的」，比 vague 更强调难以理解，常指语言或概念本身的复杂性"},
+        {"w": "nebulous", "ipa": "/ˈnebjʊləs/", "gloss": "云雾般模糊的，朦胧的（文学化）", "note": "「云雾般模糊的」，比 vague 更文学化，强调思路或计划的朦胧不清；nebulous ideas（朦胧的想法）"}
+      ],
+      "antonyms": [
+        {"w": "precise", "note": "精确的"},
+        {"w": "explicit", "note": "明确的，清楚表达的"}
+      ],
+      "nuance": "vague 强调「不清晰，说不明白」；ambiguous 强调「可以有多种理解」（歧义）；obscure 强调「难以理解」（可能是刻意或知识门槛）；nebulous 最文学化，多用于计划、概念「如云雾般模糊」的状态。"
+    },
+    {
+      "word": "disguise",
+      "hl": "gu",
+      "levels": ["托福"],
+      "ipa": "/dɪsˈɡaɪz/",
+      "subgroup": "gu",
+      "meaning": "v. 伪装，掩饰  n. 伪装；化装",
+      "etymology": "古法语 desguiser = des-(去除) + guise(外表/方式) = 「去除原有外表」→ 伪装。guise（方式、外表）源自日耳曼语，-u- 保 g 硬音。",
+      "roots": [
+        {"part": "dis-", "meaning": "去除、相反"},
+        {"part": "-guise（wīsa）", "meaning": "外表、方式"}
+      ],
+      "phonetics": "dis- = /dɪs/，-guise = /ɡaɪz/；gu 中 u 不发音保硬音，-ise = /aɪz/。重音在后 dis-GUISE。",
+      "tip": "「a blessing in disguise」（因祸得福）是托福和雅思必背习语——表面是灾难，本质是好事。",
+      "core": "「换掉外表」——把原有的「guise（外形/方式）」去除再换上另一套；伪装是主动换脸，掩饰是藏起本来的脸；两义共享「让真实面目不被认出」的动作感。",
+      "senses": [
+        {
+          "gloss": "伪装，乔装（改变外貌使人认不出）",
+          "logic": "核心义：主动替换外表——disguise oneself as sb",
+          "en": "The detective disguised herself as a street vendor to observe the suspect.",
+          "zh": "侦探乔装成街头小贩监视嫌疑人。"
+        },
+        {
+          "gloss": "掩饰，隐藏（情感/意图）",
+          "logic": "把「真实外表」藏起来——disguise one's feelings/intentions",
+          "en": "He could not disguise his disappointment when the deal fell through.",
+          "zh": "交易告吹时，他无法掩饰自己的失望。"
+        },
+        {
+          "gloss": "伪装；化装（名词）",
+          "logic": "换上的那套「外表」本身——in disguise（乔装）",
+          "en": "She arrived at the party in disguise, wearing a hat and dark glasses.",
+          "zh": "她戴着帽子和墨镜乔装出席了派对。"
+        }
+      ],
+      "derivatives": [
+        {"w": "guise", "gloss": "外表，方式（under the guise of 以……为幌子）"},
+        {"w": "undisguised", "gloss": "毫不掩饰的，明显的（undisguised contempt）"}
+      ],
+      "examples": [
+        {
+          "en": "The spy disguised himself as a journalist to gain access to the conference.",
+          "zh": "间谍伪装成记者混入了会议现场。",
+          "source": "造句"
+        },
+        {
+          "en": "a blessing in disguise",
+          "zh": "「因祸得福」——固定习语，表示看似不好实则有益的事。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "camouflage", "ipa": "/ˈkæməflɑːʒ/", "gloss": "伪装（使与环境融合，军事/生物）", "note": "「伪装（使与背景融合）」，比 disguise 更强调视觉上与环境融合，多用于军事和动物保护色"},
+        {"w": "conceal", "ipa": "/kənˈsiːl/", "gloss": "隐藏，掩藏（广义）", "note": "「掩藏」，比 disguise 更广，可指掩盖任何事物（情感、信息、物体）"},
+        {"w": "mask", "ipa": "/mɑːsk/", "gloss": "掩盖，遮住（感情/症状）", "note": "「掩盖（感情/问题）」，比 disguise 更侧重遮住表面，常用于抽象义；mask the symptoms（掩盖症状）"}
+      ],
+      "antonyms": [
+        {"w": "reveal", "note": "揭露"},
+        {"w": "expose", "note": "曝光，揭发"}
+      ],
+      "nuance": "disguise 强调改变外表使人认不出（person disguised as）；camouflage 强调与环境融合（军事或生物学）；conceal 最广泛，不限于外表，可藏物可藏信息可藏情感；mask 更抽象，多指遮住感受或症状。"
+    },
+    {
+      "word": "distinguish",
+      "hl": "gu",
+      "levels": ["托福"],
+      "ipa": "/dɪˈstɪŋɡwɪʃ/",
+      "subgroup": "gu",
+      "meaning": "v. 区别，辨别；使显著，使杰出；（distinguish oneself）出类拔萃",
+      "etymology": "拉丁语 distinguere = dis-(分开) + stinguere(刺、标记) = 「刺出分界标记」→ 区分。与 extinguish（熄灭，「刺灭」）同根。",
+      "roots": [
+        {"part": "dis-", "meaning": "分开"},
+        {"part": "-stingu- (stinguere)", "meaning": "刺、标记"},
+        {"part": "-ish", "meaning": "动词后缀"}
+      ],
+      "phonetics": "dis-TING-gwish，重音在第二音节；-gu- = /ɡw/，u 在此发 /w/ 音（不是完全哑音），与 guest 中 u 完全不发音不同——gu + 元音时 u 常读 /w/（distinguish、language、anguish）。",
+      "tip": "distinguish 和 extinguish 同根（-stinguish）：一个「刺出分界」（区分），一个「刺灭」（熄灭）——两词同时记。",
+      "core": "「刺出一道分界线」——在两个相近事物之间戳出标记使之分离；辨别是看出那道线，出类拔萃是把自己从人群中「刺出来」；两义共享「制造或识别差异」的动作感。",
+      "senses": [
+        {
+          "gloss": "区别，辨别（distinguish A from B / between A and B）",
+          "logic": "核心义：在两者间刺出分界，让它们各自独立",
+          "en": "Young children often struggle to distinguish fantasy from reality.",
+          "zh": "幼儿常常难以分辨幻想与现实。"
+        },
+        {
+          "gloss": "使显著，使有别于其他（某特征区分开某人/物）",
+          "logic": "某特质「刺出」一个标记，让此人/物从同类中凸显",
+          "en": "What distinguishes this novel is its precise, unflinching prose style.",
+          "zh": "这部小说的独特之处在于其精准而毫不回避的散文风格。"
+        },
+        {
+          "gloss": "使杰出，出类拔萃（distinguish oneself）",
+          "logic": "「把自己从人群中刺出来」——在某领域表现卓越",
+          "en": "She distinguished herself as a diplomat known for building consensus.",
+          "zh": "她以善于凝聚共识的外交官身份出类拔萃。"
+        }
+      ],
+      "derivatives": [
+        {"w": "distinguished", "gloss": "卓越的，著名的（a distinguished scholar）"},
+        {"w": "distinguishable", "gloss": "可辨别的，可区分的"},
+        {"w": "indistinguishable", "gloss": "无法区分的，极其相似的"}
+      ],
+      "examples": [
+        {
+          "en": "It is important to distinguish between correlation and causation.",
+          "zh": "区分相关性和因果关系非常重要。",
+          "source": "造句"
+        },
+        {
+          "en": "distinguish oneself in battle / distinguish A from B",
+          "zh": "「在战场上出类拔萃 / 将A与B区分」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "differentiate", "ipa": "/ˌdɪfəˈrenʃieɪt/", "gloss": "区分，找出差异（系统化）", "note": "「区分」，与 distinguish 最接近，但 differentiate 更强调找出具体差异；differentiate between two models（区分两种模型）"},
+        {"w": "discriminate", "ipa": "/dɪˈskrɪmɪneɪt/", "gloss": "辨别（中性）；歧视（负面，against）", "note": "「辨别」（discriminate between），中性义；负面义是「歧视（against）」——注意语境"},
+        {"w": "discern", "ipa": "/dɪˈsɜːrn/", "gloss": "察觉，凭感知力辨别细微差异", "note": "「察觉、辨别」，比 distinguish 更侧重凭敏锐感知力识别细微差别；discern a pattern（察觉规律）"}
+      ],
+      "antonyms": [
+        {"w": "confuse", "note": "混淆"},
+        {"w": "conflate", "note": "混为一谈"}
+      ],
+      "nuance": "distinguish 最通用；differentiate 更强调系统地找出差异（常用于科学/商业语境）；discriminate（中性义）侧重识别细微差异，语气较正式；discern 强调凭直觉或感知力辨别，不一定是对比两个对象。"
+    },
+    {
+      "word": "league",
+      "hl": "gu",
+      "levels": ["托福"],
+      "ipa": "/liːɡ/",
+      "subgroup": "gu",
+      "meaning": "n. 联盟，同盟；联赛；等级（水平）",
+      "etymology": "拉丁语 ligare「绑缚」→ 意大利语 lega「联盟（被绑在一起的）」，与 ligament（韧带）、oblige（约束）同根。联赛义是体育组织「联盟」的引申。",
+      "roots": [
+        {"part": "lea-(ligare)", "meaning": "绑缚、连结"}
+      ],
+      "phonetics": "lea- = /liː/，-gue = /ɡ/；词尾 -gue 中 ue 不发音，仅保 g 硬音，整词读 /liːɡ/。",
+      "tip": "「out of one's league」（超出某人能力/等级范围）是高频口语：She's out of his league.（她不是他能追的那种。）",
+      "core": "「被绑在一起的一群人」——联盟是拿绳子捆住的同盟者，联赛是绑在同一竞技框架内的队伍，等级是「同一根绳子上」的水平层；三义共享「归属于同一捆/层」的感觉。",
+      "senses": [
+        {
+          "gloss": "联盟，同盟（政治/军事/利益共同体）",
+          "logic": "核心义：被共同利益「捆在一起」的群体",
+          "en": "The nations formed a league to coordinate their response to the crisis.",
+          "zh": "各国组成联盟协调应对危机。"
+        },
+        {
+          "gloss": "联赛（体育竞技组织）",
+          "logic": "「捆在同一竞技框架内」——league football / basketball league",
+          "en": "She played in the top league for twelve seasons before retiring.",
+          "zh": "她在顶级联赛打了十二个赛季才退役。"
+        },
+        {
+          "gloss": "等级，水平层次（in a different league / out of one's league）",
+          "logic": "「同一捆」即同一水平——不在同一 league 就是水平差距",
+          "en": "In terms of raw computing power, this chip is in a different league entirely.",
+          "zh": "就原始算力而言，这款芯片完全不在同一档次。"
+        }
+      ],
+      "derivatives": [
+        {"w": "league table", "gloss": "（联赛/学校/机构的）排行榜"},
+        {"w": "colleague", "gloss": "同事（co-+league：被捆在同一工作中的人）"}
+      ],
+      "examples": [
+        {
+          "en": "The two countries formed a military league to defend against common threats.",
+          "zh": "两国结成军事同盟以应对共同威胁。",
+          "source": "造句"
+        },
+        {
+          "en": "in league with / out of one's league",
+          "zh": "「与……勾结 / 不在同一个水平线上」——两种高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "alliance", "ipa": "/əˈlaɪəns/", "gloss": "联盟，同盟（政治/军事，正式）", "note": "「联盟」，比 league 更正式，多用于政治、军事；form an alliance（结盟）"},
+        {"w": "confederation", "ipa": "/kənˌfedəˈreɪʃn/", "gloss": "联邦，松散联盟（成员保有独立性）", "note": "「联邦、联盟」，比 league 更正式，强调成员保有独立性的松散联盟"},
+        {"w": "tier", "ipa": "/tɪər/", "gloss": "层级，等级（有序层次结构）", "note": "「等级」义的近义词，比 league 更通用，强调有序的层级结构；the top tier（顶级）"}
+      ],
+      "antonyms": [
+        {"w": "rival", "note": "对手、竞争方（与「联盟」相对）"}
+      ],
+      "nuance": "league 作「联盟」时，alliance 更正式（常指政治军事），confederation 强调成员独立性；league 还有「等级」义（不在同一个 league），tier 在此语境更系统化，league 更口语化。"
+    },
+    {
+      "word": "ghost",
+      "hl": "gh",
+      "levels": ["基础"],
+      "ipa": "/ɡoʊst/",
+      "subgroup": "gh",
+      "meaning": "n. 鬼魂，幽灵；残影；（ghost someone）被突然断联  v. 悄无声息地移动；（网络用语）被拉黑/断联",
+      "etymology": "古英语 gāst「灵魂、精神」，日耳曼同根，与德语 Geist（精神）同源。Holy Ghost（圣灵）是宗教用法。现代「ghost（某人）」义——突然断联、不再回复——是2010年代网络俚语。",
+      "roots": [
+        {"part": "ghost（gāst）", "meaning": "灵魂、精神"}
+      ],
+      "phonetics": "gh- 词首读 /ɡ/，后接 ost /oʊst/；gh 在词首保留了古英语 /ɡ/ 的拼写，h 是哑音，只有 g 发音。",
+      "tip": "ghost 词首 gh 的 h 不发音——「g 有声，h 是幽灵」。词中 gh（night、light）则完全不发音，词尾 gh（rough）读 /f/——三种位置三种命运。",
+      "core": "「存在却不可触碰」——鬼魂在场但无实体；残影是消逝后留下的「形迹」；被 ghost 是对方突然「消失」成鬼；悄无声息地移动是「像鬼一样无痕迹」。核心感觉是「存在的痕迹，却没有实质」。",
+      "senses": [
+        {
+          "gloss": "鬼魂，幽灵",
+          "logic": "核心义：死后仍留存于世的灵体——不可触碰但有存在感",
+          "en": "Local legend has it that the old lighthouse is haunted by the ghost of a keeper.",
+          "zh": "当地传说那座古灯塔里游荡着一名守塔人的鬼魂。"
+        },
+        {
+          "gloss": "残影，痕迹（抽象）",
+          "logic": "「鬼魂式的存在」：实体消失后留下的形迹——ghost of a smile（浅淡的微笑）",
+          "en": "There was only a ghost of a chance that the project would be approved.",
+          "zh": "这个项目获批的可能性微乎其微。"
+        },
+        {
+          "gloss": "（网络俚语）突然断联，消失不回复（动词）",
+          "logic": "「变成鬼」：突然从对方生活中消失，不留痕迹",
+          "en": "They had been texting every day for a month before he ghosted her without explanation.",
+          "zh": "他们每天发消息聊了一个月，然后他毫无解释地突然断联了。"
+        },
+        {
+          "gloss": "悄无声息地移动（动词）",
+          "logic": "像鬼一样无声无形地出现/离开",
+          "en": "The cat ghosted through the house without making a sound.",
+          "zh": "猫悄无声息地穿过房间。"
+        }
+      ],
+      "derivatives": [
+        {"w": "ghostly", "gloss": "鬼魂般的，幽灵似的"},
+        {"w": "ghostwriter", "gloss": "代笔人（ghostwrite：替他人写作而不署名）"},
+        {"w": "ghosting", "gloss": "（网络）突然断联行为；（技术）屏幕残影"}
+      ],
+      "examples": [
+        {
+          "en": "The old manor was said to be haunted by the ghost of its former owner.",
+          "zh": "据说那座古老庄园里闹着它昔日主人的鬼魂。",
+          "source": "造句"
+        },
+        {
+          "en": "ghost a friend / give up the ghost",
+          "zh": "「突然断联不回复 / 放弃挣扎（口语：撒手不管）」——新旧两种高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "specter", "ipa": "/ˈspektər/", "gloss": "幽灵；（抽象）威胁性阴影", "note": "「幽灵、阴影」，比 ghost 更正式、更文学，常带恐怖或威胁感；the specter of war（战争的阴影）"},
+        {"w": "phantom", "ipa": "/ˈfæntəm/", "gloss": "幻影，虚影（强调虚幻不真实）", "note": "「幻影、虚影」，比 ghost 更强调虚幻不真实的感觉；phantom pain（幻肢痛）"},
+        {"w": "apparition", "ipa": "/ˌæpəˈrɪʃn/", "gloss": "显灵，幻象（强调突然出现）", "note": "「显灵、幻象」，正式书面词，强调突然出现的灵异形象"}
+      ],
+      "antonyms": [
+        {"w": "living being", "note": "活着的生命（与「鬼魂」相对）"}
+      ],
+      "nuance": "ghost 是最口语、最通用的「鬼魂」，specter 更强调威胁性（常用于抽象义：the specter of inflation），phantom 更强调虚幻飘渺感（phantom ship 幽灵船），apparition 强调突然显现的一次性视觉体验。"
+    },
+    {
+      "word": "ghastly",
+      "hl": "gh",
+      "levels": ["基础"],
+      "ipa": "/ˈɡɑːstli/",
+      "subgroup": "gh",
+      "meaning": "adj. 极其糟糕的；可怕的；（脸色）惨白的",
+      "etymology": "古英语 gāstlic「像鬼的」，源自 gāst（鬼魂/灵魂），与 ghost 同根。「像鬼一样」→ 「惨白如鬼」→「令人恐惧的」→「极其糟糕的」。",
+      "roots": [
+        {"part": "ghast（gāst）", "meaning": "鬼魂"},
+        {"part": "-ly", "meaning": "形容词后缀（像……的）"}
+      ],
+      "phonetics": "gh- 词首读 /ɡ/，-astly = /ɑːstli/；重音 GHAST-ly。与 ghost 同源，gh 词首发音规律相同，h 哑音。",
+      "tip": "ghastly 和 ghost 同根——字面义是「鬼一样的（ghostly）」，因为见鬼的人脸都吓白了——「惨白→可怕→极其糟糕」三步引申一次记住。",
+      "core": "「如鬼般令人不安」——见鬼后的人是惨白的（脸色），见鬼的场景是令人恐惧的（可怕的），引申到非字面义就是「极其糟糕到令人不适」。三义由同一个「遇鬼」的感觉层层引申。",
+      "senses": [
+        {
+          "gloss": "（脸色）惨白的，如鬼般苍白的",
+          "logic": "核心义：字面「像鬼一样」的外观",
+          "en": "She looked ghastly after a week with no sleep — pale and hollow-eyed.",
+          "zh": "一周没睡之后她面色惨白、眼窝深陷，看起来可怕极了。"
+        },
+        {
+          "gloss": "可怕的，令人恐惧的（事件/景象）",
+          "logic": "「见鬼的场景」：触目惊心的恐怖感",
+          "en": "The aftermath of the earthquake was a ghastly sight.",
+          "zh": "地震后的景象惨不忍睹。"
+        },
+        {
+          "gloss": "极其糟糕的（非正式，英式强烈不满）",
+          "logic": "「糟糕到令人如见鬼般不适」——英式口语夸张用法",
+          "en": "The weather on our holiday was absolutely ghastly — rain every single day.",
+          "zh": "我们度假时天气糟透了——每天都在下雨。"
+        }
+      ],
+      "derivatives": [
+        {"w": "ghastliness", "gloss": "惨白；可怕性；极度糟糕"},
+        {"w": "ghost", "gloss": "鬼魂（同根词，词源关联）"}
+      ],
+      "examples": [
+        {
+          "en": "The accident left a ghastly scar across his face.",
+          "zh": "那次事故在他脸上留下了一道可怕的疤。",
+          "source": "造句"
+        },
+        {
+          "en": "a ghastly mistake / look ghastly",
+          "zh": "「严重的错误 / 脸色惨白」——两种高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "horrifying", "ipa": "/ˈhɒrɪfaɪɪŋ/", "gloss": "令人恐惧的，骇人的", "note": "「令人恐惧的」，比 ghastly 更强调心理上的恐惧感，语气稍弱"},
+        {"w": "dreadful", "ipa": "/ˈdredfəl/", "gloss": "糟透的，可怕的（英式日常强烈批评）", "note": "「糟透的、可怕的」，与 ghastly 最接近，英式英语中常用于表达强烈不满；What a dreadful idea!（多可怕的主意！）"},
+        {"w": "pallid", "ipa": "/ˈpælɪd/", "gloss": "（脸色）苍白的，无血色的", "note": "「惨白的、苍白的」，仅指「脸色苍白」义，比 ghastly 更精确；a pallid complexion（苍白的面色）"}
+      ],
+      "antonyms": [
+        {"w": "pleasant", "note": "令人愉快的"},
+        {"w": "rosy", "note": "（「苍白」义）红润的、气色好的"}
+      ],
+      "nuance": "ghastly 带有「如鬼般」的视觉冲击感，是比 terrible 更强烈的描述；dreadful 在英式英语中的日常语气与 ghastly 相近但稍温和；horrifying 更强调令人战栗的心理恐惧；pallid 只用于「苍白」义，不含「糟糕」义。"
+    },
+    {
+      "word": "spaghetti",
+      "hl": "gh",
+      "levels": ["托福"],
+      "ipa": "/spəˈɡeti/",
+      "subgroup": "gh",
+      "meaning": "n. 意大利细面条；（比喻）纠缠复杂的代码/线路",
+      "etymology": "意大利语 spaghetti，是 spago（细绳、细线）的复数小称形式，字面义「一根根细绳」。意大利语借词，gh 在意大利语中直接读 /ɡ/，这里保留了原语言的 gh→/g/ 拼写。",
+      "roots": [
+        {"part": "spago", "meaning": "细绳"},
+        {"part": "-etti", "meaning": "意大利语小称复数后缀"}
+      ],
+      "phonetics": "sp- + a /ə/ + gh = /ɡ/ + etti = /eti/；gh 在意大利语借词中读 /ɡ/（与英语词首 gh 同结果，但机制不同）。重音在第二音节 spa-GHET-ti。",
+      "tip": "spaghetti code（意大利面代码）是编程术语，指逻辑混乱、缠绕不清的代码——就像一碗缠在一起的面条。gh 在这里是意大利语借词的拼写，记「意大利语里 gh = /g/」即可。",
+      "core": "「细线缠绕」——spago 是细绳；spaghetti 是无数根细绳/面条并存，比喻义就是「像一碗面条一样缠绕不清的复杂结构」。核心感觉是「细长、可弯曲、容易乱成一团」。",
+      "senses": [
+        {
+          "gloss": "意大利细面条（食物）",
+          "logic": "核心义：细长、缠绕的面食——spago（细绳）的小称复数",
+          "en": "She made spaghetti with a slow-cooked tomato and basil sauce.",
+          "zh": "她做了一道配慢炖番茄罗勒酱的意大利细面。"
+        },
+        {
+          "gloss": "（比喻）纠缠复杂的结构（代码/线路/道路）",
+          "logic": "「像一碗面条一样缠绕不清」——spaghetti code（杂乱代码）、spaghetti junction（复杂立交）",
+          "en": "Years of unplanned additions had turned the codebase into spaghetti.",
+          "zh": "多年未经规划的叠加让代码库变成了一团意大利面。"
+        }
+      ],
+      "derivatives": [
+        {"w": "spaghetti western", "gloss": "「意面西部片」（1960年代意大利导演拍摄的西部片）"},
+        {"w": "spaghetti junction", "gloss": "复杂立交桥（因线路交织如面条得名）"}
+      ],
+      "examples": [
+        {
+          "en": "The legacy codebase was a tangle of spaghetti code with no documentation.",
+          "zh": "这份遗留代码库是一团毫无文档的意大利面代码。",
+          "source": "造句"
+        },
+        {
+          "en": "spaghetti code / spaghetti junction",
+          "zh": "「意大利面代码（乱成一团的程序） / 立交桥（复杂交叉路口）」——两种比喻义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "pasta", "ipa": "/ˈpɑːstə/", "gloss": "意大利面食的总称（涵盖所有形状）", "note": "「意大利面食」的统称，比 spaghetti 更广，涵盖所有形状"},
+        {"w": "noodle", "ipa": "/ˈnuːdl/", "gloss": "面条（跨文化通用词）", "note": "「面条」的通用词，泛指各类面条（不只意大利面）"}
+      ],
+      "antonyms": [],
+      "nuance": "spaghetti 特指细长圆形意大利面，pasta 是所有意大利面食的总称（fettuccine、penne、rigatoni 都是 pasta），noodle 是跨文化通用词（中式面条、日式拉面也叫 noodles）。比喻义中，spaghetti 特指「混乱缠绕」的视觉感，是技术圈固定说法。"
+    }
+  ]
+}

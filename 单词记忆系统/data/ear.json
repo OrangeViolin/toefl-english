@@ -1,0 +1,1160 @@
+{
+  "id": "ear",
+  "combo": "ear·eer·ere",
+  "title": "/ɪə/ 双元音家族",
+  "sound": "/ɪə/ · /ɪr/",
+  "subtitle": "ear 一形三音，本页只收 /ɪə/；eer 和 ere 加盟，三拼写一声",
+  "intro": "/ɪə/（美式 /ɪr/）是英语「双元音」中的高频成员——先发短 /ɪ/，嘴形立刻滑向中央元音 /ə/，听起来像「伊呃」。\n\n⚠️ ear 是陷阱拼写：同一个字母组合可以读三个不同音——ear（耳朵）读 /ɪə/，earth（地球）中读 /ɜːr/，bear（熊）中读 /eə/。本页只收读 /ɪə/ 的词，不碰 /ɜːr/ 和 /eə/。\n\n三条路通向同一个音：ear（ear/near/year）、eer（deer/cheer/career）、ere/ier（here/fierce/sincere）。记住这三个「视觉锚点」，遇到陌生词先猜 /ɪə/，正确率极高。",
+  "subgroups": [
+    {
+      "key": "ear",
+      "tag": "ear → /ɪə/",
+      "label": "✅ ear = /ɪə/",
+      "desc": "最常见拼写，但有三读陷阱：ear/near/year/clear 读 /ɪə/；earth/earn/learn 读 /ɜːr/；bear/wear/pear 读 /eə/。本页只收 /ɪə/。经验法则：ear 后接开音节或辅音+元音时多读 /ɪə/；后接 r+辅音（earth）多读 /ɜːr/。"
+    },
+    {
+      "key": "eer",
+      "tag": "eer → /ɪə/",
+      "label": "eer = /ɪə/",
+      "desc": "双 e + r，几乎没有例外，见到就读 /ɪə/：deer / cheer / career / pioneer / volunteer / engineer。比 ear 更「安全」——不存在多读音问题，是三组里最规则的。"
+    },
+    {
+      "key": "ere",
+      "tag": "ere·ier → /ɪə/",
+      "label": "ere / ier = /ɪə/",
+      "desc": "ere 在词尾或词中读 /ɪə/（here/severe/interfere/adhere），注意 there/where 例外读 /eə/。ier 在 fierce/pier 中读 /ɪə/，在 fier（法语词根）中也有此音。atmosphere 的 -phere 结尾是 ph+ere，同样归此组。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ear / -eer (/ɪər/)",
+      "words": ["ear", "near", "year", "clear", "hear", "deer", "cheer", "beer"]
+    },
+    {
+      "label": "-ere / -ier (/ɪər/)",
+      "words": ["here", "mere", "severe", "adhere", "interfere", "pier", "fierce"]
+    },
+    {
+      "label": "-eer 职业族",
+      "words": ["career", "volunteer", "engineer", "pioneer"]
+    }
+  ],
+  "words": [
+    {
+      "word": "ear",
+      "hl": "ear",
+      "levels": ["基础"],
+      "ipa": "/ɪər/",
+      "subgroup": "ear",
+      "meaning": "n. 耳朵；听觉；对语言/音乐的感知力",
+      "etymology": "古英语 ēare，日耳曼同根，与德语 Ohr（耳朵）同源。「有耳朵」引申为「有听觉感知力」——an ear for music（音乐耳朵）。",
+      "roots": [
+        {"part": "ear（ēare）", "meaning": "耳朵"}
+      ],
+      "phonetics": "ea + r → /ɪər/，是整组的「音位锚定词」。注意 earth、earn、learn 中的 ear/ear+辅音读 /ɜːr/，bear/wear 读 /eə/——三音都靠上下文区分。",
+      "tip": "记住「ear 三音」：ear → /ɪər/，earth → /ɜːr/，bear → /eə/。本页只收 /ɪər/ 阵营。",
+      "core": "一个能接收信号的开口——感知、接纳、辨别外界传来的声音。",
+      "senses": [
+        {
+          "gloss": "n. 耳朵（身体器官）",
+          "logic": "最原始的物理开口，声音进入的门户。",
+          "en": "He cupped his hand behind his ear to hear better.",
+          "zh": "他把手掌拱在耳后，以便听得更清楚。"
+        },
+        {
+          "gloss": "n. 听觉感知力（对音乐/语言的辨别才能）",
+          "logic": "开口能接收信号，引申为对细微声音差异的分辨能力。",
+          "en": "A musician needs a trained ear to detect subtle pitch differences.",
+          "zh": "音乐家需要经过训练的耳朵才能辨别细微的音高差异。"
+        }
+      ],
+      "derivatives": [
+        {"w": "earring", "gloss": "耳环"},
+        {"w": "eardrum", "gloss": "耳膜"},
+        {"w": "earworm", "gloss": "脑海中挥之不去的旋律"}
+      ],
+      "examples": [
+        {
+          "en": "She has a good ear for languages and picked up French in six months.",
+          "zh": "她对语言有天赋，六个月就学会了法语。",
+          "source": "造句"
+        },
+        {
+          "en": "play it by ear",
+          "zh": "「见机行事，随机应变」——不提前计划，靠现场感觉。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "hearing", "ipa": "/ˈhɪərɪŋ/", "gloss": "听觉；听力", "note": "「听觉/听力」，抽象名词，指感知声音的能力；lose one's hearing（失去听力）"},
+        {"w": "attention", "ipa": "/əˈtenʃn/", "gloss": "注意；关注", "note": "比喻义近义词：lend an ear（借耳朵）= give attention（给予注意）"}
+      ],
+      "antonyms": [
+        {"w": "deaf", "note": "失聪的（在「听觉」义上的反义）"}
+      ],
+      "nuance": "ear 作「感知力」义时（an ear for music），强调天生或培养出的细腻辨别力；hearing 是医学或法律术语（hearing test / a court hearing），ear 更口语、更意象化。"
+    },
+    {
+      "word": "near",
+      "hl": "ear",
+      "levels": ["托福"],
+      "ipa": "/nɪər/",
+      "subgroup": "ear",
+      "meaning": "adj./adv. 近的，接近的  prep. 靠近  v. 接近",
+      "etymology": "古英语 nēar，是 nēah（近）的比较级——「更近」本是比较形式，后固化为普通形容词。nearby（附近）、nearly（几乎）均由此派生。",
+      "roots": [
+        {"part": "near（nēah）", "meaning": "近"}
+      ],
+      "phonetics": "n + ear /ɪər/，与 year/clear/hear 同韵。注意 nearly（几乎）= near + -ly，/ˈnɪərli/，不要丢掉双元音。",
+      "core": "距离上的贴近感——空间、时间或关系上都「快到了」。",
+      "senses": [
+        {
+          "gloss": "adj./adv. 近的，接近的（空间或时间）",
+          "logic": "贴近感的最直接表达：物理距离短，或时间快到了。",
+          "en": "The hospital is near the central station, about a five-minute walk.",
+          "zh": "医院就在中央车站附近，步行约五分钟。"
+        },
+        {
+          "gloss": "prep. 靠近（位置介词）",
+          "logic": "贴近感作为空间关系词使用。",
+          "en": "Don't stand near the edge of the platform.",
+          "zh": "不要站在站台边缘附近。"
+        },
+        {
+          "gloss": "v. 接近，临近（动词）",
+          "logic": "贴近的动态过程：距离正在缩短。",
+          "en": "As the ship neared the harbor, the crew grew tense.",
+          "zh": "随着船只靠近港口，船员们开始紧张起来。"
+        }
+      ],
+      "derivatives": [
+        {"w": "nearly", "gloss": "几乎，差不多"},
+        {"w": "nearby", "gloss": "附近的，在附近"},
+        {"w": "nearness", "gloss": "接近；亲近"}
+      ],
+      "examples": [
+        {
+          "en": "The deadline is drawing near, and we haven't finished.",
+          "zh": "截止日期临近，我们还没完成。",
+          "source": "造句"
+        },
+        {
+          "en": "in the near future",
+          "zh": "「在不久的将来」——学术写作和演讲高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "close", "ipa": "/kloʊs/", "gloss": "近的，接近的", "note": "最常用的「近」，与 near 几乎可互换，但 close 更口语；close to home（切身相关）"},
+        {"w": "adjacent", "ipa": "/əˈdʒeɪsnt/", "gloss": "紧邻的，毗连的", "note": "「紧邻的」，正式书面词，多指空间上直接相连；adjacent rooms（相邻房间）"},
+        {"w": "nearby", "ipa": "/ˌnɪərˈbaɪ/", "gloss": "附近的，在附近", "note": "「附近的」，强调距离不远，比 near 更侧重具体位置"}
+      ],
+      "antonyms": [
+        {"w": "far", "note": "远的"},
+        {"w": "distant", "note": "遥远的，疏远的"}
+      ],
+      "nuance": "near 和 close 都表「近」，但 close call（侥幸脱险）不能换 near；near miss（险些命中/错过）是固定搭配。adjacent 仅指空间紧邻，不用于时间和关系。"
+    },
+    {
+      "word": "year",
+      "hl": "ear",
+      "levels": ["托福"],
+      "ipa": "/jɪər/",
+      "subgroup": "ear",
+      "meaning": "n. 年，一年；（复数）岁月，很长时间",
+      "etymology": "古英语 ġēar，日耳曼同根，与德语 Jahr 同源。yearly（每年的）、yearbook（年鉴）均派生自此。",
+      "roots": [
+        {"part": "year（ġēar）", "meaning": "年"}
+      ],
+      "phonetics": "y + ear /ɪər/，注意 y 在词首作辅音 /j/，不是元音；years = /jɪərz/，复数 s 发 /z/。",
+      "core": "时间流逝的一个完整循环——季节轮回一圈，积累出岁月的厚度。",
+      "senses": [
+        {
+          "gloss": "n. 年，一年（计时单位）",
+          "logic": "最直接义：地球绕太阳一圈的时间单位。",
+          "en": "The project took three years to complete from start to finish.",
+          "zh": "这个项目从头到尾花了三年时间才完成。"
+        },
+        {
+          "gloss": "n. 岁月，漫长时光（复数，含情感色彩）",
+          "logic": "多个循环叠加，沉淀出「时间之重」的感受。",
+          "en": "After years of struggle, she finally earned her doctorate.",
+          "zh": "经过多年的奋斗，她终于获得了博士学位。"
+        }
+      ],
+      "derivatives": [
+        {"w": "yearly", "gloss": "每年的；每年一次"},
+        {"w": "yearbook", "gloss": "年鉴；毕业纪念册"},
+        {"w": "yearlong", "gloss": "持续一整年的"}
+      ],
+      "examples": [
+        {
+          "en": "Over the years, the technology has improved dramatically.",
+          "zh": "多年来，这项技术取得了显著进步。",
+          "source": "造句"
+        },
+        {
+          "en": "year after year",
+          "zh": "「年复一年」——强调持续不断的高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "annual", "ipa": "/ˈænjuəl/", "gloss": "每年的（形容词）", "note": "形容词「每年的」，比 yearly 更正式；annual report（年报）"},
+        {"w": "decade", "ipa": "/ˈdekeɪd/", "gloss": "十年", "note": "「十年」，比 year 跨度更大；over the past decade（过去十年）"}
+      ],
+      "antonyms": [],
+      "nuance": "year 作复数 years 时常表「漫长时光」（years of effort），带有岁月沉淀的感情色彩；annual 和 yearly 是形容词/副词，只描述「每年一次」的频率，不能替代 year 的名词义。"
+    },
+    {
+      "word": "clear",
+      "hl": "ear",
+      "levels": ["托福"],
+      "ipa": "/klɪər/",
+      "subgroup": "ear",
+      "meaning": "adj. 清晰的；明显的；无障碍的  v. 清除；（雾等）散去；（法律上）宣布无罪",
+      "etymology": "拉丁语 clarus「明亮、著名」，与 clarify（阐明）、declare（宣布）、clarity（清晰度）同根——都来自「让光进来」的意象。",
+      "roots": [
+        {"part": "clear（clarus）", "meaning": "明亮、清楚"}
+      ],
+      "phonetics": "cl- 连缀 + ear /ɪər/，注意 cl 要连贯发出；clearly = /ˈklɪərli/，副词形式。",
+      "tip": "clear + -ify = clarify（澄清）；clear + -ity = clarity（清晰度）——三个词同根连记。",
+      "core": "没有遮挡、没有杂质——光线、视线、思路都能畅通无阻地穿透。",
+      "senses": [
+        {
+          "gloss": "adj. 清澈的，透明的（视觉）",
+          "logic": "没有遮挡，光线能穿透，看得见底。",
+          "en": "The lake water was so clear you could see fish swimming three meters below.",
+          "zh": "湖水清澈见底，三米深处的鱼都清晰可见。"
+        },
+        {
+          "gloss": "adj. 清晰的，明白的（思路/表达）",
+          "logic": "没有歧义和模糊，意思能直达对方。",
+          "en": "Please give a clear explanation of your reasoning.",
+          "zh": "请清晰地解释你的推理过程。"
+        },
+        {
+          "gloss": "adj. 无障碍的，畅通的（道路/空间）",
+          "logic": "没有阻碍物，路径通畅。",
+          "en": "Make sure the emergency exit is clear at all times.",
+          "zh": "请确保紧急出口随时保持畅通。"
+        },
+        {
+          "gloss": "v. 清除，清理（障碍/杂物）",
+          "logic": "主动去除遮挡物，使通道变得畅通。",
+          "en": "Workers cleared the debris from the road after the landslide.",
+          "zh": "山体滑坡后，工人们清除了道路上的碎石。"
+        },
+        {
+          "gloss": "v. （雾/疑云）散去，消除",
+          "logic": "遮挡物自行消失，重新变得通透。",
+          "en": "The fog cleared by noon, revealing a bright blue sky.",
+          "zh": "雾气到中午散去，露出晴朗的蓝天。"
+        },
+        {
+          "gloss": "v. （法律上）宣布无罪，洗清（嫌疑）",
+          "logic": "去除「污点」的遮挡，使名誉重新清白。",
+          "en": "New DNA evidence cleared the defendant of all charges.",
+          "zh": "新的DNA证据为被告洗清了所有罪名。"
+        }
+      ],
+      "derivatives": [
+        {"w": "clarity", "gloss": "清晰度；明确性"},
+        {"w": "clearly", "gloss": "清楚地；显然"},
+        {"w": "clearance", "gloss": "清除；通关许可；净空距离"}
+      ],
+      "examples": [
+        {
+          "en": "The instructions were not clear, so several students made mistakes.",
+          "zh": "说明不够清晰，导致几位学生出了差错。",
+          "source": "造句"
+        },
+        {
+          "en": "crystal clear",
+          "zh": "「水晶般清澈」——强调极度清楚，可用于字面（水）或比喻（意思完全明白）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "obvious", "ipa": "/ˈɒbviəs/", "gloss": "明显的，显而易见的", "note": "「明显的」，强调一眼就看出来，比 clear 语气更强；an obvious mistake（明显的错误）"},
+        {"w": "transparent", "ipa": "/trænsˈpærənt/", "gloss": "透明的；坦诚的", "note": "「透明的/清晰的」，字面指能透过光，比喻指无遮掩；transparent motives（动机透明）"},
+        {"w": "evident", "ipa": "/ˈevɪdənt/", "gloss": "明显的，显然的（书面）", "note": "「明显的」，书面正式词，强调由证据推出；it is evident that…（显然……）"}
+      ],
+      "antonyms": [
+        {"w": "obscure", "note": "模糊的，晦涩的"},
+        {"w": "cloudy", "note": "浑浊的，不清晰的"}
+      ],
+      "nuance": "clear 强调「没有遮挡/歧义」，obvious 强调「无需说明就能看出」（语气更强），evident 是书面语「由证据推导出的明显」。clear sky（晴空）不能用 obvious；an obvious lie 不能轻易换 clear。"
+    },
+    {
+      "word": "hear",
+      "hl": "ear",
+      "levels": ["托福"],
+      "ipa": "/hɪər/",
+      "subgroup": "ear",
+      "meaning": "v. 听见；听说；（法庭）审理",
+      "etymology": "古英语 hȳran，日耳曼同根，与德语 hören 同源。hearing（听力；听证会）是其核心派生词。法庭义「审理案件」= 法官「听」双方陈述。",
+      "roots": [
+        {"part": "hear（hȳran）", "meaning": "听见"}
+      ],
+      "phonetics": "h + ear /ɪər/，注意 h 在英语中发音，不像法语词中常省略；heard（过去式）读 /hɜːrd/，与 herd（兽群）同音。",
+      "tip": "hear（听见）是被动感知，listen（to）是主动倾听——与 see/look at 的关系如出一辙。",
+      "core": "声音进入意识——不需要刻意为之，信号自动被接收。",
+      "senses": [
+        {
+          "gloss": "v. 听见（被动感知声音）",
+          "logic": "声音自动进入耳朵和意识，无需主动行为。",
+          "en": "I heard footsteps approaching in the hallway.",
+          "zh": "我听到走廊里有脚步声逼近。"
+        },
+        {
+          "gloss": "v. 听说，得知（接收消息）",
+          "logic": "信息像声音一样进入意识，不一定通过耳朵。",
+          "en": "Have you heard that the company is moving to a new location?",
+          "zh": "你听说公司要搬到新地址了吗？"
+        },
+        {
+          "gloss": "v. （法庭）审理，听取陈述",
+          "logic": "法官「听」双方陈词，是「接收声音」的正式制度化延伸。",
+          "en": "The judge agreed to hear the appeal next month.",
+          "zh": "法官同意下个月审理该上诉案件。"
+        }
+      ],
+      "derivatives": [
+        {"w": "hearing", "gloss": "听力；听证会"},
+        {"w": "hearsay", "gloss": "道听途说；传闻"},
+        {"w": "overhear", "gloss": "无意中听到"}
+      ],
+      "examples": [
+        {
+          "en": "I heard a strange noise coming from the basement.",
+          "zh": "我听到地下室传来奇怪的声音。",
+          "source": "造句"
+        },
+        {
+          "en": "hear a case / Hear, hear!",
+          "zh": "「审理案件 / 表示同意、附议」——法庭义 + 议会高频用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "listen", "ipa": "/ˈlɪsn/", "gloss": "主动倾听", "note": "「主动倾听」，比 hear 多了意志性；listen to music（主动听音乐）vs hear music（自然听到）"},
+        {"w": "perceive", "ipa": "/pəˈsiːv/", "gloss": "感知，察觉", "note": "「感知」，更抽象，兼指感官和理解层面；perceive a sound（感知到声音）"},
+        {"w": "overhear", "ipa": "/ˌoʊvərˈhɪər/", "gloss": "无意中听到，偶然听见", "note": "「无意听到」，强调非故意偷听到别人谈话"}
+      ],
+      "antonyms": [
+        {"w": "ignore", "note": "无视、不理会（信息上的）"},
+        {"w": "mishear", "note": "听错"}
+      ],
+      "nuance": "hear 是无意识的被动感知（You can't help hearing it），listen 是有意识的主动行为（Please listen carefully）。法庭语境中 hear a case 是固定搭配，不能用 listen。"
+    },
+    {
+      "word": "appear",
+      "hl": "ear",
+      "levels": ["托福"],
+      "ipa": "/əˈpɪər/",
+      "subgroup": "ear",
+      "meaning": "v. 出现；看起来（seem）；（在法庭/舞台上）出庭/登台",
+      "etymology": "拉丁语 apparere = ap-(向) + parere(出现、变得可见)。与 apparent（显然的）、disappear（消失）、transparent（透明）同根——都讲「让眼睛看见」。",
+      "roots": [
+        {"part": "ap- (ad-)", "meaning": "向、朝"},
+        {"part": "-pear (parere)", "meaning": "出现、变得可见"}
+      ],
+      "phonetics": "重音在后 ap-PEAR，-pear = /pɪər/，与 ear/near/year 同韵。disappear = dis-(反向) + appear。",
+      "core": "从不可见变得可见——进入视野或感知范围，无论是实体还是印象。",
+      "senses": [
+        {
+          "gloss": "v. 出现，显现（从无到有进入视野）",
+          "logic": "从「不可见」翻转到「可见」，是最基础义。",
+          "en": "A fox appeared at the edge of the forest just after sunset.",
+          "zh": "日落后不久，一只狐狸出现在森林边缘。"
+        },
+        {
+          "gloss": "v. 看起来，显得（给人某种印象）",
+          "logic": "在他人眼中「呈现」某种样子——你进入了别人的感知世界。",
+          "en": "She appeared calm, but her hands were shaking.",
+          "zh": "她看起来很平静，但双手却在颤抖。"
+        },
+        {
+          "gloss": "v. 出庭，登台（正式场合的公开亮相）",
+          "logic": "有目的地走进公众视野，是「出现」义的正式制度化形式。",
+          "en": "The actor will appear on stage for the first time in a decade.",
+          "zh": "这位演员将时隔十年再度登台演出。"
+        }
+      ],
+      "derivatives": [
+        {"w": "appearance", "gloss": "外观；出现；出庭"},
+        {"w": "apparent", "gloss": "显然的；表面上的"},
+        {"w": "disappear", "gloss": "消失，不见"}
+      ],
+      "examples": [
+        {
+          "en": "A new species of beetle appeared in the amber fossil record.",
+          "zh": "琥珀化石记录中出现了一种新的甲虫物种。",
+          "source": "造句"
+        },
+        {
+          "en": "it appears that… / appear in court",
+          "zh": "「看起来……（正式书面表达）/ 出庭」——两义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "seem", "ipa": "/siːm/", "gloss": "看起来，似乎", "note": "「看起来」义最口语；He seems tired（他看起来很累），比 appear 更随意"},
+        {"w": "emerge", "ipa": "/ɪˈmɜːrdʒ/", "gloss": "涌现，从隐蔽处出现", "note": "「涌现、出现（从某处）」，比 appear 更强调从隐蔽处进入视野；emerge from the water（从水中浮出）"},
+        {"w": "surface", "ipa": "/ˈsɜːrfɪs/", "gloss": "浮现，被发现（信息/问题）", "note": "「浮现、出现（信息/问题）」，比 appear 更强调从隐藏状态被发现"}
+      ],
+      "antonyms": [
+        {"w": "disappear", "note": "消失"},
+        {"w": "vanish", "note": "突然消失"}
+      ],
+      "nuance": "appear 比 seem 更书面正式（it appears that... 常见于报告和论文）；emerge 带有「从无到有、从隐到显」的过程感；appear 可以是瞬间出现，emerge 多指逐渐浮现。"
+    },
+    {
+      "word": "deer",
+      "hl": "eer",
+      "levels": ["基础"],
+      "ipa": "/dɪər/",
+      "subgroup": "eer",
+      "meaning": "n. 鹿（单复数同形）",
+      "etymology": "古英语 dēor，原指「野兽」（任何动物），日耳曼同根，与德语 Tier（动物）同源。词义逐渐缩窄，最终专指「鹿」。",
+      "roots": [
+        {"part": "deer（dēor）", "meaning": "野兽→鹿"}
+      ],
+      "phonetics": "d + eer /ɪər/，是 eer 组最简单的锚定词。单复数同形：one deer / three deer。",
+      "tip": "deer/dear（亲爱的）同音词——「my dear deer（我亲爱的鹿）」是著名绕口令。",
+      "core": "警觉而纤细的野生生物——轻盈、优雅，遇险则僵。",
+      "senses": [
+        {
+          "gloss": "n. 鹿（单复数同形）",
+          "logic": "词义由「泛指野兽」缩窄到专指鹿这一物种，单义词。",
+          "en": "Three deer crossed the road just as we rounded the bend.",
+          "zh": "就在我们转过弯道时，三只鹿横穿了马路。"
+        }
+      ],
+      "derivatives": [
+        {"w": "deerskin", "gloss": "鹿皮"},
+        {"w": "deerhound", "gloss": "猎鹿犬"},
+        {"w": "reindeer", "gloss": "驯鹿"}
+      ],
+      "examples": [
+        {
+          "en": "A herd of deer grazed quietly in the clearing.",
+          "zh": "一群鹿在林中空地静静觅食。",
+          "source": "造句"
+        },
+        {
+          "en": "deer in the headlights",
+          "zh": "「车灯照到的鹿」——形容被突然的情况吓得发愣，动弹不得。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "stag", "ipa": "/stæɡ/", "gloss": "雄鹿", "note": "「雄鹿」，专指成年雄性，常用于文学；stag party（单身汉派对）= 男性聚会"},
+        {"w": "doe", "ipa": "/doʊ/", "gloss": "雌鹿；雌兔", "note": "「雌鹿」，也指雌兔；Do Re Mi（《音乐之声》里的 do = doe，一语双关）"}
+      ],
+      "antonyms": [],
+      "nuance": "deer 是总称，stag 特指雄鹿（有角），doe 特指雌鹿，fawn 指小鹿（也用来形容讨好的行为：fawn over sb）。"
+    },
+    {
+      "word": "cheer",
+      "hl": "eer",
+      "levels": ["托福"],
+      "ipa": "/tʃɪər/",
+      "subgroup": "eer",
+      "meaning": "v. 欢呼，喝彩；使振奋  n. 欢呼声；振奋",
+      "etymology": "古法语 chiere「脸，表情」，源自希腊语 kara（头）。「脸上的表情」→ 好心情 → 欢呼。cheerful（快活的）、cheerleader（拉拉队）由此延伸。",
+      "roots": [
+        {"part": "cheer（chiere）", "meaning": "脸色、表情→好心情"}
+      ],
+      "phonetics": "ch /tʃ/ + eer /ɪər/；cheer up = 「振作起来」，情态短语。注意 cheers 在英式英语中也表「谢谢/干杯」。",
+      "core": "脸上绽放出来的喜悦——情绪溢出，化为声音和行动。",
+      "senses": [
+        {
+          "gloss": "v. 欢呼，喝彩（集体为某人/某事欢呼）",
+          "logic": "喜悦情绪溢出，变成声音和动作，是最直接的外化形式。",
+          "en": "The audience cheered as the band walked onto the stage.",
+          "zh": "乐队走上舞台时，观众爆发出欢呼声。"
+        },
+        {
+          "gloss": "v. 使振奋，使高兴（cheer sb up）",
+          "logic": "把自己溢出的喜悦传递给别人，让对方脸上也出现好表情。",
+          "en": "She brought flowers to cheer up her friend in the hospital.",
+          "zh": "她带着花去医院探望，希望让朋友振作起来。"
+        },
+        {
+          "gloss": "n. 欢呼声；振奋（名词义）",
+          "logic": "喜悦外化后留下的声音或氛围本身。",
+          "en": "A loud cheer went up from the crowd when the final whistle blew.",
+          "zh": "终场哨声吹响时，人群中爆发出一阵欢呼。"
+        }
+      ],
+      "derivatives": [
+        {"w": "cheerful", "gloss": "快活的，开朗的"},
+        {"w": "cheerleader", "gloss": "拉拉队员；积极倡导者"},
+        {"w": "cheers", "gloss": "干杯；谢谢（英式口语）"}
+      ],
+      "examples": [
+        {
+          "en": "The crowd cheered when the team scored the winning goal.",
+          "zh": "当球队攻入制胜球时，观众爆发出欢呼声。",
+          "source": "造句"
+        },
+        {
+          "en": "cheer up / three cheers for…",
+          "zh": "「振作起来 / 为……欢呼三声」——高频口语表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "applaud", "ipa": "/əˈplɔːd/", "gloss": "鼓掌；称赞", "note": "「鼓掌喝彩」，比 cheer 更正式，侧重拍手这一动作；applaud the performance（为演出鼓掌）"},
+        {"w": "encourage", "ipa": "/ɪnˈkɜːrɪdʒ/", "gloss": "鼓励，激励", "note": "「鼓励」，比 cheer 更侧重给予信心和支持，不一定有欢呼形式"},
+        {"w": "uplift", "ipa": "/ʌpˈlɪft/", "gloss": "振奋，提升精神", "note": "「振奋、提升精神」，比 cheer 更正式，多用于情感或精神层面；an uplifting speech（振奋人心的演讲）"}
+      ],
+      "antonyms": [
+        {"w": "boo", "note": "嘘声，起哄"},
+        {"w": "discourage", "note": "使沮丧，打击积极性"}
+      ],
+      "nuance": "cheer 侧重集体欢呼的声音和氛围；applaud 侧重鼓掌这一动作（可无声）；encourage 更内在、更持久，是心理上的支持；uplift 着重情绪或灵魂上的提升。"
+    },
+    {
+      "word": "career",
+      "hl": "eer",
+      "levels": ["托福"],
+      "ipa": "/kəˈrɪər/",
+      "subgroup": "eer",
+      "meaning": "n. 职业，事业；职业生涯  v. 高速行进，猛冲",
+      "etymology": "法语 carrière「跑道、车道」，源自拉丁语 carrus（车）。「跑道」→ 人生轨道 → 职业生涯。与 car（汽车）、cargo（货物）同根——都坐在「车」上。",
+      "roots": [
+        {"part": "career（carrus）", "meaning": "车→跑道→职业轨道"}
+      ],
+      "phonetics": "ca- /kə/ + reer /rɪər/，重音在后；注意不要读成 /ˈkɪərɪər/。动词义「猛冲」（The car careered off the road）发音相同，用法较少见。",
+      "core": "一条有方向的跑道——人生走在上面，速度与轨迹共同定义了你是谁。",
+      "senses": [
+        {
+          "gloss": "n. 职业，职业生涯（长期从事的工作轨迹）",
+          "logic": "跑道引申为人生轨道，强调纵向积累的整段历程。",
+          "en": "He devoted his entire career to improving public health in rural areas.",
+          "zh": "他将整个职业生涯都献给了改善农村公共卫生事业。"
+        },
+        {
+          "gloss": "v. 高速行进，猛冲（失控地快速移动）",
+          "logic": "车在跑道上失控狂奔——词源「车道」的字面激活，历史偶合引申，非逻辑连贯。",
+          "en": "The truck careered down the hill and crashed into a barrier.",
+          "zh": "那辆卡车失控冲下山坡，撞上了护栏。"
+        }
+      ],
+      "derivatives": [
+        {"w": "careerist", "gloss": "功利性职业主义者；热衷晋升的人"},
+        {"w": "career-oriented", "gloss": "以事业为导向的"},
+        {"w": "careering", "gloss": "（动词进行时）失控猛冲"}
+      ],
+      "examples": [
+        {
+          "en": "She built a successful career in international finance over twenty years.",
+          "zh": "她用二十年时间在国际金融领域建立了成功的职业生涯。",
+          "source": "造句"
+        },
+        {
+          "en": "career path / career prospects",
+          "zh": "「职业路径 / 职业前景」——求职和简历的核心词汇。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "profession", "ipa": "/prəˈfeʃn/", "gloss": "专业职业（需资质认证）", "note": "「专业职业」，比 career 更强调需要专业训练和资质，如医生律师；a profession, not just a job（职业而非普通工作）"},
+        {"w": "occupation", "ipa": "/ˌɒkjuˈpeɪʃn/", "gloss": "职业，工作（中性泛称）", "note": "「职业/工作」，最正式和中性，多见于表格填写；state your occupation（填写职业）"},
+        {"w": "vocation", "ipa": "/voʊˈkeɪʃn/", "gloss": "使命感的职业；天职", "note": "「使命感的职业」，比 career 多了「天赋使命」含义；Teaching is more than a job—it's a vocation"}
+      ],
+      "antonyms": [
+        {"w": "hobby", "note": "业余爱好（非职业）"}
+      ],
+      "nuance": "career 强调纵向发展的整个职业历程（career growth），profession 强调需要专业资质，occupation 最中性泛指任何工作，vocation 带有「天赋使命」的精神色彩。"
+    },
+    {
+      "word": "volunteer",
+      "hl": "eer",
+      "levels": ["托福"],
+      "ipa": "/ˌvɒlənˈtɪər/",
+      "subgroup": "eer",
+      "meaning": "n. 志愿者  v. 自愿（做某事）；提供（信息）",
+      "etymology": "拉丁语 voluntarius = voluntas(意愿) + -arius(人)。「有意愿的人」→ 志愿者。voluntary（自愿的）、volition（意志）同根——都来自「will（意志）」。",
+      "roots": [
+        {"part": "volunt- (voluntas)", "meaning": "意愿、意志"},
+        {"part": "-eer", "meaning": "从事…的人（法语后缀）"}
+      ],
+      "phonetics": "三音节 VOL-un-TEER，重音在末音节 -teer /tɪər/；与 career/pioneer/engineer 同韵脚。",
+      "core": "意志驱动的主动给予——没有外力逼迫，完全出于自己想做。",
+      "senses": [
+        {
+          "gloss": "n. 志愿者（自愿参与的人）",
+          "logic": "意志力化为身份：一个凭自己意愿行动的人。",
+          "en": "The rescue team was made up entirely of volunteers from the local community.",
+          "zh": "救援队完全由当地社区的志愿者组成。"
+        },
+        {
+          "gloss": "v. 自愿（做某事）",
+          "logic": "意志力化为动作：没有人要求，主动站出来。",
+          "en": "She volunteered to stay late and help organize the event.",
+          "zh": "她主动留下来帮忙筹备活动。"
+        },
+        {
+          "gloss": "v. 主动提供（信息），不待询问便说出",
+          "logic": "意志驱动下主动输出信息，而非被追问才说。",
+          "en": "He volunteered details about the incident that no one had asked for.",
+          "zh": "他主动说出了没人询问的事件细节。"
+        }
+      ],
+      "derivatives": [
+        {"w": "voluntary", "gloss": "自愿的；无偿的"},
+        {"w": "volition", "gloss": "意志力；主动选择"},
+        {"w": "volunteerism", "gloss": "志愿精神；义工制度"}
+      ],
+      "examples": [
+        {
+          "en": "Over two hundred volunteers helped clean up the beach after the storm.",
+          "zh": "暴风雨过后，两百余名志愿者参与了海滩清洁活动。",
+          "source": "造句"
+        },
+        {
+          "en": "volunteer information",
+          "zh": "「主动提供信息」——动词义，不待询问就说出来。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "offer", "ipa": "/ˈɒfər/", "gloss": "提供；主动表示愿意", "note": "动词义近义：volunteer to do sth = offer to do sth，offer 更口语"},
+        {"w": "donate", "ipa": "/doʊˈneɪt/", "gloss": "捐赠（物品或金钱）", "note": "「捐赠」，volunteer 可以捐时间，donate 多捐物品或金钱"},
+        {"w": "enlist", "ipa": "/ɪnˈlɪst/", "gloss": "自愿入伍；加入（组织）", "note": "「（自愿）入伍/参加」，比 volunteer 更强调正式加入某组织，多用于军队"}
+      ],
+      "antonyms": [
+        {"w": "conscript", "note": "强制征兵的人，被迫参与者"},
+        {"w": "compel", "note": "强迫（行为上的反义）"}
+      ],
+      "nuance": "volunteer 强调出于意愿而非强制；offer 更日常（offer help）；enlist 带军事色彩（enlist in the army）；volunteer information 独特地指「主动透露信息」，没有近义词能完全替代。"
+    },
+    {
+      "word": "pioneer",
+      "hl": "eer",
+      "levels": ["托福"],
+      "ipa": "/ˌpaɪəˈnɪər/",
+      "subgroup": "eer",
+      "meaning": "n. 先驱，拓荒者  v. 开创，率先发展",
+      "etymology": "法语 pionnier「步兵、开路人」，源自古法语 peon（步行者），与 pawn（棋子中的兵）同根。「走在最前面开路的人」→ 先驱者。",
+      "roots": [
+        {"part": "pion- (peon)", "meaning": "步兵、走路的人"},
+        {"part": "-eer", "meaning": "从事…的人（法语后缀）"}
+      ],
+      "phonetics": "三音节 pi-o-NEER，重音在末 -neer /nɪər/；pi- 发 /paɪ/，-o- 弱读 /ə/。",
+      "tip": "Pioneer = 比 frontier（边疆）更往前一步的人——先锋 > 边疆人。",
+      "core": "走在所有人前面的那个人——无路可循，脚步本身就是路。",
+      "senses": [
+        {
+          "gloss": "n. 先驱，拓荒者（历史上第一个进入某领域/地区的人）",
+          "logic": "步兵走在最前面开路，引申为率先开辟新领域的人。",
+          "en": "Galileo was a pioneer of modern astronomy whose ideas challenged the Church.",
+          "zh": "伽利略是现代天文学的先驱，他的思想挑战了教会权威。"
+        },
+        {
+          "gloss": "v. 开创，率先发展（某领域或技术）",
+          "logic": "拓荒者的行动：第一个踏入并开辟道路。",
+          "en": "The lab pioneered the use of CRISPR technology in treating genetic disorders.",
+          "zh": "该实验室率先将CRISPR技术用于治疗遗传性疾病。"
+        }
+      ],
+      "derivatives": [
+        {"w": "pioneering", "gloss": "开创性的，先驱性的"},
+        {"w": "pioneership", "gloss": "先驱精神（较罕见）"}
+      ],
+      "examples": [
+        {
+          "en": "Marie Curie pioneered research into radioactivity at a time when few women entered science.",
+          "zh": "玛丽·居里在女性鲜少涉足科学的年代率先开创了放射性研究。",
+          "source": "造句"
+        },
+        {
+          "en": "a pioneer in / pioneering work",
+          "zh": "「某领域先驱 / 开创性工作」——学术写作高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "trailblazer", "ipa": "/ˈtreɪlbleɪzər/", "gloss": "开拓者，先行者", "note": "「开拓者」，字面是「在树上刻记号开路的人」，与 pioneer 最近义，更口语、更现代"},
+        {"w": "innovator", "ipa": "/ˈɪnəveɪtər/", "gloss": "创新者", "note": "「创新者」，比 pioneer 更强调技术或方法的革新，不强调「第一个」"},
+        {"w": "forerunner", "ipa": "/ˈfɔːrʌnər/", "gloss": "先行者；前身，前驱", "note": "「先行者/前身」，比 pioneer 更中性，可指事物（The typewriter was a forerunner of the computer）"}
+      ],
+      "antonyms": [
+        {"w": "follower", "note": "追随者"},
+        {"w": "imitator", "note": "模仿者"}
+      ],
+      "nuance": "pioneer 强调「历史上第一个进入某领域/地区」，trailblazer 更强调「为他人开路」，innovator 强调「创新方法」而不一定是第一人，forerunner 还可指「事物的前身」（无生命体）。"
+    },
+    {
+      "word": "engineer",
+      "hl": "eer",
+      "levels": ["六级"],
+      "ipa": "/ˌendʒɪˈnɪər/",
+      "subgroup": "eer",
+      "meaning": "n. 工程师；设计者  v. 设计，建造；精心策划",
+      "etymology": "中世纪拉丁语 ingeniator，源自 ingenium（天赋、才能）= in-(内) + gen(产生) = 「内在产生的能力」。与 ingenious（聪明的）、genius（天才）同根。",
+      "roots": [
+        {"part": "engin- (ingenium)", "meaning": "天赋、才智"},
+        {"part": "-eer", "meaning": "从事…的人（法语后缀）"}
+      ],
+      "phonetics": "三音节 en-gi-NEER，重音在末音节 -neer /nɪər/；注意 gi 发 /dʒɪ/，不是 /gɪ/。",
+      "core": "用才智把问题变成解决方案——不是发现，是设计和构造。",
+      "senses": [
+        {
+          "gloss": "n. 工程师（运用技术才智解决实际问题的专业人员）",
+          "logic": "ingenium（内在才智）具象化为一种职业身份。",
+          "en": "Civil engineers oversaw the construction of the new highway interchange.",
+          "zh": "土木工程师监督了新高速公路立交桥的建设工作。"
+        },
+        {
+          "gloss": "v. 设计，建造（运用工程技术）",
+          "logic": "才智化为动作：把技术和设计转化为实体。",
+          "en": "The dam was engineered to generate power for an entire region.",
+          "zh": "这座大坝的设计目标是为整个地区供电。"
+        },
+        {
+          "gloss": "v. 精心策划，幕后操控（带负面色彩）",
+          "logic": "「设计」能力延伸到社会事务：像设计机器一样操控人事，常含「暗中为之」的意味。",
+          "en": "Critics accused him of engineering the company's collapse to buy assets cheaply.",
+          "zh": "批评者指控他蓄意策划公司倒闭，以便低价收购资产。"
+        }
+      ],
+      "derivatives": [
+        {"w": "engineering", "gloss": "工程学；工程（行业）"},
+        {"w": "ingenious", "gloss": "聪明的，设计精巧的"},
+        {"w": "engine", "gloss": "发动机；引擎"}
+      ],
+      "examples": [
+        {
+          "en": "The bridge was engineered to withstand Category 5 hurricanes.",
+          "zh": "这座桥按照抵御五级飓风的标准设计建造。",
+          "source": "造句"
+        },
+        {
+          "en": "social engineering / genetic engineering",
+          "zh": "「社会工程（操纵社会行为）/ 基因工程」——两个托福高频词组。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "designer", "ipa": "/dɪˈzaɪnər/", "gloss": "设计师", "note": "「设计师」，比 engineer 更偏美学，engineer 更偏技术和功能"},
+        {"w": "architect", "ipa": "/ˈɑːrkɪtekt/", "gloss": "建筑师；（计划的）设计者", "note": "「建筑师/设计者」，比 engineer 更强调整体结构的谋划；architect of a plan（计划的设计者）"},
+        {"w": "technician", "ipa": "/tekˈnɪʃn/", "gloss": "技术员，技师", "note": "「技术员」，执行层面的技术工人，比 engineer 层级低，侧重操作而非设计"}
+      ],
+      "antonyms": [],
+      "nuance": "engineer 既有职业义（机械工程师）也有动词义（精心设计/操纵），后者常含「刻意为之、幕后操控」的色彩（engineer a coup 策动政变）。architect 作动词时与此类似但更正式（architect a solution）。"
+    },
+    {
+      "word": "here",
+      "hl": "ere",
+      "levels": ["基础"],
+      "ipa": "/hɪər/",
+      "subgroup": "ere",
+      "meaning": "adv. 在这里；到这里  n. 此处，此时",
+      "etymology": "古英语 hēr，日耳曼同根，与德语 hier 同源。here and now（此时此刻）、hereby（特此）、herein（在此）均由此派生。",
+      "roots": [
+        {"part": "here（hēr）", "meaning": "此处"}
+      ],
+      "phonetics": "h + ere /ɪər/，是 ere 组的锚定词。注意 here（此处）和 hear（听见）发音完全相同，同音词。",
+      "tip": "here = 此处，hear = 听见——「你在这里，你听得见」，用场景联系两个同音词。",
+      "core": "说话者所在的这个点——锚定当下时空，是所有方向感的出发点。",
+      "senses": [
+        {
+          "gloss": "adv. 在这里，到这里（空间位置）",
+          "logic": "说话者站立的那个点，最基础的空间锚定。",
+          "en": "Put the boxes here, next to the door.",
+          "zh": "把箱子放在这里，就在门旁边。"
+        },
+        {
+          "gloss": "adv. 此时，在这个时间点（时间位置）",
+          "logic": "「这里」从空间延伸到时间：我们现在所在的这个节点。",
+          "en": "Here is where the two arguments begin to diverge.",
+          "zh": "这里正是两种论点开始分歧的地方。"
+        }
+      ],
+      "derivatives": [
+        {"w": "hereby", "gloss": "特此，以此方式（正式用语）"},
+        {"w": "herein", "gloss": "在此处；在这份文件中（正式）"},
+        {"w": "hereafter", "gloss": "此后；来世"}
+      ],
+      "examples": [
+        {
+          "en": "Here is where the ancient road once passed.",
+          "zh": "这里曾是古道经过之地。",
+          "source": "造句"
+        },
+        {
+          "en": "here and now / neither here nor there",
+          "zh": "「此时此刻 / 无关紧要」——两个高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "in this place", "gloss": "在这个地方（正式替代）", "note": "正式替代表达，无法像 here 一样简洁"},
+        {"w": "at this point", "gloss": "在这里；在此时（论述过渡）", "note": "比喻义「在这里/此时」，多用于文章或演讲中的过渡"}
+      ],
+      "antonyms": [
+        {"w": "there", "note": "在那里"},
+        {"w": "elsewhere", "note": "在别处"}
+      ],
+      "nuance": "here 最简洁，at this point 多用于论述中标记逻辑位置（At this point, we can conclude…），in this place 过于冗长，几乎不用。"
+    },
+    {
+      "word": "mere",
+      "hl": "ere",
+      "levels": ["托福"],
+      "ipa": "/mɪər/",
+      "subgroup": "ere",
+      "meaning": "adj. 仅仅，只不过（强调量少或程度低）",
+      "etymology": "拉丁语 merus「纯粹的、单纯的」，最初义「未稀释的」（mere wine = 纯葡萄酒），引申为「仅此而已」的强调义——「只是这一点，别无其它」。",
+      "roots": [
+        {"part": "mere（merus）", "meaning": "纯粹→仅仅"}
+      ],
+      "phonetics": "m + ere /ɪər/，单音节，发音简洁；merely（仅仅）= mere + -ly，/ˈmɪərli/。",
+      "tip": "mere 只作定语前置形容词（a mere child），不作表语（不能说 the child is mere）。",
+      "core": "削减至只剩一点点——纯粹到空旷，带着轻微的惊讶或贬低。",
+      "senses": [
+        {
+          "gloss": "adj. 仅仅，只不过（强调数量或程度之少，令人惊讶）",
+          "logic": "「纯粹」去掉所有多余→剩下少得可怜，用惊讶语气说出「就这点」。",
+          "en": "A mere glance at the data reveals a serious problem.",
+          "zh": "仅仅瞥一眼数据，就能发现一个严重问题。"
+        }
+      ],
+      "derivatives": [
+        {"w": "merely", "gloss": "仅仅，只不过"},
+        {"w": "merest", "gloss": "最微不足道的（形容词最高级）"}
+      ],
+      "examples": [
+        {
+          "en": "A mere 2% of applicants were offered a place.",
+          "zh": "仅有区区2%的申请者获得录取名额。",
+          "source": "造句"
+        },
+        {
+          "en": "mere formality / mere coincidence",
+          "zh": "「只是走个过场 / 纯属巧合」——强调「没有实质意义」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "only", "ipa": "/ˈoʊnli/", "gloss": "仅仅，只（副词）", "note": "「仅仅」，比 mere 更口语，可做副词（only two people），mere 只作定语形容词"},
+        {"w": "sheer", "ipa": "/ʃɪər/", "gloss": "纯粹的，完全的（程度之极）", "note": "「纯粹的、完全的」，与 mere 近义但更强调程度之极，而非数量之少；sheer luck（纯属运气）"},
+        {"w": "bare", "ipa": "/beər/", "gloss": "勉强够的，最低限度的", "note": "「仅仅够的」，强调勉强达到的最低限度；a bare majority（勉强过半）"}
+      ],
+      "antonyms": [
+        {"w": "considerable", "note": "相当多的，可观的"},
+        {"w": "significant", "note": "重要的，显著的"}
+      ],
+      "nuance": "mere 强调「量少到令人惊讶或失望」（a mere child = 一个小孩子而已），sheer 强调「程度之极」（sheer luck = 完全靠运气），bare 强调「勉强够到最低线」（bare minimum）。三者均含轻微的贬低或惊讶意味。"
+    },
+    {
+      "word": "severe",
+      "hl": "ere",
+      "levels": ["托福"],
+      "ipa": "/sɪˈvɪər/",
+      "subgroup": "ere",
+      "meaning": "adj. 严峻的，严重的；严厉的；简朴的（风格/外貌）",
+      "etymology": "拉丁语 severus「严格的、严肃的」，与 persevere（坚持）同根（per-「彻底」+ severus「严格」= 「彻底贯彻严格态度」= 坚持）。",
+      "roots": [
+        {"part": "sever- (severus)", "meaning": "严格"}
+      ],
+      "phonetics": "重音在后 se-VERE，-vere = /vɪər/；severity（严重性）= /sɪˈverɪti/，注意重音位置不变。",
+      "tip": "severe ↔ persevere：两个词共享词根 sever-（严格），persevere = 「严格地贯彻到底」= 坚持。",
+      "core": "毫不松弛的紧绷——无论是自然的残酷、惩罚的力度还是风格的克制，都是同一种「不留余地」。",
+      "senses": [
+        {
+          "gloss": "adj. 严峻的，严重的（程度极深的负面状况）",
+          "logic": "紧绷到极致，留给人的余地极少，造成重大影响。",
+          "en": "Severe flooding has displaced thousands of families in the valley.",
+          "zh": "严重洪灾已导致山谷中数千户家庭流离失所。"
+        },
+        {
+          "gloss": "adj. 严厉的，严苛的（对人的态度或惩罚）",
+          "logic": "没有宽松，对规则和标准毫不妥协。",
+          "en": "The judge handed down a severe sentence to deter future offenders.",
+          "zh": "法官判处了严厉的刑罚，以震慑潜在的违法者。"
+        },
+        {
+          "gloss": "adj. 简朴的，朴素的（风格/外貌，无装饰）",
+          "logic": "「严格」延伸到美学：去掉所有多余装饰，只剩最克制的形式。",
+          "en": "The building's severe facade concealed a surprisingly warm interior.",
+          "zh": "这栋建筑朴素简洁的外立面，掩盖了其内部出人意料的温暖氛围。"
+        }
+      ],
+      "derivatives": [
+        {"w": "severity", "gloss": "严重性；严厉"},
+        {"w": "severely", "gloss": "严重地；严厉地"},
+        {"w": "persevere", "gloss": "坚持不懈（同词根）"}
+      ],
+      "examples": [
+        {
+          "en": "The region is experiencing severe drought for the third consecutive year.",
+          "zh": "该地区连续第三年遭遇严重干旱。",
+          "source": "造句"
+        },
+        {
+          "en": "severe punishment / severe weather",
+          "zh": "「严厉惩罚 / 恶劣天气」——两个义域的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "serious", "ipa": "/ˈsɪəriəs/", "gloss": "严重的，严肃的", "note": "「严重的」，最通用，比 severe 更口语；a serious problem（严重问题）"},
+        {"w": "harsh", "ipa": "/hɑːrʃ/", "gloss": "苛刻的，严酷的", "note": "「苛刻的/严酷的」，更侧重条件恶劣或态度强硬；harsh conditions / harsh criticism"},
+        {"w": "acute", "ipa": "/əˈkjuːt/", "gloss": "急性的，剧烈的（医学或紧迫语境）", "note": "「急性的/剧烈的」，多用于医学（acute pain）或紧迫问题，强调突发和短暂"}
+      ],
+      "antonyms": [
+        {"w": "mild", "note": "轻微的，温和的"},
+        {"w": "lenient", "note": "宽容的，宽大的"}
+      ],
+      "nuance": "severe 侧重程度极深（severe cold / severe penalty），且常带客观描述色彩；harsh 更强调环境恶劣或态度严苛；acute 专指突发、急迫、强烈（acute shortage / acute pain）；serious 最口语也最通用。"
+    },
+    {
+      "word": "fierce",
+      "hl": "ier",
+      "levels": ["托福"],
+      "ipa": "/fɪərs/",
+      "subgroup": "ere",
+      "meaning": "adj. 凶猛的；激烈的；强烈的",
+      "etymology": "古法语 fiers，源自拉丁语 ferus「野生的、凶猛的」，与 feral（野生的）同根。词义从「野兽般的凶猛」扩展到「激烈的竞争/强烈的情感」。",
+      "roots": [
+        {"part": "fierce（ferus）", "meaning": "野生的→凶猛的"}
+      ],
+      "phonetics": "fi + er /ɪər/ + ce /s/（末尾 ce 发 /s/）；注意 ier 在此读 /ɪər/，归 ere 组。",
+      "core": "野兽出笼时的那股劲——不受控制的原始能量，随时可能扑向你。",
+      "senses": [
+        {
+          "gloss": "adj. 凶猛的（动物或人的攻击性）",
+          "logic": "野兽的本性：爆发性的攻击力，不留余地。",
+          "en": "The guard dog let out a fierce growl when strangers approached the gate.",
+          "zh": "陌生人靠近大门时，看门狗发出凶猛的低吼。"
+        },
+        {
+          "gloss": "adj. 激烈的（竞争/争论）",
+          "logic": "原始能量转移到人类竞争：双方都像野兽一样全力以赴。",
+          "en": "The two candidates engaged in a fierce debate over economic policy.",
+          "zh": "两位候选人就经济政策展开了激烈辩论。"
+        },
+        {
+          "gloss": "adj. 强烈的（情感/忠诚/热情）",
+          "logic": "能量内化到情感层面：强度达到野兽级别，无法抑制。",
+          "en": "She has a fierce loyalty to her hometown that has never wavered.",
+          "zh": "她对家乡有一种始终不变的强烈忠诚。"
+        }
+      ],
+      "derivatives": [
+        {"w": "fiercely", "gloss": "凶猛地；激烈地"},
+        {"w": "fierceness", "gloss": "凶猛；激烈程度"},
+        {"w": "feral", "gloss": "野生的；未驯化的（同词根）"}
+      ],
+      "examples": [
+        {
+          "en": "The company faces fierce competition from overseas rivals.",
+          "zh": "该公司面临来自海外竞争对手的激烈竞争。",
+          "source": "造句"
+        },
+        {
+          "en": "fierce debate / fierce loyalty",
+          "zh": "「激烈争论 / 强烈的忠诚」——从冲突到情感的两种用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "intense", "ipa": "/ɪnˈtens/", "gloss": "强烈的；激烈的（持续高压）", "note": "「强烈的/激烈的」，与 fierce 最近义，但 intense 更侧重持续的高度压力（intense pressure），fierce 更强调爆发性或攻击性"},
+        {"w": "ferocious", "ipa": "/fəˈroʊʃəs/", "gloss": "凶残的，极其凶猛的", "note": "「凶残的」，与 fierce 同根（ferus），比 fierce 更强调残暴，多用于动物或暴力"},
+        {"w": "violent", "ipa": "/ˈvaɪələnt/", "gloss": "猛烈的，暴力的", "note": "「猛烈的/暴力的」，比 fierce 更强调破坏性，含人身伤害意味"}
+      ],
+      "antonyms": [
+        {"w": "gentle", "note": "温和的"},
+        {"w": "mild", "note": "轻微的，温和的"}
+      ],
+      "nuance": "fierce 强调爆发性的猛烈或攻击性（fierce storm / fierce competition），ferocious 比 fierce 更极端，常用于描述动物或暴行，intense 更强调高度持续的压力或情感，不含攻击性。"
+    },
+    {
+      "word": "adhere",
+      "hl": "ere",
+      "levels": ["托福"],
+      "ipa": "/ədˈhɪər/",
+      "subgroup": "ere",
+      "meaning": "v. 坚守（原则/规则）；黏附；支持（观点）",
+      "etymology": "拉丁语 adhaerere = ad-(向) + haerere(黏附、停留)。「向……黏住」→ 字面是黏附，引申为「坚守某一立场不离开」。与 coherent（连贯的）、inherent（固有的）同根——都含「黏/附」的意象。",
+      "roots": [
+        {"part": "ad-", "meaning": "向、靠近"},
+        {"part": "-here (haerere)", "meaning": "黏附、停留"}
+      ],
+      "phonetics": "重音在后 ad-HERE，-here = /hɪər/；派生词 adherent（追随者）= /ədˈhɪərənt/，adherence（遵守）= /ədˈhɪərəns/。",
+      "tip": "adhere to = stick to：物理上「黏到」某物，比喻上「坚守」某规则——一个词两用。",
+      "core": "黏上去就不松手——物理上的附着，比喻上的坚守，都是「不脱离」的状态。",
+      "senses": [
+        {
+          "gloss": "v. 黏附，附着（物理义）",
+          "logic": "最基础义：物体接触后互相黏连，不分离。",
+          "en": "The label refused to adhere to the damp surface of the bottle.",
+          "zh": "标签无法黏附在瓶子潮湿的表面上。"
+        },
+        {
+          "gloss": "v. 坚守，遵守（原则/规定/承诺）",
+          "logic": "「黏附」引申为对原则或规定的紧紧跟随，不偏离、不脱离。",
+          "en": "Scientists must adhere to strict ethical guidelines when conducting experiments.",
+          "zh": "科学家在进行实验时必须严格遵守伦理准则。"
+        },
+        {
+          "gloss": "v. 支持，拥护（观点或信仰）",
+          "logic": "黏附在某种思想上：立场上的紧紧依附，不轻易改变。",
+          "en": "He adhered to the belief that hard work always leads to success.",
+          "zh": "他坚守努力必有回报的信念。"
+        }
+      ],
+      "derivatives": [
+        {"w": "adherence", "gloss": "遵守；坚持"},
+        {"w": "adherent", "gloss": "追随者；拥护者"},
+        {"w": "adhesive", "gloss": "粘合剂；有黏性的"}
+      ],
+      "examples": [
+        {
+          "en": "All participants must adhere to the terms of the agreement.",
+          "zh": "所有参与者必须遵守协议条款。",
+          "source": "造句"
+        },
+        {
+          "en": "adhere to a diet / adhere to a principle",
+          "zh": "「坚持饮食计划 / 坚守原则」——两种高频语义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "comply", "ipa": "/kəmˈplaɪ/", "gloss": "遵从，顺从（规定要求）", "note": "「遵从（规定/要求）」，比 adhere to 更口语，强调被动服从；comply with regulations（遵守规定）"},
+        {"w": "abide by", "ipa": "/əˈbaɪd/", "gloss": "遵守（规则/决定）", "note": "「遵守（规则/决定）」，与 adhere to 近义，abide by 更口语，多用于决定和规则"},
+        {"w": "stick", "ipa": "/stɪk/", "gloss": "坚持；黏住（口语）", "note": "口语义「黏住/坚持」；stick to a plan = adhere to a plan，stick 更非正式"}
+      ],
+      "antonyms": [
+        {"w": "deviate", "note": "偏离，背离"},
+        {"w": "violate", "note": "违反，违背"}
+      ],
+      "nuance": "adhere to 最正式，多见于书面语（学术、法律、政策）；comply with 强调服从外部要求；abide by 多用于承诺和仲裁决定（abide by the referee's decision）；stick to 最口语，无正式限制。"
+    },
+    {
+      "word": "atmosphere",
+      "hl": "ere",
+      "levels": ["托福"],
+      "ipa": "/ˈætməsfɪər/",
+      "subgroup": "ere",
+      "meaning": "n. 大气层；气氛，氛围；（某地的）空气质量",
+      "etymology": "希腊语 atmos（蒸气）+ sphaira（球体）= 「围绕地球的蒸气球」。atmosphere 是科学术语进入日常词汇的典型：从「大气层」引申为「某个空间的氛围」。",
+      "roots": [
+        {"part": "atmo- (atmos)", "meaning": "蒸气、空气"},
+        {"part": "-sphere (sphaira)", "meaning": "球体"}
+      ],
+      "phonetics": "四音节 AT-mos-phere，重音在首音节；-phere = /fɪər/，ph 发 /f/，phere 归 ere 组。",
+      "core": "包裹在某个存在外面的那层气——科学上是大气，感官上是氛围，都是「无形但真实存在的环绕层」。",
+      "senses": [
+        {
+          "gloss": "n. 大气层（地球外围的气体层）",
+          "logic": "最原始的科学义：围绕地球的蒸气球壳。",
+          "en": "Carbon dioxide in the atmosphere traps heat and raises global temperatures.",
+          "zh": "大气层中的二氧化碳截留热量，导致全球气温上升。"
+        },
+        {
+          "gloss": "n. 气氛，氛围（某地或某场合的整体感觉）",
+          "logic": "「包裹层」从物理延伸到感官：人能感知到的那种笼罩性氛围。",
+          "en": "The old bookshop had a warm, dusty atmosphere that made you want to linger.",
+          "zh": "这家老书店有一种温暖而带着尘香的氛围，让人流连忘返。"
+        },
+        {
+          "gloss": "n. 空气质量（某地的空气状况）",
+          "logic": "大气层具体化为某一地点的空气成分和质量。",
+          "en": "The mountain resort is famous for its clean, crisp atmosphere.",
+          "zh": "这座山地度假胜地以清新的空气质量而闻名。"
+        }
+      ],
+      "derivatives": [
+        {"w": "atmospheric", "gloss": "大气的；有氛围的"},
+        {"w": "hemisphere", "gloss": "半球（同词根 sphere）"},
+        {"w": "biosphere", "gloss": "生物圈（同词根 sphere）"}
+      ],
+      "examples": [
+        {
+          "en": "Greenhouse gases are trapping heat in the Earth's atmosphere.",
+          "zh": "温室气体正在将热量困锁于地球大气层中。",
+          "source": "造句"
+        },
+        {
+          "en": "a tense atmosphere / a festive atmosphere",
+          "zh": "「紧张的气氛 / 节日氛围」——氛围义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "ambiance", "ipa": "/ˈæmbiəns/", "gloss": "（地点的）感官氛围", "note": "「（地点的）氛围」，比 atmosphere 更侧重感官印象，多用于餐厅、艺术环境等；a restaurant with a cozy ambiance"},
+        {"w": "climate", "ipa": "/ˈklaɪmɪt/", "gloss": "气候；（社会/政治）环境", "note": "「气候；（组织内的）氛围」，比 atmosphere 更宏观，可指社会或政治环境；the political climate（政治气候）"},
+        {"w": "aura", "ipa": "/ˈɔːrə/", "gloss": "气场；光环；无形的气息", "note": "「光环、气场」，比 atmosphere 更玄妙，指人或物散发出的难以言说的气息"}
+      ],
+      "antonyms": [
+        {"w": "vacuum", "note": "真空（物理义）"}
+      ],
+      "nuance": "atmosphere 兼科学义（大气层）和感官义（氛围），是两用词；ambiance 专指地点的感官氛围（常含美学享受）；climate 偏向持续的、宏观的社会或政治环境；aura 更神秘，指无形的气场。"
+    },
+    {
+      "word": "interfere",
+      "hl": "ere",
+      "levels": ["托福"],
+      "ipa": "/ˌɪntərˈfɪər/",
+      "subgroup": "ere",
+      "meaning": "v. 干涉，干预；妨碍，影响（with）",
+      "etymology": "古法语 s'entreferir = entre-(相互) + ferir(打击)，源自拉丁语 ferire（打）。「互相打击」→ 碰撞→ 干涉/妨碍。interference（干涉）、interfering（爱管闲事的）是核心派生词。",
+      "roots": [
+        {"part": "inter-", "meaning": "相互，之间"},
+        {"part": "-fere (ferire)", "meaning": "打击"}
+      ],
+      "phonetics": "四音节 in-ter-FERE，重音在末音节 -fere /fɪər/；interfere with（妨碍）、interfere in（干涉）是两个常见介词搭配，含义略有不同。",
+      "tip": "interfere in（干涉事务/关系）vs interfere with（妨碍进展/操作）——in 管人事，with 管物事。",
+      "core": "两股力量碰撞——从物理上的「互相打击」到人际上的「插手干预」，都是「不该碰的东西撞在了一起」。",
+      "senses": [
+        {
+          "gloss": "v. 干涉，干预他人事务（interfere in）",
+          "logic": "插入两者之间互相碰撞：在别人的事情中间强行加入自己。",
+          "en": "Western nations were accused of interfering in the country's internal affairs.",
+          "zh": "西方国家被指控干涉该国内政。"
+        },
+        {
+          "gloss": "v. 妨碍，影响（正常进行的事）（interfere with）",
+          "logic": "外力冲击正在进行的事物，打断其正常运作。",
+          "en": "Excessive screen time can interfere with children's sleep patterns.",
+          "zh": "过度使用电子屏幕可能会干扰儿童的睡眠规律。"
+        }
+      ],
+      "derivatives": [
+        {"w": "interference", "gloss": "干涉；干扰（信号/事务）"},
+        {"w": "interfering", "gloss": "爱管闲事的"},
+        {"w": "noninterference", "gloss": "不干涉（政策）"}
+      ],
+      "examples": [
+        {
+          "en": "The noise from the street was interfering with her concentration.",
+          "zh": "街上的噪音干扰了她的专注力。",
+          "source": "造句"
+        },
+        {
+          "en": "Don't interfere in other people's affairs.",
+          "zh": "不要干涉别人的事情。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "intervene", "ipa": "/ˌɪntərˈviːn/", "gloss": "介入（以解决问题，较中性）", "note": "「介入（以解决问题）」，比 interfere 更中性，强调出于好意或职责；intervene in a dispute（介入纠纷）"},
+        {"w": "meddle", "ipa": "/ˈmedl/", "gloss": "多管闲事（贬义口语）", "note": "「多管闲事」，比 interfere 更口语，含贬义；stop meddling in my business！"},
+        {"w": "disrupt", "ipa": "/dɪsˈrʌpt/", "gloss": "扰乱，中断（正常运作）", "note": "「扰乱、中断」，强调打断正常运作，比 interfere 更强调破坏性后果"}
+      ],
+      "antonyms": [
+        {"w": "abstain", "note": "克制，不干预"},
+        {"w": "stay out of", "note": "袖手旁观，不插手"}
+      ],
+      "nuance": "interfere 通常含负面色彩（干涉他人或妨碍进程），intervene 可以是正面的（介入以帮助），meddle 是口语中最贬义的「多管闲事」，disrupt 更强调造成的混乱结果而非干涉这一行为。"
+    }
+  ]
+}

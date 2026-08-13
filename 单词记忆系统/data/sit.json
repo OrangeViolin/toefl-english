@@ -1,0 +1,1303 @@
+{
+  "id": "sit",
+  "combo": "i·y·e",
+  "title": "/ɪ/ 短音家族",
+  "sound": "/ɪ/",
+  "subtitle": "坐下来听——短促的 /ɪ/ 比 /iː/ 少了一半时间，多了三倍陷阱",
+  "intro": "/ɪ/ 是英语出现频率最高的元音之一，短促、松弛，嘴角不用拉开，舌头也不必顶到最高——和 /iː/ 最本质的区别在于「时长」与「肌肉张力」。sit≠seat，ship≠sheep，live（v.）≠leave，一字之差意思天翻地覆。/ɪ/ 的拼写陷阱来自三条路：最常见的 i（sit/big/fish），来自希腊词的 y（gym/myth），以及非重读音节里弱化成 /ɪ/ 的 e（English/decide）。此外还有零星特例——build 里的 ui、busy 里的 u——靠锚定词记牢即可。",
+  "subgroups": [
+    {
+      "key": "i",
+      "tag": "i",
+      "label": "✅ i = /ɪ/",
+      "desc": "最常见：sit/big/fish。i 在闭音节（后面紧跟辅音）几乎总读 /ɪ/，是最稳定的规律之一。"
+    },
+    {
+      "key": "y",
+      "tag": "y",
+      "label": "y = /ɪ/",
+      "desc": "多为希腊来源词：gym/myth/system。y 在词中（非词尾）读 /ɪ/；词尾 -y 多读 /iː/（happy）。"
+    },
+    {
+      "key": "e",
+      "tag": "e",
+      "label": "e = /ɪ/（弱读）",
+      "desc": "非重读的 e：English/decide/pretty。弱读音节的 e 往往缩成 /ɪ/，稍不留意便读成 /e/。"
+    },
+    {
+      "key": "other",
+      "tag": "ui·u 特例",
+      "label": "其它 = /ɪ/",
+      "desc": "ui（build/guilt）、u（busy/business）等少数特例，靠锚定词死记。"
+    }
+  ],
+  "words": [
+    {
+      "word": "sit",
+      "hl": "i",
+      "levels": ["非托福"],
+      "ipa": "/sɪt/",
+      "subgroup": "i",
+      "meaning": "v. 坐；（处于某位置）位于",
+      "etymology": "古英语 sittan「坐」，日耳曼同根，与德语 sitzen 同源。这也是本页的锚定词——/ɪ/ 的「起点词」。",
+      "roots": [
+        {"part": "sit（sittan）", "meaning": "坐"}
+      ],
+      "phonetics": "s + i /ɪ/ + t，三个音都极短促。对比 seat /siːt/：/ɪ/ 短松，/iː/ 长紧，一个字母差出截然不同的词。",
+      "tip": "「sit down vs seat sb」：sit 是自己坐，seat 是安置别人入座。",
+      "core": "身体向下落稳、安定在某处的感觉——重心下移，暂时驻留。",
+      "senses": [
+        {
+          "gloss": "v. 坐下；保持坐姿",
+          "logic": "核心动作：身体重心下移落到支撑面上，是最直接的本义。",
+          "en": "She sat by the window and watched the rain fall.",
+          "zh": "她坐在窗边，看着雨水落下。"
+        },
+        {
+          "gloss": "v. （建筑、物体）位于、坐落于",
+          "logic": "物体「稳稳落在」某地，像人坐下一样安放——由人坐引申到物的静置位置。",
+          "en": "The old castle sits on a hill overlooking the valley.",
+          "zh": "那座古堡坐落在俯瞰山谷的山丘上。"
+        },
+        {
+          "gloss": "v. （委员会、议会等）开会、正式就坐议事",
+          "logic": "正式成员「落座」开始运作，引申为机构的正式集会状态。",
+          "en": "The committee sits every Tuesday to review new cases.",
+          "zh": "委员会每周二开会审查新案件。"
+        }
+      ],
+      "derivatives": [
+        {"w": "sitting", "gloss": "n. 一次就坐的时段；adj. 现任的"},
+        {"w": "sitter", "gloss": "n. 临时看护者（如 babysitter）；被画的模特"},
+        {"w": "seat", "gloss": "n. 座位；v. 安置入座（与 sit 同根，元音不同）"}
+      ],
+      "examples": [
+        {
+          "en": "Please sit down and wait for your name to be called.",
+          "zh": "请坐下等待叫到你的名字。",
+          "source": "造句"
+        },
+        {
+          "en": "sit on the fence",
+          "zh": "「骑墙观望、不表态」——高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "settle", "ipa": "/ˈsetl/", "gloss": "安顿坐好", "note": "「安顿下来坐好」，比 sit 含更强的定居感；settle into a chair（舒适地坐进椅子）"},
+        {"w": "perch", "ipa": "/pɜːrtʃ/", "gloss": "栖息、暂坐边沿", "note": "「栖息、勉强坐在边上」，带点不稳定或临时感；perch on a stool（坐在凳子边上）"},
+        {"w": "be located", "gloss": "位于（书面）", "note": "「位于」义的书面替代；the building sits on a hill（大楼位于山丘上）"}
+      ],
+      "antonyms": [
+        {"w": "stand", "note": "站立"},
+        {"w": "rise", "note": "起身"}
+      ],
+      "nuance": "sit 是中性动词，描述坐的动作或状态；perch 强调坐的姿势不稳或暂时；settle 含有找好位置、舒适安顿的含义，比 sit 多一层「安定」的意味。"
+    },
+    {
+      "word": "big",
+      "hl": "i",
+      "levels": ["托福"],
+      "ipa": "/bɪɡ/",
+      "subgroup": "i",
+      "meaning": "adj. 大的；重要的；（非正式）成功的",
+      "etymology": "中古英语 big，来源不确定，可能源自北欧语。14世纪起取代古英语 micel（大），成为日常口语的首选词。",
+      "roots": [
+        {"part": "big", "meaning": "大"}
+      ],
+      "phonetics": "b + i /ɪ/ + g，闭音节，/ɪ/ 短促。注意词尾 /ɡ/ 轻收，不要读成开放韵。",
+      "core": "超出普通尺度、引人注目的感觉——体积或重要性上的「溢出」。",
+      "senses": [
+        {
+          "gloss": "adj. 体积大的、尺寸大的",
+          "logic": "核心义：占据空间多，超出普通尺度。",
+          "en": "They moved into a big house with a garden.",
+          "zh": "他们搬进了一栋带花园的大房子。"
+        },
+        {
+          "gloss": "adj. 重要的、重大的",
+          "logic": "体积「大」→ 分量「重」，抽象化为影响力大、不可忽视的事件或决定。",
+          "en": "Landing this contract is a big deal for our company.",
+          "zh": "拿下这份合同对我们公司来说是件大事。"
+        },
+        {
+          "gloss": "adj. （口）成功的、走红的",
+          "logic": "「大」引申为在某领域声名大噪——从物理大小到社会影响力的进一步延伸。",
+          "en": "The band made it big with their third album.",
+          "zh": "这支乐队凭借第三张专辑走红了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "bigwig", "gloss": "n. 大人物、重要人士（口语）"},
+        {"w": "bigger", "gloss": "adj. 更大的（比较级）"},
+        {"w": "biggest", "gloss": "adj. 最大的（最高级）"}
+      ],
+      "examples": [
+        {
+          "en": "This is a big opportunity that we cannot afford to miss.",
+          "zh": "这是一个我们不能错过的重大机会。",
+          "source": "造句"
+        },
+        {
+          "en": "the big picture",
+          "zh": "「全局视角」——高频习语，托福阅读和听力常见。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "large", "ipa": "/lɑːrdʒ/", "gloss": "大的（正式）", "note": "「大的」，比 big 更正式，常用于尺寸、数量；a large number of（大量的）"},
+        {"w": "significant", "ipa": "/sɪɡˈnɪfɪkənt/", "gloss": "重要的、显著的", "note": "「重要的」义，比 big 正式，托福高频；a significant finding（重要发现）"},
+        {"w": "major", "ipa": "/ˈmeɪdʒər/", "gloss": "主要的、重大的", "note": "「主要的、重大的」，比 big 更强调级别高；a major issue（重大问题）"}
+      ],
+      "antonyms": [
+        {"w": "small", "note": "小的"},
+        {"w": "minor", "note": "次要的"}
+      ],
+      "nuance": "big 最口语，large 更正式且侧重可量化的尺寸或数量，significant 强调「有意义、不可忽视」，major 强调「在一个层级中处于高位」。托福写作中 big 显得口语化，建议换用 significant/major/substantial。"
+    },
+    {
+      "word": "gift",
+      "hl": "i",
+      "levels": ["托福"],
+      "ipa": "/ɡɪft/",
+      "subgroup": "i",
+      "meaning": "n. 礼物；天赋  v. 赠予",
+      "etymology": "古英语 gift「给予之物」，与动词 give 同根，日耳曼同源。德语 Gift 却意为「毒药」——同形异义，是著名的「假朋友」（false friend）。",
+      "roots": [
+        {"part": "gift（giefan）", "meaning": "给予之物"}
+      ],
+      "phonetics": "g + i /ɪ/ + ft，词尾 /ft/ 连读，注意不要省略 /f/。",
+      "tip": "德语 Gift = 毒药，英语 gift = 礼物——典型的日耳曼「假朋友」，考试和翻译都要小心。",
+      "core": "从某处「给出」并传递到另一人手中的东西——可以是实物，也可以是天生携带的能力。",
+      "senses": [
+        {
+          "gloss": "n. 礼物、赠品",
+          "logic": "本义：被给出的物品，从给予者流向接收者。",
+          "en": "He wrapped the gift carefully before placing it under the tree.",
+          "zh": "他仔细包好礼物，放在树下。"
+        },
+        {
+          "gloss": "n. 天赋、才能",
+          "logic": "从「外部给予」引申为「上天赐予」——与生俱来、无需努力习得的能力被视为一种馈赠。",
+          "en": "She has a remarkable gift for understanding other people's emotions.",
+          "zh": "她有着非凡的理解他人情绪的天赋。"
+        },
+        {
+          "gloss": "v. 赠予、捐赠（正式）",
+          "logic": "名词动词化，将某物作为礼物正式转让，多用于遗产、捐赠等正式语境。",
+          "en": "He gifted his entire collection to the national museum.",
+          "zh": "他将全部收藏捐赠给了国家博物馆。"
+        }
+      ],
+      "derivatives": [
+        {"w": "gifted", "gloss": "adj. 有天赋的、才华横溢的"},
+        {"w": "regift", "gloss": "v. 将收到的礼物转送他人（口语）"},
+        {"w": "gift-wrap", "gloss": "v./n. 礼品包装"}
+      ],
+      "examples": [
+        {
+          "en": "She has a natural gift for languages and picked up Spanish in months.",
+          "zh": "她有学语言的天赋，几个月内就掌握了西班牙语。",
+          "source": "造句"
+        },
+        {
+          "en": "a gift for / a gift of",
+          "zh": "「在……方面有天赋 / 赠送……的礼物」——两种常见搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "talent", "ipa": "/ˈtælənt/", "gloss": "天赋（可培养的）", "note": "「天赋」义近义，强调可发展的自然能力；a talent for music（音乐天赋）"},
+        {"w": "present", "ipa": "/ˈpreznt/", "gloss": "礼物（口语）", "note": "「礼物」义近义，偏口语，特指场合性赠品；a birthday present（生日礼物）"},
+        {"w": "endowment", "ipa": "/ɪnˈdaʊmənt/", "gloss": "天赋；捐赠（书面）", "note": "「天赋/捐赠」，正式书面词，常用于学术语境"}
+      ],
+      "antonyms": [
+        {"w": "curse", "note": "诅咒（与天赋相对）"}
+      ],
+      "nuance": "gift 和 talent 都指天赋，但 gift 更强调「与生俱来、天赐」，talent 则更强调可以通过练习提升；present 是口语化的「礼物」（场合赠品），gift 更正式也可指抽象天赋。"
+    },
+    {
+      "word": "wish",
+      "hl": "i",
+      "levels": ["托福"],
+      "ipa": "/wɪʃ/",
+      "subgroup": "i",
+      "meaning": "v. 希望；但愿（与事实相反）  n. 愿望；祝愿",
+      "etymology": "古英语 wyscan「希望」，日耳曼同根，与德语 wünschen 同源。wish 接虚拟语气是其语法特色——「希望现实不是这样」。",
+      "roots": [
+        {"part": "wish（wyscan）", "meaning": "希望、渴望"}
+      ],
+      "phonetics": "w + i /ɪ/ + sh /ʃ/，闭音节短音。注意 /wɪ-/ 起音要圆唇轻弹，不读成 /wiː-/。",
+      "tip": "wish 接虚拟语气：wish I were（与现在相反）、wish I had done（与过去相反）——区别于 hope（接真实可能的未来）。",
+      "core": "心里渴望某个与现实不符的状态——带着隐隐遗憾的向往感。",
+      "senses": [
+        {
+          "gloss": "v. 希望（与事实相反）、但愿",
+          "logic": "核心义：内心渴望，但所渴望的与现实相悖，因此须接虚拟语气，隐含遗憾或不满。",
+          "en": "I wish I could speak French as fluently as she does.",
+          "zh": "我真希望我能像她一样流利地说法语（但现实做不到）。"
+        },
+        {
+          "gloss": "v. 祝愿、祝福（某人某事）",
+          "logic": "将美好愿望「送出去」给他人——这里遗憾感消失，变为主动给予祝福的行为。",
+          "en": "We all wish you the very best in your new role.",
+          "zh": "我们都祝你在新岗位一切顺利。"
+        },
+        {
+          "gloss": "n. 愿望、心愿",
+          "logic": "渴望的感觉名词化——心中升起的那个期望，可以是对自己的，也可以是他人许下的。",
+          "en": "Her greatest wish was to see her family reunited.",
+          "zh": "她最大的心愿是看到家人团聚。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wishful", "gloss": "adj. 一厢情愿的（wishful thinking = 幻想）"},
+        {"w": "wishlist", "gloss": "n. 愿望清单"},
+        {"w": "well-wisher", "gloss": "n. 祝福者、善意的支持者"}
+      ],
+      "examples": [
+        {
+          "en": "I wish I had studied harder when I was young.",
+          "zh": "我希望年轻时我更努力地学习了（但事实并非如此）。",
+          "source": "造句"
+        },
+        {
+          "en": "wish sb well / best wishes",
+          "zh": "「祝某人一切顺利 / 致以最诚挚的祝愿」——正式结尾高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "hope", "ipa": "/hoʊp/", "gloss": "希望（现实可能发生）", "note": "「希望」，接真实可能发生的事（hope to succeed），与 wish 相对——wish 多接不可能或反事实"},
+        {"w": "desire", "ipa": "/dɪˈzaɪər/", "gloss": "渴望（强烈、正式）", "note": "「渴望」，比 wish 更强烈、更正式；desire for change（渴望改变）"},
+        {"w": "long for", "gloss": "向往、深切渴望", "note": "「渴望、向往」，比 wish 更带情感色彩，多用于难以实现的渴望"}
+      ],
+      "antonyms": [
+        {"w": "dread", "note": "恐惧、不希望发生"}
+      ],
+      "nuance": "wish 的核心是「但愿，可惜现实不是这样」（虚拟语气），hope 是「希望，也许能实现」（陈述语气）；desire 最正式且强度最高；long for 带有深切向往、带点忧郁感。"
+    },
+    {
+      "word": "visit",
+      "hl": "i",
+      "levels": ["托福"],
+      "ipa": "/ˈvɪzɪt/",
+      "subgroup": "i",
+      "meaning": "v. 参观；拜访；（灾难等）降临  n. 访问；参观",
+      "etymology": "拉丁语 visitare = visere（去看）的频繁式，与 vision（视觉）、visible（可见的）同根。核心义「去看」——拜访和参观都是「专程去看」。",
+      "roots": [
+        {"part": "vis- (videre)", "meaning": "看"},
+        {"part": "-it", "meaning": "动词后缀"}
+      ],
+      "phonetics": "VIS- /vɪz/ + -it /ɪt/，两个音节都含 /ɪ/，是双重短音的好练习词。重音在首音节。",
+      "core": "专程前往某处「去看」——带着目的性的到达与停留。",
+      "senses": [
+        {
+          "gloss": "v. 拜访（人）、探望",
+          "logic": "核心义的人际指向：专程去看望某人，强调人与人之间的往来。",
+          "en": "She visits her grandmother every Sunday without fail.",
+          "zh": "她每个星期天都会去探望祖母，从不间断。"
+        },
+        {
+          "gloss": "v. 参观（地点）、游览",
+          "logic": "同样是「专程去看」，对象从人变为地方——博物馆、城市、景点等。",
+          "en": "Over two million tourists visit the museum each year.",
+          "zh": "每年有超过两百万游客参观该博物馆。"
+        },
+        {
+          "gloss": "v. （灾难、惩罚等）降临于（正式/文学）",
+          "logic": "「降临」义是古老用法：灾难「到访」某人，是「去看」的隐喻延伸，带有宗教或文学色彩。",
+          "en": "The plague visited the city with devastating force.",
+          "zh": "瘟疫以毁灭性的力量降临这座城市。"
+        },
+        {
+          "gloss": "n. 访问、参观（一次）",
+          "logic": "动作名词化：一次「前往并停留」的经历。",
+          "en": "His visit to the factory revealed several safety concerns.",
+          "zh": "他对工厂的一次视察发现了若干安全隐患。"
+        }
+      ],
+      "derivatives": [
+        {"w": "visitor", "gloss": "n. 访客、游客"},
+        {"w": "visitation", "gloss": "n. 官方视察；（灾难）降临（正式/宗教）"},
+        {"w": "revisit", "gloss": "v. 重访；重新审视（一个问题）"}
+      ],
+      "examples": [
+        {
+          "en": "The researchers visited remote villages to collect data.",
+          "zh": "研究人员走访偏远村庄收集数据。",
+          "source": "造句"
+        },
+        {
+          "en": "pay sb a visit",
+          "zh": "「登门拜访某人」——正式口语高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "tour", "ipa": "/tʊər/", "gloss": "游览（多地点路线）", "note": "「游览」，比 visit 更强调移动路线，多指游览多个地点"},
+        {"w": "call on", "gloss": "登门拜访（口语）", "note": "「拜访（人）」，口语，比 visit 更随意；I'll call on you tomorrow（明天去拜访你）"},
+        {"w": "inspect", "ipa": "/ɪnˈspekt/", "gloss": "视察、检查", "note": "「视察、检查」，visit 的正式替代，含带目的性的核查"}
+      ],
+      "antonyms": [
+        {"w": "leave", "note": "离开"},
+        {"w": "avoid", "note": "回避、不去"}
+      ],
+      "nuance": "visit 是最通用的「参观/拜访」，tour 强调行程路线（tour a city），call on 最口语（拜访人），inspect 带有检查意味（视察）。「visit a website」是网络时代的延伸用法，等同于「访问网站」。"
+    },
+    {
+      "word": "minute",
+      "hl": "i",
+      "levels": ["托福"],
+      "ipa": "/ˈmɪnɪt/",
+      "subgroup": "i",
+      "meaning": "n. 分钟；一会儿；（复数）会议记录  adj. /maɪˈnjuːt/ 极微小的；详细的",
+      "etymology": "拉丁语 minuta（pars）「极小的（部分）」，与 mini-（迷你）、minus（减）、minimum（最小）同根。时间义是「小时的小部分」。",
+      "roots": [
+        {"part": "minut- (minutus)", "meaning": "极小的"}
+      ],
+      "phonetics": "名词 MIN- /mɪn/ + -ute /ɪt/；形容词「微小的」重音后移：mai-NUTE /maɪˈnjuːt/。同一拼写两种读法——语境决定一切。",
+      "tip": "minutes（会议记录）是固定搭配：take the minutes（做会议记录）、read the minutes（宣读会议纪要）。",
+      "core": "「极小的一份」——时间上是小时的六十分之一，感知上是短暂，物理上是肉眼难辨的细微。",
+      "senses": [
+        {
+          "gloss": "n. 分钟（时间单位）",
+          "logic": "「小时的极小一份」→ 被分割出来的六十分之一时间段，是最直接的本义。",
+          "en": "The meeting lasted exactly forty-five minutes.",
+          "zh": "会议恰好持续了四十五分钟。"
+        },
+        {
+          "gloss": "n. 一会儿、片刻（口语）",
+          "logic": "「极短的时间」在日常口语中进一步模糊化，变成「稍等一下」的泛指，不强调精确时长。",
+          "en": "Can you wait a minute? I'm almost ready.",
+          "zh": "能等一下吗？我马上好。"
+        },
+        {
+          "gloss": "n.（复数）会议记录",
+          "logic": "历史词义：中世纪书记员将会议要点记录在「极小字体的草稿」（minuta scriptura）上，由此固定为「会议纪要」——与「极小」的核心义相关，但已成专门用法。",
+          "en": "Could you take the minutes at today's meeting?",
+          "zh": "今天的会议能请你做记录吗？"
+        },
+        {
+          "gloss": "adj. /maɪˈnjuːt/ 极微小的；（描述）极详尽的",
+          "logic": "同一词根的形容词义，读音完全不同：「小到难以察觉」——既指物理尺寸极细微，也指分析极为详尽（关注最微小细节）。",
+          "en": "The forensic team examined the scene in minute detail.",
+          "zh": "法证小组对现场进行了极为细致的检查。"
+        }
+      ],
+      "derivatives": [
+        {"w": "minutiae", "gloss": "n. 细枝末节、琐碎细节（复数，正式）"},
+        {"w": "minutely", "gloss": "adv. 极详细地、细致地"},
+        {"w": "minute hand", "gloss": "n. 分针（钟表）"}
+      ],
+      "examples": [
+        {
+          "en": "I'll be with you in just a minute.",
+          "zh": "我马上就过来，就一会儿。",
+          "source": "造句"
+        },
+        {
+          "en": "the minutes of the meeting",
+          "zh": "「会议记录」——正式书面高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "moment", "ipa": "/ˈmoʊmənt/", "gloss": "片刻、瞬间（稍诗意）", "note": "「片刻」，与 a minute 同义但更诗意；just a moment（稍等）"},
+        {"w": "instant", "ipa": "/ˈɪnstənt/", "gloss": "瞬间（几乎无延迟）", "note": "「瞬间」，比 minute 更短，强调几乎无延迟；in an instant（瞬间）"},
+        {"w": "tiny", "ipa": "/ˈtaɪni/", "gloss": "极小的（口语）", "note": "「微小的」义近义，形容词 minute（/maɪˈnjuːt/）的口语替代"}
+      ],
+      "antonyms": [
+        {"w": "hour", "note": "小时"},
+        {"w": "enormous", "note": "巨大的（对应形容词义）"}
+      ],
+      "nuance": "名词 minute 和 moment 都指短暂时间，minute 更口语直接，moment 更文学；形容词 minute（/maɪˈnjuːt/）与 tiny/small 同义但正式得多，常出现在学术文本（minute differences 极细微差异）。"
+    },
+    {
+      "word": "image",
+      "hl": "i",
+      "levels": ["托福"],
+      "ipa": "/ˈɪmɪdʒ/",
+      "subgroup": "i",
+      "meaning": "n. 图像；形象；印象；意象  v. 成像；想象",
+      "etymology": "拉丁语 imago「肖像、复制品」，与 imitate（模仿）、imagination（想象）同根。核心义「复制出来的样子」——从肖像扩展到公众形象和脑海意象。",
+      "roots": [
+        {"part": "imag- (imago)", "meaning": "肖像、复制"}
+      ],
+      "phonetics": "IM- /ɪm/ + -age /ɪdʒ/，两个音节均含 /ɪ/，重音首音节。词尾 -age 读 /ɪdʒ/ 而非 /eɪdʒ/（注意区分 image vs. age）。",
+      "core": "某个真实事物被「复制」出来的样子——可以是镜子里的倒影，可以是他人眼中的印象，也可以是脑海中浮现的画面。",
+      "senses": [
+        {
+          "gloss": "n. 图像、画面（视觉上可见的）",
+          "logic": "本义：被复制或捕捉下来的视觉呈现，如照片、图画、屏幕上的画面。",
+          "en": "The satellite captured a detailed image of the storm system.",
+          "zh": "卫星捕捉到了该风暴系统的详细图像。"
+        },
+        {
+          "gloss": "n. 形象、公众印象",
+          "logic": "「他人眼中你的复制样子」——别人通过观察构建出的对你的认知，延伸为社会形象或品牌形象。",
+          "en": "The scandal seriously damaged the politician's public image.",
+          "zh": "这桩丑闻严重损害了该政客的公众形象。"
+        },
+        {
+          "gloss": "n. 意象（文学）",
+          "logic": "文学中用具体事物唤起的脑海画面——诗歌和散文中的「心理复制品」，是最抽象的延伸。",
+          "en": "The poem is full of vivid images of the sea.",
+          "zh": "这首诗充满了关于大海的生动意象。"
+        },
+        {
+          "gloss": "v. 成像；在脑中想象（技术/正式）",
+          "logic": "名词动词化，描述「制造图像」的过程，多用于医学影像或技术语境。",
+          "en": "The MRI machine images the brain with great precision.",
+          "zh": "核磁共振仪能以极高精度为大脑成像。"
+        }
+      ],
+      "derivatives": [
+        {"w": "imagine", "gloss": "v. 想象、设想"},
+        {"w": "imagination", "gloss": "n. 想象力、想象"},
+        {"w": "imagery", "gloss": "n. 意象（集合）；图像资料"}
+      ],
+      "examples": [
+        {
+          "en": "The company spent millions to improve its public image after the scandal.",
+          "zh": "丑闻后公司花费数百万来改善公众形象。",
+          "source": "造句"
+        },
+        {
+          "en": "mirror image / brand image",
+          "zh": "「镜像 / 品牌形象」——两个义域的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "picture", "ipa": "/ˈpɪktʃər/", "gloss": "图片（具体可见）", "note": "「图片」，比 image 更具体，指实际可见的图；a picture on the wall"},
+        {"w": "impression", "ipa": "/ɪmˈpreʃn/", "gloss": "印象（他人的主观感受）", "note": "「印象」义近义，强调他人对你的主观感受；make a good impression"},
+        {"w": "portrayal", "ipa": "/pɔːrˈtreɪəl/", "gloss": "描绘、刻画（方式）", "note": "「描绘/刻画」，比 image 更强调人为塑造的方式；the media's portrayal of women"}
+      ],
+      "antonyms": [
+        {"w": "reality", "note": "现实（与形象/印象相对）"}
+      ],
+      "nuance": "image 可指物理图像（a digital image）或抽象形象（public image）；picture 更偏具体可见的图；impression 专指「他人眼中的印象」；portrayal 强调描绘的方式和手段，多用于媒体和文学批评语境。"
+    },
+    {
+      "word": "limit",
+      "hl": "i",
+      "levels": ["非托福"],
+      "ipa": "/ˈlɪmɪt/",
+      "subgroup": "i",
+      "meaning": "n. 限制；极限；界限  v. 限制；约束",
+      "etymology": "拉丁语 limes（属格 limitis）「边界线、道路」，与 eliminate（消除，越过边界）同根。核心义「不可逾越的边界线」。",
+      "roots": [
+        {"part": "limit (limes)", "meaning": "边界、界限"}
+      ],
+      "phonetics": "LIM- /lɪm/ + -it /ɪt/，同 minute 一样两音节双 /ɪ/，是纯正 /ɪ/ 练习词。",
+      "core": "一条不可逾越的边界线——越过它，规则失效、能力耗尽，或进入禁区。",
+      "senses": [
+        {
+          "gloss": "n. 界限、上限（规定或数值）",
+          "logic": "核心义：人为划定或自然形成的「不得超过的线」，如速度限制、时间限制。",
+          "en": "There is a strict limit on the number of passengers each boat can carry.",
+          "zh": "每艘船能搭载的乘客人数有严格上限。"
+        },
+        {
+          "gloss": "n. 极限（能力或忍耐的边界）",
+          "logic": "从外部规定的「线」延伸到内部能力的「边界」——超过这条线，人就无法承受或继续。",
+          "en": "After three sleepless nights, she had reached her limit.",
+          "zh": "三个不眠之夜后，她已到了极限。"
+        },
+        {
+          "gloss": "v. 限制、约束（使不超过某范围）",
+          "logic": "名词动词化：主动「画出那条线」，阻止某事物超越它。",
+          "en": "The doctor advised him to limit his salt intake.",
+          "zh": "医生建议他控制盐分摄入。"
+        }
+      ],
+      "derivatives": [
+        {"w": "limitation", "gloss": "n. 局限性；限制条件"},
+        {"w": "unlimited", "gloss": "adj. 无限的、不受限制的"},
+        {"w": "limited", "gloss": "adj. 有限的；（公司）有限责任的"}
+      ],
+      "examples": [
+        {
+          "en": "The speed limit on this road is 60 kilometres per hour.",
+          "zh": "这条路的限速是每小时60公里。",
+          "source": "造句"
+        },
+        {
+          "en": "beyond the limit / off limits",
+          "zh": "「超过极限 / 禁止进入」——高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "restriction", "ipa": "/rɪˈstrɪkʃn/", "gloss": "限制（规则性）", "note": "「限制（规定）」，比 limit 更强调规则或政策施加的约束；travel restrictions"},
+        {"w": "boundary", "ipa": "/ˈbaʊndri/", "gloss": "界限、边界（空间或原则）", "note": "「界限/边界」，偏空间或抽象范围；push the boundaries（突破边界）"},
+        {"w": "cap", "ipa": "/kæp/", "gloss": "上限（口语）", "note": "「上限」，口语化 limit 的替代；a cap on spending（支出上限）"}
+      ],
+      "antonyms": [
+        {"w": "freedom", "note": "自由"},
+        {"w": "unlimited", "note": "无限制的"}
+      ],
+      "nuance": "limit 最通用，可指具体数值（speed limit）或抽象极限（limits of patience）；restriction 强调规则性约束；boundary 更偏地理或原则性边界；cap 是口语化的数值上限。"
+    },
+    {
+      "word": "gym",
+      "hl": "y",
+      "levels": ["非托福"],
+      "ipa": "/dʒɪm/",
+      "subgroup": "y",
+      "meaning": "n. 健身房；体育馆；体育课",
+      "etymology": "希腊语 gymnasion「裸体锻炼场」，gymnasium 缩写。古希腊人裸体运动（gymnos = 裸的），故名。gymnasium → gym。",
+      "roots": [
+        {"part": "gym (gymnos)", "meaning": "裸体的→锻炼场"}
+      ],
+      "phonetics": "g + y /ɪ/ + m，y 在词中读 /ɪ/。对比 gym（体育馆）vs. gyms（复数，/dʒɪmz/）——单纯加 s，拼读规律稳定。",
+      "tip": "gymnast（体操运动员）、gymnastics（体操）——同根词，y 同样读 /ɪ/。",
+      "core": "专门用于身体训练和锻炼的场所——从古希腊裸体竞技场到现代健身房，核心始终是「身体磨练之地」。",
+      "senses": [
+        {
+          "gloss": "n. 健身房（日常锻炼场所）",
+          "logic": "现代最常见义：设有器械的室内锻炼场所，是 gymnasium 的口语缩写。",
+          "en": "He goes to the gym before work every morning.",
+          "zh": "他每天早上上班前都去健身房。"
+        },
+        {
+          "gloss": "n. 体育馆（学校或竞技场所）",
+          "logic": "保留原义的较宽泛用法：学校里的多功能室内运动场，或正式的体育竞技场馆。",
+          "en": "The basketball finals were held in the school gym.",
+          "zh": "篮球决赛在学校体育馆举行。"
+        },
+        {
+          "gloss": "n. 体育课（非正式，学校用语）",
+          "logic": "在学校语境中，gym 进一步缩略为「体育这门课」——场所名转化为课程名。",
+          "en": "I have gym class right after lunch on Thursdays.",
+          "zh": "周四午饭后紧接着就是体育课。"
+        }
+      ],
+      "derivatives": [
+        {"w": "gymnasium", "gloss": "n. 体育馆（正式）；（德国等）文理中学"},
+        {"w": "gymnast", "gloss": "n. 体操运动员"},
+        {"w": "gymnastics", "gloss": "n. 体操运动"}
+      ],
+      "examples": [
+        {
+          "en": "She goes to the gym three times a week to maintain her fitness.",
+          "zh": "她每周去三次健身房保持体形。",
+          "source": "造句"
+        },
+        {
+          "en": "hit the gym / gym membership",
+          "zh": "「去健身 / 健身房会员资格」——高频日常搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "fitness centre", "gloss": "健身中心（英式正式）", "note": "「健身中心」，英式正式说法；gym 是口语缩写"},
+        {"w": "sports hall", "gloss": "室内运动厅（多功能）", "note": "「体育馆」，强调室内运动场所，比 gym 更偏竞技场地"},
+        {"w": "arena", "ipa": "/əˈriːnə/", "gloss": "大型竞技场", "note": "「（大型）竞技场/体育馆」，比 gym 规模大得多"}
+      ],
+      "antonyms": [],
+      "nuance": "gym 是最口语的日常健身场所；fitness centre 是正式说法；sports hall 多指学校或社区的多功能运动厅；arena 特指大型竞技或表演场所，规模远超健身房。"
+    },
+    {
+      "word": "myth",
+      "hl": "y",
+      "levels": ["非托福"],
+      "ipa": "/mɪθ/",
+      "subgroup": "y",
+      "meaning": "n. 神话；错误观念；虚构的事",
+      "etymology": "希腊语 muthos「故事、传说」，直接借入。20世纪后发展出「广泛流传但实为谬误的观念」义（a popular myth 流行迷思）。",
+      "roots": [
+        {"part": "myth (muthos)", "meaning": "故事、传说"}
+      ],
+      "phonetics": "m + y /ɪ/ + th /θ/，词尾 /θ/ 是齿间摩擦音，不要读成 /t/ 或 /s/。y 在词中 = /ɪ/。",
+      "core": "在集体记忆中流传、解释世界但不必经过验证的故事——可以是神圣叙事，也可以是人们相信却经不起检验的错误观念。",
+      "senses": [
+        {
+          "gloss": "n. 神话故事（古代的神灵与英雄叙事）",
+          "logic": "本义：古代文化中解释自然与人类命运的集体故事，通常涉及神、英雄、宇宙起源。",
+          "en": "Greek myths have influenced Western art and literature for centuries.",
+          "zh": "希腊神话数百年来深刻影响了西方艺术与文学。"
+        },
+        {
+          "gloss": "n. 流传的错误观念、迷思",
+          "logic": "「广泛流传但不需验证的故事」→ 现代引申：同样广泛流传、但经科学检验后被证伪的错误信念。两义共享「人们相信但不一定真实」的内核。",
+          "en": "It is a common myth that we only use ten percent of our brains.",
+          "zh": "「人类只使用了10%的大脑」是个普遍流传的迷思。"
+        }
+      ],
+      "derivatives": [
+        {"w": "mythical", "gloss": "adj. 神话中的；虚构的"},
+        {"w": "mythology", "gloss": "n. 神话体系；神话学"},
+        {"w": "debunk", "gloss": "v. 揭穿（迷思/谎言）——myth 的高频搭配动词"}
+      ],
+      "examples": [
+        {
+          "en": "The study debunks the myth that multitasking improves productivity.",
+          "zh": "这项研究揭穿了「多任务处理能提升效率」的迷思。",
+          "source": "造句"
+        },
+        {
+          "en": "debunk a myth / Greek myth",
+          "zh": "「揭穿迷思 / 希腊神话」——两种义的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "legend", "ipa": "/ˈledʒənd/", "gloss": "传说（历史化的民间故事）", "note": "「传说」，比 myth 更偏历史化的民间故事，不一定涉及神灵"},
+        {"w": "misconception", "ipa": "/ˌmɪskənˈsepʃn/", "gloss": "错误观念（学术/新闻）", "note": "「错误观念」义近义，比 myth 更正式，用于学术和新闻"},
+        {"w": "fallacy", "ipa": "/ˈfæləsi/", "gloss": "谬误（逻辑错误）", "note": "「谬误」，逻辑上的错误推断，比 myth 更强调逻辑错误"}
+      ],
+      "antonyms": [
+        {"w": "fact", "note": "事实"},
+        {"w": "reality", "note": "现实"}
+      ],
+      "nuance": "myth 既指神话故事（Greek myths），也指「广泛流传的错误观念」（debunk the myth）；legend 更偏历史传说，与真实事件挂钩；misconception 是中性术语，指认知上的误解；fallacy 专指逻辑错误或论证谬误。"
+    },
+    {
+      "word": "typical",
+      "hl": "y",
+      "levels": ["托福"],
+      "ipa": "/ˈtɪpɪkl/",
+      "subgroup": "y",
+      "meaning": "adj. 典型的；有代表性的；（口）一如既往的",
+      "etymology": "希腊语 typos「印记、模型」→ 拉丁语 typicus → typical。type（类型）、typography（排版）同根。「符合那个模型」→ 典型的。",
+      "roots": [
+        {"part": "typ- (typos)", "meaning": "印记、模型、类型"},
+        {"part": "-ical", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "TYP- /tɪp/ + -ical /ɪkl/，y 在首音节重读位置读 /ɪ/，全词三个音节，重音在首。",
+      "core": "符合那个「印记/模子」的——与同类的标准样本高度吻合，没有意外。",
+      "senses": [
+        {
+          "gloss": "adj. 典型的、有代表性的",
+          "logic": "核心义：像是从「那个类型的模子」里刻出来的，符合该类事物的普遍特征。",
+          "en": "This is a typical example of early Renaissance architecture.",
+          "zh": "这是早期文艺复兴建筑的典型案例。"
+        },
+        {
+          "gloss": "adj. （某人）一贯如此的（口语，带无奈）",
+          "logic": "「完全符合这个人的惯常模式」——感叹句「Typical!」是这层意思的极简用法，表达「果然不出所料」。",
+          "en": "He forgot to show up again. Typical.",
+          "zh": "他又忘记露面了，真是一如既往。"
+        }
+      ],
+      "derivatives": [
+        {"w": "typically", "gloss": "adv. 典型地；通常来说"},
+        {"w": "atypical", "gloss": "adj. 非典型的、异常的"},
+        {"w": "stereotype", "gloss": "n./v. 刻板印象（同根 typos，过度固化的「模型」）"}
+      ],
+      "examples": [
+        {
+          "en": "A typical day in her life starts with an hour of reading.",
+          "zh": "她典型的一天从一小时阅读开始。",
+          "source": "造句"
+        },
+        {
+          "en": "typical of / Typical!",
+          "zh": "「……的典型特征 / 真是的，一如既往！」——后者是口语感叹，表无奈。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "characteristic", "ipa": "/ˌkærəktəˈrɪstɪk/", "gloss": "有特色的、典型的（专属特征）", "note": "「有特色的、典型的」，比 typical 更强调某一群体或事物的专属特征"},
+        {"w": "representative", "ipa": "/ˌreprɪˈzentətɪv/", "gloss": "有代表性的（可代表总体）", "note": "「有代表性的」，强调样本能代表总体；a representative sample（代表性样本）"},
+        {"w": "stereotypical", "ipa": "/ˌsteriəˈtɪpɪkl/", "gloss": "刻板印象式的（带贬义）", "note": "「刻板印象式的」，带负面意味；stereotypical assumptions（刻板假设）"}
+      ],
+      "antonyms": [
+        {"w": "atypical", "note": "非典型的"},
+        {"w": "exceptional", "note": "例外的、特殊的"}
+      ],
+      "nuance": "typical 描述「符合同类事物的普遍特征」（中性），characteristic 强调「独特识别性特征」，representative 用于统计和抽样语境，stereotypical 带贬义，暗示过于简化的刻板印象。"
+    },
+    {
+      "word": "symbol",
+      "hl": "y",
+      "levels": ["托福"],
+      "ipa": "/ˈsɪmbəl/",
+      "subgroup": "y",
+      "meaning": "n. 符号；象征；代表",
+      "etymology": "希腊语 symbolon「标记、信物」= syn-(一起) + ballein(投、扔) = 「合在一起的两半」→ 识别标记 → 符号。",
+      "roots": [
+        {"part": "sym- (syn-)", "meaning": "一起、共同"},
+        {"part": "-bol (ballein)", "meaning": "投、扔"}
+      ],
+      "phonetics": "SYM- /sɪm/ + -bol /bəl/，y 在首音节重读处读 /ɪ/；-bol 弱读 /bəl/。",
+      "core": "一个事物「代表并指向」另一个意义——它自身之外还承载了额外的含义，让人看见它就想到别的东西。",
+      "senses": [
+        {
+          "gloss": "n. 符号（书写或标记系统中的记号）",
+          "logic": "核心义的具象化：用于代表特定含义的书写标记或图形，如数学符号、化学元素符号。",
+          "en": "The dollar sign is the symbol for the US currency.",
+          "zh": "美元符号是美国货币的标记。"
+        },
+        {
+          "gloss": "n. 象征（事物承载的抽象意义）",
+          "logic": "比符号更深：某个具体事物本身成为抽象概念的代言，靠文化约定而非逻辑推导——鸽子象征和平，不是因为鸽子「像」和平，而是历史赋予的。",
+          "en": "The olive branch has long been a symbol of peace.",
+          "zh": "橄榄枝长久以来是和平的象征。"
+        }
+      ],
+      "derivatives": [
+        {"w": "symbolic", "gloss": "adj. 象征性的；有象征意义的"},
+        {"w": "symbolize", "gloss": "v. 象征、代表"},
+        {"w": "symbolism", "gloss": "n. 象征主义；象征手法（文艺运动或写作技巧）"}
+      ],
+      "examples": [
+        {
+          "en": "The dove is a universal symbol of peace.",
+          "zh": "鸽子是普世的和平象征。",
+          "source": "造句"
+        },
+        {
+          "en": "a status symbol / symbolic of",
+          "zh": "「地位象征 / 象征着……」——高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sign", "ipa": "/saɪn/", "gloss": "符号、标志（泛指任何指代标记）", "note": "「符号/标志」，比 symbol 更通用，可指任何指代性标记；a road sign（路标）"},
+        {"w": "emblem", "ipa": "/ˈembləm/", "gloss": "徽章、标志（代表团体的正式图案）", "note": "「徽章/标志」，比 symbol 更正式，多指代表团体的图案标志；the national emblem（国徽）"},
+        {"w": "metaphor", "ipa": "/ˈmetəfər/", "gloss": "隐喻（语言层面的比喻）", "note": "「隐喻」，symbol 在文学批评中有时与 metaphor 接近，但 metaphor 是语言的比喻，symbol 是事物本身的象征"}
+      ],
+      "antonyms": [],
+      "nuance": "symbol 强调某事物本身承载的象征意义（一只鸽子本身成为和平的象征），sign 更泛指任何有指代功能的标记，emblem 多指徽标类正式图案，metaphor 是语言层面的比喻。"
+    },
+    {
+      "word": "system",
+      "hl": "y",
+      "levels": ["非托福"],
+      "ipa": "/ˈsɪstəm/",
+      "subgroup": "y",
+      "meaning": "n. 系统；制度；体系；方法",
+      "etymology": "希腊语 systema = syn-(一起) + histanai(放置) = 「放在一起的整体」。与 systematic（系统化的）、ecosystem（生态系统）同根。",
+      "roots": [
+        {"part": "sys- (syn-)", "meaning": "一起、共同"},
+        {"part": "-tem (histanai)", "meaning": "放置、建立"}
+      ],
+      "phonetics": "SYS- /sɪs/ + -tem /təm/，y 在首音节重读处读 /ɪ/；-tem 弱读成 /təm/。",
+      "core": "多个部分被组织「放在一起」形成的协同整体——各部分缺一不可，整体运作超过各部分之和。",
+      "senses": [
+        {
+          "gloss": "n. 系统（各部分协同运作的整体）",
+          "logic": "核心义：由相互关联的部件组成、共同实现某功能的整体，如太阳系、免疫系统、操作系统。",
+          "en": "The immune system protects the body against infection.",
+          "zh": "免疫系统保护身体免受感染。"
+        },
+        {
+          "gloss": "n. 制度、体制（社会或政治的组织方式）",
+          "logic": "人为设计的规则和机构「组合在一起」形成的运作方式——从物理系统引申到社会层面的组织体系。",
+          "en": "The education system in Finland is often cited as a global model.",
+          "zh": "芬兰的教育制度常被引为全球典范。"
+        },
+        {
+          "gloss": "n. 方法、条理（有组织的做事方式）",
+          "logic": "最抽象的延伸：「把步骤放在一起」变成一套可重复执行的方法——you need a system（你需要一套方法），指有条理的做事策略。",
+          "en": "You need a better system for managing your files.",
+          "zh": "你需要一套更好的方法来管理你的文件。"
+        }
+      ],
+      "derivatives": [
+        {"w": "systematic", "gloss": "adj. 系统化的、有条理的"},
+        {"w": "ecosystem", "gloss": "n. 生态系统"},
+        {"w": "systemic", "gloss": "adj. 系统性的（影响整个体系的）"}
+      ],
+      "examples": [
+        {
+          "en": "The healthcare system in this country needs substantial reform.",
+          "zh": "这个国家的医疗体系需要重大改革。",
+          "source": "造句"
+        },
+        {
+          "en": "solar system / immune system / get out of one's system",
+          "zh": "「太阳系 / 免疫系统 / 把某事从心里清除掉」——三种高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "structure", "ipa": "/ˈstrʌktʃər/", "gloss": "结构、组织框架", "note": "「结构」，比 system 更强调组织框架；the structure of government（政府架构）"},
+        {"w": "framework", "ipa": "/ˈfreɪmwɜːrk/", "gloss": "框架（抽象的整体设计骨架）", "note": "「框架」，比 system 更抽象，强调整体设计骨架；a legal framework（法律框架）"},
+        {"w": "mechanism", "ipa": "/ˈmekənɪzm/", "gloss": "机制（内部运作方式）", "note": "「机制」，强调内部运作方式，比 system 更聚焦于「如何运转」"}
+      ],
+      "antonyms": [
+        {"w": "chaos", "note": "混乱"},
+        {"w": "disorder", "note": "无序"}
+      ],
+      "nuance": "system 强调各部分协同运作的整体（transportation system），structure 侧重组织层级和框架，framework 是更抽象的骨架设计，mechanism 聚焦于内部运作方式。"
+    },
+    {
+      "word": "English",
+      "hl": "e",
+      "levels": ["非托福"],
+      "ipa": "/ˈɪŋɡlɪʃ/",
+      "subgroup": "e",
+      "meaning": "n./adj. 英语；英格兰的",
+      "etymology": "古英语 Englisc，源自 Engle（盎格鲁人）+ -isc（形容词后缀）。盎格鲁人来自日德兰半岛的 Angeln 地区，定居英格兰后以地名为名。",
+      "roots": [
+        {"part": "Engl- (Engle)", "meaning": "盎格鲁人（部落名）"},
+        {"part": "-ish (-isc)", "meaning": "形容词后缀，表「……的语言/民族」"}
+      ],
+      "phonetics": "ENG- /ɪŋ/ + -lish /lɪʃ/，首音节 E 读 /ɪ/ 而非 /e/，这是 e 在非重读（或弱读偏向）位置收短成 /ɪ/ 的典型——也有人听为轻微的 /ɪ/。这里是固定读音，务必整词记忆。",
+      "tip": "注意 English 的大写：语言名/民族名首字母永远大写，这是英语书写规范。",
+      "core": "盎格鲁人带来的语言与文化身份——一个民族名演变为语言名，再扩展为文化属性标签。",
+      "senses": [
+        {
+          "gloss": "n. 英语（语言）",
+          "logic": "最常见义：盎格鲁人的语言，现为全球通用语，直接以民族名命名。",
+          "en": "English is spoken as a first or second language by over a billion people.",
+          "zh": "全球超过十亿人将英语作为第一或第二语言使用。"
+        },
+        {
+          "gloss": "adj. 英格兰的（地域/文化）",
+          "logic": "原始义的保留：指英格兰这一地区的事物、人或文化，注意不等于「英国的」（British）。",
+          "en": "The English countryside is famous for its rolling green hills.",
+          "zh": "英格兰乡村以连绵起伏的绿色山丘著称。"
+        }
+      ],
+      "derivatives": [
+        {"w": "Englishman / Englishwoman", "gloss": "n. 英格兰男性/女性"},
+        {"w": "English-speaking", "gloss": "adj. 说英语的（国家或地区）"},
+        {"w": "Anglophone", "gloss": "adj./n. 以英语为母语者；英语圈（正式）"}
+      ],
+      "examples": [
+        {
+          "en": "She speaks English fluently but still makes occasional grammar mistakes.",
+          "zh": "她英语说得很流利，但偶尔还是会犯语法错误。",
+          "source": "造句"
+        },
+        {
+          "en": "English as a Lingua Franca / plain English",
+          "zh": "「英语作为通用语 / 通俗易懂的英语」——学术与日常高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "British English", "gloss": "英式英语（与美式相对的变体）", "note": "英式英语，与 American English（美式）相对，用于区分变体"},
+        {"w": "the English language", "gloss": "英语（正式书面说法）", "note": "正式说法，书面中替代单独的 English 以避免歧义"}
+      ],
+      "antonyms": [],
+      "nuance": "English 单独使用可指语言（learn English）或民族/文化（English customs）；区分 British（英国的，含苏格兰等）与 English（英格兰的）——在英国范围内这两个词不可混用。"
+    },
+    {
+      "word": "decide",
+      "hl": "e",
+      "levels": ["非托福"],
+      "ipa": "/dɪˈsaɪd/",
+      "subgroup": "e",
+      "meaning": "v. 决定；裁决；使下定决心",
+      "etymology": "拉丁语 decidere = de-(断开) + caedere(切)= 「切断犹豫」→ 做决定。与 precise（精确）、concise（简洁）、scissors（剪刀）同根，核心义「切」。",
+      "roots": [
+        {"part": "de-", "meaning": "断开、去除"},
+        {"part": "-cide (caedere)", "meaning": "切、决断"}
+      ],
+      "phonetics": "de- 弱读成 /dɪ/（e 在非重读音节缩成 /ɪ/）；重音在后 -CIDE /saɪd/。是「e 弱读为 /ɪ/」的教科书例子。",
+      "core": "「切断」犹豫——在多个选项中斩断游移，让心智停在一处。",
+      "senses": [
+        {
+          "gloss": "v. 决定（做出个人选择）",
+          "logic": "核心义：切断犹豫，从多个可能性中选定一个，是最常见的日常用法。",
+          "en": "She finally decided to apply for the scholarship.",
+          "zh": "她终于决定申请那份奖学金。"
+        },
+        {
+          "gloss": "v. 裁决、判定（由外部权威决定结果）",
+          "logic": "「切断」争议的权力由个人转移到权威机构——法官、裁判裁定结果，将悬而未决的事一刀切定。",
+          "en": "The judge decided in favour of the plaintiff.",
+          "zh": "法官裁定支持原告。"
+        },
+        {
+          "gloss": "v. 使（某人）下定决心（他动用法）",
+          "logic": "外部因素成为「那把刀」——某事件或信息帮助某人切断犹豫，促成决定。",
+          "en": "His words decided me — I quit the next day.",
+          "zh": "他的话让我下定了决心——第二天我就辞职了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "decision", "gloss": "n. 决定、决策"},
+        {"w": "decisive", "gloss": "adj. 决断的；决定性的"},
+        {"w": "undecided", "gloss": "adj. 尚未决定的；犹豫不决的"}
+      ],
+      "examples": [
+        {
+          "en": "After weeks of deliberation, she decided to accept the offer.",
+          "zh": "经过数周考虑，她决定接受这份工作邀请。",
+          "source": "造句"
+        },
+        {
+          "en": "decide on / decide against",
+          "zh": "「决定选择…… / 决定不做……」——高频介词搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "determine", "ipa": "/dɪˈtɜːrmɪn/", "gloss": "确定、决定（正式，常用于原因结果）", "note": "「决定/确定」，比 decide 更正式，常用于原因、结果的确定；determine the cause（确定原因）"},
+        {"w": "resolve", "ipa": "/rɪˈzɒlv/", "gloss": "下决心（强调意志力）", "note": "「决心做（困难的事）」，比 decide 更强调意志力和决心；resolve to improve（下决心改进）"},
+        {"w": "settle", "ipa": "/ˈsetl/", "gloss": "最终裁定、解决（争议）", "note": "「解决/决定」，多用于争议的最终裁决；settle a dispute（解决纠纷）"}
+      ],
+      "antonyms": [
+        {"w": "hesitate", "note": "犹豫"},
+        {"w": "waver", "note": "摇摆不定"}
+      ],
+      "nuance": "decide 最通用，指个人做出选择；resolve 强调面对困难时的坚定决心；determine 更正式，常用于外部确定（实验结果 determine 结论）；settle 多用于裁决纷争或最终敲定某事。"
+    },
+    {
+      "word": "pretty",
+      "hl": "e",
+      "levels": ["托福"],
+      "ipa": "/ˈprɪti/",
+      "subgroup": "e",
+      "meaning": "adj. 漂亮的；悦耳的  adv. 相当；颇为",
+      "etymology": "古英语 prættig「狡猾的、机灵的」，中古英语演变为「精巧的、悦目的」，最终固定为「漂亮」。副词义「相当」（pretty good）是口语化延伸，16世纪已有用法。",
+      "roots": [
+        {"part": "pretty（prættig）", "meaning": "精巧的、机灵的"}
+      ],
+      "phonetics": "PRET- /prɪ/ + -ty /ti/，首音节 e 读 /ɪ/（重读但仍是短音）；-ty 弱读 /ti/。对比 beauty /ˈbjuːti/——形近但发音差异大。",
+      "tip": "pretty 作副词时 = quite/rather，语气比 very 弱：pretty good（挺好的），pretty much（差不多）。在正式写作中避免使用，用 fairly/rather 替代。",
+      "core": "「精巧悦目」的感觉——小巧、匀称、让人看了舒服，没有宏大感，但让人愉悦；副词义是这种「适度、恰好够好」感觉的延伸。",
+      "senses": [
+        {
+          "gloss": "adj. 漂亮的、悦目的（偏小巧精致）",
+          "logic": "核心义：精巧令人愉悦的外观，多用于女性、小事物、风景——强调秀气而非宏伟。",
+          "en": "She wore a pretty floral dress to the garden party.",
+          "zh": "她穿着一条漂亮的碎花裙去花园派对。"
+        },
+        {
+          "gloss": "adv. 相当、颇为（比 very 弱，比 slightly 强）",
+          "logic": "「精巧到位」的感觉延伸为程度副词：不算最高，但已经够好——「pretty good」是「好，但不是 very good」。历史上已有此用法，但两义共存是英语词义演变的结果，非直接引申。",
+          "en": "I'm pretty sure we met before, but I can't remember where.",
+          "zh": "我相当确信我们以前见过，但想不起在哪里了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "prettily", "gloss": "adv. 漂亮地、精巧地"},
+        {"w": "prettiness", "gloss": "n. 漂亮、秀美"},
+        {"w": "pretty-print", "gloss": "v. （编程）格式化输出（技术用语，取「整洁悦目」义）"}
+      ],
+      "examples": [
+        {
+          "en": "The garden looks pretty in spring when all the flowers bloom.",
+          "zh": "春天百花盛开时，花园显得很美丽。",
+          "source": "造句"
+        },
+        {
+          "en": "pretty much / pretty good",
+          "zh": "「差不多 / 挺好的」——副词义高频口语搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "attractive", "ipa": "/əˈtræktɪv/", "gloss": "有吸引力的（中性、正式）", "note": "「有吸引力的」，比 pretty 更中性正式，可用于人、地点、提议"},
+        {"w": "lovely", "ipa": "/ˈlʌvli/", "gloss": "可爱迷人的（带温情）", "note": "「可爱迷人的」，比 pretty 带更多温情感；a lovely day（美好的一天）"},
+        {"w": "fairly", "ipa": "/ˈfeərli/", "gloss": "相当（程度副词，正式）", "note": "副词义近义，比 pretty 更正式；fairly good（相当好）——正式写作首选"}
+      ],
+      "antonyms": [
+        {"w": "ugly", "note": "丑陋的"},
+        {"w": "plain", "note": "朴素的、不起眼的"}
+      ],
+      "nuance": "pretty 形容女性和事物的外貌（偏小巧悦目），beautiful 更宏大深刻，attractive 最中性（可用于任何性别和非外貌语境）；副词义 pretty ≈ fairly ≈ rather，但 pretty 最口语，正式场合换 fairly。"
+    },
+    {
+      "word": "women",
+      "hl": "e",
+      "levels": ["非托福"],
+      "ipa": "/ˈwɪmɪn/",
+      "subgroup": "e",
+      "meaning": "n. woman（女人）的复数",
+      "etymology": "古英语 wīfman = wīf（女性、妻子）+ man（人）→ 女人；复数 wīfmenn 经音变演化为 women。woman（/ˈwʊmən/）vs. women（/ˈwɪmɪn/）——单复数发音完全不同，是英语最著名的拼写陷阱之一。",
+      "roots": [
+        {"part": "wo- (wīf)", "meaning": "女性"},
+        {"part": "-men (man)", "meaning": "人"}
+      ],
+      "phonetics": "WO- /wɪ/ + -men /mɪn/：复数 women 里的 o 读 /ɪ/，单数 woman 里的 o 读 /ʊ/（woman=/ˈwʊmən/）。拼写一字之差，读音完全切换——必须整词背。",
+      "tip": "单数 woman /ˈwʊmən/，复数 women /ˈwɪmɪn/——这是托福听力最常被误听的词对之一。",
+      "core": "「女性+人」的复合词复数形式——拼写与发音的脱节是历史音变的遗留，本身语义单一，但发音陷阱是这个词的核心难点。",
+      "senses": [
+        {
+          "gloss": "n. 女人、女性（woman 的复数）",
+          "logic": "语义单一，无需引申：即 woman 的复数，指多名成年女性。发音陷阱（o 读 /ɪ/）是本词的核心学习价值。",
+          "en": "Women now hold more than a third of seats in parliament.",
+          "zh": "女性如今占据议会超过三分之一的席位。"
+        }
+      ],
+      "derivatives": [
+        {"w": "woman", "gloss": "n. 女人（单数，/ˈwʊmən/）"},
+        {"w": "womanhood", "gloss": "n. 女性身份；成年女性时期"},
+        {"w": "womankind", "gloss": "n. 女性（集合，文学用语）"}
+      ],
+      "examples": [
+        {
+          "en": "Women make up more than half of the university's student body.",
+          "zh": "女性占该大学学生总数的一半以上。",
+          "source": "造句"
+        },
+        {
+          "en": "women in leadership / women's rights",
+          "zh": "「女性领导力 / 女性权利」——高频社会议题搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "females", "ipa": "/ˈfiːmeɪlz/", "gloss": "雌性/女性（正式、科学）", "note": "「雌性/女性」，比 women 更正式或科学，常用于统计和生物学语境"},
+        {"w": "ladies", "ipa": "/ˈleɪdiz/", "gloss": "女士们（礼貌、正式场合）", "note": "「女士们」，比 women 更礼貌客气，常用于正式场合称呼"}
+      ],
+      "antonyms": [
+        {"w": "men", "note": "男人们"}
+      ],
+      "nuance": "women 是中性通用词；ladies 更礼貌但有时被认为带有性别刻板印象；females 偏科学/统计语境；在性别议题讨论中，women 是最推荐的中性表达。"
+    },
+    {
+      "word": "build",
+      "hl": "ui",
+      "levels": ["托福"],
+      "ipa": "/bɪld/",
+      "subgroup": "other",
+      "meaning": "v. 建造；建立；逐渐形成  n. 体型；构建",
+      "etymology": "古英语 byldan，与 bold（大胆，引申自「建造得好」）同根，日耳曼语系。ui 读 /ɪ/ 是历史音变遗留，guild（行会）同类。",
+      "roots": [
+        {"part": "build（byldan）", "meaning": "建造"}
+      ],
+      "phonetics": "b + ui /ɪ/ + ld：ui 在 build/guild/guilt 中一律读 /ɪ/，是英语最小的「特例族」之一。记住这个族群就不会再读错。",
+      "tip": "build → built（过去式/过去分词），不规则变化，不要加 -ed。",
+      "core": "把材料或要素一层层叠加、组合起来，最终形成稳固的整体——物理上是建筑，抽象上是关系、信心、能力的积累。",
+      "senses": [
+        {
+          "gloss": "v. 建造、搭建（实物）",
+          "logic": "核心义：将物理材料组合形成建筑物或结构体。",
+          "en": "Workers are building a new bridge across the river.",
+          "zh": "工人们正在河上建造一座新桥。"
+        },
+        {
+          "gloss": "v. 建立、创建（抽象事物）",
+          "logic": "「叠加形成整体」从实物引申到抽象：关系、信任、公司、声誉都可以「被建立」，过程同样需要逐步积累。",
+          "en": "It takes years to build trust between two countries.",
+          "zh": "两国之间建立信任需要数年时间。"
+        },
+        {
+          "gloss": "v. 逐渐增强、积累（build up）",
+          "logic": "「层层叠加」引申为量的积累——压力、紧张感、技能都可以 build up，强调渐进过程。",
+          "en": "Tension has been building up between the two sides for months.",
+          "zh": "双方之间的紧张关系已积累了数月。"
+        },
+        {
+          "gloss": "n. 体型、身材",
+          "logic": "人的身体「被构建」出来的样子——体型是身体的「建造结果」，是 build 作名词时的特殊延伸义，多用于描述人的体格。",
+          "en": "He has the build of a professional swimmer — broad shoulders, lean frame.",
+          "zh": "他有职业游泳运动员的体型——宽肩、精瘦的身材。"
+        }
+      ],
+      "derivatives": [
+        {"w": "builder", "gloss": "n. 建筑工人；建设者"},
+        {"w": "building", "gloss": "n. 建筑物；建造过程"},
+        {"w": "built-in", "gloss": "adj. 内置的、内建的"}
+      ],
+      "examples": [
+        {
+          "en": "The community worked together to build a new library.",
+          "zh": "社区共同努力建造了一座新图书馆。",
+          "source": "造句"
+        },
+        {
+          "en": "build up / build on",
+          "zh": "「逐渐积累 / 以……为基础继续发展」——高频短语动词。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "construct", "ipa": "/kənˈstrʌkt/", "gloss": "建造、构建（正式，偏大型工程）", "note": "「建造/构建」，比 build 更正式，多用于大型工程；construct a bridge（建桥）"},
+        {"w": "establish", "ipa": "/ɪˈstæblɪʃ/", "gloss": "建立（组织、关系、规则）", "note": "「建立（组织/关系）」，抽象义的 build 替代，比 build 更正式；establish a company"},
+        {"w": "develop", "ipa": "/dɪˈveləp/", "gloss": "发展、培养（渐进过程）", "note": "「发展/开发」，比 build 更强调渐进过程；develop a skill（培养技能）"}
+      ],
+      "antonyms": [
+        {"w": "demolish", "note": "拆毁"},
+        {"w": "destroy", "note": "摧毁"}
+      ],
+      "nuance": "build 最通用（可以是物理建造或抽象建立），construct 更正式偏工程类，establish 专用于机构、关系、规则的建立，develop 强调由小到大的成长过程。「build confidence（建立信心）」vs.「develop confidence（培养信心）」——前者更强调从无到有，后者更强调渐进过程。"
+    },
+    {
+      "word": "guilt",
+      "hl": "ui",
+      "levels": ["非托福"],
+      "ipa": "/ɡɪlt/",
+      "subgroup": "other",
+      "meaning": "n. 罪责；内疚感  （guilt-free = 无愧于心）",
+      "etymology": "古英语 gylt「罪行、应受罚的过失」，日耳曼同根。guilt（内疚）vs. guile（狡诈）——形近但完全不同，注意区分。",
+      "roots": [
+        {"part": "guilt（gylt）", "meaning": "罪行、过失"}
+      ],
+      "phonetics": "g + ui /ɪ/ + lt：与 build 同属「ui = /ɪ/」特例族。词尾 /lt/ 要清晰发出，不省略。",
+      "tip": "guilty（有罪的/内疚的）是高频派生形容词：feel guilty（感到内疚）、plead guilty（认罪）。",
+      "core": "清楚知道自己做了错事后压在心里的重量——是「我做了不该做的事」的主观感受，不一定等于法律上的罪责。",
+      "senses": [
+        {
+          "gloss": "n. 内疚感、愧疚（主观情感）",
+          "logic": "核心义：意识到自己伤害了他人或违反了道德准则后产生的心理压力，是主观情绪体验。",
+          "en": "She carried a deep sense of guilt for years after the accident.",
+          "zh": "事故发生后，她多年来一直背负着深深的愧疚感。"
+        },
+        {
+          "gloss": "n. 罪责、过失（客观法律或道德责任）",
+          "logic": "从主观感受延伸到客观认定：不论当事人内心是否感到愧疚，「guilt」也可指被外部认定的应负责任——法庭上的 guilt 是客观判定，不是情感。",
+          "en": "The evidence was overwhelming, and the jury had no doubt about his guilt.",
+          "zh": "证据确凿，陪审团对他的罪责毫无疑问。"
+        }
+      ],
+      "derivatives": [
+        {"w": "guilty", "gloss": "adj. 有罪的；感到内疚的"},
+        {"w": "guilt-free", "gloss": "adj. 无愧于心的；不带罪恶感的"},
+        {"w": "guilt-trip", "gloss": "n./v. 让人产生内疚感的操控行为"}
+      ],
+      "examples": [
+        {
+          "en": "She was consumed by guilt after missing her grandfather's last days.",
+          "zh": "错过陪伴祖父最后时光，她被深深的内疚感所困扰。",
+          "source": "造句"
+        },
+        {
+          "en": "guilt trip / plead guilty",
+          "zh": "「让人感到内疚的操控行为 / 认罪」——高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "remorse", "ipa": "/rɪˈmɔːrs/", "gloss": "深切悔恨（更强烈持久）", "note": "「悔恨」，比 guilt 更强烈更持久，对过去行为的深切后悔；feel remorse for one's actions"},
+        {"w": "shame", "ipa": "/ʃeɪm/", "gloss": "羞耻感（针对自身价值的否定）", "note": "「羞耻感」，guilt 是「我做错了」，shame 是「我这个人不好」——心理学上的重要区别"},
+        {"w": "culpability", "ipa": "/ˌkʌlpəˈbɪlɪti/", "gloss": "过失、应负责任（法律术语）", "note": "「过失/应受谴责」，法律术语，强调客观责任而非主观感受"}
+      ],
+      "antonyms": [
+        {"w": "innocence", "note": "无辜；清白"},
+        {"w": "pride", "note": "自豪（与内疚的情感相对）"}
+      ],
+      "nuance": "guilt 是「我做了错事」的内疚感（可改正）；shame 是「我本身有问题」的羞耻感（更深层）——心理学区分这两种情绪很重要；remorse 是 guilt 的升级版，更持久更强烈；culpability 是法律语境的客观过失认定。"
+    },
+    {
+      "word": "business",
+      "hl": "i",
+      "levels": ["托福"],
+      "ipa": "/ˈbɪznɪs/",
+      "subgroup": "other",
+      "meaning": "n. 商业；生意；公司；事务",
+      "etymology": "古英语 bisignis = bisig（忙碌的）+ -nis（名词后缀）= 「忙碌的状态」→ 事务→ 商业。busy 是其形容词同根词，但 business 的 u 已不发音，成为「哑巴字母」的经典案例。",
+      "roots": [
+        {"part": "busi- (bisig)", "meaning": "忙碌的"},
+        {"part": "-ness (-nis)", "meaning": "名词后缀，表状态"}
+      ],
+      "phonetics": "BUS- /bɪz/ + -i- /ɪ/ + -ness /nɪs/：u 读 /ɪ/ 是最著名的拼读陷阱之一——u 的历史音变。不要按拼写读成 */ˈbʌznɪs/。",
+      "tip": "「none of your business（与你无关）」和「mean business（认真对待/有备而来）」是两个超高频习语。",
+      "core": "「忙碌状态」演变出的概念——人持续忙碌地做某件事，就是做生意、处理事务或经营公司。",
+      "senses": [
+        {
+          "gloss": "n. 商业活动、生意",
+          "logic": "核心义：以营利为目的的持续性经济活动，是「忙碌」最典型的社会化形式。",
+          "en": "She has been doing business with that supplier for over a decade.",
+          "zh": "她与那家供应商合作已超过十年。"
+        },
+        {
+          "gloss": "n. 公司、企业",
+          "logic": "「进行商业活动的组织实体」——从活动本身引申为承载活动的机构，可指任何规模的企业。",
+          "en": "He runs a small business selling handmade furniture.",
+          "zh": "他经营着一家销售手工家具的小公司。"
+        },
+        {
+          "gloss": "n. 事务、正事（需要处理的事情）",
+          "logic": "从商业活动引申到泛指任何「需要认真对待的事务」——包括日常事务、个人事情、需要解决的问题。",
+          "en": "Let's get down to business — we have a lot to cover today.",
+          "zh": "我们进入正题吧——今天有很多事情要处理。"
+        }
+      ],
+      "derivatives": [
+        {"w": "businessman / businesswoman", "gloss": "n. 商人、商界人士"},
+        {"w": "businesslike", "gloss": "adj. 务实的、效率优先的"},
+        {"w": "business-minded", "gloss": "adj. 有商业头脑的"}
+      ],
+      "examples": [
+        {
+          "en": "She started her own business after years of working for others.",
+          "zh": "为别人工作多年后，她自己创业了。",
+          "source": "造句"
+        },
+        {
+          "en": "business as usual / do business with",
+          "zh": "「照常营业 / 与……做生意」——高频商业搭配。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "commerce", "ipa": "/ˈkɒmɜːrs/", "gloss": "商业、贸易（正式、大规模）", "note": "「商业/贸易」，比 business 更正式，多指大规模或国际贸易；e-commerce（电子商务）"},
+        {"w": "enterprise", "ipa": "/ˈentərpraɪz/", "gloss": "企业；事业（强调开创性）", "note": "「企业/事业」，比 business 更强调开创性和规模；a private enterprise（私营企业）"},
+        {"w": "trade", "ipa": "/treɪd/", "gloss": "贸易、交易（具体买卖行为）", "note": "「贸易/交易」，比 business 更具体指买卖行为；free trade（自由贸易）"}
+      ],
+      "antonyms": [
+        {"w": "hobby", "note": "业余爱好（与商业目的相对）"}
+      ],
+      "nuance": "business 最通用（既指活动也指公司），commerce 偏大规模正式贸易，enterprise 强调冒险创业精神和规模，trade 聚焦于具体的买卖交换行为。「mind your own business（管好自己的事）」是固定惯用语。"
+    },
+    {
+      "word": "busy",
+      "hl": "u",
+      "levels": ["非托福"],
+      "ipa": "/ˈbɪzi/",
+      "subgroup": "other",
+      "meaning": "adj. 忙碌的；（地点）繁忙的；（图案）繁杂的  v. 使忙碌",
+      "etymology": "古英语 bisig「忙碌的、关心的」，是 business 的同根形容词。u 读 /ɪ/ 是历史音变，与 business 一同构成英语最知名的拼读反直觉对。",
+      "roots": [
+        {"part": "busy（bisig）", "meaning": "忙碌的"}
+      ],
+      "phonetics": "b + u /ɪ/ + sy /zi/：u 读 /ɪ/ 而非 /ʌ/ 或 /juː/——英语拼读最大陷阱之一。busy 和 business 是记住这个特例的最佳锚定对。",
+      "tip": "「busy + V-ing」是高频句型：be busy doing sth（正忙着做某事），无需介词 with。",
+      "core": "时间、注意力或空间被事务填满的状态——没有余地，在持续运转中。",
+      "senses": [
+        {
+          "gloss": "adj. （人）忙碌的、有事要做的",
+          "logic": "核心义：时间和精力被任务占满，没有空闲——日常最常见的用法。",
+          "en": "I'm too busy to take on any new projects right now.",
+          "zh": "我现在太忙了，没法接新项目。"
+        },
+        {
+          "gloss": "adj. （地点）繁忙的、车流量大的",
+          "logic": "「忙碌」从人扩展到场所：街道、餐厅、机场「忙碌」，指人流或活动密集、持续不断。",
+          "en": "This is one of the busiest intersections in the city.",
+          "zh": "这是城市中最繁忙的路口之一。"
+        },
+        {
+          "gloss": "adj. （图案、设计）繁杂的、让眼睛「应接不暇」的",
+          "logic": "视觉上的「忙碌」：画面元素太多，让眼睛无处休息，是设计和摄影领域的专门用法——置信度中等，此义与「忙碌」核心义有隐喻关联但属独立延伸。",
+          "en": "The wallpaper pattern is too busy — it makes the room feel crowded.",
+          "zh": "这壁纸图案太繁杂了，让房间显得很拥挤。"
+        },
+        {
+          "gloss": "v. 使自己忙碌于（busy oneself with）",
+          "logic": "动词化：主动让自己进入「忙碌」状态，通常指为了某目的而刻意使自己有事可做。",
+          "en": "She busied herself with tidying the kitchen to avoid the conversation.",
+          "zh": "她忙着整理厨房，以逃避那次谈话。"
+        }
+      ],
+      "derivatives": [
+        {"w": "busily", "gloss": "adv. 忙碌地"},
+        {"w": "busybody", "gloss": "n. 好管闲事的人"},
+        {"w": "business", "gloss": "n. 商业；事务（同根词，u 同样读 /ɪ/）"}
+      ],
+      "examples": [
+        {
+          "en": "I have been so busy this week that I forgot to call you.",
+          "zh": "这周太忙了，忘记给你打电话了。",
+          "source": "造句"
+        },
+        {
+          "en": "busy schedule / a busy street",
+          "zh": "「繁忙的日程 / 热闹的街道」——高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "occupied", "ipa": "/ˈɒkjupaɪd/", "gloss": "有事在忙；被占用（正式）", "note": "「（人）有事在忙 / （地方）被占用」，比 busy 更正式；I'm occupied this afternoon（今天下午有事）"},
+        {"w": "hectic", "ipa": "/ˈhektɪk/", "gloss": "忙乱的、紧张快节奏的", "note": "「忙乱的、快节奏的」，比 busy 更强调混乱和紧张感；a hectic day（忙乱的一天）"},
+        {"w": "swamped", "ipa": "/swɒmpt/", "gloss": "不堪重负、忙不过来（口语，程度最深）", "note": "「不堪重负、忙不过来」，比 busy 程度更深的口语词；I'm completely swamped"}
+      ],
+      "antonyms": [
+        {"w": "free", "note": "有空的"},
+        {"w": "idle", "note": "闲置的、无所事事的"}
+      ],
+      "nuance": "busy 是最通用的「忙」；occupied 更礼貌正式，也指空间被占用；hectic 强调忙中带乱（日程混乱）；swamped 是口语化的「被淹没般的忙」，程度最重。"
+    }
+  ]
+}

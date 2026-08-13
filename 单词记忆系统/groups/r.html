@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>/r/ 近音 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "r", "combo": "r·rr·wr·rh", "title": "/r/ 近音", "sound": "/r/", "subtitle": "一个 /r/，四种写法——卷舌不碰上颚，绝不颤音", "intro": "英语的 /r/ 是「近音（approximant）」：舌尖上翘后卷，靠近上颚但不接触，气流不受阻——这与西班牙语、俄语的颤音 /r/ 本质不同。最常见的写法是单 r（red、river），重叠辅音 rr（sorry、arrive）表示前面元音短促。wr 的 w 从中古英语起就静默了（write 的 w 过去发音，现在不发）。rh 来自希腊语借词（rhythm、rhino），h 从未在英语里发音，是纯粹的拼写遗留。四条路，只有一个发音：卷舌、气流平稳出口。", "subgroups": [{"key": "r", "tag": "r → /r/", "label": "✅ r = /r/", "desc": "最普遍的写法。词首（red、run）、词中（arrive 之外的单 r）、词尾的 r 在美式英语中都卷舌发音。发音要点：舌尖上翘但不贴上颚，嘴唇微圆，声带振动。例词：red / run / right / river / report / reduce"}, {"key": "rr", "tag": "rr → /r/", "label": "rr = /r/", "desc": "两个 r 只发一个 /r/ 音，功能是「压短」前面的元音：sorry 的 o 短（/ɒ/），mirror 的 i 短（/ɪ/），arrive 的 a 短（/ə/）。发音本身与单 r 完全相同——卷舌、气流平稳。例词：sorry / mirror / arrive / carry / hurry / current"}, {"key": "wr", "tag": "wr → /r/（w静音）", "label": "wr = /r/（w 不发音）", "desc": "wr 组合中 w 完全静音，只发 /r/。这个 w 在古英语/中古英语时代是真实发音的（write 过去读作 /wriːt/），约 17 世纪起 w 在 r 前静音成了惯例。认准规律：见到 wr 开头直接读 /r/。例词：write / wrong / wrist / wrap / wrestle"}, {"key": "rh", "tag": "rh → /r/（h静音）", "label": "rh = /r/（h 不发音）", "desc": "rh 是希腊语借词的拼写遗留（Greek ρ 转写为 rh），在英语里 h 从未发音，直接读 /r/。这类词多属学术或科学词汇：rhythm（ρυθμός）、rhinoceros（ρινόκερος）、rhapsody（ῥαψῳδία）。例词：rhyme / rhythm / rhino"}], "rhymeChains": [{"label": "-ight / -ight (/aɪt/)", "words": ["right", "write", "night", "bright", "fight", "might"]}, {"label": "-ry / -rry (/ri/)", "words": ["carry", "marry", "hurry", "worry", "sorry", "story"]}, {"label": "-ong / -ong (/ɔːŋ/)", "words": ["wrong", "strong", "long", "song", "belong"]}], "words": [{"word": "report", "hl": "r", "levels": ["非托福"], "ipa": "/rɪˈpɔːrt/", "subgroup": "r", "meaning": "v. 报告；报道；向……汇报  n. 报告；报道", "core": "一个信使从远处跑回来，把看到的东西一字不差地讲给等着的人听——带回来的动作是关键。", "senses": [{"gloss": "v. 报告；汇报", "logic": "从核心「把信息带回来」直接衍生——把看到/查到的东西带回给接收方。", "en": "The committee will report its findings next Tuesday.", "zh": "委员会将于下周二报告调查结果。"}, {"gloss": "n. 报告", "logic": "带回来的信息本身，动词名词化。", "en": "The annual report is due by Friday.", "zh": "年度报告周五截止。"}, {"gloss": "v. 报到（report to work）", "logic": "把自己这个人「带回来」到指定地点——传递的不是信息而是自身的存在。", "en": "New employees must report to HR at 9 a.m.", "zh": "新员工必须在早上九点到人力资源部报到。"}, {"gloss": "v. 报道（新闻）", "logic": "把事件信息带回来给公众，对象从上级扩展为大众。", "en": "She was sent to report on the election.", "zh": "她被派去报道选举。"}], "derivatives": [{"w": "reporter", "gloss": "记者（把信息带回来的人）"}, {"w": "reportedly", "gloss": "据报道（据带回的信息说）"}, {"w": "reportage", "gloss": "报道文学；报道文体"}], "etymology": "拉丁语 reportare = re-（回） + portare（携带）= 「把消息带回来」→ 报告。同根词：port（港口，原义「带入之处」）、transport（运输）、import（进口）。", "roots": [{"part": "re-", "meaning": "回、向"}, {"part": "-port- (portare)", "meaning": "携带、搬运"}], "phonetics": "词首 /r/：舌尖翘起后卷，不碰上颚，气流平稳出口，声带振动。重音在后 re-PORT。与 sport、port 押韵。", "tip": "report to sb（向某人汇报）vs report on sth（报道某事）——介词不同、义不同。", "examples": [{"en": "The committee will report its findings next Tuesday.", "zh": "委员会将于下周二报告调查结果。", "source": "造句"}, {"en": "report to work", "zh": "「到岗、报到」——职场高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "announce", "gloss": "宣布", "ipa": "/əˈnaʊns/", "note": "「宣布」，比 report 更正式公开，强调官方发布而非信息传递"}, {"w": "document", "gloss": "记录在案", "ipa": "/ˈdɒkjumənt/", "note": "「记录在案」，比 report 更强调书面留存证据"}, {"w": "cover", "gloss": "报道（新闻）", "ipa": "/ˈkʌvər/", "note": "新闻义「报道（某事件）」，比 report 更口语；cover a story（报道一则新闻）"}], "antonyms": [{"w": "conceal", "note": "隐瞒、不上报"}], "nuance": "report 强调把信息传回给某个接收方（汇报给上级 / 告知公众）；document 侧重书面记录留存；cover（新闻义）侧重持续跟踪报道某事件，report 只是单次发布。"}, {"word": "reduce", "hl": "r", "levels": ["非托福"], "ipa": "/rɪˈdjuːs/", "subgroup": "r", "meaning": "v. 减少；降低；使处于（某种状态）", "core": "把一条拉出去的绳子往回拽——东西还在，但范围变小了、数量变少了。", "senses": [{"gloss": "v. 减少；降低", "logic": "从核心「往回引导」直接衍生——把数量/规模往回拉，让它变小。", "en": "The company reduced its carbon emissions by 30% in five years.", "zh": "该公司在五年内将碳排放减少了30%。"}, {"gloss": "v. 使处于某种状态（reduce sb to tears）", "logic": "把复杂的事物往回压，压到最简单、最原始的状态——人被打回原形。", "en": "Her cruel words reduced him to tears.", "zh": "她刻薄的话把他逼哭了。"}], "derivatives": [{"w": "reduction", "gloss": "减少；缩减量"}, {"w": "reductive", "gloss": "简化的；还原的（过于简单化）"}, {"w": "reducer", "gloss": "减压器；还原剂"}], "etymology": "拉丁语 reducere = re-（回） + ducere（引导、带领）= 「把东西带回更小的地方」→ 缩减。同根词：produce（产出）、educate（引出潜力）、introduce（引入）。", "roots": [{"part": "re-", "meaning": "回、往回"}, {"part": "-duce (ducere)", "meaning": "引导、带领"}], "phonetics": "词首 /r/，舌尖卷起，气流稳出，不颤动。重音在后 re-DUCE。注意美式发音 /rɪˈduːs/，英式 /rɪˈdjuːs/。", "examples": [{"en": "The company reduced its carbon emissions by 30% in five years.", "zh": "该公司在五年内将碳排放减少了30%。", "source": "造句"}, {"en": "reduce sb to tears", "zh": "「使某人泪崩」——「使陷入某种状态」的典型用法。", "source": "高频搭配"}], "synonyms": [{"w": "decrease", "gloss": "减少", "ipa": "/dɪˈkriːs/", "note": "「减少」，与 reduce 最接近，但 decrease 更常指自然下降，reduce 更常指人为削减"}, {"w": "cut", "gloss": "削减", "ipa": "/kʌt/", "note": "口语化的削减，比 reduce 更强势果断；cut costs（削减成本）"}, {"w": "minimize", "gloss": "最小化", "ipa": "/ˈmɪnɪmaɪz/", "note": "「最小化」，比 reduce 更彻底，强调压到尽可能低"}], "antonyms": [{"w": "increase", "note": "增加"}, {"w": "expand", "note": "扩大"}], "nuance": "reduce 是最通用的「人为减少」，decrease 多描述自然趋势，cut 最口语且含砍掉的力度感，minimize 强调压到最低点。「reduce speed」是「降速」，「minimize risk」是「把风险降到最低」。"}, {"word": "remember", "hl": "r", "levels": ["非托福"], "ipa": "/rɪˈmembər/", "subgroup": "r", "meaning": "v. 记得；记住；转达问候", "core": "脑子里有一根看不见的线，往回一拉，过去的画面和感觉就又浮上来了。", "senses": [{"gloss": "v. 记得；回忆起", "logic": "从核心「再次想起」直接衍生——记忆被动地自然浮现。", "en": "I remember locking the door — I saw the key go into the lock.", "zh": "我记得锁了门——我看着钥匙插进去的。"}, {"gloss": "v. 记住（不要忘）", "logic": "核心的主动面——用力把那根线拽住，不让记忆滑走。", "en": "Remember to call your mother.", "zh": "记得给你妈打电话。"}, {"gloss": "v. 转达问候（Remember me to your parents）", "logic": "把「我」再次带到某人的记忆里——是一种人际间的记忆传递。", "en": "Please remember me to your family.", "zh": "请代我向你家人问好。"}], "derivatives": [{"w": "memory", "gloss": "记忆（名词）"}, {"w": "memorial", "gloss": "纪念碑；纪念的"}, {"w": "memorable", "gloss": "难忘的"}, {"w": "memorandum", "gloss": "备忘录（用来帮助记忆的文件）"}], "etymology": "拉丁语 rememorari = re-（再次） + memor（有记忆的）= 「再次想起」。同根词：memory（记忆）、memorial（纪念碑）、memorable（难忘的）——都含 mem- 记忆根。", "roots": [{"part": "re-", "meaning": "再次"}, {"part": "-member (memor)", "meaning": "记忆、心智"}], "phonetics": "词首 /r/ 卷舌近音，-mem- 是重读音节，词尾 -ber 轻读 /bər/。注意与 r 不接触上颚的发音。", "tip": "remember + to do（记得要做，任务未完成）vs remember + doing（记得做过，已完成）——时态决定含义。", "examples": [{"en": "I remember locking the door — I saw the key go into the lock.", "zh": "我记得锁了门——我看着钥匙插进去的。", "source": "造句"}, {"en": "Remember me to your parents.", "zh": "「代我向你父母问好。」——转达问候的正式用法。", "source": "高频搭配"}], "synonyms": [{"w": "recall", "gloss": "回忆起", "ipa": "/rɪˈkɔːl/", "note": "「回忆起」，比 remember 更强调主动搜索记忆的过程；recall details（回忆细节）"}, {"w": "recollect", "gloss": "追忆", "ipa": "/ˌrekəˈlekt/", "note": "「追忆」，比 recall 更正式、带有从碎片中重构记忆的含义，多用于书面"}, {"w": "retain", "gloss": "保留（在记忆中）", "ipa": "/rɪˈteɪn/", "note": "「保留（信息）在记忆中」，强调记忆的保持而非提取过程"}], "antonyms": [{"w": "forget", "note": "忘记"}, {"w": "overlook", "note": "忽略"}], "nuance": "remember 是被动「记得」（信息自然浮现），recall 是主动「回忆」（努力从记忆中检索），recollect 最正式且含重构记忆之意。「I remember her face」是自然想起，「I struggle to recall her name」是主动搜索。"}, {"word": "around", "hl": "r", "levels": ["非托福"], "ipa": "/əˈraʊnd/", "subgroup": "r", "meaning": "prep./adv. 在……周围；到处；大约；转变方向", "core": "在地上画一个圆，你站在圆心——四面八方都在这个圆的范围内，但圆边不锋利、模糊柔软。", "senses": [{"gloss": "prep./adv. 在……周围；环绕", "logic": "从核心「圆」直接衍生——物理空间的环绕位置。", "en": "They sat around the campfire.", "zh": "他们围坐在篝火旁。"}, {"gloss": "adv. 到处", "logic": "在圆圈范围内的各个方向移动——从环绕扩展到漫游。", "en": "There are about 200 students around the campus.", "zh": "校园里大约有200名学生。"}, {"gloss": "adv. 大约", "logic": "在某个数值周围转悠，没有钉死——从空间环绕抽象到数值范围。", "en": "The meeting will start around 3 p.m.", "zh": "会议大约下午三点开始。"}, {"gloss": "转变方向（turn around）", "logic": "在圆上掉个头——从圆的运动维度衍生。", "en": "Turn around and go back.", "zh": "掉头往回走。"}], "derivatives": [{"w": "round", "gloss": "圆的；一轮"}, {"w": "surround", "gloss": "包围（把圆放在外面）"}, {"w": "roundabout", "gloss": "迂回的；绕圈子的"}], "etymology": "古英语 on + round = 「在圆形/周围」，round 来自拉丁语 rotundus（圆的）。同根词：rotate（旋转）、round（圆）、surround（包围）。", "roots": [{"part": "a- (on)", "meaning": "在……上"}, {"part": "-round (rotundus)", "meaning": "圆、旋转"}], "phonetics": "词中 /r/：a- /ə/ 弱读，-round /raʊnd/ 重读，/r/ 在重读音节内依然要卷舌。", "examples": [{"en": "There are about 200 students around the campus.", "zh": "校园里大约有200名学生。", "source": "造句"}, {"en": "turn around", "zh": "「转身；扭转局面」——方向与比喻义的高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "approximately", "gloss": "大约", "ipa": "/əˈprɒksɪmətli/", "note": "「大约」义的正式书面替换，比 around 更学术；approximately 30 students"}, {"w": "surrounding", "gloss": "周围的", "ipa": "/səˈraʊndɪŋ/", "note": "「周围」义形容词，强调环绕的环境；the surrounding area（周边地区）"}, {"w": "throughout", "gloss": "遍及", "ipa": "/θruːˈaʊt/", "note": "「遍及」，比 around（到处）更强调覆盖每一角落；throughout the country（全国各地）"}], "antonyms": [], "nuance": "around 作「大约」时最口语（around 10 o'clock），approximately 是书面正式版；around 作「周围」时强调环绕位置，throughout 强调无死角覆盖全范围。"}, {"word": "right", "hl": "r", "levels": ["非托福"], "ipa": "/raɪt/", "subgroup": "r", "meaning": "adj. 正确的；右边的；合适的  adv. 正确地；直接地  n. 权利；右边  v. 纠正", "core": "一根笔直的木棍插在地上，不偏不斜，从哪个角度看都是正的。", "senses": [{"gloss": "adj. 正确的", "logic": "从「直」到「对」——物理上的直引申为道德/事实上的正。", "en": "You were right about the weather.", "zh": "你对天气的判断是对的。"}, {"gloss": "n. 权利", "logic": "直直属于你的东西、正当所得——从「正」到「应得的」。", "en": "You have the right to remain silent.", "zh": "你有权保持沉默。"}, {"gloss": "adj. 右边的", "logic": "右手是大多数人的「正手」——历史上「右=正」的文化惯例。「右」与「正」共用一词在许多语言中都存在，并非巧合。", "en": "Raise your right hand.", "zh": "举起你的右手。"}, {"gloss": "adv. 直接地（right away）", "logic": "走最短的直线——从物理直引申到方式直。", "en": "I'll be there right away.", "zh": "我马上就到。"}, {"gloss": "v. 纠正", "logic": "把歪的东西掰回直线——使恢复「正」的状态。", "en": "We need to right these wrongs.", "zh": "我们需要纠正这些错误。"}], "derivatives": [{"w": "righteous", "gloss": "正直的；正义的"}, {"w": "rightful", "gloss": "合法的；正当的"}, {"w": "upright", "gloss": "直立的；正直的"}], "etymology": "古英语 riht「笔直的、正当的」，日耳曼同根，与德语 recht（权利/右）同源。「笔直」→「正确」→「权利（正当所得）」，多义均从「直、正」延伸而来。", "roots": [{"part": "right（riht）", "meaning": "笔直的、正当的"}], "phonetics": "词首 /r/ 卷舌，-ight = /aɪt/（gh 静音），与 write、night、fight 押韵。注意和 wr 组的 write 同音——right 和 write 是完美同音词。", "tip": "right / write / rite / wright 四个同音词：right（正确/权利）、write（写）、rite（仪式）、wright（工匠，如 playwright 剧作家）。", "examples": [{"en": "You have the right to remain silent.", "zh": "「你有权保持沉默。」——Miranda 权利宣告，英语法律最高频句。", "source": "高频搭配"}, {"en": "right away", "zh": "「马上、立刻」——副词义最高频搭配之一。", "source": "高频搭配"}], "synonyms": [{"w": "correct", "gloss": "正确的", "ipa": "/kəˈrekt/", "note": "「正确」义最正式的近义词，多用于书面和正式场合；a correct answer（正确答案）"}, {"w": "appropriate", "gloss": "合适的", "ipa": "/əˈproʊpriət/", "note": "「合适」义，比 right 更正式；appropriate behavior（适当行为）"}, {"w": "privilege", "gloss": "特权", "ipa": "/ˈprɪvɪlɪdʒ/", "note": "「特权」，比 right（权利）更强调特殊性，right 是普遍权利，privilege 是特殊待遇"}], "antonyms": [{"w": "wrong", "note": "错误的；左边的（right 同组词）"}, {"w": "left", "note": "左边的"}], "nuance": "right 作「正确」时最口语，correct 更正式，accurate 强调精确度（数字/数据）。right 作「权利」是不可剥夺的基本权（human right），privilege 是可以被收回的特殊权利。"}, {"word": "river", "hl": "r", "levels": ["非托福"], "ipa": "/ˈrɪvər/", "subgroup": "r", "meaning": "n. 河，江；大量涌流的事物", "core": "一条宽宽的、亮晶晶的水带，从看不见的远处流过来，又流向看不见的远处，不停不歇。", "senses": [{"gloss": "n. 河；江", "logic": "核心意象本身就是定义——有名字的、流动的天然水道。", "en": "The Amazon River is the largest river by discharge in the world.", "zh": "亚马逊河是世界上流量最大的河流。"}, {"gloss": "n. 大量涌流（a river of tears）", "logic": "像河水一样源源不断涌来——从水的充沛和连续性引申。", "en": "She cried a river of tears.", "zh": "她泪如泉涌。"}], "derivatives": [{"w": "arrive", "gloss": "到达（同根：靠到岸边）"}, {"w": "riparian", "gloss": "河岸的"}, {"w": "rivulet", "gloss": "小溪"}], "etymology": "古法语 riviere，拉丁语 riparia（河岸地带），源自 ripa（河岸）。「在河岸上的东西」→ 河流。同根：arrive（到达，原义「靠近河岸」）、riparian（河岸的）。", "roots": [{"part": "river (ripa)", "meaning": "河岸，河流"}], "phonetics": "词首 /r/ 卷舌，重音在首 RIV-，-er 弱读 /ər/。注意 river 与 rr 组的 arrive 同根（ripa），词源可以互证。", "tip": "arrive 的词源是「ad-（靠近）+ ripa（河岸）」= 「靠到岸边」→ 到达，与 river 同根。", "examples": [{"en": "The Amazon River is the largest river by discharge in the world.", "zh": "亚马逊河是世界上流量最大的河流。", "source": "造句"}, {"en": "a river of tears", "zh": "「泪如泉涌」——比喻大量流淌的高频隐喻。", "source": "高频搭配"}], "synonyms": [{"w": "stream", "gloss": "溪流", "ipa": "/striːm/", "note": "「溪流」，比 river 更小，也可指抽象的「流」；a stream of traffic（车流）"}, {"w": "waterway", "gloss": "水道；航道", "ipa": "/ˈwɔːtərweɪ/", "note": "「水道、航道」，强调可通航的水路，比 river 更技术性"}, {"w": "torrent", "gloss": "湍流；急流", "ipa": "/ˈtɒrənt/", "note": "「湍流、急流」，比 river 更强调速度和力量；a torrent of abuse（一阵辱骂）"}], "antonyms": [], "nuance": "river 指较大的河流（可以有名字），stream 指较小的溪流，torrent 不是专有河流概念而是形容急速奔涌的流体（液体或比喻义）。"}, {"word": "read", "hl": "r", "levels": ["非托福"], "ipa": "/riːd/（现在时）/red/（过去时）", "subgroup": "r", "meaning": "v. 阅读；读出；显示（仪表数值）  n. 阅读", "core": "眼睛扫过一行行黑色符号，脑子里把它们翻译成画面和声音——像在解码一封只有你懂的密信。", "senses": [{"gloss": "v. 阅读；读", "logic": "从核心「解读符号」直接衍生——人主动解码文字。", "en": "She reads at least one book a week.", "zh": "她每周至少读一本书。"}, {"gloss": "v. 显示（仪表数值）", "logic": "仪表「告诉」你数字——从人读扩展到物「显示」信息，仿佛仪器也在对你说话。", "en": "The thermometer reads 38 degrees.", "zh": "温度计显示38度。"}, {"gloss": "v. 读懂；解读（read between the lines）", "logic": "阅读的深层隐喻——不光读字面，还读藏在字缝里的意思。", "en": "You need to read between the lines to understand what he really means.", "zh": "你得读懂字里行间的意思才能理解他真正想说什么。"}, {"gloss": "n. 阅读；读物", "logic": "动词名词化——一次阅读行为或一本可读的东西。", "en": "This book is a good read.", "zh": "这本书很好看。"}], "derivatives": [{"w": "reader", "gloss": "读者；阅读器"}, {"w": "reading", "gloss": "阅读；读数；解读"}, {"w": "readable", "gloss": "可读的；易读的"}, {"w": "misread", "gloss": "误读"}], "etymology": "古英语 rǣdan「解读、猜测、建议」，日耳曼同根，与德语 raten（猜测/建议）同源。原义是「解读符号」，后来专指阅读文字。riddle（谜语）与其同根——都要「解读」。", "roots": [{"part": "read（rǣdan）", "meaning": "解读、猜测"}], "phonetics": "词首 /r/ 卷舌，现在时 read = /riːd/（与 reed 同音），过去时 read = /red/（与 red 同音）。拼写相同、时态不同、发音不同——英语中罕见的特殊不规则动词。", "tip": "「I read it yesterday.」的 read 读 /red/，不是 /riːd/——靠语境判断时态，这是最常见的误读陷阱之一。", "examples": [{"en": "She reads at least one book a week.", "zh": "她每周至少读一本书。", "source": "造句"}, {"en": "read between the lines", "zh": "「读出字里行间的含义」——理解言外之意的高频习语。", "source": "高频搭配"}], "synonyms": [{"w": "study", "gloss": "研读", "ipa": "/ˈstʌdi/", "note": "「研读」，比 read 更强调认真钻研、消化吸收"}, {"w": "scan", "gloss": "扫读", "ipa": "/skæn/", "note": "「扫读」，比 read 更快速浅表，只抓关键信息；scan the page（扫视页面）"}, {"w": "peruse", "gloss": "仔细阅读", "ipa": "/pəˈruːz/", "note": "「仔细阅读」，正式书面语，比 read 更强调逐字细读（常被误以为是粗读）"}], "antonyms": [{"w": "write", "note": "写（阅读的对立动作）"}], "nuance": "read 是中性通用词，study 强调深度学习，scan 强调快速略读，peruse 在正式写作中表示仔细阅读（注意：peruse 不是「随便翻翻」，误用很常见）。"}, {"word": "rain", "hl": "r", "levels": ["非托福"], "ipa": "/reɪn/", "subgroup": "r", "meaning": "n. 雨；大量  v. 下雨；像雨一样落下", "core": "天上往下掉密密麻麻的水滴，打在脸上凉凉的、打在屋顶上沙沙响，没有停的意思。", "senses": [{"gloss": "n. 雨", "logic": "核心意象本身——从云层落下的水滴。", "en": "The rain started falling just after noon.", "zh": "中午刚过就开始下雨了。"}, {"gloss": "v. 下雨", "logic": "名词自然转动词。", "en": "It's raining heavily outside.", "zh": "外面下着大雨。"}, {"gloss": "n./v. 像雨一样大量落下", "logic": "从雨的特征引申——密集、大量、从天而降的势头。", "en": "A rain of arrows fell upon the soldiers.", "zh": "箭如雨下，落在士兵身上。"}], "derivatives": [{"w": "rainy", "gloss": "多雨的"}, {"w": "rainbow", "gloss": "彩虹"}, {"w": "rainfall", "gloss": "降雨量"}], "etymology": "古英语 regn，日耳曼同根，与德语 Regen 同源。古代无法控制天气，rain 因此衍生出「任意降落」→「大量涌来」的引申义。", "roots": [{"part": "rain（regn）", "meaning": "雨"}], "phonetics": "词首 /r/ 卷舌，-ain = /eɪn/（与 train、Spain、plain 押韵）。注意 rain / reign / rein 三者同音（/reɪn/）：雨 / 统治 / 缰绳。", "tip": "rain / reign / rein 同音三兄弟：rain（雨）、reign（帝王统治期）、rein（马缰绳）。", "examples": [{"en": "It never rains but it pours.", "zh": "「不鸣则已，一鸣惊人」（不下则已，一下倾盆）——英语谚语，意为「祸不单行」。", "source": "英语谚语"}, {"en": "a rain of arrows", "zh": "「箭如雨下」——大量涌来的比喻义，文学高频用法。", "source": "高频搭配"}], "synonyms": [{"w": "drizzle", "gloss": "毛毛雨", "ipa": "/ˈdrɪzl/", "note": "「毛毛雨」，比 rain 轻细，细密飘落；It's drizzling outside（外面下着毛毛雨）"}, {"w": "shower", "gloss": "阵雨", "ipa": "/ˈʃaʊər/", "note": "「阵雨」，比 rain 短促，来去迅速；a heavy shower（一场大阵雨）"}, {"w": "downpour", "gloss": "倾盆大雨", "ipa": "/ˈdaʊnpɔːr/", "note": "「倾盆大雨」，比 rain 强烈，短时间大量降雨"}], "antonyms": [{"w": "sunshine", "note": "阳光"}], "nuance": "rain 是通用词，drizzle 细密轻柔，shower 短促阵发，downpour 猛烈倾盆。天气预报中常见 scattered showers（零散阵雨）、heavy rain（大雨）、drizzle（毛毛雨）——三种表达指向的强度完全不同。"}, {"word": "arrive", "hl": "rr", "levels": ["非托福"], "ipa": "/əˈraɪv/", "subgroup": "rr", "meaning": "v. 到达；（时刻/机会）来临；取得成功", "core": "船头轻轻撞上木栈桥——咚的一声——长途奔波结束了，你到了。", "senses": [{"gloss": "v. 到达（目的地）", "logic": "从核心「靠岸」直接衍生——长途移动后抵达终点。", "en": "The package arrived three days later than expected.", "zh": "包裹比预期晚了三天才到。"}, {"gloss": "v. 来临（时刻/机会）", "logic": "时间点也像船一样「靠岸」——从空间到达引申到时间到来。", "en": "The moment of truth has arrived.", "zh": "关键时刻终于来了。"}, {"gloss": "v. 取得成功；成名", "logic": "在人生/事业上「到达」——比喻到达终点就是成功。", "en": "After years of struggle, she finally felt she had arrived.", "zh": "经过多年奋斗，她终于感觉自己成功了。"}], "derivatives": [{"w": "arrival", "gloss": "到达；到达者"}, {"w": "arriviste", "gloss": "新贵；暴发户（刚「到达」上层的人）"}], "etymology": "拉丁语 ad + ripa（河岸）= 「靠到岸边」→ 到达。古代旅行以水路为主，「抵达岸边」就是「到达目的地」。与 river、riparian 同根。", "roots": [{"part": "ar- (ad-)", "meaning": "向、靠近"}, {"part": "-rive (ripa)", "meaning": "河岸"}], "phonetics": "rr 在词中 a-RR-ive：a- /ə/ 弱读，rr 只发一个 /r/，前面元音 /ə/ 因 rr 保持短促；-ive /aɪv/ 重读。", "tip": "arrive at（小地点/抽象目的地）vs arrive in（大城市/国家）：arrive at the station / arrive in Tokyo。", "examples": [{"en": "The package arrived three days later than expected.", "zh": "包裹比预期晚了三天才到。", "source": "造句"}, {"en": "arrive at a conclusion", "zh": "「得出结论」——抽象目的地用法，托福阅读高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "reach", "gloss": "到达", "ipa": "/riːtʃ/", "note": "「到达」，比 arrive 更强调克服距离或困难；reach the summit（登顶）"}, {"w": "get to", "gloss": "到（口语）", "ipa": "/ɡet tuː/", "note": "最口语的「到达」，非正式场合可替换 arrive；get to the airport（到机场）"}, {"w": "land", "gloss": "着陆；抵达", "ipa": "/lænd/", "note": "「着陆/抵达」，多指飞机或从远方到来；land at Heathrow（降落希思罗）"}], "antonyms": [{"w": "depart", "note": "出发、离开"}, {"w": "leave", "note": "离开"}], "nuance": "arrive 强调「到达目的地」这一时刻，reach 更强调「经过努力克服距离」的过程，get to 最口语，land 专指从空中或水路到达。「arrive at a conclusion」只能用 arrive 或 reach，不能用 get to。"}, {"word": "carry", "hl": "rr", "levels": ["非托福"], "ipa": "/ˈkæri/", "subgroup": "rr", "meaning": "v. 携带；运输；传播；通过（法案）；（声音）传远", "core": "双手兜着东西、或车斗装着东西，稳稳当当从这里搬到那里——东西的重量在你身上，但目的地在前方。", "senses": [{"gloss": "v. 携带；搬运", "logic": "从核心「用车/手搬运」直接衍生——把东西从一地移到另一地。", "en": "She carried the heavy boxes up three flights of stairs.", "zh": "她把沉重的箱子搬上了三层楼梯。"}, {"gloss": "v. 传播（疾病/声音）", "logic": "病原体或声波被「搬运」到别处——从物理搬运引申到无形传播。", "en": "Mosquitoes can carry malaria.", "zh": "蚊子可以传播疟疾。"}, {"gloss": "v. 通过（法案/提案）", "logic": "把提案「搬运」过投票门槛——议会术语。", "en": "The motion was carried by a large majority.", "zh": "提案以绝大多数票通过。"}, {"gloss": "v.（声音）传到远处", "logic": "声波能「自己搬运」到远方——拟人化的物理描述。", "en": "His voice carries well in this hall.", "zh": "他的声音在这个大厅里传得很远。"}], "derivatives": [{"w": "carrier", "gloss": "搬运工；载体；带菌者"}, {"w": "carriage", "gloss": "马车；运费"}, {"w": "cargo", "gloss": "货物（被搬运的东西）"}], "etymology": "古北法语 carier「用车运输」，源自拉丁语 carrus（四轮车）。与 car（汽车，载运工具）、cargo（货物）同根。", "roots": [{"part": "carry (carrus)", "meaning": "车，用车运输"}], "phonetics": "rr 在 ca-RRY：重音在首音节 CAR-，rr 只发一个 /r/，-ry 弱读 /ri/。前元音 /æ/ 因 rr 保持短促。", "examples": [{"en": "She carried the heavy boxes up three flights of stairs.", "zh": "她把沉重的箱子搬上了三层楼梯。", "source": "造句"}, {"en": "carry out / carry on", "zh": "「执行/继续」——phrasal verb 两大最高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "transport", "gloss": "运输", "ipa": "/trænsˈpɔːrt/", "note": "「运输」，比 carry 更正式，强调从一地到另一地的系统性运送"}, {"w": "bear", "gloss": "承担；携带", "ipa": "/beər/", "note": "「承担、携带」，比 carry 更正式，含承受重量或责任之意；bear a burden（承担重担）"}, {"w": "convey", "gloss": "传递（信息/情感）", "ipa": "/kənˈveɪ/", "note": "「传递（信息/情感）」，比 carry 更抽象，侧重意义或情感的传达"}], "antonyms": [{"w": "drop", "note": "丢下、放下"}, {"w": "leave behind", "note": "留下、没带走"}], "nuance": "carry 是最通用的「携带」，bear 更正式且含「承受重量/责任」之感，transport 强调系统性大规模运输，convey 专用于抽象内容的传递（convey a message / convey emotion）。"}, {"word": "hurry", "hl": "rr", "levels": ["托福"], "ipa": "/ˈhɜːri/", "subgroup": "rr", "meaning": "v. 赶快；催促；匆忙地做  n. 急忙，匆忙", "core": "脚不沾地、气喘吁吁、手里东西快拿不住了——有人在后面催，或者心里有团火在烧。", "senses": [{"gloss": "v. 赶快；匆忙", "logic": "核心意象的直接表达——以高于正常速度行动。", "en": "We need to hurry if we want to catch the train.", "zh": "我们要赶火车的话得快点。"}, {"gloss": "v. 催促", "logic": "让别人也进入「快」的状态——使动用法。", "en": "Stop hurrying me — I need five more minutes.", "zh": "别催我了——我还需要五分钟。"}, {"gloss": "n. 急忙；匆忙", "logic": "动词名词化——急的状态本身。", "en": "She left in a hurry without saying goodbye.", "zh": "她匆匆忙忙走了，没说再见。"}], "derivatives": [{"w": "hurried", "gloss": "匆忙的；仓促的"}, {"w": "unhurried", "gloss": "不慌不忙的"}], "etymology": "16世纪起出现于英语，可能源自古英语 hyrran 或中古低地德语 hurren（快速移动）。「快速移动」→ 急忙。", "roots": [{"part": "hurry（可能源自 hurren）", "meaning": "快速移动"}], "phonetics": "rr 在 hu-RRY：重音在首音节 HUR-，/ɜː/ 是一个「中央化」的元音（嘴形放松、舌居中），rr 压短使前元音更集中。注意 hurry 的元音是 /ɜː/ 而非 /ʌ/（不是 curry 的感觉）。", "tip": "in a hurry（匆忙）vs in no hurry（不急）——介词短语用法，比 hurry 动词更高频。", "examples": [{"en": "Stop hurrying me — I need five more minutes.", "zh": "别催我了——我还需要五分钟。", "source": "造句"}, {"en": "in a hurry / hurry up", "zh": "「匆忙中 / 快点」——两个高频固定搭配。", "source": "高频搭配"}], "synonyms": [{"w": "rush", "gloss": "仓促赶；冲刺", "ipa": "/rʌʃ/", "note": "「仓促赶」，比 hurry 更强烈，含冲刺或匆忙不顾后果的意味；rush to the hospital（冲去医院）"}, {"w": "hasten", "gloss": "赶快；加速（正式）", "ipa": "/ˈheɪsn/", "note": "「赶快、加速」，正式书面词，比 hurry 更庄重；hasten the process（加快进程）"}, {"w": "dash", "gloss": "飞奔", "ipa": "/dæʃ/", "note": "「飞奔」，比 hurry 更强调速度和突发性；dash out of the room（冲出房间）"}], "antonyms": [{"w": "dawdle", "note": "拖拖拉拉"}, {"w": "linger", "note": "逗留、磨蹭"}], "nuance": "hurry 是最通用的「赶快」，rush 更猛烈带有冲刺感，hasten 是正式书面词（常用于加速过程而非人的行为），dash 强调短距离急速冲跑。「Hurry up!」是日常催促，「Rush to the ER」强调紧急性。"}, {"word": "current", "hl": "rr", "levels": ["托福"], "ipa": "/ˈkɜːrənt/", "subgroup": "rr", "meaning": "adj. 当前的，现行的  n.（水/气/电）流；潮流，趋势", "core": "你站在河里，水从脚边流过——这一刻的水碰到你的脚踝，下一瞬间已经流走了，永远是新的。", "senses": [{"gloss": "adj. 当前的；现行的", "logic": "从「水流」的时间维度引申——正在流动中的「这一瞬间」，即「现在进行中」的。", "en": "The current economic situation requires immediate action.", "zh": "当前的经济形势需要立即采取行动。"}, {"gloss": "n. 水流；气流；电流", "logic": "核心本义——流动的物质（水、空气、电子）。", "en": "The current carried the boat downstream.", "zh": "水流把小船冲到了下游。"}, {"gloss": "n. 潮流；趋势", "logic": "从物理流到社会流的隐喻——思想或事件的「流动方向」。", "en": "He always goes against the current of popular opinion.", "zh": "他总是逆着主流舆论的方向走。"}], "derivatives": [{"w": "currency", "gloss": "货币（流通物）；通用性"}, {"w": "currently", "gloss": "当前；目前"}, {"w": "occur", "gloss": "发生（字面：流向这里，同根 curr-）"}, {"w": "course", "gloss": "路线；进程（流经的路径，同根）"}], "etymology": "拉丁语 currens（流动的），是 currere（跑、流动）的现在分词形式。同根词：occur（发生，字面「流向这里」）、course（路线）、currency（货币，字面「流通的」）、corridor（走廊）。", "roots": [{"part": "curr- (currere)", "meaning": "跑、流动"}, {"part": "-ent", "meaning": "形容词/名词后缀"}], "phonetics": "rr 在 cu-RRENT：重音首音节 CUR-，/ɜː/ 是中央化元音，rr 使前元音短促；-ent 弱读 /ənt/。", "tip": "current 家族：current（流动）→ currency（货币=流通物）→ occur（事件发生=流到这里）→ course（流经的路线）。", "examples": [{"en": "The current economic situation requires immediate action.", "zh": "当前的经济形势需要立即采取行动。", "source": "造句"}, {"en": "go against the current", "zh": "「逆流而上」——字面义与比喻义（反潮流）均高频。", "source": "高频搭配"}], "synonyms": [{"w": "present", "gloss": "当前的；现在的", "ipa": "/ˈpreznt/", "note": "「当前」义，比 current 更通用，current 暗含「正在进行/流动中」的动态感"}, {"w": "contemporary", "gloss": "当代的", "ipa": "/kənˈtempərəri/", "note": "「当代的」，比 current 更强调与当下时代同步，范围更广（可指整个时代）"}, {"w": "flow", "gloss": "流；流动", "ipa": "/floʊ/", "note": "「流」义的近义词，比 current（名词）更口语，current 多指海流/气流/电流，flow 更泛"}], "antonyms": [{"w": "outdated", "note": "过时的"}, {"w": "former", "note": "以前的、前任的"}], "nuance": "current 形容词强调「此时此刻正在进行」（current news = 最新新闻），present 更静态（the present situation），contemporary 指「属于这个时代的」（a contemporary artist）。作名词时，current 特指物理的水流/电流，flow 更抽象通用。"}, {"word": "mirror", "hl": "rr", "levels": ["非托福"], "ipa": "/ˈmɪrər/", "subgroup": "rr", "meaning": "n. 镜子；真实反映  v. 反映；与……相似", "core": "一片光滑的银面，你站过去它就照出你的样子——一模一样的另一份，只是左右反了。", "senses": [{"gloss": "n. 镜子", "logic": "核心意象——能照出映像的光滑表面。", "en": "She checked her reflection in the mirror.", "zh": "她对着镜子检查自己的样子。"}, {"gloss": "v. 反映；倒映", "logic": "名词转动词——像镜子一样精确呈现。", "en": "The lake's surface mirrored the mountains perfectly.", "zh": "湖面完美地倒映出山峦的轮廓。"}, {"gloss": "v. 与……相似；是……的镜像", "logic": "两个事物彼此镜子般精准映射——抽象比喻。", "en": "The child's behavior mirrors that of her parents.", "zh": "这个孩子的行为跟父母一模一样。"}], "derivatives": [{"w": "admire", "gloss": "欣赏（同根 mir-：朝着它凝视）"}, {"w": "miracle", "gloss": "奇迹（同根：让人凝视的事物）"}, {"w": "mirage", "gloss": "海市蜃楼（同根：视觉幻象）"}], "etymology": "古法语 mireor，源自拉丁语 mirare（凝视）。同根词：admire（欣赏，字面「朝着它凝视」）、miracle（奇迹，让人凝视的事物）。", "roots": [{"part": "mir- (mirare)", "meaning": "凝视、惊叹"}], "phonetics": "rr 在 mi-RROR：重音首音节 MIR-，/ɪ/ 因 rr 保持短促；第二个音节 -ror 弱读 /rər/，词末出现两次 /r/。", "examples": [{"en": "The lake's surface mirrored the mountains perfectly.", "zh": "湖面完美地倒映出山峦的轮廓。", "source": "造句"}, {"en": "rearview mirror / mirror image", "zh": "「后视镜 / 镜像」——两个高频复合词。", "source": "高频搭配"}], "synonyms": [{"w": "reflect", "gloss": "反映；反射", "ipa": "/rɪˈflekt/", "note": "「反映/反射」，动词义比 mirror 更广，可指光线、声音、情感的反映"}, {"w": "replicate", "gloss": "复制", "ipa": "/ˈreplɪkeɪt/", "note": "「复制」，比 mirror 更强调精确重复；replicate an experiment（重复实验）"}, {"w": "echo", "gloss": "回响；呼应", "ipa": "/ˈekoʊ/", "note": "「回响/呼应」，比 mirror 更侧重声音或观点的重复传达"}], "antonyms": [{"w": "distort", "note": "扭曲、失真（镜子不再真实反映）"}], "nuance": "mirror 强调「如镜子一般精确地呈现」（The data mirrors reality），reflect 更广，光、情绪、观点都可以 reflect；echo 偏向声音或观点的重复回响；replicate 强调精确复制（多用于实验）。"}, {"word": "narrow", "hl": "rr", "levels": ["非托福"], "ipa": "/ˈnæroʊ/", "subgroup": "rr", "meaning": "adj. 狭窄的；勉强的（narrow escape）；心胸狭隘的  v. 使变窄；缩小（范围）  n. 海峡", "core": "两堵墙从两边挤过来，中间只剩一条小缝——侧着身子勉强能过，背包得摘下来。", "senses": [{"gloss": "adj. 狭窄的", "logic": "核心意象——物理宽度非常有限。", "en": "The path was too narrow for two people to walk side by side.", "zh": "这条小路太窄，两个人无法并排行走。"}, {"gloss": "adj. 勉强的（narrow escape）", "logic": "从空间窄引申到「余地极小」——差一点点就失败。", "en": "He made a narrow escape from the burning building.", "zh": "他从着火的大楼里死里逃生。"}, {"gloss": "adj. 心胸狭隘的", "logic": "从物理窄到心理窄的隐喻——思想/心胸的空间很小。", "en": "He has a very narrow view of the world.", "zh": "他对世界的看法非常狭隘。"}, {"gloss": "v. 缩小范围", "logic": "让选择的空间「变窄」——使动用法。", "en": "We need to narrow down the list of candidates to three.", "zh": "我们需要把候选人名单缩小到三位。"}], "derivatives": [{"w": "narrowly", "gloss": "勉强地；狭窄地"}, {"w": "narrowness", "gloss": "狭窄；狭隘"}], "etymology": "古英语 nearu「狭窄、受限制的」，日耳曼同根。从物理「狭窄」引申出「狭隘（思想）」和「勉强（差一点就失败）」两个引申义。", "roots": [{"part": "narrow（nearu）", "meaning": "狭窄、受限制的"}], "phonetics": "rr 在 na-RROW：重音首音节 NAR-，/æ/ 因 rr 保持短促；-row 弱读 /roʊ/。", "tip": "a narrow escape（死里逃生）= 差一点就出事，勉强脱险。narrow 的核心意象是「只留了很小的余地」。", "examples": [{"en": "The path was too narrow for two people to walk side by side.", "zh": "这条小路太窄，两个人无法并排行走。", "source": "造句"}, {"en": "narrow down the options", "zh": "「缩小选项范围」——动词义的高频搭配，面试和学术写作常见。", "source": "高频搭配"}], "synonyms": [{"w": "slim", "gloss": "细长的；渺茫的", "ipa": "/slɪm/", "note": "「细长」，比 narrow 更侧重人或物体纵向的苗条；a slim chance（渺茫的机会）"}, {"w": "limited", "gloss": "有限的", "ipa": "/ˈlɪmɪtɪd/", "note": "「有限的」，抽象义上与 narrow 重叠；a narrow/limited range（狭小的范围）"}, {"w": "constrict", "gloss": "压缩；使变窄", "ipa": "/kənˈstrɪkt/", "note": "「压缩、使变窄」，动词义，比 narrow（动词）更强调来自外部的压缩"}], "antonyms": [{"w": "wide", "note": "宽阔的"}, {"w": "broad", "note": "广阔的；宽容的"}], "nuance": "narrow 形容物理宽度（narrow street）或思想（narrow-minded），wide/broad 相对。形容「机会渺茫」时 narrow 和 slim 都可用（a narrow chance / a slim chance），但 slim 更常用于此义；narrow 作动词「缩小范围」是独有用法（narrow down choices）。"}, {"word": "write", "hl": "wr", "levels": ["非托福"], "ipa": "/raɪt/", "subgroup": "wr", "meaning": "v. 写，书写；著作；开（支票/处方）", "core": "手握笔，笔尖划过白纸，留下黑色痕迹——脑子里那些飘着的东西，被一颗一颗钉在纸面上。", "senses": [{"gloss": "v. 写；书写", "logic": "核心意象——在表面上留下文字符号。原义是「划刻」（古人在木板上刻符文），后来变成用笔写。", "en": "She writes her journal every night before bed.", "zh": "她每晚睡前写日记。"}, {"gloss": "v. 著作；创作", "logic": "书写的高级形式——不只是记录，而是创造新的文字作品。", "en": "He has written three novels.", "zh": "他已经写了三部小说。"}, {"gloss": "v. 开（支票/处方）", "logic": "正式填写具有法律效力的文件——书写的功能性用法。", "en": "The doctor wrote me a prescription.", "zh": "医生给我开了一张处方。"}], "derivatives": [{"w": "writer", "gloss": "作家；作者"}, {"w": "writing", "gloss": "写作；笔迹；著作"}, {"w": "rewrite", "gloss": "重写"}, {"w": "handwritten", "gloss": "手写的"}], "etymology": "古英语 wrītan「划刻、书写」，原指在木板或石头上刻划符文。日耳曼同根，与瑞典语 rita（画线）同源。/w/ 在 17 世纪前仍然发音，之后静音至今。", "roots": [{"part": "write（wrītan）", "meaning": "划刻、书写"}], "phonetics": "wr 中 w 完全静音，只发 /r/，整个词读 /raɪt/——与 right（正确）、rite（仪式）完全同音。记住 wr 开头，永远只发 /r/，不存在 /w/ 的痕迹。", "tip": "write / right / rite / wright 同音四兄弟。写文章时打 rite 或 right 就变成别的词了——靠上下文+拼写辨别。", "examples": [{"en": "She writes her journal every night before bed.", "zh": "她每晚睡前写日记。", "source": "造句"}, {"en": "write off", "zh": "「注销（债务/损失）；完全放弃」——财务和口语两义的高频短语动词。", "source": "高频搭配"}], "synonyms": [{"w": "compose", "gloss": "创作；撰写", "ipa": "/kəmˈpoʊz/", "note": "「创作、撰写」，比 write 更正式，强调有意图的创作；compose a letter（写信）"}, {"w": "draft", "gloss": "起草", "ipa": "/drɑːft/", "note": "「起草」，比 write 更强调初稿性质；draft a proposal（起草提案）"}, {"w": "inscribe", "gloss": "刻写；题写", "ipa": "/ɪnˈskraɪb/", "note": "「刻写、题写」，比 write 更正式，多指在硬质材料上刻写或题词"}], "antonyms": [{"w": "read", "note": "阅读（写的对立动作）"}, {"w": "erase", "note": "擦去、删除"}], "nuance": "write 最通用，compose 强调创作性（compose music / compose an essay），draft 强调草稿性质，inscribe 强调在实体物上刻写（inscribe a ring）。「write a report」是通用表达，「compose a report」显得更文雅正式。"}, {"word": "wrong", "hl": "wr", "levels": ["非托福"], "ipa": "/rɒŋ/", "subgroup": "wr", "meaning": "adj. 错误的；不对的；出了问题的  adv. 错误地  n. 错误；不公正  v. 冤枉（某人）", "core": "一根本来该直的木棍，被人用力一拧——歪了。歪的东西站不稳、对不齐、怎么看都不对。", "senses": [{"gloss": "adj. 错误的", "logic": "从「歪斜」到「不对」——偏离了正确的直线。", "en": "Your answer is wrong — try again.", "zh": "你的答案不对——再试试。"}, {"gloss": "adj. 出了问题的（something is wrong）", "logic": "事物偏离了正常运行轨道——从对错扩展到功能异常。", "en": "Something went terribly wrong during the launch.", "zh": "发布过程中出现了严重的差错。"}, {"gloss": "adj. 不道德的", "logic": "行为偏离了道德直线——从事实错到道德错。", "en": "It's wrong to lie to your friends.", "zh": "对朋友撒谎是不对的。"}, {"gloss": "v. 冤枉（某人）", "logic": "对某人做出不公正的行为——使动用法，「使某人受到不公正」。", "en": "He felt deeply wronged by the accusations.", "zh": "他觉得自己被这些指控深深冤枉了。"}], "derivatives": [{"w": "wrongful", "gloss": "不正当的；不公正的"}, {"w": "wrongly", "gloss": "错误地；不公正地"}, {"w": "wrongdoing", "gloss": "坏事；不法行为"}], "etymology": "古诺斯语 rangr「歪斜的、不公正的」，字面意思是「扭曲的」。「偏离了直线」→ 「错的」。同根：wring（拧、扭）——都含「扭曲」的核心意象。", "roots": [{"part": "wrong（rangr）", "meaning": "歪斜的、不公正的"}], "phonetics": "wr 静音 w，读 /r/，整词 /rɒŋ/。注意 -ong 在此读 /ɒŋ/（英式），美式 /ɔːŋ/，与 strong、long 押韵。", "tip": "go wrong（出差错）、what's wrong（怎么了）、wrong number（打错号码）——三个最高频固定搭配，覆盖日常90%用法。", "examples": [{"en": "Something went terribly wrong during the launch.", "zh": "发布过程中出现了严重的差错。", "source": "造句"}, {"en": "Two wrongs don't make a right.", "zh": "「以错误回应错误，解决不了问题。」——英语经典谚语。", "source": "英语谚语"}], "synonyms": [{"w": "incorrect", "gloss": "不正确的", "ipa": "/ˌɪnkəˈrekt/", "note": "「不正确」，与 wrong 最近，但更正式；an incorrect answer（错误答案）"}, {"w": "mistaken", "gloss": "错误的；搞错了的", "ipa": "/mɪˈsteɪkən/", "note": "「错误的（判断/理解）」，比 wrong 更强调基于误解而非蓄意；You're mistaken（你搞错了）"}, {"w": "flawed", "gloss": "有缺陷的", "ipa": "/flɔːd/", "note": "「有缺陷的」，比 wrong 更强调内在的瑕疵，多用于方法/论点/设计"}], "antonyms": [{"w": "right", "note": "正确的"}, {"w": "correct", "note": "正确的"}], "nuance": "wrong 最通用，可指答案、行为、判断的错误；incorrect 更正式，多用于事实性错误（数据、答案）；mistaken 强调基于误解的判断错误（I was mistaken about her intentions）；flawed 暗示内在结构有问题（a flawed argument）。"}, {"word": "wrist", "hl": "wr", "levels": ["非托福"], "ipa": "/rɪst/", "subgroup": "wr", "meaning": "n. 手腕", "core": "手和前臂连接的那个关节——你转动手掌的时候，就是这里在扭。细的、硬的、可以摸到骨头。", "senses": [{"gloss": "n. 手腕", "logic": "核心意象——连接手和前臂的可扭转关节。与 writhe（扭动）同族，手腕是身体上做扭转动作的关节。", "en": "She sprained her wrist during the tennis match.", "zh": "她在网球比赛中扭伤了手腕。"}], "derivatives": [{"w": "wristwatch", "gloss": "手表（戴在手腕上的表）"}, {"w": "wristband", "gloss": "腕带；手环"}], "etymology": "古英语 wrist，日耳曼同根，与德语 Rist（脚背/手腕）同源。核心义是「可以扭转的关节」，与 writhe（扭动）同族——wrist 是身体上能做扭转动作的关节。", "roots": [{"part": "wrist（wrist）", "meaning": "可扭转的关节"}], "phonetics": "wr 静音 w，读 /r/，整词 /rɪst/。音节简单，但注意不要把 wr 读成 /wr/。wrist 是学习 wr 规律的最好锚定词——部位明确，发音清晰。", "tip": "wrist watch（手表，戴在手腕上）是最佳记忆锚：看表→看手腕→wrist。", "examples": [{"en": "She sprained her wrist during the tennis match.", "zh": "她在网球比赛中扭伤了手腕。", "source": "造句"}, {"en": "a slap on the wrist", "zh": "「轻描淡写的惩罚」——习语，比喻处罚太轻。", "source": "高频搭配"}], "synonyms": [{"w": "joint", "gloss": "关节", "ipa": "/dʒɔɪnt/", "note": "「关节」，比 wrist 更泛指所有关节；wrist 是 joint 的一种"}, {"w": "forearm", "gloss": "前臂", "ipa": "/ˈfɔːrɑːrm/", "note": "「前臂」，wrist 连接手（hand）和前臂（forearm）的部位"}], "antonyms": [], "nuance": "wrist 是专有解剖词，没有精确的同义词。习语「a slap on the wrist」（象征性惩罚）在新闻和评论中高频出现，需要整体记忆。"}, {"word": "wrap", "hl": "wr", "levels": ["托福"], "ipa": "/ræp/", "subgroup": "wr", "meaning": "v. 包裹；缠绕；（非正式）完成拍摄  n. 包装材料；披肩；（影视）杀青", "core": "拿一张纸或者一块布，把东西放在中间，左边折过来，右边折过来，最后什么都看不见了——干干净净包在里面。", "senses": [{"gloss": "v. 包裹；包起来", "logic": "核心意象——用材料把东西卷起来覆盖住。", "en": "She carefully wrapped the gift in silver paper.", "zh": "她用银色包装纸仔细地包好了礼物。"}, {"gloss": "v. 缠绕", "logic": "包裹的一种方式——用带状物绕在物体上而不是折纸。", "en": "He wrapped a bandage around his ankle.", "zh": "他用绷带缠住了脚踝。"}, {"gloss": "v./n. 杀青；完成拍摄", "logic": "拍摄「包装完毕」——电影行业黑话，把一天的拍摄像礼物一样打好包收工。", "en": "That's a wrap! Great work, everyone.", "zh": "杀青了！大家辛苦了。"}], "derivatives": [{"w": "wrapper", "gloss": "包装纸；封套"}, {"w": "wrapping", "gloss": "包装材料"}, {"w": "unwrap", "gloss": "拆开包装"}], "etymology": "中古英语 wrappen，可能源自古丹麦语 wrappe（裹）。核心义「把东西卷起来包住」，引申出完成包装→拍摄「包装」完毕→杀青。", "roots": [{"part": "wrap（wrappen）", "meaning": "包裹、缠绕"}], "phonetics": "wr 静音 w，读 /r/，整词 /ræp/——与 rap（说唱/敲打）完全同音。辨别靠语境和拼写。", "tip": "wrap（包裹）vs rap（说唱/敲打）——同音词，拼写不同。That's a wrap!（杀青了！）是影视现场结束拍摄的标志性宣告。", "examples": [{"en": "She carefully wrapped the gift in silver paper.", "zh": "她用银色包装纸仔细地包好了礼物。", "source": "造句"}, {"en": "wrap up / That's a wrap!", "zh": "「总结完成 / 杀青了！」——两个固定搭配，前者通用，后者影视专用。", "source": "高频搭配"}], "synonyms": [{"w": "envelop", "gloss": "包住；笼罩", "ipa": "/ɪnˈveləp/", "note": "「包住、笼罩」，比 wrap 更正式，多形容光、雾、感觉将某物包围；enveloped in fog（被雾笼罩）"}, {"w": "cover", "gloss": "覆盖", "ipa": "/ˈkʌvər/", "note": "「覆盖」，比 wrap 更宽泛，不强调缠绕动作；cover with a blanket（盖上毯子）"}, {"w": "bundle", "gloss": "捆绑成束", "ipa": "/ˈbʌndl/", "note": "「捆绑成束」，比 wrap 更强调把多件东西绑在一起；bundle up（裹紧/打成包）"}], "antonyms": [{"w": "unwrap", "note": "拆开包装"}, {"w": "expose", "note": "暴露、揭开"}], "nuance": "wrap 强调用材料把东西卷起来覆盖（wrap a gift），envelop 更强调被整体包围的状态（enveloped in darkness），cover 只需盖住表面不需要缠绕，bundle 强调捆扎多件东西成一束。"}, {"word": "rhyme", "hl": "rh", "levels": ["托福"], "ipa": "/raɪm/", "subgroup": "rh", "meaning": "n. 韵，押韵；押韵词；韵文  v. 押韵；用韵文写", "core": "两个词的尾巴撞到了一起，发出完全一样的声音——像喊了一声听到了回音。", "senses": [{"gloss": "n. 押韵", "logic": "核心定义——词尾音的重复。来自希腊语 rhythmos（有规律的流动），音韵是声音的规律重复。", "en": "'Moon' and 'June' rhyme — they share the same /uːn/ ending.", "zh": "moon 和 June 押韵——都以 /uːn/ 结尾。"}, {"gloss": "n. 押韵词", "logic": "押韵的具体实例——名词化。", "en": "Can you think of a rhyme for 'orange'?", "zh": "你能想出一个跟 orange 押韵的词吗？"}, {"gloss": "n. 韵文；儿歌（nursery rhyme）", "logic": "以特征（押韵）指代整体（押韵的诗歌）。", "en": "She sang a nursery rhyme to the baby.", "zh": "她给宝宝唱了一首童谣。"}], "derivatives": [{"w": "rhymer", "gloss": "押韵诗人"}, {"w": "rhyming", "gloss": "押韵的"}, {"w": "rhythm", "gloss": "节奏（同源：有规律的流动）"}], "etymology": "希腊语 rhythmos（节奏、流动）经拉丁语 rithmus 进入古法语 rime，英语借入。原来拼作 rime，16世纪受 rhythm（同源）影响改拼为 rhyme，h 从未发音。", "roots": [{"part": "rh- (rhythmos)", "meaning": "节奏、规律流动"}], "phonetics": "rh 中 h 完全静音，直接发 /r/，整词 /raɪm/——与 time、climb 押韵（讽刺：rhyme 这个押韵词本身也在押韵）。", "tip": "rhyme 与 rhythm 同源，都来自希腊语 rhythmos。rhyme 是音韵上的重复（词末音相同），rhythm 是时间上的规律（强弱交替）。", "examples": [{"en": "'Moon' and 'June' rhyme — they share the same /uːn/ ending.", "zh": "moon 和 June 押韵——都以 /uːn/ 结尾。", "source": "造句"}, {"en": "nursery rhyme", "zh": "「儿歌、童谣」——固定搭配，指传统儿童押韵诗歌（如 Jack and Jill）。", "source": "高频搭配"}], "synonyms": [{"w": "verse", "gloss": "诗行；韵文", "ipa": "/vɜːrs/", "note": "「诗行；韵文」，比 rhyme 更广，verse 不要求押韵（free verse 自由诗），rhyme 特指有押韵"}, {"w": "meter", "gloss": "韵律；格律", "ipa": "/ˈmiːtər/", "note": "「韵律、格律」，指诗歌的节奏模式，与 rhyme（音韵）是诗歌的两个不同维度"}, {"w": "alliteration", "gloss": "头韵", "ipa": "/əˌlɪtəˈreɪʃn/", "note": "「头韵」，词首音相同（如 she sells sea shells），与 rhyme（词尾音相同）是不同的音韵手法"}], "antonyms": [], "nuance": "rhyme 是词尾音的重复（cat / hat），alliteration 是词首音的重复（big bad bear），meter/rhythm 是节拍的规律，verse 是最宽泛的「诗」。记忆诗歌术语时：rhyme = end，alliteration = start，meter = beat。"}, {"word": "rhythm", "hl": "rh", "levels": ["托福"], "ipa": "/ˈrɪðəm/", "subgroup": "rh", "meaning": "n. 节奏；规律性的起伏；（生活/自然的）节律", "core": "心跳——咚、咚、咚——一下重一下轻，永远不会乱。没有心跳就没有生命，没有节奏就没有音乐。", "senses": [{"gloss": "n. 节奏（音乐/语言）", "logic": "从核心「有规律的流动」直接衍生——声音的强弱交替。", "en": "The drummer kept a steady rhythm throughout the performance.", "zh": "鼓手在整场演出中保持了稳定的节奏。"}, {"gloss": "n. 节律（生物/自然）", "logic": "从声音节奏扩展到生命体内部的周期性规律——心跳、呼吸、睡眠都是 rhythm。", "en": "Jet lag disrupts your body's natural circadian rhythm.", "zh": "时差会打乱你身体的自然昼夜节律。"}], "derivatives": [{"w": "rhythmic", "gloss": "有节奏的"}, {"w": "rhythmically", "gloss": "有节奏地"}, {"w": "arrhythmia", "gloss": "心律不齐（a- 否定 + rhythm + -ia 病症）"}, {"w": "rhyme", "gloss": "押韵（同源：声音的有规律重复）"}], "etymology": "希腊语 rhythmos「有规律的流动」，源自 rhein（流动）。与 rhyme 同根，都描述有规律的重复。rhythm 强调时间上的强弱交替，rhyme 强调音位上的重复。", "roots": [{"part": "rh- (rhein)", "meaning": "流动"}, {"part": "-ythm (rhythmos)", "meaning": "有规律的流动"}], "phonetics": "rh 中 h 静音，发 /r/。整词 /ˈrɪðəm/：rhythm 是「全哑音节」——th = /ð/，最后的 -m 没有元音支撑（/ðm/）。这是英语中著名的「无元音单词」，两个辅音 /ð/ 和 /m/ 之间实际有个极弱的过渡音。", "tip": "记拼写口诀：Rhythms Have Your Two Hips Moving（每个单词首字母拼出 RHYTHM）。", "examples": [{"en": "The drummer kept a steady rhythm throughout the performance.", "zh": "鼓手在整场演出中保持了稳定的节奏。", "source": "造句"}, {"en": "biological rhythm / circadian rhythm", "zh": "「生物节律 / 昼夜节律」——科学高频术语，托福阅读常见。", "source": "高频搭配"}], "synonyms": [{"w": "beat", "gloss": "节拍", "ipa": "/biːt/", "note": "「节拍」，比 rhythm 更口语，强调单个强拍；the beat of a drum（鼓声节拍）"}, {"w": "cadence", "gloss": "韵律；节奏", "ipa": "/ˈkeɪdəns/", "note": "「节奏、韵律」，比 rhythm 更正式，多用于朗读/演讲的语调起伏；a slow cadence（舒缓的韵律）"}, {"w": "tempo", "gloss": "速度；节奏", "ipa": "/ˈtempoʊ/", "note": "「速度、节奏」，来自音乐，比 rhythm 更强调快慢，可量化（tempo = 120 bpm）"}], "antonyms": [{"w": "chaos", "note": "混乱、无序"}, {"w": "irregularity", "note": "不规律"}], "nuance": "rhythm 是最宽泛的节奏概念（音乐/语言/自然规律），beat 是最小的节拍单位（具体的强弱点），tempo 是速度的快慢，cadence 更偏语言/演讲的语调节律。「She has a good sense of rhythm」是天赋感，「The tempo is too fast」是具体的速度问题。"}, {"word": "rhino", "hl": "rh", "levels": ["非托福"], "ipa": "/ˈraɪnoʊ/", "subgroup": "rh", "meaning": "n. 犀牛（rhinoceros 的缩写）", "core": "一头巨大的灰色动物站在草原上，皮像铠甲一样厚，鼻子上顶着一只弯弯的角——像一辆活坦克。", "senses": [{"gloss": "n. 犀牛（rhinoceros 的口语缩写）", "logic": "核心意象——鼻子上长角的厚皮动物。rhin- = 鼻子，ceros = 角，「鼻子上长角的东西」。", "en": "The black rhino is critically endangered due to poaching.", "zh": "由于盗猎，黑犀牛已极度濒危。"}], "derivatives": [{"w": "rhinoceros", "gloss": "犀牛（正式全称）"}, {"w": "rhinitis", "gloss": "鼻炎（rhin- = 鼻 + -itis = 炎症）"}, {"w": "rhinoplasty", "gloss": "鼻整形手术（rhin- + -plasty = 塑形）"}], "etymology": "希腊语 rhinokeros = rhis（鼻子）+ keras（角）= 「鼻子上长角的动物」。rhin- 根还出现在：rhinitis（鼻炎）、rhinoplasty（鼻整形手术）。rh 是希腊语 ρ 的标准转写。", "roots": [{"part": "rhin- (rhis)", "meaning": "鼻子"}, {"part": "-o (缩写)", "meaning": "rhinoceros 的口语缩写"}], "phonetics": "rh 中 h 静音，只发 /r/，整词 /ˈraɪnoʊ/。rh 这个组合本质上就是希腊字母 ρ（rho）的拉丁化拼写，在所有 rh 开头的英语词里，h 永远静音。", "tip": "rhin-（鼻子）这个词根：rhinitis（鼻炎）、rhinoplasty（鼻整形）、rhinoceros（犀牛=鼻角兽）。学会词根，整族词都认识了。", "examples": [{"en": "The black rhino is critically endangered due to poaching.", "zh": "由于盗猎，黑犀牛已极度濒危。", "source": "造句"}, {"en": "rhino horn trade", "zh": "「犀牛角贸易」——环境保护议题高频词组。", "source": "高频搭配"}], "synonyms": [{"w": "rhinoceros", "gloss": "犀牛（正式全称）", "ipa": "/raɪˈnɒsərəs/", "note": "正式全称，书面语；rhino 是口语缩写，在日常英语和新闻中更常见"}, {"w": "pachyderm", "gloss": "厚皮动物（旧分类词）", "ipa": "/ˈpækɪdɜːrm/", "note": "「厚皮动物」，旧式分类词，指大象、犀牛、河马等；古典生物学术语，现代分类学已不用"}], "antonyms": [], "nuance": "rhino 和 rhinoceros 意思完全相同，区别是语体：rhino 是口语和新闻常用缩写，rhinoceros 是正式书面和学术用词。pachyderm 是19世纪分类词，现代语境中多为幽默或文学用法。"}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

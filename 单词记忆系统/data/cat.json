@@ -1,0 +1,1298 @@
+{
+  "id": "cat",
+  "combo": "a",
+  "title": "/æ/ 扁口音家族",
+  "sound": "/æ/",
+  "subtitle": "闭音节里的 a：扁嘴、压舌、一口「哎」——cap 和 cape 是两个世界",
+  "intro": "/æ/ 是英语里最有力量感的元音之一：嘴角横拉、下颌微落、舌头压低，发出一个干脆的「哎」。它几乎只住在**闭音节**——音节以辅音结尾、没有哑 e：cat、map、hand。魔法 e 一旦加上（cap→cape、mad→made、plan→plane），a 立刻变成 /eɪ/，扁口变圆嘴，是两个完全不同的单词。记住这条红线，/æ/ 家族就不会再读错。多音节词中，/æ/ 藏在重读音节里：mán-age、rápid、tálent——重音落在哪里，哪里就扁口发 /æ/；轻读音节里的 a 则弱化成 /ə/。",
+  "subgroups": [
+    {
+      "key": "core",
+      "tag": "a = /æ/",
+      "label": "✅ a = /æ/",
+      "desc": "闭音节里的 a：cat、map、hand。音节末尾有辅音、没有哑 e，a 就读扁口 /æ/。对比记忆：cap /kæp/ → cape /keɪp/；mad /mæd/ → made /meɪd/；plan /plæn/ → plane /pleɪn/。"
+    },
+    {
+      "key": "multi",
+      "tag": "多音节里的 a",
+      "label": "a = /æ/（多音节重读）",
+      "desc": "travel、manage、rapid 等词，/æ/ 藏在重读音节里。重音落在哪里，哪里的 a 就扁口发 /æ/；非重读位置的 a 弱化为 /ə/（如 manage 的第二音节 -age = /ɪdʒ/）。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-at / -ack (/æt/ /æk/)",
+      "words": ["cat", "flat", "track", "black", "fact", "attack"]
+    },
+    {
+      "label": "-and / -and (/ænd/)",
+      "words": ["hand", "stand", "grand", "band", "land"]
+    },
+    {
+      "label": "-ap / -ag (/æp/ /æɡ/)",
+      "words": ["map", "cap", "bag", "flag", "drag"]
+    },
+    {
+      "label": "-an / -an (/æn/)",
+      "words": ["plan", "man", "scan", "span", "can"]
+    }
+  ],
+  "words": [
+    {
+      "word": "cat",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/kæt/",
+      "subgroup": "core",
+      "meaning": "n. 猫；（泛指）猫科动物",
+      "etymology": "古英语 catt，源自拉丁语 cattus，约公元 4 世纪随家猫驯化传入欧洲各语言。/æ/ 音位的最佳锚定词：单音节、闭音节、发音无争议。",
+      "roots": [
+        {"part": "cat（cattus）", "meaning": "家猫"}
+      ],
+      "phonetics": "k + a /æ/ + t，三个音素干净利落。嘴角拉开发扁「哎」，收 /t/ 轻弹。这是 /æ/ 音位的入门锚定词，学完它再看整个家族。",
+      "tip": "cat 是 /æ/ 的「看板词」：闭音节、只有一个 a、没有哑 e，是最纯粹的 /æ/ 示范。",
+      "core": "一种独立、安静、随时可以走开的生命体——猫科动物共有的那种「我自有主张」感。",
+      "senses": [
+        {
+          "gloss": "n. 家猫",
+          "logic": "核心意象直接对应：驯化后的小型猫科动物，是「猫科」的原型代表。",
+          "en": "The cat stretched lazily across the warm windowsill.",
+          "zh": "猫懒洋洋地伸展在温暖的窗台上。"
+        },
+        {
+          "gloss": "n. 猫科动物（泛指，正式语境）",
+          "logic": "从家猫扩展到整个猫科：狮、虎、豹共享同一种「独立猎手」的核心气质。",
+          "en": "The big cats of Africa face increasing habitat loss.",
+          "zh": "非洲的大型猫科动物面临日益严重的栖息地丧失。"
+        },
+        {
+          "gloss": "n. 风格潇洒的人（俚语）",
+          "logic": "猫的漫不经心和自信气质引申为对「酷」的人的形容，源自爵士乐文化。",
+          "en": "He's a real cool cat — always knows what to say.",
+          "zh": "他真是个潇洒的家伙，总知道该说什么。"
+        }
+      ],
+      "derivatives": [
+        {"w": "catfish", "gloss": "鲶鱼；网络上冒充他人者"},
+        {"w": "catnap", "gloss": "打盹，短暂小睡"},
+        {"w": "catlike", "gloss": "像猫一样的，敏捷轻盈的"}
+      ],
+      "examples": [
+        {
+          "en": "The cat sat on the mat and refused to move.",
+          "zh": "猫坐在垫子上，拒绝挪动。",
+          "source": "造句"
+        },
+        {
+          "en": "let the cat out of the bag",
+          "zh": "「无意中说漏嘴」——高频习语，与 bag 配合出现，两个 /æ/ 连珠。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "feline", "ipa": "/ˈfiːlaɪn/", "gloss": "猫科动物；猫科的", "note": "正式或文学语境指「猫科动物」，涵盖家猫和野猫，比 cat 范围更广"},
+        {"w": "kitty", "ipa": "/ˈkɪti/", "gloss": "小猫，猫咪（口语昵称）", "note": "口语昵称，专指小猫或宠物猫，比 cat 更亲昵"}
+      ],
+      "antonyms": [],
+      "nuance": "cat 是通用词，feline 用于科学或正式写作（feline behavior 猫科行为），kitty 用于日常亲昵称呼。「cool cat」是俚语，指风格潇洒的人。"
+    },
+    {
+      "word": "map",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/mæp/",
+      "subgroup": "core",
+      "meaning": "n. 地图；图示  v. 绘制地图；规划（map out）",
+      "etymology": "中世纪拉丁语 mappa mundi「世界布（图）」，mappa 意为「布、餐巾」——最早的地图画在布上。缩写为 map 后独立成词。",
+      "roots": [
+        {"part": "map（mappa）", "meaning": "布、图"}
+      ],
+      "phonetics": "m + a /æ/ + p，/æ/ 后接无声塞音 /p/，「哎」音清脆短促。对比：map /mæp/ vs. mape（非词）vs. make /meɪk/——有哑 e 就变 /eɪ/。",
+      "core": "把复杂空间「压扁」成一张平面来掌握全局——一种让不可知变可见的控制感。",
+      "senses": [
+        {
+          "gloss": "n. 地图",
+          "logic": "核心意象直接对应：把真实地理空间缩放、压扁到平面上，使人可以掌握全局。",
+          "en": "She spread the map on the table and traced the route with her finger.",
+          "zh": "她把地图铺在桌上，用手指描出路线。"
+        },
+        {
+          "gloss": "n. 图示，示意图（基因图谱等）",
+          "logic": "从地理空间扩展到任意复杂结构的「可视化平面」，原理相同：把看不见的关系画出来。",
+          "en": "Scientists published a detailed map of the human genome.",
+          "zh": "科学家发布了一张详尽的人类基因组图谱。"
+        },
+        {
+          "gloss": "v. 绘制地图；详细规划（map out）",
+          "logic": "由名词转为动词：像绘制地图一样把每个步骤、路径「铺开画清楚」。",
+          "en": "The team spent a week mapping out the product launch strategy.",
+          "zh": "团队花了一周时间详细规划产品发布策略。"
+        }
+      ],
+      "derivatives": [
+        {"w": "mapping", "gloss": "制图；映射；规划过程"},
+        {"w": "mapper", "gloss": "制图者；测绘员"},
+        {"w": "roadmap", "gloss": "路线图；（项目）规划蓝图"}
+      ],
+      "examples": [
+        {
+          "en": "She spread the map on the table and traced the route with her finger.",
+          "zh": "她把地图铺在桌上，用手指描出路线。",
+          "source": "造句"
+        },
+        {
+          "en": "map out a strategy",
+          "zh": "「规划策略」——动词义高频搭配，意为详细制订计划。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "chart", "ipa": "/tʃɑːrt/", "gloss": "图表；海图；绘制图表", "note": "「图表、海图」，比 map 更专业，多指航海图或数据图；chart a course（规划航线）"},
+        {"w": "plan", "ipa": "/plæn/", "gloss": "平面图；计划", "note": "「平面图」义时与 map 接近，但 plan 更强调建筑或区域的布局设计"}
+      ],
+      "antonyms": [],
+      "nuance": "map 侧重地理空间的再现，chart 多用于数据或航行，plan 侧重建筑和区域布局。「put on the map」是固定搭配，意为「让……出名」。"
+    },
+    {
+      "word": "hand",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/hænd/",
+      "subgroup": "core",
+      "meaning": "n. 手；指针；帮助；（扑克）一手牌  v. 递给，传递",
+      "etymology": "古英语 hand，日耳曼同根，与德语 Hand 同源。派生词极多：handle（把手/处理）、handy（方便的）、handful（一把）、handout（施舍/讲义）。",
+      "roots": [
+        {"part": "hand（handu）", "meaning": "手"}
+      ],
+      "phonetics": "h + a /æ/ + nd，/æ/ 后接鼻音 /n/，扁口「哎」带轻微鼻腔共鸣，再收 /d/。",
+      "tip": "hand 是英语构词大户：hand + le = handle，hand + y = handy，out + hand = outhand……遇到 hand 开头的复合词直接联想「手」。",
+      "core": "手——人类最直接的接触工具，延伸出「给予、控制、指示」等一切「手能做到的事」。",
+      "senses": [
+        {
+          "gloss": "n. 手（身体部位）",
+          "logic": "核心意象直接对应：人体末端的五指器官，是触摸、抓握、劳作的工具。",
+          "en": "She raised her hand to ask a question during the lecture.",
+          "zh": "她在讲座中举手提问。"
+        },
+        {
+          "gloss": "v. 递给，传递",
+          "logic": "手的核心动作之一是「从手到手的传递」，动词义直接从这个物理动作引申。",
+          "en": "He handed me the report without saying a word.",
+          "zh": "他一言不发地把报告递给我。"
+        },
+        {
+          "gloss": "n. 帮助，援手",
+          "logic": "「伸出手」是帮助的基本姿态，「give a hand」由此成为「帮一把」的固定表达。",
+          "en": "Could you give me a hand moving this desk?",
+          "zh": "你能帮我挪一下这张桌子吗？"
+        },
+        {
+          "gloss": "n. 指针（时钟、仪器）",
+          "logic": "时钟指针形似手指，指向特定刻度，由「手」引申而来。",
+          "en": "The minute hand moved slowly toward twelve.",
+          "zh": "分针缓缓移向十二点。"
+        },
+        {
+          "gloss": "n. 一手牌（扑克）",
+          "logic": "牌握在手中，「hand」指玩家手中持有的那组牌，由「手持」直接引申。",
+          "en": "She was dealt a terrible hand and still won the game.",
+          "zh": "她拿了一手烂牌，却依然赢了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "handle", "gloss": "把手；处理，应对"},
+        {"w": "handful", "gloss": "一把；难以管控的人或事"},
+        {"w": "handout", "gloss": "讲义；施舍物"}
+      ],
+      "examples": [
+        {
+          "en": "He handed me the report without saying a word.",
+          "zh": "他一言不发地把报告递给我。",
+          "source": "造句"
+        },
+        {
+          "en": "give sb a hand",
+          "zh": "「帮某人一把」——口语最高频的「帮助」表达之一。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "palm", "ipa": "/pɑːm/", "gloss": "手掌，手心", "note": "「手掌」，是 hand 的部位词，指手心那一面"},
+        {"w": "assist", "ipa": "/əˈsɪst/", "gloss": "帮助，协助", "note": "「帮助」义的近义词，比 hand（动词）更正式；assist sb with sth"}
+      ],
+      "antonyms": [],
+      "nuance": "hand（动词）是「递交」，侧重物理传递动作；pass 是「传递」，give 是「给予」——hand 比两者更强调「从手到手」的过程感。"
+    },
+    {
+      "word": "bag",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/bæɡ/",
+      "subgroup": "core",
+      "meaning": "n. 袋，包；（非正式）大量  v. 装入袋中；（俚）得到、抢到",
+      "etymology": "古诺尔斯语 baggi「捆、包」，北欧语系借入英语。动词义「抢到/得到」源自狩猎用语——把猎物装入袋中。",
+      "roots": [
+        {"part": "bag（baggi）", "meaning": "捆、包"}
+      ],
+      "phonetics": "b + a /æ/ + g，/æ/ 后接浊塞音 /ɡ/，嘴型扁开再圆收。注意 bag /bæɡ/ vs. bake /beɪk/——哑 e 改变一切。",
+      "core": "一个可以把东西「收进去」的容器——装载、容纳、收获的感觉。",
+      "senses": [
+        {
+          "gloss": "n. 袋，包（容器）",
+          "logic": "核心意象直接对应：用来装东西的柔性容器，从购物袋到旅行包皆是。",
+          "en": "She threw her bag over her shoulder and ran for the train.",
+          "zh": "她把包甩上肩膀，跑向火车。"
+        },
+        {
+          "gloss": "v. 装入袋中；（俚）抢先得到",
+          "logic": "从容器动作引申：把东西「收进去」，进而引申为狩猎中把猎物收进猎袋，再延伸为「抢到、搞到」。",
+          "en": "He managed to bag the last ticket before the show sold out.",
+          "zh": "他赶在演出售罄前抢到了最后一张票。"
+        },
+        {
+          "gloss": "n. 大量（非正式，bags of）",
+          "logic": "「一袋又一袋」→「大量、很多」，口语夸张用法，英式英语常见。",
+          "en": "Don't worry, we have bags of time before the deadline.",
+          "zh": "别担心，离截止日期还有大把时间。"
+        }
+      ],
+      "derivatives": [
+        {"w": "baggage", "gloss": "行李；（心理）包袱，历史负担"},
+        {"w": "beanbag", "gloss": "豆袋椅；沙包"},
+        {"w": "handbag", "gloss": "手提包（女士用）"}
+      ],
+      "examples": [
+        {
+          "en": "She threw her bag over her shoulder and ran for the train.",
+          "zh": "她把包甩上肩膀，跑向火车。",
+          "source": "造句"
+        },
+        {
+          "en": "a bag of tricks",
+          "zh": "「一肚子花招」——指某人掌握的所有技巧或手段。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "sack", "ipa": "/sæk/", "gloss": "麻袋，布袋；解雇（俚语）", "note": "「麻袋、布袋」，比 bag 更大更粗糙，也有「解雇」的俚语义"},
+        {"w": "pouch", "ipa": "/paʊtʃ/", "gloss": "小袋，口袋（小型专用）", "note": "「小袋、口袋」，比 bag 更小更精致，常指烟草袋或邮差包"}
+      ],
+      "antonyms": [],
+      "nuance": "bag 是最通用的「袋/包」，sack 偏大型粗布袋，pouch 偏小型专用袋。「in the bag」是固定搭配，意为「十拿九稳」（源自打猎把猎物装袋的确定感）。"
+    },
+    {
+      "word": "flag",
+      "hl": "a",
+      "levels": ["托福"],
+      "ipa": "/flæɡ/",
+      "subgroup": "core",
+      "meaning": "n. 旗帜，标志  v. 标记，标注；（精力）衰退",
+      "etymology": "16 世纪出现，来源不确定，可能源自低地德语 flagge 或斯堪的纳维亚语系。动词「精力衰退」义（flag after lunch）是独立发展，与「旗」无关，源自古英语 flacg「松弛」。",
+      "roots": [
+        {"part": "flag", "meaning": "旗帜；标记；松弛"}
+      ],
+      "phonetics": "fl- 连缀辅音 + a /æ/ + g，/fl/ 要连读流畅，/æ/ 扁口，再收 /ɡ/。",
+      "tip": "flag 作动词有两个截然不同的义：「标记」（flag a problem = 标出一个问题）和「精力衰减」（I'm flagging = 我撑不住了），托福阅读两种义均有出现。",
+      "core": "下垂与无力——旗帜在无风时软塌塌下挂的那一刻，是疲软、减退、失去张力的视觉原型；「标记」义是另一支独立语源，两支在此词汇合（注：两义历史上并非同一来源的直接引申，而是语义偶合）。",
+      "senses": [
+        {
+          "gloss": "n. 旗帜，旗（布制标志物）",
+          "logic": "核心意象之一：悬挂的布料，有风时招展，无风时下垂——旗帜同时包含「展示」与「下垂无力」两种状态。",
+          "en": "The national flag was raised at dawn in complete silence.",
+          "zh": "国旗在黎明时分于一片肃静中升起。"
+        },
+        {
+          "gloss": "v. 标记，标注（引起注意）",
+          "logic": "【注：此义源于另一词根「标志物」，与旗帜下垂感并无直接引申关系，属语义偶合。】用标记符号「插旗」在某处，使其从其余内容中凸显出来。",
+          "en": "The editor flagged several errors in the draft for revision.",
+          "zh": "编辑在草稿中标记了几处错误待修改。"
+        },
+        {
+          "gloss": "v. （精力、兴趣）衰退，减弱",
+          "logic": "源自古英语「松弛」义：旗帜无风时软塌下垂，正是精力不振、动力减退的形象写照；这一义与「旗帜」名词义在视觉上高度吻合，虽语源独立，意象却自然融合。",
+          "en": "After three hours of meetings, her concentration began to flag.",
+          "zh": "开了三个小时会议后，她的注意力开始涣散。"
+        }
+      ],
+      "derivatives": [
+        {"w": "flagship", "gloss": "旗舰；（品牌/机构的）核心代表产品或项目"},
+        {"w": "flagpole", "gloss": "旗杆"},
+        {"w": "flagging", "gloss": "日益减退的，越来越没劲的（形容词用法）"}
+      ],
+      "examples": [
+        {
+          "en": "The editor flagged several errors in the draft for revision.",
+          "zh": "编辑在草稿中标记了几处错误待修改。",
+          "source": "造句"
+        },
+        {
+          "en": "flag up a concern",
+          "zh": "「提出一个顾虑」——英式英语高频用法，相当于 raise a concern。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "banner", "ipa": "/ˈbænər/", "gloss": "旗帜；横幅；横幅广告", "note": "「旗帜/横幅」，比 flag 更强调展示性，多用于游行、广告横幅"},
+        {"w": "mark", "ipa": "/mɑːrk/", "gloss": "标记；做标记", "note": "「标记」义的近义，比 flag 更通用；mark a passage（标注一段文字）"},
+        {"w": "signal", "ipa": "/ˈsɪɡnəl/", "gloss": "信号；发出信号；示意", "note": "「发出信号/标示」，比 flag 更抽象，可指任何提示行为"}
+      ],
+      "antonyms": [
+        {"w": "ignore", "note": "忽视（标记义相对）"},
+        {"w": "energize", "note": "振奋精力（衰退义相对）"}
+      ],
+      "nuance": "flag（动词标记）比 mark 更强调「引起注意、提交审查」；signal 是更广义的示意。作「精力衰退」义时，flag 比 tire 更文学，比 exhaust 程度轻。"
+    },
+    {
+      "word": "plan",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/plæn/",
+      "subgroup": "core",
+      "meaning": "n. 计划；平面图  v. 计划，打算",
+      "etymology": "法语 plan「平面、平面图」，源自拉丁语 planus「平的」。建筑师先画「平面图」，再引申为「计划」。与 plane（飞机/平面）、plain（平原）同根。",
+      "roots": [
+        {"part": "plan（planus）", "meaning": "平面"}
+      ],
+      "phonetics": "pl- 连缀 + a /æ/ + n，经典对比：plan /plæn/ vs. plane /pleɪn/——加哑 e 音位突变为 /eɪ/。",
+      "core": "把将来要做的事「铺平摊开」看清楚——像建筑师把房间布局画在平面图上一样的全局预视感。",
+      "senses": [
+        {
+          "gloss": "n. 计划，方案",
+          "logic": "从「平面图」引申：把未来要做的步骤一一「摊开在纸上」，使模糊的将来变为可见可操作的路径。",
+          "en": "We need a clear plan before we start the project.",
+          "zh": "开始项目之前我们需要一个清晰的计划。"
+        },
+        {
+          "gloss": "n. 平面图，布局图（建筑/区域）",
+          "logic": "词源直接对应：源自拉丁语「平的」，建筑师画的楼层平面图是最初的本义。",
+          "en": "The architect unrolled the floor plan on the table.",
+          "zh": "建筑师把楼层平面图在桌上展开。"
+        },
+        {
+          "gloss": "v. 计划，打算（做某事）",
+          "logic": "名词动用：像绘制平面图一样事先安排、布局未来的行动。",
+          "en": "They are planning to open a second branch next year.",
+          "zh": "他们计划明年开设第二家分店。"
+        }
+      ],
+      "derivatives": [
+        {"w": "planning", "gloss": "规划；城市规划（urban planning）"},
+        {"w": "planner", "gloss": "规划者；日程本，计划手册"},
+        {"w": "blueprint", "gloss": "蓝图；详细计划（源自建筑制图）"}
+      ],
+      "examples": [
+        {
+          "en": "We need a clear plan before we start the project.",
+          "zh": "开始项目之前我们需要一个清晰的计划。",
+          "source": "造句"
+        },
+        {
+          "en": "go according to plan",
+          "zh": "「按计划进行」——高频短语，也常出现在否定式：things didn't go according to plan。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "scheme", "ipa": "/skiːm/", "gloss": "方案；计划；（贬）阴谋", "note": "「计划/方案」，英式英语中性（housing scheme），美式常带阴谋色彩"},
+        {"w": "strategy", "ipa": "/ˈstrætədʒi/", "gloss": "战略；长远规划", "note": "「战略」，比 plan 更宏观长期，多用于商业或军事"},
+        {"w": "blueprint", "ipa": "/ˈbluːprɪnt/", "gloss": "蓝图；详尽的执行方案", "note": "「蓝图/详细计划」，源自建筑制图，比 plan 更强调细节完备"}
+      ],
+      "antonyms": [
+        {"w": "improvise", "note": "即兴，无计划行事"}
+      ],
+      "nuance": "plan 是最通用的「计划」，strategy 层次更高更长期，scheme 在美式英语中带负面意味，blueprint 强调详尽的执行方案。「Plan B」是「备选方案」，是现代高频表达。"
+    },
+    {
+      "word": "stand",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/stænd/",
+      "subgroup": "core",
+      "meaning": "v. 站立；忍受；处于（某状态）  n. 立场；摊位；支架",
+      "etymology": "古英语 standan，日耳曼同根，与德语 stehen 同源。「站立」引申为「立场」（take a stand）和「忍受」（can't stand it）。",
+      "roots": [
+        {"part": "stand（standan）", "meaning": "站立"}
+      ],
+      "phonetics": "st- + a /æ/ + nd，/æ/ 后接鼻音 /n/ 再接 /d/，发音需要撑住扁口不提前收。",
+      "tip": "stand 的三大核心义：①物理站立（stand up）②忍受（can't stand noise）③立场（take a stand on）——托福写作三义都会考。",
+      "core": "「竖立、撑起来」——直立不倒的张力，引申出「忍得住」「表明立场」「占据一个位置」等一切「站着不动」的意象。",
+      "senses": [
+        {
+          "gloss": "v. 站立，站起来",
+          "logic": "核心意象直接对应：身体保持直立，对抗重力——这是所有引申义的物理原型。",
+          "en": "Everyone stood when the judge entered the courtroom.",
+          "zh": "法官进入法庭时，所有人都起立。"
+        },
+        {
+          "gloss": "v. 忍受，承受（常用否定）",
+          "logic": "「站得住」引申为「心理上承受得了」：can't stand = 撑不住、受不了，是内心的「站立极限」。",
+          "en": "I can't stand waiting in line for more than ten minutes.",
+          "zh": "我无法忍受排队超过十分钟。"
+        },
+        {
+          "gloss": "v. 处于（某状态），维持（某条件）",
+          "logic": "「站在某个位置不动」引申为「保持某种状态」，如 the offer still stands（这个提议仍然有效）。",
+          "en": "The record he set in 1998 still stands today.",
+          "zh": "他1998年创下的纪录至今仍未被打破。"
+        },
+        {
+          "gloss": "n. 立场，态度",
+          "logic": "「站在哪里」象征「持什么立场」：take a stand = 明确站出来表态，是政治和道德语境的高频用法。",
+          "en": "The senator took a firm stand against the proposed budget cuts.",
+          "zh": "这位参议员对拟议中的预算削减采取了坚定的反对立场。"
+        },
+        {
+          "gloss": "n. 摊位；展台；支架",
+          "logic": "「直立不倒的物体」引申为各类「支撑性结构」：摊位、展架、音乐架皆是。",
+          "en": "She bought fresh strawberries from a roadside stand.",
+          "zh": "她从路边摊买了新鲜草莓。"
+        }
+      ],
+      "derivatives": [
+        {"w": "standard", "gloss": "标准；旗帜（历史义，与 stand 同根）"},
+        {"w": "outstanding", "gloss": "杰出的；未解决的（从众人中「站出来」）"},
+        {"w": "withstand", "gloss": "承受，抵御（承受住冲击而不倒）"}
+      ],
+      "examples": [
+        {
+          "en": "I can't stand waiting in line for more than ten minutes.",
+          "zh": "我无法忍受排队超过十分钟。",
+          "source": "造句"
+        },
+        {
+          "en": "take a stand on",
+          "zh": "「在……上表明立场」——托福写作高频表达，意为明确支持或反对某事。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "tolerate", "ipa": "/ˈtɒləreɪt/", "gloss": "容忍，忍受（较正式）", "note": "「忍受」义的近义词，比 stand 更正式；tolerate noise（忍受噪音）"},
+        {"w": "endure", "ipa": "/ɪnˈdjʊər/", "gloss": "忍耐，持续承受", "note": "「忍受/持续」，比 stand 更强调长期承受；endure hardship（忍受艰苦）"},
+        {"w": "position", "ipa": "/pəˈzɪʃn/", "gloss": "立场；位置；态度", "note": "「立场/位置」义的近义，比 stand（名词）更正式；take a position（表明立场）"}
+      ],
+      "antonyms": [
+        {"w": "sit", "note": "坐（站立义相对）"},
+        {"w": "yield", "note": "屈服（立场义相对）"}
+      ],
+      "nuance": "stand（忍受义）比 tolerate 更口语，带更强的负面情绪（can't stand = 真的受不了）；endure 强调长期坚忍，语气更庄重。stand（立场义）比 position 更口语，带有「公开表态」的积极行动感。"
+    },
+    {
+      "word": "grand",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/ɡrænd/",
+      "subgroup": "core",
+      "meaning": "adj. 宏大的，壮观的；（非正式）极好的  n. （非正式）一千美元；（音乐）大钢琴",
+      "etymology": "古法语 grant/grand「大、宏伟」，源自拉丁语 grandis「大」。英语中用于表示「祖辈」关系：grand + father = grandfather（祖父）。",
+      "roots": [
+        {"part": "grand（grandis）", "meaning": "大、宏伟"}
+      ],
+      "phonetics": "gr- 连缀 + a /æ/ + nd，与 hand、stand 同韵，-and 韵脚家族。",
+      "core": "体量和气势上的「大」——不只是尺寸大，而是那种让人仰视、令人叹为观止的宏伟感。",
+      "senses": [
+        {
+          "gloss": "adj. 宏大的，壮观的",
+          "logic": "核心意象直接对应：规模巨大、气势宏伟，让人产生仰视感——grand piano（演奏会用大型钢琴）、grand canyon（大峡谷）。",
+          "en": "The grand ballroom was decorated with thousands of flowers.",
+          "zh": "宏大的舞厅用数千朵鲜花装饰一新。"
+        },
+        {
+          "gloss": "adj. 极好的（英式口语）",
+          "logic": "宏大→好到极点：在英式口语中，grand 弱化为一种随口的赞赏，「That's grand!」相当于「太好了！」。",
+          "en": "Oh, that's just grand — exactly what we needed.",
+          "zh": "哦，那太好了——正是我们需要的。"
+        },
+        {
+          "gloss": "n. 一千美元/英镑（口语）",
+          "logic": "【注：此义源于俚语，历史来源不完全确定，可能与「大额」的概念相关，但并非直接从「宏伟」义引申，属俚语偶合。】",
+          "en": "The repairs cost him five grand.",
+          "zh": "这次维修花了他五千块。"
+        }
+      ],
+      "derivatives": [
+        {"w": "grandeur", "gloss": "宏伟，壮观；（人的）高贵气质"},
+        {"w": "grandparent", "gloss": "祖父母，外祖父母（grand- 表祖辈关系）"},
+        {"w": "grandiose", "gloss": "宏大的；夸大的，不切实际的（含贬义）"}
+      ],
+      "examples": [
+        {
+          "en": "The grand ballroom was decorated with thousands of flowers.",
+          "zh": "宏大的舞厅用数千朵鲜花装饰一新。",
+          "source": "造句"
+        },
+        {
+          "en": "grand total / the grand finale",
+          "zh": "「总计 / 盛大压轴」——两个高频固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "magnificent", "ipa": "/mæɡˈnɪfɪsnt/", "gloss": "宏伟壮丽的，富丽堂皇的", "note": "「宏伟壮丽」，比 grand 更正式、更书面，强调视觉上的壮观"},
+        {"w": "splendid", "ipa": "/ˈsplendɪd/", "gloss": "辉煌的，极好的", "note": "「辉煌的、极好的」，与 grand 接近，偏英式用法"},
+        {"w": "majestic", "ipa": "/məˈdʒestɪk/", "gloss": "雄伟的，威严的", "note": "「雄伟威严」，比 grand 更强调庄严肃穆感，常用于自然景观"}
+      ],
+      "antonyms": [
+        {"w": "modest", "note": "朴素的、不张扬的"},
+        {"w": "humble", "note": "谦逊的、简陋的"}
+      ],
+      "nuance": "grand 强调规模宏大（grand plan = 宏图大志），magnificent 更侧重视觉的辉煌，majestic 带有自然的庄严感（a majestic mountain）。「grand」在英式口语中也可直接表示「很好」（That's grand! = 太好了！）。"
+    },
+    {
+      "word": "track",
+      "hl": "a",
+      "levels": ["托福"],
+      "ipa": "/træk/",
+      "subgroup": "core",
+      "meaning": "n. 轨道；跑道；（音乐）曲目；足迹  v. 追踪；跟踪",
+      "etymology": "中古荷兰语 trek「拖拉」，源自日耳曼语系，「留下的痕迹」→ 轨道、足迹，再引申为「追踪」和「跟踪」。",
+      "roots": [
+        {"part": "track（trek）", "meaning": "拖拉、痕迹"}
+      ],
+      "phonetics": "tr- 连缀 + a /æ/ + ck，/ck/ 读单个 /k/，/æ/ 扁口短促。",
+      "tip": "track record（过往记录）是托福写作高频表达；keep track of（持续追踪）和 lose track of（失去联系/记录）是常考搭配。",
+      "core": "移动留下的痕迹——无论是动物的足迹、火车的轨道还是音乐的一条录音带，都是「曾经移动过、留下了路径」的证明。",
+      "senses": [
+        {
+          "gloss": "n. 足迹；痕迹",
+          "logic": "核心意象直接对应：移动时在地面或雪地留下的印记，是「曾经走过」的物理证明。",
+          "en": "The hunters followed the animal's tracks deep into the forest.",
+          "zh": "猎人沿着动物的足迹深入林中。"
+        },
+        {
+          "gloss": "n. 轨道；跑道",
+          "logic": "「留下的路径」固化成固定线路：铁路轨道、田径跑道都是「反复行经的痕迹」被固定下来的结果。",
+          "en": "The train derailed when it hit a gap in the track.",
+          "zh": "火车在经过一处轨道缺口时脱轨。"
+        },
+        {
+          "gloss": "v. 追踪，跟踪",
+          "logic": "沿着「痕迹」走就是「追踪」：追踪卫星、追踪销售数据，都是沿着移动轨迹保持同步记录。",
+          "en": "Scientists used satellites to track the migration patterns of the whales.",
+          "zh": "科学家使用卫星追踪鲸鱼的迁徙规律。"
+        },
+        {
+          "gloss": "n. （音乐/影音）曲目，音轨",
+          "logic": "录音带或唱片上的「一条轨道」就是一首歌——物理上是磁带/光碟上刻出的路径，概念上延伸为「一首曲目」。",
+          "en": "The third track on the album became an instant classic.",
+          "zh": "专辑的第三首曲目一经发行便成为经典。"
+        }
+      ],
+      "derivatives": [
+        {"w": "tracker", "gloss": "追踪者；追踪设备（GPS tracker）"},
+        {"w": "racetrack", "gloss": "赛马场；赛车跑道"},
+        {"w": "soundtrack", "gloss": "电影原声带；音轨"}
+      ],
+      "examples": [
+        {
+          "en": "Scientists used satellites to track the migration patterns of the whales.",
+          "zh": "科学家使用卫星追踪鲸鱼的迁徙规律。",
+          "source": "造句"
+        },
+        {
+          "en": "keep track of / lose track of",
+          "zh": "「持续追踪 / 失去记录」——托福写作常考的两个反义搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "monitor", "ipa": "/ˈmɒnɪtər/", "gloss": "监测，监控；显示器", "note": "「监测」，比 track 更系统，强调持续观察和记录；monitor progress（监测进展）"},
+        {"w": "trace", "ipa": "/treɪs/", "gloss": "追溯；痕迹；描摹", "note": "「追踪/描摹」，比 track 更强调追溯来源；trace the origins（追溯起源）"},
+        {"w": "trail", "ipa": "/treɪl/", "gloss": "跟踪；小径；轨迹", "note": "「跟踪/小径」，比 track 更强调跟随痕迹；trail a suspect（跟踪嫌疑人）"}
+      ],
+      "antonyms": [
+        {"w": "lose", "note": "失去追踪"}
+      ],
+      "nuance": "track 强调持续记录变化轨迹（track sales 追踪销售），monitor 更强调系统性观察（monitor patients 监测病人），trace 侧重追溯到源头（trace back to）。"
+    },
+    {
+      "word": "black",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/blæk/",
+      "subgroup": "core",
+      "meaning": "adj. 黑色的；（咖啡）不加奶的；（情形）暗淡的  n. 黑色；黑人（需注意语境）  v. 使变黑；（英）抵制",
+      "etymology": "古英语 blæc「黑、深色」，日耳曼同根。有趣的是，古英语 blæc 同时也是「苍白」的意思——两个含义后来分化，dark 一支演变成现代 black。",
+      "roots": [
+        {"part": "black（blæc）", "meaning": "黑色"}
+      ],
+      "phonetics": "bl- 连缀 + a /æ/ + ck，/æ/ 之后的 /k/ 无声收尾，整体干脆。",
+      "core": "光线的彻底缺席——黑暗、吸收一切而不反射的颜色，由此延伸出「秘密、威胁、凶兆」等带有不透明感的意象。",
+      "senses": [
+        {
+          "gloss": "adj. 黑色的",
+          "logic": "核心意象直接对应：不反射光线的颜色，是所有延伸义的视觉出发点。",
+          "en": "She wore a simple black dress to the interview.",
+          "zh": "她穿着一件简单的黑色连衣裙去面试。"
+        },
+        {
+          "gloss": "adj. （情形）暗淡的，悲观的",
+          "logic": "黑暗=看不见出路：black mood（阴郁情绪）、black day（倒霉的一天），用「无光」来形容前景灰暗。",
+          "en": "It was a black day for the company when the deal fell through.",
+          "zh": "交易告吹的那天对公司来说是惨淡的一天。"
+        },
+        {
+          "gloss": "adj. （咖啡）不加奶、不加糖的",
+          "logic": "不添加任何白色（牛奶）的东西，保持原始的黑——这是从颜色义直接对应到饮料描述的实用引申。",
+          "en": "He always drinks his coffee black, no sugar.",
+          "zh": "他总是喝清咖啡，不加糖。"
+        },
+        {
+          "gloss": "v. （英式）抵制，封锁（black out / black）",
+          "logic": "「涂黑」引申为「封锁、屏蔽」：black out（停电；审查删除），工会 black（抵制某雇主），都是「使信息/流通变黑、不透明」的逻辑。",
+          "en": "The union voted to black all deliveries to the factory.",
+          "zh": "工会投票决定抵制所有运往该工厂的货物。"
+        }
+      ],
+      "derivatives": [
+        {"w": "blackout", "gloss": "停电；意识丧失；新闻封锁"},
+        {"w": "blackmail", "gloss": "勒索，敲诈（black 此处取「威胁」义）"},
+        {"w": "blacklist", "gloss": "黑名单；列入黑名单"}
+      ],
+      "examples": [
+        {
+          "en": "The sky turned black moments before the storm hit.",
+          "zh": "暴风雨来临前，天空瞬间变黑。",
+          "source": "造句"
+        },
+        {
+          "en": "black and white / in the black",
+          "zh": "「非黑即白；有盈余」——前者指非此即彼，后者（财务）指账目盈余。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "dark", "ipa": "/dɑːrk/", "gloss": "深色的；黑暗的；阴郁的", "note": "「深色的/黑暗的」，比 black 更泛，描述颜色深或光线不足；dark clouds（乌云）"},
+        {"w": "gloomy", "ipa": "/ˈɡluːmi/", "gloss": "阴郁的，沉闷的（氛围或情绪）", "note": "「阴郁的」，多指情绪或氛围，比 black 更强调心理感受；a gloomy outlook（悲观的前景）"}
+      ],
+      "antonyms": [
+        {"w": "white", "note": "白色"},
+        {"w": "bright", "note": "明亮的（情形义相对）"}
+      ],
+      "nuance": "black 在财务语境中「in the black」= 盈利（账本用黑墨水记盈余），「in the red」= 亏损——这对反义搭配在商业写作中高频出现。"
+    },
+    {
+      "word": "fact",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/fækt/",
+      "subgroup": "core",
+      "meaning": "n. 事实；实情",
+      "etymology": "拉丁语 factum「已做之事」，是 facere（做）的过去分词。与 factor（因素）、factory（工厂）、manufacture（制造）同根——都含「做、制作」的核心义。",
+      "roots": [
+        {"part": "fact（factum）", "meaning": "已做之事"},
+        {"part": "fac- (facere)", "meaning": "做、制作"}
+      ],
+      "phonetics": "f + a /æ/ + ct，/æ/ 后接辅音群 /kt/，扁口「哎」收尾要果断。",
+      "core": "「已经发生过、已经完成的事」——事实的坚不可摧感来自它已经「做成」，是不能被撤销的既成之物。",
+      "senses": [
+        {
+          "gloss": "n. 事实，客观存在的情况",
+          "logic": "核心意象直接对应：已经「做成」的事，不依赖观点而存在，是可被核实的客观单元。",
+          "en": "The fact that she succeeded despite the obstacles is remarkable.",
+          "zh": "她在重重障碍下仍然成功，这一事实令人称道。"
+        },
+        {
+          "gloss": "n. 实情，真实情况（in fact / as a matter of fact）",
+          "logic": "由单个可查证的「事实」延伸到「实际情况」，用于修正错误认知或补充信息——in fact（事实上）是最高频的连接词义。",
+          "en": "I thought she was nervous, but in fact she was just focused.",
+          "zh": "我以为她很紧张，但实际上她只是在专注。"
+        }
+      ],
+      "derivatives": [
+        {"w": "factor", "gloss": "因素；要素（影响结果的「已做之事」之一）"},
+        {"w": "factual", "gloss": "基于事实的，事实性的"},
+        {"w": "artifact", "gloss": "人工制品；（数据中的）伪像（art- + fact = 人手做出的东西）"}
+      ],
+      "examples": [
+        {
+          "en": "The fact that she succeeded despite the obstacles is remarkable.",
+          "zh": "她在重重障碍下仍然成功，这一事实令人称道。",
+          "source": "造句"
+        },
+        {
+          "en": "in fact / as a matter of fact",
+          "zh": "「事实上」——连接词高频用法，用于修正或补充前面的陈述。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "reality", "ipa": "/riˈæləti/", "gloss": "现实；实际情况", "note": "「现实」，比 fact 更宏观，强调客观存在的总体状态"},
+        {"w": "truth", "ipa": "/truːθ/", "gloss": "真相；真理", "note": "「真相/真理」，比 fact 更哲学，含有「应然」的道德维度"},
+        {"w": "evidence", "ipa": "/ˈevɪdəns/", "gloss": "证据；佐证", "note": "「证据」，比 fact 更强调可被验证和引用，多用于论证"}
+      ],
+      "antonyms": [
+        {"w": "fiction", "note": "虚构"},
+        {"w": "myth", "note": "谬误、神话（非真实）"}
+      ],
+      "nuance": "fact 是「客观可查证的单个事实」，truth 是「更广泛的真相或真理」，evidence 是「支持论点的证据」。「fact-check」（事实核查）是现代高频词组。"
+    },
+    {
+      "word": "happen",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/ˈhæpən/",
+      "subgroup": "multi",
+      "meaning": "v. 发生；碰巧（happen to do）",
+      "etymology": "中古英语 happen「碰巧遇到」，源自古诺尔斯语 happ「运气、机遇」。与 happy（幸运→快乐）、perhaps（per + hap = 凭运气）同根。",
+      "roots": [
+        {"part": "hap（happ）", "meaning": "运气、机遇"},
+        {"part": "-en", "meaning": "动词后缀"}
+      ],
+      "phonetics": "重音在首音节 HÁP- = /hæp/，/æ/ 扁口；-pen 弱读 /pən/。注意 hap- 里的 a 是重读 /æ/，不是 /eɪ/。",
+      "core": "「机遇降临」——happen 词根含「运气」，事情发生总带有某种「就这么来了、不是谁设计的」的偶然降临感。",
+      "senses": [
+        {
+          "gloss": "v. 发生（不可控的事）",
+          "logic": "核心意象直接对应：事情「就这么发生了」，没有明显的主体意图，是自然界和生活中事件的默认发生方式。",
+          "en": "What happened next completely changed the course of history.",
+          "zh": "接下来发生的事彻底改变了历史的走向。"
+        },
+        {
+          "gloss": "v. 碰巧，恰好（happen to do）",
+          "logic": "「运气降临」直接引申：happen to know（碰巧知道）= 这件事「恰好落在我身上」，带有偶然性的礼貌表达。",
+          "en": "I happen to know his sister quite well.",
+          "zh": "我碰巧和他妹妹挺熟的。"
+        }
+      ],
+      "derivatives": [
+        {"w": "happening", "gloss": "事件；（艺术）偶发性表演（happenings）"},
+        {"w": "happy", "gloss": "快乐的（hap = 好运 → 幸运 → 快乐）"},
+        {"w": "perhaps", "gloss": "也许，可能（per + hap = 凭运气）"}
+      ],
+      "examples": [
+        {
+          "en": "What happened next completely changed the course of history.",
+          "zh": "接下来发生的事彻底改变了历史的走向。",
+          "source": "造句"
+        },
+        {
+          "en": "happen to",
+          "zh": "「碰巧……」——「I happen to know him」= 「我碰巧认识他」，语气比直接说「I know him」更委婉随意。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "occur", "ipa": "/əˈkɜːr/", "gloss": "发生（较正式）；出现", "note": "「发生」，比 happen 更正式，多用于书面；accidents occur（事故发生）"},
+        {"w": "take place", "gloss": "发生；举行（有一定安排的事件）", "note": "「发生/举行」，强调有意安排的事件；the meeting took place（会议举行了）"},
+        {"w": "arise", "ipa": "/əˈraɪz/", "gloss": "出现，产生（问题、机会等浮现）", "note": "「出现、产生」，多指问题或情况的浮现；problems arise（问题出现）"}
+      ],
+      "antonyms": [],
+      "nuance": "happen 最口语，多指意外或自然发生；occur 更正式，常用于科学或学术语境；take place 暗示有一定的计划或安排；arise 专指从某状态中「涌现」出来，多搭配问题、机会等抽象名词。"
+    },
+    {
+      "word": "travel",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/ˈtrævl/",
+      "subgroup": "multi",
+      "meaning": "v. 旅行；传播（声音/光）  n. 旅行（不可数）",
+      "etymology": "古法语 travail「苦劳、艰辛」，源自拉丁语 trepalium（一种刑具）。中世纪旅行极其艰苦，「苦劳」→「旅行」。与 travail（苦难）同源——travel 本义是「受苦受难的移动」。",
+      "roots": [
+        {"part": "trav- (travail/trepalium)", "meaning": "苦劳，艰辛"}
+      ],
+      "phonetics": "重音在首音节 TRÉV- = /træv/，tr- 连缀 + a /æ/；-el 弱读 /l/。对比：trável /træv/ 的 a 是重读 /æ/。",
+      "tip": "travel（不可数）是「旅行」这件事，a trip/journey 是「一次旅行」——说「a travel」是错误，要说「a trip」。",
+      "core": "克服距离的移动——词根是「劳苦」，旅行本质上是付出努力穿越空间的过程，引申到声光等任何「从A到B的传播」。",
+      "senses": [
+        {
+          "gloss": "v. 旅行，出行",
+          "logic": "核心意象直接对应：人克服距离的移动，词根「苦劳」提示这种移动是需要付出代价的，并非轻松之事。",
+          "en": "She has traveled to more than forty countries in the past decade.",
+          "zh": "过去十年里她去过四十多个国家。"
+        },
+        {
+          "gloss": "v. 传播（声音、光、信号等）",
+          "logic": "「克服距离的移动」不限于人：声音、光、电信号也在「旅行」——穿越空间从一点到达另一点，逻辑完全一致。",
+          "en": "Sound travels faster through water than through air.",
+          "zh": "声音在水中的传播速度快于在空气中的传播。"
+        },
+        {
+          "gloss": "n. 旅行（不可数，泛指这件事）",
+          "logic": "动词名词化：将「移动」这件事整体抽象为一个名词概念，不可数，指旅行这种活动本身而非某次具体旅程。",
+          "en": "Foreign travel broadens the mind and challenges assumptions.",
+          "zh": "出境旅行开阔眼界，挑战固有认知。"
+        }
+      ],
+      "derivatives": [
+        {"w": "traveler", "gloss": "旅行者；（美式拼写）traveller"},
+        {"w": "travail", "gloss": "艰辛，劳苦（travel 的词源词，文学用语）"},
+        {"w": "well-traveled", "gloss": "去过很多地方的；（道路）使用频繁的"}
+      ],
+      "examples": [
+        {
+          "en": "Sound travels faster through water than through air.",
+          "zh": "声音在水中的传播速度快于在空气中的传播。",
+          "source": "造句"
+        },
+        {
+          "en": "travel broadens the mind",
+          "zh": "「读万卷书不如行万里路」——英语谚语，托福写作可引用。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "journey", "ipa": "/ˈdʒɜːrni/", "gloss": "旅程（强调过程，可数）", "note": "「旅程」，强调过程，比 travel 更文学，可数；a long journey（漫长的旅程）"},
+        {"w": "voyage", "ipa": "/ˈvɔɪɪdʒ/", "gloss": "航行；（长途）海上或太空旅行", "note": "「航行」，特指长途海上或太空旅行，比 travel 更专门"},
+        {"w": "commute", "ipa": "/kəˈmjuːt/", "gloss": "通勤（日常往返）", "note": "「通勤」，特指日常往返交通，比 travel 更日常固定"}
+      ],
+      "antonyms": [
+        {"w": "stay", "note": "留在原地"}
+      ],
+      "nuance": "travel 泛指「旅行」这件事（不可数），trip 是一次往返的旅行，journey 强调旅途过程，voyage 专指长途水上或太空旅行。「travel light」是「轻装出行」，「travel far」是「走遍四方」。"
+    },
+    {
+      "word": "manage",
+      "hl": "a",
+      "levels": ["托福"],
+      "ipa": "/ˈmænɪdʒ/",
+      "subgroup": "multi",
+      "meaning": "v. 管理；设法做到（manage to do）；应付，处理",
+      "etymology": "意大利语 maneggiare「用手驯马」，源自拉丁语 manus「手」。「用手控制马」→ 管理、控制。与 manual（手动的）、manuscript（手稿）同根。",
+      "roots": [
+        {"part": "man- (manus)", "meaning": "手"},
+        {"part": "-age", "meaning": "动词后缀"}
+      ],
+      "phonetics": "重音在首音节 MÁN- = /mæn/，/æ/ 扁口清晰；-age 弱读 /ɪdʒ/（注意不读 /eɪdʒ/）。",
+      "tip": "manage to do 是「设法做到」，暗示克服了困难——「I managed to pass」不只是「我通过了」，而是「我总算通过了」，带有费了一番力气的含义。",
+      "core": "「用手驾驭」——控制局面的感觉：既指系统性地掌控（管理），也指在困难情境下勉力撑住（设法做到）。",
+      "senses": [
+        {
+          "gloss": "v. 管理，经营（组织、资源）",
+          "logic": "核心意象直接对应：像驯马师用手控制马匹，管理者用手段和规则驾驭团队或资源，保持秩序与方向。",
+          "en": "She manages a team of twenty engineers across three time zones.",
+          "zh": "她管理着分布在三个时区的二十人工程师团队。"
+        },
+        {
+          "gloss": "v. 设法做到（manage to do，含「克服困难」意）",
+          "logic": "「勉力驾驭」的引申：在情况不利时仍然把它控制住、做成了——manage to 比 succeed in 多一层「费了力气」的含义。",
+          "en": "Despite the tight deadline, she managed to submit the report on time.",
+          "zh": "尽管截止日期很紧，她还是设法按时提交了报告。"
+        },
+        {
+          "gloss": "v. 应付，勉强过活（I can manage）",
+          "logic": "从「驾驭复杂情况」进一步弱化：勉强把生活/处境「撑」下去，不需要帮助也能过，带有「差不多、凑合」的语气。",
+          "en": "\"Do you need help?\" \"No thanks, I can manage.\"",
+          "zh": "「需要帮忙吗？」「不用，我自己可以。」"
+        }
+      ],
+      "derivatives": [
+        {"w": "management", "gloss": "管理；管理层"},
+        {"w": "manager", "gloss": "经理；管理者"},
+        {"w": "manageable", "gloss": "可管理的；不难应付的"}
+      ],
+      "examples": [
+        {
+          "en": "Despite the tight deadline, she managed to submit the report on time.",
+          "zh": "尽管截止日期很紧，她还是设法按时提交了报告。",
+          "source": "造句"
+        },
+        {
+          "en": "manage resources / manage a team",
+          "zh": "「管理资源 / 管理团队」——托福商业和学术类文章高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "handle", "ipa": "/ˈhændl/", "gloss": "处理，应付；把手", "note": "「处理、应付」，比 manage 更口语，强调实际操作；handle a crisis（处理危机）"},
+        {"w": "administer", "ipa": "/ədˈmɪnɪstər/", "gloss": "管理，执行（正式机构）；给予（药物）", "note": "「管理/执行」，比 manage 更正式，多用于机构或政策；administer a program（管理项目）"},
+        {"w": "cope with", "gloss": "应对，应付（困难或压力）", "note": "「应付、处理（困难）」，比 manage 更强调面对压力和挑战"}
+      ],
+      "antonyms": [
+        {"w": "mismanage", "note": "管理不当"},
+        {"w": "fail", "note": "未能做到（manage to 义相对）"}
+      ],
+      "nuance": "manage 兼有「管理」和「设法做到」两义；handle 偏口语实操；administer 更官方正式；cope with 强调面对困难的韧性。「manage to」比「succeed in」更口语，且暗含费力克服的过程感。"
+    },
+    {
+      "word": "rapid",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/ˈræpɪd/",
+      "subgroup": "multi",
+      "meaning": "adj. 快速的，迅速的  n. [rapids] 急流",
+      "etymology": "拉丁语 rapidus「疾速的、夺取的」，源自 rapere「夺取、猛冲」。与 rape（劫夺，古义）、raptor（猛禽，俯冲捕食者）同根——都含「猛烈夺取」的核心义。",
+      "roots": [
+        {"part": "rap- (rapere)", "meaning": "猛冲、夺取"},
+        {"part": "-id", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在首音节 RÁP- = /ræp/，/æ/ 扁口；-id 弱读 /ɪd/。",
+      "core": "「猛冲、夺取」的速度感——不只是快，而是带有强势、无法阻挡的猛烈动势，像急流一样不给人反应时间。",
+      "senses": [
+        {
+          "gloss": "adj. 快速的，迅速的（变化、增长等）",
+          "logic": "核心意象直接对应：「猛冲」的速度感，多用于描述变化速度——rapid growth（快速增长）、rapid development（快速发展）。",
+          "en": "The rapid growth of the city put enormous pressure on its infrastructure.",
+          "zh": "城市的快速增长给基础设施带来了巨大压力。"
+        },
+        {
+          "gloss": "n. 急流，湍流（rapids，常用复数）",
+          "logic": "「猛冲」的具体化：河流中水流猛烈奔涌的段落，是词根「猛冲」最直接的自然体现。",
+          "en": "The kayakers navigated through the white-water rapids with precision.",
+          "zh": "皮划艇手们精准地穿越了白浪急流。"
+        }
+      ],
+      "derivatives": [
+        {"w": "rapidly", "gloss": "迅速地，快速地"},
+        {"w": "rapidity", "gloss": "迅速，快速（名词，较正式）"},
+        {"w": "raptor", "gloss": "猛禽（同根 rapere，俯冲捕食）"}
+      ],
+      "examples": [
+        {
+          "en": "The rapid growth of the city put enormous pressure on its infrastructure.",
+          "zh": "城市的快速增长给基础设施带来了巨大压力。",
+          "source": "造句"
+        },
+        {
+          "en": "rapid transit / rapid response",
+          "zh": "「快速交通系统 / 快速响应」——两个托福常见领域的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "swift", "ipa": "/swɪft/", "gloss": "迅速的，敏捷的（动作或反应）", "note": "「迅速」，比 rapid 更文学，常用于描述动作或反应；a swift response（迅速的回应）"},
+        {"w": "fast", "ipa": "/fɑːst/", "gloss": "快的，迅速的（最口语）", "note": "最口语的「快」，比 rapid 更泛；fast car（快车）"},
+        {"w": "prompt", "ipa": "/prɒmpt/", "gloss": "及时的，不拖延的", "note": "「即时的/迅速的」，多指人的行动或回复；prompt payment（及时付款）"}
+      ],
+      "antonyms": [
+        {"w": "slow", "note": "缓慢的"},
+        {"w": "gradual", "note": "渐进的"}
+      ],
+      "nuance": "rapid 多形容「变化/增长的速度」（rapid development），swift 形容「动作或反应」（a swift move），prompt 强调「没有拖延、立即行动」。「rapid-fire」（连珠炮似的）和「rapid transit」（城市快速交通）是固定搭配。"
+    },
+    {
+      "word": "talent",
+      "hl": "a",
+      "levels": ["托福"],
+      "ipa": "/ˈtælənt/",
+      "subgroup": "multi",
+      "meaning": "n. 天赋，才能；有才华的人（集合义）",
+      "etymology": "希腊语 talanton「天平、重量单位」，古代一种货币单位。《圣经》「塔兰特寓言」中，主人将「才能」比喻为「金钱」交给仆人——「上天给予的份额」→ 天赋。",
+      "roots": [
+        {"part": "talent（talanton）", "meaning": "重量/货币单位→天赋"}
+      ],
+      "phonetics": "重音在首音节 TÁL- = /tæl/，/æ/ 扁口；-ent 弱读 /ənt/。",
+      "tip": "「talent show」（选秀节目）和「talent pool」（人才库）是两个现代高频搭配，前者偏娱乐，后者偏商业招聘。",
+      "core": "「上天分配给你的那份重量」——才能就像古代货币，是天赋的份额，有人多有人少，是与生俱来的储量而非后天挣来的。",
+      "senses": [
+        {
+          "gloss": "n. 天赋，在某领域的出色才能",
+          "logic": "核心意象直接对应：上天「称量」后分配给个人的能力份额，体现在某具体领域的出色表现上。",
+          "en": "She has a remarkable talent for making complex ideas simple.",
+          "zh": "她有一种出色的天赋，能把复杂的想法化繁为简。"
+        },
+        {
+          "gloss": "n. 有才华的人（集合名词，商业/人力资源语境）",
+          "logic": "从「才能」延伸到「拥有才能的人」：企业招募的不只是技能，而是那些「有天赋份额」的个体，talent pool（人才库）即此义。",
+          "en": "The company is struggling to attract and retain top talent in a competitive market.",
+          "zh": "在竞争激烈的市场中，这家公司努力吸引和留住顶尖人才。"
+        }
+      ],
+      "derivatives": [
+        {"w": "talented", "gloss": "有才华的，才能出众的"},
+        {"w": "talent show", "gloss": "才艺表演；选秀节目"},
+        {"w": "talent scout", "gloss": "星探；人才发掘者"}
+      ],
+      "examples": [
+        {
+          "en": "The company is struggling to attract and retain top talent in a competitive market.",
+          "zh": "在竞争激烈的市场中，这家公司努力吸引和留住顶尖人才。",
+          "source": "造句"
+        },
+        {
+          "en": "a talent for / natural talent",
+          "zh": "「对……的天赋 / 天生才能」——高频搭配，a talent for music（音乐天赋）。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "gift", "ipa": "/ɡɪft/", "gloss": "天赋；礼物（强调先天赐予）", "note": "「天赋」，与 talent 最接近，更强调「上天赐予」的先天性；a gift for language（语言天赋）"},
+        {"w": "ability", "ipa": "/əˈbɪləti/", "gloss": "能力（含先天和后天，最通用）", "note": "「能力」，比 talent 更通用，涵盖后天习得的技能；ability to learn（学习能力）"},
+        {"w": "aptitude", "ipa": "/ˈæptɪtjuːd/", "gloss": "资质；天然倾向和适合性", "note": "「资质/倾向」，比 talent 更正式，强调某方面的天然适合性；aptitude for math（数学资质）"}
+      ],
+      "antonyms": [
+        {"w": "incompetence", "note": "无能"},
+        {"w": "mediocrity", "note": "平庸"}
+      ],
+      "nuance": "talent 强调显现于某具体领域的出色能力（a musical talent），gift 更强调先天性和神圣性（a gift from God），aptitude 强调「适合做某事的潜质」（有没有这方面的苗子），ability 最中性泛指。"
+    },
+    {
+      "word": "salary",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/ˈsæləri/",
+      "subgroup": "multi",
+      "meaning": "n. 薪水（固定工资，通常按月）",
+      "etymology": "拉丁语 salarium，源自 sal「盐」——古罗马士兵曾以盐作为部分报酬（也有说是专门用于购盐的津贴）。「salt money」→ 薪水。英语「not worth his salt」（不称职）也同源。",
+      "roots": [
+        {"part": "sal- (sal)", "meaning": "盐"},
+        {"part": "-ary", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在首音节 SÁL- = /sæl/，/æ/ 扁口；-ary 弱读 /əri/。",
+      "tip": "salary vs. wage：salary 是固定月薪（白领），wage 是按时计酬（时薪/日薪，多指蓝领工人）——托福写作讨论劳动经济时常需区分。",
+      "core": "「用盐换来的对价」——薪水是对劳动的等价补偿，固定、定期、代表你的劳动被认可的份额。",
+      "senses": [
+        {
+          "gloss": "n. 薪水，固定月薪（专指白领的定期薪酬）",
+          "logic": "核心意象直接对应：像古代盐的交换一样，按固定周期支付给劳动者的对价，强调「固定」和「定期」。",
+          "en": "She negotiated a higher salary before accepting the job offer.",
+          "zh": "她在接受工作邀约之前谈妥了更高的薪水。"
+        }
+      ],
+      "derivatives": [
+        {"w": "salaried", "gloss": "领薪的；受雇拿固定薪水的（salaried employee）"},
+        {"w": "sal", "gloss": "盐（词根本身，化学符号 NaCl 的来源）"},
+        {"w": "saline", "gloss": "盐水的；含盐的（同根 sal）"}
+      ],
+      "examples": [
+        {
+          "en": "She negotiated a higher salary before accepting the job offer.",
+          "zh": "她在接受工作邀约之前谈妥了更高的薪水。",
+          "source": "造句"
+        },
+        {
+          "en": "annual salary / salary raise",
+          "zh": "「年薪 / 加薪」——职场最高频的两个搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "wage", "ipa": "/weɪdʒ/", "gloss": "工资（蓝领按时计酬）；最低工资", "note": "「工资」，多指蓝领按时计酬，比 salary 更灵活波动；minimum wage（最低工资）"},
+        {"w": "income", "ipa": "/ˈɪnkʌm/", "gloss": "收入（含所有来源，最广义）", "note": "「收入」，比 salary 更广，包括工资、投资收益等所有来源"},
+        {"w": "compensation", "ipa": "/ˌkɒmpənˈseɪʃn/", "gloss": "薪酬；赔偿（含福利的整体待遇）", "note": "「薪酬/赔偿」，正式用语，涵盖基本工资加福利的整体待遇"}
+      ],
+      "antonyms": [],
+      "nuance": "salary 特指固定的月薪或年薪（白领），wage 是按小时或日计酬（蓝领），income 是所有收入来源的总和，compensation 是最正式的书面用法，含薪资+福利的整体概念。"
+    },
+    {
+      "word": "gather",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/ˈɡæðər/",
+      "subgroup": "multi",
+      "meaning": "v. 聚集；收集；（逐渐）增强；推断（I gather that...）",
+      "etymology": "古英语 gaderian「集合、聚集」，日耳曼同根，与德语 Gatter（栅栏，把东西围起来）有联系。「把东西拢在一起」是核心义。",
+      "roots": [
+        {"part": "gather（gaderian）", "meaning": "聚集、拢在一起"}
+      ],
+      "phonetics": "重音在首音节 GÁTHer = /ɡæð/，g + a /æ/；-er 弱读 /ər/。注意 th 在此读浊音 /ð/。",
+      "core": "「拢在一起」——把分散的东西收拢到一个中心点，无论是人群、信息、力量，还是一个推断，都是从分散到聚焦的过程。",
+      "senses": [
+        {
+          "gloss": "v. 聚集，汇聚（人或物）",
+          "logic": "核心意象直接对应：分散的人或物向一个点聚拢——人群聚集、树叶被耙拢、云雾聚集，都是此义。",
+          "en": "A crowd gathered outside the courthouse to await the verdict.",
+          "zh": "一群人聚集在法院外等待判决。"
+        },
+        {
+          "gloss": "v. 收集（信息、证据、资料）",
+          "logic": "从物理聚集延伸到信息层面：把分散在各处的数据、证据「拢到一起」，形成完整的资料库或论据。",
+          "en": "Researchers gathered data from over two thousand participants.",
+          "zh": "研究人员从两千多名参与者那里收集了数据。"
+        },
+        {
+          "gloss": "v. （力量、速度）逐渐积聚增强",
+          "logic": "「拢在一起」积累到一定程度就产生量变：gather speed（逐渐加速）、gather momentum（积聚势头），是「聚拢」在时间维度上的展开。",
+          "en": "The reform movement gathered momentum after the election.",
+          "zh": "改革运动在选举后积聚了更大的势头。"
+        },
+        {
+          "gloss": "v. 推断，理解（I gather that...）",
+          "logic": "把零散的信息「拢在一起」推导出结论：I gather that... = 我从（各种迹象）收集整合后得出的理解是……，带有「间接获知」的含义。",
+          "en": "I gather from your expression that the news wasn't good.",
+          "zh": "从你的表情我推断，这个消息不太好。"
+        }
+      ],
+      "derivatives": [
+        {"w": "gathering", "gloss": "聚会，集会；收集（过程）"},
+        {"w": "gatherer", "gloss": "采集者（hunter-gatherer 狩猎采集者）"},
+        {"w": "together", "gloss": "一起，共同（to + gather 的痕迹，词源相关）"}
+      ],
+      "examples": [
+        {
+          "en": "A crowd gathered outside the courthouse to await the verdict.",
+          "zh": "一群人聚集在法院外等待判决。",
+          "source": "造句"
+        },
+        {
+          "en": "gather speed / gather momentum",
+          "zh": "「逐渐加速 / 积聚势头」——两个高频动态增强义搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "collect", "ipa": "/kəˈlekt/", "gloss": "收集，采集（有意识地逐一收取）", "note": "「收集」，比 gather 更强调有意识地逐一收集；collect data（收集数据）"},
+        {"w": "assemble", "ipa": "/əˈsembl/", "gloss": "集合；组装（正式或机械性的聚合）", "note": "「集合、组装」，比 gather 更正式，多指人的集合或零件的组装；assemble a team（组建团队）"},
+        {"w": "accumulate", "ipa": "/əˈkjuːmjuleɪt/", "gloss": "积累，积聚（长期堆积）", "note": "「积累」，比 gather 更强调逐渐堆积，多用于抽象事物；accumulate experience（积累经验）"}
+      ],
+      "antonyms": [
+        {"w": "scatter", "note": "分散"},
+        {"w": "disperse", "note": "驱散、分散"}
+      ],
+      "nuance": "gather 最口语，可指人、物和抽象事物的聚集；collect 更强调有意识地一个个挑选收集；assemble 偏正式，多用于人的集合或零件的拼装；accumulate 专指长期逐渐堆积（多为抽象）。"
+    },
+    {
+      "word": "campus",
+      "hl": "a",
+      "levels": ["托福"],
+      "ipa": "/ˈkæmpəs/",
+      "subgroup": "multi",
+      "meaning": "n. 校园；（公司/机构的）园区",
+      "etymology": "拉丁语 campus「田野、平原」，是普林斯顿大学 1774 年首先用来描述学校场地的词——美国英语创造的新义。古罗马 Campus Martius（战神广场）是军事训练场地，同根。",
+      "roots": [
+        {"part": "campus", "meaning": "田野→校园"}
+      ],
+      "phonetics": "重音在首音节 CÁM- = /kæm/，/æ/ 扁口；-pus 弱读 /pəs/。",
+      "tip": "campus 从单指「大学校园」延伸到企业园区（corporate campus）——谷歌、苹果总部都叫 campus，这是托福阅读商业类文章的常见用法。",
+      "core": "「一片开阔的场地，供某个群体共同使用」——从古罗马的练兵平原到大学校园，再到科技公司园区，都是「一块专属于某个组织的开放地带」。",
+      "senses": [
+        {
+          "gloss": "n. 大学校园（建筑与场地的整体）",
+          "logic": "核心意象直接对应：最早的用法，指大学所有建筑与场地构成的整体环境，是美国英语对拉丁语「田野」的创造性借用。",
+          "en": "Students are required to live on campus during their first year.",
+          "zh": "学生第一年必须住在校园内。"
+        },
+        {
+          "gloss": "n. （企业/机构的）园区",
+          "logic": "从「大学专属场地」延伸到任何大型机构的专属地盘：科技公司园区也是一个「组织的开阔领地」，逻辑完全一致。",
+          "en": "The tech giant's campus spans over three hundred acres and includes restaurants, gyms, and a clinic.",
+          "zh": "这家科技巨头的园区占地逾三百英亩，设有餐厅、健身房和诊所。"
+        }
+      ],
+      "derivatives": [
+        {"w": "camp", "gloss": "营地；营区（同根 campus，田野上的临时聚居地）"},
+        {"w": "campaign", "gloss": "运动，活动；战役（同根，原指军队在野外展开行动）"},
+        {"w": "champion", "gloss": "冠军；捍卫者（同根 campus，在场地上竞斗的人）"}
+      ],
+      "examples": [
+        {
+          "en": "Students are required to live on campus during their first year.",
+          "zh": "学生第一年必须住在校园内。",
+          "source": "造句"
+        },
+        {
+          "en": "on campus / off campus",
+          "zh": "「校内 / 校外」——托福校园生活类题目最高频的方位对。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "grounds", "ipa": "/ɡraʊndz/", "gloss": "场地；庭院（建筑周边土地，通用）", "note": "「场地、庭院」，比 campus 更泛，指建筑物周围的土地，不特指学校"},
+        {"w": "precinct", "ipa": "/ˈpriːsɪŋkt/", "gloss": "院内区域；辖区（正式用语）", "note": "「（机构的）院内区域」，正式用语，多用于大学或宗教机构；within the university precinct"}
+      ],
+      "antonyms": [],
+      "nuance": "campus 是专有场景词，几乎只用于大学或大型机构园区；grounds 更通用，指任何建筑的周边用地；precinct 偏正式，多出现在英国英语中。"
+    },
+    {
+      "word": "accurate",
+      "hl": "a",
+      "levels": ["托福"],
+      "ipa": "/ˈækjərət/",
+      "subgroup": "multi",
+      "meaning": "adj. 准确的，精确的；无误的",
+      "etymology": "拉丁语 accuratus「精心完成的」= ac-(加强) + curare「照料、关注」。「仔细照料过的」→ 精确的。与 cure（治疗）、curator（策展人）同根——都含「认真照料」的核心义。",
+      "roots": [
+        {"part": "ac- (ad-)", "meaning": "加强前缀"},
+        {"part": "-cur- (curare)", "meaning": "照料、关注"},
+        {"part": "-ate", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在首音节 ÁC- = /æk/，/æ/ 扁口；-curate 弱读 /kjərət/。",
+      "core": "「仔细照料过的」——准确不是偶然碰对，而是认真核查、细心照料之后得出的结果，背后有「用心」这个动作。",
+      "senses": [
+        {
+          "gloss": "adj. 准确的，与实际情况相符的（误差在可接受范围内）",
+          "logic": "核心意象直接对应：仔细照料、认真核查后的输出——没有重大偏差，与真实情况相符。",
+          "en": "The report must be accurate and based on verified data.",
+          "zh": "报告必须准确，并以经过核实的数据为依据。"
+        },
+        {
+          "gloss": "adj. 精确的，细节到位的（accurate description/account）",
+          "logic": "从「总体误差小」延伸到「细节也经过照料」：accurate description = 连细节都仔细核对过的描述，比「大体正确」更进一层。",
+          "en": "She gave an accurate account of what happened that evening.",
+          "zh": "她对那天晚上发生的事作了准确的陈述。"
+        }
+      ],
+      "derivatives": [
+        {"w": "accuracy", "gloss": "准确性，精确度"},
+        {"w": "inaccurate", "gloss": "不准确的，有误差的"},
+        {"w": "curator", "gloss": "策展人；馆长（同根 curare，「照料」藏品的人）"}
+      ],
+      "examples": [
+        {
+          "en": "The report must be accurate and based on verified data.",
+          "zh": "报告必须准确，并以经过核实的数据为依据。",
+          "source": "造句"
+        },
+        {
+          "en": "accurate prediction / accurate measurement",
+          "zh": "「准确预测 / 精确测量」——科学类托福文章的两个核心搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "precise", "ipa": "/prɪˈsaɪs/", "gloss": "精确的，精准到位的（不允许任何偏差）", "note": "「精确」，比 accurate 更强调「精确到某一点」，不允许任何偏差；precise measurements（精确测量）"},
+        {"w": "exact", "ipa": "/ɪɡˈzækt/", "gloss": "确切的，分毫不差的", "note": "「确切的」，强调和真实值一致，比 accurate 更绝对；the exact time（确切时间）"},
+        {"w": "correct", "ipa": "/kəˈrekt/", "gloss": "正确的，没有错误的", "note": "「正确的」，比 accurate 更强调没有错误，偏重对/错判断；a correct answer（正确答案）"}
+      ],
+      "antonyms": [
+        {"w": "inaccurate", "note": "不准确的"},
+        {"w": "imprecise", "note": "不精确的"}
+      ],
+      "nuance": "accurate 强调「与实际情况相符」（no significant error），precise 强调「细节精确到位，没有模糊」，exact 是最绝对的「分毫不差」，correct 是「没有错误」的基本要求。测温度：accurate（误差范围内）→ precise（精确到小数点）→ exact（与标准值完全一致）。"
+    },
+    {
+      "word": "example",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/ɪɡˈzæmpəl/",
+      "subgroup": "multi",
+      "meaning": "n. 例子；榜样  v. （正式）以……为例说明",
+      "etymology": "拉丁语 exemplum「样本、样例」= ex-(出) + emere(取出)。「从一堆里取出来展示的那个」→ 例子。与 exempt（豁免，取出不算）、sample（样本）同根。",
+      "roots": [
+        {"part": "ex-", "meaning": "出、向外"},
+        {"part": "-am- (emere)", "meaning": "取"},
+        {"part": "-ple (-plum)", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在后 ex-ZÁM- = /ɪɡˈzæm/，注意 x 在此读 /ɡz/ 而非 /ks/；-ple 弱读 /pəl/。",
+      "tip": "「set an example」（树立榜样）和「for example」（例如）是两个最高频的搭配，前者 example 作「榜样」，后者作「例子」——区分两义的最简单方法。",
+      "core": "「从一堆里取出来展示的那一个」——例子是从更大集合中被挑出来代表整体的个体，榜样也是从人群中被挑出来供人效仿的个体，逻辑完全一致。",
+      "senses": [
+        {
+          "gloss": "n. 例子，示例（用来说明观点）",
+          "logic": "核心意象直接对应：从一堆同类事物中「取出来」展示的一个，用以说明更大的规律或概念。",
+          "en": "The teacher used real-world examples to explain the abstract concept.",
+          "zh": "老师用现实中的例子来解释这个抽象概念。"
+        },
+        {
+          "gloss": "n. 榜样，模范（set an example）",
+          "logic": "从「取出展示的个体」延伸：榜样是从人群中被挑出来、供他人效仿学习的那一个——同样是「代表整体的样本」。",
+          "en": "She set an example for her team by arriving early every day.",
+          "zh": "她每天早到，为团队树立了榜样。"
+        }
+      ],
+      "derivatives": [
+        {"w": "exemplary", "gloss": "堪为典范的；惩戒性的（exemplary punishment）"},
+        {"w": "exemplify", "gloss": "举例说明；是……的典型"},
+        {"w": "sample", "gloss": "样本；样品；试用（同根 ex + emere）"}
+      ],
+      "examples": [
+        {
+          "en": "The teacher used real-world examples to explain the abstract concept.",
+          "zh": "老师用现实中的例子来解释这个抽象概念。",
+          "source": "造句"
+        },
+        {
+          "en": "for example / set an example",
+          "zh": "「例如 / 树立榜样」——学术写作和日常使用均极高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "instance", "ipa": "/ˈɪnstəns/", "gloss": "实例，具体案例（较正式）", "note": "「实例」，比 example 更正式，多用于学术论述；for instance（例如）= for example"},
+        {"w": "illustration", "ipa": "/ˌɪləˈstreɪʃn/", "gloss": "说明性例子；插图；阐释", "note": "「说明性例子」，比 example 更强调用来阐明某个观点；by way of illustration（举例说明）"},
+        {"w": "model", "ipa": "/ˈmɒdl/", "gloss": "榜样；模型；模特", "note": "「榜样/模型」，example 作「榜样」义时的近义，比 example 更强调可模仿性"}
+      ],
+      "antonyms": [],
+      "nuance": "example 和 instance 几乎可互换（for example = for instance），但 instance 更正式，多出现在学术写作；illustration 特指用来阐明观点的例子，强调说明功能；model 作「榜样」时比 example 更强调值得模仿和复制。"
+    }
+  ]
+}

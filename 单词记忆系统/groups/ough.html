@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>/ɔː/ 补全：augh·ough·al · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "ough", "combo": "augh·ough·al", "title": "/ɔː/ 补全：augh·ough·al", "sound": "/ɔː/", "subtitle": "gh 哑了、l 哑了，元音照样圆满", "intro": "aw 和 au 已经覆盖了 /ɔː/ 的两条主干，但英语里还有三条小径通向同一个音：augh（gh 不发音，caught/taught）、ough 的 thought 分支（ough 读音最多变，这里只收 /ɔː/ 那一支）、以及 al 家族（all/ball 的 l 发音，talk/walk 的 l 不发音，但元音统一是 /ɔː/）。三条路发音相同，拼法各异，放在一页一次打通。", "subgroups": [{"key": "augh", "tag": "augh", "label": "✅ augh = /ɔː/", "desc": "gh 不发音：caught/taught/daughter/slaughter/haughty/naught 里，augh 整体发 /ɔː/——只需记住 gh 是『装饰字母』，完全静默。"}, {"key": "ough", "tag": "ough", "label": "ough = /ɔː/（thought 类）", "desc": "ough 是英语最多变的组合（through/rough/cough/though/thought 各读各的）。本页只收读 /ɔː/ 那一支：thought/bought/ought/sought/fought/brought。口诀——ough 在 t 前面就读 /ɔː/（-ought/-aught）。"}, {"key": "al", "tag": "al(l)·alk", "label": "al = /ɔː(l)/", "desc": "al 家族分两小支：all/ball/call/tall（l 发音，读 /ɔːl/）；talk/walk/chalk/stalk（l 静默，读 /tɔːk/）。无论 l 是否发音，前面的元音都是 /ɔː/。"}], "rhymeChains": [{"label": "-aught 同韵串", "words": ["caught", "taught", "naught", "slaughter", "daughter"]}, {"label": "-ought 同韵串", "words": ["thought", "bought", "ought", "sought", "fought", "brought"]}, {"label": "-all 同韵串（l 发音）", "words": ["all", "ball", "call", "fall", "hall", "tall", "wall", "small"]}, {"label": "-alk 同韵串（l 静默）", "words": ["talk", "walk", "chalk", "stalk"]}], "words": [{"word": "caught", "hl": "augh", "levels": ["基础"], "ipa": "/kɔːt/", "subgroup": "augh", "meaning": "v. 捕捉；抓住（catch 的过去式/过去分词）", "etymology": "catch 来自古诺尔斯语 katja「追逐」，过去式 caught 是强变化遗迹，augh 在中古英语时期就已静默。", "roots": [{"part": "catch（古 cacchen）", "meaning": "追捉"}], "phonetics": "augh 整体读 /ɔː/，gh 完全不发音；词尾 t 清晰爆破。整词 /kɔːt/，与 court 同韵。", "tip": "caught/taught/bought 三个不规则过去式同韵——背一个等于背三个。", "core": "「一把抓住、锁住跑不掉」的捕获感——不管是警察抓人还是捕兽夹抓猎物，都是瞬间收紧、不再松开的动作。", "senses": [{"gloss": "v. 捕捉，抓住（catch 的过去式）", "logic": "核心义：用手或工具把移动的目标抓住、不再让它跑掉", "en": "The police caught the suspect near the station.", "zh": "警察在车站附近抓住了嫌疑人。"}, {"gloss": "v. 撞见，当场发现（caught doing）", "logic": "「抓住」引申到发现：把某人做某事的瞬间「捉住」", "en": "She was caught stealing from the cash register.", "zh": "她从收银机偷钱时被当场抓住。"}], "derivatives": [{"w": "catch", "gloss": "抓，捕获（原形动词）"}, {"w": "catchy", "gloss": "易记住的，朗朗上口的（像钩子一样抓住注意力）"}], "examples": [{"en": "The police caught the suspect near the station.", "zh": "警察在车站附近抓住了嫌疑人。", "source": "造句"}, {"en": "caught red-handed", "zh": "「当场人赃俱获」——高频习语。", "source": "高频搭配"}], "synonyms": [{"w": "seized", "ipa": "/siːzd/", "gloss": "逮捕，查扣（正式/法律语境）", "note": "正式「逮捕、查扣」，法律语境首选；seize contraband（查扣违禁品）"}, {"w": "captured", "ipa": "/ˈkæptʃərd/", "gloss": "俘获，捕获（战俘/动物）", "note": "强调「俘获」，多用于战俘、野生动物；capture a criminal（抓获罪犯）"}, {"w": "apprehended", "ipa": "/ˌæprɪˈhendɪd/", "gloss": "逮捕（最正式的警察用语）", "note": "最正式的警察用语「逮捕」，书面新闻常见；the suspect was apprehended"}], "antonyms": [{"w": "released", "note": "释放、放走"}, {"w": "escaped", "note": "逃脱"}], "nuance": "caught 是口语/通用词；apprehended 是法律/新闻正式用词；seized 侧重查扣财物或强行控制；captured 带有「战场俘获」色彩。场景：「被警察抓住」口语用 caught，新闻稿用 apprehended。"}, {"word": "taught", "hl": "augh", "levels": ["基础"], "ipa": "/tɔːt/", "subgroup": "augh", "meaning": "v. 教，讲授（teach 的过去式/过去分词）", "etymology": "teach 来自古英语 tǣcan「展示、指引」，过去式 taught 是古英语强变化保留形式；augh 与 catch→caught 同一套静默规则。", "roots": [{"part": "teach（古 tǣcan）", "meaning": "展示、引导"}], "phonetics": "augh 读 /ɔː/，gh 不发音；整词 /tɔːt/，与 caught 完全同韵，只首辅音不同（k vs t）。", "core": "「把知识或技能从自己手里传过去、让对方吸收」的传授感——像把一样东西递给对方，只不过递的是会的东西。", "senses": [{"gloss": "v. 教，讲授（teach 的过去式）", "logic": "核心义：把知识/技能传递给学习者", "en": "She taught herself three languages before the age of twenty.", "zh": "她在二十岁前自学了三门语言。"}], "derivatives": [{"w": "teach", "gloss": "教，讲授（原形）"}, {"w": "teacher", "gloss": "教师，老师"}, {"w": "untaught", "gloss": "未受教育的；天生的（未经教导就有的）"}], "examples": [{"en": "She taught herself three languages before the age of twenty.", "zh": "她在二十岁前自学了三门语言。", "source": "造句"}, {"en": "That'll teach you.", "zh": "「活该，让你长个教训。」——口语习惯用法。", "source": "高频搭配"}], "synonyms": [{"w": "instructed", "ipa": "/ɪnˈstrʌktɪd/", "gloss": "指导，教授（按步骤给出操作性指导）", "note": "强调按步骤给出操作性指导，比 taught 更正式"}, {"w": "educated", "ipa": "/ˈedʒukeɪtɪd/", "gloss": "教育，培养（系统性培养知识与能力）", "note": "侧重系统性培养知识与能力，范围比 taught 更宽"}, {"w": "trained", "ipa": "/treɪnd/", "gloss": "训练（反复练习技能）", "note": "强调技能和行为的反复训练，多用于技能、体育"}], "antonyms": [{"w": "learned / learnt", "note": "学（与「教」相对）"}], "nuance": "taught 是最通用的「教」；instructed 强调给出明确步骤；trained 强调反复练习技能；educated 偏重培养认知和判断力。对比：「taught history（教历史）」vs「trained athletes（训练运动员）」。"}, {"word": "daughter", "hl": "augh", "levels": ["基础"], "ipa": "/ˈdɔːtər/", "subgroup": "augh", "meaning": "n. 女儿", "etymology": "古英语 dohtor，与德语 Tochter、希腊语 thygátēr 同出印欧语根 *dhughtēr「女儿」——人类最古老的家庭词汇之一，拼写里的 gh 是中古英语时代的辅音化石。", "roots": [{"part": "dohtor（印欧 *dhughtēr）", "meaning": "女儿"}], "phonetics": "augh 读 /ɔː/，gh 不发音；-ter 弱读 /tər/；整词重音在首节 DAU-。", "core": "「血脉从自己身上延续出去的女性后代」的传承感——不只是一个家庭角色，更是生命之河往下流的一个分支。", "senses": [{"gloss": "n. 女儿", "logic": "核心义：女性直系后代，家庭关系中最基本的血缘连接之一", "en": "She is the youngest daughter in a family of five children.", "zh": "她是五个孩子家庭里最小的女儿。"}], "derivatives": [{"w": "daughter-in-law", "gloss": "儿媳（法律/婚姻关系上的女儿）"}, {"w": "granddaughter", "gloss": "孙女，外孙女"}, {"w": "daughterly", "gloss": "女儿般的，有女儿特质的"}], "examples": [{"en": "She is the youngest daughter in a family of five children.", "zh": "她是五个孩子家庭里最小的女儿。", "source": "造句"}, {"en": "like mother, like daughter", "zh": "「有其母必有其女」——英语谚语。", "source": "谚语"}], "synonyms": [{"w": "girl", "ipa": "/ɡɜːrl/", "gloss": "女孩；女儿（口语非正式指称）", "note": "口语语境中对「女儿」的非正式指称，也泛指女孩"}, {"w": "offspring", "ipa": "/ˈɔːfsprɪŋ/", "gloss": "后代，子女（中性正式词）", "note": "中性正式词「后代」，不区分性别；多用于生物或法律语境"}], "antonyms": [{"w": "son", "note": "儿子"}], "nuance": "daughter 专指女性后代，是最精确的词；offspring 指后代（不分性别），多见于学术或法律文本；girl 在家庭对话中常替代 daughter，但范围更宽。"}, {"word": "slaughter", "hl": "augh", "levels": ["六级"], "ipa": "/ˈslɔːtər/", "subgroup": "augh", "meaning": "n./v. 屠杀；宰杀（牲畜）", "etymology": "古诺尔斯语 slátr「肉、宰杀」，字面是「击打后倒下的东西」。中古英语加上 sl- 头簇，augh 早在印刷前已静默。", "roots": [{"part": "slátr（古诺尔斯）", "meaning": "宰杀的肉"}], "phonetics": "sl- 辅音簇 + augh /ɔː/ + ter /tər/；gh 不发音，重音在首节 SLAU-。", "tip": "daughter 和 slaughter 同韵——把 d 换成 sl 就变成「屠杀」，反差记忆深刻。", "core": "「大量生命被击倒、血流成河」的屠戮感——不管是战场上的屠杀还是屠场的宰杀，都是生命在短时间内被批量终结的画面。", "senses": [{"gloss": "n./v. 屠杀，杀戮（大规模杀死人）", "logic": "核心义：在战争或暴力场景中大量杀死人类", "en": "The battle ended in a slaughter of thousands.", "zh": "这场战役以数千人的大屠杀告终。"}, {"gloss": "v. 宰杀（牲畜，用于食用）", "logic": "同一动作扩展到动物：在屠场批量宰杀牲畜。两个义项是同一感觉在不同对象上的投射", "en": "The cattle were slaughtered at the local abattoir.", "zh": "牛在当地屠宰场被宰杀。"}], "derivatives": [{"w": "slaughterhouse", "gloss": "屠宰场"}, {"w": "manslaughter", "gloss": "过失杀人（法律术语，非预谋杀人）"}, {"w": "slaughterer", "gloss": "屠夫，屠杀者"}], "examples": [{"en": "The battle ended in a slaughter of thousands.", "zh": "这场战役以数千人的大屠杀告终。", "source": "造句"}, {"en": "like lambs to the slaughter", "zh": "「如羔羊赴屠场」——形容毫无防备地走向危险，出自《圣经》以赛亚书。", "source": "高频搭配"}], "synonyms": [{"w": "massacre", "ipa": "/ˈmæsəkər/", "gloss": "大屠杀（多针对平民或无辜者）", "note": "大规模屠杀，多用于平民或无辜者；massacre civilians（屠杀平民）"}, {"w": "carnage", "ipa": "/ˈkɑːrnɪdʒ/", "gloss": "大屠杀场面，尸横遍野", "note": "强调血腥惨烈的杀戮现场，多描述结果；scenes of carnage（惨烈屠杀场面）"}, {"w": "butcher", "ipa": "/ˈbʊtʃər/", "gloss": "屠夫；残忍宰杀（动词）", "note": "动词义「残忍宰杀」，也指屠夫，带有野蛮无情的色彩"}], "antonyms": [{"w": "spare", "note": "放生、饶恕"}, {"w": "protect", "note": "保护"}], "nuance": "slaughter 可指战争屠杀也可指合法宰杀牲畜；massacre 专指对人（尤其平民）的大规模屠杀；carnage 更强调尸横遍野的惨烈现场；butcher 作动词时带轻蔑或愤怒情绪。"}, {"word": "naught", "hl": "augh", "levels": ["六级"], "ipa": "/nɔːt/", "subgroup": "augh", "meaning": "n. 零；虚无（文学/正式用词）", "etymology": "古英语 nawiht = na（no）+ wiht（thing）→「没有任何东西」。中古英语演变为 naught，gh 静默。数字「0」的书面说法，也出现在习语 come to naught（化为乌有）。", "roots": [{"part": "na-", "meaning": "no，无"}, {"part": "-wiht（古英语）", "meaning": "东西、事物"}], "phonetics": "augh 读 /ɔː/，gh 不发音；整词 /nɔːt/，与 thought/caught 同韵。", "tip": "nought 是英式拼法，naught 是美式，读音完全相同；两者都表示「零」，数学里说「nought point five」= 0.5。", "core": "「空无一物、什么都没有」的虚无感——不是「少」，而是「零」，是彻底的不存在，像望向一个空荡荡的深渊。", "senses": [{"gloss": "n. 零（数字，书面说法）", "logic": "核心义：数值为零，没有任何数量", "en": "The thermometer dropped to naught during the blizzard.", "zh": "暴风雪中温度计降到了零度。"}, {"gloss": "n. 虚无，乌有（文学义）", "logic": "从「零」延伸到存在层面：一切化为不存在", "en": "All his efforts came to naught.", "zh": "他所有的努力都化为乌有。"}], "derivatives": [{"w": "naughty", "gloss": "顽皮的，不听话的（原义「一钱不值的」→行为不好的）"}, {"w": "nought", "gloss": "零（英式拼法，与 naught 同义）"}], "examples": [{"en": "All his efforts came to naught.", "zh": "他所有的努力都化为乌有。", "source": "造句"}, {"en": "come to naught", "zh": "「化为乌有、落空」——正式书面高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "zero", "ipa": "/ˈzɪəroʊ/", "gloss": "零（最通用，口语书面均可）", "note": "最通用的「零」，口语书面均可"}, {"w": "nothing", "ipa": "/ˈnʌθɪŋ/", "gloss": "什么都没有（口语化）", "note": "「什么都没有」，口语化，比 naught 更常用"}, {"w": "nil", "ipa": "/nɪl/", "gloss": "零（体育比分/英式正式）", "note": "体育比分和正式语境的「零」，英式英语常用"}], "antonyms": [{"w": "everything", "note": "一切，与「虚无」相对"}], "nuance": "naught/nought 是文学化或正式书面词，习语 come to naught 固定；日常口语用 zero 或 nothing；比分说 nil（英式）或 zero（美式）。"}, {"word": "haughty", "hl": "augh", "levels": ["六级"], "ipa": "/ˈhɔːti/", "subgroup": "augh", "meaning": "adj. 傲慢的，自大的", "etymology": "古法语 haut「高的」（源自拉丁语 altus），中古英语加上 -y 形容词后缀；字面是「把自己放得很高」，augh 是法语 au 进入英语后拼写化石化的结果，gh 静默。", "roots": [{"part": "haut（法，源自拉丁 altus）", "meaning": "高的，崇高的"}, {"part": "-y", "meaning": "形容词后缀"}], "phonetics": "augh 读 /ɔː/，gh 不发音；-ty 读 /ti/；重音在首节 HAU-。", "core": "「把自己放在高处、眼神往下看别人」的俯视感——不只是自信，而是从骨子里觉得别人比自己低一等，表现在姿态和语气里的冷傲。", "senses": [{"gloss": "adj. 傲慢的，自大的", "logic": "haut（高）+ y → 自认为高人一等，表现在外在举止上", "en": "Her haughty manner made it difficult for people to approach her.", "zh": "她傲慢的态度让人很难接近她。"}], "derivatives": [{"w": "haughtily", "gloss": "傲慢地（副词）"}, {"w": "haughtiness", "gloss": "傲慢，自大（名词）"}], "examples": [{"en": "Her haughty manner made it difficult for people to approach her.", "zh": "她傲慢的态度让人很难接近她。", "source": "造句"}, {"en": "a haughty dismissal", "zh": "「傲慢地拒绝/驳回」——正式书面高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "arrogant", "ipa": "/ˈærəɡənt/", "gloss": "傲慢的（最通用，内在高估自己）", "note": "最通用的「傲慢」，强调高估自己、轻视他人；GRE/托福高频词"}, {"w": "supercilious", "ipa": "/ˌsuːpərˈsɪliəs/", "gloss": "目空一切的，眉毛高扬式蔑视", "note": "眉毛高扬式的蔑视，比 haughty 更带表情动作感，书面语"}, {"w": "condescending", "ipa": "/ˌkɒndɪˈsendɪŋ/", "gloss": "居高临下的，屈尊降贵的", "note": "俯视他人、屈尊降贵式的傲慢，侧重居高临下的态度"}], "antonyms": [{"w": "humble", "note": "谦逊的"}, {"w": "modest", "note": "谦虚的"}], "nuance": "haughty 强调外在表现出来的傲慢举止（语气、姿态）；arrogant 侧重内在过高的自我评价；condescending 带有「我屈尊和你讲话」的居高临下感，三者程度接近但角度不同。haughty 比 arrogant 更文学化。"}, {"word": "thought", "hl": "ough", "levels": ["基础"], "ipa": "/θɔːt/", "subgroup": "ough", "meaning": "n. 想法，念头；思考  v. 认为（think 的过去式/过去分词）", "etymology": "古英语 þōht，来自 þencan「思考」；ough 在古英语时期读作喉擦音 /x/，后来静默，元音延长为 /ɔː/。", "roots": [{"part": "þencan（古英语）", "meaning": "思考、认为"}], "phonetics": "ough 在 th 后读 /ɔː/，gh 完全静默；整词 /θɔːt/。注意与 though（/ðoʊ/）、through（/θruː/）、tough（/tʌf/）严格区分。", "tip": "thought/bought/sought/fought/brought/ought 整组同韵——背「-ought = /ɔːt/」这条规则等于背六个词。", "core": "「脑海中浮现出来的东西」的念头感——可以是瞬间的一闪念、也可以是长期深思后的沉淀，但都是在大脑里成形的一个「思想块」。", "senses": [{"gloss": "n. 想法，念头（瞬间或具体的想法）", "logic": "think 的名词形式：脑中产生的一个具体内容", "en": "The thought of failing kept her awake all night.", "zh": "失败的念头让她整夜难眠。"}, {"gloss": "n. 思考，思想（过程或体系）", "logic": "从「单个念头」扩展到「思考这件事本身」或「一套思想」", "en": "Western thought has been shaped by Greek philosophy.", "zh": "西方思想深受希腊哲学的影响。"}, {"gloss": "v. 认为，想（think 的过去式/过去分词）", "logic": "think 的过去式——历史偶合，名词和动词来自同一词根的不同语法形式。此义与「念头」的感觉不同，是语法功能而非感觉引申", "en": "I thought you were coming later.", "zh": "我以为你会晚点来。"}], "derivatives": [{"w": "thoughtful", "gloss": "深思熟虑的；体贴的"}, {"w": "thoughtless", "gloss": "欠考虑的；不体贴的"}, {"w": "afterthought", "gloss": "事后才想到的事，马后炮"}], "examples": [{"en": "The thought of failing kept her awake all night.", "zh": "失败的念头让她整夜难眠。", "source": "造句"}, {"en": "a penny for your thoughts", "zh": "「你在想什么？」——询问别人心事的地道英语习语。", "source": "习语"}], "synonyms": [{"w": "idea", "ipa": "/aɪˈdɪə/", "gloss": "想法，主意（最通用，偏创意方案）", "note": "最通用的「想法」，口语书面皆可；比 thought 更聚焦于创意或方案"}, {"w": "notion", "ipa": "/ˈnoʊʃn/", "gloss": "概念，模糊的印象", "note": "模糊的印象或概念，比 thought 更不确定；have a notion that…"}, {"w": "reflection", "ipa": "/rɪˈflekʃn/", "gloss": "深思，反思（回望沉淀后的想法）", "note": "深思熟虑后的想法，带有回望、沉淀的意味；after much reflection"}], "antonyms": [{"w": "impulse", "note": "冲动（与深思相对）"}], "nuance": "thought 兼指瞬间念头（a sudden thought）和深思过程；idea 更强调「点子、方案」；notion 是比较模糊的印象；reflection 强调长时间思考后的沉淀。对比：「a passing thought（一闪而过的念头）」vs「a great idea（好主意）」。"}, {"word": "thoughtful", "hl": "ough", "levels": ["六级"], "ipa": "/ˈθɔːtfl/", "subgroup": "ough", "meaning": "adj. 深思熟虑的；体贴的", "etymology": "thought + -ful「充满……的」，即「满脑子想法的」→「考虑周到的、体贴的」。", "roots": [{"part": "thought", "meaning": "想法、思考"}, {"part": "-ful", "meaning": "充满"}], "phonetics": "ough 读 /ɔː/，gh 静默；-ful 弱读 /fl/；重音在首节 THOUGHT-。", "core": "「脑子里装满了对他人的考虑」的充盈感——不是空洞地「想」，而是主动把别人的需求和感受装进心里，然后体现在行动上。", "senses": [{"gloss": "adj. 深思熟虑的（做事经过认真思考）", "logic": "thought + ful → 充满思考的状态：不是随便做，而是想清楚了再做", "en": "The committee issued a thoughtful response after three weeks of deliberation.", "zh": "委员会经过三周审议后给出了深思熟虑的答复。"}, {"gloss": "adj. 体贴的，关心他人的", "logic": "「满脑子想」延伸到想别人的需求：把别人的感受放心里→表现出体贴", "en": "It was thoughtful of you to remember my birthday.", "zh": "你还记得我的生日，真是体贴。"}], "derivatives": [{"w": "thoughtfully", "gloss": "深思地；体贴地（副词）"}, {"w": "thoughtfulness", "gloss": "深思熟虑；体贴周到（名词）"}, {"w": "thoughtless", "gloss": "欠考虑的，不体贴的（反义词）"}], "examples": [{"en": "It was thoughtful of you to remember my birthday.", "zh": "你还记得我的生日，真是体贴。", "source": "造句"}, {"en": "a thoughtful response / gift", "zh": "「深思熟虑的回复 / 心意满满的礼物」——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "considerate", "ipa": "/kənˈsɪdərət/", "gloss": "体贴的（专指人际关怀）", "note": "「体贴」义最近义词，强调主动为他人着想；比 thoughtful 更聚焦人际关怀"}, {"w": "reflective", "ipa": "/rɪˈflektɪv/", "gloss": "沉思的，内省的（侧重深度思考）", "note": "「深思」义近义，强调沉思、内省的状态；a reflective pause（若有所思的停顿）"}, {"w": "attentive", "ipa": "/əˈtentɪv/", "gloss": "周到的，细心的（留意细节）", "note": "「周到」义，侧重留意细节、专注对方需求；attentive service（周到的服务）"}], "antonyms": [{"w": "thoughtless", "note": "欠考虑的；不体贴的"}, {"w": "inconsiderate", "note": "不替他人着想的"}], "nuance": "thoughtful 兼有「深思的」和「体贴的」两义，是两者语域里最通用的词；considerate 专指人际关系中的体贴，不含「深思」义；reflective 专指沉思状态，不含「体贴」义。写作时 thoughtful 是安全的全能词，两义都能胜任。"}, {"word": "bought", "hl": "ough", "levels": ["基础"], "ipa": "/bɔːt/", "subgroup": "ough", "meaning": "v. 购买（buy 的过去式/过去分词）", "etymology": "buy 来自古英语 bycgan，过去式 bought 是强变化遗迹，与 catch→caught、think→thought 一样，ough 完全静默，保留中古英语书写习惯。", "roots": [{"part": "bycgan（古英语）", "meaning": "购买、交换"}], "phonetics": "ough 读 /ɔː/，gh 静默；整词 /bɔːt/，与 thought/caught 同韵。", "core": "「用钱或代价把东西换到自己手里」的获取感——一手交钱，一手得物，东西从对方那边转移到自己这边。", "senses": [{"gloss": "v. 购买（buy 的过去式/过去分词）", "logic": "核心义：通过支付代价获得物品或服务，过去已经完成的购买动作", "en": "She bought a one-way ticket without thinking twice.", "zh": "她毫不犹豫地买了一张单程票。"}], "derivatives": [{"w": "buy", "gloss": "购买（原形动词）"}, {"w": "buyer", "gloss": "买家，购买者"}, {"w": "store-bought", "gloss": "商店买的（非自制的）"}], "examples": [{"en": "She bought a one-way ticket without thinking twice.", "zh": "她毫不犹豫地买了一张单程票。", "source": "造句"}, {"en": "buy time / buy into", "zh": "「拖延时间 / 接受、相信」——高频短语动词。", "source": "高频搭配"}], "synonyms": [{"w": "purchased", "ipa": "/ˈpɜːrtʃəst/", "gloss": "购买（正式书面/合同用语）", "note": "正式书面语，合同、收据常用；purchase a property（购置房产）"}, {"w": "acquired", "ipa": "/əˈkwaɪərd/", "gloss": "获得，收购（范围更宽，不一定用钱）", "note": "「获得/收购」，范围更宽，不一定用钱；acquire skills（习得技能）"}, {"w": "obtained", "ipa": "/əbˈteɪnd/", "gloss": "取得（通过努力或程序获取）", "note": "「取得」，强调通过努力或程序获取；obtain a visa（获得签证）"}], "antonyms": [{"w": "sold", "note": "卖出"}], "nuance": "bought/purchased 都是「买」，purchased 更正式；acquired 范围最宽，不限于金钱交易；obtained 强调通过程序或努力取得，常用于官方文件。"}, {"word": "ought", "hl": "ough", "levels": ["六级"], "ipa": "/ɔːt/", "subgroup": "ough", "meaning": "modal v. 应该，应当（表道德义务或合理预期）", "etymology": "古英语 āhte，是 āgan「拥有、欠」的过去式；词义从「欠某人的」演变为「理应做的」。与 owe（欠）同源，ough 的 gh 和 ow 里的 w 是同一个消失的辅音的不同书写。", "roots": [{"part": "āgan（古英语）", "meaning": "拥有、欠"}], "phonetics": "整词就是 ough /ɔː/ + t，无额外辅音；/ɔːt/，与 thought 同韵（去掉 th）。", "tip": "ought 是情态动词，永远后接 to + 原形（ought to do），这是与 should 最显著的形式区别。", "core": "「道义上欠着的、理应去做」的义务感——像有一笔账挂在心上，不是法律强制，而是良知告诉你该还。", "senses": [{"gloss": "modal v. 应该，应当（表道德义务）", "logic": "从「欠」演变而来：欠别人的→理应偿还→扩大到一切道德上应该做的事", "en": "You ought to apologize for what you said.", "zh": "你应该为自己说的话道歉。"}, {"gloss": "modal v. 应该（表合理预期）", "logic": "从道德义务扩展到逻辑预期：按常理推断，某事应当发生", "en": "The package ought to arrive by Friday.", "zh": "包裹应该周五前到。"}], "derivatives": [{"w": "owe", "gloss": "欠（钱/人情）；归功于（ought 的同根词）"}, {"w": "oughtn't", "gloss": "不应该（ought not 的缩写）"}], "examples": [{"en": "You ought to see a doctor about that cough.", "zh": "你应该去看医生处理那个咳嗽问题。", "source": "造句"}, {"en": "ought to know better", "zh": "「应该更懂事/明理」——含责备意味的高频短语。", "source": "高频搭配"}], "synonyms": [{"w": "should", "ipa": "/ʃʊd/", "gloss": "应该（更口语，道义色彩较淡）", "note": "最接近的近义词，但 should 更口语，ought to 更正式，带道义色彩"}, {"w": "must", "ipa": "/mʌst/", "gloss": "必须（强制义务，程度更强）", "note": "程度更强，表强制义务；ought to 偏「合理建议」，must 偏「必须」"}, {"w": "had better", "gloss": "最好（带警告意味）", "note": "带警告意味的「最好……」，暗含不做会有后果"}], "antonyms": [{"w": "ought not to", "note": "不应该（自身反义）"}], "nuance": "ought to 和 should 都表建议/义务，但 ought to 更强调道德或客观合理性（You ought to apologize 道义上应道歉）；should 更口语且广泛；must 表示更强的必要性或确定推断。"}, {"word": "sought", "hl": "ough", "levels": ["六级"], "ipa": "/sɔːt/", "subgroup": "ough", "meaning": "v. 寻求，寻找（seek 的过去式/过去分词）", "etymology": "seek 来自古英语 sēcan「追寻」，过去式 sought 是不规则强变化；-ough- 静默规则与 thought/caught 同族。", "roots": [{"part": "sēcan（古英语）", "meaning": "追寻、寻找"}], "phonetics": "ough 读 /ɔː/，gh 静默；整词 /sɔːt/，与 sort（/sɔːrt/）近似但无 r。", "tip": "sought-after = 「广受追捧的」——写作高频搭配，直接背整个形容词短语。", "core": "「主动去追寻、去找」的探索感——不是被动地等，而是带着目标、迈出步子去寻找想要的东西。", "senses": [{"gloss": "v. 寻求，寻找（seek 的过去式/过去分词）", "logic": "核心义：主动搜索、追求目标物，可以是具体的也可以是抽象的", "en": "The refugee family sought shelter from the storm.", "zh": "这个难民家庭寻找避风所躲避风暴。"}], "derivatives": [{"w": "seek", "gloss": "寻求，寻找（原形动词）"}, {"w": "sought-after", "gloss": "广受欢迎的，被追捧的（形容词）"}, {"w": "unsought", "gloss": "未经寻求的，不请自来的"}], "examples": [{"en": "The refugee family sought shelter from the storm.", "zh": "这个难民家庭寻找避风所躲避风暴。", "source": "造句"}, {"en": "highly sought-after", "zh": "「极受追捧的」——人才、商品高频修饰搭配。", "source": "高频搭配"}], "synonyms": [{"w": "pursued", "ipa": "/pərˈsjuːd/", "gloss": "追求（持续主动追逐，含动态过程感）", "note": "「追求」，强调持续主动追逐，带有动态过程感"}, {"w": "searched for", "gloss": "搜寻（强调具体的搜索行为）", "note": "「搜寻」，强调用行动去找，比 sought 更具体"}, {"w": "looked for", "gloss": "寻找（最口语）", "note": "最口语的「寻找」，无正式感"}], "antonyms": [{"w": "avoided", "note": "逃避、回避"}, {"w": "shunned", "note": "刻意回避"}], "nuance": "sought 是书面正式词，多见于新闻和文学（sought refuge 寻求庇护）；searched for 强调具体的搜索行为；pursued 侧重主动追逐，含有明确目标。"}, {"word": "brought", "hl": "ough", "levels": ["基础"], "ipa": "/brɔːt/", "subgroup": "ough", "meaning": "v. 带来，引起（bring 的过去式/过去分词）", "etymology": "bring 来自古英语 bringan「携带来」，过去式 brought 的 -ough- 是中古英语强变化化石，与 thought/bought 同音规则。", "roots": [{"part": "bringan（古英语）", "meaning": "携带、带来"}], "phonetics": "br- 辅音簇 + ough /ɔː/ + t；整词 /brɔːt/，发音是 br + 「哦」+ t，不要读成「布劳特」。", "core": "「把东西从别处携到此处」的携来感——不只是物理搬运，还可以是「带来变化」「带来消息」「带来结果」，都是让原本不在场的东西出现。", "senses": [{"gloss": "v. 带来，拿来（bring 的过去式）", "logic": "核心义：把某物从一处移送到另一处（物理搬运）", "en": "She brought a homemade cake to the party.", "zh": "她带了一个自制蛋糕来参加派对。"}, {"gloss": "v. 引起，导致（变化/结果）", "logic": "从物理「带来」引申到因果链：某个行为带来了某个结果", "en": "The new policy brought about significant changes in the workplace.", "zh": "新政策给工作场所带来了重大变化。"}], "derivatives": [{"w": "bring", "gloss": "带来（原形动词）"}, {"w": "upbringing", "gloss": "教养，抚育（bring up 的名词化）"}], "examples": [{"en": "The new policy brought about significant changes in the workplace.", "zh": "新政策给工作场所带来了重大变化。", "source": "造句"}, {"en": "bring about / bring up / bring in", "zh": "「引起 / 提出;养育 / 引进」——bring 的三个高频短语动词，过去式统一用 brought。", "source": "高频搭配"}], "synonyms": [{"w": "carried", "ipa": "/ˈkærid/", "gloss": "携带（强调物理运送）", "note": "「携带」，强调物理运送，多用于具体物品"}, {"w": "delivered", "ipa": "/dɪˈlɪvərd/", "gloss": "递送，传达（强调送达目的地）", "note": "「递送、传达」，强调送达目的地；deliver a speech（发表演讲）"}, {"w": "introduced", "ipa": "/ˌɪntrəˈdjuːst/", "gloss": "引入（强调把新事物带进某场景）", "note": "「引入」，强调把新事物带进某场景；introduce a change（引入变化）"}], "antonyms": [{"w": "took away", "note": "带走、拿走"}], "nuance": "brought 是最通用的「带来」；carried 侧重物理携带过程；delivered 强调送达完成；introduced 偏向「把新事物引入」，含「首次带入」意味。"}, {"word": "all", "hl": "al", "levels": ["基础"], "ipa": "/ɔːl/", "subgroup": "al", "meaning": "det./pron./adv. 全部，所有；完全", "etymology": "古英语 eall「全部」，是日耳曼语核心词。l 保持发音；派生词族极大：altogether、always、already、almost、also、although 都是 al- 前缀族。", "roots": [{"part": "eall（古英语）", "meaning": "全部"}], "phonetics": "al 读 /ɔːl/，l 正常发音；整词 /ɔːl/，「哦尔」一拖即到。", "core": "「一个不落、全部涵盖」的完全感——像一个大圆圈把所有东西都圈进去，没有遗漏，满满当当。", "senses": [{"gloss": "det./pron. 全部，所有（指全体成员）", "logic": "核心义：一个集合中的每一个都不例外", "en": "All students must submit their assignments by Friday.", "zh": "所有学生必须在周五前提交作业。"}, {"gloss": "adv. 完全，彻底（修饰形容词或副词）", "logic": "从「全部」扩展到程度层面：程度达到100%", "en": "She was all alone in the huge building.", "zh": "她独自一人在那栋大楼里。"}], "derivatives": [{"w": "almost", "gloss": "几乎，差不多（all + most → 几乎全部）"}, {"w": "always", "gloss": "总是，一直（all + ways → 全部时间）"}, {"w": "overall", "gloss": "总体的，全面的（over + all）"}], "examples": [{"en": "All students must submit their assignments by Friday.", "zh": "所有学生必须在周五前提交作业。", "source": "造句"}, {"en": "all in all", "zh": "「总的来说」——总结性高频副词短语。", "source": "高频搭配"}], "synonyms": [{"w": "every", "ipa": "/ˈevri/", "gloss": "每一个（逐一强调每个成员）", "note": "强调「每一个」，后接可数名词单数；every student（每位学生）"}, {"w": "entire", "ipa": "/ɪnˈtaɪər/", "gloss": "整个的，完整的（不可分割的整体）", "note": "强调「整个、完整」，修饰不可分割的整体；the entire team（整支团队）"}, {"w": "whole", "ipa": "/hoʊl/", "gloss": "整个的，完整无缺的（多修饰具体事物）", "note": "强调「完整无缺」，多修饰具体事物；the whole story（整个故事）"}], "antonyms": [{"w": "none", "note": "没有任何"}, {"w": "partial", "note": "部分的"}], "nuance": "all 最通用；every 逐一强调每个成员；entire/whole 强调整体性，但 whole 更日常，entire 略正式。对比：「all students（所有学生）」= 泛指全体；「every student（每个学生）」= 逐个强调。"}, {"word": "call", "hl": "al", "levels": ["基础"], "ipa": "/kɔːl/", "subgroup": "al", "meaning": "v. 称呼；打电话；呼叫  n. 电话；呼声；号召", "etymology": "古诺尔斯语 kalla「呼喊」，北欧语言进入英语后保留 l 的发音；al 读 /ɔːl/。", "roots": [{"part": "kalla（古诺尔斯）", "meaning": "呼喊、命名"}], "phonetics": "c + al /ɔːl/；l 正常发音。注意区分 call /kɔːl/ 和 coal /koʊl/——元音不同。", "core": "「用声音把对方召过来」的呼唤感——不管是喊人名字、打电话远程联系、还是号召大家做某事，核心都是「发出一声，希望对方回应」。", "senses": [{"gloss": "v. 称呼，命名", "logic": "「用声音标记」：用某个名字来叫某人某物 → 命名", "en": "They called their daughter after her grandmother.", "zh": "他们以祖母的名字给女儿取名。"}, {"gloss": "v./n. 打电话", "logic": "「远程呼唤」：通过电话用声音联系对方", "en": "She called her mother as soon as she landed.", "zh": "她一下飞机就给妈妈打了电话。"}, {"gloss": "v. 呼叫，呼喊", "logic": "核心义：发出声音，希望被听到和回应", "en": "He called for help but nobody heard him.", "zh": "他大声呼救，但没人听见。"}, {"gloss": "n. 号召，呼吁", "logic": "从「呼喊」引申到社会层面：向群体发出的行动呼吁", "en": "She called for a complete review of the system.", "zh": "她呼吁对该系统进行全面审查。"}], "derivatives": [{"w": "recall", "gloss": "回忆；召回（re-重新 + call）"}, {"w": "so-called", "gloss": "所谓的（这样被称呼的）"}, {"w": "caller", "gloss": "打电话的人；来访者"}], "examples": [{"en": "She called for a complete review of the system.", "zh": "她呼吁对该系统进行全面审查。", "source": "造句"}, {"en": "call for / call off / call on", "zh": "「呼吁 / 取消 / 拜访;要求」——call 三大高频短语动词。", "source": "高频搭配"}], "synonyms": [{"w": "shout", "ipa": "/ʃaʊt/", "gloss": "大声喊叫（比 call 更粗暴紧迫）", "note": "大声喊叫，强调音量；比 call 更粗暴、更紧迫"}, {"w": "summon", "ipa": "/ˈsʌmən/", "gloss": "召唤，传唤（正式，带权威性）", "note": "正式「召唤、传唤」，带有权威性；summon a witness（传唤证人）"}, {"w": "name", "ipa": "/neɪm/", "gloss": "命名（专指「称呼」义）", "note": "「命名」义近义词；call sb X = name sb X"}], "antonyms": [{"w": "dismiss", "note": "「呼叫」的反义：解散、打发走"}], "nuance": "call 是最通用的「呼叫/称呼」；summon 带有正式权威感（法庭、官方召集）；shout 强调大声，比 call 更急迫或粗鲁。call for（要求/呼吁）和 call off（取消）是托福写作高频短语。"}, {"word": "tall", "hl": "al", "levels": ["基础"], "ipa": "/tɔːl/", "subgroup": "al", "meaning": "adj. 高的，高大的", "etymology": "中古英语 tal「迅速的，勇敢的」，16世纪转意为「身形高大」。l 发音。", "roots": [{"part": "tal（中古英语）", "meaning": "高大"}], "phonetics": "t + al /ɔːl/；l 发音；整词 /tɔːl/。与 ball/fall/call 同韵。", "tip": "tall tale = 「夸大其词的故事、吹牛」——短语里 tall 另有「夸张」义。", "core": "「纵向拉长、向上延伸」的高挑感——不只是长度，是垂直方向上的拔高，从地面往上蹿的感觉，尤其用于人和细长的直立物体。", "senses": [{"gloss": "adj. 高的，高大的（人/垂直物体）", "logic": "核心义：垂直方向超出常规高度", "en": "The basketball player was surprisingly tall for his age.", "zh": "这名篮球运动员对于他的年龄来说出奇地高。"}, {"gloss": "adj. 夸张的，难以实现的（习语义）", "logic": "「高的」引申到抽象维度：要求或故事被「拔高」到不切实际的程度。此义只出现在固定搭配中，是隐喻性延伸", "en": "Finishing the project in a week is a tall order.", "zh": "一周内完成这个项目是个难以实现的要求。"}], "derivatives": [{"w": "tallness", "gloss": "高大，高度（名词，不常用）"}, {"w": "tallish", "gloss": "偏高的，有些高的"}], "examples": [{"en": "The basketball player was surprisingly tall for his age.", "zh": "这名篮球运动员对于他的年龄来说出奇地高。", "source": "造句"}, {"en": "a tall order", "zh": "「难以实现的要求」——高频习语。", "source": "习语"}], "synonyms": [{"w": "high", "ipa": "/haɪ/", "gloss": "高的（物体/抽象，不用于人身高）", "note": "「高」的通用词，但多形容物体或抽象事物高度，不用于人的身高"}, {"w": "towering", "ipa": "/ˈtaʊərɪŋ/", "gloss": "高耸的，巍峨的（带夸张）", "note": "「高耸的」，带夸张强调，多用于建筑或比喻成就"}, {"w": "lofty", "ipa": "/ˈlɔːfti/", "gloss": "高耸的；崇高的（正式/比喻）", "note": "「高耸的；崇高的」，多用于正式或比喻语境"}], "antonyms": [{"w": "short", "note": "矮的（对人）"}, {"w": "low", "note": "低的（对物体）"}], "nuance": "tall 专指「人或垂直物体高」；high 形容物体高度或抽象程度（a high mountain/price）但不用于人身高（不说 a high man）；towering 夸张强调极高。"}, {"word": "install", "hl": "al", "levels": ["六级", "托福"], "ipa": "/ɪnˈstɔːl/", "subgroup": "al", "meaning": "v. 安装，安置；任命（正式就职）", "etymology": "中世纪拉丁语 installare = in-(进入) + stallum(马厩、职位)；字面是「把人安置到职位上」→ 就职；引申为「把设备安置就位」→ 安装。", "roots": [{"part": "in-", "meaning": "进入，置于"}, {"part": "-stall（stallum）", "meaning": "职位、安置处"}], "phonetics": "重音在后 in-STALL；-stall 里 al 读 /ɔːl/，l 发音；整词 /ɪnˈstɔːl/。", "core": "「把东西安放到位、让它开始运转」的就位感——无论是把设备装好接通电源，还是把一个人正式安置到职位上开始履职，都是「就位→启动」的完整过程。", "senses": [{"gloss": "v. 安装（设备/软件）", "logic": "把设备或程序「安放到位」使其可用", "en": "The company installed solar panels on the roof of every building.", "zh": "公司在每栋楼的屋顶安装了太阳能电池板。"}, {"gloss": "v. 任命，使就职（正式安置到职位上）", "logic": "把一个人「安置到职位上」→ 正式就职。这是词源本义（stall = 职位）", "en": "The new president was installed in a ceremony last Tuesday.", "zh": "新校长在上周二的典礼中就职。"}], "derivatives": [{"w": "installation", "gloss": "安装；就职仪式（名词）"}, {"w": "installment", "gloss": "分期付款；（连载的）一期"}, {"w": "uninstall", "gloss": "卸载（反义）"}], "examples": [{"en": "The company installed solar panels on the roof of every building.", "zh": "公司在每栋楼的屋顶安装了太阳能电池板。", "source": "造句"}, {"en": "install an app / install a new leader", "zh": "「安装应用程序 / 就任新领导」——两义高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "set up", "gloss": "安装，建立（口语化）", "note": "口语化「安装、建立」，比 install 更日常；set up a device（安装设备）"}, {"w": "mount", "ipa": "/maʊnt/", "gloss": "固定安装，架设（强调物理固定）", "note": "「固定安装」，强调物理上的架设、挂载；mount a camera（架设摄像头）"}, {"w": "appoint", "ipa": "/əˈpɔɪnt/", "gloss": "任命（专指人事任命）", "note": "「任命」义近义，正式指定某人担任职务；appoint a director（任命总监）"}], "antonyms": [{"w": "uninstall", "note": "卸载（软件）"}, {"w": "remove", "note": "移除、拆除"}], "nuance": "install 兼有「安装软件/设备」和「正式就职」两义，是两者领域里最通用的词；mount 更强调物理固定方式；appoint 只用于人事任命，不含设备安装义。"}, {"word": "recall", "hl": "al", "levels": ["六级", "托福"], "ipa": "/rɪˈkɔːl/", "subgroup": "al", "meaning": "v. 回忆；召回；撤回（产品）  n. 记忆力；召回", "etymology": "re-(重新) + call(呼叫) = 「把记忆重新叫回来」→ 回忆；延伸为官方「把人/产品叫回来」→ 召回。", "roots": [{"part": "re-", "meaning": "重新、回"}, {"part": "-call（kalla）", "meaning": "呼叫"}], "phonetics": "重音在后 re-CALL；-call 里 al 读 /ɔːl/，l 发音；整词 /rɪˈkɔːl/。", "core": "「把已经出去的东西从远处重新叫回来」的回召感——记忆是从脑海深处叫回来，大使是从国外叫回来，缺陷产品是从市场叫回来。全都是把放出去的东西「召还」。", "senses": [{"gloss": "v. 回忆，想起", "logic": "re + call → 把记忆「重新叫回来」到意识中", "en": "I can't recall where I put my keys.", "zh": "我想不起来把钥匙放哪儿了。"}, {"gloss": "v. 召回（人员/大使/运动员）", "logic": "把人从远处「叫回来」", "en": "The ambassador was recalled for urgent consultations.", "zh": "大使被召回进行紧急磋商。"}, {"gloss": "v./n. 召回（有缺陷的产品）", "logic": "把已售出的产品「叫回来」：从市场撤回到厂商", "en": "The company issued a recall for all faulty devices.", "zh": "公司对所有有缺陷的设备发布了召回通知。"}], "derivatives": [{"w": "recallable", "gloss": "可回忆的；可召回的"}, {"w": "unrecallable", "gloss": "无法回忆的；不可召回的"}], "examples": [{"en": "I can't recall where I put my keys.", "zh": "我想不起来把钥匙放哪儿了。", "source": "造句"}, {"en": "total recall / product recall", "zh": "「超强记忆力 / 产品召回」——两义高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "remember", "ipa": "/rɪˈmembər/", "gloss": "记得（最口语，强调记住的结果）", "note": "最口语的「记得/回忆」，强调结果（记得了）；recall 强调主动提取的过程"}, {"w": "recollect", "ipa": "/ˌrekəˈlekt/", "gloss": "回忆（正式书面，努力从记忆深处提取）", "note": "正式书面「回忆」，比 recall 更强调从记忆深处努力提取"}, {"w": "retrieve", "ipa": "/rɪˈtriːv/", "gloss": "检索提取（偏计算机/信息语境）", "note": "「检索提取」，偏计算机/信息语境；retrieve data（检索数据）"}], "antonyms": [{"w": "forget", "note": "忘记"}, {"w": "dispatch", "note": "发出（与「召回」相对）"}], "nuance": "recall 和 remember 都是「回忆」，但 recall 强调主动搜索记忆的过程（常含努力或失败的可能），remember 强调记住这一结果状态；recollect 最正式，多用于回顾往事；retrieve 偏向系统性信息提取。"}, {"word": "salt", "hl": "al", "levels": ["基础"], "ipa": "/sɔːlt/", "subgroup": "al", "meaning": "n. 盐  v. 加盐腌制  adj. 含盐的", "etymology": "古英语 sealt，与拉丁语 sal（盐）同源；salary（薪水）也源于 sal——罗马士兵曾用盐作报酬（salarium）。al 中 l 发音。", "roots": [{"part": "sealt（古英语）/ sal（拉丁）", "meaning": "盐"}], "phonetics": "s + al /ɔːl/ + t；l 在 t 前发音；整词 /sɔːlt/。与 halt/malt/exalt 同韵。", "tip": "salary 和 salt 同根——你的工资原来是「盐钱」，文化梗锚定词源。", "core": "「白色细碎颗粒、给食物注入灵魂味道」的咸味感——撒在食物上让它「活过来」；咸味是最基础的味道，像食物世界里不可或缺的元素。", "senses": [{"gloss": "n. 盐（调味品）", "logic": "核心义：氯化钠，最基本的调味料", "en": "Add a pinch of salt to bring out the flavour.", "zh": "加一小撮盐来提味。"}, {"gloss": "v. 加盐腌制（保存食物）", "logic": "「用盐处理」→ 撒盐保存或调味", "en": "The fish was salted and dried for the winter.", "zh": "鱼被腌好晾干以备冬天食用。"}, {"gloss": "adj. 含盐的，咸的", "logic": "「盐的属性」做形容词：具有盐的特质", "en": "The salt air near the ocean was invigorating.", "zh": "海边咸腥的空气让人精神一振。"}], "derivatives": [{"w": "salty", "gloss": "咸的；（口语）生气的，不爽的"}, {"w": "salary", "gloss": "薪水（源自拉丁 sal，罗马士兵的盐饷）"}, {"w": "saline", "gloss": "含盐的；盐水（医学/科学用语）"}], "examples": [{"en": "Add a pinch of salt to bring out the flavour.", "zh": "加一小撮盐来提味。", "source": "造句"}, {"en": "take sth with a grain of salt", "zh": "「对某事半信半疑」——高频习语。", "source": "习语"}], "synonyms": [{"w": "sodium chloride", "gloss": "氯化钠（化学正式名称）", "note": "化学正式名称；学术或医疗语境使用"}, {"w": "seasoning", "ipa": "/ˈsiːznɪŋ/", "gloss": "调味料（范围更宽，盐是其中之一）", "note": "「调味料」，范围更宽，盐是其中之一"}], "antonyms": [], "nuance": "salt 作名词无真正反义词；作动词「腌制」时与 preserve 近义但更具体（专指用盐）。习语 salt of the earth（社会基础的好人）和 worth one's salt（称职）都用 salt 的隐喻义。"}, {"word": "alter", "hl": "al", "levels": ["六级", "托福"], "ipa": "/ˈɔːltər/", "subgroup": "al", "meaning": "v. 改变，修改；改建（服装）", "etymology": "拉丁语 alterare「使成为另一个」= alter（另一个，same root as alternate、alternative）。al 里 l 发音；重音在首节 AL-。", "roots": [{"part": "alter（拉丁）", "meaning": "另一个，其他"}, {"part": "-ate", "meaning": "动词后缀"}], "phonetics": "重音在首节 AL-，al 读 /ɔːl/，l 发音；-ter 弱读 /tər/。", "core": "「把原有的东西变成另一个样子，但本质不变」的调整感——改衣服是调整尺寸，改计划是调整方案，不是推倒重来，而是在原有基础上「变成另一个版本」。", "senses": [{"gloss": "v. 改变，修改（在原有基础上调整）", "logic": "alter = 另一个 → 使变成另一个样子，但底层还是原来的东西", "en": "The architect altered the original design to reduce costs.", "zh": "建筑师修改了原始设计以降低成本。"}, {"gloss": "v. 改建（服装），改尺寸", "logic": "专指对衣服做局部调整：改短、收腰等，不换款式", "en": "She had the wedding dress altered to fit perfectly.", "zh": "她请人把婚纱改到完全合身。"}], "derivatives": [{"w": "alteration", "gloss": "改变，修改（名词）"}, {"w": "alternate", "gloss": "交替的；轮流（alter + nate → 「另一个接另一个」）"}, {"w": "alternative", "gloss": "替代的；替代方案（另一个选项）"}], "examples": [{"en": "The architect altered the original design to reduce costs.", "zh": "建筑师修改了原始设计以降低成本。", "source": "造句"}, {"en": "alter ego", "zh": "「另一个自我、另一面」——拉丁语直接借入英语，高频文化词。", "source": "高频搭配"}], "synonyms": [{"w": "modify", "ipa": "/ˈmɒdɪfaɪ/", "gloss": "修改（小幅调整，比 alter 更精确）", "note": "「修改」，暗含小幅调整，比 alter 更精确；modify a plan（修改计划）"}, {"w": "change", "ipa": "/tʃeɪndʒ/", "gloss": "改变（最通用，可以是彻底替换）", "note": "最通用的「改变」，范围最宽；alter 强调在原有基础上的调整"}, {"w": "revise", "ipa": "/rɪˈvaɪz/", "gloss": "修订（多用于文稿/计划，重审后改正）", "note": "「修订」，多用于文稿、计划；带有仔细重审后改正的意味"}], "antonyms": [{"w": "preserve", "note": "保持原样"}, {"w": "maintain", "note": "维持不变"}], "nuance": "alter 强调在现有基础上做出部分改变（alter a dress 改衣服尺寸）；modify 暗含细微精准调整；change 可以是完全替换；revise 侧重重审后改正，多用于书面材料。"}, {"word": "halt", "hl": "al", "levels": ["六级", "托福"], "ipa": "/hɔːlt/", "subgroup": "al", "meaning": "v./n. 停止，暂停；（命令）立定！", "etymology": "德语 halt「停！」借入英语，是军事命令词；al 里 l 发音。", "roots": [{"part": "halt（德语 halten）", "meaning": "停住、保持"}], "phonetics": "h + al /ɔːl/ + t；l 在 t 前发音；整词 /hɔːlt/。与 salt/malt 同韵。", "core": "「猛地停在原地、寸步不能前进」的骤停感——不是自然的减速，而是有个外力或命令让运动戛然而止，像急刹车一样干净利落。", "senses": [{"gloss": "v./n. 停止，暂停（突然中止运动或进程）", "logic": "核心义来自德语军事命令：一声 'Halt!' 让人猛地立定，动作瞬间归零", "en": "The construction was brought to a halt by bad weather.", "zh": "恶劣天气迫使施工停了下来。"}], "derivatives": [{"w": "halting", "gloss": "蹒跚的，迟疑的（走一步停一步的状态 → 引申为不流畅）"}, {"w": "haltingly", "gloss": "迟疑地，结结巴巴地（副词）"}], "examples": [{"en": "The construction was brought to a halt by bad weather.", "zh": "恶劣天气迫使施工停了下来。", "source": "造句"}, {"en": "bring to a halt / grind to a halt", "zh": "「使停止 / 渐渐停摆」——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "stop", "ipa": "/stɒp/", "gloss": "停止（最通用，口语书面皆可）", "note": "最通用的「停止」，口语书面皆可；halt 更正式、更突然"}, {"w": "pause", "ipa": "/pɔːz/", "gloss": "暂停（暗含短暂停顿后会继续）", "note": "「暂停」，暗含短暂停顿后会继续；halt 可以是永久性停止"}, {"w": "suspend", "ipa": "/səˈspend/", "gloss": "暂停，中止（正式，多用于活动/规则）", "note": "正式「暂停、中止」，多用于活动、规则；suspend operations（暂停运营）"}], "antonyms": [{"w": "continue", "note": "继续"}, {"w": "proceed", "note": "前进、继续进行"}], "nuance": "halt 比 stop 更正式，带有强制性或突然性（halt production 停产）；pause 暗含临时暂停；suspend 多用于正式程序上的中止（suspend a meeting）。来自军事命令的 halt 在书面英语中语气更强。"}, {"word": "exalt", "hl": "al", "levels": ["六级", "托福"], "ipa": "/ɪɡˈzɔːlt/", "subgroup": "al", "meaning": "v. 赞美，颂扬；提升（地位/精神）", "etymology": "拉丁语 exaltare = ex-(向上) + altus(高)；字面是「举到高处」→ 提升身份或颂扬精神。同根词：altitude（海拔）、exalted（崇高的）。", "roots": [{"part": "ex-", "meaning": "向上，超出"}, {"part": "-alt- (altus)", "meaning": "高"}], "phonetics": "重音在后 ex-ALT；al 读 /ɔːl/，l 发音；整词 /ɪɡˈzɔːlt/。", "core": "「举到高处、让人仰望」的提升感——把一个人或一件事从平地捧到天上，无论是用言语赞美还是实际提升地位，都是向上的力量。", "senses": [{"gloss": "v. 赞美，颂扬（用言语捧高）", "logic": "ex + altus → 向上举 → 用言辞把某人某事「举高」让众人仰望", "en": "The poem exalts the beauty of nature in vivid imagery.", "zh": "这首诗用生动的意象颂扬了自然之美。"}, {"gloss": "v. 提升（地位/精神）", "logic": "向上举的实体化：把人的身份或精神状态抬到更高层次", "en": "He was exalted to the rank of cardinal.", "zh": "他被擢升为红衣主教。"}], "derivatives": [{"w": "exalted", "gloss": "崇高的；亢奋的（被举高的状态）"}, {"w": "exaltation", "gloss": "颂扬；狂喜；提升（名词）"}, {"w": "altitude", "gloss": "海拔，高度（同根词 altus→高）"}], "examples": [{"en": "The poem exalts the beauty of nature in vivid imagery.", "zh": "这首诗用生动的意象颂扬了自然之美。", "source": "造句"}, {"en": "an exalted position / an exalted mood", "zh": "「崇高的地位 / 亢奋的心情」——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "glorify", "ipa": "/ˈɡlɔːrɪfaɪ/", "gloss": "赞美颂扬（带宗教/英雄主义色彩）", "note": "「赞美颂扬」，带有宗教或英雄主义色彩；glorify God（颂扬上帝）"}, {"w": "elevate", "ipa": "/ˈelɪveɪt/", "gloss": "提升（更偏「提高地位或水平」）", "note": "「提升」，更偏「提高地位或水平」；elevate sb to a higher rank（晋升）"}, {"w": "extol", "ipa": "/ɪkˈstoʊl/", "gloss": "极力赞美（书面正式，语气更热情）", "note": "「极力赞美」，书面正式词，比 exalt 语气更热情；extol the virtues of…"}], "antonyms": [{"w": "belittle", "note": "贬低，轻视"}, {"w": "debase", "note": "降低，贬损"}], "nuance": "exalt 兼含「赞美」和「提升精神/地位」两义；extol 专指热情赞美，无「提升」义；elevate 专指提高地位或水准，无「赞美」义。exalt 是正式书面词，写作中比 praise 更高级。"}, {"word": "talk", "hl": "al", "levels": ["基础"], "ipa": "/tɔːk/", "subgroup": "al", "meaning": "v./n. 谈话，说话；演讲", "etymology": "中古英语 talken，与 tale（故事）同源；-al- 里的 l 在 15 世纪后逐渐静默，只留下 /ɔː/ 的延长元音——这是英语「书写追不上发音变化」的典型案例。", "roots": [{"part": "talken（中古英语）", "meaning": "说话、讲述"}], "phonetics": "al 读 /ɔː/，l 完全不发音；整词 /tɔːk/，与 walk/chalk/stalk 同韵。区分 talk /tɔːk/ vs talc /tælk/（滑石粉，l 发音）。", "tip": "walk/talk/chalk/stalk 四个词的 l 都不发音——把它们当「沉默字母四兄弟」一起记。", "core": "「用声音把心里的话传出去」的交流感——没有「说」那么正式，也没有「聊」那么随意，就是两个人或一群人之间来来回回的语言流动。", "senses": [{"gloss": "v./n. 谈话，说话（双向交流）", "logic": "核心义：用语言进行人际交流，信息在两个方向流动", "en": "We need to talk about what happened last night.", "zh": "我们需要谈谈昨晚发生的事。"}, {"gloss": "n. 演讲，讲座（单向正式发言）", "logic": "从「双向交流」扩展到「单向发言」：一个人讲给一群人听", "en": "The professor gave a talk on climate change.", "zh": "教授做了一场关于气候变化的演讲。"}], "derivatives": [{"w": "talkative", "gloss": "健谈的，话多的"}, {"w": "small talk", "gloss": "寒暄，闲聊（社交场合的轻松谈话）"}, {"w": "double-talk", "gloss": "含糊其词，模棱两可的话"}], "examples": [{"en": "We need to talk about what happened last night.", "zh": "我们需要谈谈昨晚发生的事。", "source": "造句"}, {"en": "talk the talk, walk the walk", "zh": "「说到做到」——行动配上言语的高频习语，talk 和 walk 的 l 都静默。", "source": "习语"}], "synonyms": [{"w": "speak", "ipa": "/spiːk/", "gloss": "说话（更正式，常指单向发言）", "note": "「说话」，更正式，常指单向发言；speak at a conference（在会议上发言）"}, {"w": "chat", "ipa": "/tʃæt/", "gloss": "闲聊（轻松口语，无正式感）", "note": "「闲聊」，轻松口语，无正式感；have a chat（聊聊天）"}, {"w": "discuss", "ipa": "/dɪˈskʌs/", "gloss": "讨论（强调双向有明确主题）", "note": "「讨论」，强调双向交换意见，有明确主题；discuss a plan（讨论计划）"}], "antonyms": [{"w": "listen", "note": "倾听（与说相对）"}, {"w": "silence", "note": "沉默"}], "nuance": "talk 最口语通用（talk to sb 和某人谈话）；speak 更正式，常指有意识的发言；chat 最随意；discuss 强调有主题的双向讨论，含义比 talk about 更严肃。"}, {"word": "walk", "hl": "al", "levels": ["基础"], "ipa": "/wɔːk/", "subgroup": "al", "meaning": "v./n. 步行，走路", "etymology": "古英语 wealcan「滚动、移动」，l 在中古英语后期静默，只留 /ɔː/ 元音；与 talk 是「l 静默」的最典型配对词。", "roots": [{"part": "wealcan（古英语）", "meaning": "滚动、步行"}], "phonetics": "al 读 /ɔː/，l 不发音；整词 /wɔːk/。注意 w 正常发音，与 whole/wrap（w 不发音）不同。", "core": "「一步一步向前移动」的行进感——最基础的人体移动方式，双脚交替落地，有节奏地向前推进，慢但稳。", "senses": [{"gloss": "v./n. 步行，走路", "logic": "核心义：双脚交替移动，最基础的人类位移方式", "en": "She walks to work every morning to clear her head.", "zh": "她每天早上步行上班，让脑子清醒一下。"}], "derivatives": [{"w": "walker", "gloss": "步行者；助行架"}, {"w": "walkway", "gloss": "人行道，步道"}, {"w": "sleepwalk", "gloss": "梦游（sleep + walk）"}], "examples": [{"en": "She walks to work every morning to clear her head.", "zh": "她每天早上步行上班，让脑子清醒一下。", "source": "造句"}, {"en": "walk of life", "zh": "「各行各业」——高频短语 people from all walks of life。", "source": "高频搭配"}], "synonyms": [{"w": "stroll", "ipa": "/stroʊl/", "gloss": "漫步（悠闲不急地走）", "note": "「漫步」，悠闲不急的走；stroll in the park（公园散步）"}, {"w": "march", "ipa": "/mɑːrtʃ/", "gloss": "行进（步伐整齐有力）", "note": "「行进」，步伐整齐有力，多用于军队或抗议游行"}, {"w": "hike", "ipa": "/haɪk/", "gloss": "徒步（户外长距离步行）", "note": "「徒步」，在户外长距离步行，比 walk 更费力"}], "antonyms": [{"w": "run", "note": "跑"}, {"w": "drive", "note": "驾车（相对于步行）"}], "nuance": "walk 最通用；stroll 强调悠闲从容；march 强调整齐有力度；hike 专指长距离户外徒步；stride 强调大步迈进（自信或急切）。场景：「walk to work（走路上班）」vs「hike in the mountains（山中徒步）」。"}, {"word": "stalk", "hl": "al", "levels": ["六级", "托福"], "ipa": "/stɔːk/", "subgroup": "al", "meaning": "n. 茎，梗  v. 悄悄跟踪；昂首阔步地走", "etymology": "名词「茎」来自古英语 stealc「高而直的」；动词「跟踪」来自古英语 -stealcian「悄悄走」，同源；al 里 l 静默。", "roots": [{"part": "stealc（古英语）", "meaning": "高直的，悄悄移动"}], "phonetics": "st- 辅音簇 + al /ɔː/（l 不发音）+ k；整词 /stɔːk/，与 talk/walk/chalk 同韵。", "core": "「悄悄地跟在后面、不让对方发现」的尾随感——动词 stalk 最核心的感觉是「隐蔽跟踪」，带着威胁和不被察觉的压迫感；名词「茎」是词源上同音不同感觉的偶合。", "senses": [{"gloss": "v. 悄悄跟踪，尾随（含威胁/骚扰意味）", "logic": "核心义：像猎人跟踪猎物一样，隐蔽地跟在某人后面，不被发现。现代法律语境中 stalking 是犯罪行为", "en": "The celebrity had to contact police after being stalked for months.", "zh": "这位名人被跟踪数月后不得不报警。"}, {"gloss": "v. 昂首阔步地走（充满愤怒或傲慢地大步走）", "logic": "另一种「走」的方式：步伐僵硬、带有强烈情绪地大步走。与「跟踪」义源自同一词根中「移动」的语义，但感觉方向不同", "en": "He stalked out of the meeting without saying a word.", "zh": "他一言不发地大步走出会议室。"}, {"gloss": "n. 茎，梗（植物的一部分）", "logic": "历史偶合：名词义来自 stealc「高而直的」，动词义来自 -stealcian「悄悄走」。虽然同形同音，但感觉完全不同——一个是植物世界的直线感，一个是猎人的跟踪感", "en": "The celery stalks were crisp and fresh.", "zh": "芹菜梗又脆又新鲜。"}], "derivatives": [{"w": "stalker", "gloss": "跟踪者，尾随者（法律/刑事语境）"}, {"w": "stalking", "gloss": "跟踪行为（法律术语，犯罪行为）"}, {"w": "cornstalk", "gloss": "玉米秆（corn + stalk）"}], "examples": [{"en": "The celebrity had to contact police after being stalked for months.", "zh": "这位名人被跟踪数月后不得不报警。", "source": "造句"}, {"en": "stalk on social media", "zh": "「网络跟踪/偷偷刷某人的社交媒体」——现代高频用法。", "source": "高频搭配"}], "synonyms": [{"w": "follow", "ipa": "/ˈfɒloʊ/", "gloss": "跟随（中性词，无威胁含义）", "note": "「跟随」，中性词，stalk 带有威胁性秘密跟踪的负面意味"}, {"w": "trail", "ipa": "/treɪl/", "gloss": "跟踪，尾随（侦探/警察语境，中性）", "note": "「跟踪、尾随」，多用于侦探/警察跟踪嫌疑人，比 stalk 更中性"}, {"w": "stem", "ipa": "/stem/", "gloss": "茎（植物茎部通称）", "note": "「茎」义近义词，但 stem 更泛指植物茎部，stalk 多指较长的挺直茎"}], "antonyms": [{"w": "flee", "note": "逃离（跟踪的反义）"}], "nuance": "stalk 的跟踪义带有强烈的威胁感和隐蔽性，在法律上 stalking 是犯罪行为；follow 中性；trail 多用于侦查语境。stalk 的「茎」义指植物高而直的主茎（celery stalk 芹菜梗）。"}, {"word": "chalk", "hl": "al", "levels": ["基础"], "ipa": "/tʃɔːk/", "subgroup": "al", "meaning": "n. 粉笔；白垩  v. 用粉笔写/画", "etymology": "古英语 cealc，来自拉丁语 calx「石灰石」；白垩是石灰岩的一种，chalk cliff（白垩悬崖）是英国地貌标志；al 里 l 静默。", "roots": [{"part": "cealc（古英语）/ calx（拉丁）", "meaning": "石灰石、白垩"}], "phonetics": "ch /tʃ/ + al /ɔː/（l 不发音）+ k；整词 /tʃɔːk/。与 talk/walk/stalk 同韵。", "tip": "chalk and cheese = 「截然不同的两件事」——英式习语，like chalk and cheese（像粉笔和奶酪一样不同）。", "core": "「白色粉末凝成的棒子、在黑板上留下痕迹」的粉笔感——干燥、易碎、会掉粉，划过粗糙表面时留下一条白线，有轻微沙沙声。", "senses": [{"gloss": "n. 粉笔（教学书写工具）", "logic": "白垩加工成棒状→在黑板上书写的工具。教室文化的核心物品", "en": "The teacher wrote the equation on the board with chalk.", "zh": "老师用粉笔在黑板上写下了这个方程式。"}, {"gloss": "n. 白垩（地质材料，石灰岩的软质变种）", "logic": "原始物质：一种白色软质石灰岩，可用来写字或形成地质景观", "en": "The White Cliffs of Dover are made of chalk.", "zh": "多佛白色悬崖是由白垩构成的。"}, {"gloss": "v. 用粉笔写/画", "logic": "名词动词化：用粉笔这个材料做书写动作", "en": "The children chalked hopscotch squares on the pavement.", "zh": "孩子们用粉笔在人行道上画了跳房子的格子。"}], "derivatives": [{"w": "chalky", "gloss": "白垩质的；像粉笔一样的（质感/颜色）"}, {"w": "chalkboard", "gloss": "黑板（美式，= blackboard）"}], "examples": [{"en": "The teacher wrote the equation on the board with chalk.", "zh": "老师用粉笔在黑板上写下了这个方程式。", "source": "造句"}, {"en": "chalk it up to experience", "zh": "「把它当作经验教训」——高频习语。", "source": "习语"}], "synonyms": [{"w": "limestone", "ipa": "/ˈlaɪmstoʊn/", "gloss": "石灰岩（白垩是软质变种）", "note": "「石灰岩」，白垩是石灰岩的软质变种，地质学上的上位词"}], "antonyms": [], "nuance": "chalk 是专有名词，近义词极少。文化上白垩（chalk）是英国南部海岸（Dover）的标志性地貌，也是教室文化的象征——此词的文化锚点比词义扩展更重要。"}, {"word": "although", "hl": "al", "levels": ["基础"], "ipa": "/ɔːlˈðoʊ/", "subgroup": "al", "meaning": "conj. 尽管，虽然", "etymology": "古英语 eall þēah = all（全部）+ though（纵然）；字面是「纵然一切……也……」→ 尽管。al 里 l 发音；-though 读 /ðoʊ/（这里 ough 读 /oʊ/，是单词内另一段不同的 ough，不同于 thought）。", "roots": [{"part": "all（eall）", "meaning": "全部"}, {"part": "-though（þēah）", "meaning": "纵然、尽管"}], "phonetics": "al 读 /ɔːl/，l 发音；-though 读 /ðoʊ/（注意：词尾 ough 在此读 /oʊ/ 而非 /ɔː/，整词两段 ough 发音不同）；重音在后 al-THOUGH。", "tip": "although 和 though 意思相同，although 更正式，多放句首；though 更口语，也可放句尾（I enjoyed it, though. 不过我还是挺喜欢的）。", "core": "「纵然所有条件都指向A，结果偏偏是B」的转折感——像前面有一堵墙，以为会撞上去，结果拐了个弯。话锋一转的力量，句子的重心永远在后面的主句。", "senses": [{"gloss": "conj. 尽管，虽然（引导让步状语从句）", "logic": "all（全部）+ though（纵然）→ 「就算把所有反向条件都算上，结果仍然……」。让一步，然后转回来强调后半句", "en": "Although the data was incomplete, the team drew some useful conclusions.", "zh": "尽管数据不完整，团队还是得出了一些有用的结论。"}], "derivatives": [{"w": "though", "gloss": "尽管；不过（更口语，可放句尾）"}, {"w": "even though", "gloss": "即使，尽管（语气最强的让步表达）"}], "examples": [{"en": "Although the data was incomplete, the team drew some useful conclusions.", "zh": "尽管数据不完整，团队还是得出了一些有用的结论。", "source": "造句"}, {"en": "although / even though / though", "zh": "「尽管」三兄弟：although 最正式；even though 语气最强，强调与预期相反；though 最口语。", "source": "高频搭配"}], "synonyms": [{"w": "though", "ipa": "/ðoʊ/", "gloss": "尽管；不过（最口语/灵活）", "note": "最接近的近义词，更口语，也可作副词放句尾"}, {"w": "even though", "gloss": "即使，尽管（语气强化版）", "note": "语气强化版，强调让步关系，暗含「与预期相悖」"}, {"w": "while", "ipa": "/waɪl/", "gloss": "尽管，而（可引导让步/对比）", "note": "「尽管/而」，可引导让步，也可强调对比；while useful, it is not perfect（尽管有用，但并不完美）"}], "antonyms": [{"w": "because", "note": "因为（因果 vs 让步）"}], "nuance": "although 和 though 都引导让步状语从句，although 更正式，通常放句首；though 更灵活；even though 语气最强，可替换 although/though 但不反之。写作中 although 比 though 更适合正式文体。"}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

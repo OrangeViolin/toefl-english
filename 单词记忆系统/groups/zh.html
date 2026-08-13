@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>/ʒ/ 浊擦音（最稀有辅音） · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "zh", "combo": "si·su·ge", "title": "/ʒ/ 浊擦音（最稀有辅音）", "sound": "/ʒ/", "subtitle": "从不出现在词首，专藏于 -sion、-sure、法语借词 ge 三条暗道", "intro": "/ʒ/ 是英语辅音中最稀有的一个：出现频率不足所有辅音的 1%，且在纯英语词里从不单独出现在词首。它是 /ʃ/（shoe 里那个清擦音）的浊化版——发音部位完全相同（舌叶抬向上腭，双唇微前），区别只在声带是否振动。记住：/ʃ/ 是「嘘」，/ʒ/ 是「嘘」加上声带嗡鸣。它藏在三条路里：元音 + sion（vision、decision）读 /ʒən/，-sure 和 -sual（measure、casual）读 /ʒ/，以及少数法语借词的词尾 -ge（garage、beige、genre）——这些词的 ge 保留了法语 /ʒ/ 的发音而未被英化。", "subgroups": [{"key": "si", "tag": "si → /ʒ/（元音+sion）", "label": "✅ -sion = /ʒən/", "desc": "vision/decision/television/conclusion"}, {"key": "su", "tag": "su → /ʒ/（-sure/-sual）", "label": "-sure / -sual = /ʒ/", "desc": "measure/pleasure/usual/casual"}, {"key": "ge", "tag": "ge → /ʒ/（法语源）", "label": "ge = /ʒ/", "desc": "garage/beige/genre"}], "words": [{"word": "vision", "hl": "si", "levels": ["非托福"], "ipa": "/ˈvɪʒn/", "subgroup": "si", "meaning": "n. 视力，视觉；愿景，远见；（脑海中的）图像", "etymology": "拉丁语 visio = videre（看）+ -ion（名词后缀）。「看的行为/结果」→ 视力，再延伸为「内心所看见的图景」→ 愿景。与 visible（可见的）、visual（视觉的）、video 同根。", "roots": [{"part": "vis- (videre)", "meaning": "看"}, {"part": "-ion", "meaning": "名词后缀，表行为或结果"}], "phonetics": "/ʒ/ 是全词音位核心：vi- /vɪ/ + -sion /ʒn/。s 夹在两个元音之间且前接 i，被浊化为 /ʒ/。对比 /ʃ/：mission = /mɪʃn/（s 前无元音 i，发清音）；vision = /vɪʒn/（i + s = /ʒ/）。", "tip": "「have a vision for」意为「对……有宏观构想」，是商业和演讲的高频正式用语，不是「有幻觉」。", "examples": [{"en": "The CEO outlined a bold vision for the company's next decade.", "zh": "首席执行官描绘了公司未来十年的大胆愿景。", "source": "造句"}, {"en": "tunnel vision", "zh": "「隧道视野」——比喻只看到正前方、无法顾全大局的思维方式，心理学高频术语。", "source": "高频搭配"}], "synonyms": [{"w": "insight", "ipa": "/ˈɪnsaɪt/", "note": "「洞察力」，比 vision 更强调对现有事物的透彻理解，而非对未来的预判；insight into a problem（对问题的洞察）", "gloss": "洞察力"}, {"w": "foresight", "ipa": "/ˈfɔːrsaɪt/", "note": "「前瞻性」，与 vision 的「愿景」义最近，但更强调预见风险和机遇的能力", "gloss": "前瞻性；远见"}, {"w": "sight", "ipa": "/saɪt/", "note": "「视力/视野」义的近义词，比 vision 更具体，指物理上的看见能力", "gloss": "视力；视野"}], "antonyms": [{"w": "blindness", "note": "失明；短视"}, {"w": "myopia", "note": "近视；目光短浅（正式书面语）"}], "nuance": "vision 兼指物理视力（vision test 视力检查）和抽象愿景（a bold vision 宏大愿景）；insight 是对现状的深度理解；foresight 是对未来的预判能力——三者都涉及「看」，但维度不同。", "core": "一束光穿过镜片，在视网膜上投下一幅清晰的、远处的画面——眼前豁然开朗", "senses": [{"gloss": "视力，视觉", "logic": "核心「看」的物理能力——眼睛接收光，把外界投在视网膜上", "en": "She has 20/20 vision.", "zh": "她视力正常。"}, {"gloss": "愿景，远见", "logic": "从物理的「看」向前延伸——在头脑中提前「看见」尚未存在的未来图景", "en": "The founder had a clear vision for the product ten years before it launched.", "zh": "创始人在产品问世十年前就对它有了清晰的愿景。"}, {"gloss": "（脑海中的）图像，幻象", "logic": "「看」在内心留下的残影——即使闭眼，画面仍在脑中浮现", "en": "He had a sudden vision of his childhood home.", "zh": "他脑海中突然浮现出童年老宅的画面。"}], "derivatives": [{"w": "visible", "gloss": "看得见的"}, {"w": "visual", "gloss": "视觉的"}, {"w": "video", "gloss": "视频"}, {"w": "visionary", "gloss": "有远见的；空想家"}, {"w": "revise", "gloss": "修订（再看一遍）"}, {"w": "supervise", "gloss": "监督（从上方看）"}, {"w": "vista", "gloss": "远景，展望"}]}, {"word": "decision", "hl": "si", "levels": ["非托福"], "ipa": "/dɪˈsɪʒn/", "subgroup": "si", "meaning": "n. 决定，决策；（法庭）裁决；决断力", "etymology": "拉丁语 decisio = de-(切断) + caedere(切) + -ion。「切断」→「切断犹豫」→ 做出决定。与 scissors（剪刀）、incision（切口）、precise（精确，切得整齐）同根。", "roots": [{"part": "de-", "meaning": "向下、切断"}, {"part": "-cis- (caedere)", "meaning": "切"}, {"part": "-ion", "meaning": "名词后缀"}], "phonetics": "-sion 在重读音节后读 /ʒn/：de-CI-sion，重音落在 -ci-，其后 -sion = /ʒn/。同系列：division /dɪˈvɪʒn/、conclusion /kənˈkluːʒn/，规律一致。", "examples": [{"en": "The committee reached a decision after three hours of debate.", "zh": "委员会经过三小时辩论后做出了裁决。", "source": "造句"}, {"en": "make a snap decision", "zh": "「仓促做决定」——snap 意为「迅速的、仓促的」，高频批评性搭配。", "source": "高频搭配"}], "synonyms": [{"w": "resolution", "ipa": "/ˌrezəˈluːʃn/", "note": "「决议/决心」，比 decision 更正式，多指集体决议或内心的坚定承诺；make a resolution（立下决心）", "gloss": "决议；决心"}, {"w": "verdict", "ipa": "/ˈvɜːrdɪkt/", "note": "「裁决」义的法律专用词，指陪审团或法院的最终裁定，比 decision 更具体", "gloss": "裁决；裁定"}, {"w": "judgment", "ipa": "/ˈdʒʌdʒmənt/", "note": "「判断/裁决」，比 decision 更强调基于评估的判断过程，也可指法律判决", "gloss": "判断；裁决"}], "antonyms": [{"w": "indecision", "note": "优柔寡断"}, {"w": "hesitation", "note": "犹豫"}], "nuance": "decision 是最通用的「决定」（个人或集体皆可）；verdict 专指法律裁决；resolution 强调正式决议或坚定决心；judgment 侧重经过评估后的判断。「make a decision」可以是日常小事，「pass a verdict」只用于法庭。", "core": "一把快刀竖直落下，纠结的绳结啪地断开——干脆，不留余地", "senses": [{"gloss": "决定，决策", "logic": "「切」断犹豫——从众多选项中挑一个，不再回头", "en": "After hours of debate, they finally made a decision.", "zh": "经过数小时辩论，他们终于做出了决定。"}, {"gloss": "（法庭）裁决", "logic": "「切」断双方的争议——法官落槌，胜负已定", "en": "The court is expected to hand down its decision next week.", "zh": "法院预计下周公布裁决。"}, {"gloss": "决断力", "logic": "「切」的果断程度——刀快不快，能不能一刀两断", "en": "She is known for her quick decision in a crisis.", "zh": "她以危机中的快速决断力著称。"}], "derivatives": [{"w": "decide", "gloss": "决定"}, {"w": "decisive", "gloss": "果断的；决定性的"}, {"w": "indecision", "gloss": "优柔寡断"}, {"w": "incision", "gloss": "切口，切开"}, {"w": "precise", "gloss": "精确的（切得整齐）"}, {"w": "scissors", "gloss": "剪刀"}, {"w": "concise", "gloss": "简洁的（切掉多余的）"}]}, {"word": "division", "hl": "si", "levels": ["托福"], "ipa": "/dɪˈvɪʒn/", "subgroup": "si", "meaning": "n. 分割，划分；部门，师（军事）；（数学）除法；分歧", "etymology": "拉丁语 divisio = di-(分开) + videre(分割) + -ion。与 divide（分割）、individual（不可分割的个体）同根。核心是「一分为二的行为或结果」。", "roots": [{"part": "di- (dis-)", "meaning": "分开"}, {"part": "-vis- (videre)", "meaning": "分割"}, {"part": "-ion", "meaning": "名词后缀"}], "phonetics": "di-VI-sion：重音在 -vi-，其后 -sion = /ʒn/。注意 vi + sion 的 s 夹在 i 和 o 之间，浊化成 /ʒ/。", "examples": [{"en": "The survey revealed a sharp division of opinion between the two age groups.", "zh": "调查揭示了两个年龄群体之间明显的意见分歧。", "source": "造句"}, {"en": "division of labor", "zh": "「劳动分工」——经济学高频术语，亚当·斯密《国富论》核心概念。", "source": "高频搭配"}], "synonyms": [{"w": "partition", "ipa": "/pɑːrˈtɪʃn/", "note": "「分割/隔断」，比 division 更强调物理上的隔离，如 the partition of a country（国家分裂）", "gloss": "分割；隔断"}, {"w": "split", "ipa": "/splɪt/", "note": "「分裂」，比 division 更口语，强调突然或激烈的分开；a split in the party（党内分裂）", "gloss": "分裂；分开"}, {"w": "department", "ipa": "/dɪˈpɑːrtmənt/", "note": "「部门」义的近义，比 division 小，division 在大公司里通常高于 department 一个层级", "gloss": "部门"}], "antonyms": [{"w": "unity", "note": "统一，团结"}, {"w": "merger", "note": "合并（公司）"}], "nuance": "division 涵盖数学（除法）、组织结构（部门）、地理（分区）、社会（分歧）多个义域；partition 偏重物理或政治上的分割；split 更口语且带有突破性、对抗性；department 是组织内部的具体部门，通常小于 division。", "core": "一根粗绳被双手从两端拽住，纤维一根根崩断，最终裂成两段", "senses": [{"gloss": "分割，划分", "logic": "核心「分」的动作本身——把一个整体拆开", "en": "The division of the estate caused a family feud.", "zh": "财产分割引发了一场家族纠纷。"}, {"gloss": "部门，师（军事）", "logic": "一个组织被「分」成若干块——每块管一摊", "en": "She works in the marketing division.", "zh": "她在市场部工作。"}, {"gloss": "（数学）除法", "logic": "把一个数「分」成若干等份——抽象的切割", "en": "Multiplication and division are basic arithmetic.", "zh": "乘法和除法是基本算术。"}, {"gloss": "分歧", "logic": "意见被「分」成两派——中间裂开一道缝", "en": "The issue has caused a deep division within the party.", "zh": "这个问题在党内造成了深刻的分歧。"}], "derivatives": [{"w": "divide", "gloss": "分割；除以"}, {"w": "dividend", "gloss": "红利；被除数"}, {"w": "individual", "gloss": "个体（不可再分的）"}, {"w": "divisible", "gloss": "可分割的"}, {"w": "subdivision", "gloss": "细分，再分割"}, {"w": "divisor", "gloss": "除数"}]}, {"word": "conclusion", "hl": "si", "levels": ["非托福"], "ipa": "/kənˈkluːʒn/", "subgroup": "si", "meaning": "n. 结论；结束；（协议的）达成", "etymology": "拉丁语 conclusio = con-(全部) + claudere(关闭) + -ion。「把所有论点关起来」→ 得出结论；「把谈判关门」→ 达成协议。与 include（包含）、exclude（排除）、closet（壁橱）同根。", "roots": [{"part": "con-", "meaning": "全部、一起"}, {"part": "-clus- (claudere)", "meaning": "关闭"}, {"part": "-ion", "meaning": "名词后缀"}], "phonetics": "con-CLU-sion：重音在 -clu-，-sion = /ʒn/。/uː/ 在 /ʒ/ 前拉长：/kənˈkluːʒn/。", "tip": "「jump to conclusions」（急于下结论）是英语批评性思维语境中的超高频习语，切勿字面直译。", "examples": [{"en": "The researchers drew the conclusion that diet plays a key role in longevity.", "zh": "研究人员得出结论：饮食在长寿中扮演关键角色。", "source": "造句"}, {"en": "in conclusion", "zh": "「综上所述」——议论文结尾段落的标准连接词。", "source": "高频搭配"}], "synonyms": [{"w": "finding", "ipa": "/ˈfaɪndɪŋ/", "note": "「研究发现」，比 conclusion 更具体，指基于调查或实验得出的具体结果，通常复数（findings）", "gloss": "研究发现"}, {"w": "inference", "ipa": "/ˈɪnfərəns/", "note": "「推断」，比 conclusion 更强调推理过程，是从前提逻辑推出的中间结论", "gloss": "推断，推论"}, {"w": "verdict", "ipa": "/ˈvɜːrdɪkt/", "note": "「裁决」，结论的法律版本，专指陪审团裁定", "gloss": "裁决"}], "antonyms": [{"w": "premise", "note": "前提"}, {"w": "hypothesis", "note": "假说（尚未证实的）"}], "nuance": "conclusion 是最通用的「结论」，既可指论文末段也可指推理终点；inference 是推理过程中的中间推断；finding 是实证研究的具体发现；verdict 只用于法律裁决。「reach a conclusion」强调经过过程到达；「draw a conclusion」强调从证据中推出。", "core": "一扇厚重的木门缓缓合上，咔哒一声落了锁——所有讨论被关在身后", "senses": [{"gloss": "结论", "logic": "把所有论点「关」在一起，推出最后一条判断——门关上，答案留下", "en": "The study reached the conclusion that exercise improves memory.", "zh": "该研究得出结论：运动改善记忆力。"}, {"gloss": "结束", "logic": "把过程「关」上——到此为止，不继续了", "en": "The match came to a thrilling conclusion in extra time.", "zh": "比赛在加时赛中迎来了激动人心的结束。"}, {"gloss": "（协议的）达成", "logic": "谈判被「关」进白纸黑字——方案落定，不再争", "en": "The successful conclusion of the trade deal took three years.", "zh": "贸易协议的成功达成花了三年。"}], "derivatives": [{"w": "conclude", "gloss": "得出结论；结束"}, {"w": "conclusive", "gloss": "决定性的；确凿的"}, {"w": "inconclusive", "gloss": "无定论的"}, {"w": "include", "gloss": "包含（关进去）"}, {"w": "exclude", "gloss": "排除（关在外面）"}, {"w": "seclude", "gloss": "隔离，使隔绝"}, {"w": "closet", "gloss": "壁橱（关上的小空间）"}]}, {"word": "confusion", "hl": "si", "levels": ["托福"], "ipa": "/kənˈfjuːʒn/", "subgroup": "si", "meaning": "n. 困惑，混乱；混淆", "etymology": "拉丁语 confusio = con-(在一起) + fundere(倒、混合) + -ion。「把所有东西倒在一起搅混」→ 混乱、混淆。与 refuse（拒绝，原义「倒回去」）、confound（使困惑）同根。", "roots": [{"part": "con-", "meaning": "一起"}, {"part": "-fus- (fundere)", "meaning": "倒、混合"}, {"part": "-ion", "meaning": "名词后缀"}], "phonetics": "con-FU-sion：重音在 -fu-，-sion = /ʒn/。/fjuː/ 中的 /j/ 滑音不能省略。", "examples": [{"en": "There was some confusion over who was responsible for the project.", "zh": "关于谁负责该项目，存在一些混乱和困惑。", "source": "造句"}, {"en": "in the confusion", "zh": "「在混乱之中」——叙述紧急状况时的高频介词短语。", "source": "高频搭配"}], "synonyms": [{"w": "bewilderment", "ipa": "/bɪˈwɪldərmənt/", "note": "「茫然不知所措」，比 confusion 更强调情感上的迷失感，多形容人的心理状态", "gloss": "茫然，不知所措"}, {"w": "chaos", "ipa": "/ˈkeɪɒs/", "note": "「混乱、无秩序」，比 confusion 更极端，强调完全失序的状态（可指外部场景）", "gloss": "混乱；无秩序"}, {"w": "muddle", "ipa": "/ˈmʌdl/", "note": "「糊涂、混乱」，比 confusion 更口语，带有轻微无能或疏忽的含义；in a muddle（一团糟）", "gloss": "糊涂；一团糟"}], "antonyms": [{"w": "clarity", "note": "清晰，明确"}, {"w": "order", "note": "秩序"}], "nuance": "confusion 可指心理困惑（I'm confused 我很困惑）或外部混乱（confusion broke out 混乱爆发）；bewilderment 专指心理上的茫然；chaos 是最强烈的混乱，强调系统性失序；muddle 带有英式口语色彩，暗含轻度无序。", "core": "几种颜色的墨水同时倒进一只玻璃杯，彼此渗透缠绕，搅成一团灰蒙蒙的液体——分不清哪滴是哪滴", "senses": [{"gloss": "困惑", "logic": "脑子里几股信息被「混」在一起——理不清，想不明白", "en": "The new policy has caused widespread confusion among employees.", "zh": "新政策在员工中造成了普遍的困惑。"}, {"gloss": "混乱", "logic": "多种元素被物理地「混」在一起——场面失控、失序", "en": "In the confusion, someone grabbed her bag and ran.", "zh": "在混乱中，有人抢走她的包跑了。"}, {"gloss": "混淆", "logic": "把两个不同事物错误地「混」为一体——张冠李戴", "en": "There is often confusion between the terms 'affect' and 'effect'.", "zh": "人们经常混淆'affect'和'effect'这两个词。"}], "derivatives": [{"w": "confuse", "gloss": "使困惑；混淆"}, {"w": "confused", "gloss": "困惑的"}, {"w": "confusing", "gloss": "令人困惑的"}, {"w": "confound", "gloss": "使迷惑；混淆"}, {"w": "refuse", "gloss": "拒绝（倒回去）"}, {"w": "diffuse", "gloss": "扩散（倒开）"}, {"w": "fusion", "gloss": "融合，熔合"}]}, {"word": "occasion", "hl": "si", "levels": ["非托福"], "ipa": "/əˈkeɪʒn/", "subgroup": "si", "meaning": "n. 场合，时机；（特定的）重要事件；v.（正式）引起", "etymology": "拉丁语 occasio = ob-(朝向) + cadere(落下)。「正好落下来的机会」→ 时机，与 accident（意外降临）、coincidence（共同落下）同根。", "roots": [{"part": "oc- (ob-)", "meaning": "朝向"}, {"part": "-cas- (cadere)", "meaning": "落下"}, {"part": "-ion", "meaning": "名词后缀"}], "phonetics": "oc-CA-sion：重音在 -ca-，-sion = /ʒn/。注意 oc 轻读 /ə/，重音清楚落在 -KEI-。", "examples": [{"en": "A wedding is a special occasion that calls for careful planning.", "zh": "婚礼是需要精心筹备的特殊场合。", "source": "造句"}, {"en": "on occasion", "zh": "「偶尔」——频率副词短语，等同于 sometimes，但比 sometimes 更正式。", "source": "高频搭配"}], "synonyms": [{"w": "event", "ipa": "/ɪˈvent/", "note": "「事件/活动」，比 occasion 更中性，不强调仪式感；a social event（社交活动）", "gloss": "事件；活动"}, {"w": "opportunity", "ipa": "/ˌɒpəˈtjuːnɪti/", "note": "「机会」义的近义，比 occasion 更强调可把握性；seize the opportunity（抓住机会）", "gloss": "机会"}, {"w": "ceremony", "ipa": "/ˈserəməni/", "note": "「典礼」，比 occasion 更强调正式仪式程序；a graduation ceremony（毕业典礼）", "gloss": "典礼；仪式"}], "antonyms": [{"w": "routine", "note": "日常，例行"}], "nuance": "occasion 强调某一特定时刻的重要性或仪式感（a formal occasion 正式场合）；event 是中性的「事件/活动」；opportunity 侧重可抓住的时机；ceremony 专指有仪式程序的正式场合。「rise to the occasion」（不辱使命）是固定习语。", "core": "一片黄叶从枝头脱落，不偏不倚地落在你恰好摊开的手掌心里", "senses": [{"gloss": "场合，时机", "logic": "一件事「落」在时间轴上的那个位置——不早不晚，就是此刻", "en": "A birthday is always a special occasion.", "zh": "生日总是一个特别的场合。"}, {"gloss": "（特定的）重要事件", "logic": "某个有分量的「落」点——在人生时间线上留下印记的事件", "en": "The concert was a grand occasion attended by thousands.", "zh": "那场音乐会是数千人出席的盛大活动。"}, {"gloss": "v.（正式）引起，导致", "logic": "让一件事「落」下来——使之发生", "en": "The speech occasioned a heated debate in parliament.", "zh": "那番演讲在议会中引起了激烈辩论。"}], "derivatives": [{"w": "occasional", "gloss": "偶尔的"}, {"w": "occasionally", "gloss": "偶尔，间或"}, {"w": "accident", "gloss": "事故（意外降临的事）"}, {"w": "accidental", "gloss": "偶然的，意外的"}, {"w": "coincide", "gloss": "同时发生"}, {"w": "coincidence", "gloss": "巧合"}, {"w": "cascade", "gloss": "瀑布（逐级落下）"}]}, {"word": "measure", "hl": "su", "levels": ["托福"], "ipa": "/ˈmeʒər/", "subgroup": "su", "meaning": "v. 测量，衡量  n. 措施；（一定的）量；标准；（诗歌/音乐）节拍", "etymology": "拉丁语 mensura = metiri(测量) + -ura(名词后缀)。与 dimension（维度）、immense（巨大，无法测量的）同根。「测量」→「用来测量的东西」→「措施（对问题的量身办法）」。", "roots": [{"part": "meas- (mensura)", "meaning": "测量"}, {"part": "-ure", "meaning": "名词后缀，表行为或结果"}], "phonetics": "-sure 读 /ʒər/：mea + sure = /ˈmeʒər/。-sure 在 a、ea、o 之后一律读 /ʒ/ 而非 /ʃ/。对比：sure（/ʃʊər/ 或 /ʃɔːr/，词首读清音）vs measure（词中 -sure 读浊音 /ʒ/）。", "tip": "「beyond measure」意为「无法衡量地（极其……）」：grateful beyond measure（感激得无以言表）——高频正式书面用语。", "examples": [{"en": "The government introduced strict measures to curb air pollution.", "zh": "政府推出了严格措施以遏制空气污染。", "source": "造句"}, {"en": "take measures / safety measures", "zh": "「采取措施 / 安全措施」——政策和报道中的超高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "gauge", "ipa": "/ɡeɪdʒ/", "note": "「测量/衡量」，比 measure 更强调评估难以量化的东西；gauge public opinion（评估民意）", "gloss": "测量；评估"}, {"w": "step", "ipa": "/step/", "note": "「步骤/措施」义的口语版，比 measure 更通用；take steps to solve（采取步骤解决）", "gloss": "步骤；措施"}, {"w": "extent", "ipa": "/ɪkˈstent/", "note": "「程度/范围」，名词义侧面近义；to a large measure = to a large extent（在很大程度上）", "gloss": "程度；范围"}], "antonyms": [{"w": "estimate", "note": "估计（非精确测量）"}], "nuance": "measure 作名词「措施」时（take measures）是政策语境高频词；作动词「测量」时可指物理量或抽象评估（measure success 衡量成功）。gauge 更强调用某种标准评估难以量化的事物；step 是口语化的「措施/步骤」，不如 measure 正式。", "core": "一把冰凉的钢尺紧贴桌面，指尖滑过刻度，一格一格地对齐——准确的、不差毫厘的", "senses": [{"gloss": "v.测量，衡量", "logic": "用标准去「量」一个东西——得出具体数值", "en": "We need to measure the room before buying furniture.", "zh": "买家具前我们需要量一下房间。"}, {"gloss": "n.措施", "logic": "「量」身定做的办法——针对问题的大小和形状，拿出刚好对症的方案", "en": "The government introduced strict measures to curb pollution.", "zh": "政府推出了严格措施以遏制污染。"}, {"gloss": "n.（一定的）量，程度", "logic": "「量」出来的结果——一个具体数值或范围", "en": "A small measure of salt is enough.", "zh": "一小撮盐就够了。"}, {"gloss": "n.标准；（诗歌/音乐）节拍", "logic": "「量」的标尺本身——用来衡量一切的基准", "en": "The poem is written in iambic measure.", "zh": "这首诗用的是抑扬格节拍。"}], "derivatives": [{"w": "measurement", "gloss": "测量；测量结果"}, {"w": "measurable", "gloss": "可测量的"}, {"w": "immeasurable", "gloss": "不可测量的；无限的"}, {"w": "immense", "gloss": "巨大的（无法测量的）"}, {"w": "dimension", "gloss": "维度"}, {"w": "commensurate", "gloss": "相当的（同尺度的）"}, {"w": "meter", "gloss": "米；仪表"}]}, {"word": "pleasure", "hl": "su", "levels": ["非托福"], "ipa": "/ˈpleʒər/", "subgroup": "su", "meaning": "n. 快乐，乐趣；令人愉快的人或事", "etymology": "古法语 plaisir「高兴」，源自拉丁语 placere（使满意）。与 please（取悦）、pleasant（令人愉快的）、complacent（自满的）同根。", "roots": [{"part": "pleas- (placere)", "meaning": "使满意"}, {"part": "-ure", "meaning": "名词后缀"}], "phonetics": "-sure 读 /ʒər/：plea + sure = /ˈpleʒər/。与 measure、treasure、leisure 共享同一 -sure = /ʒ/ 规律，连读记忆效率极高。", "tip": "「My pleasure.」是回答「谢谢」的礼貌用语（不客气），比「You're welcome」更正式；「the pleasure is mine」更强调是「我的荣幸」。", "examples": [{"en": "She takes great pleasure in gardening on weekends.", "zh": "她在周末园艺中获得极大的乐趣。", "source": "造句"}, {"en": "with pleasure", "zh": "「乐意效劳」——回应请求时的正式礼貌用语，比 sure 更书面。", "source": "高频搭配"}], "synonyms": [{"w": "joy", "ipa": "/dʒɔɪ/", "note": "「喜悦」，比 pleasure 更强烈、更深层，是内在的幸福感；pleasure 更偏外部刺激带来的愉悦", "gloss": "喜悦，欢乐"}, {"w": "delight", "ipa": "/dɪˈlaɪt/", "note": "「喜悦/取悦」，比 pleasure 更强调惊喜和激动的成分；to sb's delight（令某人欣喜地）", "gloss": "欣喜，高兴"}, {"w": "enjoyment", "ipa": "/ɪnˈdʒɔɪmənt/", "note": "「享受」，比 pleasure 更强调主动参与过程中的满足感；enjoyment of music（对音乐的享受）", "gloss": "享受，乐趣"}], "antonyms": [{"w": "pain", "note": "痛苦"}, {"w": "displeasure", "note": "不快，不满"}], "nuance": "pleasure 是感官或活动带来的愉悦（sensory pleasure 感官享受）；joy 是内心深处的喜悦，不依赖外部刺激；delight 带有惊喜色彩（delighted = surprised + pleased）；enjoyment 强调在参与过程中持续的满足感。", "core": "暖烘烘的阳光照在脸上，浑身肌肉一寸一寸地松弛下来——舒服得不想动", "senses": [{"gloss": "快乐，乐趣", "logic": "核心「悦」的感觉——满足了，开心了，浑身舒坦", "en": "She takes great pleasure in reading detective novels.", "zh": "她读侦探小说读得津津有味。"}, {"gloss": "令人愉快的人或事", "logic": "带来「悦」的那个源头——让人满足的人或东西", "en": "It's a pleasure to work with such a talented team.", "zh": "和这么有才的团队合作是件愉快的事。"}], "derivatives": [{"w": "please", "gloss": "使愉快；请"}, {"w": "pleasant", "gloss": "令人愉快的"}, {"w": "pleasing", "gloss": "讨人喜欢的"}, {"w": "displeasure", "gloss": "不快，不满"}, {"w": "complacent", "gloss": "自满的（被取悦过头的）"}, {"w": "placid", "gloss": "平静的，温和的"}]}, {"word": "leisure", "hl": "su", "levels": ["托福"], "ipa": "/ˈliːʒər/", "subgroup": "su", "meaning": "n. 闲暇，业余时间  adj. 休闲的（用于名词前）", "etymology": "古法语 leisir「被允许的」，源自拉丁语 licere（被允许）。「被允许自由支配的时间」→ 闲暇。与 license（许可）、illicit（非法的，即「未被许可的」）同根。", "roots": [{"part": "leis- (licere)", "meaning": "被允许"}, {"part": "-ure", "meaning": "名词后缀"}], "phonetics": "lei + sure = /ˈliːʒər/（美式）或 /ˈleʒər/（英式）。-sure = /ʒ/ 规律同 measure、pleasure。注意美式 lei = /liː/，英式 lei = /le/，发音有分歧。", "tip": "「at your leisure」意为「在你方便的时候」——书信或正式邀请中的礼貌用语，不是「慢慢来」的口语说法。", "examples": [{"en": "With more leisure time, people are investing in hobbies and travel.", "zh": "随着闲暇时间增多，人们开始在兴趣爱好和旅行上投入更多。", "source": "造句"}, {"en": "leisure activities / leisure industry", "zh": "「休闲活动 / 休闲产业」——社会学和经济学高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "free time", "note": "最口语的「空闲时间」，无正式感；leisure 更书面", "gloss": "空闲时间"}, {"w": "recreation", "ipa": "/ˌrekriˈeɪʃn/", "note": "「娱乐/消遣」，比 leisure 更强调主动的活动和身心恢复；recreation center（休闲中心）", "gloss": "娱乐；消遣"}, {"w": "relaxation", "ipa": "/ˌriːlækˈseɪʃn/", "note": "「放松」，比 leisure 更强调从紧张中解脱的状态；relaxation techniques（放松技巧）", "gloss": "放松"}], "antonyms": [{"w": "work", "note": "工作"}, {"w": "obligation", "note": "义务，责任"}], "nuance": "leisure 是正式书面语中的「闲暇」，涵盖所有非工作时间；recreation 强调通过活动获得的身心恢复；relaxation 强调放松的状态；free time 是最日常的口语表达。学术写作和政策报告中用 leisure，日常对话用 free time。", "core": "一个空白的下午，窗外蝉鸣，桌上茶还冒着热气——没有任何一个钟在催你", "senses": [{"gloss": "n.闲暇，业余时间", "logic": "「闲」的核心——不被命令、不被占用的自由时间", "en": "With more leisure time, people are investing in hobbies.", "zh": "随着闲暇时间增多，人们在兴趣爱好上投入更多。"}, {"gloss": "adj.休闲的", "logic": "带有「闲」的性质——不是工作，是放松", "en": "She wore leisure clothes to the weekend brunch.", "zh": "她穿了休闲装去周末早午餐。"}], "derivatives": [{"w": "leisurely", "gloss": "悠闲的，不慌不忙的"}, {"w": "license", "gloss": "许可；执照（被允许做的事）"}, {"w": "licit", "gloss": "合法的（被允许的）"}, {"w": "illicit", "gloss": "非法的（未被允许的）"}, {"w": "legitimate", "gloss": "合法的，正当的"}]}, {"word": "casual", "hl": "su", "levels": ["托福"], "ipa": "/ˈkæʒuəl/", "subgroup": "su", "meaning": "adj. 随意的，非正式的；临时的；不经意的", "etymology": "拉丁语 casualis = casus（事件，意外降临的东西）+ -al。「偶然发生的」→「不正式的/随意的」。与 occasion、accident（意外）、coincidence 同根——都含「cadere（落下）」。", "roots": [{"part": "cas- (casus/cadere)", "meaning": "降落、偶然发生"}, {"part": "-ual", "meaning": "形容词后缀"}], "phonetics": "cas + ual = /ˈkæʒuəl/：-su- 在 a 之后浊化为 /ʒ/。注意 -ual 弱读 /juəl/ 或 /wəl/。比较：visual /ˈvɪʒuəl/，规律完全相同。", "tip": "服装语境：「smart casual」是「商务休闲」装束要求——比正装随意，但比运动装正式；是着装场合描述的高频搭配。", "examples": [{"en": "She gave a casual wave and walked past without stopping.", "zh": "她随手挥了挥手，没有停下来就走过去了。", "source": "造句"}, {"en": "casual labor / casual conversation", "zh": "「临时工 / 随意的闲聊」——两个义域的高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "informal", "ipa": "/ɪnˈfɔːrml/", "note": "「非正式的」，最接近 casual 的近义词，但更强调场合或语气的非正式，比 casual 更中性", "gloss": "非正式的"}, {"w": "nonchalant", "ipa": "/ˈnɒnʃələnt/", "note": "「漠然的、若无其事的」，比 casual 更强调刻意装出的不在乎，带有轻微负面含义", "gloss": "漠然的；若无其事的"}, {"w": "offhand", "ipa": "/ˌɒfˈhænd/", "note": "「随口说出的、漫不经心的」，比 casual 更强调缺乏深思熟虑，常带轻微失礼含义", "gloss": "随口说出的；漫不经心的"}], "antonyms": [{"w": "formal", "note": "正式的"}, {"w": "deliberate", "note": "深思熟虑的，刻意的"}], "nuance": "casual 是最中性的「随意/非正式」；informal 强调场合或用语的非正式（informal meeting 非正式会议）；nonchalant 特指刻意表现出的漠然；offhand 暗含因疏忽而失礼。「casual clothes」是休闲服，「informal clothes」同义，但 informal 更多用于语言和场合而非服装。", "core": "一件洗旧了的棉T恤，随手从衣架上扯下来套上去——不系扣子、不塞衣角，也没人会在意", "senses": [{"gloss": "随意的，非正式的", "logic": "「偶然落下」→ 不加预谋、不刻意打扮 → 随性自在", "en": "You can wear casual clothes to the party.", "zh": "你可以穿便装去派对。"}, {"gloss": "临时的", "logic": "「偶然落下」→ 不是固定的、长期的 → 临时凑一下", "en": "He took on casual work as a bartender.", "zh": "他接了一份临时的酒保工作。"}, {"gloss": "不经意的，漫不经心的", "logic": "「偶然落下」→ 没有刻意为之、没当回事", "en": "She threw a casual glance at her phone.", "zh": "她漫不经心地瞥了一眼手机。"}], "derivatives": [{"w": "casually", "gloss": "随意地；漫不经心地"}, {"w": "casualness", "gloss": "随意性"}, {"w": "casualty", "gloss": "伤亡人员（不幸「落」在头上的人）"}, {"w": "occasion", "gloss": "场合（「落」下的事件）"}, {"w": "accident", "gloss": "事故（意外「落」下的事）"}]}, {"word": "visual", "hl": "su", "levels": ["托福"], "ipa": "/ˈvɪʒuəl/", "subgroup": "su", "meaning": "adj. 视觉的，视力的  n.（常复数）视觉材料，图像", "etymology": "拉丁语 visualis = visus（视觉）+ -alis。visus 来自 videre（看），与 vision、video、visible 同根。从拉丁语「能看见的」→ 现代英语「与视觉有关的」。", "roots": [{"part": "vis- (videre)", "meaning": "看"}, {"part": "-ual", "meaning": "形容词后缀"}], "phonetics": "vis + ual = /ˈvɪʒuəl/：-su- 在 i 之后读 /ʒ/，与 casual 规律一致。注意 vis- 中 i = /ɪ/（短音），不是 /iː/。", "examples": [{"en": "The documentary relies heavily on visual storytelling rather than narration.", "zh": "这部纪录片大量依赖视觉叙事而非旁白。", "source": "造句"}, {"en": "visual aids / visual impact", "zh": "「教学视觉辅助工具 / 视觉冲击力」——教育和设计领域的高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "optical", "ipa": "/ˈɒptɪkl/", "note": "「光学的/视觉的」，比 visual 更技术性，多用于物理、仪器、错觉语境；optical illusion（视觉错觉）", "gloss": "光学的；视觉的"}, {"w": "graphic", "ipa": "/ˈɡræfɪk/", "note": "「图形的/图像的」，比 visual 更强调以图形方式呈现；graphic design（平面设计）", "gloss": "图形的；图像的"}, {"w": "pictorial", "ipa": "/pɪkˈtɔːriəl/", "note": "「图片的」，书面词，比 visual 更强调「用图片表现」的形式；pictorial record（图片记录）", "gloss": "图片的；图画的"}], "antonyms": [{"w": "auditory", "note": "听觉的"}, {"w": "verbal", "note": "语言的、言语的"}], "nuance": "visual 是最通用的「视觉的」，覆盖一切与眼睛和图像相关的场景；optical 偏向物理光学和仪器（optical fiber 光纤）；graphic 强调以图形/图像方式设计或呈现；pictorial 专指「以图片为媒介」，比 visual 更窄。", "core": "闭上眼睛，眼前还浮着刚才看过的那幅画的残影——颜色在黑暗中慢慢淡去", "senses": [{"gloss": "adj.视觉的，视力的", "logic": "核心「看」的形容词形式——与眼睛和图像有关的一切", "en": "The documentary relies on visual storytelling.", "zh": "这部纪录片依赖视觉叙事。"}, {"gloss": "n.（常复数）视觉材料，图像", "logic": "「看」的对象——被眼睛接收、用来展示的东西", "en": "The presentation included stunning visuals of the Himalayas.", "zh": "演示中包含了令人惊叹的喜马拉雅山视觉素材。"}], "derivatives": [{"w": "visualize", "gloss": "在脑中看见；可视化"}, {"w": "visualization", "gloss": "可视化"}, {"w": "vision", "gloss": "视力；愿景"}, {"w": "visible", "gloss": "看得见的"}, {"w": "vista", "gloss": "远景，展望"}, {"w": "envision", "gloss": "设想，展望"}]}, {"word": "garage", "hl": "ge", "levels": ["非托福"], "ipa": "/ɡəˈrɑːʒ/", "subgroup": "ge", "meaning": "n. 车库；汽车修理厂", "etymology": "法语 garage = garer（停放）+ -age（名词后缀）。garer 源自日耳曼语 waron（保护、看守）。1902 年进入英语，完整保留法语发音，词尾 -ge 读 /ʒ/ 未被英化。", "roots": [{"part": "gar- (garer)", "meaning": "停放，停靠"}, {"part": "-age", "meaning": "法语名词后缀"}], "phonetics": "ga-RAGE：重音在后（英式有时前重读），词尾 -ge = /ʒ/。这是法语借词 /ʒ/ 的最典型锚定词。美式 /ɡəˈrɑːʒ/ 或 /ˈɡærɪdʒ/——美式有时英化为 /dʒ/，英式保持 /ʒ/。", "tip": "「garage band」（车库乐队）是摇滚文化的高频词——指在车库里排练的业余乐队，也是一种强调原创性的音乐风格。", "examples": [{"en": "He converted the garage into a home office.", "zh": "他把车库改造成了家庭办公室。", "source": "造句"}, {"en": "garage sale", "zh": "「车库清仓拍卖」——北美文化中在自家车库或门前出售二手物品的习俗，高频文化词。", "source": "高频搭配"}], "synonyms": [{"w": "carport", "ipa": "/ˈkɑːrpɔːrt/", "note": "「车棚」，有顶盖但无封闭墙壁的停车结构，比 garage 开放", "gloss": "车棚"}, {"w": "workshop", "ipa": "/ˈwɜːrkʃɒp/", "note": "「修理厂/车间」，当 garage 指修车厂时，workshop 是较近义词，但 workshop 更泛指任何手工作业场所", "gloss": "车间；修理厂"}], "antonyms": [], "nuance": "garage 在北美主要指住宅附属车库（可封闭），在英式英语中还常指汽车修理厂（take the car to the garage）。carport 是简易版，无墙；parking lot/car park 是公共停车场，不是私人车库。", "core": "卷帘门哗哗地升上去，一辆车被缓缓吸入那个幽暗的方盒子——然后门落下，什么也看不见了", "senses": [{"gloss": "车库", "logic": "「停放」汽车的家——车子被收进去、保护起来", "en": "He converted the garage into a home office.", "zh": "他把车库改造成了家庭办公室。"}, {"gloss": "汽车修理厂", "logic": "「停放」并修理汽车的地方——车生病了就送去", "en": "I need to take the car to the garage for a service.", "zh": "我得把车送到修理厂去做保养。"}], "derivatives": [{"w": "guard", "gloss": "守卫（同源：保护）"}, {"w": "garrison", "gloss": "驻军，卫戍部队"}, {"w": "warranty", "gloss": "保修（同源：保护、担保）"}, {"w": "ward", "gloss": "监护；病房"}]}, {"word": "beige", "hl": "ge", "levels": ["非托福"], "ipa": "/beɪʒ/", "subgroup": "ge", "meaning": "adj./n. 米色，浅棕褐色", "etymology": "法语 beige，原指未经漂白的天然羊毛色。19 世纪进入英语，保留法语拼写和 /ʒ/ 发音，是 /ʒ/ 在词尾位置的最简洁示范词。", "roots": [{"part": "beige", "meaning": "（法语）未漂白天然羊毛的颜色"}], "phonetics": "单音节：bei + ge = /beɪʒ/。-ge 词尾 /ʒ/ 无任何辅音跟随，是 /ʒ/ 在开放音节的最纯粹呈现。注意区分：beige /beɪʒ/ vs beige（错误读成 /beɪdʒ/）。", "tip": "beige 常被幽默地用来形容「无聊、平淡」的风格或性格——「a very beige personality」（极度平淡无奇的个性），是英语中颜色词延伸为性格形容词的典型案例。", "examples": [{"en": "She chose a beige linen jacket for the interview.", "zh": "她为面试选了一件米色亚麻西装。", "source": "造句"}, {"en": "beige walls / a beige carpet", "zh": "「米色墙壁 / 米色地毯」——室内设计语境高频搭配，中性百搭色的代表。", "source": "高频搭配"}], "synonyms": [{"w": "ecru", "ipa": "/ˈeɪkruː/", "note": "「本白色/米白色」，比 beige 略浅更接近白色，是时尚和纺织领域的专业术语", "gloss": "本白色；米白色"}, {"w": "cream", "ipa": "/kriːm/", "note": "「奶油色」，比 beige 更白更暖，日常口语中常与 beige 混用", "gloss": "奶油色"}, {"w": "tan", "ipa": "/tæn/", "note": "「棕褐色」，比 beige 更深更偏棕，接近晒过的皮肤色", "gloss": "棕褐色"}], "antonyms": [{"w": "vivid", "note": "鲜艳的（颜色语境）"}], "nuance": "beige、cream、ecru、tan 都是「浅中性色系」：cream 最浅最白，ecru 次之（更黄调），beige 居中（标准米色），tan 最深（接近棕色）。室内设计和时尚领域对这四个词有精确区分，日常口语中 beige 和 cream 常混用。", "core": "一捆没染过色的原羊毛，安静地靠在墙角——不鲜艳也不黯淡，不争不抢，就是它本来的样子", "senses": [{"gloss": "n./adj.米色，浅棕褐色", "logic": "原羊毛本色——未经漂白、未经染色，天然的温和中性色", "en": "She painted the walls a warm beige.", "zh": "她把墙刷成了温暖的米色。"}, {"gloss": "adj.无聊的，平淡无奇的（比喻）", "logic": "米色无性格、无态度 → 比喻一个人或事物毫无个性，无聊到透明", "en": "He has a very beige personality.", "zh": "他的性格极其平淡无奇。"}], "derivatives": [{"w": "beigy", "gloss": "略带米色的"}, {"w": "ecru", "gloss": "本白色，米白色"}, {"w": "cream", "gloss": "奶油色"}, {"w": "tan", "gloss": "棕褐色"}]}, {"word": "genre", "hl": "g", "levels": ["托福"], "ipa": "/ˈʒɑːnrə/", "subgroup": "ge", "meaning": "n. 体裁，类型（文学、艺术、电影等的分类）", "etymology": "法语 genre「类型、性别」，源自拉丁语 genus（种类）。与 general（普通的）、generate（产生）、genuine（真实的，同种的）同根。进入英语时完整保留法语发音，词首 g = /ʒ/。", "roots": [{"part": "gen- (genus)", "meaning": "种类、类型"}, {"part": "-re", "meaning": "法语名词后缀"}], "phonetics": "genre 是词首 /ʒ/ 在英语中的罕见例外——几乎所有词首 /ʒ/ 词都是法语借词。/ˈʒɑːnrə/：ʒ + ɑː + n + r + ə。部分英式说话者也接受 /ˈdʒɒnrə/ 的英化发音，但 /ʒ/ 仍是正式/学术首选。", "tip": "托福写作和学术阅读中，genre 是文学和艺术分析的核心术语：「a hybrid genre」（混合体裁）、「genre conventions」（体裁惯例）——务必认读。", "examples": [{"en": "Science fiction as a genre began to flourish in the early twentieth century.", "zh": "科幻小说作为一种体裁在二十世纪初开始兴盛。", "source": "造句"}, {"en": "genre fiction / genre films", "zh": "「类型小说 / 类型片」——文学批评和影评的高频术语，指遵循固定体裁惯例的作品。", "source": "高频搭配"}], "synonyms": [{"w": "category", "ipa": "/ˈkætəɡɔːri/", "note": "「类别」，比 genre 更通用，不限于艺术，任何分类都可用；genre 专用于文化艺术领域", "gloss": "类别"}, {"w": "type", "ipa": "/taɪp/", "note": "「类型」，最口语最通用，比 genre 无正式感；what type of film（什么类型的电影）", "gloss": "类型"}, {"w": "style", "ipa": "/staɪl/", "note": "「风格」，与 genre 相关但不同：style 强调表达方式，genre 强调内容和结构分类", "gloss": "风格"}], "antonyms": [], "nuance": "genre 专指文化艺术领域（文学、电影、音乐）的「体裁/类型」，带有学术性，强调有约定俗成的结构和惯例（如侦探小说的 genre conventions）；category 是最通用的「类别」；style 是「风格」，关注表达方式而非内容分类。「horror genre（恐怖类型）」vs「horror style（恐怖风格）」——前者是分类归属，后者是风格特征。", "core": "书店里一个旧橡木书架上的铜标签，用刻字告诉你这一排书属于哪个格子——恐怖、科幻、爱情，各有各的归属", "senses": [{"gloss": "体裁，类型（文学、艺术、电影等）", "logic": "「种类」在文化艺术领域的专门化——按约定俗成的规则和惯例分类", "en": "Science fiction is her favorite genre.", "zh": "科幻是她最喜欢的体裁。"}], "derivatives": [{"w": "general", "gloss": "一般的；普遍的（同类的）"}, {"w": "generate", "gloss": "产生，生成"}, {"w": "generation", "gloss": "一代人；产生"}, {"w": "generic", "gloss": "通用的；一般的"}, {"w": "genuine", "gloss": "真实的（同种的、原装的）"}, {"w": "genus", "gloss": "（生物学）属"}, {"w": "gender", "gloss": "性别"}, {"w": "gene", "gloss": "基因"}]}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

@@ -1,0 +1,1893 @@
+{
+  "title": "英语发音规律总表",
+  "subtitle": "从音位出发：一个音 → 它的常见字母组合 → 例词",
+  "intro": "英语约 44 个基础音位（20 元音 + 24 辅音），另加 5 个三合元音。同一个音常有好几种拼写，这张总表把「音 → 拼写 → 例词」一次铺开。点任意例词/音标可听美式女声；标 ✓ 的字母组合已有深度复习页（完整拆解＋近义辨析＋测验）。底部还有拼读专题（不发音字母、软化规律）。",
+  "vowels": [
+    {
+      "ipa": "/iː/",
+      "key": "see",
+      "zh": "长音「衣」，嘴角向两边咧、舌位高前",
+      "spellings": [
+        {
+          "combo": "ee",
+          "ex": [
+            "see",
+            "tree",
+            "green",
+            "free"
+          ],
+          "page": "ee"
+        },
+        {
+          "combo": "ea",
+          "ex": [
+            "sea",
+            "tea",
+            "meat",
+            "read"
+          ],
+          "page": "ee"
+        },
+        {
+          "combo": "e_e",
+          "ex": [
+            "these",
+            "complete",
+            "Chinese"
+          ],
+          "page": "ee"
+        },
+        {
+          "combo": "ie",
+          "ex": [
+            "field",
+            "believe",
+            "piece"
+          ],
+          "page": "ee"
+        },
+        {
+          "combo": "ei",
+          "ex": [
+            "receive",
+            "ceiling",
+            "seize"
+          ],
+          "page": "ee"
+        },
+        {
+          "combo": "-y / -ey",
+          "ex": [
+            "happy",
+            "city",
+            "key",
+            "money"
+          ],
+          "page": "ee"
+        },
+        {
+          "combo": "i",
+          "ex": [
+            "machine",
+            "police",
+            "ski"
+          ],
+          "page": "ee"
+        }
+      ]
+    },
+    {
+      "ipa": "/ɪ/",
+      "key": "sit",
+      "zh": "短促「伊」，比 /iː/ 松、舌位略低",
+      "spellings": [
+        {
+          "combo": "i",
+          "ex": [
+            "sit",
+            "big",
+            "fish",
+            "milk"
+          ],
+          "page": "sit"
+        },
+        {
+          "combo": "y",
+          "ex": [
+            "gym",
+            "myth",
+            "system"
+          ],
+          "page": "sit"
+        },
+        {
+          "combo": "e",
+          "ex": [
+            "pretty",
+            "English",
+            "decide"
+          ],
+          "page": "sit"
+        },
+        {
+          "combo": "ui",
+          "ex": [
+            "build",
+            "guilt",
+            "guitar"
+          ],
+          "page": "sit"
+        },
+        {
+          "combo": "u (特例)",
+          "ex": [
+            "busy",
+            "business"
+          ],
+          "page": "sit"
+        }
+      ]
+    },
+    {
+      "ipa": "/e/",
+      "key": "bed",
+      "zh": "「唉」的前半，嘴半开、舌中前",
+      "spellings": [
+        {
+          "combo": "e",
+          "ex": [
+            "bed",
+            "red",
+            "pen",
+            "ten"
+          ],
+          "page": "bed"
+        },
+        {
+          "combo": "ea",
+          "ex": [
+            "head",
+            "bread",
+            "dead",
+            "ready"
+          ],
+          "page": "bed"
+        },
+        {
+          "combo": "a (特例)",
+          "ex": [
+            "any",
+            "many",
+            "anything"
+          ],
+          "page": "bed"
+        },
+        {
+          "combo": "ai (特例)",
+          "ex": [
+            "said",
+            "again",
+            "against"
+          ],
+          "page": "bed"
+        }
+      ]
+    },
+    {
+      "ipa": "/æ/",
+      "key": "cat",
+      "zh": "扁口「爱」，嘴张大、下巴放低",
+      "spellings": [
+        {
+          "combo": "a",
+          "ex": [
+            "cat",
+            "map",
+            "hand",
+            "apple"
+          ],
+          "page": "cat"
+        }
+      ]
+    },
+    {
+      "ipa": "/ɑː/ · /ɑːr/",
+      "key": "car",
+      "zh": "长音「啊」；带 r 时卷舌（美音）",
+      "spellings": [
+        {
+          "combo": "ar",
+          "ex": [
+            "car",
+            "star",
+            "farm",
+            "park"
+          ],
+          "note": "美音 /ɑːr/ 卷舌，英音 /ɑː/ 无 r",
+          "page": "car"
+        },
+        {
+          "combo": "a",
+          "ex": [
+            "father",
+            "calm",
+            "half",
+            "fast"
+          ],
+          "note": "half/calm 的 l 不发音",
+          "page": "car"
+        },
+        {
+          "combo": "ear (特例)",
+          "ex": [
+            "heart",
+            "hearth"
+          ],
+          "page": "car"
+        }
+      ]
+    },
+    {
+      "ipa": "/ɒ/",
+      "key": "hot",
+      "zh": "短「奥」，英音圆唇；美音多并入 /ɑː/",
+      "spellings": [
+        {
+          "combo": "o",
+          "ex": [
+            "hot",
+            "dog",
+            "box",
+            "lot"
+          ],
+          "page": "hot"
+        },
+        {
+          "combo": "wa / qua",
+          "ex": [
+            "want",
+            "watch",
+            "wash",
+            "quality"
+          ],
+          "note": "w/qu 后的 a 读 /ɒ/",
+          "page": "hot"
+        },
+        {
+          "combo": "ou (特例)",
+          "ex": [
+            "cough",
+            "trough"
+          ],
+          "page": "hot"
+        }
+      ]
+    },
+    {
+      "ipa": "/ɔː/",
+      "key": "saw",
+      "zh": "圆口长「欧」，下巴放低、嘴唇拢圆（与 aw 同音家族）",
+      "spellings": [
+        {
+          "combo": "aw",
+          "page": "aw",
+          "ex": [
+            "saw",
+            "law",
+            "draw"
+          ]
+        },
+        {
+          "combo": "au",
+          "page": "au",
+          "ex": [
+            "cause",
+            "autumn",
+            "fault"
+          ]
+        },
+        {
+          "combo": "augh",
+          "ex": [
+            "caught",
+            "taught",
+            "daughter"
+          ],
+          "page": "ough"
+        },
+        {
+          "combo": "ough",
+          "ex": [
+            "thought",
+            "bought",
+            "ought"
+          ],
+          "page": "ough"
+        },
+        {
+          "combo": "al(l) / alk",
+          "ex": [
+            "all",
+            "ball",
+            "talk",
+            "walk"
+          ],
+          "note": "talk/walk 的 l 不发音",
+          "page": "ough"
+        },
+        {
+          "combo": "or",
+          "page": "or",
+          "ex": [
+            "for",
+            "north"
+          ],
+          "note": "美音 /ɔːr/ 带 r，英音 /ɔː/ 无 r"
+        },
+        {
+          "combo": "oor·oar·our",
+          "ex": [
+            "door",
+            "board",
+            "four",
+            "pour"
+          ]
+        }
+      ]
+    },
+    {
+      "ipa": "/ʊ/",
+      "key": "put",
+      "zh": "短「乌」，嘴半圆、放松",
+      "spellings": [
+        {
+          "combo": "oo",
+          "ex": [
+            "book",
+            "good",
+            "look",
+            "foot"
+          ],
+          "page": "put"
+        },
+        {
+          "combo": "u",
+          "ex": [
+            "put",
+            "full",
+            "push",
+            "bush"
+          ],
+          "page": "put"
+        },
+        {
+          "combo": "ou",
+          "ex": [
+            "could",
+            "would",
+            "should"
+          ],
+          "page": "put"
+        },
+        {
+          "combo": "o (特例)",
+          "ex": [
+            "wolf",
+            "woman"
+          ],
+          "page": "put"
+        }
+      ]
+    },
+    {
+      "ipa": "/uː/",
+      "key": "too",
+      "zh": "长音「乌」，嘴唇突出成小圆",
+      "spellings": [
+        {
+          "combo": "oo",
+          "ex": [
+            "too",
+            "food",
+            "moon",
+            "soon"
+          ],
+          "page": "too"
+        },
+        {
+          "combo": "u_e",
+          "ex": [
+            "rule",
+            "June",
+            "flute"
+          ],
+          "page": "too"
+        },
+        {
+          "combo": "ew",
+          "ex": [
+            "flew",
+            "grew",
+            "chew"
+          ],
+          "page": "too"
+        },
+        {
+          "combo": "ue",
+          "ex": [
+            "blue",
+            "true",
+            "glue"
+          ],
+          "page": "too"
+        },
+        {
+          "combo": "ou",
+          "ex": [
+            "soup",
+            "group",
+            "you"
+          ],
+          "page": "too"
+        },
+        {
+          "combo": "ui / o",
+          "ex": [
+            "fruit",
+            "juice",
+            "who",
+            "move"
+          ],
+          "page": "too"
+        }
+      ]
+    },
+    {
+      "ipa": "/ʌ/",
+      "key": "cup",
+      "zh": "短「啊」偏「呃」，放松、口略开",
+      "spellings": [
+        {
+          "combo": "u",
+          "ex": [
+            "cup",
+            "sun",
+            "bus",
+            "fun"
+          ],
+          "page": "cup"
+        },
+        {
+          "combo": "o",
+          "ex": [
+            "son",
+            "love",
+            "come",
+            "month"
+          ],
+          "page": "cup"
+        },
+        {
+          "combo": "ou",
+          "ex": [
+            "country",
+            "trouble",
+            "young"
+          ],
+          "page": "cup"
+        },
+        {
+          "combo": "oo (特例)",
+          "ex": [
+            "blood",
+            "flood"
+          ],
+          "page": "cup"
+        }
+      ]
+    },
+    {
+      "ipa": "/ɜː/ · /ɜːr/",
+      "key": "bird",
+      "zh": "中央长音「厄」；美音全程卷舌",
+      "spellings": [
+        {
+          "combo": "er",
+          "ex": [
+            "her",
+            "term",
+            "serve"
+          ],
+          "page": "bird"
+        },
+        {
+          "combo": "ir",
+          "ex": [
+            "bird",
+            "girl",
+            "first",
+            "shirt"
+          ],
+          "page": "bird"
+        },
+        {
+          "combo": "ur",
+          "ex": [
+            "turn",
+            "burn",
+            "nurse",
+            "church"
+          ],
+          "page": "bird"
+        },
+        {
+          "combo": "ear",
+          "ex": [
+            "earth",
+            "learn",
+            "heard",
+            "early"
+          ],
+          "page": "bird"
+        },
+        {
+          "combo": "(w)or",
+          "page": "or",
+          "ex": [
+            "word",
+            "work",
+            "world"
+          ],
+          "note": "w+or → /ɜːr/，见 or 页陷阱桶"
+        }
+      ]
+    },
+    {
+      "ipa": "/ə/",
+      "key": "about",
+      "zh": "最弱的「schwa」，非重读音节的含糊音",
+      "spellings": [
+        {
+          "combo": "a / e / o",
+          "ex": [
+            "about",
+            "taken",
+            "lemon"
+          ],
+          "page": "schwa"
+        },
+        {
+          "combo": "er",
+          "ex": [
+            "mother",
+            "teacher",
+            "water"
+          ],
+          "note": "美音 /ər/ 带 r",
+          "page": "schwa"
+        },
+        {
+          "combo": "or / our",
+          "page": "or",
+          "ex": [
+            "doctor",
+            "colour",
+            "favour"
+          ],
+          "note": "后缀 -or → /ər/，见 or 页"
+        },
+        {
+          "combo": "ar / ure",
+          "ex": [
+            "dollar",
+            "sugar",
+            "picture"
+          ],
+          "page": "schwa"
+        }
+      ]
+    },
+    {
+      "ipa": "/eɪ/",
+      "key": "day",
+      "zh": "双元音「诶」，从 /e/ 滑向 /ɪ/",
+      "spellings": [
+        {
+          "combo": "a_e",
+          "ex": [
+            "cake",
+            "name",
+            "make"
+          ],
+          "page": "day"
+        },
+        {
+          "combo": "ai",
+          "ex": [
+            "rain",
+            "wait",
+            "train"
+          ],
+          "page": "day"
+        },
+        {
+          "combo": "ay",
+          "ex": [
+            "day",
+            "play",
+            "say"
+          ],
+          "page": "day"
+        },
+        {
+          "combo": "ey / ei",
+          "ex": [
+            "they",
+            "grey",
+            "eight",
+            "vein"
+          ],
+          "page": "day"
+        },
+        {
+          "combo": "ea (特例)",
+          "ex": [
+            "break",
+            "steak",
+            "great"
+          ],
+          "page": "day"
+        }
+      ]
+    },
+    {
+      "ipa": "/aɪ/",
+      "key": "my",
+      "zh": "双元音「爱」，从 /ɑ/ 滑向 /ɪ/",
+      "spellings": [
+        {
+          "combo": "i_e",
+          "ex": [
+            "time",
+            "nice",
+            "ride"
+          ],
+          "page": "igh"
+        },
+        {
+          "combo": "igh",
+          "ex": [
+            "high",
+            "night",
+            "light",
+            "right"
+          ],
+          "page": "igh"
+        },
+        {
+          "combo": "y / y_e",
+          "ex": [
+            "my",
+            "cry",
+            "sky",
+            "type"
+          ],
+          "page": "igh"
+        },
+        {
+          "combo": "ie",
+          "ex": [
+            "pie",
+            "tie",
+            "lie"
+          ],
+          "page": "igh"
+        },
+        {
+          "combo": "i",
+          "ex": [
+            "mind",
+            "child",
+            "kind",
+            "find"
+          ],
+          "page": "igh"
+        }
+      ]
+    },
+    {
+      "ipa": "/ɔɪ/",
+      "key": "boy",
+      "zh": "双元音「欧伊」，从 /ɔː/ 滑向 /ɪ/",
+      "spellings": [
+        {
+          "combo": "oi",
+          "ex": [
+            "coin",
+            "noise",
+            "point",
+            "voice"
+          ],
+          "page": "boy"
+        },
+        {
+          "combo": "oy",
+          "ex": [
+            "boy",
+            "toy",
+            "enjoy",
+            "royal"
+          ],
+          "page": "boy"
+        }
+      ]
+    },
+    {
+      "ipa": "/aʊ/",
+      "key": "now",
+      "zh": "双元音「奥」，从 /ɑ/ 滑向 /ʊ/",
+      "spellings": [
+        {
+          "combo": "ou",
+          "ex": [
+            "house",
+            "out",
+            "mouth",
+            "round"
+          ],
+          "page": "now"
+        },
+        {
+          "combo": "ow",
+          "ex": [
+            "now",
+            "cow",
+            "town",
+            "brown"
+          ],
+          "page": "now"
+        }
+      ]
+    },
+    {
+      "ipa": "/əʊ/ · /oʊ/",
+      "key": "go",
+      "zh": "双元音「欧」，英音从 /ə/、美音从 /o/ 滑向 /ʊ/",
+      "spellings": [
+        {
+          "combo": "o / o_e",
+          "ex": [
+            "go",
+            "no",
+            "home",
+            "note"
+          ],
+          "page": "go"
+        },
+        {
+          "combo": "oa",
+          "ex": [
+            "boat",
+            "road",
+            "coat",
+            "goal"
+          ],
+          "page": "go"
+        },
+        {
+          "combo": "ow",
+          "ex": [
+            "snow",
+            "low",
+            "grow",
+            "window"
+          ],
+          "page": "go"
+        },
+        {
+          "combo": "ol / ough",
+          "ex": [
+            "cold",
+            "gold",
+            "though",
+            "dough"
+          ],
+          "page": "go"
+        }
+      ]
+    },
+    {
+      "ipa": "/ɪə/ · /ɪr/",
+      "key": "ear",
+      "zh": "从 /ɪ/ 滑向 /ə/（美音卷舌 /ɪr/）",
+      "spellings": [
+        {
+          "combo": "ear",
+          "ex": [
+            "ear",
+            "near",
+            "year",
+            "clear"
+          ],
+          "page": "ear"
+        },
+        {
+          "combo": "eer",
+          "ex": [
+            "deer",
+            "cheer",
+            "beer"
+          ],
+          "page": "ear"
+        },
+        {
+          "combo": "ere / ier",
+          "ex": [
+            "here",
+            "mere",
+            "pier"
+          ],
+          "page": "ear"
+        }
+      ]
+    },
+    {
+      "ipa": "/eə/ · /er/",
+      "key": "air",
+      "zh": "从 /e/ 滑向 /ə/（美音卷舌 /er/）",
+      "spellings": [
+        {
+          "combo": "air",
+          "ex": [
+            "air",
+            "hair",
+            "fair",
+            "chair"
+          ],
+          "page": "air"
+        },
+        {
+          "combo": "are",
+          "ex": [
+            "care",
+            "share",
+            "bare"
+          ],
+          "page": "air"
+        },
+        {
+          "combo": "ear / ere",
+          "ex": [
+            "bear",
+            "pear",
+            "wear",
+            "there"
+          ],
+          "page": "air"
+        }
+      ]
+    },
+    {
+      "ipa": "/ʊə/",
+      "key": "poor",
+      "zh": "从 /ʊ/ 滑向 /ə/，现代多并入 /ɔː/",
+      "spellings": [
+        {
+          "combo": "oor / our",
+          "ex": [
+            "poor",
+            "tour",
+            "moor"
+          ],
+          "page": "poor"
+        },
+        {
+          "combo": "ure",
+          "ex": [
+            "sure",
+            "pure",
+            "cure"
+          ],
+          "page": "poor"
+        }
+      ]
+    },
+    {
+      "ipa": "/aɪə/",
+      "key": "fire",
+      "zh": "三合元音：/aɪ/+schwa，一口气滑三段",
+      "spellings": [
+        {
+          "combo": "ire·i_e",
+          "page": "tri",
+          "ex": [
+            "fire",
+            "tired",
+            "desire"
+          ]
+        }
+      ]
+    },
+    {
+      "ipa": "/aʊə/",
+      "key": "hour",
+      "zh": "三合元音：/aʊ/+schwa",
+      "spellings": [
+        {
+          "combo": "our·ower",
+          "page": "tri",
+          "ex": [
+            "hour",
+            "flower",
+            "power"
+          ]
+        }
+      ]
+    },
+    {
+      "ipa": "/eɪə/",
+      "key": "player",
+      "zh": "三合元音：/eɪ/+schwa",
+      "spellings": [
+        {
+          "combo": "ayer·ayor",
+          "page": "tri",
+          "ex": [
+            "player",
+            "mayor",
+            "layer"
+          ]
+        }
+      ]
+    },
+    {
+      "ipa": "/ɔɪə/",
+      "key": "loyal",
+      "zh": "三合元音：/ɔɪ/+schwa",
+      "spellings": [
+        {
+          "combo": "oyal·oyer",
+          "page": "tri",
+          "ex": [
+            "loyal",
+            "royal",
+            "employer"
+          ]
+        }
+      ]
+    },
+    {
+      "ipa": "/əʊə/",
+      "key": "lower",
+      "zh": "三合元音：/əʊ/+schwa",
+      "spellings": [
+        {
+          "combo": "ower",
+          "page": "tri",
+          "ex": [
+            "lower",
+            "slower",
+            "grower"
+          ]
+        }
+      ]
+    }
+  ],
+  "consonants": [
+    {
+      "ipa": "/p/",
+      "key": "pen",
+      "zh": "清爆破音，双唇紧闭再送气（与 /b/ 成对）",
+      "spellings": [
+        {
+          "combo": "p",
+          "page": "p",
+          "ex": [
+            "pen",
+            "paper",
+            "play"
+          ]
+        },
+        {
+          "combo": "pp",
+          "page": "p",
+          "ex": [
+            "happy",
+            "apple",
+            "support"
+          ]
+        },
+        {
+          "combo": "silent p",
+          "page": "p",
+          "ex": [
+            "psychology",
+            "receipt",
+            "cupboard"
+          ],
+          "note": "ps-/pn- 及词中有时 p 静音"
+        }
+      ]
+    },
+    {
+      "ipa": "/b/",
+      "key": "book",
+      "zh": "浊爆破音，声带振动（与 /p/ 成对）",
+      "spellings": [
+        {
+          "combo": "b",
+          "page": "b",
+          "ex": [
+            "book",
+            "big",
+            "build"
+          ]
+        },
+        {
+          "combo": "bb",
+          "page": "b",
+          "ex": [
+            "rabbit",
+            "bubble",
+            "hobby"
+          ]
+        },
+        {
+          "combo": "silent b",
+          "page": "b",
+          "ex": [
+            "climb",
+            "thumb",
+            "doubt"
+          ],
+          "note": "-mb、debt/doubt 的 b 静音"
+        }
+      ]
+    },
+    {
+      "ipa": "/t/",
+      "key": "take",
+      "zh": "清爆破音（与 /d/ 成对）；-ed 在清辅音后读 /t/",
+      "spellings": [
+        {
+          "combo": "t",
+          "page": "t",
+          "ex": [
+            "take",
+            "time",
+            "table"
+          ]
+        },
+        {
+          "combo": "tt",
+          "page": "t",
+          "ex": [
+            "letter",
+            "better",
+            "button"
+          ]
+        },
+        {
+          "combo": "-ed",
+          "page": "t",
+          "ex": [
+            "walked",
+            "stopped",
+            "watched"
+          ],
+          "note": "清辅音后 -ed=/t/"
+        },
+        {
+          "combo": "silent t",
+          "page": "t",
+          "ex": [
+            "listen",
+            "castle",
+            "often"
+          ]
+        }
+      ]
+    },
+    {
+      "ipa": "/d/",
+      "key": "day",
+      "zh": "浊爆破音（与 /t/ 成对）；-ed 在浊辅音/元音后读 /d/",
+      "spellings": [
+        {
+          "combo": "d",
+          "page": "d",
+          "ex": [
+            "do",
+            "day",
+            "desk"
+          ]
+        },
+        {
+          "combo": "dd",
+          "page": "d",
+          "ex": [
+            "add",
+            "sudden",
+            "middle"
+          ]
+        },
+        {
+          "combo": "-ed",
+          "page": "d",
+          "ex": [
+            "played",
+            "called",
+            "opened"
+          ],
+          "note": "浊辅音/元音后 -ed=/d/"
+        }
+      ]
+    },
+    {
+      "ipa": "/k/",
+      "key": "cat",
+      "zh": "清塞音，舌根抵软腭",
+      "spellings": [
+        {
+          "combo": "c",
+          "ex": [
+            "cat",
+            "cup",
+            "cold"
+          ],
+          "page": "k"
+        },
+        {
+          "combo": "k",
+          "ex": [
+            "key",
+            "kite",
+            "milk"
+          ],
+          "page": "k"
+        },
+        {
+          "combo": "ck",
+          "ex": [
+            "back",
+            "duck",
+            "black"
+          ],
+          "page": "k"
+        },
+        {
+          "combo": "ch",
+          "ex": [
+            "school",
+            "chemistry",
+            "ache"
+          ],
+          "note": "希腊来源词的 ch 读 /k/",
+          "page": "k"
+        },
+        {
+          "combo": "qu / x",
+          "ex": [
+            "queen",
+            "quick",
+            "box",
+            "six"
+          ],
+          "note": "qu=/kw/，x=/ks/",
+          "page": "k"
+        }
+      ]
+    },
+    {
+      "ipa": "/g/",
+      "key": "go",
+      "zh": "浊塞音，/k/ 的浊化",
+      "spellings": [
+        {
+          "combo": "g",
+          "ex": [
+            "go",
+            "big",
+            "game"
+          ],
+          "page": "g"
+        },
+        {
+          "combo": "gg",
+          "ex": [
+            "egg",
+            "bigger"
+          ],
+          "page": "g"
+        },
+        {
+          "combo": "gu / gh",
+          "ex": [
+            "guest",
+            "guide",
+            "ghost"
+          ],
+          "note": "u/h 不发音，只保证 g 读硬音",
+          "page": "g"
+        }
+      ]
+    },
+    {
+      "ipa": "/f/",
+      "key": "fan",
+      "zh": "清擦音，上齿轻触下唇",
+      "spellings": [
+        {
+          "combo": "f / ff",
+          "ex": [
+            "fan",
+            "off",
+            "cliff"
+          ],
+          "page": "f"
+        },
+        {
+          "combo": "ph",
+          "ex": [
+            "phone",
+            "photo",
+            "graph"
+          ],
+          "note": "希腊来源",
+          "page": "f"
+        },
+        {
+          "combo": "gh",
+          "ex": [
+            "laugh",
+            "cough",
+            "enough",
+            "tough"
+          ],
+          "note": "词尾 gh 常读 /f/",
+          "page": "f"
+        }
+      ]
+    },
+    {
+      "ipa": "/v/",
+      "key": "van",
+      "zh": "浊擦音，/f/ 的浊化",
+      "spellings": [
+        {
+          "combo": "v",
+          "ex": [
+            "van",
+            "love",
+            "give"
+          ],
+          "page": "v"
+        },
+        {
+          "combo": "f (特例)",
+          "ex": [
+            "of"
+          ],
+          "page": "v"
+        }
+      ]
+    },
+    {
+      "ipa": "/θ/",
+      "key": "think",
+      "zh": "清「咬舌音」，舌尖轻抵上齿吹气",
+      "spellings": [
+        {
+          "combo": "th",
+          "ex": [
+            "think",
+            "three",
+            "bath",
+            "mouth"
+          ],
+          "page": "think"
+        }
+      ]
+    },
+    {
+      "ipa": "/ð/",
+      "key": "this",
+      "zh": "浊「咬舌音」，同 /θ/ 但声带振动",
+      "spellings": [
+        {
+          "combo": "th",
+          "ex": [
+            "this",
+            "that",
+            "mother",
+            "breathe"
+          ],
+          "page": "this"
+        }
+      ]
+    },
+    {
+      "ipa": "/s/",
+      "key": "sun",
+      "zh": "清擦音「丝」",
+      "spellings": [
+        {
+          "combo": "s / ss",
+          "ex": [
+            "sun",
+            "bus",
+            "miss",
+            "class"
+          ],
+          "page": "s"
+        },
+        {
+          "combo": "c (e/i/y 前)",
+          "ex": [
+            "city",
+            "face",
+            "ice",
+            "pencil"
+          ],
+          "page": "s"
+        },
+        {
+          "combo": "sc",
+          "ex": [
+            "science",
+            "scene",
+            "muscle"
+          ],
+          "page": "s"
+        }
+      ]
+    },
+    {
+      "ipa": "/z/",
+      "key": "zoo",
+      "zh": "浊擦音「兹」，/s/ 的浊化",
+      "spellings": [
+        {
+          "combo": "z / zz",
+          "ex": [
+            "zoo",
+            "zebra",
+            "buzz",
+            "jazz"
+          ],
+          "page": "z"
+        },
+        {
+          "combo": "s",
+          "ex": [
+            "is",
+            "rose",
+            "dogs",
+            "easy"
+          ],
+          "note": "元音间/词尾常浊化",
+          "page": "z"
+        },
+        {
+          "combo": "x (特例)",
+          "ex": [
+            "exam",
+            "exact"
+          ],
+          "note": "x=/gz/",
+          "page": "z"
+        }
+      ]
+    },
+    {
+      "ipa": "/ʃ/",
+      "key": "ship",
+      "zh": "清擦音「许」，嘴唇突出",
+      "spellings": [
+        {
+          "combo": "sh",
+          "page": "sh",
+          "ex": [
+            "ship",
+            "fish",
+            "wash"
+          ]
+        },
+        {
+          "combo": "ti / ci",
+          "page": "sh",
+          "ex": [
+            "nation",
+            "station",
+            "special",
+            "ocean"
+          ],
+          "note": "-tion/-cian 读 /ʃ/"
+        },
+        {
+          "combo": "ssi / ch",
+          "page": "sh",
+          "ex": [
+            "mission",
+            "passion",
+            "machine",
+            "chef"
+          ]
+        },
+        {
+          "combo": "s (特例)",
+          "page": "sh",
+          "ex": [
+            "sugar",
+            "sure"
+          ]
+        }
+      ]
+    },
+    {
+      "ipa": "/ʒ/",
+      "key": "vision",
+      "zh": "浊擦音，/ʃ/ 的浊化（较少见）",
+      "spellings": [
+        {
+          "combo": "s / si",
+          "ex": [
+            "vision",
+            "measure",
+            "usual",
+            "decision"
+          ],
+          "page": "zh"
+        },
+        {
+          "combo": "ge",
+          "ex": [
+            "garage",
+            "beige",
+            "rouge"
+          ],
+          "note": "法语来源",
+          "page": "zh"
+        }
+      ]
+    },
+    {
+      "ipa": "/tʃ/",
+      "key": "chair",
+      "zh": "清塞擦音「切」",
+      "spellings": [
+        {
+          "combo": "ch",
+          "ex": [
+            "chair",
+            "church",
+            "much"
+          ],
+          "page": "ch"
+        },
+        {
+          "combo": "tch",
+          "ex": [
+            "watch",
+            "catch",
+            "kitchen"
+          ],
+          "page": "ch"
+        },
+        {
+          "combo": "t(u)",
+          "ex": [
+            "nature",
+            "picture",
+            "future",
+            "question"
+          ],
+          "note": "-ture/-tion 中 t 常读 /tʃ/",
+          "page": "ch"
+        }
+      ]
+    },
+    {
+      "ipa": "/dʒ/",
+      "key": "jam",
+      "zh": "浊塞擦音「知」，/tʃ/ 的浊化",
+      "spellings": [
+        {
+          "combo": "j",
+          "ex": [
+            "jam",
+            "jump",
+            "joy"
+          ],
+          "page": "j"
+        },
+        {
+          "combo": "g (e/i/y 前)",
+          "ex": [
+            "gym",
+            "giant",
+            "age",
+            "magic"
+          ],
+          "page": "j"
+        },
+        {
+          "combo": "dge",
+          "ex": [
+            "bridge",
+            "edge",
+            "judge"
+          ],
+          "page": "j"
+        },
+        {
+          "combo": "d(u)",
+          "ex": [
+            "soldier",
+            "graduate",
+            "education"
+          ],
+          "page": "j"
+        }
+      ]
+    },
+    {
+      "ipa": "/ŋ/",
+      "key": "sing",
+      "zh": "鼻音「嗯」，舌根抵软腭",
+      "spellings": [
+        {
+          "combo": "ng",
+          "ex": [
+            "sing",
+            "long",
+            "ring"
+          ],
+          "page": "ng"
+        },
+        {
+          "combo": "n (k/g 前)",
+          "ex": [
+            "think",
+            "uncle",
+            "finger",
+            "English"
+          ],
+          "page": "ng"
+        }
+      ]
+    },
+    {
+      "ipa": "/n/",
+      "key": "no",
+      "zh": "鼻音「呢」，舌尖抵齿龈",
+      "spellings": [
+        {
+          "combo": "n / nn",
+          "ex": [
+            "no",
+            "dinner",
+            "run"
+          ],
+          "page": "n"
+        },
+        {
+          "combo": "kn",
+          "ex": [
+            "knee",
+            "know",
+            "knife"
+          ],
+          "note": "k 不发音",
+          "page": "n"
+        },
+        {
+          "combo": "gn",
+          "ex": [
+            "gnaw",
+            "sign",
+            "gnome"
+          ],
+          "note": "g 不发音",
+          "page": "n"
+        }
+      ]
+    },
+    {
+      "ipa": "/m/",
+      "key": "man",
+      "zh": "鼻音「呣」，双唇闭合",
+      "spellings": [
+        {
+          "combo": "m / mm",
+          "ex": [
+            "man",
+            "summer",
+            "him"
+          ],
+          "page": "m"
+        },
+        {
+          "combo": "mb",
+          "ex": [
+            "climb",
+            "thumb",
+            "lamb",
+            "comb"
+          ],
+          "note": "b 不发音",
+          "page": "m"
+        },
+        {
+          "combo": "mn",
+          "ex": [
+            "autumn",
+            "column",
+            "hymn"
+          ],
+          "note": "n 不发音",
+          "page": "m"
+        }
+      ]
+    },
+    {
+      "ipa": "/l/",
+      "key": "leg",
+      "zh": "边音「勒」，舌尖抵齿龈",
+      "spellings": [
+        {
+          "combo": "l / ll",
+          "ex": [
+            "leg",
+            "bell",
+            "ball"
+          ],
+          "page": "l"
+        }
+      ]
+    },
+    {
+      "ipa": "/r/",
+      "key": "red",
+      "zh": "近音，舌尖后卷不碰上颚",
+      "spellings": [
+        {
+          "combo": "r / rr",
+          "ex": [
+            "red",
+            "sorry",
+            "mirror"
+          ],
+          "page": "r"
+        },
+        {
+          "combo": "wr",
+          "ex": [
+            "write",
+            "wrong",
+            "wrist"
+          ],
+          "note": "w 不发音（见 awry）",
+          "page": "r"
+        },
+        {
+          "combo": "rh",
+          "ex": [
+            "rhyme",
+            "rhythm",
+            "rhino"
+          ],
+          "note": "h 不发音",
+          "page": "r"
+        }
+      ]
+    },
+    {
+      "ipa": "/w/",
+      "key": "we",
+      "zh": "近音「呜」，双唇收圆再放开",
+      "spellings": [
+        {
+          "combo": "w",
+          "ex": [
+            "we",
+            "win",
+            "water"
+          ],
+          "page": "w"
+        },
+        {
+          "combo": "wh",
+          "ex": [
+            "what",
+            "when",
+            "why",
+            "which"
+          ],
+          "page": "w"
+        },
+        {
+          "combo": "qu (特例)",
+          "ex": [
+            "quick",
+            "queen"
+          ],
+          "note": "qu=/kw/",
+          "page": "w"
+        }
+      ]
+    },
+    {
+      "ipa": "/j/",
+      "key": "yes",
+      "zh": "近音「呀」，舌面抬向硬腭",
+      "spellings": [
+        {
+          "combo": "y",
+          "ex": [
+            "yes",
+            "yellow",
+            "yet"
+          ],
+          "page": "y"
+        },
+        {
+          "combo": "u (=/juː/)",
+          "ex": [
+            "use",
+            "unit",
+            "music",
+            "university"
+          ],
+          "page": "y"
+        }
+      ]
+    },
+    {
+      "ipa": "/h/",
+      "key": "hat",
+      "zh": "清擦音「喝」，气流从声门送出",
+      "spellings": [
+        {
+          "combo": "h",
+          "ex": [
+            "hat",
+            "hot",
+            "house"
+          ],
+          "page": "h"
+        },
+        {
+          "combo": "wh (o 前)",
+          "ex": [
+            "who",
+            "whole",
+            "whose"
+          ],
+          "page": "h"
+        },
+        {
+          "combo": "silent h",
+          "ex": [
+            "hour",
+            "honest",
+            "honour"
+          ],
+          "note": "h 不发音",
+          "page": "h"
+        }
+      ]
+    }
+  ],
+  "extra": [
+    {
+      "ipa": "🔇 不发音字母",
+      "key": "silent",
+      "zh": "字母写出来却不发音——英语最大的一类拼写陷阱（可专门建一页）",
+      "spellings": [
+        {
+          "combo": "kn- / gn- / wr-",
+          "ex": [
+            "know",
+            "gnaw",
+            "write"
+          ],
+          "note": "词首静音：k/g/w 不发",
+          "page": "silent"
+        },
+        {
+          "combo": "mb / mn",
+          "ex": [
+            "climb",
+            "thumb",
+            "autumn"
+          ],
+          "note": "词尾 b/n 不发",
+          "page": "silent"
+        },
+        {
+          "combo": "silent l",
+          "ex": [
+            "calm",
+            "half",
+            "walk",
+            "talk"
+          ],
+          "page": "silent"
+        },
+        {
+          "combo": "silent t",
+          "ex": [
+            "castle",
+            "listen",
+            "whistle"
+          ],
+          "page": "silent"
+        },
+        {
+          "combo": "silent b",
+          "ex": [
+            "doubt",
+            "debt",
+            "subtle"
+          ],
+          "page": "silent"
+        },
+        {
+          "combo": "silent w / gh",
+          "ex": [
+            "sword",
+            "answer",
+            "light",
+            "though"
+          ],
+          "page": "silent"
+        }
+      ]
+    },
+    {
+      "ipa": "🔀 软化规律",
+      "key": "city",
+      "zh": "c/g/sc 在 e·i·y 前变软音（palatalization）——详见专题页",
+      "spellings": [
+        {
+          "combo": "c → /s/",
+          "page": "soft",
+          "ex": [
+            "city",
+            "face",
+            "cycle"
+          ]
+        },
+        {
+          "combo": "g → /dʒ/",
+          "page": "soft",
+          "ex": [
+            "giant",
+            "age",
+            "energy"
+          ]
+        },
+        {
+          "combo": "g → /g/ 例外",
+          "page": "soft",
+          "ex": [
+            "get",
+            "give",
+            "girl"
+          ],
+          "note": "日耳曼本族词不软化"
+        },
+        {
+          "combo": "sc → /s/",
+          "page": "soft",
+          "ex": [
+            "science",
+            "scene",
+            "muscle"
+          ]
+        }
+      ]
+    }
+  ]
+}

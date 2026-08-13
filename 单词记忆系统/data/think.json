@@ -1,0 +1,1475 @@
+{
+  "id": "think",
+  "combo": "th",
+  "title": "/θ/ 清咬舌音",
+  "sound": "/θ/（清）",
+  "subtitle": "舌尖轻抵上齿，吹气不振动——和 /s/ 的区别就在这一克力气",
+  "intro": "英语的 th 有两种读法：清音 /θ/（think、bath）和浊音 /ð/（this、that、the）。本页专收清音 /θ/。发音要领：舌尖轻触上齿内侧（或微微露出），均匀送气，声带完全不振动——摸住喉咙感受不到任何颤动。最常见的错误是把 /θ/ 读成 /s/，两者区别在于 /s/ 舌尖不碰牙、送气更集中；/θ/ 舌面更宽，气流从舌齿之间漏出。词首 th- 一族（think、three、theory）多为清音；词中/尾 -th 一族（bath、month、health）几乎都是清音；含义词（代词、冠词：this/that/the/them）则是浊音 /ð/，本页不收。",
+  "subgroups": [
+    {
+      "key": "initial",
+      "tag": "th- 词首",
+      "label": "✅ th- 词首 /θ/",
+      "desc": "think / three / thing / thank / thick / thin / throw / thumb / thousand / thirsty / theory / thief / through / threat / thrive / throne。舌尖抵上齿发 /θ/，随后接元音或辅音。注意：代词/限定词（this/that/these/those/the/them/they）是浊音 /ð/，不在此列。"
+    },
+    {
+      "key": "final",
+      "tag": "-th 词中/尾",
+      "label": "-th 词中/尾 /θ/",
+      "desc": "bath / path / math / mouth / teeth / tooth / month / north / south / health / wealth / birthday / warmth。词尾 -th 几乎全是清音 /θ/；复数/第三人称变化（mouths /maʊðz/、bathes /beɪðz/）会变浊音 /ð/，但单数形式均为清音。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-outh / -outh (/aʊθ/ 或 /ʌθ/)",
+      "words": ["mouth", "south", "truth", "youth"]
+    },
+    {
+      "label": "-ath (/æθ/)",
+      "words": ["bath", "path", "math", "wrath"]
+    },
+    {
+      "label": "-ink / -ink (/θɪŋk/)",
+      "words": ["think", "rethink", "unthinkable"]
+    }
+  ],
+  "words": [
+    {
+      "word": "think",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/θɪŋk/",
+      "subgroup": "initial",
+      "meaning": "v. 思考；认为；想象；预期",
+      "core": "在脑中「构建一幅画面」——从把某事想清楚，到对某事持有看法，都是这个「构建」动作",
+      "senses": [
+        {
+          "gloss": "思考、动脑筋",
+          "logic": "核心义：在脑中主动构建想法",
+          "en": "She paused to think before answering.",
+          "zh": "她停顿了一下再回答。"
+        },
+        {
+          "gloss": "认为、持某种看法",
+          "logic": "构建完成后得出的「画面结论」",
+          "en": "I think the meeting starts at nine.",
+          "zh": "我认为会议九点开始。"
+        },
+        {
+          "gloss": "想象、设想（think of / think about）",
+          "logic": "脑中构建一个尚不存在的画面",
+          "en": "I can't think of a better solution.",
+          "zh": "我想不出更好的解决办法。"
+        },
+        {
+          "gloss": "预期、料想（think + will）",
+          "logic": "把画面投射到未来",
+          "en": "I didn't think it would rain today.",
+          "zh": "我没料到今天会下雨。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thought", "gloss": "n. 想法；思考过程"},
+        {"w": "thinker", "gloss": "n. 思想家"},
+        {"w": "unthinkable", "gloss": "adj. 不可想象的，无法接受的"}
+      ],
+      "etymology": "古英语 þencan「构思、想象」，与 thank（感谢）同根——感谢本义是「想到别人对你的好」。派生 thought（想法）、thinking（思维）、thinker（思想家）。",
+      "roots": [
+        {"part": "think（þencan）", "meaning": "构思、想象"}
+      ],
+      "phonetics": "/θɪŋk/：舌尖抵上齿出 /θ/，再接短元音 /ɪ/，收 /ŋk/（软腭音+爆破）。与读 /s/ 的陷阱：think ≠ sink，前者有舌齿摩擦感，后者无。",
+      "tip": "think of（想到），think about（思考），think over（仔细考虑）——三个介词搭配义不同。",
+      "examples": [
+        {
+          "en": "She paused to think before answering the difficult question.",
+          "zh": "她在回答这个难题之前停顿了一下，仔细思考。",
+          "source": "造句"
+        },
+        {
+          "en": "think outside the box",
+          "zh": "「跳出固有框架思考」——创意思维高频惯用语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "consider", "gloss": "考虑、权衡", "ipa": "/kənˈsɪdər/", "note": "「考虑」，比 think 更正式，强调权衡评估；consider all options（权衡所有选项）"},
+        {"w": "ponder", "gloss": "深思熟虑", "ipa": "/ˈpɒndər/", "note": "「深思熟虑」，比 think 更强调长时间反复琢磨；ponder a decision（反复考量决定）"},
+        {"w": "reflect", "gloss": "反思、回顾", "ipa": "/rɪˈflekt/", "note": "「反思」，带有回顾和内省色彩；reflect on one's mistakes（反思错误）"}
+      ],
+      "antonyms": [
+        {"w": "react", "note": "本能反应，不经思考"},
+        {"w": "ignore", "note": "漠视、不去想"}
+      ],
+      "nuance": "think 最通用，可接从句（I think that...）；consider 更正式，多接名词或动名词（consider doing）；ponder 强调长时间沉浸式思考；reflect 带回望意味，多用于总结过去。"
+    },
+    {
+      "word": "theory",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/ˈθɪəri/",
+      "subgroup": "initial",
+      "meaning": "n. 理论；学说；推测，假设",
+      "core": "「从高处俯瞰得出的规律」——theory 本义是「观察景象后形成的系统看法」，引申出「有证据的体系」和「无证据的猜测」两极",
+      "senses": [
+        {
+          "gloss": "（科学）理论、学说",
+          "logic": "经过大量观察和证据支撑后形成的系统性解释",
+          "en": "The theory of evolution explains the diversity of life on Earth.",
+          "zh": "进化论解释了地球上生命的多样性。"
+        },
+        {
+          "gloss": "（日常）推测、假设",
+          "logic": "未经充分验证的「高处一瞥」——俚语化用法",
+          "en": "My theory is that he left early to avoid the traffic.",
+          "zh": "我的猜测是他提前走是为了避开堵车。"
+        },
+        {
+          "gloss": "理论（相对于实践）",
+          "logic": "「纸上看到的」vs「真正落地的」",
+          "en": "In theory it sounds simple, but practice is another matter.",
+          "zh": "理论上听起来简单，实践又是另一回事。"
+        }
+      ],
+      "derivatives": [
+        {"w": "theoretical", "gloss": "adj. 理论上的，假设性的"},
+        {"w": "theorize", "gloss": "v. 建立理论，推测"},
+        {"w": "theorist", "gloss": "n. 理论家"}
+      ],
+      "etymology": "希腊语 theōria「观察、沉思」= thea（景观）+ horan（看）。「从高处看」→ 洞察规律 → 理论。与 theater（剧场，供观看之地）同根。",
+      "roots": [
+        {"part": "theo- (thea)", "meaning": "观看、景观"},
+        {"part": "-ry (-ria)", "meaning": "名词后缀，表行为/状态"}
+      ],
+      "phonetics": "/ˈθɪəri/：重音首音节，th = /θ/，-eory 读 /ɪəri/，三音节。美式常省成两音节 /ˈθɪri/。",
+      "tip": "in theory（理论上）vs in practice（实践中）——这对搭配是托福作文万用对比结构。",
+      "examples": [
+        {
+          "en": "Darwin's theory of evolution changed how we understand life on Earth.",
+          "zh": "达尔文的进化论改变了我们对地球生命的理解。",
+          "source": "造句"
+        },
+        {
+          "en": "in theory / theoretical",
+          "zh": "「在理论上」——常与 in practice 对举，是学术写作高频框架。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "hypothesis", "gloss": "假说（待验证的初步命题）", "ipa": "/haɪˈpɒθɪsɪs/", "note": "「假说」，比 theory 更初步，尚未经过充分验证；propose a hypothesis（提出假说）"},
+        {"w": "framework", "gloss": "分析框架、结构体系", "ipa": "/ˈfreɪmwɜːrk/", "note": "「框架」，比 theory 更强调结构性，多指分析的整体架构"},
+        {"w": "conjecture", "gloss": "推测（缺乏证据）", "ipa": "/kənˈdʒektʃər/", "note": "「推测」，比 theory 更不确定，缺乏证据支撑；pure conjecture（纯粹猜测）"}
+      ],
+      "antonyms": [
+        {"w": "practice", "note": "实践（与理论相对）"},
+        {"w": "fact", "note": "事实（已证实）"}
+      ],
+      "nuance": "theory 在科学语境中是「有大量证据支撑的解释体系」（evolution is a theory，不是猜测）；hypothesis 是「等待验证的初步命题」；conjecture 是「缺乏证据的推测」。日常口语中 theory 常被误用作 hypothesis。"
+    },
+    {
+      "word": "thrive",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/θraɪv/",
+      "subgroup": "initial",
+      "meaning": "v. 蓬勃发展；茁壮成长；繁荣",
+      "core": "「持续为自己积聚」——词根含义是不断抓取积累，引申出「在适宜条件下越来越旺盛」",
+      "senses": [
+        {
+          "gloss": "（生物/植物）茁壮生长",
+          "logic": "有机体持续积聚能量、旺盛生命力",
+          "en": "Coral reefs thrive in warm, shallow water.",
+          "zh": "珊瑚礁在温暖浅水中蓬勃生长。"
+        },
+        {
+          "gloss": "（人/事业）蓬勃发展、越来越好",
+          "logic": "人也能像生物一样在适宜环境中积聚壮大",
+          "en": "She thrives under pressure and delivers her best work.",
+          "zh": "她在压力下反而状态最好。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thriving", "gloss": "adj. 兴旺的，蓬勃的"},
+        {"w": "thrift", "gloss": "n. 节俭（同根：积聚不浪费）"},
+        {"w": "thrifty", "gloss": "adj. 节俭的"}
+      ],
+      "etymology": "古诺尔斯语 þrífast「为自己抓取」，与 thrift（节俭积累）同根。「不断为自己积聚」→ 越来越旺盛。",
+      "roots": [
+        {"part": "thrive（þrífast）", "meaning": "抓取、积聚"}
+      ],
+      "phonetics": "/θraɪv/：th = /θ/ + r 连读 + /aɪv/。注意 thr- 三辅音连缀，舌尖快速从 /θ/ 位置弹出接 /r/。",
+      "examples": [
+        {
+          "en": "Coral reefs thrive in warm, clear, shallow water.",
+          "zh": "珊瑚礁在温暖、清澈、浅浅的水中蓬勃生长。",
+          "source": "造句"
+        },
+        {
+          "en": "thrive under pressure / thrive on challenges",
+          "zh": "「在压力下反而蓬勃 / 以挑战为动力」——性格描述高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "flourish", "gloss": "繁荣茂盛（强调外在可见的盛况）", "ipa": "/ˈflʌrɪʃ/", "note": "「繁荣茂盛」，与 thrive 最近，但 flourish 更强调外在的盛况（文化、艺术繁荣）"},
+        {"w": "prosper", "gloss": "昌盛（多指经济财富层面）", "ipa": "/ˈprɒspər/", "note": "「昌盛」，多用于经济和物质层面；prosper in business（生意兴隆）"},
+        {"w": "bloom", "gloss": "绽放、蓬勃（多指创造力/情感）", "ipa": "/bluːm/", "note": "「绽放、蓬勃」，比 thrive 更有视觉美感，常用于个人成长或创造力"}
+      ],
+      "antonyms": [
+        {"w": "wither", "note": "枯萎、衰退"},
+        {"w": "struggle", "note": "挣扎、艰难维系"}
+      ],
+      "nuance": "thrive 强调「在特定条件下蓬勃生长」，隐含「条件适合所以旺盛」；flourish 更强调外在可见的繁茂状态；prosper 主要用于财富和事业；bloom 多用于情感、创造力或人的状态。"
+    },
+    {
+      "word": "threat",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/θret/",
+      "subgroup": "initial",
+      "meaning": "n. 威胁；恐吓；危险迹象  v. 威胁（threaten 更常用）",
+      "core": "「施压逼迫」——词根含义是聚众施压，引申出主动施害的意图、潜在危险的存在感",
+      "senses": [
+        {
+          "gloss": "（主动）威胁、恐吓",
+          "logic": "某主体对另一方施加心理或物理压力",
+          "en": "He made a threat to expose the company's secrets.",
+          "zh": "他威胁要曝光公司的秘密。"
+        },
+        {
+          "gloss": "（客观）危险迹象、潜在威胁",
+          "logic": "压力来自于形势或事物，不一定有主观施害方",
+          "en": "Climate change poses a serious threat to biodiversity.",
+          "zh": "气候变化对生物多样性构成严重威胁。"
+        }
+      ],
+      "derivatives": [
+        {"w": "threaten", "gloss": "v. 威胁、恐吓（比 threat 动词义更常用）"},
+        {"w": "threatening", "gloss": "adj. 威胁性的，令人恐惧的"},
+        {"w": "threatened", "gloss": "adj. 受到威胁的；（物种）濒危的"}
+      ],
+      "etymology": "古英语 þrēat「压迫、人群」，原指「聚众施压」。þreaten（威胁）= 不断施压；threaten → threat 是后向派生（back-formation）。",
+      "roots": [
+        {"part": "threat（þrēat）", "meaning": "压迫、威逼"}
+      ],
+      "phonetics": "/θret/：th = /θ/，-reat = /ret/，注意 ea 在此读短元音 /e/，不是 /iː/（常见陷阱：threat ≠ treat）。",
+      "tip": "threat（威胁）≠ treat（对待/款待）：两者仅首字母 t/th 不同，意思天差地别——一定要靠 /θ/ 的舌齿摩擦音区分。",
+      "examples": [
+        {
+          "en": "Climate change poses a serious threat to biodiversity.",
+          "zh": "气候变化对生物多样性构成严重威胁。",
+          "source": "造句"
+        },
+        {
+          "en": "under threat of / pose a threat to",
+          "zh": "「面临……的威胁 / 对……构成威胁」——托福阅读高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "menace", "gloss": "持续性威胁、隐患", "ipa": "/ˈmenɪs/", "note": "「威胁、隐患」，比 threat 更强调持续性的危险存在；a menace to society（社会隐患）"},
+        {"w": "danger", "gloss": "危险（客观状态，无需施害方）", "ipa": "/ˈdeɪndʒər/", "note": "「危险」，比 threat 更中性，不一定含主观恐吓意味；in danger（处于危险中）"},
+        {"w": "hazard", "gloss": "具体风险源（物理或环境）", "ipa": "/ˈhæzərd/", "note": "「隐患、危害」，多用于物理或环境风险；health hazard（健康危害）"}
+      ],
+      "antonyms": [
+        {"w": "protection", "note": "保护"},
+        {"w": "assurance", "note": "保障、保证"}
+      ],
+      "nuance": "threat 含主观意图——「某主体威胁某目标」；danger 是客观状态，无需施害方（a dangerous road 是 danger 不是 threat）；menace 强调持续存在的威胁性；hazard 专指具体风险源（化学品、道路）。"
+    },
+    {
+      "word": "through",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/θruː/",
+      "subgroup": "initial",
+      "meaning": "prep. 穿过；贯穿；凭借；从头到尾  adv. 彻底地；直达  adj. 完成的；直通的",
+      "core": "「穿透内部、从一端到另一端」——物理上穿越空间，延伸出「经历全程」「凭借某手段」「彻底完成」等义",
+      "senses": [
+        {
+          "gloss": "（空间）穿过内部",
+          "logic": "核心义：从内部穿越，而非绕行表面",
+          "en": "Light passes through glass but not through walls.",
+          "zh": "光能穿过玻璃，但不能穿过墙。"
+        },
+        {
+          "gloss": "（时间）经历全程、贯穿始终",
+          "logic": "从时间的「一端穿到另一端」",
+          "en": "She worked through the night to finish the report.",
+          "zh": "她通宵工作把报告做完了。"
+        },
+        {
+          "gloss": "（方式）凭借、通过某渠道",
+          "logic": "把「手段/渠道」比作穿越的通道",
+          "en": "He got the job through a personal connection.",
+          "zh": "他通过私人关系拿到了这份工作。"
+        },
+        {
+          "gloss": "（完成）做完了、结束了（adj./adv.）",
+          "logic": "「穿越到另一端」即意味着「已经过去、结束」",
+          "en": "Are you through with the phone? I need to make a call.",
+          "zh": "你打完电话了吗？我要用一下。"
+        }
+      ],
+      "derivatives": [
+        {"w": "throughout", "gloss": "prep./adv. 贯穿全程；遍及（整个空间/时间）"},
+        {"w": "throughput", "gloss": "n. 吞吐量（系统处理能力）"},
+        {"w": "thoroughfare", "gloss": "n. 通道、大路（可完全通行的路）"}
+      ],
+      "etymology": "古英语 þurh「穿过」，日耳曼同根，与德语 durch（穿过）同源。ough 在此读 /uː/——是 ough 六种读法之一（见 ough 深度页）。",
+      "roots": [
+        {"part": "through（þurh）", "meaning": "穿过"}
+      ],
+      "phonetics": "/θruː/：th = /θ/ + r 连缀 + ough 读 /uː/。ough 在 through 中读 /uː/，和 though（/oʊ/）、thought（/ɔː/）都不同，必须单独记。",
+      "tip": "through / threw / thorough 易混：through（介词，穿过）/ threw（throw 的过去式）/ thorough（/ˈθʌrə/，彻底的）——三词发音完全不同。",
+      "examples": [
+        {
+          "en": "Light passes through glass but not through walls.",
+          "zh": "光线能穿过玻璃，但不能穿过墙壁。",
+          "source": "造句"
+        },
+        {
+          "en": "see through / get through / go through",
+          "zh": "「看穿 / 接通（电话）/ 经历、通过」——through 的短语动词族，义各不同。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "across", "gloss": "穿越表面（跨越，不进入内部）", "ipa": "/əˈkrɒs/", "note": "「穿越表面」，through 是穿过内部（through a tunnel），across 是跨越表面（across the street）"},
+        {"w": "via", "gloss": "经由某路径或渠道", "ipa": "/ˈvaɪə/", "note": "「经由、通过（路径）」，比 through 更正式，多用于交通和网络路由"},
+        {"w": "throughout", "gloss": "贯穿始终、遍及全程", "ipa": "/θruːˈaʊt/", "note": "「贯穿始终、遍及」，是 through 的加强形式，强调全程、全范围"}
+      ],
+      "antonyms": [],
+      "nuance": "through 强调从内部穿越（walk through a forest），across 强调从一端到另一端地跨越表面（walk across a bridge）；via 是路径介词，无方向感；throughout 特指「整个过程/区域」，有时间或空间的全覆盖感。"
+    },
+    {
+      "word": "throw",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/θroʊ/",
+      "subgroup": "initial",
+      "meaning": "v. 扔，投；使陷入；（使）困惑；举办（派对）  n. 投掷；（陶瓷等的）制作",
+      "core": "「旋转甩出」——词根是纺车的转动动作，引申出一切「将物体或力量从自己身上甩向他处」的含义",
+      "senses": [
+        {
+          "gloss": "扔、投掷",
+          "logic": "核心义：旋转发力甩出",
+          "en": "He threw the ball across the yard.",
+          "zh": "他把球扔过了院子。"
+        },
+        {
+          "gloss": "使陷入（某种状态）",
+          "logic": "把人或事「甩进」某种处境，如同扔进去",
+          "en": "The sudden news threw everyone into panic.",
+          "zh": "这个突如其来的消息让所有人陷入恐慌。"
+        },
+        {
+          "gloss": "使困惑、打乱",
+          "logic": "「甩」掉对方的节奏，令其措手不及",
+          "en": "The unexpected question threw her completely.",
+          "zh": "这个意外的问题让她完全懵了。"
+        },
+        {
+          "gloss": "举办（派对/聚会）",
+          "logic": "历史偶合用法：将资源「撒出去」招待他人；与核心义联系较弱，属固化搭配",
+          "en": "They threw a surprise party for her birthday.",
+          "zh": "他们为她的生日举办了一场惊喜派对。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thrown", "gloss": "v. throw 的过去分词（注意与 throne 同音）"},
+        {"w": "overthrow", "gloss": "v./n. 推翻（政权）"},
+        {"w": "throwback", "gloss": "n. 重现旧事物；回归过去风格"}
+      ],
+      "etymology": "古英语 þrāwan「扭转、转动」，原指在纺车上转动。「旋转动作」→ 抛出。与 thread（线，被捻出的）同根。",
+      "roots": [
+        {"part": "throw（þrāwan）", "meaning": "扭转、抛出"}
+      ],
+      "phonetics": "/θroʊ/：th = /θ/，thr- 连缀接 /oʊ/。易混：throw（扔）/ through（穿过）——前者 /θroʊ/，后者 /θruː/，元音不同。",
+      "examples": [
+        {
+          "en": "She threw the ball with such force it cleared the fence.",
+          "zh": "她把球扔出去，力道之大越过了围栏。",
+          "source": "造句"
+        },
+        {
+          "en": "throw a party / throw a punch / throw sb off guard",
+          "zh": "「举办派对 / 出拳 / 打某人个措手不及」——throw 搭配义变化大，需逐一记。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "toss", "gloss": "轻抛（随意、力度小）", "ipa": "/tɒs/", "note": "「轻抛」，比 throw 更随意、力度更小；toss a coin（抛硬币）"},
+        {"w": "hurl", "gloss": "用力猛掷（常带愤怒情绪）", "ipa": "/hɜːrl/", "note": "「用力掷」，比 throw 力道更猛，多带愤怒或急迫情绪；hurl insults（出口大骂）"},
+        {"w": "fling", "gloss": "冲动甩出（不加控制）", "ipa": "/flɪŋ/", "note": "「甩、扔」，带冲动或不加控制的感觉；fling open the door（猛地推开门）"}
+      ],
+      "antonyms": [
+        {"w": "catch", "note": "接住"},
+        {"w": "hold", "note": "握住、保持"}
+      ],
+      "nuance": "throw 最通用，中性描述投掷；toss 轻柔随意（toss a salad 翻拌沙拉）；hurl 力道猛且常带情绪（hurl abuse 破口大骂）；fling 强调突然的甩动，不计后果。"
+    },
+    {
+      "word": "thick",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/θɪk/",
+      "subgroup": "initial",
+      "meaning": "adj. 厚的；浓密的；（液体）浓稠的；（口音）浓重的  adv. 厚厚地",
+      "core": "「物质密集堆积，难以穿透」——厚薄描述距离，也延伸到密度、浓度、浓重程度",
+      "senses": [
+        {
+          "gloss": "（尺寸）厚的",
+          "logic": "核心义：两面之间距离大，堆积感强",
+          "en": "The castle walls were two metres thick.",
+          "zh": "城堡的墙有两米厚。"
+        },
+        {
+          "gloss": "（密度）浓密、茂密",
+          "logic": "「厚」扩展到空间密度——毛发、植被、人群的密集",
+          "en": "She had thick dark hair that fell past her shoulders.",
+          "zh": "她有一头浓密的深色头发垂过肩膀。"
+        },
+        {
+          "gloss": "（液体）浓稠",
+          "logic": "液体分子「堆积」，流动性差",
+          "en": "The sauce was too thick and needed more water.",
+          "zh": "酱汁太稠了，需要再加点水。"
+        },
+        {
+          "gloss": "（口音）浓重",
+          "logic": "口音「厚」意味着区域特征明显、不易分辨——与密集义类比",
+          "en": "He spoke with a thick Scottish accent.",
+          "zh": "他说话带着浓重的苏格兰口音。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thicken", "gloss": "v. （使）变稠、变浓"},
+        {"w": "thickness", "gloss": "n. 厚度；浓度"},
+        {"w": "thicket", "gloss": "n. 灌木丛（植被厚密之处）"}
+      ],
+      "etymology": "古英语 þicce「厚、密」，日耳曼同根，与德语 dick（厚、粗）同源。派生 thicken（变稠）、thickness（厚度）、thicket（灌木丛）。",
+      "roots": [
+        {"part": "thick（þicce）", "meaning": "厚、密"}
+      ],
+      "phonetics": "/θɪk/：th = /θ/ + /ɪk/，短促单音节。与 thin（/θɪn/）构成反义对，仅末音不同 k/n。",
+      "examples": [
+        {
+          "en": "The castle walls were thick enough to withstand cannon fire.",
+          "zh": "城堡的墙厚到足以抵挡炮火。",
+          "source": "造句"
+        },
+        {
+          "en": "thick fog / thick accent",
+          "zh": "「浓雾 / 浓重的口音」——两个不同义域的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "dense", "gloss": "密集、浓密（单位内数量多）", "ipa": "/dens/", "note": "「密集、浓密」，比 thick 更正式，多用于森林、人群、物质；dense fog（浓雾）"},
+        {"w": "solid", "gloss": "实心、坚实（内部无空隙）", "ipa": "/ˈsɒlɪd/", "note": "「实心、坚实」，强调内部无空隙，比 thick 更强调物质密度"},
+        {"w": "heavy", "gloss": "厚重（带重量感）", "ipa": "/ˈhevi/", "note": "「厚重」，液体义可互换（thick/heavy cream），但 heavy 带有重量感"}
+      ],
+      "antonyms": [
+        {"w": "thin", "note": "薄的；稀的"},
+        {"w": "sparse", "note": "稀疏的（植被/头发）"}
+      ],
+      "nuance": "thick 和 dense 都表「密」，但 thick 侧重物理厚度（a thick book），dense 侧重单位内数量多（dense population 人口稠密）；两者用于雾、烟时可互换，但 dense 更学术。"
+    },
+    {
+      "word": "thin",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/θɪn/",
+      "subgroup": "initial",
+      "meaning": "adj. 薄的；细的；稀疏的；（液体）稀的  v. （使）变薄；稀释",
+      "core": "「物质稀少、间距大、密度低」——从尺寸的薄到密度的稀，再到分量的单薄，都是「量少间大」这一感觉",
+      "senses": [
+        {
+          "gloss": "（尺寸）薄的",
+          "logic": "核心义：两面之间距离小",
+          "en": "The ice on the lake was too thin to walk on.",
+          "zh": "湖面的冰太薄，不能踩。"
+        },
+        {
+          "gloss": "（身体）瘦的、纤细的",
+          "logic": "人体「密度/厚度」小，隐含偏消瘦",
+          "en": "After the illness she looked pale and thin.",
+          "zh": "生病后她看起来面色苍白、身形消瘦。"
+        },
+        {
+          "gloss": "（密度）稀疏的（头发、植被、空气）",
+          "logic": "单位面积内物质少，间隔大",
+          "en": "His hair was getting thin on top.",
+          "zh": "他头顶的头发越来越稀了。"
+        },
+        {
+          "gloss": "（液体）稀的、流动性强",
+          "logic": "液体分子少、粘度低",
+          "en": "The soup was thin and tasteless.",
+          "zh": "汤很稀，没什么味道。"
+        },
+        {
+          "gloss": "v. 稀释、使变薄（thin out）",
+          "logic": "主动降低密度或浓度",
+          "en": "Thin the paint with a little water before applying.",
+          "zh": "涂之前先用水把油漆稀释一下。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thinly", "gloss": "adv. 薄薄地；稀疏地"},
+        {"w": "thinner", "gloss": "n. 稀释剂（油漆用）"},
+        {"w": "thin-skinned", "gloss": "adj. 脸皮薄的，玻璃心的"}
+      ],
+      "etymology": "古英语 þynne「薄、窄」，日耳曼同根，与德语 dünn（薄）同源。派生 thinly（稀薄地）、thin out（疏减）。",
+      "roots": [
+        {"part": "thin（þynne）", "meaning": "薄、窄"}
+      ],
+      "phonetics": "/θɪn/：th = /θ/ + /ɪn/。thin 和 thick 是最直接的 /θ/ 辨音对——对比发音：/θɪn/ vs /θɪk/，结尾清晰区分 n/k。",
+      "examples": [
+        {
+          "en": "The ice on the lake was too thin to walk on safely.",
+          "zh": "湖面的冰太薄，踩上去不安全。",
+          "source": "造句"
+        },
+        {
+          "en": "thin air / vanish into thin air",
+          "zh": "「稀薄空气 / 凭空消失」——高频习语，字面是「消失进稀薄空气里」。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "slim", "gloss": "苗条（形容人，褒义）", "ipa": "/slɪm/", "note": "「苗条」，形容人体时比 thin 更褒义；slim figure（苗条身材）"},
+        {"w": "slender", "gloss": "纤细优雅（线条感）", "ipa": "/ˈslendər/", "note": "「纤细优雅」，比 thin 更有美感，多形容人或物的优雅轮廓；slender fingers（纤细的手指）"},
+        {"w": "sparse", "gloss": "稀疏（植被、头发、人口）", "ipa": "/spɑːrs/", "note": "「稀疏」，多用于头发、植被、人口；sparse vegetation（稀疏的植被）"}
+      ],
+      "antonyms": [
+        {"w": "thick", "note": "厚的；浓密的"},
+        {"w": "dense", "note": "密集的"}
+      ],
+      "nuance": "thin 形容人时可能隐含「过于消瘦」，slim 带褒义（苗条），slender 带优雅感；thin air 是固定搭配不可替换；thin 的动词用法（thin the paint 稀释油漆）是 slim/slender 没有的。"
+    },
+    {
+      "word": "thousand",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/ˈθaʊznd/",
+      "subgroup": "initial",
+      "meaning": "n./det. 一千；成千上万",
+      "core": "「一千」这个精确数字，用于精确计量时单用，用于模糊强调时以复数「thousands」表示数量巨大",
+      "senses": [
+        {
+          "gloss": "（精确）一千",
+          "logic": "核心义：数量1000",
+          "en": "The population of the village is about three thousand.",
+          "zh": "这个村子大约有三千人口。"
+        },
+        {
+          "gloss": "（模糊）成千上万、大量",
+          "logic": "thousands of = 泛指极多，不强调精确数字",
+          "en": "Thousands of people lined the streets to watch the parade.",
+          "zh": "成千上万的人站在街边观看游行。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thousandth", "gloss": "adj./n. 第一千（个）；千分之一"},
+        {"w": "thousandfold", "gloss": "adj./adv. 一千倍（的）"}
+      ],
+      "etymology": "古英语 þūsend，日耳曼同根，与德语 tausend 同源。词源不透明，可能与古诺尔斯语「强大的百」相关。",
+      "roots": [
+        {"part": "thousand（þūsend）", "meaning": "一千"}
+      ],
+      "phonetics": "/ˈθaʊznd/：th = /θ/，-ous- = /aʊ/（注意不是 /ɒ/），-and 轻读 /nd/。全词重音在首音节。",
+      "examples": [
+        {
+          "en": "Thousands of people gathered in the square to protest.",
+          "zh": "数以千计的人聚集在广场上抗议。",
+          "source": "造句"
+        },
+        {
+          "en": "a thousand and one things to do",
+          "zh": "「一大堆事情要做」——千零一夜的文化梗延伸为「无数」的口语表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "countless", "gloss": "无数的（虚指大量）", "ipa": "/ˈkaʊntlɪs/", "note": "「无数的」，虚指大量，比 thousands of 更夸张"},
+        {"w": "innumerable", "gloss": "不可计数的（正式书面语）", "ipa": "/ɪˈnjuːmərəbl/", "note": "「不可计数的」，正式书面语，比 thousands 语气更宏大"}
+      ],
+      "antonyms": [],
+      "nuance": "thousand 是精确数字，thousands of 是「成千上万」的模糊量词；a thousand 不加冠词也可用（a thousand years）；one thousand 强调精确计数。"
+    },
+    {
+      "word": "thirsty",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/ˈθɜːrsti/",
+      "subgroup": "initial",
+      "meaning": "adj. 口渴的；渴望的（for）；（土地）干旱的",
+      "core": "「身体/内心缺乏水分（或所渴望之物）的干燥感」——从生理干渴延伸到对知识、权力的强烈渴求",
+      "senses": [
+        {
+          "gloss": "（生理）口渴的",
+          "logic": "核心义：身体缺水产生的干燥感",
+          "en": "After the long hike, everyone was thirsty and exhausted.",
+          "zh": "长途徒步后，每个人都又渴又累。"
+        },
+        {
+          "gloss": "（情感）渴望、如饥似渴（thirsty for）",
+          "logic": "将精神需求比作身体对水的渴求",
+          "en": "She was thirsty for recognition and worked twice as hard.",
+          "zh": "她渴望被认可，因此付出了双倍努力。"
+        },
+        {
+          "gloss": "（土地）干旱缺水的",
+          "logic": "将生理渴感投射到地面——土地也「渴」",
+          "en": "The thirsty soil soaked up the rain within minutes.",
+          "zh": "干旱的土地几分钟内就把雨水吸尽了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thirst", "gloss": "n. 口渴；渴望"},
+        {"w": "thirstily", "gloss": "adv. 如饥似渴地"},
+        {"w": "unquenchable", "gloss": "adj. 难以满足的（与 thirst 常搭配）"}
+      ],
+      "etymology": "古英语 þurstig，源自 þurst（口渴），日耳曼同根，与德语 durstig（口渴）同源。引申义「渴望知识/权力」保留了身体本义的强烈感。",
+      "roots": [
+        {"part": "thirst（þurst）", "meaning": "干渴"},
+        {"part": "-y", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "/ˈθɜːrsti/：th = /θ/，-irst- = /ɜːr/（美式 r 音化），-y = /i/。三音节，重音在首。",
+      "examples": [
+        {
+          "en": "After the long hike, everyone was thirsty and exhausted.",
+          "zh": "长途徒步之后，每个人都又渴又累。",
+          "source": "造句"
+        },
+        {
+          "en": "thirsty for knowledge / power",
+          "zh": "「如饥似渴地求知 / 渴望权力」——引申义高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "parched", "gloss": "极度干渴（程度更强，也指土地极旱）", "ipa": "/pɑːrtʃt/", "note": "「极度干渴」，比 thirsty 程度更强，也形容土地极度干旱；parched lips（干裂的嘴唇）"},
+        {"w": "eager", "gloss": "渴望、热切（常用于引申义）", "ipa": "/ˈiːɡər/", "note": "「渴望」义的近义词，比 thirsty for 更常用；eager for success（渴望成功）"},
+        {"w": "craving", "gloss": "强烈渴求（难以压制的欲望）", "ipa": "/ˈkreɪvɪŋ/", "note": "「强烈渴望（某物）」，比 thirsty for 更强调身体或心理上的渴求"}
+      ],
+      "antonyms": [
+        {"w": "quenched", "note": "解渴的"},
+        {"w": "satisfied", "note": "满足的"}
+      ],
+      "nuance": "thirsty 是基础词，字面身体渴感和引申渴望都覆盖；parched 程度更极端，常指极度干燥；eager 是渴望的常规表达，不含身体感；craving 更强调难以抑制的欲望。"
+    },
+    {
+      "word": "thief",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/θiːf/",
+      "subgroup": "initial",
+      "meaning": "n. 小偷，贼（复数 thieves）",
+      "core": "「秘密拿走他人之物的人」——thief 强调「秘密」，区别于明抢的 robber；这一核心决定了其所有搭配和引申",
+      "senses": [
+        {
+          "gloss": "（通称）小偷、贼",
+          "logic": "核心义：秘密盗取他人财物",
+          "en": "The thief slipped away before the police arrived.",
+          "zh": "小偷在警察到达之前溜走了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "theft", "gloss": "n. 盗窃（行为）"},
+        {"w": "thieve", "gloss": "v. 行窃、偷盗"},
+        {"w": "thieving", "gloss": "adj. 惯于偷窃的（口语贬义）"}
+      ],
+      "etymology": "古英语 þēof，日耳曼同根，与德语 Dieb（小偷）同源。派生 theft（盗窃行为）、thieve（行窃）。复数变化 thief → thieves 是 f/fe → ves 规则。",
+      "roots": [
+        {"part": "thief（þēof）", "meaning": "偷窃者"}
+      ],
+      "phonetics": "/θiːf/：th = /θ/，-ief = /iːf/（ie 读长元音 /iː/，与 brief/grief 同韵）。复数 thieves /θiːvz/ 变 f → v 并加 /z/。",
+      "tip": "「Set a thief to catch a thief」（以贼捉贼）——最实用的记忆锚点谚语。",
+      "examples": [
+        {
+          "en": "The thief slipped away before the police arrived.",
+          "zh": "小偷在警察到达之前溜走了。",
+          "source": "造句"
+        },
+        {
+          "en": "like a thief in the night",
+          "zh": "「像夜里的贼一样悄无声息」——形容突如其来或秘密发生，《圣经》典故。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "burglar", "gloss": "入室盗贼（非法闯入建筑行窃）", "ipa": "/ˈbɜːrɡlər/", "note": "「入室盗贼」，特指非法闯入建筑行窃，比 thief 更具体"},
+        {"w": "robber", "gloss": "抢劫犯（使用暴力或威胁）", "ipa": "/ˈrɒbər/", "note": "「抢劫犯」，使用暴力或威胁，比 thief（秘密偷）更有对抗性"},
+        {"w": "pickpocket", "gloss": "扒手（在人群中扒窃）", "ipa": "/ˈpɪkˌpɒkɪt/", "note": "「扒手」，专指在人群中扒窃，是 thief 的专门化"}
+      ],
+      "antonyms": [
+        {"w": "victim", "note": "受害者"},
+        {"w": "guard", "note": "守卫"}
+      ],
+      "nuance": "thief 是通称——任何秘密盗取他人财物的人；burglar 特指入室行窃；robber 使用威胁或暴力（robbery = armed theft）；pickpocket 是街头扒手。法律上 theft 是秘密盗取，robbery 是公开抢夺。"
+    },
+    {
+      "word": "throne",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/θroʊn/",
+      "subgroup": "initial",
+      "meaning": "n. 宝座；王位；君主权力",
+      "core": "「至高权力的象征性座位」——物理的宝座即代表王权，throne 因此同时是「椅子」和「统治权」",
+      "senses": [
+        {
+          "gloss": "（物理）宝座",
+          "logic": "核心义：君主坐的特制椅子",
+          "en": "The golden throne stood at the center of the great hall.",
+          "zh": "金色的宝座立于大殿中央。"
+        },
+        {
+          "gloss": "（抽象）王位、统治权",
+          "logic": "坐上宝座 = 取得统治权，两者在欧洲文化中高度重叠",
+          "en": "After years of war, he finally claimed the throne.",
+          "zh": "经过多年战争，他终于夺得了王位。"
+        }
+      ],
+      "derivatives": [
+        {"w": "dethrone", "gloss": "v. 废黜（君主）；使失去统治地位"},
+        {"w": "enthrone", "gloss": "v. 使登基；将……奉为至高"}
+      ],
+      "etymology": "希腊语 thronos「座位、宝座」，通过拉丁语 thronus 进入英语。「坐上宝座」在欧洲历史上即代表取得统治权，throne 与 power 几乎同义。",
+      "roots": [
+        {"part": "throne（thronos）", "meaning": "宝座、高座"}
+      ],
+      "phonetics": "/θroʊn/：th = /θ/ + r 连读 + /oʊn/。注意与 thrown（throw 的过去分词，/θroʊn/）发音完全相同——同音词，靠语境区分。",
+      "tip": "throne（宝座）= thrown（被扔）发音完全一样：「The king sat on the throne that was thrown into the room.」——靠语境。",
+      "examples": [
+        {
+          "en": "After years of war, he finally claimed the throne.",
+          "zh": "经过多年战争，他终于夺得了王位。",
+          "source": "造句"
+        },
+        {
+          "en": "ascend / abdicate the throne",
+          "zh": "「登基 / 退位」——王权叙事的核心搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "crown", "gloss": "王冠；（象征）王权", "ipa": "/kraʊn/", "note": "「王冠；王权」，以冠喻位，比 throne 更常用于比喻义；inherit the crown（继承王位）"},
+        {"w": "sovereignty", "gloss": "主权、最高权力（抽象政治概念）", "ipa": "/ˈsɒvrənti/", "note": "「主权、最高权力」，比 throne 更抽象、更正式；national sovereignty（国家主权）"},
+        {"w": "reign", "gloss": "统治、在位期", "ipa": "/reɪn/", "note": "「统治、在位期」，指君主在位的状态或时段；during her reign（在她在位期间）"}
+      ],
+      "antonyms": [
+        {"w": "exile", "note": "流放（失去王位）"},
+        {"w": "abdication", "note": "退位"}
+      ],
+      "nuance": "throne 是物理象征，也用于「王位」的抽象含义；crown 多用于比喻性王权（claim the crown）；reign 是「统治行为」或「在位期」；sovereignty 是政治哲学概念，强调最高权威，超出 throne 的个人层面。"
+    },
+    {
+      "word": "thumb",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/θʌm/",
+      "subgroup": "initial",
+      "meaning": "n. 拇指  v. 翻阅（书页）；搭便车（竖起拇指）",
+      "core": "「五指中最粗壮、最有力的那根」——拇指是人类对握、精细操作的关键，由此延伸出「标记/翻阅/示意」等具体动作义",
+      "senses": [
+        {
+          "gloss": "n. 拇指",
+          "logic": "核心义：手上最粗短的那根手指",
+          "en": "She pricked her thumb on the needle.",
+          "zh": "她被针扎到了大拇指。"
+        },
+        {
+          "gloss": "v. 翻阅（书页）",
+          "logic": "用拇指快速翻过书页的动作",
+          "en": "He thumbed through the magazine while waiting.",
+          "zh": "等待时他随手翻了翻杂志。"
+        },
+        {
+          "gloss": "v. 搭便车（thumb a ride）",
+          "logic": "竖起拇指向路过的车示意——搭车的通用手势",
+          "en": "We thumbed a ride to the nearest town.",
+          "zh": "我们搭便车去了最近的小镇。"
+        }
+      ],
+      "derivatives": [
+        {"w": "thumbnail", "gloss": "n. 拇指甲；缩略图（因小而得名）"},
+        {"w": "thumbscrew", "gloss": "n. 拇指夹（旧式刑具）；蝶形螺丝"},
+        {"w": "thumbtack", "gloss": "n. 图钉（美式）"}
+      ],
+      "etymology": "古英语 þūma，日耳曼同根，与德语 Daumen（拇指）同源。b 不发音是历史拼写遗留（类似 lamb/comb）。thumb up/down 源自罗马角斗场，拇指向上表示让斗士活命，向下表示处决——其实历史记载的手势与现代方向相反，但现代含义已固化。",
+      "roots": [
+        {"part": "thumb（þūma）", "meaning": "拇指"}
+      ],
+      "phonetics": "/θʌm/：th = /θ/，-umb = /ʌm/，b 完全不发音（silent b，类似 comb、bomb、lamb）。",
+      "tip": "thumb 的 b 不发音——和 comb、bomb、lamb、numb、dumb 一族，词尾 -mb 的 b 是历史哑音。",
+      "examples": [
+        {
+          "en": "She gave a thumbs-up to signal that everything was fine.",
+          "zh": "她竖起大拇指，示意一切正常。",
+          "source": "造句"
+        },
+        {
+          "en": "rule of thumb",
+          "zh": "「经验法则」——高频习语，源自用拇指粗略量度的传统做法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "thumbs-up", "gloss": "竖拇指（赞成/通过的信号）", "note": "（习语，赞成信号）"},
+        {"w": "pollex", "gloss": "拇指（解剖学/医学正式术语）", "ipa": "/ˈpɒleks/", "note": "「拇指」的解剖学/正式术语，对应手腕的 pollicis 肌肉群"}
+      ],
+      "antonyms": [],
+      "nuance": "thumb 是唯一通用词；pollex 仅出现在医学解剖文本中；thumbs-up / thumbs-down 作为固定文化符号，不可拆分替换。"
+    },
+    {
+      "word": "bath",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/bæθ/",
+      "subgroup": "final",
+      "meaning": "n. 洗澡；浴缸；浴室（英式）  v. 给……洗澡（英式）",
+      "core": "「用水浸泡清洁身体的行为或容器」——从动作到承载动作的容器，再到隐喻的「大量液体浸没」",
+      "senses": [
+        {
+          "gloss": "洗澡（行为）",
+          "logic": "核心义：浸入水中清洁全身",
+          "en": "She soaked in a hot bath after the long flight.",
+          "zh": "长途飞行后，她泡在热水浴缸里放松。"
+        },
+        {
+          "gloss": "浴缸（容器）",
+          "logic": "承载洗澡动作的器具，英式英语直接用 bath 指浴缸",
+          "en": "The old bath had feet shaped like lion claws.",
+          "zh": "那个老式浴缸有狮爪形状的底脚。"
+        },
+        {
+          "gloss": "v. 给……洗澡（英式）",
+          "logic": "英式用法：bath 直接作动词（美式用 bathe）",
+          "en": "She bathed the baby carefully in warm water.",
+          "zh": "她小心地用温水给婴儿洗澡。"
+        }
+      ],
+      "derivatives": [
+        {"w": "bathe", "gloss": "v. 洗澡；清洗（伤口）——美式通用动词，注意读 /beɪð/"},
+        {"w": "bathroom", "gloss": "n. 浴室；厕所（美式）"},
+        {"w": "bloodbath", "gloss": "n. 大屠杀（比喻：血的「浴缸」）"}
+      ],
+      "etymology": "古英语 bæþ「洗浴」，日耳曼同根，与德语 Bad 同源。英式英语 bath 作动词（bath the baby），美式英语动词用 bathe（/beɪð/）——注意 bathe 的 -the 读浊音 /ð/。",
+      "roots": [
+        {"part": "bath（bæþ）", "meaning": "洗浴"}
+      ],
+      "phonetics": "/bæθ/：-ath = /æθ/，词尾 th 清音 /θ/。美式读 /bæθ/，英式同。注意：bathe（洗澡，动词）读 /beɪð/，元音和末音都变！",
+      "tip": "bath /bæθ/（名词，清音）≠ bathe /beɪð/（动词，浊音）——清浊对比极典型，常用于发音测试。",
+      "examples": [
+        {
+          "en": "She soaked in a hot bath after the long flight.",
+          "zh": "长途飞行后，她泡在热水浴缸里放松。",
+          "source": "造句"
+        },
+        {
+          "en": "take a bath / blood bath",
+          "zh": "「洗澡 / 血腥屠杀」——同一词的日常义与强烈隐喻义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "shower", "gloss": "淋浴（与盆浴相对）", "ipa": "/ˈʃaʊər/", "note": "「淋浴」，与 bath（盆浴）对立；take a shower vs take a bath"},
+        {"w": "soak", "gloss": "浸泡（强调长时间泡在水里）", "ipa": "/soʊk/", "note": "「浸泡」，动词义，比 bath 更强调长时间浸泡"},
+        {"w": "wash", "gloss": "洗（最广义，不限全身浸泡）", "ipa": "/wɒʃ/", "note": "「洗」，最通用，不限于全身浸泡"}
+      ],
+      "antonyms": [],
+      "nuance": "bath 是整个洗浴过程/浴缸；shower 是淋浴方式；soak 强调浸泡动作；wash 是最广义的清洁。「blood bath」（大屠杀）已固化为成语，不能替换。"
+    },
+    {
+      "word": "path",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/pæθ/",
+      "subgroup": "final",
+      "meaning": "n. 小径；道路；轨迹；（行动/发展的）路线",
+      "core": "「从某点到某点之间被清出的通行线」——物理小路、运动轨迹、人生线路，都是「开辟出来的可走之线」",
+      "senses": [
+        {
+          "gloss": "（物理）小径、小路",
+          "logic": "核心义：地面上被踩出或修出的通行线",
+          "en": "The stone path through the garden was covered with fallen leaves.",
+          "zh": "穿过花园的石子小路上铺满了落叶。"
+        },
+        {
+          "gloss": "（运动）轨迹",
+          "logic": "物体移动时划出的「线」——飞行轨迹、台风路径",
+          "en": "The hurricane's path was tracked by satellite.",
+          "zh": "飓风的路径通过卫星追踪。"
+        },
+        {
+          "gloss": "（人生/发展）路线、方向",
+          "logic": "把人生或事业的走向比作一条被清出的路",
+          "en": "She chose a career path in medicine from an early age.",
+          "zh": "她从小就选择了医学的职业道路。"
+        }
+      ],
+      "derivatives": [
+        {"w": "pathway", "gloss": "n. 小路；通路；（生化）代谢通路"},
+        {"w": "footpath", "gloss": "n. 人行小道"},
+        {"w": "aftermath", "gloss": "n. 余波、后果（词源无关，历史偶合）"}
+      ],
+      "etymology": "古英语 pæþ，日耳曼同根，与德语 Pfad（小路）同源。从物理小径扩展为「人生轨迹」「科学路径」等抽象义——托福阅读常见。",
+      "roots": [
+        {"part": "path（pæþ）", "meaning": "小径"}
+      ],
+      "phonetics": "/pæθ/：-ath = /æθ/，和 bath、math 押韵，同为词尾 /θ/ 清音。美式英语中 path 读 /pæθ/，英式有时读 /pɑːθ/（长元音）。",
+      "examples": [
+        {
+          "en": "The stone path through the garden was covered with fallen leaves.",
+          "zh": "穿过花园的石子小路上铺满了落叶。",
+          "source": "造句"
+        },
+        {
+          "en": "career path / flight path / path to success",
+          "zh": "「职业路径 / 飞行轨迹 / 成功之路」——三个抽象义搭配，托福高频。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "route", "gloss": "规划好的路线（交通/导航用）", "ipa": "/ruːt/", "note": "「路线」，比 path 更正式，多指规划好的交通路线；the shortest route（最短路线）"},
+        {"w": "trail", "gloss": "野外小径；追踪线索", "ipa": "/treɪl/", "note": "「小径、踪迹」，多指野外自然小路或追踪路径；hiking trail（徒步小径）"},
+        {"w": "trajectory", "gloss": "弹道/运动轨迹（强调数学曲线）", "ipa": "/trəˈdʒektəri/", "note": "「轨迹（弹道/职业）」，比 path 更强调数学/物理意义上的曲线运动"}
+      ],
+      "antonyms": [
+        {"w": "obstacle", "note": "障碍（阻断路径）"},
+        {"w": "dead end", "note": "死胡同"}
+      ],
+      "nuance": "path 可指物理小路或抽象人生路线（a path to success）；route 强调规划和导航（navigation route）；trail 多为自然野径或追踪线索（evidence trail）；trajectory 最抽象，专用于飞行轨迹或职业发展曲线。"
+    },
+    {
+      "word": "math",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/mæθ/",
+      "subgroup": "final",
+      "meaning": "n. 数学（mathematics 的非正式缩略）",
+      "core": "「用精确符号系统研究数量、结构、变化的学科」——源于希腊语「学习」，是一切量化思维的基础工具",
+      "senses": [
+        {
+          "gloss": "数学（学科总称）",
+          "logic": "核心义：研究数量与规律的学科，美式 math = 英式 maths",
+          "en": "She had a gift for math and solved the equation in seconds.",
+          "zh": "她有数学天赋，几秒钟就解出了方程式。"
+        },
+        {
+          "gloss": "（口语）数量计算、推算（do the math）",
+          "logic": "从「学科」引申到「用数字推算出结论」的动作",
+          "en": "Do the math — if you save ten dollars a day, that's three thousand a year.",
+          "zh": "算一算——每天存十美元，一年就是三千。"
+        }
+      ],
+      "derivatives": [
+        {"w": "mathematics", "gloss": "n. 数学（正式全称）"},
+        {"w": "mathematical", "gloss": "adj. 数学的；精确的"},
+        {"w": "mathematician", "gloss": "n. 数学家"}
+      ],
+      "etymology": "mathematics 源自希腊语 mathēmatikē「与学习有关的」，mathema（学习、知识）+ -tike（技艺）。math 是 20 世纪美式英语的缩写（英式用 maths）。词根 math-/mathem- 与「学习」挂钩，体现古希腊对数学是一切学问基础的信仰。",
+      "roots": [
+        {"part": "math- (mathema)", "meaning": "学习、知识"},
+        {"part": "-ematics (-tike)", "meaning": "技艺、学科"}
+      ],
+      "phonetics": "/mæθ/：-ath = /æθ/，词尾 th 清音 /θ/，和 bath/path 同韵。注意：math（美）vs maths（英），加不加 s 是方言差异。",
+      "tip": "math（美式）= maths（英式）——两者都正确，不是错误，是地区差异。",
+      "examples": [
+        {
+          "en": "She had a gift for math and solved the equation in seconds.",
+          "zh": "她有数学天赋，几秒钟就解出了方程式。",
+          "source": "造句"
+        },
+        {
+          "en": "do the math",
+          "zh": "「算一算就明白了」——口语惯用表达，指通过简单推算得出明显结论。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "mathematics", "gloss": "数学（正式全称，学术场合用）", "ipa": "/ˌmæθəˈmætɪks/", "note": "「数学」的正式完整写法，学术/正式场合用全称"},
+        {"w": "arithmetic", "gloss": "算术（基本四则运算，比 math 范围窄）", "ipa": "/əˈrɪθmətɪk/", "note": "「算术」，数学中专指基本四则运算，比 math 范围窄"},
+        {"w": "calculus", "gloss": "微积分（数学的一个分支）", "ipa": "/ˈkælkjʊləs/", "note": "「微积分」，数学的一个分支，注意 calculus 词根 calc-（石子）来自古罗马用石子计数"}
+      ],
+      "antonyms": [],
+      "nuance": "math 是美式口语缩写，maths 是英式；mathematics 是正式全称；arithmetic 特指小学层面的四则运算；calculus/algebra/geometry 是数学的各个分支，不可互换。"
+    },
+    {
+      "word": "mouth",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/maʊθ/",
+      "subgroup": "final",
+      "meaning": "n. 嘴；（河的）入海口；开口  v. 用嘴型说（不出声）",
+      "core": "「开口处」——身体上的进出口，延伸到任何开口或通道的出入端；河口是「陆地的嘴」",
+      "senses": [
+        {
+          "gloss": "（身体）嘴、口",
+          "logic": "核心义：面部进食、说话、呼吸的开口",
+          "en": "He opened his mouth to speak but said nothing.",
+          "zh": "他张嘴想说话，但什么也没说出口。"
+        },
+        {
+          "gloss": "（地理）河口、入海口",
+          "logic": "「陆地的嘴」——河流流出的开口端，与「源头」相对",
+          "en": "The river empties into the sea near the mouth of the valley.",
+          "zh": "这条河在谷口附近流入大海。"
+        },
+        {
+          "gloss": "（泛指）洞口、开口",
+          "logic": "任何容器或空间的「嘴」——洞穴口、瓶口",
+          "en": "The cave mouth was barely wide enough to crawl through.",
+          "zh": "洞口刚好能爬过去。"
+        },
+        {
+          "gloss": "v. 用嘴型无声地说",
+          "logic": "动嘴但不发声——只做「嘴」的动作",
+          "en": "She mouthed the words 'thank you' across the room.",
+          "zh": "她在房间对面无声地用嘴型说了「谢谢」。"
+        }
+      ],
+      "derivatives": [
+        {"w": "mouthpiece", "gloss": "n. 吹口（乐器）；发言人"},
+        {"w": "mouthwash", "gloss": "n. 漱口水"},
+        {"w": "loudmouth", "gloss": "n. 大嘴巴（爱说话或吹嘘的人）"}
+      ],
+      "etymology": "古英语 mūþ，日耳曼同根，与德语 Mund（嘴）同源。「入海口」义是「陆地的嘴」这一空间隐喻的延伸。",
+      "roots": [
+        {"part": "mouth（mūþ）", "meaning": "嘴"}
+      ],
+      "phonetics": "/maʊθ/：-outh = /aʊθ/（双元音 + 清音 /θ/）。注意：单数 mouth /maʊθ/ 词尾清音，复数 mouths /maʊðz/ 词尾变浊音 /ð/——这是英语 -th 复数的典型变化。",
+      "tip": "mouths（复数）读 /maʊðz/，th 变浊音——这是 /θ/ → /ð/ 在复数中的规律性变化，同类还有 bath/baths、path/paths。",
+      "examples": [
+        {
+          "en": "The river empties into the sea near the mouth of the valley.",
+          "zh": "这条河在谷口附近流入大海。",
+          "source": "造句"
+        },
+        {
+          "en": "word of mouth / keep your mouth shut",
+          "zh": "「口耳相传 / 保持沉默」——两个高频固定搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "opening", "gloss": "开口（洞穴/容器/通道的入口）", "ipa": "/ˈoʊpənɪŋ/", "note": "「开口」，指洞穴/容器/通道的入口，比 mouth 更通用"},
+        {"w": "estuary", "gloss": "河口（有潮汐影响的宽阔入海口）", "ipa": "/ˈestʃueri/", "note": "「河口」，正式地理术语，特指河流入海的宽阔入海口，比 mouth 更精确"},
+        {"w": "inlet", "gloss": "港湾、水道入口", "ipa": "/ˈɪnlet/", "note": "「港湾、入口」，多指海湾或水道的入口，比 mouth 更地理化"}
+      ],
+      "antonyms": [
+        {"w": "source", "note": "（河流的）源头"}
+      ],
+      "nuance": "mouth of a river（河口，笼统通称）vs estuary（有潮汐影响的宽阔河口，专业地理词）；mouth 的「嘴」义无法替换，是唯一通用词；word of mouth 是固定成语。"
+    },
+    {
+      "word": "teeth",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/tiːθ/",
+      "subgroup": "final",
+      "meaning": "n. 牙齿（tooth 的复数）；（工具的）齿；执行力",
+      "core": "「咬合与切割的硬质器官」——从生理牙齿到工具的锯齿，再到比喻「有执行力的约束」，都是「能撕开、咬住」的感觉",
+      "senses": [
+        {
+          "gloss": "（生理）牙齿",
+          "logic": "核心义：人或动物口中用于撕咬食物的硬质器官",
+          "en": "She smiled, showing her perfectly white teeth.",
+          "zh": "她微笑时露出一口洁白的牙齿。"
+        },
+        {
+          "gloss": "（工具）齿、锯齿",
+          "logic": "将牙齿的咬合功能类比到工具上的锯齿或梳齿",
+          "en": "The comb's teeth were too fine for her thick hair.",
+          "zh": "梳子的齿太细，梳不开她的浓发。"
+        },
+        {
+          "gloss": "（比喻）执行力、约束力（have teeth）",
+          "logic": "「有牙」= 能咬住、能制裁——比喻法律/规定能真正落实",
+          "en": "The new regulation has teeth — violators face heavy fines.",
+          "zh": "新规定有约束力——违规者将面临重罚。"
+        }
+      ],
+      "derivatives": [
+        {"w": "tooth", "gloss": "n. 牙齿（单数）；tooth → teeth 是元音交替复数"},
+        {"w": "toothache", "gloss": "n. 牙痛"},
+        {"w": "toothy", "gloss": "adj. 露出很多牙的（a toothy grin 龇牙咧嘴的笑）"}
+      ],
+      "etymology": "古英语 tōþ（单数）→ tēþ（复数），是英语保留的古元音交替复数（类似 foot/feet、goose/geese）。tooth 本义「撕咬」，与德语 Zahn 同根。",
+      "roots": [
+        {"part": "teeth（tēþ）", "meaning": "牙齿（tooth 的不规则复数）"}
+      ],
+      "phonetics": "/tiːθ/：-eeth = /iːθ/，词尾 th 清音 /θ/。单数 tooth = /tuːθ/，注意元音 oo /uː/ → ee /iː/ 的不规则复数变化。",
+      "tip": "tooth（/tuːθ/）→ teeth（/tiːθ/）：u 变 ee，这个「元音交替复数」还有 foot/feet、goose/geese、man/men——一次性记一族。",
+      "examples": [
+        {
+          "en": "She smiled, showing her perfectly white teeth.",
+          "zh": "她微笑时露出一口洁白的牙齿。",
+          "source": "造句"
+        },
+        {
+          "en": "have teeth（法律/规定）/ sink your teeth into",
+          "zh": "「有约束力 / 全力投入某事」——两个重要引申义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "fangs", "gloss": "獠牙（动物尖牙，强调攻击性）", "ipa": "/fæŋz/", "note": "「獠牙」，特指动物的尖牙（蛇的毒牙、狼的犬牙），比 teeth 更强调攻击性"},
+        {"w": "molars", "gloss": "臼齿（解剖学细分）", "ipa": "/ˈmoʊlərz/", "note": "「臼齿」，teeth 的解剖学细分；canines（犬齿）、incisors（门齿）同类"},
+        {"w": "dentition", "gloss": "齿列系统（医学正式术语）", "ipa": "/denˈtɪʃn/", "note": "「齿列、牙齿系统」，医学正式术语，指整套牙齿的类型与排列"}
+      ],
+      "antonyms": [],
+      "nuance": "teeth 是日常通称；fangs 特指攻击性尖牙；dentition 是医学系统概念；「a law with teeth」（有执行力的法律）是固定比喻，teeth 在此表示「执行力/威慑力」，不可替换。"
+    },
+    {
+      "word": "month",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/mʌnθ/",
+      "subgroup": "final",
+      "meaning": "n. 月，月份（约30天）",
+      "core": "「月亮完成一个圆缺周期的时间单位」——词根直接是 moon（月亮），是最古老的自然计时单位之一",
+      "senses": [
+        {
+          "gloss": "（日历）月份（约30天）",
+          "logic": "核心义：以月亮周期为基础划定的时间单位",
+          "en": "It took three months of intensive training before she was ready.",
+          "zh": "她经过三个月密集训练才做好准备。"
+        },
+        {
+          "gloss": "（口语模糊）「好几个月」",
+          "logic": "months（复数）常用于泛指较长时间，强调「不是几天，是月级别的」",
+          "en": "I haven't seen him in months.",
+          "zh": "我好几个月没见到他了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "monthly", "gloss": "adj./adv. 每月的；按月"},
+        {"w": "menstrual", "gloss": "adj. 月经的（同根：拉丁 mensis 月份→月经周期）"},
+        {"w": "semester", "gloss": "n. 学期（源自拉丁 sex+mensis：六个月）"}
+      ],
+      "etymology": "古英语 mōnaþ，与 moon（月亮）同根——原始日耳曼语 *mēnōþs「月亮（周期）」，是「用月亮计时」的直接命名，与拉丁语 mensis（月份，→ menstrual 月经）同出一源。",
+      "roots": [
+        {"part": "month（mōnaþ）", "meaning": "月亮周期"}
+      ],
+      "phonetics": "/mʌnθ/：-onth = /ʌnθ/（注意 o 读 /ʌ/，不是 /ɒ/），词尾 th = /θ/。复数 months /mʌnθs/ 或 /mʌnθs/，不变浊音。",
+      "examples": [
+        {
+          "en": "It took three months of intensive training before she was ready.",
+          "zh": "她经过三个月密集训练才做好准备。",
+          "source": "造句"
+        },
+        {
+          "en": "month after month / month by month",
+          "zh": "「月复一月 / 逐月」——时间进程的高频强调表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "lunar cycle", "gloss": "月相周期（约29.5天，天文学精确概念）", "note": "「月相周期」，约29.5天，是 month 的天文学本源"},
+        {"w": "calendar month", "gloss": "日历月（30/31天，法律合同精确表达）", "note": "「日历月」，强调以日历计算的30/31天，区别于四周（28天）"}
+      ],
+      "antonyms": [],
+      "nuance": "month 是日常用词；lunar cycle 是天文学精确概念（不等于日历月）；calendar month 是法律合同的精确表达（calendar month = 30/31天，不是28天）。"
+    },
+    {
+      "word": "health",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/helθ/",
+      "subgroup": "final",
+      "meaning": "n. 健康；卫生状况；（经济/组织的）良好状态",
+      "core": "「身体完整、没有缺损的状态」——词根 hāl 是「完整、全」，健康不是「没有病」，而是「整体完好」；引申到经济和组织同理",
+      "senses": [
+        {
+          "gloss": "（生理）身体健康",
+          "logic": "核心义：身体各部分完整正常运转",
+          "en": "Regular exercise is essential for good health.",
+          "zh": "规律运动对身体健康至关重要。"
+        },
+        {
+          "gloss": "（机构/经济）良好状态、健全",
+          "logic": "把「完整无缺」的感觉投射到组织或经济上",
+          "en": "Analysts are concerned about the health of the banking sector.",
+          "zh": "分析师对银行业的状态表示担忧。"
+        },
+        {
+          "gloss": "（公共卫生领域）卫生事业",
+          "logic": "health 作为政策领域的专名——public health、health care",
+          "en": "The government invested heavily in public health infrastructure.",
+          "zh": "政府在公共卫生基础设施上大量投资。"
+        }
+      ],
+      "derivatives": [
+        {"w": "healthy", "gloss": "adj. 健康的；对健康有益的"},
+        {"w": "healthcare", "gloss": "n. 医疗保健体系"},
+        {"w": "unhealthy", "gloss": "adj. 不健康的；有害的"}
+      ],
+      "etymology": "古英语 hǣlþ「整体性、完整」，源自 hāl（完整，同 whole、heal）。「身体完整、没有缺损」→ 健康。heal（痊愈）、whole（全）、holy（神圣，完整）都是同根词。",
+      "roots": [
+        {"part": "heal-（hāl）", "meaning": "完整、愈合"},
+        {"part": "-th", "meaning": "名词后缀（抽象状态）"}
+      ],
+      "phonetics": "/helθ/：-ealth = /elθ/（注意 ea 在此读短元音 /e/，不是 /iː/——类似 bread/dead/wealth）。词尾 th = /θ/ 清音。",
+      "tip": "ea 在 health/wealth/bread 里读 /e/（短元音），不是 /iː/（长元音）——这是 ea 的「陷阱读法」，见 ee 深度页例外组。",
+      "examples": [
+        {
+          "en": "Regular exercise and a balanced diet are the foundation of good health.",
+          "zh": "规律运动和均衡饮食是良好健康的基础。",
+          "source": "造句"
+        },
+        {
+          "en": "public health / health care system",
+          "zh": "「公共卫生 / 医疗保健体系」——托福学术阅读高频名词组合。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "well-being", "gloss": "身心健康（涵盖精神和社会层面）", "ipa": "/ˌwelˈbiːɪŋ/", "note": "「身心健康、幸福状态」，比 health 更全面，涵盖精神和社会层面；emotional well-being（情绪健康）"},
+        {"w": "fitness", "gloss": "体能（强调身体机能强壮程度）", "ipa": "/ˈfɪtnɪs/", "note": "「体能、适应能力」，比 health 更强调身体机能的强壮程度；physical fitness（体能水平）"},
+        {"w": "vitality", "gloss": "活力、生命力（充沛能量感）", "ipa": "/vaɪˈtælɪti/", "note": "「活力、生命力」，比 health 更强调充沛的能量感；organizational vitality（组织活力）"}
+      ],
+      "antonyms": [
+        {"w": "illness", "note": "疾病"},
+        {"w": "disease", "note": "病症"}
+      ],
+      "nuance": "health 是最通用的「健康」，涵盖身体/心理/财务/组织；well-being 强调整体的舒适感，含精神和社会维度；fitness 专注体能和运动表现；vitality 强调旺盛的活力而非仅仅无病。"
+    },
+    {
+      "word": "wealth",
+      "hl": "th",
+      "levels": ["托福"],
+      "ipa": "/welθ/",
+      "subgroup": "final",
+      "meaning": "n. 财富；大量，丰富（of）",
+      "core": "「整体良好、资源充盈的状态」——词根是 well（好），wealth 不只是金钱，而是「一切都够用、甚至有余」的丰盛感",
+      "senses": [
+        {
+          "gloss": "（金钱/物质）财富",
+          "logic": "核心义：物质资源的丰盛积累",
+          "en": "The country's wealth comes largely from oil exports.",
+          "zh": "这个国家的财富很大程度上来自石油出口。"
+        },
+        {
+          "gloss": "（非物质）大量、丰富（a wealth of）",
+          "logic": "「资源充盈」的感觉投射到信息、经验等非物质领域",
+          "en": "The archive contains a wealth of historical documents.",
+          "zh": "档案馆收藏了大量历史文献。"
+        }
+      ],
+      "derivatives": [
+        {"w": "wealthy", "gloss": "adj. 富有的，财富丰厚的"},
+        {"w": "commonwealth", "gloss": "n. 共同财富→共和国；英联邦"},
+        {"w": "welfare", "gloss": "n. 福利（同根 well，「整体良好」的制度保障）"}
+      ],
+      "etymology": "中古英语 welthe，源自 weal（繁荣、幸福）= well（好）+ -th（名词后缀）。与 well、welfare（福利）、commonwealth（共同财富→国家）同根。「整体良好」→ 财富。",
+      "roots": [
+        {"part": "weal（well）", "meaning": "良好、繁荣"},
+        {"part": "-th", "meaning": "抽象名词后缀"}
+      ],
+      "phonetics": "/welθ/：-ealth = /elθ/，ea 读短元音 /e/（与 health 同类），词尾 th = /θ/ 清音。",
+      "examples": [
+        {
+          "en": "The country's wealth comes largely from oil exports.",
+          "zh": "这个国家的财富很大程度上来自石油出口。",
+          "source": "造句"
+        },
+        {
+          "en": "a wealth of information / experience",
+          "zh": "「大量的信息 / 丰富的经验」——「wealth of」表「丰富」，是非物质义的高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "riches", "gloss": "财富（复数形式，多指具体金钱/物质）", "ipa": "/ˈrɪtʃɪz/", "note": "「财富」，复数形式，比 wealth 更口语，多指具体的金钱和物质"},
+        {"w": "affluence", "gloss": "富裕（持续物质丰盈的状态）", "ipa": "/ˈæfluəns/", "note": "「富裕」，正式书面语，强调物质丰盈的状态；affluent neighborhood（富裕社区）"},
+        {"w": "prosperity", "gloss": "繁荣（经济/社会整体兴旺）", "ipa": "/prɒˈsperɪti/", "note": "「繁荣」，比 wealth 更宏观，多指经济和社会层面的整体兴旺；economic prosperity（经济繁荣）"}
+      ],
+      "antonyms": [
+        {"w": "poverty", "note": "贫困"},
+        {"w": "scarcity", "note": "匮乏"}
+      ],
+      "nuance": "wealth 既可指金钱财富，也可虚指「丰富」（a wealth of knowledge）；riches 多指具体物质，不用于抽象义；affluence 侧重持续富裕的状态；prosperity 强调整体经济社会的兴旺，超出个人层面。"
+    },
+    {
+      "word": "north",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/nɔːrθ/",
+      "subgroup": "final",
+      "meaning": "n./adj./adv. 北（方）；北部的；向北",
+      "core": "「面朝日出时左手边的方向」——词根含「下/黑暗」，古人以东方为正面，北在左即为「阴暗冷峻」的方向",
+      "senses": [
+        {
+          "gloss": "（方向）北、北方",
+          "logic": "核心义：地球磁极指向的方向，指南针的正上方",
+          "en": "The birds migrate north every spring to breed.",
+          "zh": "每年春天鸟类都向北迁徙去繁殖。"
+        },
+        {
+          "gloss": "（地理/文化）北部地区",
+          "logic": "将方向具体化为地理区域",
+          "en": "The factory was in the industrial north of the country.",
+          "zh": "工厂位于该国工业化的北部地区。"
+        }
+      ],
+      "derivatives": [
+        {"w": "northern", "gloss": "adj. 北部的，北方的"},
+        {"w": "northward", "gloss": "adv./adj. 向北（的）"},
+        {"w": "northeast", "gloss": "n./adj. 东北（方）"}
+      ],
+      "etymology": "古英语 norþ，日耳曼同根，与德语 Nord 同源。原始印欧语根 *ner-（下，左）——古人面朝日出（东方）时，北方在左边，被视为「下方、黑暗」的方向，许多文化有类似的北=阴冷/黑暗的象征。",
+      "roots": [
+        {"part": "north（norþ）", "meaning": "北方"}
+      ],
+      "phonetics": "/nɔːrθ/：-orth = /ɔːrθ/，词尾 th = /θ/ 清音。与 south（/saʊθ/）对比：-orth vs -outh，词尾都是清音 /θ/。",
+      "examples": [
+        {
+          "en": "The birds migrate north every spring to breed.",
+          "zh": "每年春天鸟类都向北迁徙去繁殖。",
+          "source": "造句"
+        },
+        {
+          "en": "due north / the North Pole / True North",
+          "zh": "「正北 / 北极 / 真北（磁北）」——地理导航高频词组。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "northward", "gloss": "向北（移动方向）", "ipa": "/ˈnɔːrθwərd/", "note": "「向北（的）」，方向副词/形容词，比 north 更强调移动方向"},
+        {"w": "boreal", "gloss": "北方的（生态/学术词）", "ipa": "/ˈbɔːriəl/", "note": "「北方的」，生态/学术词，boreal forest（北方针叶林/泰加林）"}
+      ],
+      "antonyms": [
+        {"w": "south", "note": "南方"},
+        {"w": "southern", "note": "南部的"}
+      ],
+      "nuance": "north 是通用方向词；boreal 是科学术语，专指北方生态系统；northward 强调移动趋向（northward migration）。文化隐喻上，「going north」在某些语境中指事情变得更艰难（源自美国内战后的「北进」意象）。"
+    },
+    {
+      "word": "south",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/saʊθ/",
+      "subgroup": "final",
+      "meaning": "n./adj./adv. 南（方）；南部的；向南",
+      "core": "「阳光充足、温暖方向」——北半球的南方朝向太阳，文化上既是温暖丰饶，也有「偏远落后」的双重意象；go south = 事情变糟是固化俚语",
+      "senses": [
+        {
+          "gloss": "（方向）南、南方",
+          "logic": "核心义：与北相对，地图下方",
+          "en": "They drove south along the coast.",
+          "zh": "他们沿着海岸线向南驾车。"
+        },
+        {
+          "gloss": "（地理/文化）南部地区",
+          "logic": "方向具体化为地理或文化区域",
+          "en": "She grew up in the rural south of France.",
+          "zh": "她在法国南部的农村长大。"
+        },
+        {
+          "gloss": "（俚语）go south = 事情变糟",
+          "logic": "历史偶合固化：美国俚语，源自逃跑/失败的意象，与核心方向义无必然联系",
+          "en": "The project went south after the lead investor pulled out.",
+          "zh": "首席投资人撤资后，项目就泡汤了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "southern", "gloss": "adj. 南部的，南方的"},
+        {"w": "southward", "gloss": "adv./adj. 向南（的）"},
+        {"w": "southeast", "gloss": "n./adj. 东南（方）"}
+      ],
+      "etymology": "古英语 sūþ，日耳曼同根，与德语 Süd 同源。原始印欧语可能关联「太阳」——南方是阳光更充足的方向（北半球）。文化上，「go south」是「事情变糟」的美式俚语。",
+      "roots": [
+        {"part": "south（sūþ）", "meaning": "南方"}
+      ],
+      "phonetics": "/saʊθ/：-outh = /aʊθ/（双元音 + 清音 /θ/），和 mouth 押韵。注意 ou 在此读双元音 /aʊ/ 而非 /ɔː/。",
+      "tip": "「go south」在美式俚语中表示「变糟、失败」——投资 go south（亏了），计划 go south（泡汤了）。",
+      "examples": [
+        {
+          "en": "The project went south after the lead investor pulled out.",
+          "zh": "首席投资人撤资后，项目就泡汤了。",
+          "source": "造句"
+        },
+        {
+          "en": "due south / the Deep South",
+          "zh": "「正南 / 美国深南部（阿拉巴马等州）」——地理与文化的双重含义。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "southward", "gloss": "向南（移动方向）", "ipa": "/ˈsaʊθwərd/", "note": "「向南（的）」，移动方向副词/形容词；southward migration（南迁）"},
+        {"w": "austral", "gloss": "南方的（学术/文学用语）", "ipa": "/ˈɒstrəl/", "note": "「南方的」，学术/诗意用语；austral hemisphere（南半球）；Australia（澳大利亚）即「南方大陆」"}
+      ],
+      "antonyms": [
+        {"w": "north", "note": "北方"},
+        {"w": "northern", "note": "北部的"}
+      ],
+      "nuance": "south 最通用；austral 是学术/文学词汇，对应 boreal（北方）；southward 强调移动方向；「go south」是固定俚语不可替换，表示「往坏的方向发展」。"
+    },
+    {
+      "word": "warmth",
+      "hl": "th",
+      "levels": ["非托福"],
+      "ipa": "/wɔːrmθ/",
+      "subgroup": "final",
+      "meaning": "n. 温暖（感）；热情；（颜色的）暖调",
+      "core": "「温度适宜带来的舒适感」——warm（温暖）加 -th 变成程度/状态名词，从物理温度延伸到人际情感的温度",
+      "senses": [
+        {
+          "gloss": "（物理）温暖感",
+          "logic": "核心义：高于冷但不到热的舒适温度带来的感觉",
+          "en": "She sat by the fire, enjoying the warmth.",
+          "zh": "她坐在火边，享受着暖意。"
+        },
+        {
+          "gloss": "（情感）热情、友善",
+          "logic": "把物理温暖的「舒适、友好」感投射到人际关系上",
+          "en": "The warmth in her voice made everyone feel at ease.",
+          "zh": "她声音里的温度让所有人都感到放松。"
+        },
+        {
+          "gloss": "（视觉）色彩的暖调",
+          "logic": "红橙黄系的颜色给人「温暖」的视觉感受——美术/设计专用义",
+          "en": "The room was decorated in the warmth of autumn colours.",
+          "zh": "房间用秋天的暖色调装饰。"
+        }
+      ],
+      "derivatives": [
+        {"w": "warm", "gloss": "adj./v. 温暖的；（使）变暖"},
+        {"w": "lukewarm", "gloss": "adj. 微温的；态度不冷不热的"},
+        {"w": "warmly", "gloss": "adv. 热情地；温暖地"}
+      ],
+      "etymology": "古英语 wearmþ，源自 wearm（温暖）+ -þ（抽象名词后缀）。warm（温暖）→ warmth（温暖感），同类还有 length（long + th）、width（wide + th）、depth（deep + th）——这一后缀把形容词变为表「程度/状态」的名词。",
+      "roots": [
+        {"part": "warm（wearm）", "meaning": "温暖"},
+        {"part": "-th", "meaning": "抽象名词后缀，表「程度/状态」"}
+      ],
+      "phonetics": "/wɔːrmθ/：w + ar = /wɔːr/（r 音化元音），+ mth = /mθ/，注意 m 和 th 两个辅音连读，词尾清音 /θ/。",
+      "tip": "-th 名词后缀家族：long → length，wide → width，deep → depth，warm → warmth，true → truth，strong → strength——形容词加 -th 生成「该属性的程度」名词，全部词尾 /θ/ 清音。",
+      "examples": [
+        {
+          "en": "The warmth in her voice made everyone feel at ease.",
+          "zh": "她声音里的温度让所有人都感到放松。",
+          "source": "造句"
+        },
+        {
+          "en": "human warmth / warmth of colour",
+          "zh": "「人情温度 / 色彩的暖调」——物理义与情感义的典型用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {"w": "heat", "gloss": "热量（比 warmth 温度更高、更客观）", "ipa": "/hiːt/", "note": "「热量」，比 warmth 温度更高，更客观；body heat（体温），heat wave（热浪）"},
+        {"w": "affection", "gloss": "情感、温情（仅指情感义）", "ipa": "/əˈfekʃn/", "note": "「情感、温情」义的近义词，比 warmth 更强调感情层面；show affection（表达情感）"},
+        {"w": "cordiality", "gloss": "亲切热诚（正式书面语，强调外显行为）", "ipa": "/ˌkɔːrdiˈælɪti/", "note": "「亲切、热诚」，正式书面语，比 warmth 更强调外显的友好态度"}
+      ],
+      "antonyms": [
+        {"w": "coldness", "note": "冷漠；寒冷"},
+        {"w": "frigidity", "note": "冷淡；严寒"}
+      ],
+      "nuance": "warmth 物理义和情感义都涵盖（warmth of the sun / warmth of personality）；heat 专于物理高温，无情感义；affection 只用于情感，无物理义；cordiality 比 warmth 更正式，强调外在行为的热诚而非内在的温暖感。"
+    }
+  ]
+}

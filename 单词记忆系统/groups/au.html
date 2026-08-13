@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>au 重读同音家族 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "au", "combo": "au", "title": "au 重读同音家族", "sound": "/ɔː/", "subtitle": "重读音节里，au 永远是那个饱满的 /ɔː/", "intro": "「au」在重读音节里几乎永远读长元音 /ɔː/——和 aw 完全同音（law 与 launch 里的元音一模一样）。author、autumn、cause、pause、fault、launch 全是这个饱满的『欧』。这一页收六级与托福里 au 处在重读音节、读 /ɔː/ 的词，成串背；末尾单列几个著名陷阱（aunt、laugh、gauge…），它们的 au 偏偏不读 /ɔː/，一次帮你把李鬼认清。", "subgroups": [{"key": "core", "tag": "/ɔː/ 重读", "label": "✅ au 在重读音节 = /ɔː/", "desc": "重读时 au 读长元音 /ɔː/（与 aw 同音）：嘴唇圆拢、下巴放低，饱满的『欧——』。cause、pause、fault、launch、author 都是它。三大拉丁词根藏在里面：aud-(听) audience/audio/auction、augere(增大) author/august/auction、以及 -ault/-aul(跳/拉) assault/vault/haul。"}, {"key": "trap", "tag": "au≠/ɔː/ 例外", "label": "⚠️ 例外：这些 au 不读 /ɔː/", "desc": "少数李鬼：aunt 读 /ænt/(美) 或 /ɑːnt/(英)、laugh 读 /læf/(gh 发 /f/)、gauge 干脆读 /ɡeɪdʒ/。还有一类是 au 不重读时会弱化：restaurant 的 au 几乎消失、authority 的 au 弱读成 /ə/（对照它的重读亲戚 author）。"}], "rhymeChains": [{"label": "-ause / -aud (/ɔːz/ /ɔːd/)", "words": ["cause", "because", "pause", "clause", "applause", "fraud"]}, {"label": "-ault / -aul (/ɔːl(t)/)", "words": ["fault", "haul", "vault", "assault"]}, {"label": "-aunt / -aunch (/ɔːn.../)", "words": ["haunt", "launch"]}], "words": [{"word": "author", "levels": ["六级"], "ipa": "/ˈɔːθər/", "subgroup": "core", "meaning": "n. 作者，作家；创始人  v. 撰写", "etymology": "拉丁语 auctor「创作者、发起人」，来自 augere「使增长、创造」——同根还有 augment(增加)、august(威严的)、auction(拍卖)。作者就是『让作品从无到有增长出来』的人。", "roots": [{"part": "auct- (augere)", "meaning": "使增长、创造"}, {"part": "-or", "meaning": "……的人"}], "phonetics": "重读首音节 AU = /ɔː/ + thor /θər/（th 咬舌）。", "tip": "对照末尾陷阱 authority：那里 au 不重读，弱读成 /ə/。", "examples": [{"en": "She is the author of three best-selling novels.", "zh": "她是三部畅销小说的作者。", "source": "造句"}, {"en": "a best-selling author", "zh": "『畅销书作家』——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "writer", "ipa": "/ˈraɪtər/", "note": "最通用的口语词，泛指任何写作者，不强调权威性或创作地位；author 更正式，常含「该作品的权威创作者」之意。搭配：a freelance writer（自由撰稿人）", "gloss": "写作者，执笔人"}, {"w": "novelist", "ipa": "/ˈnɒvəlɪst/", "note": "专指写小说的人，比 author 义域窄，不能泛称。a debut novelist（首次亮相的小说家）", "gloss": "小说家"}, {"w": "playwright", "ipa": "/ˈpleɪraɪt/", "note": "专指剧本作者，与 author 义域互不重叠，但都属创作者范畴；note 里的区分是体裁，不是语气。", "gloss": "剧作家"}, {"w": "creator", "ipa": "/kriˈeɪtər/", "note": "强调「创造者」而非文字媒介，现多用于内容创业语境（content creator）；author 有书面出版的含义，creator 无此限定。", "gloss": "创作者，创造者"}], "antonyms": [{"w": "reader", "note": "读者，与作者对应的接受方"}, {"w": "editor", "note": "编辑：加工他人作品而非独立创作"}], "nuance": "author 强调对作品的权威归属感（该书的『作者』），writer 更口语、更宽泛（任何写东西的人）。对比：She is a prolific writer（多产写手）vs. She is the author of this study（该研究的作者）——学术/法律语境几乎只用 author。", "core": "让某物从无到有「生长」出来的那个人——创造者、原点。", "senses": [{"gloss": "n. 作者，著者", "logic": "创造文字作品、让作品「生长」出来的人，是最直接的核心义。", "en": "The author spent ten years writing her debut novel.", "zh": "这位作者花了十年写她的第一部小说。"}, {"gloss": "n. 创始人，发起者", "logic": "把「使某事物从无到有」的核心义延伸到文字之外，任何开创者都可称 author。", "en": "He was the author of a sweeping economic reform.", "zh": "他是这场大规模经济改革的发起人。"}, {"gloss": "v. 撰写，著述", "logic": "名词直接动词化，指亲手创作某作品。", "en": "She has authored more than twenty research papers.", "zh": "她已撰写了二十多篇研究论文。"}], "derivatives": [{"w": "authorship", "gloss": "著作权；作者身份"}, {"w": "authorize", "gloss": "授权，批准"}, {"w": "authoritative", "gloss": "权威的，可信赖的"}, {"w": "authoritarian", "gloss": "专制的，威权主义的"}]}, {"word": "autumn", "levels": ["六级"], "ipa": "/ˈɔːtəm/", "subgroup": "core", "meaning": "n. 秋天（英式；美式常用 fall）", "etymology": "拉丁语 autumnus「秋季」。词尾 n 不发音（像 column、hymn）。", "roots": [{"part": "autumn (autumnus)", "meaning": "秋季"}], "phonetics": "重读 AU = /ɔː/ + tumn /təm/，末尾 n 不发音。", "examples": [{"en": "The leaves turn gold in autumn.", "zh": "秋天树叶变成金黄。", "source": "造句"}, {"en": "Season of mists and mellow fruitfulness", "zh": "『雾气弥漫、果实累累的季节』——济慈名诗《秋颂》(To Autumn) 开篇。", "source": "名诗（济慈）"}], "synonyms": [{"w": "fall", "ipa": "/fɔːl/", "note": "美式英语对「秋天」的标准说法，与 autumn 完全同义，但 autumn 是英式，文学感更强。搭配：in the fall（美）/ in autumn（英）", "gloss": "秋天（美式口语）"}, {"w": "harvest season", "note": "关联词而非严格近义词，指收获季节；比 autumn 义域窄，只在农业或节日语境使用。", "gloss": "收获季节"}], "antonyms": [{"w": "spring", "note": "春天，四季中的对立面（生长 vs 凋落）"}], "nuance": "autumn 与 fall 100% 同义，区别纯属地域：英式用 autumn，美式日常说 fall，但在美国的诗歌/正式文体中 autumn 也常见。具体名词，近义词极少。", "core": "万物成熟后走向收敛、叶落归根的季节——饱满而将逝的美感。", "senses": [{"gloss": "n. 秋天，秋季（英式）", "logic": "核心义直接对应自然季节，叶落、收获、气温下降，是词的唯一常用义。", "en": "The forest turns brilliant red and gold in autumn.", "zh": "秋天森林染上耀眼的红与金。"}, {"gloss": "n.（比喻）晚年，成熟后期", "logic": "将「收敛将逝」的季节感延伸至人生阶段，多见于文学语境。", "en": "He published his finest work in the autumn of his career.", "zh": "他在事业暮年出版了最好的作品。"}], "derivatives": [{"w": "autumnal", "gloss": "秋天的，秋季特有的"}, {"w": "fall", "gloss": "秋天（美式）；秋叶凋落（fall 与 autumn 的关联）"}]}, {"word": "August", "levels": ["基础"], "ipa": "/ˈɔːɡəst/", "subgroup": "core", "meaning": "n. 八月；(august, 小写) adj. 威严的", "etymology": "得名于罗马皇帝 Augustus（奥古斯都）。august 一词本义『威严的、令人敬畏的』，同样来自 augere(使增长) → 使壮大 → 尊贵。", "roots": [{"part": "Augustus", "meaning": "奥古斯都（源自 augere 使壮大）"}], "phonetics": "月份重读首音节 AU = /ɔː/；形容词 august 重音在后 /ɔːˈɡʌst/。", "examples": [{"en": "We are going on holiday in early August.", "zh": "我们八月初去度假。", "source": "造句"}, {"en": "an august assembly", "zh": "『一个威严庄重的集会』——形容词 august 的用法。", "source": "高频搭配"}], "synonyms": [{"w": "august", "ipa": "/ɔːˈɡʌst/", "note": "同一词的形容词义（威严的、令人敬畏的），与月份同形异音；形容词义近义词是 majestic/venerable，而非月份的近义词。搭配：an august institution（一个令人敬畏的机构）", "gloss": "威严的，庄重的（形容词义，重音后移）"}, {"w": "majestic", "ipa": "/məˈdʒestɪk/", "note": "形容词 august（威严的）的近义词，语气相近但 majestic 更常用于自然景观，august 多用于人物或机构。", "gloss": "雄伟的，壮观的"}, {"w": "venerable", "ipa": "/ˈvenərəbl/", "note": "形容词 august 的近义词，强调因年长/资历而受尊敬，august 更侧重威严气场。", "gloss": "令人尊敬的，德高望重的"}], "antonyms": [{"w": "humble", "note": "谦逊的（针对形容词义 august「威严的」的反义）"}], "nuance": "月份义 August 无真正近义词（专有名词）。形容词义 august 与 majestic 的核心差异：majestic 描述视觉上宏伟壮观（如山川），august 描述因权威/历史而散发的庄严感（如机构、人物）；august 用法偏书面，口语几乎不用。", "core": "因罗马皇帝奥古斯都而命名，携带「威严、使人敬畏」的气场——伟大的增长与荣耀。", "senses": [{"gloss": "n. 八月（专有名词，首字母大写）", "logic": "罗马元老院将此月献给奥古斯都皇帝，历史命名而成专有名词，与词根「威严」的关联是文化偶合，非语义自然引申。", "en": "The Olympic Games opened on the first of August.", "zh": "奥运会在八月一日开幕。"}, {"gloss": "adj. 威严的，令人敬畏的（小写 august，书面语）", "logic": "来自拉丁语 augustus「庄严、受人尊崇」，从「使壮大」的词根直接引申出令人敬畏的气度。", "en": "The committee gathered in the august hall of the senate.", "zh": "委员会在参议院那庄严肃穆的大厅内集会。"}], "derivatives": [{"w": "augment", "gloss": "增加，扩大（同词根 augere）"}, {"w": "augur", "gloss": "预兆；预示（同族词）"}, {"w": "Augustus", "gloss": "奥古斯都（罗马皇帝名）"}]}, {"word": "auto", "levels": ["六级"], "ipa": "/ˈɔːtoʊ/", "subgroup": "core", "meaning": "n. 汽车（美，口语）  前缀 auto- 自动、自己", "etymology": "希腊语 autos「自己」——注意这是与 author 不同的另一支 au 家族！autonomy(自治)、automatic(自动)、autobiography(自传) 都是『自己』。", "roots": [{"part": "auto- (autos)", "meaning": "自己、自动"}], "phonetics": "重读 AU = /ɔː/ + to /toʊ/。", "examples": [{"en": "The car switched to auto mode on the highway.", "zh": "在高速上汽车切换到了自动模式。", "source": "造句"}, {"en": "on autopilot", "zh": "『开着自动驾驶 / 不假思索地做事』——地道习语。", "source": "习语"}], "synonyms": [{"w": "car", "ipa": "/kɑːr/", "note": "汽车义中最通用的口语词；auto 是美式旧式俚语，正式度更低。搭配：auto insurance（汽车保险）——这个搭配里 auto 很固定", "gloss": "汽车（最通用口语词）"}, {"w": "automobile", "ipa": "/ˌɔːtəməˈbiːl/", "note": "汽车的正式/书面说法，与 auto 同义但更正式，多见于法律、保险文件。", "gloss": "汽车（正式书面语）"}, {"w": "vehicle", "ipa": "/ˈviːɪkl/", "note": "最宽泛的上义词，涵盖所有交通工具；auto 仅指乘用汽车。", "gloss": "交通工具（上义词，最宽泛）"}], "nuance": "作为「汽车」，auto（美口）< automobile（正式）< vehicle（上义词，最宽）。auto 在现代美式英语里显得有些旧气，日常多说 car。作前缀义（自动/自己）则是独立范畴，无近义词。", "core": "「自己」——一切自发、自动、自我相关的事物的前缀起点。", "senses": [{"gloss": "n. 汽车（美式口语，旧式）", "logic": "automobile 的缩写，「自动行走」之物，是历史缩略形成的口语简称。", "en": "He works at an auto repair shop in downtown.", "zh": "他在市中心的一家汽车修理店工作。"}, {"gloss": "前缀 auto- 自动的；自己的", "logic": "希腊语 autos（自己）的直接保留，构成大量复合词，表示「由自身驱动或完成」。", "en": "The factory runs on autopilot after the system was upgraded.", "zh": "系统升级后工厂可自动运转。"}], "derivatives": [{"w": "automobile", "gloss": "汽车（正式书面语）"}, {"w": "autopilot", "gloss": "自动驾驶；不假思索地运转"}, {"w": "autonomous", "gloss": "自治的，自主的"}, {"w": "autobiography", "gloss": "自传"}]}, {"word": "automatic", "levels": ["六级", "托福"], "ipa": "/ˌɔːtəˈmætɪk/", "subgroup": "core", "meaning": "adj. 自动的；无意识的，习惯性的", "etymology": "希腊语 automatos「自行运作的」= auto(自己) + -matos(想、动)。", "roots": [{"part": "auto- (autos)", "meaning": "自己、自动"}, {"part": "-matic", "meaning": "……运作的"}], "phonetics": "AU 带次重读 /ˌɔː/，主重音在 -MA-。", "examples": [{"en": "The doors open automatically as you approach.", "zh": "你一走近门就自动打开。", "source": "造句（副词 automatically）"}, {"en": "automatic transmission", "zh": "『自动变速器（自动挡）』——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "automated", "ipa": "/ˈɔːtəmeɪtɪd/", "note": "强调「已被自动化处理」，多描述系统/流程；automatic 更强调本来就内置了自动机制。an automated factory（自动化工厂）vs automatic door（自动门）", "gloss": "已自动化的（强调改造结果）"}, {"w": "spontaneous", "ipa": "/spɒnˈteɪniəs/", "note": "「自发的、不由自主的」，与 automatic 在「无意识」义上相近，但 spontaneous 带自然流露的正面色彩，automatic 偏机械惯性。", "gloss": "自发的，出于本能的"}, {"w": "involuntary", "ipa": "/ɪnˈvɒləntri/", "note": "「非自愿的、不随意的」，在「无意识」义上与 automatic 最接近，但 involuntary 更强调不受控制的生理反应（involuntary reflex 反射）。", "gloss": "非自愿的，不随意的"}, {"w": "mechanical", "ipa": "/məˈkænɪkl/", "note": "「机械的、无思考的」，与 automatic 在比喻义上相近，但 mechanical 常含贬义（像机器一样死板）。", "gloss": "机械的，无思考的"}], "antonyms": [{"w": "manual", "note": "手动的，需要人工操作"}, {"w": "deliberate", "note": "刻意的、有意识的（针对「习惯性/无意识」义）"}], "nuance": "automatic 和 automated 最易混淆：automatic 指设备/机制本身具备自动功能（automatic braking 自动刹车），automated 指经过改造、流程已被自动化（automated checkout 自动结账系统）。前者是固有属性，后者是人为改造的结果。", "core": "由内部机制自行运作，无需外力介入——内置的「自我驱动」。", "senses": [{"gloss": "adj. 自动的（机械或系统层面）", "logic": "词根 auto（自己）加 -matos（运作）= 自行运作，最直接的核心义。", "en": "The building has automatic sprinklers that activate in case of fire.", "zh": "大楼安装了火灾时自动启动的喷水装置。"}, {"gloss": "adj. 无意识的，习惯性的（行为）", "logic": "「不需要外部指令驱动」引申到人的行为——熟练到不假思索、像机器一样运转。", "en": "After years of practice, her movements became completely automatic.", "zh": "经过多年练习，她的动作已完全出于本能。"}, {"gloss": "adj. 必然的，自动发生的（后果或程序）", "logic": "进一步引申：某条件满足后结果「自动」随之而来，不需要额外判断。", "en": "A third conviction carries an automatic prison sentence.", "zh": "第三次定罪将自动面临监禁判决。"}], "derivatives": [{"w": "automatically", "gloss": "自动地；不假思索地"}, {"w": "automate", "gloss": "使自动化"}, {"w": "automation", "gloss": "自动化"}, {"w": "automaton", "gloss": "机器人；机械行事的人"}]}, {"word": "audience", "levels": ["六级", "托福"], "ipa": "/ˈɔːdiəns/", "subgroup": "core", "meaning": "n. 观众，听众，读者群；正式接见", "etymology": "拉丁语 audire「听」——词根 aud- 一大家子：audio、audit、auction、audible、auditorium。audience 本义『在听的人』。", "roots": [{"part": "aud- (audire)", "meaning": "听"}, {"part": "-ience", "meaning": "名词后缀"}], "phonetics": "重读首音节 AU = /ɔː/ + dience /diəns/。", "examples": [{"en": "The speaker held the audience's attention for an hour.", "zh": "演讲者让观众全神贯注了一个小时。", "source": "造句"}, {"en": "a captive audience", "zh": "『走不开、只能听你说的听众』——地道习语。", "source": "习语"}], "synonyms": [{"w": "spectators", "ipa": "/ˈspektətərz/", "note": "「观众」，侧重视觉观看（体育赛事、现场表演），比 audience 更强调在场目睹；audience 可指听众/读者，spectators 不行。", "gloss": "现场观看者，观众（偏视觉）"}, {"w": "viewers", "ipa": "/ˈvjuːərz/", "note": "「（影视/在线内容的）观众」，专指看屏幕的受众；audience 更宽泛，viewers 更现代媒体语境。", "gloss": "（影视或网络）观众"}, {"w": "crowd", "ipa": "/kraʊd/", "note": "「人群」，强调物理聚集，不强调接受信息的功能；audience 有「正在接收内容」的语义，crowd 没有。", "gloss": "人群（强调物理聚集）"}, {"w": "readership", "ipa": "/ˈriːdərʃɪp/", "note": "「读者群」，audience 在出版/媒体语境中的对应词，专指读者群体。", "gloss": "读者群"}], "antonyms": [{"w": "performer", "note": "表演者/演讲者，与观众对立的输出方"}, {"w": "speaker", "note": "演讲者"}], "nuance": "audience 是最宽的词，涵盖听众、观众、读者；spectators 专指现场视觉观众（体育/戏剧）；viewers 专指屏幕观看者。对比：a live audience（现场观众）vs. TV viewers（电视观众）——两词不可互换。", "core": "「正在聆听接收」的那群人——听众是词的出发点，延伸到一切接受者。", "senses": [{"gloss": "n. 观众，听众（现场）", "logic": "词根 aud-（听）加 -ience（人群）= 正在听的人，是最原始的核心义。", "en": "The audience fell silent as the conductor raised his baton.", "zh": "指挥举起指挥棒时，观众席一片寂静。"}, {"gloss": "n. 读者群，受众（媒体或内容）", "logic": "「接收信息的人」从听扩展到读、看——任何内容的接受者都可称 audience。", "en": "The documentary attracted a global audience of millions.", "zh": "这部纪录片吸引了全球数百万受众。"}, {"gloss": "n. 正式接见，觐见", "logic": "引申较远：被权威人物「接收」（听取）——与国王、教皇等的正式会面。此义的「被聆听」含义属较独立发展的义项。", "en": "The ambassador was granted an audience with the queen.", "zh": "大使获准觐见女王。"}], "derivatives": [{"w": "audible", "gloss": "听得见的"}, {"w": "auditorium", "gloss": "礼堂，观众席"}, {"w": "audit", "gloss": "审计；旁听课程"}, {"w": "audition", "gloss": "试音，试镜"}]}, {"word": "audio", "levels": ["六级", "托福"], "ipa": "/ˈɔːdioʊ/", "subgroup": "core", "meaning": "adj. 音频的，声音的  n. 音频", "etymology": "拉丁语 audire「听」的直接派生，词根 aud-。与 video(看) 成一对。", "roots": [{"part": "aud- (audire)", "meaning": "听"}, {"part": "-io", "meaning": "词尾"}], "phonetics": "重读首音节 AU = /ɔː/ + dio /dioʊ/。", "examples": [{"en": "The audio quality of the recording is excellent.", "zh": "这段录音的音质极好。", "source": "造句"}, {"en": "audio and video", "zh": "『音频与视频』——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "sound", "ipa": "/saʊnd/", "note": "最宽泛的「声音」，既可指自然声也指音频信号；audio 特指技术/媒体语境中的声音信号（录音、播放）。", "gloss": "声音（最宽泛的日常词）"}, {"w": "acoustic", "ipa": "/əˈkuːstɪk/", "note": "「声学的」，强调物理声音特性而非电子信号；acoustic guitar（原声吉他）vs audio recording（音频录音）。", "gloss": "声学的，原声的"}], "antonyms": [{"w": "video", "note": "视频，与音频（audio）成对的另一媒体维度"}, {"w": "silent", "note": "无声的（silent film 无声电影）"}], "nuance": "audio 是技术性词汇，专指媒体/电子语境中的声音信号，与 video 配对使用；sound 是日常词，范围更广（包括噪声、音乐等一切声音）。audio quality 不能换成 sound quality——前者偏技术评测，后者更日常。", "core": "「听」这件事本身——声音作为可捕捉、可传输的信号。", "senses": [{"gloss": "adj. 音频的，声音的（技术语境）", "logic": "词根 aud-（听）直接修饰技术设备或信号，核心义的直接体现。", "en": "The audio equipment needs to be tested before the live broadcast.", "zh": "直播前需要测试音频设备。"}, {"gloss": "n. 音频，声音信号", "logic": "将「听觉信号」名词化，指可录制、播放的声音内容。", "en": "The audio in that clip is too distorted to transcribe.", "zh": "那段剪辑的音频失真太严重，无法转录。"}], "derivatives": [{"w": "audiobook", "gloss": "有声书"}, {"w": "audiovisual", "gloss": "视听的，音像的"}, {"w": "auditory", "gloss": "听觉的"}, {"w": "podcast", "gloss": "播客（audio 的现代应用衍生词）"}]}, {"word": "auction", "levels": ["六级", "托福"], "ipa": "/ˈɔːkʃn/", "subgroup": "core", "meaning": "n./v. 拍卖", "etymology": "拉丁语 auctio「增加」，来自 augere(使增长)——因为拍卖时价格不断『往上加』！与 author、august 同根。", "roots": [{"part": "auct- (augere)", "meaning": "增加（价格往上加）"}, {"part": "-ion", "meaning": "名词后缀"}], "phonetics": "重读首音节 AU = /ɔː/ + ction /kʃn/。", "examples": [{"en": "The painting sold at auction for a record price.", "zh": "这幅画在拍卖会上拍出了创纪录的价格。", "source": "造句"}, {"en": "Going, going, gone!", "zh": "『一次，两次，成交！』——拍卖师落槌前的经典口令。", "source": "文化（拍卖）"}], "synonyms": [{"w": "bidding", "ipa": "/ˈbɪdɪŋ/", "note": "「竞价/出价」，是拍卖中的核心动作，而非拍卖本身；auction 是整个机制，bidding 是过程中的行为。搭配：competitive bidding（竞价）", "gloss": "竞价，出价（拍卖中的动作）"}, {"w": "sale", "ipa": "/seɪl/", "note": "上义词，auction 是 sale 的一种特殊形式（价高者得）；sale 不含竞价含义。", "gloss": "出售，销售（上义词）"}, {"w": "tender", "ipa": "/ˈtendər/", "note": "「招标」，与 auction 同属公开竞争采购机制，但 tender 是买方设条件、卖方竞标报价，auction 是卖方出物、买方竞价，方向相反。", "gloss": "招标（方向相反：买方竞报低价）"}], "antonyms": [{"w": "private sale", "note": "私下交易，无公开竞价"}], "nuance": "auction 与 tender 最易混淆：auction 是买家竞相出高价（价格向上走），tender 是供应商竞相报低价（价格向下走）。两者方向完全相反。", "core": "价格不断「往上增长」的竞争——谁出价高谁赢。", "senses": [{"gloss": "n. 拍卖，拍卖会", "logic": "词根 augere（使增长）的直接体现：出价不断升高，价格在竞争中增长。", "en": "A rare first edition went under the hammer at auction last week.", "zh": "上周一部珍稀初版书在拍卖会上落槌成交。"}, {"gloss": "v. 拍卖（某物）", "logic": "名词直接用作动词，指「通过拍卖方式出售」。", "en": "The estate will be auctioned off to cover the debts.", "zh": "遗产将被拍卖以偿还债务。"}], "derivatives": [{"w": "auctioneer", "gloss": "拍卖师"}, {"w": "bid", "gloss": "出价，竞标"}, {"w": "augment", "gloss": "增加，扩大（同词根）"}, {"w": "auction house", "gloss": "拍卖行（固定搭配）"}]}, {"word": "cause", "levels": ["六级"], "ipa": "/kɔːz/", "subgroup": "core", "meaning": "n. 原因；事业，目标  v. 导致，引起", "etymology": "拉丁语 causa「原因、缘由、诉讼」。因果的『因』，也指值得为之奋斗的『事业』。because = by + cause。", "roots": [{"part": "caus- (causa)", "meaning": "原因、缘由"}], "phonetics": "c /k/ + au /ɔː/ + se /z/（s 浊化）。", "examples": [{"en": "Careless driving causes many accidents.", "zh": "粗心驾驶导致许多事故。", "source": "造句"}, {"en": "Rebel Without a Cause", "zh": "《无因的反叛》——1955 年詹姆斯·迪恩主演的青春经典。", "source": "电影（1955）"}], "synonyms": [{"w": "reason", "ipa": "/ˈriːzn/", "note": "「原因/理由」，与 cause 在「原因」义上最接近，但 reason 偏向主观解释或逻辑推论，cause 偏向客观物理/事件因果。搭配：give reasons（说明理由）vs determine the cause（查明原因）", "gloss": "理由，原因（偏主观解释）"}, {"w": "factor", "ipa": "/ˈfæktər/", "note": "「因素」，比 cause 更弱、更间接——factor 只是影响要素之一，cause 是直接导致的原因。a contributing factor 不等于 the cause。", "gloss": "因素（间接、部分原因）"}, {"w": "trigger", "ipa": "/ˈtrɪɡər/", "note": "「触发因素」，强调引发连锁反应的那个最终导火索，比 cause 更突出「临界点」含义。搭配：trigger a crisis（触发危机）", "gloss": "触发因素，导火索"}, {"w": "motive", "ipa": "/ˈmoʊtɪv/", "note": "「动机」，仅用于人的主观意图，cause 可用于无生命事件；The motive for the crime（犯罪动机）不能换成 cause。", "gloss": "动机（仅用于人的主观意图）"}], "antonyms": [{"w": "effect", "note": "结果，因果关系中的另一端"}, {"w": "consequence", "note": "后果"}], "nuance": "cause 与 reason 的核心差异：cause 是客观的事件/条件（The cause of death was pneumonia），reason 是可解释的主观逻辑（The reason I left was...）。科学/医学/法律报告用 cause；日常解释用 reason。", "core": "「为什么」——事件背后那个驱动一切发生的力量，既是原因也是信念。", "senses": [{"gloss": "n. 原因，起因（客观）", "logic": "拉丁语 causa 的核心义：使某结果发生的客观条件，因果链的起点。", "en": "Investigators are still searching for the cause of the explosion.", "zh": "调查人员仍在寻找爆炸的起因。"}, {"gloss": "n. 事业，目标（值得为之奋斗的）", "logic": "从「驱动力」引申：值得为之付出的信念或目标，是主观层面的「原因」——给行动赋予意义的那件事。", "en": "She devoted her life to the cause of gender equality.", "zh": "她将一生奉献给了性别平等事业。"}, {"gloss": "v. 导致，引起", "logic": "名词直接用作动词：「成为……的原因」，是最高频的日常用法。", "en": "Heavy rain caused widespread flooding across the region.", "zh": "大雨导致该地区大面积洪涝。"}, {"gloss": "n. 诉讼理由，案由（法律）", "logic": "词源中拉丁 causa 本含「诉讼」义，法庭上提起诉讼必须有「原因理由」，延伸至正式法律场景。", "en": "There is no just cause to detain him without a warrant.", "zh": "没有正当理由可以在没有逮捕令的情况下拘留他。"}], "derivatives": [{"w": "because", "gloss": "因为（by + cause）"}, {"w": "causal", "gloss": "因果的，原因的"}, {"w": "causation", "gloss": "因果关系"}, {"w": "causative", "gloss": "表示致使的（语法术语）"}]}, {"word": "because", "levels": ["基础"], "ipa": "/bɪˈkɔːz/", "subgroup": "core", "meaning": "conj. 因为", "etymology": "中古英语 bi cause「由于此因」= by + cause 合成。重音落在 -cause 上，au = /ɔː/。", "roots": [{"part": "be- (by)", "meaning": "由于"}, {"part": "cause", "meaning": "原因"}], "phonetics": "重音在后 be-CAUSE，-cause = /kɔːz/。", "examples": [{"en": "We stayed home because it was raining hard.", "zh": "因为雨下得很大，我们待在家里。", "source": "造句"}, {"en": "Because I could not stop for Death", "zh": "『因为我不能为死神停留』——狄金森传世名诗首句。", "source": "名诗（狄金森）"}], "synonyms": [{"w": "since", "ipa": "/sɪns/", "note": "「既然/因为」，与 because 同义但有细微差别：since 引导的原因被认为是听话人已知的，because 引导新信息。Since you're here, let's start（你既然来了就开始吧）vs I left because it was raining（我走因为下雨了）。", "gloss": "既然，因为（引导已知原因）"}, {"w": "as", "ipa": "/æz/", "note": "「因为」（书面），语气最弱，表明原因是附带信息而非重点；as 的从句通常放句首。As it was late, we left early（因为时间不早了，我们提前离开）。", "gloss": "因为（书面，语气最弱）"}, {"w": "for", "ipa": "/fɔːr/", "note": "「因为」（文学/古英语风格），接陈述句而非从句，语气正式，现代口语几乎不用。I rejoiced, for she was safe（我欢喜，因她安然无恙）。", "gloss": "因为（文学或正式，接陈述句）"}], "antonyms": [{"w": "although", "note": "尽管，表让步而非原因"}, {"w": "despite", "note": "尽管"}], "nuance": "because/since/as 都引导原因状语从句，但强调程度递减：because 最强（原因是新信息，是核心），since 次之（原因是已知背景），as 最弱（原因是附带说明）。考试写作中 because 最安全；since 和 as 容易被误解为时间义。", "core": "「由于此因」——把原因和结果之间的那条线直接点明。", "senses": [{"gloss": "conj. 因为（引导原因从句）", "logic": "by + cause 的词义即为全部用法：标注原因，是核心且唯一的常用义。", "en": "She left early because she had a morning flight to catch.", "zh": "她提前离开，因为要赶早上的航班。"}], "derivatives": [{"w": "cause", "gloss": "原因；事业；导致（词源母体）"}, {"w": "because of", "gloss": "由于（后接名词短语的介词短语）"}]}, {"word": "pause", "levels": ["六级", "托福"], "ipa": "/pɔːz/", "subgroup": "core", "meaning": "n./v. 暂停，停顿", "etymology": "希腊语 pausis「停止」，经拉丁语入英。与 pose(放置) 有远亲关系。", "roots": [{"part": "paus- (pausis)", "meaning": "停止"}], "phonetics": "p + au /ɔː/ + se /z/，与 cause 同韵。", "examples": [{"en": "She paused for a moment before answering.", "zh": "她回答前停顿了一下。", "source": "造句"}, {"en": "a pregnant pause", "zh": "『意味深长的停顿』——地道习语，指饱含言外之意的沉默。", "source": "习语"}], "synonyms": [{"w": "break", "ipa": "/breɪk/", "note": "「休息/间断」，比 pause 时间更长，含义更宽；pause 通常是短暂片刻的停顿，break 是有目的的休息。take a break（休息一下）vs pause for a second（停顿一秒）", "gloss": "休息，间断（时间较长）"}, {"w": "hesitation", "ipa": "/ˌhezɪˈteɪʃn/", "note": "「犹豫/停顿」，强调因不确定而停下，带负面的迟疑含义；pause 是中性的暂时停止。", "gloss": "犹豫，踌躇（因不确定而停）"}, {"w": "halt", "ipa": "/hɔːlt/", "note": "「停止」，比 pause 更彻底，常指完全停下或命令停止；pause 隐含之后会继续。come to a halt（完全停止）vs pause briefly（短暂停顿）", "gloss": "停止（更彻底，常不再继续）"}, {"w": "lull", "ipa": "/lʌl/", "note": "「平静期/间歇」，指活动或噪音的短暂平息，与 pause 相近但更强调周围环境的安静，而非主动暂停。a lull in the conversation（交谈中的短暂沉默）", "gloss": "平静期，间歇（周围环境的短暂平息）"}], "antonyms": [{"w": "continue", "note": "继续"}, {"w": "resume", "note": "恢复继续"}], "nuance": "pause 和 hesitation 最易混淆：pause 是中性的有意停顿（演讲技巧、按下暂停键），hesitation 带有负面的「拿不定主意」含义。She paused for effect（她停顿以制造效果）vs She hesitated before answering（她犹豫后才回答）——语气完全不同。", "core": "有意识地让时间「停一下」——短暂中断，之后还会继续。", "senses": [{"gloss": "v. 暂停，停顿（短暂）", "logic": "词根 pausis（停止）的直接体现，强调短暂且有意的中断，隐含之后将恢复。", "en": "The speaker paused to let the audience absorb what she had said.", "zh": "演讲者停顿了一下，让听众消化刚才说的内容。"}, {"gloss": "n. 停顿，间歇", "logic": "停顿行为本身名词化，可指演讲中的停顿、音乐的休止、视频的暂停等。", "en": "After a brief pause, the negotiators returned to the table.", "zh": "短暂休会后，谈判代表们重新回到桌前。"}, {"gloss": "v. 使（人）踌躇，令（人）重新考虑", "logic": "「停一下」引申到思考上的停顿——某事让人不得不暂时打住去重新审视。固定搭配 give sb pause。", "en": "The statistics gave the committee pause.", "zh": "这些数据让委员会不得不重新审慎考量。"}], "derivatives": [{"w": "menopause", "gloss": "更年期（月经的「停止」）"}, {"w": "give pause", "gloss": "令人踌躇，引发停顿（固定搭配）"}, {"w": "pause button", "gloss": "暂停键（引申：暂时停下的能力）"}]}, {"word": "applause", "levels": ["六级"], "ipa": "/əˈplɔːz/", "subgroup": "core", "meaning": "n. 掌声，喝彩", "etymology": "拉丁语 applaudere = ad-(朝) + plaudere(拍手)——同根 plausible(貌似可信的)、explode(本义『把演员拍下台』)。", "roots": [{"part": "ap- (ad-)", "meaning": "朝、向"}, {"part": "-plaus- (plaudere)", "meaning": "拍手"}], "phonetics": "重音在 -PLAUSE，plause = /plɔːz/。", "examples": [{"en": "The performance ended to thunderous applause.", "zh": "演出在雷鸣般的掌声中落幕。", "source": "造句"}, {"en": "a round of applause", "zh": "『一阵掌声』——高频搭配（请给某人一点掌声）。", "source": "高频搭配"}], "synonyms": [{"w": "clapping", "ipa": "/ˈklæpɪŋ/", "note": "「拍手声」，更口语，强调动作本身；applause 是正式词，强调作为赞许信号的掌声整体。burst into clapping（突然鼓掌）vs prolonged applause（持续的掌声）", "gloss": "拍手声（口语，强调动作）"}, {"w": "acclaim", "ipa": "/əˈkleɪm/", "note": "「欢呼/喝彩」，比 applause 更书面、更正式，且可包含言语上的赞美，不限于拍手；widespread acclaim（广泛赞誉）通常不含掌声。", "gloss": "欢呼，喝彩（书面，可含言语赞美）"}, {"w": "ovation", "ipa": "/oʊˈveɪʃn/", "note": "「热烈鼓掌」，特指持续而热情的掌声，比 applause 程度更强；a standing ovation（起立鼓掌）是最高礼遇。", "gloss": "热烈持久的掌声"}], "antonyms": [{"w": "boos", "note": "嘘声，表示不满"}, {"w": "silence", "note": "沉默，缺乏回应"}], "nuance": "applause < ovation（程度递增）：applause 是普通掌声，ovation 是热烈到观众起立的掌声。acclaim 范围更广，包含言语赞美，不一定有掌声。", "core": "用拍手声向表演者打出赞许——掌声是认可的集体物理表达。", "senses": [{"gloss": "n. 掌声，喝彩（不可数名词）", "logic": "词根 plaudere（拍手）加 ad-（朝向）= 朝着表演者拍手，是核心且几乎唯一的常用义。", "en": "The cast took three curtain calls to thunderous applause.", "zh": "全体演员在雷鸣般的掌声中谢幕三次。"}], "derivatives": [{"w": "applaud", "gloss": "鼓掌；赞扬"}, {"w": "plausible", "gloss": "貌似合理的（同词根 plaudere）"}, {"w": "explode", "gloss": "爆炸（词源本义「把演员拍下台」，同根）"}]}, {"word": "clause", "levels": ["六级"], "ipa": "/klɔːz/", "subgroup": "core", "meaning": "n.（语法）从句，分句；（合同）条款", "etymology": "拉丁语 clausa，来自 claudere「关闭」——与 close、include、conclude 同根。一个『闭合』的语义单位 → 分句。", "roots": [{"part": "claus- (claudere)", "meaning": "关闭"}], "phonetics": "cl- 连缀 + au /ɔː/ + se /z/，与 cause 同韵。", "examples": [{"en": "The contract has a clause about early termination.", "zh": "合同里有一条关于提前终止的条款。", "source": "造句"}, {"en": "a relative clause", "zh": "『定语从句』——语法术语高频词。", "source": "语法术语"}], "synonyms": [{"w": "provision", "ipa": "/prəˈvɪʒn/", "note": "「（法律/合同）条款/规定」，在合同义上与 clause 最接近，但 provision 更强调预先设立的规定，clause 更强调文本中的具体语句单元。a provision of the law（法律条款）", "gloss": "（法律或合同）条款，规定"}, {"w": "stipulation", "ipa": "/ˌstɪpjuˈleɪʃn/", "note": "「（合同）规定/条件」，比 clause 更强调双方协商达成的约定条件，语气更正式。stipulate a condition（规定一个条件）", "gloss": "（合同）规定，条件"}, {"w": "phrase", "ipa": "/freɪz/", "note": "语法义：短语（无谓语），与 clause（有主谓的分句）区别明确，是语法近义词但定义不同。", "gloss": "短语（语法义：无谓语，与 clause 有别）"}], "nuance": "语法义：clause（分句）必须有主语+谓语，phrase（短语）没有谓语——这是最重要区别。合同义：clause 指具体的文本条款条目，provision 指背后的规定内容，两者常混用但 clause 更具体到文字层面。", "core": "一个「关闭」的、自成单元的语义片段——封闭的意义块。", "senses": [{"gloss": "n.（语法）从句，分句（有主谓的语义单元）", "logic": "词根 claudere（关闭）= 一个有头有尾、自成一体的封闭语义单位，与没有谓语的短语（phrase）形成对比。", "en": "The sentence contains a relative clause modifying the subject.", "zh": "这个句子含有一个修饰主语的定语从句。"}, {"gloss": "n.（合同或法律）条款，款项", "logic": "「封闭的单元」引申到法律文件：合同中每一条自成体系的条文，是独立封闭的规定。", "en": "Please read the termination clause before signing the agreement.", "zh": "请在签署协议前仔细阅读终止条款。"}], "derivatives": [{"w": "include", "gloss": "包含（同词根 claudere，「关进去」）"}, {"w": "conclude", "gloss": "结论；结束（同词根，「关闭」）"}, {"w": "enclose", "gloss": "围住；附上（同词根）"}, {"w": "disclose", "gloss": "揭露，披露（同词根，「打开关闭」）"}]}, {"word": "launch", "levels": ["六级", "托福"], "ipa": "/lɔːntʃ/", "subgroup": "core", "meaning": "v. 发射；发起，推出；下水  n. 发射，启动", "etymology": "古北法语 lancher「投掷长矛」，来自拉丁 lanceare（lance 长矛）。把东西『掷出去』→ 发射、推出。", "roots": [{"part": "launch (lanceare)", "meaning": "掷出、投射"}], "phonetics": "l + au /ɔː/ + nch /ntʃ/。", "examples": [{"en": "The company will launch its new phone next week.", "zh": "公司下周将推出新手机。", "source": "造句"}, {"en": "a product launch / launch pad", "zh": "『新品发布会 / 发射台』——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "release", "ipa": "/rɪˈliːs/", "note": "「发布/发行」，商业语境与 launch 高度重叠，但 release 更强调使内容流通（release a film/album），launch 更强调正式推出、带有仪式感（product launch 新品发布会）。", "gloss": "发布，发行（强调使内容流通）"}, {"w": "initiate", "ipa": "/ɪˈnɪʃieɪt/", "note": "「启动/发起」，比 launch 更正式、更书面，多用于计划、项目、程序；launch 更有动势感和对外宣告的意味。initiate a project（启动项目）", "gloss": "启动，发起（正式、书面）"}, {"w": "deploy", "ipa": "/dɪˈplɔɪ/", "note": "「部署/投入使用」，技术和军事语境；launch a missile 和 deploy missiles 含义接近，但 deploy 更强调「安排就位」而非「发射瞬间」。", "gloss": "部署，投入使用（技术或军事）"}, {"w": "unveil", "ipa": "/ʌnˈveɪl/", "note": "「揭幕/发布」，强调揭开面纱、第一次公开亮相，比 launch 更强调「惊喜/首次披露」的时刻。unveil a new model（发布新款型）", "gloss": "揭幕，首次公开亮相"}], "antonyms": [{"w": "cancel", "note": "取消（计划中的发射/发布）"}, {"w": "recall", "note": "召回（已推出的产品）"}], "nuance": "launch 与 release 最常混用：launch 侧重「正式推出」的仪式和市场宣告（launch event 发布会），release 侧重「让内容/产品流通」（release date 上市日期）。科技公司说 product launch，音乐/影视界说 album/film release。", "core": "把某物用力「掷出去」——从静止到运动的那个决定性一推。", "senses": [{"gloss": "v. 发射（导弹、火箭、船）", "logic": "词源「投掷长矛」的直接体现：给物体一个初速度，让它离开出发点。", "en": "The rocket was launched at dawn from the coastal base.", "zh": "火箭在黎明时分从海岸基地发射升空。"}, {"gloss": "v. 推出，发布（产品或活动）", "logic": "「掷出去」引申到商业：把产品从内部推向公众，带有仪式感和对外宣告。", "en": "The startup launched its app with a live demo event.", "zh": "这家初创公司通过一场现场演示活动正式推出了其应用程序。"}, {"gloss": "v. 发动，发起（攻击、运动或调查）", "logic": "「用力推出」引申到抽象行动：把一项计划或行动向外「发射」，使其开始运转。", "en": "The police launched an investigation into the missing funds.", "zh": "警方对失踪资金展开调查。"}, {"gloss": "n. 发射；启动，发布（事件或时刻）", "logic": "动词名词化，指「掷出去」那个时刻或发布事件本身。", "en": "The product launch attracted hundreds of journalists.", "zh": "产品发布会吸引了数百名记者。"}], "derivatives": [{"w": "launchpad", "gloss": "发射台；启动平台"}, {"w": "relaunch", "gloss": "重新推出，再次发布"}, {"w": "launcher", "gloss": "发射器；启动程序"}, {"w": "lance", "gloss": "长矛（词源母体）"}]}, {"word": "laundry", "levels": ["六级", "托福"], "ipa": "/ˈlɔːndri/", "subgroup": "core", "meaning": "n. 要洗的衣物；洗衣店；洗衣（活）", "etymology": "源自拉丁语 lavare「洗」（经古法语 lavanderie）——与 lavatory(盥洗室)、lava 同根。", "roots": [{"part": "laun- (lavare)", "meaning": "洗"}, {"part": "-dry", "meaning": "名词后缀（场所）"}], "phonetics": "重读首音节 LAUN = /lɔːn/ + dry /dri/。", "examples": [{"en": "I need to do the laundry this weekend.", "zh": "这周末我得洗衣服。", "source": "造句（do the laundry）"}, {"en": "air your dirty laundry in public", "zh": "『当众抖露家丑』——地道习语。", "source": "习语"}], "synonyms": [{"w": "washing", "ipa": "/ˈwɒʃɪŋ/", "note": "英式口语中「要洗的衣物/洗衣」的同义词，与 laundry 基本可互换，但 washing 更口语。do the washing（英）= do the laundry（美/通用）。", "gloss": "洗涤，待洗衣物（英式口语）"}, {"w": "linen", "ipa": "/ˈlɪnɪn/", "note": "「床上用品/洗涤用品」，仅指床单、毛巾等布草类，是 laundry 的下义词，不能泛指衣物。", "gloss": "床单毛巾等布草类（下义词）"}], "nuance": "laundry 作为具体名词（要洗的衣物/洗衣房），近义词极少。do the laundry（美通）= do the washing（英口），是最主要的等义对。laundry 还可指「洗衣店」，此义无直接近义词（干洗店叫 dry cleaner's）。", "core": "需要用水「洗」的东西，或完成这件事的地方——清洗的全套场景。", "senses": [{"gloss": "n. 待洗的衣物；洗好的衣物", "logic": "词根 lavare（洗）的核心义：需要清洗或已清洗的衣物总称。", "en": "There are two loads of laundry waiting to be done.", "zh": "有两桶衣物等着要洗。"}, {"gloss": "n. 洗衣（这项活动）", "logic": "由「洗的东西」延伸到「洗衣服」这件事本身，do the laundry 是固定搭配。", "en": "She set aside Sunday afternoons to do the laundry.", "zh": "她把每周日下午留出来专门洗衣服。"}, {"gloss": "n. 洗衣店，洗衣房", "logic": "从「洗衣活动」引申到「完成洗衣活动的场所」。", "en": "Drop your shirts at the laundry by noon for same-day service.", "zh": "中午前把衬衫送到洗衣店可享受当日服务。"}], "derivatives": [{"w": "laundromat", "gloss": "（美）自助洗衣店"}, {"w": "launderer", "gloss": "洗衣工；（引申）洗钱者"}, {"w": "lavatory", "gloss": "盥洗室，卫生间（同词根 lavare）"}, {"w": "lavender", "gloss": "薰衣草（历史上用于洗衣香薰，词源相关）"}]}, {"word": "fault", "levels": ["六级", "托福"], "ipa": "/fɔːlt/", "subgroup": "core", "meaning": "n. 过错，责任；缺点；（地质）断层", "etymology": "拉丁语 fallere「欺骗、失误」——与 false、fail、fallacy 同根。一个『失误、差错』。", "roots": [{"part": "faul- (fallere)", "meaning": "失误、欺骗"}], "phonetics": "f + au /ɔː/ + lt，与 vault、haul 同韵。", "examples": [{"en": "It's not your fault that the plan failed.", "zh": "计划失败不是你的错。", "source": "造句"}, {"en": "The Fault in Our Stars", "zh": "《星运里的错》——约翰·格林小说/电影（书名化自莎士比亚《凯撒》名句）。", "source": "小说/电影"}], "synonyms": [{"w": "blame", "ipa": "/bleɪm/", "note": "「责备/过失」，更强调归咎于某人的动作或结论，fault 是客观的过错本身。It's your fault（你的错）vs lay the blame on sb（把责任推给某人）——fault 是名词中性陈述，blame 带追责动作感。", "gloss": "责备；过失（强调归咎动作）"}, {"w": "flaw", "ipa": "/flɔː/", "note": "「缺陷/瑕疵」，在「缺点」义上与 fault 接近，但 flaw 更强调结构性或固有的缺陷（a flaw in the design），fault 更常指人的过失或道德责任。", "gloss": "缺陷，瑕疵（结构性固有缺陷）"}, {"w": "defect", "ipa": "/ˈdiːfekt/", "note": "「缺陷/故障」，与 flaw 相近，偏向产品/机械的客观缺陷（product defect 产品缺陷）；fault 在此义下常指电路故障（circuit fault）。", "gloss": "缺陷，故障（产品或机械）"}, {"w": "shortcoming", "ipa": "/ˈʃɔːtkʌmɪŋ/", "note": "「不足/短处」，比 fault 语气更温和，多指能力或表现上的不足，不含强烈道德指责。", "gloss": "不足，短处（语气温和）"}], "antonyms": [{"w": "merit", "note": "优点，与「缺点」义对立"}, {"w": "virtue", "note": "美德（针对道德意义上的过失）"}], "nuance": "fault（过错）和 flaw（缺陷）的关键差异：fault 通常涉及道德或责任归属（It's my fault 是我的错），flaw 强调客观结构上的不完美、不带道德评判（a character flaw 性格缺陷，描述性而非指责性）。", "core": "某处「裂开了、出了差错」——可以是人的过失、性格的裂缝，也可以是地层的断裂。", "senses": [{"gloss": "n. 过错，责任（道德或事故）", "logic": "词根 fallere（失误）最直接的体现：某人做错了事，该为后果承担责任。", "en": "The accident was entirely the other driver's fault.", "zh": "这场事故完全是对方司机的错。"}, {"gloss": "n. 缺点，缺陷（性格或产品）", "logic": "「失误」引申：某物或某人身上固有的不完美之处，是内在的裂缝。", "en": "Impatience is his greatest fault.", "zh": "急躁是他最大的缺点。"}, {"gloss": "n. 断层（地质学）", "logic": "「裂缝」的字面意义直接应用到地质：地壳中岩层断裂错位形成的裂缝。此义与词根「裂开」契合，地质术语用法是独立发展的结果。", "en": "The city sits on an active fault line.", "zh": "这座城市建在一条活跃的断层线上。"}, {"gloss": "n. 发球失误（网球）", "logic": "体育场景中「失误」义的专项应用：发球未落入有效区。", "en": "He served a double fault at the most critical moment.", "zh": "他在最关键的时刻出现了双误。"}], "derivatives": [{"w": "faulty", "gloss": "有缺陷的，有故障的"}, {"w": "at fault", "gloss": "有责任的，犯错的（固定搭配）"}, {"w": "default", "gloss": "违约；缺省；默认（de- + fault）"}, {"w": "fallacy", "gloss": "谬论，错误推理（同词根 fallere）"}]}, {"word": "haunt", "levels": ["六级", "托福"], "ipa": "/hɔːnt/", "subgroup": "core", "meaning": "v.（鬼魂）出没；（记忆）萦绕，困扰  n. 常去之地", "etymology": "古法语 hanter「常去、频繁光顾」。鬼魂『常来』某地 → 闹鬼；引申指人常去的地方。", "roots": [{"part": "haunt (hanter)", "meaning": "频繁光顾"}], "phonetics": "h + au /ɔː/ + nt，与 launch 的 au 同音。", "examples": [{"en": "The old house is said to be haunted.", "zh": "据说那座老宅闹鬼。", "source": "造句"}, {"en": "one's old haunts", "zh": "『某人常去的老地方』——名词义地道用法。", "source": "高频搭配"}], "synonyms": [{"w": "obsess", "ipa": "/əbˈses/", "note": "「使着迷/萦绕」，在「不断困扰」义上与 haunt 最接近，但 obsess 更强调心理执念，haunt 带有鬼魅般挥之不去的意境。be haunted by memories vs be obsessed with the past。", "gloss": "使着迷，萦绕（强调心理执念）"}, {"w": "torment", "ipa": "/ˈtɔːrment/", "note": "「折磨」，比 haunt 程度更强烈，含有主动施加痛苦的意味；haunt 更偏被动地、幽灵般地萦绕。", "gloss": "折磨（程度更强，主动施痛）"}, {"w": "frequent", "ipa": "/ˈfriːkwənt/", "note": "动词「常去」，对应 haunt 的名词义（常去之地）；haunt 作动词「常去」时与 frequent 同义，但 haunt 带有神秘或依恋色彩。", "gloss": "常去，时常出现在（动词，较中性）"}], "antonyms": [{"w": "forget", "note": "忘却（针对「记忆萦绕」义）"}], "nuance": "haunt 和 obsess 在「萦绕」义上接近，但语气氛围截然不同：haunt 带鬼魅意象，强调被动地被过去「纠缠」（haunted by guilt 愧疚萦绕心头），obsess 强调主动陷入执念（obsessed with perfection 痴迷于完美）。", "core": "像鬼魂一样不断「回来」——不停造访、挥之不去的存在感。", "senses": [{"gloss": "v.（鬼魂）出没，闹鬼", "logic": "词源「频繁光顾」的字面延伸：鬼魂反复回到某地，是「常来」的超自然化。", "en": "Locals believe the abandoned mansion is haunted by a former owner.", "zh": "当地人相信那座废弃宅院里住着前任主人的鬼魂。"}, {"gloss": "v.（记忆或情绪）萦绕，困扰", "logic": "「不停回来」引申到心理层面：某段往事或愧疚像鬼魂一样反复出现，无法摆脱。", "en": "The memory of that mistake has haunted him for years.", "zh": "那次错误的记忆多年来一直萦绕着他。"}, {"gloss": "n. 常去之处，常混之地", "logic": "「频繁光顾」的名词化：某人经常出没的场所。源自词源最原始的「频繁造访」义。", "en": "The old cafe is one of his favourite haunts.", "zh": "那家老咖啡馆是他最常去的地方之一。"}], "derivatives": [{"w": "haunted", "gloss": "（场所）闹鬼的；（人）被困扰的"}, {"w": "haunting", "gloss": "萦绕心头的，难以忘怀的（常作形容词）"}, {"w": "hauntingly", "gloss": "令人难以忘怀地"}]}, {"word": "haul", "levels": ["六级", "托福"], "ipa": "/hɔːl/", "subgroup": "core", "meaning": "v. （用力）拖，拉  n. 拖运；一次获得的大量东西", "etymology": "古法语 haler「拉、拽」，与 hale 同源。用力『拖拽』。", "roots": [{"part": "haul (haler)", "meaning": "拖、拉"}], "phonetics": "h + au /ɔː/ + l，与 fault、vault 同韵。", "examples": [{"en": "They hauled the boat up onto the beach.", "zh": "他们把船拖上了沙滩。", "source": "造句"}, {"en": "the long haul", "zh": "『长期的艰苦努力』——地道习语（in it for the long haul）。", "source": "习语"}], "synonyms": [{"w": "drag", "ipa": "/dræɡ/", "note": "「拖/拽」，与 haul 最接近，但 drag 强调摩擦感和费力，haul 更强调用力拉动较重的物体（尤其有距离感）。drag a chair vs haul cargo（运货）。", "gloss": "拖，拽（强调摩擦感）"}, {"w": "tug", "ipa": "/tʌɡ/", "note": "「猛拉/拖拉」，强调短促有力的拉拽动作；haul 更强调持续用力拉动，tug 可以是一下子的动作。a tug of war（拔河）", "gloss": "猛拉，拖拉（短促有力的一拽）"}, {"w": "lug", "ipa": "/lʌɡ/", "note": "「费力搬运」，口语词，强调又重又笨拙地搬东西；haul 可以用工具/机械，lug 通常是徒手费力地搬。lug a suitcase（费力拖着行李箱）", "gloss": "费力搬运（徒手，笨重）"}, {"w": "transport", "ipa": "/ˈtrænspɔːrt/", "note": "「运输」，名词/动词义对应 haul 的「拖运」义，但 transport 是中性正式词，haul 偏口语且强调费力感。freight transport vs long-haul trucking。", "gloss": "运输（中性正式词）"}], "antonyms": [{"w": "push", "note": "推（与拉相对）"}, {"w": "release", "note": "松开/放下"}], "nuance": "haul、drag、tug 都是「拉」，区别在动作特征：tug 是短促猛拉（一下），drag 是拖着走（摩擦感强），haul 是用力搬运大件（距离感+费力感）。long-haul flight（长途航班）是固定搭配，drag 和 tug 无此用法。", "core": "用持续的力气把重物「拉动」——费劲、有距离感的搬运。", "senses": [{"gloss": "v.（用力）拖，拉，搬运", "logic": "词源「拉、拽」的直接体现：通过持续施力移动较重的物体，强调费力感和距离感。", "en": "The fishermen hauled the nets onto the deck.", "zh": "渔民们把渔网拖上了甲板。"}, {"gloss": "n. 拖运，搬运（过程或距离）", "logic": "动词名词化，指「拉这件事」本身或拉的距离，long haul（长途）是固定搭配。", "en": "Transporting goods across the desert is a long haul.", "zh": "穿越沙漠运货是一段漫长的旅程。"}, {"gloss": "n. 一次获得的大量东西（战利品或收获）", "logic": "「拉上来的东西」引申为一次性得到的大量收获——渔网拉上来满满的鱼，引申到任何丰厚收获。", "en": "Police seized a massive haul of counterfeit goods.", "zh": "警方查获了大量假冒商品。"}], "derivatives": [{"w": "haulage", "gloss": "货物运输（行业）；运费"}, {"w": "hauler", "gloss": "货运司机；运输公司"}, {"w": "long-haul", "gloss": "长途的；长期的（形容词）"}, {"w": "overhaul", "gloss": "全面检修；彻底改革"}]}, {"word": "vault", "levels": ["六级", "托福"], "ipa": "/vɔːlt/", "subgroup": "core", "meaning": "n. 金库，保险库；拱顶  v. 撑跳，腾跃", "etymology": "两义同拼：拱顶义来自拉丁 volvere「转、卷」（拱形是弯卷的）；腾跃义来自古法语 volter「翻腾」（同 somersault 翻筋斗）。", "roots": [{"part": "vault (volvere/volter)", "meaning": "弯卷（拱顶）/ 翻腾（跳跃）"}], "phonetics": "v + au /ɔː/ + lt，与 fault 同韵。", "examples": [{"en": "The gold is kept in an underground vault.", "zh": "黄金存放在地下金库里。", "source": "造句"}, {"en": "a bank vault / pole vault", "zh": "『银行金库 / 撑竿跳』——两义高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "safe", "ipa": "/seɪf/", "note": "「保险箱」，比 vault 小，是个人用的；vault 是大型机构金库，safe 是家用/办公室用的小型保险箱。a bank vault vs a wall safe。", "gloss": "保险箱（小型，个人用）"}, {"w": "strongroom", "ipa": "/ˈstrɒŋruːm/", "note": "「保险室/金库」，与 vault 义接近，指专门加固的房间用于存放贵重物品，比 vault 更强调整个房间，vault 有时也指独立的柜体。", "gloss": "保险室，加固库房"}, {"w": "leap", "ipa": "/liːp/", "note": "「跳跃」，在「腾跃」义上与 vault 接近，但 leap 是普通跳跃，vault 特指用手撑或借助撑竿的翻越。vault over a fence（撑手翻越栅栏）vs leap over（跳过）。", "gloss": "跳跃（自由跳，无借力动作）"}, {"w": "arch", "ipa": "/ɑːrtʃ/", "note": "「拱形结构」，对应 vault 的建筑义（拱顶），但 arch 是弯曲的单一弧线，vault 是三维的穹顶空间。", "gloss": "拱形结构（二维弧线，非三维穹顶）"}], "nuance": "vault 一词三义（金库、拱顶、撑跳），互相无反义词。金库义：vault（大型机构）vs safe（个人用小箱）；跳跃义：vault 必须有借力动作（手撑、撑竿），leap/jump 是自由跳跃，这是体操/田径中的专业区分。", "core": "「弯卷」的形状与动作——拱形的空间和翻腾的身体，两义来自不同词源，在拼写上汇合。", "senses": [{"gloss": "n. 金库，保险库", "logic": "拱形的地下房间（词根 volvere「弯卷」）→ 用拱顶建造的加固密室 → 储存贵重物品的专用空间。", "en": "The bank's vault is reinforced with two feet of steel-reinforced concrete.", "zh": "银行金库由两英尺厚的钢筋混凝土加固。"}, {"gloss": "n. 拱顶，穹顶（建筑）", "logic": "「弯卷」词根最直接的建筑义：弯曲成拱形的顶部结构。", "en": "The cathedral's painted vault soared forty metres overhead.", "zh": "大教堂绘满壁画的拱顶高耸于四十米之上。"}, {"gloss": "v. 撑跳，腾跃（借助手或撑竿）", "logic": "来自另一词源 volter（翻腾）：借助外力翻越障碍。与「拱顶」义的词源不同，属历史上的同形异源汇合，如实标注。", "en": "The athlete vaulted over the fence without breaking stride.", "zh": "那名运动员不减速地一撑手就翻过了栅栏。"}], "derivatives": [{"w": "pole vault", "gloss": "撑竿跳（田径项目）"}, {"w": "vaulted", "gloss": "有拱顶的（建筑形容词）"}, {"w": "vaulting", "gloss": "拱形结构；腾跃（名词或形容词）"}, {"w": "revolve", "gloss": "旋转（同词根 volvere）"}]}, {"word": "assault", "levels": ["六级", "托福"], "ipa": "/əˈsɔːlt/", "subgroup": "core", "meaning": "n./v. 攻击，袭击；侵犯", "etymology": "拉丁语 assaltus = ad-(朝) + saltare(跳)——『扑跳向对方』。与 somersault、salient(突出的) 同根。", "roots": [{"part": "as- (ad-)", "meaning": "朝、向"}, {"part": "-sault (saltare)", "meaning": "跳、扑"}], "phonetics": "重音在后 as-SAULT，-sault = /sɔːlt/。", "examples": [{"en": "He was charged with assault after the fight.", "zh": "斗殴之后他被控故意伤害。", "source": "造句"}, {"en": "assault and battery", "zh": "『殴打伤害（威胁+实际动手）』——英美法律术语。", "source": "法律术语"}], "synonyms": [{"w": "attack", "ipa": "/əˈtæk/", "note": "「攻击」，最通用的词，涵盖物理攻击、网络攻击、言语攻击；assault 更正式，尤其在法律语境中特指对人身的非法攻击。", "gloss": "攻击（最通用，涵盖多种形式）"}, {"w": "battery", "ipa": "/ˈbætri/", "note": "法律术语「殴打伤害（实际动手）」，常与 assault 配对：assault是威胁或企图攻击，battery是真正动手打了。assault and battery 是固定法律短语。", "gloss": "殴打伤害（法律术语，实际动手）"}, {"w": "raid", "ipa": "/reɪd/", "note": "「突袭/搜查」，军事或执法语境；assault 多指对人的直接暴力，raid 更强调突然行动（police raid 警察突袭）。", "gloss": "突袭，搜查（突然行动）"}, {"w": "offensive", "ipa": "/əˈfensɪv/", "note": "「进攻/攻势」，军事用词，指有组织的大规模攻击行动；assault 可指单次攻击，offensive 是战略层面的攻势。a military offensive（军事攻势）", "gloss": "进攻，攻势（军事，大规模）"}], "antonyms": [{"w": "defense", "note": "防御"}, {"w": "retreat", "note": "撤退"}], "nuance": "法律语境中 assault 和 battery 有精确区分：assault 是让人产生被攻击恐惧的威胁行为（不一定动手），battery 是实际身体接触攻击。日常和媒体语境中 assault 包含两者，但在英美刑法中两者是独立罪名。", "core": "「扑跳向对方」——身体或力量朝目标猛然扑去，是主动出击的瞬间。", "senses": [{"gloss": "n./v. 攻击，袭击（人身）", "logic": "词源「扑跳向对方」的直接体现：对他人施加的非法身体攻击，核心且最常用义。", "en": "He was convicted of assault after attacking a fellow passenger.", "zh": "他因袭击同车旅客而被定罪。"}, {"gloss": "n./v. 强力进攻，攻势（军事）", "logic": "「扑向对方」的规模放大：有组织地向敌方阵地发动冲击，是军事术语。", "en": "The regiment launched a pre-dawn assault on the enemy position.", "zh": "该团在黎明前对敌方阵地发动了突袭。"}, {"gloss": "n. 猛烈冲击，强力作用（比喻义）", "logic": "「扑击」引申到非物理领域：感官、情绪、观点等的强力冲击。", "en": "The noise was an assault on the ears.", "zh": "那噪音简直是对耳朵的一种折磨。"}], "derivatives": [{"w": "assault rifle", "gloss": "突击步枪"}, {"w": "assailant", "gloss": "袭击者，行凶者"}, {"w": "somersault", "gloss": "翻筋斗（同词根 saltare「跳」）"}, {"w": "sexual assault", "gloss": "性侵犯（固定法律短语）"}]}, {"word": "exhaust", "levels": ["六级", "托福"], "ipa": "/ɪɡˈzɔːst/", "subgroup": "core", "meaning": "v. 使精疲力竭；耗尽；排出（废气）  n. 废气；排气装置", "etymology": "拉丁语 exhaurire「抽干」= ex-(出) + haurire(汲水)。把水/力气全『抽出去』→ 耗尽、力竭。", "roots": [{"part": "ex-", "meaning": "出、彻底"}, {"part": "-haust (haurire)", "meaning": "汲取、抽出"}], "phonetics": "重音在后 ex-HAUST，-haust = /zɔːst/（x 读 /ɡz/，h 不发音）。", "examples": [{"en": "The long hike completely exhausted us.", "zh": "长途徒步把我们累垮了。", "source": "造句"}, {"en": "exhaust fumes", "zh": "『（汽车）尾气』——环保话题高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "deplete", "ipa": "/dɪˈpliːt/", "note": "「耗尽（资源/储量）」，与 exhaust 在「消耗殆尽」义上最接近，但 deplete 更常用于资源、矿藏、能量储备（deplete oil reserves），exhaust 可用于人的精力（exhausted people）。", "gloss": "耗尽（资源或储量，可量化）"}, {"w": "drain", "ipa": "/dreɪn/", "note": "「耗尽/抽干」，比 exhaust 更强调持续缓慢的消耗过程；exhaust 更强调彻底耗尽的终态。drain one's energy（持续消耗精力）vs exhaust one's patience（耗尽耐心——彻底没了）。", "gloss": "耗尽，抽干（持续缓慢消耗）"}, {"w": "fatigue", "ipa": "/fəˈtiːɡ/", "note": "「使疲劳」，在「使精疲力竭」义上与 exhaust 接近，但 fatigue 更常作名词使用，exhaust 作动词更自然。metal fatigue（金属疲劳）。", "gloss": "使疲劳（程度较轻，多作名词）"}, {"w": "tire", "ipa": "/ˈtaɪər/", "note": "「使疲倦」，比 exhaust 程度轻，exhaust 意味着完全力竭，tire 只是感到疲倦。I'm tired（我累了）vs I'm exhausted（我累垮了）——程度差一个档。", "gloss": "使疲倦（程度轻于 exhaust）"}], "antonyms": [{"w": "replenish", "note": "补充（消耗的资源）"}, {"w": "energize", "note": "使精力充沛"}, {"w": "refresh", "note": "使恢复精神"}], "nuance": "exhaust 与 tire/fatigue 的程度差异显著：tired（有点累）< fatigued（疲劳）< exhausted（完全力竭）。exhaust 和 deplete 在「耗尽」义上区别：exhaust 可用于人（be exhausted）和资源（exhaust resources），deplete 通常只用于可量化的资源（deplete reserves）。", "core": "把里面的东西「全部抽出来」——彻底清空，不留余地。", "senses": [{"gloss": "v. 使精疲力竭", "logic": "词根「抽干」引申：把人的精力、体力全部抽光，一点不剩。", "en": "Three sleepless nights had completely exhausted her.", "zh": "三个不眠之夜彻底把她榨干了。"}, {"gloss": "v. 耗尽（资源或选项）", "logic": "「抽干」直接用于可量化资源：某种资源或可能性被彻底用完。", "en": "They had exhausted all diplomatic options before resorting to sanctions.", "zh": "在诉诸制裁之前，他们已用尽了一切外交选项。"}, {"gloss": "v. 排出（废气），使气体溢出", "logic": "「向外抽出」的字面义：将燃烧产生的气体从内部排出，是机械工程义。", "en": "Fumes are exhausted through a pipe at the back of the engine.", "zh": "废气通过发动机后部的管道排出。"}, {"gloss": "n. 废气；排气系统", "logic": "动词「排出」名词化：指排出的气体本身或排气装置。", "en": "The car's exhaust filled the garage with toxic fumes.", "zh": "汽车尾气使车库充满了有毒气体。"}], "derivatives": [{"w": "exhausted", "gloss": "精疲力竭的；耗尽的"}, {"w": "exhaustion", "gloss": "精疲力竭；耗尽"}, {"w": "exhaustive", "gloss": "详尽的，彻底的（穷举式的）"}, {"w": "inexhaustible", "gloss": "用之不竭的，无穷无尽的"}]}, {"word": "fraud", "levels": ["六级", "托福"], "ipa": "/frɔːd/", "subgroup": "core", "meaning": "n. 欺诈，骗局；骗子", "etymology": "拉丁语 fraus / fraudem「欺骗」。带欺骗性的行为或人。", "roots": [{"part": "fraud (fraus)", "meaning": "欺骗"}], "phonetics": "fr- 连缀 + au /ɔː/ + d。", "examples": [{"en": "He was arrested for credit-card fraud.", "zh": "他因信用卡诈骗被捕。", "source": "造句"}, {"en": "a fraud alert", "zh": "『欺诈警报』——银行、金融高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "deception", "ipa": "/dɪˈsepʃn/", "note": "「欺骗行为」，比 fraud 范围更广，欺骗不一定违法；fraud 特指以谋取钱财/利益为目的的有组织欺诈行为，通常构成犯罪。", "gloss": "欺骗行为（范围更广，不必违法）"}, {"w": "scam", "ipa": "/skæm/", "note": "「骗局/诈骗」，口语词，与 fraud 最接近的日常词，不强调法律定义；fraud 是正式法律术语。a phone scam（电话诈骗）vs credit-card fraud（信用卡欺诈）。", "gloss": "骗局，诈骗（口语）"}, {"w": "swindle", "ipa": "/ˈswɪndl/", "note": "「诈取/行骗」，动词和名词，侧重通过欺骗手段非法取财，与 fraud 义相近但 swindle 更强调行骗手法的巧妙。", "gloss": "诈取，行骗（强调手法巧妙）"}, {"w": "deceit", "ipa": "/dɪˈsiːt/", "note": "「欺骗/虚伪」，比 fraud 更偏向道德层面的欺骗性，不一定涉及金钱；fraud 几乎总与经济利益挂钩。", "gloss": "欺骗，虚伪（偏道德层面）"}], "antonyms": [{"w": "honesty", "note": "诚实"}, {"w": "integrity", "note": "廉洁/正直"}], "nuance": "fraud 和 scam 都是「诈骗」，但使用场合不同：fraud 是法律正式术语（wire fraud 电信诈骗，insurance fraud 保险欺诈），scam 是口语非正式词（phone scam, lottery scam）。新闻报道两者混用，但法院文件只用 fraud。", "core": "以谋取利益为目的的「欺骗」——蓄意制造虚假，让对方损失。", "senses": [{"gloss": "n. 欺诈，诈骗（行为或犯罪）", "logic": "拉丁语 fraus「欺骗」的直接体现：以虚假手段非法骗取财物或利益，通常构成刑事罪行。", "en": "He faces up to ten years in prison on charges of wire fraud.", "zh": "他面临长达十年的监禁，被控电信诈骗罪。"}, {"gloss": "n. 骗局，虚假之物", "logic": "从「欺诈行为」延伸到「整件事本身是假的」：某个声称真实的东西实为虚假。", "en": "The investment scheme turned out to be a massive fraud.", "zh": "这个投资计划最终被证实是一场大骗局。"}, {"gloss": "n. 骗子（口语）", "logic": "「欺诈的人」——从行为到人的转移，指惯于欺骗或自我标榜虚假的人。", "en": "He presented himself as a doctor, but he was a complete fraud.", "zh": "他自称是医生，但其实是个彻头彻尾的骗子。"}], "derivatives": [{"w": "fraudulent", "gloss": "欺诈性的，欺骗的"}, {"w": "defraud", "gloss": "欺诈，骗取（de- + fraud）"}, {"w": "fraudster", "gloss": "骗子（口语）"}, {"w": "fraudulently", "gloss": "以欺诈方式"}]}, {"word": "caution", "levels": ["六级"], "ipa": "/ˈkɔːʃn/", "subgroup": "core", "meaning": "n. 谨慎，小心；警告  v. 告诫", "etymology": "拉丁语 cautio「谨慎」，来自 cavere「当心」——与 caveat(警告)、拉丁短语 cave canem(小心恶犬) 同根。", "roots": [{"part": "caut- (cavere)", "meaning": "当心、提防"}, {"part": "-ion", "meaning": "名词后缀"}], "phonetics": "重读首音节 CAU = /kɔː/ + tion /ʃn/。", "examples": [{"en": "Proceed with caution on the icy road.", "zh": "在结冰的路上要小心行驶。", "source": "造句"}, {"en": "throw caution to the wind", "zh": "『把谨慎抛到九霄云外、大胆一搏』——地道习语。", "source": "习语"}], "synonyms": [{"w": "prudence", "ipa": "/ˈpruːdns/", "note": "「审慎/明智」，比 caution 更强调经过深思熟虑后的谨慎决策，带有正面的智慧色彩；caution 更强调「小心避免危险」的防御姿态。financial prudence（财务审慎）。", "gloss": "审慎，深谋远虑（决策层面的智慧）"}, {"w": "warning", "ipa": "/ˈwɔːrnɪŋ/", "note": "「警告」，对应 caution 的动词义（告诫）；作为名词 warning 更强调对危险的正式警示，caution 偏谨慎态度。issue a warning（发出警告）vs exercise caution（保持谨慎）。", "gloss": "警告（正式的危险提示）"}, {"w": "care", "ipa": "/ker/", "note": "「小心/谨慎」，最日常的近义词，take care（小心）= proceed with caution（谨慎前行），但 care 语气更温和，caution 更正式。", "gloss": "小心，谨慎（最日常、语气温和）"}, {"w": "discretion", "ipa": "/dɪˈskreʃn/", "note": "「谨慎/自行裁量」，与 caution 在「小心行事」义上相近，但 discretion 更强调在敏感情况下保持低调或自行判断，caution 更强调警惕危险。use discretion（自行斟酌）。", "gloss": "谨慎，自行裁量（敏感情境中的低调）"}], "antonyms": [{"w": "recklessness", "note": "鲁莽，不顾后果"}, {"w": "carelessness", "note": "粗心大意"}], "nuance": "caution 和 prudence 都是「谨慎」，但侧重点不同：caution 强调「对危险保持警惕」（proceed with caution 小心行进），prudence 强调「做决策时的深谋远虑」（financial prudence 理财谨慎）。caution 是即时的防御，prudence 是长远的智慧。", "core": "「当心」——感知到潜在危险后的主动提防与告诫。", "senses": [{"gloss": "n. 谨慎，小心（态度）", "logic": "词根 cavere（当心）的核心名词义：面对不确定或危险时保持警觉的心态。", "en": "You should approach this investment with extreme caution.", "zh": "你应该对这项投资保持高度谨慎。"}, {"gloss": "n. 警告，告诫", "logic": "「当心」外化为对他人的语言提示：把感知到的危险告知别人。", "en": "The referee issued a caution to the player for dangerous play.", "zh": "裁判因危险动作向那名球员出示了警告。"}, {"gloss": "v. 告诫，警告（某人）", "logic": "名词直接用作动词：主动向某人发出「当心」的提示。", "en": "Her doctor cautioned her against strenuous exercise.", "zh": "她的医生告诫她不要进行剧烈运动。"}], "derivatives": [{"w": "cautious", "gloss": "谨慎的，小心的（形容词）"}, {"w": "cautiously", "gloss": "谨慎地"}, {"w": "precaution", "gloss": "预防措施（pre- + caution）"}, {"w": "caveat", "gloss": "警告；附加说明（同词根 cavere）"}]}, {"word": "cautious", "levels": ["六级", "托福"], "ipa": "/ˈkɔːʃəs/", "subgroup": "core", "meaning": "adj. 谨慎的，小心的", "etymology": "caution 的形容词，同根 cavere(当心)。", "roots": [{"part": "caut- (cavere)", "meaning": "当心"}, {"part": "-ious", "meaning": "形容词后缀"}], "phonetics": "重读首音节 CAU = /kɔː/ + tious /ʃəs/。", "examples": [{"en": "Banks are being cautious about lending money.", "zh": "银行在放贷方面变得谨慎。", "source": "造句"}, {"en": "cautiously optimistic", "zh": "『谨慎乐观』——新闻、财经高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "careful", "ipa": "/ˈkerfl/", "note": "最常见的近义词，语气比 cautious 更温和、更口语；cautious 常带一点保守、不愿冒险的含义，careful 只是「仔细小心」不含此意。Be careful!（小心！）vs He is cautious about investing（他对投资很谨慎——偏保守）。", "gloss": "仔细的，小心的（做事仔细，较口语）"}, {"w": "wary", "ipa": "/ˈweri/", "note": "「警惕的/对…持怀疑」，比 cautious 更强调戒备心，常含对特定事物的不信任；cautious 更中性。be wary of strangers（对陌生人保持警惕）。", "gloss": "警惕的，对某事持戒备（含不信任）"}, {"w": "prudent", "ipa": "/ˈpruːdnt/", "note": "「审慎的/明智的」，比 cautious 更正面，强调决策上的深思熟虑；cautious 有时含「过于保守」的轻微贬义，prudent 几乎总是褒义。a prudent decision（明智的决定）。", "gloss": "审慎的，明智的（决策层面，几乎总褒义）"}, {"w": "tentative", "ipa": "/ˈtentətɪv/", "note": "「试探性的/不确定的」，与 cautious 在行为上接近，但 tentative 更强调不确定、犹豫尝试，cautious 强调刻意保持谨慎。a tentative step（试探性的一步）。", "gloss": "试探性的，不确定的（强调犹豫）"}], "antonyms": [{"w": "reckless", "note": "鲁莽的"}, {"w": "bold", "note": "大胆的"}, {"w": "impulsive", "note": "冲动的"}], "nuance": "cautious 和 careful 最易混淆：careful 是「做事仔细」（be careful not to spill），cautious 是「对风险保持警惕」（cautious about making promises——不轻易承诺）。cautious 带有主动回避风险的倾向，careful 只是执行时的细心度。", "core": "骨子里有「当心」的雷达——对潜在风险保持持续警觉的性格倾向。", "senses": [{"gloss": "adj. 谨慎的，小心的", "logic": "caution 的形容词形式，描述对风险保持警惕的行为或性格，核心且唯一的常用义。", "en": "She is cautious about making promises she cannot keep.", "zh": "她对自己做不到的承诺向来谨慎。"}], "derivatives": [{"w": "cautiously", "gloss": "谨慎地"}, {"w": "caution", "gloss": "谨慎；警告（名词或动词）"}, {"w": "overcautious", "gloss": "过于谨慎的"}, {"w": "incautious", "gloss": "不谨慎的，鲁莽的"}]}, {"word": "naughty", "levels": ["六级"], "ipa": "/ˈnɔːti/", "subgroup": "core", "meaning": "adj. 顽皮的，淘气的；不雅的", "etymology": "来自 naught「无、零」（古英语 nawiht = na 无 + wiht 物）。本义『一无所有的』→『没出息的、坏的』→ 如今多指孩子调皮。", "roots": [{"part": "naught", "meaning": "无、零"}, {"part": "-y", "meaning": "形容词后缀"}], "phonetics": "重读 NAU = /nɔː/ + ghty /ti/（gh 不发音）。", "examples": [{"en": "The naughty boy hid his sister's shoes.", "zh": "那个淘气的男孩把姐姐的鞋藏了起来。", "source": "造句"}, {"en": "naughty or nice", "zh": "『淘气还是乖』——圣诞老人分发礼物前给孩子分类的说法。", "source": "文化（圣诞）"}], "synonyms": [{"w": "mischievous", "ipa": "/ˈmɪstʃɪvəs/", "note": "「淘气的/恶作剧的」，与 naughty 最接近，但 mischievous 更强调爱搞恶作剧、带有调皮的幽默感，naughty 更直接指不听话、不乖。a mischievous grin（淘气的笑容）。", "gloss": "爱恶作剧的，调皮捣蛋的（带幽默感）"}, {"w": "disobedient", "ipa": "/ˌdɪsəˈbiːdiənt/", "note": "「不服从的/不听话的」，比 naughty 更正式，强调违抗权威；naughty 更口语，多用于描述小孩调皮。", "gloss": "不听话的，不服从的（正式）"}, {"w": "unruly", "ipa": "/ʌnˈruːli/", "note": "「难以管教的/无法无天的」，比 naughty 程度更强，强调持续性地难以控制；naughty 通常是一时的调皮行为。an unruly class（难以管教的班级）。", "gloss": "难以管教的（程度更强，持续性）"}], "antonyms": [{"w": "well-behaved", "note": "行为端正的，听话的"}, {"w": "obedient", "note": "顺从的，听话的"}], "nuance": "naughty 和 mischievous 都形容淘气，但 mischievous 带有「调皮捣蛋但无恶意」的俏皮感（a mischievous child who hides toys），naughty 更强调「做了不该做的事，让大人不高兴」。naughty 还可用于成人间带轻微性暗示的「不正经」义（naughty joke），mischievous 没有此义。", "core": "原本「一无所有」进而「没出息的」，如今特指孩子让大人头疼的调皮行为。", "senses": [{"gloss": "adj. 顽皮的，淘气的（孩子）", "logic": "从「没出息」的原始贬义弱化演变：现代英语中主要用于描述孩子不听话、做了不该做的事。", "en": "The naughty puppy chewed through the sofa cushions.", "zh": "那只淘气的小狗把沙发垫子咬得稀烂。"}, {"gloss": "adj. 不雅的，带性暗示的（轻微）", "logic": "「不乖、越界」引申到成人场景：轻度违反礼节或带性暗示的行为，带有半开玩笑的语气。", "en": "He told a naughty joke that made everyone blush.", "zh": "他讲了个不雅的笑话，让所有人都红了脸。"}], "derivatives": [{"w": "naughtily", "gloss": "淘气地，顽皮地"}, {"w": "naughtiness", "gloss": "顽皮，淘气"}, {"w": "naught", "gloss": "零；一无所有（词源母体）"}]}, {"word": "nautical", "levels": ["六级", "GRE拓展"], "ipa": "/ˈnɔːtɪkl/", "subgroup": "core", "meaning": "adj. 航海的，船员的", "etymology": "希腊语 nautikos，来自 nautes(水手)、naus(船)——同根还有 navy(海军)、nautilus(鹦鹉螺)、以及 nausea(晕船→恶心)！", "roots": [{"part": "naut- (nautes)", "meaning": "水手、航海"}, {"part": "-ical", "meaning": "形容词后缀"}], "phonetics": "重读 NAU = /nɔː/ + tical /tɪkl/。", "examples": [{"en": "The ship travelled twenty nautical miles.", "zh": "这艘船航行了二十海里。", "source": "造句"}, {"en": "a nautical mile", "zh": "『一海里』——航海/航空高频术语。", "source": "高频搭配"}], "synonyms": [{"w": "maritime", "ipa": "/ˈmærɪtaɪm/", "note": "「海上的/海事的」，与 nautical 最接近，但 maritime 更强调与海洋相关的贸易、法律、文化（maritime law 海商法），nautical 更偏向航行技术和导航（nautical chart 海图）。", "gloss": "海上的，海事的（偏贸易、法律、文化）"}, {"w": "marine", "ipa": "/məˈriːn/", "note": "「海洋的/海军的」，比 nautical 范围更广，可指海洋生态（marine biology 海洋生物学）、海军（Marine Corps 海军陆战队）；nautical 专指航海活动。", "gloss": "海洋的，海军的（最宽泛）"}, {"w": "naval", "ipa": "/ˈneɪvl/", "note": "「海军的」，专指军事海军，与 nautical 有重叠但 naval 限于军事语境；nautical 是中性航海词，naval vessel（军舰）不同于 nautical equipment（航海设备）。", "gloss": "海军的（专指军事）"}], "antonyms": [{"w": "terrestrial", "note": "陆地的（对应海洋/航海）"}, {"w": "aerial", "note": "航空的（海vs空）"}], "nuance": "nautical、maritime、marine、naval 都与海相关，但层次不同：nautical 最专一，指航行技术（nautical mile 海里，nautical chart 海图）；maritime 指广义海事活动（贸易、法律）；marine 最宽，含海洋生态和海军两义；naval 专指军事海军。", "core": "和「在水上驾船」相关的一切——水手、航行、海洋技术的专属标签。", "senses": [{"gloss": "adj. 航海的，船员的", "logic": "希腊语 nautes（水手）的形容词，核心且唯一的常用义，修饰航行技术、设备、术语等。", "en": "A nautical chart shows water depths and potential hazards.", "zh": "航海图标注了水深和潜在的危险区域。"}], "derivatives": [{"w": "nautical mile", "gloss": "海里（1852 米，航海或航空单位）"}, {"w": "nautilus", "gloss": "鹦鹉螺（同词根，「船形贝壳」）"}, {"w": "nausea", "gloss": "恶心，晕船感（同词根，船→晕船）"}, {"w": "navy", "gloss": "海军（同词根 naus）"}]}, {"word": "aunt", "levels": ["基础"], "ipa": "/ænt/", "subgroup": "trap", "meaning": "n. 姑妈，姨妈，伯母，婶婶（父母的姐妹或其配偶）", "etymology": "拉丁语 amita「姑妈」，经古法语 ante 入英。虽拼 au，却读 /ænt/(美) 或 /ɑːnt/(英)，与 ant(蚂蚁) 同音或近音。", "roots": [{"part": "aunt (amita)", "meaning": "父母的姐妹"}], "phonetics": "陷阱！au 不读 /ɔː/：美音 /ænt/，英音 /ɑːnt/。", "examples": [{"en": "My aunt is coming to stay for the weekend.", "zh": "我姑妈周末要来住几天。", "source": "造句"}, {"en": "Aunt May", "zh": "『梅婶』——蜘蛛侠的至亲，英美家喻户晓。", "source": "文化（蜘蛛侠）"}], "synonyms": [{"w": "auntie", "ipa": "/ˈænti/", "note": "「阿姨/姑妈」的昵称形式，口语更亲昵，通常用于对话时称呼，aunt 则是正式描述。Auntie Mary（玛丽阿姨，直称呼）vs my aunt Mary（我姑妈玛丽，第三人称介绍）。", "gloss": "阿姨，姑妈（昵称形式，更口语）"}], "antonyms": [{"w": "uncle", "note": "叔叔/舅舅，对应的男性亲属称谓"}, {"w": "nephew", "note": "侄子/外甥（从侄辈看的关系对面）"}, {"w": "niece", "note": "侄女/外甥女"}], "nuance": "aunt 是具体亲属关系名词，真正近义词只有 auntie（昵称形式）。英美发音差异：美音 /ænt/（与蚂蚁 ant 同音），英音 /ɑːnt/（更像汉语「安特」）。", "core": "父母一辈的女性亲属——家族网络中固定的女性称谓。", "senses": [{"gloss": "n. 姑妈，姨妈，伯母，婶婶", "logic": "拉丁语 amita（姑妈）的直接传承，是核心且唯一义，指父母的姐妹或其配偶的姐妹。", "en": "My aunt on my father's side lives in the countryside.", "zh": "我父亲那边的姑妈住在乡下。"}], "derivatives": [{"w": "auntie", "gloss": "阿姨，姑妈（亲昵称呼）"}, {"w": "great-aunt", "gloss": "伯祖母，姨祖母（祖父母辈）"}]}, {"word": "laugh", "levels": ["基础"], "ipa": "/læf/", "subgroup": "trap", "meaning": "v./n. 笑，大笑", "etymology": "古英语 hlæhhan（拟声词，模仿笑声）。au 读 /æ/(美)、gh 读 /f/——两处都不规则，是发音双陷阱。", "roots": [{"part": "laugh (hlæhhan)", "meaning": "笑（拟声）"}], "phonetics": "陷阱！读 /læf/：au = /æ/，gh = /f/（同 laughter、draught）。", "examples": [{"en": "She burst out laughing at his joke.", "zh": "她被他的笑话逗得放声大笑。", "source": "造句"}, {"en": "He who laughs last laughs longest.", "zh": "『笑到最后的人笑得最好。』——英语谚语。", "source": "谚语"}], "synonyms": [{"w": "chuckle", "ipa": "/ˈtʃʌkl/", "note": "「轻声笑/暗笑」，比 laugh 更轻、更低调，通常表示内心觉得有趣；laugh 可以是出声大笑，chuckle 通常是克制的笑。He chuckled to himself（他独自会心一笑）。", "gloss": "轻声笑，会心一笑（安静克制）"}, {"w": "giggle", "ipa": "/ˈɡɪɡl/", "note": "「咯咯笑」，轻巧、高频的笑声，多形容女性或孩子因紧张或好玩而发出；laugh 是中性词，giggle 带有稚嫩或轻浮的色彩。", "gloss": "咯咯笑（轻巧高频，常形容女性或孩子）"}, {"w": "cheer", "ipa": "/tʃɪr/", "note": "「欢呼/振奋」，与 laugh 同属正面情绪的表达，但 cheer 更强调集体欢呼或精神振奋，laugh 专指发笑。", "gloss": "欢呼，振奋（偏集体欢呼，不专指发笑）"}, {"w": "snicker", "ipa": "/ˈsnɪkər/", "note": "「暗笑/窃笑」，通常含轻蔑或嘲弄意味；laugh 是中性的，snicker 带有贬义的嘲笑色彩。snicker at sb（暗中嘲笑某人）。", "gloss": "暗笑，窃笑（带轻蔑或嘲弄）"}], "antonyms": [{"w": "cry", "note": "哭泣"}, {"w": "weep", "note": "哭泣（更正式）"}, {"w": "sob", "note": "啜泣"}], "nuance": "laugh 和 chuckle 最易混淆：laugh 是可大可小的发笑（可以大声、出声），chuckle 是安静、克制、自得其乐的轻笑。laugh at sb（嘲笑某人）是贬义，laugh with sb（一起笑）是中性；这个搭配区分很重要。", "core": "因愉悦或有趣而发出的声音——笑声是情绪的声音出口，由来已久的拟声词。", "senses": [{"gloss": "v. 笑，大笑", "logic": "古英语拟声词，直接模拟笑声，是核心且最基本的义项。", "en": "The whole class laughed when the teacher made a self-deprecating joke.", "zh": "老师自嘲了一句，全班哄堂大笑。"}, {"gloss": "n. 笑声，笑", "logic": "动词名词化，指笑这个动作或笑声本身。", "en": "Her laugh is instantly recognisable across the room.", "zh": "她的笑声在整个房间里一下子就能被认出来。"}, {"gloss": "n.（口语）有趣的事，好玩的人（英式）", "logic": "进一步引申：「让人发笑的东西」，在英式口语中 a laugh 指「好玩、有意思的事或人」。", "en": "Come on, it will be a laugh — you will enjoy it.", "zh": "来吧，肯定好玩的——你会喜欢的。"}], "derivatives": [{"w": "laughter", "gloss": "笑声，欢笑（不可数名词）"}, {"w": "laughable", "gloss": "可笑的，荒唐的"}, {"w": "laughingstock", "gloss": "笑柄，笑料"}, {"w": "laughter lines", "gloss": "笑纹，鱼尾纹"}]}, {"word": "gauge", "levels": ["六级", "托福"], "ipa": "/ɡeɪdʒ/", "subgroup": "trap", "meaning": "v. 估测，判断；测量  n. 测量仪表；标准，规格", "etymology": "古北法语 gauge「测量标准杆」。au 在这里读 /eɪ/，与 gage 同音——本组最反直觉的读音。", "roots": [{"part": "gauge", "meaning": "测量、量规"}], "phonetics": "陷阱！读 /ɡeɪdʒ/：au = /eɪ/，g 结尾读 /dʒ/。", "examples": [{"en": "It's hard to gauge how she'll react.", "zh": "很难判断她会作何反应。", "source": "造句"}, {"en": "a fuel gauge", "zh": "『油量表』——仪表义高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "measure", "ipa": "/ˈmeʒər/", "note": "「测量」，最通用的近义词；gauge 在测量义上与 measure 可互换，但 gauge 更强调用特定标准/仪器评估（gauge the depth 测量深度），measure 更宽泛。", "gloss": "测量（最通用）"}, {"w": "assess", "ipa": "/əˈses/", "note": "「评估/判断」，对应 gauge 的「估测/判断」义（gauge how she'll react = assess the situation），两者在判断义上高度相近；assess 更正式，gauge 更口语且隐含「估算」色彩。", "gloss": "评估，判断（综合判断过程）"}, {"w": "meter", "ipa": "/ˈmiːtər/", "note": "「仪表/计量器」，对应 gauge 的名词义（测量仪表）；a fuel gauge = a fuel meter，但在美式英语中 gauge 更常见于仪表义。", "gloss": "仪表，计量器（名词义）"}, {"w": "evaluate", "ipa": "/ɪˈvæljueɪt/", "note": "「评价/评估」，与 gauge 的判断义近似，但 evaluate 更强调系统性地评判价值或效果，gauge 更偏向粗略感知或读数。", "gloss": "评价，评估（系统性判断价值）"}], "nuance": "gauge 和 assess 都可表示「判断/估测」，差别在于：gauge 隐含「用某种标准/感知来读取数值」（gauge public opinion 测量民意），带有量化或感知的意象；assess 更强调综合判断的过程。It's hard to gauge（直觉性估测）vs We need to assess（需要评估分析）。", "core": "用某种「标准」来测量或读取——不论是仪器刻度还是凭直觉的估测。", "senses": [{"gloss": "v. 估测，判断（情形或反应）", "logic": "「用标准量一量」引申到主观判断：凭感知或观察来读取某种无形的量（如情绪、态度）。", "en": "It is difficult to gauge how the public will respond to the policy.", "zh": "很难判断公众会如何回应这项政策。"}, {"gloss": "v. 测量（物理量）", "logic": "词源核心义：用标准工具精确测定某个数值。", "en": "Engineers gauge the pressure inside the tank every hour.", "zh": "工程师每小时测量一次罐内压力。"}, {"gloss": "n. 测量仪表，量规", "logic": "「测量标准」名词化：具体的测量仪器，如燃油表、压力表。", "en": "The fuel gauge dropped to empty before they reached the next town.", "zh": "他们到达下一个城镇之前，油表就降到了空档。"}, {"gloss": "n. 规格，标准（铁路轨距或钢板厚度）", "logic": "「标准的量」引申到工业规格：铁路轨道宽度、钢板厚度等的标准化尺寸。", "en": "Standard gauge railway tracks are 1435 mm wide.", "zh": "标准轨距铁路轨道宽1435毫米。"}], "derivatives": [{"w": "rain gauge", "gloss": "雨量计"}, {"w": "pressure gauge", "gloss": "压力表"}, {"w": "narrow-gauge", "gloss": "窄轨的（铁路）"}, {"w": "broad-gauge", "gloss": "宽轨的（铁路）"}]}, {"word": "restaurant", "levels": ["六级"], "ipa": "/ˈrestrɒnt/", "subgroup": "trap", "meaning": "n. 餐馆，饭店", "etymology": "法语 restaurant「使恢复元气之物」，来自 restaurer(恢复)——与 restore 同根！一个『补充体力』的地方。au 因不重读而几乎读没了。", "roots": [{"part": "restaur- (restaurare)", "meaning": "恢复（与 restore 同根）"}, {"part": "-ant", "meaning": "词尾"}], "phonetics": "陷阱！au 弱化到几乎消失：/ˈrestrɒnt/，重音在首音节 RES。", "examples": [{"en": "They booked a table at a nice restaurant.", "zh": "他们在一家不错的餐厅订了位子。", "source": "造句"}, {"en": "a five-star restaurant", "zh": "『五星级餐厅』——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "diner", "ipa": "/ˈdaɪnər/", "note": "「（美式）小餐馆/路边餐厅」，通常指廉价、24小时营业、家庭式餐厅；restaurant 是通用词涵盖所有档次，diner 特指美国路边风格的平价餐厅。", "gloss": "（美式）平价路边餐馆"}, {"w": "eatery", "ipa": "/ˈiːtəri/", "note": "「餐馆/饭馆」（口语/新闻用词），比 restaurant 更口语，常出现在娱乐新闻或非正式报道中。a trendy eatery（时髦的小馆子）。", "gloss": "餐馆（口语或新闻用词）"}, {"w": "bistro", "ipa": "/ˈbiːstroʊ/", "note": "「小酒馆/法式小餐厅」，特指氛围轻松、菜单简单的欧式小餐馆；restaurant 无此文化特指。", "gloss": "法式小酒馆，轻松风小餐厅"}, {"w": "café", "ipa": "/kæˈfeɪ/", "note": "「咖啡馆/小餐馆」，比 restaurant 更轻便，以咖啡、轻食为主；两词有重叠但 restaurant 通常提供正式餐食。", "gloss": "咖啡馆，轻食小店"}], "nuance": "restaurant 是最宽泛的词，从路边摊到米其林星级都可用。档次向上：restaurant → fine dining restaurant。风格细分：diner（美式平价）、bistro（欧式轻松）、café（以饮品轻食为主）。专有名词类，无反义词。", "core": "「使人恢复元气」的地方——词源指补充体力，现在是任何付费用餐的场所。", "senses": [{"gloss": "n. 餐馆，饭店", "logic": "法语 restaurer（恢复）→ 最初指能补充体力的场所，现特指提供餐食服务并收费的商业场所，是核心且唯一义。", "en": "They booked the corner table at an Italian restaurant for their anniversary.", "zh": "他们为纪念日在一家意大利餐厅预订了角落的桌位。"}], "derivatives": [{"w": "restaurateur", "gloss": "餐馆老板（注意无 n，非 restauranteur）"}, {"w": "restore", "gloss": "恢复，修复（同词根）"}, {"w": "restoration", "gloss": "恢复，复原（同词根）"}]}, {"word": "authority", "levels": ["六级", "托福"], "ipa": "/əˈθɔːrəti/", "subgroup": "trap", "meaning": "n. 权威；权力；当局（复数 authorities）", "etymology": "拉丁语 auctoritas，来自 auctor(创始人，即 author)。与 author 同根，但因重音移到第二音节，开头的 au 弱读成 /ə/——正好和 author 形成对照。", "roots": [{"part": "auct- (augere)", "meaning": "使增长、权威"}, {"part": "-ity", "meaning": "名词后缀"}], "phonetics": "陷阱！au 不重读 → 弱读 /ə/：/əˈθɔːrəti/（重音在 -THOR-）。对照 author 的重读 /ɔː/。", "examples": [{"en": "The local authorities closed the road for repairs.", "zh": "当地政府封路施工。", "source": "造句"}, {"en": "abuse of authority", "zh": "『滥用职权』——高频搭配。", "source": "高频搭配"}], "synonyms": [{"w": "power", "ipa": "/ˈpaʊər/", "note": "「权力/力量」，与 authority 在「权力」义上最接近，但 power 更强调实际能力和影响力，authority 强调合法授权和认可的地位。have the authority to decide（有权决定）vs hold power（掌权）。", "gloss": "权力，影响力（实际能力，不必合法授权）"}, {"w": "jurisdiction", "ipa": "/ˌdʒʊərɪsˈdɪkʃn/", "note": "「司法权/管辖权」，比 authority 更专指法律/行政上的管辖范围；authority 更宽泛（可指专家权威），jurisdiction 专限于法律/行政领域。", "gloss": "管辖权，司法权（法律或行政范围）"}, {"w": "expertise", "ipa": "/ˌekspɜːrˈtiːz/", "note": "「专业知识/专长」，对应 authority 的「权威（专家身份）」义；authority 在此义上强调被认可的专家地位，expertise 强调实际掌握的专业技能。She is an authority on linguistics（她是语言学权威）vs her expertise in linguistics（她的语言学专长）。", "gloss": "专业知识，专长（实际掌握的技能）"}, {"w": "government", "ipa": "/ˈɡʌvərnmənt/", "note": "「政府/当局」，对应 authorities（复数）的「当局」义；the authorities（当局/官方）= government officials，但 authority 单数时指抽象权力。", "gloss": "政府，当局（对应复数 authorities 义）"}], "antonyms": [{"w": "subordination", "note": "服从/下级地位"}, {"w": "powerlessness", "note": "无权"}], "nuance": "authority 和 power 最易混淆：authority 是「合法授权」——被认可有权做某事（The manager has authority to approve），power 是「实际能力/影响力」——不一定合法授权（He has the power to influence decisions）。没有授权的 power 是未经认可的影响力，没有实力的 authority 是空头衔。", "core": "被认可的「权力」或「权威」——合法授权赋予的影响力与话语权。", "senses": [{"gloss": "n. 权力，权限（做某事的合法资格）", "logic": "来自 author「创始人、权威者」，词根 augere「使增长、壮大」→ 因地位壮大而获得的合法控制力。", "en": "Only the director has the authority to approve budget increases.", "zh": "只有总监有权批准预算增加。"}, {"gloss": "n. 权威，专家（某领域的公认权威）", "logic": "「被认可的权力」延伸到知识领域：在某领域有公认专业地位、话语被信任的人。", "en": "She is a leading authority on medieval European history.", "zh": "她是中世纪欧洲史领域的顶尖权威。"}, {"gloss": "n. 当局，官方机构（复数 authorities）", "logic": "「行使权力的实体」名词化为机构：政府部门、执法机关等有官方授权的组织。", "en": "The health authorities issued a public warning about the outbreak.", "zh": "卫生当局就疫情暴发向公众发出警告。"}, {"gloss": "n. 权威感，威信（气场）", "logic": "抽象义：某人自然散发出的、使人信服和服从的气质，不必依赖正式职务。", "en": "She spoke with such authority that no one questioned her decision.", "zh": "她说话时带着一种令人无从质疑的权威感。"}], "derivatives": [{"w": "authoritative", "gloss": "权威的，可信的；专横的"}, {"w": "authorize", "gloss": "授权，批准"}, {"w": "authorization", "gloss": "授权，批准书"}, {"w": "authoritarian", "gloss": "专制的，威权主义的"}]}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

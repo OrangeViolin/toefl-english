@@ -1,0 +1,1953 @@
+{
+  "id": "y",
+  "combo": "y·u",
+  "title": "/j/ 半元音",
+  "sound": "/j/",
+  "subtitle": "看起来像元音，发出来像辅音——/j/ 是英语最会变身的声音",
+  "intro": "/j/ 是半元音（semivowel）：舌前部靠近硬腭，气流受阻但不完全封闭，听起来像元音 /iː/ 的快速一闪。它藏在三种伪装下：最直白的是词首 y（yes、year，看见 y 就读 /j/）；最隐蔽的是 u（use、music——这个 u 不是光秃秃的 /uː/，前面加了 /j/ 变成 /juː/，rule 没有 /j/、use 有）；第三条路是 ew/eu（few、neutral——英式英语保留 /j/，美式部分已脱落但不影响拼写）。记住这三条路，你就能解释为什么 yes 和 use 的开头声音其实是同一个音位。",
+  "subgroups": [
+    {
+      "key": "y",
+      "tag": "y → /j/（词首）",
+      "label": "✅ y = /j/",
+      "desc": "词首 y 几乎 100% 读 /j/：嘴形先作 /iː/ 状，迅速滑向后面的元音，形成「滑音」。yes /jes/、year /jɪər/、yellow /ˈjeloʊ/、young /jʌŋ/——规律稳定，没有例外。注意：y 在词中或词尾通常变元音（gym→/ɪ/，happy→/iː/），本页只收词首 /j/ 的。"
+    },
+    {
+      "key": "u",
+      "tag": "u → /juː/",
+      "label": "u = /juː/",
+      "desc": "重读音节中的 u，若前面没有 /r//l//tʃ//dʒ/ 等音，通常带 /j/ 滑音读作 /juː/：use /juːz/、music /ˈmjuːzɪk/、huge /hjuːdʒ/。判断口诀：「u 前有没有 /j/ 被吞掉的辅音？」——rule(/ruːl/) 中 r 吞掉了 /j/；use 前无辅音，/j/ 完整保留。uniform、future、bureau 里都藏着 /j/，背单词时要把 /j/ 读出来。"
+    },
+    {
+      "key": "ew",
+      "tag": "ew · eu → /juː/",
+      "label": "ew / eu = /juː/",
+      "desc": "ew 和 eu 大多读 /juː/（英式保留 /j/，美式在部分词中已简化为 /uː/）：few /fjuː/、new /njuː/（英）/nuː/（美）、neutral /ˈnjuːtrəl/（英）/ˈnuːtrəl/（美）、review /rɪˈvjuː/（rv 后 /j/ 多保留）。区分：brew、crew、flew 中 ew 读 /uː/ 无 /j/（前有 r、l、已腭化辅音），few、dew、hew 保留 /j/。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ear / -ear (/jɪər/)",
+      "words": [
+        "year",
+        "fear",
+        "hear",
+        "near",
+        "clear"
+      ]
+    },
+    {
+      "label": "-ung / -ung (/jʌŋ/)",
+      "words": [
+        "young",
+        "lung",
+        "hung",
+        "sung",
+        "tongue"
+      ]
+    },
+    {
+      "label": "-ew / -ew (/juː/)",
+      "words": [
+        "few",
+        "new",
+        "dew",
+        "view",
+        "review"
+      ]
+    },
+    {
+      "label": "-use / -uge (/juːz/ /juːdʒ/)",
+      "words": [
+        "use",
+        "huge",
+        "fuse",
+        "muse",
+        "refuse"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "yes",
+      "hl": "y",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/jes/",
+      "subgroup": "y",
+      "meaning": "adv. 是，对；（强调）确实  n. 赞成票",
+      "core": "点头那一刻的确认感——像锤子落下、钉子钉稳，干脆利落没有犹豫。",
+      "senses": [
+        {
+          "gloss": "是，对（应答）",
+          "logic": "最原始的肯定——从远古gēa+sīe（是的+愿它如此）直接继承，是英语最古老的确认词。",
+          "en": "Yes, I'll take full responsibility for the decision.",
+          "zh": "是的，我将为这个决定承担全部责任。"
+        },
+        {
+          "gloss": "赞成票",
+          "logic": "从口头确认延伸到投票语境：说yes的人→投赞成票的人。议会的ayes就是从yes变来的复数形式。",
+          "en": "The ayes have it—the motion passes with 28 in favor.",
+          "zh": "赞成票占多数——动议以28票通过。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "aye",
+          "gloss": "赞成票（议会正式用语，yes的古老变体）"
+        },
+        {
+          "w": "yea",
+          "gloss": "赞成（古英语形式，现代投票中仍用）"
+        }
+      ],
+      "etymology": "古英语 gēse，由 gēa「是的」+ sīe「愿它如此」合并演化而来，是最早的英语应答词之一。yes/no 之争在议会投票中演变为「ayes and noes」。",
+      "roots": [
+        {
+          "part": "yes（gēa + sīe）",
+          "meaning": "是的，愿它如此"
+        }
+      ],
+      "phonetics": "y = /j/ + es = /ɛs/，单音节锚定词。/j/ 是舌前贴硬腭快速滑向 /ɛ/ 的滑音，学 /j/ 从 yes 开始最直观。",
+      "tip": "「Yes!」单独作感叹时拉长的是 /ɛ/，不是 /j/——/j/ 永远只是起点一闪而过。",
+      "examples": [
+        {
+          "en": "Yes, I'll take full responsibility for the decision.",
+          "zh": "是的，我将为这个决定承担全部责任。",
+          "source": "造句"
+        },
+        {
+          "en": "The ayes have it.",
+          "zh": "「赞成票占多数。」——议会投票结果宣布用语，ayes = yes 的正式复数。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "certainly",
+          "ipa": "/ˈsɜːrtnli/",
+          "gloss": "当然",
+          "note": "「当然」，比 yes 更正式，语气更确定；certainly 还可独立表肯定答复"
+        },
+        {
+          "w": "indeed",
+          "ipa": "/ɪnˈdiːd/",
+          "gloss": "确实，没错",
+          "note": "「确实、没错」，带强调或认可之意，比 yes 更书面，常用于学术或正式对话"
+        },
+        {
+          "w": "absolutely",
+          "ipa": "/ˈæbsəluːtli/",
+          "gloss": "绝对是",
+          "note": "「绝对是」，语气最强，口语中常表热情赞同"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "no",
+          "note": "否定"
+        },
+        {
+          "w": "nay",
+          "note": "正式/文学用的「否」（与 aye 对应）"
+        }
+      ],
+      "nuance": "yes 中性应答；certainly/absolutely 带主动确认的热情——回应请求时后两者显得更配合；indeed 多用于确认对方说的是事实，带「你说得对」的含义。"
+    },
+    {
+      "word": "year",
+      "hl": "y",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/jɪər/",
+      "subgroup": "y",
+      "meaning": "n. 年；学年；（复数）很长时间",
+      "core": "一棵树从发芽到落叶、又回到发芽的一圈——时间的圆环，太阳回到同一个位置的完整旅程。",
+      "senses": [
+        {
+          "gloss": "年（时间单位）",
+          "logic": "地球绕太阳一周的循环周期，从古英语gēar直接继承，是所有时间计量中最天然的尺度。",
+          "en": "The research was conducted over a period of three years.",
+          "zh": "这项研究历时三年进行。"
+        },
+        {
+          "gloss": "学年",
+          "logic": "从一年这个天然周期引申到人为划分的学习周期——大约也是一圈。",
+          "en": "She's in her final year of college.",
+          "zh": "她正在读大学的最后一年。"
+        },
+        {
+          "gloss": "很长时间（复数years）",
+          "logic": "复数形式把「一圈」拉长为「很多圈」，夸张表达时间之久。",
+          "en": "I haven't seen him in years.",
+          "zh": "我好多年没见过他了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "yearly",
+          "gloss": "每年的，一年一次的"
+        },
+        {
+          "w": "yearbook",
+          "gloss": "年鉴，毕业纪念册"
+        },
+        {
+          "w": "year-end",
+          "gloss": "年终的"
+        },
+        {
+          "w": "year-round",
+          "gloss": "全年的，一年到头的"
+        }
+      ],
+      "etymology": "古英语 gēar，日耳曼同根，与德语 Jahr（年）同源。太阳历一周 = 365.25 天，英语 year 与「地球绕太阳一周」直接绑定。",
+      "roots": [
+        {
+          "part": "year（gēar）",
+          "meaning": "年，循环周期"
+        }
+      ],
+      "phonetics": "y = /j/ + ear = /ɪər/，注意双元音 /ɪər/ 要平滑滑动，不要断开成两个独立元音。英式 /jɪə/，美式 /jɪr/（r-colored）。",
+      "examples": [
+        {
+          "en": "The research was conducted over a period of three years.",
+          "zh": "这项研究历时三年进行。",
+          "source": "造句"
+        },
+        {
+          "en": "year in, year out",
+          "zh": "「年复一年」——强调长期重复，高频习语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "annual",
+          "ipa": "/ˈænjuəl/",
+          "gloss": "年度的",
+          "note": "「年度的」，形容词，强调每年一次或持续一年；annual report（年度报告）"
+        },
+        {
+          "w": "fiscal year",
+          "gloss": "财年",
+          "note": "「财年」——与自然年不同，指企业或政府的会计年度"
+        },
+        {
+          "w": "era",
+          "ipa": "/ˈɪərə/",
+          "gloss": "时代，纪元",
+          "note": "「时代/纪元」，比 year 更宏观，指一段有标志性特征的历史时期"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "year 是基本时间单位；era/period 是跨度更大的历史概念；annual 是形容词，把「年」的时间粒度附着到名词上（annual fee 年费）。"
+    },
+    {
+      "word": "yellow",
+      "hl": "y",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈjeloʊ/",
+      "subgroup": "y",
+      "meaning": "adj. 黄色的  n. 黄色；（口语）胆小鬼  v. 变黄",
+      "core": "秋叶从绿变脆那一刻的颜色——暖而脆弱、像旧书的纸边，带着时间氧化过的痕迹。",
+      "senses": [
+        {
+          "gloss": "黄色（颜色）",
+          "logic": "从古英语geolu直接继承的颜色词，太阳、秋叶、黄金的共有色彩——人类最早命名的颜色之一。",
+          "en": "The leaves turned yellow and began to fall.",
+          "zh": "树叶变黄，开始凋落。"
+        },
+        {
+          "gloss": "胆小的（口语）",
+          "logic": "黄色→病态脸色→胆怯。yellow-bellied（黄肚皮的）原指某些动物腹部的黄色，19世纪转喻懦夫，因恐惧使人面色发黄。注意与中文「黄色」的文化差异：中文黄色=色情，英文yellow=cowardice。",
+          "en": "Don't be so yellow—stand up for yourself.",
+          "zh": "别那么胆小——站出来为自己说话。"
+        },
+        {
+          "gloss": "变黄",
+          "logic": "从颜色名词直接动词化：变成黄色。多用于纸张、塑料因老化变色。",
+          "en": "The newspaper had yellowed with age.",
+          "zh": "报纸因年久而泛黄了。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "yellowish",
+          "gloss": "微黄的，带黄色的"
+        },
+        {
+          "w": "yellowness",
+          "gloss": "黄色，泛黄"
+        },
+        {
+          "w": "yellow-bellied",
+          "gloss": "胆小的（口语，字面「黄肚皮的」）"
+        }
+      ],
+      "etymology": "古英语 geolu，日耳曼同根，与德语 gelb（黄色）同源。「yellow journalism」（黄色新闻）源于19世纪纽约报纸竞争——用黄色油墨印漫画以夺眼球，后转指煽情低俗的新闻手法。",
+      "roots": [
+        {
+          "part": "yellow（geolu）",
+          "meaning": "黄色"
+        }
+      ],
+      "phonetics": "y = /j/ + ellow = /ɛloʊ/，重音在首音节 YEL-，-ow 读 /oʊ/ 不读 /ɑː/。注意双辅音 ll 不影响发音。",
+      "tip": "「yellow-bellied」（黄肚皮的）= 胆小的，比喻义沿用至今，yellow 作「胆怯」义在口语中仍活跃。",
+      "examples": [
+        {
+          "en": "The leaves turned yellow and began to fall.",
+          "zh": "树叶变黄，开始凋落。",
+          "source": "造句"
+        },
+        {
+          "en": "yellow journalism",
+          "zh": "「黄色新闻（煽情报道）」——媒体伦理讨论高频术语。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "golden",
+          "ipa": "/ˈɡoʊldən/",
+          "gloss": "金黄色的",
+          "note": "「金黄色的」，比 yellow 更有光泽感和正面含义；golden hour（黄金时刻）"
+        },
+        {
+          "w": "amber",
+          "ipa": "/ˈæmbər/",
+          "gloss": "琥珀色",
+          "note": "「琥珀色」，深黄偏橙，比 yellow 更具体，多用于灯光或液体颜色"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "brave",
+          "note": "勇敢（对应「胆小」义）"
+        }
+      ],
+      "nuance": "yellow 是中性颜色词；golden 带光辉和价值感（golden age 黄金时代）；amber 偏深、偏暖，常用于专业颜色描述。"
+    },
+    {
+      "word": "young",
+      "hl": "y",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/jʌŋ/",
+      "subgroup": "y",
+      "meaning": "adj. 年轻的；新兴的  n. （集合名词）幼仔",
+      "core": "春天刚破土的嫩芽——带着水汽、茎还是半透明的，还没经历过第一场暴风雨。",
+      "senses": [
+        {
+          "gloss": "年轻的",
+          "logic": "从日耳曼词根geong直接继承，描述生命早期阶段——无论是人、动物还是植物，都适用。",
+          "en": "A young scientist published a groundbreaking paper on gene editing.",
+          "zh": "一位年轻科学家发表了一篇基因编辑领域的突破性论文。"
+        },
+        {
+          "gloss": "新兴的（组织/领域）",
+          "logic": "从生命早期引申到组织或事物的早期阶段——像一个刚成立的公司或学科。",
+          "en": "This is still a young field of research.",
+          "zh": "这仍然是一个年轻的研究领域。"
+        },
+        {
+          "gloss": "幼仔（集合名词）",
+          "logic": "从形容词转为名词，指动物的后代集合。the young = 所有的幼仔。",
+          "en": "The lioness protects her young fiercely.",
+          "zh": "母狮凶猛地保护她的幼仔。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "youth",
+          "gloss": "青春，青年时期"
+        },
+        {
+          "w": "youthful",
+          "gloss": "充满朝气的，年轻的（强调心态）"
+        },
+        {
+          "w": "youngster",
+          "gloss": "年轻人，小孩（口语）"
+        },
+        {
+          "w": "younger",
+          "gloss": "更年轻的"
+        }
+      ],
+      "etymology": "古英语 geong，日耳曼同根，与德语 jung 同源。youth（青春）是其名词形式；rejuvenate（返老还童）来自同一拉丁词根 juvenis（年轻的）。",
+      "roots": [
+        {
+          "part": "young（geong）",
+          "meaning": "年轻的"
+        }
+      ],
+      "phonetics": "y = /j/ + oung = /ʌŋ/，注意 ou 在这里不读 /aʊ/（≠ sound），而是 /ʌ/，是 ou 最不规则的读法之一。",
+      "tip": "young/younger/youngest 规则变化；youthful（富有朝气的）比 young 更强调心态而非年龄。",
+      "examples": [
+        {
+          "en": "A young scientist published a groundbreaking paper on gene editing.",
+          "zh": "一位年轻科学家发表了一篇基因编辑领域的突破性论文。",
+          "source": "造句"
+        },
+        {
+          "en": "young blood",
+          "zh": "「新生力量」——组织引进年轻人才的高频比喻。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "youthful",
+          "ipa": "/ˈjuːθfl/",
+          "gloss": "充满朝气的",
+          "note": "「充满活力/朝气的」，比 young 更强调精神状态，可用于不年轻但心态年轻的人"
+        },
+        {
+          "w": "juvenile",
+          "ipa": "/ˈdʒuːvənaɪl/",
+          "gloss": "青少年的",
+          "note": "「青少年的」，多用于法律或正式语境（juvenile delinquency 少年犯罪），带中性或负面色彩"
+        },
+        {
+          "w": "immature",
+          "ipa": "/ˌɪməˈtjʊər/",
+          "gloss": "不成熟的",
+          "note": "「不成熟的」，侧重行为或心理发育未完成，带负面含义"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "old",
+          "note": "年老的"
+        },
+        {
+          "w": "elderly",
+          "note": "年迈的（礼貌用词）"
+        }
+      ],
+      "nuance": "young 客观描述年龄；youthful 强调精力和活力（a youthful spirit 年轻的心态）；juvenile 在法律和正式语境中专指青少年，带「未成年」含义；immature 评价行为不成熟，负面语气最强。"
+    },
+    {
+      "word": "yet",
+      "hl": "y",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/jet/",
+      "subgroup": "y",
+      "meaning": "adv. 尚未；仍然；（用于否定/疑问）已经  conj. 然而，但是",
+      "core": "站在路口等一辆还没来的车——手里攥着票、眼睛望着远处，既知道会来又不知道什么时候来。",
+      "senses": [
+        {
+          "gloss": "尚未（副词，否定/疑问句）",
+          "logic": "从古英语giet「到现在为止」演变——时间线拉到当前，但事情还没发生，那根线还在空中悬着。",
+          "en": "The results have not been announced yet.",
+          "zh": "结果尚未公布。"
+        },
+        {
+          "gloss": "仍然（副词，肯定句）",
+          "logic": "尚未→仍在持续中，强调状态未改变、事情还在进行。比still更书面。",
+          "en": "There is yet time to change your mind.",
+          "zh": "还有时间改变主意。"
+        },
+        {
+          "gloss": "然而，但是（连词）",
+          "logic": "副词「还没完」→连词「但是还有下文」——前面说了A，后面要补B来转折。最轻微的语法化（从一个词兼两种词性），因为「尚未完成」天然暗含「后面还有东西」。",
+          "en": "The plan was ambitious, yet surprisingly effective.",
+          "zh": "这个计划雄心勃勃，然而效果出人意料地好。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "as yet",
+          "gloss": "迄今为止（正式用法，= so far）"
+        }
+      ],
+      "etymology": "古英语 giet，日耳曼语系，意为「到现在为止」。as yet（迄今为止）保留了它最古老的用法——强调时间线上的「当前时刻」。",
+      "roots": [
+        {
+          "part": "yet（giet）",
+          "meaning": "到目前为止"
+        }
+      ],
+      "phonetics": "y = /j/ + et = /ɛt/，单音节，发音简洁。注意 yet 作连词时（= but）语气比 but 更书面。",
+      "tip": "「not yet」（尚未）vs「already」（已经）：疑问句里用 yet（Has it arrived yet?），肯定陈述里用 already（It's already arrived.）",
+      "examples": [
+        {
+          "en": "The results have not been announced yet.",
+          "zh": "结果尚未公布。",
+          "source": "造句"
+        },
+        {
+          "en": "The plan was ambitious, yet surprisingly effective.",
+          "zh": "这个计划雄心勃勃，然而效果出人意料地好。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "still",
+          "ipa": "/stɪl/",
+          "gloss": "仍然",
+          "note": "「仍然」，与 yet 意义最近；but still 用于肯定句，yet 多用于否定/疑问句"
+        },
+        {
+          "w": "however",
+          "ipa": "/haʊˈevər/",
+          "gloss": "然而",
+          "note": "连词义「然而」的正式版，比 yet 更书面，用于段落衔接"
+        },
+        {
+          "w": "nevertheless",
+          "ipa": "/ˌnevərðəˈles/",
+          "gloss": "尽管如此",
+          "note": "「尽管如此」，比 yet 更正式，强调即使如此仍然成立"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "already",
+          "note": "已经（时态对应的反义）"
+        }
+      ],
+      "nuance": "yet（副词）强调时间线上「到此刻还没发生」；still 强调「持续状态没变化」；作连词时，yet 比 but 更书面正式，带「出乎意料」的转折语气。"
+    },
+    {
+      "word": "yesterday",
+      "hl": "y",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈjestərdeɪ/",
+      "subgroup": "y",
+      "meaning": "n./adv. 昨天；不久前的过去",
+      "core": "黄昏时回头看自己上午走过的那段路——还在视线里但已经碰不到了，风把脚印吹淡了一点。",
+      "senses": [
+        {
+          "gloss": "昨天",
+          "logic": "古英语geostran dæg（昨日+天）——太阳上一次升起的那一天。最直接的时间定位词。",
+          "en": "Yesterday's meeting ran three hours over schedule.",
+          "zh": "昨天的会议超时了三个小时。"
+        },
+        {
+          "gloss": "不久前的过去",
+          "logic": "从具体的「昨天」引申为「最近才发生过的事」——不是字面上的24小时前，而是「已经过去了、但还在记忆里」。",
+          "en": "I wasn't born yesterday—I know what's going on.",
+          "zh": "我不是昨天才出生的——我知道怎么回事。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "yesteryear",
+          "gloss": "往昔岁月（文学/诗意用法）"
+        },
+        {
+          "w": "yester-",
+          "gloss": "前缀：昨日的，过去的（古英语残留）"
+        }
+      ],
+      "etymology": "古英语 geostran dæg = geostran（昨日）+ dæg（天）。与德语 gestern 同源。披头士《Yesterday》让这个词成为有史以来被翻唱最多的歌曲名之一。",
+      "roots": [
+        {
+          "part": "yester-（geostran）",
+          "meaning": "昨日"
+        },
+        {
+          "part": "-day（dæg）",
+          "meaning": "天"
+        }
+      ],
+      "phonetics": "首音节 YES- = /ˈjes/（含 /j/），-ter-day 弱读，三音节。yester- 这个前缀也出现在 yesteryear（往昔岁月）中。",
+      "tip": "yester- 是古英语前缀，現代英语仅保留 yesterday；yesteryear 是文学/诗意用法，指遥远的过去。",
+      "examples": [
+        {
+          "en": "Yesterday's meeting ran three hours over schedule.",
+          "zh": "昨天的会议超时了三个小时。",
+          "source": "造句"
+        },
+        {
+          "en": "Yesterday, all my troubles seemed so far away.",
+          "zh": "「昨日，所有烦恼似乎都遥不可及。」——披头士《Yesterday》（1965）开篇，史上被翻唱次数最多的歌曲之一。",
+          "source": "《Yesterday》，The Beatles，1965"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "the day before",
+          "gloss": "前一天",
+          "note": "「前一天」——口语替换，无文化附加值"
+        },
+        {
+          "w": "the previous day",
+          "gloss": "前一日",
+          "note": "「前一日」——书面正式用法，多见于叙述性文字"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "tomorrow",
+          "note": "明天"
+        },
+        {
+          "w": "today",
+          "note": "今天"
+        }
+      ],
+      "nuance": "yesterday 仅指昨天；the previous day 在叙述过去时间线时比 yesterday 更精确（避免时态混乱）。"
+    },
+    {
+      "word": "yield",
+      "hl": "y",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/jiːld/",
+      "subgroup": "y",
+      "meaning": "v. 产生（收益/结果）；屈服；让路  n. 产量；收益率",
+      "core": "一棵果树被果实压弯了枝——它既「产出」了果实，又被迫「低头」了。产出和让步，是同一根树枝的两面。",
+      "senses": [
+        {
+          "gloss": "产生（收益/结果）",
+          "logic": "从古英语gieldan「给付、偿还」→给出东西→产出。土地给出庄稼、投资给出回报——都是「给出去」。",
+          "en": "The new farming method yielded twice the output of traditional techniques.",
+          "zh": "这种新农业方法产量是传统技术的两倍。"
+        },
+        {
+          "gloss": "屈服，让步",
+          "logic": "给付→给出自己的立场→让步。与「产出」共享同一个核心：「给出」。区别是产出给出东西，屈服给出自己的坚持。",
+          "en": "The government refused to yield to the protesters' demands.",
+          "zh": "政府拒绝向抗议者的要求让步。"
+        },
+        {
+          "gloss": "让路（交通）",
+          "logic": "从「屈服/让步」细化到交通场景——把路权「给」别人。",
+          "en": "You must yield to oncoming traffic at this intersection.",
+          "zh": "在这个路口你必须让行对面来车。"
+        },
+        {
+          "gloss": "产量，收益率（名词）",
+          "logic": "动词「产出」→名词「产出的东西」→可量化的产量。在金融语境中专指投资回报率。",
+          "en": "The bond offers a yield of 4.5% per annum.",
+          "zh": "这支债券提供年化4.5%的收益率。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "yielding",
+          "gloss": "柔软的，顺从的"
+        },
+        {
+          "w": "unyielding",
+          "gloss": "坚硬的，不屈不挠的"
+        },
+        {
+          "w": "high-yield",
+          "gloss": "高收益的，高产的"
+        }
+      ],
+      "etymology": "古英语 gieldan「给付、偿还」，日耳曼同根，与德语 gelten（有价值）同源。「给出产出」→ 产量；「给出让步」→ 屈服。两义均源于「给出、付出」的核心。",
+      "roots": [
+        {
+          "part": "yield（gieldan）",
+          "meaning": "给付、产出"
+        }
+      ],
+      "phonetics": "y = /j/ + ield = /iːld/，注意 ie 在此读 /iː/（非 /aɪ/），与 field、shield 同韵。",
+      "examples": [
+        {
+          "en": "The new farming method yielded twice the output of traditional techniques.",
+          "zh": "这种新农业方法产量是传统技术的两倍。",
+          "source": "造句"
+        },
+        {
+          "en": "yield to pressure / yield the floor",
+          "zh": "「屈服于压力 / 把发言权让给对方」——两义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "produce",
+          "ipa": "/prəˈdjuːs/",
+          "gloss": "产生",
+          "note": "「产生」义的通用近义，比 yield 更口语；produce results（产生结果）"
+        },
+        {
+          "w": "generate",
+          "ipa": "/ˈdʒenəreɪt/",
+          "gloss": "产生（能量/收益）",
+          "note": "「产生（能量/收益）」，多用于量化产出；generate revenue（产生收入）"
+        },
+        {
+          "w": "surrender",
+          "ipa": "/səˈrendər/",
+          "gloss": "投降，屈服",
+          "note": "「屈服/投降」义，比 yield 更彻底，含放弃一切抵抗的含义"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "resist",
+          "note": "抵抗（屈服义相对）"
+        },
+        {
+          "w": "withhold",
+          "note": "扣押（产出义相对）"
+        }
+      ],
+      "nuance": "yield 兼有「产出」和「屈服」两义，是财经和谈判的高频词；produce 更通用；generate 多用于能量和财务产出；surrender 是最彻底的屈服，含对抗结束的含义。"
+    },
+    {
+      "word": "use",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/juːz/",
+      "subgroup": "u",
+      "meaning": "v. /juːz/ 使用；利用  n. /juːs/ 用途；使用",
+      "core": "伸手拿起一把剪刀——工具在手里发热的那个瞬间，它从一块金属变成了你的手的延伸。",
+      "senses": [
+        {
+          "gloss": "使用，利用（动词）",
+          "logic": "从拉丁语uti「使用」直接继承——人类最基本的动作之一：拿起东西让它发挥作用。",
+          "en": "You can use this tool to analyze the data.",
+          "zh": "你可以用这个工具来分析数据。"
+        },
+        {
+          "gloss": "用途（名词）",
+          "logic": "动词→名词，从「做使用这个动作」变为「这个东西能用来做什么」。动词浊尾/z/，名词清尾/s/——英语少数动词名词靠尾辅音清浊区分的词对。",
+          "en": "What's the use of complaining? No one is listening.",
+          "zh": "抱怨有什么用？没人在听。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "useful",
+          "gloss": "有用的"
+        },
+        {
+          "w": "useless",
+          "gloss": "无用的"
+        },
+        {
+          "w": "usage",
+          "gloss": "用法，使用方式"
+        },
+        {
+          "w": "reuse",
+          "gloss": "重复使用"
+        },
+        {
+          "w": "misuse",
+          "gloss": "误用，滥用"
+        },
+        {
+          "w": "abuse",
+          "gloss": "滥用，虐待（ab-=偏离+use=偏离正常使用）"
+        }
+      ],
+      "etymology": "拉丁语 usus，源自 uti（使用）。useful、useless、abuse（ab-=偏离，滥用）、reuse 都是其家族。注意动词名词发音不同——这是英语中少数「动词浊尾/名词清尾」的词对之一。",
+      "roots": [
+        {
+          "part": "use（uti）",
+          "meaning": "使用"
+        }
+      ],
+      "phonetics": "词首 u 带 /j/ 滑音：use = /j/ + /uːz/。关键辨别：动词 /juːz/（z 结尾，有振动），名词 /juːs/（s 结尾，清辅音）。「What's the use?」用名词读法。",
+      "tip": "动词 use /juːz/（嗓子振动），名词 use /juːs/（清音，像「juice 去掉 ice」）——听原声时这个差别非常清楚。",
+      "examples": [
+        {
+          "en": "You can use this tool to analyze the data.",
+          "zh": "你可以用这个工具来分析数据。",
+          "source": "造句"
+        },
+        {
+          "en": "What's the use of complaining?",
+          "zh": "「抱怨有什么用？」——名词义高频句型，注意此处读 /juːs/。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "utilize",
+          "ipa": "/ˈjuːtəlaɪz/",
+          "gloss": "利用",
+          "note": "「利用（某物的功能）」，比 use 更正式，强调发挥特定用途；utilize resources（利用资源）"
+        },
+        {
+          "w": "employ",
+          "ipa": "/ɪmˈplɔɪ/",
+          "gloss": "运用",
+          "note": "「运用（方法/手段）」，正式书面语，比 use 更强调有意识地选择；employ a strategy（采用策略）"
+        },
+        {
+          "w": "apply",
+          "ipa": "/əˈplaɪ/",
+          "gloss": "应用",
+          "note": "「应用」，强调把知识或方法用于具体场合；apply a theory（应用理论）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ignore",
+          "note": "忽视、不用"
+        },
+        {
+          "w": "waste",
+          "note": "浪费（不善加利用）"
+        }
+      ],
+      "nuance": "use 最口语通用；utilize 强调有效率地发挥功能（带「物尽其用」的含义）；employ 多用于方法、策略、人员；apply 强调把某物用于具体任务或场合。「use a knife」很自然，「utilize a knife」显得过度正式。"
+    },
+    {
+      "word": "unit",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈjuːnɪt/",
+      "subgroup": "u",
+      "meaning": "n. 单位；单元；（军事）部队；（计量）单元",
+      "core": "一块积木——它可以独立存在、有自己的形状和编号，也可以拼进更大的结构里，变成房子的一面墙。",
+      "senses": [
+        {
+          "gloss": "单位，计量单元",
+          "logic": "从拉丁语unus「一」→ unitas「整体/单一性」→ 一个不可再分的标准量。一就是一，不和别的混在一起。",
+          "en": "The meter is the basic unit of length in the SI system.",
+          "zh": "米是国际单位制中长度的基本单位。"
+        },
+        {
+          "gloss": "单元（教材/课程）",
+          "logic": "从计量单位引申到学习模块——每单元是一个独立的「知识块」。",
+          "en": "Each unit in the textbook covers a specific grammar point.",
+          "zh": "教材中每个单元涵盖一个具体的语法点。"
+        },
+        {
+          "gloss": "部队（军事）",
+          "logic": "人也可以编成单元——军事中最小编制单位，一群人有统一编号和指挥链。",
+          "en": "The special forces unit was deployed at dawn.",
+          "zh": "特种部队在黎明时分被部署。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "unity",
+          "gloss": "团结，统一"
+        },
+        {
+          "w": "unify",
+          "gloss": "统一，使一致"
+        },
+        {
+          "w": "union",
+          "gloss": "联盟，工会，联合"
+        },
+        {
+          "w": "unique",
+          "gloss": "独特的，唯一的"
+        }
+      ],
+      "etymology": "拉丁语 unitas「整体、单一性」，源自 unus（一）。uni- 前缀家族：union（联合）、unique（唯一）、universe（万物归一）、unify（统一）——都围绕「一」这个概念展开。",
+      "roots": [
+        {
+          "part": "uni- (unus)",
+          "meaning": "一"
+        },
+        {
+          "part": "-t (unitas)",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "u = /juː/ + nit = /nɪt/，重音在前 U-nit。词首 u 带 /j/，这是 uni- 前缀的标配读法。",
+      "examples": [
+        {
+          "en": "Each unit in the textbook covers a specific grammar point.",
+          "zh": "教材中每个单元涵盖一个具体的语法点。",
+          "source": "造句"
+        },
+        {
+          "en": "an intensive care unit (ICU)",
+          "zh": "「重症监护室」——医疗高频搭配，unit 指功能独立的科室。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "element",
+          "ipa": "/ˈelɪmənt/",
+          "gloss": "元素，组成部分",
+          "note": "「元素/组成部分」，比 unit 更强调是更大系统的构成成分；the elements of a plan（计划的要素）"
+        },
+        {
+          "w": "component",
+          "ipa": "/kəmˈpoʊnənt/",
+          "gloss": "部件，组成部分",
+          "note": "「零部件/组成部分」，比 unit 更具体，多用于机器或系统的物理部件"
+        },
+        {
+          "w": "module",
+          "ipa": "/ˈmɒdjuːl/",
+          "gloss": "模块",
+          "note": "「模块」，强调标准化、可互换的单元，多用于软件、课程或航天设计"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "whole",
+          "note": "整体"
+        },
+        {
+          "w": "totality",
+          "note": "全部、总量"
+        }
+      ],
+      "nuance": "unit 最泛，可指任何独立的计量或组织单位；element 强调是整体的不可缺少部分；component 偏硬件和具体物件；module 强调可拆卸、标准化的设计逻辑。"
+    },
+    {
+      "word": "music",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈmjuːzɪk/",
+      "subgroup": "u",
+      "meaning": "n. 音乐；乐谱；美妙的声音",
+      "core": "一阵风吹过风铃——空气被切成有形状的声音，耳朵听到了但手摸不到，像缪斯女神在空气里画画。",
+      "senses": [
+        {
+          "gloss": "音乐",
+          "logic": "从希腊语mousikē「缪斯女神的艺术」——在古希腊，music不只是声音，而是缪斯掌管的所有艺术（包括诗歌、舞蹈），后来才收窄到声音艺术。",
+          "en": "Research shows that music can enhance concentration and reduce stress.",
+          "zh": "研究表明，音乐能提升专注力并减轻压力。"
+        },
+        {
+          "gloss": "乐谱",
+          "logic": "从声音艺术→记录声音的书面形式。就像文字记录语言，乐谱记录音乐。",
+          "en": "She placed the sheet music on the piano stand.",
+          "zh": "她把乐谱放在钢琴谱架上。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "musical",
+          "gloss": "音乐的；音乐剧"
+        },
+        {
+          "w": "musician",
+          "gloss": "音乐家"
+        },
+        {
+          "w": "muse",
+          "gloss": "缪斯女神；灵感之源"
+        },
+        {
+          "w": "museum",
+          "gloss": "博物馆（缪斯的神殿）"
+        }
+      ],
+      "etymology": "希腊语 mousikē「缪斯女神的艺术」，源自 Mousa（缪斯，司艺术与科学的女神）。museum（博物馆）同根——都是「缪斯女神赐予的」。",
+      "roots": [
+        {
+          "part": "muse（Mousa）",
+          "meaning": "缪斯女神，艺术灵感"
+        },
+        {
+          "part": "-ic",
+          "meaning": "形容词/名词后缀"
+        }
+      ],
+      "phonetics": "m + u(/juː/) + sic = /zɪk/，注意 u 在 m 后仍保留 /j/ 读 /mjuː/。-sic 中 s 读 /z/（浊化）。重音前置 MU-sic。",
+      "examples": [
+        {
+          "en": "Research shows that music can enhance concentration and reduce stress.",
+          "zh": "研究表明，音乐能提升专注力并减轻压力。",
+          "source": "造句"
+        },
+        {
+          "en": "face the music",
+          "zh": "「承担后果」——高频习语，字面「面对音乐（演奏）」，喻义接受批评或惩罚。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "melody",
+          "ipa": "/ˈmelodi/",
+          "gloss": "旋律",
+          "note": "「旋律」，指可辨识的音符序列，比 music 更具体，是 music 的组成部分"
+        },
+        {
+          "w": "harmony",
+          "ipa": "/ˈhɑːrməni/",
+          "gloss": "和声，和谐",
+          "note": "「和声/和谐」，比 music 更强调多声部配合，也可比喻人际关系的协调"
+        },
+        {
+          "w": "tune",
+          "ipa": "/tjuːn/",
+          "gloss": "曲调",
+          "note": "「曲调」，比 music 更口语，多指具体的一首歌或旋律片段"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "noise",
+          "note": "噪声，杂音"
+        },
+        {
+          "w": "silence",
+          "note": "寂静"
+        }
+      ],
+      "nuance": "music 泛指音乐这一艺术形式；melody 是具体的旋律线；harmony 强调多声部的协调或比喻义；tune 最口语，指一首具体的歌（play a tune 演奏一首曲子）。"
+    },
+    {
+      "word": "uniform",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈjuːnɪfɔːrm/",
+      "subgroup": "u",
+      "meaning": "n. 制服  adj. 统一的，一致的，均匀的",
+      "core": "一排士兵穿着同样的衣服站在操场上——一眼看过去整齐得像一个人，每个人都不一样，但衣服让他们变成了一。",
+      "senses": [
+        {
+          "gloss": "制服（名词）",
+          "logic": "uni-（一）+ form（形状）= 把不同的人塞进同一个形状里→制服。衣服统一了外观，身份也就统一了。",
+          "en": "All students are required to wear the school uniform.",
+          "zh": "所有学生都被要求穿校服。"
+        },
+        {
+          "gloss": "统一的，一致的（形容词）",
+          "logic": "从「穿一样的衣服」扩展到「任何东西都一样」——温度各处一样、政策对所有人一样、数据没有波动。",
+          "en": "The data showed a uniform decline across all regions.",
+          "zh": "数据显示所有地区均出现了一致的下降趋势。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "uniformity",
+          "gloss": "一致性，均匀性"
+        },
+        {
+          "w": "uniformly",
+          "gloss": "一致地，均匀地"
+        },
+        {
+          "w": "non-uniform",
+          "gloss": "不一致的，不均匀的"
+        }
+      ],
+      "etymology": "拉丁语 uniformis = uni-（一）+ forma（形状）= 「形状一样的」。军队、警察穿一样的衣服→制服；温度/质量各处相同→均匀。形容词义在学术写作中极高频（uniform distribution 均匀分布）。",
+      "roots": [
+        {
+          "part": "uni-（unus）",
+          "meaning": "一"
+        },
+        {
+          "part": "-form（forma）",
+          "meaning": "形状，形式"
+        }
+      ],
+      "phonetics": "u = /juː/ + ni = /nɪ/ + form = /fɔːrm/，三音节，重音在首音节 U-ni-form。uni- 前缀始终带 /juː/。",
+      "examples": [
+        {
+          "en": "The data showed a uniform decline across all regions.",
+          "zh": "数据显示所有地区均出现了一致的下降趋势。",
+          "source": "造句"
+        },
+        {
+          "en": "wear / put on a uniform",
+          "zh": "「穿制服」——名词义高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "consistent",
+          "ipa": "/kənˈsɪstənt/",
+          "gloss": "一致的",
+          "note": "「一致的」，比 uniform 更常见，强调不随时间或情境变化；consistent results（一致的结果）"
+        },
+        {
+          "w": "homogeneous",
+          "ipa": "/ˌhoʊməˈdʒiːniəs/",
+          "gloss": "同质的，均匀的",
+          "note": "「同质的/均匀的」，学术书面词，强调组成成分相同；a homogeneous group（同质群体）"
+        },
+        {
+          "w": "standard",
+          "ipa": "/ˈstændərd/",
+          "gloss": "标准的",
+          "note": "「标准的」，侧重符合某个统一规范，比 uniform 更常用于日常语境"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "varied",
+          "note": "多样的"
+        },
+        {
+          "w": "inconsistent",
+          "note": "不一致的"
+        }
+      ],
+      "nuance": "uniform（形容词）强调所有部分在数量或质量上相同（uniform temperature 均一温度）；consistent 强调随时间/场合的稳定一致；homogeneous 强调成分上的同质性（无内部差异）。"
+    },
+    {
+      "word": "usual",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈjuːʒuəl/",
+      "subgroup": "u",
+      "meaning": "adj. 通常的，惯常的",
+      "core": "每天走同一条路去菜市场——连路边摊主打招呼的语气都一样，不用想就知道下一个拐角是什么。",
+      "senses": [
+        {
+          "gloss": "通常的，惯常的",
+          "logic": "从拉丁语usus（使用/习惯）→ usualis「经常被用的」→ 用多了就成了习惯，习惯就成了常态。与 use 同根——经常「用」同一种方式→变成「惯常」。",
+          "en": "She arrived later than usual due to heavy traffic.",
+          "zh": "由于交通拥堵，她比平时晚到。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "usually",
+          "gloss": "通常地，一般地"
+        },
+        {
+          "w": "unusual",
+          "gloss": "不寻常的"
+        },
+        {
+          "w": "as usual",
+          "gloss": "像往常一样（固定搭配）"
+        }
+      ],
+      "etymology": "拉丁语 usualis，源自 usus（使用，习惯）——与 use 同根。「经常被使用的」→ 通常的。as usual（像往常一样）是英语最高频的固定搭配之一。",
+      "roots": [
+        {
+          "part": "use（usus）",
+          "meaning": "使用，习惯"
+        },
+        {
+          "part": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "u = /juː/ + su = /ʒ/ + al = /əl/，三音节，注意 su 在 usual 中读 /ʒ/（不是 /s/），重音在首 U-su-al。",
+      "tip": "usual 的 su 读 /ʒ/ 像法语借词残留，和 vision、measure 里的 s 一样。",
+      "examples": [
+        {
+          "en": "She arrived later than usual due to heavy traffic.",
+          "zh": "由于交通拥堵，她比平时晚到。",
+          "source": "造句"
+        },
+        {
+          "en": "as usual / the usual",
+          "zh": "「一如往常 / 老样子（点餐/要求时用）」——固定搭配，使用频率极高。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "typical",
+          "ipa": "/ˈtɪpɪkl/",
+          "gloss": "典型的",
+          "note": "「典型的」，比 usual 更强调代表性；typical behavior（典型行为）——暗示符合某一类型"
+        },
+        {
+          "w": "customary",
+          "ipa": "/ˈkʌstəmeri/",
+          "gloss": "惯例的",
+          "note": "「惯例的」，比 usual 更正式，多用于社会习俗或规定；customary practice（惯例做法）"
+        },
+        {
+          "w": "routine",
+          "ipa": "/ruːˈtiːn/",
+          "gloss": "常规的",
+          "note": "「常规的」，强调有固定程序，比 usual 更机械化；routine check（例行检查）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "unusual",
+          "note": "不寻常的"
+        },
+        {
+          "w": "exceptional",
+          "note": "例外的，非凡的"
+        }
+      ],
+      "nuance": "usual 只描述「频率高、是常态」；typical 多一层「符合某类型特征」的判断（he's a typical teenager）；customary 带「约定俗成的规范」含义；routine 强调固定重复的程序。"
+    },
+    {
+      "word": "huge",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/hjuːdʒ/",
+      "subgroup": "u",
+      "meaning": "adj. 巨大的；极大的",
+      "core": "站在山脚下仰头望——山的影子把整个村庄都盖住了，你觉得自己像一只蚂蚁。",
+      "senses": [
+        {
+          "gloss": "巨大的，极大的",
+          "logic": "从古法语ahuge/ahoge借入——日耳曼词源，原意就是「超大」。这个词从进入英语的那一刻起就只有一个意思：大到让人惊讶。既可以形容物理尺寸，也可以形容抽象程度（huge success, huge fan）。",
+          "en": "The project required a huge investment of both time and resources.",
+          "zh": "这个项目需要耗费大量的时间和资源。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "hugely",
+          "gloss": "极其地，非常"
+        },
+        {
+          "w": "hugeness",
+          "gloss": "巨大，庞大"
+        }
+      ],
+      "etymology": "古法语 ahuge/ahoge，词源不完全确定，可能源自日耳曼语。词首 h 在法语借词中常不发音（如 honour），但 huge 的 h 发音，带 /hj/ 连缀。hugely（极其地）是高频副词。",
+      "roots": [
+        {
+          "part": "huge（ahuge）",
+          "meaning": "巨大"
+        }
+      ],
+      "phonetics": "h + u(/juː/) + ge = /dʒ/，合起来 /hjuːdʒ/。注意 h 发音（不是法语哑音 h），/hj/ 连缀形成一个复合起始音，ge 读 /dʒ/（不是 /ɡ/）。",
+      "tip": "huge 的 ge 读 /dʒ/ 而非 /g/——词尾 ge 在元音后几乎都读 /dʒ/（cage、age、page 同理）。",
+      "examples": [
+        {
+          "en": "The project required a huge investment of both time and resources.",
+          "zh": "这个项目需要耗费大量的时间和资源。",
+          "source": "造句"
+        },
+        {
+          "en": "a huge success / a huge fan",
+          "zh": "「巨大成功 / 超级粉丝」——两个语义域的高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "enormous",
+          "ipa": "/ɪˈnɔːrməs/",
+          "gloss": "巨大的",
+          "note": "「巨大的」，比 huge 稍正式，强调偏离正常尺度的大；enormous pressure（巨大压力）"
+        },
+        {
+          "w": "vast",
+          "ipa": "/væst/",
+          "gloss": "广阔的，庞大的",
+          "note": "「广阔的/庞大的」，多用于面积、范围、数量；a vast desert（辽阔的沙漠）"
+        },
+        {
+          "w": "immense",
+          "ipa": "/ɪˈmens/",
+          "gloss": "无边际的，巨大的",
+          "note": "「无边际的/巨大的」，比 huge 更书面，带「难以衡量」的含义；immense potential（巨大潜力）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "tiny",
+          "note": "微小的"
+        },
+        {
+          "w": "minuscule",
+          "note": "极微小的（正式书面）"
+        }
+      ],
+      "nuance": "huge 最口语，可修饰具体和抽象名词；enormous 稍正式，强调超出正常范围的大；vast 侧重面积或数量上的广大；immense 最书面，带「大到无法测量」的语气。"
+    },
+    {
+      "word": "future",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈfjuːtʃər/",
+      "subgroup": "u",
+      "meaning": "n. 未来，将来；前途  adj. 未来的  n. （语法）将来时",
+      "core": "站在山顶看地平线那边——一片还没升起太阳的天空，但光已经在云后面了，你知道它会来但不知道它以什么颜色来。",
+      "senses": [
+        {
+          "gloss": "未来，将来（名词）",
+          "logic": "拉丁语futurus = esse（是/存在）的将来分词 = 「将要成为的」。这个词的核心是「尚未存在但即将存在」——它和时间线的前端绑定，但本质上是「还没到的那段」。",
+          "en": "The company is investing heavily in future technologies.",
+          "zh": "该公司正在对未来技术进行大量投资。"
+        },
+        {
+          "gloss": "前途（名词）",
+          "logic": "从时间维度的「未来」缩小到个人维度的「前程」——一个人的未来就是他的前途。",
+          "en": "She has a bright future ahead of her in medicine.",
+          "zh": "她在医学领域有着光明的未来。"
+        },
+        {
+          "gloss": "将来的（形容词）",
+          "logic": "名词直接作定语——不经过变形，未来本身就是最好的形容词。",
+          "en": "Keep this document for future reference.",
+          "zh": "保留此文件以供将来参考。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "futuristic",
+          "gloss": "未来主义的，超前的"
+        },
+        {
+          "w": "futurist",
+          "gloss": "未来学家，未来主义者"
+        },
+        {
+          "w": "futurism",
+          "gloss": "未来主义（艺术流派）"
+        }
+      ],
+      "etymology": "拉丁语 futurus，是 esse（是/存在）的将来分词，意为「将要成为的」。与 be 动词的起源有关——将来 = 尚未存在但即将存在的状态。",
+      "roots": [
+        {
+          "part": "fut- (futurus/esse)",
+          "meaning": "将要存在"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "f + u(/juː/) + ture = /tʃər/，注意 tu 在 future 中读 /tʃ/（腭化），重音在前 FU-ture。fu = /fjuː/，f 和 /j/ 连读形成 /fj/ 起始音。",
+      "examples": [
+        {
+          "en": "The company is investing heavily in future technologies.",
+          "zh": "该公司正在对未来技术进行大量投资。",
+          "source": "造句"
+        },
+        {
+          "en": "in the near future / for the foreseeable future",
+          "zh": "「在不久的将来 / 在可预见的未来」——书面语高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "prospect",
+          "ipa": "/ˈprɒspekt/",
+          "gloss": "前景，展望",
+          "note": "「前景/展望」，比 future 更具体，强调对特定结果的预期；career prospects（职业前景）"
+        },
+        {
+          "w": "outlook",
+          "ipa": "/ˈaʊtlʊk/",
+          "gloss": "前景，看法",
+          "note": "「前景/看法」，比 future 更强调对未来的判断；economic outlook（经济前景）"
+        },
+        {
+          "w": "destiny",
+          "ipa": "/ˈdestɪni/",
+          "gloss": "命运",
+          "note": "「命运」，比 future 带更强的宿命论色彩，强调不可更改的未来走向"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "past",
+          "note": "过去"
+        },
+        {
+          "w": "history",
+          "note": "历史"
+        }
+      ],
+      "nuance": "future 最宽泛，指时间上的未来；prospect 聚焦某件具体事物的未来可能性；outlook 是对未来的分析判断（多见于经济/天气报道）；destiny 带宿命论色彩，强调不可逃脱的归宿。"
+    },
+    {
+      "word": "unique",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/juːˈniːk/",
+      "subgroup": "u",
+      "meaning": "adj. 独特的；唯一的",
+      "core": "世界上只有一把钥匙能开这把锁——你握着那把钥匙，没人能复制它。",
+      "senses": [
+        {
+          "gloss": "独特的，唯一的",
+          "logic": "拉丁语unicus = uni-（一）+ -cus（形容词后缀）= 「只有一个的」。从unit/union同一家族——所有uni-都指向「一」，unique走到极端：不是「合为一体」而是「只有一个」。",
+          "en": "Each ecosystem has its own unique set of species.",
+          "zh": "每个生态系统都有其独特的物种组合。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "uniquely",
+          "gloss": "独特地"
+        },
+        {
+          "w": "uniqueness",
+          "gloss": "独特性，唯一性"
+        }
+      ],
+      "etymology": "拉丁语 unicus = uni-（一）+ -cus = 「只有一个的」。与 unit、universe（万物归一）同根。法语借词，-que 词尾不发音，u 读 /juː/。",
+      "roots": [
+        {
+          "part": "uni-（unus）",
+          "meaning": "一，唯一"
+        },
+        {
+          "part": "-que（-cus）",
+          "meaning": "法语形容词词尾（不发音）"
+        }
+      ],
+      "phonetics": "u = /juː/ + nique = /niːk/，重音在后 u-NIQUE。-que 结尾法语借词的标配：que 哑音，前面元音拉长。technique、boutique 同理。",
+      "tip": "「very unique」在严格逻辑中是矛盾（唯一的怎么还能更唯一？），正式写作中避免；口语中已被广泛接受。",
+      "examples": [
+        {
+          "en": "Each ecosystem has its own unique set of species.",
+          "zh": "每个生态系统都有其独特的物种组合。",
+          "source": "造句"
+        },
+        {
+          "en": "a unique opportunity / a unique perspective",
+          "zh": "「难得的机会 / 独到的视角」——学术写作高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "distinctive",
+          "ipa": "/dɪˈstɪŋktɪv/",
+          "gloss": "有鲜明特色的",
+          "note": "「有鲜明特色的」，比 unique 语气弱，允许程度比较；a distinctive style（独特风格）"
+        },
+        {
+          "w": "singular",
+          "ipa": "/ˈsɪŋɡjələr/",
+          "gloss": "独特的，非凡的",
+          "note": "「独特的/非凡的」，正式书面词，比 unique 更文学化；a singular achievement（卓越成就）"
+        },
+        {
+          "w": "unparalleled",
+          "ipa": "/ʌnˈpærəleld/",
+          "gloss": "无与伦比的",
+          "note": "「无与伦比的」，比 unique 语气更强，强调在同类中无可比拟"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "common",
+          "note": "普通的"
+        },
+        {
+          "w": "ordinary",
+          "note": "平凡的"
+        }
+      ],
+      "nuance": "unique 在逻辑上不可比较（最 unique 是矛盾的），但口语已接受；distinctive 可比较，侧重「与众不同的特征」；singular 是书面词，有时含「奇特」的中性义；unparalleled 语气最强，多用于正式赞扬。"
+    },
+    {
+      "word": "bureau",
+      "hl": "u",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈbjʊəroʊ/",
+      "subgroup": "u",
+      "meaning": "n. （政府）局，处，署；办事处；梳妆台（英式）",
+      "core": "一间暗色的房间，桌上堆着文件和印章——空气里是纸和墨水的气味，每一张纸都盖着官方权力的戳。",
+      "senses": [
+        {
+          "gloss": "（政府）局，处，署",
+          "logic": "法语bureau「桌布→办公桌→在桌前工作的机构」——从一块铺在桌上的布，变成了整个权力机构。最典型的语义扩大：物的名字变成了组织的名字。",
+          "en": "The Federal Bureau of Investigation is responsible for domestic intelligence.",
+          "zh": "联邦调查局负责国内情报工作。"
+        },
+        {
+          "gloss": "办事处，办公室",
+          "logic": "从政府机构扩展到任何处理事务的办公场所——从FBI到旅游局，核心都是「有人在桌前办事」。",
+          "en": "You can exchange currency at the tourist bureau.",
+          "zh": "你可以在旅游局兑换货币。"
+        },
+        {
+          "gloss": "梳妆台（英式）",
+          "logic": "历史偶合——法语bureau原意就是「桌布/桌子」，英式英语保留了这个家具义，而美式英语几乎只用于政府机构义。从同一张桌子出发，法国人放文件变成了官僚机构，英国人放镜子变成了梳妆台。",
+          "en": "She sat at her bureau, brushing her hair before the mirror.",
+          "zh": "她坐在梳妆台前，对着镜子梳头。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "bureaucracy",
+          "gloss": "官僚体制（bureau桌子+cracy统治=桌子统治）"
+        },
+        {
+          "w": "bureaucrat",
+          "gloss": "官僚，官员"
+        },
+        {
+          "w": "bureaucratic",
+          "gloss": "官僚主义的，繁文缛节的"
+        }
+      ],
+      "etymology": "法语 bureau「桌布、台呢」，引申为「铺着台呢的桌子」→「办公桌」→「在桌前工作的机构」。bureaucracy（官僚主义）= bureau + -cracy（统治），字面是「桌子统治」——讽刺官僚文牍气。",
+      "roots": [
+        {
+          "part": "bureau（法语）",
+          "meaning": "桌布→办公桌→机构"
+        },
+        {
+          "part": "-cracy（kratos）",
+          "meaning": "统治（bureaucracy 中）"
+        }
+      ],
+      "phonetics": "b + u(/juː/) + reau = /roʊ/，注意 bu = /bjʊ/（b 和 /j/ 连读），-eau 法语词尾读 /oʊ/，整体三音节 BU-reau /ˈbjʊəroʊ/。",
+      "tip": "记住 bureau 的家族：bureaucracy（官僚体制）、bureaucrat（官僚）——都围绕「机构」延伸。",
+      "examples": [
+        {
+          "en": "The Federal Bureau of Investigation is responsible for domestic intelligence.",
+          "zh": "联邦调查局负责国内情报工作。",
+          "source": "造句"
+        },
+        {
+          "en": "tourist bureau / weather bureau",
+          "zh": "「旅游局 / 气象局」——政府机构名高频用法。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "agency",
+          "ipa": "/ˈeɪdʒənsi/",
+          "gloss": "机构，代理处",
+          "note": "「机构/代理处」，比 bureau 更通用，可指政府机构或私人中介；a travel agency（旅行社）"
+        },
+        {
+          "w": "department",
+          "ipa": "/dɪˈpɑːrtmənt/",
+          "gloss": "部门",
+          "note": "「部门」，比 bureau 更常见于企业和大学内部；the sales department（销售部门）"
+        },
+        {
+          "w": "office",
+          "ipa": "/ˈɒfɪs/",
+          "gloss": "办公室，办事处",
+          "note": "「办公室/办事处」，比 bureau 更口语，泛指任何处理事务的部门"
+        }
+      ],
+      "antonyms": [],
+      "nuance": "bureau 多指政府职能机构（带官方色彩）；agency 可指政府机构也可指私人中介，语义最广；department 是大机构内的一个分支；office 最口语，可以只是一个房间。"
+    },
+    {
+      "word": "few",
+      "hl": "ew",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/fjuː/",
+      "subgroup": "ew",
+      "meaning": "det./pron./adj. 少数的，很少的（强调少，含否定意味）",
+      "core": "一把沙从指缝漏出去——手掌里只剩几粒，你低头看着它们，担心不够用。",
+      "senses": [
+        {
+          "gloss": "很少的（few，否定含义）",
+          "logic": "古英语fēawe——从一开始就强调「数量少到令人担忧」。few不加冠词=负面（少到不够），a few加冠词=正面（虽然少但是还有一些）。同一个词，一个a决定了态度。",
+          "en": "Few studies have examined the long-term effects of this medication.",
+          "zh": "很少有研究考察过这种药物的长期效果。"
+        },
+        {
+          "gloss": "一些（a few，积极含义）",
+          "logic": "few前面加a（不定冠词）→态度翻转：从「太少了」变成「还是有一些的」。同样的数字，说话人的预期不同，语义截然相反。",
+          "en": "I have a few ideas I'd like to share with the team.",
+          "zh": "我有几个想法想和团队分享。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "fewer",
+          "gloss": "更少的（可数名词比较级）"
+        },
+        {
+          "w": "fewest",
+          "gloss": "最少的（可数名词最高级）"
+        }
+      ],
+      "etymology": "古英语 fēawe，日耳曼同根。关键辨析：few（很少，近乎没有，负面）vs a few（一些，还有几个，中性偏正）——冠词 a 彻底改变了含义。",
+      "roots": [
+        {
+          "part": "few（fēawe）",
+          "meaning": "少数"
+        }
+      ],
+      "phonetics": "f + ew = /juː/，整体 /fjuː/。ew 在词首后的清辅音之后保留 /j/：few、view、mew——与 brew、crew（r 之后无 /j/）形成对比。",
+      "tip": "few = 「太少了」（暗含不够）；a few = 「还有一些」（暗含有就行）。「She has few friends.」（朋友很少，令人担忧）vs「She has a few friends.」（有几个朋友，挺好的）。",
+      "examples": [
+        {
+          "en": "Few studies have examined the long-term effects of this medication.",
+          "zh": "很少有研究考察过这种药物的长期效果。",
+          "source": "造句"
+        },
+        {
+          "en": "quite a few / a good few",
+          "zh": "「相当多的」——注意 quite a few 意思是「不少」，不是「很少」，是常见误解。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "scarce",
+          "ipa": "/skeərs/",
+          "gloss": "稀缺的",
+          "note": "「稀缺的」，比 few 更强调资源不足；scarce resources（稀缺资源）——形容词，不直接修饰名词复数"
+        },
+        {
+          "w": "rare",
+          "ipa": "/reər/",
+          "gloss": "罕见的",
+          "note": "「罕见的」，比 few 更强调出现频率低；a rare opportunity（难得的机会）"
+        },
+        {
+          "w": "limited",
+          "ipa": "/ˈlɪmɪtɪd/",
+          "gloss": "有限的",
+          "note": "「有限的」，比 few 更正式，强调受到限制；limited resources（有限的资源）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "many",
+          "note": "许多的"
+        },
+        {
+          "w": "numerous",
+          "note": "众多的（正式）"
+        }
+      ],
+      "nuance": "few 强调数量少到令人担忧（否定倾向）；scarce 强调供不应求的稀缺性；rare 强调出现频率极低；limited 强调有上限。「few options」（选择太少了），「limited options」（选择有限制），语气相似但 few 更口语，limited 更客观。"
+    },
+    {
+      "word": "new",
+      "hl": "ew",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/njuː/（英）/nuː/（美）",
+      "subgroup": "ew",
+      "meaning": "adj. 新的；新鲜的；（人）刚到的  adv. 新近地（构词）",
+      "core": "翻开一本刚买的书——书脊还没被翻折过，纸页带着油墨味，你是第一个进入这个世界的人。",
+      "senses": [
+        {
+          "gloss": "新的（时间上）",
+          "logic": "古英语nīwe，日耳曼同根——人类最早需要表达的概念之一：这个（东西/人/事情）刚才还不存在，现在有了。",
+          "en": "The new policy will take effect at the start of next fiscal year.",
+          "zh": "新政策将于下一财年开始时生效。"
+        },
+        {
+          "gloss": "新鲜的，未使用过的",
+          "logic": "从时间上的新→状态上的新——没有用过，没有磨损，没有被人碰过。",
+          "en": "He bought a brand new car—the odometer read zero miles.",
+          "zh": "他买了一辆全新的车——里程表显示零英里。"
+        },
+        {
+          "gloss": "刚到的（人）",
+          "logic": "从物的「新」扩展到人的「新」——刚加入一个环境、还带着外面气息的人。",
+          "en": "We have a new colleague joining the team next week.",
+          "zh": "下周有一位新同事加入我们团队。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "newly",
+          "gloss": "新近地，最近"
+        },
+        {
+          "w": "newness",
+          "gloss": "新颖，新鲜"
+        },
+        {
+          "w": "newcomer",
+          "gloss": "新来的人，新手"
+        },
+        {
+          "w": "newborn",
+          "gloss": "新生的（婴儿）"
+        },
+        {
+          "w": "newfound",
+          "gloss": "新发现的，刚获得的"
+        }
+      ],
+      "etymology": "古英语 nīwe，日耳曼同根，与德语 neu 同源。novel（新颖的）、renovate（翻新）来自同一拉丁词根 novus（新的）。new 是英语核心词，构成大量合成词：newborn、newcomer、new-found、New Year。",
+      "roots": [
+        {
+          "part": "new（nīwe）",
+          "meaning": "新的"
+        }
+      ],
+      "phonetics": "英式 /njuː/（n 后有 /j/），美式 /nuː/（/j/ 脱落）。ew = /juː/ 在英式中与 n 组合成 /nj/ 连读，美式简化为 /n/。这个 /j/ 脱落现象叫 yod-dropping，在 news、nude、tune 中同样可见。",
+      "tip": "英美发音差异：new、news、student、tune——英式保留 /j/，美式省略，两者都对，注意语境。",
+      "examples": [
+        {
+          "en": "The new policy will take effect at the start of next fiscal year.",
+          "zh": "新政策将于下一财年开始时生效。",
+          "source": "造句"
+        },
+        {
+          "en": "What's new? / brand new",
+          "zh": "「最近怎么样？/ 全新的（崭新的）」——两个高频口语表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "novel",
+          "ipa": "/ˈnɒvəl/",
+          "gloss": "新颖的",
+          "note": "「新颖的」，比 new 更强调创新性和独特性；a novel approach（新颖的方法）——仅作形容词，不指时间上的新"
+        },
+        {
+          "w": "fresh",
+          "ipa": "/freʃ/",
+          "gloss": "新鲜的",
+          "note": "「新鲜的」，比 new 更强调无污染、充满活力；fresh ideas（新鲜的想法）"
+        },
+        {
+          "w": "recent",
+          "ipa": "/ˈriːsnt/",
+          "gloss": "近期的",
+          "note": "「近期的」，强调时间上距离现在不远；recent developments（近期进展）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "old",
+          "note": "旧的"
+        },
+        {
+          "w": "outdated",
+          "note": "过时的"
+        }
+      ],
+      "nuance": "new 最通用（时间上新）；novel 强调思想或方法的创新性（≠ 时间新）；fresh 强调活力和无陈腐感；recent 只指时间上近期，不评价质量。「a new idea」（新想法）和「a novel idea」（新颖的想法）——后者更强调与众不同。"
+    },
+    {
+      "word": "neutral",
+      "hl": "eu",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈnjuːtrəl/（英）/ˈnuːtrəl/（美）",
+      "subgroup": "ew",
+      "meaning": "adj. 中立的；中性的；（颜色）不鲜明的  n. 中立国；（汽车）空挡",
+      "core": "一根立在正中间的杆子——风从左边吹、风从右边吹，它都不倒向任何一边。不是软弱，是选择了不选。",
+      "senses": [
+        {
+          "gloss": "中立的",
+          "logic": "拉丁语neuter = ne-（不）+ uter（哪个）= 「哪个都不是」→ 不站在任何一边。立场上的中间地带——不是没有立场，是有意识地选择了不偏袒。",
+          "en": "Switzerland has maintained a neutral stance in international conflicts for centuries.",
+          "zh": "瑞士几个世纪以来在国际冲突中保持中立立场。"
+        },
+        {
+          "gloss": "中性的",
+          "logic": "从政治中立→化学/物理的中间状态——既不酸也不碱，既不正也不负。同一逻辑在不同领域的迁移。",
+          "en": "Water is chemically neutral, with a pH of 7.",
+          "zh": "水在化学上是中性的，pH值为7。"
+        },
+        {
+          "gloss": "空挡（汽车）",
+          "logic": "从「中间」引申到机械——变速箱在N档，既不前进也不倒车，悬在动力传动的中间。",
+          "en": "Put the car in neutral before starting the engine.",
+          "zh": "启动发动机前把车挂到空挡。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "neutralize",
+          "gloss": "使中和，使中立"
+        },
+        {
+          "w": "neutrality",
+          "gloss": "中立，中立地位"
+        },
+        {
+          "w": "neutron",
+          "gloss": "中子（不带电荷的粒子）"
+        },
+        {
+          "w": "neuter",
+          "gloss": "中性的；阉割的（ne-不+uter哪个=哪个都不是）"
+        }
+      ],
+      "etymology": "拉丁语 neutralis，源自 neuter（两者都不）= ne-（不）+ uter（哪个）。「既不是这个也不是那个」→ 中立。neutr- 家族：neutron（中子，带中性电荷）、neutralize（使中立/中和）。",
+      "roots": [
+        {
+          "part": "ne-",
+          "meaning": "不，否"
+        },
+        {
+          "part": "-utr-（uter）",
+          "meaning": "哪一个（两者之一）"
+        },
+        {
+          "part": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "phonetics": "eu = /juː/（英）/uː/（美），与 new 的 ew 平行：英式保留 /j/，美式省略。neutral = /njuː/ + tral = /trəl/，重音在前 NEU-tral。",
+      "examples": [
+        {
+          "en": "Switzerland has maintained a neutral stance in international conflicts for centuries.",
+          "zh": "瑞士几个世纪以来在国际冲突中保持中立立场。",
+          "source": "造句"
+        },
+        {
+          "en": "remain neutral / take a neutral position",
+          "zh": "「保持中立 / 采取中立立场」——政治和外交高频表达。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "impartial",
+          "ipa": "/ɪmˈpɑːrʃəl/",
+          "gloss": "公正的，不偏不倚的",
+          "note": "「公正的/不偏不倚的」，比 neutral 更强调对事公平，中立是手段，公正是目的；an impartial judge（公正的法官）"
+        },
+        {
+          "w": "objective",
+          "ipa": "/əbˈdʒektɪv/",
+          "gloss": "客观的",
+          "note": "「客观的」，比 neutral 更强调基于事实而非个人立场；an objective assessment（客观评估）"
+        },
+        {
+          "w": "detached",
+          "ipa": "/dɪˈtætʃt/",
+          "gloss": "超然的，疏离的",
+          "note": "「超然的/疏离的」，比 neutral 更强调情感上的不介入；a detached observer（超然的观察者）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "biased",
+          "note": "有偏见的"
+        },
+        {
+          "w": "partisan",
+          "note": "党派性的，有偏袒的"
+        }
+      ],
+      "nuance": "neutral 强调不选边站（立场上的中立）；impartial 强调对两方一视同仁（程序上的公正）；objective 强调基于事实的理性判断；detached 强调情感上的超然脱离。「中立国」只能用 neutral，其他词无法替换。"
+    },
+    {
+      "word": "review",
+      "hl": "ew",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/rɪˈvjuː/",
+      "subgroup": "ew",
+      "meaning": "v./n. 复习；审查；评论；回顾",
+      "core": "把一卷已经放完的胶片倒回去、对着光重看一遍——这次看到了第一次没注意到的细节。",
+      "senses": [
+        {
+          "gloss": "复习",
+          "logic": "re-（再次）+ view（看）= 再看一遍。知识第一次看是「学」，第二次看是「复习」——再看一次，把漏掉的补上。",
+          "en": "She spent the evening reviewing her notes before the exam.",
+          "zh": "她花了一整晚复习笔记准备考试。"
+        },
+        {
+          "gloss": "审查",
+          "logic": "从「再看一遍」引申到正式评估——不是随便看看，是为了做决定而仔细检视。政策需要review，绩效需要review。",
+          "en": "The committee will review the proposal before making a final decision.",
+          "zh": "委员会将在做出最终决定前审查该提案。"
+        },
+        {
+          "gloss": "评论（书/电影等）",
+          "logic": "再看一遍→发表看法→写出来给别人看。文艺评论是专业化的「再看一遍」。",
+          "en": "The film was reviewed favorably by most critics.",
+          "zh": "这部电影获得了大多数评论家的好评。"
+        }
+      ],
+      "derivatives": [
+        {
+          "w": "reviewer",
+          "gloss": "审稿人，评论者"
+        },
+        {
+          "w": "re-review",
+          "gloss": "重新审查，再次审核"
+        },
+        {
+          "w": "reviewable",
+          "gloss": "可审查的，可评论的"
+        }
+      ],
+      "etymology": "古法语 reveue，源自拉丁语 re-（再次）+ videre（看）= 「再看一遍」。vision（视觉）、revise（修改）、evident（显而易见）都源于 videre。review 的每个含义都是「再看」：复习=再看知识，评论=再看作品，审查=再看政策。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "再次，向后"
+        },
+        {
+          "part": "-view（videre）",
+          "meaning": "看"
+        }
+      ],
+      "phonetics": "re = /rɪ/ + view = /vjuː/，view 中 v + ew 形成 /vjuː/——v 和 /j/ 连读，ew = /juː/ 在此保留完整 /j/（因为 r 在 re- 前缀里而非直接在 ew 前）。重音在后 re-VIEW。",
+      "examples": [
+        {
+          "en": "The committee will review the proposal before making a final decision.",
+          "zh": "委员会将在做出最终决定前审查该提案。",
+          "source": "造句"
+        },
+        {
+          "en": "peer review / annual review",
+          "zh": "「同行评审 / 年度评估」——学术和职场高频搭配。",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "evaluate",
+          "ipa": "/ɪˈvæljueɪt/",
+          "gloss": "评估，评价",
+          "note": "「评估/评价」，比 review 更正式，强调系统性的价值判断；evaluate performance（评估表现）"
+        },
+        {
+          "w": "assess",
+          "ipa": "/əˈses/",
+          "gloss": "评估",
+          "note": "「评估」，与 evaluate 近义，比 review 更聚焦于具体量化指标；assess the risk（评估风险）"
+        },
+        {
+          "w": "critique",
+          "ipa": "/krɪˈtiːk/",
+          "gloss": "批评性评论",
+          "note": "「批评性评论」，比 review 更强调分析优缺点；a critical critique（详尽的批评性评论）"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "ignore",
+          "note": "忽视（不做检视）"
+        },
+        {
+          "w": "overlook",
+          "note": "忽略（疏漏）"
+        }
+      ],
+      "nuance": "review 最宽泛（复习/审查/评论/回顾），是四义合一的高频词；evaluate 和 assess 聚焦「评估」义，更量化系统；critique 专注于文艺或学术作品的批评性分析，比 review 更严肃和深入。"
+    }
+  ]
+}

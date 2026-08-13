@@ -1,0 +1,1241 @@
+{
+  "id": "schwa",
+  "combo": "ə",
+  "title": "schwa /ə/ · 弱读之王",
+  "sound": "/ə/",
+  "subtitle": "英语出现频率最高的音——几乎所有非重读音节都塌缩成它",
+  "intro": "schwa /ə/ 是英语最高频的音素，没有之一。它藏在每个非重读音节里：a 可以是它（about），e 可以是它（problem），o 可以是它（lemon），-er/-ar/-our/-ure 可以是它（mother / dollar / colour / picture）。辨认口诀：压力不在这个音节，嘴巴放松、舌居中，发一个轻短的「呃」——那就是 schwa。拼写花样百出，但读音永远只有一个。",
+  "subgroups": [
+    {
+      "key": "aeo",
+      "tag": "非重读 a/e/o",
+      "label": "✅ 非重读 a·e·o = /ə/",
+      "desc": "非重读音节里的 a（about、banana、ago）、e（problem、lemon、method）、o（common、reason、pilot）全部塌缩成 /ə/。判断规则：找到重音音节，其余的元音就「减压」读成 schwa。"
+    },
+    {
+      "key": "er",
+      "tag": "-er → /ər/",
+      "label": "-er = /ər/",
+      "desc": "非重读 -er 后缀（mother、teacher、water、number、paper、remember、consider）读 /ər/——rhoticity 让 /ə/ 带一点卷舌，美式英语里特别明显。这是英语最多产的 schwa 拼写之一。"
+    },
+    {
+      "key": "suffix",
+      "tag": "-our·-ar·-ure",
+      "label": "-our/-ar/-ure = /ə(r)/",
+      "desc": "British -our（colour / favour / harbour / neighbour）、弱读 -ar（dollar / sugar / grammar / similar / particular）、-ure（picture / nature / future / measure / pleasure）在非重读位置均读 /ə(r)/，与 -er 发音几乎相同。"
+    }
+  ],
+  "words": [
+    {
+      "word": "about",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/əˈbaʊt/",
+      "subgroup": "aeo",
+      "meaning": "prep. 关于；大约  adv. 到处；大约",
+      "etymology": "古英语 onbūtan = on（在）+ bū（附近）+ tan（外部）。从「在周围」引申出「关于」和「大约」两个核心义。",
+      "roots": [
+        {"part": "a- (on)", "meaning": "在……上"},
+        {"part": "-bout (būtan)", "meaning": "外部、周围"}
+      ],
+      "phonetics": "首音节 a- = /ə/（非重读，是 schwa 最典型的锚定词），重音在 -BOUT /baʊt/。这个词开口就是 schwa，教材必用。",
+      "tip": "「about」的 a 是 schwa 最经典的示范——初学英语的第一个 /ə/ 几乎都从这里开始。",
+      "core": "「周围感」——绕着某事物转圈，不精确贴合，只在附近游荡。",
+      "senses": [
+        {
+          "gloss": "prep. 关于（某个话题）",
+          "logic": "「在话题周围打转」→ 围绕某事讨论，就是「关于」",
+          "en": "The documentary is about the decline of coral reefs.",
+          "zh": "这部纪录片是关于珊瑚礁衰退的。"
+        },
+        {
+          "gloss": "adv./prep. 大约（数字）",
+          "logic": "「在数字附近」→ 不精确到达某值，只在周围，就是「大约」",
+          "en": "The trip takes about three hours by train.",
+          "zh": "坐火车大约需要三个小时。"
+        },
+        {
+          "gloss": "adv. 到处，四处（运动）",
+          "logic": "「在各处周围游荡」→ 不定向移动，就是「到处」",
+          "en": "Children were running about in the park.",
+          "zh": "孩子们在公园里四处奔跑。"
+        }
+      ],
+      "derivatives": [
+        {"w": "about-face", "gloss": "急转身；彻底转变态度"},
+        {"w": "thereabouts", "gloss": "在那附近；大约"},
+        {"w": "whereabouts", "gloss": "下落；所在地点"}
+      ],
+      "synonyms": [
+        {"w": "regarding", "ipa": "/rɪˈɡɑːrdɪŋ/", "gloss": "关于（正式书面）", "note": "正式书面语「关于」，多见于商务信件；regarding your inquiry（关于您的询问）"},
+        {"w": "concerning", "ipa": "/kənˈsɜːrnɪŋ/", "gloss": "有关（较庄重）", "note": "正式书面语「有关」，语气比 about 更庄重；concerning the matter（关于此事）"},
+        {"w": "approximately", "ipa": "/əˈprɒksɪmətli/", "gloss": "大约（正式精确感）", "note": "「大约」义的正式词，比 about 更精确感；approximately 200 people（约200人）"}
+      ],
+      "antonyms": [],
+      "nuance": "about 是口语通用词，regarding / concerning 是书面正式替换。「about 200」最口语，「approximately 200」最正式，「around 200」居中。"
+    },
+    {
+      "word": "ago",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/əˈɡoʊ/",
+      "subgroup": "aeo",
+      "meaning": "adv. 以前，之前（与过去时连用）",
+      "etymology": "中古英语 ago，源自 agone「离开、过去」，由 a-（去）+ gone（走的）构成。指「时间已走过去」。",
+      "roots": [
+        {"part": "a- (a-)", "meaning": "去、离开"},
+        {"part": "-go (gone)", "meaning": "走、逝去"}
+      ],
+      "phonetics": "首音节 a- = /ə/（非重读 schwa），重音在 -GO /ɡoʊ/。两个音节各一个元音，一弱一强，对比鲜明。",
+      "core": "「时间已走远」——强调那段时间已经离开当下，向后退去。",
+      "senses": [
+        {
+          "gloss": "adv. （在过去）……以前",
+          "logic": "「时间走开了那么远」→ 距今多少时间，就是「……以前」",
+          "en": "She moved to the city three years ago and never looked back.",
+          "zh": "她三年前搬到这座城市，从未回头。"
+        }
+      ],
+      "derivatives": [
+        {"w": "long ago", "gloss": "很久以前（固定短语）"},
+        {"w": "not long ago", "gloss": "不久前"},
+        {"w": "ages ago", "gloss": "很久很久以前（口语强调）"}
+      ],
+      "synonyms": [
+        {"w": "previously", "ipa": "/ˈpriːviəsli/", "gloss": "此前，先前", "note": "「此前、先前」，比 ago 更正式，可不与具体时间搭配；as mentioned previously（如前所述）"},
+        {"w": "before", "ipa": "/bɪˈfɔːr/", "gloss": "之前", "note": "「之前」，比 ago 更通用，可引导从句；before I knew it（不知不觉地）"}
+      ],
+      "antonyms": [
+        {"w": "hence", "note": "（从现在起）……后"}
+      ],
+      "nuance": "ago 必须与过去时连用（two days ago / NOT two days ago will happen），before 更灵活可用于任何时态。previously 是正式书面替换，不带具体数字。"
+    },
+    {
+      "word": "again",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/əˈɡen/",
+      "subgroup": "aeo",
+      "meaning": "adv. 再次；又；另外",
+      "etymology": "古英语 ongean「向回、对面」，日耳曼同根，与德语 gegen（对、反）同源。从「朝向对面」引申出「返回原点」→「再次」。",
+      "roots": [
+        {"part": "a- (on)", "meaning": "在……"},
+        {"part": "-gain (gean)", "meaning": "回，返"}
+      ],
+      "phonetics": "首音节 a- = /ə/（弱读 schwa），重音 -GAIN /ɡen/。注意美式读 /əˈɡen/，英式有时读 /əˈɡeɪn/（元音稍长）。",
+      "core": "「返回原点」——动作折返，回到出发状态，循环一次。",
+      "senses": [
+        {
+          "gloss": "adv. 再次，又（重复某动作）",
+          "logic": "「折回到同一个动作」→ 重复执行，就是「再次」",
+          "en": "The power went out and came back on again within minutes.",
+          "zh": "电断了，几分钟内又恢复了。"
+        },
+        {
+          "gloss": "adv. 另外，此外（补充信息）",
+          "logic": "「再走回来带来新信息」→ 补充另一点，就是「另外」（稍偏历史，现代口语少见此义）",
+          "en": "Again, we must consider the cost implications.",
+          "zh": "另外，我们必须考虑成本方面的影响。"
+        }
+      ],
+      "derivatives": [
+        {"w": "again and again", "gloss": "一再地，反复地（固定短语）"},
+        {"w": "once again", "gloss": "再一次"},
+        {"w": "never again", "gloss": "永远不再"}
+      ],
+      "synonyms": [
+        {"w": "once more", "gloss": "再一次", "note": "「再一次」，语气比 again 略正式，多用于书面或正式演讲"},
+        {"w": "anew", "ipa": "/əˈnjuː/", "gloss": "重新，以新的方式再度", "note": "「重新、再度」，文学化，含有「从头开始」的意味；start anew（重新开始）"}
+      ],
+      "antonyms": [],
+      "nuance": "again 最口语通用，once more 稍正式，anew 带文学色彩且强调「以全新方式重来」，不只是重复动作。"
+    },
+    {
+      "word": "banana",
+      "hl": "a",
+      "levels": ["非托福"],
+      "ipa": "/bəˈnɑːnə/",
+      "subgroup": "aeo",
+      "meaning": "n. 香蕉",
+      "etymology": "16世纪借自西非语（可能是 Wolof 语 banaana），经葡萄牙语或西班牙语传入英语。是展示 schwa 最受欢迎的教学词。",
+      "roots": [
+        {"part": "banana（banaana）", "meaning": "香蕉（西非借词）"}
+      ],
+      "phonetics": "ba-NA-na，三个 a：第一个 ba- = /bə/（schwa），中间 -NA- /nɑː/（重读长音），最后 -na = /nə/（又是 schwa）。一个单词里 schwa 夹住了重音，经典教学展示词。",
+      "tip": "「ba-NA-na」：弱-强-弱，两头的 a 都是 schwa，只有中间那个 a 是长音 /ɑː/。语言学教材首选例词。",
+      "core": "「弯弯黄色果实」——借词，无词根引申义；俚语「发疯」义可能来自「香蕉形似弯弯的疯狂曲线」，属于联想偶合，不强串。",
+      "senses": [
+        {
+          "gloss": "n. 香蕉（水果）",
+          "logic": "直接借词，本义即香蕉",
+          "en": "She sliced a banana into her oatmeal every morning.",
+          "zh": "她每天早上把一根香蕉切片放进燕麦粥里。"
+        },
+        {
+          "gloss": "adj./pred. 疯狂，失控（口语俚语 go bananas）",
+          "logic": "（历史偶合，引申路径不确定）可能源于20世纪美国俚语，与香蕉形状或猴子联想有关；不宜硬串",
+          "en": "The crowd went bananas when the band finally took the stage.",
+          "zh": "乐队终于登台时，观众疯狂了。"
+        }
+      ],
+      "derivatives": [
+        {"w": "banana peel", "gloss": "香蕉皮（也比喻滑倒的隐患）"},
+        {"w": "banana republic", "gloss": "香蕉共和国（讽刺政治不稳定的小国）"},
+        {"w": "bananasplit", "gloss": "香蕉船（冰激凌甜点）"}
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "nuance": "banana 作为语音学示范词无可替代：它用三个字母 a 展示了「重读元音长、非重读塌缩成 schwa」的规律，是学习 schwa 的第一词。"
+    },
+    {
+      "word": "problem",
+      "hl": "e",
+      "levels": ["非托福"],
+      "ipa": "/ˈprɒbləm/",
+      "subgroup": "aeo",
+      "meaning": "n. 问题；难题；麻烦",
+      "etymology": "希腊语 problēma = pro-（向前）+ ballein（抛）= 「抛出来讨论的事」→ 问题。与 symbol（sym-+ballein，放在一起）同根。",
+      "roots": [
+        {"part": "pro-", "meaning": "向前"},
+        {"part": "-blem (ballein)", "meaning": "抛、掷"}
+      ],
+      "phonetics": "PROB-lem，重音在首音节 /ˈprɒb-/，-lem 的 e = /ə/（弱读 schwa）。名词词尾 -em/-om/-um 在非重读时几乎都是 schwa。",
+      "core": "「被抛出来阻挡去路的东西」——有待解决的障碍，横在面前等你处理。",
+      "senses": [
+        {
+          "gloss": "n. 问题，难题（需要解决的困难）",
+          "logic": "「被抛出来必须面对的事」→ 挡在面前要处理的难题",
+          "en": "The team spent all weekend trying to solve the engineering problem.",
+          "zh": "团队整个周末都在尝试解决这个工程难题。"
+        },
+        {
+          "gloss": "n. 麻烦，困扰（人际或日常）",
+          "logic": "「被抛给你的烦恼」→ 日常层面的麻烦事",
+          "en": "I don't want to be a problem for anyone.",
+          "zh": "我不想给任何人添麻烦。"
+        }
+      ],
+      "derivatives": [
+        {"w": "problematic", "gloss": "有问题的，棘手的"},
+        {"w": "problem-solving", "gloss": "解决问题（能力/过程）"},
+        {"w": "no-problem", "gloss": "没问题（口语应答）"}
+      ],
+      "synonyms": [
+        {"w": "issue", "ipa": "/ˈɪʃuː/", "gloss": "议题，问题（中性）", "note": "「议题/问题」，比 problem 更中性，多用于会议讨论；raise an issue（提出议题）"},
+        {"w": "challenge", "ipa": "/ˈtʃælɪndʒ/", "gloss": "挑战（含积极意味）", "note": "「挑战」，比 problem 更积极，暗含「可克服」；a new challenge（新挑战）"},
+        {"w": "difficulty", "ipa": "/ˈdɪfɪkəlti/", "gloss": "困难，阻碍", "note": "「困难」，比 problem 更具体，多指执行层面的阻碍；face difficulties（面临困难）"}
+      ],
+      "antonyms": [
+        {"w": "solution", "note": "解决方案"},
+        {"w": "answer", "note": "答案"}
+      ],
+      "nuance": "problem 最通用，含负面意味；issue 更中性适合正式场合；challenge 正面化，暗示能够克服；difficulty 强调执行障碍。「That's your problem」语气冷漠，「That's your challenge」则温和许多。"
+    },
+    {
+      "word": "lemon",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈlemən/",
+      "subgroup": "aeo",
+      "meaning": "n. 柠檬；（俚语）劣质品，次品  adj. 柠檬黄的",
+      "etymology": "中古英语借自古法语 limon，源自阿拉伯语 laymūn，再追溯至波斯语 līmūn。典型的香料贸易路线借词。",
+      "roots": [
+        {"part": "lemon（laymūn）", "meaning": "柠檬（阿拉伯语借词）"}
+      ],
+      "phonetics": "LEM-on，重音在首音节 /ˈlem-/，词尾 -on 的 o = /ə/（schwa）。英语词尾 -on/-an/-en/-in 在非重读时均读 schwa，非常规律。",
+      "tip": "「a lemon」在美式口语里指「劣质车或次品」——买了辆老出问题的二手车就是 bought a lemon。",
+      "core": "「酸得令人失望的东西」——柠檬的极酸口感，引申出「令人失望的次品」（联想偶合，非词根推导）。",
+      "senses": [
+        {
+          "gloss": "n. 柠檬（水果）",
+          "logic": "本义，借词直接指物",
+          "en": "Add a squeeze of lemon to bring out the flavour of the fish.",
+          "zh": "挤一点柠檬汁来提升鱼的风味。"
+        },
+        {
+          "gloss": "n. 劣质品，次品（美式口语）",
+          "logic": "（联想偶合）酸涩令人失望 → 让人失望的坏东西；「lemon law」已是正式法律术语",
+          "en": "He realized the used car he bought was a total lemon after the third breakdown.",
+          "zh": "第三次抛锚后，他意识到自己买了一辆彻底的劣质车。"
+        },
+        {
+          "gloss": "adj. 柠檬黄色的",
+          "logic": "颜色类比，柠檬果皮的浅黄色",
+          "en": "She wore a lemon dress to the summer party.",
+          "zh": "她穿了一件柠檬黄裙子参加夏日派对。"
+        }
+      ],
+      "derivatives": [
+        {"w": "lemonade", "gloss": "柠檬水，柠檬汁饮料"},
+        {"w": "lemon law", "gloss": "柠檬法（消费者保护法，针对缺陷产品）"},
+        {"w": "lemony", "gloss": "有柠檬味的；柠檬色的"}
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "nuance": "lemon 作「劣质品」义（美式俚语）来自这样一个联想：酸得令人失望。「lemon law」（柠檬法）是美国保护消费者购买劣质车的法律，是真实的法律术语。"
+    },
+    {
+      "word": "common",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈkɒmən/",
+      "subgroup": "aeo",
+      "meaning": "adj. 常见的；共同的；普通的  n. 公地（公共绿地）",
+      "etymology": "拉丁语 communis = com-（共同）+ munis（义务、责任）= 「共同承担义务」→ 公共的、共有的。与 community（社区）、communicate（交流）同根。",
+      "roots": [
+        {"part": "com-", "meaning": "共同"},
+        {"part": "-mon (munis)", "meaning": "义务、职责"}
+      ],
+      "phonetics": "COM-mon，重音在首音节 /ˈkɒm-/，词尾 -mon 的 o = /ə/（schwa）。-mon/-man/-men 词尾非重读时都是 schwa。",
+      "core": "「共同承担的东西」——人人都有份，人人都遇得到，因此既「共同」又「常见」。",
+      "senses": [
+        {
+          "gloss": "adj. 常见的，普遍的",
+          "logic": "「人人都有份」→ 到处都有，就是「常见」",
+          "en": "Colds are common in winter and usually resolve on their own.",
+          "zh": "感冒在冬天很常见，通常会自行痊愈。"
+        },
+        {
+          "gloss": "adj. 共同的，共有的",
+          "logic": "「共同承担」→ 双方都拥有或共享的，就是「共同的」",
+          "en": "The two nations share a common border and a common language.",
+          "zh": "两国共享一条边界和一种共同语言。"
+        },
+        {
+          "gloss": "adj. 普通的，平凡的（含轻微贬义）",
+          "logic": "「人人都有」→ 没有特别之处，偶含「低俗」贬义",
+          "en": "He was dismissed as a common criminal with no political significance.",
+          "zh": "他被视为普通罪犯，没有政治意义。"
+        },
+        {
+          "gloss": "n. 公地（公共绿地）",
+          "logic": "「共同所有的土地」→ 村庄共有的草地或广场",
+          "en": "Children played cricket on the village common every Sunday.",
+          "zh": "孩子们每周日在村子的公共草地上打板球。"
+        }
+      ],
+      "derivatives": [
+        {"w": "commonly", "gloss": "通常地，普遍地"},
+        {"w": "uncommon", "gloss": "不寻常的，罕见的"},
+        {"w": "commonplace", "gloss": "平凡的，司空见惯的事"}
+      ],
+      "synonyms": [
+        {"w": "frequent", "ipa": "/ˈfriːkwənt/", "gloss": "频繁的，多次发生的", "note": "「频繁的」，强调发生频率高；frequent mistakes（常见错误）"},
+        {"w": "widespread", "ipa": "/ˈwaɪdspred/", "gloss": "广泛的，分布范围广的", "note": "「广泛的」，强调分布范围广；widespread poverty（普遍贫困）"},
+        {"w": "mutual", "ipa": "/ˈmjuːtʃuəl/", "gloss": "相互的，共同的", "note": "「共同的/相互的」义，强调双向关系；mutual respect（相互尊重）"}
+      ],
+      "antonyms": [
+        {"w": "rare", "note": "罕见的"},
+        {"w": "unique", "note": "独特的、唯一的"}
+      ],
+      "nuance": "common 兼有「常见」和「共同」两义，频繁出现在正式文本中；frequent 强调发生次数多；widespread 强调地理或范围的广泛；mutual 专用于「相互关系」。"
+    },
+    {
+      "word": "reason",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈriːzən/",
+      "subgroup": "aeo",
+      "meaning": "n. 原因；理由；理性  v. 推理；劝说",
+      "etymology": "拉丁语 ratio「计算、推理」，古法语 raison 传入英语。与 rational（理性的）同根。「能计算推理的能力」→ 理性；「导致结果的推算」→ 原因。",
+      "roots": [
+        {"part": "reason（ratio）", "meaning": "计算、推理"}
+      ],
+      "phonetics": "REA-son，重音在首音节 /ˈriːz-/，词尾 -son 的 o = /ə/（schwa）。-son/-tion/-sion 的非重读元音几乎都是 schwa。",
+      "core": "「推算能力」——既是推理的过程（理性），也是推算出的结论（原因）。",
+      "senses": [
+        {
+          "gloss": "n. 原因，理由",
+          "logic": "「推算出的前因」→ 导致结果的那个推算起点，就是「原因」",
+          "en": "The reason for the delay was a sudden snowstorm.",
+          "zh": "延误的原因是一场突如其来的暴风雪。"
+        },
+        {
+          "gloss": "n. 理性，理智（不可数）",
+          "logic": "「推算的能力本身」→ 人类能够逻辑推理的心智能力",
+          "en": "She appealed to his reason rather than his emotions.",
+          "zh": "她诉诸他的理性而非情感。"
+        },
+        {
+          "gloss": "v. 推理，推断",
+          "logic": "「运用推算能力」→ 通过逻辑得出结论",
+          "en": "He reasoned that if demand fell, prices would soon follow.",
+          "zh": "他推断，如果需求下降，价格很快也会跟着下降。"
+        },
+        {
+          "gloss": "v. 劝说，以道理说服（reason with sb）",
+          "logic": "「用推算/道理与人交流」→ 讲道理劝某人",
+          "en": "There was no reasoning with him once he had made up his mind.",
+          "zh": "一旦他下定决心，就无法再以理服他。"
+        }
+      ],
+      "derivatives": [
+        {"w": "reasonable", "gloss": "合理的；通情达理的"},
+        {"w": "reasoning", "gloss": "推理，论证过程"},
+        {"w": "unreasonable", "gloss": "不合理的，无理取闹的"}
+      ],
+      "synonyms": [
+        {"w": "cause", "ipa": "/kɔːz/", "gloss": "原因（客观直接）", "note": "「原因」，比 reason 更客观，多指直接的物理/事件原因；cause of death（死亡原因）"},
+        {"w": "rationale", "ipa": "/ˌræʃəˈnɑːl/", "gloss": "基本原理，逻辑依据", "note": "「基本原理/理由」，正式书面语，强调逻辑依据；the rationale behind the decision（决定背后的逻辑）"},
+        {"w": "motive", "ipa": "/ˈmoʊtɪv/", "gloss": "动机，心理驱动力", "note": "「动机」，侧重行为的心理驱动力；motive for the crime（犯罪动机）"}
+      ],
+      "antonyms": [
+        {"w": "result", "note": "结果（与原因相对）"}
+      ],
+      "nuance": "reason 最通用，可以主观或客观；cause 多指客观直接原因（物理因果）；motive 专指行为背后的心理目的；rationale 是正式书面词，强调系统性逻辑依据。"
+    },
+    {
+      "word": "pilot",
+      "hl": "o",
+      "levels": ["托福"],
+      "ipa": "/ˈpaɪlət/",
+      "subgroup": "aeo",
+      "meaning": "n. 飞行员；引航员；试播剧集  v. 驾驶；引导；试点",
+      "etymology": "法语 pilote，源自意大利语 pilota / pedota，再追溯至希腊语 pēdon「船桨、舵」。从「掌舵」引申为「引导」。",
+      "roots": [
+        {"part": "pilot（pēdon）", "meaning": "舵、引导"}
+      ],
+      "phonetics": "PI-lot，重音在首音节 /ˈpaɪ-/，词尾 -lot 的 o = /ə/（schwa）。词尾 -ot/-et/-it 在非重读时常读 schwa，pilot / carrot / budget 都是此类。",
+      "tip": "电视圈里 pilot episode（试播集）是一个新剧能否被电视台正式采购的关键第一集，中文叫「试播剧集」或「样片」。",
+      "core": "「掌舵引路的人/事」——从字面的舵手延伸到一切「先行引导、试探方向」的行为。",
+      "senses": [
+        {
+          "gloss": "n. 飞行员；引航员",
+          "logic": "「掌舵者」→ 操控飞机或船只导航的人",
+          "en": "The pilot announced that the flight would land twenty minutes early.",
+          "zh": "飞行员宣布航班将提前二十分钟降落。"
+        },
+        {
+          "gloss": "n. 试播剧集（电视行业）",
+          "logic": "「先行引路」→ 探路性质的第一集，用来测试市场反应",
+          "en": "The network ordered six more episodes after the pilot received strong ratings.",
+          "zh": "试播集收视率强劲，电视台追加了六集订单。"
+        },
+        {
+          "gloss": "v. 驾驶（飞机、船）",
+          "logic": "「掌舵」→ 亲自操控交通工具",
+          "en": "She was the first woman to pilot a commercial aircraft on this route.",
+          "zh": "她是首位在这条航线驾驶商业飞机的女性。"
+        },
+        {
+          "gloss": "v. 试点，试验性推行",
+          "logic": "「先行引路」→ 在小范围先试验，确认方向后再推广",
+          "en": "The school will pilot the new curriculum in three classes before rolling it out system-wide.",
+          "zh": "学校将在三个班级试点新课程，再全面推广。"
+        }
+      ],
+      "derivatives": [
+        {"w": "autopilot", "gloss": "自动驾驶仪；自动完成模式"},
+        {"w": "co-pilot", "gloss": "副驾驶"},
+        {"w": "pilot programme", "gloss": "试点项目"}
+      ],
+      "synonyms": [
+        {"w": "aviator", "ipa": "/ˈeɪvieɪtər/", "gloss": "飞行员（正式书面）", "note": "「飞行员」正式词，比 pilot 更书面，多见于历史文本或正式称谓"},
+        {"w": "navigator", "ipa": "/ˈnævɪɡeɪtər/", "gloss": "导航员，领航员", "note": "「导航员」，与 pilot 有重叠但侧重确定航线；在船和飞机上职责不同"},
+        {"w": "guide", "ipa": "/ɡaɪd/", "gloss": "向导，引导者", "note": "「向导/引导」义，比 pilot 更口语；guide a team through the process（引导团队完成流程）"}
+      ],
+      "antonyms": [],
+      "nuance": "pilot 作动词「引导」与 guide 相近，但 pilot 更强调具体操控或试点性质（pilot a new policy = 试点新政策）；guide 强调提供方向信息。aviator 是 pilot 的正式书面替换，日常口语几乎只用 pilot。"
+    },
+    {
+      "word": "method",
+      "hl": "o",
+      "levels": ["托福"],
+      "ipa": "/ˈmeθəd/",
+      "subgroup": "aeo",
+      "meaning": "n. 方法；方式；条理",
+      "etymology": "希腊语 methodos = meta-（沿着）+ hodos（道路）= 「沿着路走」→ 有系统的方法。与 episode（epi-+hodos，沿途之事）同根。",
+      "roots": [
+        {"part": "meta-", "meaning": "沿着、追随"},
+        {"part": "-hod (hodos)", "meaning": "路、道路"}
+      ],
+      "phonetics": "METH-od，重音在首音节 /ˈmeθ-/，词尾 -od 的 o = /ə/（schwa）。-od/-id/-ad 词尾在非重读时均弱读为 schwa。",
+      "core": "「沿路而行的方式」——有规划、有顺序地沿着一条路径走到终点。",
+      "senses": [
+        {
+          "gloss": "n. 方法，方式（系统化的做法）",
+          "logic": "「沿路走的具体方式」→ 有步骤有系统的做事路径",
+          "en": "The teacher introduced a new method for memorizing vocabulary.",
+          "zh": "老师介绍了一种记忆词汇的新方法。"
+        },
+        {
+          "gloss": "n. 条理，有序（method in madness）",
+          "logic": "「有路可循」→ 即使表面混乱，背后有逻辑顺序",
+          "en": "There is method in his madness — every move he makes has a purpose.",
+          "zh": "他的疯狂背后自有章法——每一步都有目的。"
+        }
+      ],
+      "derivatives": [
+        {"w": "methodical", "gloss": "有条理的，系统化的"},
+        {"w": "methodology", "gloss": "方法论，研究方法体系"},
+        {"w": "methodically", "gloss": "有条不紊地"}
+      ],
+      "synonyms": [
+        {"w": "approach", "ipa": "/əˈproʊtʃ/", "gloss": "方法，处理角度", "note": "「方法/途径」，比 method 更灵活，强调对待问题的态度或角度；a new approach to learning（新的学习方式）"},
+        {"w": "technique", "ipa": "/tekˈniːk/", "gloss": "技术，具体操作技巧", "note": "「技术/技巧」，比 method 更具体，侧重操作层面的技能；painting techniques（绘画技法）"},
+        {"w": "procedure", "ipa": "/prəˈsiːdʒər/", "gloss": "程序，固定步骤", "note": "「程序/步骤」，比 method 更正式，强调有固定顺序的步骤；medical procedure（医疗程序）"}
+      ],
+      "antonyms": [
+        {"w": "chaos", "note": "混乱，无序"}
+      ],
+      "nuance": "method 最通用，强调系统有条理；approach 强调角度和态度（how you deal with something）；technique 侧重具体操作技巧；procedure 强调有严格顺序的步骤（尤其是官方或医学程序）。"
+    },
+    {
+      "word": "mother",
+      "hl": "er",
+      "levels": ["非托福"],
+      "ipa": "/ˈmʌðər/",
+      "subgroup": "er",
+      "meaning": "n. 母亲  v. 像母亲一样照顾",
+      "etymology": "古英语 mōdor，印欧语系同根词极多：拉丁语 mater、希腊语 mētēr、梵语 mātr̥——都是同一个印欧词根 *meh₂tḗr，反映了人类最早命名的亲属关系。",
+      "roots": [
+        {"part": "mother（mōdor / *meh₂tḗr）", "meaning": "母亲（印欧语系通用词根）"}
+      ],
+      "phonetics": "MOTH-er，重音在首音节 /ˈmʌð-/，词尾 -er = /ər/（schwa + 轻微卷舌）。-er 是英语最高产的非重读后缀，所有者都读 /ər/。",
+      "tip": "mother → mater（拉丁）→ maternal（母性的）→ maternity（产科），同一词根构成一整个语义家族。",
+      "core": "「给予生命并滋养的源头」——母亲是起点、是根，一切最初的、最本质的都可称 mother。",
+      "senses": [
+        {
+          "gloss": "n. 母亲",
+          "logic": "本义，给予生命、滋养子女的女性",
+          "en": "Her mother worked two jobs to put her through college.",
+          "zh": "她的母亲身兼两职供她上大学。"
+        },
+        {
+          "gloss": "n. 起源，根本（比喻义，如 mother tongue、mother nature）",
+          "logic": "「万物之源」→ 最原始、最根本的那个，如同孕育一切的母亲",
+          "en": "Necessity is the mother of invention.",
+          "zh": "需求是发明之母。"
+        },
+        {
+          "gloss": "v. 溺爱式照顾，过度保护",
+          "logic": "「母亲式对待」→ 过分保护，带轻微批评色彩",
+          "en": "Stop mothering me — I can handle it myself.",
+          "zh": "别再管着我了——我自己能处理。"
+        }
+      ],
+      "derivatives": [
+        {"w": "motherly", "gloss": "母亲般的，慈爱的"},
+        {"w": "motherboard", "gloss": "主板（计算机核心板）"},
+        {"w": "motherhood", "gloss": "母亲身份，母性"}
+      ],
+      "synonyms": [
+        {"w": "mom", "ipa": "/mɒm/", "gloss": "妈妈（口语）", "note": "「妈妈」，最口语，美式；mom 和 mum（英式）是日常称呼"},
+        {"w": "parent", "ipa": "/ˈpeərənt/", "gloss": "家长，父母", "note": "「家长」，中性词，涵盖父母双方；parent-teacher meeting（家长会）"}
+      ],
+      "antonyms": [
+        {"w": "father", "note": "父亲"},
+        {"w": "child", "note": "孩子"}
+      ],
+      "nuance": "mother 是正式/情感词，mom/mum 是口语称呼。mother 作动词（to mother sb）意为「过度保护、溺爱式照顾」，带一点批评色彩。"
+    },
+    {
+      "word": "father",
+      "hl": "er",
+      "levels": ["非托福"],
+      "ipa": "/ˈfɑːðər/",
+      "subgroup": "er",
+      "meaning": "n. 父亲；创始人  v. 使成为父亲；创立",
+      "etymology": "古英语 fæder，印欧同根：拉丁语 pater、希腊语 patēr、梵语 pitā——词根 *ph₂tḗr 同样是人类最早命名的亲属。paternal（父性的）/ patronize（赞助）来自拉丁语支。",
+      "roots": [
+        {"part": "father（fæder / *ph₂tḗr）", "meaning": "父亲（印欧语系通用词根）"}
+      ],
+      "phonetics": "FA-ther，重音在首音节 /ˈfɑːð-/，-ther = /ðər/（schwa + 轻微卷舌）。与 mother、brother、other 同韵尾。",
+      "core": "「奠基者与权威」——父亲既是家庭的立基者，也是「创始/建立」的隐喻源头。",
+      "senses": [
+        {
+          "gloss": "n. 父亲",
+          "logic": "本义，与子女有血缘关系的男性家长",
+          "en": "He was both a devoted father and a successful scientist.",
+          "zh": "他既是一位尽职的父亲，也是一位成功的科学家。"
+        },
+        {
+          "gloss": "n. 创始人，奠基者",
+          "logic": "「奠定基础的人」→ 某运动、国家或领域的开创者",
+          "en": "Darwin is often called the father of evolutionary biology.",
+          "zh": "达尔文常被称为进化生物学之父。"
+        },
+        {
+          "gloss": "v. 创立，开创",
+          "logic": "「如父亲般孕育产生」→ 创立某运动或思想",
+          "en": "He fathered a new approach to urban planning in the 1960s.",
+          "zh": "他在20世纪60年代开创了城市规划的新方法。"
+        }
+      ],
+      "derivatives": [
+        {"w": "fatherly", "gloss": "父亲般的，慈父式的"},
+        {"w": "fatherhood", "gloss": "父亲身份，父性"},
+        {"w": "forefather", "gloss": "祖先，先辈"}
+      ],
+      "synonyms": [
+        {"w": "dad", "ipa": "/dæd/", "gloss": "爸爸（口语）", "note": "「爸爸」，最口语；dad 是英美通用的日常称呼"},
+        {"w": "founder", "ipa": "/ˈfaʊndər/", "gloss": "创始人，开创者", "note": "「创始人」义，强调开创某组织或运动；co-founder（联合创始人）"}
+      ],
+      "antonyms": [
+        {"w": "mother", "note": "母亲"},
+        {"w": "child", "note": "孩子"}
+      ],
+      "nuance": "father 正式，dad 口语。「father a child」是「使某人成为父亲/生育」，「father a movement」是「创立一场运动」——两义均偶见于书面语。"
+    },
+    {
+      "word": "teacher",
+      "hl": "er",
+      "levels": ["非托福"],
+      "ipa": "/ˈtiːtʃər/",
+      "subgroup": "er",
+      "meaning": "n. 教师，教员",
+      "etymology": "teach（古英语 tǣcan「示意、教导」）+ 职业后缀 -er。这种「动词 + -er = 从事该职业的人」是英语最规律的构词法。",
+      "roots": [
+        {"part": "teach（tǣcan）", "meaning": "教导"},
+        {"part": "-er", "meaning": "做……的人（施动者后缀）"}
+      ],
+      "phonetics": "TEA-cher，重音在首音节 /ˈtiːtʃ-/，-cher = /tʃər/（ch + schwa 卷舌）。施动者后缀 -er 的读音永远是 /ər/，不随前缀变化。",
+      "tip": "英语「职业 -er」词族：teacher / writer / painter / driver / farmer——词尾 -er 统统读 /ər/，记住这条规律，几百个职业词的发音都对了。",
+      "core": "「将知识传递给他人的人」——单义词，但角色从课堂延伸到一切引导与传授的场合。",
+      "senses": [
+        {
+          "gloss": "n. 教师，老师",
+          "logic": "teach（教）+ -er（施动者）= 从事教学的人",
+          "en": "A good teacher knows when to step back and let students discover on their own.",
+          "zh": "好的老师知道何时退后一步，让学生自己去发现。"
+        }
+      ],
+      "derivatives": [
+        {"w": "teaching", "gloss": "教学，教法；教义"},
+        {"w": "teachable", "gloss": "可被教导的；有悟性的"},
+        {"w": "schoolteacher", "gloss": "中小学教师"}
+      ],
+      "synonyms": [
+        {"w": "instructor", "ipa": "/ɪnˈstrʌktər/", "gloss": "讲师，技能教练", "note": "「教练/讲师」，比 teacher 更正式，多用于技能培训或大学；flight instructor（飞行教练）"},
+        {"w": "educator", "ipa": "/ˈedʒukeɪtər/", "gloss": "教育工作者", "note": "「教育工作者」，比 teacher 更宏观，涵盖教育体系中的各类人员；policymakers and educators（决策者和教育工作者）"},
+        {"w": "tutor", "ipa": "/ˈtjuːtər/", "gloss": "家教，私人辅导老师", "note": "「家教/导师」，比 teacher 更私人化，指一对一或小班辅导；private tutor（家教）"}
+      ],
+      "antonyms": [
+        {"w": "student", "note": "学生"},
+        {"w": "learner", "note": "学习者"}
+      ],
+      "nuance": "teacher 最通用，指学校里的老师；instructor 强调技能传授；tutor 指私人一对一辅导；educator 是最宏观的正式词，含政策和体系层面。"
+    },
+    {
+      "word": "water",
+      "hl": "er",
+      "levels": ["非托福"],
+      "ipa": "/ˈwɔːtər/",
+      "subgroup": "er",
+      "meaning": "n. 水  v. 浇水；（眼睛）流泪",
+      "etymology": "古英语 wæter，日耳曼同根，与德语 Wasser、荷兰语 water 同源。印欧词根 *wed-「水、湿」，与 wet（湿）、winter（冬天，多雨的季节）同源。",
+      "roots": [
+        {"part": "water（wæter / *wed-）", "meaning": "水、湿"}
+      ],
+      "phonetics": "WA-ter，重音在首音节 /ˈwɔː-/（美式有时读 /ˈwɑː-/），-ter = /tər/（flap-t + schwa）。美式英语中 -ter 里的 t 在元音之间读 flap /ɾ/，听起来几乎像 d。",
+      "tip": "美式「water」的 t 是 flap-t（/ɾ/），听起来像「wader」。区分 water/wader 靠语境而非发音细节。",
+      "core": "「流动滋润、无形随容的液体」——水的物理特性（能流、能渗、能映、可稀释）催生了丰富的隐喻义。",
+      "senses": [
+        {
+          "gloss": "n. 水（液体）",
+          "logic": "本义，H₂O",
+          "en": "Clean drinking water remains inaccessible to millions of people worldwide.",
+          "zh": "全球仍有数百万人无法获得干净的饮用水。"
+        },
+        {
+          "gloss": "v. 浇水（植物）",
+          "logic": "「用水滋润」→ 给植物补充水分",
+          "en": "She watered the garden every evening during the drought.",
+          "zh": "干旱期间她每天傍晚都给花园浇水。"
+        },
+        {
+          "gloss": "v. （眼睛）流泪，（嘴）分泌唾液",
+          "logic": "「眼睛/口腔产生类水液体」→ 受刺激产生分泌物",
+          "en": "His eyes watered in the cold wind.",
+          "zh": "冷风吹来，他的眼睛流出了泪水。"
+        },
+        {
+          "gloss": "v. 稀释，削弱（water down）",
+          "logic": "「加水使浓度降低」→ 削弱力度或严格程度",
+          "en": "Critics accused the government of watering down the environmental regulations.",
+          "zh": "批评者指责政府削弱了环保法规。"
+        }
+      ],
+      "derivatives": [
+        {"w": "waterfall", "gloss": "瀑布"},
+        {"w": "waterproof", "gloss": "防水的"},
+        {"w": "underwater", "gloss": "水下的；（口语）亏损的"}
+      ],
+      "synonyms": [
+        {"w": "liquid", "ipa": "/ˈlɪkwɪd/", "gloss": "液体（泛指）", "note": "「液体」，泛指，比 water 范围更广；liquid diet（流食）"},
+        {"w": "H₂O", "gloss": "水（化学式，科学或幽默语境）", "note": "科学/幽默表达，指水的化学式，口语中有时用作玩笑替换"}
+      ],
+      "antonyms": [
+        {"w": "fire", "note": "火（传统对立元素）"},
+        {"w": "desert", "note": "沙漠（缺水的环境）"}
+      ],
+      "nuance": "water 的隐喻非常丰富：in hot water（陷入麻烦）、water under the bridge（既往不咎）、test the waters（先试探试探）——这些固定表达是写作中的地道用法。"
+    },
+    {
+      "word": "number",
+      "hl": "er",
+      "levels": ["非托福"],
+      "ipa": "/ˈnʌmbər/",
+      "subgroup": "er",
+      "meaning": "n. 数字；数量；期（杂志）  v. 编号；共计",
+      "etymology": "拉丁语 numerus「数字、数量」，古法语 nombre 传入。与 enumerate（列举）、numeral（数字符号）同根。",
+      "roots": [
+        {"part": "number（numerus）", "meaning": "数字、数量"}
+      ],
+      "phonetics": "NUM-ber，重音在首音节 /ˈnʌm-/，-ber = /bər/（b + schwa 卷舌）。词尾 -ber/-ger/-per 在非重读时均读 /ər/：number / burger / paper。",
+      "core": "「可计量的量」——凡是能被计数或编排的东西，都在 number 的语义范围内。",
+      "senses": [
+        {
+          "gloss": "n. 数字，数（抽象概念）",
+          "logic": "本义，数学中的计量单位",
+          "en": "Seven is my lucky number.",
+          "zh": "七是我的幸运数字。"
+        },
+        {
+          "gloss": "n. 数量，数目（可数）",
+          "logic": "「可计量的总量」→ 一组事物的总数",
+          "en": "The number of international students enrolled has doubled over the past decade.",
+          "zh": "过去十年间，注册的国际学生人数翻了一番。"
+        },
+        {
+          "gloss": "n. 期，号（杂志、出版物）",
+          "logic": "「按顺序编排」→ 出版物的第几期",
+          "en": "This article appeared in the autumn number of the journal.",
+          "zh": "这篇文章发表在该期刊的秋季号上。"
+        },
+        {
+          "gloss": "v. 编号；总计达",
+          "logic": "「给每项标上数字」→ 编排号码；「总量达到某数」→ 共计",
+          "en": "The volunteers numbered over five hundred by the end of the campaign.",
+          "zh": "活动结束时，志愿者总数超过了五百人。"
+        }
+      ],
+      "derivatives": [
+        {"w": "numerous", "gloss": "众多的，许多的"},
+        {"w": "outnumber", "gloss": "在数量上超过"},
+        {"w": "numbered", "gloss": "有限的，所剩无多的（his days are numbered）"}
+      ],
+      "synonyms": [
+        {"w": "figure", "ipa": "/ˈfɪɡər/", "gloss": "数字，统计数值", "note": "「数字」，多指统计数据中的具体数值；sales figures（销售数字）"},
+        {"w": "quantity", "ipa": "/ˈkwɒntɪti/", "gloss": "数量，可计量的量", "note": "「数量」，正式书面语，强调可计量的量；a large quantity of（大量）"},
+        {"w": "digit", "ipa": "/ˈdɪdʒɪt/", "gloss": "（0–9）个位数字", "note": "「（0–9的）数字」，特指单个阿拉伯数字；a six-digit PIN（六位密码）"}
+      ],
+      "antonyms": [],
+      "nuance": "number 最通用（number of students）；figure 多用于商业数据（profit figures）；quantity 强调数量的大小（large quantity）；digit 特指个位数字（手指也是 digit，因为古人用手指计数）。"
+    },
+    {
+      "word": "consider",
+      "hl": "er",
+      "levels": ["非托福"],
+      "ipa": "/kənˈsɪdər/",
+      "subgroup": "er",
+      "meaning": "v. 考虑；认为；照顾到",
+      "etymology": "拉丁语 considerare = con-（仔细）+ sidus（星星）= 「仔细看星星」→ 仔细观察推测→ 考虑。古罗马占卜师通过观星来判断吉凶，这是词源背后的文化故事。",
+      "roots": [
+        {"part": "con-", "meaning": "共同、仔细"},
+        {"part": "-sider (sidus)", "meaning": "星星"}
+      ],
+      "phonetics": "con-SID-er，重音在中间音节 /ˈsɪd-/，-er 词尾 = /ər/（schwa）。首音节 con- = /kən/（也是 schwa），首尾各一个 schwa。",
+      "tip": "词根 -sider-（星）还藏在 disaster（di-+astro，「凶星」→ 灾难）、desire（de-+sidus，「渴望好星」→ 渴望）里——古人真的靠看星星做决定。",
+      "core": "「仔细凝视、权衡」——仿佛古罗马占卜师静观星象，内心反复推算再做判断。",
+      "senses": [
+        {
+          "gloss": "v. 考虑，斟酌（可能性或选项）",
+          "logic": "「仔细观察权衡」→ 对某个想法或选项反复思量",
+          "en": "The committee will consider all proposals before making a final decision.",
+          "zh": "委员会将在做出最终决定前考虑所有提案。"
+        },
+        {
+          "gloss": "v. 认为，视为（consider sb/sth + adj/n）",
+          "logic": "「经观察后得出判断」→ 形成对某人/物的看法",
+          "en": "She is widely considered the leading expert in her field.",
+          "zh": "她被普遍认为是该领域的顶尖专家。"
+        },
+        {
+          "gloss": "v. 体谅，顾及（他人感受）",
+          "logic": "「把他人也纳入观察视野」→ 留意并照顾到他人",
+          "en": "Please consider how your decision might affect the rest of the team.",
+          "zh": "请考虑一下你的决定可能对团队其他人产生的影响。"
+        }
+      ],
+      "derivatives": [
+        {"w": "consideration", "gloss": "考虑；体谅；重要因素"},
+        {"w": "considerable", "gloss": "相当大的，值得重视的"},
+        {"w": "considerate", "gloss": "体贴的，考虑周到的"}
+      ],
+      "synonyms": [
+        {"w": "contemplate", "ipa": "/ˈkɒntəmpleɪt/", "gloss": "深思，沉思", "note": "「深思、沉思」，比 consider 更强调长时间沉浸式思考；contemplate the meaning of life（沉思人生意义）"},
+        {"w": "regard", "ipa": "/rɪˈɡɑːrd/", "gloss": "视为，认为", "note": "「视为、认为」义，与 consider 接近；regard sb as（把某人视为）"},
+        {"w": "weigh", "ipa": "/weɪ/", "gloss": "权衡，斟酌利弊", "note": "「权衡」，强调对比不同选项的利弊；weigh the pros and cons（权衡利弊）"}
+      ],
+      "antonyms": [
+        {"w": "ignore", "note": "无视"},
+        {"w": "dismiss", "note": "不予考虑"}
+      ],
+      "nuance": "consider 最通用，可指「思考一个想法」或「认为」；contemplate 强调深度和持续时间；weigh 侧重对比多个选项的利弊；regard 用于「视为」义时是 consider 的正式替换（I regard it as essential = I consider it essential）。"
+    },
+    {
+      "word": "colour",
+      "hl": "our",
+      "levels": ["非托福"],
+      "ipa": "/ˈkʌlər/",
+      "subgroup": "suffix",
+      "meaning": "n. 颜色；肤色；色彩  v. 给……着色；影响（判断）",
+      "etymology": "拉丁语 color「颜色、外观」，古法语 colour 传入。与 discolour（褪色）、colourful（多彩的）同根。英式拼写保留 -our，美式简化为 color。",
+      "roots": [
+        {"part": "colour（color）", "meaning": "颜色、外观"}
+      ],
+      "phonetics": "COL-our，重音在首音节 /ˈkʌl-/，-our 词尾 = /ər/（schwa），发音和 color 完全相同。英式 -our 与 -er/-ar/-or 在非重读时读音一致，都是 schwa + 卷舌。",
+      "tip": "colour（英式）= color（美式），发音完全相同。其他英美拼写差异词：honour/honor、favour/favor、neighbour/neighbor——词尾 -our/-or 都读 /ər/。",
+      "core": "「事物表面呈现的视觉特征」——颜色是外观的最直观层，引申到一切「染上某种特质」的情境。",
+      "senses": [
+        {
+          "gloss": "n. 颜色（视觉属性）",
+          "logic": "本义，光线在视网膜上产生的感知",
+          "en": "The autumn forest was ablaze with colour.",
+          "zh": "秋天的森林色彩绚烂，如火燃烧。"
+        },
+        {
+          "gloss": "n. 肤色",
+          "logic": "「皮肤表面呈现的颜色」→ 特指人的肤色，常见于反歧视语境",
+          "en": "People of all colours and backgrounds were welcome at the event.",
+          "zh": "活动欢迎所有肤色和背景的人参与。"
+        },
+        {
+          "gloss": "n. 色彩，生动感（抽象）",
+          "logic": "「丰富的视觉感」→ 比喻生动性、趣味性",
+          "en": "His writing is full of colour and personality.",
+          "zh": "他的文字充满色彩和个性。"
+        },
+        {
+          "gloss": "v. 给……着色；影响（判断）",
+          "logic": "「在表面涂上颜色」→ 字面涂色；「给思维染上某种色彩」→ 影响判断或解读",
+          "en": "Personal bias can colour your reading of the evidence.",
+          "zh": "个人偏见会影响你对证据的解读。"
+        }
+      ],
+      "derivatives": [
+        {"w": "colourful", "gloss": "色彩丰富的；生动有趣的"},
+        {"w": "colourless", "gloss": "无色的；乏味的"},
+        {"w": "discolour", "gloss": "褪色，变色"}
+      ],
+      "synonyms": [
+        {"w": "hue", "ipa": "/hjuː/", "gloss": "色调，纯色相", "note": "「色调」，比 colour 更精确，多用于美术和设计；a warm hue（暖色调）"},
+        {"w": "shade", "ipa": "/ʃeɪd/", "gloss": "色度，同色深浅变化", "note": "「色度/深浅」，强调同一颜色的明暗变化；a lighter shade of blue（更浅的蓝色）"},
+        {"w": "tint", "ipa": "/tɪnt/", "gloss": "色泽，加白后的淡色调", "note": "「色泽/染色」，偏指加白后的淡色，或局部上色；a golden tint（金色色调）"}
+      ],
+      "antonyms": [
+        {"w": "monochrome", "note": "单色，黑白"},
+        {"w": "colourless", "note": "无色的，乏味的"}
+      ],
+      "nuance": "colour 最通用；hue 是专业术语，指具体的纯色相（red、blue 等）；shade 指同色的深浅变化；tint 指加入白色后的浅色调。「colour someone's judgment」是「影响某人的判断」，是比喻义。"
+    },
+    {
+      "word": "favour",
+      "hl": "our",
+      "levels": ["非托福"],
+      "ipa": "/ˈfeɪvər/",
+      "subgroup": "suffix",
+      "meaning": "n. 好感；恩惠；帮忙  v. 偏爱；支持",
+      "etymology": "拉丁语 favor「好意、支持」，与 favorable（有利的）、favored（受宠爱的）同根。英式 -our，美式 favor，发音相同。",
+      "roots": [
+        {"part": "favour（favor）", "meaning": "好意、偏爱"}
+      ],
+      "phonetics": "FA-vour，重音在首音节 /ˈfeɪv-/，-our = /ər/（schwa）。所有英式 -our 词尾在非重读位置都读 /ər/，与美式 -or 一致。",
+      "core": "「倾斜向某人的善意」——像天平倾向一侧，心偏向了某人，就有了偏爱、恩惠与支持。",
+      "senses": [
+        {
+          "gloss": "n. 恩惠，帮忙（do sb a favour）",
+          "logic": "「善意倾斜」→ 为对方做一件出于好意的事",
+          "en": "Could you do me a favour and water my plants while I'm away?",
+          "zh": "我不在的时候能帮我浇浇植物吗？"
+        },
+        {
+          "gloss": "n. 好感，青睐",
+          "logic": "「心向某人/物倾斜」→ 对某人的正面态度",
+          "en": "The policy quickly fell out of favour with the public.",
+          "zh": "这项政策很快失去了公众的青睐。"
+        },
+        {
+          "gloss": "v. 偏爱，倾向于",
+          "logic": "「天平偏向某侧」→ 在多个选项中更倾向某一个",
+          "en": "Most voters seem to favour the incumbent candidate.",
+          "zh": "大多数选民似乎倾向于支持现任候选人。"
+        },
+        {
+          "gloss": "v. 支持（某观点/方案）",
+          "logic": "「善意指向某方案」→ 认为某事更好，表示支持",
+          "en": "The committee favours a gradual rather than an abrupt transition.",
+          "zh": "委员会倾向于渐进式而非突然性的过渡。"
+        }
+      ],
+      "derivatives": [
+        {"w": "favourite", "gloss": "最喜爱的；最受青睐的人/物"},
+        {"w": "favourable", "gloss": "有利的，好的（条件）"},
+        {"w": "disfavour", "gloss": "不赞同；失宠"}
+      ],
+      "synonyms": [
+        {"w": "benefit", "ipa": "/ˈbenɪfɪt/", "gloss": "好处，利益（客观）", "note": "「好处/利益」，比 favour 更客观正式；mutual benefit（互利）"},
+        {"w": "support", "ipa": "/səˈpɔːrt/", "gloss": "支持，拥护", "note": "「支持」义，比 favour 更有力度；public support（民意支持）"},
+        {"w": "kindness", "ipa": "/ˈkaɪndnəs/", "gloss": "善意，体贴之举", "note": "「善意/恩惠」义，比 favour 更侧重情感；do someone a kindness（帮别人一个忙）"}
+      ],
+      "antonyms": [
+        {"w": "oppose", "note": "反对"},
+        {"w": "disfavour", "note": "不支持；失宠"}
+      ],
+      "nuance": "favour 强调个人偏爱或人情（do someone a favour）；benefit 强调客观利益；support 是更公开、有力的支持行为。「in sb's favour」表示「对某人有利」，常见于法律和比赛结果语境。"
+    },
+    {
+      "word": "harbour",
+      "hl": "our",
+      "levels": ["非托福"],
+      "ipa": "/ˈhɑːrbər/",
+      "subgroup": "suffix",
+      "meaning": "n. 港口；避风港  v. 窝藏；心怀（怨恨等）",
+      "etymology": "古英语 herebeorg = here（军队）+ beorg（庇护）= 「军队的庇护所」→ 港口。从「庇护士兵」延伸为「藏匿罪犯」（harbour a fugitive）。",
+      "roots": [
+        {"part": "har- (here)", "meaning": "军队、部队"},
+        {"part": "-bour (beorg)", "meaning": "庇护、保护"}
+      ],
+      "phonetics": "HAR-bour，重音在首音节 /ˈhɑːr-/，-bour = /bər/（b + schwa）。英式 harbour，美式 harbor，发音相同。",
+      "tip": "「harbour a grudge」（心怀怨恨）和「harbour a fugitive」（窝藏逃犯）——harbour 的动词义「隐藏在内心或物理庇护」是托福写作值得用的好词。",
+      "core": "「庇护与容纳」——港口容纳船只、内心容纳情绪，凡是「给某物一个藏身之所」都是 harbour 的语义核心。",
+      "senses": [
+        {
+          "gloss": "n. 港口，港湾（有防护的自然锚地）",
+          "logic": "本义，「给军队/船只提供庇护的地方」",
+          "en": "The harbour was filled with fishing boats returning from the sea.",
+          "zh": "港口里停满了从海上归来的渔船。"
+        },
+        {
+          "gloss": "n. 避风港，庇护所（比喻）",
+          "logic": "「安全容纳之地」→ 提供保护的地方，可用于比喻",
+          "en": "The library became a harbour of calm in his chaotic teenage years.",
+          "zh": "在他混乱的青少年岁月里，图书馆成了一处宁静的避风港。"
+        },
+        {
+          "gloss": "v. 窝藏，庇护（罪犯、逃犯）",
+          "logic": "「给某人提供藏身之所」→ 隐匿不应该保护的对象",
+          "en": "He was convicted of harbouring a fugitive from justice.",
+          "zh": "他被判定藏匿了一名在逃罪犯。"
+        },
+        {
+          "gloss": "v. 心怀（负面情绪，如怨恨、疑虑）",
+          "logic": "「在内心给某种情绪提供容身之所」→ 长期持有某种负面情感",
+          "en": "She still harboured doubts about his true intentions.",
+          "zh": "她仍然对他的真实意图心存疑虑。"
+        }
+      ],
+      "derivatives": [
+        {"w": "harbourage", "gloss": "庇护；停泊处（英式书面）"},
+        {"w": "safe harbour", "gloss": "安全港（法律/比喻）"},
+        {"w": "ice-free harbour", "gloss": "不冻港"}
+      ],
+      "synonyms": [
+        {"w": "port", "ipa": "/pɔːrt/", "gloss": "港口（通用，含人工港）", "note": "「港口」，比 harbour 更通用，强调贸易和船只出入；a commercial port（商业港口）"},
+        {"w": "shelter", "ipa": "/ˈʃeltər/", "gloss": "庇护所，遮蔽处", "note": "「庇护所」义，比 harbour 更口语；take shelter from the storm（躲避风暴）"},
+        {"w": "conceal", "ipa": "/kənˈsiːl/", "gloss": "隐藏，藏匿", "note": "「隐藏」义的近义词，比 harbour 更强调藏匿行为；conceal evidence（隐匿证据）"}
+      ],
+      "antonyms": [
+        {"w": "expose", "note": "曝光、揭露"},
+        {"w": "expel", "note": "驱逐、赶走"}
+      ],
+      "nuance": "harbour 作名词特指「有防护的自然港湾」，port 是更广的「港口（包括人工）」；作动词时，harbour 含有「默默持有某种负面情感或庇护某人」的意味，concealment 更强调物理藏匿动作。"
+    },
+    {
+      "word": "dollar",
+      "hl": "ar",
+      "levels": ["非托福"],
+      "ipa": "/ˈdɒlər/",
+      "subgroup": "suffix",
+      "meaning": "n. 美元；（加、澳等国的）元",
+      "etymology": "德语 Taler（约缩自 Joachimstaler），指16世纪在波西米亚约阿希姆斯塔尔铸造的银币。经荷兰语 daler 传入英语，最终成为美国货币单位。",
+      "roots": [
+        {"part": "dollar（Taler）", "meaning": "约阿希姆斯塔尔的银币"}
+      ],
+      "phonetics": "DOL-lar，重音在首音节 /ˈdɒl-/，-lar = /lər/（l + schwa）。非重读 -ar 和 -er 发音相同，都是 /ər/：dollar / collar / cellar / pillar。",
+      "tip": "dollar 词源里的 -thal-（山谷）同样出现在 Neanderthal（尼安德特河谷）——同一个地名构词逻辑，走进银矿山谷铸出了美元。",
+      "core": "「约定俗成的交换凭证」——借自地名的专有词，无词根义引申；美元作为国际储备货币，dollar 在隐喻中常代指「金钱/利益」。",
+      "senses": [
+        {
+          "gloss": "n. 美元（货币单位）",
+          "logic": "本义，源自特定铸币地名的借词",
+          "en": "The project received a two-million-dollar grant from the federal government.",
+          "zh": "该项目获得了联邦政府两百万美元的拨款。"
+        },
+        {
+          "gloss": "n. 元（加元、澳元等）",
+          "logic": "「同名货币体系扩展」→ 其他国家采用相同名称的货币",
+          "en": "The exchange rate between the Australian dollar and the US dollar fluctuates daily.",
+          "zh": "澳元与美元之间的汇率每日波动。"
+        }
+      ],
+      "derivatives": [
+        {"w": "dollarize", "gloss": "美元化（以美元替代本国货币）"},
+        {"w": "petrodollar", "gloss": "石油美元"},
+        {"w": "dollar sign", "gloss": "美元符号（$）"}
+      ],
+      "synonyms": [
+        {"w": "buck", "ipa": "/bʌk/", "gloss": "美元（口语）", "note": "「美元」最口语的替换，非正式；it costs five bucks（要五美元）"},
+        {"w": "currency", "ipa": "/ˈkʌrənsi/", "gloss": "货币，货币体系", "note": "「货币」，比 dollar 更宏观，指货币体系；foreign currency（外汇）"}
+      ],
+      "antonyms": [],
+      "nuance": "dollar 是正式计量单位，buck 是口语，currency 是体系层面。「you bet your bottom dollar」是强调语气的口语：「绝对」。"
+    },
+    {
+      "word": "similar",
+      "hl": "ar",
+      "levels": ["托福"],
+      "ipa": "/ˈsɪmɪlər/",
+      "subgroup": "suffix",
+      "meaning": "adj. 相似的，类似的",
+      "etymology": "拉丁语 similis「相同的」，与 simulate（模拟）、assimilate（同化）、resemble（类似，re-+similis）同根。核心语义「看起来一样」。",
+      "roots": [
+        {"part": "simil- (similis)", "meaning": "相同、类似"},
+        {"part": "-ar", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "SIM-i-lar，重音在首音节 /ˈsɪm-/，中间 -i- = /ɪ/（轻读），词尾 -lar = /lər/（schwa）。-ar/-er/-or 词尾在形容词位置非重读时都是 /ər/。",
+      "core": "「像同一个模子刻出来的感觉」——不是完全一样，但有足够的共同特征让人联想到同源。",
+      "senses": [
+        {
+          "gloss": "adj. 相似的，类似的",
+          "logic": "本义，与另一事物有明显的共同特征，但不完全相同",
+          "en": "The two studies reached similar conclusions despite using different methodologies.",
+          "zh": "尽管研究方法不同，两项研究得出了相似的结论。"
+        }
+      ],
+      "derivatives": [
+        {"w": "similarity", "gloss": "相似性，相似之处"},
+        {"w": "similarly", "gloss": "类似地，同样地"},
+        {"w": "dissimilar", "gloss": "不相似的，不同的"}
+      ],
+      "synonyms": [
+        {"w": "alike", "ipa": "/əˈlaɪk/", "gloss": "相似的（常作表语）", "note": "「相似的」，比 similar 更口语，常作表语；they look alike（他们看起来很像）"},
+        {"w": "comparable", "ipa": "/ˈkɒmpərəbl/", "gloss": "可比的，相当的", "note": "「可比的/相当的」，正式书面语，强调在相同维度上可做对比；comparable data（可比数据）"},
+        {"w": "analogous", "ipa": "/əˈnæləɡəs/", "gloss": "类似的，功能/结构上对应的", "note": "「类似的/相仿的」，学术正式词，强调结构或功能上的对应；an analogous situation（类似的情形）"}
+      ],
+      "antonyms": [
+        {"w": "different", "note": "不同的"},
+        {"w": "dissimilar", "note": "不相似的"}
+      ],
+      "nuance": "similar 最通用；alike 多作表语（they are alike），不作定语（NOT alike problems）；comparable 强调在同一标准下可以量化比较；analogous 是最学术的词，强调两者在功能或结构上对应（analogy 类比）。"
+    },
+    {
+      "word": "particular",
+      "hl": "ar",
+      "levels": ["托福"],
+      "ipa": "/pərˈtɪkjʊlər/",
+      "subgroup": "suffix",
+      "meaning": "adj. 特定的；特别的；挑剔的  n. （pl.）详情，细节",
+      "etymology": "拉丁语 particularis = particula（小部分）+ -aris（形容词后缀）= 「属于某个小部分的」→ 特定的、个别的。与 particle（微粒）、part（部分）同根。",
+      "roots": [
+        {"part": "particul- (particula)", "meaning": "小部分、细节"},
+        {"part": "-ar", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "par-TIC-u-lar，重音在第二音节 /ˈtɪk-/，首音节 par- = /pər/（schwa），词尾 -lar = /lər/（schwa）。首尾各一个 schwa，四音节词里 schwa 出现两次。",
+      "tip": "「in particular」= 「尤其、特别」，是学术写作高频过渡词，比 especially 正式，比 notably 口语化。",
+      "core": "「从整体中单独拣出一小块」——强调具体到某个特定部分，不泛泛而论。",
+      "senses": [
+        {
+          "gloss": "adj. 特定的，具体的（指某一个）",
+          "logic": "「从整体中拣出的那一小块」→ 单独指明的那一个",
+          "en": "Is there any particular reason you chose this neighbourhood?",
+          "zh": "你选择这个街区有什么特别的原因吗？"
+        },
+        {
+          "gloss": "adj. 格外的，特别的（in particular = 尤其）",
+          "logic": "「被单独拣出来强调」→ 在众多中尤为突出",
+          "en": "In particular, the study highlights the role of early childhood education.",
+          "zh": "这项研究尤其强调了早期教育的作用。"
+        },
+        {
+          "gloss": "adj. 挑剔的，讲究的（be particular about）",
+          "logic": "「只认准那一小块细节」→ 对具体细节极为在意，就是「挑剔」",
+          "en": "He is very particular about the temperature of his coffee.",
+          "zh": "他对咖啡的温度非常讲究。"
+        },
+        {
+          "gloss": "n. 详情，细节（复数 particulars）",
+          "logic": "「拣出的每一小块信息」→ 具体的细节信息",
+          "en": "Please send us your full particulars, including your address and contact number.",
+          "zh": "请发送您的完整信息，包括地址和联系电话。"
+        }
+      ],
+      "derivatives": [
+        {"w": "particularly", "gloss": "尤其，特别地"},
+        {"w": "particularity", "gloss": "特殊性；细节，详情"},
+        {"w": "in particular", "gloss": "尤其，特别（固定搭配）"}
+      ],
+      "synonyms": [
+        {"w": "specific", "ipa": "/spɪˈsɪfɪk/", "gloss": "具体的，特定的（被明确指定）", "note": "「具体的/特定的」，比 particular 更强调明确性；a specific date（具体日期）"},
+        {"w": "precise", "ipa": "/prɪˈsaɪs/", "gloss": "精确的，不含糊的", "note": "「精确的」，比 particular 更强调不含糊；precise measurements（精确测量）"},
+        {"w": "fussy", "ipa": "/ˈfʌsi/", "gloss": "挑剔的（口语，含贬义）", "note": "「挑剔」义的口语替换，比 particular 更贬义；don't be fussy（别挑剔）"}
+      ],
+      "antonyms": [
+        {"w": "general", "note": "一般的，笼统的"},
+        {"w": "vague", "note": "模糊的，不明确的"}
+      ],
+      "nuance": "particular 在「特定」义上与 specific 接近，但 particular 更强调「在众多中专门挑选出的那一个」；specific 强调「被明确指定」；precise 侧重量化的精确。「particular about food」（对食物挑剔）中的 particular 接近 fussy，但语气更委婉。"
+    },
+    {
+      "word": "picture",
+      "hl": "ure",
+      "levels": ["非托福"],
+      "ipa": "/ˈpɪktʃər/",
+      "subgroup": "suffix",
+      "meaning": "n. 图片；电影；情景  v. 想象；描绘",
+      "etymology": "拉丁语 pictura = pictus（画的）+ -ura（名词后缀），与 depict（描绘）、pigment（颜料）同根。词源核心是「用颜料画出来的东西」。",
+      "roots": [
+        {"part": "pict- (pingere)", "meaning": "画、涂色"},
+        {"part": "-ure", "meaning": "名词后缀（结果或行为）"}
+      ],
+      "phonetics": "PIC-ture，重音在首音节 /ˈpɪk-/，-ture = /tʃər/（ch + schwa）。-ture 后缀的发音规律：t + u + re → /tʃər/，比如 culture / nature / feature / adventure 全是这个规律。",
+      "tip": "-ture 读 /tʃər/ 不读 /tjʊər/，是英语最重要的拼读规则之一：picture / future / nature / lecture / culture——全部 /tʃər/ 收尾。",
+      "core": "「用颜料或光固定下来的视觉瞬间」——从字面的画面延伸到脑海中的想象画面，再延伸到整体局面。",
+      "senses": [
+        {
+          "gloss": "n. 图片，画作，照片",
+          "logic": "本义，用颜料或光学手段固定的视觉图像",
+          "en": "She hung a picture of the coast above her desk.",
+          "zh": "她在书桌上方挂了一幅海岸画。"
+        },
+        {
+          "gloss": "n. 电影（the pictures = 去看电影，英式）",
+          "logic": "「动态的连续图像」→ 电影，英式口语 the pictures = cinema",
+          "en": "We went to the pictures every Saturday as children.",
+          "zh": "我们小时候每个周六都去看电影。"
+        },
+        {
+          "gloss": "n. 情景，局面（the bigger picture）",
+          "logic": "「展现出来的整个画面」→ 某件事的整体状况或大局",
+          "en": "We need to step back and look at the bigger picture.",
+          "zh": "我们需要退后一步，着眼于大局。"
+        },
+        {
+          "gloss": "v. 想象，在脑海中描绘",
+          "logic": "「在心里画出画面」→ 凭想象构建视觉意象",
+          "en": "Can you picture a world without the internet?",
+          "zh": "你能想象一个没有互联网的世界吗？"
+        }
+      ],
+      "derivatives": [
+        {"w": "depict", "gloss": "描绘，刻画"},
+        {"w": "picturesque", "gloss": "风景如画的，生动的"},
+        {"w": "picture-perfect", "gloss": "完美无瑕的，美如画的"}
+      ],
+      "synonyms": [
+        {"w": "image", "ipa": "/ˈɪmɪdʒ/", "gloss": "图像，形象（也含心理意象）", "note": "「图像/形象」，比 picture 更正式，也可指心理意象；brand image（品牌形象）"},
+        {"w": "photograph", "ipa": "/ˈfoʊtəɡrɑːf/", "gloss": "照片（专指拍摄的图像）", "note": "「照片」，专指拍摄的图像，比 picture 更明确；take a photograph（拍照）"},
+        {"w": "illustration", "ipa": "/ˌɪləˈstreɪʃn/", "gloss": "插图，例证图", "note": "「插图/例证」，强调配合文字的图画或例子；book illustration（书籍插图）"}
+      ],
+      "antonyms": [],
+      "nuance": "picture 最通用，涵盖照片、画、脑海中的画面；image 偏抽象，可指品牌或心理印象；photograph 专指照片；illustration 特指配合说明的插图或举例。"
+    },
+    {
+      "word": "nature",
+      "hl": "ure",
+      "levels": ["非托福"],
+      "ipa": "/ˈneɪtʃər/",
+      "subgroup": "suffix",
+      "meaning": "n. 自然；本质；性质；性格",
+      "etymology": "拉丁语 natura = natus（出生，過去分詞）+ -ura = 「生而来的特性」→ 本质、自然。与 native（本地的）、innate（天生的）、nation（国家，同源于「出生地」）同根。",
+      "roots": [
+        {"part": "natur- (natus)", "meaning": "出生、天生"},
+        {"part": "-ure", "meaning": "名词后缀"}
+      ],
+      "phonetics": "NA-ture，重音在首音节 /ˈneɪ-/，-ture = /tʃər/（schwa）。与 picture / culture / creature / feature 同一 -ture → /tʃər/ 规律。",
+      "core": "「天生如此的本来面目」——生而具有的特性，未被人工改变前的原始状态。",
+      "senses": [
+        {
+          "gloss": "n. 自然（界），大自然",
+          "logic": "「未经人工干预的天生状态」→ 地球上未被改造的生态世界",
+          "en": "Spending time in nature has been shown to reduce stress levels.",
+          "zh": "在大自然中度过时间已被证明能降低压力水平。"
+        },
+        {
+          "gloss": "n. 本质，性质（事物固有特性）",
+          "logic": "「天生就有的特性」→ 某事物固有的、不可改变的内在性质",
+          "en": "The research explored the nature of the relationship between stress and memory.",
+          "zh": "这项研究探讨了压力与记忆之间关系的本质。"
+        },
+        {
+          "gloss": "n. 性格，天性（人的）",
+          "logic": "「天生就有的性格倾向」→ 人与生俱来的个性特质",
+          "en": "It is not in her nature to give up without a fight.",
+          "zh": "不战而退不是她的性格。"
+        }
+      ],
+      "derivatives": [
+        {"w": "natural", "gloss": "天然的；自然的；理所当然的"},
+        {"w": "naturally", "gloss": "自然地；当然地"},
+        {"w": "supernatural", "gloss": "超自然的"}
+      ],
+      "synonyms": [
+        {"w": "essence", "ipa": "/ˈesəns/", "gloss": "本质，精髓（哲学层面）", "note": "「本质/精髓」，比 nature 更抽象哲学；the essence of democracy（民主的本质）"},
+        {"w": "character", "ipa": "/ˈkærɪktər/", "gloss": "性格，特质", "note": "「性格/特质」，比 nature 更侧重个性层面；human character（人的性格）"},
+        {"w": "environment", "ipa": "/ɪnˈvaɪrənmənt/", "gloss": "环境，自然环境", "note": "「自然环境」义，比 nature 更具体，指具体的生态系统或外部条件"}
+      ],
+      "antonyms": [
+        {"w": "nurture", "note": "后天培养（与先天 nature 对立）"},
+        {"w": "artifice", "note": "人工，人为（与自然 nature 对立）"}
+      ],
+      "nuance": "nature vs nurture（先天 vs 后天）是心理学和教育学的经典辩题，这个搭配本身就是学术写作高频词对。nature 的「本质」义（the nature of the problem）与 essence 接近，但 essence 更哲学，nature 更通用。"
+    },
+    {
+      "word": "measure",
+      "hl": "ure",
+      "levels": ["托福"],
+      "ipa": "/ˈmeʒər/",
+      "subgroup": "suffix",
+      "meaning": "v. 测量；衡量  n. 措施；程度；量度",
+      "etymology": "拉丁语 mensura = mensus（测量的）+ -ura（名词后缀）。词根 mens-（测量）→ mental（心的，最初指「衡量」）→ dimension（维度，di-+mensio）→ immense（无法测量 → 巨大）。",
+      "roots": [
+        {"part": "meas- (mensura)", "meaning": "测量、度量"},
+        {"part": "-ure", "meaning": "名词后缀"}
+      ],
+      "phonetics": "MEA-sure，重音在首音节 /ˈmeʒ-/，-sure 不读 /ʃjʊər/ 而是 /ʒər/（zh + schwa）。注意 -sure 后缀有两种读音：measure / pleasure = /ʒər/；pressure / treasure = /ʒər/（同）；ensure = /ʃʊər/（不同）。",
+      "tip": "词根 mens-（测量）家族：measure、dimension（维度）、immense（无法测量→巨大）、commensurate（相当的）——都在讲「量」。",
+      "core": "「用标准去量」——将某事物与尺度对齐，得出数值（测量）或判断（衡量），或指用于应对的「步骤」。",
+      "senses": [
+        {
+          "gloss": "v. 测量（用工具取得数值）",
+          "logic": "本义，用标准尺度量出数字",
+          "en": "The technician measured the temperature of the reactor every two hours.",
+          "zh": "技术员每两小时测量一次反应堆的温度。"
+        },
+        {
+          "gloss": "v. 衡量，评估（抽象事物）",
+          "logic": "「用标准去对比抽象概念」→ 判断某事物的程度或价值",
+          "en": "Success should not be measured solely by profit margins.",
+          "zh": "成功不应仅凭利润率来衡量。"
+        },
+        {
+          "gloss": "n. 措施，手段（take measures）",
+          "logic": "「为达目标而量身制定的步骤」→ 特定的行动方案",
+          "en": "The government introduced emergency measures to control inflation.",
+          "zh": "政府出台了紧急措施控制通货膨胀。"
+        },
+        {
+          "gloss": "n. 程度，量（a measure of）",
+          "logic": "「被量出来的那个量」→ 某种程度或数量",
+          "en": "There is a measure of truth in what she said.",
+          "zh": "她说的话有一定的道理。"
+        }
+      ],
+      "derivatives": [
+        {"w": "measurement", "gloss": "测量，测量值"},
+        {"w": "immeasurable", "gloss": "不可估量的，无限的"},
+        {"w": "commensurate", "gloss": "相称的，成比例的"}
+      ],
+      "synonyms": [
+        {"w": "gauge", "ipa": "/ɡeɪdʒ/", "gloss": "测量，估算（侧重判断）", "note": "「测量/判断」，比 measure 更侧重估算；gauge public opinion（衡量民意）"},
+        {"w": "assess", "ipa": "/əˈses/", "gloss": "评估，综合评价", "note": "「评估」，比 measure 更侧重判断价值或质量；assess the damage（评估损失）"},
+        {"w": "step", "ipa": "/step/", "gloss": "步骤，措施（口语）", "note": "「措施/步骤」义的近义词，比 measure 更口语；take steps to（采取步骤）"}
+      ],
+      "antonyms": [
+        {"w": "guess", "note": "猜测（与测量对立）"}
+      ],
+      "nuance": "measure 兼「测量」和「措施」两义——作「措施」时（take measures）是正式书面词；gauge 更侧重主观判断和估算；assess 强调综合评价；step（作「措施」义）是口语替换。"
+    }
+  ]
+}
