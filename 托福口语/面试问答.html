@@ -130,14 +130,12 @@ async function toggleRec(){
     recording=false; clearInterval(timerId);
     document.getElementById('recBtn').textContent='🎙 开始录音';
     document.getElementById('recBtn').classList.remove('recording');
+    document.getElementById('live').innerHTML='⏳ 正在转写你的回答…';
     result = await VocaSpeech.stop();
     finishAnswer();
   } else {
     try{
-      await VocaSpeech.start((final, interim)=>{
-        document.getElementById('live').innerHTML =
-          '<span class="f">'+esc(final)+'</span> <span class="i">'+esc(interim)+'</span>';
-      });
+      await VocaSpeech.start(()=>{});
       recording=true; remain=45;
       document.getElementById('recBtn').textContent='⏹ 停止录音';
       document.getElementById('recBtn').classList.add('recording');
@@ -167,11 +165,12 @@ function finishAnswer(){
   const txt = result.transcript || '';
   const wpm = Math.round(tokenize(txt).length / Math.max(result.duration,0.1) * 60);
   const fillers = (txt.match(/\b(um|uh|er|like|you know)\b/gi)||[]).length;
-  answers.push({ q, transcript:txt, duration:result.duration, wpm, fillers });
+  answers.push({ q, transcript:txt, duration:result.duration, wpm, fillers, engine:result.engine });
 
+  const eng = result.engine==='whisper' ? ' · 转写引擎：本地 whisper ✓' : ' · ⚠️ 浏览器降级识别';
   document.getElementById('answer').innerHTML =
     '<div class="metric">📝 转写：<b>'+(esc(txt)||'<i style="color:#a89a86">(空/未识别)</i>')+'</b></div>'+
-    '<div class="metric">⏱ 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 填充词(um/uh) <b>'+fillers+'</b> 次</div>';
+    '<div class="metric">⏱ 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 填充词(um/uh) <b>'+fillers+'</b> 次'+eng+'</div>';
   document.getElementById('answer').style.display='block';
 
   if(qIdx<3){
@@ -195,7 +194,7 @@ function buildReport(){
   answers.forEach((a,i)=>{
     rep += 'Q'+(i+1)+': '+a.q+'\n';
     rep += '  答：'+(a.transcript||'(空/未识别)')+'\n';
-    rep += '  （时长 '+a.duration.toFixed(1)+'s · 语速 '+a.wpm+' wpm · 填充词 '+a.fillers+' 次）\n';
+    rep += '  （时长 '+a.duration.toFixed(1)+'s · 语速 '+a.wpm+' wpm · 填充词 '+a.fillers+' 次 · 引擎 '+(a.engine==='whisper'?'whisper':'浏览器降级')+'）\n';
   });
   rep += '—— 请 cc 打分（流利度 + 连贯展开 + 语法词汇 + 发音韵律；发音/韵律请结合我后续反馈）';
   document.getElementById('reportText').value = rep;
@@ -209,8 +208,14 @@ function copyReport(){
 
 // 初始化
 if(!VocaSpeech.supported){
-  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 当前浏览器不支持语音转写，请用 Chrome / Edge 打开此页面。</b>';
+  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 当前浏览器不支持录音，请用 Chrome / Edge 打开此页面。</b>';
   document.getElementById('recBtn').disabled=true;
+} else {
+  VocaSpeech.checkServer().then(ok=>{
+    if(!ok){
+      document.getElementById('live').innerHTML='<b style="color:#d8903a">⚠️ 未检测到本地转写服务，将退回浏览器识别（可能不准）。建议双击 start.command 启动转写服务。</b>';
+    }
+  });
 }
 renderTopics();
 </script>

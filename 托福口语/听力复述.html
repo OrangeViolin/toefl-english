@@ -138,19 +138,17 @@ function play(){
 
 let recording=false;
 async function toggleRec(){
-  if(recording){ // 停止
+  if(recording){ // 停止 → 转写
     recording=false;
     document.getElementById('recBtn').textContent='🎙 开始录音';
     document.getElementById('recBtn').classList.remove('recording');
     document.getElementById('playBtn').disabled=false;
+    document.getElementById('live').innerHTML='⏳ 正在转写你的复述…';
     result = await VocaSpeech.stop();
     renderResult();
   } else { // 开始
     try{
-      await VocaSpeech.start((final, interim)=>{
-        document.getElementById('live').innerHTML =
-          '<span class="f">'+esc(final)+'</span> <span class="i">'+esc(interim)+'</span>';
-      });
+      await VocaSpeech.start(()=>{});
       recording=true;
       document.getElementById('recBtn').textContent='⏹ 停止录音';
       document.getElementById('recBtn').classList.add('recording');
@@ -169,8 +167,9 @@ function renderResult(){
   const wpm = Math.round(d.B.length / Math.max(result.duration,0.1) * 60);
 
   document.getElementById('acc').textContent = acc + '%';
+  const eng = result.engine==='whisper' ? '转写引擎：本地 whisper ✓' : '⚠️ 本地转写服务未运行，用了浏览器降级识别（可能不准）';
   document.getElementById('metrics').innerHTML =
-    '复述准确率 · 原文 <b>'+d.A.length+'</b> 词 · 命中 <b>'+d.match+'</b> 词 · 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm';
+    '复述准确率 · 原文 <b>'+d.A.length+'</b> 词 · 命中 <b>'+d.match+'</b> 词 · 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · '+eng;
 
   // 原文渲染（漏/错标红）
   document.getElementById('refLine').innerHTML = d.A.map((w,i)=>
@@ -185,6 +184,7 @@ function renderResult(){
     '我的复述：'+(hyp||'(空/未识别)')+'\n'+
     '复述准确率：'+acc+'%（命中 '+d.match+'/'+d.A.length+' 词）\n'+
     '时长：'+result.duration.toFixed(1)+'s · 语速：'+wpm+' wpm\n'+
+    '转写引擎：'+(result.engine==='whisper'?'本地 whisper':'浏览器降级')+'\n'+
     '—— 请 cc 打分（复述准确性 + 流利度；发音/韵律请结合我后续反馈）';
   document.getElementById('reportText').value = rep;
   document.getElementById('result').style.display='block';
@@ -202,7 +202,7 @@ function next(){
   document.getElementById('qLv').textContent=REPEAT[idx].lv;
   document.getElementById('sentence').innerHTML='<span style="color:#c1662f">🔊</span> 点击「播放原句」开始';
   document.getElementById('zh').textContent='';
-  document.getElementById('live').innerHTML='录音转写会实时显示在这里…';
+  document.getElementById('live').innerHTML='点「播放原句」听一遍，再点「开始录音」复述，停止后自动转写。';
   document.getElementById('result').style.display='none';
 }
 
@@ -210,8 +210,14 @@ function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>
 
 // 初始化
 if(!VocaSpeech.supported){
-  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 当前浏览器不支持语音转写，请用 Chrome / Edge 打开此页面。</b>';
+  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 当前浏览器不支持录音，请用 Chrome / Edge 打开此页面。</b>';
   document.getElementById('recBtn').disabled=true;
+} else {
+  VocaSpeech.checkServer().then(ok=>{
+    if(!ok){
+      document.getElementById('live').innerHTML='<b style="color:#d8903a">⚠️ 未检测到本地转写服务，将退回浏览器识别（可能不准）。建议双击 start.command 启动转写服务。</b>';
+    }
+  });
 }
 document.getElementById('qNo').textContent='第 1 / '+REPEAT.length+' 题';
 document.getElementById('qLv').textContent=REPEAT[0].lv;
