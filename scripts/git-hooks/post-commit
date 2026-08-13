@@ -1,0 +1,5 @@
+#!/bin/sh
+# 每次 commit 后自动重建今天的「工作报告」。
+# 安装方式：把本文件复制（或软链）到 .git/hooks/post-commit 并赋予执行权限。
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
+python3 "$ROOT/scripts/daily-report.py" --today
