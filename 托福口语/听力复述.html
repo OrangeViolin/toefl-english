@@ -46,6 +46,19 @@
   .report textarea{width:100%;height:150px;font-size:12.5px;font-family:ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:10px;padding:10px;background:#faf6ee}
   .report .copy{background:var(--core);color:#fff;border:none;border-radius:20px;padding:8px 18px;font-size:13px;cursor:pointer;margin-top:8px}
   .hint{color:var(--muted);font-size:12.5px;margin-top:14px}
+  /* 训练方法卡 */
+  .method{background:#fbf7ee;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:12.5px;color:#5f574c;line-height:1.6}
+  .method b{color:var(--accent)}
+  /* 骨架提示 */
+  .skeleton{display:none;background:#eef6f3;border:1px dashed #cfe3db;border-radius:12px;padding:12px 16px;margin:10px 0;font-size:15px}
+  .skeleton .skl{font-size:11.5px;color:var(--core);font-weight:800;letter-spacing:.5px;display:block;margin-bottom:6px}
+  .skeleton .skw{display:inline-block;background:#fff;border:1px solid #cfe3db;border-radius:8px;padding:3px 10px;margin:3px 4px 3px 0;font-family:Georgia,serif}
+  /* 分块重放 */
+  .chunks{display:none;margin:10px 0}
+  .chunks .ckl{font-size:11.5px;color:var(--accent);font-weight:800;letter-spacing:.5px;display:block;margin-bottom:6px}
+  .chunk{display:inline-block;background:#fff8ec;border:1px solid #f0d9b0;border-radius:8px;padding:4px 11px;margin:3px 5px 3px 0;font-family:Georgia,serif;font-size:14.5px;cursor:pointer;transition:.15s}
+  .chunk:hover{background:var(--amber);border-color:var(--accent2)}
+  .chunk.on{background:var(--amber);border-color:var(--accent)}
 </style>
 </head>
 <body>
@@ -56,12 +69,31 @@
   <div class="desc">听一句话（考试只放一遍）→ 逐字复述。系统会把你说的转成文字，与原文做<b>逐字比对</b>，算出复述准确率。换词、漏词、重排都算错——这正是新版托福的扣分点。</div>
 
   <div class="stage">
+    <div class="method">
+      <b>🎯 训练方法（解决"听完就空白"）：</b>
+      ① <b>切块</b>——别逐词记，按意群记成 3–4 块（如「图书馆·开门·八点」）·
+      ② <b>影子跟读</b>——听的时候心里同步默念 ·
+      ③ <b>抓骨架</b>——先抓「谁+干什么」，修饰语填空 ·
+      ④ 从「简单」档练起，每天 10 分钟。
+    </div>
     <div class="qinfo"><span id="qNo"></span><span class="lv" id="qLv"></span></div>
     <div class="sentence" id="sentence">点击「🔊 播放原句」开始</div>
     <div class="zh" id="zh"></div>
 
+    <div class="skeleton" id="skeleton">
+      <span class="skl">🦴 骨架提示（先抓这些"块"，再补修饰词）</span>
+      <span id="skeletonWords"></span>
+    </div>
+    <div class="chunks" id="chunks">
+      <span class="ckl">🧩 意群切块（点任意一块可听发音）</span>
+      <span id="chunkWords"></span>
+    </div>
+
     <div class="controls">
       <button class="btn play" id="playBtn" onclick="play()">🔊 播放原句</button>
+      <button class="btn play" onclick="playSlow()">🐢 慢速</button>
+      <button class="btn play" onclick="playChunks()">🧩 分块重放</button>
+      <button class="btn play" onclick="toggleSkeleton()">🦴 骨架提示</button>
       <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
       <button class="btn next" id="nextBtn" onclick="next()">下一题 →</button>
     </div>
@@ -94,20 +126,34 @@
 <script>
 // ---------- 题目数据（对标 2026 新版 Listen and Repeat，难度递增，6–19 音节）----------
 const REPEAT = [
-  { en:"The library opens at eight.", zh:"图书馆八点开门。", lv:"简单" },
-  { en:"Please return your books on time.", zh:"请按时还书。", lv:"简单" },
-  { en:"The lecture starts in ten minutes.", zh:"讲座十分钟后开始。", lv:"简单" },
-  { en:"We have a variety of wildlife.", zh:"我们这里有很多种野生动物。", lv:"简单" },
-  { en:"Bears, wolves, and large cats are to the right.", zh:"熊、狼和大型猫科动物在右边。", lv:"简单" },
-  { en:"Most students prefer to study in the morning.", zh:"大多数学生喜欢在早上学习。", lv:"中等" },
-  { en:"The professor explained the theory very clearly.", zh:"教授把这个理论讲得非常清楚。", lv:"中等" },
-  { en:"You should register for classes before Friday.", zh:"你应该在周五之前注册课程。", lv:"中等" },
-  { en:"The museum is closed for renovation this month.", zh:"博物馆这个月因翻修闭馆。", lv:"中等" },
-  { en:"Healthy eating requires both planning and patience.", zh:"健康饮食需要规划，也需要耐心。", lv:"中等" },
-  { en:"Photosynthesis is the process by which plants convert sunlight into energy.", zh:"光合作用是植物把阳光转化为能量的过程。", lv:"困难" },
-  { en:"The Industrial Revolution dramatically changed the way people lived and worked.", zh:"工业革命极大地改变了人们生活和工作的方式。", lv:"困难" },
-  { en:"Despite the heavy rain, the outdoor ceremony continued as planned.", zh:"尽管下着大雨，户外仪式仍按计划进行。", lv:"困难" },
-  { en:"Researchers have found that regular exercise improves both physical and mental health.", zh:"研究人员发现，规律运动能同时改善身心健康。", lv:"困难" },
+  { en:"The library opens at eight.", zh:"图书馆八点开门。", lv:"简单",
+    chunks:["The library","opens","at eight"], skeleton:["图书馆","开门","八点"] },
+  { en:"Please return your books on time.", zh:"请按时还书。", lv:"简单",
+    chunks:["Please return","your books","on time"], skeleton:["请归还","你的书","按时"] },
+  { en:"The lecture starts in ten minutes.", zh:"讲座十分钟后开始。", lv:"简单",
+    chunks:["The lecture","starts","in ten minutes"], skeleton:["讲座","开始","十分钟后"] },
+  { en:"We have a variety of wildlife.", zh:"我们这里有很多种野生动物。", lv:"简单",
+    chunks:["We have","a variety of","wildlife"], skeleton:["我们有","多种","野生动物"] },
+  { en:"Bears, wolves, and large cats are to the right.", zh:"熊、狼和大型猫科动物在右边。", lv:"简单",
+    chunks:["Bears, wolves, and large cats","are","to the right"], skeleton:["熊、狼和大型猫科动物","在","右边"] },
+  { en:"Most students prefer to study in the morning.", zh:"大多数学生喜欢在早上学习。", lv:"中等",
+    chunks:["Most students","prefer to study","in the morning"], skeleton:["大多数学生","喜欢学习","在早上"] },
+  { en:"The professor explained the theory very clearly.", zh:"教授把这个理论讲得非常清楚。", lv:"中等",
+    chunks:["The professor","explained the theory","very clearly"], skeleton:["教授","讲解理论","很清楚"] },
+  { en:"You should register for classes before Friday.", zh:"你应该在周五之前注册课程。", lv:"中等",
+    chunks:["You should register","for classes","before Friday"], skeleton:["你应该注册","课程","周五前"] },
+  { en:"The museum is closed for renovation this month.", zh:"博物馆这个月因翻修闭馆。", lv:"中等",
+    chunks:["The museum","is closed","for renovation this month"], skeleton:["博物馆","关闭","因翻修本月"] },
+  { en:"Healthy eating requires both planning and patience.", zh:"健康饮食需要规划，也需要耐心。", lv:"中等",
+    chunks:["Healthy eating","requires","both planning and patience"], skeleton:["健康饮食","需要","规划和耐心"] },
+  { en:"Photosynthesis is the process by which plants convert sunlight into energy.", zh:"光合作用是植物把阳光转化为能量的过程。", lv:"困难",
+    chunks:["Photosynthesis","is the process","by which plants","convert sunlight into energy"], skeleton:["光合作用","是过程","植物","把阳光转为能量"] },
+  { en:"The Industrial Revolution dramatically changed the way people lived and worked.", zh:"工业革命极大地改变了人们生活和工作的方式。", lv:"困难",
+    chunks:["The Industrial Revolution","dramatically changed","the way people lived and worked"], skeleton:["工业革命","极大改变","人们生活工作方式"] },
+  { en:"Despite the heavy rain, the outdoor ceremony continued as planned.", zh:"尽管下着大雨，户外仪式仍按计划进行。", lv:"困难",
+    chunks:["Despite the heavy rain","the outdoor ceremony","continued as planned"], skeleton:["尽管大雨","户外仪式","按计划继续"] },
+  { en:"Researchers have found that regular exercise improves both physical and mental health.", zh:"研究人员发现，规律运动能同时改善身心健康。", lv:"困难",
+    chunks:["Researchers have found","that regular exercise","improves","both physical and mental health"], skeleton:["研究人员发现","规律运动","改善","身心健康"] },
 ];
 
 let idx = 0, result = null;
@@ -134,6 +180,39 @@ function diffWords(ref, hyp){
 function play(){
   const q = REPEAT[idx];
   VocaSpeech.say(q.en);
+}
+
+function playSlow(){
+  const q = REPEAT[idx];
+  VocaSpeech.say(q.en, 0.65);
+}
+
+// 分块重放：逐意群念，块间停顿，并高亮当前块
+async function playChunks(){
+  const q = REPEAT[idx];
+  document.getElementById('chunks').style.display='block';
+  const chunkEls = document.getElementById('chunkWords').children;
+  for(let i=0;i<q.chunks.length;i++){
+    for(const el of chunkEls) el.classList.remove('on');
+    if(chunkEls[i]) chunkEls[i].classList.add('on');
+    await VocaSpeech.say(q.chunks[i], 0.8);
+    await new Promise(r=>setTimeout(r, 450));
+  }
+  for(const el of chunkEls) el.classList.remove('on');
+  await VocaSpeech.say(q.en, 0.9);
+}
+
+// 骨架提示：显示中文意群骨架
+function toggleSkeleton(){
+  const sk = document.getElementById('skeleton');
+  const show = sk.style.display==='none' || sk.style.display==='';
+  sk.style.display = show ? 'block' : 'none';
+}
+
+// 朗读某一块（点击 chunk）
+function sayChunk(i){
+  const q = REPEAT[idx];
+  VocaSpeech.say(q.chunks[i], 0.85);
 }
 
 let recording=false;
@@ -198,12 +277,22 @@ function copyReport(){
 
 function next(){
   idx = (idx+1) % REPEAT.length;
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const q = REPEAT[idx];
   document.getElementById('qNo').textContent='第 '+(idx+1)+' / '+REPEAT.length+' 题';
-  document.getElementById('qLv').textContent=REPEAT[idx].lv;
+  document.getElementById('qLv').textContent=q.lv;
   document.getElementById('sentence').innerHTML='<span style="color:#c1662f">🔊</span> 点击「播放原句」开始';
   document.getElementById('zh').textContent='';
   document.getElementById('live').innerHTML='点「播放原句」听一遍，再点「开始录音」复述，停止后自动转写。';
   document.getElementById('result').style.display='none';
+  // 骨架 + 意群
+  document.getElementById('skeletonWords').innerHTML = q.skeleton.map(w=>'<span class="skw">'+esc(w)+'</span>').join('');
+  document.getElementById('chunkWords').innerHTML = q.chunks.map((c,i)=>'<span class="chunk" onclick="sayChunk('+i+')">'+esc(c)+'</span>').join('');
+  document.getElementById('skeleton').style.display='none';
+  document.getElementById('chunks').style.display='none';
 }
 
 function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
@@ -219,8 +308,7 @@ if(!VocaSpeech.supported){
     }
   });
 }
-document.getElementById('qNo').textContent='第 1 / '+REPEAT.length+' 题';
-document.getElementById('qLv').textContent=REPEAT[0].lv;
+renderQuestion();
 </script>
 </body>
 </html>

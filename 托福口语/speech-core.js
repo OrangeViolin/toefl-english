@@ -27,12 +27,13 @@
     pickVoice();
   }
 
-  function say(text) {
+  function say(text, rate) {
     return new Promise(res => {
       if (!('speechSynthesis' in window)) { res(false); return; }
       speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(text);
-      u.lang = 'en-US'; if (ttsVoice) u.voice = ttsVoice; u.rate = 0.9; u.pitch = 1;
+      u.lang = 'en-US'; if (ttsVoice) u.voice = ttsVoice;
+      u.rate = rate || 0.9; u.pitch = 1;
       let done = false;
       u.onend = () => { if (!done) { done = true; res(true); } };
       u.onerror = () => { if (!done) { done = true; res(false); } };
