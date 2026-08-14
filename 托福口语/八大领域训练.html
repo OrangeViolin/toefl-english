@@ -42,9 +42,12 @@
   /* 答题舞台 */
   .stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
   .qhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px}
+  .qleft{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
   .qpos{font-size:13px;color:var(--muted)}
   .rtags{display:flex;gap:6px;flex-wrap:wrap}
   .rtag{font-size:11px;padding:2px 9px;border-radius:9px;background:#e6f0ec;color:var(--core);font-weight:700}
+  .timer{font-size:15px;font-weight:700;color:var(--ink)}
+  .timer.warn{color:var(--bad)}
   .question{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.5;margin:4px 0 16px;min-height:52px}
   .controls{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
   .btn{border:none;border-radius:22px;padding:11px 20px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
@@ -111,8 +114,11 @@
 
   <div class="stage" id="stage" style="display:none">
     <div class="qhead">
-      <span class="qpos" id="qPos"></span>
-      <span class="rtags" id="rtags"></span>
+      <div class="qleft">
+        <span class="qpos" id="qPos"></span>
+        <span class="rtags" id="rtags"></span>
+      </div>
+      <span class="timer" id="timer">⏱ 45s</span>
     </div>
     <div class="question" id="qText"></div>
     <div class="controls">
@@ -158,6 +164,7 @@ const DOMAINS = [
 ].filter(Boolean);
 
 let curDomain = null, qIdx = 0, recording = false, result = null;
+let timerId = null, remain = 45;
 
 function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 
@@ -201,6 +208,7 @@ function showQuestion(i){
   document.getElementById('answerBtn').textContent='📖 参考答案';
   document.getElementById('ref').style.display='none';
   document.getElementById('hint').innerHTML='💡 <b>答题公式</b>：立场 → 理由 → 例子 → 收尾。先自己答，再看参考答案对照，最后背一遍重录。';
+  resetTimer();
 }
 
 async function readQ(){
@@ -211,7 +219,7 @@ async function readQ(){
 
 async function toggleRec(){
   if(recording){
-    recording=false;
+    recording=false; clearInterval(timerId);
     document.getElementById('recBtn').textContent='🎙 开始答题';
     document.getElementById('recBtn').classList.remove('recording');
     document.getElementById('live').innerHTML='⏳ 正在转写…';
@@ -225,13 +233,29 @@ async function toggleRec(){
   } else {
     try{
       await VocaSpeech.start(()=>{});
-      recording=true;
+      recording=true; remain=45;
       document.getElementById('recBtn').textContent='⏹ 停止答题';
       document.getElementById('recBtn').classList.add('recording');
-      document.getElementById('live').innerHTML='🎙 录音中，请用「立场→理由→例子→收尾」回答…';
+      document.getElementById('live').innerHTML='🎙 录音中（⏱ 45 秒倒计时），请用「立场→理由→例子→收尾」回答…';
       document.getElementById('trans').style.display='none';
+      startTimer();
     }catch(e){ alert(e.message); }
   }
+}
+
+function startTimer(){
+  const el=document.getElementById('timer');
+  el.classList.remove('warn');
+  timerId=setInterval(()=>{
+    remain--;
+    el.textContent='⏱ '+remain+'s';
+    if(remain<=10) el.classList.add('warn');
+    if(remain<=0){ clearInterval(timerId); if(recording) toggleRec(); }
+  },1000);
+}
+function resetTimer(){
+  remain=45; const el=document.getElementById('timer');
+  el.textContent='⏱ 45s'; el.classList.remove('warn');
 }
 
 function toggleAnswer(){
