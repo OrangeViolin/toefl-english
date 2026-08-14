@@ -86,6 +86,11 @@
   /* 参考答案 */
   .ref{display:none;margin-top:14px;border-top:2px solid var(--core);padding-top:14px}
   .ref .rlabel{font-size:13px;color:var(--core);font-weight:800;letter-spacing:.5px;margin-bottom:10px}
+  .verbar{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+  .ver{font-size:12px;padding:5px 13px;border:1px solid var(--line);background:#fff;border-radius:16px;cursor:pointer;color:#6b6154;font-weight:700;transition:.15s}
+  .ver:hover{border-color:var(--core)}
+  .ver.on{background:var(--core);color:#fff;border-color:var(--core)}
+  .ver small{font-weight:400;opacity:.72;margin-left:3px}
   .ref .stance{background:#eef6f3;border-left:4px solid var(--core);padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px;font-weight:600;margin-bottom:10px}
   .ref .point{background:#faf7f0;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
   .ref .point .pt{font-size:12px;color:var(--accent);font-weight:800;margin-bottom:4px}
@@ -134,6 +139,7 @@
 
     <div class="ref" id="ref">
       <div class="rlabel">📖 参考答案（背骨架：立场 → 理由 → 例子 → 收尾）</div>
+      <div class="verbar" id="verbar"></div>
       <div class="stance" id="refStance"></div>
       <div id="refBody"></div>
       <div class="close" id="refClose"></div>
@@ -164,7 +170,15 @@ const DOMAINS = [
 ].filter(Boolean);
 
 let curDomain = null, qIdx = 0, recording = false, result = null;
-let timerId = null, remain = 45;
+let timerId = null, remain = 45, curVer = 0;
+
+// 参考答案规范化：新格式 answers 数组（多版本），兼容旧格式 answer 单对象
+function getAnswers(q){
+  if(q.answers && q.answers.length) return q.answers;
+  if(q.answer) return [Object.assign({label:"标准"}, q.answer)];
+  return [];
+}
+const VER_LETTER = ['A','B','C','D','E'];
 
 function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 
@@ -208,6 +222,7 @@ function showQuestion(i){
   document.getElementById('answerBtn').textContent='📖 参考答案';
   document.getElementById('ref').style.display='none';
   document.getElementById('hint').innerHTML='💡 <b>答题公式</b>：立场 → 理由 → 例子 → 收尾。先自己答，再看参考答案对照，最后背一遍重录。';
+  curVer = 0;
   resetTimer();
 }
 
@@ -266,7 +281,12 @@ function toggleAnswer(){
   if(show) renderAnswer();
 }
 function renderAnswer(){
-  const a = curDomain.questions[qIdx].answer;
+  const answers = getAnswers(curDomain.questions[qIdx]);
+  if(curVer >= answers.length) curVer = 0;
+  const a = answers[curVer];
+  // 版本切换条
+  document.getElementById('verbar').innerHTML = answers.map((x,i)=>
+    '<span class="ver'+(i===curVer?' on':'')+'" onclick="chooseVer('+i+')">'+VER_LETTER[i]+'·'+esc(x.label)+'</span>').join('');
   document.getElementById('refStance').textContent = a.stance;
   document.getElementById('refBody').innerHTML = a.body.map(p=>
     '<div class="point"><div class="pt">💡 理由：'+esc(p.r)+' <span class="rtag">'+esc(p.r)+'</span></div>'+
@@ -274,8 +294,13 @@ function renderAnswer(){
     (p.ex? '<div class="ex">'+esc(p.ex)+'</div>':'')+'</div>').join('');
   document.getElementById('refClose').textContent = a.close;
 }
+function chooseVer(i){
+  curVer = i;
+  renderAnswer();
+}
 function readAnswer(){
-  const a = curDomain.questions[qIdx].answer;
+  const answers = getAnswers(curDomain.questions[qIdx]);
+  const a = answers[Math.min(curVer, answers.length-1)];
   const full = [a.stance, ...a.body.map(p=>p.en+' '+(p.ex||'')), a.close].join(' ');
   VocaSpeech.say(full);
 }
@@ -296,8 +321,9 @@ function scoreAnswer(txt, duration){
   const fillers = (txt.match(/\b(um|uh|er|like|you know|well)\b/gi)||[]).length;
   const issues = [];
 
-  // 参考答案关键词（判定是否切题、踩点）
-  const refText = [q.answer.stance, ...q.answer.body.map(p=>p.en+' '+(p.ex||'')), q.answer.close].join(' ').toLowerCase();
+  // 参考答案关键词（判定是否切题、踩点）——用当前选中的答案版本
+  const refAns = getAnswers(q)[Math.min(curVer, getAnswers(q).length-1)];
+  const refText = [refAns.stance, ...refAns.body.map(p=>p.en+' '+(p.ex||'')), refAns.close].join(' ').toLowerCase();
   const refKeywords = new Set(refText.split(/[^a-z']+/).filter(w=>w.length>=4));
   const hitCount = words.filter(w=>refKeywords.has(w)).length;
   const hitRate = wc ? hitCount/wc : 0;
