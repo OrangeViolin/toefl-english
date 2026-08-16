@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阅读填词题 · 托福阅读 Cloze</title>
+<style>
+  :root{--bg:#f7f1e7;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#eaddc9;--accent:#c1662f;--core:#2f8f83;--bad:#c04a3a;--ok:#4a9a5e;--warn:#d8903a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding:30px 20px 90px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:24px;margin:12px 0 2px}
+  .sub{color:var(--accent);font-weight:600;font-size:14px}
+  .intro{color:#5f574c;font-size:14px;margin:10px 0 18px;max-width:760px}
+
+  /* 进度 */
+  .bar-wrap{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-bottom:16px}
+  .bar-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);margin-bottom:8px}
+  .bar-top b{color:var(--ink)}
+  .bar{height:8px;background:var(--line);border-radius:6px;overflow:hidden}
+  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--core),#5cb39f);width:0;transition:.4s}
+
+  /* 段落 */
+  .passage{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:14px;padding:22px 24px;margin-bottom:14px}
+  .p-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .p-title{font-size:17px;font-weight:800;color:var(--accent)}
+  .p-topic{font-size:12px;color:var(--muted)}
+  .p-text{font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:2.1;color:#3a332b}
+
+  /* 空位 */
+  .blank{display:inline-block;font-family:Georgia,serif;font-weight:700;color:var(--accent);background:#fbe6c4;border-radius:6px;padding:0 5px;margin:0 1px;cursor:pointer;letter-spacing:.5px;border-bottom:2px solid var(--accent);transition:.12s}
+  .blank:hover{background:var(--accent);color:#fff}
+  .blank.ok{background:#eafaef;color:var(--core);border-bottom:2px solid var(--core);cursor:pointer}
+  .blank.ok:hover{background:var(--core);color:#fff}
+  .blank.bad{background:#fdeeea;color:var(--bad);border-bottom:2px solid var(--bad);cursor:pointer;text-decoration:line-through}
+  .blank.bad:hover{background:var(--bad);color:#fff;text-decoration:none}
+  .blank .bk{font-size:13px;margin-left:3px;opacity:.7}
+  .blank-input{font-family:Georgia,serif;font-size:18px;font-weight:700;color:var(--ink);background:#fff;border:2px solid var(--accent);border-radius:6px;padding:2px 7px;width:auto;min-width:60px;letter-spacing:.5px}
+  .blank-input:focus{outline:none;box-shadow:0 0 0 3px rgba(193,102,47,.15)}
+
+  /* 译文 */
+  .zh{background:#faf6ee;border:1px dashed var(--line);border-radius:12px;padding:12px 16px;font-size:14px;color:#6b6154;line-height:1.8}
+  .zh b{color:var(--accent)}
+
+  /* 按钮 */
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .btn{border:none;border-radius:22px;padding:10px 20px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.reveal{background:#efe8d8;color:var(--ink)}
+  .btn.reveal:hover{background:#e5dccb}
+  .btn.reset{background:var(--core);color:#fff}
+  .btn.reset:hover{background:#2a7d71}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+
+  /* 成绩 */
+  .done{display:none;margin-top:14px;background:linear-gradient(135deg,#fff,#fbf7ef);border:1px solid var(--line);border-radius:14px;padding:16px 20px;text-align:center}
+  .done .big{font-size:40px;font-weight:800;color:var(--accent)}
+  .done .msg{font-size:14px;color:#5f574c;margin-top:4px}
+
+  /* 单词卡 modal */
+  .ov{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;align-items:center;justify-content:center;padding:18px}
+  .card{background:var(--card);border-radius:20px;max-width:600px;width:100%;padding:24px 26px 20px;box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .card .chead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:4px}
+  .card .word{font-family:Georgia,serif;font-size:34px;font-weight:800;color:var(--accent)}
+  .card .ipa{font-size:16px;color:var(--core);cursor:pointer;margin-top:8px}
+  .card .mean{font-size:15px;color:var(--ink);font-weight:600;margin:6px 0 12px}
+  .card .lvl{font-size:11px;padding:1px 8px;border-radius:9px;background:#e6f0ec;color:var(--core);font-weight:700}
+  .card h4{font-size:12px;color:var(--accent);letter-spacing:.5px;margin:16px 0 6px;text-transform:uppercase}
+  .card p{font-size:14px;color:#4d463c;margin:0;line-height:1.8}
+  .roots{display:flex;flex-wrap:wrap;gap:8px}
+  .root{background:#eef6f3;border:1px solid #cfe3db;border-radius:10px;padding:6px 12px;font-size:13px}
+  .root b{font-family:Georgia,serif;color:var(--core)}
+  .ex{margin:8px 0;padding-left:14px;border-left:3px solid var(--line)}
+  .ex .en{font-family:Georgia,serif;font-size:14.5px;color:#3a332b}
+  .ex .zh{font-size:13px;color:var(--muted);background:none;border:none;padding:0}
+  .ex .src{font-size:11px;color:#a89a86}
+  .lex{display:flex;gap:6px;flex-wrap:wrap}
+  .lex .t{font-size:12px;padding:3px 11px;border-radius:14px;background:#e6f0ec;color:var(--core);cursor:pointer}
+  .lex .t.ant{background:#f7e6ea;color:#b0507a}
+  .lex .t:hover{filter:brightness(.95)}
+  .tip{background:#fff8ec;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:10px 14px;font-size:13.5px;color:#5a4a2e}
+  .close{display:block;margin:18px auto 0;background:var(--accent);color:#fff;border:none;border-radius:20px;padding:9px 26px;font-size:14px;font-weight:600;cursor:pointer}
+  .close:hover{background:#a8562a}
+  footer{margin-top:30px;color:#a89a86;font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="index.html">← 返回单词记忆系统</a><span>托福阅读 · 完形填空</span></div>
+  <h1>📝 阅读填词题</h1>
+  <div class="sub">Vocabulary / Cloze · 看首字母和上下文，填回正确的词</div>
+  <div class="intro">读完上下文，点空位填入完整单词（首字母已给，下划线数=剩余字母数）。填错会标红并显示正确答案；<b>点任意已填的词</b>，可打开该词的完整复习卡（音标·词源·词根·发音·例句·近义词）。</div>
+
+  <div class="bar-wrap">
+    <div class="bar-top"><span>📊 进度</span><b><span id="doneN">0</span> / <span id="totN">0</span> 已填对</b></div>
+    <div class="bar"><i id="bar"></i></div>
+  </div>
+
+  <div class="passage">
+    <div class="p-head"><span class="p-title" id="pTitle"></span><span class="p-topic" id="pTopic"></span></div>
+    <div class="p-text" id="pText"></div>
+  </div>
+
+  <div class="zh" id="zh"></div>
+
+  <div class="controls">
+    <button class="btn reveal" id="revealBtn" onclick="revealAll()">🙈 显示全部答案</button>
+    <button class="btn reset" onclick="reset()">🔄 重新开始</button>
+  </div>
+
+  <div class="done" id="done"></div>
+
+  <footer>阅读填词题 · 数据 data/cloze.json · 单词卡标准对齐「单词拆解卡片规范」· 运行 python3 build_cloze.py 重生成</footer>
+</div>
+
+<div class="ov" id="ov"><div class="card" id="card"></div></div>
+
+<script id="data" type="application/json">{"id": "cloze", "title": "阅读填词题", "subtitle": "托福阅读 · 完形填空（Vocabulary / Cloze）", "intro": "托福阅读里有一种高频题型：给一段短文，挖掉若干词，只留首字母和下划线提示字母数，让你根据上下文把词填回去。它考的不是死背，而是「在语境里锁定正确单词」的能力——拼写、词义、搭配三者都要对上。每道题填完后，可以点开任意空位，按单词记忆系统的标准（音标·词源·词根·发音·例句·近义词）逐词复习。", "passages": [{"id": "transcript-application", "title": "申请成绩单", "topic": "校园服务 · Campus Service", "zh": "我昨天去了教务处，因为我要申请研究生，需要一份成绩单。工作人员让我登录学生门户网站，在线填写申请表。他们还告诉我，如果这份成绩单只是自己留档用，应该勾选「非官方成绩单」那一栏。提交之前，我要确保所有信息都正确。如果一切无误，他们会在邮寄前给成绩单盖上印章。", "text": "I went to the {0}'s office yesterday because I need a {1} for my {2} school {3}. The staff told me to {4} into the student {5} and fill {6} a request form online. They also said I should {7} the box for an {8} transcript if it is just for my own {9}. Before submitting, I need to {10} that all my information is correct. If everything looks good, they will {11} the transcript with their {12} before mailing.", "blanks": [{"word": "registrar", "hint": "教务处；登记员"}, {"word": "transcript", "hint": "成绩单"}, {"word": "graduate", "hint": "研究生的（graduate school）"}, {"word": "application", "hint": "申请"}, {"word": "log", "hint": "登录（log into）"}, {"word": "portal", "hint": "门户网站"}, {"word": "out", "hint": "填写（fill out）"}, {"word": "check", "hint": "勾选（check the box）"}, {"word": "unofficial", "hint": "非官方的"}, {"word": "records", "hint": "记录、档案"}, {"word": "ensure", "hint": "确保"}, {"word": "stamp", "hint": "盖章"}, {"word": "seal", "hint": "印章"}], "words": {"registrar": {"ipa": "/ˌredʒɪˈstrɑːr/", "meaning": "n. 教务注册员；登记员（大学里管学籍、成绩单的办公室/人）", "levels": ["托福"], "etymology": "register（登记）+ -ar（表「人」的后缀）。register 源自拉丁 re-（回）+ gerere（携带、记录），本义是「把事记回去、登记在册」。所以 registrar 就是「掌管登记册的人」——在校园语境里专指教务处。", "roots": [{"part": "registr-", "meaning": "登记、记录（register）"}, {"part": "-ar", "meaning": "表示「从事…的人」"}], "phonetics": "重音在第三音节 /ˈstrɑːr/。注意 ge 读 /dʒ/，gi 前有 g 软化（e/i 前 g→/dʒ/）。常见错误：把重音读在第一个音节。", "tip": "「掌管 register 登记册的人」= 教务处。办成绩单、选课、转学都找它。", "examples": [{"en": "I picked up my transcript from the registrar's office.", "zh": "我从教务处领取了成绩单。", "source": "造句"}, {"en": "The registrar handles course registration and student records.", "zh": "教务处负责选课和学生档案。", "source": "造句"}], "synonyms": [{"word": "record-keeper", "zh": "档案管理员"}, {"word": "clerk", "zh": "办事员"}]}, "transcript": {"ipa": "/ˈtrænskrɪpt/", "meaning": "n. 成绩单；文字记录、抄本", "levels": ["托福"], "etymology": "trans-（跨越、转移）+ script（写，同 write 一族）。字面义是「从一处誊写到另一处」。把你在校所有成绩「誊抄」成一份正式文件，就是 transcript（成绩单）。script 还出现在 manuscript（手稿）、describe（描述，写下来）里。", "roots": [{"part": "trans-", "meaning": "跨越、转移"}, {"part": "script", "meaning": "写（拉丁 scribere）"}], "phonetics": "重音在第一个音节 /træn/。s 读 /s/ 不浊化。注意与 transcribe（动词，誊写）同族，重音位置不同：transcript 名词重音在前，transcribe 动词重音在后。", "tip": "trans（跨）+ script（写）= 把成绩「誊抄」过来 → 成绩单。", "examples": [{"en": "You need to request an official transcript from your school.", "zh": "你需要向学校申请一份官方成绩单。", "source": "造句"}, {"en": "The transcript lists every course I have taken.", "zh": "成绩单列出了我修过的每一门课。", "source": "造句"}], "synonyms": [{"word": "record", "zh": "记录、成绩档案"}, {"word": "academic record", "zh": "学业记录"}]}, "graduate": {"ipa": "/ˈɡrædʒuət/（名词/形容词）", "meaning": "n. 毕业生；adj. 研究生的（graduate school = 研究生院）", "levels": ["六级", "托福"], "etymology": "grad（步、台阶、等级）+ -uate（动词后缀）→「一步步走到更高一级」= 毕业、获得学位。同根词 grade（年级、等级）、gradual（逐步的）、upgrade（升级），核心意象都是「一级一级往上走」。", "roots": [{"part": "grad-", "meaning": "步、等级（拉丁 gradus）"}, {"part": "-uate", "meaning": "动词/名词后缀"}], "phonetics": "作名词/形容词读 /ˈɡrædʒuət/，作动词「毕业」读 /ˈɡrædʒueɪt/，词尾音不同。d 后 u 读 /dʒ/（d+u 颚化，同 education）。", "tip": "grad = 台阶。本科往上「再登一阶」就是 graduate school（研究生院）。", "examples": [{"en": "She is applying to several graduate schools.", "zh": "她正在申请几所研究生院。", "source": "造句"}, {"en": "I will graduate from college next June.", "zh": "我明年六月大学毕业。", "source": "造句"}], "synonyms": [{"word": "postgraduate", "zh": "研究生的（英式）"}, {"word": "alumnus", "zh": "毕业生（校友）"}]}, "application": {"ipa": "/ˌæplɪˈkeɪʃn/", "meaning": "n. 申请；应用（软件）；应用、用途", "levels": ["六级", "托福"], "etymology": "由 apply（申请、应用）派生。apply 源自拉丁 applicare = ad-（向）+ plicare（折叠），本义是「把材料折叠起来呈交给对方」→ 申请。同根词 complicate（复杂，折在一起）、imply（暗含，折进去）、reply（回复，折回来）。", "roots": [{"part": "ap-", "meaning": "向（ad- 的变体）"}, {"part": "plic-", "meaning": "折叠（拉丁 plicare）"}], "phonetics": "重音在第三音节 /ˈkeɪ/。注意 -tion 读 /ʃn/。ap- 弱读 /ə/。", "tip": "plic = 折叠。把申请材料「折好递上去」→ application（申请）。", "examples": [{"en": "Please submit your application before the deadline.", "zh": "请在截止日期前提交申请。", "source": "造句"}, {"en": "This mobile application is very useful for students.", "zh": "这个手机应用对学生很有用。", "source": "造句"}], "synonyms": [{"word": "request", "zh": "请求、申请"}, {"word": "form", "zh": "申请表"}]}, "log": {"ipa": "/lɔːɡ/", "meaning": "v. 登录（log into）；记录；n. 原木、日志", "levels": ["六级"], "etymology": "本义是「原木」。水手把航行情况刻在木头上做记录（ship's log），后来 log 引申为「日志、记录」，再进一步指「登入系统（把访问记录下来）」。log into = 登录。", "roots": [], "phonetics": "o 读 /ɔː/（英）或 /ɔː/ 偏 /ɑː/（美）。单音节，无重音问题。", "tip": "log into（登录）≠ log off（登出）。记成「登入系统=留下日志」。", "examples": [{"en": "Log into the portal with your student ID.", "zh": "用你的学号登录门户网站。", "source": "造句"}], "synonyms": [{"word": "sign in", "zh": "登录"}, {"word": "log in", "zh": "登录"}]}, "portal": {"ipa": "/ˈpɔːrtl/", "meaning": "n. 门户网站；大门、入口", "levels": ["托福"], "etymology": "port（门、港口）+ -al（名词后缀）。拉丁 porta = 门。同根词 port（港口，船的「门」）、portable（可携带的）、import/export（进/出「门」→ 进出口）。本义是「气势恢宏的大门」，网络时代引申为「聚合入口」= 门户网站。", "roots": [{"part": "port-", "meaning": "门、港口、携带（拉丁 porta/portare）"}, {"part": "-al", "meaning": "名词后缀"}], "phonetics": "重音在第一个音节 /ˈpɔːr/。美音卷舌 /ˈpɔːrtl/。注意 port 发 /pɔːr/ 不是 /pə/。", "tip": "port = 门。一个网站把你需要的服务「装进一扇门」= 门户。", "examples": [{"en": "You can check your grades on the student portal.", "zh": "你可以在学生门户网站上查看成绩。", "source": "造句"}], "synonyms": [{"word": "gateway", "zh": "入口、门户"}, {"word": "website", "zh": "网站"}]}, "out": {"ipa": "/aʊt/", "meaning": "adv./prep. 出、向外；fill out = 填写（表格）", "levels": ["基础"], "etymology": "本族常用词，源自古英语 ūt「向外」。fill out 字面是「把空格填满到边」，引申为「填写完整表格」。注意 fill out（填完整）vs fill in（填入具体某格）语感相近，美式多用 fill out。", "roots": [], "phonetics": "ou 读 /aʊ/（同 now, house）。单音节双元音，从 /ɑ/ 滑向 /ʊ/。", "tip": "fill out a form = 填表。记「把空格填『出』来」。", "examples": [{"en": "Please fill out this form completely.", "zh": "请完整填写这张表格。", "source": "造句"}], "synonyms": [{"word": "complete", "zh": "填写完整"}]}, "check": {"ipa": "/tʃek/", "meaning": "v. 勾选；检查；n. 支票；账单", "levels": ["基础"], "etymology": "源自波斯语 shah（国王）→ 国际象棋里「将军」，引申为「制止、检查、核对」。check the box = 在方框里打勾。check 一词多义：勾选、检查、支票，核心都是「确认无误」。", "roots": [], "phonetics": "ch 读 /tʃ/（清塞擦音，同 chair）。单音节。", "tip": "check the box（勾选）· check in（登记入住）· check out（结账离开）都是「确认」。", "examples": [{"en": "Check the box if you agree with the terms.", "zh": "如果你同意条款，请勾选此框。", "source": "造句"}], "synonyms": [{"word": "tick", "zh": "打勾（英式）"}, {"word": "mark", "zh": "标记"}]}, "unofficial": {"ipa": "/ˌʌnəˈfɪʃl/", "meaning": "adj. 非官方的、非正式的", "levels": ["托福"], "etymology": "un-（否定）+ official（官方的）。official 源自 office（职务、办公室）→「有职务身份背书的」= 官方的。unofficial 就是「没有官方背书的」——比如 unofficial transcript（非官方成绩单，未盖章、仅自用）。", "roots": [{"part": "un-", "meaning": "否定前缀「不」"}, {"part": "official", "meaning": "官方的（← office 职务）"}], "phonetics": "重音在 -fi- /ˈfɪʃ/。un- 弱读 /ʌn/。official 里 ci 读 /ʃ/（c+i 软化）。", "tip": "official（官方盖了章的）↔ unofficial（没盖章、自用的）。对照记。", "examples": [{"en": "You can print an unofficial transcript for your own records.", "zh": "你可以打印一份非官方成绩单供自己留档。", "source": "造句"}], "synonyms": [{"word": "informal", "zh": "非正式的"}], "antonyms": [{"word": "official", "zh": "官方的、正式的"}]}, "records": {"ipa": "/ˈrekərdz/", "meaning": "n. 记录、档案（for my own records = 供我自己留档）", "levels": ["六级"], "etymology": "re-（回）+ cord（心，拉丁 cor）→「记回心里」= 记录。同根词 cordial（热诚的，发自内心的）、accord（一致，心往一处）。名词 records 读 /ˈrekərdz/，动词 record 读 /rɪˈkɔːrd/。", "roots": [{"part": "re-", "meaning": "回、再"}, {"part": "cord-", "meaning": "心（拉丁 cor）"}], "phonetics": "名词重音在前 /ˈrekərd/，动词重音在后 /rɪˈkɔːrd/。本句是名词复数 records。", "tip": "keep/for records = 存档留底。cor = 心，「记在心上」= 记录。", "examples": [{"en": "Keep a copy for your own records.", "zh": "留一份副本供自己存档。", "source": "造句"}], "synonyms": [{"word": "files", "zh": "档案"}, {"word": "documents", "zh": "文件"}]}, "ensure": {"ipa": "/ɪnˈʃʊr/", "meaning": "v. 确保、保证（使某事一定发生）", "levels": ["六级", "托福"], "etymology": "en-（使）+ sure（确定的）→「使变得确定」= 确保。注意辨析三个同源词：ensure（确保，使某事发生）、assure（向某人保证，宾语是人）、insure（投保，保险）。三者都源自 sure。", "roots": [{"part": "en-", "meaning": "使、使成为"}, {"part": "sure", "meaning": "确定的、确信的"}], "phonetics": "重音在第二个音节 /ˈʃʊr/。en- 弱读 /ɪn/。sure 读 /ʃʊr/（s 读 /ʃ/）。", "tip": "ensure 宾语是「事」（确保事办成）· assure 宾语是「人」（向人保证）· insure 是「保险」。", "examples": [{"en": "Please ensure that your information is correct before submitting.", "zh": "提交前请确保你的信息正确。", "source": "造句"}], "synonyms": [{"word": "make sure", "zh": "确保（口语）"}, {"word": "guarantee", "zh": "保证"}]}, "stamp": {"ipa": "/stæmp/", "meaning": "v. 盖章、跺脚；n. 邮票、印章", "levels": ["六级"], "etymology": "本义是「用力向下踩、跺脚」（古英语 stempan）。盖章的动作就是「向下按压」，引申为「盖章」；再引申为「贴在信上盖过章的凭证」= 邮票。stamp the transcript with a seal = 在成绩单上盖章。", "roots": [], "phonetics": "a 读 /æ/（扁口「爱」）。st- 连读，p 在词尾送气轻。", "tip": "stamp 从「跺脚」到「盖章」到「邮票」，一条动作链：向下按 → 盖印 → 凭证。", "examples": [{"en": "The office will stamp the document with an official seal.", "zh": "办公室会在文件上盖官方印章。", "source": "造句"}], "synonyms": [{"word": "seal", "zh": "盖章、印章"}, {"word": "impress", "zh": "盖印"}]}, "seal": {"ipa": "/siːl/", "meaning": "n. 印章、封条；海豹；v. 密封、盖章", "levels": ["六级", "托福"], "etymology": "本义是「印记、图章」（拉丁 sigillum，小印记）。盖章表示「官方认证、不可改动」，引申为「密封」（把东西盖印封住）。seal 还指「海豹」，来自另一词源（古英语 seolh），与「印章」无关，别混淆。", "roots": [], "phonetics": "ea 读 /iː/（长音「衣」）。单音节。与 sea、see 同音。", "tip": "seal（印章）与 seal（海豹）是「同形异源词」——一个来自拉丁「印记」，一个来自古英语「海豹」。", "examples": [{"en": "The diploma carries the university's official seal.", "zh": "毕业证书上盖有大学的官方印章。", "source": "造句"}], "synonyms": [{"word": "stamp", "zh": "印章、盖章"}, {"word": "imprint", "zh": "印记"}]}}}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const passage = G.passages[0];
+const blanks = passage.blanks;
+let answers = new Array(blanks.length).fill(null); // null=未答 true=对 false=错
+
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+// ---------- TTS ----------
+let ttsVoice = null;
+function pickVoice(){
+  try{
+    const vs = speechSynthesis.getVoices()||[];
+    let us = vs.filter(v=>/en[-_]US/i.test(v.lang));
+    const pref=['Google US English','Samantha','Ava','Microsoft Aria','Karen','Victoria'];
+    for(const n of pref){const h=us.find(v=>v.name===n)||us.find(v=>v.name.indexOf(n)===0); if(h){ttsVoice=h;return;}}
+    ttsVoice = us[0]||null;
+  }catch(e){}
+}
+if('speechSynthesis' in window){ speechSynthesis.onvoiceschanged=pickVoice; pickVoice(); }
+function say(t){ if(!('speechSynthesis' in window))return; speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(t); u.lang='en-US'; if(ttsVoice)u.voice=ttsVoice; u.rate=0.9; speechSynthesis.speak(u); }
+
+// ---------- 渲染 ----------
+function blankLabel(i){ const w=blanks[i].word; return w[0] + '_'.repeat(w.length-1); }
+
+function renderPassage(){
+  const parts = passage.text.split(/\{(\d+)\}/g);
+  let html = '';
+  parts.forEach((p, idx)=>{
+    if(idx % 2 === 1){ // 空位
+      const bi = parseInt(p, 10);
+      html += renderBlank(bi);
+    } else {
+      html += esc(p);
+    }
+  });
+  document.getElementById('pText').innerHTML = html;
+}
+
+function renderBlank(bi){
+  const w = blanks[bi].word;
+  if(answers[bi] === null){
+    return '<span class="blank" id="b'+bi+'" onclick="openInput('+bi+')">'+esc(blankLabel(bi))+'</span>';
+  } else {
+    const cls = answers[bi] ? 'ok' : 'bad';
+    return '<span class="blank '+cls+'" id="b'+bi+'" onclick="showCard('+bi+')">'+esc(w)+'<span class="bk">📖</span></span>';
+  }
+}
+
+function openInput(bi){
+  const el = document.getElementById('b'+bi);
+  if(!el) return;
+  const w = blanks[bi].word;
+  el.outerHTML = '<input class="blank-input" id="in'+bi+'" value="'+esc(w[0])+'" maxlength="'+w.length+'" autocomplete="off">';
+  const inp = document.getElementById('in'+bi);
+  inp.focus();
+  inp.setSelectionRange(1,1);
+  inp.addEventListener('keydown', e=>{ if(e.key==='Enter') check(bi, inp.value); });
+  inp.addEventListener('blur', ()=>{ check(bi, inp.value); });
+}
+
+function check(bi, val){
+  if(answers[bi] !== null) return; // 防重复判定
+  const w = blanks[bi].word;
+  answers[bi] = (val||'').trim().toLowerCase() === w.toLowerCase();
+  updateScore();
+  renderPassage();
+}
+
+function updateScore(){
+  const done = answers.filter(a=>a===true).length;
+  const total = blanks.length;
+  document.getElementById('doneN').textContent = done;
+  document.getElementById('totN').textContent = total;
+  document.getElementById('bar').style.width = (done/total*100) + '%';
+  if(answers.every(a=>a!==null)){
+    const box = document.getElementById('done');
+    box.style.display='block';
+    box.innerHTML = '<div class="big">'+done+' / '+total+'</div><div class="msg">'+
+      (done===total ? '🎉 全部答对！点下面的单词复习卡巩固一下。' : '已完成。点标红的词查看正确拼写和词源，再重来一轮。')+'</div>';
+  }
+}
+
+function revealAll(){
+  answers = blanks.map(()=>true);
+  updateScore();
+  renderPassage();
+}
+
+function reset(){
+  answers = new Array(blanks.length).fill(null);
+  document.getElementById('done').style.display='none';
+  updateScore();
+  renderPassage();
+}
+
+// ---------- 单词卡（对齐 vocabulary 标准）----------
+function showCard(bi){
+  const w = blanks[bi].word;
+  const d = passage.words[w];
+  if(!d){ return; }
+  const roots = (d.roots||[]).map(r=>'<div class="root"><b>'+esc(r.part)+'</b> · '+esc(r.meaning)+'</div>').join('');
+  const exs = (d.examples||[]).map(e=>
+    '<div class="ex"><div class="en">'+esc(e.en)+' <span class="src">('+esc(e.source)+')</span></div><div class="zh">'+esc(e.zh)+'</div></div>').join('');
+  const syns = (d.synonyms||[]).map(s=>'<span class="t" onclick="say(\''+esc(s.word)+'\')">'+esc(s.word)+' '+esc(s.zh)+'</span>').join('');
+  const ants = (d.antonyms||[]).map(a=>'<span class="t ant" onclick="say(\''+esc(a.word)+'\')">'+esc(a.word)+' '+esc(a.zh)+'</span>').join('');
+  document.getElementById('card').innerHTML =
+    '<div class="chead"><span class="word">'+esc(w)+'</span><span class="lvl">'+esc((d.levels||[]).join(' · '))+'</span></div>'+
+    '<div class="ipa" onclick="say(\''+esc(w)+'\')">'+esc(d.ipa)+' 🔊</div>'+
+    '<div class="mean">'+esc(d.meaning)+'</div>'+
+    (d.etymology ? '<h4>词源故事</h4><p>'+esc(d.etymology)+'</p>' : '')+
+    (roots ? '<h4>词根词缀</h4><div class="roots">'+roots+'</div>' : '')+
+    (d.phonetics ? '<h4>发音规律</h4><p>'+esc(d.phonetics)+'</p>' : '')+
+    (d.tip ? '<h4>记忆钩子</h4><div class="tip">💡 '+esc(d.tip)+'</div>' : '')+
+    (exs ? '<h4>例句</h4>'+exs : '')+
+    ((syns||ants) ? '<h4>近义词 / 反义词</h4><div class="lex">'+syns+ants+'</div>' : '')+
+    '<button class="close" onclick="closeCard()">关闭</button>';
+  document.getElementById('ov').style.display='flex';
+}
+function closeCard(){ document.getElementById('ov').style.display='none'; }
+document.getElementById('ov').addEventListener('click', e=>{ if(e.target.id==='ov') closeCard(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeCard(); });
+
+// ---------- 初始化 ----------
+document.getElementById('pTitle').textContent = passage.title;
+document.getElementById('pTopic').textContent = passage.topic || '';
+document.getElementById('zh').innerHTML = '<b>参考译文：</b>'+esc(passage.zh);
+document.getElementById('totN').textContent = blanks.length;
+renderPassage();
+updateScore();
+</script>
+</body>
+</html>

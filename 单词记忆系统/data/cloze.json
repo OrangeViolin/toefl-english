@@ -1,0 +1,269 @@
+{
+  "id": "cloze",
+  "title": "阅读填词题",
+  "subtitle": "托福阅读 · 完形填空（Vocabulary / Cloze）",
+  "intro": "托福阅读里有一种高频题型：给一段短文，挖掉若干词，只留首字母和下划线提示字母数，让你根据上下文把词填回去。它考的不是死背，而是「在语境里锁定正确单词」的能力——拼写、词义、搭配三者都要对上。每道题填完后，可以点开任意空位，按单词记忆系统的标准（音标·词源·词根·发音·例句·近义词）逐词复习。",
+  "passages": [
+    {
+      "id": "transcript-application",
+      "title": "申请成绩单",
+      "topic": "校园服务 · Campus Service",
+      "zh": "我昨天去了教务处，因为我要申请研究生，需要一份成绩单。工作人员让我登录学生门户网站，在线填写申请表。他们还告诉我，如果这份成绩单只是自己留档用，应该勾选「非官方成绩单」那一栏。提交之前，我要确保所有信息都正确。如果一切无误，他们会在邮寄前给成绩单盖上印章。",
+      "text": "I went to the {0}'s office yesterday because I need a {1} for my {2} school {3}. The staff told me to {4} into the student {5} and fill {6} a request form online. They also said I should {7} the box for an {8} transcript if it is just for my own {9}. Before submitting, I need to {10} that all my information is correct. If everything looks good, they will {11} the transcript with their {12} before mailing.",
+      "blanks": [
+        { "word": "registrar", "hint": "教务处；登记员" },
+        { "word": "transcript", "hint": "成绩单" },
+        { "word": "graduate", "hint": "研究生的（graduate school）" },
+        { "word": "application", "hint": "申请" },
+        { "word": "log", "hint": "登录（log into）" },
+        { "word": "portal", "hint": "门户网站" },
+        { "word": "out", "hint": "填写（fill out）" },
+        { "word": "check", "hint": "勾选（check the box）" },
+        { "word": "unofficial", "hint": "非官方的" },
+        { "word": "records", "hint": "记录、档案" },
+        { "word": "ensure", "hint": "确保" },
+        { "word": "stamp", "hint": "盖章" },
+        { "word": "seal", "hint": "印章" }
+      ],
+      "words": {
+        "registrar": {
+          "ipa": "/ˌredʒɪˈstrɑːr/",
+          "meaning": "n. 教务注册员；登记员（大学里管学籍、成绩单的办公室/人）",
+          "levels": ["托福"],
+          "etymology": "register（登记）+ -ar（表「人」的后缀）。register 源自拉丁 re-（回）+ gerere（携带、记录），本义是「把事记回去、登记在册」。所以 registrar 就是「掌管登记册的人」——在校园语境里专指教务处。",
+          "roots": [
+            { "part": "registr-", "meaning": "登记、记录（register）" },
+            { "part": "-ar", "meaning": "表示「从事…的人」" }
+          ],
+          "phonetics": "重音在第三音节 /ˈstrɑːr/。注意 ge 读 /dʒ/，gi 前有 g 软化（e/i 前 g→/dʒ/）。常见错误：把重音读在第一个音节。",
+          "tip": "「掌管 register 登记册的人」= 教务处。办成绩单、选课、转学都找它。",
+          "examples": [
+            { "en": "I picked up my transcript from the registrar's office.", "zh": "我从教务处领取了成绩单。", "source": "造句" },
+            { "en": "The registrar handles course registration and student records.", "zh": "教务处负责选课和学生档案。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "record-keeper", "zh": "档案管理员" },
+            { "word": "clerk", "zh": "办事员" }
+          ]
+        },
+        "transcript": {
+          "ipa": "/ˈtrænskrɪpt/",
+          "meaning": "n. 成绩单；文字记录、抄本",
+          "levels": ["托福"],
+          "etymology": "trans-（跨越、转移）+ script（写，同 write 一族）。字面义是「从一处誊写到另一处」。把你在校所有成绩「誊抄」成一份正式文件，就是 transcript（成绩单）。script 还出现在 manuscript（手稿）、describe（描述，写下来）里。",
+          "roots": [
+            { "part": "trans-", "meaning": "跨越、转移" },
+            { "part": "script", "meaning": "写（拉丁 scribere）" }
+          ],
+          "phonetics": "重音在第一个音节 /træn/。s 读 /s/ 不浊化。注意与 transcribe（动词，誊写）同族，重音位置不同：transcript 名词重音在前，transcribe 动词重音在后。",
+          "tip": "trans（跨）+ script（写）= 把成绩「誊抄」过来 → 成绩单。",
+          "examples": [
+            { "en": "You need to request an official transcript from your school.", "zh": "你需要向学校申请一份官方成绩单。", "source": "造句" },
+            { "en": "The transcript lists every course I have taken.", "zh": "成绩单列出了我修过的每一门课。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "record", "zh": "记录、成绩档案" },
+            { "word": "academic record", "zh": "学业记录" }
+          ]
+        },
+        "graduate": {
+          "ipa": "/ˈɡrædʒuət/（名词/形容词）",
+          "meaning": "n. 毕业生；adj. 研究生的（graduate school = 研究生院）",
+          "levels": ["六级", "托福"],
+          "etymology": "grad（步、台阶、等级）+ -uate（动词后缀）→「一步步走到更高一级」= 毕业、获得学位。同根词 grade（年级、等级）、gradual（逐步的）、upgrade（升级），核心意象都是「一级一级往上走」。",
+          "roots": [
+            { "part": "grad-", "meaning": "步、等级（拉丁 gradus）" },
+            { "part": "-uate", "meaning": "动词/名词后缀" }
+          ],
+          "phonetics": "作名词/形容词读 /ˈɡrædʒuət/，作动词「毕业」读 /ˈɡrædʒueɪt/，词尾音不同。d 后 u 读 /dʒ/（d+u 颚化，同 education）。",
+          "tip": "grad = 台阶。本科往上「再登一阶」就是 graduate school（研究生院）。",
+          "examples": [
+            { "en": "She is applying to several graduate schools.", "zh": "她正在申请几所研究生院。", "source": "造句" },
+            { "en": "I will graduate from college next June.", "zh": "我明年六月大学毕业。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "postgraduate", "zh": "研究生的（英式）" },
+            { "word": "alumnus", "zh": "毕业生（校友）" }
+          ]
+        },
+        "application": {
+          "ipa": "/ˌæplɪˈkeɪʃn/",
+          "meaning": "n. 申请；应用（软件）；应用、用途",
+          "levels": ["六级", "托福"],
+          "etymology": "由 apply（申请、应用）派生。apply 源自拉丁 applicare = ad-（向）+ plicare（折叠），本义是「把材料折叠起来呈交给对方」→ 申请。同根词 complicate（复杂，折在一起）、imply（暗含，折进去）、reply（回复，折回来）。",
+          "roots": [
+            { "part": "ap-", "meaning": "向（ad- 的变体）" },
+            { "part": "plic-", "meaning": "折叠（拉丁 plicare）" }
+          ],
+          "phonetics": "重音在第三音节 /ˈkeɪ/。注意 -tion 读 /ʃn/。ap- 弱读 /ə/。",
+          "tip": "plic = 折叠。把申请材料「折好递上去」→ application（申请）。",
+          "examples": [
+            { "en": "Please submit your application before the deadline.", "zh": "请在截止日期前提交申请。", "source": "造句" },
+            { "en": "This mobile application is very useful for students.", "zh": "这个手机应用对学生很有用。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "request", "zh": "请求、申请" },
+            { "word": "form", "zh": "申请表" }
+          ]
+        },
+        "log": {
+          "ipa": "/lɔːɡ/",
+          "meaning": "v. 登录（log into）；记录；n. 原木、日志",
+          "levels": ["六级"],
+          "etymology": "本义是「原木」。水手把航行情况刻在木头上做记录（ship's log），后来 log 引申为「日志、记录」，再进一步指「登入系统（把访问记录下来）」。log into = 登录。",
+          "roots": [],
+          "phonetics": "o 读 /ɔː/（英）或 /ɔː/ 偏 /ɑː/（美）。单音节，无重音问题。",
+          "tip": "log into（登录）≠ log off（登出）。记成「登入系统=留下日志」。",
+          "examples": [
+            { "en": "Log into the portal with your student ID.", "zh": "用你的学号登录门户网站。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "sign in", "zh": "登录" },
+            { "word": "log in", "zh": "登录" }
+          ]
+        },
+        "portal": {
+          "ipa": "/ˈpɔːrtl/",
+          "meaning": "n. 门户网站；大门、入口",
+          "levels": ["托福"],
+          "etymology": "port（门、港口）+ -al（名词后缀）。拉丁 porta = 门。同根词 port（港口，船的「门」）、portable（可携带的）、import/export（进/出「门」→ 进出口）。本义是「气势恢宏的大门」，网络时代引申为「聚合入口」= 门户网站。",
+          "roots": [
+            { "part": "port-", "meaning": "门、港口、携带（拉丁 porta/portare）" },
+            { "part": "-al", "meaning": "名词后缀" }
+          ],
+          "phonetics": "重音在第一个音节 /ˈpɔːr/。美音卷舌 /ˈpɔːrtl/。注意 port 发 /pɔːr/ 不是 /pə/。",
+          "tip": "port = 门。一个网站把你需要的服务「装进一扇门」= 门户。",
+          "examples": [
+            { "en": "You can check your grades on the student portal.", "zh": "你可以在学生门户网站上查看成绩。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "gateway", "zh": "入口、门户" },
+            { "word": "website", "zh": "网站" }
+          ]
+        },
+        "out": {
+          "ipa": "/aʊt/",
+          "meaning": "adv./prep. 出、向外；fill out = 填写（表格）",
+          "levels": ["基础"],
+          "etymology": "本族常用词，源自古英语 ūt「向外」。fill out 字面是「把空格填满到边」，引申为「填写完整表格」。注意 fill out（填完整）vs fill in（填入具体某格）语感相近，美式多用 fill out。",
+          "roots": [],
+          "phonetics": "ou 读 /aʊ/（同 now, house）。单音节双元音，从 /ɑ/ 滑向 /ʊ/。",
+          "tip": "fill out a form = 填表。记「把空格填『出』来」。",
+          "examples": [
+            { "en": "Please fill out this form completely.", "zh": "请完整填写这张表格。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "complete", "zh": "填写完整" }
+          ]
+        },
+        "check": {
+          "ipa": "/tʃek/",
+          "meaning": "v. 勾选；检查；n. 支票；账单",
+          "levels": ["基础"],
+          "etymology": "源自波斯语 shah（国王）→ 国际象棋里「将军」，引申为「制止、检查、核对」。check the box = 在方框里打勾。check 一词多义：勾选、检查、支票，核心都是「确认无误」。",
+          "roots": [],
+          "phonetics": "ch 读 /tʃ/（清塞擦音，同 chair）。单音节。",
+          "tip": "check the box（勾选）· check in（登记入住）· check out（结账离开）都是「确认」。",
+          "examples": [
+            { "en": "Check the box if you agree with the terms.", "zh": "如果你同意条款，请勾选此框。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "tick", "zh": "打勾（英式）" },
+            { "word": "mark", "zh": "标记" }
+          ]
+        },
+        "unofficial": {
+          "ipa": "/ˌʌnəˈfɪʃl/",
+          "meaning": "adj. 非官方的、非正式的",
+          "levels": ["托福"],
+          "etymology": "un-（否定）+ official（官方的）。official 源自 office（职务、办公室）→「有职务身份背书的」= 官方的。unofficial 就是「没有官方背书的」——比如 unofficial transcript（非官方成绩单，未盖章、仅自用）。",
+          "roots": [
+            { "part": "un-", "meaning": "否定前缀「不」" },
+            { "part": "official", "meaning": "官方的（← office 职务）" }
+          ],
+          "phonetics": "重音在 -fi- /ˈfɪʃ/。un- 弱读 /ʌn/。official 里 ci 读 /ʃ/（c+i 软化）。",
+          "tip": "official（官方盖了章的）↔ unofficial（没盖章、自用的）。对照记。",
+          "examples": [
+            { "en": "You can print an unofficial transcript for your own records.", "zh": "你可以打印一份非官方成绩单供自己留档。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "informal", "zh": "非正式的" }
+          ],
+          "antonyms": [
+            { "word": "official", "zh": "官方的、正式的" }
+          ]
+        },
+        "records": {
+          "ipa": "/ˈrekərdz/",
+          "meaning": "n. 记录、档案（for my own records = 供我自己留档）",
+          "levels": ["六级"],
+          "etymology": "re-（回）+ cord（心，拉丁 cor）→「记回心里」= 记录。同根词 cordial（热诚的，发自内心的）、accord（一致，心往一处）。名词 records 读 /ˈrekərdz/，动词 record 读 /rɪˈkɔːrd/。",
+          "roots": [
+            { "part": "re-", "meaning": "回、再" },
+            { "part": "cord-", "meaning": "心（拉丁 cor）" }
+          ],
+          "phonetics": "名词重音在前 /ˈrekərd/，动词重音在后 /rɪˈkɔːrd/。本句是名词复数 records。",
+          "tip": "keep/for records = 存档留底。cor = 心，「记在心上」= 记录。",
+          "examples": [
+            { "en": "Keep a copy for your own records.", "zh": "留一份副本供自己存档。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "files", "zh": "档案" },
+            { "word": "documents", "zh": "文件" }
+          ]
+        },
+        "ensure": {
+          "ipa": "/ɪnˈʃʊr/",
+          "meaning": "v. 确保、保证（使某事一定发生）",
+          "levels": ["六级", "托福"],
+          "etymology": "en-（使）+ sure（确定的）→「使变得确定」= 确保。注意辨析三个同源词：ensure（确保，使某事发生）、assure（向某人保证，宾语是人）、insure（投保，保险）。三者都源自 sure。",
+          "roots": [
+            { "part": "en-", "meaning": "使、使成为" },
+            { "part": "sure", "meaning": "确定的、确信的" }
+          ],
+          "phonetics": "重音在第二个音节 /ˈʃʊr/。en- 弱读 /ɪn/。sure 读 /ʃʊr/（s 读 /ʃ/）。",
+          "tip": "ensure 宾语是「事」（确保事办成）· assure 宾语是「人」（向人保证）· insure 是「保险」。",
+          "examples": [
+            { "en": "Please ensure that your information is correct before submitting.", "zh": "提交前请确保你的信息正确。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "make sure", "zh": "确保（口语）" },
+            { "word": "guarantee", "zh": "保证" }
+          ]
+        },
+        "stamp": {
+          "ipa": "/stæmp/",
+          "meaning": "v. 盖章、跺脚；n. 邮票、印章",
+          "levels": ["六级"],
+          "etymology": "本义是「用力向下踩、跺脚」（古英语 stempan）。盖章的动作就是「向下按压」，引申为「盖章」；再引申为「贴在信上盖过章的凭证」= 邮票。stamp the transcript with a seal = 在成绩单上盖章。",
+          "roots": [],
+          "phonetics": "a 读 /æ/（扁口「爱」）。st- 连读，p 在词尾送气轻。",
+          "tip": "stamp 从「跺脚」到「盖章」到「邮票」，一条动作链：向下按 → 盖印 → 凭证。",
+          "examples": [
+            { "en": "The office will stamp the document with an official seal.", "zh": "办公室会在文件上盖官方印章。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "seal", "zh": "盖章、印章" },
+            { "word": "impress", "zh": "盖印" }
+          ]
+        },
+        "seal": {
+          "ipa": "/siːl/",
+          "meaning": "n. 印章、封条；海豹；v. 密封、盖章",
+          "levels": ["六级", "托福"],
+          "etymology": "本义是「印记、图章」（拉丁 sigillum，小印记）。盖章表示「官方认证、不可改动」，引申为「密封」（把东西盖印封住）。seal 还指「海豹」，来自另一词源（古英语 seolh），与「印章」无关，别混淆。",
+          "roots": [],
+          "phonetics": "ea 读 /iː/（长音「衣」）。单音节。与 sea、see 同音。",
+          "tip": "seal（印章）与 seal（海豹）是「同形异源词」——一个来自拉丁「印记」，一个来自古英语「海豹」。",
+          "examples": [
+            { "en": "The diploma carries the university's official seal.", "zh": "毕业证书上盖有大学的官方印章。", "source": "造句" }
+          ],
+          "synonyms": [
+            { "word": "stamp", "zh": "印章、盖章" },
+            { "word": "imprint", "zh": "印记" }
+          ]
+        }
+      }
+    }
+  ]
+}
