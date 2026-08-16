@@ -25,6 +25,24 @@
   .scene-head{margin:0 0 14px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
   .scene-head .nm{font-size:17px;font-weight:800}
   .scene-head .ds{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .scene-head .tly{font-size:12.5px;margin-top:6px;color:#5f574c;background:#eef6f3;border:1px solid #cfe3db;border-radius:8px;padding:5px 10px;display:inline-block}
+  .scene-head .tly b{color:var(--core)}
+  /* 评分标准折叠卡 */
+  .rubric{background:#fbf7ee;border:1px solid var(--line);border-radius:12px;padding:0 14px;margin-bottom:14px}
+  .rubric summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--accent);padding:12px 0;list-style:none}
+  .rubric summary::-webkit-details-marker{display:none}
+  .rubric summary::before{content:"▸ ";color:var(--accent)}
+  .rubric[open] summary::before{content:"▾ "}
+  .rubric table{width:100%;border-collapse:collapse;font-size:12.5px;margin:2px 0 12px}
+  .rubric th,.rubric td{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+  .rubric th{background:#f0e8d8;color:#5f574c;font-weight:700}
+  .rubric td.sc{font-weight:800;text-align:center;color:var(--core);width:40px}
+  .rubric .note{font-size:12px;color:var(--muted);margin:0 0 12px}
+  /* 0-5 分展示 */
+  .band{font-size:15px;font-weight:800;padding:4px 14px;border-radius:12px}
+  .band.b5,.band.b4{background:#e6f0ec;color:var(--ok)}
+  .band.b3,.band.b2{background:#fff3e0;color:var(--warn)}
+  .band.b1,.band.b0{background:#ffe8e4;color:var(--bad)}
   .qinfo{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:14px}
   .lv{font-size:11px;padding:2px 10px;border-radius:10px;background:#e6f0ec;color:var(--core);font-weight:700}
   .sentence{font-family:Georgia,"Times New Roman",serif;font-size:26px;line-height:1.4;margin:10px 0 6px;min-height:36px}
@@ -76,7 +94,7 @@
   <div class="top"><a href="./index.html">← 返回口语主页</a><span>听力复述 · Listen and Repeat</span></div>
   <h1>🔁 听力复述</h1>
   <div class="en">Listen and Repeat · 按场景逐句复述</div>
-  <div class="desc">按<b>真实校园场景</b>组织：一个场景约 7 句、句子由短到长。听一句（考试只放一遍）→ 逐字复述。系统把你说的转成文字与原文做<b>逐字比对</b>，算复述准确率。换词、漏词、重排都算错——这正是新版托福的扣分点。</div>
+  <div class="desc">按<b>真实校园场景</b>组织：一个场景 7 句（= 一套题，满分 35）、句子由短到长。听一句（考试只放一遍）→ 逐字复述。系统据转写与原文比对，按官方口径给每句 <b>0–5 分</b>（清晰度 50% + 一致性 50%）；7 句原始分 /35，最终折算 0–6。换词、漏词、重排都算错。</div>
 
   <div class="scenes" id="scenes"></div>
 
@@ -88,9 +106,25 @@
       ③ <b>抓骨架</b>——先抓「谁+干什么」，修饰语填空 ·
       ④ 顺着一个场景练 7 句，越练越顺、语料成串更好记。
     </div>
+
+    <details class="rubric">
+      <summary>📊 评分标准（每句 0–5 分 · 清晰度 50% + 一致性 50% · 7 句 /35 → 最终 0–6）</summary>
+      <table>
+        <tr><th>分</th><th>档位</th><th>标准（约 ± 单词误差）</th><th>例（原句 → 复述）</th></tr>
+        <tr><td class="sc">5</td><td>完全一致</td><td>与原句 100% 匹配（±0 词），发音清楚、语速适中（8–12s），无吞音/连读错误、无语法改变</td><td>"opens at 8am" → "opens at 8am"</td></tr>
+        <tr><td class="sc">4</td><td>语义一致</td><td>意思一致但非完全重复（±1–2 词替换）</td><td>"Submit your report by Friday" → "Turn in your report by Friday"</td></tr>
+        <tr><td class="sc">3</td><td>结构完整</td><td>句子完整但含义偏差（±3 词错误）</td><td>"The meeting was postponed" → "The meeting was canceled"</td></tr>
+        <tr><td class="sc">2</td><td>内容缺失</td><td>遗漏关键信息（±4–5 词错误）</td><td>"All participants must register online" → "Participants register"</td></tr>
+        <tr><td class="sc">1</td><td>基本不符</td><td>仅包含个别原句词汇</td><td>"Parking is available behind the building" → "Building…parking"</td></tr>
+        <tr><td class="sc">0</td><td>无效</td><td>空白 / 非英语 / 完全无关 / 连续 "I don't know"</td><td>—</td></tr>
+      </table>
+      <p class="note">整体性评分（非扣分制），每句独立打分。系统据转写只能<b>估「一致性」</b>；<b>清晰度</b>（发音是否好懂）请自评或由 cc 结合你的录音反馈，二者各占 50% 得最终 0–5。7 句原始分满 35，再折算为 0–6 的 section 分。</p>
+    </details>
+
     <div class="scene-head">
       <div class="nm" id="sceneName"></div>
       <div class="ds" id="sceneDesc"></div>
+      <div class="tly" id="sceneTally"></div>
     </div>
     <div class="qinfo"><span id="qNo"></span><span class="lv" id="qLv"></span></div>
     <div class="sentence" id="sentence">点击「🔊 播放原句」开始</div>
@@ -118,9 +152,10 @@
 
     <div class="result" id="result">
       <div class="score-row">
-        <span class="score" id="acc"></span>
-        <span class="metric" id="metrics"></span>
+        <span class="score" id="score05"></span>
+        <span class="band" id="band"></span>
       </div>
+      <div class="metric" id="metrics"></div>
       <div class="cmp">
         <h4>📖 原文</h4>
         <div class="line" id="refLine"></div>
@@ -289,10 +324,56 @@ const SCENES = [
 ];
 
 let sceneIdx = 0, idx = 0, result = null;
+let sceneScores = [];  // 本场景各句 0–5 估分（一致性），下标对齐 items
 function curScene(){ return SCENES[sceneIdx]; }
 function curItem(){ return SCENES[sceneIdx].items[idx]; }
+function resetTally(){ sceneScores = new Array(curScene().items.length).fill(null); }
+
+// 0–5 分档位说明（对标官方口径）
+const BANDS = {
+  5:{label:"完全一致", cls:"b5", tip:"与原句 100% 匹配"},
+  4:{label:"语义一致", cls:"b4", tip:"意思一致，1–2 词替换"},
+  3:{label:"结构完整", cls:"b3", tip:"句子完整但含义偏差，约 3 词错误"},
+  2:{label:"内容缺失", cls:"b2", tip:"遗漏关键信息，4–5 词错误"},
+  1:{label:"基本不符", cls:"b1", tip:"仅个别原句词汇"},
+  0:{label:"无效", cls:"b0", tip:"空白 / 非英语 / 完全无关"},
+};
 
 function tokenize(s){ return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean); }
+
+// 词级编辑距离（增/删/换各计 1）＝「单词误差」数
+function editDistance(A, B){
+  const n=A.length, m=B.length;
+  const dp = Array.from({length:n+1}, (_,i)=>[i, ...new Array(m).fill(0)]);
+  for(let j=0;j<=m;j++) dp[0][j]=j;
+  for(let i=1;i<=n;i++) for(let j=1;j<=m;j++)
+    dp[i][j] = A[i-1]===B[j-1] ? dp[i-1][j-1] : 1+Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+  return dp[n][m];
+}
+
+// 按官方 0–5 口径给「一致性」估分（清晰度需另判）
+function scoreConsistency(refLen, matched, editDist, hyp){
+  if(!hyp || !hyp.trim() || matched===0) return 0;           // 无效
+  if(matched/Math.max(refLen,1) < 0.3) return 1;             // 仅个别词
+  if(editDist===0) return 5;                                 // 完全一致
+  if(editDist<=2) return 4;                                  // 语义一致
+  if(editDist===3) return 3;                                 // 结构完整
+  if(editDist<=5) return 2;                                  // 内容缺失
+  return 1;                                                  // 基本不符
+}
+
+// 本场景已答句的一致性汇总
+function tallyText(){
+  const answered = sceneScores.filter(v=>v!==null);
+  const total = curScene().items.length;
+  if(answered.length===0) return '本场景：0/'+total+' 句已评 · 完成 7 句可得原始分 /35';
+  const raw = answered.reduce((a,b)=>a+b,0);
+  const avg = raw/answered.length;
+  const section = Math.round(avg/5*6);   // 均分折算到 0–6（估算）
+  return '本场景一致性：已评 <b>'+answered.length+'/'+total+'</b> 句 · 累计 <b>'+raw+'</b>/'+(answered.length*5)+
+         ' · 均分 <b>'+avg.toFixed(1)+'</b>/5 · 估算 section ≈ <b>'+section+'</b>/6'+
+         (answered.length===total ? '（本场景原始分 '+raw+'/35）' : '');
+}
 
 // 词级 LCS 对齐
 function diffWords(ref, hyp){
@@ -366,13 +447,28 @@ function renderResult(){
   const q = curItem();
   const ref = q.en, hyp = result.transcript || '';
   const d = diffWords(ref, hyp);
+  const dist = editDistance(d.A, d.B);          // 单词误差数
   const acc = Math.round(d.match / Math.max(d.A.length,1) * 100);
   const wpm = Math.round(d.B.length / Math.max(result.duration,0.1) * 60);
+  const sc = scoreConsistency(d.A.length, d.match, dist, hyp);
+  const band = BANDS[sc];
 
-  document.getElementById('acc').textContent = acc + '%';
-  const eng = result.engine==='whisper' ? '转写引擎：本地 whisper ✓' : '⚠️ 本地转写服务未运行，用了浏览器降级识别（可能不准）';
+  // 记入本场景汇总（重测覆盖）
+  sceneScores[idx] = sc;
+
+  // 0–5 主分 + 档位
+  document.getElementById('score05').textContent = sc + ' / 5';
+  const bandEl = document.getElementById('band');
+  bandEl.className = 'band ' + band.cls;
+  bandEl.textContent = band.label + '（' + band.tip + '）';
+
+  const eng = result.engine==='whisper' ? '本地 whisper ✓' : '⚠️ 浏览器降级识别（可能不准）';
   document.getElementById('metrics').innerHTML =
-    '复述准确率 · 原文 <b>'+d.A.length+'</b> 词 · 命中 <b>'+d.match+'</b> 词 · 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · '+eng;
+    '一致性估分（清晰度需另判）· 单词误差 <b>'+dist+'</b> · 命中 <b>'+d.match+'/'+d.A.length+'</b> 词 · 逐字匹配 <b>'+acc+'%</b>'+
+    ' · 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 引擎：'+eng;
+
+  // 场景累计
+  document.getElementById('sceneTally').innerHTML = tallyText();
 
   // 原文渲染（漏/错标红）
   document.getElementById('refLine').innerHTML = d.A.map((w,i)=>
@@ -382,13 +478,18 @@ function renderResult(){
     d.mB[i] ? '<span class="w-ok">'+esc(w)+'</span> ' : '<span class="w-extra">'+esc(w)+'</span> ').join('');
 
   // 报告
+  const answered = sceneScores.filter(v=>v!==null);
+  const raw = answered.reduce((a,b)=>a+b,0);
+  const avg = (raw/answered.length).toFixed(1);
   const rep = '【听力复述 · '+curScene().name+' · 第 '+(idx+1)+'/'+curScene().items.length+' 句（'+q.lv+'）】\n'+
     '原文：'+ref+'\n'+
     '我的复述：'+(hyp||'(空/未识别)')+'\n'+
-    '复述准确率：'+acc+'%（命中 '+d.match+'/'+d.A.length+' 词）\n'+
-    '时长：'+result.duration.toFixed(1)+'s · 语速：'+wpm+' wpm\n'+
-    '转写引擎：'+(result.engine==='whisper'?'本地 whisper':'浏览器降级')+'\n'+
-    '—— 请 cc 打分（复述准确性 + 流利度；发音/韵律请结合我后续反馈）';
+    '—— 逐字比对 —— 命中 '+d.match+'/'+d.A.length+' 词 · 单词误差 '+dist+' · 逐字匹配 '+acc+'%\n'+
+    '本句一致性估分：'+sc+'/5（'+band.label+'）\n'+
+    '时长：'+result.duration.toFixed(1)+'s · 语速：'+wpm+' wpm · 引擎：'+(result.engine==='whisper'?'本地 whisper':'浏览器降级')+'\n'+
+    '本场景累计：已评 '+answered.length+'/'+curScene().items.length+' 句 · 一致性均分 '+avg+'/5\n'+
+    '—— 评分口径：每句 0–5（清晰度 50% + 一致性 50%），7 句原始分 /35 → 最终 0–6 ——\n'+
+    '请 cc 给最终 0–5：结合我的发音清晰度定「清晰度」分，与上面「一致性」各占 50%；并累计到本场景 /35 与折算 /6。';
   document.getElementById('reportText').value = rep;
   document.getElementById('result').style.display='block';
 }
@@ -406,6 +507,7 @@ function next(){
   } else {
     sceneIdx = (sceneIdx+1) % SCENES.length;
     idx = 0;
+    resetTally();
     renderScenePicker();
   }
   renderQuestion();
@@ -418,6 +520,7 @@ function renderScenePicker(){
 }
 function selectScene(i){
   sceneIdx = i; idx = 0;
+  resetTally();
   renderScenePicker();
   renderQuestion();
 }
@@ -426,6 +529,7 @@ function renderQuestion(){
   const sc = curScene(), q = curItem();
   document.getElementById('sceneName').textContent = sc.name + '  ·  ' + sc.en;
   document.getElementById('sceneDesc').textContent = sc.desc;
+  document.getElementById('sceneTally').innerHTML = tallyText();
   document.getElementById('qNo').textContent = '第 '+(idx+1)+' / '+sc.items.length+' 句';
   document.getElementById('qLv').textContent = q.lv;
   document.getElementById('sentence').innerHTML='<span style="color:#c1662f">🔊</span> 点击「播放原句」开始';
@@ -452,6 +556,7 @@ if(!VocaSpeech.supported){
     }
   });
 }
+resetTally();
 renderScenePicker();
 renderQuestion();
 </script>
