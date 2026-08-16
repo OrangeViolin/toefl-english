@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>字母组合 OU 的全部发音 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  /* 精读 · 文章 + 句法分析 */
+  .passage{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+    border-radius:14px;padding:18px 20px;margin:0 0 22px}
+  .passage h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
+  .passage .p-title{font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--ink);margin-bottom:10px}
+  .passage p{font-size:15px;line-height:1.9;margin:10px 0}
+  .passage .en{color:#3a332b;font-family:Georgia,"Times New Roman",serif}
+  .passage .zh{color:var(--muted);font-size:13.5px}
+  .passage .kw{cursor:pointer;color:var(--accent);font-weight:600;border-bottom:1px dotted var(--accent2)}
+  .readall{background:var(--accent);color:#fff;border:none;border-radius:20px;padding:4px 14px;font-size:13px;
+    cursor:pointer;margin-left:10px;vertical-align:middle;transition:.15s}
+  .readall:hover{background:var(--core)}
+  .sents{background:linear-gradient(135deg,#f3f8f6,#eef3f0);border:1px solid var(--line);
+    border-radius:14px;padding:18px 20px;margin:0 0 22px}
+  .sents h2{margin:0 0 6px;font-size:18px;color:var(--core)}
+  .sents .s-sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+  .sent{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+  .sent .s-en{font-family:Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.7;cursor:pointer;color:#3a332b}
+  .sent .s-en:hover{color:var(--accent)}
+  .sent .s-zh{color:var(--muted);font-size:13.5px;margin:6px 0 10px}
+  .sent .s-parts{display:flex;flex-wrap:wrap;gap:6px}
+  .spart{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:4px 9px;font-size:13px;line-height:1.4}
+  .spart .st{font-family:Georgia,serif;font-weight:600}
+  .spart .sr{font-size:11px;color:#fff;border-radius:5px;padding:0 5px;white-space:nowrap}
+  .spart .sn{font-size:12px;color:var(--muted)}
+  .snotes{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:13px;color:#5f574c}
+  .snotes b{color:var(--accent)}
+  /* 句子内括号标注 */
+  .s-flow{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:2.1;cursor:pointer;color:#3a332b;padding:2px 0}
+  .s-flow:hover{color:var(--accent)}
+  .brkbox{border-radius:4px;padding:1px 1px;transition:.15s}
+  .brk{font-weight:700;font-size:17px;padding:0 1px}
+  .say-mini{background:none;border:none;cursor:pointer;font-size:15px;padding:0 4px;vertical-align:middle}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div id="passage"></div>
+  <div id="sents"></div>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "combo-ou", "combo": "OU", "title": "字母组合 OU 的全部发音", "sound": "/aʊ/ /uː/ /ʌ/ /ɔː/ /ə/ /ʊ/", "subtitle": "英语最混乱的字母组合——OU 的六种读法让人崩溃", "intro": "OU 堪称英语最混乱的字母组合——同样两个字母，竟能发出六种完全不同的音。最常见的是 /aʊ/（house、out、round），嘴巴从「啊」滑向「呜」；但 OU 在法语借词里读 /uː/（soup、routine、coupon），保留了法语原音；在 touch、trouble、enough 等常用词里读 /ʌ/，短促一声「啊」就完了；当 OU 后面跟 r 时读 /ɔːr/（four、pour、source），圆唇长音；在非重读的 -ous 后缀里弱化成 /ə/（famous、nervous、rigorous）；而 could、should、would 三个情态动词里 OU 读 /ʊ/，且 l 不发音。没有万能规则，只能分组记忆、各个击破。", "subgroups": [{"key": "house", "tag": "/aʊ/", "label": "OU = /aʊ/ (house)", "desc": "最常见的读法。ou 在重读音节几乎都读双元音 /aʊ/，从低开的 /a/ 滑向圆唇的 /ʊ/，类似中文「嗷」。常见词：house、out、sound、round、found、about。这是 OU 的默认读音，遇到新词先猜这个。"}, {"key": "soup", "tag": "/uː/", "label": "OU = /uː/ (soup)", "desc": "法语借词保留的读法。法语里 OU 本来就读 /u/，英语借入后保留原音变成 /uː/。常见词：soup、group、route、routine、coupon、boulevard。看到这类词时想一想——「它是不是法语来的？」"}, {"key": "touch", "tag": "/ʌ/", "label": "OU = /ʌ/ (touch)", "desc": "ou 在部分词中读短元音 /ʌ/，就是「cup」那个音。常见词：touch、trouble、double、country、cousin、enough、young、courage。这批词没有明显拼写规律，只能硬记。好消息是数量有限，背完就完。"}, {"key": "four", "tag": "/ɔːr/", "label": "OU = /ɔːr/ (four)", "desc": "our 组合在很多词里读 /ɔːr/，圆唇长音加卷舌。常见词：four、pour、court、course、source、resource。规律：当 ou 后面紧跟 r 且整体重读时，多读 /ɔːr/。注意 our 在 hour、flour 里仍读 /aʊər/，别搞混。"}, {"key": "famous", "tag": "/ə/", "label": "OU = /ə/ (famous)", "desc": "非重读 -ous 后缀里的 ou 弱化成中央元音 /ə/，几乎听不清。这是英语最常见的形容词后缀之一：famous、nervous、dangerous、serious、curious、obvious、rigorous。规律非常稳定——凡 -ous 结尾的形容词，ou 都读 /ə/。"}, {"key": "could", "tag": "/ʊ/", "label": "OU = /ʊ/ (could)", "desc": "should、could、would 三个情态动词里 ou 读 /ʊ/，而且 l 完全不发音。这是古英语的遗留读音，现代英语里只剩这三个高频词。另外 tour 的 ou 也可读 /ʊ/（/tʊər/）。数量极少，记住就行。"}], "rhymeChains": [{"label": "同拼不同音：ou 的六张面孔", "words": ["pronounce /aʊ/", "routine /uː/", "courage /ʌ/", "source /ɔːr/", "rigorous /ə/", "could /ʊ/"]}, {"label": "-ound 同韵串（/aʊnd/）", "words": ["profound", "compound", "boundary", "sound", "ground", "found"]}, {"label": "-ous 弱读串（/əs/）", "words": ["rigorous", "ambiguous", "conspicuous", "autonomous", "meticulous"]}, {"label": "-ourse / -ource 同韵串（/ɔːrs/）", "words": ["course", "source", "resource", "discourse"]}], "words": [{"word": "pronounce", "hl": "ou", "levels": ["六级"], "ipa": "/prəˈnaʊns/", "subgroup": "house", "meaning": "v. 发音；宣布，宣告", "etymology": "拉丁语 pronuntiare「公开宣告」，pro-「向前」+ nuntiare「报告、传信」（nuntius = 信使）。经古法语 pronuncier 进入英语。从「向公众宣告」引申到「发出声音」。", "roots": [{"part": "pro-", "meaning": "向前，公开"}, {"part": "nounce (nuntiare)", "meaning": "报告，传信"}], "phonetics": "ou 在重读音节 -nounce 中读 /aʊ/，这是 OU 最常见的读法。注意首音节 pro- 弱读为 /prə/，重音砸在第二音节 -nounce 上。", "tip": "pronounce 里有 nounce（宣告），announce（宣布）、denounce（谴责）、renounce（放弃）都是同根兄弟——向前宣告=发音/宣布。", "examples": [{"en": "How do you pronounce this word?", "zh": "这个词怎么发音？", "source": "造句"}, {"en": "The judge pronounced the defendant guilty.", "zh": "法官宣告被告有罪。", "source": "法律语境"}], "synonyms": [{"w": "articulate", "ipa": "/ɑːrˈtɪkjəleɪt/", "gloss": "清晰地说出", "note": "强调发音清晰准确，比 pronounce 更正式"}, {"w": "declare", "ipa": "/dɪˈkler/", "gloss": "宣告，声明", "note": "侧重「宣布」义，正式场合用"}], "antonyms": [], "nuance": "pronounce 兼具「发音」和「宣布」两义。说「发音」时用 pronounce/articulate；说「宣布」时 pronounce 比 declare 更有权威感（法官宣判用 pronounce，政府声明用 declare）。"}, {"word": "encounter", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ɪnˈkaʊntər/", "subgroup": "house", "meaning": "v. 遭遇，邂逅  n. 相遇，遭遇", "etymology": "古法语 encontrer「迎面遇上」，en-「进入」+ contre「对面、相对」（拉丁 contra）。原意是「走着走着撞上了」——不期而遇。", "roots": [{"part": "en-", "meaning": "进入"}, {"part": "counter (contra)", "meaning": "对面，相对"}], "phonetics": "ou 在重读音节 -coun- 中读 /aʊ/，双元音饱满。重音在第二音节 -coun-，首音节 en- 弱读为 /ɪn/。", "tip": "encounter = en（进入）+ counter（对面）→ 走到对面去 → 迎面碰上。想象两个人在走廊拐角撞个正着。", "examples": [{"en": "We encountered unexpected resistance from the local community.", "zh": "我们遭遇了来自当地社区的意外阻力。", "source": "造句"}, {"en": "Her first encounter with the ocean left a lasting impression.", "zh": "她与大海的初次邂逅留下了深刻印象。", "source": "造句"}], "synonyms": [{"w": "confront", "ipa": "/kənˈfrʌnt/", "gloss": "面对，正视", "note": "强调主动面对困难/敌人，比 encounter 更有对抗感"}, {"w": "come across", "ipa": "/kʌm əˈkrɒs/", "gloss": "偶然碰到", "note": "口语常用，语气更轻松随意"}], "antonyms": [{"w": "avoid", "note": "避开，回避"}], "nuance": "encounter 强调「意料之外」的相遇，中性偏正式；confront 强调「面对面对抗」；come across 是口语版的「偶然碰到」，语气最轻。托福阅读中 encounter 常搭配 difficulty/problem/resistance。"}, {"word": "accountable", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/əˈkaʊntəbl/", "subgroup": "house", "meaning": "adj. 负有责任的，需作出解释的", "etymology": "account「账目、解释」+ -able「能够」。account 来自古法语 aconter「计算、讲述」（a- + conter = 计数）。能被「算账」的=需要对结果负责的。", "roots": [{"part": "ac- (ad-)", "meaning": "朝向"}, {"part": "count", "meaning": "计算，清点"}, {"part": "-able", "meaning": "能够被……的"}], "phonetics": "ou 在重读音节 -coun- 中读 /aʊ/。重音在第二音节，-able 弱读。整词四音节：ə-KAƱN-tə-bl。", "tip": "accountable = account（算账）+ able → 能被算账的 → 要负责任的。领导说「You are accountable for this」就是「这事出了问题找你」。", "examples": [{"en": "Public officials must be held accountable for their decisions.", "zh": "公职人员必须对其决策负责。", "source": "造句"}, {"en": "The new regulations aim to make corporations more accountable to their shareholders.", "zh": "新法规旨在让企业对股东承担更多责任。", "source": "《The Economist》"}], "synonyms": [{"w": "responsible", "ipa": "/rɪˈspɒnsəbl/", "gloss": "负责的", "note": "最通用的「负责」，语气比 accountable 轻"}, {"w": "liable", "ipa": "/ˈlaɪəbl/", "gloss": "（法律上）有责任的", "note": "法律层面的「担责」，常搭配 for damages"}], "antonyms": [{"w": "unaccountable", "note": "不受问责的，无法解释的"}], "nuance": "accountable 强调「需要向他人交代、可被追责」，常用于政治和管理语境（hold sb accountable）；responsible 更通用，语气更中性；liable 偏法律，带赔偿含义。"}, {"word": "profound", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/prəˈfaʊnd/", "subgroup": "house", "meaning": "adj. 深刻的，深远的；极度的", "etymology": "拉丁语 profundus「深的」，pro-「向前」+ fundus「底部」（fund = 基金 也来自这里，「底层资产」）。字面义「一直到底部的」→ 深刻的。", "roots": [{"part": "pro-", "meaning": "向前，深入"}, {"part": "found (fundus)", "meaning": "底部，基础"}], "phonetics": "ou 在重读音节 -found 中读 /aʊ/。重音在第二音节，首音节 pro- 弱读为 /prə/。与 found（发现）同韵。", "tip": "profound = pro（向前）+ found（底部）→ 深入到底部 → 深刻的。越往底部挖，越深刻。", "examples": [{"en": "The discovery had a profound impact on modern physics.", "zh": "这一发现对现代物理学产生了深远影响。", "source": "造句"}, {"en": "She felt a profound sense of loss after her grandmother passed away.", "zh": "祖母去世后，她感到一种深切的失落。", "source": "造句"}], "synonyms": [{"w": "deep", "ipa": "/diːp/", "gloss": "深的，深刻的", "note": "日常口语版的「深刻」，适用范围更广"}, {"w": "far-reaching", "ipa": "/ˌfɑːr ˈriːtʃɪŋ/", "gloss": "深远的，影响广泛的", "note": "强调影响范围之广，常搭配 consequences/implications"}], "antonyms": [{"w": "superficial", "note": "肤浅的，表面的"}, {"w": "shallow", "note": "浅的，浅薄的"}], "nuance": "profound 是学术写作高频词，常搭配 impact/effect/influence/change。它比 deep 更正式、更有力度；far-reaching 侧重「波及面广」而非「深度」。托福写作中用 profound 替换 deep 可提升文采。"}, {"word": "boundary", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ˈbaʊndəri/", "subgroup": "house", "meaning": "n. 边界，分界线；限度", "etymology": "bound「界限」+ -ary（名词后缀）。bound 来自古法语 bodne/bonde「界标」，与拉丁语 bodina「界石」有关。从物理边界引申到抽象的界限。", "roots": [{"part": "bound", "meaning": "界限，范围"}, {"part": "-ary", "meaning": "与……有关的（名词后缀）"}], "phonetics": "ou 在首重读音节 boun- 中读 /aʊ/。三音节词：BAƱN-də-ri，重音在第一音节。", "tip": "boundary 里有 bound（边界）——set boundaries = 设定界限，心理学和职场高频表达。", "examples": [{"en": "The river forms a natural boundary between the two countries.", "zh": "这条河构成了两国之间的天然分界线。", "source": "造句"}, {"en": "It's important to set clear boundaries in professional relationships.", "zh": "在职业关系中设定清晰的界限很重要。", "source": "造句"}], "synonyms": [{"w": "border", "ipa": "/ˈbɔːrdər/", "gloss": "边界，边境", "note": "更具体，常指国界或物理边界"}, {"w": "limit", "ipa": "/ˈlɪmɪt/", "gloss": "限制，极限", "note": "侧重「不能超过的上限」，比 boundary 更抽象"}], "antonyms": [], "nuance": "boundary 强调「分隔两个区域的线」，既可物理（国界）也可抽象（心理边界）；border 更常指具体的国界/边境；limit 侧重上限和限制。push the boundaries = 突破边界（创新语境），push the limits = 挑战极限（能力语境）。"}, {"word": "compound", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ˈkɒmpaʊnd/", "subgroup": "house", "meaning": "n. 化合物；复合物  adj. 复合的  v. 使加重，使恶化", "etymology": "拉丁语 componere「放在一起」，com-「一起」+ ponere「放置」。经古法语 compondre 进入英语。把不同成分放到一起=化合/复合。", "roots": [{"part": "com-", "meaning": "一起，共同"}, {"part": "pound (ponere)", "meaning": "放置"}], "phonetics": "作名词/形容词时重音在前：/ˈkɒmpaʊnd/，ou 读 /aʊ/；作动词时重音在后：/kəmˈpaʊnd/，ou 仍读 /aʊ/。典型的「名前动后」重音转移词。", "tip": "compound = com（一起）+ pound（放）→ 放在一起 → 化合物/复合的。compound interest = 复利（利息叠利息，放在一起滚雪球）。", "examples": [{"en": "Water is a chemical compound of hydrogen and oxygen.", "zh": "水是由氢和氧组成的化合物。", "source": "造句"}, {"en": "The delay only compounded the frustration among passengers.", "zh": "延误只会加剧乘客的不满情绪。", "source": "《BBC News》"}], "synonyms": [{"w": "mixture", "ipa": "/ˈmɪkstʃər/", "gloss": "混合物", "note": "化学上 mixture（混合物）各成分可分离，compound（化合物）不可"}, {"w": "composite", "ipa": "/kəmˈpɒzɪt/", "gloss": "复合的，合成的", "note": "偏材料学/建筑，强调多种材料合成"}], "antonyms": [{"w": "element", "note": "元素，单一成分"}, {"w": "simple", "note": "简单的（对应 compound 的「复合的」义）"}], "nuance": "compound 作动词时意为「使加重/恶化」（compound the problem），这个义项托福阅读常考。作名词时化学义（化合物）和建筑义（院落、围地）都常见。注意与 mixture 的化学区分：compound 各成分化学结合不可分离，mixture 物理混合可分离。"}, {"word": "routine", "hl": "ou", "levels": ["六级"], "ipa": "/ruːˈtiːn/", "subgroup": "soup", "meaning": "n. 常规，日常  adj. 例行的，常规的", "etymology": "法语 routine，来自 route「路」的小形式（-ine），意为「走老路、固定路线」。route 本身来自拉丁语 rupta (via)「开辟的路」（rupture = 破裂 同源）。走一条固定的路=常规。", "roots": [{"part": "route", "meaning": "路线"}, {"part": "-ine", "meaning": "小后缀，表示「小的/惯常的」"}], "phonetics": "ou 在这里读 /uː/，因为 routine 直接从法语借入，保留了法语 ou = /u/ 的读音。法语借词中的 ou 一律读 /uː/，是最可靠的规律。", "tip": "routine 源自 route（路线）→ 走固定路线 = 日常惯例。daily routine = 每日作息，morning routine = 晨间流程。", "examples": [{"en": "She follows the same morning routine every day: yoga, shower, breakfast.", "zh": "她每天遵循同样的晨间流程：瑜伽、洗澡、早餐。", "source": "造句"}, {"en": "What started as a routine inspection revealed serious structural damage.", "zh": "一次例行检查意外发现了严重的结构损坏。", "source": "造句"}], "synonyms": [{"w": "habit", "ipa": "/ˈhæbɪt/", "gloss": "习惯", "note": "侧重个人无意识的重复行为"}, {"w": "procedure", "ipa": "/prəˈsiːdʒər/", "gloss": "程序，步骤", "note": "比 routine 更正式，强调标准化操作流程"}], "antonyms": [{"w": "novelty", "note": "新奇，新鲜事物"}], "nuance": "routine 中性偏消极（重复→无聊），但也可正面（有秩序的生活）。habit 更私人化且常带贬义（bad habit）；procedure 偏正式/机构用语（medical procedure）。托福听力中 routine 常出现在校园场景（daily routine）和科学实验（routine check）中。"}, {"word": "coupon", "hl": "ou", "levels": ["六级"], "ipa": "/ˈkuːpɒn/", "subgroup": "soup", "meaning": "n. 优惠券，折扣券；（债券的）息票", "etymology": "法语 coupon「剪下的一段」，来自 couper「剪、切」（coup = 一击 同源）。原指从债券上剪下来兑付利息的小纸条，后引申为优惠券。", "roots": [{"part": "coup (couper)", "meaning": "切，剪"}, {"part": "-on", "meaning": "名词后缀"}], "phonetics": "ou 读 /uː/，典型法语借词读音。注意美式英语中也有人读 /ˈkjuːpɒn/，但 /ˈkuːpɒn/ 更标准。", "tip": "coupon 的 coup = 剪（法语 couper）→ 从单子上「剪下来」的一小张 = 优惠券。想象从报纸上剪优惠券的动作。", "examples": [{"en": "I clipped a coupon from the newspaper for 20% off groceries.", "zh": "我从报纸上剪了一张杂货八折优惠券。", "source": "造句"}, {"en": "The bond pays a 5% annual coupon to investors.", "zh": "这支债券每年向投资者支付5%的票面利息。", "source": "金融语境"}], "synonyms": [{"w": "voucher", "ipa": "/ˈvaʊtʃər/", "gloss": "代金券，凭证", "note": "比 coupon 更正式，常用于商务/政府发放的凭证"}, {"w": "discount", "ipa": "/ˈdɪskaʊnt/", "gloss": "折扣", "note": "泛指折扣本身，coupon 是获取折扣的载体"}], "antonyms": [], "nuance": "coupon 特指那张可以兑换折扣的凭证（纸质或电子的都算）；voucher 更正式，常见于商务场景（gift voucher = 礼品卡）；discount 是折扣本身，不是载体。金融领域 coupon rate = 票面利率，是债券核心概念。"}, {"word": "acoustic", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/əˈkuːstɪk/", "subgroup": "soup", "meaning": "adj. 声学的；原声的（非电声的）", "etymology": "希腊语 akoustikos「听觉的」，来自 akouein「听」（与 acme 无关）。经拉丁语和法语进入英语，ou 保留法语式 /uː/ 读音。", "roots": [{"part": "acoust- (akouein)", "meaning": "听"}, {"part": "-ic", "meaning": "形容词后缀"}], "phonetics": "ou 读 /uː/，重音在第二音节 -cous-。首音节 a- 弱读为 /ə/。这个词经法语中转，ou 保留了 /uː/ 的读音。", "tip": "acoustic guitar = 原声吉他（不插电的），与 electric guitar 对应。记住「原声」就能记住这个词。", "examples": [{"en": "The concert hall has excellent acoustic properties.", "zh": "这座音乐厅拥有出色的声学特性。", "source": "造句"}, {"en": "She prefers playing acoustic guitar over electric.", "zh": "比起电吉他，她更喜欢弹原声吉他。", "source": "造句"}], "synonyms": [{"w": "sonic", "ipa": "/ˈsɒnɪk/", "gloss": "声音的，声波的", "note": "偏物理学「声波」属性，sonic boom = 音爆"}, {"w": "auditory", "ipa": "/ˈɔːdɪtɔːri/", "gloss": "听觉的", "note": "偏生理学「听觉系统」，auditory nerve = 听觉神经"}], "antonyms": [{"w": "electric", "note": "电声的（乐器语境）"}], "nuance": "acoustic 在日常语境中最常见于音乐（acoustic guitar/acoustic version），在学术语境中指声学（acoustics = 声学这门学科）。sonic 偏物理（声波），auditory 偏生物（听觉器官）。"}, {"word": "boulevard", "hl": "ou", "levels": ["托福"], "ipa": "/ˈbuːləvɑːrd/", "subgroup": "soup", "meaning": "n. 林荫大道，大街", "etymology": "法语 boulevard，源自荷兰语 bolwerk「城墙防御工事」（bulwark 同源）。巴黎拆除旧城墙后在原址修建宽阔大路，这些路就叫 boulevard。从「城墙」变成「大道」，是城市现代化的缩影。", "roots": [{"part": "boul- (bol-)", "meaning": "圆木，防御"}, {"part": "-evard (-werk)", "meaning": "工事，建造"}], "phonetics": "ou 读 /uː/，纯正法语借词读音。首音节重读，三音节：BUː-lə-vɑːrd。", "tip": "boulevard 缩写 Blvd.，美国地址常见。想象巴黎的香榭丽舍大道——那就是典型的 boulevard。", "examples": [{"en": "Sunset Boulevard is one of the most iconic streets in Los Angeles.", "zh": "日落大道是洛杉矶最具标志性的街道之一。", "source": "造句"}, {"en": "Tree-lined boulevards define the character of many European cities.", "zh": "林荫大道定义了许多欧洲城市的气质。", "source": "造句"}], "synonyms": [{"w": "avenue", "ipa": "/ˈævənjuː/", "gloss": "大道，大街", "note": "美式城市规划中 avenue 通常纵向（南北），boulevard 最宽最气派"}, {"w": "street", "ipa": "/striːt/", "gloss": "街道", "note": "最通用的「街」，不限宽窄"}], "antonyms": [{"w": "alley", "note": "小巷，窄道"}], "nuance": "boulevard 特指宽阔的、通常有绿化隔离带的大道，比 avenue 和 street 都更气派。美国地址缩写 Blvd.。电影 Sunset Boulevard（日落大道）让这个词家喻户晓。"}, {"word": "wound", "hl": "ou", "levels": ["六级"], "ipa": "/wuːnd/", "subgroup": "soup", "meaning": "n. 伤口，创伤  v. 使受伤，伤害", "etymology": "古英语 wund「伤口」，日耳曼同根，与德语 Wunde 同源。注意：wind（缠绕）的过去式 wound 读 /waʊnd/，是完全不同的词。", "roots": [{"part": "wound (wund)", "meaning": "伤口"}], "phonetics": "作「伤口」义时 ou 读 /uː/——这是古英语原生词在演变中的特殊读音，不走法语规律。注意同形异音词：wind（缠绕）的过去式 wound 读 /waʊnd/，必须靠语境区分。", "tip": "wound /wuːnd/ = 伤口 vs wound /waʊnd/ = wind 的过去式。记法：伤口让人痛得叫「呜——」（/uː/）。", "examples": [{"en": "The soldier suffered a deep wound to his left arm.", "zh": "那名士兵左臂受了重伤。", "source": "造句"}, {"en": "Time heals all wounds.", "zh": "时间治愈一切伤痛。（谚语）", "source": "英语谚语"}], "synonyms": [{"w": "injury", "ipa": "/ˈɪndʒəri/", "gloss": "伤害，损伤", "note": "更通用，包括内伤外伤，也可指心理伤害"}, {"w": "scar", "ipa": "/skɑːr/", "gloss": "伤疤，疤痕", "note": "伤口愈合后留下的痕迹，也可比喻心理创伤"}], "antonyms": [], "nuance": "wound 偏指外伤（刀伤、枪伤），也可比喻「情感创伤」（emotional wound）；injury 最通用，涵盖各类身体损伤（sports injury）；scar 是伤愈后的痕迹。注意 wound 动词义「使受伤」既可指身体（wounded in battle）也可指情感（deeply wounded by the remark）。"}, {"word": "flourish", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ˈflʌrɪʃ/", "subgroup": "touch", "meaning": "v. 繁荣，茂盛；挥舞  n. 华丽的动作；装饰音", "etymology": "古法语 floriss-（flor = 花，拉丁 florere「开花」→ flora 植物群 同源）。花开得旺=繁荣昌盛。法语借入后 ou 读音偏移为 /ʌ/。", "roots": [{"part": "flour- (flor-)", "meaning": "花，开花"}, {"part": "-ish", "meaning": "动词后缀"}], "phonetics": "ou 在这里读 /ʌ/，属于 OU = /ʌ/ 的不规则组。flour- 读 /flʌr/，和 flour（面粉）同音。这类词没有明显的拼写规律，需单独记忆。", "tip": "flourish 里有 flour（花）→ 花开繁盛 = 繁荣。nourish（滋养）和 flourish（繁荣）同韵——先滋养（nourish），后繁荣（flourish）。", "examples": [{"en": "The arts flourished during the Renaissance.", "zh": "艺术在文艺复兴时期蓬勃发展。", "source": "造句"}, {"en": "He signed the document with a flourish of his pen.", "zh": "他用笔华丽地一挥，签下了文件。", "source": "造句"}], "synonyms": [{"w": "thrive", "ipa": "/θraɪv/", "gloss": "兴旺，茁壮成长", "note": "比 flourish 更强调「在逆境中茁壮」，语气更有力"}, {"w": "prosper", "ipa": "/ˈprɒspər/", "gloss": "繁荣，成功", "note": "偏经济/事业上的成功，prosperity = 繁荣"}], "antonyms": [{"w": "wither", "note": "枯萎，衰败"}, {"w": "decline", "note": "衰落"}], "nuance": "flourish 有「花团锦簇」的画面感，强调生机勃勃、百花齐放；thrive 更强调「在困难条件下依然茁壮」（children thrive in a loving environment）；prosper 偏财务/事业（the business prospered）。托福阅读中 flourish 常描述文明/文化的繁荣期。"}, {"word": "nourish", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ˈnʌrɪʃ/", "subgroup": "touch", "meaning": "v. 滋养，养育；培养（情感/思想）", "etymology": "古法语 noriss-（拉丁 nutrire「喂养」→ nutrition 营养 同源）。ou 在中古英语时期拼写固化，但发音已偏移为 /ʌ/。", "roots": [{"part": "nour- (nutr-)", "meaning": "喂养，滋养"}, {"part": "-ish", "meaning": "动词后缀"}], "phonetics": "ou 读 /ʌ/，与 flourish 同组同规律。nour- 读 /nʌr/，重音在第一音节。", "tip": "nourish 和 nutrition 同根（nutr- = 喂养）。先 nourish（滋养身体），再 flourish（繁荣绽放）——两个词押韵又有因果关系，一起记。", "examples": [{"en": "A balanced diet nourishes both body and mind.", "zh": "均衡的饮食滋养身心。", "source": "造句"}, {"en": "Parents should nourish their children's curiosity rather than suppress it.", "zh": "父母应该培养而非压制孩子的好奇心。", "source": "造句"}], "synonyms": [{"w": "nurture", "ipa": "/ˈnɜːrtʃər/", "gloss": "养育，培育", "note": "比 nourish 更强调「长期照料培育」，常搭配人或关系"}, {"w": "sustain", "ipa": "/səˈsteɪn/", "gloss": "维持，支撑", "note": "强调「维持不让倒下」，比 nourish 更中性"}], "antonyms": [{"w": "starve", "note": "使挨饿，使匮乏"}, {"w": "deprive", "note": "剥夺"}], "nuance": "nourish 强调「提供养分使之成长」，既可指食物滋养身体，也可比喻培养思想/情感（nourish a dream）。nurture 更偏「精心培育」（nature vs nurture 先天vs后天）。sustain 侧重「维持不垮」而非「促进成长」。"}, {"word": "courage", "hl": "ou", "levels": ["六级"], "ipa": "/ˈkʌrɪdʒ/", "subgroup": "touch", "meaning": "n. 勇气，胆量", "etymology": "古法语 corage「心、精神」，来自拉丁语 cor「心」（cardiac 心脏的 同源）。原意是「心的力量」——勇气从心而来。法语 -our 在英语中读 /ʌr/。", "roots": [{"part": "cour- (cor)", "meaning": "心"}, {"part": "-age", "meaning": "名词后缀，表状态"}], "phonetics": "ou 读 /ʌ/，属于 OU = /ʌ/ 不规则组。cour- 读 /kʌr/，重音在第一音节。encourage（鼓励）中的 cour 也读 /kʌr/。", "tip": "courage 的词根 cor = 心。勇气是心的力量。encourage = en（使）+ courage（勇气）→ 给人勇气 = 鼓励。discourage = dis（去掉）+ courage → 泄气。", "examples": [{"en": "It takes courage to speak up against injustice.", "zh": "站出来反抗不公需要勇气。", "source": "造句"}, {"en": "Courage is not the absence of fear, but the triumph over it.", "zh": "勇气不是没有恐惧，而是战胜恐惧。", "source": "曼德拉"}], "synonyms": [{"w": "bravery", "ipa": "/ˈbreɪvəri/", "gloss": "勇敢", "note": "比 courage 更强调「面对危险时的无畏」"}, {"w": "valor", "ipa": "/ˈvælər/", "gloss": "英勇，勇猛", "note": "文学/军事用语，语气最庄重"}], "antonyms": [{"w": "cowardice", "note": "怯懦，胆小"}], "nuance": "courage 最通用，指内心的坚定和敢于行动的品质；bravery 更强调外在表现（brave actions in battle）；valor 最正式、最文学化（military valor = 军事英勇）。it takes courage to... 是高频句型。"}, {"word": "thorough", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ˈθʌrə/", "subgroup": "touch", "meaning": "adj. 彻底的，全面的；一丝不苟的", "etymology": "古英语 þuruh，即 through 的变体。through = 穿过，thorough = 从头穿到尾 = 彻底的。两词原本是同一个词，后来拼写和含义分化。", "roots": [{"part": "thorough (through)", "meaning": "穿过，贯穿"}], "phonetics": "ough 在这里读 /ə/（尾音节弱化），ou 部分读 /ʌ/。整词两音节：THɅR-ə。注意 th 读清辅音 /θ/（舌尖抵上齿），不读 /ð/。", "tip": "thorough = through 的变体 → 从头到尾穿过去 = 彻底的。做事彻底 = 从头做到尾不留死角。thoroughfare = 通路（彻底通过的地方）。", "examples": [{"en": "The committee conducted a thorough investigation into the allegations.", "zh": "委员会对这些指控进行了彻底调查。", "source": "造句"}, {"en": "She is thorough in everything she does—no detail escapes her attention.", "zh": "她做任何事都一丝不苟——没有细节能逃过她的眼睛。", "source": "造句"}], "synonyms": [{"w": "comprehensive", "ipa": "/ˌkɒmprɪˈhensɪv/", "gloss": "全面的，综合的", "note": "侧重「覆盖面广」，comprehensive review = 全面评估"}, {"w": "meticulous", "ipa": "/məˈtɪkjələs/", "gloss": "一丝不苟的", "note": "侧重「对细节极度注意」，比 thorough 更强调精细"}], "antonyms": [{"w": "superficial", "note": "表面的，肤浅的"}, {"w": "cursory", "note": "粗略的，草率的"}], "nuance": "thorough 强调「从头到尾不遗漏」，适用于调查/检查/清理等场景；comprehensive 偏「覆盖面广」（comprehensive insurance = 综合保险）；meticulous 偏「注重细节」。a thorough search = 彻底搜查，thorough understanding = 透彻理解。"}, {"word": "troublesome", "hl": "ou", "levels": ["六级"], "ipa": "/ˈtrʌblsəm/", "subgroup": "touch", "meaning": "adj. 麻烦的，令人烦恼的；惹事的", "etymology": "trouble + -some（形容词后缀，表「引起……的」）。trouble 来自古法语 trubler「搅浑」（拉丁 turbulare「搅动」→ turbulent 动荡的 同源）。搅浑局面的=麻烦的。", "roots": [{"part": "trouble (turb-)", "meaning": "搅动，混乱"}, {"part": "-some", "meaning": "引起……的"}], "phonetics": "ou 在 trouble 中读 /ʌ/，属于 OU = /ʌ/ 不规则组。trouble、double、couple 这批词的 ou 都读 /ʌ/，可以一起记。", "tip": "troublesome = trouble（麻烦）+ some（引起的）→ 引起麻烦的。同结构词：awesome（令人敬畏的）、handsome（帅的）、tiresome（令人疲倦的）。", "examples": [{"en": "The troublesome student was sent to the principal's office again.", "zh": "那个惹事的学生又被送到了校长办公室。", "source": "造句"}, {"en": "Invasive species can be particularly troublesome for native ecosystems.", "zh": "入侵物种对本地生态系统来说尤其棘手。", "source": "造句"}], "synonyms": [{"w": "bothersome", "ipa": "/ˈbɒðərsəm/", "gloss": "恼人的，烦人的", "note": "程度比 troublesome 轻，偏「让人不舒服」"}, {"w": "problematic", "ipa": "/ˌprɒbləˈmætɪk/", "gloss": "有问题的，棘手的", "note": "更正式/学术，侧重「存在问题需要解决」"}], "antonyms": [{"w": "effortless", "note": "毫不费力的"}, {"w": "easy", "note": "容易的"}], "nuance": "troublesome 指「持续带来麻烦的」，可形容人（troublesome child）也可形容事（troublesome issue）；bothersome 更轻，偏日常小烦恼；problematic 最正式，学术/政策讨论常用。"}, {"word": "resource", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/rɪˈsɔːrs/", "subgroup": "four", "meaning": "n. 资源；办法，手段  v. 为……提供资源", "etymology": "古法语 ressource「救济、复原」，re-「再」+ sourdre「涌出」（拉丁 surgere「升起」→ surge 涌潮 同源）。资源是「能再次涌出来帮你的东西」。", "roots": [{"part": "re-", "meaning": "再，重新"}, {"part": "source (surgere)", "meaning": "涌出，升起"}], "phonetics": "our 读 /ɔːr/，属于 OU + r = /ɔːr/ 规律组。重音在第二音节 -source，首音节 re- 弱读为 /rɪ/。", "tip": "resource = re（再）+ source（源泉）→ 反复涌出的东西 = 资源。natural resources = 自然资源，human resources = 人力资源（HR）。", "examples": [{"en": "The country is rich in natural resources such as oil and minerals.", "zh": "这个国家拥有丰富的自然资源，如石油和矿物。", "source": "造句"}, {"en": "We need to allocate resources more efficiently to meet the deadline.", "zh": "我们需要更高效地分配资源以赶上截止日期。", "source": "造句"}], "synonyms": [{"w": "asset", "ipa": "/ˈæset/", "gloss": "资产，有价值的东西", "note": "偏财务/商业，强调「有价值可利用的」"}, {"w": "supply", "ipa": "/səˈplaɪ/", "gloss": "供应，补给", "note": "偏「消耗品的供给」，supply chain = 供应链"}], "antonyms": [{"w": "liability", "note": "负债，负担（财务反义）"}], "nuance": "resource 是最通用的「资源」，涵盖自然资源、人力资源、学习资源等各种含义。asset 偏「有价值的东西」（She's a real asset to the team）。supply 侧重「可消耗的供给」。托福阅读中 resource 极高频，常出现在环境/经济/教育话题。"}, {"word": "discourse", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ˈdɪskɔːrs/", "subgroup": "four", "meaning": "n. 话语；论述；演讲  v. 论述，讨论", "etymology": "拉丁语 discursus「跑来跑去」，dis-「分散」+ currere「跑」（current 水流 同源）。思想到处跑=讨论/论述。经法语 discours 进入英语。", "roots": [{"part": "dis-", "meaning": "分散，四处"}, {"part": "course (currere)", "meaning": "跑"}], "phonetics": "our 在 -course 中读 /ɔːrs/，与 course、source 同韵。重音在第一音节 DIS-。", "tip": "discourse = dis（四处）+ course（跑）→ 思想四处跑 = 讨论/论述。public discourse = 公共话语，academic discourse = 学术论述。", "examples": [{"en": "The essay explores the discourse surrounding climate change.", "zh": "这篇文章探讨了围绕气候变化的话语。", "source": "造句"}, {"en": "Political discourse has become increasingly polarized in recent years.", "zh": "近年来政治话语变得日益两极化。", "source": "《The Guardian》"}], "synonyms": [{"w": "discussion", "ipa": "/dɪˈskʌʃn/", "gloss": "讨论", "note": "最通用的「讨论」，比 discourse 更日常"}, {"w": "dialogue", "ipa": "/ˈdaɪəlɒɡ/", "gloss": "对话", "note": "强调双方/多方互动交流"}], "antonyms": [{"w": "silence", "note": "沉默"}], "nuance": "discourse 在学术写作中指「围绕某话题的整体讨论/话语体系」（Foucauldian discourse = 福柯式话语分析），比 discussion 抽象得多。discussion 是日常「讨论」，dialogue 强调「对话双方」。托福阅读和写作中 discourse 是高频学术词。"}, {"word": "mourn", "hl": "ou", "levels": ["六级"], "ipa": "/mɔːrn/", "subgroup": "four", "meaning": "v. 哀悼，悲伤；为……感到惋惜", "etymology": "古英语 murnan「忧虑、悲伤」，日耳曼同根。与哥特语 maurnan「担忧」同源。这是少数古英语本土词中 ou 读 /ɔː/ 的例子。", "roots": [{"part": "mourn (murnan)", "meaning": "忧虑，悲伤"}], "phonetics": "our 读 /ɔːr/，与 four、pour 同韵。整词单音节 /mɔːrn/，与 morning 的 mor- 同音（mourning = morning 是同音词）。", "tip": "mourning（哀悼）和 morning（早晨）同音！记法：every morning she was mourning（每个早晨她都在哀悼）。", "examples": [{"en": "The entire nation mourned the death of the beloved leader.", "zh": "举国上下为这位敬爱的领导人的去世而哀悼。", "source": "造句"}, {"en": "She still mourns the loss of her childhood home.", "zh": "她仍为失去儿时的家而感到惋惜。", "source": "造句"}], "synonyms": [{"w": "grieve", "ipa": "/ɡriːv/", "gloss": "悲伤，悲痛", "note": "比 mourn 更强调内心的痛苦感受，不一定有外在仪式"}, {"w": "lament", "ipa": "/ləˈment/", "gloss": "哀叹，痛惜", "note": "文学色彩更浓，强调「表达出来的悲伤」"}], "antonyms": [{"w": "celebrate", "note": "庆祝"}, {"w": "rejoice", "note": "欢喜"}], "nuance": "mourn 侧重对逝者或失去之物的哀悼，常有社会/仪式层面（national mourning = 国丧）；grieve 更私人，强调内心的悲痛过程（five stages of grief）；lament 最文学化，常见于诗歌和正式写作。"}, {"word": "source", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/sɔːrs/", "subgroup": "four", "meaning": "n. 来源，出处；源头  v. 从……获取", "etymology": "古法语 sors/surse「涌泉」，来自拉丁语 surgere「升起、涌出」（surge 涌潮 同源）。水从地下涌出来的地方=源头/来源。", "roots": [{"part": "source (surgere)", "meaning": "涌出，升起"}], "phonetics": "our 读 /ɔːr/，加 -ce 尾读 /s/。整词单音节 /sɔːrs/，与 force 近韵。这是 OU + r = /ɔːr/ 的典型代表。", "tip": "source = 涌出来的地方 = 源头。open source = 开源，source code = 源代码，primary source = 一手资料。", "examples": [{"en": "Renewable energy sources include solar, wind, and hydroelectric power.", "zh": "可再生能源包括太阳能、风能和水力发电。", "source": "造句"}, {"en": "Always cite your sources when writing an academic paper.", "zh": "写学术论文时务必注明引用来源。", "source": "造句"}], "synonyms": [{"w": "origin", "ipa": "/ˈɒrɪdʒɪn/", "gloss": "起源，出处", "note": "偏「最初的起点」，比 source 更强调时间上的「最早」"}, {"w": "root", "ipa": "/ruːt/", "gloss": "根源", "note": "比喻用法，root cause = 根本原因"}], "antonyms": [{"w": "destination", "note": "目的地（与「源头」相对）"}], "nuance": "source 是最通用的「来源/出处」，学术写作中特指「引用来源」（cite sources）。origin 偏「起源/源头」，强调时间维度（origin of the universe）。root 比喻「根源」，常搭配 cause/problem（root cause = 根本原因）。"}, {"word": "course", "hl": "ou", "levels": ["六级"], "ipa": "/kɔːrs/", "subgroup": "four", "meaning": "n. 课程；航线；过程；一道菜  v. 流动，奔流", "etymology": "拉丁语 cursus「奔跑、路线」，来自 currere「跑」（current 水流、cursor 光标 同源）。经古法语 cours 进入英语。从「跑的路线」引申出航线、过程、课程等多义。", "roots": [{"part": "course (cursus)", "meaning": "奔跑，路线"}], "phonetics": "our 读 /ɔːr/，加 -se 尾读 /s/。整词单音节 /kɔːrs/，与 source、force 同韵。", "tip": "course 的核心义是「一条要跑完的路」：跑完学习路线 = 课程，跑完航海路线 = 航线，吃饭的进程 = 一道菜（three-course meal = 三道菜的餐），of course = 当然（事情本来就在这条路上）。", "examples": [{"en": "She enrolled in an online course on data science.", "zh": "她报名了一门数据科学在线课程。", "source": "造句"}, {"en": "The river changes course several times before reaching the sea.", "zh": "这条河在入海前数次改变流向。", "source": "造句"}], "synonyms": [{"w": "class", "ipa": "/klɑːs/", "gloss": "课，课程", "note": "美式英语中 class 和 course 常通用，class 偏口语"}, {"w": "path", "ipa": "/pɑːθ/", "gloss": "路径，道路", "note": "比喻「路线」义时与 course 接近，career path = 职业路径"}], "antonyms": [], "nuance": "course 是多义词之王：take a course（修课）、of course（当然）、main course（主菜）、course of action（行动方案）、in the course of（在……过程中）。一词多义是托福阅读的考点——同一个词在不同语境下义项完全不同。"}, {"word": "rigorous", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ˈrɪɡərəs/", "subgroup": "famous", "meaning": "adj. 严格的，严密的；艰苦的", "etymology": "拉丁语 rigorosus，来自 rigor「僵硬、严寒」（rigor mortis = 尸僵 就是这个词）。从「僵硬不通融」引申到「严格要求」。", "roots": [{"part": "rigor", "meaning": "僵硬，严格"}, {"part": "-ous", "meaning": "形容词后缀，充满……的"}], "phonetics": "-ous 后缀非重读，ou 弱化为 /ə/，读 /əs/。这是所有 -ous 结尾形容词的通用规律——ou 永远弱读。重音在第一音节 RIG-。", "tip": "rigorous 里有 rigor（严格）→ rigorous = 充满严格的。学术写作高频词：rigorous analysis/research/standards（严谨的分析/研究/标准）。", "examples": [{"en": "The experiment was conducted under rigorous scientific conditions.", "zh": "实验在严格的科学条件下进行。", "source": "造句"}, {"en": "Medical school requires years of rigorous training.", "zh": "医学院需要数年的严格训练。", "source": "造句"}], "synonyms": [{"w": "strict", "ipa": "/strɪkt/", "gloss": "严格的", "note": "更日常，偏「规则/纪律上的严格」"}, {"w": "stringent", "ipa": "/ˈstrɪndʒənt/", "gloss": "严厉的，严苛的", "note": "比 rigorous 更强调「不可违反」，常修饰法规/标准"}], "antonyms": [{"w": "lax", "note": "松懈的，不严格的"}, {"w": "lenient", "note": "宽容的，仁慈的"}], "nuance": "rigorous 在学术语境中是褒义（rigorous research = 严谨的研究），强调方法论上的严密；strict 偏日常/管理（strict parents/rules）；stringent 偏法规/政策（stringent regulations）。托福学术文章中 rigorous 极高频。"}, {"word": "ambiguous", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/æmˈbɪɡjuəs/", "subgroup": "famous", "meaning": "adj. 模棱两可的，含糊不清的", "etymology": "拉丁语 ambiguus「向两边走的」，ambi-「两边」+ agere「走、做」（agent 代理人 同源）。一个词/说法可以往两个方向理解=模棱两可。", "roots": [{"part": "ambi-", "meaning": "两边，双"}, {"part": "ig- (agere)", "meaning": "走，做"}, {"part": "-ous", "meaning": "形容词后缀"}], "phonetics": "-uous 中 ou 弱读为 /uə/，接近 /jʊəs/。但整个后缀 -guous 读 /ɡjuəs/，ou 仍是弱读位置。重音在第二音节 -BIG-。", "tip": "ambiguous = ambi（两边）+ ig（走）→ 可以往两边走 → 模棱两可。同根词：ambition（ambi + it = 两边都去 = 野心），ambivalent（ambi + val = 两边都有价值 = 矛盾的）。", "examples": [{"en": "The contract contained several ambiguous clauses that led to disputes.", "zh": "合同中包含几个模棱两可的条款，引发了纠纷。", "source": "造句"}, {"en": "His ambiguous response left everyone confused about his true intentions.", "zh": "他含糊不清的回答让所有人都搞不清他的真实意图。", "source": "造句"}], "synonyms": [{"w": "vague", "ipa": "/veɪɡ/", "gloss": "模糊的，含糊的", "note": "比 ambiguous 更日常，强调「不够清晰」"}, {"w": "equivocal", "ipa": "/ɪˈkwɪvəkl/", "gloss": "模棱两可的", "note": "正式用词，equi（相等）+ voc（声音）= 两种声音一样大 = 含糊"}], "antonyms": [{"w": "unambiguous", "note": "明确的，不含糊的"}, {"w": "explicit", "note": "明确的，清晰的"}], "nuance": "ambiguous 强调「可以有两种以上理解」（an ambiguous sentence），是逻辑/语言分析用词；vague 强调「不够清晰、缺少细节」（a vague answer）；equivocal 最正式，暗示「故意含糊」。托福阅读中 ambiguous 常出现在文学批评和科学讨论中。"}, {"word": "conspicuous", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/kənˈspɪkjuəs/", "subgroup": "famous", "meaning": "adj. 显眼的，引人注目的", "etymology": "拉丁语 conspicuus「可见的」，con-「完全」+ specere「看」（spectacle 景象、inspect 检查 同源）。完全能被看到的=显眼的。", "roots": [{"part": "con-", "meaning": "完全，加强"}, {"part": "spic- (specere)", "meaning": "看"}, {"part": "-uous/-ous", "meaning": "形容词后缀"}], "phonetics": "-uous 中 ou 弱读，整个后缀读 /juəs/。重音在第二音节 -SPIC-。四音节词：kən-SPIK-jʊ-əs。", "tip": "conspicuous = con（完全）+ spic（看）→ 完全被看到 → 显眼的。反义词 inconspicuous = 不显眼的。conspicuous consumption = 炫耀性消费（经济学术语）。", "examples": [{"en": "The bright red hat made her conspicuous in the crowd.", "zh": "那顶鲜红的帽子让她在人群中格外显眼。", "source": "造句"}, {"en": "Thorstein Veblen coined the term 'conspicuous consumption' in 1899.", "zh": "凡勃伦在1899年创造了「炫耀性消费」这一术语。", "source": "《有闲阶级论》"}], "synonyms": [{"w": "prominent", "ipa": "/ˈprɒmɪnənt/", "gloss": "突出的，显著的", "note": "偏「地位/位置上的突出」，prominent figure = 知名人物"}, {"w": "noticeable", "ipa": "/ˈnəʊtɪsəbl/", "gloss": "明显的，可注意到的", "note": "最日常的「明显」，语气比 conspicuous 轻"}], "antonyms": [{"w": "inconspicuous", "note": "不显眼的，不引人注目的"}, {"w": "subtle", "note": "微妙的，不易察觉的"}], "nuance": "conspicuous 带有「过于显眼」的暗示，有时含负面意味（conspicuous by one's absence = 因缺席而引人注目）；prominent 更中性偏正面（prominent scholar）；noticeable 最中性（a noticeable improvement）。"}, {"word": "autonomous", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/ɔːˈtɒnəməs/", "subgroup": "famous", "meaning": "adj. 自主的，自治的；自动驾驶的", "etymology": "希腊语 autonomos「自治的」，auto-「自己」+ nomos「法律、规则」（economy = 家的规则 同源）。自己给自己定规则=自治/自主。", "roots": [{"part": "auto-", "meaning": "自己"}, {"part": "nom- (nomos)", "meaning": "法律，规则"}, {"part": "-ous", "meaning": "形容词后缀"}], "phonetics": "-ous 后缀非重读，ou 弱化为 /ə/，读 /əs/。重音在第二音节 -TON-。四音节：ɔː-TON-ə-məs。", "tip": "autonomous = auto（自己）+ nom（规则）→ 自己定规则 → 自主的。autonomous vehicle = 自动驾驶车（当下科技热词），autonomous region = 自治区。", "examples": [{"en": "The university operates as an autonomous institution free from government control.", "zh": "这所大学作为独立机构运行，不受政府管控。", "source": "造句"}, {"en": "Autonomous vehicles are expected to transform urban transportation within a decade.", "zh": "自动驾驶汽车预计将在十年内改变城市交通。", "source": "造句"}], "synonyms": [{"w": "independent", "ipa": "/ˌɪndɪˈpendənt/", "gloss": "独立的", "note": "最通用的「独立」，比 autonomous 更日常"}, {"w": "self-governing", "ipa": "/ˌself ˈɡʌvənɪŋ/", "gloss": "自治的", "note": "autonomous 的直白英语版，政治语境常见"}], "antonyms": [{"w": "dependent", "note": "依赖的"}, {"w": "subordinate", "note": "从属的"}], "nuance": "autonomous 比 independent 更正式、更学术。在政治语境中指「自治」（autonomous region），在科技语境中指「自动驾驶/自主运行」（autonomous AI），在教育语境中指「自主学习」（autonomous learner）。托福三大热门话题（政治/科技/教育）都能用到。"}, {"word": "meticulous", "hl": "ou", "levels": ["六级", "托福"], "ipa": "/məˈtɪkjələs/", "subgroup": "famous", "meaning": "adj. 一丝不苟的，极其仔细的", "etymology": "拉丁语 meticulosus「胆小的」，来自 metus「恐惧」。原意是「因害怕出错而极度小心」——胆小→谨慎→一丝不苟。词义完成了从贬义到褒义的逆转。", "roots": [{"part": "metic- (metus)", "meaning": "恐惧，担心"}, {"part": "-ulous/-ous", "meaning": "形容词后缀，充满……的"}], "phonetics": "-ulous 中 ou 弱读为 /ə/，整个后缀读 /ələs/。重音在第二音节 -TIC-。四音节：mə-TIK-jə-ləs。", "tip": "meticulous 原意「怕得要死」→ 怕出错所以特别仔细 → 一丝不苟。「怕出错的完美主义者」就是 meticulous 的画像。meticulous attention to detail = 对细节一丝不苟。", "examples": [{"en": "The restoration of the ancient painting required meticulous attention to detail.", "zh": "这幅古画的修复工作需要对细节一丝不苟的关注。", "source": "造句"}, {"en": "She kept meticulous records of every financial transaction.", "zh": "她一丝不苟地记录每一笔金融交易。", "source": "造句"}], "synonyms": [{"w": "thorough", "ipa": "/ˈθʌrə/", "gloss": "彻底的", "note": "侧重「不遗漏」，meticulous 侧重「不出错」"}, {"w": "scrupulous", "ipa": "/ˈskruːpjələs/", "gloss": "一丝不苟的，有道德顾虑的", "note": "带有道德层面的「认真」，scrupulous honesty = 严格的诚实"}], "antonyms": [{"w": "careless", "note": "粗心的"}, {"w": "sloppy", "note": "马虎的，邋遢的"}], "nuance": "meticulous 是纯褒义，夸人做事细致用这个词最到位。thorough 强调「全面不遗漏」，meticulous 强调「精细不出错」。scrupulous 多了一层「道德上的审慎」。三者在托福写作中都可用来描述研究/分析的严谨性。"}, {"word": "should", "hl": "ou", "levels": ["基础"], "ipa": "/ʃʊd/", "subgroup": "could", "meaning": "modal v. 应该；（虚拟）竟然", "etymology": "古英语 sceolde，shall 的过去式。ou 是中古英语拼写习惯的遗留，l 在此词中从不发音。三兄弟 should/could/would 的 oul 都读 /ʊ/。", "roots": [{"part": "shall（古 sceal）", "meaning": "应该，将要"}], "phonetics": "ou 读 /ʊ/，l 完全不发音。整词 /ʃʊd/，只有两个音素 /ʃ/ 和 /ʊd/。should/could/would 三词同韵，都是 /ʊd/ 结尾。", "tip": "should/could/would 三兄弟：ou 读 /ʊ/，l 不发音。这三个词是英语中 ou 读 /ʊ/ 的几乎全部代表——记住这三个就够了。", "examples": [{"en": "You should get more sleep—you look exhausted.", "zh": "你应该多睡觉——你看起来精疲力竭了。", "source": "造句"}, {"en": "Should you need any assistance, please don't hesitate to ask.", "zh": "如果您需要任何帮助，请随时开口。（正式/虚拟）", "source": "商务邮件"}], "synonyms": [{"w": "ought to", "ipa": "/ɔːt tuː/", "gloss": "应该", "note": "比 should 更正式，语气更强，暗示道义上的「应当」"}], "antonyms": [], "nuance": "should 是最常用的「应该」，语气适中。ought to 更正式更强烈。should 在虚拟语气中表惊讶：It's strange that he should say that（他竟然说了那种话，真奇怪）。这个用法是托福语法考点。"}, {"word": "would", "hl": "ou", "levels": ["基础"], "ipa": "/wʊd/", "subgroup": "could", "meaning": "modal v. 将要（过去时/虚拟）；总是会（过去习惯）", "etymology": "古英语 wolde，will 的过去式。与 should/could 同组，ou 读 /ʊ/，l 不发音。虚拟语气的核心情态动词。", "roots": [{"part": "will（古 wyllan）", "meaning": "意愿，将要"}], "phonetics": "ou 读 /ʊ/，l 不发音。/wʊd/ 与 wood（木头）同音——完全同音异形词（homophone）。", "tip": "would 和 wood 同音！would you = 你愿意吗，wood = 木头。I would if I could（如果可以我愿意）——would 和 could 同韵。", "examples": [{"en": "I would travel the world if I had enough money.", "zh": "如果有足够的钱，我会环游世界。（虚拟语气）", "source": "造句"}, {"en": "When I was a child, my grandfather would tell me stories every night.", "zh": "小时候，爷爷每晚都会给我讲故事。（过去习惯）", "source": "造句"}], "synonyms": [{"w": "used to", "ipa": "/juːst tuː/", "gloss": "过去常常", "note": "表「过去习惯」时与 would 接近，但 used to 暗示「现在不再如此」"}], "antonyms": [], "nuance": "would 的核心功能是表「虚拟/假设」（If I were you, I would...）和「过去习惯」（He would always arrive early）。would rather = 宁愿，would like to = 想要（比 want 礼貌）。虚拟语气中 would + have + pp 表「过去本该/本会」，是托福语法重点。"}, {"word": "could", "hl": "ou", "levels": ["基础"], "ipa": "/kʊd/", "subgroup": "could", "meaning": "modal v. 能够（过去式/虚拟）；可能", "etymology": "古英语 cuðe，can 的过去式。ou 拼写是中古英语的惯例，l 不发音。三兄弟中 could 最多义——既表过去能力，又表可能性，还用于虚拟。", "roots": [{"part": "can（古 cunnan）", "meaning": "知道，能够"}], "phonetics": "ou 读 /ʊ/，l 不发音。/kʊd/ 一个音节，与 good 押韵。注意 can /kæn/ 和 could /kʊd/ 的元音完全不同。", "tip": "could = can 的过去式，但功能远超过去式：could be = 可能是（推测），could you = 你能吗（礼貌请求），could have = 本来能（遗憾/虚拟）。", "examples": [{"en": "She could speak three languages by the age of ten.", "zh": "她十岁时就能说三种语言。（过去能力）", "source": "造句"}, {"en": "It could rain later, so bring an umbrella just in case.", "zh": "待会儿可能会下雨，以防万一带把伞。（推测可能性）", "source": "造句"}], "synonyms": [{"w": "might", "ipa": "/maɪt/", "gloss": "可能", "note": "表推测时与 could 接近，might 的可能性略低一点"}, {"w": "was able to", "ipa": "/wɒz ˈeɪbl tuː/", "gloss": "（过去）能够", "note": "强调「实际做到了」，could 只表「有能力」不一定做了"}], "antonyms": [], "nuance": "could 表过去能力时只说明「有这个能力」，不确定是否实际做了（She could swim = 她会游泳）；was able to 强调「实际做到了」（She was able to swim across the river = 她游过了那条河）。这个区别是语法考点。could have + pp = 本可以（但没做），表遗憾。"}, {"word": "tour", "hl": "ou", "levels": ["六级"], "ipa": "/tʊər/", "subgroup": "could", "meaning": "n. 旅行，巡回  v. 旅行，巡演", "etymology": "古法语 tour「轮转、巡回」，来自拉丁语 tornus「车床、旋转」（turn 转 同源）。旅行就是「绕一圈回来」——grand tour 指欧洲贵族的环欧教育之旅。", "roots": [{"part": "tour (tornus)", "meaning": "旋转，绕一圈"}], "phonetics": "ou 在 tour 中读 /ʊ/，后接 r。注意 tour 有两种读法：/tʊər/（英式主流）和 /tʊr/（美式简化）。这是 ou 读 /ʊ/ 的少数代表之一（三兄弟之外的例子）。", "tip": "tour = 转一圈 = 巡回旅行。tourist = 游客，tourism = 旅游业，tournament = 锦标赛（骑士们轮流比武→锦标赛）。", "examples": [{"en": "The band is on a world tour promoting their new album.", "zh": "乐队正在进行世界巡演，推广他们的新专辑。", "source": "造句"}, {"en": "We took a guided tour of the ancient ruins.", "zh": "我们参加了古遗址的导游讲解之旅。", "source": "造句"}], "synonyms": [{"w": "trip", "ipa": "/trɪp/", "gloss": "旅行", "note": "最日常的「旅行」，不强调巡回"}, {"w": "journey", "ipa": "/ˈdʒɜːrni/", "gloss": "旅程", "note": "强调「从A到B的过程」，比 tour 更有路程感"}], "antonyms": [], "nuance": "tour 强调「巡回、绕一圈」，有回到出发点的含义（world tour、guided tour）；trip 最日常（business trip、road trip）；journey 偏文学/比喻（life journey 人生旅程）。tour 作动词常用于巡演/巡回（tour the country）。"}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- 精读：文章 + 句法分析
+let speaking=false;
+function sayPassage(btn){
+  if(speaking){ speechSynthesis.cancel(); speaking=false; if(btn) btn.textContent='🔊 朗读全文'; return; }
+  const P = G.passage; if(!P) return;
+  const texts = (P.paragraphs||[]).map(p=>p.en).filter(Boolean);
+  if(!texts.length) return;
+  if(!VOICE) pickVoice();
+  speaking=true; if(btn) btn.textContent='⏹ 停止朗读';
+  let last=null;
+  texts.forEach((t,i)=>{
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    if(i===texts.length-1) last=u;
+    speechSynthesis.speak(u);
+  });
+  if(last) last.onend=()=>{ speaking=false; if(btn) btn.textContent='🔊 朗读全文'; };
+}
+function renderPassage(){
+  const el = document.getElementById('passage');
+  const P = G.passage; if(!P){ el.style.display='none'; return; }
+  const paras = (P.paragraphs||[]).map(p=>{
+    let en = p.en||'';
+    // 高亮关键词（p.kws 或自动匹配词表词）
+    const kws = p.kws || [];
+    kws.forEach(k=>{ en = en.replace(new RegExp('('+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'), '<span class="kw" onclick="say(\'$1\')">$1</span>'); });
+    return `<p><div class="en">${en}</div>${p.zh?`<div class="zh">${p.zh}</div>`:''}</p>`;
+  }).join('');
+  el.innerHTML = `<div class="passage"><h2>📖 精读原文</h2>
+    <div class="p-title">${P.title||''} <button class="readall" onclick="sayPassage(this)">🔊 朗读全文</button></div>
+    ${paras}</div>`;
+}
+const ROLECOLOR = { '主语':'#2f8f83','谓语':'#c1662f','宾语':'#3a7bd5','状语':'#6a52a8','定语':'#b0603f','补语':'#c1662f','从句':'#8c8072','连词':'#8c8072','介词':'#8c8072','插入语':'#8c8072','同位语':'#b0603f' };
+function roleColor(r){ return ROLECOLOR[r] || '#6a52a8'; }
+function escAttr(s){ return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+// 句子内括号标注：介词短语 ( ) · 从句 [ ] · 非谓语 { }
+const BRK = {'pp':['(',')'], 'cl':['[',']'], 'nf':['{','}']};
+const BRKC = {'pp':'#6a52a8', 'cl':'#3a7bd5', 'nf':'#b0603f'};
+function renderFlow(s){
+  let html='';
+  (s.flow||[]).forEach(it=>{
+    if(it.open){ const k=it.open; html+=`<span class="brkbox" style="background:${BRKC[k]}16;border-bottom:2px solid ${BRKC[k]}66"><b class="brk" style="color:${BRKC[k]}">${BRK[k][0]}</b>`; }
+    else if(it.close){ const k=it.close; html+=`<b class="brk" style="color:${BRKC[k]}">${BRK[k][1]}</b></span>`; }
+    else { html+=escAttr(it.t); }
+  });
+  return html;
+}
+function renderSents(){
+  const el = document.getElementById('sents');
+  const S = G.sentences; if(!S || !S.length){ el.style.display='none'; return; }
+  const items = S.map((s,i)=>{
+    const flowHtml = (s.flow && s.flow.length) ? renderFlow(s) : escAttr(s.en);
+    const parts = (s.parts||[]).map(p=>{
+      const c = roleColor(p.r);
+      return `<span class="spart" style="background:${c}18;border:1px solid ${c}55">
+        <span class="st" style="color:${c}">${escAttr(p.t)}</span>
+        <span class="sr" style="background:${c}">${p.r}</span>
+        ${p.n?`<span class="sn">${p.n}</span>`:''}</span>`;
+    }).join('');
+    return `<div class="sent">
+      <div class="s-flow" data-en="${escAttr(s.en)}" onclick="say(this.dataset.en)" title="点句子朗读">${flowHtml} <button class="say-mini" data-en="${escAttr(s.en)}" onclick="event.stopPropagation();say(this.dataset.en)" title="朗读">🔊</button></div>
+      ${s.zh?`<div class="s-zh">${s.zh}</div>`:''}
+      <div class="s-parts">${parts}</div>
+      ${s.note?`<div class="snotes">${s.note}</div>`:''}</div>`;
+  }).join('');
+  el.innerHTML = `<div class="sents"><h2>🔍 长难句 · 句法分析</h2>
+    <div class="s-sub">点英文句可朗读 · 括号标注：<b style="color:#6a52a8">( ) 介词短语</b> · <b style="color:#3a7bd5">[ ] 从句</b> · <b style="color:#b0603f">{ } 非谓语动词</b> · 下方色块=成分功能</div>
+    ${items}</div>`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderPassage(); renderSents(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

@@ -1,0 +1,940 @@
+{
+  "id": "letter-e",
+  "combo": "E",
+  "title": "字母 E 的全部发音",
+  "sound": "/e/ /iː/ /ɪ/ /ə/ + silent",
+  "subtitle": "从 bed 到 be，从 pretty 到 complete——E 的五种命运",
+  "intro": "E 是英语中出现频率最高的字母，几乎每个单词都有它的身影，但它的读音却随位置和重音剧烈变化。四条核心规律：①闭音节（辅音封尾）→ 读短音 /e/（bed、help、spend）；②开音节（e 结尾或 e_e 模式）→ 读长音 /iː/（be、complete、supreme）；③非重读音节 → 弱化成 /ɪ/ 或 /ə/（exhibit 首音节 /ɪ/、element 末音节 /ə/）；④词尾辅音后的 e → 通常不发音，但把前面的元音拉长为长音（cake、time、advocate）。掌握这五种命运，就能在遇到任何含 E 的生词时迅速判断它该怎么读。",
+  "subgroups": [
+    {
+      "key": "bed",
+      "tag": "/e/",
+      "label": "E = /e/ (bed)",
+      "desc": "闭音节短音，最常见的 E 读法。E 后面紧跟辅音封住音节，读干脆的短「诶」，如 bed、red、help、spend。六级托福词里大量出现这个模式。"
+    },
+    {
+      "key": "be",
+      "tag": "/iː/",
+      "label": "E = /iː/ (be/complete)",
+      "desc": "开音节或 e_e 魔术 e 模式下读长音 /iː/。单词末尾的 -ete、-ede、-eme、-ene、-ese 几乎全部读 /iː/，如 complete、precede、supreme、intervene。"
+    },
+    {
+      "key": "pretty",
+      "tag": "/ɪ/",
+      "label": "E = /ɪ/ (pretty)",
+      "desc": "非重读音节的 E 弱化成短 /ɪ/，尤其常见于词首 e- 和 de-/re-/pre- 前缀中。exhibit 的 e- 读 /ɪ/、deliberate 的 de- 读 /dɪ/、preliminary 的 pre- 读 /prɪ/。"
+    },
+    {
+      "key": "schwa",
+      "tag": "/ə/",
+      "label": "E = /ə/ (taken)",
+      "desc": "非重读音节的 E 弱化到极致，变成最轻最短的 schwa /ə/。常见于词尾 -ent、-ment、-ence 等后缀，如 element、supplement、competent。"
+    },
+    {
+      "key": "silent",
+      "tag": "不发音",
+      "label": "Silent E (cake/time)",
+      "desc": "词尾辅音后的 e 自身不发音，但作为信号把前面的元音变成长音。六级托福高频词里大量 -ate、-ite、-ute 词尾都遵循此规则：advocate、demonstrate、subordinate。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ent (/ənt/)",
+      "words": ["prevalent", "competent", "equivalent", "subsequent", "element"]
+    },
+    {
+      "label": "-ede/-ete/-ene (/iːd/ /iːt/ /iːn/)",
+      "words": ["precede", "concrete", "obsolete", "intervene", "supreme"]
+    },
+    {
+      "label": "-ate (/eɪt/)",
+      "words": ["advocate", "demonstrate", "speculate", "deliberate", "subordinate"]
+    },
+    {
+      "label": "-ment (/mənt/)",
+      "words": ["implement", "supplement", "settlement", "element"]
+    }
+  ],
+  "words": [
+    {
+      "word": "prevalent",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈprevələnt/",
+      "subgroup": "bed",
+      "meaning": "adj. 流行的；普遍存在的",
+      "etymology": "拉丁语 praevalēre = prae-（在前）+ valēre（强壮、有力），字面义「力量胜出、占上风」，引申为「广泛蔓延的」。16世纪经法语进入英语。",
+      "roots": [
+        {"part": "pre- (prae-)", "meaning": "在前，超过"},
+        {"part": "val", "meaning": "强壮、有力（同 valid, value）"}
+      ],
+      "phonetics": "重音在首音节 PREV-，e 在闭音节 pr-e-v 中读短音 /e/。后两个音节 -a-lent 均为非重读，e 弱化为 /ə/。一个词里 e 出现三次，分别读 /e/、/ə/、/ə/——字母 E 多面性的缩影。",
+      "tip": "prevalent 的 val 和 value 同根——某种东西强大到 prevail（占上风），就变得 prevalent（到处都是）。",
+      "examples": [
+        {
+          "en": "Smartphones have become prevalent in every aspect of daily life.",
+          "zh": "智能手机已渗透到日常生活的方方面面。",
+          "source": "造句"
+        },
+        {
+          "en": "The disease is most prevalent in tropical regions where sanitation is poor.",
+          "zh": "这种疾病在卫生条件差的热带地区最为流行。",
+          "source": "WHO Report"
+        }
+      ],
+      "synonyms": [
+        {"w": "widespread", "ipa": "/ˈwaɪdspred/", "gloss": "分布广的", "note": "强调地理/空间上分布广，prevalent 更强调频率高"},
+        {"w": "pervasive", "ipa": "/pərˈveɪsɪv/", "gloss": "弥漫的，无处不在的", "note": "语气更强，暗示渗透到每个角落，往往含负面色彩"}
+      ],
+      "antonyms": [
+        {"w": "rare", "ipa": "/rer/", "gloss": "罕见的"}
+      ],
+      "nuance": "prevalent 强调某现象在特定人群或地区中出现频率高；widespread 偏地域分布广；pervasive 语气最强，暗示无孔不入。托福阅读中三者常互换考查。"
+    },
+    {
+      "word": "implement",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈɪmplɪment/",
+      "subgroup": "bed",
+      "meaning": "v. 实施，执行  n. 工具，器具",
+      "etymology": "拉丁语 implēre = in-（进入）+ plēre（填满），经晚期拉丁语 implementum（填充物、装备），引申为「使计划充实落地」→ 实施。名词义「工具」保留了「用来完成任务的填充物」的原始感。",
+      "roots": [
+        {"part": "im- (in-)", "meaning": "进入"},
+        {"part": "ple", "meaning": "填满（同 complete, supplement）"}
+      ],
+      "phonetics": "重音在首音节 IM-，第二个 e（-ple- 中的 e）在闭音节中本应读 /e/，但因非重读被进一步压缩为 /ɪ/。词尾 -ment 的 e 弱化为 /ə/。注意动词和名词发音相同。",
+      "tip": "implement = im(进入) + ple(填满) + ment → 把计划「填充进现实」，就是「实施」。和 complete 同根——完成一个计划就是把它填满。",
+      "examples": [
+        {
+          "en": "The government plans to implement new environmental regulations next year.",
+          "zh": "政府计划明年实施新的环保法规。",
+          "source": "造句"
+        },
+        {
+          "en": "Farming implements have evolved remarkably over the past century.",
+          "zh": "农具在过去一个世纪里有了显著演变。",
+          "source": "National Geographic"
+        }
+      ],
+      "synonyms": [
+        {"w": "execute", "ipa": "/ˈeksɪkjuːt/", "gloss": "执行", "note": "更正式，常见于法律/商业语境，强调按指令行事"},
+        {"w": "enforce", "ipa": "/ɪnˈfɔːrs/", "gloss": "强制执行", "note": "含强制力，特指法律法规的执行"}
+      ],
+      "antonyms": [],
+      "nuance": "implement 是「实施计划/政策」最常用的动词，语气中性偏正式。execute 更强调按既定步骤精确执行；enforce 专指用权力确保规则被遵守。"
+    },
+    {
+      "word": "endeavor",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ɪnˈdevər/",
+      "subgroup": "bed",
+      "meaning": "n./v. 努力，尽力（尤指认真的、持续的努力）",
+      "etymology": "中古英语 endeveren，源自古法语 en devoir = en（使）+ devoir（义务），字面义「让自己承担义务去做」。devoir 又来自拉丁语 dēbēre（欠、应当，同 debt/due）。美式拼写 endeavor，英式 endeavour。",
+      "roots": [
+        {"part": "en-", "meaning": "使，进入"},
+        {"part": "deav (devoir)", "meaning": "义务、应当（同 duty, due, debt）"}
+      ],
+      "phonetics": "重音在第二音节 -DEAV-，e 在闭音节 d-e-v 中读短音 /e/。首音节 en- 非重读，e 弱化为 /ɪ/。这个词完美示范了同一字母 e 在重读和非重读音节中的不同命运。",
+      "tip": "endeavor 的词根和 duty/debt 同源——把某事当成「欠下的义务」去全力完成，就是 endeavor。NASA 的航天飞机也叫 Endeavour。",
+      "examples": [
+        {
+          "en": "We must endeavor to find a peaceful solution to the conflict.",
+          "zh": "我们必须努力寻找冲突的和平解决方案。",
+          "source": "造句"
+        },
+        {
+          "en": "Scientific endeavor has always been driven by human curiosity.",
+          "zh": "科学探索始终由人类的好奇心驱动。",
+          "source": "Carl Sagan, Cosmos"
+        }
+      ],
+      "synonyms": [
+        {"w": "strive", "ipa": "/straɪv/", "gloss": "奋斗", "note": "更口语化，强调过程中的艰辛对抗"},
+        {"w": "attempt", "ipa": "/əˈtempt/", "gloss": "尝试", "note": "语气更轻，不一定暗示持续努力"}
+      ],
+      "antonyms": [],
+      "nuance": "endeavor 语气正式庄重，暗示严肃的、有目标的持续努力，常用于学术/演讲语境。strive 更日常，强调过程的挣扎感。attempt 最轻，只表示「试一试」。"
+    },
+    {
+      "word": "relentless",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/rɪˈlentləs/",
+      "subgroup": "bed",
+      "meaning": "adj. 不懈的，持续不断的；无情的",
+      "etymology": "relent（心软、放松）+ -less（无）。relent 源自拉丁语 re-（回）+ lentāre（使柔软，lentus = 柔软的、慢的），字面义「变得柔软」→ 心软让步。加 -less 就是「永不心软」→ 不懈的、无情的。",
+      "roots": [
+        {"part": "re-", "meaning": "回，再"},
+        {"part": "lent", "meaning": "柔软、缓慢（同 lenient）"},
+        {"part": "-less", "meaning": "无，没有"}
+      ],
+      "phonetics": "重音在第二音节 -LENT-，e 在闭音节 l-e-nt 中读短音 /e/。首音节 re- 非重读，e 弱化为 /ɪ/。末音节 -less 的 e 也弱化为 /ə/。三个 e 三种读法。",
+      "tip": "relent = 心软；relentless = 永不心软。想象暴风雨 relentlessly 拍打海岸，一刻不停——它不会 relent（放过你）。",
+      "examples": [
+        {
+          "en": "Her relentless pursuit of excellence earned her a scholarship to MIT.",
+          "zh": "她对卓越的不懈追求为她赢得了麻省理工的奖学金。",
+          "source": "造句"
+        },
+        {
+          "en": "The relentless pace of technological change is reshaping entire industries.",
+          "zh": "技术变革的不懈步伐正在重塑整个行业格局。",
+          "source": "The Economist"
+        }
+      ],
+      "synonyms": [
+        {"w": "persistent", "ipa": "/pərˈsɪstənt/", "gloss": "持续的，执著的", "note": "中性偏褒，强调坚持不放弃"},
+        {"w": "unceasing", "ipa": "/ʌnˈsiːsɪŋ/", "gloss": "不停的", "note": "纯描述性，不含褒贬色彩"}
+      ],
+      "antonyms": [
+        {"w": "lenient", "ipa": "/ˈliːniənt/", "gloss": "宽容的，仁慈的"}
+      ],
+      "nuance": "relentless 有双面性：形容人的努力时是褒义（不懈的），形容压力/攻击时偏贬义（无情的）。persistent 更中性。注意 relentless 和 lenient 同根（lent = 柔软），是同源反义词。"
+    },
+    {
+      "word": "credentials",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/krɪˈdenʃəlz/",
+      "subgroup": "bed",
+      "meaning": "n. 资历，资格证明；凭证",
+      "etymology": "中世纪拉丁语 credentiālis = credere（相信）+ -ential（形容词后缀）。字面义「使人相信的东西」——你拿出证书，别人就「相信」你有这个能力。同根词：credit（信用）、credible（可信的）、creed（信条）。",
+      "roots": [
+        {"part": "cred", "meaning": "相信（同 credit, credible, creed）"},
+        {"part": "-ential", "meaning": "与……相关的"}
+      ],
+      "phonetics": "重音在第二音节 -DEN-，e 在闭音节 d-e-n 中读短音 /e/。首音节 cre- 非重读，e 弱化为 /ɪ/。-tials 中的 e 已融入 /ʃ/ 音。",
+      "tip": "credentials 和 credit 同根——信用卡让商家「相信」你能付款，credentials 让雇主「相信」你有资格。",
+      "examples": [
+        {
+          "en": "Please present your credentials before entering the restricted area.",
+          "zh": "进入限制区域前请出示您的身份凭证。",
+          "source": "造句"
+        },
+        {
+          "en": "Her academic credentials include a Ph.D. from Harvard and three published papers.",
+          "zh": "她的学术资历包括哈佛博士学位和三篇发表的论文。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "qualifications", "ipa": "/ˌkwɒlɪfɪˈkeɪʃənz/", "gloss": "资格，资质", "note": "更广泛，包括技能和经验；credentials 偏向正式证书和凭证"},
+        {"w": "certificate", "ipa": "/sərˈtɪfɪkət/", "gloss": "证书", "note": "具体的一张纸质/数字证明，credentials 是总称"}
+      ],
+      "antonyms": [],
+      "nuance": "credentials 通常用复数，泛指一个人的全部资历和证明文件。qualifications 更宽泛，可包括非正式的能力和经验。在 IT 领域，credentials 特指登录凭证（用户名+密码）。"
+    },
+    {
+      "word": "precede",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/prɪˈsiːd/",
+      "subgroup": "be",
+      "meaning": "v. 在……之前发生；先于",
+      "etymology": "拉丁语 praecēdere = prae-（在前）+ cēdere（走、让步），字面义「走在前面」。同根词：proceed（前进）、exceed（超出）、recede（退去）——都是「走」的不同方向。",
+      "roots": [
+        {"part": "pre- (prae-)", "meaning": "在前"},
+        {"part": "cede (cēdere)", "meaning": "走，让步（同 proceed, exceed, recede）"}
+      ],
+      "phonetics": "重音在第二音节 -CEDE，词尾 e_e 构成魔术 e 模式（c-e-d-e），中间的 e 读长音 /iː/。首音节 pre- 非重读，e 弱化为 /ɪ/。",
+      "tip": "precede = pre(前) + cede(走) → 走在前面。所有 -cede/-ceed 词都和「走」有关：proceed 往前走，recede 往后退，exceed 走出范围。",
+      "examples": [
+        {
+          "en": "A brief introduction will precede the main lecture.",
+          "zh": "主讲座之前会有简短的介绍。",
+          "source": "造句"
+        },
+        {
+          "en": "The economic boom that preceded the crash made the fall even more devastating.",
+          "zh": "崩盘之前的经济繁荣使衰落更加惨烈。",
+          "source": "The Great Gatsby, contextual"
+        }
+      ],
+      "synonyms": [
+        {"w": "antecede", "ipa": "/ˌæntɪˈsiːd/", "gloss": "先于", "note": "书面语极少用，precede 是标准用词"},
+        {"w": "predate", "ipa": "/priːˈdeɪt/", "gloss": "早于（时间上）", "note": "强调时间维度，precede 兼顾时间和顺序"}
+      ],
+      "antonyms": [
+        {"w": "follow", "ipa": "/ˈfɒloʊ/", "gloss": "跟随，在……之后"}
+      ],
+      "nuance": "precede 是最正式的「在前」用词，多见于学术和正式写作。日常口语更常用 come before。注意名词形式 precedent（先例）和 precedence（优先权）在托福中也是高频词。"
+    },
+    {
+      "word": "concrete",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈkɒnkriːt/",
+      "subgroup": "be",
+      "meaning": "adj. 具体的，实在的  n. 混凝土",
+      "etymology": "拉丁语 concrētus = con-（一起）+ crēscere（生长）的过去分词，字面义「长在一起的、凝固成块的」。从物质的「凝聚成实体」引申出抽象的「具体的、可触摸的」。同根词：increase（增长）、decrease（减少）。",
+      "roots": [
+        {"part": "con-", "meaning": "一起，共同"},
+        {"part": "crete (crēscere)", "meaning": "生长（同 increase, decrease, crescent）"}
+      ],
+      "phonetics": "重音在首音节 CON-，末音节 -crete 中 e_e 构成魔术 e 模式，读长音 /iː/。注意作形容词「具体的」时重音也在首音节，美式读 /ˈkɑːnkriːt/。",
+      "tip": "concrete 的词根是「长到一起」→ 凝固成块。混凝土就是沙石水泥凝固在一起的产物；「具体的」就是想法凝固成能触摸到的实体。",
+      "examples": [
+        {
+          "en": "Can you give me a concrete example instead of speaking in abstractions?",
+          "zh": "你能给我一个具体的例子，而不是泛泛而谈吗？",
+          "source": "造句"
+        },
+        {
+          "en": "The sidewalk was made of cracked concrete that had been there for decades.",
+          "zh": "人行道是几十年前铺的开裂混凝土。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "tangible", "ipa": "/ˈtændʒəbl/", "gloss": "可触摸的，实在的", "note": "强调能被感官感知，concrete 更强调非抽象"},
+        {"w": "specific", "ipa": "/spəˈsɪfɪk/", "gloss": "具体的，明确的", "note": "强调精确指向某一点，concrete 强调有实质内容"}
+      ],
+      "antonyms": [
+        {"w": "abstract", "ipa": "/ˈæbstrækt/", "gloss": "抽象的"}
+      ],
+      "nuance": "concrete 在托福写作中极高频，常出现在 concrete evidence / concrete example 搭配中。与 abstract 是经典反义对。注意它有两个词性两个含义，但都围绕「凝固成实体」的核心意象。"
+    },
+    {
+      "word": "supreme",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/suːˈpriːm/",
+      "subgroup": "be",
+      "meaning": "adj. 最高的；至上的；极度的",
+      "etymology": "拉丁语 suprēmus，是 superus（在上面的）的最高级形式，super（在上面）+ -ēmus（最高级后缀）。字面义「最上面的」。同根词：superior（更高的）、superb（极好的）、supervise（监督，从上面看）。",
+      "roots": [
+        {"part": "supre- (super)", "meaning": "在上面（同 superior, superb）"},
+        {"part": "-me (-ēmus)", "meaning": "最高级后缀"}
+      ],
+      "phonetics": "重音在第二音节 -PREME，词尾 e 使前面的 e 读长音 /iː/（e_e 模式中 r 介入：pr-eme）。首音节 su- 读 /suː/。整个词只有两个音节，重音规律清晰。",
+      "tip": "supreme 是 super 的最高级——比 superior（更高的）还高一档，已经到顶了。Supreme Court = 最高法院，Supreme Being = 至高存在（上帝）。",
+      "examples": [
+        {
+          "en": "The Supreme Court's ruling set a precedent for future cases.",
+          "zh": "最高法院的裁决为未来的案件树立了先例。",
+          "source": "NPR News"
+        },
+        {
+          "en": "She faced the challenge with supreme confidence.",
+          "zh": "她以极大的自信面对挑战。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "paramount", "ipa": "/ˈpærəmaʊnt/", "gloss": "至高无上的", "note": "强调重要性上的最高，常用于 of paramount importance"},
+        {"w": "ultimate", "ipa": "/ˈʌltɪmət/", "gloss": "终极的，最终的", "note": "侧重「最终、终极」，supreme 侧重「最高等级」"}
+      ],
+      "antonyms": [
+        {"w": "inferior", "ipa": "/ɪnˈfɪriər/", "gloss": "低等的，下级的"}
+      ],
+      "nuance": "supreme 强调等级体系中绝对的最高位，带有庄严色彩。paramount 更常用于抽象的重要性排序。ultimate 强调序列的终点。日常用 supreme 有夸张效果（supreme comfort = 极致舒适）。"
+    },
+    {
+      "word": "obsolete",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˌɒbsəˈliːt/",
+      "subgroup": "be",
+      "meaning": "adj. 过时的，废弃不用的",
+      "etymology": "拉丁语 obsolētus = ob-（对着、朝向）+ solēre（习惯于）的过去分词，字面义「已经习惯不再使用了」→ 被抛弃的旧物。从「不再被习惯使用」演变为「过时的」。",
+      "roots": [
+        {"part": "ob-", "meaning": "对着，朝向（此处表「走向废弃」）"},
+        {"part": "sol", "meaning": "习惯（同 obsolescent）"},
+        {"part": "-ete", "meaning": "过去分词后缀"}
+      ],
+      "phonetics": "重音在末音节 -LETE，e_e 模式使 e 读长音 /iː/。中间音节 -so- 非重读读 /sə/。这个词是 e_e → /iː/ 规则在词尾的典型示范。",
+      "tip": "obsolete = 人们已经「习惯（sol）不用了」的东西。想象旧式翻盖手机——曾经人人用，现在 obsolete。名词形式 obsolescence（淘汰）也是托福词。",
+      "examples": [
+        {
+          "en": "Rapid technological advances have made many traditional skills obsolete.",
+          "zh": "飞速的技术进步使许多传统技能变得过时。",
+          "source": "造句"
+        },
+        {
+          "en": "The factory's equipment was obsolete and desperately needed replacing.",
+          "zh": "工厂的设备已经过时，急需更换。",
+          "source": "BBC News"
+        }
+      ],
+      "synonyms": [
+        {"w": "outdated", "ipa": "/ˌaʊtˈdeɪtɪd/", "gloss": "过时的", "note": "更口语化，语气比 obsolete 轻，暗示还能用但不再时尚"},
+        {"w": "antiquated", "ipa": "/ˈæntɪkweɪtɪd/", "gloss": "古老过时的", "note": "带「老古董」色彩，比 obsolete 更强调年代久远"}
+      ],
+      "antonyms": [
+        {"w": "cutting-edge", "ipa": "/ˈkʌtɪŋ edʒ/", "gloss": "前沿的，尖端的"}
+      ],
+      "nuance": "obsolete 语气最重，意味着已完全被淘汰、不再有使用价值。outdated 只是「不够新」，可能仍可使用。antiquated 强调古老感。托福阅读中三者常在同一语境出现。"
+    },
+    {
+      "word": "intervene",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˌɪntərˈviːn/",
+      "subgroup": "be",
+      "meaning": "v. 干预，介入；（事件）在其间发生",
+      "etymology": "拉丁语 intervenīre = inter-（在……之间）+ venīre（来），字面义「来到两者之间」→ 插手干预。同根词：convention（集会，大家一起来）、prevent（提前来挡住）、adventure（冒险来到未知之处）。",
+      "roots": [
+        {"part": "inter-", "meaning": "在……之间"},
+        {"part": "vene (venīre)", "meaning": "来（同 convention, prevent, adventure）"}
+      ],
+      "phonetics": "重音在末音节 -VENE，e_e 模式使 e 读长音 /iː/。前两个音节 in-ter- 非重读，各读 /ɪ/ 和 /ər/。注意 -vene 的发音和 -veen 一样，不是 -ven。",
+      "tip": "intervene = inter(之间) + vene(来) → 来到两人中间 → 干预。想象两个人吵架，你走到中间把他们隔开——那就是 intervene。",
+      "examples": [
+        {
+          "en": "The United Nations decided to intervene in the humanitarian crisis.",
+          "zh": "联合国决定对这场人道主义危机进行干预。",
+          "source": "UN Report"
+        },
+        {
+          "en": "If we don't intervene now, the situation will deteriorate further.",
+          "zh": "如果我们现在不介入，局势将进一步恶化。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "interfere", "ipa": "/ˌɪntərˈfɪr/", "gloss": "干涉，妨碍", "note": "偏贬义，暗示不受欢迎的插手；intervene 中性偏褒"},
+        {"w": "mediate", "ipa": "/ˈmiːdieɪt/", "gloss": "调解", "note": "专指作为中间人斡旋，比 intervene 更温和"}
+      ],
+      "antonyms": [
+        {"w": "abstain", "ipa": "/əbˈsteɪn/", "gloss": "放弃，不参与"}
+      ],
+      "nuance": "intervene 是中性到褒义的介入（为了帮忙或阻止坏事）。interfere 偏贬义（多管闲事）。mediate 最温和（做和事佬）。托福听力中政治/社会话题常考 intervention。"
+    },
+    {
+      "word": "exhibit",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ɪɡˈzɪbɪt/",
+      "subgroup": "pretty",
+      "meaning": "v. 展示，陈列；表现出  n. 展览品，展品",
+      "etymology": "拉丁语 exhibēre = ex-（向外）+ habēre（持有），字面义「把持有的东西拿出来给人看」→ 展示。同根词：prohibit（往前挡住 → 禁止）、inhabit（住在里面 → 居住）。",
+      "roots": [
+        {"part": "ex-", "meaning": "向外"},
+        {"part": "hibit (habēre)", "meaning": "持有（同 prohibit, inhabit, habit）"}
+      ],
+      "phonetics": "重音在第二音节 -HIB-，首音节 ex- 的 e 非重读，弱化为 /ɪ/（不读 /e/ 也不读 /iː/）。这是 e → /ɪ/ 的经典案例：词首 ex- 在非重读时几乎总是读 /ɪɡz/。",
+      "tip": "exhibit = ex(向外) + hibit(拿) → 把东西拿出来给人看。博物馆的 exhibition（展览）就是把收藏品拿出来展示。prohibit 则反过来——pro(往前) + hibit(拿走) → 把东西拦住不让你拿 → 禁止。",
+      "examples": [
+        {
+          "en": "The museum will exhibit a rare collection of impressionist paintings.",
+          "zh": "博物馆将展出一批珍贵的印象派画作。",
+          "source": "造句"
+        },
+        {
+          "en": "Patients who exhibit symptoms of the virus should be tested immediately.",
+          "zh": "出现该病毒症状的患者应立即接受检测。",
+          "source": "WHO Guidelines"
+        }
+      ],
+      "synonyms": [
+        {"w": "display", "ipa": "/dɪˈspleɪ/", "gloss": "展示，陈列", "note": "更日常，exhibit 更正式，多用于博物馆、法庭语境"},
+        {"w": "demonstrate", "ipa": "/ˈdemənstreɪt/", "gloss": "示范，证明", "note": "强调通过行动或证据来展示，exhibit 偏向静态陈列"}
+      ],
+      "antonyms": [
+        {"w": "conceal", "ipa": "/kənˈsiːl/", "gloss": "隐藏，隐瞒"}
+      ],
+      "nuance": "exhibit 有两个核心搭配：exhibit + 展品（物理展示）和 exhibit + 特征/症状（表现出）。后者在科学文章中极高频。法庭上证物也叫 exhibit（Exhibit A = 证物A）。"
+    },
+    {
+      "word": "legitimate",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/lɪˈdʒɪtɪmət/",
+      "subgroup": "pretty",
+      "meaning": "adj. 合法的；正当的；合理的  v. 使合法化",
+      "etymology": "拉丁语 lēgitimus = lēx（法律）+ -itimus（与……相符的），字面义「与法律相符的」。同根词：legal（合法的）、legislate（立法）、privilege（特权，privi- + leg = 个人的法律）。",
+      "roots": [
+        {"part": "leg (lēx)", "meaning": "法律（同 legal, legislate）"},
+        {"part": "-itim", "meaning": "与……相符的"},
+        {"part": "-ate", "meaning": "形容词/动词后缀"}
+      ],
+      "phonetics": "重音在第二音节 -GIT-，首音节 le- 非重读，e 弱化为 /ɪ/（不读 /e/）。第三音节 -ti- 也非重读读 /tɪ/。这个词有四个音节，除重音音节外全部含弱化的 /ɪ/。",
+      "tip": "legitimate 的核心是 leg(法律)——法律认可的就是 legitimate。口语中 legit 是它的缩写，年轻人常说 That's legit!（那是真的/靠谱的）。",
+      "examples": [
+        {
+          "en": "The company has a legitimate claim to the patent.",
+          "zh": "该公司对这项专利拥有合法的权利要求。",
+          "source": "造句"
+        },
+        {
+          "en": "Is this a legitimate concern, or are you just looking for excuses?",
+          "zh": "这是合理的担忧，还是你只是在找借口？",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "lawful", "ipa": "/ˈlɔːfl/", "gloss": "合法的", "note": "纯法律用语，legitimate 还可表示「合理的、正当的」"},
+        {"w": "valid", "ipa": "/ˈvælɪd/", "gloss": "有效的，正当的", "note": "强调逻辑上站得住脚，legitimate 强调法律/道德上的认可"}
+      ],
+      "antonyms": [
+        {"w": "illegitimate", "ipa": "/ˌɪlɪˈdʒɪtɪmət/", "gloss": "不合法的，非法的"}
+      ],
+      "nuance": "legitimate 覆盖面最广：法律上合法 + 道德上正当 + 逻辑上合理。lawful/legal 仅限法律维度。valid 仅限逻辑/规则维度。托福写作中用 legitimate concern/argument 能精准加分。"
+    },
+    {
+      "word": "deliberate",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/dɪˈlɪbərət/",
+      "subgroup": "pretty",
+      "meaning": "adj. 故意的，蓄意的；深思熟虑的  v. /dɪˈlɪbəreɪt/ 仔细考虑，商议",
+      "etymology": "拉丁语 dēlīberāre = de-（完全地）+ lībrāre（称重），lībrā 是天平。字面义「在天平上仔细称量」→ 深思熟虑。从「仔细想过再做」引申出「故意的」。同根词：libra（天秤座）、equilibrium（平衡）。",
+      "roots": [
+        {"part": "de-", "meaning": "完全地"},
+        {"part": "liber (lībrā)", "meaning": "天平、称量（同 equilibrium, Libra）"}
+      ],
+      "phonetics": "重音在第二音节 -LIB-，首音节 de- 非重读，e 弱化为 /ɪ/。注意形容词和动词发音不同：形容词末音节 -ate 读 /ət/，动词 -ate 读 /eɪt/。这种 -ate 双读现象在多音节词中非常常见。",
+      "tip": "deliberate 的词根是「天平」——在天平上反复称量利弊，就是深思熟虑。深思之后再做的事，就是「故意的」。和 Libra（天秤座）同根。",
+      "examples": [
+        {
+          "en": "The attack was not accidental — it was a deliberate act of sabotage.",
+          "zh": "这次袭击不是意外——而是蓄意的破坏行为。",
+          "source": "造句"
+        },
+        {
+          "en": "The jury deliberated for three days before reaching a verdict.",
+          "zh": "陪审团经过三天的审议后才做出裁决。",
+          "source": "NPR News"
+        }
+      ],
+      "synonyms": [
+        {"w": "intentional", "ipa": "/ɪnˈtenʃənl/", "gloss": "有意的", "note": "最中性的「故意」，deliberate 暗示经过思考后的故意"},
+        {"w": "calculated", "ipa": "/ˈkælkjuleɪtɪd/", "gloss": "精心计算的", "note": "偏贬义，暗示冷酷算计"}
+      ],
+      "antonyms": [
+        {"w": "accidental", "ipa": "/ˌæksɪˈdentl/", "gloss": "意外的，偶然的"}
+      ],
+      "nuance": "deliberate 有两面：作形容词是「故意的/慎重的」，作动词是「商议」。intentional 只有「故意的」一个意思。calculated 带负面色彩（冷血算计）。托福阅读中 deliberate 常考形容词义。"
+    },
+    {
+      "word": "preliminary",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/prɪˈlɪmɪnəri/",
+      "subgroup": "pretty",
+      "meaning": "adj. 初步的，预备的  n. 预赛；初步行动",
+      "etymology": "拉丁语 praeliminaris = prae-（在前）+ līmen（门槛），字面义「在门槛之前的」→ 正式开始之前的准备阶段。同根词：eliminate（踢出门外 → 消除）、subliminal（在门槛之下 → 潜意识的）。",
+      "roots": [
+        {"part": "pre- (prae-)", "meaning": "在前"},
+        {"part": "limin (līmen)", "meaning": "门槛（同 eliminate, subliminal）"},
+        {"part": "-ary", "meaning": "与……相关的"}
+      ],
+      "phonetics": "重音在第二音节 -LIM-，首音节 pre- 非重读，e 弱化为 /ɪ/。后续音节 -i-na-ry 中的元音也全部弱化。这个词是非重读 e → /ɪ/ 的教科书案例。",
+      "tip": "preliminary = 在门槛（limin）前面（pre）→ 还没跨过正式的门槛，还在准备阶段。比赛的预赛就叫 preliminaries——淘汰赛是门槛，预赛在门槛之前。",
+      "examples": [
+        {
+          "en": "Preliminary results suggest the vaccine is highly effective.",
+          "zh": "初步结果表明该疫苗非常有效。",
+          "source": "The Lancet"
+        },
+        {
+          "en": "We need to complete a preliminary assessment before committing resources.",
+          "zh": "在投入资源之前，我们需要完成初步评估。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "initial", "ipa": "/ɪˈnɪʃəl/", "gloss": "最初的", "note": "强调时间上最先，preliminary 强调「为正式阶段做准备」"},
+        {"w": "provisional", "ipa": "/prəˈvɪʒənl/", "gloss": "暂时的，临时的", "note": "强调暂定、可能会变，preliminary 强调预备性质"}
+      ],
+      "antonyms": [
+        {"w": "final", "ipa": "/ˈfaɪnl/", "gloss": "最终的"}
+      ],
+      "nuance": "preliminary 专指「正式之前的预备」，暗示后面还有更重要的阶段。initial 只标记时间先后。provisional 强调「暂定可改」。托福学术讲座中 preliminary findings/data 是超高频搭配。"
+    },
+    {
+      "word": "equivalent",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ɪˈkwɪvələnt/",
+      "subgroup": "pretty",
+      "meaning": "adj. 等价的，相当的  n. 等价物",
+      "etymology": "拉丁语 aequivalēns = aequi-（相等的）+ valēre（有力量、有价值），字面义「力量/价值相等的」。同根词：equal（相等的）、adequate（足够的）、value（价值）。",
+      "roots": [
+        {"part": "equi- (aequi-)", "meaning": "相等的（同 equal, equate, equation）"},
+        {"part": "val", "meaning": "有力量、有价值（同 value, valid, prevalent）"}
+      ],
+      "phonetics": "重音在第二音节 -QUIV-，首音节 e- 非重读，弱化为 /ɪ/。末音节 -lent 的 e 弱化为 /ə/。注意 qu 读 /kw/，整个词读起来节奏感强。",
+      "tip": "equivalent = equi(相等) + val(价值) → 价值相等的。一美元和六七块人民币是 equivalent——面值不同但价值相等。",
+      "examples": [
+        {
+          "en": "One mile is roughly equivalent to 1.6 kilometers.",
+          "zh": "一英里大约相当于1.6公里。",
+          "source": "造句"
+        },
+        {
+          "en": "There is no English equivalent of this Chinese idiom.",
+          "zh": "这个中文成语在英语中没有对等的表达。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "comparable", "ipa": "/ˈkɒmpərəbl/", "gloss": "可比较的", "note": "程度稍弱，只说「可以拿来比」，equivalent 说「比了之后确实相等」"},
+        {"w": "tantamount", "ipa": "/ˈtæntəmaʊnt/", "gloss": "等同于的", "note": "正式书面用语，常用于 tantamount to，暗示虽然形式不同但实质相同"}
+      ],
+      "antonyms": [
+        {"w": "disparate", "ipa": "/ˈdɪspərət/", "gloss": "截然不同的"}
+      ],
+      "nuance": "equivalent 强调价值或功能上的对等，不要求形式相同。comparable 只说「有可比性」，不保证相等。tantamount 更正式，常带负面含义（tantamount to treason = 等同于叛国）。"
+    },
+    {
+      "word": "competent",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈkɒmpɪtənt/",
+      "subgroup": "schwa",
+      "meaning": "adj. 有能力的，称职的；足够的",
+      "etymology": "拉丁语 competēns = com-（一起）+ petere（寻求、追求），字面义「一起竞争的、够格参与竞争的」→ 有足够能力的。同根词：compete（竞争）、petition（请愿）、appetite（食欲，追求食物）。",
+      "roots": [
+        {"part": "com-", "meaning": "一起"},
+        {"part": "pet", "meaning": "寻求、追求（同 compete, petition, appetite）"},
+        {"part": "-ent", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在首音节 COM-，末音节 -tent 的 e 非重读，弱化为 schwa /ə/。注意中间音节 -pe- 也弱化为 /pɪ/。词尾 -ent 是 schwa 最常见的藏身之处之一。",
+      "tip": "competent 和 compete 同根——够格参与竞争的人，就是有能力的人。注意 competent 只是「称职」（够用），不是「出色」——要夸人出色用 outstanding。",
+      "examples": [
+        {
+          "en": "We need a competent manager who can handle multiple projects simultaneously.",
+          "zh": "我们需要一位能同时处理多个项目的称职经理。",
+          "source": "造句"
+        },
+        {
+          "en": "The student demonstrated competent use of academic vocabulary in her essay.",
+          "zh": "该学生在论文中展示了对学术词汇的熟练运用。",
+          "source": "TOEFL Writing Rubric"
+        }
+      ],
+      "synonyms": [
+        {"w": "capable", "ipa": "/ˈkeɪpəbl/", "gloss": "有能力的", "note": "更口语化，capable 可以跟 of，competent 常跟 in/at"},
+        {"w": "proficient", "ipa": "/prəˈfɪʃənt/", "gloss": "精通的，熟练的", "note": "比 competent 高一个层次，暗示技能已经打磨成熟"}
+      ],
+      "antonyms": [
+        {"w": "incompetent", "ipa": "/ɪnˈkɒmpɪtənt/", "gloss": "无能的，不称职的"}
+      ],
+      "nuance": "competent 是「及格线以上」的能力，语气温和不夸张。capable 更日常。proficient 暗示已经熟练。skilled/adept 更高。outstanding/exceptional 才是顶级。托福写作中 competent 常出现在评分标准里。"
+    },
+    {
+      "word": "supplement",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈsʌplɪmənt/",
+      "subgroup": "schwa",
+      "meaning": "n. 补充物，增刊  v. /ˈsʌplɪment/ 补充，增补",
+      "etymology": "拉丁语 supplēmentum = sub-（从下面）+ plēre（填满）+ -mentum（结果），字面义「从底部填补上来的东西」。同根词：supply（供应，往上填）、complete（完全填满）、implement（填充执行）。",
+      "roots": [
+        {"part": "sup- (sub-)", "meaning": "从下面"},
+        {"part": "ple", "meaning": "填满（同 complete, implement, deplete）"},
+        {"part": "-ment", "meaning": "名词后缀，表结果"}
+      ],
+      "phonetics": "重音在首音节 SUP-，末音节 -ment 的 e 非重读，弱化为 schwa /ə/（有时甚至接近被吞掉）。-ment 后缀中的 e 在所有英语词里都读 schwa，这是最可靠的规律之一。",
+      "tip": "supplement = sup(从下) + ple(填) + ment → 从下面填补缺口。维生素片叫 dietary supplement——用它来补充饮食中缺少的营养。",
+      "examples": [
+        {
+          "en": "Many athletes take protein supplements to aid muscle recovery.",
+          "zh": "许多运动员服用蛋白质补充剂来帮助肌肉恢复。",
+          "source": "造句"
+        },
+        {
+          "en": "She supplements her income by tutoring on weekends.",
+          "zh": "她通过周末做家教来补充收入。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "complement", "ipa": "/ˈkɒmplɪmənt/", "gloss": "补充，补足", "note": "complement 强调使完整（填满缺失的部分），supplement 强调在已有基础上额外添加"},
+        {"w": "addition", "ipa": "/əˈdɪʃən/", "gloss": "附加物，增加", "note": "更通用，不含「弥补不足」的意味"}
+      ],
+      "antonyms": [],
+      "nuance": "supplement vs complement：supplement 是「锦上添花」（already OK, add more），complement 是「拼上缺失的那块」（make it complete）。这对词在托福阅读中经常作为干扰选项互相出现。"
+    },
+    {
+      "word": "settlement",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈsetlmənt/",
+      "subgroup": "schwa",
+      "meaning": "n. 定居点；和解，解决；结算",
+      "etymology": "settle（定居、解决）+ -ment（名词后缀）。settle 源自古英语 setlan = setl（座位）+ -an（动词后缀），核心意象是「坐下来」→ 安顿下来、落定。与 seat、sit 同源。",
+      "roots": [
+        {"part": "settl (setl)", "meaning": "坐下，安顿（同 seat, sit）"},
+        {"part": "-ment", "meaning": "名词后缀，表结果/状态"}
+      ],
+      "phonetics": "重音在首音节 SET-，其中 e 在闭音节读短音 /e/。但 -ment 后缀的 e 非重读弱化为 schwa /ə/，甚至在快速语流中几乎消失，读成 /setlmnt/。",
+      "tip": "settlement 的核心是 settle（坐下来）→ 人坐下来安顿 = 定居点；争端双方坐下来谈 = 和解；账目坐实 = 结算。所有义项都围绕「落定」。",
+      "examples": [
+        {
+          "en": "The two companies reached an out-of-court settlement to avoid a lengthy trial.",
+          "zh": "两家公司达成庭外和解以避免冗长的审判。",
+          "source": "Reuters"
+        },
+        {
+          "en": "Archaeological evidence reveals a Bronze Age settlement on this site.",
+          "zh": "考古证据显示这里曾有一个青铜时代的定居点。",
+          "source": "National Geographic"
+        }
+      ],
+      "synonyms": [
+        {"w": "resolution", "ipa": "/ˌrezəˈluːʃən/", "gloss": "解决，决议", "note": "更正式，强调最终结论；settlement 含「妥协」意味"},
+        {"w": "colony", "ipa": "/ˈkɒləni/", "gloss": "殖民地，群落", "note": "规模更大，有政治控制含义；settlement 可以只是小型定居点"}
+      ],
+      "antonyms": [],
+      "nuance": "settlement 在不同语境下含义差异大：法律语境 = 和解（达成协议）；历史/地理语境 = 定居点（人类聚居）；金融语境 = 结算（交易完成）。托福阅读中三种义项都可能考到。"
+    },
+    {
+      "word": "element",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈelɪmənt/",
+      "subgroup": "schwa",
+      "meaning": "n. 元素；要素；成分；（复数）基础知识",
+      "etymology": "拉丁语 elementum，词源不确定，可能与字母表的教学有关（L-M-N 是字母表中间三个字母的读音）。古罗马人用它表示「基本组成部分」。无确切的词根拆分，但与 elementary（基本的）同源。",
+      "roots": [
+        {"part": "element", "meaning": "基本组成部分（不可再拆分）"}
+      ],
+      "phonetics": "重音在首音节 EL-，e 在闭音节读 /e/。但末音节 -ment 的 e 非重读弱化为 schwa /ə/。一个词里 e 出现三次：/e/（首）、/ɪ/（中）、/ə/（末）——字母 E 三种弱化梯度的活教材。",
+      "tip": "element 这个词本身就是字母 E 发音规律的缩影：首音节 E 读 /e/、中间 e 读 /ɪ/、末尾 e 读 /ə/。记住这个词，就记住了 E 的三级弱化阶梯。",
+      "examples": [
+        {
+          "en": "Oxygen is the most abundant element in the Earth's crust.",
+          "zh": "氧是地壳中含量最丰富的元素。",
+          "source": "Chemistry Textbook"
+        },
+        {
+          "en": "Trust is a key element of any successful relationship.",
+          "zh": "信任是任何成功关系的关键要素。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "component", "ipa": "/kəmˈpoʊnənt/", "gloss": "组成部分", "note": "更技术性，强调机械/系统的零件；element 更抽象"},
+        {"w": "factor", "ipa": "/ˈfæktər/", "gloss": "因素", "note": "强调对结果有影响的条件；element 强调构成整体的基本单位"}
+      ],
+      "antonyms": [
+        {"w": "whole", "ipa": "/hoʊl/", "gloss": "整体"}
+      ],
+      "nuance": "element 强调「最基本的、不可再分的组成单位」，带有科学或哲学色彩。component 偏向具体的零件/组件。factor 偏向因果关系中的变量。ingredient 专指配方中的原料。"
+    },
+    {
+      "word": "subsequent",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈsʌbsɪkwənt/",
+      "subgroup": "schwa",
+      "meaning": "adj. 随后的，后来的",
+      "etymology": "拉丁语 subsequēns = sub-（在下面、紧跟着）+ sequī（跟随），字面义「紧跟在后面的」。同根词：sequence（顺序）、consequence（后果，一起跟来的）、prosecute（往前追 → 起诉）。",
+      "roots": [
+        {"part": "sub-", "meaning": "在下面，紧接着"},
+        {"part": "sequ", "meaning": "跟随（同 sequence, consequence, prosecute）"},
+        {"part": "-ent", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在首音节 SUB-，末音节 -quent 的 e 非重读弱化为 schwa /ə/。中间 -se- 也弱化为 /sɪ/。-ent 后缀在此读 /ənt/，和 competent、prevalent 中的 -ent 一样。",
+      "tip": "subsequent = sub(紧跟) + sequ(跟随) → 紧跟在后面的。和 sequence（顺序）同根——subsequent events 就是按时间顺序排在后面的事件。",
+      "examples": [
+        {
+          "en": "The initial experiment failed, but subsequent attempts proved successful.",
+          "zh": "最初的实验失败了，但随后的尝试证明了成功。",
+          "source": "造句"
+        },
+        {
+          "en": "Subsequent research confirmed the findings of the original study.",
+          "zh": "后续研究证实了最初那项研究的发现。",
+          "source": "Nature Journal"
+        }
+      ],
+      "synonyms": [
+        {"w": "ensuing", "ipa": "/ɪnˈsuːɪŋ/", "gloss": "接下来的", "note": "强调紧接着发生，时间间隔更短；subsequent 可以隔较长时间"},
+        {"w": "following", "ipa": "/ˈfɒloʊɪŋ/", "gloss": "随后的", "note": "最口语化的说法，subsequent 更正式学术"}
+      ],
+      "antonyms": [
+        {"w": "preceding", "ipa": "/prɪˈsiːdɪŋ/", "gloss": "在前的，先前的"},
+        {"w": "prior", "ipa": "/ˈpraɪər/", "gloss": "先前的"}
+      ],
+      "nuance": "subsequent 是学术写作中「之后的」首选词，比 following/later 更正式。搭配 subsequent to = after（介词用法）。ensuing 暗示更紧密的时间连接（the ensuing chaos = 随之而来的混乱）。"
+    },
+    {
+      "word": "advocate",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈædvəkeɪt/",
+      "subgroup": "silent",
+      "meaning": "v. 倡导，主张  n. /ˈædvəkət/ 倡导者，拥护者；律师",
+      "etymology": "拉丁语 advocātus = ad-（朝向）+ vocāre（叫喊、召唤），字面义「被召唤来帮忙的人」→ 法庭上被请来为你辩护的人 → 律师/拥护者。同根词：vocation（天职，被召唤去做的事）、vocal（声音的）、provoke（激怒，往前叫嚣）。",
+      "roots": [
+        {"part": "ad-", "meaning": "朝向"},
+        {"part": "voc", "meaning": "叫喊、声音（同 vocal, vocation, provoke）"},
+        {"part": "-ate", "meaning": "动词/名词后缀"}
+      ],
+      "phonetics": "重音在首音节 AD-，词尾 -ate 中的 e 不发音（silent e），但它作为信号让前面的 a 读长音 /eɪ/。动词 -ate 读 /eɪt/，名词 -ate 读 /ət/——这种区分在 -ate 结尾的多音节词中非常普遍。",
+      "tip": "advocate = ad(朝向) + voc(喊) → 朝着公众大声呼吁 = 倡导。名词义「律师」保留了「被叫来帮你说话的人」的原始画面。动词读 /eɪt/，名词读 /ət/。",
+      "examples": [
+        {
+          "en": "Environmental groups advocate for stricter pollution controls.",
+          "zh": "环保团体倡导更严格的污染管控措施。",
+          "source": "造句"
+        },
+        {
+          "en": "She has been a tireless advocate for children's rights throughout her career.",
+          "zh": "她在整个职业生涯中一直是儿童权利的不懈倡导者。",
+          "source": "UNICEF Report"
+        }
+      ],
+      "synonyms": [
+        {"w": "champion", "ipa": "/ˈtʃæmpiən/", "gloss": "捍卫，支持", "note": "更有战斗色彩，暗示为某事业而战"},
+        {"w": "promote", "ipa": "/prəˈmoʊt/", "gloss": "推广，促进", "note": "更商业化，advocate 更偏理念和政策"}
+      ],
+      "antonyms": [
+        {"w": "oppose", "ipa": "/əˈpoʊz/", "gloss": "反对"}
+      ],
+      "nuance": "advocate 是最正式的「倡导」，常用于政策、权利、理念层面。champion 更激烈（为正义而战）。promote 更温和实际（推广产品/理念）。注意 advocate 可跟 for 或直接跟宾语。"
+    },
+    {
+      "word": "demonstrate",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈdemənstreɪt/",
+      "subgroup": "silent",
+      "meaning": "v. 展示，示范；证明；游行抗议",
+      "etymology": "拉丁语 dēmonstrāre = de-（完全地）+ monstrāre（展示），monstrāre 来自 monstrum（展示物、怪物——因为怪物是「被展示出来警示世人的征兆」）。同根词：monster（怪物）、monitor（监视器，展示信息的东西）。",
+      "roots": [
+        {"part": "de-", "meaning": "完全地，强调"},
+        {"part": "monstr", "meaning": "展示（同 monster, monitor）"},
+        {"part": "-ate", "meaning": "动词后缀"}
+      ],
+      "phonetics": "重音在首音节 DEM-，词尾 -ate 中的 e 不发音（silent e），但使前面的 a 读长音 /eɪ/。中间音节 -on- 非重读读 /ən/。首音节的 e 在闭音节读 /e/。",
+      "tip": "demonstrate 和 monster 同根——怪物就是「被摆出来展示」给世人看的东西。demonstrate 就是把证据/技能「完全展示出来」。",
+      "examples": [
+        {
+          "en": "The professor demonstrated the chemical reaction step by step.",
+          "zh": "教授逐步演示了这个化学反应。",
+          "source": "造句"
+        },
+        {
+          "en": "Thousands of citizens demonstrated against the proposed tax increase.",
+          "zh": "数千市民上街游行抗议拟议的加税方案。",
+          "source": "BBC News"
+        }
+      ],
+      "synonyms": [
+        {"w": "illustrate", "ipa": "/ˈɪləstreɪt/", "gloss": "说明，阐明", "note": "偏向用例子来解释，demonstrate 偏向用行动来展示"},
+        {"w": "prove", "ipa": "/pruːv/", "gloss": "证明", "note": "更直接，强调逻辑推理的结论；demonstrate 可含展示过程"}
+      ],
+      "antonyms": [
+        {"w": "conceal", "ipa": "/kənˈsiːl/", "gloss": "隐瞒"}
+      ],
+      "nuance": "demonstrate 三个义项要区分语境：科学语境 = 展示/证明（demonstrate a theory）；教学语境 = 示范（demonstrate how to）；政治语境 = 游行（demonstrate against）。托福阅读中前两个义项最常考。"
+    },
+    {
+      "word": "speculate",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈspekjuleɪt/",
+      "subgroup": "silent",
+      "meaning": "v. 推测，猜测；投机（金融）",
+      "etymology": "拉丁语 speculārī = specula（瞭望塔）+ -ārī（动词后缀），specula 来自 specere（看）。字面义「从高处远望」→ 对看不清的远方做猜测。同根词：spectacle（景象）、inspect（检查，往里看）、suspect（怀疑，从下面偷看）。",
+      "roots": [
+        {"part": "spec", "meaning": "看（同 spectacle, inspect, suspect, respect）"},
+        {"part": "-ul", "meaning": "小词后缀"},
+        {"part": "-ate", "meaning": "动词后缀"}
+      ],
+      "phonetics": "重音在首音节 SPEC-，词尾 -ate 中的 e 不发音（silent e），使 a 读长音 /eɪ/。首音节 e 在闭音节 sp-e-c 中读 /e/。注意 -cu- 读 /kjuː/，不是 /ku/。",
+      "tip": "speculate = spec(看) → 从瞭望塔远眺，看不清楚就只能猜 → 推测。金融里的「投机」也是「看不清市场走向就赌一把」。所有 spec- 词都和「看」有关。",
+      "examples": [
+        {
+          "en": "Scientists speculate that the universe may contain billions of habitable planets.",
+          "zh": "科学家推测宇宙中可能有数十亿颗宜居星球。",
+          "source": "NASA"
+        },
+        {
+          "en": "Investors who speculate in cryptocurrency often face extreme volatility.",
+          "zh": "投机加密货币的投资者常面临极端的波动。",
+          "source": "Financial Times"
+        }
+      ],
+      "synonyms": [
+        {"w": "conjecture", "ipa": "/kənˈdʒektʃər/", "gloss": "推测，猜测", "note": "更书面正式，常见于学术语境；speculate 更通用"},
+        {"w": "hypothesize", "ipa": "/haɪˈpɒθəsaɪz/", "gloss": "假设", "note": "科学语境专用，比 speculate 更严谨，有待验证"}
+      ],
+      "antonyms": [
+        {"w": "verify", "ipa": "/ˈverɪfaɪ/", "gloss": "核实，证实"}
+      ],
+      "nuance": "speculate 暗示缺乏充分证据的推测，不一定负面。conjecture 更学术。hypothesize 限定在科学方法框架内。金融义的 speculate 含风险色彩（投机 vs 投资）。托福阅读中常考「推测」义。"
+    },
+    {
+      "word": "inadequate",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/ɪnˈædɪkwət/",
+      "subgroup": "silent",
+      "meaning": "adj. 不充分的，不够的；不能胜任的",
+      "etymology": "in-（不）+ adequate。adequate 来自拉丁语 adaequātus = ad-（朝向）+ aequāre（使相等），字面义「使达到相等水平的」→ 足够的。加 in- 否定 → 不够的。同根词：equal（相等的）、equation（方程式）、equivalent（等价的）。",
+      "roots": [
+        {"part": "in-", "meaning": "不，否定"},
+        {"part": "ad-", "meaning": "朝向"},
+        {"part": "equ (aequus)", "meaning": "相等的（同 equal, equation, equivalent）"},
+        {"part": "-ate", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在第二音节 -AD-，词尾 -ate 中的 e 不发音（silent e）。注意这里的 silent e 并没有使前面元音变长——-quate 读 /kwət/ 不是 /kweɪt/。这是因为 -ate 在四音节以上的形容词中通常读 /ət/ 而非 /eɪt/。",
+      "tip": "inadequate = in(不) + adequate(足够的)。adequate 的核心是 equ(相等)——达到标准水平就是 adequate，没达到就是 inadequate。和 equivalent 共享 equ- 词根。",
+      "examples": [
+        {
+          "en": "The funding was inadequate to cover the cost of the entire project.",
+          "zh": "资金不足以覆盖整个项目的成本。",
+          "source": "造句"
+        },
+        {
+          "en": "Inadequate sleep has been linked to a wide range of health problems.",
+          "zh": "睡眠不足与多种健康问题有关。",
+          "source": "Harvard Health"
+        }
+      ],
+      "synonyms": [
+        {"w": "insufficient", "ipa": "/ˌɪnsəˈfɪʃənt/", "gloss": "不充分的", "note": "更偏数量上的不足；inadequate 兼顾质量和数量"},
+        {"w": "deficient", "ipa": "/dɪˈfɪʃənt/", "gloss": "缺乏的，不足的", "note": "强调某种必要成分的缺失，常用于医学（vitamin deficient）"}
+      ],
+      "antonyms": [
+        {"w": "adequate", "ipa": "/ˈædɪkwət/", "gloss": "足够的，适当的"},
+        {"w": "sufficient", "ipa": "/səˈfɪʃənt/", "gloss": "充足的"}
+      ],
+      "nuance": "inadequate 语气比 insufficient 稍重，可用于评价人（feel inadequate = 感到自己不够好），带情感色彩。insufficient 更客观冷静。deficient 最技术化，常见于医学/营养学语境。"
+    },
+    {
+      "word": "subordinate",
+      "hl": "e",
+      "levels": ["六级", "托福"],
+      "ipa": "/səˈbɔːrdɪnət/",
+      "subgroup": "silent",
+      "meaning": "adj. 下级的，从属的  n. 下属  v. /səˈbɔːrdɪneɪt/ 使从属于",
+      "etymology": "中世纪拉丁语 subordinātus = sub-（在下面）+ ōrdināre（排序），字面义「被排在下面的」。同根词：order（顺序）、ordinary（普通的，在正常序列中的）、coordinate（协调，一起排序）。",
+      "roots": [
+        {"part": "sub-", "meaning": "在下面"},
+        {"part": "ordin", "meaning": "排序、等级（同 order, ordinary, coordinate）"},
+        {"part": "-ate", "meaning": "形容词/动词后缀"}
+      ],
+      "phonetics": "重音在第二音节 -BOR-，词尾 -ate 中的 e 不发音（silent e）。形容词/名词读 /nət/，动词读 /neɪt/——和 advocate、deliberate 一样遵循「多音节词中 -ate 形容词读 /ət/、动词读 /eɪt/」的规律。",
+      "tip": "subordinate = sub(下面) + ordin(排序) → 在等级序列中被排在下面的 → 下属。和 coordinate 对比：co-(一起) + ordin(排序) → 排在同一级别 → 协调/平级。",
+      "examples": [
+        {
+          "en": "A good leader listens to the concerns of their subordinates.",
+          "zh": "一个好的领导者会倾听下属的意见。",
+          "source": "造句"
+        },
+        {
+          "en": "Personal interests should be subordinated to the goals of the team.",
+          "zh": "个人利益应服从于团队目标。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "inferior", "ipa": "/ɪnˈfɪriər/", "gloss": "低级的，下等的", "note": "语气更负面，暗示质量或地位更差；subordinate 是中性的等级描述"},
+        {"w": "secondary", "ipa": "/ˈsekənderi/", "gloss": "次要的", "note": "强调重要性排第二，不一定有上下级关系"}
+      ],
+      "antonyms": [
+        {"w": "superior", "ipa": "/suːˈpɪriər/", "gloss": "上级的，更高的"},
+        {"w": "dominant", "ipa": "/ˈdɒmɪnənt/", "gloss": "主导的"}
+      ],
+      "nuance": "subordinate 是正式的等级关系描述词，中性无贬义（你的 subordinate 就是你管的人）。inferior 带负面判断（更差）。secondary 只排重要性先后，不涉及权力关系。语法术语 subordinate clause = 从句（从属于主句）。"
+    }
+  ]
+}

@@ -1,0 +1,1146 @@
+{
+  "id": "letter-o",
+  "combo": "O",
+  "title": "字母 O 的全部发音",
+  "sound": "/ɒ/ /əʊ/ /ʌ/ /uː/ /ʊ/ /ɔː/ /ə/",
+  "subtitle": "英语最善变的元音字母——O 的七张面孔",
+  "intro": "O 是英语 26 个字母里发音最多变的元音字母——同一个字母，竟有七种完全不同的读法。掌握规律后并不可怕：开音节（o_e/go/so）读 /əʊ/，闭音节（hot/stop/job）读 /ɒ/（美式常归为 /ɑː/），o 跟 r 组合读 /ɔːr/（or/north/born），在 m/n/v/th 前面的 o 常变成 /ʌ/（love/come/son/month——这是中国学生最容易读错的一组），-ove 在 move/prove/approve 里读 /uː/，wolf/woman 里的 o 读短促的 /ʊ/（仅三五个词，硬记即可），非重读音节的 o 弱化为 /ə/（doctor/category/testimony）。本页按七种读音分组，每组给出发音规则、词源拆解和记忆钩子，一次性攻克字母 O 的全部面孔。",
+  "subgroups": [
+    {
+      "key": "hot",
+      "tag": "/ɒ/",
+      "label": "O = /ɒ/ (hot)",
+      "desc": "闭音节中的 o 读短元音 /ɒ/（英式），美式多发成更开的 /ɑː/。判断标准：o 后面紧跟辅音且没有哑 e（hot、stop、job、lot）。六级/托福高频词 obligation、prominent、commodity 都属于这一组——重读音节里的 o 被辅音「关住」，所以读短音。"
+    },
+    {
+      "key": "go",
+      "tag": "/əʊ/",
+      "label": "O = /əʊ/ (go)",
+      "desc": "开音节或 o_e 拼写模式中，o 读长音 /əʊ/（美式 /oʊ/）。典型模式：词尾单独的 o（go/no/so）、o + 辅音 + 哑e（compose/provoke/erode）、以及双音节以上词中开音节里的 o（episode/postpone）。嘴型从圆唇 /ə/ 滑向收拢 /ʊ/，一口气完成。"
+    },
+    {
+      "key": "son",
+      "tag": "/ʌ/",
+      "label": "O = /ʌ/ (son)",
+      "desc": "最违反直觉的读法：o 写成 o，却读 /ʌ/（和 cup/bus 的元音一样）。这种现象主要发生在 m、n、v、th 前面——come/some/love/month/son/money/front/wonder/comfort/govern。历史原因：中古英语手抄员为避免 u 和 m/n/v 的竖笔画混在一起，把 u 改写成 o，发音却没变。记忆口诀：「m/n/v/th 前的 o，嘴松开读成 ʌ」。"
+    },
+    {
+      "key": "do",
+      "tag": "/uː/",
+      "label": "O = /uː/ (do/move)",
+      "desc": "少数词中 o 读 /uː/，集中在 -ove（move/prove/approve/improve/remove）和 do/to/who/two/lose 等常用词。这批词的共同特征是来自古英语或古法语中本就带 /uː/ 的词根，拼写被归并成 o 但发音保留了。数量不多，逐个击破即可。"
+    },
+    {
+      "key": "wolf",
+      "tag": "/ʊ/",
+      "label": "O = /ʊ/ (wolf)",
+      "desc": "极少数词中 o 读短促的 /ʊ/，全英语只有 wolf、woman、bosom 等寥寥几个。这是古英语短元音 /u/ 的残留——拼写从 u 改为 o（同「son 组」的手抄员改写），但这几个词的发音停在了 /ʊ/ 而没有进一步移到 /ʌ/。数量极少，当特例记忆。"
+    },
+    {
+      "key": "or",
+      "tag": "/ɔː/",
+      "label": "O = /ɔːr/ (or/north)",
+      "desc": "o + r 组合几乎总读 /ɔːr/（美式带 r 色彩 /ɔːr/，英式 /ɔː/）：or/north/born/sport/proportion/reinforce/distortion/incorporate。这是最稳定的 o 发音规则之一——只要看到 or，就可以直接读 /ɔːr/，极少例外（work/word/worm 中 or 读 /ɜːr/，但那是 w 的影响）。"
+    },
+    {
+      "key": "schwa",
+      "tag": "/ə/",
+      "label": "O = /ə/ (doctor)",
+      "desc": "非重读音节中的 o 自然弱化为央元音 /ə/，这是英语「重读清楚、非重读模糊」的普遍规律。doctor 的第二个 o、category 的 -gory、testimony 的 -mony、memorial 的第一个 o——都是 /ə/。规则简单：不在重读音节的 o，几乎都读 /ə/。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "同 -ove 不同音：/uːv/ vs /ʌv/ vs /əʊv/",
+      "words": ["prove /pruːv/", "improve /ɪmˈpruːv/", "remove /rɪˈmuːv/", "love /lʌv/", "above /əˈbʌv/", "stove /stəʊv/", "wove /wəʊv/"]
+    },
+    {
+      "label": "-ost 两读对比：/əʊst/ vs /ɒst/",
+      "words": ["post /pəʊst/", "host /həʊst/", "most /məʊst/", "cost /kɒst/", "lost /lɒst/", "frost /frɒst/"]
+    },
+    {
+      "label": "-on 两读对比：/ʌn/ vs /ɒn/",
+      "words": ["son /sʌn/", "won /wʌn/", "front /frʌnt/", "month /mʌnθ/", "gone /ɡɒn/", "bond /bɒnd/", "fond /fɒnd/"]
+    },
+    {
+      "label": "-or 家族 /ɔːr/",
+      "words": ["proportion", "distortion", "reinforce", "incorporate", "transport", "import", "escort"]
+    }
+  ],
+  "words": [
+    {
+      "word": "obsolete",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˌɒbsəˈliːt/",
+      "subgroup": "hot",
+      "meaning": "adj. 过时的，淘汰的",
+      "etymology": "拉丁语 obsoletus「磨损的、陈旧的」，由 ob-（朝向）+ solere（习惯）构成——「习惯到磨损」→「用旧了」→「过时的」。与 sole（唯一的，原义「惯常的」）同根。",
+      "roots": [
+        {"part": "ob-", "meaning": "朝向、完全"},
+        {"part": "sol-", "meaning": "习惯（solere）"},
+        {"part": "-ete", "meaning": "过去分词后缀"}
+      ],
+      "phonetics": "第一个 o 在闭音节（ob-）中读 /ɒ/（美式 /ɑːb-/），重音在第三音节 -lete /liːt/。注意第二个 o 弱化为 /ə/。",
+      "tip": "「ob-淘汰」——被时代彻底（ob- = 完全）抛弃的东西就是 obsolete。想象一台老式 BP 机，彻底 obsolete。",
+      "examples": [
+        {
+          "en": "The factory's machinery had become obsolete and could no longer meet safety standards.",
+          "zh": "工厂的机器已经过时，无法再达到安全标准。",
+          "source": "造句"
+        },
+        {
+          "en": "Will artificial intelligence make certain professions obsolete?",
+          "zh": "人工智能会让某些职业变得过时吗？",
+          "source": "The Economist"
+        }
+      ],
+      "synonyms": [
+        {"w": "outdated", "ipa": "/ˌaʊtˈdeɪtɪd/", "gloss": "过时的", "note": "最日常的说法，语气比 obsolete 轻，outdated 的东西可能还能用，obsolete 暗示已完全淘汰"},
+        {"w": "antiquated", "ipa": "/ˈæntɪkweɪtɪd/", "gloss": "古老而过时的", "note": "强调年代久远，常带贬义，比 obsolete 更强调「老」"}
+      ],
+      "antonyms": [
+        {"w": "cutting-edge", "note": "最前沿的"},
+        {"w": "current", "note": "当前的、最新的"}
+      ],
+      "nuance": "obsolete 比 outdated 程度更重：outdated 的手机还能打电话，obsolete 的 BP 机已经完全无法使用。academic writing 中常用 obsolete 表示理论或方法被彻底取代。"
+    },
+    {
+      "word": "obligation",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˌɒblɪˈɡeɪʃn/",
+      "subgroup": "hot",
+      "meaning": "n. 义务，责任；债务",
+      "etymology": "拉丁语 obligare「捆绑、约束」，由 ob-（朝向）+ ligare（绑）构成——「被绑住去做的事」→「义务」。与 oblige（迫使）、ligament（韧带）、league（联盟）同根。",
+      "roots": [
+        {"part": "ob-", "meaning": "朝向"},
+        {"part": "lig-", "meaning": "绑（ligare）"},
+        {"part": "-ation", "meaning": "名词后缀"}
+      ],
+      "phonetics": "第一个 o 在闭音节（ob-）中读 /ɒ/（美式 /ɑː/），重音在第三音节 -ga- /ɡeɪ/。整词四音节：/ˌɒb-lɪ-ˈɡeɪ-ʃn/。",
+      "tip": "obligation = ob（完全）+ lig（绑）——被法律或道德「绑死」必须做的事。想象手腕被绳子 lig（绑住），被拉去履行义务。",
+      "examples": [
+        {
+          "en": "Citizens have an obligation to obey the law.",
+          "zh": "公民有义务遵守法律。",
+          "source": "造句"
+        },
+        {
+          "en": "The company failed to meet its financial obligations and filed for bankruptcy.",
+          "zh": "公司未能履行其财务义务，申请了破产。",
+          "source": "Financial Times"
+        }
+      ],
+      "synonyms": [
+        {"w": "duty", "ipa": "/ˈdjuːti/", "gloss": "责任，职责", "note": "更日常口语化，可以是自发的责任感，obligation 更强调外在约束力"},
+        {"w": "commitment", "ipa": "/kəˈmɪtmənt/", "gloss": "承诺，投入", "note": "强调自愿许下的承诺，obligation 则更侧重法律或道德层面的「不得不」"}
+      ],
+      "antonyms": [
+        {"w": "privilege", "note": "特权（可做可不做）"},
+        {"w": "option", "note": "选择（非强制）"}
+      ],
+      "nuance": "obligation 强调「被约束力绑定」（法律、合同、道德），duty 可以是自觉的（a sense of duty），responsibility 范围最广、语气最中性。托福写作中 obligation 常出现在法律和社会话题中。"
+    },
+    {
+      "word": "prominent",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈprɒmɪnənt/",
+      "subgroup": "hot",
+      "meaning": "adj. 突出的，显著的；著名的",
+      "etymology": "拉丁语 prominere「向前伸出」，由 pro-（向前）+ minere（突出）构成——「伸出来让人看见」→「显著的、著名的」。与 eminent（杰出的）、imminent（迫在眉睫的）同根。",
+      "roots": [
+        {"part": "pro-", "meaning": "向前"},
+        {"part": "min-", "meaning": "突出、伸出（minere）"},
+        {"part": "-ent", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "prom- 中的 o 在闭音节中读 /ɒ/（美式 /ɑː/），重音在第一音节。三音节：/ˈprɒ-mɪ-nənt/。",
+      "tip": "pro（向前）+ min（伸出）= 像山峰一样「凸出来」的人或事物——prominent。联想：一个 prominent 的人物就像一座 prominent 的山峰，远远就能看到。",
+      "examples": [
+        {
+          "en": "She played a prominent role in the civil rights movement.",
+          "zh": "她在民权运动中扮演了突出的角色。",
+          "source": "造句"
+        },
+        {
+          "en": "The most prominent feature of the landscape is the ancient volcano.",
+          "zh": "这片地貌最显著的特征是那座古火山。",
+          "source": "National Geographic"
+        }
+      ],
+      "synonyms": [
+        {"w": "eminent", "ipa": "/ˈemɪnənt/", "gloss": "杰出的，卓越的", "note": "强调地位或成就上的卓越，比 prominent 更书面、更正式"},
+        {"w": "conspicuous", "ipa": "/kənˈspɪkjuəs/", "gloss": "显眼的", "note": "强调视觉上「一眼就看到」，prominent 兼顾物理突出和声誉突出"}
+      ],
+      "antonyms": [
+        {"w": "obscure", "note": "不为人知的"},
+        {"w": "insignificant", "note": "无足轻重的"}
+      ],
+      "nuance": "prominent 一词两用：既可形容物理上的突出（prominent cheekbones 突出的颧骨），也可形容社会声誉上的「有名」（a prominent scientist）。eminent 只用于后者。"
+    },
+    {
+      "word": "commodity",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/kəˈmɒdəti/",
+      "subgroup": "hot",
+      "meaning": "n. 商品，货物；有价值的东西",
+      "etymology": "拉丁语 commoditas「方便、利益」，由 com-（共同）+ modus（方式、尺度）构成——「大家都方便用的东西」→「商品」。与 mode（模式）、accommodate（容纳）、modify（修改）同根。",
+      "roots": [
+        {"part": "com-", "meaning": "共同"},
+        {"part": "mod-", "meaning": "方式、尺度（modus）"},
+        {"part": "-ity", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 -mod-，此处 o 在闭音节中读 /ɒ/（美式 /ɑː/）。四音节：/kə-ˈmɒ-də-ti/。第一个 o 弱化为 /ə/。",
+      "tip": "commodity 里有 mod（模式）——可以被标准化批量交易的东西就是 commodity。石油、黄金、小麦都是 commodity，因为可以按统一标准（mode）买卖。",
+      "examples": [
+        {
+          "en": "Oil is one of the most traded commodities in the world.",
+          "zh": "石油是世界上交易量最大的商品之一。",
+          "source": "造句"
+        },
+        {
+          "en": "In the attention economy, trust has become the scarcest commodity.",
+          "zh": "在注意力经济中，信任已成为最稀缺的商品。",
+          "source": "Harvard Business Review"
+        }
+      ],
+      "synonyms": [
+        {"w": "goods", "ipa": "/ɡʊdz/", "gloss": "商品，货物", "note": "最日常的「商品」，泛指可以出售的物品，commodity 特指可标准化的大宗商品"},
+        {"w": "merchandise", "ipa": "/ˈmɜːrtʃəndaɪz/", "gloss": "商品，货物", "note": "偏零售端，强调可以陈列出售的货物"}
+      ],
+      "antonyms": [
+        {"w": "luxury", "note": "奢侈品（非标准化，个性化定价）"}
+      ],
+      "nuance": "commodity 在经济学语境中特指大宗商品（石油、小麦、铜），强调可替代性和标准化。「Talent is not a commodity」这类用法是比喻——暗示人才不可标准化交易。托福阅读经济类文章高频词。"
+    },
+    {
+      "word": "hypothesis",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/haɪˈpɒθəsɪs/",
+      "subgroup": "hot",
+      "meaning": "n. 假说，假设",
+      "etymology": "希腊语 hypothesis「基础、前提」，由 hypo-（在下面）+ thesis（放置）构成——「放在下面的东西」→「作为论证基础的假设」。与 thesis（论文）、synthesis（综合）、hypothetical（假设的）同根。",
+      "roots": [
+        {"part": "hypo-", "meaning": "在下面"},
+        {"part": "thes-/thet-", "meaning": "放置（tithenai）"},
+        {"part": "-is", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 -poth-，其中 o 读 /ɒ/（美式 /ɑː/）。四音节：/haɪ-ˈpɒ-θə-sɪs/。注意 th 读 /θ/ 而非 /ð/。复数是 hypotheses /haɪˈpɒθəsiːz/。",
+      "tip": "hypo（下面）+ thesis（放置）= 放在论证「下面」的基础 = 假设。搞科研先建 hypothesis，再去验证。联想：hypothesis 是学术论文（thesis）「底下」的地基。",
+      "examples": [
+        {
+          "en": "The researcher tested the hypothesis that sleep deprivation affects memory.",
+          "zh": "研究者验证了睡眠不足影响记忆的假说。",
+          "source": "造句"
+        },
+        {
+          "en": "Darwin's hypothesis of natural selection was initially met with fierce opposition.",
+          "zh": "达尔文的自然选择假说最初遭到了猛烈反对。",
+          "source": "On the Origin of Species 相关评论"
+        }
+      ],
+      "synonyms": [
+        {"w": "theory", "ipa": "/ˈθɪəri/", "gloss": "理论", "note": "theory 已经过大量验证，hypothesis 还处于待验证阶段，学术写作中两者不可混用"},
+        {"w": "assumption", "ipa": "/əˈsʌmpʃn/", "gloss": "假定，设想", "note": "assumption 更日常，可以是未经验证的默认认知，hypothesis 特指科学方法中的正式假设"}
+      ],
+      "antonyms": [
+        {"w": "fact", "note": "事实（已被证实）"},
+        {"w": "conclusion", "note": "结论（论证完成后的结果）"}
+      ],
+      "nuance": "学术写作中 hypothesis 是 scientific method 的核心概念：observation → hypothesis → experiment → conclusion。托福学术听力和阅读中极高频。复数 hypotheses 的发音是易错点。"
+    },
+    {
+      "word": "compose",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/kəmˈpəʊz/",
+      "subgroup": "go",
+      "meaning": "v. 组成，构成；作曲；使镇定",
+      "etymology": "拉丁语 componere「放在一起」，由 com-（共同）+ ponere（放置）构成，经古法语 composer 进入英语。与 component（组件）、composition（作文；作曲）、compost（堆肥）同根。",
+      "roots": [
+        {"part": "com-", "meaning": "共同、一起"},
+        {"part": "pos-/pon-", "meaning": "放置（ponere）"},
+        {"part": "-e", "meaning": "词尾哑 e"}
+      ],
+      "phonetics": "第二个 o 在 o_e 模式（compose）中读 /əʊ/——词尾哑 e 把 o 拉成长音。重音在第二音节。第一个 o（com-）弱化为 /ə/。美式 /kəmˈpoʊz/。",
+      "tip": "com（一起）+ pose（放）= 把东西放在一起 = 组成。作曲 = 把音符放在一起；compose yourself = 把自己「放回原位」= 镇定下来。",
+      "examples": [
+        {
+          "en": "Water is composed of hydrogen and oxygen.",
+          "zh": "水由氢和氧组成。",
+          "source": "造句"
+        },
+        {
+          "en": "Mozart composed his first symphony at the age of eight.",
+          "zh": "莫扎特八岁时就创作了他的第一部交响曲。",
+          "source": "音乐史常识"
+        }
+      ],
+      "synonyms": [
+        {"w": "comprise", "ipa": "/kəmˈpraɪz/", "gloss": "包含，由...组成", "note": "comprise 强调「整体包含部分」（The team comprises ten members），compose 强调「部分组成整体」（Ten members compose the team）"},
+        {"w": "constitute", "ipa": "/ˈkɒnstɪtjuːt/", "gloss": "构成，组成", "note": "更正式，常用于法律或制度语境"}
+      ],
+      "antonyms": [
+        {"w": "decompose", "note": "分解（de- = 反向）"},
+        {"w": "disassemble", "note": "拆卸"}
+      ],
+      "nuance": "compose 有三层常用义：① be composed of（由...组成，托福阅读最常见用法）；② 作曲（compose music）；③ compose oneself（使镇定）。三个义项都从「放在一起」引申而来。"
+    },
+    {
+      "word": "provoke",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/prəˈvəʊk/",
+      "subgroup": "go",
+      "meaning": "v. 激怒；挑衅；引发",
+      "etymology": "拉丁语 provocare「向前呼唤、挑战」，由 pro-（向前）+ vocare（叫喊）构成——「对着人叫喊挑衅」→「激怒」。与 vocal（声音的）、vocation（职业=被召唤去做的事）、evoke（唤起）、invoke（祈求）同根。",
+      "roots": [
+        {"part": "pro-", "meaning": "向前"},
+        {"part": "voc-/vok-", "meaning": "叫喊、声音（vocare）"},
+        {"part": "-e", "meaning": "词尾哑 e"}
+      ],
+      "phonetics": "-voke 属于 o_e 模式，o 读 /əʊ/。重音在第二音节。美式 /prəˈvoʊk/。注意第一个 o（pro-）弱化为 /ə/。",
+      "tip": "pro（朝人脸）+ voke（喊）= 对着人脸大喊 = 激怒。invoke（向神喊=祈求）、evoke（从心里喊出来=唤起回忆）、revoke（喊回来=撤销）——同根四兄弟。",
+      "examples": [
+        {
+          "en": "The controversial policy provoked widespread protests across the country.",
+          "zh": "这项有争议的政策在全国引发了大规模抗议。",
+          "source": "造句"
+        },
+        {
+          "en": "His silence, far from calming the situation, only provoked her further.",
+          "zh": "他的沉默非但没有缓和局面，反而更加激怒了她。",
+          "source": "Jane Austen 风格造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "irritate", "ipa": "/ˈɪrɪteɪt/", "gloss": "激怒，惹恼", "note": "程度比 provoke 轻，irritate 是让人烦躁，provoke 是故意挑衅引发强烈反应"},
+        {"w": "incite", "ipa": "/ɪnˈsaɪt/", "gloss": "煽动", "note": "强调煽动他人采取行动，比 provoke 更有目的性和策略性"}
+      ],
+      "antonyms": [
+        {"w": "appease", "note": "安抚，平息"},
+        {"w": "pacify", "note": "使平静"}
+      ],
+      "nuance": "provoke 有两层含义要区分：① 激怒某人（provoke someone = make them angry）；② 引发某事（provoke debate/reaction/controversy = cause it to happen）。托福写作中第二层含义更常考。"
+    },
+    {
+      "word": "erode",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ɪˈrəʊd/",
+      "subgroup": "go",
+      "meaning": "v. 侵蚀，腐蚀；逐渐削弱",
+      "etymology": "拉丁语 erodere「啃噬」，由 e-（向外）+ rodere（啃、咬）构成——「一口一口啃掉」→「侵蚀」。与 rodent（啮齿动物=啃咬动物）、corrode（腐蚀）同根。",
+      "roots": [
+        {"part": "e-", "meaning": "向外"},
+        {"part": "rod-", "meaning": "啃、咬（rodere）"},
+        {"part": "-e", "meaning": "词尾哑 e"}
+      ],
+      "phonetics": "-rode 属于 o_e 模式，o 读 /əʊ/。重音在第二音节。美式 /ɪˈroʊd/。",
+      "tip": "e（出去）+ rode（啃）= 一口口啃出去 = 侵蚀。想象老鼠（rodent）啃面包——一点点 erode 掉。大自然 erode 岩石，通胀 erode 购买力——都是慢慢啃没的过程。",
+      "examples": [
+        {
+          "en": "Ocean waves have eroded the cliffs into dramatic arches over millions of years.",
+          "zh": "数百万年来，海浪将悬崖侵蚀成了壮观的拱形。",
+          "source": "National Geographic"
+        },
+        {
+          "en": "Public trust in the institution has been steadily eroding.",
+          "zh": "公众对该机构的信任一直在持续流失。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "corrode", "ipa": "/kəˈrəʊd/", "gloss": "腐蚀", "note": "corrode 强调化学腐蚀（金属生锈），erode 强调物理侵蚀（风化、水蚀）或比喻性削弱"},
+        {"w": "deteriorate", "ipa": "/dɪˈtɪəriəreɪt/", "gloss": "恶化", "note": "强调整体质量下降，erode 强调逐渐被外力削减"}
+      ],
+      "antonyms": [
+        {"w": "build up", "note": "积累、增强"},
+        {"w": "fortify", "note": "加固"}
+      ],
+      "nuance": "erode 在托福中有两种高频用法：① 地质学——soil erosion（水土流失）、coastal erosion；② 比喻义——erode confidence/trust/support（逐渐削弱信心/信任/支持）。两者共同点是「缓慢、持续、不可逆」。"
+    },
+    {
+      "word": "episode",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈepɪsəʊd/",
+      "subgroup": "go",
+      "meaning": "n. （电视剧的）一集；一段经历；发作",
+      "etymology": "希腊语 epeisodion「插入的部分」，由 epi-（在...之上）+ eisodos（进入=eis 进 + hodos 路）构成——「穿插进来的段落」→ 戏剧中幕间插曲→ 连续剧的一集→ 人生中的一个插曲。",
+      "roots": [
+        {"part": "epi-", "meaning": "在...之上、附加"},
+        {"part": "eis-", "meaning": "进入"},
+        {"part": "hod-", "meaning": "路（hodos）"}
+      ],
+      "phonetics": "最后的 -sode 中 o 读 /əʊ/（o_e 模式），虽然 d 不是典型的哑 e 前辅音，但 episode 的发音遵循 o_e 拉长规则。重音在第一音节 ep-。美式 /ˈepɪsoʊd/。",
+      "tip": "epi（穿插）+ sode（进入的路）= 穿插进来的一段 = 一集/一段经历。追剧时一集一集看的就是 episode。人生中那些特别的「插曲」也是 episode。",
+      "examples": [
+        {
+          "en": "The final episode of the series attracted 45 million viewers.",
+          "zh": "该剧的大结局吸引了四千五百万观众。",
+          "source": "造句"
+        },
+        {
+          "en": "She described the incident as a painful episode in her career that ultimately made her stronger.",
+          "zh": "她把那次事件描述为职业生涯中一段痛苦的经历，但最终让她变得更强了。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "incident", "ipa": "/ˈɪnsɪdənt/", "gloss": "事件", "note": "侧重突发事件，通常有负面色彩（a violent incident），episode 更中性"},
+        {"w": "installment", "ipa": "/ɪnˈstɔːlmənt/", "gloss": "（连载的）一期", "note": "专指出版物或影视的一期/一集，episode 范围更广"}
+      ],
+      "antonyms": [],
+      "nuance": "episode 在学术和医学语境中有特殊用法：a depressive episode（一次抑郁发作）、an episode of tachycardia（一次心动过速发作）。这个义项在托福听力的健康话题中偶尔出现。"
+    },
+    {
+      "word": "postpone",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/pəʊstˈpəʊn/",
+      "subgroup": "go",
+      "meaning": "v. 推迟，延期",
+      "etymology": "拉丁语 postponere「放到后面」，由 post-（在...之后）+ ponere（放置）构成——「往后放」→「推迟」。与 compose（放在一起）、position（位置=被放的地方）、deposit（存放）同根。",
+      "roots": [
+        {"part": "post-", "meaning": "在...之后"},
+        {"part": "pon-/pos-", "meaning": "放置（ponere）"},
+        {"part": "-e", "meaning": "词尾哑 e"}
+      ],
+      "phonetics": "这个词两个 o 都读 /əʊ/：post- 中的 o 读 /əʊ/，-pone 的 o_e 也读 /əʊ/。美式 /poʊstˈpoʊn/。双 /əʊ/ 是这个词的发音特色。",
+      "tip": "post（之后）+ pone（放）= 放到以后 = 推迟。两个 o 都读 /əʊ/，发音本身就像在说「欧——欧——」，像在犹豫要不要推迟。",
+      "examples": [
+        {
+          "en": "The match was postponed due to heavy rain.",
+          "zh": "比赛因大雨被推迟。",
+          "source": "造句"
+        },
+        {
+          "en": "You can postpone the decision, but you cannot postpone the consequences of not deciding.",
+          "zh": "你可以推迟决定，但无法推迟不做决定的后果。",
+          "source": "改编自 Napoleon Hill"
+        }
+      ],
+      "synonyms": [
+        {"w": "defer", "ipa": "/dɪˈfɜːr/", "gloss": "推迟，延缓", "note": "更正式，常用于法律和行政语境（defer payment 延期付款），postpone 更通用"},
+        {"w": "delay", "ipa": "/dɪˈleɪ/", "gloss": "延迟", "note": "delay 可以是被动的（航班因天气 delay），postpone 是主动决定推迟"}
+      ],
+      "antonyms": [
+        {"w": "advance", "note": "提前"},
+        {"w": "expedite", "note": "加速推进"}
+      ],
+      "nuance": "postpone 强调主动、有意识地把计划推迟到未来某个时间。delay 更广泛，可以是被动导致的延迟。put off 是 postpone 的非正式替代：Don't put it off any longer = Don't postpone it。"
+    },
+    {
+      "word": "accomplish",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/əˈkʌmplɪʃ/",
+      "subgroup": "son",
+      "meaning": "v. 完成，实现",
+      "etymology": "古法语 acomplir「完成」，由拉丁语 ad-（朝向）+ complere（填满）构成——「填满到完整」→「完成」。与 complete（完成）、complement（补充）、comply（遵从=把要求填满）同根。",
+      "roots": [
+        {"part": "ac- (ad-)", "meaning": "朝向"},
+        {"part": "com-", "meaning": "完全"},
+        {"part": "pl-", "meaning": "填满（plere）"},
+        {"part": "-ish", "meaning": "动词后缀"}
+      ],
+      "phonetics": "-com- 中的 o 在 m 前面读 /ʌ/，符合「m/n 前的 o 读 /ʌ/」规则。重音在第二音节。美式 /əˈkʌmplɪʃ/。",
+      "tip": "accomplish = 把目标「填满」到完成。和 complete 同根（都有 pl- = 填满），但 accomplish 更强调克服困难后的成就感。accomplish a mission 听起来比 complete a task 更有份量。",
+      "examples": [
+        {
+          "en": "She accomplished what many thought was impossible — climbing Everest alone.",
+          "zh": "她完成了许多人认为不可能的事——独自攀登珠穆朗玛峰。",
+          "source": "造句"
+        },
+        {
+          "en": "What do you hope to accomplish by the end of this year?",
+          "zh": "你希望在今年年底前完成什么目标？",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "achieve", "ipa": "/əˈtʃiːv/", "gloss": "达成，取得", "note": "achieve 侧重取得成果或目标（achieve success），accomplish 侧重完成具体任务或使命"},
+        {"w": "fulfill", "ipa": "/fʊlˈfɪl/", "gloss": "实现，履行", "note": "fulfill 强调实现承诺、梦想或期望（fulfill a promise），accomplish 强调完成难度较大的任务"}
+      ],
+      "antonyms": [
+        {"w": "fail", "note": "失败"},
+        {"w": "abandon", "note": "放弃"}
+      ],
+      "nuance": "accomplish 比 complete 情感色彩更强：accomplish 暗示任务有难度、完成者有能力，complete 只是中性地表示「做完」。托福写作中 accomplish 是 achieve 的高级替换词。"
+    },
+    {
+      "word": "comfort",
+      "hl": "o",
+      "levels": ["六级"],
+      "ipa": "/ˈkʌmfərt/",
+      "subgroup": "son",
+      "meaning": "n. 舒适，安慰  v. 安慰",
+      "etymology": "拉丁语 confortare「加强」，由 con-（一起、加强）+ fortis（强壮的）构成——「使人变强」→「给予力量和安慰」→「舒适」。与 fort（堡垒）、fortify（加固）、effort（努力=向外使劲）同根。",
+      "roots": [
+        {"part": "com- (con-)", "meaning": "加强"},
+        {"part": "fort-", "meaning": "强壮的（fortis）"}
+      ],
+      "phonetics": "com- 中的 o 在 m 前读 /ʌ/，这是「m/n 前 o 读 /ʌ/」规则的典型例子。重音在第一音节。美式 /ˈkʌmfərt/。",
+      "tip": "comfort 的词源是「使人强壮」——真正的安慰不是说漂亮话，而是给对方力量。com（加强）+ fort（强壮）= 让人重新强壮起来。",
+      "examples": [
+        {
+          "en": "She found comfort in music during the most difficult period of her life.",
+          "zh": "在人生最艰难的时期，她在音乐中找到了慰藉。",
+          "source": "造句"
+        },
+        {
+          "en": "Step outside your comfort zone — that's where growth happens.",
+          "zh": "走出你的舒适区——成长就发生在那里。",
+          "source": "常见表达"
+        }
+      ],
+      "synonyms": [
+        {"w": "consolation", "ipa": "/ˌkɒnsəˈleɪʃn/", "gloss": "安慰", "note": "更正式更书面，consolation 强调在损失或悲伤后的安慰，comfort 范围更广"},
+        {"w": "solace", "ipa": "/ˈsɒləs/", "gloss": "安慰，慰藉", "note": "文学色彩更浓，强调在痛苦中寻得的精神慰藉"}
+      ],
+      "antonyms": [
+        {"w": "discomfort", "note": "不适"},
+        {"w": "distress", "note": "痛苦，忧虑"}
+      ],
+      "nuance": "comfort zone（舒适区）是英语高频表达。comfortable 的口语缩读是 /ˈkʌmftəbl/（三音节而非四音节），这是很多中国学生的发音盲区。"
+    },
+    {
+      "word": "monetary",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈmʌnɪtəri/",
+      "subgroup": "son",
+      "meaning": "adj. 货币的，金融的",
+      "etymology": "拉丁语 monetarius「铸币的」，由 moneta（铸币厂、货币）构成。Moneta 原是罗马女神 Juno 的别名——古罗马铸币厂就设在 Juno Moneta 神庙里，因此 moneta 兼有「神庙」和「货币」之义。money 也来自同一词根。",
+      "roots": [
+        {"part": "monet-", "meaning": "货币（moneta）"},
+        {"part": "-ary", "meaning": "形容词后缀，表示「与...有关的」"}
+      ],
+      "phonetics": "mon- 中的 o 在 n 前读 /ʌ/，符合「n 前的 o 读 /ʌ/」规则（同 money/month/monk）。重音在第一音节。美式 /ˈmʌnɪteri/。",
+      "tip": "monetary 和 money 同根——mon 前面的 o 都读 /ʌ/。monetary policy（货币政策）是新闻和托福经济类文章的标配词组。",
+      "examples": [
+        {
+          "en": "The central bank tightened monetary policy to combat inflation.",
+          "zh": "央行收紧了货币政策以对抗通胀。",
+          "source": "Financial Times"
+        },
+        {
+          "en": "The fine was small — the real cost was not monetary but reputational.",
+          "zh": "罚款金额不大——真正的代价不是金钱上的，而是声誉上的。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "financial", "ipa": "/faɪˈnænʃl/", "gloss": "金融的，财务的", "note": "financial 范围更广（含投资、会计等），monetary 专指与货币和货币政策相关的"},
+        {"w": "fiscal", "ipa": "/ˈfɪskl/", "gloss": "财政的", "note": "fiscal 指政府财政（fiscal year 财年），monetary 指货币体系——fiscal policy（财政政策） vs monetary policy（货币政策）是托福经济听力的经典对比"}
+      ],
+      "antonyms": [],
+      "nuance": "monetary 和 fiscal 的区别是托福经济类文章的常考点：monetary policy 由央行控制（调利率、印钞），fiscal policy 由政府控制（调税率、政府支出）。"
+    },
+    {
+      "word": "governance",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈɡʌvərnəns/",
+      "subgroup": "son",
+      "meaning": "n. 治理，管理；统治方式",
+      "etymology": "拉丁语 gubernare「掌舵、治理」（源自希腊语 kybernan「掌舵」），经古法语 governer 进入英语。与 govern（统治）、governor（州长）同根。cybernetics（控制论）也来自同一希腊语根。",
+      "roots": [
+        {"part": "govern-", "meaning": "治理、掌舵"},
+        {"part": "-ance", "meaning": "名词后缀，表示行为或状态"}
+      ],
+      "phonetics": "gov- 中的 o 在 v 前读 /ʌ/，符合「v 前的 o 读 /ʌ/」规则（同 love/glove/oven/cover）。重音在第一音节。美式 /ˈɡʌvərnəns/。",
+      "tip": "govern 的词源是「掌舵」——governance 就是掌舵的方式和制度。一个国家的 governance 就是它的舵怎么握、谁来握。corporate governance（公司治理）是商业英语高频词。",
+      "examples": [
+        {
+          "en": "Good governance requires transparency, accountability, and the rule of law.",
+          "zh": "善治需要透明度、问责制和法治。",
+          "source": "造句"
+        },
+        {
+          "en": "The report highlighted failures in corporate governance that led to the scandal.",
+          "zh": "报告指出了导致丑闻的公司治理缺陷。",
+          "source": "The Economist"
+        }
+      ],
+      "synonyms": [
+        {"w": "administration", "ipa": "/ədˌmɪnɪˈstreɪʃn/", "gloss": "行政，管理", "note": "administration 偏重日常行政事务的管理，governance 偏重制度和决策层面的治理框架"},
+        {"w": "management", "ipa": "/ˈmænɪdʒmənt/", "gloss": "管理", "note": "management 更通用，可以管项目管人管资金，governance 专指权力结构和决策机制"}
+      ],
+      "antonyms": [
+        {"w": "anarchy", "note": "无政府状态"},
+        {"w": "misrule", "note": "暴政，恶政"}
+      ],
+      "nuance": "governance 在当代英语中越来越常见，已从纯政治领域扩展到商业（corporate governance）、科技（data governance/AI governance）、全球事务（global governance）。托福社科类阅读高频词。"
+    },
+    {
+      "word": "coverage",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈkʌvərɪdʒ/",
+      "subgroup": "son",
+      "meaning": "n. 覆盖范围；新闻报道；保险范围",
+      "etymology": "cover + -age。cover 源自拉丁语 cooperire「完全覆盖」，由 co-（完全）+ operire（覆盖）构成。-age 表示「...的行为或范围」。与 discover（揭开覆盖物=发现）、recover（重新覆盖=恢复）同根。",
+      "roots": [
+        {"part": "cover-", "meaning": "覆盖"},
+        {"part": "-age", "meaning": "名词后缀，表示范围或行为"}
+      ],
+      "phonetics": "cov- 中的 o 在 v 前读 /ʌ/，和 cover/discover/lover 一样，符合「v 前的 o 读 /ʌ/」规则。重音在第一音节。美式 /ˈkʌvərɪdʒ/。",
+      "tip": "coverage = cover 的范围（-age）。新闻 coverage = 新闻「覆盖」到的范围 = 报道；insurance coverage = 保险「覆盖」到的范围 = 保障范围。一词通三义，核心都是「cover 到哪里」。",
+      "examples": [
+        {
+          "en": "The media coverage of the election has been overwhelmingly negative.",
+          "zh": "媒体对这次选举的报道压倒性地偏向负面。",
+          "source": "造句"
+        },
+        {
+          "en": "Does your health insurance provide coverage for dental care?",
+          "zh": "你的医疗保险涵盖牙科诊疗吗？",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "reporting", "ipa": "/rɪˈpɔːrtɪŋ/", "gloss": "报道", "note": "reporting 专指新闻报道的行为本身，coverage 更强调报道的范围和深度"},
+        {"w": "scope", "ipa": "/skəʊp/", "gloss": "范围", "note": "scope 是抽象的「范围」，coverage 特指被覆盖/涵盖到的具体范围"}
+      ],
+      "antonyms": [
+        {"w": "exclusion", "note": "排除（保险用语：不覆盖的部分）"}
+      ],
+      "nuance": "coverage 的三个常见搭配：media/news coverage（新闻报道）、insurance coverage（保险覆盖）、network coverage（网络覆盖/信号范围）。托福听力中 media coverage 出现频率最高。"
+    },
+    {
+      "word": "approve",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/əˈpruːv/",
+      "subgroup": "do",
+      "meaning": "v. 批准，核准；赞成",
+      "etymology": "拉丁语 approbare「认为好、认可」，由 ad-（朝向）+ probare（检验、证明好）构成——「检验过觉得好」→「批准」。与 prove（证明）、probe（探测）、probable（很可能的=经检验成立的）同根。",
+      "roots": [
+        {"part": "ap- (ad-)", "meaning": "朝向"},
+        {"part": "prov-/prob-", "meaning": "检验、证明好（probare）"},
+        {"part": "-e", "meaning": "词尾哑 e"}
+      ],
+      "phonetics": "-prove 中的 o 读 /uː/ 而非 /əʊ/——这是 -ove/-ove 系列的特殊读音（move/prove/approve/improve 都读 /uːv/），属于「o 读 /uː/」的固定词组，须单独记忆。",
+      "tip": "approve = 检验过（prove）发现好 → 批准。ap- 加强语气。FDA approved（FDA 批准的）是美国药品广告的标配用语。注意 approve of something = 赞成某事（介词 of 不能省）。",
+      "examples": [
+        {
+          "en": "The board approved the merger unanimously.",
+          "zh": "董事会一致批准了合并方案。",
+          "source": "造句"
+        },
+        {
+          "en": "Her parents didn't approve of her decision to drop out of college.",
+          "zh": "她的父母不赞成她从大学退学的决定。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "endorse", "ipa": "/ɪnˈdɔːrs/", "gloss": "支持，背书", "note": "endorse 比 approve 更主动，含有「公开表态支持」的意味（endorse a candidate 为候选人背书）"},
+        {"w": "ratify", "ipa": "/ˈrætɪfaɪ/", "gloss": "正式批准", "note": "特指对条约、协议的正式批准，法律效力比 approve 更强"}
+      ],
+      "antonyms": [
+        {"w": "reject", "note": "拒绝"},
+        {"w": "disapprove", "note": "不赞成"}
+      ],
+      "nuance": "approve 有两种句型须区分：① approve something（批准某事，及物用法，正式）；② approve of something（赞成某事，不及物用法，表达态度）。I approve the plan = 我批准了计划；I approve of the plan = 我赞成这个计划。"
+    },
+    {
+      "word": "improve",
+      "hl": "o",
+      "levels": ["六级"],
+      "ipa": "/ɪmˈpruːv/",
+      "subgroup": "do",
+      "meaning": "v. 改善，提高",
+      "etymology": "盎格鲁-法语 emprouwer「使获利」，由 en-（使）+ prou（利益，源自拉丁语 prodest「有益」）构成——「使有利」→「改善」。后来拼写受 prove 影响变成 improve，但词源上与 prove 无关。",
+      "roots": [
+        {"part": "im- (in-)", "meaning": "使、进入"},
+        {"part": "prove/prow", "meaning": "利益、好处（prou）"}
+      ],
+      "phonetics": "-prove 中的 o 读 /uː/（同 approve/prove/move），属于 o 读 /uː/ 的固定词族。重音在第二音节。美式 /ɪmˈpruːv/。",
+      "tip": "improve 的核心就是「使变好」。improve 是英语中使用频率最高的「进步」类动词——比 enhance/ameliorate 都日常得多。room for improvement（改进空间）是万能搭配。",
+      "examples": [
+        {
+          "en": "The company has significantly improved its customer service over the past year.",
+          "zh": "该公司在过去一年中显著改善了客户服务。",
+          "source": "造句"
+        },
+        {
+          "en": "There is always room for improvement.",
+          "zh": "总是有改进的空间。",
+          "source": "常见表达"
+        }
+      ],
+      "synonyms": [
+        {"w": "enhance", "ipa": "/ɪnˈhɑːns/", "gloss": "增强，提高", "note": "enhance 偏正式，强调在已有基础上「增强」（enhance flavor/performance），improve 更通用"},
+        {"w": "ameliorate", "ipa": "/əˈmiːliəreɪt/", "gloss": "改善", "note": "非常正式的书面语，多用于改善不良状况（ameliorate poverty），日常用 improve 即可"}
+      ],
+      "antonyms": [
+        {"w": "worsen", "note": "恶化"},
+        {"w": "deteriorate", "note": "退化"}
+      ],
+      "nuance": "improve 可以及物也可以不及物：improve something（改善某物）和 something improves（某物改善了）都正确。self-improvement（自我提升）是英语世界的热门概念。"
+    },
+    {
+      "word": "prove",
+      "hl": "o",
+      "levels": ["六级"],
+      "ipa": "/pruːv/",
+      "subgroup": "do",
+      "meaning": "v. 证明；证实；结果是",
+      "etymology": "拉丁语 probare「检验、证明好」，由 probus（好的、正当的）派生——「检验是否好」→「证明」。与 probable（可能的）、probe（探测）、probation（试用期=考验期）、approve（批准=认为好）同根。",
+      "roots": [
+        {"part": "prov-/prob-", "meaning": "检验、证明好（probare）"},
+        {"part": "-e", "meaning": "词尾哑 e"}
+      ],
+      "phonetics": "prove 中的 o 读 /uː/ 而非 /əʊ/——与 move/groove/approve 同属 -ove 读 /uːv/ 的词族。这是需要硬记的特殊发音，不能套 o_e = /əʊ/ 的规则。",
+      "tip": "prove 的 o 读 /uː/（像 food），不读 /əʊ/（像 note）——这是最容易读错的点。记忆：prove 和 move 押韵，都读 /uːv/。The proof is in the pudding = 是骡子是马拉出来遛遛。",
+      "examples": [
+        {
+          "en": "The experiment proved that the drug was effective against the virus.",
+          "zh": "实验证明该药物对这种病毒有效。",
+          "source": "造句"
+        },
+        {
+          "en": "The task proved more difficult than anyone had expected.",
+          "zh": "这项任务结果比任何人预想的都要困难。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "demonstrate", "ipa": "/ˈdemənstreɪt/", "gloss": "证明，展示", "note": "demonstrate 侧重通过展示或实验来证明，prove 更通用，也可以指逻辑推理上的证明"},
+        {"w": "verify", "ipa": "/ˈverɪfaɪ/", "gloss": "核实，验证", "note": "verify 强调核查已有信息是否属实，prove 是从零开始建立证明"}
+      ],
+      "antonyms": [
+        {"w": "disprove", "note": "反驳，推翻"},
+        {"w": "refute", "note": "驳斥"}
+      ],
+      "nuance": "prove 有一个重要的系动词用法：prove + adj. = 结果证明是...（The plan proved successful 计划结果是成功的）。这个用法在托福阅读中很常见，初学者容易漏掉。"
+    },
+    {
+      "word": "remove",
+      "hl": "o",
+      "levels": ["六级"],
+      "ipa": "/rɪˈmuːv/",
+      "subgroup": "do",
+      "meaning": "v. 移除，去除；免职",
+      "etymology": "拉丁语 removere「移走」，由 re-（向后、离开）+ movere（移动）构成——「移开、移走」。与 move（移动）、movement（运动）、remote（遥远的=被移到很远的地方）同根。",
+      "roots": [
+        {"part": "re-", "meaning": "向后、离开"},
+        {"part": "mov-", "meaning": "移动（movere）"},
+        {"part": "-e", "meaning": "词尾哑 e"}
+      ],
+      "phonetics": "-move 中的 o 读 /uː/（同 move/prove/approve），属于 -ove 读 /uːv/ 的固定词族。重音在第二音节。美式 /rɪˈmuːv/。",
+      "tip": "re（离开）+ move（移动）= 移走 = 去除。remove 是 move 家族的「减法」成员：move 是移动，remove 是移走，remote 是移到远处。stain remover（去污剂）帮你记住这个词的核心义。",
+      "examples": [
+        {
+          "en": "Please remove your shoes before entering the house.",
+          "zh": "进屋前请脱鞋。",
+          "source": "造句"
+        },
+        {
+          "en": "The president was removed from office after the impeachment vote.",
+          "zh": "弹劾投票后，总统被免职。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "eliminate", "ipa": "/ɪˈlɪmɪneɪt/", "gloss": "消除，淘汰", "note": "eliminate 比 remove 更彻底，暗示完全消灭而非只是移走"},
+        {"w": "extract", "ipa": "/ɪkˈstrækt/", "gloss": "提取，拔出", "note": "extract 强调从嵌入的位置中费力取出（extract a tooth 拔牙），remove 更通用"}
+      ],
+      "antonyms": [
+        {"w": "install", "note": "安装"},
+        {"w": "insert", "note": "插入"}
+      ],
+      "nuance": "remove 的搭配非常广泛：remove obstacles（消除障碍）、remove stains（去除污渍）、remove someone from office（免职）、remove doubts（消除疑虑）。核心语义都是「使离开原来的位置」。"
+    },
+    {
+      "word": "wolf",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/wʊlf/",
+      "subgroup": "wolf",
+      "meaning": "n. 狼  v. 狼吞虎咽",
+      "etymology": "古英语 wulf，日耳曼同根词，与德语 Wolf、拉丁语 lupus（狼，英语 lupine 来源）同源。人类与狼的关系贯穿文明史——从恐惧到驯化（dog 即驯化狼）。",
+      "roots": [
+        {"part": "wulf/wolf", "meaning": "狼（日耳曼词根）"}
+      ],
+      "phonetics": "wolf 中的 o 读 /ʊ/——这是古英语短元音 /u/ 的残留。中古英语时期手抄员把 u 改写成 o（避免与 m/n/v 的竖笔画混淆），但发音停在了 /ʊ/ 而没有继续移到 /ʌ/。全英语只有极少数词属于这种情况。",
+      "tip": "wolf 的 o 读 /ʊ/（像 book），不读 /ɒ/（像 hot）也不读 /əʊ/（像 go）——这是纯特例。cry wolf（喊狼来了）= 发假警报（伊索寓言典故）。wolf down（狼吞虎咽）是口语高频搭配。",
+      "examples": [
+        {
+          "en": "A wolf in sheep's clothing is harder to spot than an open enemy.",
+          "zh": "披着羊皮的狼比公开的敌人更难辨别。",
+          "source": "谚语"
+        },
+        {
+          "en": "He wolfed down his lunch in five minutes and rushed back to the office.",
+          "zh": "他五分钟就把午饭狼吞虎咽地吃完，匆匆赶回了办公室。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "predator", "ipa": "/ˈpredətər/", "gloss": "捕食者", "note": "wolf 特指狼，predator 泛指一切捕食者"}
+      ],
+      "antonyms": [
+        {"w": "prey", "note": "猎物"}
+      ],
+      "nuance": "wolf 在英语中有丰富的文化内涵：lone wolf（独行侠）、a wolf in sheep's clothing（伪善者）、cry wolf（狼来了）、wolf down（狼吞虎咽）。记住这些惯用语比词汇本身更重要。"
+    },
+    {
+      "word": "woman",
+      "hl": "o",
+      "levels": ["非托福"],
+      "ipa": "/ˈwʊmən/",
+      "subgroup": "wolf",
+      "meaning": "n. 女人，妇女",
+      "etymology": "古英语 wīfmann「女人」，由 wīf（女性）+ mann（人）构成——「女性的人」。wīf 后来变成 wife（妻子），词首 wī- 的元音在 woman 中缩短为 /ʊ/。复数 women /ˈwɪmɪn/ 的元音变化是古英语变音（i-umlaut）的遗留。",
+      "roots": [
+        {"part": "wīf-", "meaning": "女性（古英语 wīf）"},
+        {"part": "-man", "meaning": "人（古英语 mann）"}
+      ],
+      "phonetics": "woman 中的 o 读 /ʊ/——与 wolf 同属 o 读 /ʊ/ 的极少数特例。注意复数 women 的第一个元音变成 /ɪ/（/ˈwɪmɪn/），这是古英语变音规则的残留（同 man→men、foot→feet）。",
+      "tip": "woman /ˈwʊmən/ 的 o 读 /ʊ/，women /ˈwɪmɪn/ 的 o 读 /ɪ/——这是英语里最常见的不规则发音之一。记忆：单数 o = /ʊ/（像 book），复数 o = /ɪ/（像 sit）。",
+      "examples": [
+        {
+          "en": "She was the first woman to win a Nobel Prize in two different sciences.",
+          "zh": "她是第一位在两个不同科学领域获得诺贝尔奖的女性。",
+          "source": "关于居里夫人"
+        },
+        {
+          "en": "Behind every great fortune there is a crime, and behind every great woman there is an even greater story.",
+          "zh": "每一笔巨大的财富背后都有罪行，每一位伟大的女性背后都有一个更伟大的故事。",
+          "source": "改编"
+        }
+      ],
+      "synonyms": [
+        {"w": "female", "ipa": "/ˈfiːmeɪl/", "gloss": "女性", "note": "female 是生物学术语，用于人时需谨慎——在当代英语中，用 female 做名词称呼女性（females）可能被视为不尊重，用 women 更得体"},
+        {"w": "lady", "ipa": "/ˈleɪdi/", "gloss": "女士，淑女", "note": "lady 比 woman 更礼貌/正式，但在某些语境下可能显得过时或居高临下"}
+      ],
+      "antonyms": [
+        {"w": "man", "note": "男人"}
+      ],
+      "nuance": "woman 和 women 的发音区别是中国学生的经典难点：woman /ˈwʊmən/（单数），women /ˈwɪmɪn/（复数）——第一个元音不同，但第二个元音都是 /ə/ 或 /ɪ/，实际发音很接近。"
+    },
+    {
+      "word": "bosom",
+      "hl": "o",
+      "levels": ["六级"],
+      "ipa": "/ˈbʊzəm/",
+      "subgroup": "wolf",
+      "meaning": "n. 胸怀，怀抱；内心深处  adj. 亲密的",
+      "etymology": "古英语 bōsm「胸、怀抱」，日耳曼同根词，与德语 Busen 同源。从字面的「胸部」扩展为「怀抱、内心深处」——in the bosom of one's family（在家人的怀抱中）。",
+      "roots": [
+        {"part": "bosom", "meaning": "胸、怀抱（日耳曼词根）"}
+      ],
+      "phonetics": "bos- 中的 o 读 /ʊ/——与 wolf/woman 同属 o 读 /ʊ/ 的特例小组。s 在两个元音之间浊化为 /z/。重音在第一音节：/ˈbʊ-zəm/。",
+      "tip": "bosom 的 o 读 /ʊ/（像 book），不读 /ɒ/。bosom friend = 知心朋友（贴在胸口的朋友）。Abraham Lincoln 曾说 a bosom friend = 一个可以把秘密放在胸口的人。",
+      "examples": [
+        {
+          "en": "She returned to the bosom of her family after years abroad.",
+          "zh": "在海外多年后，她回到了家人的怀抱。",
+          "source": "造句"
+        },
+        {
+          "en": "Anne and Diana were bosom friends from the moment they met.",
+          "zh": "安妮和黛安娜从见面的那一刻起就成了知心朋友。",
+          "source": "Anne of Green Gables"
+        }
+      ],
+      "synonyms": [
+        {"w": "chest", "ipa": "/tʃest/", "gloss": "胸部", "note": "chest 是中性的身体部位词，bosom 更文学化，带有温暖和亲密的情感色彩"},
+        {"w": "heart", "ipa": "/hɑːrt/", "gloss": "内心", "note": "当 bosom 取「内心深处」义时，与 heart 近义（in the bosom of ≈ in the heart of）"}
+      ],
+      "antonyms": [],
+      "nuance": "bosom 在现代英语中偏文学化和正式。日常口语用 chest 指胸部。但 bosom friend（知心朋友）和 in the bosom of（在...的怀抱中）仍然是活跃的表达，尤其在文学作品中。"
+    },
+    {
+      "word": "proportion",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/prəˈpɔːrʃn/",
+      "subgroup": "or",
+      "meaning": "n. 比例；部分；均衡  v. 使成比例",
+      "etymology": "拉丁语 proportio「比率、对称」，由 pro-（按照）+ portio（份额）构成——「按份分配」→「比例」。与 portion（一份）、apportion（分摊）同根。",
+      "roots": [
+        {"part": "pro-", "meaning": "按照"},
+        {"part": "port-", "meaning": "份额（portio）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "phonetics": "-por- 中的 o + r 读 /ɔːr/，这是 or 组合的标准发音。重音在第二音节。三音节：/prə-ˈpɔːr-ʃn/。美式 r 化明显。",
+      "tip": "proportion = pro（按照）+ portion（份额）= 按份额分配 = 比例。a large proportion of = 很大一部分（托福写作高频表达）。out of proportion = 不成比例/小题大做。",
+      "examples": [
+        {
+          "en": "A large proportion of the budget is allocated to education.",
+          "zh": "预算的很大一部分被分配给了教育。",
+          "source": "造句"
+        },
+        {
+          "en": "The punishment was out of all proportion to the offense.",
+          "zh": "惩罚与过错完全不成比例。",
+          "source": "法律语境造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "ratio", "ipa": "/ˈreɪʃiəʊ/", "gloss": "比率", "note": "ratio 是精确的数学比率（3:1），proportion 更宽泛，可以指大致的比例或部分"},
+        {"w": "percentage", "ipa": "/pərˈsentɪdʒ/", "gloss": "百分比", "note": "percentage 特指以百分数表示的比例，proportion 可以不用数字（a small proportion）"}
+      ],
+      "antonyms": [
+        {"w": "disproportion", "note": "不成比例"}
+      ],
+      "nuance": "proportion 在托福写作中极为实用：a significant/considerable/large proportion of（很大一部分）可以替代 many/a lot of，让表达更精确。disproportionate（不成比例的）也是高频形容词。"
+    },
+    {
+      "word": "reinforce",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˌriːɪnˈfɔːrs/",
+      "subgroup": "or",
+      "meaning": "v. 加强，增援；强化",
+      "etymology": "re-（再次）+ in-（进入）+ force（力量，源自拉丁语 fortis「强壮的」）——「再次注入力量」→「加强」。与 force（力量）、enforce（执行）、comfort（安慰=使强壮）同根。",
+      "roots": [
+        {"part": "re-", "meaning": "再次"},
+        {"part": "in-", "meaning": "进入"},
+        {"part": "forc-/fort-", "meaning": "力量、强壮（fortis）"}
+      ],
+      "phonetics": "-force 中的 or 读 /ɔːr/，是 o+r 组合的标准发音。重音在第三音节。美式 /ˌriːɪnˈfɔːrs/。",
+      "tip": "re（再）+ in（进入）+ force（力量）= 再次注入力量 = 加强。reinforced concrete（钢筋混凝土）= 被加强了的水泥。positive reinforcement（正强化）是心理学术语，奖励好行为让它再次发生。",
+      "examples": [
+        {
+          "en": "The government sent troops to reinforce the border defenses.",
+          "zh": "政府派遣军队加强边境防御。",
+          "source": "造句"
+        },
+        {
+          "en": "Positive reinforcement is more effective than punishment in shaping behavior.",
+          "zh": "正强化在塑造行为方面比惩罚更有效。",
+          "source": "心理学教材"
+        }
+      ],
+      "synonyms": [
+        {"w": "strengthen", "ipa": "/ˈstreŋθn/", "gloss": "加强", "note": "strengthen 更通用（strengthen muscles/bonds/economy），reinforce 更强调在已有基础上添加支撑力"},
+        {"w": "bolster", "ipa": "/ˈbəʊlstər/", "gloss": "支撑，增强", "note": "bolster 常用于抽象事物（bolster confidence/morale），语气比 reinforce 更温和"}
+      ],
+      "antonyms": [
+        {"w": "weaken", "note": "削弱"},
+        {"w": "undermine", "note": "暗中破坏"}
+      ],
+      "nuance": "reinforce 在托福中有两个重要语境：① 军事/物理层面的「加强」（reinforce walls/troops）；② 心理学概念 reinforcement（强化——positive/negative reinforcement 正/负强化是行为心理学核心概念）。"
+    },
+    {
+      "word": "distortion",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/dɪˈstɔːrʃn/",
+      "subgroup": "or",
+      "meaning": "n. 扭曲，变形；歪曲",
+      "etymology": "拉丁语 distortio，由 dis-（分开、偏离）+ torquere（扭转）构成——「扭到变形」→「扭曲」。与 torture（折磨=扭转身体）、contort（扭曲）、torque（扭矩）同根。",
+      "roots": [
+        {"part": "dis-", "meaning": "分开、偏离"},
+        {"part": "tort-/torqu-", "meaning": "扭转（torquere）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "phonetics": "-tor- 中的 or 读 /ɔːr/（o+r 标准发音）。重音在第二音节。三音节：/dɪ-ˈstɔːr-ʃn/。注意 -tion 在 r 后读 /ʃn/ 而非 /ʃən/。",
+      "tip": "distortion = dis（偏离）+ tort（扭）= 扭偏了 = 扭曲。想象哈哈镜里的 distortion——你的脸被扭曲了。media distortion = 媒体歪曲事实。和 torture（折磨）同根——折磨就是把人扭到痛。",
+      "examples": [
+        {
+          "en": "The report was full of distortions and half-truths.",
+          "zh": "该报告充满了歪曲和半真半假的说法。",
+          "source": "造句"
+        },
+        {
+          "en": "Audio distortion occurs when the signal exceeds the speaker's capacity.",
+          "zh": "当信号超过扬声器的承受能力时，就会产生音频失真。",
+          "source": "技术语境造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "misrepresentation", "ipa": "/ˌmɪsreprɪzenˈteɪʃn/", "gloss": "歪曲，失实陈述", "note": "misrepresentation 更正式、更法律化，强调故意错误陈述，distortion 可以是无意的扭曲"},
+        {"w": "deformation", "ipa": "/ˌdiːfɔːˈmeɪʃn/", "gloss": "变形", "note": "deformation 偏物理学（材料力学），distortion 兼顾物理和比喻义"}
+      ],
+      "antonyms": [
+        {"w": "accuracy", "note": "准确性"},
+        {"w": "fidelity", "note": "忠实度（音频的高保真 = high fidelity）"}
+      ],
+      "nuance": "distortion 的三大使用场景：① 物理变形（image/sound distortion）；② 信息歪曲（distortion of facts/truth）；③ 认知偏差（cognitive distortion 是心理学术语）。托福阅读和听力中三种都可能出现。"
+    },
+    {
+      "word": "incorporate",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ɪnˈkɔːrpəreɪt/",
+      "subgroup": "or",
+      "meaning": "v. 合并，纳入；组成公司",
+      "etymology": "拉丁语 incorporare「使成为一个整体」，由 in-（进入）+ corpus（身体）构成——「放进一个身体里」→「合并、纳入」。与 corporation（公司=一个法律「身体」）、corpse（尸体）、corps（军团）同根。",
+      "roots": [
+        {"part": "in-", "meaning": "进入"},
+        {"part": "corpor-", "meaning": "身体（corpus）"},
+        {"part": "-ate", "meaning": "动词后缀"}
+      ],
+      "phonetics": "-cor- 中的 or 读 /ɔːr/（o+r 标准发音）。重音在第二音节。四音节：/ɪn-ˈkɔːr-pə-reɪt/。注意 -ate 在动词中读 /eɪt/。",
+      "tip": "in（进入）+ corpor（身体）= 放进一个身体里 = 合并纳入。公司叫 corporation 因为它在法律上是一个「人造身体」（法人）。incorporate feedback = 把反馈纳入进来。Inc.（公司后缀）就是 incorporated 的缩写。",
+      "examples": [
+        {
+          "en": "The new design incorporates feedback from thousands of users.",
+          "zh": "新设计纳入了数千名用户的反馈。",
+          "source": "造句"
+        },
+        {
+          "en": "The company was incorporated in Delaware in 2015.",
+          "zh": "该公司于2015年在特拉华州注册成立。",
+          "source": "商业语境造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "integrate", "ipa": "/ˈɪntɪɡreɪt/", "gloss": "整合", "note": "integrate 强调把不同部分融合为有机整体，incorporate 强调把外部元素纳入已有框架"},
+        {"w": "include", "ipa": "/ɪnˈkluːd/", "gloss": "包含", "note": "include 只是「包含」，incorporate 暗示主动吸纳并使之成为整体一部分，语义更强"}
+      ],
+      "antonyms": [
+        {"w": "exclude", "note": "排除"},
+        {"w": "separate", "note": "分离"}
+      ],
+      "nuance": "incorporate 在托福学术语境中极常见，尤其是 incorporate...into...（把...纳入...）这个句型：incorporate new evidence into the theory（把新证据纳入理论）。商业用法中 incorporated（Inc.）表示公司已注册为法人。"
+    },
+    {
+      "word": "memorial",
+      "hl": "o",
+      "levels": ["六级"],
+      "ipa": "/məˈmɔːriəl/",
+      "subgroup": "schwa",
+      "meaning": "n. 纪念碑，纪念物  adj. 纪念的",
+      "etymology": "拉丁语 memorialis「与记忆有关的」，由 memoria（记忆）+ -alis（形容词后缀）构成。与 memory（记忆）、memorize（记住）、memoir（回忆录）、commemorate（纪念）同根。",
+      "roots": [
+        {"part": "memor-", "meaning": "记忆（memoria）"},
+        {"part": "-ial", "meaning": "形容词/名词后缀"}
+      ],
+      "phonetics": "第一个音节 me- 中的 e 弱化为 /ə/（因为不在重读位置）。但注意：这个词入选 schwa 组是因为非重读的第一个音节发 /mə-/。重音在第二音节 -mo- /mɔː/。四音节：/mə-ˈmɔː-ri-əl/。",
+      "tip": "memorial 和 memory 同根——memorial 就是「让人记住」的东西。Memorial Day（阵亡将士纪念日）是美国的联邦假日。Lincoln Memorial（林肯纪念堂）是华盛顿的地标。",
+      "examples": [
+        {
+          "en": "The memorial was built to honor the soldiers who died in the war.",
+          "zh": "这座纪念碑是为了纪念在战争中牺牲的士兵而建造的。",
+          "source": "造句"
+        },
+        {
+          "en": "A memorial service was held for the victims of the earthquake.",
+          "zh": "为地震遇难者举行了追悼仪式。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "monument", "ipa": "/ˈmɒnjumənt/", "gloss": "纪念碑，丰碑", "note": "monument 更强调物理建筑的宏大和持久，memorial 的情感色彩更浓，且可做形容词"},
+        {"w": "tribute", "ipa": "/ˈtrɪbjuːt/", "gloss": "致敬，颂词", "note": "tribute 强调对人的敬意表达（pay tribute to），memorial 强调纪念性的实物或仪式"}
+      ],
+      "antonyms": [],
+      "nuance": "memorial 兼做名词和形容词：a war memorial（纪念碑，名词）、a memorial service（追悼仪式，形容词）。与 monument 的区别：monument 可以纪念任何伟大事物，memorial 特指纪念逝者或重大牺牲。"
+    },
+    {
+      "word": "testimony",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈtestɪməni/",
+      "subgroup": "schwa",
+      "meaning": "n. 证词，证言；证明",
+      "etymology": "拉丁语 testimonium「证据、证明」，由 testis（证人）+ -monium（名词后缀）构成。testis 的原义是「第三者」（站在两方之间的人）→「证人」。与 test（测试=检验）、testify（作证）、contest（竞赛=一起接受检验）同根。",
+      "roots": [
+        {"part": "test-", "meaning": "证人、检验（testis）"},
+        {"part": "-mony", "meaning": "名词后缀，表状态或结果"}
+      ],
+      "phonetics": "-mony 中的 o 在非重读位置弱化为 /ə/，整个后缀读 /məni/。重音在第一音节 test-。四音节：/ˈtes-tɪ-mə-ni/。",
+      "tip": "testimony = test（检验）+ mony = 经得起检验的话 = 证词。在法庭上 testify（作证）就是给出 testimony。Her success is a testimony to hard work = 她的成功证明了勤奋的价值。",
+      "examples": [
+        {
+          "en": "The witness gave testimony that contradicted the defendant's account.",
+          "zh": "证人给出的证词与被告的陈述相矛盾。",
+          "source": "造句"
+        },
+        {
+          "en": "The ruins stand as testimony to the city's glorious past.",
+          "zh": "这些遗迹是这座城市辉煌过去的见证。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "evidence", "ipa": "/ˈevɪdəns/", "gloss": "证据", "note": "evidence 范围更广，包括物证、书证等，testimony 特指口头证词"},
+        {"w": "statement", "ipa": "/ˈsteɪtmənt/", "gloss": "声明，陈述", "note": "statement 是中性的「陈述」，testimony 特指在法律或正式场合下的宣誓证词"}
+      ],
+      "antonyms": [
+        {"w": "denial", "note": "否认"},
+        {"w": "perjury", "note": "伪证"}
+      ],
+      "nuance": "testimony 有两大用法：① 法律语境的「证词」（give/provide testimony）；② 比喻义的「证明」（a testimony to something = 某事的证明）。后者在托福写作中是很好的高级表达。"
+    },
+    {
+      "word": "category",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈkætəɡəri/",
+      "subgroup": "schwa",
+      "meaning": "n. 类别，范畴",
+      "etymology": "希腊语 kategoria「指控、断言、类别」，由 kata-（向下、针对）+ agoreuein（在公共场合说话，来自 agora 广场）构成——「当众指出某物属于哪类」→「分类」。亚里士多德用此词建立了西方逻辑学的分类体系。",
+      "roots": [
+        {"part": "cata- (kata-)", "meaning": "向下、针对"},
+        {"part": "-gor-", "meaning": "说话、聚集（agora 广场）"},
+        {"part": "-y", "meaning": "名词后缀"}
+      ],
+      "phonetics": "-gory 中的 o 在非重读位置弱化为 /ə/，读 /ɡəri/。重音在第一音节 cat-。美式四音节：/ˈkæ-tə-ɡə-ri/（英式三音节 /ˈkæ-tə-ɡri/）。注意美式在第三音节也有一个 /ə/。",
+      "tip": "category 的重音在第一音节 CAT——像一只猫（cat）把东西分门别类地归到不同的 category 里。categorize（动词）= 分类。",
+      "examples": [
+        {
+          "en": "The books are organized into categories by genre.",
+          "zh": "这些书按体裁分成了不同类别。",
+          "source": "造句"
+        },
+        {
+          "en": "This problem doesn't fit neatly into any single category.",
+          "zh": "这个问题不能被简单地归入任何单一类别。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "classification", "ipa": "/ˌklæsɪfɪˈkeɪʃn/", "gloss": "分类", "note": "classification 强调分类的行为或体系，category 是分好的「一个类别」"},
+        {"w": "genre", "ipa": "/ˈʒɑːnrə/", "gloss": "（文艺作品的）体裁", "note": "genre 专用于文学、音乐、电影的类型划分，category 范围更广"}
+      ],
+      "antonyms": [],
+      "nuance": "category 是学术写作的万能词，可以用在几乎任何需要「分类」的场合。fall into/belong to a category（属于某一类别）、a broad/narrow category（广义/狭义分类）是高频搭配。"
+    },
+    {
+      "word": "inventory",
+      "hl": "o",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈɪnvəntɔːri/",
+      "subgroup": "schwa",
+      "meaning": "n. 库存，存货；清单  v. 编制清单",
+      "etymology": "拉丁语 inventorium「清单」，由 invenire「找到」（in- 进入 + venire 来）的过去分词 inventus 派生——「找到的东西的清单」→「库存清单」。与 invent（发明=找到新东西）、convention（大会=一起来）同根。",
+      "roots": [
+        {"part": "in-", "meaning": "进入"},
+        {"part": "vent-", "meaning": "来（venire）"},
+        {"part": "-ory", "meaning": "名词后缀，表示场所或集合"}
+      ],
+      "phonetics": "-ven- 中的 e 弱化为 /ə/（非重读），-tory 中的 o 读 /ɔː/（因为跟 r）。重音在第一音节 in-。美式四音节：/ˈɪn-vən-tɔː-ri/。",
+      "tip": "inventory 和 invent 同根——库存就是「找到了（invent = 找到）多少东西」的清单。take inventory = 盘点库存。inventory management（库存管理）是商业英语核心词。",
+      "examples": [
+        {
+          "en": "The store needs to reduce its inventory before the end of the fiscal year.",
+          "zh": "这家店需要在财年结束前减少库存。",
+          "source": "造句"
+        },
+        {
+          "en": "She took a mental inventory of everything she needed to pack.",
+          "zh": "她在脑中盘点了所有需要打包的东西。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {"w": "stock", "ipa": "/stɒk/", "gloss": "库存，存货", "note": "stock 更日常（out of stock 缺货），inventory 更正式更商业化，常指完整的库存清单"},
+        {"w": "catalogue", "ipa": "/ˈkætəlɒɡ/", "gloss": "目录，产品手册", "note": "catalogue 强调展示和列举（产品目录），inventory 强调实际持有的存货数量"}
+      ],
+      "antonyms": [],
+      "nuance": "inventory 在美式英语中比英式更常用（英式倾向用 stock）。在托福商业和经济话题中，inventory 常与 supply chain（供应链）、just-in-time（准时制）等概念一起出现。"
+    }
+  ]
+}

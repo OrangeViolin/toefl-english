@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>字母 A 的全部发音 · 单词拆解卡片</title>
+<style>
+  :root{
+    --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
+    --line:#eaddc9; --accent:#c1662f; --accent2:#e0913c; --amber:#fbe6c4;
+    --core:#2f8f83; --exc:#b0603f; --ok:#4a9a5e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Helvetica Neue",Segoe UI,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 20px 90px}
+  a{color:var(--accent);text-decoration:none}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted)}
+  /* header */
+  header.hero{margin:14px 0 22px}
+  .combo{display:inline-flex;align-items:baseline;gap:14px}
+  .combo .big{font-family:Georgia,"Times New Roman",serif;font-size:60px;font-weight:700;
+    background:var(--amber);color:var(--accent);padding:2px 20px;border-radius:18px;line-height:1.1}
+  .combo .snd{font-size:30px;color:var(--core);font-weight:700}
+  h1{font-size:23px;margin:14px 0 4px}
+  .intro{color:#5f574c;max-width:860px;font-size:15px}
+  /* rule cards */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+  .rule.core{border-left:5px solid var(--core)}
+  .rule.exc{border-left:5px solid var(--exc)}
+  .rule b{display:block;margin-bottom:4px;font-size:14px}
+  .rule.core b{color:var(--core)} .rule.exc b{color:var(--exc)}
+  /* rhyme chains */
+  .rhymes{background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px dashed var(--accent2);
+    border-radius:14px;padding:14px 16px;margin-bottom:20px}
+  .rhymes h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .chain{margin:6px 0;font-size:14px}
+  .chain .lab{color:var(--muted);margin-right:8px}
+  .chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 11px;margin:3px 4px 3px 0;cursor:pointer;font-family:Georgia,serif;font-size:15px;transition:.15s}
+  .chip:hover{background:var(--amber);border-color:var(--accent2)}
+  /* toolbar */
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(247,241,231,.94);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .search{flex:1;min-width:180px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;
+    font-size:14px;background:#fff}
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .f{padding:6px 12px;border:1px solid var(--line);background:#fff;border-radius:20px;font-size:13px;
+    cursor:pointer;color:#6b6154;transition:.15s}
+  .f.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  select.f{max-width:170px;color:#6b6154;cursor:pointer}
+  .btn{padding:7px 14px;border:1px solid var(--accent);background:#fff;color:var(--accent);
+    border-radius:20px;font-size:13px;cursor:pointer;font-weight:600}
+  .btn.on{background:var(--accent);color:#fff}
+  .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+  .bar{height:6px;background:var(--line);border-radius:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar>i{display:block;height:100%;background:var(--ok);width:0}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 17px;
+    box-shadow:0 2px 10px rgba(150,120,70,.06);display:flex;flex-direction:column;gap:10px;position:relative}
+  .card.unfamiliar{border-color:#e08a3c;background:#fff7ec;box-shadow:0 2px 14px rgba(210,120,40,.20)}
+  .card .sub-tag{position:absolute;top:0;right:16px;transform:translateY(-50%);
+    font-size:11px;padding:2px 9px;border-radius:10px;color:#fff}
+  .sub-core{background:var(--core)} .sub-exc{background:var(--exc)}
+  .whead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .word{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700;letter-spacing:.5px}
+  .word .hl{background:var(--amber);color:var(--accent);border-radius:6px;padding:0 3px}
+  .ipa{color:var(--core);font-size:16px;font-weight:600}
+  .say{margin-left:auto;border:none;background:var(--amber);color:var(--accent);border-radius:50%;
+    width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+  .say:hover{background:var(--accent2);color:#fff}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:11px;padding:1px 8px;border-radius:9px;background:#f0e7d6;color:#8a6a3c}
+  .tag.lv6{background:#e6f0ec;color:#2f8f83}
+  .tag.tfl{background:#eae6f5;color:#6a52a8}
+  .tag.gre{background:#f7e6ea;color:#b0507a}
+  .mean{font-size:15.5px;font-weight:600;color:#3a332b}
+  .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
+  .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
+  .roots{display:flex;flex-wrap:wrap;gap:6px}
+  .root{background:#f6efe1;border-radius:8px;padding:3px 9px;font-size:12.5px}
+  .root b{font-family:Georgia,serif;color:var(--accent)}
+  .tip{background:#fff6e8;border-left:3px solid var(--accent2);padding:5px 10px;border-radius:0 8px 8px 0;font-size:13px}
+  /* 一词多义 · 核心意象 */
+  .coreimg{background:#f4f0e5;border-radius:8px;padding:6px 10px;font-size:13.5px;color:#5a4a2e;margin-bottom:7px}
+  .sense{border-left:3px solid var(--accent2);padding:3px 0 3px 10px;margin:6px 0}
+  .sense .s-gloss{font-size:14px}
+  .sense .s-gloss b{color:#3a332b}
+  .sense .s-logic{color:var(--accent);font-size:12.5px}
+  .sense .s-ex{margin-top:2px;font-size:13px}
+  .sense .s-en{font-family:Georgia,serif;color:#2f2a24}
+  .sense .s-zh{color:#6b6154}
+  .ex{margin:7px 0}
+  .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  .ex .zh{color:#6b6154;font-size:13px}
+  .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
+  .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
+  /* 近义词辨析 / 反义词 */
+  .lexgroup{display:flex;gap:8px;margin:4px 0;align-items:flex-start}
+  .lextag{flex:none;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px;margin-top:3px}
+  .lextag.syn{background:#e6f0ec;color:#2f8f83}
+  .lextag.ant{background:#f7e6ea;color:#b0507a}
+  .lexlist{display:flex;flex-direction:column;gap:3px;font-size:13.5px;flex:1}
+  .lexlist.antline{flex-direction:row;flex-wrap:wrap;gap:6px;align-items:center}
+  .lex .lw{font-family:Georgia,serif;color:var(--accent);cursor:pointer;font-weight:600}
+  .lex .lw:hover{text-decoration:underline}
+  .lex .lip{color:var(--core);font-size:12px}
+  .lex .ln{color:#5f574c}
+  .antchip{background:#faf0f2;border-radius:8px;padding:2px 9px;cursor:pointer;font-family:Georgia,serif;font-size:13px;color:#b0507a}
+  .antchip:hover{background:#f6e3e8}
+  .antchip i{font-style:normal;color:#9a8f86;font-size:12px}
+  .nuance{background:#eef6f3;border-left:3px solid var(--core);padding:6px 10px;border-radius:0 8px 8px 0;font-size:13px;margin-top:7px;color:#33463f}
+  /* memorize mode hides meaning+detail until hover/click */
+  body.mem .mean, body.mem .sec{filter:blur(5px);transition:.15s;cursor:pointer}
+  body.mem .card:hover .mean, body.mem .card.reveal .mean,
+  body.mem .card:hover .sec, body.mem .card.reveal .sec{filter:none}
+  .check{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;margin-top:2px}
+  .check input{width:16px;height:16px;accent-color:#c1662f}
+  .card.unfamiliar .check{color:#c1662f;font-weight:600}
+  .empty{text-align:center;color:var(--muted);padding:40px;grid-column:1/-1}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  /* 测验 */
+  #quizOv{display:none;position:fixed;inset:0;background:rgba(47,42,36,.55);z-index:50;
+    align-items:center;justify-content:center;padding:18px}
+  .qbox{background:var(--card);border-radius:20px;max-width:560px;width:100%;padding:22px 24px 20px;
+    box-shadow:0 24px 70px rgba(0,0,0,.32);max-height:92vh;overflow:auto}
+  .qtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:8px}
+  .qbar2{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .qbar2>i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
+  .qword{font-family:Georgia,serif;font-size:40px;font-weight:700;text-align:center;margin:4px 0 2px}
+  .qipa{text-align:center;color:var(--core);font-size:16px;margin-bottom:16px}
+  .qopts{display:grid;gap:10px}
+  .qopt{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;font-size:14.5px;
+    cursor:pointer;text-align:left;transition:.12s;display:flex;gap:10px;align-items:flex-start;font-family:inherit;color:var(--ink)}
+  .qopt:hover{border-color:var(--accent2);background:#fffaf0}
+  .qopt .k{font-weight:700;color:var(--accent);flex:none}
+  .qopt.right{border-color:var(--ok);background:#eafaef}
+  .qopt.wrong{border-color:var(--exc);background:#fdeeea}
+  .qopt.dim{opacity:.45}
+  .qnext{margin-top:14px;width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent);
+    color:#fff;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
+  .qend{text-align:center}
+  .qscore{font-size:46px;font-weight:800;color:var(--accent);margin:4px 0}
+  .qwrong{text-align:left;margin:14px 0;max-height:34vh;overflow:auto}
+  .qwrong .r{border-top:1px dashed var(--line);padding:7px 0;font-size:14px}
+  .qwrong .r b{font-family:Georgia,serif;color:var(--exc)}
+  .hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+  /* 精读 · 文章 + 句法分析 */
+  .passage{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+    border-radius:14px;padding:18px 20px;margin:0 0 22px}
+  .passage h2{margin:0 0 10px;font-size:18px;color:var(--accent)}
+  .passage .p-title{font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--ink);margin-bottom:10px}
+  .passage p{font-size:15px;line-height:1.9;margin:10px 0}
+  .passage .en{color:#3a332b;font-family:Georgia,"Times New Roman",serif}
+  .passage .zh{color:var(--muted);font-size:13.5px}
+  .passage .kw{cursor:pointer;color:var(--accent);font-weight:600;border-bottom:1px dotted var(--accent2)}
+  .readall{background:var(--accent);color:#fff;border:none;border-radius:20px;padding:4px 14px;font-size:13px;
+    cursor:pointer;margin-left:10px;vertical-align:middle;transition:.15s}
+  .readall:hover{background:var(--core)}
+  .sents{background:linear-gradient(135deg,#f3f8f6,#eef3f0);border:1px solid var(--line);
+    border-radius:14px;padding:18px 20px;margin:0 0 22px}
+  .sents h2{margin:0 0 6px;font-size:18px;color:var(--core)}
+  .sents .s-sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+  .sent{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+  .sent .s-en{font-family:Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.7;cursor:pointer;color:#3a332b}
+  .sent .s-en:hover{color:var(--accent)}
+  .sent .s-zh{color:var(--muted);font-size:13.5px;margin:6px 0 10px}
+  .sent .s-parts{display:flex;flex-wrap:wrap;gap:6px}
+  .spart{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:4px 9px;font-size:13px;line-height:1.4}
+  .spart .st{font-family:Georgia,serif;font-weight:600}
+  .spart .sr{font-size:11px;color:#fff;border-radius:5px;padding:0 5px;white-space:nowrap}
+  .spart .sn{font-size:12px;color:var(--muted)}
+  .snotes{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:13px;color:#5f574c}
+  .snotes b{color:var(--accent)}
+  /* 句子内括号标注 */
+  .s-flow{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:2.1;cursor:pointer;color:#3a332b;padding:2px 0}
+  .s-flow:hover{color:var(--accent)}
+  .brkbox{border-radius:4px;padding:1px 1px;transition:.15s}
+  .brk{font-weight:700;font-size:17px;padding:0 1px}
+  .say-mini{background:none;border:none;cursor:pointer;font-size:15px;padding:0 4px;vertical-align:middle}
+  @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../index.html">← 返回总目录</a>
+    <span>六级 · 托福单词记忆系统</span>
+  </div>
+
+  <header class="hero" id="hero"></header>
+
+  <div id="passage"></div>
+  <div id="sents"></div>
+
+  <div class="toolbar">
+    <input class="search" id="q" placeholder="🔎 搜索单词或释义…">
+    <div class="filters" id="lvf"></div>
+    <div class="filters" id="sgf"></div>
+    <select class="f" id="voiceSel" title="选择发音音色（美式女声）"></select>
+    <button class="btn" id="quizBtn">📝 测验</button>
+    <button class="btn" id="memBtn">🧠 记忆模式</button>
+    <button class="btn" id="unfamBtn">🔺 只看不熟悉 (<span id="unfamN">0</span>)</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <footer id="foot"></footer>
+</div>
+
+<div id="quizOv"><div class="qbox" id="qbox"></div></div>
+
+<script id="data" type="application/json">{"id": "letter-a", "combo": "A", "title": "字母 A 的全部发音", "sound": "/æ/ /eɪ/ /ɑː/ /ɔː/ /ə/ /ɒ/", "subtitle": "一个字母，六种读法——A 是英语里最多变的元音字母", "intro": "字母 A 是英语中发音最多变的元音字母，至少有六种截然不同的读法。掌握它的关键在于识别上下文规律：闭音节（后面紧跟辅音、没有哑 e）→ /æ/，如 cat、abstract；开音节或 a_e / ai / ay 组合 → /eɪ/，如 cake、navigate；在 r 或 lm 前 → /ɑː/，如 father、calm；在 l(l)、lk、w 前后 → /ɔː/，如 all、walk、alter；非重读音节中弱化 → /ə/，如 about、abundant；w 或 qu 后面 → /ɒ/，如 want、quality。这六条规律像六把钥匙，能打开几乎所有含 A 的单词的正确读音。本页把六种读音并排呈现，帮你建立「看到拼写环境就能预判发音」的直觉。", "subgroups": [{"key": "ae", "tag": "/æ/", "label": "A = /æ/ (cat)", "desc": "闭音节中最常见的读法：音节以辅音收尾、没有哑 e，a 就读扁口 /æ/。嘴角横拉、下颌微落，发出干脆的「哎」。这是 A 最高频的发音，大量六级和托福词汇都包含这个音。"}, {"key": "ei", "tag": "/eɪ/", "label": "A = /eɪ/ (cake)", "desc": "开音节或 a_e / ai / ay 组合中，a 读字母本名 /eɪ/，嘴先开到 /e/ 再滑向 /ɪ/。多音节动词词尾 -ate 是最大的 /eɪ/ 集中区：navigate、evaluate、manipulate——掌握 -ate 就掌握了一大批托福高频词。"}, {"key": "aa", "tag": "/ɑː/", "label": "A = /ɑː/ (father)", "desc": "a 在 r 前（美式 /ɑːr/）、在 lm 前（calm、palm）、或在少数拉丁借词中读 /ɑː/，张大嘴、舌头放低放平，是英语里最「开」的元音。数量不多但词频极高。"}, {"key": "aw", "tag": "/ɔː/", "label": "A = /ɔː/ (all/walk)", "desc": "a 在 l(l)、lk、lt、ls 等组合前读 /ɔː/，嘴唇微圆、舌位中高。all、walk、talk、salt 是基础词，alter、default、assault 是六级托福高频词。记住「a + l 家族 = /ɔː/」这条规律。"}, {"key": "schwa", "tag": "/ə/", "label": "A = /ə/ (about)", "desc": "非重读音节中的 a 弱化为央元音 /ə/——嘴巴最放松、最省力的位置。这是英语中出现频率最高的元音，却最容易被忽略。abundant 的首音节、comparable 的中间音节、apparatus 的非重读 a，都是 /ə/。"}, {"key": "o", "tag": "/ɒ/", "label": "A = /ɒ/ (want)", "desc": "w 或 qu 后面的 a 读 /ɒ/（英式）或 /ɑː/（美式），嘴唇微圆、舌位低。want、wash、quality、quarantine——看到 wa- 或 qua-，就把 a 当作 o 来读。这是中国学习者最容易忽略的规律之一。"}], "rhymeChains": [{"label": "-ate 词尾大军 (/eɪt/)", "words": ["navigate", "migrate", "evaluate", "manipulate", "appreciate", "elaborate", "adequate"]}, {"label": "-alt / -ault (/ɔːlt/)", "words": ["alter", "falter", "exalt", "default", "assault"]}, {"label": "-ant / -ance (/ənt/ /əns/)", "words": ["abundant", "inhabitant", "warrant", "substantial"]}, {"label": "-alm / -arm (/ɑːm/)", "words": ["calm", "palm", "pharmacy", "father"]}], "words": [{"word": "abstract", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈæbstrækt/", "subgroup": "ae", "meaning": "adj. 抽象的；n. 摘要；v. 提取，摘录", "etymology": "拉丁语 abstractus，由 abs-（离开）+ trahere（拉）构成，字面意思是「从具体事物中拉出来」，引申为「抽象的」。14世纪进入英语，最初用于哲学和逻辑学。", "roots": [{"part": "abs-", "meaning": "离开，脱离"}, {"part": "tract (trahere)", "meaning": "拉，拖拽"}], "phonetics": "两个 a 都在闭音节中，都读 /æ/：ˈæb-strækt。第一个 a 在重读音节 ab- 中，第二个 a 在次重读音节 -stract 中。注意作动词时重音移到第二音节：/æbˈstrækt/。", "tip": "abs + tract = 「拉离」具体→抽象。同根词 extract（抽取）、attract（吸引）、distract（分心）都有 tract，记住「拉」这个核心动作。", "examples": [{"en": "The lecture was so abstract that half the students lost track after ten minutes.", "zh": "讲座太抽象了，十分钟后一半学生就跟不上了。", "source": "造句"}, {"en": "Mathematics is the abstract key to the universe.", "zh": "数学是通往宇宙的抽象钥匙。", "source": "改编自 Richard Feynman"}], "synonyms": [{"w": "theoretical", "ipa": "/ˌθɪəˈretɪkəl/", "gloss": "理论的", "note": "强调基于理论而非实践，比 abstract 更学术"}, {"w": "conceptual", "ipa": "/kənˈseptʃuəl/", "gloss": "概念上的", "note": "侧重「概念层面」，比 abstract 更中性"}], "antonyms": [{"w": "concrete", "ipa": "/ˈkɒŋkriːt/", "gloss": "具体的", "note": "与 abstract 构成最经典的反义对"}], "nuance": "abstract 强调「脱离具体实例」，theoretical 强调「基于理论假设」，conceptual 强调「在概念层面运作」。托福阅读中 abstract 常用作名词「论文摘要」。"}, {"word": "adequate", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈædɪkwət/", "subgroup": "ae", "meaning": "adj. 充足的，足够的；尚可的，合格的", "etymology": "拉丁语 adaequatus，由 ad-（朝向）+ aequare（使相等）构成，字面意思是「使达到同等水平」，即「够格、够用」。17世纪进入英语。", "roots": [{"part": "ad-", "meaning": "朝向，接近"}, {"part": "equ (aequus)", "meaning": "相等"}], "phonetics": "重读首音节 ad- 中的 a 读 /æ/：ˈæd-ɪ-kwət。注意第三音节 -quate 中的 a 弱化为 /ə/，不读 /eɪ/。与 equation /ɪˈkweɪʒən/ 对比：同源但重读位置不同导致元音不同。", "tip": "ad（朝向）+ equate（等同）= 够得上标准 = 充足的。注意 adequate 是「刚刚够」，带一丝「不算出色」的语感。", "examples": [{"en": "The funding is adequate for basic research but insufficient for clinical trials.", "zh": "资金够做基础研究，但不够做临床试验。", "source": "造句"}, {"en": "No adequate preparation can be made for an event so overwhelming.", "zh": "对于如此压倒性的事件，任何准备都显得不够充分。", "source": "改编自 Winston Churchill"}], "synonyms": [{"w": "sufficient", "ipa": "/səˈfɪʃənt/", "gloss": "充足的", "note": "比 adequate 更正式，无「勉强够」的暗示"}, {"w": "ample", "ipa": "/ˈæmpəl/", "gloss": "充裕的", "note": "比 adequate 更充裕，有「绰绰有余」之感"}], "antonyms": [{"w": "inadequate", "ipa": "/ɪnˈædɪkwət/", "gloss": "不充分的", "note": "直接加前缀 in- 构成反义"}], "nuance": "adequate = 刚好够用（可能暗示「不算好」）；sufficient = 客观上足够（中性）；ample = 绰绰有余。托福写作中 adequate 常出现在 adequate evidence / adequate resources 等搭配中。"}, {"word": "capacity", "hl": "a", "levels": ["六级", "托福"], "ipa": "/kəˈpæsəti/", "subgroup": "ae", "meaning": "n. 容量；能力；身份，职位", "etymology": "拉丁语 capacitas，由 capax（能容纳的）派生，词根 cap-（抓取、容纳）。15世纪进入英语，最初指「容器的容积」，后引申为「人的能力」和「身份职务」。", "roots": [{"part": "cap- (capere)", "meaning": "抓取，容纳"}, {"part": "-acity", "meaning": "…的性质（名词后缀）"}], "phonetics": "重读在第二音节 -pac-，其中 a 读 /æ/：kə-ˈpæs-ə-ti。首音节 ca- 和末音节 -ty 的元音都弱化为 /ə/ 和 /i/。同根词 capable /ˈkeɪpəbl/ 中 a 却读 /eɪ/——因为开音节。", "tip": "cap = 「抓住、装下」→ capacity = 能装下多少 = 容量/能力。同根：capture（捕获）、capable（有能力的）、capital（首都=首要之地）。", "examples": [{"en": "The stadium has a seating capacity of 80,000.", "zh": "体育场可容纳八万个座位。", "source": "造句"}, {"en": "She attended the meeting in her capacity as department head.", "zh": "她以部门负责人的身份出席了会议。", "source": "造句"}], "synonyms": [{"w": "capability", "ipa": "/ˌkeɪpəˈbɪləti/", "gloss": "能力，才能", "note": "侧重潜在能力，capacity 侧重最大容量或上限"}, {"w": "volume", "ipa": "/ˈvɒljuːm/", "gloss": "容积，体积", "note": "物理意义上的「容积」，比 capacity 更具象"}], "antonyms": [{"w": "incapacity", "ipa": "/ˌɪnkəˈpæsəti/", "gloss": "无能力", "note": "加前缀 in- 构成反义"}], "nuance": "capacity 有三个常用义项：物理容量（the tank's capacity）、能力上限（beyond my capacity）、身份（in my capacity as…）。托福听力中「身份」义项是高频考点。"}, {"word": "inhabitant", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ɪnˈhæbɪtənt/", "subgroup": "ae", "meaning": "n. 居民，住户", "etymology": "拉丁语 inhabitare，由 in-（在…之中）+ habitare（居住）构成。habitare 来自 habere（持有、拥有），居住即「持有一块地方」。-ant 为施动者后缀。", "roots": [{"part": "in-", "meaning": "在…之中"}, {"part": "habit (habitare)", "meaning": "居住"}, {"part": "-ant", "meaning": "做…的人"}], "phonetics": "重读在第二音节 -hab-，其中 a 读 /æ/：ɪn-ˈhæb-ɪ-tənt。注意最后的 -tant 中 a 弱化为 /ə/。同一个单词里的两个 a，一个读 /æ/ 一个读 /ə/，完美展示重读 vs 非重读的对比。", "tip": "in（里面）+ habit（居住习惯）+ ant（人）= 住在里面的人 = 居民。habit 本身就有「习惯」的意思——住久了就成习惯了。", "examples": [{"en": "The island has fewer than 500 permanent inhabitants.", "zh": "这座岛上的常住居民不到五百人。", "source": "造句"}, {"en": "The inhabitants of Macondo had not yet learned to be surprised by ice.", "zh": "马孔多的居民还没有学会对冰块感到惊讶。", "source": "《百年孤独》Gabriel García Márquez"}], "synonyms": [{"w": "resident", "ipa": "/ˈrezɪdənt/", "gloss": "居民", "note": "更正式，常用于法律或行政语境"}, {"w": "dweller", "ipa": "/ˈdwelər/", "gloss": "居住者", "note": "常与地点搭配：city dweller（城市居民）、cave dweller（穴居人）"}], "antonyms": [], "nuance": "inhabitant 强调「长期居住在某地的人」，resident 更偏行政/法律概念（permanent resident 永久居民），dweller 强调居住方式或环境。托福阅读中三个词都高频。"}, {"word": "elaborate", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ɪˈlæbərət/", "subgroup": "ae", "meaning": "adj. 精心制作的，复杂的；v. 详细阐述", "etymology": "拉丁语 elaboratus，由 e-（出）+ laborare（劳作）构成，字面意思是「通过劳作做出来的」，引申为「精心制作的」。作动词时意为「进一步劳作→详细阐述」。", "roots": [{"part": "e- (ex-)", "meaning": "出，向外"}, {"part": "labor (laborare)", "meaning": "劳作"}], "phonetics": "重读在第二音节 -lab-，其中 a 读 /æ/：ɪ-ˈlæb-ər-ət。作形容词时尾音节 -ate 读 /ət/；作动词时 -ate 读 /eɪt/：/ɪˈlæbəreɪt/。同一个词里 a 的两种读法（/æ/ vs /eɪ/）取决于词性。", "tip": "e + labor = 「劳心劳力做出来的」= 精心制作的。动词用法「详细阐述」= 把论点「加工」得更细致。Could you elaborate on that? 是口语和学术讨论中的万能追问句。", "examples": [{"en": "The temple is famous for its elaborate carvings and gilded ceilings.", "zh": "这座寺庙以精致的雕刻和镀金天花板闻名。", "source": "造句"}, {"en": "Could you elaborate on the methodology used in your research?", "zh": "你能详细说明一下你研究中使用的方法论吗？", "source": "学术场景常用句"}], "synonyms": [{"w": "intricate", "ipa": "/ˈɪntrɪkət/", "gloss": "错综复杂的", "note": "强调结构复杂、细节繁多，比 elaborate 更偏「难以理解」"}, {"w": "sophisticated", "ipa": "/səˈfɪstɪkeɪtɪd/", "gloss": "精密的，老练的", "note": "比 elaborate 多一层「高级感」"}], "antonyms": [{"w": "simple", "ipa": "/ˈsɪmpəl/", "gloss": "简单的", "note": "最直接的反义"}, {"w": "plain", "ipa": "/pleɪn/", "gloss": "朴素的", "note": "强调不加装饰"}], "nuance": "elaborate 强调「投入大量心思和劳动」，intricate 强调「结构复杂交织」，sophisticated 强调「精密且高级」。托福口语中 Could you elaborate? 是高频表达。"}, {"word": "navigate", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈnævɪɡeɪt/", "subgroup": "ei", "meaning": "v. 导航；驾驶（船/飞机）；穿越，应对（复杂局面）", "etymology": "拉丁语 navigare，由 navis（船）+ agere（驱动）构成，字面意思是「驾船」。16世纪进入英语，现已扩展到「在任何复杂环境中找路」，包括互联网导航。", "roots": [{"part": "nav- (navis)", "meaning": "船"}, {"part": "-ig- (agere)", "meaning": "驱动，行动"}, {"part": "-ate", "meaning": "动词后缀"}], "phonetics": "词尾 -ate 在动词中读 /eɪt/：ˈnæv-ɪ-ɡeɪt。注意首音节 nav- 中的 a 读 /æ/（闭音节），而尾音节 -gate 中的 a 读 /eɪ/（开音节 a_e 模式）——同一个词里 a 的两种读法并存。", "tip": "nav（船）+ gate（驱动）= 开船 = 导航。navy（海军）、naval（海军的）同根。现代用法：navigate a website（浏览网站）、navigate a crisis（应对危机）。", "examples": [{"en": "Ancient Polynesians navigated thousands of miles across the Pacific using only the stars.", "zh": "古代波利尼西亚人仅凭星星就能在太平洋上航行数千英里。", "source": "造句"}, {"en": "She had to navigate the complex bureaucracy to get her visa approved.", "zh": "她不得不在复杂的官僚体系中周旋以获得签证批准。", "source": "造句"}], "synonyms": [{"w": "steer", "ipa": "/stɪər/", "gloss": "驾驶，引导", "note": "更具象，强调方向盘/舵的操控"}, {"w": "maneuver", "ipa": "/məˈnuːvər/", "gloss": "操纵，巧妙应对", "note": "强调在狭小或困难空间中灵活移动"}], "antonyms": [], "nuance": "navigate 强调「在复杂路径中找到方向」，steer 强调「控制方向」，maneuver 强调「灵活操控」。托福阅读中 navigate 的引申义（应对复杂局面）是高频考点。"}, {"word": "migrate", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈmaɪɡreɪt/", "subgroup": "ei", "meaning": "v. 迁移，迁徙；（数据/系统）迁移", "etymology": "拉丁语 migrare（迁移、移动），可能与古拉丁语 *mei-（移动、交换）有关。migrate 保留了最原始的含义：从一个地方移到另一个地方。", "roots": [{"part": "migr- (migrare)", "meaning": "迁移"}, {"part": "-ate", "meaning": "动词后缀"}], "phonetics": "词尾 -ate 读 /eɪt/：ˈmaɪ-ɡreɪt。注意首音节 mi- 中的 i 读 /aɪ/（开音节），-grate 中的 a 读 /eɪ/（a_e 模式）。这个词里没有 /æ/ 的 a。", "tip": "migr = 迁移。同根：immigrant（移入者）、emigrant（移出者）、immigration（移民入境）。记住 im- = 进，e- = 出，migr = 移。", "examples": [{"en": "Every autumn, millions of monarch butterflies migrate south to Mexico.", "zh": "每年秋天，数百万只帝王蝶向南迁徙到墨西哥。", "source": "National Geographic 风格"}, {"en": "The company plans to migrate all its data to cloud servers by next quarter.", "zh": "公司计划在下季度前将所有数据迁移到云服务器。", "source": "造句"}], "synonyms": [{"w": "relocate", "ipa": "/ˌriːləʊˈkeɪt/", "gloss": "搬迁", "note": "更强调「重新定居」，常用于人或公司"}, {"w": "emigrate", "ipa": "/ˈemɪɡreɪt/", "gloss": "移居国外", "note": "特指离开自己的国家"}], "antonyms": [{"w": "settle", "ipa": "/ˈsetəl/", "gloss": "定居", "note": "停止迁移，安定下来"}], "nuance": "migrate 是中性词，不特指方向；immigrate 强调「移入」，emigrate 强调「移出」。托福听力中动物迁徙（migration patterns）是高频话题。"}, {"word": "appreciate", "hl": "a", "levels": ["六级", "托福"], "ipa": "/əˈpriːʃieɪt/", "subgroup": "ei", "meaning": "v. 欣赏；感激；理解；升值", "etymology": "拉丁语 appretiare，由 ad-（朝向）+ pretium（价格、价值）构成，字面意思是「给予价值」。从「认识到价值」发展出「欣赏、感激」，从「增加价值」发展出「升值」。", "roots": [{"part": "ap- (ad-)", "meaning": "朝向"}, {"part": "preci- (pretium)", "meaning": "价格，价值"}, {"part": "-ate", "meaning": "动词后缀"}], "phonetics": "词尾 -ate 读 /eɪt/：ə-ˈpriː-ʃi-eɪt。首音节 a- 非重读，弱化为 /ə/。重读在第二音节 -pre-。这个词同时展示了 a 的两种读法：词首 /ə/（非重读弱化）和词尾 /eɪ/（-ate 后缀）。", "tip": "ap + price + ate = 「给价格」= 识货 = 欣赏/感激。同根词 precious（珍贵的）、price（价格）、appraise（评估）都围绕「价值」。", "examples": [{"en": "I really appreciate your help — it made all the difference.", "zh": "我真的很感谢你的帮助——这改变了一切。", "source": "造句"}, {"en": "Property values in the area have appreciated by 30% over the past decade.", "zh": "该地区的房产价值在过去十年中升值了30%。", "source": "造句"}], "synonyms": [{"w": "value", "ipa": "/ˈvæljuː/", "gloss": "重视，珍视", "note": "更直白，强调认为有价值"}, {"w": "cherish", "ipa": "/ˈtʃerɪʃ/", "gloss": "珍惜", "note": "比 appreciate 更深情，带有「小心呵护」的情感"}], "antonyms": [{"w": "depreciate", "ipa": "/dɪˈpriːʃieɪt/", "gloss": "贬值；贬低", "note": "de-（向下）+ pretium = 降低价值，经济和情感意义上都与 appreciate 相反"}], "nuance": "appreciate 四个义项：感激（I appreciate it）、欣赏（appreciate art）、理解（I appreciate the difficulty）、升值（assets appreciate）。托福中四个义项都可能出考题。depreciate 是完美反义词。"}, {"word": "evaluate", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ɪˈvæljueɪt/", "subgroup": "ei", "meaning": "v. 评估，评价", "etymology": "法语 évaluer，源自拉丁语 e-（出）+ valere（有价值、强壮）构成。字面意思是「把价值提取出来」，即评估某事物的价值。19世纪进入英语。", "roots": [{"part": "e- (ex-)", "meaning": "出"}, {"part": "valu- (valere)", "meaning": "有价值，强壮"}, {"part": "-ate", "meaning": "动词后缀"}], "phonetics": "词尾 -ate 读 /eɪt/：ɪ-ˈvæl-ju-eɪt。注意 val- 中的 a 读 /æ/（闭音节），-uate 中的 a 读 /eɪ/。一个词里两种 a 的读法并存，是绝佳的对比记忆材料。", "tip": "e（出）+ value（价值）+ ate = 把价值「算出来」= 评估。同根：value（价值）、valid（有效的）、equivalent（等值的）。", "examples": [{"en": "Teachers should evaluate students based on understanding, not memorization.", "zh": "教师应该根据理解力而非记忆力来评估学生。", "source": "造句"}, {"en": "We need to carefully evaluate the risks before investing.", "zh": "在投资前我们需要仔细评估风险。", "source": "造句"}], "synonyms": [{"w": "assess", "ipa": "/əˈses/", "gloss": "评估", "note": "更常用于正式场合，如税务评估、风险评估"}, {"w": "appraise", "ipa": "/əˈpreɪz/", "gloss": "估价，评价", "note": "侧重对价值或质量的专业判断"}], "antonyms": [], "nuance": "evaluate 最通用，assess 偏正式/专业（assess damage 评估损失），appraise 偏「估价」（appraise a house 给房子估价）。托福写作中 evaluate 是论证类作文的核心动词。"}, {"word": "manipulate", "hl": "a", "levels": ["六级", "托福"], "ipa": "/məˈnɪpjuleɪt/", "subgroup": "ei", "meaning": "v. 操纵，控制；（巧妙地）操作", "etymology": "拉丁语 manipulus（一把、一束），由 manus（手）+ plere（填满）构成。原意是「用手操作」，17世纪引申为「巧妙控制」，现代多含贬义「暗中操纵」。", "roots": [{"part": "mani- (manus)", "meaning": "手"}, {"part": "-pul- (plere)", "meaning": "填满"}, {"part": "-ate", "meaning": "动词后缀"}], "phonetics": "词尾 -ate 读 /eɪt/：mə-ˈnɪp-ju-leɪt。首音节 ma- 非重读弱化为 /mə/，重读在第二音节 -nip-。这个词的 a 出现了两次：首位 /ə/（弱化）和尾位 /eɪ/（-ate 后缀）。", "tip": "mani = 手（同 manual 手动的、manuscript 手稿）。manipulate = 「用手操控」→ 引申为暗中操纵。中性用法：manipulate data（处理数据）；贬义用法：manipulate people（操纵人心）。", "examples": [{"en": "The magician manipulated the cards so quickly that no one could follow.", "zh": "魔术师翻弄纸牌的速度快到没人能跟上。", "source": "造句"}, {"en": "Social media algorithms are designed to manipulate user behavior.", "zh": "社交媒体算法的设计目的就是操纵用户行为。", "source": "The Social Dilemma 风格"}], "synonyms": [{"w": "exploit", "ipa": "/ɪkˈsplɔɪt/", "gloss": "利用，剥削", "note": "比 manipulate 更强烈，暗示不正当利用"}, {"w": "maneuver", "ipa": "/məˈnuːvər/", "gloss": "操纵，策略性移动", "note": "比 manipulate 中性，可指军事或政治策略"}], "antonyms": [], "nuance": "manipulate 兼有中性和贬义：科学语境中性（manipulate variables 控制变量），人际关系中贬义（manipulate someone 操纵某人）。托福阅读中常考中性用法。"}, {"word": "father", "hl": "a", "levels": ["基础"], "ipa": "/ˈfɑːðər/", "subgroup": "aa", "meaning": "n. 父亲；创始人；v. 成为…的父亲", "etymology": "古英语 fæder，源自原始日耳曼语 *fadēr，最终来自原始印欧语 *ph₂tḗr（父亲）。这是人类最古老的词汇之一，几乎所有印欧语言中都有同源词：拉丁语 pater、希腊语 patēr、梵语 pitṛ。", "roots": [{"part": "father (ph₂tḗr)", "meaning": "父亲（原始印欧语）"}], "phonetics": "fa- 中的 a 读 /ɑː/，不读 /æ/：ˈfɑː-ðər。这是 a 读 /ɑː/ 的标杆词。-ther 中的 th 读浊音 /ð/（和 the、this 一样），er 读 /ər/。father 是 /ɑː/ 音位的锚定词，记住它的开口度和舌位，其他 /ɑː/ 词就有了参照。", "tip": "father 是 /ɑː/ 的「看板词」。同样读 /ɑː/ 的还有 rather、lather。注意 father 和 farther（更远的）发音几乎一样，只差一个 /r/。", "examples": [{"en": "My father taught me that the hardest choices require the strongest wills.", "zh": "我父亲教我，最艰难的选择需要最坚强的意志。", "source": "改编自 Marvel 台词"}, {"en": "George Washington is often called the father of the nation.", "zh": "乔治·华盛顿常被称为国父。", "source": "造句"}], "synonyms": [{"w": "patriarch", "ipa": "/ˈpeɪtriɑːrk/", "gloss": "家长；族长", "note": "正式用语，强调家族权威地位"}, {"w": "founder", "ipa": "/ˈfaʊndər/", "gloss": "创始人", "note": "引申义「之父」时的同义替换"}], "antonyms": [{"w": "mother", "ipa": "/ˈmʌðər/", "gloss": "母亲", "note": "对应关系"}], "nuance": "father 作为 /ɑː/ 的锚定词收录。引申义 the father of... 意为「…之父/创始人」，如 the father of modern physics（现代物理学之父）。"}, {"word": "calm", "hl": "a", "levels": ["六级"], "ipa": "/kɑːm/", "subgroup": "aa", "meaning": "adj. 平静的；n. 平静；v. 使平静", "etymology": "源自希腊语 kauma（酷热，正午的炎热），经拉丁语 cauma、古法语 calme 进入英语。原指「正午无风的炎热时段」→海面无风→平静。l 在14世纪后逐渐不发音。", "roots": [{"part": "calm (kauma)", "meaning": "酷热→无风→平静"}], "phonetics": "a 在 lm 前读 /ɑː/：kɑːm。l 不发音（silent l）。同样规律：palm /pɑːm/、balm /bɑːm/、psalm /sɑːm/——凡 a + lm 组合，l 哑音、a 读 /ɑː/。", "tip": "a + lm = /ɑːm/，l 不发音。calm、palm、balm、psalm、almond 都遵循这条规律。想象正午无风的海面——calm 的词源画面。", "examples": [{"en": "Keep calm and carry on.", "zh": "保持冷静，继续前行。", "source": "英国二战标语"}, {"en": "After the storm, an eerie calm settled over the city.", "zh": "风暴过后，一种诡异的平静笼罩了整座城市。", "source": "造句"}], "synonyms": [{"w": "serene", "ipa": "/sɪˈriːn/", "gloss": "宁静的", "note": "比 calm 更文学化，带有美好宁和之感"}, {"w": "composed", "ipa": "/kəmˈpəʊzd/", "gloss": "镇定的", "note": "强调面对压力仍保持镇定"}], "antonyms": [{"w": "agitated", "ipa": "/ˈædʒɪteɪtɪd/", "gloss": "焦躁的", "note": "情绪上的反面"}, {"w": "turbulent", "ipa": "/ˈtɜːrbjulənt/", "gloss": "动荡的", "note": "环境上的反面"}], "nuance": "calm 最通用；serene 带美感（a serene lake）；composed 强调自控力（She remained composed under pressure）；tranquil 偏书面，描述环境。"}, {"word": "palm", "hl": "a", "levels": ["六级"], "ipa": "/pɑːm/", "subgroup": "aa", "meaning": "n. 手掌；棕榈树；v. 藏在手心", "etymology": "拉丁语 palma（手掌），因棕榈叶展开后形似张开的手掌而得名。两个义项「手掌」和「棕榈」在拉丁语中就是同一个词。动词「藏在手心」源自魔术师的手法。", "roots": [{"part": "palm (palma)", "meaning": "手掌；棕榈叶"}], "phonetics": "a 在 lm 前读 /ɑː/，l 不发音：pɑːm。和 calm 完全同一规律。掌握 a + lm = /ɑːm/ 后，这组词全部解决。", "tip": "palm = 手掌 = 棕榈（因为棕榈叶像张开的手掌）。palm off = 骗人接受（把次品「藏在手心」推销出去）。Palm Sunday = 棕枝主日。", "examples": [{"en": "She read the lines on his palm and predicted a long life.", "zh": "她看了他手掌上的纹路，预言他会长寿。", "source": "造句"}, {"en": "Rows of palm trees lined the coastal boulevard.", "zh": "一排排棕榈树矗立在海滨大道两旁。", "source": "造句"}], "synonyms": [{"w": "hand", "ipa": "/hænd/", "gloss": "手", "note": "palm 特指手掌内侧平面，hand 指整个手"}], "antonyms": [], "nuance": "palm 有三个常见搭配：palm of one's hand（手掌）、palm tree（棕榈树）、palm off（蒙混推销）。注意 l 始终不发音。"}, {"word": "pharmacy", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈfɑːrməsi/", "subgroup": "aa", "meaning": "n. 药房；药学；制药业", "etymology": "希腊语 pharmakon（药物、毒物），经拉丁语 pharmacia 进入英语。pharmakon 在古希腊语中兼指「治病的药」和「害人的毒」，反映了古人对药物两面性的认知。", "roots": [{"part": "pharm- (pharmakon)", "meaning": "药物"}, {"part": "-acy", "meaning": "…的场所/状态（名词后缀）"}], "phonetics": "首音节 phar- 中的 a 在 r 前读 /ɑːr/（美式）：ˈfɑːr-mə-si。ph 读 /f/（希腊语借词标志）。同一规律：pharaoh /ˈfeəroʊ/、pharmaceutical /ˌfɑːrməˈsjuːtɪkəl/。", "tip": "pharm = 药。pharmaceutical（制药的）、pharmacist（药剂师）、pharmacology（药理学）都是同根词。ph = /f/ 是希腊语的标志，看到 ph- 就知道这是个学术范儿的词。", "examples": [{"en": "The pharmacy on the corner stays open 24 hours.", "zh": "街角的药房全天24小时营业。", "source": "造句"}, {"en": "She decided to pursue a degree in pharmacy after volunteering at a hospital.", "zh": "在医院做过志愿者后，她决定攻读药学学位。", "source": "造句"}], "synonyms": [{"w": "drugstore", "ipa": "/ˈdrʌɡstɔːr/", "gloss": "药店（美式）", "note": "美式日常用语，英式用 chemist's"}, {"w": "apothecary", "ipa": "/əˈpɒθɪkəri/", "gloss": "药剂师（古语）", "note": "莎士比亚时代用语，现已罕见"}], "antonyms": [], "nuance": "pharmacy 兼指「药房」和「药学」。美式日常说 drugstore，英式说 chemist's。pharmaceutical 是形容词形式，托福学术阅读高频词。"}, {"word": "alter", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈɔːltər/", "subgroup": "aw", "meaning": "v. 改变，修改；改建", "etymology": "拉丁语 alterare（使成为另一个），由 alter（另一个、其他的）派生。alter 与 other 同源，都来自原始印欧语 *al-（超越、其他的）。「变成另一个样子」即为「改变」。", "roots": [{"part": "alter", "meaning": "另一个，其他的"}], "phonetics": "al- 组合中 a 读 /ɔː/：ˈɔːl-tər。这是「a + l 家族」的核心规律——a 在 l 前嘴唇微圆、舌位升高，从 /æ/ 变成 /ɔː/。注意不要和 altar（祭坛）混淆：拼写差一个字母，发音完全一样。", "tip": "alter = 「另一个」→ 改变。alternative（替代方案）、alternate（交替的）、altruism（利他主义——为他人着想）都是同根词。alter ≠ altar（祭坛），别搞混。", "examples": [{"en": "The tailor can alter the suit to fit you perfectly.", "zh": "裁缝可以把这套西装改得完全合身。", "source": "造句"}, {"en": "Climate change will fundamentally alter ecosystems across the globe.", "zh": "气候变化将从根本上改变全球的生态系统。", "source": "造句"}], "synonyms": [{"w": "modify", "ipa": "/ˈmɒdɪfaɪ/", "gloss": "修改", "note": "比 alter 更强调「小幅调整」而非彻底改变"}, {"w": "revise", "ipa": "/rɪˈvaɪz/", "gloss": "修订", "note": "常用于文本、计划的修改"}], "antonyms": [{"w": "preserve", "ipa": "/prɪˈzɜːrv/", "gloss": "保存，维持", "note": "保持原状，与改变相反"}, {"w": "maintain", "ipa": "/meɪnˈteɪn/", "gloss": "维持", "note": "保持不变"}], "nuance": "alter 比 change 更正式，暗示有目的的修改；modify 强调微调；transform 强调彻底变化；revise 多指文本修订。托福中 alter 常与 significantly、fundamentally 搭配。"}, {"word": "falter", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈfɔːltər/", "subgroup": "aw", "meaning": "v. 犹豫；蹒跚；声音颤抖", "etymology": "中古英语 falteren，可能源自古北欧语 faltrast（受阻），与 fold（折叠）有关。「脚步折叠」→蹒跚，「声音折叠」→颤抖，「决心折叠」→犹豫。三个义项共享「无法保持稳定」的核心意象。", "roots": [{"part": "falt- (faltrast)", "meaning": "受阻，失稳"}], "phonetics": "al 组合中 a 读 /ɔː/：ˈfɔːl-tər。和 alter 规律一致——a + l + 辅音 = /ɔːl/。注意美式中 l 发音清晰，英式中 l 可能略暗。", "tip": "falter = fault（错误）的近亲——脚步出了「错」就蹒跚，声音出了「错」就颤抖，决心出了「错」就犹豫。和 alter 押韵：-alter 家族。", "examples": [{"en": "Her voice faltered as she described the accident.", "zh": "描述那场事故时，她的声音开始颤抖。", "source": "造句"}, {"en": "The economy faltered in the third quarter as consumer spending declined.", "zh": "随着消费者支出下降，经济在第三季度开始疲软。", "source": "经济新闻风格"}], "synonyms": [{"w": "hesitate", "ipa": "/ˈhezɪteɪt/", "gloss": "犹豫", "note": "比 falter 更主动，是「选择暂停」；falter 是「无法继续」"}, {"w": "stumble", "ipa": "/ˈstʌmbəl/", "gloss": "绊倒，结巴", "note": "物理上的失稳，比 falter 更突然"}], "antonyms": [{"w": "persevere", "ipa": "/ˌpɜːrsɪˈvɪər/", "gloss": "坚持不懈", "note": "不犹豫、不动摇地继续"}], "nuance": "falter 强调「原本在进行中的事开始动摇/失稳」：步伐 falter（蹒跚）、声音 falter（颤抖）、信心 falter（动摇）、经济 falter（疲软）。hesitate 是主动暂停，falter 是被动失稳。"}, {"word": "exalt", "hl": "a", "levels": ["托福"], "ipa": "/ɪɡˈzɔːlt/", "subgroup": "aw", "meaning": "v. 赞颂，颂扬；提升（地位）", "etymology": "拉丁语 exaltare，由 ex-（向上）+ altus（高）构成，字面意思是「使升高」。altus 也是 altitude（海拔）、altar（祭坛，高台）的词根。从物理上的「升高」引申为精神上的「赞颂」。", "roots": [{"part": "ex-", "meaning": "向上，向外"}, {"part": "alt- (altus)", "meaning": "高"}], "phonetics": "重读在第二音节，-xalt 中的 a 在 lt 前读 /ɔː/：ɪɡ-ˈzɔːlt。x 读 /ɡz/（元音前的 ex- 规律）。与 exult（欢欣）拼写相近但意义不同：exalt = 赞颂，exult = 欢欣。", "tip": "ex（向上）+ alt（高）= 捧到高处 = 赞颂。altitude（海拔）= alt（高）+ itude（状态）。注意区分 exalt（赞颂）和 exult（欢欣/狂喜），一字之差。", "examples": [{"en": "The poem exalts the beauty of nature in simple but powerful language.", "zh": "这首诗用质朴而有力的语言颂扬自然之美。", "source": "造句"}, {"en": "He was exalted to the rank of general after the decisive victory.", "zh": "在那场决定性胜利之后，他被提拔为将军。", "source": "造句"}], "synonyms": [{"w": "glorify", "ipa": "/ˈɡlɔːrɪfaɪ/", "gloss": "美化，颂扬", "note": "比 exalt 更常用，有时含贬义「过度美化」"}, {"w": "elevate", "ipa": "/ˈelɪveɪt/", "gloss": "提升，提拔", "note": "比 exalt 更中性，常用于职位或地位"}], "antonyms": [{"w": "humble", "ipa": "/ˈhʌmbəl/", "gloss": "使谦卑", "note": "把人从高处拉下来"}, {"w": "demean", "ipa": "/dɪˈmiːn/", "gloss": "贬低", "note": "降低某人的尊严"}], "nuance": "exalt 有庄严感，常出现在宗教和文学语境中（exalt God）。elevate 更中性实用（elevate the discussion），glorify 可能暗含「过度美化」（glorify violence）。"}, {"word": "default", "hl": "a", "levels": ["六级", "托福"], "ipa": "/dɪˈfɔːlt/", "subgroup": "aw", "meaning": "n. 默认（设置）；违约；v. 违约；默认选择", "etymology": "古法语 defaute，由 de-（离开）+ faillir（失败、缺失）构成，原意是「缺失、未履行」。法律上指「未到庭→败诉」，金融上指「未还款→违约」。计算机术语「默认值」是「不做选择时自动使用的设定」。", "roots": [{"part": "de-", "meaning": "离开，缺失"}, {"part": "fault (faillir)", "meaning": "失败，过错"}], "phonetics": "-fault 中的 a 在 ult 前读 /ɔː/（l 在美式中通常不发音或弱化）：dɪ-ˈfɔːlt。同样规律：fault /fɔːlt/、vault /vɔːlt/——a + ult = /ɔːlt/。", "tip": "de + fault = 出了「错误/缺失」= 违约。fault（错误）是它的核心。by default = 因为别人没做→自动获得（He won by default = 对手弃权他就赢了）。计算机的 default settings = 出厂设置。", "examples": [{"en": "The browser's default search engine can be changed in settings.", "zh": "浏览器的默认搜索引擎可以在设置中更改。", "source": "造句"}, {"en": "Argentina defaulted on its national debt in 2001, triggering an economic crisis.", "zh": "阿根廷在2001年对其国债违约，引发了经济危机。", "source": "造句"}], "synonyms": [{"w": "preset", "ipa": "/ˌpriːˈset/", "gloss": "预设", "note": "计算机语境下与 default 近义"}, {"w": "breach", "ipa": "/briːtʃ/", "gloss": "违反（合同）", "note": "法律语境下与 default 近义"}], "antonyms": [{"w": "comply", "ipa": "/kəmˈplaɪ/", "gloss": "遵守", "note": "履行义务，与「违约」相反"}], "nuance": "default 的两大义域：技术领域=默认设置（default settings、by default）；金融法律领域=违约（default on a loan、in default）。托福阅读中两种用法都可能出现。"}, {"word": "assault", "hl": "a", "levels": ["六级", "托福"], "ipa": "/əˈsɔːlt/", "subgroup": "aw", "meaning": "n. 攻击，袭击；v. 攻击，突袭", "etymology": "古法语 assaut，源自拉丁语 assaltus/adsaltus，由 ad-（朝向）+ saltare（跳跃）构成。字面意思是「跳向（敌人）」——古代战争中的冲锋就是跳跃扑向对手。", "roots": [{"part": "as- (ad-)", "meaning": "朝向"}, {"part": "sault (saltare)", "meaning": "跳跃"}], "phonetics": "首音节 a- 非重读弱化为 /ə/，重读音节 -sault 中 au 读 /ɔː/：ə-ˈsɔːlt。l 在 -ault 中通常不发音（同 fault、vault）。注意不要把 -sault 读成 /sɒlt/（salt 盐）。", "tip": "as + sault = 「跳向」敌人 = 攻击。同根词 somersault（翻跟头，som- = 在上方 + sault = 跳）也有「跳」的含义。salt（盐）和 sault（跳）拼写相近但无关。", "examples": [{"en": "The fortress withstood three days of relentless assault.", "zh": "这座堡垒抵御了三天不间断的猛攻。", "source": "造句"}, {"en": "Verbal assault can be just as damaging as physical violence.", "zh": "语言攻击的破坏力可以不亚于肢体暴力。", "source": "造句"}], "synonyms": [{"w": "attack", "ipa": "/əˈtæk/", "gloss": "攻击", "note": "最通用，assault 更正式且常含法律含义"}, {"w": "onslaught", "ipa": "/ˈɒnslɔːt/", "gloss": "猛攻", "note": "比 assault 更猛烈，强调大规模攻势"}], "antonyms": [{"w": "defend", "ipa": "/dɪˈfend/", "gloss": "防御", "note": "攻击的反面"}, {"w": "retreat", "ipa": "/rɪˈtriːt/", "gloss": "撤退", "note": "停止进攻，后撤"}], "nuance": "assault 比 attack 更正式，且在法律中有特定含义（assault = 威胁性攻击，battery = 实际身体接触）。assault rifle（突击步枪）、sexual assault（性侵犯）是高频搭配。"}, {"word": "abundant", "hl": "a", "levels": ["六级", "托福"], "ipa": "/əˈbʌndənt/", "subgroup": "schwa", "meaning": "adj. 丰富的，充裕的", "etymology": "拉丁语 abundans，由 ab-（从）+ undare（涌出，如波浪）构成，字面意思是「像波浪一样涌出来的」→多到溢出→丰富的。unda（波浪）也是 undulate（波动）的词根。", "roots": [{"part": "ab-", "meaning": "从，离开"}, {"part": "und- (unda)", "meaning": "波浪，涌出"}, {"part": "-ant", "meaning": "形容词后缀"}], "phonetics": "首音节 a- 非重读，弱化为 /ə/：ə-ˈbʌn-dənt。注意重读在第二音节 -bun-，u 读 /ʌ/。最后的 -dant 中 a 也弱化为 /ə/。一个词里两个 a 都读 /ə/——典型的弱化模式。", "tip": "ab + und（波浪）= 像波浪一样涌来 = 丰富。想象大海的波浪一浪接一浪地涌来，多得溢出来。同根：abound（充满）、redundant（冗余的，re-反复 + und 涌出）。", "examples": [{"en": "The region is blessed with abundant natural resources.", "zh": "该地区拥有丰富的自然资源。", "source": "造句"}, {"en": "Evidence of early human settlement is abundant in this valley.", "zh": "在这个山谷中，早期人类定居的证据非常丰富。", "source": "考古类托福阅读风格"}], "synonyms": [{"w": "plentiful", "ipa": "/ˈplentɪfəl/", "gloss": "大量的", "note": "比 abundant 更口语化"}, {"w": "copious", "ipa": "/ˈkəʊpiəs/", "gloss": "大量的，丰盛的", "note": "更书面，强调数量之多"}], "antonyms": [{"w": "scarce", "ipa": "/skeərs/", "gloss": "稀缺的", "note": "最直接的反义词"}, {"w": "sparse", "ipa": "/spɑːrs/", "gloss": "稀疏的", "note": "强调分布稀少"}], "nuance": "abundant 强调「多到溢出」，plentiful 强调「足够多」，copious 强调「量大」（copious notes 大量笔记）。托福写作中 abundant + resources/evidence/opportunities 是高频搭配。"}, {"word": "apparatus", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˌæpəˈreɪtəs/", "subgroup": "schwa", "meaning": "n. 装置，仪器；机构，体制", "etymology": "拉丁语 apparatus（准备好的东西），由 ad-（朝向）+ parare（准备）构成。原意是「为某任务准备好的全套工具」，引申为「仪器装置」和「组织机构」。", "roots": [{"part": "ap- (ad-)", "meaning": "朝向"}, {"part": "par- (parare)", "meaning": "准备"}, {"part": "-atus", "meaning": "名词后缀"}], "phonetics": "四个音节中有四个 a，每个读法不同：ˌæp-ə-ˈreɪ-təs。第一个 a = /æ/（次重读），第二个 a = /ə/（弱化），第三个 a = /eɪ/（重读 -rat-），第四个 a = /ə/（弱化）。一个词完美展示 A 的三种读法。", "tip": "ap + par（准备）= 准备好的全套东西 = 装置/机构。同根词：prepare（准备）、separate（分离=各自准备好）、repair（re-重新 + pair 准备 = 修复）。这个词本身就是 A 发音的活教材。", "examples": [{"en": "The laboratory was equipped with the latest scientific apparatus.", "zh": "实验室配备了最新的科学仪器。", "source": "造句"}, {"en": "The state apparatus was designed to suppress any form of dissent.", "zh": "国家机器的设计目的是压制任何形式的异见。", "source": "政治学语境"}], "synonyms": [{"w": "equipment", "ipa": "/ɪˈkwɪpmənt/", "gloss": "设备", "note": "更日常，范围更广"}, {"w": "device", "ipa": "/dɪˈvaɪs/", "gloss": "装置，设备", "note": "通常指单个装置，apparatus 常指成套设备"}], "antonyms": [], "nuance": "apparatus 比 equipment 更正式学术，且常指成套的、有特定功能的装置。引申义「机构/体制」（state apparatus 国家机器、party apparatus 党组织）在政治学和托福阅读中常见。"}, {"word": "comparable", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈkɒmpərəbl/", "subgroup": "schwa", "meaning": "adj. 可比较的；类似的", "etymology": "拉丁语 comparabilis，由 com-（共同）+ parare（准备、配对）构成。原意是「能放在一起比较的」。注意重音在第一音节，与 compare /kəmˈpeər/ 的重音位置不同。", "roots": [{"part": "com-", "meaning": "共同"}, {"part": "par- (parare)", "meaning": "准备，配对"}, {"part": "-able", "meaning": "可…的"}], "phonetics": "重读在首音节 com-：ˈkɒm-pər-ə-bl。第二、三音节的 a 都弱化为 /ə/。常见错误是把重音放在第二音节读成 /kəmˈpærəbl/——虽然有人这样读，但标准发音重音在首音节。", "tip": "compare + able = 可比较的。注意重音陷阱：compare 重音在第二音节（comˈpare），comparable 重音在第一音节（ˈcomparable）。重音一移，/æ/ 变 /ə/。", "examples": [{"en": "No other city offers a lifestyle comparable to that of Paris.", "zh": "没有其他城市能提供与巴黎相媲美的生活方式。", "source": "造句"}, {"en": "The two studies produced comparable results despite using different methods.", "zh": "尽管使用了不同的方法，两项研究得出了可比较的结果。", "source": "造句"}], "synonyms": [{"w": "equivalent", "ipa": "/ɪˈkwɪvələnt/", "gloss": "等同的", "note": "比 comparable 更强，暗示价值或功能上相等"}, {"w": "analogous", "ipa": "/əˈnæləɡəs/", "gloss": "类似的", "note": "强调结构或功能上的相似性"}], "antonyms": [{"w": "incomparable", "ipa": "/ɪnˈkɒmpərəbl/", "gloss": "无与伦比的", "note": "加前缀 in- 构成反义，注意含义偏正面「好到无法比较」"}], "nuance": "comparable 意为「水平相近，可以放在一起比」；equivalent 更强，意为「等同的」；analogous 强调「类比关系」而非程度。comparable to 和 comparable with 都正确。"}, {"word": "vulnerable", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈvʌlnərəbl/", "subgroup": "schwa", "meaning": "adj. 脆弱的，易受伤的；易受攻击的", "etymology": "拉丁语 vulnerabilis，由 vulnerare（使受伤）派生，词根 vulnus（伤口）。字面意思是「可以被伤到的」。-able 在此变体为 -erable。", "roots": [{"part": "vulner- (vulnus)", "meaning": "伤口"}, {"part": "-able", "meaning": "可…的"}], "phonetics": "重读首音节 vul-：ˈvʌl-nər-ə-bl。第二音节 -ner- 和第三音节 -a- 都弱化，其中 a 读 /ə/。注意 l 之后的 n 不要吞掉——中国学习者常把 vulnerable 读成三音节 /ˈvʌlnrəbl/，实际是四音节。", "tip": "vulner = 伤口（wound）→ vulnerable = 容易受伤的。Brené Brown 的 TED 演讲让 vulnerability（脆弱性）成为全球热词：「脆弱不是软弱，是勇敢地展示真实自我。」", "examples": [{"en": "Children are particularly vulnerable to the effects of air pollution.", "zh": "儿童尤其容易受到空气污染的影响。", "source": "造句"}, {"en": "Vulnerability is not weakness; it is our greatest measure of courage.", "zh": "脆弱不是软弱，它是衡量勇气最重要的尺度。", "source": "Brené Brown"}], "synonyms": [{"w": "susceptible", "ipa": "/səˈseptəbl/", "gloss": "易受影响的", "note": "比 vulnerable 更侧重「容易被影响/感染」"}, {"w": "fragile", "ipa": "/ˈfrædʒaɪl/", "gloss": "脆弱的，易碎的", "note": "更偏物理层面的脆弱"}], "antonyms": [{"w": "resilient", "ipa": "/rɪˈzɪliənt/", "gloss": "有韧性的", "note": "受伤后能恢复的能力"}, {"w": "invulnerable", "ipa": "/ɪnˈvʌlnərəbl/", "gloss": "刀枪不入的", "note": "加前缀 in- 构成反义"}], "nuance": "vulnerable 强调「暴露在危险中、缺乏保护」（vulnerable to attack / disease）；susceptible 强调「体质/性格容易受某影响」（susceptible to flattery）；fragile 强调物理脆弱性（fragile glass）。"}, {"word": "substantial", "hl": "a", "levels": ["六级", "托福"], "ipa": "/səbˈstænʃəl/", "subgroup": "schwa", "meaning": "adj. 大量的，可观的；实质的，真实的", "etymology": "拉丁语 substantialis，由 substantia（实质、物质）派生，sub-（在下面）+ stare（站立）= 「站在下面的东西」= 基础/本质。-al 为形容词后缀。", "roots": [{"part": "sub-", "meaning": "在下面"}, {"part": "st- (stare)", "meaning": "站立"}, {"part": "-ial", "meaning": "形容词后缀"}], "phonetics": "首音节 sub- 中的 u 弱化：səb-ˈstæn-ʃəl。重读在第二音节 -stan-，其中 a 读 /æ/。末音节 -tial 中 a 弱化为 /ə/。同一个词中 a 分别读 /æ/ 和 /ə/——重读 vs 非重读的对比。", "tip": "sub（下面）+ stance（站立）= 「站在下面的东西」= 实质/基础 → 实质性的 → 大量的。substance（物质）、substantiate（证实）是同根词。substantial evidence = 充分证据，托福高频搭配。", "examples": [{"en": "The project requires a substantial investment of both time and money.", "zh": "这个项目需要大量的时间和金钱投入。", "source": "造句"}, {"en": "There is substantial evidence that regular exercise reduces the risk of heart disease.", "zh": "有大量证据表明，经常锻炼能降低心脏病风险。", "source": "医学类托福阅读风格"}], "synonyms": [{"w": "considerable", "ipa": "/kənˈsɪdərəbl/", "gloss": "相当大的", "note": "与 substantial 非常接近，但更偏「值得注意的大」"}, {"w": "significant", "ipa": "/sɪɡˈnɪfɪkənt/", "gloss": "重要的，显著的", "note": "比 substantial 更侧重「意义重大」"}], "antonyms": [{"w": "negligible", "ipa": "/ˈneɡlɪdʒəbl/", "gloss": "可忽略的", "note": "少到不值一提"}, {"w": "trivial", "ipa": "/ˈtrɪviəl/", "gloss": "微不足道的", "note": "既指量少也指不重要"}], "nuance": "substantial = 大量的 + 实质性的（双重含义）。substantial evidence（充分证据）、substantial improvement（显著改善）、substantial meal（丰盛一餐）——在不同语境中偏重不同含义。"}, {"word": "warrant", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈwɒrənt/", "subgroup": "o", "meaning": "n. 令状，搜查令；保证书；v. 保证；使有正当理由", "etymology": "古法语 warant（保护者、保证），源自日耳曼语 *warand-（保护）。原意是「提供保护/保证的人或文书」，引申为「授权文书」（逮捕令、搜查令）和「使正当」。同源词：guarantee（担保）、warranty（保修）。", "roots": [{"part": "war- (warand)", "meaning": "保护，保证"}], "phonetics": "w 后面的 a 读 /ɒ/（英式）或 /ɔːr/（美式）：ˈwɒr-ənt。这是 wa- 组合的核心规律——w 后的 a 不读 /æ/ 而读 /ɒ/，因为 /w/ 的圆唇动作把后面的元音拉圆了。同规律：want、war、warm、wash。", "tip": "warrant = war（保护）+ ant → 提供保护/授权的文书。warrant ≈ guarantee（担保），两者同源。search warrant（搜查令）= 授权搜查的文书。The evidence warrants further investigation = 证据有充分理由要求进一步调查。", "examples": [{"en": "The police obtained a search warrant before entering the building.", "zh": "警方在进入大楼前获得了搜查令。", "source": "造句"}, {"en": "The severity of the situation warrants immediate action.", "zh": "事态的严重性使得必须立即采取行动。", "source": "造句"}], "synonyms": [{"w": "justify", "ipa": "/ˈdʒʌstɪfaɪ/", "gloss": "证明…有理", "note": "动词义与 warrant 近义，但 warrant 更正式"}, {"w": "authorize", "ipa": "/ˈɔːθəraɪz/", "gloss": "授权", "note": "侧重「正式批准」"}], "antonyms": [], "nuance": "warrant 作名词常搭配：search warrant（搜查令）、arrest warrant（逮捕令）、death warrant（死刑执行令）。作动词意为「使有正当理由」或「保证」，比 justify 更正式。"}, {"word": "quarantine", "hl": "a", "levels": ["六级", "托福"], "ipa": "/ˈkwɒrəntiːn/", "subgroup": "o", "meaning": "n. 隔离（期）；v. 隔离", "etymology": "意大利语 quarantina（四十天），由 quaranta（四十）派生。14世纪黑死病期间，威尼斯要求来自疫区的船只在港口外停泊40天才能靠岸——这就是人类历史上第一个隔离制度，quarantine 这个词由此诞生。", "roots": [{"part": "quarant- (quaranta)", "meaning": "四十"}], "phonetics": "qu 后面的 a 读 /ɒ/（英式）或 /ɔːr/（美式）：ˈkwɒr-ən-tiːn。和 wa- 同理，qu = /kw/，圆唇的 /w/ 把后面的 a 拉圆为 /ɒ/。第二个 a 弱化为 /ə/。末尾 -ine 读 /iːn/。", "tip": "quarant = 40（意大利语）→ quarantine = 40天隔离。2020年疫情让这个词人尽皆知。小巧思：quarantine 和 quarter（四分之一）都有 quar-（四），但 quarantine 是「四十」不是「四」。", "examples": [{"en": "Passengers arriving from affected areas must undergo a 14-day quarantine.", "zh": "来自受影响地区的旅客必须接受14天隔离。", "source": "造句"}, {"en": "The infected files were automatically quarantined by the antivirus software.", "zh": "受感染的文件被杀毒软件自动隔离了。", "source": "造句"}], "synonyms": [{"w": "isolation", "ipa": "/ˌaɪsəˈleɪʃən/", "gloss": "隔离", "note": "更广义的隔离，quarantine 特指为防止传染病传播的隔离"}, {"w": "seclusion", "ipa": "/sɪˈkluːʒən/", "gloss": "隔绝，隐居", "note": "比 quarantine 更主动，常指自愿远离"}], "antonyms": [{"w": "release", "ipa": "/rɪˈliːs/", "gloss": "释放", "note": "结束隔离"}], "nuance": "quarantine 专指因卫生/安全原因的隔离；isolation 更广泛；solitary confinement（单独监禁）指监狱里的隔离。计算机语境中 quarantine 指将可疑文件隔离但不删除。"}, {"word": "quality", "hl": "a", "levels": ["六级"], "ipa": "/ˈkwɒləti/", "subgroup": "o", "meaning": "n. 质量，品质；特质；adj. 优质的", "etymology": "拉丁语 qualitas（性质），由 qualis（什么样的）+ -tas（名词后缀）构成。西塞罗为翻译希腊哲学概念而造了这个词。从「事物的本性/特质」引申为「品质高低」。", "roots": [{"part": "qual- (qualis)", "meaning": "什么样的"}, {"part": "-ity", "meaning": "…的性质（名词后缀）"}], "phonetics": "qu 后面的 a 读 /ɒ/（英式）或 /ɑː/（美式）：ˈkwɒl-ə-ti。和 quarantine 同理，/kw/ 后的 a 被拉圆。第二个音节的 i 弱化为 /ə/。注意 quality 是三音节，不是两音节。", "tip": "qual = 什么样 → quality = 是什么样的 = 品质/质量。qualify（使合格）、qualification（资格）都是同根词。quality vs quantity（质 vs 量）是经典对比。", "examples": [{"en": "The quality of education varies significantly between urban and rural areas.", "zh": "城市和农村地区的教育质量差异显著。", "source": "造句"}, {"en": "Kindness is the quality I admire most in a person.", "zh": "善良是我最欣赏的人格特质。", "source": "造句"}], "synonyms": [{"w": "caliber", "ipa": "/ˈkælɪbər/", "gloss": "水准，口径", "note": "比 quality 更强调「级别高低」"}, {"w": "standard", "ipa": "/ˈstændərd/", "gloss": "标准", "note": "侧重「衡量品质的尺度」"}], "antonyms": [], "nuance": "quality 兼指「品质」（high quality 高品质）和「特质」（leadership qualities 领导特质）。quality time = 高质量的相处时间。托福阅读中 quality of life（生活质量）是高频搭配。"}, {"word": "swallow", "hl": "a", "levels": ["六级"], "ipa": "/ˈswɒləʊ/", "subgroup": "o", "meaning": "v. 吞咽；忍受；轻信；n. 燕子；一口（的量）", "etymology": "两个不同来源的词合流：动词「吞咽」来自古英语 swelgan（吞噬），名词「燕子」来自古英语 swealwe（燕子）。两者在形态上合并为同一拼写，但词源无关。燕子得名可能与其「掠食式吞虫」的动作有关。", "roots": [{"part": "swallow (swelgan)", "meaning": "吞噬"}, {"part": "swallow (swealwe)", "meaning": "燕子"}], "phonetics": "sw- 后面的 a 读 /ɒ/（英式）或 /ɑː/（美式）：ˈswɒl-əʊ。和 wa- 规律一致——w 音后的 a 被拉圆。-ow 读 /əʊ/（同 follow、hollow）。", "tip": "sw + a = /swɒ/。swallow 的两个身份：动词「吞」（swallow a pill 吞药）和名词「燕子」（One swallow doesn't make a summer 一燕不成夏——不能以偏概全）。引申义：swallow one's pride = 忍气吞声。", "examples": [{"en": "He swallowed his pride and apologized for the mistake.", "zh": "他忍下了自尊心，为错误道歉。", "source": "造句"}, {"en": "One swallow does not make a summer.", "zh": "一燕不成夏（不能以偏概全）。", "source": "亚里士多德《尼各马可伦理学》"}], "synonyms": [{"w": "ingest", "ipa": "/ɪnˈdʒest/", "gloss": "摄入", "note": "正式/医学用语，比 swallow 更专业"}, {"w": "gulp", "ipa": "/ɡʌlp/", "gloss": "大口吞", "note": "比 swallow 更强调「大口、快速」"}], "antonyms": [{"w": "spit", "ipa": "/spɪt/", "gloss": "吐出", "note": "吞咽的反面动作"}, {"w": "regurgitate", "ipa": "/rɪˈɡɜːrdʒɪteɪt/", "gloss": "反刍，吐出", "note": "正式用语，指食物从胃中返回"}], "nuance": "swallow 有丰富的引申义：swallow a story（轻信一个说法）、hard to swallow（难以接受）、swallow one's words（收回说过的话）。名词 swallow（燕子）在文学中象征春天和希望。"}]}</script>
+<script>
+const G = JSON.parse(document.getElementById('data').textContent);
+const KEY = 'vocab-unfam-' + G.id;
+let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+// 发音分组配色（按 subgroups 顺序循环取用）
+const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
+const SUBG = G.subgroups || [];
+function sgIndex(key){ const i=SUBG.findIndex(s=>s.key===key); return i<0?0:i; }
+function sgColor(key){ return SGCOLORS[sgIndex(key)%SGCOLORS.length]; }
+function sgOf(key){ return SUBG.find(s=>s.key===key); }
+
+// ---------- header
+function renderHero(){
+  const h = document.getElementById('hero');
+  const rules = SUBG.map((s,i)=>{
+    const c = SGCOLORS[i%SGCOLORS.length];
+    return `<div class="rule" style="border-left:5px solid ${c}"><b style="color:${c}">${s.label}</b>${s.desc||''}</div>`;
+  }).join('');
+  const rhymes = (G.rhymeChains && G.rhymeChains.length)
+    ? `<div class="rhymes"><h3>🎵 同韵顺口溜 · 点单词听发音，成串背最快</h3>${
+        G.rhymeChains.map(c=>`<div class="chain"><span class="lab">${c.label}</span>${
+          c.words.map(w=>`<span class="chip" onclick="say('${w}')">${w}</span>`).join('')
+        }</div>`).join('')}</div>`
+    : '';
+  h.innerHTML = `
+    <div class="combo"><span class="big">${G.combo}</span><span class="snd">${G.sound}</span></div>
+    <h1>${G.title} · ${G.subtitle||''}</h1>
+    <p class="intro">${G.intro}</p>
+    <div class="rules">${rules}</div>
+    ${rhymes}`;
+}
+
+// ---------- 精读：文章 + 句法分析
+let speaking=false;
+function sayPassage(btn){
+  if(speaking){ speechSynthesis.cancel(); speaking=false; if(btn) btn.textContent='🔊 朗读全文'; return; }
+  const P = G.passage; if(!P) return;
+  const texts = (P.paragraphs||[]).map(p=>p.en).filter(Boolean);
+  if(!texts.length) return;
+  if(!VOICE) pickVoice();
+  speaking=true; if(btn) btn.textContent='⏹ 停止朗读';
+  let last=null;
+  texts.forEach((t,i)=>{
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    if(i===texts.length-1) last=u;
+    speechSynthesis.speak(u);
+  });
+  if(last) last.onend=()=>{ speaking=false; if(btn) btn.textContent='🔊 朗读全文'; };
+}
+function renderPassage(){
+  const el = document.getElementById('passage');
+  const P = G.passage; if(!P){ el.style.display='none'; return; }
+  const paras = (P.paragraphs||[]).map(p=>{
+    let en = p.en||'';
+    // 高亮关键词（p.kws 或自动匹配词表词）
+    const kws = p.kws || [];
+    kws.forEach(k=>{ en = en.replace(new RegExp('('+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'), '<span class="kw" onclick="say(\'$1\')">$1</span>'); });
+    return `<p><div class="en">${en}</div>${p.zh?`<div class="zh">${p.zh}</div>`:''}</p>`;
+  }).join('');
+  el.innerHTML = `<div class="passage"><h2>📖 精读原文</h2>
+    <div class="p-title">${P.title||''} <button class="readall" onclick="sayPassage(this)">🔊 朗读全文</button></div>
+    ${paras}</div>`;
+}
+const ROLECOLOR = { '主语':'#2f8f83','谓语':'#c1662f','宾语':'#3a7bd5','状语':'#6a52a8','定语':'#b0603f','补语':'#c1662f','从句':'#8c8072','连词':'#8c8072','介词':'#8c8072','插入语':'#8c8072','同位语':'#b0603f' };
+function roleColor(r){ return ROLECOLOR[r] || '#6a52a8'; }
+function escAttr(s){ return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+// 句子内括号标注：介词短语 ( ) · 从句 [ ] · 非谓语 { }
+const BRK = {'pp':['(',')'], 'cl':['[',']'], 'nf':['{','}']};
+const BRKC = {'pp':'#6a52a8', 'cl':'#3a7bd5', 'nf':'#b0603f'};
+function renderFlow(s){
+  let html='';
+  (s.flow||[]).forEach(it=>{
+    if(it.open){ const k=it.open; html+=`<span class="brkbox" style="background:${BRKC[k]}16;border-bottom:2px solid ${BRKC[k]}66"><b class="brk" style="color:${BRKC[k]}">${BRK[k][0]}</b>`; }
+    else if(it.close){ const k=it.close; html+=`<b class="brk" style="color:${BRKC[k]}">${BRK[k][1]}</b></span>`; }
+    else { html+=escAttr(it.t); }
+  });
+  return html;
+}
+function renderSents(){
+  const el = document.getElementById('sents');
+  const S = G.sentences; if(!S || !S.length){ el.style.display='none'; return; }
+  const items = S.map((s,i)=>{
+    const flowHtml = (s.flow && s.flow.length) ? renderFlow(s) : escAttr(s.en);
+    const parts = (s.parts||[]).map(p=>{
+      const c = roleColor(p.r);
+      return `<span class="spart" style="background:${c}18;border:1px solid ${c}55">
+        <span class="st" style="color:${c}">${escAttr(p.t)}</span>
+        <span class="sr" style="background:${c}">${p.r}</span>
+        ${p.n?`<span class="sn">${p.n}</span>`:''}</span>`;
+    }).join('');
+    return `<div class="sent">
+      <div class="s-flow" data-en="${escAttr(s.en)}" onclick="say(this.dataset.en)" title="点句子朗读">${flowHtml} <button class="say-mini" data-en="${escAttr(s.en)}" onclick="event.stopPropagation();say(this.dataset.en)" title="朗读">🔊</button></div>
+      ${s.zh?`<div class="s-zh">${s.zh}</div>`:''}
+      <div class="s-parts">${parts}</div>
+      ${s.note?`<div class="snotes">${s.note}</div>`:''}</div>`;
+  }).join('');
+  el.innerHTML = `<div class="sents"><h2>🔍 长难句 · 句法分析</h2>
+    <div class="s-sub">点英文句可朗读 · 括号标注：<b style="color:#6a52a8">( ) 介词短语</b> · <b style="color:#3a7bd5">[ ] 从句</b> · <b style="color:#b0603f">{ } 非谓语动词</b> · 下方色块=成分功能</div>
+    ${items}</div>`;
+}
+
+// ---------- filters
+function renderFilters(){
+  const lvs = ['全部','六级','托福','GRE拓展','基础'];
+  document.getElementById('lvf').innerHTML = lvs.map(l=>
+    `<span class="f${l===curLv?' on':''}" onclick="setLv('${l}')">${l}</span>`).join('');
+  const sgs = [['全部','全部'], ...SUBG.map(s=>[s.tag||s.label, s.key])];
+  document.getElementById('sgf').innerHTML = sgs.map(([t,v])=>
+    `<span class="f${v===curSg?' on':''}" onclick="setSg('${v}')">${t}</span>`).join('');
+}
+function setLv(l){curLv=l;renderFilters();renderGrid();}
+function setSg(s){curSg=s;renderFilters();renderGrid();}
+
+// ---------- speech：优先自然美式女声
+let VOICE=null, VOICES=[];
+// 各浏览器/系统里公认自然的美式女声，按优先级排序
+const PREF=[
+  'Google US English',                 // Chrome：自然女声
+  'Microsoft Aria Online (Natural) - English (United States)',
+  'Microsoft Jenny Online (Natural) - English (United States)',
+  'Microsoft Ava Online (Natural) - English (United States)',
+  'Microsoft Aria','Microsoft Jenny','Microsoft Michelle',
+  'Ava (Premium)','Ava (Enhanced)','Ava',   // macOS Siri 女声
+  'Samantha',                          // macOS 经典美式女声
+  'Allison','Susan','Nicky','Zoe','Karen','Victoria'
+];
+const MALE=/(alex|daniel|fred|tom|david|mark|male|aaron|arthur|gordon|oliver|rishi|junior|ralph)/i;
+function usPool(){
+  VOICES = speechSynthesis.getVoices()||[];
+  let us = VOICES.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));
+  if(!us.length) us = VOICES.filter(v=>/^en/i.test(v.lang));
+  return us;
+}
+function pickVoice(){
+  const pool=usPool(); if(!pool.length) return;
+  VOICE=null;
+  for(const n of PREF){ const h=pool.find(v=>v.name===n)||pool.find(v=>v.name.indexOf(n)===0); if(h){VOICE=h;break;} }
+  if(!VOICE) VOICE = pool.find(v=>/(samantha|ava|allison|susan|nicky|zoe|karen|victoria|aria|jenny|michelle|female|google us)/i.test(v.name))
+                   || pool.find(v=>!MALE.test(v.name)) || pool[0];
+  fillVoiceSel(pool);
+}
+function fillVoiceSel(pool){
+  const s=document.getElementById('voiceSel'); if(!s) return;
+  s.innerHTML = pool.map(v=>{
+    const nm=v.name.replace(/ - English.*/,'').replace(/Online \(Natural\)/,'✨');
+    return `<option value="${v.name}"${VOICE&&v.name===VOICE.name?' selected':''}>🎙 ${nm}</option>`;
+  }).join('');
+}
+document.getElementById('voiceSel').addEventListener('change',e=>{
+  VOICE = VOICES.find(v=>v.name===e.target.value)||VOICE; say(G.combo==='aw'?'awesome':'natural');
+});
+if('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = pickVoice;
+pickVoice();
+function say(w){
+  try{
+    if(!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// 高亮单词里的目标拼写：优先用该词自带的 hl（音位页里每词各自的拼写），否则用组的 combo
+function hlWord(word, spell){
+  const c = (spell||'').replace(/[.*+?^${}()|[\]\\\/·\s]/g,'');  // 只取干净字母做高亮，去掉 / · 空格等
+  if(!c) return word;
+  try{ return word.replace(new RegExp('('+c+')','i'), '<span class="hl">$1</span>'); }
+  catch(e){ return word; }
+}
+
+// ---------- card
+function card(w){
+  const tags = (w.levels||[]).map(l=>`<span class="tag ${LVCLASS[l]||''}">${l}</span>`).join('');
+  const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
+  const exs = (w.examples||[]).map(e=>{
+    const fam = /造句/.test(e.source)? '' : ' famous';
+    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+  }).join('');
+  const syns = (w.synonyms||[]).map(s=>
+    `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
+    `${s.ipa?` <span class="lip">${s.ipa}</span>`:''}${s.note?` <span class="ln">— ${s.note}</span>`:''}</div>`).join('');
+  const ants = (w.antonyms||[]).map(a=>
+    `<span class="antchip" onclick="event.stopPropagation();say('${a.w}')">${a.w}${a.note?` <i>${a.note}</i>`:''}</span>`).join('');
+  const lexSec = (syns||ants||w.nuance)
+    ? `<div class="sec"><span class="l">🔗 近义词辨析 · 反义词</span>`+
+      `${syns?`<div class="lexgroup"><span class="lextag syn">近义</span><div class="lexlist">${syns}</div></div>`:''}`+
+      `${ants?`<div class="lexgroup"><span class="lextag ant">反义</span><div class="lexlist antline">${ants}</div></div>`:''}`+
+      `${w.nuance?`<div class="nuance">🎯 ${w.nuance}</div>`:''}</div>`
+    : '';
+  const senses = (w.senses||[]).map(s=>
+    `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
+    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+  const senseSec = (w.core||senses)
+    ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
+      `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`
+    : '';
+  const isU = unfam.has(w.word);
+  const so = sgOf(w.subgroup);
+  return `<div class="card${isU?' unfamiliar':''}" data-w="${w.word}" onclick="if(document.body.classList.contains('mem'))this.classList.toggle('reveal')">
+    <span class="sub-tag" style="background:${sgColor(w.subgroup)}">${so?(so.tag||so.label):''}</span>
+    <div class="whead">
+      <span class="word">${hlWord(w.word, w.hl || G.combo)}</span>
+      <span class="ipa">${w.ipa}</span>
+      <button class="say" onclick="event.stopPropagation();say('${w.word}')" title="朗读">🔊</button>
+    </div>
+    <div class="tags">${tags}</div>
+    <div class="mean">${w.meaning}</div>
+    ${senseSec}
+    ${w.etymology?`<div class="sec"><span class="l">🏛 造词来源 · 词源故事</span>${w.etymology}</div>`:''}
+    ${roots?`<div class="sec"><span class="l">🧩 词根词缀</span><div class="roots">${roots}</div></div>`:''}
+    ${w.phonetics?`<div class="sec"><span class="l">🗣 发音规律</span>${w.phonetics}</div>`:''}
+    ${w.tip?`<div class="sec"><span class="l">💡 记忆钩子</span><div class="tip">${w.tip}</div></div>`:''}
+    ${exs?`<div class="sec"><span class="l">✍️ 造句 · 名著/影视例句</span>${exs}</div>`:''}
+    ${lexSec}
+    <label class="check" onclick="event.stopPropagation()">
+      <input type="checkbox" ${isU?'checked':''} onchange="toggleUnfam('${w.word}',this.checked)"> 🔺 标记不熟悉
+    </label>
+  </div>`;
+}
+
+function match(w){
+  if(onlyUnfam && !unfam.has(w.word)) return false;
+  if(curLv!=='全部' && !(w.levels||[]).includes(curLv)) return false;
+  if(curSg!=='全部' && w.subgroup!==curSg) return false;
+  if(curQ){
+    const s=(w.word+' '+w.meaning).toLowerCase();
+    if(!s.includes(curQ.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function renderGrid(){
+  const list = G.words.filter(match);
+  // 不熟悉的置顶（稳定排序，保持各自原有相对顺序）
+  list.sort((a,b)=>(unfam.has(b.word)?1:0)-(unfam.has(a.word)?1:0));
+  const g = document.getElementById('grid');
+  g.innerHTML = list.length? list.map(card).join('') : '<div class="empty">没有匹配的单词，换个筛选试试～</div>';
+  updateUnfamCount();
+}
+
+function toggleUnfam(word, on){
+  if(on) unfam.add(word); else unfam.delete(word);
+  localStorage.setItem(KEY, JSON.stringify([...unfam]));
+  const c = document.querySelector(`.card[data-w="${word}"]`);
+  if(c) c.classList.toggle('unfamiliar', on);   // 立即变色，卡片原位不跳动；置顶在下次渲染/筛选时生效
+  updateUnfamCount();
+}
+function updateUnfamCount(){
+  const n = G.words.filter(w=>unfam.has(w.word)).length;
+  const el = document.getElementById('unfamN');
+  if(el) el.textContent = n;
+}
+
+document.getElementById('q').addEventListener('input',e=>{curQ=e.target.value;renderGrid();});
+document.getElementById('unfamBtn').addEventListener('click',e=>{
+  onlyUnfam=!onlyUnfam;
+  e.currentTarget.classList.toggle('on',onlyUnfam);
+  renderGrid();
+});
+document.getElementById('memBtn').addEventListener('click',e=>{
+  document.body.classList.toggle('mem');
+  e.target.classList.toggle('on');
+  e.target.textContent = document.body.classList.contains('mem')?'🧠 记忆模式(开)·悬停显形':'🧠 记忆模式';
+});
+
+// ---------- 测验：英文 → 中文四选一（覆盖当前筛选到的全部单词）
+let quiz=null;
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+// 测验池 = 本页(筛选后)全部词 + 它们的同义词 + 衍生词（去重）
+function quizPool(){
+  const base = G.words.filter(match);
+  const items=[]; const seen=new Set();
+  const add=(word,ipa,meaning)=>{const k=(word||'').toLowerCase();
+    if(!word||!meaning||seen.has(k))return; seen.add(k); items.push({word,ipa:ipa||'',meaning});};
+  base.forEach(w=>{
+    add(w.word,w.ipa,w.meaning);
+    (w.synonyms||[]).forEach(s=>add(s.w,s.ipa,s.gloss||s.note));
+    (w.derivatives||[]).forEach(dv=>add(dv.w,dv.ipa,dv.gloss||dv.note));
+  });
+  return items;
+}
+function startQuiz(src){
+  const pool = src || quizPool();
+  if(pool.length<4){ alert('至少要有 4 个词才能测验，请先放宽上方筛选～'); return; }
+  quiz={list:shuffle(pool), i:0, score:0, wrong:[], done:false, next:null, pool:quizPool()};
+  document.getElementById('quizOv').style.display='flex';
+  renderQ();
+}
+function renderQ(){
+  quiz.done=false; quiz.next=null;
+  const q=quiz.list[quiz.i];
+  const others=(quiz.pool||[]).filter(w=>w.meaning!==q.meaning);
+  const opts=shuffle([q.meaning, ...shuffle(others).slice(0,3).map(w=>w.meaning)]);
+  const K=['1','2','3','4'];
+  document.getElementById('qbox').innerHTML=`
+    <div class="qtop"><span>第 ${quiz.i+1} / ${quiz.list.length} 题 · 已答对 ${quiz.score}</span>
+      <span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+    <div class="qbar2"><i style="width:${quiz.i/quiz.list.length*100}%"></i></div>
+    <div class="qword">${q.word} <button class="say" style="vertical-align:middle;width:30px;height:30px;font-size:14px" onclick="say('${q.word}')">🔊</button></div>
+    <div class="qipa">${q.ipa}</div>
+    <div class="qopts" id="qopts">${opts.map((o,k)=>
+      `<button class="qopt" data-m="${encodeURIComponent(o)}" onclick="answer(this,'${encodeURIComponent(q.meaning)}')">
+        <span class="k">${K[k]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="hint">按 1–4 键作答 · 回车进入下一题</div>`;
+  say(q.word);
+}
+function answer(el, correctEnc){
+  if(quiz.done) return; quiz.done=true;
+  const correct=decodeURIComponent(correctEnc);
+  const chosen=decodeURIComponent(el.dataset.m);
+  if(chosen===correct) quiz.score++; else quiz.wrong.push(quiz.list[quiz.i]);
+  document.querySelectorAll('#qopts .qopt').forEach(b=>{
+    const m=decodeURIComponent(b.dataset.m);
+    if(m===correct) b.classList.add('right');
+    else if(b===el) b.classList.add('wrong');
+    else b.classList.add('dim');
+    b.style.pointerEvents='none';
+  });
+  const btn=document.createElement('button');
+  btn.className='qnext';
+  btn.textContent = quiz.i<quiz.list.length-1 ? '下一题 →' : '看结果 →';
+  btn.onclick=nextQ;
+  document.getElementById('qbox').appendChild(btn);
+  quiz.next=btn;
+}
+function nextQ(){
+  if(quiz.i<quiz.list.length-1){ quiz.i++; renderQ(); } else endQuiz();
+}
+function endQuiz(){
+  const tot=quiz.list.length, pct=Math.round(quiz.score/tot*100);
+  const wrongHtml = quiz.wrong.length
+    ? quiz.wrong.map(w=>`<div class="r"><b>${w.word}</b> ${w.ipa} — ${w.meaning}</div>`).join('')
+    : '<div class="r">全部答对，太强了！🎉</div>';
+  const wrongCopy = quiz.wrong.slice();
+  document.getElementById('qbox').innerHTML=`
+    <div class="qend">
+      <div class="qtop" style="justify-content:flex-end"><span style="cursor:pointer" onclick="closeQuiz()">✕ 关闭</span></div>
+      <div>本轮得分</div><div class="qscore">${quiz.score}/${tot}</div>
+      <div style="color:var(--muted)">正确率 ${pct}%</div>
+      <div class="qwrong"><div style="color:var(--exc);font-weight:700;margin-bottom:4px">错题（${quiz.wrong.length}）</div>${wrongHtml}</div>
+      <div id="qendBtns"></div>
+    </div>`;
+  const box=document.getElementById('qendBtns');
+  if(wrongCopy.length){
+    const b1=document.createElement('button'); b1.className='qnext'; b1.textContent='只测这些错题';
+    b1.onclick=()=>startQuiz(wrongCopy); box.appendChild(b1);
+  }
+  const b2=document.createElement('button'); b2.className='qnext';
+  b2.style.cssText='background:#fff;color:var(--accent);border:1.5px solid var(--accent);margin-top:8px';
+  b2.textContent='再来一轮（当前筛选）'; b2.onclick=()=>startQuiz(); box.appendChild(b2);
+}
+function closeQuiz(){ document.getElementById('quizOv').style.display='none'; quiz=null; }
+document.getElementById('quizBtn').addEventListener('click',()=>startQuiz());
+document.getElementById('quizOv').addEventListener('click',e=>{ if(e.target.id==='quizOv') closeQuiz(); });
+document.addEventListener('keydown',e=>{
+  if(!quiz || document.getElementById('quizOv').style.display==='none') return;
+  if(quiz.next && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); quiz.next.click(); return; }
+  if(!quiz.done && /^[1-4]$/.test(e.key)){ const b=document.querySelectorAll('#qopts .qopt')[+e.key-1]; if(b) b.click(); }
+});
+
+document.getElementById('foot').innerHTML =
+  `共 ${G.words.length} 词 · 数据源：托福 4264 词表（真实词库）+ 六级核心词 · `+
+  `发音由浏览器语音合成朗读 · 名著/影视例句均为真实出处，「造句」为学习例句，「高频搭配」为常用短语。`;
+
+renderHero(); renderPassage(); renderSents(); renderFilters(); renderGrid();
+</script>
+</body>
+</html>

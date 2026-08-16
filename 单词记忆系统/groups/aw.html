@@ -160,6 +160,9 @@
   .passage .en{color:#3a332b;font-family:Georgia,"Times New Roman",serif}
   .passage .zh{color:var(--muted);font-size:13.5px}
   .passage .kw{cursor:pointer;color:var(--accent);font-weight:600;border-bottom:1px dotted var(--accent2)}
+  .readall{background:var(--accent);color:#fff;border:none;border-radius:20px;padding:4px 14px;font-size:13px;
+    cursor:pointer;margin-left:10px;vertical-align:middle;transition:.15s}
+  .readall:hover{background:var(--core)}
   .sents{background:linear-gradient(135deg,#f3f8f6,#eef3f0);border:1px solid var(--line);
     border-radius:14px;padding:18px 20px;margin:0 0 22px}
   .sents h2{margin:0 0 6px;font-size:18px;color:var(--core)}
@@ -175,6 +178,12 @@
   .spart .sn{font-size:12px;color:var(--muted)}
   .snotes{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:13px;color:#5f574c}
   .snotes b{color:var(--accent)}
+  /* 句子内括号标注 */
+  .s-flow{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:2.1;cursor:pointer;color:#3a332b;padding:2px 0}
+  .s-flow:hover{color:var(--accent)}
+  .brkbox{border-radius:4px;padding:1px 1px;transition:.15s}
+  .brk{font-weight:700;font-size:17px;padding:0 1px}
+  .say-mini{background:none;border:none;cursor:pointer;font-size:15px;padding:0 4px;vertical-align:middle}
   @media(max-width:680px){.rules{grid-template-columns:1fr}.combo .big{font-size:44px}}
 </style>
 </head>
@@ -243,6 +252,23 @@ function renderHero(){
 }
 
 // ---------- 精读：文章 + 句法分析
+let speaking=false;
+function sayPassage(btn){
+  if(speaking){ speechSynthesis.cancel(); speaking=false; if(btn) btn.textContent='🔊 朗读全文'; return; }
+  const P = G.passage; if(!P) return;
+  const texts = (P.paragraphs||[]).map(p=>p.en).filter(Boolean);
+  if(!texts.length) return;
+  if(!VOICE) pickVoice();
+  speaking=true; if(btn) btn.textContent='⏹ 停止朗读';
+  let last=null;
+  texts.forEach((t,i)=>{
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang='en-US'; if(VOICE) u.voice=VOICE; u.rate=.95; u.pitch=1.0;
+    if(i===texts.length-1) last=u;
+    speechSynthesis.speak(u);
+  });
+  if(last) last.onend=()=>{ speaking=false; if(btn) btn.textContent='🔊 朗读全文'; };
+}
 function renderPassage(){
   const el = document.getElementById('passage');
   const P = G.passage; if(!P){ el.style.display='none'; return; }
@@ -254,29 +280,44 @@ function renderPassage(){
     return `<p><div class="en">${en}</div>${p.zh?`<div class="zh">${p.zh}</div>`:''}</p>`;
   }).join('');
   el.innerHTML = `<div class="passage"><h2>📖 精读原文</h2>
-    ${P.title?`<div class="p-title">${P.title}</div>`:''}${paras}</div>`;
+    <div class="p-title">${P.title||''} <button class="readall" onclick="sayPassage(this)">🔊 朗读全文</button></div>
+    ${paras}</div>`;
 }
 const ROLECOLOR = { '主语':'#2f8f83','谓语':'#c1662f','宾语':'#3a7bd5','状语':'#6a52a8','定语':'#b0603f','补语':'#c1662f','从句':'#8c8072','连词':'#8c8072','介词':'#8c8072','插入语':'#8c8072','同位语':'#b0603f' };
 function roleColor(r){ return ROLECOLOR[r] || '#6a52a8'; }
+function escAttr(s){ return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+// 句子内括号标注：介词短语 ( ) · 从句 [ ] · 非谓语 { }
+const BRK = {'pp':['(',')'], 'cl':['[',']'], 'nf':['{','}']};
+const BRKC = {'pp':'#6a52a8', 'cl':'#3a7bd5', 'nf':'#b0603f'};
+function renderFlow(s){
+  let html='';
+  (s.flow||[]).forEach(it=>{
+    if(it.open){ const k=it.open; html+=`<span class="brkbox" style="background:${BRKC[k]}16;border-bottom:2px solid ${BRKC[k]}66"><b class="brk" style="color:${BRKC[k]}">${BRK[k][0]}</b>`; }
+    else if(it.close){ const k=it.close; html+=`<b class="brk" style="color:${BRKC[k]}">${BRK[k][1]}</b></span>`; }
+    else { html+=escAttr(it.t); }
+  });
+  return html;
+}
 function renderSents(){
   const el = document.getElementById('sents');
   const S = G.sentences; if(!S || !S.length){ el.style.display='none'; return; }
   const items = S.map((s,i)=>{
+    const flowHtml = (s.flow && s.flow.length) ? renderFlow(s) : escAttr(s.en);
     const parts = (s.parts||[]).map(p=>{
       const c = roleColor(p.r);
       return `<span class="spart" style="background:${c}18;border:1px solid ${c}55">
-        <span class="st" style="color:${c}">${p.t}</span>
+        <span class="st" style="color:${c}">${escAttr(p.t)}</span>
         <span class="sr" style="background:${c}">${p.r}</span>
         ${p.n?`<span class="sn">${p.n}</span>`:''}</span>`;
     }).join('');
     return `<div class="sent">
-      <div class="s-en" onclick="say(this.textContent)">${s.en}</div>
+      <div class="s-flow" data-en="${escAttr(s.en)}" onclick="say(this.dataset.en)" title="点句子朗读">${flowHtml} <button class="say-mini" data-en="${escAttr(s.en)}" onclick="event.stopPropagation();say(this.dataset.en)" title="朗读">🔊</button></div>
       ${s.zh?`<div class="s-zh">${s.zh}</div>`:''}
       <div class="s-parts">${parts}</div>
       ${s.note?`<div class="snotes">${s.note}</div>`:''}</div>`;
   }).join('');
   el.innerHTML = `<div class="sents"><h2>🔍 长难句 · 句法分析</h2>
-    <div class="s-sub">点英文句可朗读 · 颜色标注成分：<span style="color:#2f8f83">主语</span>·<span style="color:#c1662f">谓语</span>·<span style="color:#3a7bd5">宾语</span>·<span style="color:#6a52a8">状语/从句</span></div>
+    <div class="s-sub">点英文句可朗读 · 括号标注：<b style="color:#6a52a8">( ) 介词短语</b> · <b style="color:#3a7bd5">[ ] 从句</b> · <b style="color:#b0603f">{ } 非谓语动词</b> · 下方色块=成分功能</div>
     ${items}</div>`;
 }
 

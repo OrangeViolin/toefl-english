@@ -1,0 +1,713 @@
+{
+  "id": "combo-ow",
+  "combo": "OW",
+  "title": "字母组合 OW 的全部发音",
+  "sound": "/aʊ/ vs /əʊ/",
+  "subtitle": "cow 还是 snow？OW 的两面——一个词读错整句垮掉",
+  "intro": "OW 只有两个字母，看起来人畜无害，实际上它藏着两张完全不同的面孔：/aʊ/（像 cow、now、down）和 /əʊ/（像 snow、low、window）。没有一条规则能百分百判断，但有几个靠谱的规律可以抓：OW 出现在词中、后面紧跟辅音时，往往读 /aʊ/（town、brown、crowd、power）；OW 出现在词尾，特别是在 -ow、-ow 结尾的双音节词里，往往读 /əʊ/（follow、shadow、elbow、narrow）。真正的陷阱是 bow、row、sow 这类词——拼写一模一样，读音不同，意思也不同。这一页把六级和托福里的 OW 词按两种读音分组，再单列「同形异音」的危险词，帮你一次吃透。",
+  "subgroups": [
+    {
+      "key": "cow",
+      "tag": "/aʊ/",
+      "label": "OW = /aʊ/ (cow/now)",
+      "desc": "和 OU 的 /aʊ/ 同音——嘴巴从大张的「啊」快速滑向合拢的「呜」，是一个向下再收回的双元音。OW 在词中紧跟辅音时（down、town、crowd、brown）、或在重读音节里（power、tower、flower）几乎总是这个音。"
+    },
+    {
+      "key": "snow",
+      "tag": "/əʊ/",
+      "label": "OW = /əʊ/ (snow/low)",
+      "desc": "长元音，和字母 O 的开音节读法同音——从模糊的「额」滑向圆唇的「欧」。常出现在词尾的双音节词里（window、shadow、follow、meadow），也出现在部分单音节词尾（snow、blow、grow、flow）。"
+    },
+    {
+      "key": "trap",
+      "tag": "⚠️ 易混",
+      "label": "⚠️ 同一拼写两种读法",
+      "desc": "英语里最令人抓狂的一类词：拼写完全一样，但读 /aʊ/ 和读 /əʊ/ 时意思截然不同。bow（鞠躬 /baʊ/ vs 蝴蝶结 /bəʊ/）、row（划船 /rəʊ/ vs 争吵 /raʊ/）、sow（播种 /səʊ/ vs 母猪 /saʊ/）。这些词没有规则可循，只能逐个记住。"
+    }
+  ],
+  "rhymeChains": [
+    {
+      "label": "-ow/-owl/-own /aʊ/ 同韵串",
+      "words": ["empower", "devour", "scowl", "prowl", "browse", "drowsy", "downtown", "renown"]
+    },
+    {
+      "label": "-ow /əʊ/ 同韵串（授予/赐予）",
+      "words": ["bestow", "elbow", "meadow", "shadow", "narrow", "shallow", "hollow"]
+    },
+    {
+      "label": "-orrow/-ollow /əʊ/ 同韵串",
+      "words": ["borrow", "sorrow", "hollow", "follow", "swallow"]
+    },
+    {
+      "label": "⚠️ 同形异音对照",
+      "words": ["bow /baʊ/ 鞠躬 vs bow /bəʊ/ 弓", "row /rəʊ/ 排 vs row /raʊ/ 争吵", "sow /səʊ/ 播种 vs sow /saʊ/ 母猪"]
+    }
+  ],
+  "words": [
+    {
+      "word": "empower",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/ɪmˈpaʊər/",
+      "subgroup": "cow",
+      "meaning": "v. 赋予权力；使能够",
+      "etymology": "前缀 em-（使…）+ power（权力）。字面义「使拥有权力」，16世纪开始用于法律文书，现代常见于社会运动语境，强调赋予弱势群体自主权。",
+      "roots": [
+        {"part": "em- (en-)", "meaning": "使…，放入"},
+        {"part": "power", "meaning": "权力，力量"}
+      ],
+      "phonetics": "重读在第二音节 POW /paʊ/，OW 在重读位置读 /aʊ/，和 power 里的 OW 完全相同。",
+      "tip": "em + power = 把 power「装进」某人体内 → 赋权。对比 empower vs enable：empower 给的是权力和自信，enable 给的是条件和能力。",
+      "examples": [
+        {"en": "Education empowers individuals to break the cycle of poverty.", "zh": "教育赋予个人打破贫困循环的力量。", "source": "造句"},
+        {"en": "We must empower local communities to make their own decisions.", "zh": "我们必须赋权社区自主决策。", "source": "TED 演讲常见表达"}
+      ],
+      "synonyms": [
+        {"w": "authorize", "ipa": "/ˈɔːθəraɪz/", "gloss": "授权，批准", "note": "authorize 偏法律/行政层面的正式授权，empower 更强调赋予内在力量和自信。"},
+        {"w": "enable", "ipa": "/ɪˈneɪbl/", "gloss": "使能够", "note": "enable 侧重提供条件或手段，empower 侧重给予权力和自主性。"}
+      ],
+      "antonyms": [
+        {"w": "disempower", "note": "剥夺权力，使无力"},
+        {"w": "oppress", "note": "压迫，与赋权相反"}
+      ],
+      "nuance": "empower 在现代英语中带有强烈的正面色彩，常用于女性赋权（women empowerment）、社区赋权等语境。authorize 更冷、更官方，只涉及法律许可，不涉及精神力量。"
+    },
+    {
+      "word": "devour",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/dɪˈvaʊər/",
+      "subgroup": "cow",
+      "meaning": "v. 吞噬，狼吞虎咽；（比喻）如饥似渴地阅读",
+      "etymology": "拉丁语 devorare「吞下」，de-（向下）+ vorare（吞）。同根词 voracious（贪婪的）。原始画面是猛兽把猎物整个吞下去。",
+      "roots": [
+        {"part": "de-", "meaning": "向下，彻底"},
+        {"part": "vor- (vorare)", "meaning": "吞，吃"}
+      ],
+      "phonetics": "重读在第二音节 VOUR /vaʊ.ər/，OW 组合藏在 -our 里（拼写是 ou，但发音规律同 OW 的 /aʊ/）。注意：devour 拼写是 ou 不是 ow，但此处收入因为其 /aʊ/ 发音与 OW 组同韵。",
+      "tip": "devour 的画面感极强：一只龙 de（向下）vor（吞）一整头牛 → 狼吞虎咽。延伸到读书：devour a book = 如饥似渴读完。",
+      "examples": [
+        {"en": "The flames devoured the entire building in minutes.", "zh": "火焰在几分钟内吞噬了整栋建筑。", "source": "造句"},
+        {"en": "She devoured the novel in a single sitting.", "zh": "她一口气读完了那本小说。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "consume", "ipa": "/kənˈsjuːm/", "gloss": "消耗，吃光", "note": "consume 更中性，可指任何形式的消耗；devour 强调速度快、量大、带有贪婪感。"},
+        {"w": "gobble", "ipa": "/ˈɡɒbl/", "gloss": "大口吞吃", "note": "gobble 更口语化，专指吃东西时的狼吞虎咽，不像 devour 可比喻阅读或火吞噬。"}
+      ],
+      "antonyms": [
+        {"w": "nibble", "note": "小口啃咬，与狼吞虎咽相反"}
+      ],
+      "nuance": "devour 比 eat 的力度强十倍：eat 是中性的「吃」，devour 是「撕碎了吞下去」。写作中用 devour 能瞬间提升画面感，但不要滥用——日常吃饭说 devour 会显得夸张。"
+    },
+    {
+      "word": "endow",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/ɪnˈdaʊ/",
+      "subgroup": "cow",
+      "meaning": "v. 赋予（天赋/品质）；捐赠（基金/财产）",
+      "etymology": "古法语 endouer，en-（使…）+ douer（给嫁妆），源自拉丁语 dotare「给予嫁妆」。原始义是新娘出嫁时带的财产，后泛化为「赋予任何有价值的东西」。",
+      "roots": [
+        {"part": "en-", "meaning": "使…，放入"},
+        {"part": "dow- (dotare)", "meaning": "给予，赠与"}
+      ],
+      "phonetics": "重读在第二音节 DOW /daʊ/，OW 在词尾重读位置，读 /aʊ/。和 now、how、cow 同韵。",
+      "tip": "endow = en（装入）+ dow（给予）→ 把才华「装进」某人身上。endow 常和 with 搭配：be endowed with talent（天赋异禀）。",
+      "examples": [
+        {"en": "Nature endowed her with extraordinary musical talent.", "zh": "大自然赋予了她非凡的音乐天赋。", "source": "造句"},
+        {"en": "The university was endowed with a $50 million gift.", "zh": "这所大学获得了五千万美元的捐赠。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "bestow", "ipa": "/bɪˈstəʊ/", "gloss": "授予，赐予", "note": "bestow 侧重「从上到下」的赐予（国王赐封号），endow 侧重赋予内在品质或捐赠资金。注意 bestow 的 OW 读 /əʊ/！"},
+        {"w": "bequeath", "ipa": "/bɪˈkwiːð/", "gloss": "遗赠", "note": "bequeath 专指通过遗嘱赠与，endow 的捐赠义更广，不限于死后。"}
+      ],
+      "antonyms": [
+        {"w": "deprive", "note": "剥夺，与赋予相反"}
+      ],
+      "nuance": "endow 的两个义项在不同场景各有侧重：学术语境多指捐赠基金（endowed chair = 冠名教授职位）；日常语境多指天赋（be endowed with beauty）。和同页的 bestow 对比记忆效果好：endow 给的是内在品质，bestow 给的是外在荣誉。"
+    },
+    {
+      "word": "avow",
+      "hl": "ow",
+      "levels": ["托福"],
+      "ipa": "/əˈvaʊ/",
+      "subgroup": "cow",
+      "meaning": "v. 公开声明，坦率承认",
+      "etymology": "古法语 avouer「承认」，源自拉丁语 advocare「召唤（证人）」，ad-（向）+ vocare（呼唤）。本义是在法庭上公开呼唤证人来证明自己的立场 → 公开声明。同根词 vow（誓言）、advocate（倡导者）。",
+      "roots": [
+        {"part": "a- (ad-)", "meaning": "向，朝"},
+        {"part": "vow (vocare)", "meaning": "呼唤，誓言"}
+      ],
+      "phonetics": "重读在第二音节 VOW /vaʊ/，OW 在词尾重读，读 /aʊ/。和 vow（誓言）、now 同韵。",
+      "tip": "avow 里藏着 vow（誓言）：a + vow = 「向着」誓言的方向公开表态。比 admit 更主动——不是被逼承认，而是主动站出来声明。",
+      "examples": [
+        {"en": "He avowed his intention to run for president.", "zh": "他公开声明了竞选总统的意图。", "source": "造句"},
+        {"en": "She avowed herself a supporter of the reform.", "zh": "她公开表明自己是改革的支持者。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "declare", "ipa": "/dɪˈkleər/", "gloss": "宣布，声明", "note": "declare 最通用，可正式可非正式；avow 更文学化，强调坦率和勇气。"},
+        {"w": "proclaim", "ipa": "/prəˈkleɪm/", "gloss": "宣告", "note": "proclaim 侧重公开、大声地宣告，带有庄严感；avow 侧重个人的坦率承认。"}
+      ],
+      "antonyms": [
+        {"w": "disavow", "note": "否认，与公开声明相反"},
+        {"w": "deny", "note": "否认"}
+      ],
+      "nuance": "avow 是书面正式词，日常口语几乎不用。和 admit 的区别在于姿态：admit 常含「不得不承认」的被动感，avow 是「主动站出来说」的骄傲感。它的反义词 disavow（否认）在政治新闻中更常见。"
+    },
+    {
+      "word": "prowl",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/praʊl/",
+      "subgroup": "cow",
+      "meaning": "v./n. 潜行，悄悄巡游（带有捕猎或窥探意味）",
+      "etymology": "中古英语 prollen「四处游荡寻找猎物」，词源不确定，可能与古法语 proler「搜寻」有关。这个词自始至终带着「捕食者悄悄移动」的画面。",
+      "roots": [
+        {"part": "prowl", "meaning": "潜行搜索（本词即词根）"}
+      ],
+      "phonetics": "单音节词，OW 后接辅音 l，读 /aʊ/。和 growl（咆哮）、scowl（怒视）同韵——三个词都带攻击性，好串记。",
+      "tip": "prowl = pr（像 predator 捕食者）+ owl（猫头鹰）→ 像捕食者一样在夜里像猫头鹰般无声潜行。on the prowl = 在四处搜寻（猎物/目标）。",
+      "examples": [
+        {"en": "A leopard was prowling through the tall grass.", "zh": "一头豹子正在高草丛中潜行。", "source": "造句"},
+        {"en": "Security guards prowl the building at night.", "zh": "保安夜间在大楼里巡逻。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "lurk", "ipa": "/lɜːrk/", "gloss": "潜伏，埋伏", "note": "lurk 强调静止不动地藏着，prowl 强调悄悄移动地搜索——lurk 是伏击，prowl 是巡猎。"},
+        {"w": "stalk", "ipa": "/stɔːk/", "gloss": "跟踪，悄悄接近", "note": "stalk 有明确的跟踪对象，prowl 是无固定目标地四处搜寻。"}
+      ],
+      "antonyms": [],
+      "nuance": "prowl 自带「夜间捕食者」的画面感，用于人时暗示不良企图（He was prowling around the neighborhood = 他在附近鬼鬼祟祟地转悠）。中性用法如 prowl the aisles（在货架间溜达）也有，但少见。"
+    },
+    {
+      "word": "scowl",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/skaʊl/",
+      "subgroup": "cow",
+      "meaning": "v./n. 怒目而视，皱眉瞪人",
+      "etymology": "可能源自斯堪的纳维亚语，丹麦语 skule「斜眼看，怒视」。和 scold（训斥）没有词源关系，但发音相近可以一起记。",
+      "roots": [
+        {"part": "scowl", "meaning": "怒目而视（本词即词根）"}
+      ],
+      "phonetics": "单音节，sc- /sk/ 开头 + OW /aʊ/ + l。和 prowl、growl 押韵——三个「攻击性」词串着记。",
+      "tip": "scowl 发音像中文「死扣」→ 死死扣着眉头不放 → 皱眉怒视。和 smile 形成鲜明对比：笑脸 vs 怒脸。",
+      "examples": [
+        {"en": "She scowled at him across the table.", "zh": "她隔着桌子怒视着他。", "source": "造句"},
+        {"en": "His face wore a permanent scowl.", "zh": "他的脸上永远挂着一副怒容。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "frown", "ipa": "/fraʊn/", "gloss": "皱眉", "note": "frown 程度较轻，可以是困惑或不满的皱眉；scowl 一定是带怒气的瞪视，程度更重。注意 frown 的 OW 也读 /aʊ/！"},
+        {"w": "glare", "ipa": "/ɡleər/", "gloss": "怒视", "note": "glare 强调眼神的凶狠，scowl 强调整张脸（眉头+嘴角）的表情。"}
+      ],
+      "antonyms": [
+        {"w": "smile", "note": "微笑，面部表情的反义"},
+        {"w": "grin", "note": "咧嘴笑"}
+      ],
+      "nuance": "scowl 是脸部表情词，frown 只涉及眉头，glare 只涉及眼神，scowl 是全脸——眉头紧锁+嘴角下拉+眼神不善。文学作品里高频出现，日常口语也常用。"
+    },
+    {
+      "word": "drowsy",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈdraʊzi/",
+      "subgroup": "cow",
+      "meaning": "adj. 昏昏欲睡的；令人昏沉的",
+      "etymology": "来自古英语 drūsian「变得迟钝、昏沉」，与 drowse（打瞌睡）同源。加 -y 变形容词，描述那种眼皮沉重、脑子发糊的状态。",
+      "roots": [
+        {"part": "drows- (drūsian)", "meaning": "昏沉，打瞌睡"},
+        {"part": "-y", "meaning": "……的（形容词后缀）"}
+      ],
+      "phonetics": "重读首音节 DROW /draʊ/，OW 在重读位置读 /aʊ/。第二音节 -sy /zi/。",
+      "tip": "drowsy 里藏着 drow（像 drown 溺水）+ sy → 像溺在水里一样沉沉欲睡。药品标签常见：May cause drowsiness（可能导致嗜睡）。",
+      "examples": [
+        {"en": "The warm afternoon sun made everyone drowsy.", "zh": "温暖的午后阳光让所有人昏昏欲睡。", "source": "造句"},
+        {"en": "Antihistamines can make you drowsy.", "zh": "抗组胺药会让你犯困。", "source": "医学常识"}
+      ],
+      "synonyms": [
+        {"w": "sleepy", "ipa": "/ˈsliːpi/", "gloss": "困倦的", "note": "sleepy 最口语最日常，drowsy 稍正式，常见于医学/药品语境。"},
+        {"w": "lethargic", "ipa": "/ləˈθɑːrdʒɪk/", "gloss": "无精打采的", "note": "lethargic 不仅困，还完全没有动力；drowsy 只是想睡觉，不涉及动力缺失。"}
+      ],
+      "antonyms": [
+        {"w": "alert", "note": "警觉的，精神抖擞的"},
+        {"w": "wide-awake", "note": "完全清醒的"}
+      ],
+      "nuance": "drowsy 比 sleepy 正式一档，特别适用于药物副作用描述（drowsiness 是药品说明书里的标准用词）。比 tired 更具体——tired 是「累了」，drowsy 是「脑子开始关机了」。"
+    },
+    {
+      "word": "browse",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/braʊz/",
+      "subgroup": "cow",
+      "meaning": "v. 浏览，随意翻阅；（动物）吃嫩叶",
+      "etymology": "古法语 broster「吃嫩芽」，本义是牛羊悠闲地啃树叶 → 引申为人悠闲地「啃」书本/网页 → 现代最常用义是浏览网页（browse the internet）。",
+      "roots": [
+        {"part": "brows- (broster)", "meaning": "啃食嫩叶，随意翻看"}
+      ],
+      "phonetics": "单音节，OW 读 /aʊ/，尾音 -se /z/。拼写注意：不是 brows（眉毛的复数），而是 browse 带 e。",
+      "tip": "browse 的本义是牛在草地上「这边啃一口那边啃一口」→ 引申为人在书店或网上「这里翻翻那里看看」。browser（浏览器）就是用来 browse 的工具。",
+      "examples": [
+        {"en": "I spent an hour browsing through the bookstore.", "zh": "我在书店里随意翻看了一个小时。", "source": "造句"},
+        {"en": "She browsed several job-listing websites before finding the right position.", "zh": "她浏览了几个招聘网站才找到合适的职位。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "scan", "ipa": "/skæn/", "gloss": "扫视，粗略浏览", "note": "scan 速度更快、更有目的性（在找什么东西），browse 更悠闲随意。"},
+        {"w": "skim", "ipa": "/skɪm/", "gloss": "略读", "note": "skim 专指快速略读文字，browse 范围更广，可以指逛商店、刷网页。"}
+      ],
+      "antonyms": [
+        {"w": "study", "note": "仔细研读，与随意浏览相反"}
+      ],
+      "nuance": "browse 的核心语感是「没有明确目标地随意看看」。browse a bookstore = 逛书店（可能不买），browse the web = 刷网页（没有特定要找的东西）。一旦有目的，就该用 search 或 look for 了。"
+    },
+    {
+      "word": "renown",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/rɪˈnaʊn/",
+      "subgroup": "cow",
+      "meaning": "n. 声望，名声",
+      "etymology": "古法语 renon「名声」，re-（反复）+ nomer（命名，源自拉丁语 nomen「名字」）。字面义「被反复提起的名字」→ 名望。同根词 renowned（著名的）、noun（名词）、nominal（名义上的）。",
+      "roots": [
+        {"part": "re-", "meaning": "反复，再次"},
+        {"part": "nown (nomen)", "meaning": "名字，名称"}
+      ],
+      "phonetics": "重读在第二音节 NOWN /naʊn/，OW 在重读位置读 /aʊ/。和 noun（名词）同韵。",
+      "tip": "re + nown（名字）= 名字被反复提起 → 名声大噪。注意 renowned（著名的）比 famous 更正式更高级，托福写作加分词。",
+      "examples": [
+        {"en": "The scientist gained international renown for her groundbreaking research.", "zh": "这位科学家因开创性研究赢得了国际声望。", "source": "造句"},
+        {"en": "a city of great renown", "zh": "一座享有盛名的城市。", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fame", "ipa": "/feɪm/", "gloss": "名声，声誉", "note": "fame 最通用，可褒可贬（fame 也可以是恶名）；renown 几乎只用于正面的声望。"},
+        {"w": "prestige", "ipa": "/preˈstiːʒ/", "gloss": "威望", "note": "prestige 强调令人尊敬的地位，renown 强调名声传播的广度。"}
+      ],
+      "antonyms": [
+        {"w": "obscurity", "note": "默默无闻，与声望相反"}
+      ],
+      "nuance": "renown 是不可数名词，只用于正面语境。注意搭配：of great renown（享有盛誉）、win/gain renown（赢得声望）。它的形容词 renowned 在学术写作中比 famous 高级，是托福作文的提分词。"
+    },
+    {
+      "word": "downtown",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˌdaʊnˈtaʊn/",
+      "subgroup": "cow",
+      "meaning": "n./adj./adv. 市中心，闹市区",
+      "etymology": "down（下）+ town（城镇）。纽约的城市布局中，曼哈顿南端（downtown）是最早的商业中心，地理上在「下方」→ down + town → 市中心。现在已泛化，不限于地理方位。",
+      "roots": [
+        {"part": "down", "meaning": "下方"},
+        {"part": "town", "meaning": "城镇"}
+      ],
+      "phonetics": "两个音节都含 OW，都读 /aʊ/：/daʊn/ + /taʊn/。双重 /aʊ/ 音，是练习这个双元音的好材料。",
+      "tip": "downtown 包含两个 /aʊ/，是本页最佳发音练习词。对比 uptown（上城区/住宅区）和 midtown（中城区）。",
+      "examples": [
+        {"en": "Let's go downtown and grab some dinner.", "zh": "我们去市中心吃个晚饭吧。", "source": "造句"},
+        {"en": "The downtown area is packed with restaurants and theaters.", "zh": "市中心到处是餐厅和剧院。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "city center", "ipa": "/ˈsɪti ˈsentər/", "gloss": "市中心", "note": "city center 是英式说法，downtown 是美式说法，义域完全重叠。"}
+      ],
+      "antonyms": [
+        {"w": "suburb", "note": "郊区，与市中心对应"},
+        {"w": "uptown", "note": "上城区（纽约语境）"}
+      ],
+      "nuance": "downtown 是典型的美式英语词汇，英式英语说 city centre / town centre。在美式英语中 downtown 可作名词（the downtown）、形容词（a downtown hotel）和副词（go downtown）三种用法。"
+    },
+    {
+      "word": "bestow",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/bɪˈstəʊ/",
+      "subgroup": "snow",
+      "meaning": "v. 授予，赐予（荣誉、礼物等）",
+      "etymology": "中古英语 bistowen，be-（加强语气）+ stow（放置）。字面义「郑重地放到某人手上」→ 正式授予。stow 的本义是「储藏、安放」（stow away = 偷渡/藏匿），bestow 是它的升级版。",
+      "roots": [
+        {"part": "be-", "meaning": "加强语气，使…"},
+        {"part": "stow", "meaning": "放置，安放"}
+      ],
+      "phonetics": "重读在第二音节 STOW /stəʊ/，OW 在词尾读 /əʊ/，和 snow、flow 同韵。对比 endow 的 OW 读 /aʊ/——同样是「给予」义的词，发音却不同！",
+      "tip": "bestow = be + stow（放好）→ 恭恭敬敬地「放到」你面前 → 授予。常和 upon/on 搭配：bestow an honor upon someone。和 endow 对比：bestow 给外在荣誉，endow 给内在品质。",
+      "examples": [
+        {"en": "The queen bestowed knighthood upon him.", "zh": "女王授予他骑士封号。", "source": "造句"},
+        {"en": "Nature has bestowed/endowed this region with abundant resources.", "zh": "大自然赐予这一地区丰富的资源。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "confer", "ipa": "/kənˈfɜːr/", "gloss": "授予（学位、头衔）", "note": "confer 常用于正式场合授予学位或头衔，bestow 更文学化，强调「赐予」的庄严感。"},
+        {"w": "grant", "ipa": "/ɡrɑːnt/", "gloss": "准予，授予", "note": "grant 更侧重批准和许可（grant permission），bestow 侧重礼物/荣誉的赠与。"}
+      ],
+      "antonyms": [
+        {"w": "withhold", "note": "扣留，不给"},
+        {"w": "revoke", "note": "撤回，收回"}
+      ],
+      "nuance": "bestow 是高级书面词，几乎只用于正面语境——你不会 bestow a punishment（那叫 impose）。搭配 bestow upon/on 是标准用法。和同页 endow 对比：endow 更常用于天赋或资金，bestow 更常用于荣誉或礼物。"
+    },
+    {
+      "word": "overthrow",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˌəʊvərˈθrəʊ/",
+      "subgroup": "snow",
+      "meaning": "v. 推翻（政权、统治）  n. 推翻，颠覆",
+      "etymology": "over（越过，超过）+ throw（扔）。字面义「把东西扔翻过去」→ 推翻政权。over- 前缀表示「超过、翻过」，如 overcome（克服）、overflow（溢出）。",
+      "roots": [
+        {"part": "over-", "meaning": "越过，翻过"},
+        {"part": "throw", "meaning": "扔，投"}
+      ],
+      "phonetics": "两个音节都含 OW 组合的 /əʊ/ 音：O-ver /əʊ.vər/ + throw /θrəʊ/。重读在第二部分 throw。两个 /əʊ/ 呼应，是 /əʊ/ 音的绝佳练习词。",
+      "tip": "over + throw = 把国王「扔翻」过去 → 推翻。画面感：一群人把国王的宝座整个掀翻。名词和动词拼写相同，但重音不同：动词重音在 throw，名词重音在 o·ver。",
+      "examples": [
+        {"en": "The revolutionaries overthrew the monarchy in 1789.", "zh": "革命者在1789年推翻了君主制。", "source": "法国大革命"},
+        {"en": "The overthrow of the dictator was celebrated throughout the country.", "zh": "独裁者被推翻后，全国上下一片欢庆。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "topple", "ipa": "/ˈtɒpl/", "gloss": "推翻，倾覆", "note": "topple 画面感是「从顶部倒下」，更强调物理上的倒塌感；overthrow 更正式更政治化。"},
+        {"w": "oust", "ipa": "/aʊst/", "gloss": "驱逐，罢免", "note": "oust 侧重把人赶出去（oust from office），overthrow 侧重整个体制的颠覆。"}
+      ],
+      "antonyms": [
+        {"w": "establish", "note": "建立，与推翻相反"},
+        {"w": "uphold", "note": "维护，支持"}
+      ],
+      "nuance": "overthrow 几乎专用于政治语境（推翻政权/制度），不用于日常小事。名词形式也高频：the overthrow of apartheid（种族隔离制度的终结）。注意过去式是 overthrew，不是 overthrowed。"
+    },
+    {
+      "word": "elbow",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˈelbəʊ/",
+      "subgroup": "snow",
+      "meaning": "n. 肘部  v. 用肘推挤",
+      "etymology": "古英语 elnboga，ell（前臂）+ boga（弯曲）。字面义「前臂弯曲处」。同源词 bow（弓）——弓就是弯曲的东西，肘部也是手臂弯曲的地方。",
+      "roots": [
+        {"part": "el- (ell)", "meaning": "前臂"},
+        {"part": "bow (boga)", "meaning": "弯曲"}
+      ],
+      "phonetics": "重读首音节 EL /el/，第二音节 bow 弱读 /bəʊ/。这里的 OW 在非重读词尾，读 /əʊ/。",
+      "tip": "elbow 里藏着 bow（弯曲）：el（前臂）+ bow（弯）= 前臂弯曲处 = 肘。动词 elbow 很生动：elbow your way through the crowd = 用胳膊肘挤过人群。",
+      "examples": [
+        {"en": "She rested her elbows on the desk.", "zh": "她把胳膊肘撑在桌上。", "source": "造句"},
+        {"en": "He elbowed his way to the front of the line.", "zh": "他用胳膊肘硬挤到了队伍前面。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "nudge", "ipa": "/nʌdʒ/", "gloss": "轻推，用肘轻碰", "note": "nudge 比 elbow 温和得多——nudge 是提醒性的轻碰，elbow 是挤开别人的粗暴推搡。"}
+      ],
+      "antonyms": [],
+      "nuance": "elbow 作动词时暗示不礼貌的推挤行为（elbow someone aside = 把人推到一边）。习语 elbow room = 活动空间/余地，很实用。elbow grease = 卖力气干活（擦洗时使劲用胳膊肘的动作）。"
+    },
+    {
+      "word": "meadow",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈmedəʊ/",
+      "subgroup": "snow",
+      "meaning": "n. 草地，牧场（通常指河边或低洼处的天然草地）",
+      "etymology": "古英语 mǣdwe「割草地」，与 mow（割草）同源。原义是「可以割草的低洼地」→ 天然草地。同根的 mow 和 meadow 都含 OW，但 mow 读 /məʊ/。",
+      "roots": [
+        {"part": "mead- (mǣd)", "meaning": "草地，割草地"},
+        {"part": "-ow", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重读首音节 MEA /med/（ea 读 /e/，如 bread、dead），第二音节 -dow 弱读 /dəʊ/。OW 在非重读词尾读 /əʊ/。",
+      "tip": "meadow 的 ea 读 /e/（不是 /iː/），和 bread、head 一样。画面记忆：mead（蜂蜜酒）+ ow → 蜂蜜色的草地。",
+      "examples": [
+        {"en": "Wildflowers bloomed across the meadow in spring.", "zh": "春天，野花在草地上盛开。", "source": "造句"},
+        {"en": "The cows grazed peacefully in the meadow.", "zh": "奶牛在牧场上安静地吃草。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "pasture", "ipa": "/ˈpɑːstʃər/", "gloss": "牧场", "note": "pasture 强调用于放牧的功能性，meadow 更强调自然风光的美感，常出现在文学描写中。"},
+        {"w": "field", "ipa": "/fiːld/", "gloss": "田野，原野", "note": "field 最通用，可以是任何开阔平地；meadow 特指长满草的低洼地，更诗意。"}
+      ],
+      "antonyms": [],
+      "nuance": "meadow 比 field 更诗意、更具体——它指的是天然草地，通常在河边或山谷，长满青草和野花。在文学作品和托福阅读的自然科学段落中高频出现。"
+    },
+    {
+      "word": "shadow",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˈʃædəʊ/",
+      "subgroup": "snow",
+      "meaning": "n. 影子，阴影  v. 跟踪，尾随",
+      "etymology": "古英语 sceadwe「阴影」，与 shade（荫凉）同源。shade 是「遮阴处」，shadow 是「被投射出的影子」——一个是原因，一个是结果。",
+      "roots": [
+        {"part": "shad- (sceadu)", "meaning": "遮蔽，阴影"}
+      ],
+      "phonetics": "重读首音节 SHA /ʃæ/，第二音节 -dow 弱读 /dəʊ/。OW 在非重读词尾读 /əʊ/。注意 a 读 /æ/（和 cat 同音），不是 /eɪ/。",
+      "tip": "shadow 和 shade 是一对好兄弟：shade 是「凉爽的阴凉处」（坐在树荫下），shadow 是「投射出来的影子形状」（地上的人影）。动词 shadow = 像影子一样跟着 = 尾随跟踪。",
+      "examples": [
+        {"en": "The long shadows of evening stretched across the lawn.", "zh": "傍晚的长影斜斜地铺在草坪上。", "source": "造句"},
+        {"en": "A detective was hired to shadow the suspect.", "zh": "雇了一名侦探跟踪嫌疑人。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "shade", "ipa": "/ʃeɪd/", "gloss": "阴凉处", "note": "shade 强调遮阳的功能（sit in the shade），shadow 强调投射出的形状（my shadow on the wall）。"},
+        {"w": "silhouette", "ipa": "/ˌsɪluˈet/", "gloss": "剪影，轮廓", "note": "silhouette 特指人或物的暗色轮廓，shadow 范围更广。"}
+      ],
+      "antonyms": [
+        {"w": "light", "note": "光，与影相反"}
+      ],
+      "nuance": "shadow 的比喻义极丰富：live in someone's shadow（活在某人的阴影下）、beyond a shadow of a doubt（毫无疑问）、shadow cabinet（影子内阁）。动词 shadow 在职场中也有正面用法：shadow a colleague（跟岗学习）。"
+    },
+    {
+      "word": "narrow",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˈnærəʊ/",
+      "subgroup": "snow",
+      "meaning": "adj. 狭窄的；有限的  v. 变窄，缩小",
+      "etymology": "古英语 nearu「狭窄的，受限的」。与古日耳曼语 narwaz 同源（鲸鱼 narwhal 的 nar- 也是「窄」的意思——独角鲸嘴巴尖尖的，很「窄」）。",
+      "roots": [
+        {"part": "narr- (nearu)", "meaning": "狭窄，受限"}
+      ],
+      "phonetics": "重读首音节 NAR /næ/，第二音节 -row 弱读 /rəʊ/。OW 在非重读词尾读 /əʊ/。注意 a 读 /æ/。",
+      "tip": "narrow 的比喻义很常考：a narrow victory（险胜）、a narrow escape（死里逃生）、narrow-minded（心胸狭隘的）。词根 narr- 和独角鲸 narwhal 同源——鲸嘴窄窄的。",
+      "examples": [
+        {"en": "The road narrowed as we entered the mountain pass.", "zh": "进入山口后道路变窄了。", "source": "造句"},
+        {"en": "She won the election by a narrow margin.", "zh": "她以微弱优势赢得了选举。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "slim", "ipa": "/slɪm/", "gloss": "微小的，细长的", "note": "slim 常用于抽象义（a slim chance = 渺茫的机会），narrow 更多用于物理宽度或范围。"},
+        {"w": "confined", "ipa": "/kənˈfaɪnd/", "gloss": "受限的，狭小的", "note": "confined 强调被围困的压迫感，narrow 只是客观描述宽度小。"}
+      ],
+      "antonyms": [
+        {"w": "wide", "note": "宽阔的"},
+        {"w": "broad", "note": "宽广的"}
+      ],
+      "nuance": "narrow 既是物理描述（narrow street）也是程度描述（narrow margin）。narrow down = 缩小范围（narrow down the options），是学术讨论和日常英语中都常用的短语动词。"
+    },
+    {
+      "word": "shallow",
+      "hl": "ow",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈʃæləʊ/",
+      "subgroup": "snow",
+      "meaning": "adj. 浅的；肤浅的",
+      "etymology": "中古英语 schalowe「浅的」，可能与古英语 sceald「浅的」有关。与 shoal（浅滩）可能同源。",
+      "roots": [
+        {"part": "shall- (sceald)", "meaning": "浅"}
+      ],
+      "phonetics": "重读首音节 SHA /ʃæ/，第二音节 -llow /ləʊ/。OW 在非重读词尾读 /əʊ/。和 shadow 的发音结构几乎一样（/ˈʃæ.əʊ/），只差中间的辅音。",
+      "tip": "shallow 和 shadow 长得像、发音结构也像，但意思完全不同！shallow = 浅（水浅/人浅薄），shadow = 影子。可以编故事记：shallow shadow = 浅浅的影子（水太浅，影子投不深）。",
+      "examples": [
+        {"en": "The river is too shallow to swim in.", "zh": "这条河太浅，没法游泳。", "source": "造句"},
+        {"en": "His understanding of the issue is rather shallow.", "zh": "他对这个问题的理解相当肤浅。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "superficial", "ipa": "/ˌsuːpərˈfɪʃəl/", "gloss": "表面的，肤浅的", "note": "两者在「肤浅」义上近似，但 superficial 更正式、更常用于抽象语境；shallow 可以同时指物理上的「浅」。"}
+      ],
+      "antonyms": [
+        {"w": "deep", "note": "深的，深刻的"},
+        {"w": "profound", "note": "深远的，深刻的"}
+      ],
+      "nuance": "shallow 用来形容人或思想时带有明显的贬义（a shallow person = 肤浅的人），比 superficial 更直白更刺人。物理义上，shallow water = 浅水区，是潜水/游泳语境的标准用词。"
+    },
+    {
+      "word": "borrow",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˈbɒrəʊ/",
+      "subgroup": "snow",
+      "meaning": "v. 借入（从别人那里借东西/钱来用）",
+      "etymology": "古英语 borgian「借，做担保」，与 borg「抵押」有关。原始概念是「以担保换取暂时使用权」。注意和 lend（借出）是一对：borrow 是「拿进来」，lend 是「给出去」。",
+      "roots": [
+        {"part": "borr- (borg)", "meaning": "担保，抵押"}
+      ],
+      "phonetics": "重读首音节 BOR /bɒ/，第二音节 -row 弱读 /rəʊ/。OW 在非重读词尾读 /əʊ/。和 sorrow、tomorrow 同韵。",
+      "tip": "borrow vs lend 是中国学生永恒的混淆点：borrow = 借入（我从你那借），lend = 借出（你借给我）。口诀：borrow 以 b 开头，b = bring（拿来）；lend 以 l 开头，l = leave（给出）。",
+      "examples": [
+        {"en": "Can I borrow your pen for a moment?", "zh": "我能借用你的笔一下吗？", "source": "造句"},
+        {"en": "The government plans to borrow $50 billion to fund infrastructure projects.", "zh": "政府计划借款500亿美元资助基础设施项目。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "lend", "ipa": "/lend/", "gloss": "借出", "note": "方向相反！borrow = 借入（从别人那里拿），lend = 借出（把自己的给别人）。中国学生最常搞混的一对。"}
+      ],
+      "antonyms": [
+        {"w": "lend", "note": "借出，方向与借入相反"},
+        {"w": "return", "note": "归还"}
+      ],
+      "nuance": "borrow 除了实物，还可以借抽象的东西：borrow an idea（借用一个想法）、borrow a word from French（从法语借词）。语言学术语 loanword（外来词）就是「borrowed word」。living on borrowed time = 活在倒计时中。"
+    },
+    {
+      "word": "sorrow",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˈsɒrəʊ/",
+      "subgroup": "snow",
+      "meaning": "n. 悲伤，悲痛  v. 感到悲伤",
+      "etymology": "古英语 sorg「忧虑，悲伤」，日耳曼语族通用词（德语 Sorge「忧虑」）。与 sorry 同源——sorry 的本义不是「对不起」，而是「感到忧伤的」。",
+      "roots": [
+        {"part": "sorr- (sorg)", "meaning": "忧虑，悲伤"}
+      ],
+      "phonetics": "重读首音节 SOR /sɒ/，第二音节 -row 弱读 /rəʊ/。OW 在非重读词尾读 /əʊ/。和 borrow、tomorrow 完美同韵。",
+      "tip": "sorrow 和 sorry 是亲兄弟：sorrow 是名词「悲伤」，sorry 是形容词「抱歉的/悲伤的」。to one's sorrow = 令某人悲伤的是（正式表达）。",
+      "examples": [
+        {"en": "She felt deep sorrow at the loss of her friend.", "zh": "失去朋友让她深感悲痛。", "source": "造句"},
+        {"en": "Parting is such sweet sorrow.", "zh": "离别是如此甜蜜的忧伤。", "source": "莎士比亚《罗密欧与朱丽叶》"}
+      ],
+      "synonyms": [
+        {"w": "grief", "ipa": "/ɡriːf/", "gloss": "悲痛", "note": "grief 通常指因丧失（尤其是亲人去世）引起的深切悲痛，比 sorrow 更剧烈、更具体。"},
+        {"w": "sadness", "ipa": "/ˈsædnəs/", "gloss": "悲伤", "note": "sadness 最口语最日常，sorrow 更文学更正式，grief 最沉重。三者程度递增。"}
+      ],
+      "antonyms": [
+        {"w": "joy", "note": "喜悦，与悲伤相反"},
+        {"w": "delight", "note": "欣喜"}
+      ],
+      "nuance": "sorrow 是文学性很强的词，日常口语更常用 sadness。sorrow 暗含「深沉的、持续的」悲伤，不是转瞬即逝的难过。莎士比亚的「sweet sorrow」已成为英语经典表达。"
+    },
+    {
+      "word": "hollow",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˈhɒləʊ/",
+      "subgroup": "snow",
+      "meaning": "adj. 空心的；空洞的  n. 洞，凹地  v. 挖空",
+      "etymology": "古英语 holh「洞穴，凹处」。与 hole（洞）同源——hollow 就是「像洞一样空的」。加了 -ow 后缀变成形容词。",
+      "roots": [
+        {"part": "holl- (holh)", "meaning": "洞，空"},
+        {"part": "-ow", "meaning": "形容词/名词后缀"}
+      ],
+      "phonetics": "重读首音节 HOL /hɒ/，第二音节 -low 弱读 /ləʊ/。OW 在非重读词尾读 /əʊ/。和 follow、swallow 同韵。",
+      "tip": "hollow 里藏着 hole（洞）：hole → hollow = 有洞的 → 空心的。比喻义：hollow words = 空洞的话，hollow victory = 虽然赢了但毫无意义的胜利。",
+      "examples": [
+        {"en": "The tree trunk was completely hollow inside.", "zh": "树干里面完全是空心的。", "source": "造句"},
+        {"en": "His promise rang hollow after years of broken commitments.", "zh": "多年的食言之后，他的承诺听起来空洞无物。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "empty", "ipa": "/ˈempti/", "gloss": "空的", "note": "empty 泛指任何「空」（空房间、空杯子），hollow 特指物体内部是空心的（不是实心的）。"},
+        {"w": "vacant", "ipa": "/ˈveɪkənt/", "gloss": "空的，空缺的", "note": "vacant 用于位置/职位的空缺，hollow 用于物理上的中空或比喻上的空洞。"}
+      ],
+      "antonyms": [
+        {"w": "solid", "note": "实心的"},
+        {"w": "sincere", "note": "真诚的（与空洞相反）"}
+      ],
+      "nuance": "hollow 的比喻义在托福写作中很好用：a hollow argument（空洞的论点）、a hollow laugh（虚伪的笑）、ring hollow（听起来不真诚）。Sleepy Hollow（无头谷/沉睡谷）是美国经典文学地名。"
+    },
+    {
+      "word": "bow",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/baʊ/ 或 /bəʊ/",
+      "subgroup": "trap",
+      "meaning": "① /baʊ/ v. 鞠躬；弯腰 n. 船头  ② /bəʊ/ n. 弓；蝴蝶结；琴弓",
+      "etymology": "两个完全不同的词源汇合到同一拼写。/baʊ/ 来自古英语 būgan「弯曲」（鞠躬就是弯腰）；/bəʊ/ 来自古英语 boga「弓」（弯曲的武器）。两者都和「弯曲」有关，但分化成了不同的词。",
+      "roots": [
+        {"part": "bow (būgan)", "meaning": "/baʊ/ 弯曲 → 鞠躬"},
+        {"part": "bow (boga)", "meaning": "/bəʊ/ 弓形的弯曲物 → 弓/蝴蝶结"}
+      ],
+      "phonetics": "这是英语里最典型的同形异音词之一。读 /baʊ/ 时 OW = /aʊ/（动作：弯腰鞠躬）；读 /bəʊ/ 时 OW = /əʊ/（物品：弓、蝴蝶结）。记法：弯腰时嘴巴张大「啊」→ /baʊ/，拿弓射箭时嘴唇收紧瞄准「欧」→ /bəʊ/。",
+      "tip": "bow 的两个音对应两类意思：/baʊ/（身体动作——鞠躬、低头）vs /bəʊ/（弯曲物品——弓、蝴蝶结、小提琴弓）。take a bow = 鞠躬谢幕（/baʊ/）；bow and arrow = 弓箭（/bəʊ/）。",
+      "examples": [
+        {"en": "The actors took a bow after the performance.", "zh": "演员们在演出结束后鞠躬谢幕。（/baʊ/）", "source": "造句"},
+        {"en": "She tied a red bow in her hair.", "zh": "她在头发上系了一个红色蝴蝶结。（/bəʊ/）", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "bend", "ipa": "/bend/", "gloss": "弯曲，弯腰", "note": "bend 是 bow /baʊ/ 鞠躬义的近义词，但 bend 更通用，bow 专指礼仪性的弯腰。"},
+        {"w": "arc", "ipa": "/ɑːrk/", "gloss": "弧形", "note": "arc 是 bow /bəʊ/ 弓形义的近义词，指弧线形状。"}
+      ],
+      "antonyms": [],
+      "nuance": "bow 是中国学生的高频错误点。记住：身体动作读 /baʊ/，物品读 /bəʊ/。船头（bow of a ship）也读 /baʊ/——因为船头是「弯曲」的。rainbow 的 bow 读 /bəʊ/——彩虹是天上的「弓」。"
+    },
+    {
+      "word": "row",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/rəʊ/ 或 /raʊ/",
+      "subgroup": "trap",
+      "meaning": "① /rəʊ/ n. 一排，一行 v. 划船  ② /raʊ/ n. 争吵，吵闹（主要英式）",
+      "etymology": "两个不同来源：/rəʊ/（排、划船）来自古英语 rāw「一行」和 rōwan「划」；/raʊ/（争吵）可能来自18世纪俚语，词源不明，有些学者认为与 rouse（激怒）有关。",
+      "roots": [
+        {"part": "row (rāw)", "meaning": "/rəʊ/ 一排，排列"},
+        {"part": "row (rōwan)", "meaning": "/rəʊ/ 划（船）"},
+        {"part": "row (?)", "meaning": "/raʊ/ 争吵（词源不明）"}
+      ],
+      "phonetics": "读 /rəʊ/ 时 OW = /əʊ/（平静的画面：一排东西、划船）；读 /raʊ/ 时 OW = /aʊ/（激烈的画面：争吵）。记法：安静的排列/划船 → 嘴巴平静「欧」/rəʊ/；吵架时嘴巴大张「啊」→ /raʊ/。",
+      "tip": "row 的两个音可以用情绪记：/rəʊ/（平静）= 一排排整齐的东西、安静划船；/raʊ/（激动）= 大吵大闹。注意 /raʊ/ 的争吵义主要是英式英语，美式更常用 argument/quarrel。",
+      "examples": [
+        {"en": "The students sat in neat rows.", "zh": "学生们坐成整齐的一排排。（/rəʊ/）", "source": "造句"},
+        {"en": "They had a terrible row about money.", "zh": "他们为了钱大吵了一架。（/raʊ/，英式）", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "line", "ipa": "/laɪn/", "gloss": "一排，一行", "note": "line 和 row /rəʊ/ 的「排」义高度重叠，但 row 更强调横排，line 更强调纵向队列。"},
+        {"w": "quarrel", "ipa": "/ˈkwɒrəl/", "gloss": "争吵", "note": "quarrel 和 row /raʊ/ 同义，但 quarrel 更正式、英美通用；row 作争吵义主要限于英式英语。"}
+      ],
+      "antonyms": [],
+      "nuance": "row /raʊ/ 作「争吵」是英式英语的高频口语词，美式英语中很少用。托福以美式为主，但阅读中可能遇到英式文本。in a row = 连续（three wins in a row = 三连胜），这里的 row 读 /rəʊ/。"
+    },
+    {
+      "word": "sow",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/səʊ/ 或 /saʊ/",
+      "subgroup": "trap",
+      "meaning": "① /səʊ/ v. 播种；散布  ② /saʊ/ n. 母猪",
+      "etymology": "两个不同词源：/səʊ/ 来自古英语 sāwan「播种」（与 seed 同源，日耳曼语族通用）；/saʊ/ 来自古英语 sugu「母猪」（与德语 Sau 同源）。播种和母猪毫无关系，纯属拼写巧合。",
+      "roots": [
+        {"part": "sow (sāwan)", "meaning": "/səʊ/ 播种（与 seed 同源）"},
+        {"part": "sow (sugu)", "meaning": "/saʊ/ 母猪"}
+      ],
+      "phonetics": "播种读 /səʊ/（OW = /əʊ/，和 show、snow 同韵）；母猪读 /saʊ/（OW = /aʊ/，和 cow、now 同韵）。记法：播种时优雅地撒种子「欧」→ /səʊ/；母猪发出的叫声「嗷」→ /saʊ/。",
+      "tip": "you reap what you sow（种瓜得瓜）是英语经典谚语，这里 sow 读 /səʊ/。sow the seeds of = 埋下…的种子（sow the seeds of doubt = 播下怀疑的种子）。",
+      "examples": [
+        {"en": "You reap what you sow.", "zh": "种什么因，得什么果。（/səʊ/）", "source": "英语谚语"},
+        {"en": "The farmer keeps three sows and a boar.", "zh": "农民养了三头母猪和一头公猪。（/saʊ/）", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "plant", "ipa": "/plɑːnt/", "gloss": "种植", "note": "plant 比 sow /səʊ/ 更通用（plant a tree），sow 专指撒种子的动作，不用于移栽。"},
+        {"w": "scatter", "ipa": "/ˈskætər/", "gloss": "撒播，散布", "note": "scatter 强调「撒开」的动作，sow 强调「播种以期收获」的目的性。"}
+      ],
+      "antonyms": [
+        {"w": "reap", "note": "收割（与播种相反）"},
+        {"w": "harvest", "note": "收获"}
+      ],
+      "nuance": "sow /səʊ/ 的比喻义在写作中很好用：sow discord（散布不和）、sow confusion（制造混乱）、sow the seeds of revolution（播下革命的种子）。母猪义 /saʊ/ 在日常英语中很少出现，但在农业语境和 GRE 词汇中需要认识。"
+    },
+    {
+      "word": "tower",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˈtaʊər/",
+      "subgroup": "trap",
+      "meaning": "n. 塔，高楼  v. 高耸，远超",
+      "etymology": "古法语 tur，源自拉丁语 turris「塔」（可能借自希腊语）。tower 在英语中加了 -er 后缀。注意这个词的 OW 始终读 /aʊ/，没有 /əʊ/ 的变体——它被收入「易混」组是因为初学者容易和 lower 的两种读音混淆。",
+      "roots": [
+        {"part": "tow- (turris)", "meaning": "塔"}
+      ],
+      "phonetics": "重读首音节 TOW /taʊ/，OW 始终读 /aʊ/。和 power、flower、shower 同韵。注意：tower 只有一种读法 /taʊər/，不像 bow、row 有两种。放在「易混」组是提醒你它不读 /təʊər/。",
+      "tip": "tower 只读 /taʊər/，永远不读 /təʊər/。动词 tower over = 高出一大截（He towers over his classmates = 他比同学们高出一大截）。ivory tower = 象牙塔。",
+      "examples": [
+        {"en": "The Eiffel Tower attracts millions of visitors each year.", "zh": "埃菲尔铁塔每年吸引数百万游客。", "source": "造句"},
+        {"en": "At six foot five, he towered over everyone in the room.", "zh": "他身高六英尺五，远远高出房间里所有人。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "turret", "ipa": "/ˈtʌrɪt/", "gloss": "塔楼，角楼", "note": "turret 是城堡上的小型圆塔，tower 泛指任何高塔。两者同源（拉丁语 turris）。"},
+        {"w": "skyscraper", "ipa": "/ˈskaɪskreɪpər/", "gloss": "摩天大楼", "note": "skyscraper 特指现代高层建筑，tower 范围更广，古今都可用。"}
+      ],
+      "antonyms": [],
+      "nuance": "tower 作动词比名词更有表现力：tower over/above = 远远高出/超越。tower of strength = 中流砥柱（可靠的人）。Trump Tower、Tower of London 都是专有名词。控制塔叫 control tower。"
+    },
+    {
+      "word": "lower",
+      "hl": "ow",
+      "levels": ["六级"],
+      "ipa": "/ˈləʊər/ 或 /ˈlaʊər/",
+      "subgroup": "trap",
+      "meaning": "① /ˈləʊər/ v. 降低，放下 adj. 较低的  ② /ˈlaʊər/ v. （天色）阴沉；怒视（也拼作 lour）",
+      "etymology": "两个不同来源：/ˈləʊər/（降低）是 low 的比较级和动词化，来自古诺尔斯语 lágr「低的」；/ˈlaʊər/（阴沉/怒视）来自中古英语 louren「皱眉」，与 lurk（潜伏）可能同源，指天空或面部「沉下来」的样子。",
+      "roots": [
+        {"part": "low", "meaning": "/ˈləʊər/ 低 → 降低"},
+        {"part": "lour- (louren)", "meaning": "/ˈlaʊər/ 阴沉，皱眉"}
+      ],
+      "phonetics": "读 /ˈləʊər/ 时 OW = /əʊ/（就是 low + -er）；读 /ˈlaʊər/ 时 OW = /aʊ/（阴沉的天空/怒视的脸）。第一个读音远比第二个常见。",
+      "tip": "lower 99% 的情况读 /ˈləʊər/（降低/较低的）。/ˈlaʊər/（阴沉/怒视）只在文学作品中偶尔出现，日常几乎不用，但托福阅读可能遇到。记法：low 的比较级 → lower /ˈləʊər/，几乎不会错。",
+      "examples": [
+        {"en": "Please lower your voice in the library.", "zh": "请在图书馆里压低声音。（/ˈləʊər/）", "source": "造句"},
+        {"en": "Dark clouds lowered over the valley.", "zh": "乌云阴沉地压在山谷上方。（/ˈlaʊər/）", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "reduce", "ipa": "/rɪˈdjuːs/", "gloss": "减少，降低", "note": "reduce 泛指任何减少，lower 更具体，常指物理上的「放低」或数值上的「降低」。"},
+        {"w": "decrease", "ipa": "/dɪˈkriːs/", "gloss": "减少", "note": "decrease 更正式、更常见于数据/统计语境；lower 更口语化、动作感更强。"}
+      ],
+      "antonyms": [
+        {"w": "raise", "note": "升高，提高"},
+        {"w": "upper", "note": "较高的（形容词对立）"}
+      ],
+      "nuance": "lower 作形容词（lower level = 较低层级、lower back = 下背部）在学术英语中极高频。lower-case = 小写字母（对比 upper-case = 大写字母）。/ˈlaʊər/ 的阴沉义很文学化，常见于19世纪小说中描写暴风雨前的天空。"
+    }
+  ]
+}
