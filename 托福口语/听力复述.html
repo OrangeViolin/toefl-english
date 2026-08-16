@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>听力复述 · Listen and Repeat</title>
 <style>
-  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--ok:#4a9a5e;--bad:#c04a3a;--warn:#d8903a}
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--accent2:#e0913c;--amber:#fdeccd;--core:#2f8f83;--ok:#4a9a5e;--bad:#c04a3a;--warn:#d8903a}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
   .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
@@ -13,8 +13,18 @@
   .top a{color:var(--muted);text-decoration:none}
   h1{font-size:22px;margin:12px 0 2px}
   .en{color:var(--accent);font-weight:600;font-size:14px}
-  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 20px}
+  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 18px}
+  /* 场景选择 */
+  .scenes{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;-webkit-overflow-scrolling:touch}
+  .scenes::-webkit-scrollbar{height:6px}
+  .scenes::-webkit-scrollbar-thumb{background:#e0d6c4;border-radius:3px}
+  .scene-chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:20px;padding:7px 14px;font-size:13px;cursor:pointer;white-space:nowrap;transition:.15s;color:#5f574c}
+  .scene-chip:hover{border-color:var(--accent)}
+  .scene-chip.on{background:var(--core);color:#fff;border-color:var(--core);font-weight:700}
   .stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .scene-head{margin:0 0 14px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+  .scene-head .nm{font-size:17px;font-weight:800}
+  .scene-head .ds{font-size:12.5px;color:var(--muted);margin-top:2px}
   .qinfo{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:14px}
   .lv{font-size:11px;padding:2px 10px;border-radius:10px;background:#e6f0ec;color:var(--core);font-weight:700}
   .sentence{font-family:Georgia,"Times New Roman",serif;font-size:26px;line-height:1.4;margin:10px 0 6px;min-height:36px}
@@ -65,8 +75,10 @@
 <div class="wrap">
   <div class="top"><a href="./index.html">← 返回口语主页</a><span>听力复述 · Listen and Repeat</span></div>
   <h1>🔁 听力复述</h1>
-  <div class="en">Listen and Repeat · 逐字复述</div>
-  <div class="desc">听一句话（考试只放一遍）→ 逐字复述。系统会把你说的转成文字，与原文做<b>逐字比对</b>，算出复述准确率。换词、漏词、重排都算错——这正是新版托福的扣分点。</div>
+  <div class="en">Listen and Repeat · 按场景逐句复述</div>
+  <div class="desc">按<b>真实校园场景</b>组织：一个场景约 7 句、句子由短到长。听一句（考试只放一遍）→ 逐字复述。系统把你说的转成文字与原文做<b>逐字比对</b>，算复述准确率。换词、漏词、重排都算错——这正是新版托福的扣分点。</div>
+
+  <div class="scenes" id="scenes"></div>
 
   <div class="stage">
     <div class="method">
@@ -74,7 +86,11 @@
       ① <b>切块</b>——别逐词记，按意群记成 3–4 块（如「图书馆·开门·八点」）·
       ② <b>影子跟读</b>——听的时候心里同步默念 ·
       ③ <b>抓骨架</b>——先抓「谁+干什么」，修饰语填空 ·
-      ④ 从「简单」档练起，每天 10 分钟。
+      ④ 顺着一个场景练 7 句，越练越顺、语料成串更好记。
+    </div>
+    <div class="scene-head">
+      <div class="nm" id="sceneName"></div>
+      <div class="ds" id="sceneDesc"></div>
     </div>
     <div class="qinfo"><span id="qNo"></span><span class="lv" id="qLv"></span></div>
     <div class="sentence" id="sentence">点击「🔊 播放原句」开始</div>
@@ -95,7 +111,7 @@
       <button class="btn play" onclick="playChunks()">🧩 分块重放</button>
       <button class="btn play" onclick="toggleSkeleton()">🦴 骨架提示</button>
       <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
-      <button class="btn next" id="nextBtn" onclick="next()">下一题 →</button>
+      <button class="btn next" id="nextBtn" onclick="next()">下一句 →</button>
     </div>
 
     <div class="live" id="live">录音转写会实时显示在这里…</div>
@@ -124,55 +140,157 @@
 
 <script src="./speech-core.js"></script>
 <script>
-// ---------- 题目数据（对标 2026 新版 Listen and Repeat，难度递增，6–19 音节）----------
-const REPEAT = [
-  { en:"The library opens at eight.", zh:"图书馆八点开门。", lv:"简单",
-    chunks:["The library","opens","at eight"], skeleton:["图书馆","开门","八点"] },
-  { en:"Please return your books on time.", zh:"请按时还书。", lv:"简单",
-    chunks:["Please return","your books","on time"], skeleton:["请归还","你的书","按时"] },
-  { en:"The lecture starts in ten minutes.", zh:"讲座十分钟后开始。", lv:"简单",
-    chunks:["The lecture","starts","in ten minutes"], skeleton:["讲座","开始","十分钟后"] },
-  { en:"We have a variety of wildlife.", zh:"我们这里有很多种野生动物。", lv:"简单",
-    chunks:["We have","a variety of","wildlife"], skeleton:["我们有","多种","野生动物"] },
-  { en:"Bears, wolves, and large cats are to the right.", zh:"熊、狼和大型猫科动物在右边。", lv:"简单",
-    chunks:["Bears, wolves, and large cats","are","to the right"], skeleton:["熊、狼和大型猫科动物","在","右边"] },
-  { en:"Most students prefer to study in the morning.", zh:"大多数学生喜欢在早上学习。", lv:"中等",
-    chunks:["Most students","prefer to study","in the morning"], skeleton:["大多数学生","喜欢学习","在早上"] },
-  { en:"The professor explained the theory very clearly.", zh:"教授把这个理论讲得非常清楚。", lv:"中等",
-    chunks:["The professor","explained the theory","very clearly"], skeleton:["教授","讲解理论","很清楚"] },
-  { en:"You should register for classes before Friday.", zh:"你应该在周五之前注册课程。", lv:"中等",
-    chunks:["You should register","for classes","before Friday"], skeleton:["你应该注册","课程","周五前"] },
-  { en:"The museum is closed for renovation this month.", zh:"博物馆这个月因翻修闭馆。", lv:"中等",
-    chunks:["The museum","is closed","for renovation this month"], skeleton:["博物馆","关闭","因翻修本月"] },
-  { en:"Healthy eating requires both planning and patience.", zh:"健康饮食需要规划，也需要耐心。", lv:"中等",
-    chunks:["Healthy eating","requires","both planning and patience"], skeleton:["健康饮食","需要","规划和耐心"] },
-  { en:"Photosynthesis is the process by which plants convert sunlight into energy.", zh:"光合作用是植物把阳光转化为能量的过程。", lv:"困难",
-    chunks:["Photosynthesis","is the process","by which plants","convert sunlight into energy"], skeleton:["光合作用","是过程","植物","把阳光转为能量"] },
-  { en:"The Industrial Revolution dramatically changed the way people lived and worked.", zh:"工业革命极大地改变了人们生活和工作的方式。", lv:"困难",
-    chunks:["The Industrial Revolution","dramatically changed","the way people lived and worked"], skeleton:["工业革命","极大改变","人们生活工作方式"] },
-  { en:"Despite the heavy rain, the outdoor ceremony continued as planned.", zh:"尽管下着大雨，户外仪式仍按计划进行。", lv:"困难",
-    chunks:["Despite the heavy rain","the outdoor ceremony","continued as planned"], skeleton:["尽管大雨","户外仪式","按计划继续"] },
-  { en:"Researchers have found that regular exercise improves both physical and mental health.", zh:"研究人员发现，规律运动能同时改善身心健康。", lv:"困难",
-    chunks:["Researchers have found","that regular exercise","improves","both physical and mental health"], skeleton:["研究人员发现","规律运动","改善","身心健康"] },
+// ---------- 题目数据（对标 2026 新版 Listen and Repeat）----------
+// 按真实校园/生活场景组织：每个场景约 7 句，句子由短到长、难度递增。
+const SCENES = [
+  { name:"📚 图书馆", en:"At the Library", desc:"借阅·开放时间·罚款·预约·安静区",
+    items:[
+      { en:"The library opens at eight in the morning.", zh:"图书馆早上八点开门。", lv:"简单",
+        chunks:["The library","opens","at eight in the morning"], skeleton:["图书馆","开门","早上八点"] },
+      { en:"Please return your books on time.", zh:"请按时还书。", lv:"简单",
+        chunks:["Please return","your books","on time"], skeleton:["请归还","你的书","按时"] },
+      { en:"You can borrow up to ten books at once.", zh:"你一次最多可以借十本书。", lv:"中等",
+        chunks:["You can borrow","up to ten books","at once"], skeleton:["你可以借","最多十本","一次"] },
+      { en:"Late returns will be charged a small daily fine.", zh:"逾期归还会按天收取小额罚款。", lv:"中等",
+        chunks:["Late returns","will be charged","a small daily fine"], skeleton:["逾期归还","会被收取","每日小额罚款"] },
+      { en:"The quiet study rooms are on the third floor.", zh:"安静自习室在三楼。", lv:"中等",
+        chunks:["The quiet study rooms","are","on the third floor"], skeleton:["安静自习室","在","三楼"] },
+      { en:"If a book is checked out, you can place a hold and we will notify you.", zh:"如果书已被借走，你可以预约，我们会通知你。", lv:"困难",
+        chunks:["If a book is checked out","you can place a hold","and we will notify you"], skeleton:["如果书被借走","你可以预约","我们会通知你"] },
+      { en:"Reference books must stay in the building and cannot be taken home.", zh:"参考书必须留在馆内，不能带回家。", lv:"困难",
+        chunks:["Reference books","must stay in the building","and cannot be taken home"], skeleton:["参考书","必须留馆内","不能带回家"] },
+    ]},
 
-  // ---- 申请成绩单（transcript）场景 · 7 句 ----
-  { en:"Fill out the form to request your transcript.", zh:"填写表格来申请你的成绩单。", lv:"简单",
-    chunks:["Fill out the form","to request","your transcript"], skeleton:["填写表格","申请","成绩单"] },
-  { en:"Log into the portal and check your records.", zh:"登录门户网站，查看你的记录。", lv:"简单",
-    chunks:["Log into the portal","and check","your records"], skeleton:["登录门户","查看","记录"] },
-  { en:"Ensure your name on the form matches the records before submitting.", zh:"提交前确保表格上的名字与记录一致。", lv:"中等",
-    chunks:["Ensure your name","on the form","matches the records","before submitting"], skeleton:["确保名字","表格上","与记录一致","提交前"] },
-  { en:"We will stamp your transcript with our seal before mailing it.", zh:"邮寄前我们会在成绩单上盖章。", lv:"中等",
-    chunks:["We will stamp","your transcript","with our seal","before mailing it"], skeleton:["我们会盖章","成绩单","盖印章","邮寄前"] },
-  { en:"Your transcript will be mailed directly to your selected schools.", zh:"你的成绩单会直接邮寄到你选择的学校。", lv:"中等",
-    chunks:["Your transcript","will be mailed","directly to","your selected schools"], skeleton:["成绩单","会邮寄","直接","所选学校"] },
-  { en:"If you need an unofficial transcript, which you can keep for your own records, check this box.", zh:"如果你需要一份可自己留存的非官方成绩单，请勾选此框。", lv:"困难",
-    chunks:["If you need","an unofficial transcript","which you can keep","for your own records","check this box"], skeleton:["如果你需要","非官方成绩单","可自己留存","供记录","勾选此框"] },
-  { en:"Email the registrar's office to resolve issues, such as missing courses, right away.", zh:"立即邮件联系教务处解决诸如课程缺失等问题。", lv:"困难",
-    chunks:["Email the registrar's office","to resolve issues","such as missing courses","right away"], skeleton:["邮件联系教务处","解决问题","如课程缺失","立即"] },
+  { name:"🦁 自然博物馆导览", en:"Wildlife Center Tour", desc:"欢迎词·展区指路·参观规则·导览时间",
+    items:[
+      { en:"Welcome to our wildlife center.", zh:"欢迎来到我们的野生动物中心。", lv:"简单",
+        chunks:["Welcome to","our wildlife center"], skeleton:["欢迎来到","野生动物中心"] },
+      { en:"We have a variety of wildlife here.", zh:"我们这里有很多种野生动物。", lv:"简单",
+        chunks:["We have","a variety of","wildlife here"], skeleton:["我们有","多种","野生动物"] },
+      { en:"Bears, wolves, and large cats are to the right.", zh:"熊、狼和大型猫科动物在右边。", lv:"中等",
+        chunks:["Bears, wolves, and large cats","are","to the right"], skeleton:["熊、狼和大型猫科","在","右边"] },
+      { en:"Please do not feed the animals during your visit.", zh:"参观期间请不要投喂动物。", lv:"中等",
+        chunks:["Please do not feed","the animals","during your visit"], skeleton:["请勿投喂","动物","参观期间"] },
+      { en:"The bird sanctuary is just past the main entrance.", zh:"鸟类保护区就在正门再往前一点。", lv:"中等",
+        chunks:["The bird sanctuary","is just past","the main entrance"], skeleton:["鸟类保护区","刚过","正门"] },
+      { en:"Our guided tour begins every hour on the hour near the gift shop.", zh:"我们的导览每逢整点在礼品店旁边开始。", lv:"困难",
+        chunks:["Our guided tour","begins every hour","on the hour","near the gift shop"], skeleton:["导览","每小时开始","整点","礼品店旁"] },
+      { en:"Many of the species you will see here are endangered and protected by law.", zh:"你在这里将看到的许多物种都濒危并受法律保护。", lv:"困难",
+        chunks:["Many of the species","you will see here","are endangered","and protected by law"], skeleton:["许多物种","你会看到的","濒危","受法律保护"] },
+    ]},
+
+  { name:"📝 选课注册", en:"Course Registration", desc:"截止日·约见导师·学分·先修课·退课·候补",
+    items:[
+      { en:"You should register for classes before Friday.", zh:"你应该在周五之前注册课程。", lv:"简单",
+        chunks:["You should register","for classes","before Friday"], skeleton:["你应注册","课程","周五前"] },
+      { en:"Meet with your advisor to plan your schedule.", zh:"约见你的导师来规划课表。", lv:"简单",
+        chunks:["Meet with","your advisor","to plan your schedule"], skeleton:["约见","你的导师","规划课表"] },
+      { en:"Each course is worth three credit hours.", zh:"每门课值三个学分。", lv:"中等",
+        chunks:["Each course","is worth","three credit hours"], skeleton:["每门课","值","三个学分"] },
+      { en:"Some classes require a prerequisite before you can enroll.", zh:"有些课需要先修课才能选。", lv:"中等",
+        chunks:["Some classes","require a prerequisite","before you can enroll"], skeleton:["有些课","需要先修课","才能选"] },
+      { en:"You can drop a course within the first two weeks without penalty.", zh:"你可以在头两周内退课而不受处罚。", lv:"困难",
+        chunks:["You can drop a course","within the first two weeks","without penalty"], skeleton:["你可退课","头两周内","无处罚"] },
+      { en:"If a course is full, add your name to the waitlist and check back daily.", zh:"如果课满了，把名字加进候补名单并每天查看。", lv:"困难",
+        chunks:["If a course is full","add your name to the waitlist","and check back daily"], skeleton:["如果课满","加入候补名单","每天查看"] },
+      { en:"Full-time students must enroll in at least twelve credits each semester.", zh:"全日制学生每学期必须至少选十二个学分。", lv:"困难",
+        chunks:["Full-time students","must enroll in","at least twelve credits","each semester"], skeleton:["全日制学生","必须选","至少十二学分","每学期"] },
+    ]},
+
+  { name:"🏛 教务处·成绩单", en:"Registrar & Transcript", desc:"填表·门户·核对·盖章·邮寄·非官方件",
+    items:[
+      { en:"Fill out the form to request your transcript.", zh:"填写表格来申请你的成绩单。", lv:"简单",
+        chunks:["Fill out the form","to request","your transcript"], skeleton:["填写表格","申请","成绩单"] },
+      { en:"Log into the portal and check your records.", zh:"登录门户网站，查看你的记录。", lv:"简单",
+        chunks:["Log into the portal","and check","your records"], skeleton:["登录门户","查看","记录"] },
+      { en:"Ensure your name on the form matches the records before submitting.", zh:"提交前确保表格上的名字与记录一致。", lv:"中等",
+        chunks:["Ensure your name","on the form","matches the records","before submitting"], skeleton:["确保名字","表格上","与记录一致","提交前"] },
+      { en:"We will stamp your transcript with our seal before mailing it.", zh:"邮寄前我们会在成绩单上盖章。", lv:"中等",
+        chunks:["We will stamp","your transcript","with our seal","before mailing it"], skeleton:["我们会盖章","成绩单","盖印章","邮寄前"] },
+      { en:"Your transcript will be mailed directly to your selected schools.", zh:"你的成绩单会直接邮寄到你选择的学校。", lv:"中等",
+        chunks:["Your transcript","will be mailed","directly to","your selected schools"], skeleton:["成绩单","会邮寄","直接","所选学校"] },
+      { en:"If you need an unofficial transcript, which you can keep for your own records, check this box.", zh:"如果你需要一份可自己留存的非官方成绩单，请勾选此框。", lv:"困难",
+        chunks:["If you need","an unofficial transcript","which you can keep","for your own records","check this box"], skeleton:["如果你需要","非官方成绩单","可自己留存","供记录","勾选此框"] },
+      { en:"Email the registrar's office to resolve issues, such as missing courses, right away.", zh:"立即邮件联系教务处解决诸如课程缺失等问题。", lv:"困难",
+        chunks:["Email the registrar's office","to resolve issues","such as missing courses","right away"], skeleton:["邮件联系教务处","解决问题","如课程缺失","立即"] },
+    ]},
+
+  { name:"🏠 宿舍住宿", en:"Dorm & Housing", desc:"领钥匙·入住日·走廊·安静时段·报修·假期",
+    items:[
+      { en:"Pick up your room key at the front desk.", zh:"到前台领取你的房间钥匙。", lv:"简单",
+        chunks:["Pick up","your room key","at the front desk"], skeleton:["领取","房间钥匙","前台"] },
+      { en:"Move-in day is this Saturday morning.", zh:"入住日是本周六上午。", lv:"简单",
+        chunks:["Move-in day","is","this Saturday morning"], skeleton:["入住日","是","本周六上午"] },
+      { en:"Please keep the hallways clear at all times.", zh:"请始终保持走廊畅通。", lv:"中等",
+        chunks:["Please keep","the hallways clear","at all times"], skeleton:["请保持","走廊畅通","始终"] },
+      { en:"Quiet hours begin at ten every weeknight.", zh:"每个工作日晚上十点进入安静时段。", lv:"中等",
+        chunks:["Quiet hours","begin at ten","every weeknight"], skeleton:["安静时段","十点开始","每个工作日晚"] },
+      { en:"Report any maintenance problems to your resident advisor.", zh:"任何维修问题都要报告给你的宿舍管理员。", lv:"中等",
+        chunks:["Report any","maintenance problems","to your resident advisor"], skeleton:["报告任何","维修问题","给宿管"] },
+      { en:"Cooking is only allowed in the shared kitchen, not in your room.", zh:"只能在公共厨房做饭，不能在你的房间里。", lv:"困难",
+        chunks:["Cooking is only allowed","in the shared kitchen","not in your room"], skeleton:["做饭仅允许","公共厨房","不在你房间"] },
+      { en:"Before you leave for the break, unplug your appliances and lock the windows.", zh:"放假离开前，拔掉电器并锁好窗户。", lv:"困难",
+        chunks:["Before you leave for the break","unplug your appliances","and lock the windows"], skeleton:["放假离开前","拔掉电器","锁好窗户"] },
+    ]},
+
+  { name:"🍽 餐厅·膳食计划", en:"Dining & Meal Plan", desc:"供餐时间·刷卡·餐次·清盘·过敏·素食",
+    items:[
+      { en:"The dining hall serves breakfast until ten.", zh:"餐厅供应早餐到十点。", lv:"简单",
+        chunks:["The dining hall","serves breakfast","until ten"], skeleton:["餐厅","供应早餐","到十点"] },
+      { en:"Swipe your student card at the entrance.", zh:"在入口处刷你的学生卡。", lv:"简单",
+        chunks:["Swipe","your student card","at the entrance"], skeleton:["刷","学生卡","入口处"] },
+      { en:"Your meal plan includes fourteen meals a week.", zh:"你的膳食计划包含每周十四餐。", lv:"中等",
+        chunks:["Your meal plan","includes","fourteen meals a week"], skeleton:["膳食计划","包含","每周十四餐"] },
+      { en:"Please clear your tray when you are finished.", zh:"吃完后请清理你的餐盘。", lv:"中等",
+        chunks:["Please clear","your tray","when you are finished"], skeleton:["请清理","餐盘","吃完后"] },
+      { en:"Let the staff know if you have any food allergies.", zh:"如果你有任何食物过敏，请告知工作人员。", lv:"中等",
+        chunks:["Let the staff know","if you have","any food allergies"], skeleton:["告知员工","如果你有","食物过敏"] },
+      { en:"Unused meal swipes do not carry over to the next week.", zh:"没用完的餐次不会结转到下一周。", lv:"困难",
+        chunks:["Unused meal swipes","do not carry over","to the next week"], skeleton:["没用完的餐次","不结转","到下周"] },
+      { en:"A vegetarian option is available at every station during dinner.", zh:"晚餐时每个取餐窗口都提供素食选项。", lv:"困难",
+        chunks:["A vegetarian option","is available","at every station","during dinner"], skeleton:["素食选项","可提供","每个窗口","晚餐时"] },
+    ]},
+
+  { name:"🏥 校园健康中心", en:"Health Center", desc:"开放时间·预约·保险卡·疫苗·急诊·转诊",
+    items:[
+      { en:"The health center is open on weekdays.", zh:"健康中心工作日开放。", lv:"简单",
+        chunks:["The health center","is open","on weekdays"], skeleton:["健康中心","开放","工作日"] },
+      { en:"Please call ahead to book an appointment.", zh:"请提前打电话预约。", lv:"简单",
+        chunks:["Please call ahead","to book","an appointment"], skeleton:["请提前打电话","预约","门诊"] },
+      { en:"Bring your insurance card to every visit.", zh:"每次就诊都带上你的保险卡。", lv:"中等",
+        chunks:["Bring","your insurance card","to every visit"], skeleton:["带上","保险卡","每次就诊"] },
+      { en:"Flu shots are free for all enrolled students.", zh:"流感疫苗对所有在校学生免费。", lv:"中等",
+        chunks:["Flu shots","are free","for all enrolled students"], skeleton:["流感疫苗","免费","所有在校学生"] },
+      { en:"If you feel unwell, walk-in hours are in the afternoon.", zh:"如果你不舒服，下午有免预约就诊时段。", lv:"中等",
+        chunks:["If you feel unwell","walk-in hours","are in the afternoon"], skeleton:["如果不舒服","免预约时段","在下午"] },
+      { en:"For a medical emergency after hours, call the number posted on the door.", zh:"下班时段遇到医疗急救，请拨打门上张贴的号码。", lv:"困难",
+        chunks:["For a medical emergency","after hours","call the number","posted on the door"], skeleton:["医疗急救","下班时段","拨打号码","门上张贴的"] },
+      { en:"The counselor can refer you to a specialist if further treatment is needed.", zh:"如需进一步治疗，咨询师可以把你转介给专科医生。", lv:"困难",
+        chunks:["The counselor","can refer you","to a specialist","if further treatment is needed"], skeleton:["咨询师","可转介你","给专科医生","如需进一步治疗"] },
+    ]},
+
+  { name:"✈️ 机场·出行", en:"Airport & Travel", desc:"登机牌·登机口·液体·安全带·转机·延误",
+    items:[
+      { en:"Please have your boarding pass ready.", zh:"请准备好你的登机牌。", lv:"简单",
+        chunks:["Please have","your boarding pass","ready"], skeleton:["请准备好","登机牌"] },
+      { en:"The gate closes twenty minutes before departure.", zh:"登机口在起飞前二十分钟关闭。", lv:"中等",
+        chunks:["The gate closes","twenty minutes","before departure"], skeleton:["登机口关闭","二十分钟","起飞前"] },
+      { en:"All liquids must be under one hundred milliliters.", zh:"所有液体必须少于一百毫升。", lv:"中等",
+        chunks:["All liquids","must be under","one hundred milliliters"], skeleton:["所有液体","必须少于","一百毫升"] },
+      { en:"Please keep your seatbelt fastened while seated.", zh:"就座时请系好安全带。", lv:"中等",
+        chunks:["Please keep","your seatbelt fastened","while seated"], skeleton:["请系好","安全带","就座时"] },
+      { en:"Your connecting flight departs from a different terminal.", zh:"你的转机航班从另一个航站楼出发。", lv:"中等",
+        chunks:["Your connecting flight","departs from","a different terminal"], skeleton:["转机航班","出发自","另一航站楼"] },
+      { en:"If your flight is delayed, the airline will rebook you on the next available one.", zh:"如果你的航班延误，航空公司会把你改签到下一趟有位的航班。", lv:"困难",
+        chunks:["If your flight is delayed","the airline will rebook you","on the next available one"], skeleton:["如果航班延误","航空公司改签你","到下一趟有位的"] },
+      { en:"Passengers traveling with young children may board the plane first.", zh:"带小孩出行的旅客可以优先登机。", lv:"困难",
+        chunks:["Passengers traveling with young children","may board the plane","first"], skeleton:["带小孩的旅客","可登机","优先"] },
+    ]},
 ];
 
-let idx = 0, result = null;
+let sceneIdx = 0, idx = 0, result = null;
+function curScene(){ return SCENES[sceneIdx]; }
+function curItem(){ return SCENES[sceneIdx].items[idx]; }
 
 function tokenize(s){ return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean); }
 
@@ -193,19 +311,12 @@ function diffWords(ref, hyp){
   return { A, B, mA, mB, match: mA.filter(x=>x).length };
 }
 
-function play(){
-  const q = REPEAT[idx];
-  VocaSpeech.say(q.en);
-}
-
-function playSlow(){
-  const q = REPEAT[idx];
-  VocaSpeech.say(q.en, 0.65);
-}
+function play(){ VocaSpeech.say(curItem().en); }
+function playSlow(){ VocaSpeech.say(curItem().en, 0.65); }
 
 // 分块重放：逐意群念，块间停顿，并高亮当前块
 async function playChunks(){
-  const q = REPEAT[idx];
+  const q = curItem();
   document.getElementById('chunks').style.display='block';
   const chunkEls = document.getElementById('chunkWords').children;
   for(let i=0;i<q.chunks.length;i++){
@@ -226,10 +337,7 @@ function toggleSkeleton(){
 }
 
 // 朗读某一块（点击 chunk）
-function sayChunk(i){
-  const q = REPEAT[idx];
-  VocaSpeech.say(q.chunks[i], 0.85);
-}
+function sayChunk(i){ VocaSpeech.say(curItem().chunks[i], 0.85); }
 
 let recording=false;
 async function toggleRec(){
@@ -255,7 +363,7 @@ async function toggleRec(){
 }
 
 function renderResult(){
-  const q = REPEAT[idx];
+  const q = curItem();
   const ref = q.en, hyp = result.transcript || '';
   const d = diffWords(ref, hyp);
   const acc = Math.round(d.match / Math.max(d.A.length,1) * 100);
@@ -274,7 +382,7 @@ function renderResult(){
     d.mB[i] ? '<span class="w-ok">'+esc(w)+'</span> ' : '<span class="w-extra">'+esc(w)+'</span> ').join('');
 
   // 报告
-  const rep = '【听力复述 · 第 '+(idx+1)+' 题（'+q.lv+'）】\n'+
+  const rep = '【听力复述 · '+curScene().name+' · 第 '+(idx+1)+'/'+curScene().items.length+' 句（'+q.lv+'）】\n'+
     '原文：'+ref+'\n'+
     '我的复述：'+(hyp||'(空/未识别)')+'\n'+
     '复述准确率：'+acc+'%（命中 '+d.match+'/'+d.A.length+' 词）\n'+
@@ -291,15 +399,35 @@ function copyReport(){
   alert('已复制答题报告，回到对话粘贴给 cc 即可打分');
 }
 
+// 下一句：本场景内推进；到末句则跳到下一场景第 1 句
 function next(){
-  idx = (idx+1) % REPEAT.length;
+  if(idx+1 < curScene().items.length){
+    idx++;
+  } else {
+    sceneIdx = (sceneIdx+1) % SCENES.length;
+    idx = 0;
+    renderScenePicker();
+  }
+  renderQuestion();
+}
+
+// 场景选择
+function renderScenePicker(){
+  document.getElementById('scenes').innerHTML = SCENES.map((s,i)=>
+    '<span class="scene-chip'+(i===sceneIdx?' on':'')+'" onclick="selectScene('+i+')">'+esc(s.name)+'</span>').join('');
+}
+function selectScene(i){
+  sceneIdx = i; idx = 0;
+  renderScenePicker();
   renderQuestion();
 }
 
 function renderQuestion(){
-  const q = REPEAT[idx];
-  document.getElementById('qNo').textContent='第 '+(idx+1)+' / '+REPEAT.length+' 题';
-  document.getElementById('qLv').textContent=q.lv;
+  const sc = curScene(), q = curItem();
+  document.getElementById('sceneName').textContent = sc.name + '  ·  ' + sc.en;
+  document.getElementById('sceneDesc').textContent = sc.desc;
+  document.getElementById('qNo').textContent = '第 '+(idx+1)+' / '+sc.items.length+' 句';
+  document.getElementById('qLv').textContent = q.lv;
   document.getElementById('sentence').innerHTML='<span style="color:#c1662f">🔊</span> 点击「播放原句」开始';
   document.getElementById('zh').textContent='';
   document.getElementById('live').innerHTML='点「播放原句」听一遍，再点「开始录音」复述，停止后自动转写。';
@@ -324,6 +452,7 @@ if(!VocaSpeech.supported){
     }
   });
 }
+renderScenePicker();
 renderQuestion();
 </script>
 </body>
