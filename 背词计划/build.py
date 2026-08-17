@@ -68,6 +68,10 @@ PAGE = r"""<!DOCTYPE html>
   .intro{color:var(--muted);font-size:14px;margin:18px 0 14px}
   .search{width:100%;max-width:340px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:14px;font-family:inherit;background:var(--card);margin-bottom:16px}
   .search:focus{outline:none;border-color:var(--accent)}
+  .markrow{margin:0 0 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .markall{background:var(--ok);color:#fff;border:0;border-radius:10px;padding:9px 15px;font-size:13.5px;cursor:pointer;font-family:inherit}
+  .markall:hover{filter:brightness(1.05)}
+  .markrow .hint{font-size:12.5px;color:var(--muted)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
   .gcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;transition:.15s;box-shadow:0 2px 10px rgba(150,120,70,.05)}
   .gcard:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(150,120,70,.13);border-color:#d8c8a8}
@@ -207,11 +211,22 @@ function render(){ renderHeader(); if(curList==null) renderOverview(); else rend
 /* ── 总览：分组网格 ── */
 function renderOverview(){
   const metas=listMeta();
-  let h = `<div class="intro">按 <b>List 分组</b>，一组一组过。点一组进去，逐词看释义/词根记忆/例句，背熟就点「已掌握」。进度自动保存。</div>
+  let h = `<div class="intro">按 <b>List 分组</b>，一组一组过。点一组进去，逐词看释义/词源/例句；不会的点「未掌握」，剩下的可一键记为「已掌握」。进度自动保存。</div>
+    <div class="markrow"><button class="markall" id="markAll">✅ 其余一键记为「已掌握」</button>
+      <span class="hint">把当前词库里<b>没标「未掌握」</b>的词全部记为已掌握（浏览完再点）</span></div>
     <input class="search" id="q" placeholder="🔎 搜单词（跳到它所在的 List）…" value="">
     <div class="sres" id="sres"></div>
     <div class="grid" id="grid"></div>`;
   view.innerHTML = h;
+  $('#markAll').onclick=()=>{
+    const all=words();
+    const un=all.filter(w=>state[w.id]!=='no'&&state[w.id]!=='ok').length;
+    const no=all.filter(w=>state[w.id]==='no').length;
+    if(!un){ alert('当前词库已经没有「未标记」的词了。'); return; }
+    if(!confirm(`把「${VOCAB[source].name}」中除 ${no} 个已标『未掌握』之外的所有词，记为「已掌握」？\n（含你可能还没浏览的词，约 ${un} 个未标记词会被记为已掌握）`)) return;
+    all.forEach(w=>{ if(state[w.id]!=='no') state[w.id]='ok'; });
+    save(M_KEY,state); render();
+  };
   const grid=$('#grid');
   grid.innerHTML = metas.map(m=>{ const lw=listWords(m.no); const dc=doneCount(lw); const nc=noCount(lw); const pct=Math.round(dc/m.count*100);
     return `<div class="gcard ${dc===m.count?'done':''}" data-no="${m.no}">
@@ -251,7 +266,7 @@ function renderStudy(no){
         <button class="tbtn ${filter==='no'?'on':''}" data-f="no">未掌握</button>
         <button class="tbtn ${filter==='ok'?'on':''}" data-f="ok">已掌握</button>
       </span>
-      <button class="tbtn" id="tAll">本组全标已掌握</button>
+      <button class="tbtn" id="tAll">本组·其余记为已掌握</button>
       <span class="nav">
         <button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一组</button>
         <button class="tbtn" id="nx" ${next==null?'disabled':''}>下一组 ▶</button>
@@ -272,7 +287,9 @@ function renderStudy(no){
   $('#tRecite').onclick=()=>{ recite=!recite; save('bcplan:recite',recite); render(); };
   $('#tExpand').onclick=()=>{ const cs=[...view.querySelectorAll('.wcard.expandable')]; const anyClosed=cs.some(c=>!c.classList.contains('open')); cs.forEach(c=>c.classList.toggle('open',anyClosed)); };
   view.querySelectorAll('.seg [data-f]').forEach(bn=> bn.onclick=()=>{ filter=bn.dataset.f; render(); });
-  $('#tAll').onclick=()=>{ lw.forEach(w=>state[w.id]='ok'); save(M_KEY,state); render(); };
+  $('#tAll').onclick=()=>{ const un=lw.filter(w=>state[w.id]!=='no'&&state[w.id]!=='ok').length;
+    if(un && !confirm(`把本组除已标『未掌握』外的词记为「已掌握」？（${un} 个未标记词会记为已掌握）`)) return;
+    lw.forEach(w=>{ if(state[w.id]!=='no') state[w.id]='ok'; }); save(M_KEY,state); render(); };
 }
 
 const POS_MAP={n:'名词',v:'动词',vt:'动词',vi:'动词',adj:'形容词',a:'形容词',adv:'副词',ad:'副词',prep:'介词',pron:'代词',conj:'连词',art:'冠词',num:'数词',int:'感叹词'};
