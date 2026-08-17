@@ -69,6 +69,7 @@
   .btn.rec{background:var(--accent);color:#fff}
   .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
   .btn.next{background:var(--core);color:#fff}
+  .btn.exam{background:var(--warn);color:#fff}
   .btn:disabled{opacity:.45;cursor:not-allowed}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
   .live{min-height:40px;padding:10px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:16px;color:#6b6154}
@@ -132,13 +133,18 @@
         <tr><td class="sc">1</td><td>几乎不符</td><td>仅个别词偶中</td><td>"Parking is available behind the building" → "building… parking"</td></tr>
         <tr><td class="sc">0</td><td>无效</td><td>空白 / 非英语 / 完全无关 / <b>超时未答</b></td><td>—</td></tr>
       </table>
-      <p class="note">整体性评分（非扣分制），每句独立打分。<b>虚词</b>＝冠词/介词/连词/助动词/代词等；<b>实词</b>＝名词/动词/形容词/副词/数词。系统据转写按上表<b>自动估分</b>（区分虚/实词、判主谓宾）；发音<b>清晰度</b>请自评或由 cc 结合录音反馈微调。7 句原始分满 35，再折算 0–6 的 section 分。<br><b>⏱ 限时</b>：真实考场读完句子后有答题时限——<b>短句 8s · 中句 10s · 长句 14s</b>，到点录音自动截断，超时说不完＝丢分。</p>
+      <p class="note">整体性评分（非扣分制），每句独立打分。<b>虚词</b>＝冠词/介词/连词/助动词/代词等；<b>实词</b>＝名词/动词/形容词/副词/数词。系统据转写按上表<b>自动估分</b>（区分虚/实词、判主谓宾，且 <b>eight＝8</b> 等数字词与阿拉伯数字视为一致）；发音<b>清晰度</b>请自评或由 cc 微调。<br><b>⏱ 限时</b>：真实考场读完句子后有答题时限——<b>短句 8s · 中句 10s · 长句 14s</b>，到点录音自动截断，超时说不完＝丢分。</p>
+      <p class="note" style="margin-bottom:4px"><b>🎯 7 句总分（/35）→ 6 分制换算（官方，按 7 句得分之和）：</b></p>
+      <table>
+        <tr><th>七句示例（易→难）</th><th>原始分</th><th>最终</th></tr>
+        <tr><td>5 · 5 · 5 · 5 · 5 · 4 · 4</td><td class="sc">33</td><td class="sc">6.0</td></tr>
+        <tr><td>5 · 5 · 5 · 5 · 4 · 4 · 3</td><td class="sc">31</td><td class="sc">5.5</td></tr>
+        <tr><td>5 · 5 · 5 · 4 · 4 · 3 · 3</td><td class="sc">29</td><td class="sc">5.0</td></tr>
+        <tr><td>5 · 5 · 4 · 3 · 3 · 3 · 3</td><td class="sc">26</td><td class="sc">4.5</td></tr>
+        <tr><td>5 · 4 · 3 · 3 · 3 · 3 · 3</td><td class="sc">24</td><td class="sc">4.0</td></tr>
+      </table>
+      <p class="note">换算按<b>总分区间</b>：≥33→6.0 · 31–32→5.5 · 29–30→5.0 · 26–28→4.5 · 24–25→4.0（官方表到 4.0 为止，更低分本页按趋势外推、仅供参考）。</p>
     </details>
-
-    <div class="modebar">
-      <button class="modebtn" id="modeExam" onclick="setMode('exam')">⏱ 考试模式（限时）</button>
-      <button class="modebtn" id="modePractice" onclick="setMode('practice')">🎧 练习模式（可重听·带辅助）</button>
-    </div>
 
     <div class="scene-head">
       <div class="nm" id="sceneName"></div>
@@ -164,6 +170,7 @@
       <button class="btn play" id="btnChunks" onclick="playChunks()">🧩 分块重放</button>
       <button class="btn play" id="btnSkel" onclick="toggleSkeleton()">🦴 骨架提示</button>
       <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
+      <button class="btn exam" id="examBtn" onclick="startExam()">⏱ 限时答题</button>
       <button class="btn next" id="nextBtn" onclick="next()">下一句 →</button>
     </div>
 
@@ -180,6 +187,7 @@
         <span class="band" id="band"></span>
       </div>
       <div class="metric" id="metrics"></div>
+      <div class="replay" id="replay" style="display:none;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0"></div>
       <div class="cmp">
         <h4>📖 原文</h4>
         <div class="line" id="refLine"></div>
@@ -193,7 +201,7 @@
       </div>
     </div>
 
-    <div class="hint">💡 <b>考试模式</b>：贴近真实考场——只放一遍、读完自动进入限时（短 8s／中 10s／长 14s）录音，到点截断。想磨细节时切到<b>练习模式</b>：可重听、慢速、分块、看骨架，且不限时。</div>
+    <div class="hint">💡 <b>练每一句</b>：随时用「🔊 播放原句 / 🐢 慢速 / 🧩 分块重放 / 🦴 骨架提示」磨这句（都不限时、可反复）；「🎙 开始录音」自由复述打分。<b>要考场感</b>就点「⏱ 限时答题」——只放一遍、读完自动限时（短 8s／中 10s／长 14s）录音、到点截断。</div>
   </div>
 </div>
 
@@ -442,83 +450,95 @@ function scoreByRubric(d, hyp){
   return out;
 }
 
-// 本场景已答句的一致性汇总
-function tallyText(){
-  const answered = sceneScores.filter(v=>v!==null);
-  const total = curScene().items.length;
-  if(answered.length===0) return '本场景：0/'+total+' 句已评 · 完成 7 句可得原始分 /35';
-  const raw = answered.reduce((a,b)=>a+b,0);
-  const avg = raw/answered.length;
-  const section = Math.round(avg/5*6);   // 均分折算到 0–6（估算）
-  return '本场景一致性：已评 <b>'+answered.length+'/'+total+'</b> 句 · 累计 <b>'+raw+'</b>/'+(answered.length*5)+
-         ' · 均分 <b>'+avg.toFixed(1)+'</b>/5 · 估算 section ≈ <b>'+section+'</b>/6'+
-         (answered.length===total ? '（本场景原始分 '+raw+'/35）' : '');
+// 官方换算：7 句原始分（/35，7 句得分之和）→ section（6 分制）
+function rawToSection(raw){
+  if(raw>=33) return 6.0;
+  if(raw>=31) return 5.5;
+  if(raw>=29) return 5.0;
+  if(raw>=26) return 4.5;
+  if(raw>=24) return 4.0;
+  // 官方表仅到 4.0，以下按趋势外推（仅供参考）
+  if(raw>=21) return 3.5;
+  if(raw>=18) return 3.0;
+  if(raw>=15) return 2.5;
+  if(raw>=12) return 2.0;
+  if(raw>=9)  return 1.5;
+  if(raw>=6)  return 1.0;
+  if(raw>=3)  return 0.5;
+  return 0.0;
 }
 
-// 词级 LCS 对齐
+// 本场景得分汇总（一套 7 句 = /35 → 6 分制）
+function tallyText(){
+  const total = curScene().items.length;
+  const answered = sceneScores.filter(v=>v!==null);
+  if(answered.length===0) return '本场景：0/'+total+' 句已评 · 答满 '+total+' 句得原始分 /35 → 换算 6 分制';
+  const raw = answered.reduce((a,b)=>a+b,0);
+  const avg = raw/answered.length;
+  if(answered.length===total){
+    return '✅ 本场景完成：原始分 <b>'+raw+'</b>/35 → 最终 <b>'+rawToSection(raw).toFixed(1)+'</b>/6（官方换算）';
+  }
+  const proj = Math.round(avg*total);   // 按当前均分推算满 7 句原始分
+  return '本场景：已评 <b>'+answered.length+'/'+total+'</b> 句 · 均分 <b>'+avg.toFixed(1)+'</b>/5 · 推算 ≈ <b>'+proj+'</b>/35 → <b>'+rawToSection(proj).toFixed(1)+'</b>/6';
+}
+
+// 数字词 ↔ 阿拉伯数字：让 "eight" 与 "8" 视为一致（whisper 常把数字转成阿拉伯数字）
+const NUM_WORDS = {zero:'0',one:'1',two:'2',three:'3',four:'4',five:'5',six:'6',seven:'7',eight:'8',nine:'9',ten:'10',
+  eleven:'11',twelve:'12',thirteen:'13',fourteen:'14',fifteen:'15',sixteen:'16',seventeen:'17',eighteen:'18',nineteen:'19',
+  twenty:'20',thirty:'30',forty:'40',fifty:'50',sixty:'60',seventy:'70',eighty:'80',ninety:'90',hundred:'100',thousand:'1000',
+  first:'1st',second:'2nd',third:'3rd',fourth:'4th',fifth:'5th',sixth:'6th',seventh:'7th',eighth:'8th',ninth:'9th',tenth:'10th'};
+function normKey(w){ return NUM_WORDS[w] || w; }
+
+// 词级 LCS 对齐：比较用归一 key（数字统一），显示仍用原词
 function diffWords(ref, hyp){
   const A = tokenize(ref), B = tokenize(hyp);
+  const Ak = A.map(normKey), Bk = B.map(normKey);
   const n=A.length, m=B.length;
   const dp = Array.from({length:n+1}, ()=>new Array(m+1).fill(0));
   for(let i=n-1;i>=0;i--) for(let j=m-1;j>=0;j--)
-    dp[i][j] = (A[i]===B[j]) ? dp[i+1][j+1]+1 : Math.max(dp[i+1][j], dp[i][j+1]);
+    dp[i][j] = (Ak[i]===Bk[j]) ? dp[i+1][j+1]+1 : Math.max(dp[i+1][j], dp[i][j+1]);
   const mA=new Array(n).fill(false), mB=new Array(m).fill(false);
   let i=0,j=0;
   while(i<n && j<m){
-    if(A[i]===B[j]){ mA[i]=true; mB[j]=true; i++; j++; }
+    if(Ak[i]===Bk[j]){ mA[i]=true; mB[j]=true; i++; j++; }
     else if(dp[i+1][j] >= dp[i][j+1]) i++;
     else j++;
   }
   return { A, B, mA, mB, match: mA.filter(x=>x).length };
 }
 
-// ===== 模式 & 限时 =====
-let examMode = true;                       // 默认考试模式（贴近真实考场）
+// ===== 练习朗读（随时可用，不限时）+ 限时答题（真实考场）=====
+let recording=false, examing=false;
 let examTimer=null, examEnd=0, examLimit=0;
 function limitFor(q){ return q.lv==='困难' ? 14 : q.lv==='中等' ? 10 : 8; }   // 长14/中10/短8 秒
-
-function setMode(m){
-  examMode = (m==='exam');
-  document.getElementById('modeExam').classList.toggle('on', examMode);
-  document.getElementById('modePractice').classList.toggle('on', !examMode);
-  document.getElementById('playBtn').textContent = examMode ? '▶️ 出题并计时' : '🔊 播放原句';
-  clearExamTimer();
-  renderQuestion();
-}
-function setAidsVisible(v){
-  ['btnSlow','btnChunks','btnSkel'].forEach(id=>{ const b=document.getElementById(id); if(b) b.style.display = v ? '' : 'none'; });
-  if(!v){ document.getElementById('skeleton').style.display='none'; document.getElementById('chunks').style.display='none'; }
-}
+function clearExamTimer(){ if(examTimer){ clearInterval(examTimer); examTimer=null; } const t=document.getElementById('timer'); if(t) t.style.display='none'; }
 function setRecUI(on){
   const b=document.getElementById('recBtn');
   b.textContent = on ? '⏹ 停止录音' : '🎙 开始录音';
   b.classList.toggle('recording', on);
   document.getElementById('playBtn').disabled = on;
+  document.getElementById('examBtn').disabled = on;
 }
-function clearExamTimer(){ if(examTimer){ clearInterval(examTimer); examTimer=null; } document.getElementById('timer').style.display='none'; }
 
-async function play(){
+// 普通朗读（练习用，随时点、可反复、不计时）
+function play(){ VocaSpeech.say(curItem().en); }
+function playSlow(){ VocaSpeech.say(curItem().en, 0.65); }
+
+// 限时答题：只放一遍 → 读完自动开始限时录音 → 到点截断
+async function startExam(){
+  if(recording || examing) return;
   const q = curItem();
   document.getElementById('result').style.display='none';
-  if(examMode){
-    // 考试：只放一遍，读完立即计时并自动开始录音
-    setAidsVisible(false);
-    document.getElementById('playBtn').disabled=true;
-    document.getElementById('live').innerHTML='🔊 正在播放原句（只放一遍，仔细听）…';
-    await VocaSpeech.say(q.en);
-    startExamWindow(q);
-  } else {
-    VocaSpeech.say(q.en);
-  }
-}
-function playSlow(){ if(!examMode) VocaSpeech.say(curItem().en, 0.65); }
-
-// 读完题 → 开启限时窗口 + 自动录音
-async function startExamWindow(q){
+  document.getElementById('skeleton').style.display='none';
+  document.getElementById('chunks').style.display='none';
+  document.getElementById('playBtn').disabled=true;
+  document.getElementById('examBtn').disabled=true;
+  document.getElementById('live').innerHTML='🔊 正在播放原句（只放一遍，仔细听）…';
+  await VocaSpeech.say(q.en);
   examLimit = limitFor(q);
   try{ await VocaSpeech.start(()=>{}); }
-  catch(e){ alert(e.message); document.getElementById('playBtn').disabled=false; return; }
-  recording=true; setRecUI(true);
+  catch(e){ alert(e.message); document.getElementById('playBtn').disabled=false; document.getElementById('examBtn').disabled=false; return; }
+  recording=true; examing=true; setRecUI(true);
   document.getElementById('live').innerHTML='🎙 请立即复述！时间到自动截断。';
   examEnd = Date.now() + examLimit*1000;
   document.getElementById('timer').style.display='block';
@@ -536,13 +556,12 @@ function tickExam(){
 }
 async function finishExam(cutoff){
   if(!recording) return;
-  recording=false; setRecUI(false);
+  recording=false; examing=false; setRecUI(false);
   if(examTimer){ clearInterval(examTimer); examTimer=null; }
   document.getElementById('timerNum').innerHTML = cutoff ? '⏱ 时间到，已截断 · 正在转写…' : '⏱ 提前交卷 · 正在转写…';
   result = await VocaSpeech.stop();
   result.cutoff = cutoff; result.limit = examLimit;
   document.getElementById('timer').style.display='none';
-  document.getElementById('playBtn').disabled=false;
   renderResult();
 }
 
@@ -571,15 +590,9 @@ function toggleSkeleton(){
 // 朗读某一块（点击 chunk）
 function sayChunk(i){ VocaSpeech.say(curItem().chunks[i], 0.85); }
 
-let recording=false;
 async function toggleRec(){
-  if(examMode){
-    if(recording) finishExam(false);      // 考试模式下手动停＝提前交卷
-    else document.getElementById('live').innerHTML='考试模式：点「▶️ 出题并计时」听题，播放结束会自动开始限时录音。';
-    return;
-  }
-  // 练习模式（可手动录，无限时）
-  if(recording){ // 停止 → 转写
+  if(examing){ finishExam(false); return; }   // 限时答题进行中，手动停＝提前交卷
+  if(recording){ // 停止 → 转写（练习，无限时）
     recording=false; setRecUI(false);
     document.getElementById('live').innerHTML='⏳ 正在转写你的复述…';
     result = await VocaSpeech.stop();
@@ -589,7 +602,7 @@ async function toggleRec(){
     try{
       await VocaSpeech.start(()=>{});
       recording=true; setRecUI(true);
-      document.getElementById('live').innerHTML='🎙 录音中，请复述刚刚听到的句子…';
+      document.getElementById('live').innerHTML='🎙 录音中，请复述这一句…（练习不限时，说完点停止）';
       document.getElementById('result').style.display='none';
     }catch(e){ alert(e.message); }
   }
@@ -624,6 +637,9 @@ function renderResult(){
   // 场景累计
   document.getElementById('sceneTally').innerHTML = tallyText();
 
+  // 🎧 即时回放：挂上刚才这条录音，可反复听并和原句对比（仅本次会话，刷新即清）
+  renderReplay();
+
   // 原文渲染（漏/错标红）
   document.getElementById('refLine').innerHTML = d.A.map((w,i)=>
     d.mA[i] ? '<span class="w-ok">'+esc(w)+'</span> ' : '<span class="w-miss">'+esc(w)+'</span> ').join('');
@@ -641,11 +657,30 @@ function renderResult(){
     '—— 命中：实词 '+r.cHit+'/'+r.cTotal+' · 漏实词 '+r.cMiss+' · 漏虚词 '+r.fMiss+' · 多词 '+r.extra+' · 逐字匹配 '+acc+'%\n'+
     '本句得分：'+sc+'/5（'+band.label+'）'+(result.cutoff?' ⏱到点截断':'')+'\n'+
     '用时：'+result.duration.toFixed(1)+'s'+(limit?('/限时'+limit+'s'):'')+' · 语速：'+wpm+' wpm · 引擎：'+(result.engine==='whisper'?'本地 whisper':'浏览器降级')+'\n'+
-    '本场景累计：已评 '+answered.length+'/'+curScene().items.length+' 句 · 均分 '+avg+'/5'+(answered.length===curScene().items.length?('（原始分 '+raw+'/35）'):'')+'\n'+
-    '—— 评分口径：5完全一致/4漏≤2虚词或≤1实词/3主谓宾完整/2零星几词/1个别词/0无效；7句/35→最终0–6 ——\n'+
+    '本场景累计：已评 '+answered.length+'/'+curScene().items.length+' 句 · 均分 '+avg+'/5'+
+      (answered.length===curScene().items.length ? ('（原始分 '+raw+'/35 → 最终 '+rawToSection(raw).toFixed(1)+'/6）')
+        : ('（推算 ≈ '+Math.round((raw/answered.length)*curScene().items.length)+'/35 → '+rawToSection(Math.round((raw/answered.length)*curScene().items.length)).toFixed(1)+'/6）'))+'\n'+
+    '—— 评分口径：5完全一致/4漏≤2虚词或≤1实词/3主谓宾完整/2零星几词/1个别词/0无效；7句/35→官方换算6分制（≥33→6.0/31→5.5/29→5.0/26→4.5/24→4.0）——\n'+
     '请 cc 核对上面的自动估分（一致性），结合我的发音清晰度给最终 0–5，并累计到本场景 /35 与折算 /6。';
   document.getElementById('reportText').value = rep;
   document.getElementById('result').style.display='block';
+}
+
+let lastReplayUrl=null;
+function renderReplay(){
+  const box=document.getElementById('replay');
+  if(!box) return;
+  if(lastReplayUrl){ try{ URL.revokeObjectURL(lastReplayUrl); }catch(_){} lastReplayUrl=null; }
+  if(result && result.url){
+    lastReplayUrl=result.url;
+    box.style.display='flex';
+    box.innerHTML=
+      '<span style="color:#8c8072;font-size:13px;white-space:nowrap">🎧 回放对比</span>'+
+      '<audio controls preload="metadata" style="height:34px;vertical-align:middle;max-width:260px" src="'+result.url+'"></audio>'+
+      '<button class="btn play" style="padding:4px 12px" onclick="VocaSpeech.say(curItem().en)">🔊 原句</button>';
+  } else {
+    box.style.display='none'; box.innerHTML='';
+  }
 }
 
 function copyReport(){
@@ -687,23 +722,18 @@ function renderQuestion(){
   document.getElementById('qNo').textContent = '第 '+(idx+1)+' / '+sc.items.length+' 句';
   document.getElementById('qLv').textContent = q.lv;
   document.getElementById('qLim').textContent = '⏱ 限时 '+limitFor(q)+'s';
-  document.getElementById('sentence').innerHTML = examMode
-    ? '<span style="color:#c1662f">🎧</span> 点「▶️ 出题并计时」——只放一遍，读完自动开始限时录音'
-    : '<span style="color:#c1662f">🔊</span> 点「播放原句」开始（练习模式可重听、看辅助）';
+  document.getElementById('sentence').innerHTML = '<span style="color:#c1662f">🔊</span> 练这一句：播放/慢速/分块/骨架都随时可用；准备好点「⏱ 限时答题」按考场计时';
   document.getElementById('zh').textContent='';
-  document.getElementById('live').innerHTML = examMode
-    ? '考试模式：只放一遍，播放结束立刻限时复述，时间到自动截断。'
-    : '点「播放原句」听一遍，再点「开始录音」复述，停止后自动转写。';
+  document.getElementById('live').innerHTML = '「🔊 播放原句」听（可反复/慢速/分块/骨架），「🎙 开始录音」自由复述；要考场感点「⏱ 限时答题」。';
   document.getElementById('result').style.display='none';
   // 骨架 + 意群
   document.getElementById('skeletonWords').innerHTML = q.skeleton.map(w=>'<span class="skw">'+esc(w)+'</span>').join('');
   document.getElementById('chunkWords').innerHTML = q.chunks.map((c,i)=>'<span class="chunk" onclick="sayChunk('+i+')">'+esc(c)+'</span>').join('');
   document.getElementById('skeleton').style.display='none';
   document.getElementById('chunks').style.display='none';
-  document.getElementById('playBtn').textContent = examMode ? '▶️ 出题并计时' : '🔊 播放原句';
   document.getElementById('playBtn').disabled=false;
+  document.getElementById('examBtn').disabled=false;
   setRecUI(false);
-  setAidsVisible(!examMode);
   clearExamTimer();
 }
 
@@ -722,7 +752,7 @@ if(!VocaSpeech.supported){
 }
 resetTally();
 renderScenePicker();
-setMode('exam');   // 默认考试模式（含 renderQuestion）
+renderQuestion();
 </script>
 </body>
 </html>
