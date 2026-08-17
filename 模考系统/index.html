@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>托福模考系统</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83}
+  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6}
+  .wrap{max-width:900px;margin:0 auto;padding:40px 22px 80px}
+  h1{font-size:28px;margin:0 0 4px}.sub{color:var(--muted);margin-bottom:22px}
+  .notice{background:#fff6e8;border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:12px;padding:14px 16px;font-size:14px;margin-bottom:24px}
+  .notice b{color:var(--accent)}
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;font-size:13.5px;margin-bottom:24px;border:1px solid var(--line)}
+  th,td{padding:8px 10px;border:1px solid var(--line);text-align:left}th{background:#eef1fb}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+  a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;text-decoration:none;color:inherit;box-shadow:0 2px 12px rgba(150,120,70,.06);transition:.15s}
+  a.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(150,120,70,.15);border-color:#d8c8a8}
+  a.card h2{font-size:19px;margin:0 0 6px}.card .meta{color:var(--muted);font-size:13px}
+  footer{margin-top:30px;color:#a89a86;font-size:12px}
+</style></head><body>
+<div class="wrap">
+  <h1>📝 托福模考系统（新版 iBT）</h1>
+  <div class="sub">2026 新版 · 阅读→听力→写作→口语 · 9 大题型 · 1–6 band 估分</div>
+  <div class="notice"><b>用 Chrome / Edge 打开</b>。整场连考或单题型专项都行；客观题自动判分估 band，写作/口语按官方 0–5 量规一键复制报告给 cc 打分。</div>
+  <table><tr><th>科目</th><th>题型</th><th>官方题数/时间</th></tr>
+    <tr><td>阅读</td><td>补全单词 · 生活阅读 · 学术短文</td><td>~50 / ~30min</td></tr>
+    <tr><td>听力</td><td>选回应 · 对话 · 通知 · 讲座</td><td>~47 / ~29min</td></tr>
+    <tr><td>写作</td><td>连词成句 · 写邮件 · 学术讨论</td><td>12 / ~23min</td></tr>
+    <tr><td>口语</td><td>跟读 · 面试</td><td>11 / ~8min</td></tr>
+  </table>
+  <div class="cards"><a class="card" href="mocks/mock-01.html"><h2>TOEFL iBT 全真模考 · 第一套</h2><div class="meta">四科 · 16 个任务 · 整场约 85 分钟</div></a></div>
+  <footer>data/*.json → build.py → mocks/*.html ｜ 共 1 套 ｜ 评分依据官方 Overview Table 2/3</footer>
+</div></body></html>

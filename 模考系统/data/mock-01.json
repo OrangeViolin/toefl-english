@@ -1,0 +1,179 @@
+{
+  "id": "mock-01",
+  "title": "TOEFL iBT 全真模考 · 第一套",
+  "sections": {
+    "reading": {
+      "time_min": 27,
+      "tasks": [
+        {
+          "type": "complete_words",
+          "text": "Honeybees face a difficult problem: when a scout discovers a rich patch of flowers, it must tell the rest of the hive exactly where to find them. Bees [[so|lve]] this [[pro|blem]] through a [[rem|arkable]] behavior [[kn|own]] as the waggle [[da|nce]]. The [[an|gle]] of the dance [[ind|icates]] direction, while its [[dur|ation]] signals [[dist|ance]]. Other bees [[fol|low]] the dancer closely and then fly off to search."
+        },
+        {
+          "type": "read_daily",
+          "genre": "text messages",
+          "text": "Maya: Hey! Still on for the study group tonight?\nLiam: Ugh, I'm swamped. Can we push it to tomorrow?\nMaya: No worries. Same time, same place?\nLiam: Perfect. I'll bring the coffee this time 🙏",
+          "questions": [
+            { "stem": "What does Liam want to do?", "options": ["Cancel the study group entirely", "Move the meeting to a later day", "Change the meeting location", "Study by himself"], "answer": 1 },
+            { "stem": "What does Liam most likely mean by “I'm swamped”?", "options": ["He is very busy", "He is lost", "He is unwell", "He is bored"], "answer": 0 }
+          ]
+        },
+        {
+          "type": "read_daily",
+          "genre": "notice",
+          "text": "CAMPUS BIKE SHARE\nUnlock any green bike with the RideOn app. First 30 minutes free for students — just scan your student ID. Return bikes only to marked stations. Leaving a bike elsewhere adds a $15 fee.",
+          "questions": [
+            { "stem": "How can a student ride for free?", "options": ["By returning the bike to any location", "By using the bike for under 30 minutes", "By paying a $15 fee", "By downloading the app twice"], "answer": 1 },
+            { "stem": "What happens if a bike is left away from a station?", "options": ["The app stops working", "The next ride becomes free", "An extra charge is applied", "The student loses ID access"], "answer": 2 },
+            { "stem": "What is the main purpose of the notice?", "options": ["To explain how to use a bike-sharing service", "To advertise a new phone brand", "To warn students about parking fines", "To announce a sporting event"], "answer": 0 }
+          ]
+        },
+        {
+          "type": "read_academic",
+          "title": "Why Owls Fly Quietly",
+          "text": "Most birds make a distinct swishing sound as they fly, produced by air rushing over their wings. Owls, however, are remarkably silent hunters, and this silence gives them a crucial advantage. Because many owls hunt at night and rely on hearing to locate prey, any noise from their own wings would mask the faint sounds of a mouse moving below. It would also alert the prey to the approaching danger.\n\nThree features of owl feathers make near-silent flight possible. First, the leading edge of the wing is lined with stiff, comb-like structures that break up the air into smaller currents, reducing the turbulence that creates noise. Second, a soft fringe along the trailing edge smooths the air as it leaves the wing. Third, a velvety surface covers the feathers, absorbing the remaining high-frequency sound.\n\nTogether, these adaptations lower the noise of an owl's flight below the hearing range of a typical mouse. Engineers have studied these feathers closely, hoping to design quieter aircraft and wind turbines. So far, no artificial material has fully matched the owl's natural solution, though several designs inspired by it have reduced noise significantly.",
+          "questions": [
+            { "stem": "According to the passage, why is silent flight important for owls?", "options": ["It allows them to fly faster than other birds", "It keeps their own noise from hiding the sounds of prey", "It helps them stay warm during night hunts", "It makes their feathers last longer"], "answer": 1, "skill": "factual" },
+            { "stem": "The word “mask” in the passage is closest in meaning to", "options": ["imitate", "hide", "increase", "record"], "answer": 1, "skill": "vocabulary" },
+            { "stem": "According to the passage, the comb-like structures on the leading edge of the wing help by", "options": ["absorbing high-frequency sound", "smoothing air as it leaves the wing", "breaking up air to reduce turbulence", "making the feathers velvety"], "answer": 2, "skill": "factual" },
+            { "stem": "What can be inferred about the mouse?", "options": ["It can hear sounds quieter than an owl's flight", "It cannot hear the owl because the flight noise falls below its hearing range", "It relies on sight rather than hearing to detect danger", "It makes no sound while moving"], "answer": 1, "skill": "inference" },
+            { "stem": "Why does the author mention engineers in the last paragraph?", "options": ["To show a practical application inspired by owl feathers", "To argue that owls are superior to machines", "To explain how aircraft engines produce power", "To describe how wind turbines generate electricity"], "answer": 0, "skill": "purpose" }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "time_min": 27,
+      "tasks": [
+        {
+          "type": "listen_choose",
+          "accent": "US",
+          "prompt": "Do you know if the library stays open late during exam week?",
+          "options": ["It's just past the science building.", "I think it's open until midnight then.", "Yes, I really enjoyed that book.", "You can borrow up to ten books."],
+          "answer": 1
+        },
+        {
+          "type": "listen_choose",
+          "accent": "UK",
+          "prompt": "Weren't you supposed to hand in the lab report this morning?",
+          "options": ["Actually, the professor gave us an extra day.", "Yes, the lab is on the third floor.", "I'd rather take chemistry next term.", "No, I don't have a lab partner."],
+          "answer": 0
+        },
+        {
+          "type": "listen_conversation",
+          "accent": "UK",
+          "intro": "Listen to a conversation between two students.",
+          "lines": [
+            { "who": "W", "text": "Hey, did you sign up for the field trip to the natural history museum?" },
+            { "who": "M", "text": "I wanted to, but it clashes with my part-time job on Saturday." },
+            { "who": "W", "text": "Oh, that's a shame. Can't you swap your shift?" },
+            { "who": "M", "text": "Maybe. My manager's usually flexible if I ask early enough. I'll text her tonight." },
+            { "who": "W", "text": "You should. It's supposed to be really good, and the professor said it'll help with the final essay." },
+            { "who": "M", "text": "Yeah, that settles it. I'll definitely try to make it work." }
+          ],
+          "questions": [
+            { "stem": "What is the man's problem?", "options": ["He cannot afford the trip", "His job conflicts with the trip", "He is not interested in the museum", "He missed the sign-up deadline"], "answer": 1 },
+            { "stem": "What will the man probably do?", "options": ["Skip the field trip", "Quit his part-time job", "Ask his manager to change his shift", "Write the essay instead of going"], "answer": 2 }
+          ]
+        },
+        {
+          "type": "listen_announcement",
+          "accent": "AU",
+          "intro": "Listen to an announcement in a residence hall.",
+          "text": "Attention, residents of Maple Hall. Please be aware that the hot water will be shut off this Thursday from nine in the morning until about three in the afternoon while the heating system is repaired. We recommend showering before or after these hours. The laundry room will remain open, but we suggest using cold-water settings. Thank you for your patience.",
+          "questions": [
+            { "stem": "What is the main purpose of the announcement?", "options": ["To announce a repair that will affect hot water", "To close the laundry room permanently", "To introduce a new heating system", "To remind residents to pay rent"], "answer": 0 },
+            { "stem": "What does the speaker recommend?", "options": ["Doing laundry with hot water", "Showering outside the repair hours", "Leaving the building on Thursday", "Reporting problems to the front desk"], "answer": 1 }
+          ]
+        },
+        {
+          "type": "listen_talk",
+          "accent": "US",
+          "intro": "Listen to part of a talk in an environmental science class.",
+          "text": "Today I want to talk about a surprising kind of pollution — light pollution. When we think of pollution, we usually picture smoke or chemicals, but excessive artificial light at night is also a serious problem, and its effects reach far beyond spoiling our view of the stars.\n\nConsider sea turtles. For millions of years, newly hatched turtles have found their way to the ocean by crawling toward the brightest horizon, which, on a natural beach, is the sea reflecting the moon and stars. But today, the glow of hotels and streetlights behind the beach is often brighter. As a result, hatchlings crawl inland, away from the water, where they die of exhaustion or are caught by predators.\n\nBirds are affected too. Many species migrate at night and navigate by the stars. Bright city lights can disorient them, causing them to circle tall buildings until they collapse, or to collide with lit windows.\n\nThe good news is that light pollution is one of the easiest kinds of pollution to fix. Unlike carbon dioxide, light disappears the instant we switch it off. Simple steps — shielding lamps, using warmer colors, and turning off unnecessary lights — can make a real difference almost immediately.",
+          "questions": [
+            { "stem": "What is the talk mainly about?", "options": ["How sea turtles find the ocean", "The harmful effects of light pollution and how to reduce them", "Why birds migrate at night", "Different types of chemical pollution"], "answer": 1 },
+            { "stem": "According to the speaker, why do hatchling turtles sometimes crawl inland?", "options": ["They are chasing insects", "The beach is too cold", "Artificial lights are brighter than the sea", "They follow the sound of the waves"], "answer": 2 },
+            { "stem": "How does light pollution affect migrating birds?", "options": ["It makes them migrate earlier", "It disorients them, sometimes causing collisions", "It improves their night vision", "It changes the color of their feathers"], "answer": 1 },
+            { "stem": "Why does the speaker say that light “disappears the instant we switch it off”?", "options": ["To emphasize that light pollution is relatively easy to fix", "To explain how household electricity works", "To praise the benefits of carbon dioxide", "To argue that cities should never use any lights"], "answer": 0 }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "time_min": 23,
+      "tasks": [
+        {
+          "type": "build_sentence",
+          "prompt": "What was the highlight of your trip?",
+          "before": "The",
+          "after": "fantastic.",
+          "tokens": ["were", "the", "was", "old city", "showed us around", "who", "tour guides"],
+          "answer": "The tour guides who showed us around the old city were fantastic."
+        },
+        {
+          "type": "build_sentence",
+          "prompt": "Why are you so tired today?",
+          "before": "",
+          "after": "",
+          "tokens": ["late", "I", "finishing", "stayed up", "my assignment"],
+          "answer": "I stayed up late finishing my assignment."
+        },
+        {
+          "type": "build_sentence",
+          "prompt": "Have you decided which course to take?",
+          "before": "",
+          "after": "",
+          "tokens": ["between", "deciding", "I'm", "and chemistry", "still", "biology"],
+          "answer": "I'm still deciding between biology and chemistry."
+        },
+        {
+          "type": "write_email",
+          "time_sec": 420,
+          "scenario": "Your university library recently changed its opening hours, and it now closes two hours earlier on weekends. You often study there on Saturday evenings, and the change has made this difficult.",
+          "to": "librarian@university.edu",
+          "subject": "Weekend library hours",
+          "bullets": ["Explain how the earlier closing time affects you.", "Suggest a possible solution.", "Politely ask the library to consider the change."]
+        },
+        {
+          "type": "write_discussion",
+          "time_sec": 600,
+          "min_words": 100,
+          "professor": "Many cities are considering making public transportation — buses and trains — completely free for all residents. Supporters say this would reduce traffic and pollution; critics worry about the cost. Do you think public transportation should be free? Why or why not?",
+          "student1": "I think free public transport is a great idea. It would encourage more people to leave their cars at home, which means less traffic and cleaner air. Cities would become more livable for everyone.",
+          "student2": "I'm not convinced. Someone has to pay for it, usually through higher taxes. And if buses become overcrowded because they're free, the quality of service might actually get worse."
+        }
+      ]
+    },
+    "speaking": {
+      "time_min": 8,
+      "tasks": [
+        {
+          "type": "listen_repeat",
+          "accent": "US",
+          "scenario": "You are learning to help new students at the library. Listen to the head librarian and repeat what she says.",
+          "sentences": [
+            "Welcome to the main library.",
+            "Textbooks are on the second floor.",
+            "You can borrow up to ten books at a time.",
+            "Please return laptops to the front desk before closing.",
+            "Quiet study rooms can be reserved online for two-hour blocks.",
+            "If a book you need is checked out, you can request it and we will email you.",
+            "The printers near the entrance accept both student cards and coins, but color printing costs extra."
+          ]
+        },
+        {
+          "type": "take_interview",
+          "accent": "US",
+          "scenario": "You have agreed to take part in a research study about student life. You will have a short interview with a researcher who will ask you four questions.",
+          "questions": [
+            "Think about a class you have really enjoyed. What was the class, and why did you like it?",
+            "Everyone studies differently. How do you usually prepare for an important exam, and why does that method work for you?",
+            "Some people believe students learn more from group projects than from studying alone. Do you agree? Why or why not?",
+            "Many universities now offer online courses. Do you think online learning is as effective as learning in a classroom? Explain your view."
+          ]
+        }
+      ]
+    }
+  }
+}
