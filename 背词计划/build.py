@@ -34,7 +34,7 @@ PAGE = r"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>背词计划 · 托福词库</title>
 <style>
-  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--ok:#2f8f5b;--gold:#c98a00}
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--ok:#2f8f5b;--bad:#c0453a;--gold:#c98a00}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
   a{color:var(--accent);text-decoration:none}
@@ -82,15 +82,20 @@ PAGE = r"""<!DOCTYPE html>
   /* 单词卡 */
   .cards{margin-top:14px;display:flex;flex-direction:column;gap:12px}
   .wcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 2px 10px rgba(150,120,70,.04)}
-  .wcard.done{opacity:.62;border-color:#cfe6d5;background:#f7fbf8}
+  .wcard.ok{opacity:.7;border-color:#cfe6d5;background:#f7fbf8}
+  .wcard.no{border-left:4px solid var(--bad);background:#fdf4f2}
   .wc-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
   .wc-word{font-size:22px;font-weight:700;cursor:pointer;letter-spacing:.2px}
   .wc-word:hover{color:var(--accent)}
   .wc-word::after{content:"🔊";font-size:13px;margin-left:7px;opacity:.45}
   .wc-pron{color:var(--core);font-size:15px}
   .wc-idx{font-size:12px;color:#c3b79c}
-  .wc-mark{margin-left:auto;border:1px solid var(--line);background:#f3ecdd;border-radius:20px;padding:5px 13px;font-size:13px;cursor:pointer;color:#6f6552;font-family:inherit;white-space:nowrap}
-  .wcard.done .wc-mark{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .wc-marks{margin-left:auto;display:flex;gap:6px}
+  .wc-mark{border:1px solid var(--line);background:#f3ecdd;border-radius:20px;padding:5px 12px;font-size:13px;cursor:pointer;color:#6f6552;font-family:inherit;white-space:nowrap}
+  .wc-mark:hover{filter:brightness(.97)}
+  .wc-mark.ok.on{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .wc-mark.no.on{background:var(--bad);color:#fff;border-color:var(--bad)}
+  .seg{display:flex;gap:4px}
   .wc-body{margin-top:10px}
   .wcard.recite .wc-body{display:none}
   .wcard.recite.revealed .wc-body{display:block}
@@ -117,7 +122,7 @@ PAGE = r"""<!DOCTYPE html>
 
 <script>
 const VOCAB = __DATA__;
-const M_KEY = 'bcplan:mastered';
+const M_KEY = 'bcplan:state';
 const $ = s => document.querySelector(s);
 const view = $('#view');
 function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
@@ -126,9 +131,10 @@ function save(k,v){ localStorage.setItem(k, JSON.stringify(v)); }
 
 let source = load('bcplan:source','green');
 if(!VOCAB[source]) source='green';
-let mastered = load(M_KEY, {});      // {id:1}
+let state = load(M_KEY, {});         // {id:'ok'|'no'}  ok=已掌握 no=未掌握(生词)
+(function(){ const old=load('bcplan:mastered',null); if(old && Object.keys(state).length===0){ for(const k in old) state[k]='ok'; save(M_KEY,state); } })(); // 兼容旧版
 let recite = load('bcplan:recite', false);
-let onlyUn = false;
+let filter = 'all';                  // all | ok | no
 let curList = null;                  // null=总览
 
 /* ── 数据辅助 ── */
@@ -136,7 +142,8 @@ function words(){ return VOCAB[source].words; }
 function listMeta(){ const m={}; words().forEach(w=>{ m[w.l]=(m[w.l]||0)+1; });
   return Object.keys(m).map(Number).sort((a,b)=>a-b).map(n=>({no:n,count:m[n]})); }
 function listWords(no){ return words().filter(w=>w.l===no); }
-function doneCount(arr){ let c=0; for(const w of arr) if(mastered[w.id]) c++; return c; }
+function doneCount(arr){ let c=0; for(const w of arr) if(state[w.id]==='ok') c++; return c; }
+function noCount(arr){ let c=0; for(const w of arr) if(state[w.id]==='no') c++; return c; }
 
 /* ── 语音 ── */
 let voices=[]; function lv(){ voices = window.speechSynthesis? speechSynthesis.getVoices():[]; }
@@ -148,8 +155,8 @@ function say(t){ if(!window.speechSynthesis) return; speechSynthesis.cancel();
 function renderHeader(){
   $('#src').innerHTML = Object.keys(VOCAB).map(k=>`<button data-s="${k}" class="${k===source?'on':''}">${esc(VOCAB[k].name)} · ${VOCAB[k].words.length}</button>`).join('');
   $('#src').querySelectorAll('button').forEach(b=> b.onclick=()=>{ source=b.dataset.s; save('bcplan:source',source); curList=null; renderHeader(); render(); });
-  const all=words(), dc=doneCount(all);
-  $('#ovtxt').textContent = `已掌握 ${dc} / ${all.length}`;
+  const all=words(), dc=doneCount(all), nc=noCount(all);
+  $('#ovtxt').innerHTML = `掌握 <b style="color:var(--ok)">${dc}</b> · 未掌握 <b style="color:var(--bad)">${nc}</b> / ${all.length}`;
   $('#ovbar').style.width = (all.length? dc/all.length*100:0)+'%';
 }
 
@@ -165,12 +172,12 @@ function renderOverview(){
     <div class="grid" id="grid"></div>`;
   view.innerHTML = h;
   const grid=$('#grid');
-  grid.innerHTML = metas.map(m=>{ const lw=listWords(m.no); const dc=doneCount(lw); const pct=Math.round(dc/m.count*100);
+  grid.innerHTML = metas.map(m=>{ const lw=listWords(m.no); const dc=doneCount(lw); const nc=noCount(lw); const pct=Math.round(dc/m.count*100);
     return `<div class="gcard ${dc===m.count?'done':''}" data-no="${m.no}">
       <div class="no">List ${String(m.no).padStart(2,'0')}</div>
       <div class="ct">${m.count} 词</div>
       <div class="bar"><i style="width:${pct}%"></i></div>
-      <div class="pct">${dc===m.count?'✓ 已完成':'已掌握 '+dc+' / '+m.count}</div>
+      <div class="pct">${dc===m.count?'✓ 已完成':'掌握 '+dc+(nc?' · <span style="color:var(--bad)">未掌握 '+nc+'</span>':'')+' / '+m.count}</div>
     </div>`; }).join('');
   grid.querySelectorAll('.gcard').forEach(c=> c.onclick=()=>{ curList=+c.dataset.no; render(); });
   // 搜索
@@ -186,16 +193,22 @@ function renderOverview(){
 function renderStudy(no){
   const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
   const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
-  let lw=listWords(no); const total=lw.length; const dc=doneCount(lw);
-  const shown = onlyUn? lw.filter(w=>!mastered[w.id]) : lw;
+  let lw=listWords(no); const total=lw.length; const dc=doneCount(lw); const nc=noCount(lw);
+  const shown = filter==='ok'? lw.filter(w=>state[w.id]==='ok')
+              : filter==='no'? lw.filter(w=>state[w.id]==='no')
+              : lw;
   view.innerHTML = `<div class="study-top">
     <div class="stitle"><span class="back" id="back">← 返回总览</span>
       <h2>List ${String(no).padStart(2,'0')}</h2>
-      <span class="cnt" id="cnt">${total} 词 · 已掌握 ${dc}</span></div>
+      <span class="cnt" id="cnt">${total} 词 · 掌握 ${dc}${nc?' · 未掌握 '+nc:''}</span></div>
     <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/total*100)}%"></i></div>
     <div class="tools">
       <button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮释义）</button>
-      <button class="tbtn ${onlyUn?'on':''}" id="tOnly">只看未掌握</button>
+      <span class="seg">
+        <button class="tbtn ${filter==='all'?'on':''}" data-f="all">全部</button>
+        <button class="tbtn ${filter==='no'?'on':''}" data-f="no">未掌握</button>
+        <button class="tbtn ${filter==='ok'?'on':''}" data-f="ok">已掌握</button>
+      </span>
       <button class="tbtn" id="tAll">本组全标已掌握</button>
       <span class="nav">
         <button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一组</button>
@@ -207,27 +220,31 @@ function renderStudy(no){
       <button class="tbtn" id="pv2" ${prev==null?'disabled':''}>◀ 上一组</button>
       <button class="tbtn" id="nx2" ${next==null?'disabled':''}>下一组 ▶</button></span></div>`;
   const cards=$('#cards');
-  cards.innerHTML = shown.length? shown.map(w=>cardHtml(w)).join('') : '<div class="empty">本组已全部掌握 🎉</div>';
+  const emptyMsg = filter==='no'?'本组还没有标记「未掌握」的词':filter==='ok'?'本组还没有标记「已掌握」的词':'本组没有单词';
+  cards.innerHTML = shown.length? shown.map(w=>cardHtml(w)).join('') : `<div class="empty">${emptyMsg}</div>`;
   wireCards(cards);
   $('#back').onclick=$('#back2').onclick=()=>{ curList=null; render(); };
   const go=n=>{ curList=n; render(); };
   $('#pv').onclick=$('#pv2').onclick=()=>prev!=null&&go(prev);
   $('#nx').onclick=$('#nx2').onclick=()=>next!=null&&go(next);
   $('#tRecite').onclick=()=>{ recite=!recite; save('bcplan:recite',recite); render(); };
-  $('#tOnly').onclick=()=>{ onlyUn=!onlyUn; render(); };
-  $('#tAll').onclick=()=>{ lw.forEach(w=>mastered[w.id]=1); save(M_KEY,mastered); render(); };
+  view.querySelectorAll('.seg [data-f]').forEach(bn=> bn.onclick=()=>{ filter=bn.dataset.f; render(); });
+  $('#tAll').onclick=()=>{ lw.forEach(w=>state[w.id]='ok'); save(M_KEY,state); render(); };
 }
 
 function cardHtml(w){
-  const done=mastered[w.id]?' done':''; const rc=recite?' recite':'';
+  const st=state[w.id]||''; const cls=(st==='ok'?' ok':st==='no'?' no':''); const rc=recite?' recite':'';
   const col = w.c&&w.c.length? `<div class="wc-col"><b>搭配</b><div>${w.c.map(esc).join('</div><div>')}</div></div>`:'';
   const ex  = w.e&&w.e.length? `<div class="wc-ex"><b>例句</b><div>${w.e.map(esc).join('</div><div>')}</div></div>`:'';
   const mem = w.m? `<div class="wc-mem">${esc(w.m)}</div>`:'';
-  return `<div class="wcard${done}${rc}" data-id="${esc(w.id)}">
+  return `<div class="wcard${cls}${rc}" data-id="${esc(w.id)}">
     <div class="wc-head">
       <span class="wc-word" data-say="${esc(w.w)}">${esc(w.w)}</span>
       <span class="wc-pron">${esc(w.p)}</span>
-      <button class="wc-mark">${done?'✓ 已掌握':'标记掌握'}</button>
+      <span class="wc-marks">
+        <button class="wc-mark ok${st==='ok'?' on':''}">✓ 掌握</button>
+        <button class="wc-mark no${st==='no'?' on':''}">✕ 未掌握</button>
+      </span>
     </div>
     <div class="wc-body"><div class="wc-def">${esc(w.d)}</div>${mem}${col}${ex}</div>
     ${recite?'<div class="reveal-hint">（背记模式：点卡片显示释义）</div>':''}
@@ -238,15 +255,20 @@ function wireCards(box){
   box.querySelectorAll('.wcard').forEach(card=>{
     const id=card.dataset.id;
     card.querySelector('.wc-word').onclick=e=>{ e.stopPropagation(); say(e.target.dataset.say); };
-    card.querySelector('.wc-mark').onclick=e=>{ e.stopPropagation();
-      if(mastered[id]) delete mastered[id]; else mastered[id]=1; save(M_KEY,mastered);
-      card.classList.toggle('done'); card.querySelector('.wc-mark').textContent = mastered[id]?'✓ 已掌握':'标记掌握';
-      // 更新计数/进度条
-      const lw=listWords(curList), dc=doneCount(lw);
-      const cnt=$('#cnt'); if(cnt) cnt.textContent=`${lw.length} 词 · 已掌握 ${dc}`;
+    function setState(ns){
+      state[id] = (state[id]===ns) ? undefined : ns;   // 再点一次取消
+      if(state[id]===undefined) delete state[id];
+      save(M_KEY, state);
+      card.classList.remove('ok','no'); if(state[id]) card.classList.add(state[id]);
+      card.querySelector('.wc-mark.ok').classList.toggle('on', state[id]==='ok');
+      card.querySelector('.wc-mark.no').classList.toggle('on', state[id]==='no');
+      const lw=listWords(curList), dc=doneCount(lw), nc=noCount(lw);
+      const cnt=$('#cnt'); if(cnt) cnt.textContent=`${lw.length} 词 · 掌握 ${dc}`+(nc?` · 未掌握 ${nc}`:'');
       const lb=$('#lbar'); if(lb) lb.style.width=Math.round(dc/lw.length*100)+'%';
       renderHeader();
-    };
+    }
+    card.querySelector('.wc-mark.ok').onclick=e=>{ e.stopPropagation(); setState('ok'); };
+    card.querySelector('.wc-mark.no').onclick=e=>{ e.stopPropagation(); setState('no'); };
     if(recite) card.onclick=()=>card.classList.toggle('revealed');
   });
 }
