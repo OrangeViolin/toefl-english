@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
 <title>听力复述 · Listen and Repeat</title>
 <style>
   :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--accent2:#e0913c;--amber:#fdeccd;--core:#2f8f83;--ok:#4a9a5e;--bad:#c04a3a;--warn:#d8903a}
@@ -44,10 +46,13 @@
   .band.b3,.band.b2{background:#fff3e0;color:var(--warn)}
   .band.b1,.band.b0{background:#ffe8e4;color:var(--bad)}
   /* 模式切换 */
-  .modebar{display:flex;gap:8px;margin-bottom:12px}
+  .modebar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
   .modebtn{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:7px 15px;font-size:13px;font-weight:700;cursor:pointer;color:#5f574c;transition:.15s}
   .modebtn:hover{border-color:var(--accent)}
   .modebtn.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .listbar .modebtn.on{background:var(--core);border-color:var(--core)}
+  .barlabel{font-size:12px;color:var(--muted);font-weight:700;align-self:center;margin-right:2px}
+  .setinfo{font-size:11px;color:var(--muted)}
   /* 限时倒计时 */
   .timer{display:none;margin:10px 0}
   .timer .num{font-size:15px;font-weight:700;margin-bottom:5px;color:#5f574c}
@@ -57,7 +62,7 @@
   .timer .fill.warn{background:var(--warn)}
   .timer .fill.danger{background:var(--bad)}
   .lim{font-size:11px;padding:2px 9px;border-radius:10px;background:#fff3e0;color:var(--warn);font-weight:700}
-  .qinfo{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:14px}
+  .qinfo{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:14px;flex-wrap:wrap}
   .lv{font-size:11px;padding:2px 10px;border-radius:10px;background:#e6f0ec;color:var(--core);font-weight:700}
   .sentence{font-family:Georgia,"Times New Roman",serif;font-size:26px;line-height:1.4;margin:10px 0 6px;min-height:36px}
   .sentence .miss{background:#ffe8e4;color:var(--bad);border-radius:4px;padding:0 2px}
@@ -102,14 +107,44 @@
   .chunk{display:inline-block;background:#fff8ec;border:1px solid #f0d9b0;border-radius:8px;padding:4px 11px;margin:3px 5px 3px 0;font-family:Georgia,serif;font-size:14.5px;cursor:pointer;transition:.15s}
   .chunk:hover{background:var(--amber);border-color:var(--accent2)}
   .chunk.on{background:var(--amber);border-color:var(--accent)}
+  /* 生词解析 / 连读解析 */
+  .aidpanel{display:none;margin:10px 0;border-radius:12px;padding:12px 16px;font-size:14px}
+  .aidpanel.vocab{background:#f5f2fb;border:1px dashed #d5cbe8}
+  .aidpanel.linking{background:#eef6f3;border:1px dashed #cfe3db}
+  .aidpanel .lbl{font-size:11.5px;font-weight:800;letter-spacing:.5px;display:block;margin-bottom:8px}
+  .aidpanel.vocab .lbl{color:#7a5bb0}
+  .aidpanel.linking .lbl{color:var(--core)}
+  .wchip{display:inline-block;background:#fff;border:1px solid #e0d6ea;border-radius:8px;padding:3px 10px;margin:3px 4px 3px 0;font-family:Georgia,serif;font-size:14.5px;cursor:pointer;transition:.12s}
+  .wchip:hover{border-color:#7a5bb0}
+  .wchip.has{border-bottom:2px solid #b59ce0}
+  .wchip.saved{background:#efe6ff;border-color:#7a5bb0;font-weight:700}
+  .gloss{margin-top:8px;font-size:13px;color:#4d463c;line-height:1.8}
+  .gloss .g{display:block;margin:2px 0}
+  .gloss .ipa{color:#7a5bb0;font-family:ui-monospace,Menlo,monospace}
+  .gloss .add{cursor:pointer;color:#7a5bb0;font-weight:700;margin-left:6px}
+  .link-item{margin:6px 0;line-height:1.7}
+  .tag{display:inline-block;font-size:11px;font-weight:800;padding:1px 8px;border-radius:8px;margin-right:6px;color:#fff;vertical-align:middle}
+  .tag.t1{background:#c1662f}.tag.t2{background:#4a9a5e}.tag.t3{background:#2f8f83}.tag.t4{background:#8a5bb0}.tag.t5{background:#d8903a}
+  .lk{font-family:Georgia,serif;font-weight:700}
+  .lk .tie{color:#c1662f;font-weight:900}
+  /* 生词本 */
+  .bank{background:#faf7ff;border:1px solid #e0d6ea;border-radius:12px;padding:0 14px;margin-bottom:14px}
+  .bank summary{cursor:pointer;font-size:13px;font-weight:700;color:#7a5bb0;padding:12px 0;list-style:none}
+  .bank summary::-webkit-details-marker{display:none}
+  .bank summary::before{content:"▸ ";color:#7a5bb0}
+  .bank[open] summary::before{content:"▾ "}
+  .bank .row{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px dashed #e0d6ea;font-size:13.5px}
+  .bank .row .del{cursor:pointer;color:#c04a3a;font-weight:700}
+  .bank .tools{margin:10px 0}
+  .bank .tools button{border:none;border-radius:16px;padding:6px 14px;font-size:12.5px;cursor:pointer;margin-right:8px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="top"><a href="./index.html">← 返回口语主页</a><span>听力复述 · Listen and Repeat</span></div>
   <h1>🔁 听力复述</h1>
-  <div class="en">Listen and Repeat · 按场景逐句复述</div>
-  <div class="desc">按<b>真实校园场景</b>组织：一个场景 7 句（= 一套题，满分 35）、句子由短到长。听一句（考试只放一遍）→ 逐字复述。系统据转写与原文比对，按官方口径给每句 <b>0–5 分</b>（清晰度 50% + 一致性 50%）；7 句原始分 /35，最终折算 0–6。换词、漏词、重排都算错。</div>
+  <div class="en">Listen and Repeat · 10 场景 × 21 句 · 模拟套题无限刷</div>
+  <div class="desc">按<b>真实校园场景</b>组织：每个场景 <b>21 句</b>（7 短 + 7 中 + 7 长，共 <b>210 句</b>）。听一句（考试只放一遍）→ 逐字复述。<b>🎲 模拟套题</b>每次抽 7 句（短→中→长，恰好套用官方 /35 换算），<b>🔀 换一套</b>无限刷新做日常训练；也可只练某一难度。系统按官方口径给每句 <b>0–5 分</b>（清晰度 50% + 一致性 50%）。换词、漏词、重排都算错。</div>
 
   <div class="scenes" id="scenes"></div>
 
@@ -119,11 +154,11 @@
       ① <b>切块</b>——别逐词记，按意群记成 3–4 块（如「图书馆·开门·八点」）·
       ② <b>影子跟读</b>——听的时候心里同步默念 ·
       ③ <b>抓骨架</b>——先抓「谁+干什么」，修饰语填空 ·
-      ④ 顺着一个场景练 7 句，越练越顺、语料成串更好记。
+      ④ 先把一个场景的 21 句刷熟，再进 <b>🎲 模拟套题</b> 混练、<b>🔀 换一套</b> 无限刷（配套 📒 场景高频词汇见口语主页）。
     </div>
 
     <details class="rubric">
-      <summary>📊 评分标准（每句 0–5 分 · 7 句 /35 → 最终 0–6 · 限时 8/10/14s）</summary>
+      <summary>📊 评分标准（每句 0–5 分 · 模拟套题 7 句 /35 → 最终 0–6 · 限时 8/10/14s）</summary>
       <table>
         <tr><th>分</th><th>档位</th><th>标准</th><th>例（原句 → 复述）</th></tr>
         <tr><td class="sc">5</td><td>完全一致</td><td>与原句 100% 一致，一字不差</td><td>"opens at eight" → "opens at eight"</td></tr>
@@ -146,12 +181,31 @@
       <p class="note">换算按<b>总分区间</b>：≥33→6.0 · 31–32→5.5 · 29–30→5.0 · 26–28→4.5 · 24–25→4.0（官方表到 4.0 为止，更低分本页按趋势外推、仅供参考）。</p>
     </details>
 
+    <details class="bank" id="bank">
+      <summary>📒 生词本 · 听力复述词库（<span id="bankCount">0</span> 词）</summary>
+      <div id="bankBody"></div>
+      <div class="tools">
+        <button style="background:#7a5bb0;color:#fff" onclick="copyBank()">📋 复制全部</button>
+        <button style="background:#efe6ff;color:#7a5bb0" onclick="clearBank()">🗑 清空</button>
+      </div>
+    </details>
+
+    <div class="modebar listbar" id="listbar">
+      <span class="barlabel">题组</span>
+      <button class="modebtn on" data-lm="mock" onclick="setList('mock')">🎲 模拟套题·7句</button>
+      <button class="modebtn" data-lm="all" onclick="setList('all')">📚 全部 21 句</button>
+      <button class="modebtn" data-lm="short" onclick="setList('short')">短句·7</button>
+      <button class="modebtn" data-lm="medium" onclick="setList('medium')">中句·7</button>
+      <button class="modebtn" data-lm="long" onclick="setList('long')">长句·7</button>
+      <button class="modebtn" id="reshufBtn" onclick="reshuffle()" style="background:#fff3e0;color:var(--accent);border-color:#f0d9b0">🔀 换一套</button>
+    </div>
+
     <div class="scene-head">
       <div class="nm" id="sceneName"></div>
       <div class="ds" id="sceneDesc"></div>
       <div class="tly" id="sceneTally"></div>
     </div>
-    <div class="qinfo"><span id="qNo"></span><span class="lv" id="qLv"></span><span class="lim" id="qLim"></span></div>
+    <div class="qinfo"><span id="qNo"></span><span class="lv" id="qLv"></span><span class="lim" id="qLim"></span><span class="setinfo" id="setInfo"></span></div>
     <div class="sentence" id="sentence">点击「🔊 播放原句」开始</div>
     <div class="zh" id="zh"></div>
 
@@ -163,12 +217,22 @@
       <span class="ckl">🧩 意群切块（点任意一块可听发音）</span>
       <span id="chunkWords"></span>
     </div>
+    <div class="aidpanel vocab" id="vocab">
+      <span class="lbl">📖 本句生词（点词加入生词本 · ★带下划线者有释义）</span>
+      <div id="vocabBody"></div>
+    </div>
+    <div class="aidpanel linking" id="linking">
+      <span class="lbl">🔗 本句连读参考（连读 / 失去爆破 / 叠音 / 同化 / 弱读）</span>
+      <div id="linkingBody"></div>
+    </div>
 
     <div class="controls">
       <button class="btn play" id="playBtn" onclick="play()">🔊 播放原句</button>
       <button class="btn play" id="btnSlow" onclick="playSlow()">🐢 慢速</button>
       <button class="btn play" id="btnChunks" onclick="playChunks()">🧩 分块重放</button>
       <button class="btn play" id="btnSkel" onclick="toggleSkeleton()">🦴 骨架提示</button>
+      <button class="btn play" id="btnVocab" onclick="showVocab()">📖 生词解析</button>
+      <button class="btn play" id="btnLink" onclick="showLinking()">🔗 连读解析</button>
       <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
       <button class="btn exam" id="examBtn" onclick="startExam()">⏱ 限时答题</button>
       <button class="btn next" id="nextBtn" onclick="next()">下一句 →</button>
@@ -205,197 +269,36 @@
   </div>
 </div>
 
+<script src="./data/listen-repeat.js"></script>
 <script src="./speech-core.js"></script>
 <script>
-// ---------- 题目数据（对标 2026 新版 Listen and Repeat）----------
-// 按真实校园/生活场景组织：每个场景约 7 句，句子由短到长、难度递增。
-const SCENES = [
-  { name:"🦒 动物园", en:"Zoo", desc:"欢迎·喂食·参观规则·导览时间",
-    items:[
-      { en:"Welcome to the city zoo.", zh:"欢迎来到市立动物园。", lv:"简单",
-        chunks:["Welcome to","the city zoo"], skeleton:["欢迎来到","市立动物园"] },
-      { en:"The penguins are being fed now.", zh:"企鹅现在正在喂食。", lv:"简单",
-        chunks:["The penguins","are being fed","now"], skeleton:["企鹅","正在喂食","现在"] },
-      { en:"Please do not feed the animals by hand.", zh:"请不要用手投喂动物。", lv:"中等",
-        chunks:["Please do not feed","the animals","by hand"], skeleton:["请勿投喂","动物","用手"] },
-      { en:"The reptile house is just past the café.", zh:"爬行动物馆就在咖啡厅过去一点。", lv:"中等",
-        chunks:["The reptile house","is just past","the café"], skeleton:["爬行动物馆","就过了","咖啡厅"] },
-      { en:"Photography with flash is not allowed inside.", zh:"馆内不允许使用闪光灯拍照。", lv:"中等",
-        chunks:["Photography with flash","is not allowed","inside"], skeleton:["闪光灯拍照","不允许","馆内"] },
-      { en:"If you arrive before noon, you can watch the sea lions being trained.", zh:"如果你中午前到，就能看到海狮受训。", lv:"困难",
-        chunks:["If you arrive before noon","you can watch","the sea lions","being trained"], skeleton:["如果中午前到","你能看","海狮","受训"] },
-      { en:"The tigers, which arrived last spring, are in the enclosure on your left.", zh:"去年春天来的那些老虎在你左边的围栏里。", lv:"困难",
-        chunks:["The tigers","which arrived last spring","are in the enclosure","on your left"], skeleton:["老虎","去年春天来的","在围栏里","你左边"] },
-    ]},
+// ---------- 题库（10 场景 × 21 句：7 短 + 7 中 + 7 长）----------
+// 数据外置在 data/listen-repeat.js（window.LR_SCENES）；每句 {en,zh,lv,tier,chunks[],skeleton[]}
+const SCENES = window.LR_SCENES || [];
 
-  { name:"🏋️ 健身房", en:"Gym", desc:"签到·器械·更衣室·课程·预约",
-    items:[
-      { en:"Please sign in at the desk.", zh:"请在前台签到。", lv:"简单",
-        chunks:["Please sign in","at the desk"], skeleton:["请签到","在前台"] },
-      { en:"Wipe down each machine after use.", zh:"每台器械用完后擦干净。", lv:"简单",
-        chunks:["Wipe down","each machine","after use"], skeleton:["擦拭","每台器械","用后"] },
-      { en:"Bring a towel and a water bottle.", zh:"带一条毛巾和一个水瓶。", lv:"中等",
-        chunks:["Bring a towel","and a water bottle"], skeleton:["带毛巾","和水瓶"] },
-      { en:"The locker rooms are down the hall to the right.", zh:"更衣室沿走廊往右走。", lv:"中等",
-        chunks:["The locker rooms","are down the hall","to the right"], skeleton:["更衣室","沿走廊","往右"] },
-      { en:"Free fitness classes are offered every evening.", zh:"每天晚上都有免费健身课。", lv:"中等",
-        chunks:["Free fitness classes","are offered","every evening"], skeleton:["免费健身课","提供","每晚"] },
-      { en:"If you are new here, a trainer can show you how the equipment works.", zh:"如果你是新来的，教练可以教你器械怎么用。", lv:"困难",
-        chunks:["If you are new here","a trainer can show you","how the equipment works"], skeleton:["如果你是新人","教练会教你","器械怎么用"] },
-      { en:"Members who reserve a court online will get priority during busy hours.", zh:"在网上订场的会员在高峰时段享有优先。", lv:"困难",
-        chunks:["Members who reserve a court online","will get priority","during busy hours"], skeleton:["网上订场的会员","获优先","高峰时段"] },
-    ]},
-
-  { name:"🎓 迎新·咨询台", en:"University Orientation / Info Booth", desc:"迎新·领资料·校园导览·学生证·答疑",
-    items:[
-      { en:"Welcome to student orientation.", zh:"欢迎参加新生迎新。", lv:"简单",
-        chunks:["Welcome to","student orientation"], skeleton:["欢迎参加","新生迎新"] },
-      { en:"Pick up your welcome packet here.", zh:"在这里领取你的迎新资料袋。", lv:"简单",
-        chunks:["Pick up","your welcome packet","here"], skeleton:["领取","迎新资料袋","这里"] },
-      { en:"Campus tours begin at the main library.", zh:"校园导览从主图书馆开始。", lv:"中等",
-        chunks:["Campus tours","begin at","the main library"], skeleton:["校园导览","开始于","主图书馆"] },
-      { en:"Your student ID card is ready for pickup.", zh:"你的学生证已经可以来领了。", lv:"中等",
-        chunks:["Your student ID card","is ready","for pickup"], skeleton:["学生证","已备好","可领取"] },
-      { en:"Ask any volunteer in a blue shirt for help.", zh:"有需要就问任何穿蓝衬衫的志愿者。", lv:"中等",
-        chunks:["Ask any volunteer","in a blue shirt","for help"], skeleton:["问志愿者","穿蓝衫的","求助"] },
-      { en:"If you have not chosen your classes, an advisor is available all week.", zh:"如果你还没选课，本周都有导师可以约。", lv:"困难",
-        chunks:["If you have not chosen your classes","an advisor is available","all week"], skeleton:["如果你没选课","有导师可约","整周"] },
-      { en:"Students who live on campus should collect their room keys before five.", zh:"住校的学生应在五点前领取房间钥匙。", lv:"困难",
-        chunks:["Students who live on campus","should collect their room keys","before five"], skeleton:["住校学生","领房间钥匙","五点前"] },
-    ]},
-
-  { name:"📚 图书馆", en:"Library", desc:"开放时间·借阅·罚款·安静区·预约",
-    items:[
-      { en:"The library opens at eight.", zh:"图书馆八点开门。", lv:"简单",
-        chunks:["The library","opens","at eight"], skeleton:["图书馆","开门","八点"] },
-      { en:"Please return your books on time.", zh:"请按时还书。", lv:"简单",
-        chunks:["Please return","your books","on time"], skeleton:["请归还","你的书","按时"] },
-      { en:"You can borrow up to ten books.", zh:"你最多可以借十本书。", lv:"中等",
-        chunks:["You can borrow","up to ten books"], skeleton:["你可借","最多十本"] },
-      { en:"Late returns are charged a small daily fine.", zh:"逾期归还按天收取小额罚款。", lv:"中等",
-        chunks:["Late returns","are charged","a small daily fine"], skeleton:["逾期归还","被收取","每日小额罚款"] },
-      { en:"The quiet study rooms are on the third floor.", zh:"安静自习室在三楼。", lv:"中等",
-        chunks:["The quiet study rooms","are","on the third floor"], skeleton:["安静自习室","在","三楼"] },
-      { en:"If a book is checked out, you can place a hold and we will email you.", zh:"如果书被借走了，你可以预约，我们会邮件通知你。", lv:"困难",
-        chunks:["If a book is checked out","you can place a hold","and we will email you"], skeleton:["如果书被借走","你可预约","我们会邮件通知你"] },
-      { en:"Reference books, which cannot leave the building, must be used at the tables here.", zh:"参考书不能带出馆，必须在这里的桌子上使用。", lv:"困难",
-        chunks:["Reference books","which cannot leave the building","must be used","at the tables here"], skeleton:["参考书","不能带出馆","必须使用","在这的桌上"] },
-    ]},
-
-  { name:"🏨 酒店前台", en:"Hotel Front Desk", desc:"入住·早餐·房间·钥匙·退房·预订",
-    items:[
-      { en:"Welcome. May I have your name?", zh:"欢迎光临，请问您贵姓？", lv:"简单",
-        chunks:["Welcome","May I have","your name"], skeleton:["欢迎","请问","您的名字"] },
-      { en:"Check-in begins at three o'clock.", zh:"入住办理从三点开始。", lv:"简单",
-        chunks:["Check-in begins","at three o'clock"], skeleton:["入住办理","三点开始"] },
-      { en:"Breakfast is served in the lobby until ten.", zh:"早餐在大堂供应到十点。", lv:"中等",
-        chunks:["Breakfast is served","in the lobby","until ten"], skeleton:["早餐供应","在大堂","到十点"] },
-      { en:"Your room is on the fifth floor, facing the garden.", zh:"您的房间在五楼，朝向花园。", lv:"中等",
-        chunks:["Your room","is on the fifth floor","facing the garden"], skeleton:["您的房间","在五楼","朝花园"] },
-      { en:"Please leave your key at the desk when you go out.", zh:"外出时请把钥匙留在前台。", lv:"中等",
-        chunks:["Please leave your key","at the desk","when you go out"], skeleton:["请留钥匙","在前台","外出时"] },
-      { en:"If you need a late checkout, please let us know the night before.", zh:"如需延迟退房，请提前一晚告知我们。", lv:"困难",
-        chunks:["If you need a late checkout","please let us know","the night before"], skeleton:["如需延迟退房","请告知我们","前一晚"] },
-      { en:"Guests who booked online will find their parking included in the room rate.", zh:"网上预订的客人，停车费已含在房价里。", lv:"困难",
-        chunks:["Guests who booked online","will find their parking","included in the room rate"], skeleton:["网上预订的客人","停车费","含在房价里"] },
-    ]},
-
-  { name:"🌿 自然保护区", en:"Nature Reserve", desc:"欢迎·步道·保护规则·观鸟·野生动物",
-    items:[
-      { en:"Welcome to the nature reserve.", zh:"欢迎来到自然保护区。", lv:"简单",
-        chunks:["Welcome to","the nature reserve"], skeleton:["欢迎来到","自然保护区"] },
-      { en:"Please stay on the marked trails.", zh:"请走标记好的步道。", lv:"简单",
-        chunks:["Please stay on","the marked trails"], skeleton:["请走","标记步道"] },
-      { en:"Do not pick the wild flowers here.", zh:"请不要采摘这里的野花。", lv:"中等",
-        chunks:["Do not pick","the wild flowers","here"], skeleton:["请勿采摘","野花","这里"] },
-      { en:"The bird-watching tower is near the lake.", zh:"观鸟塔就在湖边。", lv:"中等",
-        chunks:["The bird-watching tower","is near","the lake"], skeleton:["观鸟塔","靠近","湖边"] },
-      { en:"Carry out all of your trash when you leave.", zh:"离开时带走你所有的垃圾。", lv:"中等",
-        chunks:["Carry out","all of your trash","when you leave"], skeleton:["带走","你所有垃圾","离开时"] },
-      { en:"If you spot a deer, please keep your distance and stay quiet.", zh:"如果看到鹿，请保持距离并保持安静。", lv:"困难",
-        chunks:["If you spot a deer","please keep your distance","and stay quiet"], skeleton:["如果看到鹿","请保持距离","并保持安静"] },
-      { en:"The wetland area, which floods each spring, is closed to visitors until May.", zh:"湿地区每年春天会淹水，五月前对游客关闭。", lv:"困难",
-        chunks:["The wetland area","which floods each spring","is closed to visitors","until May"], skeleton:["湿地区","每年春天淹水","对游客关闭","到五月"] },
-    ]},
-
-  { name:"🏛 教务处", en:"Registrar's Office", desc:"取号·填表·门户·盖章·邮寄·非官方件",
-    items:[
-      { en:"Please take a number and wait.", zh:"请取号等候。", lv:"简单",
-        chunks:["Please take a number","and wait"], skeleton:["请取号","等候"] },
-      { en:"Fill out the transcript form.", zh:"填写成绩单表格。", lv:"简单",
-        chunks:["Fill out","the transcript form"], skeleton:["填写","成绩单表格"] },
-      { en:"Log into the portal to check your records.", zh:"登录门户网站查看你的记录。", lv:"中等",
-        chunks:["Log into the portal","to check","your records"], skeleton:["登录门户","查看","记录"] },
-      { en:"We will stamp your transcript with our seal.", zh:"我们会在成绩单上盖章。", lv:"中等",
-        chunks:["We will stamp","your transcript","with our seal"], skeleton:["我们会盖章","成绩单","盖印章"] },
-      { en:"Your transcript will be mailed to your chosen schools.", zh:"你的成绩单会邮寄到你选择的学校。", lv:"中等",
-        chunks:["Your transcript","will be mailed","to your chosen schools"], skeleton:["成绩单","将邮寄","到所选学校"] },
-      { en:"If you need an unofficial copy, which you can keep for yourself, check this box.", zh:"如果你需要一份可自己留存的非官方件，请勾选此框。", lv:"困难",
-        chunks:["If you need an unofficial copy","which you can keep for yourself","check this box"], skeleton:["如需非官方件","可自己留存的","勾选此框"] },
-      { en:"Email the office right away to fix issues such as missing courses.", zh:"立即邮件联系办公室解决诸如课程缺失等问题。", lv:"困难",
-        chunks:["Email the office","right away","to fix issues","such as missing courses"], skeleton:["邮件联系办公室","立即","解决问题","如课程缺失"] },
-    ]},
-
-  { name:"🖼 博物馆·画廊", en:"Museum / Gallery", desc:"票务·参观规则·寄存·展区·导览·语音导览",
-    items:[
-      { en:"The museum is free on Sundays.", zh:"博物馆周日免费。", lv:"简单",
-        chunks:["The museum","is free","on Sundays"], skeleton:["博物馆","免费","周日"] },
-      { en:"Please do not touch the paintings.", zh:"请不要触摸画作。", lv:"简单",
-        chunks:["Please do not touch","the paintings"], skeleton:["请勿触摸","画作"] },
-      { en:"Large bags must be left at the entrance.", zh:"大件包必须寄存在入口处。", lv:"中等",
-        chunks:["Large bags","must be left","at the entrance"], skeleton:["大件包","须寄存","入口处"] },
-      { en:"The modern art gallery is on the second floor.", zh:"现代艺术馆在二楼。", lv:"中等",
-        chunks:["The modern art gallery","is on","the second floor"], skeleton:["现代艺术馆","在","二楼"] },
-      { en:"Guided tours start every hour near the front desk.", zh:"导览每小时在前台附近开始。", lv:"中等",
-        chunks:["Guided tours","start every hour","near the front desk"], skeleton:["导览","每小时开始","前台旁"] },
-      { en:"If you want an audio guide, you can rent one at the ticket counter.", zh:"如果你想要语音导览，可以在售票处租一台。", lv:"困难",
-        chunks:["If you want an audio guide","you can rent one","at the ticket counter"], skeleton:["如果想要语音导览","可租一台","售票处"] },
-      { en:"The sculptures, which were donated last year, are displayed in the east wing.", zh:"去年捐赠的那些雕塑陈列在东翼。", lv:"困难",
-        chunks:["The sculptures","which were donated last year","are displayed","in the east wing"], skeleton:["雕塑","去年捐赠的","陈列","东翼"] },
-    ]},
-
-  { name:"🚗 租车行", en:"Car Rental Agency", desc:"驾照·满油归还·保险·还车·加驾·延误",
-    items:[
-      { en:"Please show your driver's license.", zh:"请出示你的驾照。", lv:"简单",
-        chunks:["Please show","your driver's license"], skeleton:["请出示","驾照"] },
-      { en:"The car must be returned full.", zh:"车必须加满油归还。", lv:"简单",
-        chunks:["The car","must be returned","full"], skeleton:["车","须归还","满油"] },
-      { en:"Insurance is included in the daily rate.", zh:"保险已含在日租价里。", lv:"中等",
-        chunks:["Insurance","is included","in the daily rate"], skeleton:["保险","已含","日租价"] },
-      { en:"Return the vehicle to this lot by noon.", zh:"请在中午前把车还到本停车场。", lv:"中等",
-        chunks:["Return the vehicle","to this lot","by noon"], skeleton:["把车还","到本停车场","中午前"] },
-      { en:"A second driver can be added for a fee.", zh:"可以加收费用增加第二位驾驶人。", lv:"中等",
-        chunks:["A second driver","can be added","for a fee"], skeleton:["第二驾驶人","可添加","收费"] },
-      { en:"If you return the car late, an extra day will be charged.", zh:"如果你还车晚了，会加收一天的费用。", lv:"困难",
-        chunks:["If you return the car late","an extra day","will be charged"], skeleton:["如果还车晚了","多一天","将收费"] },
-      { en:"Customers who booked a compact car may be upgraded when none are left.", zh:"预订了小型车的客户，在没车时可能获得升级。", lv:"困难",
-        chunks:["Customers who booked a compact car","may be upgraded","when none are left"], skeleton:["订小型车的客户","可获升级","没车时"] },
-    ]},
-
-  { name:"🏢 社区中心", en:"Community Centre", desc:"开放·会员·泳池·报名·陪同·订场",
-    items:[
-      { en:"The centre opens at ten.", zh:"中心十点开门。", lv:"简单",
-        chunks:["The centre","opens","at ten"], skeleton:["中心","开门","十点"] },
-      { en:"Please register for a membership card.", zh:"请办理一张会员卡。", lv:"简单",
-        chunks:["Please register","for a membership card"], skeleton:["请注册","会员卡"] },
-      { en:"The swimming pool is closed on Mondays.", zh:"游泳池周一闭馆。", lv:"中等",
-        chunks:["The swimming pool","is closed","on Mondays"], skeleton:["游泳池","关闭","周一"] },
-      { en:"Sign up for the cooking class at the desk.", zh:"在前台报名参加烹饪课。", lv:"中等",
-        chunks:["Sign up for","the cooking class","at the desk"], skeleton:["报名","烹饪课","前台"] },
-      { en:"Children under six must be with an adult.", zh:"六岁以下儿童必须有大人陪同。", lv:"中等",
-        chunks:["Children under six","must be","with an adult"], skeleton:["六岁以下儿童","必须","有大人陪同"] },
-      { en:"If you want to book the hall, please pay a deposit in advance.", zh:"如果你想预订大厅，请提前支付押金。", lv:"困难",
-        chunks:["If you want to book the hall","please pay a deposit","in advance"], skeleton:["如果想订大厅","请付押金","提前"] },
-      { en:"Volunteers who help at events will receive free entry to all classes.", zh:"在活动中帮忙的志愿者可免费参加所有课程。", lv:"困难",
-        chunks:["Volunteers who help at events","will receive free entry","to all classes"], skeleton:["在活动帮忙的志愿者","获免费入场","所有课程"] },
-    ]},
-];
-
+// ===== 状态 =====
 let sceneIdx = 0, idx = 0, result = null;
-let sceneScores = [];  // 本场景各句 0–5 估分（一致性），下标对齐 items
+let listMode = 'mock';            // mock(模拟套题7句) | all(全部21) | short | medium | long
+let work = [], workScores = [];   // 当前工作套题 + 各句 0–5 估分（下标对齐 work）
 function curScene(){ return SCENES[sceneIdx]; }
-function curItem(){ return SCENES[sceneIdx].items[idx]; }
-function resetTally(){ sceneScores = new Array(curScene().items.length).fill(null); }
+function curItem(){ return work[idx]; }
+
+const TIER_ZH = { short:'短句', medium:'中句', long:'长句' };
+const LM_ZH   = { mock:'模拟套题', all:'全部 21 句', short:'短句组', medium:'中句组', long:'长句组' };
+function tierItems(t){ return curScene().items.filter(it=>it.tier===t); }
+function shuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+// 组装当前工作套题：模拟套题=2短+3中+2长（短→中→长，共 7 句，恰好套用官方 /35 换算），或整档/全部
+function buildWork(){
+  const s = curScene();
+  if(listMode==='all')         work = s.items.slice();
+  else if(listMode==='short')  work = tierItems('short');
+  else if(listMode==='medium') work = tierItems('medium');
+  else if(listMode==='long')   work = tierItems('long');
+  else { const pick=(t,n)=>shuffle(tierItems(t)).slice(0,n);
+         work = [ ...pick('short',2), ...pick('medium',3), ...pick('long',2) ]; }
+  idx = 0; workScores = new Array(work.length).fill(null);
+}
+function resetTally(){ buildWork(); }   // 兼容旧调用名
 
 // 0–5 分档位说明（对标官方口径）
 const BANDS = {
@@ -468,18 +371,19 @@ function rawToSection(raw){
   return 0.0;
 }
 
-// 本场景得分汇总（一套 7 句 = /35 → 6 分制）
+// 当前套题得分汇总（模拟套题/整档=7 句→官方 /35 换算；全部21句按均分归一到 7 句制换算）
 function tallyText(){
-  const total = curScene().items.length;
-  const answered = sceneScores.filter(v=>v!==null);
-  if(answered.length===0) return '本场景：0/'+total+' 句已评 · 答满 '+total+' 句得原始分 /35 → 换算 6 分制';
+  const total = work.length;
+  const setNm = LM_ZH[listMode]+'（'+total+' 句）';
+  const answered = workScores.filter(v=>v!==null);
+  if(answered.length===0) return '本套「'+setNm+'」：0/'+total+' 句已评 · 答满得原始分 → 官方 6 分制换算';
   const raw = answered.reduce((a,b)=>a+b,0);
   const avg = raw/answered.length;
+  const norm7 = Math.round(avg*7);       // 归一到 7 句制（对齐官方 /35 换算表）
   if(answered.length===total){
-    return '✅ 本场景完成：原始分 <b>'+raw+'</b>/35 → 最终 <b>'+rawToSection(raw).toFixed(1)+'</b>/6（官方换算）';
+    return '✅ 本套完成：原始分 <b>'+raw+'</b>/'+(total*5)+' · 均分 <b>'+avg.toFixed(1)+'</b>/5 → 最终 <b>'+rawToSection(norm7).toFixed(1)+'</b>/6（7 句制换算）· 🔀 换一套继续';
   }
-  const proj = Math.round(avg*total);   // 按当前均分推算满 7 句原始分
-  return '本场景：已评 <b>'+answered.length+'/'+total+'</b> 句 · 均分 <b>'+avg.toFixed(1)+'</b>/5 · 推算 ≈ <b>'+proj+'</b>/35 → <b>'+rawToSection(proj).toFixed(1)+'</b>/6';
+  return '本套「'+setNm+'」：已评 <b>'+answered.length+'/'+total+'</b> 句 · 均分 <b>'+avg.toFixed(1)+'</b>/5 · 推算 → <b>'+rawToSection(norm7).toFixed(1)+'</b>/6';
 }
 
 // 数字词 ↔ 阿拉伯数字：让 "eight" 与 "8" 视为一致（whisper 常把数字转成阿拉伯数字）
@@ -512,6 +416,20 @@ let recording=false, examing=false;
 let examTimer=null, examEnd=0, examLimit=0;
 function limitFor(q){ return q.lv==='困难' ? 14 : q.lv==='中等' ? 10 : 8; }   // 长14/中10/短8 秒
 function clearExamTimer(){ if(examTimer){ clearInterval(examTimer); examTimer=null; } const t=document.getElementById('timer'); if(t) t.style.display='none'; }
+
+// ===== 题组切换（模拟套题 / 全部21 / 短中长 + 换一套）=====
+function setList(m){
+  if(recording||examing) return;
+  listMode = m;
+  document.querySelectorAll('#listbar .modebtn[data-lm]').forEach(b=>b.classList.toggle('on', b.dataset.lm===m));
+  const rb=document.getElementById('reshufBtn'); if(rb) rb.style.display = (m==='mock') ? '' : 'none';
+  clearExamTimer(); buildWork(); renderQuestion();
+}
+function reshuffle(){         // 换一套（仅模拟套题）
+  if(recording||examing) return;
+  clearExamTimer(); buildWork(); renderQuestion();
+  document.getElementById('live').innerHTML='🔀 已换一套新题，点「🔊 播放原句」或「⏱ 限时答题」开始。';
+}
 function setRecUI(on){
   const b=document.getElementById('recBtn');
   b.textContent = on ? '⏹ 停止录音' : '🎙 开始录音';
@@ -535,6 +453,8 @@ async function startExam(){
   document.getElementById('examBtn').disabled=true;
   document.getElementById('live').innerHTML='🔊 正在播放原句（只放一遍，仔细听）…';
   await VocaSpeech.say(q.en);
+  await beep();               // 读完 → 哔声
+  await prepPause(2);         // → 停 2 秒预备（真实考场）
   examLimit = limitFor(q);
   try{ await VocaSpeech.start(()=>{}); }
   catch(e){ alert(e.message); document.getElementById('playBtn').disabled=false; document.getElementById('examBtn').disabled=false; return; }
@@ -590,6 +510,173 @@ function toggleSkeleton(){
 // 朗读某一块（点击 chunk）
 function sayChunk(i){ VocaSpeech.say(curItem().chunks[i], 0.85); }
 
+// ===== 生词解析 + 生词本（听力复述词库）=====
+// 重点词释义（美式音标）；未收录仍可点击加入生词本。若数据里有 scene.vocab 也会优先用
+const GLOSS = {
+  zoo:{ipa:'/zuː/',zh:'动物园'}, penguins:{ipa:'/ˈpɛŋɡwɪnz/',zh:'企鹅'}, penguin:{ipa:'/ˈpɛŋɡwɪn/',zh:'企鹅'},
+  reptile:{ipa:'/ˈrɛptaɪl/',zh:'爬行动物'}, reptiles:{ipa:'/ˈrɛptaɪlz/',zh:'爬行动物'}, café:{ipa:'/kæˈfeɪ/',zh:'咖啡馆'}, cafe:{ipa:'/kæˈfeɪ/',zh:'咖啡馆'},
+  photography:{ipa:'/fəˈtɑːɡrəfi/',zh:'摄影'}, flash:{ipa:'/flæʃ/',zh:'闪光灯'}, enclosure:{ipa:'/ɪnˈkloʊʒər/',zh:'围栏；圈地'},
+  trained:{ipa:'/treɪnd/',zh:'受训练的'}, lions:{ipa:'/ˈlaɪənz/',zh:'狮子（sea lions 海狮）'}, tigers:{ipa:'/ˈtaɪɡərz/',zh:'老虎'}, feed:{ipa:'/fiːd/',zh:'喂食'},
+  souvenir:{ipa:'/ˌsuːvəˈnɪr/',zh:'纪念品'}, exhibit:{ipa:'/ɪɡˈzɪbɪt/',zh:'展品；展出'}, admission:{ipa:'/ədˈmɪʃn/',zh:'入场（费）'},
+  wipe:{ipa:'/waɪp/',zh:'擦拭'}, machine:{ipa:'/məˈʃiːn/',zh:'器械；机器'}, towel:{ipa:'/ˈtaʊəl/',zh:'毛巾'},
+  locker:{ipa:'/ˈlɑːkər/',zh:'储物柜'}, fitness:{ipa:'/ˈfɪtnəs/',zh:'健身'}, trainer:{ipa:'/ˈtreɪnər/',zh:'教练'},
+  equipment:{ipa:'/ɪˈkwɪpmənt/',zh:'器材；设备'}, reserve:{ipa:'/rɪˈzɜːrv/',zh:'预订；保护区'}, court:{ipa:'/kɔːrt/',zh:'球场'},
+  priority:{ipa:'/praɪˈɔːrəti/',zh:'优先（权）'}, treadmill:{ipa:'/ˈtrɛdmɪl/',zh:'跑步机'}, membership:{ipa:'/ˈmɛmbərʃɪp/',zh:'会员资格'},
+  orientation:{ipa:'/ˌɔːriɛnˈteɪʃn/',zh:'迎新；入学指导'}, packet:{ipa:'/ˈpækɪt/',zh:'资料袋；小包'}, campus:{ipa:'/ˈkæmpəs/',zh:'校园'},
+  volunteer:{ipa:'/ˌvɑːlənˈtɪr/',zh:'志愿者'}, volunteers:{ipa:'/ˌvɑːlənˈtɪrz/',zh:'志愿者'}, advisor:{ipa:'/ədˈvaɪzər/',zh:'导师；顾问'}, collect:{ipa:'/kəˈlɛkt/',zh:'领取；收集'},
+  schedule:{ipa:'/ˈskɛdʒuːl/',zh:'日程；课表'}, deadline:{ipa:'/ˈdɛdlaɪn/',zh:'截止日期'},
+  borrow:{ipa:'/ˈbɑːroʊ/',zh:'借（入）'}, fine:{ipa:'/faɪn/',zh:'罚款'}, quiet:{ipa:'/ˈkwaɪət/',zh:'安静的'},
+  reference:{ipa:'/ˈrɛfrəns/',zh:'参考（书）'}, overdue:{ipa:'/ˌoʊvərˈduː/',zh:'逾期的'}, renew:{ipa:'/rɪˈnuː/',zh:'续借'},
+  lobby:{ipa:'/ˈlɑːbi/',zh:'大堂'}, garden:{ipa:'/ˈɡɑːrdn/',zh:'花园'}, checkout:{ipa:'/ˈtʃɛkaʊt/',zh:'退房；结账'},
+  parking:{ipa:'/ˈpɑːrkɪŋ/',zh:'停车（位）'}, rate:{ipa:'/reɪt/',zh:'价格；费率'}, guests:{ipa:'/ɡɛsts/',zh:'客人'}, luggage:{ipa:'/ˈlʌɡɪdʒ/',zh:'行李'}, reception:{ipa:'/rɪˈsɛpʃn/',zh:'前台；接待'},
+  trail:{ipa:'/treɪl/',zh:'步道'}, trails:{ipa:'/treɪlz/',zh:'步道'}, marked:{ipa:'/mɑːrkt/',zh:'标记好的'}, tower:{ipa:'/ˈtaʊər/',zh:'塔；瞭望台'},
+  trash:{ipa:'/træʃ/',zh:'垃圾'}, deer:{ipa:'/dɪr/',zh:'鹿'}, distance:{ipa:'/ˈdɪstəns/',zh:'距离'}, wetland:{ipa:'/ˈwɛtlænd/',zh:'湿地'},
+  floods:{ipa:'/flʌdz/',zh:'淹水；发洪水'}, visitors:{ipa:'/ˈvɪzɪtərz/',zh:'游客'}, spot:{ipa:'/spɑːt/',zh:'看见；地点'}, wildlife:{ipa:'/ˈwaɪldlaɪf/',zh:'野生动物'}, habitat:{ipa:'/ˈhæbɪtæt/',zh:'栖息地'},
+  transcript:{ipa:'/ˈtrænskrɪpt/',zh:'成绩单'}, portal:{ipa:'/ˈpɔːrtl/',zh:'门户网站'}, records:{ipa:'/ˈrɛkərdz/',zh:'记录'},
+  stamp:{ipa:'/stæmp/',zh:'盖章'}, seal:{ipa:'/siːl/',zh:'印章'}, unofficial:{ipa:'/ˌʌnəˈfɪʃl/',zh:'非官方的'},
+  registrar:{ipa:"/ˈrɛdʒɪstrɑːr/",zh:'教务处；注册主任'}, issues:{ipa:'/ˈɪʃuːz/',zh:'问题'}, enroll:{ipa:'/ɪnˈroʊl/',zh:'注册；报名'}, semester:{ipa:'/sɪˈmɛstər/',zh:'学期'},
+  gallery:{ipa:'/ˈɡæləri/',zh:'画廊；展厅'}, sculptures:{ipa:'/ˈskʌlptʃərz/',zh:'雕塑'}, donated:{ipa:'/ˈdoʊneɪtɪd/',zh:'捐赠的'},
+  counter:{ipa:'/ˈkaʊntər/',zh:'柜台'}, entrance:{ipa:'/ˈɛntrəns/',zh:'入口'}, modern:{ipa:'/ˈmɑːdərn/',zh:'现代的'}, paintings:{ipa:'/ˈpeɪntɪŋz/',zh:'画作'}, exhibition:{ipa:'/ˌɛksɪˈbɪʃn/',zh:'展览'},
+  license:{ipa:'/ˈlaɪsns/',zh:'执照（驾照）'}, vehicle:{ipa:'/ˈviːəkl/',zh:'车辆'}, insurance:{ipa:'/ɪnˈʃʊrəns/',zh:'保险'},
+  compact:{ipa:'/ˈkɑːmpækt/',zh:'小型（车）'}, upgraded:{ipa:'/ˈʌpɡreɪdɪd/',zh:'升级的'}, fee:{ipa:'/fiː/',zh:'费用'}, mileage:{ipa:'/ˈmaɪlɪdʒ/',zh:'里程'}, refundable:{ipa:'/rɪˈfʌndəbl/',zh:'可退款的'},
+  deposit:{ipa:'/dɪˈpɑːzɪt/',zh:'押金；定金'}, hall:{ipa:'/hɔːl/',zh:'大厅'}, entry:{ipa:'/ˈɛntri/',zh:'入场；进入'}, adult:{ipa:'/əˈdʌlt/',zh:'成年人'},
+  boarding:{ipa:'/ˈbɔːrdɪŋ/',zh:'登（机/车）'}, served:{ipa:'/sɜːrvd/',zh:'供应'}, included:{ipa:'/ɪnˈkluːdɪd/',zh:'包含的'},
+  facing:{ipa:'/ˈfeɪsɪŋ/',zh:'朝向'}, available:{ipa:'/əˈveɪləbl/',zh:'可获得的；有空的'}, offered:{ipa:'/ˈɔːfərd/',zh:'提供'}, appointment:{ipa:'/əˈpɔɪntmənt/',zh:'预约'}, register:{ipa:'/ˈrɛdʒɪstər/',zh:'注册；登记'}
+};
+// 短语释义（bigram，去连字符后匹配）
+const PHRASES = {
+  'sign in':'签到', 'wipe down':'擦净', 'check in':'办理入住', 'check out':'退房；借出',
+  'fill out':'填写', 'log into':'登录', 'log in':'登录', 'sign up':'报名', 'carry out':'带走；执行',
+  'move in':'入住；搬入', 'walk in':'免预约就诊', 'drop off':'放下；送到', 'pick up':'领取；取'
+};
+function sceneVocab(){ const v=curScene()&&curScene().vocab; return (v&&typeof v==='object'&&!Array.isArray(v))?v:{}; }
+function lookupGloss(key){ return sceneVocab()[key] || GLOSS[key] || null; }
+
+const BANK_KEY='lr_wordbank_v1';
+function loadBank(){ try{ return JSON.parse(localStorage.getItem(BANK_KEY))||[]; }catch(_){ return []; } }
+function saveBank(a){ try{ localStorage.setItem(BANK_KEY, JSON.stringify(a)); }catch(_){} }
+function inBank(w){ w=(w||'').toLowerCase(); return loadBank().some(x=>x.word.toLowerCase()===w); }
+function addToBank(word, ipa, zh){
+  word=(word||'').trim(); if(!word) return;
+  const a=loadBank();
+  if(a.some(x=>x.word.toLowerCase()===word.toLowerCase())) return;
+  a.push({word, ipa:ipa||'', zh:zh||'', scene:curScene()?curScene().en:'', en:curItem()?curItem().en:''});
+  saveBank(a); renderBank();
+}
+function removeAt(i){ const a=loadBank(); a.splice(i,1); saveBank(a); renderBank(); if(document.getElementById('vocab').style.display==='block') showVocab(); }
+function clearBank(){ if(confirm('清空整个生词本？')){ saveBank([]); renderBank(); } }
+function copyBank(){
+  const a=loadBank(); if(!a.length){ alert('生词本是空的'); return; }
+  const t=a.map(x=>x.word+(x.ipa?(' '+x.ipa):'')+(x.zh?('  '+x.zh):'')).join('\n');
+  const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); }catch(_){}
+  document.body.removeChild(ta); alert('已复制 '+a.length+' 个生词');
+}
+function renderBank(){
+  const a=loadBank();
+  const cEl=document.getElementById('bankCount'); if(cEl) cEl.textContent=a.length;
+  const body=document.getElementById('bankBody'); if(!body) return;
+  if(!a.length){ body.innerHTML='<div style="color:#8c8072;font-size:13px;padding:8px 0">还没有生词。练习时点「📖 生词解析」里的词即可加入。</div>'; return; }
+  body.innerHTML=a.map((x,i)=>'<div class="row"><span><b>'+esc(x.word)+'</b> <span style="color:#7a5bb0;font-family:monospace">'+esc(x.ipa)+'</span> '+esc(x.zh)+'</span><span class="del" onclick="removeAt('+i+')">✕</span></div>').join('');
+}
+
+let _vwords=[], _vitems=[];
+function showVocab(){
+  const q=curItem(); if(!q) return;
+  document.getElementById('vocab').style.display='block';
+  _vwords=q.en.split(/\s+/);
+  const chips=_vwords.map((w,i)=>{
+    const key=w.toLowerCase().replace(/[^a-zà-ÿ'-]/g,'');
+    const g=lookupGloss(key); const saved=inBank(key);
+    return '<span class="wchip'+(g?' has':'')+(saved?' saved':'')+'" onclick="clickWordAt('+i+')">'+esc(w)+'</span>';
+  }).join('');
+  const toks=q.en.toLowerCase().replace(/[^a-zà-ÿ' -]/g,' ').replace(/-/g,' ').split(/\s+/).filter(Boolean);
+  _vitems=[]; const seen=new Set();
+  for(let i=0;i<toks.length-1;i++){ const bg=toks[i]+' '+toks[i+1]; if(PHRASES[bg]){ _vitems.push({w:bg, ipa:'', zh:PHRASES[bg]}); } }
+  for(const t of toks){ const g=lookupGloss(t); if(g && !seen.has(t)){ seen.add(t); _vitems.push({w:t, ipa:g.ipa||'', zh:g.zh||''}); } }
+  const gl = _vitems.length
+    ? _vitems.map((it,k)=>'<span class="g">• <b>'+esc(it.w)+'</b> <span class="ipa">'+esc(it.ipa)+'</span> '+esc(it.zh)+' <span class="add" onclick="addBankAt('+k+')">＋加入</span></span>').join('')
+    : '<span class="g" style="color:#8c8072">本句没有预置释义的重点词；仍可点上面任意词加入生词本。</span>';
+  document.getElementById('vocabBody').innerHTML='<div style="margin-bottom:4px">'+chips+'</div><div class="gloss">'+gl+'</div>';
+}
+function clickWordAt(i){
+  const w=_vwords[i]||''; const key=w.toLowerCase().replace(/[^a-zà-ÿ'-]/g,'');
+  if(!key) return; const g=lookupGloss(key);
+  if(inBank(key)){ saveBank(loadBank().filter(x=>x.word.toLowerCase()!==key)); renderBank(); }
+  else addToBank(key, g?g.ipa:'', g?g.zh:'');
+  showVocab();
+}
+function addBankAt(k){ const it=_vitems[k]; if(it){ addToBank(it.w, it.ipa, it.zh); showVocab(); } }
+
+// ===== 连读解析（自动识别参考）=====
+const VOWEL='aeiou';
+const VOWEL_START_EXC=new Set(['hour','honest','honor','honour','heir']);            // h不发音→元音开头
+const CONS_START_EXC=new Set(['university','universe','unit','use','used','useful','user','european','one','once','uniform','unique','you','your','yes','year']);
+const STOPS=new Set(['p','b','t','d','k','g']);
+function startsVowelSound(w){ if(VOWEL_START_EXC.has(w)) return true; if(CONS_START_EXC.has(w)) return false; return VOWEL.includes(w[0]); }
+function endInfo(w){
+  let s=w;
+  if(s.length>2 && s.endsWith('e') && !VOWEL.includes(s[s.length-2]) && !['the','he','she','we','be','me'].includes(s)) s=s.slice(0,-1);
+  const last=s[s.length-1];
+  if(VOWEL.includes(last) || last==='y') return {vowel:true, cons:null, stop:false};
+  return {vowel:false, cons:last, stop:STOPS.has(last)};
+}
+const WEAK=new Set(['a','an','the','to','of','and','for','at','from','than','as','but','or','your','you','can','must','some','are','was','were','do','does','him','her','them','us']);
+function analyzeLinking(sentence){
+  const raw=sentence.split(/\s+/).map(x=>x.replace(/^[^A-Za-z']+|[^A-Za-z']+$/g,''));  // 去首尾标点用于显示
+  const w=raw.map(x=>x.replace(/[^A-Za-z']/g,'').toLowerCase());
+  const pairs=[];
+  for(let i=0;i<w.length-1;i++){
+    const a=w[i], b=w[i+1]; if(!a||!b) continue;
+    const ae=endInfo(a);
+    if(/[tdsz]$/.test(a) && /^y/.test(b)){                     // 同化：t/d/s/z + y
+      const m={t:'/tʃ/',d:'/dʒ/',s:'/ʃ/',z:'/ʒ/'}; const k=a.slice(-1);
+      pairs.push({a:raw[i],b:raw[i+1],type:'同化',rule:'词尾 '+k+' 遇 y-，融合成 '+m[k]+'（如 would you → /wʊdʒə/）'}); continue;
+    }
+    if(!ae.vowel && ae.cons && startsVowelSound(b)){            // 连读：辅音 + 元音
+      pairs.push({a:raw[i],b:raw[i+1],type:'连读',rule:'词尾辅音 /'+ae.cons+'/ 接词首元音，连起来读（如 opens at → opensat）'}); continue;
+    }
+    if(!ae.vowel && ae.cons && b[0]===ae.cons){                // 叠音：相同辅音相接
+      pairs.push({a:raw[i],b:raw[i+1],type:'叠音',rule:'相邻相同辅音 /'+ae.cons+'/ 只发一次、略拖长（如 bus stop）'}); continue;
+    }
+    if(ae.stop && !startsVowelSound(b)){                        // 失去爆破：爆破音 + 辅音
+      pairs.push({a:raw[i],b:raw[i+1],type:'失去爆破',rule:'爆破音 /'+ae.cons+'/ 后接辅音，只做口型不送气（如 good morning）'}); continue;
+    }
+  }
+  const weak=[]; for(let i=0;i<w.length;i++){ if(WEAK.has(w[i])) weak.push(raw[i]); }
+  return {pairs, weak};
+}
+function showLinking(){
+  const q=curItem(); if(!q) return;
+  document.getElementById('linking').style.display='block';
+  const r=analyzeLinking(q.en);
+  const clsOf={'连读':'t1','失去爆破':'t2','叠音':'t3','同化':'t4'};
+  let html = r.pairs.length
+    ? r.pairs.map(x=>'<div class="link-item"><span class="tag '+(clsOf[x.type]||'t1')+'">'+x.type+'</span><span class="lk">'+esc(x.a)+' <span class="tie">‿</span> '+esc(x.b)+'</span> — '+esc(x.rule)+'</div>').join('')
+    : '<div class="link-item" style="color:#8c8072">本句没有明显的连读点（多为独立音节）。</div>';
+  if(r.weak.length) html += '<div class="link-item"><span class="tag t5">弱读</span>'+r.weak.map(esc).join('、')+' — 非重读虚词元音弱化为 /ə/（如 to /tə/、and /ənd/、your /jər/）</div>';
+  html += '<div style="margin-top:8px;font-size:12px;color:#8c8072">⚠️ 连读为自动识别<b>参考</b>；规则详解见 <a href="./连读.html">连读</a> · <a href="./失去爆破.html">失去爆破</a> · <a href="./叠音.html">叠音</a> · <a href="./同化.html">同化</a> · <a href="./弱读.html">弱读</a>。</div>';
+  document.getElementById('linkingBody').innerHTML=html;
+}
+
+// ===== 提示音 + 预备停顿（真实考场：读完 → 哔 → 停 2 秒 → 答题）=====
+async function beep(){
+  try{
+    const AC = window.AudioContext || window.webkitAudioContext; if(!AC) return;
+    const ctx = new AC(); const o=ctx.createOscillator(), g=ctx.createGain();
+    o.type='sine'; o.frequency.value=880; o.connect(g); g.connect(ctx.destination);
+    g.gain.setValueAtTime(0.0001, ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.25, ctx.currentTime+0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime+0.34);
+    o.start(); o.stop(ctx.currentTime+0.35);
+    await new Promise(r=>setTimeout(r,360)); if(ctx.close) ctx.close();
+  }catch(_){}
+}
+async function prepPause(sec){
+  const live=document.getElementById('live');
+  for(let s=sec;s>0;s--){ live.innerHTML='🔔 <b>哔——</b> 准备答题…<b>'+s+'</b>s'; await new Promise(r=>setTimeout(r,1000)); }
+}
+
 async function toggleRec(){
   if(examing){ finishExam(false); return; }   // 限时答题进行中，手动停＝提前交卷
   if(recording){ // 停止 → 转写（练习，无限时）
@@ -618,7 +705,7 @@ function renderResult(){
   const sc = r.score, band = BANDS[sc];
 
   // 记入本场景汇总（重测覆盖）
-  sceneScores[idx] = sc;
+  workScores[idx] = sc;
 
   // 0–5 主分 + 档位
   document.getElementById('score05').textContent = sc + ' / 5';
@@ -648,20 +735,20 @@ function renderResult(){
     d.mB[i] ? '<span class="w-ok">'+esc(w)+'</span> ' : '<span class="w-extra">'+esc(w)+'</span> ').join('');
 
   // 报告
-  const answered = sceneScores.filter(v=>v!==null);
+  const answered = workScores.filter(v=>v!==null);
   const raw = answered.reduce((a,b)=>a+b,0);
   const avg = (raw/answered.length).toFixed(1);
-  const rep = '【听力复述 · '+curScene().name+' · 第 '+(idx+1)+'/'+curScene().items.length+' 句（'+q.lv+' · 限时'+limitFor(q)+'s）】\n'+
+  const rep = '【听力复述 · '+curScene().name+' · '+LM_ZH[listMode]+' · 第 '+(idx+1)+'/'+work.length+' 句（'+q.lv+' · 限时'+limitFor(q)+'s）】\n'+
     '原文：'+ref+'\n'+
     '我的复述：'+(hyp||'(空/未识别)')+'\n'+
     '—— 命中：实词 '+r.cHit+'/'+r.cTotal+' · 漏实词 '+r.cMiss+' · 漏虚词 '+r.fMiss+' · 多词 '+r.extra+' · 逐字匹配 '+acc+'%\n'+
     '本句得分：'+sc+'/5（'+band.label+'）'+(result.cutoff?' ⏱到点截断':'')+'\n'+
     '用时：'+result.duration.toFixed(1)+'s'+(limit?('/限时'+limit+'s'):'')+' · 语速：'+wpm+' wpm · 引擎：'+(result.engine==='whisper'?'本地 whisper':'浏览器降级')+'\n'+
-    '本场景累计：已评 '+answered.length+'/'+curScene().items.length+' 句 · 均分 '+avg+'/5'+
-      (answered.length===curScene().items.length ? ('（原始分 '+raw+'/35 → 最终 '+rawToSection(raw).toFixed(1)+'/6）')
-        : ('（推算 ≈ '+Math.round((raw/answered.length)*curScene().items.length)+'/35 → '+rawToSection(Math.round((raw/answered.length)*curScene().items.length)).toFixed(1)+'/6）'))+'\n'+
+    '本套累计：已评 '+answered.length+'/'+work.length+' 句 · 均分 '+avg+'/5'+
+      (answered.length===work.length ? ('（原始分 '+raw+'/'+(work.length*5)+' → 最终 '+rawToSection(Math.round((raw/answered.length)*7)).toFixed(1)+'/6，7句制换算）')
+        : ('（推算 → '+rawToSection(Math.round((raw/answered.length)*7)).toFixed(1)+'/6）'))+'\n'+
     '—— 评分口径：5完全一致/4漏≤2虚词或≤1实词/3主谓宾完整/2零星几词/1个别词/0无效；7句/35→官方换算6分制（≥33→6.0/31→5.5/29→5.0/26→4.5/24→4.0）——\n'+
-    '请 cc 核对上面的自动估分（一致性），结合我的发音清晰度给最终 0–5，并累计到本场景 /35 与折算 /6。';
+    '请 cc 核对上面的自动估分（一致性），结合我的发音清晰度给最终 0–5，并累计到本套 与折算 /6。';
   document.getElementById('reportText').value = rep;
   document.getElementById('result').style.display='block';
 }
@@ -689,14 +776,15 @@ function copyReport(){
   alert('已复制答题报告，回到对话粘贴给 cc 即可打分');
 }
 
-// 下一句：本场景内推进；到末句则跳到下一场景第 1 句
+// 下一句：本套内推进；到末句：模拟套题→自动换一套；其它题组→跳下一场景
 function next(){
-  if(idx+1 < curScene().items.length){
+  if(idx+1 < work.length){
     idx++;
+  } else if(listMode==='mock'){
+    buildWork();     // 换新一套，留在本场景
   } else {
     sceneIdx = (sceneIdx+1) % SCENES.length;
-    idx = 0;
-    resetTally();
+    buildWork();
     renderScenePicker();
   }
   renderQuestion();
@@ -708,20 +796,23 @@ function renderScenePicker(){
     '<span class="scene-chip'+(i===sceneIdx?' on':'')+'" onclick="selectScene('+i+')">'+esc(s.name)+'</span>').join('');
 }
 function selectScene(i){
-  sceneIdx = i; idx = 0;
-  resetTally();
+  sceneIdx = i;
+  clearExamTimer();
+  buildWork();
   renderScenePicker();
   renderQuestion();
 }
 
 function renderQuestion(){
   const sc = curScene(), q = curItem();
+  if(!q){ document.getElementById('sentence').textContent='⚠️ 本组暂无题目'; return; }
   document.getElementById('sceneName').textContent = sc.name + '  ·  ' + sc.en;
   document.getElementById('sceneDesc').textContent = sc.desc;
   document.getElementById('sceneTally').innerHTML = tallyText();
-  document.getElementById('qNo').textContent = '第 '+(idx+1)+' / '+sc.items.length+' 句';
+  document.getElementById('qNo').textContent = '第 '+(idx+1)+' / '+work.length+' 句';
   document.getElementById('qLv').textContent = q.lv;
   document.getElementById('qLim').textContent = '⏱ 限时 '+limitFor(q)+'s';
+  document.getElementById('setInfo').textContent = LM_ZH[listMode] + ' · ' + TIER_ZH[q.tier];
   document.getElementById('sentence').innerHTML = '<span style="color:#c1662f">🔊</span> 练这一句：播放/慢速/分块/骨架都随时可用；准备好点「⏱ 限时答题」按考场计时';
   document.getElementById('zh').textContent='';
   document.getElementById('live').innerHTML = '「🔊 播放原句」听（可反复/慢速/分块/骨架），「🎙 开始录音」自由复述；要考场感点「⏱ 限时答题」。';
@@ -731,6 +822,8 @@ function renderQuestion(){
   document.getElementById('chunkWords').innerHTML = q.chunks.map((c,i)=>'<span class="chunk" onclick="sayChunk('+i+')">'+esc(c)+'</span>').join('');
   document.getElementById('skeleton').style.display='none';
   document.getElementById('chunks').style.display='none';
+  document.getElementById('vocab').style.display='none';
+  document.getElementById('linking').style.display='none';
   document.getElementById('playBtn').disabled=false;
   document.getElementById('examBtn').disabled=false;
   setRecUI(false);
@@ -750,9 +843,14 @@ if(!VocaSpeech.supported){
     }
   });
 }
-resetTally();
-renderScenePicker();
-renderQuestion();
+renderBank();
+if(!SCENES.length){
+  document.getElementById('sentence').innerHTML='<b style="color:#c04a3a">⚠️ 题库未加载：请确认 data/listen-repeat.js 存在（跑 python3 data/_build_lr.py 生成）。</b>';
+} else {
+  buildWork();
+  renderScenePicker();
+  renderQuestion();
+}
 </script>
 </body>
 </html>
