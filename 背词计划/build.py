@@ -12,14 +12,29 @@ import json, os
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
 
+# voca 标准富化叠加层：data/enrich.json = { "<word-id>": {ety,ph,tip,xex,syn,ant,nu,...} }
+ENRICH = {}
+_ep = os.path.join(DATA, "enrich.json")
+if os.path.exists(_ep):
+    with open(_ep, encoding="utf-8") as fp:
+        ENRICH = json.load(fp)
+
+def _merge(base):
+    e = ENRICH.get(base["id"])
+    if e:
+        for k, v in e.items():
+            if v not in (None, "", [], {}):
+                base[k] = v
+    return base
+
 def trim_green(w):
-    return {"id": w["id"], "l": w["wl"], "w": w["word"], "p": w.get("pronunciation", ""),
+    return _merge({"id": w["id"], "l": w["wl"], "w": w["word"], "p": w.get("pronunciation", ""),
             "d": w["definition"], "m": w.get("memory", ""),
-            "c": w.get("collocations", []), "e": w.get("examples", [])}
+            "c": w.get("collocations", []), "e": w.get("examples", [])})
 
 def trim_beat(w):
-    return {"id": w["id"], "l": w["list"], "w": w["word"], "p": w.get("pronunciation", ""),
-            "d": w["definition"], "m": w.get("memory", ""), "c": [], "e": []}
+    return _merge({"id": w["id"], "l": w["list"], "w": w["word"], "p": w.get("pronunciation", ""),
+            "d": w["definition"], "m": w.get("memory", ""), "c": [], "e": []})
 
 def load_source(fname, trim, kw):
     with open(os.path.join(DATA, fname), encoding="utf-8") as fp:
@@ -109,8 +124,21 @@ PAGE = r"""<!DOCTYPE html>
   .sec-h{font-size:12.5px;font-weight:700;margin-bottom:4px}
   .sec-h.mem{color:var(--gold)}.sec-h.col{color:var(--core)}.sec-h.ex{color:var(--accent)}
   .sec-b{font-size:14px;color:#4d463c;line-height:1.65}
-  .sec-b div{margin:3px 0}
+  .sec-b>div{margin:3px 0}
+  .sec-h.ph{color:#2565c0}.sec-h.syn{color:var(--core)}.sec-h.tip{color:var(--gold)}
   .wc-mem-box{background:#faf5ea;border-radius:8px;padding:8px 11px}
+  .chips-line{margin-bottom:9px;display:flex;gap:6px}
+  .lvl-chip{font-size:11px;background:#efe9fb;color:#6b5bb5;border-radius:20px;padding:2px 10px}
+  .ex-item{margin:7px 0}
+  .ex-item.colloc{background:#faf5ea;border-radius:8px;padding:8px 11px}
+  .ex-zh{color:#6f6656;font-size:13px}
+  .ex-src{color:#c3b79c;font-size:12px;margin-top:1px}
+  .syn-row{margin:6px 0;font-size:14px;line-height:1.6}
+  .syn-chip{font-size:11px;background:#e7f1ee;color:#2f7d72;border-radius:6px;padding:1px 8px;margin-right:6px}
+  .syn-chip.ant{background:#fbe6df;color:#b3543f}
+  .syn-w{font-weight:700;cursor:pointer}.syn-w:hover{color:var(--accent)}
+  .syn-ipa{color:var(--core);font-size:13px;margin:0 3px}
+  .nuance{background:#eef6f0;border-left:3px solid var(--core);border-radius:8px;padding:10px 13px;font-size:13.5px;color:#4d463c;margin-top:10px;line-height:1.65}
   .empty{color:var(--muted);text-align:center;padding:40px}
   footer{margin-top:24px;color:#a89a86;font-size:12px}
   @media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}}
@@ -249,17 +277,41 @@ function renderStudy(no){
 
 const POS_MAP={n:'名词',v:'动词',vt:'动词',vi:'动词',adj:'形容词',a:'形容词',adv:'副词',ad:'副词',prep:'介词',pron:'代词',conj:'连词',art:'冠词',num:'数词',int:'感叹词'};
 function posChip(def){ const m=(def||'').match(/^\s*([a-z]+)\s*\./i); return m? (POS_MAP[m[1].toLowerCase()]||'') : ''; }
+function sec(icon,cls,title,inner){ return `<div class="sec"><div class="sec-h ${cls}">${icon} ${title}</div><div class="sec-b">${inner}</div></div>`; }
+function exHtml(list){ return list.map(x=>{
+    if(typeof x==='string') return `<div class="ex-item">${esc(x)}</div>`;
+    const src=x.src||x.source||''; const cc=(src==='高频搭配'||src==='搭配')?' colloc':'';
+    return `<div class="ex-item${cc}"><div>${esc(x.en||'')}</div>${x.zh?`<div class="ex-zh">${esc(x.zh)}</div>`:''}${src?`<div class="ex-src">— ${esc(src)}</div>`:''}</div>`;
+  }).join(''); }
 
-// 默认收起，只显示单词行；点击展开详细信息（词根记忆/搭配/例句）
+// 默认收起，只显示单词行；点击展开 voca 标准的丰富信息（词源/发音规律/例句/近义辨析/辨析总结）
 function cardHtml(w){
   const st=state[w.id]||''; const cls=(st==='ok'?' ok':st==='no'?' no':'');
   const pos=posChip(w.d);
-  const mem = w.m? `<div class="sec"><div class="sec-h mem">🏛 词根 · 联想记忆</div><div class="sec-b wc-mem-box">${esc(w.m)}</div></div>`:'';
-  const col = (w.c&&w.c.length)? `<div class="sec"><div class="sec-h col">🔗 高频搭配</div><div class="sec-b">${w.c.map(x=>'<div>'+esc(x)+'</div>').join('')}</div></div>`:'';
-  const ex  = (w.e&&w.e.length)? `<div class="sec"><div class="sec-h ex">✍️ 例句</div><div class="sec-b">${w.e.map(x=>'<div>'+esc(x)+'</div>').join('')}</div></div>`:'';
-  const recDef = recite? `<div class="sec"><div class="sec-h" style="color:var(--ink)">📖 释义</div><div class="sec-b" style="font-size:16px;font-weight:600">${esc(w.d)}</div></div>`:'';
-  const detail = recDef + mem + col + ex;
-  const expandable = detail.trim()? ' expandable':'';
+  let d='';
+  if(recite) d += sec('📖','','释义',`<div style="font-size:16px;font-weight:600">${esc(w.d)}</div>`);
+  d += '<div class="chips-line"><span class="lvl-chip">托福</span></div>';
+  // 词源
+  if(w.ety) d += sec('🏛','mem','造词来源 · 词源故事', esc(w.ety));
+  else if(w.m) d += sec('🏛','mem','词根 · 联想记忆', `<div class="wc-mem-box">${esc(w.m)}</div>`);
+  // 发音规律
+  if(w.ph) d += sec('🗣','ph','发音规律', esc(w.ph));
+  // 记忆钩子
+  if(w.tip) d += sec('💡','tip','记忆钩子', esc(w.tip));
+  // 例句（富化用结构化 xex；否则退回基础 e + 搭配 c）
+  let exList;
+  if(w.xex&&w.xex.length) exList=w.xex;
+  else { exList=[]; (w.e||[]).forEach(s=>exList.push(s)); (w.c||[]).forEach(s=>exList.push({en:s,src:'高频搭配'})); }
+  if(exList.length) d += sec('✍️','ex','造句 · 名著/影视例句', exHtml(exList));
+  // 近义辨析 · 反义词
+  if((w.syn&&w.syn.length)||(w.ant&&w.ant.length)){
+    let inner='';
+    (w.syn||[]).forEach(s=> inner+=`<div class="syn-row"><span class="syn-chip">近义</span><span class="syn-w" data-say="${esc(s.w)}">${esc(s.w)}</span>${s.ipa?`<span class="syn-ipa">${esc(s.ipa)}</span>`:''}— ${esc(s.note||s.gloss||'')}</div>`);
+    (w.ant||[]).forEach(s=> inner+=`<div class="syn-row"><span class="syn-chip ant">反义</span><span class="syn-w" data-say="${esc(s.w)}">${esc(s.w)}</span> — ${esc(s.note||s.gloss||'')}</div>`);
+    d += sec('🔗','syn','近义词辨析 · 反义词', inner);
+  }
+  if(w.nu) d += `<div class="nuance">🎯 ${esc(w.nu)}</div>`;
+  const expandable = ' expandable';
   return `<div class="wcard${cls}${expandable}" data-id="${esc(w.id)}">
     <div class="wc-head">
       <span class="wc-word" data-say="${esc(w.w)}">${esc(w.w)}</span>
@@ -269,10 +321,10 @@ function cardHtml(w){
         <button class="wc-mark ok${st==='ok'?' on':''}">✓ 掌握</button>
         <button class="wc-mark no${st==='no'?' on':''}">✕ 未掌握</button>
       </span>
-      ${expandable?'<span class="wc-chev">▸</span>':''}
+      <span class="wc-chev">▸</span>
     </div>
     ${recite?'':`<div class="wc-def">${esc(w.d)}</div>`}
-    <div class="wc-detail">${detail}</div>
+    <div class="wc-detail">${d}</div>
   </div>`;
 }
 
@@ -280,6 +332,7 @@ function wireCards(box){
   box.querySelectorAll('.wcard').forEach(card=>{
     const id=card.dataset.id;
     card.querySelector('.wc-word').onclick=e=>{ e.stopPropagation(); say(e.target.dataset.say); };
+    card.querySelectorAll('.syn-w').forEach(sw=> sw.onclick=e=>{ e.stopPropagation(); say(sw.dataset.say); });
     function setState(ns){
       state[id] = (state[id]===ns) ? undefined : ns;   // 再点一次取消
       if(state[id]===undefined) delete state[id];
@@ -317,7 +370,8 @@ def build():
         fp.write(html)
     gl = len({w["l"] for w in green["words"]}); bl = len({w["l"] for w in beat["words"]})
     print(f"完成：绿皮书 {len(green['words'])}词/{gl}组 + BEAT {len(beat['words'])}词/{bl}组 → index.html "
-          f"({os.path.getsize(os.path.join(ROOT,'index.html'))/1024/1024:.2f} MB)")
+          f"({os.path.getsize(os.path.join(ROOT,'index.html'))/1024/1024:.2f} MB)"
+          f"；voca富化 {len(ENRICH)} 词")
 
 if __name__ == "__main__":
     build()
