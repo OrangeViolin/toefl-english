@@ -1,0 +1,955 @@
+{
+  "enrich": {
+    "community": {
+      "core": "一群人共同分担、共享的圈子。",
+      "roots": [
+        {"part": "commun", "meaning": "共同、共有（拉丁 communis）"},
+        {"part": "-ity", "meaning": "名词后缀，表状态／集合"}
+      ]
+    },
+    "membership": {
+      "core": "作为整体一部分的「身份」。",
+      "roots": [
+        {"part": "member", "meaning": "成员（拉丁 membrum 肢体）"},
+        {"part": "-ship", "meaning": "表身份／状态（如 friendship）"}
+      ]
+    },
+    "class": {
+      "core": "按等级／群体划分的一群人。",
+      "senses": [
+        {"gloss": "课程／一节课", "logic": "一群人一起学习的一节", "en": "The pottery class meets on Tuesdays.", "zh": "陶艺课周二上。"},
+        {"gloss": "班级", "logic": "同期一起学的一批人", "en": "The beginner class is almost full.", "zh": "初级班快满了。"},
+        {"gloss": "等级／阶层", "logic": "罗马按财产划分的 class", "en": "a first-class facility", "zh": "一流的设施。"}
+      ],
+      "roots": [
+        {"part": "class", "meaning": "等级、群体（拉丁 classis 按财产划分的等级）"}
+      ]
+    },
+    "session": {
+      "core": "大家坐下来进行的一段活动时间。",
+      "roots": [
+        {"part": "sess", "meaning": "坐（拉丁 sedere，同 sit）"},
+        {"part": "-ion", "meaning": "名词后缀，表动作／过程"}
+      ]
+    },
+    "deposit": {
+      "core": "先把钱／东西「放在」对方处。"
+    },
+    "facility": {
+      "core": "让事情变容易的功能性场所或设备。",
+      "roots": [
+        {"part": "facil", "meaning": "容易的（拉丁 facilis，源自 facere 做）"},
+        {"part": "-ity", "meaning": "名词后缀，表性质／集合"}
+      ]
+    },
+    "register": {
+      "core": "把名字记进册子。",
+      "senses": [
+        {"gloss": "报名／注册", "logic": "登记名字进课程名单", "en": "You can register for the class online.", "zh": "可以在线报名这门课。"},
+        {"gloss": "到场登记／签到", "logic": "首次到场把信息记进系统", "en": "New members register at the front desk.", "zh": "新会员在前台登记。"},
+        {"gloss": "登记簿（名词）", "logic": "记录名字的那本册子", "en": "Sign your name in the register.", "zh": "在登记簿上签名。"}
+      ],
+      "roots": [
+        {"part": "re-", "meaning": "再、回"},
+        {"part": "gis(t)", "meaning": "携带、记录（拉丁 gerere）"},
+        {"part": "-er", "meaning": "表反复动作／名词"}
+      ]
+    },
+    "reserve": {
+      "core": "把名额／权利「留住」不放。",
+      "senses": [
+        {"gloss": "预订、预留", "logic": "把座位／场地留给你", "en": "I'd like to reserve a lane.", "zh": "我想预留一条泳道。"},
+        {"gloss": "保留（意见／权利）", "logic": "留着不表态、不放弃", "en": "They reserve the right to cancel.", "zh": "他们保留取消的权利。"}
+      ],
+      "roots": [
+        {"part": "re-", "meaning": "回、留"},
+        {"part": "serv(e)", "meaning": "保存、守住（拉丁 servare）"}
+      ]
+    },
+    "reservation": {
+      "core": "把名额「留住」这件事。",
+      "roots": [
+        {"part": "re-", "meaning": "回、留"},
+        {"part": "serv", "meaning": "保存（拉丁 servare）"},
+        {"part": "-ation", "meaning": "名词后缀，表动作／结果"}
+      ]
+    },
+    "registration": {
+      "core": "把名字记进册子的这个动作／流程。",
+      "roots": [
+        {"part": "re-", "meaning": "再、回"},
+        {"part": "gistr", "meaning": "携带、记录（拉丁 gerere → registrum 记录册）"},
+        {"part": "-ation", "meaning": "名词后缀，表动作"}
+      ]
+    },
+    "instructor": {
+      "core": "把知识一层层「搭建」给你的人。",
+      "roots": [
+        {"part": "in-", "meaning": "进入、向上"},
+        {"part": "struct", "meaning": "堆建、搭建（拉丁 struere）"},
+        {"part": "-or", "meaning": "表人，做…的人"}
+      ]
+    },
+    "refund": {
+      "core": "把钱「倒回」给你。",
+      "roots": [
+        {"part": "re-", "meaning": "回"},
+        {"part": "fund", "meaning": "倾倒、注入（拉丁 fundere）"}
+      ]
+    },
+    "capacity": {
+      "core": "能容纳多少的上限。",
+      "roots": [
+        {"part": "cap", "meaning": "容纳、抓取（拉丁 capere）"},
+        {"part": "-acity", "meaning": "名词后缀，表性质／量"}
+      ]
+    },
+    "volunteer": {
+      "core": "凭自己意愿去做（事）的人。",
+      "roots": [
+        {"part": "volunt", "meaning": "意愿（拉丁 voluntas，源自 velle 愿意）"},
+        {"part": "-eer", "meaning": "表人，从事…的人"}
+      ]
+    },
+    "hall": {
+      "core": "有顶的大空间，社区里指可租的多功能厅。"
+    },
+    "reception": {
+      "core": "把来客「接收」下来的接待处。",
+      "roots": [
+        {"part": "re-", "meaning": "回、向"},
+        {"part": "cept", "meaning": "拿、取（拉丁 capere → capt）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ]
+    },
+    "resident": {
+      "core": "常驻、定居此地的人。",
+      "roots": [
+        {"part": "re-", "meaning": "回、稳"},
+        {"part": "sid", "meaning": "坐、定居（拉丁 sidere，同 sit）"},
+        {"part": "-ent", "meaning": "表人／状态"}
+      ]
+    },
+    "enrollment": {
+      "core": "把名字写进名册＝入册人数。",
+      "roots": [
+        {"part": "en-", "meaning": "使…进入"},
+        {"part": "roll", "meaning": "名册（拉丁 rotulus 卷轴）"},
+        {"part": "-ment", "meaning": "名词后缀，表动作／结果"}
+      ]
+    },
+    "charge": {
+      "core": "把费用／负担「加到」你账上。",
+      "senses": [
+        {"gloss": "收费、索价", "logic": "把费用加到你身上", "en": "They don't charge extra for the sauna.", "zh": "用桑拿房不额外收费。"},
+        {"gloss": "费用（名词）", "logic": "被加上的那笔钱", "en": "There's a small charge for towels.", "zh": "毛巾收一点小费用。"},
+        {"gloss": "充电", "logic": "把电「装载」进设备", "en": "You can charge your phone at the desk.", "zh": "可以在前台给手机充电。"}
+      ]
+    },
+    "notice": {
+      "core": "让你「知晓」的告示，或提前告知的时间。",
+      "senses": [
+        {"gloss": "通知、告示", "logic": "贴出来让人知晓的书面告示", "en": "There's a notice about the closure.", "zh": "有一则关于关闭的通知。"},
+        {"gloss": "提前告知（期）", "logic": "给对方留出的知晓时间", "en": "Please give a week's notice to cancel.", "zh": "取消请提前一周告知。"},
+        {"gloss": "注意到（动词）", "logic": "让它进入你的觉察", "en": "I didn't notice the sign.", "zh": "我没注意到那个牌子。"}
+      ]
+    },
+    "term": {
+      "core": "有起止边界的一段（时间／条件）。",
+      "senses": [
+        {"gloss": "学期／一段时期", "logic": "有起止的一段时间", "en": "The course runs for one term.", "zh": "课程持续一个学期。"},
+        {"gloss": "条款、条件", "logic": "界定权责的边界（常复数 terms）", "en": "Read the terms before you sign.", "zh": "签字前先读条款。"}
+      ],
+      "roots": [
+        {"part": "term", "meaning": "边界、终点（拉丁 terminus）"}
+      ]
+    },
+    "collect": {
+      "core": "把东西拾到一起／领到手。",
+      "roots": [
+        {"part": "col-", "meaning": "一起（com- 的变体）"},
+        {"part": "lect", "meaning": "拾取、挑选（拉丁 legere）"}
+      ]
+    },
+    "appointment": {
+      "core": "约定好的一个见面时间「点」。",
+      "roots": [
+        {"part": "ap-", "meaning": "向（ad- 变体）"},
+        {"part": "point", "meaning": "点（拉丁 punctum）"},
+        {"part": "-ment", "meaning": "名词后缀"}
+      ]
+    },
+    "coordinator": {
+      "core": "把各方安排、排序、统筹到一起的人。",
+      "roots": [
+        {"part": "co-", "meaning": "共同"},
+        {"part": "ordin", "meaning": "安排、排序（拉丁 ordinare）"},
+        {"part": "-ator", "meaning": "表人，做…的人"}
+      ]
+    },
+    "certificate": {
+      "core": "证明你确实做到的文件。",
+      "roots": [
+        {"part": "cert", "meaning": "确定的（拉丁 certus）"},
+        {"part": "-fic", "meaning": "做（拉丁 facere）"},
+        {"part": "-ate", "meaning": "名词／动词后缀"}
+      ]
+    },
+    "confirm": {
+      "core": "让事情「变牢靠」、敲定。",
+      "roots": [
+        {"part": "con-", "meaning": "加强"},
+        {"part": "firm", "meaning": "坚固（拉丁 firmus）"}
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "participant",
+      "levels": ["托福", "场景"],
+      "ipa": "/pɑːrˈtɪsɪpənt/",
+      "subgroup": "noun",
+      "meaning": "n. 参与者，参加者",
+      "core": "分得一份、参与其中的人。",
+      "etymology": "拉丁 pars「部分」+ capere「拿、取」→ participare「分享一份」。同根 part、partake、participate。领了一份参与进来的人，就是 participant。",
+      "roots": [
+        {"part": "part(i)", "meaning": "部分（拉丁 pars）"},
+        {"part": "cip", "meaning": "拿、取（拉丁 capere）"},
+        {"part": "-ant", "meaning": "表人，做…的人"}
+      ],
+      "phonetics": "重音在第二音节 /ˈtɪs/。四音节 par-ti-ci-pant，末尾 -pant 弱读 /pənt/。",
+      "examples": [
+        {"en": "Each participant gets a name tag at the door.", "zh": "每位参与者进门领一个名牌。", "source": "造句"},
+        {"en": "the number of participants", "zh": "参与人数（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "attendee", "ipa": "/əˌtenˈdiː/", "gloss": "出席者", "note": "attendee 只强调「到场的人」；participant 强调「实际参与进来的人」"}
+      ],
+      "nuance": "participant 强调「亲身参与其中」；attendee／member 分别侧重「到场」和「长期归属」。"
+    },
+    {
+      "word": "registration fee",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌredʒɪˈstreɪʃn fiː/",
+      "subgroup": "noun",
+      "meaning": "n. 报名费，注册费",
+      "core": "登记报名时要交的那笔费用。",
+      "etymology": "registration（登记报名）+ fee（费用）。报名一门课／一个项目时缴的费用。",
+      "phonetics": "registration 重音在第三音节 /ˈstreɪ/，fee 长元音 /iː/ 独立重读。",
+      "examples": [
+        {"en": "Is there a registration fee on top of the class fee?", "zh": "除了课时费还有报名费吗？", "source": "造句"},
+        {"en": "waive the registration fee", "zh": "免收报名费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sign-up fee", "ipa": "/ˈsaɪnʌp fiː/", "gloss": "报名费（口语）", "note": "sign-up fee 更口语；registration fee 更正式，二者同义"}
+      ],
+      "nuance": "registration fee 是「报名当下交的一次性费用」，区别于持续缴的 membership fee（会费）。"
+    },
+    {
+      "word": "membership card",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈmembərʃɪp kɑːrd/",
+      "subgroup": "noun",
+      "meaning": "n. 会员卡",
+      "core": "证明你是会员、可刷卡进场的那张卡。",
+      "etymology": "membership（会员资格）+ card（卡片）。会员用来签到／享折扣的卡。",
+      "phonetics": "membership 重音在首 /ˈmem/，card 独立重读 /kɑːrd/。",
+      "examples": [
+        {"en": "Swipe your membership card at the gate.", "zh": "在门口刷你的会员卡。", "source": "造句"},
+        {"en": "collect / renew your membership card", "zh": "领取／更新会员卡（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "member card", "ipa": "/ˈmembər kɑːrd/", "gloss": "会员卡", "note": "member card 也常见，与 membership card 同义，后者更标准"}
+      ],
+      "nuance": "办卡（sign up）→ 领卡（collect the card）→ 刷卡进场（swipe）是社区中心的高频流程链。"
+    },
+    {
+      "word": "treadmill",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈtredmɪl/",
+      "subgroup": "noun",
+      "meaning": "n. 跑步机；单调的苦差",
+      "core": "原地踩踏不停的机器，也喻单调重复的苦役。",
+      "etymology": "tread「踩踏」（古英语 tredan）+ mill「磨、机器」。原指旧时犯人踩踏驱动的踏车，现指健身跑步机；引申「机械重复的苦差」。",
+      "roots": [
+        {"part": "tread", "meaning": "踩踏（古英语 tredan）"},
+        {"part": "mill", "meaning": "磨坊、机器（拉丁 mola）"}
+      ],
+      "phonetics": "重音在首 /ˈtred/，元音 /e/。-mill 弱读 /mɪl/。别把 tread 读成 /triːd/。",
+      "examples": [
+        {"en": "All the treadmills are taken at this hour.", "zh": "这个点跑步机都被占了。", "source": "造句"},
+        {"en": "run on the treadmill", "zh": "在跑步机上跑（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "running machine", "ipa": "/ˈrʌnɪŋ məˌʃiːn/", "gloss": "跑步机（通俗）", "note": "running machine 是口语通俗说法；treadmill 更标准"}
+      ],
+      "nuance": "treadmill 在健身房设施介绍里高频；比喻义 on a treadmill 指「陷在单调重复中」。"
+    },
+    {
+      "word": "gymnasium",
+      "levels": ["托福", "场景"],
+      "ipa": "/dʒɪmˈneɪziəm/",
+      "subgroup": "noun",
+      "meaning": "n. 体育馆，健身房（gym 的全称）",
+      "core": "锻炼身体的场所（gym 的正式全称）。",
+      "etymology": "希腊 gymnasion「锻炼场所」（源自 gymnos「裸体」，古希腊人裸身运动）→ 拉丁 gymnasium。口语简称 gym。",
+      "roots": [
+        {"part": "gymn", "meaning": "裸体、锻炼（希腊 gymnos）"},
+        {"part": "-asium", "meaning": "表场所"}
+      ],
+      "phonetics": "重音在第二音节 /ˈneɪ/，开头 gym- 读 /dʒɪm/（软 g）。四音节 gym-na-si-um。",
+      "examples": [
+        {"en": "The main gymnasium is used for basketball on weekends.", "zh": "主体育馆周末用来打篮球。", "source": "造句"},
+        {"en": "the school gymnasium", "zh": "学校体育馆（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sports hall", "ipa": "/ˈspɔːrts hɔːl/", "gloss": "运动馆（英式）", "note": "sports hall 英式常用，指室内综合运动馆；gymnasium 更正式，也指健身房"}
+      ],
+      "nuance": "gymnasium 是 gym 的正式全称；口语几乎都用 gym，正式告示或书面才见全称。"
+    },
+    {
+      "word": "maintenance",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈmeɪntənəns/",
+      "subgroup": "noun",
+      "meaning": "n. 维护，保养；维持",
+      "core": "用手托着、让它一直保持能用。",
+      "etymology": "拉丁 manu「用手」+ tenere「握住、保持」→ maintenir「保持」。同根 maintain、tenant、contain。用手托住让设施「保持运转」，就是 maintenance。",
+      "roots": [
+        {"part": "main", "meaning": "手（拉丁 manu）"},
+        {"part": "ten", "meaning": "握住、保持（拉丁 tenere）"},
+        {"part": "-ance", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在首 /ˈmeɪn/，后面 -tenance 弱读成 /tənəns/，别读成 main-TAIN-ance。",
+      "examples": [
+        {"en": "The pool is closed for maintenance until Thursday.", "zh": "泳池维护关闭到周四。", "source": "造句"},
+        {"en": "closed for maintenance", "zh": "因维护关闭（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "upkeep", "ipa": "/ˈʌpkiːp/", "gloss": "保养，维持", "note": "upkeep 侧重「持续照料的花费／功夫」；maintenance 更通用，也指具体维修工作"}
+      ],
+      "nuance": "closed for maintenance 是设施临时关闭的高频告示，听力里常给出重开时间。"
+    },
+    {
+      "word": "vacancy",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈveɪkənsi/",
+      "subgroup": "noun",
+      "meaning": "n. 空缺，空位；空房",
+      "core": "空着、还没被占的位置。",
+      "etymology": "拉丁 vacare「空、闲」→ vacantia。同根 vacant、vacation、evacuate。空出来的位置，就是 vacancy。",
+      "roots": [
+        {"part": "vac", "meaning": "空（拉丁 vacare）"},
+        {"part": "-ancy", "meaning": "名词后缀，表状态"}
+      ],
+      "phonetics": "重音在首 /ˈveɪ/，双元音 /eɪ/。-cancy 弱读 /kənsi/。",
+      "examples": [
+        {"en": "There's a vacancy for a part-time swimming instructor.", "zh": "有一个兼职游泳教练的空缺。", "source": "造句"},
+        {"en": "a vacancy in the class", "zh": "班里的一个空位（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "opening", "ipa": "/ˈoʊpənɪŋ/", "gloss": "空缺，职位空档", "note": "opening 口语常用，指职位或名额的空档；vacancy 更正式，也指空房"}
+      ],
+      "nuance": "vacancy 既指「岗位空缺」也指「课程空位／空房」；口语说 an opening／a spot。"
+    },
+    {
+      "word": "orientation",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌɔːriənˈteɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 入门介绍，迎新引导；方向定位",
+      "core": "帮你「找准朝向」、熟悉环境的引导。",
+      "etymology": "orient「使朝向东方／定位」（拉丁 oriens「升起（的太阳）、东方」）+ -ation。原意「转向东方」，引申「帮新人找准方向、熟悉情况」。",
+      "roots": [
+        {"part": "orient", "meaning": "使朝向、定位（拉丁 oriens 东方）"},
+        {"part": "-ation", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第四音节 /ˈteɪ/，-tion 读 /ʃn/。五音节，别把重音放前。",
+      "examples": [
+        {"en": "New volunteers must attend a short orientation first.", "zh": "新志愿者要先参加一次简短的入门引导。", "source": "造句"},
+        {"en": "an orientation session", "zh": "入门介绍会（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "induction", "ipa": "/ɪnˈdʌkʃn/", "gloss": "岗前引导，入职培训（英式）", "note": "induction 英式常用，指正式的入职／入门引导；orientation 美式常用，二者同义"}
+      ],
+      "nuance": "orientation 是新人熟悉场地／规则的引导环节；社区中心带新志愿者、新会员常提。"
+    },
+    {
+      "word": "admission",
+      "levels": ["托福", "场景"],
+      "ipa": "/ədˈmɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 入场（费）；准入，录取；承认",
+      "core": "被「放进来」——准许入场／进入。",
+      "etymology": "拉丁 ad-「向」+ mittere「送、放」→ admittere「放进来」。同根 admit、mission、permit。被放进场的资格或费用，就是 admission。",
+      "roots": [
+        {"part": "ad-", "meaning": "向"},
+        {"part": "miss", "meaning": "送、放（拉丁 mittere）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈmɪʃ/，ad- 弱读 /əd/。-ssion 读 /ʃn/。",
+      "examples": [
+        {"en": "Admission to the exhibition is free for members.", "zh": "会员参观展览免入场费。", "source": "造句"},
+        {"en": "admission fee / free admission", "zh": "入场费／免费入场（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "entry", "ipa": "/ˈentri/", "gloss": "进入，入场", "note": "entry 泛指「进入」动作或入口；admission 侧重「被准许入场（及其费用）」"}
+      ],
+      "nuance": "admission 常指「入场费」或「准入资格」；活动告示里 free admission＝免费入场。"
+    },
+    {
+      "word": "concession",
+      "levels": ["托福", "场景"],
+      "ipa": "/kənˈseʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 优惠（价），减价票；让步",
+      "core": "对方「让出一步」给你的优惠。",
+      "etymology": "拉丁 con-「加强」+ cedere「让、退」→ concedere「让步」。同根 concede、cede、proceed。让出一部分（价格）给特定人群，就是 concession（优惠价）。",
+      "roots": [
+        {"part": "con-", "meaning": "加强"},
+        {"part": "cess", "meaning": "让、退（拉丁 cedere）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈse/，-ssion 读 /ʃn/。con- 弱读 /kən/。",
+      "examples": [
+        {"en": "Students and seniors can buy a concession ticket.", "zh": "学生和老年人可买优惠票。", "source": "造句"},
+        {"en": "a concession price / ticket", "zh": "优惠价／优惠票（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "discount", "ipa": "/ˈdɪskaʊnt/", "gloss": "折扣", "note": "discount 泛指任何减价；concession 特指给学生／老人／残障等特定群体的优惠价（英式常用）"}
+      ],
+      "nuance": "concession（英式）特指给特定人群（学生／老人）的优惠价；听力里常和 eligible for 一起出现。"
+    },
+    {
+      "word": "shuttle",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈʃʌtl/",
+      "subgroup": "noun",
+      "meaning": "n. 班车，接驳车；v. 往返接送",
+      "core": "在两点间来回穿梭的车（像织布梭子来回）。",
+      "etymology": "古英语 scytel「织布的梭子」（来回穿梭）→ 引申「在两地间往返的车／班机」。",
+      "roots": [
+        {"part": "shuttle", "meaning": "梭子、来回穿梭之物（古英语 scytel）"}
+      ],
+      "phonetics": "重音在首 /ˈʃʌ/，-ttle 读 /tl/（成音节 l）。sh- 读 /ʃ/。",
+      "examples": [
+        {"en": "A free shuttle runs from the station to the centre.", "zh": "有免费班车从车站开到中心。", "source": "造句"},
+        {"en": "a shuttle bus / service", "zh": "接驳巴士／班车服务（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "minibus", "ipa": "/ˈmɪnibʌs/", "gloss": "小巴", "note": "minibus 只指车型（小型巴士）；shuttle 强调「定线往返接送」的功能"}
+      ],
+      "nuance": "shuttle 强调「两点间定线往返」；免费接驳车常说 a free shuttle (bus)。"
+    },
+    {
+      "word": "vending machine",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈvendɪŋ məˌʃiːn/",
+      "subgroup": "noun",
+      "meaning": "n. 自动售货机",
+      "core": "投币／刷卡就自动卖东西的机器。",
+      "etymology": "vend「叫卖、售卖」（拉丁 vendere「卖」）+ -ing + machine（机器）。自动售卖的机器。",
+      "roots": [
+        {"part": "vend", "meaning": "卖（拉丁 vendere）"},
+        {"part": "-ing", "meaning": "现在分词，表功能"}
+      ],
+      "phonetics": "vending 重音在首 /ˈven/，machine 重音在第二音节 /ˈʃiːn/。",
+      "examples": [
+        {"en": "There's a vending machine by the changing room.", "zh": "更衣室旁有台自动售货机。", "source": "造句"},
+        {"en": "a drinks vending machine", "zh": "饮料自动售货机（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "vending", "ipa": "/ˈvendɪŋ/", "gloss": "自动售卖（的）", "note": "vending 单用作定语；完整设备说 vending machine"}
+      ],
+      "nuance": "设施介绍里的常见配套；饮水机是 water fountain／water cooler，别与之混。"
+    },
+    {
+      "word": "cafeteria",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌkæfəˈtɪriə/",
+      "subgroup": "noun",
+      "meaning": "n. 自助餐厅，食堂",
+      "core": "自己端盘取餐的餐厅。",
+      "etymology": "西班牙语 cafetería「咖啡店」（café「咖啡」+ -tería 表店铺）。引申为「自助取餐的餐厅」。",
+      "roots": [
+        {"part": "cafe", "meaning": "咖啡（法语 café）"},
+        {"part": "-teria", "meaning": "表店铺／场所"}
+      ],
+      "phonetics": "重音在第三音节 /ˈtɪr/，五音节 ca-fe-te-ri-a。别把重音放前。",
+      "examples": [
+        {"en": "The cafeteria upstairs serves hot lunches.", "zh": "楼上的自助餐厅供应热午餐。", "source": "造句"},
+        {"en": "a self-service cafeteria", "zh": "自助餐厅（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "canteen", "ipa": "/kænˈtiːn/", "gloss": "食堂（英式）", "note": "canteen 英式常用，指机构内部食堂；cafeteria 美式常用，强调自助取餐"}
+      ],
+      "nuance": "cafeteria（美式）／canteen（英式）都指机构食堂；小的饮品角落叫 café。"
+    },
+    {
+      "word": "noticeboard",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈnoʊtɪsbɔːrd/",
+      "subgroup": "noun",
+      "meaning": "n. 布告栏，公告板（合写）",
+      "core": "张贴通知的板子（notice board 的合写形式）。",
+      "etymology": "notice（告示）+ board（板）合写成一词，英式常见拼法。",
+      "phonetics": "重音在首 /ˈnoʊ/，board 次重读 /bɔːrd/。作一个复合词读。",
+      "examples": [
+        {"en": "The timetable is pinned to the noticeboard.", "zh": "时间表钉在布告栏上。", "source": "造句"},
+        {"en": "check the noticeboard", "zh": "看布告栏（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "bulletin board", "ipa": "/ˈbʊlətɪn bɔːrd/", "gloss": "公告板（美式）", "note": "bulletin board 美式说法；noticeboard／notice board 英式，三者同指"}
+      ],
+      "nuance": "英式常合写 noticeboard，也分写 notice board；美式说 bulletin board。"
+    },
+    {
+      "word": "wheelchair access",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈwiːltʃer ˌækses/",
+      "subgroup": "noun",
+      "meaning": "n. 轮椅通道，无障碍通行",
+      "core": "供轮椅进出的无障碍通道。",
+      "etymology": "wheelchair（轮椅：wheel 轮 + chair 椅）+ access（进入，拉丁 accedere「走近」）。方便轮椅进入的通道。",
+      "roots": [
+        {"part": "access", "meaning": "走近、进入（拉丁 ad-「向」+ cedere「走」）"}
+      ],
+      "phonetics": "wheelchair 重音在首 /ˈwiːl/，access 重音在首 /ˈæk/。wh- 读 /w/。",
+      "examples": [
+        {"en": "The new entrance has full wheelchair access.", "zh": "新入口完全无障碍，轮椅可通行。", "source": "造句"},
+        {"en": "wheelchair access / accessible", "zh": "轮椅通道／无障碍的（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "accessible", "ipa": "/əkˈsesəbl/", "gloss": "（残障）可通行的", "note": "accessible 是形容词，wheelchair-accessible 指「轮椅可进入的」；wheelchair access 是名词「通道」"}
+      ],
+      "nuance": "设施介绍里问是否 wheelchair accessible（无障碍）是高频细节，听力常考。"
+    },
+    {
+      "word": "instructor-led",
+      "levels": ["场景"],
+      "ipa": "/ɪnˈstrʌktər led/",
+      "subgroup": "noun",
+      "meaning": "a. 有教练带的，教练指导的",
+      "core": "由教练带着上的（对比自己练）。",
+      "etymology": "instructor（教练）+ led（lead 的过去分词，带领）。由教练带领进行的课／场次。",
+      "phonetics": "instructor 重音在第二音节 /ˈstrʌk/，led 独立重读 /led/。",
+      "examples": [
+        {"en": "There's an instructor-led session at ten and free swim after.", "zh": "十点有教练带的场次，之后是自由游。", "source": "造句"},
+        {"en": "an instructor-led class", "zh": "教练指导的课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "supervised", "ipa": "/ˈsuːpərvaɪzd/", "gloss": "有人监管的", "note": "supervised 强调「有人看管、保证安全」；instructor-led 强调「有人教、带练」"}
+      ],
+      "nuance": "instructor-led（教练带）对比 free swim / open session（自由参加），听力常问是哪种场次。"
+    },
+    {
+      "word": "renewal",
+      "levels": ["托福", "场景"],
+      "ipa": "/rɪˈnuːəl/",
+      "subgroup": "noun",
+      "meaning": "n. 续期，续费；更新",
+      "core": "到期后重新办一期＝让它重新有效。",
+      "etymology": "renew（续期：re-「再」+ new「新」）+ -al 名词后缀。让会员／订阅「重新变新」的动作。",
+      "roots": [
+        {"part": "re-", "meaning": "再"},
+        {"part": "new", "meaning": "新（拉丁 novus）"},
+        {"part": "-al", "meaning": "名词后缀，表动作"}
+      ],
+      "phonetics": "重音在第二音节 /ˈnuː/（美音），英音 /ˈnjuː/。re- 弱读 /rɪ/。",
+      "examples": [
+        {"en": "You'll get a renewal reminder before your card expires.", "zh": "卡到期前你会收到续费提醒。", "source": "造句"},
+        {"en": "a renewal reminder / fee", "zh": "续费提醒／续费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "extension", "ipa": "/ɪkˈstenʃn/", "gloss": "延期", "note": "extension 是把现有期限往后延；renewal 是到期后重新办一整期"}
+      ],
+      "nuance": "renewal 是「续办一期」；对应动词 renew，区别于 extend（延长现有期限）。"
+    },
+    {
+      "word": "attendance",
+      "levels": ["托福", "场景"],
+      "ipa": "/əˈtendəns/",
+      "subgroup": "noun",
+      "meaning": "n. 出席，到场；出勤率，出席人数",
+      "core": "到场并投入注意——出席这件事及其人数。",
+      "etymology": "attend（出席：ad-「向」+ tendere「注意」）+ -ance 名词后缀。到场的行为或到场人数。",
+      "roots": [
+        {"part": "at-", "meaning": "向（ad- 变体）"},
+        {"part": "tend", "meaning": "伸展、注意（拉丁 tendere）"},
+        {"part": "-ance", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈten/，a- 弱读 /ə/。-ance 弱读 /əns/。",
+      "examples": [
+        {"en": "Attendance at the workshop was higher than expected.", "zh": "工作坊的出席人数超出预期。", "source": "造句"},
+        {"en": "regular attendance", "zh": "定期出勤（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "turnout", "ipa": "/ˈtɜːrnaʊt/", "gloss": "到场人数，出席率", "note": "turnout 侧重「实际来了多少人」；attendance 既指出席行为也指人数"}
+      ],
+      "nuance": "attendance 兼指「出席（行为）」和「出席人数」；活动效果常用 a good turnout / high attendance。"
+    },
+    {
+      "word": "closure",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈkloʊʒər/",
+      "subgroup": "noun",
+      "meaning": "n. 关闭，停业；封闭",
+      "core": "关闭的状态或这件事。",
+      "etymology": "close（关闭，拉丁 claudere）+ -ure 名词后缀。同根 closed、include、conclude。场馆「关闭」这件事，就是 closure。",
+      "roots": [
+        {"part": "clos", "meaning": "关闭（拉丁 claudere）"},
+        {"part": "-ure", "meaning": "名词后缀，表动作／状态"}
+      ],
+      "phonetics": "重音在首 /ˈkloʊ/，-sure 读 /ʒər/（浊擦音）。别读成 /ʃ/。",
+      "examples": [
+        {"en": "There's a temporary closure of the pool for repairs.", "zh": "泳池因维修临时关闭。", "source": "造句"},
+        {"en": "a temporary / partial closure", "zh": "临时／局部关闭（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "shutdown", "ipa": "/ˈʃʌtdaʊn/", "gloss": "停运，关停", "note": "shutdown 多指系统／设备整体停运；closure 多指场所关闭"}
+      ],
+      "nuance": "closure 是「关闭」的名词；告示常见 temporary closure（临时关闭）配重开日期。"
+    },
+    {
+      "word": "proof of address",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌpruːf əv əˈdres/",
+      "subgroup": "noun",
+      "meaning": "n. 地址证明（证明住址的文件）",
+      "core": "证明你住在本地的文件（办本地优惠常需）。",
+      "etymology": "proof（证明，拉丁 probare「检验」）+ of address（地址）。证明住址的凭据，如水电账单。",
+      "roots": [
+        {"part": "proof", "meaning": "证明（拉丁 probare 检验）"}
+      ],
+      "phonetics": "proof 重读 /ˈpruːf/，address 重音在第二音节 /ˈdres/（名词也可 /ˈædres/）。",
+      "examples": [
+        {"en": "Bring proof of address to get the resident discount.", "zh": "带上地址证明才能享居民优惠。", "source": "造句"},
+        {"en": "show proof of address / ID", "zh": "出示地址证明／身份证件（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "utility bill", "ipa": "/juːˈtɪləti bɪl/", "gloss": "水电账单（常用作地址证明）", "note": "utility bill 是最常见的地址证明；proof of address 是这类文件的统称"}
+      ],
+      "nuance": "办本地居民（resident）优惠常被要求出示 proof of address；与 photo ID 是两类证件。"
+    },
+    {
+      "word": "sports hall",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈspɔːrts hɔːl/",
+      "subgroup": "noun",
+      "meaning": "n. 室内综合运动馆",
+      "core": "可打多种球类的室内大运动厅。",
+      "etymology": "sports（运动）+ hall（大厅）。室内可做羽毛球、篮球等多种运动的大厅。",
+      "phonetics": "sports 重读 /ˈspɔːrts/，hall 独立重读 /hɔːl/。两词各自清晰。",
+      "examples": [
+        {"en": "Badminton is played in the sports hall on Fridays.", "zh": "羽毛球周五在运动馆打。", "source": "造句"},
+        {"en": "book the sports hall", "zh": "预订运动馆（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "gymnasium", "ipa": "/dʒɪmˈneɪziəm/", "gloss": "体育馆", "note": "gymnasium 更正式，也指健身房；sports hall 英式常用，特指室内综合运动馆"}
+      ],
+      "nuance": "sports hall（英式）是室内综合运动厅；对比 court（单项围场球场）和 field（室外草地场）。"
+    },
+    {
+      "word": "membership fee",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈmembərʃɪp fiː/",
+      "subgroup": "noun",
+      "meaning": "n. 会员费，会费",
+      "core": "维持会员身份要交的费用。",
+      "etymology": "membership（会员资格）+ fee（费用）。为保有会员身份定期缴的钱。",
+      "phonetics": "membership 重音在首 /ˈmem/，fee 长元音 /iː/ 独立重读。",
+      "examples": [
+        {"en": "The monthly membership fee includes the sauna.", "zh": "月度会费含桑拿房。", "source": "造句"},
+        {"en": "an annual membership fee", "zh": "年度会费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "dues", "ipa": "/duːz/", "gloss": "会费（常复数）", "note": "dues 指定期该缴的会费（俱乐部／工会）；membership fee 更通用，泛指会费"}
+      ],
+      "nuance": "membership fee 是「持续的会费」，区别于一次性的 registration fee（报名费）和可退的 deposit（押金）。"
+    },
+    {
+      "word": "drop in",
+      "levels": ["基础", "场景", "口语"],
+      "ipa": "/ˌdrɑːp ˈɪn/",
+      "subgroup": "phrase",
+      "meaning": "phr. 随到随参加，无需预约到访",
+      "core": "不预约、直接来参加。",
+      "etymology": "drop（落下）+ in（进入）。「落脚进来」＝不预约直接到场。名词形式 drop-in（免预约活动）。",
+      "phonetics": "in 重读 /ˈɪn/，drop 元音 /ɑː/（美音）。名词连写 drop-in。",
+      "examples": [
+        {"en": "You can just drop in for the Saturday craft session.", "zh": "周六的手工活动随到随参加就行。", "source": "造句"},
+        {"en": "a drop-in session / class", "zh": "免预约的活动／课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "walk in", "ipa": "/ˌwɔːk ˈɪn/", "gloss": "直接进来（无需预约）", "note": "walk in 强调「不预约径直进来」；drop in 强调「顺路参加一下」，二者常互换"}
+      ],
+      "nuance": "drop-in（免预约）对比 by appointment（需预约）；听力里 drop-in 常和 no need to book 一起出现。"
+    },
+    {
+      "word": "book a slot",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌbʊk ə ˈslɑːt/",
+      "subgroup": "phrase",
+      "meaning": "phr. 预订一个时段",
+      "core": "把日程表里的一个时间格占下来。",
+      "etymology": "book（预订）+ a slot（时段、时间格）。订下日程里的一个空档。",
+      "phonetics": "slot 重读 /ˈslɑːt/，book 元音 /ʊ/。a 弱读 /ə/。",
+      "examples": [
+        {"en": "You'll need to book a slot for the climbing wall online.", "zh": "攀岩墙要在线预订一个时段。", "source": "造句"},
+        {"en": "book a slot / time slot", "zh": "预订时段（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "reserve a time", "ipa": "/rɪˌzɜːrv ə ˈtaɪm/", "gloss": "预约一个时间", "note": "reserve a time 更通用；book a slot 更具体，指订日程表里的一格"}
+      ],
+      "nuance": "book a slot 是热门设施（攀岩、器械、场地）限时段预约的高频说法。"
+    },
+    {
+      "word": "on a first-come basis",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌfɜːrst kʌm ˈbeɪsɪs/",
+      "subgroup": "phrase",
+      "meaning": "phr. 先到先得（简说）",
+      "core": "按到场先后分配，不预约。",
+      "etymology": "first come（先到）+ on a … basis（按…原则）。是 first-come, first-served 的省略说法。",
+      "phonetics": "first 读 /fɜːrst/，basis 重音在首 /ˈbeɪ/。",
+      "examples": [
+        {"en": "Places are given out on a first-come basis, so arrive early.", "zh": "名额先到先得，所以早点到。", "source": "造句"},
+        {"en": "on a first-come basis", "zh": "先到先得（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "first-come, first-served", "ipa": "/ˌfɜːrst kʌm ˌfɜːrst ˈsɜːrvd/", "gloss": "先到先得（完整）", "note": "完整说法带 first-served；on a first-come basis 是省略版，意思相同"}
+      ],
+      "nuance": "on a first-come basis 是免预约分配的高频提示，等于「先到先得」。"
+    },
+    {
+      "word": "sign in",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˌsaɪn ˈɪn/",
+      "subgroup": "phrase",
+      "meaning": "phr. 签到，登记进入",
+      "core": "签名登记表示你到了。",
+      "etymology": "sign（签名，拉丁 signum「记号」）+ in（进入）。到场签名登记。反义 sign out（签退）。",
+      "phonetics": "in 重读 /ˈɪn/，sign 的 g 不发音 /saɪn/。名词连写 sign-in。",
+      "examples": [
+        {"en": "Please sign in and take a visitor's badge.", "zh": "请签到并领一个访客牌。", "source": "造句"},
+        {"en": "sign in at the front desk", "zh": "在前台签到（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "check in", "ipa": "/ˌtʃek ˈɪn/", "gloss": "签到，登记入场", "note": "check in 侧重「核对身份入场」；sign in 侧重「签名登记」，二者常互换"}
+      ],
+      "nuance": "sign in（签到）／sign out（签退）成对；与 check in 在社区中心基本通用。"
+    },
+    {
+      "word": "in person",
+      "levels": ["托福", "场景"],
+      "ipa": "/ɪn ˈpɜːrsn/",
+      "subgroup": "phrase",
+      "meaning": "phr. 亲自，当面（非线上）",
+      "core": "本人到场办，不通过电话／网络。",
+      "etymology": "in（以…方式）+ person（本人）。亲身到场，对比 online（线上）／by phone（电话）。",
+      "phonetics": "person 重音在首 /ˈpɜːr/，in 弱读。",
+      "examples": [
+        {"en": "You have to register in person for the swimming badge.", "zh": "游泳徽章得亲自到场报名。", "source": "造句"},
+        {"en": "apply / pay in person", "zh": "亲自申请／缴费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "face to face", "ipa": "/ˌfeɪs tə ˈfeɪs/", "gloss": "面对面", "note": "face to face 强调「当面交流」；in person 强调「本人到场（而非线上）」"}
+      ],
+      "nuance": "in person（亲自到场）对比 online／by phone；听力里常是某项手续必须现场办的提示。"
+    },
+    {
+      "word": "non-refundable",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌnɑːn rɪˈfʌndəbl/",
+      "subgroup": "desc",
+      "meaning": "a. 不可退款的",
+      "core": "交了就不退的（钱）。",
+      "etymology": "non-「非、不」+ refund（退款）+ -able「可…的」→「不可退款的」。反义 refundable（可退的）。",
+      "roots": [
+        {"part": "non-", "meaning": "非、不"},
+        {"part": "refund", "meaning": "退款（re- 回 + fund 倾倒）"},
+        {"part": "-able", "meaning": "可…的"}
+      ],
+      "phonetics": "重音在 -fund /ˈfʌnd/，non- 次重读 /nɑːn/。四音节连读。",
+      "examples": [
+        {"en": "The booking deposit is non-refundable if you cancel late.", "zh": "太晚取消的话订金不予退还。", "source": "造句"},
+        {"en": "a non-refundable deposit / fee", "zh": "不可退的押金／费用（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "non-returnable", "ipa": "/ˌnɑːn rɪˈtɜːrnəbl/", "gloss": "不可退还的", "note": "non-returnable 多指货物不可退；non-refundable 特指钱款不退"}
+      ],
+      "nuance": "non-refundable 是退费规则里的关键词，反义 refundable（可退）；听力常考押金能否退。"
+    },
+    {
+      "word": "accessible",
+      "levels": ["托福", "场景"],
+      "ipa": "/əkˈsesəbl/",
+      "subgroup": "desc",
+      "meaning": "a. 无障碍可通行的；易到达的；易懂的",
+      "core": "能走近、能进去、够得着。",
+      "etymology": "拉丁 ad-「向」+ cedere「走」→ accedere「走近」+ -ible「可…的」。同根 access、accede、proceed。能走近／进入的，就是 accessible。",
+      "roots": [
+        {"part": "ac-", "meaning": "向（ad- 变体）"},
+        {"part": "cess", "meaning": "走（拉丁 cedere）"},
+        {"part": "-ible", "meaning": "可…的"}
+      ],
+      "phonetics": "重音在第二音节 /ˈses/，ac- 弱读 /ək/。词尾 -ible 弱读。",
+      "examples": [
+        {"en": "All the entrances are wheelchair accessible.", "zh": "所有入口都无障碍，轮椅可通行。", "source": "造句"},
+        {"en": "wheelchair accessible", "zh": "轮椅可通行的（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "reachable", "ipa": "/ˈriːtʃəbl/", "gloss": "可到达的", "note": "reachable 侧重「距离上够得到」；accessible 更广，含「无障碍进入」和「易懂」义"}
+      ],
+      "nuance": "accessible 在设施场景多指「无障碍」；也指「地点好到达」或「内容易懂」，靠语境判断。"
+    },
+    {
+      "word": "refundable",
+      "levels": ["托福", "场景"],
+      "ipa": "/rɪˈfʌndəbl/",
+      "subgroup": "desc",
+      "meaning": "a. 可退款的",
+      "core": "守规矩就能拿回来的（钱）。",
+      "etymology": "refund（退款：re- 回 + fund 倾倒）+ -able「可…的」。可以退还的。反义 non-refundable。",
+      "roots": [
+        {"part": "refund", "meaning": "退款（re- 回 + fund 倾倒）"},
+        {"part": "-able", "meaning": "可…的"}
+      ],
+      "phonetics": "重音在第二音节 /ˈfʌnd/，re- 弱读 /rɪ/。",
+      "examples": [
+        {"en": "The deposit is fully refundable if you leave the room clean.", "zh": "房间留干净押金全额可退。", "source": "造句"},
+        {"en": "a refundable deposit", "zh": "可退押金（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "returnable", "ipa": "/rɪˈtɜːrnəbl/", "gloss": "可退还的", "note": "returnable 多指物品可退；refundable 特指钱款可退"}
+      ],
+      "nuance": "refundable / non-refundable 是押金条款的一对反义词，听力里是易考细节。"
+    },
+    {
+      "word": "supervised",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈsuːpərvaɪzd/",
+      "subgroup": "desc",
+      "meaning": "a. 有人监管的，在看护下的",
+      "core": "有人「在上面看着」保安全。",
+      "etymology": "拉丁 super-「在上」+ videre「看」→ supervise「监督」+ -ed。同根 vision、evident、provide。有人在上面看管着，就是 supervised。",
+      "roots": [
+        {"part": "super-", "meaning": "在上、超"},
+        {"part": "vis", "meaning": "看（拉丁 videre）"},
+        {"part": "-ed", "meaning": "形容词化，表被…的"}
+      ],
+      "phonetics": "重音在首 /ˈsuː/，-vised 读 /vaɪzd/。别把重音放中间。",
+      "examples": [
+        {"en": "Children must be supervised in the pool at all times.", "zh": "儿童在泳池必须全程有人看护。", "source": "造句"},
+        {"en": "supervised swimming / play", "zh": "有人看护的游泳／玩耍（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "unsupervised", "ipa": "/ˌʌnˈsuːpərvaɪzd/", "gloss": "无人看管的（反义）", "note": "unsupervised 指没人看管；与 supervised 相对，安全规则常对比二者"}
+      ],
+      "nuance": "supervised（有人看护）是安全规则高频词；反义 unsupervised，听力常考儿童能否单独使用。"
+    },
+    {
+      "word": "reduced",
+      "levels": ["托福", "场景"],
+      "ipa": "/rɪˈduːst/",
+      "subgroup": "desc",
+      "meaning": "a. 减价的，降低了的",
+      "core": "被「往回带、拉低」的（价格）。",
+      "etymology": "reduce（减少：拉丁 re-「回」+ ducere「引导、带」）的过去分词作形容词。同根 reduce、conduct、produce。被拉低的价格，就是 reduced。",
+      "roots": [
+        {"part": "re-", "meaning": "回、往回"},
+        {"part": "duc", "meaning": "引导、带（拉丁 ducere）"},
+        {"part": "-ed", "meaning": "形容词化"}
+      ],
+      "phonetics": "重音在第二音节 /ˈduːst/（美音），re- 弱读。词尾 -ced 读 /st/。",
+      "examples": [
+        {"en": "Seniors pay a reduced rate for all classes.", "zh": "老年人上所有课都享减价。", "source": "造句"},
+        {"en": "a reduced rate / price", "zh": "优惠价／减价（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "discounted", "ipa": "/ˈdɪskaʊntɪd/", "gloss": "打折的", "note": "discounted 侧重「打了折」；reduced 侧重「价格被调低了」，二者近义"}
+      ],
+      "nuance": "a reduced rate（优惠价）是给特定人群的降价，常和 eligible for、concession 一起出现。"
+    },
+    {
+      "word": "expire",
+      "levels": ["托福", "场景"],
+      "ipa": "/ɪkˈspaɪər/",
+      "subgroup": "verb",
+      "meaning": "v.（会员／期限）到期，失效",
+      "core": "「气息呼尽」＝效力用尽、到期。",
+      "etymology": "拉丁 ex-「向外」+ spirare「呼吸」→ expirare「呼气尽、终结」。同根 spirit、inspire、respire。期限「呼出最后一口气」，就是 expire。",
+      "roots": [
+        {"part": "ex-", "meaning": "向外、尽"},
+        {"part": "spir(e)", "meaning": "呼吸（拉丁 spirare）"}
+      ],
+      "phonetics": "重音在第二音节 /ˈspaɪr/，ex- 弱读 /ɪk/。双元音 /aɪ/。",
+      "examples": [
+        {"en": "Your membership expires at the end of March.", "zh": "你的会员三月底到期。", "source": "造句"},
+        {"en": "the membership expires", "zh": "会员到期（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "lapse", "ipa": "/læps/", "gloss": "（因未续）失效，中止", "note": "lapse 强调「因没续费而自动失效」；expire 是「到规定日期终止」"}
+      ],
+      "nuance": "expire 是「到期失效」，之后要 renew（续费）；听力常给到期日期作细节考点。"
+    },
+    {
+      "word": "hire",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈhaɪər/",
+      "subgroup": "verb",
+      "meaning": "v. 租用（场地／器材）；雇用；n. 租用",
+      "core": "付钱短期用一下（场地／器材／人手）。",
+      "etymology": "古英语 hyrian「雇、租」。英式常用「租用（东西）」，如 hire a hall；美式租物多用 rent，雇人两义通用。",
+      "phonetics": "双元音 /aɪ/ + /ər/，读 /ˈhaɪ-ər/。与 higher（更高）同音，靠语境分。",
+      "examples": [
+        {"en": "You can hire the hall for a private party.", "zh": "你可以租大厅办私人派对。", "source": "造句"},
+        {"en": "hire a hall / equipment", "zh": "租用大厅／器材（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "rent", "ipa": "/rent/", "gloss": "租用（美式常用）", "note": "rent 美式租物常用，也指长期租房；hire 英式指短期租用场地／器材，也指雇人"}
+      ],
+      "nuance": "英式社区中心告示常见 hall for hire（大厅可租）、equipment hire（器材租借）；美式多说 rent。"
+    },
+    {
+      "word": "process",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈprɑːses/",
+      "subgroup": "verb",
+      "meaning": "v. 办理，处理（申请／退款）；n. 流程",
+      "core": "把事情「往前推着走完」流程。",
+      "etymology": "拉丁 pro-「向前」+ cedere「走」→ processus「进展、进程」。同根 proceed、procedure、access。把申请「一步步走完」，就是 process。",
+      "roots": [
+        {"part": "pro-", "meaning": "向前"},
+        {"part": "cess", "meaning": "走（拉丁 cedere）"}
+      ],
+      "phonetics": "名词美音重音在首 /ˈprɑːses/；作动词「办理」重音仍多在首（美音）。别读成 /prəˈses/（英音动词）。",
+      "examples": [
+        {"en": "It takes a few days to process your refund.", "zh": "办理你的退款要几天。", "source": "造句"},
+        {"en": "process an application / refund", "zh": "办理申请／退款（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "handle", "ipa": "/ˈhændl/", "gloss": "处理，经办", "note": "handle 泛指「应付、经手」；process 强调「按流程办完某手续」"}
+      ],
+      "nuance": "退款场景高频：工作人员常说 I'll process your refund（我来给你办退款）；名词 process 指整个流程。"
+    },
+    {
+      "word": "fill in",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˌfɪl ˈɪn/",
+      "subgroup": "verb",
+      "meaning": "v. 填写（表格）（英式，美式 fill out）",
+      "core": "把表格的空格填满。",
+      "etymology": "fill（填满）+ in（进空格）。英式说 fill in，美式说 fill out。名词 fill-in 另有「临时顶替者」义。",
+      "phonetics": "in 重读 /ˈɪn/，fill 元音 /ɪ/ 短促。",
+      "examples": [
+        {"en": "Fill in your details and hand the form back.", "zh": "填好你的信息再把表交回。", "source": "造句"},
+        {"en": "fill in the details / a form", "zh": "填写信息／表格（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fill out", "ipa": "/ˌfɪl ˈaʊt/", "gloss": "填写（美式）", "note": "fill out 美式；fill in 英式，二者同义，指把表格填完整"}
+      ],
+      "nuance": "本页 phrase 桶已收 fill in a form 整块；此处单列动词 fill in，与 fill out（美式）对照记。"
+    }
+  ]
+}

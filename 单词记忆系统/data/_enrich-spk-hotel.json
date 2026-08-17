@@ -1,0 +1,882 @@
+{
+  "enrich": {
+    "reception": {
+      "core": "「接纳来客的地方」——re 回 + cept 拿，把客人「收下」的柜台。",
+      "roots": [
+        {"part": "re", "meaning": "回、向内"},
+        {"part": "cept", "meaning": "拿、取（capere）"},
+        {"part": "ion", "meaning": "名词后缀，表动作/结果"}
+      ],
+      "senses": [
+        {"gloss": "前台，接待处", "logic": "「接纳客人」的地方 → 办入住的柜台（英式常用）", "en": "Please leave your key at reception.", "zh": "外出请把钥匙留在前台。"},
+        {"gloss": "招待会，宴会", "logic": "「接待宾客」的场合 → 正式的招待聚会", "en": "The wedding reception is in the ballroom.", "zh": "婚宴招待会在宴会厅。"},
+        {"gloss": "接收（信号）", "logic": "「接收」的字面义 → 收到信号的效果", "en": "The phone reception here is poor.", "zh": "这里手机信号很差。"}
+      ]
+    },
+    "deposit": {
+      "core": "「放下来暂存的钱」——de 下 + posit 放，押在柜台以防万一。",
+      "roots": [
+        {"part": "de", "meaning": "向下"},
+        {"part": "posit", "meaning": "放置（ponere）"}
+      ],
+      "senses": [
+        {"gloss": "押金，保证金", "logic": "「放下暂存」→ 担保用、退房无损退还的钱", "en": "We require a fifty-dollar deposit for incidentals.", "zh": "杂费需交五十美元押金。"},
+        {"gloss": "定金，首付", "logic": "「先放下一部分」→ 预订时先付的一小笔", "en": "Pay a deposit to secure the booking.", "zh": "付定金以锁定预订。"},
+        {"gloss": "存入（款项）", "logic": "「把钱放进去」→ 存钱到账户", "en": "She deposited the cash into her account.", "zh": "她把现金存进账户。"}
+      ]
+    },
+    "receipt": {
+      "core": "「已收到钱的凭证」——re 回 + ceipt 拿，p 是仿拉丁硬加的哑音。",
+      "roots": [
+        {"part": "re", "meaning": "回、向内"},
+        {"part": "ceipt", "meaning": "拿、取（capere），p 不发音"}
+      ]
+    },
+    "bill": {
+      "core": "「一张要你付钱的盖章单据」——酒店语境几乎全是「账单」。",
+      "senses": [
+        {"gloss": "账单", "logic": "盖章的正式单据 → 记账要付的清单", "en": "Could you put it on my room bill?", "zh": "能记到我的房费账单上吗？"},
+        {"gloss": "钞票（美）", "logic": "官方发行的纸质单据 → 纸币", "en": "He paid with a twenty-dollar bill.", "zh": "他用一张二十美元的钞票付款。"},
+        {"gloss": "议案，法案", "logic": "提交表决的正式文件 → 立法草案", "en": "Congress passed the bill.", "zh": "国会通过了这项议案。"}
+      ]
+    },
+    "charge": {
+      "core": "「往账上装载的一笔费用」——carr 车/装载，把钱和责任都「装上去」。",
+      "roots": [
+        {"part": "charge", "meaning": "装载（carricare，源自 carrus 车）"}
+      ],
+      "senses": [
+        {"gloss": "收费；费用", "logic": "「装到账上」→ 记账要收的钱", "en": "The minibar charge will be added to your bill.", "zh": "迷你吧的费用会加到您账单上。"},
+        {"gloss": "充电", "logic": "「装载电量」→ 给电池充电", "en": "You can charge your phone by the desk.", "zh": "您可以在桌边给手机充电。"},
+        {"gloss": "指控，控告", "logic": "「把罪责装到某人身上」→ 起诉", "en": "He was charged with theft.", "zh": "他被控告盗窃。"},
+        {"gloss": "负责，掌管", "logic": "「把职责装在肩上」→ in charge of 主管", "en": "Who's in charge of housekeeping?", "zh": "谁负责客房部？"}
+      ]
+    },
+    "rate": {
+      "core": "「按单位算出的价/率」——rat 计算，酒店里几乎都是「每晚房价」。",
+      "roots": [
+        {"part": "rate", "meaning": "按比例算定（rata，源自 reri 计算）"}
+      ],
+      "senses": [
+        {"gloss": "房价，费率", "logic": "「按晚计的价」→ room rate / nightly rate", "en": "What's your best rate for a double room?", "zh": "双人房最优惠的房价是多少？"},
+        {"gloss": "速度，比率", "logic": "「按单位时间算的量」→ 速率、发生率", "en": "The occupancy rate is 90% this week.", "zh": "本周入住率九成。"},
+        {"gloss": "评价，评级", "logic": "「给出一个等级值」→ 打分", "en": "Guests rated the hotel five stars.", "zh": "客人给这家酒店打了五星。"}
+      ]
+    },
+    "book": {
+      "core": "「记入登记簿」的动作——酒店语境全是「预订」义。",
+      "senses": [
+        {"gloss": "预订", "logic": "「记进登记簿」→ 订房/订位", "en": "I booked the room online last week.", "zh": "我上周在网上订的房。"},
+        {"gloss": "订满，客满", "logic": "登记簿被填满 → fully booked", "en": "We're fully booked for tonight.", "zh": "今晚我们订满了。"},
+        {"gloss": "书（名词）", "logic": "本义山毛榉木板刻字 → 书", "en": "She left a book in the room.", "zh": "她把一本书落在房间里了。"}
+      ]
+    },
+    "check": {
+      "core": "「核对制止」的动作——check in / out / availability 全靠它。",
+      "roots": [
+        {"part": "check", "meaning": "将军、制止（源自波斯语 shah 国王）"}
+      ],
+      "senses": [
+        {"gloss": "检查，核对", "logic": "国际象棋「将军」制止 → 核对拦查", "en": "Let me check if we have any rooms left.", "zh": "我查一下还有没有空房。"},
+        {"gloss": "账单（美，餐厅）", "logic": "「核算清单」→ 结账单", "en": "Can we have the check, please?", "zh": "请给我们账单。"},
+        {"gloss": "支票", "logic": "「盖印核押的付款凭证」→ 支票", "en": "They no longer accept personal checks.", "zh": "他们不再收个人支票了。"}
+      ]
+    },
+    "settle": {
+      "core": "「把事情放定、了结」——set 坐定，账目/纠纷一次坐实清掉。",
+      "senses": [
+        {"gloss": "结清（账单）", "logic": "「把账目定死」→ 一次性付清", "en": "Would you like to settle the bill now?", "zh": "您现在要结账吗？"},
+        {"gloss": "解决（纠纷）", "logic": "「把争端放平」→ 平息了结", "en": "They settled the dispute amicably.", "zh": "他们友好地解决了纠纷。"},
+        {"gloss": "安顿，定居", "logic": "「坐定下来」→ 安顿住定", "en": "Take your time to settle in.", "zh": "您慢慢安顿。"}
+      ]
+    },
+    "switch": {
+      "core": "「快速拨动、A 与 B 对调」——不满意就换成另一间。",
+      "senses": [
+        {"gloss": "更换，调换", "logic": "「拨到另一边」→ 换房、换位", "en": "Could we switch to a quieter room?", "zh": "我们能换到安静点的房间吗？"},
+        {"gloss": "开关（名词）", "logic": "「拨动的装置」→ 电灯开关", "en": "The light switch is by the door.", "zh": "电灯开关在门边。"}
+      ]
+    },
+    "sign": {
+      "core": "「留下自己的记号」——signum 标记，既签字也指招牌。",
+      "roots": [
+        {"part": "sign", "meaning": "记号、标记（signum）"}
+      ],
+      "senses": [
+        {"gloss": "签名（动词）", "logic": "「留下个人标记」→ 在表上签字（g 不发音）", "en": "Could you sign here to confirm?", "zh": "能在这里签名确认吗？"},
+        {"gloss": "标志，招牌", "logic": "「给人看的记号」→ No Vacancy 招牌", "en": "The No Vacancy sign was lit up.", "zh": "「客满」的招牌亮着。"},
+        {"gloss": "迹象，征兆", "logic": "「显露出来的记号」→ 苗头", "en": "There's no sign of the missing key.", "zh": "丢的钥匙一点踪影都没有。"}
+      ]
+    },
+    "reserve": {
+      "core": "「留下来给以后用」——re 回 + serve 保存，正式版的「预订」。",
+      "roots": [
+        {"part": "re", "meaning": "回、向后"},
+        {"part": "serve", "meaning": "保存、守住（servare）"}
+      ]
+    },
+    "confirm": {
+      "core": "「把某事坐实」——con 加强 + firm 坚固，敲定预订、给确认号。",
+      "roots": [
+        {"part": "con", "meaning": "加强语气"},
+        {"part": "firm", "meaning": "坚固、坚定（firmus）"}
+      ]
+    },
+    "cancel": {
+      "core": "「用格子线划掉作废」——cancelli 格栅，把订单一笔划销。",
+      "roots": [
+        {"part": "cancel", "meaning": "用格子线划掉（cancellare，源自 cancelli 格栅）"}
+      ]
+    },
+    "accommodate": {
+      "core": "「安排得合适」——ac 向 + commod 合适，既能容人也能满足需求。",
+      "roots": [
+        {"part": "ac", "meaning": "向（ad-，双 c）"},
+        {"part": "commod", "meaning": "合适的（commodus）"},
+        {"part": "ate", "meaning": "动词后缀"}
+      ],
+      "senses": [
+        {"gloss": "容纳，可住下", "logic": "「安排出合适空间」→ 房间能住几人", "en": "The suite can accommodate up to four guests.", "zh": "这套房最多可住四位客人。"},
+        {"gloss": "迁就，满足", "logic": "「安排得合某人心意」→ 满足特殊要求", "en": "We'll try to accommodate your request.", "zh": "我们会尽量满足您的要求。"}
+      ]
+    },
+    "extend": {
+      "core": "「把长度/时间往外伸」——ex 外 + tend 伸，续住多一晚。",
+      "roots": [
+        {"part": "ex", "meaning": "向外"},
+        {"part": "tend", "meaning": "伸展（tendere）"}
+      ]
+    },
+    "refund": {
+      "core": "「把钱倒回去」——re 回 + fund 倒/流，退回已付的款。",
+      "roots": [
+        {"part": "re", "meaning": "回、向后"},
+        {"part": "fund", "meaning": "倒、流（fundere）"}
+      ]
+    },
+    "vacancy": {
+      "core": "「空着的状态/空位」——vac 空，招牌上 No Vacancy 就是客满。",
+      "roots": [
+        {"part": "vac", "meaning": "空（vacare）"},
+        {"part": "ancy", "meaning": "名词后缀，表状态"}
+      ]
+    },
+    "occupied": {
+      "core": "「已被占据的」——oc 朝 + cup 拿，房间/洗手间「有人」。",
+      "roots": [
+        {"part": "oc", "meaning": "朝、向（ob-）"},
+        {"part": "cup", "meaning": "拿、取（capere）"},
+        {"part": "ied", "meaning": "过去分词作形容词"}
+      ]
+    },
+    "amenity": {
+      "core": "「使人舒适的东西」——amoen 宜人，复数指泳池、洗漱包等配套。",
+      "roots": [
+        {"part": "amen", "meaning": "宜人的、令人愉快的（amoenus）"},
+        {"part": "ity", "meaning": "名词后缀，表性质"}
+      ]
+    },
+    "concierge": {
+      "core": "「高档酒店的私人管家」——专管订票订餐、旅游咨询等增值请求。"
+    },
+    "surcharge": {
+      "core": "「在原价之上再加的费用」——sur 上 + charge 收费，周末/旺季外加。",
+      "roots": [
+        {"part": "sur", "meaning": "在…之上（super）"},
+        {"part": "charge", "meaning": "收费、装载"}
+      ]
+    },
+    "vacate": {
+      "core": "「使房间空出来」——vac 空 + ate，按时腾房让给下一位。",
+      "roots": [
+        {"part": "vac", "meaning": "空（vacare）"},
+        {"part": "ate", "meaning": "动词后缀，使…"}
+      ]
+    },
+    "complimentary": {
+      "core": "「作为好意馈赠的 → 免费的」——比 free 更显档次，别拼成 complementary（互补）。"
+    },
+    "inconvenience": {
+      "core": "「不方便、给人添的麻烦」——in 不 + con 一起 + veni 来，道歉套话高频。",
+      "roots": [
+        {"part": "in", "meaning": "不、非"},
+        {"part": "con", "meaning": "一起（con-）"},
+        {"part": "veni", "meaning": "来（venire）"},
+        {"part": "ence", "meaning": "名词后缀"}
+      ]
+    },
+    "invoice": {
+      "core": "「随货附的付款清单」——正式书面账单，公司报销要它。"
+    },
+    "reservation": {
+      "core": "「预留下来的东西」——re 回 + serv 保存，报预订第一句常用它。",
+      "roots": [
+        {"part": "re", "meaning": "回、向后"},
+        {"part": "serv", "meaning": "保存（servare）"},
+        {"part": "ation", "meaning": "名词后缀"}
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "renovation",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌrenəˈveɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 翻新，装修改造",
+      "core": "「使重新变新」——re 再 + nov 新，酒店整修常导致部分设施暂停。",
+      "etymology": "拉丁 renovare「更新」（re-再 + novare 使新，源自 novus 新）→ renovation「翻新工程」。同根 novel、innovation。",
+      "roots": [
+        {"part": "re", "meaning": "再、重新"},
+        {"part": "nov", "meaning": "新（novus）"},
+        {"part": "ation", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈveɪ/，前面 reno- 弱读。别把重音放在词首。",
+      "examples": [
+        {"en": "The pool is closed for renovation this month.", "zh": "泳池本月因翻新暂停开放。", "source": "造句"},
+        {"en": "under renovation", "zh": "翻新施工中（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "refurbishment", "ipa": "/ˌriːˈfɜːrbɪʃmənt/", "gloss": "翻新，整修", "note": "refurbishment 侧重「重新整饰、更换陈设」；renovation 范围更广，含结构性改造"},
+        {"w": "remodeling", "ipa": "/ˌriːˈmɑːdlɪŋ/", "gloss": "改建，重新装修", "note": "remodeling 美式常用，强调「改变布局」；renovation 更通用"}
+      ],
+      "nuance": "under renovation（翻新中）常是听力里设施关闭、需道歉的原因；由此可能引出 complimentary 补偿。"
+    },
+    {
+      "word": "valet",
+      "levels": ["六级", "场景"],
+      "ipa": "/væˈleɪ/",
+      "subgroup": "noun",
+      "meaning": "n. 代客泊车员；贴身男仆；v. 代客泊车",
+      "core": "「替你把车停好的人」——法语外来词，valet parking 是常见付费服务。",
+      "etymology": "法语 valet「侍从、仆人」，源自拉丁 vassus「家仆」（同 vassal 封臣）。现代酒店义指「代客泊车员」。",
+      "phonetics": "法语外来词，美式重音在后 /væˈleɪ/，词尾 t 常不发音。别读成「瓦莱特」。",
+      "examples": [
+        {"en": "You can leave your car with the valet.", "zh": "您可以把车交给代客泊车员。", "source": "造句"},
+        {"en": "valet parking", "zh": "代客泊车（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "attendant", "ipa": "/əˈtendənt/", "gloss": "服务员，侍者", "note": "attendant 泛指各类服务员（parking attendant 停车管理员）；valet 特指帮你把车开走停好的人"}
+      ],
+      "nuance": "valet parking（代客泊车）通常另收费且要给小费，区别于 self-parking（自助停车）。"
+    },
+    {
+      "word": "penthouse",
+      "levels": ["场景"],
+      "ipa": "/ˈpenthaʊs/",
+      "subgroup": "noun",
+      "meaning": "n. 顶层豪华套房",
+      "core": "「楼顶加盖的房」——pent 斜坡屋顶，后指最高层的顶级套房。",
+      "etymology": "源自古法语 apentis「斜顶附属建筑」（拉丁 appendere 悬挂），词形受 house 影响变为 penthouse，后引申为「屋顶上的豪华公寓」。",
+      "phonetics": "重音在首 /ˈpent/，两词素连读。t 与 house 之间轻微停顿。",
+      "examples": [
+        {"en": "The penthouse suite has a private rooftop terrace.", "zh": "顶层套房带一个私人屋顶露台。", "source": "造句"},
+        {"en": "the penthouse suite", "zh": "顶层套房（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "suite", "ipa": "/swiːt/", "gloss": "套房", "note": "suite 是任何多间相连的套房；penthouse 特指位于最高层、视野最好的顶级套房"}
+      ],
+      "nuance": "penthouse 是酒店最高档房型，位于顶层、常带露台；升级到它是听力里的高光正面情节。"
+    },
+    {
+      "word": "housekeeper",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˈhaʊskiːpər/",
+      "subgroup": "noun",
+      "meaning": "n. 客房清洁员；管家",
+      "core": "「打理房间的人」——house 房 + keeper 照管者，housekeeping 部门的一员。",
+      "etymology": "house（房子）+ keeper（照管者，keep + -er）→ 「照料房务的人」。酒店里指负责打扫客房的清洁员。",
+      "phonetics": "重音在首 /ˈhaʊs/，整体连读三音节。别与部门名 housekeeping 混。",
+      "examples": [
+        {"en": "The housekeeper will bring you fresh towels.", "zh": "客房清洁员会给您送干净毛巾。", "source": "造句"},
+        {"en": "ask the housekeeper", "zh": "找客房清洁员（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "maid", "ipa": "/meɪd/", "gloss": "女服务员，清洁女工", "note": "maid 偏旧/口语，专指清洁女工；housekeeper 更中性正式，男女都可"}
+      ],
+      "nuance": "housekeeper（人）属于 housekeeping（部门/服务）；换床单、补毛巾找 housekeeper。"
+    },
+    {
+      "word": "checkout time",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈtʃekaʊt taɪm/",
+      "subgroup": "noun",
+      "meaning": "phr. 退房时间（须离店的时刻）",
+      "core": "「必须腾房的时刻」——常在上午 11 点或中午，与 check-in time 对称。",
+      "etymology": "checkout（退房）+ time（时间）→ 「规定须办完退房的时刻」。与 check-in time 是一对时间点。",
+      "phonetics": "主重音在 checkout 的 /ˈtʃek/。对称词 check-in time（入住时间）。",
+      "examples": [
+        {"en": "Checkout time is at eleven, but we can hold your bags.", "zh": "退房时间是十一点，不过我们可以帮您存行李。", "source": "造句"},
+        {"en": "the standard checkout time", "zh": "标准退房时间（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "check-in time", "ipa": "/ˈtʃekɪn taɪm/", "gloss": "入住时间", "note": "check-in time（常下午 3 点）vs checkout time（常上午 11–12 点），一对关键时间点"}
+      ],
+      "nuance": "超过 checkout time 未退可能触发 late checkout 收费；听力里常与 late checkout 请求成对出现。"
+    },
+    {
+      "word": "compensation",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌkɑːmpenˈseɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 补偿，赔偿",
+      "core": "「用一物抵偿另一物」——com 一起 + pens 称量，投诉后酒店给的弥补。",
+      "etymology": "拉丁 compensare「相互称量抵偿」（com-一起 + pensare 称量，源自 pendere 称/挂）→ compensation。同根 expensive、pension、pending。",
+      "roots": [
+        {"part": "com", "meaning": "一起、互相"},
+        {"part": "pens", "meaning": "称量、掂量（pensare）"},
+        {"part": "ation", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈseɪ/，五音节，前面弱读。动词 compensate 重音在首。",
+      "examples": [
+        {"en": "As compensation, we'll waive tonight's room rate.", "zh": "作为补偿，我们免收今晚的房费。", "source": "造句"},
+        {"en": "offer compensation", "zh": "提供补偿（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "refund", "ipa": "/ˈriːfʌnd/", "gloss": "退款", "note": "refund 是退回已付的钱；compensation 是为过失额外给的补偿（可能是免单、升级或代金券）"}
+      ],
+      "nuance": "投诉解决类听力常见 offer compensation（给补偿）：形式可能是 refund、free upgrade 或 voucher。"
+    },
+    {
+      "word": "courtesy",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˈkɜːrtəsi/",
+      "subgroup": "noun",
+      "meaning": "n. 礼貌，好意；a. 免费提供的",
+      "core": "「宫廷般的礼数 → 出于好意的免费招待」——court 宫廷，courtesy bus 即免费班车。",
+      "etymology": "court（宫廷，拉丁 cohors 庭院）+ -esy → 「宫廷式的礼仪、殷勤」，引申「出于好意（免费）提供」。同源 courteous。",
+      "roots": [
+        {"part": "court", "meaning": "宫廷、庭院（cohors）"},
+        {"part": "esy", "meaning": "名词后缀，表性质/行为"}
+      ],
+      "phonetics": "重音在首 /ˈkɜːr/，三音节，词尾 -sy 读 /si/。别读成「靠特西」。",
+      "examples": [
+        {"en": "A courtesy shuttle runs to the airport every hour.", "zh": "有免费班车每小时发往机场。", "source": "造句"},
+        {"en": "a courtesy call / shuttle", "zh": "礼貌回访电话／免费班车（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "complimentary", "ipa": "/ˌkɑːmplɪˈmentri/", "gloss": "免费赠送的", "note": "作「免费」义时两者近义；courtesy 强调「出于礼貌好意」（courtesy bus），complimentary 更泛指「不收费的赠送」"}
+      ],
+      "nuance": "作定语 courtesy 常表「免费提供」：courtesy shuttle（免费班车）、courtesy phone（免费公用电话）。"
+    },
+    {
+      "word": "proximity",
+      "levels": ["托福"],
+      "ipa": "/prɑːkˈsɪməti/",
+      "subgroup": "noun",
+      "meaning": "n. 邻近，靠近",
+      "core": "「离得近这件事」——proxim 最近的，酒店卖点常提「离地铁/景点近」。",
+      "etymology": "拉丁 proximus「最近的」（prope 近的最高级）→ proximity。同根 approximate、approach。",
+      "roots": [
+        {"part": "proxim", "meaning": "最近的（proximus）"},
+        {"part": "ity", "meaning": "名词后缀，表状态"}
+      ],
+      "phonetics": "重音在第二音节 /ˈsɪ/，四音节。搭配 in proximity to（靠近）、in close proximity。",
+      "examples": [
+        {"en": "Guests love the hotel's proximity to the subway.", "zh": "客人很喜欢这家酒店离地铁近。", "source": "造句"},
+        {"en": "in close proximity to", "zh": "紧邻…（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "nearness", "ipa": "/ˈnɪrnəs/", "gloss": "接近，邻近", "note": "nearness 更口语直白；proximity 更正式，广告/描述位置时常用 in close proximity to"}
+      ],
+      "nuance": "描述地段优势的高级词 proximity to（离…近）；比 close to 更书面，酒店宣传常用。"
+    },
+    {
+      "word": "check-in counter",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈtʃekɪn ˌkaʊntər/",
+      "subgroup": "noun",
+      "meaning": "phr. 入住登记柜台",
+      "core": "「办入住的那张柜台」——check-in 入住 + counter 柜台，就设在 lobby 里。",
+      "etymology": "check-in（入住）+ counter（柜台，拉丁 contra「相对」→ 隔开买卖双方的台面）→ 「办理入住的柜台」。",
+      "phonetics": "主重音在 check /ˈtʃek/，counter 弱读 /ˌkaʊntər/。三词素连读。",
+      "examples": [
+        {"en": "Please proceed to the check-in counter on your left.", "zh": "请到您左手边的入住登记柜台办理。", "source": "造句"},
+        {"en": "at the check-in counter", "zh": "在入住柜台（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "front desk", "ipa": "/ˌfrʌnt ˈdesk/", "gloss": "前台", "note": "front desk 是整个前台；check-in counter 特指办入住那张柜台，机场也用同一说法"}
+      ],
+      "nuance": "check-in counter（入住柜台）在酒店和机场都用；酒店里常与 front desk 同指一处。"
+    },
+    {
+      "word": "double-check",
+      "levels": ["六级", "口语"],
+      "ipa": "/ˌdʌbl ˈtʃek/",
+      "subgroup": "verb",
+      "meaning": "v. 再核对一遍，复查",
+      "core": "「查两遍」——double 双 + check 核对，前台确认信息无误的礼貌动作。",
+      "etymology": "double（双、两次）+ check（核对）→ 「查两遍以确保无误」。",
+      "phonetics": "两个重音 /ˌdʌbl ˈtʃek/，主重音在 check。连字符连写。",
+      "examples": [
+        {"en": "Let me double-check the dates on your reservation.", "zh": "我再核对一下您预订的日期。", "source": "造句"},
+        {"en": "double-check the details", "zh": "再核对细节（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "verify", "ipa": "/ˈverɪfaɪ/", "gloss": "核实", "note": "verify 更正式、强调查证真伪；double-check 更口语，强调「再确认一遍以防出错」"}
+      ],
+      "nuance": "前台核对预订常说 Let me double-check（我再核对一下）；比单说 check 更显谨慎周到。"
+    },
+    {
+      "word": "notify",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈnoʊtɪfaɪ/",
+      "subgroup": "verb",
+      "meaning": "v. 通知，告知",
+      "core": "「使某人知道」——not 知道 + ify 使，处理好请求后正式告知客人。",
+      "etymology": "拉丁 notus「已知的」（noscere 知道）+ -ficare「使…」→ notify「使…知道」。同根 note、notice、notion。",
+      "roots": [
+        {"part": "not", "meaning": "知道、认识（notus）"},
+        {"part": "ify", "meaning": "使…（动词后缀）"}
+      ],
+      "phonetics": "重音在首 /ˈnoʊ/，三音节，词尾 -fy 读 /faɪ/。名词 notification。",
+      "examples": [
+        {"en": "We'll notify you as soon as your room is ready.", "zh": "房间一准备好我们就通知您。", "source": "造句"},
+        {"en": "notify the front desk", "zh": "通知前台（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "inform", "ipa": "/ɪnˈfɔːrm/", "gloss": "告知", "note": "inform 更通用日常；notify 略正式，多用于「就某事正式通知」（notify us of any changes）"}
+      ],
+      "nuance": "服务承诺高频 We'll notify you when…（…时会通知您）；比 tell 更正式得体。"
+    },
+    {
+      "word": "waive",
+      "levels": ["场景"],
+      "ipa": "/weɪv/",
+      "subgroup": "verb",
+      "meaning": "v. 免除，放弃（收费/权利）",
+      "core": "「主动放开不收」——把某笔费用/规定「挥手放掉」，作补偿常用。",
+      "etymology": "古法语 waiver「放弃、抛下」（源自古诺斯语 veifa 挥动）→ waive「放弃权利、免除」。与 waive「挥手」的 wave 不同拼写别混。",
+      "phonetics": "读音同 wave /weɪv/，但拼写是 waive。别写成 wave。",
+      "examples": [
+        {"en": "We'll waive the cancellation fee this time.", "zh": "这次我们免收取消费。", "source": "造句"},
+        {"en": "waive the fee", "zh": "免收费用（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "waiver", "ipa": "/ˈweɪvər/", "gloss": "弃权，免除（名词）", "note": "waiver 是名词「免除/弃权书」；waive 是动词「免除」，别混词性"}
+      ],
+      "nuance": "投诉安抚高频 waive the fee/charge（免收费用）；是酒店让步补偿的常见方式。"
+    },
+    {
+      "word": "authorize",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈɔːθəraɪz/",
+      "subgroup": "verb",
+      "meaning": "v. 授权，批准（信用卡预授权）",
+      "core": "「给出许可/权限」——author 权威 + ize，入住时对信用卡冻结额度。",
+      "etymology": "author（权威、创始者，拉丁 auctor「使增长/发起的人」）+ -ize → 「赋予权力、批准」。同根 authority、author。",
+      "roots": [
+        {"part": "author", "meaning": "权威、发起者（auctor）"},
+        {"part": "ize", "meaning": "使…（动词后缀）"}
+      ],
+      "phonetics": "重音在首 /ˈɔː/，au 读 /ɔː/。英式拼 authorise。名词 authorization。",
+      "examples": [
+        {"en": "We'll authorize your card for a small deposit.", "zh": "我们会对您的卡做一笔小额预授权。", "source": "造句"},
+        {"en": "authorize a payment", "zh": "授权一笔付款（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "approve", "ipa": "/əˈpruːv/", "gloss": "批准，认可", "note": "approve 泛指「批准、同意」；authorize 强调「正式赋予权限」，信用卡冻结额度专用 authorize"}
+      ],
+      "nuance": "入住时前台 authorize your card（预授权信用卡）冻结一笔额度作担保，退房无损坏解冻。"
+    },
+    {
+      "word": "notify the housekeeping",
+      "levels": ["场景"],
+      "ipa": "/ˈnoʊtɪfaɪ ðə ˈhaʊskiːpɪŋ/",
+      "subgroup": "phrase",
+      "meaning": "phr. 通知客房部",
+      "core": "「打电话叫客房部」——缺毛巾、要打扫、要换床单时的固定动作。",
+      "etymology": "notify（通知）+ housekeeping（客房部）→ 「把需求告知负责清洁的部门」。",
+      "phonetics": "notify 重音在 /ˈnoʊ/，housekeeping 重音在 /ˈhaʊs/。整句两个主重音。",
+      "examples": [
+        {"en": "I'll notify housekeeping to bring extra towels.", "zh": "我通知客房部给您送额外的毛巾。", "source": "造句"},
+        {"en": "notify housekeeping", "zh": "通知客房部（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "call housekeeping", "ipa": "/ˌkɔːl ˈhaʊskiːpɪŋ/", "gloss": "打电话给客房部", "note": "call housekeeping 更口语直接；notify housekeeping 略正式，前台代客处理时常用"}
+      ],
+      "nuance": "客房需求（加毛巾、打扫、换床单）前台常说 I'll notify/call housekeeping（我通知客房部）。"
+    },
+    {
+      "word": "out of order",
+      "levels": ["六级", "口语"],
+      "ipa": "/ˌaʊt əv ˈɔːrdər/",
+      "subgroup": "phrase",
+      "meaning": "phr. 出故障，坏了（设备）",
+      "core": "「脱离了正常秩序 → 不能用了」——电梯、制冰机故障时的招牌用语。",
+      "etymology": "out of（脱离）+ order（正常运转的状态/秩序）→ 「不在正常工作状态」，即故障。",
+      "phonetics": "主重音在 order 的 /ˈɔːr/。out of 连读弱化成 /aʊtəv/。",
+      "examples": [
+        {"en": "The elevator is out of order, so please use the stairs.", "zh": "电梯坏了，请走楼梯。", "source": "造句"},
+        {"en": "an Out of Order sign", "zh": "「故障」告示牌（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "not working", "ipa": "/ˌnɑːt ˈwɜːrkɪŋ/", "gloss": "不工作，坏了", "note": "not working 更口语通用；out of order 常见于设备/机器的正式告示牌"}
+      ],
+      "nuance": "设备故障的招牌短语 out of order（尤指电梯、机器）；投诉设备也说 not working、faulty、broken。"
+    },
+    {
+      "word": "run out of",
+      "levels": ["六级", "口语"],
+      "ipa": "/ˌrʌn ˈaʊt əv/",
+      "subgroup": "phrase",
+      "meaning": "phr. 用完，耗尽（某物）",
+      "core": "「存量跑光了」——run 跑 + out 尽，房间用完、毛巾用完都用它。",
+      "etymology": "run（流逝、跑动）+ out of（…没了）→ 「（某物）流光耗尽」。",
+      "phonetics": "主重音在 out /ˈaʊt/。run out of 三词连读成 /rʌnaʊtəv/。",
+      "examples": [
+        {"en": "I'm afraid we've run out of double rooms tonight.", "zh": "恐怕今晚我们的双人房都订完了。", "source": "造句"},
+        {"en": "run out of rooms / towels", "zh": "房间／毛巾用完（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "be out of", "ipa": "/bi ˈaʊt əv/", "gloss": "没有…了", "note": "be out of 是静态「已经没了」；run out of 强调「（逐渐）用光」这个过程"}
+      ],
+      "nuance": "没房/缺物高频 run out of（用完）；we've run out of rooms ≈ sold out（订满）。"
+    },
+    {
+      "word": "sort out",
+      "levels": ["六级", "口语"],
+      "ipa": "/ˌsɔːrt ˈaʊt/",
+      "subgroup": "phrase",
+      "meaning": "phr. 解决，处理妥当",
+      "core": "「把乱的理顺 → 搞定问题」——投诉后前台承诺「我来处理好」。",
+      "etymology": "sort（分类整理，拉丁 sors「份、类」）+ out（彻底）→ 「把问题理清、处理妥当」。",
+      "phonetics": "主重音在 out /ˈaʊt/。sort 的 t 与 out 连读。英式尤其常用。",
+      "examples": [
+        {"en": "Don't worry, we'll sort out the billing error right away.", "zh": "别担心，我们马上把账单错误处理好。", "source": "造句"},
+        {"en": "sort out the problem", "zh": "解决问题（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "resolve", "ipa": "/rɪˈzɑːlv/", "gloss": "解决", "note": "resolve 更正式书面（resolve the issue）；sort out 更口语，前台安抚客人常用"}
+      ],
+      "nuance": "处理投诉高频 we'll sort it out（我们会处理好）；比 solve 更口语、更显主动担当。"
+    },
+    {
+      "word": "look into",
+      "levels": ["六级", "口语"],
+      "ipa": "/ˌlʊk ˈɪntuː/",
+      "subgroup": "phrase",
+      "meaning": "phr. 调查，仔细查看（问题）",
+      "core": "「往里看个究竟」——收到投诉后承诺「我去查一下」。",
+      "etymology": "look（看）+ into（往里）→ 「深入查看、调查」。",
+      "phonetics": "主重音在 look /ˈlʊk/。into 弱读 /ɪntə/。",
+      "examples": [
+        {"en": "Let me look into the extra charge on your bill.", "zh": "我查一下您账单上这笔额外费用。", "source": "造句"},
+        {"en": "look into the matter", "zh": "调查此事（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "investigate", "ipa": "/ɪnˈvestɪɡeɪt/", "gloss": "调查", "note": "investigate 更正式、力度更强；look into 更口语，前台受理疑问时常用"}
+      ],
+      "nuance": "处理疑问/投诉高频 let me look into it（我查一下）；表示「会去核实处理」的礼貌承诺。"
+    },
+    {
+      "word": "walk-in",
+      "levels": ["场景"],
+      "ipa": "/ˈwɔːkɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 无预订到店客人；a. 无需预约的",
+      "core": "「没订就直接走进来的客人」——walk 走 + in 进，无 reservation 现场求房。",
+      "etymology": "由动词短语 walk in（走进来）名词化→ 「未经预订径直到店的客人」。",
+      "phonetics": "作名词重音在前 /ˈwɔːk/，常带连字符。walk 读 /wɔːk/，l 不发音。",
+      "examples": [
+        {"en": "We can take walk-ins if there are rooms available.", "zh": "有空房的话我们接待无预订的客人。", "source": "造句"},
+        {"en": "a walk-in guest", "zh": "无预订到店客（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "reservation", "ipa": "/ˌrezərˈveɪʃn/", "gloss": "预订", "note": "walk-in 是「没订就来」；有 reservation 是「提前订好再来」，两种到店方式对立"}
+      ],
+      "nuance": "walk-in（无预订到店）能否入住取决于当天有没有 vacancy；旺季常只保预订客。"
+    },
+    {
+      "word": "no-show",
+      "levels": ["场景"],
+      "ipa": "/ˈnoʊʃoʊ/",
+      "subgroup": "noun",
+      "meaning": "n. 预订未到（的客人）",
+      "core": "「订了却没露面」——no 没 + show 出现，常被扣一晚房费。",
+      "etymology": "no（没有）+ show（露面，show up 的 show）→ 「订了房却没出现的人/情况」。",
+      "phonetics": "两词素都读，主重音在 no /ˈnoʊ/。带连字符 no-show。",
+      "examples": [
+        {"en": "No-shows are charged for the first night.", "zh": "预订未到者会被收取第一晚房费。", "source": "造句"},
+        {"en": "a no-show fee", "zh": "未到罚金（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "cancellation", "ipa": "/ˌkænsəˈleɪʃn/", "gloss": "取消", "note": "cancellation 是「提前主动取消」；no-show 是「不取消也不来」，后者罚得更重"}
+      ],
+      "nuance": "no-show（订了不来）常触发 no-show fee（扣一晚房费）；区别于提前 cancel（可能免费）。"
+    },
+    {
+      "word": "occupancy",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈɑːkjupənsi/",
+      "subgroup": "noun",
+      "meaning": "n. 入住率；占用（人数）",
+      "core": "「被占用的状态/入住情况」——oc 朝 + cup 拿，occupancy rate 即入住率。",
+      "etymology": "occupy（占用，ob-朝 + capere 拿）+ -ancy → occupancy「占用状态、入住率」。同族 occupied、occupation。",
+      "roots": [
+        {"part": "oc", "meaning": "朝、向（ob-）"},
+        {"part": "cup", "meaning": "拿、取（capere）"},
+        {"part": "ancy", "meaning": "名词后缀，表状态"}
+      ],
+      "phonetics": "重音在首 /ˈɑː/，四音节，词尾 -cy 读 /si/。搭配 occupancy rate、double occupancy。",
+      "examples": [
+        {"en": "The rate is based on double occupancy.", "zh": "这个价格按双人入住计算。", "source": "造句"},
+        {"en": "occupancy rate", "zh": "入住率（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "vacancy", "ipa": "/ˈveɪkənsi/", "gloss": "空房（率）", "note": "occupancy（被占用/入住）与 vacancy（空着）是一体两面：入住率高则空房少"}
+      ],
+      "nuance": "double occupancy（双人入住价）是常见计价口径；occupancy rate（入住率）是酒店经营核心指标。"
+    },
+    {
+      "word": "keycard",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈkiːkɑːrd/",
+      "subgroup": "noun",
+      "meaning": "n. 房卡（磁卡/感应卡）",
+      "core": "「开房门的那张卡」——key 钥匙 + card 卡，现代酒店取代了实体钥匙。",
+      "etymology": "key（钥匙）+ card（卡片）→ 「感应式的钥匙卡」。现代酒店的 room key 多是 keycard。",
+      "phonetics": "主重音在 key /ˈkiː/，整体连读。也常分写 key card。",
+      "examples": [
+        {"en": "Tap your keycard on the reader to open the door.", "zh": "把房卡在感应器上一刷就能开门。", "source": "造句"},
+        {"en": "reactivate the keycard", "zh": "重新激活房卡（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "key", "ipa": "/kiː/", "gloss": "钥匙", "note": "key 是通称；keycard 特指磁卡/感应房卡，现代酒店的实际形态"}
+      ],
+      "nuance": "keycard 消磁打不开门是听力高频小插曲，前台会 reactivate（重新激活）；口语里常与 key 混用。"
+    },
+    {
+      "word": "wardrobe",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˈwɔːrdroʊb/",
+      "subgroup": "noun",
+      "meaning": "n. 衣柜，衣橱",
+      "core": "「看管衣物的地方」——ward 看守 + robe 长袍，房内挂衣服的柜子。",
+      "etymology": "古法语 warderobe（warder 看守 + robe 衣袍）→ 「存放看管衣物的房间/柜」。同源 guard、ward。",
+      "roots": [
+        {"part": "ward", "meaning": "看守、守护"},
+        {"part": "robe", "meaning": "长袍、衣物"}
+      ],
+      "phonetics": "重音在首 /ˈwɔːr/，词尾 -robe 读 /roʊb/。别读成 /rɑːb/。",
+      "examples": [
+        {"en": "There's an iron and a safe inside the wardrobe.", "zh": "衣柜里有熨斗和保险箱。", "source": "造句"},
+        {"en": "a built-in wardrobe", "zh": "嵌入式衣柜（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "closet", "ipa": "/ˈklɑːzɪt/", "gloss": "壁橱，储物间", "note": "closet 美式常用，多指嵌入墙内的壁橱；wardrobe 常指独立的衣柜，也指「全部衣物」"}
+      ],
+      "nuance": "客房 wardrobe（衣柜）里常放 safe（保险箱）、iron（熨斗）、hangers（衣架）；美式也说 closet。"
+    },
+    {
+      "word": "hairdryer",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈherdraɪər/",
+      "subgroup": "noun",
+      "meaning": "n. 吹风机",
+      "core": "「吹干头发的机器」——hair 头发 + dryer 烘干器，标准客房配套。",
+      "etymology": "hair（头发）+ dryer（烘干器，dry + -er）→ 「吹干头发的电器」。",
+      "phonetics": "主重音在 hair /ˈher/，dryer 读 /draɪər/。也分写 hair dryer。",
+      "examples": [
+        {"en": "Is there a hairdryer in the bathroom?", "zh": "浴室里有吹风机吗？", "source": "造句"},
+        {"en": "a hairdryer in the room", "zh": "房内配吹风机（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "amenities", "ipa": "/əˈmenətiz/", "gloss": "配套用品", "note": "hairdryer 是具体的一件；amenities 是含吹风机、咖啡机等的配套统称"}
+      ],
+      "nuance": "hairdryer 是常见 in-room amenity（客房配套）；没有时可 request（向前台索取）。"
+    },
+    {
+      "word": "safe",
+      "levels": ["托福", "场景"],
+      "ipa": "/seɪf/",
+      "subgroup": "noun",
+      "meaning": "n. 保险箱；a. 安全的",
+      "core": "「安全存放贵重物的箱子」——房内 in-room safe，存护照现金。",
+      "etymology": "拉丁 salvus「安然无恙的」→ 古法语 sauf → safe。名词「保险箱」义由「安全存放」引申。同源 salvage、save。",
+      "phonetics": "单音节 /seɪf/，双元音。名词「保险箱」与形容词「安全的」同形。",
+      "examples": [
+        {"en": "You can keep your valuables in the in-room safe.", "zh": "贵重物品可以放在客房保险箱里。", "source": "造句"},
+        {"en": "an in-room safe", "zh": "客房保险箱（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "safe-deposit box", "ipa": "/ˈseɪf dɪˌpɑːzɪt bɑːks/", "gloss": "保险箱", "note": "safe-deposit box 多指前台/银行的保管箱；safe 常指房内的小保险箱"}
+      ],
+      "senses": [
+        {"gloss": "保险箱（名词）", "logic": "「安全存放的箱子」→ 存贵重物", "en": "The passport is in the safe.", "zh": "护照在保险箱里。"},
+        {"gloss": "安全的（形容词）", "logic": "本义「安然无恙」→ 无危险的", "en": "It's a safe, quiet neighborhood.", "zh": "这一带安全又安静。"}
+      ],
+      "nuance": "客房 in-room safe（房内保险箱）存护照、现金；使用有时会 surcharge（收附加费）。"
+    },
+    {
+      "word": "luxurious",
+      "levels": ["托福", "场景"],
+      "ipa": "/lʌɡˈʒʊriəs/",
+      "subgroup": "desc",
+      "meaning": "a. 豪华的，奢华的",
+      "core": "「充满奢侈享受的」——lux 过度/奢侈，形容顶级房型和设施。",
+      "etymology": "拉丁 luxuria「过度、奢侈」（luxus 放纵）+ -ous → luxurious「奢华的」。同根 luxury、deluxe。",
+      "roots": [
+        {"part": "luxur", "meaning": "奢侈、放纵（luxuria）"},
+        {"part": "ious", "meaning": "形容词后缀，充满…的"}
+      ],
+      "phonetics": "重音在第二音节 /ˈʒʊr/，x 在此读 /ɡʒ/。别把重音放词首。名词 luxury。",
+      "examples": [
+        {"en": "The suite was luxurious, with marble bathrooms.", "zh": "这套房很奢华，配大理石浴室。", "source": "造句"},
+        {"en": "a luxurious suite", "zh": "豪华套房（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "deluxe", "ipa": "/dɪˈlʌks/", "gloss": "豪华的（房型等级）", "note": "deluxe 多作房型等级标签（deluxe room）；luxurious 泛指「奢华感」，描述体验"}
+      ],
+      "nuance": "luxurious 描述奢华体验；房型等级标签常用 deluxe（豪华房）、standard（标准房）区分档次。"
+    },
+    {
+      "word": "deluxe",
+      "levels": ["六级", "场景"],
+      "ipa": "/dɪˈlʌks/",
+      "subgroup": "desc",
+      "meaning": "a. 豪华的（房型等级）",
+      "core": "「更高一档的」——法语 de luxe「奢华的」，房型分 standard 与 deluxe。",
+      "etymology": "法语 de luxe「奢侈的」（de 属于 + luxe 奢华，拉丁 luxus）→ deluxe。同根 luxury、luxurious。",
+      "phonetics": "重音在第二音节 /ˈlʌks/，x 读 /ks/。也读 /dɪˈluːks/。别读成「德勒克斯」。",
+      "examples": [
+        {"en": "The deluxe room is larger and has a better view.", "zh": "豪华房更大，视野也更好。", "source": "造句"},
+        {"en": "a deluxe room", "zh": "豪华房（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "standard", "ipa": "/ˈstændərd/", "gloss": "标准的（房型）", "note": "standard room 是基础房型；deluxe room 是升一档的豪华房，升级常从 standard → deluxe"}
+      ],
+      "nuance": "房型阶梯 standard（标准）< deluxe（豪华）< suite（套房）；升级听力常提 upgrade to a deluxe room。"
+    },
+    {
+      "word": "en-suite",
+      "levels": ["场景"],
+      "ipa": "/ˌɑːn ˈswiːt/",
+      "subgroup": "desc",
+      "meaning": "a. 带独立卫浴的（房间）",
+      "core": "「卫浴就在房内、成套相连」——法语 en suite「成套连着」，卖点常提。",
+      "etymology": "法语 en suite「成套地、连在一起」（suite 成套，源自拉丁 sequi 跟随）→ 「卧室自带相连的卫浴」。同根 suite、sequence。",
+      "phonetics": "法语外来词，读 /ˌɑːn ˈswiːt/，suite 部分同 sweet。别按拼写读。",
+      "examples": [
+        {"en": "Every room has an en-suite bathroom.", "zh": "每间房都带独立卫浴。", "source": "造句"},
+        {"en": "an en-suite bathroom", "zh": "独立卫浴（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "private bathroom", "ipa": "/ˌpraɪvət ˈbæθruːm/", "gloss": "独立卫生间", "note": "private bathroom 是通俗说法；en-suite 更地道（尤英式），强调「卫浴与卧室相连成套」"}
+      ],
+      "nuance": "en-suite（房内自带卫浴）是订房卖点，对比青旅的 shared bathroom（公用卫浴）。"
+    },
+    {
+      "word": "waterfront",
+      "levels": ["场景"],
+      "ipa": "/ˈwɔːtərfrʌnt/",
+      "subgroup": "desc",
+      "meaning": "a./n. 临水的；滨水地带",
+      "core": "「正对着水岸的」——water 水 + front 前沿，海景/湖景房的卖点词。",
+      "etymology": "water（水）+ front（前沿、临面）→ 「城市/建筑临水的一侧」。",
+      "phonetics": "主重音在 water /ˈwɔː/，整体连读。front 弱读 /frʌnt/。",
+      "examples": [
+        {"en": "The hotel enjoys a prime waterfront location.", "zh": "酒店坐拥绝佳的临水位置。", "source": "造句"},
+        {"en": "a waterfront view", "zh": "临水景观（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "seafront", "ipa": "/ˈsiːfrʌnt/", "gloss": "海滨（一线）", "note": "seafront 特指临海一线；waterfront 泛指临水（海、湖、河）一侧，范围更广"}
+      ],
+      "nuance": "waterfront（临水）比 sea view 更强调「就在水岸边」；宣传高级房型的位置卖点常用。"
+    },
+    {
+      "word": "vegetarian",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌvedʒəˈteriən/",
+      "subgroup": "desc",
+      "meaning": "a./n. 素食的；素食者",
+      "core": "「吃素的」——veget 植物/蔬菜，早餐点餐、特殊饮食请求高频。",
+      "etymology": "vegetable（蔬菜，拉丁 vegetare「使生长」）+ -arian（…主义者）→ vegetarian「素食者」。同根 vegetate、vigor。",
+      "roots": [
+        {"part": "veget", "meaning": "蔬菜、植物（vegetare 使生长）"},
+        {"part": "arian", "meaning": "…者、…主义者"}
+      ],
+      "phonetics": "重音在第三音节 /ˈter/，五音节。别把重音放前面。",
+      "examples": [
+        {"en": "Do you have vegetarian options at breakfast?", "zh": "早餐有素食选择吗？", "source": "造句"},
+        {"en": "vegetarian options", "zh": "素食选项（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "vegan", "ipa": "/ˈviːɡən/", "gloss": "纯素的，严格素食者", "note": "vegan 是「全素」，连蛋奶都不吃；vegetarian 通常可吃蛋奶，程度不同"}
+      ],
+      "nuance": "特殊饮食请求高频：vegetarian（素食）、vegan（纯素）、gluten-free（无麸质）、allergy（过敏）。"
+    },
+    {
+      "word": "leak",
+      "levels": ["托福", "场景"],
+      "ipa": "/liːk/",
+      "subgroup": "verb",
+      "meaning": "v./n. 漏水，渗漏",
+      "core": "「液体从缝隙渗出」——水龙头/天花板漏水是客房投诉高频。",
+      "etymology": "中古英语 leken「渗漏」，源自古诺斯语 leka「滴漏」。与 lack（缺少）无关，别混。",
+      "phonetics": "长元音 /iː/，单音节。与 leek（韭葱）同音，靠语境区分。",
+      "examples": [
+        {"en": "There's a leak under the sink in my bathroom.", "zh": "我浴室水槽下面漏水。", "source": "造句"},
+        {"en": "a water leak", "zh": "漏水（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "drip", "ipa": "/drɪp/", "gloss": "滴漏", "note": "drip 是「一滴滴地漏」（水龙头滴水）；leak 泛指任何渗漏，程度可大可小"}
+      ],
+      "nuance": "客房设施投诉高频：a leak（漏水）、the toilet won't flush（马桶冲不了）、the drain is clogged（下水道堵了）。"
+    },
+    {
+      "word": "check-in online",
+      "levels": ["场景"],
+      "ipa": "/ˌtʃekɪn ˈɔːnlaɪn/",
+      "subgroup": "phrase",
+      "meaning": "phr. 在线办理入住",
+      "core": "「到店前先在网上办入住」——省去前台排队，取卡即走。",
+      "etymology": "check in（办入住）+ online（在网上）→ 「通过 App/网站提前完成入住登记」。",
+      "phonetics": "check-in 重音在 check，online 重音在 /ˈlaɪn/（也可 /ˌɔːnˈlaɪn/）。",
+      "examples": [
+        {"en": "You can check in online and skip the front desk.", "zh": "您可以在线办理入住，无需排队等前台。", "source": "造句"},
+        {"en": "online check-in", "zh": "在线入住（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "self-check-in", "ipa": "/ˌself ˈtʃekɪn/", "gloss": "自助入住", "note": "self-check-in 多指到店用机器自助办理；online check-in 是到店前在网上先办"}
+      ],
+      "nuance": "online check-in（在线入住）越来越常见，到店只需取 keycard；与传统 front desk 办理并存。"
+    },
+    {
+      "word": "book a room",
+      "levels": ["基础", "口语"],
+      "ipa": "/ˌbʊk ə ˈruːm/",
+      "subgroup": "phrase",
+      "meaning": "phr. 订房",
+      "core": "「订一间房」——最口语直接的预订说法，等于 reserve/make a reservation。",
+      "etymology": "book（预订，见动词桶）+ a room（一间房）→ 最日常的订房搭配。",
+      "phonetics": "主重音在 room /ˈruːm/。book 读短音 /bʊk/。",
+      "examples": [
+        {"en": "I'd like to book a room for this weekend.", "zh": "我想订这周末的一间房。", "source": "造句"},
+        {"en": "book a room online", "zh": "在网上订房（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "make a reservation", "ipa": "/ˌmeɪk ə ˌrezərˈveɪʃn/", "gloss": "做预订", "note": "book a room 更口语直接；make a reservation 更正式，可指房/餐位/预约"}
+      ],
+      "nuance": "book a room（订房）是最口语的说法；正式些用 make a reservation 或 reserve a room。"
+    },
+    {
+      "word": "any other requests",
+      "levels": ["口语", "场景"],
+      "ipa": "/ˌeni ˈʌðər rɪˈkwests/",
+      "subgroup": "phrase",
+      "meaning": "phr. 还有别的需要吗",
+      "core": "「还有其他要求吗」——前台办完手续收尾的礼貌问句。",
+      "etymology": "any other（任何其他的）+ requests（请求，见 request）→ 前台确认客人是否还有需求的收尾套话。",
+      "phonetics": "主重音在 requests 的 /ˈkwests/。any other 弱读连读。",
+      "examples": [
+        {"en": "Here's your keycard. Any other requests?", "zh": "这是您的房卡。还有别的需要吗？", "source": "造句"},
+        {"en": "Is there anything else?", "zh": "还有别的事吗（同义收尾语）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "anything else", "ipa": "/ˈeniθɪŋ els/", "gloss": "还有别的吗", "note": "anything else 更简短口语；any other requests 略正式，都是办完事的收尾问句"}
+      ],
+      "nuance": "办完手续前台高频收尾 Any other requests? / Anything else?（还需要别的吗）；听力里常引出加床、叫醒等追加请求。"
+    }
+  ]
+}

@@ -1,0 +1,1756 @@
+{
+  "enrich": {
+    "feed": {
+      "core": "把食物送到嘴边——供养的动作",
+      "senses": [
+        {
+          "gloss": "vt. 喂，给…食物",
+          "logic": "本义：主动把食物递给对方",
+          "en": "The keepers feed the seals fresh fish at noon.",
+          "zh": "饲养员中午给海豹喂新鲜的鱼。"
+        },
+        {
+          "gloss": "vi. (动物)以…为食 (feed on)",
+          "logic": "视角反转：从「被喂」到动物自己「取食」",
+          "en": "Pandas feed almost entirely on bamboo.",
+          "zh": "熊猫几乎完全以竹子为食。"
+        },
+        {
+          "gloss": "vt. 向…输送、供给(信息/物料)",
+          "logic": "从「喂食」抽象为「持续供给」",
+          "en": "Cameras feed live images to the control room.",
+          "zh": "摄像头把实时画面传送到控制室。"
+        }
+      ]
+    },
+    "spot": {
+      "core": "一个「点」——既是斑点，也是「一眼认出的定位」",
+      "senses": [
+        {
+          "gloss": "vt. 认出，发现",
+          "logic": "在一片背景里锁定「那一个点」",
+          "en": "See if you can spot the leopard hidden in the tree.",
+          "zh": "看你能不能发现藏在树上的豹子。"
+        },
+        {
+          "gloss": "n. 斑点，点",
+          "logic": "本义：皮毛上的一小块色点",
+          "en": "A leopard's spots are actually rosettes.",
+          "zh": "豹子的斑点其实是玫瑰花状的。"
+        },
+        {
+          "gloss": "n. 地点，场所",
+          "logic": "从「一个点」引申为「一处地方」",
+          "en": "This is the best spot to watch the flamingos.",
+          "zh": "这是观赏火烈鸟最好的位置。"
+        }
+      ]
+    },
+    "swing": {
+      "core": "抓住一点来回甩动——弧线运动",
+      "senses": [
+        {
+          "gloss": "vi. (攀着)荡、摆",
+          "logic": "本义：以支点为轴画弧",
+          "en": "Gibbons swing from branch to branch with ease.",
+          "zh": "长臂猿在树枝间轻松地荡来荡去。"
+        },
+        {
+          "gloss": "vt./vi. (使)转向，猛转",
+          "logic": "弧线运动引申为方向的骤然改变",
+          "en": "The gate swings open automatically.",
+          "zh": "这道门会自动向外打开。"
+        }
+      ]
+    },
+    "climb": {
+      "core": "手脚并用往高处爬——克服高度",
+      "senses": [
+        {
+          "gloss": "v. 攀爬，爬上",
+          "logic": "本义：向上移动的费力动作",
+          "en": "The goats climb the steep rocks in the enclosure.",
+          "zh": "山羊爬上展区里陡峭的岩石。"
+        },
+        {
+          "gloss": "v. (数值/位置)上升",
+          "logic": "把「往上爬」抽象到抽象刻度上",
+          "en": "Visitor numbers climb sharply on weekends.",
+          "zh": "周末的游客人数急剧上升。"
+        }
+      ]
+    },
+    "chase": {
+      "core": "在后面紧追不放——追逐",
+      "senses": [
+        {
+          "gloss": "vt. 追赶，追捕",
+          "logic": "本义：紧跟目标不放",
+          "en": "The cheetah chases its prey at astonishing speed.",
+          "zh": "猎豹以惊人的速度追捕猎物。"
+        },
+        {
+          "gloss": "vt. 追求，追寻(目标)",
+          "logic": "把「追物」抽象为「追抽象目标」",
+          "en": "The zoo is chasing a new conservation grant.",
+          "zh": "动物园正在争取一笔新的保育拨款。"
+        }
+      ]
+    },
+    "adapt": {
+      "core": "改造自己去贴合环境——顺应",
+      "senses": [
+        {
+          "gloss": "vi. 适应(环境)",
+          "logic": "生物随环境调整自身",
+          "en": "Camels have adapted to survive in the desert.",
+          "zh": "骆驼已经进化得能在沙漠中生存。"
+        },
+        {
+          "gloss": "vt. 改编，改动使合适",
+          "logic": "把「使自己合适」外推到「使某物合适」",
+          "en": "They adapted the enclosure for the older elephants.",
+          "zh": "他们改造了展区以适应年老的大象。"
+        }
+      ],
+      "roots": [
+        {
+          "part": "ad-",
+          "meaning": "朝向"
+        },
+        {
+          "part": "apt",
+          "meaning": "合适(源自 aptus「贴合的」)"
+        }
+      ]
+    },
+    "survive": {
+      "core": "在危险/时间之后仍活下来——活过去",
+      "senses": [
+        {
+          "gloss": "vi. 幸存，活下来",
+          "logic": "本义：越过威胁继续存在",
+          "en": "Only a few of these tigers survive in the wild.",
+          "zh": "这些老虎在野外只剩下寥寥几只。"
+        },
+        {
+          "gloss": "vt. 比…活得久；挺过",
+          "logic": "「活过」某段时间或某人",
+          "en": "The old tortoise has survived three keepers.",
+          "zh": "这只老龟活得比三任饲养员都久。"
+        }
+      ],
+      "roots": [
+        {
+          "part": "sur-",
+          "meaning": "超过、在…之上"
+        },
+        {
+          "part": "vive",
+          "meaning": "活(源自 vivere「生活」)"
+        }
+      ]
+    },
+    "observe": {
+      "core": "盯着看并留意——带心地看",
+      "senses": [
+        {
+          "gloss": "vt. 观察，注意到",
+          "logic": "本义：仔细看以获取信息",
+          "en": "Visitors can observe the pandas through a glass wall.",
+          "zh": "游客可以隔着玻璃墙观察熊猫。"
+        },
+        {
+          "gloss": "vt. 遵守(规则/习俗)",
+          "logic": "从「留意规矩」引申为「守规矩」",
+          "en": "Please observe the rule not to feed the animals.",
+          "zh": "请遵守不投喂动物的规定。"
+        }
+      ],
+      "roots": [
+        {
+          "part": "ob-",
+          "meaning": "朝向、对着"
+        },
+        {
+          "part": "serve",
+          "meaning": "保持、看守(源自 servare)"
+        }
+      ]
+    },
+    "swallow": {
+      "core": "把东西整个吞下喉咙——咽下去",
+      "senses": [
+        {
+          "gloss": "vt. 吞，咽",
+          "logic": "本义：食物经喉咙下咽",
+          "en": "A snake can swallow prey larger than its own head.",
+          "zh": "蛇能吞下比自己头还大的猎物。"
+        },
+        {
+          "gloss": "n. 燕子",
+          "logic": "同形异义：另一个古词，指燕子",
+          "en": "Swallows nest under the eaves of the aviary.",
+          "zh": "燕子在鸟舍的屋檐下筑巢。"
+        }
+      ]
+    },
+    "graze": {
+      "core": "低头一口一口啃草——吃草",
+      "senses": [
+        {
+          "gloss": "vi. (牲畜)吃草",
+          "logic": "本义：食草动物边走边啃",
+          "en": "Zebras graze peacefully on the open plain.",
+          "zh": "斑马在开阔的草地上安静地吃草。"
+        },
+        {
+          "gloss": "vt. 擦伤，擦过",
+          "logic": "「贴着地面啃」引申为「贴着表面擦过」",
+          "en": "The branch just grazed his arm.",
+          "zh": "那根树枝只是擦到了他的胳膊。"
+        }
+      ]
+    },
+    "hatch": {
+      "core": "蛋壳裂开、雏鸟破壳而出——孵出",
+      "senses": [
+        {
+          "gloss": "v. (使)孵化",
+          "logic": "本义：卵中生命破壳",
+          "en": "The penguin chicks hatched after two months.",
+          "zh": "企鹅雏鸟在两个月后孵化出来。"
+        },
+        {
+          "gloss": "vt. 策划，酝酿(计划)",
+          "logic": "把「孕育出生命」比喻成「孕育出主意」",
+          "en": "The zoo hatched a plan to expand the reptile house.",
+          "zh": "动物园酝酿了扩建爬虫馆的计划。"
+        }
+      ]
+    },
+    "migrate": {
+      "core": "整群跨越远方迁移——换地方",
+      "roots": [
+        {
+          "part": "migr",
+          "meaning": "迁移、移动(源自 migrare)"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ]
+    },
+    "predator": {
+      "core": "以捕杀他者为生的那一方——猎手",
+      "roots": [
+        {
+          "part": "pred",
+          "meaning": "掠夺、捕食(源自 praeda「猎物」)"
+        },
+        {
+          "part": "-ator",
+          "meaning": "做…的人/物"
+        }
+      ]
+    },
+    "prey": {
+      "core": "被猎杀、被吃掉的那一方——被捕食者",
+      "senses": [
+        {
+          "gloss": "n. 猎物，被捕食的动物",
+          "logic": "本义：捕食关系里被吃的一方",
+          "en": "Rabbits are common prey for foxes and hawks.",
+          "zh": "兔子是狐狸和鹰常见的猎物。"
+        },
+        {
+          "gloss": "vi. 捕食；侵害 (prey on)",
+          "logic": "同词转为动词：对猎物下手",
+          "en": "Owls prey on mice at night.",
+          "zh": "猫头鹰在夜里捕食老鼠。"
+        }
+      ]
+    },
+    "carnivore": {
+      "core": "靠吃肉过活的动物——食肉者",
+      "roots": [
+        {
+          "part": "carn",
+          "meaning": "肉(源自 caro，同 carnival、carnage)"
+        },
+        {
+          "part": "-vore",
+          "meaning": "吃…的(源自 vorare「吞食」)"
+        }
+      ]
+    },
+    "herbivore": {
+      "core": "只吃植物的动物——食草者",
+      "roots": [
+        {
+          "part": "herb",
+          "meaning": "草、植物"
+        },
+        {
+          "part": "-vore",
+          "meaning": "吃…的(源自 vorare「吞食」)"
+        }
+      ]
+    },
+    "conservation": {
+      "core": "把物种和栖地完整地守住——保育",
+      "roots": [
+        {
+          "part": "con-",
+          "meaning": "一起、完全"
+        },
+        {
+          "part": "serv",
+          "meaning": "保持、守护(源自 servare)"
+        },
+        {
+          "part": "-ation",
+          "meaning": "名词后缀"
+        }
+      ]
+    },
+    "captivity": {
+      "core": "被关住、失去自由的状态——圈养",
+      "roots": [
+        {
+          "part": "capt",
+          "meaning": "抓住(源自 capere，同 capture、captive)"
+        },
+        {
+          "part": "-ivity",
+          "meaning": "状态名词后缀"
+        }
+      ]
+    },
+    "mammal": {
+      "core": "用乳汁哺育后代的一类动物——哺乳动物",
+      "roots": [
+        {
+          "part": "mamma",
+          "meaning": "乳房(拉丁语)"
+        },
+        {
+          "part": "-al",
+          "meaning": "…类的"
+        }
+      ]
+    },
+    "amphibian": {
+      "core": "水陆两栖、两种生活都过的动物",
+      "roots": [
+        {
+          "part": "amphi-",
+          "meaning": "两者、两边"
+        },
+        {
+          "part": "bio",
+          "meaning": "生命、生活(源自 bios)"
+        },
+        {
+          "part": "-an",
+          "meaning": "…类的"
+        }
+      ]
+    },
+    "primate": {
+      "core": "灵长目——「等级最高」的一类动物",
+      "roots": [
+        {
+          "part": "prim",
+          "meaning": "第一、首要(源自 primus)"
+        },
+        {
+          "part": "-ate",
+          "meaning": "名词后缀"
+        }
+      ]
+    },
+    "habitat": {
+      "core": "某物种「住惯了」的那片天然环境——栖息地",
+      "roots": [
+        {
+          "part": "habit",
+          "meaning": "居住、习惯(源自 habitare「居住」)"
+        },
+        {
+          "part": "-at",
+          "meaning": "(拉丁第三人称)它居住之处"
+        }
+      ]
+    },
+    "trunk": {
+      "core": "一根粗壮的主干——延伸出多个「主干形」含义",
+      "senses": [
+        {
+          "gloss": "n. 象鼻",
+          "logic": "像树干一样又长又粗的鼻子",
+          "en": "The elephant used its trunk to spray water.",
+          "zh": "大象用鼻子喷水。"
+        },
+        {
+          "gloss": "n. 树干",
+          "logic": "本义：树的主干",
+          "en": "The monkey clung to the trunk of the tree.",
+          "zh": "猴子紧抓着树干。"
+        },
+        {
+          "gloss": "n. 躯干；(汽车)后备箱",
+          "logic": "「主干/主箱体」的引申",
+          "en": "The keeper checked the animal's trunk for injuries.",
+          "zh": "饲养员检查动物的躯干有无伤口。"
+        }
+      ]
+    },
+    "nocturnal": {
+      "core": "白天睡、夜里活动的——属于夜的",
+      "roots": [
+        {
+          "part": "noct",
+          "meaning": "夜(源自 nox，同 nocturne 夜曲)"
+        },
+        {
+          "part": "-urnal",
+          "meaning": "…时段的(比照 diurnal)"
+        }
+      ]
+    },
+    "endangered": {
+      "core": "处在灭绝边缘、被推入危险的——濒危的",
+      "roots": [
+        {
+          "part": "en-",
+          "meaning": "使进入…状态"
+        },
+        {
+          "part": "danger",
+          "meaning": "危险"
+        },
+        {
+          "part": "-ed",
+          "meaning": "形容词化"
+        }
+      ]
+    },
+    "extinct": {
+      "core": "整个物种被「熄灭」、一个不剩——绝迹的",
+      "roots": [
+        {
+          "part": "ex-",
+          "meaning": "出、彻底"
+        },
+        {
+          "part": "stinct",
+          "meaning": "熄灭、刺(源自 exstinguere「扑灭」)"
+        }
+      ]
+    },
+    "venomous": {
+      "core": "体内带毒、咬人会注毒的——有毒液的",
+      "roots": [
+        {
+          "part": "venom",
+          "meaning": "毒液(源自拉丁 venenum)"
+        },
+        {
+          "part": "-ous",
+          "meaning": "充满…的"
+        }
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "rhinoceros",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/raɪˈnɑːsərəs/",
+      "subgroup": "noun",
+      "meaning": "n. 犀牛",
+      "core": "鼻子上顶着角的大兽",
+      "etymology": "希腊语 rhino「鼻」+ keras「角」，字面「鼻子上有角的」。口语常缩写为 rhino。",
+      "phonetics": "重音在第二音节 /ˈnɑː/，词尾 -ceros 读 /sərəs/，别读成 -seros。",
+      "examples": [
+        {
+          "en": "The white rhinoceros is critically endangered.",
+          "zh": "白犀牛已极度濒危。",
+          "source": "造句"
+        },
+        {
+          "en": "a black rhino",
+          "zh": "一头黑犀牛（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "hippopotamus",
+          "ipa": "/ˌhɪpəˈpɑːtəməs/",
+          "gloss": "河马",
+          "note": "两者都是大型厚皮兽，但 hippo 半水生、无角，rhino 陆生、有角"
+        }
+      ],
+      "nuance": "rhinoceros 靠鼻角辨识；同为大型厚皮动物的 hippopotamus 无角、多在水中。",
+      "roots": [
+        {
+          "part": "rhino",
+          "meaning": "鼻(源自 rhis)"
+        },
+        {
+          "part": "ceros",
+          "meaning": "角(源自 keras)"
+        }
+      ]
+    },
+    {
+      "word": "gorilla",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ɡəˈrɪlə/",
+      "subgroup": "noun",
+      "meaning": "n. 大猩猩",
+      "core": "灵长类中体型最大的森林巨兽",
+      "etymology": "1847 年博物学家取自希腊探险家汉诺（Hanno）游记里描述非洲「多毛野人」的词 Gorillai。注意与 guerrilla（游击队）同音异义。",
+      "phonetics": "重音在第二音节 /ˈrɪ/，与 guerrilla 完全同音，靠语境区分。",
+      "examples": [
+        {
+          "en": "A silverback gorilla leads and protects the whole group.",
+          "zh": "一只银背大猩猩领导并保护整个族群。",
+          "source": "造句"
+        },
+        {
+          "en": "a lowland gorilla",
+          "zh": "一只低地大猩猩（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "chimpanzee",
+          "ipa": "/ˌtʃɪmpænˈziː/",
+          "gloss": "黑猩猩",
+          "note": "gorilla 体型大得多、更沉稳；chimpanzee 体型小、更活跃灵巧"
+        }
+      ],
+      "nuance": "gorilla 是最大的灵长类、素食为主；chimpanzee 体型小、更聪明好动，与人类亲缘更近。"
+    },
+    {
+      "word": "dolphin",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ˈdɑːlfɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 海豚",
+      "core": "会跃出水面、聪明友好的海洋哺乳动物",
+      "etymology": "希腊语 delphis「海豚」，与 delphys「子宫」同源——古人视其为「有子宫的鱼」，因海豚胎生哺乳。海豚馆是 aquarium 的招牌。",
+      "phonetics": "重音在首音节 /ˈdɑːl/，ph 读 /f/，词尾 -phin 读 /fɪn/。",
+      "examples": [
+        {
+          "en": "Dolphins are highly intelligent and live in pods.",
+          "zh": "海豚非常聪明，成群（pod）生活。",
+          "source": "造句"
+        },
+        {
+          "en": "a bottlenose dolphin",
+          "zh": "一只宽吻海豚（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "porpoise",
+          "ipa": "/ˈpɔːrpəs/",
+          "gloss": "鼠海豚",
+          "note": "porpoise 体型更小、吻部更钝；dolphin 吻长、更常见于表演"
+        }
+      ],
+      "nuance": "dolphin 吻长、爱表演、常见；porpoise 是近亲但体型小、吻钝、少见。"
+    },
+    {
+      "word": "owl",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/aʊl/",
+      "subgroup": "noun",
+      "meaning": "n. 猫头鹰",
+      "core": "无声夜飞、大眼睛的夜行猛禽",
+      "etymology": "古英语 ūle，拟声词——模仿其叫声，与德语 Eule 同源。夜行馆（nocturnal house）的明星。",
+      "phonetics": "单音节双元音 /aʊ/，与 howl、fowl 押韵；只有一个音节别读成两个。",
+      "examples": [
+        {
+          "en": "Owls can rotate their heads almost all the way around.",
+          "zh": "猫头鹰的头几乎能转一整圈。",
+          "source": "造句"
+        },
+        {
+          "en": "a barn owl",
+          "zh": "一只仓鸮／谷仓猫头鹰（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "hawk",
+          "ipa": "/hɔːk/",
+          "gloss": "鹰，隼",
+          "note": "owl 昼伏夜出、面盘圆；hawk 白天捕猎、视力锐利"
+        }
+      ],
+      "nuance": "owl 是夜行猛禽、无声飞行；hawk 是昼行猛禽，靠白天的锐利视力捕猎。"
+    },
+    {
+      "word": "camouflage",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈkæməflɑːʒ/",
+      "subgroup": "noun",
+      "meaning": "n./v. 伪装，保护色",
+      "core": "把自己「藏进背景」不被发现的本领",
+      "etymology": "法语 camoufler「乔装、蒙骗」，一战时军队大量使用后进入英语。动物学里指用体色/花纹融入环境。",
+      "phonetics": "法语借词，词尾 -flage 读 /flɑːʒ/，最后是 /ʒ/（像 vision 里的音），别读成 /dʒ/。",
+      "examples": [
+        {
+          "en": "A chameleon uses camouflage to blend into the leaves.",
+          "zh": "变色龙用保护色融入树叶中。",
+          "source": "造句"
+        },
+        {
+          "en": "perfect camouflage",
+          "zh": "完美的伪装（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "disguise",
+          "ipa": "/dɪsˈɡaɪz/",
+          "gloss": "伪装，假扮",
+          "note": "camouflage 靠「融入背景」隐身；disguise 靠「改变外表」冒充成别的东西"
+        }
+      ],
+      "nuance": "camouflage 是「隐入背景」不被看见；disguise 是「改头换面」装成别的样子。"
+    },
+    {
+      "word": "instinct",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈɪnstɪŋkt/",
+      "subgroup": "noun",
+      "meaning": "n. 本能，直觉",
+      "core": "不用学、天生就会的行为冲动",
+      "etymology": "拉丁语 instinctus「冲动、刺激」（in-「向内」+ stinguere「刺」）——像是「从内部被刺激驱动」。动物迁徙、筑巢皆凭本能。",
+      "phonetics": "重音在首音节 /ˈɪn/，词尾 -nct 三个辅音连读 /ŋkt/，别吞掉 t。",
+      "examples": [
+        {
+          "en": "Sea turtles find the ocean by pure instinct.",
+          "zh": "海龟纯凭本能找到大海。",
+          "source": "造句"
+        },
+        {
+          "en": "a survival instinct",
+          "zh": "求生本能（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "intuition",
+          "ipa": "/ˌɪntuˈɪʃn/",
+          "gloss": "直觉，直观感受",
+          "note": "instinct 是先天、跨物种的行为驱动；intuition 是人对情境的直觉判断"
+        }
+      ],
+      "nuance": "instinct 是与生俱来、动物共有的行为驱动；intuition 偏指人不经推理的直觉判断。",
+      "roots": [
+        {
+          "part": "in-",
+          "meaning": "向内"
+        },
+        {
+          "part": "stinct",
+          "meaning": "刺、驱动(源自 stinguere)"
+        }
+      ]
+    },
+    {
+      "word": "territory",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈterətɔːri/",
+      "subgroup": "noun",
+      "meaning": "n. 领地，地盘",
+      "core": "一只动物划为己有、会驱赶入侵者的地盘",
+      "etymology": "拉丁语 territorium「城镇周边的土地」（terra「土地」）。动物学里指个体或群体守卫的活动范围。",
+      "phonetics": "四音节，重音在首 /ˈter/，美音词尾 -tory 读 /tɔːri/。",
+      "examples": [
+        {
+          "en": "Male tigers mark their territory with scent.",
+          "zh": "雄虎用气味标记自己的领地。",
+          "source": "造句"
+        },
+        {
+          "en": "defend its territory",
+          "zh": "守卫它的领地（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "habitat",
+          "ipa": "/ˈhæbɪtæt/",
+          "gloss": "栖息地",
+          "note": "territory 是被「守卫」的私有地盘；habitat 是物种赖以生存的自然环境类型"
+        }
+      ],
+      "nuance": "territory 是被个体守卫、排他的「地盘」；habitat 是物种整体生存的环境类型，不含排他义。",
+      "roots": [
+        {
+          "part": "terr",
+          "meaning": "土地(源自 terra)"
+        },
+        {
+          "part": "-tory",
+          "meaning": "场所"
+        }
+      ]
+    },
+    {
+      "word": "vertebrate",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈvɜːrtəbrət/",
+      "subgroup": "noun",
+      "meaning": "n. 脊椎动物  adj. 有脊椎的",
+      "core": "体内有一根脊柱撑起身体的动物",
+      "etymology": "拉丁语 vertebra「脊椎骨」（vertere「转动」——关节能转动之处）。与 invertebrate（无脊椎动物）相对。",
+      "phonetics": "重音在首 /ˈvɜːr/，词尾 -brate 弱读 /brət/，别读成 /breɪt/。",
+      "examples": [
+        {
+          "en": "Mammals, birds and fish are all vertebrates.",
+          "zh": "哺乳类、鸟类和鱼类都是脊椎动物。",
+          "source": "造句"
+        },
+        {
+          "en": "marine vertebrates",
+          "zh": "海洋脊椎动物（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "invertebrate",
+          "ipa": "/ɪnˈvɜːrtəbrət/",
+          "gloss": "无脊椎动物",
+          "note": "反义：invertebrate 无脊柱（昆虫、水母）；vertebrate 有脊柱"
+        }
+      ],
+      "nuance": "vertebrate（有脊椎）与 invertebrate（无脊椎，如昆虫、章鱼）相对，是动物分类的第一道分界。",
+      "roots": [
+        {
+          "part": "vertebr",
+          "meaning": "脊椎骨(源自 vertere「转动」)"
+        },
+        {
+          "part": "-ate",
+          "meaning": "名词/形容词后缀"
+        }
+      ]
+    },
+    {
+      "word": "burrow",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈbɜːroʊ/",
+      "subgroup": "noun",
+      "meaning": "n. 洞穴，地洞  v. 挖洞",
+      "core": "动物在地下挖出的藏身巢穴",
+      "etymology": "中古英语 borow，与 borough（城镇）、bury（埋）同源，本义「藏身的庇护所」。指兔、獾等挖的地洞。",
+      "phonetics": "重音在首 /ˈbɜːr/，与 borrow 音近易混：burrow 洞穴、borrow 借。",
+      "examples": [
+        {
+          "en": "Meerkats dig a network of burrows underground.",
+          "zh": "狐獴在地下挖出一整套地道。",
+          "source": "造句"
+        },
+        {
+          "en": "dig a burrow",
+          "zh": "挖地洞（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "den",
+          "ipa": "/den/",
+          "gloss": "兽穴，窝",
+          "note": "burrow 强调「挖出的地下通道」；den 泛指野兽栖身的窝（不一定是挖的）"
+        }
+      ],
+      "nuance": "burrow 特指动物挖掘的地下洞道；den 泛指狼、熊等大兽栖身之处，未必是挖出来的。"
+    },
+    {
+      "word": "scavenger",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ˈskævɪndʒər/",
+      "subgroup": "noun",
+      "meaning": "n. 食腐动物；拾荒者",
+      "core": "专吃别人吃剩的、清理尸体残渣的动物",
+      "etymology": "源自中古英语 scawager「收税/清道人」，本指城镇清道夫，后转指以腐肉为食的动物。秃鹫、鬣狗是典型 scavenger。",
+      "phonetics": "重音在首 /ˈskæ/，中间 -veng- 读 /vɪndʒ/，g 是软音 /dʒ/。",
+      "examples": [
+        {
+          "en": "Vultures are scavengers that feed on dead animals.",
+          "zh": "秃鹫是以死尸为食的食腐动物。",
+          "source": "造句"
+        },
+        {
+          "en": "a natural scavenger",
+          "zh": "天然的食腐动物（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "predator",
+          "ipa": "/ˈpredətər/",
+          "gloss": "捕食者",
+          "note": "scavenger 吃已经死掉的动物（腐肉）；predator 主动捕杀活的猎物"
+        }
+      ],
+      "nuance": "scavenger 靠捡食腐肉/残渣为生；predator 主动出击捕杀活猎物，两者是取食策略的对立面。",
+      "roots": [
+        {
+          "part": "scaveng",
+          "meaning": "清扫、收集(源自古词 scawage)"
+        },
+        {
+          "part": "-er",
+          "meaning": "做…的者"
+        }
+      ]
+    },
+    {
+      "word": "specimen",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈspesəmən/",
+      "subgroup": "noun",
+      "meaning": "n. 样本，标本；(某类的)代表个体",
+      "core": "拿来供观察、代表一整类的那「一个」",
+      "etymology": "拉丁语 specimen「标志、样品」（specere「看」）——「用来看的东西」。科普展板上常说 a fine specimen of…。",
+      "phonetics": "重音在首 /ˈspe/，词尾 -men 弱读 /mən/，别读成 /men/。",
+      "examples": [
+        {
+          "en": "This lizard is a rare specimen from the rainforest.",
+          "zh": "这只蜥蜴是来自雨林的珍稀标本。",
+          "source": "造句"
+        },
+        {
+          "en": "a live specimen",
+          "zh": "活体样本（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "sample",
+          "ipa": "/ˈsæmpl/",
+          "gloss": "样品，抽样",
+          "note": "specimen 多指单个、完整、供研究观察的个体；sample 常指从整体中抽取的一部分"
+        }
+      ],
+      "nuance": "specimen 是「供观察/展示的完整个体或标本」；sample 是「从总体中取出的一部分」。",
+      "roots": [
+        {
+          "part": "spec",
+          "meaning": "看(源自 specere)"
+        },
+        {
+          "part": "-imen",
+          "meaning": "结果/物名词后缀"
+        }
+      ]
+    },
+    {
+      "word": "spectator",
+      "levels": [
+        "托福",
+        "口语"
+      ],
+      "ipa": "/ˈspekteɪtər/",
+      "subgroup": "noun",
+      "meaning": "n. 观众，围观者",
+      "core": "站在场边「看」的人",
+      "etymology": "拉丁语 spectator「观看者」（spectare「注视」，spec「看」）。看喂食秀、动物表演时的人群即 spectators。",
+      "phonetics": "重音在首 /ˈspek/，与 spectacle 同根 spec；-tator 读 /teɪtər/。",
+      "examples": [
+        {
+          "en": "A crowd of spectators gathered to watch the feeding.",
+          "zh": "一群观众聚过来看喂食。",
+          "source": "造句"
+        },
+        {
+          "en": "excited spectators",
+          "zh": "兴奋的观众（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "audience",
+          "ipa": "/ˈɔːdiəns/",
+          "gloss": "观众，听众",
+          "note": "spectator 强调「用眼睛看」的观者（体育、表演）；audience 是整体的「受众群」，含听"
+        }
+      ],
+      "nuance": "spectator 突出「围观、观看」的单个看客；audience 指作为整体的受众群，也含「听」。",
+      "roots": [
+        {
+          "part": "spect",
+          "meaning": "看(源自 spectare)"
+        },
+        {
+          "part": "-ator",
+          "meaning": "做…的人"
+        }
+      ]
+    },
+    {
+      "word": "toddler",
+      "levels": [
+        "基础",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/ˈtɑːdlər/",
+      "subgroup": "noun",
+      "meaning": "n. 学步的幼儿",
+      "core": "刚会走、摇摇晃晃的小孩",
+      "etymology": "由 toddle「蹒跚学步」+ -er 构成，18 世纪出现。动物园里推着 stroller、牵着 toddler 是典型画面。",
+      "phonetics": "重音在首 /ˈtɑː/，dd 读 /d/，词尾 -ler 读 /lər/。",
+      "examples": [
+        {
+          "en": "A toddler pointed at the giraffe and giggled.",
+          "zh": "一个学步的小孩指着长颈鹿咯咯笑。",
+          "source": "造句"
+        },
+        {
+          "en": "a curious toddler",
+          "zh": "一个好奇的小娃娃（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "infant",
+          "ipa": "/ˈɪnfənt/",
+          "gloss": "婴儿",
+          "note": "toddler 是会走路的 1–3 岁幼儿；infant 更小，通常指还不会走的婴儿"
+        }
+      ],
+      "nuance": "toddler 指刚会走路、蹒跚的幼儿；infant 更小，多指尚在襁褓、不会走的婴儿。"
+    },
+    {
+      "word": "den",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/den/",
+      "subgroup": "noun",
+      "meaning": "n. 兽穴，窝",
+      "core": "野兽藏身、育幼的隐蔽窝",
+      "etymology": "古英语 denn「野兽的洞穴」，与 dene（山谷）同源，本义「凹陷的隐蔽处」。狮、狼、熊的巢即 den。",
+      "phonetics": "单音节 /den/，短元音 /e/，与 hen、pen 押韵。",
+      "examples": [
+        {
+          "en": "The lioness hid her cubs deep in the den.",
+          "zh": "母狮把幼崽藏在洞穴深处。",
+          "source": "造句"
+        },
+        {
+          "en": "a lion's den",
+          "zh": "狮子的巢穴（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "lair",
+          "ipa": "/ler/",
+          "gloss": "(野兽的)巢穴，藏身处",
+          "note": "den 多指育幼、休息的窝；lair 更强调猛兽潜伏、隐蔽的老巢，语气更凶"
+        }
+      ],
+      "nuance": "den 是野兽栖身育幼的窝；lair 语气更暗，强调猛兽潜伏的隐秘巢穴。"
+    },
+    {
+      "word": "wingspan",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ˈwɪŋspæn/",
+      "subgroup": "noun",
+      "meaning": "n. 翼展，两翼展开的宽度",
+      "core": "翅膀完全张开、从一端量到另一端的长度",
+      "etymology": "wing（翅膀）+ span（跨度，古英语 spann「一拃」）的合成词。科普里常说「翼展达 X 米」。",
+      "phonetics": "合成词两个重音，wing /wɪŋ/ + span /spæn/，ng 读鼻音 /ŋ/。",
+      "examples": [
+        {
+          "en": "The condor has a wingspan of over three metres.",
+          "zh": "神鹫的翼展超过三米。",
+          "source": "造句"
+        },
+        {
+          "en": "an enormous wingspan",
+          "zh": "巨大的翼展（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "span",
+          "ipa": "/spæn/",
+          "gloss": "跨度，间距",
+          "note": "wingspan 专指两翼尖之间的距离；span 是通用的「跨度/时间段」"
+        }
+      ],
+      "nuance": "wingspan 是「两翼展开」的专用宽度；span 是通用的跨度或时距。"
+    },
+    {
+      "word": "thrive",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/θraɪv/",
+      "subgroup": "verb",
+      "meaning": "v. 茁壮成长，兴旺",
+      "core": "在合适条件下长得又壮又好——蓬勃向上",
+      "etymology": "古诺斯语 thrīfask「繁荣、抓牢」，本义「抓住、攫取（好运）」。指动物在适宜栖地里健康繁盛。",
+      "phonetics": "th 是清辅音 /θ/（咬舌）；元音 /aɪ/，与 drive、alive 押韵。",
+      "examples": [
+        {
+          "en": "These frogs thrive in warm, humid habitats.",
+          "zh": "这些青蛙在温暖潮湿的环境里长得很好。",
+          "source": "造句"
+        },
+        {
+          "en": "thrive in the wild",
+          "zh": "在野外繁盛生长（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "flourish",
+          "ipa": "/ˈflɜːrɪʃ/",
+          "gloss": "繁荣，茂盛",
+          "note": "thrive 强调「在条件下健康壮大」；flourish 更书面，常指文化/事业的鼎盛"
+        }
+      ],
+      "nuance": "thrive 强调生物在适宜条件下健康繁盛；flourish 更书面，也常用于文化、事业的兴旺。"
+    },
+    {
+      "word": "stalk",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/stɔːk/",
+      "subgroup": "verb",
+      "meaning": "v. 潜行接近，悄悄跟踪  n. (植物的)茎",
+      "core": "压低身子、无声无息地逼近猎物",
+      "etymology": "古英语 -stealcian「偷偷走近」，与 steal（偷）同源——「像偷东西般靠近」。捕食者猎前的关键动作。",
+      "phonetics": "l 不发音，读 /stɔːk/，与 talk、walk 同规律，别读出 l。",
+      "examples": [
+        {
+          "en": "The tiger stalks its prey before pouncing.",
+          "zh": "老虎在扑击前先悄悄逼近猎物。",
+          "source": "造句"
+        },
+        {
+          "en": "stalk its prey",
+          "zh": "潜近猎物（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "prowl",
+          "ipa": "/praʊl/",
+          "gloss": "(伺机)潜行游荡",
+          "note": "stalk 是「盯住一个目标」悄悄逼近；prowl 是「四处游荡」搜寻猎物，无固定目标"
+        }
+      ],
+      "nuance": "stalk 已锁定目标、悄悄逼近；prowl 是四处巡游搜寻，尚未锁定具体猎物。",
+      "senses": [
+        {
+          "gloss": "v. 潜行跟踪(猎物/人)",
+          "logic": "本义：像偷一样无声靠近",
+          "en": "A leopard stalks silently through the grass.",
+          "zh": "豹子悄无声息地穿过草丛潜行。"
+        },
+        {
+          "gloss": "n. 茎，梗",
+          "logic": "同形异义：细长直立的植物茎",
+          "en": "The panda stripped the leaves from the bamboo stalk.",
+          "zh": "熊猫把竹茎上的叶子撸下来。"
+        }
+      ]
+    },
+    {
+      "word": "devour",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dɪˈvaʊr/",
+      "subgroup": "verb",
+      "meaning": "v. 狼吞虎咽地吃光",
+      "core": "急切地一口口把食物吃个精光——贪婪地吞",
+      "etymology": "拉丁语 devorare（de-「彻底」+ vorare「吞食」，同 carnivore 里的 -vore）。强调「吃得又快又猛、全吃光」。",
+      "phonetics": "重音在第二音节 /ˈvaʊr/，双元音 /aʊ/，与 hour、sour 押韵。",
+      "examples": [
+        {
+          "en": "The lions devoured the meat within minutes.",
+          "zh": "狮子几分钟内就把肉吃得精光。",
+          "source": "造句"
+        },
+        {
+          "en": "devour its prey",
+          "zh": "吞食猎物（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "swallow",
+          "ipa": "/ˈswɑːloʊ/",
+          "gloss": "吞，咽",
+          "note": "devour 强调「贪婪迅速地吃光整份」；swallow 只指「把东西咽下喉咙」这一动作"
+        }
+      ],
+      "nuance": "devour 强调贪婪迅猛、吃个精光；swallow 只是「咽下」这一动作，无「吃光」义。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "彻底、向下"
+        },
+        {
+          "part": "vour",
+          "meaning": "吞食(源自 vorare)"
+        }
+      ]
+    },
+    {
+      "word": "nurture",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈnɜːrtʃər/",
+      "subgroup": "verb",
+      "meaning": "v. 养育，培育  n. 养育，后天培养",
+      "core": "细心喂养照料、让幼小者长大",
+      "etymology": "拉丁语 nutritura「哺育」（nutrire「喂养」，同 nutrition 营养）。指饲养员或母兽悉心照料幼崽。",
+      "phonetics": "重音在首 /ˈnɜːr/，两个 -ur- 都读 /ɜːr/，词尾 -ture 读 /tʃər/。",
+      "examples": [
+        {
+          "en": "The keepers hand-nurture cubs rejected by their mothers.",
+          "zh": "饲养员亲手养育被母兽遗弃的幼崽。",
+          "source": "造句"
+        },
+        {
+          "en": "nature versus nurture",
+          "zh": "先天与后天之争（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "raise",
+          "ipa": "/reɪz/",
+          "gloss": "抚养，养大",
+          "note": "nurture 强调「精心呵护培育」的过程；raise 是中性的「把…养大」"
+        }
+      ],
+      "nuance": "nurture 含「悉心呵护、促成长」的暖意；raise 只是中性地「养大」，不强调用心程度。",
+      "roots": [
+        {
+          "part": "nutr",
+          "meaning": "喂养(源自 nutrire)"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词/动词后缀"
+        }
+      ]
+    },
+    {
+      "word": "gnaw",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/nɔː/",
+      "subgroup": "verb",
+      "meaning": "v. 啃，咬",
+      "core": "用门牙一点点磨咬硬物——反复啃",
+      "etymology": "古英语 gnagan「咬、啮」，拟声兼摹动作。啮齿动物（rodent）不停磨牙即 gnaw，g 不发音。",
+      "phonetics": "开头 g 不发音，读 /nɔː/，与 gnat、gnome 同规律（gn- 起首 g 哑音）。",
+      "examples": [
+        {
+          "en": "Beavers gnaw through tree trunks with their teeth.",
+          "zh": "海狸用牙把树干一点点啃断。",
+          "source": "造句"
+        },
+        {
+          "en": "gnaw on a bone",
+          "zh": "啃骨头（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "nibble",
+          "ipa": "/ˈnɪbl/",
+          "gloss": "小口啃咬",
+          "note": "gnaw 是「持续用力磨咬硬物」；nibble 是「小口轻咬」，力度小得多"
+        }
+      ],
+      "nuance": "gnaw 是持续用力磨咬坚硬之物；nibble 是一小口一小口轻咬，力度轻。"
+    },
+    {
+      "word": "forage",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈfɔːrɪdʒ/",
+      "subgroup": "verb",
+      "meaning": "v. 觅食，四处搜寻食物  n. 草料",
+      "core": "在环境里翻找、搜寻可吃的东西",
+      "etymology": "古法语 fourrage「饲料」，源自日耳曼语 fodr（同 food、fodder）。指动物到处翻找食物的行为。",
+      "phonetics": "重音在首 /ˈfɔː/，词尾 -age 弱读 /ɪdʒ/，别读成 /eɪdʒ/。",
+      "examples": [
+        {
+          "en": "Raccoons forage for food after dark.",
+          "zh": "浣熊天黑后四处觅食。",
+          "source": "造句"
+        },
+        {
+          "en": "forage for food",
+          "zh": "觅食（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "graze",
+          "ipa": "/ɡreɪz/",
+          "gloss": "(牲畜)吃草",
+          "note": "forage 是「主动搜寻各种食物」；graze 专指食草动物低头啃草"
+        }
+      ],
+      "nuance": "forage 是四处搜寻各类食物的行为；graze 专指食草动物就地啃草。"
+    },
+    {
+      "word": "mimic",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈmɪmɪk/",
+      "subgroup": "verb",
+      "meaning": "v. 模仿，仿效  n. 善于模仿者",
+      "core": "惟妙惟肖地学别人的样子或声音",
+      "etymology": "希腊语 mimikos「模仿的」（mimos「模仿者」，同 mime 哑剧、mimicry 拟态）。鹦鹉学舌、拟态昆虫皆 mimic。",
+      "phonetics": "重音在首 /ˈmɪ/，两个 m，词尾 -ic 读 /ɪk/；派生 mimicked 双写 k。",
+      "examples": [
+        {
+          "en": "Parrots can mimic human speech surprisingly well.",
+          "zh": "鹦鹉能出人意料地惟妙惟肖地学人说话。",
+          "source": "造句"
+        },
+        {
+          "en": "mimic a sound",
+          "zh": "模仿一种声音（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "imitate",
+          "ipa": "/ˈɪmɪteɪt/",
+          "gloss": "模仿，仿效",
+          "note": "mimic 强调「逼真、常带滑稽或欺骗性」地学；imitate 更中性、泛指仿照"
+        }
+      ],
+      "nuance": "mimic 强调「惟妙惟肖、常带戏谑或伪装」地学；imitate 是中性的「照着做」。",
+      "roots": [
+        {
+          "part": "mim",
+          "meaning": "模仿(源自 mimos)"
+        },
+        {
+          "part": "-ic",
+          "meaning": "…性质的"
+        }
+      ]
+    },
+    {
+      "word": "aquatic",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/əˈkwætɪk/",
+      "subgroup": "desc",
+      "meaning": "adj. 水生的，水栖的",
+      "core": "一辈子在水里过活的",
+      "etymology": "拉丁语 aquaticus「与水有关的」（aqua「水」，同 aquarium 水族馆）。指鱼、水獭等在水中生活的生物。",
+      "phonetics": "重音在第二音节 /ˈkwæ/，qu 读 /kw/，词尾 -tic 读 /tɪk/。",
+      "examples": [
+        {
+          "en": "Otters are agile aquatic mammals.",
+          "zh": "水獭是敏捷的水生哺乳动物。",
+          "source": "造句"
+        },
+        {
+          "en": "aquatic animals",
+          "zh": "水生动物（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "marine",
+          "ipa": "/məˈriːn/",
+          "gloss": "海洋的，海产的",
+          "note": "aquatic 泛指「水中的」（含淡水）；marine 专指「海洋的」（咸水）"
+        }
+      ],
+      "nuance": "aquatic 泛指一切水生（含江河湖泊）；marine 专指海洋（咸水）生物。",
+      "roots": [
+        {
+          "part": "aqua",
+          "meaning": "水(源自 aqua)"
+        },
+        {
+          "part": "-tic",
+          "meaning": "…的"
+        }
+      ]
+    },
+    {
+      "word": "arboreal",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ɑːrˈbɔːriəl/",
+      "subgroup": "desc",
+      "meaning": "adj. 树栖的，生活在树上的",
+      "core": "在树冠间攀爬、把家安在树上的",
+      "etymology": "拉丁语 arbor「树」（同 arbor 凉亭、arboretum 树木园）+ -eal「…的」。形容树懒、猴子等树栖动物。",
+      "phonetics": "重音在第二音节 /ˈbɔː/，四音节 /ɑːr-ˈbɔː-ri-əl/。",
+      "examples": [
+        {
+          "en": "Sloths are slow-moving arboreal mammals.",
+          "zh": "树懒是行动缓慢的树栖哺乳动物。",
+          "source": "造句"
+        },
+        {
+          "en": "arboreal species",
+          "zh": "树栖物种（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "terrestrial",
+          "ipa": "/təˈrestriəl/",
+          "gloss": "陆栖的，陆地的",
+          "note": "反义：arboreal 生活在树上；terrestrial 生活在地面陆地"
+        }
+      ],
+      "nuance": "arboreal（树栖）与 terrestrial（陆栖）、aquatic（水栖）相对，标示动物的生活层。",
+      "roots": [
+        {
+          "part": "arbor",
+          "meaning": "树(源自 arbor)"
+        },
+        {
+          "part": "-eal",
+          "meaning": "…的"
+        }
+      ]
+    },
+    {
+      "word": "solitary",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈsɑːləteri/",
+      "subgroup": "desc",
+      "meaning": "adj. 独居的，独来独往的",
+      "core": "不结群、独自生活的",
+      "etymology": "拉丁语 solitarius「孤独的」（solus「单独」，同 solo、solitude）。与群居（social）相对，如老虎是 solitary。",
+      "phonetics": "重音在首 /ˈsɑː/，美音词尾 -tary 读 /teri/，四音节别漏读。",
+      "examples": [
+        {
+          "en": "Tigers are solitary animals that hunt alone.",
+          "zh": "老虎是独来独往、单独狩猎的动物。",
+          "source": "造句"
+        },
+        {
+          "en": "a solitary predator",
+          "zh": "独居的捕食者（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "social",
+          "ipa": "/ˈsoʊʃl/",
+          "gloss": "群居的，社会性的",
+          "note": "反义：solitary 独居；social（此义）指群居、成群生活的动物"
+        }
+      ],
+      "nuance": "solitary 指独居、独自活动的动物；相对的 social 指成群、有社会结构的动物（狼、象）。",
+      "roots": [
+        {
+          "part": "sol",
+          "meaning": "单独(源自 solus)"
+        },
+        {
+          "part": "-itary",
+          "meaning": "…性质的"
+        }
+      ]
+    },
+    {
+      "word": "keep off the grass",
+      "levels": [
+        "基础",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/kiːp ɔːf ðə ɡræs/",
+      "subgroup": "phrase",
+      "meaning": "别踩草坪（告示常用语）",
+      "core": "整块记：keep off = 别靠近/别踩",
+      "etymology": "keep off「远离、别碰」的固定搭配，公园、动物园草坪、展区常见告示牌用语。",
+      "phonetics": "off 短元音 /ɔː/，the 弱读 /ðə/，grass 美音 /ɡræs/。",
+      "examples": [
+        {
+          "en": "The sign says: Keep off the grass.",
+          "zh": "牌子上写着：请勿践踏草坪。",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Please keep off the enclosure fence.",
+          "zh": "请不要靠近围栏。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "stay off",
+          "ipa": "/steɪ ɔːf/",
+          "gloss": "别踏上，远离",
+          "note": "keep off 与 stay off 意思相近；keep off 更常见于正式告示"
+        }
+      ],
+      "nuance": "keep off 是告示牌上「请勿踏入/触碰」的固定说法；口语里也可说 stay off。"
+    },
+    {
+      "word": "watch your step",
+      "levels": [
+        "基础",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/wɑːtʃ jʊr step/",
+      "subgroup": "phrase",
+      "meaning": "小心脚下（提醒）",
+      "core": "整块记：提醒地面有高差/湿滑",
+      "etymology": "watch「注意」+ your step「你的脚步」的固定提醒语，导览员在台阶、湿地、栈道处常说。",
+      "phonetics": "watch /wɑːtʃ/，your 常弱读为 /jər/，连读成 watch-your。",
+      "examples": [
+        {
+          "en": "Watch your step — the boardwalk is slippery.",
+          "zh": "小心脚下——栈道很滑。",
+          "source": "高频搭配"
+        },
+        {
+          "en": "Watch your step going down to the aquarium.",
+          "zh": "下到水族馆时小心脚下。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "mind the gap",
+          "ipa": "/maɪnd ðə ɡæp/",
+          "gloss": "当心缝隙",
+          "note": "watch your step 泛指注意脚下；mind the gap 特指注意站台/门缝的空隙（英式）"
+        }
+      ],
+      "nuance": "watch your step 泛指「小心脚下」；mind the gap 特指注意缝隙，多见于英式月台广播。"
+    },
+    {
+      "word": "get a closer look",
+      "levels": [
+        "基础",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/ɡet ə ˈkloʊsər lʊk/",
+      "subgroup": "phrase",
+      "meaning": "凑近点看，看得更清楚",
+      "core": "整块记：靠近以便看清",
+      "etymology": "get + a closer look「获得更近的一看」的固定搭配，观展时表达「想看清楚点」。close 此处读 /kloʊs/。",
+      "phonetics": "close 此处读 /kloʊs/（形容词，s 清音），非 /kloʊz/。",
+      "examples": [
+        {
+          "en": "Let's move up to get a closer look at the pandas.",
+          "zh": "我们往前挪一挪，好把熊猫看得更清楚。",
+          "source": "高频搭配"
+        },
+        {
+          "en": "You can get a closer look through the binoculars.",
+          "zh": "用望远镜可以看得更清楚。",
+          "source": "造句"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "take a look",
+          "ipa": "/teɪk ə lʊk/",
+          "gloss": "看一看",
+          "note": "take a look 只是「看一眼」；get a closer look 强调「凑近、看得更仔细」"
+        }
+      ],
+      "nuance": "take a look 是随意「看一眼」；get a closer look 强调靠近、看得更清楚。"
+    },
+    {
+      "word": "binoculars",
+      "levels": [
+        "六级",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/bɪˈnɑːkjələrz/",
+      "subgroup": "general",
+      "meaning": "n. 双筒望远镜",
+      "core": "架在眼前把远处动物「拉近」的双筒镜",
+      "etymology": "拉丁语 bini「成双」+ oculus「眼睛」——「给两只眼睛用的」。看远处鸟类、山羊时的必备装备，恒为复数。",
+      "phonetics": "重音在第二音节 /ˈnɑː/，恒为复数词尾 -s 读 /z/。",
+      "examples": [
+        {
+          "en": "Bring binoculars to spot birds high in the aviary.",
+          "zh": "带上望远镜才能看清鸟舍高处的鸟。",
+          "source": "造句"
+        },
+        {
+          "en": "a pair of binoculars",
+          "zh": "一副双筒望远镜（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "telescope",
+          "ipa": "/ˈteləskoʊp/",
+          "gloss": "（单筒）望远镜",
+          "note": "binoculars 是双筒、便携、两眼看；telescope 多为单筒、看更远（天文/瞭望）"
+        }
+      ],
+      "nuance": "binoculars 是双筒便携望远镜（恒复数）；telescope 多为单筒、倍率更高，看得更远。",
+      "roots": [
+        {
+          "part": "bin",
+          "meaning": "成双、两个(源自 bini)"
+        },
+        {
+          "part": "ocul",
+          "meaning": "眼睛(源自 oculus)"
+        },
+        {
+          "part": "-ar",
+          "meaning": "…的器具"
+        }
+      ]
+    },
+    {
+      "word": "refreshments",
+      "levels": [
+        "六级",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/rɪˈfreʃmənts/",
+      "subgroup": "general",
+      "meaning": "n. 茶点，饮料小吃",
+      "core": "逛累了补充体力的小吃饮料",
+      "etymology": "refresh「使恢复精神」（re-「重新」+ fresh「新鲜」）+ -ment，复数指供应的点心饮料，园区标牌常见。",
+      "phonetics": "重音在第二音节 /ˈfreʃ/，复数 -ments 读 /mənts/。",
+      "examples": [
+        {
+          "en": "Refreshments are sold near the picnic area.",
+          "zh": "野餐区附近有卖茶点饮料。",
+          "source": "造句"
+        },
+        {
+          "en": "light refreshments",
+          "zh": "简单的茶点（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "snacks",
+          "ipa": "/snæks/",
+          "gloss": "零食，小吃",
+          "note": "refreshments 更正式、含饮料与点心；snacks 更口语，偏指零食"
+        }
+      ],
+      "nuance": "refreshments 较正式、含饮品与点心；snacks 更口语，偏指零食。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "重新"
+        },
+        {
+          "part": "fresh",
+          "meaning": "新鲜、精神"
+        },
+        {
+          "part": "-ment",
+          "meaning": "名词后缀"
+        }
+      ]
+    },
+    {
+      "word": "wheelchair accessible",
+      "levels": [
+        "基础",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/ˈwiːltʃer əkˈsesəbl/",
+      "subgroup": "general",
+      "meaning": "adj. 无障碍的，轮椅可通行的",
+      "core": "路面/入口对轮椅友好、进得去",
+      "etymology": "wheelchair（轮椅）+ accessible「可进入的」（access「进入」+ -ible）。园区路线图上的常见标注。",
+      "phonetics": "wheel /wiːl/，accessible 重音在第二音节 /ˈse/，双 s 读 /s/。",
+      "examples": [
+        {
+          "en": "All the main paths are wheelchair accessible.",
+          "zh": "所有主干道都可供轮椅通行。",
+          "source": "造句"
+        },
+        {
+          "en": "a wheelchair accessible entrance",
+          "zh": "无障碍入口（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "barrier-free",
+          "ipa": "/ˈbæriər friː/",
+          "gloss": "无障碍的",
+          "note": "wheelchair accessible 特指「轮椅能通行」；barrier-free 泛指一切无障碍设计"
+        }
+      ],
+      "nuance": "wheelchair accessible 特指轮椅可通行；barrier-free 泛指广义的无障碍设计。"
+    },
+    {
+      "word": "leash",
+      "levels": [
+        "基础",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/liːʃ/",
+      "subgroup": "general",
+      "meaning": "n. 牵引绳，皮带  v. 用绳拴住",
+      "core": "拴住宠物、防它乱跑的那根绳",
+      "etymology": "古法语 lesse「拴狗的皮带」，源自拉丁语 laxus「松的」——绳子松松地牵着。园区告示常要求 dogs on a leash。",
+      "phonetics": "单音节 /liːʃ/，长音 /iː/ + /ʃ/，与 leach、beach 押韵。",
+      "examples": [
+        {
+          "en": "All dogs must be kept on a leash inside the park.",
+          "zh": "园区内所有狗都必须系上牵引绳。",
+          "source": "造句"
+        },
+        {
+          "en": "keep your dog on a leash",
+          "zh": "请牵好你的狗（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "harness",
+          "ipa": "/ˈhɑːrnəs/",
+          "gloss": "（套在身上的）胸背带",
+          "note": "leash 是牵引的绳子；harness 是套住动物身体、供 leash 挂扣的背带"
+        }
+      ],
+      "nuance": "leash 是牵引用的绳子；harness 是套在动物胸背上的带子，两者常配合使用。"
+    },
+    {
+      "word": "last admission",
+      "levels": [
+        "基础",
+        "口语",
+        "场景"
+      ],
+      "ipa": "/læst ədˈmɪʃn/",
+      "subgroup": "general",
+      "meaning": "n. 最晚入场时间",
+      "core": "当天允许买票进门的最后时刻",
+      "etymology": "last（最后的）+ admission（入场、准入）。门票信息和告示牌高频短语，常写在开放时间旁。",
+      "phonetics": "admission 重音在第二音节 /ˈmɪ/，ss 读 /ʃ/，-sion 读 /ʃn/。",
+      "examples": [
+        {
+          "en": "Last admission is at 4 p.m., so hurry.",
+          "zh": "最晚四点入场，得抓紧了。",
+          "source": "造句"
+        },
+        {
+          "en": "last admission 30 minutes before closing",
+          "zh": "闭园前 30 分钟停止入场（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "closing time",
+          "ipa": "/ˈkloʊzɪŋ taɪm/",
+          "gloss": "闭园/打烊时间",
+          "note": "last admission 是「停止入场」时刻；closing time 是「整个场馆关门」时刻，通常更晚"
+        }
+      ],
+      "nuance": "last admission 指停止售票入场的时刻；closing time 指场馆彻底关门，通常晚于前者。"
+    }
+  ]
+}

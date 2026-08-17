@@ -1,0 +1,1900 @@
+{
+  "enrich": {
+    "weight": {
+      "core": "既是抽象的「重量」，也是能拿在手里的「配重铁块」——健身房里两义并存。",
+      "senses": [
+        {
+          "gloss": "n. 重量（有多重）",
+          "logic": "最本义：物体受地心引力的量值。",
+          "en": "What's your body weight?",
+          "zh": "你体重多少？"
+        },
+        {
+          "gloss": "n.（可数）配重、举重器械",
+          "logic": "由「重量」具体化为「有重量的那块铁」——哑铃杠铃统称 weights。",
+          "en": "He put the weights back on the rack.",
+          "zh": "他把配重放回架子。"
+        },
+        {
+          "gloss": "n. 分量、重要性（比喻）",
+          "logic": "从物理重量引申到「话有分量」。",
+          "en": "Her opinion carries a lot of weight.",
+          "zh": "她的意见很有分量。"
+        }
+      ]
+    },
+    "muscle": {
+      "core": "拉丁「小老鼠」——皮下滑动隆起像窜动的小鼠，故得名。",
+      "senses": [
+        {
+          "gloss": "n. 肌肉",
+          "logic": "本义：能收缩产生力的组织。",
+          "en": "Lifting builds muscle.",
+          "zh": "举重能长肌肉。"
+        },
+        {
+          "gloss": "n. 实力、影响力（比喻）",
+          "logic": "由「肌肉=力量」引申为「硬实力、势力」。",
+          "en": "The company has real financial muscle.",
+          "zh": "这家公司财力雄厚。"
+        }
+      ],
+      "roots": [
+        {
+          "part": "mus-",
+          "meaning": "拉丁 mus「老鼠」（同 mouse）"
+        },
+        {
+          "part": "-cle",
+          "meaning": "指小后缀「小的」"
+        }
+      ]
+    },
+    "core": {
+      "core": "词根「心/中心」——从苹果核到躯干核心肌群，都是「最中间那块」。",
+      "senses": [
+        {
+          "gloss": "n.（健身）核心肌群",
+          "logic": "身体最中段、稳定躯干的一圈肌肉。",
+          "en": "Planks strengthen your core.",
+          "zh": "平板支撑强化核心。"
+        },
+        {
+          "gloss": "n. 核心、要害（比喻）",
+          "logic": "由「中心」引申为「最关键的部分」。",
+          "en": "That's the core of the problem.",
+          "zh": "那是问题的核心。"
+        },
+        {
+          "gloss": "n.（果实的）核",
+          "logic": "最本义：果实最中间的部分。",
+          "en": "an apple core",
+          "zh": "苹果核"
+        }
+      ]
+    },
+    "session": {
+      "core": "词根「坐」——一次坐下来完成的时段，健身里=一节训练课。",
+      "roots": [
+        {
+          "part": "sess-",
+          "meaning": "拉丁 sedere「坐」（同 sit）"
+        },
+        {
+          "part": "-ion",
+          "meaning": "名词后缀「一段过程/状态」"
+        }
+      ]
+    },
+    "set": {
+      "core": "「归为一类连做完的一批」——健身里=一组连续做完的重复。",
+      "senses": [
+        {
+          "gloss": "n.（健身）一组（连续做完的多次重复）",
+          "logic": "把若干 reps 打包成「一组」。",
+          "en": "Rest between sets.",
+          "zh": "组间休息。"
+        },
+        {
+          "gloss": "n. 一套、一副",
+          "logic": "本义：配成一类的一批东西。",
+          "en": "a set of dumbbells",
+          "zh": "一套哑铃"
+        },
+        {
+          "gloss": "v. 设定、调到",
+          "logic": "由「放置」引申为「把参数放到某值」。",
+          "en": "Set the treadmill to level five.",
+          "zh": "把跑步机设到五档。"
+        }
+      ]
+    },
+    "rep": {
+      "core": "repetition 的口语缩写——「重复一次」这个动作单位。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "拉丁 re「再、又」"
+        },
+        {
+          "part": "-pet-",
+          "meaning": "拉丁 petere「求、冲」→反复冲=重复"
+        }
+      ]
+    },
+    "form": {
+      "core": "拉丁「形状」——健身里特指做动作时身体摆出的「正确形状」。",
+      "senses": [
+        {
+          "gloss": "n.（做动作的）姿势规范",
+          "logic": "身体在动作中呈现的正确形态。",
+          "en": "Watch your form on squats.",
+          "zh": "深蹲注意动作。"
+        },
+        {
+          "gloss": "n. 表格、表单",
+          "logic": "由「固定格式」引申为要填的表。",
+          "en": "Fill out this form to join.",
+          "zh": "填这张表入会。"
+        },
+        {
+          "gloss": "n.（竞技）状态",
+          "logic": "由「呈现的样子」引申为「近期竞技状态」。",
+          "en": "She's in great form lately.",
+          "zh": "她最近状态很好。"
+        }
+      ]
+    },
+    "spot": {
+      "core": "从「一个点/地方」延伸到健身房动词义「在旁保护」——盯着那一处防出事。",
+      "senses": [
+        {
+          "gloss": "v.（举重时）在旁保护",
+          "logic": "紧盯着杠铃这一处，随时接住防砸人。",
+          "en": "Can you spot me?",
+          "zh": "帮我保护一下好吗？"
+        },
+        {
+          "gloss": "n. 位置、空位",
+          "logic": "本义：一个具体的点/地方。",
+          "en": "I found a spot by the mirror.",
+          "zh": "我在镜子边找到个位置。"
+        },
+        {
+          "gloss": "v. 认出、发现",
+          "logic": "由「盯住一点」引申为「一眼看到」。",
+          "en": "I spotted him across the gym.",
+          "zh": "我一眼在健身房那头看到他。"
+        }
+      ]
+    },
+    "class": {
+      "core": "拉丁「等级/被召集的群体」——健身里=一群人一起上的团课。",
+      "senses": [
+        {
+          "gloss": "n.（健身）团体课",
+          "logic": "一群会员集体上的课程。",
+          "en": "The yoga class is full.",
+          "zh": "瑜伽课满了。"
+        },
+        {
+          "gloss": "n. 阶级、等级",
+          "logic": "本义：被划分的层级。",
+          "en": "the middle class",
+          "zh": "中产阶级"
+        }
+      ]
+    },
+    "pass": {
+      "core": "词根「步、走过」——让你「走过去」的凭证=通行证。",
+      "senses": [
+        {
+          "gloss": "n. 通行证、门禁卡",
+          "logic": "凭它才能通过闸口。",
+          "en": "Scan your pass.",
+          "zh": "刷你的门禁卡。"
+        },
+        {
+          "gloss": "v. 通过、经过",
+          "logic": "本义：走过、越过。",
+          "en": "You pass the desk on the way in.",
+          "zh": "进来会经过前台。"
+        },
+        {
+          "gloss": "v. 通过（考试/审核）",
+          "logic": "由「越过关卡」引申为「达标」。",
+          "en": "pass a fitness test",
+          "zh": "通过体测"
+        }
+      ]
+    },
+    "coach": {
+      "core": "从匈牙利产马车的小镇 Kocs 得名——「载学生过关的私教」被比作马车。",
+      "senses": [
+        {
+          "gloss": "n. 教练",
+          "logic": "由「载你到达目标」的比喻而来。",
+          "en": "My coach pushes me hard.",
+          "zh": "我教练逼得很紧。"
+        },
+        {
+          "gloss": "v. 指导、训练",
+          "logic": "名词动用：当教练带人。",
+          "en": "She coaches the swim team.",
+          "zh": "她带游泳队。"
+        },
+        {
+          "gloss": "n. 长途大巴／马车（英式）",
+          "logic": "最本义：那种四轮马车/大巴。",
+          "en": "We took a coach to the city.",
+          "zh": "我们坐大巴进城。"
+        }
+      ]
+    },
+    "run": {
+      "core": "「奔跑、流动」——从人跑步到机器运转、事情进行，都是「持续动起来」。",
+      "senses": [
+        {
+          "gloss": "v. 跑步",
+          "logic": "本义：人快速移动双腿。",
+          "en": "She runs on the treadmill.",
+          "zh": "她在跑步机上跑。"
+        },
+        {
+          "gloss": "v. 运转、运行",
+          "logic": "由「动起来」引申到机器/程序。",
+          "en": "Is the machine running?",
+          "zh": "这台机器在运行吗？"
+        },
+        {
+          "gloss": "v. 经营、管理",
+          "logic": "由「让某物持续运转」引申为「运营」。",
+          "en": "He runs a small gym.",
+          "zh": "他经营一家小健身房。"
+        }
+      ]
+    },
+    "machine": {
+      "core": "希腊「巧妙的装置」——一台能替你使劲的器械台。",
+      "roots": [
+        {
+          "part": "machin-",
+          "meaning": "希腊 mēkhanē「装置、巧办法」（同 mechanic）"
+        },
+        {
+          "part": "-e",
+          "meaning": "名词尾"
+        }
+      ]
+    },
+    "staff": {
+      "core": "从「支撑的木杖」引申为「撑起机构的一群人」=全体员工。",
+      "senses": [
+        {
+          "gloss": "n. 全体员工（集合，不可数）",
+          "logic": "撑起机构运转的那群人。",
+          "en": "The staff are friendly.",
+          "zh": "员工很友善。"
+        },
+        {
+          "gloss": "n. 棍、杖",
+          "logic": "最本义：一根支撑用的木杖。",
+          "en": "a wooden staff",
+          "zh": "一根木杖"
+        }
+      ]
+    },
+    "mat": {
+      "core": "拉丁「草席」——铺在地上练拉伸/瑜伽的整块垫子。",
+      "roots": [
+        {
+          "part": "mat-",
+          "meaning": "晚期拉丁 matta「草席、编织席」"
+        }
+      ]
+    },
+    "bench": {
+      "core": "「长凳」——健身里既是训练凳，也直接代指 bench press（卧推）。",
+      "senses": [
+        {
+          "gloss": "n. 训练凳",
+          "logic": "卧推、坐姿训练用的凳子。",
+          "en": "Lie on the bench.",
+          "zh": "躺到凳上。"
+        },
+        {
+          "gloss": "n. 卧推（口语简称）",
+          "logic": "以器械代动作：the bench = bench press。",
+          "en": "What's your bench?",
+          "zh": "你卧推能推多少？"
+        },
+        {
+          "gloss": "n. 长椅、板凳",
+          "logic": "本义：供多人坐的长条椅。",
+          "en": "a park bench",
+          "zh": "公园长椅"
+        }
+      ]
+    },
+    "schedule": {
+      "core": "拉丁「写着安排的小纸条」——时间表；美音 /ˈskedʒuːl/ 起首 sk。",
+      "senses": [
+        {
+          "gloss": "n. 时间表、课程表",
+          "logic": "本义：写下安排的清单。",
+          "en": "Check the class schedule.",
+          "zh": "查团课时间表。"
+        },
+        {
+          "gloss": "v. 安排（时间）",
+          "logic": "名词动用：把某事定到某时间点。",
+          "en": "I scheduled a session for Friday.",
+          "zh": "我把训练约在周五。"
+        }
+      ],
+      "roots": [
+        {
+          "part": "sched-",
+          "meaning": "拉丁 schedula「小纸条、清单」"
+        },
+        {
+          "part": "-ule",
+          "meaning": "指小后缀"
+        }
+      ]
+    },
+    "rack": {
+      "core": "「框架」——存放或支撑杠铃哑铃的架子，也泛指多层置物架。",
+      "roots": [
+        {
+          "part": "rack",
+          "meaning": "中古荷兰语 rec「框架、支架」"
+        }
+      ]
+    },
+    "resistance": {
+      "core": "词根「反着站」——顶回来的阻力，训练里要克服的负荷。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "拉丁 re「反、回」"
+        },
+        {
+          "part": "-sist-",
+          "meaning": "拉丁 sistere「站住」→站着顶回去"
+        },
+        {
+          "part": "-ance",
+          "meaning": "名词后缀「性质/状态」"
+        }
+      ]
+    },
+    "routine": {
+      "core": "法语「惯常路线」——每次重复走的固定训练套路。",
+      "roots": [
+        {
+          "part": "rout-",
+          "meaning": "法语 route「路线」（拉丁 rupta via「开辟的路」）"
+        },
+        {
+          "part": "-ine",
+          "meaning": "名词后缀"
+        }
+      ]
+    },
+    "progress": {
+      "core": "词根「向前走」——健身里=看得见的进步；名词重音在首、动词在后。",
+      "senses": [
+        {
+          "gloss": "n. 进步、进展",
+          "logic": "本义：向前走出的距离→变好的量。",
+          "en": "Track your progress.",
+          "zh": "记录你的进展。"
+        },
+        {
+          "gloss": "v. 进展、推进",
+          "logic": "动词义：向前推进（重音移到后）。",
+          "en": "The training is progressing well.",
+          "zh": "训练进展顺利。"
+        }
+      ],
+      "roots": [
+        {
+          "part": "pro-",
+          "meaning": "拉丁 pro「向前」"
+        },
+        {
+          "part": "-gress",
+          "meaning": "拉丁 gradi「走、迈步」（同 grade）"
+        }
+      ]
+    },
+    "contract": {
+      "core": "词根「拉到一起」——双方拉到一处达成的合约；名词重音在首。",
+      "senses": [
+        {
+          "gloss": "n. 合同、合约",
+          "logic": "双方「拉到一起」达成的书面约定。",
+          "en": "Sign a twelve-month contract.",
+          "zh": "签十二个月合约。"
+        },
+        {
+          "gloss": "v. 收缩（肌肉）",
+          "logic": "由「拉到一起」本义→肌肉缩紧（重音在后）。",
+          "en": "Your muscles contract as you lift.",
+          "zh": "举起时肌肉收缩。"
+        }
+      ],
+      "roots": [
+        {
+          "part": "con-",
+          "meaning": "拉丁 com「共、一起」"
+        },
+        {
+          "part": "-tract",
+          "meaning": "拉丁 trahere「拉」（同 attract、tractor）"
+        }
+      ]
+    },
+    "fee": {
+      "core": "从「封地/报酬」引申为「为服务付的钱」——办卡对话核心词。",
+      "roots": [
+        {
+          "part": "fee",
+          "meaning": "古法语 fieu「封地、酬劳」→费用"
+        }
+      ]
+    },
+    "joint": {
+      "core": "词根「连接」——骨与骨相连处=关节。",
+      "senses": [
+        {
+          "gloss": "n. 关节",
+          "logic": "骨与骨相接、能活动的连接处。",
+          "en": "Warm up to protect your joints.",
+          "zh": "热身保护关节。"
+        },
+        {
+          "gloss": "adj. 共同的、联合的",
+          "logic": "由「连接在一起」引申为「合办的」。",
+          "en": "a joint effort",
+          "zh": "共同的努力"
+        }
+      ],
+      "roots": [
+        {
+          "part": "join-",
+          "meaning": "拉丁 jungere「连接」（同 join、junction）"
+        },
+        {
+          "part": "-t",
+          "meaning": "过去分词式名词尾"
+        }
+      ]
+    },
+    "grip": {
+      "core": "「用力抓住」——举重指令核心：grip the bar 握紧杠。",
+      "senses": [
+        {
+          "gloss": "v. 紧握",
+          "logic": "本义：用力抓住不松手。",
+          "en": "Grip the bar tightly.",
+          "zh": "紧握住杠。"
+        },
+        {
+          "gloss": "n. 握法、抓握",
+          "logic": "名词化：握的方式或握力。",
+          "en": "Use a wider grip.",
+          "zh": "用更宽的握距。"
+        }
+      ]
+    },
+    "cardio": {
+      "core": "词根「心」——提升心率的有氧运动（cardiovascular 缩写）。",
+      "roots": [
+        {
+          "part": "cardi-",
+          "meaning": "希腊 kardia「心」（同 cardiac）"
+        },
+        {
+          "part": "-o",
+          "meaning": "口语缩略尾（← cardiovascular）"
+        }
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "sprain",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/spreɪn/",
+      "subgroup": "verb",
+      "meaning": "v. 扭伤（关节、韧带）；n. 扭伤",
+      "core": "关节被猛地扭到、韧带被拉过头——最典型是崴脚。",
+      "etymology": "源自古法语 espraindre「使劲拧、挤压」（拉丁 exprimere「压出」）。指关节被外力拧过极限。",
+      "roots": [
+        {
+          "part": "spr-",
+          "meaning": "古法语 espraindre「拧、挤压」"
+        }
+      ],
+      "phonetics": "单音节 /spreɪn/，起首 spr 三连辅音，含双元音 /eɪ/，与 sprained 过去式加 /d/。",
+      "examples": [
+        {
+          "en": "She sprained her ankle jumping off the box.",
+          "zh": "她从跳箱上跳下时崴了脚踝。",
+          "source": "造句"
+        },
+        {
+          "en": "sprain an ankle / wrist",
+          "zh": "扭伤脚踝／手腕（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "strain",
+          "ipa": "/streɪn/",
+          "gloss": "拉伤（肌肉/肌腱）",
+          "note": "strain 是肌肉或肌腱被拉伤；sprain 是关节处韧带被扭伤，部位不同"
+        },
+        {
+          "w": "twist",
+          "ipa": "/twɪst/",
+          "gloss": "扭（伤）",
+          "note": "twist 是日常说的「扭到」；sprain 是更医学、更明确的「扭伤」结果"
+        }
+      ],
+      "nuance": "sprain（扭伤关节韧带）对 strain（拉伤肌肉肌腱），受伤对话里常被混，其实部位不同。"
+    },
+    {
+      "word": "strain",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/streɪn/",
+      "subgroup": "verb",
+      "meaning": "v. 拉伤（肌肉、肌腱）；使劲；n. 拉伤，压力",
+      "core": "肌肉或肌腱被拉过头而受伤——也泛指「使劲绷紧」。",
+      "etymology": "源自古法语 estreindre「拉紧、束紧」（拉丁 stringere「拉紧」，同 strict、stress）。",
+      "roots": [
+        {
+          "part": "strain",
+          "meaning": "拉丁 stringere「拉紧、绷紧」（同 strict、stress）"
+        }
+      ],
+      "phonetics": "单音节 /streɪn/，起首 str 三连辅音，含双元音 /eɪ/，与 sprain 只差一个字母，别混。",
+      "examples": [
+        {
+          "en": "He strained a muscle in his back.",
+          "zh": "他背部拉伤了一块肌肉。",
+          "source": "造句"
+        },
+        {
+          "en": "strain a muscle / your back",
+          "zh": "拉伤肌肉／拉伤背（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "pull",
+          "ipa": "/pʊl/",
+          "gloss": "拉伤",
+          "note": "pull a muscle 是最口语的「拉伤肌肉」；strain 略正式，同义"
+        },
+        {
+          "w": "sprain",
+          "ipa": "/spreɪn/",
+          "gloss": "扭伤",
+          "note": "sprain 伤的是关节韧带；strain 伤的是肌肉肌腱"
+        }
+      ],
+      "nuance": "strain a muscle = pull a muscle（拉伤肌肉）；名词 strain 还可指「压力、负担」。"
+    },
+    {
+      "word": "flexibility",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˌfleksəˈbɪləti/",
+      "subgroup": "noun",
+      "meaning": "n. 柔韧性；灵活性",
+      "core": "身体能弯到多大范围——瑜伽、拉伸的核心目标。",
+      "etymology": "flexible（可弯的，拉丁 flectere「弯曲」）+ -ity（名词后缀）。字面「能弯的程度」。",
+      "roots": [
+        {
+          "part": "flex-",
+          "meaning": "拉丁 flectere「弯曲」（同 flex、reflect）"
+        },
+        {
+          "part": "-ibility",
+          "meaning": "名词后缀「…的能力/程度」"
+        }
+      ],
+      "phonetics": "重音在第三音节 /ˈbɪl/，五音节 /ˌfleksəˈbɪləti/，首音节次重读。",
+      "examples": [
+        {
+          "en": "Stretching improves your flexibility.",
+          "zh": "拉伸能提升柔韧性。",
+          "source": "造句"
+        },
+        {
+          "en": "improve / gain flexibility",
+          "zh": "提升柔韧性（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "mobility",
+          "ipa": "/moʊˈbɪləti/",
+          "gloss": "关节活动度",
+          "note": "mobility 强调关节能主动活动的范围；flexibility 强调肌肉能被拉长的程度"
+        }
+      ],
+      "nuance": "flexibility（柔韧，肌肉拉长）常和 mobility（活动度，关节主动幅度）并提，侧重点不同。"
+    },
+    {
+      "word": "biceps",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈbaɪseps/",
+      "subgroup": "noun",
+      "meaning": "n. 二头肌（尤指上臂前侧）",
+      "core": "上臂前侧那块「鼓包肌」，弯举时隆起。",
+      "etymology": "拉丁 biceps「有两个头的」（bi-「二」+ caput「头」）——肌肉有两个起点（头）。",
+      "roots": [
+        {
+          "part": "bi-",
+          "meaning": "拉丁 bi「二、双」"
+        },
+        {
+          "part": "-ceps",
+          "meaning": "拉丁 caput「头」→肌肉的起端"
+        }
+      ],
+      "phonetics": "重音在首 /ˈbaɪ/，含双元音 /aɪ/；单复数同形 biceps，别加多余 -es。",
+      "examples": [
+        {
+          "en": "Curls work your biceps.",
+          "zh": "弯举练二头肌。",
+          "source": "造句"
+        },
+        {
+          "en": "biceps curl",
+          "zh": "二头肌弯举（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "triceps",
+          "ipa": "/ˈtraɪseps/",
+          "gloss": "三头肌",
+          "note": "triceps 是上臂后侧有三个头的肌肉；biceps 在前侧、有两个头，两者互为拮抗"
+        }
+      ],
+      "nuance": "biceps（二头肌，前侧）对 triceps（三头肌，后侧）；-ceps 都是「头」，前缀数字不同。"
+    },
+    {
+      "word": "hamstring",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/ˈhæmstrɪŋ/",
+      "subgroup": "noun",
+      "meaning": "n. 腘绳肌（大腿后侧肌群）",
+      "core": "大腿后侧那束肌腱肌肉——深蹲硬拉最吃力、也最易拉伤。",
+      "etymology": "ham（古英语「大腿后侧、腿弯」）+ string（筋、腱）。字面「腿弯处的筋」。",
+      "roots": [
+        {
+          "part": "ham",
+          "meaning": "古英语 hamm「腿弯、大腿后侧」"
+        },
+        {
+          "part": "string",
+          "meaning": "「筋、腱」——像绷紧的弦"
+        }
+      ],
+      "phonetics": "重音在首 /ˈhæm/，元音 /æ/；结尾 -string /strɪŋ/ 含 str 三连辅音。",
+      "examples": [
+        {
+          "en": "He pulled a hamstring while sprinting.",
+          "zh": "他冲刺时拉伤了腘绳肌。",
+          "source": "造句"
+        },
+        {
+          "en": "stretch your hamstrings",
+          "zh": "拉伸腘绳肌（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "quad",
+          "ipa": "/kwɑːd/",
+          "gloss": "股四头肌（大腿前侧）",
+          "note": "quad 在大腿前侧、伸膝主力；hamstring 在后侧、屈膝主力，前后拮抗"
+        }
+      ],
+      "nuance": "hamstring（大腿后侧）易在冲刺、硬拉时拉伤，常和 pull、tight 搭配。"
+    },
+    {
+      "word": "ankle",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈæŋkl/",
+      "subgroup": "noun",
+      "meaning": "n. 脚踝",
+      "core": "小腿与脚相连的关节——跳跃落地最易崴的部位。",
+      "etymology": "古英语 ancleow，日耳曼同源，与 angle（角度）远亲——脚在此形成弯角。",
+      "roots": [
+        {
+          "part": "ankle",
+          "meaning": "古英语 ancleow「踝」，与「弯角」同源"
+        }
+      ],
+      "phonetics": "重音在首 /ˈæŋ/，ng 读 /ŋ/；结尾 -kle 读 /kl/，两音节。",
+      "examples": [
+        {
+          "en": "I twisted my ankle on the treadmill.",
+          "zh": "我在跑步机上崴了脚踝。",
+          "source": "造句"
+        },
+        {
+          "en": "sprain / roll an ankle",
+          "zh": "扭伤／崴脚踝（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "wrist",
+          "ipa": "/rɪst/",
+          "gloss": "手腕",
+          "note": "wrist 是手与前臂的关节；ankle 是脚与小腿的关节，都是易扭伤的小关节"
+        }
+      ],
+      "nuance": "ankle（脚踝）是跳跃、落地类动作最易 sprain 的关节，受伤对话高频。"
+    },
+    {
+      "word": "wrist",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/rɪst/",
+      "subgroup": "noun",
+      "meaning": "n. 手腕",
+      "core": "手与前臂相连的关节——举重、俯卧撑时要保持中立不折。",
+      "etymology": "古英语 wrist，与 writhe「扭动」同源——能转动的关节。",
+      "roots": [
+        {
+          "part": "wrist",
+          "meaning": "古英语 wrist，与 writhe「扭」同源"
+        }
+      ],
+      "phonetics": "单音节 /rɪst/，起首 w 不发音，元音短 /ɪ/，结尾 -st。",
+      "examples": [
+        {
+          "en": "Keep your wrists straight when you press.",
+          "zh": "推举时手腕保持挺直。",
+          "source": "造句"
+        },
+        {
+          "en": "a wrist wrap",
+          "zh": "护腕（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "ankle",
+          "ipa": "/ˈæŋkl/",
+          "gloss": "脚踝",
+          "note": "两者都是可转动的小关节；wrist 在手臂末端，ankle 在腿末端"
+        }
+      ],
+      "nuance": "wrist（手腕）w 不发音；卧推、俯卧撑常提醒 keep wrists straight（腕挺直）防伤。"
+    },
+    {
+      "word": "sauna",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈsɔːnə/",
+      "subgroup": "noun",
+      "meaning": "n. 桑拿房，蒸汽浴室",
+      "core": "练后放松出汗的高温木屋——健身房常见配套设施。",
+      "etymology": "直接借自芬兰语 sauna「蒸汽浴」——桑拿是芬兰传统。",
+      "roots": [
+        {
+          "part": "sauna",
+          "meaning": "芬兰语 sauna「蒸汽浴」（原样借入）"
+        }
+      ],
+      "phonetics": "重音在首 /ˈsɔː/，元音长 /ɔː/（也有人读 /ˈsaʊnə/）；结尾 -na 轻读 /nə/。",
+      "examples": [
+        {
+          "en": "I like to relax in the sauna after lifting.",
+          "zh": "练完我喜欢在桑拿房放松。",
+          "source": "造句"
+        },
+        {
+          "en": "sit in the sauna",
+          "zh": "在桑拿房里待着（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "steam room",
+          "ipa": "/stiːm ruːm/",
+          "gloss": "蒸汽房",
+          "note": "steam room 是湿蒸（水汽弥漫）；sauna 是干蒸（高温干热），两者常并列"
+        }
+      ],
+      "nuance": "sauna（干蒸）对 steam room（湿蒸），是健身房设施对话高频一对。"
+    },
+    {
+      "word": "elliptical",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ɪˈlɪptɪkl/",
+      "subgroup": "noun",
+      "meaning": "n. 椭圆机；adj. 椭圆的",
+      "core": "脚踏走椭圆轨迹的有氧机——对膝盖冲击小的跑步替代。",
+      "etymology": "源自希腊 elleipsis「缺漏、椭圆」（elleipein「落下、不足」）——椭圆是「不足的圆」。",
+      "roots": [
+        {
+          "part": "ellips-",
+          "meaning": "希腊 elleipsis「椭圆、缺失」"
+        },
+        {
+          "part": "-ical",
+          "meaning": "形容词后缀「…的」"
+        }
+      ],
+      "phonetics": "重音在第二音节 /ˈlɪp/，起首 e- 轻读 /ɪ/，四音节 /ɪˈlɪptɪkl/。",
+      "examples": [
+        {
+          "en": "The elliptical is easier on your knees than running.",
+          "zh": "椭圆机比跑步对膝盖更友好。",
+          "source": "造句"
+        },
+        {
+          "en": "get on the elliptical",
+          "zh": "上椭圆机（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "treadmill",
+          "ipa": "/ˈtredmɪl/",
+          "gloss": "跑步机",
+          "note": "treadmill 是跑带式、冲击大；elliptical 是椭圆轨迹、低冲击，两大有氧机对比"
+        }
+      ],
+      "nuance": "elliptical（椭圆机）低冲击护膝，是 treadmill 之外的另一台招牌 cardio machine。"
+    },
+    {
+      "word": "kettlebell",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈketlbel/",
+      "subgroup": "noun",
+      "meaning": "n. 壶铃",
+      "core": "带把手的球状铁球——甩摆、深蹲的多功能自由重量器械。",
+      "etymology": "kettle（水壶）+ bell（钟/重物）——形状像带把的铁壶。",
+      "roots": [
+        {
+          "part": "kettle",
+          "meaning": "古英语 cetel「壶、锅」（拉丁 catillus 小盘）"
+        },
+        {
+          "part": "bell",
+          "meaning": "「钟/重物」——同 dumbbell、barbell"
+        }
+      ],
+      "phonetics": "重音在首 kettle /ˈketl/，tt 读闪音；结尾 -bell 读 /bel/。",
+      "examples": [
+        {
+          "en": "Kettlebell swings work your whole body.",
+          "zh": "壶铃摆荡能练到全身。",
+          "source": "造句"
+        },
+        {
+          "en": "a kettlebell swing",
+          "zh": "壶铃摆荡（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "dumbbell",
+          "ipa": "/ˈdʌmbel/",
+          "gloss": "哑铃",
+          "note": "dumbbell 是对称短把；kettlebell 是带弧形把手、重心偏移，适合摆荡类动作"
+        }
+      ],
+      "nuance": "kettlebell（壶铃）和 dumbbell、barbell 同属 -bell 家族的自由重量，重心偏移是它特点。"
+    },
+    {
+      "word": "lunge",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/lʌndʒ/",
+      "subgroup": "verb",
+      "meaning": "v. 做弓步蹲；向前冲；n. 弓步蹲",
+      "core": "一腿向前跨出下蹲——练腿臀平衡的经典动作。",
+      "etymology": "源自法语 allonger「伸长、伸出」（拉丁 longus「长」）——身体向前伸探。",
+      "roots": [
+        {
+          "part": "lunge",
+          "meaning": "法语 allonger「伸长」（拉丁 longus「长」）"
+        }
+      ],
+      "phonetics": "单音节 /lʌndʒ/，元音 /ʌ/，结尾 -nge 读 /ndʒ/。",
+      "examples": [
+        {
+          "en": "Do ten lunges on each leg.",
+          "zh": "每条腿做十个弓步蹲。",
+          "source": "造句"
+        },
+        {
+          "en": "do walking lunges",
+          "zh": "做行进弓步（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "squat",
+          "ipa": "/skwɑːt/",
+          "gloss": "深蹲",
+          "note": "squat 双腿平行下蹲；lunge 一腿前跨、更考验单腿平衡"
+        }
+      ],
+      "nuance": "lunge（弓步蹲，单腿前跨）与 squat（深蹲，双腿平行）配对，都是腿臀基础动作。"
+    },
+    {
+      "word": "plank",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/plæŋk/",
+      "subgroup": "noun",
+      "meaning": "n. 平板支撑（核心动作）；木板",
+      "core": "身体像一块笔直木板撑住不动——练核心的经典静力动作。",
+      "etymology": "源自古法语 planche「木板」（晚期拉丁 planca）——身体绷成一块直板。",
+      "roots": [
+        {
+          "part": "plank",
+          "meaning": "古法语 planche「木板、平板」"
+        }
+      ],
+      "phonetics": "单音节 /plæŋk/，元音 /æ/，结尾 -nk 读 /ŋk/。",
+      "examples": [
+        {
+          "en": "Hold a plank for one minute.",
+          "zh": "平板支撑撑一分钟。",
+          "source": "造句"
+        },
+        {
+          "en": "hold a plank",
+          "zh": "做平板支撑（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "crunch",
+          "ipa": "/krʌntʃ/",
+          "gloss": "卷腹",
+          "note": "crunch 是动态卷起躯干练腹；plank 是静止撑住练整个核心"
+        }
+      ],
+      "nuance": "plank（静态平板撑）练整个 core；对 crunch（动态卷腹）主要练 abs，动静不同。"
+    },
+    {
+      "word": "crunch",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/krʌntʃ/",
+      "subgroup": "noun",
+      "meaning": "n. 卷腹（腹肌动作）；v. 卷腹；嘎吱作响",
+      "core": "仰卧把上半身卷起来——直接练腹肌的动作。",
+      "etymology": "拟声词，模仿「嘎吱嚼碎」声；健身借「身体卷缩挤压」的动感命名。",
+      "roots": [
+        {
+          "part": "crunch",
+          "meaning": "拟声词「嘎吱、压碎」→身体卷压"
+        }
+      ],
+      "phonetics": "单音节 /krʌntʃ/，起首 cr 辅音连缀，元音 /ʌ/，结尾 -nch /ntʃ/。",
+      "examples": [
+        {
+          "en": "Crunches target your upper abs.",
+          "zh": "卷腹主要练上腹。",
+          "source": "造句"
+        },
+        {
+          "en": "do crunches",
+          "zh": "做卷腹（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "sit-up",
+          "ipa": "/ˈsɪtʌp/",
+          "gloss": "仰卧起坐",
+          "note": "sit-up 整个上身坐起来、幅度大；crunch 只卷起肩背、幅度小更护腰"
+        }
+      ],
+      "nuance": "crunch（卷腹，小幅）比 sit-up（仰卧起坐，全起）更护腰，都练 abs。"
+    },
+    {
+      "word": "cramp",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/kræmp/",
+      "subgroup": "noun",
+      "meaning": "n. 抽筋，痉挛；v. 抽筋",
+      "core": "肌肉突然剧烈收缩锁死——缺水、疲劳时常发作。",
+      "etymology": "源自古法语 crampe（日耳曼词根「弯曲、挛缩」）——肌肉挛缩成团。",
+      "roots": [
+        {
+          "part": "cramp",
+          "meaning": "日耳曼词根「弯曲、挛缩」"
+        }
+      ],
+      "phonetics": "单音节 /kræmp/，起首 cr 辅音连缀，元音 /æ/，结尾 -mp。",
+      "examples": [
+        {
+          "en": "I got a cramp in my calf during the run.",
+          "zh": "跑步时我小腿抽筋了。",
+          "source": "造句"
+        },
+        {
+          "en": "get / have a cramp",
+          "zh": "抽筋（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "spasm",
+          "ipa": "/ˈspæzəm/",
+          "gloss": "痉挛",
+          "note": "spasm 更医学、指任何不自主抽动；cramp 特指肌肉痛性锁死（如小腿抽筋）"
+        }
+      ],
+      "nuance": "cramp（抽筋）常因脱水引发，和 hydrate、stretch 一起出现在健康提醒里。"
+    },
+    {
+      "word": "fatigue",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/fəˈtiːɡ/",
+      "subgroup": "noun",
+      "meaning": "n. 疲劳，劳累；v. 使疲劳",
+      "core": "身体被消耗到发不出力的深度疲惫——比 tired 更正式。",
+      "etymology": "源自法语 fatigue（拉丁 fatigare「使精疲力竭」）。",
+      "roots": [
+        {
+          "part": "fatig-",
+          "meaning": "拉丁 fatigare「使疲惫、耗尽」"
+        },
+        {
+          "part": "-ue",
+          "meaning": "法语名词尾"
+        }
+      ],
+      "phonetics": "重音在第二音节 /ˈtiːɡ/，元音长 /iː/；gue 只读 /ɡ/，起首 fa- 轻读 /fə/。",
+      "examples": [
+        {
+          "en": "Push to the point of muscle fatigue.",
+          "zh": "练到肌肉力竭为止。",
+          "source": "造句"
+        },
+        {
+          "en": "muscle fatigue",
+          "zh": "肌肉疲劳（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "exhaustion",
+          "ipa": "/ɪɡˈzɔːstʃən/",
+          "gloss": "精疲力竭",
+          "note": "exhaustion 是彻底耗尽、更极端；fatigue 是持续累积的疲劳（含肌肉疲劳）"
+        }
+      ],
+      "nuance": "fatigue 比 tired 正式；muscle fatigue（肌肉力竭）是训练强度对话高频词。"
+    },
+    {
+      "word": "nutrition",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/nuˈtrɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 营养，营养学",
+      "core": "吃进去支撑身体的养分——增肌减脂七分靠它。",
+      "etymology": "拉丁 nutrire「喂养、滋养」+ -tion。同源：nurse、nourish。",
+      "roots": [
+        {
+          "part": "nutri-",
+          "meaning": "拉丁 nutrire「喂养、滋养」"
+        },
+        {
+          "part": "-tion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "重音在第二音节 /ˈtrɪʃ/，-tion 读 /ʃn/；美音起首 nu- 读 /nu/。",
+      "examples": [
+        {
+          "en": "Good nutrition matters as much as training.",
+          "zh": "营养和训练一样重要。",
+          "source": "造句"
+        },
+        {
+          "en": "proper nutrition",
+          "zh": "合理营养（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "diet",
+          "ipa": "/ˈdaɪət/",
+          "gloss": "饮食",
+          "note": "diet 是你实际吃的东西（一日三餐）；nutrition 是食物里的营养价值这个层面"
+        }
+      ],
+      "nuance": "nutrition（营养）常和 protein、diet 搭配；教练咨询饮食时高频。"
+    },
+    {
+      "word": "supplement",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈsʌplɪmənt/",
+      "subgroup": "noun",
+      "meaning": "n. 补剂，补充品；v. 补充",
+      "core": "在正常饮食之外「补上一份」的营养品，如蛋白粉。",
+      "etymology": "拉丁 supplementum「填补物」（sub-「下、额外」+ plere「填满」，同 complete）。",
+      "roots": [
+        {
+          "part": "supple-",
+          "meaning": "拉丁 supplere「补足、填满」（sub-「额外」+ plere「填」）"
+        },
+        {
+          "part": "-ment",
+          "meaning": "名词后缀「…的物/结果」"
+        }
+      ],
+      "phonetics": "名词重音在首 /ˈsʌp/；动词重音也常在首但尾音 -ment 略重，三音节 /ˈsʌplɪmənt/。",
+      "examples": [
+        {
+          "en": "He takes a protein supplement after training.",
+          "zh": "他练后吃蛋白补剂。",
+          "source": "造句"
+        },
+        {
+          "en": "a dietary supplement",
+          "zh": "膳食补充剂（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "protein",
+          "ipa": "/ˈproʊtiːn/",
+          "gloss": "蛋白质",
+          "note": "protein 是具体一种营养素；supplement 是补剂总称，protein powder 是其中一种"
+        }
+      ],
+      "nuance": "supplement（补剂）泛指蛋白粉、肌酸等；作动词 supplement your diet=补充饮食。"
+    },
+    {
+      "word": "hygiene",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ˈhaɪdʒiːn/",
+      "subgroup": "noun",
+      "meaning": "n. 卫生（习惯）",
+      "core": "保持干净、防病菌的习惯——健身房礼仪：擦器械、带毛巾。",
+      "etymology": "源自希腊健康女神 Hygieia（她的名字意为「健康」）→ 卫生之道。",
+      "roots": [
+        {
+          "part": "hygien-",
+          "meaning": "希腊 Hygieia「健康女神」→健康、卫生"
+        },
+        {
+          "part": "-e",
+          "meaning": "名词尾"
+        }
+      ],
+      "phonetics": "重音在首 /ˈhaɪ/，含双元音 /aɪ/；-giene 读 /dʒiːn/，长 /iː/，别读三音节。",
+      "examples": [
+        {
+          "en": "Wiping down machines is basic gym hygiene.",
+          "zh": "擦器械是健身房基本卫生礼仪。",
+          "source": "造句"
+        },
+        {
+          "en": "personal hygiene",
+          "zh": "个人卫生（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "cleanliness",
+          "ipa": "/ˈklenlinəs/",
+          "gloss": "清洁",
+          "note": "cleanliness 是「干净」这个状态；hygiene 是为健康而保持清洁的整套习惯"
+        }
+      ],
+      "nuance": "hygiene（卫生）在健身房落到 wipe down、bring a towel 这些礼仪上，是场景高频词。"
+    },
+    {
+      "word": "sanitize",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/ˈsænətaɪz/",
+      "subgroup": "verb",
+      "meaning": "v. 消毒，杀菌",
+      "core": "把器械/手上的细菌清掉——比单纯 clean 更强调杀菌。",
+      "etymology": "拉丁 sanitas「健康」（sanus「健康的」，同 sane）+ -ize（动词化）。",
+      "roots": [
+        {
+          "part": "sanit-",
+          "meaning": "拉丁 sanitas「健康」（sanus「健康的」）"
+        },
+        {
+          "part": "-ize",
+          "meaning": "动词后缀「使…化」"
+        }
+      ],
+      "phonetics": "重音在首 /ˈsæn/，元音 /æ/；结尾 -ize 读 /taɪz/，含 /aɪ/。",
+      "examples": [
+        {
+          "en": "Please sanitize the equipment after use.",
+          "zh": "用完请给器械消毒。",
+          "source": "造句"
+        },
+        {
+          "en": "sanitize your hands",
+          "zh": "给手消毒（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "wipe down",
+          "ipa": "/waɪp daʊn/",
+          "gloss": "擦拭干净",
+          "note": "wipe down 是「拿布擦一遍」的动作；sanitize 强调「杀菌消毒」的效果"
+        }
+      ],
+      "nuance": "sanitize（消毒）比 clean、wipe 更强调杀菌；疫情后健身房高频提示语。"
+    },
+    {
+      "word": "incline",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ˈɪnklaɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 坡度，倾斜；v. 倾斜；倾向于",
+      "core": "跑步机/卧推凳的「坡度」——调高 incline 让训练更吃力。",
+      "etymology": "拉丁 inclinare「使倾斜」（in-「向」+ clinare「倾、斜」，同 lean、decline）。",
+      "roots": [
+        {
+          "part": "in-",
+          "meaning": "拉丁 in「向、朝」"
+        },
+        {
+          "part": "-cline",
+          "meaning": "拉丁 clinare「倾斜、弯」（同 decline、recline）"
+        }
+      ],
+      "phonetics": "名词重音在首 /ˈɪn/；动词重音在后 /ɪnˈklaɪn/，都含双元音 /aɪ/。",
+      "examples": [
+        {
+          "en": "Raise the incline to make the walk harder.",
+          "zh": "调高坡度让走路更吃力。",
+          "source": "造句"
+        },
+        {
+          "en": "an incline bench press",
+          "zh": "上斜卧推（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "decline",
+          "ipa": "/dɪˈklaɪn/",
+          "gloss": "下斜",
+          "note": "decline 是向下倾斜；incline 是向上倾斜，跑步机、卧推凳都有这两档"
+        }
+      ],
+      "nuance": "incline（上斜）对 decline（下斜）；跑步机 incline、上斜卧推都是加难度的常见设定。"
+    },
+    {
+      "word": "physique",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/fɪˈziːk/",
+      "subgroup": "noun",
+      "meaning": "n. 体格，体型",
+      "core": "整体的身材外形——练出来的肌肉线条与比例。",
+      "etymology": "源自法语 physique「身体的」（希腊 phusis「自然、身体」，同 physical、physics）。",
+      "roots": [
+        {
+          "part": "phys-",
+          "meaning": "希腊 phusis「自然、身体」（同 physical）"
+        },
+        {
+          "part": "-ique",
+          "meaning": "法语形容/名词尾"
+        }
+      ],
+      "phonetics": "重音在第二音节 /ˈziːk/，元音长 /iː/；que 读 /k/；起首 phy- 读 /fɪ/。",
+      "examples": [
+        {
+          "en": "Years of training gave him an athletic physique.",
+          "zh": "多年训练让他练出运动员体格。",
+          "source": "造句"
+        },
+        {
+          "en": "a muscular / lean physique",
+          "zh": "健美／精瘦的体型（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "build",
+          "ipa": "/bɪld/",
+          "gloss": "体格",
+          "note": "build 更口语（a big build）；physique 略正式，强调肌肉线条与比例"
+        }
+      ],
+      "nuance": "physique（体格）que 读 /k/、重音在后；描述训练成果的身材时常用。"
+    },
+    {
+      "word": "cardiovascular",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/ˌkɑːrdioʊˈvæskjələr/",
+      "subgroup": "desc",
+      "meaning": "adj. 心血管的",
+      "core": "关于心脏和血管的——cardio（有氧）就是它的缩写。",
+      "etymology": "cardio（希腊 kardia「心」）+ vascular（拉丁 vasculum「小血管」）。字面「心+血管的」。",
+      "roots": [
+        {
+          "part": "cardio-",
+          "meaning": "希腊 kardia「心」"
+        },
+        {
+          "part": "vascul-",
+          "meaning": "拉丁 vasculum「小血管、导管」"
+        },
+        {
+          "part": "-ar",
+          "meaning": "形容词后缀「…的」"
+        }
+      ],
+      "phonetics": "两个次重音（cardio-、-vas-），主重音在 /ˈvæs/；六音节，读慢点别吞。",
+      "examples": [
+        {
+          "en": "Running improves cardiovascular health.",
+          "zh": "跑步能改善心血管健康。",
+          "source": "造句"
+        },
+        {
+          "en": "cardiovascular exercise / health",
+          "zh": "心血管运动／健康（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "aerobic",
+          "ipa": "/eˈroʊbɪk/",
+          "gloss": "有氧的",
+          "note": "aerobic 强调「靠氧供能」；cardiovascular 强调「练心肺血管系统」，常互指"
+        }
+      ],
+      "nuance": "cardiovascular（心血管的）是 cardio 的全称来源；描述有氧运动益处时的正式词。"
+    },
+    {
+      "word": "abdominal",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/æbˈdɑːmɪnl/",
+      "subgroup": "desc",
+      "meaning": "adj. 腹部的",
+      "core": "关于肚子那一块的——abs（腹肌）就是它的复数口语缩写。",
+      "etymology": "拉丁 abdomen「腹部」（abdere「藏起来」，内脏藏于腹中）+ -al。",
+      "roots": [
+        {
+          "part": "abdomin-",
+          "meaning": "拉丁 abdomen「腹部」（abdere「藏」）"
+        },
+        {
+          "part": "-al",
+          "meaning": "形容词后缀「…的」"
+        }
+      ],
+      "phonetics": "重音在第二音节 /ˈdɑː/，元音张嘴；起首 ab- 读 /æb/，四音节。",
+      "examples": [
+        {
+          "en": "Planks build abdominal strength.",
+          "zh": "平板支撑能练腹部力量。",
+          "source": "造句"
+        },
+        {
+          "en": "abdominal muscles",
+          "zh": "腹部肌肉（高频搭配，即 abs）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "core",
+          "ipa": "/kɔːr/",
+          "gloss": "核心的",
+          "note": "core 指整个躯干中段；abdominal 只指腹部这一块，是 core 的一部分"
+        }
+      ],
+      "nuance": "abdominal muscles 缩成 abs；描述腹部训练的正式形容词。"
+    },
+    {
+      "word": "deadlift",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈdedlɪft/",
+      "subgroup": "verb",
+      "meaning": "v. 做硬拉；n. 硬拉",
+      "core": "从地面「死重」把杠铃直拉起来——最考验全身力量的复合动作。",
+      "etymology": "dead（这里指「静止的死重」，无惯性助力）+ lift（举起）。字面「从静止把重量拉起」。",
+      "roots": [
+        {
+          "part": "dead",
+          "meaning": "「死的、静止无惯性的」→静止重量"
+        },
+        {
+          "part": "lift",
+          "meaning": "「举起」（古诺斯 lypta）"
+        }
+      ],
+      "phonetics": "重音在首 dead /ˈded/，元音 /e/；结尾 -lift 读 /lɪft/。",
+      "examples": [
+        {
+          "en": "Keep your back flat when you deadlift.",
+          "zh": "硬拉时背保持挺直。",
+          "source": "造句"
+        },
+        {
+          "en": "do deadlifts",
+          "zh": "做硬拉（名词复数）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "squat",
+          "ipa": "/skwɑːt/",
+          "gloss": "深蹲",
+          "note": "deadlift 从地面拉起、主练后链；squat 下蹲起立、主练腿臀，并称力量三大项之二"
+        }
+      ],
+      "nuance": "deadlift（硬拉）、squat（深蹲）、bench press（卧推）是力量训练「三大项」；硬拉最伤腰，强调 flat back。"
+    },
+    {
+      "word": "dehydrated",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/diːˈhaɪdreɪtɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 脱水的，缺水的",
+      "core": "身体水分流失过多的状态——出汗后不补水就会 dehydrated。",
+      "etymology": "de-（去除）+ hydr-（希腊 hydōr「水」）+ -ated。字面「被去掉水的」，是 hydrate 的反义。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "拉丁 de「去除、脱离」"
+        },
+        {
+          "part": "hydr-",
+          "meaning": "希腊 hydōr「水」（同 hydrate）"
+        },
+        {
+          "part": "-ated",
+          "meaning": "形容词/过去分词尾"
+        }
+      ],
+      "phonetics": "主重音在第三音节 /ˈhaɪ/，含 /aɪ/；de- 次重读 /diː/，五音节。",
+      "examples": [
+        {
+          "en": "You'll feel dizzy if you get dehydrated.",
+          "zh": "缺水会让你头晕。",
+          "source": "造句"
+        },
+        {
+          "en": "get / feel dehydrated",
+          "zh": "脱水／感觉缺水（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "hydrated",
+          "ipa": "/ˈhaɪdreɪtɪd/",
+          "gloss": "水分充足的",
+          "note": "hydrated 是补足水的好状态；dehydrated 是缺水的坏状态，前缀 de- 反转"
+        }
+      ],
+      "nuance": "dehydrated（脱水）由 de-+hydrate 构成，是 stay hydrated 的反面；常连 dizzy、cramp。"
+    },
+    {
+      "word": "mobility",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/moʊˈbɪləti/",
+      "subgroup": "noun",
+      "meaning": "n.（关节）活动度；灵活性",
+      "core": "关节能主动活动的范围——比柔韧更强调「能自己动到多大」。",
+      "etymology": "mobile（可动的，拉丁 movere「移动」）+ -ity。字面「能动的程度」。同源：motion、mobile。",
+      "roots": [
+        {
+          "part": "mob-",
+          "meaning": "拉丁 movere「移动」（同 motion、mobile）"
+        },
+        {
+          "part": "-ility",
+          "meaning": "名词后缀「…的能力/程度」"
+        }
+      ],
+      "phonetics": "重音在第二音节 /ˈbɪl/，起首 mo- 读 /moʊ/，四音节 /moʊˈbɪləti/。",
+      "examples": [
+        {
+          "en": "Hip mobility helps you squat deeper.",
+          "zh": "髋关节活动度好能蹲得更深。",
+          "source": "造句"
+        },
+        {
+          "en": "hip / shoulder mobility",
+          "zh": "髋／肩活动度（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "flexibility",
+          "ipa": "/ˌfleksəˈbɪləti/",
+          "gloss": "柔韧性",
+          "note": "flexibility 是肌肉被动拉长的程度；mobility 是关节主动活动的范围，训练里区分对待"
+        }
+      ],
+      "nuance": "mobility（活动度，主动）常和 flexibility（柔韧，被动）并提；热身多做 mobility drills。"
+    },
+    {
+      "word": "breathe",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/briːð/",
+      "subgroup": "verb",
+      "meaning": "v. 呼吸",
+      "core": "训练时的呼吸节奏——发力呼气、还原吸气是关键。",
+      "etymology": "古英语 brǣth「气息」的动词形式；名词是 breath /breθ/，动词 breathe /briːð/。",
+      "roots": [
+        {
+          "part": "breath-",
+          "meaning": "古英语 brǣth「气息、呼吸」"
+        },
+        {
+          "part": "-e",
+          "meaning": "动词化尾（使元音变长、th 浊化）"
+        }
+      ],
+      "phonetics": "动词 breathe /briːð/ 元音长 /iː/、th 浊 /ð/；名词 breath /breθ/ 元音短 /e/、th 清 /θ/，别混。",
+      "examples": [
+        {
+          "en": "Breathe out as you lift the weight.",
+          "zh": "举起时呼气。",
+          "source": "造句"
+        },
+        {
+          "en": "breathe in / out",
+          "zh": "吸气／呼气（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "inhale",
+          "ipa": "/ɪnˈheɪl/",
+          "gloss": "吸气",
+          "note": "inhale 是专指「吸入」；breathe 泛指整个呼吸过程（含吸和呼）"
+        }
+      ],
+      "nuance": "动词 breathe（长音浊 th）对名词 breath（短音清 th）；教练常喊 don't hold your breath（别憋气）。"
+    },
+    {
+      "word": "spotter",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈspɑːtər/",
+      "subgroup": "noun",
+      "meaning": "n. 保护者（举重时在旁接杠的人）",
+      "core": "站在你身后随时接住杠铃、防止砸伤的人——大重量必备。",
+      "etymology": "spot（健身义「在旁保护」）+ -er（做…的人）。字面「负责 spot 的人」。",
+      "roots": [
+        {
+          "part": "spot",
+          "meaning": "健身动词「在旁保护、盯住」"
+        },
+        {
+          "part": "-er",
+          "meaning": "「做…的人」"
+        }
+      ],
+      "phonetics": "重音在首 /ˈspɑː/，美音元音张嘴 /ɑː/，tt 读闪音；结尾 -er 轻读 /ər/。",
+      "examples": [
+        {
+          "en": "Always use a spotter for heavy bench press.",
+          "zh": "大重量卧推一定要找人保护。",
+          "source": "造句"
+        },
+        {
+          "en": "ask for a spotter",
+          "zh": "找个保护的人（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "spot",
+          "ipa": "/spɑːt/",
+          "gloss": "（动词）保护",
+          "note": "spot 是「保护」这个动作（动词）；spotter 是执行保护的那个人（名词）"
+        }
+      ],
+      "nuance": "spotter（保护者）由 spot+er 而来；大重量训练求助句 Can you be my spotter? 高频。"
+    },
+    {
+      "word": "calorie",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈkæləri/",
+      "subgroup": "noun",
+      "meaning": "n. 卡路里，热量（单位）",
+      "core": "食物含能量、运动耗能量的计量单位——减脂全围绕它算。",
+      "etymology": "拉丁 calor「热」（同 caloric）+ -ie。字面「热量单位」。",
+      "roots": [
+        {
+          "part": "calor-",
+          "meaning": "拉丁 calor「热」"
+        },
+        {
+          "part": "-ie",
+          "meaning": "名词尾"
+        }
+      ],
+      "phonetics": "重音在首 /ˈkæl/，元音 /æ/；三音节 /ˈkæləri/，中间 -o- 轻读 /ə/。",
+      "examples": [
+        {
+          "en": "This workout burns about 300 calories.",
+          "zh": "这次训练大约消耗三百卡。",
+          "source": "造句"
+        },
+        {
+          "en": "burn / count calories",
+          "zh": "消耗／计算热量（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "kilojoule",
+          "ipa": "/ˈkɪlədʒuːl/",
+          "gloss": "千焦",
+          "note": "kilojoule 是国际单位制的能量单位；calorie 是日常饮食/健身更常用的热量单位"
+        }
+      ],
+      "nuance": "calorie（卡路里）和 burn、count 搭配；减脂对话的核心计量词。"
+    },
+    {
+      "word": "tone",
+      "levels": [
+        "基础",
+        "场景",
+        "口语"
+      ],
+      "ipa": "/toʊn/",
+      "subgroup": "verb",
+      "meaning": "v. 使（肌肉）紧实有型；n. 肌肉紧实度",
+      "core": "把肌肉练得紧实有线条（但不一定变大）——女性健身高频目标词。",
+      "etymology": "希腊 tonos「绷紧、张力」（teinein「拉伸」，同 tension）。指肌肉保持的适度张力。",
+      "roots": [
+        {
+          "part": "ton-",
+          "meaning": "希腊 tonos「张力、绷紧」（同 tension）"
+        },
+        {
+          "part": "-e",
+          "meaning": "名词/动词尾"
+        }
+      ],
+      "phonetics": "单音节 /toʊn/，含双元音 /oʊ/；常搭 -d：toned（紧实的）。",
+      "examples": [
+        {
+          "en": "These exercises tone your arms.",
+          "zh": "这些动作能让手臂紧实。",
+          "source": "造句"
+        },
+        {
+          "en": "tone up / a toned body",
+          "zh": "练紧实／紧实的身材（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "bulk",
+          "ipa": "/bʌlk/",
+          "gloss": "增肌变大",
+          "note": "bulk 是把肌肉练大练粗；tone 是练紧实有线条但不刻意增大，目标不同"
+        }
+      ],
+      "nuance": "tone up（练紧实）强调线条不求变大；对 bulk up（增肌变大），是两种训练目标。"
+    },
+    {
+      "word": "circuit",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ˈsɜːrkɪt/",
+      "subgroup": "noun",
+      "meaning": "n. 循环训练（一圈动作）；电路，环路",
+      "core": "把几个动作串成一圈连续做完、再重复——高效的循环训练。",
+      "etymology": "拉丁 circuitus「绕一圈」（circum「围绕」+ ire「走」）。健身指绕一圈做完各站动作。",
+      "roots": [
+        {
+          "part": "circu-",
+          "meaning": "拉丁 circum「围绕、一圈」（同 circle）"
+        },
+        {
+          "part": "-it",
+          "meaning": "拉丁 ire「走」→走一圈"
+        }
+      ],
+      "phonetics": "重音在首 /ˈsɜːr/，元音卷舌 /ɜː/；结尾 -cuit 读 /kɪt/（u 不发音）。",
+      "examples": [
+        {
+          "en": "We did a full-body circuit with no rest.",
+          "zh": "我们做了一轮无间歇的全身循环。",
+          "source": "造句"
+        },
+        {
+          "en": "circuit training",
+          "zh": "循环训练（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "interval",
+          "ipa": "/ˈɪntərvl/",
+          "gloss": "间歇训练",
+          "note": "interval 是「高强度+休息」交替；circuit 是「多个动作连成一圈」轮做，结构不同"
+        }
+      ],
+      "nuance": "circuit training（循环训练）把多动作串一圈；对 interval training（间歇训练）的强弱交替。"
+    },
+    {
+      "word": "elevate",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈeləveɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 抬高，升高",
+      "core": "把某物往上抬——受伤后 elevate 患肢消肿，或抬高心率。",
+      "etymology": "拉丁 elevare「举起」（e-「向外/上」+ levare「抬、使轻」，同 lever、levity）。",
+      "roots": [
+        {
+          "part": "e-",
+          "meaning": "拉丁 ex「向外、向上」"
+        },
+        {
+          "part": "-lev-",
+          "meaning": "拉丁 levare「抬起、使轻」（同 lever）"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "重音在首 /ˈel/，元音 /e/；结尾 -vate 读 /veɪt/，含 /eɪ/。",
+      "examples": [
+        {
+          "en": "Elevate your injured leg to reduce swelling.",
+          "zh": "把受伤的腿抬高以消肿。",
+          "source": "造句"
+        },
+        {
+          "en": "elevate your heart rate",
+          "zh": "提高心率（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "raise",
+          "ipa": "/reɪz/",
+          "gloss": "抬高",
+          "note": "raise 是日常口语「抬起」；elevate 更正式，多用于医疗（抬高患肢）或指标（心率）"
+        }
+      ],
+      "nuance": "elevate（抬高）比 raise 正式；急救常说 rest, ice, elevate（休息、冰敷、抬高）。"
+    }
+  ]
+}

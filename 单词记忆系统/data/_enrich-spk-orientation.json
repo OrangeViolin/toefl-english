@@ -1,0 +1,869 @@
+{
+  "enrich": {
+    "orientation": {
+      "core": "让新人「认清方向、面向东方站定」——先定位，再上手。",
+      "roots": [
+        {"part": "ori-", "meaning": "拉丁 oriri 升起（太阳从东方升起→定方向）"},
+        {"part": "-ent-", "meaning": "现在分词，表「正在…的状态」"},
+        {"part": "-ation", "meaning": "名词后缀，表「…的行为/活动」"}
+      ],
+      "senses": [
+        {"gloss": "迎新，情况介绍（大学场景本义）", "logic": "让新生「认清方向」的一整套活动", "en": "Orientation lasts three days before classes begin.", "zh": "开课前有三天迎新。"},
+        {"gloss": "方向，定位", "logic": "回到「面向东方」的字面义", "en": "The map shows the building's orientation.", "zh": "地图显示这栋楼的朝向。"},
+        {"gloss": "（观念/兴趣的）取向，倾向", "logic": "抽象化的「面向某个方向」", "en": "a career orientation toward research", "zh": "偏研究的职业取向。"}
+      ]
+    },
+    "schedule": {
+      "core": "写在小纸条上的「时间安排」——名词是排好的表，动词是把某事排进时间。",
+      "senses": [
+        {"gloss": "n. 课表，日程表", "logic": "排好的一张时间清单", "en": "My schedule is full on Mondays.", "zh": "我周一课排满了。"},
+        {"gloss": "n. 时刻表（车/航班）", "logic": "交通工具的定点时间表", "en": "Check the bus schedule.", "zh": "查一下公交时刻表。"},
+        {"gloss": "v. 安排（在某时间）", "logic": "把某事「放进日程」", "en": "schedule a meeting for Friday", "zh": "把会议安排在周五。"}
+      ]
+    },
+    "credit": {
+      "core": "拉丁 credere「相信」——学校「认可」你完成的课时（学分），银行「信任」你的还款力（信用）。",
+      "roots": [
+        {"part": "cred-", "meaning": "拉丁 credere 相信、信任"},
+        {"part": "-it", "meaning": "拉丁过去分词残留，表「被相信之物」"}
+      ],
+      "senses": [
+        {"gloss": "n. 学分", "logic": "学校「认可」你修完的课时量", "en": "This course is worth four credits.", "zh": "这门课是四学分。"},
+        {"gloss": "n. 信用，赊账", "logic": "别人「相信」你会还钱", "en": "buy it on credit", "zh": "赊账买它。"},
+        {"gloss": "n. 赞誉，功劳", "logic": "把好事「归信」到你名下", "en": "She got credit for the idea.", "zh": "这个点子的功劳算在她头上。"}
+      ]
+    },
+    "major": {
+      "core": "拉丁「更大的」——你投入最大份精力的学科（主修），或程度上「更主要的」。",
+      "roots": [
+        {"part": "maj-", "meaning": "拉丁 magnus 大的（比较级 maior 更大）"},
+        {"part": "-or", "meaning": "拉丁比较级词尾"}
+      ],
+      "senses": [
+        {"gloss": "n. 主修专业", "logic": "投入精力「最大」的那门学科", "en": "Her major is chemistry.", "zh": "她的专业是化学。"},
+        {"gloss": "v. 主修（major in）", "logic": "以某科为主攻方向", "en": "He majors in history.", "zh": "他主修历史。"},
+        {"gloss": "adj. 主要的，重大的", "logic": "程度上「更大」", "en": "a major problem", "zh": "一个重大问题。"}
+      ]
+    },
+    "quarter": {
+      "core": "拉丁「第四」——把整体切成四份中的一份：一年四分之一的学季、25美分、一刻钟。",
+      "roots": [
+        {"part": "quart-", "meaning": "拉丁 quartus 第四"},
+        {"part": "-er", "meaning": "名词后缀"}
+      ],
+      "senses": [
+        {"gloss": "n.（三/四学期制的）学季", "logic": "把学年分成的一段", "en": "the spring quarter", "zh": "春季学季。"},
+        {"gloss": "n. 四分之一", "logic": "整体的四分之一", "en": "three quarters of the class", "zh": "全班的四分之三。"},
+        {"gloss": "n. 一刻钟；25美分", "logic": "一小时的四分之一 / 一美元的四分之一", "en": "a quarter past six", "zh": "六点一刻。"}
+      ]
+    },
+    "section": {
+      "core": "拉丁「切开」——从整体切出的一块：大课切出的小班、文章切出的一段。",
+      "roots": [
+        {"part": "sect-", "meaning": "拉丁 secare 切割"},
+        {"part": "-ion", "meaning": "名词后缀，表「…的结果」"}
+      ],
+      "senses": [
+        {"gloss": "n.（课程的）小班，分班", "logic": "一门大课「切」出的上课小组", "en": "Which lab section did you sign up for?", "zh": "你报了哪个实验小班？"},
+        {"gloss": "n. 部分，段落", "logic": "整体「切」出的一块", "en": "the sports section of the paper", "zh": "报纸的体育版块。"}
+      ]
+    },
+    "fair": {
+      "core": "两个同形词：一是「集市」（拉丁 feria 节日），二是「公平/白皙」（古英语 fæger）——校园里多指前者。",
+      "senses": [
+        {"gloss": "n. 集市，招新会，展会", "logic": "拉丁 feria 节日→摆摊聚集之处", "en": "The club fair is on the lawn.", "zh": "社团招新会在草坪上。"},
+        {"gloss": "adj. 公平的，合理的", "logic": "古英语 fæger 美好、合宜", "en": "a fair decision", "zh": "一个公正的决定。"},
+        {"gloss": "adj.（天气）晴朗的；（肤色）白皙的", "logic": "同源「美好、明亮」", "en": "fair skies tomorrow", "zh": "明天天气晴好。"}
+      ]
+    },
+    "tour": {
+      "core": "拉丁 tornus「转圈的车床」——按一条环线「绕一圈」参观。",
+      "senses": [
+        {"gloss": "n./v. 游览，参观", "logic": "绕场地走一圈看", "en": "take a campus tour", "zh": "参加校园游览。"},
+        {"gloss": "n.（乐队/球队的）巡回", "logic": "一圈圈跑不同城市", "en": "the band is on tour", "zh": "乐队在巡演。"}
+      ]
+    },
+    "record": {
+      "core": "拉丁 re-「回」+ cor「心」——「记在心上」，引申为写下来的记录；名动重音位置不同。",
+      "roots": [
+        {"part": "re-", "meaning": "回，再"},
+        {"part": "cord", "meaning": "拉丁 cor 心（记在心上）"}
+      ],
+      "senses": [
+        {"gloss": "n. /ˈrekərd/ 记录，档案", "logic": "记在心/纸上的东西", "en": "keep a record of your grades", "zh": "保存你的成绩记录。"},
+        {"gloss": "v. /rɪˈkɔːrd/ 记录，录制", "logic": "把内容记下/录下", "en": "record the lecture", "zh": "把讲座录下来。"},
+        {"gloss": "n. 最高纪录", "logic": "被记下来的最好成绩", "en": "break the record", "zh": "打破纪录。"}
+      ]
+    },
+    "process": {
+      "core": "拉丁 pro-「向前」+ cedere「走」——一步步向前推进的过程；作动词=按流程办理。",
+      "roots": [
+        {"part": "pro-", "meaning": "向前"},
+        {"part": "cess", "meaning": "拉丁 cedere 走（步步前行）"}
+      ],
+      "senses": [
+        {"gloss": "n. 流程，过程", "logic": "一步步向前走的整段", "en": "the registration process", "zh": "注册流程。"},
+        {"gloss": "v. 办理，处理", "logic": "让材料「走完流程」", "en": "process your application", "zh": "办理你的申请。"}
+      ]
+    },
+    "permit": {
+      "core": "拉丁 per-「通过」+ mittere「送」——「放行」；名词=放行证件，动词=允许，名动重音不同。",
+      "roots": [
+        {"part": "per-", "meaning": "通过，彻底"},
+        {"part": "mit", "meaning": "拉丁 mittere 送、放"}
+      ],
+      "senses": [
+        {"gloss": "n. /ˈpɜːrmɪt/ 许可证", "logic": "允许你做某事的证件", "en": "a parking permit", "zh": "一张停车证。"},
+        {"gloss": "v. /pərˈmɪt/ 允许，准许", "logic": "让某事「通过」", "en": "Smoking is not permitted.", "zh": "不允许吸烟。"}
+      ]
+    },
+    "spot": {
+      "core": "本义「一小块斑点」——引申为「一小块地方」（位置）和「一个位置」（名额）。",
+      "senses": [
+        {"gloss": "n. 地点，位置", "logic": "一小块地方", "en": "a good spot to study", "zh": "一个学习的好位置。"},
+        {"gloss": "n. 名额", "logic": "队伍/课里的「一个位子」", "en": "a spot in the seminar", "zh": "研讨课里的一个名额。"},
+        {"gloss": "v. 认出，发现", "logic": "眼睛「锁定那一点」", "en": "spot a mistake", "zh": "发现一处错误。"}
+      ]
+    },
+    "line": {
+      "core": "拉丁 linea「亚麻线」——一条线；引申为「排成一条线的人」（队伍）。",
+      "senses": [
+        {"gloss": "n. 队伍，排队（美式）", "logic": "人排成一条线", "en": "wait in line", "zh": "排队等候。"},
+        {"gloss": "n. 线，界线", "logic": "本义一条线", "en": "draw a line", "zh": "画一条线。"},
+        {"gloss": "n.（电话/网络）线路", "logic": "连接两端的「线」", "en": "The line is busy.", "zh": "电话占线。"}
+      ]
+    },
+    "free": {
+      "core": "古英语「自由的」——不受约束：不受费用约束（免费）、不受占用（有空）、不受限制（自由）。",
+      "senses": [
+        {"gloss": "adj. 免费的", "logic": "不受费用约束", "en": "free Wi-Fi in the dorm", "zh": "宿舍免费无线网。"},
+        {"gloss": "adj. 有空的", "logic": "时间不被占用", "en": "Are you free at three?", "zh": "你三点有空吗？"},
+        {"gloss": "adj. 自由的", "logic": "不受限制", "en": "free to choose your courses", "zh": "可自由选课。"}
+      ]
+    },
+    "official": {
+      "core": "拉丁 officium「职责」——由职权认可的「官方、正式」；作名词=官员。",
+      "roots": [
+        {"part": "offic-", "meaning": "拉丁 officium 职责、公务"},
+        {"part": "-ial", "meaning": "形容词后缀，表「属于…的」"}
+      ],
+      "senses": [
+        {"gloss": "adj. 官方的，正式的", "logic": "有职权认可的", "en": "an official transcript", "zh": "一份官方成绩单。"},
+        {"gloss": "n. 官员，公职人员", "logic": "履行公务职责的人", "en": "a government official", "zh": "一名政府官员。"}
+      ]
+    },
+    "senior": {
+      "core": "拉丁「更年长的」——年级里最高（大四），资历上最深（资深）。",
+      "roots": [
+        {"part": "sen-", "meaning": "拉丁 senex 老人（比较级 senior 更年长）"},
+        {"part": "-ior", "meaning": "拉丁比较级词尾"}
+      ],
+      "senses": [
+        {"gloss": "n. 大四学生", "logic": "年级里「最年长」的一届", "en": "A senior showed us around.", "zh": "一位大四生带我们参观。"},
+        {"gloss": "adj. 资深的，高级的", "logic": "资历上「更年长」", "en": "a senior researcher", "zh": "一名资深研究员。"}
+      ]
+    },
+    "resident": {
+      "core": "拉丁 re-「回」+ sedere「坐」——「坐定长住」的人；宿舍里指 Resident Advisor（RA）。",
+      "roots": [
+        {"part": "re-", "meaning": "回，一再"},
+        {"part": "sid", "meaning": "拉丁 sedere 坐（坐下来长住）"},
+        {"part": "-ent", "meaning": "表人后缀，「…的人」"}
+      ]
+    },
+    "faculty": {
+      "core": "拉丁 facultas「才能」——「一群有教学能力的人」（全体教师），也指按学科分的院系。",
+      "roots": [
+        {"part": "fac-", "meaning": "拉丁 facere 做、能做（才能）"},
+        {"part": "-ulty", "meaning": "名词后缀，表「能力/群体」"}
+      ],
+      "senses": [
+        {"gloss": "n. 全体教职员工，教师群体", "logic": "有教学「才能」的一群人", "en": "meet the faculty of your department", "zh": "见你所在系的老师们。"},
+        {"gloss": "n.（大学的）院系", "logic": "按学科分的教学单元（英式）", "en": "the Faculty of Science", "zh": "理学院。"},
+        {"gloss": "n.（人的）官能，能力", "logic": "回到「才能」本义", "en": "the faculty of speech", "zh": "语言能力。"}
+      ]
+    },
+    "register": {
+      "core": "拉丁「记回来」——把名字记进名册；校园里=选课/注册。",
+      "roots": [
+        {"part": "re-", "meaning": "回，再"},
+        {"part": "gist", "meaning": "拉丁 gerere 携带、记载"},
+        {"part": "-er", "meaning": "动词/名词后缀"}
+      ],
+      "senses": [
+        {"gloss": "v. 选课，注册", "logic": "把名字记进课程名册", "en": "register for classes", "zh": "选课。"},
+        {"gloss": "v. 登记（信息）", "logic": "把信息记录在案", "en": "register to vote", "zh": "登记选民资格。"},
+        {"gloss": "n. 收银机；登记簿", "logic": "记录数字/名字的装置", "en": "pay at the register", "zh": "在收银台付款。"}
+      ]
+    },
+    "orient": {
+      "core": "拉丁「面向东方」——古人靠找东方定方位，引申为「使认清方向、适应新环境」。",
+      "roots": [
+        {"part": "ori-", "meaning": "拉丁 oriri 升起（东方日出）"},
+        {"part": "-ent", "meaning": "动词/名词词尾"}
+      ]
+    },
+    "transcript": {
+      "core": "拉丁 trans-「越过」+ scribere「写」——从档案里「誊抄过来」的一份记录。",
+      "roots": [
+        {"part": "trans-", "meaning": "越过，转移"},
+        {"part": "script", "meaning": "拉丁 scribere 写"}
+      ]
+    },
+    "department": {
+      "core": "拉丁「分派开」——把机构按职能/学科「分」出的一块，即「系/部门」。",
+      "roots": [
+        {"part": "de-", "meaning": "分开，离开"},
+        {"part": "part", "meaning": "拉丁 partire 分（部分）"},
+        {"part": "-ment", "meaning": "名词后缀"}
+      ]
+    },
+    "prerequisite": {
+      "core": "pre-「先」+ requisite「必需的」——必须「先」满足/修完的前置条件。",
+      "roots": [
+        {"part": "pre-", "meaning": "在…之前"},
+        {"part": "requi-", "meaning": "拉丁 requirere 要求、索取"},
+        {"part": "-site", "meaning": "拉丁 situs 放置（被要求放在前面的）"}
+      ]
+    },
+    "appointment": {
+      "core": "古法 apointer「安排到某一点」——约定「到某个时间点」见面。",
+      "roots": [
+        {"part": "ap-", "meaning": "ad- 向、到"},
+        {"part": "point", "meaning": "点（时间点）"},
+        {"part": "-ment", "meaning": "名词后缀，表「行为/结果」"}
+      ]
+    },
+    "guide": {
+      "core": "古法 guider「引路」（与 wit「知」同源）——带路的人，或引路的手册。",
+      "senses": [
+        {"gloss": "n. 向导，带路的人", "logic": "在前面「引路」的人", "en": "a student guide", "zh": "一位学生向导。"},
+        {"gloss": "n. 指南，手册", "logic": "纸上的「引路者」", "en": "a survival guide for freshmen", "zh": "新生生存指南。"},
+        {"gloss": "v. 引导，指引", "logic": "带着某人走", "en": "guide you through the process", "zh": "带你走完整个流程。"}
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "registration",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌredʒɪˈstreɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 注册，登记；（尤指）选课注册",
+      "core": "register（把名字记进名册）的名词——「记名入册」这件事本身。",
+      "etymology": "register（登记，拉丁 re-回 + gerere 记载）+ -ation。「登记入册的行为/过程」。",
+      "roots": [
+        {"part": "re-", "meaning": "回，再"},
+        {"part": "gist", "meaning": "拉丁 gerere 携带、记载"},
+        {"part": "-ration", "meaning": "名词后缀，表「…的行为」"}
+      ],
+      "phonetics": "重音在第三音节 /ˈstreɪ/：re-gis-TRA-tion。五音节，别把重音放前面。",
+      "examples": [
+        {"en": "Course registration opens at midnight on Sunday.", "zh": "选课注册周日午夜开放。", "source": "造句"},
+        {"en": "the registration deadline / process", "zh": "注册截止日／注册流程（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "enrollment", "ipa": "/ɪnˈroʊlmənt/", "gloss": "注册入学", "note": "registration 侧重「选具体的课/登记」这个动作过程；enrollment 侧重「正式入学/在册状态」"}
+      ],
+      "nuance": "registration 是选课注册这件事（course registration）；办完才算 enrolled（在册）。"
+    },
+    {
+      "word": "enrollment",
+      "levels": ["托福", "场景"],
+      "ipa": "/ɪnˈroʊlmənt/",
+      "subgroup": "noun",
+      "meaning": "n. 注册入学；在册人数",
+      "core": "enroll（记进名册）的名词——「入册」这件事，或「在册的人数」。",
+      "etymology": "enroll（登记入册，古法 en-进 + rolle 名册卷）+ -ment。英式常拼 enrolment（一个 l）。",
+      "roots": [
+        {"part": "en-", "meaning": "使进入"},
+        {"part": "roll", "meaning": "古法 rolle 卷起的名册纸卷"},
+        {"part": "-ment", "meaning": "名词后缀，表「行为/结果」"}
+      ],
+      "phonetics": "重音在第二音节 /ˈroʊl/：en-ROLL-ment。roll 长 /oʊ/。",
+      "examples": [
+        {"en": "Enrollment for fall closes at the end of August.", "zh": "秋季入学注册八月底截止。", "source": "造句"},
+        {"en": "confirm your enrollment", "zh": "确认你的入学注册（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "registration", "ipa": "/ˌredʒɪˈstreɪʃn/", "gloss": "注册，选课", "note": "enrollment 侧重「入学/在册」这一整体身份；registration 侧重「选课/登记」这个具体动作"}
+      ],
+      "nuance": "enrollment 也可指「在册人数」（total enrollment=在校生总数）；办手续时=入学注册。"
+    },
+    {
+      "word": "syllabus",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈsɪləbəs/",
+      "subgroup": "noun",
+      "meaning": "n.（单门课的）教学大纲，课程说明（复数 syllabi 或 syllabuses）",
+      "core": "一门课的「说明书」——列出每周内容、作业、评分、截止日期。",
+      "etymology": "源自误抄的希腊/拉丁词，实为拉丁 sittybas「标签」的讹变，现指「课程内容清单」。",
+      "phonetics": "重音在首 /ˈsɪl/，三音节 syl-la-bus。复数正式作 syllabi /-baɪ/。",
+      "examples": [
+        {"en": "The professor hands out the syllabus on the first day.", "zh": "教授第一天发教学大纲。", "source": "造句"},
+        {"en": "check the syllabus for the grading", "zh": "看大纲了解评分方式（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "curriculum", "ipa": "/kəˈrɪkjələm/", "gloss": "课程体系", "note": "syllabus 是「单门课」的教学计划（微观）；curriculum 是「整个专业」的课程结构（宏观）"}
+      ],
+      "nuance": "syllabus=一门课的大纲（含每周安排、评分、截止日）；开课第一件事就是 read the syllabus。"
+    },
+    {
+      "word": "dean",
+      "levels": ["托福", "场景"],
+      "ipa": "/diːn/",
+      "subgroup": "noun",
+      "meaning": "n. 院长，教务长；系主任级别的行政主管",
+      "core": "拉丁「十人之长」——管一个学院/一大摊学生事务的负责人。",
+      "etymology": "拉丁 decanus「管十个人的头目」（decem 十）。教会里管十名修士的头，引申为学院主管。",
+      "phonetics": "长元音 /iː/，一个音节 /diːn/。和 dane 无关，别读散。",
+      "examples": [
+        {"en": "You can appeal to the dean if your request is denied.", "zh": "如果申请被拒，你可以向院长申诉。", "source": "造句"},
+        {"en": "the dean of students / the dean's office", "zh": "学生事务处主任／院长办公室（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "principal", "ipa": "/ˈprɪnsəpl/", "gloss": "校长（中小学）", "note": "principal 是中小学校长；dean 是大学里管某学院或学生事务的行政主管"}
+      ],
+      "nuance": "dean of students（学生事务处主任）在听力里常是处理申诉、纪律、特殊情况的高层角色。"
+    },
+    {
+      "word": "tutor",
+      "levels": ["托福", "口语", "场景"],
+      "ipa": "/ˈtuːtər/",
+      "subgroup": "noun",
+      "meaning": "n. 辅导老师，家教；v. 辅导，个别指导",
+      "core": "拉丁「看护者」——一对一或小范围「盯着教」你某一科的人。",
+      "etymology": "拉丁 tutor「守护者，监护人」（tueri 看护，同源 tuition）。「盯着教一个人」。",
+      "phonetics": "重音在首 /ˈtuː/，美音 tu- 读 /tuː/。别读成 /ˈtʃuːtər/。",
+      "examples": [
+        {"en": "The writing center has free tutors for essays.", "zh": "写作中心有免费的作文辅导老师。", "source": "造句"},
+        {"en": "get a tutor / tutor sb. in math", "zh": "找个辅导老师／辅导某人数学（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "instructor", "ipa": "/ɪnˈstrʌktər/", "gloss": "任课教师", "note": "instructor 是给全班上课的老师；tutor 是一对一/小组「补课辅导」的人"}
+      ],
+      "nuance": "tutoring（辅导）在迎新常作免费资源介绍：feeling behind? get a free tutor。"
+    },
+    {
+      "word": "transfer",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈtrænsfɜːr/",
+      "subgroup": "verb",
+      "meaning": "v. 转（学/专业），转移；n. /ˈtrænsfɜːr/ 转学生，转移",
+      "core": "拉丁 trans-「越过」+ ferre「带」——把（学分/自己）从一处「带到」另一处。",
+      "etymology": "拉丁 transferre「带过去」（trans-越过 + ferre 携带）。「从此处移到彼处」。",
+      "roots": [
+        {"part": "trans-", "meaning": "越过，转移"},
+        {"part": "fer", "meaning": "拉丁 ferre 携带"}
+      ],
+      "phonetics": "动词重音常在后 /trænsˈfɜːr/；名词重音在前 /ˈtrænsfɜːr/。名动重音可移。",
+      "examples": [
+        {"en": "You can transfer credits from your previous college.", "zh": "你可以从原来的大学转学分过来。", "source": "造句"},
+        {"en": "a transfer student / transfer credits", "zh": "转学生／转学分（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "switch", "ipa": "/swɪtʃ/", "gloss": "转换，改换", "note": "switch 口语指「换（专业/课）」；transfer 更正式，含「带着学分/身份转到别处」"}
+      ],
+      "nuance": "transfer student=转学生（带学分转来）；transfer credits=转学分，是转学生的高频话题。"
+    },
+    {
+      "word": "textbook",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈtekstbʊk/",
+      "subgroup": "noun",
+      "meaning": "n. 教科书，课本",
+      "core": "text（正文）+ book——某门课指定要用的「正课用书」。",
+      "etymology": "text（正文，拉丁 textus「编织物→文章」）+ book。「课程正文用的书」。",
+      "phonetics": "重音在首 /ˈtekst/。text 的结尾 -xt 是 /kst/，别吞音；两词连读。",
+      "examples": [
+        {"en": "Buy your textbooks at the campus bookstore or rent them online.", "zh": "在校园书店买教材，或者上网租。", "source": "造句"},
+        {"en": "a required textbook", "zh": "指定教材（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "coursebook", "ipa": "/ˈkɔːrsbʊk/", "gloss": "课本", "note": "coursebook 英式更常用；textbook 是通用说法，指某课指定的主用书"}
+      ],
+      "nuance": "required textbook=课程指定的必买教材，在 syllabus 里列出，去 bookstore 买或 rent。"
+    },
+    {
+      "word": "exam",
+      "levels": ["基础", "口语", "场景"],
+      "ipa": "/ɪɡˈzæm/",
+      "subgroup": "noun",
+      "meaning": "n. 考试（examination 的口语简称）",
+      "core": "examination（细查）的口语缩写——「检验你学会没有」的考试。",
+      "etymology": "examination 的缩略，源自拉丁 examinare「称量、检验」（examen 天平指针）。",
+      "phonetics": "重音在第二音节 /ˈzæm/：e-XAM。首音节 e- 读 /ɪɡ/。",
+      "examples": [
+        {"en": "There's a placement exam for math before you register.", "zh": "选课前有一场数学分级考试。", "source": "造句"},
+        {"en": "a placement / final exam", "zh": "分级考／期末考（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "test", "ipa": "/test/", "gloss": "测验，考试", "note": "test 常指小型/日常测验；exam 通常更正式、更大（期中、期末、分级）"}
+      ],
+      "nuance": "placement exam（分级考试）决定你入学后从哪个级别的课开始上，迎新常提。"
+    },
+    {
+      "word": "placement",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈpleɪsmənt/",
+      "subgroup": "noun",
+      "meaning": "n. 安置，分级（安排）；实习安置",
+      "core": "place（放置）的名词——把你「放到合适的级别/岗位」这件事。",
+      "etymology": "place（放置，拉丁 platea「场地」）+ -ment。「把某人放到某位置」的行为。",
+      "roots": [
+        {"part": "place", "meaning": "放置，安排位置"},
+        {"part": "-ment", "meaning": "名词后缀，表「行为/结果」"}
+      ],
+      "phonetics": "重音在首 /ˈpleɪs/。place 长 /eɪ/，两音节。",
+      "examples": [
+        {"en": "Your placement test decides which language level you start at.", "zh": "分级测试决定你从哪个语言级别开始上。", "source": "造句"},
+        {"en": "a placement test / exam", "zh": "分级测试（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "assignment", "ipa": "/əˈsaɪnmənt/", "gloss": "分配", "note": "assignment 泛指分配（宿舍/任务）；placement 特指「按水平/需要把你放到合适级别或岗位」"}
+      ],
+      "nuance": "placement test=分级测试（定你的起始级别）；迎新常安排语言/数学 placement。"
+    },
+    {
+      "word": "laundry",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈlɔːndri/",
+      "subgroup": "noun",
+      "meaning": "n. 要洗的衣物；洗衣房，洗衣（服务）",
+      "core": "拉丁 lavare「洗」——要洗的衣服，或洗衣服的地方。",
+      "etymology": "古法 lavanderie「洗涤处」，源自拉丁 lavare（洗，同源 lavatory 盥洗室）。",
+      "phonetics": "重音在首 /ˈlɔːn/。laun- 读 /lɔːn/，别读成 /laʊn/。",
+      "examples": [
+        {"en": "The laundry room is in the basement of each dorm.", "zh": "每栋宿舍的洗衣房在地下室。", "source": "造句"},
+        {"en": "do laundry / a laundry room", "zh": "洗衣服／洗衣房（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "washing", "ipa": "/ˈwɑːʃɪŋ/", "gloss": "要洗/洗好的衣物（英式）", "note": "washing 英式常用；laundry 美式通用，且兼指「洗衣房」这个场所"}
+      ],
+      "nuance": "do laundry=洗衣服（固定搭配，不加 the）；laundry room 是宿舍必介绍的 amenity。"
+    },
+    {
+      "word": "mentor",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈmentɔːr/",
+      "subgroup": "noun",
+      "meaning": "n. 导师，引路人（经验丰富的指导者）；v. 指导",
+      "core": "源自《奥德赛》里的智者 Mentor——一个长期「带你、点拨你」的过来人。",
+      "etymology": "取自荷马史诗人物 Mentor（智慧女神化身、忒勒马科斯的导师）。成为「良师」的代名词。",
+      "phonetics": "重音在首 /ˈmen/，结尾 -tor 读 /tɔːr/。别弱读成 /-tər/。",
+      "examples": [
+        {"en": "Each freshman is paired with an upperclassman mentor.", "zh": "每个新生都会配一位高年级学长导师。", "source": "造句"},
+        {"en": "a peer mentor", "zh": "同辈导师（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "advisor", "ipa": "/ədˈvaɪzər/", "gloss": "顾问", "note": "advisor 偏「正式安排选课/学业」；mentor 偏「长期、非正式地言传身教、给人生/经验指点」"}
+      ],
+      "nuance": "peer mentor=同辈导师（学长学姐带新生），比 advisor 更亲近、非正式，迎新配对高频。"
+    },
+    {
+      "word": "reception",
+      "levels": ["托福", "场景"],
+      "ipa": "/rɪˈsepʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 招待会，欢迎会；接待处；接收（信号）",
+      "core": "拉丁 recipere「接收」——「接待/迎接」的场合或地点。",
+      "etymology": "拉丁 receptio「接收」（re-回 + capere 拿）。「接待、迎接来客」→ 欢迎会/接待处。",
+      "roots": [
+        {"part": "re-", "meaning": "回，向后"},
+        {"part": "cept", "meaning": "拉丁 capere 拿、接"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈsep/：re-CEP-tion。-tion 读 /ʃn/。",
+      "examples": [
+        {"en": "There's a welcome reception for new students on Friday evening.", "zh": "周五晚上有一场面向新生的欢迎会。", "source": "造句"},
+        {"en": "a welcome reception", "zh": "欢迎会（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "front desk", "ipa": "/ˌfrʌnt ˈdesk/", "gloss": "前台", "note": "作「接待处」义时 reception 更正式（酒店/公司）；校园口语更常说 front desk"}
+      ],
+      "nuance": "welcome reception=欢迎会（备茶点、见老师同学的社交场合）；迎新周常见的一项活动。"
+    },
+    {
+      "word": "ceremony",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈserəmoʊni/",
+      "subgroup": "noun",
+      "meaning": "n. 典礼，仪式",
+      "core": "拉丁 caerimonia「神圣仪式」——正式、有流程的隆重场合。",
+      "etymology": "拉丁 caerimonia「宗教仪式，庄重」。指按固定流程举行的正式典礼。",
+      "phonetics": "重音在首 /ˈser/，四音节 cer-e-mo-ny。结尾 -mony 读 /moʊni/。",
+      "examples": [
+        {"en": "The opening ceremony welcomes all incoming students.", "zh": "开学典礼欢迎所有新生。", "source": "造句"},
+        {"en": "an opening / welcome ceremony", "zh": "开学典礼／欢迎典礼（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "reception", "ipa": "/rɪˈsepʃn/", "gloss": "招待会", "note": "ceremony 是有固定流程的正式典礼（致辞、宣誓）；reception 是较轻松的社交招待会"}
+      ],
+      "nuance": "opening ceremony=开学典礼（正式、有致辞）；比 reception（招待会）更庄重、程式化。"
+    },
+    {
+      "word": "voucher",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˈvaʊtʃər/",
+      "subgroup": "noun",
+      "meaning": "n. 代金券，凭单，抵用券",
+      "core": "古法 voucher「担保、证明」——一张「凭它可换东西/抵钱」的单子。",
+      "etymology": "古法 voucher「作证、担保」（拉丁 vocare 呼唤→出面担保）。「可凭以兑换的凭单」。",
+      "phonetics": "重音在首 /ˈvaʊ/，元音 /aʊ/（like out）。-cher 读 /tʃər/。",
+      "examples": [
+        {"en": "New students get a voucher for a free meal at the cafeteria.", "zh": "新生可领一张食堂免费餐的代金券。", "source": "造句"},
+        {"en": "a meal / book voucher", "zh": "餐券／购书券（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "coupon", "ipa": "/ˈkuːpɑːn/", "gloss": "优惠券", "note": "coupon 多是「打折」券；voucher 常是「可全额兑换某物/抵一笔钱」的凭单"}
+      ],
+      "nuance": "voucher 可整张兑换（免费餐/抵扣一笔钱）；coupon 多是打折。迎新礼包常塞 meal voucher。"
+    },
+    {
+      "word": "refund",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈriːfʌnd/",
+      "subgroup": "noun",
+      "meaning": "n. 退款，退还的钱；v. /rɪˈfʌnd/ 退款",
+      "core": "拉丁 re-「回」+ fundere「倒」——把钱「倒回给」你。",
+      "etymology": "拉丁 refundere「倒回」（re-回 + fundere 倾倒）。「把付出的钱退回」。",
+      "roots": [
+        {"part": "re-", "meaning": "回，返"},
+        {"part": "fund", "meaning": "拉丁 fundere 倾倒（→资金）"}
+      ],
+      "phonetics": "名词重音在首 /ˈriːfʌnd/；动词重音在后 /rɪˈfʌnd/。名动异读。",
+      "examples": [
+        {"en": "If you drop the course by Friday, you'll get a full refund.", "zh": "周五前退掉这门课就能全额退款。", "source": "造句"},
+        {"en": "get / request a refund", "zh": "获得／申请退款（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "reimbursement", "ipa": "/ˌriːɪmˈbɜːrsmənt/", "gloss": "报销，偿还", "note": "reimbursement 是「事后补偿你垫付的钱」；refund 是「把你付的钱原路退回」"}
+      ],
+      "nuance": "refund 名动异读：名词 /ˈriːfʌnd/，动词 /rɪˈfʌnd/。退课/退宿舍常涉及 refund policy。"
+    },
+    {
+      "word": "cancel",
+      "levels": ["托福", "口语", "场景"],
+      "ipa": "/ˈkænsl/",
+      "subgroup": "verb",
+      "meaning": "v. 取消，撤销",
+      "core": "拉丁 cancellare「画格子涂掉」——像打叉划掉一样「取消」。",
+      "etymology": "拉丁 cancellare「用格子线划掉」（cancelli 栅栏格）。「把某事划掉作废」。",
+      "phonetics": "重音在首 /ˈkæn/，-cel 读 /sl/。过去式美式 canceled（一个 l），英式 cancelled。",
+      "examples": [
+        {"en": "The info session was canceled because of the storm.", "zh": "信息说明会因暴风雨取消了。", "source": "造句"},
+        {"en": "cancel an appointment", "zh": "取消预约（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "call off", "ipa": "/ˌkɔːl ˈɔːf/", "gloss": "取消（活动）", "note": "call off 口语（取消已定的活动）；cancel 更通用，可取消预约/订单/课程"}
+      ],
+      "nuance": "cancel 取消已安排的事（预约/活动/课）；反义是 reschedule（改期）或 confirm（确认照办）。"
+    },
+    {
+      "word": "reschedule",
+      "levels": ["托福", "口语", "场景"],
+      "ipa": "/ˌriːˈskedʒuːl/",
+      "subgroup": "verb",
+      "meaning": "v. 重新安排时间，改期",
+      "core": "re-「再」+ schedule（安排）——把已定的时间「重新排」到别的时候。",
+      "etymology": "re-（再次）+ schedule（安排，拉丁 schedula 小纸条）。「重新排一次日程」。",
+      "roots": [
+        {"part": "re-", "meaning": "再，重新"},
+        {"part": "schedule", "meaning": "安排日程"}
+      ],
+      "phonetics": "重音在第三音节 /ˈskedʒ/。美音 sched- 读 /sked/（同 schedule）。",
+      "examples": [
+        {"en": "Can we reschedule my advising appointment for Thursday?", "zh": "能把我的咨询预约改到周四吗？", "source": "造句"},
+        {"en": "reschedule an appointment", "zh": "改约时间（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "postpone", "ipa": "/poʊˈspoʊn/", "gloss": "推迟", "note": "postpone 只是「往后推延」；reschedule 是「改到另一个时间」（可前可后）"}
+      ],
+      "nuance": "reschedule=改期（换个时间，不是取消）；听力里常和 cancel 对比——是改期还是彻底取消。"
+    },
+    {
+      "word": "accommodate",
+      "levels": ["托福", "场景"],
+      "ipa": "/əˈkɑːmədeɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 容纳，提供住宿；迁就，照顾（需求）",
+      "core": "拉丁「使合宜」——让空间/安排「装得下、配得上」某人的需要。",
+      "etymology": "拉丁 accommodare「使适合」（ad-向 + commodus 合适的）。「调整到合适、容得下」。",
+      "roots": [
+        {"part": "ac-", "meaning": "ad- 向，趋近"},
+        {"part": "commod-", "meaning": "拉丁 commodus 合适、方便"},
+        {"part": "-ate", "meaning": "动词后缀，「使…」"}
+      ],
+      "phonetics": "重音在第二音节 /ˈkɑː/：a-CCOM-mo-date。注意两个 c、两个 m，别漏写。",
+      "examples": [
+        {"en": "The dorm can accommodate up to four students per suite.", "zh": "这个宿舍每套间最多能住四名学生。", "source": "造句"},
+        {"en": "accommodate special needs", "zh": "照顾特殊需求（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "house", "ipa": "/haʊz/", "gloss": "为…提供住处", "note": "house（动词）单指「提供住处」；accommodate 更广，含「容纳、迁就需求」"}
+      ],
+      "nuance": "accommodate 既指「容纳/提供住宿」，也指「迁就某人的需求」（accommodate a disability），办事场景两义都出现。"
+    },
+    {
+      "word": "designated",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈdezɪɡneɪtɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 指定的，划定的",
+      "core": "de-「标出」+ sign「记号」——「特意标记出来、专门指派」的。",
+      "etymology": "designate（指定，拉丁 designare「用记号标出」，de-下 + signum 记号）+ -ed。「被标定专用的」。",
+      "roots": [
+        {"part": "de-", "meaning": "向下，彻底"},
+        {"part": "sign", "meaning": "拉丁 signum 记号、标记"},
+        {"part": "-ated", "meaning": "形容词化（过去分词）"}
+      ],
+      "phonetics": "重音在首 /ˈdez/。sign 部分读 /ɪɡ/（g 发音）：de-sig-nat-ed。",
+      "examples": [
+        {"en": "Smoking is only allowed in designated areas.", "zh": "只能在指定区域吸烟。", "source": "造句"},
+        {"en": "a designated area / smoking spot", "zh": "指定区域／指定吸烟点（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "assigned", "ipa": "/əˈsaɪnd/", "gloss": "分配的", "note": "assigned 强调「分给某个人」（an assigned room）；designated 强调「划定作某种用途」（a designated area）"}
+      ],
+      "nuance": "designated=划定专用的（designated area/entrance/driver）；指路和规定里高频。"
+    },
+    {
+      "word": "prospective",
+      "levels": ["托福", "场景"],
+      "ipa": "/prəˈspektɪv/",
+      "subgroup": "desc",
+      "meaning": "adj. 未来的，potential 的；有意向的（尚未确定的）",
+      "core": "拉丁 pro-「向前」+ spectare「看」——「向前看到的」，即将来可能成为的。",
+      "etymology": "拉丁 prospicere「向前看」（pro-前 + spectare 看）+ -ive。「预期将成为…的」。",
+      "roots": [
+        {"part": "pro-", "meaning": "向前"},
+        {"part": "spect", "meaning": "拉丁 spectare 看"},
+        {"part": "-ive", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈspek/：pro-SPEC-tive。别把重音放首音节。",
+      "examples": [
+        {"en": "Prospective students can join a campus tour before applying.", "zh": "有意报考的学生可在申请前参加校园游览。", "source": "造句"},
+        {"en": "a prospective student", "zh": "准学生，有意向的报考者（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "potential", "ipa": "/pəˈtenʃl/", "gloss": "潜在的", "note": "potential 强调「有可能性」；prospective 强调「已在考虑/预期即将成为」（如 prospective student 已在申请路上）"}
+      ],
+      "nuance": "prospective student=有意向报考但还没入学的人（对比 incoming=已录取即将入学）；区分度是听力考点。"
+    },
+    {
+      "word": "hang out",
+      "levels": ["口语", "场景"],
+      "ipa": "/ˌhæŋ ˈaʊt/",
+      "subgroup": "phrase",
+      "meaning": "phr. 闲逛，消磨时间，一起玩",
+      "core": "hang（挂着）+ out——「无所事事地待在一块儿」放松交际。",
+      "etymology": "hang（悬挂、逗留）+ out。「随意逗留、聚在一起打发时间」的口语说法。",
+      "phonetics": "重音在 out。hang 读 /hæŋ/，ng 是鼻音 /ŋ/。",
+      "examples": [
+        {"en": "Students hang out in the lounge between classes.", "zh": "学生课间在休息室里闲聊消遣。", "source": "造句"},
+        {"en": "hang out with friends", "zh": "和朋友一起玩（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "socialize", "ipa": "/ˈsoʊʃəlaɪz/", "gloss": "社交，交际", "note": "socialize 偏正式（有目的地社交）；hang out 是口语「随意一起玩、待着」"}
+      ],
+      "nuance": "hang out=随意一起玩/消磨时间（口语），迎新常鼓励新生多和室友、同学 hang out 交朋友。"
+    },
+    {
+      "word": "drop a class",
+      "levels": ["口语", "场景"],
+      "ipa": "/ˌdrɑːp ə ˈklæs/",
+      "subgroup": "phrase",
+      "meaning": "phr. 退课，退掉一门课",
+      "core": "drop（放下、丢掉）——把已选的一门课「从课表里去掉」。",
+      "etymology": "drop（丢下，古英语 dropian）+ a class。校园固定说法，与 add（加课）相对。",
+      "phonetics": "重音在 drop 和 class。drop 元音 /ɑː/。add/drop period=加退课期。",
+      "examples": [
+        {"en": "You can drop a class in the first two weeks without penalty.", "zh": "头两周退课不受任何影响。", "source": "造句"},
+        {"en": "add or drop a class", "zh": "加课或退课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "withdraw from", "ipa": "/wɪðˈdrɔː frəm/", "gloss": "退出（课程）", "note": "withdraw from a course 更正式，常指过了退课期后正式退出（可能留记录）；drop a class 是早期无痕退课"}
+      ],
+      "nuance": "add/drop period（加退课期）是开学初可自由改课表的窗口；drop a class 要赶在 deadline 前。"
+    },
+    {
+      "word": "get around",
+      "levels": ["口语", "场景"],
+      "ipa": "/ˌɡet əˈraʊnd/",
+      "subgroup": "phrase",
+      "meaning": "phr.（在某地）出行，四处走动",
+      "core": "get（到达）+ around（四处）——「在一个地方来回移动、往来各处」。",
+      "etymology": "get（移动到）+ around（周围、四处）。「在某地方便地来往各处」。",
+      "phonetics": "重音在 around /əˈraʊnd/。get 的 t 后接元音常轻弹。",
+      "examples": [
+        {"en": "The shuttle makes it easy to get around campus.", "zh": "有班车在校园里出行很方便。", "source": "造句"},
+        {"en": "get around campus / town", "zh": "在校园／城里出行（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "commute", "ipa": "/kəˈmjuːt/", "gloss": "通勤，往返", "note": "commute 特指「家和学校间定点往返」；get around 泛指「在一片区域内四处走动」"}
+      ],
+      "nuance": "get around=在某地出行/走动（问怎么坐车、走路方不方便时用）；迎新介绍交通常说 how to get around campus。"
+    },
+    {
+      "word": "internship",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈɪntɜːrnʃɪp/",
+      "subgroup": "noun",
+      "meaning": "n. 实习（期）",
+      "core": "intern（实习生）+ -ship——「以实习生身份工作、学本事」的一段经历。",
+      "etymology": "intern（实习生，拉丁 internus「内部的」→ 在机构内受训的人）+ -ship（表状态/身份）。",
+      "roots": [
+        {"part": "intern", "meaning": "实习生（在机构内受训者）"},
+        {"part": "-ship", "meaning": "名词后缀，表「身份/状态/期间」"}
+      ],
+      "phonetics": "重音在首 /ˈɪn/，三音节。tern 读 /tɜːrn/，别读成 /tɜːn/。",
+      "examples": [
+        {"en": "The career center helps you find a summer internship.", "zh": "就业中心帮你找暑期实习。", "source": "造句"},
+        {"en": "a summer internship", "zh": "暑期实习（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "apprenticeship", "ipa": "/əˈprentɪʃɪp/", "gloss": "学徒期", "note": "apprenticeship 偏技工/手艺的长期学徒；internship 偏白领/学生的短期职场实习"}
+      ],
+      "nuance": "internship 是学生积累经验的短期实习；迎新时 career center 常作为可用资源被介绍。"
+    },
+    {
+      "word": "career center",
+      "levels": ["基础", "场景"],
+      "ipa": "/kəˈrɪr sentər/",
+      "subgroup": "general",
+      "meaning": "n. 就业指导中心，职业发展中心",
+      "core": "career（职业生涯）+ center——帮学生找实习、改简历、规划就业的办公室。",
+      "etymology": "career（职业，拉丁 carraria「车道」→ 人生道路）+ center。「管职业发展事务的中心」。",
+      "phonetics": "career 重音在第二音节 /ˈrɪr/：ca-REER。两词连读。",
+      "examples": [
+        {"en": "Visit the career center to get help with your resume.", "zh": "去就业指导中心帮你改简历。", "source": "造句"},
+        {"en": "at the career center", "zh": "在就业指导中心（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "advising office", "ipa": "/ədˈvaɪzɪŋ ˈɔːfɪs/", "gloss": "咨询办公室", "note": "advising office 管学业选课；career center 管找实习/工作、简历、求职"}
+      ],
+      "nuance": "career center 管职业/实习/简历（区别于管选课的 advising office）；迎新常介绍的校园资源之一。"
+    },
+    {
+      "word": "upperclassman",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˌʌpərˈklæsmən/",
+      "subgroup": "general",
+      "meaning": "n. 高年级学生（大三、大四；复数 upperclassmen）",
+      "core": "upper（更高的）+ classman（年级学生）——年级「靠上」的学长学姐。",
+      "etymology": "upper（较高的）+ class（年级）+ man。「高年级的学生」，含 junior 和 senior。",
+      "phonetics": "重音在 class /ˈklæs/。up-per-CLASS-man 四音节。",
+      "examples": [
+        {"en": "Upperclassmen often volunteer as orientation leaders.", "zh": "高年级学生常自愿当迎新引导员。", "source": "造句"},
+        {"en": "an upperclassman mentor", "zh": "高年级导师（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "underclassman", "ipa": "/ˌʌndərˈklæsmən/", "gloss": "低年级学生", "note": "upperclassman=大三大四（高年级）；underclassman=大一大二（低年级），二者相对"}
+      ],
+      "nuance": "upperclassman（大三/大四）常是迎新时带你的 mentor / orientation leader；对应低年级 underclassman。"
+    },
+    {
+      "word": "hall",
+      "levels": ["基础", "场景"],
+      "ipa": "/hɔːl/",
+      "subgroup": "general",
+      "meaning": "n.（大)厅，礼堂；（常作楼名的）楼；走廊",
+      "core": "古英语 heall「大屋」——一栋楼、一个大厅，或校园里以人名命名的某座楼。",
+      "etymology": "古英语 heall「有顶的大屋」。校园里很多楼命名为 X Hall（如 residence hall, Smith Hall）。",
+      "phonetics": "一个音节 /hɔːl/。别把 l 吞掉。dining hall=食堂，residence hall=宿舍楼。",
+      "examples": [
+        {"en": "Your first lecture is in Jones Hall.", "zh": "你第一节大课在琼斯楼。", "source": "造句"},
+        {"en": "a dining / residence hall", "zh": "食堂／宿舍楼（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "building", "ipa": "/ˈbɪldɪŋ/", "gloss": "楼", "note": "building 是通称「楼」；hall 常作具体楼名（X Hall），也可指楼内的大厅/走廊"}
+      ],
+      "nuance": "校园里 hall 多作楼名（residence hall, dining hall, Smith Hall）；指路时是核心方位词。"
+    },
+    {
+      "word": "agenda",
+      "levels": ["托福", "场景"],
+      "ipa": "/əˈdʒendə/",
+      "subgroup": "general",
+      "meaning": "n. 议程，日程安排；待办事项",
+      "core": "拉丁「该做的事（复数）」——一场活动/会议「要走的流程清单」。",
+      "etymology": "拉丁 agenda「要做的事」（agere 做的动名词复数）。「按顺序要办的事项表」。",
+      "phonetics": "重音在第二音节 /ˈdʒen/：a-GEN-da。首音节 a- 轻读 /ə/。",
+      "examples": [
+        {"en": "The agenda for today's session is on the handout.", "zh": "今天说明会的议程在讲义上。", "source": "造句"},
+        {"en": "on the agenda", "zh": "在议程上（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "schedule", "ipa": "/ˈskedʒuːl/", "gloss": "日程表", "note": "schedule 侧重「几点做什么」的时间表；agenda 侧重「要讨论/处理的事项」的清单"}
+      ],
+      "nuance": "agenda=一场会议/活动要走的事项清单（on the agenda 在议程上）；比 schedule 更强调「内容条目」。"
+    },
+    {
+      "word": "auditorium",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌɔːdɪˈtɔːriəm/",
+      "subgroup": "general",
+      "meaning": "n. 礼堂，大讲堂",
+      "core": "拉丁 audire「听」——「供人听讲的大厅」，迎新大会常在这里开。",
+      "etymology": "拉丁 auditorium「听讲的场所」（audire 听，同源 audio）+ -orium（表场所）。",
+      "roots": [
+        {"part": "audi-", "meaning": "拉丁 audire 听"},
+        {"part": "-torium", "meaning": "拉丁表场所后缀（…的地方）"}
+      ],
+      "phonetics": "重音在第三音节 /ˈtɔːr/：au-di-TO-ri-um。五音节长词。",
+      "examples": [
+        {"en": "The welcome speech is in the main auditorium at nine.", "zh": "欢迎致辞九点在大礼堂。", "source": "造句"},
+        {"en": "the main auditorium", "zh": "大礼堂（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "hall", "ipa": "/hɔːl/", "gloss": "礼堂，大厅", "note": "auditorium 特指「有座位、供听讲/演出的大讲堂」；hall 更泛，可指各种大厅或楼"}
+      ],
+      "nuance": "auditorium=有排座的大礼堂（听讲座/开大会）；迎新的全体大会（assembly）常在 main auditorium。"
+    },
+    {
+      "word": "facility",
+      "levels": ["托福", "场景"],
+      "ipa": "/fəˈsɪləti/",
+      "subgroup": "general",
+      "meaning": "n.（常复数 facilities）设施，场所；便利，才能",
+      "core": "拉丁 facilis「容易的」——让事情「变容易」的设施；也指做事的「轻松才能」。",
+      "etymology": "拉丁 facilitas「容易，便利」（facere 做→ facilis 容易）。「让人方便做事的场所/设备」。",
+      "roots": [
+        {"part": "fac-", "meaning": "拉丁 facere 做"},
+        {"part": "-ility", "meaning": "名词后缀，表「性质/状态」"}
+      ],
+      "phonetics": "重音在第二音节 /ˈsɪl/：fa-CIL-i-ty。四音节。常用复数 facilities。",
+      "examples": [
+        {"en": "The campus has excellent sports facilities.", "zh": "校园有很棒的体育设施。", "source": "造句"},
+        {"en": "campus / sports facilities", "zh": "校园设施／体育设施（多用复数）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "amenity", "ipa": "/əˈmenəti/", "gloss": "便利设施", "note": "facility 指「功能性场所/设备」（实验室、体育馆）；amenity 指「提升舒适度的生活配套」（洗衣房、Wi-Fi）"}
+      ],
+      "nuance": "facilities（复数）=校园的功能性设施（体育馆、实验室、图书馆）；比 amenities 更偏「大型功能场所」。"
+    },
+    {
+      "word": "assembly",
+      "levels": ["托福", "场景"],
+      "ipa": "/əˈsembli/",
+      "subgroup": "general",
+      "meaning": "n.（全体）集会，大会；组装",
+      "core": "拉丁 ad-「向」+ simul「一起」——「把人聚到一起」开的大会。",
+      "etymology": "古法 assemblee「聚集」（拉丁 assimulare「使聚到一起」）。「众人集合的场合」。",
+      "roots": [
+        {"part": "as-", "meaning": "ad- 向，趋近"},
+        {"part": "sembl", "meaning": "拉丁 simul 一起（聚集）"},
+        {"part": "-y", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈsem/：a-SSEM-bly。首音节 a- 轻读 /ə/。",
+      "examples": [
+        {"en": "All first-year students gather in the auditorium for the assembly.", "zh": "所有大一新生在礼堂集合参加大会。", "source": "造句"},
+        {"en": "a welcome assembly", "zh": "迎新大会（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "gathering", "ipa": "/ˈɡæðərɪŋ/", "gloss": "聚会，集会", "note": "gathering 泛指任何聚会（可随意）；assembly 指「正式召集的全体集会」（有流程、致辞）"}
+      ],
+      "nuance": "assembly=正式召集的全体大会（迎新致辞、通知）；比随意的 gathering 更正式、规模更大。"
+    }
+  ]
+}

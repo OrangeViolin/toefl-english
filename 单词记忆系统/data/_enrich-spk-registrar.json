@@ -1,0 +1,1749 @@
+{
+  "enrich": {
+    "transcript": {
+      "core": "把你的学业「誊抄」成一份盖章的正式文件。",
+      "roots": [
+        {
+          "part": "trans-",
+          "meaning": "越过、跨过（across）"
+        },
+        {
+          "part": "script",
+          "meaning": "写（拉丁 scribere）"
+        }
+      ]
+    },
+    "registrar": {
+      "core": "负责把学籍和成绩「登记入册」的人或那个办公室。",
+      "roots": [
+        {
+          "part": "register",
+          "meaning": "登记、记入册"
+        },
+        {
+          "part": "-ar",
+          "meaning": "做…的人／机构"
+        }
+      ]
+    },
+    "prerequisite": {
+      "core": "选下一门课「事先必须先修满」的那门课。",
+      "roots": [
+        {
+          "part": "pre-",
+          "meaning": "在…之前"
+        },
+        {
+          "part": "requisite",
+          "meaning": "必需之物（拉丁 requirere 要求）"
+        }
+      ]
+    },
+    "record": {
+      "core": "把事「记回心里」——关于你的信息档案。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "回、往回"
+        },
+        {
+          "part": "cord",
+          "meaning": "心（拉丁 cor/cordis）"
+        }
+      ],
+      "senses": [
+        {
+          "gloss": "n. 记录，档案",
+          "logic": "记下来存档的信息（成绩、缴费、注册）——教务处场景的主用法。",
+          "en": "There's a hold on your record because of an unpaid fee.",
+          "zh": "因为有一笔费用没付，你的档案被冻结了。"
+        },
+        {
+          "gloss": "v. /rɪˈkɔːrd/ 记录",
+          "logic": "重音移到后面变动词，「把…记下来」的动作。",
+          "en": "The system automatically records every payment.",
+          "zh": "系统会自动记录每一笔付款。"
+        }
+      ]
+    },
+    "hold": {
+      "core": "系统卡在你账户上、办完事才解除的那道「限制标记」。",
+      "senses": [
+        {
+          "gloss": "n. 冻结，限制",
+          "logic": "美国教务系统专门用法：欠费或缺材料会「卡住」你选课/取件，处理完即 lift。",
+          "en": "There's a hold on your account, so you can't register yet.",
+          "zh": "你的账户被冻结了，暂时还不能选课。"
+        },
+        {
+          "gloss": "v. 保留，持有",
+          "logic": "本义「握住、守住」，引申为帮你「留着」名额/位子。",
+          "en": "We can hold your spot until Friday.",
+          "zh": "我们可以帮你把名额保留到周五。"
+        },
+        {
+          "gloss": "v. 稍等（hold on / 电话别挂）",
+          "logic": "「保持住别走」，口语让对方等一下或电话别挂。",
+          "en": "Please hold while I pull up your file.",
+          "zh": "请稍等，我调出你的档案。"
+        }
+      ]
+    },
+    "stamp": {
+      "core": "用力压出印记——盖章／邮票。",
+      "senses": [
+        {
+          "gloss": "v. 盖章",
+          "logic": "在表上压个墨戳表示「已收到／已办」。",
+          "en": "The clerk stamped the form to show it was received.",
+          "zh": "职员在表上盖章，表示已收到。"
+        },
+        {
+          "gloss": "n. 图章，戳",
+          "logic": "盖出来的那个印记本身。",
+          "en": "The form needs a received stamp before I can process it.",
+          "zh": "这张表得先盖上收讫戳我才能办。"
+        },
+        {
+          "gloss": "n. 邮票",
+          "logic": "贴在信封上「压印」的凭证，走邮寄时用。",
+          "en": "You'll need a stamp if you want it mailed.",
+          "zh": "想邮寄的话你得贴张邮票。"
+        }
+      ]
+    },
+    "official": {
+      "core": "带公职权威、由机构正式出具的。",
+      "roots": [
+        {
+          "part": "offici(um)",
+          "meaning": "职责、公务（拉丁）"
+        },
+        {
+          "part": "-al",
+          "meaning": "…的（形容词后缀）"
+        }
+      ],
+      "senses": [
+        {
+          "gloss": "adj. 正式的，官方的",
+          "logic": "教务处核心用法：official transcript 由学校密封直寄、带效力。",
+          "en": "An official transcript is sealed and sent directly by the school.",
+          "zh": "正式成绩单封口后由学校直接寄出。"
+        },
+        {
+          "gloss": "n. 官员",
+          "logic": "行使公职的那个人。",
+          "en": "You'll need a school official to sign the letter.",
+          "zh": "这封信需要一位校方负责人签字。"
+        }
+      ]
+    },
+    "issue": {
+      "core": "「使出去」——机构签发文件，或冒出来的问题。",
+      "senses": [
+        {
+          "gloss": "v. 发放，签发",
+          "logic": "本义「使出去」，机构正式「发出」证件/文凭。",
+          "en": "The office will issue your diploma once fees are cleared.",
+          "zh": "费用结清后办公室就会发放你的文凭。"
+        },
+        {
+          "gloss": "n. 问题，故障",
+          "logic": "「冒出来」的麻烦，服务语境比 problem 更委婉。",
+          "en": "There seems to be an issue with your registration.",
+          "zh": "你的选课好像出了点问题。"
+        },
+        {
+          "gloss": "n. 期号",
+          "logic": "「发行出去」的一期刊物。",
+          "en": "The form is in the latest issue of the student handbook.",
+          "zh": "这张表在最新一期学生手册里。"
+        }
+      ]
+    },
+    "credit": {
+      "core": "学校「相信」你修完了课，给你记的凭证。",
+      "roots": [
+        {
+          "part": "cred-",
+          "meaning": "相信（拉丁 credere）"
+        },
+        {
+          "part": "-it",
+          "meaning": "名词后缀"
+        }
+      ],
+      "senses": [
+        {
+          "gloss": "n. 学分",
+          "logic": "教务处主用法：完成一门课记的量化凭证。",
+          "en": "This course is worth three credits.",
+          "zh": "这门课算三个学分。"
+        },
+        {
+          "gloss": "n. 贷方；余额抵扣",
+          "logic": "缴费语境里指账上「记入你名下」的金额，可抵未来账单。",
+          "en": "The overpayment will show up as a credit on your account.",
+          "zh": "多付的钱会作为一笔余额记到你账户上。"
+        }
+      ]
+    },
+    "process": {
+      "core": "「向前推进」——按流程一步步办。",
+      "roots": [
+        {
+          "part": "pro-",
+          "meaning": "向前"
+        },
+        {
+          "part": "cess",
+          "meaning": "走（拉丁 cedere）"
+        }
+      ],
+      "senses": [
+        {
+          "gloss": "v. 办理，处理",
+          "logic": "机构「按流程推进办理」（含审核、录入）。",
+          "en": "It takes three to five business days to process your request.",
+          "zh": "办理你的申请需要三到五个工作日。"
+        },
+        {
+          "gloss": "n. 流程，过程",
+          "logic": "一整套「向前走」的步骤。",
+          "en": "The whole process is done online now.",
+          "zh": "整个流程现在都在线上完成。"
+        }
+      ]
+    },
+    "schedule": {
+      "core": "列在纸上的时间安排——课表／日程。",
+      "senses": [
+        {
+          "gloss": "n. 课表；日程表",
+          "logic": "教务处主用法：你这学期几点上什么课的表。",
+          "en": "Dropping this class will change your whole schedule.",
+          "zh": "退掉这门课会改变你整张课表。"
+        },
+        {
+          "gloss": "v. 安排，预约",
+          "logic": "把某事「排进日程」，schedule an appointment 是预约。",
+          "en": "I can schedule you an advising appointment for Tuesday.",
+          "zh": "我可以帮你把选课咨询约在周二。"
+        }
+      ]
+    },
+    "seal": {
+      "core": "压出校徽图案的正式公章，证明文件为真。",
+      "roots": [
+        {
+          "part": "sigill-",
+          "meaning": "小图案、印记（拉丁 sigillum）"
+        }
+      ],
+      "senses": [
+        {
+          "gloss": "n. 印章，公章",
+          "logic": "代表机构权威的压印公章，正式成绩单必带。",
+          "en": "An official transcript must carry the university's seal.",
+          "zh": "正式成绩单必须带有学校公章。"
+        },
+        {
+          "gloss": "v. 密封，封口",
+          "logic": "把信封封死并盖章，证明中途没被拆过。",
+          "en": "The office seals the envelope so it stays official.",
+          "zh": "办公室会把信封封口，以保证其正式效力。"
+        }
+      ]
+    },
+    "process (transfer)": {
+      "core": "「带过去」——把学分或学籍从别处转过来。",
+      "roots": [
+        {
+          "part": "trans-",
+          "meaning": "越过、跨过"
+        },
+        {
+          "part": "fer",
+          "meaning": "带、运（拉丁 ferre）"
+        }
+      ],
+      "senses": [
+        {
+          "gloss": "v. /trænsˈfɜːr/ 转（学分/学校）",
+          "logic": "重音在后是动词，把已修学分正式转入本校。",
+          "en": "You can transfer the credits from your previous school.",
+          "zh": "你可以把上一所学校的学分转过来。"
+        },
+        {
+          "gloss": "n. /ˈtrænsfɜːr/ 转移；转学生",
+          "logic": "重音在前是名词，也指「转学生」这一身份。",
+          "en": "As a transfer, you may keep up to sixty credits.",
+          "zh": "作为转学生，你最多可保留六十个学分。"
+        }
+      ]
+    },
+    "waive": {
+      "core": "（机构）主动「放弃、免掉」某项要求或费用。",
+      "roots": [
+        {
+          "part": "weyver",
+          "meaning": "放弃（古法语）"
+        }
+      ]
+    },
+    "petition": {
+      "core": "走正式流程、常为破例的书面申请。",
+      "roots": [
+        {
+          "part": "pet-",
+          "meaning": "请求、追求（拉丁 petere）"
+        },
+        {
+          "part": "-ition",
+          "meaning": "行为/结果名词后缀"
+        }
+      ]
+    },
+    "enrollment": {
+      "core": "「把名字写进名册」，正式注册报到成为在册学生。",
+      "roots": [
+        {
+          "part": "en-",
+          "meaning": "使…进入"
+        },
+        {
+          "part": "roll",
+          "meaning": "名册（本义卷轴）"
+        },
+        {
+          "part": "-ment",
+          "meaning": "行为/状态名词后缀"
+        }
+      ]
+    },
+    "registration": {
+      "core": "把名字记入册、登记选哪些课。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "回、往回"
+        },
+        {
+          "part": "gest/gis",
+          "meaning": "携带、记录（拉丁 gerere）"
+        },
+        {
+          "part": "-ation",
+          "meaning": "行为名词后缀"
+        }
+      ]
+    },
+    "deadline": {
+      "core": "过了就不再受理的「死线」，硬期限。",
+      "roots": [
+        {
+          "part": "dead",
+          "meaning": "死的（内战战俘营越线即射杀的死线）"
+        },
+        {
+          "part": "line",
+          "meaning": "线"
+        }
+      ]
+    },
+    "certificate": {
+      "core": "「使确定」的文件——证明某事属实的证书。",
+      "roots": [
+        {
+          "part": "cert-",
+          "meaning": "确定的（拉丁 certus）"
+        },
+        {
+          "part": "-fic",
+          "meaning": "做、使（拉丁 facere）"
+        },
+        {
+          "part": "-ate",
+          "meaning": "名词/动词后缀"
+        }
+      ]
+    },
+    "verify": {
+      "core": "「使成真」——查证核对是不是真的。",
+      "roots": [
+        {
+          "part": "ver-",
+          "meaning": "真的（拉丁 verus）"
+        },
+        {
+          "part": "-ify",
+          "meaning": "使…（做、使）"
+        }
+      ]
+    },
+    "overdue": {
+      "core": "「超过了到期时间」，逾期正在拖欠。",
+      "roots": [
+        {
+          "part": "over-",
+          "meaning": "超过"
+        },
+        {
+          "part": "due",
+          "meaning": "到期应付的"
+        }
+      ]
+    },
+    "outstanding": {
+      "core": "缴费语境「悬在外头没了结」的未付款。",
+      "senses": [
+        {
+          "gloss": "adj. 未结清的",
+          "logic": "out（在外）+ stand（立着）→ 款子「悬着没了结」，缴费场景的主用法。",
+          "en": "You have an outstanding balance of one hundred dollars.",
+          "zh": "你还有一百美元未结清。"
+        },
+        {
+          "gloss": "adj. 杰出的",
+          "logic": "「突出立在众人之外」的褒义，教务缴费语境一般不取此义。",
+          "en": "She received an award for outstanding academic performance.",
+          "zh": "她因学业表现优异获奖。"
+        }
+      ]
+    },
+    "diploma": {
+      "core": "古时对折盖章的正式证书——毕业文凭。",
+      "roots": [
+        {
+          "part": "diplo-",
+          "meaning": "对折、双（希腊 diploun）"
+        },
+        {
+          "part": "-ma",
+          "meaning": "结果名词后缀"
+        }
+      ]
+    },
+    "tuition": {
+      "core": "「教导的收费」，修课本身的学费。",
+      "roots": [
+        {
+          "part": "tuit-",
+          "meaning": "看护、教导（拉丁 tueri）"
+        },
+        {
+          "part": "-ion",
+          "meaning": "行为名词后缀"
+        }
+      ]
+    },
+    "eligible": {
+      "core": "「够格被选中」——满足规定门槛、有资格。",
+      "roots": [
+        {
+          "part": "e-",
+          "meaning": "出（ex-）"
+        },
+        {
+          "part": "lig",
+          "meaning": "选（拉丁 legere）"
+        },
+        {
+          "part": "-ible",
+          "meaning": "可…的"
+        }
+      ]
+    },
+    "mandatory": {
+      "core": "「交到手上的命令」——强制、不做不行。",
+      "roots": [
+        {
+          "part": "man-",
+          "meaning": "手（拉丁 manus）"
+        },
+        {
+          "part": "dat",
+          "meaning": "给（拉丁 dare）"
+        },
+        {
+          "part": "-ory",
+          "meaning": "…的（形容词后缀）"
+        }
+      ]
+    },
+    "refund": {
+      "core": "「把钱倒回去」，退回你付过的款。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "回"
+        },
+        {
+          "part": "fund",
+          "meaning": "倒、注（拉丁 fundere）"
+        }
+      ]
+    },
+    "appointment": {
+      "core": "「指定一个时间点」，事先约好的正式约见。",
+      "roots": [
+        {
+          "part": "ap-",
+          "meaning": "向（ad-）"
+        },
+        {
+          "part": "point",
+          "meaning": "指定、点"
+        },
+        {
+          "part": "-ment",
+          "meaning": "行为名词后缀"
+        }
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "credential",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/krəˈdenʃl/",
+      "subgroup": "noun",
+      "meaning": "n.（证明资格的）证书，凭证；（复数）登录凭证",
+      "core": "证明你「够格、可信」的资格文件或账号密码。",
+      "etymology": "拉丁 credere「相信」→ credentialis「可信的（凭证）」→ 证明资格、让人信你的文件。同源 credit、credible。",
+      "roots": [
+        {
+          "part": "cred-",
+          "meaning": "相信（拉丁 credere）"
+        },
+        {
+          "part": "-ential",
+          "meaning": "…性质的（名词后缀）"
+        }
+      ],
+      "phonetics": "重音在 -den- /ˈden/，首音 cre- 弱读 /krə/。-tial 读 /ʃl/。",
+      "examples": [
+        {
+          "en": "You'll need to submit your teaching credentials to the department.",
+          "zh": "你得把你的教师资格证提交给院系。",
+          "source": "造句"
+        },
+        {
+          "en": "your login credentials",
+          "zh": "你的登录凭证（账号+密码）（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "qualification",
+          "ipa": "/ˌkwɑːlɪfɪˈkeɪʃn/",
+          "gloss": "资历，资格证明",
+          "note": "qualification 泛指学历/能力资格；credential 更强调「一纸可信的资格证明」"
+        },
+        {
+          "w": "certificate",
+          "ipa": "/sərˈtɪfɪkət/",
+          "gloss": "证书",
+          "note": "certificate 是具体某一张证书；credential 常指一整套证明资格的凭证"
+        }
+      ],
+      "nuance": "credential 有两层高频用法：证明资历的资格凭证，或复数指「登录凭证」（账号加密码）。",
+      "senses": [
+        {
+          "gloss": "n. 资格凭证",
+          "logic": "证明你「够格、可信」的资历文件。",
+          "en": "Please have your credentials verified before applying.",
+          "zh": "申请前请先把你的资格证明核验一下。"
+        },
+        {
+          "gloss": "n. 登录凭证（复数）",
+          "logic": "让系统「相信是你」的账号密码。",
+          "en": "Enter your credentials to log in to the portal.",
+          "zh": "输入你的登录凭证以登录门户。"
+        }
+      ]
+    },
+    {
+      "word": "elective",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ɪˈlektɪv/",
+      "subgroup": "noun",
+      "meaning": "n. 选修课  adj. 可选择的，选修的",
+      "core": "自己「挑着选」的课，非必修。",
+      "etymology": "拉丁 eligere「选出」（e-「出」+ legere「选」）+ -ive → 「可自由选的」。同源 elect、select、eligible。",
+      "roots": [
+        {
+          "part": "e-",
+          "meaning": "出（ex-）"
+        },
+        {
+          "part": "lect",
+          "meaning": "选（拉丁 legere）"
+        },
+        {
+          "part": "-ive",
+          "meaning": "…的（形容词/名词后缀）"
+        }
+      ],
+      "phonetics": "重音在 -lec- /ˈlek/，首音 e- 弱读 /ɪ/。",
+      "examples": [
+        {
+          "en": "You still need one more elective to finish your degree.",
+          "zh": "你还差一门选修课才能修满学位。",
+          "source": "造句"
+        },
+        {
+          "en": "take an elective",
+          "zh": "选一门选修课（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "required course",
+          "ipa": "/rɪˈkwaɪərd kɔːrs/",
+          "gloss": "必修课",
+          "note": "required course 是非修不可的必修；elective 是自己挑的选修，二者相对"
+        },
+        {
+          "w": "optional course",
+          "ipa": "/ˈɑːpʃənl kɔːrs/",
+          "gloss": "选修课",
+          "note": "optional course 是它的解释性说法；elective 是校园地道用词"
+        }
+      ],
+      "nuance": "elective 是学生自选的选修课；与 required course（必修课）相对，二者共同凑满毕业学分。"
+    },
+    {
+      "word": "audit",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈɔːdɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 旁听（不计学分）；审计  n. 审计",
+      "core": "「只听不算分」地上课，或查账核对。",
+      "etymology": "拉丁 audire「听」→ audit 本指「听审、核账」；教务里引申为「旁听（只听不拿学分）」。同源 audio、audience。",
+      "roots": [
+        {
+          "part": "aud-",
+          "meaning": "听（拉丁 audire）"
+        },
+        {
+          "part": "-it",
+          "meaning": "动词/名词后缀"
+        }
+      ],
+      "phonetics": "重音在前 /ˈɔː/，-dit 弱读 /dɪt/。",
+      "examples": [
+        {
+          "en": "You can audit the class if you don't need the credit.",
+          "zh": "如果你不需要学分，可以旁听这门课。",
+          "source": "造句"
+        },
+        {
+          "en": "audit a course",
+          "zh": "旁听一门课（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "sit in on",
+          "ipa": "/sɪt ɪn ɑːn/",
+          "gloss": "旁听（非正式）",
+          "note": "sit in on 是随便进去听一节；audit 是正式登记旁听、上成绩单标 AU 但不计分"
+        },
+        {
+          "w": "take for credit",
+          "ipa": "/teɪk fɔːr ˈkredɪt/",
+          "gloss": "计学分修课",
+          "note": "take for credit 是正式修课拿学分；audit 是只听不拿学分，二者相对"
+        }
+      ],
+      "nuance": "audit 是正式登记「旁听、只听不拿学分」（成绩单标 AU）；take for credit 才计入学分和 GPA。"
+    },
+    {
+      "word": "appeal",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/əˈpiːl/",
+      "subgroup": "verb",
+      "meaning": "v. 申诉，上诉（请求推翻决定）  n. 申诉",
+      "core": "对已下的决定不服，正式「请求重新裁定」。",
+      "etymology": "拉丁 appellare「呼吁、称呼」（ad-「向」+ pellere「推、驱」）→ 「向上呼吁」推翻决定。同源 appellate（上诉的）。",
+      "roots": [
+        {
+          "part": "ap-",
+          "meaning": "向（ad-）"
+        },
+        {
+          "part": "peal",
+          "meaning": "推、驱（拉丁 pellere）"
+        }
+      ],
+      "phonetics": "重音在后 /ˈpiːl/，首音 a- 弱读 /ə/。appeal a decision 是固定搭配。",
+      "examples": [
+        {
+          "en": "You can appeal the grade if you think it's a mistake.",
+          "zh": "如果你认为成绩有误，可以提出申诉。",
+          "source": "造句"
+        },
+        {
+          "en": "appeal the decision",
+          "zh": "对决定提出申诉（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "petition",
+          "ipa": "/pəˈtɪʃn/",
+          "gloss": "书面申请",
+          "note": "petition 是主动提出的破例申请；appeal 是对已有决定的申诉、请求推翻"
+        },
+        {
+          "w": "contest",
+          "ipa": "/kənˈtest/",
+          "gloss": "对…提出异议",
+          "note": "contest 也是「不服而争议」；appeal 走的是正式上诉/申诉流程"
+        }
+      ],
+      "nuance": "appeal 是对「已下的决定」不服、请求推翻（appeal a grade）；petition 是主动提出的破例申请，一个是「反对既定」一个是「请求新准」。"
+    },
+    {
+      "word": "notarize",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/ˈnoʊtəraɪz/",
+      "subgroup": "verb",
+      "meaning": "v. 公证（由公证人证明文件真实）",
+      "core": "找公证人给文件盖章、证明它真实有效。",
+      "etymology": "notary（公证人，拉丁 notarius「速记员、书记」，源自 nota「记号」）+ -ize → 「使经公证人证明」。同源 note、notice。",
+      "roots": [
+        {
+          "part": "not-",
+          "meaning": "记号、已知（拉丁 nota）"
+        },
+        {
+          "part": "-ize",
+          "meaning": "使…（动词后缀）"
+        }
+      ],
+      "phonetics": "重音在前 /ˈnoʊ/，-ize 读 /aɪz/。过去分词 notarized 常作定语。",
+      "examples": [
+        {
+          "en": "Some countries require you to notarize your diploma.",
+          "zh": "有些国家要求你把文凭做公证。",
+          "source": "造句"
+        },
+        {
+          "en": "a notarized copy",
+          "zh": "经公证的副本（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "certify",
+          "ipa": "/ˈsɜːrtɪfaɪ/",
+          "gloss": "（机构自行）证实",
+          "note": "certify 是出具机构自己盖章证实；notarize 是由第三方公证人公证，效力来源不同"
+        }
+      ],
+      "nuance": "notarize 是由第三方公证人公证；certify 是出具机构自己盖章证实——留学、签证材料常要求 notarized 而非仅 certified。"
+    },
+    {
+      "word": "defer",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dɪˈfɜːr/",
+      "subgroup": "verb",
+      "meaning": "v. 延期，推迟（入学/缴费）",
+      "core": "把入学或缴费「往后推」到以后。",
+      "etymology": "拉丁 dis-「分开」+ ferre「带」→ 「把…带走搁远、推迟」。同源 transfer、refer（同 -fer 词族）。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "分开、离开（dis-）"
+        },
+        {
+          "part": "fer",
+          "meaning": "带、运（拉丁 ferre）"
+        }
+      ],
+      "phonetics": "重音在后 /ˈfɜːr/，首音 de- 弱读 /dɪ/。名词形 deferral。",
+      "examples": [
+        {
+          "en": "You can defer your enrollment to the spring semester.",
+          "zh": "你可以把入学延期到春季学期。",
+          "source": "造句"
+        },
+        {
+          "en": "defer enrollment for a year",
+          "zh": "把入学延期一年（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "postpone",
+          "ipa": "/poʊstˈpoʊn/",
+          "gloss": "推迟",
+          "note": "postpone 是泛指把某事往后挪；defer 更正式，常用于入学/缴费的官方延期"
+        }
+      ],
+      "nuance": "defer 是把入学/缴费正式「延到以后」（defer enrollment）；withdraw 是彻底退掉，一个是推后一个是取消。"
+    },
+    {
+      "word": "reinstate",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/ˌriːɪnˈsteɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 恢复（学籍/资格），使复原",
+      "core": "把被取消的学籍或资格「重新装回原位」。",
+      "etymology": "re-「重新」+ instate「使就位、任命」（in-「进入」+ state「状态、地位」）→ 「使重回原状态」。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "重新"
+        },
+        {
+          "part": "in-",
+          "meaning": "进入"
+        },
+        {
+          "part": "state",
+          "meaning": "状态、地位（拉丁 status）"
+        }
+      ],
+      "phonetics": "主重音在 -state /ˈsteɪt/，前面 rein- 弱读，re- 有次重音。",
+      "examples": [
+        {
+          "en": "Once you pay the balance, we can reinstate your enrollment.",
+          "zh": "你把欠款付清后，我们就能恢复你的学籍。",
+          "source": "造句"
+        },
+        {
+          "en": "reinstate your registration",
+          "zh": "恢复你的选课（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "restore",
+          "ipa": "/rɪˈstɔːr/",
+          "gloss": "恢复",
+          "note": "restore 泛指恢复原状；reinstate 特指「恢复被撤销的身份/资格/学籍」"
+        }
+      ],
+      "nuance": "reinstate 专指「恢复被取消的学籍或资格」（欠费被退学后付清可 reinstate）；restore 更泛，可指恢复任何原状。"
+    },
+    {
+      "word": "expedite",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/ˈekspədaɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 加急，加快办理",
+      "core": "「解开脚上的绊」——让办理跑快点。",
+      "etymology": "拉丁 expedire「解开脚镣、使自由通行」（ex-「出」+ pes/pedis「脚」）→ 「扫清障碍、加快」。同源 pedal、pedestrian。",
+      "roots": [
+        {
+          "part": "ex-",
+          "meaning": "出、离开"
+        },
+        {
+          "part": "ped",
+          "meaning": "脚（拉丁 pes/pedis）"
+        },
+        {
+          "part": "-ite",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "重音在前 /ˈeks/，-dite 读 /daɪt/。",
+      "examples": [
+        {
+          "en": "For an extra fee, we can expedite your transcript request.",
+          "zh": "加一笔费用，我们可以给你的成绩单申请加急。",
+          "source": "造句"
+        },
+        {
+          "en": "expedite the process",
+          "zh": "加快办理流程（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "rush",
+          "ipa": "/rʌʃ/",
+          "gloss": "加急",
+          "note": "rush 更口语（a rush order 加急件）；expedite 更正式书面"
+        },
+        {
+          "w": "speed up",
+          "ipa": "/spiːd ʌp/",
+          "gloss": "加快",
+          "note": "speed up 更口语泛用；expedite 特指「加快官方办理流程」"
+        }
+      ],
+      "nuance": "expedite 是正式的「加急办理」；口语等价说法是 rush（rush a transcript）。加急通常另收 fee。"
+    },
+    {
+      "word": "endorse",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ɪnˈdɔːrs/",
+      "subgroup": "verb",
+      "meaning": "v. 签署背书，正式认可；（在文件背面）签名批准",
+      "core": "在文件背面签名，表示「我正式认可/批准」。",
+      "etymology": "拉丁 in-「在…上」+ dorsum「背」→ 「写在背面」，古时在票据背面签名认可。同源 dorsal（背部的）。",
+      "roots": [
+        {
+          "part": "en-",
+          "meaning": "在…上（in-）"
+        },
+        {
+          "part": "dorse",
+          "meaning": "背（拉丁 dorsum）"
+        }
+      ],
+      "phonetics": "重音在后 /ˈdɔːrs/，首音 en- 弱读 /ɪn/。",
+      "examples": [
+        {
+          "en": "Your department chair needs to endorse the request.",
+          "zh": "你的系主任需要签署认可这份申请。",
+          "source": "造句"
+        },
+        {
+          "en": "endorse the form",
+          "zh": "签署认可这张表（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "approve",
+          "ipa": "/əˈpruːv/",
+          "gloss": "批准",
+          "note": "approve 是正式批准放行；endorse 强调「签名背书、表示支持认可」"
+        },
+        {
+          "w": "sign off on",
+          "ipa": "/saɪn ɔːf ɑːn/",
+          "gloss": "签字批准",
+          "note": "sign off on 更口语；endorse 更正式，含「公开认可支持」"
+        }
+      ],
+      "nuance": "endorse 强调「签名背书、正式认可支持」；approve 只是「批准放行」，endorse 多一层「我为它站台」的意味。"
+    },
+    {
+      "word": "waitlisted",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈweɪtlɪstɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 被列入候补名单的",
+      "core": "课满了，你被排进「候补队」等空位。",
+      "etymology": "waitlist（候补名单）+ -ed → 「被放进候补名单的」状态。",
+      "roots": [
+        {
+          "part": "wait",
+          "meaning": "等待"
+        },
+        {
+          "part": "list",
+          "meaning": "名单"
+        },
+        {
+          "part": "-ed",
+          "meaning": "被…的（过去分词/形容词后缀）"
+        }
+      ],
+      "phonetics": "重音在前 /ˈweɪt/，-listed 弱读 /lɪstɪd/。",
+      "examples": [
+        {
+          "en": "You're waitlisted for the seminar; you're number three.",
+          "zh": "你在这门研讨课的候补名单上，排第三位。",
+          "source": "造句"
+        },
+        {
+          "en": "get waitlisted for a class",
+          "zh": "被列入某课的候补名单（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "on the waitlist",
+          "ipa": "/ɑːn ðə ˈweɪtlɪst/",
+          "gloss": "在候补名单上",
+          "note": "on the waitlist 是介词短语说法；waitlisted 是形容词，含义相同"
+        }
+      ],
+      "nuance": "waitlisted 指「已被排进候补队、等空位」；enrolled（已选上）是有位子后转正的状态。"
+    },
+    {
+      "word": "probation",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/proʊˈbeɪʃn/",
+      "subgroup": "desc",
+      "meaning": "n. 察看期，留校察看（学业警告状态）",
+      "core": "成绩不达标被「盯着看一阵」，再不合格就退学。",
+      "etymology": "拉丁 probare「检验、证明」→ probatio「检验期」，看你能否证明自己合格。同源 prove、probe。",
+      "roots": [
+        {
+          "part": "prob-",
+          "meaning": "检验、证明（拉丁 probare）"
+        },
+        {
+          "part": "-ation",
+          "meaning": "行为/状态名词后缀"
+        }
+      ],
+      "phonetics": "重音在 -ba- /ˈbeɪ/，首音 pro- 弱读 /proʊ/。academic probation 是固定搭配。",
+      "examples": [
+        {
+          "en": "If your GPA drops below 2.0, you'll be put on academic probation.",
+          "zh": "如果你的绩点跌破 2.0，就会被留校察看。",
+          "source": "造句"
+        },
+        {
+          "en": "on academic probation",
+          "zh": "处于学业察看期（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "academic warning",
+          "ipa": "/ˌækəˈdemɪk ˈwɔːrnɪŋ/",
+          "gloss": "学业警告",
+          "note": "academic warning 是较轻的一次警示；probation 是正式的察看期，更严重"
+        }
+      ],
+      "nuance": "probation 是成绩不达标后的正式「察看期」（再不合格可能 dismissal 退学）；academic warning 是更早、更轻的一次提醒。"
+    },
+    {
+      "word": "conditional",
+      "levels": [
+        "六级",
+        "场景"
+      ],
+      "ipa": "/kənˈdɪʃənl/",
+      "subgroup": "desc",
+      "meaning": "adj. 有条件的，附条件的",
+      "core": "先给你放行，但要「满足某条件」才作数。",
+      "etymology": "condition（拉丁 condicere「一起说定、约定」→ 条件）+ -al → 「附带条件的」。",
+      "roots": [
+        {
+          "part": "con-",
+          "meaning": "一起"
+        },
+        {
+          "part": "dic/dit",
+          "meaning": "说（拉丁 dicere）"
+        },
+        {
+          "part": "-ional",
+          "meaning": "…的（形容词后缀）"
+        }
+      ],
+      "phonetics": "重音在 -di- /ˈdɪ/，首音 con- 弱读 /kən/。",
+      "examples": [
+        {
+          "en": "You've been given conditional admission until your final transcript arrives.",
+          "zh": "在你的最终成绩单到之前，你拿到的是有条件录取。",
+          "source": "造句"
+        },
+        {
+          "en": "conditional admission",
+          "zh": "有条件录取（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "provisional",
+          "ipa": "/prəˈvɪʒənl/",
+          "gloss": "临时的，暂定的",
+          "note": "provisional 强调「过渡、待正式确认」；conditional 强调「取决于满足某条件」"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "unconditional",
+          "ipa": "/ˌʌnkənˈdɪʃənl/",
+          "gloss": "无条件的"
+        }
+      ],
+      "nuance": "conditional 强调「取决于满足某条件」（conditional admission）；provisional 强调「临时过渡、待正式敲定」，侧重点不同。"
+    },
+    {
+      "word": "degree",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dɪˈɡriː/",
+      "subgroup": "general",
+      "meaning": "n. 学位；程度；度数",
+      "core": "修满台阶换来的学位资格。",
+      "etymology": "拉丁 de-「向下」+ gradus「台阶、级」→ 「一级一级」，引申为学历的「等级」即学位。同源 grade、gradual。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "向下、彻底"
+        },
+        {
+          "part": "gree",
+          "meaning": "台阶、级（拉丁 gradus）"
+        }
+      ],
+      "phonetics": "重音在后 /ˈɡriː/，首音 de- 弱读 /dɪ/。",
+      "examples": [
+        {
+          "en": "You've completed all the requirements for your degree.",
+          "zh": "你已修满学位的全部要求。",
+          "source": "造句"
+        },
+        {
+          "en": "a bachelor's degree",
+          "zh": "学士学位（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "diploma",
+          "ipa": "/dɪˈploʊmə/",
+          "gloss": "毕业证书",
+          "note": "diploma 是证明学位的那张证书（实物）；degree 是它代表的学位资格（抽象）"
+        }
+      ],
+      "nuance": "degree 是抽象的学位资格（bachelor's / master's）；diploma 是证明它的那张文凭（实物），一虚一实。"
+    },
+    {
+      "word": "minor",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈmaɪnər/",
+      "subgroup": "general",
+      "meaning": "n. 辅修专业  v. 辅修  adj. 次要的",
+      "core": "学分要求较少的「副方向」专业。",
+      "etymology": "拉丁 minor「较小的、次要的」→ 学业中分量较轻的辅修方向。与 major（较大的、主修）相对。",
+      "roots": [
+        {
+          "part": "min-",
+          "meaning": "小、少（拉丁 minor）"
+        }
+      ],
+      "phonetics": "重音在前 /ˈmaɪ/，-nor 弱读 /nər/。minor in 是固定搭配。",
+      "examples": [
+        {
+          "en": "She's majoring in biology and minoring in Spanish.",
+          "zh": "她主修生物、辅修西班牙语。",
+          "source": "造句"
+        },
+        {
+          "en": "a minor in economics",
+          "zh": "经济学辅修（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "major",
+          "ipa": "/ˈmeɪdʒər/",
+          "gloss": "主修专业",
+          "note": "major 是主修（学分多）；minor 是辅修（学分少），一主一辅"
+        }
+      ],
+      "nuance": "minor 是辅修专业，学分要求比 major（主修）少；一个学生可有一个 major 加一到两个 minor。"
+    },
+    {
+      "word": "syllabus",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈsɪləbəs/",
+      "subgroup": "noun",
+      "meaning": "n. 课程大纲，教学大纲（复数 syllabi / syllabuses）",
+      "core": "一门课的「说明书」：内容安排、评分、截止日全在上面。",
+      "etymology": "源自晚期拉丁 syllabus（一说是希腊 sittybos「书标签」的误抄）→ 「课程内容清单」。",
+      "phonetics": "重音在前 /ˈsɪl/，后两音节弱读 /ləbəs/。复数常用 syllabi /ˈsɪləbaɪ/。",
+      "examples": [
+        {
+          "en": "Check the syllabus for the exact drop deadline.",
+          "zh": "确切的退课截止日请看课程大纲。",
+          "source": "造句"
+        },
+        {
+          "en": "the course syllabus",
+          "zh": "课程大纲（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "course outline",
+          "ipa": "/kɔːrs ˈaʊtlaɪn/",
+          "gloss": "课程提纲",
+          "note": "course outline 是解释性说法；syllabus 是校园地道用词，内容更全（含评分、政策）"
+        }
+      ],
+      "nuance": "syllabus 是每门课开学发的完整大纲（含进度、评分、截止日、政策）；academic calendar 则是全校层面的校历。"
+    },
+    {
+      "word": "waiver form",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈweɪvər fɔːrm/",
+      "subgroup": "phrase",
+      "meaning": "豁免申请表（申请免除某要求/费用的表）",
+      "core": "用来申请「免掉某项要求或费用」的那张表。",
+      "etymology": "waiver（豁免）+ form（表格）→ 申请豁免时要填的专用表格。",
+      "phonetics": "waiver 重音在前 /ˈweɪ/；form 长音 /ɔː/。",
+      "examples": [
+        {
+          "en": "Fill out this waiver form to skip the placement test.",
+          "zh": "填好这张豁免表就可以免掉分班考试。",
+          "source": "造句"
+        },
+        {
+          "en": "submit a waiver form",
+          "zh": "提交一张豁免申请表（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "exemption request",
+          "ipa": "/ɪɡˈzempʃn rɪˈkwest/",
+          "gloss": "免除申请",
+          "note": "exemption request 是功能说法；waiver form 是那张具体要填的表"
+        }
+      ],
+      "nuance": "waiver form 是「申请免除某要求/费用」的专用表；填完提交后由办公室决定是否 waive（免除）。"
+    },
+    {
+      "word": "grace period",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ɡreɪs ˈpɪriəd/",
+      "subgroup": "phrase",
+      "meaning": "宽限期（过了截止日仍不罚的缓冲期）",
+      "core": "规则里自动给的一段「晚交也不罚」的缓冲时间。",
+      "etymology": "grace（宽容、恩惠，拉丁 gratia「恩惠」）+ period（时段）→ 「宽容缓冲的时段」。",
+      "phonetics": "grace 长音 /eɪ/；period 重音在前 /ˈpɪ/。",
+      "examples": [
+        {
+          "en": "There's a two-week grace period before the late fee kicks in.",
+          "zh": "在收滞纳金之前有两周的宽限期。",
+          "source": "造句"
+        },
+        {
+          "en": "within the grace period",
+          "zh": "在宽限期内（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "extension",
+          "ipa": "/ɪkˈstenʃn/",
+          "gloss": "延期",
+          "note": "extension 是主动申请把期限往后延；grace period 是规则自动给的缓冲，无需申请"
+        }
+      ],
+      "nuance": "grace period 是规则里「自动给的缓冲期」（不必申请）；extension 是你主动申请才拿到的延期，一个默认一个申请。"
+    },
+    {
+      "word": "on file",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ɑːn faɪl/",
+      "subgroup": "phrase",
+      "meaning": "存档，在案（已归入档案）",
+      "core": "你的材料已经「归进档案」存着了。",
+      "etymology": "on（在…上）+ file（档案）→ 「已归入档案、存着」。",
+      "phonetics": "file 重读 /faɪl/，on /ɑːn/ 略轻。keep/have sth on file 是固定搭配。",
+      "examples": [
+        {
+          "en": "We already have your transcript on file, so you don't need to resend it.",
+          "zh": "你的成绩单我们已经存档了，不用再重发。",
+          "source": "造句"
+        },
+        {
+          "en": "keep a copy on file",
+          "zh": "留一份存档（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "on record",
+          "ipa": "/ɑːn ˈrekɔːrd/",
+          "gloss": "有记录，在案",
+          "note": "on record 强调「有记录可查」；on file 强调「实体/电子档案里存着」"
+        }
+      ],
+      "nuance": "on file 强调「材料已归档存着、可随时调取」；on record 强调「有正式记录在案」，含义相近而侧重略异。"
+    },
+    {
+      "word": "walk-in",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈwɔːk ɪn/",
+      "subgroup": "phrase",
+      "meaning": "adj./n. 无需预约直接来办的（人）",
+      "core": "不预约、直接走进来办事。",
+      "etymology": "walk in（走进来）→ 名词/形容词化：不预约、直接到场办理。与 appointment（预约）相对。",
+      "phonetics": "walk 重读 /ˈwɔːk/，g 不发音；in /ɪn/ 略轻。作定语加连字符 walk-in。",
+      "examples": [
+        {
+          "en": "Wednesdays are walk-in only; no appointment needed.",
+          "zh": "周三只接待免预约的，不用预约。",
+          "source": "造句"
+        },
+        {
+          "en": "walk-in hours",
+          "zh": "免预约接待时段（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "appointment",
+          "ipa": "/əˈpɔɪntmənt/",
+          "gloss": "预约",
+          "note": "appointment 是事先约好时间；walk-in 是不约直接来，二者相对"
+        }
+      ],
+      "nuance": "walk-in 是「不预约直接到场办」；appointment 是「事先约好时间」——听力里常问某窗口收 walk-in 还是要 appointment。"
+    },
+    {
+      "word": "part-time",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˌpɑːrt ˈtaɪm/",
+      "subgroup": "desc",
+      "meaning": "adj./adv. 非全日制的（学分不足的）",
+      "core": "修的学分不满、非全负荷的在读状态。",
+      "etymology": "part（部分）+ time（时间）→ 只占部分时间。教务里指学分不足全日制门槛的在读状态。",
+      "roots": [
+        {
+          "part": "part",
+          "meaning": "部分"
+        },
+        {
+          "part": "time",
+          "meaning": "时间"
+        }
+      ],
+      "phonetics": "两词都有重音，time 略重。作定语连字符：part-time student。",
+      "examples": [
+        {
+          "en": "Taking only six credits makes you a part-time student.",
+          "zh": "只修六个学分你就算非全日制学生了。",
+          "source": "造句"
+        },
+        {
+          "en": "a part-time student",
+          "zh": "非全日制学生（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "full-time",
+          "ipa": "/ˌfʊl ˈtaɪm/",
+          "gloss": "全日制的",
+          "note": "full-time 是修满规定学分；part-time 是学分不足，二者相对，影响签证/奖学金"
+        }
+      ],
+      "antonyms": [
+        {
+          "w": "full-time",
+          "ipa": "/ˌfʊl ˈtaɪm/",
+          "gloss": "全日制的"
+        }
+      ],
+      "nuance": "part-time 指学分不足全日制门槛的在读状态；对国际生而言 full-time（满学分）常是签证维持的硬要求。"
+    },
+    {
+      "word": "dean's office",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/diːnz ˈɔːfɪs/",
+      "subgroup": "noun",
+      "meaning": "n. 院长办公室（处理申诉、破例、纪律）",
+      "core": "管申诉、破例、纪律的更高一级办公室。",
+      "etymology": "dean（院长，拉丁 decanus「十人之长」）+ office → 学院最高行政负责人的办公室。",
+      "phonetics": "dean 长音 /iː/；office 重音在前 /ˈɔː/。",
+      "examples": [
+        {
+          "en": "For a late withdrawal, you'll have to go to the dean's office.",
+          "zh": "要办超期退课，你得去院长办公室。",
+          "source": "造句"
+        },
+        {
+          "en": "get approval from the dean's office",
+          "zh": "取得院长办公室批准（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "registrar's office",
+          "ipa": "/ˈredʒɪstrɑːrz ˈɔːfɪs/",
+          "gloss": "教务处",
+          "note": "registrar's office 办常规注册/成绩单；dean's office 处理申诉、破例、纪律等更高层事务"
+        }
+      ],
+      "nuance": "常规注册、成绩单去 registrar's office；申诉、破例、超期退课、纪律问题则要 dean's office 拍板，层级更高。"
+    },
+    {
+      "word": "student ID number",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈstuːdnt ˌaɪ ˈdiː ˈnʌmbər/",
+      "subgroup": "noun",
+      "meaning": "n. 学号（唯一识别编号）",
+      "core": "系统里唯一标识你的那串学号。",
+      "etymology": "student ID（学生身份）+ number（编号）→ 学校给每个学生的唯一识别号，用于查档、登录、办事。",
+      "phonetics": "ID 逐字母读，重音在 D；number 重音在前 /ˈnʌm/。",
+      "examples": [
+        {
+          "en": "Can I have your student ID number to pull up your record?",
+          "zh": "能给我你的学号吗？我好调出你的档案。",
+          "source": "造句"
+        },
+        {
+          "en": "give me your student ID number",
+          "zh": "报一下你的学号（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "student number",
+          "ipa": "/ˈstuːdnt ˈnʌmbər/",
+          "gloss": "学号",
+          "note": "student number 是简说；take a number 的 number 指排队号，别混"
+        }
+      ],
+      "nuance": "student ID number 是系统里唯一标识你的学号（查档必报）；排队场景 take a number 的 number 是叫号票，两者同词不同义。"
+    },
+    {
+      "word": "placement test",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈpleɪsmənt test/",
+      "subgroup": "noun",
+      "meaning": "n. 分班测试（定你该修哪一级课）",
+      "core": "开学前一测，把你「摆到」合适的课程级别。",
+      "etymology": "placement（安置，place「放置」+ -ment）+ test → 测出你的水平、把你「安置」到对应课程等级的测试。",
+      "phonetics": "placement 重音在前 /ˈpleɪs/；test 短音 /e/。",
+      "examples": [
+        {
+          "en": "Your placement test score decides which math course you start in.",
+          "zh": "你的分班测试成绩决定你从哪一级数学课开始。",
+          "source": "造句"
+        },
+        {
+          "en": "take a placement test",
+          "zh": "参加分班测试（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "assessment",
+          "ipa": "/əˈsesmənt/",
+          "gloss": "水平测评",
+          "note": "assessment 泛指各类评估；placement test 特指用来「定课程级别」的测试"
+        }
+      ],
+      "nuance": "placement test 是入学时定「该修哪一级课」的分班测试；成绩好常可 waive（免修）低阶课。"
+    },
+    {
+      "word": "loan",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/loʊn/",
+      "subgroup": "general",
+      "meaning": "n. 贷款（学生贷款）  v. 借出",
+      "core": "先借你钱交学费、以后要还的资助。",
+      "etymology": "古北欧语 lán「借出之物」→ 借给你、日后要连本带息还的钱。",
+      "phonetics": "长音 /oʊ/，一个音节，和 lone（孤单的）同音。",
+      "examples": [
+        {
+          "en": "A student loan has to be paid back after you graduate.",
+          "zh": "学生贷款毕业后是要还的。",
+          "source": "造句"
+        },
+        {
+          "en": "a student loan",
+          "zh": "学生贷款（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "grant",
+          "ipa": "/ɡrænt/",
+          "gloss": "助学金（无需偿还）",
+          "note": "grant 是白给、无需还；loan 是要连本带息偿还的，二者本质不同"
+        }
+      ],
+      "nuance": "loan 是要偿还的贷款；grant/scholarship 是无需偿还的资助——都属 financial aid，但还款义务天差地别。"
+    },
+    {
+      "word": "grant",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ɡrænt/",
+      "subgroup": "general",
+      "meaning": "n. 助学金，拨款（无需偿还）  v. 授予，准予",
+      "core": "白给、无需偿还的一笔资助。",
+      "etymology": "古法语 granter「答应、允许」（拉丁 credere「相信」的变体）→ 「准予、授予」，引申为授予的助学金。",
+      "phonetics": "短音 /æ/，一个音节。",
+      "examples": [
+        {
+          "en": "The grant covers your fees and doesn't need to be repaid.",
+          "zh": "这笔助学金覆盖你的费用，且无需偿还。",
+          "source": "造句"
+        },
+        {
+          "en": "a financial aid grant",
+          "zh": "一笔助学金（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "scholarship",
+          "ipa": "/ˈskɑːlərʃɪp/",
+          "gloss": "奖学金",
+          "note": "scholarship 多凭成绩发放；grant 多按经济需求发放，都无需偿还"
+        }
+      ],
+      "nuance": "grant 多按经济需求发放、无需偿还；scholarship 多凭学业成绩获得——两者都属白给的资助，与要还的 loan 相对。",
+      "senses": [
+        {
+          "gloss": "n. 助学金，拨款",
+          "logic": "无需偿还、授予给你的一笔钱。",
+          "en": "She received a need-based grant for the year.",
+          "zh": "她拿到了一笔按经济需求发放的年度助学金。"
+        },
+        {
+          "gloss": "v. 授予，准予",
+          "logic": "本义「准予、答应」，机构「批准给予」某项请求。",
+          "en": "The office granted her request for an extension.",
+          "zh": "办公室批准了她的延期请求。"
+        }
+      ]
+    },
+    {
+      "word": "concurrent",
+      "levels": [
+        "托福",
+        "场景"
+      ],
+      "ipa": "/kənˈkɜːrənt/",
+      "subgroup": "desc",
+      "meaning": "adj. 同时进行的，并行的",
+      "core": "两件事「一起跑」——同时选/同时进行。",
+      "etymology": "拉丁 con-「一起」+ currere「跑」→ 「一起跑、同时进行」。同源 current、course、occur。",
+      "roots": [
+        {
+          "part": "con-",
+          "meaning": "一起"
+        },
+        {
+          "part": "curr",
+          "meaning": "跑（拉丁 currere）"
+        },
+        {
+          "part": "-ent",
+          "meaning": "…的（形容词后缀）"
+        }
+      ],
+      "phonetics": "重音在 -cur- /ˈkɜː/，首音 con- 弱读 /kən/。",
+      "examples": [
+        {
+          "en": "You can't take these two labs concurrently; they overlap.",
+          "zh": "这两门实验课不能同时选，时间冲突。",
+          "source": "造句"
+        },
+        {
+          "en": "concurrent enrollment",
+          "zh": "同时在多校/多课注册（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "simultaneous",
+          "ipa": "/ˌsaɪmlˈteɪniəs/",
+          "gloss": "同时的",
+          "note": "simultaneous 强调「精确同一时刻」；concurrent 强调「同一时段并行进行」"
+        }
+      ],
+      "nuance": "concurrent 强调「同一时段并行进行」（concurrent enrollment 同时修两校/两课）；overlap（时间冲突）则是并行导致的具体撞车。"
+    },
+    {
+      "word": "in good standing",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ɪn ɡʊd ˈstændɪŋ/",
+      "subgroup": "phrase",
+      "meaning": "（学籍/账户）状态良好、无异常",
+      "core": "成绩达标、没欠费、没冻结——一切正常。",
+      "etymology": "in（处于）+ good standing（良好的地位/状态，stand「立」→ 站得稳的处境）→ 「处境良好、无问题」。",
+      "phonetics": "good 与 standing 重读；standing 重音在前 /ˈstæn/。",
+      "examples": [
+        {
+          "en": "You need to be in good standing to register for next term.",
+          "zh": "你得学籍状态良好才能选下学期的课。",
+          "source": "造句"
+        },
+        {
+          "en": "remain in good standing",
+          "zh": "保持良好状态（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "on probation",
+          "ipa": "/ɑːn proʊˈbeɪʃn/",
+          "gloss": "留校察看",
+          "note": "on probation 是成绩不达标的问题状态；in good standing 是一切正常，二者相对"
+        }
+      ],
+      "nuance": "in good standing 指「学籍/账户一切正常」（成绩达标、无欠费、无冻结）；反面是 on probation（察看期）或账户有 hold。"
+    },
+    {
+      "word": "catalog",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈkætəlɔːɡ/",
+      "subgroup": "noun",
+      "meaning": "n. 课程目录，选课手册（英式 catalogue）",
+      "core": "列出全校开哪些课、各有什么要求的总目录。",
+      "etymology": "希腊 kata-「完全、按序」+ legein「说、列举」→ katalogos「完整清单」。同源 dialogue、logic。",
+      "roots": [
+        {
+          "part": "cata-",
+          "meaning": "完全、按序（希腊 kata-）"
+        },
+        {
+          "part": "log",
+          "meaning": "说、列举（希腊 legein）"
+        }
+      ],
+      "phonetics": "重音在前 /ˈkæt/，-log 读 /lɔːɡ/。美式拼 catalog，英式 catalogue。",
+      "examples": [
+        {
+          "en": "Look up the course description in the catalog before you enroll.",
+          "zh": "选课前先在课程目录里查一下课程简介。",
+          "source": "造句"
+        },
+        {
+          "en": "the course catalog",
+          "zh": "课程目录（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "course listing",
+          "ipa": "/kɔːrs ˈlɪstɪŋ/",
+          "gloss": "开课列表",
+          "note": "course listing 是某学期实际开课表；catalog 是全校课程与要求的总目录，更全"
+        }
+      ],
+      "nuance": "catalog 是全校课程及毕业要求的总目录（管你「能修什么」）；schedule 是你个人的课表（管你「几点上什么」），层级不同。"
+    },
+    {
+      "word": "no-show",
+      "levels": [
+        "基础",
+        "场景"
+      ],
+      "ipa": "/ˈnoʊ ʃoʊ/",
+      "subgroup": "noun",
+      "meaning": "n. 爽约者，预约了却没到场的情况",
+      "core": "约了却没来——预约放了鸽子。",
+      "etymology": "no（没）+ show（出现，show up「露面」）→ 「约了却没露面」的人或情况。",
+      "phonetics": "两词都有重音，show 略重 /ʃoʊ/。作定语加连字符 no-show。",
+      "examples": [
+        {
+          "en": "If you're a no-show for advising, you'll have to rebook.",
+          "zh": "选课咨询你要是爽约，就得重新预约。",
+          "source": "造句"
+        },
+        {
+          "en": "a no-show fee",
+          "zh": "爽约费（高频搭配）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "miss an appointment",
+          "ipa": "/mɪs ən əˈpɔɪntmənt/",
+          "gloss": "错过预约",
+          "note": "miss an appointment 是动词说法；no-show 是名词，指爽约这一情况或爽约者"
+        }
+      ],
+      "nuance": "no-show 指「预约了却没到场」（有些窗口对 no-show 收费或要求重约）；反面是准时 show up 到场。"
+    }
+  ]
+}

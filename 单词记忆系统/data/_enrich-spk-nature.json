@@ -1,0 +1,943 @@
+{
+  "enrich": {
+    "reserve": {
+      "core": "把一片地『留起来』不开发——保护区；把某物『留给自己』——预订。",
+      "roots": [
+        { "part": "re", "meaning": "回、往后留" },
+        { "part": "serve", "meaning": "保持、看守" }
+      ],
+      "senses": [
+        { "gloss": "n. 保护区", "logic": "留出一片地不动它", "en": "a nature reserve", "zh": "自然保护区" },
+        { "gloss": "v. 预订/保留", "logic": "把位子留给自己", "en": "reserve a campsite in advance", "zh": "提前预订一个营位" },
+        { "gloss": "n. 储备", "logic": "留着备用的量", "en": "keep some water in reserve", "zh": "留一些水作储备" }
+      ]
+    },
+    "preserve": {
+      "core": "『预先保住』——让森林、物种原封不动地留下来。",
+      "roots": [
+        { "part": "pre", "meaning": "预先" },
+        { "part": "serve", "meaning": "保持" }
+      ],
+      "senses": [
+        { "gloss": "v. 原样保存", "logic": "预先保住不让它变", "en": "preserve the old forest", "zh": "保护原始森林" },
+        { "gloss": "n. 保护区", "logic": "被保住的一片地", "en": "a forest preserve", "zh": "森林保护区" }
+      ]
+    },
+    "conserve": {
+      "core": "『一起看守着用』——节制地用、可持续地护。",
+      "roots": [
+        { "part": "con", "meaning": "一起、共同" },
+        { "part": "serve", "meaning": "保持" }
+      ]
+    },
+    "conservation": {
+      "core": "保护保育这件事本身——不浪费地守住自然。",
+      "roots": [
+        { "part": "con", "meaning": "一起" },
+        { "part": "serv", "meaning": "保持" },
+        { "part": "ation", "meaning": "名词后缀，表行为" }
+      ]
+    },
+    "observe": {
+      "core": "『朝着盯住』——既是仔细观察，也是遵守规则。",
+      "roots": [
+        { "part": "ob", "meaning": "朝向" },
+        { "part": "serve", "meaning": "注意、看守" }
+      ],
+      "senses": [
+        { "gloss": "v. 观察", "logic": "朝一个方向专注地看", "en": "observe the birds quietly", "zh": "安静地观察鸟" },
+        { "gloss": "v. 遵守", "logic": "盯住规则去照做", "en": "observe the park rules", "zh": "遵守公园规则" }
+      ]
+    },
+    "spot": {
+      "core": "一眼在众多之中『认出、瞥见』——也指一个小地点或斑点。",
+      "senses": [
+        { "gloss": "v. 发现认出", "logic": "眼力好，一眼挑出来", "en": "spot a rare bird in the reeds", "zh": "在芦苇里认出一只珍稀鸟" },
+        { "gloss": "n. 地点", "logic": "一个具体的小点位", "en": "a good spot for photos", "zh": "一个拍照的好地点" },
+        { "gloss": "n. 斑点", "logic": "皮毛上的小圆点", "en": "a deer with white spots", "zh": "带白斑的鹿" }
+      ]
+    },
+    "track": {
+      "core": "动物留下的『踪迹』——顺着踪迹去『追踪』，也指一条粗糙小道。",
+      "senses": [
+        { "gloss": "n. 足迹", "logic": "踩在地上的印子", "en": "fresh deer tracks in the mud", "zh": "泥里新鲜的鹿足迹" },
+        { "gloss": "v. 追踪", "logic": "顺着踪迹找过去", "en": "track a wolf by its prints", "zh": "凭脚印追踪一只狼" },
+        { "gloss": "n. 小道", "logic": "被反复走出的窄路", "en": "a dirt track through the woods", "zh": "穿过林子的土路" }
+      ]
+    },
+    "overlook": {
+      "core": "『从上往下看』——名词是观景平台，动词却引申出『看漏、忽视』。",
+      "roots": [
+        { "part": "over", "meaning": "在上方" },
+        { "part": "look", "meaning": "看" }
+      ],
+      "senses": [
+        { "gloss": "n. 观景点", "logic": "居高临下赏景的平台", "en": "stop at the scenic overlook", "zh": "在观景台停一下" },
+        { "gloss": "v. 俯瞰", "logic": "从高处往下看", "en": "the cabin overlooks the lake", "zh": "小屋俯瞰湖面" },
+        { "gloss": "v. 忽视", "logic": "眼光从它上头掠过没看见", "en": "overlook an important detail", "zh": "忽略了一个重要细节" }
+      ]
+    },
+    "permit": {
+      "core": "『放行』——名词是许可证，动词是允许；名动重音位置相反。",
+      "roots": [
+        { "part": "per", "meaning": "通过" },
+        { "part": "mit", "meaning": "送、放" }
+      ],
+      "senses": [
+        { "gloss": "n. 许可证 /ˈpɜːrmɪt/", "logic": "证明你被放行的纸", "en": "a camping permit", "zh": "露营许可证" },
+        { "gloss": "v. 允许 /pərˈmɪt/", "logic": "让某事通过", "en": "camping is not permitted here", "zh": "这里不允许露营" }
+      ]
+    },
+    "issue": {
+      "core": "『流出去』——官方把许可证发出去；引申为浮出来的『问题』。",
+      "senses": [
+        { "gloss": "v. 签发", "logic": "把证件发放出去", "en": "the office issues permits", "zh": "管理处签发许可证" },
+        { "gloss": "n. 问题", "logic": "冒出来待处理的事", "en": "an environmental issue", "zh": "一个环境问题" }
+      ]
+    },
+    "shed": {
+      "core": "让身上的东西自然『脱落』——蜕皮、掉毛、落叶。",
+      "senses": [
+        { "gloss": "v. 蜕/脱落", "logic": "旧的自己甩掉", "en": "snakes shed their skin", "zh": "蛇蜕皮" },
+        { "gloss": "v. 落（叶）", "logic": "树把叶子放掉", "en": "trees shed leaves in autumn", "zh": "树在秋天落叶" }
+      ]
+    },
+    "bank": {
+      "core": "河湖两侧堆起的『岸』——与『银行』同形，靠语境分。",
+      "senses": [
+        { "gloss": "n. 河岸", "logic": "水边隆起的土坡", "en": "turtles bask on the river bank", "zh": "乌龟在河岸晒太阳" },
+        { "gloss": "n. 银行", "logic": "存钱的地方", "en": "go to the bank", "zh": "去银行" }
+      ]
+    },
+    "restore": {
+      "core": "『重新建立起来』——把受损的湿地、栖息地修回原样。",
+      "roots": [
+        { "part": "re", "meaning": "重新" },
+        { "part": "store", "meaning": "建立、树立（拉丁 staurare）" }
+      ]
+    },
+    "erode": {
+      "core": "被风、水、脚步一点点『啃掉』——地表慢慢被侵蚀。",
+      "roots": [
+        { "part": "e", "meaning": "出、离开" },
+        { "part": "rode", "meaning": "啃（拉丁 rodere）" }
+      ]
+    },
+    "disturb": {
+      "core": "把宁静『搅乱』——在保护区几乎专指惊扰动物。",
+      "roots": [
+        { "part": "dis", "meaning": "分开、彻底" },
+        { "part": "turb", "meaning": "搅动（拉丁 turbare）" }
+      ]
+    },
+    "endangered": {
+      "core": "『被推进危险里』——濒临灭绝但尚存的物种。",
+      "roots": [
+        { "part": "en", "meaning": "使……进入" },
+        { "part": "danger", "meaning": "危险" },
+        { "part": "ed", "meaning": "形容词化，表状态" }
+      ]
+    },
+    "predator": {
+      "core": "『掠夺猎物的一方』——吃别人的动物，永远和 prey 成对。",
+      "roots": [
+        { "part": "preda", "meaning": "猎物（拉丁 praeda）" },
+        { "part": "tor", "meaning": "……的人/物" }
+      ]
+    },
+    "migrate": {
+      "core": "随季节整批『搬家』——长途飞去越冬或繁殖。",
+      "roots": [
+        { "part": "migr", "meaning": "迁移（拉丁 migrare）" },
+        { "part": "ate", "meaning": "动词后缀" }
+      ]
+    },
+    "habitat": {
+      "core": "某物种赖以生存的『家』——它天然居住的那片环境。",
+      "roots": [
+        { "part": "habit", "meaning": "居住（拉丁 habitare）" },
+        { "part": "at", "meaning": "拉丁第三人称，『它居住（之处）』" }
+      ]
+    },
+    "vegetation": {
+      "core": "盖在地表上的一整片『植物群落』——不可数的植被。",
+      "roots": [
+        { "part": "veget", "meaning": "生长、有生气（拉丁 vegetare）" },
+        { "part": "ation", "meaning": "名词后缀" }
+      ]
+    },
+    "nocturnal": {
+      "core": "『属于夜的』——白天睡、夜里出来活动，和 diurnal 相对。",
+      "roots": [
+        { "part": "noct", "meaning": "夜（拉丁 nox）" },
+        { "part": "urnal", "meaning": "形容词后缀，表『……时的』" }
+      ]
+    },
+    "invasive": {
+      "core": "『闯进来占地盘的』——外来物种挤掉本地生态。",
+      "roots": [
+        { "part": "in", "meaning": "向里" },
+        { "part": "vas", "meaning": "走、闯（拉丁 vadere）" },
+        { "part": "ive", "meaning": "形容词后缀" }
+      ]
+    },
+    "endemic": {
+      "core": "『长在本地民众之中』——只此一地独有的物种，比 native 更独占。",
+      "roots": [
+        { "part": "en", "meaning": "在……之内" },
+        { "part": "dem", "meaning": "民众、地方（希腊 dēmos）" },
+        { "part": "ic", "meaning": "形容词后缀" }
+      ]
+    },
+    "boundary": {
+      "core": "圈出保护区的那条『界线』——里外之分。",
+      "roots": [
+        { "part": "bound", "meaning": "界限、边界" },
+        { "part": "ary", "meaning": "名词后缀，表事物" }
+      ]
+    },
+    "ecosystem": {
+      "core": "生物与环境咬合成的一整套『运转系统』——牵一发动全身。",
+      "roots": [
+        { "part": "eco", "meaning": "家、居所（希腊 oikos），引申为生态" },
+        { "part": "system", "meaning": "系统" }
+      ]
+    },
+    "biodiversity": {
+      "core": "一地生命种类的『丰富度』——物种越多越健康。",
+      "roots": [
+        { "part": "bio", "meaning": "生命" },
+        { "part": "divers", "meaning": "多样的" },
+        { "part": "ity", "meaning": "名词后缀，表性质" }
+      ]
+    },
+    "sanctuary": {
+      "core": "带着『神圣不可侵犯』色彩的庇护地——动物在这儿不得被猎。",
+      "roots": [
+        { "part": "sanct", "meaning": "神圣（拉丁 sanctus）" },
+        { "part": "uary", "meaning": "名词后缀，表场所" }
+      ]
+    },
+    "terrain": {
+      "core": "脚下这片地『好不好走』的物理形态——起伏、软硬、坡度。",
+      "roots": [
+        { "part": "terr", "meaning": "土地（拉丁 terra）" },
+        { "part": "ain", "meaning": "名词后缀" }
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "migration",
+      "levels": ["六级", "场景"],
+      "ipa": "/maɪˈɡreɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 迁徙",
+      "core": "整批动物随季节的『大搬家』——湿地是迁徙路上的加油站。",
+      "etymology": "源自拉丁 migrare『迁移』+ -ation，指动物随季节长距离规律性移动。",
+      "roots": [
+        { "part": "migr", "meaning": "迁移（拉丁 migrare）" },
+        { "part": "ation", "meaning": "名词后缀，表行为" }
+      ],
+      "phonetics": "四音节，重音在第二 /ˈɡreɪ/，读 /maɪˈɡreɪʃn/。",
+      "examples": [
+        { "en": "This wetland is a key stop on the birds' migration route.", "zh": "这片湿地是鸟类迁徙路线上的关键一站。", "source": "造句" },
+        { "en": "the annual migration", "zh": "一年一度的迁徙（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "movement", "ipa": "/ˈmuːvmənt/", "gloss": "移动", "note": "movement 泛指任何移动；migration 特指随季节的规律性长途迁移" }
+      ],
+      "nuance": "migration 是动词 migrate 的名词，观鸟讲座核心词，常配 route（路线）、season（迁徙季）。"
+    },
+    {
+      "word": "waterfall",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈwɔːtərfɔːl/",
+      "subgroup": "noun",
+      "meaning": "n. 瀑布",
+      "core": "河水从崖壁上『掉下来』——步道尽头常见的打卡点。",
+      "etymology": "water『水』+ fall『落下』，指水流从高处垂直跌落形成的瀑布。",
+      "phonetics": "复合词重音在前 /ˈwɔː/，末尾 -fall 读 /fɔːl/ 不弱化。",
+      "examples": [
+        { "en": "The trail ends at a tall waterfall.", "zh": "步道尽头是一道高高的瀑布。", "source": "造句" },
+        { "en": "reach the waterfall", "zh": "走到瀑布（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "cascade", "ipa": "/kæˈskeɪd/", "gloss": "小瀑布，层叠水流", "note": "cascade 多指分层跌落的小瀑布；waterfall 是通用的大瀑布" }
+      ],
+      "nuance": "waterfall 附近岩石常 slippery（湿滑），是安全提示高发地。"
+    },
+    {
+      "word": "valley",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈvæli/",
+      "subgroup": "noun",
+      "meaning": "n. 山谷，谷地",
+      "core": "两山之间的『低洼地带』——常有溪流穿过、观景点俯瞰它。",
+      "etymology": "源自拉丁 vallis『谷』，指两侧高地之间的狭长低地。",
+      "phonetics": "两音节，重音在前 /ˈvæ/。",
+      "examples": [
+        { "en": "The overlook gives a view down into the valley.", "zh": "观景点能俯瞰山谷。", "source": "造句" },
+        { "en": "a green valley", "zh": "绿色的山谷（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "canyon", "ipa": "/ˈkænjən/", "gloss": "峡谷", "note": "canyon 两壁陡峭、由河切割而成；valley 更宽缓、坡度平和" }
+      ],
+      "nuance": "valley 是宽缓的谷地；canyon 是陡峭的深峡谷。"
+    },
+    {
+      "word": "cave",
+      "levels": ["基础", "场景"],
+      "ipa": "/keɪv/",
+      "subgroup": "noun",
+      "meaning": "n. 洞穴，岩洞",
+      "etymology": "源自拉丁 cavus『中空的』，指山体或岩层里天然的空洞。",
+      "core": "山里天然的『空洞』——蝙蝠栖身、也是溶洞地貌的一部分。",
+      "phonetics": "单音节 /keɪv/，双元音 /eɪ/。",
+      "examples": [
+        { "en": "Bats roost deep inside the cave.", "zh": "蝙蝠栖息在洞穴深处。", "source": "造句" },
+        { "en": "explore a cave", "zh": "探洞（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "cavern", "ipa": "/ˈkævərn/", "gloss": "大山洞", "note": "cavern 特指大而深的洞穴；cave 是通用词" }
+      ],
+      "nuance": "cave 是通用的洞穴；cavern 强调又大又深。"
+    },
+    {
+      "word": "clearing",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈklɪrɪŋ/",
+      "subgroup": "noun",
+      "meaning": "n. 林中空地",
+      "core": "森林里被『清出来』的一块开阔地——阳光照得进、动物爱来。",
+      "etymology": "源自 clear『清除』+ -ing，指树木稀疏或被清除后露出的开阔地。",
+      "phonetics": "两音节，重音在前 /ˈklɪ/。",
+      "examples": [
+        { "en": "Deer often graze in the clearing at dusk.", "zh": "黄昏时鹿常在林中空地吃草。", "source": "造句" },
+        { "en": "a grassy clearing", "zh": "长草的林间空地（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "glade", "ipa": "/ɡleɪd/", "gloss": "林间空地", "note": "glade 更文学化，指林中明亮的小空地；clearing 更通用" }
+      ],
+      "nuance": "clearing 是森林里露出的开阔空地，观察动物的好地点。"
+    },
+    {
+      "word": "dune",
+      "levels": ["基础", "场景"],
+      "ipa": "/duːn/",
+      "subgroup": "noun",
+      "meaning": "n. 沙丘",
+      "core": "风堆起的『沙山』——地表极脆弱，禁止踩踏。",
+      "etymology": "源自古荷兰语 dūne『沙丘』，指风力堆积成的沙质小山，常见于海岸保护区。",
+      "phonetics": "单音节 /duːn/，长音 /uː/。",
+      "examples": [
+        { "en": "Please keep off the fragile dunes.", "zh": "请勿踩踏脆弱的沙丘。", "source": "造句" },
+        { "en": "coastal dunes", "zh": "海岸沙丘（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "dune 生态极脆弱，常与 fragile、keep off、boardwalk 一起出现。"
+    },
+    {
+      "word": "campfire",
+      "levels": ["基础", "口语", "场景"],
+      "ipa": "/ˈkæmpfaɪər/",
+      "subgroup": "noun",
+      "meaning": "n. 营火，篝火",
+      "core": "营地里生的『火堆』——离开前必须彻底熄灭以防山火。",
+      "etymology": "camp『露营』+ fire『火』，指露营时搭起取暖照明的火堆。",
+      "phonetics": "复合词重音在前 /ˈkæmp/，fire /ˈfaɪər/ 双音节。",
+      "examples": [
+        { "en": "Always put out your campfire before sleeping.", "zh": "睡前一定要熄灭营火。", "source": "造句" },
+        { "en": "light a campfire", "zh": "生篝火（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "bonfire", "ipa": "/ˈbɑːnfaɪər/", "gloss": "大篝火", "note": "bonfire 是庆祝用的大火堆；campfire 是露营取暖的小火堆" }
+      ],
+      "nuance": "campfire 是防火提示核心词，几乎必配 put out（熄灭）。"
+    },
+    {
+      "word": "binoculars",
+      "levels": ["基础", "口语", "场景"],
+      "ipa": "/bɪˈnɑːkjələrz/",
+      "subgroup": "noun",
+      "meaning": "n. 双筒望远镜（恒复数）",
+      "core": "观鸟必备的『双筒望远镜』——把远处的鸟拉到眼前。",
+      "etymology": "bi『二』+ ocul『眼』（拉丁 oculus）+ -ar，指双眼同时看的望远镜，常用复数。",
+      "roots": [
+        { "part": "bi", "meaning": "二、两个" },
+        { "part": "ocul", "meaning": "眼（拉丁 oculus）" },
+        { "part": "ars", "meaning": "名词后缀（复数）" }
+      ],
+      "phonetics": "四音节，重音在第二 /ˈnɑː/；恒用复数 -s。",
+      "examples": [
+        { "en": "Bring binoculars to watch the distant herons.", "zh": "带上双筒望远镜观察远处的苍鹭。", "source": "造句" },
+        { "en": "a pair of binoculars", "zh": "一副双筒望远镜（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "binoculars 恒复数，说『一副』用 a pair of binoculars，观鸟场景高频装备。"
+    },
+    {
+      "word": "leaflet",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈliːflət/",
+      "subgroup": "noun",
+      "meaning": "n. 宣传单，小传单",
+      "core": "入口发的一张『薄薄的介绍纸』——比 brochure 更简。",
+      "etymology": "leaf『（书）页』+ -let『小』，指单张或折叠的宣传纸。",
+      "phonetics": "两音节，重音在前 /ˈliːf/。",
+      "examples": [
+        { "en": "Grab a leaflet about the trails at the desk.", "zh": "在服务台拿一张步道介绍单。", "source": "造句" },
+        { "en": "an information leaflet", "zh": "信息单（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "brochure", "ipa": "/broʊˈʃʊr/", "gloss": "宣传册", "note": "brochure 较厚、常有彩图；leaflet 是单张或薄折页" }
+      ],
+      "nuance": "leaflet 是单张薄传单；brochure 更精美成册。"
+    },
+    {
+      "word": "detour",
+      "levels": ["基础", "口语", "场景"],
+      "ipa": "/ˈdiːtʊr/",
+      "subgroup": "noun",
+      "meaning": "n. 绕行路线；v. 绕道",
+      "core": "原路被封时的『绕行道』——步道施工或水淹要改道走。",
+      "etymology": "源自法语 détour『转向』，de-『离开』+ tour『转』，指偏离原路的绕行。",
+      "phonetics": "两音节，重音在前 /ˈdiː/，读 /ˈdiːtʊr/。",
+      "examples": [
+        { "en": "The flooded path forces a short detour.", "zh": "被淹的小路迫使我们绕一小段路。", "source": "造句" },
+        { "en": "take a detour", "zh": "绕道（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "detour 是临时绕行路线，常因 trail closed（步道关闭）或 flooded（被淹）出现。"
+    },
+    {
+      "word": "pesticide",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈpestɪsaɪd/",
+      "subgroup": "noun",
+      "meaning": "n. 杀虫剂，农药",
+      "core": "杀虫的化学品——飘进保护区会毒害鸟和昆虫。",
+      "etymology": "pest『害虫』+ -cide『杀（拉丁 caedere）』，指杀灭害虫的化学制剂。",
+      "roots": [
+        { "part": "pest", "meaning": "害虫、有害之物" },
+        { "part": "i", "meaning": "连接元音" },
+        { "part": "cide", "meaning": "杀（拉丁 caedere）" }
+      ],
+      "phonetics": "三音节，重音在前 /ˈpes/，-cide 读 /saɪd/。",
+      "examples": [
+        { "en": "Pesticides from nearby farms harm the wetland birds.", "zh": "附近农场的农药危害湿地鸟类。", "source": "造句" },
+        { "en": "chemical pesticides", "zh": "化学农药（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "pesticide 的 -cide 与 herbicide（除草剂）、insecticide（杀虫剂）同源，都表『杀』。"
+    },
+    {
+      "word": "prairie",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈpreri/",
+      "subgroup": "noun",
+      "meaning": "n. （北美）大草原",
+      "core": "北美一望无际的『大草原』——野牛与草原犬鼠的家。",
+      "etymology": "源自法语 prairie『草地』（拉丁 pratum 草地），特指北美中部的温带草原。",
+      "phonetics": "两音节，重音在前 /ˈpre/，读 /ˈpreri/。",
+      "examples": [
+        { "en": "Bison once roamed the open prairie in huge herds.", "zh": "野牛曾成群漫游在开阔的大草原上。", "source": "造句" },
+        { "en": "the tallgrass prairie", "zh": "高草草原（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "grassland", "ipa": "/ˈɡræslænd/", "gloss": "草原", "note": "prairie 特指北美温带草原；grassland 是全球通用的草原统称" }
+      ],
+      "nuance": "prairie 专指北美大草原；savanna 是热带稀树草原，两者别混。"
+    },
+    {
+      "word": "extinction",
+      "levels": ["六级", "场景"],
+      "ipa": "/ɪkˈstɪŋkʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 灭绝",
+      "core": "一个物种彻底『熄灭』——从地球上永远消失。",
+      "etymology": "源自拉丁 extinguere『熄灭』+ -tion，本义『熄灭』，引申为物种消失。",
+      "roots": [
+        { "part": "ex", "meaning": "出、彻底" },
+        { "part": "tinct", "meaning": "熄灭（拉丁 stinguere）" },
+        { "part": "ion", "meaning": "名词后缀" }
+      ],
+      "phonetics": "三音节，重音在第二 /ˈstɪŋk/。",
+      "examples": [
+        { "en": "Poaching pushed the species close to extinction.", "zh": "盗猎把这个物种推向灭绝边缘。", "source": "造句" },
+        { "en": "on the brink of extinction", "zh": "濒临灭绝（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "extinction 是名词『灭绝』，形容词 extinct（已灭绝的），与 endangered（濒危）成梯度。"
+    },
+    {
+      "word": "pollution",
+      "levels": ["六级", "场景"],
+      "ipa": "/pəˈluːʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 污染",
+      "core": "把干净的水、空气『弄脏』——保护区的头号外部威胁。",
+      "etymology": "源自拉丁 polluere『弄脏』+ -tion，指有害物质污染环境。",
+      "roots": [
+        { "part": "pollut", "meaning": "弄脏（拉丁 polluere）" },
+        { "part": "ion", "meaning": "名词后缀" }
+      ],
+      "phonetics": "三音节，重音在第二 /ˈluː/。",
+      "examples": [
+        { "en": "Water pollution threatens the fish in the stream.", "zh": "水污染威胁着溪里的鱼。", "source": "造句" },
+        { "en": "reduce pollution", "zh": "减少污染（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "contamination", "ipa": "/kənˌtæmɪˈneɪʃn/", "gloss": "污染，玷污", "note": "contamination 更强调有毒物质渗入使不洁；pollution 是更通用的环境污染" }
+      ],
+      "nuance": "pollution 是通用的环境污染；contamination 更强调被有害物质具体玷污。"
+    },
+    {
+      "word": "otter",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈɑːtər/",
+      "subgroup": "noun",
+      "meaning": "n. 水獭",
+      "core": "溪流湿地里灵活游动的『水獭』——水质好的指示动物。",
+      "etymology": "古英语 otor『水獭』，指半水生、食鱼的鼬科哺乳动物。",
+      "phonetics": "两音节，重音在前 /ˈɑː/。",
+      "examples": [
+        { "en": "An otter slid off the bank into the stream.", "zh": "一只水獭从岸边滑进溪里。", "source": "造句" },
+        { "en": "a river otter", "zh": "河獭（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "otter 是半水生哺乳动物，其出现常被当作水质洁净的指标。"
+    },
+    {
+      "word": "heron",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈherən/",
+      "subgroup": "noun",
+      "meaning": "n. 苍鹭",
+      "core": "湿地浅水边一动不动等鱼的『长腿长颈涉禽』。",
+      "etymology": "源自古法语 hairon『鹭』，指腿长颈长、在浅水捕鱼的涉禽。",
+      "phonetics": "两音节，重音在前 /ˈhe/。",
+      "examples": [
+        { "en": "A grey heron stood still in the shallows.", "zh": "一只灰鹭一动不动地站在浅水里。", "source": "造句" },
+        { "en": "a grey heron", "zh": "灰鹭（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "crane", "ipa": "/kreɪn/", "gloss": "鹤", "note": "crane（鹤）飞行时颈伸直；heron（鹭）飞行时颈缩成 S 形" }
+      ],
+      "nuance": "heron 与 crane 常混：鹭飞时缩颈成 S，鹤飞时颈伸直。"
+    },
+    {
+      "word": "fox",
+      "levels": ["基础", "场景"],
+      "ipa": "/fɑːks/",
+      "subgroup": "noun",
+      "meaning": "n. 狐狸",
+      "core": "机警的中小型『狐狸』——黄昏出没、掘洞而居。",
+      "etymology": "古英语 fox『狐』，指犬科的狐属动物，以机警狡黠著称。",
+      "phonetics": "单音节 /fɑːks/。",
+      "examples": [
+        { "en": "A red fox darted across the trail at dusk.", "zh": "黄昏时一只红狐窜过步道。", "source": "造句" },
+        { "en": "a red fox", "zh": "红狐（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "fox 常在 dusk/dawn 活动，掘 burrow（地洞）栖身。"
+    },
+    {
+      "word": "thrive",
+      "levels": ["托福", "场景"],
+      "ipa": "/θraɪv/",
+      "subgroup": "verb",
+      "meaning": "v. 茁壮成长，兴旺",
+      "core": "在适宜环境里『长得旺』——种群蓬勃、生机盎然。",
+      "etymology": "源自古北欧 thrīfask『繁荣』，指生物在良好条件下蓬勃生长。",
+      "phonetics": "单音节 /θraɪv/，词首 /θ/ 咬舌。",
+      "examples": [
+        { "en": "Frogs thrive in these clean, shallow ponds.", "zh": "青蛙在这些洁净的浅池塘里茁壮繁衍。", "source": "造句" },
+        { "en": "thrive in the wild", "zh": "在野外兴旺（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "flourish", "ipa": "/ˈflɜːrɪʃ/", "gloss": "繁荣，茂盛", "note": "flourish 与 thrive 近义；flourish 略偏『繁茂开花』，thrive 偏『健康存活壮大』" }
+      ],
+      "nuance": "thrive 强调在适宜条件下健康壮大；与 struggle（艰难挣扎）相对。"
+    },
+    {
+      "word": "inhabit",
+      "levels": ["托福", "场景"],
+      "ipa": "/ɪnˈhæbɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 栖居于，居住在",
+      "core": "某物种『住在』某片栖息地里——be home to 的动词说法。",
+      "etymology": "in『在里面』+ habit『居住（拉丁 habitare）』，指生物栖居于某地。",
+      "roots": [
+        { "part": "in", "meaning": "在……里面" },
+        { "part": "habit", "meaning": "居住（拉丁 habitare）" }
+      ],
+      "phonetics": "三音节，重音在中 /ˈhæ/。",
+      "examples": [
+        { "en": "Rare frogs inhabit the shallow wetland pools.", "zh": "珍稀的蛙类栖居在湿地的浅水潭里。", "source": "造句" },
+        { "en": "inhabit the forest", "zh": "栖居于森林（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "dwell", "ipa": "/dwel/", "gloss": "居住", "note": "dwell 偏文学、多用于人；inhabit 更常用于动植物栖居某地" }
+      ],
+      "nuance": "inhabit 是及物动词，直接接地点（inhabit the marsh），别加 in。"
+    },
+    {
+      "word": "adapt",
+      "levels": ["托福", "场景"],
+      "ipa": "/əˈdæpt/",
+      "subgroup": "verb",
+      "meaning": "v. 适应，使适应",
+      "core": "为环境『调整自己』——物种靠适应活下来。",
+      "etymology": "ad『向』+ apt『合适（拉丁 aptus）』，本义『使合适』，指调整以适应环境。",
+      "roots": [
+        { "part": "ad", "meaning": "向、朝" },
+        { "part": "apt", "meaning": "合适（拉丁 aptus）" }
+      ],
+      "phonetics": "两音节，重音在后 /ˈdæpt/。",
+      "examples": [
+        { "en": "These plants have adapted to the salty soil.", "zh": "这些植物已适应了含盐的土壤。", "source": "造句" },
+        { "en": "adapt to the environment", "zh": "适应环境（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "adjust", "ipa": "/əˈdʒʌst/", "gloss": "调整", "note": "adjust 是小幅微调；adapt 是为长期生存做的根本性适应" }
+      ],
+      "nuance": "adapt to sth（适应某物）；注意别与 adopt /əˈdɑːpt/（收养、采用）混。"
+    },
+    {
+      "word": "roam",
+      "levels": ["托福", "场景"],
+      "ipa": "/roʊm/",
+      "subgroup": "verb",
+      "meaning": "v. （动物）自由游荡，漫游",
+      "core": "在广阔地界里『自由地游走』——不设方向地觅食走动。",
+      "etymology": "中古英语 romen『漫游』，指在大范围内无固定路线地走动。",
+      "phonetics": "单音节 /roʊm/，双元音 /oʊ/。",
+      "examples": [
+        { "en": "Bison roam freely across the open plain.", "zh": "野牛在开阔的平原上自由游荡。", "source": "造句" },
+        { "en": "roam the grassland", "zh": "在草原上游荡（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "wander", "ipa": "/ˈwɑːndər/", "gloss": "漫步，游荡", "note": "wander 多含『无目的、可能走失』；roam 更强调在大片领地里自由活动" }
+      ],
+      "nuance": "roam 常用于大型动物在广阔领地自由游走（roam freely）。"
+    },
+    {
+      "word": "descend",
+      "levels": ["托福", "场景"],
+      "ipa": "/dɪˈsend/",
+      "subgroup": "verb",
+      "meaning": "v. 下降，下山",
+      "core": "从高处『往下走』——登顶后原路下山。",
+      "etymology": "de『向下』+ scend『爬（拉丁 scandere）』，本义『向下爬』，指下降。",
+      "roots": [
+        { "part": "de", "meaning": "向下" },
+        { "part": "scend", "meaning": "爬（拉丁 scandere）" }
+      ],
+      "phonetics": "两音节，重音在后 /ˈsend/。",
+      "examples": [
+        { "en": "We descend the same trail back to the trailhead.", "zh": "我们沿同一条步道下山回到起点。", "source": "造句" },
+        { "en": "descend the slope", "zh": "下坡（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "ascend", "ipa": "/əˈsend/", "gloss": "上升，攀登", "note": "ascend 是往上爬；descend 是往下走，一对反义" }
+      ],
+      "nuance": "descend 与 ascend 是徒步方向的一对反义，词根 scend=爬。"
+    },
+    {
+      "word": "wade",
+      "levels": ["六级", "口语", "场景"],
+      "ipa": "/weɪd/",
+      "subgroup": "verb",
+      "meaning": "v. 蹚水，涉水",
+      "core": "在浅水里『一步步蹚过去』——过溪或涉禽觅食。",
+      "etymology": "古英语 wadan『前进、蹚』，指在水中费力地趟着走。",
+      "phonetics": "单音节 /weɪd/，与 weighed 同音。",
+      "examples": [
+        { "en": "Herons wade through the shallows to catch fish.", "zh": "苍鹭蹚过浅水去捕鱼。", "source": "造句" },
+        { "en": "wade across the stream", "zh": "蹚水过溪（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "wade 特指在浅水中蹚行；涉禽 wading birds（如鹭、鹤）由此得名。"
+    },
+    {
+      "word": "humid",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈhjuːmɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 潮湿的，湿热的",
+      "core": "空气里『水汽重』——雨林、沼泽典型的闷湿感。",
+      "etymology": "源自拉丁 humidus『潮湿的』（humere 湿），指空气含水量高。",
+      "phonetics": "两音节，重音在前 /ˈhjuː/。",
+      "examples": [
+        { "en": "The swamp is hot and humid in summer.", "zh": "夏天沼泽又热又潮。", "source": "造句" },
+        { "en": "a humid climate", "zh": "潮湿的气候（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "arid", "ipa": "/ˈærɪd/", "gloss": "干旱的", "note": "arid 是空气与土地都极干；humid 是空气水汽重，一对反义" }
+      ],
+      "nuance": "humid 指空气湿；damp 指物体表面潮；arid 是其反义（干旱）。"
+    },
+    {
+      "word": "arid",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈærɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 干旱的，贫瘠的",
+      "core": "常年缺雨的『干旱地』——植被稀疏、水源珍贵。",
+      "etymology": "源自拉丁 aridus『干的』（arere 干燥），指降水极少的干旱环境。",
+      "phonetics": "两音节，重音在前 /ˈæ/。",
+      "examples": [
+        { "en": "Only tough shrubs survive in the arid zone.", "zh": "只有耐旱的灌木能在干旱地带存活。", "source": "造句" },
+        { "en": "an arid region", "zh": "干旱地区（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "arid 是极干旱；humid 是潮湿，描述气候的一对反义。"
+    },
+    {
+      "word": "abundant",
+      "levels": ["托福", "场景"],
+      "ipa": "/əˈbʌndənt/",
+      "subgroup": "desc",
+      "meaning": "adj. 丰富的，大量的",
+      "core": "资源、物种『多到满出来』——生态健康的标志。",
+      "etymology": "源自拉丁 abundare『满溢』（ab 从+unda 波浪），指多得像浪涌一样。",
+      "roots": [
+        { "part": "ab", "meaning": "从、离" },
+        { "part": "und", "meaning": "波浪、涌流（拉丁 unda）" },
+        { "part": "ant", "meaning": "形容词后缀" }
+      ],
+      "phonetics": "三音节，重音在中 /ˈbʌn/。",
+      "examples": [
+        { "en": "Fish are abundant in the protected lake.", "zh": "受保护的湖里鱼很丰富。", "source": "造句" },
+        { "en": "abundant wildlife", "zh": "丰富的野生动物（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "scarce", "ipa": "/skers/", "gloss": "稀缺的", "note": "scarce 是供不应求的稀少；abundant 是充足丰盈，一对反义" }
+      ],
+      "nuance": "abundant 强调充足丰盈；与 scarce（稀缺）相对。"
+    },
+    {
+      "word": "vast",
+      "levels": ["托福", "场景"],
+      "ipa": "/væst/",
+      "subgroup": "desc",
+      "meaning": "adj. 广阔的，巨大的",
+      "core": "一望无际的『辽阔』——形容草原、湿地、荒野的尺度。",
+      "etymology": "源自拉丁 vastus『广袤空旷的』，指面积或规模极大。",
+      "phonetics": "单音节 /væst/。",
+      "examples": [
+        { "en": "The reserve covers a vast area of wetland.", "zh": "保护区覆盖着一大片辽阔的湿地。", "source": "造句" },
+        { "en": "a vast wilderness", "zh": "广袤的荒野（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "vast 强调面积辽阔无边；比 large 更有『一望无际』的气势。"
+    },
+    {
+      "word": "sturdy",
+      "levels": ["托福", "口语", "场景"],
+      "ipa": "/ˈstɜːrdi/",
+      "subgroup": "desc",
+      "meaning": "adj. 结实的，坚固的",
+      "core": "扛得住磨的『结实』——鞋、桥、装备都得 sturdy 才安全。",
+      "etymology": "源自古法语 estourdi『鲁莽的』，后转义为『强壮结实、经得起用』。",
+      "phonetics": "两音节，重音在前 /ˈstɜːr/。",
+      "examples": [
+        { "en": "Wear sturdy boots on the rocky trail.", "zh": "在多岩石的步道上要穿结实的靴子。", "source": "造句" },
+        { "en": "sturdy footwear", "zh": "结实的鞋（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "fragile", "ipa": "/ˈfrædʒl/", "gloss": "脆弱的", "note": "fragile 是易碎脆弱；sturdy 是结实耐用，一对反义" }
+      ],
+      "nuance": "sturdy 常修饰 boots/shoes/bridge，是徒步装备提示的高频词。"
+    },
+    {
+      "word": "alert",
+      "levels": ["托福", "口语", "场景"],
+      "ipa": "/əˈlɜːrt/",
+      "subgroup": "desc",
+      "meaning": "adj. 警觉的，机警的；v. 使警觉",
+      "core": "耳听八方的『警觉』——动物警惕天敌，游客留意危险。",
+      "etymology": "源自意大利 all'erta『在瞭望塔上』，指保持戒备、随时留意。",
+      "phonetics": "两音节，重音在后 /ˈlɜːrt/。",
+      "examples": [
+        { "en": "Stay alert for bears when hiking alone.", "zh": "独自徒步时要对熊保持警觉。", "source": "造句" },
+        { "en": "stay alert", "zh": "保持警觉（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "cautious", "ipa": "/ˈkɔːʃəs/", "gloss": "谨慎的", "note": "cautious 强调行动上小心避险；alert 强调感官上保持警觉" }
+      ],
+      "nuance": "alert 强调感官警觉（stay alert）；cautious 强调行为谨慎。"
+    },
+    {
+      "word": "cautious",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈkɔːʃəs/",
+      "subgroup": "desc",
+      "meaning": "adj. 谨慎的，小心的",
+      "core": "凡事先想后果的『小心』——湿滑陡峭处要 cautious。",
+      "etymology": "源自拉丁 cautio『警惕』+ -ous，指行事小心、避免冒险。",
+      "phonetics": "两音节，重音在前 /ˈkɔː/。",
+      "examples": [
+        { "en": "Be cautious on the slippery boardwalk.", "zh": "在湿滑的木栈道上要小心。", "source": "造句" },
+        { "en": "a cautious approach", "zh": "谨慎的做法（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "cautious 是形容词『谨慎的』，名词 caution，动词短语 proceed with caution。"
+    },
+    {
+      "word": "keep to the path",
+      "levels": ["基础", "口语", "场景"],
+      "ipa": "/kiːp tuː ðə pæθ/",
+      "subgroup": "phrase",
+      "meaning": "沿着小路走，不偏离",
+      "core": "别乱走、『守着这条路』——与 stay on the trail 同义的保护规则。",
+      "etymology": "keep to『坚持沿着』+ the path，与 stay on the trail、stick to the path 同义。",
+      "phonetics": "keep-to 连读，path 词尾 /θ/ 咬舌。",
+      "examples": [
+        { "en": "Keep to the path to avoid trampling the plants.", "zh": "沿着小路走，以免踩踏植物。", "source": "造句" },
+        { "en": "keep to the marked path", "zh": "沿标记小路走（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "keep to the path 与 stay on the trail、stick to the path 三者同义，复述规则可换用。"
+    },
+    {
+      "word": "take only photos",
+      "levels": ["基础", "口语", "场景"],
+      "ipa": "/teɪk ˈoʊnli ˈfoʊtoʊz/",
+      "subgroup": "phrase",
+      "meaning": "只带走照片（什么都别拿走）",
+      "core": "保护区名言：只拍照、别采摘捡拾——一切留在原地。",
+      "etymology": "源自环保标语 'Take only photos, leave only footprints'，倡导不带走任何自然物。",
+      "phonetics": "take-only 连读，photos /ˈfoʊtoʊz/。",
+      "examples": [
+        { "en": "Please take only photos and leave the flowers where they grow.", "zh": "请只拍照，把花留在它生长的地方。", "source": "造句" },
+        { "en": "take only photos, leave only footprints", "zh": "只带走照片，只留下脚印（高频标语）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "半句标语，常与 leave only footprints 连用，是保护区『不带走自然物』的核心倡议。"
+    },
+    {
+      "word": "keep noise down",
+      "levels": ["基础", "口语", "场景"],
+      "ipa": "/kiːp nɔɪz daʊn/",
+      "subgroup": "phrase",
+      "meaning": "把噪音压低，保持安静",
+      "core": "『压低声音』别惊到动物——观鸟扎营都要 keep noise down。",
+      "etymology": "keep ... down『把……压低』+ noise，指降低声响以免惊扰野生动物。",
+      "phonetics": "keep-noise 连读，down /daʊn/。",
+      "examples": [
+        { "en": "Keep noise down so you don't disturb the nesting birds.", "zh": "把声音压低，以免惊扰筑巢的鸟。", "source": "造句" },
+        { "en": "keep the noise down", "zh": "小声点（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "keep noise down 是观鸟、扎营时的安静提示，与 disturb（惊扰）呼应。"
+    },
+    {
+      "word": "make sure to",
+      "levels": ["基础", "口语", "场景"],
+      "ipa": "/meɪk ʃʊr tuː/",
+      "subgroup": "phrase",
+      "meaning": "务必，一定要",
+      "core": "叮嘱的固定开头——『一定要』做某事，复述规则的万能引导。",
+      "etymology": "make sure『确保』+ to do，用于强调务必完成某动作。",
+      "phonetics": "make-sure 连读，to 弱读 /tə/。",
+      "examples": [
+        { "en": "Make sure to bring enough water on the long trail.", "zh": "走长步道务必带足水。", "source": "造句" },
+        { "en": "make sure to sign in", "zh": "务必登记（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "make sure to 是复述叮嘱类信息的高频引导短语（务必……），比 must 更口语。"
+    },
+    {
+      "word": "edge",
+      "levels": ["托福", "口语", "场景"],
+      "ipa": "/edʒ/",
+      "subgroup": "general",
+      "meaning": "n. 边缘，边界",
+      "core": "悬崖、水塘、森林的『边儿』——安全提示常说别靠 edge。",
+      "etymology": "古英语 ecg『刃、边』，指物体的边缘或交界线。",
+      "phonetics": "单音节 /edʒ/，词尾 /dʒ/。",
+      "examples": [
+        { "en": "Keep away from the edge of the cliff.", "zh": "远离悬崖边缘。", "source": "造句" },
+        { "en": "the water's edge", "zh": "水边（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "rim", "ipa": "/rɪm/", "gloss": "（圆形物的）边缘", "note": "rim 特指杯口、峡谷口等圆形边沿；edge 泛指任何边缘" }
+      ],
+      "nuance": "edge 泛指任何边缘（cliff edge / forest edge）；rim 特指圆形物的边沿。"
+    },
+    {
+      "word": "patch",
+      "levels": ["托福", "场景"],
+      "ipa": "/pætʃ/",
+      "subgroup": "general",
+      "meaning": "n. 一小片，斑块",
+      "core": "一小块地或植被——最后一片原始森林就是 a patch。",
+      "etymology": "中古英语 pacche『补丁』，引申为『一小片、一小块（土地、植被）』。",
+      "phonetics": "单音节 /pætʃ/。",
+      "examples": [
+        { "en": "This reserve protects the last patch of old forest.", "zh": "这个保护区保护着最后一片原始森林。", "source": "造句" },
+        { "en": "a patch of wildflowers", "zh": "一片野花（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "patch 指『一小片』（土地、植被、颜色），a patch of forest/grass 高频。"
+    },
+    {
+      "word": "trace",
+      "levels": ["托福", "场景"],
+      "ipa": "/treɪs/",
+      "subgroup": "general",
+      "meaning": "n. 痕迹，踪迹；v. 追踪，查找",
+      "core": "动物或人留下的『一丝痕迹』——顺着它追溯来龙去脉。",
+      "etymology": "源自拉丁 tractus『拖曳的痕迹』，指遗留的微小痕迹，也指追溯。",
+      "phonetics": "单音节 /treɪs/，双元音 /eɪ/。",
+      "examples": [
+        { "en": "There was no trace of the fox by morning.", "zh": "到早上狐狸已不见踪迹。", "source": "造句" },
+        { "en": "leave no trace", "zh": "不留痕迹（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [],
+      "nuance": "trace 是留下的微小痕迹；'Leave No Trace'（不留痕迹）是著名的户外环保准则。"
+    },
+    {
+      "word": "glimpse",
+      "levels": ["托福", "口语", "场景"],
+      "ipa": "/ɡlɪmps/",
+      "subgroup": "general",
+      "meaning": "n. 一瞥，瞥见；v. 瞥见",
+      "core": "『一闪而过的一眼』——珍稀动物往往只 catch a glimpse。",
+      "etymology": "中古英语 glimsen『微微发光、瞥见』，指短暂而不完整地看一眼。",
+      "phonetics": "单音节 /ɡlɪmps/，辅音丛 -mps 收尾。",
+      "examples": [
+        { "en": "We caught a glimpse of a deer before it vanished.", "zh": "鹿消失前我们瞥见了它一眼。", "source": "造句" },
+        { "en": "catch a glimpse of", "zh": "瞥见（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "spot", "ipa": "/spɑːt/", "gloss": "发现，认出", "note": "spot 强调认出、找到目标；glimpse 强调只匆匆看到一眼、看不真切" }
+      ],
+      "nuance": "glimpse 强调短暂不完整地『瞥一眼』，固定搭配 catch a glimpse of。"
+    },
+    {
+      "word": "recover",
+      "levels": ["托福", "场景"],
+      "ipa": "/rɪˈkʌvər/",
+      "subgroup": "general",
+      "meaning": "v. 恢复，复原",
+      "core": "受损的种群、栖息地慢慢『缓过来』——回到健康状态。",
+      "etymology": "re『重新』+ cover（拉丁 recuperare 收回），本义『重新得到』，引申为恢复。",
+      "roots": [
+        { "part": "re", "meaning": "重新" },
+        { "part": "cover", "meaning": "取得、获得（拉丁 recuperare）" }
+      ],
+      "phonetics": "三音节，重音在中 /ˈkʌ/。",
+      "examples": [
+        { "en": "The wolf population is slowly recovering.", "zh": "狼的种群正在缓慢恢复。", "source": "造句" },
+        { "en": "recover from decline", "zh": "从衰退中恢复（高频搭配）", "source": "高频搭配" }
+      ],
+      "synonyms": [
+        { "w": "restore", "ipa": "/rɪˈstɔːr/", "gloss": "修复", "note": "recover 多指自身逐渐复原（自动）；restore 多指人为把某物修回原样（及物）" }
+      ],
+      "nuance": "recover 侧重『（自身）逐渐复原』；restore 侧重『（人为）修复回原样』。"
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+{
+  "enrich": {
+    "rental": {
+      "core": "把车「租回来用一段时间」的这笔生意和这台车。",
+      "roots": [
+        {"part": "rent", "meaning": "租（源自古法语 rente 收益、从财产上收回的钱）"},
+        {"part": "-al", "meaning": "名词/形容词后缀"}
+      ]
+    },
+    "vehicle": {
+      "core": "任何用来「把人或货运走」的载具，从轿车到房车都算。",
+      "roots": [
+        {"part": "veh-", "meaning": "运送、搬运（拉丁 vehere；同源 convey、vector）"},
+        {"part": "-icle", "meaning": "指小名词后缀，表「工具、小物件」"}
+      ]
+    },
+    "license": {
+      "core": "官方发的「你被允许做某事」的正式凭证。",
+      "roots": [
+        {"part": "lic-", "meaning": "被允许（拉丁 licere；同源 licit 合法、leisure 闲暇）"},
+        {"part": "-ense", "meaning": "名词后缀"}
+      ]
+    },
+    "insurance": {
+      "core": "先付钱买一份「万一出事有人兜底」的确定感。",
+      "roots": [
+        {"part": "in-", "meaning": "使、进入某状态"},
+        {"part": "-sur-", "meaning": "确定、安全（拉丁 securus；同源 sure、ensure、secure）"},
+        {"part": "-ance", "meaning": "名词后缀"}
+      ]
+    },
+    "deposit": {
+      "core": "先「放下」一笔钱压在这儿，作抵押，事后拿回。",
+      "roots": [
+        {"part": "de-", "meaning": "向下"},
+        {"part": "-posit-", "meaning": "放置（拉丁 ponere/positus；同族 position、compose、expose）"}
+      ],
+      "senses": [
+        {"gloss": "押金，保证金", "logic": "先「放下」一笔钱作抵押，履约后退回", "en": "We'll take a $200 deposit that's refunded on return.", "zh": "我们会收 200 美元押金，还车时退还。"},
+        {"gloss": "存款；存入（银行）", "logic": "把钱「放进」账户里存着", "en": "She made a deposit into her savings account.", "zh": "她往储蓄账户里存了一笔钱。"},
+        {"gloss": "沉积物，矿藏", "logic": "自然长期「放下、堆积」的物质层", "en": "The river left mineral deposits along the bank.", "zh": "河流在岸边留下了矿物沉积。"}
+      ]
+    },
+    "rate": {
+      "core": "按「每一单位」（天、周、英里）算出来的那个价钱或比率。",
+      "roots": [
+        {"part": "rat-", "meaning": "按比例算的部分（拉丁 rata；同族 ratio、ration）"}
+      ],
+      "senses": [
+        {"gloss": "费率，价格（按单位计）", "logic": "按每天/每周算的单价", "en": "The daily rate is $45 plus tax.", "zh": "日租价是每天 45 美元外加税。"},
+        {"gloss": "比率，速率", "logic": "两量相除得出的比例", "en": "The interest rate went up this year.", "zh": "今年利率上调了。"},
+        {"gloss": "评估，评级（动词）", "logic": "给某物「定出一个等级值」", "en": "Customers rated the service five stars.", "zh": "顾客给这项服务打了五星。"}
+      ]
+    },
+    "return": {
+      "core": "「转回来」——把车开回去交还，或人回到原处。",
+      "roots": [
+        {"part": "re-", "meaning": "回"},
+        {"part": "-turn", "meaning": "转（拉丁 tornare）"}
+      ],
+      "senses": [
+        {"gloss": "归还，还车", "logic": "把借来的东西「转回」给对方", "en": "You need to return the car by 10 a.m. Friday.", "zh": "你得在周五上午 10 点前还车。"},
+        {"gloss": "返回，回到（原处）", "logic": "人自己「转回」原地", "en": "She returned to the counter to ask about the fee.", "zh": "她回到柜台去问那笔费用。"},
+        {"gloss": "回报，收益（名词）", "logic": "投出去后「转回来」的东西", "en": "The investment gave a good return.", "zh": "这笔投资回报不错。"}
+      ]
+    },
+    "tank": {
+      "core": "车里那个「存油的大罐」；军事「坦克」是它的伪装代号。",
+      "senses": [
+        {"gloss": "油箱，水箱", "logic": "存液体的密闭容器", "en": "Return it with a full tank to avoid a refueling charge.", "zh": "加满油再还，就不用付加油费。"},
+        {"gloss": "坦克（军事）", "logic": "一战时故意用「水箱」当代号掩盖新武器", "en": "The tanks rolled across the field.", "zh": "坦克群驶过原野。"}
+      ]
+    },
+    "charge": {
+      "core": "「加负担」——加收一笔钱，或往电池里加电，或给某人加罪名。",
+      "roots": [
+        {"part": "charg-", "meaning": "装载、加负担（拉丁 carrus 车 → carricare 装车）"}
+      ],
+      "senses": [
+        {"gloss": "收费，扣款", "logic": "在账上「加」一笔负担", "en": "We'll charge your card when you return the car.", "zh": "你还车时我们会从你卡上扣款。"},
+        {"gloss": "充电", "logic": "往电池里「装载」电量", "en": "The electric car takes hours to charge.", "zh": "这辆电动车要充好几个小时。"},
+        {"gloss": "指控，控告", "logic": "给某人「加上」一项罪名", "en": "He was charged with speeding.", "zh": "他被控超速。"}
+      ]
+    },
+    "quote": {
+      "core": "「标出一个数」——报个价，或标出处引一句话。",
+      "roots": [
+        {"part": "quot-", "meaning": "标数字、标多少（拉丁 quotare，来自 quot 多少）"}
+      ]
+    },
+    "surcharge": {
+      "core": "在原价「之上再加收」的一笔费。",
+      "roots": [
+        {"part": "sur-", "meaning": "在…之上（拉丁 super）"},
+        {"part": "charge", "meaning": "收费"}
+      ]
+    },
+    "collision": {
+      "core": "两个东西「撞到一起」，保险条款里的正式说法。",
+      "roots": [
+        {"part": "col-", "meaning": "一起（com-）"},
+        {"part": "-lis-", "meaning": "撞击（拉丁 laedere/laesus；同族 collide）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ]
+    },
+    "coverage": {
+      "core": "保险到底「盖住」哪些风险、赔多少的那个范围。",
+      "roots": [
+        {"part": "cover", "meaning": "覆盖、盖住（拉丁 cooperire 完全盖住）"},
+        {"part": "-age", "meaning": "名词后缀，表范围/集合"}
+      ]
+    },
+    "policy": {
+      "core": "机构定下的成套「方针」，或一份保险单。",
+      "senses": [
+        {"gloss": "政策，规定", "logic": "机构治理城邦式定下的成套方针", "en": "The fuel policy is full-to-full, no exceptions.", "zh": "油箱政策是满取满还，无例外。"},
+        {"gloss": "保险单", "logic": "另源自希腊 apodeixis「凭证」，指一份保险合约", "en": "Check what your own policy already covers.", "zh": "查查你自己的保单已经保了哪些。"}
+      ]
+    },
+    "refund": {
+      "core": "「把钱倒回去」——退还你多付或没用完的钱。",
+      "roots": [
+        {"part": "re-", "meaning": "回"},
+        {"part": "-fund", "meaning": "倒、注（拉丁 fundere/fusus 倒出）"}
+      ]
+    },
+    "estimate": {
+      "core": "「估个大概值」——可能浮动的估算价。",
+      "roots": [
+        {"part": "estim-", "meaning": "评估价值（拉丁 aestimare；同族 esteem 重视其价值）"},
+        {"part": "-ate", "meaning": "动词/名词后缀"}
+      ]
+    },
+    "waiver": {
+      "core": "白纸黑字「放弃某项权利」的那份免责条款。",
+      "roots": [
+        {"part": "waive", "meaning": "放弃权利（古法语 gaiver 抛弃）"},
+        {"part": "-er", "meaning": "名词后缀，表这份文件/行为"}
+      ]
+    },
+    "inspection": {
+      "core": "「往里仔细看」并记录在案的一次正式查验。",
+      "roots": [
+        {"part": "in-", "meaning": "向内"},
+        {"part": "-spect-", "meaning": "看（拉丁 specere；同族 aspect、respect、spectacle）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ]
+    },
+    "transmission": {
+      "core": "把发动机动力「送过去」到车轮的那套变速传动装置。",
+      "roots": [
+        {"part": "trans-", "meaning": "越过、穿过"},
+        {"part": "-miss-", "meaning": "送（拉丁 mittere/missus；同族 mission、transmit、submit）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ]
+    },
+    "extension": {
+      "core": "把租期「向外伸长」的那次延期。",
+      "roots": [
+        {"part": "ex-", "meaning": "向外"},
+        {"part": "-tens-", "meaning": "伸展（拉丁 tendere/tensus；同族 tension、extend、intend）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ]
+    },
+    "penalty": {
+      "core": "违约或犯规后「挨罚」要交的那笔钱或吃的亏。",
+      "roots": [
+        {"part": "pen-", "meaning": "惩罚（拉丁 poena；同族 penal、punish、pain 原义痛苦）"},
+        {"part": "-alty", "meaning": "名词后缀"}
+      ]
+    },
+    "contract": {
+      "core": "双方「拉到一起」达成、有法律约束的正式约定。",
+      "roots": [
+        {"part": "con-", "meaning": "一起"},
+        {"part": "-tract", "meaning": "拉（拉丁 trahere/tractus；同族 attract、extract、tractor）"}
+      ]
+    },
+    "reservation": {
+      "core": "「事先留住」一辆车/一个位子的那次预订。",
+      "roots": [
+        {"part": "re-", "meaning": "回、事先"},
+        {"part": "-serv-", "meaning": "保存、留住（拉丁 servare；同族 preserve、conserve）"},
+        {"part": "-ation", "meaning": "名词后缀"}
+      ]
+    },
+    "compact": {
+      "core": "「压紧成一体」——小巧紧凑的车级，也指压实。",
+      "roots": [
+        {"part": "com-", "meaning": "一起"},
+        {"part": "-pact", "meaning": "打紧、固定（拉丁 pangere/pactus；同族 pact 协定、impact 撞击）"}
+      ]
+    },
+    "condition": {
+      "core": "车/物「所处的状况好坏」，或一项约定的条件。",
+      "roots": [
+        {"part": "con-", "meaning": "一起"},
+        {"part": "-dit-", "meaning": "说、约定（拉丁 dicere/dictus；同族 predict、dictate）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "senses": [
+        {"gloss": "状况，车况", "logic": "某物当下所处的好坏状态", "en": "The car is in excellent condition.", "zh": "这辆车车况极好。"},
+        {"gloss": "条件，前提", "logic": "事先「说定」必须满足的约定", "en": "You can drive it on the condition that you're over 25.", "zh": "你能开它的前提是年满 25 岁。"}
+      ]
+    },
+    "decline": {
+      "core": "「向下倾」——婉言谢绝，或数量下降。",
+      "roots": [
+        {"part": "de-", "meaning": "向下"},
+        {"part": "-clin-", "meaning": "倾斜（拉丁 clinare；同族 incline、recline）"}
+      ],
+      "senses": [
+        {"gloss": "谢绝，拒绝", "logic": "把身子「向下侧过去」表示不接受", "en": "You can decline the extra insurance if you're covered.", "zh": "如果你已有保险，可以谢绝额外保险。"},
+        {"gloss": "下降，衰退", "logic": "曲线「向下倾斜」", "en": "Rental prices decline in the off-season.", "zh": "淡季租车价格会下降。"}
+      ]
+    },
+    "provide": {
+      "core": "「预先看到需求并备好」——按需供给。",
+      "roots": [
+        {"part": "pro-", "meaning": "预先、向前"},
+        {"part": "-vid-", "meaning": "看（拉丁 videre/visus；同族 vision、evident、visible）"}
+      ]
+    },
+    "require": {
+      "core": "「反复索要」——硬性要求、非有不可。",
+      "roots": [
+        {"part": "re-", "meaning": "加强"},
+        {"part": "-quire", "meaning": "寻找、索要（拉丁 quaerere；同族 inquire、acquire、request）"}
+      ]
+    },
+    "confirm": {
+      "core": "「使之更牢固」——把信息敲定、确认无误。",
+      "roots": [
+        {"part": "con-", "meaning": "加强"},
+        {"part": "-firm", "meaning": "使坚固（拉丁 firmare，来自 firm；同族 affirm、firmness）"}
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "liability",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˌlaɪəˈbɪləti/",
+      "subgroup": "noun",
+      "meaning": "n. （法律）责任，赔偿责任；负债；不利因素",
+      "core": "出了事你「有义务赔」的那份法律责任；租车里 liability insurance 保你撞伤别人的赔偿。",
+      "etymology": "liable（有责任的，古法语 lier「捆绑」，即被义务「绑住」）+ -ity 名词后缀。",
+      "roots": [
+        {"part": "li-", "meaning": "捆绑（拉丁 ligare；同族 ally、rely、liable）"},
+        {"part": "-ability", "meaning": "名词后缀，表「可…性/…状态」"}
+      ],
+      "phonetics": "重音在第三音节 /ˈbɪl/，五音节 /ˌlaɪ-ə-ˈbɪl-ə-ti/。",
+      "examples": [
+        {"en": "Basic liability coverage protects you if you injure someone.", "zh": "基本责任险在你撞伤别人时保障你。", "source": "造句"},
+        {"en": "liability insurance", "zh": "第三方责任险（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "responsibility", "ipa": "/rɪˌspɑːnsəˈbɪləti/", "gloss": "责任", "note": "responsibility 泛指该负的责任；liability 特指法律上要赔钱的那种责任"},
+        {"w": "asset", "ipa": "/ˈæset/", "gloss": "资产（反义）", "note": "会计里 liability 是负债，与 asset 资产相对"}
+      ],
+      "nuance": "liability 是法律/财务上要赔偿或偿还的责任；responsibility 是泛泛该负的责任。"
+    },
+    {
+      "word": "deductible",
+      "levels": ["托福", "场景"],
+      "ipa": "/dɪˈdʌktəbl/",
+      "subgroup": "noun",
+      "meaning": "n. （保险）免赔额，自付额　adj. 可扣除的",
+      "core": "出险后要你自己先掏的那部分钱，超过它保险才赔。",
+      "etymology": "deduct（扣除，拉丁 de- 向下 + ducere 引导 →「引下来、减掉」）+ -ible。",
+      "roots": [
+        {"part": "de-", "meaning": "向下、离开"},
+        {"part": "-duct-", "meaning": "引导（拉丁 ducere；同族 conduct、reduce、produce）"},
+        {"part": "-ible", "meaning": "可…的"}
+      ],
+      "phonetics": "重音在第二音节 /ˈdʌk/，四音节 /dɪ-ˈdʌk-tə-bl/。",
+      "examples": [
+        {"en": "This waiver lowers your deductible to zero.", "zh": "买这份免责险能把你的自付额降到零。", "source": "造句"},
+        {"en": "a $500 deductible", "zh": "500 美元免赔额（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "excess", "ipa": "/ˈekses/", "gloss": "免赔额（英）", "note": "英式保险把免赔额叫 excess；美式叫 deductible，指同一笔自付钱"}
+      ],
+      "nuance": "美式免赔额叫 deductible；英式叫 excess，都是保险赔付前你先自付的部分。"
+    },
+    {
+      "word": "theft",
+      "levels": ["六级", "场景"],
+      "ipa": "/θeft/",
+      "subgroup": "noun",
+      "meaning": "n. 盗窃，偷窃（行为）",
+      "core": "车或车上东西「被偷走」这件事；保险条款常单列 theft 一项。",
+      "etymology": "古英语 þiefþ，来自 thief（贼）+ 抽象名词后缀 -t。与 thief、thieve 同族。",
+      "phonetics": "开头 /θ/ 咬舌，单音节 /θeft/，别读成 /teft/ 或 /seft/。",
+      "examples": [
+        {"en": "Does the coverage include theft of the vehicle?", "zh": "这份保险包含车辆被盗吗？", "source": "造句"},
+        {"en": "loss and theft protection", "zh": "丢失与盗窃保障（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "robbery", "ipa": "/ˈrɑːbəri/", "gloss": "抢劫", "note": "theft 是趁人不备偷走；robbery 是当面用暴力/威胁抢，罪名更重"}
+      ],
+      "nuance": "theft 是偷窃（不当面）；robbery 是当面暴力抢夺，二者法律定性不同。"
+    },
+    {
+      "word": "vandalism",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˈvændəlɪzəm/",
+      "subgroup": "noun",
+      "meaning": "n. 人为破坏，故意毁损（公物/他人财物）",
+      "core": "有人「故意划车、砸窗」这类蓄意毁物；保险里和 theft 常并列。",
+      "etymology": "源自 Vandals（汪达尔人，5 世纪洗劫罗马的日耳曼部族）+ -ism，借其「野蛮破坏」的名声造词。",
+      "phonetics": "重音在第一音节 /ˈvæn/，四音节 /ˈvæn-də-lɪ-zəm/。",
+      "examples": [
+        {"en": "The policy covers theft and vandalism.", "zh": "这份保险承保盗窃和人为破坏。", "source": "造句"},
+        {"en": "an act of vandalism", "zh": "一起蓄意毁损行为（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "damage", "ipa": "/ˈdæmɪdʒ/", "gloss": "损坏", "note": "vandalism 特指「故意」毁物；damage 是任何损坏（含意外磕碰）"}
+      ],
+      "nuance": "vandalism 强调「蓄意」毁坏他人财物；damage 泛指一切损坏，不分故意与否。"
+    },
+    {
+      "word": "engine",
+      "levels": ["六级"],
+      "ipa": "/ˈendʒɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 发动机，引擎；机车",
+      "core": "车的「心脏」——把燃料变成动力的那台机器。",
+      "etymology": "拉丁语 ingenium「天生的才能、巧思」→ 古法语 engin「巧妙装置」，后专指机械引擎。与 ingenious（精巧的）同源。",
+      "roots": [
+        {"part": "in-", "meaning": "在内"},
+        {"part": "-gen-", "meaning": "生、产生（拉丁 gignere；同族 generate、genius、ingenious）"}
+      ],
+      "phonetics": "重音在第一音节 /ˈen/，两音节 /ˈen-dʒɪn/，注意 g 读 /dʒ/。",
+      "examples": [
+        {"en": "There's a warning light on for the engine.", "zh": "发动机故障灯亮了。", "source": "造句"},
+        {"en": "start the engine", "zh": "发动引擎（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "motor", "ipa": "/ˈmoʊtər/", "gloss": "马达，电机", "note": "motor 多指电动机；engine 多指内燃机。日常两者常混用（如 motorist）"}
+      ],
+      "nuance": "engine 多指烧油的内燃机；motor 多指电动马达，电动车常说 motor。"
+    },
+    {
+      "word": "wheel",
+      "levels": ["基础"],
+      "ipa": "/wiːl/",
+      "subgroup": "noun",
+      "meaning": "n. 车轮；方向盘　vt. 推（带轮的东西）",
+      "core": "让车滚起来的「轮子」；the wheel 单说常指方向盘。",
+      "etymology": "古英语 hwēol「轮」，与希腊 kyklos（圈，cycle 之源）同一印欧词根，本义「转动的圆」。",
+      "phonetics": "单音节长音 /wiːl/，与 while 不同（while 有 /aɪ/）。",
+      "examples": [
+        {"en": "Keep both hands on the wheel at all times.", "zh": "全程双手握住方向盘。", "source": "造句"},
+        {"en": "behind the wheel", "zh": "开着车、在驾驶（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "steering wheel", "ipa": "/ˈstɪrɪŋ wiːl/", "gloss": "方向盘（全称）", "note": "the wheel 口语单指方向盘；轮胎那个轮子说 wheel/tire"}
+      ],
+      "nuance": "wheel 是车轮；口语 behind the wheel / at the wheel 里的 wheel 指方向盘。",
+      "senses": [
+        {"gloss": "车轮", "logic": "转动着让车前进的圆盘", "en": "The front wheel is slightly out of alignment.", "zh": "前轮有点定位不准。"},
+        {"gloss": "方向盘（the wheel）", "logic": "驾驶座前那个转动控制方向的轮", "en": "She got behind the wheel and drove off.", "zh": "她坐上驾驶位开走了。"}
+      ]
+    },
+    {
+      "word": "tire",
+      "levels": ["基础"],
+      "ipa": "/ˈtaɪər/",
+      "subgroup": "noun",
+      "meaning": "n. 轮胎（美；英 tyre）　vi. 使疲倦",
+      "core": "包在车轮外面那圈「充气橡胶」；漏气叫 flat tire。",
+      "etymology": "可能是 attire（装配、装束）的缩略——轮胎是给车轮「穿上」的外圈。美式拼 tire，英式拼 tyre。",
+      "phonetics": "双音节 /ˈtaɪ-ər/，双元音 /aɪ/ + 卷舌；与 tower 不同。",
+      "examples": [
+        {"en": "One of the tires looks a little low on air.", "zh": "有个轮胎看着有点气不足。", "source": "造句"},
+        {"en": "a flat tire", "zh": "爆胎、瘪胎（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "tyre", "ipa": "/ˈtaɪər/", "gloss": "轮胎（英式拼写）", "note": "同一个词同一读音，美式 tire = 英式 tyre"}
+      ],
+      "nuance": "美式拼 tire，英式拼 tyre，读音相同；瘪了叫 flat tire。"
+    },
+    {
+      "word": "flat tire",
+      "levels": ["基础", "口语"],
+      "ipa": "/flæt ˈtaɪər/",
+      "subgroup": "noun",
+      "meaning": "n. 瘪胎，爆胎（漏气的轮胎）",
+      "core": "轮胎漏光气「压扁了」的抛锚状况，得换备胎或叫救援。",
+      "etymology": "flat（扁平的、瘪的）+ tire（轮胎）。字面「扁掉的胎」。",
+      "phonetics": "flat /flæt/ 元音 /æ/，tire /ˈtaɪər/。",
+      "examples": [
+        {"en": "I got a flat tire on the highway last night.", "zh": "我昨晚在高速上爆胎了。", "source": "造句"},
+        {"en": "change a flat tire", "zh": "换爆掉的轮胎（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "puncture", "ipa": "/ˈpʌŋktʃər/", "gloss": "扎破，刺穿（导致漏气）", "note": "puncture 是被扎破这个原因；flat tire 是扎破后瘪掉的结果状态"}
+      ],
+      "nuance": "flat tire 是胎瘪了的状态；puncture 是造成它的「扎穿」动作/破洞。"
+    },
+    {
+      "word": "diesel",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˈdiːzl/",
+      "subgroup": "noun",
+      "meaning": "n. 柴油；柴油发动机　adj. 柴油的",
+      "core": "和汽油不同的另一种燃料，加错油会伤发动机——取车要问清。",
+      "etymology": "以发明柴油机的德国工程师 Rudolf Diesel（鲁道夫·狄塞尔）命名，是个专名转普通名词。",
+      "phonetics": "重音在第一音节 /ˈdiː/，s 读浊音 /z/：/ˈdiː-zl/。",
+      "examples": [
+        {"en": "This one takes diesel, not regular gas.", "zh": "这辆加柴油，不是普通汽油。", "source": "造句"},
+        {"en": "a diesel engine", "zh": "柴油发动机（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "gasoline", "ipa": "/ˈɡæsəliːn/", "gloss": "汽油（另一类燃料）", "note": "diesel 与 gasoline 是两种不同燃料，加油口常有标识，别加错"}
+      ],
+      "nuance": "diesel 是柴油；gasoline/gas 是汽油，两者不通用，加错会损坏发动机。"
+    },
+    {
+      "word": "hybrid",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈhaɪbrɪd/",
+      "subgroup": "noun",
+      "meaning": "n. 混合动力车；杂交种，混合物　adj. 混合的",
+      "core": "既有汽油机又有电动机、能省油的「混动车」。",
+      "etymology": "拉丁语 hybrida「杂交后代（尤指野猪与家猪）」，引申为任何「两种东西的混合体」。",
+      "phonetics": "重音在第一音节 /ˈhaɪ/，两音节 /ˈhaɪ-brɪd/。",
+      "examples": [
+        {"en": "A hybrid gets great mileage in the city.", "zh": "混动车在市区油耗表现很好。", "source": "造句"},
+        {"en": "a hybrid car", "zh": "混合动力车（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "electric", "ipa": "/ɪˈlektrɪk/", "gloss": "纯电动（车）", "note": "hybrid 是油电混合仍需加油；electric（EV）是纯电、要充电，两者不同"}
+      ],
+      "nuance": "hybrid 是油电混动（还要加油）；纯电动车叫 electric/EV（只充电）。"
+    },
+    {
+      "word": "gauge",
+      "levels": ["托福"],
+      "ipa": "/ɡeɪdʒ/",
+      "subgroup": "noun",
+      "meaning": "n. 仪表，量规（如油量表）　vt. 测量，估量",
+      "core": "仪表盘上「读数值」的那块表，如 fuel gauge 油量表。",
+      "etymology": "古北法语 gauge「标准量度」。拼写不规则（au 读 /eɪ/），常被拼错为 guage。",
+      "phonetics": "单音节 /ɡeɪdʒ/，读音像 gage；au 在这儿读 /eɪ/ 而非 /ɔː/。",
+      "examples": [
+        {"en": "The fuel gauge shows the tank is nearly full.", "zh": "油量表显示油箱快满了。", "source": "造句"},
+        {"en": "fuel / tire-pressure gauge", "zh": "油量表／胎压表（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "meter", "ipa": "/ˈmiːtər/", "gloss": "计量表", "note": "gauge 多指显示某状态的指针表（油量、胎压）；meter 多指累计计数（里程、电表）"}
+      ],
+      "nuance": "gauge 是显示当前值的指针表（油量、胎压）；meter 偏累计计数（里程表 odometer）。"
+    },
+    {
+      "word": "pump",
+      "levels": ["托福", "场景"],
+      "ipa": "/pʌmp/",
+      "subgroup": "noun",
+      "meaning": "n. 泵；加油机　vt. 抽（气/液），打气",
+      "etymology": "中古荷/低地德语 pumpe，拟声词，模仿抽吸声。加油站的加油机就叫 gas pump。",
+      "core": "加油站里「抽油打进油箱」的那台加油机，也指打气泵。",
+      "phonetics": "单音节 /pʌmp/，结尾 -mp 双辅音收尾。",
+      "examples": [
+        {"en": "Pull up to pump number four to fill up.", "zh": "把车停到 4 号加油机去加油。", "source": "造句"},
+        {"en": "gas pump", "zh": "加油机（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "nozzle", "ipa": "/ˈnɑːzl/", "gloss": "油枪，喷嘴", "note": "pump 是整台加油机；nozzle 是你握在手里插进油箱口的那截油枪"}
+      ],
+      "nuance": "pump 是整台加油机；nozzle 是插进油箱口的油枪嘴，属于 pump 的一部分。"
+    },
+    {
+      "word": "curb",
+      "levels": ["六级"],
+      "ipa": "/kɜːrb/",
+      "subgroup": "noun",
+      "meaning": "n. 路缘，马路牙子　vt. 抑制，约束",
+      "core": "人行道边那道「石台阶边」；停车蹭到 curb 会磨轮毂。",
+      "etymology": "拉丁语 curvus「弯曲的」→ 古法语 courbe。原指弯的东西，引申为路边石和「约束」。",
+      "phonetics": "单音节 /kɜːrb/，美音卷舌；英式拼 kerb（路缘义）。",
+      "examples": [
+        {"en": "Don't scrape the wheels against the curb when parking.", "zh": "停车时别让车轮蹭到路缘石。", "source": "造句"},
+        {"en": "pull up to the curb", "zh": "靠边停到路缘（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "kerb", "ipa": "/kɜːrb/", "gloss": "路缘（英式拼写）", "note": "路缘义美式拼 curb，英式拼 kerb；「抑制」义两地都拼 curb"}
+      ],
+      "nuance": "curb 名词是路缘石（英拼 kerb）；作动词是「抑制、约束」（如 curb spending）。"
+    },
+    {
+      "word": "intersection",
+      "levels": ["托福"],
+      "ipa": "/ˌɪntərˈsekʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 十字路口，交叉口；交集",
+      "core": "两条路「交叉切过」的路口，导航里最常报的点。",
+      "etymology": "拉丁语 inter-（在…之间）+ secare/sect-（切）→「相互切过之处」。同族 section、insect、dissect。",
+      "roots": [
+        {"part": "inter-", "meaning": "在…之间、相互"},
+        {"part": "-sect-", "meaning": "切（拉丁 secare；同族 section、insect、dissect）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈsek/，四音节 /ˌɪn-tər-ˈsek-ʃn/。",
+      "examples": [
+        {"en": "Turn left at the next intersection.", "zh": "在下个路口左转。", "source": "造句"},
+        {"en": "at the intersection", "zh": "在十字路口（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "junction", "ipa": "/ˈdʒʌŋkʃn/", "gloss": "交叉口，路口（英）", "note": "junction 是英式常用词（尤指高速出入口）；美式路口多说 intersection"}
+      ],
+      "nuance": "intersection 是美式常用的「十字路口」；junction 英式常用，也指高速的匝道口。"
+    },
+    {
+      "word": "pedestrian",
+      "levels": ["托福", "场景"],
+      "ipa": "/pəˈdestriən/",
+      "subgroup": "noun",
+      "meaning": "n. 行人　adj. 步行的；平庸的",
+      "core": "路上「靠脚走」的行人——开车尤其要礼让的对象。",
+      "etymology": "拉丁语 pes/ped-（脚）+ -estrian。同族 pedal（脚踏板）、pedestal、centipede（百足虫）。",
+      "roots": [
+        {"part": "ped-", "meaning": "脚（拉丁 pes/pedis；同族 pedal、centipede、pedestal）"},
+        {"part": "-estrian", "meaning": "…的人（类比 equestrian 骑马者）"}
+      ],
+      "phonetics": "重音在第二音节 /ˈdes/，四音节 /pə-ˈdes-tri-ən/。",
+      "examples": [
+        {"en": "Watch for pedestrians in the crosswalk.", "zh": "注意人行横道上的行人。", "source": "造句"},
+        {"en": "a pedestrian crossing", "zh": "人行横道（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "walker", "ipa": "/ˈwɔːkər/", "gloss": "步行者", "note": "walker 更口语随意；pedestrian 是交通标识/法规里的正式用词"}
+      ],
+      "nuance": "pedestrian 是交通语境的正式「行人」；walker 更口语。形容词还可表「平庸乏味的」。"
+    },
+    {
+      "word": "detour",
+      "levels": ["六级"],
+      "ipa": "/ˈdiːtʊr/",
+      "subgroup": "noun",
+      "meaning": "n. 绕行路，迂回道　vt./vi. 绕道",
+      "core": "前方路断时「绕开走」的那条改道路线。",
+      "etymology": "法语 détour「转向、迂回」，de-（离开）+ tour（转，来自 tourner 转）→「转开绕行」。与 tour、turn 同族。",
+      "roots": [
+        {"part": "de-", "meaning": "离开"},
+        {"part": "-tour", "meaning": "转（法语 tourner；同族 tour、turn、return）"}
+      ],
+      "phonetics": "美音重音在前 /ˈdiː-tʊr/；也可读 /dɪˈtʊr/。",
+      "examples": [
+        {"en": "There's a detour ahead because of roadwork.", "zh": "前方施工要绕行。", "source": "造句"},
+        {"en": "take a detour", "zh": "绕道走（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "diversion", "ipa": "/daɪˈvɜːrʒn/", "gloss": "绕行路（英）", "note": "英式路牌写 diversion；美式写 detour，指同一条临时改道"}
+      ],
+      "nuance": "美式绕行路叫 detour；英式叫 diversion，都是临时改道。"
+    },
+    {
+      "word": "registration",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˌredʒɪˈstreɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 车辆登记证；注册，登记",
+      "core": "证明这辆车「合法登记在册」的行车证，警察查车会要。",
+      "etymology": "拉丁语 re-（回）+ gerere/gest-（承载、记录）→ register「登记簿」+ -ation。",
+      "roots": [
+        {"part": "re-", "meaning": "回、反复"},
+        {"part": "-gest-/-gist-", "meaning": "承载、记录（拉丁 gerere；同族 register、digest、gesture）"},
+        {"part": "-ation", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第四音节 /ˈstreɪ/，五音节 /ˌre-dʒɪ-ˈstreɪ-ʃn/。",
+      "examples": [
+        {"en": "The registration is in the glove box.", "zh": "行车证在手套箱里。", "source": "造句"},
+        {"en": "vehicle registration", "zh": "车辆登记证（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "logbook", "ipa": "/ˈlɔːɡbʊk/", "gloss": "行车证（英）", "note": "英国旧称 logbook（V5C）；美式常说 registration，指车辆登记文件"}
+      ],
+      "nuance": "registration 是车辆登记证（美式常用）；也泛指任何「注册/登记」行为。"
+    },
+    {
+      "word": "breakdown",
+      "levels": ["六级", "场景"],
+      "ipa": "/ˈbreɪkdaʊn/",
+      "subgroup": "noun",
+      "meaning": "n. 抛锚，故障；（费用）明细；崩溃",
+      "core": "车「半路坏掉走不了」的抛锚；也指把费用一项项拆开的明细。",
+      "etymology": "动词短语 break down（坏掉、拆解）名词化。break（破）+ down（下、彻底）。",
+      "phonetics": "重音在第一音节 /ˈbreɪk/，两部分 break+down。",
+      "examples": [
+        {"en": "In case of a breakdown, call roadside assistance.", "zh": "万一抛锚，就打道路救援。", "source": "造句"},
+        {"en": "a breakdown of the charges", "zh": "费用明细（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "malfunction", "ipa": "/ˌmælˈfʌŋkʃn/", "gloss": "故障，失灵", "note": "breakdown 强调车彻底趴窝走不了；malfunction 指某部件运作失常，未必抛锚"}
+      ],
+      "nuance": "breakdown 是车彻底抛锚；也可指账单的「逐项明细」。malfunction 是部件失灵。"
+    },
+    {
+      "word": "tow",
+      "levels": ["托福", "场景"],
+      "ipa": "/toʊ/",
+      "subgroup": "verb",
+      "meaning": "vt. 拖，拽（车）　n. 拖车（服务）",
+      "core": "车坏了或违停，被拖车「拖走」。",
+      "etymology": "古英语 togian「拉、拽」，与 tug（拖拽）同源。注意别和 toe（脚趾）混，两者同音 /toʊ/。",
+      "phonetics": "单音节 /toʊ/，与 toe、tow 同音；w 不发音。",
+      "examples": [
+        {"en": "If it breaks down, we'll tow it to the nearest garage.", "zh": "如果抛锚，我们会把它拖到最近的修理厂。", "source": "造句"},
+        {"en": "tow truck", "zh": "拖车（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "haul", "ipa": "/hɔːl/", "gloss": "拖运，拉运", "note": "haul 强调费力搬运（常指货物长距离）；tow 特指用绳/杆拖着车走"}
+      ],
+      "nuance": "tow 是用拖车拖着车走；haul 泛指费力搬运货物。抛锚常叫 tow truck（拖车）。"
+    },
+    {
+      "word": "scrape",
+      "levels": ["托福"],
+      "ipa": "/skreɪp/",
+      "subgroup": "verb",
+      "meaning": "vt./vi. 刮蹭，擦（掉）　n. 擦痕",
+      "core": "车身「蹭过硬物」刮掉一道漆，比 scratch 面积更大更粗。",
+      "etymology": "古北欧语 skrapa「刮、抓」，拟声词，模仿硬物摩擦声。与 scratch 近义同源感。",
+      "phonetics": "单音节 /skreɪp/，开头 /skr/ 三连辅音，双元音 /eɪ/。",
+      "examples": [
+        {"en": "I accidentally scraped the side against a post.", "zh": "我不小心把车侧面蹭到了柱子上。", "source": "造句"},
+        {"en": "scrape the bumper", "zh": "刮蹭保险杠（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "scratch", "ipa": "/skrætʃ/", "gloss": "划痕", "note": "scratch 是细线状划痕；scrape 是大面积刮擦掉漆，范围更广"}
+      ],
+      "nuance": "scratch 是细的划痕；scrape 是蹭过一片、掉漆面积更大的刮擦。"
+    },
+    {
+      "word": "accelerate",
+      "levels": ["托福"],
+      "ipa": "/əkˈseləreɪt/",
+      "subgroup": "verb",
+      "meaning": "vt./vi. 加速，提速；促进",
+      "core": "踩油门让车「越开越快」。",
+      "etymology": "拉丁语 ad-（向）+ celer（快速的）→ accelerare「使加快」。同族 celerity（敏捷）、decelerate（减速）。",
+      "roots": [
+        {"part": "ac-", "meaning": "向、朝（ad- 的变体）"},
+        {"part": "-celer-", "meaning": "快（拉丁 celer；同族 celerity、decelerate）"},
+        {"part": "-ate", "meaning": "动词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈsel/，五音节 /ək-ˈsel-ə-reɪt/。",
+      "examples": [
+        {"en": "The car accelerates smoothly onto the highway.", "zh": "这车上高速时提速很平顺。", "source": "造句"},
+        {"en": "accelerate onto the ramp", "zh": "加速驶上匝道（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "speed up", "ipa": "/spiːd ʌp/", "gloss": "加速（口语）", "note": "speed up 是口语说法；accelerate 更正式，也指抽象「加快进程」"}
+      ],
+      "nuance": "accelerate 是正式的「加速」（也用于抽象促进）；口语常说 speed up。反义 decelerate/slow down。"
+    },
+    {
+      "word": "merge",
+      "levels": ["六级", "场景"],
+      "ipa": "/mɜːrdʒ/",
+      "subgroup": "verb",
+      "meaning": "vi./vt. 并线，汇入；合并",
+      "core": "从匝道「并进」主路车流，或两者合为一体。",
+      "etymology": "拉丁语 mergere「浸入、沉入」→ 引申为「汇入、融为一体」。同族 emerge（浮现）、submerge（淹没）、immerse。",
+      "roots": [
+        {"part": "merg-", "meaning": "浸入、沉没（拉丁 mergere；同族 emerge、submerge、immerse）"}
+      ],
+      "phonetics": "单音节 /mɜːrdʒ/，美音卷舌，结尾 /dʒ/。",
+      "examples": [
+        {"en": "Signal before you merge onto the freeway.", "zh": "并入高速前先打转向灯。", "source": "造句"},
+        {"en": "merge into traffic", "zh": "并入车流（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "blend in", "ipa": "/blend ɪn/", "gloss": "融入", "note": "merge 特指车流并线或组织合并；blend in 泛指融入、混为一体"}
+      ],
+      "nuance": "merge 是车辆并线汇入（也指公司合并）；blend in 泛指融入背景/群体。"
+    },
+    {
+      "word": "spacious",
+      "levels": ["六级"],
+      "ipa": "/ˈspeɪʃəs/",
+      "subgroup": "desc",
+      "meaning": "adj. 宽敞的，空间大的",
+      "core": "车内/后备箱「地方大、坐得开」，租大车时的卖点词。",
+      "etymology": "拉丁语 spatium（空间）→ space + -ious（多…的）。字面「空间多的」。",
+      "roots": [
+        {"part": "spac-", "meaning": "空间（拉丁 spatium；同族 space、spatial）"},
+        {"part": "-ious", "meaning": "形容词后缀，表「充满…的」"}
+      ],
+      "phonetics": "重音在第一音节 /ˈspeɪ/，两音节 /ˈspeɪ-ʃəs/，-cious 读 /ʃəs/。",
+      "examples": [
+        {"en": "The SUV is spacious enough for five and luggage.", "zh": "这辆 SUV 够宽敞，能坐五人还放行李。", "source": "造句"},
+        {"en": "a spacious trunk", "zh": "宽敞的后备箱（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "roomy", "ipa": "/ˈruːmi/", "gloss": "宽敞的（口语）", "note": "roomy 更口语随意；spacious 略正式，广告/描述里常用"}
+      ],
+      "nuance": "spacious 是略正式的「宽敞」；roomy 更口语。反义 cramped（狭窄拥挤）。"
+    },
+    {
+      "word": "refundable",
+      "levels": ["托福", "场景"],
+      "ipa": "/rɪˈfʌndəbl/",
+      "subgroup": "desc",
+      "meaning": "adj. 可退款的，可退还的",
+      "core": "这笔钱「退得回来」——取消或未用可拿回。",
+      "etymology": "refund（退款，re- 回 + fund 倒出）+ -able（可…的）。",
+      "roots": [
+        {"part": "re-", "meaning": "回"},
+        {"part": "-fund", "meaning": "倒、注（拉丁 fundere 倒出）"},
+        {"part": "-able", "meaning": "可…的"}
+      ],
+      "phonetics": "重音在第二音节 /ˈfʌn/，四音节 /rɪ-ˈfʌn-də-bl/。",
+      "examples": [
+        {"en": "The prepaid rate is cheaper but non-refundable.", "zh": "预付价更便宜，但不可退款。", "source": "造句"},
+        {"en": "fully refundable deposit", "zh": "全额可退押金（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "non-refundable", "ipa": "/ˌnɑːn rɪˈfʌndəbl/", "gloss": "不可退款的（反义）", "note": "non-refundable 常见于低价预付订单，退不了钱；refundable 可退"}
+      ],
+      "nuance": "refundable 可退款；non-refundable 不可退（低价预付常见），订车前要看清。"
+    },
+    {
+      "word": "comprehensive",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˌkɑːmprɪˈhensɪv/",
+      "subgroup": "desc",
+      "meaning": "adj. 全面的，综合的；（保险）综合险的",
+      "core": "「什么都涵盖」——最全的那档保险或方案。",
+      "etymology": "拉丁语 com-（一起）+ prehendere（抓住）→ comprehend「全都抓住=理解/涵盖」+ -ive。同族 apprehend、prehensile。",
+      "roots": [
+        {"part": "com-", "meaning": "一起、完全"},
+        {"part": "-prehens-", "meaning": "抓住（拉丁 prehendere；同族 comprehend、apprehend）"},
+        {"part": "-ive", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈhen/，四音节 /ˌkɑːm-prɪ-ˈhen-sɪv/。",
+      "examples": [
+        {"en": "Comprehensive coverage protects against almost everything.", "zh": "综合险几乎什么都保。", "source": "造句"},
+        {"en": "comprehensive insurance", "zh": "综合险、全险（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "full coverage", "ipa": "/fʊl ˈkʌvərɪdʒ/", "gloss": "全险（口语）", "note": "口语说 full coverage；comprehensive 是保单上的正式档次名"}
+      ],
+      "nuance": "comprehensive（保险）是涵盖最广的一档；口语里常笼统说 full coverage。"
+    },
+    {
+      "word": "eligible",
+      "levels": ["托福", "场景"],
+      "ipa": "/ˈelɪdʒəbl/",
+      "subgroup": "desc",
+      "meaning": "adj. 有资格的，符合条件的",
+      "core": "「够格、够条件」——比如年满某岁才有资格租车。",
+      "etymology": "拉丁语 e-（出）+ legere（挑选）→ eligere「选出来」→「够格被选中的」+ -ible。同族 elect、select、legible。",
+      "roots": [
+        {"part": "e-", "meaning": "出、向外（ex-）"},
+        {"part": "-lig-", "meaning": "挑选、读（拉丁 legere；同族 elect、select、legible）"},
+        {"part": "-ible", "meaning": "可…的"}
+      ],
+      "phonetics": "重音在第一音节 /ˈel/，四音节 /ˈel-ɪ-dʒə-bl/。",
+      "examples": [
+        {"en": "You're eligible for a discount if you're a member.", "zh": "你是会员的话有资格享折扣。", "source": "造句"},
+        {"en": "be eligible for", "zh": "有资格获得…（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "qualified", "ipa": "/ˈkwɑːlɪfaɪd/", "gloss": "合格的，够资格的", "note": "eligible 强调「符合规定条件」（年龄、身份）；qualified 强调「有能力/资历」"}
+      ],
+      "nuance": "eligible 是符合规定条件（够格被选）；qualified 偏有相应能力或资历。"
+    },
+    {
+      "word": "adjacent",
+      "levels": ["托福"],
+      "ipa": "/əˈdʒeɪsnt/",
+      "subgroup": "desc",
+      "meaning": "adj. 相邻的，紧挨着的",
+      "core": "「就挨在旁边」——如取车点紧邻航站楼。",
+      "etymology": "拉丁语 ad-（向）+ jacere/jacent-（躺、卧）→「躺在旁边=紧挨」。同族 adjoin、eject、project（都含 jac-/ject- 投掷）。",
+      "roots": [
+        {"part": "ad-", "meaning": "向、朝"},
+        {"part": "-jacent", "meaning": "躺、卧（拉丁 jacere；同族 adjoin、circumjacent）"}
+      ],
+      "phonetics": "重音在第二音节 /ˈdʒeɪ/，三音节 /ə-ˈdʒeɪ-snt/。",
+      "examples": [
+        {"en": "The rental lot is adjacent to the terminal.", "zh": "租车停车场紧邻航站楼。", "source": "造句"},
+        {"en": "adjacent to", "zh": "与…相邻（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "next to", "ipa": "/nekst tuː/", "gloss": "紧挨着（口语）", "note": "next to 是口语；adjacent 更正式，指两者相接或紧邻"}
+      ],
+      "nuance": "adjacent 是正式的「相邻/紧挨」；口语说 next to。强调两者相接或非常靠近。"
+    },
+    {
+      "word": "overnight",
+      "levels": ["六级"],
+      "ipa": "/ˌoʊvərˈnaɪt/",
+      "subgroup": "desc",
+      "meaning": "adj./adv. 过夜的，一整夜的；（费用）隔夜的",
+      "core": "「过一夜」——租车里 overnight parking/停放常另计一天费。",
+      "etymology": "over（贯穿）+ night（夜）→「跨越整夜」。",
+      "phonetics": "重音在第三音节 /ˈnaɪt/（副词）；作定语时重音可前移 /ˈoʊvərnaɪt/。",
+      "examples": [
+        {"en": "If you keep it overnight, that counts as an extra day.", "zh": "如果你把车留过夜，就算多一天。", "source": "造句"},
+        {"en": "overnight rental", "zh": "隔夜租车（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "same-day", "ipa": "/ˌseɪmˈdeɪ/", "gloss": "当天的（反义）", "note": "same-day 是当天取还；overnight 是过夜，常触发多一天计费"}
+      ],
+      "nuance": "overnight 指过夜（常多算一天）；same-day 是当天取还，二者计费不同。"
+    },
+    {
+      "word": "run out of gas",
+      "levels": ["基础", "口语"],
+      "ipa": "/rʌn aʊt əv ɡæs/",
+      "subgroup": "phrase",
+      "meaning": "把油开光，没油了（抛在半路）",
+      "core": "油箱「见底、开到没油」，车熄火动不了。",
+      "etymology": "run out of（用光…）+ gas（汽油）。run out 字面「跑到尽头」，引申「耗尽」。",
+      "phonetics": "run out 连读，重音在 out；gas /ɡæs/。",
+      "examples": [
+        {"en": "We almost ran out of gas in the middle of nowhere.", "zh": "我们差点在前不着村的地方把油开光。", "source": "造句"},
+        {"en": "run low on gas", "zh": "油量偏低（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "run on empty", "ipa": "/rʌn ɑːn ˈempti/", "gloss": "油快见底还在开", "note": "run on empty 是油量表到 E 还硬撑着开；run out of gas 是真的耗尽熄火"}
+      ],
+      "nuance": "run out of gas 是彻底没油趴窝；run on empty 是快没油但还在开。"
+    },
+    {
+      "word": "drop-off fee",
+      "levels": ["基础", "场景"],
+      "ipa": "/ˈdrɑːpɔːf fiː/",
+      "subgroup": "phrase",
+      "meaning": "异地还车费（在非取车点还车加收）",
+      "core": "在 A 地取、B 地还时，车行加收的「异地还车费」。",
+      "etymology": "drop-off（还车/放下，drop 放下 + off）+ fee（费用）。单程租车最常见的附加费。",
+      "phonetics": "drop-off 重音在前 /ˈdrɑːpɔːf/，fee /fiː/。",
+      "examples": [
+        {"en": "Returning it in another city adds a drop-off fee.", "zh": "在另一个城市还车会加收异地还车费。", "source": "造句"},
+        {"en": "one-way drop-off fee", "zh": "单程异地还车费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "one-way fee", "ipa": "/wʌn weɪ fiː/", "gloss": "单程费", "note": "one-way fee 与 drop-off fee 常指同一笔——异地还车加收的钱"}
+      ],
+      "nuance": "drop-off fee 是异地还车费，异地租还（one-way）时才有；同地取还无此费。"
+    },
+    {
+      "word": "check the fuel level",
+      "levels": ["基础", "场景"],
+      "ipa": "/tʃek ðə ˈfjuːəl ˈlevl/",
+      "subgroup": "phrase",
+      "meaning": "查看油量（取还车时核对油表）",
+      "core": "取还车时「看一眼油表刻度」，避免油量争议被扣钱。",
+      "etymology": "check（核对）+ fuel level（油量水平，level 指刻度高低）。取车/还车走查流程的一步。",
+      "phonetics": "check /tʃek/，fuel /ˈfjuːəl/，level /ˈlevl/。",
+      "examples": [
+        {"en": "Let's check the fuel level together before you leave.", "zh": "你走之前我们一起核对一下油量。", "source": "造句"},
+        {"en": "note the fuel level", "zh": "记录油量（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "read the gauge", "ipa": "/riːd ðə ɡeɪdʒ/", "gloss": "读油量表", "note": "read the gauge 强调看仪表读数；check the fuel level 强调核对油量高低"}
+      ],
+      "nuance": "check the fuel level 是核对油量刻度；油表本身叫 fuel gauge，读它就是 read the gauge。"
+    },
+    {
+      "word": "no availability",
+      "levels": ["基础", "场景"],
+      "ipa": "/noʊ əˌveɪləˈbɪləti/",
+      "subgroup": "phrase",
+      "meaning": "无车可租，无空位（约满/租完）",
+      "core": "柜台告知「这时段/这车型没车了」的说法。",
+      "etymology": "no（没有）+ availability（可用性，available 名词形式）。柜台婉拒时的高频表达。",
+      "phonetics": "availability 重音在第四音节 /ˈbɪl/：/ə-ˌveɪ-lə-ˈbɪl-ə-ti/。",
+      "examples": [
+        {"en": "I'm sorry, there's no availability for that class today.", "zh": "抱歉，那个车级今天没车了。", "source": "造句"},
+        {"en": "check availability", "zh": "查询是否有车（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fully booked", "ipa": "/ˈfʊli bʊkt/", "gloss": "订满的", "note": "fully booked 强调预约全满；no availability 强调此刻没有可租的车/位"}
+      ],
+      "nuance": "no availability 指当下无车/无位可租；fully booked 强调已被预订满。"
+    }
+  ]
+}

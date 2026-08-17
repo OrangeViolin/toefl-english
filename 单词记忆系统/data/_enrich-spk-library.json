@@ -1,0 +1,1804 @@
+{
+  "enrich": {
+    "library": {
+      "core": "library=「书的聚集地」，核心是可外借的公共藏书处。",
+      "roots": [
+        {
+          "part": "libr",
+          "meaning": "书（拉丁 liber，本义树皮内层）"
+        },
+        {
+          "part": "-ary",
+          "meaning": "存放…的地方"
+        }
+      ]
+    },
+    "book": {
+      "core": "book=「刻字的木片」，既是名词「书」也是动词「预订」。",
+      "senses": [
+        {
+          "gloss": "n. 书",
+          "logic": "本义刻字的木板→装订成册",
+          "en": "borrow ten books",
+          "zh": "借十本书"
+        },
+        {
+          "gloss": "v. 预订",
+          "logic": "把名字「记入登记簿（book）」→占下位子",
+          "en": "book a study room",
+          "zh": "预订一间自习室"
+        }
+      ]
+    },
+    "reference": {
+      "core": "reference 核心=「回头去查」：参考资料、参考区、引用出处三义都由此来。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "回、往回"
+        },
+        {
+          "part": "fer",
+          "meaning": "带、拿（拉丁 ferre）"
+        },
+        {
+          "part": "-ence",
+          "meaning": "名词后缀，表行为/状态"
+        }
+      ]
+    },
+    "volume": {
+      "core": "volume 核心=「卷起来的一大卷」→引申出「册、容量、音量」。",
+      "senses": [
+        {
+          "gloss": "n. 卷，册",
+          "logic": "古书是卷轴，卷起一卷=一 volume",
+          "en": "the third volume",
+          "zh": "第三卷"
+        },
+        {
+          "gloss": "n. 容量，量",
+          "logic": "卷起的东西有体积→泛指量的大小",
+          "en": "a large volume of data",
+          "zh": "大量数据"
+        },
+        {
+          "gloss": "n. 音量",
+          "logic": "声音的「量」大小",
+          "en": "turn down the volume",
+          "zh": "调低音量"
+        }
+      ]
+    },
+    "issue": {
+      "core": "issue 核心=「发出来的一份」→期刊的一期、发放证件、争议问题。",
+      "senses": [
+        {
+          "gloss": "n.（期刊的）一期",
+          "logic": "定期「发出」的一份",
+          "en": "the latest issue",
+          "zh": "最新一期"
+        },
+        {
+          "gloss": "v. 发放",
+          "logic": "把证件/物品「发出去」",
+          "en": "issue a library card",
+          "zh": "发放借书证"
+        },
+        {
+          "gloss": "n. 问题，议题",
+          "logic": "被「抛出来」讨论的争点",
+          "en": "a sensitive issue",
+          "zh": "一个敏感问题"
+        }
+      ],
+      "roots": [
+        {
+          "part": "iss",
+          "meaning": "出去（拉丁 exire）"
+        },
+        {
+          "part": "-ue",
+          "meaning": "构词尾"
+        }
+      ]
+    },
+    "fine": {
+      "core": "fine 核心=「了结」：付钱了结欠账（罚款）／状态没问题（好的）。",
+      "senses": [
+        {
+          "gloss": "n. 罚款",
+          "logic": "付钱「了结」欠账（拉丁 finis 结束）",
+          "en": "pay a fine",
+          "zh": "缴纳罚款"
+        },
+        {
+          "gloss": "adj. 好的，没问题的",
+          "logic": "「了结、妥当」→状态良好",
+          "en": "That's fine.",
+          "zh": "那样可以"
+        },
+        {
+          "gloss": "adj. 细的，精细的",
+          "logic": "「打磨到极致、了结」→精细",
+          "en": "fine print",
+          "zh": "细小的附注字"
+        }
+      ]
+    },
+    "loan": {
+      "core": "loan 核心=「借出」：既是名词（借期/借出物）也是动词（借给）。"
+    },
+    "reserve": {
+      "core": "reserve 核心=「替你留着」：预约座位/房间，或教授指定的短期借阅书。",
+      "senses": [
+        {
+          "gloss": "v. 预约，保留",
+          "logic": "「往回存」一份给你（re+servare 保存）",
+          "en": "reserve a room",
+          "zh": "预约房间"
+        },
+        {
+          "gloss": "n. 指定借阅",
+          "logic": "教授「留出」给全班短借的书",
+          "en": "put a book on reserve",
+          "zh": "把书放入指定借阅区"
+        }
+      ],
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "回、往回"
+        },
+        {
+          "part": "serve",
+          "meaning": "保存、守住（拉丁 servare）"
+        }
+      ]
+    },
+    "borrow": {
+      "core": "borrow=「借入」（东西进到我这），方向朝向自己，永远搭 from。"
+    },
+    "return": {
+      "core": "return=「让东西转回原处」，图书馆里就是把书还回去。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "回"
+        },
+        {
+          "part": "turn",
+          "meaning": "转（拉丁 tornare 车削）"
+        }
+      ]
+    },
+    "renew": {
+      "core": "renew=「让借期重新开始」，续借就是让期限焕然一新。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "再、重新"
+        },
+        {
+          "part": "new",
+          "meaning": "新（拉丁 novus）"
+        }
+      ]
+    },
+    "check": {
+      "core": "check 核心=「核对确认」（源自象棋「将军」的确认动作）。",
+      "senses": [
+        {
+          "gloss": "v. 核对，查看",
+          "logic": "确认某状态对不对",
+          "en": "check the catalog",
+          "zh": "查目录"
+        },
+        {
+          "gloss": "n. 支票（美式）",
+          "logic": "凭证需「核对」金额",
+          "en": "pay by check",
+          "zh": "用支票付款"
+        },
+        {
+          "gloss": "n. 对钩，核实标记",
+          "logic": "核对完打个记号",
+          "en": "put a check next to it",
+          "zh": "在旁边打个钩"
+        }
+      ]
+    },
+    "charge": {
+      "core": "charge 核心=「加载」→加负担（收费）、加电（充电）、加责（指控）。",
+      "senses": [
+        {
+          "gloss": "v./n. 收费",
+          "logic": "给账上「加载」一笔（拉丁 carricare 装车）",
+          "en": "charge per page",
+          "zh": "按页收费"
+        },
+        {
+          "gloss": "v. 充电",
+          "logic": "给电池「加载」电量",
+          "en": "charge your phone",
+          "zh": "给手机充电"
+        },
+        {
+          "gloss": "v./n. 指控",
+          "logic": "把罪责「加载」到某人身上",
+          "en": "charge sb with theft",
+          "zh": "指控某人盗窃"
+        }
+      ]
+    },
+    "hold": {
+      "core": "hold 核心=「握住、留着」；图书馆里 place a hold=让馆里替你握住一本书。"
+    },
+    "scan": {
+      "core": "scan 核心=「逐行扫过」：设备扫描存电子版／阅读时扫找特定信息。",
+      "senses": [
+        {
+          "gloss": "v. 扫描（设备）",
+          "logic": "逐行扫过转成电子文件",
+          "en": "scan the pages",
+          "zh": "扫描书页"
+        },
+        {
+          "gloss": "v. 扫读（找信息）",
+          "logic": "目光逐行掠过找特定内容",
+          "en": "scan for the date",
+          "zh": "扫读找那个日期"
+        }
+      ]
+    },
+    "abstract": {
+      "core": "abstract 核心=「抽出、拉离」：从长文抽出要点=摘要，脱离具体=抽象。",
+      "senses": [
+        {
+          "gloss": "n. 摘要",
+          "logic": "从论文里「抽出」的要点",
+          "en": "read the abstract",
+          "zh": "读摘要"
+        },
+        {
+          "gloss": "adj. 抽象的",
+          "logic": "「脱离」具体实物的",
+          "en": "an abstract concept",
+          "zh": "一个抽象概念"
+        }
+      ],
+      "roots": [
+        {
+          "part": "abs-",
+          "meaning": "离开"
+        },
+        {
+          "part": "tract",
+          "meaning": "拉、拖（拉丁 trahere）"
+        }
+      ]
+    },
+    "due": {
+      "core": "due 核心=「该还/该给的时刻」（源拉丁 debere 欠）→到期。"
+    },
+    "overdue": {
+      "core": "overdue=「超过了该还的时刻」，图书馆情节的引擎词：overdue→fine。",
+      "roots": [
+        {
+          "part": "over-",
+          "meaning": "超过"
+        },
+        {
+          "part": "due",
+          "meaning": "到期、应还的"
+        }
+      ]
+    },
+    "available": {
+      "core": "available 核心=「派得上用场、拿得到」：书可借／人有空两义都高频。",
+      "senses": [
+        {
+          "gloss": "adj.（物）可获得的",
+          "logic": "东西「用得上、拿得到」",
+          "en": "The book is available.",
+          "zh": "这本书可借"
+        },
+        {
+          "gloss": "adj.（人）有空的",
+          "logic": "人「腾得出时间帮忙」",
+          "en": "Is a librarian available?",
+          "zh": "有馆员有空吗"
+        }
+      ]
+    },
+    "section": {
+      "core": "section 核心=「切分出来的一块」（拉丁 secare 切）→图书馆的一个分区。",
+      "roots": [
+        {
+          "part": "sect",
+          "meaning": "切（拉丁 secare）"
+        },
+        {
+          "part": "-ion",
+          "meaning": "名词后缀"
+        }
+      ]
+    },
+    "catalog": {
+      "core": "catalog 核心=「逐条列出的清单」→图书馆的电子检索系统。",
+      "roots": [
+        {
+          "part": "cata-",
+          "meaning": "依次、向下（希腊 kata）"
+        },
+        {
+          "part": "log",
+          "meaning": "说、列（希腊 legein）"
+        }
+      ]
+    },
+    "index": {
+      "core": "index 核心=「指示者、食指」→指向内容所在页的索引。",
+      "senses": [
+        {
+          "gloss": "n. 索引",
+          "logic": "「指向」书内内容的页码表",
+          "en": "check the index",
+          "zh": "查索引"
+        },
+        {
+          "gloss": "n. 指标，指数",
+          "logic": "「指示」变化的数值",
+          "en": "the price index",
+          "zh": "物价指数"
+        }
+      ]
+    },
+    "expire": {
+      "core": "expire 核心=「呼出、断气」（ex 出+spirare 呼吸）→期限断气=失效。",
+      "roots": [
+        {
+          "part": "ex-",
+          "meaning": "出去"
+        },
+        {
+          "part": "spir",
+          "meaning": "呼吸（拉丁 spirare）"
+        }
+      ]
+    },
+    "subject": {
+      "core": "subject 核心=「摆在下面（被讨论）的对象」→主题、学科、检索字段。",
+      "senses": [
+        {
+          "gloss": "n. 主题，学科",
+          "logic": "被「摆在下面」讨论的对象",
+          "en": "search by subject",
+          "zh": "按主题检索"
+        },
+        {
+          "gloss": "n. 主语；受试者",
+          "logic": "句子/实验里「被放置」的主体",
+          "en": "the subject of the study",
+          "zh": "研究的对象"
+        }
+      ],
+      "roots": [
+        {
+          "part": "sub-",
+          "meaning": "在下"
+        },
+        {
+          "part": "ject",
+          "meaning": "抛、掷（拉丁 jacere）"
+        }
+      ]
+    },
+    "limit": {
+      "core": "limit 核心=「不可越过的界线」（拉丁 limes 边界）→借阅上限。"
+    },
+    "policy": {
+      "core": "policy 核心=「治理城邦的方针」（希腊 polis 城邦）→成文的整套规定。"
+    },
+    "quote": {
+      "core": "quote 核心=「逐条标注页码」（拉丁 quot 多少）→引用时须标出处。"
+    },
+    "resource": {
+      "core": "resource 核心=「可再取用的补给」（re+surgere 再升起）→随时能调用的资料工具。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "再、又"
+        },
+        {
+          "part": "source",
+          "meaning": "涌出、源头（拉丁 surgere 升起）"
+        }
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "archive",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈɑːrkaɪv/",
+      "subgroup": "noun",
+      "meaning": "n. 档案室，档案库；v. 存档",
+      "core": "archive=「保存原始记录的地方」，存的是不外借的历史资料。",
+      "etymology": "希腊 arkheion「官署、政府机关」（arkhē 起源/统治），机关里保存公文记录之处，故为档案库。",
+      "roots": [
+        {
+          "part": "arch",
+          "meaning": "起源、首要（希腊 arkhē）"
+        },
+        {
+          "part": "-ive",
+          "meaning": "构词尾"
+        }
+      ],
+      "phonetics": "重音首音节 /ˈɑːr/，卷舌；-chive 读 /kaɪv/，长 i，ch 读 /k/。",
+      "examples": [
+        {
+          "en": "Old newspapers are kept in the basement archive.",
+          "zh": "旧报纸存放在地下室档案库。",
+          "source": "造句"
+        },
+        {
+          "en": "the university archives",
+          "zh": "大学档案馆（复数常表整片档案）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "collection",
+          "ipa": "/kəˈlekʃn/",
+          "gloss": "藏品，馆藏",
+          "note": "archive 偏历史原始档案、不外借；collection 是有主题的一批藏品，可含可借书"
+        }
+      ],
+      "nuance": "archive（档案库）存原始历史资料、通常馆内查阅不外借，和可外借的 library 相对，听力常考这层限制。"
+    },
+    {
+      "word": "genre",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈʒɑːnrə/",
+      "subgroup": "noun",
+      "meaning": "n.（文艺作品的）类型，体裁",
+      "core": "genre=「作品的种类」，如小说、传记、科幻，图书馆据此分区排架。",
+      "etymology": "法语 genre「种类、性别」，源拉丁 genus「类、属」。同源 gender、generic。",
+      "roots": [
+        {
+          "part": "gen",
+          "meaning": "生、类（拉丁 genus）"
+        },
+        {
+          "part": "-re",
+          "meaning": "法语构词尾"
+        }
+      ],
+      "phonetics": "法语外来词，读 /ˈʒɑːnrə/：开头是 /ʒ/（像 measure 里的 s），不是 /dʒ/；别读成「精儿」。",
+      "examples": [
+        {
+          "en": "What genre are you looking for—mystery or sci-fi?",
+          "zh": "你想找哪类——推理还是科幻？",
+          "source": "造句"
+        },
+        {
+          "en": "a literary genre",
+          "zh": "一种文学体裁",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "category",
+          "ipa": "/ˈkætəɡɔːri/",
+          "gloss": "类别",
+          "note": "genre 特指文艺作品的类型/体裁；category 泛指任何分类"
+        }
+      ],
+      "nuance": "genre 的发音是常见陷阱（法语 /ʒ/ 开头）；找书时馆员常先问 genre 再指向对应区。"
+    },
+    {
+      "word": "fiction",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈfɪkʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 虚构文学，小说（总称）",
+      "core": "fiction=「虚构出来的作品」，图书馆分区标 Fiction，与 nonfiction 相对。",
+      "etymology": "拉丁 fingere「捏塑、编造」→fictio「捏造之物」。同源 figure、feign（假装）。",
+      "roots": [
+        {
+          "part": "fict",
+          "meaning": "捏造、塑造（拉丁 fingere）"
+        },
+        {
+          "part": "-ion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "重音首音节 /ˈfɪk/，短 i；-tion 读 /ʃn/。",
+      "examples": [
+        {
+          "en": "Fiction is shelved separately from nonfiction on the second floor.",
+          "zh": "虚构类和非虚构类在二楼分开排架。",
+          "source": "造句"
+        },
+        {
+          "en": "fiction and nonfiction",
+          "zh": "虚构类与非虚构类",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "novel",
+          "ipa": "/ˈnɑːvl/",
+          "gloss": "长篇小说",
+          "note": "fiction 是不可数的大类；novel 是其中一部具体的长篇作品"
+        }
+      ],
+      "nuance": "fiction（虚构总称）vs nonfiction（纪实类）是图书馆最大的分类分岔，指路听力常提。"
+    },
+    {
+      "word": "publication",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˌpʌblɪˈkeɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 出版物；出版",
+      "core": "publication=「公开发行的东西」，涵盖书、期刊、报纸等一切正式出版物。",
+      "etymology": "拉丁 publicare「使公开」（publicus 公众的）。「公之于众」=出版。",
+      "roots": [
+        {
+          "part": "public",
+          "meaning": "公众的（拉丁 publicus）"
+        },
+        {
+          "part": "-ation",
+          "meaning": "名词后缀，表行为/结果"
+        }
+      ],
+      "phonetics": "重音在第三音节 /ˈkeɪ/；前面 /ˌpʌblɪ/ 次重，别把重音放前面。",
+      "examples": [
+        {
+          "en": "The database indexes thousands of academic publications.",
+          "zh": "该数据库收录了数千种学术出版物。",
+          "source": "造句"
+        },
+        {
+          "en": "the date of publication",
+          "zh": "出版日期",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "periodical",
+          "ipa": "/ˌpɪriˈɑːdɪkl/",
+          "gloss": "连续出版物",
+          "note": "publication 涵盖一切出版物（含书）；periodical 只指定期连续出版的那类"
+        }
+      ],
+      "nuance": "查资料常需 publication date（出版年份）判断资料是否过时，是听力/引用常见细节。"
+    },
+    {
+      "word": "publisher",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈpʌblɪʃər/",
+      "subgroup": "noun",
+      "meaning": "n. 出版社，出版商",
+      "core": "publisher=「把作品公开发行的机构」，引用著录要记它。",
+      "etymology": "publish（拉丁 publicare「使公开」）+ -er（施动者/机构）。",
+      "phonetics": "重音首音节 /ˈpʌ/；-lisher 读 /lɪʃər/，sh 音 + 卷舌 r。",
+      "examples": [
+        {
+          "en": "Include the publisher and year in your citation.",
+          "zh": "引用著录里要写出版社和年份。",
+          "source": "造句"
+        },
+        {
+          "en": "the publisher's name",
+          "zh": "出版社名称",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "press",
+          "ipa": "/pres/",
+          "gloss": "出版社（尤指大学社）",
+          "note": "publisher 泛指出版方；press 常指大学出版社（如 Oxford University Press）"
+        }
+      ],
+      "nuance": "citation（引用）里作者、书名、publisher、年份缺一不可，讲座常强调。"
+    },
+    {
+      "word": "chapter",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈtʃæptər/",
+      "subgroup": "noun",
+      "meaning": "n.（书的）章",
+      "core": "chapter=「书里的一大节」，读书/找资料常按章定位。",
+      "etymology": "拉丁 caput「头」→capitulum「小标题、章节」。一章有一个「头（标题）」。同源 capital、captain。",
+      "phonetics": "重音首音节 /ˈtʃæp/，ch 音 /tʃ/；-ter 美音 /tər/ 卷舌，t 常闪音化。",
+      "examples": [
+        {
+          "en": "The professor only assigned the first three chapters.",
+          "zh": "教授只布置了前三章。",
+          "source": "造句"
+        },
+        {
+          "en": "the opening chapter",
+          "zh": "开篇一章",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "section",
+          "ipa": "/ˈsekʃn/",
+          "gloss": "节，部分",
+          "note": "chapter 是书的一「章」（大单位）；section 是章内更小的「节」，或指馆内分区"
+        }
+      ],
+      "nuance": "on reserve 的教材常只能借几小时、复印限一 chapter（版权限制），两个考点常连着出现。"
+    },
+    {
+      "word": "excerpt",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈeksɜːrpt/",
+      "subgroup": "noun",
+      "meaning": "n. 节选，摘录段落",
+      "core": "excerpt=「从整体里摘出的一段」，如从书里节选一章供全班读。",
+      "etymology": "拉丁 excerpere「摘出、拣选」（ex-出+carpere 采摘）。同源 carpe diem（抓住当下）。",
+      "roots": [
+        {
+          "part": "ex-",
+          "meaning": "出去"
+        },
+        {
+          "part": "cerp",
+          "meaning": "采摘、拣选（拉丁 carpere）"
+        }
+      ],
+      "phonetics": "重音首音节 /ˈek/；名词读 /ˈeksɜːrpt/，结尾 -rpt 三辅音连读，别吞 p。",
+      "examples": [
+        {
+          "en": "The professor put an excerpt from the book on reserve.",
+          "zh": "教授把书里节选的一段放到指定借阅区。",
+          "source": "造句"
+        },
+        {
+          "en": "an excerpt from the article",
+          "zh": "文章的一段节选",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "passage",
+          "ipa": "/ˈpæsɪdʒ/",
+          "gloss": "（文章的）一段",
+          "note": "excerpt 强调「从原作摘出」的选段；passage 泛指一段文字，不强调来源"
+        }
+      ],
+      "nuance": "为绕开整本借阅/版权，教授常把 excerpt（节选）放 on reserve 供全班短读，是校园高频安排。"
+    },
+    {
+      "word": "atlas",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈætləs/",
+      "subgroup": "noun",
+      "meaning": "n. 地图集",
+      "core": "atlas=「地图汇编成册的大书」，属参考书区不外借。",
+      "etymology": "希腊神话擎天巨神 Atlas（受罚扛天）→16世纪地图册封面常印他扛天的图，遂以其名代指地图集。",
+      "phonetics": "重音首音节 /ˈæt/，短 a；-las 读 /ləs/ 弱读。",
+      "examples": [
+        {
+          "en": "The world atlas is too big to check out; use it here.",
+          "zh": "这本世界地图集太大不能外借，请在馆内用。",
+          "source": "造句"
+        },
+        {
+          "en": "a world / historical atlas",
+          "zh": "世界／历史地图集",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "map",
+          "ipa": "/mæp/",
+          "gloss": "地图（单张）",
+          "note": "atlas 是成册的地图集；map 是单张地图"
+        }
+      ],
+      "nuance": "atlas、dictionary、encyclopedia 都是大部头 reference（参考书），只能馆内查阅，听力常一起出现。"
+    },
+    {
+      "word": "thesaurus",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/θɪˈsɔːrəs/",
+      "subgroup": "noun",
+      "meaning": "n. 同义词词典",
+      "core": "thesaurus=「词语的宝库」，按意义聚拢近义词，写作换词用。",
+      "etymology": "希腊 thēsauros「宝库、珍藏」→拉丁 thesaurus。同源 treasure（珍宝）。一库同义词如珍宝。",
+      "phonetics": "重音第二音节 /ˈsɔː/；开头 th 读 /θ/（清），the- 弱读 /θɪ/；结尾 -rus 读 /rəs/。",
+      "examples": [
+        {
+          "en": "Use a thesaurus if you keep repeating the same word.",
+          "zh": "老用同一个词就查查同义词词典。",
+          "source": "造句"
+        },
+        {
+          "en": "look it up in a thesaurus",
+          "zh": "在同义词词典里查它",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "dictionary",
+          "ipa": "/ˈdɪkʃəneri/",
+          "gloss": "词典",
+          "note": "dictionary 给释义/用法；thesaurus 给近义词/反义词，用途不同"
+        }
+      ],
+      "nuance": "thesaurus（近义词典）帮写作换词，和 dictionary（查释义）功能互补，参考书区常并列摆放。"
+    },
+    {
+      "word": "glossary",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈɡlɑːsəri/",
+      "subgroup": "noun",
+      "meaning": "n. 术语表，词汇表",
+      "core": "glossary=「书后某领域的小术语表」，只收本书涉及的专门词。",
+      "etymology": "希腊 glōssa「舌头、语言」→glōssa「难词注解」→拉丁 glossarium。同源 gloss（释义）、polyglot。",
+      "phonetics": "重音首音节 /ˈɡlɑː/，美音张大嘴；gl 连读；-ssary 读 /səri/。",
+      "examples": [
+        {
+          "en": "Check the glossary at the back for any terms you don't know.",
+          "zh": "不懂的术语查书后的词汇表。",
+          "source": "造句"
+        },
+        {
+          "en": "a glossary of terms",
+          "zh": "术语词汇表",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "index",
+          "ipa": "/ˈɪndeks/",
+          "gloss": "索引",
+          "note": "glossary 解释术语含义；index 只给关键词的页码定位，功能不同"
+        }
+      ],
+      "nuance": "glossary（术语表，只收本书专门词）范围比 dictionary 窄，是书内的小型词汇工具。"
+    },
+    {
+      "word": "abbreviation",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/əˌbriːviˈeɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 缩写，简称",
+      "core": "abbreviation=「把词缩短的写法」，如 ILL 代表 interlibrary loan。",
+      "etymology": "拉丁 abbreviare「缩短」（ad-向+brevis 短）。同源 brief、abridge。",
+      "roots": [
+        {
+          "part": "ab-",
+          "meaning": "向、朝（ad- 变体）"
+        },
+        {
+          "part": "brevi",
+          "meaning": "短（拉丁 brevis）"
+        },
+        {
+          "part": "-ation",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "重音在 /ˈeɪ/；六音节，练分段 a-bbre-vi-a-tion；开头 a- 弱读 /ə/。",
+      "examples": [
+        {
+          "en": "ILL is the abbreviation for interlibrary loan.",
+          "zh": "ILL 是 interlibrary loan 的缩写。",
+          "source": "造句"
+        },
+        {
+          "en": "a common abbreviation",
+          "zh": "一个常见缩写",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "acronym",
+          "ipa": "/ˈækrənɪm/",
+          "gloss": "首字母缩略词",
+          "note": "acronym 特指取首字母拼读的缩写（如 NASA）；abbreviation 泛指一切缩短形式"
+        }
+      ],
+      "nuance": "图书馆术语多缩写（ILL、OPAC、ISBN），听懂 abbreviation 才不至于漏信息。"
+    },
+    {
+      "word": "keyword",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈkiːwɜːrd/",
+      "subgroup": "noun",
+      "meaning": "n. 关键词（检索用）",
+      "core": "keyword=「打开检索的关键词」，输进搜索框来查资料。",
+      "etymology": "key（钥匙→关键的）+ word。像钥匙一样「打开」相关结果的词。",
+      "phonetics": "重音首音节 /ˈkiː/，长 i；-word 读 /wɜːrd/ 卷舌。",
+      "examples": [
+        {
+          "en": "Try a broader keyword if you get too few results.",
+          "zh": "结果太少就换个更宽泛的关键词。",
+          "source": "造句"
+        },
+        {
+          "en": "a keyword search",
+          "zh": "关键词检索",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "term",
+          "ipa": "/tɜːrm/",
+          "gloss": "词语，术语",
+          "note": "keyword 特指检索输入的关键词；term 泛指任何词语/术语"
+        }
+      ],
+      "nuance": "馆员常教学生调整 keyword（换更宽/更窄的词）来改进检索结果，是研究咨询高频动作。"
+    },
+    {
+      "word": "subscription",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/səbˈskrɪpʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 订阅（权）",
+      "core": "subscription=「签约定期获取」，图书馆靠它买断期刊/数据库访问权。",
+      "etymology": "拉丁 subscribere「在下面签名」（sub-下+scribere 写）。签名订约=订阅。同源 describe、manuscript。",
+      "roots": [
+        {
+          "part": "sub-",
+          "meaning": "在下"
+        },
+        {
+          "part": "scrib",
+          "meaning": "写（拉丁 scribere）"
+        },
+        {
+          "part": "-tion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "重音第二音节 /ˈskrɪp/；sub- 弱读 /səb/；-tion 读 /ʃn/。",
+      "examples": [
+        {
+          "en": "You can read it because the library has a subscription to that journal.",
+          "zh": "你能读到是因为图书馆订阅了那本期刊。",
+          "source": "造句"
+        },
+        {
+          "en": "a library subscription",
+          "zh": "图书馆订阅（数据库/期刊）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "access",
+          "ipa": "/ˈækses/",
+          "gloss": "访问权",
+          "note": "subscription 是「付费订阅这一安排」；access 是订阅带来的「能访问」结果"
+        }
+      ],
+      "nuance": "电子期刊能不能读，取决于图书馆有没有 subscription，「没订阅所以看不了」是听力常见障碍。"
+    },
+    {
+      "word": "pamphlet",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈpæmflət/",
+      "subgroup": "noun",
+      "meaning": "n. 小册子，宣传单",
+      "core": "pamphlet=「几页装订的薄册子」，图书馆用来发放指南/须知。",
+      "etymology": "源自12世纪流行拉丁诗《Pamphilus》→泛指无封皮的薄小册子。",
+      "phonetics": "重音首音节 /ˈpæm/；-phlet 读 /flət/，ph 读 /f/，别读出 p-h 两音。",
+      "examples": [
+        {
+          "en": "Grab a pamphlet at the desk—it explains all the borrowing rules.",
+          "zh": "在柜台拿本小册子，上面讲清了所有借阅规则。",
+          "source": "造句"
+        },
+        {
+          "en": "an information pamphlet",
+          "zh": "一本资讯小册子",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "brochure",
+          "ipa": "/broʊˈʃʊr/",
+          "gloss": "宣传册",
+          "note": "pamphlet 多是纯文字的说明小册；brochure 常带彩图、更像宣传品"
+        }
+      ],
+      "nuance": "新生指南、检索须知常做成 pamphlet 免费发放，是听力里「去哪了解规则」的答案之一。"
+    },
+    {
+      "word": "directory",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dəˈrektəri/",
+      "subgroup": "noun",
+      "meaning": "n. 索引指示牌，名录",
+      "core": "directory=「告诉你东西在哪的指引表」，如各楼层分布的指示牌。",
+      "etymology": "拉丁 directus「指向、引导」（dirigere 引导）+ -ory（表处所/工具）。「指引你方向的东西」。同源 direct、director。",
+      "roots": [
+        {
+          "part": "direct",
+          "meaning": "指引、指向（拉丁 dirigere）"
+        },
+        {
+          "part": "-ory",
+          "meaning": "表处所或工具"
+        }
+      ],
+      "phonetics": "重音第二音节 /ˈrek/；di- 弱读 /də/；美音四音节 /də-ˈrek-tə-ri/。",
+      "examples": [
+        {
+          "en": "Check the directory by the entrance to see which floor you need.",
+          "zh": "看看入口处的楼层指示牌，确定你要去几楼。",
+          "source": "造句"
+        },
+        {
+          "en": "a building / floor directory",
+          "zh": "楼层分布指示牌",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "map",
+          "ipa": "/mæp/",
+          "gloss": "平面图",
+          "note": "directory 是「哪类东西在哪层」的文字名录；map 是空间平面图"
+        }
+      ],
+      "nuance": "进馆先看 directory（楼层指示牌）定位分区，是「怎么找到某区」的听力起点。"
+    },
+    {
+      "word": "laptop",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈlæptɑːp/",
+      "subgroup": "noun",
+      "meaning": "n. 笔记本电脑",
+      "core": "laptop=「能放腿上用的电脑」，图书馆常出借并要押金。",
+      "etymology": "lap（大腿上部）+ top（上面）。「放在腿上的」便携电脑，对照台式 desktop。",
+      "phonetics": "重音首音节 /ˈlæp/，短 a；-top 读 /tɑːp/ 美音张大嘴。",
+      "examples": [
+        {
+          "en": "You can borrow a laptop for four hours with a deposit.",
+          "zh": "交押金可借用笔记本电脑四小时。",
+          "source": "造句"
+        },
+        {
+          "en": "borrow / check out a laptop",
+          "zh": "借用一台笔记本电脑",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "notebook",
+          "ipa": "/ˈnoʊtbʊk/",
+          "gloss": "笔记本电脑",
+          "note": "laptop 是最常用叫法；notebook 同指但也易和纸质笔记本混，语境区分"
+        }
+      ],
+      "nuance": "借设备（laptop、投影仪等）常要 deposit（押金）且限时，是听力里的借用规则细节。"
+    },
+    {
+      "word": "headphones",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈhedfoʊnz/",
+      "subgroup": "noun",
+      "meaning": "n. 耳机（复数）",
+      "core": "headphones=「戴头上的一对听筒」，在安静区看视频必备。",
+      "etymology": "head（头）+ phone（声音，希腊 phōnē）。「戴头上的发声器」，因两只耳罩故用复数。",
+      "phonetics": "重音首音节 /ˈhed/；-phones 读 /foʊnz/，ph 读 /f/，结尾 /z/ 浊音。常用复数。",
+      "examples": [
+        {
+          "en": "Please use headphones if you're watching a video here.",
+          "zh": "在这里看视频请戴耳机。",
+          "source": "造句"
+        },
+        {
+          "en": "wear / use headphones",
+          "zh": "戴／用耳机",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "earbuds",
+          "ipa": "/ˈɪrbʌdz/",
+          "gloss": "入耳式耳机",
+          "note": "headphones 是罩耳大耳机；earbuds 是塞进耳道的小耳塞"
+        }
+      ],
+      "nuance": "安静区规矩：看视频/听音频须戴 headphones 免打扰他人，是听力里的礼仪规则。"
+    },
+    {
+      "word": "cubicle",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈkjuːbɪkl/",
+      "subgroup": "noun",
+      "meaning": "n. 隔间，小间",
+      "core": "cubicle=「隔出的一个小方间」，图书馆里用作单人学习位。",
+      "etymology": "拉丁 cubiculum「卧室、小睡房」（cubare 躺卧）。原指小睡间→引申隔出的小工作间。",
+      "phonetics": "重音首音节 /ˈkjuː/，长 u（读作 kew）；-bicle 读 /bɪkl/。",
+      "examples": [
+        {
+          "en": "There are quiet cubicles along the far wall for solo study.",
+          "zh": "远端墙边有安静的隔间供独自学习。",
+          "source": "造句"
+        },
+        {
+          "en": "a study cubicle",
+          "zh": "学习隔间",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "carrel",
+          "ipa": "/ˈkærəl/",
+          "gloss": "图书馆单人书桌隔间",
+          "note": "carrel 是图书馆专用词、多需申请；cubicle 是通用的隔间叫法"
+        }
+      ],
+      "nuance": "cubicle 和 carrel 都指单人隔间，图书馆行话更常说 carrel，听力两者可能互换出现。"
+    },
+    {
+      "word": "elevator",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/ˈelɪveɪtər/",
+      "subgroup": "noun",
+      "meaning": "n. 电梯（美式）",
+      "core": "elevator=「把人升上去的装置」，指路时用来说去哪层。",
+      "etymology": "拉丁 elevare「举起、抬高」（e-出+levare 举，levis 轻）+ -or。「把你升高的机器」。同源 lever、relieve。",
+      "phonetics": "重音首音节 /ˈel/；美音四音节 /ˈe-lɪ-veɪ-tər/，别吞中间音节。英式称 lift。",
+      "examples": [
+        {
+          "en": "Take the elevator to the fourth floor and turn left.",
+          "zh": "坐电梯到四楼然后左转。",
+          "source": "造句"
+        },
+        {
+          "en": "take the elevator",
+          "zh": "乘电梯",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "lift",
+          "ipa": "/lɪft/",
+          "gloss": "电梯（英式）",
+          "note": "美式 elevator；英式 lift，同指升降电梯"
+        }
+      ],
+      "nuance": "指路高频：take the elevator/stairs to…（坐电梯/走楼梯到几楼），复述要说清楼层与方向。"
+    },
+    {
+      "word": "faculty",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈfæklti/",
+      "subgroup": "general",
+      "meaning": "n. 全体教师，教职员；能力；院系",
+      "core": "faculty=「教职群体」，常有比学生更长的借阅权限。",
+      "etymology": "拉丁 facultas「能力、才能」（facere 做）→做事的人才→大学里「有教学之能的一群人」。同源 facile、faculty。",
+      "phonetics": "重音首音节 /ˈfæk/；-ulty 读 /əlti/，中间 -ul- 弱读。作「教职」讲是集合名词。",
+      "examples": [
+        {
+          "en": "Faculty can keep books for a whole semester, but students can't.",
+          "zh": "教职员可借书一整学期，学生不行。",
+          "source": "造句"
+        },
+        {
+          "en": "faculty and students",
+          "zh": "教职员与学生",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "staff",
+          "ipa": "/stæf/",
+          "gloss": "工作人员",
+          "note": "faculty 特指教学的教师群体；staff 是行政/后勤等工作人员"
+        }
+      ],
+      "nuance": "借阅期限常按身份分级：faculty > graduate > undergraduate，听力里注意「谁能借多久」。"
+    },
+    {
+      "word": "tutor",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈtuːtər/",
+      "subgroup": "general",
+      "meaning": "n. 辅导员，导师；v. 辅导",
+      "core": "tutor=「一对一辅导你的人」，图书馆常设写作/研究辅导。",
+      "etymology": "拉丁 tueri「看护、守护」→tutor「监护人、导师」。同源 tuition、intuition。「看护你学业的人」。",
+      "phonetics": "重音首音节 /ˈtuː/（美音），长 u；-tor 读 /tər/ 卷舌。",
+      "examples": [
+        {
+          "en": "The library has writing tutors who help with citations.",
+          "zh": "图书馆有写作辅导员帮你处理引用格式。",
+          "source": "造句"
+        },
+        {
+          "en": "a writing tutor",
+          "zh": "写作辅导员",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "librarian",
+          "ipa": "/laɪˈbreriən/",
+          "gloss": "馆员",
+          "note": "tutor 侧重「辅导学业/写作」；librarian 侧重「帮你找资料、用系统」"
+        }
+      ],
+      "nuance": "复杂作业除了问 librarian（找资料），还可约 tutor（辅导写作），是听力里的进阶帮助渠道。"
+    },
+    {
+      "word": "enrollment",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ɪnˈroʊlmənt/",
+      "subgroup": "general",
+      "meaning": "n. 注册，选课；在册身份",
+      "core": "enrollment=「登记入册成为在校生」，借阅权常与它挂钩。",
+      "etymology": "enroll（en-使+ roll 名册，拉丁 rotulus 卷轴）+ -ment。「记入名册」。",
+      "roots": [
+        {
+          "part": "en-",
+          "meaning": "使、置于…之内"
+        },
+        {
+          "part": "roll",
+          "meaning": "名册（原义卷轴 rotulus）"
+        },
+        {
+          "part": "-ment",
+          "meaning": "名词后缀"
+        }
+      ],
+      "phonetics": "重音第二音节 /ˈroʊl/，双元音；en- 弱读 /ɪn/。英式常拼 enrolment（单 l）。",
+      "examples": [
+        {
+          "en": "Your borrowing rights depend on your current enrollment.",
+          "zh": "你的借阅权限取决于你当前的在册身份。",
+          "source": "造句"
+        },
+        {
+          "en": "proof of enrollment",
+          "zh": "在读证明",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "registration",
+          "ipa": "/ˌredʒɪˈstreɪʃn/",
+          "gloss": "注册",
+          "note": "enrollment 侧重「入学/在册这一身份」；registration 侧重「注册登记这一动作」"
+        }
+      ],
+      "nuance": "毕业或休学后 enrollment 失效，借书证随之 expire，是听力里访客/校友身份受限的原因。"
+    },
+    {
+      "word": "eligible",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈelɪdʒəbl/",
+      "subgroup": "desc",
+      "meaning": "adj. 有资格的，符合条件的",
+      "core": "eligible=「被挑得中、够资格的」，决定你能不能享受某服务。",
+      "etymology": "拉丁 eligere「挑选出」（e-出+legere 选）。「够格被选中的」。同源 elect、select。",
+      "roots": [
+        {
+          "part": "e-",
+          "meaning": "出（ex- 变体）"
+        },
+        {
+          "part": "lig",
+          "meaning": "选（拉丁 legere）"
+        },
+        {
+          "part": "-ible",
+          "meaning": "可…的"
+        }
+      ],
+      "phonetics": "重音首音节 /ˈel/；-igible 读 /ɪdʒəbl/，g 读软音 /dʒ/。",
+      "examples": [
+        {
+          "en": "Only enrolled students are eligible to reserve a study room.",
+          "zh": "只有在读学生才有资格预约自习室。",
+          "source": "造句"
+        },
+        {
+          "en": "be eligible for / to do",
+          "zh": "有资格获得／做某事",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "qualified",
+          "ipa": "/ˈkwɑːlɪfaɪd/",
+          "gloss": "合格的",
+          "note": "eligible 侧重「符合硬性条件、够格」；qualified 侧重「有能力/技能胜任」"
+        }
+      ],
+      "nuance": "eligible for（有资格享受某服务）是听力里判断「你能不能借/约」的关键词。"
+    },
+    {
+      "word": "valid",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈvælɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 有效的，仍生效的",
+      "core": "valid=「仍有效力的」，证件/账号 valid 才能用。",
+      "etymology": "拉丁 validus「强壮、有力」（valere 有力/有价值）。「效力还在、站得住」。同源 value、available。",
+      "phonetics": "重音首音节 /ˈvæ/，短 a；-lid 读 /lɪd/。别和 valued 混。",
+      "examples": [
+        {
+          "en": "You need a valid student ID to check anything out.",
+          "zh": "借任何东西都得凭一张有效的学生证。",
+          "source": "造句"
+        },
+        {
+          "en": "a valid card / login",
+          "zh": "有效的证件／账号",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "expired",
+          "ipa": "/ɪkˈspaɪərd/",
+          "gloss": "已过期的",
+          "note": "反义：valid 仍有效；expired 已失效"
+        }
+      ],
+      "nuance": "证件/账号必须 valid（未过期）才能用；expired（过期）是听力里「为什么刷不了」的常见原因。"
+    },
+    {
+      "word": "designated",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈdezɪɡneɪtɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 指定的，划定专用的",
+      "core": "designated=「被明确划出专作某用的」，如指定安静区、指定借阅区。",
+      "etymology": "designate（拉丁 designare「标出、指明」de-+signum 记号）+ -ed。「被标记指定的」。同源 sign、signal。",
+      "phonetics": "重音首音节 /ˈde/；五音节 /ˈde-zɪɡ-neɪ-tɪd/，中间 -zig- 读 /zɪɡ/，g 要发出来。",
+      "examples": [
+        {
+          "en": "Eating is only allowed in the designated area on the ground floor.",
+          "zh": "只能在一楼的指定区域内进食。",
+          "source": "造句"
+        },
+        {
+          "en": "a designated quiet zone",
+          "zh": "指定的安静区",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "assigned",
+          "ipa": "/əˈsaɪnd/",
+          "gloss": "分配的，指派的",
+          "note": "designated 侧重「划定作某用途」；assigned 侧重「分派给某人/某事」"
+        }
+      ],
+      "nuance": "designated quiet zone / eating area（指定专用区）划定了「哪能做什么」，是听力里的空间规则词。"
+    },
+    {
+      "word": "circulate",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈsɜːrkjəleɪt/",
+      "subgroup": "verb",
+      "meaning": "v.（书刊）流通外借；流传",
+      "core": "circulate=「让书在读者间循环流通」，即可外借；反之 non-circulating 不外借。",
+      "etymology": "拉丁 circulare「绕圈、循环」（circulus 小圈，circus 圆）。书在读者间「转圈流通」。同源 circle、circuit。",
+      "roots": [
+        {
+          "part": "circul",
+          "meaning": "圆圈、循环（拉丁 circulus）"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "重音首音节 /ˈsɜːr/，卷舌；四音节 /ˈsɜːr-kjə-leɪt/。",
+      "examples": [
+        {
+          "en": "Reference books don't circulate; you can only use them here.",
+          "zh": "参考书不外借，只能在馆内使用。",
+          "source": "造句"
+        },
+        {
+          "en": "materials that circulate",
+          "zh": "可外借流通的资料",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "check out",
+          "ipa": "/tʃek aʊt/",
+          "gloss": "办理借出",
+          "note": "circulate 是书「可流通外借」这一属性；check out 是读者「办手续借走」这一动作"
+        }
+      ],
+      "nuance": "circulate 是 circulation desk（借还台）的词根：能 circulate 的书才可借，non-circulating 只能馆内看。"
+    },
+    {
+      "word": "designate",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈdezɪɡneɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 指定，划定（专用）",
+      "core": "designate=「标出并指定某物专作某用」，如把某层定为安静层。",
+      "etymology": "拉丁 designare「标出、指明」（de-+signum 记号）。「用记号标定」。同源 sign、signature。",
+      "roots": [
+        {
+          "part": "de-",
+          "meaning": "彻底、完全"
+        },
+        {
+          "part": "sign",
+          "meaning": "记号（拉丁 signum）"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "重音首音节 /ˈde/；四音节 /ˈde-zɪɡ-neɪt/，-zig- 的 g 要发出。",
+      "examples": [
+        {
+          "en": "The top two floors are designated as silent study areas.",
+          "zh": "顶上两层被划定为静音学习区。",
+          "source": "造句"
+        },
+        {
+          "en": "designate an area as ...",
+          "zh": "把某区划定为…",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "assign",
+          "ipa": "/əˈsaɪn/",
+          "gloss": "分配，指派",
+          "note": "designate 侧重「划定用途/身份」；assign 侧重「把某物分给某人/某任务」"
+        }
+      ],
+      "nuance": "馆方 designate（划定）安静区/专用区，形容词形式 designated 更常出现在告示上。"
+    },
+    {
+      "word": "accommodate",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/əˈkɑːmədeɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 容纳；迁就，满足（需求）",
+      "core": "accommodate=「腾出空间/条件来适应对方」：容纳人数，或通融需求。",
+      "etymology": "拉丁 accommodare「使适合」（ad-向+com-一起+modus 尺度/方式）。「调到合适」。同源 mode、modest。",
+      "roots": [
+        {
+          "part": "ac-",
+          "meaning": "向（ad- 变体）"
+        },
+        {
+          "part": "commod",
+          "meaning": "合适、便利（拉丁 commodus）"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "phonetics": "重音第二音节 /ˈkɑː/；双 c 双 m 只各发一个音；结尾 -ate /eɪt/。",
+      "examples": [
+        {
+          "en": "The study room can accommodate up to six people.",
+          "zh": "这间研讨室最多可容纳六人。",
+          "source": "造句"
+        },
+        {
+          "en": "accommodate a request",
+          "zh": "满足一个请求",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "hold",
+          "ipa": "/hoʊld/",
+          "gloss": "容纳",
+          "note": "accommodate 既表「容纳人数」也表「迁就需求」；hold 只表容纳量"
+        }
+      ],
+      "nuance": "accommodate 双写陷阱（两个 c、两个 m）；馆员说 We can accommodate that 意为「可以通融/满足」，听力暖心转折。"
+    },
+    {
+      "word": "disturb",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/dɪˈstɜːrb/",
+      "subgroup": "verb",
+      "meaning": "v. 打扰，扰乱",
+      "core": "disturb=「搅乱原有的安静/秩序」，安静区最忌 disturb 他人。",
+      "etymology": "拉丁 disturbare「搅乱」（dis-完全+turbare 使混乱，turba 骚动/人群）。「把平静搅成一团」。同源 turbulent、trouble。",
+      "roots": [
+        {
+          "part": "dis-",
+          "meaning": "彻底、分散"
+        },
+        {
+          "part": "turb",
+          "meaning": "搅动、混乱（拉丁 turbare）"
+        }
+      ],
+      "phonetics": "重音第二音节 /ˈstɜːrb/，卷舌；dis- 弱读 /dɪ/。",
+      "examples": [
+        {
+          "en": "Keep your voice down so you don't disturb other patrons.",
+          "zh": "请轻声，别打扰其他读者。",
+          "source": "造句"
+        },
+        {
+          "en": "disturb others / the quiet",
+          "zh": "打扰他人／破坏安静",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "distract",
+          "ipa": "/dɪˈstrækt/",
+          "gloss": "使分心",
+          "note": "disturb 侧重「打扰、扰乱他人安宁」；distract 侧重「使某人注意力分散」"
+        }
+      ],
+      "nuance": "安静区规矩围绕 don't disturb others（别打扰他人）展开，是听力里冲突（有人吵）的核心词。"
+    },
+    {
+      "word": "suspend",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/səˈspend/",
+      "subgroup": "verb",
+      "meaning": "v. 暂停，中止（权限）；悬挂",
+      "core": "suspend=「让…挂起、暂停」：欠罚款时借阅权被 suspend（暂时停用）。",
+      "etymology": "拉丁 suspendere「挂起、吊起」（sub-下+pendere 悬挂）。悬在半空=暂时停住。同源 pending、depend。",
+      "roots": [
+        {
+          "part": "sus-",
+          "meaning": "在下、往上托（sub- 变体）"
+        },
+        {
+          "part": "pend",
+          "meaning": "悬挂、称量（拉丁 pendere）"
+        }
+      ],
+      "phonetics": "重音第二音节 /ˈspend/；sus- 弱读 /sə/。",
+      "examples": [
+        {
+          "en": "Your borrowing rights are suspended until you pay the fine.",
+          "zh": "在你缴清罚款前，借阅权限被暂停。",
+          "source": "造句"
+        },
+        {
+          "en": "suspend borrowing privileges",
+          "zh": "暂停借阅权限",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "revoke",
+          "ipa": "/rɪˈvoʊk/",
+          "gloss": "撤销",
+          "note": "suspend 是「暂时中止（可恢复）」；revoke 是「彻底撤销收回」"
+        }
+      ],
+      "nuance": "欠 fine 或书 overdue 时借阅权被 suspend（暂停，付清可恢复），是听力里冲突升级的一步。"
+    },
+    {
+      "word": "refund",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈriːfʌnd/",
+      "subgroup": "verb",
+      "meaning": "n. 退款；v. 退还（钱款）",
+      "core": "refund=「把付出去的钱倒流回来」，如退还可退的押金。",
+      "etymology": "拉丁 refundere「倒回、退回」（re-回+fundere 倒/流）。「把钱倒回去」。同源 fund、fuse、confound。",
+      "roots": [
+        {
+          "part": "re-",
+          "meaning": "回、往回"
+        },
+        {
+          "part": "fund",
+          "meaning": "倒、流（拉丁 fundere）"
+        }
+      ],
+      "phonetics": "名词重音在首 /ˈriː/，长 i；动词也常首重音。别把 -fund 的 u 读成长音。",
+      "examples": [
+        {
+          "en": "You'll get a refund of your deposit when you return the laptop.",
+          "zh": "还回笔记本电脑时会退还你的押金。",
+          "source": "造句"
+        },
+        {
+          "en": "get a refund",
+          "zh": "拿到退款",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "deposit",
+          "ipa": "/dɪˈpɑːzɪt/",
+          "gloss": "押金",
+          "note": "deposit 是先交的可退押金；refund 是把这笔押金退回的动作/款项"
+        }
+      ],
+      "nuance": "deposit（押金）事后可 refund（退回），fee（费用）通常不退，这组关系是听力里的付费细节。"
+    },
+    {
+      "word": "forfeit",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈfɔːrfɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 丧失，被没收（作为处罚）",
+      "core": "forfeit=「因违规而失去本该拥有的东西」，如逾期丢押金/失去权限。",
+      "etymology": "古法 forfaire「越界犯错」（for-出格+faire 做）。因犯错而「被罚没」。",
+      "phonetics": "重音首音节 /ˈfɔːr/，卷舌；-feit 读 /fɪt/，ei 不读长音，t 结尾。",
+      "examples": [
+        {
+          "en": "If you lose the book, you forfeit your deposit.",
+          "zh": "如果你把书弄丢，就会被没收押金。",
+          "source": "造句"
+        },
+        {
+          "en": "forfeit the deposit / your rights",
+          "zh": "丧失押金／权利",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "lose",
+          "ipa": "/luːz/",
+          "gloss": "失去",
+          "note": "forfeit 特指「因违规/未履约而被罚失去」；lose 泛指失去（可能只是遗失）"
+        }
+      ],
+      "nuance": "forfeit 隐含「作为违规代价被没收」，比中性的 lose 语气更重，听力里是处罚后果词。"
+    },
+    {
+      "word": "overview",
+      "levels": [
+        "托福"
+      ],
+      "ipa": "/ˈoʊvərvjuː/",
+      "subgroup": "general",
+      "meaning": "n. 概览，总体介绍",
+      "core": "overview=「居高临下看全局」，先建立主题的大致轮廓。",
+      "etymology": "over（在…之上）+ view（看，拉丁 videre）。「从上方俯看全貌」。",
+      "roots": [
+        {
+          "part": "over-",
+          "meaning": "在上、俯视"
+        },
+        {
+          "part": "view",
+          "meaning": "看、视野（拉丁 videre）"
+        }
+      ],
+      "phonetics": "重音首音节 /ˈoʊ/，双元音；-view 读 /vjuː/ 长 u。",
+      "examples": [
+        {
+          "en": "An encyclopedia gives you a quick overview before you dig deeper.",
+          "zh": "百科全书能让你在深入之前先快速了解概况。",
+          "source": "造句"
+        },
+        {
+          "en": "get an overview of ...",
+          "zh": "对…有个概览",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "summary",
+          "ipa": "/ˈsʌməri/",
+          "gloss": "总结",
+          "note": "overview 侧重「开头的全局介绍」；summary 侧重「结尾把要点归纳一遍」"
+        }
+      ],
+      "nuance": "研究方法建议：先查 encyclopedia 取 overview（概览），再深入找 sources，是听力常见流程。"
+    },
+    {
+      "word": "keep quiet",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/kiːp ˈkwaɪət/",
+      "subgroup": "phrase",
+      "meaning": "phr. 保持安静",
+      "core": "keep quiet=「维持安静状态」，安静区的核心行为要求。",
+      "etymology": "keep（保持某状态）+ quiet（安静的）。「一直维持安静」。",
+      "phonetics": "keep /kiːp/ 长 i；quiet /ˈkwaɪət/ 两音节，别读成单音节 quite。",
+      "examples": [
+        {
+          "en": "Please keep quiet—this is a silent study floor.",
+          "zh": "请保持安静，这是静音学习层。",
+          "source": "造句"
+        },
+        {
+          "en": "keep quiet / keep your voice down",
+          "zh": "保持安静／压低声音",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "keep your voice down",
+          "ipa": "/kiːp jɔːr vɔɪs daʊn/",
+          "gloss": "压低声音",
+          "note": "keep quiet 是完全安静；keep your voice down 是「小声点」（可低声说话）"
+        }
+      ],
+      "nuance": "安静区要 keep quiet（全静）；能小声说话的区常说 keep your voice down（压低声音），程度不同。"
+    },
+    {
+      "word": "look up",
+      "levels": [
+        "基础"
+      ],
+      "ipa": "/lʊk ʌp/",
+      "subgroup": "phrase",
+      "meaning": "phr. 查阅，查找（信息）",
+      "core": "look up=「在工具/系统里查出某条信息」，如查词、查书目。",
+      "etymology": "look（看）+ up（往上翻查）。原指在书里往上翻找条目→泛指查阅。",
+      "phonetics": "look /lʊk/ 短元音；up /ʌp/，两词连读，k 连到 ʌ。",
+      "examples": [
+        {
+          "en": "Let me look up the call number for you in the system.",
+          "zh": "我在系统里帮你查一下索书号。",
+          "source": "造句"
+        },
+        {
+          "en": "look up a word / a title",
+          "zh": "查一个词／查一个书名",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "search for",
+          "ipa": "/sɜːrtʃ fɔːr/",
+          "gloss": "搜寻",
+          "note": "look up 侧重「查出某条具体信息」；search for 侧重「搜索寻找某物」的过程"
+        }
+      ],
+      "nuance": "馆员常说 let me look it up（我查一下）后停顿查系统，是听力里的操作过渡语。"
+    },
+    {
+      "word": "keep an eye out",
+      "levels": [
+        "六级"
+      ],
+      "ipa": "/kiːp ən aɪ aʊt/",
+      "subgroup": "phrase",
+      "meaning": "phr. 留意，留神找",
+      "core": "keep an eye out=「一直留着眼睛替你盯着」，帮你留意某物出现。",
+      "etymology": "keep（保持）+ an eye（一只眼）+ out（向外）。「把眼睛放出去替你盯」。",
+      "phonetics": "eye /aɪ/ + out /aʊt/ 连读，两个双元音相连要清晰；an 弱读 /ən/。",
+      "examples": [
+        {
+          "en": "I'll keep an eye out for that book when returns come in.",
+          "zh": "还书进来时我会留意那本书。",
+          "source": "造句"
+        },
+        {
+          "en": "keep an eye out for ...",
+          "zh": "留意…（等它出现）",
+          "source": "高频搭配"
+        }
+      ],
+      "synonyms": [
+        {
+          "w": "watch for",
+          "ipa": "/wɑːtʃ fɔːr/",
+          "gloss": "留意等待",
+          "note": "keep an eye out 更口语「顺便帮你留意」；watch for 侧重「专门盯着等」"
+        }
+      ],
+      "nuance": "馆员说 I'll keep an eye out（我留意着）暗示「不一定当场解决，但会帮你盯」，是听力里的软承诺。"
+    }
+  ]
+}

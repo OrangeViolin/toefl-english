@@ -1,0 +1,1060 @@
+{
+  "enrich": {
+    "exhibition": {
+      "core": "把藏品「拿出来（ex-）给公众看」的一场展出活动。",
+      "roots": [
+        {"part": "ex-", "meaning": "出、向外"},
+        {"part": "hib (habere)", "meaning": "持有、拿"},
+        {"part": "-ition", "meaning": "名词后缀，表行为"}
+      ]
+    },
+    "exhibit": {
+      "core": "动词是「拿出来展示」，名词是「一件展品/一处展区」——博物馆里最爱考的一词两义。",
+      "roots": [
+        {"part": "ex-", "meaning": "出、向外"},
+        {"part": "hib (habere)", "meaning": "持有、拿"}
+      ],
+      "senses": [
+        {"gloss": "v. 展出，陈列", "logic": "把东西「拿出来」给人看", "en": "The gallery exhibits works by local painters.", "zh": "这家画廊展出本地画家的作品。"},
+        {"gloss": "v. 表现，显示（情绪/特征）", "logic": "把内在状态「拿出来」显露", "en": "The child exhibited signs of great talent.", "zh": "这孩子显露出极高的天赋。"},
+        {"gloss": "n. 展品；（美式）展区", "logic": "被拿出来展示的那件东西/那片区域", "en": "The dinosaur exhibit is on the second floor.", "zh": "恐龙展区在二楼。"}
+      ]
+    },
+    "sculpture": {
+      "core": "从石头或木头里「雕、刻」出来的立体艺术品。",
+      "roots": [
+        {"part": "sculpt (sculpere)", "meaning": "雕、刻"},
+        {"part": "-ure", "meaning": "名词后缀，表结果/行为"}
+      ]
+    },
+    "portrait": {
+      "core": "把一个人的面容轮廓「描画出来」的画像。",
+      "roots": [
+        {"part": "por- (pro-)", "meaning": "向前"},
+        {"part": "trait (traire)", "meaning": "拉、描（同 trace）"}
+      ],
+      "senses": [
+        {"gloss": "n. 肖像，画像", "logic": "描出人的面容", "en": "This portrait of the queen hangs in the main hall.", "zh": "这幅女王肖像挂在主厅。"},
+        {"gloss": "n. 描写，刻画（文字/影视）", "logic": "用文字「描画」出一个形象", "en": "The novel is a vivid portrait of village life.", "zh": "这部小说生动地刻画了乡村生活。"}
+      ]
+    },
+    "canvas": {
+      "core": "用大麻纤维织的粗布，绷在框上就是油画的「画布」。",
+      "roots": [
+        {"part": "canvas (cannabis)", "meaning": "大麻（早期画布的原料）"}
+      ],
+      "senses": [
+        {"gloss": "n. 画布", "logic": "绷起来供油画作画的布", "en": "She stretched a fresh canvas over the frame.", "zh": "她把一块新画布绷在框上。"},
+        {"gloss": "n. 油画（作品）", "logic": "由画布借代其上的画作", "en": "Several early canvases by the artist are on loan.", "zh": "这位艺术家的几幅早期油画是借展的。"}
+      ]
+    },
+    "curator": {
+      "core": "「照管」藏品、策划展览的人——博物馆的专业大脑。",
+      "roots": [
+        {"part": "cur (curare)", "meaning": "照管、看护（同 care、cure）"},
+        {"part": "-ator", "meaning": "表施动者，做…的人"}
+      ]
+    },
+    "admission": {
+      "core": "被「放进来（ad-送进）」这件事——既是入场，也是入场费，还是「承认」放某话进来。",
+      "roots": [
+        {"part": "ad-", "meaning": "向、朝"},
+        {"part": "miss (mittere)", "meaning": "送、放"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "senses": [
+        {"gloss": "n. 入场费；门票钱", "logic": "为「被放进来」付的钱", "en": "Admission is fifteen dollars for adults.", "zh": "成人门票十五美元。"},
+        {"gloss": "n. 准许进入，入场（资格）", "logic": "被放进来这件事本身", "en": "Admission to the special exhibition is by ticket only.", "zh": "特展凭票入场。"},
+        {"gloss": "n. 承认，供认", "logic": "把一句实话「放进来」公开", "en": "Her silence was an admission of guilt.", "zh": "她的沉默等于承认了过错。"}
+      ]
+    },
+    "collection": {
+      "core": "被「一起拣选、聚拢」到一处的一批藏品。",
+      "roots": [
+        {"part": "col- (com-)", "meaning": "一起"},
+        {"part": "lect (legere)", "meaning": "拣选、收集（同 select）"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "senses": [
+        {"gloss": "n. 收藏（品），馆藏", "logic": "聚拢到一起的一批藏品", "en": "The museum's Egyptian collection is world-famous.", "zh": "该馆的埃及藏品举世闻名。"},
+        {"gloss": "n. 收集，募集（行为/款项）", "logic": "把东西/钱聚到一起的动作", "en": "They organized a collection for the restoration fund.", "zh": "他们为修复基金组织了一次募捐。"}
+      ]
+    },
+    "masterpiece": {
+      "core": "行会学徒晋升「师傅」时提交的合格之作——后来专指最高水准的杰作。",
+      "roots": [
+        {"part": "master", "meaning": "师傅、大师"},
+        {"part": "piece", "meaning": "作品、一件"}
+      ]
+    },
+    "preserve": {
+      "core": "「预先守护」使藏品不受损、原样留存。",
+      "roots": [
+        {"part": "pre- (prae-)", "meaning": "预先"},
+        {"part": "serve (servare)", "meaning": "守护、保存（同 conserve、reserve）"}
+      ]
+    },
+    "restore": {
+      "core": "「重新建立回原样」——把残损的文物修复如初。",
+      "roots": [
+        {"part": "re-", "meaning": "再、重新"},
+        {"part": "store (staurare)", "meaning": "建立、竖起"}
+      ]
+    },
+    "depict": {
+      "core": "「完全地画出来」——用画笔或文字把一个场景刻画呈现。",
+      "roots": [
+        {"part": "de-", "meaning": "完全、彻底"},
+        {"part": "pict (pingere)", "meaning": "绘、画（同 paint、picture）"}
+      ]
+    },
+    "artifact": {
+      "core": "「用技艺做成」的人工制品，尤指有历史价值的文物。",
+      "roots": [
+        {"part": "arti (arte)", "meaning": "用技艺（art 的夺格）"},
+        {"part": "fact (facere)", "meaning": "做、造（同 factory、manufacture）"}
+      ]
+    },
+    "replica": {
+      "core": "「折回、重复」原作而做出的忠实复制品。",
+      "roots": [
+        {"part": "re-", "meaning": "再、重复"},
+        {"part": "plica (plicare)", "meaning": "折叠（同 fold、reply）"}
+      ]
+    },
+    "sculptor": {
+      "core": "亲手「雕、刻」出立体作品的雕塑家。",
+      "roots": [
+        {"part": "sculpt (sculpere)", "meaning": "雕、刻"},
+        {"part": "-or", "meaning": "表施动者，做…的人"}
+      ]
+    },
+    "contemporary": {
+      "core": "「同一时间」的——既指当代的，也指与某人同时代的。",
+      "roots": [
+        {"part": "con- (com-)", "meaning": "一同、共同"},
+        {"part": "tempor (tempus)", "meaning": "时间（同 temporal、tempo）"},
+        {"part": "-ary", "meaning": "形容词后缀"}
+      ],
+      "senses": [
+        {"gloss": "adj. 当代的，现代的", "logic": "属于我们这个时代的", "en": "The wing is devoted to contemporary art.", "zh": "这一翼楼专门陈列当代艺术。"},
+        {"gloss": "adj. 同时代的；n. 同时代的人", "logic": "与某人同处一个时间", "en": "Rembrandt and his contemporaries defined the era.", "zh": "伦勃朗和他的同代人定义了那个时代。"}
+      ]
+    },
+    "acquire": {
+      "core": "博物馆「把藏品弄到手」——征集、购入、收进馆藏。",
+      "roots": [
+        {"part": "ac- (ad-)", "meaning": "向、朝"},
+        {"part": "quire (quaerere)", "meaning": "寻求、获得（同 require、inquire）"}
+      ]
+    },
+    "engrave": {
+      "core": "在金属或石头表面「刻出」凹槽纹样。",
+      "roots": [
+        {"part": "en-", "meaning": "使进入、使成为"},
+        {"part": "grave", "meaning": "刻、雕（同 grave 坟墓原意为「挖掘」）"}
+      ]
+    },
+    "heritage": {
+      "core": "祖先「继承下来」的文化遗产。",
+      "roots": [
+        {"part": "herit (heres)", "meaning": "继承人（同 inherit、heir）"},
+        {"part": "-age", "meaning": "名词后缀，表集合/状态"}
+      ]
+    },
+    "wing": {
+      "core": "主楼两侧像「翅膀」一样伸展出去的翼楼、侧厅。",
+      "senses": [
+        {"gloss": "n. 翅膀", "logic": "本义", "en": "The eagle spread its wings.", "zh": "鹰展开双翅。"},
+        {"gloss": "n.（建筑的）翼楼，侧厅", "logic": "主楼向两侧伸展如翅", "en": "The modern art is in the east wing.", "zh": "现代艺术在东翼楼。"}
+      ]
+    },
+    "frame": {
+      "core": "把画「框住」的边框，也指骨架结构。",
+      "senses": [
+        {"gloss": "n. 画框，框架", "logic": "围住画作的边框", "en": "The gilded frame is worth as much as the painting.", "zh": "这鎏金画框和画本身一样值钱。"},
+        {"gloss": "v. 给…装框；构建", "logic": "把东西放进框里", "en": "They framed the sketch and hung it up.", "zh": "他们把素描装框挂了起来。"}
+      ]
+    },
+    "original": {
+      "core": "「起源、最初」的那一件——真迹，区别于复制品。",
+      "roots": [
+        {"part": "origin (oriri)", "meaning": "升起、发源"},
+        {"part": "-al", "meaning": "形容词后缀"}
+      ],
+      "senses": [
+        {"gloss": "n. 原作，真迹", "logic": "最初创作的那一件", "en": "Is this the original or a replica?", "zh": "这是真迹还是复制品？"},
+        {"gloss": "adj. 最初的；原创的", "logic": "位于起源处的、别人没做过的", "en": "The building keeps its original façade.", "zh": "这栋楼保留了最初的外立面。"}
+      ]
+    },
+    "reserve": {
+      "core": "「预先留住」一个名额——把票或导览团位子提前守下来。",
+      "roots": [
+        {"part": "re-", "meaning": "预先、回"},
+        {"part": "serve (servare)", "meaning": "守护、留存"}
+      ]
+    },
+    "refund": {
+      "core": "「把钱倒回去」——退款。",
+      "roots": [
+        {"part": "re-", "meaning": "回、往回"},
+        {"part": "fund (fundere)", "meaning": "倾倒、流（同 fund 资金）"}
+      ]
+    },
+    "specimen": {
+      "core": "供研究观察的一件「样本、标本」，自然史馆里最常见。",
+      "roots": [
+        {"part": "spec (specere)", "meaning": "看（同 inspect、spectacle）"},
+        {"part": "-imen", "meaning": "名词后缀，表物"}
+      ]
+    }
+  },
+  "add": [
+    {
+      "word": "aesthetic",
+      "levels": ["托福", "六级"],
+      "ipa": "/esˈθetɪk/",
+      "subgroup": "desc",
+      "meaning": "adj. 审美的，美学的；美观的 / n. 审美观",
+      "core": "关乎「美感」——一件作品好不好看、一个空间雅不雅致，都归它管。",
+      "etymology": "希腊 aisthetikos『感知的、可感觉的』，源自 aisthesthai『用感官感知』。18 世纪德国哲学家把它专用于「对美的感知」，遂成美学术语。",
+      "roots": [
+        {"part": "aesthe (aisthesthai)", "meaning": "感知、感觉"},
+        {"part": "-tic", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈθe/，读作「es-THE-tik」。开头 aes- 读 /es/，th 是清辅音 /θ/。",
+      "examples": [
+        {"en": "The renovation kept the building's original aesthetic.", "zh": "翻修保留了这栋建筑原有的美学风格。", "source": "造句"},
+        {"en": "aesthetic value / aesthetic appeal", "zh": "审美价值／美感魅力（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "artistic", "ipa": "/ɑːrˈtɪstɪk/", "gloss": "艺术的，有艺术性的", "note": "artistic 强调「有艺术才能/技巧」；aesthetic 强调「关乎美感与审美判断」，更抽象"}
+      ],
+      "nuance": "aesthetic 谈的是「美不美、审美层面」，可作名词指一整套审美取向；artistic 谈的是「艺术技巧高不高」。"
+    },
+    {
+      "word": "acquisition",
+      "levels": ["托福", "六级"],
+      "ipa": "/ˌækwɪˈzɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 购得物，新入藏品；获得，收购",
+      "core": "博物馆新「弄到手」的一件藏品，或「征集入藏」这件事。",
+      "etymology": "拉丁 acquirere『获得』（ad- 向 + quaerere 寻求）+ -ition。同源动词 acquire。博物馆铭牌上的 “Recent Acquisitions” 即「新近入藏」。",
+      "roots": [
+        {"part": "ac- (ad-)", "meaning": "向、朝"},
+        {"part": "quis (quaerere)", "meaning": "寻求、获得"},
+        {"part": "-ition", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈzɪ/，读作「ak-wi-ZI-shn」。cq 读 /kw/。",
+      "examples": [
+        {"en": "This bronze is the museum's latest acquisition.", "zh": "这件青铜器是本馆最新的入藏品。", "source": "造句"},
+        {"en": "recent acquisitions / a new acquisition", "zh": "新近入藏品／一件新藏品（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "purchase", "ipa": "/ˈpɜːrtʃəs/", "gloss": "购入物，购买", "note": "purchase 一定是花钱买的；acquisition 可以是购买、受赠或委托征集，范围更广，也更正式"}
+      ],
+      "nuance": "acquisition 是馆方视角的「新入藏」（不问来源）；purchase 特指花钱买来的那一类。"
+    },
+    {
+      "word": "installation",
+      "levels": ["托福", "六级"],
+      "ipa": "/ˌɪnstəˈleɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 装置艺术；（设备的）安装，装置",
+      "core": "把材料在展厅里「安置成」一整件沉浸式作品——当代艺术的常见形式。",
+      "etymology": "拉丁 installare『安置就位』（in- 入 + stallum 位子、席位）+ -ation。原指「安装设备」，当代艺术借来指「就地布置的整体作品」。",
+      "roots": [
+        {"part": "in-", "meaning": "入、进"},
+        {"part": "stall (stallum)", "meaning": "位子、就位"},
+        {"part": "-ation", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈleɪ/，读作「in-stə-LAY-shn」。",
+      "examples": [
+        {"en": "The light installation fills the entire dark room.", "zh": "这件灯光装置作品占满了整间暗室。", "source": "造句"},
+        {"en": "a video / sound installation", "zh": "影像／声音装置（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sculpture", "ipa": "/ˈskʌlptʃər/", "gloss": "雕塑", "note": "sculpture 是单件立体造型；installation 常由多种材料就地布置、往往可走入其中、强调整体环境体验"}
+      ],
+      "nuance": "sculpture 是「一件立体作品」；installation 是「一整个被布置出来的空间/场景」，观众常置身其中。"
+    },
+    {
+      "word": "retrospective",
+      "levels": ["托福"],
+      "ipa": "/ˌretrəˈspektɪv/",
+      "subgroup": "noun",
+      "meaning": "n. 回顾展 / adj. 回顾的，追溯的",
+      "core": "「回头看」一位艺术家一生创作的回顾展。",
+      "etymology": "拉丁 retro-『向后』+ spec/spect『看』（specere）+ -ive。字面「往回看的」，用于展览即「梳理某人全部生涯之作」。",
+      "roots": [
+        {"part": "retro-", "meaning": "向后、往回"},
+        {"part": "spect (specere)", "meaning": "看（同 inspect、spectacle）"},
+        {"part": "-ive", "meaning": "形容词/名词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈspek/，读作「re-trə-SPEK-tiv」。",
+      "examples": [
+        {"en": "The gallery is holding a retrospective of her forty-year career.", "zh": "画廊正在举办她四十年生涯的回顾展。", "source": "造句"},
+        {"en": "a major retrospective", "zh": "一场大型回顾展（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "exhibition", "ipa": "/ˌeksɪˈbɪʃn/", "gloss": "展览", "note": "exhibition 是泛指的展览；retrospective 特指「回顾单个艺术家整个生涯」的那种展，按时间线铺陈"}
+      ],
+      "nuance": "普通 exhibition 可围绕任何主题；retrospective 一定是回望某人（或某流派）的整段历程。"
+    },
+    {
+      "word": "mosaic",
+      "levels": ["托福"],
+      "ipa": "/moʊˈzeɪɪk/",
+      "subgroup": "noun",
+      "meaning": "n. 马赛克镶嵌画，镶嵌工艺",
+      "core": "用无数小块彩石或玻璃「拼镶」成的图案画。",
+      "etymology": "中世纪拉丁 musaicum『缪斯的作品』，与 museum 同出希腊 mousa（缪斯）——古人视这种精细镶嵌为献给缪斯的技艺。",
+      "phonetics": "重音在第二音节 /ˈzeɪ/，读作「moh-ZAY-ik」。ai 读 /eɪ.ɪ/ 分两个音。",
+      "examples": [
+        {"en": "The Roman floor mosaic depicts a hunting scene.", "zh": "这幅罗马地面镶嵌画描绘了狩猎场景。", "source": "造句"},
+        {"en": "a Byzantine mosaic", "zh": "一幅拜占庭镶嵌画（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fresco", "ipa": "/ˈfreskoʊ/", "gloss": "湿壁画", "note": "fresco 是在湿灰泥上用颜料画；mosaic 是用小块硬材料拼镶，两者都是墙面/地面装饰但工艺完全不同"}
+      ],
+      "nuance": "mosaic 是「拼镶」出来的（小石块/玻璃）；fresco 是「画」出来的（颜料涂在湿灰泥）。"
+    },
+    {
+      "word": "engraving",
+      "levels": ["托福"],
+      "ipa": "/ɪnˈɡreɪvɪŋ/",
+      "subgroup": "noun",
+      "meaning": "n. 版画，雕版；雕刻（工艺）",
+      "core": "在金属板上「刻出」线条、再蘸墨印出的版画。",
+      "etymology": "en-『使』+ grave『刻』（与「坟墓」grave 同根，本义「挖、刻」）+ -ing。指刻版这门工艺及其印出的成品。",
+      "roots": [
+        {"part": "en-", "meaning": "使、令"},
+        {"part": "grave", "meaning": "刻、雕"},
+        {"part": "-ing", "meaning": "名词后缀，表行为/成品"}
+      ],
+      "phonetics": "重音在第二音节 /ˈɡreɪ/，读作「in-GRAY-ving」。",
+      "examples": [
+        {"en": "A collection of 18th-century engravings lines the corridor.", "zh": "走廊两侧陈列着一批 18 世纪版画。", "source": "造句"},
+        {"en": "a copper / steel engraving", "zh": "铜版／钢版画（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "print", "ipa": "/prɪnt/", "gloss": "版画，印刷品", "note": "print 泛指一切印制出的画；engraving 特指用刻版（凹版）方式制作的那一类，线条锐利"}
+      ],
+      "nuance": "print 是上位词（各种版画/印刷）；engraving 特指「刻版印制」这一具体技法。"
+    },
+    {
+      "word": "watercolor",
+      "levels": ["六级"],
+      "ipa": "/ˈwɔːtərˌkʌlər/",
+      "subgroup": "noun",
+      "meaning": "n. 水彩画；水彩颜料",
+      "core": "用水调和颜料、色调透明轻盈的水彩画。",
+      "etymology": "water（水）+ color（颜色）复合而成。颜料以水稀释，故与油画 oil painting 相对。",
+      "roots": [
+        {"part": "water", "meaning": "水（作媒介）"},
+        {"part": "color", "meaning": "颜色、颜料"}
+      ],
+      "phonetics": "重音在首音节 /ˈwɔː/，读作「WAW-ter-kuh-ler」，三节连读。",
+      "examples": [
+        {"en": "Her delicate watercolors capture the morning light.", "zh": "她清透的水彩画捕捉住了晨光。", "source": "造句"},
+        {"en": "a watercolor landscape", "zh": "一幅水彩风景画（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "oil painting", "ipa": "/ˈɔɪl ˌpeɪntɪŋ/", "gloss": "油画", "note": "oil painting 颜料厚重、色彩浓郁、可反复覆盖；watercolor 透明轻薄、难以修改，两种媒介质感相反"}
+      ],
+      "nuance": "watercolor 透明轻盈、以水为媒；oil painting 浓稠厚重、以油为媒，是最常拿来对照的两种画种。"
+    },
+    {
+      "word": "pigment",
+      "levels": ["托福"],
+      "ipa": "/ˈpɪɡmənt/",
+      "subgroup": "noun",
+      "meaning": "n. 颜料，色素",
+      "core": "给画面上色的「彩色粉末」——磨碎调和后就是颜料。",
+      "etymology": "拉丁 pigmentum『颜料』，源自 pingere『绘画』（同 paint、picture、depict）。指未调和的着色物质本身。",
+      "roots": [
+        {"part": "pig (pingere)", "meaning": "绘、画"},
+        {"part": "-ment", "meaning": "名词后缀，表物/结果"}
+      ],
+      "phonetics": "重音在首音节 /ˈpɪɡ/，读作「PIG-ment」。",
+      "examples": [
+        {"en": "Analysis of the pigment helped date the painting.", "zh": "对颜料的分析帮助确定了这幅画的年代。", "source": "造句"},
+        {"en": "natural / mineral pigment", "zh": "天然／矿物颜料（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "paint", "ipa": "/peɪnt/", "gloss": "油漆，涂料，颜料", "note": "pigment 是纯的着色粉末（原料）；paint 是把 pigment 与油/水等调匀后可直接刷的成品"}
+      ],
+      "nuance": "pigment 是「色的原料」（干粉/色素）；paint 是「已调好、能直接用」的颜料。"
+    },
+    {
+      "word": "relic",
+      "levels": ["托福"],
+      "ipa": "/ˈrelɪk/",
+      "subgroup": "noun",
+      "meaning": "n. 遗物，遗迹；圣物",
+      "core": "从旧时代「留下来」的遗物残迹，往往带历史或宗教分量。",
+      "etymology": "拉丁 reliquiae『残留之物』，源自 relinquere『留下、遗弃』（re- 后 + linquere 离开，同 relinquish）。原多指圣徒遗骸圣物，后泛指历史遗存。",
+      "roots": [
+        {"part": "re-", "meaning": "后、遗留"},
+        {"part": "lic (linquere)", "meaning": "离开、留下"}
+      ],
+      "phonetics": "重音在首音节 /ˈre/，读作「REL-ik」。",
+      "examples": [
+        {"en": "These relics survived from the Bronze Age.", "zh": "这些遗物从青铜时代留存至今。", "source": "造句"},
+        {"en": "ancient / cultural relics", "zh": "古代／文化遗物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "artifact", "ipa": "/ˈɑːrtɪfækt/", "gloss": "人工制品，文物", "note": "artifact 强调「人手做的」东西（哪怕不古）；relic 强调「从旧时代残留下来」的年代感与稀缺"}
+      ],
+      "nuance": "artifact 看的是「人造」这一属性；relic 看的是「历经岁月留存」这一时间维度。"
+    },
+    {
+      "word": "excavation",
+      "levels": ["托福"],
+      "ipa": "/ˌekskəˈveɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 发掘，挖掘；出土文物；发掘现场",
+      "core": "把土「挖空掏出」——考古发掘的动作、现场与出土物。",
+      "etymology": "拉丁 excavare『挖空』（ex- 出 + cavare 使空，源自 cavus 空的，同 cave 洞穴）+ -ation。",
+      "roots": [
+        {"part": "ex-", "meaning": "出、向外"},
+        {"part": "cav (cavus)", "meaning": "空的、洞（同 cave）"},
+        {"part": "-ation", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈveɪ/，读作「eks-kə-VAY-shn」。",
+      "examples": [
+        {"en": "The exhibit shows finds from a recent excavation in Egypt.", "zh": "这个展区展示了近期埃及一处发掘的出土文物。", "source": "造句"},
+        {"en": "an archaeological excavation", "zh": "一次考古发掘（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "dig", "ipa": "/dɪɡ/", "gloss": "（考古）发掘现场", "note": "dig 是考古行内的口语说法，指发掘现场/发掘活动；excavation 是正式术语，也可指抽象的「挖掘工程」"}
+      ],
+      "nuance": "excavation 正式、书面，兼指行为与现场；a dig 口语、亲切，多指「一次发掘现场」。"
+    },
+    {
+      "word": "archaeology",
+      "levels": ["六级"],
+      "ipa": "/ˌɑːrkiˈɑːlədʒi/",
+      "subgroup": "noun",
+      "meaning": "n. 考古学",
+      "core": "通过遗物与遗址「研究古代」的学问——博物馆藏品的来源之一。",
+      "etymology": "希腊 archaios『古老的』（arche 起始）+ -logia『学问』。字面「关于古老之物的学问」。同源 archaic、archive。",
+      "roots": [
+        {"part": "archaeo (archaios)", "meaning": "古老、上古"},
+        {"part": "-logy (logia)", "meaning": "…学、学问"}
+      ],
+      "phonetics": "重音在第三音节 /ˈɑː/，读作「ar-ki-OL-ə-ji」。ch 读 /k/。",
+      "examples": [
+        {"en": "The gallery explains how archaeology reconstructs daily life.", "zh": "这个展厅讲解考古学如何重建古人的日常生活。", "source": "造句"},
+        {"en": "underwater / experimental archaeology", "zh": "水下／实验考古学（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "history", "ipa": "/ˈhɪstri/", "gloss": "历史（学）", "note": "history 主要靠文字记载研究过去；archaeology 靠实物遗存（器物、遗址）研究过去，方法不同"}
+      ],
+      "nuance": "history 读「写下来的过去」；archaeology 挖「埋起来的过去」，两者互补印证。"
+    },
+    {
+      "word": "civilization",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˌsɪvələˈzeɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 文明；文明社会",
+      "core": "有城市、文字与制度的「开化社会」——文明史类博物馆的核心叙事线。",
+      "etymology": "拉丁 civilis『市民的、城邦的』（civis 公民，同 city、citizen）+ -ization。字面「变得有城邦秩序的状态」。",
+      "roots": [
+        {"part": "civil (civis)", "meaning": "公民、城邦"},
+        {"part": "-ization", "meaning": "名词后缀，表状态/过程"}
+      ],
+      "phonetics": "重音在第四音节 /ˈzeɪ/，读作「si-və-lə-ZAY-shn」，五节连读。",
+      "examples": [
+        {"en": "The hall traces the rise of ancient Mesopotamian civilization.", "zh": "这个展厅追溯古代美索不达米亚文明的兴起。", "source": "造句"},
+        {"en": "ancient / Western civilization", "zh": "古代／西方文明（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "culture", "ipa": "/ˈkʌltʃər/", "gloss": "文化", "note": "culture 指一群人的生活方式、信仰与艺术（可大可小）；civilization 指发展到城市、文字、国家阶段的整个大社会体系"}
+      ],
+      "nuance": "culture 是任何群体都有的「生活方式」；civilization 特指高度组织化、有城市与文字的大型社会。"
+    },
+    {
+      "word": "dynasty",
+      "levels": ["六级"],
+      "ipa": "/ˈdaɪnəsti/",
+      "subgroup": "noun",
+      "meaning": "n. 朝代，王朝",
+      "core": "同一家族接连统治的一段「朝代」——文物断代常用它当标签。",
+      "etymology": "希腊 dynasteia『统治权』，源自 dynasthai『有力量、能』（同 dynamic）。指一个家族世代掌权的时期。",
+      "roots": [
+        {"part": "dynast (dynasthai)", "meaning": "掌权、有力"},
+        {"part": "-y", "meaning": "名词后缀"}
+      ],
+      "phonetics": "美音重音在首音节 /ˈdaɪ/，读作「DYE-nə-sti」，dy 读 /daɪ/（英音常读 /ˈdɪn-/）。",
+      "examples": [
+        {"en": "This vase dates from the Ming dynasty.", "zh": "这只花瓶出自明朝。", "source": "造句"},
+        {"en": "the Tang / Qing dynasty", "zh": "唐／清朝（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "era", "ipa": "/ˈɪrə/", "gloss": "时代，纪元", "note": "era 是任意划分的「时代」（不必与王室有关）；dynasty 特指「某家族连续统治」的那段朝代"}
+      ],
+      "nuance": "era 泛指一个时代；dynasty 特指「一个统治家族」跨越的时期，博物馆用它给东亚文物断代。"
+    },
+    {
+      "word": "era",
+      "levels": ["托福", "六级"],
+      "ipa": "/ˈɪrə/",
+      "subgroup": "noun",
+      "meaning": "n. 时代，年代，纪元",
+      "core": "以某特征划出的一整段「时代」——展线常按 era 分区。",
+      "etymology": "晚期拉丁 aera『纪年起算点』，原为计数用的铜片。后引申为「一段有共同特征的历史时期」。",
+      "phonetics": "重音在首音节 /ˈɪ/，读作「IR-ə」，两个音节，别读成三个。",
+      "examples": [
+        {"en": "The upper floor covers the industrial era.", "zh": "楼上展区涵盖工业时代。", "source": "造句"},
+        {"en": "a new / modern era", "zh": "新／现代纪元（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "period", "ipa": "/ˈpɪriəd/", "gloss": "时期，阶段", "note": "period 是中性的「一段时间」，长短不限；era 更宏大、更有「以某标志划时代」的分量"}
+      ],
+      "nuance": "period 只是「一段时期」；era 强调这段时期有鲜明特征、足以「自成一个时代」。"
+    },
+    {
+      "word": "monument",
+      "levels": ["托福"],
+      "ipa": "/ˈmɑːnjumənt/",
+      "subgroup": "noun",
+      "meaning": "n. 纪念碑，纪念建筑；遗迹",
+      "core": "为「提醒后人记住」而立的纪念碑或宏伟遗迹。",
+      "etymology": "拉丁 monumentum『提醒物、纪念物』，源自 monere『提醒、警告』（同 monitor、admonish）+ -ment。",
+      "roots": [
+        {"part": "mon (monere)", "meaning": "提醒、警示"},
+        {"part": "-ment", "meaning": "名词后缀，表物"}
+      ],
+      "phonetics": "重音在首音节 /ˈmɑː/，读作「MON-yu-ment」。",
+      "examples": [
+        {"en": "The stone monument commemorates the city's founders.", "zh": "这座石碑纪念这座城市的奠基者。", "source": "造句"},
+        {"en": "a national monument / an ancient monument", "zh": "国家纪念建筑／古代遗迹（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "statue", "ipa": "/ˈstætʃuː/", "gloss": "雕像", "note": "statue 是人或动物的立体塑像；monument 是为纪念而建的碑/建筑，可以包含雕像但目的是「纪念」"}
+      ],
+      "nuance": "statue 关注「是不是人像雕塑」；monument 关注「是不是为纪念而立」，两者可重叠但侧重不同。"
+    },
+    {
+      "word": "architecture",
+      "levels": ["六级", "托福"],
+      "ipa": "/ˈɑːrkɪtektʃər/",
+      "subgroup": "noun",
+      "meaning": "n. 建筑（艺术/风格）；架构",
+      "core": "建筑的「设计艺术与风格」——博物馆本身常就是一件建筑作品。",
+      "etymology": "希腊 arkhitekton『首席工匠』（arkhi- 主、首 + tekton 工匠，同 technique）+ -ure。字面「主匠之艺」。",
+      "roots": [
+        {"part": "archi- (arkhi)", "meaning": "主、首席"},
+        {"part": "tect (tekton)", "meaning": "工匠、建造（同 technique）"},
+        {"part": "-ure", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在首音节 /ˈɑːr/，读作「AR-ki-tek-cher」。ch 读 /k/。",
+      "examples": [
+        {"en": "The museum's glass architecture is an attraction in itself.", "zh": "博物馆的玻璃建筑本身就是一大看点。", "source": "造句"},
+        {"en": "modern / Gothic architecture", "zh": "现代／哥特式建筑（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "building", "ipa": "/ˈbɪldɪŋ/", "gloss": "建筑物", "note": "building 是具体的一栋楼（可数实体）；architecture 是「建筑设计艺术/风格」这门学问或整体气质（多不可数）"}
+      ],
+      "nuance": "building 指「那一栋楼」；architecture 指「建筑的设计与风格」这一抽象维度。"
+    },
+    {
+      "word": "facade",
+      "levels": ["托福"],
+      "ipa": "/fəˈsɑːd/",
+      "subgroup": "noun",
+      "meaning": "n.（建筑的）正立面，门面；假象",
+      "core": "建筑朝街的那张「脸」——正立面，也比喻装出来的表面。",
+      "etymology": "法语 façade，源自意大利 facciata『正面』（faccia 脸，源自拉丁 facies 面容，同 face）。字面「建筑的脸面」。",
+      "roots": [
+        {"part": "fac (facies)", "meaning": "脸、面（同 face）"},
+        {"part": "-ade", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈsɑːd/，读作「fə-SAHD」，c 因原带软音符读 /s/，不读 /k/。",
+      "examples": [
+        {"en": "Restorers spent two years cleaning the marble façade.", "zh": "修复人员花了两年清理这座大理石正立面。", "source": "造句"},
+        {"en": "the building's façade", "zh": "建筑的正立面（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "front", "ipa": "/frʌnt/", "gloss": "正面，前部", "note": "front 泛指任何东西的前面；façade 特指建筑「经设计的正立面」，是专业建筑用语，也带比喻义（假象）"}
+      ],
+      "nuance": "front 是普通的「前面」；façade 特指建筑那面「精心设计、朝外示人」的立面，故引申出「装门面」义。",
+      "senses": [
+        {"gloss": "n. 正立面，门面", "logic": "建筑朝外的脸", "en": "The neoclassical façade dominates the square.", "zh": "这座新古典主义正立面统领着整个广场。"},
+        {"gloss": "n. 假象，伪装", "logic": "装出来的「表面」", "en": "His calm was just a façade.", "zh": "他的镇定只是伪装。"}
+      ]
+    },
+    {
+      "word": "archive",
+      "levels": ["托福"],
+      "ipa": "/ˈɑːrkaɪv/",
+      "subgroup": "noun",
+      "meaning": "n. 档案（馆），案卷 / v. 存档，归档",
+      "core": "系统保存历史文献资料的「档案库」——研究与展览的资料后台。",
+      "etymology": "希腊 arkheion『官署、政府文书处』，源自 arkhe『政府、起始』。原指存放官方记录之所，后泛指档案。",
+      "roots": [
+        {"part": "arch (arkhe)", "meaning": "政府、起始（同 archaeology）"},
+        {"part": "-ive", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在首音节 /ˈɑːr/，读作「AR-kive」，ch 读 /k/，尾 -ive 读 /aɪv/。",
+      "examples": [
+        {"en": "The letters come from the museum's archive.", "zh": "这些信件出自博物馆的档案库。", "source": "造句"},
+        {"en": "the national archives / archive footage", "zh": "国家档案馆／存档影像（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "collection", "ipa": "/kəˈlekʃn/", "gloss": "藏品，馆藏", "note": "collection 多指用于展出的艺术/实物藏品；archive 多指保存备查的文献、记录、影像资料，偏研究用途"}
+      ],
+      "nuance": "collection 是「拿来展出的藏品」；archive 是「留存备查的文档资料」，前台与后台之别。"
+    },
+    {
+      "word": "texture",
+      "levels": ["托福"],
+      "ipa": "/ˈtekstʃər/",
+      "subgroup": "noun",
+      "meaning": "n. 质地，质感；纹理",
+      "core": "作品表面「摸上去/看上去」的质感肌理——赏画时的细节维度。",
+      "etymology": "拉丁 textura『编织、织物结构』，源自 texere『编织』（同 textile、text）。字面「织出来的表面纹理」。",
+      "roots": [
+        {"part": "text (texere)", "meaning": "编织（同 textile、text）"},
+        {"part": "-ure", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在首音节 /ˈtek/，读作「TEKS-cher」。",
+      "examples": [
+        {"en": "The thick paint gives the canvas a rough texture.", "zh": "厚涂的颜料让画布有一种粗糙的质感。", "source": "造句"},
+        {"en": "a smooth / rich texture", "zh": "光滑／丰富的质地（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "surface", "ipa": "/ˈsɜːrfɪs/", "gloss": "表面", "note": "surface 是「表面」这个部位本身；texture 是这表面「摸/看起来的质感特征」（粗糙、细腻等）"}
+      ],
+      "nuance": "surface 指「哪一层面」；texture 指「那层面呈现出的质感」，一个是位置一个是特征。"
+    },
+    {
+      "word": "perspective",
+      "levels": ["托福", "六级"],
+      "ipa": "/pərˈspektɪv/",
+      "subgroup": "noun",
+      "meaning": "n. 透视法；视角，观点",
+      "core": "让平面画出「远近纵深」的透视法，也引申为看事情的视角。",
+      "etymology": "拉丁 perspicere『看透、看清』（per- 透过 + spec/spicere 看）+ -ive。文艺复兴画家用它制造立体纵深错觉。",
+      "roots": [
+        {"part": "per-", "meaning": "透过、贯穿"},
+        {"part": "spect (specere)", "meaning": "看（同 inspect、spectacle）"},
+        {"part": "-ive", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈspek/，读作「pər-SPEK-tiv」。",
+      "examples": [
+        {"en": "The painter used linear perspective to create depth.", "zh": "画家用线性透视法营造纵深感。", "source": "造句"},
+        {"en": "from a historical perspective", "zh": "从历史的视角来看（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "viewpoint", "ipa": "/ˈvjuːpɔɪnt/", "gloss": "观点，立场", "note": "viewpoint 只有「看法/立场」这一层意思；perspective 既有「看法」义，又有绘画专业的「透视法」义"}
+      ],
+      "nuance": "谈想法时 perspective ≈ viewpoint；但在美术馆语境里 perspective 常指「透视法」这门绘画技巧。",
+      "senses": [
+        {"gloss": "n. 透视法", "logic": "让平面看出纵深", "en": "Renaissance artists mastered perspective.", "zh": "文艺复兴画家精通透视法。"},
+        {"gloss": "n. 视角，观点", "logic": "「看透」事情的角度", "en": "The tour offers a fresh perspective on the era.", "zh": "这场导览提供了看待那个时代的新视角。"}
+      ]
+    },
+    {
+      "word": "renowned",
+      "levels": ["六级", "托福"],
+      "ipa": "/rɪˈnaʊnd/",
+      "subgroup": "desc",
+      "meaning": "adj. 著名的，声誉卓著的",
+      "core": "被人「反复叫响名字」的——享有盛誉的名家名作。",
+      "etymology": "古法语 renomer『再三提名、扬名』（re- 再 + nomer 命名，源自拉丁 nomen 名字，同 name、nominate）。字面「名字被一再传诵」。",
+      "roots": [
+        {"part": "re-", "meaning": "再、反复"},
+        {"part": "nown (nomen)", "meaning": "名字（同 name、nominate）"},
+        {"part": "-ed", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈnaʊnd/，读作「ri-NOWND」，ow 读 /aʊ/。",
+      "examples": [
+        {"en": "The gallery is renowned for its Impressionist collection.", "zh": "这家美术馆以其印象派藏品闻名。", "source": "造句"},
+        {"en": "a renowned artist / world-renowned", "zh": "著名艺术家／世界闻名（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "famous", "ipa": "/ˈfeɪməs/", "gloss": "有名的", "note": "famous 中性、可褒可贬、最口语；renowned 更正式、几乎只用于褒义（因才华/成就而受尊崇）"}
+      ],
+      "nuance": "famous 只说「有名」；renowned 更书面、带敬意，专指「因卓越成就而享有盛誉」。"
+    },
+    {
+      "word": "prestigious",
+      "levels": ["六级", "托福"],
+      "ipa": "/preˈstɪdʒəs/",
+      "subgroup": "desc",
+      "meaning": "adj. 有声望的，享有盛誉的",
+      "core": "让人「高看一眼」的——地位高、令人仰慕的机构或荣誉。",
+      "etymology": "拉丁 praestigium『幻术、障眼法』（原带贬义）后转为「令人眩目的威望」。现代义指「因声望而令人敬慕」。",
+      "roots": [
+        {"part": "prestig (praestigium)", "meaning": "令人眩目、威望"},
+        {"part": "-ous", "meaning": "形容词后缀，富有…的"}
+      ],
+      "phonetics": "重音在第二音节 /ˈstɪ/，读作「pre-STIJ-əs」，g 读 /dʒ/。",
+      "examples": [
+        {"en": "The work won a prestigious international art prize.", "zh": "这件作品赢得了一项享有盛誉的国际艺术奖。", "source": "造句"},
+        {"en": "a prestigious museum / award", "zh": "有声望的博物馆／奖项（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "renowned", "ipa": "/rɪˈnaʊnd/", "gloss": "著名的", "note": "renowned 强调「广为人知、名声大」；prestigious 强调「地位高、令人敬仰」，重在身份威望而非知名度"}
+      ],
+      "nuance": "renowned 是「名气大」；prestigious 是「地位高、有威望」——不一定人人知道，但圈内极受尊崇。"
+    },
+    {
+      "word": "immersive",
+      "levels": ["托福"],
+      "ipa": "/ɪˈmɜːrsɪv/",
+      "subgroup": "desc",
+      "meaning": "adj. 沉浸式的，身临其境的",
+      "core": "把观众「浸没进去」的——包裹全身感官的沉浸式展览。",
+      "etymology": "拉丁 immergere『浸入』（in- 入 + mergere 沉、没，同 merge、submerge）+ -ive。字面「使人浸没其中的」。",
+      "roots": [
+        {"part": "im- (in-)", "meaning": "进入、里面"},
+        {"part": "mers (mergere)", "meaning": "沉、浸（同 merge、submerge）"},
+        {"part": "-ive", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈmɜːr/，读作「i-MUR-siv」。",
+      "examples": [
+        {"en": "The immersive exhibit projects the paintings onto every wall.", "zh": "这场沉浸式展览把画作投影到每一面墙上。", "source": "造句"},
+        {"en": "an immersive experience", "zh": "沉浸式体验（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "interactive", "ipa": "/ˌɪntərˈæktɪv/", "gloss": "互动式的", "note": "interactive 强调观众可「操作、参与」；immersive 强调环境「包裹感官、身临其境」，不一定要动手"}
+      ],
+      "nuance": "immersive 是「被环境包住、身临其境」；interactive 是「你能动手参与、有来有往」，侧重不同。"
+    },
+    {
+      "word": "interactive",
+      "levels": ["托福"],
+      "ipa": "/ˌɪntərˈæktɪv/",
+      "subgroup": "desc",
+      "meaning": "adj. 互动式的，交互的",
+      "core": "让观众能「相互作用、动手参与」的展项——按一按、玩一玩。",
+      "etymology": "inter-『相互、之间』+ act『行动』（拉丁 agere 做）+ -ive。字面「彼此有来有往地作用的」。",
+      "roots": [
+        {"part": "inter-", "meaning": "在…之间、相互"},
+        {"part": "act (agere)", "meaning": "做、行动"},
+        {"part": "-ive", "meaning": "形容词后缀"}
+      ],
+      "phonetics": "重音在第三音节 /ˈæk/，读作「in-tər-AK-tiv」。",
+      "examples": [
+        {"en": "Kids love the interactive science displays.", "zh": "孩子们很喜欢那些互动式科学展项。", "source": "造句"},
+        {"en": "an interactive exhibit / screen", "zh": "互动展项／触屏（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "hands-on", "ipa": "/ˌhændzˈɒn/", "gloss": "动手实践的", "note": "hands-on 口语，强调「亲手操作」；interactive 更正式，也涵盖触屏、语音等不一定用手的双向互动"}
+      ],
+      "nuance": "hands-on 就是「亲手上手玩」；interactive 涵盖更广的「双向响应」，包括数字屏幕类。"
+    },
+    {
+      "word": "cloakroom",
+      "levels": ["场景", "口语"],
+      "ipa": "/ˈkloʊkruːm/",
+      "subgroup": "noun",
+      "meaning": "n. 衣帽间，寄存处",
+      "core": "进馆前寄放大衣、背包的「衣帽寄存间」。",
+      "etymology": "cloak（斗篷、外套，源自古法语 cloke）+ room（房间）。字面「放外套的房间」，参观前寄存随身大件的地方。",
+      "roots": [
+        {"part": "cloak", "meaning": "斗篷、外套"},
+        {"part": "room", "meaning": "房间"}
+      ],
+      "phonetics": "重音在首音节 /ˈkloʊk/，读作「KLOHK-room」。oa 读 /oʊ/。",
+      "examples": [
+        {"en": "Please leave large bags at the cloakroom.", "zh": "请把大件行李寄存在衣帽间。", "source": "造句"},
+        {"en": "check something at the cloakroom", "zh": "把某物寄存在衣帽间（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "coat check", "ipa": "/ˈkoʊt tʃek/", "gloss": "衣帽寄存处（美式）", "note": "coat check 是美式常用说法（也指寄存动作）；cloakroom 更英式，也可指洗手间（英式委婉语）"}
+      ],
+      "nuance": "美国人多说 coat check，英国人多说 cloakroom；后者在英式英语里还能婉指「洗手间」。"
+    },
+    {
+      "word": "queue",
+      "levels": ["场景", "口语"],
+      "ipa": "/kjuː/",
+      "subgroup": "verb",
+      "meaning": "v. 排队 / n. 队伍（英式常用）",
+      "core": "一个接一个「排成长龙」等着买票或进场。",
+      "etymology": "法语 queue『尾巴』，源自拉丁 cauda（尾）。人们排成一条像尾巴的长线，故称。拼写有连续三个元音字母 -ueue。",
+      "phonetics": "整词只读一个音 /kjuː/，与字母 Q、单词 cue 同音；后面 -ueue 全部不发音。",
+      "examples": [
+        {"en": "Visitors queued for an hour to see the special exhibition.", "zh": "游客排了一个小时的队才看到特展。", "source": "造句"},
+        {"en": "queue up / join the queue", "zh": "排队／加入队伍（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "line up", "ipa": "/ˈlaɪn ʌp/", "gloss": "排队（美式）", "note": "line up / a line 是美式说法；queue / queue up 是英式说法，语义完全相同，看地区选用"}
+      ],
+      "nuance": "queue 是英式「排队」（名词兼动词）；美式说 line up / stand in line，考试听力两种都可能出现。"
+    },
+    {
+      "word": "voucher",
+      "levels": ["场景", "口语"],
+      "ipa": "/ˈvaʊtʃər/",
+      "subgroup": "noun",
+      "meaning": "n. 代金券，兑换券，凭单",
+      "core": "可换门票或抵扣消费的一张「凭证券」。",
+      "etymology": "源自 vouch『担保、证明』（古法语 voucher 传唤作证，拉丁 vocare 呼叫，同 voice、vocal）+ -er。字面「作凭证之物」。",
+      "roots": [
+        {"part": "vouch (vocare)", "meaning": "担保、作证（同 voice）"},
+        {"part": "-er", "meaning": "名词后缀，表物"}
+      ],
+      "phonetics": "重音在首音节 /ˈvaʊ/，读作「VOW-cher」，ou 读 /aʊ/。",
+      "examples": [
+        {"en": "Show this voucher at the desk to collect your ticket.", "zh": "在服务台出示这张兑换券即可领票。", "source": "造句"},
+        {"en": "a gift / discount voucher", "zh": "礼品券／折扣券（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "coupon", "ipa": "/ˈkuːpɑːn/", "gloss": "优惠券", "note": "coupon 多是剪下/领取的小额优惠券（打折用）；voucher 面额或用途更明确，常可直接抵作门票或全额兑换"}
+      ],
+      "nuance": "coupon 偏「打折的小券」；voucher 偏「能兑换或抵付一定金额的凭单」，正式度更高。"
+    },
+    {
+      "word": "wander",
+      "levels": ["六级", "口语"],
+      "ipa": "/ˈwɑːndər/",
+      "subgroup": "verb",
+      "meaning": "v. 漫步，闲逛；走神",
+      "core": "没有固定路线地「随意游走」——在展厅里慢慢逛。",
+      "etymology": "古英语 wandrian『四处走动』，与 wind（蜿蜒）同源。强调「无目的地转悠」。注意别和 wonder（想知道）混。",
+      "phonetics": "重音在首音节 /ˈwɑːn/，读作「WON-der」，与 wonder /ˈwʌndər/ 元音不同：wander 读 /ɑː/，wonder 读 /ʌ/。",
+      "examples": [
+        {"en": "Feel free to wander through the galleries at your own pace.", "zh": "请随意按自己的节奏在各展厅里闲逛。", "source": "造句"},
+        {"en": "wander around / wander off", "zh": "四处闲逛／走散（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "stroll", "ipa": "/stroʊl/", "gloss": "散步，溜达", "note": "stroll 强调「悠闲、慢悠悠地走」（多有大致方向）；wander 强调「没目的地随意游走」，更容易走岔"}
+      ],
+      "nuance": "stroll 是「悠闲地散步」；wander 是「漫无目的地转」，后者更随机、可能走神走岔。"
+    },
+    {
+      "word": "linger",
+      "levels": ["托福"],
+      "ipa": "/ˈlɪŋɡər/",
+      "subgroup": "verb",
+      "meaning": "v. 逗留，徘徊；（久久）停留",
+      "core": "在一件作品前「舍不得走、多留一会儿」。",
+      "etymology": "中古英语 lengeren『拖延、逗留』，与 long（长）同源。字面「把停留时间拉长」。",
+      "phonetics": "重音在首音节 /ˈlɪŋ/，读作「LING-ger」，ng 后还带 /ɡ/，读 /ˈlɪŋɡər/。",
+      "examples": [
+        {"en": "Many visitors linger in front of the famous portrait.", "zh": "许多游客在那幅名画像前久久驻足。", "source": "造句"},
+        {"en": "linger over / linger on", "zh": "在…上流连／停留（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "pause", "ipa": "/pɔːz/", "gloss": "停顿，暂停", "note": "pause 是「短暂停一下」再继续；linger 是「留恋不去、久久停留」，时间更长、带情感"}
+      ],
+      "nuance": "pause 只是「停一下」；linger 是「迟迟不走、流连」，暗含被吸引、舍不得离开。"
+    },
+    {
+      "word": "contemplate",
+      "levels": ["托福"],
+      "ipa": "/ˈkɑːntəmpleɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 凝视，端详；沉思，考虑",
+      "core": "在作品前「静静凝视、细细思量」——欣赏艺术的理想状态。",
+      "etymology": "拉丁 contemplari『专注观察』（com- 加强 + templum 划出观测天象的圣域）。占卜者在圣域中专注凝视天空，遂引申为「静观深思」。",
+      "roots": [
+        {"part": "con- (com-)", "meaning": "加强语气、一起"},
+        {"part": "templ (templum)", "meaning": "圣域、观测之地（同 temple）"},
+        {"part": "-ate", "meaning": "动词后缀"}
+      ],
+      "phonetics": "重音在首音节 /ˈkɑːn/，读作「KON-tem-plate」。",
+      "examples": [
+        {"en": "She stood quietly, contemplating the vast canvas.", "zh": "她静静站着，凝神端详那幅巨大的油画。", "source": "造句"},
+        {"en": "contemplate a painting / an idea", "zh": "凝视一幅画／思量一个想法（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "gaze", "ipa": "/ɡeɪz/", "gloss": "凝视，注视", "note": "gaze 只是「长时间盯着看」（视觉动作）；contemplate 除了凝视还含「一边看一边深思」的思考层"}
+      ],
+      "nuance": "gaze 是纯粹「长久注视」；contemplate 是「凝视 + 沉思」，看的同时脑子在琢磨。"
+    },
+    {
+      "word": "interpret",
+      "levels": ["托福", "六级"],
+      "ipa": "/ɪnˈtɜːrprət/",
+      "subgroup": "verb",
+      "meaning": "v. 解读，阐释；口译",
+      "core": "把作品或展品的含义「讲解、解读」出来——导览员的核心工作。",
+      "etymology": "拉丁 interpretari『解释、翻译』，源自 interpres『中间人、协商者』。字面「在双方之间牵线传意」，故兼有「阐释」与「口译」义。",
+      "roots": [
+        {"part": "inter-", "meaning": "在…之间"},
+        {"part": "pret (interpres)", "meaning": "中间人、传意者"}
+      ],
+      "phonetics": "重音在第二音节 /ˈtɜːr/，读作「in-TUR-prət」。",
+      "examples": [
+        {"en": "The docent interpreted the symbolism in the mural.", "zh": "讲解员解读了这幅壁画中的象征意义。", "source": "造句"},
+        {"en": "interpret a work / a sign", "zh": "解读一件作品／一个符号（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "explain", "ipa": "/ɪkˈspleɪn/", "gloss": "解释，说明", "note": "explain 是把事情「讲清楚」（多为客观事实）；interpret 是「解读、赋予含义」（带主观理解，可有不同解读）"}
+      ],
+      "nuance": "explain 讲的是「是什么、怎么回事」（客观）；interpret 讲的是「它意味着什么」（主观阐释，允许多解）。"
+    },
+    {
+      "word": "narrate",
+      "levels": ["托福"],
+      "ipa": "/ˈnæreɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 讲述，叙述；配旁白",
+      "core": "把一段故事或展线「娓娓讲出来」——语音导览就是被 narrate 的。",
+      "etymology": "拉丁 narrare『讲述』，源自 gnarus『知晓的』（同 know 的印欧词根）。字面「把知道的事说出来」。",
+      "roots": [
+        {"part": "narr (narrare)", "meaning": "讲述、叙说"},
+        {"part": "-ate", "meaning": "动词后缀"}
+      ],
+      "phonetics": "美音重音在首音节 /ˈnæ/，读作「NAR-ate」（英音常重读第二节 /nəˈreɪt/）。",
+      "examples": [
+        {"en": "The audio guide is narrated by a famous actor.", "zh": "这套语音导览由一位著名演员配音讲述。", "source": "造句"},
+        {"en": "narrate a story / a documentary", "zh": "讲述一个故事／为纪录片配旁白（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "describe", "ipa": "/dɪˈskraɪb/", "gloss": "描述", "note": "describe 是「描绘某物的样子/特征」（静态）；narrate 是「按顺序讲述一段经过/故事」（有时间线）"}
+      ],
+      "nuance": "describe 描「一个东西长什么样」；narrate 讲「一件事怎样发展」，后者带情节与先后顺序。"
+    },
+    {
+      "word": "commission",
+      "levels": ["托福"],
+      "ipa": "/kəˈmɪʃn/",
+      "subgroup": "verb",
+      "meaning": "v. 委托创作 / n. 委托的作品；佣金；委员会",
+      "core": "出资「委托」艺术家专门创作一件作品——很多名作都是被 commission 出来的。",
+      "etymology": "拉丁 committere『委托、交付』（com- 一起 + mittere 送、放，同 admit、mission）+ -ion。字面「把任务交托给某人」。",
+      "roots": [
+        {"part": "com-", "meaning": "一起、共同"},
+        {"part": "miss (mittere)", "meaning": "送、放、托付"},
+        {"part": "-ion", "meaning": "名词后缀"}
+      ],
+      "phonetics": "重音在第二音节 /ˈmɪ/，读作「kə-MISH-n」。",
+      "examples": [
+        {"en": "The church commissioned the artist to paint the ceiling.", "zh": "教堂委托这位画家绘制天顶画。", "source": "造句"},
+        {"en": "a commissioned work / on commission", "zh": "受委托的作品／受委托（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "order", "ipa": "/ˈɔːrdər/", "gloss": "订购，订制", "note": "order 是买现成/标准品的「下单」；commission 是「专门委托为你量身创作」一件独一无二的作品，多用于艺术"}
+      ],
+      "nuance": "order 是订购现成货；commission 是「点名委托某艺术家专门创作」，成品往往独一无二。",
+      "senses": [
+        {"gloss": "v. 委托创作", "logic": "把创作任务交托出去", "en": "They commissioned a mural for the lobby.", "zh": "他们委托为大厅创作一幅壁画。"},
+        {"gloss": "n. 受委托的作品", "logic": "被托付而生的成品", "en": "The statue was a royal commission.", "zh": "这尊雕像是王室委托之作。"},
+        {"gloss": "n. 佣金；委员会", "logic": "交托事务后所付的酬劳/受托办事的机构", "en": "The gallery takes a commission on each sale.", "zh": "画廊在每笔成交中抽取佣金。"}
+      ]
+    },
+    {
+      "word": "unveil",
+      "levels": ["托福", "口语"],
+      "ipa": "/ˌʌnˈveɪl/",
+      "subgroup": "verb",
+      "meaning": "v. 揭幕，为…揭去覆盖物；首次公开",
+      "core": "「揭下遮布」——新作品或新展正式向公众亮相的那一刻。",
+      "etymology": "un-『去除』+ veil『面纱、遮布』（拉丁 velum 帆、幕）。字面「揭去覆盖物」，引申为「首次公开展示」。",
+      "roots": [
+        {"part": "un-", "meaning": "去除、相反"},
+        {"part": "veil (velum)", "meaning": "面纱、遮布"}
+      ],
+      "phonetics": "重音在第二音节 /ˈveɪl/，读作「un-VALE」，ei 读 /eɪ/。",
+      "examples": [
+        {"en": "The museum will unveil its new sculpture next week.", "zh": "博物馆将于下周为新雕塑揭幕。", "source": "造句"},
+        {"en": "unveil a statue / a plan", "zh": "为雕像揭幕／公布一项计划（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "reveal", "ipa": "/rɪˈviːl/", "gloss": "揭示，透露", "note": "reveal 泛指「揭露、透露」任何信息（抽象）；unveil 更具仪式感，多指「正式为实物/大作品揭幕亮相」"}
+      ],
+      "nuance": "reveal 是普通「揭露/透露」；unveil 带揭幕仪式的隆重感，多用于雕像、名作、新品正式亮相。"
+    },
+    {
+      "word": "renovate",
+      "levels": ["托福"],
+      "ipa": "/ˈrenəveɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 翻新，整修（建筑/场馆）",
+      "core": "把老场馆「重新弄新」——大修翻新，常导致临时闭馆。",
+      "etymology": "拉丁 renovare『更新』（re- 再 + novare 使新，源自 novus 新，同 novel、innovate）。字面「使重新变新」。",
+      "roots": [
+        {"part": "re-", "meaning": "再、重新"},
+        {"part": "nov (novus)", "meaning": "新（同 novel、innovate）"},
+        {"part": "-ate", "meaning": "动词后缀"}
+      ],
+      "phonetics": "重音在首音节 /ˈre/，读作「REN-ə-vate」。",
+      "examples": [
+        {"en": "The east wing is closed while they renovate it.", "zh": "东翼楼在整修期间暂停开放。", "source": "造句"},
+        {"en": "renovate a building / a gallery", "zh": "翻修一栋楼／一间展厅（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "restore", "ipa": "/rɪˈstɔːr/", "gloss": "修复", "note": "restore 是「修回原来的样子」（尊重原貌，多用于文物/古画）；renovate 是「整修更新、可现代化改造」（多用于建筑设施）"}
+      ],
+      "nuance": "restore 力求「复原如初」（文物、旧画）；renovate 允许「更新改造、变得更好用」（建筑、场馆）。"
+    },
+    {
+      "word": "conserve",
+      "levels": ["托福", "六级"],
+      "ipa": "/kənˈsɜːrv/",
+      "subgroup": "verb",
+      "meaning": "v. 保护，保存（文物/资源）",
+      "core": "「一起守护」文物免于损坏——博物馆修复保护的专业动作。",
+      "etymology": "拉丁 conservare『妥善保存』（com- 加强 + servare 守护，同 preserve、reserve）。文物领域专指「以科学手段延缓损坏」。",
+      "roots": [
+        {"part": "con- (com-)", "meaning": "加强、一起"},
+        {"part": "serve (servare)", "meaning": "守护、保存"}
+      ],
+      "phonetics": "重音在第二音节 /ˈsɜːrv/，读作「kən-SURV」。",
+      "examples": [
+        {"en": "Experts work to conserve the fragile manuscripts.", "zh": "专家们努力保护这些脆弱的手稿。", "source": "造句"},
+        {"en": "conserve artifacts / energy", "zh": "保护文物／节约能源（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "preserve", "ipa": "/prɪˈzɜːrv/", "gloss": "保存，保护", "note": "两词常通用；文博语境里 conserve 更强调「主动干预、科学处理以延缓损坏」，preserve 更强调「维持原状不使变化」"}
+      ],
+      "nuance": "preserve 侧重「维持不变、留存原样」；conserve 侧重「主动施加保护手段延缓劣化」，是文物修复的专业用词。"
+    },
+    {
+      "word": "donor",
+      "levels": ["场景", "托福"],
+      "ipa": "/ˈdoʊnər/",
+      "subgroup": "noun",
+      "meaning": "n. 捐赠者，赠予人",
+      "core": "把藏品或资金「捐给」博物馆的人——展签上常见「XX 捐赠」。",
+      "etymology": "拉丁 donare『赠送』（donum 礼物，源自 dare 给，同 donate、donation）+ -or。字面「作赠予的人」。",
+      "roots": [
+        {"part": "don (donare)", "meaning": "赠送、给予（同 donate）"},
+        {"part": "-or", "meaning": "表施动者，做…的人"}
+      ],
+      "phonetics": "重音在首音节 /ˈdoʊ/，读作「DOH-ner」，o 读 /oʊ/。",
+      "examples": [
+        {"en": "The painting was left to the museum by a private donor.", "zh": "这幅画是一位私人捐赠者遗赠给博物馆的。", "source": "造句"},
+        {"en": "an anonymous donor / a major donor", "zh": "匿名捐赠者／主要捐赠人（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "patron", "ipa": "/ˈpeɪtrən/", "gloss": "赞助人", "note": "donor 侧重「一次性捐出实物/钱款」；patron 侧重「长期资助、扶持」某艺术家或机构，关系更持续"}
+      ],
+      "nuance": "donor 强调「捐了什么」（多为具体一笔捐赠）；patron 强调「长期赞助扶持」的持续关系。"
+    },
+    {
+      "word": "patron",
+      "levels": ["托福"],
+      "ipa": "/ˈpeɪtrən/",
+      "subgroup": "noun",
+      "meaning": "n. 赞助人，资助者；老主顾",
+      "core": "长期出钱「护着、养着」艺术家或机构的赞助人——文艺复兴名作背后多有 patron。",
+      "etymology": "拉丁 patronus『保护人』，源自 pater『父亲』（同 paternal）。字面「像父亲一样庇护供养的人」。",
+      "roots": [
+        {"part": "patr (pater)", "meaning": "父亲、庇护（同 paternal）"},
+        {"part": "-on", "meaning": "名词后缀，表人"}
+      ],
+      "phonetics": "重音在首音节 /ˈpeɪ/，读作「PAY-tron」，a 读 /eɪ/。",
+      "examples": [
+        {"en": "The Medici family were famous patrons of the arts.", "zh": "美第奇家族是著名的艺术赞助人。", "source": "造句"},
+        {"en": "a patron of the arts", "zh": "艺术赞助人（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sponsor", "ipa": "/ˈspɑːnsər/", "gloss": "赞助商", "note": "sponsor 多是为回报（品牌曝光）而出资，偏商业；patron 传统上是「因热爱艺术而长期供养」，情怀色彩更浓"}
+      ],
+      "nuance": "sponsor 出钱图回报（商业味重）；patron 是「因爱艺术而扶持」，历史上多指供养艺术家的贵族富商。",
+      "senses": [
+        {"gloss": "n. 赞助人，资助者", "logic": "像父亲般庇护供养", "en": "She became a patron of young sculptors.", "zh": "她成了年轻雕塑家的赞助人。"},
+        {"gloss": "n. 老主顾，顾客", "logic": "长期光顾、受店家「照拂」的人", "en": "The café's regular patrons filled every table.", "zh": "咖啡馆的常客坐满了每一张桌子。"}
+      ]
+    }
+  ]
+}
