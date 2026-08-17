@@ -67,17 +67,21 @@
   .wc-mark.ok.on{background:var(--ok);color:#fff;border-color:var(--ok)}
   .wc-mark.no.on{background:var(--bad);color:#fff;border-color:var(--bad)}
   .seg{display:flex;gap:4px}
-  .wc-body{margin-top:10px}
-  .wcard.recite .wc-body{display:none}
-  .wcard.recite.revealed .wc-body{display:block}
-  .wcard.recite{cursor:pointer}
-  .wc-def{font-size:16px;margin-bottom:6px}
-  .wc-mem{font-size:13.5px;color:#6f6656;background:#faf5ea;border-radius:8px;padding:7px 10px;margin:6px 0}
-  .wc-col,.wc-ex{font-size:13px;color:#5f574c;margin-top:5px}
-  .wc-col b,.wc-ex b{color:var(--gold);font-weight:700;margin-right:4px}
-  .wc-ex div,.wc-col div{margin:3px 0;line-height:1.55}
-  .reveal-hint{font-size:12px;color:#c3b79c;margin-top:8px}
-  .wcard.recite.revealed .reveal-hint{display:none}
+  .wc-pos{font-size:11px;color:var(--core);background:#e7f1ee;border-radius:20px;padding:1px 9px;align-self:center}
+  .wc-chev{margin-left:2px;color:#c3b79c;font-size:13px;transition:.2s;align-self:center}
+  .wcard.expandable{cursor:pointer}
+  .wcard.open .wc-chev{transform:rotate(90deg)}
+  .wc-def{font-size:16px;margin-top:8px;font-weight:600}
+  .wc-detail{display:none;margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
+  .wcard.open .wc-detail{display:block}
+  .wc-detail:empty{display:none}
+  .sec{margin:12px 0}
+  .sec:first-child{margin-top:0}
+  .sec-h{font-size:12.5px;font-weight:700;margin-bottom:4px}
+  .sec-h.mem{color:var(--gold)}.sec-h.col{color:var(--core)}.sec-h.ex{color:var(--accent)}
+  .sec-b{font-size:14px;color:#4d463c;line-height:1.65}
+  .sec-b div{margin:3px 0}
+  .wc-mem-box{background:#faf5ea;border-radius:8px;padding:8px 11px}
   .empty{color:var(--muted);text-align:center;padding:40px}
   footer{margin-top:24px;color:#a89a86;font-size:12px}
   @media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}}
@@ -119,8 +123,17 @@ function noCount(arr){ let c=0; for(const w of arr) if(state[w.id]==='no') c++; 
 /* ── 语音 ── */
 let voices=[]; function lv(){ voices = window.speechSynthesis? speechSynthesis.getVoices():[]; }
 if(window.speechSynthesis){ lv(); speechSynthesis.onvoiceschanged=lv; }
+// 与听力系统一致的自然女声（美音）
+function pickVoice(){
+  const pref=['Samantha','Ava','Allison','Susan','Zoe','Nicky','Serena','Karen','Google US English','Microsoft Aria','Microsoft Jenny','Microsoft Zira'];
+  const en=voices.filter(v=>v.lang==='en-US');
+  const pool=en.length?en:voices.filter(v=>v.lang&&v.lang.toLowerCase().startsWith('en'));
+  for(const nm of pref){ const v=pool.find(x=>x.name&&x.name.includes(nm)); if(v) return v; }
+  const fem=pool.find(x=>/female|woman/i.test(x.name||'')); if(fem) return fem;
+  return pool[0]||voices[0]||null;
+}
 function say(t){ if(!window.speechSynthesis) return; speechSynthesis.cancel();
-  const u=new SpeechSynthesisUtterance(t); const v=voices.find(x=>x.lang==='en-US')||voices.find(x=>x.lang&&x.lang.startsWith('en')); if(v)u.voice=v; u.rate=.9; speechSynthesis.speak(u); }
+  const u=new SpeechSynthesisUtterance(t); const v=pickVoice(); if(v)u.voice=v; u.lang='en-US'; u.rate=.95; speechSynthesis.speak(u); }
 
 /* ── 顶栏 ── */
 function renderHeader(){
@@ -175,6 +188,7 @@ function renderStudy(no){
     <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/total*100)}%"></i></div>
     <div class="tools">
       <button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮释义）</button>
+      <button class="tbtn" id="tExpand">展开/收起全部</button>
       <span class="seg">
         <button class="tbtn ${filter==='all'?'on':''}" data-f="all">全部</button>
         <button class="tbtn ${filter==='no'?'on':''}" data-f="no">未掌握</button>
@@ -199,26 +213,37 @@ function renderStudy(no){
   $('#pv').onclick=$('#pv2').onclick=()=>prev!=null&&go(prev);
   $('#nx').onclick=$('#nx2').onclick=()=>next!=null&&go(next);
   $('#tRecite').onclick=()=>{ recite=!recite; save('bcplan:recite',recite); render(); };
+  $('#tExpand').onclick=()=>{ const cs=[...view.querySelectorAll('.wcard.expandable')]; const anyClosed=cs.some(c=>!c.classList.contains('open')); cs.forEach(c=>c.classList.toggle('open',anyClosed)); };
   view.querySelectorAll('.seg [data-f]').forEach(bn=> bn.onclick=()=>{ filter=bn.dataset.f; render(); });
   $('#tAll').onclick=()=>{ lw.forEach(w=>state[w.id]='ok'); save(M_KEY,state); render(); };
 }
 
+const POS_MAP={n:'名词',v:'动词',vt:'动词',vi:'动词',adj:'形容词',a:'形容词',adv:'副词',ad:'副词',prep:'介词',pron:'代词',conj:'连词',art:'冠词',num:'数词',int:'感叹词'};
+function posChip(def){ const m=(def||'').match(/^\s*([a-z]+)\s*\./i); return m? (POS_MAP[m[1].toLowerCase()]||'') : ''; }
+
+// 默认收起，只显示单词行；点击展开详细信息（词根记忆/搭配/例句）
 function cardHtml(w){
-  const st=state[w.id]||''; const cls=(st==='ok'?' ok':st==='no'?' no':''); const rc=recite?' recite':'';
-  const col = w.c&&w.c.length? `<div class="wc-col"><b>搭配</b><div>${w.c.map(esc).join('</div><div>')}</div></div>`:'';
-  const ex  = w.e&&w.e.length? `<div class="wc-ex"><b>例句</b><div>${w.e.map(esc).join('</div><div>')}</div></div>`:'';
-  const mem = w.m? `<div class="wc-mem">${esc(w.m)}</div>`:'';
-  return `<div class="wcard${cls}${rc}" data-id="${esc(w.id)}">
+  const st=state[w.id]||''; const cls=(st==='ok'?' ok':st==='no'?' no':'');
+  const pos=posChip(w.d);
+  const mem = w.m? `<div class="sec"><div class="sec-h mem">🏛 词根 · 联想记忆</div><div class="sec-b wc-mem-box">${esc(w.m)}</div></div>`:'';
+  const col = (w.c&&w.c.length)? `<div class="sec"><div class="sec-h col">🔗 高频搭配</div><div class="sec-b">${w.c.map(x=>'<div>'+esc(x)+'</div>').join('')}</div></div>`:'';
+  const ex  = (w.e&&w.e.length)? `<div class="sec"><div class="sec-h ex">✍️ 例句</div><div class="sec-b">${w.e.map(x=>'<div>'+esc(x)+'</div>').join('')}</div></div>`:'';
+  const recDef = recite? `<div class="sec"><div class="sec-h" style="color:var(--ink)">📖 释义</div><div class="sec-b" style="font-size:16px;font-weight:600">${esc(w.d)}</div></div>`:'';
+  const detail = recDef + mem + col + ex;
+  const expandable = detail.trim()? ' expandable':'';
+  return `<div class="wcard${cls}${expandable}" data-id="${esc(w.id)}">
     <div class="wc-head">
       <span class="wc-word" data-say="${esc(w.w)}">${esc(w.w)}</span>
       <span class="wc-pron">${esc(w.p)}</span>
+      ${pos?`<span class="wc-pos">${pos}</span>`:''}
       <span class="wc-marks">
         <button class="wc-mark ok${st==='ok'?' on':''}">✓ 掌握</button>
         <button class="wc-mark no${st==='no'?' on':''}">✕ 未掌握</button>
       </span>
+      ${expandable?'<span class="wc-chev">▸</span>':''}
     </div>
-    <div class="wc-body"><div class="wc-def">${esc(w.d)}</div>${mem}${col}${ex}</div>
-    ${recite?'<div class="reveal-hint">（背记模式：点卡片显示释义）</div>':''}
+    ${recite?'':`<div class="wc-def">${esc(w.d)}</div>`}
+    <div class="wc-detail">${detail}</div>
   </div>`;
 }
 
@@ -240,7 +265,7 @@ function wireCards(box){
     }
     card.querySelector('.wc-mark.ok').onclick=e=>{ e.stopPropagation(); setState('ok'); };
     card.querySelector('.wc-mark.no').onclick=e=>{ e.stopPropagation(); setState('no'); };
-    if(recite) card.onclick=()=>card.classList.toggle('revealed');
+    if(card.classList.contains('expandable')) card.addEventListener('click', ()=>card.classList.toggle('open'));
   });
 }
 

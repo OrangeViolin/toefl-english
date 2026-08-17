@@ -190,13 +190,17 @@ const KEYS = ['A','B','C','D','E','F'];
 let voices = [];
 function loadVoices(){ voices = window.speechSynthesis ? speechSynthesis.getVoices() : []; }
 if(window.speechSynthesis){ loadVoices(); speechSynthesis.onvoiceschanged = loadVoices; }
+const FEMALE_VOICES=['Samantha','Ava','Allison','Susan','Zoe','Nicky','Serena','Karen','Moira','Tessa','Fiona','Kate','Google US English','Google UK English Female','Microsoft Aria','Microsoft Jenny','Microsoft Zira'];
 function pickVoice(accent, idx){
   const map = {US:'en-US',UK:'en-GB',AU:'en-AU',NZ:'en-EN'};
   const lang = map[accent]||'en-US';
   let c = voices.filter(v=>v.lang===lang);
   if(!c.length) c = voices.filter(v=>v.lang && v.lang.toLowerCase().startsWith('en'));
   if(!c.length) c = voices;
-  return c[idx % (c.length||1)] || null;
+  // 优先自然女声；对话按 idx 在女声池内取不同音色，池不足再回退全体
+  const fem = c.filter(v=>FEMALE_VOICES.some(n=>v.name&&v.name.includes(n)) || /female|woman/i.test(v.name||''));
+  const pool = fem.length? fem : c;
+  return pool[idx % pool.length] || c[0] || null;
 }
 function speakOne(text, accent, idx, rate){
   return new Promise(res=>{
