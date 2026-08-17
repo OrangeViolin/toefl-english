@@ -1,0 +1,276 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+背词计划 · 渲染器
+  data/green-book.json + data/beat-vocab.json  →  index.html（自包含 SPA，双击即用）
+从 english-learner.html 的「背词计划」迁移而来：只保留「按 List 分组 + 一组组过词 + 掌握进度」，
+去掉每日计划 / 循环 / 打卡。UI 换成本项目暖色纸感。
+用法：  python3 build.py
+"""
+import json, os
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+DATA = os.path.join(ROOT, "data")
+
+def trim_green(w):
+    return {"id": w["id"], "l": w["wl"], "w": w["word"], "p": w.get("pronunciation", ""),
+            "d": w["definition"], "m": w.get("memory", ""),
+            "c": w.get("collocations", []), "e": w.get("examples", [])}
+
+def trim_beat(w):
+    return {"id": w["id"], "l": w["list"], "w": w["word"], "p": w.get("pronunciation", ""),
+            "d": w["definition"], "m": w.get("memory", ""), "c": [], "e": []}
+
+def load_source(fname, trim, kw):
+    with open(os.path.join(DATA, fname), encoding="utf-8") as fp:
+        d = json.load(fp)
+    words = [trim(w) for w in d.get("words", []) if w.get("word")]
+    return {"name": d.get("book", kw), "words": words}
+
+PAGE = r"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>背词计划 · 托福词库</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--ok:#2f8f5b;--gold:#c98a00}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px 100px}
+  /* 顶栏 */
+  header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);padding:12px 20px}
+  .hdr-in{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  header h1{font-size:18px;margin:0;font-weight:700}
+  .src{display:flex;gap:6px}
+  .src button{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;color:#5f574c;font-family:inherit}
+  .src button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .ovprog{flex:1;min-width:180px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+  .bar{flex:1;height:8px;background:#ece3d2;border-radius:6px;overflow:hidden}
+  .bar>i{display:block;height:100%;background:linear-gradient(90deg,#2f8f5b,#7bc47f);border-radius:6px;transition:.3s}
+  /* 总览分组网格 */
+  .intro{color:var(--muted);font-size:14px;margin:18px 0 14px}
+  .search{width:100%;max-width:340px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:14px;font-family:inherit;background:var(--card);margin-bottom:16px}
+  .search:focus{outline:none;border-color:var(--accent)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .gcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;transition:.15s;box-shadow:0 2px 10px rgba(150,120,70,.05)}
+  .gcard:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(150,120,70,.13);border-color:#d8c8a8}
+  .gcard.done{border-color:#a9d6b8;background:#f2faf4}
+  .gcard .no{font-size:16px;font-weight:700}
+  .gcard .ct{font-size:12px;color:var(--muted);margin:2px 0 8px}
+  .gcard .pct{font-size:12px;color:var(--core);font-weight:700;margin-top:5px}
+  .gcard.done .pct{color:var(--ok)}
+  .gcard .bar{height:6px;margin-top:2px}
+  /* 搜索结果 */
+  .sres{display:none;flex-direction:column;gap:6px;margin-bottom:16px}
+  .sres.show{display:flex}
+  .srow{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;font-size:14px;display:flex;gap:10px;align-items:baseline}
+  .srow:hover{border-color:#d8c8a8}
+  .srow b{color:var(--accent)}.srow .sl{margin-left:auto;font-size:12px;color:var(--muted)}
+  /* 学习视图 */
+  .study-top{position:sticky;top:57px;z-index:15;background:var(--bg);padding:14px 0 10px}
+  .stitle{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .back{font-size:14px;color:var(--muted);cursor:pointer}
+  .stitle h2{font-size:18px;margin:0}
+  .stitle .cnt{font-size:13px;color:var(--muted)}
+  .tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .tbtn{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer;color:#5f574c;font-family:inherit}
+  .tbtn.on{background:var(--core);color:#fff;border-color:var(--core)}
+  .tbtn:hover{filter:brightness(.98)}
+  .nav{margin-left:auto;display:flex;gap:8px}
+  /* 单词卡 */
+  .cards{margin-top:14px;display:flex;flex-direction:column;gap:12px}
+  .wcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 2px 10px rgba(150,120,70,.04)}
+  .wcard.done{opacity:.62;border-color:#cfe6d5;background:#f7fbf8}
+  .wc-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .wc-word{font-size:22px;font-weight:700;cursor:pointer;letter-spacing:.2px}
+  .wc-word:hover{color:var(--accent)}
+  .wc-word::after{content:"🔊";font-size:13px;margin-left:7px;opacity:.45}
+  .wc-pron{color:var(--core);font-size:15px}
+  .wc-idx{font-size:12px;color:#c3b79c}
+  .wc-mark{margin-left:auto;border:1px solid var(--line);background:#f3ecdd;border-radius:20px;padding:5px 13px;font-size:13px;cursor:pointer;color:#6f6552;font-family:inherit;white-space:nowrap}
+  .wcard.done .wc-mark{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .wc-body{margin-top:10px}
+  .wcard.recite .wc-body{display:none}
+  .wcard.recite.revealed .wc-body{display:block}
+  .wcard.recite{cursor:pointer}
+  .wc-def{font-size:16px;margin-bottom:6px}
+  .wc-mem{font-size:13.5px;color:#6f6656;background:#faf5ea;border-radius:8px;padding:7px 10px;margin:6px 0}
+  .wc-col,.wc-ex{font-size:13px;color:#5f574c;margin-top:5px}
+  .wc-col b,.wc-ex b{color:var(--gold);font-weight:700;margin-right:4px}
+  .wc-ex div,.wc-col div{margin:3px 0;line-height:1.55}
+  .reveal-hint{font-size:12px;color:#c3b79c;margin-top:8px}
+  .wcard.recite.revealed .reveal-hint{display:none}
+  .empty{color:var(--muted);text-align:center;padding:40px}
+  footer{margin-top:24px;color:#a89a86;font-size:12px}
+  @media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}}
+</style>
+</head>
+<body>
+<header><div class="hdr-in">
+  <h1>📚 背词计划</h1>
+  <div class="src" id="src"></div>
+  <div class="ovprog"><span id="ovtxt"></span><span class="bar"><i id="ovbar"></i></span></div>
+</div></header>
+<div class="wrap"><div id="view"></div></div>
+
+<script>
+const VOCAB = __DATA__;
+const M_KEY = 'bcplan:mastered';
+const $ = s => document.querySelector(s);
+const view = $('#view');
+function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function load(k,d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch(e){ return d; } }
+function save(k,v){ localStorage.setItem(k, JSON.stringify(v)); }
+
+let source = load('bcplan:source','green');
+if(!VOCAB[source]) source='green';
+let mastered = load(M_KEY, {});      // {id:1}
+let recite = load('bcplan:recite', false);
+let onlyUn = false;
+let curList = null;                  // null=总览
+
+/* ── 数据辅助 ── */
+function words(){ return VOCAB[source].words; }
+function listMeta(){ const m={}; words().forEach(w=>{ m[w.l]=(m[w.l]||0)+1; });
+  return Object.keys(m).map(Number).sort((a,b)=>a-b).map(n=>({no:n,count:m[n]})); }
+function listWords(no){ return words().filter(w=>w.l===no); }
+function doneCount(arr){ let c=0; for(const w of arr) if(mastered[w.id]) c++; return c; }
+
+/* ── 语音 ── */
+let voices=[]; function lv(){ voices = window.speechSynthesis? speechSynthesis.getVoices():[]; }
+if(window.speechSynthesis){ lv(); speechSynthesis.onvoiceschanged=lv; }
+function say(t){ if(!window.speechSynthesis) return; speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(t); const v=voices.find(x=>x.lang==='en-US')||voices.find(x=>x.lang&&x.lang.startsWith('en')); if(v)u.voice=v; u.rate=.9; speechSynthesis.speak(u); }
+
+/* ── 顶栏 ── */
+function renderHeader(){
+  $('#src').innerHTML = Object.keys(VOCAB).map(k=>`<button data-s="${k}" class="${k===source?'on':''}">${esc(VOCAB[k].name)} · ${VOCAB[k].words.length}</button>`).join('');
+  $('#src').querySelectorAll('button').forEach(b=> b.onclick=()=>{ source=b.dataset.s; save('bcplan:source',source); curList=null; renderHeader(); render(); });
+  const all=words(), dc=doneCount(all);
+  $('#ovtxt').textContent = `已掌握 ${dc} / ${all.length}`;
+  $('#ovbar').style.width = (all.length? dc/all.length*100:0)+'%';
+}
+
+/* ── 路由 ── */
+function render(){ renderHeader(); if(curList==null) renderOverview(); else renderStudy(curList); window.scrollTo(0,0); }
+
+/* ── 总览：分组网格 ── */
+function renderOverview(){
+  const metas=listMeta();
+  let h = `<div class="intro">按 <b>List 分组</b>，一组一组过。点一组进去，逐词看释义/词根记忆/例句，背熟就点「已掌握」。进度自动保存。</div>
+    <input class="search" id="q" placeholder="🔎 搜单词（跳到它所在的 List）…" value="">
+    <div class="sres" id="sres"></div>
+    <div class="grid" id="grid"></div>`;
+  view.innerHTML = h;
+  const grid=$('#grid');
+  grid.innerHTML = metas.map(m=>{ const lw=listWords(m.no); const dc=doneCount(lw); const pct=Math.round(dc/m.count*100);
+    return `<div class="gcard ${dc===m.count?'done':''}" data-no="${m.no}">
+      <div class="no">List ${String(m.no).padStart(2,'0')}</div>
+      <div class="ct">${m.count} 词</div>
+      <div class="bar"><i style="width:${pct}%"></i></div>
+      <div class="pct">${dc===m.count?'✓ 已完成':'已掌握 '+dc+' / '+m.count}</div>
+    </div>`; }).join('');
+  grid.querySelectorAll('.gcard').forEach(c=> c.onclick=()=>{ curList=+c.dataset.no; render(); });
+  // 搜索
+  const q=$('#q'), sres=$('#sres');
+  q.oninput=()=>{ const kw=q.value.trim().toLowerCase(); if(kw.length<2){ sres.classList.remove('show'); grid.style.display=''; return; }
+    const hits=words().filter(w=>w.w.toLowerCase().includes(kw)).slice(0,40);
+    grid.style.display='none'; sres.classList.add('show');
+    sres.innerHTML = hits.length? hits.map(w=>`<div class="srow" data-no="${w.l}"><b>${esc(w.w)}</b><span>${esc(w.d).slice(0,42)}</span><span class="sl">List ${String(w.l).padStart(2,'0')}</span></div>`).join('') : '<div class="empty">没找到</div>';
+    sres.querySelectorAll('.srow').forEach(r=> r.onclick=()=>{ curList=+r.dataset.no; render(); }); };
+}
+
+/* ── 学习视图：一组单词卡 ── */
+function renderStudy(no){
+  const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
+  const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
+  let lw=listWords(no); const total=lw.length; const dc=doneCount(lw);
+  const shown = onlyUn? lw.filter(w=>!mastered[w.id]) : lw;
+  view.innerHTML = `<div class="study-top">
+    <div class="stitle"><span class="back" id="back">← 返回总览</span>
+      <h2>List ${String(no).padStart(2,'0')}</h2>
+      <span class="cnt" id="cnt">${total} 词 · 已掌握 ${dc}</span></div>
+    <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/total*100)}%"></i></div>
+    <div class="tools">
+      <button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮释义）</button>
+      <button class="tbtn ${onlyUn?'on':''}" id="tOnly">只看未掌握</button>
+      <button class="tbtn" id="tAll">本组全标已掌握</button>
+      <span class="nav">
+        <button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一组</button>
+        <button class="tbtn" id="nx" ${next==null?'disabled':''}>下一组 ▶</button>
+      </span>
+    </div></div>
+    <div class="cards" id="cards"></div>
+    <div class="tools" style="margin-top:16px"><span class="back" id="back2">← 返回总览</span><span class="nav">
+      <button class="tbtn" id="pv2" ${prev==null?'disabled':''}>◀ 上一组</button>
+      <button class="tbtn" id="nx2" ${next==null?'disabled':''}>下一组 ▶</button></span></div>`;
+  const cards=$('#cards');
+  cards.innerHTML = shown.length? shown.map(w=>cardHtml(w)).join('') : '<div class="empty">本组已全部掌握 🎉</div>';
+  wireCards(cards);
+  $('#back').onclick=$('#back2').onclick=()=>{ curList=null; render(); };
+  const go=n=>{ curList=n; render(); };
+  $('#pv').onclick=$('#pv2').onclick=()=>prev!=null&&go(prev);
+  $('#nx').onclick=$('#nx2').onclick=()=>next!=null&&go(next);
+  $('#tRecite').onclick=()=>{ recite=!recite; save('bcplan:recite',recite); render(); };
+  $('#tOnly').onclick=()=>{ onlyUn=!onlyUn; render(); };
+  $('#tAll').onclick=()=>{ lw.forEach(w=>mastered[w.id]=1); save(M_KEY,mastered); render(); };
+}
+
+function cardHtml(w){
+  const done=mastered[w.id]?' done':''; const rc=recite?' recite':'';
+  const col = w.c&&w.c.length? `<div class="wc-col"><b>搭配</b><div>${w.c.map(esc).join('</div><div>')}</div></div>`:'';
+  const ex  = w.e&&w.e.length? `<div class="wc-ex"><b>例句</b><div>${w.e.map(esc).join('</div><div>')}</div></div>`:'';
+  const mem = w.m? `<div class="wc-mem">${esc(w.m)}</div>`:'';
+  return `<div class="wcard${done}${rc}" data-id="${esc(w.id)}">
+    <div class="wc-head">
+      <span class="wc-word" data-say="${esc(w.w)}">${esc(w.w)}</span>
+      <span class="wc-pron">${esc(w.p)}</span>
+      <button class="wc-mark">${done?'✓ 已掌握':'标记掌握'}</button>
+    </div>
+    <div class="wc-body"><div class="wc-def">${esc(w.d)}</div>${mem}${col}${ex}</div>
+    ${recite?'<div class="reveal-hint">（背记模式：点卡片显示释义）</div>':''}
+  </div>`;
+}
+
+function wireCards(box){
+  box.querySelectorAll('.wcard').forEach(card=>{
+    const id=card.dataset.id;
+    card.querySelector('.wc-word').onclick=e=>{ e.stopPropagation(); say(e.target.dataset.say); };
+    card.querySelector('.wc-mark').onclick=e=>{ e.stopPropagation();
+      if(mastered[id]) delete mastered[id]; else mastered[id]=1; save(M_KEY,mastered);
+      card.classList.toggle('done'); card.querySelector('.wc-mark').textContent = mastered[id]?'✓ 已掌握':'标记掌握';
+      // 更新计数/进度条
+      const lw=listWords(curList), dc=doneCount(lw);
+      const cnt=$('#cnt'); if(cnt) cnt.textContent=`${lw.length} 词 · 已掌握 ${dc}`;
+      const lb=$('#lbar'); if(lb) lb.style.width=Math.round(dc/lw.length*100)+'%';
+      renderHeader();
+    };
+    if(recite) card.onclick=()=>card.classList.toggle('revealed');
+  });
+}
+
+/* ── 启动 ── */
+render();
+</script>
+</body>
+</html>
+"""
+
+def build():
+    green = load_source("green-book.json", trim_green, "托福单词绿皮书")
+    beat  = load_source("beat-vocab.json", trim_beat, "BEAT 必考2000词")
+    # 名称精简
+    green["name"] = "绿皮书"
+    beat["name"]  = "BEAT 2000"
+    payload = {"green": green, "beat": beat}
+    html = PAGE.replace("__DATA__", json.dumps(payload, ensure_ascii=False))
+    with open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8") as fp:
+        fp.write(html)
+    gl = len({w["l"] for w in green["words"]}); bl = len({w["l"] for w in beat["words"]})
+    print(f"完成：绿皮书 {len(green['words'])}词/{gl}组 + BEAT {len(beat['words'])}词/{bl}组 → index.html "
+          f"({os.path.getsize(os.path.join(ROOT,'index.html'))/1024/1024:.2f} MB)")
+
+if __name__ == "__main__":
+    build()
