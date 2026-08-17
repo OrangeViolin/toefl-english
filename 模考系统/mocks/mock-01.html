@@ -45,10 +45,12 @@
   .opt .k{font-weight:700;color:var(--muted)}
   .opt.sel{border-color:var(--accent);background:#fdf1e6}
   /* 补全单词 */
-  .cw{font-size:16px;line-height:2.4}
+  .cw{font-size:16px;line-height:2.8}
+  .cwword{white-space:nowrap}
   .cw .pre{font-weight:600}
-  .cw input{width:64px;border:0;border-bottom:2px solid var(--accent);background:#fbf1e6;font-size:15px;padding:2px 4px;font-family:inherit;text-align:center}
-  .cw input:focus{outline:none;background:#f6e3d0}
+  .cwc{width:15px;text-align:center;border:0;border-bottom:2px dashed var(--accent);background:transparent;font-size:15px;padding:0 0 1px;margin:0 1.5px;font-family:inherit;color:var(--accent);text-transform:lowercase;caret-color:var(--accent)}
+  .cwc:focus{outline:none;border-bottom-color:var(--core);background:#fbf1e6}
+  .cwc.done{border-bottom-style:solid}
   /* 连词成句 */
   .bs-prompt{background:#eef1fb;border-radius:10px;padding:10px 13px;font-size:14.5px;margin-bottom:12px}
   .bs-slot{min-height:46px;border:2px dashed var(--accent);border-radius:10px;padding:8px;display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:12px;background:#fdf7f0}
@@ -278,22 +280,31 @@ function mcq(key, q, body){
 }
 
 // 补全单词：text 中用 [[shown|answer]] 标每个空
+// 每个缺失字母渲染成一个虚线小格（格子数 = 缺的字母数，即官方 "mi_ _ _" 提示）
 function cwRender(b, body){
   const t = b.task;
-  body.innerHTML = `<div class="instr">填出缺失的字母（首句完整，其后每隔一词挖去后半截）。</div><div class="cw" id="cw"></div>`;
+  body.innerHTML = `<div class="instr">补出每个词缺失的字母：<b>虚线格子的个数 = 还差几个字母</b>（首句完整，其后每隔一词挖去后半截）。</div><div class="cw" id="cw"></div>`;
   const cw = body.querySelector('#cw');
   const parts = t.text.split(/(\[\[[^\]]*\]\])/);
   let bi = 0;
   parts.forEach(p=>{
     const m = p.match(/^\[\[([^|]*)\|([^\]]*)\]\]$/);
     if(m){
-      const idx = bi++; const key = b.id+':b'+idx;
-      const span = document.createElement('span');
-      span.innerHTML = `<span class="pre">${esc(m[1])}</span><input data-k="${key}" size="4" autocomplete="off" spellcheck="false" value="${esc(resp[key]||'')}">`;
-      cw.appendChild(span);
+      const key = b.id+':b'+(bi++), n = m[2].length, cur = resp[key]||'';
+      let boxes = '';
+      for(let j=0;j<n;j++) boxes += `<input class="cwc" maxlength="1" autocomplete="off" spellcheck="false" data-k="${key}" value="${esc(cur[j]||'')}">`;
+      const word = document.createElement('span'); word.className='cwword';
+      word.innerHTML = `<span class="pre">${esc(m[1])}</span>${boxes}`;
+      cw.appendChild(word);
     } else if(p){ cw.appendChild(document.createTextNode(p)); }
   });
-  cw.querySelectorAll('input').forEach(inp=> inp.oninput = ()=>{ resp[inp.dataset.k]=inp.value.trim(); save(); });
+  const list = [...cw.querySelectorAll('.cwc')];
+  function assemble(key){ let s=''; cw.querySelectorAll('.cwc[data-k="'+key+'"]').forEach(x=>{ s+=x.value; x.classList.toggle('done', !!x.value); }); resp[key]=s; save(); }
+  list.forEach((inp,i)=>{
+    inp.classList.toggle('done', !!inp.value);
+    inp.addEventListener('input', ()=>{ inp.value = inp.value.replace(/[^a-zA-Z]/g,'').slice(-1).toLowerCase(); assemble(inp.dataset.k); if(inp.value && list[i+1]) list[i+1].focus(); });
+    inp.addEventListener('keydown', e=>{ if(e.key==='Backspace' && !inp.value && list[i-1]){ list[i-1].focus(); e.preventDefault(); } });
+  });
 }
 
 // 阅读（生活/学术）
