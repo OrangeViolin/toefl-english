@@ -1,0 +1,149 @@
+{
+  "id": "limestone-caves",
+  "title": "The Formation of Limestone Caves",
+  "domain": "地质",
+  "difficulty": 4,
+  "est_words": 735,
+  "intro": "This passage explains how underground caverns are dissolved out of solid rock, how their mineral decorations grow, and how they preserve a record of ancient climates.",
+  "paragraphs": [
+    { "n": 1, "text": "Beneath many of the world's limestone landscapes lies a hidden architecture of tunnels, chambers, and vertical shafts collectively known as karst. Limestone, a rock composed chiefly of calcium carbonate, is virtually insoluble in pure water; what makes cave formation possible is that rainwater is never pure. As droplets fall through the atmosphere and then percolate through the soil—where the decay of plant matter enriches the air with carbon dioxide—they dissolve some of that gas and are converted into a dilute solution of carbonic acid. This mildly acidic water, seeping into cracks and along the bedding planes that separate one layer of rock from another, reacts with the calcium carbonate and slowly carries it away in solution. Because the process depends on the steady renewal of acidified water moving through the rock, caves enlarge fastest where fractures are abundant and where an ample supply of vegetation-rich soil sits above the bedrock." },
+    { "n": 2, "text": "The zone in which this dissolution is most vigorous is closely tied to the water table, the surface below which every pore and crevice in the rock is completely filled with water. Above the water table, in what geologists call the vadose zone, water merely trickles downward under gravity, widening vertical passages as it goes. At and just below the water table, however, water moves laterally in enormous volumes, and it is here that the broad horizontal galleries characteristic of many cave systems are carved out. Should the water table fall—as it commonly does when a nearby river cuts its valley deeper, draining the surrounding rock—the once-flooded galleries are abandoned by the flow that made them and left as air-filled passages, while active dissolution shifts downward to a new level. A cave system displaying several stacked tiers of horizontal passages, each recording a former position of the water table, thus offers geologists a rough chronicle of how the regional landscape has been lowered over time." },
+    { "n": 3, "text": "Once a passage has drained and filled with air, a second process—one of deposition rather than removal—begins to decorate it. ■ Water that has dissolved calcium carbonate on its way down encounters, upon emerging into the open cavity, an atmosphere containing far less carbon dioxide than the soil it passed through. ■ Losing carbon dioxide to this air, the water can no longer hold all of its dissolved mineral, and a trace of calcium carbonate is precipitated at the point where each drop hangs from the ceiling. ■ Over centuries, drop after drop leaves behind a ring of crystal that lengthens into the icicle-like pendant called a stalactite, while the splash of water striking the floor below builds a blunter, upward-growing column known as a stalagmite. ■ Where a stalactite and the stalagmite beneath it eventually meet and fuse, they form a continuous pillar spanning floor to ceiling." },
+    { "n": 4, "text": "It is precisely because these deposits accumulate so gradually, layer upon microscopic layer, that they have become prized archives of past climate. A stalagmite grows only when water is dripping, so a specimen that stopped growing for a span of years records, in the very gap in its layering, an interval when the surface above was too dry or too cold to deliver water underground. Moreover, the calcium carbonate laid down in each layer incorporates minute quantities of other elements and preserves the ratio of heavy to light oxygen atoms present in the seeping water—a ratio that scientists have learned to read as a proxy for the temperature and rainfall prevailing at the surface when the layer formed. By slicing a stalagmite open and dating its bands with radiometric techniques, researchers can reconstruct a year-by-year account of ancient droughts and wet periods reaching back tens of thousands of years, often with a precision that rivals the records locked in ice sheets and deep-sea sediments." },
+    { "n": 5, "text": "The picture of orderly downward growth, though broadly correct, has been complicated by later findings. Some caves, investigators have discovered, were dissolved not from above by descending rainwater but from below, by acidic waters rising from deep within the crust—waters charged not with carbonic acid but with sulfuric acid generated where hydrogen sulfide gas met oxygen near the water table. Such caves, formed by a mechanism wholly independent of surface soil and climate, warn against assuming that every cavern tells the same story. The debate over how large a role this deep-seated process has played is far from settled, and it serves as a reminder that the underground world, hidden from direct observation, still guards mechanisms that geologists are only beginning to map." }
+  ],
+  "glossary": [
+    { "term": "calcium carbonate", "def": "the chief mineral of limestone, chemical formula CaCO₃" },
+    { "term": "water table", "def": "the underground surface below which all rock pores are saturated with water" },
+    { "term": "stalactite", "def": "a mineral deposit that hangs downward from a cave ceiling" }
+  ],
+  "questions": [
+    {
+      "type": "factual",
+      "stem": "According to paragraph 1, rainwater becomes able to dissolve limestone because it",
+      "para": 1,
+      "options": [
+        "grows warmer as it sinks through the soil",
+        "picks up carbon dioxide and turns into a weak acid",
+        "is naturally slightly acidic before it reaches the ground",
+        "carries tiny grains of rock that scrape the limestone"
+      ],
+      "answer": 1,
+      "explain": "原文：雨水穿过富含二氧化碳的土壤，「dissolve some of that gas and are converted into a dilute solution of carbonic acid」——溶入二氧化碳变成弱碳酸，才能溶解石灰岩。B 正确。A 温度原文未提；C 原文强调「rainwater is never pure」但纯净时对石灰岩「virtually insoluble」，酸性来自土壤中的 CO₂ 而非落地前就有，故错；D 是机械磨蚀，非本文的化学溶解机制。"
+    },
+    {
+      "type": "vocabulary",
+      "stem": "The word <b>\"percolate\"</b> in paragraph 1 is closest in meaning to",
+      "para": 1,
+      "highlight": "percolate",
+      "options": ["seep", "evaporate", "freeze", "collect"],
+      "answer": 0,
+      "explain": "percolate ＝（液体）渗滤、慢慢渗过，与 seep 同义。原文说雨水「percolate through the soil」即渗过土壤，下一句又用 seeping 呼应。B「蒸发」、C「结冰」、D「聚集」均不合语境。"
+    },
+    {
+      "type": "factual",
+      "stem": "According to paragraph 2, the broad horizontal galleries of many cave systems are formed mainly",
+      "para": 2,
+      "options": [
+        "high in the vadose zone, where water trickles straight down",
+        "at and just below the water table, where water moves sideways in large volumes",
+        "wherever a river has cut its valley deeper into the rock",
+        "in air-filled passages abandoned by falling water tables"
+      ],
+      "answer": 1,
+      "explain": "原文：「At and just below the water table, however, water moves laterally in enormous volumes, and it is here that the broad horizontal galleries...are carved out」。B 正确。A 的 vadose zone 只是「widening vertical passages（垂直通道）」；C 河流下切导致水位下降、通道被弃置，是后果不是横向大廊道被凿出的地点；D 描述已废弃的空气通道，此时溶蚀已停，不是形成地。"
+    },
+    {
+      "type": "reference",
+      "stem": "The word <b>\"them\"</b> in paragraph 2 refers to",
+      "para": 2,
+      "highlight": "abandoned by the flow that made them",
+      "options": [
+        "the once-flooded galleries",
+        "nearby rivers",
+        "vertical passages",
+        "air-filled passages"
+      ],
+      "answer": 0,
+      "explain": "原句「the once-flooded galleries are abandoned by the flow that made them」——made them 的 them 指「造出这些廊道的水流所造之物」，即 the once-flooded galleries（曾被水淹的廊道）。B 河流并非被水流所造；C、D 均非该句主语所指。"
+    },
+    {
+      "type": "sentence_simplification",
+      "stem": "Which of the following best expresses the essential information in the <b>highlighted sentence</b> in paragraph 2? Incorrect choices change the meaning or leave out essential information.",
+      "para": 2,
+      "highlight": "A cave system displaying several stacked tiers of horizontal passages, each recording a former position of the water table, thus offers geologists a rough chronicle of how the regional landscape has been lowered over time.",
+      "options": [
+        "Geologists prefer cave systems that have only one level of horizontal passages, because these are easier to date.",
+        "Several levels of horizontal passages, each marking a past water-table height, let geologists trace how the land was gradually lowered.",
+        "Because the water table keeps rising, caves develop more and more stacked horizontal passages over time.",
+        "The regional landscape is lowered whenever a new tier of horizontal passages forms inside a cave."
+      ],
+      "answer": 1,
+      "explain": "原句核心：多层横向通道→每层记录一次旧水位→据此可推断地貌被逐步降低的历史。B 全保留。A 编造「偏爱单层且易定年」；C 把水位「fall（下降）」错写成 rising；D 因果颠倒——不是通道形成导致地貌下降，而是地貌下降（河流下切）导致水位降、留下多层通道。"
+    },
+    {
+      "type": "insert_text",
+      "stem": "Look at the four squares [■] in paragraph 3 that indicate where the following sentence could be added. Where would the sentence best fit?",
+      "para": 3,
+      "insert_sentence": "This reversal—from taking up mineral to giving it back—is what turns a bare passage into an ornamented one.",
+      "options": ["方块 ①", "方块 ②", "方块 ③", "方块 ④"],
+      "answer": 1,
+      "explain": "待插句用「This reversal—from taking up mineral to giving it back」总括「先前溶解、如今析出」的逆转，正好承接第②个方块前一句所述——水进入空腔、遇到 CO₂ 稀薄的空气这一转折起点；放在第②方块后，再引出下文「Losing carbon dioxide...precipitated（析出）」的具体过程最连贯。放①处时逆转尚未发生；放③④处则逆转早已在讲沉积细节，总括句失去引领作用。"
+    },
+    {
+      "type": "factual",
+      "stem": "According to paragraph 3, calcium carbonate is deposited from a drop of water because the water",
+      "para": 3,
+      "options": [
+        "cools sharply as soon as it enters the open cavity",
+        "loses carbon dioxide to the cave air and can no longer hold the mineral",
+        "gains carbon dioxide from the soil it has just passed through",
+        "mixes with the splash rising from the cave floor"
+      ],
+      "answer": 1,
+      "explain": "原文：水进入空腔遇到 CO₂ 稀薄的空气，「Losing carbon dioxide to this air, the water can no longer hold all of its dissolved mineral, and a trace of calcium carbonate is precipitated」。B 正确。A 温度骤降原文未提；C 说获得 CO₂ 与「Losing carbon dioxide」相反；D 溅落只与石笋变钝有关，非析出的化学原因。"
+    },
+    {
+      "type": "inference",
+      "stem": "It can be inferred from paragraph 4 that a gap in the layering of a stalagmite indicates",
+      "para": 4,
+      "options": [
+        "a period when the cave was flooded to the ceiling",
+        "a time when the surface above was too dry or too cold to supply dripping water",
+        "an error introduced by the radiometric dating process",
+        "a sudden increase in the amount of heavy oxygen in the water"
+      ],
+      "answer": 1,
+      "explain": "原文：石笋「grows only when water is dripping」，故层理中的空缺「records...an interval when the surface above was too dry or too cold to deliver water underground」。B 正确。A 若被淹没恰恰有水，不符合「停止滴水」；C 层理空缺是自然沉积中断，非定年误差；D 重氧比是读温度/降水的代用指标，与「是否有层」无直接因果。"
+    },
+    {
+      "type": "negative_factual",
+      "stem": "According to paragraph 5, sulfuric-acid caves differ from ordinary limestone caves in that they are",
+      "para": 5,
+      "options": [
+        "dissolved by acidic water rising from deep in the crust",
+        "formed independently of surface soil and climate",
+        "produced where hydrogen sulfide gas meets oxygen near the water table",
+        "carved entirely by rainwater descending from the surface"
+      ],
+      "answer": 3,
+      "explain": "题目问硫酸型洞穴的「不同之处」，D 说「完全由地表下渗的雨水凿成」恰恰是普通碳酸型洞穴的机制，与硫酸型「dissolved not from above by descending rainwater but from below」相反，故为不符合原文的选项。A、B、C 均是原文对硫酸型洞穴的明确描述。"
+    },
+    {
+      "type": "prose_summary",
+      "stem": "An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the <b>THREE</b> answer choices that express the most important ideas in the passage.",
+      "para": null,
+      "intro_sentence": "Limestone caves are shaped by the chemistry of slightly acidic water and can preserve a detailed record of past climate.",
+      "options": [
+        "Acidic rainwater dissolves limestone along cracks, and the level and later fall of the water table govern where passages form and how cave systems become stacked in tiers.",
+        "After a passage drains, water losing carbon dioxide to the cave air deposits calcium carbonate, building stalactites and stalagmites over long spans of time.",
+        "The layered growth of stalagmites records ancient wet and dry periods, allowing scientists to reconstruct climate reaching back tens of thousands of years.",
+        "Because limestone dissolves readily in pure water, caves can enlarge even where no vegetation or soil is present above the rock.",
+        "Most of the world's largest caves are now known to have been dissolved from below by sulfuric acid rather than from above.",
+        "Cave deposits are considered less reliable than ice sheets and deep-sea sediments for studying the climate of the distant past."
+      ],
+      "answer": [0, 1, 2],
+      "explain": "①酸性水沿裂隙溶蚀石灰岩、水位及其下降决定通道位置与多层结构（第1–2段主旨）；②通道排干后水释放 CO₂ 析出碳酸钙、生成钟乳石与石笋（第3段主旨）；③石笋层理记录古气候、可回溯数万年（第4段主旨）。干扰项：④与原文「limestone...is virtually insoluble in pure water」及溶蚀需植被土壤相反；⑤第5段只说硫酸型洞穴存在、其作用大小「far from settled」，并未说多数最大洞穴皆如此；⑥原文说石笋精度「rivals（媲美）冰盖与深海沉积」，非「less reliable」。"
+    }
+  ]
+}

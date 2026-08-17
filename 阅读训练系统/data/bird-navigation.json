@@ -1,0 +1,150 @@
+{
+  "id": "bird-navigation",
+  "title": "How Migratory Birds Find Their Way",
+  "domain": "生物",
+  "difficulty": 5,
+  "est_words": 735,
+  "intro": "This passage examines the several compasses and inherited programs that allow migratory birds to orient across thousands of kilometers.",
+  "paragraphs": [
+    { "n": 1, "text": "Each autumn, billions of songbirds abandon the temperate breeding grounds where they were hatched and travel, often at night and often alone, to wintering areas they have never seen. That a bird weighing no more than a few grams can hold a consistent heading across an ocean or a continent, correcting for winds that push it off course, poses one of the oldest puzzles in animal biology. The difficulty is compounded by the fact that a compass alone is not enough: to steer accurately, an animal must know not merely which way is north but where it currently is relative to its goal. Decades of experiment have gradually revealed that migratory birds do not rely on any single mechanism but instead draw on at least three independent compasses—one tied to the sun, one to the stars, and one to the earth's magnetic field—whose readings are combined and, when they conflict, recalibrated against each other." },
+    { "n": 2, "text": "The sun compass, used by species that migrate during daylight, would be useless without a correction that biologists were slow to appreciate. Because the sun moves across the sky over the course of a day, its position indicates a fixed geographic direction only if the animal consulting it also knows the time. Birds solve this by consulting an internal circadian clock, so that a bearing derived from the sun at dawn is interpreted differently from the same bearing at dusk. The reality of this time compensation was demonstrated in classic experiments in which birds held under artificial light cycles were made to believe that noon fell several hours early or late; when released, such clock-shifted birds departed in a predictably wrong direction, the size of the error matching the size of the imposed shift almost exactly." },
+    { "n": 3, "text": "Night-migrating species, which cannot see the sun, orient instead by the stars—but not, as one might assume, by memorizing individual constellations. The decisive evidence came from a device now known as the Emlen funnel, a cone-shaped cage whose sloping walls record, as inked footprints, the direction in which a caged bird repeatedly tries to depart. ■ When young indigo buntings raised in a planetarium were shown an artificial sky rotating about a false pole star, they later oriented with respect to that false center rather than the true one. ■ The birds, in other words, do not inherit a map of the heavens; they inherit only the rule that the point around which the night sky turns marks north. ■ This center of rotation, unlike any particular star, stays fixed over the roughly 26,000-year cycle during which the identity of the pole star slowly changes. ■ A bird that learns north from rotation therefore acquires a reference that its distant ancestors and remote descendants could all trust." },
+    { "n": 4, "text": "The magnetic compass, the third and in some ways the strangest of the three, differs fundamentally from the magnetic needle of a mariner. Rather than distinguishing north from south by polarity, birds appear to read the inclination, or dip angle, at which field lines meet the earth's surface—an angle that steepens toward the poles and flattens toward the equator. How the animal perceives so faint a field remains contested, and two hypotheses, not necessarily exclusive, dominate the debate. The first locates the sensor in the retina, where a light-sensitive protein called cryptochrome is thought to form pairs of radicals whose chemistry is subtly altered by the surrounding magnetic field, allowing the bird, in effect, to see the field as a pattern superimposed on its visual world. The second proposes that microscopic crystals of magnetite—an iron-bearing mineral—embedded in tissue near the upper beak act as tiny compass needles whose deflection is registered by sensory nerves." },
+    { "n": 5, "text": "Yet no compass, however sophisticated, can by itself explain the achievements of experienced migrants, and here a distinction between two kinds of knowledge becomes essential. Young birds making their first journey appear to run a largely inherited program, sometimes called a clock-and-compass strategy: an internal calendar tells them roughly how long to fly and in which direction, a routine that carries a naive bird to the general region of its species' wintering range. Adults that have completed the trip once, by contrast, can do something a simple program cannot. Displaced experimentally hundreds of kilometers to the side of their normal route, seasoned migrants reorient toward the true goal, whereas juveniles given the same displacement stubbornly hold their original heading and end up in the wrong place. The adults, it appears, have built from experience a true navigational map—an internalized sense of position that lets them correct for being blown or carried off course—so that the compasses of the young mature, over a lifetime, into something closer to genuine navigation." }
+  ],
+  "glossary": [
+    { "term": "cryptochrome", "def": "a light-sensitive protein found in the retina, proposed to underlie magnetic sensing" },
+    { "term": "magnetite", "def": "a naturally magnetic iron-bearing mineral" },
+    { "term": "inclination", "def": "the angle at which the earth's magnetic field lines meet the surface" }
+  ],
+  "questions": [
+    {
+      "type": "factual",
+      "stem": "According to paragraph 1, why is a compass by itself insufficient for a migrating bird?",
+      "para": 1,
+      "options": [
+        "A single compass cannot correct for winds that blow the bird off course.",
+        "Knowing a direction does not tell the bird where it is relative to its destination.",
+        "Most birds are too small to carry more than one sensory organ.",
+        "The three compasses frequently give the bird conflicting readings."
+      ],
+      "answer": 1,
+      "explain": "原文：“to steer accurately, an animal must know not merely which way is north but where it currently is relative to its goal”——只知方向不够，还须知道自己相对目标的位置。B 正确。A 是迁徙难度之一但非「罗盘不够」的原因；C 原文未提；D 属第 1 段末尾另一层信息，非此处论点。"
+    },
+    {
+      "type": "vocabulary",
+      "stem": "The word <b>\"compounded\"</b> in paragraph 1 is closest in meaning to",
+      "para": 1,
+      "highlight": "compounded",
+      "options": ["increased", "explained", "measured", "reversed"],
+      "answer": 0,
+      "explain": "compounded 在此指难度被「加重、加剧」，与 increased 同义。原文说困难「is compounded by the fact that a compass alone is not enough」，即事实使问题更棘手。explained（解释）、measured（测量）、reversed（逆转）均不合语境。"
+    },
+    {
+      "type": "sentence_simplification",
+      "stem": "Which of the following best expresses the essential information in the <b>highlighted sentence</b> in paragraph 2? Incorrect choices change the meaning or leave out essential information.",
+      "para": 2,
+      "highlight": "Because the sun moves across the sky over the course of a day, its position indicates a fixed geographic direction only if the animal consulting it also knows the time.",
+      "options": [
+        "Since the sun changes position through the day, a bird can read a fixed direction from it only if it also knows the time of day.",
+        "The sun moves so quickly across the sky that no bird can use it to find a reliable direction.",
+        "A bird that knows the time of day no longer needs to look at the sun to find its direction.",
+        "Because the sun's position is fixed, birds can use it for direction without tracking the time."
+      ],
+      "answer": 0,
+      "explain": "原句两个核心：①太阳一天中移动→②只有同时知道时间，太阳位置才对应固定方向。A 完整保留。B 编造「移动太快无法使用」；C 说「不再需要看太阳」曲解原意；D 说「太阳位置固定」与原文「moves across the sky」相反。"
+    },
+    {
+      "type": "factual",
+      "stem": "According to paragraph 2, what did the clock-shifted birds do when released?",
+      "para": 2,
+      "options": [
+        "They refused to depart until the artificial light cycle was ended.",
+        "They flew off in a wrong direction by an amount matching the imposed time shift.",
+        "They corrected their heading by consulting the stars instead of the sun.",
+        "They departed in the correct direction despite the altered clock."
+      ],
+      "answer": 1,
+      "explain": "原文：“such clock-shifted birds departed in a predictably wrong direction, the size of the error matching the size of the imposed shift almost exactly”——飞错方向，误差量与被人为移动的时间量相当。B 正确。A、C 原文未提；D 与原文相反。"
+    },
+    {
+      "type": "rhetorical_purpose",
+      "stem": "Why does the author describe the experiment in which <b>\"young indigo buntings raised in a planetarium\"</b> were shown a false pole star?",
+      "para": 3,
+      "highlight": "young indigo buntings raised in a planetarium",
+      "options": [
+        "To prove that indigo buntings migrate farther than other night-flying species",
+        "To show that birds learn north from the sky's rotation rather than inheriting a star map",
+        "To demonstrate that constellations remain unchanged over thousands of years",
+        "To explain how the Emlen funnel records a bird's preferred direction"
+      ],
+      "answer": 1,
+      "explain": "天文馆实验的作用是证明：幼鸟并非天生记住星图，而是学习「夜空旋转中心＝北」这一规则（下句 “they do not inherit a map… they inherit only the rule…” 明说）。B 正确。A 原文未比较迁徙距离；C 与「pole star slowly changes」相悖；D 是 Emlen funnel 的功能，非该实验目的。"
+    },
+    {
+      "type": "reference",
+      "stem": "In the last sentence of paragraph 3, the phrase <b>\"a reference that its distant ancestors and remote descendants could all trust\"</b> refers to",
+      "para": 3,
+      "highlight": "a reference that its distant ancestors and remote descendants could all trust",
+      "options": [
+        "a particular star",
+        "the identity of the pole star",
+        "north learned from the rotation of the sky",
+        "the 26,000-year cycle"
+      ],
+      "answer": 2,
+      "explain": "末句 “A bird that learns north from rotation therefore acquires a reference…”——这个「reference（参照）」正是「从旋转中习得的北」。它不随岁差改变，故祖先与后代都可信赖。C 正确。A 恰恰相反（原文说 unlike any particular star）；B、D 是被对比或提及的背景，非该参照本身。"
+    },
+    {
+      "type": "insert_text",
+      "stem": "Look at the four squares [■] in paragraph 3 that indicate where the following sentence could be added. Where would the sentence best fit?",
+      "para": 3,
+      "insert_sentence": "Because that center never moves, it offers a far more permanent guide than any single bright star could.",
+      "options": ["方块 ①", "方块 ②", "方块 ③", "方块 ④"],
+      "answer": 2,
+      "explain": "待插句以 “that center never moves” 回指前一句刚提出的 “This center of rotation… stays fixed”，并以「比任何亮星更永久」为下一句「pole star slowly changes（极星会缓慢改变）」作铺垫，故置于第③方块（第三、四句之间）最连贯。放①②处「that center」尚无先行词；放④处则打断「rotation→ancestors/descendants」的收束。"
+    },
+    {
+      "type": "negative_factual",
+      "stem": "According to paragraph 4, all of the following are true of the avian magnetic compass EXCEPT:",
+      "para": 4,
+      "options": [
+        "It reads the inclination of the field lines rather than their polarity.",
+        "The dip angle it relies on steepens toward the poles.",
+        "One hypothesis places the sensor in a light-sensitive retinal protein.",
+        "It works like a mariner's magnetic needle by distinguishing north from south."
+      ],
+      "answer": 3,
+      "explain": "原文明说鸟的磁罗盘 “differs fundamentally from the magnetic needle of a mariner” 且 “Rather than distinguishing north from south by polarity”，故 D 与原文相反，为 EXCEPT 选项。A、B、C 均为原文明述（读倾角、向极地变陡、视网膜 cryptochrome 假说）。"
+    },
+    {
+      "type": "inference",
+      "stem": "What can be inferred from paragraph 5 about juvenile birds displaced from their normal route?",
+      "para": 5,
+      "options": [
+        "They possess a navigational map but choose to ignore it.",
+        "They lack the positional knowledge needed to correct for the displacement.",
+        "They reorient more accurately than adults toward the true goal.",
+        "They abandon migration entirely once moved off course."
+      ],
+      "answer": 1,
+      "explain": "原文：被侧向移位后，成鸟能重新朝真正目标定向，而幼鸟「stubbornly hold their original heading and end up in the wrong place」。可推断幼鸟缺乏纠偏所需的位置信息（尚无导航地图）。B 正确。A 与「clock-and-compass」程序不含地图相悖；C 与原文相反；D 原文未提「放弃迁徙」。"
+    },
+    {
+      "type": "prose_summary",
+      "stem": "An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the <b>THREE</b> answer choices that express the most important ideas in the passage.",
+      "para": null,
+      "intro_sentence": "Migratory birds orient over long distances by combining several compasses with programs that mature through experience.",
+      "options": [
+        "Birds carry at least three compasses—based on the sun, the stars, and the magnetic field—and the sun and star compasses depend on an internal clock and on learning north from the sky's rotation.",
+        "The magnetic compass reads the inclination of the earth's field, and two rival hypotheses attribute the sense either to retinal cryptochrome or to magnetite in the beak.",
+        "Naive juveniles follow a largely inherited clock-and-compass program, whereas experienced adults build a true navigational map that lets them correct for displacement.",
+        "Because the pole star changes over a 26,000-year cycle, birds have gradually abandoned star navigation in favor of the magnetic compass.",
+        "Clock-shifted experiments proved that the star compass, not the sun compass, is the mechanism birds use most heavily during daytime flight.",
+        "The Emlen funnel allows researchers to release birds directly into the wild and follow their migration by satellite."
+      ],
+      "answer": [0, 1, 2],
+      "explain": "①三种罗盘 + 太阳罗盘依赖体内时钟、星辰罗盘靠学习旋转中心（第2、3段主旨）；②磁罗盘读倾角，两大假说 cryptochrome / magnetite（第4段主旨）；③幼鸟遗传程序 vs 成鸟经验地图（第5段主旨）。干扰项：④原文说旋转中心不随岁差改变，并未「放弃星辰导航」；⑤clock-shift 实验针对的是「太阳罗盘」，且白天飞行用的是太阳罗盘，选项张冠李戴；⑥Emlen funnel 是记录笼中鸟定向意图的锥形笼，非放归卫星追踪。"
+    }
+  ]
+}

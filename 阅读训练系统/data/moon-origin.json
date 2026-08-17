@@ -1,0 +1,150 @@
+{
+  "id": "moon-origin",
+  "title": "The Origin of Earth's Moon",
+  "domain": "天文",
+  "difficulty": 5,
+  "est_words": 735,
+  "intro": "This passage examines how competing theories have attempted to explain where the Moon came from, and why one hypothesis has come to dominate modern thinking.",
+  "paragraphs": [
+    { "n": 1, "text": "Among the oldest questions in planetary science is that of the Moon's origin, a puzzle rendered unusually difficult by a combination of physical and chemical peculiarities that any successful theory must simultaneously account for. The Moon is exceptionally large relative to its parent planet—far larger, in proportion, than the satellites of the other terrestrial worlds—yet its mean density is markedly lower than Earth's, a discrepancy that points to a fundamental difference in composition. Whereas roughly a third of Earth's mass is locked in a dense iron core, the Moon possesses only a tiny core, if any, and is depleted in iron and in the so-called volatile elements, substances such as water and potassium that vaporize readily when temperatures rise. Reconciling this depletion with the striking chemical similarities the two bodies also share has proved to be the central obstacle confronting every explanation." },
+    { "n": 2, "text": "Before the 1980s, three hypotheses competed for acceptance, and each foundered on a specific difficulty. The capture hypothesis proposed that the Moon formed elsewhere in the solar system and was later seized by Earth's gravity as it wandered past; the objection, seldom overcome, was dynamical, for a body approaching on such a trajectory would ordinarily either collide with Earth or be flung away, capture into a stable orbit requiring an improbably precise set of initial conditions. The co-formation, or double-planet, hypothesis held that Earth and the Moon condensed side by side from the same cloud of material, but if that were so the two bodies ought to share nearly identical bulk compositions—and the Moon's conspicuous shortage of iron flatly contradicts the expectation. The fission hypothesis, which imagined that a rapidly spinning early Earth had shed a blob of mantle material that became the Moon, at least explained the iron deficiency, since Earth's mantle is itself iron-poor; it demanded, however, a rate of rotation far greater than anything the Earth-Moon system now possesses, and no plausible mechanism could account for the loss of that enormous excess of spin." },
+    { "n": 3, "text": "The theory that eventually displaced these rivals, now known as the giant impact hypothesis, emerged from the recognition that the early solar system was a violent place in which collisions between growing planets were commonplace rather than exceptional. According to this model, a Mars-sized body—often given the name Theia—struck the young Earth a glancing blow, and the tremendous energy of the impact vaporized a portion of both objects, ejecting a disk of superheated debris from which the Moon later coalesced. ■ Because the colliding bodies had already differentiated, meaning their iron had already sunk to form cores, the material thrown into orbit was drawn overwhelmingly from the rocky mantles rather than the metallic interiors. ■ The Moon, assembled from this iron-poor debris, would therefore lack a substantial core—precisely the condition that is observed. ■ The intense heating that accompanied the collision would likewise have driven off the volatile elements, explaining why the Moon is so dry. ■ In a single stroke, the hypothesis reconciled several facts that the older theories had been able to address only in isolation." },
+    { "n": 4, "text": "Powerful evidence for the giant impact came from an unexpected quarter, namely the isotopes of oxygen. The relative abundances of oxygen's isotopes vary from one region of the solar system to another, functioning almost as a chemical fingerprint of the location where a body formed; meteorites originating from Mars, for instance, carry an oxygen signature distinctly their own. When lunar rocks returned by the Apollo missions were analyzed, their oxygen isotopes were found to be indistinguishable from Earth's, an identity so close that it strongly implies the two bodies were built from the same reservoir of material. This finding, awkward for the capture hypothesis, sits comfortably with an impact that mixed terrestrial and impactor material thoroughly before the Moon formed." },
+    { "n": 5, "text": "Yet the very isotopic identity that supports the theory has become, paradoxically, its most stubborn difficulty. Computer simulations of the collision consistently predict that the orbiting disk should have consisted largely of material from Theia rather than from Earth, and because there is no reason to assume that a randomly arriving impactor would have possessed Earth's precise isotopic composition, the Moon ought to bear a detectable chemical trace of the intruder. That such a trace has not been convincingly found is the crisis at the heart of the modern debate. Some researchers have responded by positing a far more energetic impact violent enough to have vaporized and homogenized the two bodies completely, while others have revived the possibility that Theia, having formed at a similar distance from the Sun, may simply have shared Earth's composition to begin with. The origin of the Moon, once thought essentially settled, remains a subject of vigorous inquiry." }
+  ],
+  "glossary": [
+    { "term": "volatile elements", "def": "substances such as water and potassium that vaporize easily and are lost when a body is strongly heated" },
+    { "term": "differentiate", "def": "of a planetary body, to separate internally so that dense metal sinks to form a core and lighter rock forms an outer mantle" },
+    { "term": "isotope", "def": "one of two or more forms of an element whose atoms differ in mass" }
+  ],
+  "questions": [
+    {
+      "type": "factual",
+      "stem": "According to paragraph 1, which of the following is true of the Moon compared with Earth?",
+      "para": 1,
+      "options": [
+        "Its mean density is higher because it contains a larger iron core.",
+        "It is small relative to its parent planet compared with other terrestrial satellites.",
+        "It contains far less iron and is poorer in volatile elements.",
+        "It shares no chemical similarities with Earth whatsoever."
+      ],
+      "answer": 2,
+      "explain": "原文：the Moon 「is depleted in iron and in the so-called volatile elements」——月球贫铁且缺挥发性元素，C 正确。A 与原文「density is markedly lower」「only a tiny core」相反；B 与「exceptionally large relative to its parent planet—far larger, in proportion」相反；D 与「striking chemical similarities the two bodies also share」相反。"
+    },
+    {
+      "type": "vocabulary",
+      "stem": "The word <b>\"foundered\"</b> in paragraph 2 is closest in meaning to",
+      "para": 2,
+      "highlight": "foundered",
+      "options": ["failed", "originated", "expanded", "competed"],
+      "answer": 0,
+      "explain": "founder（动词）＝（计划、理论）失败、垮掉。原文说三种假说「each foundered on a specific difficulty」——各自因某个难题而破产，与 failed 同义。expanded、originated、competed 均不合语境。"
+    },
+    {
+      "type": "factual",
+      "stem": "According to paragraph 2, what was the main objection to the capture hypothesis?",
+      "para": 2,
+      "options": [
+        "It could not explain the Moon's shortage of iron.",
+        "It required the early Earth to spin far faster than it does now.",
+        "It predicted that Earth and the Moon would have identical compositions.",
+        "A passing body could rarely settle into a stable orbit rather than colliding or escaping."
+      ],
+      "answer": 3,
+      "explain": "原文：反对捕获说的理由是「dynamical」——经过的天体「would ordinarily either collide with Earth or be flung away」，稳定捕获需要极其苛刻的初始条件，D 正确。A 是共生说的问题；B 是分裂说的问题；C 是共生说的预期，均张冠李戴。"
+    },
+    {
+      "type": "sentence_simplification",
+      "stem": "Which of the following best expresses the essential information in the <b>highlighted sentence</b> in paragraph 2? Incorrect choices change the meaning or leave out essential information.",
+      "para": 2,
+      "highlight": "The fission hypothesis, which imagined that a rapidly spinning early Earth had shed a blob of mantle material that became the Moon, at least explained the iron deficiency, since Earth's mantle is itself iron-poor; it demanded, however, a rate of rotation far greater than anything the Earth-Moon system now possesses, and no plausible mechanism could account for the loss of that enormous excess of spin.",
+      "options": [
+        "The fission hypothesis explained the Moon's low iron by deriving it from Earth's iron-poor mantle, but failed because it needed an impossibly high spin rate whose later loss could not be explained.",
+        "The fission hypothesis was rejected mainly because Earth's mantle contains too much iron to have formed the Moon.",
+        "Although a fast-spinning Earth could easily shed mantle material, the fission hypothesis wrongly predicted that the Moon would be rich in iron.",
+        "The fission hypothesis succeeded because it accounted both for the Moon's iron deficiency and for the system's present rate of rotation."
+      ],
+      "answer": 0,
+      "explain": "原句两个核心：①分裂说用「地幔贫铁」解释了月球缺铁（优点）；②但要求极高自转速率，且无机制解释这份过剩自转如何丢失（致命缺陷）。A 全保留。B 说地幔「含铁太多」与原文 iron-poor 相反；C 说月球「rich in iron」错，且原文并未说甩出地幔「容易」；D 说它「成功」且解释了现自转速率，与原文相反。"
+    },
+    {
+      "type": "reference",
+      "stem": "The word <b>\"it\"</b> in paragraph 2 (\"it demanded, however, a rate of rotation\") refers to",
+      "para": 2,
+      "highlight": "it demanded, however, a rate of rotation",
+      "options": [
+        "the iron deficiency",
+        "the fission hypothesis",
+        "Earth's mantle",
+        "the Earth-Moon system"
+      ],
+      "answer": 1,
+      "explain": "分号前主语是 The fission hypothesis（「at least explained the iron deficiency」），分号后「it demanded... a rate of rotation」承接同一主语——是这个假说「要求」极高自转速率。B 正确。iron deficiency、mantle、system 都不能「要求」某种自转速率。"
+    },
+    {
+      "type": "rhetorical_purpose",
+      "stem": "In paragraph 3, why does the author state that <b>\"the early solar system was a violent place in which collisions between growing planets were commonplace\"</b>?",
+      "para": 3,
+      "highlight": "the early solar system was a violent place in which collisions between growing planets were commonplace",
+      "options": [
+        "To argue that the capture hypothesis was correct after all",
+        "To establish that a giant impact was a plausible, ordinary event rather than a special exception",
+        "To explain why the Moon's oxygen isotopes match Earth's",
+        "To show that Theia was larger than Mars"
+      ],
+      "answer": 1,
+      "explain": "作者强调早期太阳系撞击「commonplace rather than exceptional」，是为了让「巨大撞击」显得可信、合乎常理——为大碰撞假说铺垫合理性。B 正确。A 与文意相反；C 是第 4 段的氧同位素证据，不是此句目的；D 原文说 Theia 是「Mars-sized」，并非更大。"
+    },
+    {
+      "type": "insert_text",
+      "stem": "Look at the four squares [■] in paragraph 3 that indicate where the following sentence could be added. Where would the sentence best fit?",
+      "para": 3,
+      "insert_sentence": "This mismatch in the source of the debris turns out to explain the Moon's low density directly.",
+      "options": ["方块 ①", "方块 ②", "方块 ③", "方块 ④"],
+      "answer": 1,
+      "explain": "待插句以「This mismatch in the source of the debris」回指前一句「material... drawn overwhelmingly from the rocky mantles rather than the metallic interiors」（碎屑来源偏向地幔而非金属核），并引出「low density / lack a substantial core」的因果，正好衔接下一句「The Moon, assembled from this iron-poor debris, would therefore lack a substantial core」。故放在第②个方块最贴合。放在①处时前面尚未出现「debris source」的对比，指代落空。"
+    },
+    {
+      "type": "inference",
+      "stem": "What can be inferred from paragraph 4 about oxygen isotopes in solar system bodies?",
+      "para": 4,
+      "options": [
+        "They are identical throughout the entire solar system.",
+        "They can be used to indicate the region in which a body originally formed.",
+        "They are found only in rocks returned by the Apollo missions.",
+        "They prove that the Moon was captured from near Mars."
+      ],
+      "answer": 1,
+      "explain": "原文：氧同位素丰度「vary from one region of the solar system to another, functioning almost as a chemical fingerprint of the location where a body formed」——可标示天体形成的区域，B 正确。A 与「vary from one region... to another」相反；C 与火星陨石也有各自氧特征相矛盾；D 恰恰相反，月球氧同位素与地球一致而非火星。"
+    },
+    {
+      "type": "negative_factual",
+      "stem": "According to paragraph 5, all of the following are difficulties or responses associated with the giant impact hypothesis EXCEPT:",
+      "para": 5,
+      "options": [
+        "Simulations predict the orbiting disk was made mostly of material from Theia.",
+        "No convincing chemical trace of the impactor has been found in the Moon.",
+        "Some researchers propose an even more energetic, homogenizing impact.",
+        "Lunar rocks contain a clear oxygen signature that differs from Earth's."
+      ],
+      "answer": 3,
+      "explain": "第 4 段已明确月球氧同位素与地球「indistinguishable」，第 5 段也称这种同位素一致性正是理论的支持点与难题所在，故 D「与地球明显不同」与原文相反，是 EXCEPT 项。A（模拟预测碎盘多来自 Theia）、B（未找到撞击体化学痕迹）、C（有人提出更剧烈、可均质化的撞击）均为原文明述。"
+    },
+    {
+      "type": "prose_summary",
+      "stem": "An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the <b>THREE</b> answer choices that express the most important ideas in the passage.",
+      "para": null,
+      "intro_sentence": "Explaining the Moon's origin requires accounting for its low density, tiny iron core, and depletion of volatile elements, along with its chemical similarity to Earth.",
+      "options": [
+        "The three earlier hypotheses—capture, co-formation, and fission—each failed because of a specific dynamical or compositional objection.",
+        "The giant impact hypothesis proposes that a Mars-sized body struck the early Earth, ejecting iron-poor, volatile-depleted mantle debris that formed the Moon.",
+        "The near-identical oxygen isotopes of Earth and the Moon support a common origin but have also become the theory's most stubborn problem.",
+        "The Moon's mean density is now known to be slightly higher than Earth's because of its large metallic core.",
+        "Meteorites from Mars share exactly the same oxygen isotopic signature as rocks returned by the Apollo missions.",
+        "Because a stable capture requires precise conditions, most planetary scientists have returned to the fission hypothesis."
+      ],
+      "answer": [0, 1, 2],
+      "explain": "①三种旧假说各因特定难题失败（第2段主旨）；②大碰撞假说的核心机制——火星大小天体撞击、甩出贫铁贫挥发性物质形成月球（第3段主旨）；③氧同位素一致既支持又困扰该理论（第4–5段主旨）。干扰项：④与原文「density is markedly lower」「only a tiny core」相反；⑤原文说火星陨石的氧特征「distinctly their own」，与月球/地球不同；⑥原文并未说科学家回归分裂说，反而是大碰撞占主导。"
+    }
+  ]
+}

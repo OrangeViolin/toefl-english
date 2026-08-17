@@ -1,0 +1,144 @@
+{
+  "id": "glass-sponges",
+  "title": "Glass Sponges of the Deep Sea",
+  "domain": "生物",
+  "difficulty": 4,
+  "est_words": 720,
+  "intro": "This passage discusses a group of deep-sea animals that build skeletons out of the same mineral found in ordinary glass.",
+  "paragraphs": [
+    { "n": 1, "text": "In the cold, dark waters of the deep ocean, where sunlight never penetrates and food is scarce, live some of the most remarkable animals on Earth: the glass sponges. Unlike the soft, pliable bath sponges familiar from shallow tropical seas, glass sponges construct elaborate skeletons out of silica, the same mineral that forms ordinary window glass and sand. These skeletons, assembled from countless microscopic needles called spicules, give the animals a rigidity and geometric regularity unmatched elsewhere in the sponge world. Some species erect delicate, vase-shaped lattices that stand nearly a meter tall, anchored to the seafloor by tufts of glassy fibers. That an animal with no brain, no muscles, and no true tissues can manufacture such precise structures has long fascinated biologists." },
+    { "n": 2, "text": "The building block of every glass sponge is the spicule, and its formation is a feat of biological engineering. Each spicule begins around a central protein filament, upon which the sponge deposits successive layers of silica drawn from seawater. Because seawater is only weakly saturated with dissolved silica, the animal must actively concentrate the mineral—a process that would be energetically expensive were it not carried out slowly, over months or years. The resulting spicules are not solid rods but are built up in concentric shells, like the rings of a tree, with thin organic sheets separating one layer of glass from the next. This layered, or laminated, architecture turns out to be the key to the material's surprising toughness, a property that has drawn the attention of engineers seeking to imitate it." },
+    { "n": 3, "text": "Ordinary glass is notoriously brittle: a small crack, once started, races through the material and shatters it. The spicules of glass sponges resist this fate. When a crack reaches one of the thin organic layers between silica shells, its energy is dissipated and its progress halted, so that the spicule bends rather than breaks. Researchers who have tested individual spicules found that they can be tied into loose knots without fracturing—behavior no manufactured glass fiber can match. Equally striking is the spicules' ability to conduct light. In at least one species, the anchoring fibers channel light along their length much as commercial optical fibers do, and they do so at temperatures and pressures that would ruin an industrial fiber-drawing process. Whether the sponges make any biological use of this light-guiding ability remains unknown." },
+    { "n": 4, "text": "Glass sponges grow with extraordinary slowness, and this pace has profound consequences for the communities they support. ■ In the deep waters off western Canada, colonies form vast reefs that provide shelter and feeding sites for fish, shrimp, and other invertebrates in an otherwise barren environment. ■ Once these reefs are damaged—by a passing trawl net, for instance—recovery may take centuries, if it occurs at all. ■ Radiometric dating of the largest specimens suggests that some individuals living today began growing more than ten thousand years ago, making them among the longest-lived animals known. ■ For this reason, conservationists increasingly regard deep-sea sponge grounds as fragile, effectively nonrenewable features of the seabed rather than resources that can quickly regenerate." },
+    { "n": 5, "text": "Why glass sponges invest so heavily in silica skeletons is still debated. One long-standing hypothesis holds that the rigid framework simply lifts the animal's filtering surfaces above the seafloor into faster-moving water, improving its access to the sparse particles of food that drift by. A competing view emphasizes defense, noting that a mouthful of glass needles is an unappealing meal for most predators. More recently, some biologists have proposed that silica is favored not for any single advantage but because, in the cold deep sea, it is metabolically cheaper to obtain than the calcium carbonate used by corals and many shallow-water organisms. These explanations are not mutually exclusive, and the true answer may combine all three. What is clear is that the glass sponges, refined over hundreds of millions of years, have solved engineering problems that human designers are only beginning to understand." }
+  ],
+  "glossary": [
+    { "term": "silica", "def": "a hard, glassy mineral (silicon dioxide) that makes up sand and window glass" },
+    { "term": "spicule", "def": "a tiny needle-like skeletal element" }
+  ],
+  "questions": [
+    {
+      "type": "vocabulary",
+      "stem": "The word <b>\"pliable\"</b> in paragraph 1 is closest in meaning to",
+      "para": 1,
+      "highlight": "pliable",
+      "options": ["flexible", "colorful", "ancient", "common"],
+      "answer": 0,
+      "explain": "pliable ＝ 易弯曲的、柔软的，与 flexible 同义。原文用它与后文玻璃海绵「rigidity（坚硬）」作对比，可反推词义。"
+    },
+    {
+      "type": "factual",
+      "stem": "According to paragraph 2, why must a glass sponge <b>actively</b> concentrate silica?",
+      "para": 2,
+      "options": [
+        "Because each spicule must form around a protein filament",
+        "Because seawater holds only a low concentration of dissolved silica",
+        "Because the mineral has to be deposited in a single rapid step",
+        "Because organic sheets block silica from entering the animal"
+      ],
+      "answer": 1,
+      "explain": "原文：“Because seawater is only weakly saturated with dissolved silica, the animal must actively concentrate the mineral”——海水中溶解的二氧化硅浓度很低，所以必须主动富集。B 正确。A 是构造事实但非「主动富集」的原因；C 与「slowly, over months or years」相反；D 原文未提。"
+    },
+    {
+      "type": "vocabulary",
+      "stem": "The word <b>\"laminated\"</b> in paragraph 2 is closest in meaning to",
+      "para": 2,
+      "highlight": "laminated",
+      "options": ["hardened", "hollow", "layered", "polished"],
+      "answer": 2,
+      "explain": "原文自带同义提示：“This layered, or laminated, architecture”——laminated 即 layered（分层的）。"
+    },
+    {
+      "type": "sentence_simplification",
+      "stem": "Which of the following best expresses the essential information in the <b>highlighted sentence</b> in paragraph 2? Incorrect choices change the meaning or leave out essential information.",
+      "para": 2,
+      "highlight": "Because seawater is only weakly saturated with dissolved silica, the animal must actively concentrate the mineral—a process that would be energetically expensive were it not carried out slowly, over months or years.",
+      "options": [
+        "Concentrating silica is so costly that sponges avoid places where seawater lacks the mineral.",
+        "Because seawater holds little dissolved silica, the sponge must gather it actively—a costly task made affordable only by being done slowly.",
+        "Sponges concentrate silica quickly in order to keep the process from becoming too expensive.",
+        "The mineral dissolved in seawater is expensive, so sponges spend months or years searching for it."
+      ],
+      "answer": 1,
+      "explain": "原句三个核心信息：①海水硅少→②必须主动富集→③本应耗能大，但因「缓慢进行」才不昂贵。B 全保留。A 编造「避开某些海域」；C 说「quickly」与原文「slowly」相反；D 把 energetically expensive 误读成「花钱找矿」。"
+    },
+    {
+      "type": "negative_factual",
+      "stem": "According to paragraph 3, all of the following are true of glass sponge spicules EXCEPT:",
+      "para": 3,
+      "options": [
+        "A crack moving through a spicule is stopped when it reaches an organic layer.",
+        "Individual spicules can be tied into knots without breaking.",
+        "In some species the fibers can conduct light along their length.",
+        "Manufactured glass fibers are able to match the spicules' flexibility."
+      ],
+      "answer": 3,
+      "explain": "原文说「tied into loose knots without fracturing—behavior no manufactured glass fiber can match」，即人造玻璃纤维**做不到**这种柔韧，故 D 是与原文相反的说法（EXCEPT 选它）。A、B、C 均为原文明述。"
+    },
+    {
+      "type": "inference",
+      "stem": "What can be inferred from paragraph 3 about the manufacture of commercial optical fibers?",
+      "para": 3,
+      "options": [
+        "It requires higher temperatures and pressures than those at which glass sponges form their fibers.",
+        "It produces fibers that can be tied into knots without breaking.",
+        "It has largely been replaced by methods copied from glass sponges.",
+        "It yields fibers that conduct light less efficiently than sponge fibers do."
+      ],
+      "answer": 0,
+      "explain": "原文：海绵在「would ruin an industrial fiber-drawing process」的温压下也能造纤维。既然工业制程会被这种温压「毁掉」，可推断工业制程需要更高的温压（更苛刻）。A 正确。B、C、D 原文都没有依据。"
+    },
+    {
+      "type": "rhetorical_purpose",
+      "stem": "Why does the author mention that spicules <b>\"can be tied into loose knots\"</b>?",
+      "para": 3,
+      "highlight": "tied into loose knots",
+      "options": [
+        "To show that spicules are too weak to support the animal",
+        "To give a vivid example of the spicules' surprising resistance to breaking",
+        "To explain how the sponge anchors itself to the seafloor",
+        "To argue that spicules are more useful than commercial optical fibers"
+      ],
+      "answer": 1,
+      "explain": "该细节紧接「bends rather than breaks」，是为了生动例证 spicule 反常的柔韧、不易折断，与普通易碎玻璃形成对比。B 正确。"
+    },
+    {
+      "type": "factual",
+      "stem": "According to paragraph 4, glass sponge reefs off western Canada are important mainly because they",
+      "para": 4,
+      "options": [
+        "grow more quickly than reefs found elsewhere",
+        "are able to regenerate within a few years after being damaged",
+        "provide habitat and feeding sites for animals in an otherwise barren area",
+        "are the only reefs known to be built without silica"
+      ],
+      "answer": 2,
+      "explain": "原文：reefs「provide shelter and feeding sites for fish, shrimp, and other invertebrates in an otherwise barren environment」。C 正确。B 与「recovery may take centuries」相反；A、D 原文未提。"
+    },
+    {
+      "type": "insert_text",
+      "stem": "Look at the four squares [■] in paragraph 4 that indicate where the following sentence could be added. Where would the sentence best fit?",
+      "para": 4,
+      "insert_sentence": "Such longevity means that a reef destroyed in a single afternoon represents the accumulated growth of many human lifetimes.",
+      "options": ["方块 ①", "方块 ②", "方块 ③", "方块 ④"],
+      "answer": 3,
+      "explain": "待插句以「Such longevity」回指前一句「some individuals began growing more than ten thousand years ago」（长寿），并顺势引出下一句「For this reason, conservationists…」的保护主张，故放在第 ④ 个方块最合适。"
+    },
+    {
+      "type": "prose_summary",
+      "stem": "An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the <b>THREE</b> answer choices that express the most important ideas in the passage.",
+      "para": null,
+      "intro_sentence": "Glass sponges are deep-sea animals whose silica skeletons have remarkable properties and ecological importance.",
+      "options": [
+        "By depositing silica in fine layers around a protein core, glass sponges build spicules that resist cracking and can bend without breaking.",
+        "Because the animals grow extremely slowly and can live for thousands of years, their reefs are fragile and essentially nonrenewable once damaged.",
+        "Several competing hypotheses—better feeding position, defense, and lower metabolic cost—seek to explain why the animals rely on silica.",
+        "Glass sponges are the closest living relatives of the soft bath sponges of shallow tropical seas.",
+        "Engineers have already succeeded in mass-producing optical fibers using the sponges' exact low-temperature method.",
+        "The largest glass sponges use their light-conducting fibers to lure prey in the darkness of the deep sea."
+      ],
+      "answer": [0, 1, 2],
+      "explain": "①分层硅骨架带来抗裂、可弯的力学特性（第2–3段主旨）；②生长极慢、寿命上万年→礁体脆弱不可再生（第4段主旨）；③关于为何用硅的三种假说（第5段主旨）。干扰项：④原文恰恰把玻璃海绵与浴用海绵**对比**而非说是近亲；⑤原文说人类「only beginning to understand」，并未量产；⑥原文明说这种导光功能「remains unknown」，非诱捕猎物。"
+    }
+  ]
+}

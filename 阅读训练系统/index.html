@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>托福阅读训练系统</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 22px 80px}
+  h1{font-size:28px;margin:0 0 4px}
+  .sub{color:var(--muted);margin-bottom:22px}
+  .notice{background:#fff6e8;border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:12px;padding:14px 16px;font-size:14px;margin-bottom:24px}
+  .notice b{color:var(--accent)}
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+  .filters button{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;color:#5f574c;font-family:inherit}
+  .filters button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;text-decoration:none;color:inherit;box-shadow:0 2px 12px rgba(150,120,70,.06);transition:.15s}
+  a.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(150,120,70,.15);border-color:#d8c8a8}
+  .card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+  .card .dom{font-size:12px;background:#e7f1ee;color:#2f7d72;padding:2px 9px;border-radius:20px}
+  .card .diff{font-size:12px;color:#d99a2f}
+  .card h2{font-size:18px;margin:6px 0}
+  .card .meta{color:var(--muted);font-size:13px;margin-top:8px}
+  .empty{color:var(--muted);padding:30px;text-align:center}
+  footer{margin-top:30px;color:#a89a86;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📖 托福阅读训练系统</h1>
+  <div class="sub">左边文章可反复滚动 · 右边逐题作答 · 支持「括号法」划句标注</div>
+  <div class="notice">
+    <b>怎么用：</b>点开一篇文章 → 左栏读文章、右栏一道道刷题。<br>
+    <b>括号法：</b>在左栏<b>用鼠标划选</b>任意成分（从句 / 短语 / 插入语）→ 弹出的小工具条里点对应<b>括号</b>，
+    逐层括起，剩下没括的就是句子<b>主干</b>；生词标黄。标注自动保存，滚动来回都在。点括号即可删除。<br>
+    <b>难度：</b>全部按托福真实学术难度撰写（★★★★ 起），题型齐全（事实 / 推断 / 修辞 / 词汇 / 句子简化 / 句子插入 / 内容总结）。
+  </div>
+  <div class="filters" id="filters"></div>
+  <div class="cards" id="cards"></div>
+  <div class="empty" id="empty" style="display:none">还没有文章。往 <code>data/</code> 放 JSON 后运行 <code>python3 build.py</code>。</div>
+  <footer>托福阅读系统 · data/*.json → build.py → passages/*.html · 共 8 篇</footer>
+</div>
+<script>
+const LIST = [{"id": "bird-navigation", "title": "How Migratory Birds Find Their Way", "domain": "生物", "difficulty": 5, "est_words": 735, "nq": 10, "intro": "This passage examines the several compasses and inherited programs that allow migratory birds to orient across thousands of kilometers."}, {"id": "glass-sponges", "title": "Glass Sponges of the Deep Sea", "domain": "生物", "difficulty": 4, "est_words": 720, "nq": 10, "intro": "This passage discusses a group of deep-sea animals that build skeletons out of the same mineral found in ordinary glass."}, {"id": "gothic-cathedrals", "title": "The Engineering of Gothic Cathedrals", "domain": "艺术史", "difficulty": 4, "est_words": 735, "nq": 10, "intro": "This passage examines how a cluster of structural innovations transformed the churches of medieval Europe and made possible their vast walls of colored glass."}, {"id": "limestone-caves", "title": "The Formation of Limestone Caves", "domain": "地质", "difficulty": 4, "est_words": 735, "nq": 10, "intro": "This passage explains how underground caverns are dissolved out of solid rock, how their mineral decorations grow, and how they preserve a record of ancient climates."}, {"id": "maya-collapse", "title": "The Collapse of the Classic Maya", "domain": "历史", "difficulty": 4, "est_words": 730, "nq": 10, "intro": "This passage examines the competing explanations that archaeologists have proposed for the abandonment of the great lowland cities of the Classic Maya between roughly 750 and 900 CE."}, {"id": "moon-origin", "title": "The Origin of Earth's Moon", "domain": "天文", "difficulty": 5, "est_words": 735, "nq": 10, "intro": "This passage examines how competing theories have attempted to explain where the Moon came from, and why one hypothesis has come to dominate modern thinking."}, {"id": "peopling-americas", "title": "The Peopling of the Americas", "domain": "考古", "difficulty": 5, "est_words": 735, "nq": 10, "intro": "This passage examines how, when, and by what routes the first human populations entered the Americas, and how newer evidence has unsettled a once-dominant model."}, {"id": "wildfire-ecology", "title": "The Ecological Role of Wildfire", "domain": "环境", "difficulty": 4, "est_words": 730, "nq": 10, "intro": "This passage examines why fire, long regarded purely as a destructive force, is now understood to be an essential agent in many terrestrial ecosystems."}];
+const cardsEl=document.getElementById('cards'), fEl=document.getElementById('filters');
+const doms=['全部',...[...new Set(LIST.map(x=>x.domain))]];
+let curF='全部';
+function stars(n){return '★'.repeat(n)+'☆'.repeat(5-n);}
+function render(){
+  const list=LIST.filter(x=>curF==='全部'||x.domain===curF);
+  document.getElementById('empty').style.display=LIST.length?'none':'block';
+  cardsEl.innerHTML=list.map(x=>`<a class="card" href="passages/${x.id}.html">
+    <div class="top"><span class="dom">${x.domain}</span><span class="diff">${stars(x.difficulty)}</span></div>
+    <h2>${x.title}</h2>
+    <div class="meta">${x.est_words} 词 · ${x.nq} 题${x.intro?'<br>'+x.intro:''}</div>
+  </a>`).join('');
+  fEl.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.d===curF));
+}
+fEl.innerHTML=doms.map(d=>`<button data-d="${d}" class="${d==='全部'?'on':''}">${d}</button>`).join('');
+fEl.addEventListener('click',e=>{const b=e.target.closest('button'); if(b){curF=b.dataset.d; render();}});
+render();
+</script>
+</body>
+</html>
