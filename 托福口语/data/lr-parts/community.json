@@ -1,0 +1,155 @@
+{
+  "id": "community",
+  "name": "🏢 社区中心",
+  "en": "Community Centre",
+  "desc": "开放时间·会员卡·泳池·课程报名·陪同规定·订场·活动·押金·志愿者·收费",
+  "items": [
+    {
+      "en": "The community centre opens at ten.",
+      "zh": "社区中心十点开门。",
+      "lv": "简单",
+      "chunks": ["The community centre", "opens at ten"],
+      "skeleton": ["社区中心", "十点开门"]
+    },
+    {
+      "en": "Please register for a membership card.",
+      "zh": "请办理一张会员卡。",
+      "lv": "简单",
+      "chunks": ["Please register", "for a membership card"],
+      "skeleton": ["请办理", "会员卡"]
+    },
+    {
+      "en": "The swimming pool reopens tomorrow morning.",
+      "zh": "泳池明天早上重新开放。",
+      "lv": "简单",
+      "chunks": ["The swimming pool reopens", "tomorrow morning"],
+      "skeleton": ["泳池重开", "明天早上"]
+    },
+    {
+      "en": "Please register at the reception desk.",
+      "zh": "请到接待台登记。",
+      "lv": "简单",
+      "chunks": ["Please register", "at the reception desk"],
+      "skeleton": ["请登记", "在接待台"]
+    },
+    {
+      "en": "The yoga class begins at seven.",
+      "zh": "瑜伽课七点开始。",
+      "lv": "简单",
+      "chunks": ["The yoga class", "begins at seven"],
+      "skeleton": ["瑜伽课", "七点开始"]
+    },
+    {
+      "en": "Please pay the deposit in advance.",
+      "zh": "请提前支付押金。",
+      "lv": "简单",
+      "chunks": ["Please pay the deposit", "in advance"],
+      "skeleton": ["请付押金", "提前"]
+    },
+    {
+      "en": "We welcome volunteers every weekend.",
+      "zh": "我们每个周末都欢迎志愿者。",
+      "lv": "简单",
+      "chunks": ["We welcome volunteers", "every weekend"],
+      "skeleton": ["欢迎志愿者", "每个周末"]
+    },
+    {
+      "en": "The swimming pool is closed on Mondays for regular maintenance.",
+      "zh": "泳池每周一关闭做常规维护。",
+      "lv": "中等",
+      "chunks": ["The swimming pool is closed", "on Mondays", "for regular maintenance"],
+      "skeleton": ["泳池关闭", "每周一", "做常规维护"]
+    },
+    {
+      "en": "Sign up for the evening cooking class at the reception desk.",
+      "zh": "请到接待台报名晚间烹饪课。",
+      "lv": "中等",
+      "chunks": ["Sign up for", "the evening cooking class", "at the reception desk"],
+      "skeleton": ["报名", "晚间烹饪课", "在接待台"]
+    },
+    {
+      "en": "Children under six must be accompanied by an adult.",
+      "zh": "六岁以下儿童必须有成人陪同。",
+      "lv": "中等",
+      "chunks": ["Children under six", "must be accompanied", "by an adult"],
+      "skeleton": ["六岁以下儿童", "必须被陪同", "由成人"]
+    },
+    {
+      "en": "You can reserve the main hall online after ten tomorrow.",
+      "zh": "明天十点后你可以在线预订主厅。",
+      "lv": "中等",
+      "chunks": ["You can reserve the main hall", "online", "after ten tomorrow"],
+      "skeleton": ["你可预订主厅", "在线", "明天十点后"]
+    },
+    {
+      "en": "Your membership includes free access to every class.",
+      "zh": "你的会员资格包含每门课程的免费使用权。",
+      "lv": "中等",
+      "chunks": ["Your membership includes", "free access", "to every class"],
+      "skeleton": ["会员包含", "免费使用", "每门课程"]
+    },
+    {
+      "en": "The deposit will be refunded within seven business days.",
+      "zh": "押金将在七个工作日内退还。",
+      "lv": "中等",
+      "chunks": ["The deposit will be refunded", "within seven business days"],
+      "skeleton": ["押金将退还", "七个工作日内"]
+    },
+    {
+      "en": "The weekend craft activity is completely free for members.",
+      "zh": "周末的手工活动对会员完全免费。",
+      "lv": "中等",
+      "chunks": ["The weekend craft activity", "is completely free", "for members"],
+      "skeleton": ["周末手工活动", "完全免费", "对会员"]
+    },
+    {
+      "en": "If you want to reserve the main hall, please pay a refundable deposit in advance.",
+      "zh": "如果你想预订主厅，请提前支付一笔可退押金。",
+      "lv": "困难",
+      "chunks": ["If you want to reserve the main hall", "please pay a refundable deposit", "in advance"],
+      "skeleton": ["如果你想订主厅", "请付可退押金", "提前"]
+    },
+    {
+      "en": "Volunteers who help at our events will receive free entry to every class.",
+      "zh": "在活动中帮忙的志愿者将获得每门课程的免费入场资格。",
+      "lv": "困难",
+      "chunks": ["Volunteers who help at our events", "will receive free entry", "to every class"],
+      "skeleton": ["活动帮忙的志愿者", "将获免费入场", "每门课程"]
+    },
+    {
+      "en": "If you are not a member yet, you can still join today's afternoon guided tour.",
+      "zh": "如果你还不是会员，仍然可以参加今天下午的导览。",
+      "lv": "困难",
+      "chunks": ["If you are not a member yet", "you can still join", "today's afternoon guided tour"],
+      "skeleton": ["如果你还不是会员", "你仍可参加", "今天下午的导览"]
+    },
+    {
+      "en": "When the swimming pool gets crowded, please limit your session to one single hour.",
+      "zh": "当泳池拥挤时，请把游泳时段控制在一小时以内。",
+      "lv": "困难",
+      "chunks": ["When the swimming pool gets crowded", "please limit your session", "to one single hour"],
+      "skeleton": ["当泳池拥挤时", "请限制你的时段", "在一小时以内"]
+    },
+    {
+      "en": "The weekend cooking class that fills up fast usually needs an early reservation.",
+      "zh": "很快满员的周末烹饪课通常需要提前预约。",
+      "lv": "困难",
+      "chunks": ["The weekend cooking class that fills up fast", "usually needs", "an early reservation"],
+      "skeleton": ["很快满员的周末烹饪课", "通常需要", "提前预约"]
+    },
+    {
+      "en": "Because the main hall is very popular this month, please reserve your preferred date early.",
+      "zh": "由于本月主厅非常抢手，请尽早预订你心仪的日期。",
+      "lv": "困难",
+      "chunks": ["Because the main hall is very popular this month", "please reserve your preferred date", "early"],
+      "skeleton": ["因本月主厅抢手", "请预订心仪日期", "尽早"]
+    },
+    {
+      "en": "If your membership expires this month, you can renew it at the reception desk today.",
+      "zh": "如果你的会员卡本月到期，今天就可以在接待台续费。",
+      "lv": "困难",
+      "chunks": ["If your membership expires this month", "you can renew it", "at the reception desk today"],
+      "skeleton": ["如果会员本月到期", "你可续费", "今天在接待台"]
+    }
+  ]
+}

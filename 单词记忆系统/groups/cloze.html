@@ -1,29 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-单词记忆系统 · 渲染器
-读取 data/*.json（每个文件 = 一个「按逻辑分组」的词表），
-渲染成自包含、双击即开的学习页 groups/<id>.html，并重建总目录 index.html。
-
-用法：
-    python3 build.py            # 渲染全部
-    python3 build.py aw         # 只渲染 data/aw.json
-"""
-import json, sys, html, re
-from pathlib import Path
-
-ROOT = Path(__file__).resolve().parent
-DATA = ROOT / "data"
-GROUPS = ROOT / "groups"
-GROUPS.mkdir(exist_ok=True)
-
-# ---------------------------------------------------------------- 学习页模板
-PAGE_TMPL = r"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>__TITLE__ · 单词拆解卡片</title>
+<title>阅读填词题 · 单词拆解卡片</title>
 <style>
   :root{
     --bg:#f7f1e7; --card:#fffdf8; --ink:#2f2a24; --muted:#8c8072;
@@ -235,7 +215,7 @@ PAGE_TMPL = r"""<!DOCTYPE html>
 
 <div id="quizOv"><div class="qbox" id="qbox"></div></div>
 
-<script id="data" type="application/json">__DATA_JSON__</script>
+<script id="data" type="application/json">{"id": "cloze", "title": "阅读填词题", "subtitle": "托福阅读 · 完形填空（Vocabulary / Cloze）", "intro": "托福阅读里有一种高频题型：给一段短文，挖掉若干词，只留首字母和下划线提示字母数，让你根据上下文把词填回去。它考的不是死背，而是「在语境里锁定正确单词」的能力——拼写、词义、搭配三者都要对上。每道题填完后，可以点开任意空位，按单词记忆系统的标准（音标·词源·词根·发音·例句·近义词）逐词复习。", "passages": [{"id": "transcript-application", "title": "申请成绩单", "topic": "校园服务 · Campus Service", "zh": "我昨天去了教务处，因为我要申请研究生，需要一份成绩单。工作人员让我登录学生门户网站，在线填写申请表。他们还告诉我，如果这份成绩单只是自己留档用，应该勾选「非官方成绩单」那一栏。提交之前，我要确保所有信息都正确。如果一切无误，他们会在邮寄前给成绩单盖上印章。", "text": "I went to the {0}'s office yesterday because I need a {1} for my {2} school {3}. The staff told me to {4} into the student {5} and fill {6} a request form online. They also said I should {7} the box for an {8} transcript if it is just for my own {9}. Before submitting, I need to {10} that all my information is correct. If everything looks good, they will {11} the transcript with their {12} before mailing.", "blanks": [{"word": "registrar", "hint": "教务处；登记员"}, {"word": "transcript", "hint": "成绩单"}, {"word": "graduate", "hint": "研究生的（graduate school）"}, {"word": "application", "hint": "申请"}, {"word": "log", "hint": "登录（log into）"}, {"word": "portal", "hint": "门户网站"}, {"word": "out", "hint": "填写（fill out）"}, {"word": "check", "hint": "勾选（check the box）"}, {"word": "unofficial", "hint": "非官方的"}, {"word": "records", "hint": "记录、档案"}, {"word": "ensure", "hint": "确保"}, {"word": "stamp", "hint": "盖章"}, {"word": "seal", "hint": "印章"}], "words": {"registrar": {"ipa": "/ˌredʒɪˈstrɑːr/", "meaning": "n. 教务注册员；登记员（大学里管学籍、成绩单的办公室/人）", "levels": ["托福"], "etymology": "register（登记）+ -ar（表「人」的后缀）。register 源自拉丁 re-（回）+ gerere（携带、记录），本义是「把事记回去、登记在册」。所以 registrar 就是「掌管登记册的人」——在校园语境里专指教务处。", "roots": [{"part": "registr-", "meaning": "登记、记录（register）"}, {"part": "-ar", "meaning": "表示「从事…的人」"}], "phonetics": "重音在第三音节 /ˈstrɑːr/。注意 ge 读 /dʒ/，gi 前有 g 软化（e/i 前 g→/dʒ/）。常见错误：把重音读在第一个音节。", "tip": "「掌管 register 登记册的人」= 教务处。办成绩单、选课、转学都找它。", "examples": [{"en": "I picked up my transcript from the registrar's office.", "zh": "我从教务处领取了成绩单。", "source": "造句"}, {"en": "The registrar handles course registration and student records.", "zh": "教务处负责选课和学生档案。", "source": "造句"}], "synonyms": [{"word": "record-keeper", "zh": "档案管理员"}, {"word": "clerk", "zh": "办事员"}]}, "transcript": {"ipa": "/ˈtrænskrɪpt/", "meaning": "n. 成绩单；文字记录、抄本", "levels": ["托福"], "etymology": "trans-（跨越、转移）+ script（写，同 write 一族）。字面义是「从一处誊写到另一处」。把你在校所有成绩「誊抄」成一份正式文件，就是 transcript（成绩单）。script 还出现在 manuscript（手稿）、describe（描述，写下来）里。", "roots": [{"part": "trans-", "meaning": "跨越、转移"}, {"part": "script", "meaning": "写（拉丁 scribere）"}], "phonetics": "重音在第一个音节 /træn/。s 读 /s/ 不浊化。注意与 transcribe（动词，誊写）同族，重音位置不同：transcript 名词重音在前，transcribe 动词重音在后。", "tip": "trans（跨）+ script（写）= 把成绩「誊抄」过来 → 成绩单。", "examples": [{"en": "You need to request an official transcript from your school.", "zh": "你需要向学校申请一份官方成绩单。", "source": "造句"}, {"en": "The transcript lists every course I have taken.", "zh": "成绩单列出了我修过的每一门课。", "source": "造句"}], "synonyms": [{"word": "record", "zh": "记录、成绩档案"}, {"word": "academic record", "zh": "学业记录"}]}, "graduate": {"ipa": "/ˈɡrædʒuət/（名词/形容词）", "meaning": "n. 毕业生；adj. 研究生的（graduate school = 研究生院）", "levels": ["六级", "托福"], "etymology": "grad（步、台阶、等级）+ -uate（动词后缀）→「一步步走到更高一级」= 毕业、获得学位。同根词 grade（年级、等级）、gradual（逐步的）、upgrade（升级），核心意象都是「一级一级往上走」。", "roots": [{"part": "grad-", "meaning": "步、等级（拉丁 gradus）"}, {"part": "-uate", "meaning": "动词/名词后缀"}], "phonetics": "作名词/形容词读 /ˈɡrædʒuət/，作动词「毕业」读 /ˈɡrædʒueɪt/，词尾音不同。d 后 u 读 /dʒ/（d+u 颚化，同 education）。", "tip": "grad = 台阶。本科往上「再登一阶」就是 graduate school（研究生院）。", "examples": [{"en": "She is applying to several graduate schools.", "zh": "她正在申请几所研究生院。", "source": "造句"}, {"en": "I will graduate from college next June.", "zh": "我明年六月大学毕业。", "source": "造句"}], "synonyms": [{"word": "postgraduate", "zh": "研究生的（英式）"}, {"word": "alumnus", "zh": "毕业生（校友）"}]}, "application": {"ipa": "/ˌæplɪˈkeɪʃn/", "meaning": "n. 申请；应用（软件）；应用、用途", "levels": ["六级", "托福"], "etymology": "由 apply（申请、应用）派生。apply 源自拉丁 applicare = ad-（向）+ plicare（折叠），本义是「把材料折叠起来呈交给对方」→ 申请。同根词 complicate（复杂，折在一起）、imply（暗含，折进去）、reply（回复，折回来）。", "roots": [{"part": "ap-", "meaning": "向（ad- 的变体）"}, {"part": "plic-", "meaning": "折叠（拉丁 plicare）"}], "phonetics": "重音在第三音节 /ˈkeɪ/。注意 -tion 读 /ʃn/。ap- 弱读 /ə/。", "tip": "plic = 折叠。把申请材料「折好递上去」→ application（申请）。", "examples": [{"en": "Please submit your application before the deadline.", "zh": "请在截止日期前提交申请。", "source": "造句"}, {"en": "This mobile application is very useful for students.", "zh": "这个手机应用对学生很有用。", "source": "造句"}], "synonyms": [{"word": "request", "zh": "请求、申请"}, {"word": "form", "zh": "申请表"}]}, "log": {"ipa": "/lɔːɡ/", "meaning": "v. 登录（log into）；记录；n. 原木、日志", "levels": ["六级"], "etymology": "本义是「原木」。水手把航行情况刻在木头上做记录（ship's log），后来 log 引申为「日志、记录」，再进一步指「登入系统（把访问记录下来）」。log into = 登录。", "roots": [], "phonetics": "o 读 /ɔː/（英）或 /ɔː/ 偏 /ɑː/（美）。单音节，无重音问题。", "tip": "log into（登录）≠ log off（登出）。记成「登入系统=留下日志」。", "examples": [{"en": "Log into the portal with your student ID.", "zh": "用你的学号登录门户网站。", "source": "造句"}], "synonyms": [{"word": "sign in", "zh": "登录"}, {"word": "log in", "zh": "登录"}]}, "portal": {"ipa": "/ˈpɔːrtl/", "meaning": "n. 门户网站；大门、入口", "levels": ["托福"], "etymology": "port（门、港口）+ -al（名词后缀）。拉丁 porta = 门。同根词 port（港口，船的「门」）、portable（可携带的）、import/export（进/出「门」→ 进出口）。本义是「气势恢宏的大门」，网络时代引申为「聚合入口」= 门户网站。", "roots": [{"part": "port-", "meaning": "门、港口、携带（拉丁 porta/portare）"}, {"part": "-al", "meaning": "名词后缀"}], "phonetics": "重音在第一个音节 /ˈpɔːr/。美音卷舌 /ˈpɔːrtl/。注意 port 发 /pɔːr/ 不是 /pə/。", "tip": "port = 门。一个网站把你需要的服务「装进一扇门」= 门户。", "examples": [{"en": "You can check your grades on the student portal.", "zh": "你可以在学生门户网站上查看成绩。", "source": "造句"}], "synonyms": [{"word": "gateway", "zh": "入口、门户"}, {"word": "website", "zh": "网站"}]}, "out": {"ipa": "/aʊt/", "meaning": "adv./prep. 出、向外；fill out = 填写（表格）", "levels": ["基础"], "etymology": "本族常用词，源自古英语 ūt「向外」。fill out 字面是「把空格填满到边」，引申为「填写完整表格」。注意 fill out（填完整）vs fill in（填入具体某格）语感相近，美式多用 fill out。", "roots": [], "phonetics": "ou 读 /aʊ/（同 now, house）。单音节双元音，从 /ɑ/ 滑向 /ʊ/。", "tip": "fill out a form = 填表。记「把空格填『出』来」。", "examples": [{"en": "Please fill out this form completely.", "zh": "请完整填写这张表格。", "source": "造句"}], "synonyms": [{"word": "complete", "zh": "填写完整"}]}, "check": {"ipa": "/tʃek/", "meaning": "v. 勾选；检查；n. 支票；账单", "levels": ["基础"], "etymology": "源自波斯语 shah（国王）→ 国际象棋里「将军」，引申为「制止、检查、核对」。check the box = 在方框里打勾。check 一词多义：勾选、检查、支票，核心都是「确认无误」。", "roots": [], "phonetics": "ch 读 /tʃ/（清塞擦音，同 chair）。单音节。", "tip": "check the box（勾选）· check in（登记入住）· check out（结账离开）都是「确认」。", "examples": [{"en": "Check the box if you agree with the terms.", "zh": "如果你同意条款，请勾选此框。", "source": "造句"}], "synonyms": [{"word": "tick", "zh": "打勾（英式）"}, {"word": "mark", "zh": "标记"}]}, "unofficial": {"ipa": "/ˌʌnəˈfɪʃl/", "meaning": "adj. 非官方的、非正式的", "levels": ["托福"], "etymology": "un-（否定）+ official（官方的）。official 源自 office（职务、办公室）→「有职务身份背书的」= 官方的。unofficial 就是「没有官方背书的」——比如 unofficial transcript（非官方成绩单，未盖章、仅自用）。", "roots": [{"part": "un-", "meaning": "否定前缀「不」"}, {"part": "official", "meaning": "官方的（← office 职务）"}], "phonetics": "重音在 -fi- /ˈfɪʃ/。un- 弱读 /ʌn/。official 里 ci 读 /ʃ/（c+i 软化）。", "tip": "official（官方盖了章的）↔ unofficial（没盖章、自用的）。对照记。", "examples": [{"en": "You can print an unofficial transcript for your own records.", "zh": "你可以打印一份非官方成绩单供自己留档。", "source": "造句"}], "synonyms": [{"word": "informal", "zh": "非正式的"}], "antonyms": [{"word": "official", "zh": "官方的、正式的"}]}, "records": {"ipa": "/ˈrekərdz/", "meaning": "n. 记录、档案（for my own records = 供我自己留档）", "levels": ["六级"], "etymology": "re-（回）+ cord（心，拉丁 cor）→「记回心里」= 记录。同根词 cordial（热诚的，发自内心的）、accord（一致，心往一处）。名词 records 读 /ˈrekərdz/，动词 record 读 /rɪˈkɔːrd/。", "roots": [{"part": "re-", "meaning": "回、再"}, {"part": "cord-", "meaning": "心（拉丁 cor）"}], "phonetics": "名词重音在前 /ˈrekərd/，动词重音在后 /rɪˈkɔːrd/。本句是名词复数 records。", "tip": "keep/for records = 存档留底。cor = 心，「记在心上」= 记录。", "examples": [{"en": "Keep a copy for your own records.", "zh": "留一份副本供自己存档。", "source": "造句"}], "synonyms": [{"word": "files", "zh": "档案"}, {"word": "documents", "zh": "文件"}]}, "ensure": {"ipa": "/ɪnˈʃʊr/", "meaning": "v. 确保、保证（使某事一定发生）", "levels": ["六级", "托福"], "etymology": "en-（使）+ sure（确定的）→「使变得确定」= 确保。注意辨析三个同源词：ensure（确保，使某事发生）、assure（向某人保证，宾语是人）、insure（投保，保险）。三者都源自 sure。", "roots": [{"part": "en-", "meaning": "使、使成为"}, {"part": "sure", "meaning": "确定的、确信的"}], "phonetics": "重音在第二个音节 /ˈʃʊr/。en- 弱读 /ɪn/。sure 读 /ʃʊr/（s 读 /ʃ/）。", "tip": "ensure 宾语是「事」（确保事办成）· assure 宾语是「人」（向人保证）· insure 是「保险」。", "examples": [{"en": "Please ensure that your information is correct before submitting.", "zh": "提交前请确保你的信息正确。", "source": "造句"}], "synonyms": [{"word": "make sure", "zh": "确保（口语）"}, {"word": "guarantee", "zh": "保证"}]}, "stamp": {"ipa": "/stæmp/", "meaning": "v. 盖章、跺脚；n. 邮票、印章", "levels": ["六级"], "etymology": "本义是「用力向下踩、跺脚」（古英语 stempan）。盖章的动作就是「向下按压」，引申为「盖章」；再引申为「贴在信上盖过章的凭证」= 邮票。stamp the transcript with a seal = 在成绩单上盖章。", "roots": [], "phonetics": "a 读 /æ/（扁口「爱」）。st- 连读，p 在词尾送气轻。", "tip": "stamp 从「跺脚」到「盖章」到「邮票」，一条动作链：向下按 → 盖印 → 凭证。", "examples": [{"en": "The office will stamp the document with an official seal.", "zh": "办公室会在文件上盖官方印章。", "source": "造句"}], "synonyms": [{"word": "seal", "zh": "盖章、印章"}, {"word": "impress", "zh": "盖印"}]}, "seal": {"ipa": "/siːl/", "meaning": "n. 印章、封条；海豹；v. 密封、盖章", "levels": ["六级", "托福"], "etymology": "本义是「印记、图章」（拉丁 sigillum，小印记）。盖章表示「官方认证、不可改动」，引申为「密封」（把东西盖印封住）。seal 还指「海豹」，来自另一词源（古英语 seolh），与「印章」无关，别混淆。", "roots": [], "phonetics": "ea 读 /iː/（长音「衣」）。单音节。与 sea、see 同音。", "tip": "seal（印章）与 seal（海豹）是「同形异源词」——一个来自拉丁「印记」，一个来自古英语「海豹」。", "examples": [{"en": "The diploma carries the university's official seal.", "zh": "毕业证书上盖有大学的官方印章。", "source": "造句"}], "synonyms": [{"word": "stamp", "zh": "印章、盖章"}, {"word": "imprint", "zh": "印记"}]}}}]}</script>
 <script>
 const G = JSON.parse(document.getElementById('data').textContent);
 const KEY = 'vocab-unfam-' + G.id;
@@ -608,145 +588,3 @@ renderHero(); renderPassage(); renderSents(); renderFilters(); renderGrid();
 </script>
 </body>
 </html>
-"""
-
-# ---------------------------------------------------------------- 目录页模板
-INDEX_TMPL = r"""<!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>英语发音规律总表 · voca 学习系统</title>
-<style>
-  :root{--bg:#f7f1e7;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#eaddc9;--accent:#c1662f;--core:#2f8f83;--vio:#6a52a8}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6}
-  .wrap{max-width:1120px;margin:0 auto;padding:34px 20px 90px}
-  h1{font-size:27px;margin:0 0 4px}
-  .sub{color:var(--muted);margin-bottom:16px}
-  .intro{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:12px;padding:14px 16px;font-size:14px;margin-bottom:18px}
-  .built{margin-bottom:14px;font-size:14px}
-  .built b{color:var(--accent)}
-  .built a{display:inline-block;background:#fbe6c4;color:var(--accent);font-weight:700;border-radius:20px;padding:4px 14px;margin:6px 6px 0 0;text-decoration:none;font-family:Georgia,serif}
-  .built a:hover{background:var(--accent);color:#fff}
-  .legend{font-size:12px;color:var(--muted);margin-bottom:8px}
-  .legend b{background:#e6f0ec;color:var(--core);border-radius:6px;padding:0 6px;font-family:Georgia,serif}
-  h2.sec{font-size:20px;margin:26px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--line)}
-  h2.sec.v{color:var(--core)} h2.sec.c{color:var(--vio)}
-  .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(325px,1fr));gap:14px}
-  .pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 15px;box-shadow:0 2px 10px rgba(150,120,70,.06)}
-  .phead{display:flex;align-items:baseline;gap:10px}
-  .phead .ipa{font-family:Georgia,serif;font-size:23px;font-weight:700;color:var(--accent);cursor:pointer}
-  .phead .kw{color:var(--muted);font-size:13px}
-  .pzh{color:#5f574c;font-size:12.5px;margin:2px 0 8px}
-  .srow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:5px 0;border-top:1px dashed var(--line);font-size:13.5px}
-  .combo{flex:none;font-family:Georgia,serif;font-weight:700;background:#f2ece0;color:#7a6a4c;border-radius:7px;padding:1px 8px;min-width:62px;text-align:center}
-  a.combo.has{background:#e6f0ec;color:var(--core);text-decoration:none}
-  a.combo.has:hover{background:var(--core);color:#fff}
-  .exs{display:flex;flex-wrap:wrap;gap:4px 9px}
-  .w{font-family:Georgia,serif;color:#3a332b;cursor:pointer}
-  .w:hover{color:var(--accent);text-decoration:underline}
-  .cnote{width:100%;color:#a08b6a;font-size:11.5px;padding-left:2px}
-  footer{margin-top:36px;color:#a89a86;font-size:12px;border-top:1px solid var(--line);padding-top:14px}
-</style></head><body><div class="wrap">
-  <h1>🔤 __TITLE__</h1>
-  <div class="sub">__SUB__</div>
-  <div class="intro">__INTRO__</div>
-  <div class="built"><b>已建深度复习页（完整拆解＋近义辨析＋英译中测验）：</b><br>__BUILT__</div>
-  <div class="legend">图例：<b>aw ✓</b> = 已有深度页，点开即学 · 灰底组合 = 例词可点听、深度页待建（对 cc 说「新建一组 &lt;组合&gt;」即可生成）· 点任意例词/音标听美式女声</div>
-  <h2 class="sec v">🅰️ 元音 Vowels</h2>
-  <div class="pgrid">__VOWELS__</div>
-  <h2 class="sec c">🅱️ 辅音 Consonants</h2>
-  <div class="pgrid">__CONS__</div>
-  <h2 class="sec c">🔀 特别专题（不发音字母 · 软化规律 …）</h2>
-  <div class="pgrid">__EXTRA__</div>
-  <footer>__FOOT__</footer>
-</div>
-<script>
-let V=null;
-const PREF=['Google US English','Microsoft Aria','Microsoft Jenny','Samantha','Ava','Allison','Susan','Zoe','Karen'];
-function pick(){const vs=speechSynthesis.getVoices()||[];let us=vs.filter(v=>/en[-_]US/i.test(v.lang)||/United States/i.test(v.name));if(!us.length)us=vs.filter(v=>/^en/i.test(v.lang));for(const n of PREF){const h=us.find(v=>v.name===n)||us.find(v=>v.name.indexOf(n)===0);if(h){V=h;break;}}if(!V)V=us.find(v=>/samantha|google us|female|ava|zoe|karen|allison|susan/i.test(v.name))||us[0]||vs[0]||null;}
-if('onvoiceschanged'in speechSynthesis)speechSynthesis.onvoiceschanged=pick;pick();
-function say(w){try{const u=new SpeechSynthesisUtterance(w);u.lang='en-US';if(V)u.voice=V;u.rate=.95;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
-</script>
-</body></html>
-"""
-
-def esc(s): return html.escape(str(s))
-
-def build_group(fp):
-    data = json.loads(fp.read_text(encoding="utf-8"))
-    # 安全地把 JSON 塞进 <script> 标签（避免 </script> 截断）
-    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    out = (PAGE_TMPL
-           .replace("__TITLE__", esc(data.get("title", data["id"])))
-           .replace("__DATA_JSON__", payload))
-    dest = GROUPS / f"{data['id']}.html"
-    dest.write_text(out, encoding="utf-8")
-    print(f"  ✓ groups/{data['id']}.html  ({len(data['words'])} 词)")
-    return data
-
-def render_pcard(p, built):
-    rows = ""
-    for s in p.get("spellings", []):
-        exs = "".join(f'<span class="w" onclick="say(\'{esc(w)}\')">{esc(w)}</span>' for w in s.get("ex", []))
-        combo, pg = s.get("combo", ""), s.get("page")
-        if pg and pg in built:
-            comboh = f'<a class="combo has" href="groups/{esc(pg)}.html">{esc(combo)} ✓</a>'
-        else:
-            comboh = f'<span class="combo">{esc(combo)}</span>'
-        note = f'<span class="cnote">💡 {esc(s["note"])}</span>' if s.get("note") else ""
-        rows += f'<div class="srow">{comboh}<span class="exs">{exs}</span>{note}</div>'
-    return (f'<div class="pcard"><div class="phead">'
-            f'<span class="ipa" onclick="say(\'{esc(p["key"])}\')">{esc(p["ipa"])} 🔊</span>'
-            f'<span class="kw">如 {esc(p["key"])}</span></div>'
-            f'<div class="pzh">{esc(p.get("zh",""))}</div>{rows}</div>')
-
-def build_index(groups):
-    built = {g["id"] for g in groups}
-    sm_path = DATA / "_soundmap.json"
-    sm = json.loads(sm_path.read_text(encoding="utf-8")) if sm_path.exists() else {"vowels": [], "consonants": [], "extra": []}
-    vowels = "".join(render_pcard(p, built) for p in sm.get("vowels", []))
-    cons   = "".join(render_pcard(p, built) for p in sm.get("consonants", []))
-    extra  = "".join(render_pcard(p, built) for p in sm.get("extra", []))
-    builtlinks = "".join(
-        f'<a href="groups/{esc(g["id"])}.html">{esc(g.get("combo", g["id"]))} {esc(g.get("sound", ""))}</a>'
-        for g in sorted(groups, key=lambda x: x["id"])) or "（暂无）"
-    foot = (f'{len(sm.get("vowels",[]))} 元音 + {len(sm.get("consonants",[]))} 辅音 · '
-            f'已建 {len(groups)} 张深度页 · 数据 data/_soundmap.json + data/*.json · 运行 python3 build.py 重生成')
-    out = (INDEX_TMPL
-           .replace("__TITLE__", esc(sm.get("title", "英语发音规律总表")))
-           .replace("__SUB__", esc(sm.get("subtitle", "")))
-           .replace("__INTRO__", esc(sm.get("intro", "")))
-           .replace("__BUILT__", builtlinks)
-           .replace("__VOWELS__", vowels)
-           .replace("__CONS__", cons)
-           .replace("__EXTRA__", extra)
-           .replace("__FOOT__", foot))
-    (ROOT / "index.html").write_text(out, encoding="utf-8")
-    print(f"  ✓ index.html  (发音总表: {len(sm.get('vowels',[]))}元音/{len(sm.get('consonants',[]))}辅音 · {len(groups)} 深度页)")
-
-def _is_wordfile(f):
-    # 词表组 = 含 "words" 键的 JSON；排除 _ 开头配置(_soundmap) 与非词表文件(如 cloze.json 用于阅读填词)
-    if f.name.startswith("_"):
-        return False
-    try:
-        return "words" in json.loads(f.read_text(encoding="utf-8"))
-    except Exception:
-        return False
-
-def main():
-    only = sys.argv[1] if len(sys.argv) > 1 else None
-    files = sorted(f for f in DATA.glob("*.json") if _is_wordfile(f))
-    if only:
-        files = [f for f in files if f.stem == only]
-    if not files and not only:
-        print("data/ 下没有找到词表 JSON"); return
-    print("渲染中…")
-    groups = [build_group(f) for f in files]
-    # 目录页（发音规律总表）需要知道全部已建组
-    all_groups = [json.loads(f.read_text(encoding="utf-8"))
-                  for f in sorted(DATA.glob("*.json")) if _is_wordfile(f)]
-    build_index(all_groups)
-    print("完成。用浏览器打开 index.html 或 groups/<id>.html 即可。")
-
-if __name__ == "__main__":
-    main()

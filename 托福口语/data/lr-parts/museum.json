@@ -1,0 +1,155 @@
+{
+  "id": "museum",
+  "name": "🖼 博物馆·画廊",
+  "en": "Museum / Gallery",
+  "desc": "票务·参观规则·寄存·展区·导览·语音导览·特展·摄影·闭馆·会员",
+  "items": [
+    {
+      "en": "The museum is free on Sundays.",
+      "zh": "博物馆周日免费。",
+      "lv": "简单",
+      "chunks": ["The museum", "is free", "on Sundays"],
+      "skeleton": ["博物馆", "免费", "周日"]
+    },
+    {
+      "en": "Please do not touch the paintings.",
+      "zh": "请勿触摸画作。",
+      "lv": "简单",
+      "chunks": ["Please do not touch", "the paintings"],
+      "skeleton": ["请勿触摸", "画作"]
+    },
+    {
+      "en": "Tickets are sold at the entrance.",
+      "zh": "门票在入口处出售。",
+      "lv": "简单",
+      "chunks": ["Tickets are sold", "at the entrance"],
+      "skeleton": ["门票出售", "在入口"]
+    },
+    {
+      "en": "The gift shop closes at six.",
+      "zh": "礼品店六点关门。",
+      "lv": "简单",
+      "chunks": ["The gift shop", "closes at six"],
+      "skeleton": ["礼品店", "六点关门"]
+    },
+    {
+      "en": "Photography is allowed without flash.",
+      "zh": "允许拍照，但不能用闪光灯。",
+      "lv": "简单",
+      "chunks": ["Photography is allowed", "without flash"],
+      "skeleton": ["允许拍照", "不用闪光灯"]
+    },
+    {
+      "en": "Please keep your ticket with you.",
+      "zh": "请随身保管好门票。",
+      "lv": "简单",
+      "chunks": ["Please keep", "your ticket", "with you"],
+      "skeleton": ["请保管", "你的门票", "随身"]
+    },
+    {
+      "en": "The east wing is closed today.",
+      "zh": "东翼展厅今天关闭。",
+      "lv": "简单",
+      "chunks": ["The east wing", "is closed today"],
+      "skeleton": ["东翼展厅", "今天关闭"]
+    },
+    {
+      "en": "Large bags must be left at the entrance.",
+      "zh": "大件行李必须寄存在入口处。",
+      "lv": "中等",
+      "chunks": ["Large bags", "must be left", "at the entrance"],
+      "skeleton": ["大件行李", "必须寄存", "在入口"]
+    },
+    {
+      "en": "The modern art gallery is on the second floor.",
+      "zh": "现代艺术展厅在二楼。",
+      "lv": "中等",
+      "chunks": ["The modern art gallery", "is on the second floor"],
+      "skeleton": ["现代艺术展厅", "在二楼"]
+    },
+    {
+      "en": "Guided tours start every hour near the front desk.",
+      "zh": "导览每小时在服务台附近开始。",
+      "lv": "中等",
+      "chunks": ["Guided tours start", "every hour", "near the front desk"],
+      "skeleton": ["导览开始", "每小时", "在服务台附近"]
+    },
+    {
+      "en": "The special exhibition upstairs requires a separate ticket.",
+      "zh": "楼上的特展需要另外购票。",
+      "lv": "中等",
+      "chunks": ["The special exhibition upstairs", "requires", "a separate ticket"],
+      "skeleton": ["楼上的特展", "需要", "另外购票"]
+    },
+    {
+      "en": "You can store your coat in the lockers downstairs.",
+      "zh": "你可以把外套存在楼下的储物柜里。",
+      "lv": "中等",
+      "chunks": ["You can store your coat", "in the lockers", "downstairs"],
+      "skeleton": ["你可存外套", "在储物柜", "楼下"]
+    },
+    {
+      "en": "Members enter for free through the side door.",
+      "zh": "会员可从侧门免费入场。",
+      "lv": "中等",
+      "chunks": ["Members enter for free", "through the side door"],
+      "skeleton": ["会员免费入场", "从侧门"]
+    },
+    {
+      "en": "The audio guide is available in five languages.",
+      "zh": "语音导览提供五种语言。",
+      "lv": "中等",
+      "chunks": ["The audio guide", "is available", "in five languages"],
+      "skeleton": ["语音导览", "可提供", "五种语言"]
+    },
+    {
+      "en": "If you want an audio guide, you can rent one at the ticket counter.",
+      "zh": "如果你想要语音导览，可以在售票台租一个。",
+      "lv": "困难",
+      "chunks": ["If you want an audio guide", "you can rent one", "at the ticket counter"],
+      "skeleton": ["如果你想要语音导览", "你可租一个", "在售票台"]
+    },
+    {
+      "en": "The sculptures, which were donated last year, are displayed in the east wing.",
+      "zh": "这些去年捐赠的雕塑陈列在东翼展厅。",
+      "lv": "困难",
+      "chunks": ["The sculptures", "which were donated last year", "are displayed in the east wing"],
+      "skeleton": ["这些雕塑", "去年被捐赠", "陈列在东翼"]
+    },
+    {
+      "en": "When the museum closes, a bell rings so visitors can find the exit.",
+      "zh": "闭馆时会响铃，方便参观者找到出口。",
+      "lv": "困难",
+      "chunks": ["When the museum closes", "a bell rings", "so visitors can find the exit"],
+      "skeleton": ["闭馆时", "会响铃", "方便游客找出口"]
+    },
+    {
+      "en": "If you become a member, you can visit every special exhibition for free.",
+      "zh": "如果你成为会员，就能免费参观每一场特展。",
+      "lv": "困难",
+      "chunks": ["If you become a member", "you can visit every special exhibition", "for free"],
+      "skeleton": ["如果你成为会员", "可参观每场特展", "免费"]
+    },
+    {
+      "en": "Visitors who bring large backpacks must check them at the coat room first.",
+      "zh": "携带大背包的参观者须先在寄存处存放。",
+      "lv": "困难",
+      "chunks": ["Visitors who bring large backpacks", "must check them", "at the coat room first"],
+      "skeleton": ["带大背包的游客", "须寄存它们", "先在寄存处"]
+    },
+    {
+      "en": "Because the special show is popular, please book your time slot online in advance.",
+      "zh": "由于特展很受欢迎，请提前在网上预约入场时段。",
+      "lv": "困难",
+      "chunks": ["Because the special show is popular", "please book your time slot", "online in advance"],
+      "skeleton": ["因特展受欢迎", "请预约入场时段", "提前网上"]
+    },
+    {
+      "en": "The photographs that hang in the main hall may not be touched or moved.",
+      "zh": "挂在主展厅的这些照片不得触摸或移动。",
+      "lv": "困难",
+      "chunks": ["The photographs", "that hang in the main hall", "may not be touched or moved"],
+      "skeleton": ["这些照片", "挂在主展厅", "不得触摸或移动"]
+    }
+  ]
+}

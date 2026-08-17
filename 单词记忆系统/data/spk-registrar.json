@@ -1,0 +1,2718 @@
+{
+  "id": "spk-registrar",
+  "combo": "Registrar",
+  "sound": "",
+  "title": "教务处 · 听力复述场景高频词",
+  "subtitle": "取号、填表、登门户、要成绩单、选退课、赶截止日期——一套词把教务处对话说圆",
+  "intro": "托福口语「听力复述」里，教务处（Registrar's Office）是最爱考的校园行政场景：学生跑来办成绩单、改课表、交费、赶 deadline，工作人员反复说 fill out this form、log in to the portal、your transcript、official seal、drop the class。这一页把这类对话拆成五桶——能指着说的名词、办事的动词、精确语义的形容词、整块记的固定短语，再补一层通用高频词——让你听懂细节、复述时词准句顺。",
+  "subgroups": [
+    {"key": "noun", "tag": "名词", "label": "📄 核心名词 Nouns", "desc": "成绩单、表格、门户、公章、学分、截止日——教务处场景里能指着说的实体名词，是复述时的信息骨架。"},
+    {"key": "verb", "tag": "动词", "label": "⚡ 核心动词 Verbs", "desc": "填、交、盖章、登录、选课、退课、办理——描述在教务处做的动作，动词准了复述才立得住。"},
+    {"key": "desc", "tag": "形容词·副词", "label": "🎨 描述词 Descriptors", "desc": "正式的、逾期的、待处理的、缺失的——决定语义精度的修饰词，也是听力里最爱藏的细节点。"},
+    {"key": "phrase", "tag": "短语", "label": "🔗 固定短语 Phrases", "desc": "fill out、log in、drop a class、check this box、right away——教务处对话里高频的动词短语和固定搭配，整块记最省力。"},
+    {"key": "general", "tag": "通用高频", "label": "🌐 通用高频 General", "desc": "该场景对话反复出现的日常高频词，补足广度，让复述自然连贯。"}
+  ],
+  "words": [
+    {
+      "word": "transcript",
+      "levels": ["六级"],
+      "ipa": "/ˈtrænskrɪpt/",
+      "subgroup": "noun",
+      "meaning": "n. 成绩单；文字记录",
+      "etymology": "拉丁 trans-「across，跨过」+ scribere「写」→ 抄写过来的东西。学校把你的成绩「誊抄」成一份正式文件，就是 transcript。",
+      "phonetics": "重音在第一音节 /ˈtræn/，名词固定读法。别和动词 transcribe /trænˈskraɪb/（转写、誊写）混音。",
+      "examples": [
+        {"en": "Your official transcript will be mailed to the schools you selected.", "zh": "你的正式成绩单会寄到你选择的学校。", "source": "造句"},
+        {"en": "request an official transcript", "zh": "申请一份正式成绩单（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "record", "ipa": "/ˈrekɔːrd/", "gloss": "记录", "note": "record 泛指各类记录；transcript 特指盖章的学业成绩单"},
+        {"w": "grade report", "ipa": "/ɡreɪd rɪˈpɔːrt/", "gloss": "成绩报告", "note": "grade report 多为非正式的单学期成绩；transcript 是覆盖全部学业的官方文件"}
+      ],
+      "nuance": "transcript 是官方盖章的完整学业成绩单；grade report 只是某一学期的非正式成绩单。"
+    },
+    {
+      "word": "form",
+      "levels": ["基础"],
+      "ipa": "/fɔːrm/",
+      "subgroup": "noun",
+      "meaning": "n. 表格；表单",
+      "etymology": "拉丁 forma「形状、模子」→ 有固定格式让你往里填的纸，就是 form。",
+      "phonetics": "长元音 /ɔː/，别读短。词尾 m 收唇。",
+      "examples": [
+        {"en": "You need to fill out this form before I can process your request.", "zh": "你得先填好这张表，我才能办你的申请。", "source": "造句"},
+        {"en": "a registration form", "zh": "一张注册表（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "application", "ipa": "/ˌæplɪˈkeɪʃn/", "gloss": "申请表", "note": "application 特指用于申请的表格；form 泛指任何表单"},
+        {"w": "paperwork", "ipa": "/ˈpeɪpərwɜːrk/", "gloss": "文书工作", "note": "paperwork 是不可数、泛指要处理的一堆文件；form 是单张可数"}
+      ],
+      "nuance": "form 是一张具体表格；paperwork 是要办的所有文书的总称，不可数。"
+    },
+    {
+      "word": "portal",
+      "levels": ["六级"],
+      "ipa": "/ˈpɔːrtl/",
+      "subgroup": "noun",
+      "meaning": "n.（学生）门户网站；入口",
+      "etymology": "拉丁 porta「门」→ portal 本义「大门、入口」，网络时代引申为登录后办事的「门户网站」。同源 port（港口，船进出的门）。",
+      "phonetics": "重音在前 /ˈpɔːr/，词尾 -tal 弱读成 /tl/，几乎听不到元音。",
+      "examples": [
+        {"en": "You can drop the class yourself through the student portal.", "zh": "你可以自己上学生门户退掉这门课。", "source": "造句"},
+        {"en": "log in to the student portal", "zh": "登录学生门户（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "website", "ipa": "/ˈwebsaɪt/", "gloss": "网站", "note": "website 泛指任何网站；portal 特指登录后办业务的门户系统"},
+        {"w": "system", "ipa": "/ˈsɪstəm/", "gloss": "系统", "note": "口语里工作人员常说 the system 指同一个门户后台"}
+      ],
+      "nuance": "portal 是学生登录后自助办事的门户；website 只是泛泛的网站，不一定要登录。"
+    },
+    {
+      "word": "seal",
+      "levels": ["托福"],
+      "ipa": "/siːl/",
+      "subgroup": "noun",
+      "meaning": "n. 印章，公章；封条  v. 密封，盖章",
+      "etymology": "拉丁 sigillum「小图案、印记」→ 古时用蜡压出校徽图案封信，证明真实，就是 seal。",
+      "phonetics": "长音 /iː/，和 sell /sel/（卖）区分清楚。",
+      "examples": [
+        {"en": "An official transcript must carry the university's seal.", "zh": "正式成绩单必须带有学校公章。", "source": "造句"},
+        {"en": "the official seal", "zh": "官方印章（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "stamp", "ipa": "/stæmp/", "gloss": "图章，戳", "note": "stamp 是盖上去的墨戳；seal 更正式，常指压印的校徽公章"}
+      ],
+      "nuance": "seal 是代表机构权威的正式公章（常压印或钢印）；stamp 是普通墨水图章，分量更轻。"
+    },
+    {
+      "word": "deadline",
+      "levels": ["托福"],
+      "ipa": "/ˈdedlaɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 截止日期，最后期限",
+      "etymology": "dead「死的」+ line「线」→ 原指美国内战战俘营的「死线」，越线就射杀；引申为「不可越过的最后期限」。",
+      "phonetics": "重音在前 /ˈded/，dead 读短音 /e/，不是 deed /iː/。",
+      "examples": [
+        {"en": "The deadline to add or drop a class is this Friday.", "zh": "加课或退课的截止日期是本周五。", "source": "造句"},
+        {"en": "meet the deadline", "zh": "赶上截止日期（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "due date", "ipa": "/djuː deɪt/", "gloss": "到期日", "note": "due date 中性指某事到期那天；deadline 更强调「过期不候」的硬期限"},
+        {"w": "cutoff", "ipa": "/ˈkʌtɔːf/", "gloss": "截止点", "note": "cutoff 强调一刀切的界线，如 cutoff date"}
+      ],
+      "nuance": "deadline 是过了就不受理的硬期限；due date 只是某事应完成的日子，语气更缓。"
+    },
+    {
+      "word": "record",
+      "levels": ["基础"],
+      "ipa": "/ˈrekɔːrd/",
+      "subgroup": "noun",
+      "meaning": "n. 记录，档案  v. /rɪˈkɔːrd/ 记录",
+      "etymology": "拉丁 re-「回」+ cor/cordis「心」→ 「记回心里」，把事记下来。名词重音在前，动词重音在后。",
+      "phonetics": "名词 /ˈrekɔːrd/ 重音在前；动词 /rɪˈkɔːrd/ 重音在后——教务处场景多用名词。",
+      "examples": [
+        {"en": "There's a hold on your record because of an unpaid fee.", "zh": "因为有一笔费用没付，你的档案被冻结了。", "source": "造句"},
+        {"en": "academic record", "zh": "学业档案（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "file", "ipa": "/faɪl/", "gloss": "档案，文件夹", "note": "file 强调归档保存的那一份材料；record 强调所记录的信息内容"}
+      ],
+      "nuance": "record 是关于你的信息记录（成绩、缴费、注册）；transcript 是从 record 里导出的一份正式成绩单。"
+    },
+    {
+      "word": "credit",
+      "levels": ["托福"],
+      "ipa": "/ˈkredɪt/",
+      "subgroup": "noun",
+      "meaning": "n. 学分；信誉；贷方  v. 记入贷方",
+      "etymology": "拉丁 credere「相信」→ 学校「相信」你完成了这门课，给你记「学分」。同源 credible（可信的）。",
+      "phonetics": "重音在前 /ˈkre/，词尾 -dit 弱读 /dɪt/。",
+      "examples": [
+        {"en": "This course is worth three credits.", "zh": "这门课算三个学分。", "source": "造句"},
+        {"en": "transfer credit", "zh": "转学分（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "credit hour", "ipa": "/ˈkredɪt aʊər/", "gloss": "学时/学分时", "note": "credit hour 是按每周上课小时数算的学分单位；credit 是笼统说法"},
+        {"w": "unit", "ipa": "/ˈjuːnɪt/", "gloss": "学分单位", "note": "部分学校（如加州系统）用 unit 代替 credit，含义相同"}
+      ],
+      "nuance": "credit（学分）是修课的量化凭证；grade（成绩）是这门课修得好不好——拿到 credit 不代表 grade 高。"
+    },
+    {
+      "word": "tuition",
+      "levels": ["托福"],
+      "ipa": "/tuˈɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 学费；（英）授课",
+      "etymology": "拉丁 tueri「看护、教导」→ tuition 本义「教导」，美式引申为「教导的收费」即学费。",
+      "phonetics": "重音在第二音节 /ˈɪʃn/，首音 tu- 弱读。别读成 /tʃu/。",
+      "examples": [
+        {"en": "Tuition is due before the first day of classes.", "zh": "学费须在开学第一天前缴清。", "source": "造句"},
+        {"en": "pay tuition", "zh": "交学费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fee", "ipa": "/fiː/", "gloss": "费用", "note": "fee 是各类杂费（注册费、实验费）；tuition 专指上课的学费"}
+      ],
+      "nuance": "tuition 是修课本身的学费；fee 是学费之外的各种杂费，账单上常分开列。"
+    },
+    {
+      "word": "fee",
+      "levels": ["基础"],
+      "ipa": "/fiː/",
+      "subgroup": "noun",
+      "meaning": "n. 费用，手续费",
+      "etymology": "古法语 fieu、日耳曼语 feoh「牲畜、财产」→ 早期以牲畜作报酬，引申为「付出的费用」。",
+      "phonetics": "长音 /iː/，一个音节，简单干脆。",
+      "examples": [
+        {"en": "There's a small fee for a rush transcript.", "zh": "加急成绩单要收一点手续费。", "source": "造句"},
+        {"en": "a late fee", "zh": "滞纳金（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "charge", "ipa": "/tʃɑːrdʒ/", "gloss": "收费", "note": "charge 强调被收取这一动作/款项；fee 是固定名目的费用"}
+      ],
+      "nuance": "fee 是有名目的固定费用（如 late fee 滞纳金）；charge 泛指账上任何一笔收费。"
+    },
+    {
+      "word": "receipt",
+      "levels": ["六级"],
+      "ipa": "/rɪˈsiːt/",
+      "subgroup": "noun",
+      "meaning": "n. 收据，收条",
+      "etymology": "拉丁 recipere「收到」→ 证明「已收到款」的凭条。注意 p 不发音，是历史拼写残留。",
+      "phonetics": "p 不发音！读 /rɪˈsiːt/，重音在后。这是高频易错音。",
+      "examples": [
+        {"en": "Keep the receipt as proof that you paid the fee.", "zh": "留好收据，作为你已缴费的凭证。", "source": "造句"},
+        {"en": "a payment receipt", "zh": "缴费收据（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "proof of payment", "ipa": "/pruːf əv ˈpeɪmənt/", "gloss": "付款证明", "note": "proof of payment 是功能说法；receipt 是那张具体凭条"}
+      ],
+      "nuance": "receipt 证明「你已付款」；invoice（账单）反过来告诉你「你该付多少」。"
+    },
+    {
+      "word": "invoice",
+      "levels": ["六级"],
+      "ipa": "/ˈɪnvɔɪs/",
+      "subgroup": "noun",
+      "meaning": "n. 发票，账单  v. 开账单",
+      "etymology": "源自古法语 envois「寄出的货物清单」→ 列明应付款项的清单，即账单。",
+      "phonetics": "重音在前 /ˈɪn/，vo 读 /vɔɪ/。",
+      "examples": [
+        {"en": "The invoice shows an outstanding balance of two hundred dollars.", "zh": "账单显示还有两百美元未付。", "source": "造句"},
+        {"en": "an itemized invoice", "zh": "逐项列明的账单（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "bill", "ipa": "/bɪl/", "gloss": "账单", "note": "bill 是日常口语说法；invoice 更正式、常见于正式财务文件"},
+        {"w": "statement", "ipa": "/ˈsteɪtmənt/", "gloss": "对账单", "note": "statement 是一段时间内所有收支的汇总；invoice 是单笔应付款"}
+      ],
+      "nuance": "invoice 是「你欠多少」的账单；receipt 是「你已付」的收据，一前一后。"
+    },
+    {
+      "word": "balance",
+      "levels": ["托福"],
+      "ipa": "/ˈbæləns/",
+      "subgroup": "noun",
+      "meaning": "n. 余额；欠款；平衡  v. 使平衡",
+      "etymology": "拉丁 bi-「二」+ lanx「秤盘」→ 双盘天平，引申为账目两边的「差额、余额」。",
+      "phonetics": "重音在前 /ˈbæl/，词尾 -ance 弱读 /əns/。",
+      "examples": [
+        {"en": "You have an outstanding balance that must be cleared before registration.", "zh": "你有一笔未付欠款，注册前必须结清。", "source": "造句"},
+        {"en": "an outstanding balance", "zh": "未结清余额（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "amount due", "ipa": "/əˈmaʊnt djuː/", "gloss": "应付金额", "note": "amount due 直接指要付的数；balance 指账上剩下的差额"}
+      ],
+      "nuance": "在缴费语境 balance 常指「还欠多少」（outstanding balance）；不等同 amount，amount 只是笼统的「一笔钱」。"
+    },
+    {
+      "word": "registration",
+      "levels": ["基础"],
+      "ipa": "/ˌredʒɪˈstreɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 注册；选课登记",
+      "etymology": "拉丁 re-「回」+ gerere「携带、记录」→ regestum「记录簿」，把名字记入册即注册。",
+      "phonetics": "重音在 -tra- /ˈstreɪ/，前面 regi- 都弱读。四音节，节奏别乱。",
+      "examples": [
+        {"en": "Registration for spring semester opens next Monday.", "zh": "春季学期选课下周一开放。", "source": "造句"},
+        {"en": "course registration", "zh": "选课注册（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "enrollment", "ipa": "/ɪnˈroʊlmənt/", "gloss": "注册，入学", "note": "enrollment 偏「入学、成为学生」；registration 偏「登记选具体课程」"}
+      ],
+      "nuance": "registration 多指「登记选哪些课」；enrollment 多指「注册入学、正式成为在册学生」。"
+    },
+    {
+      "word": "enrollment",
+      "levels": ["托福"],
+      "ipa": "/ɪnˈroʊlmənt/",
+      "subgroup": "noun",
+      "meaning": "n. 注册入学；在册人数",
+      "etymology": "en-「使…进入」+ roll「名册」+ -ment → 「把名字写进名册」的动作，即入学注册。roll 本义「卷轴」，古时名册是卷轴。",
+      "phonetics": "重音在第二音节 /ˈroʊl/，双 l 只发一个音。",
+      "examples": [
+        {"en": "Your enrollment won't be confirmed until the fee is paid.", "zh": "费用付清前，你的注册不会被确认。", "source": "造句"},
+        {"en": "confirm enrollment", "zh": "确认注册（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "admission", "ipa": "/ədˈmɪʃn/", "gloss": "录取，准入", "note": "admission 是被录取的资格；enrollment 是拿到资格后正式注册在读"}
+      ],
+      "nuance": "admission 是「被录取」；enrollment 是「录取后真正注册报到」，先后两步。"
+    },
+    {
+      "word": "registrar",
+      "levels": ["六级"],
+      "ipa": "/ˈredʒɪstrɑːr/",
+      "subgroup": "noun",
+      "meaning": "n. 教务处；注册主任",
+      "etymology": "与 register（登记）同根，-ar 表「做…的人/机构」→ 负责登记学籍与成绩的人或办公室。",
+      "phonetics": "重音在前 /ˈre/，词尾 -trar 拖长 /ˈstrɑːr/。口语常说 the registrar('s office)。",
+      "examples": [
+        {"en": "You'll need to get that signed at the registrar's office.", "zh": "你得去教务处把那份文件签好。", "source": "造句"},
+        {"en": "the registrar's office", "zh": "教务处（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "records office", "ipa": "/ˈrekɔːrdz ˈɔːfɪs/", "gloss": "学籍档案办公室", "note": "有些学校叫 records office，职能与 registrar's office 相同"}
+      ],
+      "nuance": "registrar 既可指「教务处这个办公室」，也可指「注册主任这个人」，靠上下文判断。"
+    },
+    {
+      "word": "prerequisite",
+      "levels": ["托福"],
+      "ipa": "/ˌpriːˈrekwəzɪt/",
+      "subgroup": "noun",
+      "meaning": "n. 先修课；前提条件  adj. 必备的",
+      "etymology": "pre-「之前」+ requisite「必需的」（拉丁 requirere 要求）→ 「事先要求满足的东西」，即先修课。",
+      "phonetics": "重音在 -req- /ˈrek/，前缀 pre- 读 /priː/。五音节，慢读别吞。",
+      "examples": [
+        {"en": "You can't enroll in this course without the prerequisite.", "zh": "没修先修课就不能选这门课。", "source": "造句"},
+        {"en": "meet the prerequisite", "zh": "满足先修要求（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "requirement", "ipa": "/rɪˈkwaɪərmənt/", "gloss": "要求，必备条件", "note": "requirement 泛指任何要求；prerequisite 特指「必须先完成的课/条件」"}
+      ],
+      "nuance": "prerequisite 强调「先后顺序」——必须先修完才能选下一门；requirement 只强调「必须满足」，无先后含义。"
+    },
+    {
+      "word": "semester",
+      "levels": ["托福"],
+      "ipa": "/sɪˈmestər/",
+      "subgroup": "noun",
+      "meaning": "n. 学期",
+      "etymology": "拉丁 sex「六」+ mensis「月」→ semestris「六个月」，一个半年制学期。",
+      "phonetics": "重音在中间 /ˈmes/，首音 se- 弱读 /sɪ/。",
+      "examples": [
+        {"en": "You can transfer the credits next semester.", "zh": "你可以下学期转这些学分。", "source": "造句"},
+        {"en": "fall / spring semester", "zh": "秋季／春季学期（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "term", "ipa": "/tɜːrm/", "gloss": "学期", "note": "term 是更通用的说法；semester 特指半年制的两学期制"},
+        {"w": "quarter", "ipa": "/ˈkwɔːrtər/", "gloss": "学季", "note": "采用四学季制的学校（如斯坦福）用 quarter，一年三到四个"}
+      ],
+      "nuance": "semester 是半年制学校的学期；quarter 是季度制学校的学季，两种校历互不通用。"
+    },
+    {
+      "word": "schedule",
+      "levels": ["托福"],
+      "ipa": "/ˈskedʒuːl/",
+      "subgroup": "noun",
+      "meaning": "n. 课表；日程表  v. 安排",
+      "etymology": "拉丁 schedula「小纸条、清单」→ 列在纸上的安排。美音读 /ˈskedʒ/，英音读 /ˈʃedʒ/。",
+      "phonetics": "美音首音读 /sk/：/ˈskedʒuːl/；别按英音读成 /ˈʃedjuːl/。托福用美音。",
+      "examples": [
+        {"en": "Dropping this class will change your whole schedule.", "zh": "退掉这门课会改变你整张课表。", "source": "造句"},
+        {"en": "class schedule", "zh": "课程表（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "timetable", "ipa": "/ˈtaɪmteɪbl/", "gloss": "时间表", "note": "timetable 偏英式；美式校园口语更常用 schedule"}
+      ],
+      "nuance": "schedule 既指「课表」也指「日程安排」；作动词 schedule an appointment 是「预约时间」。"
+    },
+    {
+      "word": "appointment",
+      "levels": ["托福"],
+      "ipa": "/əˈpɔɪntmənt/",
+      "subgroup": "noun",
+      "meaning": "n. 预约；约见",
+      "etymology": "ap-（ad-「向」）+ point「指定」+ -ment → 「指定一个时间点」，即预约。",
+      "phonetics": "重音在 -point- /ˈpɔɪnt/，首音 ap- 弱读 /ə/。",
+      "examples": [
+        {"en": "You'll need an appointment to see your academic advisor.", "zh": "你得预约才能见学术顾问。", "source": "造句"},
+        {"en": "make an appointment", "zh": "预约（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "meeting", "ipa": "/ˈmiːtɪŋ/", "gloss": "会面", "note": "meeting 泛指见面；appointment 强调「事先约好的时间点」"}
+      ],
+      "nuance": "appointment 是预约好时间的正式约见；walk-in 则是不预约直接来办。"
+    },
+    {
+      "word": "advisor",
+      "levels": ["基础"],
+      "ipa": "/ədˈvaɪzər/",
+      "subgroup": "noun",
+      "meaning": "n. 顾问，指导老师（=adviser）",
+      "etymology": "advise（建议，拉丁 ad-「向」+ videre「看」→ 帮你看清、给意见）+ -or「人」→ 给建议的人。",
+      "phonetics": "重音在 -vi- /ˈvaɪ/。ad- 弱读 /əd/。拼 advisor 或 adviser 都对。",
+      "examples": [
+        {"en": "Talk to your advisor before you drop a required course.", "zh": "退必修课前先和你的指导老师谈谈。", "source": "造句"},
+        {"en": "academic advisor", "zh": "学术顾问（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "counselor", "ipa": "/ˈkaʊnsələr/", "gloss": "辅导员，咨询师", "note": "counselor 偏心理/生涯咨询；advisor 偏选课与学业规划"}
+      ],
+      "nuance": "advisor 帮你规划课程学业；counselor 更多处理心理、生涯层面的咨询。"
+    },
+    {
+      "word": "department",
+      "levels": ["基础"],
+      "ipa": "/dɪˈpɑːrtmənt/",
+      "subgroup": "noun",
+      "meaning": "n. 系，学院；部门",
+      "etymology": "de-「分开」+ part「部分」+ -ment → 把整体「分成」的一块，即部门、院系。",
+      "phonetics": "重音在 -part- /ˈpɑːrt/。de- 弱读 /dɪ/。",
+      "examples": [
+        {"en": "That form has to be signed by the department first.", "zh": "那张表得先由院系签字。", "source": "造句"},
+        {"en": "the math department", "zh": "数学系（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "faculty", "ipa": "/ˈfækəlti/", "gloss": "（英）学院；全体教师", "note": "英式 faculty 指学院；美式 faculty 指全体教师，别混"}
+      ],
+      "nuance": "department 是具体学科的系（math department）；美式 faculty 指的是「全体教职工」，不是院系。"
+    },
+    {
+      "word": "faculty",
+      "levels": ["托福"],
+      "ipa": "/ˈfækəlti/",
+      "subgroup": "noun",
+      "meaning": "n. 全体教师；（英）学院；能力",
+      "etymology": "拉丁 facultas「能力、才能」（源自 facere「做」）→ 引申指有专业能力的教师群体。",
+      "phonetics": "重音在前 /ˈfæk/，中间 -ul- 弱读 /əl/。",
+      "examples": [
+        {"en": "This decision needs approval from a faculty member.", "zh": "这个决定需要一位教师批准。", "source": "造句"},
+        {"en": "a faculty advisor", "zh": "教师顾问（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "staff", "ipa": "/stæf/", "gloss": "职工，行政人员", "note": "staff 指行政/后勤员工；faculty 特指教学的教师"}
+      ],
+      "nuance": "美式 faculty 指「教学的教师」；staff 指「行政后勤员工」——教务处窗口的人多是 staff，不是 faculty。"
+    },
+    {
+      "word": "counter",
+      "levels": ["托福"],
+      "ipa": "/ˈkaʊntər/",
+      "subgroup": "noun",
+      "meaning": "n. 柜台，服务台",
+      "etymology": "拉丁 computare「计数」→ 中世纪商店里数钱的桌子，引申为「柜台」。",
+      "phonetics": "重音在前 /ˈkaʊn/，ou 读 /aʊ/。",
+      "examples": [
+        {"en": "Please take a number and wait to be called at the counter.", "zh": "请取号，在柜台等叫号。", "source": "造句"},
+        {"en": "the front counter", "zh": "前台柜台（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "front desk", "ipa": "/frʌnt desk/", "gloss": "前台", "note": "front desk 更口语；counter 强调隔开办事的那道台面"},
+        {"w": "window", "ipa": "/ˈwɪndoʊ/", "gloss": "窗口", "note": "办事窗口也叫 window，如 payment window"}
+      ],
+      "nuance": "counter 是办理业务的柜台台面；window（窗口）指某个具体办某类业务的窗口。"
+    },
+    {
+      "word": "diploma",
+      "levels": ["六级"],
+      "ipa": "/dɪˈploʊmə/",
+      "subgroup": "noun",
+      "meaning": "n. 毕业证书，文凭",
+      "etymology": "希腊 diploma「对折的纸」（diploun「对折」）→ 古时正式证书对折盖章，引申为文凭。同源 diplomat（外交官，持对折凭证者）。",
+      "phonetics": "重音在中间 /ˈploʊ/，末音 -ma 弱读 /mə/。",
+      "examples": [
+        {"en": "Your diploma will be issued after all requirements are met.", "zh": "满足所有毕业要求后才会发文凭。", "source": "造句"},
+        {"en": "a high school diploma", "zh": "高中毕业证（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "degree", "ipa": "/dɪˈɡriː/", "gloss": "学位", "note": "degree 是学位资格（学士/硕士）；diploma 是证明学位的那张证书"},
+        {"w": "certificate", "ipa": "/sərˈtɪfɪkət/", "gloss": "证书", "note": "certificate 是各类结业证书；diploma 特指毕业文凭"}
+      ],
+      "nuance": "diploma 是那张毕业证书（实物）；degree 是它代表的学位资格（抽象）。"
+    },
+    {
+      "word": "certificate",
+      "levels": ["托福"],
+      "ipa": "/sərˈtɪfɪkət/",
+      "subgroup": "noun",
+      "meaning": "n. 证书，证明  v. /-keɪt/ 发证书",
+      "etymology": "拉丁 certus「确定的」+ facere「做」→ 「使确定」的文件，即证明。同源 certain（确定的）。",
+      "phonetics": "名词重音在 -ti- /ˈtɪ/，词尾 -cate 弱读 /kət/（不读 /keɪt/）。",
+      "examples": [
+        {"en": "You can request a certificate of enrollment at the counter.", "zh": "你可以在柜台申请一份在读证明。", "source": "造句"},
+        {"en": "certificate of enrollment", "zh": "在读证明（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "certification", "ipa": "/ˌsɜːrtɪfɪˈkeɪʃn/", "gloss": "认证（过程）", "note": "certification 是认证的过程/资格；certificate 是那张纸质证书"}
+      ],
+      "nuance": "certificate 是一张证书（实物）；certification 是取得认证这件事（过程）。"
+    },
+    {
+      "word": "signature",
+      "levels": ["六级"],
+      "ipa": "/ˈsɪɡnətʃər/",
+      "subgroup": "noun",
+      "meaning": "n. 签名",
+      "etymology": "拉丁 signare「做记号」（signum「符号」）→ 亲手做的专属记号，即签名。同源 sign（签，标志）。",
+      "phonetics": "重音在前 /ˈsɪɡ/，-ture 读 /tʃər/。别读成 /ˈsaɪn/。",
+      "examples": [
+        {"en": "This form isn't valid without your advisor's signature.", "zh": "没有你顾问的签名，这张表就无效。", "source": "造句"},
+        {"en": "sign here / your signature", "zh": "在这里签名／你的签名（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sign-off", "ipa": "/ˈsaɪnɔːf/", "gloss": "签字批准", "note": "sign-off 强调「签字放行」的许可；signature 是签名这个字迹本身"}
+      ],
+      "nuance": "signature 是手写的签名字迹；approval（批准）是它背后代表的许可，不一定要签名。"
+    },
+    {
+      "word": "petition",
+      "levels": ["托福"],
+      "ipa": "/pəˈtɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 申请书，请愿  v. 正式申请",
+      "etymology": "拉丁 petere「请求、追求」→ petitio「请求」。教务里指「破例申请」（如超期退课的书面申请）。",
+      "phonetics": "重音在中间 /ˈtɪʃ/，首音 pe- 弱读 /pə/。",
+      "examples": [
+        {"en": "You'll have to file a petition to drop the class after the deadline.", "zh": "过了截止日再想退课，你得递交一份申请。", "source": "造句"},
+        {"en": "file a petition", "zh": "递交申请书（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "request", "ipa": "/rɪˈkwest/", "gloss": "请求", "note": "request 是普通请求；petition 是正式的、常为破例的书面申请"},
+        {"w": "appeal", "ipa": "/əˈpiːl/", "gloss": "申诉", "note": "appeal 是对已有决定的申诉；petition 是主动提出的申请"}
+      ],
+      "nuance": "petition 是走正式流程的书面申请（常用于破例）；request 是普通口头/书面请求，分量轻。"
+    },
+    {
+      "word": "hold",
+      "levels": ["基础"],
+      "ipa": "/hoʊld/",
+      "subgroup": "noun",
+      "meaning": "n. 冻结，限制（阻止办理）  v. 保留",
+      "etymology": "古英语 healdan「持有、守住」→ 名词引申为「卡住你账户的限制标记」。这是美国教务系统的专门用法。",
+      "phonetics": "长音 /oʊ/，词尾 ld 收清。put a hold on 是固定搭配。",
+      "examples": [
+        {"en": "There's a hold on your account, so you can't register yet.", "zh": "你的账户被冻结了，暂时还不能选课。", "source": "造句"},
+        {"en": "put a hold on your account", "zh": "冻结你的账户（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "block", "ipa": "/blɑːk/", "gloss": "阻止，封锁", "note": "block 强调彻底封死；hold 是待你处理后即可解除的临时限制"},
+        {"w": "restriction", "ipa": "/rɪˈstrɪkʃn/", "gloss": "限制", "note": "restriction 泛指各种限制；hold 特指系统里那条待清除的冻结标记"}
+      ],
+      "nuance": "教务里 hold 是账户上待清除的限制标记（欠费、缺材料都会触发）；处理完就 lift the hold（解除）。"
+    },
+    {
+      "word": "waiver",
+      "levels": ["六级"],
+      "ipa": "/ˈweɪvər/",
+      "subgroup": "noun",
+      "meaning": "n. 豁免，免除（书）",
+      "etymology": "古法语 weyver「放弃」→ 正式「放弃/免除」某项要求的文件，如 fee waiver 免费用。动词 waive。",
+      "phonetics": "重音在前 /ˈweɪ/，和 waver /ˈweɪvər/（动摇）同音，靠语境区分。",
+      "examples": [
+        {"en": "You can apply for a fee waiver if you qualify.", "zh": "符合条件的话你可以申请免手续费。", "source": "造句"},
+        {"en": "a fee waiver", "zh": "费用豁免（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "exemption", "ipa": "/ɪɡˈzempʃn/", "gloss": "免除，豁免", "note": "exemption 常指法定/资格上的免除；waiver 常需主动申请放弃某要求"}
+      ],
+      "nuance": "waiver 是主动申请「免掉」某要求（如 fee waiver）；exemption 更偏「本就符合条件被免」。"
+    },
+    {
+      "word": "scholarship",
+      "levels": ["托福"],
+      "ipa": "/ˈskɑːlərʃɪp/",
+      "subgroup": "noun",
+      "meaning": "n. 奖学金；学识",
+      "etymology": "scholar（学者，希腊 scholē「闲暇、求学」）+ -ship「状态/待遇」→ 给学者的资助。",
+      "phonetics": "重音在前 /ˈskɑː/，-ar- 弱读 /lər/。",
+      "examples": [
+        {"en": "The scholarship covers full tuition for two years.", "zh": "这份奖学金覆盖两年全额学费。", "source": "造句"},
+        {"en": "apply for a scholarship", "zh": "申请奖学金（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "grant", "ipa": "/ɡrænt/", "gloss": "助学金", "note": "grant 多按经济需求发放且无需成绩；scholarship 常凭成绩表现获得"},
+        {"w": "financial aid", "ipa": "/faɪˈnænʃl eɪd/", "gloss": "助学资助", "note": "financial aid 是资助总称，含 scholarship、grant、loan"}
+      ],
+      "nuance": "scholarship 多凭学业表现颁发；grant 多按经济需求发放，二者都属 financial aid。"
+    },
+    {
+      "word": "GPA",
+      "levels": ["托福"],
+      "ipa": "/ˌdʒiː piː ˈeɪ/",
+      "subgroup": "noun",
+      "meaning": "n. 平均绩点（Grade Point Average 的缩写）",
+      "etymology": "Grade Point Average 首字母缩写：把各科成绩折成点数后取平均，衡量整体学业水平。",
+      "phonetics": "逐字母读 /dʒiː-piː-eɪ/，重音落在 A。不要拼读成一个词。",
+      "examples": [
+        {"en": "You need a GPA of 3.0 to keep the scholarship.", "zh": "你得保持 3.0 的绩点才能续领奖学金。", "source": "造句"},
+        {"en": "maintain a high GPA", "zh": "保持高绩点（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "grade point", "ipa": "/ɡreɪd pɔɪnt/", "gloss": "绩点", "note": "grade point 是单科折算的点数；GPA 是所有科目的加权平均"}
+      ],
+      "nuance": "GPA 是所有课的加权平均绩点；单科的 grade（成绩，如 A/B）是它的组成单位。"
+    },
+    {
+      "word": "grade",
+      "levels": ["基础"],
+      "ipa": "/ɡreɪd/",
+      "subgroup": "noun",
+      "meaning": "n. 成绩，分数；年级  v. 评分",
+      "etymology": "拉丁 gradus「步、等级」→ 表现被分成的「等级」，即成绩。同源 gradual（逐级的）。",
+      "phonetics": "长音 /eɪ/，一个音节。别和 grate /ɡreɪt/（磨碎）混。",
+      "examples": [
+        {"en": "You can dispute a grade within two weeks of the semester's end.", "zh": "你可以在学期结束两周内对成绩提出异议。", "source": "造句"},
+        {"en": "a passing grade", "zh": "及格分（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "mark", "ipa": "/mɑːrk/", "gloss": "分数（英式）", "note": "英式常用 mark 指分数；美式校园口语用 grade"},
+        {"w": "score", "ipa": "/skɔːr/", "gloss": "得分", "note": "score 多指考试的具体分值；grade 是折成 A/B/C 的等第"}
+      ],
+      "nuance": "grade 是折成 A/B/C 的等第成绩；score 是某次考试的具体分数（如 92 分）。"
+    },
+    {
+      "word": "document",
+      "levels": ["基础"],
+      "ipa": "/ˈdɑːkjumənt/",
+      "subgroup": "noun",
+      "meaning": "n. 文件，证件  v. /-ment/ 记录",
+      "etymology": "拉丁 docere「教、示明」→ documentum「示明的证据」，用来证明的文件。同源 doctor（教者）。",
+      "phonetics": "名词重音在前 /ˈdɑːk/，-u- 弱读 /ju/；动词末音读 /ment/。",
+      "examples": [
+        {"en": "Bring a photo ID and any supporting documents.", "zh": "带上带照片的身份证件和任何佐证材料。", "source": "造句"},
+        {"en": "supporting documents", "zh": "证明材料（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "paperwork", "ipa": "/ˈpeɪpərwɜːrk/", "gloss": "文书", "note": "paperwork 不可数、指要办的一堆表单；document 是单份可数文件"}
+      ],
+      "nuance": "document 是一份具体文件（可数）；paperwork 是要处理的所有文书的总称（不可数）。"
+    },
+    {
+      "word": "ID",
+      "levels": ["基础"],
+      "ipa": "/ˌaɪ ˈdiː/",
+      "subgroup": "noun",
+      "meaning": "n. 证件，身份证明（identification 缩写）",
+      "etymology": "identification（身份证明）的口语缩写，逐字母读。student ID = 学生证。",
+      "phonetics": "逐字母读 /aɪ-diː/，重音在 D。student ID card 也常说。",
+      "examples": [
+        {"en": "You'll need a photo ID to pick up your transcript.", "zh": "取成绩单需要带有照片的证件。", "source": "造句"},
+        {"en": "a student ID", "zh": "学生证（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "identification", "ipa": "/aɪˌdentɪfɪˈkeɪʃn/", "gloss": "身份证明", "note": "identification 是完整词；ID 是日常口语缩写"}
+      ],
+      "nuance": "ID 泛指任何身份证件；student ID 特指学生证，办业务时常要出示。"
+    },
+    {
+      "word": "number",
+      "levels": ["基础"],
+      "ipa": "/ˈnʌmbər/",
+      "subgroup": "noun",
+      "meaning": "n. 号码；数字（此处指排队取的号）",
+      "etymology": "拉丁 numerus「数」→ 排队场景里 take a number 就是「取个号排队」。",
+      "phonetics": "重音在前 /ˈnʌm/，b 在 mb 组合里发音（不像 climb 那样默音）。",
+      "examples": [
+        {"en": "Take a number and have a seat; we'll call you.", "zh": "取个号坐着等，我们会叫你。", "source": "造句"},
+        {"en": "take a number", "zh": "取号（排队）（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "ticket", "ipa": "/ˈtɪkɪt/", "gloss": "号码票", "note": "有些地方叫 ticket；排队叫号语境和 number 通用"}
+      ],
+      "nuance": "此场景 number 指「排队叫号的号码」；student number 则指学号，别混。"
+    },
+    {
+      "word": "line",
+      "levels": ["基础"],
+      "ipa": "/laɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 队伍，排队（美）",
+      "etymology": "拉丁 linea「线」→ 人排成一条线，即队伍。美式说 line，英式说 queue。",
+      "phonetics": "长音 /aɪ/，一个音节。wait in line 是固定搭配。",
+      "examples": [
+        {"en": "There's a long line at the registrar's office today.", "zh": "今天教务处排了长队。", "source": "造句"},
+        {"en": "wait in line", "zh": "排队（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "queue", "ipa": "/kjuː/", "gloss": "队伍（英）", "note": "英式用 queue；美式用 line。托福多用美式 line"}
+      ],
+      "nuance": "美式排队说 wait in line；英式说 queue（拼写只发 /kjuː/，后面 ueue 不发音）。"
+    },
+    {
+      "word": "office hours",
+      "levels": ["基础"],
+      "ipa": "/ˈɔːfɪs aʊərz/",
+      "subgroup": "noun",
+      "meaning": "n. 办公时间；答疑时间",
+      "etymology": "office「办公室」+ hours「时段」→ 办公室开放办事的时段，或老师坐班答疑的时间。",
+      "phonetics": "office 重音在前 /ˈɔː/；两词连读时注意 s 与 h 的衔接。",
+      "examples": [
+        {"en": "The registrar's office hours are nine to five on weekdays.", "zh": "教务处工作日的办公时间是九点到五点。", "source": "造句"},
+        {"en": "during office hours", "zh": "在办公时间内（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "business hours", "ipa": "/ˈbɪznəs aʊərz/", "gloss": "营业/办公时间", "note": "business hours 泛指机构开放时间；office hours 也可指老师坐班答疑"}
+      ],
+      "nuance": "对办公室 office hours 指开放办事时段；对老师 office hours 指坐班答疑时间，语境决定。"
+    },
+    {
+      "word": "requirement",
+      "levels": ["基础"],
+      "ipa": "/rɪˈkwaɪərmənt/",
+      "subgroup": "noun",
+      "meaning": "n. 要求，必备条件",
+      "etymology": "require（拉丁 re-「反复」+ quaerere「寻求」→ 反复要求）+ -ment → 被要求的东西。",
+      "phonetics": "重音在 -quire- /ˈkwaɪər/，三音节。",
+      "examples": [
+        {"en": "You've met all the graduation requirements.", "zh": "你已满足所有毕业要求。", "source": "造句"},
+        {"en": "graduation requirements", "zh": "毕业要求（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "prerequisite", "ipa": "/ˌpriːˈrekwəzɪt/", "gloss": "先修条件", "note": "prerequisite 强调先后顺序；requirement 只强调必须满足"}
+      ],
+      "nuance": "requirement 泛指「必须满足的条件」；prerequisite 特指「必须先完成的前置课程/条件」。"
+    },
+    {
+      "word": "copy",
+      "levels": ["基础"],
+      "ipa": "/ˈkɑːpi/",
+      "subgroup": "noun",
+      "meaning": "n. 副本，一份  v. 复印",
+      "etymology": "拉丁 copia「丰富、大量」→ 引申为「复制出的一份」。",
+      "phonetics": "重音在前 /ˈkɑː/，词尾 -py 弱读 /pi/。",
+      "examples": [
+        {"en": "Could I get a copy of my transcript for my records?", "zh": "我能要一份成绩单副本自己留存吗？", "source": "造句"},
+        {"en": "a certified copy", "zh": "经认证的副本（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "duplicate", "ipa": "/ˈduːplɪkət/", "gloss": "复本", "note": "duplicate 强调与原件完全一致的复制件；copy 更口语泛用"}
+      ],
+      "nuance": "copy 是随手复印的一份；certified copy（认证副本）才带公章、具有法律效力。"
+    },
+    {
+      "word": "policy",
+      "levels": ["基础"],
+      "ipa": "/ˈpɑːləsi/",
+      "subgroup": "noun",
+      "meaning": "n. 政策，规定",
+      "etymology": "希腊 polis「城邦」→ 拉丁 politia「治理」→ 引申为机构的「行事规定」。同源 police、politics。",
+      "phonetics": "重音在前 /ˈpɑː/，-li- 弱读 /lə/。别和 police /pəˈliːs/ 混。",
+      "examples": [
+        {"en": "It's school policy that transcripts can't be released over the phone.", "zh": "学校规定成绩单不能通过电话发放。", "source": "造句"},
+        {"en": "the refund policy", "zh": "退款政策（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "rule", "ipa": "/ruːl/", "gloss": "规则", "note": "rule 是具体一条规矩；policy 是机构成体系的方针规定"},
+        {"w": "regulation", "ipa": "/ˌreɡjuˈleɪʃn/", "gloss": "规章", "note": "regulation 更正式、常成文；policy 涵盖机构的整体处理方针"}
+      ],
+      "nuance": "policy 是机构的成体系方针（refund policy）；rule 是其中具体的一条规矩。"
+    },
+    {
+      "word": "form (verb) fill out",
+      "levels": ["基础"],
+      "ipa": "/fɪl aʊt/",
+      "subgroup": "verb",
+      "meaning": "v. 填写（表格）",
+      "etymology": "fill「填满」+ out「完全」→ 把表格空格「全部填满」，即填表。也说 fill in。",
+      "phonetics": "两词连读 /fɪˈlaʊt/，out 重读。宾语在中间：fill it out。",
+      "examples": [
+        {"en": "Please fill out this form and hand it back to me.", "zh": "请填好这张表再交回给我。", "source": "造句"},
+        {"en": "fill out an application", "zh": "填一份申请表（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "complete", "ipa": "/kəmˈpliːt/", "gloss": "填完，完成", "note": "complete a form 更正式；fill out 更口语"}
+      ],
+      "nuance": "fill out 指填整张表；fill in 指填某个空格（fill in the blank），范围不同。"
+    },
+    {
+      "word": "submit",
+      "levels": ["托福"],
+      "ipa": "/səbˈmɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 提交，递交",
+      "etymology": "拉丁 sub-「向下」+ mittere「送」→ 「递交上去」给上级/机构。同源 mission、transmit。",
+      "phonetics": "重音在后 /ˈmɪt/，首音 sub- 弱读 /səb/。",
+      "examples": [
+        {"en": "You have to submit the form before the deadline.", "zh": "你必须在截止日期前提交这张表。", "source": "造句"},
+        {"en": "submit an application", "zh": "提交申请（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "hand in", "ipa": "/hænd ɪn/", "gloss": "交上去", "note": "hand in 更口语、多指当面交纸质件；submit 正式且含线上提交"},
+        {"w": "turn in", "ipa": "/tɜːrn ɪn/", "gloss": "上交", "note": "turn in 偏口语，常指交作业/材料；submit 更书面正式"}
+      ],
+      "nuance": "submit 正式且涵盖线上提交；hand in / turn in 更口语，多指当面交纸质材料。"
+    },
+    {
+      "word": "process",
+      "levels": ["托福"],
+      "ipa": "/ˈprɑːses/",
+      "subgroup": "verb",
+      "meaning": "v. 办理，处理  n. 流程",
+      "etymology": "拉丁 pro-「向前」+ cedere「走」→ 「向前推进」的过程；动词引申为「推进办理」。",
+      "phonetics": "名词/动词重音都在前 /ˈprɑː/。美音第二音节读 /ses/。",
+      "examples": [
+        {"en": "It takes three to five business days to process your request.", "zh": "办理你的申请需要三到五个工作日。", "source": "造句"},
+        {"en": "process a request", "zh": "办理申请（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "handle", "ipa": "/ˈhændl/", "gloss": "处理", "note": "handle 泛指应对处理；process 强调按既定流程办理"}
+      ],
+      "nuance": "process 强调「按流程一步步办理」（含审核录入）；handle 只是笼统的「处理、应对」。"
+    },
+    {
+      "word": "enroll",
+      "levels": ["托福"],
+      "ipa": "/ɪnˈroʊl/",
+      "subgroup": "verb",
+      "meaning": "v. 注册；选（课）；入学",
+      "etymology": "en-「使进入」+ roll「名册」→ 把名字写进名册。roll 本义卷轴（古时名册是卷轴）。",
+      "phonetics": "重音在后 /ˈroʊl/，双 l 只发一个音。enroll in 是固定介词搭配。",
+      "examples": [
+        {"en": "You can enroll in the course online through the portal.", "zh": "你可以在门户上在线选这门课。", "source": "造句"},
+        {"en": "enroll in a class", "zh": "选一门课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "register", "ipa": "/ˈredʒɪstər/", "gloss": "注册，登记", "note": "register for a class 与 enroll in a class 几乎同义；register 更强调登记动作"},
+        {"w": "sign up", "ipa": "/saɪn ʌp/", "gloss": "报名", "note": "sign up 更口语；enroll 更正式，含「正式入册」意味"}
+      ],
+      "nuance": "enroll in / register for 都是「选课注册」；enroll 更含「正式入册成为学生」的分量。"
+    },
+    {
+      "word": "register",
+      "levels": ["基础"],
+      "ipa": "/ˈredʒɪstər/",
+      "subgroup": "verb",
+      "meaning": "v. 注册，登记选课  n. 登记簿",
+      "etymology": "拉丁 re-「回」+ gerere「记录、携带」→ regestum「记录簿」，把信息记入册。",
+      "phonetics": "重音在前 /ˈre/，-gis- 弱读 /dʒɪ/。register for 是固定搭配。",
+      "examples": [
+        {"en": "You need to register for classes before the term starts.", "zh": "开学前你得先选好课。", "source": "造句"},
+        {"en": "register for classes", "zh": "选课注册（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "enroll", "ipa": "/ɪnˈroʊl/", "gloss": "注册选课", "note": "register for = enroll in，含义相同，介词不同"}
+      ],
+      "nuance": "register for a class 与 enroll in a class 同义，只是介词搭配不同（for vs in）。"
+    },
+    {
+      "word": "drop",
+      "levels": ["基础"],
+      "ipa": "/drɑːp/",
+      "subgroup": "verb",
+      "meaning": "v. 退（课）；放下",
+      "etymology": "古英语 dropa「水滴」→ 引申「让…落下、放弃」；教务里 drop a class 即「退课」。",
+      "phonetics": "短音 /ɑː/，一个音节。drop 与反义 add 常成对出现：add/drop period。",
+      "examples": [
+        {"en": "You can still drop the class without a penalty this week.", "zh": "这周退课还不会有任何处罚。", "source": "造句"},
+        {"en": "drop a class", "zh": "退课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "withdraw", "ipa": "/wɪðˈdrɔː/", "gloss": "退课（较晚，留记录）", "note": "drop 是早期退课不留痕；withdraw 是晚退，成绩单上留 W"}
+      ],
+      "antonyms": [
+        {"w": "add", "ipa": "/æd/", "gloss": "加课"}
+      ],
+      "nuance": "drop 是加退课期内退课、不留记录；withdraw 是期限后退课，成绩单会留 W 标记。"
+    },
+    {
+      "word": "withdraw",
+      "levels": ["托福"],
+      "ipa": "/wɪðˈdrɔː/",
+      "subgroup": "verb",
+      "meaning": "v. 退课（较晚）；退学；取回",
+      "etymology": "with-「back，向后」+ draw「拉」→ 「往回拉、撤回」。教务里指过了加退课期后的正式退课。",
+      "phonetics": "重音在后 /ˈdrɔː/，th 读浊音 /ð/。过去式 withdrew，过去分词 withdrawn。",
+      "examples": [
+        {"en": "If you withdraw now, a W will show on your transcript.", "zh": "现在退课的话，成绩单上会出现一个 W。", "source": "造句"},
+        {"en": "withdraw from a course", "zh": "退掉一门课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "drop", "ipa": "/drɑːp/", "gloss": "退课（早期）", "note": "drop 早退不留痕；withdraw 晚退留 W 记录"}
+      ],
+      "nuance": "withdraw 是加退课期后的正式退课，成绩单留 W；drop 是期内退课，干干净净不留痕。"
+    },
+    {
+      "word": "log in",
+      "levels": ["基础"],
+      "ipa": "/lɔːɡ ɪn/",
+      "subgroup": "verb",
+      "meaning": "v. 登录（系统/门户）",
+      "etymology": "log「航海日志」+ in → 早期计算机沿用船员「记录入册」的说法，输入账号进入系统即 log in。",
+      "phonetics": "两词连读 /lɔːˈɡɪn/，in 重读。名词形 login 连写。",
+      "examples": [
+        {"en": "Log in to the student portal and you can print it yourself.", "zh": "登录学生门户，你就能自己打印了。", "source": "造句"},
+        {"en": "log in to the portal", "zh": "登录门户（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sign in", "ipa": "/saɪn ɪn/", "gloss": "登入", "note": "sign in 与 log in 几乎同义；界面上两种说法都有"}
+      ],
+      "antonyms": [
+        {"w": "log out", "ipa": "/lɔːɡ aʊt/", "gloss": "登出"}
+      ],
+      "nuance": "动词分写 log in（Log in to the portal）；名词/形容词连写 login（your login details）。"
+    },
+    {
+      "word": "print out",
+      "levels": ["基础"],
+      "ipa": "/prɪnt aʊt/",
+      "subgroup": "verb",
+      "meaning": "v. 打印出来",
+      "etymology": "print「印刷」+ out「出来」→ 把电子文件「印出实体」。名词 printout 连写。",
+      "phonetics": "连读 /prɪnˈtaʊt/，out 重读。宾语插中间：print it out。",
+      "examples": [
+        {"en": "You can print out an unofficial copy for free.", "zh": "你可以免费打印一份非正式版。", "source": "造句"},
+        {"en": "print out a copy", "zh": "打印一份（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "print", "ipa": "/prɪnt/", "gloss": "打印", "note": "print 是基础动词；print out 更口语，强调「打成纸质件」"}
+      ],
+      "nuance": "print out 强调「打成纸质实物」；单说 print 也可指打印，但少了「拿到手」的画面感。"
+    },
+    {
+      "word": "mail",
+      "levels": ["托福"],
+      "ipa": "/meɪl/",
+      "subgroup": "verb",
+      "meaning": "v. 邮寄  n. 邮件",
+      "etymology": "古法语 male「行李袋」→ 装信的邮袋，引申为「邮件、邮寄」。",
+      "phonetics": "长音 /eɪ/，一个音节，和 male（男性）同音。",
+      "examples": [
+        {"en": "We can mail the transcript directly to the school.", "zh": "我们可以把成绩单直接寄到学校。", "source": "造句"},
+        {"en": "mail it to the address", "zh": "寄到那个地址（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "send", "ipa": "/send/", "gloss": "寄送", "note": "send 泛指寄/发（含电子）；mail 特指走邮政寄纸质件"},
+        {"w": "post", "ipa": "/poʊst/", "gloss": "邮寄（英）", "note": "英式用 post；美式用 mail"}
+      ],
+      "nuance": "mail 特指走邮政寄实体件；send 更泛，也可指电子发送（send an email）。"
+    },
+    {
+      "word": "stamp",
+      "levels": ["六级"],
+      "ipa": "/stæmp/",
+      "subgroup": "verb",
+      "meaning": "v. 盖章  n. 图章；邮票",
+      "etymology": "日耳曼语 stampōn「捣、压」→ 用力压出印记，即盖章。",
+      "phonetics": "短音 /æ/，st- 与 -mp 都要发清。",
+      "examples": [
+        {"en": "The clerk stamped the form to show it was received.", "zh": "职员在表上盖章，表示已收到。", "source": "造句"},
+        {"en": "stamp the form", "zh": "在表上盖章（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "seal", "ipa": "/siːl/", "gloss": "盖公章", "note": "seal 是压印正式公章；stamp 是普通墨戳，更随手"}
+      ],
+      "nuance": "stamp 是盖普通墨水图章（如 received 戳）；seal 是压正式公章，权威性更高。"
+    },
+    {
+      "word": "sign",
+      "levels": ["基础"],
+      "ipa": "/saɪn/",
+      "subgroup": "verb",
+      "meaning": "v. 签名，签字  n. 标志",
+      "etymology": "拉丁 signum「记号」→ 亲手做记号，即签名。同源 signature、signal。",
+      "phonetics": "长音 /aɪ/，g 不发音。别读出 /ɡ/。",
+      "examples": [
+        {"en": "Sign here and date it at the bottom.", "zh": "在这里签名，并在底部写上日期。", "source": "造句"},
+        {"en": "sign the form", "zh": "在表上签字（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sign off on", "ipa": "/saɪn ɔːf ɑːn/", "gloss": "签字批准", "note": "sign off on 强调「签字放行、批准」；sign 只是签上名"}
+      ],
+      "nuance": "sign 是签上名字；sign off on 强调「签字批准放行」，含许可意味。"
+    },
+    {
+      "word": "verify",
+      "levels": ["托福"],
+      "ipa": "/ˈverɪfaɪ/",
+      "subgroup": "verb",
+      "meaning": "v. 核实，验证",
+      "etymology": "拉丁 verus「真的」+ facere「做」→ 「使成真、证实」。同源 verity（真理）、very。",
+      "phonetics": "重音在前 /ˈver/，-fy 读 /faɪ/。",
+      "examples": [
+        {"en": "We need to verify your identity before releasing the record.", "zh": "发放档案前我们要先核实你的身份。", "source": "造句"},
+        {"en": "verify your identity", "zh": "核实身份（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "confirm", "ipa": "/kənˈfɜːrm/", "gloss": "确认", "note": "confirm 是确认某事属实/敲定；verify 更强调「查证核对」"},
+        {"w": "check", "ipa": "/tʃek/", "gloss": "检查", "note": "check 是随手查看；verify 是正式核实真伪"}
+      ],
+      "nuance": "verify 强调「查证核对真伪」（verify identity）；confirm 是「确认、敲定」某事成立。"
+    },
+    {
+      "word": "confirm",
+      "levels": ["托福"],
+      "ipa": "/kənˈfɜːrm/",
+      "subgroup": "verb",
+      "meaning": "v. 确认，证实",
+      "etymology": "拉丁 con-「加强」+ firmus「坚固」→ 「使确定牢靠」。同源 firm（坚固的）。",
+      "phonetics": "重音在后 /ˈfɜːrm/，首音 con- 弱读 /kən/。",
+      "examples": [
+        {"en": "Can you confirm that my registration went through?", "zh": "你能确认一下我的选课成功了吗？", "source": "造句"},
+        {"en": "confirm your enrollment", "zh": "确认注册（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "verify", "ipa": "/ˈverɪfaɪ/", "gloss": "核实", "note": "verify 侧重查证真伪；confirm 侧重敲定/回复属实"}
+      ],
+      "nuance": "confirm 是「确认某事成立、给出肯定答复」；verify 是「主动查证真伪」。"
+    },
+    {
+      "word": "notify",
+      "levels": ["托福"],
+      "ipa": "/ˈnoʊtɪfaɪ/",
+      "subgroup": "verb",
+      "meaning": "v. 通知，告知",
+      "etymology": "拉丁 notus「已知的」+ facere「做」→ 「使知道」。同源 note、notice。",
+      "phonetics": "重音在前 /ˈnoʊ/，-fy 读 /faɪ/。notify sb of sth 是固定句型。",
+      "examples": [
+        {"en": "We'll notify you by email once it's ready.", "zh": "办好后我们会用邮件通知你。", "source": "造句"},
+        {"en": "notify you of any changes", "zh": "有任何变动会通知你（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "inform", "ipa": "/ɪnˈfɔːrm/", "gloss": "告知", "note": "inform sb of/that 与 notify 近义；notify 更正式、多用于机构通知"}
+      ],
+      "nuance": "notify 更正式、常用于机构主动通知（邮件/系统提醒）；inform 更通用、口语书面皆可。"
+    },
+    {
+      "word": "apply",
+      "levels": ["基础"],
+      "ipa": "/əˈplaɪ/",
+      "subgroup": "verb",
+      "meaning": "v. 申请；应用",
+      "etymology": "拉丁 ad-「向」+ plicare「折叠」→ 「贴向、投向」，引申为投递申请。apply for 是固定搭配。",
+      "phonetics": "重音在后 /ˈplaɪ/，首音 a- 弱读 /ə/。",
+      "examples": [
+        {"en": "You can apply for a fee waiver at the same window.", "zh": "你可以在同一窗口申请免手续费。", "source": "造句"},
+        {"en": "apply for a scholarship", "zh": "申请奖学金（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "request", "ipa": "/rɪˈkwest/", "gloss": "请求，申领", "note": "request 是直接要某物；apply for 强调走申请流程"}
+      ],
+      "nuance": "apply for 强调「按流程递申请」（apply for a waiver）；request 是直接要某物，流程更轻。"
+    },
+    {
+      "word": "request",
+      "levels": ["基础"],
+      "ipa": "/rɪˈkwest/",
+      "subgroup": "verb",
+      "meaning": "v. 申请，索取  n. 请求",
+      "etymology": "拉丁 re-「反复」+ quaerere「寻求」→ 「反复求取」。同源 require、question。",
+      "phonetics": "重音在后 /ˈkwest/，首音 re- 弱读 /rɪ/。",
+      "examples": [
+        {"en": "You can request an official transcript online.", "zh": "你可以在线申请正式成绩单。", "source": "造句"},
+        {"en": "request a transcript", "zh": "索取成绩单（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "ask for", "ipa": "/æsk fɔːr/", "gloss": "要，求取", "note": "ask for 更口语；request 更正式，常见于表单动作"}
+      ],
+      "nuance": "request 是较正式的「申领、索取」（request a transcript）；ask for 是日常口语说法。"
+    },
+    {
+      "word": "pick up",
+      "levels": ["基础"],
+      "ipa": "/pɪk ʌp/",
+      "subgroup": "verb",
+      "meaning": "v. 领取，取（件）",
+      "etymology": "pick「拿起」+ up → 「拿起带走」，引申为到窗口领取。",
+      "phonetics": "连读 /pɪˈkʌp/，up 重读。宾语插中间：pick it up。",
+      "examples": [
+        {"en": "You can pick up your transcript at the counter after two.", "zh": "两点后你可以到柜台领成绩单。", "source": "造句"},
+        {"en": "pick up your ID card", "zh": "领取你的学生证（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "collect", "ipa": "/kəˈlekt/", "gloss": "领取（较正式）", "note": "collect 更正式书面；pick up 更口语常用"}
+      ],
+      "nuance": "pick up 是口语「到现场领取」；对应的 drop off 是「把件送来放下」。"
+    },
+    {
+      "word": "issue",
+      "levels": ["托福"],
+      "ipa": "/ˈɪʃuː/",
+      "subgroup": "verb",
+      "meaning": "v. 发放，签发  n. 问题；期号",
+      "etymology": "拉丁 exire「出去」→ 「使出去、发出」，引申为机构正式「发放」证件。",
+      "phonetics": "动词/名词重音都在前 /ˈɪ/，美音读 /ˈɪʃuː/。",
+      "examples": [
+        {"en": "The office will issue your diploma once fees are cleared.", "zh": "费用结清后办公室就会发放你的文凭。", "source": "造句"},
+        {"en": "issue a certificate", "zh": "签发证书（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "release", "ipa": "/rɪˈliːs/", "gloss": "发放，放行", "note": "release 强调「放行、准予外发」；issue 强调「正式签发生成」"}
+      ],
+      "nuance": "issue 是机构「正式签发」一份文件；release 强调「解除限制、准予发出」（release a transcript）。"
+    },
+    {
+      "word": "waive",
+      "levels": ["六级"],
+      "ipa": "/weɪv/",
+      "subgroup": "verb",
+      "meaning": "v. 免除，放弃（要求/费用）",
+      "etymology": "古法语 weyver「放弃」→ 正式「放弃、免除」某项要求。名词 waiver。",
+      "phonetics": "长音 /eɪ/，和 wave（挥手）同音，靠语境区分。",
+      "examples": [
+        {"en": "They agreed to waive the late fee this time.", "zh": "这次他们同意免掉滞纳金。", "source": "造句"},
+        {"en": "waive the fee", "zh": "免除费用（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "exempt", "ipa": "/ɪɡˈzempt/", "gloss": "免除（资格上）", "note": "exempt 常指「因资格被免」；waive 常指「主动放弃/给予免除」"}
+      ],
+      "nuance": "waive 是（机构）主动免掉某项要求/费用；exempt 多指「因符合条件而被免」。"
+    },
+    {
+      "word": "process (transfer)",
+      "levels": ["托福"],
+      "ipa": "/trænsˈfɜːr/",
+      "subgroup": "verb",
+      "meaning": "v. 转（学分/学校）；n. /ˈtrænsfɜːr/ 转移",
+      "etymology": "拉丁 trans-「across，跨」+ ferre「带」→ 「带过去」。教务里指转学分或转学。",
+      "phonetics": "动词重音在后 /ˈfɜːr/；名词重音在前 /ˈtræns/。别混。",
+      "examples": [
+        {"en": "You can transfer the credits from your previous school.", "zh": "你可以把上一所学校的学分转过来。", "source": "造句"},
+        {"en": "transfer credits", "zh": "转学分（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "carry over", "ipa": "/ˈkæri ˈoʊvər/", "gloss": "带过来，结转", "note": "carry over 更口语，指把学分/余额带到新处；transfer 更正式"}
+      ],
+      "nuance": "transfer credits 是把已修学分正式转入本校；prerequisite 则是「必须先修」，两回事。"
+    },
+    {
+      "word": "clear",
+      "levels": ["基础"],
+      "ipa": "/klɪr/",
+      "subgroup": "verb",
+      "meaning": "v. 结清（欠款）；解除（冻结）  adj. 清楚的",
+      "etymology": "拉丁 clarus「明亮、清楚」→ 引申「清账、清除障碍」。同源 clarity。",
+      "phonetics": "长音 /ɪr/，一个音节。clear a hold / clear a balance 是固定搭配。",
+      "examples": [
+        {"en": "Once you clear the balance, the hold will be lifted.", "zh": "一旦你结清欠款，冻结就会解除。", "source": "造句"},
+        {"en": "clear the hold", "zh": "解除冻结（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "pay off", "ipa": "/peɪ ɔːf/", "gloss": "还清", "note": "pay off 特指「付清欠款」；clear 还可指「解除冻结/障碍」"}
+      ],
+      "nuance": "clear a balance 是「结清欠款」；clear a hold 是「解除冻结」——clear 兼「清账」与「清障」两义。"
+    },
+    {
+      "word": "lift",
+      "levels": ["基础"],
+      "ipa": "/lɪft/",
+      "subgroup": "verb",
+      "meaning": "v. 解除（冻结/限制）；抬起",
+      "etymology": "古北欧语 lypta「举起」→ 引申「把压着的限制举掉」，即解除。",
+      "phonetics": "短音 /ɪ/，词尾 ft 收清。lift the hold 是固定搭配。",
+      "examples": [
+        {"en": "The registrar can lift the hold once your fee is paid.", "zh": "费用付清后教务处就能解除冻结。", "source": "造句"},
+        {"en": "lift a hold", "zh": "解除冻结（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "remove", "ipa": "/rɪˈmuːv/", "gloss": "移除，取消", "note": "remove 泛指移除；lift 专用于「解除限制/禁令」这类搭配"}
+      ],
+      "nuance": "lift a hold / lift a restriction 是固定搭配「解除限制」；remove 更泛，也能移除具体物件。"
+    },
+    {
+      "word": "add",
+      "levels": ["基础"],
+      "ipa": "/æd/",
+      "subgroup": "verb",
+      "meaning": "v. 加（课）；增加",
+      "etymology": "拉丁 addere「加上」（ad-「向」+ dare「给」）→ 加入。教务里 add a class 即加课。",
+      "phonetics": "短音 /æ/，一个音节。add/drop 常成对。",
+      "examples": [
+        {"en": "You can still add another class before the add/drop deadline.", "zh": "加退课截止前你还能再加一门课。", "source": "造句"},
+        {"en": "add a class", "zh": "加课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "enroll in", "ipa": "/ɪnˈroʊl ɪn/", "gloss": "选入", "note": "add a class 与 enroll in a class 在加退课期内含义相近"}
+      ],
+      "antonyms": [
+        {"w": "drop", "ipa": "/drɑːp/", "gloss": "退课"}
+      ],
+      "nuance": "add 与 drop 成对：add 是加课，drop 是退课，都发生在 add/drop period。"
+    },
+    {
+      "word": "cancel",
+      "levels": ["托福"],
+      "ipa": "/ˈkænsl/",
+      "subgroup": "verb",
+      "meaning": "v. 取消",
+      "etymology": "拉丁 cancellare「用格子线划掉」（cancelli「栅栏」）→ 画掉、作废。",
+      "phonetics": "重音在前 /ˈkæn/，-cel 弱读 /sl/。",
+      "examples": [
+        {"en": "I'd like to cancel my transcript request.", "zh": "我想取消我申请的成绩单。", "source": "造句"},
+        {"en": "cancel a request", "zh": "取消申请（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "withdraw", "ipa": "/wɪðˈdrɔː/", "gloss": "撤回", "note": "withdraw 侧重「撤回已提交的」；cancel 侧重「作废、终止」"}
+      ],
+      "nuance": "cancel 是「取消、作废」某项申请/服务；drop 专指退课，二者场景不同。"
+    },
+    {
+      "word": "update",
+      "levels": ["基础"],
+      "ipa": "/ˌʌpˈdeɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 更新（信息）  n. /ˈʌpdeɪt/ 更新",
+      "etymology": "up「向上」+ date「日期」→ 「更到最新日期」，即更新。",
+      "phonetics": "动词重音在后 /ˈdeɪt/；名词重音在前 /ˈʌp/。",
+      "examples": [
+        {"en": "You should update your mailing address in the portal.", "zh": "你该在门户上更新你的邮寄地址。", "source": "造句"},
+        {"en": "update your information", "zh": "更新你的信息（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "change", "ipa": "/tʃeɪndʒ/", "gloss": "更改", "note": "change 是笼统更改；update 强调「更到最新、把旧信息刷新」"}
+      ],
+      "nuance": "update 强调「刷新为最新信息」（update your address）；change 只是笼统的「改动」。"
+    },
+    {
+      "word": "check",
+      "levels": ["基础"],
+      "ipa": "/tʃek/",
+      "subgroup": "verb",
+      "meaning": "v. 查看，核对；打勾",
+      "etymology": "波斯语 shah「国王」→ 国际象棋「将军」check → 引申「制止、核对」。check a box 即打勾。",
+      "phonetics": "短音 /e/，ch 读 /tʃ/。",
+      "examples": [
+        {"en": "Let me check whether your payment has gone through.", "zh": "我查一下你的付款有没有到账。", "source": "造句"},
+        {"en": "check your status online", "zh": "在线查看你的状态（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "look up", "ipa": "/lʊk ʌp/", "gloss": "查询", "note": "look up 强调「在系统里查找信息」；check 更泛，含核对确认"}
+      ],
+      "nuance": "check 兼「查看核对」和「打勾」两义（check the box = 勾选）；look up 专指「查找信息」。"
+    },
+    {
+      "word": "official",
+      "levels": ["基础"],
+      "ipa": "/əˈfɪʃl/",
+      "subgroup": "desc",
+      "meaning": "adj. 正式的，官方的  n. 官员",
+      "etymology": "拉丁 officium「职责、公务」→ official 即「带公职权威的」。同源 office、officer。",
+      "phonetics": "重音在中间 /ˈfɪ/，首音 o- 弱读 /ə/。别把 ci 读成 /si/，应读 /ʃ/。",
+      "examples": [
+        {"en": "An official transcript is sealed and sent directly by the school.", "zh": "正式成绩单封口后由学校直接寄出。", "source": "造句"},
+        {"en": "an official transcript", "zh": "正式成绩单（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "certified", "ipa": "/ˈsɜːrtɪfaɪd/", "gloss": "经认证的", "note": "certified 强调「经核证盖章」；official 强调「官方出具、带权威」"}
+      ],
+      "antonyms": [
+        {"w": "unofficial", "ipa": "/ˌʌnəˈfɪʃl/", "gloss": "非正式的"}
+      ],
+      "nuance": "official transcript 由学校密封直寄、具效力；unofficial 是学生自己打印的、仅供参考。"
+    },
+    {
+      "word": "unofficial",
+      "levels": ["基础"],
+      "ipa": "/ˌʌnəˈfɪʃl/",
+      "subgroup": "desc",
+      "meaning": "adj. 非正式的",
+      "etymology": "un-「不」+ official → 不带官方效力的。",
+      "phonetics": "主重音在 -fi- /ˈfɪ/，前缀 un- 有次重音 /ˌʌn/。",
+      "examples": [
+        {"en": "An unofficial copy is fine just to check your grades.", "zh": "只是想看看成绩的话，非正式版就够了。", "source": "造句"},
+        {"en": "an unofficial transcript", "zh": "非正式成绩单（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "informal", "ipa": "/ɪnˈfɔːrml/", "gloss": "非正式的", "note": "informal 泛指风格随意；unofficial 特指「无官方效力」"}
+      ],
+      "nuance": "unofficial 强调「不带官方效力」（不密封、不盖章）；informal 泛指「风格随意」。"
+    },
+    {
+      "word": "overdue",
+      "levels": ["托福"],
+      "ipa": "/ˌoʊvərˈduː/",
+      "subgroup": "desc",
+      "meaning": "adj. 过期的，逾期未付的",
+      "etymology": "over-「超过」+ due「到期的」→ 「超过了到期时间」，即逾期。",
+      "phonetics": "主重音在 -due /ˈduː/，over- 有次重音。",
+      "examples": [
+        {"en": "Your tuition payment is two weeks overdue.", "zh": "你的学费已逾期两周未付。", "source": "造句"},
+        {"en": "an overdue payment", "zh": "逾期未付款（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "late", "ipa": "/leɪt/", "gloss": "迟的，晚的", "note": "late 泛指晚了；overdue 特指「已过到期日、拖欠中」"},
+        {"w": "outstanding", "ipa": "/aʊtˈstændɪŋ/", "gloss": "未结清的", "note": "outstanding balance 指未付余额；overdue 更强调「已逾期」"}
+      ],
+      "nuance": "overdue 强调「已过期限、正在拖欠」；late 只说「晚了」，未必已构成拖欠。"
+    },
+    {
+      "word": "pending",
+      "levels": ["六级"],
+      "ipa": "/ˈpendɪŋ/",
+      "subgroup": "desc",
+      "meaning": "adj. 待处理的，悬而未决的",
+      "etymology": "拉丁 pendere「悬挂」→ 「挂着还没落定」，即待处理。同源 pending、suspend。",
+      "phonetics": "重音在前 /ˈpen/，-ding 弱读。",
+      "examples": [
+        {"en": "Your request is still pending; give it a few more days.", "zh": "你的申请还在处理中，再等几天。", "source": "造句"},
+        {"en": "a pending request", "zh": "待处理申请（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "in process", "ipa": "/ɪn ˈprɑːses/", "gloss": "办理中", "note": "in process 强调「正在办」；pending 强调「已提交、等结果」"}
+      ],
+      "nuance": "pending 指「已提交、等待处理结果」；processed（已处理）是它的完成态。"
+    },
+    {
+      "word": "missing",
+      "levels": ["基础"],
+      "ipa": "/ˈmɪsɪŋ/",
+      "subgroup": "desc",
+      "meaning": "adj. 缺失的，未提交的",
+      "etymology": "miss「错过、缺」+ -ing → 「缺着的」。",
+      "phonetics": "重音在前 /ˈmɪ/，双 s 只发一个音。",
+      "examples": [
+        {"en": "Your application is missing a signature.", "zh": "你的申请少了一个签名。", "source": "造句"},
+        {"en": "a missing document", "zh": "缺失的材料（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "incomplete", "ipa": "/ˌɪnkəmˈpliːt/", "gloss": "不完整的", "note": "incomplete 指整体没填完；missing 指某一具体项缺失"}
+      ],
+      "nuance": "missing 指「某一项缺了」（missing a signature）；incomplete 指「整份没填完」。"
+    },
+    {
+      "word": "valid",
+      "levels": ["托福"],
+      "ipa": "/ˈvælɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 有效的，在有效期内的",
+      "etymology": "拉丁 validus「强健、有力」（valere「有力量」）→ 「站得住、有效」。同源 value。",
+      "phonetics": "重音在前 /ˈvæl/，-id 弱读 /ɪd/。",
+      "examples": [
+        {"en": "You need a valid photo ID to collect the document.", "zh": "领取该文件需要有效的带照片证件。", "source": "造句"},
+        {"en": "a valid ID", "zh": "有效证件（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "current", "ipa": "/ˈkɜːrənt/", "gloss": "现行的，未过期的", "note": "current 强调「当前、最新」；valid 强调「合法有效、在有效期内」"}
+      ],
+      "antonyms": [
+        {"w": "expired", "ipa": "/ɪkˈspaɪərd/", "gloss": "过期的"}
+      ],
+      "nuance": "valid 强调「合法有效、被认可」；expired（过期的）是它的反面。"
+    },
+    {
+      "word": "eligible",
+      "levels": ["托福"],
+      "ipa": "/ˈelɪdʒəbl/",
+      "subgroup": "desc",
+      "meaning": "adj. 有资格的，符合条件的",
+      "etymology": "拉丁 eligere「选出」（e-「出」+ legere「选」）→ 「够格被选中的」。同源 elect、select。",
+      "phonetics": "重音在前 /ˈel/，gi 读 /dʒə/。别读成 /ˈiː/。",
+      "examples": [
+        {"en": "You're eligible for a fee waiver if you're on financial aid.", "zh": "如果你有助学金，就有资格免手续费。", "source": "造句"},
+        {"en": "eligible for a scholarship", "zh": "有资格获奖学金（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "qualified", "ipa": "/ˈkwɑːlɪfaɪd/", "gloss": "合格的，够条件的", "note": "qualified 强调「具备能力/资格」；eligible 强调「符合规定的准入条件」"}
+      ],
+      "nuance": "eligible 强调「满足规定门槛、有资格」；qualified 更强调「具备实际能力或资历」。"
+    },
+    {
+      "word": "mandatory",
+      "levels": ["托福"],
+      "ipa": "/ˈmændətɔːri/",
+      "subgroup": "desc",
+      "meaning": "adj. 强制的，必须的",
+      "etymology": "拉丁 mandare「命令、委托」（manus「手」+ dare「给」→ 交到手上的命令）→ 强制要求的。",
+      "phonetics": "重音在前 /ˈmæn/，后面 -datory 弱读。",
+      "examples": [
+        {"en": "The advising session is mandatory before you can register.", "zh": "选课前必须先完成一次选课咨询。", "source": "造句"},
+        {"en": "a mandatory meeting", "zh": "强制参加的会面（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "required", "ipa": "/rɪˈkwaɪərd/", "gloss": "必需的", "note": "required 与 mandatory 近义；mandatory 语气更强、含「强制」意味"}
+      ],
+      "antonyms": [
+        {"w": "optional", "ipa": "/ˈɑːpʃənl/", "gloss": "可选的"}
+      ],
+      "nuance": "mandatory 强调「强制、不做不行」；optional（可选的）是它的反面。"
+    },
+    {
+      "word": "tentative",
+      "levels": ["托福"],
+      "ipa": "/ˈtentətɪv/",
+      "subgroup": "desc",
+      "meaning": "adj. 暂定的，不确定的",
+      "etymology": "拉丁 tentare「尝试」→ 「试探性的、还没定死的」。",
+      "phonetics": "重音在前 /ˈten/，后两音节弱读 /tətɪv/。",
+      "examples": [
+        {"en": "Your class schedule is still tentative until you confirm it.", "zh": "在你确认之前，你的课表还只是暂定的。", "source": "造句"},
+        {"en": "a tentative schedule", "zh": "暂定的日程（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "provisional", "ipa": "/prəˈvɪʒənl/", "gloss": "临时的，暂行的", "note": "provisional 更正式，指「过渡性、待正式确认」；tentative 侧重「不确定、可改」"}
+      ],
+      "nuance": "tentative 强调「暂定、随时可改」；confirmed（已确认的）是它敲定后的状态。"
+    },
+    {
+      "word": "full-time",
+      "levels": ["基础"],
+      "ipa": "/ˌfʊl ˈtaɪm/",
+      "subgroup": "desc",
+      "meaning": "adj./adv. 全日制的（满学分的）",
+      "etymology": "full「满」+ time「时间」→ 满负荷时间。教务里指修满规定学分的在读状态。",
+      "phonetics": "两词都有重音，time 略重。作定语连字符：full-time student。",
+      "examples": [
+        {"en": "You must take twelve credits to stay a full-time student.", "zh": "你得修满十二学分才算全日制学生。", "source": "造句"},
+        {"en": "a full-time student", "zh": "全日制学生（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "full course load", "ipa": "/fʊl kɔːrs loʊd/", "gloss": "满课业量", "note": "full course load 指修满学分的课业量；full-time 是由此界定的身份"}
+      ],
+      "antonyms": [
+        {"w": "part-time", "ipa": "/ˌpɑːrt ˈtaɪm/", "gloss": "非全日制的"}
+      ],
+      "nuance": "full-time 指修满规定学分（影响签证、奖学金）；part-time 是学分不足的非全日制。"
+    },
+    {
+      "word": "certified",
+      "levels": ["六级"],
+      "ipa": "/ˈsɜːrtɪfaɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 经认证的，盖章证明的",
+      "etymology": "certify（拉丁 certus「确定」+ facere「做」→ 证实）的过去分词 → 「经核证盖章的」。",
+      "phonetics": "重音在前 /ˈsɜːr/，-fied 读 /faɪd/。",
+      "examples": [
+        {"en": "You'll need a certified copy for the visa application.", "zh": "签证申请需要一份经认证的副本。", "source": "造句"},
+        {"en": "a certified copy", "zh": "认证副本（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "notarized", "ipa": "/ˈnoʊtəraɪzd/", "gloss": "经公证的", "note": "notarized 是由公证人公证；certified 是由出具机构自行盖章证实"}
+      ],
+      "nuance": "certified 是出具机构自己盖章证实；notarized 是由第三方公证人公证，两种效力来源不同。"
+    },
+    {
+      "word": "fill out",
+      "levels": ["基础"],
+      "ipa": "/fɪl aʊt/",
+      "subgroup": "phrase",
+      "meaning": "填写（表格）",
+      "etymology": "fill「填满」+ out「完全」→ 把表格空白处全部填满。",
+      "phonetics": "连读 /fɪˈlaʊt/，out 重读。宾语插中间：fill it out。",
+      "examples": [
+        {"en": "Fill out the top part and leave the rest to me.", "zh": "上半部分你填，剩下的交给我。", "source": "造句"},
+        {"en": "fill out the form completely", "zh": "把表格填写完整（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fill in", "ipa": "/fɪl ɪn/", "gloss": "填（空格）", "note": "fill in 侧重填某个具体空格；fill out 侧重填完整张表"}
+      ],
+      "nuance": "fill out 指填完整张表；fill in 指填某个空格（fill in your name），范围一大一小。"
+    },
+    {
+      "word": "log in to",
+      "levels": ["基础"],
+      "ipa": "/lɔːɡ ɪn tuː/",
+      "subgroup": "phrase",
+      "meaning": "登录（到某系统）",
+      "etymology": "log in（登录）+ to → 登录进入某个门户。注意介词是 to，不是 into。",
+      "phonetics": "log in 连读，in 重读；后接 to /tə/ 弱读。",
+      "examples": [
+        {"en": "Log in to the portal with your student ID and password.", "zh": "用你的学号和密码登录门户。", "source": "造句"},
+        {"en": "log in to your account", "zh": "登录你的账户（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sign in to", "ipa": "/saɪn ɪn tuː/", "gloss": "登入", "note": "sign in to 与 log in to 同义，界面上两种都常见"}
+      ],
+      "nuance": "固定搭配是 log in TO the portal（介词 to）；动词分写、名词 login 连写。"
+    },
+    {
+      "word": "drop a class",
+      "levels": ["基础"],
+      "ipa": "/drɑːp ə klæs/",
+      "subgroup": "phrase",
+      "meaning": "退掉一门课",
+      "etymology": "drop（退、放下）+ a class → 退课。反义 add a class。",
+      "phonetics": "drop 重读，a /ə/ 弱读，class 长音 /æ/。",
+      "examples": [
+        {"en": "If you drop a class now, you'll get a full refund.", "zh": "现在退课的话，你会拿到全额退款。", "source": "造句"},
+        {"en": "drop a class before the deadline", "zh": "在截止前退课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "withdraw from a course", "ipa": "/wɪðˈdrɔː frəm ə kɔːrs/", "gloss": "退课（较晚，留 W）", "note": "withdraw 是晚退留记录；drop 是期内退课不留痕"}
+      ],
+      "nuance": "drop a class 是加退课期内退课、干净不留痕；withdraw from a course 是期后退课、留 W。"
+    },
+    {
+      "word": "add/drop period",
+      "levels": ["基础"],
+      "ipa": "/æd drɑːp ˈpɪriəd/",
+      "subgroup": "phrase",
+      "meaning": "加退课期（可自由改课的时段）",
+      "etymology": "add（加课）+ drop（退课）+ period（时段）→ 学期初可自由增退课的窗口期。",
+      "phonetics": "add 与 drop 都重读；period 重音在前 /ˈpɪ/。",
+      "examples": [
+        {"en": "Changes are free during the add/drop period.", "zh": "在加退课期内改课不收费。", "source": "造句"},
+        {"en": "during the add/drop period", "zh": "在加退课期间（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "shopping period", "ipa": "/ˈʃɑːpɪŋ ˈpɪriəd/", "gloss": "试课期", "note": "有些学校叫 shopping period，意思相近，指学期初自由试课改课"}
+      ],
+      "nuance": "add/drop period 是学期初自由改课的窗口；过了这段再退就变成 withdraw（留 W）。"
+    },
+    {
+      "word": "check this box",
+      "levels": ["基础"],
+      "ipa": "/tʃek ðɪs bɑːks/",
+      "subgroup": "phrase",
+      "meaning": "勾选这个框",
+      "etymology": "check（打勾）+ this box（这个方框）→ 在表格方框里打勾。",
+      "phonetics": "check 与 box 重读，this /ðɪs/ 略轻。",
+      "examples": [
+        {"en": "Check this box if you want the transcript mailed.", "zh": "如果想邮寄成绩单就勾这个框。", "source": "造句"},
+        {"en": "check the box below", "zh": "勾选下面的方框（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "tick the box", "ipa": "/tɪk ðə bɑːks/", "gloss": "勾选（英）", "note": "英式说 tick the box；美式说 check the box"}
+      ],
+      "nuance": "美式勾选说 check the box；英式说 tick the box。托福用美式 check。"
+    },
+    {
+      "word": "in person",
+      "levels": ["基础"],
+      "ipa": "/ɪn ˈpɜːrsn/",
+      "subgroup": "phrase",
+      "meaning": "亲自，当面（本人到场）",
+      "etymology": "in（以…方式）+ person（本人）→ 本人到场，而非线上或代办。",
+      "phonetics": "person 重音在前 /ˈpɜːr/，in /ɪn/ 弱读。",
+      "examples": [
+        {"en": "You have to pick it up in person with a photo ID.", "zh": "你得带照片证件亲自来领。", "source": "造句"},
+        {"en": "come in person", "zh": "亲自前来（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "face-to-face", "ipa": "/feɪs tə feɪs/", "gloss": "面对面", "note": "face-to-face 强调「当面交流」；in person 强调「本人到场」"}
+      ],
+      "nuance": "in person 强调「本人亲自到场」（与 online/by mail 相对）；online 则是线上办理。"
+    },
+    {
+      "word": "right away",
+      "levels": ["基础"],
+      "ipa": "/raɪt əˈweɪ/",
+      "subgroup": "phrase",
+      "meaning": "马上，立刻",
+      "etymology": "right（正好、直接）+ away（离开、走开）→ 「立刻就去做」。",
+      "phonetics": "away 重音在后 /ˈweɪ/，right 也重读。",
+      "examples": [
+        {"en": "I can process it right away if you have the form ready.", "zh": "只要你表格备好，我马上就能办。", "source": "造句"},
+        {"en": "do it right away", "zh": "立刻去做（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "immediately", "ipa": "/ɪˈmiːdiətli/", "gloss": "立即", "note": "immediately 更正式；right away 更口语常用"}
+      ],
+      "nuance": "right away 是口语「马上」；immediately 同义但更书面正式。"
+    },
+    {
+      "word": "on time",
+      "levels": ["基础"],
+      "ipa": "/ɑːn taɪm/",
+      "subgroup": "phrase",
+      "meaning": "准时，按时",
+      "etymology": "on（正好在…上）+ time（时间点）→ 正好赶在规定时间。",
+      "phonetics": "time 重读，on /ɑːn/ 略轻。别和 in time（及时）混。",
+      "examples": [
+        {"en": "As long as you submit it on time, there's no fee.", "zh": "只要你按时提交，就不收费。", "source": "造句"},
+        {"en": "pay on time", "zh": "按时缴费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "in time", "ipa": "/ɪn taɪm/", "gloss": "及时（赶得上）", "note": "in time 强调「赶在最后期限前、来得及」；on time 强调「不早不晚、准点」"}
+      ],
+      "nuance": "on time 强调「准点、不迟」；in time 强调「及时、赶得上」，一个准点、一个及时。"
+    },
+    {
+      "word": "no later than",
+      "levels": ["基础"],
+      "ipa": "/noʊ ˈleɪtər ðæn/",
+      "subgroup": "phrase",
+      "meaning": "不迟于（最晚在…之前）",
+      "etymology": "no + later than（比…晚）→ 「不比…更晚」，即最晚期限。",
+      "phonetics": "later 重音在前 /ˈleɪ/，than /ðən/ 弱读。",
+      "examples": [
+        {"en": "Submit the petition no later than Friday.", "zh": "最晚周五前提交这份申请。", "source": "造句"},
+        {"en": "no later than the deadline", "zh": "不迟于截止日期（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "by", "ipa": "/baɪ/", "gloss": "在…之前（不晚于）", "note": "by Friday 与 no later than Friday 同义；by 更简洁"}
+      ],
+      "nuance": "no later than Friday = by Friday，都指「最晚周五、之前都行」，含周五当天。"
+    },
+    {
+      "word": "business days",
+      "levels": ["基础"],
+      "ipa": "/ˈbɪznəs deɪz/",
+      "subgroup": "phrase",
+      "meaning": "工作日（不含周末节假日）",
+      "etymology": "business（营业、办公）+ days → 机构办公的日子，即工作日。",
+      "phonetics": "business 重音在前 /ˈbɪz/，中间 -si- 几乎不发音，读作两音节。",
+      "examples": [
+        {"en": "Allow three to five business days for processing.", "zh": "办理需要三到五个工作日。", "source": "造句"},
+        {"en": "within five business days", "zh": "五个工作日内（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "working days", "ipa": "/ˈwɜːrkɪŋ deɪz/", "gloss": "工作日（英）", "note": "英式常说 working days；美式说 business days"}
+      ],
+      "nuance": "business days 不含周末和节假日；说 five days 则可能含周末，办理时限务必看清。"
+    },
+    {
+      "word": "hand in",
+      "levels": ["基础"],
+      "ipa": "/hænd ɪn/",
+      "subgroup": "phrase",
+      "meaning": "上交，交上去",
+      "etymology": "hand（用手递）+ in（进去）→ 亲手把材料递交上去。",
+      "phonetics": "连读 /hænˈdɪn/，in 重读。宾语插中间：hand it in。",
+      "examples": [
+        {"en": "Hand in the completed form at the front desk.", "zh": "把填好的表交到前台。", "source": "造句"},
+        {"en": "hand in the paperwork", "zh": "上交文书（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "turn in", "ipa": "/tɜːrn ɪn/", "gloss": "上交", "note": "turn in 与 hand in 同义，都偏口语；submit 更正式"}
+      ],
+      "nuance": "hand in / turn in 都是口语「当面交上去」；submit 更正式，且涵盖线上提交。"
+    },
+    {
+      "word": "sign up for",
+      "levels": ["基础"],
+      "ipa": "/saɪn ʌp fɔːr/",
+      "subgroup": "phrase",
+      "meaning": "报名参加，注册（课程/活动）",
+      "etymology": "sign up（签名报名）+ for → 报名参加某项。",
+      "phonetics": "sign up 连读 /saɪˈnʌp/，up 重读；for /fər/ 弱读。",
+      "examples": [
+        {"en": "You can sign up for the advising workshop online.", "zh": "你可以在线报名选课辅导会。", "source": "造句"},
+        {"en": "sign up for a class", "zh": "报名一门课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "enroll in", "ipa": "/ɪnˈroʊl ɪn/", "gloss": "注册选入", "note": "sign up for 更口语随意；enroll in 更正式，含「正式入册」"}
+      ],
+      "nuance": "sign up for 更口语（报名活动/课程）；enroll in 更正式，多用于正式课程注册。"
+    },
+    {
+      "word": "get in touch",
+      "levels": ["基础"],
+      "ipa": "/ɡet ɪn tʌtʃ/",
+      "subgroup": "phrase",
+      "meaning": "取得联系，联络",
+      "etymology": "get in（进入）+ touch（接触）→ 建立联系。get in touch with sb 是完整搭配。",
+      "phonetics": "touch 重读，读 /tʌtʃ/。get in 连读 /ɡeˈtɪn/。",
+      "examples": [
+        {"en": "Get in touch with your advisor if you're not sure.", "zh": "如果不确定，就联系你的顾问。", "source": "造句"},
+        {"en": "get in touch with the office", "zh": "联系办公室（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "contact", "ipa": "/ˈkɑːntækt/", "gloss": "联系", "note": "contact 是单个正式动词；get in touch 更口语，含「主动搭上线」"}
+      ],
+      "nuance": "get in touch (with) 是口语「联络上」；contact 是更简洁正式的同义动词。"
+    },
+    {
+      "word": "go through",
+      "levels": ["基础"],
+      "ipa": "/ɡoʊ θruː/",
+      "subgroup": "phrase",
+      "meaning": "（申请/付款）办成、通过；仔细检查",
+      "etymology": "go（走）+ through（穿过）→ 「走通了整个流程」，即办成/通过；也指「逐项过一遍」。",
+      "phonetics": "through 读 /θruː/，th 咬舌。go /ɡoʊ/ 长音。",
+      "examples": [
+        {"en": "Let me check if your payment went through.", "zh": "我看看你的付款有没有到账成功。", "source": "造句"},
+        {"en": "go through the form together", "zh": "一起把表过一遍（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "process", "ipa": "/ˈprɑːses/", "gloss": "办理成功", "note": "go through 强调「顺利走完/通过」；process 强调「机构在办」"}
+      ],
+      "nuance": "go through 有两义：付款/申请「办成通过」，或「逐项检查一遍」，靠语境区分。"
+    },
+    {
+      "word": "take a number",
+      "levels": ["基础"],
+      "ipa": "/teɪk ə ˈnʌmbər/",
+      "subgroup": "phrase",
+      "meaning": "取号（排队等叫号）",
+      "etymology": "take（拿）+ a number（一个号）→ 抽一张号排队。",
+      "phonetics": "take 与 number 重读，a /ə/ 弱读。",
+      "examples": [
+        {"en": "Take a number and wait until it's called.", "zh": "取个号，等叫到你。", "source": "造句"},
+        {"en": "take a number and wait", "zh": "取号等候（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "wait in line", "ipa": "/weɪt ɪn laɪn/", "gloss": "排队等", "note": "wait in line 是站队等；take a number 是抽号坐等叫号"}
+      ],
+      "nuance": "take a number 是抽号坐等叫号；wait in line 是站着排队，两种排队方式。"
+    },
+    {
+      "word": "look into",
+      "levels": ["基础"],
+      "ipa": "/lʊk ˈɪntuː/",
+      "subgroup": "phrase",
+      "meaning": "调查，查一下（某问题）",
+      "etymology": "look（看）+ into（进入）→ 「往里看、深入查」。",
+      "phonetics": "into 重音在前 /ˈɪn/，look /lʊk/ 短音。",
+      "examples": [
+        {"en": "Let me look into why your credits didn't transfer.", "zh": "我查一下你的学分为什么没转成功。", "source": "造句"},
+        {"en": "look into the issue", "zh": "调查这个问题（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "check on", "ipa": "/tʃek ɑːn/", "gloss": "查看…情况", "note": "check on 是查看某事进展；look into 是深入调查某问题原因"}
+      ],
+      "nuance": "look into 是「深入查明原因」；check on 只是「查看一下…情况/进展」，深度不同。"
+    },
+    {
+      "word": "fill in",
+      "levels": ["基础"],
+      "ipa": "/fɪl ɪn/",
+      "subgroup": "phrase",
+      "meaning": "填（空格），填入",
+      "etymology": "fill（填）+ in（进去）→ 把信息填进空格。",
+      "phonetics": "连读 /fɪˈlɪn/，in 重读。fill in the blanks 是固定搭配。",
+      "examples": [
+        {"en": "Fill in your student ID in the first field.", "zh": "在第一栏填入你的学号。", "source": "造句"},
+        {"en": "fill in the blanks", "zh": "填空（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fill out", "ipa": "/fɪl aʊt/", "gloss": "填整张表", "note": "fill in 填某空格；fill out 填完整张表"}
+      ],
+      "nuance": "fill in 填某个空格（fill in your name）；fill out 填完整张表，一小一大。"
+    },
+    {
+      "word": "by mail",
+      "levels": ["基础"],
+      "ipa": "/baɪ meɪl/",
+      "subgroup": "phrase",
+      "meaning": "通过邮寄（方式）",
+      "etymology": "by（以…方式）+ mail（邮政）→ 走邮政寄送。与 in person、online 并列的办理方式。",
+      "phonetics": "mail 重读 /meɪl/，by /baɪ/ 略轻。",
+      "examples": [
+        {"en": "Would you like it sent by mail or ready for pickup?", "zh": "你想邮寄，还是自己来取？", "source": "造句"},
+        {"en": "send it by mail", "zh": "用邮寄寄出（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "by post", "ipa": "/baɪ poʊst/", "gloss": "邮寄（英）", "note": "英式说 by post；美式说 by mail"}
+      ],
+      "nuance": "by mail 是「走邮寄」；与 in person（本人来取）、online（线上办）并列的三种取件方式。"
+    },
+    {
+      "word": "make sure",
+      "levels": ["基础"],
+      "ipa": "/meɪk ʃʊr/",
+      "subgroup": "phrase",
+      "meaning": "确保，务必",
+      "etymology": "make（使）+ sure（确定）→ 「使之确定」，即确保。",
+      "phonetics": "make 与 sure 都重读，sure 读 /ʃʊr/。",
+      "examples": [
+        {"en": "Make sure you sign the bottom before handing it in.", "zh": "交表前务必在底部签名。", "source": "造句"},
+        {"en": "make sure everything is filled out", "zh": "确保都填好了（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "ensure", "ipa": "/ɪnˈʃʊr/", "gloss": "确保", "note": "ensure 更正式书面；make sure 更口语常用"}
+      ],
+      "nuance": "make sure 是口语「务必、确保」；ensure 同义但更正式书面。"
+    },
+    {
+      "word": "keep track of",
+      "levels": ["基础"],
+      "ipa": "/kiːp træk əv/",
+      "subgroup": "phrase",
+      "meaning": "记录，跟踪掌握（进度/期限）",
+      "etymology": "keep（保持）+ track（轨迹）+ of → 「盯住轨迹」，即持续掌握。",
+      "phonetics": "keep 与 track 重读，of /əv/ 弱读。",
+      "examples": [
+        {"en": "Keep track of the deadlines so you don't miss the drop date.", "zh": "记好各个截止日，别错过退课日。", "source": "造句"},
+        {"en": "keep track of your credits", "zh": "跟踪自己的学分（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "monitor", "ipa": "/ˈmɑːnɪtər/", "gloss": "监控，留意", "note": "monitor 更正式、指持续监测；keep track of 更口语"}
+      ],
+      "nuance": "keep track of 是口语「持续留意掌握」（期限、学分）；monitor 更正式、含「监测」意味。"
+    },
+    {
+      "word": "student",
+      "levels": ["基础"],
+      "ipa": "/ˈstuːdnt/",
+      "subgroup": "general",
+      "meaning": "n. 学生",
+      "etymology": "拉丁 studere「热心钻研」→ studens「钻研的人」。同源 study、studio。",
+      "phonetics": "重音在前 /ˈstuː/，美音读 /tuː/ 不带 /j/。",
+      "examples": [
+        {"en": "Every student needs to see an advisor before registering.", "zh": "每个学生注册前都要见一次顾问。", "source": "造句"},
+        {"en": "a full-time student", "zh": "全日制学生（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "undergraduate", "ipa": "/ˌʌndərˈɡrædʒuət/", "gloss": "本科生", "note": "undergraduate 特指本科生；student 泛指所有在读学生"}
+      ],
+      "nuance": "student 泛指在读者；undergraduate（本科生）与 graduate（研究生）是其两大类。"
+    },
+    {
+      "word": "undergraduate",
+      "levels": ["托福"],
+      "ipa": "/ˌʌndərˈɡrædʒuət/",
+      "subgroup": "general",
+      "meaning": "n. 本科生  adj. 本科的",
+      "etymology": "under-「在…之下」+ graduate（毕业生）→ 「尚未毕业的（本科阶段）」。",
+      "phonetics": "主重音在 -gra- /ˈɡræ/，under- 有次重音。名词 -ate 弱读 /ət/。",
+      "examples": [
+        {"en": "Undergraduate students register a week before graduate students.", "zh": "本科生比研究生早一周选课。", "source": "造句"},
+        {"en": "an undergraduate degree", "zh": "本科学位（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "graduate", "ipa": "/ˈɡrædʒuət/", "gloss": "研究生", "note": "graduate 指研究生（硕/博）；undergraduate 指本科生"}
+      ],
+      "nuance": "undergraduate 是本科生；graduate（作名词/形容词读 /ət/）指研究生阶段，二者对立。"
+    },
+    {
+      "word": "graduate",
+      "levels": ["基础"],
+      "ipa": "/ˈɡrædʒuət/",
+      "subgroup": "general",
+      "meaning": "n./adj. 研究生（的）  v. /-eɪt/ 毕业",
+      "etymology": "拉丁 gradus「步、级」→ graduari「取得学位、升级」。同源 grade、gradual。",
+      "phonetics": "名词/形容词末音读 /ət/；动词读 /eɪt/。重音都在前 /ˈɡræ/。",
+      "examples": [
+        {"en": "Graduate students have a separate registration window.", "zh": "研究生有单独的选课时段。", "source": "造句"},
+        {"en": "a graduate program", "zh": "研究生项目（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "postgraduate", "ipa": "/ˌpoʊstˈɡrædʒuət/", "gloss": "研究生（英）", "note": "英式常用 postgraduate；美式用 graduate"}
+      ],
+      "nuance": "作名词/形容词读 /ət/ 指研究生；作动词读 /eɪt/ 是「毕业」，同拼不同音。"
+    },
+    {
+      "word": "major",
+      "levels": ["托福"],
+      "ipa": "/ˈmeɪdʒər/",
+      "subgroup": "general",
+      "meaning": "n. 专业，主修  v. 主修  adj. 主要的",
+      "etymology": "拉丁 maior「更大的」→ 学业中「主要的方向」，即主修专业。同源 major（较大的）。",
+      "phonetics": "重音在前 /ˈmeɪ/，j 读 /dʒ/。major in 是固定搭配。",
+      "examples": [
+        {"en": "If you change your major, some credits may not count.", "zh": "如果你换专业，有些学分可能不算数。", "source": "造句"},
+        {"en": "change your major", "zh": "换专业（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "minor", "ipa": "/ˈmaɪnər/", "gloss": "辅修专业", "note": "minor 是辅修（学分较少）；major 是主修专业"}
+      ],
+      "nuance": "major 是主修专业；minor 是辅修，学分要求更少，一主一辅。"
+    },
+    {
+      "word": "course",
+      "levels": ["基础"],
+      "ipa": "/kɔːrs/",
+      "subgroup": "general",
+      "meaning": "n. 课程",
+      "etymology": "拉丁 cursus「跑、进程」（currere「跑」）→ 一门课的「学习进程」。同源 current。",
+      "phonetics": "长音 /ɔː/，和 coarse（粗糙的）同音。",
+      "examples": [
+        {"en": "This course counts toward your major requirements.", "zh": "这门课算进你的专业必修。", "source": "造句"},
+        {"en": "a required course", "zh": "一门必修课（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "class", "ipa": "/klæs/", "gloss": "课", "note": "class 更口语，也指一节课；course 指整门课程"}
+      ],
+      "nuance": "course 指整门课程（一学期）；class 更口语，也可指其中一节课。"
+    },
+    {
+      "word": "deadline (due)",
+      "levels": ["基础"],
+      "ipa": "/djuː/",
+      "subgroup": "general",
+      "meaning": "adj. 到期的，应付的（due）",
+      "etymology": "拉丁 debere「欠」→ 古法语 deu「应付的」→ due「到期该付的」。",
+      "phonetics": "美音读 /duː/ 或 /djuː/，长音。due date、be due 是固定搭配。",
+      "examples": [
+        {"en": "Tuition is due at the start of the semester.", "zh": "学费在学期开始时到期应付。", "source": "造句"},
+        {"en": "the due date", "zh": "到期日（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "payable", "ipa": "/ˈpeɪəbl/", "gloss": "应付的", "note": "payable 更正式书面（账单用语）；due 更口语常用"}
+      ],
+      "nuance": "due 指「到期应付/应交」（Tuition is due Friday）；deadline 是名词「截止日」，词性不同。"
+    },
+    {
+      "word": "payment",
+      "levels": ["基础"],
+      "ipa": "/ˈpeɪmənt/",
+      "subgroup": "general",
+      "meaning": "n. 付款，缴费",
+      "etymology": "pay（拉丁 pacare「使平息、清账」）+ -ment → 付款行为。同源 peace（清账即和平）。",
+      "phonetics": "重音在前 /ˈpeɪ/，-ment 弱读 /mənt/。",
+      "examples": [
+        {"en": "Your payment hasn't shown up in the system yet.", "zh": "你的付款还没在系统里显示。", "source": "造句"},
+        {"en": "make a payment", "zh": "缴一笔费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fee", "ipa": "/fiː/", "gloss": "费用", "note": "fee 是要付的名目；payment 是付款这一行为/款项"}
+      ],
+      "nuance": "payment 是「付款行为或那笔款」；fee 是「要付的费用名目」，一个动作一个名目。"
+    },
+    {
+      "word": "refund",
+      "levels": ["托福"],
+      "ipa": "/ˈriːfʌnd/",
+      "subgroup": "general",
+      "meaning": "n. 退款  v. /rɪˈfʌnd/ 退还",
+      "etymology": "拉丁 re-「回」+ fundere「倒、注」→ 「把钱倒回去」，即退款。同源 fund。",
+      "phonetics": "名词重音在前 /ˈriː/；动词重音在后 /ˈfʌnd/。",
+      "examples": [
+        {"en": "You'll get a full refund if you drop before the deadline.", "zh": "截止前退课的话你能拿到全额退款。", "source": "造句"},
+        {"en": "a full refund", "zh": "全额退款（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "reimbursement", "ipa": "/ˌriːɪmˈbɜːrsmənt/", "gloss": "报销，偿还", "note": "reimbursement 是事后补偿垫付款；refund 是退回已收的钱"}
+      ],
+      "nuance": "refund 是把你付过的钱退回；reimbursement 是补偿你替别人垫付的开支，来源不同。"
+    },
+    {
+      "word": "account",
+      "levels": ["基础"],
+      "ipa": "/əˈkaʊnt/",
+      "subgroup": "general",
+      "meaning": "n. 账户；账目",
+      "etymology": "拉丁 ad-「向」+ computare「计算」→ 「算账」，引申为账户。同源 count、compute。",
+      "phonetics": "重音在后 /ˈkaʊnt/，首音 a- 弱读 /ə/。",
+      "examples": [
+        {"en": "There's a hold on your account for an unpaid balance.", "zh": "因为有未付欠款，你的账户被冻结了。", "source": "造句"},
+        {"en": "your student account", "zh": "你的学生账户（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "record", "ipa": "/ˈrekɔːrd/", "gloss": "档案记录", "note": "record 偏学籍档案；account 偏缴费/登录的账户"}
+      ],
+      "nuance": "缴费语境 account 指「财务账户」（余额、缴费）；也可指登录门户的「用户账号」，靠语境判断。"
+    },
+    {
+      "word": "address",
+      "levels": ["基础"],
+      "ipa": "/ˈædres/",
+      "subgroup": "general",
+      "meaning": "n. 地址  v. /əˈdres/ 处理；写地址",
+      "etymology": "拉丁 ad-「向」+ directus「直的」→ 「指向某处」，即地址。",
+      "phonetics": "名词美音重音在前 /ˈæd/；动词重音在后 /əˈdres/。",
+      "examples": [
+        {"en": "Make sure your mailing address is up to date in the system.", "zh": "确保系统里你的邮寄地址是最新的。", "source": "造句"},
+        {"en": "a mailing address", "zh": "邮寄地址（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "mailing address", "ipa": "/ˈmeɪlɪŋ ˈædres/", "gloss": "邮寄地址", "note": "mailing address 特指收信地址；address 泛指地址"}
+      ],
+      "nuance": "此场景 address 指「邮寄地址」（成绩单寄到哪）；动词 address 则是「处理、应对」，别混。"
+    },
+    {
+      "word": "information",
+      "levels": ["基础"],
+      "ipa": "/ˌɪnfərˈmeɪʃn/",
+      "subgroup": "general",
+      "meaning": "n. 信息，资料",
+      "etymology": "inform（拉丁 in-「进入」+ forma「形状」→ 使成形、告知）+ -ation → 告知的内容。",
+      "phonetics": "主重音在 -ma- /ˈmeɪ/，前面 infor- 弱读。不可数名词。",
+      "examples": [
+        {"en": "Please double-check your contact information on the form.", "zh": "请再核对一下表上的联系方式。", "source": "造句"},
+        {"en": "contact information", "zh": "联系方式（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "details", "ipa": "/ˈdiːteɪlz/", "gloss": "详情", "note": "details 可数、指具体各项；information 不可数、泛指信息总体"}
+      ],
+      "nuance": "information 不可数、泛指信息总体；details（详情）可数，指其中具体各项。"
+    },
+    {
+      "word": "office",
+      "levels": ["基础"],
+      "ipa": "/ˈɔːfɪs/",
+      "subgroup": "general",
+      "meaning": "n. 办公室；处，局",
+      "etymology": "拉丁 officium「职责、公务」→ 办公务的地方。同源 official、officer。",
+      "phonetics": "重音在前 /ˈɔː/，-fice 弱读 /fɪs/。",
+      "examples": [
+        {"en": "The financial aid office is right down the hall.", "zh": "助学金办公室就在走廊那头。", "source": "造句"},
+        {"en": "the admissions office", "zh": "招生办（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "department", "ipa": "/dɪˈpɑːrtmənt/", "gloss": "部门", "note": "department 偏学术院系；office 偏行政办事处（registrar's office）"}
+      ],
+      "nuance": "office 是行政办事处（registrar's office）；department 偏学术院系（math department），职能不同。"
+    },
+    {
+      "word": "email",
+      "levels": ["基础"],
+      "ipa": "/ˈiːmeɪl/",
+      "subgroup": "general",
+      "meaning": "n. 电子邮件  v. 发邮件",
+      "etymology": "electronic「电子的」+ mail「邮件」→ 电子邮件。",
+      "phonetics": "重音在前 /ˈiː/，两音节。email you 可直接作动词。",
+      "examples": [
+        {"en": "We'll email you a confirmation once it's processed.", "zh": "办好后我们会给你发一封确认邮件。", "source": "造句"},
+        {"en": "email a confirmation", "zh": "发确认邮件（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "message", "ipa": "/ˈmesɪdʒ/", "gloss": "消息", "note": "message 泛指各类消息；email 特指电子邮件"}
+      ],
+      "nuance": "email 特指电子邮件（可作名词/动词）；mail 单说多指邮政实体信件。"
+    },
+    {
+      "word": "password",
+      "levels": ["基础"],
+      "ipa": "/ˈpæswɜːrd/",
+      "subgroup": "general",
+      "meaning": "n. 密码",
+      "etymology": "pass「通过」+ word「词」→ 「通行的词」，即密码。",
+      "phonetics": "重音在前 /ˈpæs/，-word 读 /wɜːrd/。",
+      "examples": [
+        {"en": "If you forgot your password, you can reset it online.", "zh": "如果忘了密码，你可以在线重置。", "source": "造句"},
+        {"en": "reset your password", "zh": "重置密码（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "login credentials", "ipa": "/ˈlɔːɡɪn krəˈdenʃlz/", "gloss": "登录凭证", "note": "login credentials 含账号+密码；password 只是其中密码那部分"}
+      ],
+      "nuance": "password 只是密码；login credentials（登录凭证）是账号加密码的整体。"
+    },
+    {
+      "word": "confirmation",
+      "levels": ["基础"],
+      "ipa": "/ˌkɑːnfərˈmeɪʃn/",
+      "subgroup": "general",
+      "meaning": "n. 确认（函）；确认信息",
+      "etymology": "confirm（使确定牢固）+ -ation → 确认的动作或凭证。",
+      "phonetics": "主重音在 -ma- /ˈmeɪ/，前面 confir- 弱读。",
+      "examples": [
+        {"en": "You'll receive a confirmation number by email.", "zh": "你会收到一个确认编号，通过邮件发送。", "source": "造句"},
+        {"en": "a confirmation email", "zh": "确认邮件（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "receipt", "ipa": "/rɪˈsiːt/", "gloss": "凭据，回执", "note": "receipt 偏「付款收据」；confirmation 偏「操作/申请已确认的回执」"}
+      ],
+      "nuance": "confirmation 是「已确认」的回执（含确认号）；receipt 偏「已付款」的收据，用途略异。"
+    },
+    {
+      "word": "identity",
+      "levels": ["托福"],
+      "ipa": "/aɪˈdentəti/",
+      "subgroup": "general",
+      "meaning": "n. 身份",
+      "etymology": "拉丁 idem「同一」→ identitas「同一性」，即「你就是你本人」。同源 identical。",
+      "phonetics": "重音在 -den- /ˈden/，首音 i- 读 /aɪ/。",
+      "examples": [
+        {"en": "We need to confirm your identity before releasing records.", "zh": "发放档案前我们要确认你的身份。", "source": "造句"},
+        {"en": "verify your identity", "zh": "核实身份（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "ID", "ipa": "/ˌaɪ ˈdiː/", "gloss": "证件", "note": "ID 是证明身份的证件；identity 是「身份」本身这一抽象概念"}
+      ],
+      "nuance": "identity 是「身份」本身（抽象）；ID 是证明它的证件（实物），用证件来 verify identity。"
+    },
+    {
+      "word": "deadline (extension)",
+      "levels": ["托福"],
+      "ipa": "/ɪkˈstenʃn/",
+      "subgroup": "general",
+      "meaning": "n. 延期，延长（extension）",
+      "etymology": "ex-「向外」+ tendere「伸展」→ 「向外延长」时间。同源 extend、tension。",
+      "phonetics": "重音在 -ten- /ˈsten/，首音 ex- 弱读 /ɪk/。",
+      "examples": [
+        {"en": "Can I get an extension on the payment deadline?", "zh": "缴费截止日能给我延期吗？", "source": "造句"},
+        {"en": "request an extension", "zh": "申请延期（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "grace period", "ipa": "/ɡreɪs ˈpɪriəd/", "gloss": "宽限期", "note": "grace period 是自动给的缓冲期；extension 是主动申请的延期"}
+      ],
+      "nuance": "extension 是主动申请把期限往后延；grace period（宽限期）是规则里自动给的缓冲，不必申请。"
+    },
+    {
+      "word": "processing",
+      "levels": ["托福"],
+      "ipa": "/ˈprɑːsesɪŋ/",
+      "subgroup": "general",
+      "meaning": "n. 办理，处理（过程）",
+      "etymology": "process（推进办理）+ -ing → 办理这一过程。",
+      "phonetics": "重音在前 /ˈprɑː/，美音第二音节 /ses/。",
+      "examples": [
+        {"en": "There's a processing time of about a week.", "zh": "办理大约需要一周时间。", "source": "造句"},
+        {"en": "processing time / a processing fee", "zh": "办理时间／手续费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "handling", "ipa": "/ˈhændlɪŋ/", "gloss": "处理，经手", "note": "handling 偏经手/搬运；processing 偏按流程审核办理"}
+      ],
+      "nuance": "processing time 是「按流程办理所需时间」；turnaround time 更强调「从提交到出结果的周转时间」。"
+    },
+    {
+      "word": "available",
+      "levels": ["基础"],
+      "ipa": "/əˈveɪləbl/",
+      "subgroup": "general",
+      "meaning": "adj. 可获得的，可用的；有空的",
+      "etymology": "avail（拉丁 ad-「向」+ valere「有价值/有效」→ 有用）+ -able → 「可用的」。",
+      "phonetics": "重音在 -vail- /ˈveɪl/，首音 a- 弱读 /ə/。",
+      "examples": [
+        {"en": "Your transcript will be available for pickup tomorrow.", "zh": "你的成绩单明天就能来领了。", "source": "造句"},
+        {"en": "available online", "zh": "可在线获取（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "ready", "ipa": "/ˈredi/", "gloss": "准备好的", "note": "ready 强调「已备妥待取」；available 强调「可获取、有空档」"}
+      ],
+      "nuance": "available 强调「可获取/可用」（available online）；ready 强调「已备好、就绪待取」。"
+    },
+    {
+      "word": "form (section)",
+      "levels": ["基础"],
+      "ipa": "/ˈsekʃn/",
+      "subgroup": "general",
+      "meaning": "n. 部分，栏（表格的一节）（section）",
+      "etymology": "拉丁 secare「切」→ sectio「切开的一块」，即一节、一栏。同源 sector。",
+      "phonetics": "重音在前 /ˈsek/，-tion 读 /ʃn/。",
+      "examples": [
+        {"en": "Leave the bottom section blank; the office fills that in.", "zh": "底部那栏留空，由办公室填。", "source": "造句"},
+        {"en": "the top section of the form", "zh": "表格上半栏（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "field", "ipa": "/fiːld/", "gloss": "字段，填写栏", "note": "field 是单个填写框；section 是若干 field 组成的一整栏区块"}
+      ],
+      "nuance": "section 是表格里的一整块区（若干栏）；field 是单个填写框，一大一小。"
+    },
+    {
+      "word": "blank",
+      "levels": ["基础"],
+      "ipa": "/blæŋk/",
+      "subgroup": "general",
+      "meaning": "adj. 空白的  n. 空格",
+      "etymology": "古法语 blanc「白色的」→ 「一片空白」。同源 blanket（原指白毯）。",
+      "phonetics": "短音 /æ/，-nk 读 /ŋk/。",
+      "examples": [
+        {"en": "Don't leave any required fields blank.", "zh": "必填栏别留空。", "source": "造句"},
+        {"en": "leave it blank", "zh": "留空（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "empty", "ipa": "/ˈempti/", "gloss": "空的", "note": "empty 泛指空的容器/空间；blank 特指「没填字的空白处」"}
+      ],
+      "nuance": "blank 特指「没填内容的空白栏」（leave it blank）；empty 泛指任何「空的」东西。"
+    },
+    {
+      "word": "counter (clerk)",
+      "levels": ["基础"],
+      "ipa": "/klɜːrk/",
+      "subgroup": "general",
+      "meaning": "n. 办事员，职员（clerk）",
+      "etymology": "拉丁 clericus「教士」→ 中世纪识字者多为教士，负责文书，引申为「文书职员」。",
+      "phonetics": "美音读 /klɜːrk/；英音读 /klɑːk/。一个音节。",
+      "examples": [
+        {"en": "The clerk at the counter can look up your record.", "zh": "柜台的职员能帮你查档案。", "source": "造句"},
+        {"en": "the front-desk clerk", "zh": "前台职员（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "staff member", "ipa": "/stæf ˈmembər/", "gloss": "工作人员", "note": "staff member 泛指任一员工；clerk 特指柜台办事的文书员"}
+      ],
+      "nuance": "clerk 是柜台办文书业务的职员；staff member 泛指办公室任一工作人员。"
+    },
+    {
+      "word": "online",
+      "levels": ["基础"],
+      "ipa": "/ˌɑːnˈlaɪn/",
+      "subgroup": "general",
+      "meaning": "adj./adv. 在线的，网上",
+      "etymology": "on「在…上」+ line「线路」→ 「连在网络线路上」，即在线。",
+      "phonetics": "两音节都可重读，line /laɪn/ 常略重。",
+      "examples": [
+        {"en": "You can do most of this online without coming in.", "zh": "这些大多能在线办，不用亲自来。", "source": "造句"},
+        {"en": "apply online", "zh": "在线申请（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "on the portal", "ipa": "/ɑːn ðə ˈpɔːrtl/", "gloss": "在门户上", "note": "口语里 online 常具体指 on the (student) portal"}
+      ],
+      "nuance": "online 是「线上办理」，与 in person（本人到场）、by mail（邮寄）并列的三种方式之一。"
+    },
+    {
+      "word": "semester (term)",
+      "levels": ["基础"],
+      "ipa": "/tɜːrm/",
+      "subgroup": "general",
+      "meaning": "n. 学期；术语；期限（term）",
+      "etymology": "拉丁 terminus「界限、终点」→ 有起止的一段时间，即学期/期限。同源 terminal。",
+      "phonetics": "长音 /ɜː/，一个音节。别和 team /tiːm/ 混。",
+      "examples": [
+        {"en": "You can retake the course next term.", "zh": "你可以下学期重修这门课。", "source": "造句"},
+        {"en": "next term", "zh": "下学期（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "semester", "ipa": "/sɪˈmestər/", "gloss": "学期（半年制）", "note": "semester 特指半年制学期；term 是更通用的「学期/期限」说法"}
+      ],
+      "nuance": "term 是通用的「学期」说法（也指术语、期限）；semester 特指半年制两学期制中的学期。"
+    },
+    {
+      "word": "fee (charge)",
+      "levels": ["基础"],
+      "ipa": "/tʃɑːrdʒ/",
+      "subgroup": "general",
+      "meaning": "n. 收费，费用  v. 收（费）（charge）",
+      "etymology": "拉丁 carricare「装载」→ 「把费用加载到账上」，即收费。同源 car、cargo。",
+      "phonetics": "长音 /ɑː/，ch 读 /tʃ/，词尾 -ge 读 /dʒ/。",
+      "examples": [
+        {"en": "There's no charge for an unofficial transcript.", "zh": "非正式成绩单不收费。", "source": "造句"},
+        {"en": "a service charge", "zh": "服务费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fee", "ipa": "/fiː/", "gloss": "费用", "note": "fee 是有名目的固定费用；charge 泛指账上任一笔收费"}
+      ],
+      "nuance": "charge 泛指账上任一笔收费（可作动词「收费」）；fee 是有具体名目的固定费用。"
+    },
+    {
+      "word": "deadline (date)",
+      "levels": ["基础"],
+      "ipa": "/deɪt/",
+      "subgroup": "general",
+      "meaning": "n. 日期  v. 注明日期（date）",
+      "etymology": "拉丁 data「给出（的日子）」→ 信件落款「给出于某日」，引申为日期。",
+      "phonetics": "长音 /eɪ/，一个音节。sign and date 是固定搭配。",
+      "examples": [
+        {"en": "Sign and date the form at the bottom.", "zh": "在表格底部签名并注明日期。", "source": "造句"},
+        {"en": "the effective date", "zh": "生效日期（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "deadline", "ipa": "/ˈdedlaɪn/", "gloss": "截止日期", "note": "deadline 特指最后期限；date 泛指任何日期"}
+      ],
+      "nuance": "date 泛指任何日期（含作动词「注明日期」）；deadline 特指「最后截止日」。"
+    },
+    {
+      "word": "wait",
+      "levels": ["基础"],
+      "ipa": "/weɪt/",
+      "subgroup": "general",
+      "meaning": "v./n. 等待",
+      "etymology": "古法语 waitier「守望、等候」→ 等待。同源 wake（守夜）。",
+      "phonetics": "长音 /eɪ/，和 weight（重量）同音。",
+      "examples": [
+        {"en": "You may have to wait a bit; it's busy today.", "zh": "你可能得等一会儿，今天人多。", "source": "造句"},
+        {"en": "wait to be called", "zh": "等待叫号（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "hold on", "ipa": "/hoʊld ɑːn/", "gloss": "稍等", "note": "hold on 是口语「稍等一下」；wait 更中性通用"}
+      ],
+      "nuance": "wait 是中性的「等待」；waitlist（候补名单）是选课满员后排队等位的名词，别混。"
+    },
+    {
+      "word": "waitlist",
+      "levels": ["托福"],
+      "ipa": "/ˈweɪtlɪst/",
+      "subgroup": "general",
+      "meaning": "n. 候补名单  v. 列入候补",
+      "etymology": "wait（等待）+ list（名单）→ 满员时排队等位的名单。",
+      "phonetics": "重音在前 /ˈweɪt/，-list 弱读 /lɪst/。",
+      "examples": [
+        {"en": "The class is full, but you can join the waitlist.", "zh": "这门课满了，但你可以进候补名单。", "source": "造句"},
+        {"en": "join the waitlist", "zh": "加入候补名单（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "wait list", "ipa": "/weɪt lɪst/", "gloss": "候补名单", "note": "waitlist 与 wait list 拼法皆可，含义相同"}
+      ],
+      "nuance": "waitlist 是课程满员时的候补名单；有位子空出会按顺序 enroll 进去。"
+    },
+    {
+      "word": "help",
+      "levels": ["基础"],
+      "ipa": "/help/",
+      "subgroup": "general",
+      "meaning": "v./n. 帮助",
+      "etymology": "古英语 helpan「援助」→ 帮助。服务场景高频开场：How can I help you?",
+      "phonetics": "短音 /e/，-lp 收清。",
+      "examples": [
+        {"en": "Hi, how can I help you today?", "zh": "你好，今天有什么能帮你的？", "source": "造句"},
+        {"en": "How can I help you?", "zh": "有什么可以帮你的？（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "assist", "ipa": "/əˈsɪst/", "gloss": "协助", "note": "assist 更正式书面；help 更口语常用"}
+      ],
+      "nuance": "How can I help you? 是服务窗口的高频开场白；assist 是它更正式的同义词。"
+    },
+    {
+      "word": "issue (problem)",
+      "levels": ["基础"],
+      "ipa": "/ˈɪʃuː/",
+      "subgroup": "general",
+      "meaning": "n. 问题，故障（issue 作名词）",
+      "etymology": "同 issue（发出）→ 引申「冒出来的问题」，即麻烦、故障。",
+      "phonetics": "重音在前 /ˈɪ/，美音读 /ˈɪʃuː/。",
+      "examples": [
+        {"en": "There seems to be an issue with your registration.", "zh": "你的选课好像出了点问题。", "source": "造句"},
+        {"en": "a technical issue", "zh": "技术故障（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "problem", "ipa": "/ˈprɑːbləm/", "gloss": "问题", "note": "problem 语气略重；issue 更委婉中性，服务语境更常用"}
+      ],
+      "nuance": "服务语境 issue 是较委婉的「问题、故障」；problem 语气更重，issue 听着更客气。"
+    },
+    {
+      "word": "sure",
+      "levels": ["基础"],
+      "ipa": "/ʃʊr/",
+      "subgroup": "general",
+      "meaning": "adj./adv. 当然，好的（应答用）",
+      "etymology": "拉丁 securus「无忧、确定」→ 古法语 sur「确定的」→ 引申应答「当然、没问题」。",
+      "phonetics": "读 /ʃʊr/，sh 音开头。口语应答常单说 Sure。",
+      "examples": [
+        {"en": "Sure, I can print that out for you.", "zh": "当然，我可以帮你打印出来。", "source": "造句"},
+        {"en": "Sure, no problem.", "zh": "当然，没问题。（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "of course", "ipa": "/əv kɔːrs/", "gloss": "当然", "note": "of course 语气更肯定热情；sure 更随意轻松"}
+      ],
+      "nuance": "Sure 是服务对话里轻松的「好的、当然」应答；of course 语气更肯定，二者都常用。"
+    },
+    {
+      "word": "actually",
+      "levels": ["基础"],
+      "ipa": "/ˈæktʃuəli/",
+      "subgroup": "general",
+      "meaning": "adv. 其实，实际上（用于纠正/补充）",
+      "etymology": "actual（拉丁 actus「行为、真实」→ 实际的）+ -ly → 「实际上」。",
+      "phonetics": "重音在前 /ˈæk/，-tu- 读 /tʃu/，四音节。",
+      "examples": [
+        {"en": "Actually, you can do that yourself through the portal.", "zh": "其实这个你在门户上自己就能办。", "source": "造句"},
+        {"en": "Actually, it's already been processed.", "zh": "实际上，它已经办好了。（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "in fact", "ipa": "/ɪn fækt/", "gloss": "事实上", "note": "in fact 偏强调补充事实；actually 常用于「委婉纠正」对方"}
+      ],
+      "nuance": "actually 在对话里常引出「委婉纠正/意外事实」（Actually, you can...）；in fact 更偏「进一步强调」。"
+    },
+    {
+      "word": "form (paperwork)",
+      "levels": ["基础"],
+      "ipa": "/ˈpeɪpərwɜːrk/",
+      "subgroup": "general",
+      "meaning": "n. 文书工作，一堆表格材料（paperwork）",
+      "etymology": "paper（纸）+ work（工作）→ 要处理的一堆纸质文书。不可数。",
+      "phonetics": "重音在前 /ˈpeɪ/，-work 读 /wɜːrk/。",
+      "examples": [
+        {"en": "There's a bit of paperwork to fill out first.", "zh": "得先填一些表格材料。", "source": "造句"},
+        {"en": "finish the paperwork", "zh": "办完文书手续（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "forms", "ipa": "/fɔːrmz/", "gloss": "表格（复数）", "note": "forms 是可数的多张表；paperwork 是不可数的文书总称"}
+      ],
+      "nuance": "paperwork 是不可数的「文书工作总称」；form(s) 是可数的具体表格，一个笼统一个具体。"
+    },
+    {
+      "word": "photo ID",
+      "levels": ["基础"],
+      "ipa": "/ˈfoʊtoʊ ˌaɪ ˈdiː/",
+      "subgroup": "general",
+      "meaning": "n. 带照片的身份证件",
+      "etymology": "photo（照片）+ ID（证件）→ 带本人照片的身份证明，用于核验身份。",
+      "phonetics": "photo 重音在前 /ˈfoʊ/；ID 逐字母读，重音在 D。",
+      "examples": [
+        {"en": "You'll need to show a photo ID to pick this up.", "zh": "领取这个需要出示带照片的证件。", "source": "造句"},
+        {"en": "show a photo ID", "zh": "出示带照片证件（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "student ID", "ipa": "/ˈstuːdnt ˌaɪ ˈdiː/", "gloss": "学生证", "note": "student ID 是学校发的学生证；photo ID 泛指任何带照片证件（含驾照护照）"}
+      ],
+      "nuance": "photo ID 泛指任何带照片的证件（驾照、护照、学生证均可）；student ID 特指学校学生证。"
+    },
+    {
+      "word": "financial aid",
+      "levels": ["托福"],
+      "ipa": "/faɪˈnænʃl eɪd/",
+      "subgroup": "general",
+      "meaning": "n. 助学资助（奖学金、助学金、贷款总称）",
+      "etymology": "financial（财务的，源自 finance）+ aid（援助）→ 财务上的资助。",
+      "phonetics": "financial 重音在 -nan- /ˈnæn/；aid 长音 /eɪd/。",
+      "examples": [
+        {"en": "Ask the financial aid office about the fee waiver.", "zh": "免手续费的事去问助学金办公室。", "source": "造句"},
+        {"en": "apply for financial aid", "zh": "申请助学资助（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "scholarship", "ipa": "/ˈskɑːlərʃɪp/", "gloss": "奖学金", "note": "scholarship 是财务资助的一种；financial aid 是含奖学金/助学金/贷款的总称"}
+      ],
+      "nuance": "financial aid 是资助总称（含 scholarship、grant、loan）；scholarship 只是其中凭成绩发放的一类。"
+    },
+    {
+      "word": "certificate (statement)",
+      "levels": ["托福"],
+      "ipa": "/ˈsteɪtmənt/",
+      "subgroup": "general",
+      "meaning": "n. 对账单；声明（statement）",
+      "etymology": "state（陈述，拉丁 status「状态」）+ -ment → 陈述性的正式文件，如对账单。",
+      "phonetics": "重音在前 /ˈsteɪt/，-ment 弱读 /mənt/。",
+      "examples": [
+        {"en": "Your account statement shows all charges for the semester.", "zh": "你的对账单列出本学期所有费用。", "source": "造句"},
+        {"en": "an account statement", "zh": "账户对账单（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "invoice", "ipa": "/ˈɪnvɔɪs/", "gloss": "账单", "note": "invoice 是单笔应付款；statement 是一段时间收支的汇总对账单"}
+      ],
+      "nuance": "statement 是一段时间所有收支的汇总对账单；invoice 是单笔应付款账单，范围一宽一窄。"
+    },
+    {
+      "word": "signature (verify)",
+      "levels": ["托福"],
+      "ipa": "/ˈæpruːvl/",
+      "subgroup": "general",
+      "meaning": "n. 批准，许可（approval）",
+      "etymology": "approve（拉丁 ad-「向」+ probare「证明为好」→ 认可）+ -al → 批准。同源 prove。",
+      "phonetics": "重音在 -pro- /ˈpruː/，首音 a- 弱读 /ə/。",
+      "examples": [
+        {"en": "This change needs approval from your department.", "zh": "这项改动需要你所在院系的批准。", "source": "造句"},
+        {"en": "need approval", "zh": "需要批准（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "permission", "ipa": "/pərˈmɪʃn/", "gloss": "许可", "note": "permission 是「准许做某事」；approval 是对具体请求/申请的「批准」"}
+      ],
+      "nuance": "approval 是对具体申请的「批准」（need approval）；signature（签名）常是其形式凭证。"
+    },
+    {
+      "word": "process (submit online)",
+      "levels": ["基础"],
+      "ipa": "/ˈsʌbmɪt/",
+      "subgroup": "general",
+      "meaning": "n. 提交项（口语 hit submit：点提交）",
+      "etymology": "同 submit（提交）→ 界面上那个 Submit 按钮，口语说 hit/click submit。",
+      "phonetics": "作按钮名词时也读 /ˈsʌbmɪt/。hit submit 连读。",
+      "examples": [
+        {"en": "Fill everything in, then hit submit at the bottom.", "zh": "全部填好，然后点底部的提交。", "source": "造句"},
+        {"en": "click submit", "zh": "点击提交（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "send", "ipa": "/send/", "gloss": "发送", "note": "有些界面按钮是 Send；提交操作与 submit 相近"}
+      ],
+      "nuance": "口语 hit/click submit 指「点提交按钮」；完成后系统才开始 process（办理）。"
+    },
+    {
+      "word": "counter (window)",
+      "levels": ["基础"],
+      "ipa": "/ˈwɪndoʊ/",
+      "subgroup": "general",
+      "meaning": "n.（办事）窗口（window）",
+      "etymology": "古北欧语 vindauga「风眼」（vindr「风」+ auga「眼」）→ 窗；引申办事「窗口」。",
+      "phonetics": "重音在前 /ˈwɪn/，-dow 弱读 /doʊ/。",
+      "examples": [
+        {"en": "Payments are handled at the second window.", "zh": "缴费在二号窗口办理。", "source": "造句"},
+        {"en": "the payment window", "zh": "缴费窗口（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "counter", "ipa": "/ˈkaʊntər/", "gloss": "柜台", "note": "counter 是整条办事柜台；window 是其中某个具体业务窗口"}
+      ],
+      "nuance": "window 指办某类业务的具体窗口（payment window）；counter 是整条柜台台面，一具体一整体。"
+    },
+    {
+      "word": "check on",
+      "levels": ["基础"],
+      "ipa": "/tʃek ɑːn/",
+      "subgroup": "general",
+      "meaning": "查看（进度/状态）",
+      "etymology": "check（查看）+ on → 「查看…的情况/进展」。",
+      "phonetics": "check 重读，on /ɑːn/ 略轻。",
+      "examples": [
+        {"en": "I'm calling to check on the status of my application.", "zh": "我打电话来查一下我申请的进度。", "source": "造句"},
+        {"en": "check on the status", "zh": "查看进度（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "follow up", "ipa": "/ˈfɑːloʊ ʌp/", "gloss": "跟进", "note": "follow up 强调「事后追问跟进」；check on 是「查看当下状态」"}
+      ],
+      "nuance": "check on 是「查看…当前情况」；follow up (on) 是「就先前的事再追问跟进」，时间点不同。"
+    },
+    {
+      "word": "deadline (form)",
+      "levels": ["托福"],
+      "ipa": "/ˈdupləkət/",
+      "subgroup": "noun",
+      "meaning": "n. 复本，副本（duplicate）  v. /-keɪt/ 复制",
+      "etymology": "拉丁 duplicare「加倍、对折」（duo「二」+ plicare「折」）→ 「做成两份」，即复本。同源 double。",
+      "phonetics": "名词末音读 /kət/；动词读 /keɪt/。重音在前 /ˈduː/。",
+      "examples": [
+        {"en": "You can request a duplicate diploma if yours was lost.", "zh": "文凭丢了可以申请补一份复本。", "source": "造句"},
+        {"en": "a duplicate copy", "zh": "一份复本（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "copy", "ipa": "/ˈkɑːpi/", "gloss": "副本", "note": "copy 泛指复印件；duplicate 强调「与原件完全一致的复本」"}
+      ],
+      "nuance": "duplicate 强调「一模一样的复本」（常用于补办丢失件）；copy 更口语泛用。"
+    },
+    {
+      "word": "form (fee waiver)",
+      "levels": ["六级"],
+      "ipa": "/ˈdedlaɪn ˈskedʒuːl/",
+      "subgroup": "noun",
+      "meaning": "n. 截止日程表（academic calendar：校历）",
+      "etymology": "academic（学术的）+ calendar（拉丁 kalendae「每月初一」→ 日历）→ 标注学期各关键日期的校历。",
+      "phonetics": "academic 重音在 -dem- /ˈdem/；calendar 重音在前 /ˈkæl/。",
+      "examples": [
+        {"en": "Check the academic calendar for the drop deadline.", "zh": "退课截止日请查校历。", "source": "造句"},
+        {"en": "the academic calendar", "zh": "校历（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "schedule", "ipa": "/ˈskedʒuːl/", "gloss": "日程表", "note": "schedule 泛指各种日程；academic calendar 特指标注学期关键日期的校历"}
+      ],
+      "nuance": "academic calendar（校历）标注开学、加退课、考试等全学期关键日；个人 schedule 只是你自己的课表。"
+    },
+    {
+      "word": "look up",
+      "levels": ["基础"],
+      "ipa": "/lʊk ʌp/",
+      "subgroup": "verb",
+      "meaning": "v. 查找（信息）；抬头看",
+      "etymology": "look（看）+ up → 在系统/名录里「查找」信息。宾语插中间：look it up。",
+      "phonetics": "连读 /lʊˈkʌp/，up 重读。",
+      "examples": [
+        {"en": "Let me look up your account and see what's going on.", "zh": "我查一下你的账户，看看是什么情况。", "source": "造句"},
+        {"en": "look up your record", "zh": "查你的档案（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "search for", "ipa": "/sɜːrtʃ fɔːr/", "gloss": "搜索", "note": "search for 强调「主动搜寻」；look up 强调「在既有系统里查到」"}
+      ],
+      "nuance": "look up 是「在系统里查到某条信息」（look up your record）；look into 是「深入调查某问题原因」。"
+    },
+    {
+      "word": "reset",
+      "levels": ["基础"],
+      "ipa": "/ˌriːˈset/",
+      "subgroup": "verb",
+      "meaning": "v. 重置，重设（密码等）",
+      "etymology": "re-「重新」+ set「设定」→ 重新设定。reset your password 是高频搭配。",
+      "phonetics": "重音在后 /ˈset/，re- 读 /riː/。",
+      "examples": [
+        {"en": "You can reset your password from the login page.", "zh": "你可以在登录页重置密码。", "source": "造句"},
+        {"en": "reset your password", "zh": "重置密码（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "change", "ipa": "/tʃeɪndʒ/", "gloss": "更改", "note": "change 是主动改成新值；reset 是「清空重设」，常用于忘记密码后"}
+      ],
+      "nuance": "reset 是「清空重设」（忘记密码后重来）；change 是「主动改成一个新值」，前提不同。"
+    },
+    {
+      "word": "attach",
+      "levels": ["托福"],
+      "ipa": "/əˈtætʃ/",
+      "subgroup": "verb",
+      "meaning": "v. 附上，附加（文件）",
+      "etymology": "古法语 estachier「钉住、系住」→ 「把…系上」，即附上。同源 attack（原指「系上/上前」）。",
+      "phonetics": "重音在后 /ˈtætʃ/，首音 a- 弱读 /ə/。",
+      "examples": [
+        {"en": "Attach a copy of your ID to the application.", "zh": "在申请表上附一份证件复印件。", "source": "造句"},
+        {"en": "attach a document", "zh": "附上文件（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "enclose", "ipa": "/ɪnˈkloʊz/", "gloss": "随附（信件中）", "note": "enclose 多用于信封里随附；attach 多用于表单/邮件附加文件"}
+      ],
+      "nuance": "attach 是「附加文件」（邮件/表单附件）；enclose 多指「装进信封随附」，媒介不同。"
+    },
+    {
+      "word": "double-check",
+      "levels": ["基础"],
+      "ipa": "/ˌdʌbl ˈtʃek/",
+      "subgroup": "verb",
+      "meaning": "v. 复核，再核对一遍",
+      "etymology": "double（两次）+ check（核对）→ 「再查一遍」，确保无误。",
+      "phonetics": "check 重读，double 重音在前 /ˈdʌ/。",
+      "examples": [
+        {"en": "Let me double-check that your credits transferred correctly.", "zh": "我再核对一下你的学分有没有转对。", "source": "造句"},
+        {"en": "double-check the details", "zh": "复核一下细节（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "verify", "ipa": "/ˈverɪfaɪ/", "gloss": "核实", "note": "verify 更正式、含查证真伪；double-check 更口语，指「再确认一遍」"}
+      ],
+      "nuance": "double-check 是口语「再核对一遍、以防出错」；verify 更正式，含「查证真伪」意味。"
+    },
+    {
+      "word": "outstanding",
+      "levels": ["六级"],
+      "ipa": "/aʊtˈstændɪŋ/",
+      "subgroup": "desc",
+      "meaning": "adj. 未结清的，未处理的；杰出的",
+      "etymology": "out「在外」+ stand「立着」→ 「悬在外头没了结」，引申「未付清」；另一义「突出、杰出」。",
+      "phonetics": "重音在 -stand- /ˈstæn/。缴费语境读同一词，但取「未结清」义。",
+      "examples": [
+        {"en": "You have an outstanding balance of one hundred dollars.", "zh": "你还有一百美元未结清。", "source": "造句"},
+        {"en": "an outstanding balance", "zh": "未结清余额（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "unpaid", "ipa": "/ˌʌnˈpeɪd/", "gloss": "未付的", "note": "unpaid 直白指「没付的」；outstanding 指「悬着未了结的（款）」"}
+      ],
+      "nuance": "缴费语境 outstanding 指「未结清、悬着的」（outstanding balance），不是「杰出的」那个褒义。"
+    },
+    {
+      "word": "expired",
+      "levels": ["托福"],
+      "ipa": "/ɪkˈspaɪərd/",
+      "subgroup": "desc",
+      "meaning": "adj. 过期的，失效的",
+      "etymology": "拉丁 ex-「出」+ spirare「呼吸」→ expire「呼出最后一口气、期满」→ expired「已期满失效」。同源 spirit。",
+      "phonetics": "重音在 -pi- /ˈspaɪ/，首音 ex- 弱读 /ɪk/。",
+      "examples": [
+        {"en": "Sorry, this ID is expired; do you have a current one?", "zh": "抱歉，这张证件过期了，有没有现行有效的？", "source": "造句"},
+        {"en": "an expired ID", "zh": "过期证件（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "out of date", "ipa": "/aʊt əv deɪt/", "gloss": "过时的", "note": "out of date 偏「信息过时」；expired 强调「已过有效期、失效」"}
+      ],
+      "antonyms": [
+        {"w": "valid", "ipa": "/ˈvælɪd/", "gloss": "有效的"}
+      ],
+      "nuance": "expired 强调「已过有效期、失效」（expired ID）；valid（有效的）是它的反义。"
+    },
+    {
+      "word": "incomplete",
+      "levels": ["基础"],
+      "ipa": "/ˌɪnkəmˈpliːt/",
+      "subgroup": "desc",
+      "meaning": "adj. 不完整的，未填全的",
+      "etymology": "in-「不」+ complete「完整」→ 没填全、没办完。教务里 Incomplete 也是一种「缓评」成绩标记。",
+      "phonetics": "主重音在 -plete /ˈpliːt/，前面 incom- 弱读。",
+      "examples": [
+        {"en": "Your form is incomplete—the second page isn't signed.", "zh": "你的表没填全——第二页没签名。", "source": "造句"},
+        {"en": "an incomplete application", "zh": "不完整的申请（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "missing", "ipa": "/ˈmɪsɪŋ/", "gloss": "缺失的", "note": "missing 指某具体项缺了；incomplete 指整份没办完/填全"}
+      ],
+      "antonyms": [
+        {"w": "complete", "ipa": "/kəmˈpliːt/", "gloss": "完整的"}
+      ],
+      "nuance": "incomplete 指「整份没填全/没办完」；missing 指「某一具体项缺了」，范围一整体一局部。"
+    },
+    {
+      "word": "current",
+      "levels": ["基础"],
+      "ipa": "/ˈkɜːrənt/",
+      "subgroup": "desc",
+      "meaning": "adj. 现行的，当前的，未过期的",
+      "etymology": "拉丁 currere「跑」→ 「正在流动/进行的」，即当前的。同源 course、occur。",
+      "phonetics": "重音在前 /ˈkɜː/，-rent 弱读 /rənt/。",
+      "examples": [
+        {"en": "Please make sure your contact info is current.", "zh": "请确保你的联系方式是最新的。", "source": "造句"},
+        {"en": "your current address", "zh": "你的现住址（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "up to date", "ipa": "/ʌp tə deɪt/", "gloss": "最新的", "note": "up to date 强调「已更到最新」；current 强调「现行、当下有效」"}
+      ],
+      "nuance": "current 强调「现行、当下有效的」（current ID / current address）；expired（过期的）是其反面。"
+    },
+    {
+      "word": "required",
+      "levels": ["基础"],
+      "ipa": "/rɪˈkwaɪərd/",
+      "subgroup": "desc",
+      "meaning": "adj. 必需的，必填的",
+      "etymology": "require（拉丁 re-「反复」+ quaerere「求」→ 要求）的过去分词 → 「被要求的」。",
+      "phonetics": "重音在 -quire- /ˈkwaɪər/，首音 re- 弱读。",
+      "examples": [
+        {"en": "All fields marked with an asterisk are required.", "zh": "所有带星号的栏都是必填的。", "source": "造句"},
+        {"en": "a required field", "zh": "必填栏（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "mandatory", "ipa": "/ˈmændətɔːri/", "gloss": "强制的", "note": "required 与 mandatory 近义；mandatory 语气更强、含「强制」"}
+      ],
+      "antonyms": [
+        {"w": "optional", "ipa": "/ˈɑːpʃənl/", "gloss": "可选的"}
+      ],
+      "nuance": "required 指「必需/必填」（required field）；optional（可选的）是其反面。"
+    },
+    {
+      "word": "sign off on",
+      "levels": ["六级"],
+      "ipa": "/saɪn ɔːf ɑːn/",
+      "subgroup": "phrase",
+      "meaning": "签字批准，签字放行",
+      "etymology": "sign off（签字了结）+ on → 「签字批准某事」。",
+      "phonetics": "sign 与 off 重读，on /ɑːn/ 略轻。",
+      "examples": [
+        {"en": "Your advisor has to sign off on the schedule change.", "zh": "改课表得由你顾问签字批准。", "source": "造句"},
+        {"en": "sign off on the form", "zh": "签字批准这张表（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "approve", "ipa": "/əˈpruːv/", "gloss": "批准", "note": "approve 是正式动词「批准」；sign off on 强调「签字放行」这一动作"}
+      ],
+      "nuance": "sign off on 强调「签字放行批准」；单说 sign 只是「签上名」，未必含批准之意。"
+    },
+    {
+      "word": "in time",
+      "levels": ["基础"],
+      "ipa": "/ɪn taɪm/",
+      "subgroup": "phrase",
+      "meaning": "及时（赶在期限前）",
+      "etymology": "in（在…内）+ time（时间）→ 「在期限时间内、来得及」。",
+      "phonetics": "time 重读，in /ɪn/ 略轻。别和 on time（准点）混。",
+      "examples": [
+        {"en": "You submitted it just in time before the deadline.", "zh": "你刚好在截止前及时提交了。", "source": "造句"},
+        {"en": "just in time", "zh": "正好赶上（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "on time", "ipa": "/ɑːn taɪm/", "gloss": "准时", "note": "on time 强调「准点、不迟」；in time 强调「赶得上、来得及」"}
+      ],
+      "nuance": "in time 强调「及时、赶得上」（just in time）；on time 强调「准点、不早不晚」。"
+    },
+    {
+      "word": "as soon as possible",
+      "levels": ["基础"],
+      "ipa": "/əz suːn əz ˈpɑːsəbl/",
+      "subgroup": "phrase",
+      "meaning": "尽快（缩写 ASAP）",
+      "etymology": "as soon as（一…就）+ possible（可能）→ 「一有可能就」，即尽快。",
+      "phonetics": "soon 与 possible 重读；缩写 ASAP 可逐字母读或拼读 /ˈeɪsæp/。",
+      "examples": [
+        {"en": "Please clear the balance as soon as possible.", "zh": "请尽快结清欠款。", "source": "造句"},
+        {"en": "get back to you as soon as possible", "zh": "尽快答复你（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "right away", "ipa": "/raɪt əˈweɪ/", "gloss": "立刻", "note": "right away 强调「立即、马上」；as soon as possible 强调「一有条件就尽快」"}
+      ],
+      "nuance": "as soon as possible（ASAP）是「尽快、条件允许就办」；right away 更强「此刻立即」。"
+    },
+    {
+      "word": "hold on",
+      "levels": ["基础"],
+      "ipa": "/hoʊld ɑːn/",
+      "subgroup": "phrase",
+      "meaning": "稍等，等一下（口语）",
+      "etymology": "hold（保持）+ on → 「保持住、别挂/别走」，即稍等。",
+      "phonetics": "hold 与 on 都重读，hold 长音 /oʊ/。",
+      "examples": [
+        {"en": "Hold on, let me pull up your file.", "zh": "稍等，我调出你的档案。", "source": "造句"},
+        {"en": "hold on a second", "zh": "稍等一下（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "hang on", "ipa": "/hæŋ ɑːn/", "gloss": "稍等", "note": "hang on 与 hold on 同义，都口语；hold on 也可指电话「别挂」"}
+      ],
+      "nuance": "hold on 是口语「稍等一下」（也用于电话别挂）；名词 hold（账户冻结）是完全不同的用法。"
+    },
+    {
+      "word": "let me check",
+      "levels": ["基础"],
+      "ipa": "/let mi tʃek/",
+      "subgroup": "phrase",
+      "meaning": "我查一下（服务窗口高频过渡语）",
+      "etymology": "let me（让我）+ check（查看）→ 办事人员边操作边说的过渡语。",
+      "phonetics": "check 重读；let me 常连读为 /leˈmi/。",
+      "examples": [
+        {"en": "Let me check whether the hold has been lifted.", "zh": "我查一下冻结解除了没有。", "source": "造句"},
+        {"en": "Let me check on that for you.", "zh": "我帮你查一下这个。（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "let me see", "ipa": "/let mi siː/", "gloss": "我看看", "note": "let me see 与 let me check 都是查询前的口头过渡语"}
+      ],
+      "nuance": "Let me check 是窗口人员查系统前的高频过渡语，听力里常预示接下来会给出查询结果。"
+    },
+    {
+      "word": "advising",
+      "levels": ["基础"],
+      "ipa": "/ədˈvaɪzɪŋ/",
+      "subgroup": "general",
+      "meaning": "n. 选课指导，学业咨询",
+      "etymology": "advise（建议）+ -ing → 顾问给学生做的「选课学业指导」这件事。",
+      "phonetics": "重音在 -vi- /ˈvaɪ/，ad- 弱读 /əd/。",
+      "examples": [
+        {"en": "You have to complete advising before you can register.", "zh": "你得先做完选课指导才能注册。", "source": "造句"},
+        {"en": "an advising appointment", "zh": "选课指导预约（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "counseling", "ipa": "/ˈkaʊnsəlɪŋ/", "gloss": "咨询辅导", "note": "counseling 偏心理/生涯咨询；advising 偏选课与学业规划"}
+      ],
+      "nuance": "advising 特指「选课学业指导」（常是注册前的必办环节）；counseling 偏心理生涯咨询。"
+    },
+    {
+      "word": "deposit",
+      "levels": ["托福"],
+      "ipa": "/dɪˈpɑːzɪt/",
+      "subgroup": "general",
+      "meaning": "n. 押金，定金  v. 存入",
+      "etymology": "拉丁 de-「向下」+ ponere「放」→ depositum「放下的东西」，即存放/押金。同源 position。",
+      "phonetics": "重音在 -pos- /ˈpɑː/，首音 de- 弱读 /dɪ/。",
+      "examples": [
+        {"en": "You'll need to pay a deposit to hold your spot.", "zh": "你得交一笔押金来保留名额。", "source": "造句"},
+        {"en": "an enrollment deposit", "zh": "入学押金（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "down payment", "ipa": "/daʊn ˈpeɪmənt/", "gloss": "首付款", "note": "down payment 是分期首付；deposit 是保留名额/可退的押金"}
+      ],
+      "nuance": "deposit 是保留名额的押金（部分可退）；tuition 是修课的全额学费，二者常先后缴纳。"
+    }
+  ]
+}

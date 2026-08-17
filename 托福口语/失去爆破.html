@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发音规则 · 失去爆破</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--accent2:#e0913c;--amber:#fdeccd;--core:#2f8f83;--ok:#4a9a5e;--bad:#c04a3a;--warn:#d8903a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:22px;margin:12px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 18px}
+
+  /* 核心一句话 */
+  .keybox{background:linear-gradient(135deg,#fff8ec,#fdf0dd);border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:14px;padding:14px 18px;font-size:15px;margin-bottom:14px;line-height:1.75}
+  .keybox b{color:var(--accent)}
+  .stops{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 2px}
+  .stop{background:#fff;border:1px solid #f0d9b0;border-radius:10px;padding:5px 14px;font-family:Georgia,serif;font-size:17px;font-weight:700;color:var(--accent)}
+  .stop small{font-size:11.5px;color:var(--muted);font-family:inherit;font-weight:400;margin-left:6px}
+
+  /* 为什么重要 */
+  .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin-bottom:18px}
+  .whyc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13px;color:#5f574c;line-height:1.6}
+  .whyc b{color:var(--core);display:block;margin-bottom:3px;font-size:13.5px}
+
+  /* 标注说明 + 语速 */
+  .bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;background:#fbf7ee;border:1px solid var(--line);border-radius:12px;padding:9px 14px;margin-bottom:16px;font-size:12.5px;color:#6b6154}
+  .lp{color:var(--bad);font-weight:800}
+  .speedbar{display:flex;gap:6px;align-items:center}
+  .schip{border:1px solid var(--line);background:#fff;border-radius:16px;padding:4px 13px;font-size:12.5px;cursor:pointer;color:#6b6154;transition:.15s}
+  .schip:hover{border-color:var(--accent2)}
+  .schip.on{background:var(--core);color:#fff;border-color:var(--core);font-weight:700}
+
+  /* 规则卡 */
+  .rule-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin-bottom:18px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .rhead{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+  .rno{font-size:12px;font-weight:800;color:#fff;background:var(--accent);border-radius:10px;padding:2px 10px}
+  .rtag{font-size:12px;font-weight:700;color:var(--core);background:#e6f0ec;border-radius:10px;padding:2px 10px}
+  .rule-card h3{margin:2px 0 6px;font-size:18px}
+  .rule-card h3 .ren{font-size:13px;color:var(--muted);font-weight:600;margin-left:8px}
+  .rrule{font-size:14px;color:#4d463c;margin:0 0 4px;line-height:1.7}
+  .rrule b{color:var(--accent)}
+  .rmeta{font-size:12px;color:var(--muted);margin-bottom:10px}
+  .rlabel{font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.5px;margin:14px 0 8px;display:flex;justify-content:space-between;align-items:center}
+  .playall{font-size:12px;font-weight:700;color:var(--core);background:#e6f0ec;border:none;border-radius:14px;padding:4px 13px;cursor:pointer;font-family:inherit}
+  .playall:hover{background:#d8e8e1}
+
+  /* 短语 chips */
+  .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+  .pchip{background:#fff;border:1px solid var(--line);border-radius:11px;padding:8px 12px;cursor:pointer;transition:.15s}
+  .pchip:hover{border-color:var(--accent2);transform:translateY(-1px)}
+  .pchip.playing{background:var(--amber);border-color:var(--accent)}
+  .pchip .pen{font-family:Georgia,"Times New Roman",serif;font-size:15.5px;color:var(--ink)}
+  .pchip .pzh{font-size:11.5px;color:var(--muted);margin-top:1px}
+
+  /* 短句列表 */
+  .slist{display:flex;flex-direction:column;gap:6px}
+  .srow{display:flex;gap:10px;align-items:center;background:#faf7f0;border:1px solid var(--line);border-radius:11px;padding:8px 12px}
+  .splay{flex:0 0 auto;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#efe8d8;cursor:pointer;font-size:14px;transition:.15s}
+  .splay:hover{background:#e5dccb}
+  .srow.playing .splay{background:var(--amber);border-color:var(--accent)}
+  .srow .sen{font-family:Georgia,"Times New Roman",serif;font-size:16.5px;line-height:1.45}
+  .srow .szh{font-size:12px;color:var(--muted)}
+
+  /* 方法卡 */
+  .method{background:#fbf7ee;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:18px;font-size:13.5px;color:#5f574c;line-height:1.75}
+  .method b{color:var(--accent)}
+  .method .steps3{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:10px 0}
+  .step3{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:12.5px}
+  .step3 b{display:block;color:var(--core);margin-bottom:2px}
+  .trap{background:#fff8ec;border-left:4px solid var(--accent2);border-radius:0 10px 10px 0;padding:8px 13px;margin-top:10px;font-size:12.5px}
+
+  /* 跟读自测 */
+  .selftest{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .selftest h3{margin:0 0 4px;font-size:17px}
+  .selftest .tip{font-size:12.5px;color:#6b6154;margin-bottom:12px;line-height:1.65}
+  .btn{border:none;border-radius:22px;padding:11px 22px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.rec{background:var(--accent);color:#fff}
+  .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
+  .live{min-height:38px;padding:9px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:13.5px;color:#6b6154;margin-top:12px}
+  .playback{display:none;margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+  .playback audio{width:100%;height:38px;margin-top:6px}
+  .playback .tt{font-size:12.5px;color:#5f574c;background:#f0f6f3;border:1px dashed #cfe3db;border-radius:10px;padding:8px 12px;margin-top:8px}
+
+  .hint{color:var(--muted);font-size:12.5px;margin-top:14px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./发音规则.html">← 发音规则总览</a><span>五大连读现象 · ② 失去爆破</span></div>
+  <h1>🔇 失去爆破</h1>
+  <div class="en">Loss of Plosion / Unreleased Stops</div>
+  <div class="desc">英语说得"顺、滑、像母语"的第一条发音规则，也是听力里"明明每个词都认识却听不懂"的常见元凶。下面 4 条规则 + 词内/句尾两个补充，每条都配了<b>可点读的示范短语和短句</b>。</div>
+
+  <div class="keybox">
+    <b>一句话总结：</b>6 个爆破音后面只要<b>紧跟另一个辅音</b>，这个爆破音就"失去爆破"——<b>口型做到位、气流憋住不送气</b>，停半拍后直接滑向下一个音。像被人掐住：姿势在，爆发没了。
+    <div class="stops">
+      <span class="stop">/p/<small>pay</small></span>
+      <span class="stop">/b/<small>bay</small></span>
+      <span class="stop">/t/<small>tea</small></span>
+      <span class="stop">/d/<small>day</small></span>
+      <span class="stop">/k/<small>key</small></span>
+      <span class="stop">/g/<small>go</small></span>
+    </div>
+  </div>
+
+  <div class="why">
+    <div class="whyc"><b>🗣 口语 Delivery 提分</b>每个音都重重读完，听起来像"蹦单词"、生硬机械。失去爆破让语流连贯顺滑，是母语感的直接来源。</div>
+    <div class="whyc"><b>👂 听力不再"少半个音"</b>native 的 goo(d) morning、I can'(t) go 听起来像少了个音。最经典：美音 <i>can</i> /kən/ vs <i>can't</i>（t 不爆但有顿挫）——靠那个顿挫辨否定。</div>
+    <div class="whyc"><b>🔁 复述题先听准</b>Listen and Repeat 里原句只放一遍，听得出失去爆破，才复述得对、才不会把 "can't" 听成 "can"。</div>
+  </div>
+
+  <div class="bar">
+    <span>标注：红色 <span class="lp">(t)</span> = 失去爆破的音 → 口型到位、憋住、不送气。<b>点任意短语/短句听示范</b>。</span>
+    <span class="speedbar">示范语速：
+      <span class="schip on" data-r="0.9" onclick="setRate(this)">▶ 常速</span>
+      <span class="schip" data-r="0.62" onclick="setRate(this)">🐢 慢速</span>
+    </span>
+  </div>
+
+  <div id="rules"></div>
+
+  <div class="rule-card" id="inword"></div>
+
+  <div class="rule-card" id="final"></div>
+
+  <div class="method">
+    <b>🎯 怎么练（三步法）：</b>
+    <div class="steps3">
+      <div class="step3"><b>① 到位</b>舌头/嘴唇摆好那个爆破音的姿势（t：舌尖抵上齿龈；k：舌根抬起；p/b：双唇闭拢）</div>
+      <div class="step3"><b>② 憋住</b>气流堵住，停半拍——<b>不送气、不爆发</b>（像把音"含"在嘴里）</div>
+      <div class="step3"><b>③ 滑走</b>不停顿地直接接后面的辅音，中间不要加任何"呃"的音</div>
+    </div>
+    口诀：<b>只做口型，不爆破。</b>
+    <div class="trap">
+      <b>两个坑：</b>
+      ❌ 每个音都重重读完（goo-D morning → 生硬机器人腔）；
+      ❌ 连口型都不做、直接把音吞掉（si(t) down → "sih down"，会变成另一个词/听写漏词）。<b>口型必须在，只是不爆发。</b>
+    </div>
+  </div>
+
+  <div class="selftest">
+    <h3>🎙 跟读自测（录音 → 回放对比）</h3>
+    <div class="tip">转写引擎<b>听不出</b>你有没有失去爆破（它只认词），所以本页不打分：挑上面任意一组句子，先点 🔊 听示范 → 录音跟读 → 回放，对照听你的 (t) 是<b>"含住的顿挫"</b>——不是重重爆出，也不是彻底消失。</div>
+    <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始跟读</button>
+    <div class="live" id="live">录音前可以先点上面的短句听几遍示范。</div>
+    <div class="playback" id="playback">
+      <div style="font-size:13px;font-weight:700;color:var(--core)">🔁 回放我的录音：</div>
+      <audio id="audioEl" controls></audio>
+      <div class="tt" id="tt"></div>
+    </div>
+  </div>
+
+  <div class="hint">💡 建议练法：每天 1 条规则，短语逐个跟读 3 遍 → 短句跟读 → 录音自测一遍。4 条规则一周轮完，之后在「听力复述」里留意原句中的失去爆破，越听越清楚。</div>
+</div>
+
+<script src="./speech-core.js"></script>
+<script>
+/* ================= 数据：失去爆破 4 条规则 + 2 个补充 =================
+ * 标注约定：失去爆破的字母用 (x) 包住，播放时去掉括号
+ */
+const RULES = [
+  {
+    no:'规则 1', tag:'完全失去爆破',
+    name:'爆破音 + 爆破音', en:'Stop + Stop',
+    rule:'前一个爆破音<b>彻底不爆破</b>：口型到位、憋住半拍，直接发后面那个爆破音。两个音"叠"在一起，只听后一个爆发。',
+    meta:'/p b t d k g/ + /p b t d k g/',
+    phrases:[
+      {t:'si(t) down',zh:'坐下'},{t:'goo(d)bye',zh:'再见'},{t:'ho(t) dog',zh:'热狗'},
+      {t:'blac(k)board',zh:'黑板'},{t:'foo(t)ball',zh:'足球'},{t:'bi(g) cake',zh:'大蛋糕'},
+      {t:'ta(ke) care',zh:'保重'},{t:'kee(p) quiet',zh:'保持安静'}
+    ],
+    sentences:[
+      {t:'Si(t) down, please.',zh:'请坐。'},
+      {t:"I can'(t) go.",zh:'我去不了。'},
+      {t:'Wha(t) time is it?',zh:'几点了？'},
+      {t:"I(t)'s a bi(g) deal.",zh:'这事很重要。'},
+      {t:'Ta(ke) care!',zh:'保重！'},
+      {t:'Goo(d) game!',zh:'打得漂亮！'}
+    ]
+  },
+  {
+    no:'规则 2', tag:'不完全爆破',
+    name:'爆破音 + 摩擦音 / 破擦音', en:'Stop + Fricative / Affricate',
+    rule:'爆破音<b>轻轻一带、几乎听不出爆发</b>（比规则 1 略松一点点），立刻接后面的摩擦音/破擦音。',
+    meta:'摩擦音 /f v s z θ ð ʃ ʒ h r/ · 破擦音 /tʃ dʒ tr dr ts dz/',
+    phrases:[
+      {t:'goo(d) friend',zh:'好朋友'},{t:'a(t) school',zh:'在学校'},{t:'bi(g) zoo',zh:'大动物园'},
+      {t:'no(t) sure',zh:'不确定'},{t:'goo(d) job',zh:'干得好'},{t:'ta(ke) charge',zh:'负责'},
+      {t:'righ(t) there',zh:'就在那里'},{t:'tha(t) thing',zh:'那件事'}
+    ],
+    sentences:[
+      {t:"I'm no(t) sure.",zh:'我不确定。'},
+      {t:'I(t) sounds great.',zh:'听起来很棒。'},
+      {t:"He's a(t) school.",zh:'他在学校。'},
+      {t:"I can'(t) sleep.",zh:'我睡不着。'},
+      {t:'Ta(ke) charge of it.',zh:'这事你来负责。'},
+      {t:'Goo(d) friends are rare.',zh:'好朋友难得。'}
+    ]
+  },
+  {
+    no:'规则 3', tag:'鼻腔爆破',
+    name:'爆破音 + 鼻音 /m/ /n/', en:'Nasal Plosion',
+    rule:'口腔<b>不放开</b>，气流改从鼻腔冲出，带一点"鼻音顿挫"。美音里 t+n 常直接变成喉塞+鼻音（button ≈ "bu-n"）。',
+    meta:'爆破音 + /m/ /n/',
+    phrases:[
+      {t:'goo(d) morning',zh:'早上好'},{t:'a(t) night',zh:'在晚上'},{t:"don'(t) know",zh:'不知道'},
+      {t:'goo(d) news',zh:'好消息'},{t:'tha(t) man',zh:'那个男人'},{t:'i(t) matters',zh:'这很要紧'},
+      {t:'a(t) noon',zh:'在中午'},{t:'goo(d) night',zh:'晚安'}
+    ],
+    sentences:[
+      {t:'Goo(d) morning, everyone!',zh:'大家早上好！'},
+      {t:"I don'(t) know.",zh:'我不知道。'},
+      {t:'Goo(d) night!',zh:'晚安！'},
+      {t:'See you a(t) noon.',zh:'中午见。'},
+      {t:"I(t)'s no(t) mine.",zh:'那不是我的。'},
+      {t:'Goo(d) news!',zh:'好消息！'}
+    ]
+  },
+  {
+    no:'规则 4', tag:'舌边爆破',
+    name:'爆破音 + /l/', en:'Lateral Plosion',
+    rule:'爆破时<b>舌尖不离开齿龈</b>，气流从舌头两侧出来，直接滑进 /l/。不要在中间加"呃"（mi(d)dle ≠ "mi-de-l"）。',
+    meta:'爆破音 + /l/（单词内部常为成节音 /l̩/）',
+    phrases:[
+      {t:'a(t) last',zh:'终于'},{t:'goo(d) luck',zh:'祝好运'},{t:'a(t) least',zh:'至少'},
+      {t:'mi(d)dle',zh:'中间'},{t:'bo(t)tle',zh:'瓶子'},{t:'li(t)tle',zh:'小的'},
+      {t:'a(t) length',zh:'详细地'},{t:'ba(d)ly',zh:'非常；糟糕地'}
+    ],
+    sentences:[
+      {t:'Goo(d) luck!',zh:'祝你好运！'},
+      {t:'A(t) last!',zh:'终于等到了！'},
+      {t:'A(t) least try it.',zh:'至少试一试。'},
+      {t:"I(t)'s in the mi(d)dle.",zh:'在中间。'},
+      {t:'Goo(d) luck with your test!',zh:'祝你考试顺利！'}
+    ]
+  }
+];
+
+const INWORD = {
+  no:'补充 1', tag:'单词内部',
+  name:'单词内部也要失去爆破', en:'Within a Word',
+  rule:'同一个单词里，爆破音后面跟辅音时同样适用——这些高频词读对了，词汇题和复述都更顺。',
+  meta:'括号内为失去爆破的音',
+  phrases:[
+    {t:'do(c)tor',zh:'医生'},{t:'pi(c)ture',zh:'照片'},{t:'Se(p)tember',zh:'九月'},
+    {t:'a(c)tually',zh:'其实'},{t:'fa(c)tory',zh:'工厂'},{t:'mi(d)night',zh:'午夜'},
+    {t:'ou(t)side',zh:'外面'},{t:'lap(t)op',zh:'笔记本电脑'},{t:'foo(t)ball',zh:'足球'},
+    {t:'blac(k)board',zh:'黑板'}
+  ],
+  sentences:[]
+};
+
+const FINAL = {
+  no:'补充 2', tag:'句尾轻收',
+  name:'句尾的爆破音：轻轻一收', en:'Word-Final Stops',
+  rule:'爆破音在<b>句子末尾</b>（后面没有别的词）通常也不爆破，口型一收就结束。别重重地 "goo-D！"、"sto-P！"——那会带上一个多余的"呃"音。',
+  meta:'句尾的 /p b t d k g/',
+  phrases:[],
+  sentences:[
+    {t:"I can'(t).",zh:'我不行。'},
+    {t:'Sto(p).',zh:'停下。'},
+    {t:'Goo(d).',zh:'很好。'},
+    {t:"Tha(t)'s i(t).",zh:'就这样。/ 对了。'}
+  ]
+};
+
+/* ================= 渲染 ================= */
+let rate = 0.9;
+
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+// (t) → 红色标注；播放时 strip 括号
+function marked(s){ return esc(s).replace(/\(([a-z])\)/g,'<span class="lp">($1)</span>'); }
+function plain(s){ return (s||'').replace(/[()]/g,''); }
+
+function ruleHTML(r, idx){
+  let h = '<div class="rhead"><span class="rno">'+esc(r.no)+'</span><span class="rtag">'+esc(r.tag)+'</span></div>'
+        + '<h3>'+esc(r.name)+'<span class="ren">'+esc(r.en)+'</span></h3>'
+        + '<p class="rrule">'+r.rule+'</p>'
+        + '<div class="rmeta">'+esc(r.meta)+'</div>';
+  if(r.phrases && r.phrases.length){
+    h += '<div class="rlabel">📎 示范短语（点一下听发音）</div><div class="pgrid">'
+      + r.phrases.map((p,i)=>'<div class="pchip" id="p'+idx+'-'+i+'" onclick="playItem(\''+esc(plain(p.t)).replace(/'/g,"\\'")+'\',this)"><div class="pen">'+marked(p.t)+'</div><div class="pzh">'+esc(p.zh)+'</div></div>').join('')
+      + '</div>';
+  }
+  if(r.sentences && r.sentences.length){
+    h += '<div class="rlabel">🗣 示范短句<button class="playall" onclick="playAll('+idx+')">▶ 连播整组</button></div><div class="slist">'
+      + r.sentences.map((s,i)=>'<div class="srow" id="s'+idx+'-'+i+'"><button class="splay" onclick="playItem(\''+esc(plain(s.t)).replace(/'/g,"\\'")+'\',document.getElementById(\'s'+idx+'-'+i+'\'))">🔊</button><div><div class="sen">'+marked(s.t)+'</div><div class="szh">'+esc(s.zh)+'</div></div></div>').join('')
+      + '</div>';
+  }
+  return h;
+}
+
+const ALL = [...RULES, INWORD, FINAL];
+document.getElementById('rules').innerHTML = RULES.map((r,i)=>'<div class="rule-card">'+ruleHTML(r,i)+'</div>').join('');
+document.getElementById('inword').innerHTML = ruleHTML(INWORD, RULES.length);
+document.getElementById('final').innerHTML = ruleHTML(FINAL, RULES.length+1);
+
+/* ================= 播放 ================= */
+function setRate(el){
+  document.querySelectorAll('.schip').forEach(c=>c.classList.remove('on'));
+  el.classList.add('on');
+  rate = parseFloat(el.dataset.r);
+}
+
+async function playItem(text, el){
+  if(el) el.classList.add('playing');
+  await VocaSpeech.say(text, rate);
+  if(el) el.classList.remove('playing');
+}
+
+async function playAll(idx){
+  const group = ALL[idx];
+  for(let i=0;i<group.sentences.length;i++){
+    const el = document.getElementById('s'+idx+'-'+i);
+    if(el) el.classList.add('playing');
+    await VocaSpeech.say(plain(group.sentences[i].t), rate);
+    if(el) el.classList.remove('playing');
+  }
+}
+
+/* ================= 跟读自测（录音回放，不打分） ================= */
+let recording = false;
+
+async function toggleRec(){
+  const btn = document.getElementById('recBtn');
+  const live = document.getElementById('live');
+  if(recording){
+    recording = false;
+    btn.textContent = '🎙 开始跟读';
+    btn.classList.remove('recording');
+    live.innerHTML = '⏳ 正在处理录音…';
+    const result = await VocaSpeech.stop();
+    const pb = document.getElementById('playback');
+    pb.style.display = 'block';
+    document.getElementById('audioEl').src = result.url;
+    document.getElementById('tt').innerHTML = '📝 转写（仅供对照有没有吞词）：<b>'+esc(result.transcript||'(未识别)')+'</b>'
+      + (result.engine==='whisper' ? ' <span style="color:#2f8f83;font-size:11.5px">(whisper ✓)</span>' : ' <span style="color:#d8903a;font-size:11.5px">(浏览器降级)</span>');
+    live.innerHTML = '录好了（'+result.duration.toFixed(0)+' 秒）👇 点播放回放，对照示范听你的失去爆破有没有"含住"。';
+  } else {
+    try{
+      await VocaSpeech.start(()=>{});
+      recording = true;
+      btn.textContent = '⏹ 停止';
+      btn.classList.add('recording');
+      live.innerHTML = '🎙 录音中…挑一组短句跟读（比如规则 1 的 6 句），读完点「停止」。';
+      document.getElementById('playback').style.display = 'none';
+    }catch(e){ alert(e.message); }
+  }
+}
+
+if(!VocaSpeech.supported){
+  document.getElementById('live').innerHTML = '<b style="color:#c04a3a">⚠️ 录音需要 Chrome/Edge，并通过 start.command 打开的 localhost 页面访问。</b>（点读示范不受影响）';
+}
+</script>
+</body>
+</html>

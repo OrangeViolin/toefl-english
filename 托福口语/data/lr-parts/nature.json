@@ -1,0 +1,155 @@
+{
+  "id": "nature",
+  "name": "🌿 自然保护区",
+  "en": "Nature Reserve",
+  "desc": "欢迎·步道·保护规则·观鸟·野生动物·天气·防火·垃圾·向导·季节关闭",
+  "items": [
+    {
+      "en": "Welcome to the nature reserve.",
+      "zh": "欢迎来到自然保护区。",
+      "lv": "简单",
+      "chunks": ["Welcome to", "the nature reserve"],
+      "skeleton": ["欢迎来到", "自然保护区"]
+    },
+    {
+      "en": "Please stay on the marked trails.",
+      "zh": "请走标记好的步道。",
+      "lv": "简单",
+      "chunks": ["Please stay", "on the marked trails"],
+      "skeleton": ["请待在", "标记步道上"]
+    },
+    {
+      "en": "Do not pick the wild flowers.",
+      "zh": "不要采摘野花。",
+      "lv": "简单",
+      "chunks": ["Do not pick", "the wild flowers"],
+      "skeleton": ["不要采", "野花"]
+    },
+    {
+      "en": "The bird tower is near the lake.",
+      "zh": "观鸟塔就在湖边。",
+      "lv": "简单",
+      "chunks": ["The bird tower", "is near the lake"],
+      "skeleton": ["观鸟塔", "在湖边"]
+    },
+    {
+      "en": "Carry out all your trash.",
+      "zh": "把你所有的垃圾带走。",
+      "lv": "简单",
+      "chunks": ["Carry out", "all your trash"],
+      "skeleton": ["带走", "所有垃圾"]
+    },
+    {
+      "en": "Open fires are strictly forbidden here.",
+      "zh": "这里严禁明火。",
+      "lv": "简单",
+      "chunks": ["Open fires", "are strictly forbidden here"],
+      "skeleton": ["明火", "此处严禁"]
+    },
+    {
+      "en": "Guided tours start every hour.",
+      "zh": "导览每小时一场。",
+      "lv": "简单",
+      "chunks": ["Guided tours", "start every hour"],
+      "skeleton": ["导览", "每小时开始"]
+    },
+    {
+      "en": "The visitor center closes at five in winter.",
+      "zh": "冬季游客中心五点关门。",
+      "lv": "中等",
+      "chunks": ["The visitor center", "closes at five", "in winter"],
+      "skeleton": ["游客中心", "五点关门", "冬季"]
+    },
+    {
+      "en": "Please keep your dog on a leash at all times.",
+      "zh": "请全程给你的狗系上牵引绳。",
+      "lv": "中等",
+      "chunks": ["Please keep your dog", "on a leash", "at all times"],
+      "skeleton": ["请让你的狗", "系着绳", "全程"]
+    },
+    {
+      "en": "The main trail loops back to the parking lot.",
+      "zh": "主步道绕一圈回到停车场。",
+      "lv": "中等",
+      "chunks": ["The main trail", "loops back", "to the parking lot"],
+      "skeleton": ["主步道", "绕回", "停车场"]
+    },
+    {
+      "en": "You can rent binoculars at the front gate.",
+      "zh": "你可以在大门口租借望远镜。",
+      "lv": "中等",
+      "chunks": ["You can rent binoculars", "at the front gate"],
+      "skeleton": ["你可租望远镜", "在大门口"]
+    },
+    {
+      "en": "Please do not feed any of the wild animals.",
+      "zh": "请不要投喂任何野生动物。",
+      "lv": "中等",
+      "chunks": ["Please do not feed", "any of the wild animals"],
+      "skeleton": ["请勿投喂", "任何野生动物"]
+    },
+    {
+      "en": "Sudden storms can roll in over the mountains.",
+      "zh": "暴风雨可能从山那边突然袭来。",
+      "lv": "中等",
+      "chunks": ["Sudden storms", "can roll in", "over the mountains"],
+      "skeleton": ["暴风雨", "可能袭来", "越过山"]
+    },
+    {
+      "en": "Toss your matches into the metal fire bins.",
+      "zh": "把火柴扔进金属防火桶里。",
+      "lv": "中等",
+      "chunks": ["Toss your matches", "into the metal", "fire bins"],
+      "skeleton": ["扔火柴", "进金属", "防火桶"]
+    },
+    {
+      "en": "If you spot a deer on the path, please keep your distance and stay quiet.",
+      "zh": "如果你在小路上看到鹿，请保持距离并保持安静。",
+      "lv": "困难",
+      "chunks": ["If you spot a deer on the path", "please keep your distance", "and stay quiet"],
+      "skeleton": ["若你在小路上看到鹿", "请保持距离", "并保持安静"]
+    },
+    {
+      "en": "The wetland area, which floods each spring, is closed to all visitors until May.",
+      "zh": "每年春天泛滥的湿地区域，五月前对所有游客关闭。",
+      "lv": "困难",
+      "chunks": ["The wetland area", "which floods each spring", "is closed to all visitors", "until May"],
+      "skeleton": ["湿地区域", "每春泛滥", "对所有游客关闭", "直到五月"]
+    },
+    {
+      "en": "Hikers who wander off the trail can easily disturb the birds nesting in the reeds.",
+      "zh": "偏离步道的徒步者很容易惊扰在芦苇丛中筑巢的鸟。",
+      "lv": "困难",
+      "chunks": ["Hikers who wander off the trail", "can easily disturb", "the birds nesting in the reeds"],
+      "skeleton": ["偏离步道的徒步者", "很容易惊扰", "在芦苇中筑巢的鸟"]
+    },
+    {
+      "en": "Because the ground is dry, we ask that no one light a fire.",
+      "zh": "由于地面干燥，我们请求任何人都不要生火。",
+      "lv": "困难",
+      "chunks": ["Because the ground is dry", "we ask that no one", "light a fire"],
+      "skeleton": ["因地面干燥", "我们请求无人", "生火"]
+    },
+    {
+      "en": "When the north trail is icy, our guides will lead you along the river instead.",
+      "zh": "当北步道结冰时，向导会改带你沿河而行。",
+      "lv": "困难",
+      "chunks": ["When the north trail is icy", "our guides will lead you", "along the river instead"],
+      "skeleton": ["当北步道结冰", "向导会带你", "改沿河走"]
+    },
+    {
+      "en": "The green bins that sit along the path are meant only for recyclable bottles and cans.",
+      "zh": "沿路摆放的绿色垃圾桶只用于可回收的瓶子和易拉罐。",
+      "lv": "困难",
+      "chunks": ["The green bins that sit along the path", "are meant only", "for recyclable bottles and cans"],
+      "skeleton": ["沿路的绿色垃圾桶", "只用于", "可回收瓶子和罐子"]
+    },
+    {
+      "en": "If a bear approaches, back away slowly and do not turn to run.",
+      "zh": "如果熊靠近，请慢慢后退，不要转身逃跑。",
+      "lv": "困难",
+      "chunks": ["If a bear approaches", "back away slowly", "and do not turn to run"],
+      "skeleton": ["若熊靠近", "慢慢后退", "别转身逃"]
+    }
+  ]
+}

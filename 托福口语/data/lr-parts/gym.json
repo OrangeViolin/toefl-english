@@ -1,0 +1,155 @@
+{
+  "id": "gym",
+  "name": "🏋️ 健身房",
+  "en": "Gym",
+  "desc": "签到·器械·更衣室·团课·预约·安全·会员卡·私教·营业时间·擦拭",
+  "items": [
+    {
+      "en": "Please sign in at the desk.",
+      "zh": "请在前台签到。",
+      "lv": "简单",
+      "chunks": ["Please sign in", "at the desk"],
+      "skeleton": ["请签到", "在前台"]
+    },
+    {
+      "en": "Wipe down each machine after use.",
+      "zh": "用完后请擦拭每台器械。",
+      "lv": "简单",
+      "chunks": ["Wipe down", "each machine", "after use"],
+      "skeleton": ["擦拭", "每台器械", "用完后"]
+    },
+    {
+      "en": "Bring a towel and a bottle.",
+      "zh": "请带一条毛巾和一个水瓶。",
+      "lv": "简单",
+      "chunks": ["Bring a towel", "and a bottle"],
+      "skeleton": ["带毛巾", "和水瓶"]
+    },
+    {
+      "en": "The locker rooms are down the hall.",
+      "zh": "更衣室在走廊尽头。",
+      "lv": "简单",
+      "chunks": ["The locker rooms", "are down the hall"],
+      "skeleton": ["更衣室", "在走廊尽头"]
+    },
+    {
+      "en": "Free classes run every evening.",
+      "zh": "每天晚上都有免费团课。",
+      "lv": "简单",
+      "chunks": ["Free classes", "run every evening"],
+      "skeleton": ["免费团课", "每晚开设"]
+    },
+    {
+      "en": "Show your card to the staff.",
+      "zh": "请向工作人员出示会员卡。",
+      "lv": "简单",
+      "chunks": ["Show your card", "to the staff"],
+      "skeleton": ["出示会员卡", "给工作人员"]
+    },
+    {
+      "en": "The gym closes at ten.",
+      "zh": "健身房十点关门。",
+      "lv": "简单",
+      "chunks": ["The gym", "closes at ten"],
+      "skeleton": ["健身房", "十点关门"]
+    },
+    {
+      "en": "Please rack the weights neatly after every set.",
+      "zh": "每组练完请把杠铃片整齐归位。",
+      "lv": "中等",
+      "chunks": ["Please rack the weights", "neatly", "after every set"],
+      "skeleton": ["请归位杠铃片", "整齐地", "每组练完后"]
+    },
+    {
+      "en": "You can book a private trainer at the front desk.",
+      "zh": "你可以在前台预约私人教练。",
+      "lv": "中等",
+      "chunks": ["You can book", "a private trainer", "at the front desk"],
+      "skeleton": ["你可预约", "私人教练", "在前台"]
+    },
+    {
+      "en": "Group classes are posted on the board outside.",
+      "zh": "团课时间表贴在外面的公告板上。",
+      "lv": "中等",
+      "chunks": ["Group classes", "are posted", "on the board outside"],
+      "skeleton": ["团课", "被张贴", "在外面公告板"]
+    },
+    {
+      "en": "Please return the dumbbells to their proper rack.",
+      "zh": "请把哑铃放回正确的架子上。",
+      "lv": "中等",
+      "chunks": ["Please return", "the dumbbells", "to their proper rack"],
+      "skeleton": ["请放回", "哑铃", "到正确架子"]
+    },
+    {
+      "en": "Your membership card lets you in at any hour.",
+      "zh": "你的会员卡可以随时刷卡进入。",
+      "lv": "中等",
+      "chunks": ["Your membership card", "lets you in", "at any hour"],
+      "skeleton": ["你的会员卡", "可让你进入", "在任何时候"]
+    },
+    {
+      "en": "Lockers are free, but bring your own lock.",
+      "zh": "储物柜免费，但请自带锁。",
+      "lv": "中等",
+      "chunks": ["Lockers are free", "but bring", "your own lock"],
+      "skeleton": ["储物柜免费", "但请带", "你自己的锁"]
+    },
+    {
+      "en": "The pool reopens at six on weekday mornings.",
+      "zh": "泳池工作日早上六点重新开放。",
+      "lv": "中等",
+      "chunks": ["The pool reopens", "at six", "on weekday mornings"],
+      "skeleton": ["泳池重开", "六点", "工作日早晨"]
+    },
+    {
+      "en": "If you are new here, a trainer can show you how the equipment works.",
+      "zh": "如果你是新来的，教练可以教你器械怎么用。",
+      "lv": "困难",
+      "chunks": ["If you are new here", "a trainer can show you", "how the equipment works"],
+      "skeleton": ["如果你是新来的", "教练可教你", "器械怎么用"]
+    },
+    {
+      "en": "Members who reserve a court online will always get priority during our busy hours.",
+      "zh": "在线预约场地的会员在高峰时段始终享有优先权。",
+      "lv": "困难",
+      "chunks": ["Members who reserve a court online", "will always get priority", "during our busy hours"],
+      "skeleton": ["在线预约场地的会员", "将始终获优先权", "在我们高峰时段"]
+    },
+    {
+      "en": "When a machine breaks down, please tell a staff member at the desk right away.",
+      "zh": "当器械出故障时，请立刻到前台告诉工作人员。",
+      "lv": "困难",
+      "chunks": ["When a machine breaks down", "please tell a staff member at the desk", "right away"],
+      "skeleton": ["当器械故障", "请到前台告诉工作人员", "立刻"]
+    },
+    {
+      "en": "If you feel dizzy or short of breath, stop and sit down immediately.",
+      "zh": "如果你感到头晕或喘不上气，请立刻停下坐好。",
+      "lv": "困难",
+      "chunks": ["If you feel dizzy or short of breath", "stop and sit down", "immediately"],
+      "skeleton": ["如果你头晕或气短", "停下坐好", "立刻"]
+    },
+    {
+      "en": "Classes that fill up quickly usually require you to sign up a day early.",
+      "zh": "很快满员的团课通常需要你提前一天报名。",
+      "lv": "困难",
+      "chunks": ["Classes that fill up quickly", "usually require you", "to sign up a day early"],
+      "skeleton": ["很快满员的团课", "通常要求你", "提前一天报名"]
+    },
+    {
+      "en": "Because the treadmills are limited, please keep your workout under thirty minutes at peak times.",
+      "zh": "由于跑步机数量有限，高峰时段请把锻炼控制在三十分钟内。",
+      "lv": "困难",
+      "chunks": ["Because the treadmills are limited", "please keep your workout under thirty minutes", "at peak times"],
+      "skeleton": ["因跑步机有限", "请控制锻炼在三十分钟内", "高峰时段"]
+    },
+    {
+      "en": "If your card expires this month, you can renew it at the desk today.",
+      "zh": "如果你的会员卡本月到期，今天就可以在前台续费。",
+      "lv": "困难",
+      "chunks": ["If your card expires this month", "you can renew it", "at the desk today"],
+      "skeleton": ["如果卡本月到期", "你可续费", "今天在前台"]
+    }
+  ]
+}

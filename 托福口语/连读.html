@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发音规则 · 连读</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--accent2:#e0913c;--amber:#fdeccd;--core:#2f8f83;--ok:#4a9a5e;--bad:#c04a3a;--warn:#d8903a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:22px;margin:12px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 18px}
+  .keybox{background:linear-gradient(135deg,#fff8ec,#fdf0dd);border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:14px;padding:14px 18px;font-size:15px;margin-bottom:14px;line-height:1.75}
+  .keybox b{color:var(--accent)}
+  .bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;background:#fbf7ee;border:1px solid var(--line);border-radius:12px;padding:9px 14px;margin-bottom:16px;font-size:12.5px;color:#6b6154}
+  .lp{color:var(--bad);font-weight:800}
+  .lk{color:var(--core);font-weight:800}
+  .speedbar{display:flex;gap:6px;align-items:center}
+  .schip{border:1px solid var(--line);background:#fff;border-radius:16px;padding:4px 13px;font-size:12.5px;cursor:pointer;color:#6b6154;transition:.15s}
+  .schip:hover{border-color:var(--accent2)}
+  .schip.on{background:var(--core);color:#fff;border-color:var(--core);font-weight:700}
+  .rule-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin-bottom:18px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .rhead{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+  .rno{font-size:12px;font-weight:800;color:#fff;background:var(--accent);border-radius:10px;padding:2px 10px}
+  .rtag{font-size:12px;font-weight:700;color:var(--core);background:#e6f0ec;border-radius:10px;padding:2px 10px}
+  .rule-card h3{margin:2px 0 6px;font-size:18px}
+  .rule-card h3 .ren{font-size:13px;color:var(--muted);font-weight:600;margin-left:8px}
+  .rrule{font-size:14px;color:#4d463c;margin:0 0 4px;line-height:1.7}
+  .rrule b{color:var(--accent)}
+  .rmeta{font-size:12px;color:var(--muted);margin-bottom:10px}
+  .rlabel{font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.5px;margin:14px 0 8px;display:flex;justify-content:space-between;align-items:center}
+  .playall{font-size:12px;font-weight:700;color:var(--core);background:#e6f0ec;border:none;border-radius:14px;padding:4px 13px;cursor:pointer;font-family:inherit}
+  .playall:hover{background:#d8e8e1}
+  .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+  .pchip{background:#fff;border:1px solid var(--line);border-radius:11px;padding:8px 12px;cursor:pointer;transition:.15s}
+  .pchip:hover{border-color:var(--accent2);transform:translateY(-1px)}
+  .pchip.playing{background:var(--amber);border-color:var(--accent)}
+  .pchip .pen{font-family:Georgia,"Times New Roman",serif;font-size:15.5px;color:var(--ink)}
+  .pchip .pzh{font-size:11.5px;color:var(--muted);margin-top:1px}
+  .slist{display:flex;flex-direction:column;gap:6px}
+  .srow{display:flex;gap:10px;align-items:center;background:#faf7f0;border:1px solid var(--line);border-radius:11px;padding:8px 12px}
+  .splay{flex:0 0 auto;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#efe8d8;cursor:pointer;font-size:14px;transition:.15s}
+  .splay:hover{background:#e5dccb}
+  .srow.playing .splay{background:var(--amber);border-color:var(--accent)}
+  .srow .sen{font-family:Georgia,"Times New Roman",serif;font-size:16.5px;line-height:1.45}
+  .srow .szh{font-size:12px;color:var(--muted)}
+  .method{background:#fbf7ee;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:18px;font-size:13.5px;color:#5f574c;line-height:1.75}
+  .method b{color:var(--accent)}
+  .method .steps3{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:10px 0}
+  .step3{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:12.5px}
+  .step3 b{display:block;color:var(--core);margin-bottom:2px}
+  .trap{background:#fff8ec;border-left:4px solid var(--accent2);border-radius:0 10px 10px 0;padding:8px 13px;margin-top:10px;font-size:12.5px}
+  .selftest{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .selftest h3{margin:0 0 4px;font-size:17px}
+  .selftest .tip{font-size:12.5px;color:#6b6154;margin-bottom:12px;line-height:1.65}
+  .btn{border:none;border-radius:22px;padding:11px 22px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.rec{background:var(--accent);color:#fff}
+  .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
+  .live{min-height:38px;padding:9px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:13.5px;color:#6b6154;margin-top:12px}
+  .playback{display:none;margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+  .playback audio{width:100%;height:38px;margin-top:6px}
+  .playback .tt{font-size:12.5px;color:#5f574c;background:#f0f6f3;border:1px dashed #cfe3db;border-radius:10px;padding:8px 12px;margin-top:8px}
+  .hint{color:var(--muted);font-size:12.5px;margin-top:14px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./发音规则.html">← 发音规则总览</a><span>五大连读现象 · ① 连读</span></div>
+  <h1>🔗 连读</h1>
+  <div class="en">Linking / Liaison</div>
+  <div class="desc">英语是"粘"着说的：单词之间没有停顿，尾音直接滑进下一个词。掌握连读，你的口语会立刻从"蹦单词"变成"说句子"。</div>
+
+  <div class="keybox">
+    <b>一句话总结：</b>前一个词<b>以辅音结尾</b>、后一个词<b>以元音开头</b>时，把这个辅音直接"拼"到后面的元音上，像读一个词：an~apple → "a-napple"，not~at~all → "no-ta-tall"。
+  </div>
+
+  <div class="bar">
+    <span>标注：绿色 <span class="lk">~</span> = 连读点，两边的音拼在一起读。<b>点任意短语/短句听示范</b>。</span>
+    <span class="speedbar">示范语速：
+      <span class="schip on" data-r="0.9" onclick="setRate(this)">▶ 常速</span>
+      <span class="schip" data-r="0.62" onclick="setRate(this)">🐢 慢速</span>
+    </span>
+  </div>
+
+  <div id="rules"></div>
+
+  <div class="rule-card" id="extra"></div>
+
+  <div class="method">
+    <b>🎯 怎么练：</b>
+    <div class="steps3">
+      <div class="step3"><b>① 找接缝</b>扫一眼句子，标出所有"辅音结尾 + 元音开头"的接缝</div>
+      <div class="step3"><b>② 拼过去</b>把尾辅音想象成后一个词的开头：not~at~all → no-ta-tall</div>
+      <div class="step3"><b>③ 按意群读</b>一个意群一口气读完，中间不换气、不停顿</div>
+    </div>
+    口诀：<b>前辅后元，拼成一个词。</b>
+    <div class="trap">
+      <b>两个坑：</b>
+      ❌ 词词分明、每个词都停顿（中式朗读腔的根源）；
+      ❌ 为了连读把词读糊、吞掉尾音（连读是"滑过去"，尾音要听得见）。<b>先读准，再读连。</b>
+    </div>
+  </div>
+
+  <div class="selftest">
+    <h3>🎙 跟读自测（录音 → 回放对比）</h3>
+    <div class="tip">转写引擎<b>听不出</b>你有没有连读（它只认词），所以本页不打分：挑一组句子，先点 🔊 听示范 → 录音跟读 → 回放，听你的句子是不是"一串"而不是"一蹦一蹦"。</div>
+    <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始跟读</button>
+    <div class="live" id="live">录音前可以先点上面的短句听几遍示范。</div>
+    <div class="playback" id="playback">
+      <div style="font-size:13px;font-weight:700;color:var(--core)">🔁 回放我的录音：</div>
+      <audio id="audioEl" controls></audio>
+      <div class="tt" id="tt"></div>
+    </div>
+  </div>
+
+  <div class="hint">💡 连读是 5 条发音规则里出现频率最高的——几乎每句话都有。练熟后去「听力复述」听原句，先听出连读点，复述会顺很多。</div>
+</div>
+
+<script src="./speech-core.js"></script>
+<script>
+/* ================= 数据：连读 3 条规则 + h 击穿 =================
+ * 标注约定：~ 表示连读点（播放时替换为空格）；(x) 表示脱落的字母
+ */
+const RULES = [
+  {
+    no:'规则 1', tag:'最核心',
+    name:'辅音 + 元音 → 直接拼读', en:'Consonant + Vowel',
+    rule:'前词<b>辅音结尾</b>、后词<b>元音开头</b>，尾辅音直接拼到后面的元音上：an~apple 读作 "a-napple"，not~at~all 读作 "no-ta-tall"。',
+    meta:'判断的是"发音"不是"拼写"：an~hour（h 不发音）也要连读',
+    phrases:[
+      {t:'an~apple',zh:'一个苹果'},{t:'not~at~all',zh:'一点也不'},{t:'check~it~out',zh:'看看'},
+      {t:'turn~off',zh:'关掉'},{t:'come~in',zh:'进来'},{t:'look~at~it',zh:'看看它'},
+      {t:'a cup~of~tea',zh:'一杯茶'},{t:'take~it~easy',zh:'放轻松'}
+    ],
+    sentences:[
+      {t:'Come~on~in!',zh:'快进来吧！'},
+      {t:'Take~a look~at~it.',zh:'看一看。'},
+      {t:'Not~at~all.',zh:'别客气。/ 一点也不。'},
+      {t:'Hold~on a second.',zh:'稍等一下。'},
+      {t:"I'll pick~you~up~at eight.",zh:'我八点来接你。'},
+      {t:"It's an~hour~away.",zh:'有一小时的路程。（hour 的 h 不发音）'}
+    ]
+  },
+  {
+    no:'规则 2', tag:'加滑音',
+    name:'元音 + 元音 → 加 /j/ 或 /w/', en:'Vowel + Vowel',
+    rule:'前词以 <b>i 类元音</b>（/iː ɪ eɪ aɪ ɔɪ/）结尾 → 中间自然滑出一个 <b>/j/</b>（I~am → "I-y-am"）；以 <b>u 类元音</b>（/uː ʊ əʊ aʊ/）结尾 → 滑出 <b>/w/</b>（go~out → "go-w-out"）。不要硬加，是双唇/舌位顺势带出来的。',
+    meta:'i 类 + 元音 → /j/；u 类 + 元音 → /w/',
+    phrases:[
+      {t:'I~am',zh:'我是（I-y-am）'},{t:'she~is',zh:'她是（she-y-is）'},{t:'the~other',zh:'另一个（thee-y-other）'},
+      {t:'my~own',zh:'我自己的（my-y-own）'},{t:'go~out',zh:'出去（go-w-out）'},{t:'do~it',zh:'做吧（do-w-it）'},
+      {t:'how~are you',zh:'你好吗（how-w-are）'},{t:'too~often',zh:'太经常（too-w-often）'}
+    ],
+    sentences:[
+      {t:'I~agree.',zh:'我同意。（I-y-agree）'},
+      {t:'Go~on, please.',zh:'请继续。（go-w-on）'},
+      {t:'How~about you?',zh:'你呢？（how-w-about）'},
+      {t:'She~is a teacher.',zh:'她是一名老师。'},
+      {t:'Do~it~again.',zh:'再做一遍。'},
+      {t:'I really~enjoy~it.',zh:'我真的很喜欢。'}
+    ]
+  },
+  {
+    no:'规则 3', tag:'r 连读',
+    name:'r 结尾 + 元音 → r 卷出来接过去', en:'R-Linking',
+    rule:'前词以 <b>r / re 结尾</b>、后词元音开头时，r 要清楚地卷出来并接上下一个元音。美音本来每个 r 都发音，所以这条对美音很自然，只要别在中间停顿。',
+    meta:'for~example · there~is · here~it~is',
+    phrases:[
+      {t:'for~example',zh:'例如'},{t:'there~is',zh:'有'},{t:'here~it~is',zh:'在这儿'},
+      {t:'far~away',zh:'遥远'},{t:'more~or~less',zh:'差不多'},{t:'for~instance',zh:'比如'},
+      {t:'later~on',zh:'稍后'},{t:'better~off',zh:'境况更好'}
+    ],
+    sentences:[
+      {t:'For~example, …',zh:'举个例子……'},
+      {t:'There~is a problem.',zh:'有个问题。'},
+      {t:'Here~it~is.',zh:'在这儿呢。'},
+      {t:"It's far~away.",zh:'那很远。'}
+    ]
+  }
+];
+
+const EXTRA = {
+  no:'补充', tag:'h 击穿',
+  name:'h 被"击穿"：直接略过 h 连读', en:'H-Dropping',
+  rule:'he / him / her / his 等词在句中，开头的 <b>h 常常整个不发音</b>，前面词的尾音直接"击穿"h 拼到后面的元音上：ask~(h)im → "as-kim"。听力里极其常见。',
+  meta:'常见于 ask him · tell her · did he · help him',
+  phrases:[
+    {t:'ask~(h)im',zh:'问他 → "as-kim"'},{t:'tell~(h)er',zh:'告诉她 → "tel-ler"'},
+    {t:'did~(h)e',zh:'他…了吗 → "di-dee"'},{t:'help~(h)im',zh:'帮他 → "hel-pim"'}
+  ],
+  sentences:[
+    {t:'Ask~(h)im yourself.',zh:'你自己去问他。'},
+    {t:'Tell~(h)er the truth.',zh:'告诉她真相。'},
+    {t:'Did~(h)e call?',zh:'他打电话了吗？'},
+    {t:"I'll help~(h)im.",zh:'我会帮他。'}
+  ]
+};
+
+/* ================= 渲染 ================= */
+let rate = 0.9;
+
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+// ~ → 绿色连读符；(x) → 红色脱落字母；播放时去括号、~ 换空格
+function marked(s){ return esc(s).replace(/~/g,'<span class="lk">~</span>').replace(/\(([a-z])\)/g,'<span class="lp">($1)</span>'); }
+function plain(s){ return (s||'').replace(/[()]/g,'').replace(/~/g,' '); }
+
+function ruleHTML(r, idx){
+  let h = '<div class="rhead"><span class="rno">'+esc(r.no)+'</span><span class="rtag">'+esc(r.tag)+'</span></div>'
+        + '<h3>'+esc(r.name)+'<span class="ren">'+esc(r.en)+'</span></h3>'
+        + '<p class="rrule">'+r.rule+'</p>'
+        + '<div class="rmeta">'+esc(r.meta)+'</div>';
+  if(r.phrases && r.phrases.length){
+    h += '<div class="rlabel">📎 示范短语（点一下听发音）</div><div class="pgrid">'
+      + r.phrases.map((p,i)=>'<div class="pchip" id="p'+idx+'-'+i+'" onclick="playItem(\''+esc(plain(p.t)).replace(/'/g,"\\'")+'\',this)"><div class="pen">'+marked(p.t)+'</div><div class="pzh">'+esc(p.zh)+'</div></div>').join('')
+      + '</div>';
+  }
+  if(r.sentences && r.sentences.length){
+    h += '<div class="rlabel">🗣 示范短句<button class="playall" onclick="playAll('+idx+')">▶ 连播整组</button></div><div class="slist">'
+      + r.sentences.map((s,i)=>'<div class="srow" id="s'+idx+'-'+i+'"><button class="splay" onclick="playItem(\''+esc(plain(s.t)).replace(/'/g,"\\'")+'\',document.getElementById(\'s'+idx+'-'+i+'\'))">🔊</button><div><div class="sen">'+marked(s.t)+'</div><div class="szh">'+esc(s.zh)+'</div></div></div>').join('')
+      + '</div>';
+  }
+  return h;
+}
+
+const ALL = [...RULES, EXTRA];
+document.getElementById('rules').innerHTML = RULES.map((r,i)=>'<div class="rule-card">'+ruleHTML(r,i)+'</div>').join('');
+document.getElementById('extra').innerHTML = ruleHTML(EXTRA, RULES.length);
+
+/* ================= 播放 ================= */
+function setRate(el){
+  document.querySelectorAll('.schip').forEach(c=>c.classList.remove('on'));
+  el.classList.add('on');
+  rate = parseFloat(el.dataset.r);
+}
+
+async function playItem(text, el){
+  if(el) el.classList.add('playing');
+  await VocaSpeech.say(text, rate);
+  if(el) el.classList.remove('playing');
+}
+
+async function playAll(idx){
+  const group = ALL[idx];
+  for(let i=0;i<group.sentences.length;i++){
+    const el = document.getElementById('s'+idx+'-'+i);
+    if(el) el.classList.add('playing');
+    await VocaSpeech.say(plain(group.sentences[i].t), rate);
+    if(el) el.classList.remove('playing');
+  }
+}
+
+/* ================= 跟读自测（录音回放，不打分） ================= */
+let recording = false;
+
+async function toggleRec(){
+  const btn = document.getElementById('recBtn');
+  const live = document.getElementById('live');
+  if(recording){
+    recording = false;
+    btn.textContent = '🎙 开始跟读';
+    btn.classList.remove('recording');
+    live.innerHTML = '⏳ 正在处理录音…';
+    const result = await VocaSpeech.stop();
+    const pb = document.getElementById('playback');
+    pb.style.display = 'block';
+    document.getElementById('audioEl').src = result.url;
+    document.getElementById('tt').innerHTML = '📝 转写（仅供对照有没有漏词）：<b>'+esc(result.transcript||'(未识别)')+'</b>'
+      + (result.engine==='whisper' ? ' <span style="color:#2f8f83;font-size:11.5px">(whisper ✓)</span>' : ' <span style="color:#d8903a;font-size:11.5px">(浏览器降级)</span>');
+    live.innerHTML = '录好了（'+result.duration.toFixed(0)+' 秒）👇 点播放回放，对照示范听你的句子是不是"连成一串"。';
+  } else {
+    try{
+      await VocaSpeech.start(()=>{});
+      recording = true;
+      btn.textContent = '⏹ 停止';
+      btn.classList.add('recording');
+      live.innerHTML = '🎙 录音中…挑一组短句跟读（比如规则 1 的 6 句），读完点「停止」。';
+      document.getElementById('playback').style.display = 'none';
+    }catch(e){ alert(e.message); }
+  }
+}
+
+if(!VocaSpeech.supported){
+  document.getElementById('live').innerHTML = '<b style="color:#c04a3a">⚠️ 录音需要 Chrome/Edge，并通过 start.command 打开的 localhost 页面访问。</b>（点读示范不受影响）';
+}
+</script>
+</body>
+</html>

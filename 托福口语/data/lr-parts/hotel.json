@@ -1,0 +1,155 @@
+{
+  "id": "hotel",
+  "name": "🏨 酒店前台",
+  "en": "Hotel Front Desk",
+  "desc": "入住·早餐·房间·钥匙·退房·预订·停车·Wi-Fi·叫醒·行李",
+  "items": [
+    {
+      "en": "Welcome. May I have your name?",
+      "zh": "欢迎光临，请问您贵姓？",
+      "lv": "简单",
+      "chunks": ["Welcome.", "May I have", "your name?"],
+      "skeleton": ["欢迎", "请问", "您的名字"]
+    },
+    {
+      "en": "Check-in begins at three o'clock.",
+      "zh": "办理入住从三点开始。",
+      "lv": "简单",
+      "chunks": ["Check-in begins", "at three o'clock."],
+      "skeleton": ["入住开始", "三点整"]
+    },
+    {
+      "en": "Your room is on the fifth floor.",
+      "zh": "您的房间在五楼。",
+      "lv": "简单",
+      "chunks": ["Your room is", "on the fifth floor."],
+      "skeleton": ["您的房间", "在五楼"]
+    },
+    {
+      "en": "The elevator is behind you.",
+      "zh": "电梯就在您身后。",
+      "lv": "简单",
+      "chunks": ["The elevator is", "behind you."],
+      "skeleton": ["电梯", "在您身后"]
+    },
+    {
+      "en": "Here are your two room keys.",
+      "zh": "这是您的两张房卡。",
+      "lv": "简单",
+      "chunks": ["Here are", "your two room keys."],
+      "skeleton": ["这是", "您的两张房卡"]
+    },
+    {
+      "en": "Please sign here for me.",
+      "zh": "请在这里签个字。",
+      "lv": "简单",
+      "chunks": ["Please sign", "here for me."],
+      "skeleton": ["请签字", "在这里"]
+    },
+    {
+      "en": "Checkout is by eleven tomorrow.",
+      "zh": "退房时间是明天十一点前。",
+      "lv": "简单",
+      "chunks": ["Checkout is", "by eleven tomorrow."],
+      "skeleton": ["退房", "明天十一点前"]
+    },
+    {
+      "en": "Breakfast is served in the lobby until ten.",
+      "zh": "早餐在大堂供应，到十点为止。",
+      "lv": "中等",
+      "chunks": ["Breakfast is served", "in the lobby", "until ten."],
+      "skeleton": ["早餐供应", "在大堂", "到十点"]
+    },
+    {
+      "en": "Your room is on the fifth floor, facing the garden.",
+      "zh": "您的房间在五楼，面朝花园。",
+      "lv": "中等",
+      "chunks": ["Your room is", "on the fifth floor,", "facing the garden."],
+      "skeleton": ["您的房间", "在五楼", "面朝花园"]
+    },
+    {
+      "en": "The Wi-Fi password is printed on your key card.",
+      "zh": "Wi-Fi 密码印在您的房卡上。",
+      "lv": "中等",
+      "chunks": ["The Wi-Fi password", "is printed", "on your key card."],
+      "skeleton": ["Wi-Fi 密码", "印着", "在房卡上"]
+    },
+    {
+      "en": "We can store your luggage behind the front desk.",
+      "zh": "我们可以把行李存在前台后面。",
+      "lv": "中等",
+      "chunks": ["We can store", "your luggage", "behind the front desk."],
+      "skeleton": ["我们可存", "您的行李", "前台后面"]
+    },
+    {
+      "en": "May I have a card for the deposit?",
+      "zh": "可以给我一张卡用作押金吗？",
+      "lv": "中等",
+      "chunks": ["May I have a card", "for the deposit?"],
+      "skeleton": ["可给张卡吗", "用作押金"]
+    },
+    {
+      "en": "I've set a wake-up call for six thirty.",
+      "zh": "我已为您设好六点半的叫醒服务。",
+      "lv": "中等",
+      "chunks": ["I've set", "a wake-up call", "for six thirty."],
+      "skeleton": ["我已设", "叫醒服务", "六点半"]
+    },
+    {
+      "en": "Parking is available in the garage across the street.",
+      "zh": "停车可以停在街对面的车库。",
+      "lv": "中等",
+      "chunks": ["Parking is available", "in the garage", "across the street."],
+      "skeleton": ["有停车位", "在车库", "街对面"]
+    },
+    {
+      "en": "Please leave your key at the front desk whenever you go out for the day.",
+      "zh": "只要您外出一整天，请把钥匙留在前台。",
+      "lv": "困难",
+      "chunks": ["Please leave your key", "at the front desk", "whenever you go out for the day."],
+      "skeleton": ["请留钥匙", "在前台", "只要您外出一天"]
+    },
+    {
+      "en": "If you need a late checkout, please let us know the night before.",
+      "zh": "如果您需要延迟退房，请提前一晚告诉我们。",
+      "lv": "困难",
+      "chunks": ["If you need a late checkout,", "please let us know", "the night before."],
+      "skeleton": ["若需延退", "请告诉我们", "提前一晚"]
+    },
+    {
+      "en": "Guests who booked online will find their parking included in the room rate.",
+      "zh": "网上预订的客人会发现停车费已含在房价里。",
+      "lv": "困难",
+      "chunks": ["Guests who booked online", "will find their parking", "included in the room rate."],
+      "skeleton": ["网订的客人", "会发现停车", "已含在房价"]
+    },
+    {
+      "en": "If your room isn't ready yet, we can hold your bags until noon.",
+      "zh": "如果您的房间还没准备好，我们可以帮您存包到中午。",
+      "lv": "困难",
+      "chunks": ["If your room isn't ready yet,", "we can hold your bags", "until noon."],
+      "skeleton": ["若房未备好", "可帮存包", "到中午"]
+    },
+    {
+      "en": "When you check out in the morning, please return both room keys to the front desk.",
+      "zh": "早上退房时，请把两张房卡都交回前台。",
+      "lv": "困难",
+      "chunks": ["When you check out in the morning,", "please return both room keys", "to the front desk."],
+      "skeleton": ["早上退房时", "请交回两张房卡", "到前台"]
+    },
+    {
+      "en": "The suite that overlooks the harbor costs about forty dollars more for each night.",
+      "zh": "俯瞰港口的那间套房，每晚大约要多收四十美元。",
+      "lv": "困难",
+      "chunks": ["The suite that overlooks the harbor", "costs about forty dollars more", "for each night."],
+      "skeleton": ["俯瞰港口的套房", "多收约四十美元", "每一晚"]
+    },
+    {
+      "en": "Because the rooftop pool is being cleaned today, it will not reopen before Friday morning.",
+      "zh": "因为屋顶泳池今天在清洁，它周五上午前不会重新开放。",
+      "lv": "困难",
+      "chunks": ["Because the rooftop pool is being cleaned today,", "it will not reopen", "before Friday morning."],
+      "skeleton": ["因屋顶泳池今天清洁", "不会重开", "周五上午前"]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "registrar",
+  "name": "🏛 教务处",
+  "en": "Registrar's Office",
+  "desc": "取号·填表·门户登录·盖章·邮寄·选课·成绩单·退课·截止日期·官方件",
+  "items": [
+    {
+      "en": "Please take a number and wait.",
+      "zh": "请取号后等候。",
+      "lv": "简单",
+      "chunks": ["Please take a number", "and wait"],
+      "skeleton": ["请取号", "并等候"]
+    },
+    {
+      "en": "Fill out the transcript form.",
+      "zh": "请填写成绩单申请表。",
+      "lv": "简单",
+      "chunks": ["Fill out", "the transcript form"],
+      "skeleton": ["填写", "成绩单表"]
+    },
+    {
+      "en": "The office opens at nine.",
+      "zh": "教务处九点开门。",
+      "lv": "简单",
+      "chunks": ["The office", "opens at nine"],
+      "skeleton": ["教务处", "九点开门"]
+    },
+    {
+      "en": "Log into the portal now.",
+      "zh": "现在登录门户网站。",
+      "lv": "简单",
+      "chunks": ["Log into", "the portal now"],
+      "skeleton": ["登录", "门户网站"]
+    },
+    {
+      "en": "We will stamp your transcript.",
+      "zh": "我们会给成绩单盖章。",
+      "lv": "简单",
+      "chunks": ["We will stamp", "your transcript"],
+      "skeleton": ["我们盖章", "你的成绩单"]
+    },
+    {
+      "en": "Course changes close on Friday.",
+      "zh": "选课变更周五截止。",
+      "lv": "简单",
+      "chunks": ["Course changes", "close on Friday"],
+      "skeleton": ["选课变更", "周五截止"]
+    },
+    {
+      "en": "Sign the form in ink.",
+      "zh": "请用签字笔签名。",
+      "lv": "简单",
+      "chunks": ["Sign the form", "in ink"],
+      "skeleton": ["签署表格", "用签字笔"]
+    },
+    {
+      "en": "Log into the portal to check your records.",
+      "zh": "登录门户网站查看你的档案。",
+      "lv": "中等",
+      "chunks": ["Log into the portal", "to check your records"],
+      "skeleton": ["登录门户", "查看你的档案"]
+    },
+    {
+      "en": "We will stamp your transcript with our official seal.",
+      "zh": "我们会给成绩单加盖官方印章。",
+      "lv": "中等",
+      "chunks": ["We will stamp your transcript", "with our official seal"],
+      "skeleton": ["盖章成绩单", "用官方印章"]
+    },
+    {
+      "en": "Your transcript will be mailed to your chosen schools.",
+      "zh": "你的成绩单将寄往你选择的学校。",
+      "lv": "中等",
+      "chunks": ["Your transcript", "will be mailed", "to your chosen schools"],
+      "skeleton": ["你的成绩单", "将被寄出", "到你选的学校"]
+    },
+    {
+      "en": "Please take a number from the machine by the door.",
+      "zh": "请在门旁的机器上取号。",
+      "lv": "中等",
+      "chunks": ["Please take a number", "from the machine", "by the door"],
+      "skeleton": ["请取号", "从机器上", "在门旁"]
+    },
+    {
+      "en": "The deadline to add classes is next Monday.",
+      "zh": "加课的截止日期是下周一。",
+      "lv": "中等",
+      "chunks": ["The deadline to add classes", "is next Monday"],
+      "skeleton": ["加课截止日", "是下周一"]
+    },
+    {
+      "en": "Official copies cost five dollars for each page.",
+      "zh": "官方件每页收费五美元。",
+      "lv": "中等",
+      "chunks": ["Official copies", "cost five dollars", "for each page"],
+      "skeleton": ["官方件", "收费五美元", "每页"]
+    },
+    {
+      "en": "Please bring a photo ID to pick up documents.",
+      "zh": "领取文件请携带带照片的证件。",
+      "lv": "中等",
+      "chunks": ["Please bring a photo ID", "to pick up documents"],
+      "skeleton": ["请带证件", "来领取文件"]
+    },
+    {
+      "en": "If you need an unofficial copy, which you can keep for yourself, check this box.",
+      "zh": "如果你需要一份可自留的非官方副本，请勾选此框。",
+      "lv": "困难",
+      "chunks": ["If you need an unofficial copy", "which you can keep for yourself", "check this box"],
+      "skeleton": ["如需非官方副本", "可自己留存", "勾选此框"]
+    },
+    {
+      "en": "Please email the office right away to fix issues such as missing courses.",
+      "zh": "如遇缺课等问题，请立即邮件联系教务处处理。",
+      "lv": "困难",
+      "chunks": ["Please email the office right away", "to fix issues", "such as missing courses"],
+      "skeleton": ["请立即邮件教务处", "解决问题", "如缺课"]
+    },
+    {
+      "en": "If you drop a course after the deadline, a withdrawal mark stays on your record.",
+      "zh": "如果你在截止日期后退课，退课标记会留在你的档案上。",
+      "lv": "困难",
+      "chunks": ["If you drop a course after the deadline", "a withdrawal mark", "stays on your record"],
+      "skeleton": ["若截止后退课", "退课标记", "留在你档案上"]
+    },
+    {
+      "en": "Students who register late must pay a small extra fee before they can enroll.",
+      "zh": "逾期注册的学生须先缴一笔少量附加费才能选课。",
+      "lv": "困难",
+      "chunks": ["Students who register late", "must pay a small extra fee", "before they can enroll"],
+      "skeleton": ["逾期注册的学生", "须缴少量附加费", "才能选课"]
+    },
+    {
+      "en": "When your form is complete, drop it in the box that is near the window.",
+      "zh": "表格填好后，把它投进靠窗的那个箱子里。",
+      "lv": "困难",
+      "chunks": ["When your form is complete", "drop it in the box", "that is near the window"],
+      "skeleton": ["表格填好后", "投进箱子里", "靠窗那个"]
+    },
+    {
+      "en": "Because grades post at midnight, you should check the portal on Monday morning.",
+      "zh": "由于成绩午夜发布，你应在周一早上查看门户网站。",
+      "lv": "困难",
+      "chunks": ["Because grades post at midnight", "you should check the portal", "on Monday morning"],
+      "skeleton": ["因成绩午夜发布", "你应查门户", "在周一早上"]
+    },
+    {
+      "en": "Any request that arrives after Friday will not be processed until the following week.",
+      "zh": "周五之后收到的任何申请要到下一周才会处理。",
+      "lv": "困难",
+      "chunks": ["Any request that arrives after Friday", "will not be processed", "until the following week"],
+      "skeleton": ["周五后到的申请", "不会被处理", "直到下一周"]
+    }
+  ]
+}

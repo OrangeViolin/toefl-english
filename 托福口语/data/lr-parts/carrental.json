@@ -1,0 +1,155 @@
+{
+  "id": "carrental",
+  "name": "🚗 租车行",
+  "en": "Car Rental Agency",
+  "desc": "驾照核验·满油归还·保险费率·还车地点·加驾司机·延误费·车型升级·油费·导航租借·车况检查",
+  "items": [
+    {
+      "en": "Please show your driver's license.",
+      "zh": "请出示您的驾照。",
+      "lv": "简单",
+      "chunks": ["Please show", "your driver's license."],
+      "skeleton": ["请出示", "您的驾照。"]
+    },
+    {
+      "en": "The car must be returned full.",
+      "zh": "还车时油箱必须加满。",
+      "lv": "简单",
+      "chunks": ["The car", "must be returned full."],
+      "skeleton": ["这辆车", "必须加满油归还。"]
+    },
+    {
+      "en": "Insurance is included in the rate.",
+      "zh": "保险已含在租金里。",
+      "lv": "简单",
+      "chunks": ["Insurance is included", "in the rate."],
+      "skeleton": ["保险已包含", "在租金里。"]
+    },
+    {
+      "en": "Please check the car for damage.",
+      "zh": "请检查车辆是否有损伤。",
+      "lv": "简单",
+      "chunks": ["Please check the car", "for damage."],
+      "skeleton": ["请检查车辆", "有无损伤。"]
+    },
+    {
+      "en": "A navigation device costs extra.",
+      "zh": "导航设备需另收费。",
+      "lv": "简单",
+      "chunks": ["A navigation device", "costs extra."],
+      "skeleton": ["导航设备", "需额外收费。"]
+    },
+    {
+      "en": "We offer compact and full-size cars.",
+      "zh": "我们提供紧凑型和全尺寸车。",
+      "lv": "简单",
+      "chunks": ["We offer", "compact and full-size cars."],
+      "skeleton": ["我们提供", "紧凑型和全尺寸车。"]
+    },
+    {
+      "en": "Sign here to confirm the pickup.",
+      "zh": "请在此签字确认取车。",
+      "lv": "简单",
+      "chunks": ["Sign here", "to confirm the pickup."],
+      "skeleton": ["在此签字", "确认取车。"]
+    },
+    {
+      "en": "Please return the vehicle to this lot by noon.",
+      "zh": "请在中午前把车还到这个停车场。",
+      "lv": "中等",
+      "chunks": ["Please return the vehicle", "to this lot", "by noon."],
+      "skeleton": ["请归还车辆", "到这个停车场", "中午之前。"]
+    },
+    {
+      "en": "A second driver can be added for a small fee.",
+      "zh": "加一名司机只需付一笔小费用。",
+      "lv": "中等",
+      "chunks": ["A second driver", "can be added", "for a small fee."],
+      "skeleton": ["第二名司机", "可以添加", "只需一笔小费用。"]
+    },
+    {
+      "en": "Insurance is included in the daily rate automatically.",
+      "zh": "保险自动含在每日租金中。",
+      "lv": "中等",
+      "chunks": ["Insurance is included", "in the daily rate", "automatically."],
+      "skeleton": ["保险已包含", "在每日租金里", "自动含入。"]
+    },
+    {
+      "en": "The fuel tank should be full at return.",
+      "zh": "还车时油箱应当是满的。",
+      "lv": "中等",
+      "chunks": ["The fuel tank", "should be full", "at return."],
+      "skeleton": ["油箱", "应当是满的", "还车时。"]
+    },
+    {
+      "en": "You can pick up your car after ten o'clock.",
+      "zh": "十点以后您就能取车了。",
+      "lv": "中等",
+      "chunks": ["You can pick up your car", "after ten o'clock."],
+      "skeleton": ["您可以取车", "十点以后。"]
+    },
+    {
+      "en": "Please report any scratches to the front desk immediately.",
+      "zh": "有任何划痕请立即向前台报告。",
+      "lv": "中等",
+      "chunks": ["Please report any scratches", "to the front desk", "immediately."],
+      "skeleton": ["请报告任何划痕", "向前台", "立即。"]
+    },
+    {
+      "en": "The daily rate covers unlimited miles within the state.",
+      "zh": "每日租金包含州内不限里程。",
+      "lv": "中等",
+      "chunks": ["The daily rate covers", "unlimited miles", "within the state."],
+      "skeleton": ["每日租金涵盖", "不限里程", "州内。"]
+    },
+    {
+      "en": "If you return the car after noon, an extra day will be charged to your card.",
+      "zh": "如果您中午之后才还车，会向您的卡多收一天的费用。",
+      "lv": "困难",
+      "chunks": ["If you return the car after noon,", "an extra day", "will be charged to your card."],
+      "skeleton": ["如果您中午之后还车，", "额外一天", "将从您卡上收取。"]
+    },
+    {
+      "en": "Customers who booked a compact car may be upgraded when none are left.",
+      "zh": "预订了紧凑型车的顾客，若没车了可能会被升级。",
+      "lv": "困难",
+      "chunks": ["Customers who booked a compact car", "may be upgraded", "when none are left."],
+      "skeleton": ["预订了紧凑型车的顾客", "可能被升级", "当没车剩下时。"]
+    },
+    {
+      "en": "If the tank is not full, we will charge you for the fuel.",
+      "zh": "如果油箱没加满，我们会向您收取油费。",
+      "lv": "困难",
+      "chunks": ["If the tank is not full,", "we will charge you", "for the fuel."],
+      "skeleton": ["如果油箱没加满，", "我们会向您收费", "关于油费。"]
+    },
+    {
+      "en": "Drivers who are under twenty-five must pay a young-driver surcharge at the front desk.",
+      "zh": "二十五岁以下的司机必须在前台支付一笔年轻司机附加费。",
+      "lv": "困难",
+      "chunks": ["Drivers who are under twenty-five", "must pay a young-driver surcharge", "at the front desk."],
+      "skeleton": ["二十五岁以下的司机", "必须支付年轻司机附加费", "在前台。"]
+    },
+    {
+      "en": "Because the lot is closed at night, please use the after-hours drop box.",
+      "zh": "由于停车场夜间关闭，请使用非营业时间还车箱。",
+      "lv": "困难",
+      "chunks": ["Because the lot is closed at night,", "please use", "the after-hours drop box."],
+      "skeleton": ["因为停车场夜间关闭，", "请使用", "非营业时间还车箱。"]
+    },
+    {
+      "en": "When you pick up the car, please inspect the tires and the mirrors carefully.",
+      "zh": "取车时，请仔细检查轮胎和后视镜。",
+      "lv": "困难",
+      "chunks": ["When you pick up the car,", "please inspect the tires", "and the mirrors carefully."],
+      "skeleton": ["取车时，", "请检查轮胎", "和后视镜，要仔细。"]
+    },
+    {
+      "en": "The insurance plan that we offer will cover most repairs after an accident.",
+      "zh": "我们提供的保险方案能覆盖事故后的大部分维修。",
+      "lv": "困难",
+      "chunks": ["The insurance plan that we offer", "will cover most repairs", "after an accident."],
+      "skeleton": ["我们提供的保险方案", "将覆盖大部分维修", "事故之后。"]
+    }
+  ]
+}

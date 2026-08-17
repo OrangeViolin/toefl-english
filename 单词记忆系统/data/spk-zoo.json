@@ -1,0 +1,2452 @@
+{
+  "id": "spk-zoo",
+  "combo": "Zoo",
+  "sound": "",
+  "title": "动物园 · 听力复述场景高频词",
+  "subtitle": "从馆区导览到喂食讲解，把动物园对话里的每个词都听懂、能复述",
+  "intro": "这一页专为托福口语「听力复述」的动物园场景准备：一段导览员、饲养员或同伴之间的对话，通常围绕馆区分布、动物习性、喂食时间、参观须知、保育科普展开。这里把该场景的名词、动词、描述词、固定短语和通用高频词一次整理成 160+ 词条，每条都有词源、发音要点、真实搭配例句和近义辨析。动物名和身体部位是复述的信息骨架，习性动词和保育形容词是听力细节的关键，导览短语则整块记最省力。先把这些听懂、能复述，再练完整答题，动物园场景就不会卡壳。",
+  "subgroups": [
+    {
+      "key": "noun",
+      "tag": "名词",
+      "label": "🦁 核心名词 Nouns",
+      "desc": "馆区、物种、身体部位、工作人员——动物园里能指着说的实体名词，复述时的信息骨架。"
+    },
+    {
+      "key": "verb",
+      "tag": "动词",
+      "label": "⚡ 核心动词 Verbs",
+      "desc": "吼、爬、喂、繁殖、漫游——描述动物习性和参观动作的动词，动词准了复述才有骨架。"
+    },
+    {
+      "key": "desc",
+      "tag": "形容词·副词",
+      "label": "🎨 描述词 Descriptors",
+      "desc": "濒危的、夜行的、凶猛的、温顺的——决定语义精确度的修饰词，也是保育科普里的听力细节。"
+    },
+    {
+      "key": "phrase",
+      "tag": "短语",
+      "label": "🔗 固定短语 Phrases",
+      "desc": "feeding time、keep your distance、on your left——导览和喂食讲解里高频的短语和固定搭配，整块记最省力。"
+    },
+    {
+      "key": "general",
+      "tag": "通用高频",
+      "label": "🌐 通用高频 General",
+      "desc": "参观、门票、地图、指路——该场景对话反复出现的日常高频词，补足广度，让复述自然连贯。"
+    }
+  ],
+  "words": [
+    {
+      "word": "zoo",
+      "levels": ["基础"],
+      "ipa": "/zuː/",
+      "subgroup": "noun",
+      "meaning": "n. 动物园",
+      "etymology": "是 zoological garden（动物学花园）的口语缩写，1847 年伦敦动物园开放后 zoo 一词流行开来。词根 zoo- 来自希腊语 zōion「动物」，同源词 zoology（动物学）、zodiac（黄道十二宫，本义「动物圈」）。",
+      "phonetics": "单音节 /zuː/，元音是长音 oo；开头是浊音 /z/ 不是 /s/，别读成「苏」。",
+      "examples": [
+        {"en": "The zoo opens at nine and the last entry is at four.", "zh": "动物园九点开门，最晚四点入场。", "source": "造句"},
+        {"en": "petting zoo", "zh": "可以摸动物的迷你动物园（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "menagerie", "ipa": "/məˈnædʒəri/", "gloss": "（私人或巡回展出的）动物收藏", "note": "menagerie 是古旧词，指为展览而圈养的一群动物，zoo 是现代公共动物园"}
+      ],
+      "nuance": "zoo 是面向公众、有保育功能的现代动物园；menagerie 是偏历史/私人的动物收藏。"
+    },
+    {
+      "word": "zookeeper",
+      "levels": ["六级"],
+      "ipa": "/ˈzuːkiːpər/",
+      "subgroup": "noun",
+      "meaning": "n. 动物园饲养员",
+      "etymology": "zoo + keeper（看守者，keep「保管、照看」+ -er）。keeper 泛指看守人，加 zoo 特指照料动物园动物的人。同类构词：goalkeeper（守门员）、shopkeeper（店主）。",
+      "phonetics": "重音在首音节 /ˈzuː/，keeper 读 /kiːpər/，两个长音 uu、ee 都要读足。",
+      "examples": [
+        {"en": "A zookeeper explained how they feed the sea lions.", "zh": "一位饲养员讲解他们怎么喂海狮。", "source": "造句"},
+        {"en": "ask the zookeeper", "zh": "问饲养员（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "keeper", "ipa": "/ˈkiːpər/", "gloss": "饲养员，看守人", "note": "导览中常直接说 keeper，zookeeper 是完整说法，两者常互换"}
+      ],
+      "nuance": "zookeeper 专指动物园饲养员；keeper 是简称，语境清楚时更常用。"
+    },
+    {
+      "word": "keeper",
+      "levels": ["六级"],
+      "ipa": "/ˈkiːpər/",
+      "subgroup": "noun",
+      "meaning": "n. 饲养员，看守人",
+      "etymology": "keep「照看、保管」+ -er「人」。在动物园语境里是 zookeeper 的简称，也用于 lighthouse keeper（灯塔看守）等。",
+      "phonetics": "长音 /iː/ + 弱读 /ər/，重音在前；别读成短音「kipper」。",
+      "examples": [
+        {"en": "The keeper feeds the penguins twice a day.", "zh": "饲养员一天喂两次企鹅。", "source": "造句"},
+        {"en": "animal keeper", "zh": "动物饲养员（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "handler", "ipa": "/ˈhændlər/", "gloss": "（动物）管理员，训练员", "note": "handler 强调近距离操控动物（如猛兽、表演动物），keeper 侧重日常照料喂养"}
+      ],
+      "nuance": "keeper 负责日常喂养照料；handler 侧重近距离操控和训练动物。"
+    },
+    {
+      "word": "enclosure",
+      "levels": ["六级"],
+      "ipa": "/ɪnˈkloʊʒər/",
+      "subgroup": "noun",
+      "meaning": "n. 围栏，圈养区",
+      "etymology": "enclose「围起来」（en-「使…进入」+ close「关闭」）+ -ure「行为/结果」。指用围栏圈起来的一块场地，动物园里最中性的「动物住的地方」的说法。",
+      "phonetics": "重音在第二音节 /ˈkloʊ/，结尾 -sure 读 /ʒər/（同 measure 的中间音），不是 /ʃər/。",
+      "examples": [
+        {"en": "The tigers are in the enclosure on your left.", "zh": "老虎在你左边的圈养区里。", "source": "造句"},
+        {"en": "animal enclosure", "zh": "动物圈养区（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "cage", "ipa": "/keɪdʒ/", "gloss": "笼子", "note": "cage 是小型金属笼；enclosure 是较大的、常仿自然环境的圈养区"},
+        {"w": "pen", "ipa": "/pen/", "gloss": "（家畜、小动物的）圈，栏", "note": "pen 多指小型露天围栏，如羊圈"}
+      ],
+      "nuance": "enclosure 是较大的圈养区（可含植被、水池）；cage 是封闭金属笼，比 enclosure 更小更受限。"
+    },
+    {
+      "word": "exhibit",
+      "levels": ["托福"],
+      "ipa": "/ɪɡˈzɪbɪt/",
+      "subgroup": "noun",
+      "meaning": "n. 展区，展品；v. 展出，展现",
+      "etymology": "拉丁语 exhibere「拿出来给人看」（ex-「向外」+ habere「持有」）。名词指展出的对象或展区，动物园里 exhibit 常指某个主题展区（如 the reptile exhibit）。",
+      "phonetics": "重音在第二音节 /ˈzɪ/，ex- 读 /ɪɡz/ 而非 /ɪks/，注意 h 不发音。",
+      "examples": [
+        {"en": "The new panda exhibit just opened last month.", "zh": "新的熊猫展区上个月刚开放。", "source": "造句"},
+        {"en": "The zoo exhibits animals from every continent.", "zh": "这家动物园展出来自各大洲的动物。", "source": "造句"}
+      ],
+      "synonyms": [
+        {"w": "display", "ipa": "/dɪˈspleɪ/", "gloss": "展示，陈列", "note": "display 更口语、更泛；exhibit 更正式，也可指一整个展区"}
+      ],
+      "nuance": "exhibit 作名词可指整个主题展区；display 多指单件陈列或「展示」这个动作。"
+    },
+    {
+      "word": "habitat",
+      "levels": ["托福"],
+      "ipa": "/ˈhæbɪtæt/",
+      "subgroup": "noun",
+      "meaning": "n. 栖息地，（动植物的）自然环境",
+      "etymology": "拉丁语 habitat「它居住」（habitare「居住」的第三人称，字面就是标本卡上「（此物）栖息于…」的引导词）。同源：inhabit（居住于）、habitation（住所）。",
+      "phonetics": "重音在首音节 /ˈhæ/，三个音节都清晰，结尾 -tat 读 /tæt/。",
+      "examples": [
+        {"en": "The enclosure is designed to mimic the animal's natural habitat.", "zh": "这个圈养区被设计成模仿动物的自然栖息地。", "source": "造句"},
+        {"en": "natural habitat", "zh": "自然栖息地（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "environment", "ipa": "/ɪnˈvaɪrənmənt/", "gloss": "环境", "note": "environment 泛指一切环境；habitat 特指某物种赖以生存的自然生境"}
+      ],
+      "nuance": "habitat 是特定物种赖以生存的自然生境；environment 泛指周遭一切环境。"
+    },
+    {
+      "word": "species",
+      "levels": ["托福"],
+      "ipa": "/ˈspiːʃiːz/",
+      "subgroup": "noun",
+      "meaning": "n. 物种，种类（单复数同形）",
+      "etymology": "拉丁语 species「外观、种类」（specere「看」）。生物分类中「种」是基本单位。注意单复数同形：one species / many species。",
+      "phonetics": "重音在首音节 /ˈspiː/，美音常读 /ˈspiːʃiːz/ 或 /ˈspiːsiːz/，结尾有 /z/ 音。",
+      "examples": [
+        {"en": "This is one of the last remaining individuals of the species.", "zh": "这是该物种仅存的少数个体之一。", "source": "造句"},
+        {"en": "endangered species", "zh": "濒危物种（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "breed", "ipa": "/briːd/", "gloss": "品种", "note": "breed 是人工培育的品种（多用于家养动物）；species 是自然分类的物种"}
+      ],
+      "nuance": "species 是生物学的自然「种」；breed 是同一物种内人为培育的「品种」（如狗的品种）。"
+    },
+    {
+      "word": "mammal",
+      "levels": ["托福"],
+      "ipa": "/ˈmæml/",
+      "subgroup": "noun",
+      "meaning": "n. 哺乳动物",
+      "etymology": "拉丁语 mamma「乳房」+ -al。哺乳动物因用乳汁哺育幼崽得名。同源：mammary（乳房的）。",
+      "phonetics": "重音在首音节，两个 m，结尾 -mal 弱读近 /ml/，不要读出明显的 /æ/。",
+      "examples": [
+        {"en": "Whales are mammals, not fish.", "zh": "鲸是哺乳动物，不是鱼。", "source": "造句"},
+        {"en": "marine mammal", "zh": "海洋哺乳动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "mammal 是分类学大类（哺乳纲），与 reptile、bird、amphibian 并列。"
+    },
+    {
+      "word": "reptile",
+      "levels": ["托福"],
+      "ipa": "/ˈreptaɪl/",
+      "subgroup": "noun",
+      "meaning": "n. 爬行动物",
+      "etymology": "拉丁语 reptilis「爬行的」（repere「爬」）。指蛇、蜥蜴、龟、鳄等有鳞、冷血的动物。",
+      "phonetics": "重音在首音节 /ˈrep/，美音结尾 -tile 常读 /taɪl/（长 i），英音多读 /taɪl/ 或 /tɪl/。",
+      "examples": [
+        {"en": "The reptile house is kept warm for the snakes.", "zh": "爬行馆为蛇保持温暖。", "source": "造句"},
+        {"en": "reptile house", "zh": "爬行动物馆（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "amphibian", "ipa": "/æmˈfɪbiən/", "gloss": "两栖动物", "note": "amphibian（蛙、蝾螈）幼体水生、皮肤湿润；reptile 有鳞、可完全陆生"}
+      ],
+      "nuance": "reptile 有干燥鳞片、产硬壳蛋、可全程陆生；amphibian 皮肤湿润、需水繁殖。"
+    },
+    {
+      "word": "amphibian",
+      "levels": ["六级"],
+      "ipa": "/æmˈfɪbiən/",
+      "subgroup": "noun",
+      "meaning": "n. 两栖动物",
+      "etymology": "希腊语 amphi-「两者、双」+ bios「生命」，字面「过两种生活」——既能在水里又能在陆上。同源：amphitheater（圆形剧场，字面「两边都是看台」）。",
+      "phonetics": "重音在第二音节 /ˈfɪ/，amphi- 读 /æmˈfɪ/；结尾 -bian 读 /biən/。",
+      "examples": [
+        {"en": "Frogs and salamanders are amphibians.", "zh": "青蛙和蝾螈都是两栖动物。", "source": "造句"},
+        {"en": "amphibian species", "zh": "两栖动物物种（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "amphibian 一生水陆两栖、皮肤湿润；与只在陆上生活的 reptile 相对。"
+    },
+    {
+      "word": "primate",
+      "levels": ["托福"],
+      "ipa": "/ˈpraɪmeɪt/",
+      "subgroup": "noun",
+      "meaning": "n. 灵长类动物",
+      "etymology": "拉丁语 primas「首要的、第一等的」（primus「第一」），Linnaeus 用它命名「最高等」的动物类群。同源：primary、prime。",
+      "phonetics": "重音在首音节 /ˈpraɪ/，注意 i 读长音 /aɪ/，与 climate 押韵。",
+      "examples": [
+        {"en": "Monkeys, apes, and lemurs are all primates.", "zh": "猴、猿和狐猴都是灵长类。", "source": "造句"},
+        {"en": "primate species", "zh": "灵长类物种（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "primate 是灵长目（猴、猿、人类等）；ape 指无尾的类人猿（黑猩猩、大猩猩），是 primate 的子集。"
+    },
+    {
+      "word": "aquarium",
+      "levels": ["托福"],
+      "ipa": "/əˈkweriəm/",
+      "subgroup": "noun",
+      "meaning": "n. 水族馆；养鱼缸",
+      "etymology": "拉丁语 aqua「水」+ -arium「场所」（如 planetarium 天文馆）。字面「装水的地方」。同源：aquatic（水生的）、aqueduct（水渠）。",
+      "phonetics": "重音在第二音节 /ˈkwe/，开头 a- 弱读为 /ə/；-quar- 读 /kwe/ 不是 /kwɑ/。",
+      "examples": [
+        {"en": "The aquarium has a tunnel where sharks swim overhead.", "zh": "水族馆有条隧道，鲨鱼在头顶游过。", "source": "造句"},
+        {"en": "public aquarium", "zh": "公共水族馆（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "tank", "ipa": "/tæŋk/", "gloss": "水箱，鱼缸", "note": "tank 是具体那口装水的缸；aquarium 可指整座水族馆或观赏鱼缸"}
+      ],
+      "nuance": "aquarium 可指整座水族馆或观赏鱼缸；tank 只指那口盛水的箱体。"
+    },
+    {
+      "word": "tank",
+      "levels": ["基础"],
+      "ipa": "/tæŋk/",
+      "subgroup": "noun",
+      "meaning": "n. 水箱，缸（养水生动物）",
+      "etymology": "可能源自葡萄牙语 tanque「蓄水池」。在水族场景指盛水养鱼的玻璃缸或大水池。",
+      "phonetics": "短音 /æ/ + 鼻音 /ŋk/，单音节干脆。",
+      "examples": [
+        {"en": "The jellyfish are in a round tank lit with blue light.", "zh": "水母在一口用蓝光照明的圆缸里。", "source": "造句"},
+        {"en": "fish tank", "zh": "鱼缸（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "tank 指具体盛水容器；aquarium 更大、更正式，可指整座馆。"
+    },
+    {
+      "word": "predator",
+      "levels": ["托福"],
+      "ipa": "/ˈpredətər/",
+      "subgroup": "noun",
+      "meaning": "n. 捕食者，食肉动物",
+      "etymology": "拉丁语 praedari「掠夺」（praeda「猎物」）+ -tor「施动者」。字面「掠夺者」。同源：prey（猎物）、predatory（掠夺性的）。",
+      "phonetics": "重音在首音节 /ˈpre/，三音节，结尾 -tor 弱读 /tər/。",
+      "examples": [
+        {"en": "Lions are apex predators at the top of the food chain.", "zh": "狮子是食物链顶端的顶级捕食者。", "source": "造句"},
+        {"en": "natural predator", "zh": "天敌（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "carnivore", "ipa": "/ˈkɑːrnɪvɔːr/", "gloss": "食肉动物", "note": "carnivore 强调「吃肉」的饮食类别；predator 强调「捕猎其他动物」的行为角色"}
+      ],
+      "nuance": "predator 强调主动捕猎的角色（与 prey 相对）；carnivore 强调以肉为食的饮食分类。"
+    },
+    {
+      "word": "prey",
+      "levels": ["托福"],
+      "ipa": "/preɪ/",
+      "subgroup": "noun",
+      "meaning": "n. 猎物；v. 捕食",
+      "etymology": "拉丁语 praeda「战利品、掠获物」。与 predator 同源。作动词 prey on 意为「捕食、掠夺」。",
+      "phonetics": "单音节 /preɪ/，与 pray（祈祷）、play 押韵，同音于 pray。",
+      "examples": [
+        {"en": "Cheetahs chase their prey at incredible speed.", "zh": "猎豹以惊人的速度追捕猎物。", "source": "造句"},
+        {"en": "prey on smaller animals", "zh": "捕食较小的动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "quarry", "ipa": "/ˈkwɔːri/", "gloss": "猎物，追捕对象", "note": "quarry 偏正式书面；prey 是最通用的说法"}
+      ],
+      "nuance": "prey 是被捕食的一方（与 predator 相对）；作动词 prey on 表示「捕食」。"
+    },
+    {
+      "word": "carnivore",
+      "levels": ["六级"],
+      "ipa": "/ˈkɑːrnɪvɔːr/",
+      "subgroup": "noun",
+      "meaning": "n. 食肉动物",
+      "etymology": "拉丁语 carn-「肉」（同 carnal 肉体的、carnival 狂欢节）+ vorare「吞食」（同 devour 吞食、herbivore 食草动物）。",
+      "phonetics": "重音在首音节 /ˈkɑːr/，结尾 -vore 读 /vɔːr/。",
+      "examples": [
+        {"en": "Tigers are strict carnivores and eat only meat.", "zh": "老虎是严格的食肉动物，只吃肉。", "source": "造句"},
+        {"en": "large carnivore", "zh": "大型食肉动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "herbivore", "ipa": "/ˈhɜːrbɪvɔːr/", "gloss": "食草动物", "note": "反义：herbivore 吃植物，carnivore 吃肉，omnivore 杂食"}
+      ],
+      "nuance": "carnivore 吃肉；herbivore（如长颈鹿、大象）吃植物；omnivore（如熊）两者都吃。"
+    },
+    {
+      "word": "herbivore",
+      "levels": ["六级"],
+      "ipa": "/ˈhɜːrbɪvɔːr/",
+      "subgroup": "noun",
+      "meaning": "n. 食草动物",
+      "etymology": "拉丁语 herba「草、植物」（同 herb 香草）+ vorare「吞食」。与 carnivore、omnivore 同一构词家族。",
+      "phonetics": "重音在首音节 /ˈhɜːr/，美音 h 要发出来，结尾 -vore /vɔːr/。",
+      "examples": [
+        {"en": "Giraffes are herbivores that browse on tall trees.", "zh": "长颈鹿是食草动物，吃高处的树叶。", "source": "造句"},
+        {"en": "grazing herbivore", "zh": "食草的放牧动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "herbivore 只吃植物；与 carnivore（食肉）、omnivore（杂食）构成三分。"
+    },
+    {
+      "word": "wildlife",
+      "levels": ["六级"],
+      "ipa": "/ˈwaɪldlaɪf/",
+      "subgroup": "noun",
+      "meaning": "n. 野生动物（总称）",
+      "etymology": "wild「野生的」+ life「生命」的合成词。作不可数名词，泛指野生动植物，尤指动物。",
+      "phonetics": "两个 /aɪ/ 长音，重音在首音节 /ˈwaɪld/。",
+      "examples": [
+        {"en": "The zoo runs a wildlife conservation program.", "zh": "这家动物园开展野生动物保育项目。", "source": "造句"},
+        {"en": "wildlife conservation", "zh": "野生动物保护（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "wildlife 是不可数总称，泛指所有野生动物；说单个动物用 animal。"
+    },
+    {
+      "word": "conservation",
+      "levels": ["托福"],
+      "ipa": "/ˌkɑːnsərˈveɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n.（对自然资源、物种的）保护，保育",
+      "etymology": "conserve「保存」（con-「共同」+ servare「保持、守护」）+ -ation。字面「守护起来」。同源：preserve、observe、reserve。",
+      "phonetics": "主重音在第三音节 /ˈveɪ/，前面 con-ser- 弱读，共四音节。",
+      "examples": [
+        {"en": "Breeding programs are part of the zoo's conservation efforts.", "zh": "繁育项目是动物园保育工作的一部分。", "source": "造句"},
+        {"en": "conservation program", "zh": "保育项目（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "preservation", "ipa": "/ˌprezərˈveɪʃn/", "gloss": "保存，保护", "note": "preservation 侧重「维持原样不动」；conservation 侧重「合理管理和可持续利用」"}
+      ],
+      "nuance": "conservation 是主动管理、繁育、恢复以延续物种；preservation 更偏「保持现状、不加干预」。"
+    },
+    {
+      "word": "captivity",
+      "levels": ["托福"],
+      "ipa": "/kæpˈtɪvəti/",
+      "subgroup": "noun",
+      "meaning": "n. 圈养，囚禁（状态）",
+      "etymology": "拉丁语 captivus「被俘的」（capere「抓住」）+ -ity。同源：capture、captive、captivate（迷住）。in captivity = 被圈养的状态。",
+      "phonetics": "重音在第二音节 /ˈtɪ/，四音节，结尾 -ty 弱读 /ti/。",
+      "examples": [
+        {"en": "This species is very hard to breed in captivity.", "zh": "这个物种在圈养环境下很难繁殖。", "source": "造句"},
+        {"en": "born in captivity", "zh": "圈养出生（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "confinement", "ipa": "/kənˈfaɪnmənt/", "gloss": "关押，限制", "note": "confinement 泛指被限制在狭小空间；captivity 特指非野生、被人圈养的状态"}
+      ],
+      "nuance": "in captivity 特指「被人圈养」，与 in the wild（野外）相对。"
+    },
+    {
+      "word": "mane",
+      "levels": ["基础"],
+      "ipa": "/meɪn/",
+      "subgroup": "noun",
+      "meaning": "n.（狮、马的）鬃毛",
+      "etymology": "古英语 manu「颈毛」。指长在颈部的长毛，狮子的 mane 是雄性标志。与 main（主要的）同音但无关。",
+      "phonetics": "单音节 /meɪn/，与 main、rain 押韵。",
+      "examples": [
+        {"en": "The male lion's thick mane makes him look bigger.", "zh": "雄狮浓密的鬃毛让它看起来更大。", "source": "造句"},
+        {"en": "a lion's mane", "zh": "狮子的鬃毛（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "mane 特指狮、马颈部的长鬃毛；一般体毛用 fur。"
+    },
+    {
+      "word": "trunk",
+      "levels": ["基础"],
+      "ipa": "/trʌŋk/",
+      "subgroup": "noun",
+      "meaning": "n. 象鼻；树干；躯干",
+      "etymology": "拉丁语 truncus「树干、躯干」。象鼻因形似树干得名。同一词也指人体躯干、汽车后备箱。",
+      "phonetics": "单音节 /trʌŋk/，短音 /ʌ/ + 鼻音 /ŋk/。",
+      "examples": [
+        {"en": "The elephant uses its trunk to pick up food.", "zh": "大象用鼻子把食物卷起来。", "source": "造句"},
+        {"en": "an elephant's trunk", "zh": "大象的鼻子（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "trunk 特指象鼻（也指树干/躯干）；一般动物鼻子用 snout 或 nose。"
+    },
+    {
+      "word": "claw",
+      "levels": ["基础"],
+      "ipa": "/klɔː/",
+      "subgroup": "noun",
+      "meaning": "n. 爪，爪子",
+      "etymology": "古英语 clawu「爪」。指鸟兽尖锐弯曲的趾甲。作动词表示「用爪抓」。",
+      "phonetics": "单音节 /klɔː/，长音 /ɔː/，与 law、draw 押韵。",
+      "examples": [
+        {"en": "The bear has long, sharp claws for digging.", "zh": "熊有又长又尖的爪子用来挖掘。", "source": "造句"},
+        {"en": "sharp claws", "zh": "锋利的爪子（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "talon", "ipa": "/ˈtælən/", "gloss": "（猛禽的）利爪", "note": "talon 特指鹰、猫头鹰等猛禽的爪；claw 泛指各种动物的爪"}
+      ],
+      "nuance": "claw 泛指鸟兽爪；talon 专指猛禽（鹰、隼）的钩状利爪。"
+    },
+    {
+      "word": "paw",
+      "levels": ["基础"],
+      "ipa": "/pɔː/",
+      "subgroup": "noun",
+      "meaning": "n.（动物的）脚爪，爪子（带肉垫的）",
+      "etymology": "古法语 poue「爪、掌」。指猫、狗、熊等带肉垫的脚。与 claw 不同：paw 是整只脚，claw 是脚上的尖甲。",
+      "phonetics": "单音节 /pɔː/，长音 /ɔː/，与 claw、saw 押韵。",
+      "examples": [
+        {"en": "The cub reached out with its soft paw.", "zh": "幼崽伸出它柔软的脚爪。", "source": "造句"},
+        {"en": "front paws", "zh": "前爪（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "paw 是带肉垫的整只脚掌；claw 只是脚上的尖利趾甲。"
+    },
+    {
+      "word": "hoof",
+      "levels": ["托福"],
+      "ipa": "/huːf/",
+      "subgroup": "noun",
+      "meaning": "n.（牛、马、鹿等的）蹄",
+      "etymology": "古英语 hof「蹄」。复数常为 hooves。有蹄类动物（斑马、长颈鹿、羚羊）都用蹄行走。",
+      "phonetics": "单音节 /huːf/，长音 /uː/，复数 hooves /huːvz/ 或 hoofs。",
+      "examples": [
+        {"en": "Zebras have a single hoof on each foot.", "zh": "斑马每只脚上有一个蹄。", "source": "造句"},
+        {"en": "hoofed animals", "zh": "有蹄类动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "hoof 是有蹄类（马、鹿、牛）的角质蹄；带爪的动物用 paw/claw。"
+    },
+    {
+      "word": "fur",
+      "levels": ["基础"],
+      "ipa": "/fɜːr/",
+      "subgroup": "noun",
+      "meaning": "n.（动物的）毛，皮毛",
+      "etymology": "古法语 forre「护套、衬里」。指哺乳动物身上柔软浓密的体毛。与 hair 相比，fur 更浓密、覆盖全身。",
+      "phonetics": "单音节 /fɜːr/，卷舌元音，与 her、stir 押韵。",
+      "examples": [
+        {"en": "The snow leopard has thick fur to stay warm.", "zh": "雪豹有厚厚的皮毛来保暖。", "source": "造句"},
+        {"en": "soft fur", "zh": "柔软的毛（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "coat", "ipa": "/koʊt/", "gloss": "（动物的）皮毛，被毛", "note": "coat 指动物整身的毛「外套」（a shiny coat）；fur 强调毛本身的材质"}
+      ],
+      "nuance": "fur 是浓密体毛（覆盖全身）；coat 指整身被毛的外观；hair 单根或稀疏时用。"
+    },
+    {
+      "word": "feather",
+      "levels": ["基础"],
+      "ipa": "/ˈfeðər/",
+      "subgroup": "noun",
+      "meaning": "n. 羽毛",
+      "etymology": "古英语 feðer「羽毛」。鸟类特有的体表结构。同源：fledgling（羽翼渐丰的雏鸟）。",
+      "phonetics": "重音在首音节，中间是浊 th /ð/（同 this），结尾 -er 弱读 /ər/。",
+      "examples": [
+        {"en": "The peacock spreads its colorful tail feathers.", "zh": "孔雀展开它五彩的尾羽。", "source": "造句"},
+        {"en": "bright feathers", "zh": "鲜艳的羽毛（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "plumage", "ipa": "/ˈpluːmɪdʒ/", "gloss": "（鸟的）全身羽毛", "note": "plumage 是集合名词，指一只鸟整身的羽毛；feather 是单根"}
+      ],
+      "nuance": "feather 是单根羽毛；plumage 指一只鸟整身羽毛的总称。"
+    },
+    {
+      "word": "scale",
+      "levels": ["托福"],
+      "ipa": "/skeɪl/",
+      "subgroup": "noun",
+      "meaning": "n. 鳞；规模；比例",
+      "etymology": "古法语 escale「壳、鳞片」。指鱼、蛇、蜥蜴体表的鳞。同形异义还有「规模、天平、音阶」，动物园场景取「鳞」。",
+      "phonetics": "单音节 /skeɪl/，与 tail、pale 押韵。",
+      "examples": [
+        {"en": "A snake's body is covered in overlapping scales.", "zh": "蛇的身体覆盖着层叠的鳞片。", "source": "造句"},
+        {"en": "shiny scales", "zh": "闪亮的鳞片（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "scale（鳞）见于鱼、爬行动物；哺乳动物体表用 fur，鸟类用 feather。"
+    },
+    {
+      "word": "fin",
+      "levels": ["托福"],
+      "ipa": "/fɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 鳍",
+      "etymology": "古英语 finn「鳍」。鱼类和某些水生动物用来游泳保持平衡的器官。同源词很少，是个基础实义词。",
+      "phonetics": "单音节 /fɪn/，短音 /ɪ/，与 pin、win 押韵。",
+      "examples": [
+        {"en": "The shark's dorsal fin cut through the water.", "zh": "鲨鱼的背鳍划破水面。", "source": "造句"},
+        {"en": "dorsal fin", "zh": "背鳍（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "flipper", "ipa": "/ˈflɪpər/", "gloss": "（海豹、海龟的）鳍状肢", "note": "flipper 是海豹、企鹅、海龟那种宽扁的鳍状肢；fin 是鱼的薄鳍"}
+      ],
+      "nuance": "fin 是鱼的薄鳍；flipper 是海豹、海龟等的宽扁鳍状肢。"
+    },
+    {
+      "word": "gill",
+      "levels": ["六级"],
+      "ipa": "/ɡɪl/",
+      "subgroup": "noun",
+      "meaning": "n. 鳃（鱼的呼吸器官，常用复数 gills）",
+      "etymology": "中古英语 gile，源自北欧语。鱼通过鳃从水中提取氧气。",
+      "phonetics": "单音节 /ɡɪl/，硬 g，与 kill、fill 押韵。",
+      "examples": [
+        {"en": "Fish breathe by passing water over their gills.", "zh": "鱼通过让水流过鳃来呼吸。", "source": "造句"},
+        {"en": "breathe through gills", "zh": "用鳃呼吸（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "gill 是鱼的水中呼吸器官；陆生动物用 lung（肺）。"
+    },
+    {
+      "word": "beak",
+      "levels": ["托福"],
+      "ipa": "/biːk/",
+      "subgroup": "noun",
+      "meaning": "n. 鸟嘴，喙",
+      "etymology": "古法语 bec「鸟喙」。鸟类角质的嘴。beak 与 bill 常互换，bill 多指扁平的喙（如鸭嘴）。",
+      "phonetics": "单音节 /biːk/，长音 /iː/，与 peak、seek 押韵。",
+      "examples": [
+        {"en": "The toucan has a huge, brightly colored beak.", "zh": "巨嘴鸟有一张巨大、色彩鲜艳的喙。", "source": "造句"},
+        {"en": "sharp beak", "zh": "尖锐的喙（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "bill", "ipa": "/bɪl/", "gloss": "（尤指扁平的）鸟喙", "note": "bill 常用于鸭、鹅等扁平嘴的水鸟；beak 更泛，也可指尖钩的喙"}
+      ],
+      "nuance": "beak 泛指鸟喙（尤指尖钩的）；bill 多指鸭鹅那种扁平的喙。"
+    },
+    {
+      "word": "antler",
+      "levels": ["托福"],
+      "ipa": "/ˈæntlər/",
+      "subgroup": "noun",
+      "meaning": "n.（鹿的）角，鹿角",
+      "etymology": "古法语 antoillier。指鹿科动物头上分叉、每年脱落再生的骨质角。与牛羊的 horn（终生不脱落的角鞘）不同。",
+      "phonetics": "重音在首音节 /ˈænt/，结尾 -ler 弱读 /lər/。",
+      "examples": [
+        {"en": "Male deer grow new antlers every year.", "zh": "雄鹿每年长出新的鹿角。", "source": "造句"},
+        {"en": "a deer's antlers", "zh": "鹿角（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "horn", "ipa": "/hɔːrn/", "gloss": "（牛、羊等的）角", "note": "horn 是终生不脱、有角质外鞘的角（牛、羚羊）；antler 是鹿每年脱落再生的骨角"}
+      ],
+      "nuance": "antler 是鹿每年脱落再生的分叉骨角；horn（牛羊犀牛）终生不脱、结构不同。"
+    },
+    {
+      "word": "horn",
+      "levels": ["基础"],
+      "ipa": "/hɔːrn/",
+      "subgroup": "noun",
+      "meaning": "n.（动物的）角",
+      "etymology": "古英语 horn。指牛、羊、犀牛等头上不脱落的角。同源：unicorn（独角兽，uni-「一」+ corn「角」）。",
+      "phonetics": "单音节 /hɔːrn/，长音 /ɔː/ + 卷舌 r。",
+      "examples": [
+        {"en": "The rhino's horn is made of the same material as hair.", "zh": "犀牛的角和头发是同一种物质构成的。", "source": "造句"},
+        {"en": "curved horns", "zh": "弯曲的角（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "horn 终生不脱、多为角质（牛羊犀牛）；鹿角是每年再生的 antler。"
+    },
+    {
+      "word": "cub",
+      "levels": ["基础"],
+      "ipa": "/kʌb/",
+      "subgroup": "noun",
+      "meaning": "n.（狮、虎、熊等的）幼崽",
+      "etymology": "词源不明，16 世纪出现。特指猛兽的幼崽（lion cub、bear cub、tiger cub）。",
+      "phonetics": "单音节 /kʌb/，短音 /ʌ/，与 rub、tub 押韵。",
+      "examples": [
+        {"en": "The lion cubs were born just two weeks ago.", "zh": "这些狮子幼崽两周前才出生。", "source": "造句"},
+        {"en": "bear cub", "zh": "熊崽（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "calf", "ipa": "/kæf/", "gloss": "（大象、鲸、牛的）幼崽", "note": "calf 用于象、鲸、牛、长颈鹿的幼崽；cub 用于猛兽（狮虎熊）"}
+      ],
+      "nuance": "不同动物幼崽有专名：cub（狮虎熊）、calf（象鲸牛）、chick（雏鸟）、joey（袋鼠）。"
+    },
+    {
+      "word": "calf",
+      "levels": ["基础"],
+      "ipa": "/kæf/",
+      "subgroup": "noun",
+      "meaning": "n.（象、鲸、牛的）幼崽；小腿",
+      "etymology": "古英语 cealf「小牛」。后扩展到象、鲸、长颈鹿等大型动物的幼崽。复数 calves。",
+      "phonetics": "单音节 /kæf/，美音 l 不发音，与 half 押韵。",
+      "examples": [
+        {"en": "The elephant calf stayed close to its mother.", "zh": "小象紧紧跟着它的妈妈。", "source": "造句"},
+        {"en": "a baby calf", "zh": "小牛崽（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "calf 用于象、鲸、牛、长颈鹿的幼崽；猛兽幼崽用 cub。"
+    },
+    {
+      "word": "offspring",
+      "levels": ["托福"],
+      "ipa": "/ˈɔːfsprɪŋ/",
+      "subgroup": "noun",
+      "meaning": "n. 后代，幼崽（单复数同形）",
+      "etymology": "古英语 ofspring（of「从…出」+ spring「涌出、跃出」），字面「从亲代跃出的」。单复数同形。",
+      "phonetics": "重音在首音节 /ˈɔːf/，off + spring 两部分都清晰。",
+      "examples": [
+        {"en": "Pandas usually have one offspring at a time.", "zh": "熊猫通常一次只产一个后代。", "source": "造句"},
+        {"en": "produce offspring", "zh": "产下后代（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "young", "ipa": "/jʌŋ/", "gloss": "（动物的）幼崽（集合名词）", "note": "the young 指一群幼崽；offspring 更书面，强调「亲代所生的后代」"}
+      ],
+      "nuance": "offspring 是书面词，指亲代所生后代（单复数同形）；口语常说 baby 或 young。"
+    },
+    {
+      "word": "pouch",
+      "levels": ["六级"],
+      "ipa": "/paʊtʃ/",
+      "subgroup": "noun",
+      "meaning": "n.（袋鼠等有袋动物的）育儿袋；小袋",
+      "etymology": "古法语 pouche「口袋」（同 pocket）。有袋动物（袋鼠、考拉）用腹部育儿袋携带幼崽。",
+      "phonetics": "单音节 /paʊtʃ/，双元音 /aʊ/ + /tʃ/，与 couch 押韵。",
+      "examples": [
+        {"en": "A baby kangaroo lives in its mother's pouch.", "zh": "袋鼠宝宝住在妈妈的育儿袋里。", "source": "造句"},
+        {"en": "kangaroo pouch", "zh": "袋鼠育儿袋（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "pouch 特指有袋动物腹部的育儿袋；一般口袋用 pocket。"
+    },
+    {
+      "word": "aviary",
+      "levels": ["托福"],
+      "ipa": "/ˈeɪvieri/",
+      "subgroup": "noun",
+      "meaning": "n. 大型鸟舍，禽舍",
+      "etymology": "拉丁语 avis「鸟」+ -arium「场所」（同 aquarium 构词）。字面「鸟的地方」。同源：aviation（航空）、avian（鸟类的）。",
+      "phonetics": "重音在首音节 /ˈeɪ/，avi- 读 /eɪvi/，结尾 -ary 弱读 /eri/。",
+      "examples": [
+        {"en": "You can walk through the aviary while birds fly overhead.", "zh": "你可以穿过鸟舍，鸟在你头顶飞。", "source": "造句"},
+        {"en": "a walk-through aviary", "zh": "可穿行的鸟舍（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "aviary 是可容鸟飞的大型鸟舍；单只鸟的小笼子叫 birdcage。"
+    },
+    {
+      "word": "pond",
+      "levels": ["基础"],
+      "ipa": "/pɑːnd/",
+      "subgroup": "noun",
+      "meaning": "n. 池塘",
+      "etymology": "中古英语 ponde，与 pound（关牲畜的围栏）同源，本义「拦水的围池」。动物园里企鹅、鸭、河马等常有 pond。",
+      "phonetics": "单音节 /pɑːnd/，美音 o 读 /ɑː/，与 fond 押韵。",
+      "examples": [
+        {"en": "The flamingos wade in a shallow pond.", "zh": "火烈鸟在浅水塘里涉水。", "source": "造句"},
+        {"en": "a duck pond", "zh": "鸭池（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "pond 是小型静水塘；更大的天然水体用 lake（湖）。"
+    },
+    {
+      "word": "moat",
+      "levels": ["托福"],
+      "ipa": "/moʊt/",
+      "subgroup": "noun",
+      "meaning": "n.（隔开动物与游客的）壕沟，护沟",
+      "etymology": "古法语 mote「土堤、护城河」。城堡护城河的原意，被现代动物园借用：用一道壕沟代替栅栏隔离动物，视野更开阔。",
+      "phonetics": "单音节 /moʊt/，双元音 /oʊ/，与 boat、coat 押韵。",
+      "examples": [
+        {"en": "A wide moat keeps the lions away from visitors.", "zh": "一道宽壕沟把狮子和游客隔开。", "source": "造句"},
+        {"en": "a water moat", "zh": "水壕（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "barrier", "ipa": "/ˈbæriər/", "gloss": "屏障，隔离物", "note": "barrier 是任何隔离物（栏杆、玻璃）；moat 特指壕沟式隔离"}
+      ],
+      "nuance": "moat 是壕沟式隔离（无栏杆、视野好）；barrier 泛指一切隔离屏障。"
+    },
+    {
+      "word": "barrier",
+      "levels": ["托福"],
+      "ipa": "/ˈbæriər/",
+      "subgroup": "noun",
+      "meaning": "n. 屏障，隔离栏",
+      "etymology": "古法语 barriere「栅栏、关卡」（barre「横木」）。同源：bar、barricade。动物园里指隔开游客与动物的栏杆、玻璃或绳索。",
+      "phonetics": "重音在首音节 /ˈbæ/，结尾 -rier 读 /riər/。",
+      "examples": [
+        {"en": "Please stay behind the barrier at all times.", "zh": "请始终待在隔离栏后面。", "source": "造句"},
+        {"en": "safety barrier", "zh": "安全隔离栏（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "barrier 泛指各种隔离物（栏杆、玻璃、绳）；railing 特指金属栏杆。"
+    },
+    {
+      "word": "railing",
+      "levels": ["六级"],
+      "ipa": "/ˈreɪlɪŋ/",
+      "subgroup": "noun",
+      "meaning": "n. 栏杆，扶栏",
+      "etymology": "rail「横杆、栏杆」+ -ing。指一排金属或木质护栏，参观时手常扶在上面。",
+      "phonetics": "重音在首音节 /ˈreɪ/，结尾 -ling 弱读。",
+      "examples": [
+        {"en": "Don't lean over the railing to get a closer look.", "zh": "别为了看得更近而探身越过栏杆。", "source": "造句"},
+        {"en": "hold the railing", "zh": "扶好栏杆（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "railing 特指金属/木制护栏；barrier 是更泛的隔离屏障。"
+    },
+    {
+      "word": "viewing platform",
+      "levels": ["托福"],
+      "ipa": "/ˈvjuːɪŋ ˈplætfɔːrm/",
+      "subgroup": "noun",
+      "meaning": "n. 观景台，观赏平台",
+      "etymology": "viewing（view「看」的动名词）+ platform「平台」。指专供游客俯瞰或近观动物的抬高平台。",
+      "phonetics": "两词都重读首音节；platform 结尾 -form 读 /fɔːrm/。",
+      "examples": [
+        {"en": "From the viewing platform you can see the whole savanna exhibit.", "zh": "从观景台可以看到整个稀树草原展区。", "source": "造句"},
+        {"en": "a raised viewing platform", "zh": "抬高的观景台（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "viewing platform 是抬高的观赏平台；observation deck 更常用于高塔/建筑观景。"
+    },
+    {
+      "word": "stroller",
+      "levels": ["六级"],
+      "ipa": "/ˈstroʊlər/",
+      "subgroup": "noun",
+      "meaning": "n. 婴儿车（美式）",
+      "etymology": "stroll「散步、闲逛」+ -er。字面「散步用的（车）」，美式英语指推着婴儿散步的手推车；英式叫 pushchair 或 pram。",
+      "phonetics": "重音在首音节 /ˈstroʊ/，双元音 /oʊ/，结尾 -ler 弱读。",
+      "examples": [
+        {"en": "Strollers are available to rent near the main gate.", "zh": "正门附近可以租婴儿车。", "source": "造句"},
+        {"en": "rent a stroller", "zh": "租婴儿车（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "pushchair", "ipa": "/ˈpʊʃtʃer/", "gloss": "婴儿推车（英式）", "note": "pushchair / pram 是英式；stroller 是美式，托福常见美式"}
+      ],
+      "nuance": "stroller 是美式婴儿车（托福语境常见）；英式叫 pushchair 或 pram。"
+    },
+    {
+      "word": "souvenir",
+      "levels": ["托福"],
+      "ipa": "/ˌsuːvəˈnɪr/",
+      "subgroup": "noun",
+      "meaning": "n. 纪念品",
+      "etymology": "法语 souvenir「记得、回忆」（拉丁语 subvenire「浮上心头」）。字面「让人想起（这次游览）的东西」。",
+      "phonetics": "主重音在末音节 /ˈnɪr/，开头 sou- 读 /suː/，是常见重音易错词。",
+      "examples": [
+        {"en": "The gift shop sells plush pandas as souvenirs.", "zh": "礼品店卖熊猫毛绒玩具作纪念品。", "source": "造句"},
+        {"en": "buy a souvenir", "zh": "买纪念品（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "memento", "ipa": "/məˈmentoʊ/", "gloss": "纪念物", "note": "memento 更偏「留作纪念的私人物件」；souvenir 多指旅游景点买的纪念品"}
+      ],
+      "nuance": "souvenir 特指旅游地买来的纪念品；memento 泛指任何留作念想的物件。"
+    },
+    {
+      "word": "gift shop",
+      "levels": ["基础"],
+      "ipa": "/ˈɡɪft ʃɑːp/",
+      "subgroup": "noun",
+      "meaning": "n. 礼品店，纪念品商店",
+      "etymology": "gift「礼物」+ shop「店」。景点出口处常见，卖纪念品、玩偶、明信片。",
+      "phonetics": "两词都重读；gift 结尾 -ft 别吞音，shop 读 /ʃɑːp/。",
+      "examples": [
+        {"en": "The exit leads straight into the gift shop.", "zh": "出口直接通向礼品店。", "source": "造句"},
+        {"en": "at the gift shop", "zh": "在礼品店（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "gift shop 是景点卖纪念品的商店；souvenir shop 意思相同，可互换。"
+    },
+    {
+      "word": "food chain",
+      "levels": ["托福"],
+      "ipa": "/ˈfuːd tʃeɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 食物链",
+      "etymology": "food「食物」+ chain「链条」。生态学概念，描述能量从生产者到消费者层层传递的顺序。",
+      "phonetics": "food 长音 /uː/，chain 读 /tʃeɪn/，两词都重读。",
+      "examples": [
+        {"en": "The keeper explained where each animal sits in the food chain.", "zh": "饲养员讲解每种动物在食物链中的位置。", "source": "造句"},
+        {"en": "top of the food chain", "zh": "食物链顶端（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "food chain 是单线能量传递；food web（食物网）是多条链交织的复杂关系。"
+    },
+    {
+      "word": "ecosystem",
+      "levels": ["托福"],
+      "ipa": "/ˈiːkoʊsɪstəm/",
+      "subgroup": "noun",
+      "meaning": "n. 生态系统",
+      "etymology": "eco-（希腊语 oikos「家、居所」）+ system。字面「生物之家的系统」。同源：ecology（生态学）、economy（经济，本义「持家」）。",
+      "phonetics": "重音在首音节 /ˈiː/，eco- 读 /iːkoʊ/，共四音节。",
+      "examples": [
+        {"en": "The rainforest exhibit recreates a whole ecosystem.", "zh": "雨林展区再现了一整个生态系统。", "source": "造句"},
+        {"en": "a fragile ecosystem", "zh": "脆弱的生态系统（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "ecosystem 是生物与环境相互作用的整体系统；habitat 只是其中某物种的栖息地。"
+    },
+    {
+      "word": "savanna",
+      "levels": ["托福"],
+      "ipa": "/səˈvænə/",
+      "subgroup": "noun",
+      "meaning": "n.（热带）稀树草原",
+      "etymology": "西班牙语 sabana，源自加勒比原住民语。指点缀着少量树木的热带草原，狮、斑马、长颈鹿的典型生境。也拼作 savannah。",
+      "phonetics": "重音在第二音节 /ˈvæ/，首尾都是弱读的 /ə/。",
+      "examples": [
+        {"en": "The savanna exhibit houses giraffes and zebras together.", "zh": "稀树草原展区把长颈鹿和斑马养在一起。", "source": "造句"},
+        {"en": "African savanna", "zh": "非洲稀树草原（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "grassland", "ipa": "/ˈɡræslənd/", "gloss": "草原", "note": "grassland 是泛称的草原；savanna 特指有散生树木的热带草原"}
+      ],
+      "nuance": "savanna 是带散生树木的热带草原；纯草无树的用 grassland/prairie。"
+    },
+    {
+      "word": "jungle",
+      "levels": ["基础"],
+      "ipa": "/ˈdʒʌŋɡl/",
+      "subgroup": "noun",
+      "meaning": "n. 丛林，密林",
+      "etymology": "印地语 jangal「荒地、林地」。指茂密难行的热带森林。文学中也喻「弱肉强食之地」（the law of the jungle）。",
+      "phonetics": "重音在首音节 /ˈdʒʌŋ/，开头 j 是 /dʒ/，结尾 -gle 弱读 /ɡl/。",
+      "examples": [
+        {"en": "The primates live in a lush indoor jungle exhibit.", "zh": "灵长类住在一个郁郁葱葱的室内丛林展区。", "source": "造句"},
+        {"en": "a tropical jungle", "zh": "热带丛林（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "rainforest", "ipa": "/ˈreɪnfɔːrɪst/", "gloss": "雨林", "note": "rainforest 是科学用语（高降水量森林）；jungle 更口语，强调茂密难行"}
+      ],
+      "nuance": "jungle 口语，强调茂密难行；rainforest 是科学术语，强调高降水量。"
+    },
+    {
+      "word": "elephant",
+      "levels": ["基础"],
+      "ipa": "/ˈelɪfənt/",
+      "subgroup": "noun",
+      "meaning": "n. 大象",
+      "etymology": "希腊语 elephas「象、象牙」。陆地上最大的哺乳动物，以长鼻（trunk）和象牙（tusk）著称。",
+      "phonetics": "重音在首音节 /ˈe/，三音节，中间 -pha- 读 /fə/，结尾 -phant /fənt/。",
+      "examples": [
+        {"en": "The elephants get a bath from the keepers every morning.", "zh": "大象每天早上由饲养员冲澡。", "source": "造句"},
+        {"en": "an African elephant", "zh": "非洲象（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "elephant 的鼻子叫 trunk，象牙叫 tusk，都是复述象展区的高频词。"
+    },
+    {
+      "word": "giraffe",
+      "levels": ["基础"],
+      "ipa": "/dʒəˈræf/",
+      "subgroup": "noun",
+      "meaning": "n. 长颈鹿",
+      "etymology": "阿拉伯语 zarāfa。世界上最高的陆生动物，以长颈取食高树叶片。",
+      "phonetics": "重音在第二音节 /ˈræf/，开头 gi- 弱读为 /dʒə/，别把重音放前面。",
+      "examples": [
+        {"en": "You can feed the giraffes leaves from the raised deck.", "zh": "你可以从抬高的平台喂长颈鹿吃树叶。", "source": "造句"},
+        {"en": "feed the giraffes", "zh": "喂长颈鹿（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "giraffe 重音在后（gi-RAFFE），是常见发音易错词。"
+    },
+    {
+      "word": "penguin",
+      "levels": ["基础"],
+      "ipa": "/ˈpeŋɡwɪn/",
+      "subgroup": "noun",
+      "meaning": "n. 企鹅",
+      "etymology": "词源有争议，可能来自威尔士语 pen gwyn「白头」。不会飞的南半球水鸟，用 flipper（鳍状肢）游泳。",
+      "phonetics": "重音在首音节 /ˈpeŋ/，中间有 /ɡw/ 音（pen-gwin），别读成「pen-win」。",
+      "examples": [
+        {"en": "The penguins are fed fish at eleven every day.", "zh": "企鹅每天十一点喂鱼。", "source": "造句"},
+        {"en": "a colony of penguins", "zh": "一群企鹅（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "penguin 中间的 /ɡw/ 常被漏读；注意与 flipper（鳍状肢）、colony（群落）搭配。"
+    },
+    {
+      "word": "flamingo",
+      "levels": ["六级"],
+      "ipa": "/fləˈmɪŋɡoʊ/",
+      "subgroup": "noun",
+      "meaning": "n. 火烈鸟",
+      "etymology": "葡萄牙语/西班牙语 flamengo，与 flame「火焰」联想（因粉红羽色）。因摄食富含类胡萝卜素的藻虾而呈粉红色。",
+      "phonetics": "重音在第二音节 /ˈmɪŋ/，结尾 -go 读 /ɡoʊ/。",
+      "examples": [
+        {"en": "The flamingos stand on one leg in the shallow water.", "zh": "火烈鸟单腿站在浅水里。", "source": "造句"},
+        {"en": "pink flamingos", "zh": "粉红火烈鸟（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "flamingo 复数可加 -s 或 -es；以单腿站立和粉红羽色为记忆点。"
+    },
+    {
+      "word": "reptile house",
+      "levels": ["托福"],
+      "ipa": "/ˈreptaɪl haʊs/",
+      "subgroup": "noun",
+      "meaning": "n. 爬行动物馆",
+      "etymology": "reptile「爬行动物」+ house「馆、房」。动物园里 house 常指某类动物的室内馆，如 monkey house、bird house。",
+      "phonetics": "reptile 重读首音节，house 读 /haʊs/（名词是 /s/ 尾）。",
+      "examples": [
+        {"en": "The reptile house is kept warm and humid.", "zh": "爬行馆保持温暖潮湿。", "source": "造句"},
+        {"en": "visit the reptile house", "zh": "参观爬行馆（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "house 在动物园指某类动物的室内馆；对应室外圈养区叫 enclosure。"
+    },
+    {
+      "word": "petting zoo",
+      "levels": ["六级"],
+      "ipa": "/ˈpetɪŋ zuː/",
+      "subgroup": "noun",
+      "meaning": "n.（可抚摸小动物的）触摸动物园，宠物区",
+      "etymology": "pet「抚摸、宠物」的动名词 petting + zoo。指专供游客近距离抚摸、喂食温顺小动物（羊、兔）的区域。",
+      "phonetics": "petting 重读首音节，两个 t，zoo 长音 /uː/。",
+      "examples": [
+        {"en": "Kids can pet the goats in the petting zoo.", "zh": "孩子们可以在触摸动物园里摸山羊。", "source": "造句"},
+        {"en": "a petting zoo", "zh": "触摸动物园（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "petting zoo 是可抚摸温顺小动物的互动区；一般动物是禁止触摸的。"
+    },
+    {
+      "word": "safari park",
+      "levels": ["六级"],
+      "ipa": "/səˈfɑːri pɑːrk/",
+      "subgroup": "noun",
+      "meaning": "n. 野生动物园（可乘车穿行）",
+      "etymology": "safari 来自斯瓦希里语 safari「旅程」（阿拉伯语 safar）+ park。指游客乘车穿行、动物半散养的大型野生动物园。",
+      "phonetics": "safari 重音在第二音节 /ˈfɑː/，park 长音 /ɑː/ + r。",
+      "examples": [
+        {"en": "At the safari park you drive through and stay in your car.", "zh": "在野生动物园里你开车穿行，待在车里。", "source": "造句"},
+        {"en": "drive through the safari park", "zh": "驱车穿过野生动物园（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "safari park 动物半散养、游客乘车穿行；传统 zoo 动物在固定圈养区。"
+    },
+    {
+      "word": "naturalist",
+      "levels": ["托福"],
+      "ipa": "/ˈnætʃrəlɪst/",
+      "subgroup": "noun",
+      "meaning": "n. 博物学家，自然学者（讲解动植物的人）",
+      "etymology": "nature「自然」+ -al + -ist「专家」。研究并讲解野生动植物的人，动物园里常担任导览讲解。",
+      "phonetics": "重音在首音节 /ˈnæ/，四音节，中间 -tura- 弱读近 /tʃrə/。",
+      "examples": [
+        {"en": "A naturalist gave a talk about the wolves' behavior.", "zh": "一位博物学家做了关于狼群行为的讲解。", "source": "造句"},
+        {"en": "a wildlife naturalist", "zh": "野生动物学者（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "naturalist 是研究/讲解自然生物的人；与 naturist（裸体主义者）拼写相近但意思完全不同。"
+    },
+    {
+      "word": "veterinarian",
+      "levels": ["六级"],
+      "ipa": "/ˌvetərɪˈneriən/",
+      "subgroup": "noun",
+      "meaning": "n. 兽医（口语常缩为 vet）",
+      "etymology": "拉丁语 veterinae「役畜、驮兽」+ -arian。字面「照料牲畜的人」。口语缩写 vet。",
+      "phonetics": "主重音在第四音节 /ˈne/，是个长词，共五音节；口语直接说 vet /vet/。",
+      "examples": [
+        {"en": "The zoo's veterinarian checks the animals every week.", "zh": "动物园的兽医每周给动物做检查。", "source": "造句"},
+        {"en": "see the vet", "zh": "看兽医（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "vet", "ipa": "/vet/", "gloss": "兽医（口语缩写）", "note": "口语几乎都说 vet；veterinarian 是完整正式说法"}
+      ],
+      "nuance": "veterinarian 是正式全称，日常口语几乎都用 vet。"
+    },
+    {
+      "word": "colony",
+      "levels": ["托福"],
+      "ipa": "/ˈkɑːləni/",
+      "subgroup": "noun",
+      "meaning": "n.（动物的）群体，聚居群",
+      "etymology": "拉丁语 colonia「殖民地、耕地」（colere「耕种、居住」）。生物学中指同种动物聚居的群体，如 a penguin colony。",
+      "phonetics": "重音在首音节 /ˈkɑː/，三音节，结尾 -ny 弱读 /ni/。",
+      "examples": [
+        {"en": "The zoo houses a large colony of penguins.", "zh": "动物园养着一大群企鹅。", "source": "造句"},
+        {"en": "a breeding colony", "zh": "繁殖群落（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "flock", "ipa": "/flɑːk/", "gloss": "（鸟、羊的）群", "note": "flock 用于鸟、羊；colony 用于企鹅、蝙蝠、蚁等聚居群"}
+      ],
+      "nuance": "群体量词按动物分：colony（企鹅/蝙蝠）、flock（鸟/羊）、herd（牛/象）、school/pod（鱼/鲸）。"
+    },
+    {
+      "word": "herd",
+      "levels": ["托福"],
+      "ipa": "/hɜːrd/",
+      "subgroup": "noun",
+      "meaning": "n.（大型草食动物的）群；v. 放牧，把…赶到一起",
+      "etymology": "古英语 heord「兽群」。用于牛、象、鹿、斑马等大型食草动物聚群。与同音的 heard（听见）无关。",
+      "phonetics": "单音节 /hɜːrd/，卷舌元音，与 heard、bird 押韵。",
+      "examples": [
+        {"en": "A herd of zebras grazes on the far side of the exhibit.", "zh": "一群斑马在展区远端吃草。", "source": "造句"},
+        {"en": "a herd of elephants", "zh": "一群象（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "flock", "ipa": "/flɑːk/", "gloss": "（鸟、羊的）群", "note": "herd 用于大型有蹄食草动物（牛象鹿）；flock 用于鸟和羊"}
+      ],
+      "nuance": "herd 专指大型食草有蹄动物成群（牛、象、鹿）；鸟羊成群用 flock。"
+    },
+    {
+      "word": "flock",
+      "levels": ["托福"],
+      "ipa": "/flɑːk/",
+      "subgroup": "noun",
+      "meaning": "n.（鸟、羊的）群；v. 群集，蜂拥",
+      "etymology": "古英语 flocc「一群人」。后专用于鸟和羊成群。作动词 flock to 表示「蜂拥前往」。",
+      "phonetics": "单音节 /flɑːk/，美音 o 读 /ɑː/，与 block、rock 押韵。",
+      "examples": [
+        {"en": "A flock of parrots flew across the aviary.", "zh": "一群鹦鹉飞过鸟舍。", "source": "造句"},
+        {"en": "a flock of birds", "zh": "一群鸟（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "flock 用于鸟和羊；大型食草兽用 herd，鱼用 school，狮用 pride。"
+    },
+    {
+      "word": "food",
+      "levels": ["基础"],
+      "ipa": "/fuːd/",
+      "subgroup": "noun",
+      "meaning": "n. 食物",
+      "etymology": "古英语 fōda「食物」。喂食场景的基础词，动物的 food 常按种类分 meat、fish、leaves 等。",
+      "phonetics": "单音节 /fuːd/，长音 /uː/，结尾浊音 /d/。",
+      "examples": [
+        {"en": "Please don't give the animals your own food.", "zh": "请不要把你自己的食物喂给动物。", "source": "造句"},
+        {"en": "animal food", "zh": "动物饲料（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "feed", "ipa": "/fiːd/", "gloss": "（动物的）饲料", "note": "作名词 feed 特指喂动物的饲料；food 泛指一切食物"}
+      ],
+      "nuance": "food 泛指食物；feed 作名词特指喂动物的饲料（如 animal feed）。"
+    },
+    {
+      "word": "map",
+      "levels": ["基础"],
+      "ipa": "/mæp/",
+      "subgroup": "noun",
+      "meaning": "n. 地图，导览图",
+      "etymology": "拉丁语 mappa「布、餐巾」（早期地图画在布上）。动物园入口常发 a zoo map 标注各馆区位置。",
+      "phonetics": "单音节 /mæp/，短音 /æ/，与 cap、tap 押韵。",
+      "examples": [
+        {"en": "Grab a map at the entrance to find the exhibits.", "zh": "在入口拿张导览图来找各展区。", "source": "造句"},
+        {"en": "a zoo map", "zh": "动物园导览图（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "map 是导览图；写「按地图找路」用 follow the map。"
+    },
+    {
+      "word": "ticket",
+      "levels": ["基础"],
+      "ipa": "/ˈtɪkɪt/",
+      "subgroup": "noun",
+      "meaning": "n. 门票，票",
+      "etymology": "古法语 estiquet「贴的标签」。入园凭证。相关：ticket booth（售票亭）、admission ticket（入场票）。",
+      "phonetics": "重音在首音节 /ˈtɪ/，两个短音 /ɪ/，结尾 -et 弱读。",
+      "examples": [
+        {"en": "You can buy tickets online to skip the line.", "zh": "你可以网上买票以免排队。", "source": "造句"},
+        {"en": "admission ticket", "zh": "入场票（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "ticket 是入园门票；入场费/门票价格用 admission。"
+    },
+    {
+      "word": "admission",
+      "levels": ["托福"],
+      "ipa": "/ədˈmɪʃn/",
+      "subgroup": "noun",
+      "meaning": "n. 入场，入场费；准入",
+      "etymology": "拉丁语 admittere「放进来」（ad-「向」+ mittere「送、放」）。同源：admit、mission、permit。指获准进入或入场费用。",
+      "phonetics": "重音在第二音节 /ˈmɪ/，开头 ad- 弱读 /əd/，结尾 -ssion /ʃn/。",
+      "examples": [
+        {"en": "Admission is free for children under three.", "zh": "三岁以下儿童免费入场。", "source": "造句"},
+        {"en": "admission fee", "zh": "入场费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "entry", "ipa": "/ˈentri/", "gloss": "进入，入场", "note": "entry 侧重「进入」这个动作/权利；admission 常含「入场费」义"}
+      ],
+      "nuance": "admission 常指入场（及费用）；ticket 是入场凭证；entry 侧重进入的动作或权利。"
+    },
+    {
+      "word": "entrance",
+      "levels": ["基础"],
+      "ipa": "/ˈentrəns/",
+      "subgroup": "noun",
+      "meaning": "n. 入口，大门",
+      "etymology": "enter「进入」（拉丁语 intrare）+ -ance。指进入的门口。反义 exit（出口）。",
+      "phonetics": "重音在首音节 /ˈen/，结尾 -trance 弱读 /trəns/。",
+      "examples": [
+        {"en": "We'll meet at the main entrance at noon.", "zh": "我们中午在正门碰头。", "source": "造句"},
+        {"en": "main entrance", "zh": "正门（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "entrance 是入口这个地点；entry 更抽象（进入的行为/权利）。"
+    },
+    {
+      "word": "exit",
+      "levels": ["基础"],
+      "ipa": "/ˈeɡzɪt/",
+      "subgroup": "noun",
+      "meaning": "n. 出口；v. 离开",
+      "etymology": "拉丁语 exire「出去」（ex-「向外」+ ire「走」）的第三人称。同源：exodus、transit。",
+      "phonetics": "重音在首音节，可读 /ˈeɡzɪt/ 或 /ˈeksɪt/，两读都可。",
+      "examples": [
+        {"en": "The exit is right past the gift shop.", "zh": "出口就在礼品店过去一点。", "source": "造句"},
+        {"en": "the nearest exit", "zh": "最近的出口（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "exit 是出口/离开；反义是 entrance/enter。"
+    },
+    {
+      "word": "signpost",
+      "levels": ["六级"],
+      "ipa": "/ˈsaɪnpoʊst/",
+      "subgroup": "noun",
+      "meaning": "n. 路标，指示牌",
+      "etymology": "sign「标志」+ post「柱子」。立在路口指示方向的牌子。动物园里用来指各馆区方向。",
+      "phonetics": "重音在首音节 /ˈsaɪn/，sign 的 g 不发音，post 读 /poʊst/。",
+      "examples": [
+        {"en": "Follow the signposts to the aquarium.", "zh": "按照路标走去水族馆。", "source": "造句"},
+        {"en": "follow the signposts", "zh": "跟着路标走（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "sign", "ipa": "/saɪn/", "gloss": "标志牌", "note": "sign 泛指任何标志牌；signpost 特指指方向的路标柱"}
+      ],
+      "nuance": "signpost 特指指方向的路标；sign 泛指各种标志牌（含警示牌、说明牌）。"
+    },
+    {
+      "word": "feed",
+      "levels": ["基础"],
+      "ipa": "/fiːd/",
+      "subgroup": "verb",
+      "meaning": "v. 喂，喂养；进食",
+      "etymology": "古英语 fēdan「给食物」，与 food 同源。动物园高频动词，feed on 表示「以…为食」。过去式 fed。",
+      "phonetics": "单音节 /fiːd/，长音 /iː/，过去式 fed 短音 /e/。",
+      "examples": [
+        {"en": "You can watch the keepers feed the seals at noon.", "zh": "中午你可以看饲养员喂海豹。", "source": "造句"},
+        {"en": "feed on insects", "zh": "以昆虫为食（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "feed sb/sth 是「喂某物」；feed on sth 是「（动物）以某物为食」。"
+    },
+    {
+      "word": "roar",
+      "levels": ["六级"],
+      "ipa": "/rɔːr/",
+      "subgroup": "verb",
+      "meaning": "v.（狮虎等）吼叫；n. 吼声",
+      "etymology": "古英语 rārian「吼叫」，拟声词。狮、虎等大型猫科动物的低沉巨吼。也指引擎、人群的轰鸣。",
+      "phonetics": "单音节 /rɔːr/，长音 /ɔː/ + 卷舌 r，与 door、pour 押韵。",
+      "examples": [
+        {"en": "You can hear the lion roar from across the park.", "zh": "隔着整个园区都能听到狮子吼。", "source": "造句"},
+        {"en": "the lion roars", "zh": "狮子吼叫（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "growl", "ipa": "/ɡraʊl/", "gloss": "（低沉地）咆哮，嗥", "note": "growl 是低沉的威胁性喉音；roar 是响亮的大吼"}
+      ],
+      "nuance": "roar 是响亮大吼（狮虎）；growl 是低沉的威胁性喉音（更含蓄的警告）。"
+    },
+    {
+      "word": "growl",
+      "levels": ["六级"],
+      "ipa": "/ɡraʊl/",
+      "subgroup": "verb",
+      "meaning": "v.（动物）低声咆哮，嗥",
+      "etymology": "拟声词，模仿低沉喉音。表示动物受威胁时发出的低吼警告，比 roar 更压抑。",
+      "phonetics": "单音节 /ɡraʊl/，双元音 /aʊ/，与 owl、howl 押韵。",
+      "examples": [
+        {"en": "The dog growled when the stranger came close.", "zh": "陌生人靠近时狗低声咆哮。", "source": "造句"},
+        {"en": "growl at", "zh": "对…低吼（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "growl 是低沉的警告性喉音；roar 是响亮的大吼；howl 是拉长的嗥叫（狼）。"
+    },
+    {
+      "word": "howl",
+      "levels": ["六级"],
+      "ipa": "/haʊl/",
+      "subgroup": "verb",
+      "meaning": "v.（狼、狗）嗥叫，长嚎",
+      "etymology": "中古英语 houlen，拟声。指狼、狗拉长的哀嚎声。也指风声呼啸。",
+      "phonetics": "单音节 /haʊl/，双元音 /aʊ/，与 owl、growl 押韵。",
+      "examples": [
+        {"en": "The wolves howl to communicate across the pack.", "zh": "狼群通过嗥叫在群内交流。", "source": "造句"},
+        {"en": "wolves howl", "zh": "狼嗥叫（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "howl 是拉长的嗥叫（狼）；roar（狮）响亮，growl 低沉警告。"
+    },
+    {
+      "word": "hiss",
+      "levels": ["六级"],
+      "ipa": "/hɪs/",
+      "subgroup": "verb",
+      "meaning": "v.（蛇、鹅）发出嘶嘶声",
+      "etymology": "拟声词，模仿 /s/ 的持续音。蛇、鹅、猫受威胁时发出的嘶声。",
+      "phonetics": "单音节 /hɪs/，短音 /ɪ/ + 长 /s/，本身就像嘶声。",
+      "examples": [
+        {"en": "The snake hissed and coiled when disturbed.", "zh": "蛇被打扰时嘶嘶叫并盘起身子。", "source": "造句"},
+        {"en": "a snake hisses", "zh": "蛇嘶嘶叫（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "hiss 是嘶嘶警告声（蛇、猫、鹅）；不同动物叫声动词各异，复述时要选对。"
+    },
+    {
+      "word": "roam",
+      "levels": ["托福"],
+      "ipa": "/roʊm/",
+      "subgroup": "verb",
+      "meaning": "v. 漫游，（自由地）游荡",
+      "etymology": "中古英语 romen，词源不确定。指没有固定路线地自由走动，动物园强调动物在大展区里 roam freely。",
+      "phonetics": "单音节 /roʊm/，双元音 /oʊ/，与 home、foam 押韵。",
+      "examples": [
+        {"en": "The deer are free to roam across the open exhibit.", "zh": "鹿可以在开放展区里自由游荡。", "source": "造句"},
+        {"en": "roam freely", "zh": "自由漫游（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "wander", "ipa": "/ˈwɑːndər/", "gloss": "漫步，闲逛", "note": "wander 更随意、可指人；roam 强调在较大范围内自由走动"}
+      ],
+      "nuance": "roam 强调在广阔范围内自由游荡（动物）；wander 更随意，人和动物都用。"
+    },
+    {
+      "word": "wander",
+      "levels": ["六级"],
+      "ipa": "/ˈwɑːndər/",
+      "subgroup": "verb",
+      "meaning": "v. 漫步，闲逛，走失",
+      "etymology": "古英语 wandrian「四处走动」，与 wind（蜿蜒）同源。指无目的地走动，也指「走神、走失」。",
+      "phonetics": "重音在首音节 /ˈwɑːn/，注意 a 读 /ɑː/（不是 /æ/），与 wonder 音近易混。",
+      "examples": [
+        {"en": "Feel free to wander around and see the animals at your own pace.", "zh": "可以随意四处逛，按自己的节奏看动物。", "source": "造句"},
+        {"en": "wander around", "zh": "四处闲逛（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "wander（漫步）与 wonder（想知道）音近拼近，别混：wander /ɑː/，wonder /ʌ/。"
+    },
+    {
+      "word": "breed",
+      "levels": ["托福"],
+      "ipa": "/briːd/",
+      "subgroup": "verb",
+      "meaning": "v. 繁殖，饲养；n. 品种",
+      "etymology": "古英语 brēdan「孵、养育」，与 brood（一窝雏、孵）同源。动物园保育核心动词，breed in captivity（圈养繁殖）。过去式 bred。",
+      "phonetics": "单音节 /briːd/，长音 /iː/，过去式 bred /bred/ 短音。",
+      "examples": [
+        {"en": "The zoo successfully bred pandas last year.", "zh": "动物园去年成功繁殖了熊猫。", "source": "造句"},
+        {"en": "breeding program", "zh": "繁育项目（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "reproduce", "ipa": "/ˌriːprəˈduːs/", "gloss": "繁殖，生育", "note": "reproduce 是中性生物学词；breed 可指人为「饲养繁殖」，也指动物自行交配繁殖"}
+      ],
+      "nuance": "breed 强调（人为管理下的）饲养繁殖；reproduce 是中性的生物学「繁殖」。"
+    },
+    {
+      "word": "hatch",
+      "levels": ["托福"],
+      "ipa": "/hætʃ/",
+      "subgroup": "verb",
+      "meaning": "v. 孵化，（蛋）孵出",
+      "etymology": "中古英语 hacchen「孵化」。指卵孵出幼体。引申义「策划（阴谋）」（hatch a plan）。",
+      "phonetics": "单音节 /hætʃ/，短音 /æ/ + /tʃ/，与 catch、match 押韵。",
+      "examples": [
+        {"en": "The eggs are expected to hatch within two weeks.", "zh": "这些蛋预计两周内孵化。", "source": "造句"},
+        {"en": "eggs hatch", "zh": "蛋孵化（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "hatch 是卵孵出幼体（鸟、爬行、鱼）；哺乳动物的「产崽」用 give birth。"
+    },
+    {
+      "word": "observe",
+      "levels": ["托福"],
+      "ipa": "/əbˈzɜːrv/",
+      "subgroup": "verb",
+      "meaning": "v. 观察，观测；遵守",
+      "etymology": "拉丁语 observare「看守、注意」（ob-「朝向」+ servare「保持、留意」）。同源：conserve、reserve、preserve。",
+      "phonetics": "重音在第二音节 /ˈzɜːrv/，ob- 弱读为 /əb/，中间是浊音 /z/。",
+      "examples": [
+        {"en": "Visitors can observe the chimps through a glass wall.", "zh": "游客可以隔着玻璃墙观察黑猩猩。", "source": "造句"},
+        {"en": "observe behavior", "zh": "观察行为（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "watch", "ipa": "/wɑːtʃ/", "gloss": "观看，注视", "note": "watch 更口语；observe 更正式，含「仔细研究、留意细节」之意"}
+      ],
+      "nuance": "observe 是带研究目的的仔细观察；watch 是普通的观看。"
+    },
+    {
+      "word": "graze",
+      "levels": ["托福"],
+      "ipa": "/ɡreɪz/",
+      "subgroup": "verb",
+      "meaning": "v.（牲畜）吃草，放牧",
+      "etymology": "古英语 grasian，与 grass「草」同源。指食草动物低头吃地面的草。与 browse（吃高处枝叶）相对。",
+      "phonetics": "单音节 /ɡreɪz/，长元音 /eɪ/ + 浊音 /z/，与 gaze、raise 押韵。",
+      "examples": [
+        {"en": "The zebras graze quietly in the morning sun.", "zh": "斑马在晨光中安静地吃草。", "source": "造句"},
+        {"en": "graze on grass", "zh": "吃草（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "browse", "ipa": "/braʊz/", "gloss": "（动物）吃嫩枝叶", "note": "browse 是吃高处的枝叶（长颈鹿）；graze 是低头吃地面的草（斑马、羊）"}
+      ],
+      "nuance": "graze 是低头吃地面草（斑马、羊）；browse 是吃高处枝叶（长颈鹿、鹿）。"
+    },
+    {
+      "word": "crawl",
+      "levels": ["托福"],
+      "ipa": "/krɔːl/",
+      "subgroup": "verb",
+      "meaning": "v. 爬行，缓慢爬动",
+      "etymology": "北欧语 krafla「用爪抓着爬」。指贴地缓慢移动，爬行动物、婴儿的典型动作。",
+      "phonetics": "单音节 /krɔːl/，长音 /ɔː/ + /l/，与 ball、call 押韵。",
+      "examples": [
+        {"en": "A lizard crawled slowly across the warm rock.", "zh": "一只蜥蜴慢慢爬过温热的岩石。", "source": "造句"},
+        {"en": "crawl along the ground", "zh": "沿地面爬行（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "slither", "ipa": "/ˈslɪðər/", "gloss": "（蛇）滑行，蜿蜒爬行", "note": "slither 特指蛇无腿的蜿蜒滑行；crawl 是有腿动物贴地爬"}
+      ],
+      "nuance": "crawl 是有腿贴地缓爬；slither 特指蛇的无腿蜿蜒滑行。"
+    },
+    {
+      "word": "slither",
+      "levels": ["托福"],
+      "ipa": "/ˈslɪðər/",
+      "subgroup": "verb",
+      "meaning": "v.（蛇等）蜿蜒滑行",
+      "etymology": "古英语 slidrian，与 slide（滑）同源。特指蛇身贴地扭动前进的方式。",
+      "phonetics": "重音在首音节 /ˈslɪ/，中间是浊 th /ð/（同 this），结尾 -er 弱读。",
+      "examples": [
+        {"en": "The python slithered silently into the water.", "zh": "蟒蛇无声地滑进水里。", "source": "造句"},
+        {"en": "slither away", "zh": "蜿蜒游走（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "slither 专形容蛇的无腿蜿蜒滑行；有腿动物爬行用 crawl。"
+    },
+    {
+      "word": "swing",
+      "levels": ["六级"],
+      "ipa": "/swɪŋ/",
+      "subgroup": "verb",
+      "meaning": "v.（猿猴）攀荡，摆动",
+      "etymology": "古英语 swingan「摆动、鞭打」。猴、猿在树枝间来回攀荡（swing from branch to branch）。过去式 swung。",
+      "phonetics": "单音节 /swɪŋ/，短音 /ɪ/ + 鼻音 /ŋ/，与 ring、king 押韵。",
+      "examples": [
+        {"en": "The monkeys swing from branch to branch.", "zh": "猴子在树枝间来回攀荡。", "source": "造句"},
+        {"en": "swing from branch to branch", "zh": "在枝间攀荡（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "swing（攀荡）是猿猴用手臂在枝间摆荡的招牌动作；一般攀爬用 climb。"
+    },
+    {
+      "word": "climb",
+      "levels": ["基础"],
+      "ipa": "/klaɪm/",
+      "subgroup": "verb",
+      "meaning": "v. 攀爬，爬上",
+      "etymology": "古英语 climban。字母 b 不发音。指手脚并用向上爬，猴、熊、山羊都善攀爬。",
+      "phonetics": "单音节 /klaɪm/，b 不发音，与 time、lime 押韵。",
+      "examples": [
+        {"en": "The goats climb the rocky slope with ease.", "zh": "山羊轻松地爬上岩坡。", "source": "造句"},
+        {"en": "climb a tree", "zh": "爬树（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "scale", "ipa": "/skeɪl/", "gloss": "攀登，攀越", "note": "scale 更正式，指攀越陡峭高处；climb 是通用词"}
+      ],
+      "nuance": "climb 是通用的攀爬；结尾 b 不发音是易错点。"
+    },
+    {
+      "word": "hibernate",
+      "levels": ["托福"],
+      "ipa": "/ˈhaɪbərneɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 冬眠",
+      "etymology": "拉丁语 hibernare「过冬」（hibernus「冬天的」）。熊、刺猬等动物在冬季进入长期休眠以节省能量。名词 hibernation。",
+      "phonetics": "重音在首音节 /ˈhaɪ/，三音节，结尾 -nate 读 /neɪt/。",
+      "examples": [
+        {"en": "Bears hibernate through the cold winter months.", "zh": "熊在寒冷的冬季冬眠。", "source": "造句"},
+        {"en": "hibernate in winter", "zh": "冬季冬眠（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "hibernate 是冬季长期休眠（熊、刺猬）；夏季的类似休眠叫 estivate（夏眠）。"
+    },
+    {
+      "word": "migrate",
+      "levels": ["托福"],
+      "ipa": "/ˈmaɪɡreɪt/",
+      "subgroup": "verb",
+      "meaning": "v. 迁徙，迁移",
+      "etymology": "拉丁语 migrare「迁移」。指动物随季节长距离移居（候鸟、角马）。同源：immigrate、emigrate、migration。",
+      "phonetics": "美音重音在首音节 /ˈmaɪ/，结尾 -grate 读 /ɡreɪt/。",
+      "examples": [
+        {"en": "Many birds migrate south before winter.", "zh": "许多鸟在冬天前向南迁徙。", "source": "造句"},
+        {"en": "migrate south", "zh": "向南迁徙（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "migrate 是随季节规律往返的迁徙；一次性永久移居也可用，名词 migration。"
+    },
+    {
+      "word": "prowl",
+      "levels": ["托福"],
+      "ipa": "/praʊl/",
+      "subgroup": "verb",
+      "meaning": "v.（猛兽）潜行觅食，游荡",
+      "etymology": "中古英语 prollen，词源不明。指捕食者悄悄四处走动寻找猎物，常带隐秘、伺机的意味。",
+      "phonetics": "单音节 /praʊl/，双元音 /aʊ/，与 owl、growl 押韵。",
+      "examples": [
+        {"en": "The tiger prowls its enclosure at dusk.", "zh": "老虎在黄昏时于圈养区内潜行。", "source": "造句"},
+        {"en": "prowl for prey", "zh": "潜行觅食（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "prowl 强调捕食者隐秘、伺机地游荡觅食；单纯自由走动用 roam。"
+    },
+    {
+      "word": "pounce",
+      "levels": ["托福"],
+      "ipa": "/paʊns/",
+      "subgroup": "verb",
+      "meaning": "v.（突然）扑向，猛扑",
+      "etymology": "中古英语 pounce「爪、猛抓」。指捕食者突然跃起扑向猎物。pounce on 为固定搭配。",
+      "phonetics": "单音节 /paʊns/，双元音 /aʊ/ + /ns/，与 bounce 押韵。",
+      "examples": [
+        {"en": "The cat crouched, then pounced on the toy.", "zh": "猫蹲伏着，然后猛扑向玩具。", "source": "造句"},
+        {"en": "pounce on prey", "zh": "猛扑猎物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "pounce（on）是伏击后的突然猛扑；持续追赶用 chase。"
+    },
+    {
+      "word": "chase",
+      "levels": ["基础"],
+      "ipa": "/tʃeɪs/",
+      "subgroup": "verb",
+      "meaning": "v. 追逐，追捕",
+      "etymology": "古法语 chacier「追猎」，与 catch 同源。指捕食者持续追赶猎物。",
+      "phonetics": "单音节 /tʃeɪs/，长元音 /eɪ/ + /s/，与 face、race 押韵。",
+      "examples": [
+        {"en": "Cheetahs can only chase their prey in short bursts.", "zh": "猎豹只能短距离爆发式追捕猎物。", "source": "造句"},
+        {"en": "chase after", "zh": "追赶（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "pursue", "ipa": "/pərˈsuː/", "gloss": "追赶，追求", "note": "pursue 更正式书面；chase 更口语、更具体"}
+      ],
+      "nuance": "chase 是持续追赶（口语）；pursue 是其正式说法。"
+    },
+    {
+      "word": "swallow",
+      "levels": ["六级"],
+      "ipa": "/ˈswɑːloʊ/",
+      "subgroup": "verb",
+      "meaning": "v. 吞下，咽下",
+      "etymology": "古英语 swelgan「吞」。蛇整个吞下猎物（swallow whole）是复述蛇类进食的高频表达。同形词也指「燕子」。",
+      "phonetics": "重音在首音节 /ˈswɑː/，结尾 -low 读 /loʊ/。",
+      "examples": [
+        {"en": "The snake can swallow its prey whole.", "zh": "蛇可以把猎物整个吞下。", "source": "造句"},
+        {"en": "swallow whole", "zh": "整个吞下（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "swallow 是不咀嚼直接咽下（蛇）；咀嚼进食用 chew。"
+    },
+    {
+      "word": "spot",
+      "levels": ["托福"],
+      "ipa": "/spɑːt/",
+      "subgroup": "verb",
+      "meaning": "v. 发现，看见；n. 斑点",
+      "etymology": "中古英语 spotte「污点、斑点」。作动词表示「一眼瞥见、认出」，作名词是「斑点」（豹身上的 spots）。",
+      "phonetics": "单音节 /spɑːt/，美音 o 读 /ɑː/，与 hot、pot 押韵。",
+      "examples": [
+        {"en": "If you look carefully, you can spot the owl in the tree.", "zh": "仔细看的话，你能在树上发现那只猫头鹰。", "source": "造句"},
+        {"en": "spot the difference", "zh": "找不同（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "spot 作动词是「（在不显眼处）一眼认出、瞥见」；作名词是斑点（豹纹）。"
+    },
+    {
+      "word": "adapt",
+      "levels": ["托福"],
+      "ipa": "/əˈdæpt/",
+      "subgroup": "verb",
+      "meaning": "v. 适应，使适应",
+      "etymology": "拉丁语 adaptare「使合适」（ad-「向」+ aptare「使适合」，apt「合适的」）。指生物为适应环境而改变。名词 adaptation。",
+      "phonetics": "重音在第二音节 /ˈdæpt/，ad- 弱读为 /ə/，结尾 -pt 别吞音。",
+      "examples": [
+        {"en": "Polar bears have adapted to survive in extreme cold.", "zh": "北极熊已适应在极寒中生存。", "source": "造句"},
+        {"en": "adapt to", "zh": "适应（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "adjust", "ipa": "/əˈdʒʌst/", "gloss": "调整，适应", "note": "adjust 侧重小幅微调；adapt 侧重较深层的、长期的适应性改变"}
+      ],
+      "nuance": "adapt 是较深层、长期的适应（含进化义）；adjust 是小幅调整。"
+    },
+    {
+      "word": "survive",
+      "levels": ["托福"],
+      "ipa": "/sərˈvaɪv/",
+      "subgroup": "verb",
+      "meaning": "v. 幸存，存活",
+      "etymology": "拉丁语 supervivere「活得更久」（super-「超过」+ vivere「活」）。同源：vivid、revive、vital。名词 survival。",
+      "phonetics": "重音在第二音节 /ˈvaɪv/，sur- 弱读，结尾 -vive 读 /vaɪv/。",
+      "examples": [
+        {"en": "Few of these animals survive in the wild today.", "zh": "如今这些动物在野外能存活的很少。", "source": "造句"},
+        {"en": "survive in the wild", "zh": "在野外生存（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "survive 是（在困境/危险中）活下来；名词 survival，形容词 endangered 描述其反面。"
+    },
+    {
+      "word": "roam freely",
+      "levels": ["托福"],
+      "ipa": "/roʊm ˈfriːli/",
+      "subgroup": "phrase",
+      "meaning": "自由漫游（介绍动物活动范围的高频表达）",
+      "etymology": "roam「漫游」+ freely「自由地」的固定搭配，强调动物在开放展区里不受笼子限制地活动。",
+      "phonetics": "roam /oʊ/ 长，freely 重读首音节 /ˈfriː/。",
+      "examples": [
+        {"en": "In this large exhibit, the animals can roam freely.", "zh": "在这个大展区里，动物可以自由漫游。", "source": "造句"},
+        {"en": "let animals roam freely", "zh": "让动物自由活动（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "roam freely 是介绍开放式展区、强调动物福利的高频短语。"
+    },
+    {
+      "word": "feeding time",
+      "levels": ["托福"],
+      "ipa": "/ˈfiːdɪŋ taɪm/",
+      "subgroup": "phrase",
+      "meaning": "喂食时间（导览广播高频）",
+      "etymology": "feeding（feed 的动名词）+ time。指饲养员定点喂动物的时段，常是参观亮点。",
+      "phonetics": "feeding 重读首音节 /ˈfiː/，time 读 /taɪm/。",
+      "examples": [
+        {"en": "Feeding time for the sea lions is at eleven.", "zh": "海狮的喂食时间是十一点。", "source": "造句"},
+        {"en": "catch the feeding time", "zh": "赶上喂食时间（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "feeding time 指定点喂食时段；相关表演/讲解叫 feeding demonstration/talk。"
+    },
+    {
+      "word": "keep your distance",
+      "levels": ["托福"],
+      "ipa": "/kiːp jɔːr ˈdɪstəns/",
+      "subgroup": "phrase",
+      "meaning": "保持距离（安全提示高频）",
+      "etymology": "keep「保持」+ your + distance「距离」的固定安全用语，提醒游客别靠太近动物。",
+      "phonetics": "distance 重读首音节 /ˈdɪs/，keep 长音 /iː/。",
+      "examples": [
+        {"en": "Please keep your distance from the enclosure.", "zh": "请与圈养区保持距离。", "source": "造句"},
+        {"en": "keep a safe distance", "zh": "保持安全距离（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "keep your distance 是标准安全提示；同义提醒 stay back（往后站）。"
+    },
+    {
+      "word": "on your left",
+      "levels": ["基础"],
+      "ipa": "/ɒn jɔːr left/",
+      "subgroup": "phrase",
+      "meaning": "在你左边（导览指路高频）",
+      "etymology": "on「在」+ your left「你的左侧」，导览员指点方位的固定说法，与 on your right 对应。",
+      "phonetics": "left 重读，结尾 -ft 别吞音。",
+      "examples": [
+        {"en": "On your left you'll see the lion enclosure.", "zh": "你左边可以看到狮子的圈养区。", "source": "造句"},
+        {"en": "on your right", "zh": "在你右边（对应搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "on your left/right 是导览指路的固定方位表达，听力复述常出现。"
+    },
+    {
+      "word": "no flash photography",
+      "levels": ["托福"],
+      "ipa": "/noʊ flæʃ fəˈtɑːɡrəfi/",
+      "subgroup": "phrase",
+      "meaning": "禁止使用闪光灯（拍照告示高频）",
+      "etymology": "no + flash「闪光灯」+ photography「摄影」。告示语，因闪光会惊扰或伤害动物（尤其夜行馆）。",
+      "phonetics": "photography 重音在第二音节 /ˈtɑː/，是易错重音词。",
+      "examples": [
+        {"en": "No flash photography is allowed in the nocturnal house.", "zh": "夜行馆内禁止使用闪光灯拍照。", "source": "造句"},
+        {"en": "turn off your flash", "zh": "关掉闪光灯（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "no flash photography 是常见告示；口语提醒直接说 turn off your flash。"
+    },
+    {
+      "word": "do not feed the animals",
+      "levels": ["基础"],
+      "ipa": "/duː nɒt fiːd ðə ˈænɪmlz/",
+      "subgroup": "phrase",
+      "meaning": "请勿投喂动物（告示高频）",
+      "etymology": "do not「不要」+ feed「喂」+ the animals。经典告示，因游客投喂可能危害动物健康。",
+      "phonetics": "feed 长音 /iː/，animals 重读首音节 /ˈæ/。",
+      "examples": [
+        {"en": "Signs everywhere say 'do not feed the animals'.", "zh": "到处都是「请勿投喂动物」的告示。", "source": "造句"},
+        {"en": "please do not feed", "zh": "请勿投喂（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "do not feed the animals 是最经典的动物园告示，复述场景高频。"
+    },
+    {
+      "word": "in the wild",
+      "levels": ["托福"],
+      "ipa": "/ɪn ðə waɪld/",
+      "subgroup": "phrase",
+      "meaning": "在野外，在野生环境中",
+      "etymology": "in + the wild「野生状态」。与 in captivity（圈养）相对，保育讲解高频对比。",
+      "phonetics": "wild 读 /waɪld/，双元音 /aɪ/ + /ld/。",
+      "examples": [
+        {"en": "In the wild, these tigers hunt at night.", "zh": "在野外，这些老虎在夜间捕猎。", "source": "造句"},
+        {"en": "survive in the wild", "zh": "在野外生存（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "in the wild（野外）常与 in captivity（圈养）成对出现，是保育讲解的核心对比。"
+    },
+    {
+      "word": "on the verge of extinction",
+      "levels": ["托福"],
+      "ipa": "/ɒn ðə vɜːrdʒ əv ɪkˈstɪŋkʃn/",
+      "subgroup": "phrase",
+      "meaning": "濒临灭绝",
+      "etymology": "on the verge of「濒临、就要」+ extinction「灭绝」。verge 意为「边缘」。保育讲解描述极危物种的固定表达。",
+      "phonetics": "verge /vɜːrdʒ/ 卷舌，extinction 重音在第二音节 /ˈtɪŋk/。",
+      "examples": [
+        {"en": "This rhino species is on the verge of extinction.", "zh": "这种犀牛濒临灭绝。", "source": "造句"},
+        {"en": "on the brink of extinction", "zh": "濒临灭绝（同义搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "on the verge of extinction = on the brink of extinction，都表「濒临灭绝」。"
+    },
+    {
+      "word": "guided tour",
+      "levels": ["托福"],
+      "ipa": "/ˈɡaɪdɪd tʊr/",
+      "subgroup": "phrase",
+      "meaning": "有导游讲解的参观，导览团",
+      "etymology": "guided（guide「引导」的过去分词作定语）+ tour「游览」。指由讲解员带领的团队参观。",
+      "phonetics": "guided 重读首音节 /ˈɡaɪ/，tour 读 /tʊr/。",
+      "examples": [
+        {"en": "You can join a guided tour at ten and two.", "zh": "你可以参加十点和两点的导览团。", "source": "造句"},
+        {"en": "take a guided tour", "zh": "参加导览团（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "guided tour 有讲解员带队；self-guided tour（自助游览）则凭地图/语音自行参观。"
+    },
+    {
+      "word": "check the map",
+      "levels": ["基础"],
+      "ipa": "/tʃek ðə mæp/",
+      "subgroup": "phrase",
+      "meaning": "看一下地图（找路高频）",
+      "etymology": "check「查看」+ the map「地图」。找馆区、定方向时的口语表达。",
+      "phonetics": "check /tʃek/，map /mæp/ 短音干脆。",
+      "examples": [
+        {"en": "Let's check the map to find the aquarium.", "zh": "我们看下地图找水族馆。", "source": "造句"},
+        {"en": "check the map for directions", "zh": "看地图找方向（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "check the map（查看地图）是找路口语；正式说法 consult the map。"
+    },
+    {
+      "word": "get lost",
+      "levels": ["基础"],
+      "ipa": "/ɡet lɒst/",
+      "subgroup": "phrase",
+      "meaning": "迷路，走丢",
+      "etymology": "get「变得」+ lost「迷失的」。表示在大园区里找不到方向或走散。",
+      "phonetics": "lost 美音读 /lɔːst/ 或 /lɑːst/。",
+      "examples": [
+        {"en": "It's easy to get lost in such a big zoo.", "zh": "在这么大的动物园里很容易迷路。", "source": "造句"},
+        {"en": "don't get lost", "zh": "别走丢了（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "get lost 是「迷路」；走散找人用 lose sight of（跟丢）。"
+    },
+    {
+      "word": "line up",
+      "levels": ["基础"],
+      "ipa": "/laɪn ʌp/",
+      "subgroup": "phrase",
+      "meaning": "排队",
+      "etymology": "line「排成一线」+ up。美式说法，英式常说 queue up。买票、进热门展区常要 line up。",
+      "phonetics": "line /laɪn/ 长音，up 弱读连读为 /laɪnʌp/。",
+      "examples": [
+        {"en": "Visitors line up to see the baby panda.", "zh": "游客排队看熊猫宝宝。", "source": "造句"},
+        {"en": "line up for tickets", "zh": "排队买票（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "queue up", "ipa": "/kjuː ʌp/", "gloss": "排队（英式）", "note": "queue up 是英式；line up 是美式，托福常见美式"}
+      ],
+      "nuance": "line up 是美式「排队」；英式说 queue (up)。"
+    },
+    {
+      "word": "grab a bite",
+      "levels": ["六级"],
+      "ipa": "/ɡræb ə baɪt/",
+      "subgroup": "phrase",
+      "meaning": "随便吃点东西，简单吃一口",
+      "etymology": "grab「抓、快速拿」+ a bite「一口」。口语，指快速简单地吃点东西，逛累了常说。",
+      "phonetics": "grab /ɡræb/，bite /baɪt/ 长音 /aɪ/。",
+      "examples": [
+        {"en": "Let's grab a bite before we see the rest of the zoo.", "zh": "看剩下的部分前我们先随便吃点。", "source": "造句"},
+        {"en": "grab a quick bite", "zh": "快速吃点东西（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "grab a bite 是口语「随便吃点」；正式点说 have a meal。"
+    },
+    {
+      "word": "run out of time",
+      "levels": ["六级"],
+      "ipa": "/rʌn aʊt əv taɪm/",
+      "subgroup": "phrase",
+      "meaning": "时间不够了，没时间了",
+      "etymology": "run out of「用尽」+ time。表示时间耗尽，逛不完园区时常说。",
+      "phonetics": "run out 连读为 /rʌnaʊt/，time /taɪm/。",
+      "examples": [
+        {"en": "We ran out of time and missed the reptile house.", "zh": "我们时间不够，错过了爬行馆。", "source": "造句"},
+        {"en": "we're running out of time", "zh": "我们快没时间了（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "run out of time 强调时间被耗尽；run out of sth 也可接其他名词（run out of money）。"
+    },
+    {
+      "word": "up close",
+      "levels": ["六级"],
+      "ipa": "/ʌp kloʊs/",
+      "subgroup": "phrase",
+      "meaning": "近距离地",
+      "etymology": "up「靠近」+ close「近的」（此处 close 是形容词 /s/ 尾）。see sth up close = 近距离观看。",
+      "phonetics": "close 此处读 /kloʊs/（清音 s，形容词），别读成动词的 /kloʊz/。",
+      "examples": [
+        {"en": "The glass lets you see the sharks up close.", "zh": "玻璃让你能近距离看鲨鱼。", "source": "造句"},
+        {"en": "see it up close", "zh": "近距离观看（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "up close 的 close 读 /s/（形容词「近的」）；动词「关闭」的 close 读 /z/。"
+    },
+    {
+      "word": "endangered",
+      "levels": ["托福"],
+      "ipa": "/ɪnˈdeɪndʒərd/",
+      "subgroup": "desc",
+      "meaning": "adj. 濒危的，濒临灭绝的",
+      "etymology": "endanger「使处于危险」（en-「使…进入」+ danger「危险」）+ -ed。指物种数量少到有灭绝风险。",
+      "phonetics": "重音在第二音节 /ˈdeɪn/，结尾 -gered 读 /dʒərd/。",
+      "examples": [
+        {"en": "The giant panda is a famous endangered species.", "zh": "大熊猫是著名的濒危物种。", "source": "造句"},
+        {"en": "endangered species", "zh": "濒危物种（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "threatened", "ipa": "/ˈθretnd/", "gloss": "受威胁的", "note": "threatened 是更宽的类别（含 vulnerable 到 endangered）；endangered 是其中较严重的一级"}
+      ],
+      "nuance": "endangered（濒危）比 threatened（受威胁）更严重，比 extinct（已灭绝）尚有救。"
+    },
+    {
+      "word": "extinct",
+      "levels": ["托福"],
+      "ipa": "/ɪkˈstɪŋkt/",
+      "subgroup": "desc",
+      "meaning": "adj. 灭绝的，绝种的",
+      "etymology": "拉丁语 extinguere「熄灭」（ex-「彻底」+ stinguere「熄灭」）。同源：extinguish（扑灭）。字面「（火种）被彻底熄灭」。",
+      "phonetics": "重音在第二音节 /ˈstɪŋkt/，结尾 -nct 三个辅音连读别吞音。",
+      "examples": [
+        {"en": "The dodo became extinct in the 17th century.", "zh": "渡渡鸟在 17 世纪灭绝了。", "source": "造句"},
+        {"en": "go extinct", "zh": "灭绝（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "extinct 是已经彻底灭绝（无存活个体）；endangered 是濒危但仍有存活。"
+    },
+    {
+      "word": "nocturnal",
+      "levels": ["托福"],
+      "ipa": "/nɒkˈtɜːrnl/",
+      "subgroup": "desc",
+      "meaning": "adj. 夜行性的，夜间活动的",
+      "etymology": "拉丁语 nocturnus「夜间的」（nox「夜」）。同源：nocturne（夜曲）。指白天休息、夜间活动的动物（猫头鹰、蝙蝠）。",
+      "phonetics": "重音在第二音节 /ˈtɜːr/，结尾 -nal 弱读 /nl/。",
+      "examples": [
+        {"en": "Owls are nocturnal, so the house is kept dark.", "zh": "猫头鹰是夜行动物，所以馆内保持昏暗。", "source": "造句"},
+        {"en": "nocturnal animals", "zh": "夜行动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "diurnal", "ipa": "/daɪˈɜːrnl/", "gloss": "昼行性的", "note": "反义：diurnal 白天活动；nocturnal 夜间活动"}
+      ],
+      "nuance": "nocturnal（夜行）与 diurnal（昼行）相对；夜行馆常白天调暗光线模拟夜晚。"
+    },
+    {
+      "word": "tropical",
+      "levels": ["六级"],
+      "ipa": "/ˈtrɒpɪkl/",
+      "subgroup": "desc",
+      "meaning": "adj. 热带的",
+      "etymology": "希腊语 tropikos「回归线的」（tropē「转向」，指太阳到回归线后转向）。指赤道附近炎热潮湿地区。",
+      "phonetics": "重音在首音节 /ˈtrɒ/，结尾 -cal 弱读 /kl/。",
+      "examples": [
+        {"en": "The tropical house is warm, humid, and full of plants.", "zh": "热带馆温暖、潮湿、满是植物。", "source": "造句"},
+        {"en": "tropical rainforest", "zh": "热带雨林（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "tropical（热带）与 temperate（温带）、polar/arctic（极地）相对，描述气候带。"
+    },
+    {
+      "word": "wild",
+      "levels": ["基础"],
+      "ipa": "/waɪld/",
+      "subgroup": "desc",
+      "meaning": "adj. 野生的，野性的",
+      "etymology": "古英语 wilde「未驯化的」。指非人工饲养、自然生长的。名词短语 in the wild（在野外）高频。",
+      "phonetics": "单音节 /waɪld/，双元音 /aɪ/ + /ld/。",
+      "examples": [
+        {"en": "These birds were rescued from the wild.", "zh": "这些鸟是从野外救助来的。", "source": "造句"},
+        {"en": "wild animals", "zh": "野生动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "wild（野生的）与 tame/domesticated（驯服的/家养的）相对。"
+    },
+    {
+      "word": "tame",
+      "levels": ["托福"],
+      "ipa": "/teɪm/",
+      "subgroup": "desc",
+      "meaning": "adj. 驯服的，温顺的；v. 驯服",
+      "etymology": "古英语 tam「驯服的」。指经人接触后不怕人、可近距离接触的动物（petting zoo 里的）。作动词表示「驯化」。",
+      "phonetics": "单音节 /teɪm/，长元音 /eɪ/，与 name、game 押韵。",
+      "examples": [
+        {"en": "The goats in the petting zoo are perfectly tame.", "zh": "触摸动物园里的山羊非常温顺。", "source": "造句"},
+        {"en": "a tame animal", "zh": "驯服的动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "domesticated", "ipa": "/dəˈmestɪkeɪtɪd/", "gloss": "驯化的，家养的", "note": "domesticated 指经世代培育成家畜的物种；tame 指个体不怕人、性情温顺"}
+      ],
+      "nuance": "tame 指个体温顺不怕人；domesticated 指整个物种经世代驯化为家畜。"
+    },
+    {
+      "word": "ferocious",
+      "levels": ["托福"],
+      "ipa": "/fəˈroʊʃəs/",
+      "subgroup": "desc",
+      "meaning": "adj. 凶猛的，凶残的",
+      "etymology": "拉丁语 ferox「凶野的」（ferus「野兽」，同 fierce）。形容猛兽攻击时的凶猛。",
+      "phonetics": "重音在第二音节 /ˈroʊ/，结尾 -cious 读 /ʃəs/。",
+      "examples": [
+        {"en": "Despite its ferocious look, the tiger was resting calmly.", "zh": "尽管样子凶猛，老虎正安静地休息。", "source": "造句"},
+        {"en": "a ferocious predator", "zh": "凶猛的捕食者（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "fierce", "ipa": "/fɪrs/", "gloss": "凶猛的，猛烈的", "note": "fierce 更常用、更口语；ferocious 语气更强、更书面"}
+      ],
+      "nuance": "ferocious 与 fierce 同源同义，ferocious 语气更强、更正式。"
+    },
+    {
+      "word": "fierce",
+      "levels": ["六级"],
+      "ipa": "/fɪrs/",
+      "subgroup": "desc",
+      "meaning": "adj. 凶猛的，猛烈的",
+      "etymology": "古法语 fers「野蛮的」（拉丁语 ferus「野兽」）。与 ferocious 同源。形容动物凶猛或竞争激烈。",
+      "phonetics": "单音节 /fɪrs/，短音 /ɪ/ + 卷舌 r + /s/。",
+      "examples": [
+        {"en": "The lioness became fierce when protecting her cubs.", "zh": "母狮护崽时变得凶猛。", "source": "造句"},
+        {"en": "a fierce predator", "zh": "凶猛的捕食者（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "fierce 是通用的「凶猛」；ferocious 是其加强版。"
+    },
+    {
+      "word": "gentle",
+      "levels": ["基础"],
+      "ipa": "/ˈdʒentl/",
+      "subgroup": "desc",
+      "meaning": "adj. 温和的，温顺的",
+      "etymology": "拉丁语 gentilis「同族的、高贵的」（gens「氏族」），后引申「有教养的→温和的」。同源：gentleman。",
+      "phonetics": "重音在首音节 /ˈdʒen/，结尾 -tle 弱读 /tl/。",
+      "examples": [
+        {"en": "Despite its size, the elephant is very gentle.", "zh": "尽管体型巨大，大象非常温和。", "source": "造句"},
+        {"en": "a gentle giant", "zh": "温柔的大块头（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "gentle 强调性情温和、不具攻击性；与 aggressive（有攻击性的）相对。"
+    },
+    {
+      "word": "graceful",
+      "levels": ["六级"],
+      "ipa": "/ˈɡreɪsfl/",
+      "subgroup": "desc",
+      "meaning": "adj. 优雅的，姿态优美的",
+      "etymology": "grace「优雅」（拉丁语 gratia「恩惠、优美」）+ -ful。形容动物动作优美（如天鹅、豹）。",
+      "phonetics": "重音在首音节 /ˈɡreɪs/，结尾 -ful 弱读 /fl/。",
+      "examples": [
+        {"en": "The swans glide across the pond in a graceful line.", "zh": "天鹅优雅地成排滑过池面。", "source": "造句"},
+        {"en": "graceful movements", "zh": "优雅的动作（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "graceful 形容动作优美流畅；反义 clumsy（笨拙的）。"
+    },
+    {
+      "word": "majestic",
+      "levels": ["托福"],
+      "ipa": "/məˈdʒestɪk/",
+      "subgroup": "desc",
+      "meaning": "adj. 雄伟的，威严的",
+      "etymology": "majesty「威严、王权」（拉丁语 maiestas「伟大」，maior「更大」）+ -ic。形容动物令人肃然起敬的威仪（狮、鹰）。",
+      "phonetics": "重音在第二音节 /ˈdʒes/，开头 ma- 弱读 /mə/。",
+      "examples": [
+        {"en": "The eagle looked majestic as it spread its wings.", "zh": "老鹰展翅时显得威严雄伟。", "source": "造句"},
+        {"en": "a majestic lion", "zh": "威严的狮子（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "majestic 强调令人敬畏的雄伟威仪；graceful 侧重动作的优美流畅。"
+    },
+    {
+      "word": "venomous",
+      "levels": ["托福"],
+      "ipa": "/ˈvenəməs/",
+      "subgroup": "desc",
+      "meaning": "adj. 有毒的（能注毒的，如毒蛇）",
+      "etymology": "venom「毒液」（拉丁语 venenum「毒药」）+ -ous。特指能主动注射毒液的动物（蛇、蝎）。",
+      "phonetics": "重音在首音节 /ˈve/，三音节，结尾 -mous 弱读 /məs/。",
+      "examples": [
+        {"en": "Some of these snakes are highly venomous.", "zh": "这些蛇中有些毒性很强。", "source": "造句"},
+        {"en": "a venomous snake", "zh": "毒蛇（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "poisonous", "ipa": "/ˈpɔɪzənəs/", "gloss": "有毒的（吃了/碰了会中毒）", "note": "venomous 是主动注毒（咬、蜇）；poisonous 是被动有毒（吃/触会中毒）"}
+      ],
+      "nuance": "venomous 主动注毒（蛇咬、蝎蜇）；poisonous 是被动含毒（误食或触碰才中毒）。"
+    },
+    {
+      "word": "furry",
+      "levels": ["六级"],
+      "ipa": "/ˈfɜːri/",
+      "subgroup": "desc",
+      "meaning": "adj. 毛茸茸的，覆盖软毛的",
+      "etymology": "fur「毛皮」+ -y。形容动物有浓密柔软的毛。",
+      "phonetics": "重音在首音节 /ˈfɜː/，卷舌元音 + /ri/。",
+      "examples": [
+        {"en": "The red panda is a small, furry animal.", "zh": "小熊猫是种毛茸茸的小动物。", "source": "造句"},
+        {"en": "a furry creature", "zh": "毛茸茸的动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "furry 形容浓密软毛的哺乳动物；有鳞的用 scaly，有羽的用 feathered。"
+    },
+    {
+      "word": "scaly",
+      "levels": ["六级"],
+      "ipa": "/ˈskeɪli/",
+      "subgroup": "desc",
+      "meaning": "adj. 有鳞的，鳞状的",
+      "etymology": "scale「鳞」+ -y。形容鱼、蛇、蜥蜴等体表覆盖鳞片的动物。",
+      "phonetics": "重音在首音节 /ˈskeɪ/，与 daily 押韵结构。",
+      "examples": [
+        {"en": "Reptiles have dry, scaly skin.", "zh": "爬行动物有干燥、带鳞的皮肤。", "source": "造句"},
+        {"en": "scaly skin", "zh": "带鳞的皮肤（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "scaly（有鳞，鱼/爬行）、furry（有毛，哺乳）、feathered（有羽，鸟）三类体表描述配套记。"
+    },
+    {
+      "word": "spotted",
+      "levels": ["六级"],
+      "ipa": "/ˈspɒtɪd/",
+      "subgroup": "desc",
+      "meaning": "adj. 有斑点的",
+      "etymology": "spot「斑点」+ -ed。形容体表有斑点的动物（豹、鹿、长颈鹿）。",
+      "phonetics": "重音在首音节 /ˈspɒ/，结尾 -ted 读 /tɪd/。",
+      "examples": [
+        {"en": "The leopard has a spotted coat for camouflage.", "zh": "豹有带斑点的皮毛用于伪装。", "source": "造句"},
+        {"en": "spotted coat", "zh": "带斑点的皮毛（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "striped", "ipa": "/straɪpt/", "gloss": "有条纹的", "note": "spotted 是斑点（豹）；striped 是条纹（斑马、老虎）"}
+      ],
+      "nuance": "spotted（斑点，豹）与 striped（条纹，斑马/虎）是描述花纹的一对高频词。"
+    },
+    {
+      "word": "striped",
+      "levels": ["六级"],
+      "ipa": "/straɪpt/",
+      "subgroup": "desc",
+      "meaning": "adj. 有条纹的",
+      "etymology": "stripe「条纹」+ -ed。形容体表有条纹的动物（斑马、老虎）。",
+      "phonetics": "单音节 /straɪpt/，长元音 /aɪ/，结尾 -ped 别读成两音节。",
+      "examples": [
+        {"en": "No two zebras have exactly the same striped pattern.", "zh": "没有两只斑马的条纹图案完全相同。", "source": "造句"},
+        {"en": "striped pattern", "zh": "条纹图案（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "striped（条纹，斑马/虎）与 spotted（斑点，豹）配套描述花纹。"
+    },
+    {
+      "word": "aggressive",
+      "levels": ["托福"],
+      "ipa": "/əˈɡresɪv/",
+      "subgroup": "desc",
+      "meaning": "adj. 有攻击性的，好斗的",
+      "etymology": "拉丁语 aggredi「走近、攻击」（ad-「向」+ gradi「走」）+ -ive。同源：progress、aggression。",
+      "phonetics": "重音在第二音节 /ˈɡre/，开头 a- 弱读 /ə/，双写 -ss- 读 /s/。",
+      "examples": [
+        {"en": "Males can become aggressive during mating season.", "zh": "雄性在交配季会变得好斗。", "source": "造句"},
+        {"en": "aggressive behavior", "zh": "攻击性行为（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "aggressive（有攻击性）与 gentle/docile（温顺）相对，描述动物脾性。"
+    },
+    {
+      "word": "rare",
+      "levels": ["基础"],
+      "ipa": "/rer/",
+      "subgroup": "desc",
+      "meaning": "adj. 稀有的，罕见的",
+      "etymology": "拉丁语 rarus「稀疏的、不常见的」。形容数量少、难得一见的物种。",
+      "phonetics": "单音节 /rer/，卷舌元音，与 care、bear 押韵。",
+      "examples": [
+        {"en": "This is one of the rarest big cats in the world.", "zh": "这是世界上最稀有的大型猫科动物之一。", "source": "造句"},
+        {"en": "a rare species", "zh": "稀有物种（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "rare 强调数量稀少难见；endangered 进一步强调有灭绝风险。"
+    },
+    {
+      "word": "curious",
+      "levels": ["基础"],
+      "ipa": "/ˈkjʊriəs/",
+      "subgroup": "desc",
+      "meaning": "adj. 好奇的",
+      "etymology": "拉丁语 curiosus「爱打听的」（cura「关心」）。形容动物对新事物好奇的样子，也形容人。",
+      "phonetics": "重音在首音节 /ˈkjʊ/，开头有 /kj/ 音（cure 的开头）。",
+      "examples": [
+        {"en": "The otters are curious and come right up to the glass.", "zh": "水獭很好奇，会直接凑到玻璃前。", "source": "造句"},
+        {"en": "a curious look", "zh": "好奇的神情（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "curious 形容好奇探究的样子；描述动物或游客都可用。"
+    },
+    {
+      "word": "playful",
+      "levels": ["基础"],
+      "ipa": "/ˈpleɪfl/",
+      "subgroup": "desc",
+      "meaning": "adj. 爱玩的，活泼嬉戏的",
+      "etymology": "play「玩」+ -ful。形容动物活泼爱玩（海豚、水獭、幼崽）。",
+      "phonetics": "重音在首音节 /ˈpleɪ/，结尾 -ful 弱读 /fl/。",
+      "examples": [
+        {"en": "The dolphins are so playful during the show.", "zh": "海豚在表演中特别爱玩。", "source": "造句"},
+        {"en": "playful behavior", "zh": "嬉戏行为（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "playful 形容活泼爱玩的天性；常用于海豚、水獭、幼崽等。"
+    },
+    {
+      "word": "visitor",
+      "levels": ["基础"],
+      "ipa": "/ˈvɪzɪtər/",
+      "subgroup": "general",
+      "meaning": "n. 参观者，游客",
+      "etymology": "visit「参观」（拉丁语 visitare「去看」）+ -or「人」。指来动物园参观的人。",
+      "phonetics": "重音在首音节 /ˈvɪ/，三音节，结尾 -tor 弱读 /tər/。",
+      "examples": [
+        {"en": "Visitors are asked not to tap on the glass.", "zh": "游客被要求不要敲玻璃。", "source": "造句"},
+        {"en": "zoo visitors", "zh": "动物园游客（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "guest", "ipa": "/ɡest/", "gloss": "宾客", "note": "guest 更强调受邀/受招待；visitor 泛指来访者、参观者"}
+      ],
+      "nuance": "visitor 泛指参观者；景区文案里有时用 guest 显得更亲切。"
+    },
+    {
+      "word": "brochure",
+      "levels": ["托福"],
+      "ipa": "/broʊˈʃʊr/",
+      "subgroup": "general",
+      "meaning": "n. 小册子，介绍手册",
+      "etymology": "法语 brochure「装订的小册子」（brocher「缝订」）。入口处发的动物园介绍手册，含地图、时间表。",
+      "phonetics": "重音在第二音节 /ˈʃʊr/，是常见重音易错词，别读成前重音。",
+      "examples": [
+        {"en": "Pick up a brochure for the show schedule.", "zh": "拿本手册看演出时间表。", "source": "造句"},
+        {"en": "an information brochure", "zh": "信息手册（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "leaflet", "ipa": "/ˈliːflət/", "gloss": "传单，单页宣传品", "note": "leaflet 是单张/薄传单；brochure 是有多页、印刷精美的册子"}
+      ],
+      "nuance": "brochure 是多页印刷手册；leaflet 是单张薄传单。"
+    },
+    {
+      "word": "schedule",
+      "levels": ["托福"],
+      "ipa": "/ˈskedʒuːl/",
+      "subgroup": "general",
+      "meaning": "n. 时间表，日程；v. 安排",
+      "etymology": "拉丁语 schedula「纸条」。指喂食、表演的时间安排。美音读 /ˈskedʒuːl/，英音读 /ˈʃedjuːl/。",
+      "phonetics": "美音 sch- 读 /sk/（skedjul）；英音读 /ʃ/（shedyul），两读都要能听懂。",
+      "examples": [
+        {"en": "Check the schedule for the sea lion show.", "zh": "查看海狮表演的时间表。", "source": "造句"},
+        {"en": "feeding schedule", "zh": "喂食时间表（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "timetable", "ipa": "/ˈtaɪmteɪbl/", "gloss": "时间表", "note": "timetable 更英式；schedule 更美式，两者意思相同"}
+      ],
+      "nuance": "schedule 美英发音差异大（sk- vs sh-）；与 timetable 同义。"
+    },
+    {
+      "word": "entrance fee",
+      "levels": ["基础"],
+      "ipa": "/ˈentrəns fiː/",
+      "subgroup": "general",
+      "meaning": "n. 入场费，门票费",
+      "etymology": "entrance「入口、入场」+ fee「费用」。买票入园的费用，同义 admission fee。",
+      "phonetics": "entrance 重读首音节，fee 长音 /iː/。",
+      "examples": [
+        {"en": "The entrance fee includes access to all exhibits.", "zh": "入场费包含所有展区的参观。", "source": "造句"},
+        {"en": "pay the entrance fee", "zh": "付入场费（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "entrance fee = admission fee，都是入场费；票据本身叫 ticket。"
+    },
+    {
+      "word": "queue",
+      "levels": ["托福"],
+      "ipa": "/kjuː/",
+      "subgroup": "general",
+      "meaning": "n. 队伍；v. 排队（英式）",
+      "etymology": "法语 queue「尾巴、队列」（拉丁语 cauda「尾」）。英式英语「排队」，热门展区门口常大排长龙。",
+      "phonetics": "拼写有 5 个字母但只读 /kjuː/（同 cue 音），是著名的拼读陷阱词。",
+      "examples": [
+        {"en": "There's a long queue for the panda enclosure.", "zh": "熊猫馆前排着长队。", "source": "造句"},
+        {"en": "join the queue", "zh": "加入排队（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "line", "ipa": "/laɪn/", "gloss": "队伍（美式）", "note": "美式说 line（wait in line）；英式说 queue"}
+      ],
+      "nuance": "queue 是英式「队伍/排队」，发音只读 /kjuː/；美式说 line。"
+    },
+    {
+      "word": "crowd",
+      "levels": ["基础"],
+      "ipa": "/kraʊd/",
+      "subgroup": "general",
+      "meaning": "n. 人群；v. 挤满",
+      "etymology": "古英语 crūdan「挤、推」。指聚集的一大群人，周末动物园常 crowded（拥挤）。",
+      "phonetics": "单音节 /kraʊd/，双元音 /aʊ/ + /d/，与 loud、proud 押韵。",
+      "examples": [
+        {"en": "A crowd gathered to watch the tiger feeding.", "zh": "一群人聚集观看老虎喂食。", "source": "造句"},
+        {"en": "a large crowd", "zh": "一大群人（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "crowd 是聚集的人群；形容词 crowded（拥挤的）描述地方人多。"
+    },
+    {
+      "word": "restroom",
+      "levels": ["基础"],
+      "ipa": "/ˈrestruːm/",
+      "subgroup": "general",
+      "meaning": "n. 洗手间，公共厕所（美式）",
+      "etymology": "rest「休息」+ room「房间」的委婉说法。美式指公共卫生间，英式常说 toilet。",
+      "phonetics": "重音在首音节 /ˈrest/，room 长音 /uː/。",
+      "examples": [
+        {"en": "The nearest restroom is next to the café.", "zh": "最近的洗手间在咖啡馆旁边。", "source": "造句"},
+        {"en": "where's the restroom", "zh": "洗手间在哪（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "toilet", "ipa": "/ˈtɔɪlət/", "gloss": "厕所（英式）", "note": "restroom 是美式委婉说法；英式常直接说 toilet"}
+      ],
+      "nuance": "restroom 是美式委婉说法（托福常见）；英式说 toilet 或 loo。"
+    },
+    {
+      "word": "café",
+      "levels": ["基础"],
+      "ipa": "/kæˈfeɪ/",
+      "subgroup": "general",
+      "meaning": "n. 咖啡馆，小餐馆",
+      "etymology": "法语 café「咖啡（馆）」。园区内供休息就餐的地方。注意末尾 é 读 /eɪ/。",
+      "phonetics": "重音在末音节 /ˈfeɪ/，末尾 é 读长音 /eɪ/，别读成 /kæf/。",
+      "examples": [
+        {"en": "Let's rest at the café near the entrance.", "zh": "我们在入口附近的咖啡馆歇会儿。", "source": "造句"},
+        {"en": "the zoo café", "zh": "动物园咖啡馆（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "café 末尾重读 /feɪ/；与 coffee（咖啡饮料）区分。"
+    },
+    {
+      "word": "path",
+      "levels": ["基础"],
+      "ipa": "/pæθ/",
+      "subgroup": "general",
+      "meaning": "n. 小路，步道",
+      "etymology": "古英语 pæð「小径」。指园区里连接各展区的步行小道。follow the path 是找路高频。",
+      "phonetics": "单音节 /pæθ/，结尾是清 th /θ/（同 think），别读成 /s/ 或 /t/。",
+      "examples": [
+        {"en": "Follow the path around to reach the aviary.", "zh": "沿着小路绕过去就到鸟舍。", "source": "造句"},
+        {"en": "follow the path", "zh": "沿小路走（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "trail", "ipa": "/treɪl/", "gloss": "小径，游览路线", "note": "trail 常指自然/野外的游览步道；path 是更泛的小路"}
+      ],
+      "nuance": "path 是泛指的小路；trail 常指自然区的游览步道（nature trail）。"
+    },
+    {
+      "word": "area",
+      "levels": ["基础"],
+      "ipa": "/ˈeriə/",
+      "subgroup": "general",
+      "meaning": "n. 区域，地带",
+      "etymology": "拉丁语 area「空地、场地」。指园区的某个区域（picnic area 野餐区、play area 游乐区）。",
+      "phonetics": "重音在首音节 /ˈe/，三音节 /ˈeriə/，注意别读成两音节。",
+      "examples": [
+        {"en": "The picnic area is just past the flamingo pond.", "zh": "野餐区就在火烈鸟池过去一点。", "source": "造句"},
+        {"en": "picnic area", "zh": "野餐区（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "zone", "ipa": "/zoʊn/", "gloss": "区，地带", "note": "zone 常指有明确划分/功能的分区；area 更泛"}
+      ],
+      "nuance": "area 是泛指的区域；zone 强调有明确划界或功能（如 kids' zone）。"
+    },
+    {
+      "word": "section",
+      "levels": ["托福"],
+      "ipa": "/ˈsekʃn/",
+      "subgroup": "general",
+      "meaning": "n. 区，部分，区段",
+      "etymology": "拉丁语 sectio「切割、部分」（secare「切」）。同源：sector、dissect。指园区按主题划分的一块区（African section）。",
+      "phonetics": "重音在首音节 /ˈsek/，结尾 -tion 读 /ʃn/。",
+      "examples": [
+        {"en": "The African section is at the far end of the zoo.", "zh": "非洲区在动物园的最里端。", "source": "造句"},
+        {"en": "the reptile section", "zh": "爬行动物区（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "section 是按主题划分的一块区；比 area 更强调「整体中的一部分」。"
+    },
+    {
+      "word": "nearby",
+      "levels": ["基础"],
+      "ipa": "/ˌnɪrˈbaɪ/",
+      "subgroup": "general",
+      "meaning": "adj./adv. 附近的，在附近",
+      "etymology": "near「近」+ by「旁边」的合成。指就在附近，问路指路高频。",
+      "phonetics": "重音可在 by /ˈbaɪ/，near- 读 /nɪr/。",
+      "examples": [
+        {"en": "There's a snack bar nearby if you're hungry.", "zh": "如果饿了，附近有个小吃摊。", "source": "造句"},
+        {"en": "a nearby exhibit", "zh": "附近的展区（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "nearby 既作形容词（a nearby café）也作副词（wait nearby）。"
+    },
+    {
+      "word": "straight ahead",
+      "levels": ["基础"],
+      "ipa": "/streɪt əˈhed/",
+      "subgroup": "general",
+      "meaning": "一直往前，正前方",
+      "etymology": "straight「笔直地」+ ahead「向前」。指路固定搭配，与 turn left/right 配套。",
+      "phonetics": "straight /streɪt/，ahead 重读第二音节 /ˈhed/，h 要发出来。",
+      "examples": [
+        {"en": "Go straight ahead and the exit is on your right.", "zh": "一直往前走，出口在你右边。", "source": "造句"},
+        {"en": "keep going straight ahead", "zh": "继续直走（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "straight ahead 是「正前方/直走」；与 turn left/right、on your left 组成指路套语。"
+    },
+    {
+      "word": "amazing",
+      "levels": ["基础"],
+      "ipa": "/əˈmeɪzɪŋ/",
+      "subgroup": "general",
+      "meaning": "adj. 令人惊叹的，了不起的",
+      "etymology": "amaze「使惊奇」（古英语 amasian「使迷惑」）+ -ing。参观时表达赞叹的高频口语词。",
+      "phonetics": "重音在第二音节 /ˈmeɪ/，开头 a- 弱读 /ə/。",
+      "examples": [
+        {"en": "The way the dolphins jump is amazing.", "zh": "海豚跳跃的样子令人惊叹。", "source": "造句"},
+        {"en": "absolutely amazing", "zh": "太惊人了（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "amazing 是口语高频赞叹词；复述观感时可用，比 good 更有表现力。"
+    },
+    {
+      "word": "huge",
+      "levels": ["基础"],
+      "ipa": "/hjuːdʒ/",
+      "subgroup": "general",
+      "meaning": "adj. 巨大的",
+      "etymology": "古法语 ahuge「非常大」，词源不明。形容动物体型巨大（huge elephant）的高频口语词。",
+      "phonetics": "单音节 /hjuːdʒ/，开头有 /hj/ 音，结尾 /dʒ/，别读成 /hju:g/。",
+      "examples": [
+        {"en": "The whale shark is absolutely huge.", "zh": "鲸鲨简直太巨大了。", "source": "造句"},
+        {"en": "a huge animal", "zh": "巨大的动物（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [
+        {"w": "enormous", "ipa": "/ɪˈnɔːrməs/", "gloss": "庞大的", "note": "enormous 更正式、语气更强；huge 更口语"}
+      ],
+      "nuance": "huge 是口语「巨大」；enormous、gigantic 是其更强/更正式的替换。"
+    },
+    {
+      "word": "expensive",
+      "levels": ["基础"],
+      "ipa": "/ɪkˈspensɪv/",
+      "subgroup": "general",
+      "meaning": "adj. 昂贵的",
+      "etymology": "expense「花费」（拉丁语 expendere「称量支付」）+ -ive。谈门票、纪念品价格时高频。",
+      "phonetics": "重音在第二音节 /ˈspen/，开头 ex- 弱读 /ɪk/。",
+      "examples": [
+        {"en": "The souvenirs in the gift shop are a bit expensive.", "zh": "礼品店的纪念品有点贵。", "source": "造句"},
+        {"en": "too expensive", "zh": "太贵了（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "expensive 形容东西贵；反义 cheap（便宜）、affordable（负担得起的）。"
+    },
+    {
+      "word": "worth",
+      "levels": ["基础"],
+      "ipa": "/wɜːrθ/",
+      "subgroup": "general",
+      "meaning": "adj. 值得的；n. 价值",
+      "etymology": "古英语 weorþ「有价值的」。worth + doing / worth it 表示「值得」，评价参观体验高频。",
+      "phonetics": "单音节 /wɜːrθ/，卷舌元音 + 清 th /θ/。",
+      "examples": [
+        {"en": "The aquarium is definitely worth visiting.", "zh": "水族馆绝对值得一去。", "source": "造句"},
+        {"en": "worth it", "zh": "值得（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "worth 后接名词或 -ing（worth visiting）；口语说 worth it 表示「值这个价」。"
+    },
+    {
+      "word": "prefer",
+      "levels": ["基础"],
+      "ipa": "/prɪˈfɜːr/",
+      "subgroup": "general",
+      "meaning": "v. 更喜欢，宁愿",
+      "etymology": "拉丁语 praeferre「拿到前面、更看重」（prae-「前」+ ferre「拿」）。表达偏好高频，prefer A to B。",
+      "phonetics": "重音在第二音节 /ˈfɜːr/，pre- 弱读 /prɪ/。",
+      "examples": [
+        {"en": "I prefer the reptile house to the aviary.", "zh": "比起鸟舍，我更喜欢爬行馆。", "source": "造句"},
+        {"en": "prefer A to B", "zh": "喜欢 A 胜过 B（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "prefer A to B（不是 than）是易错搭配；也可说 prefer to do rather than do。"
+    },
+    {
+      "word": "notice",
+      "levels": ["基础"],
+      "ipa": "/ˈnoʊtɪs/",
+      "subgroup": "general",
+      "meaning": "v. 注意到；n. 告示，通知",
+      "etymology": "拉丁语 notitia「知悉」（notus「已知的」）。作动词「察觉到」，作名词「告示牌」，动物园的 notice 常提醒注意事项。",
+      "phonetics": "重音在首音节 /ˈnoʊ/，双元音 /oʊ/，结尾 -tice 弱读 /tɪs/。",
+      "examples": [
+        {"en": "Did you notice the sloth moving up there?", "zh": "你注意到上面那只树懒在动吗？", "source": "造句"},
+        {"en": "a warning notice", "zh": "警示告示（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "notice 作动词是「察觉到」，作名词是「告示、通知」，一词两义。"
+    },
+    {
+      "word": "recommend",
+      "levels": ["托福"],
+      "ipa": "/ˌrekəˈmend/",
+      "subgroup": "general",
+      "meaning": "v. 推荐，建议",
+      "etymology": "拉丁语 commendare「委托、称赞」（com- + mandare「托付」）+ re-。推荐值得看的展区高频。",
+      "phonetics": "主重音在末音节 /ˈmend/，双写 -mm- 读 /m/，共三音节。",
+      "examples": [
+        {"en": "I'd recommend seeing the penguin feeding first.", "zh": "我建议先去看企鹅喂食。", "source": "造句"},
+        {"en": "highly recommend", "zh": "强烈推荐（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "recommend 后接 doing 或 that 从句（recommend seeing / recommend that you see）。"
+    },
+    {
+      "word": "afford",
+      "levels": ["托福"],
+      "ipa": "/əˈfɔːrd/",
+      "subgroup": "general",
+      "meaning": "v. 负担得起，抽得出（时间/钱）",
+      "etymology": "古英语 geforðian「促成、提供」。现代义「（金钱/时间上）承担得起」，常与 can/could 连用。",
+      "phonetics": "重音在第二音节 /ˈfɔːrd/，a- 弱读 /ə/，双写 -ff- 读 /f/。",
+      "examples": [
+        {"en": "We can't afford to spend all day here.", "zh": "我们没法在这待上一整天。", "source": "造句"},
+        {"en": "can't afford", "zh": "负担不起（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "afford 几乎总与 can/could/be able to 连用；既指钱也指时间「抽得出」。"
+    },
+    {
+      "word": "avoid",
+      "levels": ["托福"],
+      "ipa": "/əˈvɔɪd/",
+      "subgroup": "general",
+      "meaning": "v. 避免，避开",
+      "etymology": "古法语 esvuidier「清空、离开」（vuit「空的」）。建议避开人多时段/区域高频，avoid + doing。",
+      "phonetics": "重音在第二音节 /ˈvɔɪd/，双元音 /ɔɪ/，a- 弱读 /ə/。",
+      "examples": [
+        {"en": "Come early to avoid the weekend crowds.", "zh": "早点来以避开周末的人群。", "source": "造句"},
+        {"en": "avoid the crowds", "zh": "避开人群（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "avoid 后接名词或 doing（avoid doing），不能接 to do，是易错点。"
+    },
+    {
+      "word": "crowded",
+      "levels": ["基础"],
+      "ipa": "/ˈkraʊdɪd/",
+      "subgroup": "general",
+      "meaning": "adj. 拥挤的，人多的",
+      "etymology": "crowd「人群」+ -ed。形容地方挤满了人，周末动物园常 crowded。",
+      "phonetics": "重音在首音节 /ˈkraʊ/，结尾 -ded 读 /dɪd/。",
+      "examples": [
+        {"en": "The zoo gets very crowded on sunny weekends.", "zh": "晴朗的周末动物园会非常拥挤。", "source": "造句"},
+        {"en": "too crowded", "zh": "太挤了（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "crowded 形容地方人多；packed 是更口语、程度更强的说法。"
+    },
+    {
+      "word": "sign",
+      "levels": ["基础"],
+      "ipa": "/saɪn/",
+      "subgroup": "general",
+      "meaning": "n. 标志牌，指示牌；v. 签名",
+      "etymology": "拉丁语 signum「记号、标记」。指展区旁的说明牌、警示牌。字母 g 不发音。同源：signal、signature。",
+      "phonetics": "单音节 /saɪn/，g 不发音，与 line、mine 押韵。",
+      "examples": [
+        {"en": "The sign says the panda is thirty years old.", "zh": "牌子上说这只熊猫三十岁了。", "source": "造句"},
+        {"en": "a warning sign", "zh": "警示牌（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "sign 泛指各种标志牌（说明牌、警示牌）；指方向的路标柱叫 signpost。"
+    },
+    {
+      "word": "information",
+      "levels": ["基础"],
+      "ipa": "/ˌɪnfərˈmeɪʃn/",
+      "subgroup": "general",
+      "meaning": "n. 信息，资讯（不可数）",
+      "etymology": "inform「告知」（拉丁语 informare「塑造、告知」）+ -ation。information desk（问询处）是园区高频地点。",
+      "phonetics": "主重音在第三音节 /ˈmeɪ/，共四音节；不可数名词，无复数。",
+      "examples": [
+        {"en": "Ask at the information desk for a show schedule.", "zh": "去问询处要一份演出时间表。", "source": "造句"},
+        {"en": "information desk", "zh": "问询处（高频搭配）", "source": "高频搭配"}
+      ],
+      "synonyms": [],
+      "nuance": "information 是不可数名词，说「一条信息」用 a piece of information。"
+    }
+  ]
+}

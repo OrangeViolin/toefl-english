@@ -1,0 +1,155 @@
+{
+  "id": "zoo",
+  "name": "🦒 动物园",
+  "en": "Zoo",
+  "desc": "欢迎语·喂食时间·参观规则·导览路线·动物馆区·闭园·门票·纪念品店",
+  "items": [
+    {
+      "en": "Welcome to the city zoo.",
+      "zh": "欢迎来到城市动物园。",
+      "lv": "简单",
+      "chunks": ["Welcome to", "the city zoo."],
+      "skeleton": ["欢迎来到", "城市动物园。"]
+    },
+    {
+      "en": "The penguins are being fed now.",
+      "zh": "企鹅现在正在喂食。",
+      "lv": "简单",
+      "chunks": ["The penguins", "are being fed now."],
+      "skeleton": ["企鹅", "正在被喂食。"]
+    },
+    {
+      "en": "Please do not feed the animals.",
+      "zh": "请不要给动物喂食。",
+      "lv": "简单",
+      "chunks": ["Please do not", "feed the animals."],
+      "skeleton": ["请不要", "喂动物。"]
+    },
+    {
+      "en": "The reptile house is straight ahead.",
+      "zh": "爬行动物馆就在正前方。",
+      "lv": "简单",
+      "chunks": ["The reptile house", "is straight ahead."],
+      "skeleton": ["爬行动物馆", "在正前方。"]
+    },
+    {
+      "en": "Flash photography is not allowed here.",
+      "zh": "这里不允许使用闪光灯拍照。",
+      "lv": "简单",
+      "chunks": ["Flash photography", "is not allowed here."],
+      "skeleton": ["闪光灯拍照", "这里不允许。"]
+    },
+    {
+      "en": "The zoo closes at six tonight.",
+      "zh": "动物园今晚六点闭园。",
+      "lv": "简单",
+      "chunks": ["The zoo closes", "at six tonight."],
+      "skeleton": ["动物园闭园", "今晚六点。"]
+    },
+    {
+      "en": "Tickets are sold at the entrance.",
+      "zh": "门票在入口处出售。",
+      "lv": "简单",
+      "chunks": ["Tickets are sold", "at the entrance."],
+      "skeleton": ["门票出售", "在入口处。"]
+    },
+    {
+      "en": "Please do not feed the animals by hand.",
+      "zh": "请不要用手给动物喂食。",
+      "lv": "中等",
+      "chunks": ["Please do not feed", "the animals", "by hand."],
+      "skeleton": ["请不要喂", "动物", "用手。"]
+    },
+    {
+      "en": "The reptile house is just past the café.",
+      "zh": "爬行动物馆就在咖啡馆过去一点。",
+      "lv": "中等",
+      "chunks": ["The reptile house", "is just past", "the café."],
+      "skeleton": ["爬行动物馆", "就在过了", "咖啡馆。"]
+    },
+    {
+      "en": "The guided tour starts near the main gate.",
+      "zh": "导览团在正门附近出发。",
+      "lv": "中等",
+      "chunks": ["The guided tour", "starts near", "the main gate."],
+      "skeleton": ["导览团", "出发地点靠近", "正门。"]
+    },
+    {
+      "en": "The elephants are fed twice on most afternoons.",
+      "zh": "大象在大多数下午都喂食两次。",
+      "lv": "中等",
+      "chunks": ["The elephants", "are fed twice", "on most afternoons."],
+      "skeleton": ["大象", "被喂食两次", "在多数下午。"]
+    },
+    {
+      "en": "The gift shop stays open until closing time.",
+      "zh": "纪念品店一直营业到闭园时间。",
+      "lv": "中等",
+      "chunks": ["The gift shop", "stays open", "until closing time."],
+      "skeleton": ["纪念品店", "保持营业", "直到闭园时间。"]
+    },
+    {
+      "en": "Please keep your ticket for re-entry to the zoo.",
+      "zh": "请保管好门票以便重新进入动物园。",
+      "lv": "中等",
+      "chunks": ["Please keep your ticket", "for re-entry", "to the zoo."],
+      "skeleton": ["请保管好门票", "以便重新入园", "进动物园。"]
+    },
+    {
+      "en": "The bird aviary is closed for cleaning this morning.",
+      "zh": "鸟舍今天上午因清洁关闭。",
+      "lv": "中等",
+      "chunks": ["The bird aviary", "is closed for cleaning", "this morning."],
+      "skeleton": ["鸟舍", "因清洁关闭", "今天上午。"]
+    },
+    {
+      "en": "If you arrive before noon, you can watch the sea lions being trained.",
+      "zh": "如果中午前到达，你可以观看海狮训练。",
+      "lv": "困难",
+      "chunks": ["If you arrive before noon,", "you can watch", "the sea lions", "being trained."],
+      "skeleton": ["如果中午前到达，", "你可以观看", "海狮", "被训练。"]
+    },
+    {
+      "en": "The tigers, which arrived last spring, are in the enclosure on your left.",
+      "zh": "去年春天到来的老虎，就在你左边的围栏里。",
+      "lv": "困难",
+      "chunks": ["The tigers,", "which arrived last spring,", "are in the enclosure", "on your left."],
+      "skeleton": ["老虎，", "去年春天到来的，", "在围栏里", "你的左边。"]
+    },
+    {
+      "en": "If it starts to rain, the outdoor animal shows will be moved indoors soon.",
+      "zh": "如果开始下雨，户外的动物表演将很快移到室内。",
+      "lv": "困难",
+      "chunks": ["If it starts to rain,", "the outdoor animal shows", "will be moved indoors soon."],
+      "skeleton": ["如果开始下雨，", "户外动物表演", "将很快移到室内。"]
+    },
+    {
+      "en": "Visitors who bring young children can borrow the free strollers near the main entrance.",
+      "zh": "带小孩的游客可以在正门附近借用免费的婴儿车。",
+      "lv": "困难",
+      "chunks": ["Visitors who bring young children", "can borrow the free strollers", "near the main entrance."],
+      "skeleton": ["带小孩的游客", "可以借用免费婴儿车", "在正门附近。"]
+    },
+    {
+      "en": "Because the panda is resting, please stay quiet when you pass its habitat.",
+      "zh": "因为熊猫在休息，经过它的场馆时请保持安静。",
+      "lv": "困难",
+      "chunks": ["Because the panda is resting,", "please stay quiet", "when you pass its habitat."],
+      "skeleton": ["因为熊猫在休息，", "请保持安静", "经过它的场馆时。"]
+    },
+    {
+      "en": "When the zoo closes, an announcement that guides you to the exit will play.",
+      "zh": "闭园时，会播放一则引导你前往出口的广播。",
+      "lv": "困难",
+      "chunks": ["When the zoo closes,", "an announcement", "that guides you to the exit", "will play."],
+      "skeleton": ["闭园时，", "一则广播", "引导你前往出口的", "会播放。"]
+    },
+    {
+      "en": "The souvenirs that we sell in the gift shop are made by local artists nearby.",
+      "zh": "我们纪念品店里出售的纪念品由附近的本地艺术家制作。",
+      "lv": "困难",
+      "chunks": ["The souvenirs", "that we sell in the gift shop", "are made by local artists", "nearby."],
+      "skeleton": ["纪念品", "我们纪念品店出售的", "由本地艺术家制作", "附近的。"]
+    }
+  ]
+}

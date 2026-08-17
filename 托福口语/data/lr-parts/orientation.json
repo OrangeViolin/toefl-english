@@ -1,0 +1,155 @@
+{
+  "id": "orientation",
+  "name": "🎓 迎新·咨询台",
+  "en": "University Orientation / Info Booth",
+  "desc": "迎新·领资料·校园导览·学生证·选课·答疑·宿舍·社团·校园卡·答疑志愿者",
+  "items": [
+    {
+      "en": "Welcome to our new student orientation.",
+      "zh": "欢迎参加我们的新生迎新。",
+      "lv": "简单",
+      "chunks": ["Welcome to", "our new student orientation"],
+      "skeleton": ["欢迎", "我们的新生迎新"]
+    },
+    {
+      "en": "Pick up your orientation packet here.",
+      "zh": "在这里领取你的迎新资料包。",
+      "lv": "简单",
+      "chunks": ["Pick up", "your orientation packet", "here"],
+      "skeleton": ["领取", "迎新资料包", "在这里"]
+    },
+    {
+      "en": "Campus tours begin at the library.",
+      "zh": "校园导览从图书馆出发。",
+      "lv": "简单",
+      "chunks": ["Campus tours begin", "at the library"],
+      "skeleton": ["校园导览开始", "在图书馆"]
+    },
+    {
+      "en": "Your student ID is ready now.",
+      "zh": "你的学生证现在已办好了。",
+      "lv": "简单",
+      "chunks": ["Your student ID", "is ready now"],
+      "skeleton": ["你的学生证", "现在已办好"]
+    },
+    {
+      "en": "The housing office is right next door.",
+      "zh": "宿舍办公室就在隔壁。",
+      "lv": "简单",
+      "chunks": ["The housing office", "is right next door"],
+      "skeleton": ["宿舍办公室", "就在隔壁"]
+    },
+    {
+      "en": "Please sign in at the arrival desk.",
+      "zh": "请在报到咨询台签到。",
+      "lv": "简单",
+      "chunks": ["Please sign in", "at the arrival desk"],
+      "skeleton": ["请签到", "在报到咨询台"]
+    },
+    {
+      "en": "The student club fair begins at noon.",
+      "zh": "学生社团招新中午开始。",
+      "lv": "简单",
+      "chunks": ["The student club fair", "begins at noon"],
+      "skeleton": ["学生社团招新", "中午开始"]
+    },
+    {
+      "en": "Ask any volunteer in a blue shirt for help.",
+      "zh": "有问题请找任何穿蓝衬衫的志愿者。",
+      "lv": "中等",
+      "chunks": ["Ask any volunteer", "in a blue shirt", "for help"],
+      "skeleton": ["找任何志愿者", "穿蓝衬衫的", "求助"]
+    },
+    {
+      "en": "Your campus card also works at the dining hall.",
+      "zh": "你的校园卡在食堂也能用。",
+      "lv": "中等",
+      "chunks": ["Your campus card", "also works", "at the dining hall"],
+      "skeleton": ["你的校园卡", "也能用", "在食堂"]
+    },
+    {
+      "en": "Advisors are available all week to answer your questions.",
+      "zh": "本周整周都有顾问解答你的问题。",
+      "lv": "中等",
+      "chunks": ["Advisors are available", "all week", "to answer your questions"],
+      "skeleton": ["顾问可预约", "整周", "解答你的问题"]
+    },
+    {
+      "en": "You can add your ID photo online later.",
+      "zh": "你之后可以在线上传证件照。",
+      "lv": "中等",
+      "chunks": ["You can add", "your ID photo online", "later"],
+      "skeleton": ["你可上传", "证件照在线", "之后"]
+    },
+    {
+      "en": "Grab a campus map before you leave here.",
+      "zh": "离开这里之前拿一张校园地图。",
+      "lv": "中等",
+      "chunks": ["Grab a campus map", "before you leave", "here"],
+      "skeleton": ["拿张校园地图", "在离开前", "这里"]
+    },
+    {
+      "en": "The bookstore offers a discount during orientation week.",
+      "zh": "迎新周期间书店提供折扣。",
+      "lv": "中等",
+      "chunks": ["The bookstore offers a discount", "during orientation week"],
+      "skeleton": ["书店提供折扣", "迎新周期间"]
+    },
+    {
+      "en": "Parking permits are sold at the security office.",
+      "zh": "停车证在保卫处出售。",
+      "lv": "中等",
+      "chunks": ["Parking permits", "are sold", "at the security office"],
+      "skeleton": ["停车证", "被出售", "在保卫处"]
+    },
+    {
+      "en": "If you have not chosen your classes, an advisor is available all week.",
+      "zh": "如果你还没选课，本周整周都有顾问可以帮你。",
+      "lv": "困难",
+      "chunks": ["If you have not chosen your classes", "an advisor is available", "all week"],
+      "skeleton": ["如果你还没选课", "有顾问可预约", "整周"]
+    },
+    {
+      "en": "Students who live on campus should collect their room keys before five o'clock.",
+      "zh": "住校的学生应在五点前领取宿舍钥匙。",
+      "lv": "困难",
+      "chunks": ["Students who live on campus", "should collect their room keys", "before five o'clock"],
+      "skeleton": ["住校的学生", "应领宿舍钥匙", "五点前"]
+    },
+    {
+      "en": "When you finish the campus tour, come back here to pick up your ID.",
+      "zh": "参观完校园后，回到这里领取你的学生证。",
+      "lv": "困难",
+      "chunks": ["When you finish the campus tour", "come back here", "to pick up your ID"],
+      "skeleton": ["导览结束后", "回到这里", "领学生证"]
+    },
+    {
+      "en": "The welcome packet includes a small course guide that lists every open elective.",
+      "zh": "迎新资料包里有一本简明课程手册，列出所有开放的选修课。",
+      "lv": "困难",
+      "chunks": ["The welcome packet includes a small course guide", "that lists", "every open elective"],
+      "skeleton": ["资料包含简明课程手册", "它列出", "每门开放选修"]
+    },
+    {
+      "en": "If your card does not scan, the help desk can reset it in minutes.",
+      "zh": "如果你的卡刷不出来，服务台几分钟就能重置。",
+      "lv": "困难",
+      "chunks": ["If your card does not scan", "the help desk can reset it", "in minutes"],
+      "skeleton": ["如果卡刷不出", "服务台可重置", "几分钟内"]
+    },
+    {
+      "en": "Any student who joins a club today will get a free tote bag.",
+      "zh": "今天加入社团的学生都能领到一个免费帆布袋。",
+      "lv": "困难",
+      "chunks": ["Any student who joins a club today", "will get", "a free tote bag"],
+      "skeleton": ["今天加社团的学生", "将得到", "免费帆布袋"]
+    },
+    {
+      "en": "Because the lines get long after lunch, please pick up your keys early.",
+      "zh": "由于午餐后排队会很长，请早点来领钥匙。",
+      "lv": "困难",
+      "chunks": ["Because the lines get long after lunch", "please pick up your keys", "early"],
+      "skeleton": ["午餐后队伍长", "请领你的钥匙", "早点"]
+    }
+  ]
+}

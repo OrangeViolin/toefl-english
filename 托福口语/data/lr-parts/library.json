@@ -1,0 +1,155 @@
+{
+  "id": "library",
+  "name": "📚 图书馆",
+  "en": "Library",
+  "desc": "开放时间·借阅·罚款·安静区·预约·数据库·打印·续借·馆际互借",
+  "items": [
+    {
+      "en": "The library opens at eight.",
+      "zh": "图书馆八点开门。",
+      "lv": "简单",
+      "chunks": ["The library", "opens at eight"],
+      "skeleton": ["图书馆", "八点开门"]
+    },
+    {
+      "en": "Please return your books on time.",
+      "zh": "请按时归还图书。",
+      "lv": "简单",
+      "chunks": ["Please return", "your books", "on time"],
+      "skeleton": ["请归还", "你的书", "按时"]
+    },
+    {
+      "en": "You can borrow up to ten books.",
+      "zh": "你最多可以借十本书。",
+      "lv": "简单",
+      "chunks": ["You can borrow", "up to ten books"],
+      "skeleton": ["你可以借", "最多十本书"]
+    },
+    {
+      "en": "The quiet rooms are upstairs.",
+      "zh": "安静自习室在楼上。",
+      "lv": "简单",
+      "chunks": ["The quiet rooms", "are upstairs"],
+      "skeleton": ["安静自习室", "在楼上"]
+    },
+    {
+      "en": "Printing costs ten cents a page.",
+      "zh": "打印每页一角钱。",
+      "lv": "简单",
+      "chunks": ["Printing costs", "ten cents", "a page"],
+      "skeleton": ["打印花费", "一角钱", "每页"]
+    },
+    {
+      "en": "You may renew books online.",
+      "zh": "你可以在线续借图书。",
+      "lv": "简单",
+      "chunks": ["You may renew", "books online"],
+      "skeleton": ["你可续借", "在线图书"]
+    },
+    {
+      "en": "Please keep your voice down.",
+      "zh": "请小声说话。",
+      "lv": "简单",
+      "chunks": ["Please keep", "your voice down"],
+      "skeleton": ["请保持", "小声"]
+    },
+    {
+      "en": "Late returns are charged a small daily fine.",
+      "zh": "逾期归还每天收取少量罚金。",
+      "lv": "中等",
+      "chunks": ["Late returns", "are charged", "a small daily fine"],
+      "skeleton": ["逾期归还", "被收取", "每日少量罚金"]
+    },
+    {
+      "en": "The quiet study rooms are on the third floor.",
+      "zh": "安静自习室在三楼。",
+      "lv": "中等",
+      "chunks": ["The quiet study rooms", "are on the third floor"],
+      "skeleton": ["安静自习室", "在三楼"]
+    },
+    {
+      "en": "You can reserve a group room at the front desk.",
+      "zh": "你可以在前台预约小组研讨室。",
+      "lv": "中等",
+      "chunks": ["You can reserve", "a group room", "at the front desk"],
+      "skeleton": ["你可预约", "小组研讨室", "在前台"]
+    },
+    {
+      "en": "Our online databases are free for all students.",
+      "zh": "我们的在线数据库对全体学生免费。",
+      "lv": "中等",
+      "chunks": ["Our online databases", "are free", "for all students"],
+      "skeleton": ["在线数据库", "免费", "对全体学生"]
+    },
+    {
+      "en": "Please log in with your student ID first.",
+      "zh": "请先用你的学生证登录。",
+      "lv": "中等",
+      "chunks": ["Please log in", "with your student ID", "first"],
+      "skeleton": ["请登录", "用学生证", "先"]
+    },
+    {
+      "en": "Food and drinks are not allowed near the computers.",
+      "zh": "电脑区附近禁止携带食物和饮料。",
+      "lv": "中等",
+      "chunks": ["Food and drinks", "are not allowed", "near the computers"],
+      "skeleton": ["食物和饮料", "不被允许", "在电脑区附近"]
+    },
+    {
+      "en": "Each book can be renewed twice before the deadline.",
+      "zh": "每本书在到期前可续借两次。",
+      "lv": "中等",
+      "chunks": ["Each book", "can be renewed twice", "before the deadline"],
+      "skeleton": ["每本书", "可续借两次", "在到期前"]
+    },
+    {
+      "en": "If a book is checked out, you can place a hold and we will email you.",
+      "zh": "如果书已被借走，你可以预约，我们会邮件通知你。",
+      "lv": "困难",
+      "chunks": ["If a book is checked out", "you can place a hold", "and we will email you"],
+      "skeleton": ["如果书被借走", "你可预约", "我们会邮件通知"]
+    },
+    {
+      "en": "Reference books, which cannot leave the building, must be used at the tables here.",
+      "zh": "参考书不能带出楼外，必须在这里的桌子上使用。",
+      "lv": "困难",
+      "chunks": ["Reference books", "which cannot leave the building", "must be used at the tables here"],
+      "skeleton": ["参考书", "不能带出楼", "须在此桌上使用"]
+    },
+    {
+      "en": "When you return a book late, the fine grows by a dime each day.",
+      "zh": "当你逾期还书时，罚金每天增加一角钱。",
+      "lv": "困难",
+      "chunks": ["When you return a book late", "the fine grows", "by a dime each day"],
+      "skeleton": ["当你逾期还书", "罚金增长", "每天一角"]
+    },
+    {
+      "en": "If we don't own the title, we can request a copy through interlibrary loan.",
+      "zh": "如果我们没有这本书，可以通过馆际互借调取一册。",
+      "lv": "困难",
+      "chunks": ["If we don't own the title", "we can request a copy", "through interlibrary loan"],
+      "skeleton": ["如果没有这本书", "我们可申请一册", "通过馆际互借"]
+    },
+    {
+      "en": "Students who need to print in color should use the machine by the entrance.",
+      "zh": "需要彩色打印的学生应使用入口旁的那台机器。",
+      "lv": "困难",
+      "chunks": ["Students who need to print in color", "should use the machine", "by the entrance"],
+      "skeleton": ["需彩印的学生", "应用那台机器", "在入口旁"]
+    },
+    {
+      "en": "Because the database is busy, you may lose access when too many people log in.",
+      "zh": "由于数据库繁忙，登录人数过多时你可能会掉线。",
+      "lv": "困难",
+      "chunks": ["Because the database is busy", "you may lose access", "when too many people log in"],
+      "skeleton": ["因数据库繁忙", "你可能掉线", "当登录人太多"]
+    },
+    {
+      "en": "During the final exam week, the reading room stays open until midnight so students can study.",
+      "zh": "期末考试周期间，阅览室开放至午夜，方便学生学习。",
+      "lv": "困难",
+      "chunks": ["During the final exam week", "the reading room stays open until midnight", "so students can study"],
+      "skeleton": ["期末考试周期间", "阅览室开放至午夜", "方便学生学习"]
+    }
+  ]
+}

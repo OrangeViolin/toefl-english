@@ -125,6 +125,7 @@ function showQuestion(){
 }
 
 let result=null;
+let lastReplayUrl=null;
 async function toggleRec(){
   if(recording){
     recording=false; clearInterval(timerId);
@@ -168,9 +169,19 @@ function finishAnswer(){
   answers.push({ q, transcript:txt, duration:result.duration, wpm, fillers, engine:result.engine });
 
   const eng = result.engine==='whisper' ? ' · 转写引擎：本地 whisper ✓' : ' · ⚠️ 浏览器降级识别';
+  // 🎧 即时回放：挂上刚才这条回答，可反复听（仅本次会话，刷新即清）
+  if(lastReplayUrl){ try{ URL.revokeObjectURL(lastReplayUrl); }catch(_){} lastReplayUrl=null; }
+  let replayHtml='';
+  if(result.url){
+    lastReplayUrl=result.url;
+    replayHtml='<div class="metric" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">'+
+      '<span>🎧 回放我的回答</span>'+
+      '<audio controls preload="metadata" style="height:34px;vertical-align:middle;max-width:260px" src="'+result.url+'"></audio></div>';
+  }
   document.getElementById('answer').innerHTML =
     '<div class="metric">📝 转写：<b>'+(esc(txt)||'<i style="color:#a89a86">(空/未识别)</i>')+'</b></div>'+
-    '<div class="metric">⏱ 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 填充词(um/uh) <b>'+fillers+'</b> 次'+eng+'</div>';
+    '<div class="metric">⏱ 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 填充词(um/uh) <b>'+fillers+'</b> 次'+eng+'</div>'+
+    replayHtml;
   document.getElementById('answer').style.display='block';
 
   if(qIdx<3){

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发音规则 · 弱读</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--accent2:#e0913c;--amber:#fdeccd;--core:#2f8f83;--ok:#4a9a5e;--bad:#c04a3a;--warn:#d8903a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:22px;margin:12px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 18px}
+  .keybox{background:linear-gradient(135deg,#fff8ec,#fdf0dd);border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:14px;padding:14px 18px;font-size:15px;margin-bottom:14px;line-height:1.75}
+  .keybox b{color:var(--accent)}
+  .bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;background:#fbf7ee;border:1px solid var(--line);border-radius:12px;padding:9px 14px;margin-bottom:16px;font-size:12.5px;color:#6b6154}
+  .wk{color:var(--core);border-bottom:2px solid var(--core);font-weight:700}
+  .speedbar{display:flex;gap:6px;align-items:center}
+  .schip{border:1px solid var(--line);background:#fff;border-radius:16px;padding:4px 13px;font-size:12.5px;cursor:pointer;color:#6b6154;transition:.15s}
+  .schip:hover{border-color:var(--accent2)}
+  .schip.on{background:var(--core);color:#fff;border-color:var(--core);font-weight:700}
+  .rule-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin-bottom:18px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .rhead{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+  .rno{font-size:12px;font-weight:800;color:#fff;background:var(--accent);border-radius:10px;padding:2px 10px}
+  .rtag{font-size:12px;font-weight:700;color:var(--core);background:#e6f0ec;border-radius:10px;padding:2px 10px}
+  .rule-card h3{margin:2px 0 6px;font-size:18px}
+  .rule-card h3 .ren{font-size:13px;color:var(--muted);font-weight:600;margin-left:8px}
+  .rrule{font-size:14px;color:#4d463c;margin:0 0 4px;line-height:1.7}
+  .rrule b{color:var(--accent)}
+  .rmeta{font-size:12px;color:var(--muted);margin-bottom:10px}
+  .rlabel{font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.5px;margin:14px 0 8px;display:flex;justify-content:space-between;align-items:center}
+  .playall{font-size:12px;font-weight:700;color:var(--core);background:#e6f0ec;border:none;border-radius:14px;padding:4px 13px;cursor:pointer;font-family:inherit}
+  .playall:hover{background:#d8e8e1}
+  .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+  .pchip{background:#fff;border:1px solid var(--line);border-radius:11px;padding:8px 12px;cursor:pointer;transition:.15s}
+  .pchip:hover{border-color:var(--accent2);transform:translateY(-1px)}
+  .pchip.playing{background:var(--amber);border-color:var(--accent)}
+  .pchip .pen{font-family:Georgia,"Times New Roman",serif;font-size:15.5px;color:var(--ink)}
+  .pchip .pen .arrow{color:var(--muted);font-size:12px;margin:0 4px}
+  .pchip .pen .wf{color:var(--core);font-weight:800}
+  .pchip .pzh{font-size:11.5px;color:var(--muted);margin-top:1px}
+  .slist{display:flex;flex-direction:column;gap:6px}
+  .srow{display:flex;gap:10px;align-items:center;background:#faf7f0;border:1px solid var(--line);border-radius:11px;padding:8px 12px}
+  .splay{flex:0 0 auto;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#efe8d8;cursor:pointer;font-size:14px;transition:.15s}
+  .splay:hover{background:#e5dccb}
+  .srow.playing .splay{background:var(--amber);border-color:var(--accent)}
+  .srow .sen{font-family:Georgia,"Times New Roman",serif;font-size:16.5px;line-height:1.45}
+  .srow .szh{font-size:12px;color:var(--muted)}
+  .method{background:#fbf7ee;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:18px;font-size:13.5px;color:#5f574c;line-height:1.75}
+  .method b{color:var(--accent)}
+  .method .steps3{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:10px 0}
+  .step3{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:12.5px}
+  .step3 b{display:block;color:var(--core);margin-bottom:2px}
+  .trap{background:#fff8ec;border-left:4px solid var(--accent2);border-radius:0 10px 10px 0;padding:8px 13px;margin-top:10px;font-size:12.5px}
+  .selftest{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .selftest h3{margin:0 0 4px;font-size:17px}
+  .selftest .tip{font-size:12.5px;color:#6b6154;margin-bottom:12px;line-height:1.65}
+  .btn{border:none;border-radius:22px;padding:11px 22px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.rec{background:var(--accent);color:#fff}
+  .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
+  .live{min-height:38px;padding:9px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:13.5px;color:#6b6154;margin-top:12px}
+  .playback{display:none;margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+  .playback audio{width:100%;height:38px;margin-top:6px}
+  .playback .tt{font-size:12.5px;color:#5f574c;background:#f0f6f3;border:1px dashed #cfe3db;border-radius:10px;padding:8px 12px;margin-top:8px}
+  .hint{color:var(--muted);font-size:12.5px;margin-top:14px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./发音规则.html">← 发音规则总览</a><span>五大连读现象 · ⑤ 弱读</span></div>
+  <h1>🌊 弱读</h1>
+  <div class="en">Weak Forms / Reductions</div>
+  <div class="desc">英语的节奏是"强弱交替"：<b>实词重读、虚词弱读</b>。一句话里大半的音都是弱的——这就是为什么 native 说得快却不费劲，也是你"每个词都认识却听不懂"的最大原因。</div>
+
+  <div class="keybox">
+    <b>一句话总结：</b>介词、连词、冠词、助动词、代词这些<b>虚词</b>，在句中一律<b>弱化成 /ə/ 轻带而过</b>：and /ænd/ → /ən/，of /ɒv/ → /əv/，to /tuː/ → /tə/，can /kæn/ → /kən/。把力气留给名词、动词这些实词。
+  </div>
+
+  <div class="bar">
+    <span>标注：<span class="wk">绿色下划线</span> = 弱读的虚词（读成 /ə/，轻而快）。<b>点任意条目听示范</b>。</span>
+    <span class="speedbar">示范语速：
+      <span class="schip on" data-r="0.9" onclick="setRate(this)">▶ 常速</span>
+      <span class="schip" data-r="0.62" onclick="setRate(this)">🐢 慢速</span>
+    </span>
+  </div>
+
+  <div id="rules"></div>
+
+  <div class="rule-card" id="strong"></div>
+
+  <div class="method">
+    <b>🎯 怎么练：</b>
+    <div class="steps3">
+      <div class="step3"><b>① 先找实词</b>读句子前圈出名词/动词/形容词——它们才是要重读的</div>
+      <div class="step3"><b>② 虚词"糊弄"过去</b>介词连词一律 /ə/ 化，又轻又快，不要字正腔圆</div>
+      <div class="step3"><b>③ 打出节奏</b>边读边打拍子：重读音节落在拍子上，弱读挤在两拍之间</div>
+    </div>
+    口诀：<b>实词砸重音，虚词全读"呃"。</b>
+    <div class="trap">
+      <b>两个坑：</b>
+      ❌ 每个词都字正腔圆（AND、OF、TO 全读强读式 → 中式腔、还把自己累个半死）；
+      ❌ 写作里用 gonna/wanna（口语缩读<b>只能嘴上说</b>，写作和正式场合禁用）。
+    </div>
+  </div>
+
+  <div class="selftest">
+    <h3>🎙 跟读自测（录音 → 回放对比）</h3>
+    <div class="tip">转写引擎<b>听不出</b>你的弱读是否到位（它只认词），所以本页不打分：先点 🔊 听示范 → 录音跟读 → 回放，听你的虚词是不是"轻飘带过"、实词是不是"砸得下去"。</div>
+    <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始跟读</button>
+    <div class="live" id="live">录音前可以先点上面的短句听几遍示范。</div>
+    <div class="playback" id="playback">
+      <div style="font-size:13px;font-weight:700;color:var(--core)">🔁 回放我的录音：</div>
+      <audio id="audioEl" controls></audio>
+      <div class="tt" id="tt"></div>
+    </div>
+  </div>
+
+  <div class="hint">💡 弱读是 5 条规则里"贯穿每句话"的一条：它不给单个词变色，而是决定整句的节奏。听力提分关键：听到 /kən/ 要反应出 can（肯定），听到顿挫的 /kæn(t)/ 要反应出 can't（否定）。</div>
+</div>
+
+<script src="./speech-core.js"></script>
+<script>
+/* ================= 数据：弱读 3 条规则 + 强读对比 =================
+ * 标注约定：_word_ = 弱读的虚词（播放时去掉下划线）
+ */
+const RULES = [
+  {
+    no:'规则 1', tag:'虚词词表',
+    name:'12 个最高频弱读词（强读 → 弱读）', en:'Top Weak Forms',
+    rule:'这 12 个词在句中<b>默认弱读</b>。点卡片听它在短语里的真实读法（单词单独念都是强读式，必须放进短语里听）。',
+    meta:'and / of / to / for / are / can / have / was / you / your / them / at',
+    phrases:[
+      {t:'and', weak:'/ən/', ex:'black and white', zh:'黑与白'},
+      {t:'of', weak:'/əv/', ex:'a cup of tea', zh:'一杯茶'},
+      {t:'to', weak:'/tə/', ex:'go to school', zh:'去上学'},
+      {t:'for', weak:'/fər/', ex:'this is for you', zh:'这是给你的'},
+      {t:'are', weak:'/ər/', ex:'they are fine', zh:'他们很好'},
+      {t:'can', weak:'/kən/', ex:'I can swim', zh:'我会游泳'},
+      {t:'have', weak:'/əv/', ex:'I could have done it', zh:'我本来能做到'},
+      {t:'was', weak:'/wəz/', ex:'he was late', zh:'他迟到了'},
+      {t:'you', weak:'/jə/', ex:'thank you', zh:'谢谢'},
+      {t:'your', weak:'/jər/', ex:'take your time', zh:'慢慢来'},
+      {t:'them', weak:'/əm/', ex:'tell them', zh:'告诉他们'},
+      {t:'at', weak:'/ət/', ex:'look at it', zh:'看看它'}
+    ],
+    wordcards:true,
+    sentences:[]
+  },
+  {
+    no:'规则 2', tag:'句中实战',
+    name:'整句弱读示范', en:'Weak Forms in Sentences',
+    rule:'注意每句里<b>绿色下划线的虚词</b>全都又轻又快——重音只落在实词上。',
+    meta:'跟读时先只听，再模仿"强弱交替"的节奏',
+    phrases:[],
+    sentences:[
+      {t:'This is _for_ _you_.',zh:'这是给你的。'},
+      {t:'They _are_ from China.',zh:'他们来自中国。'},
+      {t:'I _can_ help _you_.',zh:'我可以帮你。'},
+      {t:'What _are_ _you_ doing?',zh:'你在做什么？'},
+      {t:'A cup _of_ tea, please.',zh:'请来杯茶。'},
+      {t:'He _was_ _at_ home.',zh:'他当时在家。'},
+      {t:'I _must_ go now.',zh:'我得走了。（must → /məst/）'}
+    ]
+  },
+  {
+    no:'规则 3', tag:'口语缩读',
+    name:'gonna / wanna / gotta（听力必懂）', en:'Informal Reductions',
+    rule:'口语里常见的缩读：<b>听力必须听懂、口语可以自然带出</b>，但写作和正式场合禁用。',
+    meta:'going to → gonna · want to → wanna · got to → gotta · kind of → kinda',
+    phrases:[
+      {t:'gonna', weak:'going to', ex:"I'm gonna go.", zh:'我要走了'},
+      {t:'wanna', weak:'want to', ex:'I wanna try.', zh:'我想试试'},
+      {t:'gotta', weak:'got to', ex:'I gotta run.', zh:'我得赶紧走了'},
+      {t:'kinda', weak:'kind of', ex:"It's kinda late.", zh:'有点晚了'},
+      {t:'lemme', weak:'let me', ex:'Lemme see.', zh:'让我看看'},
+      {t:'gimme', weak:'give me', ex:'Gimme a hand.', zh:'帮我一把'},
+      {t:"'cause", weak:'because', ex:"'cause I said so.", zh:'因为是我说的'},
+      {t:'outta', weak:'out of', ex:"I'm outta here.", zh:'我闪人了'}
+    ],
+    wordcards:true,
+    sentences:[]
+  }
+];
+
+const STRONG = {
+  no:'补充', tag:'什么时候强读',
+  name:'这些情况虚词反而要读强读式', en:'When to Stress',
+  rule:'<b>强调、对比、句尾、单独念</b>时，虚词要读回强读式——别弱读错了地方。',
+  meta:'强调 "我会！" → Yes, I CAN! · 句尾 → looking AT',
+  phrases:[],
+  sentences:[
+    {t:'Yes, I CAN!',zh:'是的，我会！（强调 → can 读 /kæn/）'},
+    {t:'What are you looking AT?',zh:'你在看什么？（句尾介词强读 /æt/）'},
+    {t:'I said AND, not OR.',zh:'我说的是"和"，不是"或"。（对比强调）'}
+  ]
+};
+
+/* ================= 渲染 ================= */
+let rate = 0.9;
+
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+// _word_ → 绿色下划线弱读词；播放时去掉下划线
+function marked(s){ return esc(s).replace(/_([^_]+)_/g,'<span class="wk">$1</span>'); }
+function plain(s){ return (s||'').replace(/_/g,''); }
+
+function ruleHTML(r, idx){
+  let h = '<div class="rhead"><span class="rno">'+esc(r.no)+'</span><span class="rtag">'+esc(r.tag)+'</span></div>'
+        + '<h3>'+esc(r.name)+'<span class="ren">'+esc(r.en)+'</span></h3>'
+        + '<p class="rrule">'+r.rule+'</p>'
+        + '<div class="rmeta">'+esc(r.meta)+'</div>';
+  if(r.wordcards && r.phrases.length){
+    h += '<div class="pgrid">'
+      + r.phrases.map((p,i)=>'<div class="pchip" id="p'+idx+'-'+i+'" onclick="playItem(\''+esc(p.ex).replace(/'/g,"\\'")+'\',this)"><div class="pen">'+esc(p.t)+'<span class="arrow">→</span><span class="wf">'+esc(p.weak)+'</span></div><div class="pzh">'+esc(p.ex)+' · '+esc(p.zh)+'</div></div>').join('')
+      + '</div>';
+  } else if(r.phrases && r.phrases.length){
+    h += '<div class="rlabel">📎 示范短语（点一下听发音）</div><div class="pgrid">'
+      + r.phrases.map((p,i)=>'<div class="pchip" id="p'+idx+'-'+i+'" onclick="playItem(\''+esc(plain(p.t)).replace(/'/g,"\\'")+'\',this)"><div class="pen">'+marked(p.t)+'</div><div class="pzh">'+esc(p.zh)+'</div></div>').join('')
+      + '</div>';
+  }
+  if(r.sentences && r.sentences.length){
+    h += '<div class="rlabel">🗣 示范短句<button class="playall" onclick="playAll('+idx+')">▶ 连播整组</button></div><div class="slist">'
+      + r.sentences.map((s,i)=>'<div class="srow" id="s'+idx+'-'+i+'"><button class="splay" onclick="playItem(\''+esc(plain(s.t)).replace(/'/g,"\\'")+'\',document.getElementById(\'s'+idx+'-'+i+'\'))">🔊</button><div><div class="sen">'+marked(s.t)+'</div><div class="szh">'+esc(s.zh)+'</div></div></div>').join('')
+      + '</div>';
+  }
+  return h;
+}
+
+const ALL = [...RULES, STRONG];
+document.getElementById('rules').innerHTML = RULES.map((r,i)=>'<div class="rule-card">'+ruleHTML(r,i)+'</div>').join('');
+document.getElementById('strong').innerHTML = ruleHTML(STRONG, RULES.length);
+
+/* ================= 播放 ================= */
+function setRate(el){
+  document.querySelectorAll('.schip').forEach(c=>c.classList.remove('on'));
+  el.classList.add('on');
+  rate = parseFloat(el.dataset.r);
+}
+
+async function playItem(text, el){
+  if(el) el.classList.add('playing');
+  await VocaSpeech.say(text, rate);
+  if(el) el.classList.remove('playing');
+}
+
+async function playAll(idx){
+  const group = ALL[idx];
+  for(let i=0;i<group.sentences.length;i++){
+    const el = document.getElementById('s'+idx+'-'+i);
+    if(el) el.classList.add('playing');
+    await VocaSpeech.say(plain(group.sentences[i].t), rate);
+    if(el) el.classList.remove('playing');
+  }
+}
+
+/* ================= 跟读自测（录音回放，不打分） ================= */
+let recording = false;
+
+async function toggleRec(){
+  const btn = document.getElementById('recBtn');
+  const live = document.getElementById('live');
+  if(recording){
+    recording = false;
+    btn.textContent = '🎙 开始跟读';
+    btn.classList.remove('recording');
+    live.innerHTML = '⏳ 正在处理录音…';
+    const result = await VocaSpeech.stop();
+    const pb = document.getElementById('playback');
+    pb.style.display = 'block';
+    document.getElementById('audioEl').src = result.url;
+    document.getElementById('tt').innerHTML = '📝 转写（仅供对照有没有漏词）：<b>'+esc(result.transcript||'(未识别)')+'</b>'
+      + (result.engine==='whisper' ? ' <span style="color:#2f8f83;font-size:11.5px">(whisper ✓)</span>' : ' <span style="color:#d8903a;font-size:11.5px">(浏览器降级)</span>');
+    live.innerHTML = '录好了（'+result.duration.toFixed(0)+' 秒）👇 点播放回放，听你的句子有没有"强弱交替"的节奏感。';
+  } else {
+    try{
+      await VocaSpeech.start(()=>{});
+      recording = true;
+      btn.textContent = '⏹ 停止';
+      btn.classList.add('recording');
+      live.innerHTML = '🎙 录音中…挑规则 2 的短句跟读，重点模仿虚词的轻读，读完点「停止」。';
+      document.getElementById('playback').style.display = 'none';
+    }catch(e){ alert(e.message); }
+  }
+}
+
+if(!VocaSpeech.supported){
+  document.getElementById('live').innerHTML = '<b style="color:#c04a3a">⚠️ 录音需要 Chrome/Edge，并通过 start.command 打开的 localhost 页面访问。</b>（点读示范不受影响）';
+}
+</script>
+</body>
+</html>

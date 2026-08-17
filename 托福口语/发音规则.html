@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发音规则 · 五大连读现象</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--accent2:#e0913c;--core:#2f8f83;--bad:#c04a3a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 20px 80px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:24px;margin:12px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .desc{color:#5f574c;font-size:14px;max-width:780px;margin:8px 0 18px}
+  .keybox{background:linear-gradient(135deg,#fff8ec,#fdf0dd);border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:14px;padding:14px 18px;font-size:14px;margin-bottom:20px;line-height:1.8}
+  .keybox b{color:var(--accent)}
+  .keybox table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  .keybox th,.keybox td{border:1px solid #f0d9b0;padding:5px 9px;text-align:left;vertical-align:top}
+  .keybox th{background:#f7ead2;color:#8a5a22;font-weight:700}
+  .keybox td.eg{font-family:Georgia,serif}
+  .lp{color:var(--bad);font-weight:800}
+  .lk{color:var(--core);font-weight:800}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;text-decoration:none;color:inherit;box-shadow:0 2px 12px rgba(150,120,70,.06);transition:.15s}
+  a.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(150,120,70,.15);border-color:#d8c8a8}
+  .card .emoji{font-size:36px}
+  .card h2{font-size:18px;margin:10px 0 4px}
+  .card .en2{color:var(--accent);font-weight:600;font-size:13px}
+  .card p{color:#5f574c;font-size:13.5px;margin:8px 0 0}
+  .card .n{float:right;font-size:11px;color:var(--core);background:#e6f0ec;border-radius:10px;padding:2px 9px;font-weight:700}
+  .method{background:#fbf7ee;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:20px;font-size:13.5px;color:#5f574c;line-height:1.75}
+  .method b{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./index.html">← 返回口语主页</a><span>发音规则 · 五大连读现象</span></div>
+  <h1>🗣 英语发音五大连读现象</h1>
+  <div class="en">Linking · Loss of Plosion · Gemination · Assimilation · Weak Forms</div>
+  <div class="desc">native 说话"快而糊"不是因为嘴快，而是这 5 条规则在同时起作用。每条规则一个子页面：<b>规则总结 + 可点读的示范短语短句 + 跟读录音自测</b>。学完后在「听力复述」里对照原句找这些现象，听力口语一起涨。</div>
+
+  <div class="keybox">
+    <b>一句话区分 5 者：</b>
+    <table>
+      <tr><th>现象</th><th>什么时候发生</th><th>结果</th><th>例</th></tr>
+      <tr><td><b>连读</b></td><td>尾音是辅音、下词元首是元音</td><td>辅音直接"拼"到后面的元音上</td><td class="eg">an<span class="lk">~</span>apple → "a-napple"</td></tr>
+      <tr><td><b>失去爆破</b></td><td>爆破音 /p b t d k g/ 后紧跟辅音</td><td>只做口型、憋住不爆发</td><td class="eg">si<span class="lp">(t)</span> down</td></tr>
+      <tr><td><b>叠音</b></td><td>相邻两词首尾是<b>相同</b>辅音</td><td>合并成一个，只发一次、稍拖长</td><td class="eg">blac<span class="lp">(k)</span><span class="lk">~</span>coffee</td></tr>
+      <tr><td><b>同化</b></td><td>两音相撞（最典型 t/d/s/z + y）</td><td>变成另一个更顺口的音</td><td class="eg">mee<span class="lp">(t)</span><span class="lk">~</span>you → "mi-chu"</td></tr>
+      <tr><td><b>弱读</b></td><td>句中虚词（介/连/冠/助/代）</td><td>弱化成 /ə/ 轻带而过，实词才重读</td><td class="eg">and → /ən/</td></tr>
+    </table>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="./连读.html">
+      <span class="n">出现频率最高</span>
+      <div class="emoji">🔗</div>
+      <h2>① 连读</h2>
+      <div class="en2">Linking / Liaison · 3 条规则 + h 击穿</div>
+      <p>辅音+元音直接拼读（an~apple）、元音+元音加滑音 /j/ /w/（go~out → go-w-out）、r 结尾连读（for~example）。让一句话"粘"成一串。</p>
+    </a>
+    <a class="card" href="./失去爆破.html">
+      <div class="emoji">🔇</div>
+      <h2>② 失去爆破</h2>
+      <div class="en2">Loss of Plosion · 4 条规则 + 词内/句尾</div>
+      <p>爆破音遇到辅音就"只做口型不爆破"：si(t) down、goo(d) morning、a(t) last。口语顺滑的关键，也是听力"少半个音"的元凶。</p>
+    </a>
+    <a class="card" href="./叠音.html">
+      <div class="emoji">✌️</div>
+      <h2>③ 叠音</h2>
+      <div class="en2">Gemination · 相同辅音只发一次</div>
+      <p>相邻两词首尾辅音相同时合并成一个、稍拖长：blac(k)~coffee、ho(t)~tea、so(m)e~milk。不要读两遍。</p>
+    </a>
+    <a class="card" href="./同化.html">
+      <div class="emoji">🧬</div>
+      <h2>④ 同化</h2>
+      <div class="en2">Assimilation · t/d/s/z + y 变音</div>
+      <p>两音相撞变成更顺口的音：mee(t)~you→"mi-chu"、di(d)~you→"di-ju"、mi(ss)~you→"mi-shu"，以及 n 在 k/g 前变 ng、在 p/b 前变 m。</p>
+    </a>
+    <a class="card" href="./弱读.html">
+      <span class="n">贯穿每句话</span>
+      <div class="emoji">🌊</div>
+      <h2>⑤ 弱读</h2>
+      <div class="en2">Weak Forms / Reductions · /ə/ 化</div>
+      <p>虚词（and/of/to/for/can/are/you…）在句中弱读成 /ə/；gonna/wanna/gotta 缩读听力必懂。英语的"节奏感"就来自强弱交替。</p>
+    </a>
+  </div>
+
+  <div class="method">
+    <b>📅 建议学习顺序与练法：</b>按 ①→⑤ 的顺序，每天一条规则：短语逐个跟读 3 遍 → 短句跟读 → 录音自测回放对比。一周轮完一轮；之后去「听力复述」听原句，逐句找"这里用了哪条规则"——听得出，才说得出。
+  </div>
+</div>
+</body>
+</html>
