@@ -137,6 +137,22 @@
   .bank .row .del{cursor:pointer;color:#c04a3a;font-weight:700}
   .bank .tools{margin:10px 0}
   .bank .tools button{border:none;border-radius:16px;padding:6px 14px;font-size:12.5px;cursor:pointer;margin-right:8px}
+  .gloss .sub{font-weight:800;color:#7a5bb0;margin:10px 0 2px;font-size:12.5px}
+  /* 综合判分（一套完成）*/
+  .setSummary{display:none;margin-top:16px;border:2px solid #cfe3db;background:linear-gradient(#f3faf7,#eef6f3);border-radius:16px;padding:18px 20px;text-align:center}
+  .setSummary .sum-head{font-size:14px;font-weight:800;color:var(--core)}
+  .setSummary .sum-big{font-size:46px;font-weight:900;color:var(--core);line-height:1.05;margin:6px 0}
+  .setSummary .sum-big span{font-size:20px;color:#8c8072;font-weight:700}
+  .setSummary .sum-sub{font-size:13px;color:#5f574c;margin-bottom:12px}
+  .setSummary .sum-cells{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:12px}
+  .scell{display:inline-flex;flex-direction:column;align-items:center;min-width:54px;padding:6px 8px;border-radius:10px;font-size:11px;color:#8c8072;background:#fff;border:1px solid var(--line)}
+  .scell b{font-size:20px;font-weight:900;margin:1px 0}
+  .scell i{font-style:normal;font-size:10px;color:#8c8072}
+  .scell.b5,.scell.b4{border-color:#bfe0d0}.scell.b5 b,.scell.b4 b{color:var(--ok)}
+  .scell.b3,.scell.b2{border-color:#f0d9b0}.scell.b3 b,.scell.b2 b{color:var(--warn)}
+  .scell.b1,.scell.b0{border-color:#f0c4bc}.scell.b1 b,.scell.b0 b{color:var(--bad)}
+  .setSummary .sum-note{font-size:11.5px;color:#8c8072;margin-bottom:12px}
+  .setSummary .sum-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -218,11 +234,11 @@
       <span id="chunkWords"></span>
     </div>
     <div class="aidpanel vocab" id="vocab">
-      <span class="lbl">📖 本句生词（点词加入生词本 · ★带下划线者有释义）</span>
+      <span class="lbl">📖 单词解析（单词生词 + 固定搭配/表达 · 点词或＋加入生词本）</span>
       <div id="vocabBody"></div>
     </div>
     <div class="aidpanel linking" id="linking">
-      <span class="lbl">🔗 本句连读参考（连读 / 失去爆破 / 叠音 / 同化 / 弱读）</span>
+      <span class="lbl">🔗 读音解析（连读 / 失去爆破 / 叠音 / 同化 / 弱读）</span>
       <div id="linkingBody"></div>
     </div>
 
@@ -231,8 +247,8 @@
       <button class="btn play" id="btnSlow" onclick="playSlow()">🐢 慢速</button>
       <button class="btn play" id="btnChunks" onclick="playChunks()">🧩 分块重放</button>
       <button class="btn play" id="btnSkel" onclick="toggleSkeleton()">🦴 骨架提示</button>
-      <button class="btn play" id="btnVocab" onclick="showVocab()">📖 生词解析</button>
-      <button class="btn play" id="btnLink" onclick="showLinking()">🔗 连读解析</button>
+      <button class="btn play" id="btnVocab" onclick="showVocab()">📖 单词解析</button>
+      <button class="btn play" id="btnLink" onclick="showLinking()">🔗 读音解析</button>
       <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
       <button class="btn exam" id="examBtn" onclick="startExam()">⏱ 限时答题</button>
       <button class="btn next" id="nextBtn" onclick="next()">下一句 →</button>
@@ -264,6 +280,8 @@
         <button class="copy" onclick="copyReport()">📋 复制答题报告</button>
       </div>
     </div>
+
+    <div class="setSummary" id="setSummary"></div>
 
     <div class="hint">💡 <b>练每一句</b>：随时用「🔊 播放原句 / 🐢 慢速 / 🧩 分块重放 / 🦴 骨架提示」磨这句（都不限时、可反复）；「🎙 开始录音」自由复述打分。<b>要考场感</b>就点「⏱ 限时答题」——只放一遍、读完自动限时（短 8s／中 10s／长 14s）录音、到点截断。</div>
   </div>
@@ -544,10 +562,23 @@ const GLOSS = {
   facing:{ipa:'/ˈfeɪsɪŋ/',zh:'朝向'}, available:{ipa:'/əˈveɪləbl/',zh:'可获得的；有空的'}, offered:{ipa:'/ˈɔːfərd/',zh:'提供'}, appointment:{ipa:'/əˈpɔɪntmənt/',zh:'预约'}, register:{ipa:'/ˈrɛdʒɪstər/',zh:'注册；登记'}
 };
 // 短语释义（bigram，去连字符后匹配）
-const PHRASES = {
-  'sign in':'签到', 'wipe down':'擦净', 'check in':'办理入住', 'check out':'退房；借出',
-  'fill out':'填写', 'log into':'登录', 'log in':'登录', 'sign up':'报名', 'carry out':'带走；执行',
-  'move in':'入住；搬入', 'walk in':'免预约就诊', 'drop off':'放下；送到', 'pick up':'领取；取'
+// 固定搭配 / 表达（含短语动词、介副词搭配、固定名词表达）；扫 3-gram 再 2-gram
+const EXPR = {
+  // 短语动词
+  'sign in':'签到', 'sign up':'报名', 'sign up for':'报名参加', 'check in':'办理入住／签到',
+  'check out':'退房；借出', 'fill out':'填写', 'log in':'登录', 'log into':'登录',
+  'pick up':'领取；取', 'drop off':'放下；送到', 'carry out':'执行；带走', 'wipe down':'擦净',
+  'move in':'入住；搬入', 'walk in':'免预约就诊', 'run out of':'用完', 'hand in':'上交',
+  // 介副词固定搭配
+  'up to':'最多；多达', 'on time':'准时', 'in advance':'提前', 'right away':'立刻；马上',
+  'at all times':'任何时候；始终', 'as planned':'按计划', 'such as':'例如', 'as soon as':'一…就…',
+  'no later than':'不迟于', 'free of charge':'免费', 'in case':'以防；万一', 'according to':'根据',
+  'due to':'由于', 'instead of':'而不是', 'in order to':'为了', 'a variety of':'各种各样的',
+  'make sure':'确保', 'be sure to':'务必', 'feel free to':'尽管（做某事）', 'at once':'立刻',
+  // 固定名词表达
+  'front desk':'前台', 'boarding pass':'登机牌', 'meal plan':'膳食计划', 'room key':'房间钥匙',
+  'guided tour':'导览', 'audio guide':'语音导览', 'membership card':'会员卡', 'quiet hours':'安静时段',
+  'due date':'到期日', 'gift shop':'礼品店', 'study rooms':'自习室', 'main entrance':'正门'
 };
 function sceneVocab(){ const v=curScene()&&curScene().vocab; return (v&&typeof v==='object'&&!Array.isArray(v))?v:{}; }
 function lookupGloss(key){ return sceneVocab()[key] || GLOSS[key] || null; }
@@ -590,14 +621,22 @@ function showVocab(){
     const g=lookupGloss(key); const saved=inBank(key);
     return '<span class="wchip'+(g?' has':'')+(saved?' saved':'')+'" onclick="clickWordAt('+i+')">'+esc(w)+'</span>';
   }).join('');
-  const toks=q.en.toLowerCase().replace(/[^a-zà-ÿ' -]/g,' ').replace(/-/g,' ').split(/\s+/).filter(Boolean);
-  _vitems=[]; const seen=new Set();
-  for(let i=0;i<toks.length-1;i++){ const bg=toks[i]+' '+toks[i+1]; if(PHRASES[bg]){ _vitems.push({w:bg, ipa:'', zh:PHRASES[bg]}); } }
-  for(const t of toks){ const g=lookupGloss(t); if(g && !seen.has(t)){ seen.add(t); _vitems.push({w:t, ipa:g.ipa||'', zh:g.zh||''}); } }
-  const gl = _vitems.length
-    ? _vitems.map((it,k)=>'<span class="g">• <b>'+esc(it.w)+'</b> <span class="ipa">'+esc(it.ipa)+'</span> '+esc(it.zh)+' <span class="add" onclick="addBankAt('+k+')">＋加入</span></span>').join('')
-    : '<span class="g" style="color:#8c8072">本句没有预置释义的重点词；仍可点上面任意词加入生词本。</span>';
-  document.getElementById('vocabBody').innerHTML='<div style="margin-bottom:4px">'+chips+'</div><div class="gloss">'+gl+'</div>';
+  // 扫描 token（去撇号）
+  const toks=q.en.toLowerCase().replace(/'/g,'').replace(/[^a-zà-ÿ -]/g,' ').replace(/-/g,' ').split(/\s+/).filter(Boolean);
+  // 固定搭配/表达：先 3-gram 再 2-gram
+  const exprs=[]; const eseen=new Set();
+  for(let n=3;n>=2;n--){ for(let i=0;i+n<=toks.length;i++){ const ph=toks.slice(i,i+n).join(' '); if(EXPR[ph]&&!eseen.has(ph)){ eseen.add(ph); exprs.push({w:ph,ipa:'',zh:EXPR[ph]}); } } }
+  // 单词
+  const words=[]; const wseen=new Set();
+  for(const t of toks){ const g=lookupGloss(t); if(g&&!wseen.has(t)){ wseen.add(t); words.push({w:t,ipa:g.ipa||'',zh:g.zh||''}); } }
+  _vitems=[...words,...exprs];   // addBankAt 用组合下标
+  const item=(it,k)=>'<span class="g">• <b>'+esc(it.w)+'</b> <span class="ipa">'+esc(it.ipa)+'</span> '+esc(it.zh)+' <span class="add" onclick="addBankAt('+k+')">＋加入</span></span>';
+  const wordHtml = words.length ? words.map((it,k)=>item(it,k)).join('') : '<span class="g" style="color:#8c8072">本句无预置释义生词；可点上方任意词加入生词本。</span>';
+  const exprHtml = exprs.length ? exprs.map((it,k)=>item(it,words.length+k)).join('') : '<span class="g" style="color:#8c8072">本句未匹配到固定搭配。</span>';
+  document.getElementById('vocabBody').innerHTML =
+    '<div style="margin-bottom:4px">'+chips+'</div>'+
+    '<div class="gloss"><div class="sub">📘 单词</div>'+wordHtml+
+    '<div class="sub">🔗 固定搭配 / 表达</div>'+exprHtml+'</div>';
 }
 function clickWordAt(i){
   const w=_vwords[i]||''; const key=w.toLowerCase().replace(/[^a-zà-ÿ'-]/g,'');
@@ -751,6 +790,9 @@ function renderResult(){
     '请 cc 核对上面的自动估分（一致性），结合我的发音清晰度给最终 0–5，并累计到本套 与折算 /6。';
   document.getElementById('reportText').value = rep;
   document.getElementById('result').style.display='block';
+
+  // 一套 7 句答满 → 弹出综合判分（六分制）
+  if(isSetComplete()) showSetSummary(); else hideSetSummary();
 }
 
 let lastReplayUrl=null;
@@ -776,18 +818,38 @@ function copyReport(){
   alert('已复制答题报告，回到对话粘贴给 cc 即可打分');
 }
 
-// 下一句：本套内推进；到末句：模拟套题→自动换一套；其它题组→跳下一场景
-function next(){
-  if(idx+1 < work.length){
-    idx++;
-  } else if(listMode==='mock'){
-    buildWork();     // 换新一套，留在本场景
-  } else {
-    sceneIdx = (sceneIdx+1) % SCENES.length;
-    buildWork();
-    renderScenePicker();
-  }
+// ===== 一套完成 → 综合判分（六分制）=====
+function isSetComplete(){ return work.length>0 && workScores.filter(v=>v!==null).length===work.length; }
+function showSetSummary(){
+  const el=document.getElementById('setSummary'); if(!el) return;
+  const sc=workScores.slice();
+  const raw=sc.reduce((a,b)=>a+(b||0),0);
+  const norm7=Math.round((raw/work.length)*7);      // 归一到 7 句制 → 对齐官方 /35 换算
+  const sec=rawToSection(norm7);
+  const cells=sc.map((s,i)=>'<span class="scell b'+s+'">'+(i+1)+'<b>'+s+'</b><i>'+(work[i]?TIER_ZH[work[i].tier]:'')+'</i></span>').join('');
+  el.style.display='block';
+  el.innerHTML=
+    '<div class="sum-head">🎉 本套完成 · 综合判分（六分制）</div>'+
+    '<div class="sum-big">'+sec.toFixed(1)+'<span> / 6</span></div>'+
+    '<div class="sum-sub">原始分 <b>'+raw+'</b>/'+(work.length*5)+' · 均分 <b>'+(raw/work.length).toFixed(1)+'</b>/5 · 7 句制折算 <b>'+norm7+'</b>/35</div>'+
+    '<div class="sum-cells">'+cells+'</div>'+
+    '<div class="sum-note">换算：≥33→6.0 · 31–32→5.5 · 29–30→5.0 · 26–28→4.5 · 24–25→4.0（官方，按 /35）· 发音清晰度可让 cc 复核微调</div>'+
+    '<div class="sum-actions"><button class="btn exam" onclick="nextSet()">🔀 再来一套</button><button class="btn play" onclick="hideSetSummary()">✕ 收起</button></div>';
+  try{ el.scrollIntoView({behavior:'smooth',block:'nearest'}); }catch(_){}
+}
+function hideSetSummary(){ const el=document.getElementById('setSummary'); if(el){ el.style.display='none'; el.innerHTML=''; } }
+function nextSet(){
+  hideSetSummary();
+  if(listMode==='mock'){ buildWork(); }
+  else { sceneIdx=(sceneIdx+1)%SCENES.length; buildWork(); renderScenePicker(); }
   renderQuestion();
+}
+
+// 下一句：本套内推进；到末句且已答满→综合判分；未答满→下一套/下一场景
+function next(){
+  if(idx+1 < work.length){ idx++; renderQuestion(); return; }
+  if(isSetComplete()){ showSetSummary(); return; }
+  nextSet();
 }
 
 // 场景选择
@@ -824,6 +886,7 @@ function renderQuestion(){
   document.getElementById('chunks').style.display='none';
   document.getElementById('vocab').style.display='none';
   document.getElementById('linking').style.display='none';
+  hideSetSummary();
   document.getElementById('playBtn').disabled=false;
   document.getElementById('examBtn').disabled=false;
   setRecUI(false);
