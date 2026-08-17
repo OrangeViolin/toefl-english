@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-store">
+<title>场景高频词 · 听力复述词库</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--vio:#7a5bb0}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 20px 80px}
+  .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:22px;margin:12px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .desc{color:#5f574c;font-size:14px;max-width:780px;margin:8px 0 16px}
+  .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+  .bar input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:20px;padding:9px 16px;font-size:14px;background:var(--card);font-family:inherit}
+  .bar .cnt{font-size:12.5px;color:var(--muted)}
+  .navchips{display:flex;gap:8px;overflow-x:auto;padding:6px 0 14px}
+  .navchips a{flex:0 0 auto;text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:20px;padding:6px 13px;font-size:13px;color:#5f574c;white-space:nowrap}
+  .navchips a:hover{border-color:var(--accent)}
+  .scene{margin-bottom:26px;scroll-margin-top:14px}
+  .scene h2{font-size:18px;margin:0 0 4px}
+  .scene .sd{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+  .wcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:0 2px 10px rgba(150,120,70,.05)}
+  .wcard .w{font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:700}
+  .wcard .ipa{color:var(--vio);font-family:ui-monospace,Menlo,monospace;font-size:13px;margin:2px 0}
+  .wcard .zh{color:#5f574c;font-size:13.5px}
+  .wcard .acts{margin-top:8px;display:flex;gap:8px}
+  .wcard button{border:none;border-radius:16px;padding:5px 12px;font-size:12.5px;cursor:pointer;font-family:inherit}
+  .wcard .say{background:#efe8d8;color:var(--ink)}
+  .wcard .add{background:#efe6ff;color:var(--vio);font-weight:700}
+  .wcard .add.saved{background:var(--vio);color:#fff}
+  .empty{color:var(--muted);font-size:13px;padding:8px 0}
+  .bankbtn{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:8px 16px;font-size:13px;font-weight:700;color:var(--vio);cursor:pointer;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./index.html">← 返回口语主页</a><a href="./听力复述.html">去做听力复述 →</a></div>
+  <h1>📒 场景高频词</h1>
+  <div class="en">Listen &amp; Repeat · Scene Vocabulary</div>
+  <div class="desc">10 大场景从 210 句里提炼的高频词（美式音标 + 释义）。点 <b>🔊</b> 听发音，点 <b>＋生词本</b> 加入「听力复述词库」（与听力复述页共享，刷新不丢）。先把本场景的词过一遍，再去做复述会顺很多。</div>
+
+  <div class="bar">
+    <input id="q" type="search" placeholder="🔎 搜索单词 / 释义（跨全部场景）…" oninput="render()">
+    <a class="bankbtn" href="./听力复述.html">📒 我的生词本（<span id="bankCount">0</span>）</a>
+  </div>
+  <div class="navchips" id="nav"></div>
+  <div id="list"></div>
+</div>
+
+<script src="./data/listen-repeat.js"></script>
+<script src="./data/lr-vocab.js"></script>
+<script>
+const SCENES = window.LR_SCENES || [];
+const VOCAB  = window.LR_VOCAB  || {};
+const BANK_KEY='lr_wordbank_v1';
+function loadBank(){ try{ return JSON.parse(localStorage.getItem(BANK_KEY))||[]; }catch(_){ return []; } }
+function saveBank(a){ try{ localStorage.setItem(BANK_KEY, JSON.stringify(a)); }catch(_){} }
+function inBank(w){ w=(w||'').toLowerCase(); return loadBank().some(x=>x.word.toLowerCase()===w); }
+function bankCount(){ const el=document.getElementById('bankCount'); if(el) el.textContent=loadBank().length; }
+function toggleBank(w, ipa, zh, scene){
+  const a=loadBank(); const i=a.findIndex(x=>x.word.toLowerCase()===w.toLowerCase());
+  if(i>=0) a.splice(i,1); else a.push({word:w, ipa:ipa||'', zh:zh||'', scene:scene||'', en:''});
+  saveBank(a); bankCount(); render();
+}
+function esc(s){ return (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+// 发音（美式女声，尽量选 en-US）
+let VOICE=null;
+function pickVoice(){
+  const vs=speechSynthesis.getVoices();
+  VOICE = vs.find(v=>/en-US/i.test(v.lang)&&/female|samantha|victoria|allison|ava|zira/i.test(v.name))
+       || vs.find(v=>/en-US/i.test(v.lang)) || vs.find(v=>/^en/i.test(v.lang)) || null;
+}
+if('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }
+function say(text){
+  if(!('speechSynthesis' in window)) return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text); u.lang='en-US'; u.rate=0.95; if(VOICE) u.voice=VOICE;
+  speechSynthesis.speak(u);
+}
+
+function render(){
+  const kw=(document.getElementById('q').value||'').trim().toLowerCase();
+  const nav=[]; let html='';
+  for(const sc of SCENES){
+    const list=(VOCAB[sc.id]||[]).filter(it=> !kw || it.w.toLowerCase().includes(kw) || (it.zh||'').toLowerCase().includes(kw));
+    if(!list.length) continue;
+    nav.push('<a href="#sc-'+sc.id+'">'+esc(sc.name)+' ('+list.length+')</a>');
+    html += '<section class="scene" id="sc-'+sc.id+'"><h2>'+esc(sc.name)+' · '+esc(sc.en)+'</h2><div class="sd">'+esc(sc.desc||'')+'</div><div class="grid">';
+    html += list.map(it=>{
+      const saved=inBank(it.w);
+      const j="'"+it.w.replace(/'/g,"\\'")+"'";
+      const jz="'"+(it.zh||'').replace(/'/g,"\\'")+"'";
+      const ji="'"+(it.ipa||'').replace(/'/g,"\\'")+"'";
+      const js="'"+esc(sc.name).replace(/'/g,"\\'")+"'";
+      return '<div class="wcard"><div class="w">'+esc(it.w)+'</div><div class="ipa">'+esc(it.ipa)+'</div><div class="zh">'+esc(it.zh)+'</div>'+
+        '<div class="acts"><button class="say" onclick="say('+j+')">🔊 发音</button>'+
+        '<button class="add'+(saved?' saved':'')+'" onclick="toggleBank('+j+','+ji+','+jz+','+js+')">'+(saved?'✓ 已加入':'＋生词本')+'</button></div></div>';
+    }).join('');
+    html += '</div></section>';
+  }
+  document.getElementById('nav').innerHTML = nav.join('');
+  document.getElementById('list').innerHTML = html || '<div class="empty">没有匹配的词。</div>';
+  bankCount();
+}
+
+if(!SCENES.length || !Object.keys(VOCAB).length){
+  document.getElementById('list').innerHTML='<div class="empty">⚠️ 词库未加载：请确认 data/listen-repeat.js 与 data/lr-vocab.js 存在。</div>';
+} else { render(); }
+</script>
+</body>
+</html>

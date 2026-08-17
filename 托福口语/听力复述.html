@@ -288,6 +288,7 @@
 </div>
 
 <script src="./data/listen-repeat.js"></script>
+<script src="./data/lr-vocab.js"></script>
 <script src="./speech-core.js"></script>
 <script>
 // ---------- 题库（10 场景 × 21 句：7 短 + 7 中 + 7 长）----------
@@ -580,7 +581,13 @@ const EXPR = {
   'guided tour':'导览', 'audio guide':'语音导览', 'membership card':'会员卡', 'quiet hours':'安静时段',
   'due date':'到期日', 'gift shop':'礼品店', 'study rooms':'自习室', 'main entrance':'正门'
 };
-function sceneVocab(){ const v=curScene()&&curScene().vocab; return (v&&typeof v==='object'&&!Array.isArray(v))?v:{}; }
+function sceneVocab(){
+  const sc=curScene(); if(!sc) return {};
+  if(sc.vocab && typeof sc.vocab==='object' && !Array.isArray(sc.vocab)) return sc.vocab;
+  const list = (window.LR_VOCAB && sc.id) ? window.LR_VOCAB[sc.id] : null;   // 从场景高频词表构建单词映射
+  if(Array.isArray(list)){ const m={}; for(const it of list){ const k=(it.w||'').toLowerCase(); if(k && !k.includes(' ')) m[k]={ipa:it.ipa||'', zh:it.zh||''}; } return m; }
+  return {};
+}
 function lookupGloss(key){ return sceneVocab()[key] || GLOSS[key] || null; }
 
 const BANK_KEY='lr_wordbank_v1';
