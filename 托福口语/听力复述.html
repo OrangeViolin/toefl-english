@@ -43,6 +43,20 @@
   .band.b5,.band.b4{background:#e6f0ec;color:var(--ok)}
   .band.b3,.band.b2{background:#fff3e0;color:var(--warn)}
   .band.b1,.band.b0{background:#ffe8e4;color:var(--bad)}
+  /* 模式切换 */
+  .modebar{display:flex;gap:8px;margin-bottom:12px}
+  .modebtn{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:7px 15px;font-size:13px;font-weight:700;cursor:pointer;color:#5f574c;transition:.15s}
+  .modebtn:hover{border-color:var(--accent)}
+  .modebtn.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  /* 限时倒计时 */
+  .timer{display:none;margin:10px 0}
+  .timer .num{font-size:15px;font-weight:700;margin-bottom:5px;color:#5f574c}
+  .timer .num b{color:var(--core)}
+  .timer .bar{height:12px;background:#efe8d8;border-radius:7px;overflow:hidden}
+  .timer .fill{height:100%;width:100%;background:var(--core);border-radius:7px;transition:width .1s linear}
+  .timer .fill.warn{background:var(--warn)}
+  .timer .fill.danger{background:var(--bad)}
+  .lim{font-size:11px;padding:2px 9px;border-radius:10px;background:#fff3e0;color:var(--warn);font-weight:700}
   .qinfo{display:flex;gap:12px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:14px}
   .lv{font-size:11px;padding:2px 10px;border-radius:10px;background:#e6f0ec;color:var(--core);font-weight:700}
   .sentence{font-family:Georgia,"Times New Roman",serif;font-size:26px;line-height:1.4;margin:10px 0 6px;min-height:36px}
@@ -108,25 +122,30 @@
     </div>
 
     <details class="rubric">
-      <summary>📊 评分标准（每句 0–5 分 · 清晰度 50% + 一致性 50% · 7 句 /35 → 最终 0–6）</summary>
+      <summary>📊 评分标准（每句 0–5 分 · 7 句 /35 → 最终 0–6 · 限时 8/10/14s）</summary>
       <table>
-        <tr><th>分</th><th>档位</th><th>标准（约 ± 单词误差）</th><th>例（原句 → 复述）</th></tr>
-        <tr><td class="sc">5</td><td>完全一致</td><td>与原句 100% 匹配（±0 词），发音清楚、语速适中（8–12s），无吞音/连读错误、无语法改变</td><td>"opens at 8am" → "opens at 8am"</td></tr>
-        <tr><td class="sc">4</td><td>语义一致</td><td>意思一致但非完全重复（±1–2 词替换）</td><td>"Submit your report by Friday" → "Turn in your report by Friday"</td></tr>
-        <tr><td class="sc">3</td><td>结构完整</td><td>句子完整但含义偏差（±3 词错误）</td><td>"The meeting was postponed" → "The meeting was canceled"</td></tr>
-        <tr><td class="sc">2</td><td>内容缺失</td><td>遗漏关键信息（±4–5 词错误）</td><td>"All participants must register online" → "Participants register"</td></tr>
-        <tr><td class="sc">1</td><td>基本不符</td><td>仅包含个别原句词汇</td><td>"Parking is available behind the building" → "Building…parking"</td></tr>
-        <tr><td class="sc">0</td><td>无效</td><td>空白 / 非英语 / 完全无关 / 连续 "I don't know"</td><td>—</td></tr>
+        <tr><th>分</th><th>档位</th><th>标准</th><th>例（原句 → 复述）</th></tr>
+        <tr><td class="sc">5</td><td>完全一致</td><td>与原句 100% 一致，一字不差</td><td>"opens at eight" → "opens at eight"</td></tr>
+        <tr><td class="sc">4</td><td>高度一致</td><td>只漏 <b>1–2 个虚词</b>，或 <b>1 个实词</b>（意思不变）</td><td>"return your books on time" → "return books on time"</td></tr>
+        <tr><td class="sc">3</td><td>主干完整</td><td>句子的<b>主谓宾（核心结构）完整</b>，修饰/细节可有错漏</td><td>"The quiet study rooms are on the third floor" → "The study rooms are upstairs"</td></tr>
+        <tr><td class="sc">2</td><td>零星命中</td><td>只<b>零星听出几个词</b>，主干不全</td><td>"…register for classes before Friday" → "register… Friday"</td></tr>
+        <tr><td class="sc">1</td><td>几乎不符</td><td>仅个别词偶中</td><td>"Parking is available behind the building" → "building… parking"</td></tr>
+        <tr><td class="sc">0</td><td>无效</td><td>空白 / 非英语 / 完全无关 / <b>超时未答</b></td><td>—</td></tr>
       </table>
-      <p class="note">整体性评分（非扣分制），每句独立打分。系统据转写只能<b>估「一致性」</b>；<b>清晰度</b>（发音是否好懂）请自评或由 cc 结合你的录音反馈，二者各占 50% 得最终 0–5。7 句原始分满 35，再折算为 0–6 的 section 分。</p>
+      <p class="note">整体性评分（非扣分制），每句独立打分。<b>虚词</b>＝冠词/介词/连词/助动词/代词等；<b>实词</b>＝名词/动词/形容词/副词/数词。系统据转写按上表<b>自动估分</b>（区分虚/实词、判主谓宾）；发音<b>清晰度</b>请自评或由 cc 结合录音反馈微调。7 句原始分满 35，再折算 0–6 的 section 分。<br><b>⏱ 限时</b>：真实考场读完句子后有答题时限——<b>短句 8s · 中句 10s · 长句 14s</b>，到点录音自动截断，超时说不完＝丢分。</p>
     </details>
+
+    <div class="modebar">
+      <button class="modebtn" id="modeExam" onclick="setMode('exam')">⏱ 考试模式（限时）</button>
+      <button class="modebtn" id="modePractice" onclick="setMode('practice')">🎧 练习模式（可重听·带辅助）</button>
+    </div>
 
     <div class="scene-head">
       <div class="nm" id="sceneName"></div>
       <div class="ds" id="sceneDesc"></div>
       <div class="tly" id="sceneTally"></div>
     </div>
-    <div class="qinfo"><span id="qNo"></span><span class="lv" id="qLv"></span></div>
+    <div class="qinfo"><span id="qNo"></span><span class="lv" id="qLv"></span><span class="lim" id="qLim"></span></div>
     <div class="sentence" id="sentence">点击「🔊 播放原句」开始</div>
     <div class="zh" id="zh"></div>
 
@@ -141,11 +160,16 @@
 
     <div class="controls">
       <button class="btn play" id="playBtn" onclick="play()">🔊 播放原句</button>
-      <button class="btn play" onclick="playSlow()">🐢 慢速</button>
-      <button class="btn play" onclick="playChunks()">🧩 分块重放</button>
-      <button class="btn play" onclick="toggleSkeleton()">🦴 骨架提示</button>
+      <button class="btn play" id="btnSlow" onclick="playSlow()">🐢 慢速</button>
+      <button class="btn play" id="btnChunks" onclick="playChunks()">🧩 分块重放</button>
+      <button class="btn play" id="btnSkel" onclick="toggleSkeleton()">🦴 骨架提示</button>
       <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
       <button class="btn next" id="nextBtn" onclick="next()">下一句 →</button>
+    </div>
+
+    <div class="timer" id="timer">
+      <div class="num" id="timerNum"></div>
+      <div class="bar"><div class="fill" id="timerFill"></div></div>
     </div>
 
     <div class="live" id="live">录音转写会实时显示在这里…</div>
@@ -169,7 +193,7 @@
       </div>
     </div>
 
-    <div class="hint">💡 练习模式可重复播放；真实考试里原句<b>只放一遍</b>，建议先只听一遍就复述，逼出短时记忆。</div>
+    <div class="hint">💡 <b>考试模式</b>：贴近真实考场——只放一遍、读完自动进入限时（短 8s／中 10s／长 14s）录音，到点截断。想磨细节时切到<b>练习模式</b>：可重听、慢速、分块、看骨架，且不限时。</div>
   </div>
 </div>
 
@@ -367,13 +391,24 @@ function resetTally(){ sceneScores = new Array(curScene().items.length).fill(nul
 
 // 0–5 分档位说明（对标官方口径）
 const BANDS = {
-  5:{label:"完全一致", cls:"b5", tip:"与原句 100% 匹配"},
-  4:{label:"语义一致", cls:"b4", tip:"意思一致，1–2 词替换"},
-  3:{label:"结构完整", cls:"b3", tip:"句子完整但含义偏差，约 3 词错误"},
-  2:{label:"内容缺失", cls:"b2", tip:"遗漏关键信息，4–5 词错误"},
-  1:{label:"基本不符", cls:"b1", tip:"仅个别原句词汇"},
-  0:{label:"无效", cls:"b0", tip:"空白 / 非英语 / 完全无关"},
+  5:{label:"完全一致", cls:"b5", tip:"与原句一字不差"},
+  4:{label:"高度一致", cls:"b4", tip:"仅漏 1–2 虚词或 1 实词"},
+  3:{label:"主干完整", cls:"b3", tip:"主谓宾核心结构完整"},
+  2:{label:"零星命中", cls:"b2", tip:"只零星听出几个词"},
+  1:{label:"几乎不符", cls:"b1", tip:"仅个别词偶中"},
+  0:{label:"无效", cls:"b0", tip:"空白 / 非英语 / 超时未答"},
 };
+
+// 虚词表（冠词/介词/连词/助动词/系动词/代词/否定等）——不在表内的算实词
+const FUNC_WORDS = new Set(("a an the this that these those "+
+  "i you he she it we they me him her us them my your his its our their "+
+  "is am are was were be been being do does did have has had "+
+  "will would shall should can could may might must "+
+  "and or but so if because as than while when where which who whom whose "+
+  "to of in on at by for with from into onto over under above below "+
+  "up down out off about around near past through during until before after "+
+  "not no nor please here there").split(/\s+/));
+function isFunc(w){ return FUNC_WORDS.has(w); }
 
 function tokenize(s){ return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean); }
 
@@ -387,15 +422,24 @@ function editDistance(A, B){
   return dp[n][m];
 }
 
-// 按官方 0–5 口径给「一致性」估分（清晰度需另判）
-function scoreConsistency(refLen, matched, editDist, hyp){
-  if(!hyp || !hyp.trim() || matched===0) return 0;           // 无效
-  if(matched/Math.max(refLen,1) < 0.3) return 1;             // 仅个别词
-  if(editDist===0) return 5;                                 // 完全一致
-  if(editDist<=2) return 4;                                  // 语义一致
-  if(editDist===3) return 3;                                 // 结构完整
-  if(editDist<=5) return 2;                                  // 内容缺失
-  return 1;                                                  // 基本不符
+// 按用户口径 0–5 估分：区分虚词/实词、判主谓宾是否完整
+// 5 完全一致 / 4 只漏≤2虚词或≤1实词 / 3 主谓宾（核心实词）完整 / 2 零星几个词 / 1 个别词 / 0 无效
+function scoreByRubric(d, hyp){
+  const { A, mA, mB, match } = d;
+  const out = { score:0, cMiss:0, fMiss:0, cHit:0, cTotal:0, extra: mB.filter(x=>!x).length };
+  if(!hyp || !hyp.trim() || match===0){ out.score=0; return out; }   // 无效：空/零命中
+  for(let i=0;i<A.length;i++){
+    const content = !isFunc(A[i]);
+    if(content) out.cTotal++;
+    if(!mA[i]){ content ? out.cMiss++ : out.fMiss++; }
+    else if(content) out.cHit++;
+  }
+  if(out.cMiss===0 && out.fMiss===0 && out.extra===0) out.score=5;              // 完全一致
+  else if(out.cMiss<=1 && out.fMiss<=2 && out.extra<=2) out.score=4;            // 漏≤2虚词或≤1实词
+  else if(out.cHit>=2 && out.cHit>=Math.ceil(out.cTotal*0.5) && match>=3) out.score=3; // 主谓宾完整（且非零碎片段）
+  else if(out.cHit>=2) out.score=2;                                             // 零星几个词
+  else out.score=1;                                                            // 个别词偶中
+  return out;
 }
 
 // 本场景已答句的一致性汇总
@@ -428,8 +472,79 @@ function diffWords(ref, hyp){
   return { A, B, mA, mB, match: mA.filter(x=>x).length };
 }
 
-function play(){ VocaSpeech.say(curItem().en); }
-function playSlow(){ VocaSpeech.say(curItem().en, 0.65); }
+// ===== 模式 & 限时 =====
+let examMode = true;                       // 默认考试模式（贴近真实考场）
+let examTimer=null, examEnd=0, examLimit=0;
+function limitFor(q){ return q.lv==='困难' ? 14 : q.lv==='中等' ? 10 : 8; }   // 长14/中10/短8 秒
+
+function setMode(m){
+  examMode = (m==='exam');
+  document.getElementById('modeExam').classList.toggle('on', examMode);
+  document.getElementById('modePractice').classList.toggle('on', !examMode);
+  document.getElementById('playBtn').textContent = examMode ? '▶️ 出题并计时' : '🔊 播放原句';
+  clearExamTimer();
+  renderQuestion();
+}
+function setAidsVisible(v){
+  ['btnSlow','btnChunks','btnSkel'].forEach(id=>{ const b=document.getElementById(id); if(b) b.style.display = v ? '' : 'none'; });
+  if(!v){ document.getElementById('skeleton').style.display='none'; document.getElementById('chunks').style.display='none'; }
+}
+function setRecUI(on){
+  const b=document.getElementById('recBtn');
+  b.textContent = on ? '⏹ 停止录音' : '🎙 开始录音';
+  b.classList.toggle('recording', on);
+  document.getElementById('playBtn').disabled = on;
+}
+function clearExamTimer(){ if(examTimer){ clearInterval(examTimer); examTimer=null; } document.getElementById('timer').style.display='none'; }
+
+async function play(){
+  const q = curItem();
+  document.getElementById('result').style.display='none';
+  if(examMode){
+    // 考试：只放一遍，读完立即计时并自动开始录音
+    setAidsVisible(false);
+    document.getElementById('playBtn').disabled=true;
+    document.getElementById('live').innerHTML='🔊 正在播放原句（只放一遍，仔细听）…';
+    await VocaSpeech.say(q.en);
+    startExamWindow(q);
+  } else {
+    VocaSpeech.say(q.en);
+  }
+}
+function playSlow(){ if(!examMode) VocaSpeech.say(curItem().en, 0.65); }
+
+// 读完题 → 开启限时窗口 + 自动录音
+async function startExamWindow(q){
+  examLimit = limitFor(q);
+  try{ await VocaSpeech.start(()=>{}); }
+  catch(e){ alert(e.message); document.getElementById('playBtn').disabled=false; return; }
+  recording=true; setRecUI(true);
+  document.getElementById('live').innerHTML='🎙 请立即复述！时间到自动截断。';
+  examEnd = Date.now() + examLimit*1000;
+  document.getElementById('timer').style.display='block';
+  tickExam();
+  examTimer = setInterval(tickExam, 100);
+}
+function tickExam(){
+  const left = (examEnd - Date.now())/1000;
+  const pct = Math.max(0, Math.min(100, left/examLimit*100));
+  const fill = document.getElementById('timerFill');
+  fill.style.width = pct + '%';
+  fill.className = 'fill' + (left<=2 ? ' danger' : left<=examLimit*0.4 ? ' warn' : '');
+  document.getElementById('timerNum').innerHTML = '⏱ 限时 <b>'+examLimit+'</b>s · 剩 <b>'+Math.max(0,left).toFixed(1)+'</b>s';
+  if(left<=0){ clearInterval(examTimer); examTimer=null; finishExam(true); }
+}
+async function finishExam(cutoff){
+  if(!recording) return;
+  recording=false; setRecUI(false);
+  if(examTimer){ clearInterval(examTimer); examTimer=null; }
+  document.getElementById('timerNum').innerHTML = cutoff ? '⏱ 时间到，已截断 · 正在转写…' : '⏱ 提前交卷 · 正在转写…';
+  result = await VocaSpeech.stop();
+  result.cutoff = cutoff; result.limit = examLimit;
+  document.getElementById('timer').style.display='none';
+  document.getElementById('playBtn').disabled=false;
+  renderResult();
+}
 
 // 分块重放：逐意群念，块间停顿，并高亮当前块
 async function playChunks(){
@@ -458,21 +573,22 @@ function sayChunk(i){ VocaSpeech.say(curItem().chunks[i], 0.85); }
 
 let recording=false;
 async function toggleRec(){
+  if(examMode){
+    if(recording) finishExam(false);      // 考试模式下手动停＝提前交卷
+    else document.getElementById('live').innerHTML='考试模式：点「▶️ 出题并计时」听题，播放结束会自动开始限时录音。';
+    return;
+  }
+  // 练习模式（可手动录，无限时）
   if(recording){ // 停止 → 转写
-    recording=false;
-    document.getElementById('recBtn').textContent='🎙 开始录音';
-    document.getElementById('recBtn').classList.remove('recording');
-    document.getElementById('playBtn').disabled=false;
+    recording=false; setRecUI(false);
     document.getElementById('live').innerHTML='⏳ 正在转写你的复述…';
     result = await VocaSpeech.stop();
+    result.cutoff=false; result.limit=0;
     renderResult();
   } else { // 开始
     try{
       await VocaSpeech.start(()=>{});
-      recording=true;
-      document.getElementById('recBtn').textContent='⏹ 停止录音';
-      document.getElementById('recBtn').classList.add('recording');
-      document.getElementById('playBtn').disabled=true;
+      recording=true; setRecUI(true);
       document.getElementById('live').innerHTML='🎙 录音中，请复述刚刚听到的句子…';
       document.getElementById('result').style.display='none';
     }catch(e){ alert(e.message); }
@@ -483,11 +599,10 @@ function renderResult(){
   const q = curItem();
   const ref = q.en, hyp = result.transcript || '';
   const d = diffWords(ref, hyp);
-  const dist = editDistance(d.A, d.B);          // 单词误差数
   const acc = Math.round(d.match / Math.max(d.A.length,1) * 100);
   const wpm = Math.round(d.B.length / Math.max(result.duration,0.1) * 60);
-  const sc = scoreConsistency(d.A.length, d.match, dist, hyp);
-  const band = BANDS[sc];
+  const r = scoreByRubric(d, hyp);
+  const sc = r.score, band = BANDS[sc];
 
   // 记入本场景汇总（重测覆盖）
   sceneScores[idx] = sc;
@@ -498,10 +613,13 @@ function renderResult(){
   bandEl.className = 'band ' + band.cls;
   bandEl.textContent = band.label + '（' + band.tip + '）';
 
-  const eng = result.engine==='whisper' ? '本地 whisper ✓' : '⚠️ 浏览器降级识别（可能不准）';
+  const eng = result.engine==='whisper' ? '本地 whisper ✓' : '⚠️ 浏览器降级（可能不准）';
+  const limit = result.limit || 0;
+  const timeStr = limit ? ('用时 <b>'+result.duration.toFixed(1)+'</b>/'+limit+'s'+(result.cutoff?' <span style="color:#c04a3a">·到点截断</span>':'')) : ('时长 <b>'+result.duration.toFixed(1)+'</b>s');
   document.getElementById('metrics').innerHTML =
-    '一致性估分（清晰度需另判）· 单词误差 <b>'+dist+'</b> · 命中 <b>'+d.match+'/'+d.A.length+'</b> 词 · 逐字匹配 <b>'+acc+'%</b>'+
-    ' · 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 引擎：'+eng;
+    '实词命中 <b>'+r.cHit+'/'+r.cTotal+'</b> · 漏实词 <b>'+r.cMiss+'</b> · 漏虚词 <b>'+r.fMiss+'</b> · 多词 <b>'+r.extra+'</b>'+
+    ' · 逐字匹配 <b>'+acc+'%</b> · '+timeStr+' · 语速 <b>'+wpm+'</b>wpm · '+eng+
+    '<br><span style="color:#8c8072">（自动估「一致性」，发音清晰度请自评或由 cc 微调）</span>';
 
   // 场景累计
   document.getElementById('sceneTally').innerHTML = tallyText();
@@ -517,15 +635,15 @@ function renderResult(){
   const answered = sceneScores.filter(v=>v!==null);
   const raw = answered.reduce((a,b)=>a+b,0);
   const avg = (raw/answered.length).toFixed(1);
-  const rep = '【听力复述 · '+curScene().name+' · 第 '+(idx+1)+'/'+curScene().items.length+' 句（'+q.lv+'）】\n'+
+  const rep = '【听力复述 · '+curScene().name+' · 第 '+(idx+1)+'/'+curScene().items.length+' 句（'+q.lv+' · 限时'+limitFor(q)+'s）】\n'+
     '原文：'+ref+'\n'+
     '我的复述：'+(hyp||'(空/未识别)')+'\n'+
-    '—— 逐字比对 —— 命中 '+d.match+'/'+d.A.length+' 词 · 单词误差 '+dist+' · 逐字匹配 '+acc+'%\n'+
-    '本句一致性估分：'+sc+'/5（'+band.label+'）\n'+
-    '时长：'+result.duration.toFixed(1)+'s · 语速：'+wpm+' wpm · 引擎：'+(result.engine==='whisper'?'本地 whisper':'浏览器降级')+'\n'+
-    '本场景累计：已评 '+answered.length+'/'+curScene().items.length+' 句 · 一致性均分 '+avg+'/5\n'+
-    '—— 评分口径：每句 0–5（清晰度 50% + 一致性 50%），7 句原始分 /35 → 最终 0–6 ——\n'+
-    '请 cc 给最终 0–5：结合我的发音清晰度定「清晰度」分，与上面「一致性」各占 50%；并累计到本场景 /35 与折算 /6。';
+    '—— 命中：实词 '+r.cHit+'/'+r.cTotal+' · 漏实词 '+r.cMiss+' · 漏虚词 '+r.fMiss+' · 多词 '+r.extra+' · 逐字匹配 '+acc+'%\n'+
+    '本句得分：'+sc+'/5（'+band.label+'）'+(result.cutoff?' ⏱到点截断':'')+'\n'+
+    '用时：'+result.duration.toFixed(1)+'s'+(limit?('/限时'+limit+'s'):'')+' · 语速：'+wpm+' wpm · 引擎：'+(result.engine==='whisper'?'本地 whisper':'浏览器降级')+'\n'+
+    '本场景累计：已评 '+answered.length+'/'+curScene().items.length+' 句 · 均分 '+avg+'/5'+(answered.length===curScene().items.length?('（原始分 '+raw+'/35）'):'')+'\n'+
+    '—— 评分口径：5完全一致/4漏≤2虚词或≤1实词/3主谓宾完整/2零星几词/1个别词/0无效；7句/35→最终0–6 ——\n'+
+    '请 cc 核对上面的自动估分（一致性），结合我的发音清晰度给最终 0–5，并累计到本场景 /35 与折算 /6。';
   document.getElementById('reportText').value = rep;
   document.getElementById('result').style.display='block';
 }
@@ -568,15 +686,25 @@ function renderQuestion(){
   document.getElementById('sceneTally').innerHTML = tallyText();
   document.getElementById('qNo').textContent = '第 '+(idx+1)+' / '+sc.items.length+' 句';
   document.getElementById('qLv').textContent = q.lv;
-  document.getElementById('sentence').innerHTML='<span style="color:#c1662f">🔊</span> 点击「播放原句」开始';
+  document.getElementById('qLim').textContent = '⏱ 限时 '+limitFor(q)+'s';
+  document.getElementById('sentence').innerHTML = examMode
+    ? '<span style="color:#c1662f">🎧</span> 点「▶️ 出题并计时」——只放一遍，读完自动开始限时录音'
+    : '<span style="color:#c1662f">🔊</span> 点「播放原句」开始（练习模式可重听、看辅助）';
   document.getElementById('zh').textContent='';
-  document.getElementById('live').innerHTML='点「播放原句」听一遍，再点「开始录音」复述，停止后自动转写。';
+  document.getElementById('live').innerHTML = examMode
+    ? '考试模式：只放一遍，播放结束立刻限时复述，时间到自动截断。'
+    : '点「播放原句」听一遍，再点「开始录音」复述，停止后自动转写。';
   document.getElementById('result').style.display='none';
   // 骨架 + 意群
   document.getElementById('skeletonWords').innerHTML = q.skeleton.map(w=>'<span class="skw">'+esc(w)+'</span>').join('');
   document.getElementById('chunkWords').innerHTML = q.chunks.map((c,i)=>'<span class="chunk" onclick="sayChunk('+i+')">'+esc(c)+'</span>').join('');
   document.getElementById('skeleton').style.display='none';
   document.getElementById('chunks').style.display='none';
+  document.getElementById('playBtn').textContent = examMode ? '▶️ 出题并计时' : '🔊 播放原句';
+  document.getElementById('playBtn').disabled=false;
+  setRecUI(false);
+  setAidsVisible(!examMode);
+  clearExamTimer();
 }
 
 function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
@@ -594,7 +722,7 @@ if(!VocaSpeech.supported){
 }
 resetTally();
 renderScenePicker();
-renderQuestion();
+setMode('exam');   // 默认考试模式（含 renderQuestion）
 </script>
 </body>
 </html>
