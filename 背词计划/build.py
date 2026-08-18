@@ -98,6 +98,19 @@ PAGE = r"""<!DOCTYPE html>
   .cz-ok{color:var(--ok);font-weight:700} .cz-bad{color:var(--bad);font-weight:700}
   .cz-summary{text-align:center;padding:30px 20px;font-size:16px}
   .cz-acts{margin-top:16px;display:flex;gap:10px;justify-content:center}
+  /* 文段填空 */
+  .pz-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 2px 10px rgba(150,120,70,.05)}
+  .pz-text{font-size:17px;line-height:2.5;color:var(--ink)}
+  .pz-b{display:inline-flex;align-items:baseline;gap:2px;margin:0 2px;white-space:nowrap}
+  .pz-b>b{font-weight:800;color:var(--accent);font-family:Georgia,serif}
+  .pz-in{border:0;border-bottom:2px solid var(--accent);background:#fbf7ee;font-size:16px;font-family:Georgia,serif;padding:0 3px 1px;color:var(--ink);text-align:center;letter-spacing:1px}
+  .pz-in:focus{outline:none;background:#fff4e0}
+  .pz-in.ok{border-color:var(--ok);color:var(--ok);background:#f2faf4}
+  .pz-in.bad{border-color:var(--bad);color:var(--bad);background:#fdf1ef}
+  .pz-b>sub{font-size:9px;color:var(--muted);margin-left:2px}
+  .pz-ans{font-size:12px;color:var(--ok);margin-left:3px;font-family:Georgia,serif}
+  .pz-bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .pz-res{margin-top:12px;font-size:15px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
   .gcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;transition:.15s;box-shadow:0 2px 10px rgba(150,120,70,.05)}
   .gcard:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(150,120,70,.13);border-color:#d8c8a8}
@@ -242,7 +255,7 @@ function renderOverview(){
   const nOk = doneCount(words());
   let h = `<div class="intro">按 <b>List 分组</b>，一组一组过。点一组进去，逐词看释义/词源/例句；不会的点「未掌握」，剩下的可一键记为「已掌握」。进度自动保存。</div>
     <div class="markrow"><button class="reviewbtn" id="goReview">🔴 查看全部未掌握（${nUn}）</button>
-      <button class="clozebtn" id="goCloze">✏️ 填词测验（用已掌握 ${nOk} 词）</button>
+      <button class="clozebtn" id="goCloze">📝 文段填空（${PASSAGES.length} 篇）</button>
       <button class="markall" id="markAll">✅ 其余一键记为「已掌握」</button>
       <span class="hint">把当前词库里<b>没标「未掌握」</b>的词全部记为已掌握（浏览完再点）</span></div>
     <input class="search" id="q" placeholder="🔎 搜单词（跳到它所在的 List）…" value="">
@@ -309,78 +322,63 @@ function renderReview(){
   view.querySelectorAll('.seg [data-r]').forEach(bn=> bn.onclick=()=>{ reviewMode=bn.dataset.r; render(); });
 }
 
-/* ── 填词测验：用「已掌握」的词，从其真实例句挖空出题（首字母+方格·语境线索）── */
-let czQueue=[], czPos=0, czRight=0, czWrong=0, czRevealed=false;
-const CZ_MAX=30;
-function czShuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
-function czEscRe(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
-// 绿皮书例句是「例 English…中文…」连成一串，按首个中文字切开
-function czParseEg(s){ s=String(s).replace(/^\s*(例句?|e\.?g\.?|ex[:：]?)\s*/i,'').trim();
-  const i=s.search(/[一-鿿]/); return i<0?{en:s.trim(),zh:''}:{en:s.slice(0,i).trim(),zh:s.slice(i).trim()}; }
-function czBestEg(w){
-  if(w.xex&&w.xex.length){ const c=w.xex.find(x=>x.en&&/\s/.test(x.en)&&x.src!=='高频搭配'); if(c) return {en:c.en,zh:c.zh||''}; }
-  if(w.e&&w.e.length){ const raw=typeof w.e[0]==='string'?w.e[0]:(w.e[0].en||''); const p=czParseEg(raw); if(p.en) return p; }
-  return null;
-}
-// 只挑「拿得出手」的题：单个英文词、≥4 字母、例句够长、且该词(含简单屈折)真的出现在例句里→可从语境推理
-function czMake(w){
-  const word=(w.w||'').trim(); if(word.length<4||/[^a-zA-Z]/.test(word)) return null;
-  const eg=czBestEg(w); if(!eg||!eg.en||eg.en.split(/\s+/).length<5) return null;
-  const forms=[word,word+'s',word+'es',word+'ed',word+'ing',word+'d',word.replace(/y$/,'ies'),word.replace(/e$/,'ing')];
-  for(const f of forms){ const m=eg.en.match(new RegExp('\\b('+czEscRe(f)+')\\b','i')); if(m) return {w:word,def:w.d||'',en:eg.en,zh:eg.zh||'',hit:m[1]}; }
-  return null;
-}
-function czBlank(hit){ let b=''; for(let i=1;i<hit.length;i++) b+='<i></i>'; return `<span class="czb"><b>${esc(hit[0])}</b>${b}<sub>${hit.length}</sub></span>`; }
-function czBlanked(q){ return esc(q.en).replace(new RegExp('\\b'+czEscRe(q.hit)+'\\b'), ()=>czBlank(q.hit)); }
-function czFilled(q,v){ const c=v===true?'cz-fill ok':v===false?'cz-fill bad':'cz-fill'; return esc(q.en).replace(new RegExp('\\b'+czEscRe(q.hit)+'\\b'), `<span class="${c}">${esc(q.hit)}</span>`); }
-function czBuild(){ const qs=[]; for(const w of words()){ if(state[w.id]!=='ok') continue; const c=czMake(w); if(c) qs.push(c); } return czShuffle(qs).slice(0,CZ_MAX); }
+/* ── 文段填空：cc 用（含你已掌握的）词造一篇短文，10 空，填完一次判定 ── */
+const PASSAGES = __PASSAGES__;
+let pzList=[], pzIdx=0, pzCur=null, pzGraded=false;
+function pzShuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+function pzParse(text){ const parts=[],ws=[]; const re=/\{\{([^}]+)\}\}/g; let last=0,m;
+  while((m=re.exec(text))){ if(m.index>last)parts.push({t:'t',s:text.slice(last,m.index)}); const w=m[1].trim(); parts.push({t:'b',word:w,i:ws.length}); ws.push(w); last=re.lastIndex; }
+  if(last<text.length)parts.push({t:'t',s:text.slice(last)}); return {parts,words:ws}; }
+function pzMastered(){ const s=new Set(); words().forEach(w=>{ if(state[w.id]==='ok') s.add((w.w||'').toLowerCase()); }); return s; }
 
 function renderCloze(){
-  czQueue=czBuild(); czPos=0; czRight=0; czWrong=0;
-  view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回总览</span>
-      <h2>✏️ 填词测验</h2><span class="cnt" id="czProg"></span></div>
-    <div class="intro" style="margin:8px 0 0">用你标「<b>已掌握</b>」的词，从它们的真实例句挖空：<b>保留首字母＋方格＝剩余字母数</b>；结合<b>句子语境＋中文词义</b>把词拼出来。</div></div>
-    <div id="czBox"></div>`;
-  $('#back').onclick=()=>{ curList=null; render(); };
-  if(!czQueue.length){ $('#czBox').innerHTML=`<div class="empty">还没有可出题的词。<br>先在某个 List 把你会的词点「✓ 掌握」（绿皮书多数词带真实例句），再回来测验。</div>`; return; }
-  showClozeQ();
+  if(!PASSAGES.length){ view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回总览</span><h2>📝 文段填空</h2></div></div><div class="empty">还没有文段题。跟 cc 说一声「用我已掌握的词出文段填空」，它造好一篇就能在这里做。</div>`; $('#back').onclick=()=>{curList=null;render();}; return; }
+  if(!pzList.length){ pzList=pzShuffle(PASSAGES); pzIdx=0; }
+  renderPassage();
 }
-function showClozeQ(){
-  const box=$('#czBox'), prog=$('#czProg');
-  if(czPos>=czQueue.length){ const t=czRight+czWrong;
-    box.innerHTML=`<div class="cz-summary">🎉 本组完成！答对 <b style="color:var(--ok)">${czRight}</b> / ${t} · 正确率 <b>${t?Math.round(czRight/t*100):0}%</b>
-      <div class="cz-acts"><button class="clozebtn" id="czAgain">🔀 再来一组</button><button class="tbtn" id="czBack">返回总览</button></div></div>`;
-    prog.textContent=''; $('#czAgain').onclick=()=>renderCloze(); $('#czBack').onclick=()=>{ curList=null; render(); }; return;
-  }
-  const q=czQueue[czPos]; czRevealed=false;
-  prog.textContent=`第 ${czPos+1}/${czQueue.length} 题 · 答对 ${czRight}`;
-  box.innerHTML=`<div class="cz-card">
-    <div class="cz-clue">💡 词义线索：<b>${esc(q.def||'（本词库未附释义，靠句子语境推）')}</b></div>
-    <div class="cz-sent">${czBlanked(q)}</div>
-    <div class="cz-hintline"><button class="tbtn" id="czSay">🔊 读句子</button><button class="tbtn" id="czTip">提示句意</button>
-      <span class="cz-zh" id="czZh" style="display:none">${esc(q.zh||'（暂无翻译）')}</span></div>
-    <div class="cz-input"><input id="czIn" placeholder="拼出这个词（含首字母）…" autocomplete="off" autocapitalize="off" spellcheck="false">
-      <button class="tbtn on" id="czSub">提交</button><button class="tbtn" id="czShow">显示答案</button></div>
-    <div class="cz-res" id="czRes"></div>
-    <div id="czNextWrap" style="display:none;margin-top:4px"><button class="clozebtn" id="czNext">下一题 →</button></div></div>`;
-  const inp=$('#czIn'); if(inp) inp.focus();
-  function next(){ czPos++; showClozeQ(); window.scrollTo(0,0); }
-  function reveal(v,typed){ czRevealed=true;
-    const s=view.querySelector('.cz-sent'); if(s) s.innerHTML=czFilled(q,v);
-    $('#czRes').innerHTML = v===true?`<span class="cz-ok">✓ 正确：${esc(q.hit)}</span>`
-      : v===false?`<span class="cz-bad">✗ 正确答案：${esc(q.hit)}${typed?`（你写的 ${esc(typed)}）`:''}</span>`
-      : `答案：<b>${esc(q.hit)}</b>（本题不计分）`;
-    $('#czNextWrap').style.display='block'; const nb=$('#czNext'); nb.onclick=next; nb.focus();
-    prog.textContent=`第 ${czPos+1}/${czQueue.length} 题 · 答对 ${czRight}`;
-  }
-  function submit(){ if(czRevealed) return; const v=(inp.value||'').trim(); if(!v) return;
-    const ok=v.toLowerCase()===q.hit.toLowerCase()||v.toLowerCase()===q.w.toLowerCase();
-    if(ok) czRight++; else czWrong++; reveal(ok,v); }
-  $('#czSub').onclick=submit;
-  inp.onkeydown=e=>{ if(e.key==='Enter'){ e.preventDefault(); czRevealed?next():submit(); } };
-  $('#czShow').onclick=()=>{ if(!czRevealed) reveal(null); };
-  $('#czSay').onclick=()=>say(q.en);
-  $('#czTip').onclick=()=>{ const z=$('#czZh'); if(z) z.style.display=z.style.display==='none'?'inline':'none'; };
+function renderPassage(){
+  pzCur=pzList[pzIdx%pzList.length]; pzGraded=false;
+  const parsed=pzParse(pzCur.text); pzCur._p=parsed;
+  const mset=pzMastered(); const known=parsed.words.filter(w=>mset.has(w.toLowerCase())).length;
+  let body=''; parsed.parts.forEach(p=>{
+    if(p.t==='t'){ body+=esc(p.s); return; }
+    const w=p.word, len=w.length, rest=len-1;
+    body+=`<span class="pz-b"><b>${esc(w[0])}</b><input class="pz-in" data-i="${p.i}" maxlength="${rest}" style="width:${Math.max(26,rest*12+6)}px" placeholder="${'‗'.repeat(rest)}" autocomplete="off" autocapitalize="off" spellcheck="false"><sub>${len}</sub></span>`;
+  });
+  view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回总览</span>
+      <h2>📝 文段填空</h2><span class="cnt">${esc(pzCur.topic||'')} · 第 ${(pzIdx%pzList.length)+1}/${pzList.length} 篇 · 含你已掌握 ${known}/${parsed.words.length} 词</span></div>
+    <div class="intro" style="margin:8px 0 0">读整段，靠<b>上下文语境</b>把 10 个词补全：每空<b>已给首字母</b>，方格/角标示总字母数。<b>全部填完</b>点「判定答案」一次性批改。</div></div>
+    <div class="pz-card"><div class="pz-text" id="pzText">${body}</div>
+      <div class="pz-bar"><button class="clozebtn" id="pzGrade">✅ 判定答案</button>
+        <button class="tbtn" id="pzShow">显示全部答案</button>
+        <button class="tbtn" id="pzSay">🔊 读全文</button>
+        <button class="tbtn" id="pzNext">换一篇 →</button></div>
+      <div class="pz-res" id="pzRes"></div></div>`;
+  $('#back').onclick=()=>{ curList=null; render(); };
+  $('#pzGrade').onclick=()=>pzGrade(false);
+  $('#pzShow').onclick=()=>pzGrade(true);
+  $('#pzNext').onclick=()=>{ pzIdx++; renderPassage(); window.scrollTo(0,0); };
+  $('#pzSay').onclick=()=>say(pzCur.text.replace(/\{\{|\}\}/g,''));
+  const ins=[...view.querySelectorAll('.pz-in')];
+  ins.forEach((inp,k)=> inp.onkeydown=e=>{ if(e.key==='Enter'){ e.preventDefault(); if(k+1<ins.length) ins[k+1].focus(); else pzGrade(false); } });
+  if(ins[0]) ins[0].focus();
+}
+function pzGrade(reveal){
+  if(pzGraded && !reveal) return;
+  const parsed=pzCur._p; let right=0; const wrong=[];
+  view.querySelectorAll('.pz-in').forEach(inp=>{
+    const i=+inp.dataset.i, w=parsed.words[i];
+    const ok=((w[0]+(inp.value||'')).toLowerCase()===w.toLowerCase());
+    if(reveal) inp.value=w.slice(1);
+    inp.classList.remove('ok','bad'); inp.classList.add((ok||reveal)?'ok':'bad'); inp.disabled=true;
+    if(ok) right++; else { if(!reveal) wrong.push(w);
+      const b=inp.parentNode; if(b&&!b.querySelector('.pz-ans')){ const t=document.createElement('span'); t.className='pz-ans'; t.textContent='('+w+')'; b.appendChild(t); } }
+  });
+  pzGraded=true;
+  const total=parsed.words.length, res=$('#pzRes');
+  res.innerHTML = reveal ? '已显示全部答案（本篇不计分）。'
+    : `得分 <b style="color:var(--ok)">${right}</b> / ${total} · 正确率 <b>${Math.round(right/total*100)}%</b>`+(wrong.length?` · 待复习：${wrong.map(esc).join('、')}`:' 🎉 全对！');
+  const g=$('#pzGrade'); if(g&&!reveal) g.disabled=true;
 }
 
 /* ── 学习视图：一组单词卡 ── */
@@ -520,7 +518,10 @@ def build():
     green["name"] = "绿皮书"
     beat["name"]  = "BEAT 2000"
     payload = {"green": green, "beat": beat}
-    html = PAGE.replace("__DATA__", json.dumps(payload, ensure_ascii=False))
+    import os as _os
+    _pz = _os.path.join(DATA, "cloze-passages.json")
+    passages = json.load(open(_pz, encoding="utf-8")).get("passages", []) if _os.path.exists(_pz) else []
+    html = PAGE.replace("__DATA__", json.dumps(payload, ensure_ascii=False)).replace("__PASSAGES__", json.dumps(passages, ensure_ascii=False))
     with open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8") as fp:
         fp.write(html)
     gl = len({w["l"] for w in green["words"]}); bl = len({w["l"] for w in beat["words"]})

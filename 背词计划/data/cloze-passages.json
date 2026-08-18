@@ -1,0 +1,35 @@
+{
+  "_note": "文段填空题：每篇一段连贯短文，10 个目标词用 {{word}} 标出（即挖空）。由 cc 用真实托福高频词造句，覆盖不同话题/角度。改/加题后跑 python3 build.py 重建。",
+  "passages": [
+    {
+      "id": "env",
+      "topic": "🌍 环境保护",
+      "text": "Human demand for natural {{resources}} such as water and timber has grown so fast that many are now in sharp {{decline}}. Scientists warn that this {{significant}} loss will bring serious {{consequences}} for future generations. Animals that cannot {{adapt}} quickly to a warmer climate may vanish altogether. To build a more {{sustainable}} future, many nations now {{generate}} electricity from wind and sunlight rather than coal. Ordinary people can {{contribute}} too, simply by wasting less and recycling more. National parks were set up to {{preserve}} ancient forests and the rare species within them. In the end, raising public {{awareness}} is the first real step toward change."
+    },
+    {
+      "id": "tech",
+      "topic": "📱 科技与生活",
+      "text": "The smartphone has become a {{device}} that almost everyone carries, giving instant {{access}} to information anywhere. Because they are so {{efficient}}, they now {{replace}} maps, cameras, and even wallets. Yet the software behind them is extremely {{complex}}, written by thousands of engineers. Users clearly {{benefit}} from this convenience, attending meetings in {{virtual}} rooms without leaving home. Experts believe artificial intelligence has the {{potential}} to {{transform}} medicine and education within a decade. Still, the loss of privacy remains a serious {{threat}} that we must not ignore."
+    },
+    {
+      "id": "study",
+      "topic": "🎓 校园学习",
+      "text": "At the start of term, our professor gave us a long {{assignment}} with a strict {{deadline}} two weeks away. In the noisy dorm it was hard to {{concentrate}}, so I moved to the quiet library to {{review}} my notes. Spending {{sufficient}} time each day, rather than cramming overnight, made a real difference. I also began to {{participate}} in class discussions, which slowly made me more {{confident}}. My writing started to {{improve}} once the teacher gave me detailed {{feedback}} on every draft. By the final week I felt ready to {{achieve}} the grade I had hoped for."
+    },
+    {
+      "id": "history",
+      "topic": "🏛 历史文化",
+      "text": "Deep in the desert lie the {{ancient}} stone temples of a lost {{civilization}}. For centuries these {{ruins}} were buried under sand until archaeologists began to {{excavate}} the site. The pottery and tools they found offered clear {{evidence}} of how the people once lived. Many of their customs survive today as local {{tradition}}. At its height the {{empire}} stretched across three rivers, but drought and war led to its sudden {{collapse}}. Even so, its art continued to {{influence}} neighboring cultures for generations. Historians still call the discovery one of the most {{remarkable}} of the century."
+    },
+    {
+      "id": "health",
+      "topic": "💪 健康生活",
+      "text": "Doctors agree that daily {{exercise}} is one of the best ways to {{prevent}} disease. Eating a {{balanced}} diet brings a similar {{benefit}}, giving the body the nutrients it needs. Keeping a {{regular}} sleep schedule helps you {{recover}} from a hard day. If you notice an unusual {{symptom}}, such as a lasting fever, see a doctor before it worsens. Early {{treatment}} is often simple and effective. A strong {{immune}} system can fight off most infections on its own. To stay well, it is wise to {{avoid}} smoking and too much sugar."
+    },
+    {
+      "id": "work",
+      "topic": "💼 求职职场",
+      "text": "After graduating, I decided to {{apply}} for a marketing {{position}} at a large firm. The manager was impressed by my internship {{experience}} and offered a competitive {{salary}}. On my first day, a friendly {{colleague}} showed me around the office. I soon became {{responsible}} for planning small campaigns on a tight {{budget}}. When I asked to {{negotiate}} a raise, my boss agreed to {{promote}} me instead. It was exactly the kind of {{opportunity}} I had been waiting for."
+    }
+  ]
+}
