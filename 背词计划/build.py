@@ -500,7 +500,10 @@ function wireCards(box){
     }
     card.querySelector('.wc-mark.ok').onclick=e=>{ e.stopPropagation(); setState('ok'); };
     card.querySelector('.wc-mark.no').onclick=e=>{ e.stopPropagation(); setState('no'); };
-    if(card.classList.contains('expandable')) card.addEventListener('click', ()=>card.classList.toggle('open'));
+    if(card.classList.contains('expandable')) card.addEventListener('click', ()=>{
+      card.classList.toggle('open');
+      if(card.classList.contains('open')){ const ws=card.querySelector('.wc-word'); if(ws) say(ws.dataset.say); }   // 展开即自动朗读该词
+    });
   });
 }
 
