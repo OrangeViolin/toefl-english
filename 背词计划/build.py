@@ -76,6 +76,28 @@ PAGE = r"""<!DOCTYPE html>
   .markrow .hint{font-size:12.5px;color:var(--muted)}
   .rev-list{font-size:13px;font-weight:700;color:var(--muted);margin:18px 0 8px;border-bottom:1px dashed var(--line);padding-bottom:4px}
   .rev-list:first-child{margin-top:0}
+  .clozebtn{background:var(--core);color:#fff;border:0;border-radius:10px;padding:9px 15px;font-size:13.5px;cursor:pointer;font-family:inherit;font-weight:600}
+  .clozebtn:hover{filter:brightness(1.06)}
+  /* 填词测验 */
+  .cz-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 2px 10px rgba(150,120,70,.05)}
+  .cz-clue{font-size:14px;color:#5f574c;margin-bottom:12px}
+  .cz-clue b{color:var(--ink)}
+  .cz-sent{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:2;margin:6px 0 14px}
+  .czb{display:inline-flex;align-items:baseline;gap:1px;margin:0 3px}
+  .czb b{font-weight:800;color:var(--accent);font-family:Georgia,serif}
+  .czb i{display:inline-block;width:12px;border-bottom:2px solid var(--accent);margin:0 1px 4px}
+  .czb sub{font-size:9px;color:var(--muted);margin-left:3px}
+  .cz-fill{font-weight:800}
+  .cz-fill.ok{color:var(--ok)} .cz-fill.bad{color:var(--bad);text-decoration:underline}
+  .cz-hintline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+  .cz-zh{font-size:13.5px;color:#6f6656}
+  .cz-input{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+  .cz-input input{flex:1;min-width:160px;border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:16px;font-family:Georgia,serif;background:var(--card)}
+  .cz-input input:focus{outline:none;border-color:var(--accent)}
+  .cz-res{min-height:22px;font-size:15px;margin-bottom:6px}
+  .cz-ok{color:var(--ok);font-weight:700} .cz-bad{color:var(--bad);font-weight:700}
+  .cz-summary{text-align:center;padding:30px 20px;font-size:16px}
+  .cz-acts{margin-top:16px;display:flex;gap:10px;justify-content:center}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
   .gcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;transition:.15s;box-shadow:0 2px 10px rgba(150,120,70,.05)}
   .gcard:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(150,120,70,.13);border-color:#d8c8a8}
@@ -211,14 +233,16 @@ function renderHeader(){
 }
 
 /* ── 路由 ── */
-function render(){ renderHeader(); if(curList==null) renderOverview(); else if(curList==='review') renderReview(); else renderStudy(curList); window.scrollTo(0,0); }
+function render(){ renderHeader(); if(curList==null) renderOverview(); else if(curList==='review') renderReview(); else if(curList==='cloze') renderCloze(); else renderStudy(curList); window.scrollTo(0,0); }
 
 /* ── 总览：分组网格 ── */
 function renderOverview(){
   const metas=listMeta();
   const nUn = noCount(words());
+  const nOk = doneCount(words());
   let h = `<div class="intro">按 <b>List 分组</b>，一组一组过。点一组进去，逐词看释义/词源/例句；不会的点「未掌握」，剩下的可一键记为「已掌握」。进度自动保存。</div>
     <div class="markrow"><button class="reviewbtn" id="goReview">🔴 查看全部未掌握（${nUn}）</button>
+      <button class="clozebtn" id="goCloze">✏️ 填词测验（用已掌握 ${nOk} 词）</button>
       <button class="markall" id="markAll">✅ 其余一键记为「已掌握」</button>
       <span class="hint">把当前词库里<b>没标「未掌握」</b>的词全部记为已掌握（浏览完再点）</span></div>
     <input class="search" id="q" placeholder="🔎 搜单词（跳到它所在的 List）…" value="">
@@ -226,6 +250,7 @@ function renderOverview(){
     <div class="grid" id="grid"></div>`;
   view.innerHTML = h;
   $('#goReview').onclick=()=>{ curList='review'; reviewMode='no'; render(); };
+  $('#goCloze').onclick=()=>{ curList='cloze'; render(); };
   $('#markAll').onclick=()=>{
     const all=words();
     const un=all.filter(w=>state[w.id]!=='no'&&state[w.id]!=='ok').length;
@@ -282,6 +307,80 @@ function renderReview(){
   $('#tRecite').onclick=()=>{ recite=!recite; save('bcplan:recite',recite); render(); };
   $('#tExpand').onclick=()=>{ const cs=[...view.querySelectorAll('.wcard.expandable')]; const anyClosed=cs.some(c=>!c.classList.contains('open')); cs.forEach(c=>c.classList.toggle('open',anyClosed)); };
   view.querySelectorAll('.seg [data-r]').forEach(bn=> bn.onclick=()=>{ reviewMode=bn.dataset.r; render(); });
+}
+
+/* ── 填词测验：用「已掌握」的词，从其真实例句挖空出题（首字母+方格·语境线索）── */
+let czQueue=[], czPos=0, czRight=0, czWrong=0, czRevealed=false;
+const CZ_MAX=30;
+function czShuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function czEscRe(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+// 绿皮书例句是「例 English…中文…」连成一串，按首个中文字切开
+function czParseEg(s){ s=String(s).replace(/^\s*(例句?|e\.?g\.?|ex[:：]?)\s*/i,'').trim();
+  const i=s.search(/[一-鿿]/); return i<0?{en:s.trim(),zh:''}:{en:s.slice(0,i).trim(),zh:s.slice(i).trim()}; }
+function czBestEg(w){
+  if(w.xex&&w.xex.length){ const c=w.xex.find(x=>x.en&&/\s/.test(x.en)&&x.src!=='高频搭配'); if(c) return {en:c.en,zh:c.zh||''}; }
+  if(w.e&&w.e.length){ const raw=typeof w.e[0]==='string'?w.e[0]:(w.e[0].en||''); const p=czParseEg(raw); if(p.en) return p; }
+  return null;
+}
+// 只挑「拿得出手」的题：单个英文词、≥4 字母、例句够长、且该词(含简单屈折)真的出现在例句里→可从语境推理
+function czMake(w){
+  const word=(w.w||'').trim(); if(word.length<4||/[^a-zA-Z]/.test(word)) return null;
+  const eg=czBestEg(w); if(!eg||!eg.en||eg.en.split(/\s+/).length<5) return null;
+  const forms=[word,word+'s',word+'es',word+'ed',word+'ing',word+'d',word.replace(/y$/,'ies'),word.replace(/e$/,'ing')];
+  for(const f of forms){ const m=eg.en.match(new RegExp('\\b('+czEscRe(f)+')\\b','i')); if(m) return {w:word,def:w.d||'',en:eg.en,zh:eg.zh||'',hit:m[1]}; }
+  return null;
+}
+function czBlank(hit){ let b=''; for(let i=1;i<hit.length;i++) b+='<i></i>'; return `<span class="czb"><b>${esc(hit[0])}</b>${b}<sub>${hit.length}</sub></span>`; }
+function czBlanked(q){ return esc(q.en).replace(new RegExp('\\b'+czEscRe(q.hit)+'\\b'), ()=>czBlank(q.hit)); }
+function czFilled(q,v){ const c=v===true?'cz-fill ok':v===false?'cz-fill bad':'cz-fill'; return esc(q.en).replace(new RegExp('\\b'+czEscRe(q.hit)+'\\b'), `<span class="${c}">${esc(q.hit)}</span>`); }
+function czBuild(){ const qs=[]; for(const w of words()){ if(state[w.id]!=='ok') continue; const c=czMake(w); if(c) qs.push(c); } return czShuffle(qs).slice(0,CZ_MAX); }
+
+function renderCloze(){
+  czQueue=czBuild(); czPos=0; czRight=0; czWrong=0;
+  view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回总览</span>
+      <h2>✏️ 填词测验</h2><span class="cnt" id="czProg"></span></div>
+    <div class="intro" style="margin:8px 0 0">用你标「<b>已掌握</b>」的词，从它们的真实例句挖空：<b>保留首字母＋方格＝剩余字母数</b>；结合<b>句子语境＋中文词义</b>把词拼出来。</div></div>
+    <div id="czBox"></div>`;
+  $('#back').onclick=()=>{ curList=null; render(); };
+  if(!czQueue.length){ $('#czBox').innerHTML=`<div class="empty">还没有可出题的词。<br>先在某个 List 把你会的词点「✓ 掌握」（绿皮书多数词带真实例句），再回来测验。</div>`; return; }
+  showClozeQ();
+}
+function showClozeQ(){
+  const box=$('#czBox'), prog=$('#czProg');
+  if(czPos>=czQueue.length){ const t=czRight+czWrong;
+    box.innerHTML=`<div class="cz-summary">🎉 本组完成！答对 <b style="color:var(--ok)">${czRight}</b> / ${t} · 正确率 <b>${t?Math.round(czRight/t*100):0}%</b>
+      <div class="cz-acts"><button class="clozebtn" id="czAgain">🔀 再来一组</button><button class="tbtn" id="czBack">返回总览</button></div></div>`;
+    prog.textContent=''; $('#czAgain').onclick=()=>renderCloze(); $('#czBack').onclick=()=>{ curList=null; render(); }; return;
+  }
+  const q=czQueue[czPos]; czRevealed=false;
+  prog.textContent=`第 ${czPos+1}/${czQueue.length} 题 · 答对 ${czRight}`;
+  box.innerHTML=`<div class="cz-card">
+    <div class="cz-clue">💡 词义线索：<b>${esc(q.def||'（本词库未附释义，靠句子语境推）')}</b></div>
+    <div class="cz-sent">${czBlanked(q)}</div>
+    <div class="cz-hintline"><button class="tbtn" id="czSay">🔊 读句子</button><button class="tbtn" id="czTip">提示句意</button>
+      <span class="cz-zh" id="czZh" style="display:none">${esc(q.zh||'（暂无翻译）')}</span></div>
+    <div class="cz-input"><input id="czIn" placeholder="拼出这个词（含首字母）…" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <button class="tbtn on" id="czSub">提交</button><button class="tbtn" id="czShow">显示答案</button></div>
+    <div class="cz-res" id="czRes"></div>
+    <div id="czNextWrap" style="display:none;margin-top:4px"><button class="clozebtn" id="czNext">下一题 →</button></div></div>`;
+  const inp=$('#czIn'); if(inp) inp.focus();
+  function next(){ czPos++; showClozeQ(); window.scrollTo(0,0); }
+  function reveal(v,typed){ czRevealed=true;
+    const s=view.querySelector('.cz-sent'); if(s) s.innerHTML=czFilled(q,v);
+    $('#czRes').innerHTML = v===true?`<span class="cz-ok">✓ 正确：${esc(q.hit)}</span>`
+      : v===false?`<span class="cz-bad">✗ 正确答案：${esc(q.hit)}${typed?`（你写的 ${esc(typed)}）`:''}</span>`
+      : `答案：<b>${esc(q.hit)}</b>（本题不计分）`;
+    $('#czNextWrap').style.display='block'; const nb=$('#czNext'); nb.onclick=next; nb.focus();
+    prog.textContent=`第 ${czPos+1}/${czQueue.length} 题 · 答对 ${czRight}`;
+  }
+  function submit(){ if(czRevealed) return; const v=(inp.value||'').trim(); if(!v) return;
+    const ok=v.toLowerCase()===q.hit.toLowerCase()||v.toLowerCase()===q.w.toLowerCase();
+    if(ok) czRight++; else czWrong++; reveal(ok,v); }
+  $('#czSub').onclick=submit;
+  inp.onkeydown=e=>{ if(e.key==='Enter'){ e.preventDefault(); czRevealed?next():submit(); } };
+  $('#czShow').onclick=()=>{ if(!czRevealed) reveal(null); };
+  $('#czSay').onclick=()=>say(q.en);
+  $('#czTip').onclick=()=>{ const z=$('#czZh'); if(z) z.style.display=z.style.display==='none'?'inline':'none'; };
 }
 
 /* ── 学习视图：一组单词卡 ── */
