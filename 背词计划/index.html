@@ -34,6 +34,14 @@
   .rev-list:first-child{margin-top:0}
   .clozebtn{background:var(--core);color:#fff;border:0;border-radius:10px;padding:9px 15px;font-size:13.5px;cursor:pointer;font-family:inherit;font-weight:600}
   .clozebtn:hover{filter:brightness(1.06)}
+  .czwbtn{background:var(--gold);color:#fff;border:0;border-radius:10px;padding:9px 15px;font-size:13.5px;cursor:pointer;font-family:inherit;font-weight:600}
+  .czwbtn:hover{filter:brightness(1.06)}
+  .czw-row{display:flex;align-items:center;gap:12px;padding:9px 13px;border:1px solid var(--line);border-radius:10px;background:var(--card);margin-bottom:8px}
+  .czw-w{font-family:Georgia,serif;font-size:17px;font-weight:700;cursor:pointer}
+  .czw-w:hover{color:var(--accent)}
+  .czw-tp{font-size:12px;color:var(--muted)}
+  .czw-del{margin-left:auto;font-size:12.5px;color:var(--ok);cursor:pointer;white-space:nowrap}
+  .czw-del:hover{text-decoration:underline}
   /* 填词测验 */
   .cz-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 2px 10px rgba(150,120,70,.05)}
   .cz-clue{font-size:14px;color:#5f574c;margin-bottom:12px}
@@ -57,13 +65,16 @@
   /* 文段填空 */
   .pz-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 2px 10px rgba(150,120,70,.05)}
   .pz-text{font-size:17px;line-height:2.5;color:var(--ink)}
-  .pz-b{display:inline-flex;align-items:baseline;gap:2px;margin:0 2px;white-space:nowrap}
-  .pz-b>b{font-weight:800;color:var(--accent);font-family:Georgia,serif}
-  .pz-in{border:0;border-bottom:2px solid var(--accent);background:#fbf7ee;font-size:16px;font-family:Georgia,serif;padding:0 3px 1px;color:var(--ink);text-align:center;letter-spacing:1px}
-  .pz-in:focus{outline:none;background:#fff4e0}
-  .pz-in.ok{border-color:var(--ok);color:var(--ok);background:#f2faf4}
-  .pz-in.bad{border-color:var(--bad);color:var(--bad);background:#fdf1ef}
-  .pz-b>sub{font-size:9px;color:var(--muted);margin-left:2px}
+  .pz-b{display:inline-flex;align-items:flex-end;gap:1px;margin:0 4px;white-space:nowrap;vertical-align:bottom}
+  .pz-first{font-weight:800;color:var(--accent);font-family:Georgia,serif;font-size:17px;min-width:12px;text-align:center;border-bottom:2px solid var(--accent);line-height:1.5}
+  .pz-first.ok{color:var(--ok);border-color:var(--ok)} .pz-first.bad{color:var(--bad);border-color:var(--bad)}
+  .pz-slots{display:inline-flex;gap:2px}
+  .pz-slot{width:15px;padding:0 1px 1px;border:0;border-bottom:2px dashed var(--accent);background:transparent;font-size:16px;font-family:Georgia,serif;text-align:center;color:var(--ink);line-height:1.5;caret-color:var(--accent)}
+  .pz-slot:focus{outline:none;border-bottom-style:solid;background:#fff4e0}
+  .pz-slot.filled{border-bottom-style:solid}
+  .pz-slot.ok{color:var(--ok);border-color:var(--ok)}
+  .pz-slot.bad{color:var(--bad);border-color:var(--bad)}
+  .pz-b>sub{font-size:9px;color:var(--muted);margin-left:3px}
   .pz-ans{font-size:12px;color:var(--ok);margin-left:3px;font-family:Georgia,serif}
   .pz-bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
   .pz-res{margin-top:12px;font-size:15px}
@@ -202,7 +213,7 @@ function renderHeader(){
 }
 
 /* ── 路由 ── */
-function render(){ renderHeader(); if(curList==null) renderOverview(); else if(curList==='review') renderReview(); else if(curList==='cloze') renderCloze(); else renderStudy(curList); window.scrollTo(0,0); }
+function render(){ renderHeader(); if(curList==null) renderOverview(); else if(curList==='review') renderReview(); else if(curList==='cloze') renderCloze(); else if(curList==='czwrong') renderCzWrong(); else if(curList==='czwdrill') renderCzwDrill(); else renderStudy(curList); window.scrollTo(0,0); }
 
 /* ── 总览：分组网格 ── */
 function renderOverview(){
@@ -212,6 +223,7 @@ function renderOverview(){
   let h = `<div class="intro">按 <b>List 分组</b>，一组一组过。点一组进去，逐词看释义/词源/例句；不会的点「未掌握」，剩下的可一键记为「已掌握」。进度自动保存。</div>
     <div class="markrow"><button class="reviewbtn" id="goReview">🔴 查看全部未掌握（${nUn}）</button>
       <button class="clozebtn" id="goCloze">📝 文段填空（${PASSAGES.length} 篇）</button>
+      <button class="czwbtn" id="goCzw">❌ 填词错词（${loadCzW().length}）</button>
       <button class="markall" id="markAll">✅ 其余一键记为「已掌握」</button>
       <span class="hint">把当前词库里<b>没标「未掌握」</b>的词全部记为已掌握（浏览完再点）</span></div>
     <input class="search" id="q" placeholder="🔎 搜单词（跳到它所在的 List）…" value="">
@@ -220,6 +232,7 @@ function renderOverview(){
   view.innerHTML = h;
   $('#goReview').onclick=()=>{ curList='review'; reviewMode='no'; render(); };
   $('#goCloze').onclick=()=>{ curList='cloze'; render(); };
+  $('#goCzw').onclick=()=>{ curList='czwrong'; render(); };
   $('#markAll').onclick=()=>{
     const all=words();
     const un=all.filter(w=>state[w.id]!=='no'&&state[w.id]!=='ok').length;
@@ -299,7 +312,9 @@ function renderPassage(){
   let body=''; parsed.parts.forEach(p=>{
     if(p.t==='t'){ body+=esc(p.s); return; }
     const w=p.word, len=w.length, rest=len-1;
-    body+=`<span class="pz-b"><b>${esc(w[0])}</b><input class="pz-in" data-i="${p.i}" maxlength="${rest}" style="width:${Math.max(26,rest*12+6)}px" placeholder="${'‗'.repeat(rest)}" autocomplete="off" autocapitalize="off" spellcheck="false"><sub>${len}</sub></span>`;
+    body+=`<span class="pz-b"><b class="pz-first">${esc(w[0])}</b><span class="pz-slots" data-i="${p.i}">`+
+      Array.from({length:rest},()=>`<input class="pz-slot" maxlength="1" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false">`).join('')+
+      `</span><sub>${len}</sub></span>`;
   });
   view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回总览</span>
       <h2>📝 文段填空</h2><span class="cnt">${esc(pzCur.topic||'')} · 第 ${(pzIdx%pzList.length)+1}/${pzList.length} 篇 · 含你已掌握 ${known}/${parsed.words.length} 词</span></div>
@@ -315,26 +330,105 @@ function renderPassage(){
   $('#pzShow').onclick=()=>pzGrade(true);
   $('#pzNext').onclick=()=>{ pzIdx++; renderPassage(); window.scrollTo(0,0); };
   $('#pzSay').onclick=()=>say(pzCur.text.replace(/\{\{|\}\}/g,''));
-  const ins=[...view.querySelectorAll('.pz-in')];
-  ins.forEach((inp,k)=> inp.onkeydown=e=>{ if(e.key==='Enter'){ e.preventDefault(); if(k+1<ins.length) ins[k+1].focus(); else pzGrade(false); } });
-  if(ins[0]) ins[0].focus();
+  wireSlots(()=>pzGrade(false));
+}
+// 一格一字母：打字落到虚线上、自动跳下一格、退格回上一格
+function wireSlots(onEnter){
+  const slots=[...view.querySelectorAll('.pz-slot')];
+  slots.forEach((el,k)=>{
+    el.onfocus=()=>el.select();
+    el.oninput=()=>{ el.value=(el.value||'').replace(/[^a-zA-Z]/g,'').slice(-1);
+      if(el.value){ el.classList.add('filled'); const nx=slots[k+1]; if(nx) nx.focus(); } else el.classList.remove('filled'); };
+    el.onkeydown=e=>{
+      if(e.key==='Backspace'){ if(!el.value){ const pv=slots[k-1]; if(pv){ e.preventDefault(); pv.focus(); pv.value=''; pv.classList.remove('filled'); } } }
+      else if(e.key==='Enter'){ e.preventDefault(); onEnter&&onEnter(); }
+      else if(e.key==='ArrowLeft'){ e.preventDefault(); const pv=slots[k-1]; if(pv) pv.focus(); }
+      else if(e.key==='ArrowRight'){ e.preventDefault(); const nx=slots[k+1]; if(nx) nx.focus(); }
+    };
+  });
+  if(slots[0]) slots[0].focus();
 }
 function pzGrade(reveal){
   if(pzGraded && !reveal) return;
   const parsed=pzCur._p; let right=0; const wrong=[];
-  view.querySelectorAll('.pz-in').forEach(inp=>{
-    const i=+inp.dataset.i, w=parsed.words[i];
-    const ok=((w[0]+(inp.value||'')).toLowerCase()===w.toLowerCase());
-    if(reveal) inp.value=w.slice(1);
-    inp.classList.remove('ok','bad'); inp.classList.add((ok||reveal)?'ok':'bad'); inp.disabled=true;
-    if(ok) right++; else { if(!reveal) wrong.push(w);
-      const b=inp.parentNode; if(b&&!b.querySelector('.pz-ans')){ const t=document.createElement('span'); t.className='pz-ans'; t.textContent='('+w+')'; b.appendChild(t); } }
+  parsed.words.forEach((w,i)=>{
+    const cont=view.querySelector('.pz-slots[data-i="'+i+'"]'); if(!cont) return;
+    const slots=[...cont.querySelectorAll('.pz-slot')];
+    const typed=slots.map(s=>s.value||'').join('');
+    const ok=((w[0]+typed).toLowerCase()===w.toLowerCase());
+    const cls=(ok||reveal)?'ok':'bad';
+    slots.forEach((s,j)=>{ if(reveal) s.value=w[j+1]||''; s.classList.remove('ok','bad'); s.classList.add(cls); if(s.value) s.classList.add('filled'); s.disabled=true; });
+    const b=cont.parentNode, fst=b.querySelector('.pz-first'); if(fst){ fst.classList.remove('ok','bad'); fst.classList.add(cls); }
+    if(ok){ right++; czwRemove(w); }                              // 答对→移出错词表
+    else if(!reveal){ wrong.push(w); czwAdd(w, pzCur.topic);      // 答错→进「填词错词」
+      if(b && !b.querySelector('.pz-ans')){ const t=document.createElement('span'); t.className='pz-ans'; t.textContent='('+w+')'; b.appendChild(t); } }
   });
   pzGraded=true;
   const total=parsed.words.length, res=$('#pzRes');
   res.innerHTML = reveal ? '已显示全部答案（本篇不计分）。'
-    : `得分 <b style="color:var(--ok)">${right}</b> / ${total} · 正确率 <b>${Math.round(right/total*100)}%</b>`+(wrong.length?` · 待复习：${wrong.map(esc).join('、')}`:' 🎉 全对！');
+    : `得分 <b style="color:var(--ok)">${right}</b> / ${total} · 正确率 <b>${Math.round(right/total*100)}%</b>`+(wrong.length?` · 已收进 <b style="color:var(--bad)">填词错词</b>：${wrong.map(esc).join('、')}`:' 🎉 全对！');
   const g=$('#pzGrade'); if(g&&!reveal) g.disabled=true;
+}
+
+/* ── 填词错词：文段填空里答错/拼错的词，自动汇集成一张复习表 + 听音重练 ── */
+const CZW_KEY='bcplan:czwrong';
+function loadCzW(){ return load(CZW_KEY, []); }
+function saveCzW(a){ save(CZW_KEY, a); }
+function czwAdd(word, topic){ const a=loadCzW(); if(!a.some(x=>x.w.toLowerCase()===word.toLowerCase())){ a.push({w:word, topic:topic||''}); saveCzW(a); } }
+function czwRemove(word){ const a=loadCzW().filter(x=>x.w.toLowerCase()!==word.toLowerCase()); saveCzW(a); }
+
+function renderCzWrong(){
+  const a=loadCzW();
+  view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回总览</span>
+      <h2>❌ 填词错词</h2><span class="cnt">${a.length} 个 · 文段填空里答错/拼错的词</span></div>
+    <div class="tools"><button class="tbtn on" id="czwDrill" ${a.length?'':'disabled'}>🔁 错词重练（听音拼写）</button>
+      <button class="tbtn" id="czwClear" ${a.length?'':'disabled'}>🗑 清空</button></div></div>
+    <div id="czwBody"></div>`;
+  $('#back').onclick=()=>{ curList=null; render(); };
+  $('#czwClear').onclick=()=>{ if(confirm('清空「填词错词」列表？')){ saveCzW([]); renderCzWrong(); } };
+  $('#czwDrill').onclick=()=>{ czwDrillStart(); };
+  const body=$('#czwBody');
+  body.innerHTML = a.length ? a.map((x,i)=>`<div class="czw-row"><span class="czw-w" data-say="${esc(x.w)}">${esc(x.w)} 🔊</span>${x.topic?`<span class="czw-tp">${esc(x.topic)}</span>`:''}<span class="czw-del" data-i="${i}">✓ 记住了</span></div>`).join('')
+    : `<div class="empty">还没有错词。做「📝 文段填空」时答错/拼错的词，会自动收进这里，方便集中重练。</div>`;
+  body.querySelectorAll('.czw-w').forEach(el=> el.onclick=()=>say(el.dataset.say));
+  body.querySelectorAll('.czw-del').forEach(el=> el.onclick=()=>{ const a2=loadCzW(); a2.splice(+el.dataset.i,1); saveCzW(a2); renderCzWrong(); });
+}
+
+let czwQ=[], czwPos=0, czwRight=0;
+function czwDrillStart(){ czwQ=pzShuffle(loadCzW()); czwPos=0; czwRight=0; curList='czwdrill'; renderCzwDrill(); window.scrollTo(0,0); }
+function renderCzwDrill(){
+  if(!czwQ.length || czwPos>=czwQ.length){
+    view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回错词表</span><h2>🔁 错词重练</h2></div></div>
+      <div class="cz-summary">${czwQ.length?`完成！答对 <b style="color:var(--ok)">${czwRight}</b> / ${czwQ.length}`:'错词表是空的。'}
+        <div class="cz-acts"><button class="tbtn on" id="d2">返回错词表</button></div></div>`;
+    $('#back').onclick=$('#d2').onclick=()=>{ curList='czwrong'; render(); }; return;
+  }
+  const w=czwQ[czwPos].w, rest=w.length-1;
+  const slots=Array.from({length:rest},()=>`<input class="pz-slot" maxlength="1" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false">`).join('');
+  view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回错词表</span>
+      <h2>🔁 错词重练</h2><span class="cnt">听音拼写 · 第 ${czwPos+1}/${czwQ.length} · 答对 ${czwRight}</span></div></div>
+    <div class="pz-card">
+      <div class="cz-clue">🔊 听发音，把这个词拼出来（已给首字母）<button class="tbtn" id="dSay" style="margin-left:8px">🔊 再听一遍</button>${czwQ[czwPos].topic?` <span style="color:var(--muted);font-size:12.5px">来自：${esc(czwQ[czwPos].topic)}</span>`:''}</div>
+      <div class="pz-text" style="font-size:22px;margin-top:6px"><span class="pz-b"><b class="pz-first">${esc(w[0])}</b><span class="pz-slots" data-i="0">${slots}</span><sub>${w.length}</sub></span></div>
+      <div class="pz-bar"><button class="clozebtn" id="dCheck">✅ 判定</button><button class="tbtn" id="dShow">显示答案</button><button class="tbtn" id="dNext">下一个 →</button></div>
+      <div class="pz-res" id="dRes"></div></div>`;
+  let done=false;
+  function check(reveal){
+    if(done && !reveal) return;
+    const ss=[...view.querySelectorAll('.pz-slot')]; const typed=ss.map(s=>s.value||'').join('');
+    const ok=((w[0]+typed).toLowerCase()===w.toLowerCase()); const cls=(ok||reveal)?'ok':'bad';
+    ss.forEach((s,j)=>{ if(reveal) s.value=w[j+1]||''; s.classList.add(cls); s.disabled=true; });
+    view.querySelector('.pz-first').classList.add(cls);
+    $('#dRes').innerHTML = ok?`<span class="cz-ok">✓ 正确！已移出错词表</span>`:reveal?`答案：<b>${esc(w)}</b>`:`<span class="cz-bad">✗ 正确答案：${esc(w)}</span>`;
+    if(ok){ czwRight++; czwRemove(w); } done=true; $('#dCheck').disabled=true;
+  }
+  $('#back').onclick=()=>{ curList='czwrong'; render(); };
+  $('#dCheck').onclick=()=>check(false);
+  $('#dShow').onclick=()=>check(true);
+  $('#dNext').onclick=()=>{ czwPos++; renderCzwDrill(); window.scrollTo(0,0); };
+  $('#dSay').onclick=()=>say(w);
+  wireSlots(()=>check(false));
+  say(w);
 }
 
 /* ── 学习视图：一组单词卡 ── */
