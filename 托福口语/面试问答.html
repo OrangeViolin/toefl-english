@@ -5,230 +5,307 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>面试问答 · Take an Interview</title>
 <style>
-  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--bad:#c04a3a}
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--bad:#c04a3a;--blue:#4a5cc7}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+  .wrap{max-width:880px;margin:0 auto;padding:26px 20px 90px}
   .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
-  .top a{color:var(--muted);text-decoration:none}
+  .top a,.crumb{color:var(--muted);text-decoration:none;cursor:pointer}
   h1{font-size:22px;margin:12px 0 2px}
   .en{color:var(--accent);font-weight:600;font-size:14px}
-  .desc{color:#5f574c;font-size:14px;max-width:760px;margin:8px 0 20px}
-  .topicbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-  .topic{font-size:13px;padding:6px 14px;border:1px solid var(--line);background:var(--card);border-radius:20px;cursor:pointer;color:#6b6154}
-  .topic.on{background:var(--core);color:#fff;border-color:var(--core)}
-  .stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(150,120,70,.06)}
-  .qhead{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);margin-bottom:12px}
-  .timer{font-size:15px;font-weight:700;color:var(--ink)}
+  .desc{color:#5f574c;font-size:14px;margin:8px 0 20px}
+  /* 列表卡片 */
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .qcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;cursor:pointer;transition:.15s;box-shadow:0 2px 12px rgba(150,120,70,.06)}
+  .qcard:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(150,120,70,.14);border-color:#d8c8a8}
+  .qcard .tp{font-size:12px;color:#2f7d72;background:#e7f1ee;display:inline-block;padding:1px 9px;border-radius:20px;margin-bottom:8px}
+  .qcard h3{font-size:17px;margin:0 0 4px}
+  .qcard .meta{font-size:13px;color:var(--muted)}
+  /* 模式选择 */
+  .modepick{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+  .modebtn{border:1px solid var(--line);border-radius:18px;padding:26px 22px;cursor:pointer;background:var(--card);transition:.15s;text-align:left}
+  .modebtn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(150,120,70,.14)}
+  .modebtn .ic{font-size:34px}
+  .modebtn h3{margin:8px 0 4px;font-size:19px}
+  .modebtn p{margin:0;font-size:13px;color:var(--muted);line-height:1.55}
+  .modebtn.exam{border-color:#d8b48c}.modebtn.exam:hover{border-color:var(--accent)}
+  .modebtn.prac{border-color:#a9d0c8}.modebtn.prac:hover{border-color:var(--core)}
+  /* 通用面板 */
+  .stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px;box-shadow:0 2px 12px rgba(150,120,70,.06);margin-top:16px}
+  .qhead{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);margin-bottom:10px}
+  .timer{font-size:16px;font-weight:700;color:var(--ink)}
   .timer.warn{color:var(--bad)}
-  .question{font-family:Georgia,"Times New Roman",serif;font-size:22px;line-height:1.45;margin:8px 0 16px;min-height:60px}
-  .controls{display:flex;gap:10px;margin:14px 0}
+  .question{font-family:Georgia,"Times New Roman",serif;font-size:21px;line-height:1.45;margin:6px 0 16px}
+  .controls{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap}
   .btn{border:none;border-radius:22px;padding:11px 22px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
   .btn.rec{background:var(--accent);color:#fff}
   .btn.rec.recording{background:var(--bad);animation:pulse 1.2s infinite}
   .btn.next{background:var(--core);color:#fff}
+  .btn.g{background:#efe8d8;color:#5f574c}
   .btn:disabled{opacity:.45;cursor:not-allowed}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(192,74,58,.4)}50%{box-shadow:0 0 0 8px rgba(192,74,58,0)}}
-  .live{min-height:44px;padding:10px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:16px;color:#6b6154}
-  .live .f{color:var(--ink);font-family:Georgia,serif}
-  .live .i{color:#a89a86;font-style:italic}
-  .answer{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  .live{min-height:40px;padding:10px 14px;background:#faf6ee;border:1px dashed var(--line);border-radius:12px;font-size:15px;color:#6b6154}
+  .answer{margin-top:12px;border-top:1px solid var(--line);padding-top:10px;display:none}
   .answer .metric{font-size:14px;color:#5f574c;margin-bottom:6px}
   .answer .metric b{color:var(--ink)}
-  .report{margin-top:18px}
-  .report textarea{width:100%;height:200px;font-size:12.5px;font-family:ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:10px;padding:10px;background:#faf6ee}
-  .report .copy{background:var(--core);color:#fff;border:none;border-radius:20px;padding:8px 18px;font-size:13px;cursor:pointer;margin-top:8px}
-  .hint{color:var(--muted);font-size:12.5px;margin-top:14px}
+  .copy{background:var(--core);color:#fff;border:none;border-radius:20px;padding:8px 18px;font-size:13px;cursor:pointer;margin-top:8px}
+  .hint{color:var(--muted);font-size:12.5px;margin-top:12px}
+  /* 折叠区（练习模式材料）*/
+  .fold{border:1px solid var(--line);border-radius:12px;margin-top:12px;overflow:hidden;background:#fffdf9}
+  .fold>summary{cursor:pointer;padding:11px 14px;font-size:14px;font-weight:700;list-style:none;display:flex;align-items:center;gap:8px}
+  .fold>summary::-webkit-details-marker{display:none}
+  .fold>summary .chev{margin-left:auto;color:#c3b79c;transition:.2s;font-size:12px}
+  .fold[open]>summary .chev{transform:rotate(90deg)}
+  .fold .body{padding:4px 15px 15px}
+  /* 思路表格 */
+  table.outline{width:100%;border-collapse:collapse;font-size:14px}
+  table.outline td{padding:8px 10px;border:1px solid var(--line);vertical-align:top}
+  table.outline .role{width:78px;font-weight:700;color:#fff;text-align:center;background:var(--blue)}
+  table.outline .role.r2{background:var(--core)}
+  table.outline ul{margin:0;padding-left:18px}
+  /* 范文 */
+  .model .ln{margin:7px 0;font-size:15.5px;line-height:1.5}
+  .model .mk{font-weight:700;color:var(--accent)}
+  .model .role{font-size:11px;color:#fff;background:#b9ad95;border-radius:10px;padding:1px 7px;margin-left:6px;vertical-align:middle}
+  .model .opt{opacity:.6}
+  .playall{background:var(--blue);color:#fff;border:none;border-radius:20px;padding:6px 14px;font-size:13px;cursor:pointer;margin:2px 0 6px}
+  .wc{font-size:12.5px;color:var(--muted);margin-top:6px}
+  /* 表达 & 单词 */
+  .frames div,.vocab div{margin:5px 0;font-size:14px}
+  .frames b{color:var(--accent)}
+  .vocab .w{font-weight:700;cursor:pointer}.vocab .w:hover{color:var(--accent)}
+  .vocab .ipa{color:var(--core);font-size:13px;margin:0 5px}
+  .subh{font-size:12.5px;font-weight:700;color:var(--core);margin:10px 0 2px}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><a href="./index.html">← 返回口语主页</a><span>面试问答 · Take an Interview</span></div>
-  <h1>💬 面试问答</h1>
-  <div class="en">Take an Interview · 连续 4 个开放式问题</div>
-  <div class="desc">同一日常主题连问 4 题，每题最多 45 秒、无准备。考<b>流利度、连贯展开、语法词汇、自然韵律</b>。系统自动倒计时、转写、算语速。</div>
-
-  <div class="topicbar" id="topicbar"></div>
-
-  <div class="stage">
-    <div class="qhead"><span id="qpos"></span><span class="timer" id="timer">⏱ 45s</span></div>
-    <div class="question" id="question">选择一个主题开始</div>
-    <div class="controls">
-      <button class="btn rec" id="recBtn" onclick="toggleRec()">🎙 开始录音</button>
-      <button class="btn next" id="nextBtn" onclick="next()" disabled>下一题 →</button>
-    </div>
-    <div class="live" id="live">录音转写会实时显示在这里…</div>
-    <div class="answer" id="answer" style="display:none"></div>
-    <div class="report" id="reportWrap" style="display:none">
-      <h4 style="margin:12px 0 6px;font-size:14px">📋 答题报告（复制给 cc 打分）</h4>
-      <textarea id="reportText" readonly></textarea><br>
-      <button class="copy" onclick="copyReport()">📋 复制答题报告</button>
-    </div>
-    <div class="hint">💡 建议每题说到接近 45 秒：观点 → 理由 → 具体例子，中间少用 um/uh。</div>
-  </div>
+  <div class="top"><a href="./index.html">← 返回口语主页</a><span id="crumb">面试问答 · Take an Interview</span></div>
+  <div id="view"></div>
 </div>
 
 <script src="./speech-core.js"></script>
+<script src="./interview-bank.js"></script>
 <script>
-// ---------- 题目数据（对标 2026 新版 Take an Interview，每主题 4 个连续开放式问题）----------
-const TOPICS = [
-  { title:"放松方式 Relaxation", questions:[
-    "What's your favorite way to relax after a busy day?",
-    "How do you usually spend your weekends?",
-    "Do you prefer relaxing alone or with friends? Why?",
-    "Do you think people today have enough time to relax? Why or why not?" ]},
-  { title:"学习习惯 Study Habits", questions:[
-    "Do you prefer studying alone or with others? Why?",
-    "What is your favorite subject and why?",
-    "How do you usually prepare for a big exam?",
-    "What advice would you give to a student who struggles to focus?" ]},
-  { title:"科技与生活 Technology", questions:[
-    "How has technology changed the way you communicate with others?",
-    "Do you spend too much time on your phone? Why or why not?",
-    "What is one piece of technology you cannot live without?",
-    "Do you think social media has more benefits or drawbacks?" ]},
-  { title:"家乡 Hometown", questions:[
-    "What is your hometown like?",
-    "What do you like most about where you live?",
-    "How has your hometown changed over the years?",
-    "Would you prefer to live in a big city or a small town? Why?" ]},
-  { title:"旅行 Travel", questions:[
-    "What kind of places do you like to travel to?",
-    "What is the most memorable trip you have ever taken?",
-    "Do you prefer traveling alone or with others? Why?",
-    "Is it better to travel to a new place or revisit a favorite one? Why?" ]},
-];
+const BANK = window.INTERVIEW_BANK || [];
+const view = document.getElementById('view');
+const crumb = document.getElementById('crumb');
+function esc(s){ return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 
-let topicIdx = -1, qIdx = 0;
-let answers = [];       // {q, transcript, duration, wpm, fillers}
-let recording = false, timerId = null, remain = 45;
+/* ── 语音合成（范文/单词朗读，自然女声）── */
+let voices=[]; function lv(){voices=window.speechSynthesis?speechSynthesis.getVoices():[];}
+if(window.speechSynthesis){lv();speechSynthesis.onvoiceschanged=lv;}
+function pickVoice(){const pref=['Samantha','Ava','Allison','Susan','Serena','Google US English','Microsoft Aria'];
+  const en=voices.filter(v=>v.lang==='en-US');const pool=en.length?en:voices.filter(v=>v.lang&&v.lang.toLowerCase().startsWith('en'));
+  for(const n of pref){const v=pool.find(x=>x.name&&x.name.includes(n));if(v)return v;}return pool[0]||voices[0]||null;}
+function say(t){if(!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);const v=pickVoice();if(v)u.voice=v;u.lang='en-US';u.rate=.95;speechSynthesis.speak(u);}
 
-function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+/* ── 状态 & 路由 ── */
+let S = { view:'list', item:null, qi:0, answers:[] };
+let recording=false, timerId=null, remain=45, result=null, lastUrl=null;
 
-function renderTopics(){
-  document.getElementById('topicbar').innerHTML = TOPICS.map((t,i)=>
-    '<span class="topic'+(i===topicIdx?' on':'')+'" onclick="chooseTopic('+i+')">'+esc(t.title)+'</span>').join('');
-}
-function chooseTopic(i){
-  topicIdx=i; qIdx=0; answers=[];
-  renderTopics();
-  document.getElementById('reportWrap').style.display='none';
-  showQuestion();
-}
-function showQuestion(){
-  document.getElementById('qpos').textContent='主题：'+TOPICS[topicIdx].title+' · 第 '+(qIdx+1)+'/4 题';
-  document.getElementById('question').textContent=TOPICS[topicIdx].questions[qIdx];
-  document.getElementById('live').innerHTML='录音转写会实时显示在这里…';
-  document.getElementById('answer').style.display='none';
-  document.getElementById('nextBtn').disabled=true;
-  resetTimer();
+function go(v){ S.view=v; render(); }
+function render(){
+  if(timerId){clearInterval(timerId);timerId=null;}
+  if(recording){ try{VocaSpeech.stop();}catch(_){}} recording=false;
+  if(S.view==='list') renderList();
+  else if(S.view==='mode') renderMode();
+  else if(S.view==='practice') renderPractice();
+  else if(S.view==='exam-intro') renderExamIntro();
+  else if(S.view==='exam') renderExamQ();
+  else if(S.view==='exam-report') renderExamReport();
+  window.scrollTo(0,0);
 }
 
-let result=null;
-let lastReplayUrl=null;
-async function toggleRec(){
-  if(recording){
-    recording=false; clearInterval(timerId);
-    document.getElementById('recBtn').textContent='🎙 开始录音';
-    document.getElementById('recBtn').classList.remove('recording');
-    document.getElementById('live').innerHTML='⏳ 正在转写你的回答…';
-    result = await VocaSpeech.stop();
-    finishAnswer();
-  } else {
-    try{
-      await VocaSpeech.start(()=>{});
-      recording=true; remain=45;
-      document.getElementById('recBtn').textContent='⏹ 停止录音';
-      document.getElementById('recBtn').classList.add('recording');
-      document.getElementById('live').innerHTML='🎙 录音中，请展开回答…';
-      document.getElementById('answer').style.display='none';
-      startTimer();
-    }catch(e){ alert(e.message); }
-  }
-}
-function startTimer(){
-  const el=document.getElementById('timer');
-  el.classList.remove('warn');
-  timerId=setInterval(()=>{
-    remain--;
-    el.textContent='⏱ '+remain+'s';
-    if(remain<=10) el.classList.add('warn');
-    if(remain<=0){ clearInterval(timerId); if(recording) toggleRec(); }
-  },1000);
-}
-function resetTimer(){
-  remain=45; const el=document.getElementById('timer');
-  el.textContent='⏱ 45s'; el.classList.remove('warn');
+/* ── 列表 ── */
+function renderList(){
+  crumb.textContent='面试问答 · 真题库';
+  view.innerHTML = `<h1>💬 面试问答</h1><div class="en">Take an Interview · 真题库</div>
+    <div class="desc">点一道真题进去，选<b>练习模式</b>（题目+思路表格+范文+表达词汇+录音批改）或<b>考试模式</b>（限时 45 秒/题 → 判分）。</div>
+    <div class="cards">${BANK.map((it,i)=>`<div class="qcard" data-i="${i}">
+      <span class="tp">${esc(it.topic||'真题')}</span>
+      <h3>${esc(it.title)}</h3>
+      <div class="meta">${it.questions.length} 题${it.questions.some(q=>q.model)?' · 含范文/思路表格':''}</div>
+    </div>`).join('') || '<div style="color:#8c8072">题库为空，往 interview-bank.js 里加题。</div>'}</div>`;
+  view.querySelectorAll('.qcard').forEach(c=>c.onclick=()=>{S.item=BANK[+c.dataset.i];S.qi=0;go('mode');});
 }
 
-function finishAnswer(){
-  const q = TOPICS[topicIdx].questions[qIdx];
-  const txt = result.transcript || '';
-  const wpm = Math.round(tokenize(txt).length / Math.max(result.duration,0.1) * 60);
-  const fillers = (txt.match(/\b(um|uh|er|like|you know)\b/gi)||[]).length;
-  answers.push({ q, transcript:txt, duration:result.duration, wpm, fillers, engine:result.engine });
+/* ── 选模式 ── */
+function renderMode(){
+  const it=S.item; crumb.innerHTML='<span class="crumb" onclick="go(\'list\')">真题库</span> · '+esc(it.title);
+  view.innerHTML = `<h1>${esc(it.title)}</h1><div class="en">${it.questions.length} 题</div>
+    <div class="modepick">
+      <div class="modebtn prac" id="mp"><div class="ic">🎯</div><h3>练习模式</h3><p>看题目 + 思路表格 + 范文 + 常见表达/单词；点录制，练完复制报告让 cc 判分+改。不限时，反复磨。</p></div>
+      <div class="modebtn exam" id="me"><div class="ic">⏱</div><h3>考试模式</h3><p>仿真：逐题 45 秒限时作答、录音，全部答完统一生成报告判分。中途不看范文。</p></div>
+    </div>
+    <div style="margin-top:16px"><button class="btn g" onclick="go('list')">← 返回题库</button></div>`;
+  document.getElementById('mp').onclick=()=>{S.qi=0;go('practice');};
+  document.getElementById('me').onclick=()=>{S.qi=0;S.answers=[];go('exam-intro');};
+}
 
-  const eng = result.engine==='whisper' ? ' · 转写引擎：本地 whisper ✓' : ' · ⚠️ 浏览器降级识别';
-  // 🎧 即时回放：挂上刚才这条回答，可反复听（仅本次会话，刷新即清）
-  if(lastReplayUrl){ try{ URL.revokeObjectURL(lastReplayUrl); }catch(_){} lastReplayUrl=null; }
-  let replayHtml='';
-  if(result.url){
-    lastReplayUrl=result.url;
-    replayHtml='<div class="metric" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">'+
-      '<span>🎧 回放我的回答</span>'+
-      '<audio controls preload="metadata" style="height:34px;vertical-align:middle;max-width:260px" src="'+result.url+'"></audio></div>';
-  }
-  document.getElementById('answer').innerHTML =
-    '<div class="metric">📝 转写：<b>'+(esc(txt)||'<i style="color:#a89a86">(空/未识别)</i>')+'</b></div>'+
-    '<div class="metric">⏱ 时长 <b>'+result.duration.toFixed(1)+'</b>s · 语速 <b>'+wpm+'</b> wpm · 填充词(um/uh) <b>'+fillers+'</b> 次'+eng+'</div>'+
-    replayHtml;
-  document.getElementById('answer').style.display='block';
+/* ── 练习模式 ── */
+function renderPractice(){
+  const it=S.item, q=it.questions[S.qi];
+  crumb.innerHTML='<span class="crumb" onclick="go(\'list\')">真题库</span> · <span class="crumb" onclick="go(\'mode\')">'+esc(it.title)+'</span> · 练习';
+  view.innerHTML = `<div class="stage">
+    <div class="qhead"><span>练习模式 · 第 ${S.qi+1}/${it.questions.length} 题</span><span class="timer" id="timer">⏱ 建议 45s</span></div>
+    <div class="question">${esc(q.q)}</div>
+    <div class="controls">
+      <button class="btn rec" id="recBtn">🎙 开始录音</button>
+      <button class="btn g" id="scoreBtn" disabled>📋 复制报告给 cc（判分+修改）</button>
+    </div>
+    <div class="live" id="live">先自己按思路说一遍，再点开范文对照 ↓</div>
+    <div class="answer" id="answer"></div>
 
-  if(qIdx<3){
+    ${q.outline?`<details class="fold" open><summary>💡 思路表格<span class="chev">▸</span></summary><div class="body">${outlineHtml(q.outline)}</div></details>`:''}
+    ${q.model?`<details class="fold"><summary>📖 范文（${q.words||''} 词）<span class="chev">▸</span></summary><div class="body">${modelHtml(q)}</div></details>`:''}
+    ${(q.frames||q.vocab)?`<details class="fold"><summary>🔑 常见表达 & 单词<span class="chev">▸</span></summary><div class="body">${exprHtml(q)}</div></details>`:''}
+
+    <div class="controls" style="margin-top:16px">
+      <button class="btn g" id="prev" ${S.qi===0?'disabled':''}>← 上一题</button>
+      <button class="btn next" id="next" ${S.qi>=it.questions.length-1?'disabled':''}>下一题 →</button>
+      <button class="btn g" onclick="go('mode')">切换模式</button>
+    </div>
+    <div class="hint">💡 练法：读题 → 看思路表格自己说 → 点范文对照 → 学表达/单词 → 再录一遍，直到 70–80 词、~40 秒说顺。</div>
+  </div>`;
+  wirePlay();
+  const rb=document.getElementById('recBtn');
+  rb.onclick=()=>toggleRec({soft:true, onDone:()=>{document.getElementById('scoreBtn').disabled=false;}});
+  document.getElementById('scoreBtn').onclick=()=>copyPracticeReport(q);
+  document.getElementById('prev').onclick=()=>{if(S.qi>0){S.qi--;render();}};
+  document.getElementById('next').onclick=()=>{if(S.qi<it.questions.length-1){S.qi++;render();}};
+  if(!VocaSpeech.supported){document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 请用 Chrome/Edge 打开才能录音</b>';rb.disabled=true;}
+}
+function outlineHtml(o){
+  return `<table class="outline">${o.map((r,i)=>`<tr>
+    <td class="role ${/原因二|展开/.test(r.role)&&i>=3?'r2':''}">${esc(r.role)}</td>
+    <td>${r.bullets?('<ul>'+r.bullets.map(b=>'<li>'+esc(b)+'</li>').join('')+'</ul>'):esc(r.text)}</td></tr>`).join('')}</table>`;
+}
+function modelHtml(q){
+  const full=q.model.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' ');
+  return `<button class="playall" data-say="${esc(full)}">🔊 整段朗读</button>
+    <div class="model">${q.model.map(l=>`<div class="ln ${l.optional?'opt':''}">
+      <span class="mk">${esc(l.mk)}</span> ${esc(l.en)}<span class="role">${esc(l.role)}</span></div>`).join('')}</div>
+    <div class="wc">共 ${q.words||'~'} 词 · 正常语速约 ${Math.round((q.words||75)/2)} 秒</div>`;
+}
+function exprHtml(q){
+  let h='';
+  if(q.frames&&q.frames.length){h+='<div class="subh">框架表达（背下来直接套）</div><div class="frames">'+
+    q.frames.map(f=>`<div><b>${esc(f.t)}</b> — ${esc(f.zh)}</div>`).join('')+'</div>';}
+  if(q.vocab&&q.vocab.length){h+='<div class="subh">单词 / 搭配（点词朗读）</div><div class="vocab">'+
+    q.vocab.map(v=>`<div><span class="w" data-say="${esc(v.w)}">${esc(v.w)}</span>${v.ipa?`<span class="ipa">${esc(v.ipa)}</span>`:''}${esc(v.zh)}</div>`).join('')+'</div>';}
+  return h;
+}
+function wirePlay(){
+  view.querySelectorAll('[data-say]').forEach(el=>el.onclick=e=>{e.stopPropagation();say(el.dataset.say);});
+}
+
+/* ── 考试模式 ── */
+function renderExamIntro(){
+  const it=S.item;
+  crumb.innerHTML='<span class="crumb" onclick="go(\'list\')">真题库</span> · <span class="crumb" onclick="go(\'mode\')">'+esc(it.title)+'</span> · 考试';
+  view.innerHTML=`<div class="stage" style="text-align:center;padding:36px 24px">
+    <div style="font-size:40px">⏱</div>
+    <h1 style="margin:8px 0">考试模式</h1>
+    <p style="color:#5f574c">仿真 Take an Interview：共 <b>${it.questions.length}</b> 题，每题 <b>45 秒</b>限时作答、无准备。全部答完统一出报告，复制给 cc 判分。</p>
+    <div class="controls" style="justify-content:center;margin-top:18px">
+      <button class="btn rec" id="start">▶ 开始考试</button>
+      <button class="btn g" onclick="go('mode')">← 返回</button>
+    </div>
+    <div class="hint">${VocaSpeech.supported?'开始后自动倒计时；说到 45 秒自动停。':'⚠️ 请用 Chrome/Edge 打开才能录音'}</div>
+  </div>`;
+  document.getElementById('start').onclick=()=>{S.qi=0;S.answers=[];go('exam');};
+}
+function renderExamQ(){
+  const it=S.item, q=it.questions[S.qi];
+  view.innerHTML=`<div class="stage">
+    <div class="qhead"><span>考试模式 · 第 ${S.qi+1}/${it.questions.length} 题</span><span class="timer" id="timer">⏱ 45s</span></div>
+    <div class="question">${esc(q.q)}</div>
+    <div class="controls">
+      <button class="btn rec" id="recBtn">🎙 开始录音</button>
+      <button class="btn next" id="nextBtn" disabled>${S.qi>=it.questions.length-1?'交卷 · 看报告':'下一题 →'}</button>
+    </div>
+    <div class="live" id="live">点「开始录音」，45 秒内作答…</div>
+    <div class="answer" id="answer"></div>
+    <div class="hint">💡 观点 → 理由 → 例子 → 小结，少用 um/uh，尽量说到接近 45 秒。</div>
+  </div>`;
+  const rb=document.getElementById('recBtn');
+  rb.onclick=()=>toggleRec({soft:false, onDone:()=>{
+    S.answers[S.qi]={q:q.q, transcript:result.transcript||'', duration:result.duration, wpm:result.wpm, fillers:result.fillers, engine:result.engine};
     document.getElementById('nextBtn').disabled=false;
-    document.getElementById('nextBtn').textContent='下一题 →';
+  }});
+  document.getElementById('nextBtn').onclick=()=>{
+    if(S.qi<it.questions.length-1){S.qi++;render();} else go('exam-report');
+  };
+  if(!VocaSpeech.supported){document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 请用 Chrome/Edge 打开</b>';rb.disabled=true;}
+}
+function renderExamReport(){
+  const it=S.item;
+  let rep='【面试问答 · 考试模式 · '+it.title+'】\n';
+  it.questions.forEach((q,i)=>{const a=S.answers[i]||{};
+    rep+='Q'+(i+1)+': '+q.q+'\n  答：'+(a.transcript||'(空/未作答)')+'\n';
+    if(a.duration!=null)rep+='  （时长 '+a.duration.toFixed(1)+'s · 语速 '+a.wpm+' wpm · 填充词 '+a.fillers+' 次 · '+(a.engine==='whisper'?'whisper':'浏览器降级')+'）\n';
+  });
+  rep+='—— 请 cc 按维度打分：切题 / 展开 / 流利度 / 语法词汇 / 发音韵律，并逐题给修改建议。';
+  view.innerHTML=`<div class="stage">
+    <h1 style="margin-top:0">📋 考试报告</h1>
+    <p style="color:#5f574c;font-size:14px">复制发回对话，让 cc 判分 + 逐题修改。</p>
+    <textarea id="rep" readonly style="width:100%;height:260px;font-size:12.5px;font-family:ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:10px;padding:10px;background:#faf6ee">${esc(rep)}</textarea><br>
+    <button class="copy" id="cp">📋 复制报告</button>
+    <div class="controls" style="margin-top:14px">
+      <button class="btn g" onclick="go('exam-intro')">↺ 再考一次</button>
+      <button class="btn g" onclick="go('mode')">切到练习模式</button>
+    </div>
+  </div>`;
+  document.getElementById('cp').onclick=()=>{const t=document.getElementById('rep');t.select();document.execCommand('copy');alert('已复制，粘贴给 cc 打分');};
+}
+
+/* ── 录音（共用）── */
+function toggleRec(opts){
+  const rb=document.getElementById('recBtn'), tm=document.getElementById('timer'), live=document.getElementById('live'), ans=document.getElementById('answer');
+  if(recording){
+    recording=false; if(timerId)clearInterval(timerId);
+    rb.textContent='🎙 开始录音'; rb.classList.remove('recording');
+    live.innerHTML='⏳ 正在转写…';
+    VocaSpeech.stop().then(r=>{
+      result=r; const txt=r.transcript||'';
+      result.wpm=Math.round(tok(txt).length/Math.max(r.duration,.1)*60);
+      result.fillers=(txt.match(/\b(um|uh|er|like|you know)\b/gi)||[]).length;
+      if(lastUrl){try{URL.revokeObjectURL(lastUrl);}catch(_){}}
+      lastUrl=r.url||null;
+      const eng=r.engine==='whisper'?' · whisper ✓':' · ⚠️ 浏览器降级';
+      ans.innerHTML='<div class="metric">📝 转写：<b>'+(esc(txt)||'<i style="color:#a89a86">(空/未识别)</i>')+'</b></div>'+
+        '<div class="metric">⏱ '+r.duration.toFixed(1)+'s · 语速 <b>'+result.wpm+'</b> wpm · 填充词 <b>'+result.fillers+'</b> 次'+eng+'</div>'+
+        (r.url?'<div class="metric">🎧 <audio controls preload="metadata" style="height:34px;vertical-align:middle;max-width:260px" src="'+r.url+'"></audio></div>':'');
+      ans.style.display='block';
+      if(opts&&opts.onDone)opts.onDone();
+    });
   } else {
-    document.getElementById('nextBtn').disabled=true;
-    buildReport();
+    VocaSpeech.start(()=>{}).then(()=>{
+      recording=true; remain=45; result=null;
+      rb.textContent='⏹ 停止录音'; rb.classList.add('recording');
+      live.innerHTML='🎙 录音中…'; ans.style.display='none';
+      tm.classList.remove('warn');
+      timerId=setInterval(()=>{ remain--; tm.textContent='⏱ '+remain+'s'; if(remain<=10)tm.classList.add('warn');
+        if(remain<=0){clearInterval(timerId); if(recording)toggleRec(opts);} },1000);
+    }).catch(e=>alert(e.message));
   }
 }
-function next(){
-  qIdx++;
-  showQuestion();
+function tok(s){return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean);}
+function copyPracticeReport(q){
+  const a=result||{}; const model=q.model?q.model.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' '):'';
+  let rep='【面试问答 · 练习判分+修改】\n题目：'+q.q+'\n\n我的回答（转写）：\n'+(a.transcript||'(空)')+'\n';
+  if(a.duration!=null)rep+='（时长 '+a.duration.toFixed(1)+'s · 语速 '+a.wpm+' wpm · 填充词 '+a.fillers+' 次）\n';
+  if(model)rep+='\n参考范文：\n'+model+'\n';
+  rep+='\n请 cc：①按维度打分（切题/展开/流利度/语法词汇/发音韵律）；②指出我回答里的具体问题；③给一版改好的、贴合 8 句骨架、70–80 词的修改稿。';
+  navigator.clipboard?.writeText(rep).then(()=>alert('已复制，粘贴给 cc 判分+修改'),()=>{prompt('复制：',rep);}) || prompt('复制：',rep);
 }
 
-function tokenize(s){ return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean); }
-
-function buildReport(){
-  const t = TOPICS[topicIdx];
-  let rep = '【面试问答 · 主题：'+t.title+'】\n';
-  answers.forEach((a,i)=>{
-    rep += 'Q'+(i+1)+': '+a.q+'\n';
-    rep += '  答：'+(a.transcript||'(空/未识别)')+'\n';
-    rep += '  （时长 '+a.duration.toFixed(1)+'s · 语速 '+a.wpm+' wpm · 填充词 '+a.fillers+' 次 · 引擎 '+(a.engine==='whisper'?'whisper':'浏览器降级')+'）\n';
-  });
-  rep += '—— 请 cc 打分（流利度 + 连贯展开 + 语法词汇 + 发音韵律；发音/韵律请结合我后续反馈）';
-  document.getElementById('reportText').value = rep;
-  document.getElementById('reportWrap').style.display='block';
+/* ── 启动 ── */
+if(VocaSpeech && VocaSpeech.supported && VocaSpeech.checkServer){
+  VocaSpeech.checkServer();  // 预热本地转写服务检测
 }
-function copyReport(){
-  const t=document.getElementById('reportText');
-  t.select(); document.execCommand('copy');
-  alert('已复制答题报告，回到对话粘贴给 cc 即可打分');
-}
-
-// 初始化
-if(!VocaSpeech.supported){
-  document.getElementById('live').innerHTML='<b style="color:#c04a3a">⚠️ 当前浏览器不支持录音，请用 Chrome / Edge 打开此页面。</b>';
-  document.getElementById('recBtn').disabled=true;
-} else {
-  VocaSpeech.checkServer().then(ok=>{
-    if(!ok){
-      document.getElementById('live').innerHTML='<b style="color:#d8903a">⚠️ 未检测到本地转写服务，将退回浏览器识别（可能不准）。建议双击 start.command 启动转写服务。</b>';
-    }
-  });
-}
-renderTopics();
+render();
 </script>
 </body>
 </html>
