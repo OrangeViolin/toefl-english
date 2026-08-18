@@ -1,0 +1,52 @@
+{
+  "title": "学术讨论 Write for an Academic Discussion",
+  "intro": "限时约 10 分钟、≥100 词。读教授的问题和两名同学的发言，写出你自己的立场并论证。官方 0–5 评分。",
+  "template": {
+    "name": "学术讨论万能框架（立场→理由+例子→呼应同学→收尾）",
+    "frame": [
+      "① 表明立场 1 句：In my opinion, ... / I believe that ...（直接回答教授的问题）",
+      "② 理由 + 具体例子 2–3 句：One important reason is that ... For example / For instance, ...（例子越具体越好，可用自己的经历）",
+      "③ 呼应一名同学 1 句：I agree with [名字] that ..., but I would add ... / While [名字] makes a good point, I think ...",
+      "④ 收尾 1 句：For these reasons, I believe ..."
+    ],
+    "phrases": [
+      "In my opinion, ... / From my perspective, ...",
+      "One important reason is that ...",
+      "For example, when I ... / A good example of this is ...",
+      "While [Student] makes a good point, I would argue that ...",
+      "On the other hand, ... / However, ...",
+      "Overall, I believe that ..."
+    ],
+    "tips": "一定要有一个具体例子（band 4 与 band 3 的分水岭常在此）；用 1–2 个连接词（however / for example / on the other hand）；至少呼应一名同学显得像真讨论；110–140 词足够 band 4。"
+  },
+  "items": [
+    {
+      "time_sec": 600,
+      "min_words": 100,
+      "professor": "This week we are discussing university policies. Some universities require students to attend every class and take attendance, while others let students decide for themselves. Do you think class attendance should be mandatory? Why or why not?",
+      "student1": "I think attendance should be mandatory. When attendance is required, students stay engaged and don't fall behind. Many people, including me, need that push to show up on difficult days.",
+      "student2": "I disagree. We are adults and should manage our own time. If a lecture is recorded, forcing students to sit in class just wastes time they could spend studying more effectively on their own."
+    },
+    {
+      "time_sec": 600,
+      "min_words": 100,
+      "professor": "Let's talk about how to learn. Some students prefer to study one subject very deeply, while others prefer to explore many subjects broadly. Which approach do you think is more valuable for university students, and why?",
+      "student1": "I believe going deep is better. Real expertise comes from focusing on one field long enough to master it, and that's what employers and graduate programs actually reward.",
+      "student2": "I'd argue the opposite. The most interesting ideas often come from combining fields. A broad education makes you more adaptable in a job market that keeps changing."
+    },
+    {
+      "time_sec": 600,
+      "min_words": 100,
+      "professor": "Many schools are debating technology in the classroom. Some want to ban smartphones during lectures; others say students should be trusted to use them responsibly. Should smartphones be banned in classrooms? Explain your view.",
+      "student1": "Phones should definitely be banned. They are a constant distraction, and studies show that even having a phone on the desk lowers concentration. Banning them helps everyone focus.",
+      "student2": "A full ban goes too far. Phones can be useful for looking things up, taking photos of the board, or using learning apps. The problem is misuse, not the device itself."
+    },
+    {
+      "time_sec": 600,
+      "min_words": 100,
+      "professor": "Today's topic is consumer behavior. Online reviews strongly influence what people buy, watch, and where they eat. In your opinion, do online reviews do more good or more harm? Give reasons.",
+      "student1": "Reviews do more good. They give ordinary buyers information they never had before and pressure businesses to actually improve their products and service.",
+      "student2": "I'm more skeptical. Many reviews are fake or paid for, and a few angry comments can unfairly ruin a small business. People trust them more than they deserve."
+    }
+  ]
+}

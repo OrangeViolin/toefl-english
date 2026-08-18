@@ -1,0 +1,90 @@
+{
+  "title": "连词成句 Build a Sentence",
+  "intro": "重排词/词组，组成合语法、且能恰当回应上句的句子。对/错判分——语序或语法错一处即算错。",
+  "items": [
+    {
+      "level": "A1",
+      "prompt": "What are you doing this weekend?",
+      "tokens": ["the science museum", "visit", "I'm going to"],
+      "answer": "I'm going to visit the science museum.",
+      "note": "be going to + 动词原形，表已定的计划"
+    },
+    {
+      "level": "A2",
+      "prompt": "Why didn't you answer my call?",
+      "tokens": ["at that time", "was", "I", "in a meeting"],
+      "answer": "I was in a meeting at that time.",
+      "note": "was + 介词短语，描述过去某时的状态"
+    },
+    {
+      "level": "A2",
+      "prompt": "Have you finished the report?",
+      "tokens": ["by Friday", "will finish", "I", "it"],
+      "answer": "I will finish it by Friday.",
+      "note": "will + 动词原形；by + 时间点 = 不迟于"
+    },
+    {
+      "level": "B1",
+      "prompt": "Which apartment did you choose?",
+      "tokens": ["that is closer to the park", "the one", "I chose"],
+      "answer": "I chose the one that is closer to the park.",
+      "note": "that 引导定语从句，修饰 the one"
+    },
+    {
+      "level": "B1",
+      "prompt": "How was the lecture?",
+      "tokens": ["fell asleep", "so boring", "the lecture", "that I almost", "was"],
+      "answer": "The lecture was so boring that I almost fell asleep.",
+      "note": "so + 形容词 + that 结果状语从句"
+    },
+    {
+      "level": "B1",
+      "prompt": "What's your plan after graduation?",
+      "tokens": ["studying", "I'm thinking about", "abroad for a master's degree"],
+      "answer": "I'm thinking about studying abroad for a master's degree.",
+      "note": "think about + 动名词(-ing)"
+    },
+    {
+      "level": "B2",
+      "prompt": "Why do you prefer online classes?",
+      "tokens": ["at my own pace", "allow me", "they", "to study"],
+      "answer": "They allow me to study at my own pace.",
+      "note": "allow sb to do = 允许某人做某事"
+    },
+    {
+      "level": "B2",
+      "prompt": "Would you have come if you had known?",
+      "tokens": ["I would have come earlier", "if", "I had known"],
+      "answer": "If I had known, I would have come earlier.",
+      "note": "第三条件句：If + had done, would have done（与过去相反）"
+    },
+    {
+      "level": "B2",
+      "prompt": "What made the project succeed?",
+      "tokens": ["on time", "was completed", "the project", "by everyone's effort"],
+      "answer": "The project was completed on time by everyone's effort.",
+      "note": "被动语态 was + 过去分词；by 引出施动者"
+    },
+    {
+      "level": "C1",
+      "prompt": "What's your view on the deadline?",
+      "tokens": ["although it is tight", "reasonable", "is", "the deadline"],
+      "answer": "The deadline is reasonable although it is tight.",
+      "note": "although 引导让步状语从句"
+    },
+    {
+      "level": "C1",
+      "prompt": "Why was the experiment repeated?",
+      "tokens": ["that the results were reliable", "was repeated", "the experiment", "to ensure"],
+      "answer": "The experiment was repeated to ensure that the results were reliable.",
+      "note": "to ensure that... 目的状语 + 宾语从句"
+    },
+    {
+      "level": "C2",
+      "prompt": "What surprised you about the study?",
+      "tokens": ["such an obvious factor", "was that", "what surprised me", "the researchers overlooked"],
+      "answer": "What surprised me was that the researchers overlooked such an obvious factor.",
+      "note": "What... 主语从句 + that 表语从句"
+    }
+  ]
+}

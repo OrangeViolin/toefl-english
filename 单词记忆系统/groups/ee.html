@@ -80,6 +80,8 @@
   .tag.lv6{background:#e6f0ec;color:#2f8f83}
   .tag.tfl{background:#eae6f5;color:#6a52a8}
   .tag.gre{background:#f7e6ea;color:#b0507a}
+  .tag.spk{background:#fdeccd;color:#b5661f}
+  .tag.scn{background:#e4f0e6;color:#3d7a4a}
   .mean{font-size:15.5px;font-weight:600;color:#3a332b}
   .sec{font-size:13.5px;color:#4d463c;border-top:1px dashed var(--line);padding-top:8px}
   .sec .l{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px;display:block;margin-bottom:2px}
@@ -222,7 +224,7 @@ const KEY = 'vocab-unfam-' + G.id;
 let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
 let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
 
-const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':''};
+const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':'','口语':'spk','场景':'scn'};
 // 发音分组配色（按 subgroups 顺序循环取用）
 const SGCOLORS = ['#2f8f83','#b0603f','#6a52a8','#c1662f','#3a7bd5'];
 const SUBG = G.subgroups || [];
