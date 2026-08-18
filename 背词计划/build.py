@@ -36,6 +36,16 @@ def trim_beat(w):
     return _merge({"id": w["id"], "l": w["list"], "w": w["word"], "p": w.get("pronunciation", ""),
             "d": w["definition"], "m": w.get("memory", ""), "c": [], "e": []})
 
+def trim_proj(w):
+    # 项目生词汇聚库：满配富化字段(ety/ph/tip/xex/syn/ant/nu)直接内嵌，无需 enrich.json 叠加
+    base = {"id": w["id"], "l": w.get("wl", 1), "w": w["word"], "p": w.get("pronunciation", ""),
+            "d": w.get("definition", ""), "m": w.get("memory", ""),
+            "c": w.get("collocations", []), "e": w.get("examples", [])}
+    for k in ("ety", "ph", "tip", "xex", "syn", "ant", "nu"):
+        if w.get(k):
+            base[k] = w[k]
+    return _merge(base)
+
 def load_source(fname, trim, kw):
     with open(os.path.join(DATA, fname), encoding="utf-8") as fp:
         d = json.load(fp)
@@ -193,6 +203,27 @@ PAGE = r"""<!DOCTYPE html>
   .syn-w{font-weight:700;cursor:pointer}.syn-w:hover{color:var(--accent)}
   .syn-ipa{color:var(--core);font-size:13px;margin:0 3px}
   .nuance{background:#eef6f0;border-left:3px solid var(--core);border-radius:8px;padding:10px 13px;font-size:13.5px;color:#4d463c;margin-top:10px;line-height:1.65}
+  /* 四会微练 */
+  .drill{margin:8px 0 12px;border:1px solid #e6dcc6;border-radius:12px;background:#fbf7ef;overflow:hidden}
+  .drill-tabs{display:flex;flex-wrap:wrap}
+  .drill-tabs button{flex:1;min-width:84px;border:0;background:#f3ecdd;color:#6b6154;padding:8px 6px;font-size:13px;cursor:pointer;font-family:inherit;border-right:1px solid #e6dcc6}
+  .drill-tabs button:last-child{border-right:0}
+  .drill-tabs button.on{background:var(--core);color:#fff}
+  .drill-panel{padding:12px 13px;font-size:14px}
+  .drill-panel:empty{display:none}
+  .d-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}
+  .d-btn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer;font-family:inherit;color:#5f574c}
+  .d-btn:hover{background:#f6efe0}
+  .d-btn.rec.on{background:var(--bad);color:#fff;border-color:var(--bad)}
+  .d-clue{margin-bottom:6px;line-height:1.6}
+  .d-ex{background:#fff;border:1px dashed var(--line);border-radius:8px;padding:8px 10px;margin:6px 0;line-height:1.55}
+  .d-inp,.d-ta{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:15px;font-family:inherit}
+  .d-ta{min-height:56px;resize:vertical}
+  .d-inp:focus,.d-ta:focus{outline:none;border-color:var(--accent)}
+  .d-fb{margin-top:6px;font-size:14px}
+  .d-fb.ok{color:var(--ok)}.d-fb.no{color:var(--bad)}
+  .d-copy{background:var(--core);color:#fff;border:0;border-radius:8px;padding:7px 13px;font-size:13px;cursor:pointer;font-family:inherit;margin-top:6px}
+  .d-rt{color:var(--bad);font-size:13px;font-variant-numeric:tabular-nums}
   .empty{color:var(--muted);text-align:center;padding:40px}
   footer{margin-top:24px;color:#a89a86;font-size:12px}
   @media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}}
@@ -246,6 +277,73 @@ function pickVoice(){
 }
 function say(t){ if(!window.speechSynthesis) return; speechSynthesis.cancel();
   const u=new SpeechSynthesisUtterance(t); const v=pickVoice(); if(v)u.voice=v; u.lang='en-US'; u.rate=.95; speechSynthesis.speak(u); }
+
+/* ── 录音（口语跟读，离线）── */
+let activeRec=null;
+function recStart(secs,onTick,onDone){
+  if(!navigator.mediaDevices){ alert('请用 Chrome/Edge 打开才能录音'); return; }
+  navigator.mediaDevices.getUserMedia({audio:true}).then(stream=>{
+    const mr=new MediaRecorder(stream); const ch=[];
+    mr.ondataavailable=e=>ch.push(e.data);
+    let left=secs; const iv=setInterval(()=>{ left--; onTick(left); if(left<=0) stop(); },1000);
+    function stop(){ clearInterval(iv); if(mr.state!=='inactive') mr.stop(); stream.getTracks().forEach(t=>t.stop()); }
+    mr.onstop=()=>{ onDone(URL.createObjectURL(new Blob(ch,{type:'audio/webm'}))); activeRec=null; };
+    mr.start(); onTick(left); activeRec={stop};
+  }).catch(e=>alert('无法录音：请用 Chrome/Edge 并允许麦克风。\n'+e.message));
+}
+function copyTxt(t){ if(navigator.clipboard) navigator.clipboard.writeText(t).then(()=>toastMsg('已复制，粘贴给 cc'),()=>prompt('复制：',t)); else prompt('复制：',t); }
+function toastMsg(m){ try{ const d=document.createElement('div'); d.textContent=m; d.style.cssText='position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#332c22;color:#fff;padding:8px 16px;border-radius:20px;font-size:13px;z-index:99'; document.body.appendChild(d); setTimeout(()=>d.remove(),1400);}catch(_){}}
+
+/* ── id → word 映射（四会微练取词）── */
+const WMAP={}; Object.values(VOCAB).forEach(v=> (v.words||[]).forEach(w=> WMAP[w.id]=w));
+function norm2(s){ return (s||'').toLowerCase().replace(/[^a-z]/g,''); }
+
+/* ── 四会微练：说 / 拼写 / 听写 / 造句 —— 嵌进每个词的展开卡 ── */
+function renderDrill(kind, panel, w){
+  if(!w||!w.w){ panel.innerHTML='<span style="color:#a89a86">（本词暂无练习数据）</span>'; return; }
+  const ex = (w.xex&&w.xex[0]&&w.xex[0].en) || (typeof (w.e&&w.e[0])==='string'? w.e[0]:'') || (w.w+'.');
+  if(kind==='say'){
+    panel.innerHTML = `<div class="d-clue">听示范 → 录音跟读；也可以用这个词自己造句说出来。</div>
+      <div class="d-ex">${esc(ex)}</div>
+      <div class="d-row"><button class="d-btn play">🔊 示范朗读</button><button class="d-btn rec">⏺ 录音(15s)</button><span class="d-rt"></span><span class="d-pb"></span></div>
+      <button class="d-copy">复制给 cc 点评发音/用法</button>`;
+    panel.querySelector('.play').onclick=()=> say(w.w+'. '+ex);
+    const rb=panel.querySelector('.rec'), rt=panel.querySelector('.d-rt'), pb=panel.querySelector('.d-pb');
+    rb.onclick=()=>{ if(activeRec){ activeRec.stop(); return; }
+      rb.classList.add('on'); rb.textContent='⏹ 停止';
+      recStart(15, l=>rt.textContent=l+'s', url=>{ rb.classList.remove('on'); rb.textContent='⏺ 重录'; rt.textContent='';
+        pb.innerHTML=`<audio controls src="${url}" style="height:32px;vertical-align:middle;max-width:200px"></audio>`; }); };
+    panel.querySelector('.d-copy').onclick=()=> copyTxt(`【背词·口语点评】单词：${w.w} ${w.p||''}\n释义：${w.d}\n示范例句：${ex}\n我刚跟读/造句了这个词，请 cc 点评发音要点、指出常见发音坑，并给一个用这个词的自然口语句子。`);
+  } else if(kind==='spell'){
+    panel.innerHTML = `<div class="d-clue">看中文拼出单词：<b>${esc(w.d)}</b> <button class="d-btn hear">🔊 听一遍</button></div>
+      <input class="d-inp" placeholder="type the word…" autocomplete="off" spellcheck="false">
+      <div class="d-row"><button class="d-btn check">✅ 判定</button><button class="d-btn show">显示答案</button></div>
+      <div class="d-fb"></div>`;
+    const inp=panel.querySelector('.d-inp'), fb=panel.querySelector('.d-fb');
+    panel.querySelector('.hear').onclick=()=>say(w.w);
+    function check(){ const ok=norm2(inp.value)===norm2(w.w); fb.className='d-fb '+(ok?'ok':'no'); fb.textContent=ok?'✓ 拼对了！':'✗ 正确拼写：'+w.w; if(!ok) say(w.w); }
+    panel.querySelector('.check').onclick=check;
+    inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); check(); } });
+    panel.querySelector('.show').onclick=()=>{ fb.className='d-fb'; fb.textContent='答案：'+w.w; };
+    setTimeout(()=>inp.focus(),50);
+  } else if(kind==='dict'){
+    panel.innerHTML = `<div class="d-clue">🔊 只听例句，把它写下来（练「听住」）：<button class="d-btn hear">▶ 再听</button></div>
+      <textarea class="d-ta" placeholder="type what you hear…"></textarea>
+      <div class="d-row"><button class="d-btn reveal">对照原句</button></div>
+      <div class="d-ex" id="dorig" style="display:none"></div>`;
+    panel.querySelector('.hear').onclick=()=>say(ex);
+    const orig=panel.querySelector('#dorig');
+    panel.querySelector('.reveal').onclick=()=>{ orig.style.display='block'; orig.textContent=ex; };
+    setTimeout(()=>say(ex),200);
+  } else if(kind==='write'){
+    panel.innerHTML = `<div class="d-clue">用 <b>${esc(w.w)}</b> 写一句自己的话（${esc(w.d)}）：</div>
+      <textarea class="d-ta" placeholder="write your own sentence with the word…"></textarea>
+      <button class="d-copy">复制给 cc 批改</button>`;
+    panel.querySelector('.d-copy').onclick=()=>{ const s=panel.querySelector('.d-ta').value.trim();
+      copyTxt(`【背词·造句批改】单词：${w.w}（${w.d}）\n我的句子：${s||'(空)'}\n请 cc：①改对语法/拼写/搭配；②给一个更地道的版本；③点出这个词最常见的用法搭配。`); };
+    setTimeout(()=>panel.querySelector('.d-ta').focus(),50);
+  }
+}
 
 /* ── 顶栏 ── */
 function renderHeader(){
@@ -538,6 +636,13 @@ function cardHtml(w){
   let d='';
   if(recite) d += sec('📖','','释义',`<div style="font-size:16px;font-weight:600">${esc(w.d)}</div>`);
   d += '<div class="chips-line"><span class="lvl-chip">托福</span></div>';
+  // 四会微练（听说读写）—— 点标签即开对应小练习
+  d += `<div class="drill"><div class="drill-tabs">
+    <button data-dr="say">🎤 说·跟读</button>
+    <button data-dr="spell">✍️ 拼写</button>
+    <button data-dr="dict">🔊 听写</button>
+    <button data-dr="write">📝 造句</button>
+  </div><div class="drill-panel"></div></div>`;
   // 词源
   if(w.ety) d += sec('🏛','mem','造词来源 · 词源故事', esc(w.ety));
   else if(w.m) d += sec('🏛','mem','词根 · 联想记忆', `<div class="wc-mem-box">${esc(w.m)}</div>`);
@@ -580,6 +685,18 @@ function wireCards(box){
     const id=card.dataset.id;
     card.querySelector('.wc-word').onclick=e=>{ e.stopPropagation(); say(e.target.dataset.say); };
     card.querySelectorAll('.syn-w').forEach(sw=> sw.onclick=e=>{ e.stopPropagation(); say(sw.dataset.say); });
+    // 四会微练：点标签开/收对应小练习；练习区内点击不折叠卡片
+    const drill=card.querySelector('.drill');
+    if(drill){
+      drill.addEventListener('click', e=>e.stopPropagation());
+      const panel=drill.querySelector('.drill-panel');
+      drill.querySelectorAll('.drill-tabs button').forEach(bn=> bn.onclick=()=>{
+        const wasOn=bn.classList.contains('on');
+        drill.querySelectorAll('.drill-tabs button').forEach(x=>x.classList.remove('on'));
+        if(wasOn){ panel.innerHTML=''; return; }
+        bn.classList.add('on'); renderDrill(bn.dataset.dr, panel, WMAP[id]);
+      });
+    }
     function setState(ns){
       state[id] = (state[id]===ns) ? undefined : ns;   // 再点一次取消
       if(state[id]===undefined) delete state[id];
@@ -615,6 +732,12 @@ def build():
     green["name"] = "绿皮书"
     beat["name"]  = "BEAT 2000"
     payload = {"green": green, "beat": beat}
+    # 项目生词汇聚库（各子系统汇入的词，满配富化）——文件在则挂上第 3 个词库
+    import os as _os0
+    if _os0.path.exists(_os0.path.join(DATA, "项目生词.json")):
+        proj = load_source("项目生词.json", trim_proj, "项目生词")
+        proj["name"] = "项目生词"
+        payload["proj"] = proj
     import os as _os
     _pz = _os.path.join(DATA, "cloze-passages.json")
     passages = json.load(open(_pz, encoding="utf-8")).get("passages", []) if _os.path.exists(_pz) else []
