@@ -681,6 +681,7 @@ function renderSentStudy(no){
     <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/Math.max(bw.length,1)*100)}%"></i></div>
     <div class="intro" style="margin:10px 0 0">读句子，点句中<b>带下划线的词</b>（或「本句词」里的词）即可展开释义/词根、并标 <b>✓掌握 / ✕未掌握</b>；展开自动朗读。掌握的词在句中变绿、未掌握变红，一眼看清哪些还没背熟。</div>
     <div class="tools"><button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮中文）</button>
+      <button class="tbtn" id="tAll">本组·其余记为已掌握</button>
       <span class="nav"><button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一组</button><button class="tbtn" id="nx" ${next==null?'disabled':''}>下一组 ▶</button></span></div></div>
     <div class="cards">${cards}</div>
     <div class="tools" style="margin-top:16px"><span class="back" id="back2">← 返回总览</span></div>`;
@@ -689,6 +690,9 @@ function renderSentStudy(no){
   const go=n=>{ curList=n; render(); };
   $('#pv').onclick=()=>prev!=null&&go(prev); $('#nx').onclick=()=>next!=null&&go(next);
   $('#tRecite').onclick=()=>{ recite=!recite; save('bcplan:recite',recite); render(); };
+  $('#tAll').onclick=()=>{ const un=bw.filter(w=>state[w.id]!=='no'&&state[w.id]!=='ok').length;
+    if(un && !confirm(`把本组（这 10 句）里除已标『未掌握』外的词，全部记为「已掌握」？（${un} 个未标记词会记为已掌握）`)) return;
+    bw.forEach(w=>{ if(state[w.id]!=='no') state[w.id]='ok'; }); save(M_KEY,state); render(); };
 }
 
 function renderStudy(no){
