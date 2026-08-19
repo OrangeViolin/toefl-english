@@ -968,21 +968,51 @@ def build():
     # 100 长难句（句子式展示：每句每词可点开标掌握/未掌握）——独立词源 sent100
     _ssp = _os0.path.join(DATA, "sentences-100.json")
     if _os0.path.exists(_ssp):
+        import re as _re100
         _sd = json.load(open(_ssp, encoding="utf-8"))
         _enp = _os0.path.join(DATA, "sentences-100-enrich.json")   # voca 满配富化叠加
         _en = json.load(open(_enp, encoding="utf-8")) if _os0.path.exists(_enp) else {}
+        # 词典 DATA[lemma]：合并 wiki 目标词的 p/d/m/syn/cog + 富化字段（谁有释义谁就渲染成满配卡）
+        WMAP = {}
+        for s in _sd["sentences"]:
+            for w in s.get("words", []):
+                k = (w.get("w") or "").strip().lower()
+                if not k: continue
+                WMAP.setdefault(k, {"w": w["w"], "p": w.get("p", ""), "d": w.get("d", ""),
+                                    "m": w.get("m", ""), "syn": w.get("syn", []), "cog": w.get("cog", [])})
+        for k, e in _en.items():
+            dd = WMAP.setdefault(k, {"w": k, "p": "", "d": "", "m": "", "syn": [], "cog": []})
+            for kk in ("core", "ety", "ph", "tip", "xex", "nu", "senses", "rootfam"):
+                if e.get(kk): dd[kk] = e[kk]
+            if e.get("syn"): dd["syn"] = e["syn"]
+            if e.get("p") and not dd.get("p"): dd["p"] = e["p"]     # Fix B 新词可在富化里自带 p/d
+            if e.get("d") and not dd.get("d"): dd["d"] = e["d"]
+        _keys = set(WMAP)
+        _STOP = set(("a an the this that these those i you he she it we they me him her us them my your his its "
+            "our their is am are was were be been being do does did have has had will would shall should can could "
+            "may might must and or but so if because as than while when where which who whom whose to of in on at by "
+            "for with from into onto over under above below up down out off about around near past through during "
+            "until before after not no nor here there s t re ve ll d ain isn aren wasn weren don doesn didn won "
+            "wouldn couldn shouldn its it's").split())
+        def _resolve(tok):
+            if tok in _keys: return tok
+            for suf in ("s","es","ed","ing","d","ies","ied","ally","ly","ment","ness","er","est","ion"):
+                if len(tok) > len(suf)+2 and tok.endswith(suf) and tok[:-len(suf)] in _keys: return tok[:-len(suf)]
+            if tok.endswith("ies") and (tok[:-3]+"y") in _keys: return tok[:-3]+"y"
+            if tok.endswith("ied") and (tok[:-3]+"y") in _keys: return tok[:-3]+"y"
+            return None
         _sw, _st = [], []
         for s in _sd["sentences"]:
-            n = s["n"]; l = (n - 1)//10 + 1; wids = []
-            for k, w in enumerate(s.get("words", [])):
-                wid = f"S{n:03d}-{k:02d}"
-                obj = {"id": wid, "l": l, "w": w["w"], "p": w.get("p", ""), "d": w.get("d", ""),
-                       "m": w.get("m", ""), "syn": w.get("syn", []), "cog": w.get("cog", [])}
-                e = _en.get((w["w"] or "").strip().lower())
-                if e:
-                    for kk in ("core", "ety", "ph", "tip", "xex", "nu", "senses", "rootfam"):
-                        if e.get(kk): obj[kk] = e[kk]
-                    if e.get("syn"): obj["syn"] = e["syn"]      # 富化的 rich syn 覆盖原字符串 syn
+            n = s["n"]; l = (n - 1)//10 + 1; wids = []; k = 0
+            for mt in _re100.finditer(r"[A-Za-z']+", s["en"]):
+                surf = mt.group(0); low = surf.strip("'").lower()
+                if len(low) < 3 or low in _STOP: continue
+                lem = _resolve(low)
+                if not lem: continue                              # 无释义数据的词→句中留作 plain
+                d = WMAP[lem]; wid = f"S{n:03d}-{k:02d}"; k += 1
+                obj = {"id": wid, "l": l, "w": surf, "p": d.get("p", ""), "d": d.get("d", "")}
+                for kk in ("m", "syn", "cog", "core", "ety", "ph", "tip", "xex", "nu", "senses", "rootfam"):
+                    if d.get(kk): obj[kk] = d[kk]
                 _sw.append(obj); wids.append(wid)
             _st.append({"n": n, "l": l, "en": s["en"], "zh": s.get("zh", ""), "gram": s.get("gram", ""), "wids": wids})
         payload["sent100"] = {"name": "100 长难句", "mode": "sent", "words": _sw, "sents": _st}
