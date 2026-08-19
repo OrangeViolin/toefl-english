@@ -133,8 +133,14 @@ PAGE = r"""<!DOCTYPE html>
   .swd-ex-src{color:#c3b79c;font-size:12px} .swd-nu{background:#eef6f0;border-left:3px solid var(--core);border-radius:8px;padding:8px 11px}
   .sent-say{font-size:12px;color:var(--core);cursor:pointer;font-weight:600;margin-left:8px}
   .sent-say:hover{text-decoration:underline}
-  .sw-say{cursor:pointer;border-radius:3px}
-  .sw-say:hover{background:#f0e7d6}
+  .sw-plain{cursor:pointer;border-radius:3px;border-bottom:1px dotted #d8c8a8}
+  .sw-plain:hover{background:#f0e7d6}
+  .swd-fam .fam-root{margin:5px 0;line-height:2}
+  .fam-r{font-family:Georgia,serif;font-weight:800;color:var(--accent)}
+  .fam-m{color:var(--muted);font-size:12px;margin-right:2px}
+  .fam-w{display:inline-block;cursor:pointer;margin:2px 8px 2px 0;font-family:Georgia,serif;font-size:14px}
+  .fam-w:hover{color:var(--accent)}
+  .fam-g{color:#8c8072;font-size:11px;margin-left:2px}
   .sent-card.playing{border-color:var(--accent);box-shadow:0 0 0 2px rgba(193,102,47,.18)}
   /* 全100句连读悬浮条 */
   .playbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(47,42,36,.96);color:#fdf9f0;padding:12px 18px;box-shadow:0 -3px 16px rgba(0,0,0,.2)}
@@ -642,7 +648,7 @@ function sentEnHtml(s, wmap, matched){
     let hit=null;
     for(const t of targets){ if(used.has(t.id)) continue;
       if(low===t.w || (t.w.length>=4 && low.startsWith(t.w)) || (low.length>=4 && t.w.startsWith(low))){ hit=t; break; } }
-    if(!hit) return `<span class="sw-say" data-w="${esc(low)}">${esc(ch)}</span>`;   // 非目标词：点击朗读
+    if(!hit) return `<span class="sw sw-plain" data-w="${esc(low)}" data-n="${s.n}">${esc(ch)}</span>`;   // 非目标词：也可点击展开(最小卡)
     used.add(hit.id); if(matched) matched.add(hit.id);
     const st=state[hit.id]||''; const cl=st==='ok'?' ok':st==='no'?' no':'';
     return `<span class="sw${cl}" data-id="${hit.id}" data-n="${s.n}">${esc(ch)}</span>`;
@@ -650,10 +656,11 @@ function sentEnHtml(s, wmap, matched){
 }
 function wordDetailHtml(w){
   const st=state[w.id]||'';
+  const marks=`<span class="swd-marks"><button class="wc-mark ok${st==='ok'?' on':''}" data-m="ok">✓ 掌握</button><button class="wc-mark no${st==='no'?' on':''}" data-m="no">✕ 未掌握</button></span>`;
   let d=`<div class="sw-detail-inner">
-    <div class="swd-head"><span class="swd-w" data-say="${esc(w.w)}">${esc(w.w)} 🔊</span> <span class="swd-p">${esc(w.p||'')}</span>
-      <span class="swd-marks"><button class="wc-mark ok${st==='ok'?' on':''}" data-m="ok">✓ 掌握</button><button class="wc-mark no${st==='no'?' on':''}" data-m="no">✕ 未掌握</button></span></div>
-    <div class="swd-def">${esc(w.d||'')}</div>`;
+    <div class="swd-head"><span class="swd-w swd-say" data-say="${esc(w.w)}">${esc(w.w)} 🔊</span> <span class="swd-p">${esc(w.p||'')}</span>${marks}</div>`;
+  if(w._plain){ return d+`<div class="swd-def" style="color:#8c8072;font-weight:400">（本词未单独收录释义——点词/🔊 听发音；也可标掌握）</div></div>`; }
+  d+=`<div class="swd-def">${esc(w.d||'')}</div>`;
   if(w.core) d+=`<div class="swd-sec">🎯 <b>核心意象</b>：${esc(w.core)}</div>`;
   if(w.senses&&w.senses.length){ d+=`<div class="swd-sec">🧠 <b>一词多义</b>`;
     w.senses.forEach(s=>{ d+=`<div class="swd-sense"><b>${esc(s.gloss||'')}</b>${s.logic?` — ${esc(s.logic)}`:''}${s.en?`<div class="swd-ex"><span class="swd-say" data-say="${esc(s.en)}"><i>${esc(s.en)}</i> 🔊</span>${s.zh?` <span class="swd-ex-zh">${esc(s.zh)}</span>`:''}</div>`:''}</div>`; });
@@ -671,25 +678,32 @@ function wordDetailHtml(w){
     d+=`<div class="swd-sec">🔗 <b>近义</b>：${parts.join('<br>')}</div>`;
   }
   if(w.cog&&w.cog.length) d+=`<div class="swd-sec">🌱 <b>同根</b>：${w.cog.map(esc).join('；')}</div>`;
+  if(w.rootfam&&w.rootfam.length){
+    d+=`<div class="swd-sec swd-fam">🌳 <b>词根家族</b>（背一个带一串·点词朗读）`;
+    w.rootfam.forEach(r=>{ d+=`<div class="fam-root"><span class="fam-r">${esc(r.root)}</span> <span class="fam-m">${esc(r.meaning||'')}</span>：`+
+      r.words.map(x=>`<span class="fam-w swd-say" data-say="${esc(x.w)}">${esc(x.w)}<span class="fam-g">${esc(x.g||'')}</span></span>`).join('')+`</div>`; });
+    d+=`</div>`;
+  }
   if(w.nu) d+=`<div class="swd-sec swd-nu">🎯 ${esc(w.nu)}</div>`;
   return d+`</div>`;
 }
-function openWordDetail(n, id, wmap){
+function openWordDetail(n, id, wmap, plain){
   const det=document.getElementById('det-'+n); if(!det) return;
-  if(det.dataset.open===id){ det.innerHTML=''; det.dataset.open=''; return; }   // 再点收起
-  const w=wmap[id]; if(!w) return;
-  det.innerHTML=wordDetailHtml(w); det.dataset.open=id;
+  const key = id || ('w:'+(plain||'').toLowerCase());
+  if(det.dataset.open===key){ det.innerHTML=''; det.dataset.open=''; return; }   // 再点收起
+  const w = (id && wmap[id]) ? wmap[id] : {id:key, w:plain||'', p:'', d:'', _plain:true};   // 非目标词→最小卡
+  det.innerHTML=wordDetailHtml(w); det.dataset.open=key;
   say(w.w);                                       // 展开即朗读
   det.querySelectorAll('.swd-w,.swd-say').forEach(el=> el.onclick=e=>{ e.stopPropagation(); say(el.dataset.say); });
   det.querySelectorAll('.wc-mark').forEach(b=> b.onclick=()=>{
-    const ns=b.dataset.m; state[id]=(state[id]===ns)?undefined:ns; if(state[id]===undefined) delete state[id];
-    save(M_KEY,state);
-    view.querySelectorAll('.sw[data-id="'+id+'"],.sw-chip[data-id="'+id+'"]').forEach(x=>{ x.classList.remove('ok','no'); if(state[id]) x.classList.add(state[id]); });
-    det.querySelector('.wc-mark.ok').classList.toggle('on',state[id]==='ok');
-    det.querySelector('.wc-mark.no').classList.toggle('on',state[id]==='no');
+    const ns=b.dataset.m; state[key]=(state[key]===ns)?undefined:ns; if(state[key]===undefined) delete state[key];
+    save(M_KEY,state); const mk=state[key];
+    view.querySelectorAll('.sw,.sw-chip').forEach(x=>{ const xid=x.dataset.id||('w:'+(x.dataset.w||'').toLowerCase()); if(xid===key){ x.classList.remove('ok','no'); if(mk) x.classList.add(mk); } });
+    det.querySelector('.wc-mark.ok').classList.toggle('on',mk==='ok');
+    det.querySelector('.wc-mark.no').classList.toggle('on',mk==='no');
     const bw=listWords(curList), dc=doneCount(bw), nc=noCount(bw);
     const c=$('#scnt'); if(c) c.textContent=`${bw.length} 词 · 掌握 ${dc}`+(nc?` · 未掌握 ${nc}`:'');
-    const lb=$('#lbar'); if(lb) lb.style.width=Math.round(dc/bw.length*100)+'%';
+    const lb=$('#lbar'); if(lb) lb.style.width=Math.round(dc/Math.max(bw.length,1)*100)+'%';
     renderHeader();
   });
 }
@@ -765,15 +779,14 @@ function renderSentStudy(no){
     <div class="stitle"><span class="back" id="back">← 返回总览</span>
       <h2>句 ${lo}–${hi}</h2><span class="cnt" id="scnt">${bw.length} 词 · 掌握 ${dc}${nc?' · 未掌握 '+nc:''}</span></div>
     <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/Math.max(bw.length,1)*100)}%"></i></div>
-    <div class="intro" style="margin:10px 0 0">读句子，句中<b>每个词都能点</b>——目标词点开释义/词源/例句并标 <b>✓掌握 / ✕未掌握</b>（展开自动朗读），其余词点一下即朗读；点「🔊 读整句」读整句，「▶️ 顺序播放」连读全组熟悉句子。掌握的词变绿、未掌握变红。</div>
+    <div class="intro" style="margin:10px 0 0">读句子，句中<b>每个词都能点开</b>——展开释义/核心意象/词源/发音/例句/近义/<b>词根家族(背一个带一串)</b>并标 <b>✓掌握 / ✕未掌握</b>（展开自动朗读）；未收录的功能词点开也能听发音。「🔊 读整句」读整句，「▶️ 顺序播放」连读全组。掌握变绿、未掌握变红。</div>
     <div class="tools"><button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮中文）</button>
       <button class="tbtn" id="tPlay">▶️ 顺序播放本组</button>${speedBtns()}
       <button class="tbtn" id="tAll">本组·其余记为已掌握</button>
       <span class="nav"><button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一组</button><button class="tbtn" id="nx" ${next==null?'disabled':''}>下一组 ▶</button></span></div></div>
     <div class="cards">${cards}</div>
     <div class="tools" style="margin-top:16px"><span class="back" id="back2">← 返回总览</span></div>`;
-  view.querySelectorAll('.sw,.sw-chip').forEach(el=> el.onclick=e=>{ e.stopPropagation(); openWordDetail(el.dataset.n, el.dataset.id, wmap); });
-  view.querySelectorAll('.sw-say').forEach(el=> el.onclick=e=>{ e.stopPropagation(); say(el.dataset.w); });       // 非目标词点击朗读
+  view.querySelectorAll('.sw,.sw-chip').forEach(el=> el.onclick=e=>{ e.stopPropagation(); openWordDetail(el.dataset.n, el.dataset.id, wmap, el.dataset.w); });   // 每个词都可点开
   const enOf={}; sents.forEach(s=>enOf[s.n]=s.en);
   view.querySelectorAll('.sent-say').forEach(el=> el.onclick=e=>{ e.stopPropagation(); say(enOf[el.dataset.n]); }); // 整句朗读
   const stopSeq=()=>{ seqPlaying=false; if(window.speechSynthesis) speechSynthesis.cancel(); };
@@ -967,7 +980,7 @@ def build():
                        "m": w.get("m", ""), "syn": w.get("syn", []), "cog": w.get("cog", [])}
                 e = _en.get((w["w"] or "").strip().lower())
                 if e:
-                    for kk in ("core", "ety", "ph", "tip", "xex", "nu", "senses"):
+                    for kk in ("core", "ety", "ph", "tip", "xex", "nu", "senses", "rootfam"):
                         if e.get(kk): obj[kk] = e[kk]
                     if e.get("syn"): obj["syn"] = e["syn"]      # 富化的 rich syn 覆盖原字符串 syn
                 _sw.append(obj); wids.append(wid)
