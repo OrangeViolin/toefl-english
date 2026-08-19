@@ -302,12 +302,20 @@ const $ = s => document.querySelector(s);
 const view = $('#view');
 function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function load(k,d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch(e){ return d; } }
-function save(k,v){ localStorage.setItem(k, JSON.stringify(v)); }
+function save(k,v){ localStorage.setItem(k, JSON.stringify(v)); if(k===M_KEY){ try{ localStorage.setItem('bcplan:state:bak', JSON.stringify({t:Date.now(), v})); }catch(e){} } }  // 每次改动自动留一份备份
 
 let source = load('bcplan:source','green');
 if(!VOCAB[source]) source='green';
-let state = load(M_KEY, {});         // {id:'ok'|'no'}  ok=已掌握 no=未掌握(生词)
+let state = load(M_KEY, {});         // {key:'ok'|'no'}  ok=已掌握 no=未掌握(生词)。sent100 用词元(lem)做键，重建不丢
 (function(){ const old=load('bcplan:mastered',null); if(old && Object.keys(state).length===0){ for(const k in old) state[k]='ok'; save(M_KEY,state); } })(); // 兼容旧版
+// 🔒 数据恢复迁移：把旧的位置id(S###-##)掌握标记迁到稳定的词元键（恢复被 build 重建打乱的历史标记）
+(function migrateSent(){
+  const S=VOCAB.sent100; if(!S||!S.mig) return; let changed=false;
+  for(const k of Object.keys(state)){
+    if(/^S\d{3}-\d{2}$/.test(k)){ const lem=S.mig[k]; if(lem && !state[lem]) state[lem]=state[k]; delete state[k]; changed=true; }
+  }
+  if(changed){ save(M_KEY,state); console.log('[背词计划] 已把历史掌握标记迁移到词元键并恢复'); }
+})();
 let recite = load('bcplan:recite', false);
 let filter = 'all';                  // all | ok | no
 let reviewMode = 'no';               // 全局未掌握视图：no=已标未掌握 | un=未学未标记
@@ -318,8 +326,10 @@ function words(){ return VOCAB[source].words; }
 function listMeta(){ const m={}; words().forEach(w=>{ m[w.l]=(m[w.l]||0)+1; });
   return Object.keys(m).map(Number).sort((a,b)=>a-b).map(n=>({no:n,count:m[n]})); }
 function listWords(no){ return words().filter(w=>w.l===no); }
-function doneCount(arr){ let c=0; for(const w of arr) if(state[w.id]==='ok') c++; return c; }
-function noCount(arr){ let c=0; for(const w of arr) if(state[w.id]==='no') c++; return c; }
+function mkey(w){ return w.lem || w.id; }   // 掌握键：sent100 用词元(lem)，绿皮书/BEAT 用其稳定 id
+function doneCount(arr){ const seen=new Set(); let c=0; for(const w of arr){ const k=mkey(w); if(seen.has(k))continue; seen.add(k); if(state[k]==='ok') c++; } return c; }
+function noCount(arr){ const seen=new Set(); let c=0; for(const w of arr){ const k=mkey(w); if(seen.has(k))continue; seen.add(k); if(state[k]==='no') c++; } return c; }
+function uniqCount(arr){ return new Set(arr.map(mkey)).size; }
 
 /* ── 语音 ── */
 let voices=[]; function lv(){ voices = window.speechSynthesis? speechSynthesis.getVoices():[]; }
@@ -407,13 +417,29 @@ function renderDrill(kind, panel, w){
 function renderHeader(){
   $('#src').innerHTML = Object.keys(VOCAB).map(k=>`<button data-s="${k}" class="${k===source?'on':''}">${esc(VOCAB[k].name)} · ${VOCAB[k].words.length}</button>`).join('');
   $('#src').querySelectorAll('button').forEach(b=> b.onclick=()=>{ source=b.dataset.s; save('bcplan:source',source); curList=null; renderHeader(); render(); });
-  const all=words(), dc=doneCount(all), nc=noCount(all);
-  $('#ovtxt').innerHTML = `掌握 <b style="color:var(--ok)">${dc}</b> · 未掌握 <b style="color:var(--bad)">${nc}</b> / ${all.length}`;
-  $('#ovbar').style.width = (all.length? dc/all.length*100:0)+'%';
+  const all=words(), dc=doneCount(all), nc=noCount(all), tot=uniqCount(all);
+  $('#ovtxt').innerHTML = `掌握 <b style="color:var(--ok)">${dc}</b> · 未掌握 <b style="color:var(--bad)">${nc}</b> / ${tot}`;
+  $('#ovbar').style.width = (tot? dc/tot*100:0)+'%';
 }
 
 /* ── 路由 ── */
 function render(){ renderHeader(); if(curList==null) renderOverview(); else if(curList==='review') renderReview(); else if(curList==='cloze') renderCloze(); else if(curList==='czwrong') renderCzWrong(); else if(curList==='czwdrill') renderCzwDrill(); else renderStudy(curList); window.scrollTo(0,0); }
+
+/* ── 🔒 数据保护：导出/导入掌握进度 ── */
+function exportProgress(){
+  const blob=new Blob([JSON.stringify({key:M_KEY, state, exportedAt:new Date().toISOString()}, null, 1)], {type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='背词进度备份-'+new Date().toISOString().slice(0,10)+'.json'; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+}
+function importProgress(file){
+  if(!file) return; const r=new FileReader();
+  r.onload=()=>{ try{ const d=JSON.parse(r.result); const inc=d.state||d; if(typeof inc!=='object') throw 0;
+    let add=0; for(const k in inc){ if((inc[k]==='ok'||inc[k]==='no') && state[k]!==inc[k]){ state[k]=inc[k]; add++; } }  // 只并入，不删已有
+    save(M_KEY,state); alert('已从备份并入 '+add+' 条掌握标记（不会覆盖你现有的更强标记）'); render();
+  }catch(e){ alert('导入失败：文件格式不对'); } };
+  r.readAsText(file);
+}
 
 /* ── 总览：分组网格 ── */
 function renderOverview(){
@@ -426,33 +452,39 @@ function renderOverview(){
       <button class="clozebtn" id="goCloze">📝 文段填空（${PASSAGES.length} 篇）</button>
       <button class="czwbtn" id="goCzw">❌ 填词错词（${loadCzW().length}）</button>
       <button class="markall" id="markAll">✅ 其余一键记为「已掌握」</button>
-      <span class="hint">把当前词库里<b>没标「未掌握」</b>的词全部记为已掌握（浏览完再点）</span></div>
+      <button class="tbtn" id="expData" title="下载你的掌握/未掌握数据做备份">⬇ 导出进度</button>
+      <button class="tbtn" id="impData" title="从备份文件恢复">⬆ 导入</button>
+      <input type="file" id="impFile" accept="application/json" style="display:none">
+      <span class="hint">🔒 掌握数据以词元为键、自动本地备份，重建不丢；也可「导出进度」离线留档</span></div>
     <input class="search" id="q" placeholder="🔎 搜单词（跳到它所在的 List）…" value="">
     <div class="sres" id="sres"></div>
     <div class="grid" id="grid"></div>`;
   view.innerHTML = h;
   { const pb=$('#playAll100'); if(pb) pb.onclick=()=>playAll100(); }
+  $('#expData').onclick=()=>exportProgress();
+  $('#impData').onclick=()=>$('#impFile').click();
+  $('#impFile').onchange=e=>importProgress(e.target.files[0]);
   $('#goReview').onclick=()=>{ curList='review'; reviewMode='no'; render(); };
   $('#goCloze').onclick=()=>{ curList='cloze'; render(); };
   $('#goCzw').onclick=()=>{ curList='czwrong'; render(); };
   $('#markAll').onclick=()=>{
     const all=words();
-    const un=all.filter(w=>state[w.id]!=='no'&&state[w.id]!=='ok').length;
-    const no=all.filter(w=>state[w.id]==='no').length;
+    const un=all.filter(w=>state[mkey(w)]!=='no'&&state[mkey(w)]!=='ok').length;
+    const no=all.filter(w=>state[mkey(w)]==='no').length;
     if(!un){ alert('当前词库已经没有「未标记」的词了。'); return; }
     if(!confirm(`把「${VOCAB[source].name}」中除 ${no} 个已标『未掌握』之外的所有词，记为「已掌握」？\n（含你可能还没浏览的词，约 ${un} 个未标记词会被记为已掌握）`)) return;
-    all.forEach(w=>{ if(state[w.id]!=='no') state[w.id]='ok'; });
+    all.forEach(w=>{ if(state[mkey(w)]!=='no') state[mkey(w)]='ok'; });
     save(M_KEY,state); render();
   };
   const grid=$('#grid');
   const isSent=VOCAB[source].mode==='sent';
-  grid.innerHTML = metas.map(m=>{ const lw=listWords(m.no); const dc=doneCount(lw); const nc=noCount(lw); const pct=Math.round(dc/m.count*100);
+  grid.innerHTML = metas.map(m=>{ const lw=listWords(m.no); const cnt=isSent?uniqCount(lw):m.count; const dc=doneCount(lw); const nc=noCount(lw); const pct=Math.round(dc/Math.max(cnt,1)*100);
     const ttl = isSent ? `句 ${(m.no-1)*10+1}–${m.no*10}` : `List ${String(m.no).padStart(2,'0')}`;
-    return `<div class="gcard ${dc===m.count?'done':''}" data-no="${m.no}">
+    return `<div class="gcard ${dc===cnt?'done':''}" data-no="${m.no}">
       <div class="no">${ttl}</div>
-      <div class="ct">${m.count} 词</div>
+      <div class="ct">${cnt} 词</div>
       <div class="bar"><i style="width:${pct}%"></i></div>
-      <div class="pct">${dc===m.count?'✓ 已完成':'掌握 '+dc+(nc?' · <span style="color:var(--bad)">未掌握 '+nc+'</span>':'')+' / '+m.count}</div>
+      <div class="pct">${dc===cnt?'✓ 已完成':'掌握 '+dc+(nc?' · <span style="color:var(--bad)">未掌握 '+nc+'</span>':'')+' / '+cnt}</div>
     </div>`; }).join('');
   grid.querySelectorAll('.gcard').forEach(c=> c.onclick=()=>{ curList=+c.dataset.no; render(); });
   // 搜索
@@ -467,8 +499,8 @@ function renderOverview(){
 /* ── 全部未掌握：横跨所有 List，把标了「未掌握」的生词集中复习 ── */
 function renderReview(){
   const all=words();
-  const noList=all.filter(w=>state[w.id]==='no');       // 已标 ✕ 未掌握（生词）
-  const unList=all.filter(w=>!state[w.id]);              // 未学 / 未标记
+  const noList=all.filter(w=>state[mkey(w)]==='no');       // 已标 ✕ 未掌握（生词）
+  const unList=all.filter(w=>!state[mkey(w)]);              // 未学 / 未标记
   const cur = reviewMode==='un'? unList : noList;
   const byList={}; cur.forEach(w=>{ (byList[w.l]=byList[w.l]||[]).push(w); });
   const nos=Object.keys(byList).map(Number).sort((a,b)=>a-b);
@@ -502,7 +534,7 @@ function pzShuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.f
 function pzParse(text){ const parts=[],ws=[]; const re=/\{\{([^}]+)\}\}/g; let last=0,m;
   while((m=re.exec(text))){ if(m.index>last)parts.push({t:'t',s:text.slice(last,m.index)}); const w=m[1].trim(); parts.push({t:'b',word:w,i:ws.length}); ws.push(w); last=re.lastIndex; }
   if(last<text.length)parts.push({t:'t',s:text.slice(last)}); return {parts,words:ws}; }
-function pzMastered(){ const s=new Set(); words().forEach(w=>{ if(state[w.id]==='ok') s.add((w.w||'').toLowerCase()); }); return s; }
+function pzMastered(){ const s=new Set(); words().forEach(w=>{ if(state[mkey(w)]==='ok') s.add((w.w||'').toLowerCase()); }); return s; }
 
 function renderCloze(){
   if(!PASSAGES.length){ view.innerHTML=`<div class="study-top"><div class="stitle"><span class="back" id="back">← 返回总览</span><h2>📝 文段填空</h2></div></div><div class="empty">还没有文段题。跟 cc 说一声「用我已掌握的词出文段填空」，它造好一篇就能在这里做。</div>`; $('#back').onclick=()=>{curList=null;render();}; return; }
@@ -639,7 +671,7 @@ function renderCzwDrill(){
 /* ── 100 长难句：句子式学习（每句每词点开→标掌握/未掌握，展开即朗读）── */
 function esc2(s){ return esc(s); }
 function sentEnHtml(s, wmap, matched){
-  const targets = s.wids.map(id=>({id, w:(wmap[id]?wmap[id].w:'').toLowerCase()})).filter(t=>t.w);
+  const targets = s.wids.map(id=>({id, lem:(wmap[id]?wmap[id].lem:''), w:(wmap[id]?wmap[id].w:'').toLowerCase()})).filter(t=>t.w);
   const used=new Set();
   const chunks = s.en.match(/[A-Za-z']+|[^A-Za-z']+/g) || [s.en];
   return chunks.map(ch=>{
@@ -648,14 +680,15 @@ function sentEnHtml(s, wmap, matched){
     let hit=null;
     for(const t of targets){ if(used.has(t.id)) continue;
       if(low===t.w || (t.w.length>=4 && low.startsWith(t.w)) || (low.length>=4 && t.w.startsWith(low))){ hit=t; break; } }
-    if(!hit) return `<span class="sw sw-plain" data-w="${esc(low)}" data-n="${s.n}">${esc(ch)}</span>`;   // 非目标词：也可点击展开(最小卡)
+    if(!hit){ const pk='w:'+low; const ps=state[pk]||''; const pc=ps==='ok'?' ok':ps==='no'?' no':'';   // 非目标词也可点开(最小卡)，掌握以 w:词 为键
+      return `<span class="sw sw-plain${pc}" data-w="${esc(low)}" data-lem="${esc(pk)}" data-n="${s.n}">${esc(ch)}</span>`; }
     used.add(hit.id); if(matched) matched.add(hit.id);
-    const st=state[hit.id]||''; const cl=st==='ok'?' ok':st==='no'?' no':'';
-    return `<span class="sw${cl}" data-id="${hit.id}" data-n="${s.n}">${esc(ch)}</span>`;
+    const st=state[hit.lem]||''; const cl=st==='ok'?' ok':st==='no'?' no':'';                            // 掌握以词元(lem)为键
+    return `<span class="sw${cl}" data-id="${hit.id}" data-lem="${esc(hit.lem)}" data-n="${s.n}">${esc(ch)}</span>`;
   }).join('');
 }
 function wordDetailHtml(w){
-  const st=state[w.id]||'';
+  const st=state[mkey(w)]||'';
   const marks=`<span class="swd-marks"><button class="wc-mark ok${st==='ok'?' on':''}" data-m="ok">✓ 掌握</button><button class="wc-mark no${st==='no'?' on':''}" data-m="no">✕ 未掌握</button></span>`;
   let d=`<div class="sw-detail-inner">
     <div class="swd-head"><span class="swd-w swd-say" data-say="${esc(w.w)}">${esc(w.w)} 🔊</span> <span class="swd-p">${esc(w.p||'')}</span>${marks}</div>`;
@@ -687,23 +720,23 @@ function wordDetailHtml(w){
   if(w.nu) d+=`<div class="swd-sec swd-nu">🎯 ${esc(w.nu)}</div>`;
   return d+`</div>`;
 }
-function openWordDetail(n, id, wmap, plain){
+function openWordDetail(n, id, wmap, plain, lemkey){
   const det=document.getElementById('det-'+n); if(!det) return;
-  const key = id || ('w:'+(plain||'').toLowerCase());
+  const key = lemkey || (id && wmap[id] ? wmap[id].lem : null) || ('w:'+(plain||'').toLowerCase());   // 掌握键=词元
   if(det.dataset.open===key){ det.innerHTML=''; det.dataset.open=''; return; }   // 再点收起
-  const w = (id && wmap[id]) ? wmap[id] : {id:key, w:plain||'', p:'', d:'', _plain:true};   // 非目标词→最小卡
+  const w = (id && wmap[id]) ? wmap[id] : {id:key, lem:key, w:plain||'', p:'', d:'', _plain:true};   // 非目标词→最小卡
   det.innerHTML=wordDetailHtml(w); det.dataset.open=key;
   say(w.w);                                       // 展开即朗读
   det.querySelectorAll('.swd-w,.swd-say').forEach(el=> el.onclick=e=>{ e.stopPropagation(); say(el.dataset.say); });
   det.querySelectorAll('.wc-mark').forEach(b=> b.onclick=()=>{
     const ns=b.dataset.m; state[key]=(state[key]===ns)?undefined:ns; if(state[key]===undefined) delete state[key];
     save(M_KEY,state); const mk=state[key];
-    view.querySelectorAll('.sw,.sw-chip').forEach(x=>{ const xid=x.dataset.id||('w:'+(x.dataset.w||'').toLowerCase()); if(xid===key){ x.classList.remove('ok','no'); if(mk) x.classList.add(mk); } });
+    view.querySelectorAll('.sw,.sw-chip').forEach(x=>{ if(x.dataset.lem===key){ x.classList.remove('ok','no'); if(mk) x.classList.add(mk); } });
     det.querySelector('.wc-mark.ok').classList.toggle('on',mk==='ok');
     det.querySelector('.wc-mark.no').classList.toggle('on',mk==='no');
-    const bw=listWords(curList), dc=doneCount(bw), nc=noCount(bw);
-    const c=$('#scnt'); if(c) c.textContent=`${bw.length} 词 · 掌握 ${dc}`+(nc?` · 未掌握 ${nc}`:'');
-    const lb=$('#lbar'); if(lb) lb.style.width=Math.round(dc/Math.max(bw.length,1)*100)+'%';
+    const bw=listWords(curList), dc=doneCount(bw), nc=noCount(bw), tot=uniqCount(bw);
+    const c=$('#scnt'); if(c) c.textContent=`${tot} 词 · 掌握 ${dc}`+(nc?` · 未掌握 ${nc}`:'');
+    const lb=$('#lbar'); if(lb) lb.style.width=Math.round(dc/Math.max(tot,1)*100)+'%';
     renderHeader();
   });
 }
@@ -760,12 +793,12 @@ function renderSentStudy(no){
   const sents=S.sents.filter(s=>s.l===no);
   const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
   const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
-  const bw=listWords(no), dc=doneCount(bw), nc=noCount(bw);
+  const bw=listWords(no), dc=doneCount(bw), nc=noCount(bw), tot=uniqCount(bw);
   const lo=(no-1)*10+1, hi=Math.max(...sents.map(s=>s.n));
   const cards=sents.map(s=>{
     const matched=new Set(); const en=sentEnHtml(s,wmap,matched);
     const extra=s.wids.filter(id=>!matched.has(id));   // 没能在句中高亮的目标词，用小 chip 兜底
-    const chips=extra.map(id=>{ const w=wmap[id]; if(!w) return ''; const st=state[id]||''; return `<span class="sw-chip${st?' '+st:''}" data-id="${id}" data-n="${s.n}">${esc(w.w)}</span>`; }).join('');
+    const chips=extra.map(id=>{ const w=wmap[id]; if(!w) return ''; const st=state[w.lem]||''; return `<span class="sw-chip${st?' '+st:''}" data-id="${id}" data-lem="${esc(w.lem||'')}" data-n="${s.n}">${esc(w.w)}</span>`; }).join('');
     return `<div class="sent-card" data-n="${s.n}">
       <div class="sent-no">句 ${s.n} <span class="sent-say" data-n="${s.n}">🔊 读整句</span></div>
       <div class="sent-en">${en}</div>
@@ -777,8 +810,8 @@ function renderSentStudy(no){
   }).join('');
   view.innerHTML=`<div class="study-top">
     <div class="stitle"><span class="back" id="back">← 返回总览</span>
-      <h2>句 ${lo}–${hi}</h2><span class="cnt" id="scnt">${bw.length} 词 · 掌握 ${dc}${nc?' · 未掌握 '+nc:''}</span></div>
-    <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/Math.max(bw.length,1)*100)}%"></i></div>
+      <h2>句 ${lo}–${hi}</h2><span class="cnt" id="scnt">${tot} 词 · 掌握 ${dc}${nc?' · 未掌握 '+nc:''}</span></div>
+    <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/Math.max(tot,1)*100)}%"></i></div>
     <div class="intro" style="margin:10px 0 0">读句子，句中<b>每个词都能点开</b>——展开释义/核心意象/词源/发音/例句/近义/<b>词根家族(背一个带一串)</b>并标 <b>✓掌握 / ✕未掌握</b>（展开自动朗读）；未收录的功能词点开也能听发音。「🔊 读整句」读整句，「▶️ 顺序播放」连读全组。掌握变绿、未掌握变红。</div>
     <div class="tools"><button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮中文）</button>
       <button class="tbtn" id="tPlay">▶️ 顺序播放本组</button>${speedBtns()}
@@ -786,7 +819,7 @@ function renderSentStudy(no){
       <span class="nav"><button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一组</button><button class="tbtn" id="nx" ${next==null?'disabled':''}>下一组 ▶</button></span></div></div>
     <div class="cards">${cards}</div>
     <div class="tools" style="margin-top:16px"><span class="back" id="back2">← 返回总览</span></div>`;
-  view.querySelectorAll('.sw,.sw-chip').forEach(el=> el.onclick=e=>{ e.stopPropagation(); openWordDetail(el.dataset.n, el.dataset.id, wmap, el.dataset.w); });   // 每个词都可点开
+  view.querySelectorAll('.sw,.sw-chip').forEach(el=> el.onclick=e=>{ e.stopPropagation(); openWordDetail(el.dataset.n, el.dataset.id, wmap, el.dataset.w, el.dataset.lem); });   // 每个词都可点开
   const enOf={}; sents.forEach(s=>enOf[s.n]=s.en);
   view.querySelectorAll('.sent-say').forEach(el=> el.onclick=e=>{ e.stopPropagation(); say(enOf[el.dataset.n]); }); // 整句朗读
   const stopSeq=()=>{ seqPlaying=false; if(window.speechSynthesis) speechSynthesis.cancel(); };
@@ -795,9 +828,9 @@ function renderSentStudy(no){
   $('#pv').onclick=()=>prev!=null&&go(prev); $('#nx').onclick=()=>next!=null&&go(next);
   $('#tRecite').onclick=()=>{ stopSeq(); recite=!recite; save('bcplan:recite',recite); render(); };
   $('#tPlay').onclick=()=>playAllSents(sents);
-  $('#tAll').onclick=()=>{ const un=bw.filter(w=>state[w.id]!=='no'&&state[w.id]!=='ok').length;
+  $('#tAll').onclick=()=>{ const un=bw.filter(w=>state[mkey(w)]!=='no'&&state[mkey(w)]!=='ok').length;
     if(un && !confirm(`把本组（这 10 句）里除已标『未掌握』外的词，全部记为「已掌握」？（${un} 个未标记词会记为已掌握）`)) return;
-    bw.forEach(w=>{ if(state[w.id]!=='no') state[w.id]='ok'; }); save(M_KEY,state); render(); };
+    bw.forEach(w=>{ if(state[mkey(w)]!=='no') state[mkey(w)]='ok'; }); save(M_KEY,state); render(); };
 }
 
 function renderStudy(no){
@@ -805,8 +838,8 @@ function renderStudy(no){
   const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
   const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
   let lw=listWords(no); const total=lw.length; const dc=doneCount(lw); const nc=noCount(lw);
-  const shown = filter==='ok'? lw.filter(w=>state[w.id]==='ok')
-              : filter==='no'? lw.filter(w=>state[w.id]==='no')
+  const shown = filter==='ok'? lw.filter(w=>state[mkey(w)]==='ok')
+              : filter==='no'? lw.filter(w=>state[mkey(w)]==='no')
               : lw;
   view.innerHTML = `<div class="study-top">
     <div class="stitle"><span class="back" id="back">← 返回总览</span>
@@ -842,9 +875,9 @@ function renderStudy(no){
   $('#tRecite').onclick=()=>{ recite=!recite; save('bcplan:recite',recite); render(); };
   $('#tExpand').onclick=()=>{ const cs=[...view.querySelectorAll('.wcard.expandable')]; const anyClosed=cs.some(c=>!c.classList.contains('open')); cs.forEach(c=>c.classList.toggle('open',anyClosed)); };
   view.querySelectorAll('.seg [data-f]').forEach(bn=> bn.onclick=()=>{ filter=bn.dataset.f; render(); });
-  $('#tAll').onclick=()=>{ const un=lw.filter(w=>state[w.id]!=='no'&&state[w.id]!=='ok').length;
+  $('#tAll').onclick=()=>{ const un=lw.filter(w=>state[mkey(w)]!=='no'&&state[mkey(w)]!=='ok').length;
     if(un && !confirm(`把本组除已标『未掌握』外的词记为「已掌握」？（${un} 个未标记词会记为已掌握）`)) return;
-    lw.forEach(w=>{ if(state[w.id]!=='no') state[w.id]='ok'; }); save(M_KEY,state); render(); };
+    lw.forEach(w=>{ if(state[mkey(w)]!=='no') state[mkey(w)]='ok'; }); save(M_KEY,state); render(); };
 }
 
 const POS_MAP={n:'名词',v:'动词',vt:'动词',vi:'动词',adj:'形容词',a:'形容词',adv:'副词',ad:'副词',prep:'介词',pron:'代词',conj:'连词',art:'冠词',num:'数词',int:'感叹词'};
@@ -858,7 +891,7 @@ function exHtml(list){ return list.map(x=>{
 
 // 默认收起，只显示单词行；点击展开 voca 标准的丰富信息（词源/发音规律/例句/近义辨析/辨析总结）
 function cardHtml(w){
-  const st=state[w.id]||''; const cls=(st==='ok'?' ok':st==='no'?' no':'');
+  const st=state[mkey(w)]||''; const cls=(st==='ok'?' ok':st==='no'?' no':'');
   const pos=posChip(w.d);
   let d='';
   if(recite) d += sec('📖','','释义',`<div style="font-size:16px;font-weight:600">${esc(w.d)}</div>`);
@@ -1010,12 +1043,18 @@ def build():
                 lem = _resolve(low)
                 if not lem: continue                              # 无释义数据的词→句中留作 plain
                 d = WMAP[lem]; wid = f"S{n:03d}-{k:02d}"; k += 1
-                obj = {"id": wid, "l": l, "w": surf, "p": d.get("p", ""), "d": d.get("d", "")}
+                obj = {"id": wid, "l": l, "w": surf, "lem": lem, "p": d.get("p", ""), "d": d.get("d", "")}
                 for kk in ("m", "syn", "cog", "core", "ety", "ph", "tip", "xex", "nu", "senses", "rootfam"):
                     if d.get(kk): obj[kk] = d[kk]
                 _sw.append(obj); wids.append(wid)
             _st.append({"n": n, "l": l, "en": s["en"], "zh": s.get("zh", ""), "gram": s.get("gram", ""), "wids": wids})
-        payload["sent100"] = {"name": "100 长难句", "mode": "sent", "words": _sw, "sents": _st}
+        # 迁移图：旧 S{n}-{k} 位置id(原wiki目标词方案) -> 词元，用于把历史掌握标记迁到词元键，恢复数据
+        _MIG = {}
+        for s in _sd["sentences"]:
+            n = s["n"]
+            for k, w in enumerate(s.get("words", [])):
+                _MIG[f"S{n:03d}-{k:02d}"] = (w.get("w") or "").strip().lower()
+        payload["sent100"] = {"name": "100 长难句", "mode": "sent", "words": _sw, "sents": _st, "mig": _MIG}
     import os as _os
     _pz = _os.path.join(DATA, "cloze-passages.json")
     passages = json.load(open(_pz, encoding="utf-8")).get("passages", []) if _os.path.exists(_pz) else []
