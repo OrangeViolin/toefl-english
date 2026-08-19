@@ -96,6 +96,37 @@ PAGE = r"""<!DOCTYPE html>
   .czw-tp{font-size:12px;color:var(--muted)}
   .czw-del{margin-left:auto;font-size:12.5px;color:var(--ok);cursor:pointer;white-space:nowrap}
   .czw-del:hover{text-decoration:underline}
+  /* 100 长难句 · 句子式 */
+  .sent-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 18px;margin-bottom:14px;box-shadow:0 2px 10px rgba(150,120,70,.04)}
+  .sent-no{font-size:12px;color:var(--muted);font-weight:700;margin-bottom:6px}
+  .sent-en{font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.95;color:var(--ink)}
+  .sent-zh{color:#6f6656;font-size:14px;margin-top:8px}
+  .sw{cursor:pointer;border-bottom:1.5px dotted var(--accent);padding:0 1px}
+  .sw:hover{background:#fbf1e2}
+  .sw.ok{color:var(--ok);border-bottom-color:var(--ok)}
+  .sw.no{color:var(--bad);border-bottom-color:var(--bad);background:#fdf1ef}
+  .sw-chips{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .sw-chips-lbl{font-size:12px;color:var(--muted)}
+  .sw-chip{cursor:pointer;font-family:Georgia,serif;font-size:13.5px;border:1px solid var(--line);border-radius:8px;padding:2px 9px;background:#faf6ee}
+  .sw-chip:hover{border-color:var(--accent)}
+  .sw-chip.ok{color:var(--ok);border-color:#a9d6b8;background:#f2faf4}
+  .sw-chip.no{color:var(--bad);border-color:#e6b3aa;background:#fdf1ef}
+  .sent-gram{margin-top:9px;font-size:13px}
+  .sent-gram summary{cursor:pointer;color:var(--core);font-weight:600;font-size:12.5px;list-style:none}
+  .sent-gram summary::-webkit-details-marker{display:none}
+  .sent-gram summary::before{content:"▸ "}
+  .sent-gram[open] summary::before{content:"▾ "}
+  .sent-gram>div{color:#5f574c;margin-top:6px;line-height:1.7;background:#faf7f0;border-radius:8px;padding:8px 11px}
+  .sent-detail{margin-top:10px}
+  .sent-detail:empty{display:none}
+  .sw-detail-inner{background:#faf5ea;border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .swd-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .swd-w{font-family:Georgia,serif;font-size:18px;font-weight:700;cursor:pointer}
+  .swd-w:hover{color:var(--accent)}
+  .swd-p{color:var(--core);font-size:14px}
+  .swd-marks{margin-left:auto;display:flex;gap:6px}
+  .swd-def{font-size:15px;font-weight:600;margin-top:8px}
+  .swd-sec{font-size:13.5px;color:#5f574c;margin-top:6px;line-height:1.6}
   /* 填词测验 */
   .cz-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 2px 10px rgba(150,120,70,.05)}
   .cz-clue{font-size:14px;color:#5f574c;margin-bottom:12px}
@@ -385,9 +416,11 @@ function renderOverview(){
     save(M_KEY,state); render();
   };
   const grid=$('#grid');
+  const isSent=VOCAB[source].mode==='sent';
   grid.innerHTML = metas.map(m=>{ const lw=listWords(m.no); const dc=doneCount(lw); const nc=noCount(lw); const pct=Math.round(dc/m.count*100);
+    const ttl = isSent ? `句 ${(m.no-1)*10+1}–${m.no*10}` : `List ${String(m.no).padStart(2,'0')}`;
     return `<div class="gcard ${dc===m.count?'done':''}" data-no="${m.no}">
-      <div class="no">List ${String(m.no).padStart(2,'0')}</div>
+      <div class="no">${ttl}</div>
       <div class="ct">${m.count} 词</div>
       <div class="bar"><i style="width:${pct}%"></i></div>
       <div class="pct">${dc===m.count?'✓ 已完成':'掌握 '+dc+(nc?' · <span style="color:var(--bad)">未掌握 '+nc+'</span>':'')+' / '+m.count}</div>
@@ -574,7 +607,92 @@ function renderCzwDrill(){
 }
 
 /* ── 学习视图：一组单词卡 ── */
+/* ── 100 长难句：句子式学习（每句每词点开→标掌握/未掌握，展开即朗读）── */
+function esc2(s){ return esc(s); }
+function sentEnHtml(s, wmap, matched){
+  const targets = s.wids.map(id=>({id, w:(wmap[id]?wmap[id].w:'').toLowerCase()})).filter(t=>t.w);
+  const used=new Set();
+  const chunks = s.en.match(/[A-Za-z']+|[^A-Za-z']+/g) || [s.en];
+  return chunks.map(ch=>{
+    if(!/[A-Za-z]/.test(ch)) return esc(ch);
+    const low=ch.toLowerCase();
+    let hit=null;
+    for(const t of targets){ if(used.has(t.id)) continue;
+      if(low===t.w || (t.w.length>=4 && low.startsWith(t.w)) || (low.length>=4 && t.w.startsWith(low))){ hit=t; break; } }
+    if(!hit) return esc(ch);
+    used.add(hit.id); if(matched) matched.add(hit.id);
+    const st=state[hit.id]||''; const cl=st==='ok'?' ok':st==='no'?' no':'';
+    return `<span class="sw${cl}" data-id="${hit.id}" data-n="${s.n}">${esc(ch)}</span>`;
+  }).join('');
+}
+function wordDetailHtml(w){
+  const st=state[w.id]||'';
+  let d=`<div class="sw-detail-inner">
+    <div class="swd-head"><span class="swd-w" data-say="${esc(w.w)}">${esc(w.w)} 🔊</span> <span class="swd-p">${esc(w.p||'')}</span>
+      <span class="swd-marks"><button class="wc-mark ok${st==='ok'?' on':''}" data-m="ok">✓ 掌握</button><button class="wc-mark no${st==='no'?' on':''}" data-m="no">✕ 未掌握</button></span></div>
+    <div class="swd-def">${esc(w.d||'')}</div>`;
+  if(w.m) d+=`<div class="swd-sec">🏛 <b>词根记忆</b>：${esc(w.m)}</div>`;
+  if(w.syn&&w.syn.length) d+=`<div class="swd-sec">🔗 <b>同义</b>：${w.syn.map(esc).join('；')}</div>`;
+  if(w.cog&&w.cog.length) d+=`<div class="swd-sec">🌱 <b>同根</b>：${w.cog.map(esc).join('；')}</div>`;
+  return d+`</div>`;
+}
+function openWordDetail(n, id, wmap){
+  const det=document.getElementById('det-'+n); if(!det) return;
+  if(det.dataset.open===id){ det.innerHTML=''; det.dataset.open=''; return; }   // 再点收起
+  const w=wmap[id]; if(!w) return;
+  det.innerHTML=wordDetailHtml(w); det.dataset.open=id;
+  say(w.w);                                       // 展开即朗读
+  det.querySelector('.swd-w').onclick=()=>say(w.w);
+  det.querySelectorAll('.wc-mark').forEach(b=> b.onclick=()=>{
+    const ns=b.dataset.m; state[id]=(state[id]===ns)?undefined:ns; if(state[id]===undefined) delete state[id];
+    save(M_KEY,state);
+    view.querySelectorAll('.sw[data-id="'+id+'"],.sw-chip[data-id="'+id+'"]').forEach(x=>{ x.classList.remove('ok','no'); if(state[id]) x.classList.add(state[id]); });
+    det.querySelector('.wc-mark.ok').classList.toggle('on',state[id]==='ok');
+    det.querySelector('.wc-mark.no').classList.toggle('on',state[id]==='no');
+    const bw=listWords(curList), dc=doneCount(bw), nc=noCount(bw);
+    const c=$('#scnt'); if(c) c.textContent=`${bw.length} 词 · 掌握 ${dc}`+(nc?` · 未掌握 ${nc}`:'');
+    const lb=$('#lbar'); if(lb) lb.style.width=Math.round(dc/bw.length*100)+'%';
+    renderHeader();
+  });
+}
+function renderSentStudy(no){
+  const S=VOCAB[source]; const wmap={}; S.words.forEach(w=>wmap[w.id]=w);
+  const sents=S.sents.filter(s=>s.l===no);
+  const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
+  const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
+  const bw=listWords(no), dc=doneCount(bw), nc=noCount(bw);
+  const lo=(no-1)*10+1, hi=Math.max(...sents.map(s=>s.n));
+  const cards=sents.map(s=>{
+    const matched=new Set(); const en=sentEnHtml(s,wmap,matched);
+    const extra=s.wids.filter(id=>!matched.has(id));   // 没能在句中高亮的目标词，用小 chip 兜底
+    const chips=extra.map(id=>{ const w=wmap[id]; if(!w) return ''; const st=state[id]||''; return `<span class="sw-chip${st?' '+st:''}" data-id="${id}" data-n="${s.n}">${esc(w.w)}</span>`; }).join('');
+    return `<div class="sent-card" data-n="${s.n}">
+      <div class="sent-no">句 ${s.n}</div>
+      <div class="sent-en">${en}</div>
+      ${recite?'':`<div class="sent-zh">${esc(s.zh)}</div>`}
+      ${chips?`<div class="sw-chips"><span class="sw-chips-lbl">本句词：</span>${chips}</div>`:''}
+      ${s.gram?`<details class="sent-gram"><summary>🔍 句子结构</summary><div>${esc(s.gram)}</div></details>`:''}
+      <div class="sent-detail" id="det-${s.n}"></div>
+    </div>`;
+  }).join('');
+  view.innerHTML=`<div class="study-top">
+    <div class="stitle"><span class="back" id="back">← 返回总览</span>
+      <h2>句 ${lo}–${hi}</h2><span class="cnt" id="scnt">${bw.length} 词 · 掌握 ${dc}${nc?' · 未掌握 '+nc:''}</span></div>
+    <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/Math.max(bw.length,1)*100)}%"></i></div>
+    <div class="intro" style="margin:10px 0 0">读句子，点句中<b>带下划线的词</b>（或「本句词」里的词）即可展开释义/词根、并标 <b>✓掌握 / ✕未掌握</b>；展开自动朗读。掌握的词在句中变绿、未掌握变红，一眼看清哪些还没背熟。</div>
+    <div class="tools"><button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮中文）</button>
+      <span class="nav"><button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一组</button><button class="tbtn" id="nx" ${next==null?'disabled':''}>下一组 ▶</button></span></div></div>
+    <div class="cards">${cards}</div>
+    <div class="tools" style="margin-top:16px"><span class="back" id="back2">← 返回总览</span></div>`;
+  view.querySelectorAll('.sw,.sw-chip').forEach(el=> el.onclick=e=>{ e.stopPropagation(); openWordDetail(el.dataset.n, el.dataset.id, wmap); });
+  $('#back').onclick=$('#back2').onclick=()=>{ curList=null; render(); };
+  const go=n=>{ curList=n; render(); };
+  $('#pv').onclick=()=>prev!=null&&go(prev); $('#nx').onclick=()=>next!=null&&go(next);
+  $('#tRecite').onclick=()=>{ recite=!recite; save('bcplan:recite',recite); render(); };
+}
+
 function renderStudy(no){
+  if(VOCAB[source].mode==='sent') return renderSentStudy(no);   // 100 长难句：句子式
   const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
   const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
   let lw=listWords(no); const total=lw.length; const dc=doneCount(lw); const nc=noCount(lw);
@@ -738,6 +856,20 @@ def build():
         proj = load_source("项目生词.json", trim_proj, "项目生词")
         proj["name"] = "项目生词"
         payload["proj"] = proj
+    # 100 长难句（句子式展示：每句每词可点开标掌握/未掌握）——独立词源 sent100
+    _ssp = _os0.path.join(DATA, "sentences-100.json")
+    if _os0.path.exists(_ssp):
+        _sd = json.load(open(_ssp, encoding="utf-8"))
+        _sw, _st = [], []
+        for s in _sd["sentences"]:
+            n = s["n"]; l = (n - 1)//10 + 1; wids = []
+            for k, w in enumerate(s.get("words", [])):
+                wid = f"S{n:03d}-{k:02d}"
+                _sw.append({"id": wid, "l": l, "w": w["w"], "p": w.get("p", ""), "d": w.get("d", ""),
+                            "m": w.get("m", ""), "syn": w.get("syn", []), "cog": w.get("cog", [])})
+                wids.append(wid)
+            _st.append({"n": n, "l": l, "en": s["en"], "zh": s.get("zh", ""), "gram": s.get("gram", ""), "wids": wids})
+        payload["sent100"] = {"name": "100 长难句", "mode": "sent", "words": _sw, "sents": _st}
     import os as _os
     _pz = _os.path.join(DATA, "cloze-passages.json")
     passages = json.load(open(_pz, encoding="utf-8")).get("passages", []) if _os.path.exists(_pz) else []
