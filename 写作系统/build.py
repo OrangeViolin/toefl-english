@@ -73,6 +73,16 @@ PAGE = r"""<!DOCTYPE html>
   .tmpl summary{cursor:pointer;padding:11px 15px;font-weight:600;color:#2c6a60;font-size:14px;list-style:none}
   .tmpl summary::-webkit-details-marker{display:none}
   .tmpl summary::before{content:"📋 ";}
+  .ref{border:1px solid #e5cdbb;background:#fffaf4;border-radius:12px;margin-top:14px;overflow:hidden}
+  .ref>summary{cursor:pointer;padding:11px 15px;font-weight:600;color:var(--accent);font-size:14px;list-style:none}
+  .ref>summary::-webkit-details-marker{display:none}
+  .ref>summary::before{content:"📖 ";}
+  .rin{padding:0 16px 14px}
+  .rlabel{font-weight:700;color:var(--core);font-size:13px;margin:10px 0 4px}
+  .model{background:#faf7ef;border:1px solid #efe6d4;border-radius:10px;padding:12px 14px;margin:8px 0;white-space:pre-wrap;line-height:1.75;font-size:14px}
+  .mlabel{font-weight:700;color:#8a5a2e;font-size:12.5px;margin-bottom:6px}
+  .sbb{font-weight:600;font-size:13px;color:#5f574c;margin:9px 0 2px}
+  .sopt{font-size:13.5px;color:#433d34;padding:2px 0}
   .tmpl .tin{padding:0 16px 14px;font-size:13.5px}
   .tmpl .frame div{padding:3px 0;border-bottom:1px dashed #d3e5e0}
   .tmpl .phr{margin-top:10px}
@@ -179,6 +189,15 @@ function tmplHtml(t){
     ${t.tips?`<div class="tips">💡 ${esc(t.tips)}</div>`:''}
   </div></details>`;
 }
+function refHtml(it){
+  if(!it.models && !it.bySentence) return '';
+  const models=(it.models||[]).map(m=>`<div class="model"><div class="mlabel">${esc(m.label)}</div>${esc(m.text)}</div>`).join('');
+  const sb=(it.bySentence||[]).map(b=>`<div class="sbb">${esc(b.bullet)}</div>`+b.options.map(o=>`<div class="sopt">· ${esc(o)}</div>`).join('')).join('');
+  return `<details class="ref"><summary>参考范文 &amp; 例句（先自己写，再对照）</summary><div class="rin">`+
+    (models?`<div class="rlabel">范文</div>${models}`:'')+
+    (sb?`<div class="rlabel">分点参考例句（每点挑一句套用）</div>${sb}`:'')+
+    `</div></details>`;
+}
 function writeRender(kind, idx){
   stopTimer();
   const D = kind==='email'?EMAIL:DISC;
@@ -209,6 +228,7 @@ function writeRender(kind, idx){
       <button class="btn g" id="tstart">▶ 开始限时</button>
       <button class="btn t" id="copy">复制报告给 cc 打分</button>
     </div>
+    ${refHtml(it)}
   </div></div>
   <div class="nav"><button class="btn g" onclick="menu()">← 回菜单</button></div>`;
   $('#chips').querySelectorAll('button').forEach(b=>b.onclick=()=>writeRender(kind,+b.dataset.i));

@@ -24,6 +24,34 @@
   "items": [
     {
       "time_sec": 420,
+      "to": "ms.lopez@communitycharity.org",
+      "subject": "Fundraising event for the children's hospital",
+      "scenario": "A local community organization is planning a fundraising event for a local children's hospital. You want to contact Ms. Lopez to discuss the event and possible support. Write as much as you can, in complete sentences.",
+      "bullets": ["Describe the purpose of the fundraising event.", "Explain why you think the activity will be successful.", "Suggest a time to meet and discuss the plans in more detail."],
+      "bySentence": [
+        { "bullet": "① 说明活动目的", "options": [
+          "The purpose of the event is to raise money for new medical equipment at the children's hospital.",
+          "We are organizing this event to support young patients and their families.",
+          "All the funds we raise will go toward improving care for sick children."
+        ]},
+        { "bullet": "② 解释为何会成功", "options": [
+          "I believe the event will be successful because many local businesses have already offered to help.",
+          "A similar event last year attracted a large crowd, so we expect a strong turnout again.",
+          "With good publicity and community support, I am confident that we will reach our goal."
+        ]},
+        { "bullet": "③ 建议见面时间", "options": [
+          "Would you be available to meet next Wednesday afternoon to discuss the plans in more detail?",
+          "I would like to arrange a short meeting at your convenience, perhaps early next week.",
+          "Please let me know a time that works for you, and I will make myself available."
+        ]}
+      ],
+      "models": [
+        { "label": "范文 A · 简洁稳妥版（band 4）", "text": "Dear Ms. Lopez,\n\nI am writing to tell you about a fundraising event that our community organization is planning for the local children's hospital. The purpose of the event is to raise money for new medical equipment and to help families who cannot afford treatment.\n\nI believe the activity will be successful because many local businesses have already offered to help, and a similar event last year attracted a large crowd. With good advertising, I am confident that even more people will take part this time.\n\nI would love to discuss the plans with you in more detail. Would you be available to meet next Wednesday afternoon, around 3 p.m.? Please let me know if another time works better for you.\n\nThank you for your time and support.\n\nBest regards,\nFish" },
+        { "label": "范文 B · 进阶丰富版（band 5）", "text": "Dear Ms. Lopez,\n\nI hope this email finds you well. I am reaching out on behalf of our community organization, which is planning a fundraising event to support the local children's hospital. The main purpose of the event is to raise funds for new medical equipment and to help cover treatment costs for families in need.\n\nI am confident that the event will be a success for several reasons. First, a number of local shops and restaurants have already agreed to donate prizes and refreshments. Second, a similar event we held last spring drew more than two hundred visitors, so we already have an enthusiastic community behind us. With your support, I believe we can reach an even wider audience.\n\nI would very much appreciate the chance to discuss the details with you in person. Would you be available to meet sometime next week, for example on Tuesday or Thursday afternoon? Please let me know what suits you best.\n\nThank you very much for considering our request. I look forward to hearing from you.\n\nWarm regards,\nFish" }
+      ]
+    },
+    {
+      "time_sec": 420,
       "to": "ithelp@university.edu",
       "subject": "Slow Wi-Fi in the dormitory",
       "scenario": "For the past week, the Wi-Fi in your dormitory has been very slow, and it often disconnects during online classes. Several of your classmates have the same problem.",
