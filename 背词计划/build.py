@@ -143,6 +143,11 @@ PAGE = r"""<!DOCTYPE html>
   .playbar .pb-txt b{color:var(--accent);font-family:-apple-system,sans-serif;margin-right:6px}
   .playbar .pb-zh{color:#c9beac;font-size:13px;font-family:-apple-system,sans-serif;margin-top:2px}
   .playbar .pb-stop{background:var(--bad);color:#fff;border:0;border-radius:20px;padding:8px 18px;font-size:14px;cursor:pointer;white-space:nowrap;font-family:inherit}
+  .spd{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--muted);white-space:nowrap}
+  .spd-b{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:3px 10px;font-size:12.5px;cursor:pointer;color:#5f574c;font-family:inherit}
+  .spd-b:hover{border-color:var(--accent)}
+  .spd-b.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .playbar .spd{color:#c9beac}
   /* 填词测验 */
   .cz-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 2px 10px rgba(150,120,70,.05)}
   .cz-clue{font-size:14px;color:#5f574c;margin-bottom:12px}
@@ -688,6 +693,13 @@ function openWordDetail(n, id, wmap){
     renderHeader();
   });
 }
+// 朗读速度：慢/中/快（作用于所有句子播放）
+let playRate = (function(){ try{ return load('bcplan:playrate',1.0); }catch(e){ return 1.0; } })();
+function setRate(r){ playRate=r; save('bcplan:playrate',r);
+  document.querySelectorAll('.spd-b').forEach(b=> b.classList.toggle('on', Math.abs((+b.dataset.r)-r)<0.01)); }
+function speedBtns(){ const opts=[['慢速',0.7],['中速',1.0],['快速',1.3]];
+  return '<span class="spd">速度：'+opts.map(([lb,r])=>`<button class="spd-b${Math.abs(playRate-r)<0.01?' on':''}" data-r="${r}" onclick="setRate(${r})">${lb}</button>`).join('')+'</span>'; }
+
 // 一键连读全部 100 句（底部悬浮播放条跟随，可停）
 let seq100=false;
 function pbEl(){ let b=document.getElementById('playbar'); if(!b){ b=document.createElement('div'); b.id='playbar'; b.className='playbar'; document.body.appendChild(b); } return b; }
@@ -701,7 +713,7 @@ async function playAll100(){
   for(const s of sents){
     if(!seq100) break;
     const b=pbEl(); b.style.display='block';
-    b.innerHTML=`<div class="pb-in"><div class="pb-txt"><b>句 ${s.n}/${sents.length}</b> ${esc(s.en)}<div class="pb-zh">${esc(s.zh||'')}</div></div><button class="pb-stop" id="pbStop">⏹ 停止</button></div>`;
+    b.innerHTML=`<div class="pb-in"><div class="pb-txt"><b>句 ${s.n}/${sents.length}</b> ${esc(s.en)}<div class="pb-zh">${esc(s.zh||'')}</div></div>${speedBtns()}<button class="pb-stop" id="pbStop">⏹ 停止</button></div>`;
     b.querySelector('#pbStop').onclick=()=>playAll100();
     await sayAwait(s.en);
     if(!seq100) break;
@@ -713,7 +725,7 @@ async function playAll100(){
 let seqPlaying=false;
 function slp(ms){ return new Promise(r=>setTimeout(r,ms)); }
 function sayAwait(t){ return new Promise(res=>{ if(!window.speechSynthesis){res();return;} speechSynthesis.cancel();
-  const u=new SpeechSynthesisUtterance(t); const v=pickVoice(); if(v)u.voice=v; u.lang='en-US'; u.rate=.95; u.onend=res; u.onerror=res; speechSynthesis.speak(u); }); }
+  const u=new SpeechSynthesisUtterance(t); const v=pickVoice(); if(v)u.voice=v; u.lang='en-US'; u.rate=playRate; u.onend=res; u.onerror=res; speechSynthesis.speak(u); }); }
 async function playAllSents(sents){
   const btn=$('#tPlay');
   if(seqPlaying){ seqPlaying=false; if(window.speechSynthesis) speechSynthesis.cancel(); if(btn){btn.textContent='▶️ 顺序播放本组';btn.classList.remove('on');} document.querySelectorAll('.sent-card').forEach(c=>c.classList.remove('playing')); return; }
@@ -755,7 +767,7 @@ function renderSentStudy(no){
     <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/Math.max(bw.length,1)*100)}%"></i></div>
     <div class="intro" style="margin:10px 0 0">读句子，句中<b>每个词都能点</b>——目标词点开释义/词源/例句并标 <b>✓掌握 / ✕未掌握</b>（展开自动朗读），其余词点一下即朗读；点「🔊 读整句」读整句，「▶️ 顺序播放」连读全组熟悉句子。掌握的词变绿、未掌握变红。</div>
     <div class="tools"><button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮中文）</button>
-      <button class="tbtn" id="tPlay">▶️ 顺序播放本组</button>
+      <button class="tbtn" id="tPlay">▶️ 顺序播放本组</button>${speedBtns()}
       <button class="tbtn" id="tAll">本组·其余记为已掌握</button>
       <span class="nav"><button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一组</button><button class="tbtn" id="nx" ${next==null?'disabled':''}>下一组 ▶</button></span></div></div>
     <div class="cards">${cards}</div>
