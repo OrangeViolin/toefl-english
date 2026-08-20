@@ -292,6 +292,7 @@ PAGE = r"""<!DOCTYPE html>
   <h1>📚 背词计划</h1>
   <div class="src" id="src"></div>
   <div class="ovprog"><span id="ovtxt"></span><span class="bar"><i id="ovbar"></i></span></div>
+  <span id="dbind" style="font-size:11.5px;color:var(--muted);white-space:nowrap">连接 cloud.db…</span>
 </div></header>
 <div class="wrap"><div id="view"></div></div>
 
@@ -302,17 +303,43 @@ const $ = s => document.querySelector(s);
 const view = $('#view');
 function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function load(k,d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch(e){ return d; } }
-function save(k,v){ localStorage.setItem(k, JSON.stringify(v)); if(k===M_KEY){ try{ localStorage.setItem('bcplan:state:bak', JSON.stringify({t:Date.now(), v})); }catch(e){} } }  // 每次改动自动留一份备份
+function save(k,v){ localStorage.setItem(k, JSON.stringify(v)); if(k===M_KEY){ try{ localStorage.setItem('bcplan:state:bak', JSON.stringify({t:Date.now(), v})); }catch(e){}; scheduleSync(); } }  // 每次改动：本地备份 + 计划同步到 cloud.db
+
+/* ── ☁️ cloud.db 持久化：掌握/未掌握写入本地 SQLite 库，localStorage 被清也能恢复，绝不再丢 ── */
+const DB = (location.protocol==='http:'||location.protocol==='https:') ? '' : 'http://127.0.0.1:8799';  // 由 db_server 托管时同源；file:// 时走 8799
+let dbOK=false, _syncT=null;
+function setDbInd(t){ const e=document.getElementById('dbind'); if(e) e.textContent=t; }
+function dbSyncUp(){ if(!dbOK) return; try{ fetch(DB+'/bulk',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:state})}).catch(()=>{}); }catch(e){} }
+function scheduleSync(){ if(!dbOK) return; clearTimeout(_syncT); _syncT=setTimeout(dbSyncUp, 400); }        // 防抖：批量改动只同步一次
+function dbMark(key){ if(!dbOK||!key) return; try{ fetch(DB+'/mark',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({k:key, status: state[key]||null})}).catch(()=>{}); }catch(e){} }  // 单个改/删精确落库
+function dbInit(){
+  fetch(DB+'/state').then(r=>r.ok?r.json():null).then(cloud=>{
+    dbOK=true; setDbInd('☁️ 已连 cloud.db');
+    let changed=false;
+    if(cloud && typeof cloud==='object'){
+      for(const k in cloud){ if((cloud[k]==='ok'||cloud[k]==='no') && !state[k]){ state[k]=cloud[k]; changed=true; } }  // 云端有、本地缺→恢复
+    }
+    if(changed){ save(M_KEY,state); }
+    dbSyncUp();                                   // 把本地(含刚恢复)全部标记推上云，双向对齐
+    if(changed && typeof render==='function') render();
+  }).catch(()=>{ dbOK=false; setDbInd('⚠️ 未连 cloud.db（仅本地）— 双击 start.command 开启云端保存'); });
+}
 
 let source = load('bcplan:source','green');
 if(!VOCAB[source]) source='green';
 let state = load(M_KEY, {});         // {key:'ok'|'no'}  ok=已掌握 no=未掌握(生词)。sent100 用词元(lem)做键，重建不丢
 (function(){ const old=load('bcplan:mastered',null); if(old && Object.keys(state).length===0){ for(const k in old) state[k]='ok'; save(M_KEY,state); } })(); // 兼容旧版
+// 🔒 先从本地自动备份补回可能丢失的标记（只加不覆盖，非破坏）
+(function restoreFromBak(){
+  try{ const bak=load('bcplan:state:bak',null); const bv=bak&&bak.v; if(bv&&typeof bv==='object'){ let c=false;
+    for(const k in bv){ if((bv[k]==='ok'||bv[k]==='no') && !state[k]){ state[k]=bv[k]; c=true; } } if(c){ save(M_KEY,state); console.log('[背词计划] 已从本地备份补回历史标记'); } }
+  }catch(e){}
+})();
 // 🔒 数据恢复迁移：把旧的位置id(S###-##)掌握标记迁到稳定的词元键（恢复被 build 重建打乱的历史标记）
 (function migrateSent(){
   const S=VOCAB.sent100; if(!S||!S.mig) return; let changed=false;
   for(const k of Object.keys(state)){
-    if(/^S\d{3}-\d{2}$/.test(k)){ const lem=S.mig[k]; if(lem && !state[lem]) state[lem]=state[k]; delete state[k]; changed=true; }
+    if(/^S\d{3}-\d{2}$/.test(k)){ const lem=S.mig[k]; if(lem){ if(!state[lem]) state[lem]=state[k]; delete state[k]; changed=true; } }   // 只在能映射时迁移+删旧键；映射不到的保留，绝不丢
   }
   if(changed){ save(M_KEY,state); console.log('[背词计划] 已把历史掌握标记迁移到词元键并恢复'); }
 })();
@@ -730,7 +757,7 @@ function openWordDetail(n, id, wmap, plain, lemkey){
   det.querySelectorAll('.swd-w,.swd-say').forEach(el=> el.onclick=e=>{ e.stopPropagation(); say(el.dataset.say); });
   det.querySelectorAll('.wc-mark').forEach(b=> b.onclick=()=>{
     const ns=b.dataset.m; state[key]=(state[key]===ns)?undefined:ns; if(state[key]===undefined) delete state[key];
-    save(M_KEY,state); const mk=state[key];
+    save(M_KEY,state); dbMark(key); const mk=state[key];
     view.querySelectorAll('.sw,.sw-chip').forEach(x=>{ if(x.dataset.lem===key){ x.classList.remove('ok','no'); if(mk) x.classList.add(mk); } });
     det.querySelector('.wc-mark.ok').classList.toggle('on',mk==='ok');
     det.querySelector('.wc-mark.no').classList.toggle('on',mk==='no');
@@ -960,7 +987,7 @@ function wireCards(box){
     function setState(ns){
       state[id] = (state[id]===ns) ? undefined : ns;   // 再点一次取消
       if(state[id]===undefined) delete state[id];
-      save(M_KEY, state);
+      save(M_KEY, state); dbMark(id);
       card.classList.remove('ok','no'); if(state[id]) card.classList.add(state[id]);
       card.querySelector('.wc-mark.ok').classList.toggle('on', state[id]==='ok');
       card.querySelector('.wc-mark.no').classList.toggle('on', state[id]==='no');
@@ -980,6 +1007,7 @@ function wireCards(box){
 
 /* ── 启动 ── */
 render();
+dbInit();          // 连接 cloud.db：拉取历史标记恢复，并把本地标记推上云
 </script>
 </body>
 </html>
