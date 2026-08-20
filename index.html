@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>沉浸式英语学习系统</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--wave:#2f6f8f}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:44px 22px 90px}
+  .hero h1{font-size:32px;margin:0 0 6px}
+  .hero .en{color:var(--accent);font-weight:600;font-size:15px;letter-spacing:.3px}
+  .hero .say{color:#5f574c;font-size:15px;margin:12px 0 4px;max-width:760px}
+  .hero .say b{color:var(--core)}
+  .pillar{margin-top:34px}
+  .pillar-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--line);padding-bottom:8px;margin-bottom:18px}
+  .pillar-head .t{font-size:20px;font-weight:800}
+  .pillar-head .d{font-size:13px;color:var(--muted)}
+  .pillar.wave .pillar-head .t{color:var(--wave)}
+  .pillar.exam .pillar-head .t{color:var(--accent)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;text-decoration:none;color:inherit;box-shadow:0 2px 12px rgba(150,120,70,.06);transition:.15s}
+  a.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(150,120,70,.15);border-color:#d8c8a8}
+  .card .emoji{font-size:34px}
+  .card h2{font-size:19px;margin:10px 0 4px}
+  .card .en{color:var(--accent);font-weight:600;font-size:13px}
+  .card p{color:#5f574c;font-size:13.5px;margin:7px 0 0}
+  .pillar.wave a.card{border-left:4px solid var(--wave)}
+  .pillar.wave a.card:hover{border-color:#a9c7d6}
+  .new{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:var(--wave);border-radius:8px;padding:1px 7px;margin-left:6px;vertical-align:middle}
+  .exam-cards{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+  .exam-cards a.card{padding:15px 17px}
+  .exam-cards .emoji{font-size:26px}
+  .exam-cards h2{font-size:16px;margin:6px 0 3px}
+  .exam-cards p{font-size:12.5px;margin:4px 0 0}
+  footer{margin-top:40px;color:#a89a86;font-size:12px;line-height:1.8}
+  .hint{background:#fff6e8;border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:12px;padding:12px 15px;font-size:13px;color:#5f574c;margin-top:20px}
+  .hint b{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>🌏 沉浸式英语学习系统</h1>
+    <div class="en">Immersive English · refresh my mind × a window to the world</div>
+    <div class="say">英语不只是一场考试。它是<b>刷新思维的方式</b>，是<b>与世界对话的窗口</b>。这里两条轴一起走：<b>应试</b>拿下托福这道门槛，<b>沉浸</b>把英语活成日常——写它、读它、用它思考。</div>
+  </div>
+
+  <div class="hint">
+    💡 <b>怎么用</b>：双击本页（<code>沉浸式英语学习系统 = 托福英语/index.html</code>）当总入口。<b>沉浸轴</b>三个模块是把英语变成生活的新习惯；<b>应试轴</b>是你冲 8/30 托福的既有系统。所有产出的生词都会自动汇入「背词计划」，一处背全。
+  </div>
+
+  <!-- 沉浸轴 -->
+  <div class="pillar wave">
+    <div class="pillar-head"><span class="t">🌊 沉浸轴</span><span class="d">把英语活成日常 · 写 / 读 / 想</span></div>
+    <div class="cards">
+      <a class="card" href="./日常表达/index.html">
+        <div class="emoji">✍️</div>
+        <h2>日常表达 · English Living<span class="new">NEW</span></h2>
+        <div class="en">Journal · Talk · Think in English</div>
+        <p>用英语写日记、记对话、记录你的思考与分析。你写 → cc 批改润色、点出更地道的说法 → 好表达与生词自动入库。攒下你自己的真实英语语料。</p>
+      </a>
+      <a class="card" href="./文化阅读/index.html">
+        <div class="emoji">📖</div>
+        <h2>文化阅读 · 世界之窗<span class="new">NEW</span></h2>
+        <div class="en">Read the World</div>
+        <p>非应试的真实阅读：文章、随笔、文化解读，双语对照 + 点词查词 + 文化背景注。把英语当成理解世界、和世界对话的窗口。</p>
+      </a>
+      <a class="card" href="./英语思维/index.html">
+        <div class="emoji">🧠</div>
+        <h2>英语思维 · English Mind<span class="new">NEW</span></h2>
+        <div class="en">Think Like a Native</div>
+        <p>专门拆英语的思维方式 vs 中文：先结论后展开、名词化、时态即世界观、直接 vs 含蓄……做成一张张「思维卡」+ 中英对照例子。这块最刷新脑子。</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- 应试轴 -->
+  <div class="pillar exam">
+    <div class="pillar-head"><span class="t">🎯 应试轴</span><span class="d">托福首考 2026-08-30 · 拿下门槛</span></div>
+    <div class="cards exam-cards">
+      <a class="card" href="./托福口语/index.html"><div class="emoji">🎙</div><h2>托福口语</h2><p>听力复述 + 面试问答 + 场景词汇，录音转写自动评分。</p></a>
+      <a class="card" href="./阅读训练系统/index.html"><div class="emoji">📚</div><h2>阅读训练</h2><p>左右分栏刷题 + 括号法长难句标注。</p></a>
+      <a class="card" href="./模考系统/index.html"><div class="emoji">📝</div><h2>模考系统</h2><p>对标 2026 新版 iBT，整场/分科/分题型。</p></a>
+      <a class="card" href="./写作系统/index.html"><div class="emoji">✒️</div><h2>写作系统</h2><p>连词成句 + 邮件/学术讨论模板。</p></a>
+      <a class="card" href="./单词记忆系统/index.html"><div class="emoji">🔤</div><h2>单词记忆 voca</h2><p>发音规律驱动的单词拆解卡 + 场景词汇。</p></a>
+      <a class="card" href="./背词计划/index.html"><div class="emoji">🎯</div><h2>背词计划</h2><p>全项目单词唯一汇聚点，一处背全。</p></a>
+      <a class="card" href="./模考复习系统/index.html"><div class="emoji">🔁</div><h2>模考复习</h2><p>每场模考生词专属背诵页 + 分析。</p></a>
+    </div>
+  </div>
+
+  <footer>
+    沉浸式英语学习系统 · 全部离线自包含、双击即用 · 生词统一汇入「背词计划」<br>
+    托福英语/ 仓库 · 每次变化必 commit
+  </footer>
+</div>
+</body>
+</html>

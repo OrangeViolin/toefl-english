@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文化阅读 · 世界之窗</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--wave:#2f6f8f}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding:30px 20px 80px}
+  .top{font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:26px;margin:10px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .lead{color:#5f574c;font-size:14px;margin:10px 0 18px;max-width:760px}
+  .how{background:#fbf7ee;border:1px solid var(--line);border-radius:12px;padding:11px 15px;font-size:13px;color:#5f574c;margin-bottom:24px}
+  .how b{color:var(--wave)}
+  .art{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:0 2px 12px rgba(150,120,70,.06);margin-bottom:22px}
+  .art .cat{font-size:12px;color:var(--wave);font-weight:800;letter-spacing:.5px}
+  .art h2{font-size:21px;margin:4px 0 2px}
+  .art .sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+  .para{margin:14px 0}
+  .para .p-en{font-family:Georgia,"Times New Roman",serif;font-size:16px;color:#2f2a24;cursor:pointer}
+  .para .p-en:hover{color:var(--core)}
+  .para .p-en .say{font-size:12px;color:var(--core);margin-left:4px;opacity:.6}
+  .para .p-zh{color:#7a7266;font-size:13.5px;margin-top:4px}
+  .notes{background:#f3f7f9;border-left:4px solid var(--wave);border-radius:0 10px 10px 0;padding:11px 15px;margin:16px 0 10px}
+  .notes .h{font-size:12px;font-weight:800;color:var(--wave);letter-spacing:.5px;margin-bottom:5px}
+  .notes li{font-size:13.5px;margin:3px 0;color:#4d463c}
+  .expr{margin-top:12px}
+  .expr .h{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.5px;margin-bottom:5px}
+  .chip{display:inline-block;background:#fff6e8;border:1px solid #f0d9b0;border-radius:8px;padding:3px 11px;margin:3px 5px 3px 0;font-size:13px;font-family:Georgia,serif;cursor:pointer}
+  .chip:hover{background:#fdeccd}
+  .chip .zh{font-family:-apple-system,sans-serif;color:var(--muted);font-size:11.5px;margin-left:4px}
+  .foot{margin-top:20px;color:#a89a86;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="../index.html">← 沉浸式英语学习系统</a></div>
+  <h1>📖 文化阅读 · 世界之窗</h1>
+  <div class="en">Read the world — English as a window, not a test</div>
+  <div class="lead">非应试的真实阅读：文章、随笔、文化解读。目标不是做题，是<b>透过英语理解世界怎么想、怎么活</b>，把语言变成和世界对话的窗口。</div>
+  <div class="how">
+    <b>怎么读</b>：先只读英文、能懂多少懂多少 → 再对中文校准 → 点<b>📌文化注</b>补背景 → 把<b>值得记的表达</b>点一下（复制入库）。点英文段落可朗读。
+  </div>
+
+  <div id="lib"></div>
+  <div class="foot">世界之窗 · 首篇种子文，后续持续加（话术「文化阅读加一篇：&lt;主题 或 文章链接&gt;」）· 离线自包含</div>
+</div>
+
+<script>
+const ARTICLES = [
+ {
+  cat:"文化 · 社交", title:"“How are you?” —— 一句不等答案的问候",
+  sub:"为什么美国人问“你好吗”却不想听你诉苦？",
+  paras:[
+   {en:`In the US, "How are you?" or "How's it going?" is usually not a real question. It's a greeting — a kind of verbal handshake. The expected reply is short and upbeat: "Good, thanks. You?"`,
+    zh:`在美国，"How are you?"、"How's it going?" 通常不是真的在提问，而是一句问候——像一次口头的握手。期待的回答简短又积极："挺好的，谢谢。你呢？"`},
+   {en:`To a newcomer, this can feel fake: they asked, but they don't seem to want to hear about your bad day. Yet it isn't dishonesty. It's a social lubricant — a way to signal goodwill without demanding real intimacy.`,
+    zh:`对刚来的人，这会显得虚假：明明问了，却又不想听你今天有多糟。但这并不是不真诚，而是一种社交润滑剂——在不强求亲密的前提下，释放善意。`},
+   {en:`Real questions come later, with people who have earned them. Add one word and the greeting flips into a genuine ask: "How are you, really?"`,
+    zh:`真正的关心留给日后、留给值得的人。只要加一个词，这句问候就翻转成真心的询问："你到底还好吗？"（really）。`},
+   {en:`The lesson is to match the register. A cashier's "How are you?" wants "Good, you?" A close friend's wants the truth. Same words, different worlds.`,
+    zh:`要领是<b>看场合（register）</b>：收银员的"How are you?"要的是"挺好，你呢？"；挚友的那句，要的是实话。同样的词，两个世界。`},
+  ],
+  notes:[
+   `"How are you?" 常是<b>问候</b>不是提问，回答宜<b>短且积极</b>（Good, thanks. You?）。`,
+   `<b>social lubricant 社交润滑剂</b>：西方寒暄的功能=释放善意、不强求亲密，理解这点就不会觉得"假"。`,
+   `<b>register 语域</b>：同一句话对收银员 vs 挚友，期待的答案不同——地道，就是会挑场合。`,
+  ],
+  expr:[
+   {en:"a verbal handshake", zh:"口头的握手（寒暄）"},
+   {en:"a social lubricant", zh:"社交润滑剂"},
+   {en:"match the register", zh:"看场合/亲疏说话"},
+   {en:"How are you, really?", zh:"（加 really）真心的关心"},
+  ],
+ },
+];
+const lib = document.getElementById('lib');
+lib.innerHTML = ARTICLES.map(a=>`
+ <div class="art">
+   <div class="cat">${a.cat}</div>
+   <h2>${a.title}</h2>
+   <div class="sub">${a.sub}</div>
+   ${a.paras.map(p=>`<div class="para"><div class="p-en" onclick="sayP(this)">${p.en}<span class="say">🔊</span></div><div class="p-zh">${p.zh}</div></div>`).join('')}
+   <div class="notes"><div class="h">📌 文化注</div><ul style="margin:0;padding-left:18px">${a.notes.map(n=>'<li>'+n+'</li>').join('')}</ul></div>
+   <div class="expr"><div class="h">💬 值得记的表达（点一下复制入库）</div>${a.expr.map(e=>`<span class="chip" onclick="cp('${e.en.replace(/'/g,"\\'")}')">${e.en}<span class="zh">${e.zh}</span></span>`).join('')}</div>
+ </div>`).join('');
+
+let VOICE=null;
+function pv(){const vs=speechSynthesis.getVoices();VOICE=vs.find(v=>/Samantha|Ava|Google US English|US English/i.test(v.name))||vs.find(v=>/en-US/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang));}
+if('speechSynthesis' in window){pv();speechSynthesis.onvoiceschanged=pv;}
+function sayP(el){const t=el.childNodes[0].textContent.trim();if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.94;if(VOICE)u.voice=VOICE;speechSynthesis.speak(u);}
+function cp(s){navigator.clipboard&&navigator.clipboard.writeText("写作表达库加："+s);const el=event.target.closest('.chip');const o=el.style.background;el.style.background='#cfe0e8';setTimeout(()=>el.style.background=o,500);}
+</script>
+</body>
+</html>

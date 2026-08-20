@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日常表达 · English Living</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--wave:#2f6f8f}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:30px 20px 80px}
+  .top{font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:26px;margin:10px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .lead{color:#5f574c;font-size:14px;margin:10px 0 20px;max-width:760px}
+  .loop{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:22px}
+  .loop h3{margin:0 0 10px;font-size:15px;color:var(--wave)}
+  .steps{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+  .step{flex:1;min-width:150px;background:#f3f7f9;border:1px solid #cfe0e8;border-radius:12px;padding:10px 12px;font-size:13px}
+  .step b{color:var(--wave)}
+  .step .n{font-size:11px;color:var(--wave);font-weight:800}
+  .say-cmd{background:#fff6e8;border:1px dashed var(--accent);border-radius:10px;padding:8px 12px;font-size:13px;margin-top:12px}
+  .say-cmd code{background:#efe8d8;padding:1px 7px;border-radius:5px;font-weight:700;color:var(--accent)}
+  h2.sec{font-size:17px;margin:26px 0 6px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+  .cat{font-size:13px;color:var(--wave);font-weight:800;margin:16px 0 8px}
+  .prompts{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+  .p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:14px;cursor:pointer;transition:.15s;position:relative}
+  .p:hover{border-color:var(--wave);background:#f7fbfc}
+  .p .en{font-family:Georgia,"Times New Roman",serif;color:#2f2a24;font-weight:400;display:block;font-size:14.5px}
+  .p .zh{color:var(--muted);font-size:12px;margin-top:3px}
+  .p .copy{position:absolute;top:8px;right:10px;font-size:11px;color:var(--wave);opacity:0;transition:.15s}
+  .p:hover .copy{opacity:1}
+  .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);background:var(--wave);color:#fff;padding:8px 18px;border-radius:20px;font-size:13px;opacity:0;transition:.2s;pointer-events:none}
+  .toast.on{opacity:1}
+  .note{background:#fbf7ee;border:1px solid var(--line);border-radius:12px;padding:12px 15px;font-size:13px;color:#5f574c;margin-top:22px}
+  .note b{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="../index.html">← 沉浸式英语学习系统</a></div>
+  <h1>✍️ 日常表达 · English Living</h1>
+  <div class="en">Journal · Talk · Think in English</div>
+  <div class="lead">用英语写日记、记对话、记录你的思考与分析——不是为了考试，是让英语长进你的日常里。核心是一个<b>输出→反馈</b>的闭环：你先写，cc 再帮你改得更地道，并把好表达和生词留下来。</div>
+
+  <div class="loop">
+    <h3>🔄 每天的闭环</h3>
+    <div class="steps">
+      <div class="step"><span class="n">1 · 写</span><br><b>你用英语写</b>——日记 / 对话 / 一段思考。别怕错，先写出来（呼应你口语心得：<b>说满、别卡、别纠结语法</b>）。</div>
+      <div class="step"><span class="n">2 · 批改</span><br><b>cc 批改润色</b>——保留你的意思，指出更地道的说法、常见中式英语、语法与用词。</div>
+      <div class="step"><span class="n">3 · 抽取</span><br><b>抽好表达 + 生词</b>——本次值得记的句型/搭配 → 写作表达库；生词 → 背词计划。</div>
+      <div class="step"><span class="n">4 · 归档</span><br><b>存成日期语料</b>——原文 + 批改版存进 <code>日记/</code>，越攒越是你自己的语料库。</div>
+    </div>
+    <div class="say-cmd">💬 话术：直接对 cc 说 <code>英语日记：&lt;你写的英文&gt;</code>（或「记一段对话 / 记一段思考」）。cc 就走上面 4 步。</div>
+  </div>
+
+  <h2 class="sec">🎯 今天写点什么？（点任意一条复制，然后用英语作答发给 cc）</h2>
+  <div id="bank"></div>
+
+  <div class="note">
+    <b>📂 语料归档</b>：每篇存到 <code>日常表达/日记/YYYY-MM-DD-主题.md</code>，含「原文 / cc 批改 / 抽取的表达&生词 / 是否已汇入背词」。示例见 <code>日记/2026-08-21-示例.md</code>。<br>
+    <b>🎯 只写、不背也行</b>：这个模块重点是<b>把英语用起来</b>——哪怕每天两三句，坚持比完美重要。
+  </div>
+</div>
+<div class="toast" id="toast">已复制，去用英语作答 ✍️</div>
+
+<script>
+const BANK = [
+  {cat:"📓 日记 Journal", items:[
+    {en:"What's one small thing that made today better — or worse?", zh:"今天有哪件小事让你的一天更好、或更糟？"},
+    {en:"Describe a moment today when you felt something strongly. What set it off?", zh:"描述今天你情绪强烈的一刻，是什么引发的？"},
+    {en:"What did you spend the most time on today? Was it worth it?", zh:"今天你花时间最多的是什么？值得吗？"},
+    {en:"Write about one decision you made today, big or small — and why.", zh:"写今天你做的一个决定，大小都行，为什么这么定。"},
+    {en:"One thing you're grateful for, and one thing that annoyed you today.", zh:"今天一件感恩的事 + 一件让你烦的事。"},
+  ]},
+  {cat:"💬 对话 Talk", items:[
+    {en:"Recreate a real conversation you had today — write it as an English dialogue.", zh:"把今天真实发生的一段对话，用英语写成剧本。"},
+    {en:"Imagine explaining your day to a foreign friend. What would you say?", zh:"想象你在跟外国朋友讲今天，你会怎么说？"},
+    {en:"Write the exchange: order a coffee, ask for directions, or make a complaint.", zh:"写一段：点咖啡 / 问路 / 投诉，的完整对话。"},
+    {en:"Argue both sides of something you can't decide on right now.", zh:"就一件你正纠结的事，正反两方各说一段。"},
+  ]},
+  {cat:"🧩 思考·分析 Think & Analyze", items:[
+    {en:"Explain something you learned today as if teaching a 10-year-old.", zh:"把今天学到的一样东西，讲给一个十岁小孩听。"},
+    {en:"A belief you recently changed your mind about — walk through why.", zh:"最近你改变看法的一个观念，讲讲为什么变了。"},
+    {en:"Summarize an article or video you saw today in five English sentences.", zh:"把今天看的一篇文章/视频，用五句英语总结。"},
+    {en:"If money were no object, what would you build? Reason it out.", zh:"如果钱不是问题，你会造什么？把理由捋清楚。"},
+  ]},
+];
+const box = document.getElementById('bank');
+box.innerHTML = BANK.map(g =>
+  '<div class="cat">'+g.cat+'</div><div class="prompts">'+
+  g.items.map(p=>'<div class="p" onclick="cp(this)"><span class="copy">📋 复制</span><span class="en">'+p.en+'</span><span class="zh">'+p.zh+'</span></div>').join('')+
+  '</div>').join('');
+let tt;
+function cp(el){
+  const en = el.querySelector('.en').textContent;
+  navigator.clipboard && navigator.clipboard.writeText("英语日记："+en+"\n\n(我的英文作答：)");
+  const t=document.getElementById('toast'); t.classList.add('on'); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove('on'),1600);
+}
+</script>
+</body>
+</html>

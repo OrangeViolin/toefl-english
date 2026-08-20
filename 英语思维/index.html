@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英语思维 · English Mind</title>
+<style>
+  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--wave:#2f6f8f;--zh:#b0603f}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:30px 20px 80px}
+  .top{font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:26px;margin:10px 0 2px}
+  .en{color:var(--accent);font-weight:600;font-size:14px}
+  .lead{color:#5f574c;font-size:14px;margin:10px 0 20px;max-width:780px}
+  .lead b{color:var(--wave)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 2px 10px rgba(150,120,70,.06);border-top:4px solid var(--wave)}
+  .card .no{font-size:12px;color:var(--wave);font-weight:800}
+  .card h2{font-size:18px;margin:2px 0 2px}
+  .card .ename{color:var(--accent);font-size:13px;font-weight:600;margin-bottom:8px}
+  .essence{background:#f3f7f9;border-radius:10px;padding:8px 11px;font-size:13.5px;color:#3a4a52;margin-bottom:10px}
+  .ex{border-left:3px solid var(--line);padding:2px 0 2px 11px;margin:8px 0}
+  .ex .lab{font-size:11px;font-weight:800;letter-spacing:.5px}
+  .ex.zh .lab{color:var(--zh)} .ex.en .lab{color:var(--core)}
+  .ex .t{font-size:14.5px}
+  .ex.en .t{font-family:Georgia,"Times New Roman",serif;cursor:pointer}
+  .ex.en .t:hover{color:var(--core)}
+  .ex .say{font-size:12px;color:var(--core);margin-left:6px}
+  .why{font-size:12.5px;color:#5f574c;margin-top:8px;border-top:1px dashed var(--line);padding-top:7px}
+  .why b{color:var(--accent)}
+  .foot{margin-top:26px;color:#a89a86;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="../index.html">← 沉浸式英语学习系统</a></div>
+  <h1>🧠 英语思维 · English Mind</h1>
+  <div class="en">Think like a native — not just translate</div>
+  <div class="lead">很多"英语说不地道"，根子不在词，在<b>思维方式</b>：英语和中文对"怎么组织一句话、先说什么、把什么当主角"有不同的默认。这里每张卡拆一个思维模式，给<b>中 ↔ 英对照</b>，让你从"翻译中文"切换到"用英语想"。点英文例句可听发音。</div>
+  <div class="grid" id="grid"></div>
+  <div class="foot">思维卡 · 首批 12 张，后续持续加（话术「英语思维加一张：&lt;模式&gt;」）· 离线自包含</div>
+</div>
+
+<script>
+const CARDS = [
+ {t:"结论先行", e:"End-focus / front-loading", essence:"英语先抛主句/结论，再挂细节与原因；中文常把铺垫、原因放前面，结论压后。",
+  zh:"因为生病了，所以我没来。", en:"I didn't come, because I was sick.",
+  why:"写句子先问：<b>我的主张是什么？</b>——把它放句首，别让读者等。"},
+ {t:"主语驱动", e:"Subject-prominent", essence:"英语句子几乎必须有主语，没有真主语就用 it / there 占位；中文可以没有主语。",
+  zh:"下雨了。/ 有很多人。", en:"It's raining. / There are a lot of people.",
+  why:"张口先定<b>主语</b>。想说“下雨了”别卡在没主语——用 <b>it</b>。"},
+ {t:"名词化", e:"Nominalization", essence:"英语爱把动作/过程压成名词，显得客观、正式、信息密；中文偏爱一连串动词。",
+  zh:"我们没能按时完成，导致项目失败。", en:"The failure to finish on time led to the project's collapse.",
+  why:"想显正式/学术，把动词变名词：decide→<b>decision</b>、fail→<b>failure</b>。"},
+ {t:"时态即世界观", e:"Tense = worldview", essence:"英语靠时态精确定位“这件事和现在什么关系”；中文靠“了/过/正在”等词，模糊得多。",
+  zh:"我在这住好几年了。", en:"I've lived here for years.",
+  why:"现在完成 = <b>过去发生、延续到现在</b>。用 have done 表达“到现在为止的积累”。"},
+ {t:"直接表达", e:"Directness / low-context", essence:"英语偏低语境：把意思、原因明说出来更礼貌高效；中文高语境，靠暗示与关系读空气。",
+  zh:"（暗示）这个有点难办……", en:"I'm afraid I can't do this, because …",
+  why:"请求/拒绝要<b>明说 + 给理由</b>：Could you… because…；别指望对方猜。"},
+ {t:"逻辑连接显性", e:"Explicit connectors", essence:"英语靠 however / therefore / although 把逻辑关系明标在表面（形合）；中文常靠意思自然衔接（意合）。",
+  zh:"他很累，还是做完了。", en:"He was tired; however, he finished it.",
+  why:"句间关系要<b>显性标出</b>——转折 however、因果 therefore、让步 although。"},
+ {t:"冠词与可数", e:"Articles & countability", essence:"英语强制区分 a / the / 复数——这是“泛指 vs 特指 vs 这一个”的思维刻度；中文没有这套。",
+  zh:"狗是忠诚的动物。", en:"A dog is a loyal animal. / Dogs are loyal.",
+  why:"每个名词都先想：<b>泛指还是特指？可数吗？</b> 定 a/the/复数。"},
+ {t:"被动求客观", e:"Passive for objectivity", essence:"英语（尤其学术/正式）爱用被动淡化“谁做的”，突出“发生了什么”；中文更常保留施动者。",
+  zh:"（有人）犯了些错。", en:"Mistakes were made.",
+  why:"想客观、不点名，用<b>被动</b>：被观察 was observed、被认为 is considered。"},
+ {t:"具体动词优先", e:"Concrete verbs", essence:"英语爱用具体、有画面的动词（grab / sneak / glance），少用泛动词 + 副词；中文常“做/进行 + 名词”。",
+  zh:"他快速地拿走了它。", en:"He grabbed it.",
+  why:"把“quickly take”换成一个<b>具体动词</b> grab；画面感就是地道感。"},
+ {t:"情态即态度", e:"Modality = stance", essence:"英语用 might / should / must / would 给“可能性、义务、语气”打精细刻度；中文靠“可能/应该/一定”等词，颗粒更粗。",
+  zh:"这大概行吧。", en:"This might work. / This should work.",
+  why:"下判断留<b>刻度</b>：不确定 might、有把握 should、强义务 must。"},
+ {t:"一句一核心", e:"One idea per sentence", essence:"英语偏爱短句、一句一主张，逻辑靠连接词串起来；中文能一个长句层层递进。",
+  zh:"（一长句）……", en:"It was late. I was tired. So I left.",
+  why:"憋不出长难句就<b>拆成短句</b>——短而清晰远胜长而乱。"},
+ {t:"平行结构", e:"Parallelism", essence:"英语的审美：并列的成分要用同样的语法形式，读起来有节奏、有力量。",
+  zh:"民有、民治、民享。", en:"of the people, by the people, for the people.",
+  why:"列举/对比时<b>保持同形</b>：reading, writing, and speaking（都用 -ing）。"},
+];
+const grid = document.getElementById('grid');
+grid.innerHTML = CARDS.map((c,i)=>`
+  <div class="card">
+    <div class="no">思维 ${String(i+1).padStart(2,'0')}</div>
+    <h2>${c.t}</h2>
+    <div class="ename">${c.e}</div>
+    <div class="essence">${c.essence}</div>
+    <div class="ex zh"><span class="lab">中文思维</span><div class="t">${c.zh}</div></div>
+    <div class="ex en"><span class="lab">英语思维</span><div class="t" onclick="say(this)">${c.en}<span class="say">🔊</span></div></div>
+    <div class="why">💡 ${c.why}</div>
+  </div>`).join('');
+
+let VOICE=null;
+function pickVoice(){
+  const vs=speechSynthesis.getVoices();
+  VOICE = vs.find(v=>/Samantha|Ava|Google US English|US English/i.test(v.name)) || vs.find(v=>/en-US/i.test(v.lang)) || vs.find(v=>/^en/i.test(v.lang));
+}
+if('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }
+function say(el){
+  const txt = el.childNodes[0].textContent.trim();
+  if(!('speechSynthesis' in window)) return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(txt); u.lang='en-US'; u.rate=.92; if(VOICE)u.voice=VOICE;
+  speechSynthesis.speak(u);
+}
+</script>
+</body>
+</html>
