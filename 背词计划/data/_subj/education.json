@@ -1,0 +1,749 @@
+[
+  {
+    "w": "curriculum",
+    "p": "/kəˈrɪkjələm/",
+    "d": "n. 课程，（学校的）全部课程（复数 curricula）",
+    "levels": ["托福"],
+    "core": "一所学校或一个专业开设的全部课程的总和与安排。",
+    "ety": "拉丁语 curriculum「跑道、赛程」，源自 currere「跑」；求学如同在一条设定好的「跑道」上跑完全程。",
+    "ph": "curr（跑）+ iculum——同根 current（水流）、occur（发生）都含「跑、流动」。",
+    "tip": "把 curriculum 想成一条「课程跑道 (curr = run)」，一门门课就是跑道上的一个个栏。",
+    "xex": [
+      {"en": "The new curriculum places greater emphasis on critical thinking than on rote memorization.", "zh": "新课程更强调批判性思维，而非死记硬背。", "src": "造句"},
+      {"en": "core / school curriculum 核心 / 学校课程", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "syllabus", "ipa": "/ˈsɪləbəs/", "note": "教学大纲，指单门课的具体内容清单；curriculum 是整个专业/学校的全部课程体系，范围更大"}
+    ],
+    "nu": "curriculum = 一个教育项目里所有课程的整体规划。",
+    "rootfam": [
+      {"root": "curr/cur/cours", "meaning": "跑，流动", "words": [
+        {"w": "curriculum", "g": "课程（全部课程）"},
+        {"w": "current", "g": "当前的；水流，电流"},
+        {"w": "occur", "g": "发生（跑来）"},
+        {"w": "recur", "g": "复发，反复出现"},
+        {"w": "excursion", "g": "远足，短途旅行"},
+        {"w": "course", "g": "课程；路线，进程"}
+      ]}
+    ]
+  },
+  {
+    "w": "pedagogy",
+    "p": "/ˈpedəɡoʊdʒi/",
+    "d": "n. 教育学，教学法（教学的理论与方法）",
+    "levels": ["托福"],
+    "core": "研究「怎么教」的学问——教师用什么方法把知识传给学生。",
+    "ety": "希腊语 paidagōgos，指领着孩子上学的奴仆：pais/paid「儿童」+ agōgos「引领者」（agein 引导）；字面「引领儿童（去学习）」。",
+    "ph": "ped（儿童，希腊语 paid）+ agog（引领）+ y——注意此 ped 非拉丁语「脚」的 ped。",
+    "tip": "pedagogy = 「牵着 (agog) 孩子 (ped) 走」的艺术，就是教学法。",
+    "xex": [
+      {"en": "Modern pedagogy favors active learning over passive lecturing.", "zh": "现代教学法更青睐主动学习而非被动听讲。", "src": "造句"},
+      {"en": "teaching methods and pedagogy 教学方法与教学法", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "didactics", "ipa": "/daɪˈdæktɪks/", "note": "教学法，更偏理论、系统化的「传授术」；pedagogy 更常用，涵盖理论与实践"}
+    ],
+    "nu": "pedagogy = 关于教学的方法与理论体系。",
+    "rootfam": [
+      {"root": "agog/act", "meaning": "引导，驱动（希腊语 agein）", "words": [
+        {"w": "pedagogy", "g": "教育学，教学法"},
+        {"w": "demagogue", "g": "煽动者（引领民众者）"},
+        {"w": "synagogue", "g": "犹太会堂（聚集之所）"}
+      ]}
+    ]
+  },
+  {
+    "w": "literacy",
+    "p": "/ˈlɪtərəsi/",
+    "d": "n. 读写能力；（某领域的）基本素养",
+    "levels": ["托福"],
+    "core": "能读会写的能力，引申为对某领域的基本掌握（如数字素养）。",
+    "ety": "拉丁语 littera「字母、文字」+ -acy（表状态、能力）；字面「识字的状态」。反义 illiteracy（文盲）。",
+    "ph": "liter（字母，文字）+ acy——同根 literature（文学）、literal（字面的）。",
+    "tip": "literacy 里藏着 letter（字母）：认得字母、能读能写就是 literacy。",
+    "xex": [
+      {"en": "Rising literacy rates were closely tied to the spread of public schooling.", "zh": "识字率的上升与公共教育的普及密切相关。", "src": "造句"},
+      {"en": "adult / digital literacy 成人 / 数字素养", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "proficiency", "ipa": "/prəˈfɪʃnsi/", "note": "熟练，精通，强调达到较高水平；literacy 更强调「具备读写这一基本能力」"}
+    ],
+    "nu": "literacy = 读写的基本能力，也指某方面的基本素养。",
+    "rootfam": [
+      {"root": "liter", "meaning": "字母，文字", "words": [
+        {"w": "literacy", "g": "读写能力"},
+        {"w": "literature", "g": "文学"},
+        {"w": "literal", "g": "字面的"},
+        {"w": "literary", "g": "文学的"},
+        {"w": "illiterate", "g": "不识字的，文盲的"},
+        {"w": "obliterate", "g": "抹去，删除（涂掉文字）"}
+      ]}
+    ]
+  },
+  {
+    "w": "assessment",
+    "p": "/əˈsesmənt/",
+    "d": "n. 评估，评价；（对学习成果的）测评",
+    "levels": ["托福"],
+    "core": "对学习效果、能力或价值做出的判断与衡量。",
+    "ety": "拉丁语 assidere「坐在旁边（协助判定税额）」：ad-「向」+ sedere「坐」；法官旁坐评定 → 评估。",
+    "ph": "as（=ad 向）+ sess（坐，sed 的变体）+ ment——同根 session（坐着开会）、sedentary（久坐的）。",
+    "tip": "assessment = 评估者「坐 (sess) 到旁边」仔细打量给分。",
+    "xex": [
+      {"en": "Continuous assessment reduces the pressure of a single final exam.", "zh": "持续性评估减轻了单次期末考试的压力。", "src": "造句"},
+      {"en": "formative / self-assessment 形成性 / 自我评估", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "evaluation", "ipa": "/ɪˌvæljuˈeɪʃn/", "note": "评价，几乎同义，稍偏「判定价值/优劣」；assessment 更常用于教育测评语境"}
+    ],
+    "nu": "assessment = 对学习成果或价值的系统性衡量与判断。",
+    "rootfam": [
+      {"root": "sess/sed/sid", "meaning": "坐", "words": [
+        {"w": "assessment", "g": "评估（坐旁评定）"},
+        {"w": "session", "g": "（开会/上课的）一段时间"},
+        {"w": "sedentary", "g": "久坐的"},
+        {"w": "reside", "g": "居住（坐落于）"},
+        {"w": "preside", "g": "主持（坐在前）"}
+      ]}
+    ]
+  },
+  {
+    "w": "cognition",
+    "p": "/kɑːɡˈnɪʃn/",
+    "d": "n. 认知，认识（获取与处理知识的心理过程）",
+    "levels": ["托福"],
+    "core": "大脑感知、注意、记忆、思考等一切「获取知识」的心理活动总称。",
+    "ety": "拉丁语 cognoscere「认识、知晓」：co-（加强）+ gnoscere「知道」（与 know 同源）；名词化为 cognition。",
+    "ph": "cogn（知道）+ ition——同根 recognize（再认识→认出）、cognitive（认知的）。",
+    "tip": "cogn 就是「know 的拉丁版」：cognition = 一切「知」的心理过程。",
+    "xex": [
+      {"en": "Sleep plays a crucial role in cognition, especially in memory consolidation.", "zh": "睡眠在认知中起关键作用，尤其是在记忆巩固方面。", "src": "造句"},
+      {"en": "human / social cognition 人类 / 社会认知", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "perception", "ipa": "/pərˈsepʃn/", "note": "感知，侧重感官接收信息这一步；cognition 是更宽的概念，包含感知、记忆、推理全过程"}
+    ],
+    "nu": "cognition = 大脑加工知识的全部心理过程。",
+    "rootfam": [
+      {"root": "cogn/gno", "meaning": "知道，认识", "words": [
+        {"w": "cognition", "g": "认知"},
+        {"w": "cognitive", "g": "认知的"},
+        {"w": "recognize", "g": "认出，识别"},
+        {"w": "incognito", "g": "隐姓埋名的"},
+        {"w": "diagnose", "g": "诊断（彻底认清）"},
+        {"w": "ignorant", "g": "无知的（不知道）"}
+      ]}
+    ]
+  },
+  {
+    "w": "cognitive",
+    "p": "/ˈkɑːɡnətɪv/",
+    "d": "a. 认知的，与认知有关的",
+    "levels": ["托福"],
+    "core": "与思考、学习、记忆等心理认知过程相关的。",
+    "ety": "与 cognition 同源，拉丁语 cognoscere「认识」+ -ive（形容词后缀）。",
+    "ph": "cogn（知道）+ itive——听力里常见 cognitive development / process。",
+    "tip": "cognition 的形容词：凡是脑子「认知」层面的，都叫 cognitive。",
+    "xex": [
+      {"en": "Children undergo rapid cognitive development between ages two and seven.", "zh": "儿童在两到七岁间经历快速的认知发展。", "src": "造句"},
+      {"en": "cognitive load / bias 认知负荷 / 认知偏差", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "intellectual", "ipa": "/ˌɪntəˈlektʃuəl/", "note": "智力的，偏「运用理性思维」；cognitive 更学术，涵盖感知记忆等底层心理机制"}
+    ],
+    "nu": "cognitive = 涉及认知（思考、学习、记忆）过程的。",
+    "rootfam": [
+      {"root": "cogn", "meaning": "知道，认识", "words": [
+        {"w": "cognitive", "g": "认知的"},
+        {"w": "cognition", "g": "认知"},
+        {"w": "recognize", "g": "认出"},
+        {"w": "cognizant", "g": "察觉到的，认识到的"}
+      ]}
+    ]
+  },
+  {
+    "w": "comprehension",
+    "p": "/ˌkɑːmprɪˈhenʃn/",
+    "d": "n. 理解，领会；理解力",
+    "levels": ["托福"],
+    "core": "把读到或听到的内容真正弄懂的能力——阅读/听力测试的核心目标。",
+    "ety": "拉丁语 comprehendere「抓住、把握」：com-（一起）+ prehendere「抓」；把意思「一把抓住」= 理解。",
+    "ph": "com（一起）+ prehen（抓）+ sion——同根 comprehend、apprehend（抓住/理解）。",
+    "tip": "理解 = 把散落的意思「一起 (com) 抓 (prehend) 住」，攥成一整块。",
+    "xex": [
+      {"en": "Rereading the passage improved her comprehension of the argument.", "zh": "重读这段文字提高了她对该论点的理解。", "src": "造句"},
+      {"en": "reading / listening comprehension 阅读 / 听力理解", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "understanding", "ipa": "/ˌʌndərˈstændɪŋ/", "note": "理解，最普通的说法；comprehension 更正式、更常用于教育测评（理解力）"}
+    ],
+    "nu": "comprehension = 对所读所听内容的理解与把握。",
+    "rootfam": [
+      {"root": "prehend/prehen", "meaning": "抓，握", "words": [
+        {"w": "comprehension", "g": "理解"},
+        {"w": "comprehend", "g": "理解，领会"},
+        {"w": "apprehend", "g": "逮捕；领会"},
+        {"w": "apprehensive", "g": "忧虑的（抓着不安）"},
+        {"w": "reprehend", "g": "谴责"}
+      ]}
+    ]
+  },
+  {
+    "w": "comprehend",
+    "p": "/ˌkɑːmprɪˈhend/",
+    "d": "v. 理解，领会；包括",
+    "levels": ["托福"],
+    "core": "彻底弄懂某事物的含义或原理。",
+    "ety": "拉丁语 comprehendere「一把抓住」：com-（一起）+ prehendere「抓」。",
+    "ph": "com（一起）+ prehend（抓）——把意思整个抓住。",
+    "tip": "comprehend 比 understand 更正式：把道理「攥 (prehend) 到手里」才算真懂。",
+    "xex": [
+      {"en": "Beginners often fail to comprehend rapid native speech.", "zh": "初学者常常无法听懂母语者的快速讲话。", "src": "造句"},
+      {"en": "fully / hardly comprehend 完全 / 几乎无法理解", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "grasp", "ipa": "/ɡræsp/", "note": "领会，抓住（要点），口语化且形象；comprehend 更正式、更完整地理解"}
+    ],
+    "nu": "comprehend = 充分理解、把握含义。",
+    "rootfam": [
+      {"root": "prehend", "meaning": "抓，握", "words": [
+        {"w": "comprehend", "g": "理解"},
+        {"w": "apprehend", "g": "领会；逮捕"},
+        {"w": "prehensile", "g": "（尾巴等）能抓握的"},
+        {"w": "reprehensible", "g": "该受谴责的"}
+      ]}
+    ]
+  },
+  {
+    "w": "motivation",
+    "p": "/ˌmoʊtɪˈveɪʃn/",
+    "d": "n. 动机，积极性；激励",
+    "levels": ["托福"],
+    "core": "推动一个人去学习或行动的内在或外在驱动力。",
+    "ety": "拉丁语 movere「移动」→ motivus「起推动作用的」+ -ation；能「推着人动」的东西即动机。",
+    "ph": "mot（移动）+ iv + ation——同根 motion（运动）、motive（动机）、emotion（情绪）。",
+    "tip": "motivation = 让你从沙发上「动 (mot) 起来」的那股劲。",
+    "xex": [
+      {"en": "Intrinsic motivation—curiosity itself—predicts long-term learning better than rewards.", "zh": "内在动机——即好奇心本身——比奖励更能预测长期学习效果。", "src": "造句"},
+      {"en": "intrinsic / lack of motivation 内在动机 / 缺乏动力", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "incentive", "ipa": "/ɪnˈsentɪv/", "note": "激励，诱因，多指外部的刺激（奖金等）；motivation 涵盖内在与外在的整体驱动力"}
+    ],
+    "nu": "motivation = 驱使人去做某事的内外动力。",
+    "rootfam": [
+      {"root": "mot/mov", "meaning": "移动", "words": [
+        {"w": "motivation", "g": "动机"},
+        {"w": "motivate", "g": "激励"},
+        {"w": "motive", "g": "动机"},
+        {"w": "motion", "g": "运动"},
+        {"w": "promote", "g": "促进（向前推）"},
+        {"w": "emotion", "g": "情绪（内心的波动）"}
+      ]}
+    ]
+  },
+  {
+    "w": "motivate",
+    "p": "/ˈmoʊtɪveɪt/",
+    "d": "vt. 激励，激发（学习/行动的兴趣）",
+    "levels": ["托福"],
+    "core": "给人提供动力，让他愿意去学、去做。",
+    "ety": "同 motivation，源自拉丁语 movere「移动」；使某人「动起来」。",
+    "ph": "mot（移动）+ ivate——让人产生 motion（行动）的欲望。",
+    "tip": "motivate 就是把人「推动 (mot)」起来的动作。",
+    "xex": [
+      {"en": "Good teachers motivate students by connecting lessons to real life.", "zh": "好老师通过把课程与现实生活联系起来来激励学生。", "src": "造句"},
+      {"en": "motivate someone to do 激励某人去做某事", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "inspire", "ipa": "/ɪnˈspaɪər/", "note": "激励，鼓舞，偏「点燃热情、赋予灵感」；motivate 更强调给出行动的理由与驱动力"}
+    ],
+    "nu": "motivate = 激发某人行动或学习的动力。",
+    "rootfam": [
+      {"root": "mot", "meaning": "移动", "words": [
+        {"w": "motivate", "g": "激励"},
+        {"w": "motivation", "g": "动机"},
+        {"w": "demote", "g": "降职（向下移）"},
+        {"w": "locomotive", "g": "机车，火车头"}
+      ]}
+    ]
+  },
+  {
+    "w": "retention",
+    "p": "/rɪˈtenʃn/",
+    "d": "n. 保持，保留；记忆保持力",
+    "levels": ["托福"],
+    "core": "把学到的信息留在记忆里、不遗忘的能力（也指学生留存率）。",
+    "ety": "拉丁语 retinere「往回拉住」：re-（向后）+ tenere「握住」；把东西「拽住不放」= 保留。",
+    "ph": "re（向后）+ tent（握住，ten 的变体）+ ion——同根 retain、contain、maintain。",
+    "tip": "retention = 把记忆「往回 (re) 拽住 (tent)」，不让它溜走。",
+    "xex": [
+      {"en": "Spaced repetition dramatically improves the retention of new vocabulary.", "zh": "间隔重复能大幅提高新词汇的记忆保持效果。", "src": "造句"},
+      {"en": "memory / student retention 记忆保持 / 学生留存率", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "recall", "ipa": "/rɪˈkɔːl/", "note": "回忆，指把记忆「取出来」这一动作；retention 指把记忆「存住」的能力，两者互补"}
+    ],
+    "nu": "retention = 把信息留存在记忆中的能力或程度。",
+    "rootfam": [
+      {"root": "tent/ten/tain", "meaning": "握住，保持", "words": [
+        {"w": "retention", "g": "保持，记忆力"},
+        {"w": "retain", "g": "保留"},
+        {"w": "contain", "g": "包含（一起握住）"},
+        {"w": "maintain", "g": "维持"},
+        {"w": "tenacious", "g": "顽强的（握得紧）"},
+        {"w": "sustain", "g": "维持，支撑"}
+      ]}
+    ]
+  },
+  {
+    "w": "retain",
+    "p": "/rɪˈteɪn/",
+    "d": "vt. 保持，保留；记住",
+    "levels": ["托福"],
+    "core": "把信息、习惯或状态继续保有、不失去。",
+    "ety": "拉丁语 retinere「往回拉住」：re-（向后）+ tenere「握住」。",
+    "ph": "re（向后）+ tain（握住）——同源 maintain、contain、obtain。",
+    "tip": "retain = 「往回 (re) 抓 (tain)」，抓住不放手。",
+    "xex": [
+      {"en": "Students retain information better when they explain it to others.", "zh": "学生把知识讲给别人听时，记得更牢。", "src": "造句"},
+      {"en": "retain information / knowledge 记住信息 / 知识", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "keep", "ipa": "/kiːp/", "note": "保留，最普通的词；retain 更正式，常用于保持信息、能力、状态等抽象事物"}
+    ],
+    "nu": "retain = 继续保有、不失去（尤指记住信息）。",
+    "rootfam": [
+      {"root": "tain", "meaning": "握住，保持", "words": [
+        {"w": "retain", "g": "保留，记住"},
+        {"w": "maintain", "g": "维持"},
+        {"w": "obtain", "g": "获得"},
+        {"w": "sustain", "g": "支撑，维持"},
+        {"w": "detain", "g": "拘留（扣住）"}
+      ]}
+    ]
+  },
+  {
+    "w": "faculty",
+    "p": "/ˈfæklti/",
+    "d": "n. （大学的）全体教师；院系；（身心的）官能，才能",
+    "levels": ["托福"],
+    "core": "一词三义：大学的教师群体 / 学院 / 人的某种能力（如记忆力）。听力里最常指「全体教职员」。",
+    "ety": "拉丁语 facultas「能力、机会」，源自 facilis「容易做的」← facere「做」；有「做事的能力」→ 引申为「有能力做事的人群（教师团）」。",
+    "ph": "fac（做）+ ulty——同根 facile（容易的）、faculty 里藏着「做 (fac) 的能力」。",
+    "tip": "faculty 记「有本事 (fac) 的一群人」= 教师团；单个人的「本事」= 官能、才能。",
+    "xex": [
+      {"en": "The faculty voted to revise the graduation requirements.", "zh": "全体教师投票决定修改毕业要求。", "src": "造句"},
+      {"en": "faculty member / mental faculties 教职员 / 心智官能", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "staff", "ipa": "/stæf/", "note": "全体员工，泛指；faculty 特指大学「教学人员」，不含行政/后勤"}
+    ],
+    "nu": "faculty = ①全体教师 ②院系 ③（身心的）能力。",
+    "rootfam": [
+      {"root": "fac/fic", "meaning": "做，制作", "words": [
+        {"w": "faculty", "g": "教师团；才能"},
+        {"w": "facile", "g": "容易的；肤浅的"},
+        {"w": "facilitate", "g": "促进，使便利"},
+        {"w": "factory", "g": "工厂"},
+        {"w": "efficient", "g": "高效的"},
+        {"w": "manufacture", "g": "制造"}
+      ]}
+    ],
+    "senses": [
+      {"gloss": "全体教师；院系", "logic": "「有能力教学的一群人」→ 教师团，进而指他们所在的院系", "en": "She joined the faculty of the biology department.", "zh": "她加入了生物系的教师队伍。"},
+      {"gloss": "官能，才能（身心能力）", "logic": "回到本义「做事的能力」→ 指人的某种天生能力", "en": "Memory is a mental faculty that declines with age.", "zh": "记忆是一种随年龄衰退的心智官能。"}
+    ]
+  },
+  {
+    "w": "discipline",
+    "p": "/ˈdɪsəplɪn/",
+    "d": "n. 纪律；学科，专业领域 vt. 训练；惩戒",
+    "levels": ["托福"],
+    "core": "一词多义：①学科（如各门 discipline）②纪律、自律 ③训练/惩戒。听力学术语境常指「学科」。",
+    "ety": "拉丁语 disciplina「教导、学问」，源自 discipulus「学生」（disc- 与 discere「学习」同根）；教与学的内容 → 学科，教与学的规矩 → 纪律。",
+    "ph": "disci（学习，见 disciple 门徒）+ pline——「学生 (disciple) 要守的」= 纪律。",
+    "tip": "discipline 里有 disciple（门徒）：门徒既要守「纪律」，又要钻研一门「学科」。",
+    "xex": [
+      {"en": "Anthropology and economics are distinct academic disciplines.", "zh": "人类学和经济学是不同的学术学科。", "src": "造句"},
+      {"en": "academic discipline / self-discipline 学术学科 / 自律", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "field", "ipa": "/fiːld/", "note": "领域，泛指研究/工作范围；discipline 特指有系统方法的正式「学科」，更学术"}
+    ],
+    "nu": "discipline = ①学科 ②纪律/自律 ③训练惩戒。",
+    "rootfam": [
+      {"root": "disc/dic", "meaning": "学习，教导", "words": [
+        {"w": "discipline", "g": "学科；纪律"},
+        {"w": "disciple", "g": "门徒，弟子"},
+        {"w": "docile", "g": "顺从的，易教的"},
+        {"w": "doctrine", "g": "教义，学说"},
+        {"w": "document", "g": "文件（教导凭证）"}
+      ]}
+    ],
+    "senses": [
+      {"gloss": "学科，专业领域", "logic": "「所教所学的内容」→ 一门系统的知识领域", "en": "Psychology emerged as a scientific discipline in the 19th century.", "zh": "心理学在19世纪作为一门科学学科兴起。"},
+      {"gloss": "纪律；自律", "logic": "「教与学要守的规矩」→ 行为的约束", "en": "Learning a language requires daily discipline.", "zh": "学一门语言需要每天的自律。"}
+    ]
+  },
+  {
+    "w": "reinforcement",
+    "p": "/ˌriːɪnˈfɔːrsmənt/",
+    "d": "n. 强化，加强；（心理学）强化（奖惩以塑造行为）",
+    "levels": ["托福"],
+    "core": "把某事物变得更牢固；在教育心理学里特指用奖励/惩罚来「强化」某种行为。",
+    "ety": "re-（再次）+ enforce（源自古法语 enforcier「使强」← 拉丁 fortis「强壮」）+ -ment；「再次加强」。",
+    "ph": "re（再）+ in + force（力量，fort 强）+ ment——同根 fort（堡垒）、effort（努力）。",
+    "tip": "reinforcement = 「再 (re) 加一份力 (force)」，让行为或结构更牢。",
+    "xex": [
+      {"en": "Positive reinforcement, such as praise, encourages students to repeat good behavior.", "zh": "正强化（如表扬）鼓励学生重复良好行为。", "src": "造句"},
+      {"en": "positive / negative reinforcement 正强化 / 负强化", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "consolidation", "ipa": "/kənˌsɑːlɪˈdeɪʃn/", "note": "巩固，强调使已有的东西更稳固；reinforcement 更强调「追加力量」或行为塑造"}
+    ],
+    "nu": "reinforcement = 强化；用奖惩巩固某种行为。",
+    "rootfam": [
+      {"root": "fort/force", "meaning": "强壮，力量", "words": [
+        {"w": "reinforcement", "g": "强化"},
+        {"w": "reinforce", "g": "加固，强化"},
+        {"w": "fortify", "g": "增强，设防"},
+        {"w": "effort", "g": "努力"},
+        {"w": "comfort", "g": "安慰（给予力量）"},
+        {"w": "enforce", "g": "执行，强制"}
+      ]}
+    ]
+  },
+  {
+    "w": "reinforce",
+    "p": "/ˌriːɪnˈfɔːrs/",
+    "d": "vt. 加固，加强；巩固（观点、行为等）",
+    "levels": ["托福"],
+    "core": "使某物或某种观念、行为变得更强、更牢固。",
+    "ety": "re-（再次）+ inforce/enforce「使强」← 拉丁 fortis「强壮」。",
+    "ph": "re（再）+ in + force（力量）——再添一股力量。",
+    "tip": "reinforce = 「再 (re) 灌一次力 (force)」，把它焊得更死。",
+    "xex": [
+      {"en": "Repetition reinforces the connection between a word and its meaning.", "zh": "重复能强化单词与其含义之间的联系。", "src": "造句"},
+      {"en": "reinforce an idea / a belief 强化一个观点 / 信念", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "strengthen", "ipa": "/ˈstreŋθn/", "note": "加强，最普通的词；reinforce 常含「追加支撑/再次加固」的意味"}
+    ],
+    "nu": "reinforce = 使更强、更牢固（结构或观念）。",
+    "rootfam": [
+      {"root": "force/fort", "meaning": "力量，强壮", "words": [
+        {"w": "reinforce", "g": "加固，强化"},
+        {"w": "enforce", "g": "强制执行"},
+        {"w": "fortress", "g": "堡垒"},
+        {"w": "forte", "g": "长处，强项"}
+      ]}
+    ]
+  },
+  {
+    "w": "aptitude",
+    "p": "/ˈæptɪtuːd/",
+    "d": "n. 天资，天赋；（学习某方面的）才能",
+    "levels": ["托福"],
+    "core": "在某方面天生就学得快、做得好的潜在能力。",
+    "ety": "拉丁语 aptus「适合的、合宜的」+ -itude（表状态）；「天生适合做某事的状态」= 天资。与 apt（有…倾向的）同源。",
+    "ph": "apt（适合的）+ itude——同根 adapt（使适应）、adept（擅长的）。",
+    "tip": "aptitude = apt（天生适合）的名词：一学就会，说明有 aptitude。",
+    "xex": [
+      {"en": "She showed a remarkable aptitude for mathematics at an early age.", "zh": "她很小就展现出非凡的数学天赋。", "src": "造句"},
+      {"en": "aptitude test / an aptitude for 能力倾向测试 / 对…有天赋", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "talent", "ipa": "/ˈtælənt/", "note": "才能，天赋，更常指已展现的出众能力；aptitude 更偏「潜在的、可被测出的学习倾向」"}
+    ],
+    "nu": "aptitude = 学某事的天生潜能或才能倾向。",
+    "rootfam": [
+      {"root": "apt", "meaning": "适合，恰当", "words": [
+        {"w": "aptitude", "g": "天资，才能"},
+        {"w": "apt", "g": "恰当的；有…倾向的"},
+        {"w": "adapt", "g": "使适应"},
+        {"w": "adept", "g": "擅长的，熟练的"},
+        {"w": "inept", "g": "无能的，不适任的"}
+      ]}
+    ]
+  },
+  {
+    "w": "lecture",
+    "p": "/ˈlektʃər/",
+    "d": "n. 讲座，课堂讲授 v. 讲课；训诫",
+    "levels": ["托福"],
+    "core": "老师向大批学生单向讲授知识——托福听力最核心的场景。",
+    "ety": "拉丁语 lectura「阅读」← legere「读、选、诵读」；早期讲课就是教授照本「宣读」文本。",
+    "ph": "lect（读，选）+ ure——同根 lecture、collect（选到一起）、select（挑选）。",
+    "tip": "lecture 里有 lect（读）：教授站上讲台「读讲」内容就是 lecture。",
+    "xex": [
+      {"en": "The professor's lecture on plate tectonics ran twenty minutes over.", "zh": "教授关于板块构造的讲座超时了二十分钟。", "src": "造句"},
+      {"en": "attend / give a lecture 听 / 做讲座", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "seminar", "ipa": "/ˈsemɪnɑːr/", "note": "研讨课，小班、师生互动讨论；lecture 通常是大班、教师单向讲授"}
+    ],
+    "nu": "lecture = 教师面向听众的单向知识讲授。",
+    "rootfam": [
+      {"root": "lect/leg", "meaning": "读，选", "words": [
+        {"w": "lecture", "g": "讲座"},
+        {"w": "collect", "g": "收集（选到一起）"},
+        {"w": "select", "g": "挑选"},
+        {"w": "elect", "g": "选举"},
+        {"w": "legible", "g": "字迹清晰可读的"},
+        {"w": "intellect", "g": "智力（会读会选）"}
+      ]}
+    ]
+  },
+  {
+    "w": "seminar",
+    "p": "/ˈsemɪnɑːr/",
+    "d": "n. 研讨课，研讨会（小班互动式教学）",
+    "levels": ["托福"],
+    "core": "小规模、以师生讨论为主的课，与大班 lecture 相对。",
+    "ety": "拉丁语 seminarium「苗圃、育种地」← semen「种子」；把研讨课比作「培育思想的苗圃」。",
+    "ph": "semin（种子）+ ar——同根 seminal（开创性的，如种子般孕育）、disseminate（散播种子→传播）。",
+    "tip": "seminar = 一块「思想苗圃 (semin = seed)」，大家围坐把想法种出来。",
+    "xex": [
+      {"en": "In the graduate seminar, students take turns presenting their research.", "zh": "在这门研究生研讨课上，学生们轮流展示自己的研究。", "src": "造句"},
+      {"en": "weekly / graduate seminar 每周 / 研究生研讨课", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "workshop", "ipa": "/ˈwɜːrkʃɑːp/", "note": "工作坊，强调动手实践与技能训练；seminar 更偏学术讨论与观点交流"}
+    ],
+    "nu": "seminar = 小班、以讨论为核心的研讨式课程。",
+    "rootfam": [
+      {"root": "semin", "meaning": "种子", "words": [
+        {"w": "seminar", "g": "研讨课"},
+        {"w": "seminal", "g": "开创性的，有重大影响的"},
+        {"w": "disseminate", "g": "散布，传播"},
+        {"w": "semen", "g": "精液（种子）"}
+      ]}
+    ]
+  },
+  {
+    "w": "tutor",
+    "p": "/ˈtuːtər/",
+    "d": "n. 导师；家庭教师 vt. 辅导，个别指导",
+    "levels": ["托福"],
+    "core": "对一两名学生进行一对一或小范围辅导的教师。",
+    "ety": "拉丁语 tutor「监护人、保护者」← tueri「看护、守望」；从「看护者」引申为「悉心指导的老师」。",
+    "ph": "tut（看护）+ or（表人）——与 tuition（学费；辅导）、intuition（直觉，向内看）同根。",
+    "tip": "tutor = 一对一「看护 (tut)」你学习的老师，比大课老师更贴身。",
+    "xex": [
+      {"en": "She hired a tutor to help her son prepare for the entrance exam.", "zh": "她请了一位家教帮儿子准备入学考试。", "src": "造句"},
+      {"en": "private tutor / tutor a student 私人辅导老师 / 辅导学生", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mentor", "ipa": "/ˈmentɔːr/", "note": "导师，侧重长期的经验传授与人生指导；tutor 更侧重具体学业的辅导"}
+    ],
+    "nu": "tutor = 对个别学生进行针对性辅导的老师。",
+    "rootfam": [
+      {"root": "tut/tuit", "meaning": "看护，守望", "words": [
+        {"w": "tutor", "g": "导师，家教"},
+        {"w": "tutorial", "g": "辅导课；使用说明"},
+        {"w": "tuition", "g": "学费；辅导"},
+        {"w": "intuition", "g": "直觉（向内看）"}
+      ]}
+    ]
+  },
+  {
+    "w": "enrollment",
+    "p": "/ɪnˈroʊlmənt/",
+    "d": "n. 注册；入学；注册（登记）人数",
+    "levels": ["托福"],
+    "core": "把名字登记入名册的行为，也指登记入学的学生总数。",
+    "ety": "en-（使…进入）+ roll「名单、卷册」（古法语 rolle 一卷羊皮纸名录）+ -ment；「把名字卷进名册」。",
+    "ph": "en（进入）+ roll（名册）+ ment——名字写进「名单卷 (roll)」就是注册。",
+    "tip": "enrollment = 把你的名字「卷 (roll) 进」学校名单，即入学注册。",
+    "xex": [
+      {"en": "Enrollment in the online course doubled within a single semester.", "zh": "这门在线课程的注册人数在一个学期内翻了一番。", "src": "造句"},
+      {"en": "course / student enrollment 课程 / 学生注册人数", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "registration", "ipa": "/ˌredʒɪˈstreɪʃn/", "note": "登记，注册，用词更宽（活动、账号皆可）；enrollment 特指注册入学/选课"}
+    ],
+    "nu": "enrollment = 登记入学/选课的行为或注册人数。",
+    "rootfam": [
+      {"root": "roll", "meaning": "卷，名册", "words": [
+        {"w": "enrollment", "g": "注册，入学人数"},
+        {"w": "enroll", "g": "注册，登记入学"},
+        {"w": "roll", "g": "名册；卷"},
+        {"w": "roster", "g": "花名册，值勤表"}
+      ]}
+    ]
+  },
+  {
+    "w": "syllabus",
+    "p": "/ˈsɪləbəs/",
+    "d": "n. 教学大纲，课程提纲（复数 syllabi 或 syllabuses）",
+    "levels": ["托福"],
+    "core": "一门课的内容清单：主题安排、阅读材料、评分方式等。开学第一节课教授常发。",
+    "ety": "源于对希腊语 sittybos「书标、目录签」的误抄，被拉丁化为 syllabus；后固定指「课程内容清单」。",
+    "ph": "syl + labus——形近但不同于 syllable（音节）；记「一门课的内容目录」。",
+    "tip": "syllabus = 课程的「目录单」，把整学期讲什么、怎么考一次列清。",
+    "xex": [
+      {"en": "The syllabus lists all required readings and the grading breakdown.", "zh": "教学大纲列出了所有必读材料和评分构成。", "src": "造句"},
+      {"en": "course syllabus / hand out the syllabus 课程大纲 / 发放大纲", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "curriculum", "ipa": "/kəˈrɪkjələm/", "note": "课程体系，指整个专业/学校的全部课程；syllabus 只是单门课的内容清单，范围小得多"}
+    ],
+    "nu": "syllabus = 单门课程的内容与安排清单。"
+  },
+  {
+    "w": "feedback",
+    "p": "/ˈfiːdbæk/",
+    "d": "n. 反馈（意见）；反馈信息",
+    "levels": ["托福"],
+    "core": "对某人表现或作品给出的评价与建议，帮助其改进。",
+    "ety": "feed「喂、供给」+ back「回、返」；把结果信息「回喂」给系统或人，源自控制论概念。",
+    "ph": "feed（喂）+ back（返回）——把信息「喂回去」。",
+    "tip": "feedback = 把评价「喂 (feed) 回 (back)」给你，让你据此调整。",
+    "xex": [
+      {"en": "Timely feedback on essays helps students correct mistakes before the next assignment.", "zh": "对作文的及时反馈能帮助学生在下次作业前纠正错误。", "src": "造句"},
+      {"en": "constructive / give feedback 建设性 / 给出反馈", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "comment", "ipa": "/ˈkɑːment/", "note": "评论，单条意见；feedback 是整体的反馈信息，常含改进导向"}
+    ],
+    "nu": "feedback = 反馈给对方以助其改进的评价信息。"
+  },
+  {
+    "w": "memorize",
+    "p": "/ˈmeməraɪz/",
+    "d": "vt. 记住，熟记，背诵",
+    "levels": ["托福"],
+    "core": "把信息刻意存进记忆，能一字不差地复现。",
+    "ety": "拉丁语 memor「记得的」→ memoria「记忆」+ -ize（使…动词化）；「使进入记忆」。",
+    "ph": "memor（记忆）+ ize——同根 memory、memorial（纪念的）、remember。",
+    "tip": "memorize = 给 memory（记忆）加个 -ize 开关：主动往脑子里「存盘」。",
+    "xex": [
+      {"en": "Rather than memorize dates, try to understand why events happened.", "zh": "与其死记年代，不如试着理解事件为何发生。", "src": "造句"},
+      {"en": "memorize by heart / rote 熟记 / 死记硬背", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "retain", "ipa": "/rɪˈteɪn/", "note": "记住、保持，强调信息「留存」的结果；memorize 强调主动「记下」的动作"}
+    ],
+    "nu": "memorize = 刻意把信息记入记忆并能复现。",
+    "rootfam": [
+      {"root": "memor", "meaning": "记忆，记得", "words": [
+        {"w": "memorize", "g": "熟记"},
+        {"w": "memory", "g": "记忆"},
+        {"w": "memorial", "g": "纪念的；纪念碑"},
+        {"w": "commemorate", "g": "纪念"},
+        {"w": "memoir", "g": "回忆录"}
+      ]}
+    ]
+  },
+  {
+    "w": "perceive",
+    "p": "/pərˈsiːv/",
+    "d": "vt. 感知，察觉；理解，认为",
+    "levels": ["托福"],
+    "core": "通过感官注意到某事物，或在心里对它形成认识。",
+    "ety": "拉丁语 percipere「彻底抓住、领会」：per-（彻底）+ capere「抓取」；把外界信息「整个抓进来」= 感知。",
+    "ph": "per（彻底）+ ceive（抓，cap 的变体）——同根 receive（收）、conceive（构想）、deceive（欺骗）。",
+    "tip": "perceive = 「彻底 (per) 抓 (ceive)」到信息，眼睛脑子一起接收。",
+    "xex": [
+      {"en": "Infants can perceive differences in speech sounds long before they can speak.", "zh": "婴儿在会说话之前很久就能察觉语音上的差异。", "src": "造句"},
+      {"en": "perceive as / be perceived as 把…视为 / 被视为", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "detect", "ipa": "/dɪˈtekt/", "note": "察觉，探测，偏「发现隐藏或细微之物」；perceive 更宽，含感官接收与心理认知"}
+    ],
+    "nu": "perceive = 通过感官或心智注意、认识到某事物。",
+    "rootfam": [
+      {"root": "ceive/cept", "meaning": "抓取，拿", "words": [
+        {"w": "perceive", "g": "感知"},
+        {"w": "perception", "g": "感知，观念"},
+        {"w": "receive", "g": "收到"},
+        {"w": "conceive", "g": "构想；怀孕"},
+        {"w": "concept", "g": "概念"},
+        {"w": "deceive", "g": "欺骗"}
+      ]}
+    ]
+  },
+  {
+    "w": "attentive",
+    "p": "/əˈtentɪv/",
+    "d": "a. 专注的，留心的；关心体贴的",
+    "levels": ["托福"],
+    "core": "把注意力集中在某事上、认真留意的状态——学习专注度的关键词。",
+    "ety": "拉丁语 attendere「留心、伸向」：ad-（向）+ tendere「伸展」；把心思「伸向」某处 = 专注。+ -ive。",
+    "ph": "at（=ad 向）+ tent（伸，tend 的变体）+ ive——同根 attention、tend、intend、extend。",
+    "tip": "attentive = 把注意力「伸 (tent) 向」目标，全神贯注。",
+    "xex": [
+      {"en": "Attentive students who take notes tend to recall lectures more accurately.", "zh": "认真做笔记的专注学生往往能更准确地回忆讲座内容。", "src": "造句"},
+      {"en": "attentive to detail / an attentive listener 留意细节 / 专注的听者", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "alert", "ipa": "/əˈlɜːrt/", "note": "警觉的，强调对突发情况敏锐反应；attentive 强调持续地集中注意、专心倾听"}
+    ],
+    "nu": "attentive = 注意力集中、留心专注的。",
+    "rootfam": [
+      {"root": "tent/tend", "meaning": "伸展", "words": [
+        {"w": "attentive", "g": "专注的"},
+        {"w": "attention", "g": "注意力"},
+        {"w": "tend", "g": "倾向；照料"},
+        {"w": "intend", "g": "打算"},
+        {"w": "extend", "g": "延伸"},
+        {"w": "tension", "g": "紧张，张力"}
+      ]}
+    ]
+  },
+  {
+    "w": "scholarship",
+    "p": "/ˈskɑːlərʃɪp/",
+    "d": "n. 奖学金；学识，学术研究",
+    "levels": ["托福"],
+    "core": "两义：资助学习的奖学金 / 高水平的学问与学术功底。",
+    "ety": "scholar「学者」（希腊语 skholē「闲暇→用于学习的闲暇→学校」）+ -ship（表状态、身份）；「做学者的状态」。",
+    "ph": "scholar（学者）+ ship——同根 school（学校）、scholastic（学校的，学术的）。",
+    "tip": "scholarship = scholar（学者）+ ship：既指学者的「学问」，也指资助你成为学者的「奖学金」。",
+    "xex": [
+      {"en": "She won a full scholarship to study linguistics abroad.", "zh": "她获得了赴海外学习语言学的全额奖学金。", "src": "造句"},
+      {"en": "apply for / award a scholarship 申请 / 授予奖学金", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "grant", "ipa": "/ɡrænt/", "note": "拨款、助学金，多指资助研究/项目的款项；scholarship 特指奖励优秀学生的奖学金"}
+    ],
+    "nu": "scholarship = ①奖学金 ②学识、学术造诣。",
+    "rootfam": [
+      {"root": "schol", "meaning": "学校，学习", "words": [
+        {"w": "scholarship", "g": "奖学金；学识"},
+        {"w": "scholar", "g": "学者"},
+        {"w": "scholastic", "g": "学术的，学校的"},
+        {"w": "school", "g": "学校"}
+      ]}
+    ]
+  },
+  {
+    "w": "instruction",
+    "p": "/ɪnˈstrʌkʃn/",
+    "d": "n. 教导，教学；（常复数）说明，指示",
+    "levels": ["托福"],
+    "core": "教学与传授的过程；也指一步步的操作说明或命令。",
+    "ety": "拉丁语 instruere「建造、装备、教导」：in-（在…上）+ struere「堆建」；把知识「一层层搭建」进人脑 = 教导。",
+    "ph": "in（在上）+ struct（建造）+ ion——同根 structure（结构）、construct（建造）、instrument（工具）。",
+    "tip": "instruction = 把知识像盖房子一样「搭建 (struct)」进学生脑中。",
+    "xex": [
+      {"en": "Direct instruction works well for teaching clear-cut procedures.", "zh": "直接讲授式教学很适合教授步骤明确的操作。", "src": "造句"},
+      {"en": "classroom instruction / follow the instructions 课堂教学 / 遵照说明", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "teaching", "ipa": "/ˈtiːtʃɪŋ/", "note": "教学，最普通的说法；instruction 更正式，且含「有条理地传授/给出指令」之意"}
+    ],
+    "nu": "instruction = ①教学、传授 ②操作说明、指示。",
+    "rootfam": [
+      {"root": "struct/stru", "meaning": "建造，堆建", "words": [
+        {"w": "instruction", "g": "教导；说明"},
+        {"w": "instruct", "g": "教导；指示"},
+        {"w": "structure", "g": "结构"},
+        {"w": "construct", "g": "建造"},
+        {"w": "destruction", "g": "破坏"},
+        {"w": "infrastructure", "g": "基础设施"}
+      ]}
+    ]
+  }
+]

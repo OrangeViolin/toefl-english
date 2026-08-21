@@ -1,0 +1,761 @@
+[
+  {
+    "w": "latitude",
+    "p": "/ˈlætɪtuːd/",
+    "d": "n. 纬度；纬度地区；（言行的）自由度",
+    "levels": ["托福"],
+    "core": "以赤道为 0° 度量地表南北位置的坐标",
+    "ety": "源自拉丁语 latitudo「宽度、广度」，来自 latus「宽的」+ 名词后缀 -tudo。地图上纬线是横向的「宽度线」，故得名；引申义「自由度」即「回旋的宽度」。",
+    "ph": "lat(宽)+itude(名词后缀) → 横向铺开的宽度线 → 纬度",
+    "tip": "纬线 latitude 是「躺平」的横线（lat 谐音「拉」平），与竖着的经线 longitude 相对；高纬度=离赤道远=更冷。",
+    "xex": [
+      {"en": "The city lies at a latitude of about forty degrees north of the equator.", "zh": "这座城市位于赤道以北约四十度的纬度上。", "src": "造句"},
+      {"en": "high latitudes / degrees of latitude / latitude and longitude", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "parallel", "ipa": "/ˈpærəlel/", "note": "地理术语中特指「纬线、纬圈」，如 the 38th parallel 三八线"}
+    ],
+    "nu": "托福地理/气候讲座核心坐标词，常与 longitude 成对出现，考「纬度越高气温越低」的因果推理。",
+    "rootfam": [
+      {
+        "root": "lat-",
+        "meaning": "宽的 (wide)",
+        "words": [
+          {"w": "latitude", "g": "纬度"},
+          {"w": "dilate", "g": "扩张、放宽"},
+          {"w": "latitudinal", "g": "纬度的"},
+          {"w": "collateral", "g": "旁侧的、附带的"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "longitude",
+    "p": "/ˈlɑːndʒɪtuːd/",
+    "d": "n. 经度，经线",
+    "levels": ["托福"],
+    "core": "以本初子午线为 0° 度量地表东西位置的坐标",
+    "ety": "源自拉丁语 longitudo「长度」，来自 longus「长的」+ -tudo。经线从北极到南极是地表最「长」的线，故以「长度」命名，与 latitude（宽度）相对。",
+    "ph": "long(长)+itude(名词后缀) → 南北向最长的线 → 经度",
+    "tip": "记 long=长——经线是竖着的「长」线；东西经以格林尼治本初子午线（0°）分界。",
+    "xex": [
+      {"en": "Sailors needed accurate clocks to determine their longitude at sea.", "zh": "水手需要精准的时钟才能在海上确定自己的经度。", "src": "造句"},
+      {"en": "lines of longitude / measure longitude / longitude and latitude", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "meridian", "ipa": "/məˈrɪdiən/", "note": "子午线，特指一条具体的经线，如 prime meridian 本初子午线"}
+    ],
+    "nu": "与 latitude 配对高频；托福历史/地理讲座常讲「经度测定难题」与航海钟发明。",
+    "rootfam": [
+      {
+        "root": "long-",
+        "meaning": "长的 (long)",
+        "words": [
+          {"w": "longitude", "g": "经度"},
+          {"w": "elongate", "g": "拉长"},
+          {"w": "prolong", "g": "延长"},
+          {"w": "longevity", "g": "长寿"},
+          {"w": "oblong", "g": "长方形的"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "terrain",
+    "p": "/təˈreɪn/",
+    "d": "n. 地形，地势；地带，领域",
+    "levels": ["托福"],
+    "core": "一片土地的表面起伏与自然形态",
+    "ety": "源自古法语 terrain，来自拉丁语 terrenum「土地、地面」，源于 terra「大地、陆地」。同一 terra 也给了 territory、terrace、terrestrial。",
+    "ph": "terr(土地)+ain → 大地表面的样子 → 地形",
+    "tip": "terr=大地（想 terra 星球）——terrain 就是脚下大地的起伏；rugged terrain 崎岖地形是听力高频。",
+    "xex": [
+      {"en": "The rugged terrain made it difficult for the expedition to advance.", "zh": "崎岖的地形使远征队难以前进。", "src": "造句"},
+      {"en": "rough / mountainous / rugged terrain / navigate the terrain", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "topography", "ipa": "/təˈpɑːɡrəfi/", "note": "更学术，指地形的整体形态与其测绘描述"},
+      {"w": "landform", "ipa": "/ˈlændfɔːrm/", "note": "指某一具体地貌单元，如山、谷、平原"}
+    ],
+    "nu": "托福地理/考古/军事史讲座高频，描述行进难度或聚落选址的地表条件。",
+    "rootfam": [
+      {
+        "root": "terr-",
+        "meaning": "土地、大地 (earth, land)",
+        "words": [
+          {"w": "terrain", "g": "地形"},
+          {"w": "territory", "g": "领土"},
+          {"w": "terrace", "g": "梯田、露台"},
+          {"w": "terrestrial", "g": "陆地的"},
+          {"w": "subterranean", "g": "地下的"},
+          {"w": "Mediterranean", "g": "地中海的"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "plateau",
+    "p": "/plæˈtoʊ/",
+    "d": "n. 高原；（上升后的）稳定期，平台期 v. 达到平稳状态",
+    "levels": ["托福"],
+    "core": "地势高而顶面平坦的大片陆地",
+    "ety": "源自法语 plateau「平板、托盘」，来自古法语 plate「平的、扁的」，源于希腊语 platys「宽而平」。同一 plat- 也给了 plate、plain、platform。",
+    "ph": "plat(平)+eau → 一块高高的平板 → 高原",
+    "tip": "plat=平（想 plate 平盘子）——高原就是被抬高的「大平盘」；引申「平台期」指进步停滞、拉平不再上升。",
+    "xex": [
+      {"en": "The Tibetan Plateau is often called the roof of the world.", "zh": "青藏高原常被称为世界屋脊。", "src": "造句"},
+      {"en": "reach a plateau / a high plateau / plateau in growth", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "tableland", "ipa": "/ˈteɪbəllænd/", "note": "同义的「桌状高地」，形象强调顶面平坦"}
+    ],
+    "nu": "托福地理讲座既考本义「高原」，也考引申义「学习/增长的平台期」，需按语境区分。",
+    "rootfam": [
+      {
+        "root": "plat-",
+        "meaning": "平、宽 (flat, broad)",
+        "words": [
+          {"w": "plateau", "g": "高原"},
+          {"w": "plate", "g": "板、盘"},
+          {"w": "plain", "g": "平原"},
+          {"w": "platform", "g": "平台"},
+          {"w": "plaza", "g": "广场"},
+          {"w": "flat", "g": "平的"}
+        ]
+      }
+    ],
+    "senses": [
+      {"gloss": "n. 高原", "logic": "地表被整体抬高的一块「大平盘」", "en": "Herds of yak graze on the vast plateau.", "zh": "成群的牦牛在广袤的高原上吃草。"},
+      {"gloss": "n./v. 平台期，趋于平稳", "logic": "曲线上升后拉平不再增长，像高原顶面", "en": "After months of rapid gains, her progress plateaued.", "zh": "经历数月飞速进步后，她的进展进入了平台期。"}
+    ]
+  },
+  {
+    "w": "delta",
+    "p": "/ˈdeltə/",
+    "d": "n.（河流入海口的）三角洲；希腊字母 Δ",
+    "levels": ["托福"],
+    "core": "河流入海处泥沙堆积成的三角形冲积平原",
+    "ety": "直接借自希腊字母 delta（Δ），因尼罗河入海口的冲积平原形似大写三角形 Δ，古希腊人便以此字母命名，后成为地理通名。",
+    "ph": "希腊字母 Δ 的形状 → 三角形的河口冲积地 → 三角洲",
+    "tip": "看字母 Δ 就是个三角形——河流带来的泥沙在入海口摊成扇形三角地，土壤肥沃、常成农业带。",
+    "xex": [
+      {"en": "The Nile delta has supported dense farming populations for thousands of years.", "zh": "尼罗河三角洲数千年来养育了稠密的农耕人口。", "src": "造句"},
+      {"en": "river delta / a fertile delta / the Nile delta", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "estuary", "ipa": "/ˈestʃueri/", "note": "河口湾，指海水与河水交汇的宽口，侧重水域而非沉积陆地"}
+    ],
+    "nu": "托福地理讲座讲河流沉积作用与文明起源时高频，常与 sediment、fertile、alluvial 连用。"
+  },
+  {
+    "w": "tributary",
+    "p": "/ˈtrɪbjəteri/",
+    "d": "n. 支流 a. 支流的；进贡的",
+    "levels": ["托福"],
+    "core": "汇入较大河流或干流的小河",
+    "ety": "源自拉丁语 tributarius「纳贡的」，来自 tribuere「分配、缴纳」，源于 tribus「部落」。支流像向干流「进贡」水量，故得此名；同根有 tribute、contribute、distribute。",
+    "ph": "tribut(缴纳/进贡)+ary → 向干流「进贡」水的河 → 支流",
+    "tip": "支流向主河「纳贡」送水——tribute（贡品）同根；许多支流汇成大河。",
+    "xex": [
+      {"en": "Several tributaries feed into the main river before it reaches the sea.", "zh": "在汇入大海之前，数条支流注入这条主河。", "src": "造句"},
+      {"en": "a tributary of the river / major tributaries / feed into", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "branch", "ipa": "/bræntʃ/", "note": "泛指河流的「分支」，日常口语用词，学术性弱于 tributary"}
+    ],
+    "nu": "托福地理讲座讲水系时高频，与 main river（干流）、watershed（分水岭）成组出现。",
+    "rootfam": [
+      {
+        "root": "tribut-",
+        "meaning": "分配、缴纳 (give, allot)",
+        "words": [
+          {"w": "tributary", "g": "支流"},
+          {"w": "tribute", "g": "贡品、致敬"},
+          {"w": "contribute", "g": "贡献"},
+          {"w": "distribute", "g": "分配"},
+          {"w": "attribute", "g": "归因于"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "watershed",
+    "p": "/ˈwɔːtərʃed/",
+    "d": "n. 分水岭；流域；（转折的）分水岭时刻",
+    "levels": ["托福"],
+    "core": "分隔两个水系集水区的高地界线，也指一条河的整个集水区域",
+    "ety": "由 water「水」+ shed 组成，shed 在此为古义「分开」（同源于德语 scheiden「分离」），故 watershed 本义「分水的界线」，引申为「集水流域」及比喻「关键转折点」。",
+    "ph": "water(水)+shed(分开) → 把水分向两侧的高地 → 分水岭",
+    "tip": "山脊线把雨水分向两边流——过了这条线就是另一条河的地盘；比喻义 a watershed moment=关键转折时刻。",
+    "xex": [
+      {"en": "The mountain ridge forms a watershed between two great river systems.", "zh": "这道山脊构成了两大水系之间的分水岭。", "src": "造句"},
+      {"en": "a watershed moment / drainage watershed / watershed area", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "divide", "ipa": "/dɪˈvaɪd/", "note": "美式地理术语中 the divide 即「分水岭」，如 Continental Divide 大陆分水岭"},
+      {"w": "drainage basin", "ipa": "/ˈdreɪnɪdʒ ˈbeɪsn/", "note": "指流域集水区这一层含义时的同义表达"}
+    ],
+    "nu": "托福地理讲座讲水系分界高频；比喻义在历史/文化讲座指「转折点」，需按语境判断。"
+  },
+  {
+    "w": "topography",
+    "p": "/təˈpɑːɡrəfi/",
+    "d": "n. 地形，地貌；地形学，地形测绘",
+    "levels": ["托福"],
+    "core": "一个地区地表起伏与自然、人工特征的整体形态及其描绘",
+    "ety": "源自希腊语 topos「地方」+ graphein「书写、描绘」，字面「对某地的描绘」。同一 topo- 也给了 topic、utopia（no+place）；graph 见于 photograph、biography。",
+    "ph": "topo(地方)+graphy(描绘) → 把一地的地貌画/写出来 → 地形（学）",
+    "tip": "topo=地方，-graphy=描绘（同 photo-graphy）——把某地的高低起伏「画」出来就是地形图。",
+    "xex": [
+      {"en": "The region's rugged topography shaped where early settlements could be built.", "zh": "该地区崎岖的地形决定了早期聚落能建在何处。", "src": "造句"},
+      {"en": "local topography / rugged topography / topographic map", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "terrain", "ipa": "/təˈreɪn/", "note": "更口语，侧重脚下土地的起伏与通行难度"},
+      {"w": "relief", "ipa": "/rɪˈliːf/", "note": "地理术语指地表「起伏高差」，如 high relief 高差大"}
+    ],
+    "nu": "托福地理/考古讲座高频学术词，讲地表形态如何影响气候、聚落、交通。",
+    "rootfam": [
+      {
+        "root": "graph-",
+        "meaning": "书写、描绘 (write, draw)",
+        "words": [
+          {"w": "topography", "g": "地形学"},
+          {"w": "geography", "g": "地理学"},
+          {"w": "photograph", "g": "照片"},
+          {"w": "biography", "g": "传记"},
+          {"w": "paragraph", "g": "段落"},
+          {"w": "cartography", "g": "制图学"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "peninsula",
+    "p": "/pəˈnɪnsələ/",
+    "d": "n. 半岛",
+    "levels": ["托福"],
+    "core": "三面环水、一面连陆的狭长陆地",
+    "ety": "源自拉丁语 paeninsula，由 paene「几乎」+ insula「岛」构成，字面「几乎是个岛」——三面被水包围却仍连着大陆。同一 insula 给了 insular、isolate、island 的语义。",
+    "ph": "paen(几乎)+insula(岛) → 几乎是座岛的陆地 → 半岛",
+    "tip": "拆成 pen-insula=「几乎(pen)是个岛(insula)」——三面是水，只差一面就成岛了。",
+    "xex": [
+      {"en": "The peninsula juts out into the sea, giving the port ships shelter on three sides.", "zh": "这个半岛伸入海中，为港口的船只提供了三面的庇护。", "src": "造句"},
+      {"en": "the Arabian peninsula / a narrow peninsula / juts out into", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "cape", "ipa": "/keɪp/", "note": "海角，指伸入海中的尖端陆地，规模远小于半岛"}
+    ],
+    "nu": "托福地理/历史讲座高频，与 isthmus（地峡）、island（岛）成组对比，考陆海边界形态。",
+    "rootfam": [
+      {
+        "root": "insul-",
+        "meaning": "岛 (island)",
+        "words": [
+          {"w": "peninsula", "g": "半岛"},
+          {"w": "insular", "g": "岛屿的、狭隘的"},
+          {"w": "isolate", "g": "使孤立"},
+          {"w": "insulate", "g": "使隔绝、绝缘"},
+          {"w": "insulin", "g": "胰岛素"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "isthmus",
+    "p": "/ˈɪsməs/",
+    "d": "n. 地峡；（解剖学）峡部",
+    "levels": ["托福"],
+    "core": "连接两大陆块、两侧临海的狭窄陆地",
+    "ety": "直接借自希腊语 isthmos「狭窄的通道、颈状陆地」，古希腊科林斯地峡（Isthmus of Corinth）即用此词，后成为连接两片陆地的狭长陆桥的通名。",
+    "ph": "希腊语 isthmos「狭颈」→ 两海之间的一条窄陆桥 → 地峡",
+    "tip": "读音省略 th：/ˈɪsməs/；它和 peninsula 反着记——半岛是陆地伸进海，地峡是海几乎切断陆地只剩一条窄桥（如巴拿马地峡）。",
+    "xex": [
+      {"en": "The narrow isthmus of Panama links North and South America.", "zh": "狭窄的巴拿马地峡连接着北美洲和南美洲。", "src": "造句"},
+      {"en": "a narrow isthmus / the Isthmus of Panama / link two continents", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "land bridge", "ipa": "/lænd brɪdʒ/", "note": "陆桥，通俗说法，尤指曾连接两陆块供物种迁徙的通道"}
+    ],
+    "nu": "托福地理/生物地理讲座高频，讲物种迁徙、运河开凿（巴拿马、苏伊士）时出现。"
+  },
+  {
+    "w": "glacier",
+    "p": "/ˈɡleɪʃər/",
+    "d": "n. 冰川，冰河",
+    "levels": ["托福"],
+    "core": "由积雪长期压实形成、能缓慢流动的巨大冰体",
+    "ety": "源自法语 glacier，来自古法语 glace「冰」，源于拉丁语 glacies「冰」。同一 glac- 也给了 glacial（冰川的/极冷的）、glaze（上釉、结冰面）。",
+    "ph": "glac(冰)+ier → 一大片流动的冰 → 冰川",
+    "tip": "glac=冰（想 glace 冰）——冰川是会「爬行」的冰河，靠自重缓慢移动，塑造出 U 形谷。",
+    "xex": [
+      {"en": "As the glacier slowly advanced, it carved a deep U-shaped valley.", "zh": "冰川缓慢推进时，刻凿出一道深深的 U 形谷。", "src": "造句"},
+      {"en": "a retreating glacier / glacier melts / glacial valley", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ice sheet", "ipa": "/aɪs ʃiːt/", "note": "冰盖，覆盖面积极大的大陆冰体，规模大于一般 glacier"}
+    ],
+    "nu": "托福地质/环境讲座高频，讲冰川侵蚀地貌、冰期、气候变暖导致 glacier retreat（冰川退缩）。",
+    "rootfam": [
+      {
+        "root": "glac-",
+        "meaning": "冰 (ice)",
+        "words": [
+          {"w": "glacier", "g": "冰川"},
+          {"w": "glacial", "g": "冰川的、极冷的"},
+          {"w": "glaciation", "g": "冰川作用"},
+          {"w": "glaze", "g": "结冰面、上釉"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "monsoon",
+    "p": "/mɑːnˈsuːn/",
+    "d": "n. 季风；（南亚的）雨季",
+    "levels": ["托福"],
+    "core": "随季节反向、带来旱季与雨季的大范围风系",
+    "ety": "源自阿拉伯语 mawsim「季节」，经葡萄牙语 monção 传入英语。阿拉伯与印度洋水手依这套「按季节换向」的风航行，故以「季节」为名。",
+    "ph": "阿拉伯语 mawsim「季节」→ 随季节转向的风 → 季风",
+    "tip": "monsoon 与「季节 season」同源——夏季从海吹向陆带来暴雨，冬季反向干燥；南亚农业全靠它。",
+    "xex": [
+      {"en": "The summer monsoon brings heavy rains that farmers depend on for their crops.", "zh": "夏季季风带来农民种庄稼所依赖的大量降雨。", "src": "造句"},
+      {"en": "the summer monsoon / monsoon season / monsoon rains", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "trade wind", "ipa": "/treɪd wɪnd/", "note": "信风，方向稳定的低纬盛行风，与随季节反向的 monsoon 机制不同"}
+    ],
+    "nu": "托福气候/农业史讲座高频，讲季风对南亚、东亚降水与农耕的决定性影响。"
+  },
+  {
+    "w": "hemisphere",
+    "p": "/ˈhemɪsfɪr/",
+    "d": "n.（地球或天体的）半球；大脑半球",
+    "levels": ["托福"],
+    "core": "球体被平面等分后的一半",
+    "ety": "源自希腊语 hemi-「一半」+ sphaira「球」，字面「半个球」。hemi- 也见于 hemicycle；sphere 见于 atmosphere、spherical。",
+    "ph": "hemi(一半)+sphere(球) → 半个球 → 半球",
+    "tip": "hemi=一半——赤道分南北半球，本初子午线分东西半球；医学里也指左右脑半球。",
+    "xex": [
+      {"en": "When it is summer in the Northern Hemisphere, it is winter in the Southern.", "zh": "当北半球是夏天时，南半球正值冬天。", "src": "造句"},
+      {"en": "the Northern / Southern Hemisphere / cerebral hemisphere", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "half", "ipa": "/hæf/", "note": "泛指「一半」，非专业语境的通俗对应，不含「球面」义"}
+    ],
+    "nu": "托福地理/天文讲座高频，考南北半球季节相反、昼夜与太阳角度的因果关系。",
+    "rootfam": [
+      {
+        "root": "sphere",
+        "meaning": "球 (ball, globe)",
+        "words": [
+          {"w": "hemisphere", "g": "半球"},
+          {"w": "atmosphere", "g": "大气层"},
+          {"w": "spherical", "g": "球形的"},
+          {"w": "biosphere", "g": "生物圈"},
+          {"w": "stratosphere", "g": "平流层"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "urbanization",
+    "p": "/ˌɜːrbənəˈzeɪʃn/",
+    "d": "n. 城市化，都市化",
+    "levels": ["托福"],
+    "core": "人口与活动由乡村向城市集中的过程",
+    "ety": "由 urban「城市的」+ 动词后缀 -ize + 名词后缀 -ation 构成。urban 源自拉丁语 urbs「城市」，同根有 urbane（有礼的，原指城里人的举止）、suburb（郊区）。",
+    "ph": "urban(城市)+ize(化)+ation(名词) → 变成城市的过程 → 城市化",
+    "tip": "urban=城市（对 rural 乡村）——urbanization 就是乡下人往城里搬、城区不断扩张的过程。",
+    "xex": [
+      {"en": "Rapid urbanization drew millions of rural workers into the cities.", "zh": "快速的城市化把数百万农村劳动者吸引进了城市。", "src": "造句"},
+      {"en": "rapid urbanization / the pace of urbanization / urban sprawl", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "urban sprawl", "ipa": "/ˈɜːrbən sprɔːl/", "note": "城市无序蔓延，侧重城区向外低密度扩张这一负面现象"}
+    ],
+    "nu": "托福社会/环境/历史讲座高频，讲工业革命后人口迁移、城市问题与资源压力。",
+    "rootfam": [
+      {
+        "root": "urb-",
+        "meaning": "城市 (city)",
+        "words": [
+          {"w": "urbanization", "g": "城市化"},
+          {"w": "urban", "g": "城市的"},
+          {"w": "suburb", "g": "郊区"},
+          {"w": "urbane", "g": "彬彬有礼的"},
+          {"w": "suburban", "g": "郊区的"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "cartography",
+    "p": "/kɑːrˈtɑːɡrəfi/",
+    "d": "n. 制图学，地图绘制",
+    "levels": ["托福"],
+    "core": "绘制地图的技术与学科",
+    "ety": "源自法语 cartographie，由 carte「地图、卡片」（源自拉丁语 charta「纸、文献」）+ 希腊语 graphein「描绘」构成，字面「绘制地图」。graph 同见于 geography、topography。",
+    "ph": "carto(地图)+graphy(描绘) → 画地图的学问 → 制图学",
+    "tip": "carto=地图（同 card/chart 卡片、图表），-graphy=描绘——把大地画成图就是制图学。",
+    "xex": [
+      {"en": "Advances in cartography allowed explorers to record coastlines with new accuracy.", "zh": "制图学的进步使探险家能以前所未有的精度记录海岸线。", "src": "造句"},
+      {"en": "the history of cartography / early cartography / a skilled cartographer", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mapmaking", "ipa": "/ˈmæpmeɪkɪŋ/", "note": "通俗对应「制图」，指绘制地图这一动作，学科色彩弱于 cartography"}
+    ],
+    "nu": "托福地理/历史讲座高频，讲大航海时代地图精度提升与探险、贸易的关系。",
+    "rootfam": [
+      {
+        "root": "cart-/chart-",
+        "meaning": "纸、图 (paper, map)",
+        "words": [
+          {"w": "cartography", "g": "制图学"},
+          {"w": "chart", "g": "图表、海图"},
+          {"w": "card", "g": "卡片"},
+          {"w": "cartoon", "g": "卡通、草图"},
+          {"w": "charter", "g": "特许状"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "elevation",
+    "p": "/ˌelɪˈveɪʃn/",
+    "d": "n. 海拔，高度；提升，抬高",
+    "levels": ["托福"],
+    "core": "某地高出海平面的垂直高度",
+    "ety": "源自拉丁语 elevare「抬起」，来自 e-（ex-「向外、向上」）+ levare「举、使轻」，源于 levis「轻的」。同根有 elevate、lever、levity、relieve。",
+    "ph": "e(向上)+lev(举)+ation(名词) → 被举高的程度 → 海拔",
+    "tip": "lev=举/轻（想 elevator 电梯把你「举」上去）——elevation 就是被抬高到多少米，即海拔。",
+    "xex": [
+      {"en": "At higher elevations, temperatures drop and vegetation becomes sparse.", "zh": "在海拔较高处，气温下降，植被变得稀疏。", "src": "造句"},
+      {"en": "high elevation / at an elevation of / elevation above sea level", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "altitude", "ipa": "/ˈæltɪtuːd/", "note": "高度、海拔，更常用于飞行高度或空中某点离地/海面的高度"}
+    ],
+    "nu": "托福地理/生态讲座高频，考海拔升高导致气温下降、植被分带（altitudinal zonation）。",
+    "rootfam": [
+      {
+        "root": "lev-",
+        "meaning": "举、轻 (lift, light)",
+        "words": [
+          {"w": "elevation", "g": "海拔、提升"},
+          {"w": "elevate", "g": "抬高"},
+          {"w": "lever", "g": "杠杆"},
+          {"w": "relieve", "g": "减轻"},
+          {"w": "levity", "g": "轻浮"},
+          {"w": "alleviate", "g": "缓解"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "altitude",
+    "p": "/ˈæltɪtuːd/",
+    "d": "n. 海拔，高度；高处",
+    "levels": ["托福"],
+    "core": "某点在海平面或地面以上的垂直高度",
+    "ety": "源自拉丁语 altitudo「高度」，来自 altus「高的」+ 名词后缀 -tudo。同一 alt- 也给了 altar（高台）、exalt（抬高、赞颂）、alto（女低音，声部相对高）。",
+    "ph": "alt(高)+itude(名词) → 高的程度 → 高度/海拔",
+    "tip": "alt=高（想 alto 高音、altimeter 高度计）——飞机飞在多高就是 altitude；高海拔空气稀薄。",
+    "xex": [
+      {"en": "At high altitude the thin air makes breathing more difficult.", "zh": "在高海拔处，稀薄的空气使呼吸变得更困难。", "src": "造句"},
+      {"en": "at high altitude / gain altitude / altitude sickness", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "elevation", "ipa": "/ˌelɪˈveɪʃn/", "note": "更常指地面某地的海拔（地形），altitude 更常指空中或飞行高度"}
+    ],
+    "nu": "托福地理/天文/生物讲座高频，讲高海拔缺氧、气温递减与生物适应。",
+    "rootfam": [
+      {
+        "root": "alt-",
+        "meaning": "高 (high)",
+        "words": [
+          {"w": "altitude", "g": "海拔、高度"},
+          {"w": "altar", "g": "祭坛（高台）"},
+          {"w": "exalt", "g": "抬高、赞颂"},
+          {"w": "alto", "g": "女低音"},
+          {"w": "altimeter", "g": "高度计"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "basin",
+    "p": "/ˈbeɪsn/",
+    "d": "n. 盆地；流域；盆，水池",
+    "levels": ["托福"],
+    "core": "四周高、中间低的碗状陆地或一条河的集水区域",
+    "ety": "源自古法语 bacin，来自晚期拉丁语 bacchinon「盆、碗」。地理义由「碗状容器」引申而来——盆地形似大碗，流域则是承接一条河所有来水的「大盆」。",
+    "ph": "本义「盆、碗」→ 四周高中间低的碗状地 → 盆地/流域",
+    "tip": "basin 就是「大脸盆」——盆地是碗状洼地，drainage basin（流域）是接住一条河全部雨水的「大盆」。",
+    "xex": [
+      {"en": "The river and all its tributaries drain a vast basin covering several states.", "zh": "这条河及其所有支流汇集了一片横跨数州的广阔流域。", "src": "造句"},
+      {"en": "a river basin / drainage basin / sedimentary basin", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "catchment", "ipa": "/ˈkætʃmənt/", "note": "集水区，与「流域」义同，强调汇集降水的整片区域"}
+    ],
+    "nu": "托福地理/地质讲座高频，注意区分「盆地」（地貌）与「流域」（集水区）两义。",
+    "senses": [
+      {"gloss": "n. 盆地", "logic": "四周高中间低的碗状洼地", "en": "The desert lies in a low basin ringed by mountains.", "zh": "这片沙漠位于群山环绕的低洼盆地中。"},
+      {"gloss": "n. 流域", "logic": "承接一条河全部来水的「大盆」集水区", "en": "The Amazon basin holds the world's largest rainforest.", "zh": "亚马孙流域拥有世界上最大的雨林。"}
+    ]
+  },
+  {
+    "w": "plain",
+    "p": "/pleɪn/",
+    "d": "n. 平原 a. 清楚的；朴素的；平凡的",
+    "levels": ["托福"],
+    "core": "地势平坦开阔的大片低地",
+    "ety": "源自古法语 plain，来自拉丁语 planus「平的、平坦的」。同一 plan- 也给了 plan、plane、explain（把话「摊平」讲清楚）；地理义直取「平坦之地」。",
+    "ph": "plan(平)+ → 一片平坦开阔的地 → 平原",
+    "tip": "plain 与 plane（平面）、plan（平面图）同根 plan=平——平原就是「平坦的一片地」，形容词义「清楚、朴素」也都由「平」引申。",
+    "xex": [
+      {"en": "Herds of bison once roamed the vast grassy plains.", "zh": "成群的野牛曾漫游于广袤的草原上。", "src": "造句"},
+      {"en": "a flat plain / grassy plains / coastal plain", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "prairie", "ipa": "/ˈpreri/", "note": "北美大草原，特指温带半干旱的草本平原"},
+      {"w": "flatland", "ipa": "/ˈflætlænd/", "note": "泛指平坦低地，口语化，无 prairie 的植被限定"}
+    ],
+    "nu": "托福地理/生态讲座高频，与 plateau（高原）、basin（盆地）对比，讲聚落与农业选址。"
+  },
+  {
+    "w": "arid",
+    "p": "/ˈærɪd/",
+    "d": "a. 干旱的；贫瘠的；枯燥的",
+    "levels": ["托福"],
+    "core": "降水极少、极度干燥的",
+    "ety": "源自拉丁语 aridus「干的」，来自 arere「变干、干枯」。同源有 arson（纵火，来自「燃烧」义分支）；核心义始终是「缺水而干」。",
+    "ph": "ar(干枯)+id(形容词) → 干枯的 → 干旱的",
+    "tip": "arid 谐音「哎，热的」——干旱少雨、寸草难生；arid region/climate 是听力高频，比 dry 更学术、程度更重。",
+    "xex": [
+      {"en": "Few plants can survive in the arid climate of the desert interior.", "zh": "在沙漠腹地的干旱气候中，很少有植物能存活。", "src": "造句"},
+      {"en": "an arid region / arid climate / arid and semi-arid", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "parched", "ipa": "/pɑːrtʃt/", "note": "焦干的，强调因缺水而干裂，语气更强"},
+      {"w": "barren", "ipa": "/ˈbærən/", "note": "贫瘠的，侧重土地不长作物，未必强调无雨"}
+    ],
+    "nu": "托福气候/生态讲座高频，与 temperate、humid、semi-arid 成组描述气候带。"
+  },
+  {
+    "w": "temperate",
+    "p": "/ˈtempərət/",
+    "d": "a. 温带的，气候温和的；有节制的",
+    "levels": ["托福"],
+    "core": "冷热适中、气候温和的（气候带）",
+    "ety": "源自拉丁语 temperatus「调和适度的」，来自 temperare「使适度、调和」，源于 tempus「时间、季节」。同根有 temperature、temper、temperament，核心义「按分寸调和」。",
+    "ph": "temper(调和/适度)+ate → 冷热被调和得适中的 → 温带的",
+    "tip": "与 temperature 同根 temper=调和——温带气候「不冷不热」，四季分明；引申「有节制的」也是「有分寸」。",
+    "xex": [
+      {"en": "Temperate forests experience four distinct seasons each year.", "zh": "温带森林每年都经历分明的四季。", "src": "造句"},
+      {"en": "temperate zone / temperate climate / temperate forest", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mild", "ipa": "/maɪld/", "note": "温和的，泛指气候不极端，学术分类色彩弱于 temperate"}
+    ],
+    "nu": "托福气候/生态讲座高频，与 tropical、arid、polar 并列描述气候带与对应植被。",
+    "rootfam": [
+      {
+        "root": "temper-",
+        "meaning": "调和、适度 (mix, moderate)",
+        "words": [
+          {"w": "temperate", "g": "温带的、有节制的"},
+          {"w": "temperature", "g": "温度"},
+          {"w": "temper", "g": "脾气、调和"},
+          {"w": "temperament", "g": "性情"},
+          {"w": "distemper", "g": "失调、犬瘟热"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "tropical",
+    "p": "/ˈtrɑːpɪkl/",
+    "d": "a. 热带的；炎热潮湿的",
+    "levels": ["托福"],
+    "core": "位于南北回归线之间、终年炎热多雨的",
+    "ety": "源自晚期拉丁语 tropicus，来自希腊语 tropikos「转向的」，源于 trepein「转」——因太阳直射点每年在南北回归线（tropics）之间「折返转向」，故这一带称 tropical。同根有 tropic、trope。",
+    "ph": "trop(转)+ical → 太阳直射折返的那一带的 → 热带的",
+    "tip": "tropic（回归线）源于「转向」——太阳直射到南北回归线就「掉头」；这两线之间即热带，终年高温多雨。",
+    "xex": [
+      {"en": "Tropical rainforests contain more plant and animal species than any other biome.", "zh": "热带雨林所含的动植物物种比任何其他生物群落都多。", "src": "造句"},
+      {"en": "tropical rainforest / tropical climate / tropical storm", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "equatorial", "ipa": "/ˌekwəˈtɔːriəl/", "note": "赤道的，特指赤道附近，比 tropical 范围更窄、更靠中心"}
+    ],
+    "nu": "托福生态/气候讲座高频，讲热带雨林生物多样性、降水与纬度的关系。",
+    "rootfam": [
+      {
+        "root": "trop-",
+        "meaning": "转、转向 (turn)",
+        "words": [
+          {"w": "tropical", "g": "热带的"},
+          {"w": "tropic", "g": "回归线"},
+          {"w": "trope", "g": "比喻、转义"},
+          {"w": "heliotrope", "g": "向日植物"},
+          {"w": "phototropism", "g": "向光性"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "equator",
+    "p": "/ɪˈkweɪtər/",
+    "d": "n. 赤道",
+    "levels": ["托福"],
+    "core": "把地球平分为南北两半球的 0° 纬线",
+    "ety": "源自中世纪拉丁语 aequator「使相等者」，来自拉丁语 aequare「使相等」，源于 aequus「相等的、平的」。它「把地球等分」为南北两半球，故名。同根有 equal、equation、equinox。",
+    "ph": "equat(相等)+or → 把地球等分为两半者 → 赤道",
+    "tip": "equator 与 equal 同根 equ=相等——它把地球「均分」成南北半球；赤道地区终年高温、昼夜近等长。",
+    "xex": [
+      {"en": "Regions near the equator receive the most direct sunlight year-round.", "zh": "赤道附近的地区终年接收最直射的阳光。", "src": "造句"},
+      {"en": "near the equator / cross the equator / at the equator", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "the line", "ipa": "/ðə laɪn/", "note": "航海口语中 crossing the line 即「过赤道」，非正式对应"}
+    ],
+    "nu": "托福地理/天文讲座高频，考赤道受直射、无季节变化、雨量丰沛的因果链。",
+    "rootfam": [
+      {
+        "root": "equ-",
+        "meaning": "相等、平 (equal, even)",
+        "words": [
+          {"w": "equator", "g": "赤道"},
+          {"w": "equal", "g": "相等的"},
+          {"w": "equation", "g": "方程、等式"},
+          {"w": "equinox", "g": "昼夜平分点"},
+          {"w": "equilibrium", "g": "平衡"},
+          {"w": "adequate", "g": "足够的"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "coastline",
+    "p": "/ˈkoʊstlaɪn/",
+    "d": "n. 海岸线",
+    "levels": ["托福"],
+    "core": "陆地与海洋交界的轮廓线",
+    "ety": "由 coast「海岸」+ line「线」复合而成。coast 源自拉丁语 costa「肋骨、侧边」——海岸是大陆的「侧边」，同根有 coastal、coaster。",
+    "ph": "coast(海岸)+line(线) → 陆海交界的那条线 → 海岸线",
+    "tip": "coast=侧边（同 costa 肋骨）——海岸线就是大陆临海的「边线」；rugged/indented coastline 曲折海岸是听力高频。",
+    "xex": [
+      {"en": "The rugged coastline offered natural harbors for early trading ships.", "zh": "曲折的海岸线为早期贸易船只提供了天然良港。", "src": "造句"},
+      {"en": "a rugged coastline / along the coastline / indented coastline", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "shoreline", "ipa": "/ˈʃɔːrlaɪn/", "note": "岸线，可指海岸也可指湖岸、河岸，范围比 coastline 广"}
+    ],
+    "nu": "托福地理/历史讲座高频，讲海岸形态如何影响港口、贸易与聚落分布。",
+    "rootfam": [
+      {
+        "root": "cost-",
+        "meaning": "肋、侧边 (rib, side)",
+        "words": [
+          {"w": "coastline", "g": "海岸线"},
+          {"w": "coast", "g": "海岸"},
+          {"w": "coastal", "g": "沿海的"},
+          {"w": "coaster", "g": "杯垫、沿岸船"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "erosion",
+    "p": "/ɪˈroʊʒn/",
+    "d": "n. 侵蚀，冲蚀；（逐渐的）削弱",
+    "levels": ["托福"],
+    "core": "风、水、冰等外力逐渐磨损搬走地表物质的过程",
+    "ety": "源自拉丁语 erodere「啃蚀掉」，来自 e-（ex-「掉」）+ rodere「啃、咬」。同一 rod- 也给了 rodent（啮齿动物）、corrode（腐蚀）、erode。",
+    "ph": "e(掉)+ros(啃)+ion(名词) → 一点点被啃掉的过程 → 侵蚀",
+    "tip": "rod=啃（想 rodent 老鼠爱啃）——流水风沙像牙齿一样把地表「啃掉搬走」；引申「逐渐削弱（如权力、海岸）」。",
+    "xex": [
+      {"en": "Wind and water erosion gradually wore the mountains down to gentle hills.", "zh": "风力和水力的侵蚀逐渐把群山磨蚀成平缓的丘陵。", "src": "造句"},
+      {"en": "soil erosion / coastal erosion / erosion by wind and water", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "weathering", "ipa": "/ˈweðərɪŋ/", "note": "风化，指岩石就地破碎分解，不含「搬运」；erosion 兼含磨损与搬走"},
+      {"w": "abrasion", "ipa": "/əˈbreɪʒn/", "note": "磨蚀，侧重颗粒摩擦磨损地表这一具体机制"}
+    ],
+    "nu": "托福地质讲座核心过程词，与 weathering、deposition（沉积）连讲地貌演变。",
+    "rootfam": [
+      {
+        "root": "rod-/ros-",
+        "meaning": "啃、咬 (gnaw)",
+        "words": [
+          {"w": "erosion", "g": "侵蚀"},
+          {"w": "erode", "g": "侵蚀"},
+          {"w": "corrode", "g": "腐蚀"},
+          {"w": "rodent", "g": "啮齿动物"},
+          {"w": "corrosive", "g": "腐蚀性的"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "region",
+    "p": "/ˈriːdʒən/",
+    "d": "n. 地区，区域；范围，领域",
+    "levels": ["托福"],
+    "core": "具有某种共同特征、可与周边区分的一片地带",
+    "ety": "源自拉丁语 regio「方向、地带、界域」，来自 regere「统治、划界、引导直线」。同一 reg- 也给了 region、regime、regular、direct——都含「划直线、定界限」的意味。",
+    "ph": "reg(划界/引导)+ion(名词) → 被划出界的一片地 → 区域",
+    "tip": "reg=划界/统治（想 regime 政权划定辖区）——region 是按气候、文化等特征「划定」的一片地带；arid region 干旱区常见。",
+    "xex": [
+      {"en": "This region's mild climate makes it ideal for growing grapes.", "zh": "这一地区温和的气候使其非常适合种植葡萄。", "src": "造句"},
+      {"en": "a coastal region / an arid region / the polar regions", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "zone", "ipa": "/zoʊn/", "note": "地带，尤指按某一标准（气候、时间）划出的带状区域，如 climate zone"}
+    ],
+    "nu": "托福各类讲座通用高频词，与 climate、arid、polar 等搭配界定研究范围。",
+    "rootfam": [
+      {
+        "root": "reg-",
+        "meaning": "划界、统治、引导直线 (rule, guide straight)",
+        "words": [
+          {"w": "region", "g": "区域"},
+          {"w": "regime", "g": "政权、制度"},
+          {"w": "regular", "g": "规则的"},
+          {"w": "regulate", "g": "调控"},
+          {"w": "direct", "g": "直接的、指导"}
+        ]
+      }
+    ]
+  },
+  {
+    "w": "irrigation",
+    "p": "/ˌɪrɪˈɡeɪʃn/",
+    "d": "n. 灌溉；（医学）冲洗",
+    "levels": ["托福"],
+    "core": "人工引水浇灌农田的做法",
+    "ety": "源自拉丁语 irrigare「引水灌注」，来自 in-「向内」+ rigare「浇水、湿润」。同一 rig- 分支也给了 irrigate；核心义「把水引进土地」。",
+    "ph": "ir(=in 向内)+rig(浇水)+ation(名词) → 把水引进田里 → 灌溉",
+    "tip": "拆 ir(in 进)+rig(浇)——把河水「浇进」旱地里种庄稼；古代文明多靠 irrigation 在干旱区兴起。",
+    "xex": [
+      {"en": "Ancient farmers built canals for irrigation to grow crops in dry valleys.", "zh": "古代农民修建灌溉水渠，以在干旱的河谷里种植作物。", "src": "造句"},
+      {"en": "irrigation system / irrigation canals / rely on irrigation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "watering", "ipa": "/ˈwɔːtərɪŋ/", "note": "浇水，日常通俗说法，无 irrigation 的「系统化引水工程」含义"}
+    ],
+    "nu": "托福历史/农业/地理讲座高频，讲古文明在干旱区靠灌溉发展农业与人口。",
+    "rootfam": [
+      {
+        "root": "rig-",
+        "meaning": "浇水、湿润 (moisten, water)",
+        "words": [
+          {"w": "irrigation", "g": "灌溉"},
+          {"w": "irrigate", "g": "灌溉"}
+        ]
+      }
+    ]
+  }
+]

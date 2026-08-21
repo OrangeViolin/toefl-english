@@ -1,0 +1,752 @@
+[
+  {
+    "w": "anthropology",
+    "p": "/ˌænθrəˈpɑːlədʒi/",
+    "d": "n. 人类学（研究人类文化、社会与生物演化的学科）",
+    "levels": ["托福"],
+    "core": "研究「人」的学科总称——从体质演化到文化习俗全覆盖。",
+    "ety": "希腊语 anthrōpos（人）+ -logia（学问、研究）；字面即「关于人的学问」。",
+    "ph": "anthrop（人）+ o + logy（学）——记住 anthrop = human being。",
+    "tip": "把 anthrop 想成「安着人 (an-throp)」的一门学问：所有讲人类的课都归它。",
+    "xex": [
+      {"en": "Cultural anthropology examines how different societies organize kinship and belief.", "zh": "文化人类学考察不同社会如何组织亲属关系与信仰。", "src": "造句"},
+      {"en": "physical / biological anthropology 体质（生物）人类学", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ethnology", "ipa": "/eθˈnɑːlədʒi/", "note": "民族学，侧重不同民族文化的比较研究，是人类学的分支"}
+    ],
+    "nu": "人类学 = 一切以「人」为对象、跨文化跨时间的系统研究。",
+    "rootfam": [
+      {"root": "anthrop", "meaning": "人，人类", "words": [
+        {"w": "anthropology", "g": "人类学"},
+        {"w": "anthropologist", "g": "人类学家"},
+        {"w": "philanthropy", "g": "慈善，博爱（爱人类）"},
+        {"w": "misanthrope", "g": "厌世者（恨人类的人）"},
+        {"w": "anthropoid", "g": "类人猿的，像人的"},
+        {"w": "anthropocentric", "g": "以人类为中心的"}
+      ]}
+    ]
+  },
+  {
+    "w": "archaeology",
+    "p": "/ˌɑːrkiˈɑːlədʒi/",
+    "d": "n. 考古学（通过遗物、遗址研究古代人类的学科）",
+    "levels": ["托福"],
+    "core": "从地下挖出来的东西反推古人怎么生活。",
+    "ety": "希腊语 arkhaios（古老的）+ -logia（学问）；字面「研究古老之物的学问」。",
+    "ph": "archae（古老）+ o + logy（学）——archae 见于 archaic（古旧的）。",
+    "tip": "考古 = 「拱 (archae) 出古物」，一铲一铲挖出历史。",
+    "xex": [
+      {"en": "Archaeology reconstructs daily life from broken pottery and stone tools.", "zh": "考古学从破碎的陶器和石器中重建古人的日常生活。", "src": "造句"},
+      {"en": "underwater / experimental archaeology 水下 / 实验考古学", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "prehistory", "ipa": "/ˌpriːˈhɪstəri/", "note": "史前史，指文字记载之前的时期，考古是研究它的主要手段"}
+    ],
+    "nu": "考古学 = 用物质遗存说话的历史学。",
+    "rootfam": [
+      {"root": "archae/arch", "meaning": "古老，起源，最初", "words": [
+        {"w": "archaeology", "g": "考古学"},
+        {"w": "archaic", "g": "古老的，过时的"},
+        {"w": "archetype", "g": "原型"},
+        {"w": "archive", "g": "档案（保存最初记录）"}
+      ]}
+    ]
+  },
+  {
+    "w": "ritual",
+    "p": "/ˈrɪtʃuəl/",
+    "d": "n. 仪式，典礼；例行公事 a. 仪式的；例行的",
+    "levels": ["托福"],
+    "core": "有固定套路、带象征意义的重复行为。",
+    "ety": "拉丁语 ritus（宗教仪式、习俗）+ -al；与 rite（仪式）同源。",
+    "ph": "rit（仪式）+ ual——rite 是名词，ritual 是它的「加长版」。",
+    "tip": "ritual 里藏着 rite（仪式）：一套 rite 反复走就成了 ritual。",
+    "xex": [
+      {"en": "The burial ritual required mourners to fast for three days.", "zh": "这一葬礼仪式要求哀悼者斋戒三天。", "src": "造句"},
+      {"en": "religious / initiation ritual 宗教 / 成年礼仪式", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ceremony", "ipa": "/ˈserəmoʊni/", "note": "典礼，更强调正式、公开的场合；ritual 更强调固定象征程序"},
+      {"w": "rite", "ipa": "/raɪt/", "note": "仪式（尤指宗教的），是 ritual 的词根，更书面"}
+    ],
+    "nu": "仪式 = 被反复执行、承载意义的固定动作序列。",
+    "rootfam": [
+      {"root": "rit", "meaning": "仪式，宗教惯例", "words": [
+        {"w": "ritual", "g": "仪式"},
+        {"w": "rite", "g": "仪式，典礼"},
+        {"w": "ritualistic", "g": "仪式化的"}
+      ]}
+    ]
+  },
+  {
+    "w": "kinship",
+    "p": "/ˈkɪnʃɪp/",
+    "d": "n. 血缘关系，亲属关系；密切联系",
+    "levels": ["托福"],
+    "core": "谁跟谁是亲戚——人类学社会结构的核心概念。",
+    "ety": "kin（亲属，古英语 cynn 家族、种类）+ -ship（表状态、关系的名词后缀）。",
+    "ph": "kin（亲属）+ ship（关系）——ship 后缀表「某种关系/状态」，如 friendship。",
+    "tip": "kin 就是「亲」，加 -ship 表关系：亲属关系这条「船」把家族系在一起。",
+    "xex": [
+      {"en": "Kinship systems determine who may marry whom in many tribal societies.", "zh": "在许多部落社会中，亲属制度决定了谁可以和谁通婚。", "src": "造句"},
+      {"en": "kinship ties / system 亲属纽带 / 亲属制度", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "lineage", "ipa": "/ˈlɪniɪdʒ/", "note": "世系、血统，强调按代际排列的直系传承；kinship 是更宽的横向纵向亲属网"}
+    ],
+    "nu": "亲属关系 = 由血缘或婚姻联结的社会关系网络。",
+    "rootfam": [
+      {"root": "kin", "meaning": "亲属，家族", "words": [
+        {"w": "kinship", "g": "亲属关系"},
+        {"w": "kin", "g": "亲属，家族"},
+        {"w": "kindred", "g": "亲属；同类的"},
+        {"w": "akin", "g": "同族的，类似的"}
+      ]}
+    ]
+  },
+  {
+    "w": "ethnography",
+    "p": "/eθˈnɑːɡrəfi/",
+    "d": "n. 民族志（对特定人群文化的实地描述性研究）",
+    "levels": ["托福"],
+    "core": "人类学家住进一个社群、长期观察后写下的文化实录。",
+    "ety": "希腊语 ethnos（民族、族群）+ -graphy（书写、记录）；字面「对民族的书写」。",
+    "ph": "ethno（民族）+ graphy（写）——graphy 见于 geography、biography。",
+    "tip": "ethno（民族）+ graph（写）：把一个民族「写下来」就是民族志。",
+    "xex": [
+      {"en": "Her ethnography of a fishing village took two years of fieldwork.", "zh": "她关于一个渔村的民族志研究花了两年田野调查。", "src": "造句"},
+      {"en": "ethnography relies on participant observation 民族志依赖参与式观察", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "fieldwork", "ipa": "/ˈfiːldwɜːrk/", "note": "田野调查，是产出民族志的方法；ethnography 是最终的文本成果"}
+    ],
+    "nu": "民族志 = 基于实地参与观察写成的文化描述。",
+    "rootfam": [
+      {"root": "ethn", "meaning": "民族，族群", "words": [
+        {"w": "ethnography", "g": "民族志"},
+        {"w": "ethnic", "g": "种族的，民族的"},
+        {"w": "ethnicity", "g": "族裔，民族性"},
+        {"w": "ethnology", "g": "民族学"},
+        {"w": "ethnocentric", "g": "民族中心主义的"}
+      ]},
+      {"root": "graph", "meaning": "写，记录", "words": [
+        {"w": "ethnography", "g": "民族志"},
+        {"w": "geography", "g": "地理学"},
+        {"w": "biography", "g": "传记"},
+        {"w": "photograph", "g": "照片"}
+      ]}
+    ]
+  },
+  {
+    "w": "hominid",
+    "p": "/ˈhɑːmɪnɪd/",
+    "d": "n. 人科动物，原始人类（包括现代人及其已灭绝近亲）",
+    "levels": ["托福"],
+    "core": "生物学分类上属于「人科」的那一支——从早期直立行走者到现代人。",
+    "ety": "拉丁语 homo/homin-（人）+ -id（表动物分类的后缀）；字面「人科的成员」。",
+    "ph": "homin（人）+ id——homin 见于 homo sapiens 的 homo。",
+    "tip": "hominid 里有 homin（人）：凡是「人科」这一支的都算，别跟 hominy（玉米糊）混。",
+    "xex": [
+      {"en": "Fossil evidence shows early hominids walked upright millions of years ago.", "zh": "化石证据表明早期人科动物在数百万年前就已直立行走。", "src": "造句"},
+      {"en": "early / bipedal hominid 早期 / 双足直立的人科动物", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "hominin", "ipa": "/ˈhɑːmɪnɪn/", "note": "人族，现代分类中更窄，专指人类及其直系祖先，不含大猿"}
+    ],
+    "nu": "人科动物 = 生物分类中与人类同科的物种，含化石祖先。",
+    "rootfam": [
+      {"root": "homin/homo", "meaning": "人", "words": [
+        {"w": "hominid", "g": "人科动物"},
+        {"w": "homicide", "g": "杀人（罪）"},
+        {"w": "hominoid", "g": "类人的，人猿总科的"},
+        {"w": "homage", "g": "敬意（源自封臣之礼）"}
+      ]}
+    ]
+  },
+  {
+    "w": "artifact",
+    "p": "/ˈɑːrtɪfækt/",
+    "d": "n. 人工制品，手工艺品（尤指有考古价值的古物）",
+    "levels": ["托福"],
+    "core": "人做出来的东西——考古现场挖到的工具、陶器、饰品都算。",
+    "ety": "拉丁语 arte（用技艺，art 的夺格）+ factum（做，来自 facere）；字面「用技艺做出的东西」。",
+    "ph": "arti（技艺）+ fact（做）——fact 词根表「做」，见于 factory、manufacture。",
+    "tip": "art（技艺）+ fact（做）：靠手艺「做」出来的物件，天然物不算 artifact。",
+    "xex": [
+      {"en": "The museum displayed stone artifacts unearthed from a Neolithic settlement.", "zh": "博物馆展出了从一处新石器时代聚落出土的石制人工制品。", "src": "造句"},
+      {"en": "ancient / cultural artifact 古代 / 文化人工制品", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "relic", "ipa": "/ˈrelɪk/", "note": "遗物、遗迹，更强调「遗留下来的、有历史情感价值」；artifact 更中性、强调人工性"}
+    ],
+    "nu": "人工制品 = 由人类制作、带文化信息的物件。",
+    "rootfam": [
+      {"root": "fact/fic", "meaning": "做，制造", "words": [
+        {"w": "artifact", "g": "人工制品"},
+        {"w": "factory", "g": "工厂"},
+        {"w": "manufacture", "g": "制造"},
+        {"w": "fiction", "g": "虚构作品"},
+        {"w": "beneficial", "g": "有益的"}
+      ]}
+    ]
+  },
+  {
+    "w": "mythology",
+    "p": "/mɪˈθɑːlədʒi/",
+    "d": "n. 神话，神话学；（某群体的）传说体系",
+    "levels": ["托福"],
+    "core": "一个文化解释世界起源与神灵的整套故事。",
+    "ety": "希腊语 mythos（故事、传说）+ -logia（学问、集合）；字面「关于神话的整套/学问」。",
+    "ph": "myth（神话）+ ology（学/集合）——myth 单独也是词。",
+    "tip": "myth 是单个神话，加 -ology 变成「一整套」神话或研究它的学问。",
+    "xex": [
+      {"en": "Greek mythology explains natural phenomena through the actions of gods.", "zh": "希腊神话通过神灵的行为来解释自然现象。", "src": "造句"},
+      {"en": "creation myth / mythology 创世神话", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "legend", "ipa": "/ˈledʒənd/", "note": "传说，常有一定历史依据的英雄故事；myth 多涉神灵与宇宙起源"},
+      {"w": "folklore", "ipa": "/ˈfoʊklɔːr/", "note": "民间传说，泛指民众口传的故事习俗，范围比神话广"}
+    ],
+    "nu": "神话 = 文化用来解释起源与秩序的神圣叙事。",
+    "rootfam": [
+      {"root": "myth", "meaning": "神话，传说", "words": [
+        {"w": "mythology", "g": "神话学"},
+        {"w": "myth", "g": "神话"},
+        {"w": "mythical", "g": "神话的，虚构的"},
+        {"w": "mythic", "g": "神话般的"}
+      ]}
+    ]
+  },
+  {
+    "w": "tribal",
+    "p": "/ˈtraɪbl/",
+    "d": "a. 部落的，宗族的；种族的",
+    "levels": ["托福"],
+    "core": "跟「部落」这种以血缘/地缘结成的传统群体有关的。",
+    "ety": "拉丁语 tribus（罗马早期的部族划分，据说源自 tri- 三，指三个原始部族）+ -al。",
+    "ph": "trib（部落/给予）+ al——名词 tribe 加 -al 变形容词。",
+    "tip": "tribe（部落）去 e 加 -al：形容一切「部落层面」的事物。",
+    "xex": [
+      {"en": "Tribal societies often organize authority around elders rather than a central state.", "zh": "部落社会常围绕长老而非中央国家来组织权力。", "src": "造句"},
+      {"en": "tribal chief / identity / land 部落首领 / 认同 / 土地", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "clan", "ipa": "/klæn/", "note": "氏族，比部落更小、强调共同祖先；tribal 指更大的部落层级"}
+    ],
+    "nu": "部落的 = 属于以血缘地缘结成的前国家群体。",
+    "rootfam": [
+      {"root": "trib", "meaning": "部族；给予，分配", "words": [
+        {"w": "tribal", "g": "部落的"},
+        {"w": "tribe", "g": "部落"},
+        {"w": "tribute", "g": "贡品，敬意"},
+        {"w": "contribute", "g": "贡献"},
+        {"w": "distribute", "g": "分配"}
+      ]}
+    ]
+  },
+  {
+    "w": "migrate",
+    "p": "/ˈmaɪɡreɪt/",
+    "d": "v. 迁徙；移居；（数据等）迁移",
+    "levels": ["托福"],
+    "core": "整群地从一地搬到另一地生活——人类扩散史的关键动作。",
+    "ety": "拉丁语 migrare（迁移、改变住处）；词根 migr- 表「移动、迁徙」。",
+    "ph": "migr（迁移）+ ate（动词后缀）——migr 见于 immigrate、emigrate。",
+    "tip": "记方向对：im-migrate 迁「入」、e-migrate 迁「出」，migrate 本身中性。",
+    "xex": [
+      {"en": "Early humans migrated out of Africa and gradually populated other continents.", "zh": "早期人类迁出非洲，逐渐在其他大陆定居繁衍。", "src": "造句"},
+      {"en": "migrate across / to / from 迁徙穿越 / 迁往 / 迁自", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "disperse", "ipa": "/dɪˈspɜːrs/", "note": "分散、散布，强调向四面散开；migrate 强调整体迁往新地"}
+    ],
+    "nu": "迁徙 = 群体从一地迁往另一地长期定居。",
+    "rootfam": [
+      {"root": "migr", "meaning": "迁移，移动", "words": [
+        {"w": "migrate", "g": "迁徙"},
+        {"w": "migration", "g": "迁徙，移民"},
+        {"w": "immigrate", "g": "移入，移民入境"},
+        {"w": "emigrate", "g": "移出，移居国外"},
+        {"w": "migratory", "g": "迁徙的"}
+      ]}
+    ]
+  },
+  {
+    "w": "domesticate",
+    "p": "/dəˈmestɪkeɪt/",
+    "d": "vt. 驯养，驯化（动植物）；使精于家务",
+    "levels": ["托福"],
+    "core": "把野生动植物变成人类可控可养的物种——农业文明的起点。",
+    "ety": "拉丁语 domus（家）→ domesticus（属于家的）+ -ate；字面「使成为家里的」。",
+    "ph": "domestic（家庭的）+ ate——domus（家）见于 domicile。",
+    "tip": "domestic 是「家养的」，加 -ate 变动作：把野的「弄进家」＝驯化。",
+    "xex": [
+      {"en": "Humans first domesticated dogs, then goats, sheep, and cattle.", "zh": "人类先驯化了狗，随后是山羊、绵羊和牛。", "src": "造句"},
+      {"en": "domesticate plants / animals / crops 驯化植物 / 动物 / 作物", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "tame", "ipa": "/teɪm/", "note": "驯服，多指使单只野生动物变温顺；domesticate 指使整个物种世代适应人类饲养"},
+      {"w": "cultivate", "ipa": "/ˈkʌltɪveɪt/", "note": "栽培、耕作，专用于植物；domesticate 动植物皆可"}
+    ],
+    "nu": "驯化 = 使野生物种世代适应并依赖人类饲养种植。",
+    "rootfam": [
+      {"root": "dom", "meaning": "家，房屋", "words": [
+        {"w": "domesticate", "g": "驯化"},
+        {"w": "domestic", "g": "家庭的，国内的"},
+        {"w": "domicile", "g": "住所"},
+        {"w": "dome", "g": "圆顶"}
+      ]}
+    ]
+  },
+  {
+    "w": "ancestor",
+    "p": "/ˈænsestər/",
+    "d": "n. 祖先，祖宗；原型，原种",
+    "levels": ["托福"],
+    "core": "你血脉往上追的那些人——也可指演化上的更早物种。",
+    "ety": "拉丁语 ante（在前）+ cedere（走）→ antecessor（先行者）；字面「先走在前面的人」。",
+    "ph": "an(te)（在前）+ cest(cede)（走）+ or（人）——cede 表「走」。",
+    "tip": "ances-tor＝「走在前面 (ante+cede) 的人」，就是先辈。反义是 descendant（后代）。",
+    "xex": [
+      {"en": "Many cultures honor their ancestors through offerings and burial rites.", "zh": "许多文化通过供奉和葬礼仪式来敬奉祖先。", "src": "造句"},
+      {"en": "common ancestor / ancestor worship 共同祖先 / 祖先崇拜", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "forebear", "ipa": "/ˈfɔːrber/", "note": "祖先，书面词，几乎只指人的先辈；ancestor 也可用于物种、原型"},
+      {"w": "forefather", "ipa": "/ˈfɔːrfɑːðər/", "note": "先祖，常带敬意，多指民族或家族的男性先辈"}
+    ],
+    "nu": "祖先 = 血缘或演化上先于你的先辈。",
+    "rootfam": [
+      {"root": "ced/cess", "meaning": "走，行进", "words": [
+        {"w": "ancestor", "g": "祖先（先行者）"},
+        {"w": "precede", "g": "先于，在前"},
+        {"w": "proceed", "g": "前进，进行"},
+        {"w": "recede", "g": "后退，退去"},
+        {"w": "process", "g": "过程"}
+      ]}
+    ]
+  },
+  {
+    "w": "nomadic",
+    "p": "/noʊˈmædɪk/",
+    "d": "a. 游牧的；流浪的，居无定所的",
+    "levels": ["托福"],
+    "core": "不定居、随水草/资源不断迁移的生活方式。",
+    "ety": "希腊语 nomas/nomad-（放牧牲畜、四处寻找草场的人）+ -ic；与 nemein（分配草场）相关。",
+    "ph": "nomad（游牧民）+ ic——nomad 本身是名词。",
+    "tip": "nomadic 联想 no-made（没造固定家）：游牧民不建定居的家，逐水草而居。",
+    "xex": [
+      {"en": "Nomadic herders move their livestock seasonally in search of pasture.", "zh": "游牧的牧民按季节迁移牲畜以寻找牧场。", "src": "造句"},
+      {"en": "nomadic lifestyle / tribe / herders 游牧生活方式 / 部落 / 牧民", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "itinerant", "ipa": "/aɪˈtɪnərənt/", "note": "巡回的、流动的，多指为工作四处走动的人；nomadic 强调无固定居所的群体生活"}
+    ],
+    "nu": "游牧的 = 逐资源迁移、不固定定居的生活方式。",
+    "rootfam": [
+      {"root": "nomad", "meaning": "游牧，四处迁移", "words": [
+        {"w": "nomadic", "g": "游牧的"},
+        {"w": "nomad", "g": "游牧民"},
+        {"w": "nomadism", "g": "游牧生活"}
+      ]}
+    ]
+  },
+  {
+    "w": "indigenous",
+    "p": "/ɪnˈdɪdʒənəs/",
+    "d": "a. 本土的，原生的；土著的",
+    "levels": ["托福"],
+    "core": "土生土长、原本就在这片土地上的（人、物种或文化）。",
+    "ety": "拉丁语 indigena（本地人）= indu-（在内）+ gignere（产生、出生）；字面「在本地生出来的」。",
+    "ph": "indi(=in 内)+ gen（生）+ ous——gen 表「产生、出生」。",
+    "tip": "indigenous 含 gen（生）：在「本地生出来的」＝原生的、土著的。别跟 indigent（贫困的）混。",
+    "xex": [
+      {"en": "Indigenous peoples often possess detailed knowledge of local ecosystems.", "zh": "原住民往往拥有关于当地生态系统的细致知识。", "src": "造句"},
+      {"en": "indigenous population / species / language 原住民人口 / 本土物种 / 土著语言", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "native", "ipa": "/ˈneɪtɪv/", "note": "本地的、原产的，日常词；indigenous 更正式，尤用于原住民与生态语境"},
+      {"w": "aboriginal", "ipa": "/ˌæbəˈrɪdʒənl/", "note": "原住民的、土著的，强调「自最初就在此」，常特指澳洲原住民"}
+    ],
+    "nu": "本土的 = 原生于该地、非外来引入的。",
+    "rootfam": [
+      {"root": "gen", "meaning": "产生，出生，种族", "words": [
+        {"w": "indigenous", "g": "本土的（本地生的）"},
+        {"w": "generate", "g": "产生"},
+        {"w": "genetic", "g": "遗传的"},
+        {"w": "genesis", "g": "起源"},
+        {"w": "congenital", "g": "先天的"}
+      ]}
+    ]
+  },
+  {
+    "w": "evolution",
+    "p": "/ˌiːvəˈluːʃn/",
+    "d": "n. 进化，演化；发展，演变",
+    "levels": ["托福"],
+    "core": "物种随时间通过自然选择逐渐变化——也泛指任何缓慢演变。",
+    "ety": "拉丁语 e-（出）+ volvere（卷、转）→ evolvere（展开）；字面「把卷着的东西展开」。",
+    "ph": "e（出）+ volu(volve)（卷/转）+ tion——volve 表「卷、转」。",
+    "tip": "evolution ＝ 把卷起来的画卷「展开 (e+volve)」，历史慢慢铺陈开来。",
+    "xex": [
+      {"en": "The evolution of bipedalism freed early humans' hands for tool use.", "zh": "直立行走的进化解放了早期人类的双手以使用工具。", "src": "造句"},
+      {"en": "human evolution / theory of evolution 人类进化 / 进化论", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "development", "ipa": "/dɪˈveləpmənt/", "note": "发展，泛指渐进变化，中性；evolution 在生物语境特指遗传性状随代际改变"}
+    ],
+    "nu": "进化 = 物种性状经自然选择随时间逐代改变。",
+    "rootfam": [
+      {"root": "volv/volu", "meaning": "卷，转", "words": [
+        {"w": "evolution", "g": "进化（展开）"},
+        {"w": "revolve", "g": "旋转"},
+        {"w": "involve", "g": "卷入，涉及"},
+        {"w": "revolution", "g": "革命，公转"},
+        {"w": "volume", "g": "卷，册；体积"}
+      ]}
+    ]
+  },
+  {
+    "w": "adapt",
+    "p": "/əˈdæpt/",
+    "d": "v.（使）适应；（使）适合；改编，改写",
+    "levels": ["托福"],
+    "core": "调整自己去匹配环境或需求——生物与文化都靠它生存。",
+    "ety": "拉丁语 ad-（朝向）+ aptare（使合适，来自 aptus 合适的）；字面「使朝着合适去调整」。",
+    "ph": "ad（朝向）+ apt（合适）——apt 单独表「恰当的」。",
+    "tip": "ad（朝）+ apt（合适）：朝着「合适」去调，就是适应/改编。",
+    "xex": [
+      {"en": "Species that fail to adapt to environmental change eventually die out.", "zh": "无法适应环境变化的物种最终会灭绝。", "src": "造句"},
+      {"en": "adapt to / adapt oneself to 适应……", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "adjust", "ipa": "/əˈdʒʌst/", "note": "调整，多为小幅、可逆的微调；adapt 常指为契合而作的较根本改变"},
+      {"w": "acclimate", "ipa": "/ˈækləmeɪt/", "note": "使适应（新气候/环境），侧重生理上逐渐习惯；adapt 更宽泛"}
+    ],
+    "nu": "适应 = 调整自身以契合环境或需求。",
+    "rootfam": [
+      {"root": "apt", "meaning": "合适，倾向", "words": [
+        {"w": "adapt", "g": "适应"},
+        {"w": "apt", "g": "恰当的，易于……的"},
+        {"w": "aptitude", "g": "天资，才能"},
+        {"w": "adept", "g": "熟练的"}
+      ]}
+    ]
+  },
+  {
+    "w": "excavate",
+    "p": "/ˈekskəveɪt/",
+    "d": "vt. 挖掘，发掘；掘出（古物）",
+    "levels": ["托福"],
+    "core": "把土层一层层挖开，取出埋在下面的遗迹遗物——考古的核心动作。",
+    "ety": "拉丁语 ex-（出）+ cavare（挖空，来自 cavus 空洞的）；字面「挖空使露出」。",
+    "ph": "ex（出）+ cav（空/洞）+ ate——cav 表「空、洞」，见于 cave、cavity。",
+    "tip": "ex（出）+ cave（洞）：把东西从「洞里挖出来」＝发掘。",
+    "xex": [
+      {"en": "Archaeologists excavated the site layer by layer to preserve context.", "zh": "考古学家逐层发掘该遗址以保存地层背景信息。", "src": "造句"},
+      {"en": "excavate a site / ruins / tomb 发掘遗址 / 废墟 / 墓葬", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "unearth", "ipa": "/ʌnˈɜːrθ/", "note": "挖出、发现，强调把埋藏物「重见天日」，也可比喻发现真相；excavate 更强调系统开挖过程"}
+    ],
+    "nu": "发掘 = 系统地挖开地层取出埋藏遗存。",
+    "rootfam": [
+      {"root": "cav", "meaning": "空，洞", "words": [
+        {"w": "excavate", "g": "发掘（挖空取出）"},
+        {"w": "cave", "g": "洞穴"},
+        {"w": "cavity", "g": "空腔，龋洞"},
+        {"w": "concave", "g": "凹的"}
+      ]}
+    ]
+  },
+  {
+    "w": "prehistoric",
+    "p": "/ˌpriːhɪˈstɔːrɪk/",
+    "d": "a. 史前的（文字记载之前的）",
+    "levels": ["托福"],
+    "core": "在人类发明文字、开始记录历史之前的那段时期。",
+    "ety": "pre-（在……之前）+ historic（历史的，源自希腊 historia 探究、记载）；字面「有史记载之前的」。",
+    "ph": "pre（前）+ histor（历史）+ ic——pre 表「先于」。",
+    "tip": "pre（前）+ historic（历史）：在「历史（文字记录）之前」＝史前。",
+    "xex": [
+      {"en": "Cave paintings are among the most striking records of prehistoric life.", "zh": "洞穴壁画是史前生活最引人注目的记录之一。", "src": "造句"},
+      {"en": "prehistoric times / humans / art 史前时代 / 人类 / 艺术", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "primeval", "ipa": "/praɪˈmiːvl/", "note": "原始的、远古的，强调「世界之初」的洪荒感；prehistoric 特指有文字之前"}
+    ],
+    "nu": "史前的 = 文字记录出现之前的时期。",
+    "rootfam": [
+      {"root": "histor", "meaning": "历史，探究记载", "words": [
+        {"w": "prehistoric", "g": "史前的"},
+        {"w": "historic", "g": "有历史意义的"},
+        {"w": "history", "g": "历史"},
+        {"w": "historian", "g": "历史学家"}
+      ]}
+    ]
+  },
+  {
+    "w": "fossil",
+    "p": "/ˈfɑːsl/",
+    "d": "n. 化石 a. 化石的；陈腐的，守旧的",
+    "levels": ["托福"],
+    "core": "远古生物埋在岩层里保存下来的遗骸或痕迹。",
+    "ety": "拉丁语 fossilis（挖出来的），来自 fodere（挖）；字面「从地里挖出的东西」。",
+    "ph": "foss（挖）+ il——foss 表「挖」，与 fosse（壕沟）同源。",
+    "tip": "fossil ＝「从地里挖 (foss) 出来的」古生物遗骸，正是考古/古人类学的实证。",
+    "xex": [
+      {"en": "The fossil skull provided key evidence about early human brain size.", "zh": "这具化石头骨为早期人类脑容量提供了关键证据。", "src": "造句"},
+      {"en": "fossil record / fossil fuel 化石记录 / 化石燃料", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "remains", "ipa": "/rɪˈmeɪnz/", "note": "遗骸、残余，泛指留存的尸骨或残迹；fossil 特指石化保存的古生物遗存"}
+    ],
+    "nu": "化石 = 岩层中保存的古生物遗骸或痕迹。",
+    "rootfam": [
+      {"root": "foss/fod", "meaning": "挖，掘", "words": [
+        {"w": "fossil", "g": "化石（挖出物）"},
+        {"w": "fosse", "g": "壕沟"}
+      ]}
+    ]
+  },
+  {
+    "w": "descent",
+    "p": "/dɪˈsent/",
+    "d": "n. 血统，世系；下降，下坡",
+    "levels": ["托福"],
+    "core": "从祖先一代代往下传的血脉链条（也指往下走的动作）。",
+    "ety": "拉丁语 de-（向下）+ scandere（爬、攀）→ descendere（下降）；血统即「从祖先往下传」。",
+    "ph": "de（向下）+ scent(scend)（爬）——scend 表「爬、攀」，见于 ascend。",
+    "tip": "descent ＝「往下 (de) 传」：血脉从祖先向下延伸就是世系。别跟 decent（体面的）混。",
+    "xex": [
+      {"en": "Membership in the clan was traced through descent from a single ancestor.", "zh": "该氏族的成员资格是按对单一祖先的血统世系来追溯的。", "src": "造句"},
+      {"en": "of Chinese descent / line of descent 华裔血统 / 世系", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ancestry", "ipa": "/ˈænsestri/", "note": "祖先、家世，强调你出自哪支血脉；descent 更强调「从祖先向下传承」这条线"},
+      {"w": "lineage", "ipa": "/ˈlɪniɪdʒ/", "note": "世系、家系，强调按代排列的直系链条，与 descent 义近"}
+    ],
+    "nu": "血统 = 从祖先向下代代相传的世系。",
+    "rootfam": [
+      {"root": "scend/scent", "meaning": "爬，攀", "words": [
+        {"w": "descent", "g": "血统；下降"},
+        {"w": "descend", "g": "下降，遗传自"},
+        {"w": "ascend", "g": "上升，攀登"},
+        {"w": "transcend", "g": "超越"}
+      ]}
+    ]
+  },
+  {
+    "w": "lineage",
+    "p": "/ˈlɪniɪdʒ/",
+    "d": "n. 世系，家系，血统",
+    "levels": ["托福"],
+    "core": "按代际排成一条线的直系血脉——亲属制度里的纵向链条。",
+    "ety": "拉丁语 linea（线）+ -age；字面「一条（血脉）线」。",
+    "ph": "line（线）+ age——line 就是「线」，血脉连成一条线。",
+    "tip": "lineage 里就是 line（线）：一代代连成的「血脉线」＝世系。",
+    "xex": [
+      {"en": "The chief traced his lineage back seven generations.", "zh": "这位首领把自己的世系上溯了七代。", "src": "造句"},
+      {"en": "matrilineal / patrilineal lineage 母系 / 父系世系", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "pedigree", "ipa": "/ˈpedɪɡriː/", "note": "谱系、血统证明，常用于动物或名门，强调有记录可查；lineage 更泛指人的世系传承"}
+    ],
+    "nu": "世系 = 按代际排列的直系血脉链条。",
+    "rootfam": [
+      {"root": "line", "meaning": "线", "words": [
+        {"w": "lineage", "g": "世系（血脉线）"},
+        {"w": "linear", "g": "线性的"},
+        {"w": "outline", "g": "轮廓，提纲"},
+        {"w": "align", "g": "使成一线，对齐"}
+      ]}
+    ]
+  },
+  {
+    "w": "sacred",
+    "p": "/ˈseɪkrɪd/",
+    "d": "a. 神圣的；宗教的；不可侵犯的",
+    "levels": ["托福"],
+    "core": "与神灵相关、被视为不可亵渎的——仪式与信仰研究的关键词。",
+    "ety": "拉丁语 sacer/sacr-（神圣的、献给神的）；与 sacrifice、consecrate 同根。",
+    "ph": "sacr（神圣）+ ed——sacr 表「神圣」，见于 sacrifice。",
+    "tip": "sacred 里有 sacr（神圣）：凡「献给神、碰不得」的都 sacred。反义 profane（世俗的）。",
+    "xex": [
+      {"en": "The mountain was sacred to the tribe and off-limits to outsiders.", "zh": "这座山对该部落是神圣的，外人不得进入。", "src": "造句"},
+      {"en": "sacred site / ritual / text 圣地 / 神圣仪式 / 圣典", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "holy", "ipa": "/ˈhoʊli/", "note": "神圣的、圣洁的，日常与宗教通用，偏「洁净、值得崇敬」；sacred 更强调「专属于神、被划归神圣领域」"},
+      {"w": "hallowed", "ipa": "/ˈhæloʊd/", "note": "神圣的、被尊为圣的，书面且带敬仰色彩，常用于地点或传统"}
+    ],
+    "nu": "神圣的 = 归属神灵、被视为不可亵渎的。",
+    "rootfam": [
+      {"root": "sacr/sanct", "meaning": "神圣", "words": [
+        {"w": "sacred", "g": "神圣的"},
+        {"w": "sacrifice", "g": "牺牲，献祭"},
+        {"w": "sanctuary", "g": "圣所，庇护所"},
+        {"w": "consecrate", "g": "使神圣，奉献"}
+      ]}
+    ]
+  },
+  {
+    "w": "taboo",
+    "p": "/təˈbuː/",
+    "d": "n. 禁忌，忌讳 a. 忌讳的，禁止的",
+    "levels": ["托福"],
+    "core": "被文化或宗教明令禁止、碰了会犯忌的事物。",
+    "ety": "源自波利尼西亚语（汤加语 tabu / 斐济语 tabu，意为「禁止的、神圣不可触碰的」）；库克船长航行后引入英语。",
+    "ph": "taboo 是外来借词，无拉丁词根；整体记忆即可。",
+    "tip": "taboo 读音像「他不」——「他不能碰」的事就是禁忌。",
+    "xex": [
+      {"en": "In many cultures, discussing the dead by name is taboo.", "zh": "在许多文化中，直呼死者姓名是一种禁忌。", "src": "造句"},
+      {"en": "break a taboo / social taboo 打破禁忌 / 社会禁忌", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "prohibition", "ipa": "/ˌproʊɪˈbɪʃn/", "note": "禁止、禁令，多为明文规定；taboo 常是不成文的文化/宗教忌讳"}
+    ],
+    "nu": "禁忌 = 文化或宗教禁止触碰的事物或行为。",
+    "rootfam": []
+  },
+  {
+    "w": "forage",
+    "p": "/ˈfɔːrɪdʒ/",
+    "d": "vi. 觅食；搜寻 n. 草料，饲料",
+    "levels": ["托福"],
+    "core": "四处寻找食物——狩猎采集社会（hunter-gatherer）的核心生计。",
+    "ety": "古法语 fourrage（草料），源自日耳曼语 fodr（食物、饲料，与 food、fodder 同源）。",
+    "ph": "for(a)（食物/饲料）+ age——与 food、fodder 同一日耳曼词根。",
+    "tip": "forage 里有 for(=food 的近亲)：为「找吃的」四处走，就是觅食。",
+    "xex": [
+      {"en": "Hunter-gatherer bands foraged for wild fruits, nuts, and roots.", "zh": "狩猎采集部落四处采集野果、坚果和块根。", "src": "造句"},
+      {"en": "forage for food / forage plants 觅食 / 饲用植物", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "scavenge", "ipa": "/ˈskævɪndʒ/", "note": "食腐、拾荒，多指捡食他者剩下的死物残渣；forage 侧重主动采集野生食物"}
+    ],
+    "nu": "觅食 = 四处搜寻并采集野生食物。",
+    "rootfam": [
+      {"root": "for/food", "meaning": "食物，饲料", "words": [
+        {"w": "forage", "g": "觅食，草料"},
+        {"w": "fodder", "g": "饲料"},
+        {"w": "food", "g": "食物"}
+      ]}
+    ]
+  },
+  {
+    "w": "pottery",
+    "p": "/ˈpɑːtəri/",
+    "d": "n. 陶器；制陶工艺；陶器作坊",
+    "levels": ["托福"],
+    "core": "用黏土烧制的器皿——考古断代最常用的实物证据之一。",
+    "ety": "英语 potter（陶工）+ -y（表集合/行业）；potter 来自 pot（罐、锅）。",
+    "ph": "pot（罐）+ ter（人/物）+ y——pot 就是「罐子」。",
+    "tip": "pottery 里有 pot（罐）：一堆用黏土烧出来的「罐罐」就是陶器。",
+    "xex": [
+      {"en": "Changes in pottery style help archaeologists date each layer of a site.", "zh": "陶器风格的变化帮助考古学家为遗址的每一地层断代。", "src": "造句"},
+      {"en": "painted / broken pottery / pottery shards 彩陶 / 碎陶片", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ceramics", "ipa": "/səˈræmɪks/", "note": "陶瓷（制品/工艺），范围更广含瓷器；pottery 多指黏土烧制的较粗陶器"},
+      {"w": "earthenware", "ipa": "/ˈɜːrθnwer/", "note": "陶器、瓦器，特指低温烧制、多孔的黏土器；与 pottery 高度重叠"}
+    ],
+    "nu": "陶器 = 用黏土成型烧制而成的器皿。",
+    "rootfam": [
+      {"root": "pot", "meaning": "罐，锅", "words": [
+        {"w": "pottery", "g": "陶器"},
+        {"w": "potter", "g": "陶工"},
+        {"w": "pot", "g": "罐，锅"}
+      ]}
+    ]
+  },
+  {
+    "w": "primate",
+    "p": "/ˈpraɪmeɪt/",
+    "d": "n. 灵长类动物（如猿、猴、人）；大主教",
+    "levels": ["托福"],
+    "core": "生物分类中与人最近的一目——研究人类起源常从灵长类比较入手。",
+    "ety": "拉丁语 primas/primat-（首位的、最高等的），来自 primus（第一）；意为「最高等的一类动物」。",
+    "ph": "prim（第一/首要）+ ate——prim 表「第一」，见于 primary、prime。",
+    "tip": "primate 含 prim（第一）：动物界里被视为「最高等的一类」＝灵长类。",
+    "xex": [
+      {"en": "Primates such as chimpanzees share much of their DNA with humans.", "zh": "黑猩猩等灵长类动物与人类共享大量 DNA。", "src": "造句"},
+      {"en": "non-human primates / primate behavior 非人灵长类 / 灵长类行为", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ape", "ipa": "/eɪp/", "note": "猿（无尾，如黑猩猩、大猩猩），是灵长类的一个子类；primate 范畴更大，含猴与人"}
+    ],
+    "nu": "灵长类 = 含猿猴与人的高等哺乳动物目。",
+    "rootfam": [
+      {"root": "prim", "meaning": "第一，首要", "words": [
+        {"w": "primate", "g": "灵长类（最高等）"},
+        {"w": "primary", "g": "首要的"},
+        {"w": "prime", "g": "首要的，最好的"},
+        {"w": "primitive", "g": "原始的"},
+        {"w": "primeval", "g": "远古的"}
+      ]}
+    ],
+    "senses": [
+      {"sense": "n. 灵长类动物", "note": "生物学义，托福听力最常考", "ex": "Humans belong to the order of primates."},
+      {"sense": "n. 大主教，首席主教", "note": "宗教义，较少考，注意重音同为 /ˈpraɪmeɪt/", "ex": "The Primate of England presided over the ceremony."}
+    ]
+  },
+  {
+    "w": "relic",
+    "p": "/ˈrelɪk/",
+    "d": "n. 遗物，遗迹，遗风；圣人遗骸",
+    "levels": ["托福"],
+    "core": "从过去遗留下来、带历史或情感价值的东西。",
+    "ety": "拉丁语 relinquere（留下、遗弃）→ reliquiae（遗留之物）；字面「被留下来的东西」。",
+    "ph": "re（回/再）+ lic(linqu)（离开、留下）——linqu 表「离开、遗留」。",
+    "tip": "relic ＝ 时代「离去 (re-linqu) 后留下」的遗物，与 relinquish（放弃）同根。",
+    "xex": [
+      {"en": "The temple houses relics believed to date back two thousand years.", "zh": "这座庙宇收藏着据信可追溯到两千年前的遗物。", "src": "造句"},
+      {"en": "ancient relics / relics of the past 古代遗物 / 往昔遗迹", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "artifact", "ipa": "/ˈɑːrtɪfækt/", "note": "人工制品，中性强调「人做的」；relic 强调「遗留下来、有历史情感分量」"},
+      {"w": "remnant", "ipa": "/ˈremnənt/", "note": "残余、残片，强调整体消失后剩下的一小部分；relic 强调其历史见证价值"}
+    ],
+    "nu": "遗物 = 从过去遗留、带历史价值的物件或痕迹。",
+    "rootfam": [
+      {"root": "lic/linqu", "meaning": "离开，留下", "words": [
+        {"w": "relic", "g": "遗物（留下之物）"},
+        {"w": "relinquish", "g": "放弃，让出"},
+        {"w": "delinquent", "g": "有过失的，拖欠的"}
+      ]}
+    ]
+  },
+  {
+    "w": "settle",
+    "p": "/ˈsetl/",
+    "d": "v. 定居，安顿；解决，确定；平静下来",
+    "levels": ["托福"],
+    "core": "在一地稳定住下来——从游牧到「定居」是文明的转折点。",
+    "ety": "古英语 setlan（使坐下、安置），来自 setl（座位）；与 sit、set 同源，字面「坐定下来」。",
+    "ph": "s-ettle：想成 set（放置）+ tle——把自己「放定」在一处。",
+    "tip": "settle 里含 set（安放）：把家「安放定」下来＝定居；把事「摆平」＝解决。",
+    "xex": [
+      {"en": "Once humans began farming, they settled in permanent villages.", "zh": "人类一开始务农，就在永久性村落中定居下来。", "src": "造句"},
+      {"en": "settle down / settle in a region 定居 / 在某地区定居", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "inhabit", "ipa": "/ɪnˈhæbɪt/", "note": "居住于（某地），强调「住在其中」的状态；settle 强调「从流动到定居下来」的过程"},
+      {"w": "colonize", "ipa": "/ˈkɑːlənaɪz/", "note": "拓殖、殖民，指群体迁入并占据新地建立聚落；settle 更中性"}
+    ],
+    "nu": "定居 = 在固定地点安顿并长期居住。",
+    "rootfam": [
+      {"root": "set/sit", "meaning": "坐，放置", "words": [
+        {"w": "settle", "g": "定居，安顿"},
+        {"w": "settlement", "g": "聚落，定居；解决"},
+        {"w": "settler", "g": "定居者，移民"},
+        {"w": "sediment", "g": "沉淀物（沉坐下来的）"}
+      ]}
+    ],
+    "senses": [
+      {"sense": "v. 定居，安顿下来", "note": "人类学/听力最常考义，常搭 settle down / settle in", "ex": "They settled in a fertile river valley."},
+      {"sense": "v. 解决，了结（争端/账目）", "note": "settle a dispute / settle the bill", "ex": "The two families settled the dispute peacefully."},
+      {"sense": "v.（使）平静，安定下来", "note": "情绪/局面归于平静", "ex": "Wait for the dust to settle before deciding."}
+    ]
+  }
+]

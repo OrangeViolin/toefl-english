@@ -1,0 +1,617 @@
+[
+  {
+    "w": "precipitation",
+    "p": "/prɪˌsɪpɪˈteɪʃn/",
+    "d": "n. 降水（雨、雪、雹等的总称）；沉淀",
+    "levels": ["托福"],
+    "core": "大气中的水汽凝结后从天空落下的一切形式（雨雪雹霰）的总称",
+    "ety": "源自拉丁语 praecipitatio「猛然落下」，来自 praecipitare「头朝下投落」= prae-「向前」+ caput/capit-「头」；「水汽从高处一头栽下」即降水，化学里同词根表「沉淀（析出落底）」。",
+    "ph": "prae(向前)+cipit(头)+ation(名词) → 一头栽下来的东西 → 降水",
+    "tip": "别只想着「rain」——托福听力里天气讲座一律用 precipitation 概括所有从天上落下的水，含 rain/snow/hail/sleet；词里藏着 capit「头」（capital 首都、captain 队长同根）。",
+    "xex": [
+      {"en": "Annual precipitation in the rainforest can exceed two thousand millimeters.", "zh": "雨林的年降水量可超过两千毫米。", "src": "造句"},
+      {"en": "annual precipitation / heavy precipitation / forms of precipitation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "rainfall", "ipa": "/ˈreɪnfɔːl/", "note": "仅指降雨量，precipitation 涵盖雨雪雹等全部形式，范围更广"}
+    ],
+    "nu": "托福气象/地理讲座测量气候的核心指标，常与 temperature 并列描述某地气候。",
+    "rootfam": [
+      {"root": "capit-/cipit-/cap-", "meaning": "头 (head)", "words": [
+        {"w": "capital", "g": "首都、资本"},
+        {"w": "captain", "g": "队长、船长"},
+        {"w": "decapitate", "g": "斩首"},
+        {"w": "precipitate", "g": "使突然降临、降水、沉淀"},
+        {"w": "per capita", "g": "人均"}
+      ]}
+    ]
+  },
+  {
+    "w": "precipitate",
+    "p": "/prɪˈsɪpɪteɪt/",
+    "d": "v. 降水；使突然降临，加速；使沉淀  n. 沉淀物  adj. 仓促的",
+    "levels": ["托福"],
+    "core": "（水汽）凝结后落下形成降水；引申为使某事突然、加速发生",
+    "ety": "与 precipitation 同源，源自拉丁语 praecipitare「头朝下投落」= prae-「向前」+ caput「头」；无论是水汽落地、事件骤发还是溶质析出，都是「一头栽下」的意象。",
+    "ph": "prae(向前)+cipit(头)+ate(动词) → 使一头栽下 → 降水/骤然发生",
+    "tip": "动词版的 precipitation。听力讲座里既指「降水」，也常抽象成「a drought precipitated a crisis 干旱引发了危机」，化学课里指「析出沉淀」，一词三义。",
+    "xex": [
+      {"en": "When warm, moist air cools rapidly, the water vapor precipitates as rain.", "zh": "当温暖湿润的空气快速冷却时，水汽便凝结成雨降下。", "src": "造句"},
+      {"en": "precipitate a crisis / precipitate out of solution / precipitate rain", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "trigger", "ipa": "/ˈtrɪɡər/", "note": "在「引发、导致骤发」义上同义，但 precipitate 更书面、更强调「加速使之提前发生」"},
+      {"w": "hasten", "ipa": "/ˈheɪsn/", "note": "同表「加速」，precipitate 隐含「突然、猛然」的负面色彩"}
+    ],
+    "nu": "托福多义高频词：气象「降水」、事件「引发」、化学「沉淀」；形容词 [prɪˈsɪpɪtət] 读音变化，意为「仓促鲁莽的」。",
+    "senses": [
+      {"gloss": "降水（水汽凝结落下）", "logic": "水汽「一头栽下」的本义", "en": "The vapor precipitates as snow at high altitudes.", "zh": "在高海拔处水汽凝结成雪降下。"},
+      {"gloss": "使突然降临、加速发生", "logic": "让某事件「猛然一头栽向」发生", "en": "The stock crash precipitated a wave of panic.", "zh": "股市崩盘引发了一波恐慌。"},
+      {"gloss": "（化学）使沉淀、析出", "logic": "溶质从溶液中「落底」", "en": "Adding acid precipitates the mineral out of the water.", "zh": "加入酸使矿物质从水中沉淀析出。"}
+    ]
+  },
+  {
+    "w": "humidity",
+    "p": "/hjuːˈmɪdəti/",
+    "d": "n. 湿度；潮湿",
+    "levels": ["托福"],
+    "core": "空气中所含水汽的多少程度",
+    "ety": "源自拉丁语 humidus「潮湿的」，来自 humēre「变湿」；-ity 为名词后缀表状态。同源的 humid（潮湿的）、humor（体液→幽默，古人认为体液决定性情）。",
+    "ph": "humid(潮湿的)+ity(状态) → 潮湿的程度 → 湿度",
+    "tip": "记 humid「潮湿的」再加 -ity 变名词。托福常考 relative humidity「相对湿度」——空气实际含水汽量占该温度下饱和量的百分比。",
+    "xex": [
+      {"en": "High humidity makes hot weather feel even more uncomfortable.", "zh": "高湿度使炎热的天气感觉更加难受。", "src": "造句"},
+      {"en": "relative humidity / high humidity / humidity level", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "moisture", "ipa": "/ˈmɔɪstʃər/", "note": "指「湿气、水分」本身（物质），humidity 是「湿度」这个可量化的程度指标"},
+      {"w": "dampness", "ipa": "/ˈdæmpnəs/", "note": "日常口语「潮湿」，多含贬义（发霉的湿），不作科学计量词"}
+    ],
+    "nu": "气象讲座常与 temperature、dew point（露点）一起出现，湿度越高越接近饱和越易降水。"
+  },
+  {
+    "w": "atmosphere",
+    "p": "/ˈætməsfɪr/",
+    "d": "n. 大气，大气层；气氛，氛围",
+    "levels": ["托福"],
+    "core": "包裹地球（或天体）的气体层",
+    "ety": "源自希腊语 atmos「蒸汽、水汽」+ sphaira「球」，字面「包在球体外的一层水汽气体」；17 世纪科学家造词描述地球周围的气壳。",
+    "ph": "atmo(水汽)+sphere(球) → 包在地球外的气体球壳 → 大气层",
+    "tip": "atmo「水汽」+ sphere「球」（同 hemisphere 半球）。托福常考大气分层：troposphere 对流层、stratosphere 平流层等，都带 -sphere。",
+    "xex": [
+      {"en": "The Earth's atmosphere protects life by absorbing harmful ultraviolet radiation.", "zh": "地球大气层通过吸收有害紫外线辐射来保护生命。", "src": "造句"},
+      {"en": "upper atmosphere / Earth's atmosphere / atmospheric pressure", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "air", "ipa": "/er/", "note": "日常「空气」，atmosphere 特指整个气体层（有分层、有厚度的科学概念）"}
+    ],
+    "nu": "气象/天文讲座基础词，常引出 atmospheric pressure（气压）、atmospheric circulation（大气环流）。",
+    "rootfam": [
+      {"root": "spher-", "meaning": "球 (ball/globe)", "words": [
+        {"w": "sphere", "g": "球体"},
+        {"w": "hemisphere", "g": "半球"},
+        {"w": "stratosphere", "g": "平流层"},
+        {"w": "biosphere", "g": "生物圈"},
+        {"w": "spherical", "g": "球形的"}
+      ]}
+    ]
+  },
+  {
+    "w": "atmospheric",
+    "p": "/ˌætməsˈfɪrɪk/",
+    "d": "adj. 大气的，大气层的；营造气氛的",
+    "levels": ["托福"],
+    "core": "与包裹地球的气体层有关的",
+    "ety": "atmosphere（大气）+ -ic 形容词后缀；见 atmosphere 词条，atmo「水汽」+ sphere「球」。",
+    "ph": "atmosphere(大气)+ic(形容词) → 大气的",
+    "tip": "最高频搭配是 atmospheric pressure（大气压）——空气自身重量对地表的压力，气压变化是天气变化的直接信号。",
+    "xex": [
+      {"en": "A sudden drop in atmospheric pressure often signals an approaching storm.", "zh": "大气压的骤降往往预示着一场即将到来的风暴。", "src": "造句"},
+      {"en": "atmospheric pressure / atmospheric conditions / atmospheric circulation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "aerial", "ipa": "/ˈeriəl/", "note": "「空中的」，侧重空间位置；atmospheric 侧重与大气性质/物理状态相关"}
+    ],
+    "nu": "托福天气讲座核心搭配词，pressure/circulation/conditions 三个搭配几乎必现。"
+  },
+  {
+    "w": "evaporation",
+    "p": "/ɪˌvæpəˈreɪʃn/",
+    "d": "n. 蒸发；消失",
+    "levels": ["托福"],
+    "core": "液态水在低于沸点时变为水汽进入大气的过程",
+    "ety": "源自拉丁语 evaporare「化为蒸汽散去」= e-（ex-）「出、离开」+ vapor「蒸汽」；-ation 名词后缀。与 vapor（蒸汽）、vaporize（汽化）同根。",
+    "ph": "e(出)+vapor(蒸汽)+ation(名词) → 化作蒸汽跑出去 → 蒸发",
+    "tip": "e(x)「出去」+ vapor「蒸汽」。水循环第一步：太阳晒→海面 evaporation→水汽上升→condensation 凝结成云→precipitation 降水，四词连着考。",
+    "xex": [
+      {"en": "Evaporation from the ocean surface supplies most of the moisture in the air.", "zh": "海面的蒸发为空气提供了大部分水汽。", "src": "造句"},
+      {"en": "evaporation and condensation / rate of evaporation / water cycle", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "vaporization", "ipa": "/ˌveɪpərəˈzeɪʃn/", "note": "「汽化」的总称（含沸腾），evaporation 特指低于沸点、发生在表面的缓慢蒸发"}
+    ],
+    "nu": "水循环（water cycle）四步骤之一，与 condensation 成对出现，讲座高频。",
+    "rootfam": [
+      {"root": "vapor-", "meaning": "蒸汽、水汽 (steam)", "words": [
+        {"w": "vapor", "g": "蒸汽、水汽"},
+        {"w": "evaporate", "g": "蒸发"},
+        {"w": "vaporize", "g": "使汽化"},
+        {"w": "evaporation", "g": "蒸发"}
+      ]}
+    ]
+  },
+  {
+    "w": "condensation",
+    "p": "/ˌkɑːndenˈseɪʃn/",
+    "d": "n. 凝结；（凝结成的）水珠；（内容的）浓缩",
+    "levels": ["托福"],
+    "core": "水汽遇冷变回液态水的过程",
+    "ety": "源自拉丁语 condensare「使变稠密」= con-「一起」+ densare「使变密」（来自 densus「稠密的」，即 dense）；水汽分子聚拢变密即凝结。",
+    "ph": "con(一起)+dens(稠密)+ation(名词) → 分子聚到一起变密 → 凝结",
+    "tip": "藏着 dense「稠密的」——水汽「挤到一起」变密成水。云、雾、露、霜都是 condensation 的产物；镜子上的雾气就是它。",
+    "xex": [
+      {"en": "Clouds form through the condensation of water vapor around tiny dust particles.", "zh": "云是水汽围绕微小尘埃颗粒凝结而形成的。", "src": "造句"},
+      {"en": "condensation of water vapor / condensation nuclei / forms clouds", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "condensing", "ipa": "/kənˈdensɪŋ/", "note": "动名词形式，指凝结这一动作过程；condensation 更常作名词术语"}
+    ],
+    "nu": "与 evaporation 相反的过程，云雾露霜的成因，托福气象讲座必考对照。",
+    "rootfam": [
+      {"root": "dens-", "meaning": "稠密 (thick/dense)", "words": [
+        {"w": "dense", "g": "稠密的"},
+        {"w": "density", "g": "密度"},
+        {"w": "condense", "g": "使凝结、浓缩"},
+        {"w": "condensation", "g": "凝结"}
+      ]}
+    ]
+  },
+  {
+    "w": "vapor",
+    "p": "/ˈveɪpər/",
+    "d": "n. 蒸气，水汽，潮气",
+    "levels": ["托福"],
+    "core": "液体（尤指水）蒸发后形成的气态形式",
+    "ety": "源自拉丁语 vapor「蒸汽、热气」；英式拼作 vapour。派生出 evaporate、vaporize、vapid（原指「无味的、跑了气的」）。",
+    "ph": "vapor 直接来自拉丁语「蒸汽」 → 水汽",
+    "tip": "托福最常见搭配 water vapor「水汽」——空气中看不见的气态水，遇冷凝结才成可见的云雾。别和「可见的雾 mist/fog」混。",
+    "xex": [
+      {"en": "Water vapor is invisible; the clouds we see are actually condensed droplets.", "zh": "水汽是看不见的；我们看到的云其实是凝结成的水滴。", "src": "造句"},
+      {"en": "water vapor / vapor pressure / condense into vapor", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "steam", "ipa": "/stiːm/", "note": "「蒸汽」，通常指沸腾产生、常可见带热的水汽；vapor 更泛指气态水，含常温看不见的"},
+      {"w": "moisture", "ipa": "/ˈmɔɪstʃər/", "note": "「湿气、水分」，泛指存在的水分；vapor 特指气态"}
+    ],
+    "nu": "water vapor 是水循环和天气形成的主角，讲座反复出现的基础词。"
+  },
+  {
+    "w": "moisture",
+    "p": "/ˈmɔɪstʃər/",
+    "d": "n. 潮湿，湿气，水分",
+    "levels": ["托福"],
+    "core": "空气、土壤或物体中含有的少量水分",
+    "ety": "源自古法语 moiste「潮湿的」，最终或来自拉丁语 mucidus「发霉的」/ musteus「新鲜多汁的」；-ure 名词后缀。与 moist（潮湿的）、moisten（弄湿）同族。",
+    "ph": "moist(潮湿的)+ure(名词) → 潮湿的东西 → 湿气、水分",
+    "tip": "moist「潮湿的」+ure。托福常说 moisture in the air（空气中的水分）——它是降水的原料，海洋、湖泊向大气输送 moisture。",
+    "xex": [
+      {"en": "Warm air can hold much more moisture than cold air.", "zh": "暖空气能容纳的水分比冷空气多得多。", "src": "造句"},
+      {"en": "moisture in the air / soil moisture / hold moisture", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "humidity", "ipa": "/hjuːˈmɪdəti/", "note": "「湿度」是可量化的程度指标；moisture 指水分这一物质本身"},
+      {"w": "dampness", "ipa": "/ˈdæmpnəs/", "note": "口语「潮气」，常含不适或发霉的贬义"}
+    ],
+    "nu": "讲座讲天气与农业时的高频词，与 humidity 常互换但侧重「水分实体」。"
+  },
+  {
+    "w": "cyclone",
+    "p": "/ˈsaɪkloʊn/",
+    "d": "n. 气旋；（印度洋等地的）热带风暴，旋风",
+    "levels": ["托福"],
+    "core": "围绕低气压中心旋转的大规模气流系统",
+    "ety": "1848 年英国人 Henry Piddington 由希腊语 kyklōn「旋转、盘绕」（来自 kyklos「圆、轮」）造出，描述印度洋上的旋转风暴。与 cycle（循环）、bicycle（自行车）同根 kyklos。",
+    "ph": "cyclo(圆、旋转)+ne → 打着圈旋转的风暴 → 气旋",
+    "tip": "cyclo「圆圈」（cycle 循环、cyclist 骑车人同根）。北半球气旋逆时针转、绕低压中心；反义 anticyclone 反气旋绕高压转，天气晴好。",
+    "xex": [
+      {"en": "A cyclone forms when warm, moist air rises rapidly around a low-pressure center.", "zh": "当温暖湿润的空气围绕低气压中心迅速上升时，气旋便形成了。", "src": "造句"},
+      {"en": "tropical cyclone / low-pressure system / cyclone forms", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "hurricane", "ipa": "/ˈhɜːrəkən/", "note": "大西洋/东太平洋对强热带气旋的叫法；cyclone 是印度洋/南太平洋的叫法，本质同类"},
+      {"w": "typhoon", "ipa": "/taɪˈfuːn/", "note": "西北太平洋对强热带气旋的叫法，三者同物异名"}
+    ],
+    "nu": "托福天气讲座常辨析 cyclone/hurricane/typhoon 三者「同物异名」，取决于发生海域。",
+    "rootfam": [
+      {"root": "cycl-", "meaning": "圆、轮、循环 (circle/wheel)", "words": [
+        {"w": "cycle", "g": "循环、周期"},
+        {"w": "bicycle", "g": "自行车"},
+        {"w": "recycle", "g": "回收再利用"},
+        {"w": "cyclical", "g": "周期性的"},
+        {"w": "encyclopedia", "g": "百科全书（全面循环的教育）"}
+      ]}
+    ]
+  },
+  {
+    "w": "front",
+    "p": "/frʌnt/",
+    "d": "n. 锋（冷暖气团交界面）；前面；前线",
+    "levels": ["托福"],
+    "core": "两个不同性质气团（冷/暖）相遇的交界带",
+    "ety": "源自拉丁语 frons/front-「额头、前部」；气象学 1920 年代第一次世界大战后借用军事「前线」之意，把冷暖气团的「交战前线」称为 front。",
+    "ph": "front「前线」→ 冷暖气团交锋的前线 → 锋",
+    "tip": "别只记「前面」——气象里 front 是冷暖气团的「交锋前线」，cold front（冷锋）过境常带来降温和雷雨，warm front（暖锋）带来连续性降水。",
+    "xex": [
+      {"en": "When a cold front moves in, temperatures usually drop and storms may follow.", "zh": "当冷锋移入时，气温通常下降，随后可能有暴风雨。", "src": "造句"},
+      {"en": "cold front / warm front / a front moves through", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "boundary", "ipa": "/ˈbaʊndri/", "note": "泛指「边界」；front 特指冷暖气团相遇的动态交界面（气象术语）"}
+    ],
+    "nu": "托福天气讲座核心词，cold front / warm front 的天气差异是常考点。",
+    "senses": [
+      {"gloss": "锋（冷暖气团交界面）", "logic": "气团「交战的前线」", "en": "A warm front brings steady, light rain over a wide area.", "zh": "暖锋在大范围地区带来持续的小雨。"},
+      {"gloss": "前面、正面", "logic": "本义「额头、前部」", "en": "The store's front faces the main street.", "zh": "商店的正面朝向大街。"}
+    ]
+  },
+  {
+    "w": "forecast",
+    "p": "/ˈfɔːrkæst/",
+    "d": "v./n. 预报，预测",
+    "levels": ["托福"],
+    "core": "根据现有数据推断未来（尤指天气）的状况",
+    "ety": "中古英语 fore-「预先、之前」+ casten「投掷、盘算」（cast 有「计算、推算」的旧义，如 casting accounts 算账）；字面「预先推算」。",
+    "ph": "fore(预先)+cast(推算) → 预先推算 → 预报",
+    "tip": "fore「预先」（同 foresee 预见、forewarn 预先警告）+ cast「推算」。weather forecast「天气预报」是听力校园/科普对话高频短语。",
+    "xex": [
+      {"en": "Meteorologists forecast heavy snow for the coming weekend.", "zh": "气象学家预报本周末将有大雪。", "src": "造句"},
+      {"en": "weather forecast / forecast rain / accurate forecast", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "predict", "ipa": "/prɪˈdɪkt/", "note": "泛指「预测」；forecast 更强调基于数据对天气/经济等作定量、系统的预报"},
+      {"w": "project", "ipa": "/prəˈdʒekt/", "note": "「预测、推算」，多用于数据趋势外推（人口、收入），不用于天气"}
+    ],
+    "nu": "既作动词也作名词，weather forecast 是气象主题最基础的词组。"
+  },
+  {
+    "w": "barometric",
+    "p": "/ˌbærəˈmetrɪk/",
+    "d": "adj. 气压的，气压计的",
+    "levels": ["托福"],
+    "core": "与用气压计测量的大气压力有关的",
+    "ety": "barometer（气压计）+ -ic；barometer = 希腊语 baros「重量」+ metron「测量」，即「测量（空气）重量的仪器」。baros 同源于 barbell 里的 bar-。",
+    "ph": "baro(重量)+metr(测量)+ic → 测空气重量（气压）的 → 气压的",
+    "tip": "baro「重量」+ metric「测量的」。核心搭配 barometric pressure = 大气压；气压计示数下降往往预示风暴将至，上升预示天晴。",
+    "xex": [
+      {"en": "A falling barometric pressure is one of the earliest signs of an approaching storm.", "zh": "气压下降是风暴逼近的最早征兆之一。", "src": "造句"},
+      {"en": "barometric pressure / barometric reading / a drop in barometric pressure", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "atmospheric", "ipa": "/ˌætməsˈfɪrɪk/", "note": "barometric pressure 与 atmospheric pressure 常互换，前者强调「由气压计测得」"}
+    ],
+    "nu": "托福天气讲座讲测量与预报时出现，几乎只与 pressure 搭配。",
+    "rootfam": [
+      {"root": "metr-/meter", "meaning": "测量 (measure)", "words": [
+        {"w": "barometer", "g": "气压计"},
+        {"w": "thermometer", "g": "温度计"},
+        {"w": "diameter", "g": "直径"},
+        {"w": "symmetry", "g": "对称"},
+        {"w": "geometry", "g": "几何学"}
+      ]}
+    ]
+  },
+  {
+    "w": "altitude",
+    "p": "/ˈæltɪtjuːd/",
+    "d": "n. 海拔，高度；[常pl.] 高处",
+    "levels": ["托福"],
+    "core": "某地或某物高出海平面的垂直距离",
+    "ety": "源自拉丁语 altitudo「高度」，来自 altus「高的、深的」；-tude 名词后缀表状态。同根 altus 还给了 exalt（提升）、altimeter（高度计）。",
+    "ph": "alt(高)+itude(状态名词) → 高的程度 → 海拔",
+    "tip": "alt「高」（同 exalt 抬高、alto 女低音〔较高音区〕）。托福常考：altitude 每升高，气温、气压下降——高海拔处空气稀薄、气温低。",
+    "xex": [
+      {"en": "As altitude increases, both air pressure and temperature generally decrease.", "zh": "随着海拔升高，气压和气温通常都会下降。", "src": "造句"},
+      {"en": "high altitude / at an altitude of / altitude sickness", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "elevation", "ipa": "/ˌelɪˈveɪʃn/", "note": "多指地面/地形的海拔高程；altitude 更常指空中（飞行、大气层）的高度"},
+      {"w": "height", "ipa": "/haɪt/", "note": "泛指「高度」（物体本身），altitude 专指相对海平面的垂直距离"}
+    ],
+    "nu": "气象/地理讲座解释气温气压随高度变化时的高频词，与 elevation 微妙区分。",
+    "rootfam": [
+      {"root": "alt-", "meaning": "高 (high)", "words": [
+        {"w": "altitude", "g": "海拔"},
+        {"w": "altimeter", "g": "高度计"},
+        {"w": "exalt", "g": "提升、赞扬"},
+        {"w": "alto", "g": "女低音"}
+      ]}
+    ]
+  },
+  {
+    "w": "turbulence",
+    "p": "/ˈtɜːrbjələns/",
+    "d": "n. 湍流，气流紊乱；动荡，骚乱",
+    "levels": ["托福"],
+    "core": "气流（或水流）不规则、无序的剧烈运动",
+    "ety": "源自拉丁语 turbulentus「骚乱的、混乱的」，来自 turba「骚动、人群」；-ence 名词后缀。与 disturb（扰乱）、turbid（浑浊的）、perturb（使不安）同根 turba。",
+    "ph": "turb(骚动)+ulence(状态名词) → 骚动混乱的状态 → 湍流",
+    "tip": "turb「搅动」（disturb 打扰、turbine 涡轮机同根）。坐飞机遇到的「颠簸」就是 air turbulence；讲座里指大气中不规则的乱流。",
+    "xex": [
+      {"en": "The plane shook violently as it passed through a patch of turbulence.", "zh": "飞机穿过一片湍流时剧烈颠簸。", "src": "造句"},
+      {"en": "air turbulence / atmospheric turbulence / cause turbulence", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "instability", "ipa": "/ˌɪnstəˈbɪləti/", "note": "泛指「不稳定」（大气状态）；turbulence 特指气流具体的紊乱运动"}
+    ],
+    "nu": "气象与航空讲座常见，指对流层内不规则乱流，与飞行安全相关。",
+    "rootfam": [
+      {"root": "turb-", "meaning": "搅动、骚动 (stir/disturb)", "words": [
+        {"w": "disturb", "g": "打扰、扰乱"},
+        {"w": "turbine", "g": "涡轮机"},
+        {"w": "turbid", "g": "浑浊的"},
+        {"w": "perturb", "g": "使不安"},
+        {"w": "disturbance", "g": "扰动、骚乱"}
+      ]}
+    ]
+  },
+  {
+    "w": "drought",
+    "p": "/draʊt/",
+    "d": "n. 干旱（期），旱灾",
+    "levels": ["托福"],
+    "core": "长时间缺乏降水导致的严重缺水时期",
+    "ety": "源自古英语 drūgath「干燥」，来自 drūgian「变干」，与 dry（干的）同源；注意拼写 -ought 但读 /aʊt/，是英语中不规则读音的典型。",
+    "ph": "与 dry(干) 同源 → 长期干旱 → 旱灾",
+    "tip": "注意发音！drought 读 /draʊt/（像 drowt），不读 /drɔːt/。与 dry 同根。托福环境/农业讲座讲缺水、作物歉收时高频。",
+    "xex": [
+      {"en": "A prolonged drought devastated crops across the entire region.", "zh": "一场持续的干旱摧毁了整个地区的农作物。", "src": "造句"},
+      {"en": "severe drought / prolonged drought / drought conditions", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "aridity", "ipa": "/əˈrɪdəti/", "note": "指气候本身长期干燥的属性（如沙漠）；drought 指一段异常的、暂时性的缺水事件"}
+    ],
+    "nu": "托福环境、生态、农业讲座高频，常与 flood（洪涝）作对比考。"
+  },
+  {
+    "w": "thunderstorm",
+    "p": "/ˈθʌndərstɔːrm/",
+    "d": "n. 雷暴，雷雨",
+    "levels": ["托福"],
+    "core": "伴有雷电、强降水和强风的对流性天气",
+    "ety": "复合词：thunder「雷」（源自古英语 þunor，与北欧雷神 Thor 同源）+ storm「风暴」（古英语 storm）。字面「打雷的风暴」。",
+    "ph": "thunder(雷)+storm(风暴) → 带雷的风暴 → 雷暴",
+    "tip": "thunder（雷声）+ storm（风暴）直接拼。托福讲座常讲其成因：暖湿空气强烈上升（updraft）→积雨云→放电成雷电。",
+    "xex": [
+      {"en": "Thunderstorms develop when warm, humid air rises rapidly and forms towering clouds.", "zh": "当温暖潮湿的空气快速上升并形成高耸的云时，雷暴便发展起来。", "src": "造句"},
+      {"en": "severe thunderstorm / thunderstorm develops / lightning and thunder", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "storm", "ipa": "/stɔːrm/", "note": "泛指各类「风暴」；thunderstorm 特指带雷电的对流风暴"}
+    ],
+    "nu": "常与 updraft、cumulonimbus（积雨云）、lightning 一起考成因。"
+  },
+  {
+    "w": "updraft",
+    "p": "/ˈʌpdræft/",
+    "d": "n. 上升气流",
+    "levels": ["托福"],
+    "core": "向上运动的气流",
+    "ety": "复合词：up「向上」+ draft「气流、通风」（古英语 draht，与 draw「拉、抽」同源，指被「抽动」的气流）；反义 downdraft 下降气流。",
+    "ph": "up(向上)+draft(气流) → 向上的气流 → 上升气流",
+    "tip": "up（向上）+ draft（气流，如门缝进的『穿堂风』就是 draft）。暖空气受热变轻上升形成 updraft，是雷暴和积云形成的关键；对比 downdraft（下沉气流）。",
+    "xex": [
+      {"en": "Powerful updrafts inside the cloud carry water droplets high enough to freeze into hail.", "zh": "云内强大的上升气流把水滴带到足够高处冻结成冰雹。", "src": "造句"},
+      {"en": "strong updraft / warm air rises / updraft and downdraft", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "upcurrent", "ipa": "/ˈʌpkɜːrənt/", "note": "同指「上升气流」，较少用；updraft 是气象与航空的标准术语"}
+    ],
+    "nu": "讲雷暴、冰雹、滑翔机时的关键词，常与 downdraft 成对出现。"
+  },
+  {
+    "w": "hail",
+    "p": "/heɪl/",
+    "d": "n. 冰雹  v. 下冰雹；招呼，欢呼",
+    "levels": ["托福"],
+    "core": "在积雨云上升气流中反复冻结、层层加大的固态降水",
+    "ety": "「冰雹」义源自古英语 hagol/hægl「雹」；「欢呼、招呼」义是另一词源，来自古诺斯语 heill「健康、平安」（打招呼祝对方安好）。两义同形异源。",
+    "ph": "hail(古英语「雹」) → 冰雹",
+    "tip": "同形两义：hail = 冰雹（气象）/ 欢呼致敬（如 hail a taxi 招手打车、Hail Caesar）。托福气象里指冰雹——被 updraft 反复举上冻结、越裹越大的冰球。",
+    "xex": [
+      {"en": "Hail forms when strong updrafts repeatedly lift raindrops into freezing altitudes.", "zh": "当强上升气流反复把雨滴举到冰冻高度时，冰雹便形成了。", "src": "造句"},
+      {"en": "hail storm / large hail / hail forms", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "sleet", "ipa": "/sliːt/", "note": "雨夹雪/冻雨（半融的冰粒），比 hail 小得多且不经反复冻结增大"}
+    ],
+    "nu": "托福气象里指冰雹，成因与 updraft 强度直接相关；注意它的第二义「欢呼/招呼」在其他语境高频。",
+    "senses": [
+      {"gloss": "冰雹；下冰雹", "logic": "古英语「雹」本义", "en": "The sudden hail damaged many car windshields.", "zh": "突降的冰雹损坏了许多汽车挡风玻璃。"},
+      {"gloss": "招呼、欢呼、赞颂", "logic": "另一词源「祝安好」", "en": "Critics hailed the film as a masterpiece.", "zh": "评论家盛赞这部电影为杰作。"}
+    ]
+  },
+  {
+    "w": "fog",
+    "p": "/fɔːɡ/",
+    "d": "n. 雾  v. 使模糊，蒙上雾气",
+    "levels": ["托福"],
+    "core": "贴近地面的水汽凝结成的悬浮微小水滴，使能见度下降",
+    "ety": "16 世纪出现，可能来自斯堪的纳维亚语（如丹麦语 fog「喷沫、雪花」），词源不甚明确；本质是「贴地的云」。",
+    "ph": "fog → 贴近地面的云状水汽 → 雾",
+    "tip": "fog 本质就是「贴着地面的云」——空气冷却到露点，水汽在近地面凝结。区别：fog 能见度更低（<1km），mist（薄雾）较轻。",
+    "xex": [
+      {"en": "Dense fog forms overnight when the ground cools and chills the air just above it.", "zh": "当地面在夜间冷却并使其上方的空气变冷时，浓雾便形成了。", "src": "造句"},
+      {"en": "dense fog / fog forms / reduce visibility", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mist", "ipa": "/mɪst/", "note": "薄雾，水滴更细、能见度比 fog 高（>1km）；fog 是加浓版的 mist"},
+      {"w": "haze", "ipa": "/heɪz/", "note": "霾，由尘埃/烟粒造成的朦胧，非水汽凝结；fog 是水汽"}
+    ],
+    "nu": "托福气象讲座解释近地面凝结现象时出现，常与 mist、haze 辨析。"
+  },
+  {
+    "w": "breeze",
+    "p": "/briːz/",
+    "d": "n. 微风，和风  v. 轻快地走；轻松完成",
+    "levels": ["托福"],
+    "core": "轻柔和缓的风",
+    "ety": "16 世纪来自古西班牙语/葡萄牙语 briza「东北风」；后泛指微风。口语引申「a breeze = 轻而易举的事」。",
+    "ph": "breeze → 和缓的风 → 微风",
+    "tip": "托福常考 sea breeze（海风，白天从海吹向陆）与 land breeze（陆风，夜间从陆吹向海）——因海陆升温降温速度不同产生，是理解局地环流的经典例子。",
+    "xex": [
+      {"en": "During the day, a sea breeze blows from the cooler ocean toward the warmer land.", "zh": "白天，海风从较凉的海洋吹向较暖的陆地。", "src": "造句"},
+      {"en": "sea breeze / land breeze / gentle breeze", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "gust", "ipa": "/ɡʌst/", "note": "一阵突发的强风（阵风）；breeze 是持续和缓的微风，强度小得多"},
+      {"w": "draft", "ipa": "/dræft/", "note": "室内穿堂风、气流；breeze 指室外自然的微风"}
+    ],
+    "nu": "sea breeze / land breeze 是托福讲局地环流的经典考点，成因是海陆热容差异。"
+  },
+  {
+    "w": "saturate",
+    "p": "/ˈsætʃəreɪt/",
+    "d": "v. 使饱和；使湿透，浸透",
+    "levels": ["托福"],
+    "core": "使某物（空气/溶液）吸收达到最大限度、无法再容纳更多",
+    "ety": "源自拉丁语 saturare「使充满、喂饱」，来自 satur「饱足的」（同根 satisfy 使满足、satiate 使饱足）；-ate 动词后缀。",
+    "ph": "satur(饱足)+ate(动词) → 使达到饱足 → 使饱和",
+    "tip": "同根 satisfy（满足）——「填到满意/满」。气象里 saturated air（饱和空气）= 水汽含量达到该温度上限，再冷一点就凝结降水（露点）。",
+    "xex": [
+      {"en": "When the air becomes saturated with water vapor, condensation begins to occur.", "zh": "当空气被水汽饱和时，凝结便开始发生。", "src": "造句"},
+      {"en": "saturated air / saturated with moisture / reach saturation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "soak", "ipa": "/soʊk/", "note": "「浸透、泡湿」，日常用词；saturate 更正式，且有「达到容量上限（饱和）」的科学含义"}
+    ],
+    "nu": "气象讲座讲降水成因的关键动词，saturated air / saturation point 与露点、凝结直接相关。",
+    "rootfam": [
+      {"root": "satur-/sat-", "meaning": "饱足、满 (full/enough)", "words": [
+        {"w": "saturate", "g": "使饱和"},
+        {"w": "satisfy", "g": "使满足"},
+        {"w": "satiate", "g": "使饱足"},
+        {"w": "saturation", "g": "饱和"},
+        {"w": "insatiable", "g": "不知足的"}
+      ]}
+    ]
+  },
+  {
+    "w": "meteorologist",
+    "p": "/ˌmiːtiəˈrɑːlədʒɪst/",
+    "d": "n. 气象学家，气象学者",
+    "levels": ["托福"],
+    "core": "研究大气现象与天气规律的科学家",
+    "ety": "希腊语 meteōron「高空中的现象」（meta-「在…之上」+ aeirein「升起」）+ logos「学问」+ -ist「…者」；亚里士多德著作 Meteorologica 是源头。注意与 meteor（流星）同源——古人把流星也当作「高空现象」。",
+    "ph": "meteor(高空现象)+log(学问)+ist(人) → 研究高空天气现象的人 → 气象学家",
+    "tip": "meteor「高空现象/流星」+ ology「学」+ ist「人」。别被 meteor 误导以为研究流星——气象学研究的是天气。托福听力校园对话常出现这个职业/专业。",
+    "xex": [
+      {"en": "Meteorologists use satellite images and computer models to predict the weather.", "zh": "气象学家利用卫星图像和计算机模型来预测天气。", "src": "造句"},
+      {"en": "a team of meteorologists / meteorologists predict / weather forecasting", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "weatherman", "ipa": "/ˈweðərmæn/", "note": "口语「天气预报员」（尤指电视上的）；meteorologist 是正式的科学家称谓"}
+    ],
+    "nu": "托福气象主题里的「人物」词，常与 forecast、model、satellite 一同出现。",
+    "rootfam": [
+      {"root": "-log-/-logy", "meaning": "学问、话语 (word/study)", "words": [
+        {"w": "meteorology", "g": "气象学"},
+        {"w": "geology", "g": "地质学"},
+        {"w": "biology", "g": "生物学"},
+        {"w": "ecology", "g": "生态学"},
+        {"w": "psychology", "g": "心理学"}
+      ]}
+    ]
+  },
+  {
+    "w": "arid",
+    "p": "/ˈærɪd/",
+    "d": "adj. 干旱的；贫瘠的；枯燥的",
+    "levels": ["托福"],
+    "core": "因降水极少而长期干燥的（气候或土地）",
+    "ety": "源自拉丁语 aridus「干的」，来自 arēre「变干、枯萎」；与 ardor（热情，同根「灼烧、干燥」）远亲。-id 形容词后缀（如 rigid、humid）。",
+    "ph": "ar(干、烧)+id(形容词) → 干燥的 → 干旱的",
+    "tip": "-id 结尾的形容词（humid 潮湿、rigid 僵硬）。arid climate（干旱气候）是沙漠区的属性，反义 humid（湿润）。与 drought 区别：arid 是长期属性，drought 是一段事件。",
+    "xex": [
+      {"en": "Few plants can survive in the arid climate of the desert.", "zh": "很少有植物能在沙漠的干旱气候中存活。", "src": "造句"},
+      {"en": "arid climate / arid region / arid land", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "barren", "ipa": "/ˈbærən/", "note": "「贫瘠不毛的」，侧重寸草不生；arid 侧重气候干燥少雨（可致 barren）"},
+      {"w": "parched", "ipa": "/pɑːrtʃt/", "note": "「焦干的」，强调被烤干的暂时状态；arid 是长期气候属性"}
+    ],
+    "nu": "托福生态/地理讲座描述气候带高频词，与 humid、drought 常配套辨析。"
+  },
+  {
+    "w": "current",
+    "p": "/ˈkɜːrənt/",
+    "d": "n.（气/水）流；潮流，趋势  adj. 当前的，现行的",
+    "levels": ["托福"],
+    "core": "气体或液体沿一定方向的连续流动",
+    "ety": "源自拉丁语 currere「跑、流动」的现在分词 currens；-ent 后缀。「正在流」既指水流气流，又引申「当前正在进行的」。同根 occur（发生）、recur（复发）、curriculum（课程，跑道）。",
+    "ph": "curr(跑、流)+ent → 正在流动的 → 气流/水流；正在进行的 → 当前的",
+    "tip": "curr「跑、流」（occur 发生、current 电流亦此根）。气象里 air current（气流）、ocean current（洋流，如墨西哥湾流影响气候）都是塑造天气的大动脉。",
+    "xex": [
+      {"en": "Warm ocean currents can significantly moderate the climate of nearby coasts.", "zh": "温暖的洋流能显著调节邻近海岸的气候。", "src": "造句"},
+      {"en": "air current / ocean current / warm current", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "flow", "ipa": "/floʊ/", "note": "泛指「流动」（动作或量）；current 特指有方向的连续流体（气流、洋流、电流）"},
+      {"w": "stream", "ipa": "/striːm/", "note": "「流、水流」，jet stream（急流）即用它；current 更强调整体流向"}
+    ],
+    "nu": "气象/海洋讲座核心词，ocean current 调节气候是常考机制；注意其「当前的」形容词义另有一套用法。"
+  },
+  {
+    "w": "frigid",
+    "p": "/ˈfrɪdʒɪd/",
+    "d": "adj. 寒冷的，严寒的；冷淡的",
+    "levels": ["托福"],
+    "core": "极度寒冷的",
+    "ety": "源自拉丁语 frigidus「冷的」，来自 frigus「寒冷」；-id 形容词后缀。同源的 refrigerate（冷藏）、refrigerator（冰箱）都带 frig-。",
+    "ph": "frig(冷)+id(形容词) → 寒冷的",
+    "tip": "藏着 fridge/refrigerator（冰箱）的 frig「冷」。地理上 frigid zone = 寒带（南北极圈内），与 torrid zone（热带）、temperate zone（温带）三分。",
+    "xex": [
+      {"en": "Polar regions endure frigid temperatures for most of the year.", "zh": "极地地区一年中大部分时间都要忍受严寒的气温。", "src": "造句"},
+      {"en": "frigid temperatures / frigid zone / frigid air", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "freezing", "ipa": "/ˈfriːzɪŋ/", "note": "「冰冷的」，口语常用；frigid 更正式、书面，强调极端严寒"},
+      {"w": "arctic", "ipa": "/ˈɑːrktɪk/", "note": "「极寒的、北极的」，frigid 是其近义，均形容极端低温"}
+    ],
+    "nu": "托福气候带/极地讲座描述低温的高级词，与 temperate、torrid 三带对照。",
+    "rootfam": [
+      {"root": "frig-", "meaning": "冷 (cold)", "words": [
+        {"w": "frigid", "g": "寒冷的"},
+        {"w": "refrigerate", "g": "冷藏"},
+        {"w": "refrigerator", "g": "冰箱"}
+      ]}
+    ]
+  },
+  {
+    "w": "circulate",
+    "p": "/ˈsɜːrkjəleɪt/",
+    "d": "v.（使）循环；（使）流通，流传",
+    "levels": ["托福"],
+    "core": "沿闭合路径周而复始地流动或传播",
+    "ety": "源自拉丁语 circulari「形成圆圈」，来自 circulus「小圆圈」（circus 圆形竞技场的指小形式）；-ate 动词后缀。同根 circle（圆）、circuit（回路）、circular（环形的）。",
+    "ph": "circ(圆圈)+ul+ate(动词) → 绕圈流动 → 循环",
+    "tip": "circ「圆圈」（circle 圆、circus 马戏团〔圆形场地〕）。名词 atmospheric circulation（大气环流）是托福解释全球风带、气候分布的核心机制——空气绕地球循环流动。",
+    "xex": [
+      {"en": "Heat from the equator causes air to circulate between the tropics and the poles.", "zh": "来自赤道的热量促使空气在热带与两极之间循环流动。", "src": "造句"},
+      {"en": "air circulates / atmospheric circulation / circulate heat", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "flow", "ipa": "/floʊ/", "note": "泛指「流动」；circulate 特指「循环往复」（回到起点的闭合流动）"},
+      {"w": "distribute", "ipa": "/dɪˈstrɪbjuːt/", "note": "「分配、散布」，circulate 侧重「不断绕圈流转」而非一次性分发"}
+    ],
+    "nu": "atmospheric circulation / ocean circulation 是托福解释全球气候的核心概念。",
+    "rootfam": [
+      {"root": "circ-", "meaning": "圆、环 (ring/around)", "words": [
+        {"w": "circle", "g": "圆"},
+        {"w": "circuit", "g": "回路、巡回"},
+        {"w": "circular", "g": "环形的"},
+        {"w": "circumference", "g": "圆周"},
+        {"w": "circulation", "g": "循环、流通"}
+      ]}
+    ]
+  }
+]

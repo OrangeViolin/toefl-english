@@ -1,0 +1,729 @@
+[
+  {
+    "w": "predator",
+    "p": "/ˈpredətər/",
+    "d": "n. 捕食性动物，食肉动物；掠夺者",
+    "levels": ["托福"],
+    "core": "靠捕杀其他动物为食的动物",
+    "ety": "源自拉丁语 praedari「掠夺、劫掠」，其名词 praedator「掠夺者」，词根 praeda 意为「猎物、战利品」（也是 prey 的祖先）。",
+    "ph": "pred（掠夺）+ ator（做某事的人/物）→ 干掠夺勾当的家伙",
+    "tip": "pred- 想成「preda（猎物）」——追猎物的就是 predator；对照 prey（猎物）同根同源，一个吃一个被吃。",
+    "xex": [
+      {"en": "Owls are efficient nocturnal predators that hunt small rodents in the dark.", "zh": "猫头鹰是高效的夜行捕食者，在黑暗中猎捕小型啮齿动物。", "src": "造句"},
+      {"en": "apex predator / natural predator / predator-prey relationship", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "carnivore", "ipa": "/ˈkɑːrnɪvɔːr/", "note": "侧重「食肉」这一食性分类；predator 侧重「主动捕杀」的行为角色，食腐的 carnivore 不一定是 predator"},
+      {"w": "hunter", "ipa": "/ˈhʌntər/", "note": "泛指猎捕者，可指人；predator 更学科化，强调生态链中的捕食位置"}
+    ],
+    "nu": "重音在第一音节 PRED-，读作 /ˈpredətər/，不是 /prɪˈdeɪtər/。",
+    "rootfam": [
+      {"root": "preda/pred", "meaning": "掠夺、猎物", "words": [
+        {"w": "predator", "g": "捕食者"},
+        {"w": "predatory", "g": "掠食的、掠夺性的"},
+        {"w": "prey", "g": "猎物"},
+        {"w": "depredation", "g": "劫掠、蹂躏"},
+        {"w": "predation", "g": "捕食（作用）"}
+      ]}
+    ]
+  },
+  {
+    "w": "prey",
+    "p": "/preɪ/",
+    "d": "n. 猎物；受害者 · vi. 捕食，掠夺",
+    "levels": ["托福"],
+    "core": "被捕食者猎杀充作食物的动物",
+    "ety": "源自古法语 preie，来自拉丁语 praeda「战利品、掠夺物」，与 predator 同根 praeda。",
+    "ph": "prey ↔ predator 同源；被掠夺的那一方就是 prey",
+    "tip": "prey 与 pray（祈祷）同音，区别记忆：动物是 prey（猎物），你为它 pray（祈祷）。搭配 prey on 表示「捕食、欺凌」。",
+    "xex": [
+      {"en": "Gazelles remain constantly alert because they are the preferred prey of lions.", "zh": "瞪羚时刻保持警觉，因为它们是狮子最爱的猎物。", "src": "造句"},
+      {"en": "prey on / fall prey to / bird of prey", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "quarry", "ipa": "/ˈkwɔːri/", "note": "被追猎的目标，文学色彩更浓；prey 更中性、更常用于生态语境"},
+      {"w": "victim", "ipa": "/ˈvɪktɪm/", "note": "泛指受害者（含人与抽象情境）；prey 特指被捕食的动物"}
+    ],
+    "nu": "单音节 /preɪ/，与 pray 完全同音；不要读成两个音节。",
+    "rootfam": [
+      {"root": "preda/pred", "meaning": "掠夺、猎物", "words": [
+        {"w": "prey", "g": "猎物"},
+        {"w": "predator", "g": "捕食者"},
+        {"w": "predatory", "g": "掠食性的"},
+        {"w": "predation", "g": "捕食作用"}
+      ]}
+    ]
+  },
+  {
+    "w": "mammal",
+    "p": "/ˈmæml/",
+    "d": "n. 哺乳动物",
+    "levels": ["托福"],
+    "core": "用乳汁哺育幼崽的温血脊椎动物",
+    "ety": "源自拉丁语 mamma「乳房、乳汁」，科学分类词 Mammalia 由此造出，因该类动物以乳腺分泌乳汁喂养后代得名。",
+    "ph": "mamma（乳房）+ al → 有乳腺、吃奶长大的动物",
+    "tip": "mamma 就是各语言里婴儿叫「妈妈」的音——靠妈妈乳汁喂养的就是 mammal。特征：温血、有毛发、胎生哺乳。",
+    "xex": [
+      {"en": "Whales are aquatic mammals that must surface to breathe air.", "zh": "鲸是水生哺乳动物，必须浮出水面呼吸空气。", "src": "造句"},
+      {"en": "marine mammal / warm-blooded mammal / mammalian species", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "vertebrate", "ipa": "/ˈvɜːrtɪbrət/", "note": "上位词，指有脊椎的动物；mammal 是 vertebrate 下的一大类"}
+    ],
+    "nu": "两个音节 /ˈmæml/，末尾 -mal 中的 a 弱化几乎不发音，听感像「MAM-l」。",
+    "rootfam": [
+      {"root": "mamm", "meaning": "乳房、乳汁", "words": [
+        {"w": "mammal", "g": "哺乳动物"},
+        {"w": "mammalian", "g": "哺乳动物的"},
+        {"w": "mammary", "g": "乳房的、乳腺的"},
+        {"w": "mammography", "g": "乳房X光造影"}
+      ]}
+    ]
+  },
+  {
+    "w": "migrate",
+    "p": "/ˈmaɪɡreɪt/",
+    "d": "vi. 迁徙；移居",
+    "levels": ["托福"],
+    "core": "动物随季节成群定向长途迁移",
+    "ety": "源自拉丁语 migrare「迁移、移动」，其过去分词 migratus，本义即「从一地移往另一地」。",
+    "ph": "migr（移动）+ ate（动词后缀）→ 举群搬家",
+    "tip": "同根词 immigrate（迁入 in-）、emigrate（迁出 e-）用前缀区分方向；动物学里名词形式 migration 更常考。",
+    "xex": [
+      {"en": "Arctic terns migrate thousands of miles between the poles each year.", "zh": "北极燕鸥每年在两极之间迁徙数千英里。", "src": "造句"},
+      {"en": "migrate south / seasonal migration / migratory birds", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "roam", "ipa": "/roʊm/", "note": "漫无目的地游荡；migrate 是有季节性、方向性的定向长途移动"},
+      {"w": "relocate", "ipa": "/ˌriːˈloʊkeɪt/", "note": "泛指搬迁到新地点；migrate 特指周期性群体迁徙"}
+    ],
+    "nu": "重音在第一音节 MY-，读 /ˈmaɪɡreɪt/；美音重音不后移。",
+    "rootfam": [
+      {"root": "migr", "meaning": "移动、迁移", "words": [
+        {"w": "migrate", "g": "迁徙"},
+        {"w": "migration", "g": "迁徙、移民"},
+        {"w": "migratory", "g": "迁徙的"},
+        {"w": "immigrate", "g": "移入"},
+        {"w": "emigrate", "g": "移出"},
+        {"w": "migrant", "g": "迁徙者、移民"}
+      ]}
+    ]
+  },
+  {
+    "w": "camouflage",
+    "p": "/ˈkæməflɑːʒ/",
+    "d": "n. 伪装，保护色 · vt. 掩饰，伪装",
+    "levels": ["托福"],
+    "core": "靠体色或形态融入环境以躲避天敌或伏击猎物",
+    "ety": "源自法语 camoufler「乔装、蒙骗」，可能与意大利语 camuffare（蒙骗）有关；一战时经军事术语进入英语，指隐蔽伪装。",
+    "ph": "法语外来词，记「camou-flage」音节；-flage 结尾读 /flɑːʒ/",
+    "tip": "结尾 -flage 发法式 /ʒ/（类似「日」的声母），不读 /fleɪdʒ/。动物学常与 blend in（融入背景）连用。",
+    "xex": [
+      {"en": "The chameleon's camouflage lets it blend seamlessly into the foliage.", "zh": "变色龙的伪装让它与树叶浑然一体。", "src": "造句"},
+      {"en": "natural camouflage / camouflage against predators / protective coloration", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "disguise", "ipa": "/dɪsˈɡaɪz/", "note": "泛指乔装改扮以掩盖身份；camouflage 特指与背景融合的隐蔽"},
+      {"w": "conceal", "ipa": "/kənˈsiːl/", "note": "泛指藏匿；camouflage 强调「靠外观骗过观察者」的机制"}
+    ],
+    "nu": "四音节 /ˈkæməflɑːʒ/，重音在首，末音节 /ʒ/ 是关键难点。",
+    "rootfam": []
+  },
+  {
+    "w": "nocturnal",
+    "p": "/nɑːkˈtɜːrnl/",
+    "d": "a. 夜行性的；夜间发生的",
+    "levels": ["托福"],
+    "core": "在夜间活动、白天休息的（动物）",
+    "ety": "源自拉丁语 nocturnus「属于夜晚的」，词根 nox / noct- 意为「夜」，与 night 同源。",
+    "ph": "noct（夜）+ urnal → 属于夜的",
+    "tip": "noct- = 夜，对照反义 diurnal（昼行性的，di- 来自 dies「白天」）。考听力常对比 nocturnal vs. diurnal 动物作息。",
+    "xex": [
+      {"en": "Bats are nocturnal, using echolocation to navigate and hunt after dark.", "zh": "蝙蝠是夜行性动物，利用回声定位在天黑后导航和捕食。", "src": "造句"},
+      {"en": "nocturnal animal / nocturnal habits / nocturnal predator", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "night-active", "ipa": "/ˈnaɪt ˌæktɪv/", "note": "描述性说法，直白但非专业术语；nocturnal 是标准学科词"}
+    ],
+    "nu": "重音在第二音节 -TUR-，读 /nɑːkˈtɜːrnl/，非首音节重读。",
+    "rootfam": [
+      {"root": "noct/nox", "meaning": "夜", "words": [
+        {"w": "nocturnal", "g": "夜行性的"},
+        {"w": "nocturne", "g": "夜曲"},
+        {"w": "equinox", "g": "昼夜平分点"},
+        {"w": "noctambulism", "g": "梦游"}
+      ]}
+    ]
+  },
+  {
+    "w": "hibernation",
+    "p": "/ˌhaɪbərˈneɪʃn/",
+    "d": "n. 冬眠；蛰伏",
+    "levels": ["托福"],
+    "core": "动物在寒冬里代谢极度降低的休眠越冬状态",
+    "ety": "源自拉丁语 hibernare「过冬」，词根 hibernus「冬天的」、hiems「冬」。英语 hibernate 由此逆构，加 -tion 成名词。",
+    "ph": "hibern（冬）+ ation → 过冬的行为",
+    "tip": "hibern = 冬；对照夏季蛰伏 aestivation（estivation, aestas「夏」）。冬眠时心率、体温、代谢全部骤降以省能量。",
+    "xex": [
+      {"en": "During hibernation, a bear's heart rate drops dramatically to conserve energy.", "zh": "冬眠期间，熊的心率大幅下降以节省能量。", "src": "造句"},
+      {"en": "enter hibernation / emerge from hibernation / hibernation state", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "dormancy", "ipa": "/ˈdɔːrmənsi/", "note": "泛指生物的休眠停滞状态（含植物、种子）；hibernation 特指动物越冬"},
+      {"w": "torpor", "ipa": "/ˈtɔːrpər/", "note": "短时的迟钝麻木停滞；hibernation 是长期、季节性的深度休眠"}
+    ],
+    "nu": "四音节 /ˌhaɪbərˈneɪʃn/，主重音在 -NA-，首音节 hi- 读 /haɪ/。",
+    "rootfam": [
+      {"root": "hibern", "meaning": "冬天", "words": [
+        {"w": "hibernation", "g": "冬眠"},
+        {"w": "hibernate", "g": "冬眠"},
+        {"w": "hibernal", "g": "冬天的、冬季的"}
+      ]}
+    ]
+  },
+  {
+    "w": "adaptation",
+    "p": "/ˌædæpˈteɪʃn/",
+    "d": "n. 适应；（生物的）适应性特征；改编",
+    "levels": ["托福"],
+    "core": "物种为适应环境而进化出的结构或行为特征",
+    "ety": "源自拉丁语 adaptare「使适合」，ad-「向」+ aptare「使合适」（apt「合适的」同根），经法语 adaptation 进入英语。",
+    "ph": "ad（向）+ apt（合适）+ ation → 变得合适的过程",
+    "tip": "apt（恰当的）是核心；生物学里 adaptation 指遗传下来的「适应性特征」，如骆驼的驼峰、仙人掌的刺，属于自然选择的产物。",
+    "xex": [
+      {"en": "The thick fur of polar bears is an adaptation to the freezing Arctic climate.", "zh": "北极熊厚厚的皮毛是对严寒北极气候的一种适应性特征。", "src": "造句"},
+      {"en": "evolutionary adaptation / behavioral adaptation / adaptation to the environment", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "adjustment", "ipa": "/əˈdʒʌstmənt/", "note": "泛指调整、微调；adaptation 强调长期进化或深层次的适应结果"},
+      {"w": "modification", "ipa": "/ˌmɑːdɪfɪˈkeɪʃn/", "note": "泛指改动；生物学的 adaptation 特指提高生存繁殖成功率的特征"}
+    ],
+    "nu": "五音节 /ˌædæpˈteɪʃn/，主重音在 -TA-，p 在 apt 中要发出来。",
+    "rootfam": [
+      {"root": "apt/ept", "meaning": "合适、能力", "words": [
+        {"w": "adaptation", "g": "适应"},
+        {"w": "adapt", "g": "使适应"},
+        {"w": "adaptive", "g": "适应性的"},
+        {"w": "apt", "g": "恰当的、易于的"},
+        {"w": "aptitude", "g": "天资、才能"},
+        {"w": "adept", "g": "熟练的"}
+      ]}
+    ]
+  },
+  {
+    "w": "instinct",
+    "p": "/ˈɪnstɪŋkt/",
+    "d": "n. 本能，天性",
+    "levels": ["托福"],
+    "core": "动物天生的、无需学习的固定行为倾向",
+    "ety": "源自拉丁语 instinctus「冲动、激励」，来自 instinguere「刺激、驱使」，in-「向内」+ stinguere「刺、戳」（与 sting 同源）。",
+    "ph": "in（内）+ stinct（刺）→ 由内在刺激驱动的行为",
+    "tip": "-stinct 与 sting（刺）同源，本能就像从内部「戳」你去行动。学科对比：instinct（天生）vs. learned behavior（后天习得）。",
+    "xex": [
+      {"en": "Sea turtles find their way to the ocean by instinct the moment they hatch.", "zh": "海龟一孵化出来就凭本能找到通往海洋的路。", "src": "造句"},
+      {"en": "by instinct / survival instinct / maternal instinct", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "intuition", "ipa": "/ˌɪntuˈɪʃn/", "note": "指人的直觉判断；instinct 更强调与生俱来、跨代遗传的行为本能"},
+      {"w": "impulse", "ipa": "/ˈɪmpʌls/", "note": "一时的冲动；instinct 是稳定的天性倾向"}
+    ],
+    "nu": "重音在首音节 IN-，读 /ˈɪnstɪŋkt/；末尾 -nct 三个辅音要读清。",
+    "rootfam": [
+      {"root": "sting/stinct", "meaning": "刺、戳", "words": [
+        {"w": "instinct", "g": "本能"},
+        {"w": "distinct", "g": "清晰的、不同的"},
+        {"w": "extinct", "g": "灭绝的"},
+        {"w": "distinguish", "g": "区分"},
+        {"w": "extinguish", "g": "熄灭"}
+      ]}
+    ]
+  },
+  {
+    "w": "vertebrate",
+    "p": "/ˈvɜːrtɪbrət/",
+    "d": "n. 脊椎动物 · a. 有脊椎的",
+    "levels": ["托福"],
+    "core": "体内有脊柱（脊椎骨）的动物",
+    "ety": "源自拉丁语 vertebra「关节、脊椎骨」，来自 vertere「转动」（脊椎让身体能转动）。",
+    "ph": "vertebra（脊椎骨）+ ate → 有脊椎骨的",
+    "tip": "vert = 转（脊椎让躯干能转）；加否定前缀 in- 即 invertebrate（无脊椎动物）。鱼、两栖、爬行、鸟、哺乳五大类都是 vertebrate。",
+    "xex": [
+      {"en": "All mammals, birds, and fish are vertebrates with a bony internal skeleton.", "zh": "所有哺乳动物、鸟类和鱼类都是拥有骨质内骨骼的脊椎动物。", "src": "造句"},
+      {"en": "aquatic vertebrate / vertebrate species / land vertebrates", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "chordate", "ipa": "/ˈkɔːrdeɪt/", "note": "脊索动物，分类学上更上位（含脊椎动物及被囊类等）；vertebrate 是有真正脊柱的脊索动物子集"}
+    ],
+    "nu": "重音在首 VER-，末音节 -brate 常弱读为 /brət/ 而非 /breɪt/。",
+    "rootfam": [
+      {"root": "vert/vers", "meaning": "转", "words": [
+        {"w": "vertebrate", "g": "脊椎动物"},
+        {"w": "invertebrate", "g": "无脊椎动物"},
+        {"w": "vertebra", "g": "脊椎骨"},
+        {"w": "convert", "g": "转变"},
+        {"w": "reverse", "g": "颠倒、逆转"},
+        {"w": "divert", "g": "转移"}
+      ]}
+    ]
+  },
+  {
+    "w": "invertebrate",
+    "p": "/ɪnˈvɜːrtɪbrət/",
+    "d": "n. 无脊椎动物 · a. 无脊椎的",
+    "levels": ["托福"],
+    "core": "没有脊柱的动物",
+    "ety": "in-「无、非」+ vertebrate「有脊椎的」，直接由 vertebra（脊椎骨，源自 vertere「转」）加否定前缀构成。",
+    "ph": "in（无）+ vertebrate（有脊椎的）→ 没有脊椎的",
+    "tip": "只要在 vertebrate 前加否定 in- 就翻转含义。昆虫、蠕虫、软体动物、珊瑚等占动物界 95% 以上，全是 invertebrate。",
+    "xex": [
+      {"en": "Insects are the most diverse group of invertebrates on the planet.", "zh": "昆虫是地球上种类最繁多的无脊椎动物类群。", "src": "造句"},
+      {"en": "marine invertebrate / soft-bodied invertebrate / invertebrate species", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "arthropod", "ipa": "/ˈɑːrθrəpɑːd/", "note": "节肢动物，是无脊椎动物中最庞大的一门（昆虫、蛛形、甲壳类）；invertebrate 是涵盖更广的上位词"}
+    ],
+    "nu": "重音在第二音节 -VER-，读 /ɪnˈvɜːrtɪbrət/；比 vertebrate 多前缀重音位置右移。",
+    "rootfam": [
+      {"root": "vert/vers", "meaning": "转", "words": [
+        {"w": "invertebrate", "g": "无脊椎动物"},
+        {"w": "vertebrate", "g": "脊椎动物"},
+        {"w": "vertebra", "g": "脊椎骨"},
+        {"w": "invert", "g": "使倒转"},
+        {"w": "revert", "g": "回复、恢复"}
+      ]}
+    ]
+  },
+  {
+    "w": "carnivore",
+    "p": "/ˈkɑːrnɪvɔːr/",
+    "d": "n. 食肉动物",
+    "levels": ["托福"],
+    "core": "以肉类为主要食物的动物",
+    "ety": "源自拉丁语 caro / carn-「肉」+ vorare「吞食」→「吃肉的」。",
+    "ph": "carn（肉）+ vore（吞食）→ 吃肉的",
+    "tip": "-vore（吞食）系列成套记：carni-（肉）、herbi-（草）、omni-（一切）、insecti-（昆虫）。carn = 肉（对照 carnival、carnation）。",
+    "xex": [
+      {"en": "As a carnivore, the wolf relies almost entirely on meat for nutrition.", "zh": "作为食肉动物，狼几乎完全依靠肉类获取营养。", "src": "造句"},
+      {"en": "large carnivore / top carnivore / carnivore diet", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "predator", "ipa": "/ˈpredətər/", "note": "从捕食行为角度定义；carnivore 从食性（吃肉）角度定义，食腐兽是 carnivore 但未必主动捕猎"}
+    ],
+    "nu": "重音在首 CAR-，末音节 -vore 读 /vɔːr/，美音带 r 尾。",
+    "rootfam": [
+      {"root": "vor", "meaning": "吞食", "words": [
+        {"w": "carnivore", "g": "食肉动物"},
+        {"w": "herbivore", "g": "食草动物"},
+        {"w": "omnivore", "g": "杂食动物"},
+        {"w": "voracious", "g": "贪吃的、狼吞虎咽的"},
+        {"w": "devour", "g": "吞食"}
+      ]},
+      {"root": "carn", "meaning": "肉", "words": [
+        {"w": "carnivore", "g": "食肉动物"},
+        {"w": "carnal", "g": "肉体的"},
+        {"w": "carnation", "g": "康乃馨（肉红色）"},
+        {"w": "incarnate", "g": "化身的、赋予肉身"}
+      ]}
+    ]
+  },
+  {
+    "w": "herbivore",
+    "p": "/ˈhɜːrbɪvɔːr/",
+    "d": "n. 食草动物",
+    "levels": ["托福"],
+    "core": "以植物为主要食物的动物",
+    "ety": "源自拉丁语 herba「草、植物」+ vorare「吞食」→「吃草的」。",
+    "ph": "herb（草）+ vore（吞食）→ 吃草的",
+    "tip": "herb = 草本（对照 herb 香草、herbal 草药的）；-vore = 吃。食草动物常有复杂消化道来分解纤维素。",
+    "xex": [
+      {"en": "Elephants are herbivores that spend most of the day foraging on grasses and leaves.", "zh": "大象是食草动物，一天大部分时间都在觅食青草和树叶。", "src": "造句"},
+      {"en": "grazing herbivore / large herbivore / herbivore population", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "grazer", "ipa": "/ˈɡreɪzər/", "note": "特指吃草的动物（如牛羊）；herbivore 涵盖所有以植物为食者，包括吃叶、吃果的"}
+    ],
+    "nu": "重音在首 HER-，读 /ˈhɜːrbɪvɔːr/；美音里 herb 的 h 在此词中要发音（不同于单独 herb 常不发 h）。",
+    "rootfam": [
+      {"root": "vor", "meaning": "吞食", "words": [
+        {"w": "herbivore", "g": "食草动物"},
+        {"w": "carnivore", "g": "食肉动物"},
+        {"w": "omnivore", "g": "杂食动物"},
+        {"w": "voracious", "g": "贪吃的"}
+      ]},
+      {"root": "herb", "meaning": "草、植物", "words": [
+        {"w": "herbivore", "g": "食草动物"},
+        {"w": "herb", "g": "香草、草本"},
+        {"w": "herbal", "g": "草药的"},
+        {"w": "herbaceous", "g": "草本的"}
+      ]}
+    ]
+  },
+  {
+    "w": "forage",
+    "p": "/ˈfɔːrɪdʒ/",
+    "d": "vi. 觅食；搜寻 · n. 草料，饲料",
+    "levels": ["托福"],
+    "core": "动物四处搜寻并获取食物",
+    "ety": "源自古法语 fourrage「饲料、草料」，来自 fuerre「干草」（日耳曼语源）；动词义「搜寻粮草」由此引申。",
+    "ph": "for- + age；想成到处「找草料」",
+    "tip": "与 forge（锻造）拼写相近但含义无关，注意区分。动物学里 forage 强调「主动外出搜寻食物」的觅食行为。",
+    "xex": [
+      {"en": "Squirrels forage for nuts and bury them to survive the winter.", "zh": "松鼠四处觅食坚果并埋藏起来以度过冬天。", "src": "造句"},
+      {"en": "forage for food / foraging behavior / forage over a wide area", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "scavenge", "ipa": "/ˈskævɪndʒ/", "note": "特指搜寻腐肉或剩余物；forage 泛指主动搜寻各类食物，中性"},
+      {"w": "rummage", "ipa": "/ˈrʌmɪdʒ/", "note": "翻找（多指人翻箱倒柜）；forage 更用于动物觅食语境"}
+    ],
+    "nu": "重音在首 FOR-，末音节 -age 读 /ɪdʒ/（如 village），不读 /eɪdʒ/。",
+    "rootfam": []
+  },
+  {
+    "w": "territorial",
+    "p": "/ˌterəˈtɔːriəl/",
+    "d": "a. 领地的；有地盘意识的，护territory的",
+    "levels": ["托福"],
+    "core": "会占据并保卫自己地盘、驱赶入侵者的（动物）",
+    "ety": "源自拉丁语 territorium「城邦周围的辖地」，词根 terra「土地」；加 -al 成形容词。",
+    "ph": "terr（土地）+ itor + ial → 与地盘有关的",
+    "tip": "terr = 土地（对照 terrain 地形、terrace 露台）。动物学里 territorial behavior 指标记、守卫领地、赶走同类的行为。",
+    "xex": [
+      {"en": "Male robins become highly territorial during the breeding season, chasing off rivals.", "zh": "雄性知更鸟在繁殖季变得极具领地意识，会驱赶竞争者。", "src": "造句"},
+      {"en": "territorial behavior / highly territorial / defend a territory", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "possessive", "ipa": "/pəˈzesɪv/", "note": "占有欲强的（多指对物/人的心理）；territorial 特指对空间地盘的占据与保卫"}
+    ],
+    "nu": "五音节 /ˌterəˈtɔːriəl/，主重音在 -TOR-，词长注意别吞音。",
+    "rootfam": [
+      {"root": "terr", "meaning": "土地", "words": [
+        {"w": "territorial", "g": "领地的"},
+        {"w": "territory", "g": "领地、领土"},
+        {"w": "terrain", "g": "地形"},
+        {"w": "terrace", "g": "梯田、露台"},
+        {"w": "terrestrial", "g": "陆地的"},
+        {"w": "subterranean", "g": "地下的"}
+      ]}
+    ]
+  },
+  {
+    "w": "offspring",
+    "p": "/ˈɔːfsprɪŋ/",
+    "d": "n. 后代，子孙；（动物的）崽",
+    "levels": ["托福"],
+    "core": "由亲代繁殖产生的下一代",
+    "ety": "古英语复合词 ofspring：of（离开、出自）+ spring（跃出、涌出）→「从亲代生出来的」。单复数同形。",
+    "ph": "off（出自）+ spring（涌出）→ 从父母身上「涌出」的下一代",
+    "tip": "单复数同形，one offspring / many offspring 都不加 s。spring 有「涌出、跃起」之义，后代就是从亲代「springs out」。",
+    "xex": [
+      {"en": "Many mammals invest heavily in caring for their offspring after birth.", "zh": "许多哺乳动物在幼崽出生后投入大量精力照料后代。", "src": "造句"},
+      {"en": "produce offspring / rear offspring / healthy offspring", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "progeny", "ipa": "/ˈprɑːdʒəni/", "note": "书面正式，指后裔子孙；offspring 更常用、中性，动物学首选"},
+      {"w": "descendant", "ipa": "/dɪˈsendənt/", "note": "指后裔（含隔多代）；offspring 侧重直接产下的下一代"}
+    ],
+    "nu": "重音在首 OFF-，读 /ˈɔːfsprɪŋ/；注意 -spring 读全，别丢 /ŋ/。",
+    "rootfam": []
+  },
+  {
+    "w": "burrow",
+    "p": "/ˈbɜːroʊ/",
+    "d": "n. 洞穴，地洞 · v. 挖洞，掘进",
+    "levels": ["托福"],
+    "core": "小动物挖掘并居住其中的地下洞穴",
+    "ety": "源自中古英语 borow，与古英语 beorg「掩蔽处、山丘」相关，也与 borough（自治市，本义「设防之地」）同源，核心义为「藏身的庇护处」。",
+    "ph": "borrow 少一个 r → burrow；动物「借地」挖洞藏身",
+    "tip": "拼写别与 borrow（借）混：burrow 是「地洞」。兔子、鼹鼠、旱獭等挖 burrow 躲避天敌、育幼、越冬。",
+    "xex": [
+      {"en": "Rabbits dig extensive burrows underground to shelter from predators.", "zh": "兔子在地下挖掘四通八达的洞穴以躲避天敌。", "src": "造句"},
+      {"en": "dig a burrow / burrow underground / live in a burrow", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "den", "ipa": "/den/", "note": "较大兽类（狐、熊）的巢穴，未必是自己挖的洞；burrow 特指挖掘出的地下小洞"},
+      {"w": "tunnel", "ipa": "/ˈtʌnl/", "note": "指贯通的通道；burrow 指动物居住用的洞穴系统"}
+    ],
+    "nu": "两音节 /ˈbɜːroʊ/，与 borough 近音；末尾 -ow 读 /oʊ/。",
+    "rootfam": []
+  },
+  {
+    "w": "mate",
+    "p": "/meɪt/",
+    "d": "n. 配偶 · v.（使）交配",
+    "levels": ["托福"],
+    "core": "动物繁殖时结合的伴侣，或指交配行为",
+    "ety": "源自中古低地德语 mate / gemate「同伴、共餐者」，与 meat（原义「食物」）相关，本义为「一同吃饭的人」→ 伙伴 → 配偶。",
+    "ph": "同桌吃饭的「伴」→ 引申为配偶",
+    "tip": "动物学里名词指「配偶」，动词指「交配」；相关词 mating season（交配季）、find a mate（寻偶）高频。",
+    "xex": [
+      {"en": "Male peacocks display their tail feathers to attract a mate.", "zh": "雄孔雀展开尾羽以吸引配偶。", "src": "造句"},
+      {"en": "attract a mate / mating season / mate for life", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "breed", "ipa": "/briːd/", "note": "强调「繁殖、产生后代」的整个过程；mate 侧重「交配」这一结合动作"},
+      {"w": "partner", "ipa": "/ˈpɑːrtnər/", "note": "泛指伴侣；mate 在动物学专指繁殖配偶"}
+    ],
+    "nu": "单音节 /meɪt/，长元音 /eɪ/。",
+    "rootfam": []
+  },
+  {
+    "w": "molt",
+    "p": "/moʊlt/",
+    "d": "v. 蜕皮，换毛，脱羽 · n. 蜕皮（期）",
+    "levels": ["托福"],
+    "core": "动物周期性脱落并更新羽毛、皮肤或外壳",
+    "ety": "源自古英语 *bemūtian「更换（羽毛）」，来自拉丁语 mutare「改变」；后来受 mold 影响插入 l，拼作 molt（英式 moult）。",
+    "ph": "mut（改变）→ 换掉旧的羽/皮/壳",
+    "tip": "英式拼 moult，美式拼 molt，读音相同 /moʊlt/。鸟换羽、蛇蜕皮、蟹脱壳都是 molt；节肢动物 molt 后才能长大。",
+    "xex": [
+      {"en": "Snakes molt their skin several times a year as they grow.", "zh": "蛇在生长过程中每年蜕皮数次。", "src": "造句"},
+      {"en": "molt its feathers / molting season / shed the old exoskeleton", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "shed", "ipa": "/ʃed/", "note": "泛指脱落（毛、皮、叶）；molt 特指周期性、成套地更换体表覆盖物"},
+      {"w": "slough", "ipa": "/slʌf/", "note": "指蜕掉（死皮/蛇皮）；molt 涵盖羽、毛、壳的整体更新"}
+    ],
+    "nu": "单音节 /moʊlt/，l 要发音；美拼 molt = 英拼 moult。",
+    "rootfam": [
+      {"root": "mut", "meaning": "改变", "words": [
+        {"w": "molt", "g": "蜕皮换毛"},
+        {"w": "mutate", "g": "变异、突变"},
+        {"w": "mutation", "g": "突变"},
+        {"w": "mutual", "g": "相互的"},
+        {"w": "commute", "g": "通勤、转换"}
+      ]}
+    ]
+  },
+  {
+    "w": "aquatic",
+    "p": "/əˈkwætɪk/",
+    "d": "a. 水生的；水上的",
+    "levels": ["托福"],
+    "core": "生活在水中或与水相关的",
+    "ety": "源自拉丁语 aqua「水」+ -atic，即「与水有关的」。",
+    "ph": "aqua（水）+ tic → 水里的",
+    "tip": "aqua = 水（对照 aquarium 水族馆、aqueduct 引水渠）。对照 terrestrial（陆生）、amphibious（水陆两栖）。",
+    "xex": [
+      {"en": "Otters are aquatic mammals superbly adapted to hunting fish in rivers.", "zh": "水獭是水生哺乳动物，极为擅长在河中捕鱼。", "src": "造句"},
+      {"en": "aquatic animal / aquatic plant / aquatic ecosystem", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "marine", "ipa": "/məˈriːn/", "note": "特指海洋的（咸水）；aquatic 涵盖淡水与海水一切水域"}
+    ],
+    "nu": "重音在第二音节 -QUA-，读 /əˈkwætɪk/，首音节弱读为 /ə/。",
+    "rootfam": [
+      {"root": "aqua", "meaning": "水", "words": [
+        {"w": "aquatic", "g": "水生的"},
+        {"w": "aquarium", "g": "水族馆"},
+        {"w": "aqueduct", "g": "引水渠"},
+        {"w": "aquifer", "g": "含水层"},
+        {"w": "aquaculture", "g": "水产养殖"}
+      ]}
+    ]
+  },
+  {
+    "w": "mimic",
+    "p": "/ˈmɪmɪk/",
+    "d": "vt. 模仿；拟态 · n. 模仿者 · a. 模拟的",
+    "levels": ["托福"],
+    "core": "动物在外形、声音或行为上模仿他者（常为自保）",
+    "ety": "源自希腊语 mimikos「善模仿的」，来自 mimos「模仿者、丑角」（mime 哑剧同源）。",
+    "ph": "mim（模仿）叠字，像照镜子学样",
+    "tip": "生物学名词 mimicry（拟态）高频：无毒物种模仿有毒物种的警戒色来吓退天敌。词根 mim 见于 mime、pantomime。",
+    "xex": [
+      {"en": "Some harmless flies mimic the coloration of wasps to deter predators.", "zh": "一些无害的苍蝇模仿黄蜂的体色以吓退捕食者。", "src": "造句"},
+      {"en": "mimic the appearance of / mimicry in nature / mimic a sound", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "imitate", "ipa": "/ˈɪmɪteɪt/", "note": "泛指模仿；mimic 更强调惟妙惟肖地仿真，生物学专用「拟态」"},
+      {"w": "impersonate", "ipa": "/ɪmˈpɜːrsəneɪt/", "note": "特指扮演/冒充某人；mimic 用于外形声音的仿真，含动物拟态"}
+    ],
+    "nu": "重音在首 MIM-，读 /ˈmɪmɪk/；两个 /ɪ/ 短促。",
+    "rootfam": [
+      {"root": "mim", "meaning": "模仿", "words": [
+        {"w": "mimic", "g": "模仿"},
+        {"w": "mimicry", "g": "拟态、模仿"},
+        {"w": "mime", "g": "哑剧、默剧"},
+        {"w": "pantomime", "g": "哑剧表演"},
+        {"w": "mimetic", "g": "模仿的、拟态的"}
+      ]}
+    ]
+  },
+  {
+    "w": "scavenger",
+    "p": "/ˈskævɪndʒər/",
+    "d": "n. 食腐动物；拾荒者",
+    "levels": ["托福"],
+    "core": "以其他动物的尸体或残余为食的动物",
+    "ety": "源自 scavage（中世纪一种商品检验税），源头是古北法语 escauwer「查看、检查」；后加 -er 指「巡查街道捡拾垃圾的人」，引申为食腐者。",
+    "ph": "scavenge（搜捡腐食）+ er → 捡死尸吃的动物",
+    "tip": "生态位关键角色：scavenger（如秃鹫、鬣狗）清理尸体，与主动捕杀的 predator 相对。动词 scavenge = 搜寻腐食/废物。",
+    "xex": [
+      {"en": "Vultures are scavengers that feed on the carcasses left by predators.", "zh": "秃鹫是食腐动物，以捕食者留下的尸体为食。", "src": "造句"},
+      {"en": "act as a scavenger / scavenger species / feed on carrion", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "carrion-eater", "ipa": "/ˈkæriən ˌiːtər/", "note": "直白描述「吃腐肉者」；scavenger 是标准术语，涵盖捡食各类残余"}
+    ],
+    "nu": "三音节 /ˈskævɪndʒər/，重音在首 SCA-；-ger 读 /dʒər/。",
+    "rootfam": []
+  },
+  {
+    "w": "dormant",
+    "p": "/ˈdɔːrmənt/",
+    "d": "a. 休眠的；蛰伏的，静止的",
+    "levels": ["托福"],
+    "core": "暂时停止活动、生命活动降到最低的状态",
+    "ety": "源自古法语 dormant「沉睡的」，来自拉丁语 dormire「睡觉」（dormitory 宿舍同根）。",
+    "ph": "dorm（睡）+ ant → 处于睡眠状态的",
+    "tip": "dorm = 睡（对照 dormitory 宿舍）。动物学里 dormant 描述冬眠、蛰伏状态；种子、火山也可 dormant（休眠）。名词 dormancy。",
+    "xex": [
+      {"en": "During the harsh winter, the ground squirrel remains dormant in its burrow.", "zh": "在严冬里，地松鼠在洞穴中保持休眠状态。", "src": "造句"},
+      {"en": "lie dormant / dormant state / remain dormant through winter", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "inactive", "ipa": "/ɪnˈæktɪv/", "note": "泛指不活动；dormant 强调「暂时休眠、可重新苏醒」的潜伏状态"},
+      {"w": "latent", "ipa": "/ˈleɪtnt/", "note": "指潜在未显现的；dormant 侧重生命活动停滞、可被唤醒"}
+    ],
+    "nu": "两音节 /ˈdɔːrmənt/，重音在首 DOR-，第二音节弱读。",
+    "rootfam": [
+      {"root": "dorm", "meaning": "睡", "words": [
+        {"w": "dormant", "g": "休眠的"},
+        {"w": "dormancy", "g": "休眠"},
+        {"w": "dormitory", "g": "宿舍"},
+        {"w": "dormouse", "g": "睡鼠"}
+      ]}
+    ]
+  },
+  {
+    "w": "habitat",
+    "p": "/ˈhæbɪtæt/",
+    "d": "n. 栖息地，自然环境",
+    "levels": ["托福"],
+    "core": "某种动物或植物自然生活的场所",
+    "ety": "拉丁语 habitat「它居住」，是 habitare「居住」的第三人称单数（旧时博物学名录用它标注物种「栖于……」），词根 habere「持有、占据」。",
+    "ph": "habit（居住/习性）+ at → 一物种「住」的地方",
+    "tip": "与 habit（习惯）同根 habere（持有）——栖息地是动物「据有并习惯居住」之地。高频短语 natural habitat、habitat loss（栖地丧失）。",
+    "xex": [
+      {"en": "Deforestation is destroying the natural habitat of countless species.", "zh": "森林砍伐正在摧毁无数物种的自然栖息地。", "src": "造句"},
+      {"en": "natural habitat / habitat loss / suitable habitat", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "environment", "ipa": "/ɪnˈvaɪrənmənt/", "note": "泛指整体环境；habitat 特指某物种赖以生存的具体栖息场所"},
+      {"w": "range", "ipa": "/reɪndʒ/", "note": "指物种分布的地理范围；habitat 指其中适宜居住的环境类型"}
+    ],
+    "nu": "三音节 /ˈhæbɪtæt/，重音在首 HAB-；两个 /æ/ 都要读满。",
+    "rootfam": [
+      {"root": "hab", "meaning": "持有、居住", "words": [
+        {"w": "habitat", "g": "栖息地"},
+        {"w": "habit", "g": "习惯"},
+        {"w": "inhabit", "g": "居住于"},
+        {"w": "habitation", "g": "居住、住所"},
+        {"w": "inhabitant", "g": "居民"}
+      ]}
+    ]
+  },
+  {
+    "w": "plumage",
+    "p": "/ˈpluːmɪdʒ/",
+    "d": "n. 鸟类羽毛（总称）",
+    "levels": ["托福"],
+    "core": "一只鸟身上全部羽毛的整体",
+    "ety": "源自法语 plumage，来自 plume「羽毛」，词根拉丁语 pluma「绒羽」。",
+    "ph": "plume（羽毛）+ age（集合名词后缀）→ 全身羽毛",
+    "tip": "plume = 羽（对照 plume 羽饰、plumb 铅垂另有词源勿混）。-age 表集合。求偶季雄鸟常有鲜艳的 breeding plumage。",
+    "xex": [
+      {"en": "The male's brilliant plumage plays a key role in attracting females.", "zh": "雄鸟艳丽的羽毛在吸引雌鸟方面起着关键作用。", "src": "造句"},
+      {"en": "bright plumage / breeding plumage / dull plumage", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "feathers", "ipa": "/ˈfeðərz/", "note": "指一根根羽毛的复数；plumage 指整体羽衣，更正式、集合"}
+    ],
+    "nu": "两音节 /ˈpluːmɪdʒ/，重音在首 PLU-，-age 读 /ɪdʒ/。",
+    "rootfam": [
+      {"root": "plum", "meaning": "羽毛", "words": [
+        {"w": "plumage", "g": "羽毛（总称）"},
+        {"w": "plume", "g": "羽毛、羽饰"},
+        {"w": "plumose", "g": "羽状的"}
+      ]}
+    ]
+  },
+  {
+    "w": "metamorphosis",
+    "p": "/ˌmetəˈmɔːrfəsɪs/",
+    "d": "n. 变态（发育）；彻底变化",
+    "levels": ["托福"],
+    "core": "动物发育中经历的形态剧变（如毛虫变蝴蝶）",
+    "ety": "源自希腊语 metamorphosis「变形」，meta-「改变、超越」+ morphe「形态」+ -osis「过程」。",
+    "ph": "meta（改变）+ morph（形态）+ osis → 形态彻底改变的过程",
+    "tip": "morph = 形态（对照 morphology 形态学、amorphous 无定形的）。生物学指蛙、昆虫从幼体到成体的形态骤变；complete/incomplete metamorphosis 是考点。",
+    "xex": [
+      {"en": "A caterpillar undergoes metamorphosis to become a butterfly.", "zh": "毛虫经历变态发育变成蝴蝶。", "src": "造句"},
+      {"en": "undergo metamorphosis / complete metamorphosis / larval metamorphosis", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "transformation", "ipa": "/ˌtrænsfərˈmeɪʃn/", "note": "泛指彻底转变；metamorphosis 特指生物发育中的形态变态，专业性更强"}
+    ],
+    "nu": "五音节 /ˌmetəˈmɔːrfəsɪs/，主重音在 -MOR-；复数 metamorphoses 结尾变 /siːz/。",
+    "rootfam": [
+      {"root": "morph", "meaning": "形态", "words": [
+        {"w": "metamorphosis", "g": "变态、蜕变"},
+        {"w": "morphology", "g": "形态学"},
+        {"w": "amorphous", "g": "无定形的"},
+        {"w": "polymorphic", "g": "多形态的"},
+        {"w": "anthropomorphic", "g": "拟人的"}
+      ]}
+    ]
+  },
+  {
+    "w": "gestation",
+    "p": "/dʒeˈsteɪʃn/",
+    "d": "n. 妊娠（期），孕育",
+    "levels": ["托福"],
+    "core": "哺乳动物胎儿在母体内发育的怀孕期",
+    "ety": "源自拉丁语 gestatio「携带、怀有」，来自 gestare「携带」（gerere「携带、承担」的频率动词形式）。",
+    "ph": "gest（携带）+ ation → 母体「怀带」幼体的过程",
+    "tip": "gest = 携带（对照 digest 消化、congest 拥塞、suggest 提出）。动物学高频 gestation period（妊娠期），如大象长达约 22 个月。",
+    "xex": [
+      {"en": "Elephants have the longest gestation period of any land mammal.", "zh": "大象的妊娠期是所有陆地哺乳动物中最长的。", "src": "造句"},
+      {"en": "gestation period / long gestation / during gestation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "pregnancy", "ipa": "/ˈpreɡnənsi/", "note": "日常用语（多指人怀孕）；gestation 更学术，泛指动物妊娠及其时长"}
+    ],
+    "nu": "三音节 /dʒeˈsteɪʃn/，重音在 -STA-；首音节 ge- 读 /dʒe/。",
+    "rootfam": [
+      {"root": "gest", "meaning": "携带、承担", "words": [
+        {"w": "gestation", "g": "妊娠"},
+        {"w": "digest", "g": "消化"},
+        {"w": "congest", "g": "使拥塞"},
+        {"w": "suggest", "g": "建议、暗示"},
+        {"w": "gesture", "g": "手势"}
+      ]}
+    ]
+  },
+  {
+    "w": "marsupial",
+    "p": "/mɑːrˈsuːpiəl/",
+    "d": "n. 有袋动物 · a. 有袋类的",
+    "levels": ["托福"],
+    "core": "幼崽发育不全、需在母体育儿袋中继续成长的哺乳动物",
+    "ety": "源自拉丁语 marsupium「小袋、钱包」，源头是希腊语 marsipos「袋子」；因这类动物腹部育儿袋得名。",
+    "ph": "marsup（袋）+ ial → 有育儿袋的",
+    "tip": "记 marsupium = 袋子；袋鼠、考拉、负鼠都是 marsupial，幼崽出生极小，爬进母亲 pouch（育儿袋）继续发育。",
+    "xex": [
+      {"en": "Kangaroos are marsupials whose tiny newborns develop inside the mother's pouch.", "zh": "袋鼠是有袋动物，其极小的新生幼崽在母亲的育儿袋中发育。", "src": "造句"},
+      {"en": "marsupial mammal / pouched marsupial / native marsupial", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "pouched mammal", "ipa": "/paʊtʃt ˈmæml/", "note": "描述性说法「有袋的哺乳动物」；marsupial 是标准分类术语"}
+    ],
+    "nu": "四音节 /mɑːrˈsuːpiəl/，重音在第二音节 -SU-。",
+    "rootfam": [
+      {"root": "marsup", "meaning": "袋", "words": [
+        {"w": "marsupial", "g": "有袋动物"},
+        {"w": "marsupium", "g": "育儿袋"}
+      ]}
+    ]
+  }
+]

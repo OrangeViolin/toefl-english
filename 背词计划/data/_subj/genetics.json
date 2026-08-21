@@ -1,0 +1,678 @@
+[
+  {
+    "w": "gene",
+    "p": "/dʒiːn/",
+    "d": "n. 基因",
+    "levels": ["托福"],
+    "core": "DNA 上携带一段遗传信息的功能单位，决定某个特定性状并可传给后代。",
+    "ety": "1909 年丹麦植物学家 Johannsen 从希腊语 genos「出生、种类、族类」（同源 genesis 起源）截取造出 gene，指「决定遗传性状的最小单位」。",
+    "ph": "gene 里 g 在 e 前发软音 /dʒ/，ee 读长音 /iː/，和 scene、gene pool 押同韵。",
+    "tip": "gen = 生（generate、genesis），基因就是「让性状代代生出来」的那段密码。",
+    "xex": [
+      {"en": "A single gene can determine whether a pea plant produces round or wrinkled seeds.", "zh": "单个基因就能决定豌豆植株结出的种子是圆的还是皱的。", "src": "造句"},
+      {"en": "a dominant gene / gene expression / gene pool", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "allele", "ipa": "/əˈliːl/", "note": "指同一基因的不同「版本」（如显性/隐性）；gene 指基因本身这个位点"},
+      {"w": "factor", "ipa": "/ˈfæktər/", "note": "孟德尔早期用 hereditary factor 指基因，历史/听力语境里可指代 gene"}
+    ],
+    "nu": "gen（生、种）——gene、genesis、generate、genetic 都在讲「生出、产生」。",
+    "rootfam": [
+      {"root": "gen", "meaning": "生，产生；种类", "words": [
+        {"w": "gene", "g": "基因"},
+        {"w": "genetic", "g": "遗传的"},
+        {"w": "genesis", "g": "起源，创始"},
+        {"w": "generate", "g": "产生，生成"},
+        {"w": "genome", "g": "基因组"},
+        {"w": "genotype", "g": "基因型"}
+      ]}
+    ]
+  },
+  {
+    "w": "genetic",
+    "p": "/dʒəˈnetɪk/",
+    "d": "a. 基因的，遗传（学）的",
+    "levels": ["托福"],
+    "core": "与基因或遗传相关的——描述由基因决定、可代代传递的特征或过程。",
+    "ety": "gene（基因）+ -ic（形容词后缀），词根 gen「生、种」；字面「关于遗传物质的」，1831 年前后与遗传学一同确立。",
+    "ph": "重音在中间音节 -NET-：ge-NET-ic；名词 genetics 同重音，只在词尾加 -s。",
+    "tip": "gene + tic → 「基因层面的」。凡涉及血缘、遗传、DNA 的都用 genetic。",
+    "xex": [
+      {"en": "Eye color is a genetic trait passed from parents to their children.", "zh": "眼睛的颜色是一种从父母传给子女的遗传性状。", "src": "造句"},
+      {"en": "genetic material / genetic variation / genetic disorder", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "hereditary", "ipa": "/həˈredɪteri/", "note": "强调「经遗传获得、代代相传」；genetic 强调「由基因决定」，范围更技术化"},
+      {"w": "inherited", "ipa": "/ɪnˈherɪtɪd/", "note": "过去分词作形容词，指「继承而来的」；与 genetic 常互换，但更口语"}
+    ],
+    "nu": "gen（生、种）串起 genetic、gene、genesis——都指向「与生俱来、代代相生」。",
+    "rootfam": [
+      {"root": "gen", "meaning": "生，产生；种类", "words": [
+        {"w": "genetic", "g": "遗传的"},
+        {"w": "genetics", "g": "遗传学"},
+        {"w": "gene", "g": "基因"},
+        {"w": "generate", "g": "产生"},
+        {"w": "generation", "g": "世代"},
+        {"w": "congenital", "g": "先天的"}
+      ]}
+    ]
+  },
+  {
+    "w": "genetics",
+    "p": "/dʒəˈnetɪks/",
+    "d": "n. 遗传学",
+    "levels": ["托福"],
+    "core": "研究基因、遗传与生物性状变异规律的科学分支。",
+    "ety": "1905 年英国生物学家 Bateson 提出，取 gene（基因）+ -ics（表示某门学科，如 physics、economics）。词根 gen「生、种」。",
+    "ph": "重音在 -NET-：ge-NET-ics；-ics 结尾的学科名（physics、ethics）通常作单数用。",
+    "tip": "gene + ics（学科）→ 一门专门研究「基因怎样把性状代代传下去」的学问。",
+    "xex": [
+      {"en": "Mendel's experiments with pea plants laid the foundation of modern genetics.", "zh": "孟德尔用豌豆做的实验为现代遗传学奠定了基础。", "src": "造句"},
+      {"en": "the field of genetics / molecular genetics / population genetics", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "heredity", "ipa": "/həˈredəti/", "note": "指「遗传（这一现象/过程）」本身；genetics 是研究这现象的学科"}
+    ],
+    "nu": "-ics 是学科后缀（physics、ethics、genetics）——统一记「某某学」。"
+  },
+  {
+    "w": "heredity",
+    "p": "/həˈredəti/",
+    "d": "n. 遗传，遗传性",
+    "levels": ["托福"],
+    "core": "亲代把性状与特征通过基因传给子代的现象与过程。",
+    "ety": "源自拉丁语 hereditas「继承、遗产」（heres「继承人」）。与 heir（继承人）、inherit（继承）同根，本义「财产的传承」，后转指「性状的传承」。",
+    "ph": "重音在第二音节 -RED-：he-RED-i-ty；形容词 hereditary 重音仍在 -RED-。",
+    "tip": "her（继承人 heir）+ edity → 从祖辈「继承」下来的东西，就是遗传。",
+    "xex": [
+      {"en": "Scientists once debated whether heredity or environment shapes behavior more.", "zh": "科学家曾争论究竟是遗传还是环境对行为的塑造更大。", "src": "造句"},
+      {"en": "the laws of heredity / heredity and environment / a matter of heredity", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "inheritance", "ipa": "/ɪnˈherɪtəns/", "note": "既指「遗传（生物）」也指「遗产」；heredity 只指生物学上的性状遗传"},
+      {"w": "genetics", "ipa": "/dʒəˈnetɪks/", "note": "genetics 是研究 heredity 的学科；heredity 是被研究的现象本身"}
+    ],
+    "nu": "her（继承）——heredity、heir、heritage、inherit 都在讲「代代传下」。",
+    "rootfam": [
+      {"root": "her(ed)", "meaning": "继承", "words": [
+        {"w": "heredity", "g": "遗传"},
+        {"w": "hereditary", "g": "遗传的；世袭的"},
+        {"w": "heir", "g": "继承人"},
+        {"w": "heritage", "g": "遗产，传统"},
+        {"w": "inherit", "g": "继承，遗传而得"},
+        {"w": "inheritance", "g": "遗产；遗传"}
+      ]}
+    ]
+  },
+  {
+    "w": "hereditary",
+    "p": "/həˈredɪteri/",
+    "d": "a. 遗传的，遗传性的；世袭的",
+    "levels": ["托福"],
+    "core": "经由遗传从亲代传给子代的；也指头衔、财产依血统世代相传的。",
+    "ety": "拉丁语 hereditarius「与继承有关的」，源 heres「继承人」；与 heredity、heir 同根。",
+    "ph": "重音在 -RED-：he-RED-i-tar-y，词尾 -tary 读 /teri/，勿把重音放到词尾。",
+    "tip": "heredity（遗传）的形容词——凡「随血缘传下来的」病、特征、爵位都用它。",
+    "xex": [
+      {"en": "Some forms of color blindness are hereditary and run in families.", "zh": "某些类型的色盲是遗传性的，会在家族中世代出现。", "src": "造句"},
+      {"en": "a hereditary disease / hereditary trait / hereditary title", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "inherited", "ipa": "/ɪnˈherɪtɪd/", "note": "同义，指「继承而来的」；hereditary 更强调「可世代相传的属性」"},
+      {"w": "genetic", "ipa": "/dʒəˈnetɪk/", "note": "genetic 强调「由基因决定」；hereditary 强调「经血缘传递」，二者常并用"}
+    ],
+    "nu": "her（继承）+ -ary（形容词）——与 heir、heritage 同族，都指「传下来的」。"
+  },
+  {
+    "w": "inherit",
+    "p": "/ɪnˈherɪt/",
+    "d": "v. 继承（财产、头衔）；遗传而得（性状）",
+    "levels": ["托福"],
+    "core": "从上一代那里获得——既指得到遗产、头衔，也指从父母那里遗传得到某种特征。",
+    "ety": "拉丁语 in-「进入、使成为」+ heres「继承人」→ inheritare「使成为继承人」。与 heir、heredity 同根。",
+    "ph": "重音在第二音节 -HER-：in-HER-it；名词 inheritance 重音不变。",
+    "tip": "in（进入）+ herit（继承人身份）→ 走进「继承人」的位置，把上一代的东西接过来。",
+    "xex": [
+      {"en": "Children inherit half of their genes from each parent.", "zh": "子女从父母双方各遗传得到一半的基因。", "src": "造句"},
+      {"en": "inherit a trait / inherit a gene from / inherit property", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "acquire", "ipa": "/əˈkwaɪər/", "note": "泛指「获得」，不含血缘传递义；inherit 特指「从上一代传得」"}
+    ],
+    "nu": "her（继承）——inherit、heir、heredity、heritage 一族，核心是「接过上一代的」。",
+    "rootfam": [
+      {"root": "her(it)", "meaning": "继承", "words": [
+        {"w": "inherit", "g": "继承，遗传而得"},
+        {"w": "inheritance", "g": "遗产；遗传"},
+        {"w": "heritage", "g": "遗产，传统"},
+        {"w": "heir", "g": "继承人"},
+        {"w": "heredity", "g": "遗传"}
+      ]}
+    ]
+  },
+  {
+    "w": "inheritance",
+    "p": "/ɪnˈherɪtəns/",
+    "d": "n. 遗传（特征）；遗产，继承物",
+    "levels": ["托福"],
+    "core": "从亲代传给子代的性状总和；也指继承得到的财产。遗传学讲座中多指「遗传方式」。",
+    "ety": "inherit（继承）+ -ance（名词后缀），词根 heres「继承人」。",
+    "ph": "重音在 -HER-：in-HER-i-tance，词尾 -tance 轻读 /təns/。",
+    "tip": "inherit + ance → 「继承这件事/继承到的东西」。遗传学里常说 pattern of inheritance（遗传方式）。",
+    "xex": [
+      {"en": "Mendel described how traits are passed on according to simple rules of inheritance.", "zh": "孟德尔描述了性状如何按简单的遗传规律传递下去。", "src": "造句"},
+      {"en": "pattern of inheritance / genetic inheritance / receive an inheritance", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "heredity", "ipa": "/həˈredəti/", "note": "heredity 指「遗传这一普遍现象」；inheritance 更常指「具体传下来的性状/方式」"},
+      {"w": "legacy", "ipa": "/ˈleɡəsi/", "note": "只用于「遗产、传承下来的东西」，无生物遗传义"}
+    ],
+    "nu": "词尾 -ance 把动词变名词（inherit→inheritance，assist→assistance）。",
+    "senses": [
+      {"s": "遗传（特征）", "e": "The inheritance of eye color follows predictable patterns."},
+      {"s": "遗产，继承物", "e": "She used her inheritance to start a business."}
+    ]
+  },
+  {
+    "w": "trait",
+    "p": "/treɪt/",
+    "d": "n. 特性，特征，（尤指遗传的）性状",
+    "levels": ["托福"],
+    "core": "生物体某个可观察、可遗传的具体特征，如身高、花色、血型。",
+    "ety": "源自拉丁语 tractus「拉、拖出的线条」（trahere「拉」），经法语 trait「一笔、线条、特点」。字面「勾勒出的一笔」，引申为「特征」。",
+    "ph": "trait 读 /treɪ/+t，ai 发 /eɪ/，和 wait、bait 押韵；单音节。",
+    "tip": "画像里勾出的一「笔」（trait←trace 描线）就是一个「特征」。",
+    "xex": [
+      {"en": "A recessive trait appears only when an organism inherits two copies of the gene.", "zh": "隐性性状只有当生物体遗传到该基因的两份拷贝时才会显现。", "src": "造句"},
+      {"en": "an inherited trait / a physical trait / dominant trait", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "characteristic", "ipa": "/ˌkærəktəˈrɪstɪk/", "note": "更正式、可指抽象品质；trait 更简短，遗传学中特指某个具体性状"},
+      {"w": "feature", "ipa": "/ˈfiːtʃər/", "note": "泛指「显著特点」，可指非生物；trait 偏向生物/性格的固有特征"}
+    ],
+    "nu": "trait 与 trace、tract 同源于 trahere「拉」——都跟「拉出的线条」有关。"
+  },
+  {
+    "w": "chromosome",
+    "p": "/ˈkroʊməsoʊm/",
+    "d": "n. 染色体",
+    "levels": ["托福"],
+    "core": "细胞核内由 DNA 缠绕蛋白质构成的线状结构，是基因的载体。",
+    "ety": "希腊语 chrōma「颜色」+ sōma「体」，1888 年造词，字面「有色的体」——因这些结构易被染料着色、在显微镜下显色而得名。",
+    "ph": "首音节 chro- 里 ch 读 /k/（希腊来源规律，同 chorus、chaos）；重音在首音节 CHRO-。",
+    "tip": "chromo（颜色）+ some（体）→ 「能被染上色的小体」，正是它显微镜下现形的样子。",
+    "xex": [
+      {"en": "Humans normally have twenty-three pairs of chromosomes in each cell.", "zh": "人类每个细胞中通常有二十三对染色体。", "src": "造句"},
+      {"en": "a pair of chromosomes / the X chromosome / chromosome number", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "chromatin", "ipa": "/ˈkroʊmətɪn/", "note": "指未凝缩的 DNA-蛋白质复合物；chromosome 是它凝缩成型后的结构"}
+    ],
+    "nu": "chrom（颜色）——chromosome、chrome、monochrome、chromatic 都与「色」相关。",
+    "rootfam": [
+      {"root": "chrom", "meaning": "颜色", "words": [
+        {"w": "chromosome", "g": "染色体"},
+        {"w": "chrome", "g": "铬；镀铬"},
+        {"w": "chromatic", "g": "彩色的；半音的"},
+        {"w": "monochrome", "g": "单色的"},
+        {"w": "chromatography", "g": "色谱法"}
+      ]}
+    ]
+  },
+  {
+    "w": "genome",
+    "p": "/ˈdʒiːnoʊm/",
+    "d": "n. 基因组，全部遗传物质",
+    "levels": ["托福"],
+    "core": "一个生物体全套遗传信息——所有基因和 DNA 序列的总和。",
+    "ety": "gene（基因）+ chromosome 尾部 -ome 拼合而成（1920 年德国 Winkler 造词），-ome 表「整体、总和」，字面「全部基因的总和」。",
+    "ph": "genome 读 /ˈdʒiː-noʊm/，g 软音 /dʒ/，o 读 /oʊ/；重音在首音节。",
+    "tip": "gene + -ome（总体）→ 一个物种「全部基因打包在一起」的那份完整清单。",
+    "xex": [
+      {"en": "The Human Genome Project mapped all the DNA in a human cell.", "zh": "人类基因组计划绘制出了人体细胞中的全部 DNA。", "src": "造句"},
+      {"en": "the human genome / sequence a genome / genome mapping", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "DNA", "ipa": "/ˌdiː en ˈeɪ/", "note": "DNA 是构成 genome 的分子；genome 指某生物体 DNA 的「完整全集」"}
+    ],
+    "nu": "-ome 表「总体」（genome 基因组、biome 生物群系）——记「打包成一个整体」。"
+  },
+  {
+    "w": "genotype",
+    "p": "/ˈdʒenətaɪp/",
+    "d": "n. 基因型",
+    "levels": ["托福"],
+    "core": "一个生物体所携带的具体基因组合（内在遗传构成），与外在表现相对。",
+    "ety": "gene（基因）+ type（类型），词根 gen「生、种」+ typ「印记、样式」。字面「基因的类型」，与 phenotype（表现型）成对。",
+    "ph": "重音在首音节 GEN-：GEN-o-type；-type 读 /taɪp/。",
+    "tip": "geno（基因）+ type（型）→ 藏在里面的「基因配方」，是看不见的那份底稿。",
+    "xex": [
+      {"en": "Two plants with the same genotype may look different if grown in different soils.", "zh": "两株基因型相同的植物，若在不同土壤中生长，外观可能不同。", "src": "造句"},
+      {"en": "genotype and phenotype / the same genotype / determine the genotype", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "phenotype", "ipa": "/ˈfiːnətaɪp/", "note": "反义/成对词：phenotype 是外在可见表现，genotype 是内在基因构成"}
+    ],
+    "nu": "gen（种）+ typ（型）——与 phenotype 配对：里（基因）对外（表现）。"
+  },
+  {
+    "w": "phenotype",
+    "p": "/ˈfiːnətaɪp/",
+    "d": "n. 表现型，表型",
+    "levels": ["托福"],
+    "core": "生物体可观察到的外在特征（形态、生理、行为），由基因型与环境共同决定。",
+    "ety": "希腊语 phainein「显现、显示」（同源 phenomenon 现象）+ type「类型」，字面「显现出来的类型」，即外在可见的表现。",
+    "ph": "首音节 phe- 里 ph 读 /f/，e 读长音 /iː/；重音在首音节 PHE-。",
+    "tip": "pheno（显现，同 phenomenon）+ type → 「显露在外的类型」，就是你眼睛能看见的样子。",
+    "xex": [
+      {"en": "The same genotype can produce different phenotypes under different conditions.", "zh": "相同的基因型在不同条件下可以产生不同的表现型。", "src": "造句"},
+      {"en": "observable phenotype / phenotype and genotype / express a phenotype", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "genotype", "ipa": "/ˈdʒenətaɪp/", "note": "成对词：genotype 是内在基因，phenotype 是外在可见表现"},
+      {"w": "trait", "ipa": "/treɪt/", "note": "trait 是构成 phenotype 的单个具体特征；phenotype 是全部可见特征的整体"}
+    ],
+    "nu": "phen（显现）——phenotype、phenomenon 同根，都指「显露、现出来」。",
+    "rootfam": [
+      {"root": "phen", "meaning": "显现，出现", "words": [
+        {"w": "phenotype", "g": "表现型"},
+        {"w": "phenomenon", "g": "现象"},
+        {"w": "phenomenal", "g": "非凡的；现象的"}
+      ]}
+    ]
+  },
+  {
+    "w": "dominant",
+    "p": "/ˈdɑːmɪnənt/",
+    "d": "a. 显性的；占优势的，支配的",
+    "levels": ["托福"],
+    "core": "遗传学中指某等位基因只需一份即可表现出来、并掩盖隐性基因的特性。",
+    "ety": "拉丁语 dominari「统治、主宰」（dominus「主人」）+ -ant。字面「作主的」，遗传学借来指「起主导、能盖过对方的」基因。",
+    "ph": "重音在首音节 DOM-：DOM-i-nant；同族 dominate 重音也在 DOM-。",
+    "tip": "domin（主人 dominus）→ 「当家做主」的那份基因，一份就压得住隐性。",
+    "xex": [
+      {"en": "Because the gene for brown eyes is dominant, it masks the recessive gene for blue eyes.", "zh": "由于棕色眼睛的基因是显性的，它会掩盖蓝色眼睛的隐性基因。", "src": "造句"},
+      {"en": "a dominant gene / dominant allele / the dominant trait", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "recessive", "ipa": "/rɪˈsesɪv/", "note": "反义词：recessive 隐性，需两份才显现；dominant 一份即显"},
+      {"w": "prevailing", "ipa": "/prɪˈveɪlɪŋ/", "note": "日常义近「占主导的」；但不用于遗传学的「显性」术语"}
+    ],
+    "nu": "domin（主人）——dominant、dominate、dominion 都在讲「主宰、当家」。",
+    "rootfam": [
+      {"root": "domin", "meaning": "主人；统治", "words": [
+        {"w": "dominant", "g": "显性的；占优势的"},
+        {"w": "dominate", "g": "支配，统治"},
+        {"w": "domination", "g": "支配，统治"},
+        {"w": "dominion", "g": "统治权；领地"},
+        {"w": "predominant", "g": "主要的，占优势的"}
+      ]}
+    ],
+    "senses": [
+      {"s": "显性的（遗传）", "e": "The dominant allele determines the flower's color."},
+      {"s": "占优势的，支配的", "e": "One species became dominant in the ecosystem."}
+    ]
+  },
+  {
+    "w": "recessive",
+    "p": "/rɪˈsesɪv/",
+    "d": "a. 隐性的",
+    "levels": ["托福"],
+    "core": "遗传学中指某等位基因只有在两份都存在时才表现出来、否则被显性基因掩盖的特性。",
+    "ety": "拉丁语 recedere「后退、退回」（re-「回」+ cedere「走」）→ recess「退隐」+ -ive。字面「退到后面的」，喻基因「隐退不显」。",
+    "ph": "重音在第二音节 -CESS-：re-CESS-ive；ss 读 /s/，与 recess 同源。",
+    "tip": "re（回）+ cess（走）→ 「往后退、藏起来」的基因，要凑齐两份才肯露面。",
+    "xex": [
+      {"en": "A recessive trait shows up only when both parents pass on the same recessive gene.", "zh": "隐性性状只有当父母双方都传下同一个隐性基因时才会显现。", "src": "造句"},
+      {"en": "a recessive gene / recessive allele / a recessive disorder", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "dominant", "ipa": "/ˈdɑːmɪnənt/", "note": "反义词：dominant 显性，一份即显；recessive 隐性，需两份"}
+    ],
+    "nu": "cess/ced（走）——recessive、recede、recess 都含「往回退」的动作。",
+    "rootfam": [
+      {"root": "cess/ced", "meaning": "走，行进", "words": [
+        {"w": "recessive", "g": "隐性的"},
+        {"w": "recede", "g": "后退，减弱"},
+        {"w": "recess", "g": "休息；凹处"},
+        {"w": "proceed", "g": "继续进行"},
+        {"w": "precede", "g": "先于，领先"}
+      ]}
+    ]
+  },
+  {
+    "w": "allele",
+    "p": "/əˈliːl/",
+    "d": "n. 等位基因",
+    "levels": ["六级+"],
+    "core": "同一基因位点上的不同变体形式，如决定豌豆花色的紫花与白花两个版本。",
+    "ety": "源自希腊语 allēlōn「彼此、互相」（allos「其他」），德语先造 Allelomorph「相互对应的形态」，后缩为 allele。字面「互为对方的（基因型）」。",
+    "ph": "重音在第二音节 -LELE：a-LEEL；两个 e 都读 /iː/，尾音同 seal。",
+    "tip": "all（其他 allos，如 alter、alien）→ 同一基因的「另一个版本」，就是等位基因。",
+    "xex": [
+      {"en": "An organism inherits one allele for a gene from each of its two parents.", "zh": "生物体从父母双方各遗传得到某个基因的一个等位基因。", "src": "造句"},
+      {"en": "a dominant allele / a recessive allele / two alleles of a gene", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "gene", "ipa": "/dʒiːn/", "note": "gene 指基因这个功能单位；allele 指该基因的某一具体版本（显/隐等）"},
+      {"w": "variant", "ipa": "/ˈveriənt/", "note": "泛指「变体」；allele 特指基因层面的等位变体，术语更精确"}
+    ],
+    "nu": "all-（其他，希腊 allos）——allele、alter、alien、allergy 都含「异、别的」。"
+  },
+  {
+    "w": "mutation",
+    "p": "/mjuːˈteɪʃn/",
+    "d": "n. 突变，变异",
+    "levels": ["六级+"],
+    "core": "DNA 序列发生的可遗传改变，是遗传变异与进化的原始来源。",
+    "ety": "拉丁语 mutare「改变」→ mutatio「变化」+ -ion。与 mutual、commute 同根 mut「变、换」。字面「改变（这件事）」。",
+    "ph": "重音在 -TA-：mu-TA-tion；-tion 读 /ʃn/；动词 mutate 重音在首音节 MU-。",
+    "tip": "mut（变，同 mutate、mutual）→ DNA「变了个字母」，就是一次突变。",
+    "xex": [
+      {"en": "A single mutation in a gene can change the shape of the protein it produces.", "zh": "一个基因中的单个突变就能改变它所产生的蛋白质的形状。", "src": "造句"},
+      {"en": "a genetic mutation / random mutation / cause a mutation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "variation", "ipa": "/ˌveriˈeɪʃn/", "note": "variation 指群体内已有的「差异」；mutation 指产生新差异的「改变事件」"},
+      {"w": "alteration", "ipa": "/ˌɔːltəˈreɪʃn/", "note": "泛指任何「改动」；mutation 特指遗传物质层面的改变"}
+    ],
+    "nu": "mut（变、换）——mutation、mutate、mutual、commute 都含「换、变」。",
+    "rootfam": [
+      {"root": "mut", "meaning": "改变，交换", "words": [
+        {"w": "mutation", "g": "突变，变异"},
+        {"w": "mutate", "g": "（使）突变"},
+        {"w": "mutual", "g": "相互的"},
+        {"w": "commute", "g": "通勤；换算"},
+        {"w": "immutable", "g": "不可改变的"}
+      ]}
+    ]
+  },
+  {
+    "w": "variation",
+    "p": "/ˌveriˈeɪʃn/",
+    "d": "n. 变异，变化，差异",
+    "levels": ["六级+"],
+    "core": "同一物种或群体的个体之间在性状上表现出的差异，是自然选择作用的原材料。",
+    "ety": "拉丁语 variare「使不同、变化」（varius「多样的」）+ - tion。与 vary、various 同根 vari「多样」。",
+    "ph": "重音在 -A-：va-ri-A-tion；-tion 读 /ʃn/；动词 vary 重音在首音节。",
+    "tip": "vary（变化）的名词——群体里「各不相同」的那些差异，就是 variation。",
+    "xex": [
+      {"en": "Genetic variation within a population allows some individuals to survive new diseases.", "zh": "群体内的遗传变异使某些个体得以在新疾病中存活下来。", "src": "造句"},
+      {"en": "genetic variation / natural variation / variation within a species", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "diversity", "ipa": "/daɪˈvɜːrsəti/", "note": "diversity 强调「多样性、种类之多」；variation 强调「个体间的差异程度」"},
+      {"w": "difference", "ipa": "/ˈdɪfrəns/", "note": "泛指任何「不同」；variation 特指同类事物内部的系统性差异"}
+    ],
+    "nu": "vari（多样）——variation、vary、various、variety 都在讲「不一样、多变」。",
+    "rootfam": [
+      {"root": "vari", "meaning": "多样，变化", "words": [
+        {"w": "variation", "g": "变异，差异"},
+        {"w": "vary", "g": "改变，变化"},
+        {"w": "various", "g": "各种各样的"},
+        {"w": "variety", "g": "多样；种类"},
+        {"w": "variable", "g": "可变的；变量"}
+      ]}
+    ]
+  },
+  {
+    "w": "replicate",
+    "p": "/ˈreplɪkeɪt/",
+    "d": "v. 复制（DNA）；重复（实验）",
+    "levels": ["托福"],
+    "core": "精确制造出一份相同的拷贝——遗传学中特指 DNA 在细胞分裂前自我复制。",
+    "ety": "拉丁语 replicare「折回、重复」（re-「再」+ plicare「折叠」）+ -ate。与 reply、fold 同源 plic「折」。字面「再折一次」，即「重做一份」。",
+    "ph": "重音在首音节 REP-：REP-li-cate；名词 replication 重音移到 -CA-。",
+    "tip": "re（再）+ plic（折，如 fold、apply）→ 「再叠出一份一模一样的」，就是复制。",
+    "xex": [
+      {"en": "Before a cell divides, its DNA must replicate so each new cell has a full copy.", "zh": "细胞分裂前，它的 DNA 必须复制，以便每个新细胞都有一份完整拷贝。", "src": "造句"},
+      {"en": "DNA replicates / replicate an experiment / replicate the results", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "duplicate", "ipa": "/ˈduːplɪkeɪt/", "note": "duplicate 强调「做出第二份」；replicate 强调「精确照原样复制」，学术色彩强"},
+      {"w": "copy", "ipa": "/ˈkɑːpi/", "note": "日常词，泛指「抄、复制」；replicate 用于科学（DNA、实验）语境"}
+    ],
+    "nu": "plic（折）——replicate、reply、apply、complicate 都源于「折叠」。",
+    "rootfam": [
+      {"root": "plic", "meaning": "折叠", "words": [
+        {"w": "replicate", "g": "复制；重复"},
+        {"w": "replica", "g": "复制品"},
+        {"w": "reply", "g": "回复"},
+        {"w": "apply", "g": "应用；申请"},
+        {"w": "complicate", "g": "使复杂"}
+      ]}
+    ]
+  },
+  {
+    "w": "offspring",
+    "p": "/ˈɔːfsprɪŋ/",
+    "d": "n. 子女，后代；（动物的）崽",
+    "levels": ["托福"],
+    "core": "由亲代繁殖产生的下一代个体，单复数同形。",
+    "ety": "古英语 ofspring：of「从……出来」+ springan「跳跃、涌出、生长」。字面「从（亲体）涌出来的（东西）」，即后代。",
+    "ph": "重音在首音节 OFF-：OFF-spring；单复数同形，说 many offspring 不加 s。",
+    "tip": "off（离出）+ spring（涌出、生长）→ 从亲代「涌出、生出来」的下一代。",
+    "xex": [
+      {"en": "Each pair of birds may produce several offspring in a single breeding season.", "zh": "每对鸟在一个繁殖季节里可能产下好几只幼鸟。", "src": "造句"},
+      {"en": "produce offspring / their offspring / healthy offspring", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "descendant", "ipa": "/dɪˈsendənt/", "note": "descendant 可指隔多代的后裔；offspring 特指「直接生出的下一代」"},
+      {"w": "young", "ipa": "/jʌŋ/", "note": "口语指「幼崽」；offspring 更中性、可用于人与动物，书面色彩强"}
+    ],
+    "nu": "spring 本义「涌出、跳出」——offspring 就是「从亲体涌出的新生命」。"
+  },
+  {
+    "w": "descendant",
+    "p": "/dɪˈsendənt/",
+    "d": "n. 后代，后裔；派生物",
+    "levels": ["六级+"],
+    "core": "由某一祖先繁衍而来的后代个体，可跨越多个世代。",
+    "ety": "拉丁语 descendere「向下走」（de-「向下」+ scandere「攀爬」）→「从祖先往下传的」。与 descend、ascend 同根 scend「爬」。",
+    "ph": "重音在 -SEN-：de-SEN-dant；词尾 -dant 轻读，勿与 descendent（形容词拼法）混。",
+    "tip": "de（向下）+ scend（爬）→ 顺着家族树「往下走」出来的人，就是后裔。",
+    "xex": [
+      {"en": "Modern horses are the descendants of small, dog-sized animals that lived millions of years ago.", "zh": "现代马是数百万年前一种狗一般大小的动物的后代。", "src": "造句"},
+      {"en": "a direct descendant / the descendants of / living descendants", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "offspring", "ipa": "/ˈɔːfsprɪŋ/", "note": "offspring 指直接的下一代；descendant 可指相隔多代的后裔"},
+      {"w": "ancestor", "ipa": "/ˈænsestər/", "note": "反义词：ancestor 祖先（往上），descendant 后代（往下）"}
+    ],
+    "nu": "scend/scand（爬）——descendant、descend、ascend、transcend 都含「上下攀行」。",
+    "rootfam": [
+      {"root": "scend/scand", "meaning": "攀爬，登", "words": [
+        {"w": "descendant", "g": "后代"},
+        {"w": "descend", "g": "下降；遗传"},
+        {"w": "ascend", "g": "上升，登高"},
+        {"w": "transcend", "g": "超越"},
+        {"w": "descent", "g": "血统；下降"}
+      ]}
+    ]
+  },
+  {
+    "w": "ancestor",
+    "p": "/ˈænsestər/",
+    "d": "n. 祖先，祖宗；原种，原型",
+    "levels": ["托福"],
+    "core": "位于家族或物种谱系上游、后代由之繁衍而来的个体。",
+    "ety": "拉丁语 antecessor「先行者」（ante-「在前」+ cedere「走」）。字面「先走在前面的人」，即先辈。",
+    "ph": "重音在首音节 AN-：AN-ces-tor；形容词 ancestral 重音移到 -CES-。",
+    "tip": "ante（在前）+ cess（走）→ 「走在我们前头」的那些人，就是祖先。",
+    "xex": [
+      {"en": "Birds and dinosaurs share a common ancestor that lived long ago.", "zh": "鸟类与恐龙拥有一个生活在远古的共同祖先。", "src": "造句"},
+      {"en": "a common ancestor / distant ancestors / trace one's ancestors", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "forefather", "ipa": "/ˈfɔːrfɑːðər/", "note": "偏文学、多指人的先辈；ancestor 更中性，可用于物种演化谱系"},
+      {"w": "descendant", "ipa": "/dɪˈsendənt/", "note": "反义词：descendant 后代（往下），ancestor 祖先（往上）"}
+    ],
+    "nu": "cess/ced（走）——ancestor、precede、proceed 都含「行走、先行」。"
+  },
+  {
+    "w": "reproduce",
+    "p": "/ˌriːprəˈduːs/",
+    "d": "v. 繁殖，生育；复制，再现",
+    "levels": ["托福"],
+    "core": "产生新的同类个体（繁殖），或制作出相同的副本（复制）。",
+    "ety": "re-「再」+ produce「生产、产出」（pro-「向前」+ ducere「引导」）。字面「再产出一份」，用于生命即「繁殖」，用于事物即「复制」。",
+    "ph": "重音在 -DUCE：re-pro-DUCE；名词 reproduction 重音移到 -DUC-。",
+    "tip": "re（再）+ produce（产出）→ 「再产一份」：生命再产是繁殖，图像再产是复制。",
+    "xex": [
+      {"en": "Some organisms can reproduce without a partner by simply copying themselves.", "zh": "有些生物无需配偶，只靠自我复制就能繁殖。", "src": "造句"},
+      {"en": "reproduce asexually / reproduce rapidly / reproduce the sound", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "breed", "ipa": "/briːd/", "note": "breed 强调「繁育、饲养」；reproduce 更技术、中性，也能指非生物复制"},
+      {"w": "multiply", "ipa": "/ˈmʌltɪplaɪ/", "note": "multiply 强调「数量倍增」；reproduce 强调「产生下一代/副本」这一动作"}
+    ],
+    "nu": "duc（引导、带出）——reproduce、produce、conduct、introduce 都含「引出、带出」。",
+    "rootfam": [
+      {"root": "duc/duct", "meaning": "引导，带领", "words": [
+        {"w": "reproduce", "g": "繁殖；复制"},
+        {"w": "produce", "g": "生产，产出"},
+        {"w": "introduce", "g": "介绍，引入"},
+        {"w": "conduct", "g": "引导；实施"},
+        {"w": "educate", "g": "教育（引出潜能）"}
+      ]}
+    ],
+    "senses": [
+      {"s": "繁殖，生育", "e": "Bacteria reproduce by dividing in two."},
+      {"s": "复制，再现", "e": "The printer can reproduce the colors accurately."}
+    ]
+  },
+  {
+    "w": "hybrid",
+    "p": "/ˈhaɪbrɪd/",
+    "d": "n. 杂交种，杂种；混合物 a. 杂交的，混合的",
+    "levels": ["托福"],
+    "core": "由两个不同品种、物种或来源结合产生的后代或事物。",
+    "ety": "拉丁语 hybrida「杂种、混血（尤指驯养野猪与家猪的后代）」，19 世纪进入生物学，泛指「杂交产物」。",
+    "ph": "重音在首音节 HY-：HY-brid；y 读 /aɪ/，i 读短音 /ɪ/。",
+    "tip": "hy-brid 记「hi-两种血」——两条血脉「混」在一起结出的后代。",
+    "xex": [
+      {"en": "A mule is a hybrid produced by crossing a horse with a donkey.", "zh": "骡子是马和驴杂交产生的杂交种。", "src": "造句"},
+      {"en": "a hybrid plant / a hybrid of two species / hybrid vigor", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "cross", "ipa": "/krɔːs/", "note": "cross 作名词指「杂交后代」，更口语；hybrid 更正式、也可指非生物的混合体"},
+      {"w": "crossbreed", "ipa": "/ˈkrɔːsbriːd/", "note": "crossbreed 强调「跨品种杂交」这一动作/产物；hybrid 泛指一切杂交/混合产物"}
+    ],
+    "nu": "hybrid = 「两源合一」，可指杂交生物，也指 hybrid car（混动车）这类混合体。"
+  },
+  {
+    "w": "clone",
+    "p": "/kloʊn/",
+    "d": "n. 克隆体，无性繁殖个体；复制品 v. 克隆，无性繁殖",
+    "levels": ["托福"],
+    "core": "与母体基因完全相同的个体或细胞，由无性繁殖或复制技术产生。",
+    "ety": "源自希腊语 klōn「嫩枝、插条」——因植物用一根枝条即可无性繁殖出与母株相同的新株，1903 年借入生物学。",
+    "ph": "clone 读 /kloʊn/，o 读双元音 /oʊ/，尾 e 不发音；与 bone、stone 押韵。",
+    "tip": "希腊语「插条」——折一根枝插土里就长出「一模一样」的新株，正是克隆。",
+    "xex": [
+      {"en": "Every plant grown from a cutting is a clone of its parent.", "zh": "每一株由插条长成的植物都是其母株的克隆体。", "src": "造句"},
+      {"en": "clone a sheep / a clone of the original / clone a gene", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "replica", "ipa": "/ˈreplɪkə/", "note": "replica 指人造的精确复制品（无生命）；clone 特指基因相同的生物副本"},
+      {"w": "duplicate", "ipa": "/ˈduːplɪkət/", "note": "duplicate 泛指「副本」；clone 强调「基因层面完全一致的活体」"}
+    ],
+    "nu": "clone 源于「插条」——一根枝繁殖出与母体基因全同的新个体。"
+  },
+  {
+    "w": "sequence",
+    "p": "/ˈsiːkwəns/",
+    "d": "n. 序列，顺序；一系列 v. 测定（DNA）序列",
+    "levels": ["托福"],
+    "core": "按特定次序排列的一串元素——遗传学中指 DNA 上碱基的排列顺序。",
+    "ety": "拉丁语 sequi「跟随」→ sequentia「接续、连续」。与 sequel、consecutive 同根 sequ「跟随」。字面「一个接一个跟着来的」。",
+    "ph": "重音在首音节 SE-：SE-quence；qu 读 /kw/，第二音节轻读 /kwəns/。",
+    "tip": "sequ（跟随，如 sequel 续集）→ 一个「跟着」一个排下去的顺序，就是序列。",
+    "xex": [
+      {"en": "Scientists can now read the entire sequence of bases in a strand of DNA.", "zh": "科学家如今能够读出一条 DNA 链上碱基的完整序列。", "src": "造句"},
+      {"en": "a DNA sequence / the sequence of bases / sequence a genome", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "order", "ipa": "/ˈɔːrdər/", "note": "order 泛指「次序」；sequence 强调「一个接一个的连续排列」，术语性更强"},
+      {"w": "series", "ipa": "/ˈsɪriːz/", "note": "series 指「一系列同类事物」；sequence 更强调元素间的固定先后次序"}
+    ],
+    "nu": "sequ（跟随）——sequence、sequel、consecutive、subsequent 都含「接续、跟随」。",
+    "rootfam": [
+      {"root": "sequ", "meaning": "跟随", "words": [
+        {"w": "sequence", "g": "序列，顺序"},
+        {"w": "sequel", "g": "续集，后续"},
+        {"w": "consecutive", "g": "连续的"},
+        {"w": "subsequent", "g": "随后的"},
+        {"w": "consequence", "g": "结果，后果"}
+      ]}
+    ]
+  },
+  {
+    "w": "molecule",
+    "p": "/ˈmɑːlɪkjuːl/",
+    "d": "n. 分子",
+    "levels": ["托福"],
+    "core": "由两个或多个原子结合而成、能保持物质化学性质的最小微粒——DNA 即一种超大分子。",
+    "ety": "拉丁语 moles「团块、质量」+ 指小后缀 -cula → molecula「小团块」，字面「极小的一团物质」。",
+    "ph": "重音在首音节 MOL-：MOL-e-cule；-cule 读 /kjuːl/；形容词 molecular 重音移到 -LEC-。",
+    "tip": "mole（团块）+ cule（小）→ 「小小一团物质」，就是分子。DNA 是最著名的大分子。",
+    "xex": [
+      {"en": "A DNA molecule is shaped like a twisted ladder called a double helix.", "zh": "DNA 分子的形状像一架扭转的梯子，称为双螺旋。", "src": "造句"},
+      {"en": "a DNA molecule / a water molecule / a large molecule", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "particle", "ipa": "/ˈpɑːrtɪkl/", "note": "particle 泛指任何「微粒」（含原子、亚原子）；molecule 特指原子结合成的化学单元"}
+    ],
+    "nu": "-cule 是指小后缀（molecule 小团块、globule 小球）——表「小小的」。"
+  },
+  {
+    "w": "strand",
+    "p": "/strænd/",
+    "d": "n.（DNA、线的）股，缕，链；（海）滩 v. 使搁浅",
+    "levels": ["托福"],
+    "core": "一条细长如线的结构——DNA 由两条互补的 strand 缠成双螺旋。",
+    "ety": "词源不确定，中古英语 strond/strand，本指「绳的一股、纤维」；作「海滩」义源自古英语 strand「岸边」。遗传学取「一股线」义。",
+    "ph": "strand 读 /strænd/，str- 三辅音连读，a 读 /æ/；单音节，与 hand、band 押韵。",
+    "tip": "一「股」线、一「缕」发——DNA 就是两 strand 拧成的双螺旋。",
+    "xex": [
+      {"en": "The two strands of a DNA molecule separate so that each can be copied.", "zh": "DNA 分子的两条链会分开，以便各自都能被复制。", "src": "造句"},
+      {"en": "a strand of DNA / a single strand / two strands", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "thread", "ipa": "/θred/", "note": "thread 指「线、丝」，日常用；strand 特指「一股、一缕」，DNA 语境专用"}
+    ],
+    "nu": "strand 核心是「一股、一缕」——线、绳、DNA 都可数「几股」。",
+    "senses": [
+      {"s": "（DNA、线的）股，缕", "e": "Each strand of DNA carries the same genetic code."},
+      {"s": "使搁浅（v.）", "e": "The whale was stranded on the beach."}
+    ]
+  },
+  {
+    "w": "transmit",
+    "p": "/trænsˈmɪt/",
+    "d": "v. 传递，传送；遗传，传播（疾病）",
+    "levels": ["托福"],
+    "core": "把某物从一处送到另一处——遗传语境中指把基因/性状从亲代传给子代。",
+    "ety": "拉丁语 trans-「越过、穿过」+ mittere「送、发」→ transmittere「送过去」。与 mission、emit 同根 mit/miss「送」。",
+    "ph": "重音在第二音节 -MIT：trans-MIT；名词 transmission 重音移到 -MIS-。",
+    "tip": "trans（穿越）+ mit（送）→ 把东西「送过去」：信号、疾病、基因都能 transmit。",
+    "xex": [
+      {"en": "Parents transmit their genes to their children through reproduction.", "zh": "父母通过繁殖把基因遗传给子女。", "src": "造句"},
+      {"en": "transmit a gene / transmit a disease / transmit information", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "pass on", "ipa": "/pæs ɑːn/", "note": "口语短语，指「把……传下去」；transmit 更正式，可用于基因、信号、疾病"},
+      {"w": "convey", "ipa": "/kənˈveɪ/", "note": "convey 偏「传达信息/含义」；transmit 偏「实体或信号的传送」"}
+    ],
+    "nu": "mit/miss（送）——transmit、emit、submit、mission 都含「派送、发出」。",
+    "rootfam": [
+      {"root": "mit/miss", "meaning": "送，发", "words": [
+        {"w": "transmit", "g": "传递；遗传"},
+        {"w": "emit", "g": "发出，散发"},
+        {"w": "submit", "g": "提交；服从"},
+        {"w": "mission", "g": "使命，任务"},
+        {"w": "transmission", "g": "传递；变速器"}
+      ]}
+    ]
+  }
+]

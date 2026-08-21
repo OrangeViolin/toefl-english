@@ -1,0 +1,743 @@
+[
+  {
+    "w": "sedimentary",
+    "p": "/ˌsedɪˈmentri/",
+    "d": "adj. 沉积的；沉积形成的（岩石）",
+    "levels": ["托福"],
+    "core": "由沉积物层层堆积、压实固结而成的",
+    "ety": "源自拉丁语 sedimentum「沉降下来的东西」，来自 sedēre「坐、沉降」+ 名词后缀 -mentum；-ary 为形容词后缀。同一个 sedēre 也给了 sediment、reside、president。",
+    "ph": "sedi(坐/沉)+ment(名词)+ary(形容词) → 沉下来堆积成的",
+    "tip": "记「sit down 坐下来」——沉积岩就是砂泥一层层「坐下来」压成的；三大岩类中唯一常含化石的就是它。",
+    "xex": [
+      {"en": "Sedimentary rocks form when layers of sand and mud are compressed over millions of years.", "zh": "沉积岩是由砂和泥的层层堆积历经数百万年压实而成的。", "src": "造句"},
+      {"en": "sedimentary rock / sedimentary layers / sedimentary basin", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "stratified", "ipa": "/ˈstrætɪfaɪd/", "note": "强调「成层的」，侧重可见的分层结构"}
+    ],
+    "nu": "三大岩类之一（另两类 igneous 火成岩、metamorphic 变质岩），托福地质讲座必考对比。",
+    "rootfam": [
+      {"root": "sed-/sid-", "meaning": "坐、沉降 (sit)", "words": [
+        {"w": "sediment", "g": "沉积物"},
+        {"w": "reside", "g": "居住"},
+        {"w": "resident", "g": "居民"},
+        {"w": "president", "g": "总统（坐在前面主持者）"},
+        {"w": "subside", "g": "下沉、平息"},
+        {"w": "preside", "g": "主持"}
+      ]}
+    ]
+  },
+  {
+    "w": "igneous",
+    "p": "/ˈɪɡniəs/",
+    "d": "adj. 火成的；火的，似火的",
+    "levels": ["托福"],
+    "core": "由岩浆或熔岩冷却凝固而成的（岩石）",
+    "ety": "源自拉丁语 igneus「火的」，来自 ignis「火」；同源的还有 ignite（点燃）、ignition（点火）。",
+    "ph": "ign(火)+eous(…性质的) → 有火的性质的 → 火成的",
+    "tip": "把 ign 认成「引擎点火 ignite」——火成岩是被地下「火」（岩浆）烧出来的，如花岗岩、玄武岩。",
+    "xex": [
+      {"en": "Granite is an igneous rock that cools slowly deep beneath the surface.", "zh": "花岗岩是一种在地表深处缓慢冷却形成的火成岩。", "src": "造句"},
+      {"en": "igneous rock / igneous intrusion / form from magma", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "volcanic", "ipa": "/vɑːlˈkænɪk/", "note": "特指喷出地表冷却的火成岩（如玄武岩），是 igneous 的一个子类"},
+      {"w": "molten", "ipa": "/ˈmoʊltn/", "note": "熔融的，描述形成火成岩前的岩浆状态"}
+    ],
+    "nu": "三大岩类之一，讲座常与「冷却速度决定晶体大小」一起考。",
+    "rootfam": [
+      {"root": "ign-", "meaning": "火 (fire)", "words": [
+        {"w": "ignite", "g": "点燃"},
+        {"w": "ignition", "g": "点火装置"},
+        {"w": "igneous", "g": "火成的"}
+      ]}
+    ]
+  },
+  {
+    "w": "metamorphic",
+    "p": "/ˌmetəˈmɔːrfɪk/",
+    "d": "adj. 变质的；变形的",
+    "levels": ["托福"],
+    "core": "原有岩石在高温高压下改变形态与结构而成的",
+    "ety": "源自希腊语 metamorphosis「变形」= meta-「变化、之后」+ morphē「形态」+ -ic；与生物学 metamorphosis（变态发育，如蝌蚪变青蛙）同源。",
+    "ph": "meta(改变)+morph(形态)+ic → 形态被改变的 → 变质的",
+    "tip": "morph 就是「变形金刚 Transformers」的「变形」；变质岩是老岩石被高温高压「重塑」出来的，如大理岩由石灰岩变来。",
+    "xex": [
+      {"en": "Marble is a metamorphic rock formed when limestone is subjected to intense heat and pressure.", "zh": "大理岩是石灰岩在强烈的高温高压下变质而成的岩石。", "src": "造句"},
+      {"en": "metamorphic rock / heat and pressure / recrystallize", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "transformed", "ipa": "/trænsˈfɔːrmd/", "note": "普通词「被改变的」，metamorphic 是其地质学专用形态"}
+    ],
+    "nu": "三大岩类之一，托福讲座常考「石灰岩→大理岩、页岩→板岩」的变质对应。",
+    "rootfam": [
+      {"root": "morph-", "meaning": "形态、形状 (form/shape)", "words": [
+        {"w": "morph", "g": "变形"},
+        {"w": "amorphous", "g": "无定形的"},
+        {"w": "morphology", "g": "形态学"},
+        {"w": "polymorphic", "g": "多形态的"},
+        {"w": "metamorphosis", "g": "变形、变态"}
+      ]},
+      {"root": "meta-", "meaning": "变化、超越、之后 (change/beyond)", "words": [
+        {"w": "metabolism", "g": "新陈代谢"},
+        {"w": "metaphor", "g": "隐喻"},
+        {"w": "metaphysics", "g": "形而上学"}
+      ]}
+    ]
+  },
+  {
+    "w": "tectonic",
+    "p": "/tekˈtɑːnɪk/",
+    "d": "adj. 地壳构造的；构造地质的",
+    "levels": ["托福"],
+    "core": "与地壳板块的结构和运动有关的",
+    "ety": "源自希腊语 tektōn「建造者、木匠」→ tektonikos「与建造有关的」；建筑学也借它表示「构造的」。地质学中指地壳这座「大建筑」的构造。",
+    "ph": "tecton(建造)+ic → 与（地壳）搭建构造有关的",
+    "tip": "记「plate tectonics 板块构造论」这个固定词组——地球外壳像被『建造』成一块块拼图，板块漂移、碰撞。",
+    "xex": [
+      {"en": "Earthquakes often occur where two tectonic plates grind against each other.", "zh": "地震常发生在两个构造板块相互摩擦挤压的地方。", "src": "造句"},
+      {"en": "tectonic plate / tectonic activity / plate tectonics", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "structural", "ipa": "/ˈstrʌktʃərəl/", "note": "泛指「结构的」，tectonic 专指地壳大尺度构造"}
+    ],
+    "nu": "板块构造（plate tectonics）是解释地震、火山、造山的核心理论，讲座高频。",
+    "rootfam": [
+      {"root": "tect-/tekton-", "meaning": "建造 (build)", "words": [
+        {"w": "tectonic", "g": "构造的"},
+        {"w": "architect", "g": "建筑师"},
+        {"w": "architecture", "g": "建筑学"}
+      ]}
+    ]
+  },
+  {
+    "w": "plate",
+    "p": "/pleɪt/",
+    "d": "n. 板块；金属板；盘子",
+    "levels": ["托福"],
+    "core": "构成地球岩石圈、可缓慢移动的一大块刚性板体",
+    "ety": "源自古法语 plate「扁平的薄片」，来自晚期拉丁语 plattus「平的」，同源于希腊语 platus「宽平的」（plateau 高原、platform 平台亦同源）。地质学取其「大而平的板体」义。",
+    "ph": "plat(平的)+e → 一大块平板 → 板块",
+    "tip": "别只想到「盘子」；地质里 plate 指地壳「大平板」，7大板块像浮在软流圈上的木筏。",
+    "xex": [
+      {"en": "The Pacific Plate moves a few centimeters northwest each year.", "zh": "太平洋板块每年向西北方向移动几厘米。", "src": "造句"},
+      {"en": "tectonic plate / plate boundary / plate movement", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "slab", "ipa": "/slæb/", "note": "厚板、大块，讲下沉板块时常用 subducting slab"}
+    ],
+    "nu": "地质义只是 plate 众多词义之一，托福语境中几乎专指「板块」。",
+    "rootfam": [
+      {"root": "plat-", "meaning": "平、宽 (flat/broad)", "words": [
+        {"w": "plateau", "g": "高原"},
+        {"w": "platform", "g": "平台"},
+        {"w": "plain", "g": "平原"},
+        {"w": "plaza", "g": "广场"}
+      ]}
+    ],
+    "senses": [
+      {"d": "n. 板块（地壳）", "en": "Two plates collide to form a mountain range."},
+      {"d": "n. 盘子；金属板", "en": "The armor was made of steel plates."},
+      {"d": "vt. 电镀，镀（金属）", "en": "The ring is plated with gold."}
+    ]
+  },
+  {
+    "w": "magma",
+    "p": "/ˈmæɡmə/",
+    "d": "n. 岩浆（地表以下的熔融岩石）",
+    "levels": ["托福"],
+    "core": "地壳或地幔中处于熔融状态的高温岩石物质",
+    "ety": "源自希腊语 magma「揉捏成的糊状物、软膏」，来自 massein「揉、和」；同源于 mass（团块）、massage（按摩）。",
+    "ph": "magma ≈「玛格玛」，把它想成地下滚烫的『软膏糊』",
+    "tip": "区分关键：还在地下叫 magma，一旦喷出地表就改叫 lava（熔岩）。",
+    "xex": [
+      {"en": "As magma rises toward the surface, dissolved gases begin to expand.", "zh": "当岩浆向地表上升时，其中溶解的气体开始膨胀。", "src": "造句"},
+      {"en": "magma chamber / rising magma / molten magma", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "lava", "ipa": "/ˈlɑːvə/", "note": "同为熔融岩石，但 lava 特指已喷出地表的部分"},
+      {"w": "molten rock", "ipa": "/ˈmoʊltn rɑːk/", "note": "字面「熔融岩石」，magma 的通俗解释"}
+    ],
+    "nu": "火山与火成岩讲座核心词，常与 magma chamber（岩浆房）搭配。",
+    "rootfam": [
+      {"root": "mag-/mass-", "meaning": "揉、团块 (knead/mass)", "words": [
+        {"w": "mass", "g": "团块、质量"},
+        {"w": "massage", "g": "按摩（揉）"},
+        {"w": "magma", "g": "岩浆"}
+      ]}
+    ]
+  },
+  {
+    "w": "lava",
+    "p": "/ˈlɑːvə/",
+    "d": "n. 熔岩，火山岩浆（已喷出地表的）",
+    "levels": ["托福"],
+    "core": "火山喷发后流到地表、冷却前的熔融岩石",
+    "ety": "源自意大利那不勒斯方言 lava，本指「暴雨冲下的急流」，来自拉丁语 lavāre「冲洗、流」（与 lavatory 盥洗室同源）；后用来形容维苏威火山流下的熔岩流。",
+    "ph": "lava ≈ 拉丁 lavāre「流/冲」→ 像洪流一样淌下山的滚烫岩流",
+    "tip": "和 magma 成对记：地下=magma，喷出地表流淌=lava；lava 冷却快，晶体细小。",
+    "xex": [
+      {"en": "The lava flowed down the slope and slowly hardened into black basalt.", "zh": "熔岩顺着山坡流下，慢慢冷却硬化成黑色的玄武岩。", "src": "造句"},
+      {"en": "lava flow / molten lava / lava cools", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "magma", "ipa": "/ˈmæɡmə/", "note": "同为熔融岩石，magma 在地下、lava 在地表，方向相反易混"}
+    ],
+    "nu": "火山讲座高频词，与 magma 的地表/地下区分是常考点。",
+    "rootfam": [
+      {"root": "lav-", "meaning": "洗、流 (wash)", "words": [
+        {"w": "lavatory", "g": "盥洗室"},
+        {"w": "lavish", "g": "过度慷慨的（如流水般倾泻）"},
+        {"w": "deluge", "g": "洪水（同源 lav 变体）"}
+      ]}
+    ]
+  },
+  {
+    "w": "fault",
+    "p": "/fɔːlt/",
+    "d": "n. 断层；过错，缺点",
+    "levels": ["托福"],
+    "core": "地壳中岩层发生断裂并沿断裂面产生错动的地方",
+    "ety": "源自古法语 faute「缺失、过失」，来自拉丁语 fallere「使失误、欺骗」（与 fail、false 同源）。地质学取「地层的破裂/缺陷」之义。",
+    "ph": "fault(过错/缺陷) → 地壳的『裂缝缺陷』 → 断层",
+    "tip": "常见 San Andreas Fault（圣安地列斯断层）——地震多发生在断层沿线，因板块沿断层错动。",
+    "xex": [
+      {"en": "Sudden movement along a fault releases energy that we feel as an earthquake.", "zh": "沿断层的突然错动会释放能量，我们感受到的就是地震。", "src": "造句"},
+      {"en": "fault line / geological fault / slip along a fault", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "fracture", "ipa": "/ˈfræktʃər/", "note": "岩石的破裂，但 fracture 未必有沿面错动，fault 强调错移"},
+      {"w": "fissure", "ipa": "/ˈfɪʃər/", "note": "岩石中的狭长裂缝，规模比 fault 小"}
+    ],
+    "nu": "地震与构造讲座核心词，地质义「断层」在托福中最常考。",
+    "rootfam": [
+      {"root": "fal-/fals-", "meaning": "失误、欺骗 (fail/deceive)", "words": [
+        {"w": "fail", "g": "失败"},
+        {"w": "false", "g": "错误的"},
+        {"w": "fallacy", "g": "谬误"},
+        {"w": "default", "g": "违约、默认"}
+      ]}
+    ],
+    "senses": [
+      {"d": "n. 断层（地质）", "en": "The fault runs for hundreds of miles."},
+      {"d": "n. 过错，责任", "en": "It was not her fault."},
+      {"d": "n. 缺点，故障", "en": "The machine has a design fault."}
+    ]
+  },
+  {
+    "w": "crust",
+    "p": "/krʌst/",
+    "d": "n. 地壳；外壳，硬皮",
+    "levels": ["托福"],
+    "core": "地球最外层薄而坚硬的岩石圈层",
+    "ety": "源自拉丁语 crusta「硬壳、外皮」，同源于 crystal（结晶）、crude（生的、未加工的）所在的印欧词根，本义「冻结变硬的表面」。",
+    "ph": "crust(硬皮，如面包壳) → 地球的『硬外皮』 → 地壳",
+    "tip": "从面包外壳(crust)联想——地壳是地球最外那层「脆皮」，相对地幔、地核最薄。",
+    "xex": [
+      {"en": "The Earth's crust is thinnest under the oceans and thickest under mountain ranges.", "zh": "地壳在海洋下方最薄，在山脉下方最厚。", "src": "造句"},
+      {"en": "Earth's crust / oceanic crust / continental crust", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "lithosphere", "ipa": "/ˈlɪθəsfɪr/", "note": "岩石圈，含地壳加上地幔最上层，范围比 crust 大"}
+    ],
+    "nu": "地球分层（crust-mantle-core）必考，常分 oceanic/continental crust。",
+    "rootfam": [
+      {"root": "crust-/cryst-", "meaning": "硬壳、冻结 (hard shell)", "words": [
+        {"w": "crust", "g": "外壳"},
+        {"w": "crustacean", "g": "甲壳动物"},
+        {"w": "crystal", "g": "结晶"},
+        {"w": "encrust", "g": "覆以硬壳"}
+      ]}
+    ]
+  },
+  {
+    "w": "mantle",
+    "p": "/ˈmæntl/",
+    "d": "n. 地幔；覆盖物，斗篷",
+    "levels": ["托福"],
+    "core": "介于地壳与地核之间、占地球体积最大的高温岩层",
+    "ety": "源自拉丁语 mantellum「斗篷、遮盖物」；地质学借「包裹地核的一层」之义。日常义仍指披风、罩子（如煤气灯纱罩）。",
+    "ph": "mantle(斗篷/覆盖物) → 像斗篷一样『裹住』地核的那层 → 地幔",
+    "tip": "顺序记忆：crust(地壳)→mantle(地幔)→core(地核)；地幔上部的软流圈让板块得以漂移。",
+    "xex": [
+      {"en": "Heat from the core drives slow convection currents within the mantle.", "zh": "来自地核的热量驱动地幔内部缓慢的对流。", "src": "造句"},
+      {"en": "Earth's mantle / mantle convection / upper mantle", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "cloak", "ipa": "/kloʊk/", "note": "日常义「斗篷、覆盖」与 mantle 同义，但无地质专义"}
+    ],
+    "nu": "地球分层核心词，地幔对流是板块运动的动力来源，讲座高频。",
+    "rootfam": [
+      {"root": "mant-", "meaning": "覆盖、斗篷 (cover/cloak)", "words": [
+        {"w": "mantle", "g": "地幔、斗篷"},
+        {"w": "dismantle", "g": "拆除（去掉覆盖）"},
+        {"w": "mantel", "g": "壁炉架"}
+      ]}
+    ],
+    "senses": [
+      {"d": "n. 地幔（地质）", "en": "The mantle lies between the crust and the core."},
+      {"d": "n. 斗篷；覆盖物", "en": "A mantle of snow covered the hills."}
+    ]
+  },
+  {
+    "w": "sediment",
+    "p": "/ˈsedɪmənt/",
+    "d": "n. 沉积物，沉淀物",
+    "levels": ["托福"],
+    "core": "被水、风或冰搬运后沉降堆积下来的颗粒物质",
+    "ety": "源自拉丁语 sedimentum「沉降之物」= sedēre「坐、沉降」+ -mentum（名词后缀）；与 sedimentary、reside、subside 同根。",
+    "ph": "sedi(坐/沉)+ment(名词) → 沉下来的东西 → 沉积物",
+    "tip": "记「颗粒沉下来 sit at the bottom」；沉积物一层层压实固结就成 sedimentary rock。",
+    "xex": [
+      {"en": "Rivers carry sediment downstream and deposit it where the current slows.", "zh": "河流把沉积物向下游搬运，并在水流变缓处将其沉积下来。", "src": "造句"},
+      {"en": "deposit sediment / layers of sediment / sediment accumulates", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "deposit", "ipa": "/dɪˈpɑːzɪt/", "note": "堆积物，几乎同义；deposit 也可作动词「沉积」"},
+      {"w": "silt", "ipa": "/sɪlt/", "note": "特指细粒淤泥，是 sediment 的一种"}
+    ],
+    "nu": "沉积过程与沉积岩讲座核心词，与 deposit、strata 常连用。",
+    "rootfam": [
+      {"root": "sed-/sid-", "meaning": "坐、沉降 (sit)", "words": [
+        {"w": "sediment", "g": "沉积物"},
+        {"w": "sedentary", "g": "久坐的"},
+        {"w": "subside", "g": "下沉、平息"},
+        {"w": "reside", "g": "居住"},
+        {"w": "assiduous", "g": "勤勉的（坐着专注）"}
+      ]}
+    ]
+  },
+  {
+    "w": "strata",
+    "p": "/ˈstrætə/",
+    "d": "n. 岩层，地层（stratum 的复数）",
+    "levels": ["托福"],
+    "core": "沉积岩中一层层可区分的水平岩石层",
+    "ety": "源自拉丁语 stratum「铺开、铺展之物」，来自 sternere「铺、展开」；单数 stratum，复数 strata。同源于 street（铺石路）、structure。",
+    "ph": "strat(铺开)+a(复数) → 一层层铺开的岩层",
+    "tip": "单复数别搞错：一层 stratum，多层 strata；社会学的「阶层 social strata」也是同一个「层」。",
+    "xex": [
+      {"en": "By studying the strata, geologists can read millions of years of Earth's history.", "zh": "通过研究地层，地质学家能读出地球数百万年的历史。", "src": "造句"},
+      {"en": "rock strata / layers of strata / undisturbed strata", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "layers", "ipa": "/ˈleɪərz/", "note": "普通词「层」，strata 是地质学正式术语"},
+      {"w": "beds", "ipa": "/bedz/", "note": "地质中「岩床、层」，与 strata 近义"}
+    ],
+    "nu": "地层学核心词，「叠覆律 principle of superposition」（下老上新）常考。",
+    "rootfam": [
+      {"root": "strat-", "meaning": "铺开、层 (spread/layer)", "words": [
+        {"w": "stratum", "g": "地层（单数）"},
+        {"w": "stratify", "g": "使分层"},
+        {"w": "stratosphere", "g": "平流层"},
+        {"w": "prostrate", "g": "俯卧的（铺平在地）"}
+      ]}
+    ]
+  },
+  {
+    "w": "erosion",
+    "p": "/ɪˈroʊʒn/",
+    "d": "n. 侵蚀，冲蚀；削弱",
+    "levels": ["托福"],
+    "core": "风、水、冰等把已风化的岩土颗粒搬走的过程",
+    "ety": "源自拉丁语 erodere「啃咬掉、蚀去」= e-(ex-，出、离)+ rodere(啃、咬)；与 rodent（啮齿动物）、corrode（腐蚀）同根。",
+    "ph": "e(出)+ros(咬)+ion(名词) → 被『咬掉搬走』 → 侵蚀",
+    "tip": "关键区分：weathering(风化)是就地把岩石『打碎』，erosion(侵蚀)是把碎屑『搬走』——先风化后侵蚀。",
+    "xex": [
+      {"en": "Wind erosion gradually carved the sandstone into strange, sculpted shapes.", "zh": "风的侵蚀逐渐把砂岩雕琢成奇形怪状。", "src": "造句"},
+      {"en": "soil erosion / wind erosion / erosion by water", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "weathering", "ipa": "/ˈweðərɪŋ/", "note": "风化，就地破碎岩石；erosion 是把碎屑搬运走，常一起考区别"},
+      {"w": "wearing away", "ipa": "/ˈwerɪŋ əˈweɪ/", "note": "「磨蚀掉」，erosion 的通俗表达"}
+    ],
+    "nu": "地貌形成核心词，erosion 与 weathering、deposition 组成外力三步曲。",
+    "rootfam": [
+      {"root": "rod-/ros-", "meaning": "啃、咬 (gnaw)", "words": [
+        {"w": "erode", "g": "侵蚀"},
+        {"w": "corrode", "g": "腐蚀"},
+        {"w": "rodent", "g": "啮齿动物"},
+        {"w": "corrosive", "g": "腐蚀性的"}
+      ]}
+    ]
+  },
+  {
+    "w": "weathering",
+    "p": "/ˈweðərɪŋ/",
+    "d": "n.（岩石的）风化",
+    "levels": ["托福"],
+    "core": "岩石在原地受气候作用被物理破碎或化学分解",
+    "ety": "由 weather（天气）+ -ing 而来；weather 源自古英语 weder「天气、大气」。字面即「被天气作用」，故译「风化」。",
+    "ph": "weather(天气)+ing → 被天气『折腾』分解 → 风化",
+    "tip": "与 erosion 成对：weathering 只『就地破碎/分解』岩石，不搬运；搬运是 erosion 的活。分物理风化与化学风化两类。",
+    "xex": [
+      {"en": "Chemical weathering dissolves minerals in the rock, while physical weathering breaks it apart.", "zh": "化学风化溶解岩石中的矿物，而物理风化则将其破碎。", "src": "造句"},
+      {"en": "physical weathering / chemical weathering / weathering of rock", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "erosion", "ipa": "/ɪˈroʊʒn/", "note": "侵蚀，含搬运；weathering 不含搬运，两者常配对考区别"},
+      {"w": "disintegration", "ipa": "/dɪsˌɪntɪˈɡreɪʃn/", "note": "崩解，指物理风化使岩石碎裂"}
+    ],
+    "nu": "外力地质作用核心词，与 erosion 的区别（破碎 vs 搬运）是高频考点。",
+    "rootfam": [
+      {"root": "weather-", "meaning": "天气、气候作用 (weather)", "words": [
+        {"w": "weather", "g": "天气"},
+        {"w": "weathered", "g": "风化了的"},
+        {"w": "weatherproof", "g": "防风雨的"}
+      ]}
+    ]
+  },
+  {
+    "w": "seismic",
+    "p": "/ˈsaɪzmɪk/",
+    "d": "adj. 地震的，地震引起的",
+    "levels": ["托福"],
+    "core": "与地震或地震波有关的",
+    "ety": "源自希腊语 seismos「震动、地震」，来自 seiein「摇动」；-ic 形容词后缀。seismograph（地震仪）同根。",
+    "ph": "seism(震动)+ic → 与震动有关的 → 地震的",
+    "tip": "记 seismograph（地震仪）——seism 就是「震」；seismic waves（地震波）分 P 波、S 波，讲座常考传播差异。",
+    "xex": [
+      {"en": "Scientists study seismic waves to map the layers deep inside the Earth.", "zh": "科学家研究地震波以绘制地球内部深处的分层结构。", "src": "造句"},
+      {"en": "seismic waves / seismic activity / seismic zone", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "earthquake-related", "ipa": "/ˈɜːrθkweɪk rɪˈleɪtɪd/", "note": "字面「与地震有关的」，seismic 的通俗解释"}
+    ],
+    "nu": "地震讲座核心词，地震波帮助推断地球内部结构，是高频延伸考点。",
+    "rootfam": [
+      {"root": "seism-", "meaning": "震动、地震 (shake)", "words": [
+        {"w": "seismic", "g": "地震的"},
+        {"w": "seismograph", "g": "地震仪"},
+        {"w": "seismology", "g": "地震学"},
+        {"w": "seismometer", "g": "地震计"}
+      ]}
+    ]
+  },
+  {
+    "w": "volcano",
+    "p": "/vɑːlˈkeɪnoʊ/",
+    "d": "n. 火山",
+    "levels": ["托福"],
+    "core": "地壳上岩浆、气体和碎屑喷发出来的开口或山体",
+    "ety": "源自意大利语 vulcano，来自罗马火神 Vulcan（伏尔甘）之名；古人以为火山是火神的锻造炉。",
+    "ph": "Vulcan(罗马火神) → 火神的锻炉 → 火山",
+    "tip": "从火神 Vulcan 记；喷发 eruption 时喷出 lava、ash（火山灰）、气体，形成火成岩。",
+    "xex": [
+      {"en": "When the volcano erupted, ash rose several kilometers into the sky.", "zh": "火山喷发时，火山灰升腾到数千米高的天空。", "src": "造句"},
+      {"en": "active volcano / volcano erupts / dormant volcano", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "vent", "ipa": "/vent/", "note": "火山口/喷气口，指岩浆喷出的通道，是 volcano 的组成部分"}
+    ],
+    "nu": "火山讲座核心词，active/dormant/extinct（活/休眠/死）三态常考。",
+    "rootfam": [
+      {"root": "vulcan-", "meaning": "火神、火 (fire god)", "words": [
+        {"w": "volcano", "g": "火山"},
+        {"w": "volcanic", "g": "火山的"},
+        {"w": "vulcanize", "g": "硫化（橡胶，用火处理）"}
+      ]}
+    ]
+  },
+  {
+    "w": "deposit",
+    "p": "/dɪˈpɑːzɪt/",
+    "d": "v. 沉积，堆积 n. 沉积物；矿床；存款",
+    "levels": ["托福"],
+    "core": "把搬运来的物质放下堆积，或如此形成的堆积物",
+    "ety": "源自拉丁语 depositus，来自 de-(向下)+ ponere(放置)；本义「放下」。同根有 position、component、compose。",
+    "ph": "de(向下)+posit(放置) → 放下来 → 沉积/堆积",
+    "tip": "地质里 deposit 既是动词「沉积」也是名词「沉积物/矿床」；mineral deposit=矿床，是找矿关键。",
+    "xex": [
+      {"en": "As the river slows, it deposits sand and gravel along its banks.", "zh": "河流变缓时，会把砂和砾石沉积在河岸沿线。", "src": "造句"},
+      {"en": "mineral deposit / deposit sediment / rich deposits of ore", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "accumulate", "ipa": "/əˈkjuːmjəleɪt/", "note": "积累、堆积，强调逐渐增多的过程"},
+      {"w": "sediment", "ipa": "/ˈsedɪmənt/", "note": "作名词时与 deposit 近义，均指沉降的物质"}
+    ],
+    "nu": "沉积作用与矿产讲座核心词，动词/名词双用，注意语境词义。",
+    "rootfam": [
+      {"root": "pos-/pon-", "meaning": "放置 (place/put)", "words": [
+        {"w": "deposit", "g": "沉积、存放"},
+        {"w": "position", "g": "位置"},
+        {"w": "compose", "g": "组成"},
+        {"w": "expose", "g": "暴露"},
+        {"w": "impose", "g": "强加"},
+        {"w": "component", "g": "组成部分"}
+      ]}
+    ],
+    "senses": [
+      {"d": "v./n. 沉积（物）；矿床（地质）", "en": "The glacier left thick deposits of rock and clay."},
+      {"d": "n./v. 存款；寄存", "en": "She made a deposit at the bank."}
+    ]
+  },
+  {
+    "w": "ore",
+    "p": "/ɔːr/",
+    "d": "n. 矿石，矿物（含可提炼金属的岩石）",
+    "levels": ["托福"],
+    "core": "含有足够量、可经济提取金属的天然岩石或矿物",
+    "ety": "源自古英语 ār「铜、青铜」与 ōra「未加工的金属」，二者混同而来；本义就是「可炼金属的原矿」。",
+    "ph": "ore ≈「欧」，含金属的『原矿石』，如 iron ore（铁矿石）",
+    "tip": "别和 oar（船桨）、or（或）混淆；iron ore、copper ore 是常见搭配，ore 要经冶炼才得金属。",
+    "xex": [
+      {"en": "Iron ore is smelted at high temperatures to extract the metal.", "zh": "铁矿石在高温下冶炼以提取金属。", "src": "造句"},
+      {"en": "iron ore / mineral ore / extract metal from ore", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mineral", "ipa": "/ˈmɪnərəl/", "note": "矿物，范围更广；ore 特指可提炼金属的矿物"}
+    ],
+    "nu": "矿产与经济地质讲座常见词，常与冶炼 smelt、开采 mine 连用。",
+    "rootfam": [
+      {"root": "ore-", "meaning": "矿石、原金属 (raw metal)", "words": [
+        {"w": "ore", "g": "矿石"}
+      ]}
+    ]
+  },
+  {
+    "w": "crystal",
+    "p": "/ˈkrɪstl/",
+    "d": "n. 晶体，结晶；水晶 adj. 透明的",
+    "levels": ["托福"],
+    "core": "内部原子按规则重复排列、外形具几何面的固体",
+    "ety": "源自希腊语 krustallos「冰、水晶」，来自 kruos「冰冷」；古人以为水晶是冻得极硬的冰。与 crust（硬壳）远亲。",
+    "ph": "cryst(冰/冻硬)+al → 像冰一样冻硬透明的规则固体 → 晶体",
+    "tip": "关键考点：岩浆冷却越慢，晶体(crystal)长得越大——花岗岩（慢冷）晶体粗大，玄武岩（快冷）晶体细小。",
+    "xex": [
+      {"en": "Slow cooling allows large crystals to form in igneous rock like granite.", "zh": "缓慢冷却使花岗岩这类火成岩中能形成大颗晶体。", "src": "造句"},
+      {"en": "form crystals / crystal structure / mineral crystals", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "grain", "ipa": "/ɡreɪn/", "note": "岩石中的矿物颗粒，讲晶体大小时常说 grain size"}
+    ],
+    "nu": "结晶与岩石成因讲座核心词，「冷却速率决定晶体大小」是必考因果。",
+    "rootfam": [
+      {"root": "cryst-", "meaning": "冰、结晶 (ice/crystal)", "words": [
+        {"w": "crystal", "g": "晶体"},
+        {"w": "crystallize", "g": "结晶"},
+        {"w": "crystalline", "g": "结晶的"},
+        {"w": "crystallography", "g": "晶体学"}
+      ]}
+    ]
+  },
+  {
+    "w": "granite",
+    "p": "/ˈɡrænɪt/",
+    "d": "n. 花岗岩，花岗石",
+    "levels": ["托福"],
+    "core": "一种颗粒粗大、坚硬的深成火成岩",
+    "ety": "源自意大利语 granito「粒状的」，来自拉丁语 granum「谷粒、颗粒」；因其可见的粗大颗粒（矿物晶体）得名。与 grain、granular 同根。",
+    "ph": "gran(颗粒)+ite(岩石) → 满是粗颗粒的岩石 → 花岗岩",
+    "tip": "花岗岩=典型深成火成岩，岩浆在地下慢冷，晶体粗大可见；对照玄武岩（喷出、细粒）。",
+    "xex": [
+      {"en": "Granite forms deep underground, where magma cools slowly enough to grow large crystals.", "zh": "花岗岩在地下深处形成，那里岩浆冷却足够缓慢，能长出大颗晶体。", "src": "造句"},
+      {"en": "granite rock / coarse-grained granite / granite countertop", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "basalt", "ipa": "/bəˈsɔːlt/", "note": "玄武岩，同为火成岩但喷出、细粒、色深，与 granite 常成对比"}
+    ],
+    "nu": "火成岩代表词，与 basalt 的「深成粗粒 vs 喷出细粒」对比是高频考点。",
+    "rootfam": [
+      {"root": "gran-", "meaning": "谷粒、颗粒 (grain)", "words": [
+        {"w": "granite", "g": "花岗岩"},
+        {"w": "grain", "g": "颗粒、谷物"},
+        {"w": "granular", "g": "颗粒状的"},
+        {"w": "granule", "g": "小颗粒"},
+        {"w": "pomegranate", "g": "石榴（多籽粒）"}
+      ]}
+    ]
+  },
+  {
+    "w": "basalt",
+    "p": "/bəˈsɔːlt/",
+    "d": "n. 玄武岩",
+    "levels": ["托福"],
+    "core": "一种颜色深、颗粒细的喷出型火成岩",
+    "ety": "源自拉丁语 basaltes，可能来自古埃及/希腊语指一种坚硬的黑色石头；后专指火山喷发冷凝形成的深色细粒岩。",
+    "ph": "basalt ≈「玄武」，海底和熔岩流冷凝成的黑色细粒岩",
+    "tip": "与 granite 成对记：basalt 喷出地表、快冷、细粒、色深，是洋壳主要成分；granite 深成、慢冷、粗粒、色浅。",
+    "xex": [
+      {"en": "Most of the ocean floor is made of basalt formed from cooled lava.", "zh": "大部分洋底由熔岩冷却形成的玄武岩构成。", "src": "造句"},
+      {"en": "basalt lava / fine-grained basalt / basaltic rock", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "granite", "ipa": "/ˈɡrænɪt/", "note": "花岗岩，同为火成岩但深成、粗粒、色浅，与 basalt 对照"}
+    ],
+    "nu": "火成岩代表词，构成洋壳主体，与 granite 的对比是讲座常考。",
+    "rootfam": [
+      {"root": "basalt-", "meaning": "黑色硬石 (basalt stone)", "words": [
+        {"w": "basalt", "g": "玄武岩"},
+        {"w": "basaltic", "g": "玄武岩的"}
+      ]}
+    ]
+  },
+  {
+    "w": "mineral",
+    "p": "/ˈmɪnərəl/",
+    "d": "n. 矿物；矿物质 adj. 矿物的",
+    "levels": ["托福"],
+    "core": "天然形成、成分固定、原子有序排列的无机固体",
+    "ety": "源自中世纪拉丁语 minerale「矿石、开采之物」，来自 minera「矿、矿脉」，与 mine（矿、开采）同源。",
+    "ph": "mine(矿)+ral → 从矿里挖出的东西 → 矿物",
+    "tip": "矿物(mineral)是岩石(rock)的『积木』——岩石由一种或多种矿物组成，如花岗岩含石英、长石、云母。",
+    "xex": [
+      {"en": "Every rock is made up of one or more minerals, each with its own crystal structure.", "zh": "每种岩石都由一种或多种矿物组成，每种矿物都有自己的晶体结构。", "src": "造句"},
+      {"en": "mineral deposit / rock-forming minerals / mineral content", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ore", "ipa": "/ɔːr/", "note": "矿石，特指可提炼金属者，是 mineral 的一个经济类别"}
+    ],
+    "nu": "矿物学讲座核心词，「矿物是岩石的组成单元」是基础概念，常考硬度、晶形。",
+    "rootfam": [
+      {"root": "min-", "meaning": "开采、矿 (mine)", "words": [
+        {"w": "mineral", "g": "矿物"},
+        {"w": "mine", "g": "矿、开采"},
+        {"w": "miner", "g": "矿工"},
+        {"w": "mineralogy", "g": "矿物学"}
+      ]}
+    ]
+  },
+  {
+    "w": "geologist",
+    "p": "/dʒiˈɑːlədʒɪst/",
+    "d": "n. 地质学家",
+    "levels": ["托福"],
+    "core": "研究地球物质、结构、历史与演变过程的科学家",
+    "ety": "= geo-「地、地球」（希腊语 gē）+ logos「学问、话语」+ -ist（人）。同 geo- 家族有 geography、geometry、geothermal。",
+    "ph": "geo(地)+log(学问)+ist(人) → 研究地球学问的人",
+    "tip": "-logist 结尾都表「…学家」；托福讲座里教授常代入 geologist 视角讲『我们如何读岩石记录』。",
+    "xex": [
+      {"en": "Geologists examine rock layers to reconstruct the Earth's ancient climate.", "zh": "地质学家通过研究岩层来重建地球古代的气候。", "src": "造句"},
+      {"en": "geologists study / a team of geologists / according to geologists", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "earth scientist", "ipa": "/ˈɜːrθ ˈsaɪəntɪst/", "note": "地球科学家，范围更广，含地质、气象、海洋等"}
+    ],
+    "nu": "地质讲座常出现的施动者，-ist 派生自 geology（地质学）。",
+    "rootfam": [
+      {"root": "geo-", "meaning": "地、地球 (earth)", "words": [
+        {"w": "geology", "g": "地质学"},
+        {"w": "geography", "g": "地理学"},
+        {"w": "geometry", "g": "几何学（测地）"},
+        {"w": "geothermal", "g": "地热的"},
+        {"w": "geologist", "g": "地质学家"}
+      ]},
+      {"root": "log-", "meaning": "学问、话语 (word/study)", "words": [
+        {"w": "biology", "g": "生物学"},
+        {"w": "logic", "g": "逻辑"},
+        {"w": "dialogue", "g": "对话"}
+      ]}
+    ]
+  },
+  {
+    "w": "formation",
+    "p": "/fɔːrˈmeɪʃn/",
+    "d": "n. 形成，构成；（岩石）地层，构造",
+    "levels": ["托福"],
+    "core": "岩石或地貌形成的过程，或据此划分的一组岩层",
+    "ety": "源自拉丁语 formatio「塑造、成形」，来自 forma「形状」+ -tion；与 form、reform、transform 同根。",
+    "ph": "form(形状)+ation(名词) → 成形的过程/成形物 → 形成/地层构造",
+    "tip": "地质里 formation 有专义：一套可辨认、可命名的岩层单位（如 Morrison Formation）；日常义仍是『形成、构成』。",
+    "xex": [
+      {"en": "The formation of coal takes millions of years of heat and pressure on plant matter.", "zh": "煤的形成需要植物物质历经数百万年的高温高压。", "src": "造句"},
+      {"en": "rock formation / the formation of mountains / geological formation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "creation", "ipa": "/kriˈeɪʃn/", "note": "形成、生成，日常义近；formation 更常用于自然/地质过程"},
+      {"w": "genesis", "ipa": "/ˈdʒenəsɪs/", "note": "起源、成因，偏正式，指过程的开端"}
+    ],
+    "nu": "既指过程「形成」也指名词「地层单位」，托福两义都可能考。",
+    "rootfam": [
+      {"root": "form-", "meaning": "形状、构成 (shape/form)", "words": [
+        {"w": "formation", "g": "形成、地层"},
+        {"w": "form", "g": "形状"},
+        {"w": "reform", "g": "改革"},
+        {"w": "transform", "g": "转变"},
+        {"w": "conform", "g": "遵从"},
+        {"w": "deform", "g": "使变形"}
+      ]}
+    ],
+    "senses": [
+      {"d": "n. 形成，构成（过程）", "en": "the formation of the solar system"},
+      {"d": "n. 地层，岩石构造（地质）", "en": "The park is famous for its red rock formations."}
+    ]
+  },
+  {
+    "w": "uplift",
+    "p": "/ˈʌplɪft/",
+    "d": "n. 地壳抬升，隆起 v. 抬升，举起",
+    "levels": ["托福"],
+    "core": "地壳因构造力作用而整体上升的过程",
+    "ety": "由 up（向上）+ lift（举起）合成的复合词；lift 源自古诺尔斯语 lypta「抬高」。字面即「向上抬」。",
+    "ph": "up(向上)+lift(举) → 向上举起 → （地壳）抬升",
+    "tip": "造山常靠 uplift（抬升）；板块碰撞把地壳往上顶，配合 erosion（侵蚀）共同塑造山脉高度。",
+    "xex": [
+      {"en": "The collision of two plates caused the uplift that created the Himalayas.", "zh": "两大板块的碰撞造成了地壳抬升，从而形成了喜马拉雅山脉。", "src": "造句"},
+      {"en": "tectonic uplift / uplift of the crust / mountain uplift", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "elevation", "ipa": "/ˌelɪˈveɪʃn/", "note": "抬升、升高，也指海拔高度；uplift 更强调构造抬升过程"},
+      {"w": "rise", "ipa": "/raɪz/", "note": "上升，通俗词，指地表整体升高"}
+    ],
+    "nu": "造山与地貌演化讲座核心词，常与 subsidence（下沉）、erosion 对照。",
+    "rootfam": [
+      {"root": "lift-", "meaning": "举起、抬高 (raise)", "words": [
+        {"w": "uplift", "g": "抬升"},
+        {"w": "lift", "g": "举起"},
+        {"w": "airlift", "g": "空运"},
+        {"w": "shoplift", "g": "行窃（顺手举走）"}
+      ]}
+    ]
+  },
+  {
+    "w": "glacier",
+    "p": "/ˈɡleɪʃər/",
+    "d": "n. 冰川",
+    "levels": ["托福"],
+    "core": "由积雪长年压实形成、能缓慢流动的巨大冰体",
+    "ety": "源自法语 glacier，来自 glace「冰」，追溯到拉丁语 glacies「冰」；与 glacial（冰的）、glaze（上釉、结冰）同根。",
+    "ph": "glac(冰)+ier → 一大块流动的冰 → 冰川",
+    "tip": "冰川是强力侵蚀者：移动时刮削基岩，形成 U 形谷、冰碛（moraine）；对照河流的 V 形谷。",
+    "xex": [
+      {"en": "As the glacier advanced, it carved a deep U-shaped valley into the mountainside.", "zh": "冰川前进时，在山坡上刻出一道深深的 U 形谷。", "src": "造句"},
+      {"en": "glacier melts / advancing glacier / glacial erosion", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ice sheet", "ipa": "/aɪs ʃiːt/", "note": "冰盖，覆盖面积极大的冰体，规模远超一般 glacier"}
+    ],
+    "nu": "冰川地质与地貌讲座核心词，冰川侵蚀与沉积（如冰碛）是常考内容。",
+    "rootfam": [
+      {"root": "glac-", "meaning": "冰 (ice)", "words": [
+        {"w": "glacier", "g": "冰川"},
+        {"w": "glacial", "g": "冰川的、极冷的"},
+        {"w": "glaciation", "g": "冰川作用"},
+        {"w": "glaze", "g": "结冰、上釉"}
+      ]}
+    ]
+  },
+  {
+    "w": "fossil",
+    "p": "/ˈfɑːsl/",
+    "d": "n. 化石",
+    "levels": ["托福"],
+    "core": "保存在岩层中的古生物遗骸或遗迹",
+    "ety": "源自拉丁语 fossilis「挖出来的」，来自 fodere「挖掘」；本义泛指任何从地里挖出之物，后专指古生物遗存。fossil fuel（化石燃料）同源。",
+    "ph": "foss(挖)+il → 从地里挖出来的（古生物遗骸）→ 化石",
+    "tip": "化石几乎只见于 sedimentary rock（沉积岩），因火成岩、变质岩的高温高压会毁掉遗骸；这是判定岩类的线索。",
+    "xex": [
+      {"en": "Fossils found in sedimentary rock help scientists date the layers precisely.", "zh": "沉积岩中发现的化石帮助科学家精确测定岩层的年代。", "src": "造句"},
+      {"en": "fossil record / fossil fuel / preserved as a fossil", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "remains", "ipa": "/rɪˈmeɪnz/", "note": "遗骸、遗存，普通词；fossil 特指石化后保存于岩层的"}
+    ],
+    "nu": "古生物与地层年代讲座核心词，「化石只存于沉积岩」是常考因果。",
+    "rootfam": [
+      {"root": "foss-/fod-", "meaning": "挖掘 (dig)", "words": [
+        {"w": "fossil", "g": "化石"},
+        {"w": "fossilize", "g": "使石化"},
+        {"w": "fosse", "g": "壕沟"}
+      ]}
+    ]
+  }
+]

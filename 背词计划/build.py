@@ -363,7 +363,8 @@ function words(){ return VOCAB[source].words; }
 function listMeta(){ const m={}; words().forEach(w=>{ m[w.l]=(m[w.l]||0)+1; });
   return Object.keys(m).map(Number).sort((a,b)=>a-b).map(n=>({no:n,count:m[n]})); }
 function listWords(no){ return words().filter(w=>w.l===no); }
-function mkey(w){ return w.lem || w.id; }   // 掌握键：sent100 用词元(lem)，绿皮书/BEAT 用其稳定 id
+function listTitle(no){ const L=VOCAB[source].labels; return (L&&L[String(no)])? L[String(no)] : 'List '+String(no).padStart(2,'0'); }  // subject 用学科名，其余 List NN
+function mkey(w){ return w.lem || w.id; }   // 掌握键：sent100/subject 用词元(lem)，绿皮书/BEAT 用其稳定 id
 function doneCount(arr){ const seen=new Set(); let c=0; for(const w of arr){ const k=mkey(w); if(seen.has(k))continue; seen.add(k); if(state[k]==='ok') c++; } return c; }
 function noCount(arr){ const seen=new Set(); let c=0; for(const w of arr){ const k=mkey(w); if(seen.has(k))continue; seen.add(k); if(state[k]==='no') c++; } return c; }
 function uniqCount(arr){ return new Set(arr.map(mkey)).size; }
@@ -518,7 +519,7 @@ function renderOverview(){
   const grid=$('#grid');
   const isSent=VOCAB[source].mode==='sent';
   grid.innerHTML = metas.map(m=>{ const lw=listWords(m.no); const cnt=isSent?uniqCount(lw):m.count; const dc=doneCount(lw); const nc=noCount(lw); const pct=Math.round(dc/Math.max(cnt,1)*100);
-    const ttl = isSent ? `句 ${(m.no-1)*10+1}–${m.no*10}` : `List ${String(m.no).padStart(2,'0')}`;
+    const ttl = isSent ? `句 ${(m.no-1)*10+1}–${m.no*10}` : listTitle(m.no);
     return `<div class="gcard ${dc===cnt?'done':''}" data-no="${m.no}">
       <div class="no">${ttl}</div>
       <div class="ct">${cnt} 词</div>
@@ -531,7 +532,7 @@ function renderOverview(){
   q.oninput=()=>{ const kw=q.value.trim().toLowerCase(); if(kw.length<2){ sres.classList.remove('show'); grid.style.display=''; return; }
     const hits=words().filter(w=>w.w.toLowerCase().includes(kw)).slice(0,40);
     grid.style.display='none'; sres.classList.add('show');
-    sres.innerHTML = hits.length? hits.map(w=>`<div class="srow" data-no="${w.l}"><b>${esc(w.w)}</b><span>${esc(w.d).slice(0,42)}</span><span class="sl">List ${String(w.l).padStart(2,'0')}</span></div>`).join('') : '<div class="empty">没找到</div>';
+    sres.innerHTML = hits.length? hits.map(w=>`<div class="srow" data-no="${w.l}"><b>${esc(w.w)}</b><span>${esc(w.d).slice(0,42)}</span><span class="sl">${esc(listTitle(w.l))}</span></div>`).join('') : '<div class="empty">没找到</div>';
     sres.querySelectorAll('.srow').forEach(r=> r.onclick=()=>{ curList=+r.dataset.no; render(); }); };
 }
 
@@ -544,7 +545,7 @@ function renderReview(){
   const byList={}; cur.forEach(w=>{ (byList[w.l]=byList[w.l]||[]).push(w); });
   const nos=Object.keys(byList).map(Number).sort((a,b)=>a-b);
   const body = nos.length
-    ? nos.map(no=>`<div class="rev-list">List ${String(no).padStart(2,'0')} · ${byList[no].length} 词</div><div class="cards">${byList[no].map(w=>cardHtml(w)).join('')}</div>`).join('')
+    ? nos.map(no=>`<div class="rev-list">${esc(listTitle(Number(no)))} · ${byList[no].length} 词</div><div class="cards">${byList[no].map(w=>cardHtml(w)).join('')}</div>`).join('')
     : `<div class="empty">${reviewMode==='un'?'🎉 这个词库已经没有「未学/未标记」的词了。':'还没有标「未掌握」的生词。<br>学习时点某个词的「✕ 未掌握」，它就会自动收集到这里，方便集中复习。'}</div>`;
   view.innerHTML = `<div class="study-top">
     <div class="stitle"><span class="back" id="back">← 返回总览</span>
@@ -882,7 +883,7 @@ function renderStudy(no){
               : lw;
   view.innerHTML = `<div class="study-top">
     <div class="stitle"><span class="back" id="back">← 返回总览</span>
-      <h2>List ${String(no).padStart(2,'0')}</h2>
+      <h2>${listTitle(no)}</h2>
       <span class="cnt" id="cnt">${total} 词 · 掌握 ${dc}${nc?' · 未掌握 '+nc:''}</span></div>
     <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/total*100)}%"></i></div>
     <div class="tools">
@@ -934,7 +935,14 @@ function cardHtml(w){
   const pos=posChip(w.d);
   let d='';
   if(recite) d += sec('📖','','释义',`<div style="font-size:16px;font-weight:600">${esc(w.d)}</div>`);
-  d += '<div class="chips-line"><span class="lvl-chip">托福</span></div>';
+  const _lv=(w.levels&&w.levels.length)?w.levels:['托福'];
+  d += '<div class="chips-line">'+_lv.map(x=>`<span class="lvl-chip">${esc(x)}</span>`).join('')+'</div>';
+  // 核心意象
+  if(w.core) d += sec('🎯','core','核心意象', esc(w.core));
+  // 一词多义 · 核心意象串解
+  if(w.senses&&w.senses.length){ let si='';
+    w.senses.forEach(s=>{ si+=`<div class="swd-sense"><b>${esc(s.gloss||'')}</b>${s.logic?` — ${esc(s.logic)}`:''}${s.en?`<div class="swd-ex"><span class="wc-say" data-say="${esc(s.en)}"><i>${esc(s.en)}</i> 🔊</span>${s.zh?` <span class="swd-ex-zh">${esc(s.zh)}</span>`:''}</div>`:''}</div>`; });
+    d += sec('🧠','sense','一词多义 · 核心意象串解', si); }
   // 四会微练（听说读写）—— 点标签即开对应小练习
   d += `<div class="drill"><div class="drill-tabs">
     <button data-dr="say">🎤 说·跟读</button>
@@ -961,6 +969,11 @@ function cardHtml(w){
     (w.ant||[]).forEach(s=> inner+=`<div class="syn-row"><span class="syn-chip ant">反义</span><span class="syn-w" data-say="${esc(s.w)}">${esc(s.w)}</span> — ${esc(s.note||s.gloss||'')}</div>`);
     d += sec('🔗','syn','近义词辨析 · 反义词', inner);
   }
+  // 词根家族（背一个带一串）
+  if(w.rootfam&&w.rootfam.length){ let fi='';
+    w.rootfam.forEach(r=>{ fi+=`<div class="fam-root"><span class="fam-r">${esc(r.root)}</span> <span class="fam-m">${esc(r.meaning||'')}</span>：`+
+      (r.words||[]).map(x=>`<span class="fam-w wc-say" data-say="${esc(x.w)}">${esc(x.w)}<span class="fam-g">${esc(x.g||'')}</span></span>`).join('')+`</div>`; });
+    d += sec('🌳','fam','词根家族 · 背一个带一串', fi); }
   if(w.nu) d += `<div class="nuance">🎯 ${esc(w.nu)}</div>`;
   const expandable = ' expandable';
   return `<div class="wcard${cls}${expandable}" data-id="${esc(w.id)}">
@@ -984,6 +997,7 @@ function wireCards(box){
     const id=card.dataset.id;
     card.querySelector('.wc-word').onclick=e=>{ e.stopPropagation(); say(e.target.dataset.say); };
     card.querySelectorAll('.syn-w').forEach(sw=> sw.onclick=e=>{ e.stopPropagation(); say(sw.dataset.say); });
+    card.querySelectorAll('.wc-say').forEach(sw=> sw.onclick=e=>{ e.stopPropagation(); say(sw.dataset.say); });  // 一词多义例句/词根家族点词朗读
     // 四会微练：点标签开/收对应小练习；练习区内点击不折叠卡片
     const drill=card.querySelector('.drill');
     if(drill){
@@ -1038,6 +1052,27 @@ def build():
         proj = load_source("项目生词.json", trim_proj, "项目生词")
         proj["name"] = "项目生词"
         payload["proj"] = proj
+    # 20 学科听力词（按学科分组，每词满配 voca 卡片）——独立词源 subject；掌握键用语幹(lem)，重建不丢
+    _svp = _os0.path.join(DATA, "subject-vocab.json")
+    if _os0.path.exists(_svp):
+        _sv = json.load(open(_svp, encoding="utf-8"))
+        _subw = []; _slabels = {}
+        _keepfld = ("core", "ety", "ph", "tip", "xex", "syn", "ant", "nu", "rootfam", "senses", "levels")
+        for _d in _sv.get("disciplines", []):
+            _no = _d["no"]
+            _slabels[str(_no)] = (_d.get("emoji", "") + " " + _d.get("name", "")).strip()
+            for _w in _d.get("words", []):
+                _surf = (_w.get("w", "") or "").strip()
+                if not _surf:
+                    continue
+                _obj = {"id": "SUB-%s-%s" % (_d["id"], _surf.lower().replace(" ", "_")),
+                        "lem": "sub:%s:%s" % (_d["id"], _surf.lower()),
+                        "l": _no, "w": _surf, "p": _w.get("p", ""), "d": _w.get("d", "")}
+                for _k in _keepfld:
+                    if _w.get(_k):
+                        _obj[_k] = _w[_k]
+                _subw.append(_obj)
+        payload["subject"] = {"name": "20学科听力词", "words": _subw, "labels": _slabels}
     # 100 长难句（句子式展示：每句每词可点开标掌握/未掌握）——独立词源 sent100
     _ssp = _os0.path.join(DATA, "sentences-100.json")
     if _os0.path.exists(_ssp):

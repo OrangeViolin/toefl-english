@@ -1,0 +1,649 @@
+[
+  {
+    "w": "atmosphere",
+    "p": "/ˈætməsfɪr/",
+    "d": "n. 大气，大气层；气氛，氛围",
+    "levels": ["托福"],
+    "core": "包裹地球、由多层气体构成的气圈",
+    "ety": "源自希腊语 atmos「蒸汽、气体」+ sphaira「球」，17 世纪造词，字面「气之球」——包在地球外的一层气壳。",
+    "ph": "atmo(气/蒸汽)+sphere(球) → 气之球 → 大气层",
+    "tip": "把 sphere 一族串起来记：atmo-（气）+sphere=大气，hydro-（水）+sphere=水圈，bio-（生命）+sphere=生物圈——地球系统三大圈层都用 sphere 收尾。",
+    "xex": [
+      {"en": "The atmosphere traps heat from the sun and keeps the planet warm enough for life.", "zh": "大气层留住来自太阳的热量，使地球温暖到足以维持生命。", "src": "造句"},
+      {"en": "Earth's atmosphere / upper atmosphere / atmospheric pressure", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "air", "ipa": "/er/", "note": "日常词「空气」，atmosphere 是其科学、整体的说法，强调分层气圈"}
+    ],
+    "nu": "地球系统四大圈层之一（大气圈 / 水圈 / 岩石圈 / 生物圈），托福地球科学讲座的高频起点词。",
+    "rootfam": [
+      {"root": "sphere", "meaning": "球、圈层 (ball/globe)", "words": [
+        {"w": "atmosphere", "g": "大气层"},
+        {"w": "hydrosphere", "g": "水圈"},
+        {"w": "biosphere", "g": "生物圈"},
+        {"w": "hemisphere", "g": "半球"},
+        {"w": "sphere", "g": "球体、领域"}
+      ]}
+    ]
+  },
+  {
+    "w": "hydrosphere",
+    "p": "/ˈhaɪdrəsfɪr/",
+    "d": "n. 水圈（地球上全部水体的总称）",
+    "levels": ["托福"],
+    "core": "地球上海洋、河湖、地下水、冰川与水汽的整体",
+    "ety": "hydro-「水」（希腊语 hydōr）+ sphere「球、圈」——「水之圈」，与 atmosphere、biosphere 同构造词。",
+    "ph": "hydro(水)+sphere(圈) → 水之圈 → 水圈",
+    "tip": "见 hydro 就想到「水」：hydrant 消防栓、dehydrate 脱水、hydroelectric 水力发电——hydrosphere 就是把全地球的水打包成一个圈。",
+    "xex": [
+      {"en": "The hydrosphere includes all the water on Earth, from oceans to underground reservoirs.", "zh": "水圈涵盖地球上所有的水，从海洋到地下蓄水层。", "src": "造句"},
+      {"en": "the hydrosphere / water in the hydrosphere / interact with the atmosphere", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "water cycle", "ipa": "/ˈwɔːtər ˈsaɪkl/", "note": "「水循环」，是水圈内部水的流动过程，二者常在讲座里同时出现"}
+    ],
+    "nu": "与 atmosphere、biosphere、lithosphere 并称地球四大圈层，讲「水循环」时几乎必提。",
+    "rootfam": [
+      {"root": "hydro-", "meaning": "水 (water)", "words": [
+        {"w": "hydrosphere", "g": "水圈"},
+        {"w": "hydrant", "g": "消防栓"},
+        {"w": "dehydrate", "g": "使脱水"},
+        {"w": "hydroelectric", "g": "水力发电的"},
+        {"w": "hydraulic", "g": "液压的"}
+      ]}
+    ]
+  },
+  {
+    "w": "groundwater",
+    "p": "/ˈɡraʊndwɔːtər/",
+    "d": "n. 地下水",
+    "levels": ["托福"],
+    "core": "储存在土壤与岩石孔隙中、位于地下的水",
+    "ety": "复合词：ground「地面、大地」+ water「水」，字面「地里的水」，直白透明的英语本族复合。",
+    "ph": "ground(地)+water(水) → 地下的水",
+    "tip": "拆成 ground+water 秒懂；它和 aquifer（含水层）是一对——含水层是「容器」，地下水是「里面装的水」。",
+    "xex": [
+      {"en": "Rainwater slowly seeps through the soil and becomes groundwater stored below the surface.", "zh": "雨水缓慢渗过土壤，成为储存在地表之下的地下水。", "src": "造句"},
+      {"en": "groundwater supply / recharge groundwater / groundwater level", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "subsurface water", "ipa": "/ˈsʌbsɜːrfɪs ˈwɔːtər/", "note": "「地下水」的更技术化说法，强调「表面之下」的位置"}
+    ],
+    "nu": "托福水文讲座核心：与地表径流 runoff、含水层 aquifer、渗透 permeable 常成组出现。"
+  },
+  {
+    "w": "aquifer",
+    "p": "/ˈækwɪfər/",
+    "d": "n. 含水层，蓄水层",
+    "levels": ["托福"],
+    "core": "能储存并输送地下水的透水岩层或砂砾层",
+    "ety": "拉丁语 aqua「水」+ -fer「携带、承载」（源自 ferre「带来」），字面「携水者」——把水含在体内、能供水的岩层。",
+    "ph": "aqui(水)+fer(携带) → 携带水的层 → 含水层",
+    "tip": "aqua=水（想到水族馆 aquarium）、fer=带（transfer 转移）；含水层就是地下「带着水」的海绵层，井打进去就能抽水。",
+    "xex": [
+      {"en": "Wells draw drinking water from an aquifer deep beneath the town.", "zh": "水井从小镇地下深处的含水层中抽取饮用水。", "src": "造句"},
+      {"en": "underground aquifer / recharge the aquifer / deplete an aquifer", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "water-bearing layer", "ipa": "/ˈwɔːtər ˈberɪŋ ˈleɪər/", "note": "描述性说法「含水的地层」，与 aquifer 同义但更口语拆解"}
+    ],
+    "nu": "讲地下水必考的「容器」词；透水的砂石层才能成含水层，与不透水的黏土隔水层相对。",
+    "rootfam": [
+      {"root": "aqua-", "meaning": "水 (water)", "words": [
+        {"w": "aquifer", "g": "含水层"},
+        {"w": "aquarium", "g": "水族馆"},
+        {"w": "aquatic", "g": "水生的"},
+        {"w": "aqueduct", "g": "输水渠"},
+        {"w": "aquamarine", "g": "海蓝色"}
+      ]}
+    ]
+  },
+  {
+    "w": "geothermal",
+    "p": "/ˌdʒiːoʊˈθɜːrml/",
+    "d": "adj. 地热的",
+    "levels": ["托福"],
+    "core": "来自地球内部热量的",
+    "ety": "希腊语 gē / geo-「地球、大地」+ thermē「热」+ -al 形容词后缀，字面「地球之热的」。",
+    "ph": "geo(地)+therm(热)+al(形容词) → 地球热的 → 地热的",
+    "tip": "geo=地（geography 地理）、therm=热（thermometer 温度计）；地热能就是把地球内部的「热」拿来发电、取暖，冰岛靠它供暖。",
+    "xex": [
+      {"en": "Iceland uses geothermal energy from underground heat to warm homes and generate electricity.", "zh": "冰岛利用来自地下热量的地热能为房屋供暖并发电。", "src": "造句"},
+      {"en": "geothermal energy / geothermal heat / geothermal power plant", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "volcanic heat", "ipa": "/vɑːlˈkænɪk hiːt/", "note": "地热的常见来源之一，讲座里地热区常与火山活动相伴"}
+    ],
+    "nu": "托福讲能源/地球内热时高频；地热来自地核放射性衰变与地幔余热，间歇泉 geyser 是其地表表现。",
+    "rootfam": [
+      {"root": "therm-", "meaning": "热 (heat)", "words": [
+        {"w": "geothermal", "g": "地热的"},
+        {"w": "thermometer", "g": "温度计"},
+        {"w": "thermal", "g": "热的"},
+        {"w": "thermostat", "g": "恒温器"},
+        {"w": "hypothermia", "g": "体温过低"}
+      ]}
+    ]
+  },
+  {
+    "w": "landform",
+    "p": "/ˈlændfɔːrm/",
+    "d": "n. 地形，地貌",
+    "levels": ["托福"],
+    "core": "地表的自然形态特征，如山、谷、平原",
+    "ety": "复合词：land「陆地」+ form「形态」，字面「陆地的形状」，英语本族透明复合。",
+    "ph": "land(陆地)+form(形态) → 陆地的形状 → 地形",
+    "tip": "land+form 一眼看穿；山脉 ridge、盆地 basin、高原 plateau、峡谷 canyon、三角洲 delta 全是 landform 的具体成员。",
+    "xex": [
+      {"en": "Mountains, valleys, and plateaus are common landforms shaped by erosion and tectonic forces.", "zh": "山脉、河谷和高原是由侵蚀和构造力塑造的常见地貌。", "src": "造句"},
+      {"en": "major landforms / coastal landforms / shape landforms", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "terrain", "ipa": "/təˈreɪn/", "note": "「地形、地势」，侧重一片地区的整体起伏与地面状况，范围概念更大"},
+      {"w": "topography", "ipa": "/təˈpɑːɡrəfi/", "note": "「地形（学）」，强调对地表高低起伏的测绘与描述"}
+    ],
+    "nu": "托福地貌讲座的统称词，讲侵蚀、沉积如何「造地形」时贯穿全场。"
+  },
+  {
+    "w": "basin",
+    "p": "/ˈbeɪsn/",
+    "d": "n. 盆地；流域；水盆",
+    "levels": ["托福"],
+    "core": "四周高、中间低的碗状洼地或某河汇水的整片区域",
+    "ety": "源自古法语 bacin，再上溯到通俗拉丁语 baccinum「盆、碗」；地质义由「碗状容器」引申为碗状的地形凹陷。",
+    "ph": "本义「盆、碗」→ 像碗一样的洼地 → 盆地；一条河的集水区 → 流域",
+    "tip": "先记「洗脸盆 basin」，再把这个碗形搬到大地上——中间凹下去、四周围起来的就是盆地；ocean basin 则是装海水的大碗。",
+    "xex": [
+      {"en": "The river and all its tributaries drain into a single large basin.", "zh": "这条河及其所有支流都汇入同一个巨大的流域。", "src": "造句"},
+      {"en": "drainage basin / ocean basin / sedimentary basin", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "depression", "ipa": "/dɪˈpreʃn/", "note": "「洼地、凹陷」，泛指地表下陷区，basin 特指碗状且常与汇水相关"},
+      {"w": "watershed", "ipa": "/ˈwɔːtərʃed/", "note": "作「流域」解时与 drainage basin 近义；另有「分水岭」义"}
+    ],
+    "nu": "一词两义：地貌上是「碗状洼地」，水文上是「流域（drainage basin）」，托福两种考法都出现。",
+    "senses": [
+      {"gloss": "盆地（碗状洼地）", "logic": "由「碗」的形状引申到大地上四周高、中间低的地形", "en": "The Tarim Basin is surrounded by high mountain ranges.", "zh": "塔里木盆地四周被高大的山脉环绕。"},
+      {"gloss": "流域（河流的汇水区）", "logic": "整片地表像大碗一样把降水汇集到同一条河，故称流域", "en": "Deforestation in the upper basin increased flooding downstream.", "zh": "流域上游的森林砍伐加剧了下游的洪涝。"}
+    ]
+  },
+  {
+    "w": "ridge",
+    "p": "/rɪdʒ/",
+    "d": "n. 山脊；（狭长的）隆起，脊状物",
+    "levels": ["托福"],
+    "core": "狭长而突起的高地或隆起线",
+    "ety": "源自古英语 hrycg「背脊、脊柱」，本指人或动物的「脊背」，后引申为像脊背一样狭长隆起的山脊。",
+    "ph": "本义「脊背」→ 像背脊一样细长隆起的高地 → 山脊",
+    "tip": "联想动物拱起的「背脊」——山脊就是大地隆起的一条「背」；海底的 mid-ocean ridge（大洋中脊）是新地壳诞生的地方，板块讲座必考。",
+    "xex": [
+      {"en": "Magma rises along the mid-ocean ridge and forms new oceanic crust.", "zh": "岩浆沿大洋中脊上涌，形成新的海洋地壳。", "src": "造句"},
+      {"en": "mountain ridge / mid-ocean ridge / narrow ridge", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "crest", "ipa": "/krest/", "note": "「顶脊、峰顶线」，侧重最高的那条棱线，ridge 指整条狭长隆起"}
+    ],
+    "nu": "板块构造讲座核心词：大洋中脊是海底扩张、新地壳生成处，与海沟 trench（消亡处）相对。"
+  },
+  {
+    "w": "current",
+    "p": "/ˈkɜːrənt/",
+    "d": "n.（水、气、电的）流；潮流，趋势　adj. 当前的",
+    "levels": ["托福"],
+    "core": "液体或气体沿一定方向的流动",
+    "ety": "源自拉丁语 currere「跑、流动」的现在分词 currēns，字面「正在跑的」——水在「跑」就成了「流」。同根有 occur、recur、excursion。",
+    "ph": "curr(跑/流)+ent → 正在流动的 → 水流、气流",
+    "tip": "curr=跑（想到 occur「发生＝跑到眼前」）；ocean current「洋流」就是海水在全球「奔跑」的大河，搬运热量、影响气候。",
+    "xex": [
+      {"en": "Warm ocean currents carry heat from the equator toward the poles.", "zh": "温暖的洋流把热量从赤道输送向两极。", "src": "造句"},
+      {"en": "ocean current / warm/cold current / current flows", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "flow", "ipa": "/floʊ/", "note": "「流动、水流」，泛指液体流动，current 强调有方向、成体系的流"},
+      {"w": "stream", "ipa": "/striːm/", "note": "「水流、气流」，可指一股细流，current 更宏观（如全球洋流）"}
+    ],
+    "nu": "海洋/气候讲座高频：洋流由风、地转偏向力、盐度温度差驱动，是全球热量再分配的关键。",
+    "senses": [
+      {"gloss": "（水/气/电的）流", "logic": "currere「流动」的本义直接落到液体气体上", "en": "The current pulled the boat far from shore.", "zh": "水流把小船带离了岸边很远。"},
+      {"gloss": "当前的、现行的", "logic": "「正在流动、正在进行」引申为时间上的「当下」", "en": "The current theory explains the data better.", "zh": "当前的理论能更好地解释这些数据。"}
+    ]
+  },
+  {
+    "w": "continental",
+    "p": "/ˌkɑːntɪˈnentl/",
+    "d": "adj. 大陆的，大洲的",
+    "levels": ["托福"],
+    "core": "与大块陆地（大陆）有关的",
+    "ety": "源自拉丁语 continēre「保持连在一起」（com-「共同」+ tenēre「握持」）——「连成一片的陆地」即 continent 大陆，加 -al 成形容词。",
+    "ph": "con(共同)+tin(握持)+ental → 连握成一整片的（陆地的） → 大陆的",
+    "tip": "continent 大陆＝「连在一起 continue 的一大块地」；continental crust（大陆地壳）比海洋地壳更厚更轻，板块讲座常做对比。",
+    "xex": [
+      {"en": "Continental crust is thicker and less dense than oceanic crust.", "zh": "大陆地壳比海洋地壳更厚、密度更小。", "src": "造句"},
+      {"en": "continental drift / continental crust / continental shelf", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mainland", "ipa": "/ˈmeɪnlænd/", "note": "名词「大陆、本土」，与岛屿相对；continental 是形容词，修饰地壳、板块等"}
+    ],
+    "nu": "板块构造核心搭配词：continental drift（大陆漂移）是板块理论的前身，由魏格纳提出。",
+    "rootfam": [
+      {"root": "ten-/tin-", "meaning": "握持、保持 (hold)", "words": [
+        {"w": "continental", "g": "大陆的"},
+        {"w": "continent", "g": "大陆"},
+        {"w": "contain", "g": "包含"},
+        {"w": "maintain", "g": "维持"},
+        {"w": "retain", "g": "保留"},
+        {"w": "tenant", "g": "租户（持有使用权者）"}
+      ]}
+    ]
+  },
+  {
+    "w": "drift",
+    "p": "/drɪft/",
+    "d": "v.（使）漂移，漂流　n. 漂移；趋势，大意",
+    "levels": ["托福"],
+    "core": "受水流、风或缓慢地质力推动而缓缓移动",
+    "ety": "源自古诺斯语 drift「驱赶、漂流」，与 drive「驱动」同源——被某种力量「赶着」缓慢移动。",
+    "ph": "与 drive（驱动）同源 → 被推着缓慢移动 → 漂移",
+    "tip": "记 drift 就想「随波逐流」；continental drift（大陆漂移）说的是各大陆像木筏一样在地幔上缓慢「漂」了几亿年。",
+    "xex": [
+      {"en": "Wegener proposed that the continents slowly drift across Earth's surface over millions of years.", "zh": "魏格纳提出各大陆在数百万年间缓慢地在地球表面漂移。", "src": "造句"},
+      {"en": "continental drift / drift apart / drift with the current", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "float", "ipa": "/floʊt/", "note": "「漂浮」，侧重浮在液面上；drift 强调随流缓慢移动、有方向漂移"}
+    ],
+    "nu": "continental drift 是板块构造理论的历史前身，托福讲科学史时常出现魏格纳与大陆漂移。"
+  },
+  {
+    "w": "deposition",
+    "p": "/ˌdepəˈzɪʃn/",
+    "d": "n. 沉积（作用）；沉积物；免职",
+    "levels": ["托福"],
+    "core": "被搬运的物质在低处沉降、堆积下来的过程",
+    "ety": "拉丁语 dēpōnere「放下、卸下」（de-「向下」+ pōnere「放置」）→ dēpositiō「放下」；地质义即把泥沙「放下」堆积。同根 deposit、position、component。",
+    "ph": "de(向下)+posit(放置)+ion → 向下放置堆积 → 沉积作用",
+    "tip": "posit=放（position 位置就是「被放的地方」）；侵蚀 erosion「搬走」、搬运 transport「运输」、deposition「放下」——地表物质的三部曲，托福常连着考。",
+    "xex": [
+      {"en": "Deposition of sand and silt at the river mouth gradually builds a delta.", "zh": "泥沙在河口的沉积逐渐堆积成三角洲。", "src": "造句"},
+      {"en": "sediment deposition / erosion and deposition / rate of deposition", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "accumulation", "ipa": "/əˌkjuːmjəˈleɪʃn/", "note": "「堆积、累积」，泛指物质逐渐积累，deposition 特指被搬运物沉降后的堆积"},
+      {"w": "sedimentation", "ipa": "/ˌsedɪmenˈteɪʃn/", "note": "「沉淀作用」，几乎同义，更强调颗粒从流体中沉降的过程"}
+    ],
+    "nu": "与 erosion（侵蚀）成对：侵蚀在源头「拿走」，deposition 在下游「放下」，共同塑造河流、海岸地貌。",
+    "rootfam": [
+      {"root": "pos-/pon-", "meaning": "放置 (put/place)", "words": [
+        {"w": "deposition", "g": "沉积作用"},
+        {"w": "deposit", "g": "沉积；存款"},
+        {"w": "position", "g": "位置"},
+        {"w": "compose", "g": "组成"},
+        {"w": "component", "g": "组成部分"},
+        {"w": "propose", "g": "提议"}
+      ]}
+    ]
+  },
+  {
+    "w": "runoff",
+    "p": "/ˈrʌnɔːf/",
+    "d": "n. 地表径流；流走的水",
+    "levels": ["托福"],
+    "core": "降水未渗入地下、沿地表流走的那部分水",
+    "ety": "短语动词 run off「流走、跑掉」名词化而来——雨水在地面上「跑掉」的部分。",
+    "ph": "run(跑/流)+off(离开) → 从地表流走的水 → 径流",
+    "tip": "run off＝「流走」；下雨后没渗进土里、直接顺坡「跑掉」汇进河的就是 runoff，与 infiltration（下渗）相对，是水循环的一环。",
+    "xex": [
+      {"en": "Heavy rain on paved surfaces increases runoff and can cause flooding.", "zh": "铺装路面上的暴雨会增加地表径流，可能引发洪涝。", "src": "造句"},
+      {"en": "surface runoff / agricultural runoff / runoff flows into rivers", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "outflow", "ipa": "/ˈaʊtfloʊ/", "note": "「流出（量）」，泛指水的外流，runoff 特指地表流走的降水"}
+    ],
+    "nu": "水循环讲座核心：降水 → 下渗成地下水，或成 runoff 汇入河海；农业 runoff 携带化肥是环境考点。"
+  },
+  {
+    "w": "evaporation",
+    "p": "/ɪˌvæpəˈreɪʃn/",
+    "d": "n. 蒸发（作用）",
+    "levels": ["托福"],
+    "core": "液态水在低于沸点时转为水汽升入空气的过程",
+    "ety": "拉丁语 ēvapōrāre「散发蒸汽」= e-「向外」+ vapor「蒸汽」+ -ation 名词后缀，字面「向外冒蒸汽」。",
+    "ph": "e(向外)+vapor(蒸汽)+ation → 向外化成蒸汽 → 蒸发",
+    "tip": "vapor＝蒸汽（水蒸气 water vapor）；水循环的起点就是海面水被太阳晒得「向外冒气」evaporation，升空后再 condensation 凝结成云。",
+    "xex": [
+      {"en": "Solar heat drives the evaporation of water from oceans into the atmosphere.", "zh": "太阳的热量驱动海水蒸发进入大气。", "src": "造句"},
+      {"en": "evaporation from the ocean / rate of evaporation / evaporation and condensation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "vaporization", "ipa": "/ˌveɪpərɪˈzeɪʃn/", "note": "「汽化」，含义更宽（含沸腾），evaporation 特指表面在沸点以下的缓慢蒸发"}
+    ],
+    "nu": "水循环第一步：蒸发 → 凝结 condensation → 降水 precipitation → 径流 runoff，四步是听力必考闭环。",
+    "rootfam": [
+      {"root": "vapor", "meaning": "蒸汽 (steam)", "words": [
+        {"w": "evaporation", "g": "蒸发"},
+        {"w": "evaporate", "g": "蒸发"},
+        {"w": "vapor", "g": "蒸汽"},
+        {"w": "vaporize", "g": "使汽化"}
+      ]}
+    ]
+  },
+  {
+    "w": "condensation",
+    "p": "/ˌkɑːndenˈseɪʃn/",
+    "d": "n. 凝结（作用）；冷凝物；（文字的）压缩",
+    "levels": ["托福"],
+    "core": "水汽遇冷转回液态水滴的过程",
+    "ety": "拉丁语 condēnsāre「使变稠密」= con-「加强」+ dēnsus「稠密的」+ -ation；水汽聚拢「变稠密」成液滴。与 dense、density 同根。",
+    "ph": "con(加强)+dens(稠密)+ation → 使聚成稠密（水滴） → 凝结",
+    "tip": "dens＝稠密（density 密度）；水汽升空遇冷「挤稠」成小水滴聚成云，就是 condensation——与蒸发 evaporation 正好一冒一收。",
+    "xex": [
+      {"en": "Clouds form through the condensation of water vapor high in the atmosphere.", "zh": "云是由高空水汽凝结而成的。", "src": "造句"},
+      {"en": "condensation of water vapor / form by condensation / condensation and precipitation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "condensing", "ipa": "/kənˈdensɪŋ/", "note": "同根动名词，描述「正在凝结」的过程；condensation 是名词化的结果/过程"}
+    ],
+    "nu": "水循环第二步，托福常考「云是水汽凝结、非水汽本身」这一细节判断。",
+    "rootfam": [
+      {"root": "dens-", "meaning": "稠密 (thick/dense)", "words": [
+        {"w": "condensation", "g": "凝结"},
+        {"w": "condense", "g": "使凝结、压缩"},
+        {"w": "dense", "g": "稠密的"},
+        {"w": "density", "g": "密度"}
+      ]}
+    ]
+  },
+  {
+    "w": "precipitation",
+    "p": "/prɪˌsɪpɪˈteɪʃn/",
+    "d": "n. 降水（雨/雪/雹）；（化学）沉淀；仓促",
+    "levels": ["托福"],
+    "core": "大气中的水以雨、雪、雹等形式降落地面",
+    "ety": "拉丁语 praecipitāre「使头朝下坠落」= prae-「向前」+ caput「头」；水从空中「头朝下摔下来」即降水。与 precipice（悬崖）同源。",
+    "ph": "prae(向前)+cipit(头)+ation → 头朝下坠落 → 降落 → 降水",
+    "tip": "cipit＝头（capital 首都是「头」城）；把水想成「头朝下从云里摔下来」——雨雪雹统称 precipitation，是水循环回到地面的一步。",
+    "xex": [
+      {"en": "When water droplets grow heavy enough, they fall as precipitation such as rain or snow.", "zh": "当水滴增大到足够重时，便以雨或雪等降水形式落下。", "src": "造句"},
+      {"en": "annual precipitation / forms of precipitation / precipitation falls", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "rainfall", "ipa": "/ˈreɪnfɔːl/", "note": "「降雨（量）」，只含液态雨；precipitation 涵盖雨、雪、雹等全部形式"}
+    ],
+    "nu": "水循环第三步（凝结之后）；托福气候讲座常给 precipitation 数据比较不同气候带的干湿。",
+    "rootfam": [
+      {"root": "cap-/cip-/cipit-", "meaning": "头 (head)", "words": [
+        {"w": "precipitation", "g": "降水"},
+        {"w": "precipice", "g": "悬崖"},
+        {"w": "capital", "g": "首都；资本"},
+        {"w": "captain", "g": "队长（为首者）"}
+      ]}
+    ]
+  },
+  {
+    "w": "watershed",
+    "p": "/ˈwɔːtərʃed/",
+    "d": "n. 分水岭；流域；（比喻）重大转折点",
+    "levels": ["托福"],
+    "core": "把降水分向不同河流的高地界线，或某河的整片汇水区",
+    "ety": "英语复合词：water「水」+ shed「分开、分流」（shed 有「使分流、抛落」义），字面「水的分流处」，仿德语 Wasserscheide 而造。",
+    "ph": "water(水)+shed(分开) → 把水分向两边的岭 → 分水岭",
+    "tip": "shed 有「分开、脱落」义（树 shed leaves 落叶）；山岭 watershed 把雨水「分」到两侧不同流域——站在岭上一滴雨往哪边流就归哪条河。",
+    "xex": [
+      {"en": "Rain falling on one side of the watershed flows to a different river than rain on the other side.", "zh": "落在分水岭一侧的雨水会流向与另一侧不同的河流。", "src": "造句"},
+      {"en": "drainage watershed / protect the watershed / watershed boundary", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "divide", "ipa": "/dɪˈvaɪd/", "note": "名词「分水岭」（如 continental divide 大陆分水岭），与 watershed 分水岭义相同"},
+      {"w": "drainage basin", "ipa": "/ˈdreɪnɪdʒ ˈbeɪsn/", "note": "作「流域」解时二者近义，指同一片汇水区"}
+    ],
+    "nu": "美式英语里 watershed 既指「分水岭」也指「流域」，托福水文/环境讲座两义都可能出现。"
+  },
+  {
+    "w": "glacial",
+    "p": "/ˈɡleɪʃl/",
+    "d": "adj. 冰川的，冰河时代的；极冷的；极缓慢的",
+    "levels": ["托福"],
+    "core": "与冰川或冰期有关的",
+    "ety": "源自拉丁语 glaciēs「冰」+ -al；同根 glacier（冰川）、glaciation（冰川作用）。",
+    "ph": "glaci(冰)+al(形容词) → 冰的 → 冰川的",
+    "tip": "glaci＝冰（glacier 冰川）；glacial period＝冰期，glacial erosion＝冰川侵蚀（冰川像推土机磨出 U 形谷）；也比喻「冰冷缓慢」（at a glacial pace 慢如冰川）。",
+    "xex": [
+      {"en": "Glacial erosion carved deep U-shaped valleys into the mountains.", "zh": "冰川侵蚀在群山中刻出深深的 U 形谷。", "src": "造句"},
+      {"en": "glacial period / glacial erosion / glacial deposits", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "icy", "ipa": "/ˈaɪsi/", "note": "日常词「结冰的、冰冷的」，glacial 特指与冰川/冰期相关，或程度上的极冷极慢"}
+    ],
+    "nu": "托福地貌/古气候高频：冰川塑造 U 形谷、峡湾、冰碛，冰期与间冰期的更替是气候史考点。",
+    "rootfam": [
+      {"root": "glaci-", "meaning": "冰 (ice)", "words": [
+        {"w": "glacial", "g": "冰川的"},
+        {"w": "glacier", "g": "冰川"},
+        {"w": "glaciation", "g": "冰川作用"}
+      ]}
+    ]
+  },
+  {
+    "w": "seismology",
+    "p": "/saɪzˈmɑːlədʒi/",
+    "d": "n. 地震学",
+    "levels": ["托福"],
+    "core": "研究地震及地震波传播的科学",
+    "ety": "希腊语 seismos「震动、地震」（来自 seiein「摇动」）+ -logy「…学」，字面「震动之学」。同根 seismic、seismograph。",
+    "ph": "seismo(震动)+logy(学) → 震动之学 → 地震学",
+    "tip": "seismo＝震动；seismology 靠 seismic waves（地震波）像「给地球做 B 超」——正是通过地震波折射，科学家才推断出地核、地幔的分层。",
+    "xex": [
+      {"en": "Seismology reveals Earth's internal structure by studying how seismic waves travel through it.", "zh": "地震学通过研究地震波如何穿过地球来揭示地球的内部结构。", "src": "造句"},
+      {"en": "the study of seismology / seismic waves / seismic activity", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "seismic study", "ipa": "/ˈsaɪzmɪk ˈstʌdi/", "note": "「地震研究」，描述性说法，seismology 是其正式学科名"}
+    ],
+    "nu": "托福常考：正因地震波在不同层速度、路径不同，人类才「看见」了看不见的地核与地幔分层。",
+    "rootfam": [
+      {"root": "-logy", "meaning": "…学、研究 (study of)", "words": [
+        {"w": "seismology", "g": "地震学"},
+        {"w": "geology", "g": "地质学"},
+        {"w": "biology", "g": "生物学"},
+        {"w": "meteorology", "g": "气象学"},
+        {"w": "hydrology", "g": "水文学"}
+      ]}
+    ]
+  },
+  {
+    "w": "core",
+    "p": "/kɔːr/",
+    "d": "n. 地核；核心，要点；果核　vt. 去核",
+    "levels": ["托福"],
+    "core": "地球最内层的高温高密度部分，或事物最中心的部分",
+    "ety": "词源不确定，可能源自古法语 cor「（果实的）心、内核」（一说与拉丁 cor「心脏」相关），本义「果核、中心」，地质义即地球的「核」。",
+    "ph": "本义「果核、中心」→ 地球的中心 → 地核",
+    "tip": "苹果的 core 是果核；地球的 core 是地核，分外核（液态铁镍，产生磁场）和内核（固态）——是地球最深、最热的一层。",
+    "xex": [
+      {"en": "Earth's core is made mostly of iron and nickel and is extremely hot.", "zh": "地核主要由铁和镍构成，温度极高。", "src": "造句"},
+      {"en": "Earth's core / outer/inner core / molten core", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "center", "ipa": "/ˈsentər/", "note": "普通词「中心」，core 更强调最内、最本质的核心部分（如地核、问题核心）"}
+    ],
+    "nu": "地球分层从外到内：crust 地壳 → mantle 地幔 → core 地核；外核液态流动产生地磁场是考点。",
+    "senses": [
+      {"gloss": "地核（地球最内层）", "logic": "由「中心、内核」引申到地球的最深中心层", "en": "Seismic waves bend as they pass through the liquid outer core.", "zh": "地震波穿过液态外核时会发生弯折。"},
+      {"gloss": "核心、要点", "logic": "「最中心的部分」抽象为事物的本质、关键", "en": "Reducing cost is at the core of the plan.", "zh": "降低成本是该计划的核心。"}
+    ]
+  },
+  {
+    "w": "plate",
+    "p": "/pleɪt/",
+    "d": "n.（地质）板块；板，片；盘子　vt. 电镀",
+    "levels": ["托福"],
+    "core": "构成地球岩石圈、可缓慢移动的大块刚性板体",
+    "ety": "源自希腊语 platys「宽平的」，经古法语 plate「扁平物、金属片」进入英语，本义「扁平的板/盘」；地质义指扁平的岩石圈「板」块。",
+    "ph": "plat(宽平)+e → 扁平的一大片 → 板块",
+    "tip": "先记「盘子 plate」（宽平的一片）；地球外壳被裂成几块宽平的「大盘子」漂在软流层上缓慢移动，就是 tectonic plate 板块。",
+    "xex": [
+      {"en": "Earthquakes often occur where two tectonic plates grind against each other.", "zh": "地震常发生在两个板块相互挤压摩擦的地方。", "src": "造句"},
+      {"en": "tectonic plate / plate boundary / plates collide", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "slab", "ipa": "/slæb/", "note": "「厚板、大块板体」，描述俯冲板块（subducting slab）时常用，plate 是标准地质术语"}
+    ],
+    "nu": "板块构造 plate tectonics 的核心单位；板块边界有张裂、碰撞、错动三型，对应不同地貌与地震带。",
+    "senses": [
+      {"gloss": "板块（岩石圈大块）", "logic": "由「扁平的大板」引申为岩石圈的刚性大板体", "en": "The Pacific Plate is slowly moving northwest.", "zh": "太平洋板块正缓慢地向西北移动。"},
+      {"gloss": "盘子、板片", "logic": "本义「宽平的一片」", "en": "She stacked the plates in the cupboard.", "zh": "她把盘子叠放进碗柜里。"}
+    ]
+  },
+  {
+    "w": "tectonics",
+    "p": "/tekˈtɑːnɪks/",
+    "d": "n. 构造地质学；构造运动",
+    "levels": ["托福"],
+    "core": "研究地壳大规模构造与板块运动的学科",
+    "ety": "源自希腊语 tektōn「建造者、木匠」→ tektonikos「与建造有关的」；引申指地壳被「构建、搭造」出的大尺度结构。与 architect（建筑师）同一 tekt- 根。",
+    "ph": "tecton(建造)+ics(学科) → 研究（地壳）如何被构造搭建 → 构造地质学",
+    "tip": "tekt＝建造（archi-tect 建筑师）；plate tectonics「板块构造论」就是把地壳看成一套被板块运动「搭建」出来的大工程——现代地质学的统一理论。",
+    "xex": [
+      {"en": "Plate tectonics explains how continents move and where earthquakes and volcanoes form.", "zh": "板块构造论解释了大陆如何移动以及地震和火山在何处形成。", "src": "造句"},
+      {"en": "plate tectonics / theory of tectonics / tectonic movement", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "tectonic", "ipa": "/tekˈtɑːnɪk/", "note": "形容词形式「地壳构造的」，如 tectonic plate、tectonic activity"}
+    ],
+    "nu": "现代地质学的统一框架（20 世纪中叶确立），托福讲地震、火山、造山成因几乎都追溯到板块构造。",
+    "rootfam": [
+      {"root": "tect-/tekt-", "meaning": "建造 (build)", "words": [
+        {"w": "tectonics", "g": "构造地质学"},
+        {"w": "tectonic", "g": "地壳构造的"},
+        {"w": "architect", "g": "建筑师"},
+        {"w": "architecture", "g": "建筑（学）"}
+      ]}
+    ]
+  },
+  {
+    "w": "plateau",
+    "p": "/plæˈtoʊ/",
+    "d": "n. 高原；（上升后的）平稳期，停滞期　vi. 保持平稳",
+    "levels": ["托福"],
+    "core": "顶部平坦、四周陡峭高出周围地面的大片高地",
+    "ety": "源自法语 plateau「平坦地、盘状物」，来自古法语 plat「平的」（同 plate、flat 的「平」义），字面「平的一片高地」。",
+    "ph": "plat(平)+eau → 平坦的一片（高地） → 高原",
+    "tip": "和 plate、flat 共享「平」——高原就是被抬高的「一大块平地」，如青藏高原；引申义「进入平台期 plateau」指涨到一定高度就不再上升。",
+    "xex": [
+      {"en": "The Tibetan Plateau is the highest and largest plateau in the world.", "zh": "青藏高原是世界上最高、最大的高原。", "src": "造句"},
+      {"en": "high plateau / reach a plateau / plateau region", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "tableland", "ipa": "/ˈteɪbllænd/", "note": "「高原、台地」，字面「桌面一样平的地」，与 plateau 同义"}
+    ],
+    "nu": "常与 mountain、valley、canyon 等 landform 一起考；顶平、边陡是与山脉的关键区别。"
+  },
+  {
+    "w": "canyon",
+    "p": "/ˈkænjən/",
+    "d": "n. 峡谷",
+    "levels": ["托福"],
+    "core": "河流长期下切侵蚀出的又深又窄、崖壁陡峭的谷地",
+    "ety": "源自西班牙语 cañón「管子、峡谷」，来自 caña「管、芦苇」（拉丁 canna）——像被水冲出的一条深「管道」。美国科罗拉多大峡谷即得名于此。",
+    "ph": "西班牙语「管子」→ 河流冲切出的又深又窄的谷 → 峡谷",
+    "tip": "想象科罗拉多河花几百万年把高原「切」出一条又深又窄的大沟——Grand Canyon 大峡谷，是河流下切侵蚀的教科书案例。",
+    "xex": [
+      {"en": "The Colorado River carved the Grand Canyon over millions of years of erosion.", "zh": "科罗拉多河历经数百万年的侵蚀切出了大峡谷。", "src": "造句"},
+      {"en": "deep canyon / canyon walls / carve a canyon", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "gorge", "ipa": "/ɡɔːrdʒ/", "note": "「峡谷、隘谷」，同为深窄峡谷，gorge 常更狭窄陡峭，canyon 规模常更大"},
+      {"w": "ravine", "ipa": "/rəˈviːn/", "note": "「沟壑、深谷」，规模比 canyon 小的深窄侵蚀沟"}
+    ],
+    "nu": "河流侵蚀地貌的典型：干旱区岩层坚硬、下切快于拓宽，才形成深窄崖壁，托福常用作侵蚀例证。"
+  },
+  {
+    "w": "delta",
+    "p": "/ˈdeltə/",
+    "d": "n.（河流的）三角洲；希腊字母第四个（Δ）",
+    "levels": ["托福"],
+    "core": "河流入海（湖）口因泥沙沉积形成的扇状／三角形陆地",
+    "ety": "源自希腊字母 delta（Δ，第四个字母），因尼罗河河口冲积平原呈三角形，古希腊人以字母 Δ 的形状命名。",
+    "ph": "希腊字母 Δ 呈三角形 → 河口的三角形淤积陆地 → 三角洲",
+    "tip": "希腊字母 Δ 是个三角形——河流到入海口流速骤减、泥沙 deposition 沉积，堆出一片三角形的新陆地，如尼罗河、长江三角洲。",
+    "xex": [
+      {"en": "As the river slows near the sea, it drops sediment and builds a fertile delta.", "zh": "河流在近海处流速减慢，卸下泥沙，堆积成肥沃的三角洲。", "src": "造句"},
+      {"en": "river delta / delta forms / fertile delta", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "alluvial fan", "ipa": "/əˈluːviəl fæn/", "note": "「冲积扇」，同为泥沙沉积地貌，但形成于河流出山口的陆地，delta 形成于入水口"}
+    ],
+    "nu": "沉积地貌代表：deposition（沉积）大于侵蚀之处才成三角洲，肥沃利于农业，是人河互动考点。"
+  },
+  {
+    "w": "permeable",
+    "p": "/ˈpɜːrmiəbl/",
+    "d": "adj. 可渗透的，能透过（液体、气体）的",
+    "levels": ["托福"],
+    "core": "有孔隙、允许水或气体穿过的",
+    "ety": "拉丁语 permeāre「穿行而过」= per-「穿过」+ meāre「行走、通过」，+ -able「可…的」，字面「可被穿过的」。同根 permeate。",
+    "ph": "per(穿过)+me(走)+able(可…的) → 可被穿过的 → 可渗透的",
+    "tip": "per＝穿过（permanent 一「穿到底」＝永久）；permeable rock「透水岩」让水「走得过去」，才能形成含水层 aquifer；反义 impermeable「不透水的」则隔水。",
+    "xex": [
+      {"en": "Water passes easily through permeable layers of sand and gravel.", "zh": "水能轻易穿过由砂和砾石构成的透水层。", "src": "造句"},
+      {"en": "permeable rock / permeable soil / highly permeable", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "porous", "ipa": "/ˈpɔːrəs/", "note": "「多孔的」，侧重有许多孔隙；permeable 侧重孔隙相连、能让液体真正通过"}
+    ],
+    "nu": "地下水讲座关键：只有 permeable 的透水层能储运地下水成 aquifer，反义 impermeable 层则形成隔水底，成对考。",
+    "rootfam": [
+      {"root": "per-", "meaning": "穿过、彻底 (through)", "words": [
+        {"w": "permeable", "g": "可渗透的"},
+        {"w": "permeate", "g": "渗透、弥漫"},
+        {"w": "permanent", "g": "永久的"},
+        {"w": "penetrate", "g": "穿透"},
+        {"w": "perennial", "g": "常年的"}
+      ]}
+    ]
+  },
+  {
+    "w": "saturate",
+    "p": "/ˈsætʃəreɪt/",
+    "d": "vt. 使湿透，使浸透；使饱和",
+    "levels": ["托福"],
+    "core": "让某物吸水（或某成分）达到再也吸不进的极限",
+    "ety": "源自拉丁语 saturāre「使饱、填满」，来自 satur「饱足的」（与 satisfy「使满足」同根），字面「灌到满为止」。",
+    "ph": "satur(饱足)+ate(动词) → 使达到饱足 → 使浸透、使饱和",
+    "tip": "satur＝饱（satisfy 使满足）；一场大雨把土壤 saturate「灌饱」后，多余的水再也渗不下去，就只能变成地表径流 runoff——水文里的关键转折。",
+    "xex": [
+      {"en": "After days of rain, the soil became saturated and could absorb no more water.", "zh": "连日降雨后，土壤已经饱和，再也无法吸收更多的水。", "src": "造句"},
+      {"en": "saturated soil / fully saturated / saturate the ground", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "soak", "ipa": "/soʊk/", "note": "「浸透、浸泡」，日常词，saturate 更强调达到「饱和、吸不进」的极限状态"}
+    ],
+    "nu": "水文考点：土壤 saturated 饱和后下渗停止、径流剧增，是理解洪涝与地下水补给的关键。",
+    "rootfam": [
+      {"root": "satur-/sat-", "meaning": "饱足 (full/enough)", "words": [
+        {"w": "saturate", "g": "使饱和"},
+        {"w": "saturated", "g": "饱和的"},
+        {"w": "satisfy", "g": "使满足"},
+        {"w": "satiate", "g": "使满足、使饱"}
+      ]}
+    ]
+  },
+  {
+    "w": "geyser",
+    "p": "/ˈɡaɪzər/",
+    "d": "n. 间歇泉（间歇喷出热水与蒸汽的温泉）",
+    "levels": ["托福"],
+    "core": "受地下热量加压、周期性喷出滚水和蒸汽的泉",
+    "ety": "源自冰岛一处著名喷泉的名字 Geysir，来自古诺斯语 geysa「喷涌、猛冲」——由专名变成通用词。",
+    "ph": "源自冰岛喷泉专名 Geysir（喷涌）→ 泛指间歇喷发的热泉 → 间歇泉",
+    "tip": "记「冰岛的 Geysir 大喷泉」；地下水被 geothermal 地热烧沸、憋足压力后猛地喷上天，隔一阵喷一次——美国黄石公园的「老忠实泉」是最有名的 geyser。",
+    "xex": [
+      {"en": "A geyser erupts when underground water is heated by geothermal energy until it bursts to the surface.", "zh": "当地下水被地热加热到喷出地表时，间歇泉便喷发。", "src": "造句"},
+      {"en": "erupting geyser / hot spring and geyser / geyser eruption", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "hot spring", "ipa": "/hɑːt sprɪŋ/", "note": "「温泉」，持续流出热水；geyser 特指周期性猛烈喷发的那一类"}
+    ],
+    "nu": "地热活动的地表标志，托福讲地热/火山区常举 geyser 为例，与 hot spring（温泉）区别在「间歇喷发」。"
+  }
+]

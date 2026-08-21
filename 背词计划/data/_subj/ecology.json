@@ -1,0 +1,744 @@
+[
+  {
+    "w": "niche",
+    "p": "/nɪtʃ/",
+    "d": "n. 生态位；壁龛；小市场",
+    "levels": ["托福"],
+    "core": "一个物种在生态系统中所占据的独特角色与生存位置（吃什么、住哪里、如何互动）",
+    "ety": "源自法语 niche“壁龛、凹陷处”，来自古法语 nicher“筑巢”（拉丁 nidus 巢）；生态学借用其“各就各位的小空间”之意，指物种的专属生存位置。",
+    "ph": "单音节，ch 读 /tʃ/，整词像“尼取”。",
+    "tip": "由“筑巢的凹槽”联想：每个物种都有自己的“巢位”——即生态位；托福听力常与 species 搭配 occupy a niche。",
+    "xex": [
+      {"en": "Each species evolves to fill a specific niche in the ecosystem.", "zh": "每个物种都进化出来填补生态系统中一个特定的生态位。", "src": "造句"},
+      {"en": "occupy / fill / exploit an ecological niche", "zh": "占据/填补/利用某个生态位", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "habitat", "ipa": "/ˈhæbɪtæt/", "note": "指物种生活的物理“栖息地/地点”，而 niche 更强调物种在系统中扮演的“功能角色”"}
+    ],
+    "nu": "n."
+  },
+  {
+    "w": "biome",
+    "p": "/ˈbaɪoʊm/",
+    "d": "n. 生物群系（如森林、草原、沙漠）",
+    "levels": ["托福"],
+    "core": "由气候决定、以特定植被和动物群落为特征的大尺度生态区（如热带雨林、苔原）",
+    "ety": "希腊语 bios“生命”+ -ome（表“整体、集合”的名词后缀，如 genome 基因组）；字面“生命的集合体”，由生态学家 Clements 于 1916 年前后提出。",
+    "ph": "bi·ome，重音在 bi /ˈbaɪ/，读“拜欧姆”。",
+    "tip": "bio（生命）+ -ome（整体，像 genome/biome）；把“同一气候下的一整片生命区”记为 biome，比 ecosystem 尺度更大。",
+    "xex": [
+      {"en": "The tundra biome is characterized by frozen soil and low-growing plants.", "zh": "苔原生物群系的特征是冻土和低矮的植物。", "src": "造句"},
+      {"en": "desert / forest / grassland biome", "zh": "沙漠/森林/草原生物群系", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "ecosystem", "ipa": "/ˈiːkoʊsɪstəm/", "note": "生态系统，尺度可大可小、强调生物与环境的相互作用；biome 特指由气候界定的更大区域类型"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "bio", "meaning": "生命", "words": [
+        {"w": "biology", "g": "生物学"},
+        {"w": "biography", "g": "传记（记录一生）"},
+        {"w": "antibiotic", "g": "抗生素（抗生命的）"},
+        {"w": "biodiversity", "g": "生物多样性"},
+        {"w": "symbiosis", "g": "共生"},
+        {"w": "microbe", "g": "微生物"}
+      ]}
+    ]
+  },
+  {
+    "w": "population",
+    "p": "/ˌpɑːpjuˈleɪʃn/",
+    "d": "n. 种群；人口；（某地）全部居民",
+    "levels": ["托福"],
+    "core": "生态学中指同一物种在某一地区的全部个体总和；也泛指人口",
+    "ety": "拉丁语 populus“人民”→ populare“使住满”，-tion 名词后缀；本义“居住的人群”，生态学引申为“同一物种的个体总群”。",
+    "ph": "po·pu·la·tion，重音在 la /ˈleɪ/。",
+    "tip": "popul（人民，如 popular 受欢迎的）+ -ation；生态学里不是“人口”而是“同种个体的一群”，常说 population growth/decline。",
+    "xex": [
+      {"en": "When food is scarce, the deer population begins to decline.", "zh": "当食物匮乏时，鹿的种群数量开始下降。", "src": "造句"},
+      {"en": "population growth / density / decline", "zh": "种群增长/密度/下降", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "community", "ipa": "/kəˈmjuːnəti/", "note": "群落，指同一地区多个物种种群的总和；population 只指单一物种的个体群"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "popul/publ", "meaning": "人民、大众", "words": [
+        {"w": "popular", "g": "受欢迎的"},
+        {"w": "populous", "g": "人口稠密的"},
+        {"w": "public", "g": "公众的"},
+        {"w": "publish", "g": "出版（公之于众）"},
+        {"w": "republic", "g": "共和国"}
+      ]}
+    ]
+  },
+  {
+    "w": "community",
+    "p": "/kəˈmjuːnəti/",
+    "d": "n.（生物）群落；社区，共同体",
+    "levels": ["托福"],
+    "core": "生态学中指同一区域内相互作用的所有物种种群的集合",
+    "ety": "拉丁语 communis“共有的”（com- 共同 + munus 职责/义务）→ communitas“共同体”；生态学借“共处一地的生物集体”之意。",
+    "ph": "com·mu·ni·ty，重音在 mu /ˈmjuː/。",
+    "tip": "commun（共有，如 common/communicate）+ -ity；把“共居一地、互相往来的各种生物”记为 community（群落）。",
+    "xex": [
+      {"en": "A pond community includes fish, insects, algae, and microorganisms.", "zh": "一个池塘群落包括鱼、昆虫、藻类和微生物。", "src": "造句"},
+      {"en": "plant / animal / biological community", "zh": "植物/动物/生物群落", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "population", "ipa": "/ˌpɑːpjuˈleɪʃn/", "note": "种群仅指单一物种；community 指多物种共同构成的更高层级"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "commun", "meaning": "共有、共同", "words": [
+        {"w": "common", "g": "共同的"},
+        {"w": "communicate", "g": "交流（共享信息）"},
+        {"w": "communal", "g": "公共的"},
+        {"w": "commune", "g": "公社"},
+        {"w": "immune", "g": "免除的（不担共同义务）"}
+      ]}
+    ]
+  },
+  {
+    "w": "symbiosis",
+    "p": "/ˌsɪmbiˈoʊsɪs/",
+    "d": "n. 共生（两种生物长期共同生活的关系）",
+    "levels": ["托福"],
+    "core": "两个不同物种之间长期、密切的相互依存关系（可互利、偏利或寄生）",
+    "ety": "希腊语 syn-“一起”+ bios“生命”+ -osis（状态后缀）；字面“共同生活的状态”，19 世纪由生物学家 de Bary 用于描述异种生物共处。",
+    "ph": "sym·bi·o·sis，重音在 o /ˈoʊ/，读“辛比欧西斯”。",
+    "tip": "sym（=syn 一起，如 symphony 交响）+ bio（生命）+ -sis；两条生命“一起过”＝共生。",
+    "xex": [
+      {"en": "The relationship between clownfish and sea anemones is a classic example of symbiosis.", "zh": "小丑鱼与海葵之间的关系是共生的经典例子。", "src": "造句"},
+      {"en": "live in symbiosis with", "zh": "与……共生", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mutualism", "ipa": "/ˈmjuːtʃuəlɪzəm/", "note": "互利共生，是 symbiosis 的一种（双方都获益）；symbiosis 是上位概念，含互利/偏利/寄生"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "syn/sym", "meaning": "一起、共同", "words": [
+        {"w": "synthesis", "g": "综合、合成"},
+        {"w": "sympathy", "g": "同情（共感）"},
+        {"w": "symphony", "g": "交响乐（声音齐鸣）"},
+        {"w": "synchronize", "g": "使同步"},
+        {"w": "synonym", "g": "同义词"}
+      ]}
+    ]
+  },
+  {
+    "w": "mutualism",
+    "p": "/ˈmjuːtʃuəlɪzəm/",
+    "d": "n. 互利共生（双方都获益的关系）",
+    "levels": ["托福"],
+    "core": "两个物种相互依存、双方都从关系中获益的共生形式",
+    "ety": "拉丁语 mutuus“相互的、交换的”（源于 mutare 改变、交换）+ -al + -ism；字面“相互的主义/状态”，指互惠关系。",
+    "ph": "mu·tu·al·ism，重音在 mu /ˈmjuː/。",
+    "tip": "mutual（相互的）+ -ism；记“互相的关系”＝互利共生，双方 win-win（对比 parasitism 一方受损）。",
+    "xex": [
+      {"en": "Bees and flowering plants engage in mutualism: bees get nectar while flowers get pollinated.", "zh": "蜜蜂与开花植物形成互利共生：蜜蜂获得花蜜，花朵得以授粉。", "src": "造句"},
+      {"en": "a relationship of mutualism", "zh": "一种互利共生的关系", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "symbiosis", "ipa": "/ˌsɪmbiˈoʊsɪs/", "note": "共生总称，包含互利/偏利/寄生；mutualism 专指双赢的那一种"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "mut", "meaning": "改变、交换", "words": [
+        {"w": "mutual", "g": "相互的"},
+        {"w": "mutation", "g": "突变"},
+        {"w": "mutate", "g": "变异"},
+        {"w": "commute", "g": "通勤（交换往返）"},
+        {"w": "transmute", "g": "使变形"}
+      ]}
+    ]
+  },
+  {
+    "w": "parasitism",
+    "p": "/ˈpærəsaɪtɪzəm/",
+    "d": "n. 寄生（一方获益、另一方受损的关系）",
+    "levels": ["托福"],
+    "core": "一种生物（寄生者）以损害另一生物（宿主）为代价获取营养和栖所的关系",
+    "ety": "希腊语 parasitos“食客”（para- 在旁 + sitos 食物），字面“在别人餐桌旁蹭饭的人”；-ism 表状态。生物学引申为“靠宿主为生”。",
+    "ph": "par·a·sit·ism，重音在 par /ˈpær/。",
+    "tip": "para（在旁）+ sit（=食物 sitos）＝在旁边蹭吃的；寄生就是“蹭宿主的营养还害它”。",
+    "xex": [
+      {"en": "Parasitism occurs when a tapeworm lives inside a host and absorbs its nutrients.", "zh": "当绦虫寄居在宿主体内并吸收其营养时，就发生了寄生。", "src": "造句"},
+      {"en": "a form of parasitism", "zh": "一种寄生形式", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "predation", "ipa": "/prɪˈdeɪʃn/", "note": "捕食是直接杀死并吃掉猎物；parasitism 是长期依附、损害但通常不立即杀死宿主"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "para", "meaning": "在旁、旁侧", "words": [
+        {"w": "parasite", "g": "寄生虫"},
+        {"w": "parallel", "g": "平行的"},
+        {"w": "paragraph", "g": "段落"},
+        {"w": "paradox", "g": "悖论（旁于常理）"},
+        {"w": "paraphrase", "g": "释义、改写"}
+      ]}
+    ]
+  },
+  {
+    "w": "predation",
+    "p": "/prɪˈdeɪʃn/",
+    "d": "n. 捕食（一种生物捕杀并吃掉另一种）",
+    "levels": ["托福"],
+    "core": "捕食者捕杀并取食猎物的生态相互作用，是调节种群的关键力量",
+    "ety": "拉丁语 praeda“猎物、战利品”→ praedari“劫掠”，-tion 名词后缀；本义“劫掠”，生态学专指“捕食行为”。",
+    "ph": "pre·da·tion，重音在 da /ˈdeɪ/。",
+    "tip": "与 predator（捕食者）、prey（猎物）同源；predation 是这一“捕食关系”本身，常与 predator-prey 一起考。",
+    "xex": [
+      {"en": "Predation by wolves keeps the deer population in check.", "zh": "狼的捕食使鹿的种群数量保持在受控范围内。", "src": "造句"},
+      {"en": "predation pressure / predator-prey relationship", "zh": "捕食压力/捕食者—猎物关系", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "hunting", "ipa": "/ˈhʌntɪŋ/", "note": "hunting 是通俗“捕猎”行为词；predation 是生态学术语，强调其作为种群调节机制的作用"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "pred/prey", "meaning": "捕食、掠夺", "words": [
+        {"w": "predator", "g": "捕食者"},
+        {"w": "prey", "g": "猎物"},
+        {"w": "predatory", "g": "捕食性的、掠夺的"},
+        {"w": "depredation", "g": "掠夺、破坏"}
+      ]}
+    ]
+  },
+  {
+    "w": "competition",
+    "p": "/ˌkɑːmpəˈtɪʃn/",
+    "d": "n. 竞争（对有限资源的争夺）",
+    "levels": ["托福"],
+    "core": "生物间为争夺食物、空间、光照等有限资源而发生的相互作用",
+    "ety": "拉丁语 competere“共同追求、相争”（com- 一起 + petere 追求、争取），-tion 名词后缀；字面“一起争同一目标”。",
+    "ph": "com·pe·ti·tion，重音在 ti /ˈtɪ/。",
+    "tip": "com（一起）+ pet（追求，如 appetite 食欲）＝一起争；生态里分 interspecific（种间）与 intraspecific（种内）competition。",
+    "xex": [
+      {"en": "Competition for sunlight drives trees in a rainforest to grow taller.", "zh": "对阳光的竞争促使雨林中的树木长得更高。", "src": "造句"},
+      {"en": "competition for resources / food / space", "zh": "对资源/食物/空间的竞争", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "rivalry", "ipa": "/ˈraɪvlri/", "note": "rivalry 侧重个体/群体间的对抗敌意；competition 更中性，泛指对资源的争夺"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "pet/peat", "meaning": "追求、争取", "words": [
+        {"w": "compete", "g": "竞争"},
+        {"w": "competitor", "g": "竞争者"},
+        {"w": "appetite", "g": "食欲（向往追求）"},
+        {"w": "petition", "g": "请愿"},
+        {"w": "repeat", "g": "重复（再追求）"}
+      ]}
+    ]
+  },
+  {
+    "w": "coexist",
+    "p": "/ˌkoʊɪɡˈzɪst/",
+    "d": "vi. 共存，共处",
+    "levels": ["托福"],
+    "core": "两个或多个物种在同一环境中同时生存而不排斥彼此",
+    "ety": "co-“一起”+ exist“存在”（拉丁 existere 出现、存在）；字面“一起存在”。",
+    "ph": "co·ex·ist，重音在 ist /ˈzɪst/。",
+    "tip": "co（一起）+ exist（存在）＝一起活着；生态里指物种通过分化生态位得以 coexist（共存）。",
+    "xex": [
+      {"en": "Two similar species can coexist if they use slightly different resources.", "zh": "两个相似物种若利用略有不同的资源，就能共存。", "src": "造句"},
+      {"en": "coexist with / peacefully coexist", "zh": "与……共存/和平共处", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "cohabit", "ipa": "/koʊˈhæbɪt/", "note": "cohabit 侧重“同居一处”；coexist 侧重“同时存在、并存”，未必共享同一空间"}
+    ],
+    "nu": "vi.",
+    "rootfam": [
+      {"root": "sist/sti", "meaning": "站立、存在", "words": [
+        {"w": "exist", "g": "存在"},
+        {"w": "resist", "g": "抵抗（站着对抗）"},
+        {"w": "insist", "g": "坚持"},
+        {"w": "consist", "g": "组成、在于"},
+        {"w": "persist", "g": "坚持不懈"}
+      ]}
+    ]
+  },
+  {
+    "w": "dominant",
+    "p": "/ˈdɑːmɪnənt/",
+    "d": "a. 占优势的，支配的；（物种）优势的",
+    "levels": ["托福"],
+    "core": "在群落中数量最多、影响力最大、决定群落面貌的（物种）",
+    "ety": "拉丁语 dominari“统治、支配”（dominus 主人），-ant 形容词后缀；字面“做主人的”。",
+    "ph": "dom·i·nant，重音在 dom /ˈdɑː/。",
+    "tip": "domin（主人，如 dominate/dominion）+ -ant；生态里 dominant species 指“说了算”的优势物种，控制资源与环境。",
+    "xex": [
+      {"en": "Oak trees are the dominant species in this temperate forest.", "zh": "橡树是这片温带森林中的优势物种。", "src": "造句"},
+      {"en": "dominant species / dominant role", "zh": "优势物种/主导作用", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "predominant", "ipa": "/prɪˈdɑːmɪnənt/", "note": "predominant 更强调“在数量或程度上明显占多数”；dominant 兼指数量优势与支配控制力"}
+    ],
+    "nu": "a.",
+    "rootfam": [
+      {"root": "domin", "meaning": "主人、统治", "words": [
+        {"w": "dominate", "g": "支配、统治"},
+        {"w": "dominion", "g": "领土、统治权"},
+        {"w": "predominant", "g": "占主导的"},
+        {"w": "domain", "g": "领域"}
+      ]}
+    ]
+  },
+  {
+    "w": "trophic",
+    "p": "/ˈtroʊfɪk/",
+    "d": "a. 营养的；营养级的",
+    "levels": ["托福"],
+    "core": "与食物、营养或能量在食物链中传递的层级有关的",
+    "ety": "希腊语 trophe“营养、食物”→ trophikos“供养的”；生态学用 trophic level（营养级）描述能量在食物链中的层级。",
+    "ph": "tro·phic，重音在 tro /ˈtroʊ/，ph 读 /f/。",
+    "tip": "同根见于 atrophy（萎缩＝失去营养）、hypertrophy（肥大）；trophic level＝“营养级”，托福听力讲能量流动必考。",
+    "xex": [
+      {"en": "Energy is lost as it moves up each trophic level in a food chain.", "zh": "能量在食物链中每上升一个营养级都会有所损失。", "src": "造句"},
+      {"en": "trophic level / trophic cascade", "zh": "营养级/营养级联", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "nutritional", "ipa": "/nuˈtrɪʃənl/", "note": "nutritional 泛指“营养的、与养分相关的”日常用词；trophic 是生态学术语，专指食物链层级/能量传递"}
+    ],
+    "nu": "a.",
+    "rootfam": [
+      {"root": "troph", "meaning": "营养、供养", "words": [
+        {"w": "atrophy", "g": "萎缩（缺营养）"},
+        {"w": "hypertrophy", "g": "肥大（营养过度）"},
+        {"w": "dystrophy", "g": "营养不良"},
+        {"w": "autotroph", "g": "自养生物"}
+      ]}
+    ]
+  },
+  {
+    "w": "decomposition",
+    "p": "/ˌdiːkɑːmpəˈzɪʃn/",
+    "d": "n. 分解，腐烂",
+    "levels": ["托福"],
+    "core": "分解者把死去的有机物分解为简单物质、把养分归还生态系统的过程",
+    "ety": "de-“去除、逆”+ compose“组合”（com- 一起 + ponere 放置）+ -tion；字面“把组合起来的东西拆开”，即分解。",
+    "ph": "de·com·po·si·tion，重音在 si /ˈzɪ/。",
+    "tip": "de（逆）+ compos（组合，如 compose/composition）＝把物质“拆回去”；分解者（decomposer）完成 decomposition。",
+    "xex": [
+      {"en": "Decomposition by fungi and bacteria returns nutrients to the soil.", "zh": "真菌和细菌的分解作用把养分归还给土壤。", "src": "造句"},
+      {"en": "the decomposition of organic matter", "zh": "有机物的分解", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "decay", "ipa": "/dɪˈkeɪ/", "note": "decay 是日常词，指“腐烂、衰败”的现象；decomposition 是术语，强调有机物被分解为养分的生态过程"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "pos/pon", "meaning": "放置", "words": [
+        {"w": "compose", "g": "组成（放在一起）"},
+        {"w": "expose", "g": "暴露（放出来）"},
+        {"w": "deposit", "g": "存放、沉积"},
+        {"w": "impose", "g": "强加"},
+        {"w": "component", "g": "组成部分"}
+      ]}
+    ]
+  },
+  {
+    "w": "nutrient",
+    "p": "/ˈnuːtriənt/",
+    "d": "n. 养分，营养物；a. 有营养的",
+    "levels": ["托福"],
+    "core": "生物生长所需、在生态系统中循环流动的营养物质（如氮、磷）",
+    "ety": "拉丁语 nutrire“喂养、滋养”→ 现在分词 nutrient-；字面“正在滋养的（物质）”。",
+    "ph": "nu·tri·ent，重音在 nu /ˈnuː/。",
+    "tip": "同根 nurse（护理）、nourish（滋养）、nutrition（营养）；生态里 nutrient cycle＝养分循环，是听力高频。",
+    "xex": [
+      {"en": "Decomposers release nutrients that plants can absorb again.", "zh": "分解者释放出养分，植物可以再次吸收。", "src": "造句"},
+      {"en": "nutrient cycle / nutrient-rich soil", "zh": "养分循环/养分丰富的土壤", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "nourishment", "ipa": "/ˈnɜːrɪʃmənt/", "note": "nourishment 泛指“滋养、食物给养”较日常；nutrient 更指具体的、可测量的营养成分（尤在科学语境）"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "nutri/nour", "meaning": "滋养、喂养", "words": [
+        {"w": "nutrition", "g": "营养"},
+        {"w": "nutritious", "g": "有营养的"},
+        {"w": "nourish", "g": "滋养"},
+        {"w": "nurse", "g": "护理、哺育"},
+        {"w": "nursery", "g": "苗圃、育儿室"}
+      ]}
+    ]
+  },
+  {
+    "w": "equilibrium",
+    "p": "/ˌiːkwɪˈlɪbriəm/",
+    "d": "n. 平衡，均衡（状态）",
+    "levels": ["托福"],
+    "core": "生态系统中物种数量与资源相对稳定、各力量彼此抵消的平衡状态",
+    "ety": "拉丁语 aequus“相等的”+ libra“天平”+ -ium；字面“天平两端相等”，即平衡。",
+    "ph": "e·qui·lib·ri·um，重音在 lib /ˈlɪb/。",
+    "tip": "equi（相等，如 equal/equator）+ libr（天平，如 Libra 天秤座）＝天平持平；生态系统达到 equilibrium 即动态平衡。",
+    "xex": [
+      {"en": "An undisturbed ecosystem tends to reach a state of equilibrium.", "zh": "未受干扰的生态系统往往会达到一种平衡状态。", "src": "造句"},
+      {"en": "reach / maintain / disturb equilibrium", "zh": "达到/维持/打破平衡", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "balance", "ipa": "/ˈbæləns/", "note": "balance 是通用词“平衡”；equilibrium 更正式、更学术，强调系统中各作用力相互抵消的稳定态"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "equ", "meaning": "相等、平", "words": [
+        {"w": "equal", "g": "相等的"},
+        {"w": "equator", "g": "赤道（平分地球）"},
+        {"w": "equivalent", "g": "等价的"},
+        {"w": "adequate", "g": "足够的"},
+        {"w": "equation", "g": "方程、等式"}
+      ]}
+    ]
+  },
+  {
+    "w": "succession",
+    "p": "/səkˈseʃn/",
+    "d": "n. 演替；连续，接替",
+    "levels": ["托福"],
+    "core": "生态群落随时间推移、物种组成逐步更替直至相对稳定的过程",
+    "ety": "拉丁语 succedere“接着来、继任”（sub- 在下/接着 + cedere 走、行进）+ -sion；字面“一个接一个地行进”。",
+    "ph": "suc·ces·sion，重音在 ces /ˈse/。",
+    "tip": "同根 succeed（接续/成功）、cede（让步、行进）；生态里 ecological succession＝“群落一茬接一茬地更替”＝演替。",
+    "xex": [
+      {"en": "After the fire, ecological succession gradually restored the forest.", "zh": "火灾之后，生态演替逐步恢复了这片森林。", "src": "造句"},
+      {"en": "ecological / primary / secondary succession", "zh": "生态/初级/次级演替", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "sequence", "ipa": "/ˈsiːkwəns/", "note": "sequence 泛指“先后顺序、序列”；succession 在生态里特指群落随时间的物种更替过程"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "cess/ceed", "meaning": "行走、前进", "words": [
+        {"w": "succeed", "g": "接续、成功"},
+        {"w": "proceed", "g": "继续进行"},
+        {"w": "process", "g": "过程"},
+        {"w": "access", "g": "接近、通道"},
+        {"w": "recession", "g": "衰退（后退）"}
+      ]}
+    ]
+  },
+  {
+    "w": "colonize",
+    "p": "/ˈkɑːlənaɪz/",
+    "d": "vt. 定居于，大批繁殖于；开拓殖民地",
+    "levels": ["托福"],
+    "core": "某物种迁入并在新地区大量繁衍、建立种群",
+    "ety": "拉丁语 colonus“农夫、定居者”（源自 colere 耕种）→ colonia“殖民地”+ -ize 动词后缀；字面“去定居开垦”。",
+    "ph": "col·o·nize，重音在 col /ˈkɑː/。",
+    "tip": "colon（定居者，如 colony 群体）+ -ize；生态里指先锋物种率先 colonize（占领）裸露的新地，是演替第一步。",
+    "xex": [
+      {"en": "Lichens are often the first organisms to colonize bare rock.", "zh": "地衣常是最先在裸岩上定居繁殖的生物。", "src": "造句"},
+      {"en": "colonize new / bare / disturbed habitats", "zh": "在新的/裸露的/受扰的生境定居", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "populate", "ipa": "/ˈpɑːpjuleɪt/", "note": "populate 指“居住于、使布满”较中性；colonize 强调新物种“率先迁入并建立种群”的开拓意味"}
+    ],
+    "nu": "vt.",
+    "rootfam": [
+      {"root": "col/cult", "meaning": "耕种、居住", "words": [
+        {"w": "colony", "g": "群体、殖民地"},
+        {"w": "colonial", "g": "殖民的"},
+        {"w": "cultivate", "g": "耕作、培养"},
+        {"w": "agriculture", "g": "农业"},
+        {"w": "culture", "g": "文化、培养"}
+      ]}
+    ]
+  },
+  {
+    "w": "colony",
+    "p": "/ˈkɑːləni/",
+    "d": "n.（生物）群体，群落；殖民地",
+    "levels": ["托福"],
+    "core": "同种生物聚居在一起形成的群体（如蚁群、珊瑚群、菌落）",
+    "ety": "拉丁语 colonia“定居地、农庄”（源自 colonus 农夫、colere 耕种）；本义“移居开垦之地”，引申为“聚居的群体”。",
+    "ph": "col·o·ny，重音在 col /ˈkɑː/。",
+    "tip": "与 colonize 同源；生物学里 a colony of ants/bacteria＝一“群/落”蚂蚁/细菌，注意不只是“殖民地”。",
+    "xex": [
+      {"en": "A single coral colony can be made up of thousands of tiny polyps.", "zh": "单个珊瑚群体可以由成千上万只微小的珊瑚虫组成。", "src": "造句"},
+      {"en": "a colony of ants / bacteria / seabirds", "zh": "一群蚂蚁/一个菌落/一群海鸟", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "colony", "ipa": "/ˈkɑːləni/", "note": "在生态语境近义于 community（群落），但 colony 尤指同种个体聚居；community 指多物种共处"}
+    ],
+    "nu": "n."
+  },
+  {
+    "w": "vegetation",
+    "p": "/ˌvedʒəˈteɪʃn/",
+    "d": "n. 植被，（某地）植物的总称",
+    "levels": ["托福"],
+    "core": "覆盖某一地区的全部植物，是生态系统的基础与初级生产者",
+    "ety": "拉丁语 vegetare“生长、活跃”（源自 vegetus 有生气的）+ -ation；字面“生长的东西”，指成片的植物。",
+    "ph": "veg·e·ta·tion，重音在 ta /ˈteɪ/。",
+    "tip": "与 vegetable（蔬菜）、vegetate（无所事事地活着）同源；vegetation 是“一整片植物”，不可数，指植被。",
+    "xex": [
+      {"en": "Dense vegetation provides food and shelter for many forest animals.", "zh": "茂密的植被为许多森林动物提供食物和庇护。", "src": "造句"},
+      {"en": "dense / lush / natural vegetation", "zh": "茂密的/繁茂的/天然植被", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "flora", "ipa": "/ˈflɔːrə/", "note": "flora 指某地区的“植物区系/种类总称”（分类学角度）；vegetation 指实际覆盖地表的植物群体（物理覆盖角度）"}
+    ],
+    "nu": "n."
+  },
+  {
+    "w": "graze",
+    "p": "/ɡreɪz/",
+    "d": "vi.（牲畜）吃草，放牧；vt. 放牧",
+    "levels": ["托福"],
+    "core": "食草动物取食地面上生长的青草等植物",
+    "ety": "古英语 grasian“吃草”，源自 græs“草”（同 grass）；字面“吃草”。",
+    "ph": "单音节，读 /ɡreɪz/，像“葛瑞兹”。",
+    "tip": "graze 里就藏着 gras(s)＝草；食草动物（grazer）在草地上 graze（吃草），是能量进入食物链的入口。",
+    "xex": [
+      {"en": "Herds of bison graze on the open grasslands of the prairie.", "zh": "成群的野牛在草原开阔的草地上吃草。", "src": "造句"},
+      {"en": "graze on grass / cattle grazing", "zh": "吃草/牛群放牧", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "forage", "ipa": "/ˈfɔːrɪdʒ/", "note": "forage 指广泛“觅食、四处找食物”（各类食物）；graze 专指低头持续“吃草”这类地表植物"}
+    ],
+    "nu": "vi./vt."
+  },
+  {
+    "w": "thrive",
+    "p": "/θraɪv/",
+    "d": "vi. 茁壮成长，繁荣，兴旺",
+    "levels": ["托福"],
+    "core": "生物在适宜条件下健康生长、种群壮大",
+    "ety": "源自古诺尔斯语 thrifask“茁壮、发达”（反身动词，与 thrift 节俭同源，本义“抓住/获取”）；引申为“兴旺成长”。",
+    "ph": "单音节，th 读 /θ/，读“思瑞夫”。",
+    "tip": "记“th-rive”联想 arrive（到达繁盛）；生物在合适生态位里 thrive（欣欣向荣），对比 dwindle（衰减）。",
+    "xex": [
+      {"en": "Certain plants thrive in nutrient-poor soils where others cannot survive.", "zh": "某些植物能在别的植物无法存活的贫瘠土壤中茁壮生长。", "src": "造句"},
+      {"en": "thrive in / on", "zh": "在……中兴旺；靠……繁盛", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "flourish", "ipa": "/ˈflɜːrɪʃ/", "note": "flourish 与 thrive 近义（繁荣茂盛）；flourish 略偏“达到鼎盛、显眼繁茂”，thrive 更强调“在条件下持续健康发展”"}
+    ],
+    "nu": "vi."
+  },
+  {
+    "w": "proliferate",
+    "p": "/prəˈlɪfəreɪt/",
+    "d": "vi. 激增，迅速繁殖，大量增生",
+    "levels": ["托福"],
+    "core": "生物（尤指数量或个体）快速大量地增殖",
+    "ety": "拉丁语 proles“后代”+ ferre“产生、带来”→ 法语 prolifère“多产的”+ -ate；字面“大量产生后代”。",
+    "ph": "pro·lif·er·ate，重音在 lif /ˈlɪf/。",
+    "tip": "prolif（多产，见 prolific 多产的）+ -ate；藻类在富营养水中会迅速 proliferate（暴发式繁殖）。",
+    "xex": [
+      {"en": "When nutrients are abundant, algae can proliferate and form harmful blooms.", "zh": "当养分充足时，藻类会迅速繁殖并形成有害的水华。", "src": "造句"},
+      {"en": "cells / algae / bacteria proliferate", "zh": "细胞/藻类/细菌激增", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "multiply", "ipa": "/ˈmʌltɪplaɪ/", "note": "multiply 泛指“成倍增加”；proliferate 更强调“失控般迅速大量增殖”，常带负面意味"}
+    ],
+    "nu": "vi.",
+    "rootfam": [
+      {"root": "fer", "meaning": "带来、产生", "words": [
+        {"w": "prolific", "g": "多产的"},
+        {"w": "transfer", "g": "转移（带过去）"},
+        {"w": "fertile", "g": "肥沃的、多产的"},
+        {"w": "confer", "g": "授予、商议"},
+        {"w": "refer", "g": "提及、指"}
+      ]}
+    ]
+  },
+  {
+    "w": "dwindle",
+    "p": "/ˈdwɪndl/",
+    "d": "vi.（逐渐）减少，缩小，衰减",
+    "levels": ["托福"],
+    "core": "（种群、资源等）随时间逐步变少、变小",
+    "ety": "源自古英语 dwinan“衰减、消瘦”+ 表反复的 -le；字面“一点点地缩小”。",
+    "ph": "dwin·dle，重音在 dwin /ˈdwɪn/。",
+    "tip": "拟“dwin-dle”像东西越缩越小的声音；种群 dwindle（日渐减少）常因 predation 或资源 deplete。",
+    "xex": [
+      {"en": "As their habitat shrank, the population began to dwindle rapidly.", "zh": "随着栖息地缩小，该种群数量开始迅速减少。", "src": "造句"},
+      {"en": "dwindle away / dwindling numbers", "zh": "逐渐消失/日益减少的数量", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "diminish", "ipa": "/dɪˈmɪnɪʃ/", "note": "diminish 泛指“（使）减少、削弱”可及物；dwindle 通常不及物，强调“逐步缩减直至很少”的渐变过程"}
+    ],
+    "nu": "vi."
+  },
+  {
+    "w": "deplete",
+    "p": "/dɪˈpliːt/",
+    "d": "vt. 使枯竭，耗尽，大量减少",
+    "levels": ["托福"],
+    "core": "把（资源、养分、种群等）消耗到几乎用尽",
+    "ety": "拉丁语 deplere“倒空”（de- 去掉 + plere 装满，同 fill/plenty）；字面“把装满的东西倒空”。",
+    "ph": "de·plete，重音在 plete /ˈpliːt/。",
+    "tip": "de（去除）+ plete（装满，如 complete/replete）＝把满的清空＝耗尽；过度捕捞会 deplete fish stocks。",
+    "xex": [
+      {"en": "Overfishing has depleted many marine populations to critical levels.", "zh": "过度捕捞已使许多海洋种群锐减到危急水平。", "src": "造句"},
+      {"en": "deplete resources / nutrients / reserves", "zh": "耗尽资源/养分/储备", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "exhaust", "ipa": "/ɪɡˈzɔːst/", "note": "exhaust 强调“彻底用尽、耗光”；deplete 强调“逐步大幅减少到所剩无几”，程度可略轻于 exhaust"}
+    ],
+    "nu": "vt.",
+    "rootfam": [
+      {"root": "plet/plen", "meaning": "装满、充满", "words": [
+        {"w": "complete", "g": "完成（填满）"},
+        {"w": "replete", "g": "充满的"},
+        {"w": "plenty", "g": "大量"},
+        {"w": "supplement", "g": "补充"},
+        {"w": "complement", "g": "补足物"}
+      ]}
+    ]
+  },
+  {
+    "w": "sustain",
+    "p": "/səˈsteɪn/",
+    "d": "vt. 维持，支撑（生命、系统）",
+    "levels": ["托福"],
+    "core": "为生命或系统持续提供所需，使其得以维系存续",
+    "ety": "拉丁语 sustinere“托住、支撑”（sub- 在下 + tenere 握住）；字面“在下面撑住”。",
+    "ph": "sus·tain，重音在 tain /ˈteɪn/。",
+    "tip": "sus(=sub 在下)+ tain(握住，如 retain/contain)＝托住不塌；生态系统 sustain（供养）其中的所有生命。",
+    "xex": [
+      {"en": "A healthy wetland can sustain a wide variety of plant and animal life.", "zh": "健康的湿地能供养种类繁多的动植物。", "src": "造句"},
+      {"en": "sustain life / a population / an ecosystem", "zh": "维持生命/种群/生态系统", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "maintain", "ipa": "/meɪnˈteɪn/", "note": "maintain 侧重“保持某状态不变”；sustain 侧重“持续供给以支撑其存续”，尤用于生命与系统"}
+    ],
+    "nu": "vt.",
+    "rootfam": [
+      {"root": "tain/ten", "meaning": "握住、保持", "words": [
+        {"w": "maintain", "g": "维持"},
+        {"w": "retain", "g": "保留"},
+        {"w": "contain", "g": "包含"},
+        {"w": "obtain", "g": "获得"},
+        {"w": "sustainable", "g": "可持续的"}
+      ]}
+    ]
+  },
+  {
+    "w": "disperse",
+    "p": "/dɪˈspɜːrs/",
+    "d": "v. 散布，扩散；使分散",
+    "levels": ["托福"],
+    "core": "生物个体、种子或花粉从原地向四周分散扩布",
+    "ety": "拉丁语 dispergere“撒开、散布”（dis- 分开 + spargere 撒、播）；字面“四处撒开”。",
+    "ph": "dis·perse，重音在 perse /ˈpɜːrs/。",
+    "tip": "dis（分开）+ spers（撒，如 sparse 稀疏的）＝撒开；种子借风或动物 disperse（传播），扩大分布范围。",
+    "xex": [
+      {"en": "Many plants rely on wind or animals to disperse their seeds.", "zh": "许多植物依靠风或动物来散播种子。", "src": "造句"},
+      {"en": "disperse seeds / spores / pollen", "zh": "散播种子/孢子/花粉", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "scatter", "ipa": "/ˈskætər/", "note": "scatter 指“随意撒得到处都是”较通俗；disperse 更正式，强调“从一处向外扩散分布开”"}
+    ],
+    "nu": "v.",
+    "rootfam": [
+      {"root": "spers/spars", "meaning": "撒、散", "words": [
+        {"w": "sparse", "g": "稀疏的"},
+        {"w": "dispersal", "g": "散布、扩散"},
+        {"w": "intersperse", "g": "点缀、散置"},
+        {"w": "aspersion", "g": "诽谤（泼洒）"}
+      ]}
+    ]
+  },
+  {
+    "w": "extinction",
+    "p": "/ɪkˈstɪŋkʃn/",
+    "d": "n. 灭绝，绝种",
+    "levels": ["托福"],
+    "core": "一个物种的全部个体死亡、从地球上彻底消失",
+    "ety": "拉丁语 exstinguere“熄灭、消灭”（ex- 出/尽 + stinguere 熄灭）+ -tion；字面“被彻底熄灭”，如火焰被扑灭。",
+    "ph": "ex·tinc·tion，重音在 tinc /ˈtɪŋk/。",
+    "tip": "与 extinguish（扑灭）、extinct（灭绝的）同源；物种像火被“熄灭”＝extinction，常因 habitat loss 或 invasive species。",
+    "xex": [
+      {"en": "The loss of habitat pushed many species toward extinction.", "zh": "栖息地的丧失把许多物种推向灭绝。", "src": "造句"},
+      {"en": "mass extinction / drive to extinction / on the brink of extinction", "zh": "大灭绝/使走向灭绝/濒临灭绝", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "eradication", "ipa": "/ɪˌrædɪˈkeɪʃn/", "note": "eradication 指“（人为）根除、彻底清除”多为主动行为；extinction 指物种“自然或被动地彻底消失”"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "stingu/sting", "meaning": "熄灭、刺", "words": [
+        {"w": "extinguish", "g": "扑灭"},
+        {"w": "extinct", "g": "灭绝的"},
+        {"w": "distinguish", "g": "区分"},
+        {"w": "distinct", "g": "不同的、清晰的"}
+      ]}
+    ]
+  },
+  {
+    "w": "abundance",
+    "p": "/əˈbʌndəns/",
+    "d": "n. 丰富，大量；（物种）丰度",
+    "levels": ["托福"],
+    "core": "生态学中指某物种在群落中的个体数量多少（丰度）；也泛指充裕",
+    "ety": "拉丁语 abundare“泛滥、充裕”（ab- 离开 + unda 波浪）+ -ance；字面“波浪般溢出”，即极多。",
+    "ph": "a·bun·dance，重音在 bun /ˈbʌn/。",
+    "tip": "藏着 unda（波浪，如 undulate 波动、inundate 淹没）；东西多得像浪一样溢出＝abundance；生态里指“物种丰度”。",
+    "xex": [
+      {"en": "The abundance of a predator often depends on the abundance of its prey.", "zh": "捕食者的丰度往往取决于其猎物的丰度。", "src": "造句"},
+      {"en": "in abundance / species abundance", "zh": "大量地/物种丰度", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "plenty", "ipa": "/ˈplenti/", "note": "plenty 是日常词“充足”；abundance 更正式，且在生态语境专指可量化的“种群数量/丰度”"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "und", "meaning": "波浪、涌流", "words": [
+        {"w": "abundant", "g": "丰富的"},
+        {"w": "undulate", "g": "起伏、波动"},
+        {"w": "inundate", "g": "淹没"},
+        {"w": "redundant", "g": "多余的"}
+      ]}
+    ]
+  },
+  {
+    "w": "interdependence",
+    "p": "/ˌɪntərdɪˈpendəns/",
+    "d": "n. 相互依存，互相依赖",
+    "levels": ["托福"],
+    "core": "生态系统中各物种彼此依赖、一环变动影响全局的关系",
+    "ety": "inter-“相互、之间”+ dependence“依赖”（拉丁 dependere 悬挂于其上：de- 向下 + pendere 悬挂）；字面“彼此挂靠、互相依存”。",
+    "ph": "in·ter·de·pen·dence，重音在 pen /ˈpen/。",
+    "tip": "inter（相互）+ depend（依赖）+ -ence；食物网体现物种间的 interdependence——牵一发而动全身。",
+    "xex": [
+      {"en": "A food web illustrates the interdependence of species in an ecosystem.", "zh": "食物网展示了生态系统中物种之间的相互依存。", "src": "造句"},
+      {"en": "the interdependence of species", "zh": "物种间的相互依存", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "interconnection", "ipa": "/ˌɪntərkəˈnekʃn/", "note": "interconnection 泛指“相互连接”；interdependence 更强调“彼此依赖、缺一不可”的功能关系"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "pend/pens", "meaning": "悬挂、称量", "words": [
+        {"w": "depend", "g": "依赖（挂靠）"},
+        {"w": "suspend", "g": "悬挂、暂停"},
+        {"w": "pending", "g": "待决的"},
+        {"w": "independent", "g": "独立的"},
+        {"w": "appendix", "g": "附录（挂上的）"}
+      ]}
+    ]
+  },
+  {
+    "w": "algae",
+    "p": "/ˈældʒiː/",
+    "d": "n. 藻类，水藻（alga 的复数）",
+    "levels": ["托福"],
+    "core": "水生、能进行光合作用的简单生物，是水生食物链的初级生产者",
+    "ety": "拉丁语 alga“海藻”的复数 algae；词源本义即“海草、海藻”，具体更早来源不明。",
+    "ph": "al·gae，重音在 al /ˈæl/，读“奥吉”，g 读 /dʒ/。",
+    "tip": "记住它是复数（单数 alga /ˈælɡə/）；藻类在阳光和养分下会大量繁殖（algal bloom 水华），是水域食物链起点。",
+    "xex": [
+      {"en": "Algae form the base of most aquatic food chains through photosynthesis.", "zh": "藻类通过光合作用构成大多数水生食物链的基础。", "src": "造句"},
+      {"en": "algal bloom / blue-green algae", "zh": "水华（藻华）/蓝绿藻", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "seaweed", "ipa": "/ˈsiːwiːd/", "note": "seaweed 是通俗词，专指海洋中大型的藻（如海带）；algae 是学术总称，含从单细胞到多细胞的各类藻"}
+    ],
+    "nu": "n."
+  }
+]

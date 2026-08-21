@@ -1,0 +1,720 @@
+[
+  {
+    "w": "cell",
+    "p": "/sel/",
+    "d": "n. 细胞；基层单位；单人牢房；电池",
+    "levels": ["托福"],
+    "core": "生命结构与功能的基本单位——一个被膜包裹、能独立完成代谢的最小活单元。",
+    "ety": "源自拉丁语 cella「小房间、储藏室」。1665 年 Robert Hooke 用显微镜看软木切片，觉得那些小格子像修道院僧侣的单人小室（cell），遂借此词命名。",
+    "ph": "cell 读 /sel/，ce 里的 c 在 e 前发 /s/，和 cent、face 同规律。",
+    "tip": "把细胞想成一间「小房间」（cella）：有墙（膜）、有主人（核）、能自给自足。",
+    "xex": [
+      {"en": "Every living organism, from bacteria to whales, is built from one or more cells.", "zh": "从细菌到鲸鱼，每一个活的生物体都由一个或多个细胞构成。", "src": "造句"},
+      {"en": "a nerve cell / red blood cell / cell membrane / cell division", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "unit", "ipa": "/ˈjuːnɪt/", "note": "泛指「单位」，无「活的最小单元」含义，不能替换生物学 cell"}
+    ],
+    "nu": "「一间小房间」——生命把自己关进最小的一间屋子里独立运转。",
+    "senses": [
+      {"s": "细胞", "e": "A single cell can carry out all the chemistry of life."},
+      {"s": "单人牢房", "e": "The prisoner spent ten years in a small cell."},
+      {"s": "电池（电化学单元）", "e": "A solar cell converts sunlight into electricity."}
+    ]
+  },
+  {
+    "w": "organism",
+    "p": "/ˈɔːrɡənɪzəm/",
+    "d": "n. 生物体，有机体；有机组织",
+    "levels": ["托福"],
+    "core": "任何能进行代谢、生长、繁殖的独立生命个体，无论单细胞还是多细胞。",
+    "ety": "源自希腊语 organon「工具、器官」+ -ism。词根 organ 本义是「干活的工具」，引申为「器官」；organism 即「由许多器官协作运转的整体」。",
+    "ph": "organism 重音在首音节 OR-，词尾 -ism 读 /ɪzəm/，和 mechanism、tourism 同尾。",
+    "tip": "org（器官/工具）+ anism → 一台「由许多零件协同工作的活机器」。",
+    "xex": [
+      {"en": "A single-celled organism such as an amoeba performs all life functions within one cell.", "zh": "像变形虫这样的单细胞生物，在一个细胞内完成所有生命活动。", "src": "造句"},
+      {"en": "living organism / microscopic organism / marine organism", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "creature", "ipa": "/ˈkriːtʃər/", "note": "偏日常口语，多指动物；organism 更中性、涵盖微生物与植物，学术色彩强"},
+      {"w": "being", "ipa": "/ˈbiːɪŋ/", "note": "强调「存在的生命」，抽象；organism 强调生理结构与功能"}
+    ],
+    "nu": "org（器官）串起 organ、organize、organic——都是「有条理地协作」。",
+    "rootfam": [
+      {"root": "organ", "meaning": "器官；工具", "words": [
+        {"w": "organ", "g": "器官；管风琴"},
+        {"w": "organic", "g": "有机的"},
+        {"w": "organize", "g": "组织，使有条理"},
+        {"w": "organization", "g": "组织，机构"},
+        {"w": "organelle", "g": "细胞器"},
+        {"w": "organism", "g": "生物体"}
+      ]}
+    ]
+  },
+  {
+    "w": "metabolism",
+    "p": "/məˈtæbəlɪzəm/",
+    "d": "n. 新陈代谢",
+    "levels": ["托福"],
+    "core": "生物体内全部化学反应的总和——既包括分解物质放能，也包括合成物质储能。",
+    "ety": "源自希腊语 metabolē「变化、转变」（meta-「越过、变化」+ ballein「投掷」），字面「把物质投掷转变」，即物质在体内的转化。",
+    "ph": "重音在第二音节 -TAB-：me-TA-bo-lism；形容词 metabolic 重音后移到 -BOL-。",
+    "tip": "meta（变化）+ bol（投掷）→ 体内物质不停「被抛来抛去、转来转去」，就是代谢。",
+    "xex": [
+      {"en": "A hummingbird has such a fast metabolism that it must eat almost constantly to survive.", "zh": "蜂鸟的新陈代谢极快，必须几乎不停进食才能存活。", "src": "造句"},
+      {"en": "basal metabolism / speed up one's metabolism / metabolic rate", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "metabolic", "ipa": "/ˌmetəˈbɑːlɪk/", "note": "形容词形态，托福词表收录；如 metabolic rate 代谢率"}
+    ],
+    "nu": "meta（变）+ bol（抛）——身体这台机器把食物「抛」进反应炉里烧成能量。",
+    "rootfam": [
+      {"root": "meta-", "meaning": "变化；超越；之后", "words": [
+        {"w": "metabolism", "g": "新陈代谢"},
+        {"w": "metamorphosis", "g": "变态，蜕变"},
+        {"w": "metaphor", "g": "隐喻"},
+        {"w": "method", "g": "方法（沿路而行）"},
+        {"w": "metastasis", "g": "（癌）转移"}
+      ]}
+    ]
+  },
+  {
+    "w": "enzyme",
+    "p": "/ˈenzaɪm/",
+    "d": "n. 酶，酵素",
+    "levels": ["托福"],
+    "core": "由蛋白质构成的生物催化剂，能大幅加快特定化学反应，自身在反应后不被消耗。",
+    "ety": "源自希腊语 en-「在……之内」+ zymē「酵母、发酵物」。1878 年造词，字面「在酵母里（起作用的东西）」，因最早研究的是发酵中的催化物质。",
+    "ph": "enzyme 里 zy 读 /zaɪ/，重音在首音节 EN-；同源 enzymatic 重音移到 -ZYM-。",
+    "tip": "en（在内）+ zyme（酵母）→ 藏「在」发酵里的那只看不见的手，专门加速反应。",
+    "xex": [
+      {"en": "The enzyme in saliva begins to break down starch the moment food enters the mouth.", "zh": "唾液中的酶在食物一入口时就开始分解淀粉。", "src": "造句"},
+      {"en": "digestive enzyme / an enzyme that breaks down / enzyme activity", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "catalyst", "ipa": "/ˈkætəlɪst/", "note": "泛指任何催化剂（含无机）；enzyme 特指生物体内的蛋白质催化剂"}
+    ],
+    "nu": "zyme = 酵母/发酵，enzyme「发酵里的推手」，与 zymurgy（酿造学）同源。"
+  },
+  {
+    "w": "protein",
+    "p": "/ˈproʊtiːn/",
+    "d": "n. 蛋白质",
+    "levels": ["托福"],
+    "core": "由氨基酸链折叠而成的大分子，承担构建组织、催化反应（酶）、运输、免疫等几乎一切生命功能。",
+    "ety": "1838 年由希腊语 prōteios「首要的、第一位的」造出（源头 prōtos「第一」），意在强调蛋白质是生命物质中「最首要」的成分。",
+    "ph": "protein 读 /ˈproʊ-tiːn/，ei 在此读 /iː/（例外，非 /eɪ/）；重音在首音节。",
+    "tip": "prot（第一）→ 生命里「排第一」的营养大分子。想到 prototype（第一个原型）就记住 prot=首。",
+    "xex": [
+      {"en": "Proteins fold into precise three-dimensional shapes that determine what they can do.", "zh": "蛋白质折叠成精确的三维形状，其形状决定了它能做什么。", "src": "造句"},
+      {"en": "a source of protein / protein synthesis / plant protein", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "polypeptide", "ipa": "/ˌpɑːliˈpeptaɪd/", "note": "专业术语，指氨基酸链本身；protein 强调折叠成型、有功能的成品"}
+    ],
+    "nu": "prot（第一）——protein、prototype、protagonist、protocol 都排在「最前」。",
+    "rootfam": [
+      {"root": "prot-", "meaning": "第一；最先", "words": [
+        {"w": "protein", "g": "蛋白质"},
+        {"w": "prototype", "g": "原型（第一个）"},
+        {"w": "protagonist", "g": "主角（第一号人物）"},
+        {"w": "protocol", "g": "协议；礼仪"},
+        {"w": "proton", "g": "质子"}
+      ]}
+    ]
+  },
+  {
+    "w": "membrane",
+    "p": "/ˈmembreɪn/",
+    "d": "n. 膜，薄膜；细胞膜",
+    "levels": ["托福"],
+    "core": "包裹细胞或器官、有选择性地让物质进出的薄层结构。",
+    "ety": "源自拉丁语 membrana「覆盖躯体的皮层、羊皮纸」，来自 membrum「肢体、身体部位」——本义是「裹在身体部位外的薄皮」。",
+    "ph": "membrane 重音在首音节 MEM-，词尾 -brane 读 /breɪn/（拼写像 brain 但意义无关）。",
+    "tip": "membr(um)（身体部位）+ ane → 裹在部位外的「一层皮」，即膜。词尾 -brane 谐音「布润」记「一层薄布」。",
+    "xex": [
+      {"en": "The cell membrane controls which molecules are allowed to pass in and out.", "zh": "细胞膜控制哪些分子被允许进出。", "src": "造句"},
+      {"en": "cell membrane / a permeable membrane / mucous membrane", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "film", "ipa": "/fɪlm/", "note": "泛指任何薄层（含非生物）；membrane 特指生物性、有选择透过功能的膜"}
+    ],
+    "nu": "membr = 肢体/身体，与 member（成员，本义身体部位）同源——都从「身体部位」引申。"
+  },
+  {
+    "w": "tissue",
+    "p": "/ˈtɪʃuː/",
+    "d": "n. （生物）组织；薄纸，纸巾",
+    "levels": ["托福"],
+    "core": "一群结构相似、功能相同的细胞聚在一起形成的层级——介于细胞与器官之间。",
+    "ety": "源自古法语 tissu「编织物」，来自拉丁语 texere「编织」。生物学义借「织物」比喻细胞像纱线「编织」成一片。",
+    "ph": "tissue 读 /ˈtɪʃuː/，ss 在此读 /ʃ/，重音在首音节。",
+    "tip": "text（编织）→ tissue 是细胞「织」成的一块布。和 textile（纺织品）、texture（质地）同根。",
+    "xex": [
+      {"en": "Muscle tissue is made of long cells that contract to produce movement.", "zh": "肌肉组织由能收缩以产生运动的长细胞构成。", "src": "造句"},
+      {"en": "connective tissue / muscle tissue / soft tissue", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "matter", "ipa": "/ˈmætər/", "note": "泛指「物质」；tissue 特指由细胞编织成的生物组织层"}
+    ],
+    "nu": "text = 编织：tissue、textile、texture、context——都是「织在一起」。",
+    "rootfam": [
+      {"root": "text", "meaning": "编织", "words": [
+        {"w": "tissue", "g": "组织（细胞织成）"},
+        {"w": "textile", "g": "纺织品"},
+        {"w": "texture", "g": "质地，纹理"},
+        {"w": "text", "g": "文本（词语编织）"},
+        {"w": "context", "g": "语境（一起编织）"}
+      ]}
+    ],
+    "senses": [
+      {"s": "生物组织", "e": "The scar formed as new tissue grew over the wound."},
+      {"s": "薄纸，纸巾", "e": "She wrapped the gift in soft tissue paper."}
+    ]
+  },
+  {
+    "w": "reproduce",
+    "p": "/ˌriːprəˈduːs/",
+    "d": "v. 繁殖，生育；复制，再现",
+    "levels": ["托福"],
+    "core": "生物产生后代以延续物种，或把某物精确地再造一遍。",
+    "ety": "re-「再、又」+ produce「生产」（拉丁 producere: pro-「向前」+ ducere「引导」）。字面「再生产一次」，故有「繁殖」与「复制」双义。",
+    "ph": "reproduce 重音在末音节 -DUCE：re-pro-DUCE；名词 reproduction 重音移到 -DUC-。",
+    "tip": "re（再）+ produce（生产）→ 「再生产」出一份：生物学上是生小的，物理上是复印一份。",
+    "xex": [
+      {"en": "Many bacteria reproduce by simply splitting in two, doubling their numbers in minutes.", "zh": "许多细菌仅靠一分为二来繁殖，几分钟内数量就翻倍。", "src": "造句"},
+      {"en": "reproduce asexually / reproduce rapidly / reproduce an image", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "breed", "ipa": "/briːd/", "note": "偏指动物交配繁育，口语常用；reproduce 更中性、通用于微生物到人类"},
+      {"w": "propagate", "ipa": "/ˈprɑːpəɡeɪt/", "note": "多指植物繁殖或思想传播；reproduce 更普适"}
+    ],
+    "nu": "duc/duce = 引导：reproduce、produce、conduct、reduce——都在「往某方向引」。",
+    "rootfam": [
+      {"root": "duc/duce", "meaning": "引导，带领", "words": [
+        {"w": "reproduce", "g": "繁殖；复制"},
+        {"w": "produce", "g": "生产（向前引）"},
+        {"w": "conduct", "g": "引导，进行"},
+        {"w": "reduce", "g": "减少（引回）"},
+        {"w": "introduce", "g": "介绍（引入）"},
+        {"w": "educate", "g": "教育（引出）"}
+      ]}
+    ],
+    "senses": [
+      {"s": "繁殖，生育", "e": "Salmon swim upstream to reproduce in the rivers where they hatched."},
+      {"s": "复制，再现", "e": "The printer could not accurately reproduce the original colors."}
+    ]
+  },
+  {
+    "w": "respire",
+    "p": "/rɪˈspaɪər/",
+    "d": "v. 呼吸；（细胞）进行呼吸作用",
+    "levels": ["托福"],
+    "core": "吸入氧、排出二氧化碳；在细胞层面指氧化分解养分以释放能量。",
+    "ety": "拉丁语 re-「反复」+ spirare「呼吸」。字面「一次次地呼气吸气」。同根 spirit 本义「呼吸/气息」，被视为生命之气。",
+    "ph": "respire 重音在末：re-SPIRE /spaɪər/；名词 respiration 重音在 -RA-。",
+    "tip": "spir = 呼吸：respire（反复呼吸）、inspire（吸气→激励）、expire（呼尽→到期/死）。",
+    "xex": [
+      {"en": "Even plants respire at night, taking in oxygen and releasing carbon dioxide.", "zh": "连植物在夜间也会呼吸，吸入氧气并释放二氧化碳。", "src": "造句"},
+      {"en": "cells respire / respiration rate / aerobic respiration", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "breathe", "ipa": "/briːð/", "note": "日常「呼吸」用词；respire 更学术，且可指细胞层面的呼吸作用"}
+    ],
+    "nu": "spir（气息）——respire、inspire、conspire、expire、spirit，全靠「一口气」串起。",
+    "rootfam": [
+      {"root": "spir", "meaning": "呼吸；气息", "words": [
+        {"w": "respire", "g": "呼吸"},
+        {"w": "inspire", "g": "激励（吸气入内）"},
+        {"w": "expire", "g": "呼尽；到期"},
+        {"w": "conspire", "g": "密谋（同呼一口气）"},
+        {"w": "spirit", "g": "精神，气息"},
+        {"w": "aspire", "g": "渴望（向……吸气）"}
+      ]}
+    ]
+  },
+  {
+    "w": "nucleus",
+    "p": "/ˈnuːkliəs/",
+    "d": "n. 细胞核；原子核；核心",
+    "levels": ["托福"],
+    "core": "细胞中储存遗传物质、指挥全细胞活动的控制中枢；泛指任何事物的核心。",
+    "ety": "源自拉丁语 nucleus「果仁、小核」，来自 nux「坚果」。字面「坚果里的仁」，比喻藏在中心、最要紧的那一小块。",
+    "ph": "nucleus 读 /ˈnuː-kli-əs/，复数 nuclei 读 /ˈnuː-kli-aɪ/（-us 变 -i）。",
+    "tip": "nuc = 坚果/核仁 → 细胞的「果仁」，藏在正中间最关键。复数记 nuclei（像多颗核仁）。",
+    "xex": [
+      {"en": "The nucleus houses the cell's DNA and directs the making of proteins.", "zh": "细胞核容纳着细胞的 DNA，并指挥蛋白质的合成。", "src": "造句"},
+      {"en": "the cell nucleus / the nucleus of an atom / form the nucleus of", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "core", "ipa": "/kɔːr/", "note": "泛指「核心」；nucleus 在生物/物理中是专有结构名，不可互换"},
+      {"w": "center", "ipa": "/ˈsentər/", "note": "指几何/位置中心；nucleus 强调「指挥功能」的核"}
+    ],
+    "nu": "nucleus = 果仁：藏在坚果最中心的、最珍贵的那一点。",
+    "senses": [
+      {"s": "细胞核", "e": "Under the microscope, the dark round nucleus was clearly visible."},
+      {"s": "原子核", "e": "Protons and neutrons are packed into the atomic nucleus."},
+      {"s": "核心", "e": "These three players form the nucleus of the team."}
+    ]
+  },
+  {
+    "w": "bacteria",
+    "p": "/bækˈtɪriə/",
+    "d": "n. 细菌（bacterium 的复数）",
+    "levels": ["托福"],
+    "core": "无细胞核的单细胞微生物，遍布环境，有的致病、有的有益（如分解、发酵、固氮）。",
+    "ety": "源自希腊语 baktērion「小棍、小杖」（baktēria「手杖」的指小形），因最早观察到的细菌呈棒状。",
+    "ph": "bacteria 重音在 -TI-：bac-TI-ri-a；注意它是复数，单数 bacterium。",
+    "tip": "bacter = 小棍：显微镜下最早看到的细菌像一根根「小棍子」。记住 bacteria 本身是复数。",
+    "xex": [
+      {"en": "Not all bacteria are harmful; many help us digest food or break down dead matter.", "zh": "并非所有细菌都有害；许多帮助我们消化食物或分解死物。", "src": "造句"},
+      {"en": "harmful bacteria / bacteria break down / kill bacteria", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "microbe", "ipa": "/ˈmaɪkroʊb/", "note": "泛指一切微生物（含病毒、真菌）；bacteria 特指无核的细菌一类"},
+      {"w": "germ", "ipa": "/dʒɜːrm/", "note": "口语「病菌」，含贬义指致病微生物；bacteria 中性、含无害与有益者"}
+    ],
+    "nu": "bacteri = 小棍——bacteria、bacterium、bactericide（杀菌剂）同源于「棒状」。"
+  },
+  {
+    "w": "virus",
+    "p": "/ˈvaɪrəs/",
+    "d": "n. 病毒；病毒性疾病",
+    "levels": ["托福"],
+    "core": "介于生命与非生命之间的微粒，必须侵入宿主细胞、借其机器复制才能繁殖。",
+    "ety": "直接借自拉丁语 virus「毒液、黏液、毒素」。19 世纪末用它命名比细菌更小、能致病的微粒。",
+    "ph": "virus 读 /ˈvaɪ-rəs/，vi 读 /vaɪ/（同 vital、virtual 的长 i）；复数 viruses。",
+    "tip": "virus = 拉丁「毒液」→ 一小滴「毒」，必须钻进别人细胞才能作恶、复制。",
+    "xex": [
+      {"en": "A virus cannot reproduce on its own; it must hijack a living cell's machinery.", "zh": "病毒无法自行繁殖，它必须劫持活细胞的机制。", "src": "造句"},
+      {"en": "a flu virus / spread the virus / a computer virus", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "pathogen", "ipa": "/ˈpæθədʒən/", "note": "泛指一切致病原（细菌/病毒/真菌）；virus 特指需宿主复制的那类微粒"}
+    ],
+    "nu": "virus = 毒液：从拉丁「毒」延伸到生物病毒，再到「电脑病毒」这一比喻。",
+    "senses": [
+      {"s": "病毒（生物）", "e": "The measles virus spreads through tiny droplets in the air."},
+      {"s": "计算机病毒", "e": "The virus deleted files across the entire network."}
+    ]
+  },
+  {
+    "w": "molecule",
+    "p": "/ˈmɑːlɪkjuːl/",
+    "d": "n. 分子",
+    "levels": ["托福"],
+    "core": "由两个或更多原子通过化学键结合、能独立存在并保持物质化学性质的最小单位。",
+    "ety": "源自拉丁语 moles「团块、质量」+ 指小后缀 -cula，字面「一小团（物质）」，即「微小的物质团块」。",
+    "ph": "molecule 重音在首音节 MOL-，词尾 -cule 读 /kjuːl/（同 capsule 的 -sule 韵）。",
+    "tip": "mole（团块）+ cule（小）→ 「一小团」原子抱在一起，就是分子。",
+    "xex": [
+      {"en": "A water molecule is made of two hydrogen atoms bonded to one oxygen atom.", "zh": "一个水分子由两个氢原子与一个氧原子结合而成。", "src": "造句"},
+      {"en": "a water molecule / oxygen molecule / molecules bond together", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "particle", "ipa": "/ˈpɑːrtɪkl/", "note": "泛指任何微粒（含原子、亚原子）；molecule 特指原子成键构成的单位"}
+    ],
+    "nu": "-cule/-cle = 小：molecule、particle、capsule、animalcule——都在讲「微小」。"
+  },
+  {
+    "w": "secrete",
+    "p": "/sɪˈkriːt/",
+    "d": "vt. 分泌；藏匿",
+    "levels": ["托福"],
+    "core": "腺体或细胞产生并释放某种物质（如激素、汗、酶）；也指把东西藏起来。",
+    "ety": "源自拉丁语 secernere「分开、筛出」（se-「分离」+ cernere「筛、辨别」）。「把有用物质从血液里筛分出来」即分泌；「分开藏起」即藏匿。",
+    "ph": "secrete 重音在末音节 -CRETE /kriːt/；名词 secretion 读 /sɪˈkriːʃn/。",
+    "tip": "se（分开）+ crete（筛/辨）→ 「筛分」出来释放=分泌；分开藏=藏匿。与 secret（分开保守=秘密）同源。",
+    "xex": [
+      {"en": "Certain glands in the skin secrete oil that keeps it from drying out.", "zh": "皮肤中某些腺体分泌油脂，防止皮肤干裂。", "src": "造句"},
+      {"en": "glands secrete hormones / secrete a fluid / secrete saliva", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "excrete", "ipa": "/ɪkˈskriːt/", "note": "指排出废物（如尿、汗中的废料）；secrete 指分泌仍有功能的有用物质，方向相反"},
+      {"w": "release", "ipa": "/rɪˈliːs/", "note": "泛指「释放」；secrete 特指腺体/细胞的生理分泌"}
+    ],
+    "nu": "cern/cret = 筛、辨：secrete、secret、discern、concern——都在「分辨、筛开」。",
+    "rootfam": [
+      {"root": "cern/cret", "meaning": "筛分，辨别", "words": [
+        {"w": "secrete", "g": "分泌；藏匿"},
+        {"w": "secret", "g": "秘密（分开藏的）"},
+        {"w": "discern", "g": "辨别"},
+        {"w": "concern", "g": "关心，涉及"},
+        {"w": "discreet", "g": "谨慎的"}
+      ]}
+    ],
+    "senses": [
+      {"s": "分泌", "e": "The pancreas secretes enzymes that help digest food."},
+      {"s": "藏匿", "e": "He secreted the documents behind a loose brick in the wall."}
+    ]
+  },
+  {
+    "w": "digest",
+    "p": "/daɪˈdʒest/",
+    "d": "v. 消化；领悟。n. /ˈdaɪdʒest/ 摘要，文摘",
+    "levels": ["托福"],
+    "core": "把食物分解成可吸收的小分子；引申为把信息「消化吸收」、理解透彻。",
+    "ety": "源自拉丁语 digerere「分开、分配、溶解」（di-「分开」+ gerere「搬运、处理」）。字面「把（食物）分开处理掉」。",
+    "ph": "动词 digest 重音在末 di-GEST /dʒest/；名词重音前移 DI-gest，词性靠重音区分。",
+    "tip": "di（分开）+ gest（搬运/处理）→ 把食物「分开搬运处理」=消化；把信息处理透=领悟。",
+    "xex": [
+      {"en": "It takes several hours for the stomach to digest a heavy meal.", "zh": "胃需要几个小时才能消化一顿大餐。", "src": "造句"},
+      {"en": "digest food / hard to digest / a monthly digest", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "absorb", "ipa": "/əbˈsɔːrb/", "note": "指「吸收」进体内，是消化后的下一步；digest 侧重先「分解」"},
+      {"w": "assimilate", "ipa": "/əˈsɪməleɪt/", "note": "指吸收同化（养分或知识）；digest 更常用、口语化"}
+    ],
+    "nu": "gest = 搬运/处理：digest、gesture、suggest、congest——都涉及「搬、带」。",
+    "senses": [
+      {"s": "消化（食物）", "e": "Cows have a special stomach to digest tough grass."},
+      {"s": "领悟，消化（信息）", "e": "She needed time to digest the shocking news."},
+      {"s": "摘要，文摘（名词）", "e": "The magazine publishes a weekly digest of world events."}
+    ]
+  },
+  {
+    "w": "absorb",
+    "p": "/əbˈsɔːrb/",
+    "d": "vt. 吸收；理解，掌握；使全神贯注",
+    "levels": ["托福"],
+    "core": "把液体、能量、养分或信息吸纳进内部；也指使人注意力被完全占据。",
+    "ety": "源自拉丁语 absorbere（ab-「离开、从」+ sorbere「吸、啜」）。字面「一口吸进去」。",
+    "ph": "absorb 重音在末 ab-SORB /sɔːrb/；名词 absorption 拼写 -pt-，读 /əbˈsɔːrpʃn/。",
+    "tip": "ab（进/离）+ sorb（吸啜）→ 「吸啜」进来。植物 absorb 水分，脑子 absorb 知识。",
+    "xex": [
+      {"en": "Plant roots absorb water and dissolved minerals from the soil.", "zh": "植物的根从土壤中吸收水分和溶解的矿物质。", "src": "造句"},
+      {"en": "absorb nutrients / absorb water / absorb information", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "soak up", "ipa": "/soʊk ʌp/", "note": "口语短语，指浸吸；absorb 更正式，且能引申到吸收知识/精力"},
+      {"w": "assimilate", "ipa": "/əˈsɪməleɪt/", "note": "强调吸收后同化融入；absorb 只强调「吸进来」这一步"}
+    ],
+    "nu": "sorb = 吸啜：absorb（吸进）、adsorb（吸附在表面），一字之差记牢。",
+    "senses": [
+      {"s": "吸收（物质/能量）", "e": "Dark surfaces absorb more heat than light ones."},
+      {"s": "理解，掌握", "e": "There was too much information to absorb in one lecture."},
+      {"s": "使全神贯注", "e": "The child was completely absorbed in the puzzle."}
+    ]
+  },
+  {
+    "w": "immune",
+    "p": "/ɪˈmjuːn/",
+    "d": "a. 免疫的，有免疫力的；不受影响的；豁免的",
+    "levels": ["托福"],
+    "core": "身体能抵御特定病原而不患病；引申为「不受某种影响」或「免于某义务」。",
+    "ety": "源自拉丁语 immunis「免除义务的、不纳税的」（in-「不」+ munus「职责、赋税」）。原指「免服公役」，医学借为「免于疾病侵害」。",
+    "ph": "immune 重音在末 i-MUNE /mjuːn/；名词 immunity 读 /ɪˈmjuːnəti/。",
+    "tip": "im（不）+ mun（职责/负担）→ 「免除负担」：免税→免役→免于生病=免疫。与 community（共担 munus）反着记。",
+    "xex": [
+      {"en": "Once you recover from chickenpox, you are usually immune to it for life.", "zh": "一旦你从水痘中康复，通常一生都对它免疫。", "src": "造句"},
+      {"en": "the immune system / immune to disease / immune from prosecution", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "resistant", "ipa": "/rɪˈzɪstənt/", "note": "指「有抵抗力」，程度弱于完全免疫；immune 常指已获得性、几乎不受侵害"}
+    ],
+    "nu": "mun = 职责/公共负担：immune（免责）、community、municipal、common——同根反义好记。",
+    "senses": [
+      {"s": "免疫的", "e": "Vaccination makes the body immune to the virus."},
+      {"s": "不受影响的", "e": "No industry is immune to economic downturns."},
+      {"s": "豁免的", "e": "Diplomats are immune from local prosecution."}
+    ]
+  },
+  {
+    "w": "hormone",
+    "p": "/ˈhɔːrmoʊn/",
+    "d": "n. 激素，荷尔蒙",
+    "levels": ["托福"],
+    "core": "由腺体分泌、经血液运送到远处器官、调节生长/代谢/情绪等的化学信使。",
+    "ety": "1905 年由希腊语 hormōn「推动、激起」（hormē「冲动、驱动力」）造出，因激素「推动、激发」身体机能。",
+    "ph": "hormone 重音在首音节 HOR-，词尾 -mone 读 /moʊn/；形容词 hormonal 重音移到 -MON-。",
+    "tip": "horm = 推动/冲动 → 激素是身体里的「推手」，一点点就把器官「推」动起来。",
+    "xex": [
+      {"en": "Growth hormone signals the body's bones and muscles to develop.", "zh": "生长激素向身体的骨骼和肌肉发出发育的信号。", "src": "造句"},
+      {"en": "secrete a hormone / growth hormone / hormone levels", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "chemical messenger", "ipa": "/ˈkemɪkl ˈmesɪndʒər/", "note": "对 hormone 功能的通俗描述短语，非正式术语；教材常用来解释激素"}
+    ],
+    "nu": "horm = 冲动/推动 → 少量激素就能「推」动全身反应，一如其名。"
+  },
+  {
+    "w": "gland",
+    "p": "/ɡlænd/",
+    "d": "n. 腺",
+    "levels": ["托福"],
+    "core": "专门合成并释放特定物质（激素、汗、唾液、消化液等）的器官或细胞群。",
+    "ety": "源自拉丁语 glans/glandis「橡子、坚果」（因某些腺体呈圆粒状，形似橡子）。同源 gland 保留了「小圆粒结构」的意象。",
+    "ph": "gland 读 /ɡlænd/，一个音节，gl- 双辅音连读；复数 glands。",
+    "tip": "gland 拉丁本义「橡子」——腺体常是一颗颗「小圆粒」，像散落的橡子。",
+    "xex": [
+      {"en": "The thyroid gland releases hormones that control how fast the body burns energy.", "zh": "甲状腺分泌激素，控制身体燃烧能量的速度。", "src": "造句"},
+      {"en": "sweat gland / the thyroid gland / glands secrete", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "organ", "ipa": "/ˈɔːrɡən/", "note": "泛指任何器官；gland 特指有分泌功能的那一类器官，是 organ 的子集"}
+    ],
+    "nu": "gland = 橡子：腺体多为一颗颗小圆粒，与 glandular（腺的）同源。"
+  },
+  {
+    "w": "embryo",
+    "p": "/ˈembrioʊ/",
+    "d": "n. 胚，胚胎；萌芽状态，雏形",
+    "levels": ["托福"],
+    "core": "受精卵早期发育、尚未成形的生命阶段；引申为任何事物的最初雏形。",
+    "ety": "源自希腊语 embryon「胎儿、新生物」（en-「在内」+ bryein「涨满、生长」）。字面「在（母体）内生长之物」。",
+    "ph": "embryo 重音在首音节 EM-，词尾 -bryo 读 /brioʊ/；形容词 embryonic 重音移到 -ON-。",
+    "tip": "em（在内）+ bryo（生长）→ 「在体内正生长」的小生命=胚胎。词尾 -bryo 谐音「布润」记「正在长」。",
+    "xex": [
+      {"en": "In the first weeks, the embryo develops the beginnings of a heart and brain.", "zh": "在最初几周，胚胎发育出心脏和大脑的雏形。", "src": "造句"},
+      {"en": "a developing embryo / plant embryo / in embryo（处于萌芽阶段）", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "fetus", "ipa": "/ˈfiːtəs/", "note": "指更晚期、已具人形的胎儿；embryo 特指发育早期、器官初现之前的阶段"}
+    ],
+    "nu": "-bryo（涨满生长）——embryo 是「在里面正长着」的一团新生命。",
+    "senses": [
+      {"s": "胚胎", "e": "Scientists studied how the chick embryo forms inside the egg."},
+      {"s": "雏形，萌芽", "e": "The plan for the company existed only in embryo at that stage."}
+    ]
+  },
+  {
+    "w": "evolve",
+    "p": "/ɪˈvɑːlv/",
+    "d": "v.（生物）进化；（逐渐）发展，演变",
+    "levels": ["托福"],
+    "core": "物种经许多世代在自然选择下缓慢改变；泛指事物逐步展开、发展。",
+    "ety": "源自拉丁语 evolvere「展开、滚出」（e-「向外」+ volvere「卷、滚」）。字面「把卷起来的东西慢慢展开」，喻生命形态逐渐铺展。",
+    "ph": "evolve 重音在末 e-VOLVE /vɑːlv/；名词 evolution 重音在 -LU-，读 /ˌevəˈluːʃn/。",
+    "tip": "e（向外）+ volve（卷/滚）→ 像卷轴「向外展开」，一点点铺展出来=演变、进化。",
+    "xex": [
+      {"en": "Over millions of years, whales evolved from land-dwelling ancestors.", "zh": "历经数百万年，鲸从陆栖祖先进化而来。", "src": "造句"},
+      {"en": "evolve from / evolve over time / evolve into", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "develop", "ipa": "/dɪˈveləp/", "note": "泛指「发展」；evolve 强调「经长期、渐进、由简到繁」的演变，含进化专义"}
+    ],
+    "nu": "volv/volut = 卷/滚：evolve、revolve、involve、revolution——都在「卷动展开」。",
+    "rootfam": [
+      {"root": "volv/volut", "meaning": "卷，滚，转", "words": [
+        {"w": "evolve", "g": "进化（向外展开）"},
+        {"w": "revolve", "g": "旋转"},
+        {"w": "involve", "g": "卷入，涉及"},
+        {"w": "revolution", "g": "革命；旋转"},
+        {"w": "revolt", "g": "反抗（翻转）"}
+      ]}
+    ],
+    "senses": [
+      {"s": "进化", "e": "Birds are thought to have evolved from small dinosaurs."},
+      {"s": "逐渐发展", "e": "Their casual chats gradually evolved into a serious business plan."}
+    ]
+  },
+  {
+    "w": "adapt",
+    "p": "/əˈdæpt/",
+    "d": "v.（使）适应；调整；改编",
+    "levels": ["托福"],
+    "core": "生物调整自身以更好地契合环境；泛指使某物适合新情况或改编作品。",
+    "ety": "源自拉丁语 adaptare（ad-「向、朝」+ aptare「使合适」，来自 aptus「合适的」）。字面「使朝着合适去调」。",
+    "ph": "adapt 重音在末 a-DAPT；勿与 adopt（收养/采纳）混淆——a 后是 da 还是 do 决定词义。",
+    "tip": "ad（朝）+ apt（合适）→ 「朝着合适去调」=适应。记 apt=合适（aptitude 才能）。",
+    "xex": [
+      {"en": "Desert animals have adapted to survive with very little water.", "zh": "沙漠动物已经适应了在极少水分下存活。", "src": "造句"},
+      {"en": "adapt to the environment / adapt to change / adapt a novel for film", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "adjust", "ipa": "/əˈdʒʌst/", "note": "指小幅微调；adapt 指为契合环境做更根本、长期的改变"},
+      {"w": "acclimatize", "ipa": "/əˈklaɪmətaɪz/", "note": "特指适应新气候/环境；adapt 更普适，含生物进化义"}
+    ],
+    "nu": "apt = 合适：adapt、apt、aptitude、adept——都围绕「贴合、称手」。",
+    "senses": [
+      {"s": "（使）适应", "e": "Immigrants often need time to adapt to a new culture."},
+      {"s": "改编", "e": "The director adapted the classic novel into a stage play."}
+    ]
+  },
+  {
+    "w": "photosynthesis",
+    "p": "/ˌfoʊtoʊˈsɪnθəsɪs/",
+    "d": "n. 光合作用",
+    "levels": ["托福"],
+    "core": "绿色植物、藻类等利用光能，把二氧化碳和水合成为糖并释放氧气的过程。",
+    "ety": "希腊语 phōs/phōtos「光」+ synthesis「合成」（syn-「一起」+ tithenai「放置」）。字面「借光把（物质）放到一起合成」。",
+    "ph": "重音在 -SYN-：pho-to-SYN-the-sis；th 读 /θ/，词尾 -sis /sɪs/。",
+    "tip": "photo（光）+ synthesis（合成）→ 「用光来合成」养分。photo 记 photograph（光画）。",
+    "xex": [
+      {"en": "Through photosynthesis, leaves turn sunlight, water, and carbon dioxide into sugar.", "zh": "通过光合作用，叶片把阳光、水和二氧化碳转化为糖。", "src": "造句"},
+      {"en": "carry out photosynthesis / the process of photosynthesis / photosynthesis in plants", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "photosynthetic", "ipa": "/ˌfoʊtoʊsɪnˈθetɪk/", "note": "对应形容词，如 photosynthetic organisms 进行光合的生物"}
+    ],
+    "nu": "photo（光）+ synthesis（合成）——两块都高频：photograph、synthetic 皆同根。",
+    "rootfam": [
+      {"root": "photo", "meaning": "光", "words": [
+        {"w": "photosynthesis", "g": "光合作用"},
+        {"w": "photograph", "g": "照片（光画）"},
+        {"w": "photon", "g": "光子"},
+        {"w": "telephoto", "g": "远摄的"}
+      ]},
+      {"root": "syn-/synthe", "meaning": "一起；合成", "words": [
+        {"w": "synthesis", "g": "合成"},
+        {"w": "synthetic", "g": "合成的"},
+        {"w": "synchronize", "g": "同步"},
+        {"w": "symphony", "g": "交响乐（声音合一）"}
+      ]}
+    ]
+  },
+  {
+    "w": "nutrient",
+    "p": "/ˈnuːtriənt/",
+    "d": "n. 营养物，养分。a. 有营养的",
+    "levels": ["托福"],
+    "core": "生物维持生命、生长所需并从外界摄取的物质，如蛋白质、矿物质、水。",
+    "ety": "源自拉丁语 nutrire「喂养、滋养」的现在分词 nutrient-。词根 nutr 意为「哺育」，同源 nurse（护士/哺育）、nourish（滋养）。",
+    "ph": "nutrient 重音在首音节 NU-，读 /ˈnuː-tri-ənt/（英音常读 /ˈnjuː-/）。",
+    "tip": "nutr = 喂养 → nutrient 就是「拿来喂养」身体的东西。想 nurse（喂养者）记 nutr。",
+    "xex": [
+      {"en": "Roots draw up water and nutrients from deep in the soil.", "zh": "根从深土中汲取水分和养分。", "src": "造句"},
+      {"en": "absorb nutrients / essential nutrients / nutrient-rich soil", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "nourishment", "ipa": "/ˈnɜːrɪʃmənt/", "note": "指「滋养（作用/食物）」较抽象；nutrient 指具体的营养成分，可数"}
+    ],
+    "nu": "nutr = 哺育：nutrient、nutrition、nourish、nurse——都在「喂养滋养」。",
+    "rootfam": [
+      {"root": "nutr", "meaning": "喂养，滋养", "words": [
+        {"w": "nutrient", "g": "养分"},
+        {"w": "nutrition", "g": "营养（学）"},
+        {"w": "nourish", "g": "滋养"},
+        {"w": "nurse", "g": "护士；哺育"},
+        {"w": "nurture", "g": "养育，培养"}
+      ]}
+    ]
+  },
+  {
+    "w": "dormant",
+    "p": "/ˈdɔːrmənt/",
+    "d": "a. 休眠的，蛰伏的；静止的，潜伏的",
+    "levels": ["托福"],
+    "core": "生命活动暂时降到极低、看似不活动但仍能随时恢复的状态（如种子、冬眠动物、休眠火山）。",
+    "ety": "源自拉丁语 dormire「睡觉」的现在分词 dormant-「正在睡」。同源 dormitory（宿舍，睡觉的地方）。",
+    "ph": "dormant 重音在首音节 DOR-，读 /ˈdɔːr-mənt/。",
+    "tip": "dorm = 睡：dormant「正睡着」=休眠。记 dormitory（睡觉的宿舍）就锁定 dorm=睡。",
+    "xex": [
+      {"en": "Many seeds stay dormant in the soil for years until the rains return.", "zh": "许多种子在土中休眠数年，直到雨季重来。", "src": "造句"},
+      {"en": "lie dormant / a dormant volcano / remain dormant", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "inactive", "ipa": "/ɪnˈæktɪv/", "note": "泛指「不活动」；dormant 特指「暂时休眠、可被唤醒」，含蓄势待发意味"},
+      {"w": "latent", "ipa": "/ˈleɪtnt/", "note": "指「潜在存在但未显现」；dormant 侧重「活跃度暂降、可复苏」"}
+    ],
+    "nu": "dorm = 睡：dormant（休眠）、dormitory（宿舍）、dormouse（睡鼠）——全在「打盹」。",
+    "rootfam": [
+      {"root": "dorm", "meaning": "睡觉", "words": [
+        {"w": "dormant", "g": "休眠的"},
+        {"w": "dormitory", "g": "宿舍"},
+        {"w": "dormouse", "g": "睡鼠"}
+      ]}
+    ]
+  },
+  {
+    "w": "specimen",
+    "p": "/ˈspesɪmən/",
+    "d": "n. 标本，样本；范例",
+    "levels": ["托福"],
+    "core": "为研究、展示或化验而取的单个个体或样品，能代表某一类事物。",
+    "ety": "源自拉丁语 specimen「标志、样品」，来自 specere「看」。字面「用来看（辨认）的东西」——供人观察辨别的代表物。",
+    "ph": "specimen 重音在首音节 SPE-，读 /ˈspe-sɪ-mən/（不读 spē-）。",
+    "tip": "spec = 看：specimen 是「拿来看」的样本。想 inspect（往里看）记 spec=看。",
+    "xex": [
+      {"en": "The biologist labeled each plant specimen before pressing it to dry.", "zh": "这位生物学家在压制风干每份植物标本前都为其贴上标签。", "src": "造句"},
+      {"en": "a specimen of / collect specimens / a blood specimen", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "sample", "ipa": "/ˈsæmpl/", "note": "指从整体取的「一部分」（如一份血样）；specimen 常指完整的单个个体（如一株、一只）供研究"}
+    ],
+    "nu": "spec/spic = 看：specimen、inspect、spectator、respect——全靠「看」。",
+    "rootfam": [
+      {"root": "spec/spic", "meaning": "看", "words": [
+        {"w": "specimen", "g": "标本（供看）"},
+        {"w": "inspect", "g": "检查（往里看）"},
+        {"w": "spectator", "g": "观众"},
+        {"w": "respect", "g": "尊敬（回头看）"},
+        {"w": "conspicuous", "g": "显眼的"}
+      ]}
+    ]
+  },
+  {
+    "w": "species",
+    "p": "/ˈspiːʃiːz/",
+    "d": "n. 物种，种（单复数同形）",
+    "levels": ["托福"],
+    "core": "生物分类的基本单位——彼此能交配并产生可育后代的一群生物。",
+    "ety": "直接借自拉丁语 species「外观、种类」，来自 specere「看」。字面「看上去（同一类）的东西」，故指「同一样貌的一类」。",
+    "ph": "species 读 /ˈspiːʃiːz/，ci 读 /ʃ/；单复数拼写完全相同。",
+    "tip": "spec（看）→ species 是「长得像、看着同一类」的生物。注意它单复数同形。",
+    "xex": [
+      {"en": "A single rainforest tree can host hundreds of insect species.", "zh": "一棵热带雨林的树可以栖息着数百种昆虫。", "src": "造句"},
+      {"en": "an endangered species / a new species / species diversity", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "kind", "ipa": "/kaɪnd/", "note": "日常「种类」，无分类学精度；species 是严格的生物分类单位"},
+      {"w": "type", "ipa": "/taɪp/", "note": "泛指「类型」；species 特指能互相繁育的生物群"}
+    ],
+    "nu": "spec = 看：species 与 specimen、special 同源——「看着同一类」即一个物种。"
+  },
+  {
+    "w": "decompose",
+    "p": "/ˌdiːkəmˈpoʊz/",
+    "d": "v.（使）分解；（使）腐烂",
+    "levels": ["托福"],
+    "core": "把复杂物质拆解为简单成分；尤指生物死后被微生物分解腐烂、养分返还环境。",
+    "ety": "de-「向下、去除」+ compose「组合」（com-「一起」+ ponere「放置」）。字面「把组合好的拆开、放回去」，即分解。",
+    "ph": "decompose 重音在末 -POSE /poʊz/；名词 decomposition 重音在 -SI-。",
+    "tip": "de（拆）+ compose（组合）→ 「把组合拆开」=分解、腐烂。compose 记「作曲=把音符放一起」。",
+    "xex": [
+      {"en": "Fungi and bacteria decompose fallen leaves, returning nutrients to the soil.", "zh": "真菌和细菌分解落叶，把养分归还土壤。", "src": "造句"},
+      {"en": "decompose organic matter / begin to decompose / decompose into", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "rot", "ipa": "/rɑːt/", "note": "口语「腐烂」，偏结果与气味；decompose 更学术，强调「拆解为简单物质」的过程"},
+      {"w": "break down", "ipa": "/breɪk daʊn/", "note": "短语，泛指「分解」；decompose 常特指有机物在微生物作用下的腐解"}
+    ],
+    "nu": "pos/pon = 放置：decompose、compose、propose、deposit——都在「放、摆」。",
+    "rootfam": [
+      {"root": "pos/pon", "meaning": "放置", "words": [
+        {"w": "decompose", "g": "分解（拆开放）"},
+        {"w": "compose", "g": "组成（放一起）"},
+        {"w": "propose", "g": "提议（放到前面）"},
+        {"w": "deposit", "g": "存放"},
+        {"w": "expose", "g": "暴露（放出来）"}
+      ]}
+    ],
+    "senses": [
+      {"s": "分解", "e": "Water can be decomposed into hydrogen and oxygen by electricity."},
+      {"s": "腐烂", "e": "The buried log slowly decomposed over the decades."}
+    ]
+  },
+  {
+    "w": "organic",
+    "p": "/ɔːrˈɡænɪk/",
+    "d": "a. 有机的；器官的；有机体的；不用化肥农药的",
+    "levels": ["托福"],
+    "core": "与生物体或含碳化合物有关的；也指顺其自然、协调发展的（如有机增长）。",
+    "ety": "源自希腊语 organon「工具、器官」+ -ic。与 organism、organ 同根——凡「与器官/生命有关」即 organic。",
+    "ph": "organic 重音在 -GAN-：or-GAN-ic；勿把重音放首音节。",
+    "tip": "organ（器官/生命）+ ic → 「与生命有关的」=有机的。化学上有机=含碳，源于「生命物质多含碳」。",
+    "xex": [
+      {"en": "Decaying plants add organic matter that makes the soil fertile.", "zh": "腐烂的植物增添有机质，使土壤肥沃。", "src": "造句"},
+      {"en": "organic matter / organic compound / organic farming", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "biological", "ipa": "/ˌbaɪəˈlɑːdʒɪkl/", "note": "指「生物学的、生命的」；organic 侧重「源于生物/含碳」，二者部分重叠但不等同"}
+    ],
+    "nu": "organ = 器官/工具：organic、organism、organize、organ——一根 organ 串一串。",
+    "senses": [
+      {"s": "有机的（含碳）", "e": "Carbon is the key element in all organic compounds."},
+      {"s": "有机体的；器官的", "e": "The disease caused organic damage to the liver."},
+      {"s": "不用化肥农药的", "e": "They sell organic vegetables grown without pesticides."}
+    ]
+  }
+]

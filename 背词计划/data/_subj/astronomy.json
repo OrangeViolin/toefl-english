@@ -1,0 +1,741 @@
+[
+  {
+    "w": "orbit",
+    "p": "/ˈɔːrbɪt/",
+    "d": "n. 轨道；势力范围  v. 沿轨道运行，环绕",
+    "levels": ["托福"],
+    "core": "一个天体绕另一个天体运行所走的固定曲线路径",
+    "ety": "源自拉丁语 orbita「车轮的辙印、环形轨迹」，来自 orbis「圆、环、圆盘」；17 世纪天文学借来指天体环绕运行的路径。",
+    "ph": "orb（圆环）+ it → 沿圆环走的路 → 轨道",
+    "tip": "记住词根 orb=圆环：眼球 orb、球体 orb，天体走的「圆环路」就是 orbit。",
+    "xex": [
+      {"en": "The Moon completes one orbit around the Earth roughly every 27 days.", "zh": "月球大约每 27 天绕地球运行一圈。", "src": "造句"},
+      {"en": "a stable orbit / to orbit the Sun / put a satellite into orbit", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "revolution", "ipa": "/ˌrevəˈluːʃn/", "note": "强调「绕行一整圈」的公转动作，orbit 更强调那条路径本身"},
+      {"w": "trajectory", "ipa": "/trəˈdʒektəri/", "note": "泛指任何运动物体的轨迹，不限于闭合的环绕路径"}
+    ],
+    "nu": "orbit 既是名词（那条路径）也是动词（沿它运行）；天文题里常与 revolve/circle 换用。",
+    "rootfam": [
+      {"root": "orb", "meaning": "圆、环", "words": [
+        {"w": "orbit", "g": "轨道（圆环路）"},
+        {"w": "orbital", "g": "轨道的"},
+        {"w": "exorbitant", "g": "过分的（出了圆环 → 越轨）"},
+        {"w": "orb", "g": "球体，天体"}
+      ]}
+    ],
+    "senses": [
+      {"pos": "n.", "zh": "（天体）轨道"},
+      {"pos": "n.", "zh": "（比喻）势力范围、影响圈，如 within one's orbit"},
+      {"pos": "v.", "zh": "绕…作轨道运行"}
+    ]
+  },
+  {
+    "w": "galaxy",
+    "p": "/ˈɡæləksi/",
+    "d": "n. 星系；[G-] 银河系；一群杰出人物",
+    "levels": ["托福"],
+    "core": "由亿万颗恒星、气体和尘埃在引力下聚成的巨大系统",
+    "ety": "源自希腊语 galaxías (kúklos)「奶的（圆环）」，来自 gála「奶」；古希腊人把夜空那条乳白色光带叫「奶路」，即银河。",
+    "ph": "希腊 gala=奶 → 天上的「奶白色光带」→ 银河 → 星系",
+    "tip": "gala=奶（想 lactose 乳糖里的 lact），银河就是天上那条「牛奶河」。",
+    "xex": [
+      {"en": "Our Sun is just one of hundreds of billions of stars in the Milky Way galaxy.", "zh": "太阳只是银河系里数千亿颗恒星中的一颗。", "src": "造句"},
+      {"en": "a spiral galaxy / a distant galaxy / the Milky Way galaxy", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "star system", "ipa": "/ˈstɑːr ˌsɪstəm/", "note": "可指小到几颗恒星的系统，galaxy 规模远大得多"}
+    ],
+    "nu": "galaxy 是「星系」（含亿万恒星）；solar system「太阳系」只是一颗恒星带行星，别混。首字母大写 the Galaxy 特指银河系。",
+    "rootfam": [
+      {"root": "gala/lact", "meaning": "奶", "words": [
+        {"w": "galaxy", "g": "星系（奶路）"},
+        {"w": "galactic", "g": "星系的"},
+        {"w": "lactose", "g": "乳糖"},
+        {"w": "lactic", "g": "乳的，乳酸的"}
+      ]}
+    ]
+  },
+  {
+    "w": "nebula",
+    "p": "/ˈnebjələ/",
+    "d": "n. 星云（复数 nebulae 或 nebulas）",
+    "levels": ["托福"],
+    "core": "太空中由气体和尘埃组成的云状发光结构，常是恒星诞生地",
+    "ety": "直接借自拉丁语 nebula「雾、云、烟」，与希腊语 nephélē「云」同源；18 世纪天文学用来指望远镜里那些模糊如雾的天体。",
+    "ph": "拉丁 nebula=雾 → 太空里模糊如雾的一团 → 星云",
+    "tip": "联想 nebulous「模糊不清的」——星云看上去就是雾蒙蒙、边界不清的一团。",
+    "xex": [
+      {"en": "New stars are born inside a nebula as clouds of gas and dust collapse under gravity.", "zh": "当气体和尘埃云在引力下坍缩时，新恒星就在星云内部诞生。", "src": "造句"},
+      {"en": "a gas nebula / the Orion Nebula / a planetary nebula", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "interstellar cloud", "ipa": "/ˌɪntərˈstelər klaʊd/", "note": "科学描述用语，指星际气体尘埃云，nebula 是其传统天文名"}
+    ],
+    "nu": "复数不规则：nebulae /ˈnebjəliː/（拉丁式）或 nebulas 均可；形容词 nebular「星云的」、nebulous「模糊的」注意区分。",
+    "rootfam": [
+      {"root": "nebul", "meaning": "雾、云", "words": [
+        {"w": "nebula", "g": "星云"},
+        {"w": "nebulous", "g": "模糊的，含糊的"},
+        {"w": "nebular", "g": "星云的"}
+      ]}
+    ]
+  },
+  {
+    "w": "comet",
+    "p": "/ˈkɑːmət/",
+    "d": "n. 彗星",
+    "levels": ["托福"],
+    "core": "由冰和尘埃构成、靠近太阳时会拖出长尾的小天体",
+    "ety": "源自希腊语 komḗtēs「长发的（星）」，来自 kómē「头发」；古人见彗星拖着长长的尾巴，称它「长发星」。",
+    "ph": "希腊 kome=头发 → 拖着长发（尾巴）的星 → 彗星",
+    "tip": "彗星那条尾巴就像飘散的「长头发」（kome），所以叫 comet。",
+    "xex": [
+      {"en": "As a comet approaches the Sun, its ice vaporizes and forms a glowing tail.", "zh": "当彗星靠近太阳时，其冰质汽化并形成一条发光的尾巴。", "src": "造句"},
+      {"en": "a comet's tail / Halley's Comet / a periodic comet", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "asteroid", "ipa": "/ˈæstərɔɪd/", "note": "近义仅在「小天体」层面；asteroid 是岩石质无尾，comet 是冰质有尾，考试常对比"}
+    ],
+    "nu": "关键区分：comet 冰质、有尾、轨道极扁；asteroid 岩石质、无尾。彗尾永远背向太阳（被太阳风吹开）。"
+  },
+  {
+    "w": "asteroid",
+    "p": "/ˈæstərɔɪd/",
+    "d": "n. 小行星",
+    "levels": ["托福"],
+    "core": "主要在火星与木星轨道间绕日运行的小型岩石天体",
+    "ety": "由希腊语 astḗr「星」+ -oeidḗs「像…的、状似的」构成，字面「像星星的东西」；19 世纪初命名，因它们在望远镜里看只是星点而非圆面。",
+    "ph": "aster=星 + -oid=像…的 → 像星星的小东西 → 小行星",
+    "tip": "aster=星（星号 asterisk 也是它），-oid=「像…的」（humanoid 类人），合起来「像星的小天体」。",
+    "xex": [
+      {"en": "Most asteroids orbit the Sun in a broad belt between Mars and Jupiter.", "zh": "大多数小行星在火星和木星之间一条宽阔的带中绕太阳运行。", "src": "造句"},
+      {"en": "the asteroid belt / a near-Earth asteroid / an asteroid impact", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "minor planet", "ipa": "/ˈmaɪnər ˈplænɪt/", "note": "asteroid 的正式天文学名称，二者常互换"}
+    ],
+    "nu": "asteroid 岩石质、集中在小行星带；与冰质拖尾的 comet 对比是听力常考点。",
+    "rootfam": [
+      {"root": "aster/astr", "meaning": "星", "words": [
+        {"w": "asteroid", "g": "小行星"},
+        {"w": "asterisk", "g": "星号（*）"},
+        {"w": "astronomy", "g": "天文学"},
+        {"w": "astronaut", "g": "宇航员（星际水手）"},
+        {"w": "disaster", "g": "灾难（不吉之星）"}
+      ]}
+    ]
+  },
+  {
+    "w": "meteor",
+    "p": "/ˈmiːtiər/",
+    "d": "n. 流星",
+    "levels": ["托福"],
+    "core": "小天体进入大气层因摩擦燃烧、划过夜空的一道光",
+    "ety": "源自希腊语 metéōron「高空中的现象」，由 metá「越过」+ aeírein「升起、悬」构成，字面「悬在高处之物」；原泛指一切大气现象（meteorology 气象学同源）。",
+    "ph": "meteor=高空之物 → 高空划过的光 → 流星",
+    "tip": "同根 meteorology 是「气象学」——因为古希腊 meteor 泛指一切「高空现象」，流星只是其一。",
+    "xex": [
+      {"en": "A meteor is the streak of light we see when a small piece of rock burns up in the atmosphere.", "zh": "流星就是一小块岩石在大气层中燃尽时我们看到的那道光。", "src": "造句"},
+      {"en": "a meteor shower / a bright meteor / to streak across the sky", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "shooting star", "ipa": "/ˈʃuːtɪŋ stɑːr/", "note": "meteor 的日常口语说法，指同一现象"}
+    ],
+    "nu": "三兄弟必分清：meteoroid（太空中的碎块）→ meteor（进大气发光的现象）→ meteorite（落到地面的残块）。",
+    "rootfam": [
+      {"root": "meteor", "meaning": "高空之物", "words": [
+        {"w": "meteor", "g": "流星"},
+        {"w": "meteorite", "g": "陨石"},
+        {"w": "meteoroid", "g": "流星体"},
+        {"w": "meteorology", "g": "气象学"}
+      ]}
+    ]
+  },
+  {
+    "w": "meteorite",
+    "p": "/ˈmiːtiəraɪt/",
+    "d": "n. 陨石",
+    "levels": ["托福"],
+    "core": "穿过大气层未烧尽、坠落到地面的太空岩石残块",
+    "ety": "由 meteor「高空之物」+ 矿物名词后缀 -ite（如 granite 花岗岩）构成，字面「流星（落下）的石头」；19 世纪造词。",
+    "ph": "meteor（流星）+ -ite（…石）→ 流星落下的石头 → 陨石",
+    "tip": "后缀 -ite 常表「矿石」（graphite 石墨、granite 花岗岩），流星+石=落地的陨石。",
+    "xex": [
+      {"en": "Unlike a meteor, a meteorite survives its fiery descent and reaches the ground.", "zh": "与流星不同，陨石熬过了炽热的坠落过程，抵达了地面。", "src": "造句"},
+      {"en": "an iron meteorite / a meteorite crater / to recover a meteorite", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "space rock", "ipa": "/speɪs rɑːk/", "note": "非正式泛称，落地后特指 meteorite"}
+    ],
+    "nu": "记忆关键：落地的才叫 meteorite（-ite=石）；空中发光的是 meteor。陨石常在地表砸出 crater。",
+    "rootfam": [
+      {"root": "-ite", "meaning": "矿石、岩石", "words": [
+        {"w": "meteorite", "g": "陨石"},
+        {"w": "granite", "g": "花岗岩"},
+        {"w": "graphite", "g": "石墨"},
+        {"w": "stalactite", "g": "钟乳石"}
+      ]}
+    ]
+  },
+  {
+    "w": "eclipse",
+    "p": "/ɪˈklɪps/",
+    "d": "n. 日食，月食  vt. 遮蔽…的光；使相形见绌，盖过",
+    "levels": ["托福"],
+    "core": "一个天体运行到另一天体阴影中或挡住其光，使之变暗",
+    "ety": "源自希腊语 ékleipsis「弃失、消失」，由 ek-「出、离」+ leípein「离开、遗漏」构成，字面「（光）离去不见」。",
+    "ph": "ek-（出、离）+ leip（离开）→ 光离开消失 → 日/月食",
+    "tip": "同根 eclipse 与 ellipsis「省略号」共享 leip=「遗漏、缺失」——食就是光「缺失」了。",
+    "xex": [
+      {"en": "A solar eclipse occurs when the Moon passes directly between the Sun and the Earth.", "zh": "当月球正好运行到太阳与地球之间时，就会发生日食。", "src": "造句"},
+      {"en": "a total eclipse / a lunar eclipse / to eclipse a rival", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "overshadow", "ipa": "/ˌoʊvərˈʃædoʊ/", "note": "仅用于比喻义「盖过、使黯然失色」，与 eclipse 的 vt. 用法对应"}
+    ],
+    "nu": "日食 solar eclipse（月挡太阳）vs 月食 lunar eclipse（地球影盖月），方位别记反。比喻义「盖过对手」也高频。",
+    "rootfam": [
+      {"root": "leip/lips", "meaning": "离开、遗漏", "words": [
+        {"w": "eclipse", "g": "食；使黯然失色"},
+        {"w": "ellipsis", "g": "省略（号）"},
+        {"w": "ellipse", "g": "椭圆"}
+      ]}
+    ],
+    "senses": [
+      {"pos": "n.", "zh": "日食 / 月食"},
+      {"pos": "vt.", "zh": "遮住…的光"},
+      {"pos": "vt.", "zh": "（比喻）盖过、使相形见绌"}
+    ]
+  },
+  {
+    "w": "supernova",
+    "p": "/ˌsuːpərˈnoʊvə/",
+    "d": "n. 超新星（复数 supernovae 或 supernovas）",
+    "levels": ["托福"],
+    "core": "大质量恒星生命末期发生的剧烈爆炸，短时亮度可超整个星系",
+    "ety": "由拉丁前缀 super-「超越、之上」+ nova「新星」构成；nova 本是拉丁语「新的」（阴性），因这类爆发在天空「凭空出现一颗新亮星」而得名，super- 表其亮度远超普通新星。",
+    "ph": "super-（超）+ nova（新星）→ 超级新亮星 → 超新星（恒星大爆炸）",
+    "tip": "nova=「新的」（想 novel 新颖、innovate 创新），爆炸时天上「多出一颗超亮新星」。",
+    "xex": [
+      {"en": "When a massive star runs out of fuel, it can collapse and explode as a supernova.", "zh": "当一颗大质量恒星耗尽燃料时，它会坍缩并爆发为超新星。", "src": "造句"},
+      {"en": "a supernova explosion / to explode as a supernova / a supernova remnant", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "stellar explosion", "ipa": "/ˈstelər ɪkˈsploʊʒn/", "note": "描述性说法，supernova 是其中最剧烈的一类"}
+    ],
+    "nu": "supernova 爆炸会把重元素抛入太空，是行星和生命物质的来源之一，听力讲座常提到这条因果链。",
+    "rootfam": [
+      {"root": "nov", "meaning": "新的", "words": [
+        {"w": "supernova", "g": "超新星"},
+        {"w": "nova", "g": "新星"},
+        {"w": "novel", "g": "新颖的；小说"},
+        {"w": "innovate", "g": "创新"},
+        {"w": "renovate", "g": "翻新"}
+      ]}
+    ]
+  },
+  {
+    "w": "gravity",
+    "p": "/ˈɡrævəti/",
+    "d": "n. 重力，引力；严重性；严肃，庄重",
+    "levels": ["托福"],
+    "core": "使有质量的物体互相吸引的自然力，天体运行的根本原因",
+    "ety": "源自拉丁语 gravitas「重量、沉重、庄重」，来自 gravis「重的」；先指「庄重、严肃」，17 世纪牛顿用它命名让物体下落、天体互吸的「重力」。",
+    "ph": "拉丁 gravis=重的 → 重量 → 使物体互相「拉重」的力 → 引力",
+    "tip": "grav=重（想 grave 严重的、aggravate 加重），重的东西才有强引力。",
+    "xex": [
+      {"en": "Gravity holds the planets in their orbits around the Sun.", "zh": "引力使各行星保持在环绕太阳的轨道上。", "src": "造句"},
+      {"en": "the force of gravity / to escape Earth's gravity / center of gravity", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "gravitation", "ipa": "/ˌɡrævɪˈteɪʃn/", "note": "更学术，指万有引力现象；gravity 常特指地球表面的重力"}
+    ],
+    "nu": "gravity 一词双面：物理「引力」与抽象「严肃/严重性（the gravity of the situation）」，阅读中两义都考。",
+    "rootfam": [
+      {"root": "grav", "meaning": "重", "words": [
+        {"w": "gravity", "g": "重力；严重"},
+        {"w": "grave", "g": "严重的，庄重的"},
+        {"w": "aggravate", "g": "加重，恶化"},
+        {"w": "gravitate", "g": "受吸引，被拉向"}
+      ]}
+    ],
+    "senses": [
+      {"pos": "n.", "zh": "重力，引力"},
+      {"pos": "n.", "zh": "严重性（the gravity of the crisis）"},
+      {"pos": "n.", "zh": "严肃，庄重（with great gravity）"}
+    ]
+  },
+  {
+    "w": "telescope",
+    "p": "/ˈtelɪskoʊp/",
+    "d": "n. 望远镜  v.（把套筒式物体）叠缩；压缩、缩短",
+    "levels": ["托福"],
+    "core": "用透镜或反射镜聚光、放大远处天体的观测仪器",
+    "ety": "由希腊语 têle「远」+ skopeîn「看」构成，字面「看远处的（工具）」；17 世纪意大利造词，随伽利略用它观天而流行。",
+    "ph": "tele-（远）+ scope（看）→ 看远处的工具 → 望远镜",
+    "tip": "tele-=远（telephone 远处传声、television 远处传像），scope=看，合起来「看远的」。",
+    "xex": [
+      {"en": "Through a telescope, faint objects that are invisible to the naked eye become clearly visible.", "zh": "透过望远镜，肉眼看不见的暗弱天体变得清晰可见。", "src": "造句"},
+      {"en": "a reflecting telescope / to point a telescope at / the Hubble Space Telescope", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "observatory", "ipa": "/əbˈzɜːrvətɔːri/", "note": "指安放望远镜的整座天文台，非仪器本身，勿混"}
+    ],
+    "nu": "动词义少见但存在：telescope「像套筒一样叠缩、压缩」（telescope years into months 把数年压成数月）。",
+    "rootfam": [
+      {"root": "tele", "meaning": "远", "words": [
+        {"w": "telescope", "g": "望远镜"},
+        {"w": "telephone", "g": "电话"},
+        {"w": "television", "g": "电视"},
+        {"w": "telegraph", "g": "电报"}
+      ]},
+      {"root": "scop", "meaning": "看", "words": [
+        {"w": "telescope", "g": "望远镜"},
+        {"w": "microscope", "g": "显微镜"},
+        {"w": "scope", "g": "范围；观察器"}
+      ]}
+    ]
+  },
+  {
+    "w": "constellation",
+    "p": "/ˌkɑːnstəˈleɪʃn/",
+    "d": "n. 星座；一群（相关的人或物）",
+    "levels": ["托福"],
+    "core": "夜空中一组被人为连结、赋予名字与图形的恒星",
+    "ety": "源自晚期拉丁语 constellatio，由 con-「共同」+ stella「星」+ -atio 构成，字面「众星聚在一起」。",
+    "ph": "con-（共同）+ stella（星）+ -ation → 一群星聚成图 → 星座",
+    "tip": "con=共同 + stella=星（想 stellar 恒星的），「一堆星凑在一起」就是星座。",
+    "xex": [
+      {"en": "The constellation Orion is easy to recognize by the three stars that form its belt.", "zh": "猎户座凭组成其腰带的三颗星很容易辨认。", "src": "造句"},
+      {"en": "the constellation Orion / a familiar constellation / a constellation of talents", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "star group", "ipa": "/ˈstɑːr ɡruːp/", "note": "口语描述性说法，constellation 是官方划分的 88 个星座之一"}
+    ],
+    "nu": "比喻义高频：a constellation of experts「一群专家」。注意星座里的恒星实际距离极远，只是从地球看似成图。",
+    "rootfam": [
+      {"root": "stell", "meaning": "星", "words": [
+        {"w": "constellation", "g": "星座"},
+        {"w": "stellar", "g": "恒星的；出色的"},
+        {"w": "interstellar", "g": "星际的"}
+      ]}
+    ],
+    "senses": [
+      {"pos": "n.", "zh": "星座"},
+      {"pos": "n.", "zh": "（比喻）一群相关的人或事物"}
+    ]
+  },
+  {
+    "w": "satellite",
+    "p": "/ˈsætəlaɪt/",
+    "d": "n. 卫星；人造卫星；附庸（国、城）",
+    "levels": ["托福"],
+    "core": "环绕行星运行的天体，或人类发射入轨的航天器",
+    "ety": "源自拉丁语 satelles「随从、护卫」；开普勒 1611 年借来称行星周围的「随从星」，即卫星。",
+    "ph": "拉丁 satelles=随从 → 绕行星转的「随从」→ 卫星",
+    "tip": "把卫星想成行星的「贴身随从」（satelles），寸步不离地绕着它转。",
+    "xex": [
+      {"en": "The Moon is Earth's only natural satellite.", "zh": "月球是地球唯一的天然卫星。", "src": "造句"},
+      {"en": "a natural satellite / to launch a satellite / a satellite in orbit", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "moon", "ipa": "/muːn/", "note": "泛指行星的天然卫星（如木星的众多 moons），是 natural satellite 的通俗说法"}
+    ],
+    "nu": "分两类：natural satellite（如月球）与 artificial satellite（人造卫星）。引申义 satellite town「卫星城」、satellite state「附庸国」。",
+    "senses": [
+      {"pos": "n.", "zh": "（天然/人造）卫星"},
+      {"pos": "n.", "zh": "附庸国、卫星城"}
+    ]
+  },
+  {
+    "w": "planet",
+    "p": "/ˈplænɪt/",
+    "d": "n. 行星",
+    "levels": ["托福"],
+    "core": "绕恒星运行、自身不发光、已清空轨道邻域的球状大天体",
+    "ety": "源自希腊语 planḗtēs「漫游者、流浪者」，来自 planâsthai「漂泊、游荡」；古人见行星相对恒星背景不断「游走」，故称「漫游之星」。",
+    "ph": "希腊 planet=漫游者 → 在星空中游走的星 → 行星",
+    "tip": "行星是天上的「流浪汉」（planet=漫游者），不像恒星那样位置固定。",
+    "xex": [
+      {"en": "Unlike a star, a planet does not produce its own light but reflects the light of the Sun.", "zh": "与恒星不同，行星自身不发光，而是反射太阳的光。", "src": "造句"},
+      {"en": "the inner planets / a rocky planet / a gas giant planet", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "world", "ipa": "/wɜːrld/", "note": "文学/口语中可指某颗行星（an alien world），planet 是科学用语"}
+    ],
+    "nu": "考试常辨析：star 自发光的恒星 vs planet 反射光的行星；2006 年冥王星被重新归为 dwarf planet「矮行星」。",
+    "rootfam": [
+      {"root": "planet", "meaning": "漫游", "words": [
+        {"w": "planet", "g": "行星"},
+        {"w": "planetary", "g": "行星的"},
+        {"w": "planetarium", "g": "天文馆"}
+      ]}
+    ]
+  },
+  {
+    "w": "luminosity",
+    "p": "/ˌluːmɪˈnɑːsəti/",
+    "d": "n. 光度，发光度；光明，明亮",
+    "levels": ["托福"],
+    "core": "天体单位时间辐射出的总光（能量），是恒星的固有亮度",
+    "ety": "源自拉丁语 lumen (词干 lumin-)「光」+ 名词后缀 -osity「…性质」；lumen 与 lux「光」同族。",
+    "ph": "lumin（光）+ -osity（…度）→ 发光的程度 → 光度",
+    "tip": "lumin=光（想 illuminate 照亮、luminous 发光的），-osity 表程度，合成「发光程度」。",
+    "xex": [
+      {"en": "A star's luminosity depends on both its surface temperature and its size.", "zh": "一颗恒星的光度取决于它的表面温度和大小。", "src": "造句"},
+      {"en": "high luminosity / the luminosity of a star / intrinsic luminosity", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "brightness", "ipa": "/ˈbraɪtnəs/", "note": "日常词；天文中 luminosity 指恒星本身发出的总能量，brightness 常指从地球看到的视亮度，二者不同"}
+    ],
+    "nu": "术语区分：luminosity（固有光度，恒星实际发多少光）≠ apparent brightness（视亮度，受距离影响）。这是听力讲座常设的对比点。",
+    "rootfam": [
+      {"root": "lumin", "meaning": "光", "words": [
+        {"w": "luminosity", "g": "光度"},
+        {"w": "luminous", "g": "发光的"},
+        {"w": "illuminate", "g": "照亮，阐明"},
+        {"w": "luminary", "g": "杰出人物；发光体"}
+      ]}
+    ]
+  },
+  {
+    "w": "radiation",
+    "p": "/ˌreɪdiˈeɪʃn/",
+    "d": "n. 辐射；放射线；辐射的能量（或热）",
+    "levels": ["托福"],
+    "core": "能量以电磁波或粒子形式从源头向四周发射传播",
+    "ety": "源自拉丁语 radiatus（radiare「发光、放射」的过去分词），来自 radius「射线、辐条、半径」；字面「像辐条一样向四面射出」。",
+    "ph": "radi（射线、辐条）+ -ation → 像辐条般四射 → 辐射",
+    "tip": "radi=辐条/射线（想车轮 radius 半径、radio 无线电波），能量像车轮辐条向外发散。",
+    "xex": [
+      {"en": "The Sun emits energy as electromagnetic radiation, including visible light and heat.", "zh": "太阳以电磁辐射的形式发出能量，包括可见光和热量。", "src": "造句"},
+      {"en": "solar radiation / cosmic radiation / to emit radiation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "emission", "ipa": "/iˈmɪʃn/", "note": "泛指「发出」的动作或物；radiation 特指以波/粒子向四周辐射的能量"}
+    ],
+    "nu": "天文中 radiation 多指电磁波谱（射电、红外、可见、紫外、X 射线、γ 射线），恒星能量正是靠它传到地球。",
+    "rootfam": [
+      {"root": "radi", "meaning": "射线、辐条", "words": [
+        {"w": "radiation", "g": "辐射"},
+        {"w": "radiate", "g": "辐射，放射"},
+        {"w": "radius", "g": "半径；辐条"},
+        {"w": "radiant", "g": "光芒四射的"},
+        {"w": "radio", "g": "无线电"}
+      ]}
+    ]
+  },
+  {
+    "w": "cosmic",
+    "p": "/ˈkɑːzmɪk/",
+    "d": "a. 宇宙的；无比巨大的",
+    "levels": ["托福"],
+    "core": "与整个宇宙有关的，或大到宇宙尺度的",
+    "ety": "源自希腊语 kósmos「秩序、和谐、世界」；毕达哥拉斯学派用它指「井然有序的宇宙」，形容词 cosmic 即「宇宙的」。同源 cosmetic「化妆品」也来自 kósmos「装饰、秩序」义。",
+    "ph": "希腊 kosmos=有序的宇宙 → 宇宙的 → cosmic",
+    "tip": "cosmos=宇宙（有序），cosmetic=化妆品（把脸「整理得有序」），共享 kosmos=秩序。",
+    "xex": [
+      {"en": "Cosmic rays are high-energy particles that stream through space and strike the Earth.", "zh": "宇宙射线是穿行于太空、撞击地球的高能粒子。", "src": "造句"},
+      {"en": "cosmic rays / cosmic dust / on a cosmic scale", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "universal", "ipa": "/ˌjuːnɪˈvɜːrsl/", "note": "可指「全宇宙的」也指「普遍的」；cosmic 更专指宇宙空间与尺度"}
+    ],
+    "nu": "既是天文实义「宇宙的」（cosmic microwave background 宇宙微波背景），也作夸张义「巨大的」（a cosmic mistake）。",
+    "rootfam": [
+      {"root": "cosm", "meaning": "宇宙、秩序", "words": [
+        {"w": "cosmic", "g": "宇宙的"},
+        {"w": "cosmos", "g": "宇宙"},
+        {"w": "cosmopolitan", "g": "世界性的，见多识广的"},
+        {"w": "microcosm", "g": "微观世界，缩影"}
+      ]}
+    ]
+  },
+  {
+    "w": "celestial",
+    "p": "/səˈlestʃl/",
+    "d": "a. 天空的，天上的；天体的；天国的",
+    "levels": ["托福"],
+    "core": "属于或位于天空、天体或天国的",
+    "ety": "源自拉丁语 caelestis「属天的」，来自 caelum「天空、天堂」；经古法语 celestial 进入英语。",
+    "ph": "拉丁 caelum=天空 → 属于天空的 → 天上的",
+    "tip": "记 celestial body「天体」这个高频搭配即可锁定「天上的」义；celest≈天。",
+    "xex": [
+      {"en": "Stars, planets, and comets are all celestial bodies that astronomers study.", "zh": "恒星、行星和彗星都是天文学家研究的天体。", "src": "造句"},
+      {"en": "a celestial body / the celestial sphere / celestial navigation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "heavenly", "ipa": "/ˈhevnli/", "note": "近义，但 heavenly 更口语/宗教色彩；celestial 更学术，常见于天文语境"}
+    ],
+    "nu": "天文核心搭配 celestial body「天体」、celestial sphere「天球」。另有「天国的、神圣的」引申义（celestial music）。",
+    "senses": [
+      {"pos": "a.", "zh": "天空的，天体的"},
+      {"pos": "a.", "zh": "天国的，神圣的"}
+    ]
+  },
+  {
+    "w": "rotate",
+    "p": "/ˈroʊteɪt/",
+    "d": "v.（使）自转，旋转；（使）轮流，轮换",
+    "levels": ["托福"],
+    "core": "绕自身的轴线转动（区别于绕外物公转）",
+    "ety": "源自拉丁语 rotatus（rotare「转动」的过去分词），来自 rota「轮子」；字面「像轮子一样转」。",
+    "ph": "拉丁 rota=轮子 → 像轮子般转动 → 自转",
+    "tip": "rota=轮子（想 rotary 旋转的、rotor 转子），轮子转 = rotate 自转。",
+    "xex": [
+      {"en": "The Earth rotates on its axis once every 24 hours, giving us day and night.", "zh": "地球每 24 小时绕自转轴转动一周，从而形成昼夜。", "src": "造句"},
+      {"en": "to rotate on its axis / to rotate clockwise / rotate crops", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "revolve", "ipa": "/rɪˈvɑːlv/", "note": "口语常混用，但天文精确用法：rotate 绕自身轴自转，revolve 绕外部天体公转"}
+    ],
+    "nu": "考点区分：rotation 自转（决定昼夜）vs revolution 公转（决定年）。地球既 rotate（一天）又 orbit/revolve（一年）。",
+    "rootfam": [
+      {"root": "rot", "meaning": "轮子、转", "words": [
+        {"w": "rotate", "g": "旋转，自转"},
+        {"w": "rotation", "g": "旋转，自转"},
+        {"w": "rotor", "g": "转子，旋翼"},
+        {"w": "rotary", "g": "旋转的"}
+      ]}
+    ],
+    "senses": [
+      {"pos": "v.", "zh": "（绕轴）旋转，自转"},
+      {"pos": "v.", "zh": "轮流，轮换（rotate shifts / crops）"}
+    ]
+  },
+  {
+    "w": "crater",
+    "p": "/ˈkreɪtər/",
+    "d": "n.（撞击或火山形成的）坑，环形山；火山口",
+    "levels": ["托福"],
+    "core": "天体表面碗状的凹坑，多由陨石撞击或火山喷发形成",
+    "ety": "源自希腊语 kratḗr「调酒碗、大口容器」，来自 kerannýnai「混合」；因坑口形似古希腊那种宽口调酒大碗而得名。",
+    "ph": "希腊 krater=宽口调酒碗 → 碗状凹坑 → 环形山",
+    "tip": "把陨石坑想成天体表面一只巨大的「碗」（krater 古希腊调酒碗），形状正相似。",
+    "xex": [
+      {"en": "The Moon's surface is covered with craters formed by meteorite impacts.", "zh": "月球表面布满了由陨石撞击形成的环形山。", "src": "造句"},
+      {"en": "an impact crater / a volcanic crater / craters on the Moon", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "basin", "ipa": "/ˈbeɪsn/", "note": "泛指大型盆状洼地；crater 特指撞击或火山造成的碗状坑"}
+    ],
+    "nu": "两种成因要分：impact crater（撞击坑，如月面）与 volcanic crater（火山口）。月面缺大气与流水，撞击坑得以长期保存，是听力常考解释。",
+    "senses": [
+      {"pos": "n.", "zh": "撞击坑，环形山"},
+      {"pos": "n.", "zh": "火山口"}
+    ]
+  },
+  {
+    "w": "lunar",
+    "p": "/ˈluːnər/",
+    "d": "a. 月亮的，月球的",
+    "levels": ["托福"],
+    "core": "与月球或月相有关的",
+    "ety": "源自拉丁语 lunaris「属月的」，来自 luna「月亮」；luna 又与 lucere「发光」同源（月「发光之物」）。",
+    "ph": "拉丁 luna=月亮 → 月亮的 → lunar",
+    "tip": "luna=月亮（罗马月亮女神 Luna），lunar 就是它的形容词；lunatic「疯子」古人认为月亮影响神智。",
+    "xex": [
+      {"en": "A lunar eclipse happens when the Earth passes between the Sun and the Moon.", "zh": "当地球运行到太阳与月球之间时，就会发生月食。", "src": "造句"},
+      {"en": "a lunar eclipse / the lunar surface / a lunar month", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "moon", "ipa": "/muːn/", "note": "作定语时 moon（如 moon phase）口语可替 lunar；lunar 更正式/学术"}
+    ],
+    "nu": "对照记忆：lunar 月亮的 vs solar 太阳的。lunar month 朔望月约 29.5 天，lunar eclipse 月食，都是高频搭配。",
+    "rootfam": [
+      {"root": "lun", "meaning": "月亮", "words": [
+        {"w": "lunar", "g": "月球的"},
+        {"w": "lunatic", "g": "疯子的（受月影响）"},
+        {"w": "lunation", "g": "朔望月"}
+      ]}
+    ]
+  },
+  {
+    "w": "solar",
+    "p": "/ˈsoʊlər/",
+    "d": "a. 太阳的，日光的；（利用）太阳能的",
+    "levels": ["托福"],
+    "core": "与太阳、太阳光或太阳能有关的",
+    "ety": "源自拉丁语 solaris「属太阳的」，来自 sol「太阳」；罗马太阳神即名 Sol。",
+    "ph": "拉丁 sol=太阳 → 太阳的 → solar",
+    "tip": "sol=太阳（想 solstice 至日、parasol 遮阳伞），solar 就是它的形容词。",
+    "xex": [
+      {"en": "The solar system consists of the Sun and everything that orbits it.", "zh": "太阳系由太阳及一切绕它运行的天体组成。", "src": "造句"},
+      {"en": "the solar system / solar energy / a solar eclipse", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "sun-related", "ipa": "/ˈsʌn rɪˌleɪtɪd/", "note": "描述性说法；solar 是正式形容词，勿用 sun's 泛化"}
+    ],
+    "nu": "对照 lunar 月亮的。核心搭配 solar system 太阳系、solar radiation 太阳辐射、solar eclipse 日食（月挡日）。",
+    "rootfam": [
+      {"root": "sol", "meaning": "太阳", "words": [
+        {"w": "solar", "g": "太阳的"},
+        {"w": "solstice", "g": "至日（夏至/冬至）"},
+        {"w": "parasol", "g": "遮阳伞"}
+      ]}
+    ]
+  },
+  {
+    "w": "stellar",
+    "p": "/ˈstelər/",
+    "d": "a. 恒星的，星球的；（非正式）出色的，杰出的",
+    "levels": ["托福"],
+    "core": "与恒星有关的；引申指「明星级、极优秀」",
+    "ety": "源自拉丁语 stellaris「属星的」，来自 stella「星」；与希腊语 astḗr、英语 star 同源。",
+    "ph": "拉丁 stella=星 → 恒星的 → stellar",
+    "tip": "stella=星（想 constellation 星座、interstellar 星际），恒星发光耀眼，故引申「出色的」。",
+    "xex": [
+      {"en": "Stellar evolution describes how a star changes over its lifetime.", "zh": "恒星演化描述一颗恒星在其一生中如何变化。", "src": "造句"},
+      {"en": "stellar evolution / a stellar performance / stellar mass", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "astral", "ipa": "/ˈæstrəl/", "note": "同义「星的」，源自希腊 astr-；stellar 更常用于天文术语搭配"}
+    ],
+    "nu": "天文实义 stellar evolution「恒星演化」高频；口语引申义「极棒」（a stellar review）阅读也考。",
+    "rootfam": [
+      {"root": "stell", "meaning": "星", "words": [
+        {"w": "stellar", "g": "恒星的；出色的"},
+        {"w": "constellation", "g": "星座"},
+        {"w": "interstellar", "g": "星际的"}
+      ]}
+    ],
+    "senses": [
+      {"pos": "a.", "zh": "恒星的，星球的"},
+      {"pos": "a.", "zh": "（非正式）杰出的，一流的"}
+    ]
+  },
+  {
+    "w": "atmosphere",
+    "p": "/ˈætməsfɪr/",
+    "d": "n. 大气，大气层；空气；气氛，氛围",
+    "levels": ["托福"],
+    "core": "包裹行星或恒星的气体层；引申为环境给人的感受",
+    "ety": "由希腊语 atmós「蒸汽、气」+ sphaîra「球」构成，17 世纪造词，字面「（包住星球的）气之球」。",
+    "ph": "atmo（气、蒸汽）+ sphere（球）→ 包住星球的气球 → 大气层",
+    "tip": "atmo=气 + sphere=球，一层「气做的球壳」裹住地球就是大气层。",
+    "xex": [
+      {"en": "The Earth's atmosphere protects the surface by burning up most incoming meteors.", "zh": "地球大气层通过烧毁大多数闯入的流星来保护地表。", "src": "造句"},
+      {"en": "the upper atmosphere / a thin atmosphere / to enter the atmosphere", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "air", "ipa": "/er/", "note": "air 是我们呼吸的气体本身；atmosphere 强调整层气壳，或抽象「气氛」"}
+    ],
+    "nu": "天文中指行星气体层（Mars has a thin atmosphere）；日常义「气氛」（a relaxed atmosphere）同样高频，阅读两义都考。",
+    "rootfam": [
+      {"root": "sphere", "meaning": "球", "words": [
+        {"w": "atmosphere", "g": "大气层"},
+        {"w": "hemisphere", "g": "半球"},
+        {"w": "sphere", "g": "球体；领域"},
+        {"w": "stratosphere", "g": "平流层"}
+      ]}
+    ],
+    "senses": [
+      {"pos": "n.", "zh": "大气层，大气"},
+      {"pos": "n.", "zh": "气氛，氛围"}
+    ]
+  },
+  {
+    "w": "velocity",
+    "p": "/vəˈlɑːsəti/",
+    "d": "n. 速度，速率（有方向的速度）；迅速",
+    "levels": ["托福"],
+    "core": "物体运动的快慢及方向，是天体力学的关键量",
+    "ety": "源自拉丁语 velocitas「快速」，来自 velox「快的」；经法语 vélocité 进入英语。",
+    "ph": "拉丁 velox=快 + -ity → 快的程度 → 速度",
+    "tip": "联想 velocipede（早期自行车）——都含 veloc=「快」。",
+    "xex": [
+      {"en": "A spacecraft must reach a high enough velocity to escape the pull of Earth's gravity.", "zh": "航天器必须达到足够高的速度才能摆脱地球引力的拉扯。", "src": "造句"},
+      {"en": "escape velocity / orbital velocity / at high velocity", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "speed", "ipa": "/spiːd/", "note": "speed 只表快慢的大小；velocity 在物理中兼含方向，天文题用 velocity 更精确"}
+    ],
+    "nu": "高频术语 escape velocity「逃逸速度」——挣脱天体引力所需的最小速度，讲座常出现。",
+    "rootfam": [
+      {"root": "veloc", "meaning": "快", "words": [
+        {"w": "velocity", "g": "速度"},
+        {"w": "velocipede", "g": "早期自行车"}
+      ]}
+    ]
+  },
+  {
+    "w": "spectrum",
+    "p": "/ˈspektrəm/",
+    "d": "n. 光谱，谱；（可变化事物的）范围，幅度（复数 spectra）",
+    "levels": ["托福"],
+    "core": "光按波长展开的彩色带；天文借它分析天体成分与运动",
+    "ety": "直接借自拉丁语 spectrum「显现、影像」，来自 specere「看」；牛顿用它命名棱镜分出的彩色光带。",
+    "ph": "spect（看）+ -rum → 被看见显现之物 → 光谱",
+    "tip": "spect=看（想 inspect 检查、spectacle 景象），光谱就是「被看见」的那条彩虹带。",
+    "xex": [
+      {"en": "By studying a star's spectrum, astronomers can determine what elements it contains.", "zh": "通过研究一颗恒星的光谱，天文学家能判定它含有哪些元素。", "src": "造句"},
+      {"en": "the visible spectrum / the electromagnetic spectrum / a broad spectrum of", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "range", "ipa": "/reɪndʒ/", "note": "仅对应抽象义「范围」；光谱这一物理义 range 不能替"}
+    ],
+    "nu": "天文核心：分析 spectrum 可知天体的化学成分、温度，红移/蓝移还揭示其远离或接近（多普勒效应）。",
+    "rootfam": [
+      {"root": "spect", "meaning": "看", "words": [
+        {"w": "spectrum", "g": "光谱；范围"},
+        {"w": "spectacle", "g": "景象，奇观"},
+        {"w": "inspect", "g": "检查"},
+        {"w": "spectator", "g": "观众"}
+      ]}
+    ],
+    "senses": [
+      {"pos": "n.", "zh": "光谱，谱"},
+      {"pos": "n.", "zh": "（观点、可能性等的）范围、幅度"}
+    ]
+  },
+  {
+    "w": "interstellar",
+    "p": "/ˌɪntərˈstelər/",
+    "d": "a. 星际的，恒星之间的",
+    "levels": ["托福"],
+    "core": "存在于或发生在恒星与恒星之间的广阔空间",
+    "ety": "由拉丁前缀 inter-「在…之间」+ stella「星」+ -ar 构成，字面「恒星之间的」。",
+    "ph": "inter-（之间）+ stell（星）+ -ar → 恒星之间的 → 星际的",
+    "tip": "inter=之间（international 国际的），stell=星，合起来「星与星之间的」。",
+    "xex": [
+      {"en": "Interstellar space is not truly empty; it contains thin clouds of gas and dust.", "zh": "星际空间并非真正空无一物，其中含有稀薄的气体和尘埃云。", "src": "造句"},
+      {"en": "interstellar space / interstellar gas / interstellar dust", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "intergalactic", "ipa": "/ˌɪntərɡəˈlæktɪk/", "note": "尺度更大：inter-galactic 是「星系之间」，interstellar 只是「恒星之间」（同一星系内）"}
+    ],
+    "nu": "层级要记清：interplanetary（行星间）< interstellar（恒星间）< intergalactic（星系间）。星际介质 interstellar medium 是新恒星的原料。",
+    "rootfam": [
+      {"root": "inter", "meaning": "在…之间", "words": [
+        {"w": "interstellar", "g": "星际的"},
+        {"w": "interplanetary", "g": "行星际的"},
+        {"w": "international", "g": "国际的"},
+        {"w": "intersect", "g": "相交"}
+      ]}
+    ]
+  },
+  {
+    "w": "cluster",
+    "p": "/ˈklʌstər/",
+    "d": "n. 簇，团，群（如星团）  v. 群集，丛生，聚集",
+    "levels": ["托福"],
+    "core": "许多同类物体在引力或空间上紧密聚成的一群",
+    "ety": "古英语 clyster「一束、一簇」，与 clot「凝块」同族；本指果实、花朵成串聚生，天文借指恒星或星系成群。",
+    "ph": "与 clot（凝块）同源 → 凝在一起的一团 → 簇、团、星团",
+    "tip": "clu- 让人想到 cluster / clot / clump，都是「黏成一团」的意象。",
+    "xex": [
+      {"en": "A globular cluster can contain hundreds of thousands of stars bound tightly by gravity.", "zh": "一个球状星团可包含数十万颗被引力紧紧束缚的恒星。", "src": "造句"},
+      {"en": "a star cluster / a globular cluster / a galaxy cluster", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "group", "ipa": "/ɡruːp/", "note": "泛指一群；cluster 强调紧密聚集、扎堆，密度感更强"}
+    ],
+    "nu": "天文两类：star cluster 星团（恒星成群）与 galaxy cluster 星系团（星系成群）。动词义「聚集」（stars cluster near the core）也常考。",
+    "senses": [
+      {"pos": "n.", "zh": "（星）团，簇，群"},
+      {"pos": "v.", "zh": "群集，丛生，聚集"}
+    ]
+  }
+]

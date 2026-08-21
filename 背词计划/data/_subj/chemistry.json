@@ -1,0 +1,699 @@
+[
+  {
+    "w": "molecule",
+    "p": "/ˈmɑːlɪkjuːl/",
+    "d": "n. 分子（能独立存在、保持物质化学性质的最小微粒）",
+    "levels": ["托福"],
+    "core": "保持物质性质的最小单元",
+    "ety": "源自拉丁 moles「团块，一堆」+ 指小后缀 -cula → 新拉丁 molecula「极小的一团」，18世纪科学界造词。同源 mole（摩尔）、molecular；与「鼹鼠 mole」纯属同形异源。",
+    "ph": "mole（团块）+ cule（小）→ 极小的一团 → 分子",
+    "tip": "把 mole 想成「一小堆物质」，加 -cule「小」→ 小到肉眼看不见的一团 = 分子。",
+    "xex": [
+      {"en": "A water molecule is made up of two hydrogen atoms and one oxygen atom.", "zh": "一个水分子由两个氢原子和一个氧原子构成。", "src": "造句"},
+      {"en": "water molecule / molecule of gas / large molecule", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "particle", "ipa": "/ˈpɑːrtɪkl/", "note": "泛指微粒，可指原子/分子/更小者，范围比 molecule 宽"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "mole", "meaning": "团块（摩尔量）", "words": [
+        {"w": "molecule", "g": "n. 分子"},
+        {"w": "molecular", "g": "a. 分子的"},
+        {"w": "mole", "g": "n. 摩尔（物质的量单位）"},
+        {"w": "molar", "g": "a. 摩尔的；n. 臼齿"}
+      ]}
+    ]
+  },
+  {
+    "w": "atom",
+    "p": "/ˈætəm/",
+    "d": "n. 原子（化学变化中的最小微粒）；微量，微粒",
+    "levels": ["托福"],
+    "core": "不可再分的最小化学粒子",
+    "ety": "源自希腊 a-（不）+ tomos「切割的」（来自 temnein「切」）→ atomos「不可切分的」，古希腊哲人德谟克利特用来指物质的终极颗粒。同源 anatomy（解剖=向上切）、-tomy（切开术）。",
+    "ph": "a（不）+ tom（切）→ 不可再切 → 原子",
+    "tip": "anatomy「解剖」里也有 tom「切」；atom = 切不动的最小颗粒。",
+    "xex": [
+      {"en": "Atoms combine in fixed ratios to form molecules.", "zh": "原子以固定比例结合形成分子。", "src": "造句"},
+      {"en": "carbon atom / atoms bond together / split the atom", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "particle", "ipa": "/ˈpɑːrtɪkl/", "note": "泛指微粒；atom 特指化学不可分的基本粒子"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "tom", "meaning": "切", "words": [
+        {"w": "atom", "g": "n. 原子（不可切分）"},
+        {"w": "anatomy", "g": "n. 解剖（学）"},
+        {"w": "dichotomy", "g": "n. 二分，对立"},
+        {"w": "appendectomy", "g": "n. 阑尾切除术"},
+        {"w": "epitome", "g": "n. 缩影，典型"}
+      ]}
+    ]
+  },
+  {
+    "w": "reaction",
+    "p": "/riˈækʃn/",
+    "d": "n. 化学反应；反应，回应；反作用力",
+    "levels": ["托福"],
+    "core": "物质相互作用而改变",
+    "ety": "源自拉丁 re-（回，反）+ agere「做，驱动」→ 中世纪拉丁 reactio「回做，反作用」。同源 act、agent、react；ag/act 表「做」。化学里指物质相互作用生成新物质的过程。",
+    "ph": "re（反，回）+ act（做）+ ion（名词）→ 相互作用 → 反应",
+    "tip": "act「做」+ re「回」= 你做我回 → 相互作用 = 反应；化学反应生成新物质。",
+    "xex": [
+      {"en": "A chemical reaction occurs when reactants are converted into products.", "zh": "当反应物转化为生成物时，就发生了化学反应。", "src": "造句"},
+      {"en": "chemical reaction / reaction rate / trigger a reaction", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "response", "ipa": "/rɪˈspɑːns/", "note": "指回应/反应，日常义；无「化学反应」这一学科义"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "act/ag", "meaning": "做，驱动", "words": [
+        {"w": "reaction", "g": "n. 反应"},
+        {"w": "react", "g": "v. 起反应"},
+        {"w": "agent", "g": "n. 试剂；代理"},
+        {"w": "active", "g": "a. 活跃的"},
+        {"w": "interact", "g": "v. 相互作用"}
+      ]}
+    ],
+    "senses": [
+      {"g": "n.（化学）化学反应，如 chemical reaction"},
+      {"g": "n. 反应，回应，如 an emotional reaction"},
+      {"g": "n.（物理）反作用力，如 action and reaction"}
+    ]
+  },
+  {
+    "w": "compound",
+    "p": "/ˈkɑːmpaʊnd/",
+    "d": "n. 化合物（两种以上元素按定比结合）；混合物 v. 混合；使加重 a. 复合的",
+    "levels": ["托福"],
+    "core": "多成分合在一起",
+    "ety": "源自拉丁 com-（一起）+ ponere「放置」→ componere「放到一起，组合」，经古法语 compondre 进入英语。同源 component、compose、position。化学里指多种元素化合而成的物质。",
+    "ph": "com（一起）+ pon/pound（放）→ 放到一起 → 化合物 / 复合的",
+    "tip": "compose「组合」同根；把元素 pon「放」到 com「一起」= compound 化合物。",
+    "xex": [
+      {"en": "Water is a compound formed from hydrogen and oxygen.", "zh": "水是由氢和氧形成的化合物。", "src": "造句"},
+      {"en": "chemical compound / organic compound / compound of two elements", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mixture", "ipa": "/ˈmɪkstʃər/", "note": "混合物成分未化合、比例不定；compound 是定比化学结合，性质全新"}
+    ],
+    "nu": "n. / v. / a.",
+    "rootfam": [
+      {"root": "pon/pos", "meaning": "放置", "words": [
+        {"w": "compound", "g": "n. 化合物"},
+        {"w": "component", "g": "n. 组成部分"},
+        {"w": "compose", "g": "v. 组成"},
+        {"w": "expose", "g": "v. 暴露"},
+        {"w": "deposit", "g": "n./v. 沉积；存放"}
+      ]}
+    ],
+    "senses": [
+      {"g": "n.（化学）化合物，如 organic compound"},
+      {"g": "v. 使加重，使恶化，如 compound the problem"},
+      {"g": "a. 复合的，如 compound eye 复眼"}
+    ]
+  },
+  {
+    "w": "element",
+    "p": "/ˈelɪmənt/",
+    "d": "n. 元素（不能再用化学方法分解的纯物质）；要素，成分",
+    "levels": ["托福"],
+    "core": "构成物质的基本纯质",
+    "ety": "源自拉丁 elementum「基本组成，字母表首要之物」，词源不确，一说与拉丁字母 L-M-N 序列有关。古人以水火土气为「四元素」，近代化学用指周期表上的基本纯物质。",
+    "ph": "element（基本组成）→ 最基本的一份 → 元素",
+    "tip": "elementary（基础的）同根；周期表 118 个 element 就是构成万物的「基本要素」。",
+    "xex": [
+      {"en": "Every element is defined by the number of protons in its atoms.", "zh": "每种元素都由其原子中质子的数目来界定。", "src": "造句"},
+      {"en": "chemical element / periodic table of elements / trace element", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "component", "ipa": "/kəmˈpoʊnənt/", "note": "指组成部件，泛用；element 在化学专指周期表上的纯物质"}
+    ],
+    "nu": "n.",
+    "senses": [
+      {"g": "n.（化学）元素，如 chemical element"},
+      {"g": "n. 要素，成分，如 a key element of success"},
+      {"g": "n.（复）恶劣天气，如 exposed to the elements"}
+    ]
+  },
+  {
+    "w": "catalyst",
+    "p": "/ˈkætəlɪst/",
+    "d": "n. 催化剂（加快反应而自身不被消耗）；促成变化的因素",
+    "levels": ["托福"],
+    "core": "加速反应而自身不变",
+    "ety": "源自希腊 kata-（向下，彻底）+ lyein「松开，溶解」→ katalysis「解开」，19世纪化学家借来指「使反应松动、加速」的物质。同源 analysis、paralysis（lys「松解」）。",
+    "ph": "cata（彻底）+ lys（松解）+ t → 彻底松开反应的键 → 催化剂",
+    "tip": "analysis「分析」也含 lys「拆解」；catalyst 把反应「拆松」加速，但自己毫发无损。",
+    "xex": [
+      {"en": "A catalyst speeds up a reaction without being consumed by it.", "zh": "催化剂加快反应，而自身不被消耗。", "src": "造句"},
+      {"en": "act as a catalyst / enzyme catalyst / catalyst for change", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "enzyme", "ipa": "/ˈenzaɪm/", "note": "生物催化剂，是催化剂的一种；catalyst 为上位泛称"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "lys/lyt", "meaning": "松解，分解", "words": [
+        {"w": "catalyst", "g": "n. 催化剂"},
+        {"w": "analysis", "g": "n. 分析"},
+        {"w": "paralysis", "g": "n. 瘫痪"},
+        {"w": "electrolysis", "g": "n. 电解"},
+        {"w": "hydrolysis", "g": "n. 水解"}
+      ]}
+    ]
+  },
+  {
+    "w": "solution",
+    "p": "/səˈluːʃn/",
+    "d": "n. 溶液（溶质均匀分散于溶剂）；解决办法，解答",
+    "levels": ["托福"],
+    "core": "溶解形成的均匀液体",
+    "ety": "源自拉丁 solvere「松开，解开」→ solutio「解开，溶解」，经法语进入英语。同源 solve、dissolve、solvent；solv/solut 表「松解」。物质「松散溶开」于液体即成溶液。",
+    "ph": "solut（松解，溶）+ ion（名词）→ 溶开之物 → 溶液 / 解答",
+    "tip": "solve「解决」同根；难题被「解开」= 解答，物质被「解开」= 溶液，一词两义同源。",
+    "xex": [
+      {"en": "When salt dissolves in water, it forms a saltwater solution.", "zh": "盐溶于水时，就形成盐水溶液。", "src": "造句"},
+      {"en": "aqueous solution / saturated solution / dilute solution", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "mixture", "ipa": "/ˈmɪkstʃər/", "note": "泛指混合物，可不均匀；solution 特指溶质均匀分散的液体"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "solv/solut", "meaning": "松解，溶解", "words": [
+        {"w": "solution", "g": "n. 溶液；解答"},
+        {"w": "dissolve", "g": "v. 溶解"},
+        {"w": "solvent", "g": "n. 溶剂"},
+        {"w": "solve", "g": "v. 解决"},
+        {"w": "soluble", "g": "a. 可溶的"}
+      ]}
+    ],
+    "senses": [
+      {"g": "n.（化学）溶液，如 aqueous solution"},
+      {"g": "n. 解决办法，如 find a solution"},
+      {"g": "n. 解答，如 the solution to the equation"}
+    ]
+  },
+  {
+    "w": "solvent",
+    "p": "/ˈsɑːlvənt/",
+    "d": "n. 溶剂（溶解溶质的液体，常为水）a. 有溶解力的；有偿付能力的",
+    "levels": ["托福"],
+    "core": "能溶解他物的液体",
+    "ety": "源自拉丁 solvere「松开，溶解」的现在分词 solvens「正在溶解的」。与 solution、dissolve、solve 同根 solv「松解」。化学中指承担溶解作用的那一方。",
+    "ph": "solv（溶）+ ent（做…的物/者）→ 起溶解作用者 → 溶剂",
+    "tip": "水是「万能溶剂」universal solvent；solvent = 主动去「溶开」别人的那个液体。",
+    "xex": [
+      {"en": "Water is often called the universal solvent because it dissolves so many substances.", "zh": "水常被称为万能溶剂，因为它能溶解如此多的物质。", "src": "造句"},
+      {"en": "organic solvent / universal solvent / polar solvent", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "medium", "ipa": "/ˈmiːdiəm/", "note": "泛指承载/介质；solvent 特指溶解溶质的那种液体介质"}
+    ],
+    "nu": "n. / a.",
+    "senses": [
+      {"g": "n.（化学）溶剂，如 organic solvent"},
+      {"g": "a. 有偿付能力的，如 a solvent company"}
+    ]
+  },
+  {
+    "w": "solute",
+    "p": "/ˈsɑːluːt/",
+    "d": "n. 溶质（被溶解、分散于溶剂中的物质）",
+    "levels": ["托福"],
+    "core": "被溶解的那一方",
+    "ety": "源自拉丁 solvere「溶解」的过去分词 solutus「已被溶解的」。与 solvent（溶剂）、solution（溶液）同根 solut，构成溶液三角：溶质 + 溶剂 → 溶液。",
+    "ph": "solut（被溶解）+ e → 被溶开之物 → 溶质",
+    "tip": "-ute 收尾偏「被动、已被溶」的一方；盐溶进水，盐是 solute，水是 solvent。",
+    "xex": [
+      {"en": "In a saltwater solution, salt is the solute and water is the solvent.", "zh": "在盐水溶液中，盐是溶质，水是溶剂。", "src": "造句"},
+      {"en": "concentration of the solute / dissolved solute", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "solvent", "ipa": "/ˈsɑːlvənt/", "note": "反向概念：solvent 是溶解方（水），solute 是被溶方（盐），成对使用"}
+    ],
+    "nu": "n."
+  },
+  {
+    "w": "acid",
+    "p": "/ˈæsɪd/",
+    "d": "n. 酸（能释放氢离子、pH 小于 7 的物质）a. 酸的；尖刻的",
+    "levels": ["托福"],
+    "core": "释放氢离子的酸性物质",
+    "ety": "源自拉丁 acidus「酸的」，来自 acere「发酸」，同源 acute（尖的）、acrid（辛辣的）、acumen（敏锐），共享 ac「尖，酸」之义。化学里与碱 base 相对。",
+    "ph": "ac（尖，酸）+ id（形容词/物）→ 有酸味的东西 → 酸",
+    "tip": "acute「尖锐的」同根 ac「尖」；酸刺激舌头「尖尖的」→ acid。",
+    "xex": [
+      {"en": "An acid turns blue litmus paper red.", "zh": "酸能使蓝色石蕊试纸变红。", "src": "造句"},
+      {"en": "hydrochloric acid / acid rain / strong acid", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "sour", "ipa": "/ˈsaʊər/", "note": "指味道酸，日常用；acid 是化学术语，兼指物质类别"}
+    ],
+    "nu": "n. / a.",
+    "rootfam": [
+      {"root": "ac", "meaning": "尖，酸", "words": [
+        {"w": "acid", "g": "n. 酸"},
+        {"w": "acute", "g": "a. 尖锐的；急性的"},
+        {"w": "acrid", "g": "a. 辛辣的，刺鼻的"},
+        {"w": "acumen", "g": "n. 敏锐"},
+        {"w": "acidic", "g": "a. 酸性的"}
+      ]}
+    ],
+    "senses": [
+      {"g": "n.（化学）酸，如 hydrochloric acid"},
+      {"g": "a. 尖刻的，如 acid remarks"}
+    ]
+  },
+  {
+    "w": "base",
+    "p": "/beɪs/",
+    "d": "n. 碱（能中和酸、pH 大于 7 的物质）；基础，底部 v. 以…为基础",
+    "levels": ["托福"],
+    "core": "与酸相对的碱性物质",
+    "ety": "源自希腊 basis「踏脚，基础」→ 拉丁 basis，经法语进入英语。同源 basis、basic、basement。化学里 base「碱」取「与酸相对的基础性物质」之义，能中和酸生成盐和水。",
+    "ph": "base（基础）→ 与酸相对的基础物质 → 碱",
+    "tip": "basic 既是「基础的」也是「碱性的」——base「碱」就是化学里的 basic 一方，和 acid 打配。",
+    "xex": [
+      {"en": "A base reacts with an acid to produce a salt and water.", "zh": "碱与酸反应生成盐和水。", "src": "造句"},
+      {"en": "strong base / acid and base / neutralize with a base", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "alkali", "ipa": "/ˈælkəlaɪ/", "note": "特指可溶于水的碱；base 为上位泛称，含不溶性碱"}
+    ],
+    "nu": "n. / v.",
+    "senses": [
+      {"g": "n.（化学）碱，如 acid and base"},
+      {"g": "n. 基础，底部，如 the base of the mountain"},
+      {"g": "v. 以…为基础，如 based on facts"}
+    ]
+  },
+  {
+    "w": "bond",
+    "p": "/bɑːnd/",
+    "d": "n. 化学键（原子间的结合力）；联结，纽带；债券 v.（使）结合",
+    "levels": ["托福"],
+    "core": "把原子连在一起的结合力",
+    "ety": "源自古英语/古诺尔斯 band「捆绑之物」，与 band、bind 同源，中古英语拼作 bond。化学里指原子通过共用或转移电子形成的「捆绑」，即化学键。",
+    "ph": "bond（捆绑）→ 把原子绑在一起 → 化学键",
+    "tip": "bind「捆」→ bond「结合」；原子之间被电子「绑」在一起 = chemical bond。",
+    "xex": [
+      {"en": "A covalent bond forms when two atoms share a pair of electrons.", "zh": "当两个原子共用一对电子时，就形成共价键。", "src": "造句"},
+      {"en": "chemical bond / covalent bond / bond breaks", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "link", "ipa": "/lɪŋk/", "note": "泛指连接；bond 在化学专指原子间的结合力"}
+    ],
+    "nu": "n. / v.",
+    "senses": [
+      {"g": "n.（化学）化学键，如 covalent bond"},
+      {"g": "n. 纽带，联结，如 a bond between friends"},
+      {"g": "n. 债券，如 government bonds"}
+    ]
+  },
+  {
+    "w": "ion",
+    "p": "/ˈaɪən/",
+    "d": "n. 离子（带正电或负电的原子或原子团）",
+    "levels": ["托福"],
+    "core": "带电的原子或原子团",
+    "ety": "源自希腊 ion「行走者」（eimi「去」的现在分词），1834 年法拉第采纳、由 Whewell 提议，因离子在电解质中「奔向」电极而得名。cation 向阴极「下行」，anion 向阳极「上行」。",
+    "ph": "ion（行走者）→ 在电场中奔走的带电粒子 → 离子",
+    "tip": "离子会朝电极「跑」，希腊 ion「走」；正负粒子在溶液里来回奔走。",
+    "xex": [
+      {"en": "When an atom loses or gains electrons, it becomes a charged ion.", "zh": "当原子失去或得到电子时，就变成带电的离子。", "src": "造句"},
+      {"en": "positive ion / negative ion / hydrogen ion", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "particle", "ipa": "/ˈpɑːrtɪkl/", "note": "泛指微粒；ion 特指带电的原子或原子团"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "ion", "meaning": "带电粒子", "words": [
+        {"w": "ion", "g": "n. 离子"},
+        {"w": "cation", "g": "n. 阳离子"},
+        {"w": "anion", "g": "n. 阴离子"},
+        {"w": "ionize", "g": "v. 电离，使离子化"},
+        {"w": "ionic", "g": "a. 离子的"}
+      ]}
+    ]
+  },
+  {
+    "w": "molecular",
+    "p": "/məˈlekjələr/",
+    "d": "a. 分子的；由分子构成的",
+    "levels": ["托福"],
+    "core": "跟分子有关的",
+    "ety": "molecule（分子）+ 形容词后缀 -ar（表「属于…的」）。与 molecule 同根 mole「团块」+ 指小 -cule。听力讲座里高频修饰 structure、weight、bond 等。",
+    "ph": "molecul(e)（分子）+ ar（…的）→ 分子的",
+    "tip": "记住 molecule「分子」，去 e 加 -ar 就是形容词 molecular「分子的」。",
+    "xex": [
+      {"en": "The molecular structure of DNA is a double helix.", "zh": "DNA 的分子结构是双螺旋。", "src": "造句"},
+      {"en": "molecular structure / molecular weight / molecular biology", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "atomic", "ipa": "/əˈtɑːmɪk/", "note": "指原子层面；molecular 指分子层面，尺度更大一级"}
+    ],
+    "nu": "a."
+  },
+  {
+    "w": "reactant",
+    "p": "/riˈæktənt/",
+    "d": "n. 反应物（参与化学反应、被消耗的起始物质）",
+    "levels": ["托福"],
+    "core": "反应中被消耗的起始物",
+    "ety": "react（起反应）+ 名词后缀 -ant（表「做…的物/者」）。与 reaction、react 同根 act/ag「做」。化学方程式中箭头左边的即为 reactant，右边为 product。",
+    "ph": "react（起反应）+ ant（做…的物）→ 参与反应之物 → 反应物",
+    "tip": "reactant 在箭头左，product 在箭头右；-ant 结尾的这个是「投进去反应」的一方。",
+    "xex": [
+      {"en": "In this equation, hydrogen and oxygen are the reactants and water is the product.", "zh": "在这个方程式中，氢和氧是反应物，水是生成物。", "src": "造句"},
+      {"en": "reactants and products / limiting reactant", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "product", "ipa": "/ˈprɑːdʌkt/", "note": "反向概念：reactant 是反应前的原料，product 是反应后的生成物"}
+    ],
+    "nu": "n."
+  },
+  {
+    "w": "product",
+    "p": "/ˈprɑːdʌkt/",
+    "d": "n. 生成物（化学反应后产生的物质）；产品；乘积",
+    "levels": ["托福"],
+    "core": "反应或生产得出的东西",
+    "ety": "源自拉丁 pro-（向前）+ ducere「引导，带领」→ productum「被引出之物」。同源 produce、conduct、reduce（duc/duct「引导」）。化学里指反应「引出」的新物质。",
+    "ph": "pro（向前）+ duct（引导）→ 被引出之物 → 生成物 / 产品",
+    "tip": "produce「生产」同根；反应「产出」的新物质 = product，与 reactant 成对。",
+    "xex": [
+      {"en": "The products of combustion are usually carbon dioxide and water.", "zh": "燃烧的生成物通常是二氧化碳和水。", "src": "造句"},
+      {"en": "reaction product / by-product / products of a reaction", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "reactant", "ipa": "/riˈæktənt/", "note": "反向概念：product 是反应后生成物，reactant 是反应前原料"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "duc/duct", "meaning": "引导", "words": [
+        {"w": "product", "g": "n. 生成物；产品"},
+        {"w": "produce", "g": "v. 生产"},
+        {"w": "reduce", "g": "v. 还原；减少"},
+        {"w": "conduct", "g": "v. 传导；进行"},
+        {"w": "introduce", "g": "v. 引入"}
+      ]}
+    ],
+    "senses": [
+      {"g": "n.（化学）生成物，如 reaction product"},
+      {"g": "n. 产品，如 a new product"},
+      {"g": "n.（数学）乘积，如 the product of two numbers"}
+    ]
+  },
+  {
+    "w": "oxidation",
+    "p": "/ˌɑːksɪˈdeɪʃn/",
+    "d": "n. 氧化（物质失去电子、常与氧结合的过程）",
+    "levels": ["托福"],
+    "core": "失去电子/与氧结合",
+    "ety": "由 oxide（氧化物）派生，词根 oxy 源自希腊 oxys「尖锐的，酸的」——拉瓦锡误以为氧是「成酸元素」而命名 oxygen。oxidation 指与氧结合或更广义的失电子过程。",
+    "ph": "oxid(e)（氧化物）+ ation（过程）→ 与氧结合的过程 → 氧化",
+    "tip": "铁生锈就是最常见的 oxidation；oxy「尖酸」→ oxygen 氧 → oxidation 氧化，一串同根。",
+    "xex": [
+      {"en": "The rusting of iron is a slow oxidation reaction.", "zh": "铁生锈是一种缓慢的氧化反应。", "src": "造句"},
+      {"en": "oxidation reaction / oxidation and reduction / prevent oxidation", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "reduction", "ipa": "/rɪˈdʌkʃn/", "note": "反向概念：oxidation 失电子，reduction 得电子，二者总成对（redox）"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "oxy", "meaning": "氧，尖酸", "words": [
+        {"w": "oxidation", "g": "n. 氧化"},
+        {"w": "oxygen", "g": "n. 氧"},
+        {"w": "oxide", "g": "n. 氧化物"},
+        {"w": "oxidize", "g": "v. 使氧化"},
+        {"w": "antioxidant", "g": "n. 抗氧化剂"}
+      ]}
+    ]
+  },
+  {
+    "w": "reduction",
+    "p": "/rɪˈdʌkʃn/",
+    "d": "n. 还原（物质获得电子的过程）；减少，缩小",
+    "levels": ["托福"],
+    "core": "获得电子/减少",
+    "ety": "源自拉丁 re-（回）+ ducere「引导」→ reductio「带回」。同源 reduce、product、conduct（duc「引导」）。化学里指把金属从氧化物「带回」到单质，即得电子还原。",
+    "ph": "re（回）+ duct（引导）+ ion → 带回到原态 → 还原 / 减少",
+    "tip": "reduce「减少」同根；把氧化物「带回」为金属就是化学的 reduction 还原，与 oxidation 配对。",
+    "xex": [
+      {"en": "In reduction, a substance gains electrons and its oxidation state decreases.", "zh": "在还原过程中，物质获得电子，其氧化态下降。", "src": "造句"},
+      {"en": "oxidation and reduction / reduction reaction / price reduction", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "oxidation", "ipa": "/ˌɑːksɪˈdeɪʃn/", "note": "反向概念：reduction 得电子，oxidation 失电子，二者成对"}
+    ],
+    "nu": "n.",
+    "senses": [
+      {"g": "n.（化学）还原，如 reduction reaction"},
+      {"g": "n. 减少，缩减，如 a reduction in cost"}
+    ]
+  },
+  {
+    "w": "concentration",
+    "p": "/ˌkɑːnsnˈtreɪʃn/",
+    "d": "n. 浓度（单位体积溶液中溶质的量）；专注；集中",
+    "levels": ["托福"],
+    "core": "单位体积里溶质的多少",
+    "ety": "源自拉丁 con-（一起）+ centrum「中心」→ concentrare「聚向中心」。同源 center、centric。化学里指溶质「聚集」于溶液中的密集程度。",
+    "ph": "con（一起）+ centr（中心）+ ation → 向中心聚集 → 浓度 / 专注",
+    "tip": "center「中心」同根；物质越往「中心」聚 → 浓度越高；注意力越聚 → 越专注。",
+    "xex": [
+      {"en": "Increasing the concentration of reactants usually speeds up a reaction.", "zh": "提高反应物的浓度通常会加快反应。", "src": "造句"},
+      {"en": "high concentration / concentration of a solution / oxygen concentration", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "density", "ipa": "/ˈdensəti/", "note": "指单位体积的质量；concentration 指单位体积中溶质的量，二者不同"}
+    ],
+    "nu": "n.",
+    "senses": [
+      {"g": "n.（化学）浓度，如 high concentration"},
+      {"g": "n. 专注，如 lose concentration"},
+      {"g": "n. 集中，聚集，如 a concentration of troops"}
+    ]
+  },
+  {
+    "w": "dissolve",
+    "p": "/dɪˈzɑːlv/",
+    "d": "v.（使）溶解；解散，结束；消散",
+    "levels": ["托福"],
+    "core": "散开、溶入液体",
+    "ety": "源自拉丁 dis-（分开）+ solvere「松开，溶解」→ dissolvere「彻底松开」。同源 solution、solvent、solve（solv「松解」）。物质在液体中「彻底松散开」即溶解。",
+    "ph": "dis（分开）+ solve（松解）→ 彻底散开 → 溶解 / 解散",
+    "tip": "solve「解开」同根；把固体「彻底解开」散进水里 = dissolve；把组织「解开」= 解散。",
+    "xex": [
+      {"en": "Sugar dissolves quickly in hot water but slowly in cold water.", "zh": "糖在热水中溶解得快，在冷水中溶解得慢。", "src": "造句"},
+      {"en": "dissolve in water / readily dissolve / dissolve the parliament", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "melt", "ipa": "/melt/", "note": "指受热熔化（固→液）；dissolve 指散入溶剂形成溶液，机制不同"}
+    ],
+    "nu": "v.",
+    "senses": [
+      {"g": "v.（化学）溶解，如 dissolve in water"},
+      {"g": "v. 解散，结束，如 dissolve a company"},
+      {"g": "v.（使）消散，如 dissolve into tears"}
+    ]
+  },
+  {
+    "w": "precipitate",
+    "p": "/prɪˈsɪpɪteɪt/",
+    "d": "v.（使）沉淀（从溶液中析出固体）；使突然发生 n. 沉淀物 a. 仓促的",
+    "levels": ["托福"],
+    "core": "从溶液里析出固体",
+    "ety": "源自拉丁 prae-（前，向下）+ caput「头」→ praecipitare「头朝下猛冲，坠落」。固体从溶液里「坠落」沉到底部即 precipitate 沉淀；引申「使猛然发生」。",
+    "ph": "prae（向下）+ cipit（头，来自 caput）+ ate → 头朝下坠落 → 沉淀",
+    "tip": "capital「首都/头」同根 caput「头」；固体「一头栽下」沉底 = precipitate。",
+    "xex": [
+      {"en": "Mixing the two solutions causes a white solid to precipitate out.", "zh": "把两种溶液混合会使一种白色固体沉淀析出。", "src": "造句"},
+      {"en": "precipitate out of solution / form a precipitate", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "deposit", "ipa": "/dɪˈpɑːzɪt/", "note": "泛指沉积、堆积；precipitate 特指从溶液中化学析出固体"}
+    ],
+    "nu": "v. / n. / a.",
+    "rootfam": [
+      {"root": "cipit/capit", "meaning": "头", "words": [
+        {"w": "precipitate", "g": "v. 沉淀；使突发"},
+        {"w": "capital", "g": "n. 首都；资本"},
+        {"w": "captain", "g": "n. 队长，船长"},
+        {"w": "decapitate", "g": "v. 斩首"},
+        {"w": "per capita", "g": "adv. 人均"}
+      ]}
+    ],
+    "senses": [
+      {"g": "v./n.（化学）沉淀，如 form a precipitate"},
+      {"g": "v. 使突然发生，如 precipitate a crisis"},
+      {"g": "a. 仓促的，鲁莽的，如 a precipitate decision"}
+    ]
+  },
+  {
+    "w": "synthesis",
+    "p": "/ˈsɪnθəsɪs/",
+    "d": "n. 合成（由简单物质构建复杂物质）；综合",
+    "levels": ["托福"],
+    "core": "把成分组合成整体",
+    "ety": "源自希腊 syn-（一起）+ tithenai「放置」→ synthesis「放到一起，组合」。同源 thesis（论点）、hypothesis（假设）。化学里指把简单物质「组合」成复杂化合物。",
+    "ph": "syn（一起）+ thesis（放置）→ 放到一起 → 合成",
+    "tip": "thesis「论点」同根「放置」；合成 = 把原料「放到一起」造出新物质，与 analysis「拆开」相对。",
+    "xex": [
+      {"en": "Plants use photosynthesis to synthesize glucose from carbon dioxide and water.", "zh": "植物通过光合作用由二氧化碳和水合成葡萄糖。", "src": "造句"},
+      {"en": "protein synthesis / chemical synthesis / synthesis of a compound", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "analysis", "ipa": "/əˈnæləsɪs/", "note": "反向概念：synthesis 是组合造出整体，analysis 是拆解成分"}
+    ],
+    "nu": "n.",
+    "rootfam": [
+      {"root": "thes/thet", "meaning": "放置", "words": [
+        {"w": "synthesis", "g": "n. 合成"},
+        {"w": "thesis", "g": "n. 论点；论文"},
+        {"w": "hypothesis", "g": "n. 假设"},
+        {"w": "antithesis", "g": "n. 对立面"},
+        {"w": "synthetic", "g": "a. 合成的，人造的"}
+      ]}
+    ]
+  },
+  {
+    "w": "aqueous",
+    "p": "/ˈeɪkwiəs/",
+    "d": "a. 水的；含水的；水溶液的",
+    "levels": ["托福"],
+    "core": "以水为溶剂的",
+    "ety": "源自拉丁 aqua「水」+ 形容词后缀 -ous。同源 aquarium（水族馆）、aquatic（水生的）、aqueduct（引水渠）。化学里 aqueous solution 特指以水为溶剂的溶液。",
+    "ph": "aqu(a)（水）+ eous（…的）→ 水的",
+    "tip": "aquarium「水族馆」同根 aqua「水」；aqueous solution 就是「水溶液」。",
+    "xex": [
+      {"en": "Table salt readily dissolves to form an aqueous solution.", "zh": "食盐很容易溶解形成水溶液。", "src": "造句"},
+      {"en": "aqueous solution / aqueous phase", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "watery", "ipa": "/ˈwɔːtəri/", "note": "日常义「含水的、稀的」；aqueous 为化学术语，专指以水为溶剂"}
+    ],
+    "nu": "a.",
+    "rootfam": [
+      {"root": "aqua", "meaning": "水", "words": [
+        {"w": "aqueous", "g": "a. 水的，水溶液的"},
+        {"w": "aquarium", "g": "n. 水族馆"},
+        {"w": "aquatic", "g": "a. 水生的"},
+        {"w": "aqueduct", "g": "n. 引水渠"},
+        {"w": "aquifer", "g": "n. 含水层"}
+      ]}
+    ]
+  },
+  {
+    "w": "evaporate",
+    "p": "/ɪˈvæpəreɪt/",
+    "d": "v.（使）蒸发（液体变为气体）；消失，不复存在",
+    "levels": ["托福"],
+    "core": "液体化为气体逸散",
+    "ety": "源自拉丁 e-（出）+ vapor「蒸气」→ evaporare「化为蒸气散出」。同源 vapor（蒸气）、vaporize。液体表面分子「化气逸出」即蒸发。",
+    "ph": "e（出）+ vapor（蒸气）+ ate → 化气逸出 → 蒸发",
+    "tip": "vapor「蒸气」同根；水面把 vapor「放出去」= evaporate；也引申「（希望等）化为乌有」。",
+    "xex": [
+      {"en": "As the water evaporates, the dissolved salt is left behind as crystals.", "zh": "水蒸发后，溶解的盐以晶体的形式留了下来。", "src": "造句"},
+      {"en": "water evaporates / evaporate into the air / heat until it evaporates", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "vaporize", "ipa": "/ˈveɪpəraɪz/", "note": "同指化为蒸气，常含骤然/强力义；evaporate 多为常温缓慢蒸发"}
+    ],
+    "nu": "v.",
+    "rootfam": [
+      {"root": "vapor", "meaning": "蒸气", "words": [
+        {"w": "evaporate", "g": "v. 蒸发"},
+        {"w": "vapor", "g": "n. 蒸气"},
+        {"w": "vaporize", "g": "v. 汽化"},
+        {"w": "evaporation", "g": "n. 蒸发（作用）"},
+        {"w": "vaporous", "g": "a. 蒸气的，多雾的"}
+      ]}
+    ],
+    "senses": [
+      {"g": "v.（化学）蒸发，如 water evaporates"},
+      {"g": "v. 消失，化为乌有，如 hopes evaporated"}
+    ]
+  },
+  {
+    "w": "crystallize",
+    "p": "/ˈkrɪstəlaɪz/",
+    "d": "v.（使）结晶（形成规则晶体）；（使）明确成形",
+    "levels": ["托福"],
+    "core": "形成规则晶体",
+    "ety": "由 crystal（晶体）+ 动词后缀 -ize 构成。crystal 源自希腊 krystallos「冰，水晶」（来自 kryos「冰冷」）。物质从溶液或熔体中「结成规则晶体」即 crystallize。",
+    "ph": "crystal（晶体）+ ize（使…）→ 使结成晶体 → 结晶",
+    "tip": "crystal「水晶」加 -ize；盐水蒸干后盐「长成晶体」= crystallize；想法「成形明朗」也用它。",
+    "xex": [
+      {"en": "As the solution cools, sugar begins to crystallize out.", "zh": "溶液冷却时，糖开始结晶析出。", "src": "造句"},
+      {"en": "crystallize out / crystallize into / crystallize an idea", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "solidify", "ipa": "/səˈlɪdɪfaɪ/", "note": "泛指凝固变硬；crystallize 特指形成有规则结构的晶体"}
+    ],
+    "nu": "v.",
+    "rootfam": [
+      {"root": "cryst", "meaning": "晶，冰", "words": [
+        {"w": "crystallize", "g": "v. 结晶"},
+        {"w": "crystal", "g": "n. 晶体，水晶"},
+        {"w": "crystalline", "g": "a. 结晶的，透明的"},
+        {"w": "crystallization", "g": "n. 结晶（作用）"}
+      ]}
+    ],
+    "senses": [
+      {"g": "v.（化学）结晶，如 crystallize out"},
+      {"g": "v.（使）明确成形，如 crystallize one's thoughts"}
+    ]
+  },
+  {
+    "w": "soluble",
+    "p": "/ˈsɑːljəbl/",
+    "d": "a. 可溶的（能溶于溶剂）；可解决的",
+    "levels": ["托福"],
+    "core": "能被溶解的",
+    "ety": "源自拉丁 solvere「溶解」→ 晚期拉丁 solubilis「可溶的」。与 solution、dissolve、solvent 同根 solv「松解」，+ -ble「可…的」。化学里描述物质能否溶于给定溶剂。",
+    "ph": "solu（溶）+ ble（可…的）→ 可被溶解的 → 可溶的",
+    "tip": "dissolve「溶解」同根；能被 dissolve 的 = soluble；反义 insoluble 不可溶。",
+    "xex": [
+      {"en": "Table salt is highly soluble in water.", "zh": "食盐在水中极易溶解。", "src": "造句"},
+      {"en": "soluble in water / highly soluble / water-soluble vitamin", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "dissolvable", "ipa": "/dɪˈzɑːlvəbl/", "note": "同指可溶，较口语；soluble 是化学标准术语"}
+    ],
+    "nu": "a.",
+    "senses": [
+      {"g": "a.（化学）可溶的，如 soluble in water"},
+      {"g": "a. 可解决的，如 a soluble problem"}
+    ]
+  },
+  {
+    "w": "decompose",
+    "p": "/ˌdiːkəmˈpoʊz/",
+    "d": "v.（使）分解（复杂物质裂解为简单物质）；（使）腐烂",
+    "levels": ["托福"],
+    "core": "拆解成更简单的成分",
+    "ety": "源自 de-（去，反）+ compose（组合，来自拉丁 componere「放到一起」）→「拆开组合」。与 compound、component 同根 pon/pos「放置」。化学里指化合物裂解为更简单物质。",
+    "ph": "de（反）+ com（一起）+ pose（放）→ 拆开放到一起之物 → 分解",
+    "tip": "compose「组合」加 de「反」= decompose「拆开」；化合物被「拆」回简单物 = 分解，尸体被「拆」= 腐烂。",
+    "xex": [
+      {"en": "When heated, the compound decomposes into two simpler substances.", "zh": "受热时，该化合物分解成两种更简单的物质。", "src": "造句"},
+      {"en": "decompose into / thermally decompose / organic matter decomposes", "zh": "", "src": "高频搭配"}
+    ],
+    "syn": [
+      {"w": "synthesize", "ipa": "/ˈsɪnθəsaɪz/", "note": "反向概念：decompose 是拆解，synthesize 是合成"}
+    ],
+    "nu": "v.",
+    "senses": [
+      {"g": "v.（化学）分解，如 decompose into elements"},
+      {"g": "v.（使）腐烂，如 the body decomposes"}
+    ]
+  }
+]
