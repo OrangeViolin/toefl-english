@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>晨间 5-10-15 · Morning Routine</title>
+<style>
+  :root{--bg:#f8f2e6;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#ecdcc2;--accent:#c1662f;--core:#2f8f83;--sun:#e0913c;--wave:#2f6f8f}
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#fdf4e3,#f6f3ed 320px);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:640px;margin:0 auto;padding:26px 20px 70px}
+  .top{font-size:13px;color:var(--muted)}
+  .top a{color:var(--muted);text-decoration:none}
+  h1{font-size:25px;margin:12px 0 2px}
+  .en{color:var(--sun);font-weight:700;font-size:14px}
+  .lead{color:#5f574c;font-size:13.5px;margin:8px 0 18px}
+  /* 步骤指示 */
+  .pills{display:flex;gap:8px;margin-bottom:16px}
+  .pill{flex:1;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 6px;font-size:12.5px;color:var(--muted);transition:.2s}
+  .pill b{display:block;font-size:13px;color:#5f574c}
+  .pill.on{background:var(--sun);border-color:var(--sun);color:#fff;box-shadow:0 4px 14px rgba(224,145,60,.35)}
+  .pill.on b{color:#fff}
+  .pill.done{background:#e6f0ec;border-color:#cfe3db;color:var(--core)}
+  .pill.done b{color:var(--core)}
+  /* 计时器 */
+  .timerbox{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;text-align:center;box-shadow:0 3px 16px rgba(150,120,70,.08)}
+  .tstep{font-size:15px;font-weight:800;color:var(--sun)}
+  .tclock{font-family:Georgia,"Times New Roman",serif;font-size:66px;font-weight:700;letter-spacing:1px;margin:2px 0 6px;color:var(--ink);font-variant-numeric:tabular-nums}
+  .tbar{height:10px;background:#efe6d4;border-radius:6px;overflow:hidden;margin:6px 0 16px}
+  .tbar>i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--sun),#f0b566);border-radius:6px;transition:width .3s linear}
+  .ctrls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .btn{border:none;border-radius:22px;padding:11px 22px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn.go{background:var(--sun);color:#fff}
+  .btn.go:hover{background:#d0842f}
+  .btn.sub{background:#efe8d8;color:#5f574c}
+  .btn.sub:hover{background:#e5dccb}
+  /* 当前步详情 */
+  .detail{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:16px}
+  .detail .dh{display:flex;align-items:center;gap:10px}
+  .detail .demoji{font-size:30px}
+  .detail .dt{font-size:18px;font-weight:800}
+  .detail .dt small{font-size:12px;color:var(--sun);font-weight:700;margin-left:6px}
+  .detail .dd{font-size:14px;color:#5f574c;margin:8px 0 12px}
+  .detail a.mod{display:inline-block;background:#eef6f3;border:1px solid #cfe3db;color:var(--core);border-radius:20px;padding:7px 15px;font-size:13.5px;font-weight:700;text-decoration:none}
+  .detail a.mod:hover{background:var(--core);color:#fff}
+  .three{display:flex;flex-direction:column;gap:7px;margin:10px 0 0}
+  .three input{border:1px solid var(--line);border-radius:9px;padding:8px 11px;font-size:14px;background:#fbf7ee;font-family:inherit}
+  .three input:focus{outline:none;border-color:var(--sun)}
+  .fivew{margin:8px 0 0;padding-left:2px}
+  .fivew li{list-style:none;font-size:13.5px;margin:5px 0;color:#4d463c}
+  .fivew b{font-family:Georgia,serif;color:var(--wave)}
+  .done-msg{display:none;text-align:center;background:linear-gradient(135deg,#fff6e8,#fdeede);border:1px solid var(--line);border-radius:16px;padding:24px;margin-top:16px}
+  .done-msg .big{font-size:22px;font-weight:800;color:var(--sun)}
+  .done-msg p{font-size:14px;color:#5f574c;margin:8px 0 0}
+  .foot{margin-top:20px;color:#a89a86;font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="../index.html">← 沉浸式英语学习系统</a></div>
+  <h1>☀️ 晨间 5-10-15</h1>
+  <div class="en">Tiffany's 30-minute morning routine</div>
+  <div class="lead">起床后 30 分钟，快乐地把英语用起来——看喜欢的视频建信心 · 只学 3 个 · 5W 写日记练听说读写。轻、快乐、可持续，用它代替"硬刷"。</div>
+
+  <div class="pills" id="pills"></div>
+
+  <div class="timerbox">
+    <div class="tstep" id="tstep"></div>
+    <div class="tclock" id="tclock">05:00</div>
+    <div class="tbar"><i id="tfill"></i></div>
+    <div class="ctrls">
+      <button class="btn go" id="goBtn" onclick="toggle()">▶️ 开始</button>
+      <button class="btn sub" onclick="skip()">⏭ 跳过此步</button>
+      <button class="btn sub" onclick="reset()">↺ 重置</button>
+    </div>
+  </div>
+
+  <div class="detail" id="detail"></div>
+  <div class="done-msg" id="doneMsg">
+    <div class="big">☀️ 完成！</div>
+    <p>30 分钟，你把英语快乐地用起来了。这就是 refresh my mind 的样子——不是被考，是借英语和世界会心一笑。<br>明早再来一次。</p>
+  </div>
+
+  <div class="foot">方法来自英语老师 Tiffany · 映射沉浸轴三模块 · 离线自包含</div>
+</div>
+
+<script>
+const STEPS = [
+  {emoji:"📺", title:"看视频", min:5, tag:"5 分钟 · 建信心",
+   dd:"看一个你<b>真正感兴趣、且已经熟悉</b>的英文视频。目标是开心 + 听得懂 = <b>建立信心</b>，不是学新东西。",
+   link:"../文化阅读/index.html", linkLabel:"📖 去文化阅读", tip:"YouTube / TED / 你爱的英文频道都行"},
+  {emoji:"✨", title:"学 3 个新东西", min:10, tag:"10 分钟 · 少而精",
+   dd:"只挑 <b>3 个</b>新词 / 表达 / 知识点——别贪多，<b>只学 3 个才真记得住</b>。记在下面，回头汇入背词。",
+   link:"../背词计划/index.html", linkLabel:"🎯 去背词计划", three:true},
+  {emoji:"✍️", title:"5W 写日记", min:15, tag:"15 分钟 · 练四技能",
+   dd:"用 5 个 W 写你的一天——一次同时练到<b>听、语法、写、说</b>。写完可发我批改（话术「英语日记：…」）。",
+   link:"../日常表达/index.html", linkLabel:"✍️ 去日常表达",
+   fivew:[["Who","谁——今天和谁在一起？"],["What","做了什么？"],["When","什么时候？"],["Where","在哪儿？"],["Why","为什么？感受如何？"]]},
+];
+let si=0, remain=STEPS[0].min*60, running=false, timer=null, actx=null, finished=false;
+
+function fmt(s){ s=Math.max(0,s); return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); }
+function beep(){
+  try{ actx=actx||new (window.AudioContext||window.webkitAudioContext)();
+    const o=actx.createOscillator(), g=actx.createGain();
+    o.connect(g); g.connect(actx.destination); o.type='sine'; o.frequency.value=660;
+    g.gain.setValueAtTime(.001,actx.currentTime); g.gain.exponentialRampToValueAtTime(.25,actx.currentTime+.02);
+    g.gain.exponentialRampToValueAtTime(.001,actx.currentTime+.9); o.start(); o.stop(actx.currentTime+.9);
+  }catch(e){}
+}
+function renderPills(){
+  document.getElementById('pills').innerHTML = STEPS.map((s,i)=>
+    '<div class="pill'+(i===si&&!finished?' on':'')+(i<si||finished?' done':'')+'"><b>'+(i<si||finished?'✓ ':'')+s.title+'</b>'+s.min+' min</div>').join('');
+}
+function renderDetail(){
+  if(finished){ document.getElementById('detail').style.display='none'; document.getElementById('doneMsg').style.display='block'; return; }
+  document.getElementById('doneMsg').style.display='none';
+  const s=STEPS[si], d=document.getElementById('detail'); d.style.display='block';
+  let extra='';
+  if(s.three) extra='<div class="three"><input placeholder="① 新东西 1（词/表达/知识点）"><input placeholder="② 新东西 2"><input placeholder="③ 新东西 3"></div>';
+  if(s.fivew) extra='<ul class="fivew">'+s.fivew.map(w=>'<li><b>'+w[0]+'</b> — '+w[1]+'</li>').join('')+'</ul>';
+  d.innerHTML='<div class="dh"><span class="demoji">'+s.emoji+'</span><span class="dt">'+s.title+'<small>'+s.tag+'</small></span></div>'+
+    '<div class="dd">'+s.dd+'</div>'+
+    '<a class="mod" href="'+s.link+'">'+s.linkLabel+'</a>'+ (s.tip?'<span style="font-size:12px;color:#a89a86;margin-left:10px">'+s.tip+'</span>':'')+ extra;
+}
+function renderClock(){
+  const s=STEPS[si], total=s?s.min*60:1;
+  document.getElementById('tclock').textContent = finished ? '00:00' : fmt(remain);
+  document.getElementById('tstep').textContent = finished ? '☀️ 全部完成' : ('第 '+(si+1)+'/3 步 · '+s.title);
+  document.getElementById('tfill').style.width = finished ? '0%' : (remain/total*100)+'%';
+  document.getElementById('goBtn').textContent = finished ? '✓ 已完成' : (running ? '⏸ 暂停' : '▶️ 开始');
+  document.getElementById('goBtn').disabled = finished;
+}
+function renderAll(){ renderPills(); renderDetail(); renderClock(); }
+function tick(){
+  remain--;
+  if(remain<0){ beep(); advance(); return; }
+  renderClock();
+}
+function advance(){
+  if(si<STEPS.length-1){ si++; remain=STEPS[si].min*60; beep(); renderAll(); }
+  else { finished=true; running=false; clearInterval(timer); timer=null; beep(); renderAll(); }
+}
+function toggle(){
+  if(finished) return;
+  if(!actx){ try{ actx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} }
+  running=!running;
+  if(running){ timer=setInterval(tick,1000); } else { clearInterval(timer); timer=null; }
+  renderClock();
+}
+function skip(){ if(finished) return; clearInterval(timer); timer=null; running=false; advance(); if(!finished){ running=true; timer=setInterval(tick,1000);} renderClock(); }
+function reset(){ clearInterval(timer); timer=null; running=false; finished=false; si=0; remain=STEPS[0].min*60; renderAll(); }
+renderAll();
+</script>
+</body>
+</html>
