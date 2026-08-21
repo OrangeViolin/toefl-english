@@ -308,13 +308,20 @@ function save(k,v){ localStorage.setItem(k, JSON.stringify(v)); if(k===M_KEY){ t
 /* ── ☁️ cloud.db 持久化：掌握/未掌握写入本地 SQLite 库，localStorage 被清也能恢复，绝不再丢 ── */
 const DB = (location.protocol==='http:'||location.protocol==='https:') ? '' : 'http://127.0.0.1:8799';  // 由 db_server 托管时同源；file:// 时走 8799
 let dbOK=false, _syncT=null;
-function setDbInd(t){ const e=document.getElementById('dbind'); if(e) e.textContent=t; }
+function setDbInd(t, ok){ const e=document.getElementById('dbind'); if(!e) return; e.textContent=t; e.style.color = ok? '#2f8f5b' : (ok===false?'#c0453a':'#8c8072'); e.style.fontWeight = ok?'700':'600'; }
+function dbRestore(){                                   // 手动：从 cloud.db 拉全部标记覆盖本地(权威恢复)
+  fetch(DB+'/state').then(r=>r.json()).then(cloud=>{
+    let n=0; for(const k in cloud){ if((cloud[k]==='ok'||cloud[k]==='no') && state[k]!==cloud[k]){ state[k]=cloud[k]; n++; } }
+    save(M_KEY,state); if(typeof render==='function') render(); alert('已从 cloud.db 恢复/更新 '+n+' 条掌握标记。');
+  }).catch(()=>alert('未连 cloud.db —— 请先双击 背词计划/start.command 启动数据服务，再点一次。'));
+}
 function dbSyncUp(){ if(!dbOK) return; try{ fetch(DB+'/bulk',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:state})}).catch(()=>{}); }catch(e){} }
 function scheduleSync(){ if(!dbOK) return; clearTimeout(_syncT); _syncT=setTimeout(dbSyncUp, 400); }        // 防抖：批量改动只同步一次
 function dbMark(key){ if(!dbOK||!key) return; try{ fetch(DB+'/mark',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({k:key, status: state[key]||null})}).catch(()=>{}); }catch(e){} }  // 单个改/删精确落库
-function dbInit(){
+function dbInit(tries){
+  tries=tries||0;
   fetch(DB+'/state').then(r=>r.ok?r.json():null).then(cloud=>{
-    dbOK=true; setDbInd('☁️ 已连 cloud.db');
+    dbOK=true; setDbInd('☁️ 已连 cloud.db · 掌握数据已云端保存', true);
     let changed=false;
     if(cloud && typeof cloud==='object'){
       for(const k in cloud){ if((cloud[k]==='ok'||cloud[k]==='no') && !state[k]){ state[k]=cloud[k]; changed=true; } }  // 云端有、本地缺→恢复
@@ -322,7 +329,10 @@ function dbInit(){
     if(changed){ save(M_KEY,state); }
     dbSyncUp();                                   // 把本地(含刚恢复)全部标记推上云，双向对齐
     if(changed && typeof render==='function') render();
-  }).catch(()=>{ dbOK=false; setDbInd('⚠️ 未连 cloud.db（仅本地）— 双击 start.command 开启云端保存'); });
+  }).catch(()=>{ dbOK=false;
+    if(tries<8){ setDbInd('… 连接 cloud.db（重试 '+(tries+1)+'）', null); setTimeout(()=>dbInit(tries+1), 1500); }  // 服务刚启动/稍慢：自动重试
+    else setDbInd('⚠️ 未连 cloud.db（仅本地，可能丢失）— 双击 start.command 启动数据服务', false);
+  });
 }
 
 let source = load('bcplan:source','green');
@@ -479,6 +489,7 @@ function renderOverview(){
       <button class="clozebtn" id="goCloze">📝 文段填空（${PASSAGES.length} 篇）</button>
       <button class="czwbtn" id="goCzw">❌ 填词错词（${loadCzW().length}）</button>
       <button class="markall" id="markAll">✅ 其余一键记为「已掌握」</button>
+      <button class="tbtn" id="dbRestore" title="从 cloud.db 拉取全部掌握标记恢复">☁️ 从云端恢复</button>
       <button class="tbtn" id="expData" title="下载你的掌握/未掌握数据做备份">⬇ 导出进度</button>
       <button class="tbtn" id="impData" title="从备份文件恢复">⬆ 导入</button>
       <input type="file" id="impFile" accept="application/json" style="display:none">
@@ -488,6 +499,7 @@ function renderOverview(){
     <div class="grid" id="grid"></div>`;
   view.innerHTML = h;
   { const pb=$('#playAll100'); if(pb) pb.onclick=()=>playAll100(); }
+  $('#dbRestore').onclick=()=>dbRestore();
   $('#expData').onclick=()=>exportProgress();
   $('#impData').onclick=()=>$('#impFile').click();
   $('#impFile').onchange=e=>importProgress(e.target.files[0]);
