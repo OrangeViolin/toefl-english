@@ -408,6 +408,20 @@ function toastMsg(m){ try{ const d=document.createElement('div'); d.textContent=
 
 /* ── id → word 映射（四会微练取词）── */
 const WMAP={}; Object.values(VOCAB).forEach(v=> (v.words||[]).forEach(w=> WMAP[w.id]=w));
+// 全局词库解析：让听力文段里任意实词都能回退到已富化卡（绿/BEAT/项目/学科目标/文段支撑词），点开即满配
+const GLEX={}, GBYID={};
+function _glexAdd(w){ if(!w||!w.w) return; GBYID[w.id]=w; const k=w.w.toLowerCase(); if(!(k in GLEX)) GLEX[k]=w; }
+Object.values(VOCAB).forEach(v=> (v.words||[]).forEach(_glexAdd));
+if(VOCAB.subject && VOCAB.subject.lex) VOCAB.subject.lex.forEach(_glexAdd);
+function glexGet(low){
+  if(GLEX[low]) return GLEX[low];
+  if(low.endsWith('ies')){ const b=low.slice(0,-3)+'y'; if(GLEX[b]) return GLEX[b]; }        // studies→study
+  for(const s of ['s','es','ed','ing','d','ly','er','est','ion','ment','ness','al','ic']){
+    if(low.length>s.length+2 && low.endsWith(s)){ const b=low.slice(0,-s.length); if(GLEX[b]) return GLEX[b]; } }
+  if(low.endsWith('ing')||low.endsWith('ed')){ const b=low.replace(/(ing|ed)$/,'');           // stopped→stop, running→run
+    if(b.length>2 && b[b.length-1]===b[b.length-2] && GLEX[b.slice(0,-1)]) return GLEX[b.slice(0,-1)]; }
+  return null;
+}
 function norm2(s){ return (s||'').toLowerCase().replace(/[^a-z]/g,''); }
 
 /* ── 四会微练：说 / 拼写 / 听写 / 造句 —— 嵌进每个词的展开卡 ── */
@@ -834,15 +848,31 @@ async function playAllSents(sents){
   seqPlaying=false; if(btn){ btn.textContent='▶️ 顺序播放本组'; btn.classList.remove('on'); }
   document.querySelectorAll('.sent-card').forEach(c=>c.classList.remove('playing'));
 }
+function lecResolve(low, tmap){                       // 先本学科目标词(掌握键=学科lem、与词卡/进度一致)，再回退全局词库
+  if(tmap[low]) return tmap[low];
+  for(const k in tmap){ if(k.length>=4 && (low.startsWith(k) || k.startsWith(low))) return tmap[k]; }
+  return glexGet(low);
+}
+function lecEnHtml(s, tmap){                          // 文段整句：每个词都解析，命中富化词→满配卡，否则最小卡
+  const chunks = s.en.match(/[A-Za-z']+|[^A-Za-z']+/g) || [s.en];
+  return chunks.map(ch=>{
+    if(!/[A-Za-z]/.test(ch)) return esc(ch);
+    const low=ch.toLowerCase(); const w=lecResolve(low, tmap);
+    if(w){ const key=w.lem||w.id; const st=state[key]||''; const cl=st==='ok'?' ok':st==='no'?' no':'';
+      return `<span class="sw${cl}" data-id="${esc(w.id)}" data-lem="${esc(key)}" data-n="${s.n}">${esc(ch)}</span>`; }
+    const pk='w:'+low; const ps=state[pk]||''; const pc=ps==='ok'?' ok':ps==='no'?' no':'';
+    return `<span class="sw sw-plain${pc}" data-w="${esc(low)}" data-lem="${esc(pk)}" data-n="${s.n}">${esc(ch)}</span>`;
+  }).join('');
+}
 function renderSubjectStudy(no){
   const S=VOCAB.subject; const L=S.lectures[String(no)];
-  const bw=listWords(no); const wmap={}; bw.forEach(w=>wmap[w.id]=w);
+  const bw=listWords(no); const tmap={}; bw.forEach(w=>{ tmap[w.w.toLowerCase()]=w; });
   const sents=L.sents;
   const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
   const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
   const dc=doneCount(bw), nc=noCount(bw), tot=uniqCount(bw);
   const cards=sents.map(s=>{
-    const matched=new Set(); const en=sentEnHtml(s,wmap,matched);
+    const en=lecEnHtml(s, tmap);
     return `<div class="sent-card" data-n="${s.n}">
       <div class="sent-no">${s.n} / ${sents.length} <span class="sent-say" data-n="${s.n}">🔊 读整句</span></div>
       <div class="sent-en">${en}</div>
@@ -865,7 +895,7 @@ function renderSubjectStudy(no){
       <div class="tools" style="margin:10px 0"><button class="tbtn" id="tAll">本学科·其余记为已掌握</button></div>
       <div class="cards" id="wcbox">${wcards}</div></details>
     <div class="tools" style="margin-top:16px"><span class="back" id="back2">← 返回总览</span></div>`;
-  view.querySelectorAll('.sw,.sw-chip').forEach(el=> el.onclick=e=>{ e.stopPropagation(); openWordDetail(el.dataset.n, el.dataset.id, wmap, el.dataset.w, el.dataset.lem); });
+  view.querySelectorAll('.sw,.sw-chip').forEach(el=> el.onclick=e=>{ e.stopPropagation(); openWordDetail(el.dataset.n, el.dataset.id, GBYID, el.dataset.w, el.dataset.lem); });
   const enOf={}; sents.forEach(s=>enOf[s.n]=s.en);
   view.querySelectorAll('.sent-say').forEach(el=> el.onclick=e=>{ e.stopPropagation(); say(enOf[el.dataset.n]); });
   const stopSeq=()=>{ seqPlaying=false; if(window.speechSynthesis) speechSynthesis.cancel(); };
@@ -1147,6 +1177,23 @@ def build():
             _lects[str(_no)] = {"title": _lj.get("title", ""), "topic": _lj.get("topic", ""), "sents": _sents}
         if _lects:
             payload["subject"]["lectures"] = _lects
+        # 文段支撑词库：文段里非目标词的富化卡，让句中任意实词都能展开满配卡（回退用）
+        _lexp = _os0.path.join(DATA, "lecture-lex.json")
+        if _os0.path.exists(_lexp):
+            _lx = json.load(open(_lexp, encoding="utf-8"))
+            _lexw = []
+            for _w in _lx.get("words", []):
+                _sf = (_w.get("w", "") or "").strip()
+                if not _sf:
+                    continue
+                _o = {"id": "LEX-" + _sf.lower().replace(" ", "_"), "lem": "lex:" + _sf.lower(),
+                      "w": _sf, "p": _w.get("p", ""), "d": _w.get("d", "")}
+                for _k in ("core", "ph", "tip", "xex", "syn", "ety", "nu", "senses", "rootfam"):
+                    if _w.get(_k):
+                        _o[_k] = _w[_k]
+                _lexw.append(_o)
+            if _lexw:
+                payload["subject"]["lex"] = _lexw
     # 100 长难句（句子式展示：每句每词可点开标掌握/未掌握）——独立词源 sent100
     _ssp = _os0.path.join(DATA, "sentences-100.json")
     if _os0.path.exists(_ssp):

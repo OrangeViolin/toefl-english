@@ -1,0 +1,624 @@
+[
+  {
+    "w": "bright",
+    "p": "/braɪt/",
+    "d": "adj. 明亮的；聪明的",
+    "core": "光线充足、耀眼夺目",
+    "ph": "br 连读，igh 发长音 /aɪ/，t 收尾",
+    "tip": "bright 里藏着 light（光），聪明的人脑子里也有光",
+    "xex": [
+      {"en": "The kitchen was bright and full of morning sunlight.", "zh": "厨房明亮，洒满清晨的阳光。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "large",
+    "p": "/lɑːrdʒ/",
+    "d": "adj. 大的，大量的",
+    "core": "体积或数量上的大",
+    "ph": "l 起头，ar 发 /ɑːr/，ge 发 /dʒ/",
+    "tip": "large 比 big 更正式，常修饰面积、人口、数量",
+    "xex": [
+      {"en": "A large crowd gathered in front of the station.", "zh": "一大群人聚集在车站前。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "huge", "ipa": "/hjuːdʒ/", "note": "巨大的，比 large 更夸张"},
+      {"w": "vast", "ipa": "/væst/", "note": "广阔的，多指空间无边"}
+    ]
+  },
+  {
+    "w": "cold",
+    "p": "/koʊld/",
+    "d": "adj. 寒冷的；冷淡的  n. 感冒",
+    "core": "低温，缺少热量",
+    "ph": "c 发 /k/，o 发 /oʊ/，ld 连读收尾",
+    "tip": "cold 也指人情感上的冷漠，catch a cold 是感冒",
+    "xex": [
+      {"en": "It was so cold that the lake froze overnight.", "zh": "天太冷了，湖水一夜之间就结冰了。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "chilly", "ipa": "/ˈtʃɪli/", "note": "微冷的，凉飕飕"}
+    ]
+  },
+  {
+    "w": "farmer",
+    "p": "/ˈfɑːrmər/",
+    "d": "n. 农民，农场主",
+    "core": "在田地里种庄稼养牲畜的人",
+    "ph": "farm + er，重音在前，er 发轻声 /ər/",
+    "tip": "farm（农场）+ er（人）= 务农的人",
+    "xex": [
+      {"en": "The farmers harvest their wheat in late summer.", "zh": "农民们在夏末收割小麦。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "grow",
+    "p": "/ɡroʊ/",
+    "d": "v. 生长，成长；种植",
+    "core": "由小变大、逐渐发展",
+    "ph": "gr 连读，ow 发 /oʊ/（grew 是过去式）",
+    "tip": "grew 是 grow 的过去式，grown 是过去分词",
+    "xex": [
+      {"en": "The company grew from a small shop into a chain.", "zh": "这家公司从一间小店成长为连锁企业。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "expand", "ipa": "/ɪkˈspænd/", "note": "扩张，规模上变大"}
+    ]
+  },
+  {
+    "w": "great",
+    "p": "/ɡreɪt/",
+    "d": "adj. 伟大的；极好的；巨大的",
+    "core": "程度或价值上远超一般",
+    "ph": "gr 连读，ea 这里发 /eɪ/（例外，不读 /iː/）",
+    "tip": "ea 通常读 /iː/，但 great、break、steak 里读 /eɪ/",
+    "xex": [
+      {"en": "She made a great effort to finish the project on time.", "zh": "她付出了巨大努力按时完成了项目。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "speed",
+    "p": "/spiːd/",
+    "d": "n. 速度，快速  v. 疾行",
+    "core": "移动或变化的快慢程度",
+    "ph": "sp 连读，ee 发长音 /iː/，d 收尾",
+    "tip": "at high speed = 高速；speed up = 加速",
+    "xex": [
+      {"en": "The train travels at an incredible speed.", "zh": "这列火车以惊人的速度行驶。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "pace", "ipa": "/peɪs/", "note": "步调、节奏，偏节奏感"}
+    ]
+  },
+  {
+    "w": "return",
+    "p": "/rɪˈtɜːrn/",
+    "d": "v./n. 返回，归还；回报",
+    "core": "回到原处或把东西送回",
+    "ph": "re + turn，重音在后半 turn /tɜːrn/",
+    "tip": "re（回）+ turn（转）= 转回来；投资的 return 是回报",
+    "xex": [
+      {"en": "Please return the books to the library by Friday.", "zh": "请在周五前把书归还给图书馆。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "moon",
+    "p": "/muːn/",
+    "d": "n. 月亮，月球",
+    "core": "夜空中绕地球转的天体",
+    "ph": "m 起头，oo 发长音 /uː/，n 收尾",
+    "tip": "full moon 满月，honeymoon 蜜月",
+    "xex": [
+      {"en": "A bright moon lit up the quiet valley.", "zh": "一轮明月照亮了寂静的山谷。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "life",
+    "p": "/laɪf/",
+    "d": "n. 生命，生活；一生",
+    "core": "活着的状态与经历",
+    "ph": "l 起头，i 发 /aɪ/，fe 发 /f/（复数 lives 读 /laɪvz/）",
+    "tip": "复数是 lives（去 f 加 ves），别读成 lifes",
+    "xex": [
+      {"en": "Traveling changed her whole view of life.", "zh": "旅行改变了她对人生的整个看法。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "price",
+    "p": "/praɪs/",
+    "d": "n. 价格，代价  v. 定价",
+    "core": "买一样东西要付出的金额",
+    "ph": "pr 连读，i 发 /aɪ/，ce 发 /s/",
+    "tip": "price 是标价，cost 更强调成本；pay the price 付出代价",
+    "xex": [
+      {"en": "The price of oil dropped sharply last month.", "zh": "上个月油价大幅下跌。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "cost", "ipa": "/kɔːst/", "note": "成本、花费，偏支出角度"}
+    ]
+  },
+  {
+    "w": "actually",
+    "p": "/ˈæktʃuəli/",
+    "d": "adv. 实际上，事实上",
+    "core": "纠正或强调真实情况",
+    "ph": "act + u + ally，重音在首音节 /ˈæk/",
+    "tip": "actual（真实的）+ ly；口语里用来引出「其实……」",
+    "xex": [
+      {"en": "It looks hard, but it's actually quite simple.", "zh": "它看起来很难，但其实相当简单。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "really", "ipa": "/ˈriːəli/", "note": "确实，语气更口语"}
+    ]
+  },
+  {
+    "w": "answer",
+    "p": "/ˈænsər/",
+    "d": "n. 答案，回答  v. 回答，应答",
+    "core": "对问题给出的回应",
+    "ph": "w 不发音（silent w），读 /ˈænsər/",
+    "tip": "answer 里的 w 是哑音，别读出来",
+    "xex": [
+      {"en": "She couldn't find the answer to that tricky question.", "zh": "她找不到那个棘手问题的答案。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "reply", "ipa": "/rɪˈplaɪ/", "note": "回复，多指书面或口头答复"}
+    ]
+  },
+  {
+    "w": "push",
+    "p": "/pʊʃ/",
+    "d": "v./n. 推；推动，督促",
+    "core": "施力使物体离开自己",
+    "ph": "p 起头，u 发短音 /ʊ/，sh 发 /ʃ/",
+    "tip": "push 推、pull 拉，一对反义词；push oneself 逼自己努力",
+    "xex": [
+      {"en": "He had to push the heavy door with both hands.", "zh": "他不得不用双手推那扇沉重的门。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "cut",
+    "p": "/kʌt/",
+    "d": "v. 切，割；削减  n. 伤口，削减",
+    "core": "用刀刃分开，或数量上减少",
+    "ph": "c 发 /k/，u 发短音 /ʌ/，t 收尾（过去式也是 cut）",
+    "tip": "cut 的过去式和过去分词都是 cut，不变形",
+    "xex": [
+      {"en": "The company decided to cut costs by hiring fewer staff.", "zh": "公司决定通过减少招人来削减成本。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "reduce", "ipa": "/rɪˈduːs/", "note": "减少，偏数量下降"}
+    ]
+  },
+  {
+    "w": "cost",
+    "p": "/kɔːst/",
+    "d": "n. 成本，花费  v. 花费，值",
+    "core": "得到某物所付出的钱或代价",
+    "ph": "c 发 /k/，o 发 /ɔː/，st 连读收尾（过去式也是 cost）",
+    "tip": "cut costs 削减成本；at all costs 不惜一切代价",
+    "xex": [
+      {"en": "Building the bridge will cost millions of dollars.", "zh": "建这座桥将花费数百万美元。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "protect",
+    "p": "/prəˈtekt/",
+    "d": "v. 保护，防护",
+    "core": "挡在前面使其免受伤害",
+    "ph": "pro + tect，重音在后 /ˈtekt/",
+    "tip": "pro（前）+ tect（遮盖，同 detect 的 tect）= 遮在前面护住",
+    "xex": [
+      {"en": "Thick walls protect the house from the cold wind.", "zh": "厚墙保护房子不受寒风侵袭。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "guard", "ipa": "/ɡɑːrd/", "note": "守卫，偏看守防范"}
+    ]
+  },
+  {
+    "w": "let",
+    "p": "/let/",
+    "d": "v. 允许，让；出租",
+    "core": "不加阻拦，任其发生",
+    "ph": "l 起头，e 发短音 /e/，t 收尾（过去式也是 let）",
+    "tip": "let 三态不变；let go 放手，let sb do 让某人做",
+    "xex": [
+      {"en": "This app lets you copy text between devices instantly.", "zh": "这个应用让你在设备间即时复制文字。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "copy",
+    "p": "/ˈkɑːpi/",
+    "d": "v. 复制，抄写；模仿  n. 副本，一份",
+    "core": "做出一模一样的东西",
+    "ph": "co + py，重音在前，y 发 /i/",
+    "tip": "copy and paste 复制粘贴；a copy of the book 一本书",
+    "xex": [
+      {"en": "Students should not copy each other's homework.", "zh": "学生不应互相抄袭作业。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "imitate", "ipa": "/ˈɪmɪteɪt/", "note": "模仿，偏学样子"}
+    ]
+  },
+  {
+    "w": "sit",
+    "p": "/sɪt/",
+    "d": "v. 坐；位于",
+    "core": "臀部着地或着物、静止落座",
+    "ph": "s 起头，i 发短音 /ɪ/，t 收尾（过去式 sat）",
+    "tip": "sit 的过去式是 sat，别和 set（放置）混",
+    "xex": [
+      {"en": "The old temple sits quietly on the hilltop.", "zh": "那座古庙静静地坐落在山顶。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "low",
+    "p": "/loʊ/",
+    "d": "adj./adv. 低的；n. 低点，低谷",
+    "core": "位置、程度或数值上的低",
+    "ph": "l 起头，ow 发 /oʊ/",
+    "tip": "highs and lows 高潮与低谷；low price 低价",
+    "xex": [
+      {"en": "Prices hit new lows during the winter sale.", "zh": "在冬季促销期间价格跌至新低。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "run",
+    "p": "/rʌn/",
+    "d": "v. 跑；经营，运转  n. 奔跑",
+    "core": "快速移动，或让某事持续运作",
+    "ph": "r 起头，u 发短音 /ʌ/，n 收尾（过去式 ran）",
+    "tip": "run 不只是跑，run a business 是经营公司",
+    "xex": [
+      {"en": "She runs a small store near the station.", "zh": "她在车站附近经营一家小店。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "question",
+    "p": "/ˈkwestʃən/",
+    "d": "n. 问题，疑问  v. 质疑",
+    "core": "需要回答或引发思考的疑问",
+    "ph": "qu 发 /kw/，ti 发 /tʃ/，重音在前",
+    "tip": "question 提问、answer 回答，一对；out of the question 不可能",
+    "xex": [
+      {"en": "The teacher asked a difficult question about history.", "zh": "老师问了一个关于历史的难题。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "student",
+    "p": "/ˈstuːdnt/",
+    "d": "n. 学生",
+    "core": "在校或跟随他人学习的人",
+    "ph": "stu + dent，重音在前，tu 发 /tuː/",
+    "tip": "study（学习）+ -ent（人）联想；学生就是在 study 的人",
+    "xex": [
+      {"en": "Every student must return the library card.", "zh": "每位学生都必须归还借书证。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "story",
+    "p": "/ˈstɔːri/",
+    "d": "n. 故事，情节；（楼）层",
+    "core": "讲述事件经过的叙述",
+    "ph": "sto + ry，重音在前，or 发 /ɔːr/",
+    "tip": "story 还指楼层，a three-story building 三层楼",
+    "xex": [
+      {"en": "Grandma told us a story about the old village.", "zh": "奶奶给我们讲了一个关于老村庄的故事。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "tale", "ipa": "/teɪl/", "note": "故事，偏虚构或传说"}
+    ]
+  },
+  {
+    "w": "close",
+    "p": "/kloʊz/",
+    "d": "v. 关闭  adj. 近的；亲密的 /kloʊs/",
+    "core": "合上使不再敞开，或距离很近",
+    "ph": "动词 close /kloʊz/（浊 z），形容词 close /kloʊs/（清 s）",
+    "tip": "同拼写两读音：关门读 /z/，靠近读 /s/",
+    "xex": [
+      {"en": "Please close the window; it's getting cold.", "zh": "请关上窗户，天变冷了。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "learner",
+    "p": "/ˈlɜːrnər/",
+    "d": "n. 学习者，初学者",
+    "core": "正在学习某项技能或知识的人",
+    "ph": "learn + er，重音在前，ear 发 /ɜːr/",
+    "tip": "learn（学）+ er（人）= 学习的人",
+    "xex": [
+      {"en": "This app is designed for beginning language learners.", "zh": "这款应用是为语言初学者设计的。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "day",
+    "p": "/deɪ/",
+    "d": "n. 一天，白天",
+    "core": "从日出到日落，或二十四小时",
+    "ph": "d 起头，ay 发 /eɪ/",
+    "tip": "every day 每天（副词），everyday 日常的（形容词）",
+    "xex": [
+      {"en": "They work hard every day to protect the forest.", "zh": "他们每天努力工作来保护森林。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "build",
+    "p": "/bɪld/",
+    "d": "v. 建造，建立",
+    "core": "把材料组合起来造出结构",
+    "ph": "u 不单独发音，ui 发 /ɪ/，读 /bɪld/（过去式 built）",
+    "tip": "build 的过去式是 built，双写辅音结尾",
+    "xex": [
+      {"en": "They built a bridge across the wide river.", "zh": "他们在宽阔的河上建了一座桥。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "construct", "ipa": "/kənˈstrʌkt/", "note": "建造，更正式、偏工程"}
+    ]
+  },
+  {
+    "w": "mix",
+    "p": "/mɪks/",
+    "d": "v. 混合，搅拌  n. 混合物",
+    "core": "把不同东西合在一起",
+    "ph": "m 起头，i 发短音 /ɪ/，x 发 /ks/",
+    "tip": "mix up 弄混、搞混；a mix of 各种混合",
+    "xex": [
+      {"en": "Mix the flour and water to make a simple dough.", "zh": "把面粉和水混合做成简单的面团。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "blend", "ipa": "/blend/", "note": "调和，混得更均匀融合"}
+    ]
+  },
+  {
+    "w": "loss",
+    "p": "/lɔːs/",
+    "d": "n. 损失，丧失；亏损",
+    "core": "失去后留下的空缺或亏空",
+    "ph": "l 起头，o 发 /ɔː/，ss 发 /s/",
+    "tip": "lose（动词丢失）→ loss（名词损失）→ lost（过去式）",
+    "xex": [
+      {"en": "The company reported a huge loss this year.", "zh": "公司今年报告了巨额亏损。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "simple",
+    "p": "/ˈsɪmpl/",
+    "d": "adj. 简单的，简朴的",
+    "core": "不复杂、容易理解",
+    "ph": "sim + ple，重音在前，le 发 /pl/",
+    "tip": "simple 简单，complex 复杂，一对反义词",
+    "xex": [
+      {"en": "He prefers a simple life in the countryside.", "zh": "他喜欢乡下简朴的生活。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "plain", "ipa": "/pleɪn/", "note": "朴素的，偏不加修饰"}
+    ]
+  },
+  {
+    "w": "parent",
+    "p": "/ˈperənt/",
+    "d": "n. 父母（之一），家长",
+    "core": "生养或抚育孩子的人",
+    "ph": "par + ent，重音在前，a 发 /e/",
+    "tip": "parents 复数指父母双方；单数指父亲或母亲之一",
+    "xex": [
+      {"en": "Her parents grew rice on a small farm.", "zh": "她的父母在一个小农场种水稻。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "people",
+    "p": "/ˈpiːpl/",
+    "d": "n. 人们，人民；民族",
+    "core": "作为群体的一群人",
+    "ph": "peo 发 /piː/，ple 发 /pl/，重音在前",
+    "tip": "people 本身就是复数，别加 s 说 peoples（除非指多个民族）",
+    "xex": [
+      {"en": "Millions of people travel during the holiday.", "zh": "假期里数百万人出行。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "begin",
+    "p": "/bɪˈɡɪn/",
+    "d": "v. 开始，着手",
+    "core": "让一件事进入起点",
+    "ph": "be + gin，重音在后 /ˈɡɪn/（过去式 began）",
+    "tip": "begin-began-begun，三态元音 i-a-u 变化",
+    "xex": [
+      {"en": "The story begins on a cold winter morning.", "zh": "故事始于一个寒冷的冬日清晨。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "start", "ipa": "/stɑːrt/", "note": "开始，更口语通用"}
+    ]
+  },
+  {
+    "w": "hidden",
+    "p": "/ˈhɪdn/",
+    "d": "adj. 隐藏的，隐蔽的",
+    "core": "被藏起来、看不见的",
+    "ph": "hid + den，重音在前，dd 双写读单 /d/",
+    "tip": "hide（藏）的过去分词 hidden，双写 d；hidden cost 隐藏成本",
+    "xex": [
+      {"en": "The treasure was hidden deep inside the cave.", "zh": "宝藏被藏在洞穴深处。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "show",
+    "p": "/ʃoʊ/",
+    "d": "v. 展示，显示；带领  n. 表演，节目",
+    "core": "让别人看见或明白",
+    "ph": "sh 发 /ʃ/，ow 发 /oʊ/（过去分词 shown）",
+    "tip": "show-showed-shown，过去分词 shown",
+    "xex": [
+      {"en": "The data show that prices began to rise.", "zh": "数据显示价格开始上涨。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "appear",
+    "p": "/əˈpɪr/",
+    "d": "v. 出现；似乎，显得",
+    "core": "从看不见变成看得见，或呈现某样子",
+    "ph": "ap + pear，重音在后 /ˈpɪr/，ear 发 /ɪr/",
+    "tip": "appear 出现 ↔ disappear 消失（加 dis）",
+    "xex": [
+      {"en": "A bright star appeared above the hills.", "zh": "一颗明亮的星星出现在山丘上方。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "emerge", "ipa": "/ɪˈmɜːrdʒ/", "note": "浮现，偏从隐蔽中显露"}
+    ]
+  },
+  {
+    "w": "important",
+    "p": "/ɪmˈpɔːrtnt/",
+    "d": "adj. 重要的，重大的",
+    "core": "影响大、值得重视",
+    "ph": "im + por + tant，重音在 por /ˈpɔːr/",
+    "tip": "import（进口/含义）+ ant；有分量的事才 important",
+    "xex": [
+      {"en": "It is important to protect the environment.", "zh": "保护环境很重要。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "crucial", "ipa": "/ˈkruːʃl/", "note": "关键的，重要到决定成败"}
+    ]
+  },
+  {
+    "w": "heavy",
+    "p": "/ˈhevi/",
+    "d": "adj. 重的；大量的，猛烈的",
+    "core": "分量大、沉甸甸",
+    "ph": "hea 发 /he/，vy 发 /vi/，重音在前",
+    "tip": "heavy rain 大雨，heavy traffic 交通拥堵，不只指重量",
+    "xex": [
+      {"en": "The box was too heavy for one person to lift.", "zh": "这个箱子太重了，一个人搬不动。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "store",
+    "p": "/stɔːr/",
+    "d": "n. 商店；储存  v. 储存，存放",
+    "core": "存放东西的地方或行为",
+    "ph": "st 连读，ore 发 /ɔːr/",
+    "tip": "store 既是商店也是储存；in store 储备着",
+    "xex": [
+      {"en": "The stores were full of people before the holiday.", "zh": "假期前商店里挤满了人。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "million",
+    "p": "/ˈmɪljən/",
+    "d": "n. 百万；（复数）数百万",
+    "core": "一百万这个数量级",
+    "ph": "mil + lion，重音在前，lli 发 /lj/",
+    "tip": "millions of 数以百万计，表示极多",
+    "xex": [
+      {"en": "The bridge cost millions of dollars to build.", "zh": "建这座桥花费了数百万美元。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "travel",
+    "p": "/ˈtrævl/",
+    "d": "v./n. 旅行；行进，传播",
+    "core": "从一地移动到另一地",
+    "ph": "tra + vel，重音在前，v 后 el 轻读",
+    "tip": "travel 也指光、声音的传播：light travels fast",
+    "xex": [
+      {"en": "Sound travels more slowly than light.", "zh": "声音传播的速度比光慢。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "journey", "ipa": "/ˈdʒɜːrni/", "note": "旅程，偏一段较长的行程"}
+    ]
+  },
+  {
+    "w": "start",
+    "p": "/stɑːrt/",
+    "d": "v./n. 开始；启动，出发",
+    "core": "让某事从零进入运行",
+    "ph": "st 连读，ar 发 /ɑːr/，t 收尾",
+    "tip": "start 开始 ↔ stop 停止；start up 创办、启动",
+    "xex": [
+      {"en": "The race starts at exactly nine o'clock.", "zh": "比赛在九点整开始。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "entire",
+    "p": "/ɪnˈtaɪər/",
+    "d": "adj. 整个的，全部的",
+    "core": "一个不落的完整整体",
+    "ph": "en + tire，重音在后 /ˈtaɪər/",
+    "tip": "entire = whole，强调「整整一个、毫无遗漏」",
+    "xex": [
+      {"en": "The fire destroyed the entire building.", "zh": "大火烧毁了整栋楼。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "whole", "ipa": "/hoʊl/", "note": "整个的，更常用口语"}
+    ]
+  },
+  {
+    "w": "early",
+    "p": "/ˈɜːrli/",
+    "d": "adj./adv. 早的，早期的；提前",
+    "core": "在通常或预定时间之前",
+    "ph": "ear 发 /ɜːr/，ly 发 /li/，重音在前",
+    "tip": "early 早 ↔ late 晚；early bird 早起的人",
+    "xex": [
+      {"en": "She woke up early to catch the first train.", "zh": "她早早起床去赶头班车。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "branch",
+    "p": "/bræntʃ/",
+    "d": "n. 树枝；分支，分店  v. 分岔",
+    "core": "从主干上分出去的部分",
+    "ph": "br 连读，an 发 /æ/，ch 发 /tʃ/",
+    "tip": "树枝也是「分支」：银行 branch 是分行，分岔 branch out",
+    "xex": [
+      {"en": "A bird sat on the thin branch of the old tree.", "zh": "一只鸟停在那棵老树细细的枝头上。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "wind",
+    "p": "/wɪnd/",
+    "d": "n. 风  v. 蜿蜒；上发条 /waɪnd/",
+    "core": "流动的空气",
+    "ph": "名词风 /wɪnd/（短音）；动词缠绕 /waɪnd/（长音）",
+    "tip": "同拼写两读音：风读 /wɪnd/，绕/上发条读 /waɪnd/",
+    "xex": [
+      {"en": "A cold wind blew across the empty field.", "zh": "一阵寒风吹过空旷的田野。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "thin",
+    "p": "/θɪn/",
+    "d": "adj. 薄的；瘦的；稀的",
+    "core": "厚度或宽度很小",
+    "ph": "th 发清辅音 /θ/（咬舌），i 发 /ɪ/，n 收尾",
+    "tip": "thin 薄/瘦 ↔ thick 厚 / fat 胖；th 要咬舌",
+    "xex": [
+      {"en": "The ice was too thin to walk on safely.", "zh": "冰太薄了，无法安全行走。", "src": "造句"}
+    ],
+    "syn": [
+      {"w": "slim", "ipa": "/slɪm/", "note": "苗条的，多形容人身材"}
+    ]
+  },
+  {
+    "w": "old",
+    "p": "/oʊld/",
+    "d": "adj. 年老的；旧的，古老的",
+    "core": "存在时间长、上了年纪",
+    "ph": "o 发 /oʊ/，ld 连读收尾",
+    "tip": "old 老/旧 ↔ new 新 / young 年轻",
+    "xex": [
+      {"en": "They lived in an old stone house by the river.", "zh": "他们住在河边一座古老的石头房子里。", "src": "造句"}
+    ]
+  },
+  {
+    "w": "stone",
+    "p": "/stoʊn/",
+    "d": "n. 石头，石块；宝石",
+    "core": "坚硬的天然矿物块",
+    "ph": "st 连读，one 发 /oʊn/（不读 /wʌn/）",
+    "tip": "stone 里的 one 读 /oʊn/，别读成数字 one",
+    "xex": [
+      {"en": "The old bridge was built entirely of stone.", "zh": "这座古桥完全由石头建成。", "src": "造句"}
+    ]
+  }
+]
