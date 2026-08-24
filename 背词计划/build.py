@@ -101,6 +101,12 @@ PAGE = r"""<!DOCTYPE html>
   .sent-no{font-size:12px;color:var(--muted);font-weight:700;margin-bottom:6px}
   .sent-en{font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.95;color:var(--ink)}
   .sent-zh{color:#6f6656;font-size:14px;margin-top:8px}
+  .lec-title{font-weight:700;color:var(--accent);font-size:16px;margin:10px 0 0}
+  .lec-words{margin-top:22px;border-top:1px dashed var(--line);padding-top:8px}
+  .lec-words>summary{cursor:pointer;font-weight:700;color:var(--core);padding:8px 0;font-size:14.5px;list-style:none}
+  .lec-words>summary::-webkit-details-marker{display:none}
+  .lec-words>summary::before{content:"▸ ";color:var(--muted)}
+  .lec-words[open]>summary::before{content:"▾ "}
   .sw{cursor:pointer;border-bottom:1.5px dotted var(--accent);padding:0 1px}
   .sw:hover{background:#fbf1e2}
   .sw.ok{color:var(--ok);border-bottom-color:var(--ok)}
@@ -828,6 +834,51 @@ async function playAllSents(sents){
   seqPlaying=false; if(btn){ btn.textContent='▶️ 顺序播放本组'; btn.classList.remove('on'); }
   document.querySelectorAll('.sent-card').forEach(c=>c.classList.remove('playing'));
 }
+function renderSubjectStudy(no){
+  const S=VOCAB.subject; const L=S.lectures[String(no)];
+  const bw=listWords(no); const wmap={}; bw.forEach(w=>wmap[w.id]=w);
+  const sents=L.sents;
+  const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
+  const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
+  const dc=doneCount(bw), nc=noCount(bw), tot=uniqCount(bw);
+  const cards=sents.map(s=>{
+    const matched=new Set(); const en=sentEnHtml(s,wmap,matched);
+    return `<div class="sent-card" data-n="${s.n}">
+      <div class="sent-no">${s.n} / ${sents.length} <span class="sent-say" data-n="${s.n}">🔊 读整句</span></div>
+      <div class="sent-en">${en}</div>
+      ${recite?'':`<div class="sent-zh">${esc(s.zh)}</div>`}
+      <div class="sent-detail" id="det-${s.n}"></div>
+    </div>`;
+  }).join('');
+  const wcards=bw.map(w=>cardHtml(w)).join('');
+  view.innerHTML=`<div class="study-top">
+    <div class="stitle"><span class="back" id="back">← 返回总览</span>
+      <h2>${listTitle(no)}</h2><span class="cnt" id="scnt">${tot} 词 · 掌握 ${dc}${nc?' · 未掌握 '+nc:''}</span></div>
+    <div class="bar" style="margin-top:8px"><i id="lbar" style="width:${Math.round(dc/Math.max(tot,1)*100)}%"></i></div>
+    <div class="lec-title">📖 ${esc(L.title)}</div>
+    <div class="intro" style="margin:8px 0 0">这是该学科的一段<b>知识讲座</b>：像听托福 lecture 一样读懂它，句中<b>每个词都能点开</b>看释义/核心意象/词源/例句/词根家族并标 <b>✓掌握 / ✕未掌握</b>（展开自动朗读）。「🔊 读整句」听单句，「▶️ 顺序播放」连听全文——在懂知识里记住词。</div>
+    <div class="tools"><button class="tbtn ${recite?'on':''}" id="tRecite">背记模式（遮中文）</button>
+      <button class="tbtn" id="tPlay">▶️ 顺序播放全文</button>${speedBtns()}
+      <span class="nav"><button class="tbtn" id="pv" ${prev==null?'disabled':''}>◀ 上一学科</button><button class="tbtn" id="nx" ${next==null?'disabled':''}>下一学科 ▶</button></span></div></div>
+    <div class="cards">${cards}</div>
+    <details class="lec-words"><summary>📇 本学科生词卡（${bw.length}）· 逐词精学 + 标掌握</summary>
+      <div class="tools" style="margin:10px 0"><button class="tbtn" id="tAll">本学科·其余记为已掌握</button></div>
+      <div class="cards" id="wcbox">${wcards}</div></details>
+    <div class="tools" style="margin-top:16px"><span class="back" id="back2">← 返回总览</span></div>`;
+  view.querySelectorAll('.sw,.sw-chip').forEach(el=> el.onclick=e=>{ e.stopPropagation(); openWordDetail(el.dataset.n, el.dataset.id, wmap, el.dataset.w, el.dataset.lem); });
+  const enOf={}; sents.forEach(s=>enOf[s.n]=s.en);
+  view.querySelectorAll('.sent-say').forEach(el=> el.onclick=e=>{ e.stopPropagation(); say(enOf[el.dataset.n]); });
+  const stopSeq=()=>{ seqPlaying=false; if(window.speechSynthesis) speechSynthesis.cancel(); };
+  $('#back').onclick=$('#back2').onclick=()=>{ stopSeq(); curList=null; render(); };
+  const go=n=>{ stopSeq(); curList=n; render(); };
+  $('#pv').onclick=()=>prev!=null&&go(prev); $('#nx').onclick=()=>next!=null&&go(next);
+  $('#tRecite').onclick=()=>{ stopSeq(); recite=!recite; save('bcplan:recite',recite); render(); };
+  $('#tPlay').onclick=()=>playAllSents(sents);
+  $('#tAll').onclick=()=>{ const un=bw.filter(w=>state[mkey(w)]!=='no'&&state[mkey(w)]!=='ok').length;
+    if(un && !confirm(`把本学科里除已标『未掌握』外的词，全部记为「已掌握」？（${un} 个未标记词会记为已掌握）`)) return;
+    bw.forEach(w=>{ if(state[mkey(w)]!=='no') state[mkey(w)]='ok'; }); save(M_KEY,state); render(); };
+  wireCards($('#wcbox'));
+}
 function renderSentStudy(no){
   const S=VOCAB[source]; const wmap={}; S.words.forEach(w=>wmap[w.id]=w);
   const sents=S.sents.filter(s=>s.l===no);
@@ -875,6 +926,7 @@ function renderSentStudy(no){
 
 function renderStudy(no){
   if(VOCAB[source].mode==='sent') return renderSentStudy(no);   // 100 长难句：句子式
+  if(source==='subject' && VOCAB.subject.lectures && VOCAB.subject.lectures[String(no)]) return renderSubjectStudy(no);   // 学科听力文段
   const metas=listMeta(); const idx=metas.findIndex(m=>m.no===no);
   const prev=idx>0?metas[idx-1].no:null, next=idx<metas.length-1?metas[idx+1].no:null;
   let lw=listWords(no); const total=lw.length; const dc=doneCount(lw); const nc=noCount(lw);
@@ -1073,6 +1125,28 @@ def build():
                         _obj[_k] = _w[_k]
                 _subw.append(_obj)
         payload["subject"] = {"name": "20学科听力词", "words": _subw, "labels": _slabels}
+        # 学科听力文段（每学科一段「传授知识」lecture；句中目标词可点开满配卡）
+        import re as _reL
+        _ldir = _os0.path.join(DATA, "_lect")
+        _dwords = {}
+        for _w in _subw:
+            _dwords.setdefault(_w["l"], []).append(_w)
+        _lects = {}
+        for _d in _sv.get("disciplines", []):
+            _no = _d["no"]
+            _lp = _os0.path.join(_ldir, _d["id"] + ".json")
+            if not _os0.path.exists(_lp):
+                continue
+            _lj = json.load(open(_lp, encoding="utf-8"))
+            _dws = sorted(_dwords.get(_no, []), key=lambda x: -len(x["w"]))   # 长词优先，避免短词抢匹配
+            _sents = []
+            for _i, _st in enumerate(_lj.get("sentences", []), 1):
+                _low = (_st.get("en", "") or "").lower()
+                _wids = [_w["id"] for _w in _dws if _reL.search(r'\b' + _reL.escape(_w["w"].lower()), _low)]
+                _sents.append({"n": _i, "en": _st.get("en", ""), "zh": _st.get("zh", ""), "wids": _wids})
+            _lects[str(_no)] = {"title": _lj.get("title", ""), "topic": _lj.get("topic", ""), "sents": _sents}
+        if _lects:
+            payload["subject"]["lectures"] = _lects
     # 100 长难句（句子式展示：每句每词可点开标掌握/未掌握）——独立词源 sent100
     _ssp = _os0.path.join(DATA, "sentences-100.json")
     if _os0.path.exists(_ssp):
