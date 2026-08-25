@@ -413,13 +413,21 @@ const GLEX={}, GBYID={};
 function _glexAdd(w){ if(!w||!w.w) return; GBYID[w.id]=w; const k=w.w.toLowerCase(); if(!(k in GLEX)) GLEX[k]=w; }
 Object.values(VOCAB).forEach(v=> (v.words||[]).forEach(_glexAdd));
 if(VOCAB.subject && VOCAB.subject.lex) VOCAB.subject.lex.forEach(_glexAdd);
+const IRREG={grew:'grow',grown:'grow',came:'come',built:'build',began:'begin',begun:'begin',driven:'drive',drove:'drive',broken:'break',broke:'break',left:'leave',made:'make',gave:'give',given:'give',took:'take',taken:'take',saw:'see',seen:'see',drew:'draw',drawn:'draw',wore:'wear',worn:'wear',sang:'sing',sung:'sing',arose:'arise',arisen:'arise',rose:'rise',risen:'rise',meant:'mean',felt:'feel',lost:'lose',bent:'bend',sat:'sit',ran:'run',held:'hold',laid:'lay',said:'say',went:'go',gone:'go',goes:'go',does:'do',done:'do',became:'become',sent:'send',spent:'spend',taught:'teach',thought:'think',brought:'bring',caught:'catch',found:'find',fell:'fall',fallen:'fall',knew:'know',known:'know',threw:'throw',thrown:'throw',flew:'fly',flown:'fly',wrote:'write',written:'write',spoke:'speak',spoken:'speak',chose:'choose',chosen:'choose',froze:'freeze',frozen:'freeze',led:'lead',kept:'keep',slept:'sleep',swept:'sweep',dealt:'deal',struck:'strike',stuck:'stick',hung:'hang',dug:'dig',won:'win',spun:'spin',tore:'tear',torn:'tear',bore:'bear',borne:'bear',shook:'shake',shaken:'shake',stood:'stand',understood:'understand',paid:'pay',fed:'feed',bred:'breed',bound:'bind',wound:'wind',rode:'ride',ridden:'ride',hid:'hide',hidden:'hide',bit:'bite',bitten:'bite',feet:'foot',teeth:'tooth',men:'man',women:'woman',children:'child',mice:'mouse',wolves:'wolf',halves:'half',shelves:'shelf',leaves:'leaf',lives:'life',knives:'knife',calves:'calf'};
 function glexGet(low){
+  low=low.replace(/[’']s?$/,'');                                                   // 去所有格/缩略 earth's→earth
+  if(!low) return null;
   if(GLEX[low]) return GLEX[low];
-  if(low.endsWith('ies')){ const b=low.slice(0,-3)+'y'; if(GLEX[b]) return GLEX[b]; }        // studies→study
-  for(const s of ['s','es','ed','ing','d','ly','er','est','ion','ment','ness','al','ic']){
-    if(low.length>s.length+2 && low.endsWith(s)){ const b=low.slice(0,-s.length); if(GLEX[b]) return GLEX[b]; } }
-  if(low.endsWith('ing')||low.endsWith('ed')){ const b=low.replace(/(ing|ed)$/,'');           // stopped→stop, running→run
-    if(b.length>2 && b[b.length-1]===b[b.length-2] && GLEX[b.slice(0,-1)]) return GLEX[b.slice(0,-1)]; }
+  if(IRREG[low] && GLEX[IRREG[low]]) return GLEX[IRREG[low]];                       // 不规则 grew→grow, wolves→wolf
+  if((low.endsWith('ies')||low.endsWith('ied')) && GLEX[low.slice(0,-3)+'y']) return GLEX[low.slice(0,-3)+'y'];  // studies→study, carried→carry
+  for(const s of ['ing','ed']){ if(low.endsWith(s) && low.length>s.length+1){ const b=low.slice(0,-s.length);
+    if(GLEX[b]) return GLEX[b]; if(GLEX[b+'e']) return GLEX[b+'e'];                 // moving→move
+    if(b.length>=2 && b[b.length-1]===b[b.length-2] && GLEX[b.slice(0,-1)]) return GLEX[b.slice(0,-1)]; } }  // running→run
+  for(const s of ['s','es','er','ers','ors','ist','ists','est','ly','ion','ment','ness','al','ic','ive','ity','ous','ful','less']){
+    if(low.length>s.length+1 && low.endsWith(s)){ const b=low.slice(0,-s.length);
+      if(GLEX[b]) return GLEX[b]; if(GLEX[b+'e']) return GLEX[b+'e']; if(GLEX[b+'y']) return GLEX[b+'y'];
+      if(b.length>=2 && b[b.length-1]===b[b.length-2] && GLEX[b.slice(0,-1)]) return GLEX[b.slice(0,-1)]; } }  // producers→produce, easily→easy, bigger→big
+  const iy=low.replace(/(ier|iest|iness|ily)$/,'y'); if(iy!==low && GLEX[iy]) return GLEX[iy];               // bumpiness→bumpy, happier→happy
   return null;
 }
 function norm2(s){ return (s||'').toLowerCase().replace(/[^a-z]/g,''); }
