@@ -3299,5 +3299,359 @@ window.LR_SCENES = [
     "tier": "long"
    }
   ]
+ },
+ {
+  "id": "mock-2026-08-20",
+  "name": "📝 口语模考·迎新 08-20",
+  "en": "Speaking Mock · Listen and Repeat (2026-08-20)",
+  "desc": "2026-08-20 口语模考 Task 1 原题 7 句（迎新咨询台主题）· 反复听/慢读/分块/录音评分 · 这场你错在:听错(gym→dream/tasty meal→terrace)、漏词(get to know)、整句崩(dormitory hall)",
+  "items": [
+   {
+    "en": "Welcome to the Student Information booth.",
+    "zh": "欢迎来到学生信息咨询台。",
+    "lv": "简单",
+    "chunks": [
+     "Welcome to",
+     "the Student Information booth"
+    ],
+    "skeleton": [
+     "欢迎来到",
+     "学生信息咨询台"
+    ],
+    "tier": "short"
+   },
+   {
+    "en": "Campus orientation is in the gym.",
+    "zh": "校园迎新在体育馆进行。",
+    "lv": "简单",
+    "chunks": [
+     "Campus orientation",
+     "is in the gym"
+    ],
+    "skeleton": [
+     "校园迎新",
+     "在体育馆"
+    ],
+    "tier": "short"
+   },
+   {
+    "en": "Our cafeteria is known for its tasty meal options.",
+    "zh": "我们的食堂以美味的餐食选择而闻名。",
+    "lv": "中等",
+    "chunks": [
+     "Our cafeteria",
+     "is known for",
+     "its tasty meal options"
+    ],
+    "skeleton": [
+     "我们的食堂",
+     "以…闻名",
+     "美味的餐食选择"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "Let us direct you to your assigned dormitory hall.",
+    "zh": "让我们带你去你分配到的宿舍楼。",
+    "lv": "中等",
+    "chunks": [
+     "Let us direct you",
+     "to your assigned dormitory hall"
+    ],
+    "skeleton": [
+     "让我们带你去",
+     "你分配到的宿舍楼"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "Use the library for research and to focus on your studies.",
+    "zh": "利用图书馆做研究、专注于你的学业。",
+    "lv": "中等",
+    "chunks": [
+     "Use the library",
+     "for research",
+     "and to focus on your studies"
+    ],
+    "skeleton": [
+     "利用图书馆",
+     "做研究",
+     "并专注于你的学业"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "We recommend visiting the Student Center to learn about clubs and activities.",
+    "zh": "我们建议去学生中心了解社团和活动。",
+    "lv": "困难",
+    "chunks": [
+     "We recommend visiting",
+     "the Student Center",
+     "to learn about clubs and activities"
+    ],
+    "skeleton": [
+     "我们建议参观",
+     "学生中心",
+     "了解社团和活动"
+    ],
+    "tier": "long"
+   },
+   {
+    "en": "Before your courses begin, take time to explore and get to know the facilities.",
+    "zh": "在课程开始前，花点时间去探索、熟悉各项设施。",
+    "lv": "困难",
+    "chunks": [
+     "Before your courses begin",
+     "take time to explore",
+     "and get to know the facilities"
+    ],
+    "skeleton": [
+     "在课程开始前",
+     "花时间去探索",
+     "并熟悉各项设施"
+    ],
+    "tier": "long"
+   }
+  ]
+ },
+ {
+  "id": "mock-drill-0820",
+  "name": "🎯 模考跟读·易错合辑",
+  "en": "Speaking Mock · Listen-and-Repeat Error Drill (2026-08-20)",
+  "desc": "5 套口语模考里你没拿满分(实词听丢/听错)的跟读句合辑 · 病根=实词听不住(chain→train/bolts→buttons/wheel→firm/fitness丢/unique丢) · 练法:🐢慢读+🧩分块只盯内容词,🦴骨架提示,再录音",
+  "items": [
+   {
+    "en": "Check the front wheel carefully.",
+    "zh": "仔细检查前轮。",
+    "lv": "简单",
+    "chunks": [
+     "Check",
+     "the front wheel",
+     "carefully"
+    ],
+    "skeleton": [
+     "检查",
+     "前轮",
+     "仔细地"
+    ],
+    "tier": "short"
+   },
+   {
+    "en": "Tighten the bolts with the right tool.",
+    "zh": "用对的工具拧紧螺栓。",
+    "lv": "简单",
+    "chunks": [
+     "Tighten the bolts",
+     "with the right tool"
+    ],
+    "skeleton": [
+     "拧紧螺栓",
+     "用对的工具"
+    ],
+    "tier": "short"
+   },
+   {
+    "en": "Water it thoroughly once a week.",
+    "zh": "每周给它彻底浇一次水。",
+    "lv": "简单",
+    "chunks": [
+     "Water it thoroughly",
+     "once a week"
+    ],
+    "skeleton": [
+     "彻底浇水",
+     "每周一次"
+    ],
+    "tier": "short"
+   },
+   {
+    "en": "Cardio machines and bikes are over here.",
+    "zh": "有氧器械和单车在这边。",
+    "lv": "简单",
+    "chunks": [
+     "Cardio machines and bikes",
+     "are over here"
+    ],
+    "skeleton": [
+     "有氧器械和单车",
+     "在这边"
+    ],
+    "tier": "short"
+   },
+   {
+    "en": "You can rent climbing shoes at the front desk.",
+    "zh": "你可以在前台租攀岩鞋。",
+    "lv": "中等",
+    "chunks": [
+     "You can rent climbing shoes",
+     "at the front desk"
+    ],
+    "skeleton": [
+     "可以租攀岩鞋",
+     "在前台"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "Our yoga studio offers classes for all fitness levels.",
+    "zh": "我们的瑜伽馆提供适合各种健身水平的课程。",
+    "lv": "中等",
+    "chunks": [
+     "Our yoga studio",
+     "offers classes",
+     "for all fitness levels"
+    ],
+    "skeleton": [
+     "瑜伽馆",
+     "提供课程",
+     "各种健身水平"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "Locker rooms contain storage bins and changing facilities.",
+    "zh": "更衣室有储物柜和更衣设施。",
+    "lv": "中等",
+    "chunks": [
+     "Locker rooms contain",
+     "storage bins",
+     "and changing facilities"
+    ],
+    "skeleton": [
+     "更衣室有",
+     "储物柜",
+     "和更衣设施"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "Use the pump to fill the tire with enough air pressure.",
+    "zh": "用打气筒把轮胎打到足够的气压。",
+    "lv": "中等",
+    "chunks": [
+     "Use the pump",
+     "to fill the tire",
+     "with enough air pressure"
+    ],
+    "skeleton": [
+     "用打气筒",
+     "给轮胎充气",
+     "到足够气压"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "Make sure the chain moves smoothly without making unusual noise.",
+    "zh": "确保链条顺畅转动、不发出异常噪音。",
+    "lv": "中等",
+    "chunks": [
+     "Make sure the chain",
+     "moves smoothly",
+     "without making unusual noise"
+    ],
+    "skeleton": [
+     "确保链条",
+     "顺畅转动",
+     "不发出异常噪音"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "The learning labs offer activities for visitors of all ages.",
+    "zh": "学习实验室提供适合各年龄段访客的活动。",
+    "lv": "中等",
+    "chunks": [
+     "The learning labs",
+     "offer activities",
+     "for visitors of all ages"
+    ],
+    "skeleton": [
+     "学习实验室",
+     "提供活动",
+     "各年龄段访客"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "Visit the cafe for tasty refreshments during your tour.",
+    "zh": "参观途中可以去咖啡厅享用美味茶点。",
+    "lv": "中等",
+    "chunks": [
+     "Visit the cafe",
+     "for tasty refreshments",
+     "during your tour"
+    ],
+    "skeleton": [
+     "去咖啡厅",
+     "享用美味茶点",
+     "参观途中"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "The gift shop sells unique souvenirs at affordable prices.",
+    "zh": "礼品店以实惠的价格出售独特的纪念品。",
+    "lv": "中等",
+    "chunks": [
+     "The gift shop sells",
+     "unique souvenirs",
+     "at affordable prices"
+    ],
+    "skeleton": [
+     "礼品店出售",
+     "独特的纪念品",
+     "价格实惠"
+    ],
+    "tier": "medium"
+   },
+   {
+    "en": "Use the hang and chin-up bars to increase the power of your upper body.",
+    "zh": "用悬吊杠和引体向上杠来增强你的上肢力量。",
+    "lv": "困难",
+    "chunks": [
+     "Use the hang and chin-up bars",
+     "to increase the power",
+     "of your upper body"
+    ],
+    "skeleton": [
+     "用悬吊杠和引体杠",
+     "增强力量",
+     "你的上肢"
+    ],
+    "tier": "long"
+   },
+   {
+    "en": "Before you leave, check the gym floor plan for specific areas and equipment.",
+    "zh": "离开前，看一下健身房平面图，找具体的区域和器械。",
+    "lv": "困难",
+    "chunks": [
+     "Before you leave",
+     "check the gym floor plan",
+     "for specific areas and equipment"
+    ],
+    "skeleton": [
+     "离开前",
+     "看健身房平面图",
+     "找具体区域和器械"
+    ],
+    "tier": "long"
+   },
+   {
+    "en": "If you need help, trained instructors are always nearby to guide and advise you.",
+    "zh": "如果你需要帮助，训练有素的教练总在附近指导和建议你。",
+    "lv": "困难",
+    "chunks": [
+     "If you need help",
+     "trained instructors are always nearby",
+     "to guide and advise you"
+    ],
+    "skeleton": [
+     "如果需要帮助",
+     "教练总在附近",
+     "指导和建议你"
+    ],
+    "tier": "long"
+   }
+  ]
  }
 ];

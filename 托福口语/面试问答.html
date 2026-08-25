@@ -63,6 +63,11 @@
   table.outline .role{width:78px;font-weight:700;color:#fff;text-align:center;background:var(--blue)}
   table.outline .role.r2{background:var(--core)}
   table.outline ul{margin:0;padding-left:18px}
+  /* 版本标签（① 单理由 / ② 两理由）*/
+  .vlabel{display:inline-block;background:#eef6f3;border:1px solid #cfe3db;color:#2c6a60;font-size:12.5px;font-weight:700;border-radius:6px;padding:3px 10px;margin:12px 0 6px}
+  .vlabel.v3{background:#f5ecdd;border-color:#e3ce9f;color:#9a6a1f}
+  .vlabel.v4{background:#eaf2f8;border-color:#bcd6e8;color:#3a6b8f}
+  .vlabel:first-child{margin-top:2px}
   /* 范文 */
   .model .ln{margin:7px 0;font-size:15.5px;line-height:1.5}
   .model .mk{font-weight:700;color:var(--accent)}
@@ -157,8 +162,8 @@ function renderPractice(){
     <div class="live" id="live">先自己按思路说一遍，再点开范文对照 ↓</div>
     <div class="answer" id="answer"></div>
 
-    ${q.outline?`<details class="fold" open><summary>💡 思路表格<span class="chev">▸</span></summary><div class="body">${outlineHtml(q.outline)}</div></details>`:''}
-    ${q.model?`<details class="fold"><summary>📖 范文（${q.words||''} 词）<span class="chev">▸</span></summary><div class="body">${modelHtml(q)}</div></details>`:''}
+    ${q.outline?`<details class="fold" open><summary>💡 思路表格<span class="chev">▸</span></summary><div class="body">${q.outline2?'<div class="vlabel">① 单理由版</div>':''}${outlineHtml(q.outline)}${q.outline2?'<div class="vlabel">② 两理由版</div>'+outlineHtml(q.outline2):''}${q.outline3?'<div class="vlabel v3">③ 高级版（进阶词句）</div>'+outlineHtml(q.outline3):''}${q.outline4?'<div class="vlabel v4">④ 精简口语版</div>'+outlineHtml(q.outline4):''}</div></details>`:''}
+    ${q.model?`<details class="fold"><summary>📖 范文${q.model2?'（① 单理由 / ② 两理由'+(q.model3?' / ③ 高级版':'')+(q.model4?' / ④ 精简口语版':'')+'）':`（${q.words||''} 词）`}<span class="chev">▸</span></summary><div class="body">${q.model2?`<div class="vlabel">① 单理由版 · ${q.words||''} 词</div>`:''}${modelHtml(q.model,q.words)}${q.model2?`<div class="vlabel">② 两理由版 · ${q.words2||''} 词</div>`+modelHtml(q.model2,q.words2):''}${q.model3?`<div class="vlabel v3">③ 高级版（进阶词句）· ${q.words3||''} 词</div>`+modelHtml(q.model3,q.words3):''}${q.model4?`<div class="vlabel v4">④ 精简口语版 · ${q.words4||''} 词</div>`+modelHtml(q.model4,q.words4):''}</div></details>`:''}
     ${(q.frames||q.vocab)?`<details class="fold"><summary>🔑 常见表达 & 单词<span class="chev">▸</span></summary><div class="body">${exprHtml(q)}</div></details>`:''}
 
     <div class="controls" style="margin-top:16px">
@@ -181,12 +186,12 @@ function outlineHtml(o){
     <td class="role ${/原因二|展开/.test(r.role)&&i>=3?'r2':''}">${esc(r.role)}</td>
     <td>${r.bullets?('<ul>'+r.bullets.map(b=>'<li>'+esc(b)+'</li>').join('')+'</ul>'):esc(r.text)}</td></tr>`).join('')}</table>`;
 }
-function modelHtml(q){
-  const full=q.model.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' ');
+function modelHtml(model, words){
+  const full=model.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' ');
   return `<button class="playall" data-say="${esc(full)}">🔊 整段朗读</button>
-    <div class="model">${q.model.map(l=>`<div class="ln ${l.optional?'opt':''}">
+    <div class="model">${model.map(l=>`<div class="ln ${l.optional?'opt':''}">
       <span class="mk">${esc(l.mk)}</span> ${esc(l.en)}<span class="role">${esc(l.role)}</span></div>`).join('')}</div>
-    <div class="wc">共 ${q.words||'~'} 词 · 正常语速约 ${Math.round((q.words||75)/2)} 秒</div>`;
+    <div class="wc">共 ${words||'~'} 词 · 正常语速约 ${Math.round((words||75)/2)} 秒</div>`;
 }
 function exprHtml(q){
   let h='';
@@ -293,11 +298,12 @@ function toggleRec(opts){
 }
 function tok(s){return (s||'').toLowerCase().replace(/[^a-z0-9' ]/g,' ').split(/\s+/).filter(Boolean);}
 function copyPracticeReport(q){
-  const a=result||{}; const model=q.model?q.model.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' '):'';
+  const a=result||{}; const model=q.model?q.model.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' '):''; const model2=q.model2?q.model2.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' '):'';
   let rep='【面试问答 · 练习判分+修改】\n题目：'+q.q+'\n\n我的回答（转写）：\n'+(a.transcript||'(空)')+'\n';
   if(a.duration!=null)rep+='（时长 '+a.duration.toFixed(1)+'s · 语速 '+a.wpm+' wpm · 填充词 '+a.fillers+' 次）\n';
-  if(model)rep+='\n参考范文：\n'+model+'\n';
-  rep+='\n请 cc：①按维度打分（切题/展开/流利度/语法词汇/发音韵律）；②指出我回答里的具体问题；③给一版改好的、贴合 8 句骨架、70–80 词的修改稿。';
+  if(model)rep+='\n参考范文（① 单理由）：\n'+model+'\n';
+  if(model2)rep+='\n参考范文（② 两理由）：\n'+model2+'\n';
+  rep+='\n请 cc：①按维度打分（切题/展开/流利度/语法词汇/发音韵律）；②指出我回答里的具体问题；③给一版改好的、贴合模板、~80 词的修改稿。';
   navigator.clipboard?.writeText(rep).then(()=>alert('已复制，粘贴给 cc 判分+修改'),()=>{prompt('复制：',rep);}) || prompt('复制：',rep);
 }
 

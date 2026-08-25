@@ -80,12 +80,22 @@ def main():
                 for wd, warn in warns:
                     print(f"    ⚠️ {wd}: 建议补 {', '.join(warn)}")
 
+    # 第11项·引擎级：句中每词可查（例句/长难句/文段里每个词都可点查，不只目标词）
+    bp = os.path.join(ROOT, "build.py")
+    sent_ok = os.path.isfile(bp) and ("sentWordsClickable" in open(bp, encoding="utf-8").read())
+
     print()
     print(f"合计 {total_words} 词 · 硬缺项词 {total_fail_words} · 软提醒 {total_warn}")
-    if total_fail_words:
-        print(f"🔴 质检未过：{total_fail_words} 个词有硬缺项，补齐后再 build / 交付。")
+    print("第11项·句中每词可查（引擎）:",
+          "🟢 已实现" if sent_ok else "🔴 未实现——例句/句子里的词仍是纯文本，需在 build.py 加逐词可点渲染（对标 背词计划 sentEnHtml/wordDetailHtml）")
+    fail = bool(total_fail_words) or (not sent_ok)
+    if fail:
+        msgs = []
+        if total_fail_words: msgs.append(f"{total_fail_words} 个词有硬缺项")
+        if not sent_ok: msgs.append("第11项『句中每词可查』未实现")
+        print(f"🔴 质检未过：{' · '.join(msgs)}，修好后再 build / 交付。")
         sys.exit(1)
-    print("🟢 质检通过：无硬缺项，可交付。")
+    print("🟢 质检通过：满配 + 句中每词可查，可交付。")
 
 if __name__ == "__main__":
     main()

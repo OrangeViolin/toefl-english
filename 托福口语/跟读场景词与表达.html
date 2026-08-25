@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Listen and Repeat · 场景词 &amp; 常见表达</title>
+<style>
+:root{--bg:#f6f3ed;--card:#fffdf9;--ink:#2c2620;--sub:#8a7f70;--accent:#c1662f;--core:#2f8f83;--line:#e7dfd2;--gold:#d9a441}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.5}
+header{position:sticky;top:0;z-index:9;background:rgba(246,243,237,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:14px 18px}
+h1{margin:0 0 3px;font-size:19px}
+.sub{color:var(--sub);font-size:12.5px;margin-bottom:9px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:6px 13px;font-size:13px;cursor:pointer}
+.btn.on{background:var(--core);color:#fff;border-color:var(--core)}
+.btn.amber.on{background:var(--accent);border-color:var(--accent)}
+.prog{margin-left:auto;font-size:13px;color:var(--sub)}
+.prog b{color:var(--accent)}
+main{max-width:920px;margin:0 auto;padding:16px 18px 60px}
+h2{font-size:15.5px;margin:22px 0 10px;padding-bottom:5px;border-bottom:2px solid var(--line)}
+h2 .n{color:var(--sub);font-size:12px;font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 12px 11px}
+.card .w{font-size:16px;font-weight:700;cursor:pointer;padding-right:20px}
+.card .w:hover{color:var(--accent)}
+.ipa{color:var(--core);font-size:12.5px;margin:2px 0}
+.zh{color:var(--sub);font-size:13px}
+.star{position:absolute;top:8px;right:9px;border:none;background:none;font-size:17px;color:var(--gold);cursor:pointer;line-height:1;padding:0}
+.card.done{background:#eef6f3;border-color:#bfe0d7}
+.card.done .star{color:var(--core)}
+.elist{display:grid;gap:10px}
+.ecard{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 40px 11px 14px}
+.ecard .en{font-size:15.5px;font-weight:700;cursor:pointer}
+.ecard .en:hover{color:var(--accent)}
+.ecard .zh{font-size:13px;margin:2px 0}
+.ecard .eg{font-size:12.5px;color:var(--core);cursor:pointer;margin-top:3px}
+.ecard.done{background:#eef6f3;border-color:#bfe0d7}
+.ecard.done .star{color:var(--core)}
+body.recite .zh{filter:blur(5px);cursor:pointer}
+body.recite .zh.show{filter:none}
+.hint{color:var(--sub);font-size:12px;margin:6px 0 0}
+</style></head>
+<body>
+<header>
+  <h1>🎧 Listen and Repeat · 场景词 &amp; 常见表达</h1>
+  <div class="sub">把每一场跟读真题的场景词和高频句型攒在一处，反复背。点词/点句即读，可标掌握。　·　场景词 <b>46</b> · 常见表达 <b>16</b></div>
+  <div class="bar">
+    <button class="btn" id="voice">🔊 朗读</button>
+    <button class="btn amber" id="recite">🙈 背记模式</button>
+    <button class="btn" id="onlyleft">只看未掌握</button>
+    <button class="btn" id="reset">↺ 清掌握</button>
+    <span class="prog">掌握 <b id="pdone">0</b> / <span id="ptot">62</span></span>
+  </div>
+  <div class="hint">点词/句 → 朗读；点右上 ☆ → 标掌握；背记模式下点中文可显形。掌握进度存本地。</div>
+</header>
+<main>
+<section class="scene" data-scene="campus">
+    <h2>🏫 校园 / 迎新导览 <span class="n">15</span></h2>
+    <div class="grid"><div class="card" data-key="orientation" data-zh="迎新，入学情况介绍">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="orientation">orientation</div>
+      <div class="ipa">/ˌɔːriˈteɪʃn/</div>
+      <div class="zh">迎新，入学情况介绍</div>
+    </div><div class="card" data-key="campus tour" data-zh="校园参观">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="campus tour">campus tour</div>
+      <div class="ipa">/ˈkæmpəs tʊr/</div>
+      <div class="zh">校园参观</div>
+    </div><div class="card" data-key="booth" data-zh="服务台，摊位（information booth 咨询台）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="booth">booth</div>
+      <div class="ipa">/buːθ/</div>
+      <div class="zh">服务台，摊位（information booth 咨询台）</div>
+    </div><div class="card" data-key="information desk" data-zh="咨询台，问询处">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="information desk">information desk</div>
+      <div class="ipa">/ˌɪnfərˈmeɪʃn desk/</div>
+      <div class="zh">咨询台，问询处</div>
+    </div><div class="card" data-key="enrollment office" data-zh="注册处 / 招生办">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="enrollment office">enrollment office</div>
+      <div class="ipa">/ɪnˈroʊlmənt ˈɔːfɪs/</div>
+      <div class="zh">注册处 / 招生办</div>
+    </div><div class="card" data-key="cafeteria" data-zh="自助食堂">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="cafeteria">cafeteria</div>
+      <div class="ipa">/ˌkæfəˈtɪriə/</div>
+      <div class="zh">自助食堂</div>
+    </div><div class="card" data-key="meal options" data-zh="餐食选择">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="meal options">meal options</div>
+      <div class="ipa">/miːl ˈɑːpʃnz/</div>
+      <div class="zh">餐食选择</div>
+    </div><div class="card" data-key="dormitory hall" data-zh="宿舍楼">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="dormitory hall">dormitory hall</div>
+      <div class="ipa">/ˈdɔːrmətɔːri hɔːl/</div>
+      <div class="zh">宿舍楼</div>
+    </div><div class="card" data-key="library" data-zh="图书馆">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="library">library</div>
+      <div class="ipa">/ˈlaɪbreri/</div>
+      <div class="zh">图书馆</div>
+    </div><div class="card" data-key="research" data-zh="研究，查资料">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="research">research</div>
+      <div class="ipa">/ˈriːsɜːrtʃ/</div>
+      <div class="zh">研究，查资料</div>
+    </div><div class="card" data-key="facilities" data-zh="设施">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="facilities">facilities</div>
+      <div class="ipa">/fəˈsɪlətiz/</div>
+      <div class="zh">设施</div>
+    </div><div class="card" data-key="Student Center" data-zh="学生中心">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="Student Center">Student Center</div>
+      <div class="ipa">/ˈstuːdnt ˈsentər/</div>
+      <div class="zh">学生中心</div>
+    </div><div class="card" data-key="clubs and activities" data-zh="社团与活动">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="clubs and activities">clubs and activities</div>
+      <div class="ipa">/klʌbz ənd ækˈtɪvətiz/</div>
+      <div class="zh">社团与活动</div>
+    </div><div class="card" data-key="event schedule" data-zh="活动日程">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="event schedule">event schedule</div>
+      <div class="ipa">/ɪˈvent ˈskedʒuːl/</div>
+      <div class="zh">活动日程</div>
+    </div><div class="card" data-key="entrance" data-zh="入口">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="entrance">entrance</div>
+      <div class="ipa">/ˈentrəns/</div>
+      <div class="zh">入口</div>
+    </div></div>
+  </section>
+<section class="scene" data-scene="gym">
+    <h2>💪 健身房 <span class="n">11</span></h2>
+    <div class="grid"><div class="card" data-key="cardio machines" data-zh="有氧器械">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="cardio machines">cardio machines</div>
+      <div class="ipa">/ˈkɑːrdioʊ məˈʃiːnz/</div>
+      <div class="zh">有氧器械</div>
+    </div><div class="card" data-key="yoga studio" data-zh="瑜伽室">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="yoga studio">yoga studio</div>
+      <div class="ipa">/ˈjoʊɡə ˈstuːdioʊ/</div>
+      <div class="zh">瑜伽室</div>
+    </div><div class="card" data-key="fitness levels" data-zh="健身水平（各种程度）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="fitness levels">fitness levels</div>
+      <div class="ipa">/ˈfɪtnəs ˈlevlz/</div>
+      <div class="zh">健身水平（各种程度）</div>
+    </div><div class="card" data-key="locker rooms" data-zh="更衣室">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="locker rooms">locker rooms</div>
+      <div class="ipa">/ˈlɑːkər ruːmz/</div>
+      <div class="zh">更衣室</div>
+    </div><div class="card" data-key="storage bins" data-zh="储物箱">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="storage bins">storage bins</div>
+      <div class="ipa">/ˈstɔːrɪdʒ bɪnz/</div>
+      <div class="zh">储物箱</div>
+    </div><div class="card" data-key="changing facilities" data-zh="更衣设施">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="changing facilities">changing facilities</div>
+      <div class="ipa">/ˈtʃeɪndʒɪŋ fəˈsɪlətiz/</div>
+      <div class="zh">更衣设施</div>
+    </div><div class="card" data-key="chin-up bars" data-zh="引体向上杆（hang bars 悬挂杆）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="chin-up bars">chin-up bars</div>
+      <div class="ipa">/ˈtʃɪn ʌp bɑːrz/</div>
+      <div class="zh">引体向上杆（hang bars 悬挂杆）</div>
+    </div><div class="card" data-key="upper body" data-zh="上半身">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="upper body">upper body</div>
+      <div class="ipa">/ˈʌpər ˈbɑːdi/</div>
+      <div class="zh">上半身</div>
+    </div><div class="card" data-key="gym floor plan" data-zh="健身房平面图">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="gym floor plan">gym floor plan</div>
+      <div class="ipa">/dʒɪm flɔːr plæn/</div>
+      <div class="zh">健身房平面图</div>
+    </div><div class="card" data-key="equipment" data-zh="器材，设备（不可数）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="equipment">equipment</div>
+      <div class="ipa">/ɪˈkwɪpmənt/</div>
+      <div class="zh">器材，设备（不可数）</div>
+    </div><div class="card" data-key="trained instructors" data-zh="受过训练的教练">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="trained instructors">trained instructors</div>
+      <div class="ipa">/treɪnd ɪnˈstrʌktərz/</div>
+      <div class="zh">受过训练的教练</div>
+    </div></div>
+  </section>
+<section class="scene" data-scene="bike">
+    <h2>🚲 骑行 / 自行车 <span class="n">7</span></h2>
+    <div class="grid"><div class="card" data-key="front wheel" data-zh="前轮（wheel 别听成 firm）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="front wheel">front wheel</div>
+      <div class="ipa">/frʌnt wiːl/</div>
+      <div class="zh">前轮（wheel 别听成 firm）</div>
+    </div><div class="card" data-key="bolts" data-zh="螺栓（别听成 buttons）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="bolts">bolts</div>
+      <div class="ipa">/boʊlts/</div>
+      <div class="zh">螺栓（别听成 buttons）</div>
+    </div><div class="card" data-key="tool" data-zh="工具">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="tool">tool</div>
+      <div class="ipa">/tuːl/</div>
+      <div class="zh">工具</div>
+    </div><div class="card" data-key="chain" data-zh="链条（别听成 train）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="chain">chain</div>
+      <div class="ipa">/tʃeɪn/</div>
+      <div class="zh">链条（别听成 train）</div>
+    </div><div class="card" data-key="pump" data-zh="打气筒">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="pump">pump</div>
+      <div class="ipa">/pʌmp/</div>
+      <div class="zh">打气筒</div>
+    </div><div class="card" data-key="tire" data-zh="轮胎">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="tire">tire</div>
+      <div class="ipa">/ˈtaɪər/</div>
+      <div class="zh">轮胎</div>
+    </div><div class="card" data-key="air pressure" data-zh="气压">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="air pressure">air pressure</div>
+      <div class="ipa">/er ˈpreʃər/</div>
+      <div class="zh">气压</div>
+    </div></div>
+  </section>
+<section class="scene" data-scene="climb">
+    <h2>🧗 攀岩 <span class="n">3</span></h2>
+    <div class="grid"><div class="card" data-key="climbing shoes" data-zh="攀岩鞋">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="climbing shoes">climbing shoes</div>
+      <div class="ipa">/ˈklaɪmɪŋ ʃuːz/</div>
+      <div class="zh">攀岩鞋</div>
+    </div><div class="card" data-key="front desk" data-zh="前台">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="front desk">front desk</div>
+      <div class="ipa">/frʌnt desk/</div>
+      <div class="zh">前台</div>
+    </div><div class="card" data-key="rent" data-zh="租用">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="rent">rent</div>
+      <div class="ipa">/rent/</div>
+      <div class="zh">租用</div>
+    </div></div>
+  </section>
+<section class="scene" data-scene="plant">
+    <h2>🌱 植物养护 <span class="n">3</span></h2>
+    <div class="grid"><div class="card" data-key="water (v.)" data-zh="（动词）浇水">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="water">water (v.)</div>
+      <div class="ipa">/ˈwɔːtər/</div>
+      <div class="zh">（动词）浇水</div>
+    </div><div class="card" data-key="thoroughly" data-zh="彻底地（易漏听）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="thoroughly">thoroughly</div>
+      <div class="ipa">/ˈθɜːroʊli/</div>
+      <div class="zh">彻底地（易漏听）</div>
+    </div><div class="card" data-key="once a week" data-zh="每周一次">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="once a week">once a week</div>
+      <div class="ipa">/wʌns ə wiːk/</div>
+      <div class="zh">每周一次</div>
+    </div></div>
+  </section>
+<section class="scene" data-scene="museum">
+    <h2>🏛 博物馆 <span class="n">7</span></h2>
+    <div class="grid"><div class="card" data-key="learning labs" data-zh="学习实验室 / 互动教室">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="learning labs">learning labs</div>
+      <div class="ipa">/ˈlɜːrnɪŋ læbz/</div>
+      <div class="zh">学习实验室 / 互动教室</div>
+    </div><div class="card" data-key="visitors" data-zh="参观者（易漏听）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="visitors">visitors</div>
+      <div class="ipa">/ˈvɪzɪtərz/</div>
+      <div class="zh">参观者（易漏听）</div>
+    </div><div class="card" data-key="refreshments" data-zh="茶点，小食">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="refreshments">refreshments</div>
+      <div class="ipa">/rɪˈfreʃmənts/</div>
+      <div class="zh">茶点，小食</div>
+    </div><div class="card" data-key="gift shop" data-zh="礼品店">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="gift shop">gift shop</div>
+      <div class="ipa">/ɡɪft ʃɑːp/</div>
+      <div class="zh">礼品店</div>
+    </div><div class="card" data-key="souvenirs" data-zh="纪念品">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="souvenirs">souvenirs</div>
+      <div class="ipa">/ˌsuːvəˈnɪrz/</div>
+      <div class="zh">纪念品</div>
+    </div><div class="card" data-key="affordable prices" data-zh="实惠的价格">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="affordable prices">affordable prices</div>
+      <div class="ipa">/əˈfɔːrdəbl ˈpraɪsɪz/</div>
+      <div class="zh">实惠的价格</div>
+    </div><div class="card" data-key="unique" data-zh="独特的（易漏听）">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="w say" data-say="unique">unique</div>
+      <div class="ipa">/juˈniːk/</div>
+      <div class="zh">独特的（易漏听）</div>
+    </div></div>
+  </section>
+  <section class="scene" data-scene="expr">
+    <h2>🗣 常见表达 · 跟读高频句型 <span class="n">16</span></h2>
+    <div class="elist"><div class="ecard" data-key="Welcome to ..." data-zh="欢迎来到……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Welcome to our campus tour.">Welcome to ...</div>
+      <div class="zh">欢迎来到……</div>
+      <div class="eg say" data-say="Welcome to our campus tour.">🔊 Welcome to our campus tour.</div>
+    </div><div class="ecard" data-key="... is straight ahead." data-zh="……就在正前方。">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="The enrollment office is straight ahead.">... is straight ahead.</div>
+      <div class="zh">……就在正前方。</div>
+      <div class="eg say" data-say="The enrollment office is straight ahead.">🔊 The enrollment office is straight ahead.</div>
+    </div><div class="ecard" data-key="Next door you will see ..." data-zh="隔壁你会看到……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Next door you will see the library.">Next door you will see ...</div>
+      <div class="zh">隔壁你会看到……</div>
+      <div class="eg say" data-say="Next door you will see the library.">🔊 Next door you will see the library.</div>
+    </div><div class="ecard" data-key="Let us direct you to ..." data-zh="让我们带您前往……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Let us direct you to your assigned dormitory hall.">Let us direct you to ...</div>
+      <div class="zh">让我们带您前往……</div>
+      <div class="eg say" data-say="Let us direct you to your assigned dormitory hall.">🔊 Let us direct you to your assigned dormitory hall.</div>
+    </div><div class="ecard" data-key="We recommend visiting ..." data-zh="我们推荐去参观……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="We recommend visiting the Student Center.">We recommend visiting ...</div>
+      <div class="zh">我们推荐去参观……</div>
+      <div class="eg say" data-say="We recommend visiting the Student Center.">🔊 We recommend visiting the Student Center.</div>
+    </div><div class="ecard" data-key="... is known for its ..." data-zh="……以……闻名">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Our cafeteria is known for its tasty meal options.">... is known for its ...</div>
+      <div class="zh">……以……闻名</div>
+      <div class="eg say" data-say="Our cafeteria is known for its tasty meal options.">🔊 Our cafeteria is known for its tasty meal options.</div>
+    </div><div class="ecard" data-key="If you have any questions, please stop by ..." data-zh="如有疑问，请顺道来……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="If you have any questions, please stop by the information desk.">If you have any questions, please stop by ...</div>
+      <div class="zh">如有疑问，请顺道来……</div>
+      <div class="eg say" data-say="If you have any questions, please stop by the information desk.">🔊 If you have any questions, please stop by the information desk.</div>
+    </div><div class="ecard" data-key="Lastly, please also remember to ..." data-zh="最后，也请记得……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Lastly, please also remember to check the event schedule.">Lastly, please also remember to ...</div>
+      <div class="zh">最后，也请记得……</div>
+      <div class="eg say" data-say="Lastly, please also remember to check the event schedule.">🔊 Lastly, please also remember to check the event schedule.</div>
+    </div><div class="ecard" data-key="Before ..., take time to ..." data-zh="在……之前，花点时间去……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Before your courses begin, take time to explore the facilities.">Before ..., take time to ...</div>
+      <div class="zh">在……之前，花点时间去……</div>
+      <div class="eg say" data-say="Before your courses begin, take time to explore the facilities.">🔊 Before your courses begin, take time to explore the facilities.</div>
+    </div><div class="ecard" data-key="Make sure ... without ..." data-zh="确保……而不……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Make sure the chain moves smoothly without making unusual noise.">Make sure ... without ...</div>
+      <div class="zh">确保……而不……</div>
+      <div class="eg say" data-say="Make sure the chain moves smoothly without making unusual noise.">🔊 Make sure the chain moves smoothly without making unusual noise.</div>
+    </div><div class="ecard" data-key="Use ... to ..." data-zh="用……来……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Use the pump to fill the tire with enough air pressure.">Use ... to ...</div>
+      <div class="zh">用……来……</div>
+      <div class="eg say" data-say="Use the pump to fill the tire with enough air pressure.">🔊 Use the pump to fill the tire with enough air pressure.</div>
+    </div><div class="ecard" data-key="... offers ... for all ..." data-zh="……为所有……提供……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Our yoga studio offers classes for all fitness levels.">... offers ... for all ...</div>
+      <div class="zh">……为所有……提供……</div>
+      <div class="eg say" data-say="Our yoga studio offers classes for all fitness levels.">🔊 Our yoga studio offers classes for all fitness levels.</div>
+    </div><div class="ecard" data-key="... contain ..." data-zh="……内含 / 设有……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Locker rooms contain storage bins and changing facilities.">... contain ...</div>
+      <div class="zh">……内含 / 设有……</div>
+      <div class="eg say" data-say="Locker rooms contain storage bins and changing facilities.">🔊 Locker rooms contain storage bins and changing facilities.</div>
+    </div><div class="ecard" data-key="You can rent ... at ..." data-zh="你可以在……租用……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="You can rent climbing shoes at the front desk.">You can rent ... at ...</div>
+      <div class="zh">你可以在……租用……</div>
+      <div class="eg say" data-say="You can rent climbing shoes at the front desk.">🔊 You can rent climbing shoes at the front desk.</div>
+    </div><div class="ecard" data-key="check the ... for ..." data-zh="查看……以了解……">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Check the gym floor plan for specific areas and equipment.">check the ... for ...</div>
+      <div class="zh">查看……以了解……</div>
+      <div class="eg say" data-say="Check the gym floor plan for specific areas and equipment.">🔊 Check the gym floor plan for specific areas and equipment.</div>
+    </div><div class="ecard" data-key="... are always nearby to guide and advise you." data-zh="……随时在旁为你指导。">
+      <button class="star" title="标记掌握">☆</button>
+      <div class="en say" data-say="Trained instructors are always nearby to guide and advise you.">... are always nearby to guide and advise you.</div>
+      <div class="zh">……随时在旁为你指导。</div>
+      <div class="eg say" data-say="Trained instructors are always nearby to guide and advise you.">🔊 Trained instructors are always nearby to guide and advise you.</div>
+    </div></div>
+  </section>
+</main>
+<script>
+const LS="lrvocab-mastered-v1";
+let done=new Set(JSON.parse(localStorage.getItem(LS)||"[]"));
+// TTS
+let voices=[],vi=0;
+function loadV(){voices=speechSynthesis.getVoices().filter(v=>v.lang.startsWith("en"));
+  const pref=voices.findIndex(v=>/Samantha|Ava|Google US|United States/i.test(v.name));if(pref>=0)vi=pref;}
+loadV();if(speechSynthesis.onvoiceschanged!==undefined)speechSynthesis.onvoiceschanged=loadV;
+function say(t){if(!t)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);
+  if(voices[vi])u.voice=voices[vi];u.rate=.92;speechSynthesis.speak(u);}
+document.querySelectorAll(".say").forEach(el=>el.addEventListener("click",e=>{
+  if(document.body.classList.contains("recite")&&el.classList.contains("zh"))return;
+  say(el.dataset.say);}));
+// 掌握标记
+function key(c){return c.dataset.key;}
+function paint(){let n=0;
+  document.querySelectorAll(".card,.ecard").forEach(c=>{
+    const k=key(c),on=done.has(k);c.classList.toggle("done",on);
+    c.querySelector(".star").textContent=on?"★":"☆";if(on)n++;
+    c.style.display=(document.body.classList.contains("onlyleft")&&on)?"none":"";
+  });
+  document.getElementById("pdone").textContent=n;
+  localStorage.setItem(LS,JSON.stringify([...done]));}
+document.querySelectorAll(".card,.ecard").forEach(c=>{
+  c.querySelector(".star").addEventListener("click",e=>{e.stopPropagation();
+    const k=key(c);done.has(k)?done.delete(k):done.add(k);paint();});});
+// 背记模式：点中文显形
+document.querySelectorAll(".zh").forEach(z=>z.addEventListener("click",()=>{
+  if(document.body.classList.contains("recite"))z.classList.toggle("show");}));
+// 按钮
+document.getElementById("recite").onclick=function(){document.body.classList.toggle("recite");
+  this.classList.toggle("on");document.querySelectorAll(".zh.show").forEach(z=>z.classList.remove("show"));};
+document.getElementById("onlyleft").onclick=function(){document.body.classList.toggle("onlyleft");
+  this.classList.toggle("on");paint();};
+document.getElementById("reset").onclick=function(){if(confirm("清空所有掌握标记？")){done.clear();paint();}};
+document.getElementById("voice").onclick=function(){
+  if(voices.length){vi=(vi+1)%voices.length;say("This is voice "+(vi+1));this.textContent="🔊 "+voices[vi].name.split(" ")[0];}};
+paint();
+</script>
+</body></html>

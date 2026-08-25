@@ -120,6 +120,18 @@ PAGE_TMPL = r"""<!DOCTYPE html>
   .sense .s-zh{color:#6b6154}
   .ex{margin:7px 0}
   .ex .en{font-family:Georgia,serif;font-size:14px;color:#2f2a24}
+  /* 句中每词可查 */
+  .sw{cursor:pointer;border-bottom:1px dotted #d8c8a8;padding:0 .5px}
+  .sw:hover{background:#f3ead9}
+  .sw.sw-open{background:#fdf1e6;border-bottom-color:#c1662f}
+  .sw-pop{margin:5px 0 7px;padding:7px 11px;background:#fffdf8;border:1px solid #e5dccb;border-radius:9px;font-size:13px;color:#2f2a24;line-height:1.65;font-family:-apple-system,"PingFang SC",sans-serif}
+  .sw-pop b{font-size:15px}
+  .pop-ipa{color:#2f8f83;font-size:12.5px}
+  .pop-say{border:0;background:#4a5cc7;color:#fff;border-radius:6px;padding:1px 8px;font-size:11px;cursor:pointer;vertical-align:middle}
+  .pop-mean{color:#5f574c;margin-top:2px}
+  .pop-jump{color:#c1662f;cursor:pointer;font-size:12px}
+  .pop-dict{color:#4a5cc7;font-size:12px;margin-left:8px;text-decoration:none}
+  .card.flashcard{box-shadow:0 0 0 3px #c1662f;transition:box-shadow .2s}
   .ex .zh{color:#6b6154;font-size:13px}
   .ex .src{display:inline-block;font-size:11px;color:#a89a86;margin-top:1px}
   .ex.famous{background:#fbf4e7;border-radius:8px;padding:7px 10px}
@@ -243,6 +255,40 @@ const G = JSON.parse(document.getElementById('data').textContent);
 const KEY = 'vocab-unfam-' + G.id;
 let unfam = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
 let curLv = '全部', curSg = '全部', curQ = '', onlyUnfam = false;
+
+/* ===== 句中每词可查（满配标准第11项）· CAP: sentWordsClickable =====
+   例句/义项句里每个词包可点 span：点词→🔊，收录词展开释义+跳词卡，其他词给查词典。 */
+const PAGEWORDS = {};
+(G.words||[]).forEach(w=>{ PAGEWORDS[(w.word||'').toLowerCase().replace(/[^a-z]/g,'')] = w; });
+function sentWordsClickable(text){
+  if(!text) return '';
+  return String(text).replace(/[A-Za-z][A-Za-z’'-]*/g, m=>`<span class="sw" data-w="${m}" onclick="event.stopPropagation();swLookup(this)">${m}</span>`);
+}
+function jumpToWord(word){
+  const c = document.querySelector('.card[data-w="'+word+'"]');
+  if(c){ c.scrollIntoView({behavior:'smooth',block:'center'}); c.classList.add('flashcard'); setTimeout(()=>c.classList.remove('flashcard'),1200); }
+}
+function swLookup(el){
+  const raw = el.dataset.w||''; say(raw);
+  document.querySelectorAll('.sw-pop').forEach(p=>p.remove());
+  document.querySelectorAll('.sw.sw-open').forEach(x=>{ if(x!==el) x.classList.remove('sw-open'); });
+  if(el.classList.contains('sw-open')){ el.classList.remove('sw-open'); return; }
+  el.classList.add('sw-open');
+  const key = raw.toLowerCase().replace(/[^a-z]/g,'');
+  const pw = PAGEWORDS[key];
+  const pop = document.createElement('div'); pop.className='sw-pop';
+  if(pw){
+    pop.innerHTML = `<b>${pw.word}</b> <span class="pop-ipa">${pw.ipa||''}</span> `+
+      `<button class="pop-say" data-w="${pw.word}" onclick="event.stopPropagation();say(this.dataset.w)">🔊</button>`+
+      `<div class="pop-mean">${pw.meaning||''}</div>`+
+      `<span class="pop-jump" data-w="${pw.word}" onclick="event.stopPropagation();jumpToWord(this.dataset.w)">↧ 跳到该词卡</span>`;
+  } else {
+    pop.innerHTML = `<b>${raw}</b> `+
+      `<button class="pop-say" data-w="${raw}" onclick="event.stopPropagation();say(this.dataset.w)">🔊</button> `+
+      `<a class="pop-dict" href="https://dictionary.cambridge.org/dictionary/english/${key}" target="_blank" rel="noopener" onclick="event.stopPropagation()">查词典 ↗</a>`;
+  }
+  el.after(pop);
+}
 
 const LVCLASS = {'六级':'lv6','托福':'tfl','GRE拓展':'gre','基础':'','口语':'spk','场景':'scn'};
 // 发音分组配色（按 subgroups 顺序循环取用）
@@ -418,7 +464,7 @@ function card(w){
   const roots = (w.roots||[]).map(r=>`<span class="root"><b>${r.part}</b> ${r.meaning}</span>`).join('');
   const exs = (w.examples||[]).map(e=>{
     const fam = /造句/.test(e.source)? '' : ' famous';
-    return `<div class="ex${fam}"><div class="en">${e.en}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
+    return `<div class="ex${fam}"><div class="en">${sentWordsClickable(e.en)}</div><div class="zh">${e.zh}</div><span class="src">— ${e.source}</span></div>`;
   }).join('');
   const syns = (w.synonyms||[]).map(s=>
     `<div class="lex"><b class="lw" onclick="event.stopPropagation();say('${s.w}')">${s.w}</b>`+
@@ -433,7 +479,7 @@ function card(w){
     : '';
   const senses = (w.senses||[]).map(s=>
     `<div class="sense"><div class="s-gloss"><b>${s.gloss}</b>${s.logic?` <span class="s-logic">← ${s.logic}</span>`:''}</div>`+
-    `${s.en?`<div class="s-ex"><span class="s-en">${s.en}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
+    `${s.en?`<div class="s-ex"><span class="s-en">${sentWordsClickable(s.en)}</span> <span class="s-zh">${s.zh||''}</span></div>`:''}</div>`).join('');
   const senseSec = (w.core||senses)
     ? `<div class="sec"><span class="l">🧠 一词多义 · 核心意象串解</span>`+
       `${w.core?`<div class="coreimg">🎯 核心感觉：${w.core}</div>`:''}${senses}</div>`

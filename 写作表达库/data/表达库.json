@@ -1,0 +1,64 @@
+{
+  "title": "写作表达库",
+  "intro": "写作专用的句型/连接/套话，按功能场景分组。考场直接调用。点 🔊 朗读 · 背记模式遮中文 · 掌握进度本地保存。每次考拉考拉练完把想留的表达发我，说「写作表达库加：<表达>」即可累进。",
+  "scenes": [
+    { "key": "stance", "name": "① 表明立场", "items": [
+      { "id": "stance-1", "en": "In my opinion, ...", "zh": "在我看来，……", "usage": "最稳的立场开头，中性正式", "ex": { "en": "In my opinion, online classes offer more flexibility.", "zh": "在我看来，网课更灵活。" } },
+      { "id": "stance-2", "en": "I believe that ...", "zh": "我认为……", "usage": "直接表态，稍口语", "ex": { "en": "I believe that libraries are still essential.", "zh": "我认为图书馆仍然不可或缺。" } },
+      { "id": "stance-3", "en": "From my perspective, ...", "zh": "从我的角度看，……", "usage": "略正式，突出个人视角", "ex": { "en": "From my perspective, both sides have valid points.", "zh": "在我看来，双方都有道理。" } }
+    ]},
+    { "key": "concession", "name": "② 让步认可（让步型开头）", "items": [
+      { "id": "conc-1", "en": "Admittedly, [Name] is right when ...", "zh": "诚然，某某说得对，当……", "usage": "让步型第 1 句，先认可一位同学", "ex": { "en": "Admittedly, Paul is right when he says sports improve health.", "zh": "诚然，Paul 说运动有益健康是对的。" } },
+      { "id": "conc-2", "en": "It is true that ...", "zh": "确实，……", "usage": "承认一个事实作让步", "ex": { "en": "It is true that free transport could reduce traffic.", "zh": "确实，免费交通能减少拥堵。" } },
+      { "id": "conc-3", "en": "After all, ...", "zh": "毕竟，……", "usage": "让步型第 2 句，补让步理由", "ex": { "en": "After all, many students rely on part-time jobs.", "zh": "毕竟，许多学生靠兼职生活。" } }
+    ]},
+    { "key": "turn", "name": "③ 转折立己见", "items": [
+      { "id": "turn-1", "en": "Nevertheless, I think ...", "zh": "然而，我认为……", "usage": "让步型第 3 句，转折提出己见（高级）", "ex": { "en": "Nevertheless, I think academics should come first.", "zh": "然而，我认为学业应当优先。" } },
+      { "id": "turn-2", "en": "However, ...", "zh": "然而，……", "usage": "最常用转折", "ex": { "en": "However, this approach has clear limits.", "zh": "然而，这种做法有明显局限。" } },
+      { "id": "turn-3", "en": "That said, ...", "zh": "话虽如此，……", "usage": "承接前句、温和转折", "ex": { "en": "That said, cost remains a real concern.", "zh": "话虽如此，成本仍是个现实问题。" } },
+      { "id": "turn-4", "en": "On the other hand, ...", "zh": "另一方面，……", "usage": "引出对立面", "ex": { "en": "On the other hand, some students prefer in-person classes.", "zh": "另一方面，有些学生更喜欢面授。" } }
+    ]},
+    { "key": "reason", "name": "④ 给理由", "items": [
+      { "id": "reason-1", "en": "One important reason is that ...", "zh": "一个重要原因是……", "usage": "引出主要理由", "ex": { "en": "One important reason is that it saves commuting time.", "zh": "一个重要原因是它省下通勤时间。" } },
+      { "id": "reason-2", "en": "This is because ...", "zh": "这是因为……", "usage": "解释因果", "ex": { "en": "This is because access to resources shapes learning.", "zh": "这是因为资源获取影响学习。" } },
+      { "id": "reason-3", "en": "In my opinion, a ... could ...", "zh": "在我看来，……能……", "usage": "让步型第 4 句：给新的支持理由", "ex": { "en": "In my opinion, a new library could strengthen academic exchange.", "zh": "在我看来，新图书馆能加强学术交流。" } }
+    ]},
+    { "key": "example", "name": "⑤ 举例", "items": [
+      { "id": "eg-1", "en": "For example, ...", "zh": "例如，……", "usage": "最常用举例，后接具体例子", "ex": { "en": "For example, when I studied abroad, I relied on the library daily.", "zh": "例如，我留学时每天都靠图书馆。" } },
+      { "id": "eg-2", "en": "For instance, ...", "zh": "比如，……", "usage": "同 for example，稍正式", "ex": { "en": "For instance, many campuses now offer hybrid courses.", "zh": "比如，许多校园现在提供混合课程。" } },
+      { "id": "eg-3", "en": "A good example of this is ...", "zh": "一个很好的例子是……", "usage": "引出一个具体案例", "ex": { "en": "A good example of this is the shift to remote work.", "zh": "一个很好的例子是转向远程办公。" } }
+    ]},
+    { "key": "explain", "name": "⑥ 解释陈述", "items": [
+      { "id": "explain-1", "en": "In other words, ...", "zh": "换句话说，……", "usage": "让步型第 5 句：换个说法解释", "ex": { "en": "In other words, quality matters more than quantity.", "zh": "换句话说，质比量更重要。" } },
+      { "id": "explain-2", "en": "That is to say, ...", "zh": "也就是说，……", "usage": "进一步说明", "ex": { "en": "That is to say, we should focus on outcomes.", "zh": "也就是说，我们应关注结果。" } }
+    ]},
+    { "key": "conclude", "name": "⑦ 总结收尾", "items": [
+      { "id": "concl-1", "en": "Therefore, ...", "zh": "因此，……", "usage": "让步型第 7 句：得出结论", "ex": { "en": "Therefore, I believe the library should come first.", "zh": "因此，我认为应优先建图书馆。" } },
+      { "id": "concl-2", "en": "For these reasons, ...", "zh": "出于这些原因，……", "usage": "讨论收尾", "ex": { "en": "For these reasons, I support the new policy.", "zh": "出于这些原因，我支持这项新政策。" } },
+      { "id": "concl-3", "en": "Overall, ...", "zh": "总的来说，……", "usage": "总括收尾", "ex": { "en": "Overall, the benefits outweigh the costs.", "zh": "总的来说，利大于弊。" } }
+    ]},
+    { "key": "mail-open", "name": "⑧ 邮件·问候/来意", "items": [
+      { "id": "mopen-1", "en": "I hope you are doing well.", "zh": "希望你一切都好。", "usage": "邮件第 2 句·问候（几乎必用）", "ex": { "en": "Dear Professor, I hope you are doing well.", "zh": "尊敬的教授，希望您一切都好。" } },
+      { "id": "mopen-2", "en": "I am writing to ...", "zh": "我写信是想……", "usage": "来意句，说明写信目的", "ex": { "en": "I am writing to ask about the deadline for the essay.", "zh": "我写信是想询问论文的截止日期。" } },
+      { "id": "mopen-3", "en": "I am reaching out regarding ...", "zh": "我就……联系您", "usage": "稍正式的来意", "ex": { "en": "I am reaching out regarding my recent application.", "zh": "我就我最近的申请联系您。" } }
+    ]},
+    { "key": "mail-request", "name": "⑨ 邮件·请求", "items": [
+      { "id": "mreq-1", "en": "I would appreciate it if you could ...", "zh": "如果您能……我将不胜感激", "usage": "最礼貌的请求句", "ex": { "en": "I would appreciate it if you could send me the lecture notes.", "zh": "如果您能把讲义发我，我将不胜感激。" } },
+      { "id": "mreq-2", "en": "Would it be possible to ...?", "zh": "是否可以……？", "usage": "委婉请求", "ex": { "en": "Would it be possible to reschedule the meeting?", "zh": "是否可以改期开会？" } },
+      { "id": "mreq-3", "en": "Could you please let me know if ...?", "zh": "能否请您告知是否……？", "usage": "请求确认信息", "ex": { "en": "Could you please let me know if my submission was received?", "zh": "能否请您告知我的提交是否收到？" } },
+      { "id": "mreq-4", "en": "I would love to meet with you to discuss ... and explore how we can work together.", "zh": "我很愿意与您见面讨论……并探讨我们如何合作", "usage": "礼貌提出见面+合作（募捐信积累）", "ex": { "en": "I would love to meet with you to discuss the plans and explore how we can work together.", "zh": "我很愿意与您见面讨论方案，并探讨我们如何合作。" } },
+      { "id": "mreq-5", "en": "Please let me know if you have a preferred time to ...", "zh": "请告知您方便……的时间", "usage": "请对方给时间，周到（募捐信积累）", "ex": { "en": "Please let me know if you have a preferred time to talk on Saturday or Sunday.", "zh": "请告知您周六或周日方便通话的时间。" } }
+    ]},
+    { "key": "mail-close", "name": "⑩ 邮件·礼貌收尾", "items": [
+      { "id": "mclose-1", "en": "Thank you for your time and assistance.", "zh": "感谢您的时间与帮助。", "usage": "邮件感谢句（第 6 步）", "ex": { "en": "Thank you for your time and assistance.", "zh": "感谢您的时间与帮助。" } },
+      { "id": "mclose-2", "en": "I look forward to hearing from you.", "zh": "期待您的回复。", "usage": "收尾，表期待回复", "ex": { "en": "I look forward to hearing from you.", "zh": "期待您的回复。" } },
+      { "id": "mclose-3", "en": "Please let me know if you need any further information.", "zh": "如需更多信息请告知我。", "usage": "周到收尾", "ex": { "en": "Please let me know if you need any further information.", "zh": "如需更多信息请告知我。" } },
+      { "id": "mclose-4", "en": "I look forward to hearing your thoughts on ...", "zh": "期待听到您对……的看法", "usage": "收尾·邀对方回应观点，比 hearing from you 更具体（募捐信积累）", "ex": { "en": "I look forward to hearing your thoughts on this meaningful project.", "zh": "期待听到您对这个有意义的项目的看法。" } }
+    ]},
+    { "key": "email-body", "name": "⑪ 邮件·陈述目的/优势", "items": [
+      { "id": "body-1", "en": "This initiative aims to ...", "zh": "这项活动旨在……", "usage": "说明活动目的，把「好处」具体化（募捐信积累）", "ex": { "en": "This initiative aims to provide essential medical resources for families in need.", "zh": "这项活动旨在为困难家庭提供必需的医疗资源。" } },
+      { "id": "body-2", "en": "I am optimistic that ... will be successful because ...", "zh": "我相信……会成功，因为……", "usage": "表明信心并给理由，比「everybody knows」有力（募捐信积累）", "ex": { "en": "I am optimistic that this event will be successful because there is a strong sense of community here.", "zh": "我相信这次活动会成功，因为这里有很强的社区凝聚力。" } },
+      { "id": "body-3", "en": "My background in both A and B allows me to offer unique insights into ...", "zh": "我在 A 和 B 两方面的背景让我能为……提供独到见解", "usage": "陈述个人优势/为何能帮上忙（募捐信积累）", "ex": { "en": "My background in both healthcare and finance allows me to offer unique insights into planning the event.", "zh": "我在医疗和财务两方面的背景让我能为活动策划提供独到见解。" } }
+    ]}
+  ]
+}

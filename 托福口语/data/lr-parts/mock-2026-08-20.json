@@ -1,0 +1,57 @@
+{
+  "id": "mock-2026-08-20",
+  "name": "📝 口语模考·迎新 08-20",
+  "en": "Speaking Mock · Listen and Repeat (2026-08-20)",
+  "desc": "2026-08-20 口语模考 Task 1 原题 7 句（迎新咨询台主题）· 反复听/慢读/分块/录音评分 · 这场你错在:听错(gym→dream/tasty meal→terrace)、漏词(get to know)、整句崩(dormitory hall)",
+  "items": [
+    {
+      "en": "Welcome to the Student Information booth.",
+      "zh": "欢迎来到学生信息咨询台。",
+      "lv": "简单",
+      "chunks": ["Welcome to", "the Student Information booth"],
+      "skeleton": ["欢迎来到", "学生信息咨询台"]
+    },
+    {
+      "en": "Campus orientation is in the gym.",
+      "zh": "校园迎新在体育馆进行。",
+      "lv": "简单",
+      "chunks": ["Campus orientation", "is in the gym"],
+      "skeleton": ["校园迎新", "在体育馆"]
+    },
+    {
+      "en": "Our cafeteria is known for its tasty meal options.",
+      "zh": "我们的食堂以美味的餐食选择而闻名。",
+      "lv": "中等",
+      "chunks": ["Our cafeteria", "is known for", "its tasty meal options"],
+      "skeleton": ["我们的食堂", "以…闻名", "美味的餐食选择"]
+    },
+    {
+      "en": "Let us direct you to your assigned dormitory hall.",
+      "zh": "让我们带你去你分配到的宿舍楼。",
+      "lv": "中等",
+      "chunks": ["Let us direct you", "to your assigned dormitory hall"],
+      "skeleton": ["让我们带你去", "你分配到的宿舍楼"]
+    },
+    {
+      "en": "Use the library for research and to focus on your studies.",
+      "zh": "利用图书馆做研究、专注于你的学业。",
+      "lv": "中等",
+      "chunks": ["Use the library", "for research", "and to focus on your studies"],
+      "skeleton": ["利用图书馆", "做研究", "并专注于你的学业"]
+    },
+    {
+      "en": "We recommend visiting the Student Center to learn about clubs and activities.",
+      "zh": "我们建议去学生中心了解社团和活动。",
+      "lv": "困难",
+      "chunks": ["We recommend visiting", "the Student Center", "to learn about clubs and activities"],
+      "skeleton": ["我们建议参观", "学生中心", "了解社团和活动"]
+    },
+    {
+      "en": "Before your courses begin, take time to explore and get to know the facilities.",
+      "zh": "在课程开始前，花点时间去探索、熟悉各项设施。",
+      "lv": "困难",
+      "chunks": ["Before your courses begin", "take time to explore", "and get to know the facilities"],
+      "skeleton": ["在课程开始前", "花时间去探索", "并熟悉各项设施"]
+    }
+  ]
+}

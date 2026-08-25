@@ -83,6 +83,15 @@ PAGE = r"""<!DOCTYPE html>
   .mlabel{font-weight:700;color:#8a5a2e;font-size:12.5px;margin-bottom:6px}
   .sbb{font-weight:600;font-size:13px;color:#5f574c;margin:9px 0 2px}
   .sopt{font-size:13.5px;color:#433d34;padding:2px 0}
+  .cn-tbl{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0}
+  .cn-tbl th,.cn-tbl td{border:1px solid #e0d7c7;padding:5px 8px;text-align:left;vertical-align:top}
+  .cn-tbl th{background:#eef1fb;font-weight:600}
+  .cn-n{white-space:nowrap;color:var(--muted)}
+  .cn-p{color:var(--blue);font-style:italic}
+  .cn-sample{margin-top:10px;background:#faf7ef;border:1px solid #efe6d4;border-radius:8px;padding:10px 12px}
+  .cn-slabel{font-weight:700;color:var(--core);font-size:13px;margin-bottom:6px}
+  .cn-sl{font-size:13.5px;margin:5px 0;line-height:1.55}
+  .cn-sn{display:inline-block;font-size:11px;color:#fff;background:#b9ad95;border-radius:8px;padding:1px 7px;margin-right:5px}
   .tmpl .tin{padding:0 16px 14px;font-size:13.5px}
   .tmpl .frame div{padding:3px 0;border-bottom:1px dashed #d3e5e0}
   .tmpl .phr{margin-top:10px}
@@ -187,6 +196,17 @@ function tmplHtml(t){
     <div class="frame">${t.frame.map(f=>`<div>${esc(f)}</div>`).join('')}</div>
     <div class="phr">${t.phrases.map(p=>`<span>${esc(p)}</span>`).join('')}</div>
     ${t.tips?`<div class="tips">💡 ${esc(t.tips)}</div>`:''}
+  </div></details>`;
+}
+function concessionHtml(D){
+  const c = D.concession; if(!c) return '';
+  const rows = c.rows.map(r=>`<tr><td class="cn-n">${esc(r.n)}</td><td>${esc(r.outline)}</td><td class="cn-p">${esc(r.pattern)}</td></tr>`).join('');
+  const sample = c.sample ? `<div class="cn-sample"><div class="cn-slabel">${esc(c.sample.topic)}</div>`+
+      c.sample.lines.map(l=>`<div class="cn-sl"><span class="cn-sn">${esc(l.n)}</span>${esc(l.en)}</div>`).join('')+`</div>` : '';
+  return `<details class="tmpl" open><summary>${esc(c.name)}</summary><div class="tin">
+    ${c.note?`<div class="tips" style="margin-bottom:8px">💡 ${esc(c.note)}</div>`:''}
+    <table class="cn-tbl"><thead><tr><th>句</th><th>提纲</th><th>句式开头</th></tr></thead><tbody>${rows}</tbody></table>
+    ${sample}
   </div></details>`;
 }
 function refHtml(it){

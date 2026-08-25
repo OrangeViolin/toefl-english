@@ -5,7 +5,7 @@
   data/<得分-日期>.json  →  复习页/<得分-日期>.html + index.html
 用法：  python3 build.py
 布局：每篇阅读文段 → ①原文(生词可点击,跳到下方词卡) → ②翻译 → ③单词卡(音标/释义/记忆钩子/掌握状态/错词标注)
-      + 美音 TTS + 背记模式 + 拼写测验(全部/只练拼错词)。配套文字分析见 学习方法论/模考分析/。
+      + 美音 TTS + 背记模式 + 拼写测验(全部/只练拼错词)。配套文字分析见 模考复习系统/分析/。
 """
 import json, os, glob, html
 
@@ -42,10 +42,24 @@ PAGE = r"""<!DOCTYPE html>
   .hs-en{font-size:15px;line-height:1.95}
   .hs-an{font-size:12.8px;color:#2c6a60;margin-top:7px;background:#fff;border-radius:8px;padding:7px 10px}
   .hs-zh{font-size:13.5px;color:#5f574c;margin-top:6px}
-  .pw{cursor:pointer;border-bottom:1.5px dotted var(--accent);padding:0 1px}
+  /* 生词：橙底可点；其余词：浅虚线，一样可查 */
+  .pw{cursor:pointer;border-bottom:1.5px dotted var(--accent);padding:0 1px;border-radius:3px}
   .pw:not(.done){background:#fde7d6}
   .pw.done{border-bottom-color:#cbb;background:transparent;color:#6f6656}
   .pw:hover{background:#f7cfa8}
+  .pw-plain{background:transparent;border-bottom:1px dotted #cdbfa6;color:inherit}
+  .pw-plain:hover{background:#f0e8d8;border-bottom-color:var(--accent)}
+  .pw.open{background:#f7cfa8;box-shadow:0 0 0 2px var(--accent)}
+  .pw-plain.open{background:#efe6d4;box-shadow:0 0 0 2px var(--accent)}
+  /* 点词就地展开的卡 */
+  .pdet{margin:8px 0 12px}
+  .pdet .card{border-left:4px solid var(--accent);background:#fffdf6}
+  .card.plain{border:1px dashed var(--line);background:#fbf8f1}
+  .card.plain .w{font-size:17px}
+  .dict{display:inline-block;margin-top:8px;color:var(--blue);font-size:12.5px;text-decoration:none}
+  /* 读整句/整篇 */
+  .rd,.hs-say{background:#eef6f4;color:var(--core);border:1px solid #cfe6e0;border-radius:20px;padding:1px 10px;font-size:12px;cursor:pointer;font-family:inherit;margin-left:8px;vertical-align:middle}
+  .rd:hover,.hs-say:hover{background:#dcefe9}
   /* 词卡 */
   .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-top:4px}
   .card{border:1px solid var(--line);border-radius:12px;padding:11px 13px;background:#fffef9;scroll-margin-top:70px}
@@ -61,6 +75,12 @@ PAGE = r"""<!DOCTYPE html>
   .hook{font-size:12.5px;color:#6f6656;background:#faf7ef;border-radius:7px;padding:6px 9px;margin-top:6px}
   .err{font-size:12.5px;color:var(--bad);background:#fbecea;border-radius:7px;padding:5px 9px;margin-top:6px}
   .err s{opacity:.8}
+  .sec{font-size:12.5px;color:#6f6656;background:#faf7ef;border-radius:7px;padding:6px 9px;margin-top:6px;line-height:1.6}
+  .xex{font-size:12.5px;margin-top:6px;color:#433d34;line-height:1.55}
+  .xex .xzh{color:#8c8072}
+  .syn{font-size:12.5px;margin-top:6px;color:#5f574c;line-height:1.6}
+  .syn b{color:var(--core);cursor:pointer}
+  .nu{font-size:12.5px;margin-top:6px;background:#eef6f4;border-left:3px solid var(--core);border-radius:0 7px 7px 0;padding:6px 9px;color:#2c6a60}
   .mbtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:4px 10px;font-size:12px;cursor:pointer;font-family:inherit;color:#5f574c;margin-top:7px}
   .mbtn.on{background:var(--ok);color:#fff;border-color:var(--ok)}
   /* 拼写测验 */
@@ -80,7 +100,7 @@ PAGE = r"""<!DOCTYPE html>
 <body>
 <div class="wrap">
   <h1>📚 __TITLE__</h1>
-  <div class="sub">每篇：原文（<b>点橙色词</b>跳到词卡）→ 翻译 → 单词。🔊美音 · 🙈背记遮释义 · ✍️拼写测验。<span class="ana">__ANALYSIS__</span></div>
+  <div class="sub">每篇：原文（<b>点任意词</b>就地展开释义·橙色=本场生词）· 🔊读整句/整篇 → 翻译 → 单词卡。🙈背记遮释义 · ✍️拼写测验。<span class="ana">__ANALYSIS__</span></div>
   <div class="bar">
     <button id="recite">🙈 背记模式</button>
     <button id="quizAll">✍️ 拼写测验</button>
@@ -115,8 +135,8 @@ function buildMap(p){ const map={}; p.words.forEach((w,wi)=>{ map[(w.form||w.w).
 function linkText(text, p, pi, map){
   return esc(text).replace(/[A-Za-z][A-Za-z'’-]*/g, tok=>{
     const wi=map[tok.toLowerCase()];
-    if(wi==null) return tok;
-    return `<span class="pw" data-w="${esc(p.words[wi].w)}" data-c="card-${pi}-${wi}">${tok}</span>`;
+    if(wi==null) return `<span class="pw pw-plain" data-p="${pi}" data-plain="${esc(tok)}">${tok}</span>`;
+    return `<span class="pw" data-w="${esc(p.words[wi].w)}" data-p="${pi}" data-wi="${wi}">${tok}</span>`;
   });
 }
 
@@ -125,14 +145,14 @@ function render(){
   $('#body').innerHTML = DATA.passages.map((p,pi)=>{
     const map=buildMap(p);
     const hardHtml = (p.hard&&p.hard.length)
-      ? `<div class="seclbl">🔍 长难句精析（在句子里记词）</div>` + p.hard.map(h=>
-          `<div class="hs"><div class="hs-en">${linkText(h.en,p,pi,map)}</div>`+
+      ? `<div class="seclbl">🔍 长难句精析（在句子里记词）</div>` + p.hard.map((h,hi)=>
+          `<div class="hs"><div class="hs-en">${linkText(h.en,p,pi,map)} <span class="hs-say" data-read-hs="${pi}-${hi}">🔊 读句</span></div>`+
           `<div class="hs-an">🧩 ${esc(h.analysis)}</div>`+
           `<div class="hs-zh">${esc(h.zh)}</div></div>`).join('')
       : '';
     return `<section class="pg">
       <div class="pgh"><h2>${esc(p.title)}</h2>${p.meta?`<span class="pgmeta">${esc(p.meta)}</span>`:''}</div>
-      <div class="seclbl">📄 原文</div>
+      <div class="seclbl">📄 原文 <button class="rd" data-read-pi="${pi}">🔊 读原文</button></div>
       <div class="en">${linkText(p.en,p,pi,map)}</div>
       <div class="seclbl">🀄 翻译</div>
       <div class="zhp">${esc(p.zh)}</div>
@@ -150,23 +170,56 @@ function card(w,pi,wi){
     <div class="whead"><span class="w">${esc(w.w)}</span><span class="ipa">${esc(w.ipa||'')}</span><span class="pos">${esc(w.pos||'')}</span>
       <button class="spk" data-say="${esc(w.w)}">🔊</button></div>
     <div class="zh">${esc(w.zh)}</div>
-    ${w.hook?`<div class="hook">🔑 ${esc(w.hook)}</div>`:''}
     ${w.err?`<div class="err">⚠️ 本次拼错：你写成 <s>${esc(w.err)}</s></div>`:''}
+    ${w.ety?`<div class="sec">🏛 ${esc(w.ety)}</div>`:''}
+    ${w.ph?`<div class="sec">🗣 ${esc(w.ph)}</div>`:''}
+    ${w.hook?`<div class="hook">🔑 ${esc(w.hook)}</div>`:''}
+    ${(w.xex&&w.xex.length)?`<div class="xex">${w.xex.map(e=>`✍️ <span class="exen">${esc(e.en)}</span><br><span class="xzh">${esc(e.zh||'')}</span>`).join('<br>')}</div>`:''}
+    ${((w.syn&&w.syn.length)||(w.ant&&w.ant.length))?`<div class="syn">🔗 ${[...(w.syn||[]).map(s=>`<b data-say="${esc(s.w)}">${esc(s.w)}</b> ${esc(s.note||'')}`),...(w.ant||[]).map(s=>`反义 <b data-say="${esc(s.w)}">${esc(s.w)}</b> ${esc(s.note||'')}`)].join('　')}</div>`:''}
+    ${w.nu?`<div class="nu">🎯 ${esc(w.nu)}</div>`:''}
     <button class="mbtn ${done?'on':''}" data-m="${esc(w.w)}">${done?'✓ 已掌握':'标记已掌握'}</button>
   </div>`;
 }
-function paint(){ document.querySelectorAll('.pw').forEach(el=>el.classList.toggle('done', mastered.has(el.dataset.w))); }
+function paint(){ document.querySelectorAll('.pw[data-w]').forEach(el=>el.classList.toggle('done', mastered.has(el.dataset.w))); }
+function toggleMastered(w){
+  mastered.has(w)?mastered.delete(w):mastered.add(w); saveM();
+  const on=mastered.has(w);
+  document.querySelectorAll('[data-m]').forEach(b=>{ if(b.dataset.m===w){
+    b.classList.toggle('on',on); b.textContent=on?'✓ 已掌握':'标记已掌握';
+    const c=b.closest('.card'); if(c) c.classList.toggle('done',on); } });
+  $('#count').textContent=totalCount(); paint();
+}
+function miniCard(word){
+  return `<div class="card plain"><div class="whead"><span class="w">${esc(word)}</span>`+
+    `<button class="spk" data-say="${esc(word)}">🔊</button></div>`+
+    `<a class="dict" href="https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(word.toLowerCase())}" target="_blank" rel="noopener">查词典（本词非本场生词）↗</a></div>`;
+}
+/* 点句中任意词 → 就地展开：生词=满配卡，其余=最小卡+查词典；再点收起 */
+let openWordEl=null;
+function openDetail(el){
+  const same=(openWordEl===el);
+  document.querySelectorAll('.pdet').forEach(d=>d.remove());
+  if(openWordEl) openWordEl.classList.remove('open');
+  openWordEl=null;
+  if(same) return;
+  const word=el.dataset.w||el.dataset.plain||'';
+  say(word);
+  el.classList.add('open'); openWordEl=el;
+  const det=document.createElement('div'); det.className='pdet';
+  if(el.hasAttribute('data-wi')) det.innerHTML=card(DATA.passages[+el.dataset.p].words[+el.dataset.wi], +el.dataset.p, +el.dataset.wi);
+  else det.innerHTML=miniCard(word);
+  el.after(det);   // 就地展开：卡片插在被点词之后（不再掉到整段下面）
+  det.querySelectorAll('[data-say]').forEach(b=>b.onclick=()=>say(b.dataset.say));
+  det.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>toggleMastered(b.dataset.m));
+  det.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
 function wire(){
   document.querySelectorAll('[data-say]').forEach(b=>b.onclick=()=>say(b.dataset.say));
   document.querySelectorAll('.zh').forEach(el=>el.onclick=()=>{ if(recite) el.style.filter='none'; });
-  document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{ const w=b.dataset.m;
-    mastered.has(w)?mastered.delete(w):mastered.add(w); saveM();
-    const card=b.closest('.card'); const on=mastered.has(w);
-    card.classList.toggle('done',on); b.classList.toggle('on',on); b.textContent=on?'✓ 已掌握':'标记已掌握';
-    $('#count').textContent=totalCount(); paint(); });
-  document.querySelectorAll('.pw').forEach(el=>el.onclick=()=>{
-    const c=document.getElementById(el.dataset.c); if(!c)return;
-    c.scrollIntoView({behavior:'smooth',block:'center'}); c.classList.remove('flash'); void c.offsetWidth; c.classList.add('flash'); });
+  document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>toggleMastered(b.dataset.m));
+  document.querySelectorAll('.pw').forEach(el=>el.onclick=()=>openDetail(el));
+  document.querySelectorAll('[data-read-pi]').forEach(b=>b.onclick=()=>say(DATA.passages[+b.dataset.readPi].en));
+  document.querySelectorAll('[data-read-hs]').forEach(b=>b.onclick=()=>{ const a=b.dataset.readHs.split('-'); say(DATA.passages[+a[0]].hard[+a[1]].en); });
 }
 $('#recite').onclick=()=>{ recite=!recite; document.body.classList.toggle('recite',recite); $('#recite').classList.toggle('on',recite);
   if(recite) document.querySelectorAll('.zh').forEach(el=>el.style.filter=''); };
@@ -222,8 +275,8 @@ INDEX = r"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta 
   footer{margin-top:26px;color:#a89a86;font-size:12px}
 </style></head><body><div class="wrap">
   <h1>📚 托福模考复习系统</h1>
-  <div class="sub">每场模考 → 文段中心复习页：原文(词可点)→翻译→单词卡 · TTS · 背记 · 拼写测验</div>
-  <div class="notice">用法：模考后把<b>内容截图</b>发 cc，cc 抽词按文段建页。配套文字分析在 <code>学习方法论/模考分析/</code>。</div>
+  <div class="sub">每场模考 → 文段中心复习页：原文<b>点任意词就地展开</b>·整句/整篇可读 → 翻译 → 单词卡 · 背记 · 拼写测验</div>
+  <div class="notice">用法：模考后把<b>内容截图</b>发 cc，cc 抽词按文段建页。配套文字分析在 <code>模考复习系统/分析/</code>。</div>
   <div class="cards">__CARDS__</div>
   <footer>data/*.json → build.py → 复习页/*.html ｜ 共 __COUNT__ 场</footer>
 </div></body></html>

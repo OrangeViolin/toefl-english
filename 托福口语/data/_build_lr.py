@@ -14,6 +14,8 @@ OUT = ROOT / "listen-repeat.js"
 
 ORDER = ["zoo","gym","orientation","library","hotel",
          "nature","registrar","museum","carrental","community"]
+# 模考套题场景：附在 10 个固定场景之后，免 21 句/7-7-7 约束（每场模考 Task1 原题一套）
+MOCKS = ["mock-2026-08-20","mock-drill-0820"]
 
 # 词数区间（音节靠人工，词数机器卡）
 RANGE = {"简单":(5,7), "中等":(8,12), "困难":(13,19)}
@@ -26,7 +28,7 @@ def norm(s):  # 归一化用于 chunks 拼接比对
     return re.sub(r"[^a-z0-9]","", s.lower())
 
 scenes, warn, err = [], [], []
-for sid in ORDER:
+for sid in ORDER + MOCKS:
     p = PARTS / f"{sid}.json"
     if not p.exists():
         err.append(f"[{sid}] 缺文件"); continue
@@ -53,7 +55,7 @@ for sid in ORDER:
         for k in ("en","zh","lv","chunks","skeleton"):
             if k not in it: err.append(f"[{sid}#{i}] 缺字段 {k}")
         it["tier"] = TIER[lv]
-    if len(items)!=21 or cnt!={"简单":7,"中等":7,"困难":7}:
+    if sid not in MOCKS and (len(items)!=21 or cnt!={"简单":7,"中等":7,"困难":7}):
         warn.append(f"[{sid}] 分档 {cnt} 总数 {len(items)}（期望 7/7/7=21）")
     scenes.append(d)
 

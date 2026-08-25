@@ -1,0 +1,1432 @@
+{
+ "id": "20-1729-campus-goal",
+ "time": "2026-08-20 17:29",
+ "title": "校园导览 + 目标与成就",
+ "total": "4.0/6",
+ "t1score": "4.5/6",
+ "t2score": "Q1 5.8 · Q2 5.8 · Q3 3.8 · Q4 3.6（背范文后 Q1/Q2 冲 5.8）",
+ "task1": [
+  {
+   "en": "Welcome to our campus tour.",
+   "zh": "欢迎参加我们的校园导览。",
+   "chunks": [
+    "Welcome to",
+    "our campus tour"
+   ],
+   "skeleton": [
+    "欢迎",
+    "校园导览"
+   ],
+   "score": "5.0"
+  },
+  {
+   "en": "The enrollment office is straight ahead.",
+   "zh": "招生办公室就在正前方。",
+   "chunks": [
+    "The enrollment office",
+    "is straight ahead"
+   ],
+   "skeleton": [
+    "招生办",
+    "就在正前方"
+   ],
+   "score": "5.0"
+  },
+  {
+   "en": "Next door you will see the library.",
+   "zh": "隔壁你就会看到图书馆。",
+   "chunks": [
+    "Next door",
+    "you will see the library"
+   ],
+   "skeleton": [
+    "隔壁",
+    "就是图书馆"
+   ],
+   "score": "5.0"
+  },
+  {
+   "en": "The cafeteria has many meal options available.",
+   "zh": "食堂有很多餐食选择。",
+   "chunks": [
+    "The cafeteria",
+    "has many meal options",
+    "available"
+   ],
+   "skeleton": [
+    "食堂",
+    "有很多餐食选择",
+    "可选"
+   ],
+   "err": "The university lecture hall is located here.",
+   "score": "3.0"
+  },
+  {
+   "en": "If you have any questions, please stop by the information desk.",
+   "zh": "如果你有任何问题，请到问询台咨询。",
+   "chunks": [
+    "If you have any questions",
+    "please stop by",
+    "the information desk"
+   ],
+   "skeleton": [
+    "如果有问题",
+    "就顺便去",
+    "问询台"
+   ],
+   "err": "...please stop at the. Information Desk.",
+   "score": "4.0"
+  },
+  {
+   "en": "Lastly, please also remember to check the event schedule at the entrance.",
+   "zh": "最后，别忘了到入口处查看活动日程。",
+   "chunks": [
+    "Lastly",
+    "please also remember to check",
+    "the event schedule",
+    "at the entrance"
+   ],
+   "skeleton": [
+    "最后",
+    "别忘了看",
+    "活动日程",
+    "在入口处"
+   ],
+   "err": "Please remember to check. In the entrance.",
+   "score": "2.0"
+  }
+ ],
+ "task2": [
+  {
+   "q": "Think of a time, recent or not, when you had something you wanted to achieve. What was it?",
+   "outline": [
+    {
+     "role": "观点",
+     "text": "我想学好英语，通过一个重要的英语考试"
+    },
+    {
+     "role": "理由（唯一）",
+     "text": "因为我想出国学习，英语是关键"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "好的英语能让我进好学校",
+      "能听懂课、交到朋友",
+      "这个考试是我出国的第一步"
+     ]
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "there was one big goal I really wanted to reach — passing a high-level English exam."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由",
+     "en": "I want this because I hope to study abroad one day."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "good English is the key to getting into a good school."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I dream of studying business at a school like NYU."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "once my English is strong, I can follow lectures there and make friends."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "this test is my first big step, and I work hard for it every day."
+    }
+   ],
+   "outline2": [
+    {
+     "role": "观点",
+     "text": "我想学好英语、通过一个重要的英语考试"
+    },
+    {
+     "role": "理由一",
+     "text": "为了有一天出国学习"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "好英语能进好学校",
+      "能听懂课、交到朋友"
+     ]
+    },
+    {
+     "role": "理由二",
+     "text": "为了以后找更好的工作"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "好英语带来更多机会、打开职场大门"
+     ]
+    }
+   ],
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "there was one big goal I wanted — passing a high-level English exam."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "I want it because I hope to study abroad."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "good English helps me get into a good school."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I dream of studying business at NYU."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I can follow the lectures there and make friends."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "I want a better job in the future."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "good English opens doors at big companies."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I hope to be a marketing manager at Google."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I can work with international teams every day."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "this test means a lot to me."
+    }
+   ],
+   "frames": [
+    {
+     "t": "There was one thing I really wanted to do. I wanted to ___.",
+     "zh": "有一件我很想做的事。我想要……"
+    },
+    {
+     "t": "I wanted this because I hope to ___.",
+     "zh": "我想要这个，是因为我希望……"
+    },
+    {
+     "t": "Good ___ is the key. It can help me ___.",
+     "zh": "好的……是关键。它能帮我……"
+    },
+    {
+     "t": "If my ___ is good, I can ___.",
+     "zh": "如果我的……好，我就能……"
+    },
+    {
+     "t": "Passing this test is my first big step to ___.",
+     "zh": "通过这个考试是我……的第一大步。"
+    },
+    {
+     "t": "⬆️进阶 I aspire to pursue a master's degree abroad",
+     "zh": "我立志出国读硕士（aspire to pursue＝渴望追求，比 want 高级）"
+    },
+    {
+     "t": "⬆️进阶 strong English skills are essential for academic success",
+     "zh": "扎实的英语是学术成功的关键"
+    },
+    {
+     "t": "⬆️进阶 I can fully engage in lectures and discussions",
+     "zh": "我能全身心投入课堂和讨论（engage in＝投入参与）"
+    },
+    {
+     "t": "⬆️进阶 fluency will create career opportunities",
+     "zh": "流利的英语会创造职业机会"
+    },
+    {
+     "t": "⬆️进阶 global companies highly value strong communication",
+     "zh": "跨国公司高度重视强沟通力"
+    },
+    {
+     "t": "⬆️进阶 I need to collaborate effectively with global teams",
+     "zh": "我需要与全球团队高效协作（collaborate effectively）"
+    },
+    {
+     "t": "⬆️进阶 I could study international marketing techniques and actively participate",
+     "zh": "我可以学国际营销技巧、积极参与（actively participate）"
+    },
+    {
+     "t": "⬆️进阶 I could lead worldwide brand campaigns",
+     "zh": "我可以主导全球品牌活动（worldwide brand campaigns）"
+    },
+    {
+     "t": "⬆️进阶 I'm fully committed to this goal",
+     "zh": "我全力投入这个目标（fully committed to，收尾有力）"
+    }
+   ],
+   "vocab": [
+    {
+     "w": "achieve",
+     "ipa": "/əˈtʃiːv/",
+     "zh": "实现，达成"
+    },
+    {
+     "w": "abroad",
+     "ipa": "/əˈbrɔːd/",
+     "zh": "到国外"
+    },
+    {
+     "w": "pass",
+     "ipa": "/pæs/",
+     "zh": "通过（考试）"
+    },
+    {
+     "w": "chance",
+     "ipa": "/tʃæns/",
+     "zh": "机会"
+    },
+    {
+     "w": "step",
+     "ipa": "/step/",
+     "zh": "步骤，一步"
+    },
+    {
+     "w": "a strong command of",
+     "ipa": "/ə strɔːŋ kəˈmɑːnd əv/",
+     "zh": "对…的扎实掌握"
+    },
+    {
+     "w": "essential",
+     "ipa": "/ɪˈsenʃl/",
+     "zh": "必不可少的"
+    },
+    {
+     "w": "fluent",
+     "ipa": "/ˈfluːənt/",
+     "zh": "流利的"
+    },
+    {
+     "w": "ultimate dream",
+     "ipa": "/ˈʌltɪmət driːm/",
+     "zh": "终极梦想"
+    },
+    {
+     "w": "proficiency",
+     "ipa": "/prəˈfɪʃnsi/",
+     "zh": "熟练，精通（English proficiency exam＝英语水平考试）"
+    },
+    {
+     "w": "a strong command of English",
+     "ipa": "/ə strɔːŋ kəˈmɑːnd/",
+     "zh": "对英语的熟练掌握"
+    },
+    {
+     "w": "marketing manager",
+     "ipa": "/ˈmɑːrkɪtɪŋ ˈmænɪdʒər/",
+     "zh": "市场经理（具体职位名）"
+    },
+    {
+     "w": "aspire to",
+     "ipa": "/əˈspaɪər tə/",
+     "zh": "立志/渴望做（aspire to pursue＝立志追求）"
+    },
+    {
+     "w": "pursue",
+     "ipa": "/pərˈsuː/",
+     "zh": "追求，攻读（pursue a master's＝读硕士）"
+    },
+    {
+     "w": "engage in",
+     "ipa": "/ɪnˈɡeɪdʒ ɪn/",
+     "zh": "投入，参与"
+    },
+    {
+     "w": "collaborate",
+     "ipa": "/kəˈlæbəreɪt/",
+     "zh": "协作，合作"
+    },
+    {
+     "w": "effectively",
+     "ipa": "/ɪˈfektɪvli/",
+     "zh": "有效地，高效地"
+    }
+   ],
+   "my": "Well, there was one thing I really wanted to do. I want to learn English well and pass the English test. First off, I want this because I hope to study abroad one day. This is because good English is the key; it can help me get into a good school. Like, if my English is good, I can follow my classes and make new friends there. So, passing this test is my first big step to go abroad. Also, I want it to find a better job later. This is because good English brings me more chances and opens doors at work. So the test means a lot to me, and I work harder for it every day.",
+   "score": "5.8",
+   "words2": 101,
+   "model3": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "one goal I've worked toward recently is passing an advanced English exam."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "I aspire to pursue a master's degree abroad."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "strong English skills are essential for academic success."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I hope to study business at a top school like NYU."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I can fully engage in lectures and discussions there."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "fluency will create career opportunities."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "global companies highly value strong communication."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I aim to be a marketing manager at an international firm."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I need to collaborate effectively with global teams."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "this exam is so important to me."
+    }
+   ],
+   "outline3": [
+    {
+     "role": "观点",
+     "text": "想通过一个高水平英语考试、拿到好分数"
+    },
+    {
+     "role": "理由一",
+     "text": "终极梦想是出国读硕士"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "扎实的英语能力对听懂复杂讲座、参与小组讨论至关重要"
+     ]
+    },
+    {
+     "role": "理由二",
+     "text": "流利的英语能为未来职业打开很多大门"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "跨国公司看重能和国际团队有效沟通的人"
+     ]
+    }
+   ],
+   "words3": 100,
+   "words": 85,
+   "model4": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I want to pass an advanced English exam."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it will help me pursue a master's in business abroad."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "top universities like NYU require strong English."
+    },
+    {
+     "mk": "For example,",
+     "role": "举例+深入",
+     "en": "I could study international marketing techniques and actively participate."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "it will advance my career."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "global companies need strong communicators."
+    },
+    {
+     "mk": "For instance,",
+     "role": "举例+深入",
+     "en": "I could lead worldwide brand campaigns, so I'll have more global opportunities."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I'm fully committed to this goal."
+    }
+   ],
+   "words4": 77
+  },
+  {
+   "q": "In general, how do you handle difficulties or obstacles that come up while working toward what you want to achieve?",
+   "outline": [
+    {
+     "role": "观点",
+     "text": "遇到困难先保持冷静，然后想办法解决"
+    },
+    {
+     "role": "理由（唯一）",
+     "text": "向懂的人请教（朋友或老师）"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "他们做过，能给更快的办法",
+      "比如卡在难题上就问老师",
+      "一问就通，继续往前走"
+     ]
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "when I run into difficulties, I always try to ask someone for help."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由",
+     "en": "I turn to a friend or a teacher who knows more than me."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "they have been through it before and can guide me."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "when I was stuck on a hard problem, I asked my teacher."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "one quick tip from her saved me hours and I moved on fast."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "asking for help always keeps me going."
+    }
+   ],
+   "outline2": [
+    {
+     "role": "观点",
+     "text": "我有两个简单办法应对困难"
+    },
+    {
+     "role": "理由一",
+     "text": "向朋友或老师请教怎么做"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "卡住时一个小提示就省很多时间"
+     ]
+    },
+    {
+     "role": "理由二",
+     "text": "把大目标拆成小步、做个计划"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "小步很轻松，就不会放弃"
+     ]
+    }
+   ],
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "when I face difficulties, I use two simple ways to deal with them."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "I ask someone with more experience."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "one good tip can save me lots of time."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "once I was stuck and asked my teacher."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "she showed me a faster way and I finished quickly."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "I break the big goal into small steps."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "small steps feel easy, so I don't give up."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I make a short to-do list each morning."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I finish one thing at a time and keep going."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "these two ways always keep me moving."
+    }
+   ],
+   "frames": [
+    {
+     "t": "I always try to stay calm when things get hard.",
+     "zh": "事情变难时我总是尽量保持冷静。"
+    },
+    {
+     "t": "I ask someone who knows more than me.",
+     "zh": "我会请教比我懂的人。"
+    },
+    {
+     "t": "They can show me a faster way.",
+     "zh": "他们能给我一个更快的办法。"
+    },
+    {
+     "t": "I break the big goal into small steps.",
+     "zh": "我把大目标拆成小步。"
+    },
+    {
+     "t": "These two things keep me going.",
+     "zh": "这两件事让我坚持下去。"
+    },
+    {
+     "t": "⬆️进阶 When I face tough obstacles, I usually rely on two simple strategies.",
+     "zh": "遇到困难时，我通常靠两个简单策略（高级开头）"
+    },
+    {
+     "t": "⬆️进阶 I reach out to a mentor or a friend who has more experience.",
+     "zh": "我会向更有经验的前辈或朋友请教"
+    },
+    {
+     "t": "⬆️进阶 Their perspective often reveals a solution I would never have found on my own.",
+     "zh": "他们的视角常给我一个自己想不到的办法"
+    },
+    {
+     "t": "⬆️进阶 I break my large goals into tiny, manageable steps.",
+     "zh": "我把大目标拆成小而可控的步骤"
+    },
+    {
+     "t": "⬆️进阶 This approach keeps my momentum until I reach the finish line.",
+     "zh": "这个方法让我保持势头，直到抵达终点"
+    },
+    {
+     "t": "⬆️进阶 break the preparation tasks into small pieces",
+     "zh": "把备考任务拆成小块（明确指代，别用模糊的 cut them down）"
+    },
+    {
+     "t": "⬆️进阶 I seek advice from someone with more experience",
+     "zh": "我向更有经验的人请教（比 ask a teacher 高级）"
+    },
+    {
+     "t": "a five-minute explanation from my teacher saved me hours",
+     "zh": "老师五分钟的讲解帮我省了好几小时（具体到时长，细节到位）"
+    }
+   ],
+   "vocab": [
+    {
+     "w": "calm",
+     "ipa": "/kɑːm/",
+     "zh": "冷静的"
+    },
+    {
+     "w": "stuck",
+     "ipa": "/stʌk/",
+     "zh": "卡住的"
+    },
+    {
+     "w": "tip",
+     "ipa": "/tɪp/",
+     "zh": "小提示"
+    },
+    {
+     "w": "step",
+     "ipa": "/step/",
+     "zh": "步骤"
+    },
+    {
+     "w": "plan",
+     "ipa": "/plæn/",
+     "zh": "计划"
+    },
+    {
+     "w": "obstacle",
+     "ipa": "/ˈɒbstəkl/",
+     "zh": "障碍，困难"
+    },
+    {
+     "w": "mentor",
+     "ipa": "/ˈmentɔːr/",
+     "zh": "导师，前辈"
+    },
+    {
+     "w": "perspective",
+     "ipa": "/pərˈspektɪv/",
+     "zh": "视角，看法"
+    },
+    {
+     "w": "manageable",
+     "ipa": "/ˈmænɪdʒəbl/",
+     "zh": "可管理的、能应付的"
+    },
+    {
+     "w": "momentum",
+     "ipa": "/məˈmentəm/",
+     "zh": "势头，冲劲"
+    }
+   ],
+   "my": "Well, I usually have two simple ways to deal with hard times. First off, I ask a good friend or a teacher how to actually do it. Like when I get stuck, one quick tip can save me hours. Also, I break the big goal into small steps and make a clear plan. This is because tiny steps feel easy, so I never want to give up.",
+   "score": "5.8",
+   "model3": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "when I face obstacles, I rely on two strategies."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "I reach out to a mentor with experience."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "their advice reveals a solution I would miss."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "when preparing for TOEFL, I asked my tutor for tips."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "she found my weak spots and I improved fast."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "I break big goals into small, manageable steps."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "one step at a time keeps me calm."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I set a daily target of twenty new words."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "steady progress adds up and keeps me motivated."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "these strategies keep my momentum to the finish line."
+    }
+   ],
+   "outline3": [
+    {
+     "role": "观点",
+     "text": "面对目标上的困难，我靠两个简单策略"
+    },
+    {
+     "role": "理由一",
+     "text": "向更有经验的前辈或朋友请教"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "他们的视角常给我一个自己想不到的办法"
+     ]
+    },
+    {
+     "role": "理由二",
+     "text": "把大而吓人的目标拆成小而可控的步骤、做计划"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "一次只专注一小步，就不会想放弃"
+     ]
+    }
+   ],
+   "words3": 101,
+   "words": 77,
+   "words2": 103,
+   "model4": [
+    {
+     "mk": "Well,",
+     "role": "观点",
+     "en": "I usually have two simple ways to deal with hard times and problems."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "I seek advice from someone with more experience, like a teacher or mentor."
+    },
+    {
+     "mk": "For instance,",
+     "role": "举例一",
+     "en": "when I'm struggling with a complex grammar rule, a five-minute explanation from my teacher saved me hours."
+    },
+    {
+     "mk": "Also,",
+     "role": "理由二",
+     "en": "I break the big goal into small steps and make a clear plan."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "tiny steps always feel easy, so I will never really want to give up."
+    },
+    {
+     "mk": "For example,",
+     "role": "举例二",
+     "en": "when I'm preparing for my English test, I break the preparation task into small pieces."
+    },
+    {
+     "mk": "",
+     "role": "收尾",
+     "en": "These tips really helped me a lot."
+    }
+   ],
+   "words4": 103
+  },
+  {
+   "q": "In your opinion, how important is goal setting for personal growth?",
+   "outline": [
+    {
+     "role": "观点",
+     "text": "非常重要"
+    },
+    {
+     "role": "理由（唯一）",
+     "text": "有目标就有方向，不会迷茫"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "知道自己想去哪里",
+      "每天做事更有重点",
+      "不会浪费时间乱转"
+     ]
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I think setting goals is really important for personal growth."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由",
+     "en": "a goal gives you a clear direction in life."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "you always know what to do next."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "when I set a goal to get fit, I made a simple weekly plan."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I ran a little every weekend and slowly became much healthier."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "a clear goal helps you grow step by step."
+    }
+   ],
+   "outline2": [
+    {
+     "role": "观点",
+     "text": "非常重要"
+    },
+    {
+     "role": "理由一",
+     "text": "给你清晰的方向，知道往哪走"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "知道该做什么，不迷茫"
+     ]
+    },
+    {
+     "role": "理由二",
+     "text": "给你动力，更容易坚持下去"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "有目标就更想努力，不容易放弃"
+     ]
+    }
+   ],
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I believe setting goals is very important for personal growth."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "a goal gives you a clear direction."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "you know exactly what to do each day."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I set a goal to get fit and run every weekend."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I stopped wasting time and built a good habit."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "a goal gives you motivation to keep going."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "you try harder when you really want something."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "before exams, my goal pushes me to study late."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I don't give up even when it gets hard."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "goals help you become a better person."
+    }
+   ],
+   "frames": [
+    {
+     "t": "I think ___ is really important for ___.",
+     "zh": "我觉得___对___很重要。"
+    },
+    {
+     "t": "When you have a goal, you have a clear direction.",
+     "zh": "当你有目标，你就有清晰的方向。"
+    },
+    {
+     "t": "A goal tells you where you want to go.",
+     "zh": "目标告诉你想去哪里。"
+    },
+    {
+     "t": "A goal gives you motivation to keep going.",
+     "zh": "目标给你坚持下去的动力。"
+    },
+    {
+     "t": "Goals push me forward and help me grow.",
+     "zh": "目标推着我前进，帮我成长。"
+    },
+    {
+     "t": "⬆️进阶 Setting clear goals is essential for personal growth.",
+     "zh": "设定明确目标对个人成长至关重要"
+    },
+    {
+     "t": "⬆️进阶 A goal gives you a real sense of direction.",
+     "zh": "目标给你真正的方向感"
+    },
+    {
+     "t": "⬆️进阶 For example, when I decided to get fit, I set a goal to …",
+     "zh": "具体例子模板：我决定…时，定下了…目标"
+    },
+    {
+     "t": "⬆️进阶 When you have a clear vision, you are less likely to give up after a setback.",
+     "zh": "有清晰愿景，就不易因挫折放弃"
+    },
+    {
+     "t": "⬆️进阶 A goal is like a roadmap that guides you toward a better version of yourself.",
+     "zh": "目标像一张路线图，引导你成为更好的自己"
+    }
+   ],
+   "vocab": [
+    {
+     "w": "goal",
+     "ipa": "/ɡoʊl/",
+     "zh": "目标"
+    },
+    {
+     "w": "direction",
+     "ipa": "/dəˈrekʃn/",
+     "zh": "方向"
+    },
+    {
+     "w": "motivation",
+     "ipa": "/ˌmoʊtɪˈveɪʃn/",
+     "zh": "动力"
+    },
+    {
+     "w": "focused",
+     "ipa": "/ˈfoʊkəst/",
+     "zh": "专注的"
+    },
+    {
+     "w": "lost",
+     "ipa": "/lɔːst/",
+     "zh": "迷茫的"
+    },
+    {
+     "w": "essential",
+     "ipa": "/ɪˈsenʃl/",
+     "zh": "必不可少的"
+    },
+    {
+     "w": "a sense of direction",
+     "ipa": "/ə sens əv dəˈrekʃn/",
+     "zh": "方向感"
+    },
+    {
+     "w": "setback",
+     "ipa": "/ˈsetbæk/",
+     "zh": "挫折"
+    },
+    {
+     "w": "vision",
+     "ipa": "/ˈvɪʒn/",
+     "zh": "愿景，清晰的目标"
+    },
+    {
+     "w": "roadmap",
+     "ipa": "/ˈroʊdmæp/",
+     "zh": "路线图，规划"
+    }
+   ],
+   "my": "Well, I believe goal setting is very important for personal growth. First off, it gives you a clear direction so you can always know where to go. Like, when I have a goal, I know exactly what to do and never feel lost. Also, a goal gives you motivation to keep going. This is because when you really want something, you try harder and don't give up easily. So goals push me forward and help me become a better person.",
+   "score": "3.8",
+   "model3": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I strongly believe goal setting is essential for personal growth."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "a goal gives you a real sense of direction."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "it keeps you from drifting aimlessly."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I set a goal to run 5 kilometers each weekend."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I stayed focused and slowly built a healthy routine."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "goals give you motivation to push through hard times."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "a clear vision stops you from quitting."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "my goal to pass TOEFL keeps me studying every night."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I keep improving instead of giving up."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "a goal is like a roadmap that guides your growth."
+    }
+   ],
+   "outline3": [
+    {
+     "role": "观点",
+     "text": "设定明确目标对个人成长至关重要"
+    },
+    {
+     "role": "理由一",
+     "text": "给你真正的方向感，不会漫无目的地混日子"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "具体例子：为健身定下每周跑5公里 → 更容易专注"
+     ]
+    },
+    {
+     "role": "理由二",
+     "text": "在遇到困难时给你坚持下去的动力"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "有清晰愿景，就不会因一点小挫折放弃"
+     ]
+    }
+   ],
+   "words3": 102,
+   "words": 69,
+   "words2": 101
+  },
+  {
+   "q": "Do you think children should be taught to set personal goals from an early age? Why or why not?",
+   "my": "I think children should be taught how to set personal goals at an early age because it's very important skills that can help almost everything about their school work, job, and even the sports they like. If you teach children that way, they can be more confident. So, such as they want to go to a better school, they prepare it earlier, and they will be much more confident.",
+   "score": "3.6",
+   "outline": [
+    {
+     "role": "观点",
+     "text": "应该，孩子该从小学会定目标"
+    },
+    {
+     "role": "理由（唯一）",
+     "text": "帮他们建立自信、有方向"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "有小目标去努力，达成时很自豪",
+      "例子：小表妹定每周读一本书，现在很有成就感"
+     ]
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "yes, I think children should learn to set goals from a young age."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由",
+     "en": "it helps them build confidence."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "reaching a small goal makes them feel proud."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "my little cousin set a goal to read one book every week."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "every time she finishes one, she feels happy and more sure of herself."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "setting goals early makes children more confident and independent."
+    }
+   ],
+   "outline2": [
+    {
+     "role": "观点",
+     "text": "应该，孩子该从小学会定目标"
+    },
+    {
+     "role": "理由一",
+     "text": "帮他们建立自信"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "定个小目标(如每周读一本书)，达成就很自豪"
+     ]
+    },
+    {
+     "role": "理由二",
+     "text": "养成一个对未来有用的好习惯"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "会规划、朝目标努力，以后读书工作都更好"
+     ]
+    }
+   ],
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "yes, I think children should learn to set goals early."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it helps them build confidence."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "reaching a small goal makes them feel proud."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "my cousin set a goal to read one book a week."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "each time she finishes one, she believes in herself more."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "it teaches them a good habit for the future."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "they learn to plan and work toward a target."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "a child who plans homework early does better in school."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "they become more organized and ready for life."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "learning this early makes children confident and prepared."
+    }
+   ],
+   "outline3": [
+    {
+     "role": "观点",
+     "text": "绝对应该，孩子该从小被教会定目标"
+    },
+    {
+     "role": "理由一",
+     "text": "建立自信、带来成就感"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "达成小目标让他们自豪、有动力"
+     ]
+    },
+    {
+     "role": "理由二",
+     "text": "从小养成受益终身的好习惯"
+    },
+    {
+     "role": "展开",
+     "bullets": [
+      "会提前规划、有自律，读书和未来职业都更好"
+     ]
+    }
+   ],
+   "model3": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I believe children should be taught to set goals early."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it builds confidence and gives them a sense of achievement."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "reaching a small goal makes them proud."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "my cousin set a goal to read one book each week."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "finishing each one made her proud and eager to learn."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "it instills a habit that benefits them for life."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "kids who plan ahead grow disciplined."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "a child who sets study goals does better at school."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "they become well-prepared for their future careers."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "teaching goals early helps children become capable adults."
+    }
+   ],
+   "frames": [
+    {
+     "t": "children should learn to set their own goals from a young age",
+     "zh": "孩子该从小学会给自己定目标"
+    },
+    {
+     "t": "it helps them build confidence",
+     "zh": "这能帮他们建立自信"
+    },
+    {
+     "t": "⬆️进阶 it builds their confidence and gives them a real sense of achievement",
+     "zh": "建立自信、带来真正的成就感"
+    },
+    {
+     "t": "⬆️进阶 it instills a valuable habit that will benefit them for the rest of their lives",
+     "zh": "养成受益终身的好习惯"
+    },
+    {
+     "t": "⬆️进阶 kids who learn to plan ahead and stay disciplined do far better later",
+     "zh": "会提前规划、有自律的孩子以后更出色"
+    }
+   ],
+   "vocab": [
+    {
+     "w": "confidence",
+     "ipa": "/ˈkɑːnfɪdəns/",
+     "zh": "自信"
+    },
+    {
+     "w": "a sense of achievement",
+     "ipa": "/ə sens əv əˈtʃiːvmənt/",
+     "zh": "成就感"
+    },
+    {
+     "w": "instill a habit",
+     "ipa": "/ɪnˈstɪl ə ˈhæbɪt/",
+     "zh": "灌输/养成一个习惯"
+    },
+    {
+     "w": "disciplined",
+     "ipa": "/ˈdɪsəplɪnd/",
+     "zh": "自律的"
+    },
+    {
+     "w": "well-prepared",
+     "ipa": "/ˌwel prɪˈperd/",
+     "zh": "准备充分的"
+    }
+   ],
+   "words": 69,
+   "words2": 103,
+   "words3": 103
+  }
+ ]
+}
