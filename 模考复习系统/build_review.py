@@ -11,6 +11,15 @@ OUT = os.path.join(HERE, "复习页")
 
 def e(s): return html.escape(str(s or ""), quote=True)
 
+def _load_hard_words():
+    """六级/托福等「稍难」词形集合（含常见屈折），用于正文里重点划线高亮。"""
+    p = os.path.join(HERE, "hard_words.json")
+    try:
+        with open(p, encoding="utf-8") as fp:
+            return set(json.load(fp))
+    except Exception:
+        return set()
+
 def clk(text):
     """整段文字：每词可点『就地展开满配卡』(JS) + 整段🔊。附一个 .det 展开容器。"""
     if not text: return ""
@@ -241,6 +250,9 @@ def build(d):
             for v in t.get("vocab", []): _add(v)
     for v in d.get("wordbank", []): _add(v)  # 全词库：覆盖原文每一个词
     wmjson = json.dumps(wm, ensure_ascii=False).replace("</", "<\\/")
+    # 六级/托福「稍难」词形集合（用于正文重点划线高亮，而非逐词划线）
+    hardwords = _load_hard_words()
+    hardjson = json.dumps(sorted(hardwords), ensure_ascii=False)
     # 错因分布：做错的题/空按类型统计
     tally = {}
     for s in d["sections"]:
@@ -296,7 +308,7 @@ def build(d):
         .replace("__TOTAL__", e(sc["total"])).replace("__R__", e(sc["reading"])) \
         .replace("__L__", e(sc["listening"])).replace("__W__", e(sc["writing"])) \
         .replace("__S__", e(sc["speaking"])).replace("__NAV__", navs).replace("__SECS__", secs) \
-        .replace("__DASH__", dash).replace("__WORDMAP__", wmjson)
+        .replace("__DASH__", dash).replace("__WORDMAP__", wmjson).replace("__HARDWORDS__", hardjson)
 
 PAGE = r'''<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>__TITLE__</title><style>
@@ -332,7 +344,8 @@ h2{font-size:17px;margin:26px 0 8px;padding-bottom:6px;border-bottom:2px solid v
 .para .clk{background:#fffdf8}
 .clk{font-size:15px;background:#fbfaf6;border:1px solid var(--line);border-radius:10px;padding:11px 30px 11px 13px;position:relative}
 .clk .wd{cursor:pointer;border-radius:3px}.clk .wd:hover{background:#ffe9cf}
-.clk .wd.voc{box-shadow:inset 0 -2px 0 var(--gold)}.clk .wd.on{background:#d9f0e6}
+.clk .wd.voc{background:#fff3dd;box-shadow:inset 0 -1.5px 0 #e0a63c;padding:0 2px}
+.clk .wd.on{background:#d9f0e6}
 .wd.sig{border-radius:3px;padding:0 1px;font-weight:600}
 .wd.sig-turn{background:#fbe0da;color:#a83f36}
 .wd.sig-cause{background:#d9e8f2;color:#2b6480}
@@ -500,6 +513,7 @@ body.nosig .wd.sig{background:none!important;color:inherit!important;font-weight
 <div class="tools"><button id="sigtog">🚦 信号词</button><button id="expno">📋 导出未掌握词</button><button id="rate">🐢 语速</button><button onclick="scrollTo(0,0)">↑ 顶部</button></div>
 <script>
 const WM=__WORDMAP__;
+const HARD=new Set(__HARDWORDS__);   // 六级/托福「稍难」词形：只给这些词加重点划线
 // 🚦 信号词（听力骨架）：word→类别
 const SIG={but:'turn',however:'turn',yet:'turn',instead:'turn',although:'turn',though:'turn',unlike:'turn',whereas:'turn',nonetheless:'turn',nevertheless:'turn',conversely:'turn',
 because:'cause',since:'cause',so:'cause',therefore:'cause',thus:'cause',hence:'cause',consequently:'cause',
@@ -569,7 +583,7 @@ document.querySelectorAll(".clkwrap").forEach(wrap=>{
   box.querySelectorAll(".wd").forEach(sp=>{
     const clean=(sp.dataset.w||sp.textContent).toLowerCase().replace(/[^a-z']/g,'');
     sp.dataset.k=WM[clean]?WM[clean]._key:('w:'+clean);
-    if(WM[clean]) sp.classList.add("voc");
+    if(HARD.has(clean)) sp.classList.add("voc");
     sp.onclick=ev=>{ev.stopPropagation();openDetail(clean,det);};
   });
   markSig(box);
