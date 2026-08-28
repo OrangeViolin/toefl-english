@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>艺术馆跟读 + 消费习惯面试 · 口语模考复盘</title>
+<script src="../../speech-core.js"></script>
+<style>
+:root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--blue:#4a5cc7;--ok:#4a9e6f;--bad:#c04a3a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:30px 20px 90px}
+a.back{color:var(--core);text-decoration:none;font-size:13px}
+h1{font-size:23px;margin:8px 0 2px}
+.meta{color:var(--muted);font-size:13.5px;margin-bottom:6px}
+.scores{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 20px}
+.scores span{background:#eef6f3;border:1px solid #cfe3db;border-radius:20px;padding:4px 12px;font-size:13px;color:#2c6a60}
+.scores b{color:var(--accent)}
+.tabbar{display:flex;gap:8px;margin:0 0 16px;position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:5}
+.tab{flex:1;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:11px;font-size:15px;font-weight:800;cursor:pointer;text-align:center;color:#5f574c}
+.tab.on{background:var(--core);color:#fff;border-color:var(--core)}
+.sec{display:none}.sec.on{display:block}
+.hint{background:#fff6e8;border:1px solid #f0d9b0;border-left:4px solid var(--accent);border-radius:10px;padding:10px 13px;font-size:13px;margin-bottom:16px}
+/* Task1 */
+.s-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;margin-bottom:13px}
+.s-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.s-no{font-weight:800;font-size:14px;color:var(--core)}
+.s-sc{margin-left:auto;font-size:12px;background:#eef6f3;border:1px solid #cfe3db;color:#2c6a60;border-radius:20px;padding:2px 9px}
+.btnrow{display:flex;gap:7px;flex-wrap:wrap;margin:6px 0}
+.btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 11px;font-size:13px;cursor:pointer;font-family:inherit;color:#5f574c}
+.btn:hover{border-color:var(--accent)}
+.btn.rec{background:var(--accent);color:#fff;border:0}
+.btn.rec.on{background:var(--bad)}
+.en{font-family:Georgia,serif;font-size:16px;color:#2f2a24;margin:4px 0}
+.en.hidden{filter:blur(6px);cursor:pointer}
+.zh{font-size:13.5px;color:var(--muted)}
+.chunks{margin:8px 0;display:none}.chunks.show{display:block}
+.chunk{display:inline-block;background:#eef6f3;border:1px solid #cfe3db;border-radius:8px;padding:3px 9px;margin:3px;font-size:13.5px;cursor:pointer}
+.chunk .sk{color:var(--core);font-size:11px;display:block}
+.err{font-size:12.5px;color:var(--bad);background:#fbecea;border-radius:7px;padding:6px 9px;margin-top:7px}
+.mine{font-size:12.5px;color:#5f574c;background:#f4f1ea;border-radius:7px;padding:6px 9px;margin-top:6px}
+/* Task2 */
+.q-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:15px}
+.q-txt{font-size:15px;font-weight:700;margin-bottom:6px}
+details.fold{border-top:1px dashed var(--line);margin-top:10px;padding-top:8px}
+summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--core)}
+.vlabel{display:inline-block;background:#eef6f3;border:1px solid #cfe3db;color:#2c6a60;font-size:12.5px;font-weight:700;border-radius:6px;padding:3px 10px;margin:11px 0 5px}
+.vlabel.v3{background:#f5ecdd;border-color:#e3ce9f;color:#9a6a1f}
+.vlabel.v4{background:#eaf2f8;border-color:#bcd6e8;color:#3a6b8f}
+table.ol{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:4px}
+table.ol td{padding:6px 9px;border:1px solid var(--line);vertical-align:top}
+table.ol .r{width:70px;font-weight:700;color:#fff;text-align:center;background:var(--blue)}
+.ln{margin:6px 0;font-size:15px}.ln .mk{font-weight:700;color:var(--accent)}
+.playall{background:var(--core);color:#fff;border:0;border-radius:8px;padding:4px 11px;font-size:12.5px;cursor:pointer;margin:6px 0}
+.wc{font-size:12px;color:var(--muted);margin-top:4px}
+.frames div,.vocab div{font-size:13px;margin:4px 0}.vocab .w{color:var(--core);cursor:pointer;font-weight:700}.vocab .ipa{color:var(--muted);margin:0 6px}
+.say{cursor:pointer}
+.live{font-size:12.5px;color:var(--muted);margin:6px 0}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 全部模考</a>
+<h1>艺术馆跟读 + 消费习惯面试</h1>
+<div class="meta">🕒 模考时间 2026-08-29 07:07</div>
+<div class="scores"><span>总分 <b>3.0/6</b></span><span>Task1 3.0/6</span><span>Task2 3.0/6</span></div>
+<div class="tabbar"><div class="tab on" data-t="t1" onclick="tab('t1')">🎧 Task 1 跟读</div><div class="tab" data-t="t2" onclick="tab('t2')">🎤 Task 2 面试</div></div>
+<div class="sec on" id="t1"><div class="hint">听一句→逐字复述。🔊播放 / 🐢慢读 / 🧩分块 / 🦴骨架都能反复用；🎙录音后点句子看标准答案。<b>你这次错在实词听不住</b>，分块时把耳朵全压在名词/动词上。</div><div class="s-card">
+  <div class="s-top"><span class="s-no">句 1</span><span class="s-sc">4.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Artwork can be seen in the east wing.">🔊 播放</button>
+    <button class="btn" onclick="say('Artwork can be seen in the east wing.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck0')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：艺术品可见 / 在东翼')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Artwork can be seen in the east wing.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck0"><span class="chunk say" data-say="Artwork can be seen">Artwork can be seen<span class="sk">艺术品可见</span></span><span class="chunk say" data-say="in the east wing">in the east wing<span class="sk">在东翼</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Artwork can be seen in the east wing.</div>
+  <div class="zh">艺术品在东翼可以看到。</div>
+  <div class="err">⚠️ 你这次听成：Artwork can be seen at the eastern wing</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 2</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Pieces are placed along the main corridor.">🔊 播放</button>
+    <button class="btn" onclick="say('Pieces are placed along the main corridor.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck1')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：展品摆放 / 沿主走廊')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Pieces are placed along the main corridor.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck1"><span class="chunk say" data-say="Pieces are placed">Pieces are placed<span class="sk">展品摆放</span></span><span class="chunk say" data-say="along the main corridor">along the main corridor<span class="sk">沿主走廊</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Pieces are placed along the main corridor.</div>
+  <div class="zh">展品沿着主走廊摆放。</div>
+  <div class="err">⚠️ 你这次听成：Pieces can be seen at the main corridor.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 3</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Interactive displays are set up near the front entrance.">🔊 播放</button>
+    <button class="btn" onclick="say('Interactive displays are set up near the front entrance.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck2')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：互动展台 / 设 / 前门入口附近')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Interactive displays are set up near the front entrance.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck2"><span class="chunk say" data-say="Interactive displays">Interactive displays<span class="sk">互动展台</span></span><span class="chunk say" data-say="are set up">are set up<span class="sk">设</span></span><span class="chunk say" data-say="near the front entrance">near the front entrance<span class="sk">前门入口附近</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Interactive displays are set up near the front entrance.</div>
+  <div class="zh">互动展台设在前门入口附近。</div>
+  <div class="err">⚠️ 你这次听成：Internet. Can be set up in the entrance</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 4</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Pick up printed materials at the information desk.">🔊 播放</button>
+    <button class="btn" onclick="say('Pick up printed materials at the information desk.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck3')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：领取印刷资料 / 在问询台')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Pick up printed materials at the information desk.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck3"><span class="chunk say" data-say="Pick up printed materials">Pick up printed materials<span class="sk">领取印刷资料</span></span><span class="chunk say" data-say="at the information desk">at the information desk<span class="sk">在问询台</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Pick up printed materials at the information desk.</div>
+  <div class="zh">在问询台领取印刷资料。</div>
+  <div class="err">⚠️ 你这次听成：Pick up printed material at the material desk.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 5</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Incredible photos tell unique stories about campus life.">🔊 播放</button>
+    <button class="btn" onclick="say('Incredible photos tell unique stories about campus life.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck4')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：精彩照片 / 讲独特故事 / 校园生活')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Incredible photos tell unique stories about campus life.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck4"><span class="chunk say" data-say="Incredible photos">Incredible photos<span class="sk">精彩照片</span></span><span class="chunk say" data-say="tell unique stories">tell unique stories<span class="sk">讲独特故事</span></span><span class="chunk say" data-say="about campus life">about campus life<span class="sk">校园生活</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Incredible photos tell unique stories about campus life.</div>
+  <div class="zh">精彩的照片讲述独特的校园生活故事。</div>
+  <div class="err">⚠️ 你这次听成：Incredible photos tell unique experience.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 6</span><span class="s-sc">2.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="If you need to relax for a moment, there are places to sit and take a break.">🔊 播放</button>
+    <button class="btn" onclick="say('If you need to relax for a moment, there are places to sit and take a break.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck5')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：如果想休息一下 / 有地方坐 / 喘口气')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'If you need to relax for a moment, there are places to sit and take a break.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck5"><span class="chunk say" data-say="If you need to relax for a moment">If you need to relax for a moment<span class="sk">如果想休息一下</span></span><span class="chunk say" data-say="there are places to sit">there are places to sit<span class="sk">有地方坐</span></span><span class="chunk say" data-say="and take a break">and take a break<span class="sk">喘口气</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">If you need to relax for a moment, there are places to sit and take a break.</div>
+  <div class="zh">如果你想休息一下，有地方可以坐坐喘口气。</div>
+  <div class="err">⚠️ 你这次听成：There are seats to be seated and take a break.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 7</span><span class="s-sc">2.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Tours are given daily every hour, but you need to sign up one day prior.">🔊 播放</button>
+    <button class="btn" onclick="say('Tours are given daily every hour, but you need to sign up one day prior.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck6')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：每天整点导览 / 但要报名 / 提前一天')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Tours are given daily every hour, but you need to sign up one day prior.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck6"><span class="chunk say" data-say="Tours are given daily every hour">Tours are given daily every hour<span class="sk">每天整点导览</span></span><span class="chunk say" data-say="but you need to sign up">but you need to sign up<span class="sk">但要报名</span></span><span class="chunk say" data-say="one day prior">one day prior<span class="sk">提前一天</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Tours are given daily every hour, but you need to sign up one day prior.</div>
+  <div class="zh">每天整点都有导览，但你需要提前一天报名。</div>
+  <div class="err">⚠️ 你这次听成：But you need to sign day one day hour.</div>
+  <div class="live"></div>
+</div></div>
+<div class="sec" id="t2"><div class="hint">读题→看思路自己说→点范文对照（①单理由 ②两理由，先背单理由）→🎙录音→复制报告发 cc 判分。~80 词、~40 秒说顺。</div><div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.2/6</span>题 1：Can you tell me about a recent purchase you or someone in your family made and why you decided to buy it?</div>
+  <div class="mine">🎙 你这次答的：Well, I changed my computer. Uh, it&#x27;s one of my biggest uh purchases recently uh for two reasons. Uh, first one, uh, I have a better computer. Uh, it can uh it is very crucial for my work and my papers and the study. I can do a lot of things with it. It helped me more efficient in my study. Uh, the second, uh, the computer is uh uh can be reserved a long time. I can use it long.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 45 词</div><button class="playall say" data-say="Well, my biggest recent purchase was a new computer. First off, a good computer is crucial for my study. This is because I write papers and do research on it. Like, it runs heavy software smoothly without freezing. So, I finish my work much faster and better. Therefore, this computer was a smart choice.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> my biggest recent purchase was a new computer.</div><div class="ln"><span class="mk">First off,</span> a good computer is crucial for my study.</div><div class="ln"><span class="mk">This is because</span> I write papers and do research on it.</div><div class="ln"><span class="mk">Like,</span> it runs heavy software smoothly without freezing.</div><div class="ln"><span class="mk">So,</span> I finish my work much faster and better.</div><div class="ln"><span class="mk">Therefore,</span> this computer was a smart choice.</div></div><div class="wc">共 45 词 · 约 22 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, my biggest recent purchase was a new computer. First off, a good computer is crucial for my study. This is because I write papers and do research on it. Like, it runs heavy software smoothly without freezing. So, I finish my work much faster and better. Besides, it will last me a long time. This is because a solid machine stays useful for years. Like, I plan to keep it through college and beyond. So, it is worth the money in the long run. Therefore, this computer was a smart choice.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> my biggest recent purchase was a new computer.</div><div class="ln"><span class="mk">First off,</span> a good computer is crucial for my study.</div><div class="ln"><span class="mk">This is because</span> I write papers and do research on it.</div><div class="ln"><span class="mk">Like,</span> it runs heavy software smoothly without freezing.</div><div class="ln"><span class="mk">So,</span> I finish my work much faster and better.</div><div class="ln"><span class="mk">Besides,</span> it will last me a long time.</div><div class="ln"><span class="mk">This is because</span> a solid machine stays useful for years.</div><div class="ln"><span class="mk">Like,</span> I plan to keep it through college and beyond.</div><div class="ln"><span class="mk">So,</span> it is worth the money in the long run.</div><div class="ln"><span class="mk">Therefore,</span> this computer was a smart choice.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="purchase">purchase</span><span class="ipa">/ˈpɜːrtʃəs/</span>购买</div><div><span class="w say" data-say="crucial">crucial</span><span class="ipa">/ˈkruːʃl/</span>关键的</div><div><span class="w say" data-say="efficient">efficient</span><span class="ipa">/ɪˈfɪʃnt/</span>高效的</div><div><span class="w say" data-say="in the long run">in the long run</span><span class="ipa">/ɪn ðə lɔːŋ rʌn/</span>从长远看</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;Can you tell me about a recent purchase you or someone in your family made and why you decided to buy it?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;my biggest recent purchase was a new computer.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;a good computer is crucial for my study.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;I write papers and do research on it.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;it runs heavy software smoothly without freezing.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I finish my work much faster and better.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;this computer was a smart choice.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;my biggest recent purchase was a new computer.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;a good computer is crucial for my study.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;I write papers and do research on it.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;it runs heavy software smoothly without freezing.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I finish my work much faster and better.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;it will last me a long time.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;a solid machine stays useful for years.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I plan to keep it through college and beyond.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;it is worth the money in the long run.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;this computer was a smart choice.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.2/6</span>题 2：When you make a purchase, do you usually plan ahead or do you buy things spontaneously? Why?</div>
+  <div class="mine">🎙 你这次答的：Well, it depends. If the purchase is very big, I usually plan it ahead, such as buying computers and renting a house and buy some big things, just for example, over two thousand yuan. If some little things, such as a meal, some food, don&#x27;t need to plan much often, and it give me freedom to use it, and it save my time to do other things.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 47 词</div><button class="playall say" data-say="Well, it depends on how big the purchase is. First off, for big purchases, I always plan ahead. This is because big things cost a lot of money. Like, buying a computer or renting a house needs saving. So, I compare prices and save up first. Therefore, I plan big things and keep small ones easy.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> it depends on how big the purchase is.</div><div class="ln"><span class="mk">First off,</span> for big purchases, I always plan ahead.</div><div class="ln"><span class="mk">This is because</span> big things cost a lot of money.</div><div class="ln"><span class="mk">Like,</span> buying a computer or renting a house needs saving.</div><div class="ln"><span class="mk">So,</span> I compare prices and save up first.</div><div class="ln"><span class="mk">Therefore,</span> I plan big things and keep small ones easy.</div></div><div class="wc">共 47 词 · 约 24 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, it depends on how big the purchase is. First off, for big purchases, I always plan ahead. This is because big things cost a lot of money. Like, buying a computer or renting a house needs saving. So, I compare prices and save up first. Besides, for small things, I buy spontaneously. This is because small costs don&#x27;t need much planning. Like, a meal or some food, I just grab it. So, this saves me time and gives me freedom. Therefore, I plan big things and keep small ones easy.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> it depends on how big the purchase is.</div><div class="ln"><span class="mk">First off,</span> for big purchases, I always plan ahead.</div><div class="ln"><span class="mk">This is because</span> big things cost a lot of money.</div><div class="ln"><span class="mk">Like,</span> buying a computer or renting a house needs saving.</div><div class="ln"><span class="mk">So,</span> I compare prices and save up first.</div><div class="ln"><span class="mk">Besides,</span> for small things, I buy spontaneously.</div><div class="ln"><span class="mk">This is because</span> small costs don&#x27;t need much planning.</div><div class="ln"><span class="mk">Like,</span> a meal or some food, I just grab it.</div><div class="ln"><span class="mk">So,</span> this saves me time and gives me freedom.</div><div class="ln"><span class="mk">Therefore,</span> I plan big things and keep small ones easy.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="plan ahead">plan ahead</span><span class="ipa">/plæn əˈhed/</span>提前计划</div><div><span class="w say" data-say="spontaneously">spontaneously</span><span class="ipa">/spɑːnˈteɪniəsli/</span>冲动地，自发地</div><div><span class="w say" data-say="compare">compare</span><span class="ipa">/kəmˈper/</span>比较</div><div><span class="w say" data-say="save up">save up</span><span class="ipa">/seɪv ʌp/</span>攒钱</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;When you make a purchase, do you usually plan ahead or do you buy things spontaneously? Why?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;it depends on how big the purchase is.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;for big purchases, I always plan ahead.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;big things cost a lot of money.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;buying a computer or renting a house needs saving.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I compare prices and save up first.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;I plan big things and keep small ones easy.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;it depends on how big the purchase is.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;for big purchases, I always plan ahead.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;big things cost a lot of money.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;buying a computer or renting a house needs saving.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I compare prices and save up first.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;for small things, I buy spontaneously.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;small costs don't need much planning.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;a meal or some food, I just grab it.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;this saves me time and gives me freedom.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;I plan big things and keep small ones easy.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.4/6</span>题 3：When you decide whether to buy something, which matters more to you: getting good value for your money, or spending as little as possible? Why?</div>
+  <div class="mine">🎙 你这次答的：Well, I usually do a monthly plan with my money. I will get a schedule about my spending. I picked several important things in the month, such as I have to change my computer in the month, and I should spend less on other things in that month. With that plan, I really know how much money I spend and how to make better use of my money.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 47 词</div><button class="playall say" data-say="Well, good value matters more to me than lowest price. First off, value means the thing lasts and works well. This is because cheap things often break fast. Like, a good computer costs more but serves me years. So, in the end it saves me more money. Therefore, value plus a plan keeps my money smart.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> good value matters more to me than lowest price.</div><div class="ln"><span class="mk">First off,</span> value means the thing lasts and works well.</div><div class="ln"><span class="mk">This is because</span> cheap things often break fast.</div><div class="ln"><span class="mk">Like,</span> a good computer costs more but serves me years.</div><div class="ln"><span class="mk">So,</span> in the end it saves me more money.</div><div class="ln"><span class="mk">Therefore,</span> value plus a plan keeps my money smart.</div></div><div class="wc">共 47 词 · 约 24 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, good value matters more to me than lowest price. First off, value means the thing lasts and works well. This is because cheap things often break fast. Like, a good computer costs more but serves me years. So, in the end it saves me more money. Besides, I plan my money by month. This is because a monthly plan shows me my real spending. Like, if I buy a computer this month, I cut other costs. So, I always know how to use money better. Therefore, value plus a plan keeps my money smart.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> good value matters more to me than lowest price.</div><div class="ln"><span class="mk">First off,</span> value means the thing lasts and works well.</div><div class="ln"><span class="mk">This is because</span> cheap things often break fast.</div><div class="ln"><span class="mk">Like,</span> a good computer costs more but serves me years.</div><div class="ln"><span class="mk">So,</span> in the end it saves me more money.</div><div class="ln"><span class="mk">Besides,</span> I plan my money by month.</div><div class="ln"><span class="mk">This is because</span> a monthly plan shows me my real spending.</div><div class="ln"><span class="mk">Like,</span> if I buy a computer this month, I cut other costs.</div><div class="ln"><span class="mk">So,</span> I always know how to use money better.</div><div class="ln"><span class="mk">Therefore,</span> value plus a plan keeps my money smart.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="value for money">value for money</span><span class="ipa">/ˈvæljuː fɔːr ˈmʌni/</span>性价比</div><div><span class="w say" data-say="worth">worth</span><span class="ipa">/wɜːrθ/</span>值得的</div><div><span class="w say" data-say="monthly plan">monthly plan</span><span class="ipa">/ˈmʌnθli plæn/</span>月度计划</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;When you decide whether to buy something, which matters more to you: getting good value for your money, or spending as little as possible? Why?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;good value matters more to me than lowest price.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;value means the thing lasts and works well.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;cheap things often break fast.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;a good computer costs more but serves me years.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;in the end it saves me more money.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;value plus a plan keeps my money smart.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;good value matters more to me than lowest price.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;value means the thing lasts and works well.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;cheap things often break fast.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;a good computer costs more but serves me years.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;in the end it saves me more money.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;I plan my money by month.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;a monthly plan shows me my real spending.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;if I buy a computer this month, I cut other costs.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I always know how to use money better.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;value plus a plan keeps my money smart.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.0/6</span>题 4：Do you think people will increasingly rely on financial apps and tools to manage their money, or will people prefer to hire personal financial managers? Explain your thoughts.</div>
+  <div class="mine">🎙 你这次答的：Well, I think people will more use uh the apps online to uh manage their financial events. The first is very convenient and uh less expensive, and these can use on your own and you can adjust your plan with your uh own at any time. If you want, uh you can write down everything and adjust the time. And the second, uh I don&#x27;t think uh consult professional people is very uh common.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 41 词</div><button class="playall say" data-say="Well, people will rely more on financial apps. First off, apps are convenient and cheap. This is because you can use them anytime on your phone. Like, an app records every cost with one tap. So, you adjust your plan instantly, for free. Therefore, financial apps will be the future.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> people will rely more on financial apps.</div><div class="ln"><span class="mk">First off,</span> apps are convenient and cheap.</div><div class="ln"><span class="mk">This is because</span> you can use them anytime on your phone.</div><div class="ln"><span class="mk">Like,</span> an app records every cost with one tap.</div><div class="ln"><span class="mk">So,</span> you adjust your plan instantly, for free.</div><div class="ln"><span class="mk">Therefore,</span> financial apps will be the future.</div></div><div class="wc">共 41 词 · 约 20 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, people will rely more on financial apps. First off, apps are convenient and cheap. This is because you can use them anytime on your phone. Like, an app records every cost with one tap. So, you adjust your plan instantly, for free. Besides, hiring a manager is not common. This is because a personal advisor costs a lot. Like, most students can&#x27;t afford one. So, apps fit ordinary people much better. Therefore, financial apps will be the future.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> people will rely more on financial apps.</div><div class="ln"><span class="mk">First off,</span> apps are convenient and cheap.</div><div class="ln"><span class="mk">This is because</span> you can use them anytime on your phone.</div><div class="ln"><span class="mk">Like,</span> an app records every cost with one tap.</div><div class="ln"><span class="mk">So,</span> you adjust your plan instantly, for free.</div><div class="ln"><span class="mk">Besides,</span> hiring a manager is not common.</div><div class="ln"><span class="mk">This is because</span> a personal advisor costs a lot.</div><div class="ln"><span class="mk">Like,</span> most students can&#x27;t afford one.</div><div class="ln"><span class="mk">So,</span> apps fit ordinary people much better.</div><div class="ln"><span class="mk">Therefore,</span> financial apps will be the future.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="financial app">financial app</span><span class="ipa">/faɪˈnænʃl æp/</span>理财应用</div><div><span class="w say" data-say="convenient">convenient</span><span class="ipa">/kənˈviːniənt/</span>方便的</div><div><span class="w say" data-say="adjust">adjust</span><span class="ipa">/əˈdʒʌst/</span>调整</div><div><span class="w say" data-say="afford">afford</span><span class="ipa">/əˈfɔːrd/</span>负担得起</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;Do you think people will increasingly rely on financial apps and tools to manage their money, or will people prefer to hire personal financial managers? Explain your thoughts.&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;people will rely more on financial apps.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;apps are convenient and cheap.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;you can use them anytime on your phone.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;an app records every cost with one tap.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;you adjust your plan instantly, for free.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;financial apps will be the future.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;people will rely more on financial apps.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;apps are convenient and cheap.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;you can use them anytime on your phone.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;an app records every cost with one tap.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;you adjust your plan instantly, for free.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;hiring a manager is not common.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;a personal advisor costs a lot.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;most students can't afford one.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;apps fit ordinary people much better.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;financial apps will be the future.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div></div>
+</div>
+<script>
+const V=window.VocaSpeech;
+let voices=[];function lv(){voices=window.speechSynthesis?speechSynthesis.getVoices():[]}
+if(window.speechSynthesis){lv();speechSynthesis.onvoiceschanged=lv}
+function say(t,rate){if(!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=rate||0.95;const v=voices.find(v=>/en-US/i.test(v.lang)&&/Samantha|Aria|Jenny|Google US|female/i.test(v.name))||voices.find(v=>/en-US/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}
+function tab(t){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));document.querySelectorAll('.sec').forEach(x=>x.classList.toggle('on',x.id===t));window.scrollTo(0,0)}
+function reveal(el){el.classList.remove('hidden')}
+function toggleChunks(id){document.getElementById(id).classList.toggle('show')}
+// 录音（复用 speech-core）
+async function rec(btn,ref){
+  if(!V||!V.supported){alert('请用 Chrome 打开、并先双击 start.command 启动录音服务');return}
+  if(btn.dataset.on==='1'){return}
+  btn.dataset.on='1';btn.classList.add('on');btn.textContent='⏹ 停止';
+  const live=btn.closest('.s-card,.q-card').querySelector('.live');
+  try{
+    await V.record(15,s=>{if(live)live.textContent='录音中… '+s+'s'},async url=>{
+      btn.dataset.on='';btn.classList.remove('on');btn.textContent='🎙 录音';
+      if(live)live.textContent='转写中…';
+      try{const tr=await V.transcribe(url);if(live)live.innerHTML='你说的：<b>'+(tr||'(空)')+'</b>'+(ref?'<br>标准：'+ref:'')}
+      catch(e){if(live)live.textContent='（转写失败，可回听）'}
+    });
+  }catch(e){btn.dataset.on='';btn.classList.remove('on');btn.textContent='🎙 录音';if(live)live.textContent='（录音需要 start.command 启动服务）'}
+}
+function copyRep(q){
+  const full=v=>v.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' ');
+  let r='【口语模考·面试题练习判分】\n题目：'+q.q+'\n\n参考范文（①单理由）：\n'+full(q.model)+'\n';
+  if(q.model2)r+='\n参考范文（②两理由）：\n'+full(q.model2)+'\n';
+  r+='\n我录音说的（粘贴转写）：\n____\n\n请 cc 按维度打分(切题/展开/流利度/语法词汇/发音韵律)+指出问题+给~80词修改稿。';
+  (navigator.clipboard?navigator.clipboard.writeText(r).then(()=>alert('已复制，粘贴给 cc'),()=>prompt('复制：',r)):prompt('复制：',r))
+}
+window.__Q={};
+document.querySelectorAll('[data-say]').forEach(el=>el.onclick=e=>{e.stopPropagation();say(el.dataset.say)});
+</script>
+</body></html>

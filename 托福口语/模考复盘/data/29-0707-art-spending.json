@@ -1,0 +1,585 @@
+{
+ "id": "29-0707-art-spending",
+ "time": "2026-08-29 07:07",
+ "title": "艺术馆跟读 + 消费习惯面试",
+ "total": "3.0/6",
+ "t1score": "3.0/6",
+ "t2score": "3.0/6",
+ "task1": [
+  {
+   "en": "Artwork can be seen in the east wing.",
+   "zh": "艺术品在东翼可以看到。",
+   "chunks": [
+    "Artwork can be seen",
+    "in the east wing"
+   ],
+   "skeleton": [
+    "艺术品可见",
+    "在东翼"
+   ],
+   "err": "Artwork can be seen at the eastern wing",
+   "score": "4.0"
+  },
+  {
+   "en": "Pieces are placed along the main corridor.",
+   "zh": "展品沿着主走廊摆放。",
+   "chunks": [
+    "Pieces are placed",
+    "along the main corridor"
+   ],
+   "skeleton": [
+    "展品摆放",
+    "沿主走廊"
+   ],
+   "err": "Pieces can be seen at the main corridor.",
+   "score": "3.0"
+  },
+  {
+   "en": "Interactive displays are set up near the front entrance.",
+   "zh": "互动展台设在前门入口附近。",
+   "chunks": [
+    "Interactive displays",
+    "are set up",
+    "near the front entrance"
+   ],
+   "skeleton": [
+    "互动展台",
+    "设",
+    "前门入口附近"
+   ],
+   "err": "Internet. Can be set up in the entrance",
+   "score": "3.0"
+  },
+  {
+   "en": "Pick up printed materials at the information desk.",
+   "zh": "在问询台领取印刷资料。",
+   "chunks": [
+    "Pick up printed materials",
+    "at the information desk"
+   ],
+   "skeleton": [
+    "领取印刷资料",
+    "在问询台"
+   ],
+   "err": "Pick up printed material at the material desk.",
+   "score": "3.0"
+  },
+  {
+   "en": "Incredible photos tell unique stories about campus life.",
+   "zh": "精彩的照片讲述独特的校园生活故事。",
+   "chunks": [
+    "Incredible photos",
+    "tell unique stories",
+    "about campus life"
+   ],
+   "skeleton": [
+    "精彩照片",
+    "讲独特故事",
+    "校园生活"
+   ],
+   "err": "Incredible photos tell unique experience.",
+   "score": "3.0"
+  },
+  {
+   "en": "If you need to relax for a moment, there are places to sit and take a break.",
+   "zh": "如果你想休息一下，有地方可以坐坐喘口气。",
+   "chunks": [
+    "If you need to relax for a moment",
+    "there are places to sit",
+    "and take a break"
+   ],
+   "skeleton": [
+    "如果想休息一下",
+    "有地方坐",
+    "喘口气"
+   ],
+   "err": "There are seats to be seated and take a break.",
+   "score": "2.0"
+  },
+  {
+   "en": "Tours are given daily every hour, but you need to sign up one day prior.",
+   "zh": "每天整点都有导览，但你需要提前一天报名。",
+   "chunks": [
+    "Tours are given daily every hour",
+    "but you need to sign up",
+    "one day prior"
+   ],
+   "skeleton": [
+    "每天整点导览",
+    "但要报名",
+    "提前一天"
+   ],
+   "err": "But you need to sign day one day hour.",
+   "score": "2.0"
+  }
+ ],
+ "task2": [
+  {
+   "q": "Can you tell me about a recent purchase you or someone in your family made and why you decided to buy it?",
+   "my": "Well, I changed my computer. Uh, it's one of my biggest uh purchases recently uh for two reasons. Uh, first one, uh, I have a better computer. Uh, it can uh it is very crucial for my work and my papers and the study. I can do a lot of things with it. It helped me more efficient in my study. Uh, the second, uh, the computer is uh uh can be reserved a long time. I can use it long.",
+   "score": "3.2",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "my biggest recent purchase was a new computer."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "a good computer is crucial for my study."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "I write papers and do research on it."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "it runs heavy software smoothly without freezing."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I finish my work much faster and better."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "it will last me a long time."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "a solid machine stays useful for years."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I plan to keep it through college and beyond."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "it is worth the money in the long run."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "this computer was a smart choice."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "purchase",
+     "ipa": "/ˈpɜːrtʃəs/",
+     "zh": "购买"
+    },
+    {
+     "w": "crucial",
+     "ipa": "/ˈkruːʃl/",
+     "zh": "关键的"
+    },
+    {
+     "w": "efficient",
+     "ipa": "/ɪˈfɪʃnt/",
+     "zh": "高效的"
+    },
+    {
+     "w": "in the long run",
+     "ipa": "/ɪn ðə lɔːŋ rʌn/",
+     "zh": "从长远看"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "my biggest recent purchase was a new computer."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "a good computer is crucial for my study."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "I write papers and do research on it."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "it runs heavy software smoothly without freezing."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I finish my work much faster and better."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "this computer was a smart choice."
+    }
+   ],
+   "words": 45,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "When you make a purchase, do you usually plan ahead or do you buy things spontaneously? Why?",
+   "my": "Well, it depends. If the purchase is very big, I usually plan it ahead, such as buying computers and renting a house and buy some big things, just for example, over two thousand yuan. If some little things, such as a meal, some food, don't need to plan much often, and it give me freedom to use it, and it save my time to do other things.",
+   "score": "3.2",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "it depends on how big the purchase is."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "for big purchases, I always plan ahead."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "big things cost a lot of money."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "buying a computer or renting a house needs saving."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I compare prices and save up first."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "for small things, I buy spontaneously."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "small costs don't need much planning."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "a meal or some food, I just grab it."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "this saves me time and gives me freedom."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I plan big things and keep small ones easy."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "plan ahead",
+     "ipa": "/plæn əˈhed/",
+     "zh": "提前计划"
+    },
+    {
+     "w": "spontaneously",
+     "ipa": "/spɑːnˈteɪniəsli/",
+     "zh": "冲动地，自发地"
+    },
+    {
+     "w": "compare",
+     "ipa": "/kəmˈper/",
+     "zh": "比较"
+    },
+    {
+     "w": "save up",
+     "ipa": "/seɪv ʌp/",
+     "zh": "攒钱"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "it depends on how big the purchase is."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "for big purchases, I always plan ahead."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "big things cost a lot of money."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "buying a computer or renting a house needs saving."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I compare prices and save up first."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I plan big things and keep small ones easy."
+    }
+   ],
+   "words": 47,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "When you decide whether to buy something, which matters more to you: getting good value for your money, or spending as little as possible? Why?",
+   "my": "Well, I usually do a monthly plan with my money. I will get a schedule about my spending. I picked several important things in the month, such as I have to change my computer in the month, and I should spend less on other things in that month. With that plan, I really know how much money I spend and how to make better use of my money.",
+   "score": "3.4",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "good value matters more to me than lowest price."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "value means the thing lasts and works well."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "cheap things often break fast."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "a good computer costs more but serves me years."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "in the end it saves me more money."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "I plan my money by month."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "a monthly plan shows me my real spending."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "if I buy a computer this month, I cut other costs."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I always know how to use money better."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "value plus a plan keeps my money smart."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "value for money",
+     "ipa": "/ˈvæljuː fɔːr ˈmʌni/",
+     "zh": "性价比"
+    },
+    {
+     "w": "worth",
+     "ipa": "/wɜːrθ/",
+     "zh": "值得的"
+    },
+    {
+     "w": "monthly plan",
+     "ipa": "/ˈmʌnθli plæn/",
+     "zh": "月度计划"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "good value matters more to me than lowest price."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "value means the thing lasts and works well."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "cheap things often break fast."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "a good computer costs more but serves me years."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "in the end it saves me more money."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "value plus a plan keeps my money smart."
+    }
+   ],
+   "words": 47,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "Do you think people will increasingly rely on financial apps and tools to manage their money, or will people prefer to hire personal financial managers? Explain your thoughts.",
+   "my": "Well, I think people will more use uh the apps online to uh manage their financial events. The first is very convenient and uh less expensive, and these can use on your own and you can adjust your plan with your uh own at any time. If you want, uh you can write down everything and adjust the time. And the second, uh I don't think uh consult professional people is very uh common.",
+   "score": "3.0",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "people will rely more on financial apps."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "apps are convenient and cheap."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "you can use them anytime on your phone."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "an app records every cost with one tap."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "you adjust your plan instantly, for free."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "hiring a manager is not common."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "a personal advisor costs a lot."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "most students can't afford one."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "apps fit ordinary people much better."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "financial apps will be the future."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "financial app",
+     "ipa": "/faɪˈnænʃl æp/",
+     "zh": "理财应用"
+    },
+    {
+     "w": "convenient",
+     "ipa": "/kənˈviːniənt/",
+     "zh": "方便的"
+    },
+    {
+     "w": "adjust",
+     "ipa": "/əˈdʒʌst/",
+     "zh": "调整"
+    },
+    {
+     "w": "afford",
+     "ipa": "/əˈfɔːrd/",
+     "zh": "负担得起"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "people will rely more on financial apps."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "apps are convenient and cheap."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "you can use them anytime on your phone."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "an app records every cost with one tap."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "you adjust your plan instantly, for free."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "financial apps will be the future."
+    }
+   ],
+   "words": 41,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  }
+ ]
+}
