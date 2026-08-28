@@ -1,7 +1,7 @@
 {
  "source": "模考汇入",
  "book": "项目生词（按主题）",
- "total": 758,
+ "total": 783,
  "wordLists": {
   "1": {
    "name": "🎨 艺术史与艺术",
@@ -9,15 +9,15 @@
   },
   "2": {
    "name": "🌿 生态与环境",
-   "count": 31
+   "count": 38
   },
   "3": {
    "name": "🏛 考古·历史·人类学",
-   "count": 169
+   "count": 173
   },
   "4": {
    "name": "🌊 地球·海洋·自然科学",
-   "count": 57
+   "count": 63
   },
   "5": {
    "name": "⚙️ 材料·科技·工程",
@@ -25,11 +25,11 @@
   },
   "6": {
    "name": "🧬 生物·医学",
-   "count": 134
+   "count": 137
   },
   "7": {
    "name": "💰 经济·社会·政治",
-   "count": 39
+   "count": 44
   },
   "8": {
    "name": "🏫 校园生活与对话",
@@ -2853,6 +2853,279 @@
    "ant": [],
    "nu": "modest 强调『不大、有节制、恰到好处』；moderate 强调『中等、不极端』；limited 强调『受限、不多』。",
    "src_from": "听力模考4.0-2026-08-24"
+  },
+  {
+   "word": "microhabitats",
+   "pronunciation": "/ˈmaɪkroʊˌhæbɪtæt/",
+   "definition": "n. 微生境；小生境（特定物种赖以生存的极小的局部环境）",
+   "memory": "在大生态环境里，因微小的温度、湿度、光照差异而切分出的「小气候包厢」，某种生物恰好只在这里能活。 ｜ 微生境；微型栖息地",
+   "collocations": "",
+   "examples": "",
+   "ety": "micro-（微小）+ habitat（栖息地，源自拉丁语 habitare「居住」）→ 极小的居住环境",
+   "ph": "重音在 -hab- 上；micro- 读 /ˈmaɪkroʊ/，不要读成 /ˈmɪkroʊ/",
+   "tip": "micro=微，habitat=家，合起来是「微生物才住得下的小家」。",
+   "xex": [
+    {
+     "en": "Logs rotting on the forest floor create countless microhabitats for insects.",
+     "zh": "森林地表腐烂的原木为昆虫营造了无数微生境。",
+     "src": "造句"
+    },
+    {
+     "en": "Conserving a single large reserve may protect many microhabitats at once.",
+     "zh": "保护一个大型保护区可同时庇护众多微生境。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "niche",
+     "ipa": "/niːʃ/",
+     "note": "niche 强调物种在生态中的功能位置，microhabitat 强调具体的微小物理空间"
+    }
+   ],
+   "ant": [],
+   "nu": "常作可数名词，复数为 microhabitats；学术生态学文本高频出现。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 2,
+   "src_sent": {
+    "title": "Green Roof Benefits",
+    "en": "These microhabitats help sustain pollinator populations and promote ecological balance."
+   },
+   "index": 32,
+   "id": "PJ02-032"
+  },
+  {
+   "word": "pollinator",
+   "pronunciation": "/ˈpɒlɪneɪtər/",
+   "definition": "n. 传粉者；授粉媒介（如蜜蜂、蝴蝶、鸟类等帮助植物授粉的生物）",
+   "memory": "替植物「做媒」的动物，把花粉从一朵花带到另一朵花，让植物能结籽繁衍。 ｜ 传粉者；授粉媒介",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 pollen「细粉、花粉」→ pollinate「授粉」→ pollinator「传粉者」",
+   "ph": "重音在第一音节 pol-；注意双写 l 读 /l/，-ator 读 /eɪtər/",
+   "tip": "pollen=花粉，pollinator 就是「搬花粉的人（虫/鸟）」。",
+   "xex": [
+    {
+     "en": "Habitat loss threatens wild pollinator populations worldwide.",
+     "zh": "栖息地丧失正威胁着全球野生传粉者种群。",
+     "src": "造句"
+    },
+    {
+     "en": "Some orchids attract a specific pollinator with scent and color.",
+     "zh": "有些兰花用气味和颜色吸引特定的传粉者。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "生态学文本常用；动词形式 pollinate（授粉），名词 pollination（传粉过程）一并掌握。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 2,
+   "src_sent": {
+    "title": "Green Roof Benefits",
+    "en": "These microhabitats help sustain pollinator populations and promote ecological balance."
+   },
+   "index": 33,
+   "id": "PJ02-033"
+  },
+  {
+   "word": "prominence",
+   "pronunciation": "/ˈprɒmɪnəns/",
+   "definition": "n. 突出；显著；显要地位；突起部分",
+   "memory": "从背景里「冒出来」的状态——要么是地位上显赫，要么是形状上凸起。 ｜ 显要；突出地位；突起；凸出物",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 prominere「向前凸出」（pro- 向前 + minere 凸起）→ prominentia → 英语 prominence",
+   "ph": "重音在第一音节 pro-；-mi- 读 /mɪ/，不要读成 /maɪ/",
+   "tip": "pro-「向前」+ mine「凸」（同 mountain 的根），向前凸出来就是「突出」。",
+   "xex": [
+    {
+     "en": "She gained prominence as a leading voice on climate policy.",
+     "zh": "她作为气候政策的主要发声者而声名鹊起。",
+     "src": "造句"
+    },
+    {
+     "en": "Solar prominences are massive eruptions from the Sun's surface.",
+     "zh": "日珥是太阳表面的大规模喷发物。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "eminence",
+     "ipa": "/ˈemɪnəns/",
+     "note": "eminence 多指声誉地位的显赫，prominence 还可指物理上的凸起"
+    },
+    {
+     "w": "visibility",
+     "ipa": "/ˌvɪzəˈbɪləti/",
+     "note": "visibility 强调「被看见」的程度，prominence 强调「突出」的地位或形态"
+    }
+   ],
+   "ant": [],
+   "nu": "常见搭配 rise to prominence「崭露头角」、gain prominence「声名渐显」。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 2,
+   "src_sent": {
+    "title": "Green Roof Benefits",
+    "en": "Green roofs, or living roofs, are gaining prominence in urban areas due to their environmental benefits."
+   },
+   "index": 34,
+   "id": "PJ02-034"
+  },
+  {
+   "word": "runoff",
+   "pronunciation": "/ˈrʌnɒf/",
+   "definition": "n. 径流；地表径流（雨水等未渗入土壤而流走的部分）；决胜选举",
+   "memory": "水「跑掉」了——雨水落到地面没渗下去，顺地表流走的那部分。 ｜ 径流；地表径流；（选票）决胜轮",
+   "collocations": "",
+   "examples": "",
+   "ety": "短语动词 run off「流走、跑掉」名词化 → 流走的水 → 径流",
+   "ph": "重音在第一音节 run-，两个词素连读；词尾 -off 读 /ɒf/",
+   "tip": "run=跑，off=离开，水「跑掉」了就是 runoff。",
+   "xex": [
+    {
+     "en": "Heavy rain caused runoff that eroded the hillside.",
+     "zh": "大雨造成的径流侵蚀了山坡。",
+     "src": "造句"
+    },
+    {
+     "en": "Urban runoff often pollutes coastal waters.",
+     "zh": "城市径流常污染近岸水域。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "drainage",
+     "ipa": "/ˈdreɪnɪdʒ/",
+     "note": "drainage 泛指排水的系统或过程，runoff 特指地表扬起流走的水"
+    }
+   ],
+   "ant": [],
+   "nu": "环境科学、水文文本高频；注意与 run-off 连字符拼写等价。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 2,
+   "src_sent": {
+    "title": "Green Roof Benefits",
+    "en": "These are roofs covered with vegetation to help manage stormwater by absorbing rainfall, decreasing runoff, and minimizing flooding risks."
+   },
+   "index": 35,
+   "id": "PJ02-035"
+  },
+  {
+   "word": "stormwater",
+   "pronunciation": "/ˈstɔːrmwɔːtər/",
+   "definition": "n. 暴雨径流水；雨水径流（降雨后在地表汇集的水，尤指城市排水中的雨水）",
+   "memory": "暴雨过后在地表（尤其城市硬化路面）汇集流淌的水，常被排水系统收集处理。 ｜ 雨水径流；暴雨积水",
+   "collocations": "",
+   "examples": "",
+   "ety": "storm（暴雨）+ water（水）→ 暴雨形成的地表水，20 世纪随城市排水工程普及",
+   "ph": "重音在第一音节 storm-；storm 中 or 读 /ɔːr/",
+   "tip": "storm=暴雨，stormwater 就是「暴雨冲出来的水」，联想到城市内涝。",
+   "xex": [
+    {
+     "en": "Green roofs absorb stormwater and reduce flooding.",
+     "zh": "绿色屋顶能吸收雨水径流并减轻内涝。",
+     "src": "造句"
+    },
+    {
+     "en": "Untreated stormwater can carry pollutants into streams.",
+     "zh": "未经处理的雨水径流可能把污染物带进溪流。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "runoff",
+     "ipa": "/ˈrʌnɒf/",
+     "note": "runoff 泛指一切地表径流，stormwater 特指暴雨降水在城市/工程语境中的径流"
+    }
+   ],
+   "ant": [],
+   "nu": "不可数；城市环境、土木工程文本高频，常搭配 management（雨水管理）。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 2,
+   "src_sent": {
+    "title": "Green Roof Benefits",
+    "en": "These are roofs covered with vegetation to help manage stormwater by absorbing rainfall, decreasing runoff, and minimizing flooding risks."
+   },
+   "index": 36,
+   "id": "PJ02-036"
+  },
+  {
+   "word": "vegetation",
+   "pronunciation": "/ˌvedʒəˈteɪʃn/",
+   "definition": "n. 植被；植物群落（某一地区覆盖的植物总体，尤指自然生长的草木）",
+   "memory": "一片土地上长的「绿」的统称——不是单株，而是覆盖地表的植物整体。 ｜ 植被；草木",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 vegetare「使生长、充满活力」→ vegetatio「生长」→ 英语 vegetation「植被」",
+   "ph": "重音在 -ta- 上；首音节 ve- 读 /ˌvedʒ/，注意 g 在 e 前读 /dʒ/",
+   "tip": "veget- 根含「活力、生长」，同 vegetable（蔬菜），vegetation 是「长出来的一大片绿」。",
+   "xex": [
+    {
+     "en": "Fire cleared the hillside of all vegetation.",
+     "zh": "大火清除了山坡上所有的植被。",
+     "src": "造句"
+    },
+    {
+     "en": "Sparse vegetation grows in the desert's dry soil.",
+     "zh": "稀疏的植被生长在沙漠的干燥土壤中。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "flora",
+     "ipa": "/ˈflɔːrə/",
+     "note": "flora 指某地区植物的物种名册/集合（常与 fauna 相对），vegetation 强调「覆盖的绿」这一景象"
+    }
+   ],
+   "ant": [],
+   "nu": "不可数名词；生态、地理文本高频，形容词 vegetative（植物的；无性生长的）。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 2,
+   "src_sent": {
+    "title": "Green Roof Benefits",
+    "en": "These are roofs covered with vegetation to help manage stormwater by absorbing rainfall, decreasing runoff, and minimizing flooding risks."
+   },
+   "index": 37,
+   "id": "PJ02-037"
+  },
+  {
+   "word": "vegetative",
+   "pronunciation": "/ˈvedʒɪtətɪv/",
+   "definition": "adj. 植物的；无性繁殖的；（医）植物人状态的",
+   "memory": "关于「生长」的——既指植物性的生长，也指不靠种子、只靠枝条根茎就能自我复制的方式。 ｜ 植物的；营养生长的；无性繁殖的",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 vegetare「使生长」→ vegetativus「生长的」→ 英语 vegetative",
+   "ph": "重音在第一音节 veg-；-ta- 读 /tə/ 弱读，注意与 vegetation 重音位置不同",
+   "tip": "vegetative 与 vegetation 同源，都源自「生长」，vegetative 是「生长式的、植物式的」。",
+   "xex": [
+    {
+     "en": "Vegetative growth slows as the plant begins to flower.",
+     "zh": "当植物开始开花时，营养生长会放缓。",
+     "src": "造句"
+    },
+    {
+     "en": "Rhizomes allow vegetative spread of the grass.",
+     "zh": "根状茎使这种草能够无性蔓延。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "注意别与 vegetable（名词，蔬菜）混淆；vegetative 是形容词，重音在首音节。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 2,
+   "src_sent": {
+    "title": "Green Roof Benefits",
+    "en": "Their vegetative layers create habitats for insects and birds in cities where green spaces are limited."
+   },
+   "index": 38,
+   "id": "PJ02-038"
   },
   {
    "id": "PJ03-001",
@@ -9780,6 +10053,166 @@
    }
   },
   {
+   "word": "ceremonial",
+   "pronunciation": "/ˌsɛrəˈmoʊniəl/",
+   "definition": "形容词：仪式的、礼仪的、庆典的；名词：典礼、仪式",
+   "memory": "属于正式典礼/仪式的，带有仪式感与象征性。 ｜ 仪式的、礼仪的（adj）；典礼、仪式（n）",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 caerimonia（宗教仪式、神圣典礼）→ 中古法语 ceremonie → ceremony + -al 形容词后缀。",
+   "ph": "重音在第三音节 mo；-al 结尾读 /əl/。",
+   "tip": "ceremony(典礼) + -al = 典礼上的；记住 ceremony（仪式）这个词根即可。",
+   "xex": [
+    {
+     "en": "The president's visit included a ceremonial guard of honor and a formal dinner.",
+     "zh": "总统的访问包括仪仗队检阅仪式和一场正式晚宴。",
+     "src": "造句"
+    },
+    {
+     "en": "In many cultures, ceremonial masks represent ancestral spirits.",
+     "zh": "在许多文化中，仪式面具象征着祖先的灵魂。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "ritualistic",
+     "ipa": "/ˌrɪtʃuəˈlɪstɪk/",
+     "note": "强调遵循固定仪式程序；ceremonial 偏'涉及典礼的'，更中性"
+    }
+   ],
+   "ant": [],
+   "nu": "区分 ceremonial（涉及仪式的、有仪式感的）与 ceremonious（过分讲究礼节的、拘礼的）；前者中性，后者略带贬义。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 3,
+   "src_sent": {
+    "title": "Role of Kinship",
+    "en": "The intricacy of these social structures is further evidenced by the existence of ceremonial sites, which indicate collective activities and social gatherings."
+   },
+   "index": 170,
+   "id": "PJ03-170"
+  },
+  {
+   "word": "hierarchies",
+   "pronunciation": "/ˈhaɪəˌrɑrki/",
+   "definition": "名词：等级制度、层级体系；等级森严的组织",
+   "memory": "按权力/重要性/级别层层排列的结构，从上到下有高低之分。",
+   "collocations": "",
+   "examples": "",
+   "ety": "希腊语 hierarkhia：hieros（神圣的）+ arkhes（统治、首领）→ 本指'神圣的统治/神职等级'，后泛指任何等级体系。",
+   "ph": "重音在第一音节 hier；ch 发 /k/；复数 hierarchies 写作 -ies。",
+   "tip": "hier(神圣)+arch(统治) = 原指教会的等级；如今泛指'层层管理的金字塔'。",
+   "xex": [
+    {
+     "en": "Social hierarchies determine access to resources in many animal species.",
+     "zh": "在许多动物物种中，社会等级决定了谁能获得资源。",
+     "src": "造句"
+    },
+    {
+     "en": "Large organizations often have complex hierarchies that slow decision-making.",
+     "zh": "大型组织往往层级复杂，拖慢了决策速度。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "ranking",
+     "ipa": "/ˈræŋkɪŋ/",
+     "note": "偏'排序、名次'；hierarchy 偏'层级体系的结构'"
+    }
+   ],
+   "ant": [],
+   "nu": "单数 hierarchy；形容词 hierarchical（等级制的）；hier- 表示'神圣的、较高的'。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 3,
+   "src_sent": {
+    "title": "Role of Kinship",
+    "en": "Kinship not only structured family relationships but also shaped how resources were shared, labor was organized, and social hierarchies were maintained within the group."
+   },
+   "index": 171,
+   "id": "PJ03-171"
+  },
+  {
+   "word": "intricacy",
+   "pronunciation": "/ˈɪntrɪkəsi/",
+   "definition": "名词：错综复杂、纷繁难解；精细复杂之处",
+   "memory": "像线团缠在一起那样繁复精细，难以一眼看穿。",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 intricare（in- '进入' + tricae '纠缠、琐碎障碍'）= 使纠缠 → intricatus + -acy，'缠结难解'。",
+   "ph": "重音在第一音节 in-；-acy 读 /əsi/，由 intricate 去 e 加 -acy 派生。",
+   "tip": "in(进入)+tric(纠缠) = 陷进纠缠里 → 错综复杂；trick(诡计)也是'把人绕进去'。",
+   "xex": [
+    {
+     "en": "The intricacy of the immune system makes it difficult to model precisely.",
+     "zh": "免疫系统错综复杂，很难精确建模。",
+     "src": "造句"
+    },
+    {
+     "en": "Researchers are still uncovering the intricacies of gene regulation.",
+     "zh": "研究者仍在揭示基因调控的细微复杂之处。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "complexity",
+     "ipa": "/kəmˈplɛksəti/",
+     "note": "泛指复杂；intricacy 强调'精细缠绕、细节繁复'"
+    }
+   ],
+   "ant": [],
+   "nu": "形容词 intricate 更常用；intricacies（复数）指'细微复杂之处'。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 3,
+   "src_sent": {
+    "title": "Role of Kinship",
+    "en": "The intricacy of these social structures is further evidenced by the existence of ceremonial sites, which indicate collective activities and social gatherings."
+   },
+   "index": 172,
+   "id": "PJ03-172"
+  },
+  {
+   "word": "kinship",
+   "pronunciation": "/ˈkɪnʃɪp/",
+   "definition": "名词：亲属关系、血缘关系；亲近感、同源/相似感",
+   "memory": "因血缘或渊源而相连的'亲'的关系，也泛指精神上的亲近与相似。 ｜ 亲属关系、血缘；亲近感、相似感",
+   "collocations": "",
+   "examples": "",
+   "ety": "古英语 cynn（家族、种族）→ kin + -ship（表状态/关系的后缀），'亲属关系'。",
+   "ph": "kin 发 /kɪn/，ship 发 /ʃɪp/；kin 的 i 是短音 /ɪ/。",
+   "tip": "kin(亲属)+ship(关系) = 亲属关系；ship 就像'关系'这艘船，friendship/kinship 都是'人之间的关系'。",
+   "xex": [
+    {
+     "en": "Anthropologists study how kinship determines social obligations and inheritance.",
+     "zh": "人类学家研究亲属关系如何决定社会义务与继承。",
+     "src": "造句"
+    },
+    {
+     "en": "The two species show a close kinship, having diverged only recently.",
+     "zh": "这两个物种亲缘关系很近，只是近期才分化。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "affinity",
+     "ipa": "/əˈfɪnəti/",
+     "note": "强调'相似、共鸣'，偏抽象；kinship 强调'血缘或同源'"
+    }
+   ],
+   "ant": [],
+   "nu": "-ship 表'状态/关系'的后缀，如 friendship、relationship；kin 是'亲属'的总称。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 3,
+   "src_sent": {
+    "title": "Role of Kinship",
+    "en": "The role of kinship was central to the social structure of prehistoric communities."
+   },
+   "index": 173,
+   "id": "PJ03-173"
+  },
+  {
    "id": "PJ04-001",
    "wl": 4,
    "index": 1,
@@ -12277,6 +12710,246 @@
     "title": "Geological Formations",
     "en": "The strata inside these formations serve as historical records of environmental conditions, revealing changes in climate, sea levels, and biological evolution."
    }
+  },
+  {
+   "word": "condensation",
+   "pronunciation": "/ˌkɑndənˈseɪʃən/",
+   "definition": "名词：凝结、冷凝（气体变液体）；浓缩、压缩；摘要、精炼",
+   "memory": "把散的东西'压密'——气体聚成液滴、长文压成摘要。 ｜ 冷凝、凝结（气态→液态）；浓缩、压缩（使更稠密）；摘要、精炼（把内容压缩）",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 condensare（con- '一起' + densare '使变密'，源自 densus '密'）→ condensatio，'使变浓密' → 凝结/浓缩。",
+   "ph": "重音在 -sa- 音节；con- 读 /kən/；condense 中的 e 是短音。",
+   "tip": "con(一起)+dens(密) = 让分子'挤到一起变密' → 气体挤成水珠、长文挤成摘要。",
+   "xex": [
+    {
+     "en": "Evaporation and condensation are opposite processes in the water cycle.",
+     "zh": "蒸发与凝结是水循环中相反的两个过程。",
+     "src": "造句"
+    },
+    {
+     "en": "Fog is essentially condensation of water vapor near the ground.",
+     "zh": "雾本质上是近地面的水汽凝结。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "compression",
+     "ipa": "/kəmˈprɛʃən/",
+     "note": "强调物理上的挤压变小；condensation 强调由稀变浓或气体成液"
+    }
+   ],
+   "ant": [],
+   "nu": "反义 evaporation（蒸发）；气象/化学语境高频（condensation nuclei 凝结核）。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 4,
+   "src_sent": {
+    "title": "Ocean Currents",
+    "en": "This redistribution of heat affects weather systems and contributes to the global water cycle, including evaporation, condensation, and precipitation."
+   },
+   "index": 58,
+   "id": "PJ04-058"
+  },
+  {
+   "word": "evaporation",
+   "pronunciation": "/ɪˌvæpəˈreɪʃən/",
+   "definition": "名词：蒸发、汽化（液态→气态）；消失、消散",
+   "memory": "液体变成蒸汽散失，或引申为事物渐渐消失不见。 ｜ 蒸发（物理过程）；消失、消散（引申）",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 e-（出来）+ vapor（蒸汽）+ -ation → '变成蒸汽散出'，即蒸发。",
+   "ph": "重音在 -ra- 音节（/reɪ/）；开头 e- 读 /ɪ/，vapor 读 /ˈveɪpər/。",
+   "tip": "e(出)+vapor(蒸汽) = 蒸汽跑出来 → 蒸发；和 vapor(蒸汽)同源，先记 vapor。",
+   "xex": [
+    {
+     "en": "Sweat cools the body through evaporation.",
+     "zh": "汗液通过蒸发使身体降温。",
+     "src": "造句"
+    },
+    {
+     "en": "The evaporation of the lake accelerates during the dry season.",
+     "zh": "旱季里湖泊的蒸发会加快。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "vaporization",
+     "ipa": "/ˌveɪpərəˈzeɪʃən/",
+     "note": "更强调'汽化'的物理过程；evaporation 指常温下的自然蒸发"
+    }
+   ],
+   "ant": [],
+   "nu": "与 condensation（凝结）互为反义；vapor 是'蒸汽'，evaporate 动词、evaporation 名词。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 4,
+   "src_sent": {
+    "title": "Ocean Currents",
+    "en": "This redistribution of heat affects weather systems and contributes to the global water cycle, including evaporation, condensation, and precipitation."
+   },
+   "index": 59,
+   "id": "PJ04-059"
+  },
+  {
+   "word": "nutrients",
+   "pronunciation": "/ˈnjuːtriənt/",
+   "definition": "n. 营养物；养分（维系生命与生长所需的物质） adj. 有营养的",
+   "memory": "喂给生命体的「口粮」，缺了它，生长和代谢就会停摆。 ｜ 养分；营养物；有营养的（作形容词）",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 nutrire「喂养、滋养」→ nutriens（喂养中的）→ 英语 nutrient「滋养之物」",
+   "ph": "重音在第一音节 nu-；注意字母组合 -ie- 读 /iː/，词尾 -ent 读 /ənt/",
+   "tip": "nurture（养育）和 nutrient 同源，都有「喂」的根，记住了 nurture 就记住了 nutrient。",
+   "xex": [
+    {
+     "en": "Rainforests recycle nutrients rapidly through their dense leaf litter.",
+     "zh": "雨林通过浓密的落叶层快速循环养分。",
+     "src": "造句"
+    },
+    {
+     "en": "The experiment measured how much nutrient each seedling absorbed.",
+     "zh": "实验测量了每株幼苗吸收了多少养分。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "nourishment",
+     "ipa": "/ˈnʌrɪʃmənt/",
+     "note": "nourishment 偏「食物供给」的整体过程，nutrient 指具体的化学成分"
+    }
+   ],
+   "ant": [],
+   "nu": "常以复数 nutrients 出现，指氮磷钾等具体元素或化合物。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 4,
+   "src_sent": {
+    "title": "Ocean Currents",
+    "en": "Ocean currents are large-scale movements of seawater that transport heat and nutrients throughout the world's oceans."
+   },
+   "index": 60,
+   "id": "PJ04-060"
+  },
+  {
+   "word": "redistribution",
+   "pronunciation": "/ˌriːdɪstrɪˈbjuːʃn/",
+   "definition": "n. 再分配；重新分配（财富、资源、人口等的重新配置）",
+   "memory": "把已经分好的东西，按新规则重新「发牌」一遍，让分布发生变化。 ｜ 再分配；重新分配",
+   "collocations": "",
+   "examples": "",
+   "ety": "re-（再次）+ distribution（分配，源自拉丁语 distribuere「分开给予」）→ 重新分配",
+   "ph": "重音在 -bu- 上；词首 re- 读 /ˌriː/，整个词音节多，注意 -tion 读 /ʃn/",
+   "tip": "re=再，distribution=分发，合起来就是「再发一次」。",
+   "xex": [
+    {
+     "en": "Tax policy drives the redistribution of income across society.",
+     "zh": "税收政策推动着收入在全社会范围的再分配。",
+     "src": "造句"
+    },
+    {
+     "en": "Migration causes a redistribution of population from rural to urban areas.",
+     "zh": "人口迁移导致了人口从农村向城市的再分布。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "reallocation",
+     "ipa": "/ˌriːæləˈkeɪʃn/",
+     "note": "reallocation 侧重资源的具体调拨，redistribution 侧重整体分布格局的改变"
+    }
+   ],
+   "ant": [],
+   "nu": "政治、经济、生态语境均常见；动词 redistribute，形容词 redistributive。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 4,
+   "src_sent": {
+    "title": "Ocean Currents",
+    "en": "This redistribution of heat affects weather systems and contributes to the global water cycle, including evaporation, condensation, and precipitation."
+   },
+   "index": 61,
+   "id": "PJ04-061"
+  },
+  {
+   "word": "rotation",
+   "pronunciation": "/roʊˈteɪʃn/",
+   "definition": "n. 旋转；轮流；轮作（农作物的轮换种植）；轮换",
+   "memory": "绕着一个轴或一圈「转」，既指物理转动，也指人/物按顺序轮流上岗。 ｜ 旋转；自转；轮作；轮换；轮流；轮换制",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 rotare「转动」→ rotatio「旋转」→ 英语 rotation",
+   "ph": "重音在第二音节 -ta-；词首 ro- 读 /roʊ/，-tion 读 /ʃn/",
+   "tip": "rot=转（同 rotor 转子、rotary 旋转的），rotation 就是「转」这个动作的名词。",
+   "xex": [
+    {
+     "en": "Farmers use crop rotation to break pest cycles.",
+     "zh": "农民用轮作来打断害虫的繁殖周期。",
+     "src": "造句"
+    },
+    {
+     "en": "The rotation of staff ensures everyone gains experience.",
+     "zh": "人员的轮换确保每个人都能积累经验。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "revolution",
+     "ipa": "/ˌrevəˈluːʃn/",
+     "note": "revolution 偏指公转或一整圈的完成，rotation 偏指绕自身轴的转动或轮换"
+    }
+   ],
+   "ant": [],
+   "nu": "农业文本中 crop rotation「轮作」是高频短语；动词 rotate。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 4,
+   "src_sent": {
+    "title": "Ocean Currents",
+    "en": "They are influenced by factors such as wind patterns and Earth's rotation, and they play a crucial role in regulating global climate, since they redistribute heat from warmer regions to cooler ones."
+   },
+   "index": 62,
+   "id": "PJ04-062"
+  },
+  {
+   "word": "seawater",
+   "pronunciation": "/ˈsiːwɔːtər/",
+   "definition": "n. 海水；咸水（海洋中的水）",
+   "memory": "大海里的水，咸的、含盐量高，与淡水相对。 ｜ 海水",
+   "collocations": "",
+   "examples": "",
+   "ety": "sea（海）+ water（水）→ 海水，古英语 sǣwæter 的直系后代",
+   "ph": "重音在第一音节 sea-；sea 读 /siː/，不要读成 /seɪ/",
+   "tip": "sea+water 直接拼合，字面「海+水」，几乎不需记忆。",
+   "xex": [
+    {
+     "en": "Desalination plants turn seawater into drinking water.",
+     "zh": "海水淡化厂把海水变成饮用水。",
+     "src": "造句"
+    },
+    {
+     "en": "Warm seawater fuels the growth of tropical storms.",
+     "zh": "温暖的海水为热带风暴的形成提供能量。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "saltwater",
+     "ipa": "/ˈsɔːltwɔːtər/",
+     "note": "saltwater 强调「含盐」，seawater 强调「来自海洋」，二者常可互换"
+    }
+   ],
+   "ant": [],
+   "nu": "不可数名词；学术文本中与 freshwater（淡水）相对。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 4,
+   "src_sent": {
+    "title": "Ocean Currents",
+    "en": "Ocean currents are large-scale movements of seawater that transport heat and nutrients throughout the world's oceans."
+   },
+   "index": 63,
+   "id": "PJ04-063"
   },
   {
    "id": "PJ05-001",
@@ -19416,6 +20089,114 @@
    }
   },
   {
+   "word": "affective",
+   "pronunciation": "/əˈfɛktɪv/",
+   "definition": "形容词：情感的、感情的（涉及情绪与感受，区别于认知/理智层面）",
+   "memory": "与情绪、感受有关的那个维度，用来描述'动情'而非'动脑'的层面。",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 affectus（afficere 的过去分词，意为'被影响、被触动'）→ affect 加 -ive 后缀，表示'与情感有关的'。",
+   "ph": "重音在第二音节 fec；affective 与 effective 仅差一个字母 a/e，极易混淆。",
+   "tip": "affect(影响/感动) + -ive = 让人'动情'的；effective 是'有效'，affective 是'动情'。",
+   "xex": [
+    {
+     "en": "Affective disorders such as depression can severely impair a person's daily functioning.",
+     "zh": "抑郁等情感障碍会严重损害一个人的日常功能。",
+     "src": "造句"
+    },
+    {
+     "en": "The study measured both cognitive and affective responses to the advertisement.",
+     "zh": "该研究同时测量了受众对广告的认知反应与情感反应。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "emotional",
+     "ipa": "/ɪˈmoʊʃənəl/",
+     "note": "更宽泛，泛指情绪；affective 更学术、偏心理学语境"
+    }
+   ],
+   "ant": [],
+   "nu": "affective 偏学术与心理学（affective disorder 情感障碍），日常说'情绪'多用 emotional；务必与 effective（有效的）区分开。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 6,
+   "src_sent": {
+    "title": "Circadian Rhythms",
+    "en": "Recent studies have identified specific genes responsible for circadian regulation, while melatonin production and seasonal affective disorder demonstrate the profound connection between environmental cues and internal biological timing mechanisms."
+   },
+   "index": 135,
+   "id": "PJ06-135"
+  },
+  {
+   "word": "circadian",
+   "pronunciation": "/sɜrˈkeɪdiən/",
+   "definition": "形容词：昼夜节律的、约以24小时为周期的（生物钟）",
+   "memory": "生物体内大约以一天（24小时）为周期运转的内在节律。",
+   "collocations": "",
+   "examples": "",
+   "ety": "由拉丁语 circa（大约、环绕）+ dies（日、一天）构成，字面'大约一天'；1950 年代由 Franz Halberg 创造。",
+   "ph": "重音在 -ca- 音节（/keɪ/）；c 在 e/i/y 前发 /s/。",
+   "tip": "circa(大约)+dia(一天) = 大约一天的节律；'circa' 常见于历史年份'约公元'。",
+   "xex": [
+    {
+     "en": "Circadian rhythms regulate sleep, body temperature, and hormone release over a 24-hour cycle.",
+     "zh": "昼夜节律以24小时为周期调节睡眠、体温与激素分泌。",
+     "src": "造句"
+    },
+    {
+     "en": "Jet lag occurs when the body's circadian clock is out of sync with the local time zone.",
+     "zh": "当身体的生物钟与当地时区不同步时，就会产生时差反应。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "常搭配 rhythm/clock（circadian rhythm 昼夜节律、circadian clock 生物钟）；circadian ≈ 'about a day'，前缀 circa 表'大约'。注意与 diurnal（白天的/日行的）区分。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 6,
+   "src_sent": {
+    "title": "Circadian Rhythms",
+    "en": "The study of sleep and circadian rhythms explores how humans and animals regulate their sleep-wake cycles."
+   },
+   "index": 136,
+   "id": "PJ06-136"
+  },
+  {
+   "word": "melatonin",
+   "pronunciation": "/ˌmɛləˈtoʊnɪn/",
+   "definition": "名词：褪黑素（松果体分泌、调节睡眠-觉醒周期的激素）",
+   "memory": "大脑松果体分泌的、调控昼夜节律与睡眠的激素。",
+   "collocations": "",
+   "examples": "",
+   "ety": "1958 年 Aaron Lerner 命名：希腊语 melas（黑）+ -tonin（源自 serotonin，因该激素能影响皮肤黑色素使肤色变浅）。",
+   "ph": "重音在 -to- 音节（/toʊ/）；melato- 中的 a 发 /ə/。",
+   "tip": "melan(黑)+tonin(血清素后缀) = 与'黑色素'相关的激素；夜里分泌多 → '褪黑'助眠。",
+   "xex": [
+    {
+     "en": "Melatonin levels rise in the evening and fall in the morning, helping to regulate sleep.",
+     "zh": "褪黑素水平傍晚升高、清晨下降，帮助调节睡眠。",
+     "src": "造句"
+    },
+    {
+     "en": "Exposure to bright light at night suppresses melatonin production.",
+     "zh": "夜间接触强光会抑制褪黑素的分泌。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "激素名，不可数；常与 circadian rhythm（昼夜节律）相关；褪黑素补充剂用作助眠。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 6,
+   "src_sent": {
+    "title": "Circadian Rhythms",
+    "en": "Recent studies have identified specific genes responsible for circadian regulation, while melatonin production and seasonal affective disorder demonstrate the profound connection between environmental cues and internal biological timing mechanisms."
+   },
+   "index": 137,
+   "id": "PJ06-137"
+  },
+  {
    "id": "PJ07-001",
    "wl": 7,
    "index": 1,
@@ -21196,6 +21977,216 @@
     "title": "Economics And Resource Allocation",
     "en": "Through the application of theoretical models and the collection of empirical data, economists can help policymakers formulate strategies to address issues such as inflation, unemployment, and trade imbalances, thereby improving societal well-being."
    }
+  },
+  {
+   "word": "anchoring",
+   "pronunciation": "/ˈæŋkərɪŋ/",
+   "definition": "名词/动名词：锚定、锚固；(心理学)锚定效应——做判断时过度依赖最先获得的信息作为参照点",
+   "memory": "像抛锚一样把船固定住，或把认知钉死在最初的参照点上。 ｜ 抛锚、锚固（使船或物固定）；（心理学）锚定效应，以初始信息为基准的认知偏差",
+   "collocations": "",
+   "examples": "",
+   "ety": "来自希腊语 ankura（锚、弯钩）→ 拉丁语 anchora → 古英语 ancor → anchor；-ing 表动作或状态。",
+   "ph": "ch 发 /k/（anchor 中 ch 不读 /tʃ/）；重音在 anchor 音节。",
+   "tip": "anchor = 船锚，抛锚后船就'定'在那儿；所以 anchoring 就是'被钉在最初的数字上'。",
+   "xex": [
+    {
+     "en": "Anchoring bias explains why shoppers see a 'discounted' price as a bargain even when the original price was inflated.",
+     "zh": "锚定偏差解释了为什么即使原价被抬高，购物者仍把'打折'价当作便宜货。",
+     "src": "造句"
+    },
+    {
+     "en": "The anchoring of the bridge to the bedrock prevents it from shifting during earthquakes.",
+     "zh": "把桥锚固在基岩上，能防止它在地震中位移。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "fixation",
+     "ipa": "/fɪkˈseɪʃən/",
+     "note": "强调固定不动；anchoring 强调以初始值为参照点"
+    }
+   ],
+   "ant": [],
+   "nu": "心理学语境中 anchoring 常与 effect/bias 连用（anchoring effect 锚定效应）；是 Tversky 与 Kahneman 提出的经典认知偏差之一。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 7,
+   "src_sent": {
+    "title": "Behavioral Economics",
+    "en": "[D]  Another concept is \"anchoring,\" where individuals rely too heavily on the first piece of information they receive (the \"anchor\") when making decisions."
+   },
+   "index": 40,
+   "id": "PJ07-040"
+  },
+  {
+   "word": "aversion",
+   "pronunciation": "/əˈvɜrʒən/",
+   "definition": "名词：厌恶、反感；回避、规避（对某事物的强烈不喜欢）",
+   "memory": "内心'转身离开'某事物，即强烈的厌恶与主动回避。",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 avertere（a- '离开' + vertere '转'）= 转开；其过去分词 aversus + -ion → '转身远离'，引申为厌恶。",
+   "ph": "重音在第二音节 ver；开头 a- 发弱读 /ə/。",
+   "tip": "a-(离开)+vers(转)+ion = 转身走开 → 厌恶；和 avert(避开)同源，先'转身'再'讨厌'。",
+   "xex": [
+    {
+     "en": "Risk aversion describes a preference for certain outcomes over gambles with higher expected value.",
+     "zh": "风险厌恶指的是宁愿要确定的收益，也不愿要期望值更高但不确定的赌局。",
+     "src": "造句"
+    },
+    {
+     "en": "He has a strong aversion to public speaking and avoids presentations whenever possible.",
+     "zh": "他极其反感当众讲话，能躲就躲。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "disgust",
+     "ipa": "/dɪsˈɡʌst/",
+     "note": "更强烈、偏生理上的恶心；aversion 偏心理排斥与规避"
+    },
+    {
+     "w": "antipathy",
+     "ipa": "/ænˈtɪpəθi/",
+     "note": "持久而根深蒂固的反感"
+    }
+   ],
+   "ant": [],
+   "nu": "常见搭配 aversion to sth（对…的反感）；经济学里 loss aversion（损失厌恶）、risk aversion（风险厌恶）是核心概念。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 7,
+   "src_sent": {
+    "title": "Behavioral Economics",
+    "en": "[A] One key concept is \"loss aversion,\" where people prefer avoiding losses rather than acquiring gains."
+   },
+   "index": 41,
+   "id": "PJ07-041"
+  },
+  {
+   "word": "deviates",
+   "pronunciation": "/ˈdiviˌeɪt/",
+   "definition": "动词：偏离、背离（常与 from 连用）；越轨、脱离常规",
+   "memory": "离开既定的路/标准/规范，走到别处去。",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 de-（离开）+ via（道路）→ deviare '离开正路'；现指偏离标准、规范或预期。",
+   "ph": "de- 发 /ˈdiː/，via 发 /vi/；重音在 de-。动词第三人称 deviates 读 /ˈdiviˌeɪts/。",
+   "tip": "de(离开)+via(路) = 偏离正路；记住 via 是'路'（英文 via = 经由）。",
+   "xex": [
+    {
+     "en": "The data point deviates significantly from the expected trend line.",
+     "zh": "这个数据点明显偏离了预期的趋势线。",
+     "src": "造句"
+    },
+    {
+     "en": "If a student deviates from the instructions, the experiment may produce invalid results.",
+     "zh": "如果学生不按说明操作，实验可能得出无效结果。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "diverge",
+     "ipa": "/daɪˈvɜrdʒ/",
+     "note": "指'分叉、分歧'，偏中性；deviate 偏'偏离正道或标准'"
+    },
+    {
+     "w": "stray",
+     "ipa": "/streɪ/",
+     "note": "偏离、迷路，常含无意的意味"
+    }
+   ],
+   "ant": [],
+   "nu": "几乎总与 from 连用（deviate from）；名词 deviation，统计学里'偏差/标准差'是核心概念。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 7,
+   "src_sent": {
+    "title": "Behavioral Economics",
+    "en": "However, behavioral economists find human behavior often deviates from these expectations."
+   },
+   "index": 42,
+   "id": "PJ07-042"
+  },
+  {
+   "word": "irrational",
+   "pronunciation": "/ɪˈræʃənəl/",
+   "definition": "形容词：不理性的、不合逻辑的、荒谬的；(数学)无理的",
+   "memory": "不按理性/道理行事，缺乏合理根据。 ｜ 不理性的、荒谬的；（数学）无理的（如无理数）",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 in-（否定）+ rationalis（有理性的，来自 ratio '理性、计算'）→ '缺乏理性的'。",
+   "ph": "重音在 -ra- 音节（/ræ/）；前缀 ir- 是 in- 在 r 前的变体（如 irregular、irrelevant）。",
+   "tip": "ir(否定)+rational(理性) = 不理性；in- 遇 r 变 ir-，如同 irregular(不规则)。",
+   "xex": [
+    {
+     "en": "Behavioral economics studies how irrational choices deviate from standard economic models.",
+     "zh": "行为经济学研究非理性选择如何偏离标准经济模型。",
+     "src": "造句"
+    },
+    {
+     "en": "Fearing a harmless spider is arguably an irrational response.",
+     "zh": "害怕一只无害的蜘蛛，可以说是非理性的反应。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "illogical",
+     "ipa": "/ɪˈlɑdʒɪkəl/",
+     "note": "强调不合逻辑的推理；irrational 强调违背理性、荒谬"
+    }
+   ],
+   "ant": [],
+   "nu": "反义 rational；irrational number 无理数（不能用分数表示），rational number 有理数。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 7,
+   "src_sent": {
+    "title": "Behavioral Economics",
+    "en": "Cognitive biases, emotions, and social factors can lead to irrational choices."
+   },
+   "index": 43,
+   "id": "PJ07-043"
+  },
+  {
+   "word": "suboptimal",
+   "pronunciation": "/sʌbˈɒptɪməl/",
+   "definition": "adj. 次优的；未达最佳的（低于最理想水平的）",
+   "memory": "比「最好」差一点——能凑合用，但没到最优状态。 ｜ 次优的；不够理想的",
+   "collocations": "",
+   "examples": "",
+   "ety": "sub-（在……之下）+ optimal（最优的，源自拉丁语 optimus「最好」）→ 低于最好",
+   "ph": "重音在 op- 上；词首 sub- 读 /sʌb/，optimal 读 /ˈɒptɪməl/",
+   "tip": "sub=下面，optimal=最佳，在「最佳之下」就是次优。",
+   "xex": [
+    {
+     "en": "Working in a suboptimal environment slows progress.",
+     "zh": "在不够理想的环境中工作会拖慢进度。",
+     "src": "造句"
+    },
+    {
+     "en": "The policy produced suboptimal outcomes for rural communities.",
+     "zh": "这项政策给农村社区带来了不够理想的结果。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "inferior",
+     "ipa": "/ɪnˈfɪəriər/",
+     "note": "inferior 含「较差」的贬义，suboptimal 更中性，仅指「未达最佳」"
+    }
+   ],
+   "ant": [],
+   "nu": "学术、评估类文本常见，语气客观克制，常作定语。",
+   "src_from": "阅读模考4.0·2026-08-28",
+   "wl": 7,
+   "src_sent": {
+    "title": "Behavioral Economics",
+    "en": "Anchoring can thus lead to suboptimal investment choices."
+   },
+   "index": 44,
+   "id": "PJ07-044"
   },
   {
    "id": "PJ08-001",
