@@ -66,8 +66,7 @@ def stepsblock(q):
     if not q.get("steps"): return ""
     ic = {"定位": "📍", "推理": "🧠", "排除": "✂️"}
     rows = "".join(f'<div class="step"><span class="sk">{ic.get(st["k"], "·")} {e(st["k"])}</span><span class="sv">{e(st["v"])}</span></div>' for st in q["steps"])
-    trap = f'<div class="trap">🪤 <b>陷阱类型：</b>{e(q["trap"])}</div>' if q.get("trap") else ""
-    return f'<div class="steps">{rows}{trap}</div>'
+    return f'<div class="steps">{rows}</div>'
 
 def weakfixblock(t):
     w = f'<div class="wf-w">🔴 <b>你的漏洞：</b>{e(t["weak"])}</div>' if t.get("weak") else ""
@@ -149,6 +148,9 @@ def blanksblock(blanks):
 def optsblock(q):
     opts = q.get("options", {})
     yourk, corrk = q.get("your"), q.get("correct")
+    ok = (yourk == corrk)
+    verdict = ('<span class="qverdict ok">✅ 你答对了</span>' if ok
+               else '<span class="qverdict no">❌ 你答错了</span>')
     neutral = "".join(f'<div class="opt"><b>{e(k)}.</b> {e(opts[k])}</div>' for k in sorted(opts.keys()))
     ans = []
     for k in sorted(opts.keys()):
@@ -156,12 +158,18 @@ def optsblock(q):
         if k == corrk: cls = "correct"; tag = '<span class="tag t-ok">✓ 正确</span>'
         if k == yourk and yourk != corrk: cls = "wrong"; tag = '<span class="tag t-no">✗ 你选的</span>'
         ans.append(f'<div class="opt {cls}"><b>{e(k)}.</b> {e(opts[k])} {tag}</div>')
+    # 错题重点：醒目的「你错在哪」分析块（放在答案对照之前，一眼看到）
+    wrongblk = ""
+    if not ok:
+        cause = q.get("trap") or q.get("why") or ""
+        if cause:
+            wrongblk = f'<div class="wrongwhy">❌ <b>你错在哪：</b>{e(cause)}</div>'
     pt = f'<div class="qpt"><b>考点：</b>{e(q["point"])}</div>' if q.get("point") else ""
     why = f'<div class="qwhy">{e(q["why"])}</div>' if q.get("why") else ""
     typ = f'<span class="qtype">{e(q["type"])}</span>' if q.get("type") else ""
     reveal = (f'<details class="reveal"><summary>🙈 先自己判断，再点开看答案 &amp; 老师精讲</summary>'
-              f'<div class="revbody">{"".join(ans)}{stepsblock(q)}{pt}{why}</div></details>')
-    return f'<div class="q"><div class="qtxt">{typ}{e(q["q"])}</div>{neutral}{reveal}</div>'
+              f'<div class="revbody">{wrongblk}{"".join(ans)}{stepsblock(q)}{pt}{why}</div></details>')
+    return f'<div class="q"><div class="qtxt">{typ}{e(q["q"])} {verdict}</div>{neutral}{reveal}</div>'
 
 def modelblock(m):
     if not m: return ""
@@ -348,6 +356,11 @@ body.nosig .wd.sig{background:none!important;color:inherit!important;font-weight
 .q{border:1px solid var(--line);border-radius:11px;padding:12px 14px;margin:12px 0;background:#fdfcf8}
 .qtype{display:inline-block;background:#efe7d6;color:#8a6d2f;font-size:11.5px;font-weight:700;border-radius:5px;padding:1px 7px;margin-right:7px;vertical-align:middle}
 .qtxt{font-weight:600;font-size:14.5px;margin-bottom:9px}
+.qverdict{display:inline-block;font-weight:800;font-size:12px;border-radius:6px;padding:2px 9px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+.qverdict.ok{background:#dff3e6;color:#1d7a44;border:1px solid #b5dfc5}
+.qverdict.no{background:#fde7e2;color:#b03a2a;border:1px solid #f3b9ac}
+.wrongwhy{background:#fdeeea;border:1px solid #f0c3b5;border-left:4px solid var(--red);border-radius:8px;padding:10px 13px;margin:4px 0 10px;font-size:13.5px;line-height:1.7;color:#7c3a2e}
+.wrongwhy b{color:var(--red)}
 .opt{border:1px solid var(--line);border-radius:8px;padding:7px 11px;margin:5px 0;font-size:14px}
 .opt.correct{background:#eef7f1;border-color:#b6e0c8}
 .opt.wrong{background:#fdeeec;border-color:#eec3bd}
