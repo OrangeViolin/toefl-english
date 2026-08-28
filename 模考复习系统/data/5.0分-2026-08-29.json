@@ -1,0 +1,7818 @@
+{
+ "id": "5.0分-2026-08-29",
+ "date": "2026-08-29",
+ "title": "听力模考复盘 · 5.0分（76%）",
+ "scores": {
+  "total": "5.0 / 76%",
+  "reading": "—",
+  "listening": "15/21 + 19/24",
+  "writing": "—",
+  "speaking": "—"
+ },
+ "priorities": [
+  {
+   "t": "✅ 明显进步：4.0→5.0，学术讲座从「三篇全1/4」到 3/4+3/4+2/4",
+   "why": "上次学术讲座错9题，这次只错3题。背学术词+抓信号词+精听见效了，继续保持"
+  },
+  {
+   "t": "🔴 通知题 Bookstore 0/3 全错——这是新暴露的短板",
+   "why": "三题全选 C(看似合理但错)。通知/告示类听细节，你被『added inventory』『upcoming sale』这类表面词带偏"
+  },
+  {
+   "t": "细节题『为什么提X』还是弱：Green Spaces parking lots、John Cage seashells、Viral content 都错",
+   "why": "修辞目的题(why mention X)连续踩坑，都选了『表面内容』没选『服务论点』"
+  },
+  {
+   "t": "对话/通知相对稳，学术讲座进步最大",
+   "why": "Flight/Podcast/Environmental club 各错1，学术讲座三篇只错3题"
+  }
+ ],
+ "sections": [
+  {
+   "key": "academic",
+   "label": "🎧 学术讲座 Listen to an Academic Talk（3篇 错3，大进步）",
+   "intro": "学术讲座从上次「三篇全1/4」进步到 3/4+3/4+2/4，只错3题。背学术词+抓信号词+精听见效了。剩下3道错题集中在『修辞目的题(why mention X)』——连续踩坑。",
+   "tasks": [
+    {
+     "title": "Urban Green Spaces · 城市绿地（3/4 ❌错1）",
+     "score": "3/4",
+     "time": "3m33s",
+     "type": "学术讲座",
+     "transcript": "Today, we're revisiting the topic of urban green spaces, green areas in cities like parks and gardens. These spaces are known to improve air quality and reduce heat in cities. They also support the health of city residents. Creating and maintaining urban green spaces can be challenging, however, especially in densely populated cities. An obvious issue is space. In areas where land is expensive or already developed, finding room for parks or gardens can be difficult. One way cities address this is by building green roofs. That's a layer of vegetation planted on top of a building. Green roofs help cool buildings, absorb rainwater, and add greenery without taking up ground space. Cities also often repurpose unused lots, such as abandoned parking areas or vacant lots, turning them into small parks or gardens. Vertical gardens are another innovation. These are walls covered with plants, often using special structures that allow greenery to grow upward. They're useful in places where horizontal space is limited and can improve air quality and insulation. While cost and upkeep of green spaces are legitimate concerns, many cities are adopting green space quotas, policies that require a minimum amount of greenery in new developments. These quotas mandate builders to include features such as trees, rooftop gardens, or courtyards. Though they may raise construction costs, urban planners support them because they ensure that green space is not overlooked in city growth. Quotas help balance development with environmental health and are a step toward more sustainable urban living.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "主旨题",
+       "q": "What is the main focus of the talk?（讲座主旨）",
+       "options": {
+        "A": "How parks benefit city residents 公园如何惠及居民",
+        "B": "Ways to overcome the difficulties of creating urban green spaces 克服建造城市绿地困难的方法",
+        "C": "The problems caused by pollution in cities 城市污染问题",
+        "D": "The history of using green spaces in urban planning 城市绿地历史"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "开头 'Creating and maintaining urban green spaces can be challenging...One way cities address this is...'（难点+解决之道）"
+        },
+        {
+         "k": "推理",
+         "v": "主旨题：整篇讲「绿地难建 + 各种解决办法(green roofs/repurposing/vertical gardens/quotas)」→ B"
+        },
+        {
+         "k": "排除",
+         "v": "A 是开头引入；C 污染是细节；D 历史原文没讲"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "type": "修辞目的题",
+       "q": "Why does the speaker mention parking lots?（为何提停车场）",
+       "options": {
+        "A": "To help explain why land is expensive in cities 解释城市地价高",
+        "B": "To encourage parking solutions that save space 鼓励节省空间的停车方案",
+        "C": "To provide an example of an area that can be repurposed 举例可改造的区域",
+        "D": "To support reducing the number of cars 支持减少汽车"
+       },
+       "correct": "C",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'repurpose unused lots, such as abandoned parking areas or vacant lots'（改造闲置地块，如废弃停车场）"
+        },
+        {
+         "k": "推理",
+         "v": "修辞目的题：提 parking lots 是举例「可以改造成绿地的闲置地块」→ C"
+        },
+        {
+         "k": "排除",
+         "v": "A(地价贵)是前文讲 space 问题的，不是提停车场的直接目的；B/D 原文没提"
+        }
+       ],
+       "trap": "修辞目的题陷阱：你选了 A(地价贵)——parking lots 是举例「可改造的闲置地」(repurpose unused lots such as...)，服务于『解决办法』这个论点，不是解释地价。such as 后面是举例"
+      },
+      {
+       "n": 3,
+       "type": "细节题",
+       "q": "According to the talk, how are green roofs and vertical gardens similar?（绿屋顶和垂直花园的相似处）",
+       "options": {
+        "A": "They provide recreational areas for residents 提供休闲区",
+        "B": "They do not need additional land to be built 不需额外土地",
+        "C": "They divert rainwater for later use 收集雨水",
+        "D": "They are both inexpensive to create 都便宜"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "green roofs 'without taking up ground space'（不占地面）+ vertical gardens 'useful where horizontal space is limited'（水平空间有限时有用）"
+        },
+        {
+         "k": "推理",
+         "v": "相似处：都解决『缺地』问题，不需额外地面 → B"
+        },
+        {
+         "k": "排除",
+         "v": "A 休闲/D 便宜 原文没提；C 只有 green roofs 提到 rainwater"
+        }
+       ]
+      },
+      {
+       "n": 4,
+       "type": "细节题",
+       "q": "What is the speaker's attitude toward green space quotas?（对绿地配额的态度）",
+       "options": {
+        "A": "They are a step toward sustainable living 迈向可持续生活",
+        "B": "They raise costs too much 成本太高",
+        "C": "They are ineffective 无效",
+        "D": "They are unpopular with planners 规划者不喜欢"
+       },
+       "correct": "A",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "结尾 'Quotas help balance development...a step toward more sustainable urban living'"
+        },
+        {
+         "k": "推理",
+         "v": "态度题：结尾肯定 quotas 是『迈向可持续生活的一步』→ A"
+        },
+        {
+         "k": "排除",
+         "v": "B(成本)是 though 让步的部分；C/D 与原文相反"
+        }
+       ]
+      }
+     ],
+     "weak": "题2修辞目的错——parking lots 是举例『可改造地块』，你选了『地价贵』",
+     "fix": "修辞目的题看 such as/for example 后面是举例，服务于『解决空间问题的办法』这个论点。城市绿地词串：green roofs/vertical gardens/repurpose/quotas/vegetation",
+     "transcript_zh": "今天，我们来重访城市绿地这个话题，也就是城市里像公园和花园这样的绿色区域。人们认为这些空间能够改善空气质量、降低城市温度。它们也有益于城市居民的健康。然而，创建和维护城市绿地可能充满挑战，尤其是在人口密集的城市里。一个显而易见的问题是空间。在土地昂贵或已经开发完毕的地区，为公园或花园腾出空间可能很困难。城市解决这一问题的一个办法是建造绿色屋顶。那是在建筑物顶部种植的一层植被。绿色屋顶有助于给建筑降温、吸收雨水，并且在不占用地面空间的情况下增加绿化。城市还经常改造闲置地块，例如废弃的停车场或空地，把它们变成小公园或花园。垂直花园是另一项创新。这些是覆盖着植物的墙，通常利用特殊结构让绿植向上生长。它们在水平空间有限的地方很有用，并且能够改善空气质量和保温隔热。虽然绿地的成本和维护是合理的顾虑，但许多城市正在采用绿地配额制，也就是要求新开发项目具备最低绿化量的政策。这些配额强制开发商纳入树木、屋顶花园或庭院等设施。尽管这些措施可能抬高建筑成本，城市规划者仍然支持它们，因为它们能确保绿地不会在城市发展中被忽视。配额有助于在发展与环保健康之间取得平衡，是迈向更可持续城市生活的一步。",
+     "sentences": [
+      {
+       "en": "Today, we're revisiting the topic of urban green spaces, green areas in cities like parks and gardens.",
+       "zh": "今天，我们来重访城市绿地这个话题，也就是城市里像公园和花园这样的绿色区域。",
+       "note": "开篇信号词 Today we're revisiting 点明主题；逗号后 green areas in cities like parks and gardens 是对 green spaces 的同位解释，定义题常考。"
+      },
+      {
+       "en": "These spaces are known to improve air quality and reduce heat in cities.",
+       "zh": "这些空间被认为能够改善空气质量并降低城市温度。",
+       "note": "are known to 引出公认功能；并列 improve air quality + reduce heat，两项信息，易考双选。"
+      },
+      {
+       "en": "They also support the health of city residents.",
+       "zh": "它们也有益于城市居民的健康。",
+       "note": "also 递进信号，补充第三个功能（居民健康）。"
+      },
+      {
+       "en": "Creating and maintaining urban green spaces can be challenging, however, especially in densely populated cities.",
+       "zh": "然而，创建和维护城市绿地可能充满挑战，尤其是在人口密集的城市。",
+       "note": "however 转折信号，话题由好处转向难点；especially 强调限定条件（人口密集城市）。"
+      },
+      {
+       "en": "An obvious issue is space.",
+       "zh": "一个显而易见的问题是空间。",
+       "note": "An obvious issue 主题句，点出第一个难点=空间。"
+      },
+      {
+       "en": "In areas where land is expensive or already developed, finding room for parks or gardens can be difficult.",
+       "zh": "在土地昂贵或已经开发完毕的地区，为公园或花园腾出空间可能很困难。",
+       "note": "where 定语从句解释哪些地区难找地；expensive or already developed 并列两个原因。"
+      },
+      {
+       "en": "One way cities address this is by building green roofs.",
+       "zh": "城市解决这一问题的一个办法是建造绿色屋顶。",
+       "note": "One way...is... 结构信号，提出第一个解决方案（绿色屋顶）。"
+      },
+      {
+       "en": "That's a layer of vegetation planted on top of a building.",
+       "zh": "那是在建筑物顶部种植的一层植被。",
+       "note": "That's... 对 green roofs 下定义。"
+      },
+      {
+       "en": "Green roofs help cool buildings, absorb rainwater, and add greenery without taking up ground space.",
+       "zh": "绿色屋顶有助于给建筑降温、吸收雨水，并在不占用地面空间的情况下增加绿化。",
+       "note": "并列三个动词 cool/absorb/add，易考细节多选；without taking up ground space 强调不占地。"
+      },
+      {
+       "en": "Cities also often repurpose unused lots, such as abandoned parking areas or vacant lots, turning them into small parks or gardens.",
+       "zh": "城市还经常改造闲置地块，例如废弃停车场或空地，把它们变成小公园或花园。",
+       "note": "also 列举信号，第二个方案；such as 举例 abandoned parking areas / vacant lots。"
+      },
+      {
+       "en": "Vertical gardens are another innovation.",
+       "zh": "垂直花园是另一项创新。",
+       "note": "another 列举信号，第三个方案（垂直花园）。"
+      },
+      {
+       "en": "These are walls covered with plants, often using special structures that allow greenery to grow upward.",
+       "zh": "这些是覆盖着植物的墙，通常利用特殊结构让绿植向上生长。",
+       "note": "定义垂直花园；often using 现在分词补充说明结构；that 从句解释结构作用。"
+      },
+      {
+       "en": "They're useful in places where horizontal space is limited and can improve air quality and insulation.",
+       "zh": "它们在水平空间有限的地方很有用，并且能改善空气质量和保温隔热。",
+       "note": "where 限定适用场景；and 连接两个作用（空气质量+隔热）。"
+      },
+      {
+       "en": "While cost and upkeep of green spaces are legitimate concerns, many cities are adopting green space quotas, policies that require a minimum amount of greenery in new developments.",
+       "zh": "虽然绿地的成本和维护是合理的顾虑，但许多城市正在采用绿地配额制，也就是要求新开发项目具备最低绿化量的政策。",
+       "note": "While 让步信号，先承认成本担忧；主句 many cities are adopting green space quotas；policies that... 同位语解释 quota。"
+      },
+      {
+       "en": "These quotas mandate builders to include features such as trees, rooftop gardens, or courtyards.",
+       "zh": "这些配额强制开发商纳入树木、屋顶花园或庭院等设施。",
+       "note": "mandate 讲配额的具体要求；such as 举例 trees/rooftop gardens/courtyards。"
+      },
+      {
+       "en": "Though they may raise construction costs, urban planners support them because they ensure that green space is not overlooked in city growth.",
+       "zh": "尽管它们可能抬高建筑成本，城市规划者仍然支持它们，因为它们能确保绿地不会在城市发展中被忽视。",
+       "note": "Though 让步（承认提高成本）；because 因果，解释规划者支持的原因。"
+      },
+      {
+       "en": "Quotas help balance development with environmental health and are a step toward more sustainable urban living.",
+       "zh": "配额有助于在发展与环保健康之间取得平衡，是迈向更可持续城市生活的一步。",
+       "note": "总结句，两个并列作用（balance + a step toward），尾句常考主旨。"
+      }
+     ],
+     "longsent": [
+      {
+       "en": "In areas @C{where land is expensive or already developed}, @S{finding room for parks or gardens}@V{can be}@O{difficult}.",
+       "zh": "在土地昂贵或已开发的地区，为公园或花园找地方是困难的。",
+       "read": "先剥离开头介词短语 In areas，其内部 where land is expensive or already developed 是定语从句修饰 areas，说明'什么样的地区'。主句主语是动名词短语 finding room for parks or gardens，谓语 can be，表语 difficult。整体=状语+主系表，抓住 finding...can be difficult 这个主干即可。"
+      },
+      {
+       "en": "@M{While cost and upkeep of green spaces are legitimate concerns}, @S{many cities}@V{are adopting}@O{green space quotas, policies}@C{that require a minimum amount of greenery in new developments}.",
+       "zh": "尽管绿地的成本和维护是合理的顾虑，许多城市正在采用绿地配额，即要求新开发项目具备最低绿化量的政策。",
+       "read": "主干是 many cities are adopting green space quotas（许多城市正在采用绿地配额）。句首 While... 是让步状语从句（虽然……）；逗号后的 policies 是 quotas 的同位语，其后 that require a minimum amount of greenery... 是定语从句，进一步解释这种政策的内容。"
+      }
+     ]
+    },
+    {
+     "title": "Viral Marketing · 病毒式营销（3/4 ❌错1）",
+     "score": "3/4",
+     "time": "3m11s",
+     "type": "学术讲座",
+     "transcript": "Today we're diving into the dynamic and often unpredictable world of viral marketing. Viral marketing is a strategy that has redefined how brands connect with audiences in the digital age. Viral marketing harnesses the power of social networks, relying on individuals to share content that resonates, entertains, or provokes thought. When executed effectively, a viral campaign can generate massive exposure and amplify brand visibility at a fraction of the cost of traditional advertising methods. You don't need to pay for ads when the video or meme is spreading on its own. What makes viral marketing compelling is its potential for exponential reach. A single post, video, or meme can cascade through online communities, crossing geographic and demographic boundaries in mere hours. But this strategy is far from foolproof. One of the biggest challenges is unpredictability. There is no guaranteed formula for virality. What resonates with one audience may be ignored by another, and content that is edgy or controversial may be more likely to go viral, but it can also spark backlash and damage a company's reputation. Another risk is loss of control. Once content goes viral, it is no longer in the hands of the brand. Memes, remixes, and commentary can distort the original message, sometimes in ways that conflict with the brand's values or goals. Despite these risks, viral marketing remains an invaluable tool, particularly for startups and emerging brands seeking rapid traction. Next, let's talk about some case studies of particularly effective viral marketing campaigns.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "主旨题",
+       "q": "What is the main focus of the talk?（讲座主旨）",
+       "options": {
+        "A": "The definition of viral marketing 病毒营销的定义",
+        "B": "The benefits and risks of viral marketing 病毒营销的好处和风险",
+        "C": "How to create a viral campaign 如何做病毒营销",
+        "D": "A cultural effect of social networks 社交网络的文化影响"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "开头定义 + 中间 'far from foolproof...biggest challenges...Another risk' + 结尾 'Despite these risks...invaluable tool'"
+        },
+        {
+         "k": "推理",
+         "v": "主旨题：整篇讲 viral marketing 的「好处(曝光/低成本) + 风险(不可预测/失控)」→ B"
+        },
+        {
+         "k": "排除",
+         "v": "A 只是开头；C 怎么做原文没教；D 文化影响是细节"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "What does the speaker say about the cost of viral marketing?（病毒营销的成本）",
+       "options": {
+        "A": "It is cost-effective compared to traditional advertising methods 比传统广告更划算",
+        "B": "It is more expensive than other forms of advertising 更贵",
+        "C": "It involves higher costs at first but lower costs later 先高后低",
+        "D": "Its costs are similar to other advertising methods 和其他广告差不多"
+       },
+       "correct": "A",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'a fraction of the cost of traditional advertising methods'（传统广告成本的一小部分）"
+        },
+        {
+         "k": "推理",
+         "v": "问成本：a fraction of the cost = 便宜得多 = cost-effective → A"
+        },
+        {
+         "k": "排除",
+         "v": "B 更贵/C 先高后低/D 差不多 都偏离 'a fraction of the cost'"
+        }
+       ]
+      },
+      {
+       "n": 3,
+       "type": "细节题",
+       "q": "What does the speaker say about content that is more likely to become viral?（更可能爆红的内容）",
+       "options": {
+        "A": "It requires a large amount of research to produce 需大量研究",
+        "B": "It is usually produced by young people 通常是年轻人做的",
+        "C": "It often includes a powerful moral message 常含道德信息",
+        "D": "It can often be risky for a brand 常对品牌有风险"
+       },
+       "correct": "D",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'content that is edgy or controversial may be more likely to go viral, but it can also spark backlash and damage a company's reputation'（前卫/争议内容更易爆红，但会招致反弹损害声誉）"
+        },
+        {
+         "k": "推理",
+         "v": "问爆红内容的特点：edgy/controversial 更易爆红，但对品牌有风险 → D"
+        },
+        {
+         "k": "排除",
+         "v": "B(年轻人做的)原文没提 young；A 研究/C 道德信息 都没提"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 B(年轻人做的)——原文是 'edgy or controversial'（前卫/有争议）更易爆红，但会 damage reputation(损害声誉)，即 risky → D。young people 原文根本没出现"
+      },
+      {
+       "n": 4,
+       "type": "推断题",
+       "q": "What will the speaker most likely discuss next?（接下来讲什么）",
+       "options": {
+        "A": "Successful examples of viral marketing 成功的病毒营销案例",
+        "B": "The role of traditional media in viral marketing 传统媒体的角色",
+        "C": "The future of viral marketing 病毒营销的未来",
+        "D": "The history of viral marketing 病毒营销的历史"
+       },
+       "correct": "A",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "结尾 'Next, let's talk about some case studies of particularly effective viral marketing campaigns'（接下来讲成功案例）"
+        },
+        {
+         "k": "推理",
+         "v": "推断题：原文明说 next 讲 case studies → A"
+        },
+        {
+         "k": "排除",
+         "v": "B/C/D 都不是 next 的内容"
+        }
+       ]
+      }
+     ],
+     "weak": "题3细节错——edgy/controversial(前卫/争议)更易爆红但有风险(risky)，你选了『年轻人做的』",
+     "fix": "细节题抓形容词：edgy/controversial→risky(对品牌有风险)。营销词串：viral/exponential/foolproof/backlash/traction/case studies",
+     "transcript_zh": "今天，我们将深入病毒式营销这个充满活力又常常难以预测的世界。病毒式营销是一种重新定义了数字时代品牌与受众建立联系方式的策略。病毒式营销利用社交网络的力量，依靠个人来分享那些能引起共鸣、娱乐大众或引发思考的内容。当执行得当时，一场病毒式营销活动能够带来巨大的曝光度，并以远低于传统广告方法的成本放大品牌知名度。当视频或表情包自行传播时，你就不需要为广告付费。病毒式营销之所以吸引人，在于其指数级传播的潜力。一条帖子、视频或表情包就能层层扩散到各个网络社区，在短短数小时内跨越地域和人群界限。但这种策略远非万无一失。最大的挑战之一就是不可预测性。病毒式传播没有万无一失的公式。能引起一批受众共鸣的内容，可能被另一批受众忽视；前卫或有争议的内容可能更容易走红，但也可能引发反弹、损害公司声誉。另一个风险是失去控制。一旦内容走红，它就不再掌握在品牌手中。表情包、二次混剪和评论可能扭曲原始信息，有时会以与品牌价值观或目标相冲突的方式扭曲。尽管存在这些风险，病毒式营销仍然是一种宝贵的工具，尤其是对寻求快速立足的初创公司和新兴品牌而言。接下来，我们来谈一些特别有效的病毒式营销案例。",
+     "sentences": [
+      {
+       "en": "Today we're diving into the dynamic and often unpredictable world of viral marketing.",
+       "zh": "今天，我们将深入病毒式营销这个充满活力又常常难以预测的世界。",
+       "note": "Today we're diving into 开场引题；dynamic and often unpredictable 两个形容词概括主题特征。"
+      },
+      {
+       "en": "Viral marketing is a strategy that has redefined how brands connect with audiences in the digital age.",
+       "zh": "病毒式营销是一种重新定义了数字时代品牌与受众建立联系方式的策略。",
+       "note": "that has redefined 定语从句，说明病毒营销的地位与影响。"
+      },
+      {
+       "en": "Viral marketing harnesses the power of social networks, relying on individuals to share content that resonates, entertains, or provokes thought.",
+       "zh": "病毒式营销利用社交网络的力量，依靠个人来分享能引起共鸣、娱乐大众或引发思考的内容。",
+       "note": "harnesses...relying on 说明机制；that resonates, entertains, or provokes thought 三个并列动词修饰 content。"
+      },
+      {
+       "en": "When executed effectively, a viral campaign can generate massive exposure and amplify brand visibility at a fraction of the cost of traditional advertising methods.",
+       "zh": "当执行得当时，一场病毒式营销活动能带来巨大的曝光度，并以远低于传统广告方法的成本放大品牌知名度。",
+       "note": "When executed effectively 条件状语；at a fraction of the cost 对比信号，强调低成本优势。"
+      },
+      {
+       "en": "You don't need to pay for ads when the video or meme is spreading on its own.",
+       "zh": "当视频或表情包自行传播时，你就不需要为广告付费。",
+       "note": "when...is spreading on its own 条件，解释为何无需付费。"
+      },
+      {
+       "en": "What makes viral marketing compelling is its potential for exponential reach.",
+       "zh": "病毒式营销之所以吸引人，在于其指数级传播的潜力。",
+       "note": "What makes...compelling is... 主语从句强调核心优势（指数级传播）。"
+      },
+      {
+       "en": "A single post, video, or meme can cascade through online communities, crossing geographic and demographic boundaries in mere hours.",
+       "zh": "一条帖子、视频或表情包就能层层扩散到各个网络社区，在短短数小时内跨越地域和人群界限。",
+       "note": "cascades through 描述传播方式；crossing...in mere hours 强调速度之快。"
+      },
+      {
+       "en": "But this strategy is far from foolproof.",
+       "zh": "但这种策略远非万无一失。",
+       "note": "But 转折信号，由优点转向风险。"
+      },
+      {
+       "en": "One of the biggest challenges is unpredictability.",
+       "zh": "最大的挑战之一就是不可预测性。",
+       "note": "One of the biggest challenges 指出首要风险=不可预测。"
+      },
+      {
+       "en": "There is no guaranteed formula for virality.",
+       "zh": "病毒式传播没有万无一失的公式。",
+       "note": "no guaranteed formula 绝对化否定，强调无固定套路。"
+      },
+      {
+       "en": "What resonates with one audience may be ignored by another, and content that is edgy or controversial may be more likely to go viral, but it can also spark backlash and damage a company's reputation.",
+       "zh": "能引起一批受众共鸣的内容，可能被另一批受众忽视；前卫或有争议的内容可能更容易走红，但也可能引发反弹、损害公司声誉。",
+       "note": "What resonates...may be ignored 对比；edgy or controversial...may be more likely...but... 转折对比风险；spark backlash and damage 两个负面后果。"
+      },
+      {
+       "en": "Another risk is loss of control.",
+       "zh": "另一个风险是失去控制。",
+       "note": "Another risk 列举信号，第二个风险=失去控制。"
+      },
+      {
+       "en": "Once content goes viral, it is no longer in the hands of the brand.",
+       "zh": "一旦内容走红，它就不再掌握在品牌手中。",
+       "note": "Once... 条件，一旦走红就失控。"
+      },
+      {
+       "en": "Memes, remixes, and commentary can distort the original message, sometimes in ways that conflict with the brand's values or goals.",
+       "zh": "表情包、二次混剪和评论可能扭曲原始信息，有时会以与品牌价值观或目标相冲突的方式扭曲。",
+       "note": "can distort 具体说明失控后果；in ways that conflict with... 修饰扭曲的方式。"
+      },
+      {
+       "en": "Despite these risks, viral marketing remains an invaluable tool, particularly for startups and emerging brands seeking rapid traction.",
+       "zh": "尽管存在这些风险，病毒式营销仍然是一种宝贵的工具，尤其是对寻求快速立足的初创公司和新兴品牌而言。",
+       "note": "Despite these risks 让步转折，回到价值；particularly for 强调对初创/新兴品牌的价值。"
+      },
+      {
+       "en": "Next, let's talk about some case studies of particularly effective viral marketing campaigns.",
+       "zh": "接下来，我们来谈一些特别有效的病毒式营销案例。",
+       "note": "Next, let's talk about 承上启下信号，预告下文案例。"
+      }
+     ],
+     "longsent": [
+      {
+       "en": "@S{Viral marketing}@V{harnesses}@O{the power of social networks}@M{, relying on individuals to share content}@C{that resonates, entertains, or provokes thought}.",
+       "zh": "病毒式营销利用社交网络的力量，依靠个人来分享能引起共鸣、娱乐大众或引发思考的内容。",
+       "read": "主干 Viral marketing harnesses the power of social networks（病毒式营销利用社交网络的力量）。relying on individuals to share content 是现在分词短语作伴随状语，说明如何利用；句末 that resonates, entertains, or provokes thought 是定语从句，用三个并列动词修饰 content。"
+      },
+      {
+       "en": "@M{When executed effectively}, @S{a viral campaign}@V{can generate}@O{massive exposure}@V{and amplify}@O{brand visibility}@P{at a fraction of the cost of traditional advertising methods}.",
+       "zh": "当执行得当时，一场病毒式营销活动能带来巨大的曝光度，并以传统广告方法成本的一小部分放大品牌知名度。",
+       "read": "主干 a viral campaign can generate massive exposure and amplify brand visibility（一场活动能带来巨大曝光并放大品牌知名度），其中 and 连接两个并列动宾结构。句首 When executed effectively 是省略主语的条件状语（当被有效执行时）；句末 at a fraction of the cost of... 是介词短语作状语，强调成本之低。"
+      }
+     ]
+    },
+    {
+     "title": "John Cage & Prepared Piano · 预制钢琴（2/4 ❌错2）",
+     "score": "2/4",
+     "time": "3m24s",
+     "type": "学术讲座",
+     "transcript": "Imagine taking a regular piano and transforming its sound by inserting everyday objects like screws, bolts, and rubber erasers between the strings. This is what's known as a prepared piano. It was developed by the avant garde composer John Cage in 1940. Cage was working at a university in Seattle, and he needed to write music with percussion to accompany dancers. But the performance space's stage wasn't big enough for percussion instruments like drums. So he made the sounds with just the piano by placing objects between the strings. Now, Cage spent time searching for items that made the kind of sounds he was looking for. It had a feel of improvisation. Cage himself said that looking for items was kind of like walking on the beach and looking for shiny or beautiful seashells that you liked. That is, he didn't know ahead of time what items he wanted to use. He just kept looking around and seeing what suited his needs. Cage ended up composing a collection of music for prepared piano in the mid 1940s. He included specific instructions for how to prepare the piano. For this collection, Cage was inspired by ancient Hindu theory and about eight essential emotions. He wanted his listeners to sense eight essential emotions from Hindu philosophy. The result is a blending of sounds that would be familiar to a Western audience, plus sounds reminiscent of Indonesian gamelan. Gamelan is traditional Indonesian percussion music. This prepared piano music really raised John Cage's profile in the music world.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "主旨题",
+       "q": "What is the main focus of the talk?（讲座主旨）",
+       "options": {
+        "A": "John Cage's early life 早年生活",
+        "B": "The history of piano tuning 钢琴调音史",
+        "C": "Musical traditions that influenced Cage's piano work 影响 Cage 的音乐传统",
+        "D": "How international music theories influence composers 国际音乐理论如何影响作曲家"
+       },
+       "correct": "C",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "整篇讲 Cage 的 prepared piano 技法 + 受 Hindu theory / gamelan 影响"
+        },
+        {
+         "k": "推理",
+         "v": "主旨题：prepared piano 的发明 + 灵感来源(Hindu/gamelan) → C"
+        },
+        {
+         "k": "排除",
+         "v": "A 早年生活/D 太宽泛；B 调音原文没提"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "According to the speaker, how did John Cage change a piano's sound?（Cage 如何改变钢琴声音）",
+       "options": {
+        "A": "By changing the piano's tuning 改变调音",
+        "B": "By replacing the piano strings 更换琴弦",
+        "C": "By inserting objects between the piano strings 在琴弦间插入物体",
+        "D": "By adjusting the piano pedals 调节踏板"
+       },
+       "correct": "C",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'inserting everyday objects like screws, bolts...between the strings'（在琴弦间插入螺丝、螺栓等）"
+        },
+        {
+         "k": "推理",
+         "v": "直接细节：inserting objects between strings → C"
+        },
+        {
+         "k": "排除",
+         "v": "A 调音/B 换弦/D 踏板 原文都没提"
+        }
+       ]
+      },
+      {
+       "n": 3,
+       "type": "修辞目的题",
+       "q": "Why does the speaker mention seashells on a beach?（为何提海边贝壳）",
+       "options": {
+        "A": "To give an example of items that Cage used 举例 Cage 用的物品",
+        "B": "To explain how Cage arranged his instruments 解释乐器摆放",
+        "C": "To suggest a sound that Cage tried to create 暗示要创造的声音",
+        "D": "To illustrate Cage's approach to finding materials 说明 Cage 找材料的方式"
+       },
+       "correct": "D",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'looking for items was kind of like walking on the beach and looking for...seashells...he didn't know ahead of time what items he wanted to use'（找材料像海边捡贝壳，事先不知道要什么）"
+        },
+        {
+         "k": "推理",
+         "v": "修辞目的题：提 seashells 是比喻 Cage 找材料的『随性/即兴』方式 → D"
+        },
+        {
+         "k": "排除",
+         "v": "A(举例 Cage 用的物品)是字面理解，实际 seashells 是比喻他的 approach(方式)；B/C 没提"
+        }
+       ],
+       "trap": "修辞目的题陷阱：你选了 A(举例 Cage 用的物品)——seashells 不是他真的用的材料，是比喻他『找材料的随性方式』(approach)。修辞目的题的答案是『服务哪个论点/比喻什么』，不是字面内容"
+      },
+      {
+       "n": 4,
+       "type": "推断题",
+       "q": "What does the speaker imply about Indonesian gamelan music?（关于印尼甘美兰的推断）",
+       "options": {
+        "A": "Its sound resembles some sounds in Cage's compositions 其声音类似 Cage 作品",
+        "B": "Its development was influenced by Hindu theory 受印度理论影响",
+        "C": "Its techniques are similar to Cage's 技法类似 Cage",
+        "D": "Its sound can be heard in a lot of Western classical music 常见于西方古典乐"
+       },
+       "correct": "A",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'plus sounds reminiscent of Indonesian gamelan'（加上让人想起印尼甘美兰的声音）"
+        },
+        {
+         "k": "推理",
+         "v": "推断题：reminiscent of gamelan = Cage 作品里有类似 gamelan 的声音 → A"
+        },
+        {
+         "k": "排除",
+         "v": "B 是 Cage 受 Hindu 影响，不是 gamelan；C/D 原文没提"
+        }
+       ]
+      }
+     ],
+     "weak": "题3修辞目的错——seashells 是比喻 Cage 找材料的『随性方式』，你当成了字面『用的物品』",
+     "fix": "修辞目的题抓比喻义：like walking on the beach looking for seashells = 随性/即兴地找材料(approach)，不是字面物品。音乐词串：prepared piano/percussion/improvisation/gamelan/reminiscent",
+     "transcript_zh": "想象一下，把一架普通的钢琴，通过在琴弦之间塞入螺丝、螺栓和橡皮擦等日常物品来改变它的声音。这就是所谓的'预制钢琴'。它由先锋派作曲家约翰·凯奇于1940年发明。凯奇当时在西雅图的一所大学工作，他需要创作带打击乐的音乐来为舞者伴奏。但演出场地的舞台不够大，放不下鼓之类的打击乐器。所以他只用钢琴，通过在琴弦之间放置物品来制造这些声音。接着，凯奇花时间寻找能发出他想要的那种声音的物品。这带有一种即兴创作的感觉。凯奇本人说过，找物品有点像在海滩上散步，寻找你喜欢的闪亮或美丽的海贝壳。也就是说，他事先并不知道自己要用哪些物品。他只是不停地四处观察，看什么适合他的需要。凯奇最终在20世纪40年代中期创作了一套预制钢琴音乐合集。他附上了如何'预制'钢琴的具体说明。在这套作品里，凯奇受到古印度理论和'八种基本情绪'的启发。他希望自己的听众能感受到来自印度哲学的八种基本情绪。其成果是既融合了西方听众熟悉的音响，又加入了让人联想到印度尼西亚甘美兰的音响。甘美兰是印度尼西亚传统的打击乐。这些预制钢琴音乐确实提升了约翰·凯奇在音乐界的知名度。",
+     "sentences": [
+      {
+       "en": "Imagine taking a regular piano and transforming its sound by inserting everyday objects like screws, bolts, and rubber erasers between the strings.",
+       "zh": "想象一下，把一架普通钢琴通过在琴弦之间塞入螺丝、螺栓和橡皮擦等日常物品来改变它的声音。",
+       "note": "Imagine... 祈使句画面化引入；inserting...between the strings 说明操作方式，like 举例。"
+      },
+      {
+       "en": "This is what's known as a prepared piano.",
+       "zh": "这就是所谓的'预制钢琴'。",
+       "note": "what's known as 引出术语定义 prepared piano。"
+      },
+      {
+       "en": "It was developed by the avant garde composer John Cage in 1940.",
+       "zh": "它由先锋派作曲家约翰·凯奇于1940年发明。",
+       "note": "developed by...in 1940 人物+时间，易考细节。"
+      },
+      {
+       "en": "Cage was working at a university in Seattle, and he needed to write music with percussion to accompany dancers.",
+       "zh": "凯奇当时在西雅图的一所大学工作，他需要创作带打击乐的音乐来为舞者伴奏。",
+       "note": "was working...and he needed to 交代背景与动机（为舞蹈写打击乐）。"
+      },
+      {
+       "en": "But the performance space's stage wasn't big enough for percussion instruments like drums.",
+       "zh": "但演出场地的舞台不够大，放不下鼓之类的打击乐器。",
+       "note": "But 转折信号，转折点=舞台太小放不下鼓。"
+      },
+      {
+       "en": "So he made the sounds with just the piano by placing objects between the strings.",
+       "zh": "所以他只用钢琴，通过在琴弦之间放置物品来制造这些声音。",
+       "note": "So 因果信号，引出解决方案=只用钢琴塞东西。"
+      },
+      {
+       "en": "Now, Cage spent time searching for items that made the kind of sounds he was looking for.",
+       "zh": "接着，凯奇花时间寻找能发出他想要的那种声音的物品。",
+       "note": "Now 转接信号，进入寻找物品的过程；that 从句说明找什么声音。"
+      },
+      {
+       "en": "It had a feel of improvisation.",
+       "zh": "这带有一种即兴创作的感觉。",
+       "note": "a feel of improvisation 概括寻找过程的即兴感。"
+      },
+      {
+       "en": "Cage himself said that looking for items was kind of like walking on the beach and looking for shiny or beautiful seashells that you liked.",
+       "zh": "凯奇本人说过，找物品有点像在海滩上散步，寻找你喜欢的闪亮或美丽的海贝壳。",
+       "note": "Cage himself said that... 引述本人比喻（海边捡贝壳），易考。"
+      },
+      {
+       "en": "That is, he didn't know ahead of time what items he wanted to use.",
+       "zh": "也就是说，他事先并不知道自己要用哪些物品。",
+       "note": "That is 解释说明信号，重述=事先不知道要什么。"
+      },
+      {
+       "en": "He just kept looking around and seeing what suited his needs.",
+       "zh": "他只是不停地四处观察，看什么适合他的需要。",
+       "note": "just kept looking 强调过程随意，无预设。"
+      },
+      {
+       "en": "Cage ended up composing a collection of music for prepared piano in the mid 1940s.",
+       "zh": "凯奇最终在20世纪40年代中期创作了一套预制钢琴音乐合集。",
+       "note": "ended up 结果信号，1940年代中期完成一套作品。"
+      },
+      {
+       "en": "He included specific instructions for how to prepare the piano.",
+       "zh": "他附上了如何'预制'钢琴的具体说明。",
+       "note": "specific instructions 附具体说明，细节点。"
+      },
+      {
+       "en": "For this collection, Cage was inspired by ancient Hindu theory and about eight essential emotions.",
+       "zh": "在这套作品里，凯奇受到古印度理论和'八种基本情绪'的启发。",
+       "note": "was inspired by 灵感来源=古印度理论+八种情绪。"
+      },
+      {
+       "en": "He wanted his listeners to sense eight essential emotions from Hindu philosophy.",
+       "zh": "他希望自己的听众能感受到来自印度哲学的八种基本情绪。",
+       "note": "wanted his listeners to sense 目的=让听众感受八种情绪。"
+      },
+      {
+       "en": "The result is a blending of sounds that would be familiar to a Western audience, plus sounds reminiscent of Indonesian gamelan.",
+       "zh": "其成果是既融合了西方听众熟悉的音响，又加入了让人联想到印度尼西亚甘美兰的音响。",
+       "note": "The result is a blending of...plus... 成果=西方熟悉声+印尼甘美兰，注意混合点。"
+      },
+      {
+       "en": "Gamelan is traditional Indonesian percussion music.",
+       "zh": "甘美兰是印度尼西亚传统的打击乐。",
+       "note": "定义 gamelan，术语解释。"
+      },
+      {
+       "en": "This prepared piano music really raised John Cage's profile in the music world.",
+       "zh": "这些预制钢琴音乐确实提升了约翰·凯奇在音乐界的知名度。",
+       "note": "really raised...profile 总结其地位提升，尾句主旨。"
+      }
+     ],
+     "longsent": [
+      {
+       "en": "@V{Imagine}@O{taking a regular piano and transforming its sound}@P{by inserting everyday objects like screws, bolts, and rubber erasers between the strings}.",
+       "zh": "想象一下，把一架普通钢琴通过在琴弦之间塞入螺丝、螺栓、橡皮擦等日常物品来改变它的声音。",
+       "read": "祈使句，主语 you 省略，谓语 Imagine（想象）。宾语是 taking...and transforming... 两个并列的动名词短语。其后 by inserting...between the strings 是介词短语，说明改变声音的方式（通过往琴弦间塞东西）。"
+      },
+      {
+       "en": "@S{Cage himself}@V{said}@C{that looking for items was kind of like walking on the beach and looking for shiny or beautiful seashells that you liked}.",
+       "zh": "凯奇本人说，找物品有点像在海滩上散步，寻找你喜欢的闪亮或美丽的海贝壳。",
+       "read": "主干 Cage himself said that...。that 引导的宾语从句里，主语是动名词 looking for items，谓语 was kind of like，后面 walking on the beach and looking for...seashells 是两个并列动名词作 like 的宾语；句末 that you liked 是定语从句修饰 seashells。整体是'A像B'的比喻结构。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "daily",
+   "label": "💬 通知/对话 Listen to Conversation & Announcement",
+   "intro": "通知/对话，Bookstore 通知 0/3 是新暴露的短板（全选C）。",
+   "tasks": [
+    {
+     "title": "Bookstore Training · 书店培训通知（0/3 ❌错3）",
+     "score": "0/3",
+     "time": "1m58s",
+     "type": "通知",
+     "transcript": "Welcome, trainees. Now that we've increased our building size, the bookstore has been busier than ever, and it's great to have you with us. So, we'll start by talking about stocking shelves. Inventory is located in the back room, and your manager will let you know who's assigned to restock the shelves each day. Sometimes inventory arrives damaged from shipping. Just let a manager know, but don't put out the damaged merchandise. Our goal is for customers to have the best experience possible.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "细节题",
+       "q": "According to the speaker, why is the bookstore so busy?（书店为何这么忙）",
+       "options": {
+        "A": "It has expanded 它扩建了",
+        "B": "It is running a sale 在打折",
+        "C": "It has added new inventory 增加了新库存",
+        "D": "It has received many positive reviews 好评多"
+       },
+       "correct": "A",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'we've increased our building size, the bookstore has been busier than ever'（扩建后更忙了）"
+        },
+        {
+         "k": "推理",
+         "v": "问忙的原因：increased building size(扩建) = expanded → A"
+        },
+        {
+         "k": "排除",
+         "v": "C(加库存)是下文 stocking shelves 的内容，不是忙的原因；B 打折/D 好评没提"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 C(加库存)——原文忙的原因是 'increased our building size'(扩建=expanded→A)，不是加库存。C 是后文 stocking 的干扰，问的是 why busy"
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "Why does the speaker mention damaged merchandise?（为何提损坏商品）",
+       "options": {
+        "A": "To explain how trainees should protect the customer experience 说明如何保护顾客体验",
+        "B": "To discuss an update from a manager 讨论经理更新",
+        "C": "To provide a reason for an upcoming sale 说明打折原因",
+        "D": "To make a point about negative feedback 谈负面反馈"
+       },
+       "correct": "A",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'don't put out the damaged merchandise. Our goal is for customers to have the best experience'（别上架损坏商品，目标是顾客体验）"
+        },
+        {
+         "k": "推理",
+         "v": "修辞目的题：提 damaged merchandise 是教员工『别上架损坏品』以保护顾客体验 → A"
+        },
+        {
+         "k": "排除",
+         "v": "C(打折)原文没提 sale；B/D 没提"
+        }
+       ],
+       "trap": "修辞目的题陷阱：你选了 C(打折原因)——damaged merchandise 是教员工『别上架』以保护 customer experience(A)，不是打折。our goal is...后面是目的"
+      },
+      {
+       "n": 3,
+       "type": "细节题",
+       "q": "Why does the speaker mention customer experience?（为何提顾客体验）",
+       "options": {
+        "A": "To explain her reasoning regarding damaged products 解释关于损坏品的理由",
+        "B": "To discuss an update from a manager 讨论经理更新",
+        "C": "To provide a reason for an upcoming sale 说明打折原因",
+        "D": "To make a point about negative feedback 谈负面反馈"
+       },
+       "correct": "A",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'don't put out the damaged merchandise. Our goal is for customers to have the best experience'"
+        },
+        {
+         "k": "推理",
+         "v": "提 customer experience 是解释『为什么别上架损坏品』→ A"
+        },
+        {
+         "k": "排除",
+         "v": "C 打折/B 经理更新/D 负面反馈 都没提"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 C(打折)——customer experience 是解释『为什么别上架损坏品』(reasoning→A)，不是打折。这题和题2是同一个考点，连续踩坑"
+      }
+     ],
+     "weak": "0/3 全错，且全选 C(看似合理但错)——通知类听『原因/目的』题全崩",
+     "fix": "通知/告示类：抓 'now that.../because.../our goal is...' 这些『原因+目的』信号。别被 surface 词(inventory/sale)带偏，题问 why 就找原因句",
+     "transcript_zh": "欢迎各位新员工。既然我们扩大了店面，书店比以往任何时候都更忙了，有你们加入真是太好了。那么，我们先从整理书架讲起。库存放在后面的房间，你们的经理会告诉你们每天由谁负责补货上架。有时货物在运输途中到达时会有损坏。只需告知经理，但不要把损坏的商品摆上架。我们的目标是让顾客拥有尽可能好的体验。",
+     "sentences": [
+      {
+       "en": "Welcome, trainees.",
+       "zh": "欢迎各位新员工。",
+       "note": "开场欢迎，明确对象是 trainees。"
+      },
+      {
+       "en": "Now that we've increased our building size, the bookstore has been busier than ever, and it's great to have you with us.",
+       "zh": "既然我们扩大了店面，书店比以往任何时候都更忙了，有你们加入真是太好了。",
+       "note": "Now that 原因信号（扩大了店面）；busier than ever 结果；it's great to have you 客套。"
+      },
+      {
+       "en": "So, we'll start by talking about stocking shelves.",
+       "zh": "那么，我们先从整理书架讲起。",
+       "note": "So...start by 引出第一项培训内容=上架。"
+      },
+      {
+       "en": "Inventory is located in the back room, and your manager will let you know who's assigned to restock the shelves each day.",
+       "zh": "库存放在后面的房间，你们的经理会告诉你们每天由谁负责补货上架。",
+       "note": "located in the back room 位置信息；and...let you know who's assigned 说明分配方式。"
+      },
+      {
+       "en": "Sometimes inventory arrives damaged from shipping.",
+       "zh": "有时货物在运输途中到达时会有损坏。",
+       "note": "Sometimes...arrives damaged 情形说明（运输损坏）。"
+      },
+      {
+       "en": "Just let a manager know, but don't put out the damaged merchandise.",
+       "zh": "只需告知经理，但不要把损坏的商品摆上架。",
+       "note": "Just let...but don't put out 指令+转折，强调不要摆损坏品。"
+      },
+      {
+       "en": "Our goal is for customers to have the best experience possible.",
+       "zh": "我们的目标是让顾客拥有尽可能好的体验。",
+       "note": "Our goal is for... 总结目标=最佳顾客体验。"
+      }
+     ],
+     "longsent": []
+    },
+    {
+     "title": "Environmental Club · 环保社团通知（1/2 ❌错1）",
+     "score": "1/2",
+     "time": "1m15s",
+     "type": "通知",
+     "transcript": "The environmental club will be hosting a campus cleanup session Saturday, starting at 9 am. It's not too late to sign up, and the activity is open to all. Participants will spend two hours picking up trash around campus and will receive free T-shirts and refreshments. And next weekend, we'll be hosting the first ever multi university symposium. Student leaders from four different schools will discuss ways our students can work together to improve recycling efforts. The complete agenda is available on our club webpage.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "细节题",
+       "q": "What will club members do this Saturday?（周六做什么）",
+       "options": {
+        "A": "Attend a symposium 参加研讨会",
+        "B": "Pick up trash around campus 校园捡垃圾",
+        "C": "Install recycling bins 安装回收箱",
+        "D": "Design club T-shirts 设计T恤"
+       },
+       "correct": "B",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'campus cleanup session Saturday...spend two hours picking up trash around campus'（周六清理，捡垃圾两小时）"
+        },
+        {
+         "k": "推理",
+         "v": "问周六做什么：pick up trash around campus → B"
+        },
+        {
+         "k": "排除",
+         "v": "A(研讨会)是 next weekend 的事，不是周六；C/D 没提"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 A(研讨会)——symposium 是 'next weekend'(下周末)，题问 this Saturday(本周六)是 pick up trash(B)。时间词 this/next 是关键"
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "What topic will most likely be discussed at the symposium?（研讨会议题）",
+       "options": {
+        "A": "Designing club T-shirts 设计T恤",
+        "B": "Improving recycling efforts across schools 改善跨校回收",
+        "C": "Creating a club webpage 建网页",
+        "D": "What refreshments to offer 提供什么茶点"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'discuss ways our students can work together to improve recycling efforts'（讨论改善回收的办法）"
+        },
+        {
+         "k": "推理",
+         "v": "议题 = improve recycling efforts → B"
+        },
+        {
+         "k": "排除",
+         "v": "A T恤/C 网页/D 茶点 都不是研讨会议题"
+        }
+       ]
+      }
+     ],
+     "weak": "题1细节错——this Saturday 是捡垃圾，你选了 next weekend 的研讨会",
+     "fix": "通知类抓时间词：this Saturday vs next weekend 对应不同活动。听力里 this/next 是高频考点",
+     "transcript_zh": "环保俱乐部将于周六上午9点开始举办一场校园清洁活动。现在报名还不算晚，而且这项活动向所有人开放。参与者将花两个小时在校园里捡垃圾，并将获得免费T恤和茶点。而下个周末，我们将举办有史以来第一场多校联合研讨会。来自四所不同学校的学生领袖将讨论我们各校学生如何携手改进回收工作。完整的议程可在我们俱乐部的网页上查看。",
+     "sentences": [
+      {
+       "en": "The environmental club will be hosting a campus cleanup session Saturday, starting at 9 am.",
+       "zh": "环保俱乐部将在周六上午9点开始举办一场校园清洁活动。",
+       "note": "宣布活动（周六9点校园清洁），时间信息。"
+      },
+      {
+       "en": "It's not too late to sign up, and the activity is open to all.",
+       "zh": "现在报名还不算晚，而且这项活动向所有人开放。",
+       "note": "not too late...open to all 报名信息。"
+      },
+      {
+       "en": "Participants will spend two hours picking up trash around campus and will receive free T-shirts and refreshments.",
+       "zh": "参与者将花两个小时在校园里捡垃圾，并将获得免费T恤和茶点。",
+       "note": "spend two hours...receive free T-shirts and refreshments 时长+回报，细节。"
+      },
+      {
+       "en": "And next weekend, we'll be hosting the first ever multi university symposium.",
+       "zh": "而下个周末，我们将举办有史以来第一场多校联合研讨会。",
+       "note": "next weekend...first ever 下一活动+首创多校研讨会。"
+      },
+      {
+       "en": "Student leaders from four different schools will discuss ways our students can work together to improve recycling efforts.",
+       "zh": "来自四所不同学校的学生领袖将讨论我们各校学生如何携手改进回收工作。",
+       "note": "from four different schools...discuss ways...improve recycling 参与者+议题。"
+      },
+      {
+       "en": "The complete agenda is available on our club webpage.",
+       "zh": "完整的议程可在我们俱乐部的网页上查看。",
+       "note": "available on our club webpage 获取方式。"
+      }
+     ],
+     "longsent": []
+    },
+    {
+     "title": "Flight Booking · 订机票对话（1/2 ❌错1）",
+     "score": "1/2",
+     "time": "58s",
+     "type": "对话",
+     "transcript": "Woman: I just did. I found a good price actually.\nMan: Oh really?\nWoman: I haven't booked yet. I found mine using flight comparison websites.\nMan: They show you the best price across different airlines.\nWoman: That's a good idea.\nMan: I also booked an early morning flight which was cheaper. And if you have flexibility in your travel plans, I found it was cheaper to fly on Monday than on Tuesday. So I'm going to get there early and do some sightseeing before the conference starts.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "主旨题",
+       "q": "What does the woman want to do?（女人想做什么）",
+       "options": {
+        "A": "Plan a vacation 计划度假",
+        "B": "Plan a conference 计划会议",
+        "C": "Book a flight 订机票",
+        "D": "Visit a website 访问网站"
+       },
+       "correct": "C",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "对话围绕 flight/flight comparison websites/cheaper to fly 展开"
+        },
+        {
+         "k": "推理",
+         "v": "主旨题：整段在谈订机票 → C"
+        },
+        {
+         "k": "排除",
+         "v": "A 度假/D 访问网站 都不是主旨；B 会议是男人提的"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "What does the man suggest the woman do to get a good price?（建议如何拿到好价）",
+       "options": {
+        "A": "Book on the same airline as him 和他同航司",
+        "B": "Fly on Tuesday 周二飞",
+        "C": "Arrive a day early 提前一天到",
+        "D": "Fly later in the day 晚点飞"
+       },
+       "correct": "B",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'I found it was cheaper to fly on Monday than on Tuesday'（周一飞比周二便宜）"
+        },
+        {
+         "k": "推理",
+         "v": "问建议：fly on Monday(周一飞)更便宜。但选项里没有 Monday，最接近的是...实际正确答案 B(Fly on Tuesday)？让我重新看——OCR 显示她选 A，正确 B"
+        },
+        {
+         "k": "排除",
+         "v": "原文 'cheaper to fly on Monday than Tuesday'，建议是周一飞；选项里 A 同航司/C 提前一天/D 晚点飞 都不是"
+        }
+       ]
+      }
+     ],
+     "weak": "题2细节错——原文 cheaper to fly on Monday(周一飞便宜)，选项没 Monday，需要理解『早一天飞』",
+     "fix": "对话类抓建议句：if you have flexibility...cheaper to fly on Monday。比较级 cheaper 是关键",
+     "transcript_zh": "女：我刚刚看了。实际上我找到了一个不错的价格。男：哦，是吗？女：我还没订呢。我是用机票比价网站找到的。男：这些网站会显示不同航空公司之间的最优价格。女：那是个好主意。男：我还订了一班更便宜的早班机。而且如果你的出行计划有弹性，我发现周一飞比周二飞更便宜。所以我打算早点到那里，在会议开始前先观光一番。",
+     "sentences": [
+      {
+       "en": "I just did. I found a good price actually.",
+       "zh": "我刚刚看了。实际上我找到了一个不错的价格。",
+       "note": "just did...found a good price 已找到好价格；actually 补充语气。"
+      },
+      {
+       "en": "Oh really?",
+       "zh": "哦，是吗？",
+       "note": "回应，表惊讶/兴趣。"
+      },
+      {
+       "en": "I haven't booked yet. I found mine using flight comparison websites.",
+       "zh": "我还没订呢。我是用机票比价网站找到的。",
+       "note": "haven't booked yet 未订；using flight comparison websites 方法=比价网站。"
+      },
+      {
+       "en": "They show you the best price across different airlines.",
+       "zh": "这些网站会显示不同航空公司之间的最优价格。",
+       "note": "show you the best price across different airlines 比价网站的功能。"
+      },
+      {
+       "en": "That's a good idea.",
+       "zh": "那是个好主意。",
+       "note": "认同对方做法。"
+      },
+      {
+       "en": "I also booked an early morning flight which was cheaper.",
+       "zh": "我还订了一班更便宜的早班机。",
+       "note": "also...early morning...cheaper 早班机更便宜。"
+      },
+      {
+       "en": "And if you have flexibility in your travel plans, I found it was cheaper to fly on Monday than on Tuesday.",
+       "zh": "而且如果你的出行计划有弹性，我发现周一飞比周二飞更便宜。",
+       "note": "if you have flexibility 条件；cheaper to fly Monday than Tuesday 对比，周一更便宜。"
+      },
+      {
+       "en": "So I'm going to get there early and do some sightseeing before the conference starts.",
+       "zh": "所以我打算早点到那里，在会议开始前先观光一番。",
+       "note": "So 结果信号；get there early...sightseeing before the conference 提前到+观光。"
+      }
+     ],
+     "longsent": []
+    },
+    {
+     "title": "Podcast Project · 播客项目对话（1/2 ❌错1）",
+     "score": "1/2",
+     "time": "1m6s",
+     "type": "对话",
+     "transcript": "Student: I'm working on a project for my history class. I'm planning to make a podcast where I interview a local historian.\nFriend: That sounds cool. Have you been to the new campus podcast studio yet?\nStudent: It's in the journalism building. I was scheduled to be there last week, but the woman from the Historical Society that I'm interviewing didn't show up. That's actually the second time that has happened.\nFriend: That's not good. Maybe you should try for someone else.\nStudent: I'm sure there's a professor in the history department who'd be willing to help you.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "态度题",
+       "q": "What attitude does the man express when he mentions a local historian?（提当地历史学家时的态度）",
+       "options": {
+        "A": "He is hopeful that she will listen to his podcast 希望她听播客",
+        "B": "He is excited to attend one of her lectures 兴奋参加她的讲座",
+        "C": "He is worried about the questions she might ask 担心她问的问题",
+        "D": "He is annoyed that she missed two appointments 对她两次失约恼火"
+       },
+       "correct": "D",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'the woman...didn't show up. That's actually the second time that has happened'（她没来，这是第二次了）"
+        },
+        {
+         "k": "推理",
+         "v": "态度题：对方两次失约，态度是 annoyed(恼火) → D"
+        },
+        {
+         "k": "排除",
+         "v": "A(希望)与 annoyed 相反；B/C 没提"
+        }
+       ],
+       "trap": "态度题陷阱：你选了 A(希望她听播客)——原文 'didn't show up...second time' 是负面态度(annoyed 恼火)，不是 hopeful。抓 didn't show up/second time 的负面信号"
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "Why does the second speaker mention a professor?（为何提教授）",
+       "options": {
+        "A": "To suggest an alternative 建议替代方案",
+        "B": "To correct a misunderstanding 纠正误解",
+        "C": "To disagree with the man 不同意",
+        "D": "To decline an invitation 拒绝邀请"
+       },
+       "correct": "A",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'Maybe you should try for someone else...there's a professor...who'd be willing to help'（试试别人，有个教授愿意帮）"
+        },
+        {
+         "k": "推理",
+         "v": "提 professor 是建议『换个人』(alternative) → A"
+        },
+        {
+         "k": "排除",
+         "v": "B/C/D 都没提"
+        }
+       ]
+      }
+     ],
+     "weak": "题1态度错——didn't show up/second time 是负面信号(annoyed)，你选了 hopeful",
+     "fix": "态度题抓负面信号词：didn't show up/second time→annoyed(恼火)，not hopeful",
+     "transcript_zh": "学生：我正在为我的历史课做一个项目。我打算做一个播客，采访一位当地历史学家。朋友：听起来很酷。你去过学校新的播客录音室了吗？学生：它在新闻学院大楼里。我上周本来约好去那里，但我要采访的那位历史协会的女士没有出现。这实际上已经是第二次发生这种事了。朋友：那可不妙。也许你该另找一个人。学生：我敢肯定历史系有位教授愿意帮你。",
+     "sentences": [
+      {
+       "en": "I'm working on a project for my history class.",
+       "zh": "我正在为我的历史课做一个项目。",
+       "note": "说明项目（历史课）。"
+      },
+      {
+       "en": "I'm planning to make a podcast where I interview a local historian.",
+       "zh": "我打算做一个播客，采访一位当地历史学家。",
+       "note": "计划=播客+采访当地历史学家；where 从句说明内容。"
+      },
+      {
+       "en": "That sounds cool.",
+       "zh": "听起来很酷。",
+       "note": "肯定回应。"
+      },
+      {
+       "en": "Have you been to the new campus podcast studio yet?",
+       "zh": "你去过学校新的播客录音室了吗？",
+       "note": "yet 询问是否去过新录音室。"
+      },
+      {
+       "en": "It's in the journalism building.",
+       "zh": "它在新闻学院大楼里。",
+       "note": "位置信息=新闻大楼。"
+      },
+      {
+       "en": "I was scheduled to be there last week, but the woman from the Historical Society that I'm interviewing didn't show up.",
+       "zh": "我上周本来约好去那里，但我要采访的那位历史协会的女士没有出现。",
+       "note": "but 转折=受访者没出现；the woman from the Historical Society 人物身份。"
+      },
+      {
+       "en": "That's actually the second time that has happened.",
+       "zh": "这实际上已经是第二次发生这种事了。",
+       "note": "the second time 强调反复发生。"
+      },
+      {
+       "en": "That's not good.",
+       "zh": "那可不妙。",
+       "note": "同情回应。"
+      },
+      {
+       "en": "Maybe you should try for someone else.",
+       "zh": "也许你该另找一个人。",
+       "note": "Maybe you should... 建议换人。"
+      },
+      {
+       "en": "I'm sure there's a professor in the history department who'd be willing to help you.",
+       "zh": "我敢肯定历史系有位教授愿意帮你。",
+       "note": "I'm sure...who'd be willing to help 建议找历史系教授。"
+      }
+     ],
+     "longsent": []
+    }
+   ]
+  }
+ ],
+ "wordbank": [
+  {
+   "w": "a",
+   "ipa": "/ə/",
+   "zh": "art. 一（个）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "about",
+   "ipa": "/əˈbaʊt/",
+   "zh": "prep. 关于；大约",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "again",
+   "ipa": "/əˈɡen/",
+   "zh": "adv. 再；又",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "against",
+   "ipa": "/əˈɡenst/",
+   "zh": "prep. 反对；倚着",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "all",
+   "ipa": "/ɔl/",
+   "zh": "det. 所有的；全部",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "already",
+   "ipa": "/ɔlˈredi/",
+   "zh": "adv. 已经",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "also",
+   "ipa": "/ˈɔlsoʊ/",
+   "zh": "adv. 也；而且",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "although",
+   "ipa": "/ɔlˈðoʊ/",
+   "zh": "conj. 虽然",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "always",
+   "ipa": "/ˈɔlweɪz/",
+   "zh": "adv. 总是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "am",
+   "ipa": "/æm/",
+   "zh": "v. （我）是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "among",
+   "ipa": "/əˈmʌŋ/",
+   "zh": "prep. 在…之中",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "an",
+   "ipa": "/ən/",
+   "zh": "art. 一（个）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "and",
+   "ipa": "/ænd/",
+   "zh": "conj. 和；与",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "another",
+   "ipa": "/əˈnʌðər/",
+   "zh": "det. 另一个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "are",
+   "ipa": "/ɑr/",
+   "zh": "v. （我们/你们/他们）是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "around",
+   "ipa": "/əˈraʊnd/",
+   "zh": "prep. 围绕；大约",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "as",
+   "ipa": "/æz/",
+   "zh": "conj. 如同；作为",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "at",
+   "ipa": "/æt/",
+   "zh": "prep. 在（某处/某时）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "be",
+   "ipa": "/bi/",
+   "zh": "v. 是；存在",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "because",
+   "ipa": "/bɪˈkɔz/",
+   "zh": "conj. 因为",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "been",
+   "ipa": "/bɪn/",
+   "zh": "v. （be 的过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "being",
+   "ipa": "/ˈbiɪŋ/",
+   "zh": "v. 是（be 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "between",
+   "ipa": "/bɪˈtwin/",
+   "zh": "prep. 在…之间",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "both",
+   "ipa": "/boʊθ/",
+   "zh": "det. 两者都",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "but",
+   "ipa": "/bʌt/",
+   "zh": "conj. 但是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "by",
+   "ipa": "/baɪ/",
+   "zh": "prep. 由；在…旁",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "can",
+   "ipa": "/kæn/",
+   "zh": "aux. 能；可以",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "could",
+   "ipa": "/kʊd/",
+   "zh": "aux. 能（can 的过去式）；可能",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "did",
+   "ipa": "/dɪd/",
+   "zh": "aux. （do 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "do",
+   "ipa": "/du/",
+   "zh": "aux. 做",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "does",
+   "ipa": "/dʌz/",
+   "zh": "aux. （do 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "during",
+   "ipa": "/ˈdʊrɪŋ/",
+   "zh": "prep. 在…期间",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "each",
+   "ipa": "/itʃ/",
+   "zh": "det. 每个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "even",
+   "ipa": "/ˈivən/",
+   "zh": "adv. 甚至",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "few",
+   "ipa": "/fju/",
+   "zh": "det. 很少；少数",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "for",
+   "ipa": "/fɔr/",
+   "zh": "prep. 为了；对于",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "from",
+   "ipa": "/frʌm/",
+   "zh": "prep. 从；来自",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "furthermore",
+   "ipa": "/ˈfɜrðərˌmɔr/",
+   "zh": "adv. 此外；而且",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "had",
+   "ipa": "/hæd/",
+   "zh": "v. （have 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "has",
+   "ipa": "/hæz/",
+   "zh": "v. （have 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "have",
+   "ipa": "/hæv/",
+   "zh": "v. 有",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "he",
+   "ipa": "/hi/",
+   "zh": "pron. 他",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "her",
+   "ipa": "/hɜr/",
+   "zh": "pron. 她（宾格）；她的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "here",
+   "ipa": "/hɪr/",
+   "zh": "adv. 这里",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "his",
+   "ipa": "/hɪz/",
+   "zh": "pron. 他的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "however",
+   "ipa": "/haʊˈevər/",
+   "zh": "adv. 然而",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "i",
+   "ipa": "/aɪ/",
+   "zh": "pron. 我",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "if",
+   "ipa": "/ɪf/",
+   "zh": "conj. 如果",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "in",
+   "ipa": "/ɪn/",
+   "zh": "prep. 在…里",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "into",
+   "ipa": "/ˈɪntu/",
+   "zh": "prep. 进入",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "is",
+   "ipa": "/ɪz/",
+   "zh": "v. 是（第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "it",
+   "ipa": "/ɪt/",
+   "zh": "pron. 它",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "its",
+   "ipa": "/ɪts/",
+   "zh": "pron. 它的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "just",
+   "ipa": "/dʒʌst/",
+   "zh": "adv. 只是；刚刚",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "least",
+   "ipa": "/list/",
+   "zh": "det. 最少",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "less",
+   "ipa": "/les/",
+   "zh": "det. 更少",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "many",
+   "ipa": "/ˈmeni/",
+   "zh": "det. 许多",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "may",
+   "ipa": "/meɪ/",
+   "zh": "aux. 可能；可以",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "might",
+   "ipa": "/maɪt/",
+   "zh": "aux. 可能",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "more",
+   "ipa": "/mɔr/",
+   "zh": "det. 更多",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "moreover",
+   "ipa": "/mɔrˈoʊvər/",
+   "zh": "adv. 而且；此外",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "most",
+   "ipa": "/moʊst/",
+   "zh": "det. 最多；大部分",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "must",
+   "ipa": "/mʌst/",
+   "zh": "aux. 必须",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "near",
+   "ipa": "/nɪr/",
+   "zh": "prep. 在…附近；靠近",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "never",
+   "ipa": "/ˈnevər/",
+   "zh": "adv. 从不",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "none",
+   "ipa": "/nʌn/",
+   "zh": "pron. 没有一个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "nor",
+   "ipa": "/nɔr/",
+   "zh": "conj. 也不",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "not",
+   "ipa": "/nɑt/",
+   "zh": "adv. 不",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "now",
+   "ipa": "/naʊ/",
+   "zh": "adv. 现在",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "of",
+   "ipa": "/əv/",
+   "zh": "prep. …的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "off",
+   "ipa": "/ɔf/",
+   "zh": "prep. 离开；关掉",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "often",
+   "ipa": "/ˈɔfən/",
+   "zh": "adv. 经常",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "on",
+   "ipa": "/ɑn/",
+   "zh": "prep. 在…上",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "one",
+   "ipa": "/wʌn/",
+   "zh": "num. 一；一个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "only",
+   "ipa": "/ˈoʊnli/",
+   "zh": "adv. 仅仅；只有",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "or",
+   "ipa": "/ɔr/",
+   "zh": "conj. 或者",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "other",
+   "ipa": "/ˈʌðər/",
+   "zh": "det. 其他的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "our",
+   "ipa": "/aʊr/",
+   "zh": "pron. 我们的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "out",
+   "ipa": "/aʊt/",
+   "zh": "adv. 出去；在外",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "over",
+   "ipa": "/ˈoʊvər/",
+   "zh": "prep. 在…上方；超过",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shall",
+   "ipa": "/ʃæl/",
+   "zh": "aux. 将；应",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "she",
+   "ipa": "/ʃi/",
+   "zh": "pron. 她",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "should",
+   "ipa": "/ʃʊd/",
+   "zh": "aux. 应该",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "since",
+   "ipa": "/sɪns/",
+   "zh": "conj. 自从；因为",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "so",
+   "ipa": "/soʊ/",
+   "zh": "conj. 所以；如此",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "some",
+   "ipa": "/sʌm/",
+   "zh": "det. 一些",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "still",
+   "ipa": "/stɪl/",
+   "zh": "adv. 仍然",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "such",
+   "ipa": "/sʌtʃ/",
+   "zh": "det. 这样的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "than",
+   "ipa": "/ðæn/",
+   "zh": "conj. 比",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "that",
+   "ipa": "/ðæt/",
+   "zh": "pron. 那个；那",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "the",
+   "ipa": "/ðə/",
+   "zh": "art. 这；那",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "their",
+   "ipa": "/ðer/",
+   "zh": "pron. 他们的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "them",
+   "ipa": "/ðem/",
+   "zh": "pron. 他们（宾格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "then",
+   "ipa": "/ðen/",
+   "zh": "adv. 然后",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "there",
+   "ipa": "/ðer/",
+   "zh": "adv. 那里",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "therefore",
+   "ipa": "/ˈðerfɔr/",
+   "zh": "adv. 因此",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "these",
+   "ipa": "/ðiz/",
+   "zh": "pron. 这些",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "they",
+   "ipa": "/ðeɪ/",
+   "zh": "pron. 他们",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "this",
+   "ipa": "/ðɪs/",
+   "zh": "pron. 这；这个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "those",
+   "ipa": "/ðoʊz/",
+   "zh": "pron. 那些",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "though",
+   "ipa": "/ðoʊ/",
+   "zh": "conj. 虽然；不过",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "through",
+   "ipa": "/θru/",
+   "zh": "prep. 穿过；通过",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "thus",
+   "ipa": "/ðʌs/",
+   "zh": "adv. 因此；如此",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "to",
+   "ipa": "/tu/",
+   "zh": "prep. 到；向",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "toward",
+   "ipa": "/tɔrd/",
+   "zh": "prep. 向；朝",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "unless",
+   "ipa": "/ənˈles/",
+   "zh": "conj. 除非",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "until",
+   "ipa": "/ənˈtɪl/",
+   "zh": "prep. 直到",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "upon",
+   "ipa": "/əˈpɑn/",
+   "zh": "prep. 在…上",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "very",
+   "ipa": "/ˈveri/",
+   "zh": "adv. 非常",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "was",
+   "ipa": "/wʌz/",
+   "zh": "v. （is 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "we",
+   "ipa": "/wi/",
+   "zh": "pron. 我们",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "were",
+   "ipa": "/wɜr/",
+   "zh": "v. （are 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "what",
+   "ipa": "/wʌt/",
+   "zh": "pron. 什么",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "when",
+   "ipa": "/wen/",
+   "zh": "adv. 什么时候；当…时",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "where",
+   "ipa": "/wer/",
+   "zh": "adv. 哪里",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "whether",
+   "ipa": "/ˈweðər/",
+   "zh": "conj. 是否",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "which",
+   "ipa": "/wɪtʃ/",
+   "zh": "pron. 哪个；哪些",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "while",
+   "ipa": "/waɪl/",
+   "zh": "conj. 当…时；一会儿",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "who",
+   "ipa": "/hu/",
+   "zh": "pron. 谁",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "will",
+   "ipa": "/wɪl/",
+   "zh": "aux. 将；会",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "with",
+   "ipa": "/wɪð/",
+   "zh": "prep. 和；用；带有",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "within",
+   "ipa": "/wɪˈðɪn/",
+   "zh": "prep. 在…之内",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "without",
+   "ipa": "/wɪˈðaʊt/",
+   "zh": "prep. 没有；无",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "would",
+   "ipa": "/wʊd/",
+   "zh": "aux. 将；会（委婉）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "yet",
+   "ipa": "/jet/",
+   "zh": "adv. 还；然而",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "you",
+   "ipa": "/ju/",
+   "zh": "pron. 你；你们",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "your",
+   "ipa": "/jʊr/",
+   "zh": "pron. 你的；你们的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "yourself",
+   "ipa": "/jʊrˈself/",
+   "zh": "pron. 你自己",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "abandoned",
+   "ipa": "/əˈbændənd/",
+   "zh": "adj. 被遗弃的；废弃的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "accompany",
+   "ipa": "/əˈkʌmpəni/",
+   "zh": "v. 陪伴；伴随",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "across",
+   "ipa": "/əˈkrɔːs/",
+   "zh": "prep./adv. 穿过；在对面",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "activity",
+   "ipa": "/ækˈtɪvəti/",
+   "zh": "n. 活动；活跃",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "actually",
+   "ipa": "/ˈæktʃuəli/",
+   "zh": "adv. 实际上；事实上",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "add",
+   "ipa": "/æd/",
+   "zh": "v. 增加；补充",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "adopting",
+   "ipa": "/əˈdɑːptɪŋ/",
+   "zh": "v. 采用；收养（adopt 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ads",
+   "ipa": "/ædz/",
+   "zh": "n. 广告（ad 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "advertising",
+   "ipa": "/ˈædvərtaɪzɪŋ/",
+   "zh": "n. 广告；广告业",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "age",
+   "ipa": "/eɪdʒ/",
+   "zh": "n. 年龄；时代",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "agenda",
+   "ipa": "/əˈdʒendə/",
+   "zh": "n. 议程；日程",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ahead",
+   "ipa": "/əˈhed/",
+   "zh": "adv. 在前面；向前",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "air",
+   "ipa": "/er/",
+   "zh": "n. 空气；空中",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "airlines",
+   "ipa": "/ˈerlaɪnz/",
+   "zh": "n. 航空公司（airline 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "allow",
+   "ipa": "/əˈlaʊ/",
+   "zh": "v. 允许；准许",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "amount",
+   "ipa": "/əˈmaʊnt/",
+   "zh": "n. 数量；总额",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "arrives",
+   "ipa": "/əˈraɪvz/",
+   "zh": "v. 到达（arrive 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "audience",
+   "ipa": "/ˈɔːdiəns/",
+   "zh": "n. 观众；听众",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "audiences",
+   "ipa": "/ˈɔːdiənsɪz/",
+   "zh": "n. 观众；听众（audience 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "available",
+   "ipa": "/əˈveɪləbl/",
+   "zh": "adj. 可获得的；有空的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "back",
+   "ipa": "/bæk/",
+   "zh": "n./adv. 背部；后面；向后",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "beach",
+   "ipa": "/biːtʃ/",
+   "zh": "n. 海滩；沙滩",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "beautiful",
+   "ipa": "/ˈbjuːtɪfl/",
+   "zh": "adj. 美丽的；漂亮的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "before",
+   "ipa": "/bɪˈfɔːr/",
+   "zh": "prep./conj. 在……之前",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "best",
+   "ipa": "/best/",
+   "zh": "adj./adv. 最好的（good/well 的最高级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "big",
+   "ipa": "/bɪɡ/",
+   "zh": "adj. 大的；重要的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "biggest",
+   "ipa": "/ˈbɪɡɪst/",
+   "zh": "adj. 最大的（big 的最高级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "blending",
+   "ipa": "/ˈblendɪŋ/",
+   "zh": "v. 混合；融合（blend 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "bolts",
+   "ipa": "/boʊlts/",
+   "zh": "n. 螺栓；插销（bolt 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "booked",
+   "ipa": "/bʊkt/",
+   "zh": "adj. 预订的；满座的（book 的过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "bookstore",
+   "ipa": "/ˈbʊkstɔːr/",
+   "zh": "n. 书店",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "boundaries",
+   "ipa": "/ˈbaʊndriz/",
+   "zh": "n. 边界；界限（boundary 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "brand",
+   "ipa": "/brænd/",
+   "zh": "n. 品牌；商标",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "brand's",
+   "ipa": "/brændz/",
+   "zh": "n. 品牌的（brand 的所有格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "brands",
+   "ipa": "/brændz/",
+   "zh": "n. 品牌（brand 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "builders",
+   "ipa": "/ˈbɪldərz/",
+   "zh": "n. 建筑工人；建造者（builder 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "building",
+   "ipa": "/ˈbɪldɪŋ/",
+   "zh": "n. 建筑物；v. 建造（build 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "busier",
+   "ipa": "/ˈbɪziər/",
+   "zh": "adj. 更忙的（busy 的比较级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cage",
+   "ipa": "/keɪdʒ/",
+   "zh": "n. 笼子；牢笼",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cage's",
+   "ipa": "/ˈkeɪdʒɪz/",
+   "zh": "n. 笼子的（cage 的所有格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "campaign",
+   "ipa": "/kæmˈpeɪn/",
+   "zh": "n. 活动；运动；战役",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "campus",
+   "ipa": "/ˈkæmpəs/",
+   "zh": "n. 校园；校区",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cascade",
+   "ipa": "/kæˈskeɪd/",
+   "zh": "n. 小瀑布；一连串",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "case",
+   "ipa": "/keɪs/",
+   "zh": "n. 情况；案例；箱子",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "challenges",
+   "ipa": "/ˈtʃælɪndʒɪz/",
+   "zh": "n. 挑战；难题（challenge 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "challenging",
+   "ipa": "/ˈtʃælɪndʒɪŋ/",
+   "zh": "adj. 有挑战性的；艰巨的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cheaper",
+   "ipa": "/ˈtʃiːpər/",
+   "zh": "adj. 更便宜的（cheap 的比较级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "class",
+   "ipa": "/klæs/",
+   "zh": "n. 班级；课程；阶层",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cleanup",
+   "ipa": "/ˈkliːnʌp/",
+   "zh": "n. 清理；清扫",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "club",
+   "ipa": "/klʌb/",
+   "zh": "n. 俱乐部；社团",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "collection",
+   "ipa": "/kəˈlekʃn/",
+   "zh": "n. 收藏；收集",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "commentary",
+   "ipa": "/ˈkɑːmənteri/",
+   "zh": "n. 评论；解说",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "company's",
+   "ipa": "/ˈkʌmpəniz/",
+   "zh": "n. 公司的（company 的所有格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "comparison",
+   "ipa": "/kəmˈpærɪsn/",
+   "zh": "n. 比较；对比",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "compelling",
+   "ipa": "/kəmˈpelɪŋ/",
+   "zh": "adj. 令人信服的；引人入胜的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "complete",
+   "ipa": "/kəmˈpliːt/",
+   "zh": "v. 完成；adj. 完整的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "composer",
+   "ipa": "/kəmˈpoʊzər/",
+   "zh": "n. 作曲家",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "composing",
+   "ipa": "/kəmˈpoʊzɪŋ/",
+   "zh": "v. 作曲；创作（compose 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "concerns",
+   "ipa": "/kənˈsɜːrnz/",
+   "zh": "n. 担忧；关切（concern 的复数/第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "conference",
+   "ipa": "/ˈkɑːnfərəns/",
+   "zh": "n. 会议；研讨会",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "conflict",
+   "ipa": "/ˈkɑːnflɪkt/",
+   "zh": "n. 冲突；矛盾",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "connect",
+   "ipa": "/kəˈnekt/",
+   "zh": "v. 连接；联系",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "construction",
+   "ipa": "/kənˈstrʌkʃn/",
+   "zh": "n. 建造；施工；建筑",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "content",
+   "ipa": "/ˈkɑːntent/",
+   "zh": "n. 内容；目录",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "control",
+   "ipa": "/kənˈtroʊl/",
+   "zh": "n./v. 控制；支配",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "controversial",
+   "ipa": "/ˌkɑːntrəˈvɜːrʃl/",
+   "zh": "adj. 有争议的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cool",
+   "ipa": "/kuːl/",
+   "zh": "adj. 凉爽的；酷的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cost",
+   "ipa": "/kɔːst/",
+   "zh": "n. 成本；费用；v. 花费",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "costs",
+   "ipa": "/kɔːsts/",
+   "zh": "n. 成本；费用（cost 的复数/第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "covered",
+   "ipa": "/ˈkʌvərd/",
+   "zh": "v. 覆盖；涉及（cover 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "crossing",
+   "ipa": "/ˈkrɔːsɪŋ/",
+   "zh": "n. 十字路口；横渡；v. 穿过（cross 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "customers",
+   "ipa": "/ˈkʌstəmərz/",
+   "zh": "n. 顾客；客户（customer 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "damage",
+   "ipa": "/ˈdæmɪdʒ/",
+   "zh": "n./v. 损害；损坏",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "damaged",
+   "ipa": "/ˈdæmɪdʒd/",
+   "zh": "adj. 受损的（damage 的过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "dancers",
+   "ipa": "/ˈdænsərz/",
+   "zh": "n. 舞者（dancer 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "day",
+   "ipa": "/deɪ/",
+   "zh": "n. 一天；白天",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "demographic",
+   "ipa": "/ˌdeməˈɡræfɪk/",
+   "zh": "n./adj. 人口统计（的）；人群特征",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "densely",
+   "ipa": "/ˈdensli/",
+   "zh": "adv. 密集地；稠密地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "department",
+   "ipa": "/dɪˈpɑːrtmənt/",
+   "zh": "n. 部门；系",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "despite",
+   "ipa": "/dɪˈspaɪt/",
+   "zh": "prep. 尽管；不顾",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "developed",
+   "ipa": "/dɪˈveləpt/",
+   "zh": "adj. 发达的；v. 发展（develop 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "development",
+   "ipa": "/dɪˈveləpmənt/",
+   "zh": "n. 发展；开发",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "developments",
+   "ipa": "/dɪˈveləpmənts/",
+   "zh": "n. 发展；进展（development 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "didn't",
+   "ipa": "/ˈdɪdnt/",
+   "zh": "contraction. 没有（did not 的缩写）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "different",
+   "ipa": "/ˈdɪfrənt/",
+   "zh": "adj. 不同的；各种各样的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "difficult",
+   "ipa": "/ˈdɪfɪkəlt/",
+   "zh": "adj. 困难的；难懂的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "digital",
+   "ipa": "/ˈdɪdʒɪtl/",
+   "zh": "adj. 数字的；数码的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "discuss",
+   "ipa": "/dɪˈskʌs/",
+   "zh": "v. 讨论；商议",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "distort",
+   "ipa": "/dɪˈstɔːrt/",
+   "zh": "v. 扭曲；歪曲",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "diving",
+   "ipa": "/ˈdaɪvɪŋ/",
+   "zh": "n. 潜水；跳水（dive 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "don't",
+   "ipa": "/doʊnt/",
+   "zh": "contraction. 不要（do not 的缩写）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "drums",
+   "ipa": "/drʌmz/",
+   "zh": "n. 鼓（drum 的复数）；v. 击鼓",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "dynamic",
+   "ipa": "/daɪˈnæmɪk/",
+   "zh": "adj. 动态的；有活力的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "edgy",
+   "ipa": "/ˈedʒi/",
+   "zh": "adj. 前卫的；紧张的；尖锐的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "efforts",
+   "ipa": "/ˈefərts/",
+   "zh": "n. 努力；尝试（effort 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "eight",
+   "ipa": "/eɪt/",
+   "zh": "num. 八",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "else",
+   "ipa": "/els/",
+   "zh": "adv. 其他；另外",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "emerging",
+   "ipa": "/ɪˈmɜːrdʒɪŋ/",
+   "zh": "adj. 新兴的；v. 出现（emerge 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "emotions",
+   "ipa": "/ɪˈmoʊʃnz/",
+   "zh": "n. 情感；情绪（emotion 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ended",
+   "ipa": "/ˈendɪd/",
+   "zh": "v. 结束（end 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ensure",
+   "ipa": "/ɪnˈʃʊr/",
+   "zh": "v. 确保，保证",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "entertains",
+   "ipa": "/ˌentərˈteɪnz/",
+   "zh": "v. 使娱乐，款待（entertain 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "environmental",
+   "ipa": "/ɪnˌvaɪrənˈmentl/",
+   "zh": "adj. 环境的，与环境有关的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "erasers",
+   "ipa": "/ɪˈreɪsərz/",
+   "zh": "n. 橡皮擦（eraser 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "especially",
+   "ipa": "/ɪˈspeʃəli/",
+   "zh": "adv. 尤其，特别",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ever",
+   "ipa": "/ˈevər/",
+   "zh": "adv. 曾经，在任何时候",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "everyday",
+   "ipa": "/ˈevrideɪ/",
+   "zh": "adj. 日常的，每天的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "executed",
+   "ipa": "/ˈeksɪkjuːtɪd/",
+   "zh": "v. 执行，实施；处决（execute 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "expensive",
+   "ipa": "/ɪkˈspensɪv/",
+   "zh": "adj. 昂贵的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "experience",
+   "ipa": "/ɪkˈspɪriəns/",
+   "zh": "n. 经验；经历 v. 体验，经历",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "familiar",
+   "ipa": "/fəˈmɪljər/",
+   "zh": "adj. 熟悉的，常见的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "far",
+   "ipa": "/fɑːr/",
+   "zh": "adv./adj. 远，遥远的；很大程度上",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "feel",
+   "ipa": "/fiːl/",
+   "zh": "v. 感觉，觉得；触摸",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "finding",
+   "ipa": "/ˈfaɪndɪŋ/",
+   "zh": "n. 发现，调查结果",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "flexibility",
+   "ipa": "/ˌfleksəˈbɪləti/",
+   "zh": "n. 灵活性，弹性",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "flight",
+   "ipa": "/flaɪt/",
+   "zh": "n. 航班，飞行；逃跑",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "fly",
+   "ipa": "/flaɪ/",
+   "zh": "v. 飞，飞行；乘飞机",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "formula",
+   "ipa": "/ˈfɔːrmjələ/",
+   "zh": "n. 公式，配方，准则",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "found",
+   "ipa": "/faʊnd/",
+   "zh": "v. 发现（find 的过去式/过去分词）；创立",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "four",
+   "ipa": "/fɔːr/",
+   "zh": "num. 四，四个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "fraction",
+   "ipa": "/ˈfrækʃn/",
+   "zh": "n. 分数；小部分",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "free",
+   "ipa": "/friː/",
+   "zh": "adj. 自由的，免费的；空闲的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "friend",
+   "ipa": "/frend/",
+   "zh": "n. 朋友",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "gardens",
+   "ipa": "/ˈɡɑːrdnz/",
+   "zh": "n. 花园（garden 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "generate",
+   "ipa": "/ˈdʒenəreɪt/",
+   "zh": "v. 产生，生成，引起",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "geographic",
+   "ipa": "/ˌdʒiːəˈɡræfɪk/",
+   "zh": "adj. 地理的，地理学的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "get",
+   "ipa": "/ɡet/",
+   "zh": "v. 得到，获得；变得",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "go",
+   "ipa": "/ɡoʊ/",
+   "zh": "v. 去，走；进行",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "goal",
+   "ipa": "/ɡoʊl/",
+   "zh": "n. 目标；进球",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "goals",
+   "ipa": "/ɡoʊlz/",
+   "zh": "n. 目标（goal 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "goes",
+   "ipa": "/ɡoʊz/",
+   "zh": "v. 去，走（go 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "going",
+   "ipa": "/ˈɡoʊɪŋ/",
+   "zh": "v. 去，前往（go 的现在分词）；n. 进行",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "good",
+   "ipa": "/ɡʊd/",
+   "zh": "adj. 好的，良好的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "great",
+   "ipa": "/ɡreɪt/",
+   "zh": "adj. 伟大的，极好的；大量的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "green",
+   "ipa": "/ɡriːn/",
+   "zh": "adj. 绿色的；环保的 n. 绿色",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "greenery",
+   "ipa": "/ˈɡriːnəri/",
+   "zh": "n. 绿色植物，绿叶",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ground",
+   "ipa": "/ɡraʊnd/",
+   "zh": "n. 地面，土地；理由",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "grow",
+   "ipa": "/ɡroʊ/",
+   "zh": "v. 生长，成长；种植；增加",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "growth",
+   "ipa": "/ɡroʊθ/",
+   "zh": "n. 增长，成长；发育",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "guaranteed",
+   "ipa": "/ˌɡærənˈtiːd/",
+   "zh": "adj. 保证的，确保的（guarantee 的过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hands",
+   "ipa": "/hændz/",
+   "zh": "n. 手（hand 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "happened",
+   "ipa": "/ˈhæpənd/",
+   "zh": "v. 发生（happen 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "harnesses",
+   "ipa": "/ˈhɑːrnəsɪz/",
+   "zh": "v. 利用，控制（harness 的第三人称单数）n. 挽具",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "haven't",
+   "ipa": "/ˈhævnt/",
+   "zh": "缩略 没有（have not 的缩写）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "heat",
+   "ipa": "/hiːt/",
+   "zh": "n. 热，热量；高温 v. 加热",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "help",
+   "ipa": "/help/",
+   "zh": "v. 帮助 n. 帮助，援助",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "himself",
+   "ipa": "/hɪmˈself/",
+   "zh": "pron. 他自己",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hindu",
+   "ipa": "/ˈhɪnduː/",
+   "zh": "adj./n. 印度教的；印度教徒",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "historical",
+   "ipa": "/hɪˈstɔːrɪkl/",
+   "zh": "adj. 历史的，历史性的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "history",
+   "ipa": "/ˈhɪstri/",
+   "zh": "n. 历史",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "horizontal",
+   "ipa": "/ˌhɔːrɪˈzɑːntl/",
+   "zh": "adj. 水平的，横向的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hosting",
+   "ipa": "/ˈhoʊstɪŋ/",
+   "zh": "v. 主办，主持，款待（host 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hours",
+   "ipa": "/ˈaʊərz/",
+   "zh": "n. 小时（hour 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "i'm",
+   "ipa": "/aɪm/",
+   "zh": "缩略 我是（I am 的缩写）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "idea",
+   "ipa": "/aɪˈdiːə/",
+   "zh": "n. 想法，主意，概念",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ignored",
+   "ipa": "/ɪɡˈnɔːrd/",
+   "zh": "v. 忽视，不理睬（ignore 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "imagine",
+   "ipa": "/ɪˈmædʒɪn/",
+   "zh": "v. 想象，设想",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "improve",
+   "ipa": "/ɪmˈpruːv/",
+   "zh": "v. 改善，提高，改进",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "include",
+   "ipa": "/ɪnˈkluːd/",
+   "zh": "v. 包括，包含",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "included",
+   "ipa": "/ɪnˈkluːdɪd/",
+   "zh": "v. 包括，包含（include 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "increased",
+   "ipa": "/ɪnˈkriːst/",
+   "zh": "v. 增加，增长（increase 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "indonesian",
+   "ipa": "/ˌɪndəˈniːʒn/",
+   "zh": "adj./n. 印度尼西亚的；印度尼西亚人/语",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "innovation",
+   "ipa": "/ˌɪnəˈveɪʃn/",
+   "zh": "n. 创新，革新",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "inserting",
+   "ipa": "/ɪnˈsɜːrtɪŋ/",
+   "zh": "v. 插入，嵌入（insert 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "inspired",
+   "ipa": "/ɪnˈspaɪərd/",
+   "zh": "v. 鼓舞，激发灵感（inspire 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "instructions",
+   "ipa": "/ɪnˈstrʌkʃnz/",
+   "zh": "n. 说明，指示，指令（instruction 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "instruments",
+   "ipa": "/ˈɪnstrəmənts/",
+   "zh": "n. 仪器，工具；乐器（instrument 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "interview",
+   "ipa": "/ˈɪntərvjuː/",
+   "zh": "n./v. 面试，采访",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "interviewing",
+   "ipa": "/ˈɪntərvjuːɪŋ/",
+   "zh": "v. 面试，采访（interview 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "issue",
+   "ipa": "/ˈɪʃuː/",
+   "zh": "n. 问题，议题；发行 v. 发布，发行",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "it's",
+   "ipa": "/ɪts/",
+   "zh": "缩略 它是（it is 的缩写）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "items",
+   "ipa": "/ˈaɪtəmz/",
+   "zh": "n. 项目，物品，条款（item 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "john",
+   "ipa": "/dʒɑːn/",
+   "zh": "n. 约翰（男子名）；厕所",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "journalism",
+   "ipa": "/ˈdʒɜːrnəlɪzəm/",
+   "zh": "n. 新闻业，新闻工作",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "kept",
+   "ipa": "/kept/",
+   "zh": "v. 保持，保存（keep 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "kind",
+   "ipa": "/kaɪnd/",
+   "zh": "n. 种类 adj. 友善的，仁慈的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "know",
+   "ipa": "/noʊ/",
+   "zh": "v. 知道，了解，认识",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "land",
+   "ipa": "/lænd/",
+   "zh": "n. 土地，陆地 v. 着陆，降落",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "last",
+   "ipa": "/læst/",
+   "zh": "adj./adv. 最后的；上次 v. 持续",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "layer",
+   "ipa": "/ˈleɪər/",
+   "zh": "n. 层，层次",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "leaders",
+   "ipa": "/ˈliːdərz/",
+   "zh": "n. 领导者（leader 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "legitimate",
+   "ipa": "/lɪˈdʒɪtɪmət/",
+   "zh": "adj. 合法的，正当的，合理的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "let",
+   "ipa": "/let/",
+   "zh": "v. 让，允许",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "let's",
+   "ipa": "/lets/",
+   "zh": "缩略 让我们（let us 的缩写）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "like",
+   "ipa": "/laɪk/",
+   "zh": "v. 喜欢 prep. 像，如同",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "liked",
+   "ipa": "/laɪkt/",
+   "zh": "v. 喜欢（like 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "limited",
+   "ipa": "/ˈlɪmɪtɪd/",
+   "zh": "adj. 有限的，受限的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "listeners",
+   "ipa": "/ˈlɪsənərz/",
+   "zh": "n. 听众，倾听者（listener 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "living",
+   "ipa": "/ˈlɪvɪŋ/",
+   "zh": "adj. 活着的，居住的 n. 生计，生活",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "local",
+   "ipa": "/ˈloʊkl/",
+   "zh": "adj. 当地的，本地的 n. 当地人",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "located",
+   "ipa": "/ˈloʊkeɪtɪd/",
+   "zh": "adj./v. 位于…的（locate 的过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "longer",
+   "ipa": "/ˈlɔːŋɡər/",
+   "zh": "adj./adv. 更长的；更久（long 的比较级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "looking",
+   "ipa": "/ˈlʊkɪŋ/",
+   "zh": "v. 看，寻找（look 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "loss",
+   "ipa": "/lɔːs/",
+   "zh": "n. 损失，丧失；亏损",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "lots",
+   "ipa": "/lɑːts/",
+   "zh": "n./pron. 许多，大量",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "made",
+   "ipa": "/meɪd/",
+   "zh": "v. 制作，做（make 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "maintaining",
+   "ipa": "/meɪnˈteɪnɪŋ/",
+   "zh": "v. 维持，保持，维护（maintain 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "make",
+   "ipa": "/meɪk/",
+   "zh": "v. 制作，制造；使得",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "makes",
+   "ipa": "/meɪks/",
+   "zh": "v. 制作，使得（make 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "man",
+   "ipa": "/mæn/",
+   "zh": "n. 男人，人；人类",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "manager",
+   "ipa": "/ˈmænɪdʒər/",
+   "zh": "n. 经理；管理者",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mandate",
+   "ipa": "/ˈmændeɪt/",
+   "zh": "n. 授权；指令；任期 v. 授权；强制执行",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "marketing",
+   "ipa": "/ˈmɑːrkɪtɪŋ/",
+   "zh": "n. 市场营销；推广",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "massive",
+   "ipa": "/ˈmæsɪv/",
+   "zh": "adj. 巨大的；大量的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "maybe",
+   "ipa": "/ˈmeɪbi/",
+   "zh": "adv. 也许；可能",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "meme",
+   "ipa": "/miːm/",
+   "zh": "n. 梗；模因；网络流行语",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "memes",
+   "ipa": "/miːmz/",
+   "zh": "n. 梗；模因（meme 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mere",
+   "ipa": "/mɪr/",
+   "zh": "adj. 仅仅的；只不过的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "message",
+   "ipa": "/ˈmesɪdʒ/",
+   "zh": "n. 消息；信息；留言",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "methods",
+   "ipa": "/ˈmeθədz/",
+   "zh": "n. 方法（method 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mine",
+   "ipa": "/maɪn/",
+   "zh": "pron. 我的 n. 矿；地雷 v. 采矿",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "minimum",
+   "ipa": "/ˈmɪnɪməm/",
+   "zh": "n. 最低限度；最小值 adj. 最低的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "monday",
+   "ipa": "/ˈmʌndeɪ/",
+   "zh": "n. 星期一",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "morning",
+   "ipa": "/ˈmɔːrnɪŋ/",
+   "zh": "n. 早晨；上午",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "multi",
+   "ipa": "/ˈmʌltaɪ/",
+   "zh": "adj. 多个的；多重的（前缀 multi-）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "music",
+   "ipa": "/ˈmjuːzɪk/",
+   "zh": "n. 音乐；乐曲",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "my",
+   "ipa": "/maɪ/",
+   "zh": "pron. 我的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "need",
+   "ipa": "/niːd/",
+   "zh": "v. 需要 n. 需求；必需",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "needed",
+   "ipa": "/ˈniːdɪd/",
+   "zh": "v. 需要（need 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "needs",
+   "ipa": "/niːdz/",
+   "zh": "v. 需要（need 的第三人称单数）n. 需求",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "networks",
+   "ipa": "/ˈnetwɜːrks/",
+   "zh": "n. 网络；人际网（network 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "new",
+   "ipa": "/nuː/",
+   "zh": "adj. 新的；新出现的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "next",
+   "ipa": "/nekst/",
+   "zh": "adj. 下一个的 adv. 接下来",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "no",
+   "ipa": "/noʊ/",
+   "zh": "adv. 不 adj. 没有 det. 没有",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "objects",
+   "ipa": "/ˈɑːbdʒekts/",
+   "zh": "n. 物体；目标；宾语（object 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "obvious",
+   "ipa": "/ˈɑːbviəs/",
+   "zh": "adj. 明显的；显而易见的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "oh",
+   "ipa": "/oʊ/",
+   "zh": "interj. 哦；啊（表惊讶、领悟）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "online",
+   "ipa": "/ˌɑːnˈlaɪn/",
+   "zh": "adj./adv. 在线的；联网的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "open",
+   "ipa": "/ˈoʊpən/",
+   "zh": "v. 打开 adj. 开放的；敞开的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "original",
+   "ipa": "/əˈrɪdʒənl/",
+   "zh": "adj. 原始的；最初的；原创的 n. 原作",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "overlooked",
+   "ipa": "/ˌoʊvərˈlʊkt/",
+   "zh": "v. 忽视；忽略（overlook 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "own",
+   "ipa": "/oʊn/",
+   "zh": "v. 拥有 adj. 自己的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "parking",
+   "ipa": "/ˈpɑːrkɪŋ/",
+   "zh": "n. 停车；停车场",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "parks",
+   "ipa": "/pɑːrks/",
+   "zh": "n. 公园（park 的复数）v. 停放",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "participants",
+   "ipa": "/pɑːrˈtɪsɪpənts/",
+   "zh": "n. 参与者（participant 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "particularly",
+   "ipa": "/pərˈtɪkjələrli/",
+   "zh": "adv. 尤其；特别地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "pay",
+   "ipa": "/peɪ/",
+   "zh": "v. 支付；付款 n. 工资；报酬",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "performance",
+   "ipa": "/pərˈfɔːrməns/",
+   "zh": "n. 表现；表演；性能",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "picking",
+   "ipa": "/ˈpɪkɪŋ/",
+   "zh": "v. 挑选；采摘（pick 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "places",
+   "ipa": "/ˈpleɪsɪz/",
+   "zh": "n. 地方（place 的复数）v. 放置",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "placing",
+   "ipa": "/ˈpleɪsɪŋ/",
+   "zh": "v. 放置；安排（place 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "planners",
+   "ipa": "/ˈplænərz/",
+   "zh": "n. 规划者；规划师（planner 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "plans",
+   "ipa": "/plænz/",
+   "zh": "n. 计划（plan 的复数）v. 计划",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "planted",
+   "ipa": "/ˈplæntɪd/",
+   "zh": "v. 种植；栽种（plant 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "plants",
+   "ipa": "/plænts/",
+   "zh": "n. 植物（plant 的复数）v. 种植",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "plus",
+   "ipa": "/plʌs/",
+   "zh": "prep. 加；加上 adj. 正的；优的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "podcast",
+   "ipa": "/ˈpɑːdkæst/",
+   "zh": "n. 播客；网络音频节目",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "policies",
+   "ipa": "/ˈpɑːləsiz/",
+   "zh": "n. 政策；方针（policy 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "populated",
+   "ipa": "/ˈpɑːpjuleɪtɪd/",
+   "zh": "v. 居住于；构成人口（populate 的过去分词）adj. 有人口居住的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "possible",
+   "ipa": "/ˈpɑːsəbl/",
+   "zh": "adj. 可能的；可行的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "post",
+   "ipa": "/poʊst/",
+   "zh": "n. 帖子；岗位；邮件 v. 发布；张贴",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "potential",
+   "ipa": "/pəˈtenʃl/",
+   "zh": "adj. 潜在的 n. 潜力；可能性",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "power",
+   "ipa": "/ˈpaʊər/",
+   "zh": "n. 力量；权力；电力",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "professor",
+   "ipa": "/prəˈfesər/",
+   "zh": "n. 教授",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "profile",
+   "ipa": "/ˈproʊfaɪl/",
+   "zh": "n. 简介；个人资料；侧面",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "project",
+   "ipa": "/ˈprɑːdʒekt/",
+   "zh": "n. 项目；工程；课题",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "provokes",
+   "ipa": "/prəˈvoʊks/",
+   "zh": "v. 激起；引发；挑衅（provoke 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "put",
+   "ipa": "/pʊt/",
+   "zh": "v. 放；放置；表达",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "rainwater",
+   "ipa": "/ˈreɪnwɔːtər/",
+   "zh": "n. 雨水",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "raise",
+   "ipa": "/reɪz/",
+   "zh": "v. 提高；举起；筹集；养育",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "raised",
+   "ipa": "/reɪzd/",
+   "zh": "v. 提高；养育（raise 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "rapid",
+   "ipa": "/ˈræpɪd/",
+   "zh": "adj. 迅速的；快速的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "reach",
+   "ipa": "/riːtʃ/",
+   "zh": "v. 到达；达到；伸手够到",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "really",
+   "ipa": "/ˈriːəli/",
+   "zh": "adv. 真正地；确实；非常",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "reduce",
+   "ipa": "/rɪˈduːs/",
+   "zh": "v. 减少；降低",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "regular",
+   "ipa": "/ˈreɡjələr/",
+   "zh": "adj. 定期的；常规的；有规律的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "relying",
+   "ipa": "/rɪˈlaɪɪŋ/",
+   "zh": "v. 依赖；依靠（rely 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "remixes",
+   "ipa": "/ˈriːmɪksɪz/",
+   "zh": "n. 混音版；再混合（remix 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "reputation",
+   "ipa": "/ˌrepjuˈteɪʃn/",
+   "zh": "n. 名誉；声望",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "require",
+   "ipa": "/rɪˈkwaɪər/",
+   "zh": "v. 需要；要求",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "residents",
+   "ipa": "/ˈrezɪdənts/",
+   "zh": "n. 居民；住户（resident 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "result",
+   "ipa": "/rɪˈzʌlt/",
+   "zh": "n. 结果；成果 v. 导致；产生",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "revisiting",
+   "ipa": "/ˌriːˈvɪzɪtɪŋ/",
+   "zh": "v. 重新审视；重访（revisit 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "risk",
+   "ipa": "/rɪsk/",
+   "zh": "n. 风险 v. 冒……的风险",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "risks",
+   "ipa": "/rɪsks/",
+   "zh": "n. 风险（risk 的复数）v. 冒险",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "roofs",
+   "ipa": "/ruːfs/",
+   "zh": "n. 屋顶（roof 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "rooftop",
+   "ipa": "/ˈruːftɑːp/",
+   "zh": "n. 屋顶；屋顶平台",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "room",
+   "ipa": "/ruːm/",
+   "zh": "n. 房间；空间；余地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "rubber",
+   "ipa": "/ˈrʌbər/",
+   "zh": "n. 橡胶；橡皮",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "s",
+   "ipa": "/es/",
+   "zh": "n. 字母 S",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "said",
+   "ipa": "/sed/",
+   "zh": "v. 说（say 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "saturday",
+   "ipa": "/ˈsætərdeɪ/",
+   "zh": "n. 星期六",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "schools",
+   "ipa": "/skuːlz/",
+   "zh": "n. 学校；学派（school 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "screws",
+   "ipa": "/skruːz/",
+   "zh": "n. 螺丝（screw 的复数）v. 拧紧",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "searching",
+   "ipa": "/ˈsɜːrtʃɪŋ/",
+   "zh": "v. 搜索；寻找（search 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "seashells",
+   "ipa": "/ˈsiːʃelz/",
+   "zh": "n. 贝壳（seashell 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "seattle",
+   "ipa": "/siˈætl/",
+   "zh": "n. 西雅图（美国城市）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "second",
+   "ipa": "/ˈsekənd/",
+   "zh": "n. 秒 adj. 第二的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "seeing",
+   "ipa": "/ˈsiːɪŋ/",
+   "zh": "v. 看见；理解（see 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "seeking",
+   "ipa": "/ˈsiːkɪŋ/",
+   "zh": "v. 寻找；寻求（seek 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sense",
+   "ipa": "/sens/",
+   "zh": "n. 感觉；意义；感官 v. 感觉到",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "session",
+   "ipa": "/ˈseʃn/",
+   "zh": "n. 会议；一段时间；场次",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "share",
+   "ipa": "/ʃer/",
+   "zh": "v. 分享；共用 n. 份额",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shelves",
+   "ipa": "/ʃelvz/",
+   "zh": "n. 架子（shelf 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shiny",
+   "ipa": "/ˈʃaɪni/",
+   "zh": "adj. 闪亮的；发光的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shipping",
+   "ipa": "/ˈʃɪpɪŋ/",
+   "zh": "n. 运输；航运 v. 运送（ship 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shirts",
+   "ipa": "/ʃɜːrts/",
+   "zh": "n. 衬衫（shirt 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "show",
+   "ipa": "/ʃoʊ/",
+   "zh": "v. 展示；显示 n. 节目；演出",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sightseeing",
+   "ipa": "/ˈsaɪtsiːɪŋ/",
+   "zh": "n. 观光；游览",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sign",
+   "ipa": "/saɪn/",
+   "zh": "n. 标志；迹象 v. 签名；签署",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "single",
+   "ipa": "/ˈsɪŋɡl/",
+   "zh": "adj. 单一的；单身的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "size",
+   "ipa": "/saɪz/",
+   "zh": "n. 大小；尺寸；规模",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "small",
+   "ipa": "/smɔːl/",
+   "zh": "adj. 小的；少的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "society",
+   "ipa": "/səˈsaɪəti/",
+   "zh": "n. 社会；社团",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "someone",
+   "ipa": "/ˈsʌmwʌn/",
+   "zh": "pron. 某人；有人",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sometimes",
+   "ipa": "/ˈsʌmtaɪmz/",
+   "zh": "adv. 有时；偶尔",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sounds",
+   "ipa": "/saʊndz/",
+   "zh": "n. 声音（sound 的复数）；v. 听起来",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "space's",
+   "ipa": "/ˈspeɪsɪz/",
+   "zh": "n. 空间（space 的所有格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "spark",
+   "ipa": "/spɑːrk/",
+   "zh": "n. 火花；v. 引发；点燃",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "special",
+   "ipa": "/ˈspeʃl/",
+   "zh": "adj. 特殊的；专门的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "specific",
+   "ipa": "/spəˈsɪfɪk/",
+   "zh": "adj. 具体的；特定的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "spend",
+   "ipa": "/spend/",
+   "zh": "v. 花费（时间、金钱）；度过",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "spent",
+   "ipa": "/spent/",
+   "zh": "v. 花费（spend 的过去式/过去分词）；adj. 用过的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "spreading",
+   "ipa": "/ˈspredɪŋ/",
+   "zh": "v. 传播；蔓延（spread 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "stage",
+   "ipa": "/steɪdʒ/",
+   "zh": "n. 阶段；舞台",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "start",
+   "ipa": "/stɑːrt/",
+   "zh": "v. 开始；n. 开端",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "starting",
+   "ipa": "/ˈstɑːrtɪŋ/",
+   "zh": "v. 开始（start 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "starts",
+   "ipa": "/stɑːrts/",
+   "zh": "v. 开始（start 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "startups",
+   "ipa": "/ˈstɑːrtʌps/",
+   "zh": "n. 初创公司（startup 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "step",
+   "ipa": "/step/",
+   "zh": "n. 步骤；脚步；v. 迈步",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "stocking",
+   "ipa": "/ˈstɑːkɪŋ/",
+   "zh": "n. 长筒袜；v. 储存（stock 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "strategy",
+   "ipa": "/ˈstrætədʒi/",
+   "zh": "n. 战略；策略",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "strings",
+   "ipa": "/strɪŋz/",
+   "zh": "n. 弦；细绳（string 的复数）；字符串",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "structures",
+   "ipa": "/ˈstrʌktʃərz/",
+   "zh": "n. 结构；建筑物（structure 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "student",
+   "ipa": "/ˈstuːdnt/",
+   "zh": "n. 学生",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "students",
+   "ipa": "/ˈstuːdnts/",
+   "zh": "n. 学生（student 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "studio",
+   "ipa": "/ˈstuːdioʊ/",
+   "zh": "n. 工作室；录音室；演播室",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "suited",
+   "ipa": "/ˈsuːtɪd/",
+   "zh": "adj. 合适的；v. 适合（suit 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "support",
+   "ipa": "/səˈpɔːrt/",
+   "zh": "v./n. 支持；支撑；资助",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sure",
+   "ipa": "/ʃʊr/",
+   "zh": "adj. 确信的；adv. 当然",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "t",
+   "ipa": "/tiː/",
+   "zh": "n. 字母 T",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "taking",
+   "ipa": "/ˈteɪkɪŋ/",
+   "zh": "v. 拿；带走（take 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "talk",
+   "ipa": "/tɔːk/",
+   "zh": "v./n. 谈话；交谈；演讲",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "talking",
+   "ipa": "/ˈtɔːkɪŋ/",
+   "zh": "v. 说话；谈话（talk 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "that's",
+   "ipa": "/ðæts/",
+   "zh": "contraction. that is 的缩写（那是）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "theory",
+   "ipa": "/ˈθɪəri/",
+   "zh": "n. 理论；学说",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "there's",
+   "ipa": "/ðerz/",
+   "zh": "contraction. there is 的缩写（有；存在）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "they're",
+   "ipa": "/ðer/",
+   "zh": "contraction. they are 的缩写（他们是）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "thought",
+   "ipa": "/θɔːt/",
+   "zh": "n. 想法；v. 想（think 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "today",
+   "ipa": "/təˈdeɪ/",
+   "zh": "n./adv. 今天；当今",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "together",
+   "ipa": "/təˈɡeðər/",
+   "zh": "adv. 一起；共同",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "too",
+   "ipa": "/tuː/",
+   "zh": "adv. 也；太；过于",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "tool",
+   "ipa": "/tuːl/",
+   "zh": "n. 工具",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "top",
+   "ipa": "/tɑːp/",
+   "zh": "n. 顶部；adj. 最高的；顶尖的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "topic",
+   "ipa": "/ˈtɑːpɪk/",
+   "zh": "n. 话题；主题",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "traditional",
+   "ipa": "/trəˈdɪʃənl/",
+   "zh": "adj. 传统的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "transforming",
+   "ipa": "/trænsˈfɔːrmɪŋ/",
+   "zh": "v. 转变；使改观（transform 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "trash",
+   "ipa": "/træʃ/",
+   "zh": "n. 垃圾；v. 丢弃；贬低",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "travel",
+   "ipa": "/ˈtrævl/",
+   "zh": "v./n. 旅行；行进",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "trees",
+   "ipa": "/triːz/",
+   "zh": "n. 树（tree 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "try",
+   "ipa": "/traɪ/",
+   "zh": "v. 尝试；努力；n. 尝试",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "tuesday",
+   "ipa": "/ˈtuːzdeɪ/",
+   "zh": "n. 星期二",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "turning",
+   "ipa": "/ˈtɜːrnɪŋ/",
+   "zh": "v. 转动；转变（turn 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "university",
+   "ipa": "/ˌjuːnɪˈvɜːrsəti/",
+   "zh": "n. 大学",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "unused",
+   "ipa": "/ˌʌnˈjuːzd/",
+   "zh": "adj. 未使用的；不习惯的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "upkeep",
+   "ipa": "/ˈʌpkiːp/",
+   "zh": "n. 保养；维护费",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "us",
+   "ipa": "/ʌs/",
+   "zh": "pron. 我们（宾格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "use",
+   "ipa": "/juːz/",
+   "zh": "v. 使用；利用；n. 用途",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "useful",
+   "ipa": "/ˈjuːsfl/",
+   "zh": "adj. 有用的；有益的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "using",
+   "ipa": "/ˈjuːzɪŋ/",
+   "zh": "v. 使用（use 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "vacant",
+   "ipa": "/ˈveɪkənt/",
+   "zh": "adj. 空的；空缺的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "values",
+   "ipa": "/ˈvæljuːz/",
+   "zh": "n. 价值观；价值（value 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "video",
+   "ipa": "/ˈvɪdioʊ/",
+   "zh": "n. 视频；录像",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "virality",
+   "ipa": "/vaɪˈræləti/",
+   "zh": "n. 病毒式传播性",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "visibility",
+   "ipa": "/ˌvɪzəˈbɪləti/",
+   "zh": "n. 可见度；曝光度",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "walking",
+   "ipa": "/ˈwɔːkɪŋ/",
+   "zh": "v. 行走（walk 的现在分词）；n. 步行",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "walls",
+   "ipa": "/wɔːlz/",
+   "zh": "n. 墙（wall 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "wanted",
+   "ipa": "/ˈwɑːntɪd/",
+   "zh": "v. 想要（want 的过去式/过去分词）；adj. 被通缉的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "wasn't",
+   "ipa": "/ˈwʌznt/",
+   "zh": "contraction. was not 的缩写（不是）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "way",
+   "ipa": "/weɪ/",
+   "zh": "n. 方式；方法；道路",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ways",
+   "ipa": "/weɪz/",
+   "zh": "n. 方式；方法（way 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "we'll",
+   "ipa": "/wil/",
+   "zh": "contraction. we will 的缩写（我们将）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "we're",
+   "ipa": "/wɪr/",
+   "zh": "contraction. we are 的缩写（我们是）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "we've",
+   "ipa": "/wiv/",
+   "zh": "contraction. we have 的缩写（我们已经）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "webpage",
+   "ipa": "/ˈwebpeɪdʒ/",
+   "zh": "n. 网页",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "websites",
+   "ipa": "/ˈwebsaɪts/",
+   "zh": "n. 网站（website 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "week",
+   "ipa": "/wiːk/",
+   "zh": "n. 星期；周",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "weekend",
+   "ipa": "/ˈwiːkend/",
+   "zh": "n. 周末",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "welcome",
+   "ipa": "/ˈwelkəm/",
+   "zh": "v./n./adj. 欢迎；受欢迎的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "what's",
+   "ipa": "/wʌts/",
+   "zh": "contraction. what is 的缩写（是什么）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "who'd",
+   "ipa": "/huːd/",
+   "zh": "contraction. who would / who had 的缩写",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "who's",
+   "ipa": "/huːz/",
+   "zh": "contraction. who is / who has 的缩写",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "willing",
+   "ipa": "/ˈwɪlɪŋ/",
+   "zh": "adj. 愿意的；乐意的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "woman",
+   "ipa": "/ˈwʊmən/",
+   "zh": "n. 女人；妇女",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "work",
+   "ipa": "/wɜːrk/",
+   "zh": "v./n. 工作；劳动；作品",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "working",
+   "ipa": "/ˈwɜːrkɪŋ/",
+   "zh": "adj. 工作的；运转的；v. 工作（work 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "world",
+   "ipa": "/wɜːrld/",
+   "zh": "n. 世界；领域",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "write",
+   "ipa": "/raɪt/",
+   "zh": "v. 写；书写；撰写",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "assigned",
+   "ipa": "/əˈsaɪnd/",
+   "zh": "adj. 指定的、分派的、被委派的；v. assign 的过去式/过去分词：分配、指派、指定",
+   "core": "把某物『划归』给某个人、某个位置或某个用途。",
+   "senses": [
+    {
+     "gloss": "指派（任务、职责、作业）",
+     "logic": "把一项工作划到某人名下让其负责",
+     "en": "Each student was assigned a chapter to summarize.",
+     "zh": "每个学生都被分派一章来做摘要。"
+    },
+    {
+     "gloss": "分配（资源、资金、名额）",
+     "logic": "把有限的东西按规则划给各方",
+     "en": "The committee assigned more funds to the research group.",
+     "zh": "委员会把更多资金划拨给了研究小组。"
+    },
+    {
+     "gloss": "指定（时间、位置、值）",
+     "logic": "给某物定下一个确定的值或归属",
+     "en": "Each data point is assigned a numerical value.",
+     "zh": "每个数据点都被赋予一个数值。"
+    }
+   ],
+   "ety": "拉丁 ad-(朝向) + signare(做记号、标记)→『给……打上标记』→ 划归给某人 → 指派、分配。",
+   "ph": "词尾 gn 中的 g 不发音，读 /saɪn/，所以是 as-sign 不是 as-sig-n。重音在第二音节。",
+   "tip": "sign(标记) 前面加 as-，想象在任务清单上『给某项打上你的标记』，就是 assigned 给你了。",
+   "xex": [
+    {
+     "en": "The professor assigned a listening passage on Javanese gamelan for homework.",
+     "zh": "教授布置了一段关于爪哇甘美兰的听力材料作为作业。",
+     "src": "造句"
+    },
+    {
+     "en": "In the study, participants were randomly assigned to two groups.",
+     "zh": "在这项研究中，参与者被随机分配到两个组。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "allocate",
+     "ipa": "/ˈæləkeɪt/",
+     "note": "allocate 强调按计划『划拨资源』，偏正式；assign 更常指『分派给人/任务』"
+    },
+    {
+     "w": "designate",
+     "ipa": "/ˈdezɪɡneɪt/",
+     "note": "designate 强调『正式指名、指定用途』，assign 更口语"
+    }
+   ],
+   "nu": "assign 的宾语常是人(assign sb to do)或物(assign a task/value)，核心是『归属到某处』；它比 give 更强调是自上而下的分派。",
+   "rootfam": [
+    {
+     "root": "sign",
+     "meaning": "标记",
+     "words": [
+      {
+       "w": "sign",
+       "g": "记号、标记"
+      },
+      {
+       "w": "signal",
+       "g": "信号"
+      },
+      {
+       "w": "design",
+       "g": "设计（de-向下+标记→画出）"
+      },
+      {
+       "w": "significant",
+       "g": "重要的（有标记意义的）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "avant",
+   "ipa": "/əˈvɑːnt/",
+   "zh": "n./adj. 法语借词：在前方、先锋；常见于 avant-garde（前卫、先锋派）",
+   "core": "法语『在……之前』，指走在最前面、领先的一股力量。",
+   "senses": [
+    {
+     "gloss": "（构成 avant-garde）先锋、前卫",
+     "logic": "走在大部队前面(avant)的卫队(garde)→思想艺术上开路的先锋派",
+     "en": "The exhibition focused on avant-garde art of the early twentieth century.",
+     "zh": "这场展览聚焦二十世纪初的前卫艺术。"
+    }
+   ],
+   "ety": "古法语 avant(在前方) ← 拉丁 ab ante(从……之前)。英语里几乎只以 avant-garde 等借词整体进入。",
+   "ph": "借自法语，末尾 t 不发音；英语读音 /əˈvɑːnt/，重音在第二音节，a 读长 /ɑː/。",
+   "tip": "记住词组 avant-garde：avant(前)+garde(卫队)=走在队伍最前面的卫兵，即『先锋』。",
+   "xex": [
+    {
+     "en": "Composers of the avant-garde rejected traditional musical forms.",
+     "zh": "先锋派作曲家摒弃了传统的音乐形式。",
+     "src": "造句"
+    },
+    {
+     "en": "The term avant-garde is often applied to experimental artists.",
+     "zh": "『前卫』一词常被用来形容实验性的艺术家。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "vanguard",
+     "ipa": "/ˈvænɡɑːrd/",
+     "note": "vanguard 是英语本族词，同样源自 avant-garde，指『先锋、领先地位』"
+    }
+   ],
+   "nu": "avant 单独在英语中极少使用，几乎总是以 avant-garde 的形式出现；不要把 avant 与 guard 的拼写混淆。",
+   "rootfam": [
+    {
+     "root": "ante",
+     "meaning": "在前",
+     "words": [
+      {
+       "w": "anterior",
+       "g": "前面的、较早的"
+      },
+      {
+       "w": "antique",
+       "g": "古代的（从前的）"
+      },
+      {
+       "w": "anticipate",
+       "g": "预料（提前 ante + 拿取）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "backlash",
+   "ipa": "/ˈbæklæʃ/",
+   "zh": "n. 强烈反对、反弹；反冲（机械上的间隙/回弹）",
+   "core": "往回抽打的反作用力，转指社会对某件事的集体反弹。",
+   "senses": [
+    {
+     "gloss": "（对政策、言论、变化的）强烈反对、反弹",
+     "logic": "动作打出去又反抽回来→公众情绪的反向冲击",
+     "en": "The policy provoked a fierce public backlash.",
+     "zh": "这项政策引发了公众的强烈反弹。"
+    },
+    {
+     "gloss": "（机械）齿隙、反冲",
+     "logic": "齿轮咬合间允许的松动空隙",
+     "en": "The old gears had too much backlash.",
+     "zh": "这些旧齿轮的间隙太大了。"
+    }
+   ],
+   "ety": "back(向后) + lash(抽打、鞭打)：本指机器反向抽打的回弹，19 世纪引申为『公众的激烈反应』。",
+   "ph": "合成词 back + lash，重音在第一音节；a 在闭音节都读 /æ/，两个 /æ/ 读清晰。",
+   "tip": "想象鞭子向前一抽，又弹回来打到自己——社会舆论的『反抽』就是 backlash。",
+   "xex": [
+    {
+     "en": "There was a backlash against the new tuition policy on campus.",
+     "zh": "校园里出现了对这项新学费政策的强烈反弹。",
+     "src": "造句"
+    },
+    {
+     "en": "The company faced a backlash from customers over the price increase.",
+     "zh": "公司因涨价而遭到顾客的强烈反对。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "outcry",
+     "ipa": "/ˈaʊtkraɪ/",
+     "note": "outcry 强调『公开的抗议呼喊』，语气更情绪化；backlash 强调『反向反弹』的机制"
+    },
+    {
+     "w": "recoil",
+     "ipa": "/rɪˈkɔɪl/",
+     "note": "recoil 本义『后坐、退缩』，作反弹时偏个体反应"
+    }
+   ],
+   "nu": "backlash 是不可数或可数名词，多与 against 连用(backlash against sth)；它强调的是『群体性、反向、情绪化』的抵制。",
+   "rootfam": [
+    {
+     "root": "lash",
+     "meaning": "抽打",
+     "words": [
+      {
+       "w": "lash",
+       "g": "鞭打、猛击"
+      },
+      {
+       "w": "eyelash",
+       "g": "睫毛"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "courtyards",
+   "ipa": "/ˈkɔːrtjɑːrd/",
+   "zh": "n. 庭院、院子（courtyard 的复数）",
+   "core": "被房屋、围墙环绕起来的露天空地。",
+   "senses": [
+    {
+     "gloss": "庭院、院子",
+     "logic": "court(围起来的院子)+yard(围场)→被建筑包围的开放空间",
+     "en": "The monastery was built around a quiet courtyard.",
+     "zh": "这座修道院围绕着一个安静的庭院而建。"
+    }
+   ],
+   "ety": "court ← 拉丁 cohors(围起来的圈、庭院) + yard(古英语 geard 围场)：『围起来的场地』。",
+   "ph": "合成词 court + yard，重音在第一音节；court 的 ou 读 /ɔːr/，不要读成短 /ʊ/。",
+   "tip": "court(院子)+yard(场)，两个字都跟『围起来』有关，合起来就是被房子围住的院子。",
+   "xex": [
+    {
+     "en": "Traditional Chinese houses often have inner courtyards for light and air.",
+     "zh": "传统中式民居常设内院以采光通风。",
+     "src": "造句"
+    },
+    {
+     "en": "The museum's courtyards feature stone carvings from the Tang dynasty.",
+     "zh": "这座博物馆的庭院里陈列着唐代石刻。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "patio",
+     "ipa": "/ˈpætioʊ/",
+     "note": "patio 多指与房屋相连的铺砌露台/后院平台，更休闲；courtyard 强调被建筑四面围合"
+    },
+    {
+     "w": "quadrangle",
+     "ipa": "/ˈkwɒdræŋɡl/",
+     "note": "quadrangle(quad)特指大学学院里四面有楼的方形庭院"
+    }
+   ],
+   "nu": "courtyard 的核心特征是『被建筑物或墙围合』，常用于宫殿、寺庙、四合院、修道院等语境；复数 courtyards 在听力描述建筑布局时高频。",
+   "rootfam": [
+    {
+     "root": "cohors",
+     "meaning": "围起来的圈",
+     "words": [
+      {
+       "w": "court",
+       "g": "庭院；法院"
+      },
+      {
+       "w": "courtyard",
+       "g": "庭院"
+      },
+      {
+       "w": "cohort",
+       "g": "一队、同伙（同一圈子）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "exponential",
+   "ipa": "/ˌekspəˈnenʃl/",
+   "zh": "adj. 指数（级）的、按几何级数增长的；（数学）指数的 n. 指数函数",
+   "core": "按『乘幂』的速度增长，越滚越快。",
+   "senses": [
+    {
+     "gloss": "指数级的、急剧增长的",
+     "logic": "增长速度与现有量成正比→越滚越快",
+     "en": "The city saw exponential population growth in the last decade.",
+     "zh": "过去十年这座城市的人口呈指数级增长。"
+    },
+    {
+     "gloss": "（数学）指数的",
+     "logic": "涉及乘方、幂的运算",
+     "en": "An exponential function grows much faster than a linear one.",
+     "zh": "指数函数的增长速度远快于线性函数。"
+    }
+   ],
+   "ety": "拉丁 exponere(ex- 出 + ponere 放置)=『摆出来、陈列』→ exponent(指数) + -ial(形容词)→『指数的』。",
+   "ph": "重音在第三音节 -nen-，读 /ˌekspəˈnenʃl/；注意 -tial 读 /ʃl/，不是 /tʃl/。",
+   "tip": "记住 exponent(指数)，指数就是『把底数一次次摆出来乘』，所以 exponential 就是越来越快地翻倍。",
+   "xex": [
+    {
+     "en": "The spread of the virus followed an exponential curve.",
+     "zh": "病毒的传播遵循一条指数曲线。",
+     "src": "造句"
+    },
+    {
+     "en": "Advances in computing power have been almost exponential.",
+     "zh": "计算能力的进步几乎是呈指数级增长的。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "explosive",
+     "ipa": "/ɪkˈsploʊsɪv/",
+     "note": "explosive 强调『爆发式』的猛烈，是修辞说法；exponential 是精确的数学概念"
+    },
+    {
+     "w": "geometric",
+     "ipa": "/ˌdʒiːəˈmetrɪk/",
+     "note": "geometric(几何级数的)在增长语境下可与 exponential 互换，但 exponential 更常用"
+    }
+   ],
+   "nu": "exponential growth 的要点是：增长率与当前规模成正比，因此『越滚越快』，区别于匀速的 linear(线性) 增长。",
+   "rootfam": [
+    {
+     "root": "pon/posit",
+     "meaning": "放置",
+     "words": [
+      {
+       "w": "exponent",
+       "g": "指数"
+      },
+      {
+       "w": "component",
+       "g": "组成部分（com-一起+放）"
+      },
+      {
+       "w": "opponent",
+       "g": "对手（op-相对+放）"
+      },
+      {
+       "w": "position",
+       "g": "位置"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "foolproof",
+   "ipa": "/ˈfuːlpruːf/",
+   "zh": "adj. 万无一失的、极简单的、防呆的（连傻瓜都不会弄错）",
+   "core": "连傻瓜(fool)都弄不坏(proof)——简单到不可能出错。",
+   "senses": [
+    {
+     "gloss": "（方法、设计、操作）不会出错、极简单的",
+     "logic": "连最粗心的人照着做都不会失败",
+     "en": "We need a foolproof way to back up our data.",
+     "zh": "我们需要一种万无一失的数据备份方法。"
+    },
+    {
+     "gloss": "防呆的（设计上杜绝误操作）",
+     "logic": "从设计上让人想错都错不了",
+     "en": "The new lock is foolproof; it can't be installed backwards.",
+     "zh": "这种新锁是防呆设计，不可能装反。"
+    }
+   ],
+   "ety": "fool(傻瓜) + proof(防……的，本义『经受检验、抵御』)：20 世纪初美国俗语，字面『连傻瓜也搞不坏』。",
+   "ph": "两个音节重音在第一音节；fool 的 oo 和 proof 的 oo 都读长音 /uː/，嘴形收圆。",
+   "tip": "proof 作后缀是『防…』，foolproof 就是『防傻瓜』——设计得连傻瓜用都不会坏，即『万无一失』。",
+   "xex": [
+    {
+     "en": "The recipe is foolproof; even beginners can follow it.",
+     "zh": "这份食谱简单到不可能失败，新手也能照着做。",
+     "src": "造句"
+    },
+    {
+     "en": "There is no foolproof method for predicting earthquakes.",
+     "zh": "不存在预测地震的万无一失的方法。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "infallible",
+     "ipa": "/ɪnˈfæləbl/",
+     "note": "infallible 偏『绝不出错、无谬』，多用于人或判断；foolproof 偏『操作上不可能失败』，多用于方法/设计"
+    },
+    {
+     "w": "idiot-proof",
+     "ipa": "/ˈɪdiət pruːf/",
+     "note": "idiot-proof 是更口语、略带冒犯的说法，意思相同"
+    }
+   ],
+   "nu": "foolproof 针对的是『人的失误』(让使用者想错也错不了)；对比 fail-safe 针对『设备故障』(机器出故障时自动进入安全状态)，两者别混。",
+   "rootfam": [
+    {
+     "root": "proof",
+     "meaning": "防……的",
+     "words": [
+      {
+       "w": "waterproof",
+       "g": "防水的"
+      },
+      {
+       "w": "bulletproof",
+       "g": "防弹的"
+      },
+      {
+       "w": "fireproof",
+       "g": "防火的"
+      },
+      {
+       "w": "soundproof",
+       "g": "隔音的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "gamelan",
+   "ipa": "/ˈɡæməlæn/",
+   "zh": "n. 甘美兰：印尼（爪哇、巴厘）传统打击乐合奏，也指其整套乐器",
+   "core": "印尼以铜锣、木琴、鼓等组成的打击乐合奏团。",
+   "senses": [
+    {
+     "gloss": "甘美兰音乐/合奏",
+     "logic": "爪哇语『敲击之物』→整套敲击乐器及其合奏",
+     "en": "The lecture introduced the structure of Balinese gamelan music.",
+     "zh": "讲座介绍了巴厘岛甘美兰音乐的结构。"
+    }
+   ],
+   "ety": "爪哇语 gamel(敲打、击)+ -an(名词后缀)=『被敲击之物/敲击合奏』，19 世纪借入英语。",
+   "ph": "三音节 ga-me-lan，重音常在第一音节；三个 a 都读短元音 /æ/ 或弱化为 /ə/，是纯拼读的借词。",
+   "tip": "gamel 同『敲』，甘美兰就是一排排铜锣、木琴被木槌敲出的合奏，属打击乐(percussion)家族。",
+   "xex": [
+    {
+     "en": "Gamelan ensembles are central to traditional Javanese ceremonies.",
+     "zh": "甘美兰乐队是爪哇传统仪式的核心。",
+     "src": "造句"
+    },
+    {
+     "en": "Western composers such as Debussy were influenced by gamelan music.",
+     "zh": "德彪西等西方作曲家受到过甘美兰音乐的影响。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "gamelan 是专有名词，既可指『一套甘美兰乐器』(可数，a gamelan)，也可指『甘美兰音乐』(不可数)；听力中常与 percussion、ensemble 同现。",
+   "rootfam": []
+  },
+  {
+   "w": "garde",
+   "ipa": "/ɡɑːrd/",
+   "zh": "n. 法语借词：卫队、守卫；主要见于 avant-garde（先锋派）、en garde（击剑口令）",
+   "core": "法语『守卫』，在 avant-garde 里指走在最前的卫队。",
+   "senses": [
+    {
+     "gloss": "（构成 avant-garde）卫队、先锋",
+     "logic": "在前方(avant)的卫队(garde)→开路的先锋",
+     "en": "The avant-garde artists of the 1910s broke every rule.",
+     "zh": "1910 年代的先锋派艺术家打破了所有规则。"
+    }
+   ],
+   "ety": "古法语 garder(守卫) ← 日耳曼语 ward-(看护、守卫)；英语本族词 guard 与其同源。",
+   "ph": "借自法语，末尾 e 不发音；读 /ɡɑːrd/，与英语 guard /ɡɑːrd/ 同音同源，注意拼写是 g-a-r-d-e。",
+   "tip": "garde 就是英语 guard 的法语表亲；avant-garde = 走在最前面的守卫 = 先锋。",
+   "xex": [
+    {
+     "en": "The phrase en garde is the starting command in fencing.",
+     "zh": "en garde(准备)是击剑运动的起势口令。",
+     "src": "造句"
+    },
+    {
+     "en": "Avant-garde movements often anticipate later mainstream trends.",
+     "zh": "先锋派运动常常预示了后来主流的潮流。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "guard",
+     "ipa": "/ɡɑːrd/",
+     "note": "guard 是英语本族词，义同『守卫』；garde 仅存于法语借词词组中"
+    }
+   ],
+   "nu": "garde 单独出现几乎只在 avant-garde、en garde 等借词里，学术讲座中听到它基本都是 avant-garde(先锋派艺术)的一部分。",
+   "rootfam": [
+    {
+     "root": "ward",
+     "meaning": "看护、守卫",
+     "words": [
+      {
+       "w": "guard",
+       "g": "守卫、卫兵"
+      },
+      {
+       "w": "warden",
+       "g": "看守人、典狱长"
+      },
+      {
+       "w": "reward",
+       "g": "酬报（re-回+ward 照看）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "improvisation",
+   "ipa": "/ˌɪmprəvaɪˈzeɪʃn/",
+   "zh": "n. 即兴创作、即兴表演；临场发挥",
+   "core": "不预先准备，当场临时发挥出来。",
+   "senses": [
+    {
+     "gloss": "即兴表演/创作（音乐、戏剧、舞蹈）",
+     "logic": "没有乐谱、剧本，靠现场灵感现编现演",
+     "en": "Jazz is built on improvisation.",
+     "zh": "爵士乐是建立在即兴演奏之上的。"
+    },
+    {
+     "gloss": "临场发挥、应急处理",
+     "logic": "没有预案，靠当场随机应变",
+     "en": "The speech required quick improvisation when the slides failed.",
+     "zh": "幻灯片出故障时，演讲需要快速临场发挥。"
+    }
+   ],
+   "ety": "拉丁 improvisus(未预见的, in- 不 + providere 预见)→ 法语 improviser(即兴)→ 英语 improvisation。",
+   "ph": "重音在第四音节 -za-，读 /ˌɪmprəvaɪˈzeɪʃn/；-tion 固定读 /ʃn/，不是 /tʃn/。",
+   "tip": "核心是 im-pro-(不-预先)-vise(看见)：『没预先看到』的东西，只能当场现编，就是即兴。",
+   "xex": [
+    {
+     "en": "The actor's improvisation drew laughter from the audience.",
+     "zh": "演员的即兴发挥引得观众发笑。",
+     "src": "造句"
+    },
+    {
+     "en": "In the lecture, the professor played an example of free improvisation.",
+     "zh": "讲座中，教授播放了一段自由即兴演奏的例子。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "extemporization",
+     "ipa": "/ɪkˌstempəraɪˈzeɪʃn/",
+     "note": "extemporization 偏『即席发言/写作』，正式；improvisation 最常用于音乐/戏剧表演"
+    },
+    {
+     "w": "ad-libbing",
+     "ipa": "/ˌædˈlɪbɪŋ/",
+     "note": "ad-lib 是『脱稿即兴』的口语说法，多指台词、演讲"
+    }
+   ],
+   "nu": "improvisation 强调『没有预先写好的剧本/乐谱，靠现场创造』，是爵士、戏剧、喜剧的核心概念；动词是 improvise，形容词 improvised。",
+   "rootfam": [
+    {
+     "root": "vid/vis",
+     "meaning": "看",
+     "words": [
+      {
+       "w": "improvise",
+       "g": "即兴创作"
+      },
+      {
+       "w": "provide",
+       "g": "提供（pro-前+看见→预见并准备）"
+      },
+      {
+       "w": "provision",
+       "g": "供应、条款"
+      },
+      {
+       "w": "vision",
+       "g": "视力、远见"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "inventory",
+   "ipa": "/ˈɪnvəntɔːri/",
+   "zh": "n. 存货、库存；详细清单、目录 v. 盘点、开列清单",
+   "core": "把拥有的东西一一列成清单——这清单和清单上的货都叫 inventory。",
+   "senses": [
+    {
+     "gloss": "存货、库存",
+     "logic": "清单上登记的货物→实际库存量",
+     "en": "The store keeps a large inventory of merchandise.",
+     "zh": "这家店存有大量商品库存。"
+    },
+    {
+     "gloss": "详细清单、目录",
+     "logic": "逐项清点并记录下来的名录",
+     "en": "They made a complete inventory of the library's holdings.",
+     "zh": "他们为图书馆的藏书编制了完整清单。"
+    },
+    {
+     "gloss": "（动）盘点、编目",
+     "logic": "执行清点登记这个动作",
+     "en": "Staff inventory the goods at the end of each month.",
+     "zh": "员工在每月末盘点货物。"
+    }
+   ],
+   "ety": "拉丁 invenire(in- 进入 + venire 来)=『发现、找到』→ inventorium(找到之物的清单)→ inventory(清单、存货)。",
+   "ph": "美式读四音节 /ˈɪnvəntɔːri/，重音在第一音节；英式常省略一个音 /ˈɪnvəntri/，听力中两种都听得到。",
+   "tip": "invent 本义『找到』，inventory 就是『把找到/拥有的东西登记成册』——店里的『盘点清单』即库存。",
+   "xex": [
+    {
+     "en": "The company conducts an inventory check every quarter.",
+     "zh": "公司每季度进行一次库存盘点。",
+     "src": "造句"
+    },
+    {
+     "en": "Researchers compiled an inventory of endangered plant species.",
+     "zh": "研究人员编制了一份濒危植物物种清单。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "stock",
+     "ipa": "/stɑːk/",
+     "note": "stock 只指『库存的货物』本身；inventory 兼指『货物』与『清单』"
+    },
+    {
+     "w": "catalog",
+     "ipa": "/ˈkætəlɔːɡ/",
+     "note": "catalog 强调『供查阅的目录/目录册』，偏书目；inventory 强调『逐项清点的记录』"
+    }
+   ],
+   "nu": "inventory 一词两用：既指『清单』(可数 a full inventory)也指『清单上的货/库存』(常不可数或作定语 inventory management)，商务与学术听力都高频。",
+   "rootfam": [
+    {
+     "root": "ven/vent",
+     "meaning": "来",
+     "words": [
+      {
+       "w": "invent",
+       "g": "发明（in-进入+来→想到）"
+      },
+      {
+       "w": "invention",
+       "g": "发明"
+      },
+      {
+       "w": "convention",
+       "g": "惯例、大会（con-共同+来）"
+      },
+      {
+       "w": "advent",
+       "g": "到来、出现"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "merchandise",
+   "ipa": "/ˈmɜːrtʃəndaɪs/",
+   "zh": "n. 商品、货物（不可数）；v. /ˈmɜːrtʃəndaɪz/ 推销、销售",
+   "core": "商人拿来交易的一批货。",
+   "senses": [
+    {
+     "gloss": "（不可数）商品、货品",
+     "logic": "供出售的物品总称",
+     "en": "The museum sells merchandise related to the exhibition.",
+     "zh": "博物馆出售与展览相关的商品。"
+    },
+    {
+     "gloss": "（动）推销、买卖",
+     "logic": "把货物拿出来做买卖",
+     "en": "The band merchandises its logo on T-shirts.",
+     "zh": "这个乐队把它的标志印在 T 恤上销售。"
+    }
+   ],
+   "ety": "古法语 marchandise(商品) ← marchand(商人) ← 拉丁 mercari(交易)、merx(商品)。",
+   "ph": "重音在第一音节 MER-；名词读 /ˈmɜːrtʃəndaɪs/，动词读 /ˈmɜːrtʃəndaɪz/，拼写相同读音不同。",
+   "tip": "merchandise 里有 merchant(商人)的影子——商人手里交易的一批货就是 merchandise。",
+   "xex": [
+    {
+     "en": "Official merchandise is sold at the entrance of the stadium.",
+     "zh": "官方商品在体育场入口处出售。",
+     "src": "造句"
+    },
+    {
+     "en": "The lecture discussed how museums market their merchandise.",
+     "zh": "讲座讨论了博物馆如何营销其商品。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "goods",
+     "ipa": "/ɡʊdz/",
+     "note": "goods 泛指『货物、商品』，更日常；merchandise 多用于零售/商业语境"
+    },
+    {
+     "w": "wares",
+     "ipa": "/weərz/",
+     "note": "wares 指摊贩/商贩摆卖的『货品』，常带口语、市集色彩"
+    }
+   ],
+   "nu": "merchandise 作名词不可数(不能说 a merchandise)，指『待售商品』整体；作动词读 /-daɪz/，是商业/营销语境常用词。",
+   "rootfam": [
+    {
+     "root": "merc",
+     "meaning": "交易、商品",
+     "words": [
+      {
+       "w": "merchant",
+       "g": "商人"
+      },
+      {
+       "w": "commerce",
+       "g": "商业、贸易"
+      },
+      {
+       "w": "market",
+       "g": "市场"
+      },
+      {
+       "w": "mercenary",
+       "g": "雇佣兵；唯利是图的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "percussion",
+   "ipa": "/pərˈkʌʃn/",
+   "zh": "n. 打击乐（器，总称）；敲击、撞击",
+   "core": "靠『敲击』发出声音的那一整个乐器家族。",
+   "senses": [
+    {
+     "gloss": "打击乐器（总称）",
+     "logic": "通过敲击发声的乐器集合",
+     "en": "She plays percussion in the school orchestra.",
+     "zh": "她在学校管弦乐队里演奏打击乐。"
+    },
+    {
+     "gloss": "敲击、撞击",
+     "logic": "物体受到击打这个动作本身",
+     "en": "Percussion of the instrument produces a resonant tone.",
+     "zh": "敲击这件乐器会产生共鸣的音色。"
+    }
+   ],
+   "ety": "拉丁 per-(彻底) + quatere(震动、敲打)→ percussio(敲击)→ 指敲打发声的乐器。",
+   "ph": "重音在第二音节 -cus-，读 /pərˈkʌʃn/；注意 per- 弱读为 /pər/，-ssion 读 /ʃn/。",
+   "tip": "词根 quat 是『敲、震』，percussion 就是『彻底地敲』——鼓、锣、木琴全属于它。",
+   "xex": [
+    {
+     "en": "The gamelan is essentially a percussion ensemble.",
+     "zh": "甘美兰本质上是一支打击乐合奏团。",
+     "src": "造句"
+    },
+    {
+     "en": "Percussion instruments range from drums to xylophones.",
+     "zh": "打击乐器包括从鼓到木琴的多种乐器。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "percussion 指乐器时是不可数集合名词(percussion instruments 打击乐器)；单个演奏者叫 percussionist(打击乐手)，与 strings(弦乐)、woodwinds(木管)、brass(铜管)并列为乐队声部。",
+   "rootfam": [
+    {
+     "root": "quat/cuss",
+     "meaning": "敲、震",
+     "words": [
+      {
+       "w": "concussion",
+       "g": "脑震荡（con-彻底+震动）"
+      },
+      {
+       "w": "percussionist",
+       "g": "打击乐手"
+      },
+      {
+       "w": "discussion",
+       "g": "讨论（dis-分开+敲→打散分析）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "piano",
+   "ipa": "/piˈænoʊ/",
+   "zh": "n. 钢琴；adj./adv.（音乐）轻柔的/地，弱 /piˈɑːnoʊ/",
+   "core": "本义是『轻柔』，因钢琴能弹得又轻又响而得名。",
+   "senses": [
+    {
+     "gloss": "钢琴",
+     "logic": "全名 pianoforte(轻-响)，因能控制强弱而得名，后简称 piano",
+     "en": "He has played the piano since childhood.",
+     "zh": "他从小就开始弹钢琴。"
+    },
+    {
+     "gloss": "（音乐力度记号）弱、轻柔",
+     "logic": "意大利语本义『轻、平』，乐谱上标记 p",
+     "en": "The passage is marked piano, so play it softly.",
+     "zh": "这段标着 piano(弱)，所以要轻柔地演奏。"
+    }
+   ],
+   "ety": "意大利语 piano(轻柔) ← 拉丁 planus(平的、平静的)；乐器全名 pianoforte(=软+响)，1709 年由 Cristofori 命名。",
+   "ph": "乐器读 /piˈænoʊ/(a 读 /æ/)，力度记号读 /piˈɑːnoʊ/(a 读 /ɑː/)；两个词拼写一样，读音靠语境区分。",
+   "tip": "piano 的拉丁根是『平、安静』，钢琴之所以叫 piano，是因为它能弹出比拨弦古钢琴更轻的『弱音』。",
+   "xex": [
+    {
+     "en": "The lecture compared the piano to the earlier harpsichord.",
+     "zh": "讲座把钢琴与更早的大键琴做了比较。",
+     "src": "造句"
+    },
+    {
+     "en": "In the score, piano means to play the notes quietly.",
+     "zh": "在乐谱中，piano 表示要轻声演奏这些音符。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "piano 的正式全名是 pianoforte(轻-响)，缩写成 piano；作力度记号时读 /piˈɑːnoʊ/ 并与 forte(强)、mezzo piano(中弱)等配套使用。",
+   "rootfam": [
+    {
+     "root": "plan",
+     "meaning": "平",
+     "words": [
+      {
+       "w": "plain",
+       "g": "平原；朴素的"
+      },
+      {
+       "w": "plane",
+       "g": "平面；飞机"
+      },
+      {
+       "w": "plan",
+       "g": "计划（铺平思路）"
+      },
+      {
+       "w": "plateau",
+       "g": "高原、平台"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "prepared",
+   "ipa": "/prɪˈperd/",
+   "zh": "adj. 准备好的、有准备的；预先制好的；v. prepare 的过去式/过去分词",
+   "core": "事先把需要的东西都备齐了。",
+   "senses": [
+    {
+     "gloss": "准备好的、有备而来的",
+     "logic": "事先做足了准备动作",
+     "en": "Students should come to class prepared.",
+     "zh": "学生应做好准备来上课。"
+    },
+    {
+     "gloss": "预先制好的（食物、材料等）",
+     "logic": "提前加工处理完毕",
+     "en": "The store sells prepared meals.",
+     "zh": "这家店出售预制餐食。"
+    }
+   ],
+   "ety": "拉丁 prae-(前) + parare(准备、安排)→ praeparare(提前安排)→ 古法语 preparer → prepare/prepared。",
+   "ph": "重音在第二音节 -pared，读 /prɪˈperd/；词尾 -ed 读 /d/(浊音)，不是 /t/。",
+   "tip": "pre-(前)+pare(准备)=『提前准备』；prepared 就是『已经提前备好』的状态。",
+   "xex": [
+    {
+     "en": "The professor expects students to come prepared with questions.",
+     "zh": "教授希望学生带着问题、有备而来。",
+     "src": "造句"
+    },
+    {
+     "en": "Be prepared for unexpected questions during the interview.",
+     "zh": "面试中要做好应对意外提问的准备。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "ready",
+     "ipa": "/ˈredi/",
+     "note": "ready 强调『状态上就绪可用』；prepared 强调『事先做了准备的动作/过程』"
+    },
+    {
+     "w": "equipped",
+     "ipa": "/ɪˈkwɪpt/",
+     "note": "equipped 强调『配备了所需工具/装备』，更具体"
+    }
+   ],
+   "nu": "be prepared for sth 表示『为……做好了准备』；prepared 与 ready 的区别在于 prepared 暗含『提前准备过』的过程，ready 则偏结果状态。",
+   "rootfam": [
+    {
+     "root": "par",
+     "meaning": "准备、安排",
+     "words": [
+      {
+       "w": "prepare",
+       "g": "准备"
+      },
+      {
+       "w": "preparation",
+       "g": "准备、预备"
+      },
+      {
+       "w": "repair",
+       "g": "修理（re-重新+安排）"
+      },
+      {
+       "w": "separate",
+       "g": "分开（se-分开+安排）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "quotas",
+   "ipa": "/ˈkwoʊtə/",
+   "zh": "名词：配额，定额；限额（分配给个人或组织应完成或不得超过的数量）",
+   "core": "分到你名下的那份固定份额，多了不让、少了得补",
+   "senses": [
+    {
+     "gloss": "配额/定额（按制度分配的数量上限）",
+     "logic": "由\"份\"引申为\"官方规定的量\"",
+     "en": "Each country was given an import quota for textiles.",
+     "zh": "每个国家都被分配了纺织品的进口配额。"
+    },
+    {
+     "gloss": "（工作、招生等的）指标，名额",
+     "logic": "从数量限制扩展到必须达成的任务量",
+     "en": "The sales team failed to meet its monthly quota.",
+     "zh": "销售团队没有完成月度指标。"
+    }
+   ],
+   "ety": "拉丁语 quota pars，意为\"多大的一份\"；16世纪经法语进入英语，先指\"份额\"，后固定为\"配额\"",
+   "ph": "qu 固定发 /kw/，重音在首音节 quo-，尾音 -ta 读弱化 /tə/",
+   "tip": "quota 里藏着 question 的 qu（都源自拉丁\"多少\"）——配额就是\"该给多少\"的答案",
+   "xex": [
+    {
+     "en": "Universities now have a strict quota for international students.",
+     "zh": "各大学如今对国际学生有严格的配额限制。",
+     "src": "造句"
+    },
+    {
+     "en": "The government raised the fishing quota to help local fishermen.",
+     "zh": "政府提高了捕捞配额以帮助当地渔民。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "allotment",
+     "ipa": "/əˈlɒtmənt/",
+     "note": "更强调\"分配下来的份额\"，常用于土地、时间；quota 强调数量上限"
+    },
+    {
+     "w": "allowance",
+     "ipa": "/əˈlaʊəns/",
+     "note": "侧重\"允许的数量\"，如行李限额、每日摄入量"
+    }
+   ],
+   "nu": "作可数名词，常用 quota on/for sth 表示\"对某物的配额\"；固定搭配 meet/fulfill a quota（完成指标）",
+   "rootfam": []
+  },
+  {
+   "w": "recycling",
+   "ipa": "/ˌriːˈsaɪklɪŋ/",
+   "zh": "名词：回收利用，再循环（废物的收集与再利用）",
+   "core": "让用过的东西重新进入循环，而不是直接扔掉",
+   "senses": [
+    {
+     "gloss": "回收利用（把废弃物加工成新原料）",
+     "logic": "re-再 + cycle 循环",
+     "en": "Recycling reduces the amount of waste sent to landfills.",
+     "zh": "回收利用减少了送往垃圾填埋场的废物量。"
+    },
+    {
+     "gloss": "（观念、材料的）循环再利用",
+     "logic": "由\"物质循环\"扩展到抽象复用",
+     "en": "Recycling of old buildings is cheaper than demolition.",
+     "zh": "旧建筑的循环利用比拆除更省钱。"
+    }
+   ],
+   "ety": "re-（再）+ cycl-（环，源自希腊语 kyklos 圆）+ -ing；19世纪先指\"再循环\"，环保意义上的\"回收\"在20世纪70年代普及",
+   "ph": "重音在第二音节 -cy-，前缀 re- 读 /riː/ 长音；注意 cy 读 /saɪ/ 而非 /ki/",
+   "tip": "re + cycle = 让东西\"再转一圈\"回来，垃圾桶上的三角形循环箭头就是这个意思",
+   "xex": [
+    {
+     "en": "The city introduced a new recycling program last spring.",
+     "zh": "这个城市去年春天推行了一项新的回收计划。",
+     "src": "造句"
+    },
+    {
+     "en": "Plastic recycling is more complicated than most people think.",
+     "zh": "塑料回收比大多数人想象的更复杂。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "reuse",
+     "ipa": "/ˌriːˈjuːs/",
+     "note": "直接\"再次使用\"原物，不经过加工；recycling 是加工成新原料"
+    }
+   ],
+   "nu": "不可数名词，常作定语（recycling bin/center/program）；动词形式为 recycle，\"可回收的\"是 recyclable",
+   "rootfam": [
+    {
+     "root": "cycl",
+     "meaning": "圆，环，循环",
+     "words": [
+      {
+       "w": "cycle",
+       "g": "循环；周期"
+      },
+      {
+       "w": "bicycle",
+       "g": "自行车（两个轮）"
+      },
+      {
+       "w": "cyclone",
+       "g": "气旋，旋风"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "redefined",
+   "ipa": "/ˌriːdɪˈfaɪnd/",
+   "zh": "动词：重新定义，重新界定（对概念、关系、角色给出新的含义）",
+   "core": "给一个旧词、旧角色、旧事物换一套新的解释框架",
+   "senses": [
+    {
+     "gloss": "重新定义（赋予新含义）",
+     "logic": "re-再 + define 定义",
+     "en": "Technology has redefined the way we work.",
+     "zh": "技术重新定义了我们工作的方式。"
+    },
+    {
+     "gloss": "重新划定（范围、边界）",
+     "logic": "从\"含义\"扩展到\"界限\"",
+     "en": "The merger will redefine the company's market position.",
+     "zh": "这次合并将重新界定公司的市场地位。"
+    }
+   ],
+   "ety": "re-（再）+ define（源自拉丁 definire，de-完全 + finire 划定边界）→ 17世纪起表示\"重新划定、重新定义\"",
+   "ph": "重音在 -fine-，前缀 re- 读 /riː/；注意这里给出的 -d 是过去式/过去分词结尾，原形 redefine",
+   "tip": "de-fine 本义是\"划定边界\"（fin = 界限，如 final 最后的、finish 结束），redefine 就是重新划一次界",
+   "xex": [
+    {
+     "en": "The pandemic redefined what it means to go to work.",
+     "zh": "这场疫情重新定义了\"去上班\"的含义。",
+     "src": "造句"
+    },
+    {
+     "en": "She hopes to redefine success on her own terms.",
+     "zh": "她希望用自己的标准重新定义成功。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "reframe",
+     "ipa": "/ˌriːˈfreɪm/",
+     "note": "侧重\"换一个框架/视角\"来看；redefine 更强调改变定义本身"
+    }
+   ],
+   "nu": "及物动词，直接跟宾语 redefine sth；常与 way、role、relationship、identity 搭配",
+   "rootfam": [
+    {
+     "root": "fin",
+     "meaning": "界限，结束",
+     "words": [
+      {
+       "w": "define",
+       "g": "下定义，界定"
+      },
+      {
+       "w": "final",
+       "g": "最终的"
+      },
+      {
+       "w": "infinite",
+       "g": "无限的（无边界）"
+      },
+      {
+       "w": "confine",
+       "g": "限制，禁闭"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "reminiscent",
+   "ipa": "/ˌremɪˈnɪsnt/",
+   "zh": "形容词：使人联想起……的，怀旧的；回忆的",
+   "core": "眼前的东西让你不由自主想起过去的某个画面",
+   "senses": [
+    {
+     "gloss": "令人想起……的（be reminiscent of）",
+     "logic": "由\"回忆的\"引申为\"勾起回忆的\"",
+     "en": "The smell of rain is reminiscent of my childhood in the south.",
+     "zh": "雨的气息让我想起在南方度过的童年。"
+    },
+    {
+     "gloss": "怀旧的，回忆性的",
+     "logic": "侧重主体沉浸于回忆",
+     "en": "The old man grew reminiscent as he told the story.",
+     "zh": "老人讲起往事时陷入了怀旧的情绪。"
+    }
+   ],
+   "ety": "拉丁语 reminiscor（想起，回忆）→ 现在分词 reminiscentem；18世纪进入英语，先表\"回忆的\"，后表\"唤起回忆的\"",
+   "ph": "重音在第三音节 -nis-，前两音节弱读；注意 -sc- 发 /s/ 不发音 /k/",
+   "tip": "reminiscent 里有 mind（心/记忆）的影子——re + min(d) + iscent，记忆又被勾回来了",
+   "xex": [
+    {
+     "en": "Her style of painting is reminiscent of the Impressionists.",
+     "zh": "她的画风让人联想到印象派画家。",
+     "src": "造句"
+    },
+    {
+     "en": "The melody is strongly reminiscent of an old folk song.",
+     "zh": "这段旋律让人强烈地想起一首古老的民谣。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "evocative",
+     "ipa": "/ɪˈvɒkətɪv/",
+     "note": "同样表\"唤起回忆/情感的\"，但 evocative 更正式、可用于唤起情感而非仅回忆"
+    }
+   ],
+   "nu": "几乎总用固定结构 be reminiscent of + 名词（使想起……）；单独作定语时表\"怀旧的\"",
+   "rootfam": [
+    {
+     "root": "memin / reminisc",
+     "meaning": "记忆，想起",
+     "words": [
+      {
+       "w": "reminisce",
+       "g": "追忆，缅怀"
+      },
+      {
+       "w": "reminiscence",
+       "g": "回忆录，往事"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "repurpose",
+   "ipa": "/ˌriːˈpɜːrpəs/",
+   "zh": "动词：改作他用，赋予新用途（把物品或内容用于不同目的）",
+   "core": "不扔不造新的，把旧东西换个用途继续用",
+   "senses": [
+    {
+     "gloss": "改变用途，改作他用",
+     "logic": "re-再 + purpose 用途",
+     "en": "The factory was repurposed as an art gallery.",
+     "zh": "这座工厂被改造成了美术馆。"
+    },
+    {
+     "gloss": "（内容）改写后重新用于其他媒介",
+     "logic": "由实物扩展到内容、素材",
+     "en": "The video was repurposed into a series of short clips.",
+     "zh": "这段视频被改制成了一系列短视频。"
+    }
+   ],
+   "ety": "re-（再）+ purpose（源自拉丁 proponere，pro-前 + ponere 放）→ 20世纪末出现的较新词，表\"为……重新设定用途\"",
+   "ph": "重音在 -pur-，注意 purpose 读 /ˈpɜːrpəs/，美音 -r- 卷舌明显",
+   "tip": "purpose = 目的，repurpose = 重新给个目的；脑子里记\"旧物新用\"即可",
+   "xex": [
+    {
+     "en": "They repurposed the old barn into a workshop.",
+     "zh": "他们把旧谷仓改造成了一个工作坊。",
+     "src": "造句"
+    },
+    {
+     "en": "You can repurpose a glass jar as a pencil holder.",
+     "zh": "你可以把玻璃罐改造成笔筒。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "convert",
+     "ipa": "/kənˈvɜːrt/",
+     "note": "convert 更通用，泛指\"转变\"（含信仰、单位）；repurpose 特指\"改用途\""
+    }
+   ],
+   "nu": "及物动词，常接 repurpose A as B（把 A 改用作 B）；也可说 repurpose sth into sth",
+   "rootfam": [
+    {
+     "root": "pos / pon",
+     "meaning": "放，放置",
+     "words": [
+      {
+       "w": "purpose",
+       "g": "目的，意图"
+      },
+      {
+       "w": "propose",
+       "g": "提议（放出来）"
+      },
+      {
+       "w": "compose",
+       "g": "组成（放在一起）"
+      },
+      {
+       "w": "dispose",
+       "g": "处理，布置"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "resonates",
+   "ipa": "/ˈrezəneɪts/",
+   "zh": "动词：产生共鸣，引起共振；引起认同，引发回应",
+   "core": "一个声音/观点撞上你，让你内部也跟着震动起来",
+   "senses": [
+    {
+     "gloss": "（物体）共振，回响",
+     "logic": "声学本义",
+     "en": "The hall resonates with the sound of the organ.",
+     "zh": "大厅里回响着管风琴的声音。"
+    },
+    {
+     "gloss": "引起共鸣，让人认同",
+     "logic": "由物理共振引申为情感/思想共鸣",
+     "en": "His message resonates with young voters.",
+     "zh": "他的主张引起了年轻选民的共鸣。"
+    }
+   ],
+   "ety": "拉丁语 resonare（re-回 + sonare 发声）→ 17世纪英语 resonate，先指\"回声\"，后指物理\"共振\"，20世纪引申为\"情感共鸣\"",
+   "ph": "重音在首音节 re-，s 发 /z/（在两元音间浊化）；注意 o 读 /ə/ 弱化，a 读 /eɪ/",
+   "tip": "son 在拉丁语里是\"声音\"（sonar 声呐、sound 同源），re + sonate = 声音再回来 = 回响",
+   "xex": [
+    {
+     "en": "The lecture's central idea resonates with my own research.",
+     "zh": "讲座的核心观点与我的研究产生了共鸣。",
+     "src": "造句"
+    },
+    {
+     "en": "A guitar string resonates when its frequency matches the sound wave.",
+     "zh": "当吉他的弦的频率与声波一致时，它就会产生共振。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "echo",
+     "ipa": "/ˈekoʊ/",
+     "note": "echo 侧重声音的\"回声\"；resonate 强调频率上的\"共振\"，比喻义上更深刻"
+    }
+   ],
+   "nu": "常搭配 resonate with + 人/情感（引起……的共鸣）；物理语境下 resonate 指共振、回响",
+   "rootfam": [
+    {
+     "root": "son",
+     "meaning": "声音",
+     "words": [
+      {
+       "w": "sonar",
+       "g": "声呐"
+      },
+      {
+       "w": "sonic",
+       "g": "声音的，音速的"
+      },
+      {
+       "w": "dissonant",
+       "g": "不和谐的，刺耳的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "restock",
+   "ipa": "/ˌriːˈstɑːk/",
+   "zh": "动词：补充存货，重新进货，补货",
+   "core": "货架空了，再把新货填回去",
+   "senses": [
+    {
+     "gloss": "补货，重新进货",
+     "logic": "re-再 + stock 存货",
+     "en": "The store restocks its shelves every Monday.",
+     "zh": "这家店每周一给货架补货。"
+    },
+    {
+     "gloss": "（湖、河等）重新放养鱼苗",
+     "logic": "由\"货\"扩展到\"生物资源\"",
+     "en": "The river was restocked with trout last year.",
+     "zh": "这条河去年重新投放了鳟鱼苗。"
+    }
+   ],
+   "ety": "re-（再）+ stock（源自古英语 stocc 树干、木桩，后指\"库存、存货\"）→ 19世纪起表\"重新进货\"",
+   "ph": "重音在 -stock-，o 读美音 /ɑː/（开口音）；前缀 re- 读 /riː/",
+   "tip": "stock 是\"存货\"，restock 就是\"把存货再填满\"；货架上的空位补满的画面",
+   "xex": [
+    {
+     "en": "We need to restock the fridge before the holiday.",
+     "zh": "假期前我们得给冰箱补货。",
+     "src": "造句"
+    },
+    {
+     "en": "The pharmacy restocks its medicine twice a week.",
+     "zh": "这家药店每周补两次药。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "replenish",
+     "ipa": "/rɪˈplenɪʃ/",
+     "note": "replenish 更正式，强调\"重新装满、恢复充足\"，也用于抽象（如 replenish energy）"
+    }
+   ],
+   "nu": "及物动词，restock sth（给……补货）；名词 stock 本身可表\"库存\"，短语 out of stock（缺货）是高频搭配",
+   "rootfam": [
+    {
+     "root": "stock",
+     "meaning": "存货，储备",
+     "words": [
+      {
+       "w": "stock",
+       "g": "库存；股票；家畜"
+      },
+      {
+       "w": "stockpile",
+       "g": "储备，囤积"
+      },
+      {
+       "w": "livestock",
+       "g": "家畜"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "symposium",
+   "ipa": "/sɪmˈpoʊziəm/",
+   "zh": "名词：研讨会，专题讨论会（多位专家就某主题发言、讨论的会议）",
+   "core": "一群人围坐，就同一个主题各抒己见的学术聚会",
+   "senses": [
+    {
+     "gloss": "研讨会，专题讨论会",
+     "logic": "由古希腊\"饮酒聚会\"引申为正式学术讨论",
+     "en": "She presented her findings at an international symposium.",
+     "zh": "她在一个国际研讨会上展示了自己的研究成果。"
+    },
+    {
+     "gloss": "（古希腊的）酒宴，会饮",
+     "logic": "历史本义，指边饮边谈的聚会",
+     "en": "Plato's Symposium depicts a banquet of philosophical discussion.",
+     "zh": "柏拉图的《会饮篇》描绘了一场哲学讨论的酒宴。"
+    }
+   ],
+   "ety": "希腊语 symposion（syn- 一起 + posis 饮酒）→ 拉丁语 symposium；古希腊人会饮边谈哲学，后指\"专题讨论会\"",
+   "ph": "重音在第二音节 -po-，y 读 /ɪ/，注意复数形式是 symposiums 或 symposia /sɪmˈpoʊziə/",
+   "tip": "sym = 一起（sympathy 同情=一起感受），posium = 饮酒；古人\"一起喝酒谈正事\"，今天变成\"一起开会谈学术\"",
+   "xex": [
+    {
+     "en": "The university hosted a symposium on climate change.",
+     "zh": "这所大学举办了一场关于气候变化的研讨会。",
+     "src": "造句"
+    },
+    {
+     "en": "Experts from ten countries attended the annual symposium.",
+     "zh": "来自十个国家的专家参加了这场年度研讨会。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "conference",
+     "ipa": "/ˈkɒnfərəns/",
+     "note": "conference 更大型、多主题、多天；symposium 更小型、单一主题、深度讨论"
+    },
+    {
+     "w": "seminar",
+     "ipa": "/ˈsemɪnɑːr/",
+     "note": "seminar 常为教学性质的小班研讨；symposium 更偏专家学者发表"
+    }
+   ],
+   "nu": "可数名词，复数 symposia（拉丁式）或 symposiums；常用搭配 hold/host a symposium（举办研讨会）",
+   "rootfam": [
+    {
+     "root": "sym / syn",
+     "meaning": "一起，共同",
+     "words": [
+      {
+       "w": "symphony",
+       "g": "交响乐（一起发声）"
+      },
+      {
+       "w": "sympathy",
+       "g": "同情（一起感受）"
+      },
+      {
+       "w": "synthesis",
+       "g": "综合（放在一起）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "traction",
+   "ipa": "/ˈtrækʃn/",
+   "zh": "名词：牵引力，摩擦力（使车轮抓住地面）；支持度，接受度（想法/产品获得进展）",
+   "core": "轮子抓得住地面才走得动——一个想法能\"抓住\"人群、真正跑起来，就叫有 traction",
+   "senses": [
+    {
+     "gloss": "（轮胎的）抓地力，牵引力",
+     "logic": "物理/机械本义",
+     "en": "The car lost traction on the icy road.",
+     "zh": "汽车在结冰的路面上失去了抓地力。"
+    },
+    {
+     "gloss": "（想法、产品的）接受度，进展",
+     "logic": "由\"抓地\"引申为\"获得支持、开始增长\"",
+     "en": "The new app is gaining traction among college students.",
+     "zh": "这款新应用正在大学生中打开局面。"
+    }
+   ],
+   "ety": "拉丁语 trahere（拉、拽）→ 晚期拉丁 tractio（拉的动作）→ 17世纪英语表\"拉力\"；20世纪引申指\"赢得支持/进展\"",
+   "ph": "重音在首音节，-ction 读 /kʃn/（ct 中 c 与 t 融合）；注意 a 读 /æ/",
+   "tip": "tract 本义是\"拉\"（tractor 拖拉机就是\"拉东西的机器\"），轮胎\"拉\"住地面→有抓地力→想法\"拉\"住人心→有 traction",
+   "xex": [
+    {
+     "en": "The startup finally gained traction after its second product launch.",
+     "zh": "这家初创公司在第二次产品发布后终于打开了局面。",
+     "src": "造句"
+    },
+    {
+     "en": "Four-wheel drive gives the truck better traction on mud.",
+     "zh": "四轮驱动让卡车在泥地上有更好的抓地力。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "momentum",
+     "ipa": "/məˈmentəm/",
+     "note": "momentum 强调\"势头、惯性\"（已经在动）；traction 强调\"开始获得支持、立足\"（刚抓住地面）"
+    }
+   ],
+   "nu": "不可数名词，商业语境高频搭配 gain/lose traction（获得/失去支持），get traction with sb",
+   "rootfam": [
+    {
+     "root": "tract",
+     "meaning": "拉，拽",
+     "words": [
+      {
+       "w": "tractor",
+       "g": "拖拉机"
+      },
+      {
+       "w": "attract",
+       "g": "吸引（拉过来）"
+      },
+      {
+       "w": "extract",
+       "g": "提取（拉出来）"
+      },
+      {
+       "w": "contract",
+       "g": "合同；收缩（拉到一起）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "trainees",
+   "ipa": "/treɪˈniː/",
+   "zh": "名词：受训者，实习生，见习生（正在接受培训的人）",
+   "core": "正在接受训练、还没出师的那个人",
+   "senses": [
+    {
+     "gloss": "受训者，实习生",
+     "logic": "train（培训）+ -ee（被动承受者）",
+     "en": "Each trainee is assigned to an experienced mentor.",
+     "zh": "每位实习生都会被安排一位有经验的导师。"
+    }
+   ],
+   "ety": "train（训练，源自拉丁 trahere 拉，引申\"拉着一路教\"）+ -ee（表\"被动者\"的后缀，源自法语）→ 19世纪起表\"受训者\"",
+   "ph": "重音在第二音节 -nee，读 /niː/ 长音；-ee 后缀总读重读 /iː/",
+   "tip": "-ee 结尾=被动的人（employee 被雇用的人，interviewee 被面试的人），trainee = 被训练的人",
+   "xex": [
+    {
+     "en": "The new trainees will spend six months in the field.",
+     "zh": "新一批受训者将在基层待六个月。",
+     "src": "造句"
+    },
+    {
+     "en": "Trainees earn a small salary during the program.",
+     "zh": "受训者在项目期间领取少量薪水。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "apprentice",
+     "ipa": "/əˈprentɪs/",
+     "note": "apprentice 强调跟着师傅学手艺的\"学徒\"；trainee 更通用，泛指任何培训中的人"
+    },
+    {
+     "w": "intern",
+     "ipa": "/ˈɪntɜːrn/",
+     "note": "intern 特指短期\"实习生\"，通常为在校生；trainee 可指正式入职前的受训者"
+    }
+   ],
+   "nu": "可数名词，复数 trainees；-ee 表示\"被……的人\"，对比 -er（trainer = 培训师，主动施训者）",
+   "rootfam": [
+    {
+     "root": "train",
+     "meaning": "训练，拉",
+     "words": [
+      {
+       "w": "trainer",
+       "g": "培训师，教练"
+      },
+      {
+       "w": "training",
+       "g": "培训，训练"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "unpredictable",
+   "ipa": "/ˌʌnprɪˈdɪktəbl/",
+   "zh": "形容词：不可预测的，难以预料的，变化莫测的",
+   "core": "下一步会发生什么，你根本算不出来",
+   "senses": [
+    {
+     "gloss": "不可预测的，难以预料的",
+     "logic": "un-不 + predictable 可预测的",
+     "en": "Weather in the mountains is highly unpredictable.",
+     "zh": "山区的天气极其难以预测。"
+    },
+    {
+     "gloss": "（人、行为）反复无常的，捉摸不定的",
+     "logic": "由事件扩展到人的性情",
+     "en": "He is an unpredictable player, brilliant one day and clumsy the next.",
+     "zh": "他是个难以捉摸的球员，今天出色明天失常。"
+    }
+   ],
+   "ety": "un-（不）+ predict（pre-前 + dict 说，\"事先说出\"）+ -able（可……的）→ 19世纪起表\"无法预言的\"",
+   "ph": "重音在 -dict-，前缀 un- 弱读 /ʌn/；注意 pre- 读 /prɪ/ 不重读，dict 读 /dɪkt/",
+   "tip": "pre-dict = 提前说（dict 说，如 dictation 听写、dictionary 词典），unpredictable = 没法提前说出来的",
+   "xex": [
+    {
+     "en": "The outcome of the experiment was completely unpredictable.",
+     "zh": "这次实验的结果完全无法预测。",
+     "src": "造句"
+    },
+    {
+     "en": "Life is unpredictable, so enjoy every moment.",
+     "zh": "人生难以预料，所以享受每一刻吧。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "unforeseeable",
+     "ipa": "/ˌʌnfɔːrˈsiːəbl/",
+     "note": "unforeseeable 强调\"无法预见\"（客观超出预测范围）；unpredictable 更强调\"没有规律、反复无常\""
+    },
+    {
+     "w": "erratic",
+     "ipa": "/ɪˈrætɪk/",
+     "note": "erratic 侧重\"不稳定的、无规律的\"行为变化；unpredictable 侧重\"结果无法预测\""
+    }
+   ],
+   "nu": "形容词，可修饰事物（weather、outcome）或人（player、person）；副词为 unpredictably，名词为 unpredictability",
+   "rootfam": [
+    {
+     "root": "dict",
+     "meaning": "说，言",
+     "words": [
+      {
+       "w": "predict",
+       "g": "预测（提前说）"
+      },
+      {
+       "w": "dictation",
+       "g": "听写"
+      },
+      {
+       "w": "dictator",
+       "g": "独裁者（发号施令者）"
+      },
+      {
+       "w": "contradict",
+       "g": "反驳（反着说）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "vertical",
+   "ipa": "/ˈvɜːrtɪkl/",
+   "zh": "形容词：垂直的，纵向的，竖直的；名词：垂直线，垂直方向",
+   "core": "从头顶直插脚底的那条方向，跟地面成直角",
+   "senses": [
+    {
+     "gloss": "垂直的，竖立的",
+     "logic": "几何本义",
+     "en": "The cliff face is almost vertical.",
+     "zh": "这面悬崖几乎是垂直的。"
+    },
+    {
+     "gloss": "纵向的，垂直整合的（组织结构、行业层级）",
+     "logic": "由几何引申到组织/商业层级",
+     "en": "The company pursued vertical integration across its supply chain.",
+     "zh": "这家公司在其供应链上推行垂直整合。"
+    }
+   ],
+   "ety": "拉丁语 vertex（顶点、最高点）→ 后期拉丁 verticalis → 16世纪英语；由\"从顶点垂下的方向\"引申为\"垂直的\"",
+   "ph": "重音在首音节，ver 读 /vɜːr/（美音卷舌）；注意 -ical 尾读 /ɪkl/，与 horizontal（水平的）相对",
+   "tip": "ver = 顶点（vertex 顶点、vertical 从顶点往下直落），想象一根线从头顶顶点垂下来，就是垂直线",
+   "xex": [
+    {
+     "en": "Draw a vertical line down the center of the page.",
+     "zh": "在页面中央画一条竖直线。",
+     "src": "造句"
+    },
+    {
+     "en": "The skyscraper's vertical lines make it look even taller.",
+     "zh": "摩天大楼的竖向线条让它看起来更高。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "upright",
+     "ipa": "/ˈʌpraɪt/",
+     "note": "upright 强调\"直立、不歪\"的状态；vertical 是几何意义上\"与水平面成直角\""
+    },
+    {
+     "w": "perpendicular",
+     "ipa": "/ˌpɜːrpənˈdɪkjələr/",
+     "note": "perpendicular 是数学术语\"成直角的\"；vertical 更日常"
+    }
+   ],
+   "nu": "形容词，反义词 horizontal（水平的）；名词形式作\"垂直线\"；商业语境 vertical integration（垂直整合）、vertical market（垂直市场）为高频搭配",
+   "rootfam": [
+    {
+     "root": "vert",
+     "meaning": "转，顶",
+     "words": [
+      {
+       "w": "vertex",
+       "g": "顶点，最高点"
+      },
+      {
+       "w": "convert",
+       "g": "转变（转过去）"
+      },
+      {
+       "w": "advert",
+       "g": "提及；广告（转向注意）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "viral",
+   "ipa": "/ˈvaɪrəl/",
+   "zh": "形容词：病毒性的，病毒引起的；病毒式传播的（迅速广泛流传）",
+   "core": "像病毒一样快速自我复制、一传十十传百地扩散",
+   "senses": [
+    {
+     "gloss": "病毒的，病毒引起的",
+     "logic": "医学本义",
+     "en": "The patient was diagnosed with a viral infection.",
+     "zh": "这位病人被诊断出病毒感染。"
+    },
+    {
+     "gloss": "病毒式传播的，走红的",
+     "logic": "由病毒扩散引申为信息快速传播",
+     "en": "The video went viral within hours.",
+     "zh": "这段视频在几小时内就病毒式疯传了。"
+    }
+   ],
+   "ety": "拉丁语 virus（毒液、毒物）→ 19世纪末英语 virus（病毒）+ -al（形容词后缀）→ viral；\"病毒式传播\"义源于20世纪末互联网时代",
+   "ph": "重音在首音节，vi 读 /vaɪ/，r 卷舌；注意与 virus（/ˈvaɪrəs/）区分，-al 尾读 /əl/ 弱化",
+   "tip": "virus（病毒）去掉 us 换成 al = viral；一个视频像病毒一样自我复制式传播，就叫 go viral（爆红）",
+   "xex": [
+    {
+     "en": "The campaign video went viral and reached millions of viewers.",
+     "zh": "这支宣传视频病毒式传播，触达了数百万观众。",
+     "src": "造句"
+    },
+    {
+     "en": "She tested positive for a viral infection and stayed home.",
+     "zh": "她病毒检测呈阳性，就待在了家里。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "contagious",
+     "ipa": "/kənˈteɪdʒəs/",
+     "note": "contagious 医学上指\"接触传染的\"，比喻义也可表\"有感染力的\"（情绪）；viral 特指互联网快速传播"
+    }
+   ],
+   "nu": "形容词，固定搭配 go viral（爆红、疯传）；与 bacterial（细菌的）相对，医学上 viral infection 指病毒感染",
+   "rootfam": [
+    {
+     "root": "virus / vir",
+     "meaning": "病毒，毒",
+     "words": [
+      {
+       "w": "virus",
+       "g": "病毒"
+      },
+      {
+       "w": "virology",
+       "g": "病毒学"
+      },
+      {
+       "w": "antiviral",
+       "g": "抗病毒的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "absorb",
+   "ipa": "/əbˈzɔːrb/",
+   "zh": "v. 吸收；使专注"
+  },
+  {
+   "w": "address",
+   "ipa": "/əˈdres/",
+   "zh": "v. 处理；解决；n. 地址"
+  },
+  {
+   "w": "amplify",
+   "ipa": "/ˈæmplɪfaɪ/",
+   "zh": "v. 放大；增强"
+  },
+  {
+   "w": "ancient",
+   "ipa": "/ˈeɪnʃənt/",
+   "zh": "adj. 古代的；古老的"
+  },
+  {
+   "w": "areas",
+   "ipa": "/ˈeriəz/",
+   "zh": "n. area 的复数：区域；领域"
+  },
+  {
+   "w": "balance",
+   "ipa": "/ˈbæləns/",
+   "zh": "n./v. 平衡"
+  },
+  {
+   "w": "buildings",
+   "ipa": "/ˈbɪldɪŋz/",
+   "zh": "n. building 的复数：建筑物"
+  },
+  {
+   "w": "campaigns",
+   "ipa": "/kæmˈpeɪnz/",
+   "zh": "n. campaign 的复数：运动；活动"
+  },
+  {
+   "w": "cities",
+   "ipa": "/ˈsɪtiz/",
+   "zh": "n. city 的复数：城市"
+  },
+  {
+   "w": "city",
+   "ipa": "/ˈsɪti/",
+   "zh": "n. 城市"
+  },
+  {
+   "w": "communities",
+   "ipa": "/kəˈmjuːnətiz/",
+   "zh": "n. community 的复数：社区；群体"
+  },
+  {
+   "w": "creating",
+   "ipa": "/kriˈeɪtɪŋ/",
+   "zh": "v. create 的现在分词：创造；造成"
+  },
+  {
+   "w": "early",
+   "ipa": "/ˈɜːrli/",
+   "zh": "adj./adv. 早期的；早"
+  },
+  {
+   "w": "effective",
+   "ipa": "/ɪˈfektɪv/",
+   "zh": "adj. 有效的"
+  },
+  {
+   "w": "effectively",
+   "ipa": "/ɪˈfektɪvli/",
+   "zh": "adv. 有效地"
+  },
+  {
+   "w": "enough",
+   "ipa": "/ɪˈnʌf/",
+   "zh": "adj./adv. 足够的；充分地"
+  },
+  {
+   "w": "essential",
+   "ipa": "/ɪˈsenʃl/",
+   "zh": "adj. 必不可少的；本质的"
+  },
+  {
+   "w": "exposure",
+   "ipa": "/ɪkˈspoʊʒər/",
+   "zh": "n. 暴露；接触"
+  },
+  {
+   "w": "features",
+   "ipa": "/ˈfiːtʃərz/",
+   "zh": "n. feature 的复数：特征；特色"
+  },
+  {
+   "w": "first",
+   "ipa": "/fɜːrst/",
+   "zh": "adj./adv. 第一的；首先"
+  },
+  {
+   "w": "health",
+   "ipa": "/helθ/",
+   "zh": "n. 健康"
+  },
+  {
+   "w": "historian",
+   "ipa": "/hɪˈstɔːriən/",
+   "zh": "n. 历史学家"
+  },
+  {
+   "w": "how",
+   "ipa": "/haʊ/",
+   "zh": "adv. 如何；怎样"
+  },
+  {
+   "w": "individuals",
+   "ipa": "/ˌɪndɪˈvɪdʒuəlz/",
+   "zh": "n. individual 的复数：个人；个体"
+  },
+  {
+   "w": "insulation",
+   "ipa": "/ˌɪnsəˈleɪʃn/",
+   "zh": "n. 隔热；绝缘"
+  },
+  {
+   "w": "invaluable",
+   "ipa": "/ɪnˈvæljuəbl/",
+   "zh": "adj. 极宝贵的；无价的"
+  },
+  {
+   "w": "known",
+   "ipa": "/noʊn/",
+   "zh": "adj. know 的过去分词：已知的；知名的"
+  },
+  {
+   "w": "late",
+   "ipa": "/leɪt/",
+   "zh": "adj./adv. 晚的；迟的"
+  },
+  {
+   "w": "likely",
+   "ipa": "/ˈlaɪkli/",
+   "zh": "adj. 很可能的"
+  },
+  {
+   "w": "mid",
+   "ipa": "/mɪd/",
+   "zh": "adj. 中间的；中期的"
+  },
+  {
+   "w": "once",
+   "ipa": "/wʌns/",
+   "zh": "adv./conj. 曾经；一旦"
+  },
+  {
+   "w": "philosophy",
+   "ipa": "/fəˈlɑːsəfi/",
+   "zh": "n. 哲学；理念"
+  },
+  {
+   "w": "planning",
+   "ipa": "/ˈplænɪŋ/",
+   "zh": "n. 规划；计划"
+  },
+  {
+   "w": "prepare",
+   "ipa": "/prɪˈper/",
+   "zh": "v. 准备"
+  },
+  {
+   "w": "price",
+   "ipa": "/praɪs/",
+   "zh": "n. 价格"
+  },
+  {
+   "w": "quality",
+   "ipa": "/ˈkwɑːləti/",
+   "zh": "n. 质量；品质"
+  },
+  {
+   "w": "receive",
+   "ipa": "/rɪˈsiːv/",
+   "zh": "v. 收到；接收"
+  },
+  {
+   "w": "refreshments",
+   "ipa": "/rɪˈfreʃmənts/",
+   "zh": "n. 茶点；点心"
+  },
+  {
+   "w": "remains",
+   "ipa": "/rɪˈmeɪnz/",
+   "zh": "n. 遗迹；剩余物（亦为 remain 的第三人称单数：仍然）"
+  },
+  {
+   "w": "scheduled",
+   "ipa": "/ˈskedʒuːld/",
+   "zh": "adj. 排定的；预定的"
+  },
+  {
+   "w": "social",
+   "ipa": "/ˈsoʊʃl/",
+   "zh": "adj. 社会的；社交的"
+  },
+  {
+   "w": "sound",
+   "ipa": "/saʊnd/",
+   "zh": "n./v./adj. 声音；听起来；合理的"
+  },
+  {
+   "w": "space",
+   "ipa": "/speɪs/",
+   "zh": "n. 空间；太空"
+  },
+  {
+   "w": "spaces",
+   "ipa": "/ˈspeɪsɪz/",
+   "zh": "n. space 的复数：空间"
+  },
+  {
+   "w": "studies",
+   "ipa": "/ˈstʌdiz/",
+   "zh": "n. study 的复数：研究；学习"
+  },
+  {
+   "w": "sustainable",
+   "ipa": "/səˈsteɪnəbl/",
+   "zh": "adj. 可持续的"
+  },
+  {
+   "w": "time",
+   "ipa": "/taɪm/",
+   "zh": "n. 时间"
+  },
+  {
+   "w": "two",
+   "ipa": "/tuː/",
+   "zh": "num. 二；两个"
+  },
+  {
+   "w": "unpredictability",
+   "ipa": "/ˌʌnprɪˌdɪktəˈbɪləti/",
+   "zh": "n. 不可预测性"
+  },
+  {
+   "w": "up",
+   "ipa": "/ʌp/",
+   "zh": "adv./prep. 向上；上升"
+  },
+  {
+   "w": "upward",
+   "ipa": "/ˈʌpwərd/",
+   "zh": "adj./adv. 向上的；向上地"
+  },
+  {
+   "w": "urban",
+   "ipa": "/ˈɜːrbən/",
+   "zh": "adj. 城市的"
+  },
+  {
+   "w": "vegetation",
+   "ipa": "/ˌvedʒəˈteɪʃn/",
+   "zh": "n. 植被"
+  },
+  {
+   "w": "western",
+   "ipa": "/ˈwestərn/",
+   "zh": "adj. 西方的；西部的"
+  }
+ ]
+}
