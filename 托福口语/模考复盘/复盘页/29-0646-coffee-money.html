@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>咖啡制作跟读 + 理财面试 · 口语模考复盘</title>
+<script src="../../speech-core.js"></script>
+<style>
+:root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--blue:#4a5cc7;--ok:#4a9e6f;--bad:#c04a3a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:30px 20px 90px}
+a.back{color:var(--core);text-decoration:none;font-size:13px}
+h1{font-size:23px;margin:8px 0 2px}
+.meta{color:var(--muted);font-size:13.5px;margin-bottom:6px}
+.scores{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 20px}
+.scores span{background:#eef6f3;border:1px solid #cfe3db;border-radius:20px;padding:4px 12px;font-size:13px;color:#2c6a60}
+.scores b{color:var(--accent)}
+.tabbar{display:flex;gap:8px;margin:0 0 16px;position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:5}
+.tab{flex:1;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:11px;font-size:15px;font-weight:800;cursor:pointer;text-align:center;color:#5f574c}
+.tab.on{background:var(--core);color:#fff;border-color:var(--core)}
+.sec{display:none}.sec.on{display:block}
+.hint{background:#fff6e8;border:1px solid #f0d9b0;border-left:4px solid var(--accent);border-radius:10px;padding:10px 13px;font-size:13px;margin-bottom:16px}
+/* Task1 */
+.s-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;margin-bottom:13px}
+.s-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.s-no{font-weight:800;font-size:14px;color:var(--core)}
+.s-sc{margin-left:auto;font-size:12px;background:#eef6f3;border:1px solid #cfe3db;color:#2c6a60;border-radius:20px;padding:2px 9px}
+.btnrow{display:flex;gap:7px;flex-wrap:wrap;margin:6px 0}
+.btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 11px;font-size:13px;cursor:pointer;font-family:inherit;color:#5f574c}
+.btn:hover{border-color:var(--accent)}
+.btn.rec{background:var(--accent);color:#fff;border:0}
+.btn.rec.on{background:var(--bad)}
+.en{font-family:Georgia,serif;font-size:16px;color:#2f2a24;margin:4px 0}
+.en.hidden{filter:blur(6px);cursor:pointer}
+.zh{font-size:13.5px;color:var(--muted)}
+.chunks{margin:8px 0;display:none}.chunks.show{display:block}
+.chunk{display:inline-block;background:#eef6f3;border:1px solid #cfe3db;border-radius:8px;padding:3px 9px;margin:3px;font-size:13.5px;cursor:pointer}
+.chunk .sk{color:var(--core);font-size:11px;display:block}
+.err{font-size:12.5px;color:var(--bad);background:#fbecea;border-radius:7px;padding:6px 9px;margin-top:7px}
+.mine{font-size:12.5px;color:#5f574c;background:#f4f1ea;border-radius:7px;padding:6px 9px;margin-top:6px}
+/* Task2 */
+.q-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:15px}
+.q-txt{font-size:15px;font-weight:700;margin-bottom:6px}
+details.fold{border-top:1px dashed var(--line);margin-top:10px;padding-top:8px}
+summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--core)}
+.vlabel{display:inline-block;background:#eef6f3;border:1px solid #cfe3db;color:#2c6a60;font-size:12.5px;font-weight:700;border-radius:6px;padding:3px 10px;margin:11px 0 5px}
+.vlabel.v3{background:#f5ecdd;border-color:#e3ce9f;color:#9a6a1f}
+.vlabel.v4{background:#eaf2f8;border-color:#bcd6e8;color:#3a6b8f}
+table.ol{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:4px}
+table.ol td{padding:6px 9px;border:1px solid var(--line);vertical-align:top}
+table.ol .r{width:70px;font-weight:700;color:#fff;text-align:center;background:var(--blue)}
+.ln{margin:6px 0;font-size:15px}.ln .mk{font-weight:700;color:var(--accent)}
+.playall{background:var(--core);color:#fff;border:0;border-radius:8px;padding:4px 11px;font-size:12.5px;cursor:pointer;margin:6px 0}
+.wc{font-size:12px;color:var(--muted);margin-top:4px}
+.frames div,.vocab div{font-size:13px;margin:4px 0}.vocab .w{color:var(--core);cursor:pointer;font-weight:700}.vocab .ipa{color:var(--muted);margin:0 6px}
+.say{cursor:pointer}
+.live{font-size:12.5px;color:var(--muted);margin:6px 0}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 全部模考</a>
+<h1>咖啡制作跟读 + 理财面试</h1>
+<div class="meta">🕒 模考时间 2026-08-29 06:46</div>
+<div class="scores"><span>总分 <b>2.5/6</b></span><span>Task1 2.5/6</span><span>Task2 3.0/6</span></div>
+<div class="tabbar"><div class="tab on" data-t="t1" onclick="tab('t1')">🎧 Task 1 跟读</div><div class="tab" data-t="t2" onclick="tab('t2')">🎤 Task 2 面试</div></div>
+<div class="sec on" id="t1"><div class="hint">听一句→逐字复述。🔊播放 / 🐢慢读 / 🧩分块 / 🦴骨架都能反复用；🎙录音后点句子看标准答案。<b>你这次错在实词听不住</b>，分块时把耳朵全压在名词/动词上。</div><div class="s-card">
+  <div class="s-top"><span class="s-no">句 1</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Make a shot of espresso using the machine.">🔊 播放</button>
+    <button class="btn" onclick="say('Make a shot of espresso using the machine.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck0')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：做一份浓缩 / 用机器')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Make a shot of espresso using the machine.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck0"><span class="chunk say" data-say="Make a shot of espresso">Make a shot of espresso<span class="sk">做一份浓缩</span></span><span class="chunk say" data-say="using the machine">using the machine<span class="sk">用机器</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Make a shot of espresso using the machine.</div>
+  <div class="zh">用机器做一份浓缩咖啡。</div>
+  <div class="err">⚠️ 你这次听成：Make a shot of pretzel using the machine.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 2</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Steam the milk until it is hot and bubbling.">🔊 播放</button>
+    <button class="btn" onclick="say('Steam the milk until it is hot and bubbling.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck1')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：蒸牛奶 / 直到滚烫冒泡')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Steam the milk until it is hot and bubbling.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck1"><span class="chunk say" data-say="Steam the milk">Steam the milk<span class="sk">蒸牛奶</span></span><span class="chunk say" data-say="until it is hot and bubbling">until it is hot and bubbling<span class="sk">直到滚烫冒泡</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Steam the milk until it is hot and bubbling.</div>
+  <div class="zh">把牛奶蒸到滚烫冒泡。</div>
+  <div class="err">⚠️ 你这次听成：Steam the milk until it&#x27;s hot and bumbling</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 3</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Pour the espresso into an appropriately sized cup.">🔊 播放</button>
+    <button class="btn" onclick="say('Pour the espresso into an appropriately sized cup.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck2')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：倒浓缩 / 进大小合适的杯子')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Pour the espresso into an appropriately sized cup.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck2"><span class="chunk say" data-say="Pour the espresso">Pour the espresso<span class="sk">倒浓缩</span></span><span class="chunk say" data-say="into an appropriately sized cup">into an appropriately sized cup<span class="sk">进大小合适的杯子</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Pour the espresso into an appropriately sized cup.</div>
+  <div class="zh">把浓缩咖啡倒进大小合适的杯子里。</div>
+  <div class="err">⚠️ 你这次听成：Pour the espresso to a proprietary cup</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 4</span><span class="s-sc">2.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Slowly add the steamed milk until the cup is about halfway full.">🔊 播放</button>
+    <button class="btn" onclick="say('Slowly add the steamed milk until the cup is about halfway full.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck3')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：慢慢加蒸奶 / 直到杯子半满')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Slowly add the steamed milk until the cup is about halfway full.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck3"><span class="chunk say" data-say="Slowly add the steamed milk">Slowly add the steamed milk<span class="sk">慢慢加蒸奶</span></span><span class="chunk say" data-say="until the cup is about halfway full">until the cup is about halfway full<span class="sk">直到杯子半满</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Slowly add the steamed milk until the cup is about halfway full.</div>
+  <div class="zh">慢慢加入蒸好的牛奶，直到杯子大约半满。</div>
+  <div class="err">⚠️ 你这次听成：Pour the milk until. To the half. Floor.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 5</span><span class="s-sc">2.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Use a spoon to create latte art, if you know how.">🔊 播放</button>
+    <button class="btn" onclick="say('Use a spoon to create latte art, if you know how.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck4')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：用勺子 / 拉花 / 如果你会')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Use a spoon to create latte art, if you know how.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck4"><span class="chunk say" data-say="Use a spoon">Use a spoon<span class="sk">用勺子</span></span><span class="chunk say" data-say="to create latte art">to create latte art<span class="sk">拉花</span></span><span class="chunk say" data-say="if you know how">if you know how<span class="sk">如果你会</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Use a spoon to create latte art, if you know how.</div>
+  <div class="zh">如果你会，用勺子拉个花。</div>
+  <div class="err">⚠️ 你这次听成：Use a spoon to create latte art.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 6</span><span class="s-sc">2.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Ask the customer if they want sugar or honey before adding anything.">🔊 播放</button>
+    <button class="btn" onclick="say('Ask the customer if they want sugar or honey before adding anything.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck5')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：问顾客 / 要糖还是蜂蜜 / 加任何东西前')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Ask the customer if they want sugar or honey before adding anything.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck5"><span class="chunk say" data-say="Ask the customer">Ask the customer<span class="sk">问顾客</span></span><span class="chunk say" data-say="if they want sugar or honey">if they want sugar or honey<span class="sk">要糖还是蜂蜜</span></span><span class="chunk say" data-say="before adding anything">before adding anything<span class="sk">加任何东西前</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Ask the customer if they want sugar or honey before adding anything.</div>
+  <div class="zh">加任何东西前，先问顾客要糖还是蜂蜜。</div>
+  <div class="err">⚠️ 你这次听成：Ask the customer. They want sugar or honey. Before add anything</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 7</span><span class="s-sc">2.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Before serving, place a small chocolate on the saucer next to the cup.">🔊 播放</button>
+    <button class="btn" onclick="say('Before serving, place a small chocolate on the saucer next to the cup.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck6')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：上桌前 / 放一小块巧克力 / 在杯托上 / 杯旁')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Before serving, place a small chocolate on the saucer next to the cup.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck6"><span class="chunk say" data-say="Before serving">Before serving<span class="sk">上桌前</span></span><span class="chunk say" data-say="place a small chocolate">place a small chocolate<span class="sk">放一小块巧克力</span></span><span class="chunk say" data-say="on the saucer">on the saucer<span class="sk">在杯托上</span></span><span class="chunk say" data-say="next to the cup">next to the cup<span class="sk">杯旁</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Before serving, place a small chocolate on the saucer next to the cup.</div>
+  <div class="zh">上桌前，在杯旁的杯托上放一小块巧克力。</div>
+  <div class="err">⚠️ 你这次听成：Before serving, take a chocolate on the surface.</div>
+  <div class="live"></div>
+</div></div>
+<div class="sec" id="t2"><div class="hint">读题→看思路自己说→点范文对照（①单理由 ②两理由，先背单理由）→🎙录音→复制报告发 cc 判分。~80 词、~40 秒说顺。</div><div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.4/6</span>题 1：Do you make financial plans for your future? Why or why not?</div>
+  <div class="mine">🎙 你这次答的：Well, yes, I do make a financial plan for my future. I have two main reasons for this. The first one is that it can protect my future financial stability and I can save more money for my future because I want to go to study abroad and go travel. I should plan ahead. The second, I make the plan to teach me how to get more money.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 54 词</div><button class="playall say" data-say="Well, yes, I do make a financial plan for my future. First off, it protects my future financial stability. This is because I want to study abroad and travel one day. Like, I hope to do a master&#x27;s in business at a school like NYU. So, I save a little money every month for that dream. Therefore, I always plan my money carefully.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> yes, I do make a financial plan for my future.</div><div class="ln"><span class="mk">First off,</span> it protects my future financial stability.</div><div class="ln"><span class="mk">This is because</span> I want to study abroad and travel one day.</div><div class="ln"><span class="mk">Like,</span> I hope to do a master&#x27;s in business at a school like NYU.</div><div class="ln"><span class="mk">So,</span> I save a little money every month for that dream.</div><div class="ln"><span class="mk">Therefore,</span> I always plan my money carefully.</div></div><div class="wc">共 54 词 · 约 27 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, yes, I do make a financial plan for my future. First off, it protects my future financial stability. This is because I want to study abroad and travel one day. Like, I hope to do a master&#x27;s in business at a school like NYU. So, I save a little money every month for that dream. Besides, making a plan teaches me how to manage money. This is because I learn to budget and spend less. Like, I use an app to track what I spend each week. So, I know exactly where my money goes. Therefore, I always plan my money carefully.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> yes, I do make a financial plan for my future.</div><div class="ln"><span class="mk">First off,</span> it protects my future financial stability.</div><div class="ln"><span class="mk">This is because</span> I want to study abroad and travel one day.</div><div class="ln"><span class="mk">Like,</span> I hope to do a master&#x27;s in business at a school like NYU.</div><div class="ln"><span class="mk">So,</span> I save a little money every month for that dream.</div><div class="ln"><span class="mk">Besides,</span> making a plan teaches me how to manage money.</div><div class="ln"><span class="mk">This is because</span> I learn to budget and spend less.</div><div class="ln"><span class="mk">Like,</span> I use an app to track what I spend each week.</div><div class="ln"><span class="mk">So,</span> I know exactly where my money goes.</div><div class="ln"><span class="mk">Therefore,</span> I always plan my money carefully.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="financial plan">financial plan</span><span class="ipa">/faɪˈnænʃl plæn/</span>财务计划</div><div><span class="w say" data-say="stability">stability</span><span class="ipa">/stəˈbɪləti/</span>稳定</div><div><span class="w say" data-say="save money">save money</span><span class="ipa">/seɪv ˈmʌni/</span>存钱</div><div><span class="w say" data-say="budget">budget</span><span class="ipa">/ˈbʌdʒɪt/</span>预算</div><div><span class="w say" data-say="track">track</span><span class="ipa">/træk/</span>记录，追踪</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;Do you make financial plans for your future? Why or why not?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;yes, I do make a financial plan for my future.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;it protects my future financial stability.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;I want to study abroad and travel one day.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I hope to do a master's in business at a school like NYU.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I save a little money every month for that dream.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;I always plan my money carefully.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;yes, I do make a financial plan for my future.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;it protects my future financial stability.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;I want to study abroad and travel one day.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I hope to do a master's in business at a school like NYU.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I save a little money every month for that dream.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;making a plan teaches me how to manage money.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;I learn to budget and spend less.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I use an app to track what I spend each week.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I know exactly where my money goes.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;I always plan my money carefully.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">2.6/6</span>题 2：How do people usually manage their money in daily life?</div>
+  <div class="mine">🎙 你这次答的：Well, I think usually have two main strategies to manage money. The first one is uh, use the app about uh, the financial control, uh, such as the app of uh, calculating the outgo and uh, and others. Uh, the second way is uh, reserving the uh, bank and consult the professional people to teach you.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 46 词</div><button class="playall say" data-say="Well, people usually manage money in two main ways. First off, they use apps to control their spending. This is because these apps record every cost clearly. Like, many people track meals, transport, and shopping on an app. So, they can see their outgo and cut waste. Therefore, apps and experts are two common ways.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> people usually manage money in two main ways.</div><div class="ln"><span class="mk">First off,</span> they use apps to control their spending.</div><div class="ln"><span class="mk">This is because</span> these apps record every cost clearly.</div><div class="ln"><span class="mk">Like,</span> many people track meals, transport, and shopping on an app.</div><div class="ln"><span class="mk">So,</span> they can see their outgo and cut waste.</div><div class="ln"><span class="mk">Therefore,</span> apps and experts are two common ways.</div></div><div class="wc">共 46 词 · 约 23 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, people usually manage money in two main ways. First off, they use apps to control their spending. This is because these apps record every cost clearly. Like, many people track meals, transport, and shopping on an app. So, they can see their outgo and cut waste. Besides, they ask banks or professionals for advice. This is because experts give them a safer plan. Like, they meet a bank advisor once a month. So, they learn to save and invest better. Therefore, apps and experts are two common ways.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> people usually manage money in two main ways.</div><div class="ln"><span class="mk">First off,</span> they use apps to control their spending.</div><div class="ln"><span class="mk">This is because</span> these apps record every cost clearly.</div><div class="ln"><span class="mk">Like,</span> many people track meals, transport, and shopping on an app.</div><div class="ln"><span class="mk">So,</span> they can see their outgo and cut waste.</div><div class="ln"><span class="mk">Besides,</span> they ask banks or professionals for advice.</div><div class="ln"><span class="mk">This is because</span> experts give them a safer plan.</div><div class="ln"><span class="mk">Like,</span> they meet a bank advisor once a month.</div><div class="ln"><span class="mk">So,</span> they learn to save and invest better.</div><div class="ln"><span class="mk">Therefore,</span> apps and experts are two common ways.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="strategy">strategy</span><span class="ipa">/ˈstrætədʒi/</span>策略</div><div><span class="w say" data-say="outgo">outgo</span><span class="ipa">/ˈaʊtɡoʊ/</span>支出</div><div><span class="w say" data-say="consult">consult</span><span class="ipa">/kənˈsʌlt/</span>咨询</div><div><span class="w say" data-say="professional">professional</span><span class="ipa">/prəˈfeʃənl/</span>专业的</div><div><span class="w say" data-say="invest">invest</span><span class="ipa">/ɪnˈvest/</span>投资</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;How do people usually manage their money in daily life?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;people usually manage money in two main ways.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;they use apps to control their spending.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;these apps record every cost clearly.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;many people track meals, transport, and shopping on an app.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;they can see their outgo and cut waste.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;apps and experts are two common ways.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;people usually manage money in two main ways.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;they use apps to control their spending.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;these apps record every cost clearly.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;many people track meals, transport, and shopping on an app.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;they can see their outgo and cut waste.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;they ask banks or professionals for advice.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;experts give them a safer plan.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;they meet a bank advisor once a month.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;they learn to save and invest better.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;apps and experts are two common ways.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.2/6</span>题 3：Do you think money influences people&#x27;s decisions? Why?</div>
+  <div class="mine">🎙 你这次答的：Well, I think money do influence people&#x27;s decisions. Uh, I have to make reason one. Uh, money is very useful. With money you can buy a lot of things. Uh, you can do a lot of things. Uh, such, for example, uh, if you want to go travel and you want to learn something skill, and you should use money to buy some courses and others. And uh, second, the money, it can afford your life, uh, such as uh, eating.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 48 词</div><button class="playall say" data-say="Well, yes, money strongly influences people&#x27;s decisions. First off, money decides what you can do and learn. This is because most good things cost money. Like, if you want to travel or learn a new skill, you must pay. So, people choose jobs and plans based on money. Therefore, money is a big force in our decisions.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> yes, money strongly influences people&#x27;s decisions.</div><div class="ln"><span class="mk">First off,</span> money decides what you can do and learn.</div><div class="ln"><span class="mk">This is because</span> most good things cost money.</div><div class="ln"><span class="mk">Like,</span> if you want to travel or learn a new skill, you must pay.</div><div class="ln"><span class="mk">So,</span> people choose jobs and plans based on money.</div><div class="ln"><span class="mk">Therefore,</span> money is a big force in our decisions.</div></div><div class="wc">共 48 词 · 约 24 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, yes, money strongly influences people&#x27;s decisions. First off, money decides what you can do and learn. This is because most good things cost money. Like, if you want to travel or learn a new skill, you must pay. So, people choose jobs and plans based on money. Besides, money supports your basic life. This is because you need it for food, rent, and daily needs. Like, a person picks a higher-paying job to feed a family. So, money shapes even everyday choices. Therefore, money is a big force in our decisions.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> yes, money strongly influences people&#x27;s decisions.</div><div class="ln"><span class="mk">First off,</span> money decides what you can do and learn.</div><div class="ln"><span class="mk">This is because</span> most good things cost money.</div><div class="ln"><span class="mk">Like,</span> if you want to travel or learn a new skill, you must pay.</div><div class="ln"><span class="mk">So,</span> people choose jobs and plans based on money.</div><div class="ln"><span class="mk">Besides,</span> money supports your basic life.</div><div class="ln"><span class="mk">This is because</span> you need it for food, rent, and daily needs.</div><div class="ln"><span class="mk">Like,</span> a person picks a higher-paying job to feed a family.</div><div class="ln"><span class="mk">So,</span> money shapes even everyday choices.</div><div class="ln"><span class="mk">Therefore,</span> money is a big force in our decisions.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="influence">influence</span><span class="ipa">/ˈɪnfluəns/</span>影响</div><div><span class="w say" data-say="decision">decision</span><span class="ipa">/dɪˈsɪʒn/</span>决定</div><div><span class="w say" data-say="afford">afford</span><span class="ipa">/əˈfɔːrd/</span>负担得起</div><div><span class="w say" data-say="daily needs">daily needs</span><span class="ipa">/ˈdeɪli niːdz/</span>日常需求</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;Do you think money influences people's decisions? Why?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;yes, money strongly influences people's decisions.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;money decides what you can do and learn.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;most good things cost money.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;if you want to travel or learn a new skill, you must pay.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;people choose jobs and plans based on money.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;money is a big force in our decisions.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;yes, money strongly influences people's decisions.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;money decides what you can do and learn.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;most good things cost money.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;if you want to travel or learn a new skill, you must pay.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;people choose jobs and plans based on money.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;money supports your basic life.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;you need it for food, rent, and daily needs.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;a person picks a higher-paying job to feed a family.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;money shapes even everyday choices.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;money is a big force in our decisions.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.6/6</span>题 4：Should schools teach financial management skills? Why or why not?</div>
+  <div class="mine">🎙 你这次答的：Well, I think school should teach financial courses. It&#x27;s very useful, especially for college students, to learn to manage their money. Such as, if they can learn how to get more financial plans with their money, they can be more independent in their life and afterwards studies. And second, college is a very good time to learn this. Before you have money, you should know how to plan it.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 44 词</div><button class="playall say" data-say="Well, yes, schools should teach financial management. First off, it helps students become independent. This is because they learn to plan and control their own money. Like, a college student learns to budget rent and food. So, they depend less on parents and handle life better. Therefore, schools should teach these useful skills.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> yes, schools should teach financial management.</div><div class="ln"><span class="mk">First off,</span> it helps students become independent.</div><div class="ln"><span class="mk">This is because</span> they learn to plan and control their own money.</div><div class="ln"><span class="mk">Like,</span> a college student learns to budget rent and food.</div><div class="ln"><span class="mk">So,</span> they depend less on parents and handle life better.</div><div class="ln"><span class="mk">Therefore,</span> schools should teach these useful skills.</div></div><div class="wc">共 44 词 · 约 22 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, yes, schools should teach financial management. First off, it helps students become independent. This is because they learn to plan and control their own money. Like, a college student learns to budget rent and food. So, they depend less on parents and handle life better. Besides, college is the perfect time to learn this. This is because students have real money for the first time. Like, they manage part-time pay or a scholarship. So, they build a good money habit before starting work. Therefore, schools should teach these useful skills.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> yes, schools should teach financial management.</div><div class="ln"><span class="mk">First off,</span> it helps students become independent.</div><div class="ln"><span class="mk">This is because</span> they learn to plan and control their own money.</div><div class="ln"><span class="mk">Like,</span> a college student learns to budget rent and food.</div><div class="ln"><span class="mk">So,</span> they depend less on parents and handle life better.</div><div class="ln"><span class="mk">Besides,</span> college is the perfect time to learn this.</div><div class="ln"><span class="mk">This is because</span> students have real money for the first time.</div><div class="ln"><span class="mk">Like,</span> they manage part-time pay or a scholarship.</div><div class="ln"><span class="mk">So,</span> they build a good money habit before starting work.</div><div class="ln"><span class="mk">Therefore,</span> schools should teach these useful skills.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="financial management">financial management</span><span class="ipa">/faɪˈnænʃl ˈmænɪdʒmənt/</span>财务管理</div><div><span class="w say" data-say="independent">independent</span><span class="ipa">/ˌɪndɪˈpendənt/</span>独立的</div><div><span class="w say" data-say="scholarship">scholarship</span><span class="ipa">/ˈskɑːlərʃɪp/</span>奖学金</div><div><span class="w say" data-say="part-time">part-time</span><span class="ipa">/ˈpɑːrt taɪm/</span>兼职的</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;Should schools teach financial management skills? Why or why not?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;yes, schools should teach financial management.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;it helps students become independent.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;they learn to plan and control their own money.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;a college student learns to budget rent and food.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;they depend less on parents and handle life better.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;schools should teach these useful skills.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;yes, schools should teach financial management.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;it helps students become independent.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;they learn to plan and control their own money.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;a college student learns to budget rent and food.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;they depend less on parents and handle life better.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;college is the perfect time to learn this.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;students have real money for the first time.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;they manage part-time pay or a scholarship.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;they build a good money habit before starting work.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;schools should teach these useful skills.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div></div>
+</div>
+<script>
+const V=window.VocaSpeech;
+let voices=[];function lv(){voices=window.speechSynthesis?speechSynthesis.getVoices():[]}
+if(window.speechSynthesis){lv();speechSynthesis.onvoiceschanged=lv}
+function say(t,rate){if(!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=rate||0.95;const v=voices.find(v=>/en-US/i.test(v.lang)&&/Samantha|Aria|Jenny|Google US|female/i.test(v.name))||voices.find(v=>/en-US/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}
+function tab(t){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));document.querySelectorAll('.sec').forEach(x=>x.classList.toggle('on',x.id===t));window.scrollTo(0,0)}
+function reveal(el){el.classList.remove('hidden')}
+function toggleChunks(id){document.getElementById(id).classList.toggle('show')}
+// 录音（复用 speech-core）
+async function rec(btn,ref){
+  if(!V||!V.supported){alert('请用 Chrome 打开、并先双击 start.command 启动录音服务');return}
+  if(btn.dataset.on==='1'){return}
+  btn.dataset.on='1';btn.classList.add('on');btn.textContent='⏹ 停止';
+  const live=btn.closest('.s-card,.q-card').querySelector('.live');
+  try{
+    await V.record(15,s=>{if(live)live.textContent='录音中… '+s+'s'},async url=>{
+      btn.dataset.on='';btn.classList.remove('on');btn.textContent='🎙 录音';
+      if(live)live.textContent='转写中…';
+      try{const tr=await V.transcribe(url);if(live)live.innerHTML='你说的：<b>'+(tr||'(空)')+'</b>'+(ref?'<br>标准：'+ref:'')}
+      catch(e){if(live)live.textContent='（转写失败，可回听）'}
+    });
+  }catch(e){btn.dataset.on='';btn.classList.remove('on');btn.textContent='🎙 录音';if(live)live.textContent='（录音需要 start.command 启动服务）'}
+}
+function copyRep(q){
+  const full=v=>v.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' ');
+  let r='【口语模考·面试题练习判分】\n题目：'+q.q+'\n\n参考范文（①单理由）：\n'+full(q.model)+'\n';
+  if(q.model2)r+='\n参考范文（②两理由）：\n'+full(q.model2)+'\n';
+  r+='\n我录音说的（粘贴转写）：\n____\n\n请 cc 按维度打分(切题/展开/流利度/语法词汇/发音韵律)+指出问题+给~80词修改稿。';
+  (navigator.clipboard?navigator.clipboard.writeText(r).then(()=>alert('已复制，粘贴给 cc'),()=>prompt('复制：',r)):prompt('复制：',r))
+}
+window.__Q={};
+document.querySelectorAll('[data-say]').forEach(el=>el.onclick=e=>{e.stopPropagation();say(el.dataset.say)});
+</script>
+</body></html>

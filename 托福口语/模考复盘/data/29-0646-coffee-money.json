@@ -1,0 +1,600 @@
+{
+ "id": "29-0646-coffee-money",
+ "time": "2026-08-29 06:46",
+ "title": "咖啡制作跟读 + 理财面试",
+ "total": "2.5/6",
+ "t1score": "2.5/6",
+ "t2score": "3.0/6",
+ "task1": [
+  {
+   "en": "Make a shot of espresso using the machine.",
+   "zh": "用机器做一份浓缩咖啡。",
+   "chunks": [
+    "Make a shot of espresso",
+    "using the machine"
+   ],
+   "skeleton": [
+    "做一份浓缩",
+    "用机器"
+   ],
+   "err": "Make a shot of pretzel using the machine.",
+   "score": "3.0"
+  },
+  {
+   "en": "Steam the milk until it is hot and bubbling.",
+   "zh": "把牛奶蒸到滚烫冒泡。",
+   "chunks": [
+    "Steam the milk",
+    "until it is hot and bubbling"
+   ],
+   "skeleton": [
+    "蒸牛奶",
+    "直到滚烫冒泡"
+   ],
+   "err": "Steam the milk until it's hot and bumbling",
+   "score": "3.0"
+  },
+  {
+   "en": "Pour the espresso into an appropriately sized cup.",
+   "zh": "把浓缩咖啡倒进大小合适的杯子里。",
+   "chunks": [
+    "Pour the espresso",
+    "into an appropriately sized cup"
+   ],
+   "skeleton": [
+    "倒浓缩",
+    "进大小合适的杯子"
+   ],
+   "err": "Pour the espresso to a proprietary cup",
+   "score": "3.0"
+  },
+  {
+   "en": "Slowly add the steamed milk until the cup is about halfway full.",
+   "zh": "慢慢加入蒸好的牛奶，直到杯子大约半满。",
+   "chunks": [
+    "Slowly add the steamed milk",
+    "until the cup is about halfway full"
+   ],
+   "skeleton": [
+    "慢慢加蒸奶",
+    "直到杯子半满"
+   ],
+   "err": "Pour the milk until. To the half. Floor.",
+   "score": "2.0"
+  },
+  {
+   "en": "Use a spoon to create latte art, if you know how.",
+   "zh": "如果你会，用勺子拉个花。",
+   "chunks": [
+    "Use a spoon",
+    "to create latte art",
+    "if you know how"
+   ],
+   "skeleton": [
+    "用勺子",
+    "拉花",
+    "如果你会"
+   ],
+   "err": "Use a spoon to create latte art.",
+   "score": "2.0"
+  },
+  {
+   "en": "Ask the customer if they want sugar or honey before adding anything.",
+   "zh": "加任何东西前，先问顾客要糖还是蜂蜜。",
+   "chunks": [
+    "Ask the customer",
+    "if they want sugar or honey",
+    "before adding anything"
+   ],
+   "skeleton": [
+    "问顾客",
+    "要糖还是蜂蜜",
+    "加任何东西前"
+   ],
+   "err": "Ask the customer. They want sugar or honey. Before add anything",
+   "score": "2.0"
+  },
+  {
+   "en": "Before serving, place a small chocolate on the saucer next to the cup.",
+   "zh": "上桌前，在杯旁的杯托上放一小块巧克力。",
+   "chunks": [
+    "Before serving",
+    "place a small chocolate",
+    "on the saucer",
+    "next to the cup"
+   ],
+   "skeleton": [
+    "上桌前",
+    "放一小块巧克力",
+    "在杯托上",
+    "杯旁"
+   ],
+   "err": "Before serving, take a chocolate on the surface.",
+   "score": "2.0"
+  }
+ ],
+ "task2": [
+  {
+   "q": "Do you make financial plans for your future? Why or why not?",
+   "my": "Well, yes, I do make a financial plan for my future. I have two main reasons for this. The first one is that it can protect my future financial stability and I can save more money for my future because I want to go to study abroad and go travel. I should plan ahead. The second, I make the plan to teach me how to get more money.",
+   "score": "3.4",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "yes, I do make a financial plan for my future."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it protects my future financial stability."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "I want to study abroad and travel one day."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I hope to do a master's in business at a school like NYU."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I save a little money every month for that dream."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "making a plan teaches me how to manage money."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "I learn to budget and spend less."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I use an app to track what I spend each week."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I know exactly where my money goes."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I always plan my money carefully."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "financial plan",
+     "ipa": "/faɪˈnænʃl plæn/",
+     "zh": "财务计划"
+    },
+    {
+     "w": "stability",
+     "ipa": "/stəˈbɪləti/",
+     "zh": "稳定"
+    },
+    {
+     "w": "save money",
+     "ipa": "/seɪv ˈmʌni/",
+     "zh": "存钱"
+    },
+    {
+     "w": "budget",
+     "ipa": "/ˈbʌdʒɪt/",
+     "zh": "预算"
+    },
+    {
+     "w": "track",
+     "ipa": "/træk/",
+     "zh": "记录，追踪"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "yes, I do make a financial plan for my future."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it protects my future financial stability."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "I want to study abroad and travel one day."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I hope to do a master's in business at a school like NYU."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I save a little money every month for that dream."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I always plan my money carefully."
+    }
+   ],
+   "words": 54,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "How do people usually manage their money in daily life?",
+   "my": "Well, I think usually have two main strategies to manage money. The first one is uh, use the app about uh, the financial control, uh, such as the app of uh, calculating the outgo and uh, and others. Uh, the second way is uh, reserving the uh, bank and consult the professional people to teach you.",
+   "score": "2.6",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "people usually manage money in two main ways."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "they use apps to control their spending."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "these apps record every cost clearly."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "many people track meals, transport, and shopping on an app."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "they can see their outgo and cut waste."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "they ask banks or professionals for advice."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "experts give them a safer plan."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "they meet a bank advisor once a month."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "they learn to save and invest better."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "apps and experts are two common ways."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "strategy",
+     "ipa": "/ˈstrætədʒi/",
+     "zh": "策略"
+    },
+    {
+     "w": "outgo",
+     "ipa": "/ˈaʊtɡoʊ/",
+     "zh": "支出"
+    },
+    {
+     "w": "consult",
+     "ipa": "/kənˈsʌlt/",
+     "zh": "咨询"
+    },
+    {
+     "w": "professional",
+     "ipa": "/prəˈfeʃənl/",
+     "zh": "专业的"
+    },
+    {
+     "w": "invest",
+     "ipa": "/ɪnˈvest/",
+     "zh": "投资"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "people usually manage money in two main ways."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "they use apps to control their spending."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "these apps record every cost clearly."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "many people track meals, transport, and shopping on an app."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "they can see their outgo and cut waste."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "apps and experts are two common ways."
+    }
+   ],
+   "words": 46,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "Do you think money influences people's decisions? Why?",
+   "my": "Well, I think money do influence people's decisions. Uh, I have to make reason one. Uh, money is very useful. With money you can buy a lot of things. Uh, you can do a lot of things. Uh, such, for example, uh, if you want to go travel and you want to learn something skill, and you should use money to buy some courses and others. And uh, second, the money, it can afford your life, uh, such as uh, eating.",
+   "score": "3.2",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "yes, money strongly influences people's decisions."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "money decides what you can do and learn."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "most good things cost money."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "if you want to travel or learn a new skill, you must pay."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "people choose jobs and plans based on money."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "money supports your basic life."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "you need it for food, rent, and daily needs."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "a person picks a higher-paying job to feed a family."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "money shapes even everyday choices."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "money is a big force in our decisions."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "influence",
+     "ipa": "/ˈɪnfluəns/",
+     "zh": "影响"
+    },
+    {
+     "w": "decision",
+     "ipa": "/dɪˈsɪʒn/",
+     "zh": "决定"
+    },
+    {
+     "w": "afford",
+     "ipa": "/əˈfɔːrd/",
+     "zh": "负担得起"
+    },
+    {
+     "w": "daily needs",
+     "ipa": "/ˈdeɪli niːdz/",
+     "zh": "日常需求"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "yes, money strongly influences people's decisions."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "money decides what you can do and learn."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "most good things cost money."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "if you want to travel or learn a new skill, you must pay."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "people choose jobs and plans based on money."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "money is a big force in our decisions."
+    }
+   ],
+   "words": 48,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "Should schools teach financial management skills? Why or why not?",
+   "my": "Well, I think school should teach financial courses. It's very useful, especially for college students, to learn to manage their money. Such as, if they can learn how to get more financial plans with their money, they can be more independent in their life and afterwards studies. And second, college is a very good time to learn this. Before you have money, you should know how to plan it.",
+   "score": "3.6",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "yes, schools should teach financial management."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it helps students become independent."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "they learn to plan and control their own money."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "a college student learns to budget rent and food."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "they depend less on parents and handle life better."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "college is the perfect time to learn this."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "students have real money for the first time."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "they manage part-time pay or a scholarship."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "they build a good money habit before starting work."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "schools should teach these useful skills."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "financial management",
+     "ipa": "/faɪˈnænʃl ˈmænɪdʒmənt/",
+     "zh": "财务管理"
+    },
+    {
+     "w": "independent",
+     "ipa": "/ˌɪndɪˈpendənt/",
+     "zh": "独立的"
+    },
+    {
+     "w": "scholarship",
+     "ipa": "/ˈskɑːlərʃɪp/",
+     "zh": "奖学金"
+    },
+    {
+     "w": "part-time",
+     "ipa": "/ˈpɑːrt taɪm/",
+     "zh": "兼职的"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "yes, schools should teach financial management."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it helps students become independent."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "they learn to plan and control their own money."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "a college student learns to budget rent and food."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "they depend less on parents and handle life better."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "schools should teach these useful skills."
+    }
+   ],
+   "words": 44,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  }
+ ]
+}

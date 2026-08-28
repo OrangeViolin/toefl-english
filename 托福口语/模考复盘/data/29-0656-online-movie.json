@@ -1,0 +1,578 @@
+{
+ "id": "29-0656-online-movie",
+ "time": "2026-08-29 06:56",
+ "title": "在线课程跟读 + 电影面试",
+ "total": "3.5/6",
+ "t1score": "4.0/6",
+ "t2score": "3.5/6",
+ "task1": [
+  {
+   "en": "Class details are on the course home page.",
+   "zh": "课程详情在课程主页上。",
+   "chunks": [
+    "Class details",
+    "are on the course home page"
+   ],
+   "skeleton": [
+    "课程详情",
+    "在课程主页上"
+   ],
+   "err": "Class details are on the course homepage.",
+   "score": "5.0"
+  },
+  {
+   "en": "Use the forum to exchange thoughts with classmates.",
+   "zh": "用论坛和同学交流想法。",
+   "chunks": [
+    "Use the forum",
+    "to exchange thoughts",
+    "with classmates"
+   ],
+   "skeleton": [
+    "用论坛",
+    "交流想法",
+    "和同学"
+   ],
+   "err": "Use forum to change thoughts with classmates.",
+   "score": "3.0"
+  },
+  {
+   "en": "Upload assignments to the platform for evaluation.",
+   "zh": "把作业上传到平台供评估。",
+   "chunks": [
+    "Upload assignments",
+    "to the platform",
+    "for evaluation"
+   ],
+   "skeleton": [
+    "上传作业",
+    "到平台",
+    "供评估"
+   ],
+   "err": "Upload assignments to the platform to evaluate assign.",
+   "score": "4.0"
+  },
+  {
+   "en": "The online gradebook shows your scores for all class assignments.",
+   "zh": "在线成绩册显示你所有课堂作业的分数。",
+   "chunks": [
+    "The online gradebook",
+    "shows your scores",
+    "for all class assignments"
+   ],
+   "skeleton": [
+    "在线成绩册",
+    "显示你的分数",
+    "所有课堂作业"
+   ],
+   "err": "The class grade book will show you. All. Classmate.",
+   "score": "2.0"
+  },
+  {
+   "en": "Turn on notifications so you never miss messages from your instructors.",
+   "zh": "打开通知，这样就不会错过老师的消息。",
+   "chunks": [
+    "Turn on notifications",
+    "so you never miss messages",
+    "from your instructors"
+   ],
+   "skeleton": [
+    "打开通知",
+    "这样不会错过消息",
+    "老师的"
+   ],
+   "err": "Turn on notification so you will never miss notice from your classmates.",
+   "score": "3.0"
+  },
+  {
+   "en": "If you face technical issues, contact support to resolve the problem.",
+   "zh": "如果遇到技术问题，联系客服解决问题。",
+   "chunks": [
+    "If you face technical issues",
+    "contact support",
+    "to resolve the problem"
+   ],
+   "skeleton": [
+    "如果遇到技术问题",
+    "联系客服",
+    "解决问题"
+   ],
+   "err": "Contact Sport to solve the problem.",
+   "score": "2.0"
+  }
+ ],
+ "task2": [
+  {
+   "q": "How often do you watch movies? Do you watch them weekly, monthly, or less often?",
+   "my": "Well, I love watching movies and I watch movie weekly. And I have a list about um the most famous movies um in the world, and I have a plan to watch it one by one um such as um a French— I really love French movies. I love the um lifestyle in movies and I often watch movies with my friend, and it is kind of event that we gather weekly to share great movies.",
+   "score": "4.0",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I watch movies every week."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "movies are my favorite way to relax."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "a good film takes me to another world."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I love French movies for their lifestyle and scenery."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I make a list and watch one new film each week."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "watching with friends is a weekly event."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "we enjoy sharing stories together."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "every Friday we pick one movie and discuss it."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "it has become our happy routine."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "movies are a big part of my week."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "weekly",
+     "ipa": "/ˈwiːkli/",
+     "zh": "每周的"
+    },
+    {
+     "w": "lifestyle",
+     "ipa": "/ˈlaɪfstaɪl/",
+     "zh": "生活方式"
+    },
+    {
+     "w": "scenery",
+     "ipa": "/ˈsiːnəri/",
+     "zh": "风景"
+    },
+    {
+     "w": "routine",
+     "ipa": "/ruːˈtiːn/",
+     "zh": "日常惯例"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I watch movies every week."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "movies are my favorite way to relax."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "a good film takes me to another world."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I love French movies for their lifestyle and scenery."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I make a list and watch one new film each week."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "movies are a big part of my week."
+    }
+   ],
+   "words": 48,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "What genres of movies do you usually prefer to watch? For example, do you enjoy action, comedy, or drama?",
+   "my": "Well, my favorite movie is action movie. I love Chinese Kung Fu, and my favorite actor is Li Lianjie and Li Xiaolong, such actors. And the action movie give me a very fantastic experience about the exercise, and it make me—such as, it can help me have the motivate to exercise my body. And I often engage into it with my friends, and they love it.",
+   "score": "3.6",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I usually prefer action movies."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "action films give me energy."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "the fight scenes are exciting and inspiring."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I love Chinese kung fu stars like Jet Li and Bruce Lee."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "after watching, I feel motivated to exercise."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "I enjoy watching them with my friends."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "we share the excitement together."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "we often cheer at the fight scenes together."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "it becomes a fun shared moment."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "action movies are my favorite genre."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "genre",
+     "ipa": "/ˈʒɑːnrə/",
+     "zh": "类型，题材"
+    },
+    {
+     "w": "kung fu",
+     "ipa": "/ˌkʌŋ ˈfuː/",
+     "zh": "功夫"
+    },
+    {
+     "w": "motivated",
+     "ipa": "/ˈmoʊtɪveɪtɪd/",
+     "zh": "有动力的"
+    },
+    {
+     "w": "exciting",
+     "ipa": "/ɪkˈsaɪtɪŋ/",
+     "zh": "令人兴奋的"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I usually prefer action movies."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "action films give me energy."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "the fight scenes are exciting and inspiring."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I love Chinese kung fu stars like Jet Li and Bruce Lee."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "after watching, I feel motivated to exercise."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "action movies are my favorite genre."
+    }
+   ],
+   "words": 42,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "Can you tell me about a movie that you have seen and what you thought about it?",
+   "my": "I have ever seen a movie called Crouching Tiger, Hidden Dragon. It's directed by Chinese famous director Ang Lee, and it is a movie tells about Chinese Kung Fu and Chinese culture. And it won the Golden Globe prize and is be famous globally. The Chinese Kung Fu and culture in the movie inspired me to seek for freedom and seek for love.",
+   "score": "3.0",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "a movie I really liked is Crouching Tiger, Hidden Dragon."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it beautifully shows Chinese kung fu and culture."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "the director Ang Lee captured both art and action."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "the fight scenes mix martial arts with poetry."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I was deeply moved by its beauty."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "the story inspired me deeply."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "it is about freedom and love."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "the characters fight for the life they want."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "it made me value my own freedom more."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I think it is a masterpiece."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "director",
+     "ipa": "/dəˈrektər/",
+     "zh": "导演"
+    },
+    {
+     "w": "martial arts",
+     "ipa": "/ˈmɑːrʃl ɑːrts/",
+     "zh": "武术"
+    },
+    {
+     "w": "masterpiece",
+     "ipa": "/ˈmæstərpiːs/",
+     "zh": "杰作"
+    },
+    {
+     "w": "freedom",
+     "ipa": "/ˈfriːdəm/",
+     "zh": "自由"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "a movie I really liked is Crouching Tiger, Hidden Dragon."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "it beautifully shows Chinese kung fu and culture."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "the director Ang Lee captured both art and action."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "the fight scenes mix martial arts with poetry."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I was deeply moved by its beauty."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I think it is a masterpiece."
+    }
+   ],
+   "words": 48,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  },
+  {
+   "q": "Some people believe that viewing films at home is more enjoyable than going to a movie theater. Do you agree or disagree? Why?",
+   "my": "Well, uh, I love both ways. Uh, I watch movie many often, so uh, I watch movie uh, at home because it's very freedom and I can uh, watch movie and eat things and do other kind of things. And I also additionally I think go to the uh, cinema to watch movie is very fantastic experience because the big screen, uh, the fantastic sound, and the experience is good.",
+   "score": "3.4",
+   "model2": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I prefer watching movies at home."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "home is more comfortable and free."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "I can eat snacks and pause anytime."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I can lie on the sofa and watch in pajamas."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I relax better in my own space."
+    },
+    {
+     "mk": "Besides,",
+     "role": "理由二",
+     "en": "the cinema has a bigger screen and sound."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "the huge screen and sound are amazing."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "action films feel much more powerful there."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "for big films, the theater is worth it."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I enjoy both, but home is my favorite."
+    }
+   ],
+   "vocab": [
+    {
+     "w": "comfortable",
+     "ipa": "/ˈkʌmftəbl/",
+     "zh": "舒适的"
+    },
+    {
+     "w": "pause",
+     "ipa": "/pɔːz/",
+     "zh": "暂停"
+    },
+    {
+     "w": "big screen",
+     "ipa": "/bɪɡ skriːn/",
+     "zh": "大银幕"
+    },
+    {
+     "w": "powerful",
+     "ipa": "/ˈpaʊərfl/",
+     "zh": "震撼的"
+    }
+   ],
+   "model": [
+    {
+     "mk": "Well,",
+     "role": "切题",
+     "en": "I prefer watching movies at home."
+    },
+    {
+     "mk": "First off,",
+     "role": "理由一",
+     "en": "home is more comfortable and free."
+    },
+    {
+     "mk": "This is because",
+     "role": "为什么",
+     "en": "I can eat snacks and pause anytime."
+    },
+    {
+     "mk": "Like,",
+     "role": "举例",
+     "en": "I can lie on the sofa and watch in pajamas."
+    },
+    {
+     "mk": "So,",
+     "role": "深入细节",
+     "en": "I relax better in my own space."
+    },
+    {
+     "mk": "Therefore,",
+     "role": "收尾",
+     "en": "I enjoy both, but home is my favorite."
+    }
+   ],
+   "words": 44,
+   "outline": [
+    {
+     "role": "观点",
+     "text": "（见范文）"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在线课程跟读 + 电影面试 · 口语模考复盘</title>
+<script src="../../speech-core.js"></script>
+<style>
+:root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83;--blue:#4a5cc7;--ok:#4a9e6f;--bad:#c04a3a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:30px 20px 90px}
+a.back{color:var(--core);text-decoration:none;font-size:13px}
+h1{font-size:23px;margin:8px 0 2px}
+.meta{color:var(--muted);font-size:13.5px;margin-bottom:6px}
+.scores{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 20px}
+.scores span{background:#eef6f3;border:1px solid #cfe3db;border-radius:20px;padding:4px 12px;font-size:13px;color:#2c6a60}
+.scores b{color:var(--accent)}
+.tabbar{display:flex;gap:8px;margin:0 0 16px;position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:5}
+.tab{flex:1;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:11px;font-size:15px;font-weight:800;cursor:pointer;text-align:center;color:#5f574c}
+.tab.on{background:var(--core);color:#fff;border-color:var(--core)}
+.sec{display:none}.sec.on{display:block}
+.hint{background:#fff6e8;border:1px solid #f0d9b0;border-left:4px solid var(--accent);border-radius:10px;padding:10px 13px;font-size:13px;margin-bottom:16px}
+/* Task1 */
+.s-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;margin-bottom:13px}
+.s-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.s-no{font-weight:800;font-size:14px;color:var(--core)}
+.s-sc{margin-left:auto;font-size:12px;background:#eef6f3;border:1px solid #cfe3db;color:#2c6a60;border-radius:20px;padding:2px 9px}
+.btnrow{display:flex;gap:7px;flex-wrap:wrap;margin:6px 0}
+.btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 11px;font-size:13px;cursor:pointer;font-family:inherit;color:#5f574c}
+.btn:hover{border-color:var(--accent)}
+.btn.rec{background:var(--accent);color:#fff;border:0}
+.btn.rec.on{background:var(--bad)}
+.en{font-family:Georgia,serif;font-size:16px;color:#2f2a24;margin:4px 0}
+.en.hidden{filter:blur(6px);cursor:pointer}
+.zh{font-size:13.5px;color:var(--muted)}
+.chunks{margin:8px 0;display:none}.chunks.show{display:block}
+.chunk{display:inline-block;background:#eef6f3;border:1px solid #cfe3db;border-radius:8px;padding:3px 9px;margin:3px;font-size:13.5px;cursor:pointer}
+.chunk .sk{color:var(--core);font-size:11px;display:block}
+.err{font-size:12.5px;color:var(--bad);background:#fbecea;border-radius:7px;padding:6px 9px;margin-top:7px}
+.mine{font-size:12.5px;color:#5f574c;background:#f4f1ea;border-radius:7px;padding:6px 9px;margin-top:6px}
+/* Task2 */
+.q-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:15px}
+.q-txt{font-size:15px;font-weight:700;margin-bottom:6px}
+details.fold{border-top:1px dashed var(--line);margin-top:10px;padding-top:8px}
+summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--core)}
+.vlabel{display:inline-block;background:#eef6f3;border:1px solid #cfe3db;color:#2c6a60;font-size:12.5px;font-weight:700;border-radius:6px;padding:3px 10px;margin:11px 0 5px}
+.vlabel.v3{background:#f5ecdd;border-color:#e3ce9f;color:#9a6a1f}
+.vlabel.v4{background:#eaf2f8;border-color:#bcd6e8;color:#3a6b8f}
+table.ol{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:4px}
+table.ol td{padding:6px 9px;border:1px solid var(--line);vertical-align:top}
+table.ol .r{width:70px;font-weight:700;color:#fff;text-align:center;background:var(--blue)}
+.ln{margin:6px 0;font-size:15px}.ln .mk{font-weight:700;color:var(--accent)}
+.playall{background:var(--core);color:#fff;border:0;border-radius:8px;padding:4px 11px;font-size:12.5px;cursor:pointer;margin:6px 0}
+.wc{font-size:12px;color:var(--muted);margin-top:4px}
+.frames div,.vocab div{font-size:13px;margin:4px 0}.vocab .w{color:var(--core);cursor:pointer;font-weight:700}.vocab .ipa{color:var(--muted);margin:0 6px}
+.say{cursor:pointer}
+.live{font-size:12.5px;color:var(--muted);margin:6px 0}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 全部模考</a>
+<h1>在线课程跟读 + 电影面试</h1>
+<div class="meta">🕒 模考时间 2026-08-29 06:56</div>
+<div class="scores"><span>总分 <b>3.5/6</b></span><span>Task1 4.0/6</span><span>Task2 3.5/6</span></div>
+<div class="tabbar"><div class="tab on" data-t="t1" onclick="tab('t1')">🎧 Task 1 跟读</div><div class="tab" data-t="t2" onclick="tab('t2')">🎤 Task 2 面试</div></div>
+<div class="sec on" id="t1"><div class="hint">听一句→逐字复述。🔊播放 / 🐢慢读 / 🧩分块 / 🦴骨架都能反复用；🎙录音后点句子看标准答案。<b>你这次错在实词听不住</b>，分块时把耳朵全压在名词/动词上。</div><div class="s-card">
+  <div class="s-top"><span class="s-no">句 1</span><span class="s-sc">5.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Class details are on the course home page.">🔊 播放</button>
+    <button class="btn" onclick="say('Class details are on the course home page.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck0')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：课程详情 / 在课程主页上')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Class details are on the course home page.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck0"><span class="chunk say" data-say="Class details">Class details<span class="sk">课程详情</span></span><span class="chunk say" data-say="are on the course home page">are on the course home page<span class="sk">在课程主页上</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Class details are on the course home page.</div>
+  <div class="zh">课程详情在课程主页上。</div>
+  <div class="err">⚠️ 你这次听成：Class details are on the course homepage.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 2</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Use the forum to exchange thoughts with classmates.">🔊 播放</button>
+    <button class="btn" onclick="say('Use the forum to exchange thoughts with classmates.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck1')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：用论坛 / 交流想法 / 和同学')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Use the forum to exchange thoughts with classmates.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck1"><span class="chunk say" data-say="Use the forum">Use the forum<span class="sk">用论坛</span></span><span class="chunk say" data-say="to exchange thoughts">to exchange thoughts<span class="sk">交流想法</span></span><span class="chunk say" data-say="with classmates">with classmates<span class="sk">和同学</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Use the forum to exchange thoughts with classmates.</div>
+  <div class="zh">用论坛和同学交流想法。</div>
+  <div class="err">⚠️ 你这次听成：Use forum to change thoughts with classmates.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 3</span><span class="s-sc">4.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Upload assignments to the platform for evaluation.">🔊 播放</button>
+    <button class="btn" onclick="say('Upload assignments to the platform for evaluation.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck2')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：上传作业 / 到平台 / 供评估')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Upload assignments to the platform for evaluation.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck2"><span class="chunk say" data-say="Upload assignments">Upload assignments<span class="sk">上传作业</span></span><span class="chunk say" data-say="to the platform">to the platform<span class="sk">到平台</span></span><span class="chunk say" data-say="for evaluation">for evaluation<span class="sk">供评估</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Upload assignments to the platform for evaluation.</div>
+  <div class="zh">把作业上传到平台供评估。</div>
+  <div class="err">⚠️ 你这次听成：Upload assignments to the platform to evaluate assign.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 4</span><span class="s-sc">2.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="The online gradebook shows your scores for all class assignments.">🔊 播放</button>
+    <button class="btn" onclick="say('The online gradebook shows your scores for all class assignments.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck3')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：在线成绩册 / 显示你的分数 / 所有课堂作业')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'The online gradebook shows your scores for all class assignments.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck3"><span class="chunk say" data-say="The online gradebook">The online gradebook<span class="sk">在线成绩册</span></span><span class="chunk say" data-say="shows your scores">shows your scores<span class="sk">显示你的分数</span></span><span class="chunk say" data-say="for all class assignments">for all class assignments<span class="sk">所有课堂作业</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">The online gradebook shows your scores for all class assignments.</div>
+  <div class="zh">在线成绩册显示你所有课堂作业的分数。</div>
+  <div class="err">⚠️ 你这次听成：The class grade book will show you. All. Classmate.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 5</span><span class="s-sc">3.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="Turn on notifications so you never miss messages from your instructors.">🔊 播放</button>
+    <button class="btn" onclick="say('Turn on notifications so you never miss messages from your instructors.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck4')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：打开通知 / 这样不会错过消息 / 老师的')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'Turn on notifications so you never miss messages from your instructors.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck4"><span class="chunk say" data-say="Turn on notifications">Turn on notifications<span class="sk">打开通知</span></span><span class="chunk say" data-say="so you never miss messages">so you never miss messages<span class="sk">这样不会错过消息</span></span><span class="chunk say" data-say="from your instructors">from your instructors<span class="sk">老师的</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">Turn on notifications so you never miss messages from your instructors.</div>
+  <div class="zh">打开通知，这样就不会错过老师的消息。</div>
+  <div class="err">⚠️ 你这次听成：Turn on notification so you will never miss notice from your classmates.</div>
+  <div class="live"></div>
+</div>
+<div class="s-card">
+  <div class="s-top"><span class="s-no">句 6</span><span class="s-sc">2.0/5</span></div>
+  <div class="btnrow">
+    <button class="btn say" data-say="If you face technical issues, contact support to resolve the problem.">🔊 播放</button>
+    <button class="btn" onclick="say('If you face technical issues, contact support to resolve the problem.',0.6)">🐢 慢读</button>
+    <button class="btn" onclick="toggleChunks('ck5')">🧩 分块</button>
+    <button class="btn" onclick="alert('骨架：如果遇到技术问题 / 联系客服 / 解决问题')">🦴 骨架</button>
+    <button class="btn rec" onclick="rec(this,'If you face technical issues, contact support to resolve the problem.')">🎙 录音</button>
+  </div>
+  <div class="chunks" id="ck5"><span class="chunk say" data-say="If you face technical issues">If you face technical issues<span class="sk">如果遇到技术问题</span></span><span class="chunk say" data-say="contact support">contact support<span class="sk">联系客服</span></span><span class="chunk say" data-say="to resolve the problem">to resolve the problem<span class="sk">解决问题</span></span></div>
+  <div class="en hidden" onclick="reveal(this)">If you face technical issues, contact support to resolve the problem.</div>
+  <div class="zh">如果遇到技术问题，联系客服解决问题。</div>
+  <div class="err">⚠️ 你这次听成：Contact Sport to solve the problem.</div>
+  <div class="live"></div>
+</div></div>
+<div class="sec" id="t2"><div class="hint">读题→看思路自己说→点范文对照（①单理由 ②两理由，先背单理由）→🎙录音→复制报告发 cc 判分。~80 词、~40 秒说顺。</div><div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">4.0/6</span>题 1：How often do you watch movies? Do you watch them weekly, monthly, or less often?</div>
+  <div class="mine">🎙 你这次答的：Well, I love watching movies and I watch movie weekly. And I have a list about um the most famous movies um in the world, and I have a plan to watch it one by one um such as um a French— I really love French movies. I love the um lifestyle in movies and I often watch movies with my friend, and it is kind of event that we gather weekly to share great movies.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 48 词</div><button class="playall say" data-say="Well, I watch movies every week. First off, movies are my favorite way to relax. This is because a good film takes me to another world. Like, I love French movies for their lifestyle and scenery. So, I make a list and watch one new film each week. Therefore, movies are a big part of my week.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> I watch movies every week.</div><div class="ln"><span class="mk">First off,</span> movies are my favorite way to relax.</div><div class="ln"><span class="mk">This is because</span> a good film takes me to another world.</div><div class="ln"><span class="mk">Like,</span> I love French movies for their lifestyle and scenery.</div><div class="ln"><span class="mk">So,</span> I make a list and watch one new film each week.</div><div class="ln"><span class="mk">Therefore,</span> movies are a big part of my week.</div></div><div class="wc">共 48 词 · 约 24 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, I watch movies every week. First off, movies are my favorite way to relax. This is because a good film takes me to another world. Like, I love French movies for their lifestyle and scenery. So, I make a list and watch one new film each week. Besides, watching with friends is a weekly event. This is because we enjoy sharing stories together. Like, every Friday we pick one movie and discuss it. So, it has become our happy routine. Therefore, movies are a big part of my week.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> I watch movies every week.</div><div class="ln"><span class="mk">First off,</span> movies are my favorite way to relax.</div><div class="ln"><span class="mk">This is because</span> a good film takes me to another world.</div><div class="ln"><span class="mk">Like,</span> I love French movies for their lifestyle and scenery.</div><div class="ln"><span class="mk">So,</span> I make a list and watch one new film each week.</div><div class="ln"><span class="mk">Besides,</span> watching with friends is a weekly event.</div><div class="ln"><span class="mk">This is because</span> we enjoy sharing stories together.</div><div class="ln"><span class="mk">Like,</span> every Friday we pick one movie and discuss it.</div><div class="ln"><span class="mk">So,</span> it has become our happy routine.</div><div class="ln"><span class="mk">Therefore,</span> movies are a big part of my week.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="weekly">weekly</span><span class="ipa">/ˈwiːkli/</span>每周的</div><div><span class="w say" data-say="lifestyle">lifestyle</span><span class="ipa">/ˈlaɪfstaɪl/</span>生活方式</div><div><span class="w say" data-say="scenery">scenery</span><span class="ipa">/ˈsiːnəri/</span>风景</div><div><span class="w say" data-say="routine">routine</span><span class="ipa">/ruːˈtiːn/</span>日常惯例</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;How often do you watch movies? Do you watch them weekly, monthly, or less often?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;I watch movies every week.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;movies are my favorite way to relax.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;a good film takes me to another world.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I love French movies for their lifestyle and scenery.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I make a list and watch one new film each week.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;movies are a big part of my week.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;I watch movies every week.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;movies are my favorite way to relax.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;a good film takes me to another world.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I love French movies for their lifestyle and scenery.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I make a list and watch one new film each week.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;watching with friends is a weekly event.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;we enjoy sharing stories together.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;every Friday we pick one movie and discuss it.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;it has become our happy routine.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;movies are a big part of my week.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.6/6</span>题 2：What genres of movies do you usually prefer to watch? For example, do you enjoy action, comedy, or drama?</div>
+  <div class="mine">🎙 你这次答的：Well, my favorite movie is action movie. I love Chinese Kung Fu, and my favorite actor is Li Lianjie and Li Xiaolong, such actors. And the action movie give me a very fantastic experience about the exercise, and it make me—such as, it can help me have the motivate to exercise my body. And I often engage into it with my friends, and they love it.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 42 词</div><button class="playall say" data-say="Well, I usually prefer action movies. First off, action films give me energy. This is because the fight scenes are exciting and inspiring. Like, I love Chinese kung fu stars like Jet Li and Bruce Lee. So, after watching, I feel motivated to exercise. Therefore, action movies are my favorite genre.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> I usually prefer action movies.</div><div class="ln"><span class="mk">First off,</span> action films give me energy.</div><div class="ln"><span class="mk">This is because</span> the fight scenes are exciting and inspiring.</div><div class="ln"><span class="mk">Like,</span> I love Chinese kung fu stars like Jet Li and Bruce Lee.</div><div class="ln"><span class="mk">So,</span> after watching, I feel motivated to exercise.</div><div class="ln"><span class="mk">Therefore,</span> action movies are my favorite genre.</div></div><div class="wc">共 42 词 · 约 21 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, I usually prefer action movies. First off, action films give me energy. This is because the fight scenes are exciting and inspiring. Like, I love Chinese kung fu stars like Jet Li and Bruce Lee. So, after watching, I feel motivated to exercise. Besides, I enjoy watching them with my friends. This is because we share the excitement together. Like, we often cheer at the fight scenes together. So, it becomes a fun shared moment. Therefore, action movies are my favorite genre.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> I usually prefer action movies.</div><div class="ln"><span class="mk">First off,</span> action films give me energy.</div><div class="ln"><span class="mk">This is because</span> the fight scenes are exciting and inspiring.</div><div class="ln"><span class="mk">Like,</span> I love Chinese kung fu stars like Jet Li and Bruce Lee.</div><div class="ln"><span class="mk">So,</span> after watching, I feel motivated to exercise.</div><div class="ln"><span class="mk">Besides,</span> I enjoy watching them with my friends.</div><div class="ln"><span class="mk">This is because</span> we share the excitement together.</div><div class="ln"><span class="mk">Like,</span> we often cheer at the fight scenes together.</div><div class="ln"><span class="mk">So,</span> it becomes a fun shared moment.</div><div class="ln"><span class="mk">Therefore,</span> action movies are my favorite genre.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="genre">genre</span><span class="ipa">/ˈʒɑːnrə/</span>类型，题材</div><div><span class="w say" data-say="kung fu">kung fu</span><span class="ipa">/ˌkʌŋ ˈfuː/</span>功夫</div><div><span class="w say" data-say="motivated">motivated</span><span class="ipa">/ˈmoʊtɪveɪtɪd/</span>有动力的</div><div><span class="w say" data-say="exciting">exciting</span><span class="ipa">/ɪkˈsaɪtɪŋ/</span>令人兴奋的</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;What genres of movies do you usually prefer to watch? For example, do you enjoy action, comedy, or drama?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;I usually prefer action movies.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;action films give me energy.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;the fight scenes are exciting and inspiring.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I love Chinese kung fu stars like Jet Li and Bruce Lee.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;after watching, I feel motivated to exercise.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;action movies are my favorite genre.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;I usually prefer action movies.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;action films give me energy.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;the fight scenes are exciting and inspiring.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I love Chinese kung fu stars like Jet Li and Bruce Lee.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;after watching, I feel motivated to exercise.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;I enjoy watching them with my friends.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;we share the excitement together.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;we often cheer at the fight scenes together.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;it becomes a fun shared moment.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;action movies are my favorite genre.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.0/6</span>题 3：Can you tell me about a movie that you have seen and what you thought about it?</div>
+  <div class="mine">🎙 你这次答的：I have ever seen a movie called Crouching Tiger, Hidden Dragon. It&#x27;s directed by Chinese famous director Ang Lee, and it is a movie tells about Chinese Kung Fu and Chinese culture. And it won the Golden Globe prize and is be famous globally. The Chinese Kung Fu and culture in the movie inspired me to seek for freedom and seek for love.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 48 词</div><button class="playall say" data-say="Well, a movie I really liked is Crouching Tiger, Hidden Dragon. First off, it beautifully shows Chinese kung fu and culture. This is because the director Ang Lee captured both art and action. Like, the fight scenes mix martial arts with poetry. So, I was deeply moved by its beauty. Therefore, I think it is a masterpiece.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> a movie I really liked is Crouching Tiger, Hidden Dragon.</div><div class="ln"><span class="mk">First off,</span> it beautifully shows Chinese kung fu and culture.</div><div class="ln"><span class="mk">This is because</span> the director Ang Lee captured both art and action.</div><div class="ln"><span class="mk">Like,</span> the fight scenes mix martial arts with poetry.</div><div class="ln"><span class="mk">So,</span> I was deeply moved by its beauty.</div><div class="ln"><span class="mk">Therefore,</span> I think it is a masterpiece.</div></div><div class="wc">共 48 词 · 约 24 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, a movie I really liked is Crouching Tiger, Hidden Dragon. First off, it beautifully shows Chinese kung fu and culture. This is because the director Ang Lee captured both art and action. Like, the fight scenes mix martial arts with poetry. So, I was deeply moved by its beauty. Besides, the story inspired me deeply. This is because it is about freedom and love. Like, the characters fight for the life they want. So, it made me value my own freedom more. Therefore, I think it is a masterpiece.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> a movie I really liked is Crouching Tiger, Hidden Dragon.</div><div class="ln"><span class="mk">First off,</span> it beautifully shows Chinese kung fu and culture.</div><div class="ln"><span class="mk">This is because</span> the director Ang Lee captured both art and action.</div><div class="ln"><span class="mk">Like,</span> the fight scenes mix martial arts with poetry.</div><div class="ln"><span class="mk">So,</span> I was deeply moved by its beauty.</div><div class="ln"><span class="mk">Besides,</span> the story inspired me deeply.</div><div class="ln"><span class="mk">This is because</span> it is about freedom and love.</div><div class="ln"><span class="mk">Like,</span> the characters fight for the life they want.</div><div class="ln"><span class="mk">So,</span> it made me value my own freedom more.</div><div class="ln"><span class="mk">Therefore,</span> I think it is a masterpiece.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="director">director</span><span class="ipa">/dəˈrektər/</span>导演</div><div><span class="w say" data-say="martial arts">martial arts</span><span class="ipa">/ˈmɑːrʃl ɑːrts/</span>武术</div><div><span class="w say" data-say="masterpiece">masterpiece</span><span class="ipa">/ˈmæstərpiːs/</span>杰作</div><div><span class="w say" data-say="freedom">freedom</span><span class="ipa">/ˈfriːdəm/</span>自由</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;Can you tell me about a movie that you have seen and what you thought about it?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;a movie I really liked is Crouching Tiger, Hidden Dragon.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;it beautifully shows Chinese kung fu and culture.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;the director Ang Lee captured both art and action.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;the fight scenes mix martial arts with poetry.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I was deeply moved by its beauty.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;I think it is a masterpiece.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;a movie I really liked is Crouching Tiger, Hidden Dragon.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;it beautifully shows Chinese kung fu and culture.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;the director Ang Lee captured both art and action.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;the fight scenes mix martial arts with poetry.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I was deeply moved by its beauty.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;the story inspired me deeply.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;it is about freedom and love.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;the characters fight for the life they want.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;it made me value my own freedom more.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;I think it is a masterpiece.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div>
+<div class="q-card">
+  <div class="q-txt"><span class="s-sc" style="float:right">3.4/6</span>题 4：Some people believe that viewing films at home is more enjoyable than going to a movie theater. Do you agree or disagree? Why?</div>
+  <div class="mine">🎙 你这次答的：Well, uh, I love both ways. Uh, I watch movie many often, so uh, I watch movie uh, at home because it&#x27;s very freedom and I can uh, watch movie and eat things and do other kind of things. And I also additionally I think go to the uh, cinema to watch movie is very fantastic experience because the big screen, uh, the fantastic sound, and the experience is good.</div>
+  <details class="fold" open><summary>💡 思路表格</summary><table class="ol"><tr><td class="r">观点</td><td>（见范文）</td></tr></table></details>
+  <details class="fold"><summary>📖 范文（① 单理由 / ② 两理由）</summary><div class="vlabel">① 单理由版 · 44 词</div><button class="playall say" data-say="Well, I prefer watching movies at home. First off, home is more comfortable and free. This is because I can eat snacks and pause anytime. Like, I can lie on the sofa and watch in pajamas. So, I relax better in my own space. Therefore, I enjoy both, but home is my favorite.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> I prefer watching movies at home.</div><div class="ln"><span class="mk">First off,</span> home is more comfortable and free.</div><div class="ln"><span class="mk">This is because</span> I can eat snacks and pause anytime.</div><div class="ln"><span class="mk">Like,</span> I can lie on the sofa and watch in pajamas.</div><div class="ln"><span class="mk">So,</span> I relax better in my own space.</div><div class="ln"><span class="mk">Therefore,</span> I enjoy both, but home is my favorite.</div></div><div class="wc">共 44 词 · 约 22 秒</div><div class="vlabel">② 两理由版 ·  词</div><button class="playall say" data-say="Well, I prefer watching movies at home. First off, home is more comfortable and free. This is because I can eat snacks and pause anytime. Like, I can lie on the sofa and watch in pajamas. So, I relax better in my own space. Besides, the cinema has a bigger screen and sound. This is because the huge screen and sound are amazing. Like, action films feel much more powerful there. So, for big films, the theater is worth it. Therefore, I enjoy both, but home is my favorite.">🔊 整段朗读</button><div><div class="ln"><span class="mk">Well,</span> I prefer watching movies at home.</div><div class="ln"><span class="mk">First off,</span> home is more comfortable and free.</div><div class="ln"><span class="mk">This is because</span> I can eat snacks and pause anytime.</div><div class="ln"><span class="mk">Like,</span> I can lie on the sofa and watch in pajamas.</div><div class="ln"><span class="mk">So,</span> I relax better in my own space.</div><div class="ln"><span class="mk">Besides,</span> the cinema has a bigger screen and sound.</div><div class="ln"><span class="mk">This is because</span> the huge screen and sound are amazing.</div><div class="ln"><span class="mk">Like,</span> action films feel much more powerful there.</div><div class="ln"><span class="mk">So,</span> for big films, the theater is worth it.</div><div class="ln"><span class="mk">Therefore,</span> I enjoy both, but home is my favorite.</div></div><div class="wc">共 ~ 词 · 约 40 秒</div></details>
+  <details class="fold"><summary>🔑 常见表达 &amp; 单词</summary><div class="vocab"><div><span class="w say" data-say="comfortable">comfortable</span><span class="ipa">/ˈkʌmftəbl/</span>舒适的</div><div><span class="w say" data-say="pause">pause</span><span class="ipa">/pɔːz/</span>暂停</div><div><span class="w say" data-say="big screen">big screen</span><span class="ipa">/bɪɡ skriːn/</span>大银幕</div><div><span class="w say" data-say="powerful">powerful</span><span class="ipa">/ˈpaʊərfl/</span>震撼的</div></div></details>
+  <div class="btnrow"><button class="btn rec" onclick="rec(this,'')">🎙 录音</button><button class="btn" onclick='copyRep({&quot;q&quot;: &quot;Some people believe that viewing films at home is more enjoyable than going to a movie theater. Do you agree or disagree? Why?&quot;, &quot;model&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;I prefer watching movies at home.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;home is more comfortable and free.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;I can eat snacks and pause anytime.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I can lie on the sofa and watch in pajamas.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I relax better in my own space.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;I enjoy both, but home is my favorite.&quot;}], &quot;model2&quot;: [{&quot;mk&quot;: &quot;Well,&quot;, &quot;role&quot;: &quot;切题&quot;, &quot;en&quot;: &quot;I prefer watching movies at home.&quot;}, {&quot;mk&quot;: &quot;First off,&quot;, &quot;role&quot;: &quot;理由一&quot;, &quot;en&quot;: &quot;home is more comfortable and free.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;I can eat snacks and pause anytime.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;I can lie on the sofa and watch in pajamas.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;I relax better in my own space.&quot;}, {&quot;mk&quot;: &quot;Besides,&quot;, &quot;role&quot;: &quot;理由二&quot;, &quot;en&quot;: &quot;the cinema has a bigger screen and sound.&quot;}, {&quot;mk&quot;: &quot;This is because&quot;, &quot;role&quot;: &quot;为什么&quot;, &quot;en&quot;: &quot;the huge screen and sound are amazing.&quot;}, {&quot;mk&quot;: &quot;Like,&quot;, &quot;role&quot;: &quot;举例&quot;, &quot;en&quot;: &quot;action films feel much more powerful there.&quot;}, {&quot;mk&quot;: &quot;So,&quot;, &quot;role&quot;: &quot;深入细节&quot;, &quot;en&quot;: &quot;for big films, the theater is worth it.&quot;}, {&quot;mk&quot;: &quot;Therefore,&quot;, &quot;role&quot;: &quot;收尾&quot;, &quot;en&quot;: &quot;I enjoy both, but home is my favorite.&quot;}]})'>📋 复制报告给 cc</button></div>
+  <div class="live"></div>
+</div></div>
+</div>
+<script>
+const V=window.VocaSpeech;
+let voices=[];function lv(){voices=window.speechSynthesis?speechSynthesis.getVoices():[]}
+if(window.speechSynthesis){lv();speechSynthesis.onvoiceschanged=lv}
+function say(t,rate){if(!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=rate||0.95;const v=voices.find(v=>/en-US/i.test(v.lang)&&/Samantha|Aria|Jenny|Google US|female/i.test(v.name))||voices.find(v=>/en-US/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}
+function tab(t){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));document.querySelectorAll('.sec').forEach(x=>x.classList.toggle('on',x.id===t));window.scrollTo(0,0)}
+function reveal(el){el.classList.remove('hidden')}
+function toggleChunks(id){document.getElementById(id).classList.toggle('show')}
+// 录音（复用 speech-core）
+async function rec(btn,ref){
+  if(!V||!V.supported){alert('请用 Chrome 打开、并先双击 start.command 启动录音服务');return}
+  if(btn.dataset.on==='1'){return}
+  btn.dataset.on='1';btn.classList.add('on');btn.textContent='⏹ 停止';
+  const live=btn.closest('.s-card,.q-card').querySelector('.live');
+  try{
+    await V.record(15,s=>{if(live)live.textContent='录音中… '+s+'s'},async url=>{
+      btn.dataset.on='';btn.classList.remove('on');btn.textContent='🎙 录音';
+      if(live)live.textContent='转写中…';
+      try{const tr=await V.transcribe(url);if(live)live.innerHTML='你说的：<b>'+(tr||'(空)')+'</b>'+(ref?'<br>标准：'+ref:'')}
+      catch(e){if(live)live.textContent='（转写失败，可回听）'}
+    });
+  }catch(e){btn.dataset.on='';btn.classList.remove('on');btn.textContent='🎙 录音';if(live)live.textContent='（录音需要 start.command 启动服务）'}
+}
+function copyRep(q){
+  const full=v=>v.map(l=>(l.mk?l.mk+' ':'')+l.en).join(' ');
+  let r='【口语模考·面试题练习判分】\n题目：'+q.q+'\n\n参考范文（①单理由）：\n'+full(q.model)+'\n';
+  if(q.model2)r+='\n参考范文（②两理由）：\n'+full(q.model2)+'\n';
+  r+='\n我录音说的（粘贴转写）：\n____\n\n请 cc 按维度打分(切题/展开/流利度/语法词汇/发音韵律)+指出问题+给~80词修改稿。';
+  (navigator.clipboard?navigator.clipboard.writeText(r).then(()=>alert('已复制，粘贴给 cc'),()=>prompt('复制：',r)):prompt('复制：',r))
+}
+window.__Q={};
+document.querySelectorAll('[data-say]').forEach(el=>el.onclick=e=>{e.stopPropagation();say(el.dataset.say)});
+</script>
+</body></html>
