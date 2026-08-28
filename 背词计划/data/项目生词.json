@@ -1,11 +1,11 @@
 {
  "source": "模考汇入",
  "book": "项目生词（按主题）",
- "total": 842,
+ "total": 871,
  "wordLists": {
   "1": {
    "name": "🎨 艺术史与艺术",
-   "count": 50
+   "count": 57
   },
   "2": {
    "name": "🌿 生态与环境",
@@ -13,7 +13,7 @@
   },
   "3": {
    "name": "🏛 考古·历史·人类学",
-   "count": 173
+   "count": 182
   },
   "4": {
    "name": "🌊 地球·海洋·自然科学",
@@ -25,7 +25,7 @@
   },
   "6": {
    "name": "🧬 生物·医学",
-   "count": 137
+   "count": 140
   },
   "7": {
    "name": "💰 经济·社会·政治",
@@ -33,11 +33,11 @@
   },
   "8": {
    "name": "🏫 校园生活与对话",
-   "count": 86
+   "count": 90
   },
   "9": {
    "name": "📚 通用学术词",
-   "count": 185
+   "count": 191
   }
  },
  "words": [
@@ -2091,6 +2091,285 @@
    },
    "index": 50,
    "id": "PJ01-050"
+  },
+  {
+   "word": "lapis",
+   "pronunciation": "/ˈlæpɪs/",
+   "definition": "名词；青金石（lapis lazuli 的简称）；石头（拉丁语）",
+   "memory": "一种深蓝色的宝石 ｜ 青金石；石头（拉丁语）",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 lapis（石头）+ 中古拉丁语 lazuli（蓝色的）→ 蓝色石头 → 青金石",
+   "ph": "重音在第一音节；a 发短音 /æ/；常读作两个词 lapis lazuli /ˌlæpɪs ˈlæzjʊlaɪ/。",
+   "tip": "lapis lazuli＝「蓝色的石头」，即青金石。",
+   "xex": [
+    {
+     "en": "Ancient Egyptians prized lapis lazuli for jewelry and decoration.",
+     "zh": "古埃及人珍视青金石，用来制作首饰和装饰品。",
+     "src": "造句"
+    },
+    {
+     "en": "Lapis pigment was once as costly as gold.",
+     "zh": "青金石颜料曾和黄金一样昂贵。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "azurite",
+     "ipa": "/ˈæʒəraɪt/",
+     "note": "另一种蓝色矿物，色泽偏深蓝"
+    }
+   ],
+   "ant": [],
+   "nu": "讲座谈古代颜料或美索不达米亚/埃及文明时常见。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 1,
+   "src_sent": {
+    "title": "Blue Pigment",
+    "en": "One of the most famous sources of blue pigment was lapis lazuli, a deep blue stone mined mainly in what is now Afghanistan."
+   },
+   "index": 51,
+   "id": "PJ01-051"
+  },
+  {
+   "word": "palette",
+   "pronunciation": "/ˈpælɪt/",
+   "definition": "n. 调色板；（画家或设计师常用的）一组颜色；（电脑绘图软件的）色板",
+   "memory": "一块供画师摆放、调配颜料的平板，引申为一个人惯用的一套色彩。 ｜ 调色板（画家持在手上的平板）；（某画家/作品所用的）一组色彩；（电脑软件的）色板/工具面板",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自法语 palette，本义『小铲子/小平板』（pale 的指小词），再上溯拉丁语 pala『铲、锹』。因画师用平铲状木板盛颜料，遂转指『调色板』。",
+   "ph": "重音在第一音节 /ˈpæ/，末尾 -ette 弱读为 /ɪt/，不读 /eɪt/。注意与 palate（上颚）/ˈpælɪt/、pallet（托盘）/ˈpælɪt/ 完全同音，听力中要靠上下文区分。",
+   "tip": "『palette = pal(铲)+ette(小)』——小铲子状的木板，画家端着它调色。",
+   "xex": [
+    {
+     "en": "A broad palette gives a designer more freedom to convey mood.",
+     "zh": "宽广的用色范围让设计师有更多自由去传达情绪。",
+     "src": "造句"
+    },
+    {
+     "en": "In the lecture, the professor explained how the Impressionists brightened their palette.",
+     "zh": "讲座中教授解释了印象派画家如何让他们的用色变得明亮。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "spectrum",
+     "ipa": "/ˈspektrəm/",
+     "note": "强调连续光谱/范围，偏物理；palette 强调人选择的配色"
+    }
+   ],
+   "ant": [],
+   "nu": "学术讲座里常与 color、pigment 连用，如 color palette（配色方案）。注意同音词 palate/pallet，勿混淆。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 1,
+   "src_sent": {
+    "title": "Blue Pigment",
+    "en": "Later, other synthetic blues expanded the palette even further."
+   },
+   "index": 52,
+   "id": "PJ01-052"
+  },
+  {
+   "word": "pigment",
+   "pronunciation": "/ˈpɪɡmənt/",
+   "definition": "n. 颜料；色素（生物体内的天然着色物质）",
+   "memory": "赋予物体颜色的物质，既指画家的颜料，也指皮肤、植物里的天然色素。 ｜ 颜料（作画用的着色粉）；色素（生物体天然着色物）",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自拉丁语 pigmentum『着色之物』，由 pingere『绘画』派生（ping- 意为『涂抹、画』）。同源词 picture（图画）、paint（油漆）。",
+   "ph": "重音在第一音节 /ˈpɪɡ/，第二音节 /mənt/ 弱读为 /mənt/，词尾 -ment 永远不重读。字母 g 读 /ɡ/（硬音）。",
+   "tip": "『pig(猪)+ment』虽然 pig 沾不上边，但 pig 有『涂满』的画面感——把颜料涂得满身都是。",
+   "xex": [
+    {
+     "en": "Natural pigments were gradually replaced by synthetic dyes.",
+     "zh": "天然颜料逐渐被合成染料取代。",
+     "src": "造句"
+    },
+    {
+     "en": "The lecture mentioned that some pigments fade when exposed to sunlight.",
+     "zh": "讲座提到某些颜料暴露在阳光下会褪色。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "dye",
+     "ipa": "/daɪ/",
+     "note": "多指可溶于水的染料，用于染织物；pigment 多为不溶的颗粒状着色物"
+    }
+   ],
+   "ant": [],
+   "nu": "听力中常对比 natural pigment（天然）与 synthetic pigment（合成）。注意 pigment 与 pigment 相关词 pigmentation（色素沉着）。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 1,
+   "src_sent": {
+    "title": "Blue Pigment",
+    "en": "Today we're going to look at the history of blue pigment and why the color blue has held such a special place in art."
+   },
+   "index": 53,
+   "id": "PJ01-053"
+  },
+  {
+   "word": "prestige",
+   "pronunciation": "/preˈstiːʒ/",
+   "definition": "n. 声望，威望；（因成就或地位获得的）显赫名望",
+   "memory": "让人肃然起敬、抬高了身份的那份光彩与名声。 ｜ 声望、威望",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自法语 prestige『魅力、幻象』，上溯拉丁语 praestigiae『戏法、障眼法』，本义是『用把戏迷惑人』。后由『令人目眩的魔力』演变为正面含义『显赫声望』。",
+   "ph": "重音在第二音节 /-ˈstiːʒ/，末尾 -ige 读 /ʒ/（法语借词的典型软音，如 garage、mirage）。注意 g 不读 /dʒ/，而是 /ʒ/。",
+   "tip": "法语借词里 -ge 常发 /ʒ/：prestige、garage、mirage——『声望是别人眼中你身上的光晕』。",
+   "xex": [
+    {
+     "en": "The university gained prestige after winning the Nobel Prize.",
+     "zh": "这所大学在获得诺贝尔奖后声望大增。",
+     "src": "造句"
+    },
+    {
+     "en": "Some professions carry more social prestige than others.",
+     "zh": "有些职业比其他职业带有更高的社会声望。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "reputation",
+     "ipa": "/ˌrepjəˈteɪʃn/",
+     "note": "泛指名声（可好可坏）；prestige 专指正面的、令人尊敬的威望"
+    },
+    {
+     "w": "stature",
+     "ipa": "/ˈstætʃər/",
+     "note": "偏指因能力/成就获得的分量与地位"
+    }
+   ],
+   "ant": [],
+   "nu": "形容词形式 prestigious（有声望的）。听力里常搭配 gain/lose prestige、a matter of prestige。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 1,
+   "src_sent": {
+    "title": "Blue Pigment",
+    "en": "The blue cloak in such paintings was not just a color choice; it signaled devotion, prestige, and the patron's willingness to pay for the finest materials."
+   },
+   "index": 54,
+   "id": "PJ01-054"
+  },
+  {
+   "word": "prussian",
+   "pronunciation": "/ˈprʌʃən/",
+   "definition": "adj. 普鲁士的 n. 普鲁士人；普鲁士蓝（一种深蓝色颜料，Prussian blue）",
+   "memory": "与德国历史上普鲁士地区相关的；在艺术语境里几乎专指『普鲁士蓝』这种深蓝颜料。 ｜ 普鲁士的（历史地区/王国）；普鲁士蓝（合成深蓝颜料）",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自 Prussia（普鲁士，拉丁化地名），指波罗的海沿岸的历史地区，后成德国统一的核心王国。颜料 Prussian blue 因 18 世纪初在柏林被合成而得名。",
+   "ph": "重音在第一音节 /ˈprʌʃ/，-ss- 读 /ʃ/（如 Russia /ˈrʌʃə/ 中的 ss），-ian 读 /ən/ 弱读。注意开头的 Pr- 辅音连缀 /pr/ 要连读。",
+   "tip": "『Prussia 普鲁士』的首都柏林 Berlin，而普鲁士蓝（Berlin blue 的别名）恰在柏林诞生——记地名就记住颜料。",
+   "xex": [
+    {
+     "en": "Prussian blue allowed artists to buy a cheap, stable dark blue.",
+     "zh": "普鲁士蓝让画家能买到便宜又稳定的深蓝色。",
+     "src": "造句"
+    },
+    {
+     "en": "The lecture traced how Prussian blue spread from Berlin to the rest of Europe.",
+     "zh": "讲座追溯了普鲁士蓝如何从柏林传播到欧洲其他地区。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "听力艺术/化学类讲座中，Prussian 几乎总是出现在 Prussian blue 词组里，指代一类重要的合成颜料。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 1,
+   "src_sent": {
+    "title": "Blue Pigment",
+    "en": "Prussian blue, discovered in the early eighteenth century, was cheaper and easier to produce."
+   },
+   "index": 55,
+   "id": "PJ01-055"
+  },
+  {
+   "word": "synthetic",
+   "pronunciation": "/sɪnˈθetɪk/",
+   "definition": "adj. 合成的，人造的；（语言上）综合性的 n. 合成物",
+   "memory": "由不同部分『拼合』而成的、非天然的；在化学语境即『人造的』。 ｜ 合成的、人造的（化学制品）；合成的（非自然生长的材料）",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自希腊语 sunthetikos，由 suntithenai『放在一起』（syn-『共同』+ tithenai『放置』）派生，本义即『拼合而成』。同源 synthesis（综合）、thesis（命题，『摆出来』）。",
+   "ph": "重音在第二音节 /-ˈθet-/，th 读清辅音 /θ/（牙齿咬舌）。第一音节 syn- 弱读 /sɪn/。注意与 sympathetic /ˌsɪmpəˈθetɪk/（有同情心的）区分重音与中间音节。",
+   "tip": "『syn(一起)+thet(放)』= 把各部分放在一起拼出来，所以是『合成的』——synthesis 是它的名词。",
+   "xex": [
+    {
+     "en": "The lecture discussed how synthetic dyes transformed the textile industry.",
+     "zh": "讲座讨论了合成染料如何改变了纺织业。",
+     "src": "造句"
+    },
+    {
+     "en": "Many vitamins today are produced synthetically in laboratories.",
+     "zh": "如今许多维生素是在实验室里人工合成的。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "artificial",
+     "ipa": "/ˌɑːrtɪˈfɪʃl/",
+     "note": "强调人造以模仿自然；synthetic 更偏『通过化学反应合成』"
+    }
+   ],
+   "ant": [],
+   "nu": "反义词 natural（天然的）。听力里常对比 natural vs. synthetic。名词 synthetic 也可指合成纤维/合成物。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 1,
+   "src_sent": {
+    "title": "Blue Pigment",
+    "en": "As new pigments became available, especially synthetic blues, artists no longer had to reserve blue for the most sacred or wealthy subjects."
+   },
+   "index": 56,
+   "id": "PJ01-056"
+  },
+  {
+   "word": "ultramarine",
+   "pronunciation": "/ˌʌltrəməˈriːn/",
+   "definition": "n. 群青（一种鲜艳的深蓝色颜料） adj. 群青色的；深蓝色的",
+   "memory": "『海的那一边』运来的珍贵蓝色颜料，得名于它的产地遥远。 ｜ 群青（深蓝颜料）；群青色、深蓝色",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自中世纪拉丁语 ultramarinus，由 ultra『越过、在…之外』+ marinus『海的』（mare『海』）构成，字面义『海那一边的』。因该颜料来自阿富汗青金石，须跨过地中海运到欧洲而得名。",
+   "ph": "重音在第三音节 /-ˈriːn/，四个音节 ul-tra-ma-rine。注意 -marine 部分读 /məˈriːn/，重音落在 rine 上，不是 /ˈmærɪn/（那是 marine 单独用时读法）。",
+   "tip": "『ultra(越过)+marine(海的)』= 海那一边来的——中世纪欧洲人为了这块深蓝，要跨海从阿富汗进口青金石。",
+   "xex": [
+    {
+     "en": "The painter ground lapis lazuli to make ultramarine.",
+     "zh": "画家研磨青金石来制作群青。",
+     "src": "造句"
+    },
+    {
+     "en": "Ultramarine was reserved for the robes of the Virgin Mary in many altarpieces.",
+     "zh": "在许多祭坛画中，群青被专门用来画圣母玛利亚的长袍。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "azure",
+     "ipa": "/ˈæʒər/",
+     "note": "偏指明亮的蔚蓝/天蓝；ultramarine 是更深、偏紫的蓝"
+    }
+   ],
+   "ant": [],
+   "nu": "艺术史讲座高频词，常与 lapis lazuli（青金石）、pigment、Prussian blue 一起出现。词首 ultra- 本身就有『极端、超越』义。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 1,
+   "src_sent": {
+    "title": "Blue Pigment",
+    "en": "To make the pigment known as ultramarine, artists or specialists had to grind the stone and separate the blue mineral from impurities."
+   },
+   "index": 57,
+   "id": "PJ01-057"
   },
   {
    "id": "PJ02-001",
@@ -11283,6 +11562,380 @@
    },
    "index": 173,
    "id": "PJ03-173"
+  },
+  {
+   "word": "casts",
+   "pronunciation": "/kæst/",
+   "definition": "名词；铸型，模型，模制品；动词 投掷、浇铸、投射（复数 casts）",
+   "memory": "把软材料灌进模具成型后翻出来的复制品 ｜ 铸型、模型、模制品；投掷；投射（光、影）；演员阵容",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自古诺尔斯语 kasta（投掷）→ 投 → 浇铸（把金属液投进模具）→ 铸件/模型",
+   "ph": "美式 /æ/ 短音，英式 /kɑːst/；过去式、过去分词同为 cast（不规则，不变形）。",
+   "tip": "用一个模具 cast，就 cast（浇铸）出一个 cast（模型）。",
+   "xex": [
+    {
+     "en": "Researchers make casts of the footprints to preserve them for study.",
+     "zh": "研究人员给足迹制作铸型，以便保存下来研究。",
+     "src": "造句"
+    },
+    {
+     "en": "The report casts doubt on the earlier theory.",
+     "zh": "这份报告让人对先前的理论产生了怀疑。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "mold",
+     "ipa": "/moʊld/",
+     "note": "指模具本身，而非翻出的成品"
+    },
+    {
+     "w": "replica",
+     "ipa": "/ˈreplɪkə/",
+     "note": "复制品，不强调浇铸成型的工艺"
+    }
+   ],
+   "ant": [],
+   "nu": "古生物学/考古讲座中 fossil cast＝用模具翻制的化石模型，与真化石（original fossil）相对。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "When the plaster hardens, it creates casts, essentially three dimensional negatives that replicate what existed centuries ago."
+   },
+   "index": 174,
+   "id": "PJ03-174"
+  },
+  {
+   "word": "cavities",
+   "pronunciation": "/ˈkævəti/",
+   "definition": "名词；洞，腔，蛀洞（复数 cavities）",
+   "memory": "物体内部或表面上的空洞 ｜ 腔、空腔；蛀洞；洞穴、凹陷",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 cavus（空的）→ cavitas（中空）→ cavity",
+   "ph": "重音在第一音节；-ity 是抽象名词后缀；a 发短音 /æ/。",
+   "tip": "cav-＝「空」，cave（洞穴）与它同源。",
+   "xex": [
+    {
+     "en": "Birds nest in cavities high up in the trees.",
+     "zh": "鸟儿在高高的树洞中筑巢。",
+     "src": "造句"
+    },
+    {
+     "en": "The nasal cavity filters the air we breathe in.",
+     "zh": "鼻腔会过滤我们吸入的空气。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "hollow",
+     "ipa": "/ˈhɑːloʊ/",
+     "note": "凹陷或空洞，更形象口语"
+    },
+    {
+     "w": "cave",
+     "ipa": "/keɪv/",
+     "note": "天然大型洞穴"
+    }
+   ],
+   "ant": [],
+   "nu": "学术听力高频搭配：body cavity（体腔）、nasal cavity（鼻腔）、oral cavity（口腔）。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "For example, at the ancient Maya village of Hoya de Ceren in El Salvador, Central America, casts taken from root cavities have revealed a diverse mix of crops, including manioc, maize, and beans."
+   },
+   "index": 175,
+   "id": "PJ03-175"
+  },
+  {
+   "word": "intercropping",
+   "pronunciation": "/ˌɪntərˈkrɑːpɪŋ/",
+   "definition": "名词；间作，套种（同一块地同时种两种以上作物）",
+   "memory": "不同作物在同一块地里混种 ｜ 间作、套种",
+   "collocations": "",
+   "examples": "",
+   "ety": "inter-（在…之间）+ crop（作物）+ -ing（动名词）→ 在作物之间混种",
+   "ph": "重音在 crop；inter- 弱读为 /ˌɪntər/；-ing 结尾。",
+   "tip": "inter＝之间 + crop＝作物 → 作物之间一起种。",
+   "xex": [
+    {
+     "en": "Farmers practice intercropping to make better use of sunlight and water.",
+     "zh": "农民通过间作来更充分地利用阳光和水分。",
+     "src": "造句"
+    },
+    {
+     "en": "Intercropping can reduce the spread of pests compared with monoculture.",
+     "zh": "与单一种植相比，间作可以减少病虫害的传播。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "companion planting",
+     "ipa": "",
+     "note": "伴生种植，更偏园艺、强调搭配互利"
+    }
+   ],
+   "ant": [],
+   "nu": "农业讲座高频；与 monoculture（单一种植）相对。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "It showed the garden to be an early example of the milpa system, a traditional intercropping method still practiced in Central America and Mexico today, where tall maize plants provide stalks for bean plants to climb."
+   },
+   "index": 176,
+   "id": "PJ03-176"
+  },
+  {
+   "word": "maize",
+   "pronunciation": "/meɪz/",
+   "definition": "名词；玉米（＝corn，尤英式）",
+   "memory": "美洲原产的谷类作物 ｜ 玉米",
+   "collocations": "",
+   "examples": "",
+   "ety": "西班牙语 maíz，源自加勒比泰诺语 mahiz（玉米）",
+   "ph": "拼写 ai 读 /eɪ/；单音节，注意不要读成 /maɪz/。",
+   "tip": "源自加勒比原住民语 mahiz。",
+   "xex": [
+    {
+     "en": "Maize is a staple crop across much of the Americas.",
+     "zh": "玉米是美洲许多地区的主粮作物。",
+     "src": "造句"
+    },
+    {
+     "en": "The three sisters—maize, beans, and squash—grow well together.",
+     "zh": "「三姐妹」——玉米、豆子和南瓜——很适合一起种。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "corn",
+     "ipa": "/kɔːrn/",
+     "note": "美式常指玉米；英式 corn 泛指谷物"
+    }
+   ],
+   "ant": [],
+   "nu": "maize 是学名/英式用法，corn 是美式俗称；农业、考古讲座里常与 domestication 同现。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "For example, at the ancient Maya village of Hoya de Ceren in El Salvador, Central America, casts taken from root cavities have revealed a diverse mix of crops, including manioc, maize, and beans."
+   },
+   "index": 177,
+   "id": "PJ03-177"
+  },
+  {
+   "word": "milpa",
+   "pronunciation": "/ˈmɪlpə/",
+   "definition": "名词；米尔帕（中美洲传统的混作农田，玉米-豆-南瓜）",
+   "memory": "中美洲传统的多作物混作农田系统 ｜ 米尔帕农田",
+   "collocations": "",
+   "examples": "",
+   "ety": "纳瓦特尔语 milpa（玉米田），源自 milli（田地）",
+   "ph": "重音在第一音节；西班牙语借词，p 读清音 /p/。",
+   "tip": "milpa＝玉米＋豆＋南瓜「三姐妹」混作。",
+   "xex": [
+    {
+     "en": "Mayan farmers have cultivated milpas for centuries.",
+     "zh": "玛雅农民种植米尔帕农田已有几个世纪。",
+     "src": "造句"
+    },
+    {
+     "en": "A milpa produces several crops at once and sustains the soil.",
+     "zh": "一块米尔帕能同时产出多种作物，还能维持地力。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "讲座谈中美洲农业、玛雅/阿兹特克文明时高频。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "It showed the garden to be an early example of the milpa system, a traditional intercropping method still practiced in Central America and Mexico today, where tall maize plants provide stalks for bean plants to climb."
+   },
+   "index": 178,
+   "id": "PJ03-178"
+  },
+  {
+   "word": "ornamental",
+   "pronunciation": "/ˌɔːrnəˈmentl/",
+   "definition": "形容词；装饰性的；名词 观赏植物",
+   "memory": "用来装饰的 ｜ 装饰性的；观赏植物",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 ornare（装饰）→ ornamentum（装饰物）→ ornamental（装饰的）",
+   "ph": "重音在第三音节 ment；or- 弱读为 /ɔːr/。",
+   "tip": "orn-＝「装饰」，adorn（装饰）同源。",
+   "xex": [
+    {
+     "en": "Ornamental plants are grown for beauty rather than for food.",
+     "zh": "观赏植物是为了美观而非食用而种植的。",
+     "src": "造句"
+    },
+    {
+     "en": "The building's ornamental carvings date from the eighteenth century.",
+     "zh": "这栋建筑的装饰性雕刻可追溯到十八世纪。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "decorative",
+     "ipa": "/ˈdekərətɪv/",
+     "note": "装饰的，更通用"
+    }
+   ],
+   "ant": [],
+   "nu": "与粮食作物相对；搭配 ornamental plants（观赏植物）。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "The findings show a deliberate integration of ornamental plants with edible plants, suggesting a Roman design ethos that sought to balance aesthetic with utility."
+   },
+   "index": 179,
+   "id": "PJ03-179"
+  },
+  {
+   "word": "plaster",
+   "pronunciation": "/ˈplæstər/",
+   "definition": "n. 灰泥；石膏；膏药 v. 涂灰泥；厚厚地涂抹；粘贴",
+   "memory": "糊在墙上或敷在伤口上的软糊状物，引申为『涂满、贴满』。 ｜ 灰泥（抹墙用的灰浆）；膏药；创可贴（英式）；v. 涂抹；张贴（覆盖满）",
+   "collocations": "",
+   "examples": "",
+   "ety": "经古英语、拉丁语 plastrum 追溯至希腊语 emplastron，由 emplassein『抹上、敷上』（en-『上』+ plassein『塑、抹』）派生，本义就是『糊上去的东西』。同源 plastic（可塑的）。",
+   "ph": "美式 /ˈplæstər/，英式 /ˈplɑːstə(r)/。字母组合 -ast- 在美式读 /æst/，英式读 /ɑːst/。重音始终在第一音节。",
+   "tip": "『plastic（塑料）』是能随意塑形的东西，『plaster』是能随意抹平的东西——都来自 plas-『塑造、涂抹』。",
+   "xex": [
+    {
+     "en": "The artist applied a final coat of plaster to the sculpture.",
+     "zh": "艺术家给雕塑敷上最后一层石膏。",
+     "src": "造句"
+    },
+    {
+     "en": "Plaster was widely used for wall surfaces in ancient Roman houses.",
+     "zh": "古罗马住宅的墙面广泛使用灰泥。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "stucco",
+     "ipa": "/ˈstʌkoʊ/",
+     "note": "专指外墙用灰泥/拉毛水泥，更偏建筑术语"
+    }
+   ],
+   "ant": [],
+   "nu": "听力艺术类讲座中 plaster 常与 fresco（湿壁画）一起出现。英式英语里 plaster 还指创可贴（= 美式 Band-Aid）。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "Researchers can fill these voids by injecting plaster into the empty spaces."
+   },
+   "index": 180,
+   "id": "PJ03-180"
+  },
+  {
+   "word": "squash",
+   "pronunciation": "/skwɑːʃ/",
+   "definition": "n. 南瓜属蔬菜（西葫芦等）；壁球；拥挤的场所 v. 压扁，挤压；镇压",
+   "memory": "用力把东西压扁、挤成一团；也指一种被压/挤扁的球类运动和一整类南瓜蔬菜。 ｜ v. 压扁、挤压；n. 南瓜属蔬菜（尤指西葫芦）；n. 壁球（运动）",
+   "collocations": "",
+   "examples": "",
+   "ety": "动词义源自中世纪法语 esquasser，上溯拉丁语 ex-『出』+ quassare『猛摇、击碎』（与 quake、quash 同源），本义『彻底击碎压扁』。蔬菜义借自纳拉甘塞特印第安语 askutasquash『生吃的绿色食物』。",
+   "ph": "美式 /skwɑːʃ/，英式 /skwɒʃ/。字母组合 -qu- 读 /kw/，-sh 读 /ʃ/。注意 squash 与 quash（镇压、废除）同源，发音相近但 quash 读 /kwɒʃ/。",
+   "tip": "『quash=镇压』是它的近亲，squash 就是『把东西压扁』——从 quass-『击碎』来。蔬菜义另起炉灶，来自印第安语。",
+   "xex": [
+    {
+     "en": "He squashed the bug with his shoe.",
+     "zh": "他用鞋把虫子踩扁了。",
+     "src": "造句"
+    },
+    {
+     "en": "Winter squash can be stored for months after harvest.",
+     "zh": "冬南瓜收获后可储存数月。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "crush",
+     "ipa": "/krʌʃ/",
+     "note": "强调压碎成碎片；squash 强调压扁变形"
+    },
+    {
+     "w": "flatten",
+     "ipa": "/ˈflætn/",
+     "note": "单纯使变平，不含『压碎/破坏』义"
+    }
+   ],
+   "ant": [],
+   "nu": "听力农业/饮食类讲座中 squash 多指南瓜属蔬菜；运动类语境则指壁球。一词多义要靠语境区分。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "The beans enrich the soil with nitrogen, and squash plants, growing along the ground, provide shade that suppresses weeds and retains moisture."
+   },
+   "index": 181,
+   "id": "PJ03-181"
+  },
+  {
+   "word": "voids",
+   "pronunciation": "/vɔɪdz/",
+   "definition": "n. 空隙，空洞，空白（void 的复数） v. 使无效，作废（第三人称单数）",
+   "memory": "空无一物的空间或空洞；引申为『使…失去效力、变得无效』。 ｜ n. 空隙、空洞（空间上的空）；n. 空白、空虚（情感/抽象）；v. 使无效、作废",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自中古英语 voide，经古法语 vuide 上溯通俗拉丁语 *vocitus，与拉丁语 vacare『空着、空出』同源（同 vacuum 真空、vacant 空的）。本义即『空的』。",
+   "ph": "单音节 /vɔɪdz/，元音 /ɔɪ/（如 boy）。词尾 -ds 读 /dz/，浊音连缀。注意与 avoid（避免）前缀 a- 的区分：void 是核心词，avoid = a+void『躲开、使…落空』。",
+   "tip": "『void=空』是核心——avoid 就是『躲开（让它空掉）』，vacuum 是它的亲戚（都是 vac-『空』）。",
+   "xex": [
+    {
+     "en": "Air trapped in voids inside the rock can weaken the structure.",
+     "zh": "困在岩石内部空隙中的空气会削弱结构。",
+     "src": "造句"
+    },
+    {
+     "en": "The court voided the agreement because it was signed under pressure.",
+     "zh": "法院因该协议是在胁迫下签署而判其无效。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "cavity",
+     "ipa": "/ˈkævəti/",
+     "note": "强调物体内部的腔/洞（如蛀牙 cavity）；void 更泛、更抽象"
+    },
+    {
+     "w": "vacuum",
+     "ipa": "/ˈvækjuːm/",
+     "note": "专指真空或空位，物理语境；void 偏一般空洞"
+    }
+   ],
+   "ant": [],
+   "nu": "动词义在法律、合同语境高频：void a contract/agreement（使合同无效）。形容词 void 也常见：null and void（完全无效）。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 3,
+   "src_sent": {
+    "title": "Ancient Garden Soil Casts",
+    "en": "When this organic material decays over the centuries, it often leaves behind voids in the soil."
+   },
+   "index": 182,
+   "id": "PJ03-182"
   },
   {
    "id": "PJ04-001",
@@ -21269,6 +21922,119 @@
    "id": "PJ06-137"
   },
   {
+   "word": "dinosaur",
+   "pronunciation": "/ˈdaɪnəsɔːr/",
+   "definition": "名词；恐龙",
+   "memory": "中生代灭绝的巨大爬行动物 ｜ 恐龙；过时的庞然大物",
+   "collocations": "",
+   "examples": "",
+   "ety": "希腊语 deinos（可怕的）+ sauros（蜥蜴），1842 年欧文为这类化石命名「可怕的蜥蜴」",
+   "ph": "重音在第一音节；dino- 读 /ˈdaɪnə/，注意 i 是长音 /aɪ/。",
+   "tip": "dino＝可怕 + saur＝蜥蜴 →「可怕的蜥蜴」。",
+   "xex": [
+    {
+     "en": "Paleontologists study dinosaur fossils to learn how they lived.",
+     "zh": "古生物学家研究恐龙化石，以了解它们如何生活。",
+     "src": "造句"
+    },
+    {
+     "en": "The museum's dinosaur exhibit attracts thousands of visitors.",
+     "zh": "博物馆的恐龙展吸引了成千上万的参观者。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "听力中常与 fossil、extinction、paleontology 同现。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 6,
+   "src_sent": {
+    "title": "Paleontology Conference",
+    "en": "She discovered some strange-looking leg bones on a dig last summer, and she thinks they might be a new dinosaur species."
+   },
+   "index": 138,
+   "id": "PJ06-138"
+  },
+  {
+   "word": "paleontology",
+   "pronunciation": "/ˌpeɪliɑːnˈtɑːlədʒi/",
+   "definition": "名词；古生物学",
+   "memory": "研究化石和史前生命的科学 ｜ 古生物学",
+   "collocations": "",
+   "examples": "",
+   "ety": "希腊语 palaios（古老的）+ on（存在物）+ -logia（学问）→ 研究远古生物的学问",
+   "ph": "重音在 tol；paleo- 读 /ˌpeɪliɑː/；英式拼写 palaeontology。",
+   "tip": "paleo＝古老 + onto＝存在 + logy＝学问。",
+   "xex": [
+    {
+     "en": "Paleontology relies heavily on the study of fossils.",
+     "zh": "古生物学在很大程度上依赖于对化石的研究。",
+     "src": "造句"
+    },
+    {
+     "en": "Advances in paleontology have changed our picture of dinosaur behavior.",
+     "zh": "古生物学的进展改变了我们对恐龙行为的认识。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "听力中与 fossil、dinosaur、extinction 高频同现；paleontologist 古生物学家。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 6,
+   "src_sent": {
+    "title": "Paleontology Conference",
+    "en": "Man: Hey, are you going to the paleontology conference in Chicago this weekend?"
+   },
+   "index": 139,
+   "id": "PJ06-139"
+  },
+  {
+   "word": "vigorous",
+   "pronunciation": "/ˈvɪɡərəs/",
+   "definition": "adj. 有力的，精力充沛的；强劲的；（植物）生长旺盛的",
+   "memory": "充满生命力与力量，做事或生长都带劲。 ｜ 精力充沛的、有力的；强劲的、强有力的（如辩论、反驳）；（植物）生长旺盛的",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自拉丁语 vigor『活力、力量』，由 vigere『有活力、旺盛』派生，再加形容词后缀 -ous『充满…的』。同源 vegetable（植物，因能生长）、vigil（守夜，保持清醒）。",
+   "ph": "重音在第一音节 /ˈvɪɡ/，第二音节 -or- 弱读 /ər/，-ous 读 /əs/。三个音节 vig-or-ous。注意 g 读 /ɡ/（硬音），不是 /dʒ/。",
+   "tip": "『vigor(活力)+ous(充满)』= 充满活力。词根 vig-『活着、有活力』也藏在 vegetable（会生长的植物）里。",
+   "xex": [
+    {
+     "en": "The campaign sparked vigorous debate across the campus.",
+     "zh": "这场运动在校园里引发了激烈的辩论。",
+     "src": "造句"
+    },
+    {
+     "en": "Vigorous young trees recovered quickly after the storm.",
+     "zh": "茁壮的幼树在暴风雨后恢复得很快。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "energetic",
+     "ipa": "/ˌenərˈdʒetɪk/",
+     "note": "强调能量充沛、行动积极；vigorous 更强调强度与力度"
+    },
+    {
+     "w": "robust",
+     "ipa": "/roʊˈbʌst/",
+     "note": "偏指强健、结实，可形容体系/身体"
+    }
+   ],
+   "ant": [],
+   "nu": "副词 vigorously（猛烈地、大力地）在听力中常修饰 oppose、debate、defend。名词 vigor 也常考。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 6,
+   "src_sent": {
+    "title": "Paleontology Conference",
+    "en": "That'll probably lead to a vigorous debate."
+   },
+   "index": 140,
+   "id": "PJ06-140"
+  },
+  {
    "id": "PJ07-001",
    "wl": 7,
    "index": 1,
@@ -27799,6 +28565,186 @@
    },
    "index": 86,
    "id": "PJ08-086"
+  },
+  {
+   "word": "booths",
+   "pronunciation": "/buːθ/",
+   "definition": "名词；展位，小隔间，卡座，电话亭（复数 booths）",
+   "memory": "一个半封闭的小空间或摊位 ｜ 展位、摊位；小隔间、卡座、投票间、电话亭",
+   "collocations": "",
+   "examples": "",
+   "ety": "中古英语 bōthe，源自古诺尔斯语 búð（小屋、帐篷）→ 小而封闭的空间",
+   "ph": "-oo- 发长音 /uː/；词尾 th 美式可读清 /θ/ 也可读浊 /ð/；复数 booths 常读 /buːðz/。",
+   "tip": "booth 像「布」搭出来的小摊、小隔间。",
+   "xex": [
+    {
+     "en": "Visitors lined up at the information booth to get a map.",
+     "zh": "游客们在问讯处排起长队领地图。",
+     "src": "造句"
+    },
+    {
+     "en": "The lecture hall had translation booths for the foreign delegates.",
+     "zh": "报告厅为外宾准备了同声传译的小隔间。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "stall",
+     "ipa": "/stɔːl/",
+     "note": "更侧重集市上的货摊"
+    },
+    {
+     "w": "kiosk",
+     "ipa": "/ˈkiːɒsk/",
+     "note": "独立亭式结构，如自助服务亭"
+    }
+   ],
+   "ant": [],
+   "nu": "托福听力里常指展览/会场的展位或投票间；复数形式 booths 注意 th 变浊。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 8,
+   "src_sent": {
+    "title": "Pop-up Market",
+    "en": "Can you pay by credit card at all the booths?"
+   },
+   "index": 87,
+   "id": "PJ08-087"
+  },
+  {
+   "word": "knitted",
+   "pronunciation": "/nɪt/",
+   "definition": "动词；编织，针织；使紧密结合（过去式/分词 knitted）",
+   "memory": "用针把线织成布 ｜ 编织、针织；使紧密结合；皱（眉）",
+   "collocations": "",
+   "examples": "",
+   "ety": "古英语 cnyttan（打结、系）→ 编织",
+   "ph": "kn 开头只读 /n/，k 不发音；过去式和过去分词为 knitted（偶尔 knit）。",
+   "tip": "kn 开头的词，k 都不发音（knight、knife、know）。",
+   "xex": [
+    {
+     "en": "My grandmother taught me how to knit when I was a child.",
+     "zh": "我小时候奶奶教我织毛衣。",
+     "src": "造句"
+    },
+    {
+     "en": "A closely knitted community supports its members in hard times.",
+     "zh": "一个联系紧密的社区会在困难时支持它的成员。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "weave",
+     "ipa": "/wiːv/",
+     "note": "梭织，经线纬线交错"
+    },
+    {
+     "w": "crochet",
+     "ipa": "/kroʊˈʃeɪ/",
+     "note": "钩针编织，用钩针"
+    }
+   ],
+   "ant": [],
+   "nu": "knit 与 knot（结）同源；knitted 作形容词表「针织的」。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 8,
+   "src_sent": {
+    "title": "Pop-up Market",
+    "en": "They're selling handmade knitted items, art prints, and other things that students made."
+   },
+   "index": 88,
+   "id": "PJ08-088"
+  },
+  {
+   "word": "vendors",
+   "pronunciation": "/ˈvendərz/",
+   "definition": "n. 小贩，摊贩；供应商，销售商（vendor 的复数）",
+   "memory": "卖东西的人或公司——从街头小贩到企业供应商都可指。 ｜ 小贩、摊贩；供应商、销售商（商业语境）",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自拉丁语 vendere『卖』，由 venum『出售』+ dare『给』构成（字面『拿去卖』）。同源 vend（出售）、vending machine（自动售货机）。",
+   "ph": "重音在第一音节 /ˈven/，词尾 -or 读弱化的 /ər/。复数 -s 读浊音 /z/，即 /ˈvendərz/。注意 e 读 /e/（如 pen），不是 /iː/。",
+   "tip": "『vend(卖)』就是它——vendor 是『卖的人』，vending machine 是『自动卖东西的机器』。",
+   "xex": [
+    {
+     "en": "Vendors at the market offered fresh fruit and vegetables.",
+     "zh": "市场上的小贩出售新鲜水果和蔬菜。",
+     "src": "造句"
+    },
+    {
+     "en": "The university issued a contract to an external vendor for the new system.",
+     "zh": "大学把新系统的合同外包给了一家外部供应商。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "supplier",
+     "ipa": "/səˈplaɪər/",
+     "note": "偏指长期供货的企业；vendor 更泛指卖主，含街头小贩"
+    },
+    {
+     "w": "seller",
+     "ipa": "/ˈselər/",
+     "note": "最泛指的卖方，无规模色彩"
+    }
+   ],
+   "ant": [],
+   "nu": "商业/经济类讲座高频词。注意区分 vendor（卖主）与 buyer/purchaser（买主）。vending machine 也是常考词组。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 8,
+   "src_sent": {
+    "title": "Pop-up Market",
+    "en": "Man: Some vendors use apps, but not everyone."
+   },
+   "index": 89,
+   "id": "PJ08-089"
+  },
+  {
+   "word": "withdraw",
+   "pronunciation": "/wɪðˈdrɔː/",
+   "definition": "v. 撤回，撤退；提取（存款）；退出；收回（言论）",
+   "memory": "往回拉、抽身而退——把东西、人、钱或言论从原处收回。 ｜ 提取（钱款）；撤退、撤离（军队/人员）；退出（课程、比赛、协议）；收回（言论、承诺）",
+   "collocations": "",
+   "examples": "",
+   "ety": "中古英语 withdrawen，由 with『向后、离开』+ drawen『拉、拖』构成，字面『往后拉』。with 在此取古义『反对、离开』（非现代『和…一起』），同 withdrawal（撤回）。",
+   "ph": "重音在第二音节 /-ˈdrɔː/，第一音节 with- 弱读 /wɪð/。th 读浊音 /ð/（因位于两元音间）。过去式 withdrew /wɪðˈdruː/，过去分词 withdrawn。注意 with 单独读 /wɪð/ 或 /wɪθ/，作前缀时读 /wɪð/。",
+   "tip": "『with(往回)+draw(拉)』= 往回拉，所以是撤回/提取/退出。记住 draw 是『拉』，withdraw 就是『拉回来』。",
+   "xex": [
+    {
+     "en": "The lecturer asked students to withdraw their earlier assumptions.",
+     "zh": "讲师要求学生们收回他们此前的假设。",
+     "src": "造句"
+    },
+    {
+     "en": "Investors withdrew their funds when the market collapsed.",
+     "zh": "市场崩盘时投资者撤回了资金。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "retract",
+     "ipa": "/rɪˈtrækt/",
+     "note": "专指收回言论/声明，正式；withdraw 义更广"
+    },
+    {
+     "w": "pull out",
+     "ipa": "/pʊl aʊt/",
+     "note": "口语化，指退出/撤出（军队、项目）"
+    }
+   ],
+   "ant": [],
+   "nu": "听力里常见短语 withdraw from（退出）、withdraw money/cash（取钱）。名词 withdrawal 也是高频词（撤回、戒断）。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 8,
+   "src_sent": {
+    "title": "Pop-up Market",
+    "en": "I think I'll withdraw fifty dollars."
+   },
+   "index": 90,
+   "id": "PJ08-090"
   },
   {
    "id": "PJ09-001",
@@ -36156,6 +37102,243 @@
     "title": "Understanding Mental States",
     "en": "Is understanding others' mental states a matter of simulation (imagining ourselves in their place) or theory (applying a set of rules or concepts)?"
    }
+  },
+  {
+   "word": "anthropological",
+   "pronunciation": "/ˌænθrəpəˈlɑːdʒɪkl/",
+   "definition": "形容词；人类学的",
+   "memory": "研究人类这一物种的 ｜ 人类学的",
+   "collocations": "",
+   "examples": "",
+   "ety": "希腊语 anthrōpos（人）+ -logia（学问）→ 研究人的学问 → 人类学的",
+   "ph": "重音在第 4 音节 lo；anthro- 中的 th 是清音 /θ/，紧跟 r 要连读；-logical 尾读 /dʒɪkl/。",
+   "tip": "anthrop-＝「人」，看见 anthropo- 就想到 human。",
+   "xex": [
+    {
+     "en": "Anthropological fieldwork often requires living in the community for months.",
+     "zh": "人类学田野调查常常需要在当地社区住上几个月。",
+     "src": "造句"
+    },
+    {
+     "en": "The museum displays objects of great anthropological value.",
+     "zh": "这座博物馆展出具有很高人类学价值的器物。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "讲座中常搭配 evidence / record / study / perspective；不要与 anthropomorphic（拟人的）混淆。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 9,
+   "src_sent": {
+    "title": "Culture & Personality School",
+    "en": "In the first half of the 20th century, an anthropological movement emerged called the Culture and Personality School."
+   },
+   "index": 186,
+   "id": "PJ09-186"
+  },
+  {
+   "word": "coherent",
+   "pronunciation": "/koʊˈhɪrənt/",
+   "definition": "形容词；连贯的，条理清晰的，一致的",
+   "memory": "各部分粘合在一起、讲得通的 ｜ 连贯的、条理清晰的；一致的、协调的",
+   "collocations": "",
+   "examples": "",
+   "ety": "拉丁语 co-（一起）+ haerēre（粘）→ 粘在一起 → 连贯的",
+   "ph": "重音在第二音节；-her- 中的 h 要发音；-ent 形容词后缀。",
+   "tip": "co＋here（粘）＝粘在一起，所以「连贯、自洽」。",
+   "xex": [
+    {
+     "en": "The student's answer was clear but not entirely coherent.",
+     "zh": "这个学生的回答很清楚，但不太连贯。",
+     "src": "造句"
+    },
+    {
+     "en": "A coherent theory must explain all the available data.",
+     "zh": "一个自洽的理论必须能解释所有现成的数据。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "logical",
+     "ipa": "/ˈlɑːdʒɪkl/",
+     "note": "强调逻辑上成立"
+    },
+    {
+     "w": "consistent",
+     "ipa": "/kənˈsɪstənt/",
+     "note": "强调前后一致、不矛盾"
+    }
+   ],
+   "ant": [],
+   "nu": "反义 incoherent（语无伦次的）；写作/口语中形容论证结构常用。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 9,
+   "src_sent": {
+    "title": "Culture & Personality School",
+    "en": "Benedict said that cultures were the same way, a whole, coherent system with patterns of values and behaviors, and more than just a set of characteristics."
+   },
+   "index": 187,
+   "id": "PJ09-187"
+  },
+  {
+   "word": "gestalt",
+   "pronunciation": "/ɡəˈʃtɑːlt/",
+   "definition": "名词；格式塔，完形（整体大于部分之和）",
+   "memory": "作为一个整体被感知的完整结构 ｜ 格式塔、完形",
+   "collocations": "",
+   "examples": "",
+   "ety": "德语 Gestalt（形状、形态），20 世纪初由格式塔心理学（Gestalt psychology）引入英语",
+   "ph": "德语借词；/ʃt/ 连读，重音在第二音节；词尾 -t 要发音。",
+   "tip": "格式塔：整体 ≠ 各部分的简单相加。",
+   "xex": [
+    {
+     "en": "A melody is a gestalt, more than just a sequence of notes.",
+     "zh": "一段旋律是一个完形，不只是音符的依次排列。",
+     "src": "造句"
+    },
+    {
+     "en": "The designer arranged the shapes so that they form a single gestalt.",
+     "zh": "设计师把这些形状安排成一个完整的整体。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "通常大写 Gestalt；固定搭配 Gestalt psychology（格式塔心理学）。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 9,
+   "src_sent": {
+    "title": "Culture & Personality School",
+    "en": "Benedict was also influenced by psychology, especially Gestalt ideas."
+   },
+   "index": 188,
+   "id": "PJ09-188"
+  },
+  {
+   "word": "hierarchy",
+   "pronunciation": "/ˈhaɪərɑːrki/",
+   "definition": "名词；等级制度，层级",
+   "memory": "由高到低排列的层级结构 ｜ 等级制度；层级体系",
+   "collocations": "",
+   "examples": "",
+   "ety": "希腊语 hieros（神圣的）+ arkhēs（统治者）→ 教会圣职的等级 → 一般等级制度",
+   "ph": "-ch- 读 /k/ 而非 /tʃ/；重音在第一音节；-archy 结尾。",
+   "tip": "hier＝神圣 + archy＝统治 → 天使也分等级。",
+   "xex": [
+    {
+     "en": "In many species, a dominance hierarchy reduces conflict within the group.",
+     "zh": "在许多物种中，支配等级会减少群体内部的冲突。",
+     "src": "造句"
+    },
+    {
+     "en": "The report organizes the risks into a clear hierarchy.",
+     "zh": "这份报告把各种风险排成了一个清晰的层级。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "ranking",
+     "ipa": "/ˈræŋkɪŋ/",
+     "note": "排序，更中性"
+    },
+    {
+     "w": "pecking order",
+     "ipa": "/ˈpekɪŋ ˌɔːrdər/",
+     "note": "「啄序」，口语化"
+    }
+   ],
+   "ant": [],
+   "nu": "学术听力高频：social hierarchy、dominance hierarchy。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 9,
+   "src_sent": {
+    "title": "Culture & Personality School",
+    "en": "Ruth Benedict refuted the dominant anthropology theory at the time, which stated that there was a hierarchy of cultures, some advanced, others not."
+   },
+   "index": 189,
+   "id": "PJ09-189"
+  },
+  {
+   "word": "refuted",
+   "pronunciation": "/rɪˈfjuːtɪd/",
+   "definition": "v. 驳斥，反驳（refute 的过去式/过去分词）；证明…是错误的",
+   "memory": "用证据或论证把对方的说法彻底推翻。 ｜ 驳斥、证明…错误；反驳（某人的言论）",
+   "collocations": "",
+   "examples": "",
+   "ety": "源自拉丁语 refutare『制止、驳回』，由 re-『回』+ futare『打、击』（与 confute『驳倒』同源）构成，本义是『把来势挡回去』。",
+   "ph": "重音在第二音节 /-ˈfjuːt/，元音 /juː/ 是长音，勿读成 /ʌ/。词尾 -ed 在清辅音 /t/ 后读 /ɪd/，即 /rɪˈfjuːtɪd/，是三个音节。",
+   "tip": "『re(回)+fut(打)』= 把对方的说法打回去，所以是『驳斥』。注意与 refuse（拒绝）形近但义不同。",
+   "xex": [
+    {
+     "en": "A single counterexample can refute a universal claim.",
+     "zh": "一个反例就能驳倒一个全称命题。",
+     "src": "造句"
+    },
+    {
+     "en": "The professor explained how later observations refuted the old model.",
+     "zh": "教授解释了后来的观测如何驳倒了旧模型。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "rebut",
+     "ipa": "/rɪˈbʌt/",
+     "note": "强调口头/书面针锋相对地反驳；refute 强调用证据证明为假"
+    },
+    {
+     "w": "disprove",
+     "ipa": "/ˌdɪsˈpruːv/",
+     "note": "更直接强调『证明不成立』，不带辩论色彩"
+    }
+   ],
+   "ant": [],
+   "nu": "严格用法中 refute = 证明为假（不只是『提出反对』），所以常与 evidence、observation、data 搭配。听力学术讲座中常出现 'a hypothesis was refuted'。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 9,
+   "src_sent": {
+    "title": "Culture & Personality School",
+    "en": "Ruth Benedict refuted the dominant anthropology theory at the time, which stated that there was a hierarchy of cultures, some advanced, others not."
+   },
+   "index": 190,
+   "id": "PJ09-190"
+  },
+  {
+   "word": "relativism",
+   "pronunciation": "/ˈrelətɪvɪzəm/",
+   "definition": "n. 相对主义（认为真理、道德、价值是相对于特定文化/语境而非绝对的学说）",
+   "memory": "一种主张『没有绝对标准、一切看相对关系』的思想立场。 ｜ 相对主义（哲学/文化立场）",
+   "collocations": "",
+   "examples": "",
+   "ety": "由 relative（相对的）+ 希腊词缀 -ism（主义、学说）构成。relative 源自拉丁语 relativus，由 referre『带回到、关联』派生，本义『相互关联、非绝对』。",
+   "ph": "重音在第一音节 /ˈrel/，-a- 弱读 /ə/，-ism 读 /ɪzəm/。四个音节：rel-a-tiv-ism。注意字母 a 在 /ətɪ/ 里不是 /æ/。",
+   "tip": "『relative(相对的)+ism(主义)』= 认为一切都是相对的，没有绝对——拆开即是字面意思。",
+   "xex": [
+    {
+     "en": "The lecture contrasted moral absolutism with relativism.",
+     "zh": "讲座将道德绝对主义与相对主义作了对比。",
+     "src": "造句"
+    },
+    {
+     "en": "Relativism questions whether any belief can be universally true.",
+     "zh": "相对主义质疑是否有任何信念能普遍为真。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "ant": [],
+   "nu": "学术讲座（哲学、人类学、文化研究）高频词，常带限定词：cultural/moral/ethical relativism。反义词 absolutism（绝对主义）。",
+   "src_from": "听力模考·2026-08-29-06",
+   "wl": 9,
+   "src_sent": {
+    "title": "Culture & Personality School",
+    "en": "Benedict studied and embraced the principle of cultural relativism."
+   },
+   "index": 191,
+   "id": "PJ09-191"
   }
  ]
 }

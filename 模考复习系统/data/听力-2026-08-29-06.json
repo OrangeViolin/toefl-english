@@ -1,0 +1,7743 @@
+{
+ "id": "听力-2026-08-29-06",
+ "date": "2026-08-29",
+ "title": "听力模考复盘 · 06:27场",
+ "scores": {
+  "total": "—",
+  "reading": "—",
+  "listening": "—",
+  "writing": "—",
+  "speaking": "—"
+ },
+ "priorities": [
+  {
+   "t": "通知/对话的『why does the speaker say X』题连续错",
+   "why": "Pop-up题1(为何说价格多样→安抚担忧)、Movie题1(为何说穿暖→会冷)都选了字面意思没选『服务目的』"
+  },
+  {
+   "t": "Culture讲座题2(为何提埃及)、Ancient Garden题4(罗马设计师→美与实用兼顾) 修辞目的题又错",
+   "why": "和上一场同一个坑：why mention X 选字面不选论点"
+  },
+  {
+   "t": "反应题(Listen and Choose)8/12+6/8，日常短对话相对稳",
+   "why": "这部分是听一句选最合适的回应，日常语境还行"
+  },
+  {
+   "t": "Blue Pigment 讲座 4/4 全对——学术讲座继续进步",
+   "why": "这篇讲蓝色颜料历史，主旨+细节+修辞目的全对，信号词和词汇都抓得住了"
+  }
+ ],
+ "sections": [
+  {
+   "key": "academic",
+   "label": "🎧 学术讲座 Listen to an Academic Talk（Culture 2/4 + Blue 4/4 + Garden 1/4）",
+   "intro": "学术讲座：Blue Pigment 4/4 全对继续进步，但 Culture 和 Ancient Garden 各错2题，集中在『修辞目的题(why mention X)』——和上一场同一个坑。",
+   "tasks": [
+    {
+     "title": "Culture & Personality School · 文化与人格学派（2/4 ❌错2）",
+     "score": "2/4",
+     "time": "3m30s",
+     "type": "学术讲座",
+     "transcript": "In the first half of the 20th century, an anthropological movement emerged called the Culture and Personality School. According to the Culture and Personality School, people's personalities are a result of the culture they live in, and not just based on biology. Like, not just inherited from their biological parents. For example, how children in a culture experience food, the foods they eat, how it's prepared, this shapes their individual tastes and preferences. One of the anthropologists most associated with this movement was Ruth Benedict. Benedict studied and embraced the principle of cultural relativism. So, according to cultural relativism, all cultures should be studied on their own terms, and not judged against some external measure. So cultures in, say, Egypt belong to Egypt and shouldn't be the standard of what all cultures should try to be. Ruth Benedict refuted the dominant anthropology theory at the time, which stated that there was a hierarchy of cultures, some advanced, others not. Rejecting that took courage, and I think the field is better for it. Benedict was also influenced by psychology, especially Gestalt ideas. According to Gestalt psychology, a personality is an integrated whole, not just a list of traits. Like, if you see a painting of a landscape, you're looking at a whole landscape, and not just, say, a hill, trees, and a farmhouse. Benedict said that cultures were the same way, a whole, coherent system with patterns of values and behaviors, and more than just a set of characteristics.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "主旨题",
+       "q": "What is the main focus of the talk?（讲座主旨）",
+       "options": {
+        "A": "The life of Ruth Benedict",
+        "B": "The Culture and Personality School and Ruth Benedict's ideas",
+        "C": "How psychology influenced anthropology",
+        "D": "The history of cultural relativism"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "开头 'Culture and Personality School' + 全篇围绕 Benedict"
+        },
+        {
+         "k": "推理",
+         "v": "主旨题：学派+Benedict 思想 → B"
+        },
+        {
+         "k": "排除",
+         "v": "A 太窄；C/D 局部"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "type": "修辞目的题",
+       "q": "Why does the speaker mention Egypt?（为何提埃及）",
+       "options": {
+        "A": "To indicate where Benedict began comparing cultures",
+        "B": "To introduce a theory by an Egyptian anthropologist",
+        "C": "To illustrate an idea that guided Benedict's work",
+        "D": "To point out a culture that should be a standard"
+       },
+       "correct": "C",
+       "your": "D",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'cultures in Egypt belong to Egypt and shouldn't be the standard'"
+        },
+        {
+         "k": "推理",
+         "v": "提 Egypt 是举例 cultural relativism 理念 → C"
+        },
+        {
+         "k": "排除",
+         "v": "D 方向反了——shouldn't be standard"
+        }
+       ],
+       "trap": "修辞目的题陷阱：你选了 D(应作标准)——原文 shouldn't be the standard 方向反了。提 Egypt 是举例 cultural relativism(C)"
+      },
+      {
+       "n": 3,
+       "type": "细节题",
+       "q": "What impresses the speaker about Ruth Benedict?（Benedict 让讲者印象深刻之处）",
+       "options": {
+        "A": "Her determination to apply psychology to anthropology",
+        "B": "Her fairness in creating a hierarchy of cultures",
+        "C": "Her ability to teach about cultures",
+        "D": "Her willingness to contradict an established idea"
+       },
+       "correct": "D",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'Benedict refuted the dominant theory...took courage'"
+        },
+        {
+         "k": "推理",
+         "v": "impressed 是反驳主流的勇气 → D"
+        },
+        {
+         "k": "排除",
+         "v": "B 建立等级是 Benedict 反对的"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 B——Benedict 'refuted' hierarchy，不是支持。impressed 是反驳勇气(D)"
+      }
+     ],
+     "weak": "题2/3 都理解反了：Egypt 是举例文化相对主义，hierarchy 是 Benedict 反驳的对象",
+     "fix": "cultural relativism=各文化按自身标准；refute=反驳",
+     "transcript_zh": "在20世纪上半叶，出现了一场人类学运动，叫做「文化与人格学派」。根据文化与人格学派，人们的性格是他们所处文化的结果，而不仅仅是基于生物学。比如，不仅仅是遗传自亲生父母。例如，一个文化中的孩子如何体验食物、他们吃什么食物、食物如何烹制，这些塑造了他们的个人口味和偏好。与这场运动联系最紧密的人类学家之一是鲁思·本尼迪克特。本尼迪克特研究并接受了文化相对主义这一原则。所以，根据文化相对主义，所有文化都应该按它自身的条件来研究，而不是用某种外部标准去评判。所以，比如说埃及的文化就属于埃及，不应该成为所有文化都应该努力达成的标准。鲁思·本尼迪克特驳斥了当时占主导地位的人类学理论，该理论声称存在一个文化等级体系，有些先进，有些落后。拒绝那个理论需要勇气，我认为这个领域因此变得更好。本尼迪克特还受到心理学的影响，尤其是格式塔（完形）思想。根据格式塔心理学，人格是一个整合的整体，而不仅仅是一系列特质的罗列。比如，如果你看到一幅风景画，你看到的是整个风景，而不仅仅是一座山、几棵树和一座农舍。本尼迪克特说文化也是如此，是一个整体的、连贯的系统，有着价值观和行为的模式，而不仅仅是一组特征。",
+     "sentences": [
+      {
+       "en": "In the first half of the 20th century, an anthropological movement emerged called the Culture and Personality School.",
+       "zh": "在20世纪上半叶，出现了一场人类学运动，叫做「文化与人格学派」。",
+       "note": "时间定位+主题引入；主旨句常放在开头，抓学派名字Culture and Personality School。"
+      },
+      {
+       "en": "According to the Culture and Personality School, people's personalities are a result of the culture they live in, and not just based on biology.",
+       "zh": "根据文化与人格学派，人们的性格是他们所处文化的结果，而不仅仅是基于生物学。",
+       "note": "核心观点：性格=文化产物，not just based on biology 表对比/排除。"
+      },
+      {
+       "en": "Like, not just inherited from their biological parents.",
+       "zh": "比如，不仅仅是遗传自亲生父母。",
+       "note": "Like 口语化重复前句，强调「不只是基因决定」。"
+      },
+      {
+       "en": "For example, how children in a culture experience food, the foods they eat, how it's prepared, this shapes their individual tastes and preferences.",
+       "zh": "例如，一个文化中的孩子如何体验食物、他们吃什么食物、食物如何烹制，这些塑造了他们的个人口味和偏好。",
+       "note": "For example 举例信号；用食物口味论证「文化塑造偏好」。"
+      },
+      {
+       "en": "One of the anthropologists most associated with this movement was Ruth Benedict.",
+       "zh": "与这场运动联系最紧密的人类学家之一是鲁思·本尼迪克特。",
+       "note": "引出代表人物Ruth Benedict，注意人名细节题常考。"
+      },
+      {
+       "en": "Benedict studied and embraced the principle of cultural relativism.",
+       "zh": "本尼迪克特研究并接受了文化相对主义这一原则。",
+       "note": "关键术语cultural relativism（文化相对主义），embraced=接受了。"
+      },
+      {
+       "en": "So, according to cultural relativism, all cultures should be studied on their own terms, and not judged against some external measure.",
+       "zh": "所以，根据文化相对主义，所有文化都应该按它自身的条件来研究，而不是用某种外部标准去评判。",
+       "note": "So 引出定义；on their own terms 用自己的标准，not judged against 对比。"
+      },
+      {
+       "en": "So cultures in, say, Egypt belong to Egypt and shouldn't be the standard of what all cultures should try to be.",
+       "zh": "所以，比如说埃及的文化就属于埃及，不应该成为所有文化都应该努力达成的标准。",
+       "note": "So + say 再次举例，重申「不能用某文化当标准」。"
+      },
+      {
+       "en": "Ruth Benedict refuted the dominant anthropology theory at the time, which stated that there was a hierarchy of cultures, some advanced, others not.",
+       "zh": "鲁思·本尼迪克特驳斥了当时占主导地位的人类学理论，该理论声称存在一个文化等级体系，有些先进，有些落后。",
+       "note": "refuted=驳斥（转折信号）；hierarchy of cultures=文化等级，这是被否定的旧观点。"
+      },
+      {
+       "en": "Rejecting that took courage, and I think the field is better for it.",
+       "zh": "拒绝那个理论需要勇气，我认为这个领域因此变得更好。",
+       "note": "说话人态度句：肯定本尼迪克特（better for it），态度题常考。"
+      },
+      {
+       "en": "Benedict was also influenced by psychology, especially Gestalt ideas.",
+       "zh": "本尼迪克特还受到心理学的影响，尤其是格式塔（完形）思想。",
+       "note": "also 递进信号；Gestalt=格式塔，第二个理论来源。"
+      },
+      {
+       "en": "According to Gestalt psychology, a personality is an integrated whole, not just a list of traits.",
+       "zh": "根据格式塔心理学，人格是一个整合的整体，而不仅仅是一系列特质的罗列。",
+       "note": "integrated whole vs list of traits 对比；格式塔核心=整体大于部分。"
+      },
+      {
+       "en": "Like, if you see a painting of a landscape, you're looking at a whole landscape, and not just, say, a hill, trees, and a farmhouse.",
+       "zh": "比如，如果你看到一幅风景画，你看到的是整个风景，而不仅仅是一座山、几棵树和一座农舍。",
+       "note": "Like 用风景画比喻解释「整体观」；whole vs 部分并列对比。"
+      },
+      {
+       "en": "Benedict said that cultures were the same way, a whole, coherent system with patterns of values and behaviors, and more than just a set of characteristics.",
+       "zh": "本尼迪克特说文化也是如此，是一个整体的、连贯的系统，有着价值观和行为的模式，而不仅仅是一组特征。",
+       "note": "总结句：文化=整体连贯系统（coherent system）；more than just 强调。"
+      }
+     ],
+     "longsent": [
+      {
+       "en": "@M{According to the Culture and Personality School}, @S{people's personalities} @V{are} @O{a result of the culture @C{they live in}}, and @V{not just based} @P{on biology}.",
+       "zh": "根据文化与人格学派，人们的性格是他们所生活的文化的结果，而不仅仅是基于生物学。",
+       "read": "主干是「人们的性格是文化的结果」。「they live in」是修饰culture的定语从句。后半句「not just based on biology」是并列谓语，与are构成对比，意思是「不仅仅基于生物/遗传」。听时先抓主干：性格=文化产物，再补「不仅靠生物」。"
+      },
+      {
+       "en": "@S{Ruth Benedict} @V{refuted} @O{the dominant anthropology theory} @P{at the time}, @C{which stated that there was a hierarchy of cultures, some advanced, others not}.",
+       "zh": "鲁思·本尼迪克特驳斥了当时占主导地位的人类学理论，该理论声称存在一个文化等级体系，有的先进，有的落后。",
+       "read": "主干是「本尼迪克特驳斥了当时占主导的理论」。「which stated that...」是非限定定语从句，修饰theory，说明被驳斥理论的内容=存在文化等级。「some advanced, others not」是省略的并列结构（some are advanced, others are not），进一步补充等级差异。听时抓 refuted（驳斥）这一转折动词，后面 which 的内容是被否定的旧观点。"
+      }
+     ]
+    },
+    {
+     "title": "Blue Pigment · 蓝色颜料史（4/4 ✅）",
+     "score": "4/4",
+     "time": "3m37s",
+     "type": "学术讲座",
+     "transcript": "Today we're going to look at the history of blue pigment and why the color blue has held such a special place in art. This may seem surprising, since blue is everywhere in nature, the sky, the sea, distant mountains. But for most of human history, a stable and brilliant blue pigment was actually difficult to obtain. Because it was rare and expensive, blue often became associated with wealth, importance, and spiritual value. One of the most famous sources of blue pigment was lapis lazuli, a deep blue stone mined mainly in what is now Afghanistan. To make the pigment known as ultramarine, artists or specialists had to grind the stone and separate the blue mineral from impurities. The process was labor intensive, and the material traveled long distances before reaching European workshops. So ultramarine could cost more than gold. During the Renaissance, patrons sometimes specified in contracts exactly how much ultramarine an artist was required to use, especially in paintings depicting the Virgin Mary. The blue cloak in such paintings was not just a color choice; it signaled devotion, prestige, and the patron's willingness to pay for the finest materials. But the use of blue changed over time. As new pigments became available, especially synthetic blues, artists no longer had to reserve blue for the most sacred or wealthy subjects. Prussian blue, discovered in the early eighteenth century, was cheaper and easier to produce. Later, other synthetic blues expanded the palette even further. This changed both artistic practice and public access to blue. Blue could appear more freely in landscapes, decorative objects, printed materials, and eventually everyday products. Even so, some artists and collectors continued to prefer lapis lazuli. Why? Partly because of its extraordinary depth and slight variation in tone. Synthetic pigments could be consistent and practical, but lapis had a history and a visual richness that some people felt could not be fully replaced. So the story of blue pigment is not simply a story of technology replacing older materials. It is also about symbolism, economics, and the emotional value people attach to a color.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "主旨题",
+       "q": "What is the lecture mainly about?（讲座主旨）",
+       "options": {
+        "A": "The scientific explanation for why the sky appears blue",
+        "B": "The history and cultural significance of blue pigments in art",
+        "C": "How Renaissance painters were not skilled in religious paintings",
+        "D": "The discovery of several minerals in Afghanistan"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "开头 'history of blue pigment and why blue held special place'"
+        },
+        {
+         "k": "推理",
+         "v": "主旨：历史+文化意义 → B"
+        },
+        {
+         "k": "排除",
+         "v": "A/C/D 不是主旨"
+        }
+       ]
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "According to the professor, why did blue symbolize wealth or high status?",
+       "options": {
+        "A": "Blue paint produced only by royal workshops",
+        "B": "Blue was the easiest color to use",
+        "C": "Brilliant blue pigment was rare, costly, and difficult to obtain",
+        "D": "Ancient societies believed blue had no religious meaning"
+       },
+       "correct": "C",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'Because it was rare and expensive, blue became associated with wealth'"
+        },
+        {
+         "k": "推理",
+         "v": "问原因：rare and expensive → C"
+        },
+        {
+         "k": "排除",
+         "v": "A/B/D 没提"
+        }
+       ]
+      },
+      {
+       "n": 3,
+       "type": "修辞目的题",
+       "q": "Why does the professor mention contracts between patrons and artists?",
+       "options": {
+        "A": "To show the amount of ultramarine used could be financially important",
+        "B": "To explain why artists stopped painting religious subjects",
+        "C": "To show artists disliked blue",
+        "D": "To introduce Prussian blue"
+       },
+       "correct": "A",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'patrons specified in contracts how much ultramarine...cost more than gold'"
+        },
+        {
+         "k": "推理",
+         "v": "提合同说明群青昂贵有经济意义 → A"
+        },
+        {
+         "k": "排除",
+         "v": "B/C/D 没提"
+        }
+       ]
+      },
+      {
+       "n": 4,
+       "type": "推断题",
+       "q": "What does the professor imply about lapis lazuli?",
+       "options": {
+        "A": "Replaced entirely by synthetic pigments",
+        "B": "Some people still preferred it for its depth and richness",
+        "C": "It became very cheap over time",
+        "D": "Only used in religious art"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'some artists continued to prefer lapis...extraordinary depth'"
+        },
+        {
+         "k": "推理",
+         "v": "有人仍偏爱深度丰富 → B"
+        },
+        {
+         "k": "排除",
+         "v": "A 完全取代相反；C/D 没提"
+        }
+       ]
+      }
+     ],
+     "weak": "4/4 全对",
+     "fix": "蓝色颜料词串：pigment/lapis lazuli/ultramarine/Prussian blue/synthetic/palette",
+     "transcript_zh": "今天我们来看看蓝色颜料的历史，以及为什么蓝色在艺术中占有如此特殊的地位。这可能看起来令人惊讶，因为蓝色在自然界中无处不在——天空、大海、远山。但在人类历史的大部分时间里，一种稳定而鲜艳的蓝色颜料实际上很难获得。因为稀有且昂贵，蓝色常常与财富、重要性和精神价值联系在一起。最著名的蓝色颜料来源之一是青金石（天青石），一种深蓝色的石头，主要产自今天的阿富汗。要制成被称为群青（ultramarine）的颜料，艺术家或工匠必须研磨这种石头，并把蓝色矿物从杂质中分离出来。这个过程劳动密集，而且这种材料要经过长途运输才能到达欧洲的作坊。所以群青可能比黄金还贵。在文艺复兴时期，赞助人有时会在合同里明确规定艺术家必须使用多少群青，尤其是在描绘圣母玛利亚的画作中。这类画作中的蓝色披风不仅仅是一种颜色选择；它象征着虔诚、声望，以及赞助人愿意为最上等的材料付钱的决心。但蓝色的使用随着时间而改变。随着新颜料变得可用，尤其是合成蓝色，艺术家不再需要把蓝色只留给最神圣或最富有的题材。普鲁士蓝，发现于18世纪初，更便宜也更容易生产。后来，其他合成蓝进一步扩展了调色板。这既改变了艺术实践，也改变了公众接触蓝色的机会。蓝色可以更自由地出现在风景画、装饰品、印刷品，以及最终的日常用品中。即便如此，一些艺术家和收藏家仍然偏爱青金石。为什么？部分是因为它非凡的深度和色调的细微变化。合成颜料可以做到一致和实用，但青金石有一种历史和视觉上的丰富性，一些人觉得这是无法被完全替代的。所以蓝色颜料的故事不仅仅是技术取代旧材料的故事。它也关乎象征意义、经济，以及人们赋予一种颜色的情感价值。",
+     "sentences": [
+      {
+       "en": "Today we're going to look at the history of blue pigment and why the color blue has held such a special place in art.",
+       "zh": "今天我们来看看蓝色颜料的历史，以及为什么蓝色在艺术中占有如此特殊的地位。",
+       "note": "开场主旨句：蓝色颜料史 + 为何特殊。"
+      },
+      {
+       "en": "This may seem surprising, since blue is everywhere in nature, the sky, the sea, distant mountains.",
+       "zh": "这可能看起来令人惊讶，因为蓝色在自然界中无处不在——天空、大海、远山。",
+       "note": "since 因果信号；设悬念：自然里蓝色多却难获取。"
+      },
+      {
+       "en": "But for most of human history, a stable and brilliant blue pigment was actually difficult to obtain.",
+       "zh": "但在人类历史的大部分时间里，一种稳定而鲜艳的蓝色颜料实际上很难获得。",
+       "note": "But 转折；stable and brilliant（稳定+鲜艳）是关键限定，difficult to obtain 是核心困难。"
+      },
+      {
+       "en": "Because it was rare and expensive, blue often became associated with wealth, importance, and spiritual value.",
+       "zh": "因为稀有且昂贵，蓝色常常与财富、重要性和精神价值联系在一起。",
+       "note": "Because 因果；rare+expensive→财富/重要/精神价值，三个联想词并列。"
+      },
+      {
+       "en": "One of the most famous sources of blue pigment was lapis lazuli, a deep blue stone mined mainly in what is now Afghanistan.",
+       "zh": "最著名的蓝色颜料来源之一是青金石（天青石），一种深蓝色的石头，主要产自今天的阿富汗。",
+       "note": "lapis lazuli（青金石）术语+产地阿富汗，细节题常考。"
+      },
+      {
+       "en": "To make the pigment known as ultramarine, artists or specialists had to grind the stone and separate the blue mineral from impurities.",
+       "zh": "要制成被称为群青（ultramarine）的颜料，艺术家或工匠必须研磨这种石头，并把蓝色矿物从杂质中分离出来。",
+       "note": "ultramarine（群青）术语；制作过程=磨石+分离杂质。"
+      },
+      {
+       "en": "The process was labor intensive, and the material traveled long distances before reaching European workshops.",
+       "zh": "这个过程劳动密集，而且这种材料要经过长途运输才能到达欧洲的作坊。",
+       "note": "labor intensive + long distances 解释为何贵（成本高）。"
+      },
+      {
+       "en": "So ultramarine could cost more than gold.",
+       "zh": "所以群青可能比黄金还贵。",
+       "note": "So 结论信号；比黄金贵=极昂贵，量化强调。"
+      },
+      {
+       "en": "During the Renaissance, patrons sometimes specified in contracts exactly how much ultramarine an artist was required to use, especially in paintings depicting the Virgin Mary.",
+       "zh": "在文艺复兴时期，赞助人有时会在合同里明确规定艺术家必须使用多少群青，尤其是在描绘圣母玛利亚的画作中。",
+       "note": "Renaissance+合同里写明用量+圣母像，体现珍贵与神圣象征。"
+      },
+      {
+       "en": "The blue cloak in such paintings was not just a color choice; it signaled devotion, prestige, and the patron's willingness to pay for the finest materials.",
+       "zh": "这类画作中的蓝色披风不仅仅是一种颜色选择；它象征着虔诚、声望，以及赞助人愿意为最上等的材料付钱的决心。",
+       "note": "not just... 强调蓝色披风=虔诚/声望/财力，三个含义并列。"
+      },
+      {
+       "en": "But the use of blue changed over time.",
+       "zh": "但蓝色的使用随着时间而改变。",
+       "note": "But 大转折，引出「变化」这条主线。"
+      },
+      {
+       "en": "As new pigments became available, especially synthetic blues, artists no longer had to reserve blue for the most sacred or wealthy subjects.",
+       "zh": "随着新颜料变得可用，尤其是合成蓝色，艺术家不再需要把蓝色只留给最神圣或最富有的题材。",
+       "note": "As 时间/原因；synthetic blues（合成蓝）是转折点，no longer 表变化。"
+      },
+      {
+       "en": "Prussian blue, discovered in the early eighteenth century, was cheaper and easier to produce.",
+       "zh": "普鲁士蓝，发现于18世纪初，更便宜也更容易生产。",
+       "note": "Prussian blue（普鲁士蓝）+时间+cheaper/easier，首个合成蓝例子。"
+      },
+      {
+       "en": "Later, other synthetic blues expanded the palette even further.",
+       "zh": "后来，其他合成蓝进一步扩展了调色板。",
+       "note": "Later 递进；更多合成蓝→调色板扩大。"
+      },
+      {
+       "en": "This changed both artistic practice and public access to blue.",
+       "zh": "这既改变了艺术实践，也改变了公众接触蓝色的机会。",
+       "note": "both...and... 总结变化的两方面：艺术实践+公众接触。"
+      },
+      {
+       "en": "Blue could appear more freely in landscapes, decorative objects, printed materials, and eventually everyday products.",
+       "zh": "蓝色可以更自由地出现在风景画、装饰品、印刷品，以及最终的日常用品中。",
+       "note": "并列列举四个领域，说明蓝色普及。"
+      },
+      {
+       "en": "Even so, some artists and collectors continued to prefer lapis lazuli.",
+       "zh": "即便如此，一些艺术家和收藏家仍然偏爱青金石。",
+       "note": "Even so 让步转折；青金石仍被偏爱，引出下文原因。"
+      },
+      {
+       "en": "Why? Partly because of its extraordinary depth and slight variation in tone.",
+       "zh": "为什么？部分是因为它非凡的深度和色调的细微变化。",
+       "note": "Why 自问自答，原因一：深度+色调变化。"
+      },
+      {
+       "en": "Synthetic pigments could be consistent and practical, but lapis had a history and a visual richness that some people felt could not be fully replaced.",
+       "zh": "合成颜料可以做到一致和实用，但青金石有一种历史和视觉上的丰富性，一些人觉得这是无法被完全替代的。",
+       "note": "but 对比：合成=一致实用 vs 青金石=历史+视觉丰富性，不可替代。"
+      },
+      {
+       "en": "So the story of blue pigment is not simply a story of technology replacing older materials.",
+       "zh": "所以蓝色颜料的故事不仅仅是技术取代旧材料的故事。",
+       "note": "So 总结；not simply 强调不止技术层面。"
+      },
+      {
+       "en": "It is also about symbolism, economics, and the emotional value people attach to a color.",
+       "zh": "它也关乎象征意义、经济，以及人们赋予一种颜色的情感价值。",
+       "note": "also 递进总结：象征/经济/情感价值，三者并列，主旨收尾。"
+      }
+     ],
+     "longsent": [
+      {
+       "en": "@M{To make the pigment known as ultramarine}, @S{artists or specialists} @V{had to grind} @O{the stone} and @V{separate} @O{the blue mineral} @P{from impurities}.",
+       "zh": "要制成被称为群青的颜料，艺术家或工匠必须研磨这种石头，并把蓝色矿物从杂质中分离出来。",
+       "read": "主干是「艺术家/工匠必须研磨石头并分离蓝色矿物」，两个并列谓语 grind 和 separate。「To make...」是不定式表目的。听时抓制作群青的两个步骤：磨石 + 分离杂质。"
+      },
+      {
+       "en": "@M{During the Renaissance}, @S{patrons} @V{specified} @P{in contracts} @O{exactly how much ultramarine} @C{an artist was required to use}, @M{especially in paintings depicting the Virgin Mary}.",
+       "zh": "在文艺复兴时期，赞助人有时会在合同里明确规定艺术家必须使用多少群青，尤其是在描绘圣母玛利亚的画作中。",
+       "read": "主干是「赞助人在合同里明确规定多少群青」。「how much ultramarine an artist was required to use」是宾语从句，作specified的宾语。抓点：合同里写明群青用量，说明群青极贵且被用于最神圣的圣母像。"
+      }
+     ]
+    },
+    {
+     "title": "Ancient Garden Soil Casts · 古代花园土壤铸模（1/4 ❌错2）",
+     "score": "1/4",
+     "time": "3m8s",
+     "type": "学术讲座",
+     "transcript": "Imagine an ancient garden or field, and imagine organic material in its soil, things like plant roots or wooden irrigation pipes. When this organic material decays over the centuries, it often leaves behind voids in the soil. Researchers can fill these voids by injecting plaster into the empty spaces. When the plaster hardens, it creates casts, essentially three dimensional negatives that replicate what existed centuries ago. For example, at the ancient Maya village of Hoya de Ceren in El Salvador, Central America, casts taken from root cavities have revealed a diverse mix of crops, including manioc, maize, and beans. These species were identified in part by the shape and size of the root voids, by comparing them with modern plant root systems. This layout of plants in the garden wasn't random at all. It showed the garden to be an early example of the milpa system, a traditional intercropping method still practiced in Central America and Mexico today, where tall maize plants provide stalks for bean plants to climb. The beans enrich the soil with nitrogen, and squash plants, growing along the ground, provide shade that suppresses weeds and retains moisture. Soil casts have also been used at the sites of ancient Roman villa gardens, revealing irrigation channels and beds planted with species such as grapevines and roses. The findings show a deliberate integration of ornamental plants with edible plants, suggesting a Roman design ethos that sought to balance aesthetic with utility.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "主旨题",
+       "q": "What is the main focus of the talk?（讲座主旨）",
+       "options": {
+        "A": "Ways ancient peoples supplied nitrogen and moisture",
+        "B": "Similarities between gardens of ancient Rome and Central America",
+        "C": "The technique of using soil casts to study ancient gardens",
+        "D": "The agricultural practices of the Maya"
+       },
+       "correct": "C",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "开头 'injecting plaster...creates casts'"
+        },
+        {
+         "k": "推理",
+         "v": "主旨：soil casts 技术研究古代花园 → C"
+        },
+        {
+         "k": "排除",
+         "v": "A 是 milpa 细节；B 后半段；D 例子"
+        }
+       ],
+       "trap": "主旨题陷阱：你选了 A(供氮水分)——那是 milpa 细节，主旨是 soil casts 技术(C)"
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "Why do researchers inject plaster into soil?（为何注入石膏）",
+       "options": {
+        "A": "To make the soil more stable",
+        "B": "To preserve the original plants",
+        "C": "To replicate what existed in different parts of the world",
+        "D": "To identify the age of the soil"
+       },
+       "correct": "C",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'creates casts...replicate what existed centuries ago'"
+        },
+        {
+         "k": "推理",
+         "v": "做铸模复制过去 → C"
+        },
+        {
+         "k": "排除",
+         "v": "A/B/D 没提"
+        }
+       ]
+      },
+      {
+       "n": 3,
+       "type": "细节题",
+       "q": "What does the speaker say is a main feature of the milpa system?（milpa 特点）",
+       "options": {
+        "A": "Takes advantage of plants that do not decay quickly",
+        "B": "Combines a variety of crops that support each other's growth",
+        "C": "Relies on a complex irrigation system",
+        "D": "Changes crops from year to year"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'intercropping...maize provides stalks for bean...beans enrich soil...squash shade'"
+        },
+        {
+         "k": "推理",
+         "v": "milpa=间作，作物互相支持 → B"
+        },
+        {
+         "k": "排除",
+         "v": "A/C/D 没提"
+        }
+       ]
+      },
+      {
+       "n": 4,
+       "type": "修辞目的题",
+       "q": "What does the speaker imply about Roman garden designers?（罗马花园设计师）",
+       "options": {
+        "A": "They tried to replicate nature",
+        "B": "They considered roses more beautiful",
+        "C": "They valued both beauty and practicality",
+        "D": "They were interested in foreign plants"
+       },
+       "correct": "C",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'balance aesthetic with utility'"
+        },
+        {
+         "k": "推理",
+         "v": "Roman designers 平衡美+实用 → C"
+        },
+        {
+         "k": "排除",
+         "v": "A 复制自然不是原文；B/D 没提"
+        }
+       ],
+       "trap": "推断题陷阱：你选了 A(复制自然)——原文 'balance aesthetic with utility'= valued both beauty and practicality(C)"
+      }
+     ],
+     "weak": "题1主旨(soil casts技术)、题4推断(balance aesthetic with utility)都错",
+     "fix": "主旨看主题句(injecting plaster...creates casts)；词串：plaster/cast/void/cavity/milpa/intercropping/ornamental/utility",
+     "transcript_zh": "想象一座古代的花园或田地，再想象它土壤中的有机物，比如植物的根或木质的灌溉管道。当这些有机物在几个世纪里腐烂时，它常常会在土壤里留下空隙。研究者可以通过往这些空腔里注入石膏来填充这些空隙。当石膏硬化时，它就形成了铸模，本质上是三维的负形，复制了几个世纪前存在过的东西。例如，在中美洲萨尔瓦多的古玛雅村庄霍亚德塞伦，从根系空腔取得的铸模揭示了一批多样的作物，包括木薯、玉米和豆类。这些物种的识别，部分是通过根系空隙的形状和大小，通过与现代植物根系系统进行比较。这个花园里植物的布局根本不是随机的。它表明这个花园是米尔帕（milpa）耕作体系的早期例证，这是一种在中美洲和墨西哥至今仍在实践的传统间作方法，在这种方法中，高大的玉米植株为豆类植物攀爬提供茎秆。豆类为土壤补充氮，而南瓜植株贴着地面生长，提供阴凉以抑制杂草并保持水分。土壤铸模还被用于古罗马别墅花园的遗址，揭示了灌溉渠道和种植着葡萄藤和玫瑰等物种的花坛。这些发现表明观赏植物与食用植物被刻意地融合在一起，暗示着一种罗马的设计理念，试图在美学与实用之间取得平衡。",
+     "sentences": [
+      {
+       "en": "Imagine an ancient garden or field, and imagine organic material in its soil, things like plant roots or wooden irrigation pipes.",
+       "zh": "想象一座古代的花园或田地，再想象它土壤中的有机物，比如植物的根或木质的灌溉管道。",
+       "note": "Imagine 引入话题；有机物=根/木质灌溉管，为下文「空隙」铺垫。"
+      },
+      {
+       "en": "When this organic material decays over the centuries, it often leaves behind voids in the soil.",
+       "zh": "当这些有机物在几个世纪里腐烂时，它常常会在土壤里留下空隙。",
+       "note": "When 时间/条件；decay→voids（腐烂→空隙），因果链条第一步。"
+      },
+      {
+       "en": "Researchers can fill these voids by injecting plaster into the empty spaces.",
+       "zh": "研究者可以通过往这些空腔里注入石膏来填充这些空隙。",
+       "note": "方法句：注入石膏填充空隙，injecting plaster 是核心技术。"
+      },
+      {
+       "en": "When the plaster hardens, it creates casts, essentially three dimensional negatives that replicate what existed centuries ago.",
+       "zh": "当石膏硬化时，它就形成了铸模，本质上是三维的负形，复制了几个世纪前存在过的东西。",
+       "note": "casts=铸模，three dimensional negatives（三维负形）是关键定义。"
+      },
+      {
+       "en": "For example, at the ancient Maya village of Hoya de Ceren in El Salvador, Central America, casts taken from root cavities have revealed a diverse mix of crops, including manioc, maize, and beans.",
+       "zh": "例如，在中美洲萨尔瓦多的古玛雅村庄霍亚德塞伦，从根系空腔取得的铸模揭示了一批多样的作物，包括木薯、玉米和豆类。",
+       "note": "For example 举例信号；地点Hoya de Ceren + 作物木薯/玉米/豆类，细节题。"
+      },
+      {
+       "en": "These species were identified in part by the shape and size of the root voids, by comparing them with modern plant root systems.",
+       "zh": "这些物种的识别，部分是通过根系空隙的形状和大小，通过与现代植物根系系统进行比较。",
+       "note": "识别方法：通过空隙形状大小+与现代根系比较。"
+      },
+      {
+       "en": "This layout of plants in the garden wasn't random at all.",
+       "zh": "这个花园里植物的布局根本不是随机的。",
+       "note": "not random at all 强调；引出「布局有讲究」这个关键结论。"
+      },
+      {
+       "en": "It showed the garden to be an early example of the milpa system, a traditional intercropping method still practiced in Central America and Mexico today, where tall maize plants provide stalks for bean plants to climb.",
+       "zh": "它表明这个花园是米尔帕（milpa）耕作体系的早期例证，这是一种在中美洲和墨西哥至今仍在实践的传统间作方法，在这种方法中，高大的玉米植株为豆类植物攀爬提供茎秆。",
+       "note": "milpa system（米尔帕体系）核心术语；intercropping=间作；玉米给豆子提供攀爬茎秆。"
+      },
+      {
+       "en": "The beans enrich the soil with nitrogen, and squash plants, growing along the ground, provide shade that suppresses weeds and retains moisture.",
+       "zh": "豆类为土壤补充氮，而南瓜植株贴着地面生长，提供阴凉以抑制杂草并保持水分。",
+       "note": "三者功能：豆类补氮、南瓜遮阴抑草保水，并列结构，功能题常考。"
+      },
+      {
+       "en": "Soil casts have also been used at the sites of ancient Roman villa gardens, revealing irrigation channels and beds planted with species such as grapevines and roses.",
+       "zh": "土壤铸模还被用于古罗马别墅花园的遗址，揭示了灌溉渠道和种植着葡萄藤和玫瑰等物种的花坛。",
+       "note": "also 递进，第二个案例：罗马别墅花园；葡萄藤/玫瑰。"
+      },
+      {
+       "en": "The findings show a deliberate integration of ornamental plants with edible plants, suggesting a Roman design ethos that sought to balance aesthetic with utility.",
+       "zh": "这些发现表明观赏植物与食用植物被刻意地融合在一起，暗示着一种罗马的设计理念，试图在美学与实用之间取得平衡。",
+       "note": "总结句：观赏+食用刻意融合=罗马理念，balance aesthetic with utility（美学平衡实用）。"
+      }
+     ],
+     "longsent": [
+      {
+       "en": "@S{It} @V{showed} @O{the garden} @C{to be an early example of the milpa system}, @O{a traditional intercropping method @C{still practiced in Central America and Mexico today}}, @C{where tall maize plants provide stalks for bean plants to climb}.",
+       "zh": "它表明这个花园是米尔帕体系的早期例证，一种至今仍在中美洲和墨西哥实践的传统间作方法，在这种方法中，高大的玉米植株为豆类植物攀爬提供茎秆。",
+       "read": "主干是「它表明这个花园是米尔帕体系的早期例证」。「a traditional intercropping method...」是milpa的同位语，解释什么是米尔帕。「where...」定语从句进一步说明这个体系的运作方式：玉米提供攀爬茎秆。听时先抓 milpa=间作，再记功能。"
+      },
+      {
+       "en": "@S{The findings} @V{show} @O{a deliberate integration of ornamental plants with edible plants}, @C{suggesting a Roman design ethos @C{that sought to balance aesthetic with utility}}.",
+       "zh": "这些发现表明观赏植物与食用植物被刻意地融合在一起，暗示着一种试图在美学与实用之间取得平衡的罗马设计理念。",
+       "read": "主干是「这些发现表明观赏与食用植物的刻意融合」。「suggesting...」是现在分词作伴随/结果状语，引出进一步推断。「that sought to balance...」是定语从句修饰ethos，说明理念=平衡美学与实用。听时抓 conclusion：观赏+食用=平衡美学与实用。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "daily",
+   "label": "💬 通知/对话 Listen to Conversation & Announcement",
+   "intro": "通知/对话：Pop-up 和 Movie Night 都 0/2 全错，都是『修辞目的/细节』题选字面不选目的。",
+   "tasks": [
+    {
+     "title": "Pop-up Market · 快闪集市对话（0/2 ❌错2）",
+     "score": "0/2",
+     "time": "1m12s",
+     "type": "对话",
+     "transcript": "Woman: Hey, did you hear about the student-run pop-up market this weekend? They're selling handmade knitted items, art prints, and other things that students made.\nMan: I did. I was actually thinking of going.\nWoman: I really want some unique art for my dorm walls. I'm worried they won't have anything affordable, though.\nMan: I went to the last one, and there was such a variety of prices.\nWoman: Oh, good. Can you pay by credit card at all the booths?\nMan: Some vendors use apps, but not everyone. Maybe stop by the bank on your way.\nWoman: I'll do that. I think I'll withdraw fifty dollars.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "修辞目的题",
+       "q": "Why does the man say, \"there was such a variety of prices\"?（为何说价格多样）",
+       "options": {
+        "A": "To ease a concern 安抚担忧",
+        "B": "To make a complaint 抱怨",
+        "C": "To suggest an alternative 建议替代方案",
+        "D": "To express surprise 表达惊讶"
+       },
+       "correct": "A",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "女生说 'I'm worried they won't have anything affordable'（担心买不起），男人回应 'there was such a variety of prices'（价格跨度大）"
+        },
+        {
+         "k": "推理",
+         "v": "修辞目的题：女生担心买不起，男人说价格多样=让她别担心 → 安抚(ease a concern) → A"
+        },
+        {
+         "k": "排除",
+         "v": "C(建议替代)不是——他不是在建议别的方案，是在安抚；B 抱怨/D 惊讶 不符"
+        }
+       ],
+       "trap": "修辞目的题陷阱：你选了 C(建议替代)——男人说 price variety 是回应女生『担心买不起』，目的是安抚(ease concern→A)，不是建议方案"
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "What does the man recommend that the woman do?（建议做什么）",
+       "options": {
+        "A": "Download an app 下载应用",
+        "B": "Bring some cash 带现金",
+        "C": "Replace a bank card 换银行卡",
+        "D": "Sell some items 卖东西"
+       },
+       "correct": "B",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'Some vendors use apps, but not everyone. Maybe stop by the bank'（有些用 app 但不是全部，顺路去银行）+ 女生 'withdraw fifty dollars'（取五十美元）"
+        },
+        {
+         "k": "推理",
+         "v": "建议=去银行取现金 → 带现金(B)。女生 withdraw money 印证了带现金"
+        },
+        {
+         "k": "排除",
+         "v": "A(下载 app)是 vendors 用 app，不是建议她做的；C 换卡/D 卖东西 没提"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 A(下载应用)——原文 'Some vendors use apps, but not everyone. Maybe stop by the bank'(去银行取现金)，建议是带现金(B)。stop by the bank 是关键"
+      }
+     ],
+     "weak": "0/2 全错，且都是修辞目的/细节——price variety 是安抚、stop by bank 是带现金",
+     "fix": "对话类：抓说话人意图。女生担心买不起→男人说价格多样=安抚；stop by the bank=取钱带现金",
+     "transcript_zh": "女：嘿，你听说这周末学生办的快闪集市了吗？他们在卖手工编织品、艺术版画，还有其他学生做的东西。男：听说了。我本来也正打算去呢。女：我真的很想要一些独特的艺术品来装饰我宿舍的墙。不过我担心他们不会有便宜的东西。男：我上次去过，价格范围很广。女：哦，那不错。所有摊位都能刷信用卡吗？男：有些摊主用（支付）应用，但不是所有人都用。你路上顺道去下银行吧。女：我会的。我想我就取五十美元吧。",
+     "sentences": [
+      {
+       "en": "Woman: Hey, did you hear about the student-run pop-up market this weekend?",
+       "zh": "女：嘿，你听说这周末学生办的快闪集市了吗？",
+       "note": "对话主题引入：student-run pop-up market（学生快闪集市）。"
+      },
+      {
+       "en": "They're selling handmade knitted items, art prints, and other things that students made.",
+       "zh": "他们在卖手工编织品、艺术版画，还有其他学生做的东西。",
+       "note": "列举售卖品类：编织品、艺术版画，细节题。"
+      },
+      {
+       "en": "Man: I did. I was actually thinking of going.",
+       "zh": "男：听说了。我本来也正打算去呢。",
+       "note": "男表示也想去，态度题。"
+      },
+      {
+       "en": "Woman: I really want some unique art for my dorm walls.",
+       "zh": "女：我真的很想要一些独特的艺术品来装饰我宿舍的墙。",
+       "note": "女的目的：unique art for dorm walls。"
+      },
+      {
+       "en": "I'm worried they won't have anything affordable, though.",
+       "zh": "不过我担心他们不会有便宜的东西。",
+       "note": "though 转折信号；担心买不起=引出价格话题。"
+      },
+      {
+       "en": "Man: I went to the last one, and there was such a variety of prices.",
+       "zh": "男：我上次去过，价格范围很广。",
+       "note": "such a variety of prices 回应担忧=价格有高有低。"
+      },
+      {
+       "en": "Woman: Oh, good. Can you pay by credit card at all the booths?",
+       "zh": "女：哦，那不错。所有摊位都能刷信用卡吗？",
+       "note": "新话题：能否刷卡。"
+      },
+      {
+       "en": "Man: Some vendors use apps, but not everyone.",
+       "zh": "男：有些摊主用（支付）应用，但不是所有人都用。",
+       "note": "but 转折：部分用app，不是全部=不能全刷卡。"
+      },
+      {
+       "en": "Maybe stop by the bank on your way.",
+       "zh": "你路上顺道去下银行吧。",
+       "note": "建议：顺路去银行（取现金）。"
+      },
+      {
+       "en": "Woman: I'll do that. I think I'll withdraw fifty dollars.",
+       "zh": "女：我会的。我想我就取五十美元吧。",
+       "note": "决定取50美元，数字细节题。"
+      }
+     ],
+     "longsent": []
+    },
+    {
+     "title": "Movie Night · 电影之夜通知（0/2 ❌错2）",
+     "score": "0/2",
+     "time": "1m20s",
+     "type": "通知",
+     "transcript": "This is a reminder about the free campus movie night happening this Friday. We will be screening Breathless by Jean Luc Godard outdoors at the main quad starting at seven PM. We're expecting brisk temperatures so dress appropriately. Snacks will be available for purchase, so don't forget to have a little cash on you. All proceeds will support our campus cinema club.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "细节题",
+       "q": "Why does the speaker say, \"dress appropriately\"?（为何说穿暖）",
+       "options": {
+        "A": "The event requires formal attire 活动要正装",
+        "B": "The event requires an invitation 需邀请",
+        "C": "Students may be cold 学生可能会冷",
+        "D": "Students should be prepared to exercise 要准备运动"
+       },
+       "correct": "C",
+       "your": "A",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'We're expecting brisk temperatures so dress appropriately'（天气凉，所以穿暖）"
+        },
+        {
+         "k": "推理",
+         "v": "问为什么说穿暖：brisk temperatures(凉爽/凉) → 学生可能冷 → C"
+        },
+        {
+         "k": "排除",
+         "v": "A(正装)是 formal attire，原文是 brisk temperatures 不是 formal；B 邀请/D 运动 没提"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 A(正装)——原文 'brisk temperatures'(天气凉)→穿暖，对应 C(may be cold)。dress appropriately 不是『正装』，是『穿暖』"
+      },
+      {
+       "n": 2,
+       "type": "细节题",
+       "q": "What does the speaker remind the students to do?（提醒学生做什么）",
+       "options": {
+        "A": "Register online 网上注册",
+        "B": "Bring some money 带钱",
+        "C": "Donate some snacks 捐零食",
+        "D": "Join the Cinema Club 加入电影社"
+       },
+       "correct": "B",
+       "your": "C",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'Snacks available for purchase, so don't forget to have a little cash on you'（零食可购买，带点现金）"
+        },
+        {
+         "k": "推理",
+         "v": "提醒=带现金 → 带钱(B)"
+        },
+        {
+         "k": "排除",
+         "v": "C(捐零食)原文是 purchase(购买)不是 donate；A 注册/D 入社 没提"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 C(捐零食)——原文 'Snacks available for purchase'(零食可购买)，是让你带钱买(B)，不是捐(donate)零食"
+      }
+     ],
+     "weak": "0/2 全错：brisk temperatures→冷(不是正装)、purchase→带钱买(不是捐)",
+     "fix": "通知类抓关键词：brisk temperatures=凉(穿暖)、purchase=买(带钱)。dress appropriately 看上下文(天气)不是字面",
+     "transcript_zh": "这是一则关于本周五免费校园电影之夜的提醒。我们将在晚上七点开始在中央广场（主草坪）户外放映让-吕克·戈达尔的《筋疲力尽》。我们预计气温会比较低，所以请穿着合适。零食可以购买，所以别忘了随身带点现金。所有收益将用于支持我们的校园电影俱乐部。",
+     "sentences": [
+      {
+       "en": "This is a reminder about the free campus movie night happening this Friday.",
+       "zh": "这是一则关于本周五免费校园电影之夜的提醒。",
+       "note": "通知主题：免费校园电影之夜，时间Friday。"
+      },
+      {
+       "en": "We will be screening Breathless by Jean Luc Godard outdoors at the main quad starting at seven PM.",
+       "zh": "我们将在晚上七点开始在中央广场（主草坪）户外放映让-吕克·戈达尔的《筋疲力尽》。",
+       "note": "片名Breathless+导演戈达尔+地点main quad+时间7PM，四项细节。"
+      },
+      {
+       "en": "We're expecting brisk temperatures so dress appropriately.",
+       "zh": "我们预计气温会比较低，所以请穿着合适。",
+       "note": "so 因果：天气冷→多穿。"
+      },
+      {
+       "en": "Snacks will be available for purchase, so don't forget to have a little cash on you.",
+       "zh": "零食可以购买，所以别忘了随身带点现金。",
+       "note": "so 因果：有零食卖→带现金。"
+      },
+      {
+       "en": "All proceeds will support our campus cinema club.",
+       "zh": "所有收益将用于支持我们的校园电影俱乐部。",
+       "note": "收益用途：支持电影俱乐部。"
+      }
+     ],
+     "longsent": []
+    },
+    {
+     "title": "Paleontology Conference · 古生物学会议对话（1/2 ❌错1）",
+     "score": "1/2",
+     "time": "1m15s",
+     "type": "对话",
+     "transcript": "Man: Hey, are you going to the paleontology conference in Chicago this weekend?\nWoman: Yes, Professor Chang is presenting a paper and I was one of her research assistants, so I'm actually going to give the first part of the presentation. I'm nervous.\nMan: You'll do fine. What's your plan?\nWoman: I'll go through the site data and show some slides. She discovered some strange-looking leg bones on a dig last summer, and she thinks they might be a new dinosaur species.\nMan: Oh wow. That'll probably lead to a vigorous debate.\nWoman: Definitely. It should be exciting.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "细节题",
+       "q": "What is indicated about the fossils that were discovered?（关于发现的化石）",
+       "options": {
+        "A": "They may represent a significant discovery 可能代表重大发现",
+        "B": "They will be exhibited at the conference 将在会议展出",
+        "C": "They were found in what is now Chicago 发现于芝加哥",
+        "D": "They do not belong to dinosaurs 不属于恐龙"
+       },
+       "correct": "A",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "'she thinks they might be a new dinosaur species'（可能是新恐龙物种）+ 男人 'lead to a vigorous debate'（引发激烈辩论）"
+        },
+        {
+         "k": "推理",
+         "v": "可能是新物种 → 重大发现(A)。vigorous debate 也暗示有争议的重大发现"
+        },
+        {
+         "k": "排除",
+         "v": "B(展出)原文说 give presentation 不是 exhibit fossils；C 芝加哥是会议地点不是发现地；D 与 new species 相反"
+        }
+       ],
+       "trap": "细节题陷阱：你选了 B(会议展出)——原文是『在会议做报告』(presentation)，不是『展出化石』(exhibit)。mysterious leg bones + new species = 重大发现(A)"
+      },
+      {
+       "n": 2,
+       "type": "推断题",
+       "q": "What does the woman imply about the upcoming presentation?（关于即将到来的报告）",
+       "options": {
+        "A": "It will be conducted entirely by the professor 完全由教授主讲",
+        "B": "It will be controversial 会有争议",
+        "C": "It will not be interesting to the man 对男人无趣",
+        "D": "It will take place on campus 在校内举行"
+       },
+       "correct": "B",
+       "your": "B",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "男人 'That'll probably lead to a vigorous debate'（引发激烈辩论）+ 女生 'Definitely'（肯定的）"
+        },
+        {
+         "k": "推理",
+         "v": "vigorous debate = 有争议 → controversial → B"
+        },
+        {
+         "k": "排除",
+         "v": "A 女生也要讲第一部分不是全部由教授；C/D 没提"
+        }
+       ]
+      }
+     ],
+     "weak": "题1细节错——new dinosaur species = 重大发现(A)，你选了会议展出(B)",
+     "fix": "对话类：new species/vigorous debate = 重大且可能有争议的发现。presentation≠exhibit",
+     "transcript_zh": "男：嘿，你这周末要去芝加哥的古生物学会议吗？女：是的，张教授要宣读一篇论文，我是她的研究助理之一，所以我实际上要来讲演示的第一部分。我很紧张。男：你会表现很好的。你的计划是什么？女：我会过一遍遗址数据，并展示一些幻灯片。她去年夏天在一次挖掘中发现了一些样子奇怪的腿骨，她认为这可能是一个新的恐龙物种。男：哇。那可能会引发一场激烈的辩论。女：确实。应该会很令人兴奋。",
+     "sentences": [
+      {
+       "en": "Man: Hey, are you going to the paleontology conference in Chicago this weekend?",
+       "zh": "男：嘿，你这周末要去芝加哥的古生物学会议吗？",
+       "note": "主题：芝加哥古生物学会议；地点Chicago+时间this weekend。"
+      },
+      {
+       "en": "Woman: Yes, Professor Chang is presenting a paper and I was one of her research assistants, so I'm actually going to give the first part of the presentation.",
+       "zh": "女：是的，张教授要宣读一篇论文，我是她的研究助理之一，所以我实际上要来讲演示的第一部分。",
+       "note": "so 因果：因为是研究助理→要讲第一部分；角色题。"
+      },
+      {
+       "en": "I'm nervous.",
+       "zh": "我很紧张。",
+       "note": "情绪：nervous。"
+      },
+      {
+       "en": "Man: You'll do fine. What's your plan?",
+       "zh": "男：你会表现很好的。你的计划是什么？",
+       "note": "安慰+引出计划话题。"
+      },
+      {
+       "en": "Woman: I'll go through the site data and show some slides.",
+       "zh": "女：我会过一遍遗址数据，并展示一些幻灯片。",
+       "note": "计划内容：过数据+放幻灯片。"
+      },
+      {
+       "en": "She discovered some strange-looking leg bones on a dig last summer, and she thinks they might be a new dinosaur species.",
+       "zh": "她去年夏天在一次挖掘中发现了一些样子奇怪的腿骨，她认为这可能是一个新的恐龙物种。",
+       "note": "核心发现：奇怪的腿骨→可能是新恐龙物种。"
+      },
+      {
+       "en": "Man: Oh wow. That'll probably lead to a vigorous debate.",
+       "zh": "男：哇。那可能会引发一场激烈的辩论。",
+       "note": "预测：vigorous debate（激烈辩论），态度推断。"
+      },
+      {
+       "en": "Woman: Definitely. It should be exciting.",
+       "zh": "女：确实。应该会很令人兴奋。",
+       "note": "Definitely 同意+期待（exciting）。"
+      }
+     ],
+     "longsent": []
+    }
+   ]
+  }
+ ],
+ "wordbank": [
+  {
+   "w": "a",
+   "ipa": "/ə/",
+   "zh": "art. 一个；每一",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "about",
+   "ipa": "/əˈbaʊt/",
+   "zh": "prep. 关于；大约",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "again",
+   "ipa": "/əˈɡen/",
+   "zh": "adv. 再一次",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "against",
+   "ipa": "/əˈɡenst/",
+   "zh": "prep. 反对；靠着",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "all",
+   "ipa": "/ɔːl/",
+   "zh": "adj. 所有的；全部",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "already",
+   "ipa": "/ɔːlˈredi/",
+   "zh": "adv. 已经",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "also",
+   "ipa": "/ˈɔːlsoʊ/",
+   "zh": "adv. 也；同样",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "although",
+   "ipa": "/ɔːlˈðoʊ/",
+   "zh": "conj. 虽然；尽管",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "always",
+   "ipa": "/ˈɔːlweɪz/",
+   "zh": "adv. 总是；一直",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "am",
+   "ipa": "/æm/",
+   "zh": "v. 是（第一人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "among",
+   "ipa": "/əˈmʌŋ/",
+   "zh": "prep. 在…之中",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "an",
+   "ipa": "/ən/",
+   "zh": "art. 一个（用于元音前）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "and",
+   "ipa": "/ənd/",
+   "zh": "conj. 和；而且",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "another",
+   "ipa": "/əˈnʌðər/",
+   "zh": "adj. 另一个的；再一",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "are",
+   "ipa": "/ɑːr/",
+   "zh": "v. 是（第二人称及复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "around",
+   "ipa": "/əˈraʊnd/",
+   "zh": "prep. 在…周围；大约",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "as",
+   "ipa": "/æz/",
+   "zh": "conj. 当…时；如同；因为",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "at",
+   "ipa": "/æt/",
+   "zh": "prep. 在（某处/某时）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "be",
+   "ipa": "/biː/",
+   "zh": "v. 是；存在",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "because",
+   "ipa": "/bɪˈkɔːz/",
+   "zh": "conj. 因为",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "been",
+   "ipa": "/bɪn/",
+   "zh": "v. 是（be 的过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "being",
+   "ipa": "/ˈbiːɪŋ/",
+   "zh": "n. 存在；生物",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "between",
+   "ipa": "/bɪˈtwiːn/",
+   "zh": "prep. 在…之间",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "both",
+   "ipa": "/boʊθ/",
+   "zh": "pron. 两者都",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "but",
+   "ipa": "/bʌt/",
+   "zh": "conj. 但是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "by",
+   "ipa": "/baɪ/",
+   "zh": "prep. 通过；在…旁边",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "can",
+   "ipa": "/kæn/",
+   "zh": "aux. 能够；可以",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "could",
+   "ipa": "/kʊd/",
+   "zh": "aux. 能够（过去式）；可能",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "did",
+   "ipa": "/dɪd/",
+   "zh": "aux. do 的过去式",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "do",
+   "ipa": "/duː/",
+   "zh": "v. 做；aux. 构成疑问/否定",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "does",
+   "ipa": "/dʌz/",
+   "zh": "v. 做（第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "during",
+   "ipa": "/ˈdʊrɪŋ/",
+   "zh": "prep. 在…期间",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "each",
+   "ipa": "/iːtʃ/",
+   "zh": "adj. 每个；各自",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "even",
+   "ipa": "/ˈiːvən/",
+   "zh": "adv. 甚至；即使",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "few",
+   "ipa": "/fjuː/",
+   "zh": "adj. 很少的；几乎没有",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "for",
+   "ipa": "/fɔːr/",
+   "zh": "prep. 为了；因为；对于",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "from",
+   "ipa": "/frʌm/",
+   "zh": "prep. 从；来自",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "furthermore",
+   "ipa": "/ˌfɜːrðərˈmɔːr/",
+   "zh": "adv. 此外；而且",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "had",
+   "ipa": "/hæd/",
+   "zh": "v. 有（have 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "has",
+   "ipa": "/hæz/",
+   "zh": "v. 有（第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "have",
+   "ipa": "/hæv/",
+   "zh": "v. 有；经历",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "he",
+   "ipa": "/hiː/",
+   "zh": "pron. 他",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "her",
+   "ipa": "/hɜːr/",
+   "zh": "pron. 她；她的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "here",
+   "ipa": "/hɪr/",
+   "zh": "adv. 在这里",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "his",
+   "ipa": "/hɪz/",
+   "zh": "pron. 他的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "however",
+   "ipa": "/haʊˈevər/",
+   "zh": "adv. 然而；无论如何",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "i",
+   "ipa": "/aɪ/",
+   "zh": "pron. 我",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "if",
+   "ipa": "/ɪf/",
+   "zh": "conj. 如果；是否",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "in",
+   "ipa": "/ɪn/",
+   "zh": "prep. 在…里",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "into",
+   "ipa": "/ˈɪntuː/",
+   "zh": "prep. 进入…中",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "is",
+   "ipa": "/ɪz/",
+   "zh": "v. 是（第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "it",
+   "ipa": "/ɪt/",
+   "zh": "pron. 它",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "its",
+   "ipa": "/ɪts/",
+   "zh": "pron. 它的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "just",
+   "ipa": "/dʒʌst/",
+   "zh": "adv. 仅仅；刚刚",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "least",
+   "ipa": "/liːst/",
+   "zh": "adj. 最少的；最小的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "less",
+   "ipa": "/les/",
+   "zh": "adj. 较少的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "many",
+   "ipa": "/ˈmeni/",
+   "zh": "adj. 许多的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "may",
+   "ipa": "/meɪ/",
+   "zh": "aux. 可能；可以",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "might",
+   "ipa": "/maɪt/",
+   "zh": "aux. 可能；也许",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "more",
+   "ipa": "/mɔːr/",
+   "zh": "adj. 更多的；adv. 更加",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "moreover",
+   "ipa": "/mɔːrˈoʊvər/",
+   "zh": "adv. 此外；而且",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "most",
+   "ipa": "/moʊst/",
+   "zh": "adj. 最多的；大多数",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "must",
+   "ipa": "/mʌst/",
+   "zh": "aux. 必须；一定",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "near",
+   "ipa": "/nɪr/",
+   "zh": "prep. 在…附近",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "never",
+   "ipa": "/ˈnevər/",
+   "zh": "adv. 从不；绝不",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "none",
+   "ipa": "/nʌn/",
+   "zh": "pron. 没有一个；毫无",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "nor",
+   "ipa": "/nɔːr/",
+   "zh": "conj. 也不",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "not",
+   "ipa": "/nɑːt/",
+   "zh": "adv. 不",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "now",
+   "ipa": "/naʊ/",
+   "zh": "adv. 现在",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "of",
+   "ipa": "/əv/",
+   "zh": "prep. …的；属于",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "off",
+   "ipa": "/ɔːf/",
+   "zh": "adv. 离开；关掉",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "often",
+   "ipa": "/ˈɔːfən/",
+   "zh": "adv. 经常",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "on",
+   "ipa": "/ɑːn/",
+   "zh": "prep. 在…上",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "one",
+   "ipa": "/wʌn/",
+   "zh": "num. 一；一个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "only",
+   "ipa": "/ˈoʊnli/",
+   "zh": "adv. 仅仅；只有",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "or",
+   "ipa": "/ɔːr/",
+   "zh": "conj. 或者",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "other",
+   "ipa": "/ˈʌðər/",
+   "zh": "adj. 其他的；另一个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "our",
+   "ipa": "/aʊr/",
+   "zh": "pron. 我们的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "out",
+   "ipa": "/aʊt/",
+   "zh": "adv. 在外；出去",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "over",
+   "ipa": "/ˈoʊvər/",
+   "zh": "prep. 在…上方；超过",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shall",
+   "ipa": "/ʃæl/",
+   "zh": "aux. 将要；应该",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "she",
+   "ipa": "/ʃiː/",
+   "zh": "pron. 她",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "should",
+   "ipa": "/ʃʊd/",
+   "zh": "aux. 应该",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "since",
+   "ipa": "/sɪns/",
+   "zh": "conj. 自从；因为",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "so",
+   "ipa": "/soʊ/",
+   "zh": "conj. 所以；adv. 如此",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "some",
+   "ipa": "/sʌm/",
+   "zh": "adj. 一些",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "still",
+   "ipa": "/stɪl/",
+   "zh": "adv. 仍然；还是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "such",
+   "ipa": "/sʌtʃ/",
+   "zh": "adj. 这样的；如此的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "than",
+   "ipa": "/ðæn/",
+   "zh": "conj. 比（用于比较）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "that",
+   "ipa": "/ðæt/",
+   "zh": "pron. 那；conj. 引导从句",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "the",
+   "ipa": "/ðə/",
+   "zh": "art. 这；那（定冠词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "their",
+   "ipa": "/ðer/",
+   "zh": "pron. 他们的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "them",
+   "ipa": "/ðəm/",
+   "zh": "pron. 他们（宾格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "then",
+   "ipa": "/ðen/",
+   "zh": "adv. 然后；那时",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "there",
+   "ipa": "/ðer/",
+   "zh": "adv. 在那里",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "therefore",
+   "ipa": "/ˈðerfɔːr/",
+   "zh": "adv. 因此；所以",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "these",
+   "ipa": "/ðiːz/",
+   "zh": "pron. 这些",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "they",
+   "ipa": "/ðeɪ/",
+   "zh": "pron. 他们",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "this",
+   "ipa": "/ðɪs/",
+   "zh": "pron. 这；这个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "those",
+   "ipa": "/ðoʊz/",
+   "zh": "pron. 那些",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "though",
+   "ipa": "/ðoʊ/",
+   "zh": "conj. 虽然；尽管",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "through",
+   "ipa": "/θruː/",
+   "zh": "prep. 穿过；通过",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "thus",
+   "ipa": "/ðʌs/",
+   "zh": "adv. 因此；这样",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "to",
+   "ipa": "/tuː/",
+   "zh": "prep. 到；向；对",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "toward",
+   "ipa": "/tɔːrd/",
+   "zh": "prep. 朝；向",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "unless",
+   "ipa": "/ənˈles/",
+   "zh": "conj. 除非",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "until",
+   "ipa": "/ənˈtɪl/",
+   "zh": "prep. 直到…为止",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "upon",
+   "ipa": "/əˈpɑːn/",
+   "zh": "prep. 在…之上",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "very",
+   "ipa": "/ˈveri/",
+   "zh": "adv. 非常；很",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "was",
+   "ipa": "/wʌz/",
+   "zh": "v. 是（过去式，第一/三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "we",
+   "ipa": "/wiː/",
+   "zh": "pron. 我们",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "were",
+   "ipa": "/wɜːr/",
+   "zh": "v. 是（过去式，复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "what",
+   "ipa": "/wʌt/",
+   "zh": "pron. 什么",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "when",
+   "ipa": "/wen/",
+   "zh": "adv. 什么时候；当…时",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "where",
+   "ipa": "/wer/",
+   "zh": "adv. 在哪里",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "whether",
+   "ipa": "/ˈweðər/",
+   "zh": "conj. 是否",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "which",
+   "ipa": "/wɪtʃ/",
+   "zh": "pron. 哪一个",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "while",
+   "ipa": "/waɪl/",
+   "zh": "conj. 当…时；然而",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "who",
+   "ipa": "/huː/",
+   "zh": "pron. 谁",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "will",
+   "ipa": "/wɪl/",
+   "zh": "aux. 将要；会",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "with",
+   "ipa": "/wɪð/",
+   "zh": "prep. 和…一起；用",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "within",
+   "ipa": "/wɪˈðɪn/",
+   "zh": "prep. 在…之内",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "without",
+   "ipa": "/wɪˈðaʊt/",
+   "zh": "prep. 没有；无",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "would",
+   "ipa": "/wʊd/",
+   "zh": "aux. 将会；愿意",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "yet",
+   "ipa": "/jet/",
+   "zh": "adv. 还；然而",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "you",
+   "ipa": "/juː/",
+   "zh": "pron. 你；你们",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "your",
+   "ipa": "/jʊr/",
+   "zh": "pron. 你的；你们的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "yourself",
+   "ipa": "/jərˈself/",
+   "zh": "pron. 你自己",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "access",
+   "ipa": "/ˈækses/",
+   "zh": "n. 通道；使用权；接近的机会 v. 访问；获取",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "according",
+   "ipa": "/əˈkɔːrdɪŋ/",
+   "zh": "adv. 依照；根据（常接 to）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "actually",
+   "ipa": "/ˈæktʃuəli/",
+   "zh": "adv. 实际上；事实上",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "aesthetic",
+   "ipa": "/esˈθetɪk/",
+   "zh": "adj. 审美的；美学的 n. 美学；审美观",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "affordable",
+   "ipa": "/əˈfɔːrdəbl/",
+   "zh": "adj. 负担得起的；价格合理的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "afghanistan",
+   "ipa": "/æfˈɡænɪstæn/",
+   "zh": "n. 阿富汗（国名）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ago",
+   "ipa": "/əˈɡoʊ/",
+   "zh": "adv. 以前；……之前",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "along",
+   "ipa": "/əˈlɔːŋ/",
+   "zh": "prep. 沿着；顺着 adv. 一起；向前",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "america",
+   "ipa": "/əˈmerɪkə/",
+   "zh": "n. 美国；美洲",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "anthropologists",
+   "ipa": "/ˌænθrəˈpɑːlədʒɪsts/",
+   "zh": "n. 人类学家（anthropologist 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "anthropology",
+   "ipa": "/ˌænθrəˈpɑːlədʒi/",
+   "zh": "n. 人类学",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "anything",
+   "ipa": "/ˈeniθɪŋ/",
+   "zh": "pron. 任何事物；任何东西",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "appear",
+   "ipa": "/əˈpɪr/",
+   "zh": "v. 出现；显得；似乎",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "appropriately",
+   "ipa": "/əˈproʊpriətli/",
+   "zh": "adv. 恰当地；适当地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "apps",
+   "ipa": "/æps/",
+   "zh": "n. 应用程序（app 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "art",
+   "ipa": "/ɑːrt/",
+   "zh": "n. 艺术；美术；技艺",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "artist",
+   "ipa": "/ˈɑːrtɪst/",
+   "zh": "n. 艺术家；画家",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "artists",
+   "ipa": "/ˈɑːrtɪsts/",
+   "zh": "n. 艺术家（artist 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "assistants",
+   "ipa": "/əˈsɪstənts/",
+   "zh": "n. 助手；助理（assistant 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "associated",
+   "ipa": "/əˈsoʊsieɪtɪd/",
+   "zh": "adj. 相关的；有联系的（associate 的过去分词/形容词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "attach",
+   "ipa": "/əˈtætʃ/",
+   "zh": "v. 系上；附上；使依附",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "available",
+   "ipa": "/əˈveɪləbl/",
+   "zh": "adj. 可获得的；可用的；有空的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "bank",
+   "ipa": "/bæŋk/",
+   "zh": "n. 银行；河岸；库",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "based",
+   "ipa": "/beɪst/",
+   "zh": "adj. 以……为基础的；位于……的（base 的过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "bean",
+   "ipa": "/biːn/",
+   "zh": "n. 豆；豆类",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "beans",
+   "ipa": "/biːnz/",
+   "zh": "n. 豆（bean 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "beds",
+   "ipa": "/bedz/",
+   "zh": "n. 床（bed 的复数）；河床；苗圃",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "before",
+   "ipa": "/bɪˈfɔːr/",
+   "zh": "prep./conj. 在……之前 adv. 以前",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "behaviors",
+   "ipa": "/bɪˈheɪvjərz/",
+   "zh": "n. 行为；举止（behavior 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "behind",
+   "ipa": "/bɪˈhaɪnd/",
+   "zh": "prep. 在……后面 adv. 在后面；落后",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "belong",
+   "ipa": "/bɪˈlɔːŋ/",
+   "zh": "v. 属于；应在（某处）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "benedict",
+   "ipa": "/ˈbenɪdɪkt/",
+   "zh": "n. 本尼迪克特（人名）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "better",
+   "ipa": "/ˈbetər/",
+   "zh": "adj./adv. 更好的；更好地（good/well 的比较级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "biological",
+   "ipa": "/ˌbaɪəˈlɑːdʒɪkl/",
+   "zh": "adj. 生物的；生物学的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "biology",
+   "ipa": "/baɪˈɑːlədʒi/",
+   "zh": "n. 生物学",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "blue",
+   "ipa": "/bluː/",
+   "zh": "adj. 蓝色的；忧郁的 n. 蓝色",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "blues",
+   "ipa": "/bluːz/",
+   "zh": "n. 布鲁斯音乐；忧郁（blue 的复数/名词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "bones",
+   "ipa": "/boʊnz/",
+   "zh": "n. 骨头；骨骼（bone 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "breathless",
+   "ipa": "/ˈbreθləs/",
+   "zh": "adj. 气喘吁吁的；屏息的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "brilliant",
+   "ipa": "/ˈbrɪliənt/",
+   "zh": "adj. 杰出的；灿烂的；绝妙的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "brisk",
+   "ipa": "/brɪsk/",
+   "zh": "adj. 轻快的；活泼的；凛冽的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "called",
+   "ipa": "/kɔːld/",
+   "zh": "v. 叫做；称呼（call 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "campus",
+   "ipa": "/ˈkæmpəs/",
+   "zh": "n. 校园；校区",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "card",
+   "ipa": "/kɑːrd/",
+   "zh": "n. 卡片；纸牌；银行卡",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cash",
+   "ipa": "/kæʃ/",
+   "zh": "n. 现金；现款",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "central",
+   "ipa": "/ˈsentrəl/",
+   "zh": "adj. 中心的；中央的；主要的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "century",
+   "ipa": "/ˈsentʃəri/",
+   "zh": "n. 世纪；百年",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ceren",
+   "ipa": "/səˈren/",
+   "zh": "n. 塞伦（人名，萨尔瓦多玛雅遗址 Ceren）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "chang",
+   "ipa": "/tʃæŋ/",
+   "zh": "n. 张/常（姓氏）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "changed",
+   "ipa": "/tʃeɪndʒd/",
+   "zh": "v. 改变；变化（change 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "channels",
+   "ipa": "/ˈtʃænlz/",
+   "zh": "n. 渠道；频道；海峡（channel 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "characteristics",
+   "ipa": "/ˌkærəktəˈrɪstɪks/",
+   "zh": "n. 特征；特性（characteristic 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cheaper",
+   "ipa": "/ˈtʃiːpər/",
+   "zh": "adj. 更便宜的（cheap 的比较级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "chicago",
+   "ipa": "/ʃɪˈkɑːɡoʊ/",
+   "zh": "n. 芝加哥（美国城市）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "children",
+   "ipa": "/ˈtʃɪldrən/",
+   "zh": "n. 儿童；孩子们（child 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "choice",
+   "ipa": "/tʃɔɪs/",
+   "zh": "n. 选择；选择权 adj. 精选的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cinema",
+   "ipa": "/ˈsɪnəmə/",
+   "zh": "n. 电影院；电影艺术",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "climb",
+   "ipa": "/klaɪm/",
+   "zh": "v. 攀登；上升 n. 攀登；爬升",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cloak",
+   "ipa": "/kloʊk/",
+   "zh": "n. 斗篷；披风；掩盖物 v. 遮盖；掩盖",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "club",
+   "ipa": "/klʌb/",
+   "zh": "n. 俱乐部；社团；球杆",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "collectors",
+   "ipa": "/kəˈlektərz/",
+   "zh": "n. 收藏家；收集者（collector 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "color",
+   "ipa": "/ˈkʌlər/",
+   "zh": "n. 颜色 v. 给……着色",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "comparing",
+   "ipa": "/kəmˈperɪŋ/",
+   "zh": "v. 比较；对照（compare 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "conference",
+   "ipa": "/ˈkɑːnfərəns/",
+   "zh": "n. 会议；研讨会；大会",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "continued",
+   "ipa": "/kənˈtɪnjuːd/",
+   "zh": "adj. 持续的；继续的（continue 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "contracts",
+   "ipa": "/ˈkɑːntrækts/",
+   "zh": "n. 合同；契约（contract 的复数） v. 收缩；订约",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cost",
+   "ipa": "/kɔːst/",
+   "zh": "n. 成本；代价 v. 花费；使付出",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "courage",
+   "ipa": "/ˈkɜːrɪdʒ/",
+   "zh": "n. 勇气；胆量",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "creates",
+   "ipa": "/kriˈeɪts/",
+   "zh": "v. 创造；创建（create 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "credit",
+   "ipa": "/ˈkredɪt/",
+   "zh": "n. 信用；学分；赊购 v. 归功于",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "crops",
+   "ipa": "/krɑːps/",
+   "zh": "n. 庄稼；农作物（crop 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cultural",
+   "ipa": "/ˈkʌltʃərəl/",
+   "zh": "adj. 文化的；与文化有关的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "culture",
+   "ipa": "/ˈkʌltʃər/",
+   "zh": "n. 文化；文明；培养",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "cultures",
+   "ipa": "/ˈkʌltʃərz/",
+   "zh": "n. 文化；文明（culture 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "de",
+   "ipa": "/də/",
+   "zh": "（法语/拉丁语介词，常用于姓名中，如 de Soto）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "debate",
+   "ipa": "/dɪˈbeɪt/",
+   "zh": "n./v. 辩论；争论",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "decays",
+   "ipa": "/dɪˈkeɪz/",
+   "zh": "v. 腐烂；衰败（decay 的第三人称单数） n. 腐烂",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "decorative",
+   "ipa": "/ˈdekəreɪtɪv/",
+   "zh": "adj. 装饰性的；作装饰用的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "deep",
+   "ipa": "/diːp/",
+   "zh": "adj. 深的；深刻的 adv. 深深地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "definitely",
+   "ipa": "/ˈdefɪnətli/",
+   "zh": "adv. 肯定地；明确地；确实",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "depicting",
+   "ipa": "/dɪˈpɪktɪŋ/",
+   "zh": "v. 描绘；描述（depict 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "depth",
+   "ipa": "/depθ/",
+   "zh": "n. 深度；深处；深刻",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "devotion",
+   "ipa": "/dɪˈvoʊʃn/",
+   "zh": "n. 奉献；忠诚；热爱",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "difficult",
+   "ipa": "/ˈdɪfɪkəlt/",
+   "zh": "adj. 困难的；难对付的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "dig",
+   "ipa": "/dɪɡ/",
+   "zh": "v. 挖；掘；探究",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "dimensional",
+   "ipa": "/daɪˈmenʃənl/",
+   "zh": "adj. ……维的；尺寸的（常与 two-/three- 连用）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "discovered",
+   "ipa": "/dɪˈskʌvərd/",
+   "zh": "v. 发现；发觉（discover 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "distances",
+   "ipa": "/ˈdɪstənsɪz/",
+   "zh": "n. 距离；远处（distance 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "distant",
+   "ipa": "/ˈdɪstənt/",
+   "zh": "adj. 遥远的；疏远的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "diverse",
+   "ipa": "/daɪˈvɜːrs/",
+   "zh": "adj. 多样的；不同的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "dollars",
+   "ipa": "/ˈdɑːlərz/",
+   "zh": "n. 美元（dollar 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "dominant",
+   "ipa": "/ˈdɑːmɪnənt/",
+   "zh": "adj. 占主导地位的；支配的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "don't",
+   "ipa": "/doʊnt/",
+   "zh": "（do not 的缩约形式）不；别",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "dorm",
+   "ipa": "/dɔːrm/",
+   "zh": "n. 宿舍（dormitory 的缩写）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "dress",
+   "ipa": "/dres/",
+   "zh": "n. 连衣裙；服装 v. 穿衣；打扮",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "eat",
+   "ipa": "/iːt/",
+   "zh": "v. 吃；进食",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "economics",
+   "ipa": "/ˌiːkəˈnɑːmɪks/",
+   "zh": "n. 经济学",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "edible",
+   "ipa": "/ˈedəbl/",
+   "zh": "adj. 可食用的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "egypt",
+   "ipa": "/ˈiːdʒɪpt/",
+   "zh": "n. 埃及（国名）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "eighteenth",
+   "ipa": "/ˌeɪˈtiːnθ/",
+   "zh": "adj./n. 第十八的；第十八",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "el",
+   "ipa": "/el/",
+   "zh": "（西班牙语定冠词，常用于地名如 El Salvador）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "embraced",
+   "ipa": "/ɪmˈbreɪst/",
+   "zh": "v. 拥抱；欣然接受（embrace 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "emerged",
+   "ipa": "/ɪˈmɜːrdʒd/",
+   "zh": "v. 出现；浮现（emerge 的过去式/过去分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "emotional",
+   "ipa": "/ɪˈmoʊʃənl/",
+   "zh": "adj. 情感的；情绪化的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "empty",
+   "ipa": "/ˈempti/",
+   "zh": "adj. 空的；空虚的 v. 清空",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "enrich",
+   "ipa": "/ɪnˈrɪtʃ/",
+   "zh": "v. 使丰富；充实",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "especially",
+   "ipa": "/ɪˈspeʃəli/",
+   "zh": "adv. 尤其；特别",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "essentially",
+   "ipa": "/ɪˈsenʃəli/",
+   "zh": "adv. 本质上；根本上",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ethos",
+   "ipa": "/ˈiːθɑːs/",
+   "zh": "n. 精神特质；道德风气",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "european",
+   "ipa": "/ˌjʊrəˈpiːən/",
+   "zh": "adj./n. 欧洲的；欧洲人",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "everyday",
+   "ipa": "/ˈevrideɪ/",
+   "zh": "adj. 日常的；每天的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "everyone",
+   "ipa": "/ˈevriwʌn/",
+   "zh": "pron. 每个人",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "everywhere",
+   "ipa": "/ˈevriwer/",
+   "zh": "adv. 到处；处处",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "exactly",
+   "ipa": "/ɪɡˈzæktli/",
+   "zh": "adv. 确切地；正是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "example",
+   "ipa": "/ɪɡˈzæmpl/",
+   "zh": "n. 例子；榜样",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "exciting",
+   "ipa": "/ɪkˈsaɪtɪŋ/",
+   "zh": "adj. 令人兴奋的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "existed",
+   "ipa": "/ɪɡˈzɪstɪd/",
+   "zh": "v. 存在（exist 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "expanded",
+   "ipa": "/ɪkˈspændɪd/",
+   "zh": "v. 扩大；扩展（expand 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "expecting",
+   "ipa": "/ɪkˈspektɪŋ/",
+   "zh": "v. 期待；预期（expect 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "expensive",
+   "ipa": "/ɪkˈspensɪv/",
+   "zh": "adj. 昂贵的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "experience",
+   "ipa": "/ɪkˈspɪriəns/",
+   "zh": "n./v. 经验；经历",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "external",
+   "ipa": "/ɪkˈstɜːrnl/",
+   "zh": "adj. 外部的；外来的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "extraordinary",
+   "ipa": "/ɪkˈstrɔːrdəneri/",
+   "zh": "adj. 非凡的；特别的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "famous",
+   "ipa": "/ˈfeɪməs/",
+   "zh": "adj. 著名的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "farmhouse",
+   "ipa": "/ˈfɑːrmhaʊs/",
+   "zh": "n. 农舍",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "felt",
+   "ipa": "/felt/",
+   "zh": "v. 感觉（feel 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "field",
+   "ipa": "/fiːld/",
+   "zh": "n. 田地；领域",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "fifty",
+   "ipa": "/ˈfɪfti/",
+   "zh": "num. 五十",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "fill",
+   "ipa": "/fɪl/",
+   "zh": "v. 填满；装满",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "findings",
+   "ipa": "/ˈfaɪndɪŋz/",
+   "zh": "n. 调查结果；发现",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "fine",
+   "ipa": "/faɪn/",
+   "zh": "adj. 好的；精细的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "finest",
+   "ipa": "/ˈfaɪnɪst/",
+   "zh": "adj. 最好的（fine 的最高级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "food",
+   "ipa": "/fuːd/",
+   "zh": "n. 食物",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "foods",
+   "ipa": "/fuːdz/",
+   "zh": "n. 食物（food 的复数；食品种类）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "forget",
+   "ipa": "/fərˈɡet/",
+   "zh": "v. 忘记",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "free",
+   "ipa": "/friː/",
+   "zh": "adj. 自由的；免费的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "freely",
+   "ipa": "/ˈfriːli/",
+   "zh": "adv. 自由地；随意地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "friday",
+   "ipa": "/ˈfraɪdeɪ/",
+   "zh": "n. 星期五",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "fully",
+   "ipa": "/ˈfʊli/",
+   "zh": "adv. 完全地；充分地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "further",
+   "ipa": "/ˈfɜːrðər/",
+   "zh": "adv./adj. 进一步；更远的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "garden",
+   "ipa": "/ˈɡɑːrdn/",
+   "zh": "n. 花园",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "gardens",
+   "ipa": "/ˈɡɑːrdnz/",
+   "zh": "n. 花园（复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "give",
+   "ipa": "/ɡɪv/",
+   "zh": "v. 给；给予",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "go",
+   "ipa": "/ɡoʊ/",
+   "zh": "v. 去；走",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "godard",
+   "ipa": "/ɡoʊˈdɑːrd/",
+   "zh": "n. 戈达尔（人名，让-吕克·戈达尔）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "going",
+   "ipa": "/ˈɡoʊɪŋ/",
+   "zh": "v. 去（go 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "gold",
+   "ipa": "/ɡoʊld/",
+   "zh": "n. 金；黄金",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "good",
+   "ipa": "/ɡʊd/",
+   "zh": "adj. 好的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "grapevines",
+   "ipa": "/ˈɡreɪpvaɪnz/",
+   "zh": "n. 葡萄藤（grapevine 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "grind",
+   "ipa": "/ɡraɪnd/",
+   "zh": "v. 磨碎；研磨",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ground",
+   "ipa": "/ɡraʊnd/",
+   "zh": "n. 地面；土地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "growing",
+   "ipa": "/ˈɡroʊɪŋ/",
+   "zh": "v. 生长；增长（grow 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "half",
+   "ipa": "/hæf/",
+   "zh": "n./adj. 一半",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "handmade",
+   "ipa": "/ˌhændˈmeɪd/",
+   "zh": "adj. 手工制作的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "happening",
+   "ipa": "/ˈhæpənɪŋ/",
+   "zh": "v. 发生（happen 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hardens",
+   "ipa": "/ˈhɑːrdnz/",
+   "zh": "v. 变硬（harden 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hear",
+   "ipa": "/hɪr/",
+   "zh": "v. 听见",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "held",
+   "ipa": "/held/",
+   "zh": "v. 握住；举行（hold 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hey",
+   "ipa": "/heɪ/",
+   "zh": "int. 嘿；喂",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hill",
+   "ipa": "/hɪl/",
+   "zh": "n. 小山；山丘",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "history",
+   "ipa": "/ˈhɪstri/",
+   "zh": "n. 历史",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "hoya",
+   "ipa": "/ˈhɔɪə/",
+   "zh": "n. 球兰（植物）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "human",
+   "ipa": "/ˈhjuːmən/",
+   "zh": "n./adj. 人类；人类的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "i'll",
+   "ipa": "/aɪl/",
+   "zh": "缩 = I will 我将",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "i'm",
+   "ipa": "/aɪm/",
+   "zh": "缩 = I am 我是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ideas",
+   "ipa": "/aɪˈdiːəz/",
+   "zh": "n. 想法（idea 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "identified",
+   "ipa": "/aɪˈdentɪfaɪd/",
+   "zh": "v. 识别；确定（identify 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "imagine",
+   "ipa": "/ɪˈmædʒɪn/",
+   "zh": "v. 想象",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "importance",
+   "ipa": "/ɪmˈpɔːrtns/",
+   "zh": "n. 重要性",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "impurities",
+   "ipa": "/ɪmˈpjʊrətiz/",
+   "zh": "n. 杂质（impurity 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "individual",
+   "ipa": "/ˌɪndɪˈvɪdʒuəl/",
+   "zh": "n./adj. 个人；个人的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "influenced",
+   "ipa": "/ˈɪnfluənst/",
+   "zh": "v. 影响（influence 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "inherited",
+   "ipa": "/ɪnˈherɪtɪd/",
+   "zh": "v. 继承（inherit 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "injecting",
+   "ipa": "/ɪnˈdʒektɪŋ/",
+   "zh": "v. 注射；注入（inject 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "integrated",
+   "ipa": "/ˈɪntɪɡreɪtɪd/",
+   "zh": "adj./v. 整合的；综合的（integrate 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "integration",
+   "ipa": "/ˌɪntɪˈɡreɪʃn/",
+   "zh": "n. 整合；融合",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "intensive",
+   "ipa": "/ɪnˈtensɪv/",
+   "zh": "adj. 密集的；强化的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "it's",
+   "ipa": "/ɪts/",
+   "zh": "缩 = it is 它是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "items",
+   "ipa": "/ˈaɪtəmz/",
+   "zh": "n. 物品；项目（item 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "jean",
+   "ipa": "/dʒiːn/",
+   "zh": "n. 让（人名）；牛仔布",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "judged",
+   "ipa": "/dʒʌdʒd/",
+   "zh": "v. 判断；评判（judge 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "labor",
+   "ipa": "/ˈleɪbər/",
+   "zh": "n. 劳动；劳工",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "landscape",
+   "ipa": "/ˈlændskeɪp/",
+   "zh": "n. 风景；景观",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "landscapes",
+   "ipa": "/ˈlændskeɪps/",
+   "zh": "n. 风景（复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "last",
+   "ipa": "/læst/",
+   "zh": "adj./v. 最后的；持续",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "later",
+   "ipa": "/ˈleɪtər/",
+   "zh": "adv. 后来；稍后",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "layout",
+   "ipa": "/ˈleɪaʊt/",
+   "zh": "n. 布局；设计",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "lazuli",
+   "ipa": "/ˈlæzjʊlaɪ/",
+   "zh": "n. 天青石（lapis lazuli 青金石）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "lead",
+   "ipa": "/liːd/",
+   "zh": "v./n. 领导；引导",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "leaves",
+   "ipa": "/liːvz/",
+   "zh": "n. 叶子（leaf 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "leg",
+   "ipa": "/leɡ/",
+   "zh": "n. 腿",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "like",
+   "ipa": "/laɪk/",
+   "zh": "prep./v. 像；喜欢",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "list",
+   "ipa": "/lɪst/",
+   "zh": "n./v. 清单；列出",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "little",
+   "ipa": "/ˈlɪtl/",
+   "zh": "adj. 小的；少的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "live",
+   "ipa": "/lɪv/",
+   "zh": "v. 居住；生活",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "long",
+   "ipa": "/lɔːŋ/",
+   "zh": "adj. 长的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "longer",
+   "ipa": "/ˈlɔːŋɡər/",
+   "zh": "adj./adv. 更长（long 的比较级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "look",
+   "ipa": "/lʊk/",
+   "zh": "v./n. 看；外表",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "looking",
+   "ipa": "/ˈlʊkɪŋ/",
+   "zh": "v. 看（look 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "luc",
+   "ipa": "/luːk/",
+   "zh": "n. 吕克（人名）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "made",
+   "ipa": "/meɪd/",
+   "zh": "v. 做（make 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "main",
+   "ipa": "/meɪn/",
+   "zh": "adj. 主要的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mainly",
+   "ipa": "/ˈmeɪnli/",
+   "zh": "adv. 主要地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "make",
+   "ipa": "/meɪk/",
+   "zh": "v. 做；制作",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "man",
+   "ipa": "/mæn/",
+   "zh": "n. 男人",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "manioc",
+   "ipa": "/ˈmæniɒk/",
+   "zh": "n. 木薯",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "market",
+   "ipa": "/ˈmɑːrkɪt/",
+   "zh": "n. 市场",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mary",
+   "ipa": "/ˈmeri/",
+   "zh": "n. 玛丽（人名）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "material",
+   "ipa": "/məˈtɪriəl/",
+   "zh": "n. 材料；物质",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "materials",
+   "ipa": "/məˈtɪriəlz/",
+   "zh": "n. 材料（复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "maya",
+   "ipa": "/ˈmaɪə/",
+   "zh": "专有名词 玛雅（玛雅文明/玛雅人）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "maybe",
+   "ipa": "/ˈmeɪbi/",
+   "zh": "副词 也许，可能",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "measure",
+   "ipa": "/ˈmeʒər/",
+   "zh": "动词 测量，衡量；名词 措施",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "method",
+   "ipa": "/ˈmeθəd/",
+   "zh": "名词 方法，办法",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mexico",
+   "ipa": "/ˈmeksɪkoʊ/",
+   "zh": "专有名词 墨西哥",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mined",
+   "ipa": "/maɪnd/",
+   "zh": "动词 开采，采矿（mine 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mineral",
+   "ipa": "/ˈmɪnərəl/",
+   "zh": "名词 矿物；矿物质",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mix",
+   "ipa": "/mɪks/",
+   "zh": "动词 混合；名词 混合物",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "moisture",
+   "ipa": "/ˈmɔɪstʃər/",
+   "zh": "名词 水分，湿气",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "mountains",
+   "ipa": "/ˈmaʊntənz/",
+   "zh": "名词 山，山脉（mountain 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "movement",
+   "ipa": "/ˈmuːvmənt/",
+   "zh": "名词 运动，移动",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "movie",
+   "ipa": "/ˈmuːvi/",
+   "zh": "名词 电影",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "much",
+   "ipa": "/mʌtʃ/",
+   "zh": "副词 非常；形容词 大量的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "my",
+   "ipa": "/maɪ/",
+   "zh": "代词 我的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "nature",
+   "ipa": "/ˈneɪtʃər/",
+   "zh": "名词 自然；本质，本性",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "negatives",
+   "ipa": "/ˈneɡətɪvz/",
+   "zh": "名词 底片；否定（negative 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "nervous",
+   "ipa": "/ˈnɜːrvəs/",
+   "zh": "形容词 紧张的；神经的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "new",
+   "ipa": "/nuː/",
+   "zh": "形容词 新的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "night",
+   "ipa": "/naɪt/",
+   "zh": "名词 夜晚",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "no",
+   "ipa": "/noʊ/",
+   "zh": "副词 不；形容词 没有",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "objects",
+   "ipa": "/ˈɑːbdʒekts/",
+   "zh": "名词 物体，对象；宾语（object 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "obtain",
+   "ipa": "/əbˈteɪn/",
+   "zh": "动词 获得，得到",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "oh",
+   "ipa": "/oʊ/",
+   "zh": "感叹词 哦，啊",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "older",
+   "ipa": "/ˈoʊldər/",
+   "zh": "形容词 更老的（old 的比较级）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "organic",
+   "ipa": "/ɔːrˈɡænɪk/",
+   "zh": "形容词 有机的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "others",
+   "ipa": "/ˈʌðərz/",
+   "zh": "代词 其他人/其他事物（other 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "outdoors",
+   "ipa": "/ˌaʊtˈdɔːrz/",
+   "zh": "副词/名词 在户外；户外",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "own",
+   "ipa": "/oʊn/",
+   "zh": "形容词 自己的；动词 拥有",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "painting",
+   "ipa": "/ˈpeɪntɪŋ/",
+   "zh": "名词 绘画；油画",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "paintings",
+   "ipa": "/ˈpeɪntɪŋz/",
+   "zh": "名词 绘画作品（painting 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "paper",
+   "ipa": "/ˈpeɪpər/",
+   "zh": "名词 纸；论文",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "parents",
+   "ipa": "/ˈperənts/",
+   "zh": "名词 父母（parent 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "part",
+   "ipa": "/pɑːrt/",
+   "zh": "名词 部分，零件",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "partly",
+   "ipa": "/ˈpɑːrtli/",
+   "zh": "副词 部分地",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "patron's",
+   "ipa": "/ˈpeɪtrənz/",
+   "zh": "名词 赞助人的，主顾的（patron 的所有格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "patrons",
+   "ipa": "/ˈpeɪtrənz/",
+   "zh": "名词 赞助人，主顾（patron 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "patterns",
+   "ipa": "/ˈpætərnz/",
+   "zh": "名词 图案，模式（pattern 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "pay",
+   "ipa": "/peɪ/",
+   "zh": "动词 支付，付款",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "people",
+   "ipa": "/ˈpiːpl/",
+   "zh": "名词 人们，人",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "people's",
+   "ipa": "/ˈpiːplz/",
+   "zh": "名词 人们的（people 的所有格）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "personalities",
+   "ipa": "/ˌpɜːrsəˈnælətiz/",
+   "zh": "名词 个性，性格（personality 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "personality",
+   "ipa": "/ˌpɜːrsəˈnæləti/",
+   "zh": "名词 个性，性格",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "pigments",
+   "ipa": "/ˈpɪɡmənts/",
+   "zh": "名词 颜料，色素（pigment 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "pipes",
+   "ipa": "/paɪps/",
+   "zh": "名词 管道，管子（pipe 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "plan",
+   "ipa": "/plæn/",
+   "zh": "名词/动词 计划",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "plant",
+   "ipa": "/plænt/",
+   "zh": "名词 植物；动词 种植",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "planted",
+   "ipa": "/ˈplæntɪd/",
+   "zh": "动词 种植（plant 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "plants",
+   "ipa": "/plænts/",
+   "zh": "名词 植物（plant 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "pm",
+   "ipa": "/ˌpiːˈem/",
+   "zh": "名词 下午（post meridiem）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "pop",
+   "ipa": "/pɑːp/",
+   "zh": "名词 流行音乐；动词 突然出现",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "practical",
+   "ipa": "/ˈpræktɪkl/",
+   "zh": "形容词 实用的，实际的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "practice",
+   "ipa": "/ˈpræktɪs/",
+   "zh": "名词/动词 练习；实践",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "practiced",
+   "ipa": "/ˈpræktɪst/",
+   "zh": "动词 练习（practice 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "prefer",
+   "ipa": "/prɪˈfɜːr/",
+   "zh": "动词 更喜欢，宁愿",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "preferences",
+   "ipa": "/ˈprefərənsɪz/",
+   "zh": "名词 偏好，偏爱（preference 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "presentation",
+   "ipa": "/ˌprezənˈteɪʃn/",
+   "zh": "名词 展示，陈述；报告",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "presenting",
+   "ipa": "/prɪˈzentɪŋ/",
+   "zh": "动词 展示，呈现（present 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "prices",
+   "ipa": "/ˈpraɪsɪz/",
+   "zh": "名词 价格（price 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "principle",
+   "ipa": "/ˈprɪnsəpl/",
+   "zh": "名词 原则，原理",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "printed",
+   "ipa": "/ˈprɪntɪd/",
+   "zh": "动词 印刷（print 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "prints",
+   "ipa": "/prɪnts/",
+   "zh": "名词 版画，印刷品（print 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "probably",
+   "ipa": "/ˈprɑːbəbli/",
+   "zh": "副词 大概，很可能",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "proceeds",
+   "ipa": "/prəˈsiːdz/",
+   "zh": "名词 收益，收入",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "process",
+   "ipa": "/ˈprɑːses/",
+   "zh": "名词 过程；动词 处理",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "produce",
+   "ipa": "/prəˈduːs/",
+   "zh": "动词 生产，产生",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "products",
+   "ipa": "/ˈprɑːdʌkts/",
+   "zh": "名词 产品（product 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "professor",
+   "ipa": "/prəˈfesər/",
+   "zh": "名词 教授",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "provide",
+   "ipa": "/prəˈvaɪd/",
+   "zh": "动词 提供",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "purchase",
+   "ipa": "/ˈpɜːrtʃəs/",
+   "zh": "动词/名词 购买",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "quad",
+   "ipa": "/kwɑːd/",
+   "zh": "名词 四方院，方庭",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "random",
+   "ipa": "/ˈrændəm/",
+   "zh": "形容词 随机的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "rare",
+   "ipa": "/rer/",
+   "zh": "形容词 稀有的，罕见的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "reaching",
+   "ipa": "/ˈriːtʃɪŋ/",
+   "zh": "动词 到达，伸手够到（reach 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "really",
+   "ipa": "/ˈriːəli/",
+   "zh": "副词 真正地，确实",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "rejecting",
+   "ipa": "/rɪˈdʒektɪŋ/",
+   "zh": "动词 拒绝（reject 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "reminder",
+   "ipa": "/rɪˈmaɪndər/",
+   "zh": "名词 提醒，提示",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "replaced",
+   "ipa": "/rɪˈpleɪst/",
+   "zh": "动词 替换，取代（replace 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "replacing",
+   "ipa": "/rɪˈpleɪsɪŋ/",
+   "zh": "动词 替换，取代（replace 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "required",
+   "ipa": "/rɪˈkwaɪərd/",
+   "zh": "动词 需要（require 的过去式）；形容词 必需的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "research",
+   "ipa": "/rɪˈsɜːrtʃ/",
+   "zh": "名词/动词 研究",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "researchers",
+   "ipa": "/rɪˈsɜːrtʃərz/",
+   "zh": "名词 研究人员（researcher 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "reserve",
+   "ipa": "/rɪˈzɜːrv/",
+   "zh": "名词 保护区；动词 储备，保留",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "result",
+   "ipa": "/rɪˈzʌlt/",
+   "zh": "名词 结果；动词 导致",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "retains",
+   "ipa": "/rɪˈteɪnz/",
+   "zh": "动词 保留，保持（retain 的第三人称单数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "revealed",
+   "ipa": "/rɪˈviːld/",
+   "zh": "动词 揭示，揭露（reveal 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "richness",
+   "ipa": "/ˈrɪtʃnəs/",
+   "zh": "名词 丰富，富饶",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "root",
+   "ipa": "/ruːt/",
+   "zh": "名词 根，根部",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "roses",
+   "ipa": "/ˈroʊzɪz/",
+   "zh": "名词 玫瑰（rose 的复数）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "run",
+   "ipa": "/rʌn/",
+   "zh": "动词 跑；运行，经营",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "ruth",
+   "ipa": "/ruːθ/",
+   "zh": "名词 怜悯，同情（亦作人名 露丝）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sacred",
+   "ipa": "/ˈseɪkrɪd/",
+   "zh": "形容词 神圣的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "said",
+   "ipa": "/sed/",
+   "zh": "动词 说（say 的过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "salvador",
+   "ipa": "/ˈsælvədɔːr/",
+   "zh": "专有名词 萨尔瓦多（如画家萨尔瓦多·达利）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "same",
+   "ipa": "/seɪm/",
+   "zh": "形容词 相同的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "say",
+   "ipa": "/seɪ/",
+   "zh": "动词 说",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "school",
+   "ipa": "/skuːl/",
+   "zh": "名词 学校",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "screening",
+   "ipa": "/ˈskriːnɪŋ/",
+   "zh": "名词 放映；筛选",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sea",
+   "ipa": "/siː/",
+   "zh": "名词 大海，海洋",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "see",
+   "ipa": "/siː/",
+   "zh": "动词 看见",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "seem",
+   "ipa": "/siːm/",
+   "zh": "动词 似乎，好像",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "selling",
+   "ipa": "/ˈselɪŋ/",
+   "zh": "动词 出售（sell 的现在分词）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "separate",
+   "ipa": "/ˈsepərət/",
+   "zh": "形容词 分开的；动词 分离",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "set",
+   "ipa": "/set/",
+   "zh": "动词 设置，放置；名词 一套",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "seven",
+   "ipa": "/ˈsevn/",
+   "zh": "数词 七",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shade",
+   "ipa": "/ʃeɪd/",
+   "zh": "名词 阴凉处，树荫；阴影",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shape",
+   "ipa": "/ʃeɪp/",
+   "zh": "n. 形状，外形；v. 塑造，形成",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shapes",
+   "ipa": "/ʃeɪps/",
+   "zh": "shape的复数/第三人称单数：形状；塑造",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "shouldn't",
+   "ipa": "/ˈʃʊdnt/",
+   "zh": "= should not 不应该",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "show",
+   "ipa": "/ʃoʊ/",
+   "zh": "v. 显示，展示；n. 节目，演出",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "showed",
+   "ipa": "/ʃoʊd/",
+   "zh": "show的过去式：展示，表明",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "signaled",
+   "ipa": "/ˈsɪɡnəld/",
+   "zh": "signal的过去式：发信号，示意；标志",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "simply",
+   "ipa": "/ˈsɪmpli/",
+   "zh": "adv. 简单地；仅仅；简直",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "site",
+   "ipa": "/saɪt/",
+   "zh": "n. 地点，场所；遗址；网站",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sites",
+   "ipa": "/saɪts/",
+   "zh": "site的复数：地点，遗址，网站",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "size",
+   "ipa": "/saɪz/",
+   "zh": "n. 大小，尺寸；规模",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sky",
+   "ipa": "/skaɪ/",
+   "zh": "n. 天空",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "slides",
+   "ipa": "/slaɪdz/",
+   "zh": "slide的复数/三单：幻灯片；滑动",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "slight",
+   "ipa": "/slaɪt/",
+   "zh": "adj. 轻微的，细小的；n. 轻视",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "snacks",
+   "ipa": "/snæks/",
+   "zh": "snack的复数：零食，小吃",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "soil",
+   "ipa": "/sɔɪl/",
+   "zh": "n. 土壤，泥土；v. 弄脏",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sometimes",
+   "ipa": "/ˈsʌmtaɪmz/",
+   "zh": "adv. 有时，偶尔",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sought",
+   "ipa": "/sɔːt/",
+   "zh": "seek的过去式/过去分词：寻找，寻求",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "sources",
+   "ipa": "/ˈsɔːrsɪz/",
+   "zh": "source的复数：来源，源头；资料",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "special",
+   "ipa": "/ˈspeʃl/",
+   "zh": "adj. 特别的，专门的；n. 特价，特别节目",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "specialists",
+   "ipa": "/ˈspeʃəlɪsts/",
+   "zh": "specialist的复数：专家，专科医生",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "specified",
+   "ipa": "/ˈspesɪfaɪd/",
+   "zh": "specify的过去式/过去分词：指定，明确说明",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "spiritual",
+   "ipa": "/ˈspɪrɪtʃuəl/",
+   "zh": "adj. 精神的，心灵的；宗教的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "stable",
+   "ipa": "/ˈsteɪbl/",
+   "zh": "adj. 稳定的，稳固的；n. 马厩",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "stalks",
+   "ipa": "/stɔːks/",
+   "zh": "stalk的复数/三单：茎，秆；偷偷接近",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "standard",
+   "ipa": "/ˈstændərd/",
+   "zh": "n. 标准，水平；adj. 标准的，普通的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "starting",
+   "ipa": "/ˈstɑːrtɪŋ/",
+   "zh": "start的现在分词：开始；出发",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "stated",
+   "ipa": "/ˈsteɪtɪd/",
+   "zh": "state的过去式：陈述，声明；规定的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "stone",
+   "ipa": "/stoʊn/",
+   "zh": "n. 石头，石块；石料",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "stop",
+   "ipa": "/stɑːp/",
+   "zh": "v. 停止，阻止；n. 车站，停止",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "story",
+   "ipa": "/ˈstɔːri/",
+   "zh": "n. 故事；楼层",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "strange",
+   "ipa": "/streɪndʒ/",
+   "zh": "adj. 奇怪的，陌生的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "student",
+   "ipa": "/ˈstuːdnt/",
+   "zh": "n. 学生",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "students",
+   "ipa": "/ˈstuːdnts/",
+   "zh": "student的复数：学生们",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "studied",
+   "ipa": "/ˈstʌdid/",
+   "zh": "study的过去式/过去分词：学习，研究",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "subjects",
+   "ipa": "/ˈsʌbdʒɪkts/",
+   "zh": "subject的复数：科目，主题；受试者",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "suggesting",
+   "ipa": "/səˈdʒestɪŋ/",
+   "zh": "suggest的现在分词：建议，暗示",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "summer",
+   "ipa": "/ˈsʌmər/",
+   "zh": "n. 夏天，夏季",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "support",
+   "ipa": "/səˈpɔːrt/",
+   "zh": "v./n. 支持，支撑；供养",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "suppresses",
+   "ipa": "/səˈpresɪz/",
+   "zh": "suppress的三单：抑制，压制，镇压",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "surprising",
+   "ipa": "/sərˈpraɪzɪŋ/",
+   "zh": "adj. 令人惊讶的，出人意料的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "symbolism",
+   "ipa": "/ˈsɪmbəlɪzəm/",
+   "zh": "n. 象征意义，象征手法",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "systems",
+   "ipa": "/ˈsɪstəmz/",
+   "zh": "system的复数：系统，体系，制度",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "taken",
+   "ipa": "/ˈteɪkən/",
+   "zh": "take的过去分词：拿，带走；花费",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "tall",
+   "ipa": "/tɔːl/",
+   "zh": "adj. 高的，身材高的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "tastes",
+   "ipa": "/teɪsts/",
+   "zh": "taste的复数/三单：味道，品味；尝起来",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "technology",
+   "ipa": "/tekˈnɑːlədʒi/",
+   "zh": "n. 科技，技术",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "temperatures",
+   "ipa": "/ˈtemprətʃərz/",
+   "zh": "temperature的复数：温度，气温",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "terms",
+   "ipa": "/tɜːrmz/",
+   "zh": "term的复数：术语；条款；学期",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "th",
+   "ipa": "/tiː eɪtʃ/",
+   "zh": "abbr. 序数词后缀（如4th第四）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "that'll",
+   "ipa": "/ˈðætl/",
+   "zh": "= that will 那将会",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "theory",
+   "ipa": "/ˈθɪri/",
+   "zh": "n. 理论，学说；看法",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "they're",
+   "ipa": "/ðer/",
+   "zh": "= they are 他们是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "things",
+   "ipa": "/θɪŋz/",
+   "zh": "thing的复数：东西，事情，事物",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "think",
+   "ipa": "/θɪŋk/",
+   "zh": "v. 思考，认为，想",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "thinking",
+   "ipa": "/ˈθɪŋkɪŋ/",
+   "zh": "n. 思考，想法；think的现在分词",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "thinks",
+   "ipa": "/θɪŋks/",
+   "zh": "think的三单：思考，认为",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "today",
+   "ipa": "/təˈdeɪ/",
+   "zh": "n./adv. 今天，现今",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "tone",
+   "ipa": "/toʊn/",
+   "zh": "n. 语气，音调；色调",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "took",
+   "ipa": "/tʊk/",
+   "zh": "take的过去式：拿，带走；花费",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "traditional",
+   "ipa": "/trəˈdɪʃənl/",
+   "zh": "adj. 传统的，惯例的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "traveled",
+   "ipa": "/ˈtrævld/",
+   "zh": "travel的过去式：旅行；传播",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "trees",
+   "ipa": "/triːz/",
+   "zh": "tree的复数：树，树木",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "try",
+   "ipa": "/traɪ/",
+   "zh": "v. 尝试，努力；审判",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "unique",
+   "ipa": "/juˈniːk/",
+   "zh": "adj. 独特的，独一无二的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "use",
+   "ipa": "/juːz/",
+   "zh": "v. 使用，利用；n. 用途",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "used",
+   "ipa": "/juːzd/",
+   "zh": "use的过去式：使用；习惯的（used to 过去常常）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "utility",
+   "ipa": "/juˈtɪləti/",
+   "zh": "n. 公用事业；实用，效用",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "value",
+   "ipa": "/ˈvæljuː/",
+   "zh": "n. 价值；价值观；v. 重视",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "values",
+   "ipa": "/ˈvæljuːz/",
+   "zh": "value的复数：价值观；价值",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "variation",
+   "ipa": "/ˌveriˈeɪʃn/",
+   "zh": "n. 变化，差异；变体",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "variety",
+   "ipa": "/vəˈraɪəti/",
+   "zh": "n. 多样性；种类，品种",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "villa",
+   "ipa": "/ˈvɪlə/",
+   "zh": "n. 别墅，乡间宅邸",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "village",
+   "ipa": "/ˈvɪlɪdʒ/",
+   "zh": "n. 村庄，乡村",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "virgin",
+   "ipa": "/ˈvɜːrdʒɪn/",
+   "zh": "n. 处女；adj. 处女的；原始的，未开发的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "visual",
+   "ipa": "/ˈvɪʒuəl/",
+   "zh": "adj. 视觉的，视力的；n. 视觉材料",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "walls",
+   "ipa": "/wɔːlz/",
+   "zh": "wall的复数：墙，墙壁",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "want",
+   "ipa": "/wɑːnt/",
+   "zh": "v. 想要，需要",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "wasn't",
+   "ipa": "/ˈwʌznt/",
+   "zh": "= was not 不是（过去式）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "way",
+   "ipa": "/weɪ/",
+   "zh": "n. 方式，方法；道路，路线",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "we're",
+   "ipa": "/wɪr/",
+   "zh": "= we are 我们是",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "wealth",
+   "ipa": "/welθ/",
+   "zh": "n. 财富，财产；丰富",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "wealthy",
+   "ipa": "/ˈwelθi/",
+   "zh": "adj. 富有的，富裕的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "weeds",
+   "ipa": "/wiːdz/",
+   "zh": "weed的复数：杂草，野草",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "weekend",
+   "ipa": "/ˈwiːkend/",
+   "zh": "n. 周末",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "went",
+   "ipa": "/went/",
+   "zh": "go的过去式：去，走",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "what's",
+   "ipa": "/wʌts/",
+   "zh": "= what is 是什么；= what has",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "whole",
+   "ipa": "/hoʊl/",
+   "zh": "adj. 整个的，全部的；n. 整体",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "why",
+   "ipa": "/waɪ/",
+   "zh": "adv. 为什么；n. 原因，理由",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "willingness",
+   "ipa": "/ˈwɪlɪŋnəs/",
+   "zh": "n. 意愿，乐意，自愿",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "woman",
+   "ipa": "/ˈwʊmən/",
+   "zh": "n. 女人，妇女",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "won't",
+   "ipa": "/woʊnt/",
+   "zh": "= will not 不会，不愿意",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "wooden",
+   "ipa": "/ˈwʊdn/",
+   "zh": "adj. 木制的；呆板的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "workshops",
+   "ipa": "/ˈwɜːrkʃɑːps/",
+   "zh": "workshop的复数：工作坊，研讨会；车间",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "worried",
+   "ipa": "/ˈwɜːrid/",
+   "zh": "adj. 担心的，忧虑的；worry的过去式",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "wow",
+   "ipa": "/waʊ/",
+   "zh": "int. 哇（表惊讶/赞叹）",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "yes",
+   "ipa": "/jes/",
+   "zh": "adv. 是，是的",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "you'll",
+   "ipa": "/juːl/",
+   "zh": "= you will 你将会",
+   "senses": [],
+   "xex": [],
+   "syn": [],
+   "rootfam": []
+  },
+  {
+   "w": "anthropological",
+   "ipa": "/ˌænθrəpəˈlɑːdʒɪkl/",
+   "zh": "形容词；人类学的",
+   "core": "研究人类这一物种的",
+   "senses": [
+    {
+     "gloss": "人类学的",
+     "logic": "由 anthropology（人类学）加 -ical 派生",
+     "en": "The anthropological evidence suggests the settlement dates back three thousand years.",
+     "zh": "人类学证据表明这个聚落可追溯至三千年前。"
+    }
+   ],
+   "ety": "希腊语 anthrōpos（人）+ -logia（学问）→ 研究人的学问 → 人类学的",
+   "ph": "重音在第 4 音节 lo；anthro- 中的 th 是清音 /θ/，紧跟 r 要连读；-logical 尾读 /dʒɪkl/。",
+   "tip": "anthrop-＝「人」，看见 anthropo- 就想到 human。",
+   "xex": [
+    {
+     "en": "Anthropological fieldwork often requires living in the community for months.",
+     "zh": "人类学田野调查常常需要在当地社区住上几个月。",
+     "src": "造句"
+    },
+    {
+     "en": "The museum displays objects of great anthropological value.",
+     "zh": "这座博物馆展出具有很高人类学价值的器物。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "讲座中常搭配 evidence / record / study / perspective；不要与 anthropomorphic（拟人的）混淆。",
+   "rootfam": [
+    {
+     "root": "anthrōp-",
+     "meaning": "人",
+     "words": [
+      {
+       "w": "anthropology",
+       "g": "人类学"
+      },
+      {
+       "w": "anthropologist",
+       "g": "人类学家"
+      },
+      {
+       "w": "misanthrope",
+       "g": "厌世者，遁世者"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "booths",
+   "ipa": "/buːθ/",
+   "zh": "名词；展位，小隔间，卡座，电话亭（复数 booths）",
+   "core": "一个半封闭的小空间或摊位",
+   "senses": [
+    {
+     "gloss": "展位、摊位",
+     "logic": "集市/展览里供人展示售卖的小间",
+     "en": "Several vendors set up booths at the annual food fair.",
+     "zh": "年度美食节上有好几个商贩搭起了摊位。"
+    },
+    {
+     "gloss": "小隔间、卡座、投票间、电话亭",
+     "logic": "由「小间」引申到各种封闭小空间",
+     "en": "They sat in a booth at the back of the diner.",
+     "zh": "他们坐在小餐馆靠后的卡座里。"
+    }
+   ],
+   "ety": "中古英语 bōthe，源自古诺尔斯语 búð（小屋、帐篷）→ 小而封闭的空间",
+   "ph": "-oo- 发长音 /uː/；词尾 th 美式可读清 /θ/ 也可读浊 /ð/；复数 booths 常读 /buːðz/。",
+   "tip": "booth 像「布」搭出来的小摊、小隔间。",
+   "xex": [
+    {
+     "en": "Visitors lined up at the information booth to get a map.",
+     "zh": "游客们在问讯处排起长队领地图。",
+     "src": "造句"
+    },
+    {
+     "en": "The lecture hall had translation booths for the foreign delegates.",
+     "zh": "报告厅为外宾准备了同声传译的小隔间。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "stall",
+     "ipa": "/stɔːl/",
+     "note": "更侧重集市上的货摊"
+    },
+    {
+     "w": "kiosk",
+     "ipa": "/ˈkiːɒsk/",
+     "note": "独立亭式结构，如自助服务亭"
+    }
+   ],
+   "nu": "托福听力里常指展览/会场的展位或投票间；复数形式 booths 注意 th 变浊。",
+   "rootfam": []
+  },
+  {
+   "w": "casts",
+   "ipa": "/kæst/",
+   "zh": "名词；铸型，模型，模制品；动词 投掷、浇铸、投射（复数 casts）",
+   "core": "把软材料灌进模具成型后翻出来的复制品",
+   "senses": [
+    {
+     "gloss": "铸型、模型、模制品",
+     "logic": "由浇铸动作转指成型的复制品，学术语境常见 fossil casts 化石铸型",
+     "en": "The museum displays a plaster cast of a dinosaur skull.",
+     "zh": "博物馆展出的是一个恐龙头骨的石膏铸型。"
+    },
+    {
+     "gloss": "投掷",
+     "logic": "本义，扔出去",
+     "en": "He cast the fishing line into the river.",
+     "zh": "他把鱼线甩进了河里。"
+    },
+    {
+     "gloss": "投射（光、影）",
+     "logic": "把光/影「投」出去",
+     "en": "The tall tree casts a long shadow at sunset.",
+     "zh": "日落时那棵大树投下长长的影子。"
+    },
+    {
+     "gloss": "演员阵容",
+     "logic": "被「投」进一部戏里的一群人",
+     "en": "The film has an outstanding cast.",
+     "zh": "这部电影的演员阵容非常出色。"
+    }
+   ],
+   "ety": "源自古诺尔斯语 kasta（投掷）→ 投 → 浇铸（把金属液投进模具）→ 铸件/模型",
+   "ph": "美式 /æ/ 短音，英式 /kɑːst/；过去式、过去分词同为 cast（不规则，不变形）。",
+   "tip": "用一个模具 cast，就 cast（浇铸）出一个 cast（模型）。",
+   "xex": [
+    {
+     "en": "Researchers make casts of the footprints to preserve them for study.",
+     "zh": "研究人员给足迹制作铸型，以便保存下来研究。",
+     "src": "造句"
+    },
+    {
+     "en": "The report casts doubt on the earlier theory.",
+     "zh": "这份报告让人对先前的理论产生了怀疑。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "mold",
+     "ipa": "/moʊld/",
+     "note": "指模具本身，而非翻出的成品"
+    },
+    {
+     "w": "replica",
+     "ipa": "/ˈreplɪkə/",
+     "note": "复制品，不强调浇铸成型的工艺"
+    }
+   ],
+   "nu": "古生物学/考古讲座中 fossil cast＝用模具翻制的化石模型，与真化石（original fossil）相对。",
+   "rootfam": [
+    {
+     "root": "cast",
+     "meaning": "投掷、浇铸",
+     "words": [
+      {
+       "w": "broadcast",
+       "g": "广播"
+      },
+      {
+       "w": "forecast",
+       "g": "预报"
+      },
+      {
+       "w": "overcast",
+       "g": "阴天的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "cavities",
+   "ipa": "/ˈkævəti/",
+   "zh": "名词；洞，腔，蛀洞（复数 cavities）",
+   "core": "物体内部或表面上的空洞",
+   "senses": [
+    {
+     "gloss": "腔、空腔",
+     "logic": "身体或器官内部的中空处",
+     "en": "The heart lies within the chest cavity.",
+     "zh": "心脏位于胸腔之内。"
+    },
+    {
+     "gloss": "蛀洞",
+     "logic": "牙齿被蛀出的洞",
+     "en": "The dentist found a small cavity in one of my molars.",
+     "zh": "牙医在我的一颗臼齿上发现了一个小蛀洞。"
+    },
+    {
+     "gloss": "洞穴、凹陷",
+     "logic": "泛指自然形成的空处",
+     "en": "Water slowly carved a cavity in the limestone.",
+     "zh": "水慢慢在石灰岩里蚀出了一个空洞。"
+    }
+   ],
+   "ety": "拉丁语 cavus（空的）→ cavitas（中空）→ cavity",
+   "ph": "重音在第一音节；-ity 是抽象名词后缀；a 发短音 /æ/。",
+   "tip": "cav-＝「空」，cave（洞穴）与它同源。",
+   "xex": [
+    {
+     "en": "Birds nest in cavities high up in the trees.",
+     "zh": "鸟儿在高高的树洞中筑巢。",
+     "src": "造句"
+    },
+    {
+     "en": "The nasal cavity filters the air we breathe in.",
+     "zh": "鼻腔会过滤我们吸入的空气。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "hollow",
+     "ipa": "/ˈhɑːloʊ/",
+     "note": "凹陷或空洞，更形象口语"
+    },
+    {
+     "w": "cave",
+     "ipa": "/keɪv/",
+     "note": "天然大型洞穴"
+    }
+   ],
+   "nu": "学术听力高频搭配：body cavity（体腔）、nasal cavity（鼻腔）、oral cavity（口腔）。",
+   "rootfam": [
+    {
+     "root": "cav-",
+     "meaning": "空的",
+     "words": [
+      {
+       "w": "cave",
+       "g": "洞穴"
+      },
+      {
+       "w": "concave",
+       "g": "凹的"
+      },
+      {
+       "w": "excavate",
+       "g": "挖掘"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "coherent",
+   "ipa": "/koʊˈhɪrənt/",
+   "zh": "形容词；连贯的，条理清晰的，一致的",
+   "core": "各部分粘合在一起、讲得通的",
+   "senses": [
+    {
+     "gloss": "连贯的、条理清晰的",
+     "logic": "论据之间能粘合、不散乱",
+     "en": "She presented a coherent argument for the new policy.",
+     "zh": "她为这项新政策提出了一个条理清晰的论证。"
+    },
+    {
+     "gloss": "一致的、协调的",
+     "logic": "各部分彼此配合、自洽",
+     "en": "The chapters form a coherent whole.",
+     "zh": "这些章节构成一个连贯的整体。"
+    }
+   ],
+   "ety": "拉丁语 co-（一起）+ haerēre（粘）→ 粘在一起 → 连贯的",
+   "ph": "重音在第二音节；-her- 中的 h 要发音；-ent 形容词后缀。",
+   "tip": "co＋here（粘）＝粘在一起，所以「连贯、自洽」。",
+   "xex": [
+    {
+     "en": "The student's answer was clear but not entirely coherent.",
+     "zh": "这个学生的回答很清楚，但不太连贯。",
+     "src": "造句"
+    },
+    {
+     "en": "A coherent theory must explain all the available data.",
+     "zh": "一个自洽的理论必须能解释所有现成的数据。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "logical",
+     "ipa": "/ˈlɑːdʒɪkl/",
+     "note": "强调逻辑上成立"
+    },
+    {
+     "w": "consistent",
+     "ipa": "/kənˈsɪstənt/",
+     "note": "强调前后一致、不矛盾"
+    }
+   ],
+   "nu": "反义 incoherent（语无伦次的）；写作/口语中形容论证结构常用。",
+   "rootfam": [
+    {
+     "root": "her-",
+     "meaning": "粘",
+     "words": [
+      {
+       "w": "cohere",
+       "g": "黏合，连贯"
+      },
+      {
+       "w": "inherent",
+       "g": "内在的，固有的"
+      },
+      {
+       "w": "adhere",
+       "g": "粘附，坚持"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "dinosaur",
+   "ipa": "/ˈdaɪnəsɔːr/",
+   "zh": "名词；恐龙",
+   "core": "中生代灭绝的巨大爬行动物",
+   "senses": [
+    {
+     "gloss": "恐龙",
+     "logic": "本义",
+     "en": "Dinosaurs became extinct about sixty-five million years ago.",
+     "zh": "恐龙在大约六千五百万年前灭绝。"
+    },
+    {
+     "gloss": "过时的庞然大物",
+     "logic": "比喻又大又落伍的东西",
+     "en": "That old mainframe is a dinosaur compared to modern laptops.",
+     "zh": "与现在的笔记本相比，那台老式主机简直是庞然大物。"
+    }
+   ],
+   "ety": "希腊语 deinos（可怕的）+ sauros（蜥蜴），1842 年欧文为这类化石命名「可怕的蜥蜴」",
+   "ph": "重音在第一音节；dino- 读 /ˈdaɪnə/，注意 i 是长音 /aɪ/。",
+   "tip": "dino＝可怕 + saur＝蜥蜴 →「可怕的蜥蜴」。",
+   "xex": [
+    {
+     "en": "Paleontologists study dinosaur fossils to learn how they lived.",
+     "zh": "古生物学家研究恐龙化石，以了解它们如何生活。",
+     "src": "造句"
+    },
+    {
+     "en": "The museum's dinosaur exhibit attracts thousands of visitors.",
+     "zh": "博物馆的恐龙展吸引了成千上万的参观者。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "听力中常与 fossil、extinction、paleontology 同现。",
+   "rootfam": [
+    {
+     "root": "saur-",
+     "meaning": "蜥蜴",
+     "words": [
+      {
+       "w": "saurian",
+       "g": "蜥蜴类的"
+      },
+      {
+       "w": "tyrannosaurus",
+       "g": "霸王龙"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "gestalt",
+   "ipa": "/ɡəˈʃtɑːlt/",
+   "zh": "名词；格式塔，完形（整体大于部分之和）",
+   "core": "作为一个整体被感知的完整结构",
+   "senses": [
+    {
+     "gloss": "格式塔、完形",
+     "logic": "心理学术语，指整体大于部分之和的感知",
+     "en": "Gestalt psychology emphasizes how we perceive wholes rather than isolated parts.",
+     "zh": "格式塔心理学强调我们如何感知整体而非孤立的部分。"
+    }
+   ],
+   "ety": "德语 Gestalt（形状、形态），20 世纪初由格式塔心理学（Gestalt psychology）引入英语",
+   "ph": "德语借词；/ʃt/ 连读，重音在第二音节；词尾 -t 要发音。",
+   "tip": "格式塔：整体 ≠ 各部分的简单相加。",
+   "xex": [
+    {
+     "en": "A melody is a gestalt, more than just a sequence of notes.",
+     "zh": "一段旋律是一个完形，不只是音符的依次排列。",
+     "src": "造句"
+    },
+    {
+     "en": "The designer arranged the shapes so that they form a single gestalt.",
+     "zh": "设计师把这些形状安排成一个完整的整体。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "通常大写 Gestalt；固定搭配 Gestalt psychology（格式塔心理学）。",
+   "rootfam": []
+  },
+  {
+   "w": "hierarchy",
+   "ipa": "/ˈhaɪərɑːrki/",
+   "zh": "名词；等级制度，层级",
+   "core": "由高到低排列的层级结构",
+   "senses": [
+    {
+     "gloss": "等级制度",
+     "logic": "社会/组织里上下有序的序列",
+     "en": "The company has a rigid hierarchy.",
+     "zh": "这家公司等级森严。"
+    },
+    {
+     "gloss": "层级体系",
+     "logic": "泛指按重要性排列的系统",
+     "en": "Maslow described a hierarchy of human needs.",
+     "zh": "马斯洛描述了人类需求的层级。"
+    }
+   ],
+   "ety": "希腊语 hieros（神圣的）+ arkhēs（统治者）→ 教会圣职的等级 → 一般等级制度",
+   "ph": "-ch- 读 /k/ 而非 /tʃ/；重音在第一音节；-archy 结尾。",
+   "tip": "hier＝神圣 + archy＝统治 → 天使也分等级。",
+   "xex": [
+    {
+     "en": "In many species, a dominance hierarchy reduces conflict within the group.",
+     "zh": "在许多物种中，支配等级会减少群体内部的冲突。",
+     "src": "造句"
+    },
+    {
+     "en": "The report organizes the risks into a clear hierarchy.",
+     "zh": "这份报告把各种风险排成了一个清晰的层级。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "ranking",
+     "ipa": "/ˈræŋkɪŋ/",
+     "note": "排序，更中性"
+    },
+    {
+     "w": "pecking order",
+     "ipa": "/ˈpekɪŋ ˌɔːrdər/",
+     "note": "「啄序」，口语化"
+    }
+   ],
+   "nu": "学术听力高频：social hierarchy、dominance hierarchy。",
+   "rootfam": [
+    {
+     "root": "hier-",
+     "meaning": "神圣",
+     "words": [
+      {
+       "w": "hieroglyph",
+       "g": "象形文字"
+      },
+      {
+       "w": "hieratic",
+       "g": "僧侣的，圣职的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "intercropping",
+   "ipa": "/ˌɪntərˈkrɑːpɪŋ/",
+   "zh": "名词；间作，套种（同一块地同时种两种以上作物）",
+   "core": "不同作物在同一块地里混种",
+   "senses": [
+    {
+     "gloss": "间作、套种",
+     "logic": "inter（之间）+ crop（作物）",
+     "en": "Intercropping maize with beans can improve soil fertility.",
+     "zh": "玉米与豆类间作可以提高土壤肥力。"
+    }
+   ],
+   "ety": "inter-（在…之间）+ crop（作物）+ -ing（动名词）→ 在作物之间混种",
+   "ph": "重音在 crop；inter- 弱读为 /ˌɪntər/；-ing 结尾。",
+   "tip": "inter＝之间 + crop＝作物 → 作物之间一起种。",
+   "xex": [
+    {
+     "en": "Farmers practice intercropping to make better use of sunlight and water.",
+     "zh": "农民通过间作来更充分地利用阳光和水分。",
+     "src": "造句"
+    },
+    {
+     "en": "Intercropping can reduce the spread of pests compared with monoculture.",
+     "zh": "与单一种植相比，间作可以减少病虫害的传播。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "companion planting",
+     "ipa": "",
+     "note": "伴生种植，更偏园艺、强调搭配互利"
+    }
+   ],
+   "nu": "农业讲座高频；与 monoculture（单一种植）相对。",
+   "rootfam": [
+    {
+     "root": "inter-",
+     "meaning": "在…之间",
+     "words": [
+      {
+       "w": "interact",
+       "g": "互动"
+      },
+      {
+       "w": "intermediate",
+       "g": "中间的"
+      },
+      {
+       "w": "interdependent",
+       "g": "相互依存的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "knitted",
+   "ipa": "/nɪt/",
+   "zh": "动词；编织，针织；使紧密结合（过去式/分词 knitted）",
+   "core": "用针把线织成布",
+   "senses": [
+    {
+     "gloss": "编织、针织",
+     "logic": "本义",
+     "en": "She knits a sweater for her grandson every winter.",
+     "zh": "她每年冬天都给孙子织一件毛衣。"
+    },
+    {
+     "gloss": "使紧密结合",
+     "logic": "像织布一样把东西连在一起",
+     "en": "Shared experiences knit the community together.",
+     "zh": "共同的经历把这个社区紧紧连在一起。"
+    },
+    {
+     "gloss": "皱（眉）",
+     "logic": "眉头像织在一起",
+     "en": "He knitted his brows in confusion.",
+     "zh": "他困惑地皱起了眉头。"
+    }
+   ],
+   "ety": "古英语 cnyttan（打结、系）→ 编织",
+   "ph": "kn 开头只读 /n/，k 不发音；过去式和过去分词为 knitted（偶尔 knit）。",
+   "tip": "kn 开头的词，k 都不发音（knight、knife、know）。",
+   "xex": [
+    {
+     "en": "My grandmother taught me how to knit when I was a child.",
+     "zh": "我小时候奶奶教我织毛衣。",
+     "src": "造句"
+    },
+    {
+     "en": "A closely knitted community supports its members in hard times.",
+     "zh": "一个联系紧密的社区会在困难时支持它的成员。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "weave",
+     "ipa": "/wiːv/",
+     "note": "梭织，经线纬线交错"
+    },
+    {
+     "w": "crochet",
+     "ipa": "/kroʊˈʃeɪ/",
+     "note": "钩针编织，用钩针"
+    }
+   ],
+   "nu": "knit 与 knot（结）同源；knitted 作形容词表「针织的」。",
+   "rootfam": []
+  },
+  {
+   "w": "lapis",
+   "ipa": "/ˈlæpɪs/",
+   "zh": "名词；青金石（lapis lazuli 的简称）；石头（拉丁语）",
+   "core": "一种深蓝色的宝石",
+   "senses": [
+    {
+     "gloss": "青金石",
+     "logic": "lapis lazuli 的简称",
+     "en": "The artist ground lapis lazuli into a vivid blue pigment.",
+     "zh": "这位画家把青金石研磨成鲜艳的蓝色颜料。"
+    },
+    {
+     "gloss": "石头（拉丁语）",
+     "logic": "拉丁语本义",
+     "en": "The inscription was carved on a slab of lapis.",
+     "zh": "铭文刻在一块石板上。"
+    }
+   ],
+   "ety": "拉丁语 lapis（石头）+ 中古拉丁语 lazuli（蓝色的）→ 蓝色石头 → 青金石",
+   "ph": "重音在第一音节；a 发短音 /æ/；常读作两个词 lapis lazuli /ˌlæpɪs ˈlæzjʊlaɪ/。",
+   "tip": "lapis lazuli＝「蓝色的石头」，即青金石。",
+   "xex": [
+    {
+     "en": "Ancient Egyptians prized lapis lazuli for jewelry and decoration.",
+     "zh": "古埃及人珍视青金石，用来制作首饰和装饰品。",
+     "src": "造句"
+    },
+    {
+     "en": "Lapis pigment was once as costly as gold.",
+     "zh": "青金石颜料曾和黄金一样昂贵。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "azurite",
+     "ipa": "/ˈæʒəraɪt/",
+     "note": "另一种蓝色矿物，色泽偏深蓝"
+    }
+   ],
+   "nu": "讲座谈古代颜料或美索不达米亚/埃及文明时常见。",
+   "rootfam": [
+    {
+     "root": "lapid-",
+     "meaning": "石头",
+     "words": [
+      {
+       "w": "lapidary",
+       "g": "宝石的，宝石匠"
+      },
+      {
+       "w": "dilapidated",
+       "g": "破旧的（原义石块散落）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "maize",
+   "ipa": "/meɪz/",
+   "zh": "名词；玉米（＝corn，尤英式）",
+   "core": "美洲原产的谷类作物",
+   "senses": [
+    {
+     "gloss": "玉米",
+     "logic": "本义",
+     "en": "Maize was first domesticated in the Americas thousands of years ago.",
+     "zh": "玉米几千年前最早在美洲被驯化。"
+    }
+   ],
+   "ety": "西班牙语 maíz，源自加勒比泰诺语 mahiz（玉米）",
+   "ph": "拼写 ai 读 /eɪ/；单音节，注意不要读成 /maɪz/。",
+   "tip": "源自加勒比原住民语 mahiz。",
+   "xex": [
+    {
+     "en": "Maize is a staple crop across much of the Americas.",
+     "zh": "玉米是美洲许多地区的主粮作物。",
+     "src": "造句"
+    },
+    {
+     "en": "The three sisters—maize, beans, and squash—grow well together.",
+     "zh": "「三姐妹」——玉米、豆子和南瓜——很适合一起种。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "corn",
+     "ipa": "/kɔːrn/",
+     "note": "美式常指玉米；英式 corn 泛指谷物"
+    }
+   ],
+   "nu": "maize 是学名/英式用法，corn 是美式俗称；农业、考古讲座里常与 domestication 同现。",
+   "rootfam": []
+  },
+  {
+   "w": "milpa",
+   "ipa": "/ˈmɪlpə/",
+   "zh": "名词；米尔帕（中美洲传统的混作农田，玉米-豆-南瓜）",
+   "core": "中美洲传统的多作物混作农田系统",
+   "senses": [
+    {
+     "gloss": "米尔帕农田",
+     "logic": "纳瓦特尔语借词，指玉米为主的混作田地",
+     "en": "The milpa system combines maize, beans, and squash in a single field.",
+     "zh": "米尔帕系统在同一块地里把玉米、豆子和南瓜种在一起。"
+    }
+   ],
+   "ety": "纳瓦特尔语 milpa（玉米田），源自 milli（田地）",
+   "ph": "重音在第一音节；西班牙语借词，p 读清音 /p/。",
+   "tip": "milpa＝玉米＋豆＋南瓜「三姐妹」混作。",
+   "xex": [
+    {
+     "en": "Mayan farmers have cultivated milpas for centuries.",
+     "zh": "玛雅农民种植米尔帕农田已有几个世纪。",
+     "src": "造句"
+    },
+    {
+     "en": "A milpa produces several crops at once and sustains the soil.",
+     "zh": "一块米尔帕能同时产出多种作物，还能维持地力。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "讲座谈中美洲农业、玛雅/阿兹特克文明时高频。",
+   "rootfam": []
+  },
+  {
+   "w": "ornamental",
+   "ipa": "/ˌɔːrnəˈmentl/",
+   "zh": "形容词；装饰性的；名词 观赏植物",
+   "core": "用来装饰的",
+   "senses": [
+    {
+     "gloss": "装饰性的",
+     "logic": "由 ornament（装饰品）派生",
+     "en": "The garden is filled with ornamental shrubs.",
+     "zh": "花园里种满了观赏灌木。"
+    },
+    {
+     "gloss": "观赏植物",
+     "logic": "形容词作名词用",
+     "en": "Many ornamentals require little water.",
+     "zh": "许多观赏植物几乎不需要浇水。"
+    }
+   ],
+   "ety": "拉丁语 ornare（装饰）→ ornamentum（装饰物）→ ornamental（装饰的）",
+   "ph": "重音在第三音节 ment；or- 弱读为 /ɔːr/。",
+   "tip": "orn-＝「装饰」，adorn（装饰）同源。",
+   "xex": [
+    {
+     "en": "Ornamental plants are grown for beauty rather than for food.",
+     "zh": "观赏植物是为了美观而非食用而种植的。",
+     "src": "造句"
+    },
+    {
+     "en": "The building's ornamental carvings date from the eighteenth century.",
+     "zh": "这栋建筑的装饰性雕刻可追溯到十八世纪。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "decorative",
+     "ipa": "/ˈdekərətɪv/",
+     "note": "装饰的，更通用"
+    }
+   ],
+   "nu": "与粮食作物相对；搭配 ornamental plants（观赏植物）。",
+   "rootfam": [
+    {
+     "root": "orn-",
+     "meaning": "装饰",
+     "words": [
+      {
+       "w": "ornament",
+       "g": "装饰品"
+      },
+      {
+       "w": "adorn",
+       "g": "装饰"
+      },
+      {
+       "w": "ornate",
+       "g": "华丽的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "paleontology",
+   "ipa": "/ˌpeɪliɑːnˈtɑːlədʒi/",
+   "zh": "名词；古生物学",
+   "core": "研究化石和史前生命的科学",
+   "senses": [
+    {
+     "gloss": "古生物学",
+     "logic": "本义",
+     "en": "Paleontology combines geology and biology to reconstruct ancient life.",
+     "zh": "古生物学结合地质学与生物学来重建远古生命。"
+    }
+   ],
+   "ety": "希腊语 palaios（古老的）+ on（存在物）+ -logia（学问）→ 研究远古生物的学问",
+   "ph": "重音在 tol；paleo- 读 /ˌpeɪliɑː/；英式拼写 palaeontology。",
+   "tip": "paleo＝古老 + onto＝存在 + logy＝学问。",
+   "xex": [
+    {
+     "en": "Paleontology relies heavily on the study of fossils.",
+     "zh": "古生物学在很大程度上依赖于对化石的研究。",
+     "src": "造句"
+    },
+    {
+     "en": "Advances in paleontology have changed our picture of dinosaur behavior.",
+     "zh": "古生物学的进展改变了我们对恐龙行为的认识。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "听力中与 fossil、dinosaur、extinction 高频同现；paleontologist 古生物学家。",
+   "rootfam": [
+    {
+     "root": "paleo-",
+     "meaning": "古老的",
+     "words": [
+      {
+       "w": "Paleolithic",
+       "g": "旧石器时代"
+      },
+      {
+       "w": "paleography",
+       "g": "古文字学"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "palette",
+   "ipa": "/ˈpælɪt/",
+   "zh": "n. 调色板；（画家或设计师常用的）一组颜色；（电脑绘图软件的）色板",
+   "core": "一块供画师摆放、调配颜料的平板，引申为一个人惯用的一套色彩。",
+   "senses": [
+    {
+     "gloss": "调色板（画家持在手上的平板）",
+     "logic": "由『平板』本义缩小到艺术工具",
+     "en": "The artist squeezed several colors onto her palette before painting.",
+     "zh": "画家把几种颜料挤到调色板上后才开始作画。"
+    },
+    {
+     "gloss": "（某画家/作品所用的）一组色彩",
+     "logic": "从具体工具抽象为『用色范围』",
+     "en": "The painter's palette is dominated by warm earth tones.",
+     "zh": "这位画家的用色以温暖的土色调为主。"
+    },
+    {
+     "gloss": "（电脑软件的）色板/工具面板",
+     "logic": "数字化沿用物理调色板",
+     "en": "You can select a custom color from the palette menu.",
+     "zh": "你可以从色板菜单中选择自定义颜色。"
+    }
+   ],
+   "ety": "源自法语 palette，本义『小铲子/小平板』（pale 的指小词），再上溯拉丁语 pala『铲、锹』。因画师用平铲状木板盛颜料，遂转指『调色板』。",
+   "ph": "重音在第一音节 /ˈpæ/，末尾 -ette 弱读为 /ɪt/，不读 /eɪt/。注意与 palate（上颚）/ˈpælɪt/、pallet（托盘）/ˈpælɪt/ 完全同音，听力中要靠上下文区分。",
+   "tip": "『palette = pal(铲)+ette(小)』——小铲子状的木板，画家端着它调色。",
+   "xex": [
+    {
+     "en": "A broad palette gives a designer more freedom to convey mood.",
+     "zh": "宽广的用色范围让设计师有更多自由去传达情绪。",
+     "src": "造句"
+    },
+    {
+     "en": "In the lecture, the professor explained how the Impressionists brightened their palette.",
+     "zh": "讲座中教授解释了印象派画家如何让他们的用色变得明亮。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "spectrum",
+     "ipa": "/ˈspektrəm/",
+     "note": "强调连续光谱/范围，偏物理；palette 强调人选择的配色"
+    }
+   ],
+   "nu": "学术讲座里常与 color、pigment 连用，如 color palette（配色方案）。注意同音词 palate/pallet，勿混淆。",
+   "rootfam": [
+    {
+     "root": "pal(a)",
+     "meaning": "铲、平板",
+     "words": [
+      {
+       "w": "pallet",
+       "g": "托盘；草垫"
+      },
+      {
+       "w": "pale",
+       "g": "尖桩；栅栏"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "pigment",
+   "ipa": "/ˈpɪɡmənt/",
+   "zh": "n. 颜料；色素（生物体内的天然着色物质）",
+   "core": "赋予物体颜色的物质，既指画家的颜料，也指皮肤、植物里的天然色素。",
+   "senses": [
+    {
+     "gloss": "颜料（作画用的着色粉）",
+     "logic": "本义『涂上去的颜色』",
+     "en": "Ultramarine was once made from a costly blue pigment.",
+     "zh": "群青曾由一种昂贵的蓝色颜料制成。"
+    },
+    {
+     "gloss": "色素（生物体天然着色物）",
+     "logic": "从人工颜料类推到生物体内着色",
+     "en": "Chlorophyll is the green pigment in plants that absorbs light.",
+     "zh": "叶绿素是植物体内吸收光线的绿色色素。"
+    }
+   ],
+   "ety": "源自拉丁语 pigmentum『着色之物』，由 pingere『绘画』派生（ping- 意为『涂抹、画』）。同源词 picture（图画）、paint（油漆）。",
+   "ph": "重音在第一音节 /ˈpɪɡ/，第二音节 /mənt/ 弱读为 /mənt/，词尾 -ment 永远不重读。字母 g 读 /ɡ/（硬音）。",
+   "tip": "『pig(猪)+ment』虽然 pig 沾不上边，但 pig 有『涂满』的画面感——把颜料涂得满身都是。",
+   "xex": [
+    {
+     "en": "Natural pigments were gradually replaced by synthetic dyes.",
+     "zh": "天然颜料逐渐被合成染料取代。",
+     "src": "造句"
+    },
+    {
+     "en": "The lecture mentioned that some pigments fade when exposed to sunlight.",
+     "zh": "讲座提到某些颜料暴露在阳光下会褪色。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "dye",
+     "ipa": "/daɪ/",
+     "note": "多指可溶于水的染料，用于染织物；pigment 多为不溶的颗粒状着色物"
+    }
+   ],
+   "nu": "听力中常对比 natural pigment（天然）与 synthetic pigment（合成）。注意 pigment 与 pigment 相关词 pigmentation（色素沉着）。",
+   "rootfam": [
+    {
+     "root": "ping/pict",
+     "meaning": "绘画、涂抹",
+     "words": [
+      {
+       "w": "picture",
+       "g": "图画"
+      },
+      {
+       "w": "paint",
+       "g": "油漆；绘画"
+      },
+      {
+       "w": "depict",
+       "g": "描绘"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "plaster",
+   "ipa": "/ˈplæstər/",
+   "zh": "n. 灰泥；石膏；膏药 v. 涂灰泥；厚厚地涂抹；粘贴",
+   "core": "糊在墙上或敷在伤口上的软糊状物，引申为『涂满、贴满』。",
+   "senses": [
+    {
+     "gloss": "灰泥（抹墙用的灰浆）",
+     "logic": "本义『涂抹之物』",
+     "en": "Frescoes are painted onto fresh plaster before it dries.",
+     "zh": "湿壁画是在灰泥未干时画上去的。"
+    },
+    {
+     "gloss": "膏药；创可贴（英式）",
+     "logic": "由『敷料』引申到医用敷贴",
+     "en": "He put a plaster over the cut on his finger.",
+     "zh": "他在手指的伤口上贴了块创可贴。"
+    },
+    {
+     "gloss": "v. 涂抹；张贴（覆盖满）",
+     "logic": "名词转动词『糊满』",
+     "en": "The walls were plastered with posters.",
+     "zh": "墙上贴满了海报。"
+    }
+   ],
+   "ety": "经古英语、拉丁语 plastrum 追溯至希腊语 emplastron，由 emplassein『抹上、敷上』（en-『上』+ plassein『塑、抹』）派生，本义就是『糊上去的东西』。同源 plastic（可塑的）。",
+   "ph": "美式 /ˈplæstər/，英式 /ˈplɑːstə(r)/。字母组合 -ast- 在美式读 /æst/，英式读 /ɑːst/。重音始终在第一音节。",
+   "tip": "『plastic（塑料）』是能随意塑形的东西，『plaster』是能随意抹平的东西——都来自 plas-『塑造、涂抹』。",
+   "xex": [
+    {
+     "en": "The artist applied a final coat of plaster to the sculpture.",
+     "zh": "艺术家给雕塑敷上最后一层石膏。",
+     "src": "造句"
+    },
+    {
+     "en": "Plaster was widely used for wall surfaces in ancient Roman houses.",
+     "zh": "古罗马住宅的墙面广泛使用灰泥。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "stucco",
+     "ipa": "/ˈstʌkoʊ/",
+     "note": "专指外墙用灰泥/拉毛水泥，更偏建筑术语"
+    }
+   ],
+   "nu": "听力艺术类讲座中 plaster 常与 fresco（湿壁画）一起出现。英式英语里 plaster 还指创可贴（= 美式 Band-Aid）。",
+   "rootfam": [
+    {
+     "root": "plas",
+     "meaning": "塑造、抹",
+     "words": [
+      {
+       "w": "plastic",
+       "g": "塑料；可塑的"
+      },
+      {
+       "w": "plasma",
+       "g": "血浆；等离子体"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "prestige",
+   "ipa": "/preˈstiːʒ/",
+   "zh": "n. 声望，威望；（因成就或地位获得的）显赫名望",
+   "core": "让人肃然起敬、抬高了身份的那份光彩与名声。",
+   "senses": [
+    {
+     "gloss": "声望、威望",
+     "logic": "由『迷惑人的光鲜』转为褒义的『名望』",
+     "en": "Publishing in a top journal adds prestige to a researcher's career.",
+     "zh": "在顶级期刊发表论文会提升研究者的声望。"
+    }
+   ],
+   "ety": "源自法语 prestige『魅力、幻象』，上溯拉丁语 praestigiae『戏法、障眼法』，本义是『用把戏迷惑人』。后由『令人目眩的魔力』演变为正面含义『显赫声望』。",
+   "ph": "重音在第二音节 /-ˈstiːʒ/，末尾 -ige 读 /ʒ/（法语借词的典型软音，如 garage、mirage）。注意 g 不读 /dʒ/，而是 /ʒ/。",
+   "tip": "法语借词里 -ge 常发 /ʒ/：prestige、garage、mirage——『声望是别人眼中你身上的光晕』。",
+   "xex": [
+    {
+     "en": "The university gained prestige after winning the Nobel Prize.",
+     "zh": "这所大学在获得诺贝尔奖后声望大增。",
+     "src": "造句"
+    },
+    {
+     "en": "Some professions carry more social prestige than others.",
+     "zh": "有些职业比其他职业带有更高的社会声望。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "reputation",
+     "ipa": "/ˌrepjəˈteɪʃn/",
+     "note": "泛指名声（可好可坏）；prestige 专指正面的、令人尊敬的威望"
+    },
+    {
+     "w": "stature",
+     "ipa": "/ˈstætʃər/",
+     "note": "偏指因能力/成就获得的分量与地位"
+    }
+   ],
+   "nu": "形容词形式 prestigious（有声望的）。听力里常搭配 gain/lose prestige、a matter of prestige。",
+   "rootfam": []
+  },
+  {
+   "w": "prussian",
+   "ipa": "/ˈprʌʃən/",
+   "zh": "adj. 普鲁士的 n. 普鲁士人；普鲁士蓝（一种深蓝色颜料，Prussian blue）",
+   "core": "与德国历史上普鲁士地区相关的；在艺术语境里几乎专指『普鲁士蓝』这种深蓝颜料。",
+   "senses": [
+    {
+     "gloss": "普鲁士的（历史地区/王国）",
+     "logic": "地名 Prussia 的形容词",
+     "en": "Prussian military discipline was famous across Europe.",
+     "zh": "普鲁士的军事纪律名扬欧洲。"
+    },
+    {
+     "gloss": "普鲁士蓝（合成深蓝颜料）",
+     "logic": "以发明地/流行地命名颜料",
+     "en": "Prussian blue was the first modern synthetic pigment.",
+     "zh": "普鲁士蓝是第一种现代合成颜料。"
+    }
+   ],
+   "ety": "源自 Prussia（普鲁士，拉丁化地名），指波罗的海沿岸的历史地区，后成德国统一的核心王国。颜料 Prussian blue 因 18 世纪初在柏林被合成而得名。",
+   "ph": "重音在第一音节 /ˈprʌʃ/，-ss- 读 /ʃ/（如 Russia /ˈrʌʃə/ 中的 ss），-ian 读 /ən/ 弱读。注意开头的 Pr- 辅音连缀 /pr/ 要连读。",
+   "tip": "『Prussia 普鲁士』的首都柏林 Berlin，而普鲁士蓝（Berlin blue 的别名）恰在柏林诞生——记地名就记住颜料。",
+   "xex": [
+    {
+     "en": "Prussian blue allowed artists to buy a cheap, stable dark blue.",
+     "zh": "普鲁士蓝让画家能买到便宜又稳定的深蓝色。",
+     "src": "造句"
+    },
+    {
+     "en": "The lecture traced how Prussian blue spread from Berlin to the rest of Europe.",
+     "zh": "讲座追溯了普鲁士蓝如何从柏林传播到欧洲其他地区。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "听力艺术/化学类讲座中，Prussian 几乎总是出现在 Prussian blue 词组里，指代一类重要的合成颜料。",
+   "rootfam": [
+    {
+     "root": "Prussia",
+     "meaning": "普鲁士（地名）",
+     "words": [
+      {
+       "w": "Prussia",
+       "g": "普鲁士"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "refuted",
+   "ipa": "/rɪˈfjuːtɪd/",
+   "zh": "v. 驳斥，反驳（refute 的过去式/过去分词）；证明…是错误的",
+   "core": "用证据或论证把对方的说法彻底推翻。",
+   "senses": [
+    {
+     "gloss": "驳斥、证明…错误",
+     "logic": "本义『挡回去』→『把论点挡回去』",
+     "en": "The new evidence refuted the earlier theory.",
+     "zh": "新证据驳倒了先前的理论。"
+    },
+    {
+     "gloss": "反驳（某人的言论）",
+     "logic": "对象由观点扩展为人",
+     "en": "The scientist refuted his critics with a series of experiments.",
+     "zh": "这位科学家用一系列实验反驳了批评者。"
+    }
+   ],
+   "ety": "源自拉丁语 refutare『制止、驳回』，由 re-『回』+ futare『打、击』（与 confute『驳倒』同源）构成，本义是『把来势挡回去』。",
+   "ph": "重音在第二音节 /-ˈfjuːt/，元音 /juː/ 是长音，勿读成 /ʌ/。词尾 -ed 在清辅音 /t/ 后读 /ɪd/，即 /rɪˈfjuːtɪd/，是三个音节。",
+   "tip": "『re(回)+fut(打)』= 把对方的说法打回去，所以是『驳斥』。注意与 refuse（拒绝）形近但义不同。",
+   "xex": [
+    {
+     "en": "A single counterexample can refute a universal claim.",
+     "zh": "一个反例就能驳倒一个全称命题。",
+     "src": "造句"
+    },
+    {
+     "en": "The professor explained how later observations refuted the old model.",
+     "zh": "教授解释了后来的观测如何驳倒了旧模型。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "rebut",
+     "ipa": "/rɪˈbʌt/",
+     "note": "强调口头/书面针锋相对地反驳；refute 强调用证据证明为假"
+    },
+    {
+     "w": "disprove",
+     "ipa": "/ˌdɪsˈpruːv/",
+     "note": "更直接强调『证明不成立』，不带辩论色彩"
+    }
+   ],
+   "nu": "严格用法中 refute = 证明为假（不只是『提出反对』），所以常与 evidence、observation、data 搭配。听力学术讲座中常出现 'a hypothesis was refuted'。",
+   "rootfam": [
+    {
+     "root": "fut",
+     "meaning": "打、击",
+     "words": [
+      {
+       "w": "confute",
+       "g": "驳倒"
+      },
+      {
+       "w": "refutation",
+       "g": "驳斥（名词）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "relativism",
+   "ipa": "/ˈrelətɪvɪzəm/",
+   "zh": "n. 相对主义（认为真理、道德、价值是相对于特定文化/语境而非绝对的学说）",
+   "core": "一种主张『没有绝对标准、一切看相对关系』的思想立场。",
+   "senses": [
+    {
+     "gloss": "相对主义（哲学/文化立场）",
+     "logic": "由『相对的』relativ(e)+主义 -ism 构成",
+     "en": "Cultural relativism argues that each society should be judged by its own standards.",
+     "zh": "文化相对主义主张每个社会都应按其自身标准来评判。"
+    }
+   ],
+   "ety": "由 relative（相对的）+ 希腊词缀 -ism（主义、学说）构成。relative 源自拉丁语 relativus，由 referre『带回到、关联』派生，本义『相互关联、非绝对』。",
+   "ph": "重音在第一音节 /ˈrel/，-a- 弱读 /ə/，-ism 读 /ɪzəm/。四个音节：rel-a-tiv-ism。注意字母 a 在 /ətɪ/ 里不是 /æ/。",
+   "tip": "『relative(相对的)+ism(主义)』= 认为一切都是相对的，没有绝对——拆开即是字面意思。",
+   "xex": [
+    {
+     "en": "The lecture contrasted moral absolutism with relativism.",
+     "zh": "讲座将道德绝对主义与相对主义作了对比。",
+     "src": "造句"
+    },
+    {
+     "en": "Relativism questions whether any belief can be universally true.",
+     "zh": "相对主义质疑是否有任何信念能普遍为真。",
+     "src": "造句"
+    }
+   ],
+   "syn": [],
+   "nu": "学术讲座（哲学、人类学、文化研究）高频词，常带限定词：cultural/moral/ethical relativism。反义词 absolutism（绝对主义）。",
+   "rootfam": [
+    {
+     "root": "relativ",
+     "meaning": "相对的、关联的",
+     "words": [
+      {
+       "w": "relative",
+       "g": "相对的；亲属"
+      },
+      {
+       "w": "relativity",
+       "g": "相对性；相对论"
+      },
+      {
+       "w": "relativist",
+       "g": "相对主义者"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "squash",
+   "ipa": "/skwɑːʃ/",
+   "zh": "n. 南瓜属蔬菜（西葫芦等）；壁球；拥挤的场所 v. 压扁，挤压；镇压",
+   "core": "用力把东西压扁、挤成一团；也指一种被压/挤扁的球类运动和一整类南瓜蔬菜。",
+   "senses": [
+    {
+     "gloss": "v. 压扁、挤压",
+     "logic": "拟声/拟态词，模拟压碎的声音",
+     "en": "Don't squash the tomatoes at the bottom of the bag.",
+     "zh": "别把袋底的番茄压烂了。"
+    },
+    {
+     "gloss": "n. 南瓜属蔬菜（尤指西葫芦）",
+     "logic": "借自原住民语，指可生吃的蔬菜",
+     "en": "Squash was a staple crop for many Native American peoples.",
+     "zh": "南瓜属蔬菜是许多美洲原住民的主食作物。"
+    },
+    {
+     "gloss": "n. 壁球（运动）",
+     "logic": "因球被反复拍击压向墙得名",
+     "en": "She plays squash twice a week at the club.",
+     "zh": "她每周在俱乐部打两次壁球。"
+    }
+   ],
+   "ety": "动词义源自中世纪法语 esquasser，上溯拉丁语 ex-『出』+ quassare『猛摇、击碎』（与 quake、quash 同源），本义『彻底击碎压扁』。蔬菜义借自纳拉甘塞特印第安语 askutasquash『生吃的绿色食物』。",
+   "ph": "美式 /skwɑːʃ/，英式 /skwɒʃ/。字母组合 -qu- 读 /kw/，-sh 读 /ʃ/。注意 squash 与 quash（镇压、废除）同源，发音相近但 quash 读 /kwɒʃ/。",
+   "tip": "『quash=镇压』是它的近亲，squash 就是『把东西压扁』——从 quass-『击碎』来。蔬菜义另起炉灶，来自印第安语。",
+   "xex": [
+    {
+     "en": "He squashed the bug with his shoe.",
+     "zh": "他用鞋把虫子踩扁了。",
+     "src": "造句"
+    },
+    {
+     "en": "Winter squash can be stored for months after harvest.",
+     "zh": "冬南瓜收获后可储存数月。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "crush",
+     "ipa": "/krʌʃ/",
+     "note": "强调压碎成碎片；squash 强调压扁变形"
+    },
+    {
+     "w": "flatten",
+     "ipa": "/ˈflætn/",
+     "note": "单纯使变平，不含『压碎/破坏』义"
+    }
+   ],
+   "nu": "听力农业/饮食类讲座中 squash 多指南瓜属蔬菜；运动类语境则指壁球。一词多义要靠语境区分。",
+   "rootfam": [
+    {
+     "root": "quass/cuss",
+     "meaning": "击、震",
+     "words": [
+      {
+       "w": "quash",
+       "g": "镇压；撤销"
+      },
+      {
+       "w": "percussion",
+       "g": "打击乐"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "synthetic",
+   "ipa": "/sɪnˈθetɪk/",
+   "zh": "adj. 合成的，人造的；（语言上）综合性的 n. 合成物",
+   "core": "由不同部分『拼合』而成的、非天然的；在化学语境即『人造的』。",
+   "senses": [
+    {
+     "gloss": "合成的、人造的（化学制品）",
+     "logic": "由『放在一起』引申为人工合成",
+     "en": "Synthetic pigments are cheaper and more stable than many natural ones.",
+     "zh": "合成颜料比许多天然颜料更便宜也更稳定。"
+    },
+    {
+     "gloss": "合成的（非自然生长的材料）",
+     "logic": "扩大到一切人造物",
+     "en": "The jacket is made of a synthetic fabric that dries quickly.",
+     "zh": "这件夹克由一种速干的合成面料制成。"
+    }
+   ],
+   "ety": "源自希腊语 sunthetikos，由 suntithenai『放在一起』（syn-『共同』+ tithenai『放置』）派生，本义即『拼合而成』。同源 synthesis（综合）、thesis（命题，『摆出来』）。",
+   "ph": "重音在第二音节 /-ˈθet-/，th 读清辅音 /θ/（牙齿咬舌）。第一音节 syn- 弱读 /sɪn/。注意与 sympathetic /ˌsɪmpəˈθetɪk/（有同情心的）区分重音与中间音节。",
+   "tip": "『syn(一起)+thet(放)』= 把各部分放在一起拼出来，所以是『合成的』——synthesis 是它的名词。",
+   "xex": [
+    {
+     "en": "The lecture discussed how synthetic dyes transformed the textile industry.",
+     "zh": "讲座讨论了合成染料如何改变了纺织业。",
+     "src": "造句"
+    },
+    {
+     "en": "Many vitamins today are produced synthetically in laboratories.",
+     "zh": "如今许多维生素是在实验室里人工合成的。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "artificial",
+     "ipa": "/ˌɑːrtɪˈfɪʃl/",
+     "note": "强调人造以模仿自然；synthetic 更偏『通过化学反应合成』"
+    }
+   ],
+   "nu": "反义词 natural（天然的）。听力里常对比 natural vs. synthetic。名词 synthetic 也可指合成纤维/合成物。",
+   "rootfam": [
+    {
+     "root": "thes/thet",
+     "meaning": "放置",
+     "words": [
+      {
+       "w": "synthesis",
+       "g": "综合；合成"
+      },
+      {
+       "w": "thesis",
+       "g": "论点；论文"
+      },
+      {
+       "w": "hypothesis",
+       "g": "假设"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "ultramarine",
+   "ipa": "/ˌʌltrəməˈriːn/",
+   "zh": "n. 群青（一种鲜艳的深蓝色颜料） adj. 群青色的；深蓝色的",
+   "core": "『海的那一边』运来的珍贵蓝色颜料，得名于它的产地遥远。",
+   "senses": [
+    {
+     "gloss": "群青（深蓝颜料）",
+     "logic": "由『越过海』指其产地遥远",
+     "en": "In the Middle Ages, ultramarine was more precious than gold.",
+     "zh": "在中世纪，群青比黄金还珍贵。"
+    },
+    {
+     "gloss": "群青色、深蓝色",
+     "logic": "颜料名转指颜色本身",
+     "en": "The sky deepened into a brilliant ultramarine at dusk.",
+     "zh": "黄昏时天空变成了明亮的深蓝色。"
+    }
+   ],
+   "ety": "源自中世纪拉丁语 ultramarinus，由 ultra『越过、在…之外』+ marinus『海的』（mare『海』）构成，字面义『海那一边的』。因该颜料来自阿富汗青金石，须跨过地中海运到欧洲而得名。",
+   "ph": "重音在第三音节 /-ˈriːn/，四个音节 ul-tra-ma-rine。注意 -marine 部分读 /məˈriːn/，重音落在 rine 上，不是 /ˈmærɪn/（那是 marine 单独用时读法）。",
+   "tip": "『ultra(越过)+marine(海的)』= 海那一边来的——中世纪欧洲人为了这块深蓝，要跨海从阿富汗进口青金石。",
+   "xex": [
+    {
+     "en": "The painter ground lapis lazuli to make ultramarine.",
+     "zh": "画家研磨青金石来制作群青。",
+     "src": "造句"
+    },
+    {
+     "en": "Ultramarine was reserved for the robes of the Virgin Mary in many altarpieces.",
+     "zh": "在许多祭坛画中，群青被专门用来画圣母玛利亚的长袍。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "azure",
+     "ipa": "/ˈæʒər/",
+     "note": "偏指明亮的蔚蓝/天蓝；ultramarine 是更深、偏紫的蓝"
+    }
+   ],
+   "nu": "艺术史讲座高频词，常与 lapis lazuli（青金石）、pigment、Prussian blue 一起出现。词首 ultra- 本身就有『极端、超越』义。",
+   "rootfam": [
+    {
+     "root": "marin",
+     "meaning": "海",
+     "words": [
+      {
+       "w": "marine",
+       "g": "海的；海洋的"
+      },
+      {
+       "w": "maritime",
+       "g": "海事的；沿海的"
+      },
+      {
+       "w": "submarine",
+       "g": "潜水艇"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "vendors",
+   "ipa": "/ˈvendərz/",
+   "zh": "n. 小贩，摊贩；供应商，销售商（vendor 的复数）",
+   "core": "卖东西的人或公司——从街头小贩到企业供应商都可指。",
+   "senses": [
+    {
+     "gloss": "小贩、摊贩",
+     "logic": "本义『卖者』",
+     "en": "Street vendors sell roasted chestnuts in the winter.",
+     "zh": "冬天街上的小贩卖烤栗子。"
+    },
+    {
+     "gloss": "供应商、销售商（商业语境）",
+     "logic": "从个人扩展到企业卖主",
+     "en": "The company compared prices from several software vendors.",
+     "zh": "这家公司比较了几家软件供应商的价格。"
+    }
+   ],
+   "ety": "源自拉丁语 vendere『卖』，由 venum『出售』+ dare『给』构成（字面『拿去卖』）。同源 vend（出售）、vending machine（自动售货机）。",
+   "ph": "重音在第一音节 /ˈven/，词尾 -or 读弱化的 /ər/。复数 -s 读浊音 /z/，即 /ˈvendərz/。注意 e 读 /e/（如 pen），不是 /iː/。",
+   "tip": "『vend(卖)』就是它——vendor 是『卖的人』，vending machine 是『自动卖东西的机器』。",
+   "xex": [
+    {
+     "en": "Vendors at the market offered fresh fruit and vegetables.",
+     "zh": "市场上的小贩出售新鲜水果和蔬菜。",
+     "src": "造句"
+    },
+    {
+     "en": "The university issued a contract to an external vendor for the new system.",
+     "zh": "大学把新系统的合同外包给了一家外部供应商。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "supplier",
+     "ipa": "/səˈplaɪər/",
+     "note": "偏指长期供货的企业；vendor 更泛指卖主，含街头小贩"
+    },
+    {
+     "w": "seller",
+     "ipa": "/ˈselər/",
+     "note": "最泛指的卖方，无规模色彩"
+    }
+   ],
+   "nu": "商业/经济类讲座高频词。注意区分 vendor（卖主）与 buyer/purchaser（买主）。vending machine 也是常考词组。",
+   "rootfam": [
+    {
+     "root": "vend",
+     "meaning": "卖",
+     "words": [
+      {
+       "w": "vend",
+       "g": "出售"
+      },
+      {
+       "w": "vending",
+       "g": "售卖的（如 vending machine）"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "vigorous",
+   "ipa": "/ˈvɪɡərəs/",
+   "zh": "adj. 有力的，精力充沛的；强劲的；（植物）生长旺盛的",
+   "core": "充满生命力与力量，做事或生长都带劲。",
+   "senses": [
+    {
+     "gloss": "精力充沛的、有力的",
+     "logic": "本义『充满活力的』",
+     "en": "She takes vigorous exercise every morning.",
+     "zh": "她每天早上进行剧烈的锻炼。"
+    },
+    {
+     "gloss": "强劲的、强有力的（如辩论、反驳）",
+     "logic": "从体力引申到态度力度",
+     "en": "The proposal met with vigorous opposition.",
+     "zh": "这项提案遭到了强烈反对。"
+    },
+    {
+     "gloss": "（植物）生长旺盛的",
+     "logic": "引申到生命力的旺盛",
+     "en": "Vigorous plants need less protection from pests.",
+     "zh": "生长旺盛的植物不太需要防虫害。"
+    }
+   ],
+   "ety": "源自拉丁语 vigor『活力、力量』，由 vigere『有活力、旺盛』派生，再加形容词后缀 -ous『充满…的』。同源 vegetable（植物，因能生长）、vigil（守夜，保持清醒）。",
+   "ph": "重音在第一音节 /ˈvɪɡ/，第二音节 -or- 弱读 /ər/，-ous 读 /əs/。三个音节 vig-or-ous。注意 g 读 /ɡ/（硬音），不是 /dʒ/。",
+   "tip": "『vigor(活力)+ous(充满)』= 充满活力。词根 vig-『活着、有活力』也藏在 vegetable（会生长的植物）里。",
+   "xex": [
+    {
+     "en": "The campaign sparked vigorous debate across the campus.",
+     "zh": "这场运动在校园里引发了激烈的辩论。",
+     "src": "造句"
+    },
+    {
+     "en": "Vigorous young trees recovered quickly after the storm.",
+     "zh": "茁壮的幼树在暴风雨后恢复得很快。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "energetic",
+     "ipa": "/ˌenərˈdʒetɪk/",
+     "note": "强调能量充沛、行动积极；vigorous 更强调强度与力度"
+    },
+    {
+     "w": "robust",
+     "ipa": "/roʊˈbʌst/",
+     "note": "偏指强健、结实，可形容体系/身体"
+    }
+   ],
+   "nu": "副词 vigorously（猛烈地、大力地）在听力中常修饰 oppose、debate、defend。名词 vigor 也常考。",
+   "rootfam": [
+    {
+     "root": "vig",
+     "meaning": "活力、活着",
+     "words": [
+      {
+       "w": "vigor",
+       "g": "活力"
+      },
+      {
+       "w": "vegetable",
+       "g": "蔬菜（生长的植物）"
+      },
+      {
+       "w": "vigilant",
+       "g": "警觉的"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "voids",
+   "ipa": "/vɔɪdz/",
+   "zh": "n. 空隙，空洞，空白（void 的复数） v. 使无效，作废（第三人称单数）",
+   "core": "空无一物的空间或空洞；引申为『使…失去效力、变得无效』。",
+   "senses": [
+    {
+     "gloss": "n. 空隙、空洞（空间上的空）",
+     "logic": "本义『空的』",
+     "en": "The ancient walls had voids where bricks had fallen out.",
+     "zh": "古墙上有砖块脱落留下的空洞。"
+    },
+    {
+     "gloss": "n. 空白、空虚（情感/抽象）",
+     "logic": "从空间空引申到心理空",
+     "en": "Losing her left a void in his life.",
+     "zh": "失去她在他生命中留下了空虚。"
+    },
+    {
+     "gloss": "v. 使无效、作废",
+     "logic": "使…变空 → 使失去内容/效力",
+     "en": "Failing to sign the form voids the contract.",
+     "zh": "未在表格上签字会使合同无效。"
+    }
+   ],
+   "ety": "源自中古英语 voide，经古法语 vuide 上溯通俗拉丁语 *vocitus，与拉丁语 vacare『空着、空出』同源（同 vacuum 真空、vacant 空的）。本义即『空的』。",
+   "ph": "单音节 /vɔɪdz/，元音 /ɔɪ/（如 boy）。词尾 -ds 读 /dz/，浊音连缀。注意与 avoid（避免）前缀 a- 的区分：void 是核心词，avoid = a+void『躲开、使…落空』。",
+   "tip": "『void=空』是核心——avoid 就是『躲开（让它空掉）』，vacuum 是它的亲戚（都是 vac-『空』）。",
+   "xex": [
+    {
+     "en": "Air trapped in voids inside the rock can weaken the structure.",
+     "zh": "困在岩石内部空隙中的空气会削弱结构。",
+     "src": "造句"
+    },
+    {
+     "en": "The court voided the agreement because it was signed under pressure.",
+     "zh": "法院因该协议是在胁迫下签署而判其无效。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "cavity",
+     "ipa": "/ˈkævəti/",
+     "note": "强调物体内部的腔/洞（如蛀牙 cavity）；void 更泛、更抽象"
+    },
+    {
+     "w": "vacuum",
+     "ipa": "/ˈvækjuːm/",
+     "note": "专指真空或空位，物理语境；void 偏一般空洞"
+    }
+   ],
+   "nu": "动词义在法律、合同语境高频：void a contract/agreement（使合同无效）。形容词 void 也常见：null and void（完全无效）。",
+   "rootfam": [
+    {
+     "root": "vac/void",
+     "meaning": "空",
+     "words": [
+      {
+       "w": "void",
+       "g": "空的；无效的"
+      },
+      {
+       "w": "vacant",
+       "g": "空的；空缺的"
+      },
+      {
+       "w": "vacuum",
+       "g": "真空"
+      },
+      {
+       "w": "avoid",
+       "g": "避免"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "withdraw",
+   "ipa": "/wɪðˈdrɔː/",
+   "zh": "v. 撤回，撤退；提取（存款）；退出；收回（言论）",
+   "core": "往回拉、抽身而退——把东西、人、钱或言论从原处收回。",
+   "senses": [
+    {
+     "gloss": "提取（钱款）",
+     "logic": "本义『拉回来』→把钱取回来",
+     "en": "She withdrew cash from the ATM before the trip.",
+     "zh": "她在旅行前从自动取款机取了现金。"
+    },
+    {
+     "gloss": "撤退、撤离（军队/人员）",
+     "logic": "把人员拉回来",
+     "en": "The troops were ordered to withdraw from the region.",
+     "zh": "部队奉命撤出该地区。"
+    },
+    {
+     "gloss": "退出（课程、比赛、协议）",
+     "logic": "抽身离开某事",
+     "en": "He withdrew from the course after two weeks.",
+     "zh": "两周后他退出了这门课程。"
+    },
+    {
+     "gloss": "收回（言论、承诺）",
+     "logic": "把说出口的话收回",
+     "en": "The journalist refused to withdraw her statement.",
+     "zh": "这名记者拒绝收回她的说法。"
+    }
+   ],
+   "ety": "中古英语 withdrawen，由 with『向后、离开』+ drawen『拉、拖』构成，字面『往后拉』。with 在此取古义『反对、离开』（非现代『和…一起』），同 withdrawal（撤回）。",
+   "ph": "重音在第二音节 /-ˈdrɔː/，第一音节 with- 弱读 /wɪð/。th 读浊音 /ð/（因位于两元音间）。过去式 withdrew /wɪðˈdruː/，过去分词 withdrawn。注意 with 单独读 /wɪð/ 或 /wɪθ/，作前缀时读 /wɪð/。",
+   "tip": "『with(往回)+draw(拉)』= 往回拉，所以是撤回/提取/退出。记住 draw 是『拉』，withdraw 就是『拉回来』。",
+   "xex": [
+    {
+     "en": "The lecturer asked students to withdraw their earlier assumptions.",
+     "zh": "讲师要求学生们收回他们此前的假设。",
+     "src": "造句"
+    },
+    {
+     "en": "Investors withdrew their funds when the market collapsed.",
+     "zh": "市场崩盘时投资者撤回了资金。",
+     "src": "造句"
+    }
+   ],
+   "syn": [
+    {
+     "w": "retract",
+     "ipa": "/rɪˈtrækt/",
+     "note": "专指收回言论/声明，正式；withdraw 义更广"
+    },
+    {
+     "w": "pull out",
+     "ipa": "/pʊl aʊt/",
+     "note": "口语化，指退出/撤出（军队、项目）"
+    }
+   ],
+   "nu": "听力里常见短语 withdraw from（退出）、withdraw money/cash（取钱）。名词 withdrawal 也是高频词（撤回、戒断）。",
+   "rootfam": [
+    {
+     "root": "draw",
+     "meaning": "拉、拖",
+     "words": [
+      {
+       "w": "draw",
+       "g": "拉；画"
+      },
+      {
+       "w": "withdrawal",
+       "g": "撤回；取款；戒断"
+      },
+      {
+       "w": "drawback",
+       "g": "缺点"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "w": "advanced",
+   "ipa": "/ədˈvænst/",
+   "zh": "adj. 先进的；高级的"
+  },
+  {
+   "w": "ancient",
+   "ipa": "/ˈeɪnʃənt/",
+   "zh": "adj. 古代的；古老的"
+  },
+  {
+   "w": "artistic",
+   "ipa": "/ɑːrˈtɪstɪk/",
+   "zh": "adj. 艺术的；有艺术才能的"
+  },
+  {
+   "w": "balance",
+   "ipa": "/ˈbæləns/",
+   "zh": "n./v. 平衡；使平衡"
+  },
+  {
+   "w": "became",
+   "ipa": "/bɪˈkeɪm/",
+   "zh": "v. become 的过去式：变得；成为"
+  },
+  {
+   "w": "centuries",
+   "ipa": "/ˈsentʃəriz/",
+   "zh": "n. century 的复数：世纪"
+  },
+  {
+   "w": "consistent",
+   "ipa": "/kənˈsɪstənt/",
+   "zh": "adj. 一致的；始终如一的"
+  },
+  {
+   "w": "data",
+   "ipa": "/ˈdeɪtə/",
+   "zh": "n. 数据；资料"
+  },
+  {
+   "w": "deliberate",
+   "ipa": "/dɪˈlɪbərət/",
+   "zh": "adj. 故意的；深思熟虑的"
+  },
+  {
+   "w": "design",
+   "ipa": "/dɪˈzaɪn/",
+   "zh": "n./v. 设计；构思"
+  },
+  {
+   "w": "early",
+   "ipa": "/ˈɜːrli/",
+   "zh": "adj./adv. 早期的；提前地"
+  },
+  {
+   "w": "easier",
+   "ipa": "/ˈiːziər/",
+   "zh": "adj. easy 的比较级：更容易的"
+  },
+  {
+   "w": "eventually",
+   "ipa": "/ɪˈventʃuəli/",
+   "zh": "adv. 最终；终于"
+  },
+  {
+   "w": "first",
+   "ipa": "/fɜːrst/",
+   "zh": "adj./adv. 第一的；首先"
+  },
+  {
+   "w": "how",
+   "ipa": "/haʊ/",
+   "zh": "adv. 如何；怎样"
+  },
+  {
+   "w": "including",
+   "ipa": "/ɪnˈkluːdɪŋ/",
+   "zh": "prep. 包括；包含在内"
+  },
+  {
+   "w": "irrigation",
+   "ipa": "/ˌɪrɪˈɡeɪʃn/",
+   "zh": "n. 灌溉"
+  },
+  {
+   "w": "known",
+   "ipa": "/noʊn/",
+   "zh": "adj. know 的过去分词：已知的；知名的"
+  },
+  {
+   "w": "modern",
+   "ipa": "/ˈmɑːdərn/",
+   "zh": "adj. 现代的；近代的"
+  },
+  {
+   "w": "nitrogen",
+   "ipa": "/ˈnaɪtrədʒən/",
+   "zh": "n. 氮"
+  },
+  {
+   "w": "place",
+   "ipa": "/pleɪs/",
+   "zh": "n./v. 地方；放置"
+  },
+  {
+   "w": "prepared",
+   "ipa": "/prɪˈperd/",
+   "zh": "adj. prepare 的过去分词：准备好的；有准备的"
+  },
+  {
+   "w": "psychology",
+   "ipa": "/saɪˈkɑːlədʒi/",
+   "zh": "n. 心理学"
+  },
+  {
+   "w": "public",
+   "ipa": "/ˈpʌblɪk/",
+   "zh": "adj./n. 公共的；公众"
+  },
+  {
+   "w": "renaissance",
+   "ipa": "/ˈrenəsɑːns/",
+   "zh": "n. 文艺复兴；复兴"
+  },
+  {
+   "w": "replicate",
+   "ipa": "/ˈreplɪkeɪt/",
+   "zh": "v. 复制；重复"
+  },
+  {
+   "w": "revealing",
+   "ipa": "/rɪˈviːlɪŋ/",
+   "zh": "adj. reveal 的现在分词：揭示的；暴露真相的"
+  },
+  {
+   "w": "roman",
+   "ipa": "/ˈroʊmən/",
+   "zh": "adj./n. 罗马的；罗马人"
+  },
+  {
+   "w": "roots",
+   "ipa": "/ruːts/",
+   "zh": "n. root 的复数：根；根源"
+  },
+  {
+   "w": "spaces",
+   "ipa": "/ˈspeɪsɪz/",
+   "zh": "n. space 的复数：空间；间隔"
+  },
+  {
+   "w": "species",
+   "ipa": "/ˈspiːʃiːz/",
+   "zh": "n. 物种；种类"
+  },
+  {
+   "w": "system",
+   "ipa": "/ˈsɪstəm/",
+   "zh": "n. 系统；体系"
+  },
+  {
+   "w": "three",
+   "ipa": "/θriː/",
+   "zh": "num. 三"
+  },
+  {
+   "w": "time",
+   "ipa": "/taɪm/",
+   "zh": "n. 时间；次数"
+  },
+  {
+   "w": "traits",
+   "ipa": "/treɪts/",
+   "zh": "n. trait 的复数：特征；特性"
+  },
+  {
+   "w": "up",
+   "ipa": "/ʌp/",
+   "zh": "adv./prep. 向上；起来"
+  },
+  {
+   "w": "you're",
+   "ipa": "/jʊr/",
+   "zh": "contraction. you are 的缩写：你是"
+  }
+ ]
+}
