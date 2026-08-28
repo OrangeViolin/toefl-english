@@ -16,6 +16,16 @@ def clk(text):
     if not text: return ""
     return f'<div class="clkwrap"><div class="clk" data-say="{e(text)}">{e(text)}</div><div class="det"></div></div>'
 
+def clk_paras(text):
+    """阅读原文分段渲染：passage 里用空行/\\n 分隔段落，每段一个 clkwrap（点词展开照旧），顶部加『🔊读全文』。"""
+    if not text: return ""
+    paras = [p.strip() for p in re.split(r"\n+", text) if p.strip()]
+    if len(paras) <= 1:
+        return clk(text)
+    full = re.sub(r"\s*\n+\s*", " ", text).strip()
+    body = "".join(f'<div class="para">{clk(p)}</div>' for p in paras)
+    return f'<div class="pwrap"><button class="replay say" data-say="{e(full)}">🔊 读全文</button>{body}</div>'
+
 # ---- 长难句精拆：@X{} 彩色成分 + 每词可点展开（预渲染 .wd）----
 GLABEL = {"S": "主语", "V": "谓语", "O": "宾语", "C": "从句", "P": "介词/修饰", "M": "状语"}
 
@@ -163,7 +173,7 @@ def modelblock(m):
 def task_html(t, tid=""):
     parts = [f'<button class="mastery" data-tid="{e(tid)}">✓ 标这篇已吃透</button>']
     if t.get("prompt"): parts.append(f'<div class="prompt"><b>题目：</b>{e(t["prompt"])}</div>')
-    if t.get("passage"): parts.append('<div class="mh">📖 原文 · 点任意词展开满配卡 · 🔊 整段</div>' + clk(t["passage"]) + transblock(t.get("passage_zh")))
+    if t.get("passage"): parts.append('<div class="mh">📖 原文 · 点任意词展开满配卡 · 🔊 读全文</div>' + clk_paras(t["passage"]) + transblock(t.get("passage_zh")))
     if t.get("transcript"): parts.append(f'<div class="mh">🎧 听力原文 · 点词展开 · <button class="replay say" data-say="{e(t["transcript"])}">🎧 再听整段（二遍精听）</button></div>' + clk(t["transcript"]) + transblock(t.get("transcript_zh"), "听力原文翻译"))
     parts.append(longsentblock(t.get("longsent")))
     if t.get("your_answer"): parts.append(f'<div class="youranswer"><div class="mh">🎙 你的作答</div><div class="ya">{e(t["your_answer"])}</div></div>')
@@ -284,6 +294,10 @@ h2{font-size:17px;margin:26px 0 8px;padding-bottom:6px;border-bottom:2px solid v
 .mh{font-size:13px;color:var(--core);font-weight:700;margin:15px 0 6px}
 .prompt{background:#f1f6f4;border-left:3px solid var(--core);padding:9px 13px;border-radius:8px;font-size:14px;margin-top:12px}
 .clkwrap{margin-top:2px}
+.pwrap{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.pwrap .replay{align-self:flex-start}
+.para .clkwrap{margin:0}
+.para .clk{background:#fffdf8}
 .clk{font-size:15px;background:#fbfaf6;border:1px solid var(--line);border-radius:10px;padding:11px 30px 11px 13px;position:relative}
 .clk .wd{cursor:pointer;border-radius:3px}.clk .wd:hover{background:#ffe9cf}
 .clk .wd.voc{box-shadow:inset 0 -2px 0 var(--gold)}.clk .wd.on{background:#d9f0e6}
@@ -320,7 +334,7 @@ body.nosig .wd.sig{background:none!important;color:inherit!important;font-weight
 .tzh{margin-top:7px}
 .tzh>summary{cursor:pointer;color:var(--core);font-size:13px;font-weight:700;list-style:none;padding:5px 0}
 .tzh>summary::-webkit-details-marker{display:none}.tzh>summary::before{content:"▸ ";color:var(--accent)}.tzh[open]>summary::before{content:"▾ "}
-.tzhb{background:#f3faf7;border:1px solid #cfe3db;border-radius:9px;padding:11px 13px;font-size:14px;line-height:1.85;color:#3a4a44}
+.tzhb{background:#f3faf7;border:1px solid #cfe3db;border-radius:9px;padding:11px 13px;font-size:14px;line-height:1.85;color:#3a4a44;white-space:pre-wrap}
 .fam-root{margin:3px 0}.fam-r{font-weight:700;color:var(--core)}.fam-w{display:inline-block;margin:2px 6px 2px 0;cursor:pointer;background:#f3efe6;border-radius:6px;padding:1px 7px}.fam-w:hover{background:#ffe9cf}.fam-g{color:var(--sub);font-size:11.5px;margin-left:3px}
 .swd-dict{color:var(--core);font-size:12.5px;text-decoration:none;border-bottom:1px dashed var(--core)}
 .youranswer .ya{background:#fdf4f2;border:1px solid #ecc7c1;border-radius:10px;padding:11px 13px;font-size:14px;font-style:italic;color:#6b4a45}
