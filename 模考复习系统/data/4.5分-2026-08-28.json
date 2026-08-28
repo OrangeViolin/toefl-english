@@ -342,7 +342,7 @@
     },
     {
      "title": "Earbud Product · 耳机评测（2/2 ✅）",
-     "score": "2/2",
+     "score": "1/2",
      "type": "生活阅读·产品评论",
      "passage": "WaveSound Earbuds are the best headphones for studying! I researched a bunch of options, and these have the best price-to-quality ratio. Adequate sound, comfortable enough for long library sessions, easy-to-use Bluetooth connectivity, and an 8-hour battery! If you're ok giving up some premium features, these are great for students on a shoestring.",
      "questions": [
@@ -351,56 +351,57 @@
        "q": "According to the reviewer, what is one of the benefits of the WaveSound Earbuds compared to other products?（相比其他产品，一个优点是）",
        "options": {
         "A": "They are more reliable 更可靠",
-        "B": "They have the best price-to-quality ratio 性价比最高",
-        "C": "They look more stylish 更时尚",
+        "B": "They offer better value 性价比更高",
+        "C": "They are more luxurious 更奢华",
         "D": "They sound better 音质更好"
        },
        "correct": "B",
-       "your": "B",
+       "your": "C",
        "steps": [
         {
          "k": "定位",
-         "v": "原文 'these have the best price-to-quality ratio' 明确点出性价比最高"
+         "v": "原文 'these have the best price-to-quality ratio'（性价比最高）"
         },
         {
          "k": "推理",
-         "v": "问『相比其他产品的优点』，best price-to-quality ratio 就是 B 的直接改写"
+         "v": "问『相比其他产品的优点』，best price-to-quality ratio = better value → B"
         },
         {
          "k": "排除",
-         "v": "sound better(D)被原文 Adequate sound（音质够用）否定；reliable(A)/stylish(C)原文没提"
+         "v": "C(luxurious 奢华)原文没提 luxury；A(reliable)/D(sound better)也被原文否定"
         }
-       ]
+       ],
+       "trap": "细节题陷阱：你选了 C(luxurious 奢华)——但原文讲的是『price-to-quality ratio 性价比』，压根没提 luxury/奢华。正确是 B(better value 更划算)。选项里『看似合理的词』≠原文内容"
       },
       {
        "n": 2,
        "q": "What aspect of student life does being \"on a shoestring\" refer to?（『on a shoestring』指学生生活的哪方面）",
        "options": {
         "A": "Balancing work and academics 平衡工作学业",
-        "B": "Studying for long periods 长时间学习",
-        "C": "Having a limited budget 预算有限",
+        "B": "Having little spending money 可花的钱很少",
+        "C": "Studying for long periods 长时间学习",
         "D": "Preparing for a future career 准备就业"
        },
-       "correct": "C",
-       "your": "C",
+       "correct": "B",
+       "your": "B",
        "steps": [
         {
          "k": "定位",
-         "v": "原文 'these are great for students on a shoestring'——on a shoestring 是习语"
+         "v": "'great for students on a shoestring'——on a shoestring 是习语"
         },
         {
          "k": "推理",
-         "v": "on a shoestring = 用很少的钱/预算紧张。上下文在谈价格(price-to-quality)，所以指『预算有限』的学生"
+         "v": "on a shoestring = 用很少的钱。上下文在谈价格(price)，所以指『预算紧、可花的钱少』→ B"
         },
         {
          "k": "排除",
-         "v": "A/B/D 都和钱无关；习语考的就是字面外含义，C(limited budget) 正确"
+         "v": "A/C/D 都跟钱无关"
         }
        ]
       }
      ],
-     "weak": "这篇 2/2，习语 on a shoestring 也判断对了",
-     "fix": "把 on a shoestring 记进习语库：= with very little money",
+     "weak": "题1错——选了『奢华』，原文讲的是『性价比』，被无关词带偏",
+     "fix": "细节题抓『原文出现的具体点』(price-to-quality)，别被『听起来对』的选项(奢华/可靠)带跑。习语 on a shoestring=钱少",
      "passage_zh": "WaveSound 耳机是学习时最好的耳机！我研究了一大堆选项，而这些（耳机）拥有最好的性价比。音质够用、舒适度足以支撑长时间泡图书馆、蓝牙连接简单好用，还有8小时续航！如果你不介意放弃一些高端功能，这些（耳机）对预算紧张的学生来说非常棒。",
      "longsent": [
       {
@@ -549,8 +550,8 @@
      ]
     },
     {
-     "title": "Antimicrobial Resistance Challenges · 抗生素耐药性（题2-5）",
-     "score": "见总览",
+     "title": "Antimicrobial Resistance Challenges · 抗生素耐药性（1/5 ❌错4）",
+     "score": "1/5",
      "type": "学术阅读·AMR",
      "passage": "Antimicrobial resistance (AMR)—the ability of microorganisms to withstand drugs that once killed them—threatens to reverse decades of medical advancement, posing an urgent public health challenge globally. In particular, the widespread and often indiscriminate use of antibiotics in medicine and agriculture has accelerated the emergence of resistant bacteria. Recognizing the gravity of AMR, the World Health Organization classifies it among the top global health threats, underscoring the critical need for immediate action.\n\nBacteria develop resistance through a multitude of mechanisms, including genetic mutations and the sharing of genes, which allow them to survive antibiotic treatment and proliferate. Unfortunately, the pharmaceutical industry has been slow to produce new antibiotics, hampered by both scientific obstacles and economic disincentives. Antibiotics often yield lower financial returns compared to medications for chronic diseases. Therefore, they receive less investment.\n\nAddressing AMR requires comprehensive and coordinated international strategy. Implementing stringent regulations on antibiotic prescriptions can curb misuse but might not eliminate it completely. Financial incentives for pharmaceutical companies could stimulate the development of novel antibiotics. However, this approach remains contentious due to the varying perspectives on economic feasibility. Public health campaigns aimed at educating communities about judicious antibiotic use are vital, but experts continue to debate the most effective strategy.",
      "questions": [
@@ -565,7 +566,7 @@
         "D": "Therefore, they receive less investment."
        },
        "correct": "A",
-       "your": "A",
+       "your": "B",
        "steps": [
         {
          "k": "定位",
@@ -579,7 +580,8 @@
          "k": "排除",
          "v": "B/C/D 都是讲『药厂不开发新药』的经济问题，与耐药机制无关"
         }
-       ]
+       ],
+       "trap": "句子题陷阱：你选了 B(药厂开发慢)——但题问『AMR 如何发生/耐药机制』，答案 A(细菌通过基因突变+基因共享产生耐药)。B 讲的是经济问题，不是耐药机制"
       },
       {
        "n": 3,
@@ -592,7 +594,7 @@
         "D": "Bacterial mutation too rapid 细菌变异太快"
        },
        "correct": "B",
-       "your": "B",
+       "your": "A",
        "steps": [
         {
          "k": "定位",
@@ -606,7 +608,8 @@
          "k": "排除",
          "v": "A 保险/ C 复杂程度/ D 变异速度 原文都没提；陷阱是 A(不支持投资)看似相关但原文说的是『回报低』不是『保险不支持』"
         }
-       ]
+       ],
+       "trap": "细节题陷阱：你选了 A(保险公司)——原文说的是『lower financial returns 回报低』，对应 B(less profitable 利润更低)。A 的『insurance』原文根本没提"
       },
       {
        "n": 4,
@@ -619,7 +622,7 @@
         "D": "cost-effective 划算的"
        },
        "correct": "C",
-       "your": "C",
+       "your": "A",
        "steps": [
         {
          "k": "定位",
@@ -633,7 +636,8 @@
          "k": "排除",
          "v": "understandable(可理解)/well-researched(研究充分)/cost-effective(划算) 都偏离『全面』"
         }
-       ]
+       ],
+       "trap": "词汇题陷阱：comprehensive 你选了 A(understandable 可理解)——词根 com(一起)+prehend(抓住)=全抓住=全面、包罗万象 → C(thorough)。不是『可理解』"
       },
       {
        "n": 5,
@@ -646,7 +650,7 @@
         "D": "educating people about limiting antibiotic use 教育公众合理用药"
        },
        "correct": "A",
-       "your": "A",
+       "your": "B",
        "steps": [
         {
          "k": "定位",
@@ -660,11 +664,12 @@
          "k": "排除",
          "v": "陷阱：A 看似合理但原文只提『限制处方、激励药企、教育公众』，没有『投资预防』"
         }
-       ]
+       ],
+       "trap": "EXCEPT题陷阱：你选了 B(加强处方监管)——但这是原文明确提的策略。EXCEPT 要选『原文没提的』= A(增加预防感染的投资)。你又选了『提到的』"
       }
      ],
-     "weak": "AMR 题2-5 判断在线：句子题抓主旨、词汇题拆词根、EXCEPT 找原文没提的",
-     "fix": "生词进库：antimicrobial/microorganisms/proliferate/pharmaceutical/disincentives/stringent/contentious/judicious",
+     "weak": "4题全错(1/5)——句子题抓错主旨、细节题被『insurance』带偏、词汇题词根没拆对、EXCEPT 又选『提到的』",
+     "fix": "AMR 是这场最惨的一篇。重读原文，重点：①句子题找『how 机制』句 ②EXCEPT 只选没提的 ③comprehensive=com+prehend(全抓住)",
      "passage_zh": "抗菌素耐药性（AMR）——即微生物抵抗曾经能杀死它们的药物的能力——威胁着要逆转数十年的医学进步，在全球构成一项紧迫的公共卫生挑战。尤其是，抗生素在医学和农业中广泛且常常不加区分的滥用，加速了耐药细菌的出现。认识到 AMR 的严重性，世界卫生组织将其列为全球顶级健康威胁之一，凸显了立即采取行动的迫切需要。\n\n细菌通过多种机制产生耐药性，包括基因突变和基因的共享，这些机制使它们能够在抗生素治疗中存活并大量繁殖。不幸的是，制药行业在生产新抗生素方面一直进展缓慢，既受科学障碍的阻碍，也受经济抑制因素的制约。与治疗慢性疾病的药物相比，抗生素往往带来更低的财务回报。因此，它们得到的投资更少。\n\n应对 AMR 需要全面而协调的国际战略。对抗生素处方实施严格的监管可以遏制滥用，但可能无法彻底消除它。对制药公司的财政激励可以刺激新型抗生素的开发。然而，由于各方对经济可行性的看法不一，这一方法仍存在争议。旨在教育社区谨慎使用抗生素的公共卫生运动至关重要，但专家们仍在争论哪种策略最有效。",
      "longsent": [
       {
@@ -685,6 +690,33 @@
      "type": "学术阅读·中世纪",
      "passage": "Two manifestations of the vitality of the Late Middle Ages were the rise of towns and the development of a new business and commercial class in Europe. Early medieval society had been traditional, agricultural, and rural, so the appearance of a new class that was none of these constituted a social revolution. The new class—artisans and merchants—came from the peasantry. They were landless younger sons of large families, driven away by land shortage. Or they were forced by war and famine to seek new possibilities.\n\nHistorians have proposed three basic theories to explain the origins of European towns. Some scholars believe towns began as boroughs—that is, as fortifications erected during the ninth-century Viking invasions. Belgian historian Henri Pirenne maintained that towns sprang up when merchants who engaged in long-distance trade gravitated toward favorable spots, such as a fort. A third explanation focuses on religious establishments such as monasteries and the great cathedrals, which represented a demand for goods and services. Traders and merchants settled near religious establishments to cater to the residents' economic needs.\n\nAll three theories have some validity, though none of them explains the origins of all medieval towns. Some medieval towns that became flourishing centers of trade by the mid-twelfth century had originally been Roman army camps. Pirenne's interpretation accurately describes the Flemish towns of Gent, Bruges, and Ypres but does not fit the course of development in the Italian cities or in such centers as London. Nor does the Pirenne thesis take into account the significance of local trade and markets in the growth of towns.",
      "questions": [
+      {
+       "n": 1,
+       "type": "细节题",
+       "q": "According to the passage, what was the social background of the new commercial class that emerged in the Late Middle Ages?（中世纪晚期新商业阶级的社会背景）",
+       "options": {
+        "A": "They were primarily members of the clergy who left religious life to pursue trade 主要是离开宗教生活经商的神职人员",
+        "B": "They were nobles who lost their land holdings during Viking invasions 维京入侵中失去土地的贵族",
+        "C": "They were foreign merchants who immigrated from outside Europe 从欧洲外移民的外国商人",
+        "D": "They descended from the peasantry and included landless younger sons of large families 来自农民阶层，含大家庭的无地幼子"
+       },
+       "correct": "D",
+       "your": "D",
+       "steps": [
+        {
+         "k": "定位",
+         "v": "原文 'The new class—artisans and merchants—came from the peasantry. They were landless younger sons of large families'"
+        },
+        {
+         "k": "推理",
+         "v": "问 social background(社会背景)，原文直接说新阶级来自 peasantry(农民)，是无地幼子 → D"
+        },
+        {
+         "k": "排除",
+         "v": "A 神职人员/B 贵族/C 外国商人 原文都没提"
+        }
+       ]
+      },
       {
        "n": 3,
        "type": "词汇题",
@@ -723,7 +755,7 @@
         "D": "It is the most widely accepted explanation 最被广泛接受"
        },
        "correct": "A",
-       "your": "A",
+       "your": "B",
        "steps": [
         {
          "k": "定位",
@@ -737,7 +769,8 @@
          "k": "排除",
          "v": "B 与原文相反(他不解释意大利)；C『entirely』太绝对(原文说 some validity)；D『most accepted』原文没比谁更主流"
         }
-       ]
+       ],
+       "trap": "推断题陷阱：你选了 B(解释意大利港口城市)——但原文说 Pirenne 理论『accurately describes Flemish towns...but does NOT fit...Italian cities』，恰恰不适用意大利，B 说反了。正确 A(适用部分、解释不了全部)"
       },
       {
        "n": 5,
@@ -767,8 +800,8 @@
        ]
       }
      ],
-     "weak": "Medieval 题3-5 判断在线：词汇题拆词根、推断题抓『部分成立』、修辞目的题抓『引出第三种理论』",
-     "fix": "生词进库：manifestations/vitality/peasantry/famine/boroughs/fortifications/gravitated/monasteries/flourishing",
+     "weak": "题4推断题错——选了 B(说反了：Pirenne 不解释意大利)",
+     "fix": "推断题抓『部分成立』的表述(accurately describes...but does not fit=部分对部分错)，别选绝对项",
      "passage_zh": "中世纪晚期活力的两种表现，是欧洲城镇的兴起以及一个新的商业阶级的发展。早期中世纪社会一直是传统的、农业的、乡村的，因此一个与这些特征都不沾边的新阶级的出现，构成了一场社会革命。这个新阶级——工匠和商人——来自农民阶层。他们是大家庭中没有土地的幼子，被土地短缺所驱离。或者他们是被战争和饥荒逼迫去寻找新的可能性。\n\n历史学家提出了三种基本理论来解释欧洲城镇的起源。一些学者认为，城镇始于“borough”——即第九世纪维京人入侵期间修建的防御工事。比利时历史学家亨利·皮雷纳主张，当从事长途贸易的商人被吸引到有利地点（如堡垒）时，城镇便兴起了。第三种解释聚焦于宗教机构，如修道院和大教堂，它们代表着对商品和服务的需求。商贩和商人在宗教机构附近定居，以满足居民的经济需求。\n\n三种理论都有一定道理，尽管没有一种能解释所有中世纪城镇的起源。一些到十二世纪中叶已成为繁荣贸易中心的中世纪城镇，原本是罗马军队的营地。皮雷纳的解释准确描述了佛兰德斯的根特、布鲁日和伊珀尔等城镇，但并不符合意大利城市或伦敦等中心的发展历程。皮雷纳的理论也没有考虑到地方贸易和市场在城镇发展中的重要性。",
      "longsent": [
       {

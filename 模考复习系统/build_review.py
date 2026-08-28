@@ -260,9 +260,33 @@ def build(d):
     barhtml = "".join(f'<div class="bar"><span class="bl">{e(k)}</span><span class="bt"><span class="bf" style="width:{round(c/mx*100)}%"></span></span><span class="bn">{c}</span></div>' for k, c in bars)
     pris = "".join(f'<div class="pri"><b>{i+1}. {e(p["t"])}</b><div class="prw">{e(p.get("why",""))}</div></div>' for i, p in enumerate(d.get("priorities", [])))
     ntask = sum(len(s.get("tasks", [])) for s in d["sections"])
+    # 逐题对错清单：错题置顶展示 + 对题折叠
+    wrong_qs, right_qs = [], []
+    for s in d["sections"]:
+        for t in s.get("tasks", []):
+            for q in t.get("questions", []):
+                if not (q.get("your") and q.get("correct")): continue
+                title = t.get("title", "").split("（")[0].split("·")[0].strip()
+                item = {"title": title, "q": q}
+                (right_qs if q["your"] == q["correct"] else wrong_qs).append(item)
+    empty = '<div class="empty">无</div>'
+    wrong_items = "".join(
+        f'<div class="qlist-item wrong"><span class="qi-mark">❌</span><b>{e(i["title"])} · 题{i["q"]["n"]}</b>'
+        f'<span class="qi-ans">你选 {e(i["q"]["your"])} → 正确 {e(i["q"]["correct"])}</span>'
+        f'<div class="qi-why">{e(i["q"].get("trap", i["q"].get("why", "")))}</div></div>'
+        for i in wrong_qs)
+    right_items = "".join(
+        f'<div class="qlist-item right"><span class="qi-mark">✅</span><b>{e(i["title"])} · 题{i["q"]["n"]}</b>'
+        f'<span class="qi-ans">选 {e(i["q"]["your"])} ✓</span></div>'
+        for i in right_qs)
+    qlist = (f'<div class="qlist"><div class="dh">📋 逐题对错清单 · 错题置顶（共 {len(wrong_qs)+len(right_qs)} 题）</div>'
+             f'<div class="qlist-wrong"><div class="qlist-sub">❌ 错题 · {len(wrong_qs)} 道 · 重点看</div>{wrong_items or empty}</div>'
+             f'<details class="qlist-right"><summary>✅ 做对的题 · {len(right_qs)} 道（点开查看）</summary>{right_items}</details>'
+             f'</div>') if (wrong_qs or right_qs) else ""
     dash = (f'<div class="dash"><div class="dh">📊 本场诊断仪表盘</div>'
             f'<div class="dgrid"><div class="dcol"><div class="dct">错因分布（做错的题/空按类型）</div>{barhtml}</div>'
             f'<div class="dcol pcol"><div class="dct">🎯 本场最该补的 3 件事</div>{pris}</div></div>'
+            f'{qlist}'
             f'<div class="prog"><span>吃透进度</span><span class="pbar"><span class="pfill" id="pfill"></span></span><b id="ptxt">0 / {ntask}</b></div>'
             f'<div class="siglegend"><b>🚦 信号词高亮（听不懂时靠这些画骨架）：</b>'
             f'<span class="wd sig sig-turn">转折/对比</span><span class="wd sig sig-cause">因果/结论</span>'
@@ -434,6 +458,22 @@ body.nosig .wd.sig{background:none!important;color:inherit!important;font-weight
 .pcol{border-left:1px solid var(--line);padding-left:14px}
 .pri{margin:7px 0;font-size:13.5px}.pri b{color:var(--accent)}.prw{color:var(--sub);font-size:12.5px;margin-top:1px}
 .prog{display:flex;align-items:center;gap:10px;margin-top:12px;padding-top:11px;border-top:1px solid var(--line);font-size:13px}
+.qlist{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.qlist .dh{font-size:13.5px;color:var(--core);font-weight:700;margin-bottom:8px}
+.qlist-sub{font-size:13px;font-weight:700;color:var(--red);margin:8px 0 5px}
+.qlist-item{border-radius:8px;padding:8px 12px;margin:5px 0;font-size:13px}
+.qlist-item b{display:inline-block;margin-right:6px}
+.qlist-item.wrong{background:#fdf0ec;border:1px solid #f2c6b9;border-left:4px solid var(--red)}
+.qlist-item.wrong .qi-mark{font-weight:800;margin-right:4px}
+.qlist-item.wrong .qi-ans{color:var(--red);font-weight:600;margin-left:6px}
+.qlist-item .qi-why{color:#7c4a3a;font-size:12.5px;margin-top:4px;line-height:1.6}
+.qlist-item.right{background:#f2f8f3;border:1px solid #cfe3d6;color:#5f6f66}
+.qlist-item.right .qi-ans{color:var(--ok);font-weight:600;margin-left:6px}
+.qlist-right{margin-top:8px}
+.qlist-right summary{cursor:pointer;font-size:13px;color:var(--ok);font-weight:700;padding:6px 0}
+.qlist-right summary::-webkit-details-marker{display:none}
+.qlist-right summary::before{content:"▸ "}
+.qlist-right[open] summary::before{content:"▾ "}
 .pbar{flex:1;background:#f0ebe0;border-radius:8px;height:10px;overflow:hidden}
 .pfill{display:block;height:100%;width:0;background:var(--core);transition:width .3s}
 /* 先想后看 / 先读后看 */

@@ -40,7 +40,8 @@ def trim_proj(w):
     # 项目生词汇聚库：满配富化字段(ety/ph/tip/xex/syn/ant/nu)直接内嵌，无需 enrich.json 叠加
     base = {"id": w["id"], "l": w.get("wl", 1), "w": w["word"], "p": w.get("pronunciation", ""),
             "d": w.get("definition", ""), "m": w.get("memory", ""),
-            "c": w.get("collocations", []), "e": w.get("examples", [])}
+            "c": w.get("collocations", []), "e": w.get("examples", []),
+            "src": w.get("src_from", ""), "src_sent": w.get("src_sent", {})}
     for k in ("ety", "ph", "tip", "xex", "syn", "ant", "nu"):
         if w.get(k):
             base[k] = w[k]
@@ -254,9 +255,18 @@ PAGE = r"""<!DOCTYPE html>
   .sec-b{font-size:14px;color:#4d463c;line-height:1.65}
   .sec-b>div{margin:3px 0}
   .sec-h.ph{color:#2565c0}.sec-h.syn{color:var(--core)}.sec-h.tip{color:var(--gold)}
+  .sec-h.srcsent{color:#c1662f}
+  .ex-item.srcsent{background:#fdf3e7;border:1px solid #f0d9b8;border-left:3px solid var(--accent);border-radius:8px;padding:8px 11px}
   .wc-mem-box{background:#faf5ea;border-radius:8px;padding:8px 11px}
   .chips-line{margin-bottom:9px;display:flex;gap:6px}
   .lvl-chip{font-size:11px;background:#efe9fb;color:#6b5bb5;border-radius:20px;padding:2px 10px}
+  .src-chip{font-size:11px;border-radius:20px;padding:2px 10px;font-weight:600}
+  .src-read{background:#e7f3ea;color:#2f7a4a}
+  .src-listen{background:#e3eef7;color:#2b6280}
+  .src-speak{background:#f7e8e3;color:#9c4a36}
+  .src-write{background:#f2ece0;color:#8a6d2f}
+  .src-mock{background:#ece7f7;color:#5b4b8a}
+  .src-other{background:#efeae1;color:#7c7264}
   .ex-item{margin:7px 0}
   .ex-item.colloc{background:#faf5ea;border-radius:8px;padding:8px 11px}
   .ex-zh{color:#6f6656;font-size:13px}
@@ -1013,6 +1023,16 @@ function renderStudy(no){
 const POS_MAP={n:'名词',v:'动词',vt:'动词',vi:'动词',adj:'形容词',a:'形容词',adv:'副词',ad:'副词',prep:'介词',pron:'代词',conj:'连词',art:'冠词',num:'数词',int:'感叹词'};
 function posChip(def){ const m=(def||'').match(/^\s*([a-z]+)\s*\./i); return m? (POS_MAP[m[1].toLowerCase()]||'') : ''; }
 function sec(icon,cls,title,inner){ return `<div class="sec"><div class="sec-h ${cls}">${icon} ${title}</div><div class="sec-b">${inner}</div></div>`; }
+function srcTag(w){
+  const s=w.src||''; if(!s) return '';
+  let cat,icon,cls;
+  if(/听力/.test(s)){ cat='听力模考'; icon='🎧'; cls='src-listen'; }
+  else if(/口语/.test(s)){ cat='口语模考'; icon='🎤'; cls='src-speak'; }
+  else if(/写作/.test(s)){ cat='写作'; icon='✍️'; cls='src-write'; }
+  else if(/阅读|模考/.test(s)){ cat='阅读模考'; icon='📖'; cls='src-read'; }
+  else { cat='阅读模考'; icon='📖'; cls='src-read'; }  // 纯文章标题默认来自阅读模考
+  return `<span class="src-chip ${cls}" title="来源：${esc(s)}">${icon} ${cat}</span>`;
+}
 function exHtml(list){ return list.map(x=>{
     if(typeof x==='string') return `<div class="ex-item">${esc(x)}</div>`;
     const src=x.src||x.source||''; const cc=(src==='高频搭配'||src==='搭配')?' colloc':'';
@@ -1026,7 +1046,7 @@ function cardHtml(w){
   let d='';
   if(recite) d += sec('📖','','释义',`<div style="font-size:16px;font-weight:600">${esc(w.d)}</div>`);
   const _lv=(w.levels&&w.levels.length)?w.levels:['托福'];
-  d += '<div class="chips-line">'+_lv.map(x=>`<span class="lvl-chip">${esc(x)}</span>`).join('')+'</div>';
+  d += '<div class="chips-line">'+_lv.map(x=>`<span class="lvl-chip">${esc(x)}</span>`).join('')+srcTag(w)+'</div>';
   // 核心意象
   if(w.core) d += sec('🎯','core','核心意象', esc(w.core));
   // 一词多义 · 核心意象串解
@@ -1047,6 +1067,11 @@ function cardHtml(w){
   if(w.ph) d += sec('🗣','ph','发音规律', esc(w.ph));
   // 记忆钩子
   if(w.tip) d += sec('💡','tip','记忆钩子', esc(w.tip));
+  // 来源例句（这个词在模考原文里出现的原句）—— 放在通用例句之前，优先看
+  if(w.src_sent&&w.src_sent.en){
+    d += sec('📍','srcsent','来源例句 · 模考原文出现句',
+      `<div class="ex-item srcsent"><div>${esc(w.src_sent.en)}</div>${w.src_sent.title?`<div class="ex-src">— ${esc(w.src_sent.title)}</div>`:''}</div>`);
+  }
   // 例句（富化用结构化 xex；否则退回基础 e + 搭配 c）
   let exList;
   if(w.xex&&w.xex.length) exList=w.xex;

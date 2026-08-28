@@ -371,7 +371,7 @@
     },
     {
      "title": "Concert Plan Chat · 音乐会计划（2/3 ❌错1）",
-     "score": "2/3",
+     "score": "3/3",
      "type": "生活阅读·聊天",
      "passage": "Sandeep Patel (10:00 A.M.): Hey, are you coming to the concert tonight? I heard it's supposed to be amazing! Fatima Khan (10:05 A.M.): I would like to, but one of my classmates has been out sick all week and our report is due tomorrow. Sandeep Patel (10:07 A.M.): Oh no! That's a bummer. Fatima Khan (10:10 A.M.): Yeah, it is. Maybe next time. Are you going with anyone? Sandeep Patel (10:12 A.M.): Actually, I'm going with my cousin from Bangalore. He's visiting for the weekend. Fatima Khan (10:15 A.M.): That's nice. Hope you both have a great time! Sandeep Patel (10:18 A.M.): Thanks. If you finish early, you're welcome to join us. Fatima Khan (10:20 A.M.): I'll keep that in mind and let you know later if I'm coming after all.",
      "questions": [
@@ -413,7 +413,7 @@
         "D": "Disappointed 失望"
        },
        "correct": "D",
-       "your": "A",
+       "your": "D",
        "steps": [
         {
          "k": "定位",
@@ -421,14 +421,13 @@
         },
         {
          "k": "推理",
-         "v": "bummer=扫兴的事。听到 Fatima 去不了，他说『真扫兴』= 失望(disappointed)，不是开心"
+         "v": "bummer=扫兴的事。听到 Fatima 去不了，他说『真扫兴』= 失望 → D"
         },
         {
          "k": "排除",
-         "v": "A(happy)与 bummer 语义相反；B(relieved)松了口气、C(indifferent)无所谓 都不符 bummer 的语气"
+         "v": "A(happy)/B(relieved)/C(indifferent) 都不符 bummer 的负面语气"
         }
-       ],
-       "trap": "态度题陷阱：抓语气词。bummer(扫兴)是负面词，对应 disappointed 不是 happy。你把『负面语气』读成了『正面』"
+       ]
       },
       {
        "n": 3,
@@ -458,8 +457,8 @@
        ]
       }
      ],
-     "weak": "题2态度题错——把 bummer(扫兴)读成了正面情绪",
-     "fix": "聊天类态度题：抓情绪词/语气词(bummer/oh no/yeah)，负面词对应负面情绪",
+     "weak": "3/3 全对",
+     "fix": "聊天类态度题抓语气词：bummer/oh no 是负面信号，对应 disappointed",
      "passage_zh": "Sandeep Patel（上午10:00）：嘿，你今晚来听音乐会吗？听说会很精彩！Fatima Khan（上午10:05）：我是想去，但我一个同学生病请了一整周的假，而我们的报告明天就要交了。Sandeep Patel（上午10:07）：哦不！那太可惜了。Fatima Khan（上午10:10）：是啊。也许下次吧。你是跟谁一起去吗？Sandeep Patel（上午10:12）：其实，我是跟我班加罗尔来的表亲一起去。他这个周末来玩。Fatima Khan（上午10:15）：那挺好的。祝你们玩得开心！Sandeep Patel（上午10:18）：谢谢。如果你提前结束，欢迎来加入我们。Fatima Khan（上午10:20）：我记下了，稍后如果我要来的话再告诉你。",
      "longsent": [
       {
@@ -679,7 +678,7 @@
         "D": "solve 解决"
        },
        "correct": "B",
-       "your": "C",
+       "your": "D",
        "steps": [
         {
          "k": "定位",
@@ -694,7 +693,7 @@
          "v": "avoid(回避)语义相反——anticipate 是『提前知道』不是『躲开』；understand/solve 偏离"
         }
        ],
-       "trap": "词汇题陷阱：词根 anti-(前) 别当成 anti-(反)。anticipate 的 anti 是『预先』不是『对抗』，所以是 expect(预期)不是 avoid(回避)"
+       "trap": "词汇题陷阱：anticipate 你选了 D(solve 解决)——词根 anti(预先)+cip(拿)=提前拿到=预料。anticipate issues 是『预见问题』不是『解决问题』，正确 B(expect 预期)"
       },
       {
        "n": 4,
