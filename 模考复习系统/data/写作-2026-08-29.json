@@ -1,0 +1,228 @@
+{
+ "id": "写作-2026-08-29",
+ "date": "2026-08-29",
+ "title": "写作模考复盘 · 4.5分（22.1 Raw）",
+ "scores": {
+  "total": "4.5",
+  "reading": "—",
+  "listening": "—",
+  "writing": "连词成句10/10 + 邮件3.9 + 学术讨论3.9",
+  "speaking": "—"
+ },
+ "priorities": [
+  {
+   "t": "✅ 连词成句 10/10 全对——之前的老大难（间接疑问语序/关系从句作主语）解决了",
+   "why": "连续几场专项练连词成句，这场满分，说明这套肌肉记忆已经建立"
+  },
+  {
+   "t": "邮件 3.9：拼写错（gose/ditail/coule/preciate/cindy）+ 标点连句问题",
+   "why": "AI 原话『语法基础较好，但多处拼写错误累积影响严谨性』。gose→goes、ditail→detail、coule→could、preciate→appreciate、cindy→Cindy"
+  },
+  {
+   "t": "邮件 3.9 但内容任务 3 点都覆盖了（兴趣+目标/课程详情/注册）",
+   "why": "任务完成度不错，扣分全在语言层面，拼写+标点是主要失分点"
+  },
+  {
+   "t": "学术讨论 3.9：逻辑跳跃、具体细节不足（AI 原话）",
+   "why": "提到教师指导/学生决定权但没深入和 VR 应用结合；『解决真实问题』一笔带过。有字数(114词)但展开不深"
+  }
+ ],
+ "sections": [
+  {
+   "key": "writing",
+   "label": "✍️ 写作 4.5（连词成句10/10 + 邮件3.9 + 讨论3.9）",
+   "intro": "这场写作进步明显：连词成句满分，邮件和学术讨论都到 3.9。扣分全在语言细节（拼写/标点）和论点深度（具体例子）。",
+   "tasks": [
+    {
+     "title": "连词成句 Build a Sentence · 10/10 ✅",
+     "score": "10/10",
+     "time": "5min26s",
+     "type": "写作·连词成句",
+     "weak": "10/10 全对——之前的老大难（间接疑问语序、关系从句作主语、主动/被动）已解决",
+     "fix": "连词成句的肌肉记忆已建立，考前不必再投入，偶尔刷一组保持手感即可"
+    },
+    {
+     "title": "邮件 Write an Email · 3.9（拼写+标点是主病）",
+     "score": "3.9",
+     "time": "6min47s",
+     "type": "写作·邮件",
+     "prompt": "你想下学期加入学校健身中心的健身课。你在网上看到了课程简介，但注册前需要更多信息。给课程协调员 Ms. Carter 写邮件：①解释你为什么感兴趣+描述一个想达成的健身目标 ②询问课程时间表、包含的活动、是否适合初学者 ③询问如何注册、是否需要带特殊服装或器材。",
+     "your_answer": "Dear Ms. Carter, Hope everything gose well, I am writing to tell that I am interested in joining the fitness class at our university. I have to shape my body because I have to attend a TV show on summer vacation. I would like to know more ditail about the class schedule and the activities included, and whether the class is suitable for beginners. I also want to know how to register and whether I need to bring any special clothing or equipment. I would be very preciate if you coule offer some help. Best regards, cindy",
+     "questions": [
+      {
+       "n": 1,
+       "type": "拼写错误",
+       "q": "你邮件里的 5 处拼写硬伤（AI 点名的）",
+       "options": {
+        "A": "gose → goes（go 三单，加 es）",
+        "B": "ditail → detail（ea 不是 ai）",
+        "C": "coule → could（could 不是 coule）",
+        "D": "preciate → appreciate（appreciate 是 ap+preciate，前面两个 p）",
+        "E": "cindy → Cindy（人名首字母大写）"
+       },
+       "correct": "—",
+       "point": "这 5 处每处都扣『语言使用』分。回读一遍能抓出大半。could/appreciate 是邮件高频词，务必拼对"
+      },
+      {
+       "n": 2,
+       "type": "标点/连句",
+       "q": "AI 说『标点连句问题』——具体是什么？",
+       "options": {
+        "A": "Hope everything gose well, I am writing... ——两个完整句用逗号连，应是句号或分号",
+        "B": "结尾 Best regards, cindy 人名小写"
+       },
+       "correct": "—",
+       "point": "逗号连两个完整句(run-on)是语法硬伤，判分直接扣。改法：Hope everything goes well. I am writing...（句号断开）"
+      },
+      {
+       "n": 3,
+       "type": "内容完成度",
+       "q": "任务 3 点是否都覆盖了？",
+       "options": {
+        "A": "都覆盖了：兴趣+目标(shape body/TV show)、课程详情(schedule/activities/beginners)、注册(register/clothing)",
+        "B": "缺具体细节：没写具体的健身目标（如减重X斤/练出线条），只笼统说 shape my body"
+       },
+       "correct": "—",
+       "point": "任务点齐全，但『健身目标』太笼统。补一句具体目标（如 get in shape and tone my body 或 lose 5 kilos）能让内容分再上一档"
+      }
+     ],
+     "corrections": [
+      {
+       "wrong": "gose",
+       "right": "goes",
+       "why": "go 第三人称单数，加 -es"
+      },
+      {
+       "wrong": "ditail",
+       "right": "detail",
+       "why": "detail 是 e+a，不是 a+i"
+      },
+      {
+       "wrong": "coule",
+       "right": "could",
+       "why": "could 拼写，o-u-l-d"
+      },
+      {
+       "wrong": "preciate",
+       "right": "appreciate",
+       "why": "appreciate 是 ap + preci + ate"
+      },
+      {
+       "wrong": "cindy",
+       "right": "Cindy",
+       "why": "人名首字母大写"
+      },
+      {
+       "wrong": "Hope everything gose well, I am writing...",
+       "right": "Hope everything goes well. I am writing...",
+       "why": "逗号连两个完整句是 run-on，用句号断开"
+      }
+     ],
+     "model": {
+      "label": "邮件范文（考拉润色版 · 学它怎么把目标写具体）",
+      "en": "Dear Ms. Carter, I hope you are having a wonderful week. I am writing because I am very interested in joining the fitness class at the university recreation center next semester. My primary goal is to get in better shape and tone my body, as I will be participating in a television program during my summer vacation. Could you please provide more details regarding the weekly class schedule and the specific activities we will be doing? I also wanted to check if this class is suitable for beginners, as I want to ensure I can keep up with the pace. Additionally, could you let me know how to complete the registration process and if there is any special clothing or equipment I should bring to the sessions? I would be very grateful for your help in preparing for the upcoming term. Best regards, Cindy",
+      "zh": "重点学它：①把『健身目标』写具体=get in better shape and tone my body ②用 providing more details regarding/keep up with the pace/complete the registration process 这些地道短语 ③I would be very grateful 比 appreciate 更自然。你的 3.9 差在这些细节和拼写"
+     },
+     "weak": "3.9 扣分全在语言层面：5 处拼写(gose/ditail/coule/preciate/cindy)+ 逗号连句 + 目标笼统(shape body)",
+     "fix": "邮件高频词拼写必背：goes/detail/could/appreciate。写完花 30 秒回读抓拼写和 run-on。目标写具体（get in better shape and tone my body）"
+    },
+    {
+     "title": "学术讨论 Academic Discussion · 3.9（逻辑跳跃+细节不足）",
+     "score": "3.9",
+     "time": "10min1s",
+     "type": "写作·学术讨论",
+     "prompt": "Virtual reality (VR) refers to computer-simulated environments that people can interact with using electronic equipment such as goggles. Some educators argue that while VR technology can have some benefits, it can also have drawbacks. Do you think VR is a valuable tool in education? Why or why not?（Paul 的观点：VR 因成本高不实用，会带来教育不平等，传统教学更实惠有效）",
+     "your_answer": "Paul has a good opinion about the use of virtual reality, which point out the practical perspective. Although the technology can not fit every need in education, but it do give a fantastic chance for students to learn new knowleges. Innovation can be made only in the openmind. Teacher can give a better guide for telling the advantages and disadvantages about the new technology. And the sstudent have fully rights to decide how to use them without any limit. It is the ture meaning of education. And it can also help to advance the technology when it be used more in solving ture problems. Investing in VR can be benificial in the long run.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "AI 评分·展开发展",
+       "q": "AI 说『论点开发不充分且逻辑跳跃』——具体指什么？",
+       "options": {
+        "A": "提到教师指导/学生决定权，但没深入解释这些如何与 VR 在教室里的实际应用结合",
+        "B": "『解决真实问题』本可做很好的例子，但只一笔带过，缺具体细节",
+        "C": "最后一句简单重复了 Kelly 的观点，没新信息"
+       },
+       "correct": "—",
+       "point": "核心病：有抽象观点，没具体例子。VR 价值 = 沉浸式体验 + 动手实验，要举具体场景（化学虚拟实验、历史虚拟重现）"
+      },
+      {
+       "n": 2,
+       "type": "拼写/语法错误",
+       "q": "你回复里的语言硬伤（AI 会点名）",
+       "options": {
+        "A": "knowleges → knowledge（不可数，没有 s）",
+        "B": "openmind → open mind（两词）",
+        "C": "sstudent → student、ture → true、benificial → beneficial",
+        "D": "it do give → it does give、can not fit every need, but it do → 双连接词错误(although...but 不能同用)",
+        "E": "have fully rights → have full rights（fully 是副词，rights 前用形容词 full）"
+       },
+       "correct": "—",
+       "point": "这些语言错误累积扣分。knowledge 不可数、open mind 两词、although 和 but 不能同用"
+      },
+      {
+       "n": 3,
+       "type": "结构/逻辑",
+       "q": "为什么说你的论点『逻辑跳跃』？",
+       "options": {
+        "A": "你从『教师指导』直接跳到『教育的真谛』，中间缺了 VR 具体怎么用的桥",
+        "B": "应该：VR 价值(沉浸/动手)→举例(化学实验)→教师引导(导航利弊)→学生自主→总结"
+       },
+       "correct": "—",
+       "point": "建议结构：①同意 Paul 成本高但更看重潜力 ②举例具体应用（化学虚拟实验无风险省钱）③教师引导+学生自主 ④总结投资 VR 是长期承诺"
+      }
+     ],
+     "corrections": [
+      {
+       "wrong": "knowleges",
+       "right": "knowledge",
+       "why": "不可数名词，没有复数"
+      },
+      {
+       "wrong": "the openmind",
+       "right": "an open mind",
+       "why": "open mind 是两个词，前面用 an"
+      },
+      {
+       "wrong": "it do give",
+       "right": "it does give",
+       "why": "第三人称单数 does"
+      },
+      {
+       "wrong": "Although...but...",
+       "right": "Although...（去 but）",
+       "why": "although 和 but 不能同时用"
+      },
+      {
+       "wrong": "have fully rights",
+       "right": "have full rights",
+       "why": "rights 是名词，用形容词 full 修饰"
+      },
+      {
+       "wrong": "ture",
+       "right": "true",
+       "why": "拼写 t-r-u-e"
+      },
+      {
+       "wrong": "benificial",
+       "right": "beneficial",
+       "why": "拼写 be-ne-fi-cial"
+      },
+      {
+       "wrong": "sstudent",
+       "right": "student",
+       "why": "多打一个 s"
+      }
+     ],
+     "model": {
+      "label": "学术讨论范文（考拉润色版 · 学它怎么把例子写具体）",
+      "en": "I agree with Paul that VR equipment is currently expensive, but I believe we should focus on the transformative potential of this technology. While it might not fit every educational need immediately, VR offers a fantastic opportunity for students to acquire knowledge through immersive experiences. True innovation only flourishes in an open-minded environment where educators act as guides, helping students navigate the advantages and disadvantages of such tools. By giving students the freedom to explore virtual simulations without traditional constraints, we empower them to take ownership of their learning. For instance, chemistry students could perform complex, dangerous experiments in a virtual lab without physical risks or high material costs. This hands-on approach does more than just teach theory; it encourages students to use technology to solve real-world problems. Ultimately, widespread academic use will drive technological advancement and bring costs down. Investing in VR is not just about fancy goggles; it is a beneficial long-term commitment to evolving the very meaning of modern education.",
+      "zh": "重点学它：①开头承认 Paul 观点(expensive)再转折到潜力 ②For instance, chemistry students could perform...in a virtual lab 这个具体例子（你缺的就是这个）③take ownership of their learning / solve real-world problems 这些地道表达 ④结尾 long-term commitment to evolving the very meaning of modern education 呼应升华"
+     },
+     "weak": "3.9 扣分：①逻辑跳跃（教师指导→教育真谛中间缺桥）②具体例子不足（解决真实问题一笔带过）③多处语言硬伤(knowleges/openmind/ture/benificial/although...but)",
+     "fix": "学术讨论三件事：①先承认对方观点再转折 ②举 1 个具体例子（化学虚拟实验/历史虚拟重现）③although 别和 but 同用、knowledge 不可数、beneficial 拼对"
+    }
+   ]
+  }
+ ]
+}
