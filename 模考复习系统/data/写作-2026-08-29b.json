@@ -1,0 +1,206 @@
+{
+ "id": "写作-2026-08-29b",
+ "date": "2026-08-29",
+ "title": "写作模考复盘 · 第二场（19:57）",
+ "scores": {
+  "total": "—",
+  "reading": "—",
+  "listening": "—",
+  "writing": "邮件(任务4/5·语言3.5/5) + 学术讨论",
+  "speaking": "—"
+ },
+ "priorities": [
+  {
+   "t": "拼写还是主病：interesthing/fasion/colleage/subtantial/museam/idoles",
+   "why": "两篇作文拼写错一堆。回读30秒能抓出一半，这是最省力的提分点"
+  },
+  {
+   "t": "学术讨论这场有进步：结构清晰、有原创观点、有例子(博物馆/历史雕像)",
+   "why": "AI 原话『论证较充分、结构清晰、结论明确、有原创延伸』。比上一场 VR 的逻辑跳跃好多了"
+  },
+  {
+   "t": "AI 给的唯一『需提升』：例子还不够具体",
+   "why": "『博物馆和雕像』是泛泛而谈，换成一件具体作品/案例，论证深度会再上"
+  },
+  {
+   "t": "句式单一、简单句为主",
+   "why": "AI：句式较单一，show destinations 不够地道。要用更多样的动词/形容词"
+  }
+ ],
+ "sections": [
+  {
+   "key": "writing",
+   "label": "✍️ 写作（邮件 + 学术讨论）",
+   "intro": "第二场写作。拼写仍是主病，但学术讨论的结构和展开有进步。",
+   "tasks": [
+    {
+     "title": "邮件 Write an Email · 任务4/5 · 语言3.5/5",
+     "score": "任务4/5 · 语言3.5/5",
+     "time": "—",
+     "type": "写作·邮件",
+     "prompt": "你和朋友 John 计划今年夏天去欧洲旅行。你做了一些研究，找到一些有趣的目的地和活动想加进行程。给 John 写邮件：①描述你研究的目的地 ②解释为什么这些目的地会好玩 ③询问他对行程的意见和补充想法。",
+     "your_answer": "Dear John, Hope everything goes well. I am writing to show some interesthing destinations about our vacation the summer. I have done some research and fully consider our goals and interests. Italy and England would be the best choice. Italy has the most famous culture about art, and we can attend the fasion show in it. We can go visit some colleage in England. Wish for your opinion and ideas. Best regards, Cindy",
+     "questions": [
+      {
+       "n": 1,
+       "type": "拼写错误",
+       "q": "你邮件里的拼写硬伤（AI 点名）",
+       "options": {
+        "A": "interesthing → interesting（ing 不是 ing 前面加 h）",
+        "B": "fasion → fashion（sh 不是 s）",
+        "C": "colleage → college（college 拼写）",
+        "D": "consider → considered（have done research and fully consider 时态，应为 considered）"
+       },
+       "correct": "—",
+       "point": "这些拼写+时态错误累积扣语言分。interesting/fashion/college 是旅行邮件高频词，务必拼对"
+      },
+      {
+       "n": 2,
+       "type": "地道表达",
+       "q": "AI 说 show destinations 不够地道——怎么改？",
+       "options": {
+        "A": "share some interesting destinations / suggest some destinations",
+        "B": "show 用在这里是中文直译『展示』，英语里说『分享/建议』目的地"
+       },
+       "correct": "—",
+       "point": "show → share/suggest。这是中式英语，用地道动词替掉"
+      },
+      {
+       "n": 3,
+       "type": "句式单一",
+       "q": "AI 说『句式较单一、简单句为主』——如何丰富？",
+       "options": {
+        "A": "多用连接词把简单句连成复合句",
+        "B": "换更具体的动词/形容词（world-famous 而不是 most famous）"
+       },
+       "correct": "—",
+       "point": "写 2-3 个复合句（which/where/because），用 world-famous artistic heritage 这类搭配"
+      }
+     ],
+     "corrections": [
+      {
+       "wrong": "interesthing",
+       "right": "interesting",
+       "why": "拼写 interesting"
+      },
+      {
+       "wrong": "fasion",
+       "right": "fashion",
+       "why": "拼写 f-a-s-h-i-o-n"
+      },
+      {
+       "wrong": "colleage",
+       "right": "college",
+       "why": "拼写 college"
+      },
+      {
+       "wrong": "fully consider",
+       "right": "fully considered",
+       "why": "have done research and fully considered（时态一致）"
+      },
+      {
+       "wrong": "show some destinations",
+       "right": "share/suggest some destinations",
+       "why": "show 是中式直译，用 share/suggest 更地道"
+      },
+      {
+       "wrong": "the most famous culture about art",
+       "right": "a world-famous artistic heritage",
+       "why": "world-famous artistic heritage 是地道搭配"
+      }
+     ],
+     "model": {
+      "label": "邮件范文（学地道搭配）",
+      "en": "Dear John, Hope everything goes well. I am writing to share some interesting destinations I found for our summer trip. After doing some research, I have considered our goals and interests carefully. Italy and England would be the best choices. Italy has a world-famous artistic heritage, and we could attend a fashion show there. We could also visit some famous colleges in England. I would love to hear your opinion and any other ideas you might have. Best regards, Cindy",
+      "zh": "学它：①share destinations ②After doing some research（分词结构）③world-famous artistic heritage ④I would love to hear your opinion 比 Wish for your opinion 自然"
+     },
+     "weak": "拼写(interesthing/fasion/colleage)+时态(consider)+中式表达(show destinations)+句式单一",
+     "fix": "旅行邮件高频词拼写：interesting/fashion/college/destination/opinion。show→share/suggest。写 2 个复合句"
+    },
+    {
+     "title": "学术讨论 Academic Discussion · 有进步（结构清晰+原创）",
+     "score": "—",
+     "time": "9min38s",
+     "type": "写作·学术讨论",
+     "prompt": "下周讨论公共艺术对社区认同感的影响。公共艺术（如壁画、雕塑）能反映社区价值观、促进本地艺术家、给居民带来自豪感和团结。你认为公共艺术在塑造社区认同感方面重要吗？为什么？（Student B 观点：公共艺术作用有限，社交项目/学校/社区活动因创造直接人际关系而影响更大）",
+     "your_answer": "I agree with that other factors play subtantial impact such as social programs, schools and communty events, but it is the public art plays a that connect them all and make all the elements to a whole story. Public arts tell the residents the stories and help people know the root of living. Classic form of public arts like murals and sculptures form the common identity and value. For example, the museam and the idoles in the history help people know what is right and valuable. So, I do think public arts play a significant role in shaping community identity.",
+     "questions": [
+      {
+       "n": 1,
+       "type": "AI 评分·展开发展",
+       "q": "AI 说『论证较充分、结构清晰、结论明确、有原创延伸』——这场哪做对了？",
+       "options": {
+        "A": "先承认 Student B 观点(社交项目等有 impact)，再转折提出自己的角度(公共艺术是『连接』和『讲故事』)",
+        "B": "举例了博物馆/历史雕像传递价值观"
+       },
+       "correct": "—",
+       "point": "这场的结构是对的：承认对方→转折→自己的角度(连接+讲故事)→举例→总结。比上一场 VR 的逻辑跳跃好很多"
+      },
+      {
+       "n": 2,
+       "type": "AI 评分·需提升",
+       "q": "AI 唯一点名的『需提升』是什么？",
+       "options": {
+        "A": "例子不够具体——『博物馆和雕像』泛泛而谈，换成一件具体作品/案例论证会更深",
+        "B": "字数不够"
+       },
+       "correct": "—",
+       "point": "把『museum and idols』换成一个具体的 mural 或 sculpture（如某城市的一幅特定壁画），论证深度立刻提升"
+      },
+      {
+       "n": 3,
+       "type": "语言错误",
+       "q": "你回复里的语言硬伤",
+       "options": {
+        "A": "subtantial → substantial、communty → community、museam → museum、idoles → idols",
+        "B": "I agree with that other factors play... 语法不通（agree with that 多余 that）",
+        "C": "but it is the public art plays a that connect them 句子破碎"
+       },
+       "correct": "—",
+       "point": "substantial/community/museum 拼写必对；I agree that...（去掉 with）；句子别破碎，回读修顺"
+      }
+     ],
+     "corrections": [
+      {
+       "wrong": "subtantial",
+       "right": "substantial",
+       "why": "拼写 substantial"
+      },
+      {
+       "wrong": "communty",
+       "right": "community",
+       "why": "拼写 community"
+      },
+      {
+       "wrong": "museam",
+       "right": "museum",
+       "why": "拼写 museum"
+      },
+      {
+       "wrong": "idoles",
+       "right": "idols",
+       "why": "拼写 idols"
+      },
+      {
+       "wrong": "I agree with that other factors play",
+       "right": "I agree that other factors play",
+       "why": "agree that 不需要 with"
+      },
+      {
+       "wrong": "it is the public art plays a that connect them",
+       "right": "public art connects them all",
+       "why": "句子破碎，简化"
+      }
+     ],
+     "model": {
+      "label": "学术讨论范文（考拉润色版）",
+      "en": "While I acknowledge Student B's point regarding the impact of social programs and schools, I believe public art plays a uniquely significant role by acting as a connective thread that weaves these various elements into a cohesive community narrative. Rather than being just a static decoration, public art helps residents understand their collective roots and common identity. It functions as a visual storyteller that translates abstract shared values into tangible landmarks. For example, a series of historical murals or sculptures representing local figures can provide a sense of continuity that schools and programs alone might lack. When people pass by these artworks daily, they are reminded of what their community deems right and valuable, effectively grounding their identity in a specific historical context. By transforming public spaces into galleries of shared heritage, these artistic installations ensure that disparate community efforts are not just isolated events but part of a whole story that reinforces a resident's sense of belonging and pride.",
+      "zh": "学它：①While I acknowledge...（先承认对方，比 I agree with that 更高级）②acting as a connective thread / visual storyteller（你的『连接+讲故事』这个好点子，用高级词说出来）③For example, a series of historical murals...（具体例子）④grounding their identity in a specific historical context（地道搭配）"
+     },
+     "weak": "语言硬伤(subtantial/communty/museam/idoles/agree with that/句子破碎)，例子不够具体",
+     "fix": "substantial/community/museum 拼写必对；agree that 不加 with；把『博物馆』换成一件具体 mural；学 While I acknowledge 开头"
+    }
+   ]
+  }
+ ]
+}
