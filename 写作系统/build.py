@@ -51,7 +51,7 @@ PAGE = r"""<!DOCTYPE html>
   .notice b{color:var(--accent)}
   .bigbtn{display:block;width:100%;text-align:left;background:var(--accent);color:#fff;border:0;border-radius:16px;padding:18px 22px;font-size:18px;font-weight:700;cursor:pointer;font-family:inherit;margin-bottom:14px}
   .bigbtn small{display:block;font-weight:400;font-size:13px;opacity:.92;margin-top:3px}
-  .bigbtn.b2{background:#3f7d74}.bigbtn.b3{background:var(--blue)}
+  .bigbtn.b2{background:#3f7d74}.bigbtn.b3{background:var(--blue)}.bigbtn.b4{background:#8a6d3b}
   .block{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-top:22px;box-shadow:0 2px 12px rgba(150,120,70,.05)}
   .tasklabel{display:inline-block;font-size:12px;color:#fff;background:var(--core);padding:2px 10px;border-radius:20px;margin-bottom:12px}
   .lv{display:inline-block;font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:1px 8px;margin-left:6px}
@@ -139,6 +139,7 @@ function menu(){
     <button class="bigbtn" onclick="bsStart()">🧩 连词成句 Build a Sentence<small>${BS.items.length} 题 · 重排词块成句 · 自动对错 + 语法点</small></button>
     <button class="bigbtn b2" onclick="writeStart('email')">✉️ 写邮件 Write an Email<small>${EMAIL.items.length} 个情景 · 7 分钟 · 带万能框架 + 高频句</small></button>
     <button class="bigbtn b3" onclick="writeStart('disc')">💬 学术讨论 Write for an Academic Discussion<small>${DISC.items.length} 个话题 · 10 分钟 · ≥100 词 · 带立场论证框架</small></button>
+    <a class="bigbtn b4" href="./打字练习.html" style="text-decoration:none">⌨️ 打字练习<small>极简打字框 · 拼错纠错 · WPM 测速（对标 10 分钟 100 词）</small></a>
   </div>`;
 }
 
