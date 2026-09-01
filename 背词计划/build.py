@@ -1166,6 +1166,22 @@ def build():
     if _os0.path.exists(_os0.path.join(DATA, "项目生词.json")):
         proj = load_source("项目生词.json", trim_proj, "项目生词")
         proj["name"] = "项目生词"
+        # 给每个 List 生成来源标签（List 10 → 阅读填词题；混合来源取众数）
+        from collections import Counter as _Cnt
+        _wl_srcs = {}
+        for _w in proj["words"]:
+            _s = (_w.get("src") or "").strip()
+            _wl_srcs.setdefault(_w["l"], []).append(_s)
+        _labels = {}
+        for _wl, _ss in _wl_srcs.items():
+            _top = _Cnt([s for s in _ss if s]).most_common(1)
+            _lab = _top[0][0] if _top else ("List %d" % _wl)
+            # 单一来源才直接显示；多来源显示众数+「等 N 个来源」
+            _uniq = set(s for s in _ss if s)
+            if len(_uniq) > 1:
+                _lab = _lab + (" · 等%d个来源" % len(_uniq))
+            _labels[str(_wl)] = _lab
+        proj["labels"] = _labels
         payload["proj"] = proj
     # 20 学科听力词（按学科分组，每词满配 voca 卡片）——独立词源 subject；掌握键用语幹(lem)，重建不丢
     _svp = _os0.path.join(DATA, "subject-vocab.json")
