@@ -1,20 +1,32 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>托福模考复习系统</title><style>
-  :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f}
-  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6}
-  .wrap{max-width:820px;margin:0 auto;padding:40px 22px 80px}h1{font-size:26px;margin:0 0 4px}.sub{color:var(--muted);margin-bottom:22px}
-  .notice{background:#fff6e8;border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:12px;padding:13px 15px;font-size:13.5px;margin-bottom:22px}
-  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-  a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none;color:inherit}
-  a.card:hover{border-color:#d8c8a8}a.card h2{font-size:18px;margin:0 0 6px}.card .m{color:var(--muted);font-size:13px}
-  footer{margin-top:26px;color:#a89a86;font-size:12px}
+:root{--bg:#f6f3ed;--card:#fffdf8;--ink:#2f2a24;--muted:#8c8072;--line:#e5dccb;--accent:#c1662f;--core:#2f8f83}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:34px 22px 80px}
+h1{font-size:24px;margin:0 0 4px}.sub{color:var(--muted);margin-bottom:20px}
+.sec-h{font-size:15px;color:var(--core);font-weight:700;margin:26px 0 10px;border-bottom:2px solid var(--line);padding-bottom:6px}
+.modrow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:8px}
+a.mod{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center;text-decoration:none;color:inherit;font-size:16px;font-weight:700}
+a.mod:hover{border-color:var(--accent)}a.mod .ic{display:block;font-size:28px;margin-bottom:6px}
+.vocab-entry{display:block;background:linear-gradient(135deg,#fff6e8,#fdf3e7);border:1px solid #f0d9b0;border-left:5px solid var(--accent);border-radius:12px;padding:15px 18px;text-decoration:none;color:inherit;margin-bottom:8px;font-size:15px;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;color:inherit}
+a.card:hover{border-color:#d8c8a8}
+a.card h2{font-size:15.5px;margin:0 0 4px}
+.c-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.old{flex:none;font-size:11px;background:#ece7f7;color:#6b5bb5;border-radius:20px;padding:1px 9px;font-weight:600}
+.score{font-size:13px;color:var(--accent);font-weight:700;margin:2px 0}
+.m{color:var(--muted);font-size:12.5px}
+footer{margin-top:28px;color:#a89a86;font-size:12px}
 </style></head><body><div class="wrap">
-  <h1>📚 托福模考复习系统</h1>
-  <div class="sub">每场模考 → 文段中心复习页：原文<b>点任意词就地展开</b>·整句/整篇可读 → 翻译 → 单词卡 · 背记 · 拼写测验</div>
-  <div class="notice">用法：模考后把<b>内容截图</b>发 cc，cc 抽词按文段建页。配套文字分析在 <code>模考复习系统/分析/</code>。</div>
-  <div class="cards"><a class="card" href="复习页/4.0分-2026-08-18.html"><h2>模考复习 · 2026-08-18 · 总分 4.0</h2><div class="m">8 篇文段 · 75 词 · 10 个拼错词</div></a>
-<a class="card" href="复习页/模考2-2026-08-20.html"><h2>模考复习 · 2026-08-20 · 第二次模考（阅读）</h2><div class="m">6 篇文段 · 36 词 · 9 个拼错词</div></a>
-<a class="card" href="复习页/阅读2-2026-08-20.html"><h2>阅读单科模考 #2 · 2026-08-20（59%）</h2><div class="m">7 篇文段 · 39 词 · 0 个拼错词</div></a>
-<a class="card" href="复习页/阅读4.0-2026-08-20.html"><h2>阅读单科模考 · 2026-08-20（4.0 / 61%）</h2><div class="m">8 篇文段 · 61 词 · 5 个拼错词</div></a></div>
-  <footer>data/*.json → build.py → 复习页/*.html ｜ 共 4 场</footer>
+<h1>📚 托福模考复习系统</h1>
+<div class="sub">每一次模考 → 题目级复盘页 · 四科模块沉淀 · 背词计划联动</div>
+
+<div class="sec-h">🎯 四科模块沉淀</div>
+<div class="modrow"><a class="mod" href="模块/听力.html"><span class="ic">🎧</span>听力</a><a class="mod" href="模块/口语.html"><span class="ic">🎤</span>口语</a><a class="mod" href="模块/阅读.html"><span class="ic">📖</span>阅读</a><a class="mod" href="模块/写作.html"><span class="ic">✍️</span>写作</a></div>
+<a class="vocab-entry" href="../背词计划/index.html">🔤 背词计划（全项目生词 + 句型表达统一汇聚点）→</a>
+
+<div class="sec-h">📝 全部模考场次（18 场 · 按日期倒序）</div>
+<div class="cards"><a class="card" href="复习页/阅读3.5-听力-2026-09-01.html"><div class="c-top"><h2>阅读+听力模考复盘 · 9/1</h2></div><div class="score">阅3.5/58% (19/35+10/15) · 听Module1 19/35 + Module2 16/20</div><div class="m">2026-09-01 · 2 科 · 12 篇 · 50 题/空 · 0 生词</div></a><a class="card" href="复习页/5.0分-2026-08-29.html"><div class="c-top"><h2>听力模考复盘 · 5.0分（76%）</h2></div><div class="score">听15/21 + 19/24</div><div class="m">2026-08-29 · 2 科 · 7 篇 · 21 题/空 · 0 生词</div></a><a class="card" href="复习页/写作-2026-08-29.html"><div class="c-top"><h2>写作模考复盘 · 4.5分（22.1 Raw）</h2></div><div class="score">写连词成句10/10 + 邮件3.9 + 学术讨论3.9</div><div class="m">2026-08-29 · 1 科 · 3 篇 · 6 题/空 · 0 生词</div></a><a class="card" href="复习页/写作-2026-08-29b.html"><div class="c-top"><h2>写作模考复盘 · 第二场（19:57）</h2></div><div class="score">写邮件(任务4/5·语言3.5/5) + 学术讨论</div><div class="m">2026-08-29 · 1 科 · 2 篇 · 6 题/空 · 0 生词</div></a><a class="card" href="复习页/听力-2026-08-29-06.html"><div class="c-top"><h2>听力模考复盘 · 06:27场</h2></div><div class="score"></div><div class="m">2026-08-29 · 2 科 · 6 篇 · 17 题/空 · 0 生词</div></a><a class="card" href="复习页/4.0分-2026-08-28.html"><div class="c-top"><h2>阅读模考复盘 · 4.0分（61%）</h2></div><div class="score">阅19/34 + 11/15</div><div class="m">2026-08-28 · 3 科 · 7 篇 · 39 题/空 · 0 生词</div></a><a class="card" href="复习页/4.0分-2026-08-28b.html"><div class="c-top"><h2>听力模考复盘 · 4.0分（59%）</h2></div><div class="score">听13/20 + 13/24</div><div class="m">2026-08-28 · 2 科 · 5 篇 · 16 题/空 · 0 生词</div></a><a class="card" href="复习页/4.5分-2026-08-28.html"><div class="c-top"><h2>阅读模考复盘 · 4.5分（73%）</h2></div><div class="score">阅23/34 + 13/15</div><div class="m">2026-08-28 · 3 科 · 8 篇 · 41 题/空 · 0 生词</div></a><a class="card" href="复习页/4.5分-2026-08-28b.html"><div class="c-top"><h2>阅读模考复盘 · 4.5分（75%）第二次</h2></div><div class="score">阅38/51 (27/36 + 11/15)</div><div class="m">2026-08-28 · 3 科 · 8 篇 · 48 题/空 · 0 生词</div></a><a class="card" href="复习页/听力·罗马城规-2026-08-26.html"><div class="c-top"><h2>听力精读复盘 · 罗马城市规划</h2></div><div class="score">听2/4 · 学术讲座</div><div class="m">2026-08-26 · 1 科 · 1 篇 · 1 题/空 · 0 生词</div></a><a class="card" href="复习页/口语4.0-Test1-2026-08-24.html"><div class="c-top"><h2>口语 Test 1 · 跟读复盘</h2></div><div class="score">口4.0 · Task1跟读4.0/Task2面试4.0</div><div class="m">2026-08-24 · 1 科 · 2 篇 · 0 题/空 · 0 生词</div></a><a class="card" href="复习页/听力4.0-2026-08-24b.html"><div class="c-top"><h2>听力模考 · 逐句逐词精读复盘</h2></div><div class="score">听4.0 · 65%</div><div class="m">2026-08-24 · 1 科 · 7 篇 · 17 题/空 · 83 生词</div></a><a class="card" href="复习页/听力5.0-2026-08-24.html"><div class="c-top"><h2>听力模考 · 题目级复盘</h2></div><div class="score">听5.0 · 77%</div><div class="m">2026-08-24 · 1 科 · 5 篇 · 14 题/空 · 23 生词</div></a><a class="card" href="复习页/3.5分-2026-08-21.html"><div class="c-top"><h2>第2次完整模考 · 全科题目级复盘</h2></div><div class="score">阅4.0 · 听4.5 · 写2.0 · 口3.5</div><div class="m">2026-08-21 · 4 科 · 14 篇 · 46 题/空 · 67 生词</div></a><a class="card" href="复习页/4.0分-2026-08-18.html"><div class="c-top"><h2>模考复习 · 2026-08-18 · 总分 4.0</h2><span class="old">早期</span></div><div class="score">早期</div><div class="m"> · 8 篇文段 · 75 词</div></a><a class="card" href="复习页/模考2-2026-08-20.html"><div class="c-top"><h2>模考复习 · 2026-08-20 · 第二次模考（阅读）</h2><span class="old">早期</span></div><div class="score">早期</div><div class="m"> · 6 篇文段 · 36 词</div></a><a class="card" href="复习页/阅读2-2026-08-20.html"><div class="c-top"><h2>阅读单科模考 #2 · 2026-08-20（59%）</h2><span class="old">早期</span></div><div class="score">早期</div><div class="m"> · 7 篇文段 · 39 词</div></a><a class="card" href="复习页/阅读4.0-2026-08-20.html"><div class="c-top"><h2>阅读单科模考 · 2026-08-20（4.0 / 61%）</h2><span class="old">早期</span></div><div class="score">早期</div><div class="m"> · 8 篇文段 · 61 词</div></a></div>
+<footer>data/*.json → build_index.py / build_review.py / build_module.py ｜ 总索引自动生成</footer>
 </div></body></html>
