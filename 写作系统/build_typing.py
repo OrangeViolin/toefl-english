@@ -195,9 +195,9 @@ function endTest(){
   document.getElementById('r_time').textContent = fmtClock(sec);
   document.getElementById('r_wpm').textContent = wpm;
   const v=document.getElementById('verdict');
-  const targetWpm=10;   // 10分钟100词 = 10 WPM
-  if(wpm>=targetWpm){ v.className='verdict pass'; v.textContent='✓ 达标：已达到托福写作打字速度标准（10 分钟 ≥ 100 词，即 ≥ '+targetWpm+' WPM）。'; }
-  else { v.className='verdict fail'; v.textContent='✗ 未达标：托福标准是 10 分钟 ≥ 100 词（≥ '+targetWpm+' WPM），你当前 '+wpm+' WPM。'; }
+  const targetWpm=20;   // 10分钟200词 = 20 WPM（预留思考时间，手速要更快）
+  if(wpm>=targetWpm){ v.className='verdict pass'; v.textContent='✓ 达标：已达到你的目标打字速度（10 分钟 ≥ 200 词，即 ≥ '+targetWpm+' WPM）。'; }
+  else { v.className='verdict fail'; v.textContent='✗ 未达标：你的目标是 10 分钟 ≥ 200 词（≥ '+targetWpm+' WPM），当前 '+wpm+' WPM。'; }
   document.getElementById('r_note').textContent = '按此速度，10 分钟可打约 '+(wpm*10)+' 词。';
   document.getElementById('result').classList.add('show');
 }
