@@ -272,27 +272,40 @@ def build(d):
     barhtml = "".join(f'<div class="bar"><span class="bl">{e(k)}</span><span class="bt"><span class="bf" style="width:{round(c/mx*100)}%"></span></span><span class="bn">{c}</span></div>' for k, c in bars)
     pris = "".join(f'<div class="pri"><b>{i+1}. {e(p["t"])}</b><div class="prw">{e(p.get("why",""))}</div></div>' for i, p in enumerate(d.get("priorities", [])))
     ntask = sum(len(s.get("tasks", [])) for s in d["sections"])
-    # 逐题对错清单：错题置顶展示 + 对题折叠
+    # 逐题对错清单：错题置顶展示 + 对题折叠（选择题 + 拼写填空错空都列进去）
     wrong_qs, right_qs = [], []
     for s in d["sections"]:
         for t in s.get("tasks", []):
+            title = t.get("title", "").split("（")[0].split("·")[0].strip()
             for q in t.get("questions", []):
                 if not (q.get("your") and q.get("correct")): continue
-                title = t.get("title", "").split("（")[0].split("·")[0].strip()
                 item = {"title": title, "q": q}
                 (right_qs if q["your"] == q["correct"] else wrong_qs).append(item)
+            # 拼写填空的错空也进错题清单
+            for b in t.get("blanks", []):
+                if b.get("ok"): continue
+                item = {"title": title, "b": b}
+                wrong_qs.append(item)
     empty = '<div class="empty">无</div>'
-    wrong_items = "".join(
-        f'<div class="qlist-item wrong"><span class="qi-mark">❌</span><b>{e(i["title"])} · 题{i["q"]["n"]}</b>'
-        f'<span class="qi-ans">你选 {e(i["q"]["your"])} → 正确 {e(i["q"]["correct"])}</span>'
-        f'<div class="qi-why">{e(i["q"].get("trap", i["q"].get("why", "")))}</div></div>'
-        for i in wrong_qs)
+    def _qitem(i):
+        if "q" in i:
+            q = i["q"]
+            return (f'<div class="qlist-item wrong"><span class="qi-mark">❌</span><b>{e(i["title"])} · 题{q["n"]}</b>'
+                    f'<span class="qi-ans">你选 {e(q["your"])} → 正确 {e(q["correct"])}</span>'
+                    f'<div class="qi-why">{e(q.get("trap", q.get("why", "")))}</div></div>')
+        else:
+            b = i["b"]
+            return (f'<div class="qlist-item wrong"><span class="qi-mark">❌</span><b>{e(i["title"])} · 空{b.get("n","")}</b>'
+                    f'<span class="qi-ans">你写 {e(b.get("your",""))} → 正确 {e(b.get("correct",""))}</span>'
+                    f'<div class="qi-why">{e(b.get("point", ""))}</div></div>')
+    wrong_items = "".join(_qitem(i) for i in wrong_qs)
     right_items = "".join(
         f'<div class="qlist-item right"><span class="qi-mark">✅</span><b>{e(i["title"])} · 题{i["q"]["n"]}</b>'
         f'<span class="qi-ans">选 {e(i["q"]["your"])} ✓</span></div>'
         for i in right_qs)
-    qlist = (f'<div class="qlist"><div class="dh">📋 逐题对错清单 · 错题置顶（共 {len(wrong_qs)+len(right_qs)} 题）</div>'
-             f'<div class="qlist-wrong"><div class="qlist-sub">❌ 错题 · {len(wrong_qs)} 道 · 重点看</div>{wrong_items or empty}</div>'
+    ntot = len(wrong_qs) + len(right_qs)
+    qlist = (f'<div class="qlist"><div class="dh">📋 逐题对错清单 · 错题/错空置顶（共 {ntot} 处）</div>'
+             f'<div class="qlist-wrong"><div class="qlist-sub">❌ 错题/错空 · {len(wrong_qs)} 处 · 重点看</div>{wrong_items or empty}</div>'
              f'<details class="qlist-right"><summary>✅ 做对的题 · {len(right_qs)} 道（点开查看）</summary>{right_items}</details>'
              f'</div>') if (wrong_qs or right_qs) else ""
     dash = (f'<div class="dash"><div class="dh">📊 本场诊断仪表盘</div>'
