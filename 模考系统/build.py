@@ -54,6 +54,34 @@ RUBRICS = {
  "take_interview": "Take an Interview（0–5）\n5 完全成功：充分回答、清楚流利、切题、语速自然停顿得当、发音清晰节奏语调有效、语法词汇多样准确。\n4 大体成功：切题有展开但衔接欠佳；语速大体流畅偶停顿；个别词句需费力听；语法词汇大体够用。\n3 部分成功：切题但展开/清晰有限；停顿多节奏碎、填充词多；发音偶影响可懂；语法词汇受限。\n2 大体不成功：支撑不足/不够可懂；关联弱多借题干；可懂度低。\n1 不成功：仅勉强触及、掌控极弱、多孤立词句。\n0：无作答/不可懂/非英文/离题。",
 }
 
+# ── 拼写词典（写作框实时纠错用，离线）────────────────────────────
+def load_wordlist():
+    words = set()
+    dp = "/usr/share/dict/web2"
+    if os.path.exists(dp):
+        with open(dp, encoding="utf-8", errors="ignore") as f:
+            for line in f:
+                w = line.strip().lower()
+                if w and w.isalpha() and 2 <= len(w) <= 28:
+                    words.add(w)
+    def _add(fp):
+        try:
+            d = json.load(open(fp, encoding="utf-8"))
+            for x in d.get("words", []):
+                w = (x.get("word") or x.get("w") or "").strip().lower()
+                if w.isalpha() and 2 <= len(w) <= 28:
+                    words.add(w)
+        except Exception:
+            pass
+    bdir = os.path.join(ROOT, "..", "背词计划", "data")
+    for fn in ("green-book.json", "beat-vocab.json", "项目生词.json", "lecture-lex.json", "subject-vocab.json"):
+        _add(os.path.join(bdir, fn))
+    _modern = ("internet email website online smartphone laptop wifi google youtube facebook twitter app blog "
+               "download upload software hardware keyboard mouse screen password account login logout selfie "
+               "spellcheck autocorrect podcast netflix instagram tiktok zoom emoji gif meme vlog hashtag").split()
+    words.update(_modern)
+    return "`" + "\n".join(sorted(words)).replace("`", "") + "`"
+
 # ═══════════════════════ 页面模板 ═══════════════════════
 PAGE = r"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -128,6 +156,15 @@ PAGE = r"""<!DOCTYPE html>
   textarea:focus{outline:none;border-color:var(--accent)}
   .wc{font-size:13px;color:var(--muted);margin-top:6px}
   .wc.low{color:var(--bad)}
+  /* 写作框实时纠错：透明 textarea + 背后高亮层（错词淡红下划线，悬停看建议） */
+  .hl-wrap{position:relative;width:100%}
+  .hl-backdrop{position:absolute;top:0;left:0;right:0;bottom:0;z-index:2;pointer-events:none;overflow:hidden;
+    padding:12px;border:1px solid transparent;border-radius:10px;text-align:left;
+    font-family:inherit;font-size:15px;line-height:1.6;white-space:pre-wrap;overflow-wrap:break-word;color:var(--ink)}
+  .hl-backdrop mark{pointer-events:auto;cursor:pointer;background:transparent;color:var(--ink);border-bottom:2px solid var(--bad);border-radius:0;padding:0}
+  .hl-backdrop mark:hover{background:#fdeeee}
+  textarea#ta{position:relative;z-index:1;background:transparent;color:transparent;caret-color:var(--ink);overflow-wrap:break-word}
+  textarea#ta::placeholder{color:#b9ad95}
   .post{background:#f2f0fb;border-radius:10px;padding:11px 14px;font-size:14px;margin-bottom:10px}
   .post b{color:var(--blue)}
   .bullets{margin:8px 0 0;padding-left:20px;font-size:14px}
@@ -174,6 +211,41 @@ const CEFR = __CEFR__;
 const OVERALL120 = __OVERALL120__;
 const RUBRICS = __RUBRICS__;
 const RKEY = 'toefl-mock:resp:' + MOCK.id;
+
+/* ───────── 拼写纠错（写作框实时，离线词典）───────── */
+const WORDLIST = __DICT__;
+const BYFIRST = {};
+(()=>{ for(const w of WORDLIST.split('\n')){ if(!w) continue; const k=w[0], L=w.length;
+  (BYFIRST[k] || (BYFIRST[k]={})); (BYFIRST[k][L] || (BYFIRST[k][L]=new Set())).add(w); } })();
+const COMMON_MIS = { untill:'until', sence:'sense', calender:'calendar', tommorow:'tomorrow', tomorow:'tomorrow',
+  definately:'definitely', seperate:'separate', recieve:'receive', becuase:'because', acheive:'achieve',
+  beleive:'believe', neccessary:'necessary', occured:'occurred', enviroment:'environment', wierd:'weird',
+  freind:'friend', suprise:'surprise', grammer:'grammar', comuter:'computer', goverment:'government',
+  writting:'writing', wich:'which', thier:'their', occurence:'occurrence', embarass:'embarrass',
+  accomodate:'accommodate', seperately:'separately', truely:'truly', arguement:'argument', relevent:'relevant',
+  experiance:'experience', occurance:'occurrence', familar:'familiar', vaccum:'vacuum', restraunt:'restaurant',
+  liek:'like', becasue:'because', dont:'don`t', cant:'can`t', doesnt:'doesn`t', wont:'won`t' };
+function _spelled(w){ if(COMMON_MIS[w]) return false; const b=BYFIRST[w[0]]; return !!(b && b[w.length] && b[w.length].has(w)); }
+function _lev(a,b){ if(a===b) return 0; const m=a.length,n=b.length; if(Math.abs(m-n)>2) return 99;
+  const d=[]; for(let i=0;i<=m;i++) d[i]=[i]; for(let j=0;j<=n;j++) d[0][j]=j;
+  for(let i=1;i<=m;i++){ for(let j=1;j<=n;j++){ const c=a[i-1]===b[j-1]?0:1;
+    d[i][j]=Math.min(d[i-1][j]+1, d[i][j-1]+1, d[i-1][j-1]+c);
+    if(i>1 && j>1 && a[i-1]===b[j-2] && a[i-2]===b[j-1]) d[i][j]=Math.min(d[i][j], d[i-2][j-2]+1); } }
+  return d[m][n]; }
+function _transpose(w){ for(let i=0;i<w.length-1;i++){ const t=w.slice(0,i)+w[i+1]+w[i]+w.slice(i+2); if(t!==w && _spelled(t)) return t; } return null; }
+function _pref(a,c){ let n=0; while(n<a.length && n<c.length && a[n]===c[n]) n++; return n; }
+function spellSuggest(w){ if(COMMON_MIS[w]) return [COMMON_MIS[w]];
+  const b=BYFIRST[w[0]]; if(!b) return []; const th=_transpose(w); const cand=[];
+  for(let L=Math.max(1,w.length-2); L<=w.length+2; L++){ const s=b[L]; if(!s) continue;
+    for(const c of s){ const d=_lev(w,c); if(d>0 && d<=2) cand.push([c,d]); } }
+  cand.sort((x,y)=> x[1]-y[1] || (_pref(w,y[0])-_pref(w,x[0])) || (x[0]<y[0]?-1:1));
+  const res=cand.slice(0,3).map(x=>x[0]);
+  if(th && !res.includes(th)) res.unshift(th);
+  return res.slice(0,3); }
+function misspell(text){ const toks=text.match(/[A-Za-z]+(?:[''-][A-Za-z]+)*/g)||[]; const out=[]; const seen=new Map();
+  for(const tok of toks){ const lower=tok.toLowerCase().replace(/^'+|'+$/g,'');
+    if(lower.length<2 || _spelled(lower)) continue; if(!seen.has(lower)){ seen.set(lower,1); out.push({w:lower, sugs:spellSuggest(lower)}); } }
+  return out; }
 
 /* ───────── 工具 ───────── */
 const $ = s => document.querySelector(s);
@@ -452,8 +524,45 @@ function discRender(b, body){
 }
 function wireWriting(body, key, minWords){
   const ta = body.querySelector('#ta'), wc = body.querySelector('#wc');
-  function count(){ const n = (ta.value.trim().match(/\S+/g)||[]).length; wc.textContent = n+' 词'+(minWords?` / 建议 ≥${minWords}`:''); wc.classList.toggle('low', minWords && n<minWords); }
-  ta.oninput = ()=>{ resp[key]=ta.value; save(); count(); }; count();
+  // 包一层 backdrop，用于错词淡红高亮（textarea 透明，backdrop 显示文字）
+  const wrap = document.createElement('div'); wrap.className='hl-wrap';
+  ta.parentNode.insertBefore(wrap, ta); wrap.appendChild(ta);
+  const bd = document.createElement('div'); bd.className='hl-backdrop'; wrap.appendChild(bd);
+  // 计时（本写作题开始输入即起算）
+  let t0 = null;
+  function count(){
+    const n = (ta.value.trim().match(/\S+/g)||[]).length;
+    let extra = minWords? ` / 建议 ≥${minWords}` : '';
+    if(n>0){ if(!t0) t0 = Date.now();
+      const mins=(Date.now()-t0)/60000; const wpm = mins>0? Math.round(n/mins) : 0;
+      extra += `　⌨ ${wpm} WPM${wpm>=20?' ✓':''}（目标 ≥20）`; }
+    wc.innerHTML = n+' 词'+extra; wc.classList.toggle('low', minWords && n<minWords);
+    drawHl();
+  }
+  function drawHl(){
+    const v = ta.value, bad = misspell(v);
+    if(!bad.length){ bd.innerHTML = esc(v)+'​'; return; }
+    let html='', last=0;
+    for(const b of bad){
+      const re = new RegExp('\\b'+b.w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','gi');
+      let m; const spans=[];
+      while((m=re.exec(v))!==null){ spans.push([m.index, m.index+m[0].length]); }
+      for(const [s,e] of spans){
+        if(s<last) continue;
+        html += esc(v.slice(last,s));
+        html += `<mark data-w="${esc(b.w)}" title="${esc(b.sugs.join(' / ')||'无建议')}">${esc(v.slice(s,e))}</mark>`;
+        last = e;
+      }
+    }
+    html += esc(v.slice(last))+'​';
+    bd.innerHTML = html;
+    bd.querySelectorAll('mark').forEach(mk=>{
+      mk.onmouseenter = e=>{ if(!mk.dataset.tip) mk.title = spellSuggest(mk.dataset.w).join(' / ')||'无建议'; };
+    });
+  }
+  ta.oninput = ()=>{ resp[key]=ta.value; save(); count(); };
+  ta.onscroll = ()=>{ bd.scrollTop = ta.scrollTop; bd.scrollLeft = ta.scrollLeft; };
+  count();
 }
 
 // 跟读
@@ -682,6 +791,7 @@ INDEX = r"""<!DOCTYPE html>
 def build():
     files = sorted(glob.glob(os.path.join(DATA, "*.json")))
     cards = []
+    DICT = load_wordlist()
     for f in files:
         with open(f, encoding="utf-8") as fp:
             d = json.load(fp)
@@ -695,7 +805,8 @@ def build():
             .replace("__BAND_LISTEN__", json.dumps(BAND_LISTEN))
             .replace("__CEFR__", json.dumps(CEFR, ensure_ascii=False))
             .replace("__OVERALL120__", json.dumps(OVERALL120, ensure_ascii=False))
-            .replace("__RUBRICS__", json.dumps(RUBRICS, ensure_ascii=False)))
+            .replace("__RUBRICS__", json.dumps(RUBRICS, ensure_ascii=False))
+            .replace("__DICT__", DICT))
         with open(os.path.join(OUT, d["id"] + ".html"), "w", encoding="utf-8") as fp:
             fp.write(page)
         # 统计题量
