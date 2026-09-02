@@ -249,6 +249,14 @@ def build(d):
         for t in s.get("tasks", []):
             for v in t.get("vocab", []): _add(v)
     for v in d.get("wordbank", []): _add(v)  # 全词库：覆盖原文每一个词
+    # 全局词库兜底：合并所有场次累积的词（含功能词基础卡），保证点词不「未收录」
+    gp = os.path.join(DATA, "_global_wordbank.json")
+    if os.path.exists(gp):
+        try:
+            for v in json.load(open(gp, encoding="utf-8")):
+                _add(v)
+        except Exception:
+            pass
     wmjson = json.dumps(wm, ensure_ascii=False).replace("</", "<\\/")
     # 六级/托福「稍难」词形集合（用于正文重点划线高亮，而非逐词划线）
     hardwords = _load_hard_words()
